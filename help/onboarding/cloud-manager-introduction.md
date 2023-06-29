@@ -7,7 +7,7 @@ exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 
 Cloud Manager is an essential component of AEM as a Cloud Service and serves as the single entry point for your team. Its purpose-built CI/CD pipelines are equipped to ensure thorough testing and highest code quality to deliver exceptional experiences. To ensure customers can quickly start their projects, Cloud Manager provides everything required in a self-service manner including the ability to create your cloud resources and environments and access your git repositories. These features support enterprise development setups so teams can work towards committing changes frequently, rapidly delivering exceptional digital experiences, and accelerating time-to-value.
 
-Your system administrator is responsible for setting up your Cloud Manager team which will include individuals that will create your cloud resources and developers. For more information about how to set up and scale your enterprise development team and see how AEM as a Cloud Service can support your development process, please refer to the document [Enterprise Team Development Setup for AEM as a Cloud Service.](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+Your system administrator is responsible for setting up your Cloud Manager team which will include individuals that will create your cloud resources and developers. For more information about how to set up and scale your enterprise development team and see how AEM as a Cloud Service can support your development process, see [Enterprise Team Development Setup for AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md).
 
 ## Navigating to Cloud Manager's Overview Page {#navigate-cloud-manager}
 
@@ -17,7 +17,7 @@ Follow these steps to navigate to Cloud Manager.
 
 1. Select the program from Cloud Manager's **Programs and Products** page to launch the **Overview** page.
 
-You can also navigate to Cloud Manager’s Programs and Products page from Adobe Experience Cloud home page by following these steps.
+You can also navigate to Cloud Manager's Programs and Products page from Adobe Experience Cloud home page by following these steps.
 
 1. Navigate to Adobe Experience Cloud at [`https://experience.adobe.com`](https://experience.adobe.com) and login using your Adobe ID.
 
@@ -48,7 +48,7 @@ You can also navigate to Cloud Manager’s Programs and Products page from Adobe
 
 >[!NOTE]
 >
->A user can be assigned to multiple roles. For example assigning both **Business Owner** and **Deployment Manager** roles to a user gives the user the sum of these permissions.
+>A user can be assigned to multiple roles. For example, assigning both **Business Owner** and **Deployment Manager** roles to a user gives the user the sum of these permissions.
 
 ## Cloud Manager Programs {#cloud-manager-programs}
 
@@ -60,16 +60,16 @@ Watch this [video](https://experienceleague.adobe.com/docs/experience-manager-le
 A user can create a **Sandbox** or a **Production** program. 
 
 * A **production program** is created to enable live traffic at the appropriate time in the future.
-  * Please refer to the document [Introduction to Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more details.
+  * See [Introduction to Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more details.
 
 * A **sandbox program** is typically created to serve the purposes of training, running demos, enablement, creating POCs, or for documentation.
   * It is not meant to carry live traffic and will have restrictions that a production program will not. 
   * It includes Sites and Assets and is delivered auto-populated with a git branch that includes sample code, a development environment, and a non-production pipeline.
-  * Please refer to the document [Introduction to Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) for more details.
+  * See [Introduction to Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) for more details.
 
 ## Cloud Manager Environments {#cloud-manager-environments}
 
-Your cloud environments will be created, accessed and viewed via Cloud Manager. These environments can be production, staging, or development environments. Different environments serve different purposes and can be used with different CI/CD pipelines. Environments are composed of services such as:
+Your cloud environments are created, accessed and viewed via Cloud Manager. These environments can be production, staging, or development environments. Different environments serve different purposes and can be used with different CI/CD pipelines. Environments are composed of services such as:
 
 * [AEM Authoring Services](#author-services)
 * [AEM Publishing Services](#publish-services)
@@ -77,9 +77,9 @@ Your cloud environments will be created, accessed and viewed via Cloud Manager. 
 
 >[!TIP]
 >
-> Refer to the video [Using Adobe Cloud Manager Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) an overview of the available environments.
+> See the video [Using Adobe Cloud Manager Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) an overview of the available environments.
 >
->Refer to the document [Manage Environments](/help/implementing/cloud-manager/manage-environments.md) to learn more about types of environment a user can create and how the user can create an environment.
+>See [Manage Environments](/help/implementing/cloud-manager/manage-environments.md) to learn more about types of environment a user can create and how the user can create an environment.
 
 ### AEM Authoring Service {#author-services}
 

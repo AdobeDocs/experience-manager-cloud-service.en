@@ -9,7 +9,7 @@ exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 
 Experience Manager Assets uses Adobe Sensei AI capabilities to distinguish between colors in an image and apply those as tags automatically on ingestion. These tags enable enhanced Search experience, based on image color composition. 
 
-You can configure the number of colors, within a range of one to forty, that are tagged to an image so that you can search for images based on those colors later. Experience Manager Assets applies the tags based on the color coverage in an image. You can also configure the display format for a color tag.
+You can configure the number of colors, within a range of one to 40, that are tagged to an image so that you can search for images based on those colors later. Experience Manager Assets applies the tags based on the color coverage in an image. You can also configure the display format for a color tag.
 
 The following figure illustrates the sequence of tasks that you perform to configure and manage color tagging for images in Experience Manager Assets: 
 
@@ -36,15 +36,15 @@ To manage the color tagging properties for images:
 
    1. Specify a display format for the color tag in the **[!UICONTROL Display Format]** field. The possible options include the color name, RGB, or HEX format.
 
-   1. Specify the number of colors to tag for the images in the **[!UICONTROL Limit]** field. These colors display when you view the properties for an image.  You can define a number between one and forty in this field. The default value for this field is ten colors. 
+   1. Specify the number of colors to tag for the images in the **[!UICONTROL Limit]** field. These colors display when you view the properties for an image.  You can define a number between one and 40 in this field. The default value for this field is ten colors. 
 
-   1. Specify the minimum color coverage percentage to include a color tag in the search results in the **[!UICONTROL Coverage/Dominance Threshold %]** field. For example, if the coverage of Red color in an image is ten percent and you define nine percent in this field, the image gets included when you search for images with Red color. However, if the coverage of Red color in an image is ten percent and you define eleven percent in this field, the image does not get included when you search for images with Red color.
+   1. Specify the minimum color coverage percentage to include a color tag in the search results in the **[!UICONTROL Coverage/Dominance Threshold %]** field. For example, if the coverage of Red color in an image is ten percent and you define nine percent in this field, the image gets included when you search for images with Red color. However, if the coverage of Red color in an image is ten percent and you define 11 percent in this field, the image does not get included when you search for images with Red color.
 
-      You can specify any number between five and hundred in this field. The default value is eleven.
+      You can specify any number between five and hundred in this field. The default value is 11.
 
       >[!NOTE]
       >
-      >Adobe recommends to use a value close to the default value in this field. Setting a high number value set for this field (for example, greater than 25) may return very few search results. Similarly, setting a low number value (for example, less than 6) may return too many search results, which may not be useful.
+      >Adobe recommends using a value close to the default value in this field. Setting a high number value set for this field (for example, greater than 25) may return very few search results. Similarly, setting a low number value (for example, less than 6) may return too many search results, which may not be useful.
       
    1. Click **[!UICONTROL Save]**.      
 

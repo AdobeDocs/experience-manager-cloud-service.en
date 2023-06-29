@@ -11,7 +11,7 @@ Metadata allows for easier categorization and organization of assets and helps u
 
 [!DNL AEM Forms], by default, provides a defined set of metadata for each asset type. Beyond the default metadata, you can add custom metadata to each of the asset types. [!DNL AEM Forms] also provides you with the right means of creating, managing, and exchanging all this metadata efficiently for your forms.
 
-<!-- If you're a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you're using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
+<!-- If you are a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you are using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
 
 ## Metadata in [!DNL AEM Forms] {#metadata-in-aem-forms}
 
@@ -277,12 +277,12 @@ A tool (Metadata Schema Editor) is provided to define the schema for the metadat
 
 1. Click a component that you just dragged. In the Settings tab that opens in the right panel, fill in information for the following fields:
 
-    1. Specify a Field Label which will be used as a display name above the field placed in schema (For example: Department)
-    1. Under Map to property field, you can see a prefilled value **'./jcr:content/metadata/default'**. Change the ‘**default**’ to a desired property name, which is used to store the property in crx repository (For example: './jcr:content/metadata/department')
+    1. Specify a Field Label to use as a display name above the field placed in schema (For example: Department)
+    1. Under Map to property field, you can see a prefilled value **'./jcr:content/metadata/default'**. Change the '**default**' to a desired property name, which is used to store the property in crx repository (For example: './jcr:content/metadata/department')
 
        >[!NOTE]
        >
-       >Do not change the prefix ‘./jcr:content/metadata/’ as it defines the path where the property is stored.
+       >Do not change the prefix './jcr:content/metadata/' as it defines the path where the property is stored.
        >
        >Also, the property name must be unique to avoid writing values for two or more properties at the same location in repository. So, it is recommended that you change the value 'default'.
 

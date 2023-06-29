@@ -53,12 +53,12 @@ Here you can see that there are three main areas:
 * The main/right panel - from here you can:
   * See the list of all Content Fragments in the selected branch of the tree:
     * The location is indicated by the breadcrumbs; these can also be used to change the location
-    * Content Fragments from the selected folder, and all child folders will be shown:
+    * Content Fragments from the selected folder, and all child folders are shown:
       * [Various fields of information](#selectuse-available-columns) about a Content Fragment provide links; depending on the field, these can:
         * Open the appropriate fragment in the editor
         * Show information about references
         * Show information about language versions of the fragment
-    * By using mouse-over on the column headers a drop-down action selector, and width sliders, will be shown. These allow you to:
+    * By using mouse-over on the column headers, a drop-down action selector, and width sliders, are shown. These let you do the following:
       * Sort - select the appropriate action for either ascending or descending
         This will sort the entire table according to that column. Sorting is only available on appropriate columns.
       * Resize the column - using either the action, or width sliders
@@ -89,7 +89,7 @@ Certain actions are available from the console - without selecting a specific Co
 
 ### Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
 
-Selecting a specific fragment will open a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
+Selecting a specific fragment will open a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions are adjusted accordingly.
 
 ![Content Fragments console - toolbar for a selected fragment](assets/cfc-fragment-toolbar.png)
 
@@ -178,7 +178,7 @@ For example, select **Published** in the **Status** column:
 
 ![Content Fragments console - Filtering](assets/cfc-console-fast-filter-01.png)
 
-Once selected, this will be shown as a filter predicate, and the list will be filtered accordingly:
+After selection, it is shown as a filter predicate, and the list is filtered accordingly:
 
 ![Content Fragments console - Filtering](assets/cfc-console-fast-filter-02.png)
 

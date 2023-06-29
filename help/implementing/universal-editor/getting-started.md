@@ -26,7 +26,7 @@ This document will guide you through these steps.
 
 ## Request Access to the Universal Editor {#request-access}
 
-You first need to request access to the Universal Editor. Please go to [https://experience.adobe.com/#/aem/editor,](https://experience.adobe.com/#/aem/editor) sign in, and validate if you have access to the Universal Editor.
+You first need to request access to the Universal Editor. See [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), sign in, and validate if you have access to the Universal Editor.
 
 In case you do not have access, it can be requested via a form linked on the same page.
 
@@ -60,7 +60,7 @@ If you are not implementing a React app and/or require server-side rendering an 
 
 To be able to edit AEM content with your app using the Universal Editor, CORS and cookie settings must be done within AEM.
 
-The following [OSGi configurations have to be set on the AEM authoring instance.](/help/implementing/deploying/configuring-osgi.md)
+The following [OSGi configurations have to be set on the AEM authoring instance](/help/implementing/deploying/configuring-osgi.md).
 
 * `SameSite Cookies = None` in `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
 * Remove X-FRAME-OPTIONS: SAMEORIGIN Header in `org.apache.sling.engine.impl.SlingMainServlet`
@@ -155,17 +155,17 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-## You're Ready to Use the Universal Editor {#youre-ready}
+## You are Ready to Use the Universal Editor {#youre-ready}
 
 Your app is now instrumented to use the Universal Editor!
 
-Please refer to the document [Authoring Content with the Universal Editor](authoring.md) to learn how easy and intuitive it is for content authors to create content using the Universal Editor.
+See [Authoring Content with the Universal Editor](authoring.md) to learn how easy and intuitive it is for content authors to create content using the Universal Editor.
 
 ## Additional Resources {#additional-resources}
 
 To learn more about the Universal Editor, see these documents.
 
-* [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation in order to deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
+* [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
 * [Authoring Content with the Universal Editor](authoring.md) - Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
 * [Publishing Content with the Universal Editor](publishing.md) - Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.

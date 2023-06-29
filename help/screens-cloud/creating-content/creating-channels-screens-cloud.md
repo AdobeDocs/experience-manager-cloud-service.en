@@ -20,7 +20,7 @@ This document helps you understand creating and managing channels for your AEM S
 
 >[!NOTE]
 >**Prerequisites**
->Before starting this section of the Guide, please review [Creating and Managing Projects in Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+>Before starting this section of the Guide, review [Creating and Managing Projects in Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
 Follow the steps below to create a new sequence channel in Screens as a Cloud Service:
 
@@ -36,7 +36,7 @@ Follow the steps below to create a new sequence channel in Screens as a Cloud Se
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > The **Create** wizard provides different types of templates while creating a channel. Refer to the section [Available Templates](#available-templates) in Create Wizard for more details.
+   > The **Create** wizard provides different types of templates while creating a channel. See [Available Templates](#available-templates) in Create Wizard for more details.
 
 1. Enter the name of your sequence channel, such as, **LoopingChannelOne** and click on **Create**.
 
@@ -44,7 +44,7 @@ Follow the steps below to create a new sequence channel in Screens as a Cloud Se
 
    You will now see a **LoopingChannelOne** in your Channels folder in your AEM Screens project.
 
-   Once you have created the channel, you can now add content to  your channel. Refer to [Adding Content to a Channel](#add-content) to learn how  to add assets (images/videos) to  your channel.
+   Once you have created the channel, you can now add content to  your channel. See [Adding Content to a Channel](#add-content) to learn how  to add assets (images/videos) to  your channel.
 
 ## Managing a Channel {#managing-channels}
 
@@ -78,8 +78,8 @@ The following templates are available while using the **Create** channel wizard:
 
 |Available Templates|Description|
 |--- |--- |
-|Channels Folder|Allows to create a folder to store collection of channels.|
-|Sequence Channel|Allows to create a channel that plays the components sequentially (one by one in a slide show).|
+|Channels Folder|Lets you create a folder to store collection of channels.|
+|Sequence Channel|Lets you create a channel that plays the components sequentially (one by one in a slide show).|
 |Left or Right L-Bar Split Screen Channel|Allows content authors to view different types of assets in appropriately sized zones.|
 
 ## Use default assignment details for channels {#default-channels}
@@ -94,7 +94,7 @@ This capability allows you to define a default activation schedule for a channel
    ![image](/help/screens-cloud/assets/display/Assignment1.png)
 
 1. Click **Set default details**.
-1. Configure the default assignment details, including priority, start & end dates, as well as recurrence patterns for the channel, and click **Assign**.
+1. Configure the default assignment details, including priority, start & end dates, and recurrence patterns for the channel, and click **Assign**.
 
    ![image](/help/screens-cloud/assets/display/Assignments2.png)
 
@@ -105,11 +105,11 @@ This capability allows you to define a default activation schedule for a channel
 This tile displays the following information:
 * Default priority of the channel in the display.
 * Activation start and end dates when the channel is scheduled to play.
-* Synthetic view of the recurrence (Hourly/Daily/Weekly/Monthly/Yearly as well as name given to that recurrence).
+* Synthetic view of the recurrence (Hourly/Daily/Weekly/Monthly/Yearly and name given to that recurrence).
 
 ### Use the default assignment details when assigning to a display {#default-display}
 
-Channels having default assignment details can be assigned to displays the same way regular channels are, with the added option to leverage the default assignment details instead of manually defining custom ones each time.
+Channels having default assignment details can be assigned to displays the same way regular channels are, with the added option to use the default assignment details instead of manually defining custom ones each time.
 
 1. Navigate to the display details page you want to assign the channel to and click the **Assign channel**.
 alternatively, select the desired display in the inventory view and click the **Assign channel**.
@@ -135,10 +135,10 @@ alternatively, select the desired display in the inventory view and click the **
 
    ![image](/help/screens-cloud/assets/display/Assignments8.png)
 
-**Note:** A channel assignment that leverages the default assignment details will not be editable in the context of the display.
+**Note:** A channel assignment that uses the default assignment details will not be editable in the context of the display.
 
-* If you need to change it to a custom assignment, you'll have to first remove it and then re-add it using the **Set custom assignment details** option.
-* If you need to change the properties of the default assignment details, you'll have to do this directly from the channel details page.
+* If you must change it to a custom assignment, first remove it and then add it again using the **Set custom assignment details** option.
+* If you must change the properties of the default assignment details, do so directly from the channel details page.
 
 ### Remove default assignment details from a channel {#remove-display}
 
@@ -148,7 +148,7 @@ alternatively, select the desired display in the inventory view and click the **
 
    ![image](/help/screens-cloud/assets/display/Assignments9.png)
 
-1. A confirmation dialog will be shown, and details will be match one of the following conditions:
+1. A confirmation dialog is shown, and details match one of the following conditions:
 **a.** Channel is not used in any display.
 
    ![image](/help/screens-cloud/assets/display/Assignments10.png)
@@ -168,4 +168,4 @@ As a consequence, this may lead to blank screens if there is no alternate conten
 
 ## What's Next {#whats-next}
 
-Now, that you have setup an AEM Screens channel in your project, you need to publish your channel. Refer to [Publishing Channels in Screens as a Cloud Service](manage-publish.md) before managing your players from Screens Services Provider.
+Now, that you have setup an AEM Screens channel in your project, you need to publish your channel. See [Publishing Channels in Screens as a Cloud Service](manage-publish.md) before managing your players from Screens Services Provider.

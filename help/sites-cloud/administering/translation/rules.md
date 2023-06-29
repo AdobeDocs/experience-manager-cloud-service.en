@@ -11,7 +11,7 @@ Translation rules identify the content to translate for pages, components, and a
 
 >[!TIP]
 >
->If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 ## Content Fragments and Translation Rules {#content-fragments}
 
@@ -119,11 +119,11 @@ The `translation_rules.xml` file consists of a `nodelist` element with several c
 
 ```xml
 <nodelist>
-     <node path="/content”>
+     <node path="/content">
            <property name="text" />
      </node>
-     <node path=“/content/mysite/en”>
-          <property name=“text” translate=“false" />
+     <node path="/content/mysite/en">
+          <property name="text" translate="false" />
      </node>
 <nodelist>
 ```
@@ -136,7 +136,7 @@ For example, the following rules cause all content in `text` properties to be tr
 
 ```xml
 <nodelist>
-    <node path="/content”>
+    <node path="/content">
      <filter>
    <node containsProperty="draft" propertyValue="true" />
      </filter>
@@ -157,7 +157,7 @@ To access it:
 
 In the translation rules UI you can:
 
-1. **Add Context**, which allows you to add a path.
+1. **Add Context**, which lets you add a path.
 
    ![Add translation context](../assets/add-translation-context.png)
 
@@ -180,7 +180,7 @@ There are four attributes that you can change via the UI:
 
 **`isDeep`**  is applicable on node filters and is true by default. It checks if the node (or its ancestors) contains that property with the specified property value in the filter. If false, it only checks at the current node.
 
-For example, child nodes are added to a translation job even when the parent node haa the property `draftOnly` set to true in order to flag draft content. Here `isDeep` comes into play and checks if the parent nodes have property `draftOnly` as true and excludes those child nodes.
+For example, child nodes are added to a translation job even when the parent node has the property `draftOnly` set to true to flag draft content. Here `isDeep` comes into play and checks if the parent nodes have property `draftOnly` as true and excludes those child nodes.
 
 In the editor, you can check/uncheck **Is Deep** in the **Filters** tab.
 

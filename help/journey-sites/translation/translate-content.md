@@ -168,7 +168,7 @@ Machine translations automatically return with a state of **Approved**. Human tr
 >
 >If you did not deactivate the project option **Delete Launch After Promotion** as [described in the previous section,](#using-translation-project) translated items will appear with the **Deleted** state. This is normal as AEM automatically discards the translation records once the translated items arrive. The translated items have been imported as language copies, only the translation records have been deleted as they are no longer needed.
 >
->Don't worry if this is unclear. These are in-depth details of how AEM works and does not affect your understanding of the journey. If you wish to dive deeper on how AEM processes translations, please refer to the [additional resources](#additional-resources) section at the end of this article.
+>Don't worry if this is unclear. These are in-depth details of how AEM works and does not affect your understanding of the journey. If you wish to dive deeper on how AEM processes translations, see [additional resources](#additional-resources) section at the end of this article.
 
 ### Using a Manually Created Translation Project {#using-manual-project}
 
@@ -228,7 +228,7 @@ Machine translations automatically return with a state of **Approved**. Human tr
 >
 >If you did not deactivate the project option **Delete Launch After Promotion** as [described in the previous section,](#using-translation-project) translated items will appear with the **Deleted** state. This is normal as AEM automatically discards the translation records once the translated items arrive. The translated items have been imported as language copies, only the translation records have been deleted as they are no longer needed.
 >
->Don't worry if this is unclear. These are in-depth details of how AEM works and does not affect your understanding of the journey. If you wish to dive deeper on how AEM processes translations, please refer to the [additional resources](#additional-resources) section at the end of this article.
+>Don't worry if this is unclear. These are in-depth details of how AEM works and does not affect your understanding of the journey. If you wish to dive deeper on how AEM processes translations, see [additional resources](#additional-resources) section at the end of this article.
 
 ## Reviewing Translated Content {#reviewing}
 
@@ -242,7 +242,7 @@ Tap or click that icon to open the translated content in its console to see the 
 
 ![A translated page](assets/translated-page.png)
 
-You can further modify the translated content necessary, providing you have the proper permission, but editing content is beyond the scope of this journey. Please see the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic.
+You can further modify the translated content necessary, providing you have the proper permission, but editing content is beyond the scope of this journey. See the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic.
 
 The project's purpose is to collect all the resources related to a translation in one place for easy access and a clear overview. However as you can see by viewing the detail of a translated item, the translations themselves flow back into the sites folder of the translation language. In this example the folder is
 
@@ -262,7 +262,7 @@ It is important to understand that this content is not published and therefore n
 
 If your translation service provides human translation, the review process offers more options. For example, translations arrive back in the project with the status **Draft** and must be reviewed and approved or rejected manually.
 
-Human translation is beyond the scope of this localization journey. Please see the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic. However beyond the additional approval options, the workflow for human translations is the same as machine translations as described in this journey.
+Human translation is beyond the scope of this localization journey. See the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic. However beyond the additional approval options, the workflow for human translations is the same as machine translations as described in this journey.
 
 ## What's Next {#what-is-next}
 

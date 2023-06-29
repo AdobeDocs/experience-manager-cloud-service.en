@@ -36,7 +36,7 @@ Once program creation is complete, an **Add Environment** card replaces the **Pr
 
 You now have an AEM project based on the AEM archetype added to your git repository to serve as a basis for development for your own project. Next you can create your environments where you can deploy the project code.
 
-Please refer to the document [Managing your Environments](/help/implementing/cloud-manager/manage-environments.md) to learn how to add or manage environments.
+See [Managing your Environments](/help/implementing/cloud-manager/manage-environments.md) to learn how to add or manage environments.
 
 >[!NOTE]
 >

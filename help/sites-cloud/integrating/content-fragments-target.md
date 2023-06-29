@@ -46,7 +46,7 @@ The following action is required:
 
 1. You have to [integrate AEM with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-<!-- link rewriter - targets in content-fragments-customizing don't exist yet
+<!-- link rewriter - targets in content-fragments-customizing do not exist yet
 
 1. Content Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Content Fragment are externalized for web delivery.
 
@@ -63,7 +63,7 @@ Before exporting a fragment you need to add the **Cloud Configuration** for **Ad
 * select a Target workspace as destination
 * select an externalizer domain for rewriting references in the Content Fragment (optional)
 
-The required options can be selected in **Page Properties** of the required folder and/or fragment; the specification will be inherited as necessary.
+The required options can be selected in **Page Properties** of the required folder, or fragment, or both; the specification is inherited as necessary.
 
 1. Navigate to the **Assets** console.
 
@@ -169,7 +169,7 @@ You can now select the new configuration for editing.
 
    * **Tenant ID**: the tenant ID
 
-   * **IMS Configuration**: select the required configuration from the drop down list
+   * **IMS Configuration**: select the required configuration from the drop-down list
 
    * **API Type**: defaults to REST (XML is deprecated)
 
@@ -318,7 +318,7 @@ To export a Content Fragment from AEM to Target (after specifying the Cloud Conf
 
    ![Export to Adobe Target](assets/cfm-export-target-01.png)
 
-   <!-- this note doesn't seem to be accurate for CFs -->
+   <!-- this note does not seem to be accurate for CFs -->
 
    <!--
    
@@ -332,9 +332,9 @@ To export a Content Fragment from AEM to Target (after specifying the Cloud Conf
 
    >[!NOTE]
    >
-   >The actual actions shown will be dependent on the status of your fragment and related assets. 
+   >The actual actions shown are dependent on the status of your fragment and related assets. 
    >
-   >If everything has already been published, and nothing has been modified since, then this step will be passed over.
+   >If everything has already been published, and nothing has been modified since, then this step is passed over.
 
    >[!NOTE]
    >
@@ -358,7 +358,7 @@ To export a Content Fragment from AEM to Target (after specifying the Cloud Conf
 
 ## Using your Content Fragments in Adobe Target {#using-your-content-fragments-in-adobe-target}
 
-After performing the preceding tasks, the Content Fragment displays on the Offers page in Target. Please have a look at the [specific Target documentation](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html) to learn about what you can achieve there.
+After performing the preceding tasks, the Content Fragment displays on the Offers page in Target. See [specific Target documentation](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html) to learn about what you can achieve there.
 
 >[!NOTE]
 >
@@ -390,7 +390,7 @@ To avoid such situations:
 
 ## Further Resources {#further-resources}
 
-For further information see also:
+For more information, see the following:
 
 <!--
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)

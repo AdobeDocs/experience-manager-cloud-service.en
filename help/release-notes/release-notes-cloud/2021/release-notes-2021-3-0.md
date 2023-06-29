@@ -68,9 +68,9 @@ You can reach out to your Adobe representative for a demo or to sign up for the 
 
 * Product detail component can now be used and configured on any content page
 
-* Released CIF Venia Reference Site - 2021.03.25 that includes the latest CIF Core Components version v1.9.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) for more details.
+* Released CIF Venia Reference Site - 2021.03.25 that includes the latest CIF Core Components version v1.9.0. See [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) for more details.
 
-* Released CIF Core Components v1.9.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) for more details.
+* Released CIF Core Components v1.9.0. See [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) for more details.
 
 
 ## Cloud Manager {#cloud-manager}
@@ -84,7 +84,7 @@ The next release is planned for April 08, 2021.
 
 ### What's New {#what-is-new-march}
 
-* Customers with environments with pre-existing Custom Domain Name configurations for [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) and [Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) will see a message about their previously existing configurations and will be able to self-serve via the UI. 
+* Customers with environments with pre-existing Custom Domain Name configurations for [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) and [Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) see a message about their previously existing configurations and can self-serve by way of the user interface. 
 
 * Users with requisite permissions can now edit a Program, allowing them to do the following in a self-service manner: 
 
@@ -122,7 +122,7 @@ The next release is planned for April 08, 2021.
 
 * On occasion, user may see a green "active" status next to an IP Allowlist even when that configuration was not deployed.
 
-* All existing production pipelines will be automatically enabled with the Experience Audit step.
+* All existing production pipelines are automatically enabled with the Experience Audit step.
 
 ## Content Transfer Tool {#content-transfer-tool}
 
@@ -155,19 +155,19 @@ The Release Date for Best Practices Analyzer v2.1.8 is March 22, 2021.
 
 ### What is new in Best Practices Analyzer {#what-is-new-bpa}
 
-* Ability to filter out ACS Commons findings from the BPA report in the UI as well as from the report exported as a CSV file. 
+* Ability to filter out ACS Commons findings from the BPA report in the user interface and from the report exported as a CSV file. 
 
 ## Code Refactoring Tools {#code-refactoring-tools}
 
 ### What is new in Code Refactoring Tools {#what-is-new-crt}
 
-* New features and enhancements for Repository Modernizer. Refer to [GitHub Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) for the latest version.
+* New features and enhancements for Repository Modernizer. See [GitHub Resource: Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) for the latest version.
   * Normalize OSGi configs (except RepoInit configs) to the preferred .cfg.json format.
   * Rename OSGi config folders to the specified format.
   * Generate the ui.apps.structure project.
   * Create the analyze module.
   
-* New features and enhancements for Dispatcher Converter. Refer to [GitHub Resource: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+* New features and enhancements for Dispatcher Converter. See [GitHub Resource: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
   * Creation of separate files for different inclusions instead of in lining the content.
   * Ability to handle both folder path of vhosts and path to vhost files.
   * Generation of farm files with large customer configurations in range of 600 and more.

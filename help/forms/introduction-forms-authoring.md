@@ -24,10 +24,10 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
   It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into Adaptive Forms. Any existing XFA rules are retained in the associated Adaptive Forms. The resulting Adaptive Forms support XFA constructs, such as validations, events, properties, and patterns.
 
 * **Using an XML Schema Definition (XSD) or a JSON Schema**
-  XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
+  XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
-  Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
+  Adaptive Forms created with this option does not use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
 
   >[!NOTE]
   >
@@ -145,7 +145,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>Email</td>
-   <td><p>Adds a field to capture email address. The Email component, by default, validates email addresses using the following regular expression.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Adds a field to capture email address. The Email component, by default, validates email addresses using the following regular expression.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>File attachment</td>

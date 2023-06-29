@@ -496,7 +496,7 @@ __Profile XDM Events:__
 
 ## Additional Resources {#additional-resources}
 
-For more information, refer to the following resources:
+For more information, see the following resources:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
 - [Experience Platform connector overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)

@@ -1,6 +1,6 @@
 ---
 title: Persisted GraphQL queries
-description: Learn how to to persist GraphQL queries in Adobe Experience Manager as a Cloud Service to optimize performance. Persisted queries can be requested by client applications using HTTP GET method and the response can be cached at the dispatcher and CDN layers, ultimately improving the performance of the client applications.
+description: Learn how to persist GraphQL queries in Adobe Experience Manager as a Cloud Service to optimize performance. Persisted queries can be requested by client applications using HTTP GET method and the response can be cached at the dispatcher and CDN layers, ultimately improving the performance of the client applications.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 ---
@@ -32,9 +32,9 @@ Persisted queries must always use the endpoint related to the [appropriate Sites
 
 For example, if there is a particular query called `my-query`, which uses a model `my-model` from the Sites configuration `my-conf`:
 
-* You can create a query using the `my-conf` specific endpoint, and then the query will be saved as following: 
+* You can create a query using the `my-conf` specific endpoint, and then the query is saved as following: 
 `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* You can create the same query using `global` endpoint, but then the query will be saved as following:
+* You can create the same query using `global` endpoint, but then the query is saved as following:
 `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
@@ -190,7 +190,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 Where `PERSISTENT_PATH` is a shortened path to where the Persisted query is saved.
 
-1. For example `wknd` is the configuration name and `plain-article-query` is the name of the Persisted query. To execute the query:
+1. For example, `wknd` is the configuration name and `plain-article-query` is the name of the Persisted query. To execute the query:
 
    ```shell
    $ curl -X GET \
@@ -222,7 +222,7 @@ The pattern looks like the following:
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-For example the following query contains a variable `activity` to filter a list based on an activity value:
+For example, the following query contains a variable `activity` to filter a list based on an activity value:
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -383,10 +383,10 @@ You can [configure the OSGi settings](/help/implementing/deploying/configuring-o
 The field `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) can be defined as required:
 
 * `false` (default value):
-  It does not matter whether the persisted query is successful or not. The `/execute.json/persisted-query` will return the status code `200` and the `Content-Type` header returned will be `application/json`.
+  It does not matter whether the persisted query is successful or not. The `/execute.json/persisted-query` returns the status code `200` and the `Content-Type` header returned is `application/json`.
 
 * `true`:
-  The endpoint will return `400` or `500` as appropriate when there is any form of error upon running the persisted query. Also the returned `Content-Type` will be `application/graphql-response+json`.
+  The endpoint will return `400` or `500` as appropriate when there is any form of error upon running the persisted query. Also, the returned `Content-Type` is `application/graphql-response+json`.
 
   >[!NOTE]
   >
@@ -394,7 +394,7 @@ The field `Respond with application/graphql-response+json` (`responseContentType
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 
-For use by an application, any special characters used when constructing query variables (i.e semicolons (`;`), equal sign (`=`), slashes `/`) must be converted to use the corresponding UTF-8 encoding.
+For use by an application, any special characters used when constructing query variables (that is, semicolons (`;`), equal sign (`=`), slashes `/`) must be converted to use the corresponding UTF-8 encoding.
 
 For example:
 
@@ -436,7 +436,7 @@ To create a Package:
 1. Create a new package by tapping **Create Package**. This will open a dialog to define the Package.
 1. In the Package Definition Dialog, under **General** enter a **Name** like "wknd-persistent-queries".
 1. Enter a version number like "1.0".
-1. Under **Filters** add a new **Filter**. Use the Path Finder to select the `persistentQueries` folder beneath the configuration. For example for the `wknd` configuration the full path will be `/conf/wknd/settings/graphql/persistentQueries`.
+1. Under **Filters** add a new **Filter**. Use the Path Finder to select the `persistentQueries` folder beneath the configuration. For example, for the `wknd` configuration, the full path is `/conf/wknd/settings/graphql/persistentQueries`.
 1. Tap **Save** to save the new Package definition and close the dialog.
 1. Tap the **Build** button in the newly created Package definition.
 

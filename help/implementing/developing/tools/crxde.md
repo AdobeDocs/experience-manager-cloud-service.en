@@ -42,7 +42,7 @@ The Node Path Widget displays the path to the currently selected node.
 
 You can also use it to jump to a node by entering the path by hand or pasting it from somewhere else and pressing Enter.
 
-It also provides support for looking for nodes with specific node name. Enter the name of the node you would like to find, and wait (or select the search icon on the right-hand side). If a given node or nodes is loaded into the explorer pane, the list will be displayed, and you can select the path and press Enter to navigate to it. Note that it only works for the nodes currently loaded into the CRXDE client application in browser. If you want to search the whole repository, use **Tools** -&gt: **Query**.
+It also provides support for looking for nodes with specific node name. Enter the name of the node you would like to find, and wait (or select the search icon on the right-hand side). If a given node or nodes is loaded into the explorer pane, the list is displayed, and you can select the path and press Enter to navigate to it. Note that it only works for the nodes currently loaded into the CRXDE client application in browser. If you want to search the whole repository, use **Tools** -&gt: **Query**.
 
 ### Explorer Pane {#explorer-pane}
 
@@ -54,7 +54,7 @@ Tree Navigation Filter (the binoculars icon) enables you to filter the nodes in 
 
 ### Edit Pane {#edit-pane}
 
-The **Edit Pane** allows you to view the content of the currently-selected file in the repository. Each file opened will be represented as its own tab in the pane.
+The **Edit Pane** lets you view the content of the currently-selected file in the repository. Each file opened is represented as its own tab in the pane.
 
 The **Home** tab lets you search content and/or documentation and access developer documentation and Adobe support.
 
@@ -103,7 +103,7 @@ The **Refresh Button** refreshes the current selection. Changes from other users
 
 ### Save All Button {#save-all-button}
 
-The **Save All Button** saves all the changes you have made. Until you choose to save, the changes are temporary, and will be lost when you exit the console.
+The **Save All Button** saves all the changes you have made. Until you choose to save, the changes are temporary, and are lost when you exit the console.
 
 * **Revert** - Discards all the changes that you have made on the selected node since the last save action, then reloads the current state of the repository for the selected node
 * **Revert All** - Discards all the changes that you have made throughout the entire repository since the last save action, then reloads the current state of the repository
@@ -186,7 +186,7 @@ You can now adapt the node to your needs by modifying properties or creating new
 >
 >Most of the edit operations, including **Create Node**, keeps all the changes in memory, and only stores them in the repository upon saving (using the [**Save All Button**](#save-all-button)). However some operations such as move are automatically persisted.
 >
->The validation with regard to whether the newly created node is allowed by the node type of the parent node is also carried out by the repository when saving changes. If you receive an error message while saving a node, please check if the content structure is valid (for example, you cannot create an `nt:unstructured` node as a child of `nt:folder` node).
+>The validation with regard to whether the newly created node is allowed by the node type of the parent node is also carried out by the repository when saving changes. If you receive an error message while saving a node, check if the content structure is valid (for example, you cannot create an `nt:unstructured` node as a child of `nt:folder` node).
 
 ## Creating a Property {#creating-a-property}
 
@@ -219,7 +219,7 @@ To export a node type definition in CRXDE Lite:
 1. Open CRXDE Lite in your browser.
 1. Select your required node.
 1. Select **Tools** then **Export Node Type**.
-1. The definition will be displayed in CND notation in a new tab in your browser.
+1. The definition is displayed in CND notation in a new tab in your browser.
 1. Save the information if required.
 
 To import a node type definition:

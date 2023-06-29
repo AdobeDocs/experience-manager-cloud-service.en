@@ -13,7 +13,7 @@ The App owns the routing and is then implemented by the project front end develo
 
 ## Architecture {#architecture}
 
-For a detailed description, please refer to the [PageModelManager](blueprint.md#pagemodelmanager) section of the SPA Blueprint document.
+For a detailed description, see [PageModelManager](blueprint.md#pagemodelmanager) section of the SPA Blueprint document.
 
 ## ModelRouter {#modelrouter}
 
@@ -25,7 +25,7 @@ The `ModelRouter` automates the fetching of fragments of the model. But as any a
 
 >[!CAUTION]
 >
->The current version of the `ModelRouter` only support the use of URLs that points to the actual resource path of Sling Model entry points. It doesn't support the use of Vanity URLs or aliases.
+>The current version of the `ModelRouter` only support the use of URLs that points to the actual resource path of Sling Model entry points. It does not support the use of Vanity URLs or aliases.
 
 ## Routing Contract {#routing-contract}
 

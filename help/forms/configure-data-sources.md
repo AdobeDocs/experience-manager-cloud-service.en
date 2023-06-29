@@ -60,7 +60,7 @@ You can configure relational databases using [!DNL Experience Manager] Web Conso
 
    >[!NOTE]
    >
-   > Refer [SQL connections using JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) for more detailed information.
+   > See [SQL connections using JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) for more detailed information.
     
 1. Tap **[!UICONTROL Save]** to save the configuration.
 
@@ -72,7 +72,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
-1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties will be available for use in form data model. Use the following format to specify user profile properties:
+1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -164,7 +164,7 @@ Some of the operations not supported by RESTful services Open API Specification 
 * Links
 * Different request bodies for different MIME types for a single operation
 
-You can refer to [OpenAPI 3.0 Specification](https://swagger.io/specification/v3/) for detailed information. 
+See [OpenAPI 3.0 Specification](https://swagger.io/specification/v3/) for detailed information. 
 
 ### Form data model HTTP client configuration to optimize performance {#fdm-http-client-configuration}
 
