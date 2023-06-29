@@ -1,9 +1,7 @@
 ---
-title: Introduction to Assets view
-description: What's new in Assets view
+title: How does Assets view benefit you?
+description: Learn more about the key benefits of Assets view
 mini-toc-levels: 3
-hidefromtoc: yes
-hide: yes
 ---
 
 # Introducing Assets view {#assets-view}
