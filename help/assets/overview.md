@@ -31,7 +31,7 @@ The following are the key benefits of Assets as a [!DNL Cloud Service]. To know 
 * **Constant monitoring**: The monitoring of the system is automated and built-in checks and triggers help maintain the performance, availability, and overall robustness.
 * **Hassle-free deployments**: Experience Manager in the Cloud operations are completely automated that require no manual intervention. For automated deployments, the Cloud Manager (CM) component automates the build of deployable Docker images containing your custom code.
 
-## Available persona-based experiences
+## Available persona-based experiences {#persona-based-experiences}
 
 Adobe offers robust Digital Asset Management (DAM) solutions for you to get the most out of your digital assets. Adobe Experience Manager Assets has two separate experiences that use the same Cloud Services repository:
 
@@ -45,7 +45,7 @@ DAM librarians, developers, and super-users may continue to use the Admin view o
 
 ![add-tags](assets/newui-overview.svg)
 
-For information on how to access the Assets view and some of the simplications that it offers over Admin view, see Assets view. 
+For information on how to access the Assets view and some of the simplifications that it offers over Admin view, see [Introduction to Assets view](/help/assets/assets-view-introduction.md). 
 
 ## New Assets capabilities {#whats-new-assets}
 
