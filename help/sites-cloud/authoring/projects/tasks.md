@@ -17,7 +17,7 @@ You can track project progress by looking at the active/completed tasks inside a
 
 * **Task List:** When clicking the Task tile, a list of tasks is displayed. This list has detailed information about all the tasks related to the project.
 
-Both list workflow tasks as well as tasks you create directly in the **Tasks** tile.
+Both list workflow tasks and tasks you create directly in the **Tasks** tile.
 
 ### Task Tile {#task-tile}
 

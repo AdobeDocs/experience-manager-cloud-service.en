@@ -6,7 +6,7 @@ exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 
 # Developing Sites with the Front-End Pipeline {#developing-site-with-front-end-pipeline}
 
-[With the front-end pipeline,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) more independence is given to the front-end developers and the development process can gain substantial velocity. This document describes how this process works along with some considerations to be aware of in order to get the full potential out of this process.
+[With the front-end pipeline,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) more independence is given to the front-end developers and the development process can gain substantial velocity. This document describes how this process works along with some considerations to be aware of so you can get the full potential out of this process.
 
 >[!TIP]
 >
@@ -16,7 +16,7 @@ exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 
 Similar to the [full-stack build environment,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) the front-end pipeline has its own environment. Developers have some flexibility in this pipeline so long as the following front-end build contract is observed.
 
-The front-end pipeline requires the front-end Node.js project to use the `build` script directive to generate the build that will be deployed by the front-end pipeline. I.e. Cloud Manager uses the command `npm run build` to generate the deployable project to the `dist` folder.
+The front-end pipeline requires the front-end Node.js project to use the `build` script directive to generate the build that is deployed by the front-end pipeline. I.e. Cloud Manager uses the command `npm run build` to generate the deployable project to the `dist` folder.
 
 The content of the `dist` folder is what is ultimately deployed to AEM as a Cloud Service from the Cloud Manager pipeline.
 
@@ -52,7 +52,7 @@ The following steps are generally recommended when it's necessary to perform cha
 
 1. The back-end team first sets up a development environment with the new HTML and/or JSON output.
    1. Via the full-stack pipeline, they deploy the code required to render the new HTML and/or JSON output that is desired.
-   1. If that's to an environment that the front-end team didn't previously have access to, then the following steps must be performed.
+   1. If that's to an environment that the front-end team did not previously have access to, then the following steps must be performed.
       1. URL: The front-end team must know the URL of that development environment.
       1. ACL: The front-end team must be given a local AEM user with something similar to "Contributors" rights.
       1. Git: The front-end team must have a separate Git location for the front-end module that specifically targets that development environment.
@@ -62,7 +62,7 @@ The following steps are generally recommended when it's necessary to perform cha
    1. As usual, to develop locally:
       1. The `npx aem-site-theme-builder proxy` command executed within the front-end module starts a proxy server that requests the content from an AEM environment, while replacing the CSS and JS files of the front-end module with the ones from the local `dist` folder.
       1. Configuring the `AEM_URL` variable in the hidden `.env` file allows to control from which AEM environment the local proxy server consumes the content. 
-      1. Changing the value of this `AEM_URL` therefore allows to switch between the production and development environments in order to adjust the CSS and JS so that it fits to both environments.
+      1. Changing the value of this `AEM_URL` therefore lets you switch between the production and development environments to adjust the CSS and JS so that it fits to both environments.
       1. It must work with the development environment that renders the new output and with the production environment that renders the old output.
    1. The front-end work is completed when the updated front-end module works for both environments, and is deployed to both.
 1. The back-end team can then update the production environment by deploying the code that renders the new HTML and/or JSON output via the full-stack pipeline.

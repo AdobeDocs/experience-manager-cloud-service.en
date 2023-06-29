@@ -6,7 +6,7 @@ info:
 
     # Introduction
 
-    Communications APIs help you combine XFA-based XDP or PDF templates and Acrobat Forms (AcroForm) with XML data to generate print documents in various formats. It enable you to create applications that let you:
+    Communications APIs help you combine XFA-based XDP or PDF templates and Acrobat Forms (AcroForm) with XML data to generate print documents in various formats. It lets you create applications to do the following:
 
     - Generate documents by populating template files with XML data. For example, receipts, bills, and statements.    
 
@@ -22,15 +22,15 @@ info:
     You can find out more about document generation at
 
     [AEM Forms as a Cloud Service - Communications
-    Overview](https://www.adobe.com/go/learn_aemformscs_communications_en)
+    Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=en)
 
     # Before you start
 
-    Make user account of your developer or techincal account member of forms-user group. If you do not have a technical account, make a call to AEM as a Cloud Service. When you use service credential a techincal account is created on the first call.
+    Make user account of your developer or technical account member of forms-user group. If you do not have a technical account, call AEM as a Cloud Service. When you use service credential, a technical account is created on the first call.
 
     # Set up Communicaions APIs
 
-    Contact formscsbeta@adobe.com to enable Communications APIs for your organization. Send name of your organization, program details, and email address of your AEM as a Cloud Service administrator. Also, set up a [local development environment](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html) to test and develop the functionality using Communication APIs locally. 
+    Contact formscsbeta@adobe.com so you can enable Communications APIs for your organization. Send name of your organization, program details, and email address of your AEM as a Cloud Service administrator. Also, set up a [local development environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment.html to test and develop the functionality using Communication APIs locally. 
 
     <SecurityDefinitions />
 
@@ -81,7 +81,7 @@ x-tagGroups:
       - PrintConfig
 externalDocs:
   description: Find out more
-  url: https://www.adobe.com/go/learn_aemformscs_communications_en
+  url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=en
 paths:
   /generatePDFOutput:
     post:
@@ -108,7 +108,7 @@ paths:
                 style: form
       responses:
         "200":
-          description: Operation successful. The generated PDF Document is included in the respose.
+          description: Operation successful. The generated PDF Document is included in the response.
           content:
             application/pdf:
               schema:
@@ -138,7 +138,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
         "500":
-          description: Internal server error. The server has encountered an error and is unable to process your request at this time.
+          description: Internal server error. The server has encountered an error and is unable to process your request currently.
           content:
             application/json:
               schema:
@@ -198,13 +198,13 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
         "500":
-          description: Internal Server Error. The server has encountered an error and is unable to process your request at this time.
+          description: Internal Server Error. The server has encountered an error and is unable to process your request currently.
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
 components:
-  description: Generates a PDF or a PDF/A document from the provided form design and data. Optionally, generate a metadata file for each record and send the output directly to a printer. Use this operation to use a form design that is part of an application in the Applications view. It is recommended that you use the generatePDFOutput operation (deprecated) operation when the form design is located on a network, local file system, or HTTP location.
+  description: Generates a PDF or a PDF/A document from the provided form design and data. Optionally, generate a metadata file for each record and send the output directly to a printer. Use this operation to use a form design that is part of an application in the Applications view. It is recommended that you use the generatePDFOutput operation (deprecated) operation when the form design is on a network, local file system, or HTTP location.
   schemas:
     Error:
       type: object
@@ -249,7 +249,7 @@ components:
           - type: string
           description: |
             The service uses an XCI configuration file to configure various properties of the PDF document.
-            The XCI parameter has an effect only when the template is of type XDP or an XDP-based PDF document.
+            The XCI parameter is effective only when the template is of type XDP or an XDP-based PDF document.
     PrintConfig:
       type: object
       description: print configuration.
@@ -326,11 +326,11 @@ components:
         retainFormState:
           type: boolean
           default: false
-          description: Set true to retain PDF Form state while flattening PDF. This parameter has effect only when source template is an XFA-based PDF Form and no input data is provided.
+          description: Set true to retain PDF Form state while flattening PDF. This parameter is effective only when source template is an XFA-based PDF Form and no input data is provided.
         retainUnsignedSignatureFields:
           type: boolean
           default: false
-          description: Set true to retain interactive unsigned signature fields in generated Flat PDF. It allows you to use PDF for gathering signatures.
+          description: Set true to retain interactive unsigned signature fields in generated Flat PDF. It lets you use PDF for gathering signatures.
         acrobatVersion:
           type: string
           description: Set the minimum version of Acrobat Reader required to open the PDF document.
@@ -380,7 +380,7 @@ components:
           schema:
             $ref: '#/components/schemas/Error'
     InternalServer:
-      description: Internal Server Error. The server has encountered an error and is unable to process your request at this time.
+      description: Internal Server Error. The server has encountered an error and is unable to process your request currently.
       content:
         application/json:
           schema:
@@ -418,9 +418,9 @@ components:
         ref: The <output_file_content_part> containing the input file in the multipart/form-data request.
         type: binary
     http:
-      summary: Example of URL based document.
+      summary: Example of URL-based document.
       value:
-        ref: The http url which return the value
+        ref: The http url which returns the value
         type: http
     printoptions:
       value:
@@ -449,10 +449,10 @@ components:
         AEM Forms as a Cloud Service provides APIs to securely retrieve the access token.
         The end-to-end workflow for retrieving and using the token to authenticate a request is:
 
-        - [Retrieve AEM as a Cloud Service credentials from the Developer
+        - [Retrieve credentials on AEM as a Cloud Service from the Developer
         Console.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en)
 
-        - [Install AEM as a Cloud Service credentials on your
+        - [Install credentials on AEM as a Cloud Service on your
         environment.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en)
         (Application Server, Web Server, or other non-AEM servers) configured to
         send requests to (make calls) the cloud service.

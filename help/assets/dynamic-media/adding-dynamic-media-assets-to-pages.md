@@ -10,7 +10,7 @@ exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
 
 To add the Dynamic Media functionality to assets that you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. You enter Layout mode and enable the Dynamic Media components. Then you add these components to the page and add assets to the component. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
 
-You add Dynamic Media assets directly to the page if you are using [!DNL Adobe Experience Manager] as your WCM. If you are using a third party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. For a responsive third-party website, see [delivering optimized images to a responsive site](/help/assets/dynamic-media/responsive-site.md).
+You add Dynamic Media assets directly to the page if you are using [!DNL Adobe Experience Manager] as your WCM. If you are using a third-party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. For a responsive third-party website, see [delivering optimized images to a responsive site](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >

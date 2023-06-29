@@ -1,11 +1,11 @@
 ---
 title: Logging for AEM as a Cloud Service
-description: Learn how to use Logging for AEM as a Cloud Service in order to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
+description: Learn how to use Logging for AEM as a Cloud Service to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 ---
 # Logging for AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service is a platform for customers to include custom code to create unique experiences for their customer base. With this in mind, the logging service is a critical function in order to debug and understand code execution on local development, and cloud environments, particularly the AEM as a Cloud Service's Dev environments.
+AEM as a Cloud Service is a platform for customers to include custom code to create unique experiences for their customer base. With this in mind, the logging service is a critical function to debug and understand code execution on local development, and cloud environments, particularly the AEM as a Cloud Service's Dev environments.
 
 AEM as a Cloud Service logging settings and log levels are managed in configuration files that are stored as part of the AEM project in Git, and deployed as part of the AEM project via Cloud Manager. Logging in AEM as a Cloud Service can be broken into two logical sets:
 
@@ -46,7 +46,7 @@ Development</td>
 DEBUG</td>
 <td>
 Describes what is happening in the application.<br>
-When DEBUG logging is active, statements providing a clear picture of what activities occur as well as any key parameters that affect processing are logged.</td>
+When DEBUG logging is active, statements providing a clear picture of what activities occur and any key parameters that affect processing are logged.</td>
 <td>
 <ul>
 <li> Local Development</li>
@@ -88,7 +88,7 @@ When ERROR logging is active, only statements indicating failures are logged. ER
 
 While Java logging supports several other levels of logging granularity, AEM as a Cloud Service recommends using the three levels described above. 
 
-AEM Log levels are set per environment type via OSGi configuration, which in turn are committed to Git, and deployed via Cloud Manager to AEM as a Cloud Service. Because of this, it is best to keep log statements consistent and well known for environment types, in order to ensure the logs available via AEM as Cloud Service are available at the optimal log level without requiring redeployment of application with the updated log level configuration.
+AEM Log levels are set per environment type via OSGi configuration, which in turn are committed to Git, and deployed via Cloud Manager to AEM as a Cloud Service. Because of this, it is best to keep log statements consistent and well known for environment types to ensure the logs available via AEM as Cloud Service are available at the optimal log level without requiring redeployment of application with the updated log level configuration.
 
 **Example Log Output**
 
@@ -539,7 +539,7 @@ Depending on the traffic and the amount of log statement written by Debug, this 
 
 ## Splunk Logs {#splunk-logs}
 
-Customers who have Splunk accounts may request via customer support ticket that their AEM Cloud Service logs are forwarded to the appropriate index. The logging data is equivalent to what is available through the Cloud Manager log downloads, but customers may find it convenient to leverage the query features available in the Splunk product.
+Customers who have Splunk accounts may request via customer support ticket that their AEM Cloud Service logs are forwarded to the appropriate index. The logging data is equivalent to what is available through the Cloud Manager log downloads, but customers may find it convenient to use the query features available in the Splunk product.
 
 The network bandwidth associated with logs sent to Splunk are considered part of the customer's Network I/O usage.
 
@@ -564,7 +564,7 @@ The properties above should be specified for each relevant program/environment t
 
 You should make sure that the initial request includes all dev environment that should be enabled, in addition to the stage/prod environments. Splunk must have an SSL certificate, and be public facing. 
 
-If any new dev environments created after the initial request are intended to have Splunk forwarding, but don't have it enabled, an additional request should be made.
+If any new dev environments created after the initial request are intended to have Splunk forwarding, but do not have it enabled, an additional request should be made.
 
 Also note that if dev environments have been requested, it is possible that other dev environments not in the request or even sandbox environments will have Splunk forwarding enabled and will share a Splunk index. Customers can use the `aem_env_id` field to distinguish between these environments.
 

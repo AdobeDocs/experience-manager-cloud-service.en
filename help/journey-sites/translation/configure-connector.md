@@ -55,7 +55,7 @@ If you choose another provider your administrator must install the connector pac
 >
 >If you choose to use the Microsoft Translator connector for testing purposes, you do not need to carry out the steps in the next two sections: [Creating a Translation Integration Configuration](#create-config) and [Associate the Configuration with Your Content.](#associate) However you are advised to read them so that you are familiar with the steps for when you need to configure your preferred connector.
 >
->The trial license of the Microsoft Translator connector is not intended for production purposes and if you decide to license it, the system administrator must follow the steps detailed in the [Additional Resources](#additional-resources) section at the end of this document in order to configure that license.
+>The trial license of the Microsoft Translator connector is not intended for production purposes and if you decide to license it, the system administrator must follow the steps detailed in the [Additional Resources](#additional-resources) section at the end of this document to configure that license.
 
 ## Creating a Translation Integration Configuration {#create-config}
 
@@ -76,7 +76,7 @@ To create a new translation configuration:
 1. Click or tap **Create** in the toolbar to create the new configuration.
 1. Provide the following information in the fields and then click or tap **Create**.
    1. Select **Configuration Type** in the drop-down. Select **Translation Integration** from the list.
-   1. Enter a **Title** for your configuration. The **Title** identifies the configuration in the **Cloud Services** console as well as in page property drop-down lists.
+   1. Enter a **Title** for your configuration. The **Title** identifies the configuration in the **Cloud Services** console and in page property drop-down lists.
    1. Optionally, type a **Name** to use for the repository node that stores the configuration.
 
    ![Create translation configuration](assets/create-translation-configuration.png)

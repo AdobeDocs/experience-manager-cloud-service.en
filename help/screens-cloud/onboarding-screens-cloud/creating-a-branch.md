@@ -8,7 +8,7 @@ exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
 This section describes how to create a branch for your program in Cloud Manager.
 
 >[!NOTE]
->Refer to [Using the Wizard in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=en) to learn how to create an AEM application project in Cloud Manager using the wizard.
+>See [Using the Wizard in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=en) to learn how to create an AEM application project in Cloud Manager using the wizard.
 
 ## Objective {#objective}
 

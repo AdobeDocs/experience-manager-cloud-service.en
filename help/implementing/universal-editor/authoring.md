@@ -9,7 +9,7 @@ Learn how easy and intuitive it is for content authors to create content using t
 
 ## Introduction {#introduction}
 
-The Universal Editor enables editing any aspect of any content in any implementation in order to deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
+The Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
 
 To do this, it provides content authors with an intuitive UI that requires minimal training to be able to simply jump in and begin editing content.
 
@@ -23,17 +23,17 @@ To do this, it provides content authors with an intuitive UI that requires minim
 
 ## Prepare the App {#prepare-app}
 
-In order to author content for an app using the Universal Editor, the app must be instrumented by a developer to support the editor.
+To author content for an app using the Universal Editor, the app must be instrumented by a developer to support the editor.
 
 >[!TIP]
 >
->Please see the document [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of how to configure an AEM app to work with the Universal Editor.
+>See [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of how to configure an AEM app to work with the Universal Editor.
 
 ## Sign In {#sign-in}
 
 Once the app is instrumented to work with the Universal Editor, you will need to sign into the Universal Editor. You will need an Adobe ID to sign in and [have access to the Universal Editor.](getting-started.md#request-access)
 
-Once you are signed in, enter the URL of the page you wish to edit in the [address bar.](#address-bar) in order to start [editing the content.](#edit-content)
+After you are signed in, enter the URL of the page you want to edit in the [address bar.](#address-bar) so you can start [editing the content.](#edit-content)
 
 ## Understand The UI {#ui}
 
@@ -78,19 +78,19 @@ The help icon provides quick access to learning and support resources.
 
 #### Notifications {#notifications}
 
-This icon will be badged with the number of currently assigned incomplete [notifications.](/help/implementing/cloud-manager/notifications.md)
+This icon is badged with the number of currently assigned incomplete [notifications](/help/implementing/cloud-manager/notifications.md).
 
 ![Notifications](assets/notifications.png)
 
 #### User Properties {#user-properties}
 
-Tap or click the icon representing your user to access your user settings. If you do not have a user picture configured, an icon will be randomly assigned.
+Tap or click the icon representing your user to access your user settings. If you do not have a user picture configured, an icon is randomly assigned.
 
 ![User properties](assets/user-properties.png)
 
 ### The Universal Editor Header {#universal-editor-header}
 
-The Universal Editor header is always present at the top of the screen just below [the Experience Cloud header.](#experience-cloud-header) It gives you quick access to navigate to another page to edit as well as to publish the current page.
+The Universal Editor header is always present at the top of the screen just below [the Experience Cloud header.](#experience-cloud-header) It gives you quick access to navigate to another page to edit and to publish the current page.
 
 ![The Universal Editor header](assets/universal-editor-header.png)
 
@@ -126,7 +126,7 @@ Tap or click the open app preview icon to open the page you are currently editin
 
 #### Publish {#publish}
 
-Tap or click the publish button in order to publish the changes to the content live for consumption by your readers.
+Tap or click the publish button so you can publish the changes to the content live for consumption by your readers.
 
 ![Publish button](assets/publish.png)
 
@@ -166,7 +166,7 @@ Depending on if the editor is in [edit mode](#edit-mode) or [preview mode,](#edi
 
 ## Editing Content {#editing-content}
 
-Editing content is simple and intuitive. In [edit mode,](#edit-mode) as you mouse over content in the editor, editable content will be highlighted with a blue box.
+Editing content is simple and intuitive. In [edit mode,](#edit-mode) as you mouse over content in the editor, editable content is highlighted with a blue box.
 
 ![Editable content is highlighted by a blue box](assets/editable-content.png)
 
@@ -186,7 +186,7 @@ Note that in preview mode, tapping or clicking on content reacts as it would to 
 
 To learn more about the Universal Editor, see these documents.
 
-* [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation in order to deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
+* [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
 * [Publishing Content with the Universal Editor](publishing.md) - Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
 * [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.

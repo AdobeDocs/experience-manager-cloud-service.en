@@ -195,15 +195,15 @@ AEM Forms as a Cloud Services provides a docker-based SDK environment for easier
     > managed by Docker when using WSL2 (modern). You have to
     > explicitly configure file sharing while using  Hyper-V (legacy).  
 
-1. Create a folder, say aem-sdk, in parallel to your author and publish instances. For example C:\aem-sdk.  
+1. Create a folder, say aem-sdk, in parallel to your author and publish instances. For example, C:\aem-sdk.  
 
 1. Extract the `aem-forms-addon-<version>.zip\aem-forms-addon-native-<version>.zip` file.
 
    ![extracted aem forms add on native](assets/microservice-docker.png)
 
-1. Create an environment variable AEM_HOME and point to local AEM Author installation. For example C:\aem\author\.
+1. Create an environment variable AEM_HOME and point to local AEM Author installation. For example, C:\aem\author\.
 
-1. Open sdk.bat or sdk.sh for editing. Set the AEM_HOME to point to local AEM Author installation. For example C:\aem\author\.
+1. Open sdk.bat or sdk.sh for editing. Set the AEM_HOME to point to local AEM Author installation. For example, C:\aem\author\.
 
 1. Open command prompt and navigate to the `aem-forms-addon-native-<version>` folder.
 

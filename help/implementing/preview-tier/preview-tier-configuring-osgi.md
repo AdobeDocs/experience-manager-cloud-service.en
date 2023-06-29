@@ -13,7 +13,7 @@ The preview tier's OSGi property values are inherited from the publish tier. How
 
 >[!NOTE]
 >
->For more details about the preview environments, please see the document [Manage Environments.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>For more details about the preview environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Configuring the OSGi Settings for the Preview Tier {#configuring-osgi-settings-for-the-preview-tier}
 
@@ -34,7 +34,7 @@ For more information, see [this section](/help/implementing/deploying/configurin
 
 ## Debugging Preview Using the Developer Console {#debugging-preview-using-the-developer-console}
 
-Follow these steps in order to debug the preview tier using the Developer Console:
+Follow these steps so you can debug the preview tier using the Developer Console:
 
 * In the [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), select either **-- All Preview --** or a production environment that includes **prev** in its name
 * Generate the relevant information for the preview instance

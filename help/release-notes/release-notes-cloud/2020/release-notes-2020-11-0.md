@@ -26,7 +26,7 @@ The following release (2020.12.0) will be on December 17, 2020
 
 ### What is new in [!DNL Assets] and [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Bulk asset ingestion**: Provide customers with a scalable, cloud-native ingestion service that leverages [!DNL Experience Manager] as a Cloud Service architecture including asset microservices. Key use cases include ingestion at scale with monitoring, reporting, and scheduling, while allowing for initial transfer of assets to cloud data stores using common cloud upload tooling. See [asset bulk ingestor tool](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **Bulk asset ingestion**: Provide customers with a scalable, cloud-native ingestion service that uses [!DNL Experience Manager] as a Cloud Service architecture including asset microservices. Key use cases include ingestion at scale with monitoring, reporting, and scheduling, while allowing for initial transfer of assets to cloud data stores using common cloud upload tooling. See [asset bulk ingestor tool](/help/assets/add-assets.md#asset-bulk-ingestor).
 
   This tool is for system administrator, consultant, or implementation partner personas. This feature allows for large scale ingestion and is ideally used during initial ingestion or occasional large ingestion. For smaller ingestion jobs, use the [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) or [upload using Assets user interface](/help/assets/add-assets.md#upload-assets).
 
@@ -67,9 +67,9 @@ The following release (2020.12.0) will be on December 17, 2020
 
 ### What is New {#what-is-new-commerce}
 
-* Released CIF Venia Reference Site - 2020.11.05 that includes the lastest CIF Core Components version v1.5.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) for more details.
+* Released CIF Venia Reference Site - 2020.11.05 that includes the lastest CIF Core Components version v1.5.0. See [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) for more details.
 
-* Released CIF Core Components v1.5.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) for more details.
+* Released CIF Core Components v1.5.0. See [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) for more details.
 
 ### Bug Fixes {#bug-fixes-commerce}
 
@@ -84,7 +84,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is Novemb
 ### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * A new menu option **Local Login** is now be available to users from the environment menu options on the **Environments** card and **Environments** summary pages. 
-   Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md#login-locally) for more details.
+   See [Managing Environments](/help/implementing/cloud-manager/manage-environments.md#login-locally) for more details.
 
 * The **Learn** tab in Cloud Manager has been refreshed with new images in the UI.
 
@@ -93,7 +93,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2020.11.0 is Novemb
 * The loading of dependencies done prior to build execution required downloading a Maven plugin.
 * The link from the Cloud Manager footer to select a language will now navigate to the correct location.
 * Sometimes during the code scanning, the SonarQube process would not start. This will now be auto-detected and a restart attempted.
-* All existing production pipelines will be automatically enabled with the Experience Audit step. 
+* All existing production pipelines are automatically enabled with the Experience Audit step. 
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
@@ -111,7 +111,7 @@ The AEM as a Cloud Service SDK Build Analyzer Maven Plugin detects problems in a
 
 ### Others {#others-foundation}
 
-New [“httpd -t” syntax](/help/implementing/dispatcher/disp-overview.md#local-validation) check for apache and dispatcher configuration executed during Cloud Manager build, which can also be run using AEM as a Cloud Service SDK’s Dispatcher Tools.
+New ["httpd -t" syntax](/help/implementing/dispatcher/disp-overview.md#local-validation) check for apache and dispatcher configuration executed during Cloud Manager build, which can also be run using AEM as a Cloud Service SDK's Dispatcher Tools.
 
 ## Content Transfer Tool {#content-transfer-tool}
 

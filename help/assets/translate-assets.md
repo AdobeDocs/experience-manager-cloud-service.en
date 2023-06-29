@@ -118,7 +118,7 @@ If you use this option, assets to be translated are copied to the language root 
 
 ### Add to an existing translation project {#add-to-existing-translation-project}
 
-If you use this option, the translation workflow runs for assets that you add to the source folder after running a previous translation workflow. Only the newly-added assets are copied to the target folder that contains previously-translated assets. No new translation project is created in this case.
+If you use this option, the translation workflow runs for assets that you add to the source folder after running a previous translation workflow. Only the newly added assets are copied to the target folder that contains previously translated assets. No new translation project is created in this case.
 
 1. In the Assets UI, navigate to the source folder that contains untranslated assets.
 1. Select an asset you want to translate, and open the **[!UICONTROL Reference pane]**. The **[!UICONTROL Language Copies]** section displays the number of translation copies that are currently available.
@@ -147,7 +147,7 @@ If you use this option, the translation workflow runs for assets that you add to
 
 ### Update language copies {#update-language-copies}
 
-Run this workflow to translate any additional set of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously-translated assets. Depending upon the choice of options, a translation project is created or an existing translation project is updated for the new assets. The Update language copies workflow includes the following options:
+Run this workflow to translate any additional set of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously translated assets. Depending on the choice of options, a translation project is created or an existing translation project is updated for the new assets. The Update language copies workflow includes the following options:
 
 * Create a new translation project
 * Add to existing translation project
@@ -167,7 +167,7 @@ If you use this option, the set of assets are added to an existing translation p
 
 ### Create temporary language copies {#creating-temporary-language-copies}
 
-When you run a translation workflow to update a language copy with edited versions of original assets, the existing language copy is preserved until you approve the translated asset(s). [!DNL Assets] stores the newly-translated asset(s) at a temporary location and updates the existing language copy after you explicitly approve the asset(s). If you reject the asset(s), the language copy remains unchanged.
+When you run a translation workflow to update a language copy with edited versions of original assets, the existing language copy is preserved until you approve the translated asset(s). [!DNL Assets] stores the newly translated assets at a temporary location and updates the existing language copy after you explicitly approve the asset(s). If you reject the asset(s), the language copy remains unchanged.
 
 1. Click/tap the source root folder under **[!UICONTROL Language Copies]** for which you already created a language copy, and then click/tap **[!UICONTROL Reveal in Assets]** to open the folder in [!DNL Assets].
 1. From the Assets UI, select an asset you already translated and click/tap the **[!UICONTROL Edit]** icon from the toolbar to open the asset in edit mode.
@@ -185,7 +185,7 @@ When you run a translation workflow to update a language copy with edited versio
 
 1. Navigate to the Assets console, and open the Properties page for each of the translated assets to view the translated metadata.
 
-<!-- TBD: Possibly this blog wasn't migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
+<!-- TBD: Possibly this blog was not migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
 
 For tips on translating metadata for assets efficiently, see [5 Steps to efficiently translate metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/). 
 -->
@@ -200,7 +200,7 @@ In this workflow, assets to be translated are copied to the language root of the
 
 **Update language copies**
 
-You run this workflow to translate an additional group of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously-translated assets.
+You run this workflow to translate an additional group of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously translated assets.
 
 >[!NOTE]
 >
@@ -258,9 +258,9 @@ Applying translation cloud services directly to your asset folder eliminates the
 
 ### Apply custom translation connector {#applying-custom-translation-connector}
 
-If you want to apply a custom connector for the translation services you want to use in translation workflows. To apply a custom connector, first install the connector from [Package Manager.](/help/implementing/developing/tools/package-manager.md) Then, configure the connector from the Cloud Services console. After you configure the connector, it is available in the list of connectors in the Cloud Services tab described in [Applying the translation services](#applying-the-translation-services). After you apply the custom connector and run translation workflows, the **[!UICONTROL Translation Summary]** tile of the translation project displays the connector details under the heads **[!UICONTROL Provider]** and **[!UICONTROL Method]**.
+If you want to apply a custom connector for the translation services you want to use in translation workflows. To apply a custom connector, first install the connector from [Package Manager](/help/implementing/developing/tools/package-manager.md). Then, configure the connector from the Cloud Services console. After you configure the connector, it is available in the list of connectors in the Cloud Services tab described in [Applying the translation services](#applying-the-translation-services). After you apply the custom connector and run translation workflows, the **[!UICONTROL Translation Summary]** tile of the translation project displays the connector details under the heads **[!UICONTROL Provider]** and **[!UICONTROL Method]**.
 
-1. Install the connector from [Package Manager.](/help/implementing/developing/tools/package-manager.md)
+1. Install the connector from [Package Manager](/help/implementing/developing/tools/package-manager.md).
 1. Click/tap the Experience Manager logo, and navigate to **[!UICONTROL Tools > Deployment > Cloud Services]**.
 1. Locate the connector you installed under **[!UICONTROL Third Party Services]** in the **[!UICONTROL Cloud Services]** page.
 

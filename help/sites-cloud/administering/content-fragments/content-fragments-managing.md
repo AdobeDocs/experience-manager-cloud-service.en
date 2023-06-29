@@ -64,10 +64,10 @@ To create a content fragment:
 
 1. The **New Content Fragment** dialog will open, from here you can specify the:
 
-   * **Location** - this will be auto-completed with the current location, but you can select a different location if required
-   * **Content Fragment Model** - select the model to be used as a basis of the fragment from the drop down list
+   * **Location** - auto-completed with the current location, but you can select a different location if required
+   * **Content Fragment Model** - select the model to be used as a basis of the fragment from the drop-down list
    * **Title**
-   * **Name** - this will be auto-completed based on the **Title**, but you can edit it if required
+   * **Name** - auto-completed based on the **Title**, but you can edit it if required
    * **Description** 
 
    ![New Content Fragment dialog](assets/cfm-managing-new-cf-01.png)
@@ -95,7 +95,7 @@ To open your fragment for editing:
 
 >[!CAUTION]
 >
->To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
+>To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contact your system administrator if you are experiencing issues.
 
 1. Use the **Content Fragments** console to navigate to the location of your content fragment.
 1. Open the fragment for editing, by selecting the fragment, then **Open** from the toolbar.
@@ -138,7 +138,7 @@ Some features in the top toolbar are available from multiple modes:
 
 ![modes](assets/cfm-managing-top-toolbar.png)
 
-* A message will be shown when the fragment is already referenced on a content page. You can **Close** the message.
+* A message is shown when the fragment is already referenced on a content page. You can **Close** the message.
 
 * The side panel can be hidden/shown using the **Toggle Side Panel** icon.
 
@@ -180,7 +180,7 @@ The editor has various options:
 
   >[!CAUTION]
   >
-  >To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Please contact your system administrator if you are experiencing issues. 
+  >To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contact your system administrator if you are experiencing issues. 
 
   >[!NOTE]
   >
@@ -190,11 +190,11 @@ The editor has various options:
   >
   >In addition to simply saving your changes, the actions also update any references and ensures that the Dispatcher is flushed as required. These changes can take time to process. Due to this, there can be a performance impact on a large/complex/heavily-loaded system.
   >
-  >Please bear this in mind when using **Save & close** and then quickly re-entering the fragment editor to make and save further changes.
+  >Keep this process time in mind when using **Save & close**, and then quickly reenterint the fragment editor to make and save further changes.
 
 * **Close**
 
-  Will exit the editor without saving the latest changes (i.e made since the last **Save**).
+  Will exit the editor without saving the latest changes (that is, made since the last **Save**).
 
 While editing your content fragment AEM automatically creates versions to ensure that prior content can be restored if you cancel your changes (using **Close** without saving):
 
@@ -225,7 +225,7 @@ Once you have created the Master content, you can create, and manage, [Variation
 
 ## Associating Content with your Fragment {#associating-content-with-your-fragment}
 
-You can also [associate content](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) with a fragment. This provides a connection so that assets (i.e. images) can be (optionally) used with the fragment when it is added to a content page.
+You can also [associate content](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) with a fragment. This provides a connection so that assets (that is, images) can be (optionally) used with the fragment when it is added to a content page.
 
 ## Viewing and Editing the Metadata (Properties) of your Fragment {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -245,7 +245,7 @@ You can publish your Content Fragments to:
 
   >[!NOTE]
   >
-  >For more details about the Preview environments, please see:
+  >For more details about the Preview environments, see the following:
   >
   >* [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   >* [Configuring OSGi Settings for the Preview Tier](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
@@ -257,16 +257,16 @@ To publish your Content Fragments using the **Publish** option in the toolbar of
 >
 >If your fragment is based on a model, then you should ensure that the [model has been published](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
->If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
+>If you publish a content fragment for which the model has not yet been published, a selection list indicates this and the model is published with the fragment.
 
 1. Select one, or more, of your fragments from the list.
 
 1. From the toolbar, select **Publish** and then either of the following to open the appropriate dialog:
 
-   * **Now** - select either the **Publish service**, or the **Preview service**; after confirmation, the fragment will be published immediately
-   * **Schedule** - in addition to the required service, you can also select the date and time when the fragment will be published
+   * **Now** - select either the **Publish service**, or the **Preview service**; after confirmation, the fragment is published immediately
+   * **Schedule** - in addition to the required service, you can also select the date and time when the fragment is published
 
-   When necessary you will be required to specify the references to publish. By default, references also get published to the Preview service to ensure that there is no break in the content. 
+   When necessary, you are required to specify the references to publish. By default, references also get published to the Preview service to ensure that there is no break in the content. 
    For example, for a scheduled publish request:
    ![Publish dialog](assets/cfm-publish-01.png)
 
@@ -278,11 +278,11 @@ You can also publish to the **Publish Service** from the [Content Fragment Edito
 
 >[!NOTE]
 >
->After you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment will be listed in the page references.
+>After you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), the fragment is listed in the page references.
 
 >[!CAUTION]
 >
->After a fragment has been published and/or referenced, AEM will display a warning when an author opens the fragment for editing again. This is to warn that changes to the fragment will affect the referenced pages as well.
+>After a fragment is published, referenced, or both, AEM displays a warning when an author opens the fragment for editing again. The author is warned that changes to the fragment are going to affect referenced pages, too.
 
 ## Unpublishing a Fragment {#unpublishing-a-fragment}
 
@@ -293,7 +293,7 @@ When the relevant dialog opens you can select the appropriate service:
 
 >[!NOTE]
 >
->The **Unpublish** action will be only visible when published fragments are available.
+>The **Unpublish** action is only visible when published fragments are available.
 
 >[!CAUTION]
 >
@@ -315,7 +315,7 @@ To delete a fragment:
 
    >[!CAUTION]
    >
-   >If the fragment is already referenced from another fragment, or from a page, you will then see a warning message and be required to confirm that you want to proceed with a **Force Delete**. The fragment, together with its content fragment component, will be deleted from any content pages.
+   >If the fragment is already referenced from another fragment, or from a page, you will then see a warning message and be required to confirm that you want to proceed with a **Force Delete**. The fragment, together with its content fragment component, are deleted from any content pages.
 
 ## Finding Parent References of your Fragment {#parent-references-fragment}
 
@@ -380,7 +380,7 @@ This will open:
 
 * the selected version **v&lt;*x.y*&gt;** (right)
 
-They will be shown side by side, where:
+They are shown side by side, where:
 
 * Any differences are highlighted
 

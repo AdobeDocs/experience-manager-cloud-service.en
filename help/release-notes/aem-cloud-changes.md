@@ -15,7 +15,7 @@ AEM Cloud Service brings many new features and possibilities for managing your A
 
 
 >[!NOTE]
->This document highlights the notable changes to AEM as a whole. For further information and solution-specific changes see:
+>This document highlights the notable changes to AEM as a whole. For more information and solution-specific changes see:
 >
 >* [An Introduction to Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 >* [What is New and What is Different](/help/overview/what-is-new-and-different.md) between Adobe Experience Manager as a Cloud Service and previous versions
@@ -43,14 +43,14 @@ The main differences are found in the following areas:
 
 ## /apps and /libs are immutable at runtime {#apps-libs-immutable}
 
- Any content and sub-folders in `/apps` and `/libs` is read-only. Any feature or custom code that expects to make changes there will fail to do so. An error will be returned that such content is read-only and the write operation wasn't able to complete. This has an impact in a number of areas of AEM:
+ Any content and sub-folders in `/apps` and `/libs` is read-only. Any feature or custom code that expects to make changes there will fail to do so. An error is returned that such content is read-only and the write operation was not able to complete. This has an impact in a number of areas of AEM:
 
 * No changes in `/libs` are allowed at all.
   * This is not new rule, however this was not enforced in previous on-premise versions of AEM.
 * Overlays for areas in `/libs` that are allowed to be overlaid are still permitted within `/apps`.
   * Such overlays must come from Git via the CI/CD pipeline.
 * Static Template design information that is stored in `/apps` can't be edited via UI.
-  * It is recommended that you leverage Editable Templates instead.
+  * It is recommended that you use Editable Templates instead.
   * If Static Templates are still required, configuration information must come from Git via the CI/CD pipeline.
 * MSM Blueprint and custom MSM roll-out configurations must be installed from Git via the CI/CD pipeline.
 * I18n translation changes need to come from Git via the CI/CD pipeline.

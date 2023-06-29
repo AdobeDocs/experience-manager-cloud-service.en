@@ -16,6 +16,10 @@ A user with administrator access in [!DNL Adobe Experience Manager] as a [!DNL C
 
 >[!IMPORTANT]
 >
+>As of June 2022, Adobe released a new native integration for connecting Workfront with Adobe Experience Manager Assets as a Cloud Service. This integration has become the required method for connecting these two solutions. Any future new implementation of the enhanced connector (1.9.8 and later) to connect Workfront with AEM Assets as a Cloud Service is blocked. For more information on how to setup this integration, see [Configure the Experience Manager Assets as a Cloud Service integration](workfront-connector-configure.md).
+
+>[!IMPORTANT]
+>
 >* Adobe requires deployment and configuration of the [!DNL Adobe Workfront for Experience Manager enhanced connector] only via certified partners or [!DNL Adobe Professional Services]. If deployed and configured without a certified partner or [!DNL Adobe Professional Services], it is not supported by Adobe.
 >
 >* Adobe may release updates to [!DNL Adobe Workfront] and [!DNL Adobe Experience Manager] that make this connector redundant; if this occurs, customers may be required to transition from the use of this connector.
@@ -26,11 +30,26 @@ A user with administrator access in [!DNL Adobe Experience Manager] as a [!DNL C
 
 Before you install the connector, follow these pre-installation steps:
 
-1. [Configure the firewall](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html). To know the IP cluster in [!DNL Workfront], navigate to [!UICONTROL Setup] > [!UICONTROL System] > [!UICONTROL Customer Info].
+1. If your AEM as a Cloud Service Program has configured Advanced Networking and enabled IP Allow-Listing, then you need to add the Workfront IPs to this allow-list to permit Event Subscriptions and various API calls to pass through into AEM.
 
-1. On the dispatcher, allow HTTP headers named `authorization`, `username`, and `apikey`. Allow `GET`, `POST`, and `PUT` requests to `/bin/workfront-tools`.
+   * [Workfront Cluster IPs](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). To know the IP cluster in [!DNL Workfront], navigate to **[!UICONTROL Setup]** > **[!UICONTROL System]** > **[!UICONTROL Customer Info]**.
 
-1. Ensure that the following paths do not exist in [!DNL Experience Manager] repository:
+   * [Workfront Event Subscription API IPs](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html)
+
+   >[!IMPORTANT]
+   >
+   >* If you have Advanced Networking configured for your program and are using IP Allow Listing, then due to a limitation with the Enhanced Workfront Connector architecture you also need to add the program egress IP to the allow-list in Cloud Manager.
+   >
+   >* p{PROGRAM_ID}.external.adobeaemcloud.com
+   >
+   >* To find the IP of your program, open a terminal window and run a command, such as:
+   >
+   >    ```
+   >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
+   >
+   >    ```
+
+1. Ensure that the following overlays do not exist in [!DNL Experience Manager] repository. If you have pre-existing overlays on these paths you either need to remove the overlays, or merge the delta of changes between the two:
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
    * `/apps/dam/gui/coral/components/admin/folderschemaforms/formbuilder`

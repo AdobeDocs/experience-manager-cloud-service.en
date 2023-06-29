@@ -26,7 +26,7 @@ Depending on which Project template you select, you have certain workflows avail
 
 >[!NOTE]
 >
->&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets.](/help/sites-cloud/administering/translation/managing-projects.md)
+>&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets](/help/sites-cloud/administering/translation/managing-projects.md).
 
 The steps for starting and completing workflows are the same no matter which workflow you choose. Only the steps change.
 
@@ -64,4 +64,4 @@ This workflow lets you request a launch.
 
 ## Create (and Translate) Language Copy Workflow for Assets {#create-and-translate-language-copy-workflow-for-assets}
 
-The **Create Language Copy** and the **Create and Translate Language Copy** workflows are covered in detail in [creating language copies for assets.](/help/assets/translate-assets.md)
+The **Create Language Copy** and the **Create and Translate Language Copy** workflows are covered in detail in [creating language copies for assets](/help/assets/translate-assets.md).

@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 ---
 # Editing Programs {#editing-programs}
 
-Users with requisite permissions can edit [production programs created in your organization](creating-production-programs.md) as well as [sandbox programs created in your organization.](creating-sandbox-programs.md) By editing a program you can:
+Users with requisite permissions can edit [production programs created in your organization](creating-production-programs.md) and [sandbox programs created in your organization.](creating-sandbox-programs.md) By editing a program you can:
 
 * Add Sites solution to an existing program with Assets and vice versa.
 * Remove Sites or Assets from an existing program with both Sites and Assets.
@@ -53,11 +53,11 @@ Follow these steps to edit a program.
 
 Any time a program is edited, including adding or removing a solution or add-on, those changes will take effect following the next deployment.
 
-If your production program had enhanced security enabled, an additional **Enhanced Security** tab will be available in the **Edit Program** window to confirm that the feature is active for the program.
+If your production program had enhanced security enabled, an additional **Enhanced Security** tab is available in the **Edit Program** window to confirm that the feature is active for the program.
 
 ![Enhanced Security active for a program](assets/edit-program-enhanced.png)
 
-This setting can not be modified once the program is created. For more information about the enhanced security option, please see the [Creating Production Programs](creating-production-programs.md) document.
+This setting can not be modified once the program is created. For more information about the enhanced security option, see [Creating Production Programs](creating-production-programs.md) document.
 
 ## Deleting Sandbox Programs {#delete-sandbox-program}
 

@@ -38,7 +38,7 @@ To create a ContextHub segment in the Audiences console:
    >
    >You can sort the modified list by tapping or clicking **Modified** to sort by descending order to see any newly created audiences.
 
-For further detail about creating segments using ContextHub, please see the Configuring Segmentation with ContextHub documentation. <!--For further detail about creating segments using ContextHub, please see the [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md) documentation.-->
+For further detail about creating segments using ContextHub, see the Configuring Segmentation with ContextHub documentation. <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 
 ## Creating an Adobe Target Audience Using the Audience Console {#creating-an-adobe-target-audience-using-the-audience-console}
 

@@ -42,7 +42,7 @@ Separate from AEM, you also want to make sure you have a proper development envi
 
 ### Defining Content Models and APIs {#defining-models}
 
-You want to drive a consistent experience and manage personalized campaigns across channels, so you can look at each individual channel and surface as its own distinct content structure to deliver to. However having each channel have its own content model will be challenging to maintain.
+You want to drive a consistent experience and manage personalized campaigns across channels, so you can look at each individual channel and surface as its own distinct content structure to deliver to. However, having each channel have its own content model is challenging to maintain.
 
 Instead, you should consider how content on different surfaces is related based on organizing principle such as brand and product hierarchies, categories of goods or surfaces, or steps in the customer journey. For example, if you have a set of surfaces that support a specific brand of cars you manufacture, you may want to start with a content model for general information that would be true for the entire car and then have more - specific elements such as content needed when the car is starting up to when there are service issues. Such a model will enforce inheritance of general car brand content while allow for shifts based on specific context needed. It also helps with future management of updates to this content as you can enforce control based on roles such as the overall marketer or product manager for the entire car brand vs an author who is responsible for the "starting car" experience.
 
@@ -70,7 +70,7 @@ Content authors create content based on the content models that have been define
 
 Before you get started with headless in AEM, you need to make sure all required features are enabled. This section outlines what is required. The actual steps to fulfill these steps are detailed later in the [AEM Headless Developer Journey.](#overview.md)
 
-You can also optionally refer to the [additional resources](#additional-resources) for more information on the individual topics.
+You can also optionally see [additional resources](#additional-resources) for more information on the individual topics.
 
 ### Configuration {#configuration}
 
@@ -80,7 +80,7 @@ You can also optionally refer to the [additional resources](#additional-resource
 
 ## Implementing Your First AEM Headless App
 
-This is an overview of what is needed to implement your first headless app using AEM to deliver your content. How to carry out these steps will be described in detail in later parts of the Headless Developer Journey.
+This is an overview of what is needed to implement your first headless app using AEM to deliver your content. How to carry out these steps ill be described in detail in later parts of the Headless Developer Journey.
 
 1. Create Content Fragment Models
 1. Create Content Fragments
@@ -100,7 +100,7 @@ A headless project is not only successful because of the technology implemented,
 * Group similar content into a folder.
   * It's more likely a content author will copy and paste exiting content to create new content. Therefore having this done in the same folder makes it more efficient.
   * AEM permits allowed models to be set per folder so the **Create new** button will only show the models that are supported in that location.
-* In-line Content Fragment editor creation of new Content Fragments can be simplified if the root folder is set in the model. Then the practitioner doesn't have to choose a location, but just needs to provide a name and can start edit the new reference.
+* In-line Content Fragment editor creation of new Content Fragments can be simplified if the root folder is set in the model. Then the practitioner does not have to choose a location, but just needs to provide a name and can start edit the new reference.
 
 ### Authoring Content {#authoring}
 

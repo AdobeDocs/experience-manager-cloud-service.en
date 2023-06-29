@@ -16,7 +16,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="Launch the sample CodePen app"
->abstract="This guide walks through querying JSON data from your trial environment into a basic JavaScript web app. We'll use the Content Fragments you modelled and created in the earlier learning modules, so please work through those guides first before jumping into this one."
+>abstract="This guide walks through querying JSON data from your trial environment into a basic JavaScript web app. You use the Content Fragments you modeled and created in the earlier learning modules. If necessary, work through those guides first before jumping into this one."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
@@ -25,9 +25,9 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 
 ## CodePen {#codepen}
 
-CodePen is an online code editor and playground for front-end web development. It allows you to write HTML, CSS, and JavaScript code in your browser and see the results of your work almost instantly. You can also save your work and share it with others. We've created a app in CodePen that you can use to fetch JSON data from your trial environment using the [AEM Headless Client for JavaScript](https://github.com/adobe/aem-headless-client-js). You can use this app as-is, or fork it into your own CodePen account to customize further.
+CodePen is an online code editor and playground for front-end web development. It lets you write HTML, CSS, and JavaScript code in your browser and see the results of your work almost instantly. You can also save your work and share it with others. Adobe has created an app in CodePen that you can use to fetch JSON data from your trial environment using the [AEM Headless Client for JavaScript](https://github.com/adobe/aem-headless-client-js). You can use this app as-is, or fork it into your own CodePen account to customize further.
 
-Clicking the **Launch the sample CodePen app** button from the trial will take you to the app in CodePen. The app serves as a minimal example of fetching JSON data with JavaScript. The sample app is designed to render any JSON content which is returned, regardless of the structure of the underlying Content Fragment model. Out-of-the-box, the app will fetch data from an `aem-demo-assets` persisted query that is included in your trial environment. You should see a JSON response similar to the following:
+Clicking the **Launch the sample CodePen app** button from the trial takes you to the app in CodePen. The app serves as a minimal example of fetching JSON data with JavaScript. The sample app is designed to render any JSON content which is returned, regardless of the structure of the underlying Content Fragment model. Out-of-the-box, the app fetches data from an `aem-demo-assets` persisted query that is included in your trial environment. You should see a JSON response similar to the following:
 
 ```json
 {
@@ -47,15 +47,15 @@ Now that you know a bit about CodePen, next you will configure the app to fetch 
 
 ## JavaScript Code Walkthrough {#code-walkthrough}
 
-The **JS** pane to the right in CodePen contains the Javascript of the example app. Beginning on line 2, we import the AEM Headless Client for JavaScript from the Skypack CDN. Skypack is used to facilitate development without a build step, but you can also use the AEM Headless Client with NPM or Yarn in your own projects. Check out the usage instructions in the [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) for further detail.
+The **JS** pane to the right in CodePen contains the JavaScript of the example app. Beginning on line 2, you import the AEM Headless Client for JavaScript from the Skypack CDN. Skypack is used to facilitate development without a build step, but you can also use the AEM Headless Client with NPM or Yarn in your own projects. Check out the usage instructions in the [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) for further detail.
 
 ```javascript
 import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headless-client-js@v3.2.0';
 ```
 
-On line 6 we read your publish host details from the `publishHost` query parameter. This is the host that the AEM Headless Client will fetch data from. This would typically be coded into your app, but we are using a query parameter to make it easier for the CodePen app to work with different environments.
+On line 6, your publish host details were read from the `publishHost` query parameter. This parameter is the host from which the AEM Headless Client fetches data. This functionality would typically be coded into your app, but you are using a query parameter to make it easier for the CodePen app to work with different environments.
 
-We configure the AEM Headless Client on line 12:
+You configure the AEM Headless Client on line 12:
 
 ```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -69,15 +69,15 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 >[!NOTE]
 >
->The **serviceURL** is set to use a proxy Adobe IO Runtime function to avoid CORS issues. This is not required for your own projects, but is required for the CodePen app to work with your trial environment. The proxy function is configured to use the **publishHost** value that was provided in the query parameter.
+>The **serviceURL** is set to use a proxy Adobe I/O Runtime function to avoid CORS issues. This proxy is not required for your own projects, but is required for the CodePen app to work with your trial environment. The proxy function is configured to use the **publishHost** value that was provided in the query parameter.
 
-Finally, the function `fetchJsonFromGraphQL()` is used to perform the fetch request using the AEM Headless Client. It is called each time the code is changed, or can be triggered by clicking the **Refetch** link. The actual `aemHeadlessClient.runPersistedQuery(..)` call occurs on line 34. A bit later we'll make a change to the way this JSON data is rendered, but for now we'll just print it to the `#output` div using the `resultToPreTag(queryResult)` function.
+Finally, the function `fetchJsonFromGraphQL()` is used to perform the fetch request using the AEM Headless Client. It is called each time the code is changed, or can be triggered by clicking the **Refetch** link. The actual `aemHeadlessClient.runPersistedQuery(..)` call occurs on line 34. A bit later you change the way that this JSON data is rendered, but for now print it to the `#output` div using the `resultToPreTag(queryResult)` function.
 
 ## Fetch Data from Your Persisted Query {#use-persisted-query}
 
-On line 25 we indicate which GraphQL persisted query the app should fetch data from. The persisted query name is a combination of the name of the endpoint (ie. `your-project` or `aem-demo-assets`), followed by a forward slash, and then the name of the query. If you followed the earlier module instructions exactly, the persisted query you created will be in the `your-project` endpoint.
+On line 25, you indicate from which GraphQL persisted query the app should fetch data. The persisted query name is a combination of the name of the endpoint (that is, `your-project` or `aem-demo-assets`), followed by a forward slash, and then the name of the query. If you followed the earlier module instructions exactly, the persisted query you created is in the `your-project` endpoint.
 
-1. Update the `persistedQueryName` variable to use the persisted query you created in the previous module. If you followed the naming suggestion you would have created a persisted query named `adventure-list` in the `your-project` endpoint, and you would set the `persistedQueryName` variable to `your-project/adventure-list`:
+1. Update the `persistedQueryName` variable so it uses the persisted query you created in the previous module. If you followed the naming suggestion you would have created a persisted query named `adventure-list` in the `your-project` endpoint, and you would set the `persistedQueryName` variable to `your-project/adventure-list`:
 
    ```javascript
    //
@@ -92,7 +92,7 @@ On line 25 we indicate which GraphQL persisted query the app should fetch data f
 
 ## Change the JSON Rendering {#change-rendering}
 
-The JSON is rendered as-is into a `pre` tag, which is not very creative. We can switch our CodePen to use the `resultToDom()` function instead to illustrate how the JSON response can be iterated over to create a more interesting result.
+The JSON is rendered as-is into a `pre` tag, which is not too creative. You can switch CodePen to use the `resultToDom()` function instead to illustrate how the JSON response can be iterated over to create a more interesting result.
 
 1. To make this change, comment out line 37 and remove the comment from line 40: 
 
@@ -104,14 +104,14 @@ The JSON is rendered as-is into a `pre` tag, which is not very creative. We can 
    resultToDom(queryResult);
    ```
 
-1. This function will also render any images that are included in the JSON response as an `img` tag. If the **Adventure** content fragments you created do not include any images, you can try switching to use the `aem-demo-assets/adventures-all` persisted query by modifying line 25:
+1. This function renders any images that are included in the JSON response as an `img` tag. If the **Adventure** content fragments you created do not include any images, you can try switching to use the `aem-demo-assets/adventures-all` persisted query by modifying line 25:
 
    ```javascript
    persistedQueryName = 'aem-demo-assets/adventures-all';
    ```
 
-This query will yield a JSON response that includes images, and the `resultToDom()` function will render them inline.
+This query yields a JSON response that includes images, and the `resultToDom()` function renders them inline.
 
 ![Result of the adventures-all query and the resultToDom rendering function](assets/do-not-localize/adventures-all-query-result.png)
 
-Now that you've done the work to build the models and queries, your content team can take over with ease. We'll show off the content author flow in the next module.
+Now that you have done the work to build the models and queries, your content team can take over with ease. In the next module, you show off the content author flow.
