@@ -81,7 +81,7 @@ Upcoming releases for Assets as a Cloud Service would also include [Adobe Firefl
 
 ### Folder uploads to setup hierarchical structure for your organization {#folder-uploads}
 
-Quickly setup a folder structure for your organization using the Assets view by uploading folders that exists on your local file system. You do not need to create folders under the root folder and then upload assets to those folders manually to maintain the logical hierarchial structure. All folders and assets under the root folder are automatically uploaded to Experience Manager Assets.
+Quickly setup a folder structure for your organization using the Assets view by uploading folders that exists on your local file system. You do not need to create folders under the root folder and then upload assets to those folders manually to maintain the logical hierarchical structure. All folders and assets under the root folder are automatically uploaded to Experience Manager Assets.
 
 ![Upload folders](assets/folder-uploads.gif)
 
@@ -113,7 +113,12 @@ In addition to these features, Assets view also enables you to perform following
 
 * Upload a new version of an asset, with a different name, from your local file system to the Asset repository. The uploaded asset is available as a new version with the same name as that of the original asset.
 
-* Rename assets and folder available within the repository.
+* Rename assets and folders available within the repository.
+
+Use these links to quickly get started with the Assets view:
+
+* [My Workspace](/help/assets/my-workspace-assets-view.md)
+* [Get Started using Assets view](/help/assets/get-started-assets-view.md)
 
 ## Conclusion {#conclusion}
 

@@ -207,7 +207,7 @@ When the editor first opens you see:
 
 As examples:
 
-* A fragment that only requires multiple pieces of information, some with a specific type. For headless content, references are key, you learn about these later in your journey.
+* A fragment that only requires multiple pieces of information, some with a specific type. For headless content, references are key (you will learn about these later in your journey).
   
   ![Content Fragment Editor - My Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -229,7 +229,7 @@ Confirm your updates with either **Save** or **Save & close**.
 
 #### What you (probably) do not need to worry about {#what-you-probably-do-not-need-to-worry-about}
 
-OK, this might seem a slightly strange section, but after you open the Content Fragment Editor and start exploring you can see various options that (probably) do not apply for your headless journey as a Content Author. So this is just a quick heads-up on what you should be able ignore in the headless context:
+OK, this might seem a slightly strange section, but as soon as you open the Content Fragment Editor and start exploring you can see various options that (probably) do not apply for your headless journey as a Content Author. So this is just a quick heads-up on what you should be able ignore in the headless context:
 
 * **Content Fragment Models**
 
