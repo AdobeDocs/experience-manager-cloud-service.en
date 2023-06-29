@@ -26,7 +26,7 @@ To build and deploy successfully with Cloud Manager, AEM projects need to adhere
 
 In some limited cases, you may need to vary your build process slightly when running inside Cloud Manager as opposed to when running on developer workstations. For these cases, [Maven profiles](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) can be used to define how the build should be different in different environments, including Cloud Manager.
 
-Activation of a Maven profile inside the Cloud Manager build environment should be done by looking for the `CM_BUILD` [environment variable.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) Likewise, a profile intended to be used only outside of the Cloud Manager build environment should be done by looking for the absence of this variable.
+Activation of a Maven profile inside the Cloud Manager build environment should be done by looking for the `CM_BUILD` [environment variable](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Likewise, a profile intended to be used only outside of the Cloud Manager build environment should be done by looking for the absence of this variable.
 
 For example, if you wanted to output a simple message only when the build is run inside Cloud Manager, you would do this.
 
@@ -104,11 +104,11 @@ And if you wanted to output a simple message only when the build is run outside 
 
 >[!NOTE]
 >
->Artifacts from a password-protected Maven repository should only be used very cautiously as code deployed through this mechanism is currently not run through all of the [code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) implemented in Cloud Manager's quality gates. Therefore it should only be used in rare cases and for code not tied to AEM. It is advised to also deploy the Java sources as well as the whole project source code alongside with the binary.
+>Artifacts from a password-protected Maven repository should only be used very cautiously as code deployed through this mechanism is currently not run through all of the [code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) implemented in Cloud Manager's quality gates. Therefore it should only be used in rare cases and for code not tied to AEM. It is advised to also deploy the Java sources and the whole project source code alongside with the binary.
 
 To use a password-protected Maven repository within Cloud Manager:
 
-1. Specify the password (and optionally, the username) as a secret [pipeline variable.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+1. Specify the password (and optionally, the username) as a secret [pipeline variable](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md).
 1. Then reference that secret inside a file named `.cloudmanager/maven/settings.xml` in the git repository, which follows the [Maven Settings File](https://maven.apache.org/settings.html) schema. 
 
 When the Cloud Manager build process starts:

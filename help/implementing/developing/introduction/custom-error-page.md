@@ -71,6 +71,6 @@ To handle 500 errors, the file name of the error handler script must be the same
 >
 >On an author instance, [CQ WCM Debug Filter](/help/implementing/deploying/configuring-osgi.md) is enabled by default. This always results in the response code 200. The default error handler responds by writing the full stack trace to the response.
 >
->For a custom error-handler, responses with code 500 are needed - so the [CQ WCM Debug Filter needs to be disabled.](/help/implementing/deploying/configuring-osgi.md) This ensures that the response code 500 is returned, which in turn triggers the correct Sling error-handler.
+>For a custom error-handler, responses with code 500 are needed - so the [CQ WCM Debug Filter needs to be disabled](/help/implementing/deploying/configuring-osgi.md). This ensures that the response code 500 is returned, which in turn triggers the correct Sling error-handler.
 >
 >On a publish instance, CQ WCM Debug Filter is **always** disabled (even if configured as enabled).

@@ -57,7 +57,7 @@ You can drag instances of the **Data Types** onto the left space - you are alrea
 
 ![Defining fields](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png) 
 
-Once you add a data type you'll be required to define the **Properties** for that field. These depend on the type being used. For example:
+After you add a data type you are required to define the **Properties** for that field. These depend on the type being used. For example:
 
 ![Data Properties](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png) 
 
@@ -67,7 +67,7 @@ You can add as many fields as you need. For example:
 
 ### Your Content Authors {#your-content-authors}
 
-Your content authors do not see the actual Data Types and Properties that you've used to create your models. This means that you might have to provide help and information on how they complete specific fields. For basic information you can use the Field Label and Default Value, but more complex cases project specific documentation might need to be considered.
+Your content authors do not see the actual Data Types and Properties that you have used to create your models. This means that you might have to provide help and information on how they complete specific fields. For basic information you can use the Field Label and Default Value, but more complex cases project specific documentation might need to be considered.
 
 >[!NOTE]
 >

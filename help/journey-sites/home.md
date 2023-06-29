@@ -9,7 +9,7 @@ Start here for an overview of the guided journeys available to understand AEM's 
 
 ## Introduction {#introduction}
 
-[AEM Sites](https://business.adobe.com/products/experience-manager/sites/aem-sites.html) is a unified suite of powerful tools allowing you to easily create, manage, and publish digital experiences across channels. From setting up your initial content structure, to easily creating reusable content, to deploying to multiple markets and languages, as well as creating custom applications that offer personalized experiences, AEM Sites is comprehensive, central solution for creating terrific experiences for your audiences wherever they are.
+[AEM Sites](https://business.adobe.com/products/experience-manager/sites/aem-sites.html) is a unified suite of powerful tools allowing you to easily create, manage, and publish digital experiences across channels. From setting up your initial content structure, to easily creating reusable content, to deploying to multiple markets and languages, and creating custom applications that offer personalized experiences, AEM Sites is comprehensive, central solution for creating terrific experiences for your audiences wherever they are.
 
 ## AEM Documentation Journeys {#documentation-journeys}
 
@@ -37,4 +37,4 @@ The following Documentation Journeys are available for AEM Sites topics.
 |[Reference Demos Add-On Journey](/help/journey-sites/demos-add-on/overview.md)|Start here for a guided journey through how to easily add the AEM Reference Demos Add-On to a sandbox environment with minimal AEM configuration and be able to test the powerful features of AEM with rich examples based on best-practices.|System Administrator|
 |[Sites Translation Journey](/help/journey-sites/translation/overview.md)|Learn about AEM Sites technologies, how they might be used in your project, and how to create and update translation projects in AEM from A to Z.|Translation Specialists|
 
-Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/documentation-journeys.md#journeys)
+Stay tuned for [forthcoming journeys covering additional roles](/help/journey-documentation/documentation-journeys.md#journeys).

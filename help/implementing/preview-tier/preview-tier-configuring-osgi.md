@@ -13,7 +13,7 @@ The preview tier's OSGi property values are inherited from the publish tier. How
 
 >[!NOTE]
 >
->For more details about the preview environments, please see the document [Manage Environments.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>For more details about the preview environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Configuring the OSGi Settings for the Preview Tier {#configuring-osgi-settings-for-the-preview-tier}
 

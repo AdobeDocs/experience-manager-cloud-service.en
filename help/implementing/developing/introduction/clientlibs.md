@@ -23,7 +23,7 @@ Clientlibs are the built-in solution for delivering CSS and JavaScript from AEM.
 
 ## What Are Client-Side Libraries {#what-are-clientlibs}
 
-Sites require JavaScript and CSS as well as static resources such as icons and web fonts to be processed client-side. A clientlib is AEM's mechanism to reference (by category if required) and serving such resources.
+Sites require JavaScript and CSS and static resources such as icons and web fonts to be processed client-side. A clientlib is AEM's mechanism to reference (by category if required) and serving such resources.
 
 AEM collects the site's CSS and JavaScript into a single file, in a central location, to ensure that only one copy of any resource is included in the HTML output. This maximizes the efficiency of delivery and allows such resources to be maintained centrally in the repository via proxy, keeping access secure.
 
@@ -183,7 +183,7 @@ Additional folder properties include allow control of dependencies and embeds, b
 
 ### Linking to Dependencies {#linking-to-dependencies}
 
-When the code in your client library folder references other libraries, identify the other libraries as dependencies. The `ui:includeClientLib` tag that references your client library folder causes the HTML code to include a link to your generated library file as well as the dependencies.
+When the code in your client library folder references other libraries, identify the other libraries as dependencies. The `ui:includeClientLib` tag that references your client library folder causes the HTML code to include a link to your generated library file and the dependencies.
 
 The dependencies must be another `cq:ClientLibraryFolder`. To identify dependencies, add a property to your `cq:ClientLibraryFolder` node with the following attributes:
 

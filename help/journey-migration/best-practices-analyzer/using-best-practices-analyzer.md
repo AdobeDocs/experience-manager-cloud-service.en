@@ -101,7 +101,7 @@ To filter out findings related to [ACS Commons](https://adobe-consulting-service
    ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >The ACS Commons findings should not be ignored. Refer to [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) to determine compatibility with AEM as a Cloud Service. 
+   >The ACS Commons findings should not be ignored. See [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) to determine compatibility with AEM as a Cloud Service. 
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -138,7 +138,7 @@ The format of the report is:
 An importance level is assigned to each finding to indicate a rough priority for action. 
 
 >[!NOTE]
->To learn more about each Finding Category, refer to [Pattern Detector Categories](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+>To learn more about each Finding Category, see [Pattern Detector Categories](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 Follow the table below to understand the importance levels:
 
@@ -186,7 +186,7 @@ The HTTP interface may be used in a variety of methods.
 
 One simple way is to open a browser tab in the same browser in which you have already signed in to AEM as an administrator. You can enter the URL in the browser tab and have the results displayed or downloaded by the browser.
 
-You may also use a command-line tool such as `curl` or `wget` as well as any HTTP client application. When not using a browser tab with an authenticated session, you must supply an administrative user name and password as part of the comment. 
+You may also use a command-line tool such as `curl` or `wget` and any HTTP client application. When not using a browser tab with an authenticated session, you must supply an administrative user name and password as part of the comment. 
 
 The following is an example of how this can be done:
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`.
