@@ -19,11 +19,11 @@ Dispatcher is Adobe Experience Manager's caching, or load-balancing, or both, to
 >[!NOTE]
 >The most common use of Dispatcher is to cache responses from an **AEM publish instance**, to increase the responsiveness and security of your externally facing published website.
 
-Refer to [Dispatcher Overview](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) to learn how Dispatcher performs caching, returns documents and performs Load Balancing.
+See [Dispatcher Overview](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) to learn how Dispatcher performs caching, returns documents and performs Load Balancing.
 
 ### Apache and Dispatcher Configuration and Testing {#dispatcher-configurations-cloud}
 
-Learn how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, as well as how to validate and run it locally before deploying to Cloud environments.
+Learn how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, and how to validate and run it locally before deploying to Cloud environments.
 
 See [Dispatcher in the Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html) for more information.
 

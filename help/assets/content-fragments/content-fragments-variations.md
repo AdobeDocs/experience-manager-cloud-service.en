@@ -189,8 +189,8 @@ You will then be able to create a new fragment by:
 1. Specifying properties; for example **Title**.
 1. Selecting **Create**.
 1. Finally:
-   1. **Done** will return (to the original fragment) and reference the new fragment.
-   1. **Open** will reference the new fragment as well as opening the new fragment, for editing, in a new browser tab.
+   1. **Done** returns (to the original fragment) and reference the new fragment.
+   1. **Open** references the new fragment and opening the new fragment, for editing, in a new browser tab.
 
 ### Viewing Key Statistics {#viewing-key-statistics}
 

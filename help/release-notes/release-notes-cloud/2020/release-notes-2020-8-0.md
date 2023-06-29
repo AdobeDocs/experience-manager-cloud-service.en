@@ -14,7 +14,7 @@ The following section outlines the general Release Notes for Experience Manager 
 
 * Ability to [restore pages and sub-pages (page trees) to an earlier version](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
-* Ability to [create Launches](/help/sites-cloud/authoring/launches/overview.md) in AEM [SPA Editor.](/help/implementing/developing/hybrid/introduction.md)
+* Ability to [create Launches](/help/sites-cloud/authoring/launches/overview.md) in AEM [SPA Editor](/help/implementing/developing/hybrid/introduction.md).
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
@@ -27,7 +27,7 @@ The following section outlines the general Release Notes for Experience Manager 
 
 * A new [asset download experience](/help/assets/download-assets-from-aem.md) allows,
 
-  * Asynchronous download for large downloads so that users don't have to wait.
+  * Asynchronous download for large downloads so that users do not have to wait.
   * A new modular API for developer extensibility.
 
 * Metadata extraction for asset microservices has an improved performance. It increases the overall asset ingestion throughput.
@@ -76,7 +76,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
   >[!NOTE]
   >Content Audit has since been renamed to Experience Audit.
 
-   Refer to [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+   See [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 
 * Newly created environments in Assets programs will now be automatically configured with Smart Content Services.
 
@@ -132,8 +132,8 @@ Follow this section to learn about what is new and the updates for Code Refactor
 
 ### What's New {#what-is-new-refactoring}
 
-* AIO-CLI plugin released to unify code refactoring tools to enable developers to invoke and execute code refactoring tools from one place. Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
+* AIO-CLI plugin released to unify code refactoring tools to enable developers to invoke and execute code refactoring tools from one place. See [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
 
-* AEM Dispatcher Converter extended to support conversions of On-premise and Adobe Managed Services Dispatcher configurations into AEM as a Cloud Service compatible Dispatcher configurations. Refer to [Git Resource: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) for more details.
+* AEM Dispatcher Converter extended to support conversions of On-premise and Adobe Managed Services Dispatcher configurations into AEM as a Cloud Service compatible Dispatcher configurations. See [Git Resource: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) for more details.
 
 * AEM Dispatcher Converter re-written in ` node.js ` and integrated with AIO-CLI plugin.

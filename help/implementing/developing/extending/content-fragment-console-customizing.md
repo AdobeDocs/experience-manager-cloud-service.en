@@ -10,5 +10,5 @@ The Content Fragments Console is extensible and can be customized for your needs
 For full information, see the following:
 
 * [Step-by-step AEM Content Fragments Console Extension Development](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#about-application)
-* [How to Get Access](https://developer.adobe.com/uix/docs/overview/get-access/)
+* [How to Get Access](https://developer.adobe.com/uix/docs/guides/get-access/)
 * [UI Extensibility](https://developer.adobe.com/uix/docs/)

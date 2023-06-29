@@ -190,7 +190,7 @@ The properties are distributed across several tabs.
     
 ### Blueprint {#blueprint}
 
-This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies, and are part of [Multi Site Management.](/help/sites-cloud/administering/msm/overview.md)
+This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies, and are part of [Multi Site Management](/help/sites-cloud/administering/msm/overview.md).
 
 * **Current Live Copies** - Lists pages that are based on (that is, are Live Copies of) this blueprint page
 
@@ -198,7 +198,7 @@ This tab is only visible for pages that serve as blueprints. Blueprints serve as
 
 ### Live Copy {#live-copy}
 
-This tab is only visible for pages that are configured as live copies. As with Blueprints, Live Copies are part of [Multi Site Management.](/help/sites-cloud/administering/msm/overview.md).
+This tab is only visible for pages that are configured as live copies. As with Blueprints, Live Copies are part of [Multi Site Management](/help/sites-cloud/administering/msm/overview.md).
 
 * **Synchronize** - Synchronize Live Copy with Blueprint, keeping local modifications
 * **Reset** - Reset Live Copy to state of Blueprint, removing local modifications

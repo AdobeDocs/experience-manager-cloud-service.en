@@ -16,7 +16,7 @@ that interacts with the
 For related information regarding tagging:
 
 * See [Using Tags](/help/sites-cloud/authoring/features/tags.md) for information about tagging content as a content author.
-* See Administering Tags for an administrator?s perspective about creating and managing tags, as well as to which content tags have been applied.
+* See Administering Tags for an administrator?s perspective about creating and managing tags, and to which content tags have been applied.
 
 ## Overview of the Tagging API {#overview-of-the-tagging-api}
 
