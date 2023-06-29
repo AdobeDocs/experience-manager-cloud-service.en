@@ -32,8 +32,8 @@ Summarized below are the continuous improvements for maintenance release 12441, 
 - SITES-13559: MSM: 'Is not modifiable' exception thrown when rolling out component
 - SITES-11757: MSM: Inherit rollout configuration from Parent does not get reverted back for child pages
 - SITES-14073: Sites Admin: CSV Report fails with 500 when selecting no property to export
-- FORMS-7648: Validation for the Maximum number of digits filed is not working for the Numeric Box Component.
-- FORMS-8177: When the Forms service is active, the 'com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Failed to retrieve asset dependencies' error encounters. 
+- FORMS-7648: Unable to validate maximum number of digits in a  Numeric Box component. The validation script is not working.
+- FORMS-8177: When the Forms service is active, the `com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Failed to retrieve asset dependencies` error encounters. 
 - FORMS-8300: When a user attempts to delegate a task after opening it, the delegate response reloads the task, instead of opening user's AEM Inbox UI.
 - FORMS-8500: On Microsoft&reg; Edge browser with the IE Mode option enabled, HTML5 Forms fails to open.
 - FORMS-8541: On rendering an Adaptive Forms, a Null Pointer Exception occurs. 
@@ -46,7 +46,6 @@ Summarized below are the continuous improvements for maintenance release 12441, 
 - FORMS-8846: The Bind reference property does not work for the Adaptive Forms attachments component.
 - FORMS-9072: When you search a Scheme while creating a form fragment, the search result does not return any schema for selection. 
 - FORMS: Fixed multiple accessibility-related bugs to improve accessibility of AEM Forms features.
-
 
 ### Known Issues {#known-issues-12441}
 
