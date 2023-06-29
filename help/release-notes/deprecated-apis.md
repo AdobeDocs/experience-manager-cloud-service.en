@@ -158,7 +158,7 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
-    <td>This API is deprecated, please migrate your code to the XML APIs provided by the JDK.</td>
+    <td>This API is deprecated, migrate your code to the XML APIs provided by the JDK.</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>

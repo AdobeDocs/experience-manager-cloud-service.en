@@ -71,7 +71,7 @@ The content fragment model effectively defines the structure of the resulting co
        >
        >When manually updating the property **Property Name** for a data type, note that names must contain only A-Z, a-z, 0-9 and underscore "_" as special character.
        >
-       >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
+       >If models created in earlier versions of AEM contain illegal characters, remove or update those characters.
 
      For example:
 
@@ -139,7 +139,7 @@ Many properties are self-explanatory, for certain properties additional details 
 
   >[!CAUTION]
   >
-  >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
+  >If models created in earlier versions of AEM contain illegal characters, remove or update those characters.
 
 * **Render As**
   The various options for realizing/rendering the field in a fragment. Often, this lets you define whether the author sees a single instance of the field, or is allowed to create multiple instances.

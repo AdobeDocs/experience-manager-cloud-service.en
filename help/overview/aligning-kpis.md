@@ -30,7 +30,7 @@ In a digital world, you can measure almost everything. Choosing three KPIs for y
     
 1.  **Create a measurable methodology for each KPI.** After you have chosen your KPIs, download Adobe's KPI Methodology template, which guides you through the rest of the process.
     
-1.  **Define the audience for each KPI.** Your last step for this week is to identify the group of stakeholders who care most about each KPI. Next week you'll work with each group to confirm the KPI, refine the methodology, and agree on the format and timing of your reports.
+1.  **Define the audience for each KPI.** Your last step for this week is to identify the group of stakeholders who care most about each KPI. Next week you work with each group to confirm the KPI, refine the methodology, and agree on the format and timing of your reports.
     
 >[!TIP]
 >

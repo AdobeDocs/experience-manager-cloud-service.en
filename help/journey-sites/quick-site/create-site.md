@@ -30,7 +30,7 @@ This part of the journey applies to the AEM administrator.
 
 ## Site Templates {#site-templates}
 
-Site templates are a way to combine basic site content into a convenient and reusable package. Site templates generally contain base site content and structure as well as site styling information to get new site started quickly. The actual structure is as follows:
+Site templates are a way to combine basic site content into a convenient and reusable package. Site templates generally contain base site content and structure and site styling information to get new site started quickly. The actual structure is as follows:
 
 * `files`: Folder with the UI kit, XD file, and possibly other files
 * `previews`: Folder with screenshots of the site template
@@ -103,7 +103,7 @@ Content authors can now begin authoring.
 Site templates are very powerful and flexible and any number can be created for a project, allowing for easy creation site variations. Depending on the level of customization already performed on the site template you use, you may not even need additional front-end customization.
 
 * If your site does not require additional customization, congratulations! Your journey ends here!
-* If you still need additional front-end customization, or if you simply want to understand the full process in case you need future customization, please continue reading.
+* If you still need additional front-end customization, or if you simply want to understand the full process in case you need future customization, continue reading.
 
 ## Example Page {#example-page}
 

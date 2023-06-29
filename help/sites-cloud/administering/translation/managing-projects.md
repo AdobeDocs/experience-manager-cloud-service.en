@@ -11,7 +11,7 @@ Translation projects enable you to manage the translation of AEM content. A tran
 
 >[!TIP]
 >
->If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 When resources are added to a translation project, a translation job is created for them. Jobs provide commands and status information that you use to manage the human translation and machine translation workflows that execute on the resources.
 
@@ -190,7 +190,7 @@ The translation memory updates can be intercepted and sent to a custom destinati
 
 A property can be selected in the list view of the sites console that shows if a page has been translated, is in translation, or has not yet been translated.
 
-1. In the site console, switch to [list view.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. In the site console, switch to [list view](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Tap or click, **View Settings** in the view drop-down.
 1. In the dialog, check the **Translated** property and tap or click **Update**.
 
@@ -204,7 +204,7 @@ Many translation tasks and advanced options can be accessed in the projects cons
 
 ### Understanding the Projects Console
 
-Translation projects in AEM use the standard [AEM projects console.](/help/sites-cloud/authoring/projects/overview.md) If you are not familiar with AEM projects, please review that documentation.
+Translation projects in AEM use the standard [AEM projects console](/help/sites-cloud/authoring/projects/overview.md). If you are not familiar with AEM projects, review that documentation.
 
 As any other project A translation project is made up of tiles that present an overview of the project tasks.
 
@@ -271,7 +271,7 @@ You can add pages, assets, or tags to the translation job of your translation pr
 
 ### Adding Tags to a Translation Job {#adding-tags-to-a-translation-job}
 
-You can add tags to a translation project similar to [how you add assets and pages to a project.](#adding-pages-assets-to-a-translation-job) Just select **Tags** under the **Add** menu then follow the same steps.
+You can add tags to a translation project similar to [how you add assets and pages to a project](#adding-pages-assets-to-a-translation-job). Just select **Tags** under the **Add** menu then follow the same steps.
 
 ### Seeing Translation Project Details {#seeing-translation-project-details}
 
@@ -297,7 +297,7 @@ When a project is created using the references rail of a page, these properties 
 
 ### Monitoring the Status of a Translation Job {#monitoring-the-status-of-a-translation-job}
 
-The translation job tile of a translation project provides the status of a translation job, as well as the number of pages and assets in the job.
+The translation job tile of a translation project provides the status of a translation job, and the number of pages and assets in the job.
 
 ![Translation job](../assets/translation-job.png)
 
@@ -338,7 +338,7 @@ Specify the date before which your translation vendor needs to return translated
 
 Scope a translation job to obtain an estimate of the cost of translation from your translation service provider. When you scope a job, source files are submitted to the translation vendor who compares the text to their pool of stored translations (translation memory). Typically, the scope is the number of words that require translating.
 
-To obtain more information about scoping results, please contact your translation vendor.
+To obtain more information about scoping results, contact your translation vendor.
 
 >[!NOTE]
 >
@@ -431,7 +431,7 @@ When content is translated for an existing language copy, review the translation
 To compare language copies to the language master:
 
 1. In the sites console, navigate to the language copy you want to compare.
-1. Open the [References rail.](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)
+1. Open the [References rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#references).
 1. Under the **Copies** heading select **Language Copies.**
 1. Select your specific language copy and then you can either click **Compare to Master** or **Compare to Previous** if applicable.
 

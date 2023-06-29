@@ -157,7 +157,7 @@ A user with requisite permissions must complete the following steps before shari
 
    * See [Applying and Unapplying IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) for more details.
   
-1. Use the update **IP Allow List** workflow to remove the default IP and add IPs as appropriate. Refer to [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) to learn more. 
+1. Use the update **IP Allow List** workflow to remove the default IP and add IPs as appropriate. See [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) to learn more. 
 
 After access to preview service is unlocked, the lock icon in front of the preview service name is no longer displayed.
 

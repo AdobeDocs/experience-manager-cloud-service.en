@@ -28,7 +28,7 @@ Once auto-provisioning is complete:
 ![processoverview.jpg](assets/processOverview.jpg)
  
 
-For more information, please visit [Onboarding to Experience Manager as a Cloud Service on Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
+For more information, see [Onboarding to Experience Manager as a Cloud Service on Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en).
 
 ### Resources and Links
 
