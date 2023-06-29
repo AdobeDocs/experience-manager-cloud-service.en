@@ -115,7 +115,7 @@ More information on git submodules can be found in the [Git Reference Manual.](h
 
 ### Limitations and Recommendations {#limitations-recommendations}
 
-When using git submodules, please be aware of the following limitations.
+When using git submodules, be aware of the following limitations.
 
 * The git URL must be exactly in the syntax described in the previous section.
 * Only submodules at the root of the branch are supported.

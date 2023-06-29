@@ -217,7 +217,7 @@ Administrators can control the RTE options using content policies, say instead o
 The available options in the RTE flow downstream from the user interface configurations to the content policies.
 
 * User interface configuration settings define which options are available to the content policies.
-* If the user interface configuration of the RTE removed or doesn't enable an item, the content policy cannot configure it.
+* If the user interface configuration of the RTE removed or does not enable an item, the content policy cannot configure it.
 * An author has access to only such functionality as is made available by the user interface configurations and the content policies.
 
 As an example, you can see the [Text Core Component documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).

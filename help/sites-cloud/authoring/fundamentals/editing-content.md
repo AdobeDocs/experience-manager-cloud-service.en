@@ -285,7 +285,7 @@ The exact edit options will depend on the component. For some components [all ac
 
 * Image component - full screen
 
-  [Entering full screen mode](#edit-content-full-screen-mode) for the image component allows for more space to edit the image as well as showing extra editing options such as **Launch Map** and **Reset Zoom**. In addition, full screen allows for crop presets to be selected.
+  [Entering full screen mode](#edit-content-full-screen-mode) for the image component allows for more space to edit the image and showing extra editing options such as **Launch Map** and **Reset Zoom**. In addition, full screen allows for crop presets to be selected.
 
   ![Image Component's full screen mode](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -352,7 +352,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-cloud/aut
 
 >[!TIP]
 >
->The Layout action is limited in scope to the selected component. For example, if you are editing the layout of one component and then click on another component, the standard edit toolbar (not the layout toolbar) displays for the newly selected component and the resizing handles as well as the emulator toolbar disappear.
+>The Layout action is limited in scope to the selected component. For example, if you are editing the layout of one component and then click on another component, the standard edit toolbar (not the layout toolbar) displays for the newly selected component and the resizing handles and the emulator toolbar disappear.
 >
 >If you need to edit the overall layout of the page, affecting multiple components, switch to the [layout mode](/help/sites-cloud/authoring/features/responsive-layout.md).
 
@@ -463,7 +463,7 @@ Once locked the console view information is updated and when editing a lock symb
 >
 >Pages cannot be unlocked by impersonating the user who locked the page.
 >
->If the user who locked the page is not available to unlock the page, please reach out to Customer Support to evaluate options to remove the lock. 
+>If the user who locked the page is not available to unlock the page, contact Customer Support to evaluate options to remove the lock. 
 
 ## Unlocking a Page {#unlocking-a-page}
 
@@ -479,7 +479,7 @@ The Page Information menu lists **Unlock** as an option and the Lock icon in the
 >
 >Pages cannot be unlocked by impersonating the user who locked the page.
 >
->If the user who locked the page is not available to unlock the page, please reach out to Customer Support to evaluate options to remove the lock. 
+>If the user who locked the page is not available to unlock the page, contact Customer Support to evaluate options to remove the lock. 
 
 <!--
 >[!CAUTION]
@@ -510,7 +510,7 @@ The following icons allow you to undo or redo an action. These are shown in the 
 
 ## Undoing and Redoing Page Edits - The Theory {#undoing-and-redoing-page-edits-the-theory}
 
-AEM stores a history of actions that you perform and the sequence in which you performed them so that you can undo multiple actions in the order that you performed them as well as redo them to re-apply one or more of the actions if necessary.
+AEM stores a history of actions that you perform and the sequence in which you performed them so that you can undo multiple actions in the order that you performed them and redo them to re-apply one or more of the actions if necessary.
 
 If an element on the content page is selected (such as a text component), then the undo and redo command applies to the selected item.
 

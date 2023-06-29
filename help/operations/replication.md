@@ -176,7 +176,7 @@ The overall `ReplicationStatus` of a resource is only modified if the replicatio
 
 ### Methods of Invalidating Content {#invalidating-content}
 
-You can directly invalidate content by using either Sling Content Invalidation (SCD) from author (the preferred method) or by using the Replication API to invoke the publish Dispatcher flush replication agent. Refer to the [Caching](/help/implementing/dispatcher/caching.md) page for further details.
+You can directly invalidate content by using either Sling Content Invalidation (SCD) from author (the preferred method) or by using the Replication API to invoke the publish Dispatcher flush replication agent. See [Caching](/help/implementing/dispatcher/caching.md) page for further details.
 
 **Replication API capacity limits**
 

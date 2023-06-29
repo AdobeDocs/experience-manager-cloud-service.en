@@ -36,12 +36,12 @@ The fields present in the configuration window are as follows :
 |---|---|
 | Title | The configuration name |
 | IMS Configuration | Select the IMS configuration (see the chapter below) |
-| Segment | Option to use an Analytics segment defined in the current reporting suite. The Analytics reports are filtered based on the segment. Refer to [this page](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) for additional details. |
+| Segment | Option to use an Analytics segment defined in the current reporting suite. The Analytics reports are filtered based on the segment. See [this page](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) for additional details. |
 | Report Suites | A repository where you send data and pull reports. A report suite defines the complete, independent reporting on a chosen website, set of websites, or subset of website pages. You can view the reports fetched from a single report suite and can edit this field in a configuration anytime according to your requirements. |
 
 ### Adobe Analytics with IMS authentication {#configuration-parameters-ims}
 
-An IMS configuration is required to properly integrate Adobe Analytics with AEM as a Cloud Service. This configuration must be created so please refer to this [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) to learn how to create the Analytics IMS configuration.
+An IMS configuration is required to properly integrate Adobe Analytics with AEM as a Cloud Service. This configuration must be created so see [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) to learn how to create the Analytics IMS configuration.
 
 ### Adding a configuration to a site {#add-configuration}
 

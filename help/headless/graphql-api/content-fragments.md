@@ -401,7 +401,7 @@ query($variation: String!) {
 
 This query will return the full list of authors. Authors without the `another` variation will fall back to the original data (`_variation` will report `master` in this case).
 
-If you want to restrict the list to authors that provide the specified variation (and skip authors that would fall back to the original data), you'll need to apply a [filter](#filtering):
+If you want to restrict the list to authors that provide the specified variation (and skip authors that would fall back to the original data), apply a [filter](#filtering):
 
 ```graphql
 query($variation: String!) {

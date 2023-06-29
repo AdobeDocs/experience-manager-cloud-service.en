@@ -23,7 +23,7 @@ The Universal Editor can be instrumented for any implementation, for any content
 
 Because experiences can be built in many different ways, any implementation can use the Universal Editor so authors can perform in-context editing.
 
-Users often think that a headless implementation limits the authors to editing all content in a form-based UI, but his isn't true with the Universal Editor
+Users often think that a headless implementation limits the authors to editing all content in a form-based UI, but this is not true with the Universal Editor
 
 The requirements for an implementation to use the Universal Editor is straight-forward and supports the following:
 

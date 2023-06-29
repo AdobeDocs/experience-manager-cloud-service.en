@@ -23,7 +23,7 @@ The tool does not support multiple filter paths or FileVault's `filter.xml`.
 
 The [AEM Repo Tool is available on GitHub via this link](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) along with detailed installation and usage instructions.
 
-If you wish to download the source of the AEM Repo Tool, refer to the GitHub project linked below.
+If you wish to download the source of the AEM Repo Tool, see the GitHub project linked below.
 
 CODE ON GITHUB
 

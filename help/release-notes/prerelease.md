@@ -12,9 +12,9 @@ Learn how to use the prerelease channel to get a preview of upcoming features to
 
 Adobe Experience Manager as a Cloud Service delivers new features on a regular cadence, according to the [Experience Manager releases roadmap.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
 
-To become familiar with the features scheduled to go live the following feature release, you can subscribe to the prerelease channel, which is accessible by configuring your development environments or any sandbox environments. You can preview changes accessible via the AEM UI as well as build code against any new prerelease APIs.
+To become familiar with the features scheduled to go live the following feature release, you can subscribe to the prerelease channel, which is accessible by configuring your development environments or any sandbox environments. You can preview changes accessible by way of the AEM user interface and build code against any new prerelease APIs.
 
-The list of prerelease features for a given feature release is posted within the [release notes.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+The list of prerelease features for a given feature release is posted within the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## AEM as a Cloud Service Releases {#releases}
 
@@ -31,7 +31,7 @@ For example, if it is May and you are subscribed to the prerelease channel, you 
 
 ![Prerelease cadence graphic](assets/prerelease-cadence.png)
 
-Prerelease gives you a rolling one-month window into upcoming AEMaaCS features, giving you time to assess the impact of any new features to your projects and customizations as well as plan roll outs of such features, testing, and user training.
+Prerelease gives you a rolling one-month window into upcoming AEMaaCS features, giving you time to assess the impact of any new features to your projects and customizations and plan roll outs of such features, testing, and user training.
 
 Effectively taking advantage of the prerelease channel requires four steps.
 
@@ -116,7 +116,7 @@ You can see new features in the Sites console in the local Quickstart SDK and co
 
 #### Start Quickstart SDK in Prerelease Mode {#prerelease-mode}
 
-1. Download the SDK from the software distribution portal and install as described in [Accessing the AEM as a Cloud Service SDK.](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+1. Download the SDK from the software distribution portal and install as described in [Accessing the AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 1. When launching the SDK Quickstart, include the argument `-r prerelease`.
 
 The value is sticky so it can only be selected on the first startup. Reinstall the SDK to change the command-line option.
