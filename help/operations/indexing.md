@@ -134,15 +134,15 @@ To illustrate the deployment of a customized version of the out-of-the-box index
 
     ```xml
     <properties>
-    <detectors>
-        <detector class="org.apache.tika.detect.TypeDetector"/>
-    </detectors>
-    <parsers>
-        <parser class="org.apache.tika.parser.DefaultParser">
-        <mime>text/plain</mime>
-        </parser>
-    </parsers>
-    <service-loader initializableProblemHandler="ignore" dynamic="true"/>
+        <detectors>
+            <detector class="org.apache.tika.detect.TypeDetector"/>
+        </detectors>
+        <parsers>
+            <parser class="org.apache.tika.parser.DefaultParser">
+            <mime>text/plain</mime>
+            </parser>
+        </parsers>
+        <service-loader initializableProblemHandler="ignore" dynamic="true"/>
     </properties>
     ```
 
@@ -150,74 +150,79 @@ To illustrate the deployment of a customized version of the out-of-the-box index
 
 ## Project Configuration
 
-We strongly recommend to use version >= `1.3.2` of the Jackrabbit `filevault-package-maven-plugin`. To incorporate it into your project, add the below configurations to the top-level `pom.xml` file if they are not already present:
+We strongly recommend to use version >= `1.3.2` of the Jackrabbit `filevault-package-maven-plugin`. The steps to incorporate it into your project are as follows: 
 
+1. Update the version in the top-level `pom.xml`:
 
-```xml
-<validatorsSettings>
+    ```xml
+    <plugin>
+        <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>filevault-package-maven-plugin</artifactId>
+            ...
+            <version>1.3.2</version>
+        ...
+    </plugin>
+    ```
+
+2. Add the following to the top-level `pom.xml`:
+
+    ```xml
     <jackrabbit-packagetype>
         <options>   
             <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
         </options>
     </jackrabbit-packagetype>
-</validatorsSettings>
-```
+    ```
 
-Here is a sample of the project's top-level `pom.xml` file with the aforementioned configurations included:
+    Here is a sample of the project's top-level `pom.xml` file with the aforementioned configurations included:
 
-Filename: `pom.xml`
+    Filename: `pom.xml`
 
-```xml
-<plugin>
-    <groupId>org.apache.jackrabbit</groupId>
-        <artifactId>filevault-package-maven-plugin</artifactId>
+    ```xml
+    <plugin>
+        <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>filevault-package-maven-plugin</artifactId>
+            ...
+            <version>1.3.2</version>
+            <configuration>
+                ...
+                <validatorsSettings>
+                    <jackrabbit-packagetype>
+                        <options>
+                            <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+                        </options>
+                    </jackrabbit-packagetype>
+                    ...
+                ...
+    </plugin>
+    ```
+
+3. In `ui.apps/pom.xml` and `ui.apps.structure/pom.xml` it is necessary to enable the `allowIndexDefinitions` and `noIntermediateSaves` options in the `filevault-package-maven-plugin`. Enabling `allowIndexDefinitions` allows for custom index definitions, while `noIntermediateSaves` ensures that the configurations are added atomically. 
+
+    Filenames: `ui.apps/pom.xml` and `ui.apps.structure/pom.xml`
+
+    ```xml
+    <plugin>
+        <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>filevault-package-maven-plugin</artifactId>
+            <configuration>
+                <allowIndexDefinitions>true</allowIndexDefinitions>
+                <properties>
+                    <cloudManagerTarget>none</cloudManagerTarget>
+                    <noIntermediateSaves>true</noIntermediateSaves>
+                </properties>
         ...
-        <version>1.3.2</version>
-        <configuration>
-            ...
-            <validatorsSettings>
-                <jackrabbit-packagetype>
-                    <options>
-                        <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
-                    </options>
-                </jackrabbit-packagetype>
-            </validatorsSettings>
-            ...
-        </configuration>
-</plugin>
-```
+    </plugin>
+    ```
 
-### ui.apps and ui.apps.structure
+4. Add a filter for `/oak:index` in `ui.apps.structure/pom.xml`:
 
-It is necessary in:
-
-* `ui.apps/pom.xml` 
-* `ui.apps.structure/pom.xml`
-
-to enable the `allowIndexDefinitions` and `noIntermediateSaves` options in the configuration of `filevault-package-maven-plugin`. Enabling `allowIndexDefinitions` allows for custom index definitions, while `noIntermediateSaves` ensures that the configurations are added atomically. 
-
-Filenames: `ui.apps/pom.xml` and `ui.apps.structure/pom.xml`
-
-```xml
-<groupId>org.apache.jackrabbit</groupId>
-    <artifactId>filevault-package-maven-plugin</artifactId>
-    <configuration>
-        <allowIndexDefinitions>true</allowIndexDefinitions>
-        <properties>
-            <cloudManagerTarget>none</cloudManagerTarget>
-            <noIntermediateSaves>true</noIntermediateSaves>
-        </properties>
-    ...
-```
-
-Additionally, it is necessary to include a filter for `/oak:index` in `ui.apps.structure/pom.xml`:
-
-```xml
-<filters>
-    ...
-    <filter><root>/oak:index</root></filter>
-</filters>
-```
+    ```xml
+    <filters>
+        ...
+        <filter><root>/oak:index</root></filter>
+    </filters>
+    ```
 
 After adding the new index definition, deploy the new application using Cloud Manager. This deployment initiates two jobs, responsible for adding (and merging if necessary) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. Prior to the switch, the underlying repositories undergo reindexing with the updated index definitions.
 
