@@ -94,6 +94,41 @@ Assets view now supports viewing top searched terms within your deployment using
 
 Assets view now enables you to add multi-value text and drop-down list property components to the metadata forms.
 
+
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### New features available in [!DNL Forms] {#new-features-available-in-channel}
+
+* [Adaptive Forms within AEM Page Editor](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): You can now use AEM Page Editor to quickly create and add multiple forms to your sites pages. This capability allows content authors to create seamless data capture experiences within Sites pages using the power of adaptive forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. You can: 
+
+    * Create an Adaptive Form by dragging and dropping form components to Adaptive Forms Container Component in AEM Sites editor or Experience Fragments.  
+    * Use the Adaptive Forms Wizard within AEM Sites editor so you can create forms independent of any Sites page, providing you the freedom to reuse such forms across multiple pages.
+    * Add multiple forms to a Sites page, streamlining the user experience and providing greater flexibility.
+   
+        >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+
+* [Adobe Acrobat Sign Solutions for Government](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms now integrate with Adobe Acrobat Sign Solutions for Government. This integration provides an advanced level of compliance and security for e-Signatures with Adaptive Form submissions for government associated accounts (Government departments and agencies).
+
+    Integration with Adobe Acrobat Sign Solutions for Government enables Adobe's partners and government customers to use electronic signatures in Adaptive Forms for some of the most mission-critical and sensitive lines of business. This additional layer of security ensures that all e-signatures are fully compliant with FedRAMP Moderate compliance, providing Adobe's government customers with peace of mind.
+
+* [Enhanced error handling with custom error handlers in rule editor](/help/forms/add-custom-error-handler-adaptive-forms.md): You can now invoke a custom function (using Client Library) in response to an error returned by an external service and provide a tailored response to end users. Or, you can take specific actions for errors returned by a service. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down.
+
+    This functionality helps improve your overall error-handling capability by introducing standards-based error responses that are backward compatible with OOTB error handlers, with greater flexibility and control.
+
+* [Enhanced authentication methods for Form Data Model](/help/forms/configure-data-sources.md): Experience heightened security with the introduction of Client Credentials based authentication for connecting AEM Forms with compatible data sources. This enhancement eliminates the need for impersonation or user login, bolstering the protection of your data. 
+
+### Headless Adaptive Forms early adopter program {#forms-early-adopter}
+
+Use [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) to enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. Headless adaptive forms help you: 
+
+* build high-quality multi-channel forms in the programming language of your choice 
+* natively integrate forms to your desktop and mobile apps, websites, and chat applications 
+* reuse your proprietary UI components with forms applications 
+* use the power of Adobe Experience Manager Forms 
+
+You can send an email to `aem-forms-headless@adobe.com` from your official email ID to join the early adopter program. 
+
+
 ## Maintenance Release Notes {#maintenance}
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
