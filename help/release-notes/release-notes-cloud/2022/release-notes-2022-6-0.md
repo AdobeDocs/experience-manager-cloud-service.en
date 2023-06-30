@@ -31,7 +31,7 @@ Have a look at the June 2022 Release Overview video for a summary of the feature
 
 ### New features in [!DNL Sites] {#sites-features}
 
-* A new [user interface](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) is now available for content admins and content authors to efficiently manage (take actions such as publish, unpublish, copy, move, etc.), search/filter, and create content fragments for Headless use-cases.
+* A new [user interface](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) is now available for content admins and content authors to efficiently manage (take actions such as publish, unpublish, copy, move, and so on), search/filter, and create content fragments for Headless use-cases.
 
     ![Content Fragment Console](/help/release-notes/assets/cf-ui.png)
 
@@ -61,7 +61,7 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
  ![product cockpit properties overview](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* Improved compatibility and robustness for 3rd party connectors on I/O Runtime
+* Improved compatibility and robustness for third-party connectors on I/O Runtime
 
 * Improved support for GQL Client configuration overwrites (for example, set custom caching behavior)
 
@@ -92,7 +92,7 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 ## Cloud Manager {#cloud-manager}
 
-You can find a complete list of Cloud Manager monthly releases [here.](/help/implementing/cloud-manager/release-notes/current.md)
+You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Migration Tools {#migration-tools}
 

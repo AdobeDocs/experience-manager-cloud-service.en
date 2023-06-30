@@ -21,7 +21,7 @@ The generic Lucene index (`/oak:index/lucene-*`) has existed since AEM 6.0 / Oak
 In AEM 6.5 the generic Lucene index was marked as deprecated, indicating that it would be removed in future versions. Since then, a WARN has been logged when the index has been used as illustrated by the following log snippet:
 
 ```text
-org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains(.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Please change the query or the index definitions.
+org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains(.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Change the query or the index definitions.
 ```
 
 In recent AEM versions, the generic Lucene index has been used to support a very small number of features. These are being reworked to use other indexes or otherwise modified to remove the dependency on this index.
@@ -36,14 +36,14 @@ To support larger customer data volumes, Adobe no longer creates the generic Luc
 
 Adobe has already adjusted the index costings via the `costPerEntry` and `costPerExecution` properties to ensure that other indexes such as `/oak:index/pathreference` are used in preference wherever possible. 
 
-Customer applications which use queries which still depend on this index should be updated immediately to use other existing indexes, which can be customized if required. Alternatively new custom indexes can be added to the customer application. Full instructions for index management in AEM as a Cloud Service can be found in the [indexing documentation.](/help/operations/indexing.md)
+Customer applications which use queries which still depend on this index should be updated immediately to use other existing indexes, which can be customized if required. Alternatively new custom indexes can be added to the customer application. Full instructions for index management in AEM as a Cloud Service can be found in the [indexing documentation](/help/operations/indexing.md).
 
 ## Are You Affected? {#are-you-affected}
 
 The generic Lucene index is currently used as a fallback if no other full text index can service a query. When this deprecated index is used, a message similar to the following is logged at the WARN level:
 
 ```text
-org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Please change the query or the index definitions.
+org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Change the query or the index definitions.
 ```
 
 In some circumstances, Oak might attempt to use another full text index (such as `/oak:index/pathreference`) to support the full text query, but if the query string does not match the regular expression on the index definition, a message is logged at WARN level and the query will likely not return results.
@@ -130,7 +130,7 @@ The node types against which to search can be specified using the `nodeTypes` pr
 At present, if no `nodeTypes` property is present, the underlying search query will use the `nt:base` node type, and thus is likely to use the generic Lucene index, typically logging WARN messages similar to the following.
 
 ```text
-20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains(., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Please change the query or the index definitions.
+20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains(., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Change the query or the index definitions.
 ```
 
 Prior to removal of the generic Lucene index, the `pathfield` component will be updated so that the search box is hidden for components using the default picker, which do not provide a `nodeTypes` property.

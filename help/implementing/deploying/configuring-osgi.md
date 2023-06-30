@@ -287,7 +287,7 @@ It is recommended that a simple bash script is written which sets the environmen
 
 The values for secrets are read from files. Therefore for each placeholder using a secret a text file containing the secret value must be created.
 
-For example if `$[secret:server_password]` is used, a text file named **server_password** must be created. All these secret files must be stored in the same directory and the framework property `org.apache.felix.configadmin.plugin.interpolation.secretsdir` must be configured with that local directory.
+For example, if `$[secret:server_password]` is used, a text file named **server_password** must be created. All these secret files must be stored in the same directory and the framework property `org.apache.felix.configadmin.plugin.interpolation.secretsdir` must be configured with that local directory.
 
 >[!CAUTION]
 >

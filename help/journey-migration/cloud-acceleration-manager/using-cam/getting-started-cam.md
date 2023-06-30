@@ -9,24 +9,24 @@ Cloud Acceleration Manager is a cloud-based application designed to guide your I
 
 ## Objective {#objective}
 
-This document helps you understand how to get started with Cloud Acceleration Manager (CAM). After reading you should be able to:
+This document helps you understand how to get started with Cloud Acceleration Manager (CAM). After reading, you should be able to:
 
 * understand how to log in to CAM 
 * create your project from the CAM's UI
 
 ## Using Cloud Acceleration Manager {#using-cam}
 
-Cloud Acceleration Manager (CAM) provides a one-stop experience for migrations in the form of a guided journey by providing an initial assessment, pointing them to the right tools, documentation and best practices to ensure a successful Go-live on AEM as a Cloud Service.
+Cloud Acceleration Manager (CAM) provides a one-stop experience for migrations. It comes in the form of a guided journey by providing an initial assessment, pointing them to the right tools, documentation, and best practices, to ensure a successful Go-live on AEM as a Cloud Service.
 
 ### Navigating to Cloud Acceleration Manager {#navigating}
 
 Follow the steps below to navigate to Cloud Acceleration Manager (CAM):
 
-1. Login to [Adobe Experience Cloud](https://experience.adobe.com).
+1. Log on to [Adobe Experience Cloud](https://experience.adobe.com).
 
-1. Click on **Experience Manager** card.
+1. Click **Experience Manager** card.
 
-1. Click on **Launch** from the **Cloud Acceleration Manager** card to open the landing page.
+1. Click **Launch** from the **Cloud Acceleration Manager** card so you can open the landing page.
 
     ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-1.png)
 
@@ -36,20 +36,20 @@ Follow the steps below to navigate to Cloud Acceleration Manager (CAM):
 >id="aemcloud_cam_gettingstarted"
 >title="Getting Started with Cloud Acceleration Manager"
 >abstract="Create your project and kickstart your journey to AEM as a Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=en" text="Benefits of using Cloud Acceleration Manager"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=en" text="Benefits of using Cloud Acceleration Manager"
 
 The landing page of the Cloud Acceleration Manager (CAM) allows you to create and edit multiple projects.
 
-Follow the steps below to create a new project:
+Follow the steps below to create a project:
 
-1. Click on **Create project** from  the landing page.
+1. Click **Create project** from the landing page.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-2.png)
 
    >[!NOTE]
-   >Users who are using CAM for the very first time will see a dialog box to create a new project. Users who have used CAM in the past will see a default project or previously created projects.
+   >Users who are using CAM for the first time see a dialog box to create a project. Users who have used CAM in the past see a default project or previously created projects.
 
-1. Enter the **Name** and **Description** for your project and click on **Create**.
+1. Enter the **Name** and **Description** for your project and click **Create**.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-3.png)
 
@@ -57,7 +57,7 @@ Follow the steps below to create a new project:
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing.png)
    
-1. Click on the project card to enter the project. This will take you to the project landing page.
+1. Click the project card so you can enter the project. You are taken to the project landing page.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-5.png)
 
@@ -69,7 +69,7 @@ You can edit the project name, description, thumbnail image, or delete the proje
 
 Follow the steps below to edit your project:
 
-1. Select the project and hover over the project, and click on the pencil icon to edit the project, as shown in the figure below.
+1. Select the project and hover over the project, and click the pencil icon so you open edit the project, as shown in the figure below.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
@@ -77,18 +77,18 @@ Follow the steps below to edit your project:
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-edit.png)
 
-1. Click on **Update** to commit your changes.
+1. Click **Update** to commit your changes.
 
 ### Deleting the Project {#delete-project}
 
 Follow the steps below to delete your project:
 
-1. Select the project and hover over the project, and click on the bucket icon to delete the project, as shown in the figure below.
+1. Select the project and hover over the project, and click the bucket icon so you delete the project, as shown in the figure below.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
-1. Click on **Delete** to confirm the step.
+1. Click **Delete** to confirm the step.
 
 ## What's Next {#whats-next}
 
-Once you have learnt how to log into Cloud Acceleration Manager and how to create a project, you are now ready to move on to reviewing the next step in the [Readiness Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en).
+After you have learned how to log into Cloud Acceleration Manager and how to create a project, you are ready to review the next step in the [Readiness Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en).

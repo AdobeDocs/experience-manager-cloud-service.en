@@ -30,7 +30,7 @@ Have a look at the October 2022 Release Overview video for a summary of the feat
 
 ### New features in [!DNL Sites] {#sites-features}
  
-* The [Personalization Tab for Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) allows segmentation specification capabilities to the Experience Fragment Editor as well as the flexibility to create nested Experience Fragments whereby headers and footers variations can be created for multiple segments. Prior to the launch of this feature, personalization offered by AEM is only available for site pages, but not for Experience Fragments
+* The [Personalization Tab for Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) allows segmentation specification capabilities to the Experience Fragment Editor and the flexibility to create nested Experience Fragments whereby headers and footers variations can be created for multiple segments. Prior to the launch of this feature, personalization offered by AEM is only available for site pages, but not for Experience Fragments
 
 * The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) now enables users to efficiently manage translated content fragments. A 1-click access has been provided to view all the language copies as well. Users are also able to filter the table view by the locale of their interest.
 
@@ -79,15 +79,15 @@ Have a look at the October 2022 Release Overview video for a summary of the feat
 
 ### What is New {#what-is-new-foundation}
 
-* AEM as a Cloud Service (Author Service) is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. Refer to AEM as a [Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
+* AEM as a Cloud Service (Author Service) is now integrated with Unified Shell to improve the user experience and unify it with all the other Experience Cloud applications. See AEM as a [Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) for more details.
 
 * As previously mentioned in release notes, using the replication agent admin screen or replication API for distributing content packages larger than 10 MB (nodes with properties, not including binaries) is now deprecated and enforced. See [Manage Publication](/help/operations/replication.md#manage-publication) or the [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) for suggested approaches to replicating these large content packages.
 
-* Dispatcher configuration now references a file that lists common marketing campaign query parameters. Customers can choose to uncomment the parameters that are relevant to them, resulting in better caching. Refer to [Marketing campaign parameters](/help/implementing/dispatcher/caching.md#marketing-parameters) for more details.
+* Dispatcher configuration now references a file that lists common marketing campaign query parameters. Customers can choose to uncomment the parameters that are relevant to them, resulting in better caching. See [Marketing campaign parameters](/help/implementing/dispatcher/caching.md#marketing-parameters) for more details.
 
 ## Cloud Manager {#cloud-manager}
 
-You can find a complete list of Cloud Manager monthly releases [here.](/help/implementing/cloud-manager/release-notes/current.md)
+You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Migration Tools {#migration-tools}
 

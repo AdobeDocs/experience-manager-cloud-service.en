@@ -223,4 +223,4 @@ This same technique can be used to install language-specific packages, for examp
 
 >[!TIP]
 >
->For details about the front-end build environment, please see the document [Developing Sites with the Front-End Pipeline.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+>For details about the front-end build environment, see [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).

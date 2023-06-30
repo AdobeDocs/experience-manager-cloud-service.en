@@ -17,7 +17,7 @@ exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 Follow the steps below to extract your migration set from the Content Transfer Tool:
 
 >[!NOTE]
->If Amazon S3, Azure Data Store, or File Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the extraction phase. The pre-copy step is most effective for the 1st full extraction and ingestion. Refer to [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) for more details.
+>If Amazon S3, Azure Data Store, or File Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the extraction phase. The pre-copy step is most effective for the 1st full extraction and ingestion. See [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) for more details.
 
 1. Select a migration set from **Content Transfer** wizard and click **Extract** to start extraction. 
 
@@ -58,7 +58,7 @@ The Content Transfer Tool has a feature that supports differential content top-u
 
 >[!NOTE]
 >After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service. If you have used the pre-copy step for the 1st full extraction, you can skip pre-copy for subsequent top-up extractions (if the top-up migration set size is less than 200GB) because it may add time to the entire process.
->Additionally, it is essential that the content structure of existing content is not changed from the time the initial extraction is taken to when the top-up extraction is run. Top-ups cannot be run on content whose structure has been changed since the initial extraction. Please ensure you restrict this during the migration process.
+>Additionally, it is essential that the content structure of existing content is not changed from the time the initial extraction is taken to when the top-up extraction is run. Top-ups cannot be run on content whose structure has been changed since the initial extraction. Ensure that you restrict this during the migration process.
 
 Once the extraction process is complete, you can transfer delta content, by using the top-up extraction method. 
 

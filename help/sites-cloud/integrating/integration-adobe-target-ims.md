@@ -37,7 +37,7 @@ The first stage of the configuration is to create an IMS Configuration in AEM an
 1. In AEM open the **Tools** menu.
 1. In the **Security** section select **Adobe IMS Configurations**.
 1. Select **Create** to open the **Adobe IMS Technical Account Configuration**.
-1. Using the drop down under **Cloud Configuration**, select **Adobe Target**.
+1. Using the drop-down under **Cloud Configuration**, select **Adobe Target**.
 1. Activate **Create new certificate** and enter a new alias.
 1. Confirm with **Create certificate**.
 
@@ -265,7 +265,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 With [Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md), the Client Code field had been added to the Target configuration window.
 
-When configuring the Tenant ID and Client Code fields, please be aware of that for most customers, the **Tenant ID** and the **Client Code** are the same. This means that both fields contain the same information and are identical. Make sure you enter the Tenant ID in both fields.
+When configuring the Tenant ID and Client Code fields, be aware of that for most customers, the **Tenant ID** and the **Client Code** are the same. This means that both fields contain the same information and are identical. Make sure you enter the Tenant ID in both fields.
 
 >[!NOTE]
 >

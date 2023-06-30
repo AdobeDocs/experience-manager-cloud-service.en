@@ -22,7 +22,7 @@ The onboarding for AEM Commerce as a Cloud Service is a two-step process:
 
 The first onboarding step is done by Adobe. For more details on pricing and provisioning, you must reach out to your sales representative.
 
-After you are provisioned with the CIF add-on, it is applied to any existing Cloud Manager programs. In case, you do not have a Cloud Manager Program, you must create one. For more details, refer to [Set up your Program](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
+After you are provisioned with the CIF add-on, it is applied to any existing Cloud Manager programs. In case, you do not have a Cloud Manager Program, you must create one. For more details, see [Set up your Program](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
 
 The second step is self-service for each AEM as a Cloud Service environment. There are some additional configurations that you must do after the initial provisioning of the CIF add-on.
 
@@ -57,15 +57,15 @@ After the endpoint and optionally an authorization header for staged catalog sup
 
 ![CM Enviornment Information](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### By way of Adobe Developer CLI  {#adobe-cli}
+### By way of Adobe I/O CLI  {#adobe-cli}
 
-To connect AEM with a commerce solution by way of Adobe Developer CLI, follow these steps:
+To connect AEM with a commerce solution by way of Adobe I/O CLI, follow these steps:
 
-1. Get the Adobe Developer CLI with the Cloud Manager plugin
+1. Get the Adobe I/O CLI with the Cloud Manager plugin
 
-    Check the [Adobe Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) on how to download, setup, and use the [Adobe Developer CLI](https://github.com/adobe/aio-cli) with the [Cloud Manager CLI plugin](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+    Check the [Adobe Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) on how to download, setup, and use the [Adobe I/O CLI](https://github.com/adobe/aio-cli) with the [Cloud Manager CLI plugin](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
-2. Authenticate the Adobe Developer CLI with the AEM as a Cloud Service program
+2. Authenticate the Adobe I/O CLI with the AEM as a Cloud Service program
 
 3. Set the `COMMERCE_ENDPOINT` variable in Cloud Manager
 

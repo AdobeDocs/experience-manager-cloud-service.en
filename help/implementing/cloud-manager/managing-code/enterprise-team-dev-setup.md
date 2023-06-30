@@ -9,7 +9,7 @@ Learn how to set up and scale your enterprise development team and see how AEM a
 
 ## Introduction {#introduction}
 
-To support customers with enterprise development setups, AEM as a Cloud Service fully integrates with Cloud Manager and its purpose-built, [opinionated CI/CD pipelines.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) These pipelines and services are built based on best practices, ensuring thorough [testing and the highest code quality.](/help/implementing/cloud-manager/code-quality-testing.md)
+To support customers with enterprise development setups, AEM as a Cloud Service fully integrates with Cloud Manager and its purpose-built, [opinionated CI/CD pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). These pipelines and services are built based on best practices, ensuring thorough [testing and the highest code quality](/help/implementing/cloud-manager/code-quality-testing.md).
 
 ## Cloud Manager's Support in Enterprise Team Development Setup {#cloud-manager}
 
@@ -64,7 +64,7 @@ The setup in the Cloud Manager's git repository has two branches.
 * A stable release branch contains the production code from all teams.
 * A development branch contains the development code from all teams.
 
-Every push to a team's git repository in either the development or the stable branch triggers a [GitHub action.](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
+Every push to a team's git repository in either the development or the stable branch triggers a [GitHub action](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code).
 
 All projects follow the same setup for the stable branch. A push to the stable branch of a project is automatically pushed to the stable branch in Cloud Manager's git repository. The production pipeline in Cloud Manager is configured to be triggered by a push to the stable branch. The production pipeline is therefore executed by each push of any team into a stable branch and the production deployment is updated if all quality gates pass.
 
@@ -76,7 +76,7 @@ Running the production pipeline includes checking the code of all teams via the 
 
 For local development, the [SDK for AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing) is used. The SDK allows a local author, publish, and dispatcher to be set up. This enables offline development and quick turnaround times. Sometimes only the author environment is used for development, but quickly setting up dispatcher and publish environments allows testing everything locally before pushing into the git repository.
 
-Members of each team usually checkout the code from the shared git for as well as their own project code. There is no need to checkout other projects as the projects are independent.
+Members of each team usually checkout the code from the shared git for their own project code. There is no need to checkout other projects as the projects are independent.
 
 ![Local checkout and SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
  
@@ -84,7 +84,7 @@ This real-world setup can be used as a blueprint and then customized to the need
 
 >[!TIP]
 >
->Please refer to the document [Working with Multiple Source Git Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html#managing-code) to learn more about this setup.
+>See [Working with Multiple Source Git Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html#managing-code) to learn more about this setup.
 
 ### Considerations for a Multi-Team Setup {#considerations}
 

@@ -11,7 +11,7 @@ Learn how the front-end developer uses Cloud Manager to access git repository in
 
 If you are a front-end developer only responsible for the customization of the site theme, you do not need any knowledge of how AEM was set up and can skip to the [Objective](#objective) section of this document.
 
-If you also serve the role of Cloud Manager or AEM administrator as well as front-end developer, you learned in the previous document of the AEM Quick Site Creation journey, [Grant Access to the Front-End Developer,](grant-access.md) how to onboard the front-end developer so they have access to the git repository, and you should now know:
+If you also serve the role of Cloud Manager or AEM administrator and front-end developer, you learned in the previous document of the AEM Quick Site Creation journey, [Grant Access to the Front-End Developer,](grant-access.md) how to onboard the front-end developer so they have access to the git repository, and you should now know:
 
 * How to add a front-end developer as a user.
 * How to grant the required roles to the front-end developer.
@@ -44,9 +44,9 @@ The Quick Site Creation tool allows front-end developers to work independently w
   * A welcome email from Cloud Manager informing you of access
   * The name of the program or the URL to it within Cloud Manager
 
-If you are missing any of these items, please contact the AEM administrator or Cloud Manager administrator.
+If you are missing any of these items, contact the AEM administrator or Cloud Manager administrator.
 
-It is assumed that the front-end developer has extensive experience with front-end development workflows as well as common tools installed including:
+It is assumed that the front-end developer has extensive experience with front-end development workflows and common tools installed including:
 
 * git
 * npm
@@ -66,7 +66,7 @@ The Cloud Manager administrator will have onboarded you as a Cloud Manager user.
 
 ![Welcome email](assets/welcome-email.png)
 
-If you have not received this email, please contact the Cloud Manager administrator.
+If you have not received this email, contact the Cloud Manager administrator.
 
 ## Access Cloud Manager {#access-cloud-manager}
 

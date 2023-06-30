@@ -430,7 +430,7 @@ Similarly, information that requires distinguishing between different sounds (fo
 
 >[!NOTE]
 >
->For requirements related to alternatives to color, refer to [Use of Color](#use-of-color).
+>For requirements related to alternatives to color, see [Use of Color](#use-of-color).
 
 #### How to Meet - Sensory Characteristics (1.3.3) {#how-to-meet-sensory-characteristics}
 
@@ -544,7 +544,7 @@ Make sure that the text contrasts sufficiently with its background. Contrast rat
 
 >[!NOTE]
 >
->Please remember that fonts can differ in how they render the equivalent PT/PX/EM sizing. 
+>Remember that fonts can differ in how they render the equivalent PT/PX/EM sizing. 
 >
 >Use good judgment and err on the side of readability and usability when selecting appropriate fonts and sizing for web content.
 

@@ -25,7 +25,7 @@ For further details about SPAs in AEM, see the following documents:
 
 ## Design {#design}
 
-The page component for a SPA doesn't provide the HTML elements of its child components via the JSP or HTL file. This operation is delegated to the SPA framework. The representation of child components or model is fetched as a JSON data structure from the JCR. The SPA components are then added to the page according to that structure. This behavior differentiates the page component's initial body composition from non-SPA counterparts.
+The page component for a SPA does not provide the HTML elements of its child components via the JSP or HTL file. This operation is delegated to the SPA framework. The representation of child components or model is fetched as a JSON data structure from the JCR. The SPA components are then added to the page according to that structure. This behavior differentiates the page component's initial body composition from non-SPA counterparts.
 
 ### Page Model Management {#page-model-management}
 
@@ -58,7 +58,7 @@ You can understand the flow of the interaction between the SPA and AEM by thinki
 * The communication between the page editor and the SPA is made using JSON instead of HTML.
 * The page editor provides the latest version of the page model to the SPA via the iframe and messaging API.
 * The page model manager notifies the editor it is ready for edition and passes the page model as a JSON structure.
-* The editor doesn't alter or even access the DOM structure of the page being authored rather it provides the latest page model.
+* The editor does not alter or even access the DOM structure of the page being authored rather it provides the latest page model.
 
 ![SPA workflow](assets/workflow.png)
 
@@ -141,7 +141,7 @@ This is a more detailed overview focusing on the authoring experience.
 
 ## Requirements & Limitations {#requirements-limitations}
 
-To enable the author to use the page editor to edit the content of an SPA, your SPA application must be implemented to interact with the AEM SPA Editor SDK. Please see the [Getting Started with SPAs in AEM using React](getting-started-react.md) document for minimum that you need to know to get yours running.
+To enable the author to use the page editor to edit the content of an SPA, your SPA application must be implemented to interact with the AEM SPA Editor SDK. See the [Getting Started with SPAs in AEM using React](getting-started-react.md) document for minimum that you need to know to get yours running.
 
 ### Supported Frameworks {#supported-frameworks}
 
@@ -154,7 +154,7 @@ Previous versions of these frameworks may work with the AEM SPA Editor SDK, but 
 
 ### Additional Frameworks {#additional-frameworks}
 
-Additional SPA frameworks can be implemented to work with the AEM SPA Editor SDK. Please see the [SPA Blueprint](blueprint.md) document for the requirements that a framework must fulfill to create a framework-specific layer composed of modules, components, and services to work with the AEM SPA Editor.
+Additional SPA frameworks can be implemented to work with the AEM SPA Editor SDK. See the [SPA Blueprint](blueprint.md) document for the requirements that a framework must fulfill to create a framework-specific layer composed of modules, components, and services to work with the AEM SPA Editor.
 
 ### Using Multiple Selectors {#multiple-selectors}
 
@@ -167,7 +167,7 @@ If you want to use the in place editor of a text component created in SPA there 
 1. Set an attribute (it can be any) on the container wrapper element containing the text HTML. In case of the WKND SPA Project, it's a `<div>` element and the selector that has been used is `data-rte-editelement`.
 1. Set the configuration `editElementQuery` on the corresponding AEM text component's `cq:InplaceEditingConfig` that points to that selector for example, `data-rte-editelement`. This lets the editor know which HTML element wraps the HTML text.
 
-For additional information about the `editElementQuery` property and the configuration of the rich text editor, see [Configure the Rich Text Editor.](/help/implementing/developing/extending/rich-text-editor.md)
+For additional information about the `editElementQuery` property and the configuration of the rich text editor, see [Configure the Rich Text Editor](/help/implementing/developing/extending/rich-text-editor.md).
 
 ### Limitations {#limitations}
 

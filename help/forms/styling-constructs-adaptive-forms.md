@@ -197,7 +197,7 @@ Depending on their type, widgets also include classes. Commonly, widgets include
   </tr>
   <tr>
    <td><p><code>widgets-bg-color</code></p> </td>
-   <td>Background color for the widgets (Doesn't work for check box and radio button)</td>
+   <td>Background color for the widgets (does not work for check box and radio button)</td>
   </tr>
   <tr>
    <td><p><code>widgets-border-color</code></p> </td>
@@ -265,7 +265,7 @@ Depending on their type, widgets also include classes. Commonly, widgets include
   </tr>
   <tr>
    <td><p><code>widget-height</code></p> </td>
-   <td>Height of the widget (Doesn't work for checkbox and radio button)</td>
+   <td>Height of the widget (Does not work for checkbox and radio button)</td>
   </tr>
   <tr>
    <td><p><code>checkbutton-height</code></p> </td>
@@ -697,7 +697,7 @@ Additionally, there are classes to style tab navigators (both left and top) base
   </tr>
   <tr>
    <td><p><code>nested_false</code></p> </td>
-   <td><p>Tab navigators (left and top) that don't have nested/child/sub navigators</p> </td>
+   <td><p>Tab navigators (left and top) that do not have nested/child/sub navigators</p> </td>
   </tr>
  </tbody>
 </table>
@@ -936,9 +936,9 @@ A Panel includes an optional toolbar and its content.
  </tbody>
 </table>
 
-The panel node is divided into navigators and content. There `` `` is no separate styling component for the content. The variables described are applied on navigator as well as content.
+The panel node is divided into navigators and content. There `` `` is no separate styling component for the content. The variables described are applied on navigator and content.
 
-The topmost panel (RootPanel) doesn't have this class.
+The topmost panel (RootPanel) does not have this class.
 
 ## Mobile styling {#mobile-styling}
 

@@ -116,7 +116,7 @@ jobs:
           git -C ${MAIN_BRANCH} push
 ```
 
-Using a GitHub action is very flexible. Any mapping between branches of the git repositories can be performed as well as any mapping of the separate git projects into the directory layout of the main project.
+Using a GitHub action is very flexible. Any mapping between branches of the git repositories can be performed and any mapping of the separate git projects into the directory layout of the main project.
 
 >[!NOTE]
 >
@@ -185,7 +185,7 @@ git commit -F ../commit.txt
 git push
 ```
 
-Using a Jenkins job is very flexible. Any mapping between branches of the git repositories can be performed as well as any mapping of the separate git projects into the directory layout of the main project.
+Using a Jenkins job is very flexible. Any mapping between branches of the git repositories can be performed and any mapping of the separate git projects into the directory layout of the main project.
 
 >[!NOTE]
 >

@@ -44,7 +44,7 @@ GraphQL is:
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 -->
 
-For further information about the GraphQL API, see the following sections (amongst many other resources):
+For  information about the GraphQL API, see the following sections (amongst many other resources):
 
 * At [graphql.org](https://graphql.org):
 
@@ -371,7 +371,7 @@ See [Sample Query - All Cities with a Named Variation](/help/headless/graphql-ap
 
 ## GraphQL Variables {#graphql-variables}
 
-GraphQL permits variables to be placed in the query. For more information you can see the [GraphQL documentation for Variables](https://graphql.org/learn/queries/#variables).
+GraphQL permits variables to be placed in the query. For more information, see [GraphQL documentation for Variables](https://graphql.org/learn/queries/#variables).
 
 For example, to get all Content Fragments of type `Author` in a specific variation (if available), you can specify the argument `variation` in GraphiQL.
 
@@ -401,7 +401,7 @@ query($variation: String!) {
 
 This query will return the full list of authors. Authors without the `another` variation will fall back to the original data (`_variation` will report `master` in this case).
 
-If you want to restrict the list to authors that provide the specified variation (and skip authors that would fall back to the original data), you'll need to apply a [filter](#filtering):
+Apply a [filter](#filtering), if you want to restrict the list to authors that provide the specified variation (and skip authors that would fall back to the original data):
 
 ```graphql
 query($variation: String!) {
@@ -425,7 +425,7 @@ query($variation: String!) {
 
 In GraphQL there is a possibility to change the query based on variables, called GraphQL Directives.
 
-For example there you can include the `adventurePrice` field in a query for all the `AdventureModels`, based on a variable `includePrice`.
+For example, there you can include the `adventurePrice` field in a query for all the `AdventureModels`, based on a variable `includePrice`.
 
 ![GraphQL Directives](assets/cfm-graphqlapi-04.png "GraphQL Directives")
 
@@ -564,7 +564,7 @@ The sorting criteria:
 
 * is a comma separated list of values representing the field path
   * the first field in the list will define the primary sort order, the second field is used if two values of the primary sort criterion are equal, the third one if the first two criteria are equal, etc.
-  * dotted notation, i.e field1.subfield.subfield etc...
+  * dotted notation, that is, field1.subfield.subfield etc...
 * with an optional order direction
   * ASC (ascending) or DESC (descending); as default ASC is applied
   * the direction can be specified per field; this means that you can sort one field in ascending order, another one in descending order (name, firstName DESC)
