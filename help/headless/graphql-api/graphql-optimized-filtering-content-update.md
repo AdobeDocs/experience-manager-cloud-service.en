@@ -93,7 +93,7 @@ To run the procedure use the following steps:
       <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Interval (seconds) to process remaining Content Fragments up till next Limit<br>This interval is also considered as a wait-time before starting the job, and a delay between processing of each subsequent CF_MIGRATION_LIMIT number of CFs.<br>(*)</td>
+      <td>Interval (seconds) to process remaining Content Fragments up till next Limit<br>This interval is also considered as both a wait-time before starting the job, and a delay between processing of each subsequent CF_MIGRATION_LIMIT number of CFs.<br>(*)</td>
      </tr>
     </tbody>
    </table>
