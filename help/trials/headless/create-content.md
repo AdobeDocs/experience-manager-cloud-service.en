@@ -11,7 +11,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Create new content"
->abstract="Using the model that you created in the previous module, you'll learn how to create content which can be used for page authoring, or as the basis of your headless content."
+>abstract="Using the model that you created in the previous module, you learn how to create content which can be used for page authoring, or as the basis of your headless content."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
@@ -27,7 +27,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 
 Content Fragments represent your headless content and are based on predefined structures, called Content Fragment models. You already created a model in a previous module.
 
-In this module you will create a new Content Fragment based on that model by using the Content Fragment console. Think of the Content Fragment console as your library of headless content. Use it to create new Content Fragments and manage existing fragments.
+In this module, you create a new Content Fragment based on that model by using the Content Fragment console. Think of the Content Fragment console as your library of headless content. Use it to create new Content Fragments and manage existing fragments.
 
 1. Tap or click the **Create** button at the top-right of the console.
 
@@ -43,11 +43,11 @@ In this module you will create a new Content Fragment based on that model by usi
 
 >[!TIP]
 >
->Depending on your browser settings, the new browser tab might be suppressed by a pop-up blocker. If your new fragment does not open after clicking **Create and open**, please check your browser settings.
+>Depending on your browser settings, the new browser tab might be suppressed by a pop-up blocker. If your new fragment does not open after clicking **Create and open**, check your browser settings.
 
 ## Add Content to Your Content Fragment {#add-content}
 
-Once you save and open your new Content Fragment, the Content Fragment editor opens on a new tab. Here you can add the content of your new fragment.
+After you save and open your new Content Fragment, the Content Fragment editor opens on a new tab. Here you can add the content of your new fragment.
 
 1. The Content Fragment editor shows the fields you defined in the selected model. Here you can add content to each field to complete your Content Fragment. Your progress is saved automatically.
 

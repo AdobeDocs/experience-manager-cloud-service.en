@@ -31,7 +31,7 @@ You can use Experience Fragments:
   Without Experience Fragments, the author would need to copy and paste that fragment. Creating and maintaining these copy/paste experiences is time-consuming and prone to user errors. 
   Experience Fragments eliminate the need for copy/paste.
 * To support the headless CMS use-case. 
-  Authors want to use AEM only for authoring but not for delivering to the customer. A third party system/touchpoint would consume that experience and then deliver to the end user.
+  Authors want to use AEM only for authoring but not for delivering to the customer. A third-party system/touchpoint would consume that experience and then deliver to the end user.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ You can use Experience Fragments:
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
 >
->For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>For more information, see [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ You can use Experience Fragments:
 >
 >* `experience-fragments-editors`
 >
->Please contact your system administrator if you are experiencing any issues.
+>Contact your system administrator if you are experiencing any issues.
 
 ## When Should You Use Experience Fragments? {#when-should-you-use-experience-fragments}
 
@@ -59,7 +59,7 @@ Experience Fragments should be used:
   * Experiences that are reused with same or similar content.
 * When you use AEM as a content delivery platform for third parties.
   * Any solution that wants to use AEM as the content delivery platform.
-  * Embedding content in third party touchpoints.
+  * Embedding content in third-party touchpoints.
 * If you have an Experience with different variations or renditions.
   * Channel or context-specific variations.
   * Experiences that make sense to group; for example a campaign with different experiences across channels.
@@ -139,7 +139,7 @@ To create and configure a folder for your Experience Fragments it is recommended
 >
 >It is not recommended to change the **Allowed Templates** by this method, as the templates specified can be overwritten upon upgrade.
 >
->Please use this dialog for information purposes only.
+>Use this dialog box for information purposes only.
 
 1. Navigate to the required **Experience Fragments** console.
 
@@ -417,7 +417,7 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 >[!NOTE]
 >
->Although this is directly available from the browser, [the primary purpose is to allow other applications (for example, third party web apps, custom mobile implementations) to access the content of the Experience Fragment directly, using only the URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+>Although this is directly available from the browser, [the primary purpose is to allow other applications (for example, third-party web apps, custom mobile implementations) to access the content of the Experience Fragment directly, using only the URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Publishing Experience Fragments {#publishing-experience-fragments}
 
@@ -427,7 +427,7 @@ Alternatively you can also [publish to Preview](/help/sites-cloud/authoring/fund
 
 ## Exporting Experience Fragments {#exporting-experience-fragments}
 
-By default, Experience Fragments are delivered in the HTML format. This can be used by both AEM and third party channels alike.
+By default, Experience Fragments are delivered in the HTML format. This can be used by both AEM and third-party channels alike.
 
 For export to Adobe Target, JSON can also be used. See:
 

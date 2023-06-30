@@ -20,22 +20,17 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2023.4.0) is June 7, 2023. The next feature release (2023.6.0) is planned for June 29, 2023.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2023.6.0) is June 29, 2023. The next feature release (2023.7.0) is planned for July 27, 2023.
 
 ## Release Video {#release-video}
 
-Have a look at the April 2023 Release Overview video for a summary of the features added in the 2023.4.0 release:
+Have a look at the June 2023 Release Overview video for a summary of the features added in the 2023.6.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3418681/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3420971/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### New features in [!DNL Experience Manager Sites] {#sites-features}
-
-* Export Content Fragments from AEM as a Cloud Service to Adobe Target in JSON format and create corresponding JSON offers in Target.
-* Support for GraphQL pagination and sorting, along with internal caching enhancements, now help improve the performance of decoupled client applications when fetching large content sets from AEM using complex GraphQL queries and filters. 
-
-### New features in [!DNL Experience Manager Sites] prerelease {#prerelease-sites}
 
 * Content Fragments and their references can now be published to the [AEM Preview Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) using the [Content Fragment Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), allowing users to preview the final experience on a decoupled preview application before going live.
 * Images can now be dynamically optimized for web-delivery in headless scenarios using AEM GraphQL. [Query variables](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) can be defined in GraphQL queries to allow decoupled client applications request accordingly optimized images from AEM. 
@@ -45,36 +40,72 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
 
 ### New features in [!DNL Assets] {#assets-features}
 
-*   Added support for WebP images to automatically extract metadata, generate thumbnails and custom renditions. Smart Tags capability is also now supported for these files. Dynamic Media capabilities are not supported for WebP as an input format.
+**Availability of New Assets view**
 
-*   [Search experience enhancements](/help/assets/search-assets.md#aftersearch) - You can now quickly perform the following operations on the assets that display in the search results:
+The [new Assets view](/help/assets/assets-view-introduction.md) is now available in Experience Manager Assets. Assets View provides simplified user interface, which makes it easy to manage, discover, and distribute your digital assets. The experience is targeted to creatives, read-only asset consumers, and lighter-weight DAM users.
 
-    * Create a workflow
-    * Create a version
-    * Relate or Unrelate assets
+![Tagging Management](/help/assets/assets/my-workspace.png)
 
-      You do not need to navigate to the asset location and view its properties to perform these operations.
+**Search experience enhancements**
 
-*   Color Search facet usability improvements - Input field for color values is now editable and search results update only when you exit the color picker. 
+Experience Manager Assets now empowers you to do more from the search results user interface: You can now:
 
-*   New protocol support launched (DASH - Dynamic Adaptive Streaming over HTTP) for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled):
-    * Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos
-    * DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry
-    * Available in all regions, to be enabled via support ticket
+  * Perform search within the current repository location by default instead of searching for the keyword in the entire repository.
 
-*  Dynamic Media _Snapshot_ - Experiment with test images or Dynamic Media URLs, to see the output of different image modifiers, and assess Smart Imaging optimizations for file size (with WebP and AVIF delivery), network bandwidth, and Device Pixel Ratio. See [Dynamic Media Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+  * Navigate to the folder location for assets that display in the search results.
 
-### Feature in [!DNL Assets] prerelease {#prerelease-feature-assets}
+**Thumbnail previews for 3D assets**
 
-* Dynamic Media - The user interface for some Smart Crop-related fields in an Image Profile are now updated to reflect the current guidelines for defining a Smart Crop. See [Crop options](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options). 
+[!DNL Experience Manager Assets] now generates [thumbnail previews for common 3D file formats](/help/assets/file-format-support.md) including gLB, USDz, FBX, 3DS, OBJ, and SBSAR. When these files are uploaded, thumbnails are automatically generated by default.
+
+**Link share configuration**
+
+A new improved user experience for [creating link shares](/help/assets/share-assets.md) along with a brand new set of configurations that let administrators customize the default behavior of this capability for your users.
+
+![Tagging Management](/help/assets/assets/config-email-service.png)
+
+**Dynamic Media: Updated Smart Crop-related fields in Image profile**  
+
+The user interface for some Smart Crop-related fields in an Image Profile are now updated to reflect the current guidelines for defining a Smart Crop. See [Crop options](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
+
+### New features in Assets view {#assets-view-features}
+
+**Hierarchical tagging of assets for faster search experience**
+
+Flat lists of controlled vocabularies become unmanageable over time. Assets view now supports [hierarchical tagging structure](/help/assets/tagging-management-assets-view.md), which facilitates applying relevant metadata, categorizing assets, supporting search, reusing tags, improving discoverability, and so on.
+
+![Tagging Management](/help/assets/assets/tags-hierarchy.png)
+
+**Pin files, folders, and collections for quick access**
+
+You can now [pin files, folders, and collections for faster access](/help/assets/my-workspace-assets-view.md) to these items when you need them later. The pinned items display in the **Quick access** section of My Workspace. You can access them using My Workspace instead of navigating to the location where they are saved within the repository.
+
+![Tasks in Workspace](/help/assets/assets/quick-access.png)
+
+**Filter assets in the Trash folder**
+
+Assets view now enables you to [filter assets available in the Trash folder](/help/assets/navigate-assets-view.md). You can apply standard or custom filters to search appropriate assets within the Trash folder to either restore or permanently delete them.
+
+**Thumbnail previews for 3D assets**
+
+Assets view now generates thumbnail previews for common 3D file formats including gLB, USDz, FBX, 3DS, OBJ, and SBSAR. When these files are uploaded to Assets view, thumbnails are automatically generated by the system, by default.
+
+![Tasks in Workspace](/help/assets/assets/3d-preview.png)
+
+**View top searched terms**
+
+Assets view now supports [viewing top searched terms within your deployment](/help/assets/my-workspace-assets-view.md) using the **Insights** section of My Workspace. You can also navigate to detailed Insights to view top searches during the last 30 days or 12 months.
+
+![Tasks in Workspace](/help/assets/assets/insights-top-searches.png)
+
+**Metadata form enhancements**
+
+Assets view now enables you to [add multi-value text and drop-down list property components](/help/assets/metadata-assets-view.md#property-components) to the metadata forms.
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### New features available in [!DNL Forms] {#new-features-available-in-channel}
-
-* **[Submit Adaptive Forms to Microsoft&reg; SharePoint and Microsoft&reg; OneDrive](/help/forms/configuring-submit-actions.md)**: Improve business user agility so you can launch new forms quickly and store submitted data in everyday tools they use like Microsoft&reg; SharePoint site or OneDrive folder.
-
-### Features in [!DNL Forms] prerelease {#prerelease-features-forms}
 
 * [Adaptive Forms within AEM Page Editor](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): You can now use AEM Page Editor to quickly create and add multiple forms to your sites pages. This capability allows content authors to create seamless data capture experiences within Sites pages using the power of adaptive forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. You can: 
 
@@ -86,15 +117,25 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
 
 * [Adobe Acrobat Sign Solutions for Government](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms now integrate with Adobe Acrobat Sign Solutions for Government. This integration provides an advanced level of compliance and security for e-Signatures with Adaptive Form submissions for government associated accounts (Government departments and agencies).
 
-    Integration with Adobe Acrobat Sign for Government enables Adobe's partners and government customers to use electronic signatures in Adaptive Forms for some of the most mission-critical and sensitive lines of business. This additional layer of security ensures that all e-signatures are fully compliant with FedRAMP Moderate compliance, providing Adobe's government customers with peace of mind.
+    Integration with Adobe Acrobat Sign Solutions for Government enables Adobe's partners and government customers to use electronic signatures in Adaptive Forms for some of the most mission-critical and sensitive lines of business. This additional layer of security ensures that all e-signatures are fully compliant with FedRAMP Moderate compliance, providing Adobe's government customers with peace of mind.
 
-* Enhanced error handling with custom error handlers in rule editor: You can now invoke a custom function (using Client Library) in response to an error returned by an external service and provide a tailored response to end users. Or, you can take specific actions for errors returned by a service. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down.
+* [Enhanced error handling with custom error handlers in rule editor](/help/forms/add-custom-error-handler-adaptive-forms.md): You can now invoke a custom function (using Client Library) in response to an error returned by an external service and provide a tailored response to end users. Or, you can take specific actions for errors returned by a service. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down.
 
     This functionality helps improve your overall error-handling capability by introducing standards-based error responses that are backward compatible with OOTB error handlers, with greater flexibility and control.
 
+* [Enhanced authentication methods for Form Data Model](/help/forms/configure-data-sources.md): Experience heightened security with the introduction of Client Credentials based authentication for connecting AEM Forms with compatible data sources. This enhancement eliminates the need for impersonation or user login, bolstering the protection of your data. 
+
+* [Adaptive Forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md): You can now make [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), and [Horizontal Tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) components in a Core Components based Adaptive Form to create repeatable sections. 
+
+    >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
+
+    These repeatable sections allow you to provide an unlimited number of entries without a fixed field count. It is useful when the required instances of data are unknown in advance. Forms users can easily add or remove sections, making forms adaptable to different data entry scenarios and simplifying collection of multiple occurrences of the same data.
+
+* **[Submit Adaptive Forms to Microsoft&reg; SharePoint and Microsoft&reg; OneDrive](/help/forms/configuring-submit-actions.md)**: Improve business user agility so you can launch new forms quickly and store submitted data in everyday tools they use like Microsoft&reg; SharePoint site or OneDrive folder.
+
 ### Headless Adaptive Forms early adopter program {#forms-early-adopter}
 
-Use Headless Adaptive Forms to enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. Headless adaptive forms help you: 
+Use [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) to enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. Headless adaptive forms help you: 
 
 * build high-quality multi-channel forms in the programming language of your choice 
 * natively integrate forms to your desktop and mobile apps, websites, and chat applications 
@@ -103,11 +144,6 @@ Use Headless Adaptive Forms to enable your developers to create, publish, and ma
 
 You can send an email to `aem-forms-headless@adobe.com` from your official email ID to join the early adopter program. 
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### What is New {#what-is-new-foundation}
-
-* Additional Publish Regions: Sites Customers may license up to three publish regions, in addition to the primary region. Traffic is routed to additional publish farms, which results in lowered latency for certain requests, and increased resilience against regional outages. Contact your Adobe Account Manager for information about licensing [Additional Publish Regions](/help/operations/additional-publish-regions.md) for your programs.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -115,7 +151,7 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Cloud Manager {#cloud-manager}
 
-You can find a complete list of Cloud Manager monthly releases [here.](/help/implementing/cloud-manager/release-notes/current.md)
+You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Migration Tools {#migration-tools}
 

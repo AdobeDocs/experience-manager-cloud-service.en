@@ -19,7 +19,7 @@ Sites based on site templates can use the front-end pipeline by default. This do
 
 >[!TIP]
 >
->If you are not familiar with the front-end pipeline and how to quickly deploy sites using it and site templates, please review the [Quick Site Creation journey](/help/journey-sites/quick-site/overview.md) for an introduction.
+>If you are not familiar with the front-end pipeline and how to quickly deploy sites using it and site templates, see [Quick Site Creation journey](/help/journey-sites/quick-site/overview.md) for an introduction.
 
 If you have not created your existing site based on site templates and themes, AEM can configure your site to load the themes that are deployed with the Front End Pipeline on top of the existing client libraries.
 

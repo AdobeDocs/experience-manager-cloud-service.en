@@ -13,7 +13,7 @@ exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 
 In addition to the most commonly used browser upload, other methods of adding assets to the [!DNL Experience Manager] repository exist. These other methods include desktop clients, like Adobe Asset Link or [!DNL Experience Manager] desktop app, upload and ingestion scripts that customers would create, and automated ingestion integrations added as [!DNL Experience Manager] extensions.
 
-While you can upload and manage any binary file in [!DNL Experience Manager], most commonly used file formats have support for additional services, like metadata extraction or preview/rendition generation. Refer to [supported file formats](file-format-support.md) for details.
+While you can upload and manage any binary file in [!DNL Experience Manager], most commonly used file formats have support for additional services, like metadata extraction or preview/rendition generation. See [supported file formats](file-format-support.md) for details.
 
 You can also choose to have additional processing done on the uploaded assets. Several asset processing profiles can be configured on the folder, into which assets are uploaded, to add specific metadata, renditions, or image-processing services. See [process assets when uploaded](#process-when-uploaded).
 

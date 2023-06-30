@@ -5,7 +5,7 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 ---
 # Editing Page Properties {#editing-page-properties}
 
-You can define the required properties for a page. These can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information is available as appropriate.
+You can define the required properties for a page. These can vary depending on the nature of the page. For example, some pages might be connected to a live copy while others are not and the live copy information is available as appropriate.
 
 ## Page Properties {#page-properties}
 
@@ -190,15 +190,15 @@ The properties are distributed across several tabs.
     
 ### Blueprint {#blueprint}
 
-This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies, and are part of [Multi Site Management.](/help/sites-cloud/administering/msm/overview.md)
+This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies, and are part of [Multi Site Management](/help/sites-cloud/administering/msm/overview.md).
 
-* **Current Live Copies** - Lists pages that are based on (i.e. are Live Copies of) this blueprint page
+* **Current Live Copies** - Lists pages that are based on (that is, are Live Copies of) this blueprint page
 
 * **Rollout Configs** - Controls the circumstances under which modifications are propagated to the Live Copy
 
 ### Live Copy {#live-copy}
 
-This tab is only visible for pages that are configured as live copies. As with Blueprints, Live Copies are part of [Multi Site Management.](/help/sites-cloud/administering/msm/overview.md).
+This tab is only visible for pages that are configured as live copies. As with Blueprints, Live Copies are part of [Multi Site Management](/help/sites-cloud/administering/msm/overview.md).
 
 * **Synchronize** - Synchronize Live Copy with Blueprint, keeping local modifications
 * **Reset** - Reset Live Copy to state of Blueprint, removing local modifications

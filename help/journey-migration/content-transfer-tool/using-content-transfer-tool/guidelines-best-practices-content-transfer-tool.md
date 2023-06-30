@@ -71,23 +71,23 @@ Follow the section below to understand the important considerations while runnin
 
 * During the extraction phase, the Content Transfer Tool is executed on an active AEM source instance.
 
-* After completing the *Extraction* phase of the content transfer process and before starting the *Ingestion Phase* to ingest content into your AEM as a Cloud Service *Stage* or *Production* instances, you will need to log a support ticket to notify Adobe of your intention to run *Ingestion* so that Adobe can ensure that no interruptions occur during the *Ingestion* process. You will need to log the support ticket 1 week prior to your planned *Ingestion* date. Once, you've submitted the support ticket, the support team will provide guidance on next steps. You can log a support ticket with the following details:
+* After completing the *Extraction* phase of the content transfer process and before starting the *Ingestion Phase* to ingest content into your AEM as a Cloud Service *Stage* or *Production* instances, you will need to log a support ticket to notify Adobe of your intention to run *Ingestion* so that Adobe can ensure that no interruptions occur during the *Ingestion* process. You will need to log the support ticket 1 week prior to your planned *Ingestion* date. After you have submitted the support ticket, the support team provides guidance on next steps. You can log a support ticket with the following details:
 
    * Exact date and estimated time (with your time-zone) when you plan to start the *Ingestion* phase. 
    * Environment type (Stage or Production) that you plan to ingest data into.
    * Program ID.
 
-* The *Ingestion Phase* for the author scales down the whole author deployment. It means that the author AEM is unavailable during the whole ingestion process. Please also ensure that no Cloud Manager pipelines are executed while you are running the *Ingestion* phase. 
+* The *Ingestion Phase* for the author scales down the whole author deployment. It means that the author AEM is unavailable during the whole ingestion process. Also ensure that no Cloud Manager pipelines are executed while you are running the *Ingestion* phase. 
 
 * When using `Amazon S3` or `Azure` as the data store on the source AEM system, the data store should be configured so that the blobs stored cannot be deleted (garbage collected). This ensures integrity of index data and failure to configure this way may result in failed extractions due to lack of integrity of this index data.
 
-* If you are using custom indexes, you must ensure to configure  the custom indexes with `tika` node before running Content Transfer Tool. Refer to [Preparing the New Index Definition](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) for more details.
+* If you are using custom indexes, you must ensure to configure  the custom indexes with `tika` node before running Content Transfer Tool. See [Preparing the New Index Definition](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) for more details.
 
-* If you intend to do top ups, it is essential that the content structure of existing content is not changed from the time the initial extraction is taken to when the top-up extraction is run. Top-ups cannot be run on content whose structure has been changed since the initial extraction. Please ensure you restrict this during the migration process.
+* If you intend to do top ups, it is essential that the content structure of existing content is not changed from the time the initial extraction is taken to when the top-up extraction is run. Top-ups cannot be run on content whose structure has been changed since the initial extraction. Ensure that you restrict this during the migration process.
 
 * If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
 
-* A migration set will expire after a prolonged period of inactivity, after which its data will no longer be available. Please review [Migration Set Expiry](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) for more details.
+* A migration set will expire after a prolonged period of inactivity, after which its data will no longer be available. Review [Migration Set Expiry](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) for more details.
 
 ## What's Next {#whats-next}
 

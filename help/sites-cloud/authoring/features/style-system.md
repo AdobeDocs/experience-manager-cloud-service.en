@@ -20,7 +20,7 @@ The Style System provides a unified solution to both the template author's and c
 * Template authors can define style classes in the content policy of components.
 * Content authors can then select these classes from a drop-down list when editing the component on a page so they can apply the corresponding styles.
 
-The style class is then inserted on the decoration wrapper element of the component so that the component developer doesn't need to be concerned with handling the styles beyond providing their CSS rules.
+The style class is then inserted on the decoration wrapper element of the component so that the component developer does not need to be concerned with handling the styles beyond providing their CSS rules.
 
 ## Overview {#overview}
 
@@ -40,7 +40,7 @@ Using the Style System generally takes the following form.
 
 1. The AEM page author can then choose the designed styles in the page editor via the style menu of the component's toolbar.
 
-Note that only the last three steps are actually carried out in AEM. This means all development of the necessary CSS and Javascript can be done without AEM.
+Note that only the last three steps are actually carried out in AEM. This means all development of the necessary CSS and JavaScript can be done without AEM.
 
 Actually implementing the styles only requires deployment on AEM and selection within the components of the desired templates.
 
@@ -98,7 +98,7 @@ If you wish to use the Style System for your own components do the following:
 
 >[!CAUTION]
 >
->The CSS classes &ndash; and any necessary Javascript &ndash; configured as style properties of a component's policy, must be deployed as [Client Libraries](/help/implementing/developing/introduction/clientlibs.md) to work.
+>The CSS classes &ndash; and any necessary JavaScript &ndash; configured as style properties of a component's policy, must be deployed as [Client Libraries](/help/implementing/developing/introduction/clientlibs.md) to work.
 
 ## Setup {#setup}
 

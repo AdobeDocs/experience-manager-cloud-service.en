@@ -12,7 +12,7 @@ Learn how to create, view, and delete your git repositories in Cloud Manager.
 >
 >There is a limit of 300 repositories across all programs in any given company or IMS organization.
 
-## Adding and and Managing Repositories {#add-manage-repos}
+## Adding and Managing Repositories {#add-manage-repos}
 
 Follow these steps view and manage repositories in Cloud Manager.
 
@@ -32,7 +32,7 @@ You can select the repository in the table and click on the ellipsis button and 
 
 ![Repository options](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-Repositories created in Cloud Manager will also be available for you to select when adding or editing pipelines. Please refer to the document [CI-CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) to learn more.
+Repositories created in Cloud Manager will also be available for you to select when adding or editing pipelines. See [CI-CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) to learn more.
 
 There is a single primary repository or a branch for any given pipeline. With [git submodule support](#git-submodule-support), many secondary branches can be included at build time.
 
@@ -70,7 +70,7 @@ $ git submodule update --init
 
 This technique is a potential alternative to the solution described in the document [Working with Multiple Source Git Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) for organizations which are comfortable with using git submodules and do not want to manage an external merging process.
 
-For example, let's say there are three repositories, each containing a single branch named `main`. In the primary repository, i.e. the one configured in the pipelines, the `main` branch has a `pom.xml` file declaring the projects contained in the other two repositories.
+For example, let's say there are three repositories, each containing a single branch named `main`. In the primary repository, that is, the one configured in the pipelines, the `main` branch has a `pom.xml` file declaring the projects contained in the other two repositories.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -115,7 +115,7 @@ More information on git submodules can be found in the [Git Reference Manual.](h
 
 ### Limitations and Recommendations {#limitations-recommendations}
 
-When using git submodules, please be aware of the following limitations.
+When using git submodules, be aware of the following limitations.
 
 * The git URL must be exactly in the syntax described in the previous section.
 * Only submodules at the root of the branch are supported.

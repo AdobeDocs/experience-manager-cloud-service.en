@@ -24,9 +24,9 @@ This article builds on those fundamentals so you understand how to access your e
   * Dive into the details of the AEM GraphQL API.
   * Look at some sample queries to see how things work in practice.
 
-## So You'd Like to Access Your Content? {#so-youd-like-to-access-your-content}
+## So You Would Like to Access Your Content? {#so-youd-like-to-access-your-content}
 
-So...you've got all this content, neatly structured (in Content Fragments), and just waiting to feed your new app. Question is - how to get it there?
+So...you have got all this content, neatly structured (in Content Fragments), and just waiting to feed your new app. Question is - how to get it there?
 
 What you need is a way to target specific content, select what you need and return it to your app for further processing.
 

@@ -89,7 +89,7 @@ The Links tile lets you associate external links with your project.
 
 ![Links](/help/sites-cloud/authoring/assets/project-links.png)
 
-You can name the link with an easy-to-recognize name as well as change the thumbnail.
+You can name the link with an easy-to-recognize name and change the thumbnail.
 
 ![Add link](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
@@ -99,7 +99,7 @@ The Project Information tile provides general information on the project includi
 
 ![Project info](/help/sites-cloud/authoring/assets/project-info.png)
 
-Team members can be assigned and deleted from this tile (or have their roles changed) as well as the Team tile.
+Team members can be assigned and deleted from this tile (or have their roles changed) and the Team tile.
 
 ![Add team members to project](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -131,11 +131,11 @@ You can assign your project to follow certain workflows. If any workflows are ru
 
 You can assign your project to follow certain workflows. Depending on which project you choose you have different workflows available.
 
-These are described in [Working with Project Workflows.](/help/sites-cloud/authoring/projects/workflows.md)
+These are described in [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md).
 
 ### Launches {#launches}
 
-The Launches tile shows any launches that have been requested with a [Request Launch workflow.](/help/sites-cloud/authoring/projects/workflows.md)
+The Launches tile shows any launches that have been requested with a [Request Launch workflow](/help/sites-cloud/authoring/projects/workflows.md).
 
 ![Launches](/help/sites-cloud/authoring/assets/project-launches.png)
 

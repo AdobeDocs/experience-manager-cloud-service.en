@@ -64,7 +64,7 @@ To enable the corresponding endpoint:
    >
    >The following warning is shown in the dialog:
    >
-   >* *GraphQL endpoints may introduce data security and performance issues if not managed carefully. Please ensure to set appropriate permissions after creating an endpoint.*
+   >* *GraphQL endpoints may introduce data security and performance issues if not managed carefully. Ensure that appropriate permissions are set after creating an endpoint.*
    
 1. Confirm with **Create**.
 1. The **Next steps** dialog will provide a direct link to the Security console so that you can ensure that newly created endpoint has suitable permissions.

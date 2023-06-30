@@ -158,11 +158,11 @@ The following table specifies XCI options.
 
 * You can use a specific render type (PDF, PRINT) only once in the print options list. For example, you cannot have two PRINT options each specifying a PCL render type.
 
-* For a batch configuration, only one instance of combination of values of OutputType(PDF, PRINT) and RenderType(PostScript, PCL, IPL, ZPL, etc.) is allowed.
+* For a batch configuration, only one instance of combination of values of OutputType(PDF, PRINT) and RenderType(PostScript, PCL, IPL, ZPL, and so on) is allowed.
 
 * For asynchronous APIs (Batch processing), the defaut record level is set to 2. You can use a custom XCI to change record level to 1.
 
-* When the default XCI is configured, it includes path till original rendition. For example `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
+* When the default XCI is configured, it includes path till original rendition. For example, `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
 
 
 

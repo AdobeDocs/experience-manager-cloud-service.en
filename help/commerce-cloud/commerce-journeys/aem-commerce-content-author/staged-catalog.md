@@ -19,7 +19,7 @@ This document helps you understand how to manage product catalog experience base
 
     >[!NOTE]
     >
-    >This feature is only available with Adobe Commerce or Cloud Edition and 3rd party connectors that support token-based authentication. See [Getting Started](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) for additional information.
+    >This feature is only available with Adobe Commerce or Cloud Edition and third-party connectors that support token-based authentication. See [Getting Started](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) for additional information.
 
 First, let's see how authors can access staged product data with CIF.
 

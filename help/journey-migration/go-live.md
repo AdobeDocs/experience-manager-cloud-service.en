@@ -22,11 +22,11 @@ In the previous phases of the journey:
 
 ## Objective {#objective}
 
-This document will help you understand how to perform the migration to AEM as a Cloud Service once you are familiar with the previous steps of the journey. You will learn how to perform the initial production migration as well as the best practices to follow when migrating to AEM as a Cloud Service.
+This document helps you understand how to perform the migration to AEM as a Cloud Service once you are familiar with the previous steps of the journey. You learn how to perform the initial production migration and the best practices to follow when migrating to AEM as a Cloud Service.
 
 ## Initial Production Migration {#initial-migration}
 
-Before you can perform the production migration, please follow the fitment and proof of migration steps outlined in the [Content migration strategy and timeline](/help/journey-migration/implementation.md##strategy-timeline) section of the [Implementation phase](/help/journey-migration/implementation.md).
+Before you can perform the production migration, follow the fitment and proof of migration steps outlined in the [Content migration strategy and timeline](/help/journey-migration/implementation.md##strategy-timeline) section of the [Implementation phase](/help/journey-migration/implementation.md).
 
 * Initiate the migration from production based on the experience you gained during the AEM as a Cloud Service stage migration performed on clones:
   * Author-Author
@@ -89,7 +89,7 @@ Remember, the load on the AEM source is greater during the extraction phase. You
 
 ## Known Limitations {#known-limitations}
 
-Please take into account that the entire ingestion fails if any of the following limitations are found as part of the extracted migration set:
+Take into account that the entire ingestion fails if any of the following limitations are found as part of the extracted migration set:
 
 * A JCR Node that has a name longer than 150 characters
 * A JCR Node that is larger than 16 MB
@@ -107,14 +107,14 @@ Both of the above items are identified and reported in the [Best Practice Analyz
 
 ## Go-Live Checklist {#Go-Live-Checklist}
 
-Please review this list of activities to ensure that you perform a smooth and successful migration.
+Review this list of activities to ensure that you perform a smooth and successful migration.
 
 * Run an end-to-end production pipeline with functional and UI testing to ensure an **always current** AEM product experience. See the following resources.
   * [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)
   * [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
   * [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
 * Migrate content to production and make sure that a relevant subset is available on staging for testing.
-  * Please note that DevOps best practices for AEM imply that code moves up from development to the production environment while content moves down from production environments.
+  * DevOps best practices for AEM imply that code moves up from development to the production environment while content moves down from production environments.
 * Schedule a code and content freeze period.
   * Also see the section [Code and Content Freeze Timelines for the Migration](#code-content-freeze)
 * Perform the final content top-up.

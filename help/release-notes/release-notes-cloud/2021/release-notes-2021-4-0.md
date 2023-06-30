@@ -122,7 +122,7 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 ### What is New {#what-is-new-commerce}
 
-* Support for category UID - This unlocks 3rd party commerce integrations for systems that use Strings for category ids
+* Support for category UID - This unlocks third-party commerce integrations for systems that use Strings for category ids
 
 * AEM extension for PWA Studio incl. example integration
 

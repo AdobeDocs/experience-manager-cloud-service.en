@@ -82,4 +82,4 @@ Few limitations to basic playback monitoring are listed below:
 
 ## What's Next {#whats-next}
 
-Now that you have installed and configured the player to Cloud mode, continue your Screens as a Cloud Service journey. Review the document [Registering Players in Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) from Screens Services Provider.
+Now that you have installed and configured the player to Cloud mode, continue your Screens as a Cloud Service journey. See [Registering Players in Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) from Screens Services Provider.

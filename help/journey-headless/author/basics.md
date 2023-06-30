@@ -115,7 +115,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ## Authoring Content Fragments {#authoring-content-fragments}
 
-So, that was a very quick introduction to the AEM User Interface (UI), but hopefully you've had a chance to try it out. Now we get down to your real interest - Content Fragments for Headless.
+So, that was a very quick introduction to the AEM User Interface (UI), but hopefully you have had a chance to try it out. Now we get down to your real interest - Content Fragments for Headless.
 
 We'll have to go through things from start to finish, but your instance might already have folders and/or fragments created, and these might be in different locations. The principles are the same.
 
@@ -135,7 +135,7 @@ A dialog will open where you can enter the details, then confirm with **Create**
 
 #### Using Paths and Tags to limit Content Fragment Models available in the Folder {#tags-paths-for-models-in-folder}
 
-This section is slightly more advanced. You do not really need it if you are just starting out and trying things, but it is *very* useful when you have many fragments. So it is good to know about - even if you don't use it quite yet.
+This section is slightly more advanced. You do not really need it if you are just starting out and trying things, but it is *very* useful when you have many fragments. So it is good to know about - even if you do not use it quite yet.
 
 Your Content Architect will have created all the Content Fragment Models required for your current project, and maybe some other projects too. To help keep things simple for yourself, and other authors, you can limit the list of models available for a specific folder.
 
@@ -197,7 +197,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 You can open a fragment immediately after creating it, or by selecting it from the Content Fragments console (also from the Assets console).
 
-When the editor first opens you'll see:
+When the editor first opens you see:
 
 * A list of icons at the left side - this gives you access to various areas of functionality. The editor opens in the **Variations** tab, this is where most of the editing happens. You might also be interested in the **Annotations** and **Metadata** tabs.
 
@@ -207,7 +207,7 @@ When the editor first opens you'll see:
 
 As examples:
 
-* A fragment that only requires multiple pieces of information, some with a specific type. For headless content, references are key, you'll learn about these later in your journey.
+* A fragment that only requires multiple pieces of information, some with a specific type. For headless content, references are key (you will learn about these later in your journey).
   
   ![Content Fragment Editor - My Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -227,9 +227,9 @@ Confirm your updates with either **Save** or **Save & close**.
 >
 >For more details you can read Variations - Authoring Content Fragments.
 
-#### What you (probably) don't need to worry about {#what-you-probably-do-not-need-to-worry-about}
+#### What you (probably) do not need to worry about {#what-you-probably-do-not-need-to-worry-about}
 
-OK, this might seem a slightly strange section, but once you open the Content Fragment Editor and start exploring you'll see various options that (probably) do not apply for your headless journey as a Content Author. So this is just a quick heads-up on what you should be able ignore in the headless context:
+OK, this might seem a slightly strange section, but as soon as you open the Content Fragment Editor and start exploring you can see various options that (probably) do not apply for your headless journey as a Content Author. So this is just a quick heads-up on what you should be able ignore in the headless context:
 
 * **Content Fragment Models**
 
@@ -252,7 +252,7 @@ OK, this might seem a slightly strange section, but once you open the Content Fr
 
 * **Update page references**
 
-  This action is available from the **...** (ellipses) drop down. It is not interesting for headless authors as it relates to page authoring.
+  This action is available from the **...** (ellipses) drop-down. It is not interesting for headless authors as it relates to page authoring.
 
 ### Publishing {#publishing}
 

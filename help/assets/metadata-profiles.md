@@ -34,7 +34,7 @@ By using consistent and appropriate file and folder naming strategies, and good 
 
       >[!NOTE]
       >
-      >Adding a default value to a new metadata property (which doesn't exist at `/jcr:content/metadata` node) does not display the property and its value on the asset's Properties page by default. To view the new property on the [!UICONTROL Properties] page, modify the corresponding schema form.
+      >Adding a default value to a new metadata property (which does not exist at `/jcr:content/metadata` node) does not display the property and its value on the asset's Properties page by default. To view the new property on the [!UICONTROL Properties] page, modify the corresponding schema form.
 
 1. (Optional) Add more components to the Edit Form from the **[!UICONTROL Build Form]** tab, and configure their properties in the **[!UICONTROL Settings]** tab. The following properties are available from the **[!UICONTROL Build Form]** tab:
 

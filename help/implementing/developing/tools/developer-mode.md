@@ -70,7 +70,7 @@ Each component entry may have the following options:
 
 * **Edit Script:** A link that opens the component script in CRXDE Lite.
 
-* **View Component Details:** Opens the details of the component within the [Components Console.](/help/sites-cloud/authoring/features/components-console.md)
+* **View Component Details:** Opens the details of the component within the [Components Console](/help/sites-cloud/authoring/features/components-console.md).
 
 Expanding a component entry by tapping or clicking the chevron can also show:
 

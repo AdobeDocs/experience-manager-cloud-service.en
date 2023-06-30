@@ -63,7 +63,7 @@ If you have reached the limit, review your certificates and consider:
 
 ## Learn More {#learn-more}
 
-A user with the necessary permissions can use Cloud Manager to manage SSL certificates for a program. Please refer to the following documents for more details on using these features.
+A user with the necessary permissions can use Cloud Manager to manage SSL certificates for a program. See the following documents for more details on using these features.
 
 * [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
 * [Viewing, Updating or Replacing an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
