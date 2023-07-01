@@ -107,15 +107,11 @@ Assets view now enables you to [add multi-value text and drop-down list property
 
 ### New features available in [!DNL Forms] {#new-features-available-in-channel}
 
-* [Adaptive Forms within AEM Page Editor](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): You can now use AEM Page Editor to quickly create and add multiple forms to your sites pages. This capability allows content authors to create seamless data capture experiences within Sites pages using the power of adaptive forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. You can: 
-
-    * Create an Adaptive Form by dragging and dropping form components to Adaptive Forms Container Component in AEM Sites editor or Experience Fragments.  
-    * Use the Adaptive Forms Wizard within AEM Sites editor so you can create forms independent of any Sites page, providing you the freedom to reuse such forms across multiple pages.
-    * Add multiple forms to a Sites page, streamlining the user experience and providing greater flexibility.
+* [Adaptive Forms within AEM Page Editor and Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): You can now use AEM Page Editor and Experience Fragment to quickly create and add multiple forms to your AEM Sites pages. This capability allows content authors to create seamless data capture experiences within Sites pages using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. 
    
         >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [Adobe Acrobat Sign Solutions for Government](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms now integrate with Adobe Acrobat Sign Solutions for Government. This integration provides an advanced level of compliance and security for e-Signatures with Adaptive Form submissions for government associated accounts (Government departments and agencies).
+* [Use Adobe Acrobat Sign Solutions for Government (HIPPA Complaint) with AEM Forms](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms now integrate with Adobe Acrobat Sign Solutions for Government. This integration provides an advanced level of compliance and security for e-Signatures with Adaptive Form submissions for government associated accounts (Government departments and agencies).
 
     Integration with Adobe Acrobat Sign Solutions for Government enables Adobe's partners and government customers to use electronic signatures in Adaptive Forms for some of the most mission-critical and sensitive lines of business. This additional layer of security ensures that all e-signatures are fully compliant with FedRAMP Moderate compliance, providing Adobe's government customers with peace of mind.
 
@@ -123,15 +119,15 @@ Assets view now enables you to [add multi-value text and drop-down list property
 
     This functionality helps improve your overall error-handling capability by introducing standards-based error responses that are backward compatible with OOTB error handlers, with greater flexibility and control.
 
-* [Enhanced authentication methods for Form Data Model](/help/forms/configure-data-sources.md): Experience heightened security with the introduction of Client Credentials based authentication for connecting AEM Forms with compatible data sources. This enhancement eliminates the need for impersonation or user login, bolstering the protection of your data. 
+* [Enhanced authentication methods for Form Data Model](/help/forms/configure-data-sources.md): Experience heightened security with the introduction of Client Credentials based authentication to connect AEM Forms (Form Data Models) with compatible data sources. This enhancement eliminates the need for impersonation or user login, bolstering the protection of your data. 
 
-* [Adaptive Forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md): You can now make [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), and [Horizontal Tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) components in a Core Components based Adaptive Form to create repeatable sections. 
+* [Create Adaptive Forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md): You can now make [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), and [Horizontal Tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) components in a Core Components based Adaptive Form to create repeatable sections. 
 
     >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
     These repeatable sections allow you to provide an unlimited number of entries without a fixed field count. It is useful when the required instances of data are unknown in advance. Forms users can easily add or remove sections, making forms adaptable to different data entry scenarios and simplifying collection of multiple occurrences of the same data.
 
-* **[Submit Adaptive Forms to Microsoft&reg; SharePoint and Microsoft&reg; OneDrive](/help/forms/configuring-submit-actions.md)**: Improve business user agility so you can launch new forms quickly and store submitted data in everyday tools they use like Microsoft&reg; SharePoint site or OneDrive folder.
+* **[Submit Adaptive Forms to Microsoft&reg; SharePoint and Microsoft&reg; OneDrive](/help/forms/configuring-submit-actions.md)**: You can now submit Adaptive Forms data to everyday tools like Microsoft&reg; SharePoint Site or  Microsoft&reg; OneDrive.
 
 ### Headless Adaptive Forms early adopter program {#forms-early-adopter}
 
