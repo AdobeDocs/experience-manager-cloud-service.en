@@ -109,7 +109,7 @@ Assets view now enables you to [add multi-value text and drop-down list property
 
 * [Adaptive Forms within AEM Page Editor and Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): You can now use AEM Page Editor and Experience Fragment to quickly create and add multiple forms to your AEM Sites pages. This capability allows content authors to create seamless data capture experiences within Sites pages using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. 
    
-        >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+    >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 * [Use Adobe Acrobat Sign Solutions for Government (HIPPA Complaint) with AEM Forms](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms now integrate with Adobe Acrobat Sign Solutions for Government. This integration provides an advanced level of compliance and security for e-Signatures with Adaptive Form submissions for government associated accounts (Government departments and agencies).
 
