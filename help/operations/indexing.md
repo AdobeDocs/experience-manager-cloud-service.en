@@ -29,37 +29,37 @@ Limitations:
 
 ## How to Use {#how-to-use}
 
-Defining indexes can comprise these three use cases:
+Index definitions can be categorized into three primary use cases, as follows:
 
-1. Adding a customer index definition.
-1. Updating an existing index definition. This update effectively means that a new version of an existing index definition is added.
-1. Removing an existing index that is redundant or obsolete.
+1. **Add** a new custom index definition.
+2. **Update** an existing index definition by adding a new version. 
+3. **Remove** an index definition that is no longer necessary.
 
-For both points 1 and 2 above, you must create an index definition as part of your custom code base in the respective Cloud Manager release schedule. For more information, see [Deploying to AEM as a Cloud Service documentation](/help/implementing/deploying/overview.md).
+For both points 1 and 2 above, you need to create a new index definition as part of your custom code base in the respective Cloud Manager release schedule. For more information, see the [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md) documentation.
 
 ## Index Names {#index-names}
 
-An index definition can be either be:
+An index definition can fall into one of the following categories:
 
-1. An out-of-the-box index. One example is `/oak:index/cqPageLucene-2`.
-1. A customization of an out-of-the-box index. Such customizations are defined by the customer. One example is `/oak:index/cqPageLucene-2-custom-1`.
-1. A fully custom index. One example is `/oak:index/acme.product-1-custom-2`. To avoid naming collisions, Adobe requires that fully custom indexes have a prefix, for example, `acme.`
+1. Out-of-the-box (OOTB) index. For instance: `/oak:index/cqPageLucene-2` or `/oak:index/damAssetLucene-8`.
 
-Notice that both customization of an out-of-the-box index, and fully custom indexes, must contain `-custom-`. Only fully custom indexes must start with a prefix.
+2. Customization of an OOTB index. These are indicated by appending `-custom-` followed by a numerical identifier to the original index name. For example: `/oak:index/damAssetLucene-8-custom-1`. 
+
+3. Fully custom index: It is possible to create an entirely new index from scratch. Their name must have a prefix to avoid naming conflicts. For instance: `/oak:index/acme.product-1-custom-2`, where the prefix is `acme.`
 
 ## Preparing the New Index Definition {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->If customizing an out-of-the-box index, for example `damAssetLucene-6`, copy the latest out-of-the-box index definition from a *Cloud Service environment* using the CRX DE Package Manager (`/crx/packmgr/`) . Then rename the configuration, for example to `damAssetLucene-6-custom-1`, and add your customizations on top. This process ensures that required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-6/tika` is required in the customized index of the cloud service. It does not exist on the Cloud SDK.
+>If customizing an out-of-the-box index, for example `damAssetLucene-8`, please copy the latest out-of-the-box index definition from a *Cloud Service environment* using the CRX DE Package Manager (`/crx/packmgr/`) . Rename it to `damAssetLucene-8-custom-1` (or higher), and add your customizations inside the XML file. This ensures that the required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-8/tika` is required in the customized index of the cloud service. It doesn't exist on the Cloud SDK.
 
-Prepare an index definition package that contains the actual index definition, following this naming pattern:
+For customizations of an OOTB index prepare a new package that contains the actual index definition that follows this naming pattern:
 
-`<indexName>[-<productVersion>]-custom-<customVersion>`
+`<indexName>-<productVersion>-custom-<customVersion>`
 
-Which then must go under `ui.apps/src/main/content/jcr_root`. All customized and custom index definitions must be stored under `/oak:index`.
+For a fully customizsed index, prepare a new index definition package that contains the  index definition that follows this naming pattern:
 
-The filter for the package must be set such that existing (out-of-the-box indexes) are retained. In the file `ui.apps/src/main/content/META-INF/vault/filter.xml`, each custom (or customized) index should be listed, for example as `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. If the index version is later changed, the filter must be adjusted.
+`<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 
@@ -67,136 +67,161 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->Any content package containing index definitions should have the following property set in the properties file of the content package, at `/META-INF/vault/properties.xml`:
+>Any content package containing index definitions should have the following properties set in in the properties file of the content package, located at `<package_name>/META-INF/vault/properties.xml`:
 >
->`noIntermediateSaves=true`
+> * `noIntermediateSaves=true`
+>
+> * `allowIndexDefinitions=true`
 
-## Deploying Index Definitions {#deploying-index-definitions}
+## Deploying Custom Index Definitions {#deploying-custom-index-definitions}
 
-Index definitions are marked as custom and versioned:
+To illustrate the deployment of a customized version of the out-of-the-box index `damAssetLucene-8`, we will provide a step-by-step guide. In this example, we will rename it to `damAssetLucene-8-custom-1`. Then the process is as follows:
 
-* The index definition itself (for example `/oak:index/ntBaseLucene-custom-1`)
+1. Create a new folder with the updated index name in the `ui.apps` directory: 
+    * Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-To deploy a custom or customized index, the index definition (`/oak:index/definitionname`) must be delivered by way of `ui.apps` by way of Git and the Cloud Manager deployment process. In the FileVault filter, for example, `ui.apps/src/main/content/META-INF/vault/filter.xml`, list each custom and customized index individually, for example `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. The custom / customized index definition itself is then stored in the file `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, as follows:
+2. Add a configuration file `.content.xml` with the custom configurations inside the newly created folder. Below is an example of a customization:
+    Filename: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:oak="https://jackrabbit.apache.org/oak/ns/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:rep="internal"
+        jcr:mixinTypes="[rep:AccessControllable]"
         jcr:primaryType="oak:QueryIndexDefinition"
         async="[async,nrt]"
         compatVersion="{Long}2"
-        ...
+        evaluatePathRestrictions="{Boolean}true"
+        includedPaths="[/content/dam]"
+        maxFieldLength="{Long}100000"
+        type="lucene">
+        <facets
+            jcr:primaryType="nt:unstructured"
+            secure="statistical"
+            topChildren="100"/>
+        <indexRules jcr:primaryType="nt:unstructured">
+            <dam:Asset jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <cqTags
+                        jcr:primaryType="nt:unstructured"
+                        name="jcr:content/metadata/cq:tags"
+                        nodeScopeIndex="{Boolean}true"
+                        propertyIndex="{Boolean}true"
+                        useInSpellcheck="{Boolean}true"
+                        useInSuggest="{Boolean}true"/>
+                </properties>
+            </dam:Asset>
         </indexRules>
-        <tika jcr:primaryType="nt:unstructured">
+        <tika jcr:primaryType="nt:folder">
             <config.xml jcr:primaryType="nt:file"/>
         </tika>
-</jcr:root>
-```
+    </jcr:root>
+    ```
 
-The above example contains a configuration for Apache Tika. The Tika configuration file would be stored under `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
+3. Add an entry to the FileVault filter in `ui.apps/src/main/content/META-INF/vault/filter.xml`:
 
-### Project Configuration
-
-Depending on which version of the Jackrabbit Filevault Maven Package Plugin is used, some more configuration in the project is required. When using the Jackrabbit Filevault Maven Package Plugin version **1.1.6** or newer, then the file `pom.xml` must contain the following section in plug-in configuration for the `filevault-package-maven-plugin`, in `configuration/validatorsSettings` (just before `jackrabbit-nodetypes`):
-
-```xml
-<jackrabbit-packagetype>
-    <options>
-        <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
-    </options>
-</jackrabbit-packagetype>
-```
-
-Also, in this case, the `vault-validation` version must be upgraded to a newer version:
-
-```xml
-<dependency>
-    <groupId>org.apache.jackrabbit.vault</groupId>
-    <artifactId>vault-validation</artifactId>
-    <version>3.5.6</version>
-</dependency>
-```
-
-Then, in `ui.apps.structure/pom.xml` and `ui.apps/pom.xml`, the configuration of the `filevault-package-maven-plugin` must have `allowIndexDefinitions` and `noIntermediateSaves` enabled. The option `noIntermediateSaves` ensures that the index configurations are added atomically.
-
-```xml
-<groupId>org.apache.jackrabbit</groupId>
-    <artifactId>filevault-package-maven-plugin</artifactId>
-    <configuration>
-        <allowIndexDefinitions>true</allowIndexDefinitions>
-        <properties>
-            <cloudManagerTarget>none</cloudManagerTarget>
-            <noIntermediateSaves>true</noIntermediateSaves>
-        </properties>
-    ...
-```
-
-In `ui.apps.structure/pom.xml`, the `filters` section for this plug-in must contain a filter root as follows:
-
-```xml
-<filter><root>/oak:index</root></filter>
-```
-
-After the new index definition is added, the new application is deployed by way of Cloud Manager. On deployment, two jobs are started that are responsible for adding (and merging if needed) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. The underlying repositories are reindexed with the new index definitions, before the switch takings place.
-
-### NOTE
-
-In case you observe the following error in filevault validation <br>
-`[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
-Then either of the following steps can be followed to fix the issue - <br>
-
-1. Downgrade filevault to version 1.0.4 and add the following to the top-level pom :
-
-```xml
-<allowIndexDefinitions>true</allowIndexDefinitions>
-```
-
-Below is an example of where to place the above configuration in the pom.
-
-```xml
-<plugin>
-    <groupId>org.apache.jackrabbit</groupId>
-    <artifactId>filevault-package-maven-plugin</artifactId>
-    <configuration>
-        <properties>
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <workspaceFilter version="1.0">
         ...
-        </properties>
-        ...
-        <allowIndexDefinitions>true</allowIndexDefinitions>
-        <repositoryStructurePackages>
-        ...
-        </repositoryStructurePackages>
-        <dependencies>
-        ...
-        </dependencies>
-    </configuration>
-</plugin>
-```
+        <filter root="/oak:index/damAssetLucene-8-custom-1"/> 
+    </workspaceFilter>
+    ```
 
-1. Disable nodetype validation. Set the following property in the  jackrabbit-nodetypes section of the configuration of the filevault plugin:
+4. Add a configuration file for Apache Tika in: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`:
 
-```xml
-<isDisabled>true</isDisabled>
-```
+    ```xml
+    <properties>
+        <detectors>
+            <detector class="org.apache.tika.detect.TypeDetector"/>
+        </detectors>
+        <parsers>
+            <parser class="org.apache.tika.parser.DefaultParser">
+            <mime>text/plain</mime>
+            </parser>
+        </parsers>
+        <service-loader initializableProblemHandler="ignore" dynamic="true"/>
+    </properties>
+    ```
 
-Below is an example of where to place the above configuration in the pom.
+5. Ensure that your configuration conforms to the guidelines provided in the [Project Configuration](#project-configuration) section. Make any necessary adaptations accordingly.
 
-```xml
-<plugin>
-    <groupId>org.apache.jackrabbit</groupId>
-    <artifactId>filevault-package-maven-plugin</artifactId>
-    ...
-    <configuration>
-    ...
-        <validatorsSettings>
+## Project Configuration
+
+We strongly recommend to use version >= `1.3.2` of the Jackrabbit `filevault-package-maven-plugin`. The steps to incorporate it into your project are as follows: 
+
+1. Update the version in the top-level `pom.xml`:
+
+    ```xml
+    <plugin>
+        <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>filevault-package-maven-plugin</artifactId>
+            ...
+            <version>1.3.2</version>
         ...
-            <jackrabbit-nodetypes>
-                <isDisabled>true</isDisabled>
-            </jackrabbit-nodetypes>
-        </validatorsSettings>
-    </configuration>
-</plugin>
-```
+    </plugin>
+    ```
+
+2. Add the following to the top-level `pom.xml`:
+
+    ```xml
+    <jackrabbit-packagetype>
+        <options>   
+            <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+        </options>
+    </jackrabbit-packagetype>
+    ```
+
+    Here is a sample of the project's top-level `pom.xml` file with the aforementioned configurations included:
+
+    Filename: `pom.xml`
+
+    ```xml
+    <plugin>
+        <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>filevault-package-maven-plugin</artifactId>
+            ...
+            <version>1.3.2</version>
+            <configuration>
+                ...
+                <validatorsSettings>
+                    <jackrabbit-packagetype>
+                        <options>
+                            <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+                        </options>
+                    </jackrabbit-packagetype>
+                    ...
+                ...
+    </plugin>
+    ```
+
+3. In `ui.apps/pom.xml` and `ui.apps.structure/pom.xml` it is necessary to enable the `allowIndexDefinitions` and `noIntermediateSaves` options in the `filevault-package-maven-plugin`. Enabling `allowIndexDefinitions` allows for custom index definitions, while `noIntermediateSaves` ensures that the configurations are added atomically. 
+
+    Filenames: `ui.apps/pom.xml` and `ui.apps.structure/pom.xml`
+
+    ```xml
+    <plugin>
+        <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>filevault-package-maven-plugin</artifactId>
+            <configuration>
+                <allowIndexDefinitions>true</allowIndexDefinitions>
+                <properties>
+                    <cloudManagerTarget>none</cloudManagerTarget>
+                    <noIntermediateSaves>true</noIntermediateSaves>
+                </properties>
+        ...
+    </plugin>
+    ```
+
+4. Add a filter for `/oak:index` in `ui.apps.structure/pom.xml`:
+
+    ```xml
+    <filters>
+        ...
+        <filter><root>/oak:index</root></filter>
+    </filters>
+    ```
+
+After adding the new index definition, deploy the new application using Cloud Manager. This deployment initiates two jobs, responsible for adding (and merging if necessary) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. Prior to the switch, the underlying repositories undergo reindexing with the updated index definitions.
 
 >[!TIP]
 >
@@ -301,7 +326,7 @@ The new version of the application uses the following (changed) configuration:
 
 ### Undoing a Change {#undoing-a-change}
 
-Sometimes, a change in an index definition must be reverted. The reasons could be that a change was made by mistake, or a change is no longer needed. For example, the index definition `damAssetLucene-8-custom-3` was created by mistake and is already deployed. Because of that you may want to revert to the previous index definition `damAssetLucene-8-custom-2`. To do that, add an index called `damAssetLucene-8-custom-4` that contains the definition of the previous index, `damAssetLucene-8-custom-2`.
+At times, it becomes necessary to undo a modification in an index definition. This could occur due to an inadvertent error or that the modification is no longer required. Take, for instance, the index definition `damAssetLucene-8-custom-3,` which was mistakenly created and has already been deployed. Consequently, you want to revert back to the previous index definition, `damAssetLucene-8-custom-2.` To accomplish this, you need to introduce a new index named `damAssetLucene-8-custom-4` that incorporates the definition from the prior index, `damAssetLucene-8-custom-2.`
 
 ### Removing an Index {#removing-an-index}
 
