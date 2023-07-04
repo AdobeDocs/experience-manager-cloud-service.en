@@ -50,8 +50,9 @@ To understand how to use and customize a theme, take the **Canvas** theme as an 
 
 ## Steps to Customize a theme {#steps-to-customize-a-theme}
 
+![Workflow of theme customization](/help/forms/assets/workflow-of-customization-of-theme.png)
 
-### 1. Clone a theme from Git repository {#download-canvas-theme}
+### 1. Clone the Git repository of a theme {#download-canvas-theme}
 
 Open a command prompt and run the following command to clone a theme (in this case, as we are taking Canvas theme as an example):
 
@@ -90,7 +91,7 @@ These folders are relevant and applicable to the AEM Site's Page. They provide a
 
 ![Canvas Theme Structure](/help/forms/assets/site-based-theme-structure.png)
 
-### 3. Change name in package.json and package_lock.json of a theme {#changename-packagelock-packagelockjson} 
+### 3. Change name in package.json and package_lock.json {#changename-packagelock-packagelockjson} 
 
 Update the name and version of a theme in the `package.json` and `package_lock.json` files.
 
@@ -101,7 +102,7 @@ Update the name and version of a theme in the `package.json` and `package_lock.j
 
 ![Canvas Theme Pic](/help/forms/assets/changename_canvastheme.png)
 
-### 4. Rename the env_template file in a theme folder {#creating-env-file-theme-folder}
+### 4. Rename the env_template file {#creating-env-file-theme-folder}
 
 Rename the `env_template` file to `.env` file in the theme folder and add the following parameters:
 
@@ -118,6 +119,8 @@ AEM_PROXY_PORT=7000
 ![Canvas Theme Structure](/help/forms/assets/env-file-canvas-theme.png)
 
 ### 5. Start a local proxy server {#starting-a-local-proxy-server}
+
+The theme designer previews the changes in the local proxy server and customizes the theme according to the requirements for different AEM components.
 
 1. From the command line, navigate to the root of the theme on your local machine.
 1. Execute `npm install` and npm retrieves dependencies and installs the project.
@@ -173,8 +176,6 @@ To customize a theme, you can start the local proxy server to see the theme cust
 
    ![change AF theme](/help/forms/assets/edit_theme_af.png)
 
-  The theme designer previews the changes in the local proxy server and customizes the theme according to the requirements for different AEM components.
-
 Similary, you can make changes in theme folder at the component level of an Adaptive Form and start a local proxy to see the changes. 
 
 #### Component-based customization specific to Adaptive Forms {#component-based-af}
@@ -210,7 +211,12 @@ To save the changes, create a new theme repository. Login to your [AEM Cloud Man
 
     ```
 
-### 8. Commit the Changes {#committing-the-changes}
+>[!NOTE]
+> 
+> One repository can be used for multiple themes, but the front-end pipeline configuration should be updated accordingly.
+
+
+### 8. Commit the changes {#committing-the-changes}
 
 Now, commit the changes to the theme repository of your AEM Forms Cloud Service. It makes the customized theme available in your Forms Cloud Service environment  for Adaptive Forms authors to use. 
 
