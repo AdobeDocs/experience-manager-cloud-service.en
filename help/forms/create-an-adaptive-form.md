@@ -14,7 +14,7 @@ hidefromtoc: yes
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html)                  |
-| AEM as a Cloud Service     | This article         |
+| AEM as a Cloud Service     | This article   |
 
 Adaptive Forms let you create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provides business user-friendly wizard to quickly create Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. 
 
@@ -22,7 +22,7 @@ Before you start, learn about the type of Forms components available to you:
 
 * [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): These are standardized data capture components. These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrollment experiences. A developer can easily customize and style these components. **Adobe recommends using these modern and extensible components to develop Adaptive Forms**.  
 
-* [Adaptive Forms Foundation Components](creating-adaptive-form.md): These are classic (old) data capture components. You can continue to use these to edit your existing foundation components based Adaptive Form. If you are creating new forms, Adobe recommends using  [Adaptive Forms Core Components to create an Adaptive Forms. 
+* [Adaptive Forms Foundation Components](creating-adaptive-form.md): These are classic (old) data capture components. You can continue to use these to edit your existing foundation components based Adaptive Form. If you are creating new forms, Adobe recommends using  [Adaptive Forms Core Components to create an Adaptive Forms](#create-an-adaptive-form-core-components). 
 
 ![Wizard to create an Adaptive Form](/help/release-notes/assets/wizard.png){width="100%" align="center"}
 
@@ -231,9 +231,9 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 >[!NOTE]
 >
->You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model). -->
+>You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model2). -->
 
-## Edit Form Model properties of an Adaptive Form {#edit-form-model}
+## Edit Form Model properties of an Adaptive Form {#edit-form-model-foundation-components}
 
 You can change the form model for an Adaptive Form (JSON-based or Form Data Model). You cannot change from one form model to another.
 
