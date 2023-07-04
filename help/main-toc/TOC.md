@@ -29,8 +29,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2023 {#2023}
-      + [Release Notes for 2023.1.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
+      + [Release Notes for 2023.4.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
       + [Release Notes for 2023.2.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
+      + [Release Notes for 2023.1.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
     + 2022 {#2022}
       + [Release Notes for 2022.10.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
       + [Release Notes for 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
@@ -74,6 +75,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
       + [Release Notes for 2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
       + [Release Notes for 2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
       + [Release Notes for 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)      
@@ -495,23 +497,22 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [HTTP2 Delivery of Content FAQ](/help/assets/dynamic-media/http2faq.md)
     + [Flash Viewers End-of-Life](/help/assets/dynamic-media/flash-viewers-eol.md)
     + [DHTML Viewers End-of-Life](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-  
-+ Working with Assets view {#assets-view}
-  + [Getting started](/help/assets/get-started-assets-view.md)
-  + [My Workspace](/help/assets/my-workspace-assets-view.md)
-  + [Supported file types and use cases](/help/assets/supported-file-formats-assets-view.md)
-  + [View assets](/help/assets/navigate-assets-view.md)
-  + [Upload and add assets](/help/assets/add-delete-assets-view.md)
-  + [Search and discover assets](/help/assets/search-assets-view.md)
-  + [Asset management tasks](/help/assets/manage-organize-assets-view.md)
-  + [Edit images](/help/assets/edit-images-assets-view.md)
-  + [Manage asset metadata](/help/assets/metadata-assets-view.md)
-  + [Share assets](/help/assets/share-links-for-assets-view.md)
-  + [Manage collections](/help/assets/manage-collections-assets-view.md)
-  + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
-  + [Manage reports](/help/assets/manage-reports-assets-view.md)
-  + [Manage tags](/help/assets/tagging-management-assets-view.md)
-
+  + Working with Assets view {#assets-view}
+    + [Introduction](/help/assets/assets-view-introduction.md)
+    + [Getting started](/help/assets/get-started-assets-view.md)
+    + [My Workspace](/help/assets/my-workspace-assets-view.md)
+    + [Supported file types and use cases](/help/assets/supported-file-formats-assets-view.md)
+    + [View assets](/help/assets/navigate-assets-view.md)
+    + [Upload and add assets](/help/assets/add-delete-assets-view.md)
+    + [Search and discover assets](/help/assets/search-assets-view.md)
+    + [Asset management tasks](/help/assets/manage-organize-assets-view.md)
+    + [Edit images](/help/assets/edit-images-assets-view.md)
+    + [Manage asset metadata](/help/assets/metadata-assets-view.md)
+    + [Share assets](/help/assets/share-links-for-assets-view.md)
+    + [Manage collections](/help/assets/manage-collections-assets-view.md)
+    + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
+    + [Manage reports](/help/assets/manage-reports-assets-view.md)
+    + [Manage tags](/help/assets/tagging-management-assets-view.md)
   + Integration with Adobe Workfront {#integrations}
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
@@ -561,6 +562,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Create an Adaptive Forms - Core Components in an AEM Sites page](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
         + [Use machine translation or human translation to translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
         + [Configuring redirect page or thank you message](/help/forms/configure-redirect-page-or-thank-you-message.md)
+        + [Create forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md)
     + Authoring Adaptive Forms - Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -618,9 +620,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
   + Developer API Reference {#aem-forms-developer-api-reference}
+    + [Adaptive Forms API reference](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
     + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
     + [AEM Forms Cloud Service JavaScript API Reference](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-    + [AEM Forms Cloud Service Java API Reference](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
+    + [AEM Forms Cloud Service Java API Reference](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
   + Troubleshooting {#troubleshooting-aem-forms-cloud-service}
     + [Installation and configuration](/help/forms/troubleshooting-installation-and-configuration.md)
     + [Dispatcher and CDN caching](/help/forms/troubleshooting-caching-performance.md)
