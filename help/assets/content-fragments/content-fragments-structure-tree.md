@@ -9,7 +9,7 @@ Use the Structure Tree feature of the Content Fragment Editor in AEM to better u
 
 In the Content Fragment Editor you can select the Structure Tree icon:
 
-![Content Fragment Structure Tree](assets/cfm-structuretree-01.png)
+![Content Fragment Structure Tree in side panel](assets/cfm-structuretree-01.png)
 
 This will open a representation of the fragment's structure in the left hand pane. Using this you can navigate through, and to, referenced fragments. Selecting a reference opens that fragment for editing.
 
@@ -17,4 +17,4 @@ This will open a representation of the fragment's structure in the left hand pan
 >
 >Using the breadcrumbs in the main panel, you can navigate back to your starting point.
 
-![Content Fragment Structure Tree](assets/cfm-structuretree-02.png)
+![Example of Content Fragment Structure Tree](assets/cfm-structuretree-02.png)
