@@ -7,8 +7,6 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-2023.7.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
-
 ## Release 12549 {#release-12549}
  
 Summarized below are the continuous improvements for maintenance release 12549, which was publicly released on July 4, 2023. This maintenance release is an update from previous maintenance release 12255. Maintenance release 125449 replaces 12441 that had an issue.
