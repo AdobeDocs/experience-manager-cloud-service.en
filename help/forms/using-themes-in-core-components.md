@@ -19,8 +19,11 @@ You can download the themes from the Git repositories, make customizations and s
 
 You can choose to perform one of the following actions with a theme:
 
+* **Use a theme**: 
+ In AEM, themes play a crucial role in styling and customizing Adaptive Forms. A theme is a predefined set of design and layout elements that can be applied to Adaptive Forms, making it easier to maintain consistent visual appearance and branding across the forms.
+
 * **Create/customize a theme**:
-AEM provides some reference themes. These themes serves as a boilerplate for creating other themes by customizing it. Themes can be personilized to make it unique and align with an organization's style.
+AEM provides some reference themes that serve as a boilerplate for creating other themes by customizing them. Themes are personalized to make them unique and align with an organization's style.
 
 * **Upload/deploy a theme**:
 A theme is a Git repository that is uploaded to your AEM cloud service repository using the frontend pipeline for future use.
