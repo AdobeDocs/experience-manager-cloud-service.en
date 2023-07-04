@@ -8,6 +8,7 @@ level: Beginner
 hide: yes
 hidefromtoc: yes
 ---
+
 # Create an Adaptive Form {#creating-an-adaptive-form}
 
 | Version | Article link |
@@ -30,7 +31,7 @@ Before you start, learn about the type of Forms components available to you:
 
 >[!TAB Create Adaptive Forms with Core Components]
 
-## Pre-requisites {pre-requisites-to-create-a-core-components-based-adaptive-form}
+## Pre-requisites {#pre-requisites-to-create-a-core-components-based-adaptive-form}
 
 You require the following to create an Adaptive Form:
 
