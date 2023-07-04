@@ -245,7 +245,7 @@ You can publish your Content Fragments to:
 
   >[!NOTE]
   >
-  >For more details about the Preview environments, see the following:
+  >For more details about the Preview environments, see:
   >
   >* [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   >* [Configuring OSGi Settings for the Preview Tier](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
