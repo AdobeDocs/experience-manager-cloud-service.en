@@ -106,6 +106,10 @@ Following are the Annotations that can be applied on a PDF document:
         </tr>
     </table>
 
+>[!NOTE]
+>
+>The annotations that you add to the PDF document are available in the preview mode. However, the annotations are not displayed when you download or print the PDF document. 
+
 ## Support for Multiple Pages Preview for Documents in Other Formats {#multi-format}
 
 In addition to the PDF documents, you can also preview multiple pages for documents in other format types. The supported document format types are TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, and XLSX. Experience Manager Assets automatically converts these document formats into a PDF format and make them available for preview.
