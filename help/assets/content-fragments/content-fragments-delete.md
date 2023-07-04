@@ -82,5 +82,5 @@ The `add` and `modify` privileges can also be administered in CRXDE Lite, or usi
 
 For example, the definition of the `remove` privileges for a group `content-authors-no-delete`:
 
-![cf-delete-03](assets/cf-delete-03.png)
+![Remove privileges](assets/cf-delete-03.png)
 -->
