@@ -25,11 +25,11 @@ You can choose to perform one of the following actions with a theme:
 * **Create/customize a theme**:
 AEM provides some reference themes that serve as a boilerplate for creating other themes by customizing them. Themes are personalized to make them unique and align with an organization's style.
 
-* **Upload/deploy a theme**:
-A theme is a Git repository that is uploaded to your AEM cloud service repository using the frontend pipeline for future use.
+* **Upload a theme**:
+A theme is a Git repository that is uploaded to your AEM cloud service repository using the front-end pipeline for future use. Uploading a theme enables you to apply a customized design to your web applications and Adaptive Forms.
 
 
-## Using theme in Adaptive Forms {#using-theme-in-adaptive-form}
+## Using a theme in Adaptive Forms {#using-theme-in-adaptive-form}
 
 Steps to apply theme to an Adaptive Form are:
 
