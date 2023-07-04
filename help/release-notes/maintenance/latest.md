@@ -7,18 +7,18 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 12441 {#release-12441}
+## Release 12549 {#release-12549}
  
-Summarized below are the continuous improvements for maintenance release 12441, which was publicly released on June 27, 2023. This maintenance release is an update from previous maintenance release 12255.
+Summarized below are the continuous improvements for maintenance release 12549, which was publicly released on July 4, 2023. This maintenance release is an update from previous maintenance release 12255. Maintenance release 12549 replaces 12441 to rectify two issues.
 
 2023.7.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-12441}
+### Enhancements {#enhancements-12549}
 
 - SITES-8769: Improve StyleImpl calls in ResponsiveGrid
 - FORMS-5054: Added support for all the [statues](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) supported by Adobe Sign. 
 
-### Fixed Issues {#fixed-issues-12441}
+### Fixed Issues {#fixed-issues-12549}
 
 - Various accessibility-related updates
 - SITES-12688: Page Editor: Logical operator OR not properly working in Asset Finder search
@@ -33,7 +33,7 @@ Summarized below are the continuous improvements for maintenance release 12441, 
 - SITES-11757: MSM: Inherit rollout configuration from Parent does not get reverted back for child pages
 - SITES-14073: Sites Admin: CSV Report fails with 500 when selecting no property to export
 - FORMS-7648: Unable to validate maximum number of digits in a  Numeric Box component. The validation script is not working.
-- FORMS-8177: When the Forms service is active, the `com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Failed to retrieve asset dependencies` error encounters. 
+- FORMS-8177: When the Forms service is active, the `com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Failed to retrieve asset dependencies` error encounters.
 - FORMS-8300: When a user attempts to delegate a task after opening it, the delegate response reloads the task, instead of opening user's AEM Inbox UI.
 - FORMS-8500: On Microsoft&reg; Edge browser with the IE Mode option enabled, HTML5 Forms fails to open.
 - FORMS-8541: On rendering an Adaptive Forms, a Null Pointer Exception occurs. 
@@ -47,11 +47,11 @@ Summarized below are the continuous improvements for maintenance release 12441, 
 - FORMS-9072: When you search a Scheme while creating a form fragment, the search result does not return any schema for selection. 
 - FORMS: Fixed multiple accessibility-related bugs to improve accessibility of AEM Forms features.
 
-### Known Issues {#known-issues-12441}
+### Known Issues {#known-issues-12549}
 
 None.
 
-### Embedded Technologies {#embedded-tech-12441}
+### Embedded Technologies {#embedded-tech-12549}
 
 |Technology|Version|Link|
 |---|---|---|
