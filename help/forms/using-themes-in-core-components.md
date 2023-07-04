@@ -3,17 +3,19 @@ title: Creating and using themes
 description: You can use themes to stylize and provide a visual identity to an Adaptive Form using core components. You can share a theme across any number of Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 ---
-# Themes in Adaptive Forms (Core Components) {#themes-for-af-using-core-components}
+# Create and Use themes in Adaptive Forms {#themes-for-af-using-core-components}
 
-You can create and apply themes to stylize an Adaptive Form using core components. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. Theme is managed independently without a reference to an Adaptive Form.
+You can create and apply themes to stylize an Adaptive Form. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. Theme is managed independently without a reference to an Adaptive Form.
 
-When you [create an Adaptive Form](/help/forms/creating-adaptive-form.md) using core components, the Out-of-the-Box themes appear under the **Style** tab. By default, only the **Canvas** theme is available. 
+When you [create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md) using core components, the three reference themes appear under the **Style** tab:
 
->[!NOTE]
->
->An Adaptive Form theme should not be confused with [Adaptive Form templates](/help/forms/template-editor.md). Adaptive Form themes only contain the styling information for an Adaptive Form. Adaptive Form templates define form structure and initial content and contain a theme to allow for the creation of new [Adaptive Form](/help/forms/creating-adaptive-form.md).
+* [Canvas](https://github.com/adobe/aem-forms-theme-canvas) 
+* [wknd](https://github.com/adobe/aem-forms-theme-wknd)
+* [easel](https://github.com/adobe/aem-forms-theme-easel)
 
-## Using Canvas theme in Adaptive Forms using core components {#using-theme-in-adaptive-form}
+You can download the themes from the git repositories, make customizations and save them for future use.
+
+## Using theme in Adaptive Forms using core components {#using-theme-in-adaptive-form}
 
 Steps to apply theme to an Adaptive Form are:
 
@@ -27,74 +29,81 @@ Steps to apply theme to an Adaptive Form are:
 
     >[!NOTE]
     >
-    > When you create an Adaptive Form with core components, you see the Canvas theme under the Style tab. This is the only Out-of-the-Box theme available right now. But you can change the theme to your liking and save it for future use by setting up a frontend pipeline.
+    > When you create an Adaptive Form with core components, you see different themes under the **Style** tab. You can customize the theme and save it for future use by setting up a frontend pipeline.
 
-1. Select the Canvas theme in the **Style** tab.
+1. Select the theme in the **Style** tab.
 1. Click **Create**.
 
 Adaptive Form themes are used as part of an Adaptive Form template to define styling while creating an Adaptive Form.
 
-## Customize the theme {#customizing-theme}
+## Prerequisites {#prerequisites}
 
-To customize a theme, 
+Before you start with the process of customizing a theme, you should:
 
-* [set up a Pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) 
-* Configure a user with the [contributor role](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html).
-* You should have a [basic knowledge of Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git) and Cloud Service Git repositories.
+* [Enable Adaptive Forms Core Components for your environment.](/help/forms/enable-adaptive-forms-core-components.md)
+* Have basic knowledge on how to [set up a pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) 
+* Have basic knowledge on how to [configure a user with the contributor role](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html).
+* Install the latest release of [Apache Maven.](https://maven.apache.org/download.cgi)
+* Install a plain text editor. For example, Microsoft&reg; Visual Studio Code.
 
-To customize a Canvas theme:
+To understand how to use and customize a theme, take the **Canvas** theme as an example.
 
-1. [Clone the Canvas theme](#1-download-canvas-theme-download-canvas-theme)
-1. [Understand the structure of the theme](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
-1. [Change name in package.json and package_lock.json](#changename-packagelock-packagelockjson) 
-1. [Create the `.env` file in the theme folder](#3-create-the-env-file-in-a-theme-folder-creating-env-file-theme-folder)
-1. [Start the local proxy server](#4-start-a-local-proxy-server-starting-a-local-proxy-server)
-1. [Customize the theme](#customize-the-theme-customizing-theme)
-1. [Commit the changes](#6-committing-the-changes-committing-the-changes)
-1. [Deploy the pipeline](#7-deploying-the-customized-theme-deploy-customized-theme)
+## Steps to Customize a theme {#steps-to-customize-a-theme}
 
-### 1. Clone the Canvas theme {#download-canvas-theme}
 
-Open command prompt and run the following command to clone the canvas theme:
+### 1. Clone a theme from Git repository {#download-canvas-theme}
 
-```
-git clone https://github.com/adobe/aem-forms-theme-canvas
+Open a command prompt and run the following command to clone a theme (in this case, as we are taking Canvas theme as an example):
 
-```
+   ```
+      git clone https://github.com/adobe/aem-forms-theme-canvas
 
- >[!NOTE]
- >
- > The Style tab of Form Creation Wizard displays the same theme name as in the package.json file.
+   ```
 
-### 2. Understand the structure of the theme {#structure-of-canvas-theme}
+Once the command is successfully executed, a local copy of the theme is available on your local machine. You can now make customizations in your local repository and deploy the changes using frontend pipeline. 
 
-An Adaptive Form theme is a package containing the CSS, JavaScript, and static resources that define the styling of your form and complies with the structure of an Adaptive Form theme. An Adaptive Form theme has the following structure typical of a front-end project:
 
-* `src/components`: JavaScript & CSS files specific to AEM core components
-* `src/resources`: Static files like icons, logos, and fonts
-* `src/site`: JavaScript & CSS files that apply to the entire AEM Sites page
-* `src/theme.ts`: The main entry point of your JavaScript & CSS theme
-* `src\theme.scss`: JavaScript & CSS files that apply to the entire theme 
+### 2. Understand the structure of a theme {#structure-of-theme}
 
-The `src/components` folder has JavaScript and CSS files specific for all AEM core components such as button, checkbox, container, footer etc. You can style button or checkbox by editing the CSS file specific to the AEM component. 
+An Adaptive Form theme is a package containing the CSS resources that define the styling of your Adaptive Form or Site. An Adaptive Form theme is organized into:
 
-   ![Editing the theme](/help/forms/assets/theme_structure.png)
+* [Component-based folders specific to Adaptive Forms.](#component-based-folder-af)
+* [Files/folders applicable to AEM Site's Page](#folders-applicable-site).
 
-To customize the theme, you can start the local proxy server to see the theme customizations in real time based on actual AEM content.
+#### Component-based folders specific to Adaptive Forms {#component-based-folder-af}
 
-### 3. Change name in package.json and package_lock.json of Canvas theme {#changename-packagelock-packagelockjson} 
+These folders comprise the CSS files for each component related to Adaptive Forms. They help you structure and manage the CSS and other static resources to define the styling and behavior of your Adaptive Forms. 
 
-Update the name and version of Canvas theme in the `package.json` and `package_lock.json` files.
+* `src/components`: The CSS files are designed for specific AEM core components. Each folder dedicated to a specific component includes a `.scss` file that is used to style that particular component in an Adaptive Form.
+
+   ![adaptive form based theme structure](/help/forms/assets/theme_structure.png)
+
+#### Files/folders applicable to AEM Site's Page {#folders-applicable-site}
+
+These folders are relevant and applicable to the AEM Site's Page. They provide a structure to include assets, resources, and other elements that contribute to the overall appearance and functionality of AEM Site's pages. The various folders are:
+
+* `src/resources`: This folder contains static files such as icons, logos, and fonts. These files are used to enhance the visual elements and overall design of your theme. 
+
+* `src/site`: This folder includes CSS files that are applied to the entire AEM Site's page. These files contain code and styles that impact the overall functionality and layout of your AEM Site's page. Any modifications made here is reflected across all pages of your Site.
+
+* `src/theme.scss`: This folder includes the CSS file that impacts the entire theme. It provides a central place to define and manage the styling and behavior of your theme. By editing this file, you can make changes that are applied throughout the theme, affecting the appearance and functionality of your Adaptive Forms and AEM Site's Page.
+
+![Canvas Theme Structure](/help/forms/assets/site-based-theme-structure.png)
+
+### 3. Change name in package.json and package_lock.json of a theme {#changename-packagelock-packagelockjson} 
+
+Update the name and version of a theme in the `package.json` and `package_lock.json` files.
 
 >[!NOTE]
 >
-> Names should not have `@aemforms` tag. It should be simple text as user-provided name. 
+> * Update the name to a simple text as user-provided name.
+> * The **Style** tab of **Form Creation Wizard** displays the same theme name as present in the `package.json` file. 
 
 ![Canvas Theme Pic](/help/forms/assets/changename_canvastheme.png)
 
-### 4. Create the .env file in a theme folder {#creating-env-file-theme-folder}
+### 4. Rename the env_template file in a theme folder {#creating-env-file-theme-folder}
 
-Create a `.env` file in the theme folder and add the following parameters:
+Rename the `env_template` file to `.env` file in the theme folder and add the following parameters:
 
 * **AEM url**
 AEM_URL=https://[author-instance] 
@@ -123,8 +132,7 @@ AEM_PROXY_PORT=7000
 
    >[!NOTE]
    >
-   > * Create a local user to login locally. Provide contributor role for the theme designer.
-   > * If you specify the AEM URL as `http://localhost:[port]/` in the `.env` file of Canvas theme, you are directly redirected to the browser. 
+   > Create a local user to login locally. Provide contributor role for the theme designer.
 
 1. Once signed in, change the URL in the browser to point to the path to the sample content that the AEM administrator provided to you.
 
@@ -132,11 +140,22 @@ AEM_PROXY_PORT=7000
 
    ![Proxied sample content](/help/forms/assets/sample_af.png) 
 
-Navigate to an Adaptive Form to see Canvas theme applied to an Adaptive Form. 
+Navigate to an Adaptive Form to see theme applied to an Adaptive Form without any customizations. 
 
 ### 6. Customize the theme {#customize-theme}
 
-1. In your editor, open the file `<your-theme-sources>/src/site/_variables.scss`.
+Customization of a theme is possible at two levels:
+
+* [Theme customization for AEM Site's page.](#theme-customization-aem-site)
+* [Component-based customization specific to Adaptive Forms.](#component-based-af)
+
+#### Theme customization for entire AEM Site's page {#theme-customization-aem-site}
+
+The `src/site` folder includes CSS files that are applied to the entire AEM Site's page. Modify the **variable.scss** file to customize or update a theme for an entire AEM Site's page. Modify the font of all the components in an AEM Site by updating the value of font color in the `variable.scss` file.
+
+To customize a theme, you can start the local proxy server to see the theme customizations in real time based on the actual AEM content.
+
+1. In your text editor, open the file `<your-theme-sources>/src/site/_variables.scss`.
 
     >[!NOTE]
     >
@@ -145,16 +164,6 @@ Navigate to an Adaptive Form to see Canvas theme applied to an Adaptive Form.
 1. Edit the variable for the `font colour` to `red`.
 
     ![Edit theme](/help/forms/assets/edit_theme.png)
-
-    **Style the different AEM components** 
-
-    You can style the different components of an Adaptive Form by changing its CSS file in editor. There are different CSS folders for each Adaptive Form core component in the Canvas Theme folder.
-
-    ![Core component](/help/forms/assets/theme-component.png)
-
-    To specify styles for a specific component in theme editor, you can edit the CSS in a theme folder. For example, if you want to change the border color of a text box field, open the CSS file in editor and change its border color. 
-
-    ![Edit Textbox CSS](/help/forms/assets/edit_color_textbox.png)
 
 1. When you save the file, the proxy server recognizes the change via the line `[Browsersync] File event [change]`.
 
@@ -166,13 +175,17 @@ Navigate to an Adaptive Form to see Canvas theme applied to an Adaptive Form.
 
   The theme designer previews the changes in the local proxy server and customizes the theme according to the requirements for different AEM components.
 
-Before committing the changes into the AEM Git repository, you need to access your [Git repository information](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git).
+Similary, you can make changes in theme folder at the component level of an Adaptive Form and start a local proxy to see the changes. 
 
-### 7. Commit the Changes {#committing-the-changes}
+#### Component-based customization specific to Adaptive Forms {#component-based-af}
 
-After making changes to the theme and testing it with a local proxy server, commit the changes to the Git repository of your AEM Forms Cloud Service. It makes the customized theme available in your Forms Cloud Service environment  for Adaptive Forms authors to use. 
+The `src/components/[component-folder]` folder has the CSS files specific for all AEM core components, for example button, checkbox, container, footer. You can style button or checkbox by editing the CSS file specific to the AEM component to make it unique and align with your organization's style. Modify the **text.scss** file to customize or update a theme at a component level, by changing the font color of the text to `grey` color.
 
-Before you commit changes to the Git repository of your AEM Forms Cloud Service, you require a clone of the repository on your local machine. To clone the repository:
+   ![Edit Textbox CSS](/help/forms/assets/edit_color_textbox.png)
+
+### 7. Create a new theme repository {#create-a-new-theme-repo}
+
+Login to your [AEM Cloud Manager repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) and add a new repository for your theme.
 
 1. Create a new theme repository by clicking the **[!UICONTROL Repositories]** option. 
 
@@ -182,6 +195,10 @@ Before you commit changes to the Git repository of your AEM Forms Cloud Service,
 
    ![Add Canvas Theme Repo](/help/forms/assets/addcanvasthemerepo.png)
 
+Once the theme repository is added to your AEM Cloud Manager repository, clone it to your local machine.
+
+### 8. Clone the created theme repository to your local machine {#clone-created-theme-repo-to-local-machine}
+
 1. Click **[!UICONTROL Copy Repository URL]** to copy the URL of the created repository.  
 
    ![Canvas theme URL](/help/forms/assets/copyurl_canvastheme.png)
@@ -189,7 +206,19 @@ Before you commit changes to the Git repository of your AEM Forms Cloud Service,
 1. Open the command prompt and clone the above created cloud repository.
  
     ```
-    git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
+      git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
+
+    ```
+
+### 7. Commit the Changes {#committing-the-changes}
+
+After making changes to the theme and testing it with a local proxy server, commit the changes to the Git repository of your AEM Forms Cloud Service. It makes the customized theme available in your Forms Cloud Service environment  for Adaptive Forms authors to use. 
+
+Before you commit changes to the Git repository of your AEM Forms Cloud Service, you require a clone of the repository on your local machine. To clone the repository:
+
+
+
+
 
     ```
    
@@ -213,7 +242,7 @@ Your customizations are now safely stored in the Git repository.
 
 ### 8. Run the frontend pipeline {#deploy-pipeline}
 
-1. Create the front-end pipeline to deploy the customized theme. Learn [how to set up a frontline pipeline to deploy customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline). 
+1. Create the front-end pipeline to deploy the customized theme. Learn [how to set up a pipeline to deploy customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline). 
 1. Run the created frontend pipeline to deploy customized theme folder under the **[!UICONTROL Style]** tab of an Adaptive Form creation wizard. 
 
 >[!NOTE]
