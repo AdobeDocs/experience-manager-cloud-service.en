@@ -1,13 +1,15 @@
 ---
 title: Creating and using themes
 description: You can use themes to stylize and provide a visual identity to an Adaptive Form using core components. You can share a theme across any number of Adaptive Forms.
+seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
+keywords: create new theme, customize theme, upload new theme, use theme in forms, customize theme using frontend pipeline
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 ---
-# Create and Use themes in Adaptive Forms {#themes-for-af-using-core-components}
+# Themes in Adaptive Forms {#themes-for-af-using-core-components}
 
 You can create and apply themes to stylize an Adaptive Form. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. Theme is managed independently without a reference to an Adaptive Form.
 
-When you [create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md) using core components, the three reference themes appear under the **Style** tab:
+When you [create an Adaptive Form using core components](/help/forms/creating-adaptive-form-core-components.md), the three reference themes appear under the **Style** tab:
 
 * [Canvas](https://github.com/adobe/aem-forms-theme-canvas) 
 * [wknd](https://github.com/adobe/aem-forms-theme-wknd)
@@ -24,7 +26,7 @@ AEM provides some reference themes. These themes serves as a boilerplate for cre
 A theme is a Git repository that is uploaded to your AEM cloud service repository using the frontend pipeline for future use.
 
 
-## Using theme in Adaptive Forms using core components {#using-theme-in-adaptive-form}
+## Using theme in Adaptive Forms {#using-theme-in-adaptive-form}
 
 Steps to apply theme to an Adaptive Form are:
 
@@ -45,7 +47,7 @@ Steps to apply theme to an Adaptive Form are:
 
 Adaptive Form themes are used as part of an Adaptive Form template to define styling while creating an Adaptive Form.
 
-## Prerequisites {#prerequisites}
+## Prerequisites to customize a theme {#prerequisites}
 
 Before you start with the process of customizing a theme, you should:
 
@@ -55,7 +57,7 @@ Before you start with the process of customizing a theme, you should:
 * Install the latest release of [Apache Maven.](https://maven.apache.org/download.cgi)
 * Install a plain text editor. For example, Microsoft&reg; Visual Studio Code.
 
-## Steps to Customize a theme {#steps-to-customize-a-theme}
+## Steps to customize a theme {#steps-to-customize-a-theme}
 
 ![Workflow of theme customization](/help/forms/assets/workflow-of-customization-of-theme.png)
 
@@ -154,7 +156,7 @@ The theme designer previews the changes in the local proxy server and customizes
 
 Navigate to an Adaptive Form to see theme applied without any customizations. 
 
-### 6. Customize the theme {#customize-theme}
+### 6. Make changes in a theme {#customize-theme}
 
 Customization of a theme is possible at two levels:
 
@@ -227,7 +229,7 @@ To save the changes, create a new theme repository. Login to your [AEM Cloud Man
 
 ### 8. Commit the changes {#committing-the-changes}
 
-Now, commit the changes to the theme repository of your AEM Forms Cloud Service. It makes the customized theme available in your Forms Cloud Service environment  for Adaptive Forms authors to use. 
+Now, commit the changes to the theme repository of your AEM Forms Cloud Service. It makes the customized theme available in your AEM Forms Cloud Service environment for Adaptive Forms authors to use. 
 
 1. Move the files of theme repository that you are editing into the cloned theme repository with a command similar to
    `cp -r [source-theme-folder]/* [destination-cloud-repo]`
@@ -240,11 +242,11 @@ Now, commit the changes to the theme repository of your AEM Forms Cloud Service.
    git push
    ```
 
-The customizations are pushed to the Git repository.
+The customizations are pushed to the theme repository.
 
    ![Changes committed](/help/forms/assets/cmd_git_push.png)
 
-Your customizations are now safely stored in the Git repository.    
+Your customizations are now safely stored in the repository.    
 
 
 ### 9. Run the pipeline {#deploy-pipeline}
