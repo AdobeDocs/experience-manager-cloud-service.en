@@ -15,7 +15,7 @@ When you [create an Adaptive Form](/help/forms/creating-adaptive-form-core-compo
 
 You can download the themes from the Git repositories, make customizations and save them for future use.
 
-You can choose to perform one of the following actions with an OOTB theme:
+You can choose to perform one of the following actions with a theme:
 
 * **Create/customize a theme**:
 AEM provides some reference themes. These themes serves as a boilerplate for creating other themes by customizing it. Themes can be personilized to make it unique and align with an organization's style.
