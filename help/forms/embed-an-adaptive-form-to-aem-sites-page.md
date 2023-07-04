@@ -12,17 +12,17 @@ Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites,
 | AEM 6.5  |    [Click here]()                  |
 | AEM as a Cloud Service     | This article         |
 
-You can seamlessly integrate a pre-existing Adaptive Form to your AEM Sites page or create new Adaptive Form and embed it to your AEM Sites page. This allows your users to conveniently fill and submit forms without ever leaving the page they are on. This integration provides a convinient to way to reuse Adaptive Forms they have alraedy created.
+You can seamlessly integrate a pre-existing Adaptive Form to your AEM Sites page or create new Adaptive Form and embed it to your AEM Sites page. This allows your users to conveniently fill and submit forms without ever leaving the page they are on. This integration provides a convinient way to reuse Adaptive Forms they have alraedy created.
 
 You can use AEM Page Editor to quickly embed multiple forms to your AEM Sites pages. Using AEM Page Editor allows content authors to create seamless data capture experiences within a Sites page using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also allows you to use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager.
 
-AEM Forms provide **[!UICONTROL Adaptive Form Container]** and **[!UICONTROL Adaptive Forms – Embed]** components. You can use **[!UICONTROL Adaptive Forms – Embed]** component allows you to add an existing Adaptive Form or create a new form using Adaptive Forms Editor, while **[!UICONTROL Adaptive Form Container]** to create a new form in an Experience Fragment or AEM Sites page, while 
+AEM Forms provide **[!UICONTROL Adaptive Form Container]** and **[!UICONTROL Adaptive Forms – Embed(v2)]** components. You can use **[!UICONTROL Adaptive Forms – Embed(v2)]** component allows you to add an existing Adaptive Form or create a new form using Adaptive Forms Editor, while **[!UICONTROL Adaptive Form Container]** to create a new form in an Experience Fragment or AEM Sites page, while 
 
 ![An example of an Adaptive Form in an AEM Sites page](/help/forms/assets/adaptive-form-in-sites-page.png)
 
 ## Why embed an Adaptive Form in AEM Sites page or AEM Experience Fragment? 
 
-Using **[!UICONTROL Adaptive Forms – Embed]** in AEM Page Editor allows you to create seamless data capture experiences within a Sites page using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also allows you to use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager, enhancing the overall form creation and management experience. Let's explore some of these features:
+Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor allows you to create seamless data capture experiences within a Sites page using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also allows you to use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager, enhancing the overall form creation and management experience. Let's explore some of these features:
 
 * **Versioning:** AEM Sites pages offer [robust versioning capabilities](/help/sites-cloud/authoring/features/page-versions.md), allowing you to track and manage different versions of your forms. This enables you to make changes and enhancements to forms while maintaining the ability to roll back to previous versions if needed. Versioning ensures a controlled and organized approach to form development and evolution.
 * **Targeting (Integration with Adobe Target):** With AEM Sites pages targeting capabilities, you can also [personalize the form experience for different audiences](/help/sites-cloud/integrating/integration-adobe-target-ims.md). By leveraging user segments and targeting criteria, you can tailor the form's content, design, or behavior to specific groups of users. This enables you to provide a personalized and relevant form experience, increasing engagement and conversion rates.
@@ -45,22 +45,22 @@ You can take full advantage of this feature by utilizing the following options:
 
 * **[Convert an Adaptive Form to Experience Fragment](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** Convert an Adaptive Form added to an AEM Sites page to an Experience Fragment for reusing the form across multiple AEM Sites pages.
 
-* **Create and add forms based on approved templates to an AEM Sites page:** You can leverage pre-approved templates to quickly create Adaptive Forms that align with your organization's branding guidelines and design standards. The option is available only for Adaptive Forms created with Adaptive Forms Editor or **[!UICONTROL Adaptive Forms - Embed]** component. 
+* **Create and add forms based on approved templates to an AEM Sites page:** You can leverage pre-approved templates to quickly create Adaptive Forms that align with your organization's branding guidelines and design standards. The option is available only for Adaptive Forms created with Adaptive Forms Editor or **[!UICONTROL Adaptive Forms - Embed(v2)]** component. 
 
-* **Add existing forms to an AEM Sites page:** You can easily integrate forms that you have already created into your websites, enabling visitors to interact with them directly. The option is available only for Adaptive Forms created with Adaptive Forms Editor or **[!UICONTROL Adaptive Forms - Embed]** component. 
+* **Add existing forms to an AEM Sites page:** You can easily integrate forms that you have already created into your websites, enabling visitors to interact with them directly. The option is available only for Adaptive Forms created with Adaptive Forms Editor or **[!UICONTROL Adaptive Forms - Embed(v2)]** component. 
 
 * **Add multiple forms to an AEM Sites page or Experience Fragment:**  You can create or add multiple Adaptive Forms to an AEM Sites page to provide multiple choices to users based on their preferences and requirements. These can a combination of brand-new form from scratch and existing forms.
 
 ## Considerations to embed an Adaptive Form in AEM Sites page or AEM Experience Fragment {#consideration}
 
-* When you create or add a form using the **[!UICONTROL Adaptive Forms – Embed]** component, the forms undergo translation and localization using the AEM Forms translation flow. In this case, a single form is maintained and referenced in all the language copies of the Sites pages. **[!UICONTROL Adaptive Forms – Embed]** component does not provide access to various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager.
+* When you create or add a form using the **[!UICONTROL Adaptive Forms – Embed(v2)]** component, the forms undergo translation and localization using the AEM Forms translation flow. In this case, a single form is maintained and referenced in all the language copies of the Sites pages. **[!UICONTROL Adaptive Forms – Embed(v2)]** component does not provide access to various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager.
 
 * When you use the **[!UICONTROL Adaptive Form Container]** to create a form, the forms undergo translation and localization through the AEM Sites translation flow. For each language, a separate copy (language copy) of the sites page and corresponding forms is generated and when a content author modifies a rule in a form on the parent page, the same changes must be made in all language copies of the form. **[!UICONTROL Adaptive Form Container]** also allows you to use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager.
 
 
 ## Requirements to embed an Adaptive Form in AEM Sites page or AEM Experience Fragment {#before-you-start-embedding-an-adaptive-form}
 
-Before you start embedding a new Adaptive Form or a pre-existing Adaptive Form using **[!UICONTROL Adaptive Forms – Embed]**, enable **Adaptive Forms Core Components** and add **Adaptive Forms Client Libraries** to your AEM Sites page:
+Before you start embedding a new Adaptive Form or a pre-existing Adaptive Form using **[!UICONTROL Adaptive Forms – Embed(v2)]**, enable **Adaptive Forms Core Components** and add **Adaptive Forms Client Libraries** to your AEM Sites page:
 
 +++  Enable Adaptive Forms Core Components for your AEM Cloud Service environment
 
@@ -72,6 +72,7 @@ Ensure that the [Adaptive Forms Core Components are enabled for your AEM Forms a
 
 When the **[!UICONTROL When form covers entire width of a page]** option is selected in the **[!UICONTROL Form Containers]** configure dialog box and Adaptive Forms using Core Components are used, it is necessary to include the client libraries on your corresponding Site's page. 
 
+![When form covers entire width of a page option is selected and adaptive form with core components are used](/help/forms/assets/overlaycorecomponent.gif)
 
 
 Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your AEM Sites page using the deployment pipeline. To add the client libraries:
@@ -122,54 +123,64 @@ Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your A
 
 +++ 
 
-+++ Enable **[!UICONTROL Adaptive Forms – Embed]** for your AEM Sites page or Experience Fragment 
++++ Enable **[!UICONTROL Adaptive Forms – Embed(v2)]** for your AEM Sites page or Experience Fragment 
 
-To enable **[!UICONTROL Adaptive Forms – Embed]** component in template's policy, perform the following steps:
+To enable **[!UICONTROL Adaptive Forms – Embed(v2)]** component in template's policy, perform the following steps:
 
   1. Open the AEM Sites page or Experience Fragment for editing. To open the page for editing, select the page, and click **[!UICONTROL Edit]**.
   1. Open the template of your Sites or Experience Fragment page. To open the template, go to the **[!UICONTROL Page Information]** ![Page Information](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Edit Template]**. It opens the corresponding template in template editor.
   1. In the Structure view, click the **[!UICONTROL Policy]** ![Policy](/help/forms/assets/Smock_FeedManagement_18_N.svg) icon in the menu bar. In the **[!UICONTROL Allowed Components]** list and select the **[!UICONTROL Adaptive Forms – Embed(v2)]**  checkbox under the **[AEM Archetype Project Name] - Adaptive Form**.
   1. Click **[!UICONTROL Done]**.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
+  >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
 
 +++
 
-## Create an Adaptive Form {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
+## Embed an Adaptive Form {#embed-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
-You can create a brand-new form from scratch, tailoring it specifically to your requirements and design preferences, directly in an AEM Sites page or in Experience Fragment. For single-use forms, direct authoring to an AEM Sites page is recommended, while Experience Fragments are ideal for forms that need to be reused across multiple pages on your website.
+Using **[!UICONTROL Adaptive Forms - Embed(v2)]**, you can:
 
-* [Create a form in an AEM Sites page](#create-an-adaptive-form-in-sites-editor)
-* [Create a form in an Experience Fragment](#create-an-adaptive-form-in-experience-fragment) 
+* [Create a form using the Adaptive Forms Wizard in AEM Sites Page]
+* [Create a form using the Adaptive Forms Wizard in an Experience Fragment]
+* [Embed an existing Adaptive Form in an AEM Sites page](#embed-an-adaptive-form-in-sites-editor)
+* [Embed an existing form in an Experience Fragment](#embed-an-adaptive-form-in-experience-fragment)
 * [Convert an Adaptive Form in AEM Sites page to an Experience Fragment](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment) 
 
-### Create a form in an AEM Sites page {#create-an-adaptive-form-in-sites-editor}
+### Create a form using the Adaptive Forms Wizard in AEM Sites Page {#create-form-using}
 
-You can use the Adaptive Form Container component in AEM Page Editor to create a custom form. The component allows you to create a form by dragging and dropping the form components. The form components are based on Core Components. You can easily customize these as per the requirement of your organization. 
+Use the **[!UICONTROL Adaptive Forms - Embed(v2)]** component to create an Adaptive Form directly within the AEM Sites editor using the Form Creation wizard. The resulting form is saved as an external entity, allowing for its reuse in other Sites pages as well as standalone forms. You can embed a brand-new form from scratch, tailoring it specifically to your requirements and design preferences, directly in an AEM Sites page or in Experience Fragment. For single-use forms, direct authoring to an AEM Sites page is recommended, while Experience Fragments are ideal for forms that need to be reused across multiple pages on your website. 
+For example, imagine incorporating a new contact us form into an AEM Sites page or AEM Experience Fragment. Any updates or modifications made to the contact form within the AEM Sites page or experience fragment automatically apply to all the pages where it is deployed. This simplifies the management of your website's forms, ensuring a seamless user experience while streamlining the overall process. 
 
->[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-To create an Adaptive Form in a Sites page: 
+
+
+### Embed an existing Adaptive form in an AEM Sites page {#embed-an-adaptive-form-in-sites-editor}
+
+With the **[!UICONTROL Adaptive Forms - Embed(v2)]** component, you can effortlessly integrate a pre-existing Adaptive Form into a page within AEM Sites. This feature significantly enhances the adaptability and reusability of Adaptive Forms, offering customers a convenient way to reuse forms they have already created.For example, imagine incorporating a contact form to an AEM Sites page, eliminating the need to recreate the form multiple times.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
+
+To embed an existing Adaptive Form in a Sites page: 
 
 1. Open the AEM Sites page in edit mode.
-1. Drag-and-drop the **[!UICONTROL Adaptive Forms Container]** component from the Component Browser to the Sites page. It creates a space on the page for the form. You can use the layout mode to change the Size of the container space. 
-1. Drag-and-drop Adaptive Form Core Components to the container space to create the form. 
-1. Add the Submit button. 
+1. Drag-and-drop the **[!UICONTROL Adaptive Forms - Embed(v2)]** component from the Component Browser to the Sites page. 
+1. Tap the **[!UICONTROL Adaptive Forms - Embed]** component in the Sites page and tap ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** dialog opens.
+1. Browse and select the Adaptive Form to embed in the **[!UICONTROL Asset Path]**.
+1. Save the settings. The Adaptive Form is now embedded in the page.
 
-Next, you [set the Submit Action](#configure-submit-action-for-form) and advanced properties. 
+Next, you can [set the Submit Action](#configure-submit-action-for-form) and advanced properties of an embedded Adaptive Form using the Form creation wizzard. 
 
-### Create a form in an Experience Fragment {#create-an-adaptive-form-in-experience-fragment}
+### Embed an Existing Adaptive Form in an Experience Fragment {#embed-an-adaptive-form-in-experience-fragment}
 
-You can extend the reach of your forms by adding them to AEM Experience Fragments, allowing for seamless reuse across multiple pages or sites. For example, you can include a newsletter signup form within an Experience Fragment. This allows you to conveniently reuse the fragment across multiple pages of your website, eliminating the need to recreate the form repeatedly. Any updates or modifications made to the newsletter signup form within the Experience Fragment are automatically propagated to all the pages where it is utilized. This streamlines the process and ensures a seamless user experience while simplifying the management of your website's forms. 
+You can also extend the accessibility of your forms by embedding them to AEM Experience Fragment. To embed an Adaptive Form in an Experience Fragment:
 
-To create an Adaptive Form in an Experience Fragment:
+1. Open an Experience Fragment in edit mode.
+1. Drag-and-drop the **[!UICONTROL Adaptive Forms - Embed(v2)]** component from the Component Browser to the Experience Fragment. 
+1. Tap the **[!UICONTROL Adaptive Forms - Embed]** component in the Experience Fragment and tap ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** dialog opens.
+1. Browse and select the Adaptive Form to embed in the **[!UICONTROL Asset Path]**.
+1. Save the settings. The Adaptive Form is now embedded to the Experience Fragment. 
 
-1. Open an Experience Fragment.
-1. Drag-and-drop the **[!UICONTROL Adaptive Forms Container]** component from the Component Browser to the Experience Fragment. 
-1. Drag-and-drop Adaptive Form Core Components to the container space in the Experience Fragment to create the form. 
-1. Add the Submit button. 
-
-Next, you [set the Submit Action](#configure-submit-action-for-form) and advanced properties. 
+Next, you can [set the Submit Action](#configure-submit-action-for-form) and advanced properties of an embedded Adaptive Form using the Form creation wizzard.
 
 ### Convert a form in AEM Sites page to an Experience Fragment {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
