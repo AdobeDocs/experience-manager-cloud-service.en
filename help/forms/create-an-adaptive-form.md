@@ -18,20 +18,17 @@ hidefromtoc: yes
 
 Adaptive Forms let you create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provides business user-friendly wizard to quickly create Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. 
 
+![Wizard to create an Adaptive Form](/help/release-notes/assets/wizard.png){width="100%" align="center"}
+
 Before you start, learn about the type of Forms components available to you: 
 
-* [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): These are standardized data capture components. These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrollment experiences. A developer can easily customize and style these components. **Adobe recommends using these modern and extensible components to develop Adaptive Forms**.  
+* [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): These are standardized data capture components. These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrollment experiences. A developer can easily customize and style these components. You can visit [https://aemcomponents.dev/](https://aemcomponents.dev/) to view available core components in action **Adobe recommends using these modern and extensible components to develop Adaptive Forms**.  
 
 * [Adaptive Forms Foundation Components](creating-adaptive-form.md): These are classic (old) data capture components. You can continue to use these to edit your existing foundation components based Adaptive Form. If you are creating new forms, Adobe recommends using  [Adaptive Forms Core Components to create an Adaptive Forms](#create-an-adaptive-form-core-components). 
 
-![Wizard to create an Adaptive Form](/help/release-notes/assets/wizard.png){width="100%" align="center"}
-
-
 >[!BEGINTABS]
 
->[!TAB Create Adaptive Forms with Core Components]
-
-## Pre-requisites {#pre-requisites-to-create-a-core-components-based-adaptive-form}
+>[!TAB Create Adaptive Forms with Core Components (Recommended)]
 
 You require the following to create an Adaptive Form:
 
@@ -95,25 +92,20 @@ You require the following to create an Adaptive Form:
     * **[!UICONTROL Name:]** Specifies the name of the form. A node with the specified name is created in the repository. As you start typing a title, value for the name field is automatically generated. You can change the suggested value. The name field can include only alphanumeric characters, hyphens, and underscores. All the invalid inputs are replaced with a hyphen.
     * **[!UICONTROL Path:]** Specifies the location at which the Adaptive Form is to be saved. You can save the Adaptive Form directly at `/content/dam/formsanddocuments` or create a folder such as `/content/dam/formsanddocuments/adaptiveforms` to save an Adaptive Form. Ensure that you create the folder before using it in the path. The **[!UICONTROL Path]** field does not create a folder automatically. 
 
-1. Tap **[!UICONTROL Create]**. An Adaptive Form is created and opens in the Adaptive Forms editor. The editor displays the contents available in the template.  Based on the type of Adaptive Form, the form elements present in the associated <!--XFA form template, XML schema or --> JSON schema or Form Data Model are displayed in the **[!UICONTROL Data Model Objects]** tab of the **[!UICONTROL Content Browser]** in the sidebar. You can also drag-drop these elements to build your Adaptive Form.
+1. Tap **[!UICONTROL Create]**. An Adaptive Form is created and opens in the Adaptive Forms editor. The editor displays the contents available in the template.  Based on the type of Adaptive Form, the form elements present in the associated <!--XFA form template, XML schema or --> JSON schema or Form Data Model are displayed in the **[!UICONTROL Data Model Objects]** tab of the **[!UICONTROL Content Browser]** in the sidebar. 
 
-Now, you can drag-and-drop the Adaptive Forms Core Components to Adaptive Forms container to design and create the form. 
+Now, you can drag-and-drop the [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#components) or schema elements to build your Adaptive Form.  
 
-## Available Adaptive Forms Core Components {#available-core-components}
-
-Adaptive Forms Core Components are standardized data capture components. These components provide customization capabilities, help reduce development time, and lower maintenance costs for your digital enrollment experiences. [Adaptive Forms Core Components documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) has detailed list of available components along with detailed information about capabilities of each component. You can also visit [https://aemcomponents.dev/](https://aemcomponents.dev/) to view available core components in action. 
 
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model-core-components-based-adaptive-forms}
 
-1. Select the Adaptive Form and tap ![Page information](/help/forms/assets/Smock_Properties_18_N.svg){width="100%" align="center"} > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
+1. Select the Adaptive Form and tap ![Page information](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
 
 1. Go to the **[!UICONTROL Form Model]** tab and choose a form model. If the Adaptive Form is without a form model, you have the freedom to choose either a JSON schema or a form data model. On the other hand, if the Adaptive Form is already based on a form model, you have the option to switch to another form model of the same type. For instance, if the form is using a JSON schema, you can easily switch to another JSON schema, and similarly if the form is using a Form Data Model, you can switch to another Form Data Model. 
 
 1. Tap **[!UICONTROL Save]** to save the properties.
 
 >[!TAB Create Adaptive Forms with Foundation Components]
-
-## Pre-requisites {#pre-requisites-to-create-a-foundation-components-based-adaptive-form}
 
 You require the following to create an Adaptive Form:
 
@@ -248,7 +240,7 @@ You can change the form model for an Adaptive Form (JSON-based or Form Data Mode
 You can also modify the form model properties from the Adaptive Form editor or Adaptive Form template editor. 
 
 1. Select the **[!UICONTROL Adaptive Form container (Root)]** component.
-1. Click ![Configure Icon](/help/forms/assets/configure-icon.svg){width="100%" align="center"} icon to open the **[!UICONTROL Properties]** of the Adaptive Form container.
+1. Click ![Configure Icon](/help/forms/assets/configure-icon.svg) icon to open the **[!UICONTROL Properties]** of the Adaptive Form container.
 1. Select the **[!UICONTROL Data Model]** tab and do one the following:
 
     * If the Adaptive Form is without a form model, you can choose a form model and accordingly select <!-- a form template, --> XML or JSON schema, or form data model.
