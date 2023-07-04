@@ -95,12 +95,12 @@ These folders are relevant and applicable to the AEM Site's Page. They provide a
 
 Update the name and version of a theme in the `package.json` and `package_lock.json` files.
 
+![Canvas Theme Pic](/help/forms/assets/changename_canvastheme.png)
+
 >[!NOTE]
 >
 > * Update the name to a simple text as user-provided name.
 > * The **Style** tab of **Form Creation Wizard** displays the same theme name as present in the `package.json` file. 
-
-![Canvas Theme Pic](/help/forms/assets/changename_canvastheme.png)
 
 ### 4. Rename the env_template file {#creating-env-file-theme-folder}
 
