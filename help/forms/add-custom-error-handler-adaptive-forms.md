@@ -3,7 +3,7 @@ title: Add a custom error handlers in Adaptive Forms for AEM Adaptive Forms
 seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms
 description: AEM Forms provides out-of-the-box success and error handlers for a form using the REST endpoint configured to invoke an external service. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 seo-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
-keywords: Add custom error handler, add a default error handler, add a error handler in form, use rule editor's invoke service to add a custom error handler, configure rule editor to add a custom error handler , add custom error handler using rule editor
+keywords: Add a custom error handler, add a default error handler, add a error handler in form, use rule editor's invoke service to add a custom error handler, configure rule editor to add a custom error handler , add custom error handler using rule editor
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
@@ -43,7 +43,7 @@ An Adaptive Form displays the errors at a field level if the server validation e
 The below code illustrates the existing failure response structure: 
 
 ```javascript
-    {
+   {
     errorCausedBy : "SERVER_SIDE_VALIDATION/SERVICE_INVOCATION_FAILURE"
     errors : [
         {
@@ -53,9 +53,9 @@ The below code illustrates the existing failure response structure:
     ]
     originCode : <target error Code>
     originMessage : <unstructured error message returned by service>
-    }
-
+}
 ```
+
 
 Where:
 
@@ -229,8 +229,7 @@ To create a custom error function, perform the following steps:
 1. Add a JavaScript file, for example `function.js`. The file comprises the code for custom error handler.
 Let's add the following code to the JavaScript file to display the response and headers, received from the REST service endpoint, in the browser console.
 
-    ```javascript
-        
+        ```javascript
         /**
         * Custom Error handler
         * @name customErrorHandler Custom Error Handler Function
@@ -243,8 +242,7 @@ Let's add the following code to the JavaScript file to display the response and 
             console.log("headers:"+JSON.stringify(headers));
             console.log("Custom Error Handler processing end...");
         }
-
-    ```
+        ```
 
    <!--  To call the default error handler after the custom error handler, the following line of the sample code is used:
         `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `-->
@@ -290,6 +288,7 @@ To use a custom error handler using the **[!UICONTROL Rule Editor's Invoke Servi
 1. Click **[!UICONTROL Done]**.
 
  ![add custom error handler in a form to handle error responses](/help/forms/assets/custom-error-handler.png)
+
 
 As a result of this rule, the values you enter for **Pet ID** checks validation for **Pet Name** using external service invoked by REST endpoint. If the validation criteria based on the data source fail, the error messages are displayed at the field level.
 
