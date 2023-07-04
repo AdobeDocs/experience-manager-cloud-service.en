@@ -13,7 +13,16 @@ When you [create an Adaptive Form](/help/forms/creating-adaptive-form-core-compo
 * [wknd](https://github.com/adobe/aem-forms-theme-wknd)
 * [easel](https://github.com/adobe/aem-forms-theme-easel)
 
-You can download the themes from the git repositories, make customizations and save them for future use.
+You can download the themes from the Git repositories, make customizations and save them for future use.
+
+You can choose to perform one of the following actions with an OOTB theme:
+
+* **Create/customize a theme**:
+AEM provides some reference themes. These themes serves as a boilerplate for creating other themes by customizing it. Themes can be personilized to make it unique and align with an organization's style.
+
+* **Upload/deploy a theme**:
+A theme is a Git repository that is uploaded to your AEM cloud service repository using the frontend pipeline for future use.
+
 
 ## Using theme in Adaptive Forms using core components {#using-theme-in-adaptive-form}
 
@@ -46,11 +55,11 @@ Before you start with the process of customizing a theme, you should:
 * Install the latest release of [Apache Maven.](https://maven.apache.org/download.cgi)
 * Install a plain text editor. For example, Microsoft&reg; Visual Studio Code.
 
-To understand how to use and customize a theme, take the **Canvas** theme as an example.
-
 ## Steps to Customize a theme {#steps-to-customize-a-theme}
 
 ![Workflow of theme customization](/help/forms/assets/workflow-of-customization-of-theme.png)
+
+To understand how to use and customize a theme, take the **Canvas** theme as an example.
 
 ### 1. Clone the Git repository of a theme {#download-canvas-theme}
 
@@ -99,7 +108,7 @@ Update the name and version of a theme in the `package.json` and `package_lock.j
 
 >[!NOTE]
 >
-> * Update the name to a simple text as user-provided name.
+> * Update the name to a simple text as a user-provided name.
 > * The **Style** tab of **Form Creation Wizard** displays the same theme name as present in the `package.json` file. 
 
 ### 4. Rename the env_template file {#creating-env-file-theme-folder}
@@ -191,7 +200,7 @@ To save the changes, create a new theme repository. Login to your [AEM Cloud Man
 1. Create a new theme repository by clicking the **[!UICONTROL Repositories]** option. 
 
    ![create new theme repo](/help/forms/assets/createrepo_canvastheme.png)
-
+   
 1. Click **[!UICONTROL Add Repository]** and specify the **Repository Name** in the **Add Repository** dialog box. Click **[!UICONTROL Save]**.
 
    ![Add Canvas Theme Repo](/help/forms/assets/addcanvasthemerepo.png)
@@ -203,7 +212,7 @@ To save the changes, create a new theme repository. Login to your [AEM Cloud Man
 1. Click **[!UICONTROL Copy Repository URL]** to copy the URL of the created repository.  
 
    ![Canvas theme URL](/help/forms/assets/copyurl_canvastheme.png)
-
+   
 1. Open the command prompt and clone the above created theme repository.
  
     ```
