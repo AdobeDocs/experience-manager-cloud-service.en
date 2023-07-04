@@ -50,9 +50,9 @@ The [new Assets view](/help/assets/assets-view-introduction.md) is now available
 
 Experience Manager Assets now empowers you to do more from the search results user interface: You can now:
 
-  * [Perform search within the current repository location](/help/assets/search-assets.md) by default instead of searching for the keyword in the entire repository.
+* [Perform search within the current repository location](/help/assets/search-assets.md) by default instead of searching for the keyword in the entire repository.
 
-  * [Navigate to the folder location](/help/assets/search-assets.md#aftersearch) for assets that display in the search results.
+* [Navigate to the folder location](/help/assets/search-assets.md#aftersearch) for assets that display in the search results.
 
 **Thumbnail previews for 3D assets**
 
