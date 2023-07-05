@@ -124,11 +124,37 @@ AEM_ADAPTIVE_FORM=Form_name
 * **AEM proxy port**
 AEM_PROXY_PORT=7000
 
-
 ![Canvas Theme Structure](/help/forms/assets/env-file-canvas-theme.png)
 
+### 5. Start a local proxy server {#start-a-local-proxy-server}
 
-### 5. Make changes in a theme {#customize-theme}
+The theme designers preview the changes in the local proxy server and customize the theme according to the requirements for different AEM components.
+
+1. From the command line, navigate to the root of the theme on your local machine.
+1. Execute `npm install` and npm retrieves dependencies and installs the project.
+1. Execute `npm run live` and the proxy server listens to file change and updates them in browser.
+
+   ![npm run live](/help/forms/assets/theme_proxy.png)
+
+ 
+1. Click **SIGN IN LOCALLY (ADMIN TASKS ONLY)** and sign in with the proxy user credentials provided to you by the AEM administrator.
+
+   ![Sign in locally](/help/forms/assets/local_signin.png)
+
+   >[!NOTE]
+   >
+   > * Create a local user to login locally. Provide contributor role for the theme designer.
+   > * If you specify the AEM URL as http://localhost:[port]/ in the`.env` file of a theme, you are directly redirected to the browser.
+
+1. Once signed in, change the URL in the browser to point to the path to the sample content that the AEM administrator provided to you.
+
+   * For example, if the path provided was `/content/formname.html?wcmmode=disabled`, change the URL to `http://localhost:[port]/content/forms/af/formname.html?wcmmode=disabled`
+
+   ![Proxied sample content](/help/forms/assets/sample_af.png) 
+
+Navigate to an Adaptive Form to see theme applied without any customizations. 
+
+### 6. Make changes in a theme {#customize-theme}
 
 Customization of a theme is possible at two levels:
 
@@ -166,37 +192,6 @@ Similary, you can make changes in theme folder at the component level of an Adap
 The `src/components/[component-folder]` folder has the CSS files specific for all AEM core components, for example button, checkbox, container, footer. You can style button or checkbox by editing the CSS file specific to the AEM component to make it unique and align with your organization's style. Modify the **text.scss** file to customize or update a theme at a component level, by changing the font color of the text to `grey` color.
 
    ![Edit Textbox CSS](/help/forms/assets/edit_color_textbox.png)
-
-   To view the changes in the theme folder, start a local proxy. 
-
-### 6. Test a theme {#test-a-theme}
-
-The theme designers test a theme using a local proxy server. They preview the changes in the local proxy server and customize the theme according to the requirements for different AEM components.
-
-1. From the command line, navigate to the root of the theme on your local machine.
-1. Execute `npm install` and npm retrieves dependencies and installs the project.
-1. Execute `npm run live` and the proxy server listens to file change and updates them in browser.
-
-   ![npm run live](/help/forms/assets/theme_proxy.png)
-
- 
-1. Click **SIGN IN LOCALLY (ADMIN TASKS ONLY)** and sign in with the proxy user credentials provided to you by the AEM administrator.
-
-   ![Sign in locally](/help/forms/assets/local_signin.png)
-
-   >[!NOTE]
-   >
-   > * Create a local user to login locally. Provide contributor role for the theme designer.
-   > * If you specify the AEM URL as http://localhost:[port]/ in the`.env` file of a theme, you are directly redirected to the browser.
-
-1. Once signed in, change the URL in the browser to point to the path to the sample content that the AEM administrator provided to you.
-
-   * For example, if the path provided was `/content/formname.html?wcmmode=disabled`, change the URL to `http://localhost:[port]/content/forms/af/formname.html?wcmmode=disabled`
-
-   ![Proxied sample content](/help/forms/assets/sample_af.png) 
-
-Navigate to an Adaptive Form to see theme applied without any customizations. 
-
 
 ### 7. Create and clone a new repository for theme {#create-a-new-theme-repo}
 
