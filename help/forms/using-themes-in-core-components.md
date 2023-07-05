@@ -9,11 +9,7 @@ exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 
 You can create and apply themes to stylize an Adaptive Form. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. Theme is managed independently without a reference to an Adaptive Form.
 
-<<<<<<< Updated upstream
 When you [create an Adaptive Form using core components](/help/forms/creating-adaptive-form-core-components.md), the three themes appear under the **Style** tab:
-=======
-When you [create an Adaptive Form using core components](/help/forms/creating-adaptive-form-core-components.md), the three OOTB themes appear under the **Style** tab:
->>>>>>> Stashed changes
 
 * [Canvas](https://github.com/adobe/aem-forms-theme-canvas) 
 * [Reference wknd](https://github.com/adobe/aem-forms-theme-wknd)
@@ -103,13 +99,10 @@ These folders are relevant and applicable to the AEM Site's Page. They provide a
 
 ![Canvas Theme Structure](/help/forms/assets/site-based-theme-structure.png)
 
-<<<<<<< Updated upstream
-### 3. Change name in package.json {#changename-packagelock} 
-=======
-### 3. Change name in package.json {#changename-packagelock-packagelockjson} 
->>>>>>> Stashed changes
 
-Update the name and version of a theme in the `package.json` file.
+### 3. Change name in package.json {#changename-packagelock} 
+
+Change the name and version of a theme in the `package.json` file.
 
 ![Canvas Theme Pic](/help/forms/assets/changename_canvastheme.png)
 
@@ -182,18 +175,19 @@ The theme designers test a theme using a local proxy server. They preview the ch
 
 1. From the command line, navigate to the root of the theme on your local machine.
 1. Execute `npm install` and npm retrieves dependencies and installs the project.
-1. Execute `npm run live` and the proxy server listens to file change and updates them in browser).
+1. Execute `npm run live` and the proxy server listens to file change and updates them in browser.
 
    ![npm run live](/help/forms/assets/theme_proxy.png)
 
  
-1. Tap or click **SIGN IN LOCALLY (ADMIN TASKS ONLY)** and sign in with the proxy user credentials provided to you by the AEM administrator.
+1. Click **SIGN IN LOCALLY (ADMIN TASKS ONLY)** and sign in with the proxy user credentials provided to you by the AEM administrator.
 
    ![Sign in locally](/help/forms/assets/local_signin.png)
 
    >[!NOTE]
    >
-   > Create a local user to login locally. Provide contributor role for the theme designer.
+   > * Create a local user to login locally. Provide contributor role for the theme designer.
+   > * If you specify the AEM URL as http://localhost:[port]/ in the`.env` file of a theme, you are directly redirected to the browser.
 
 1. Once signed in, change the URL in the browser to point to the path to the sample content that the AEM administrator provided to you.
 
@@ -230,16 +224,16 @@ To save the changes, create a new repository for theme. Login to your [AEM Cloud
 
     ```
 
->[!NOTE]
-> 
-> One theme repository can be used for multiple themes, but the front-end pipeline configuration should be updated accordingly.
+   >[!NOTE]
+   > 
+   > One theme repository can be used for multiple themes, but the front-end pipeline configuration should be updated accordingly.
 
 
 ### 8. Commit the changes {#committing-the-changes}
 
 Now, commit the changes to the theme repository of your AEM Forms Cloud Service. It makes the customized theme available in your AEM Forms Cloud Service environment for Adaptive Forms authors to use. 
 
-1. Move the files of theme repository that you are editing into the cloned theme repository with a command similar to
+1. Move the files of theme repository that you are editing into the cloned repository of an AEM cloud service with a command similar to
    `cp -r [source-theme-folder]/* [destination-cloud-repo]`
    For example, use this command `cp -r [C:/cloned-git-canvas/*] [C:/cloned-theme-repo]` 
 1. In the directory of the theme repository, commit the theme files that you moved into with the following commands.
@@ -250,11 +244,11 @@ Now, commit the changes to the theme repository of your AEM Forms Cloud Service.
    git push
    ```
 
-The customizations are pushed to the theme repository.
+The customizations are pushed to the AEM cloud service theme repository.
 
    ![Changes committed](/help/forms/assets/cmd_git_push.png)
 
-Your customizations are now safely stored in the repository.    
+Your customizations are now safely stored in the AEM cloud service repository.    
 
 
 ### 9. Deploy a theme {#deploy-theme}
@@ -268,7 +262,7 @@ The theme is deployed using a front end pipleline.
 >
 >In future if you make any modifications in a theme folder, you need to rerun the above pipeline again. Hence, it is necessary to remember the name of the pipeline.
 
-Once the pipeline is successfully executed, the theme is available under the **Style** tab. Now, you [use the deployed theme for styling an Adaptive Form](#using-theme-in-adaptive-form). 
+Once the pipeline is successfully executed, the theme is available under the **Style** tab. Now, you can [use the deployed theme for styling an Adaptive Form](#using-theme-in-adaptive-form). 
 
 ## Best practices {#best-practices}
 
