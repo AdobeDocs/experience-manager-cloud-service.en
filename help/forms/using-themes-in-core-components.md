@@ -260,7 +260,7 @@ The theme is deployed using a front end pipleline.
 >
 >In future if you make any modifications in a theme folder, you need to rerun the above pipeline again. Hence, it is necessary to remember the name of the pipeline.
 
-Once the pipeline is successfully executed, the theme is available under the **Style** tab. Now, you [use the deployed theme for styling an Adaptive Form](#using-a-theme-in-adaptive-forms). 
+Once the pipeline is successfully executed, the theme is available under the **Style** tab. Now, you [use the deployed theme for styling an Adaptive Form](#using-theme-in-adaptive-form). 
 
 ## Best practices {#best-practices}
 
