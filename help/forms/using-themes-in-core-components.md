@@ -9,11 +9,11 @@ exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 
 You can create and apply themes to stylize an Adaptive Form. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. Theme is managed independently without a reference to an Adaptive Form.
 
-When you [create an Adaptive Form using core components](/help/forms/creating-adaptive-form-core-components.md), the three reference themes appear under the **Style** tab:
+When you [create an Adaptive Form using core components](/help/forms/creating-adaptive-form-core-components.md), the three themes appear under the **Style** tab:
 
 * [Canvas](https://github.com/adobe/aem-forms-theme-canvas) 
-* [wknd](https://github.com/adobe/aem-forms-theme-wknd)
-* [easel](https://github.com/adobe/aem-forms-theme-easel)
+* [Reference wknd](https://github.com/adobe/aem-forms-theme-wknd)
+* [Reference easel](https://github.com/adobe/aem-forms-theme-easel)
 
 You can download the themes from the Git repositories, make customizations and save them for future use.
 
@@ -99,9 +99,9 @@ These folders are relevant and applicable to the AEM Site's Page. They provide a
 
 ![Canvas Theme Structure](/help/forms/assets/site-based-theme-structure.png)
 
-### 3. Change name in package.json and package_lock.json {#changename-packagelock-packagelockjson} 
+### 3. Change name in package.json {#changename-packagelock} 
 
-Update the name and version of a theme in the `package.json` and `package_lock.json` files.
+Update the name and version of a theme in the `package.json` file.
 
 ![Canvas Theme Pic](/help/forms/assets/changename_canvastheme.png)
 
@@ -174,7 +174,7 @@ The theme designers test a theme using a local proxy server. They preview the ch
 
 1. From the command line, navigate to the root of the theme on your local machine.
 1. Execute `npm install` and npm retrieves dependencies and installs the project.
-1. Execute `npm run live` and the proxy server starts.
+1. Execute `npm run live` and the proxy server listens to file change and updates them in browser).
 
    ![npm run live](/help/forms/assets/theme_proxy.png)
 
