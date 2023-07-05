@@ -168,7 +168,7 @@ The `src/components/[component-folder]` folder has the CSS files specific for al
 
    To view the changes in the theme folder, start a local proxy. 
 
-### 6. Test a theme {#test a theme}
+### 6. Test a theme {#test-a-theme}
 
 The theme designers test a theme using a local proxy server. They preview the changes in the local proxy server and customize the theme according to the requirements for different AEM components.
 
