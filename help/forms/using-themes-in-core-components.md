@@ -25,9 +25,8 @@ You can choose to perform one of the following actions with a theme:
 * **Create/customize a theme**:
 AEM provides some reference themes that serve as a boilerplate for creating other themes by customizing them. Themes are personalized to make them unique and align with an organization's style.
 
-* **Upload a theme**:
-A theme is a Git repository that is uploaded to your AEM cloud service repository using the front-end pipeline for future use. Uploading a theme enables you to apply a customized design to your web applications and Adaptive Forms.
-
+* **Deploy a theme**:
+A theme is a Git repository which is deployed to your AEM cloud service repository using the front-end pipeline. Uploading a theme enables you to apply a customized design to your web applications and Adaptive Forms.
 
 ## Using a theme in Adaptive Forms {#using-theme-in-adaptive-form}
 
@@ -40,11 +39,6 @@ Steps to apply theme to an Adaptive Form are:
 1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 
 1. Select the core component template in the **Source** tab.
-
-    >[!NOTE]
-    >
-    > When you create an Adaptive Form with core components, you see different themes under the **Style** tab. You can customize the theme and save it for future use by setting up a frontend pipeline.
-
 1. Select the theme in the **Style** tab.
 1. Click **Create**.
 
@@ -132,34 +126,8 @@ AEM_PROXY_PORT=7000
 
 ![Canvas Theme Structure](/help/forms/assets/env-file-canvas-theme.png)
 
-### 5. Start a local proxy server {#starting-a-local-proxy-server}
 
-The theme designer previews the changes in the local proxy server and customizes the theme according to the requirements for different AEM components.
-
-1. From the command line, navigate to the root of the theme on your local machine.
-1. Execute `npm install` and npm retrieves dependencies and installs the project.
-1. Execute `npm run live` and the proxy server starts.
-
-   ![npm run live](/help/forms/assets/theme_proxy.png)
-
- 
-1. Tap or click **SIGN IN LOCALLY (ADMIN TASKS ONLY)** and sign in with the proxy user credentials provided to you by the AEM administrator.
-
-   ![Sign in locally](/help/forms/assets/local_signin.png)
-
-   >[!NOTE]
-   >
-   > Create a local user to login locally. Provide contributor role for the theme designer.
-
-1. Once signed in, change the URL in the browser to point to the path to the sample content that the AEM administrator provided to you.
-
-   * For example, if the path provided was `/content/formname.html?wcmmode=disabled`, change the URL to `http://localhost:[port]/content/forms/af/formname.html?wcmmode=disabled`
-
-   ![Proxied sample content](/help/forms/assets/sample_af.png) 
-
-Navigate to an Adaptive Form to see theme applied without any customizations. 
-
-### 6. Make changes in a theme {#customize-theme}
+### 5. Make changes in a theme {#customize-theme}
 
 Customization of a theme is possible at two levels:
 
@@ -198,11 +166,41 @@ The `src/components/[component-folder]` folder has the CSS files specific for al
 
    ![Edit Textbox CSS](/help/forms/assets/edit_color_textbox.png)
 
-### 7. Create and clone a new theme repository {#create-a-new-theme-repo}
+   To view the changes in the theme folder, start a local proxy. 
 
-To save the changes, create a new theme repository. Login to your [AEM Cloud Manager repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) and add a new repository for your theme.
+### 6. Test a theme {#test a theme}
 
-1. Create a new theme repository by clicking the **[!UICONTROL Repositories]** option. 
+The theme designers test a theme using a local proxy server. They preview the changes in the local proxy server and customize the theme according to the requirements for different AEM components.
+
+1. From the command line, navigate to the root of the theme on your local machine.
+1. Execute `npm install` and npm retrieves dependencies and installs the project.
+1. Execute `npm run live` and the proxy server starts.
+
+   ![npm run live](/help/forms/assets/theme_proxy.png)
+
+ 
+1. Tap or click **SIGN IN LOCALLY (ADMIN TASKS ONLY)** and sign in with the proxy user credentials provided to you by the AEM administrator.
+
+   ![Sign in locally](/help/forms/assets/local_signin.png)
+
+   >[!NOTE]
+   >
+   > Create a local user to login locally. Provide contributor role for the theme designer.
+
+1. Once signed in, change the URL in the browser to point to the path to the sample content that the AEM administrator provided to you.
+
+   * For example, if the path provided was `/content/formname.html?wcmmode=disabled`, change the URL to `http://localhost:[port]/content/forms/af/formname.html?wcmmode=disabled`
+
+   ![Proxied sample content](/help/forms/assets/sample_af.png) 
+
+Navigate to an Adaptive Form to see theme applied without any customizations. 
+
+
+### 7. Create and clone a new repository for theme {#create-a-new-theme-repo}
+
+To save the changes, create a new repository for theme. Login to your [AEM Cloud Manager repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) and add a new repository for your theme.
+
+1. Create a new repository for theme by clicking the **[!UICONTROL Repositories]** option. 
 
    ![create new theme repo](/help/forms/assets/createrepo_canvastheme.png)
    
@@ -210,15 +208,14 @@ To save the changes, create a new theme repository. Login to your [AEM Cloud Man
 
    ![Add Canvas Theme Repo](/help/forms/assets/addcanvasthemerepo.png)
 
-   Once the theme repository is added to your AEM Cloud Manager repository, clone it to your local machine.
+   Once the new repository for theme is added to your AEM Cloud Manager repository, clone it to your local machine.
 
 
-
-1. Click **[!UICONTROL Copy Repository URL]** to copy the URL of the created repository.  
+1. Click **[!UICONTROL Copy Repository URL]** to copy the URL of the created repository for theme.  
 
    ![Canvas theme URL](/help/forms/assets/copyurl_canvastheme.png)
    
-1. Open the command prompt and clone the above created theme repository.
+1. Open the command prompt and clone the above created repository for theme.
  
     ```
       git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
@@ -227,7 +224,7 @@ To save the changes, create a new theme repository. Login to your [AEM Cloud Man
 
 >[!NOTE]
 > 
-> One repository can be used for multiple themes, but the front-end pipeline configuration should be updated accordingly.
+> One theme repository can be used for multiple themes, but the front-end pipeline configuration should be updated accordingly.
 
 
 ### 8. Commit the changes {#committing-the-changes}
@@ -252,7 +249,9 @@ The customizations are pushed to the theme repository.
 Your customizations are now safely stored in the repository.    
 
 
-### 9. Run the pipeline {#deploy-pipeline}
+### 9. Deploy a theme {#deploy-theme}
+
+The theme is deployed using a front end pipleline.
 
 1. Create the front-end pipeline to deploy the customized theme. Learn [how to set up a pipeline to deploy customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline). 
 1. Run the created frontend pipeline to deploy customized theme folder under the **[!UICONTROL Style]** tab of an Adaptive Form creation wizard. 
@@ -261,7 +260,7 @@ Your customizations are now safely stored in the repository.
 >
 >In future if you make any modifications in a theme folder, you need to rerun the above pipeline again. Hence, it is necessary to remember the name of the pipeline.
 
-Once the pipeline is successfully executed, the theme is available under the **Style** tab. 
+Once the pipeline is successfully executed, the theme is available under the **Style** tab. Now, you [use the deployed theme for styling an Adaptive Form](#using-a-theme-in-adaptive-forms). 
 
 ## Best practices {#best-practices}
 
