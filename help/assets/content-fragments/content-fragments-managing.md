@@ -50,7 +50,7 @@ The method of creating a content fragment is:
 
    After selection, use **Next** to proceed.
 
-   ![fragment basis](assets/cfm-managing-01.png)
+   ![Select Content Fragment Model](assets/cfm-managing-01.png)
 
 1. In the **Properties** step specify:
 
@@ -86,7 +86,7 @@ In the **Assets** console a range of actions are available for your content frag
 * From the toolbar; after selection of your fragment all appropriate actions are available.
 * As [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); a subset of actions available for the individual fragment cards.
 
-![actions](assets/cfm-managing-02.png)
+![Actions in toolbar](assets/cfm-managing-02.png)
 
 Select the fragment to reveal the toolbar with applicable actions:
 
@@ -133,7 +133,7 @@ To open your fragment for editing:
 
 1. The fragment editor will open. Make your changes as required:
 
-   ![fragment editor](assets/cfm-managing-03.png)
+   ![Fragment editor](assets/cfm-managing-03.png)
 
 1. After making changes, use **Save**, **Save & close** or **Close** as required.
 
@@ -161,13 +161,13 @@ Navigate through the various modes using the icons in the side panel:
 * [Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [Preview](/help/assets/content-fragments/content-fragments-json-preview.md)
 
-![modes](assets/cfm-managing-04.png)
+![Modes in the Content Fragment editor](assets/cfm-managing-04.png)
 
 ### Toolbar Actions in the Content Fragment Editor {#toolbar-actions-in-the-content-fragment-editor}
 
 Some features in the top toolbar are available from multiple modes:
 
-![modes](assets/cfm-managing-top-toolbar.png)
+![Toolbar actions available in various modes](assets/cfm-managing-top-toolbar.png)
 
 * A message is shown when the fragment is already referenced on a content page. You can **Close** the message.
 
@@ -297,7 +297,7 @@ In addition to the standard options, [Timeline](/help/assets/manage-digital-asse
 
 For example:
 
-![timeline](assets/cfm-managing-05.png)
+![Timeline](assets/cfm-managing-05.png)
 
 ## Comparing Fragment Versions {#comparing-fragment-versions}
 
@@ -325,7 +325,7 @@ They is shown side by side, where:
 >
 >You cannot edit the fragment content when comparing fragments.
 
-![comparing](assets/cfm-managing-06.png)
+![Comparing Variations](assets/cfm-managing-06.png)
 
 ## Reverting to a Version  {#reverting-to-a-version}
 
