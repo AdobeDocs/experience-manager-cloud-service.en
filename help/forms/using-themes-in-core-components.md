@@ -9,7 +9,11 @@ exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 
 You can create and apply themes to stylize an Adaptive Form. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. Theme is managed independently without a reference to an Adaptive Form.
 
+<<<<<<< Updated upstream
 When you [create an Adaptive Form using core components](/help/forms/creating-adaptive-form-core-components.md), the three themes appear under the **Style** tab:
+=======
+When you [create an Adaptive Form using core components](/help/forms/creating-adaptive-form-core-components.md), the three OOTB themes appear under the **Style** tab:
+>>>>>>> Stashed changes
 
 * [Canvas](https://github.com/adobe/aem-forms-theme-canvas) 
 * [Reference wknd](https://github.com/adobe/aem-forms-theme-wknd)
@@ -69,7 +73,7 @@ Open a command prompt and run the following command to clone a theme (in this ca
 
    ```
 
-Once the command is successfully executed, a local copy of the theme is available on your local machine. You can now make customizations in your local repository and deploy the changes using frontend pipeline. 
+Once the command is successfully executed, a local copy of the theme is available on your local machine. You can now make customizations in your local repository and deploy the changes using the [frontend pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) 
 
 
 ### 2. Understand the structure of a theme {#structure-of-theme}
@@ -99,7 +103,11 @@ These folders are relevant and applicable to the AEM Site's Page. They provide a
 
 ![Canvas Theme Structure](/help/forms/assets/site-based-theme-structure.png)
 
+<<<<<<< Updated upstream
 ### 3. Change name in package.json {#changename-packagelock} 
+=======
+### 3. Change name in package.json {#changename-packagelock-packagelockjson} 
+>>>>>>> Stashed changes
 
 Update the name and version of a theme in the `package.json` file.
 
