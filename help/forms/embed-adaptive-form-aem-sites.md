@@ -231,7 +231,7 @@ To convert an Adaptive Form in AEM Sites page to an Experience Fragment:
     * **Fragment title:** Specify title of the Experience Fragment. The title uniquely identifies an Experience Fragment. 
     * **Fragment tags:** Specify tag of the Experience Fragment. The tag uniquely identifies category of an Experience Fragment. 
 
-#### Configure Adaptive Form-Embed(v2) properties
+## Configure Adaptive Form-Embed(v2) properties
 
 You can customize the advanced settings of the **[!UICONTROL Adaptive Form - Embed(v2)]** component. In the **[!UICONTROL Edit Adaptive Forms - Embed]** dialog, you can specify the following:
 
@@ -313,7 +313,7 @@ AEM site also allows you to create an Adaptive Form on the fly using the Adaptiv
 1. You can now embed an Adaptive Form on AEM site pages using the [!UICONTROL AEM Forms Container Component].
 -->
 
-### Publish embedded Adaptive Form {#publishing-embedded-adaptive-form}
+## Publish embedded Adaptive Form {#publishing-embedded-adaptive-form}
 
 Let's consider the following scenarios for publishing an embedded Adaptive Form in AEM sites page:
 
@@ -321,7 +321,7 @@ Let's consider the following scenarios for publishing an embedded Adaptive Form 
 * If you modified only the embedded Adaptive Form  in a published site page, publish the original asset and the changes reflect in the published site page. The published site page includes a reference to the asset and does not require republishing the page.
 * If you modified the sites page and the embedded Adaptive Form , republish the sites page and the embedded asset.
 
-### Modify embedded Adaptive Form  {#modifying-embedded-adaptive-form}
+## Modify embedded Adaptive Form  {#modifying-embedded-adaptive-form}
 
 To modify any configuration or property of the embedded Adaptive Form, do one of the following.
 
@@ -332,7 +332,7 @@ To modify any configuration or property of the embedded Adaptive Form, do one of
 >
 >The changes made in the original Adaptive Form  automatically reflect in the embedded form. However, republish the Adaptive Form, or the Site's page to reflect the changes in the published page.
 
-## Best practices {#considerations-and-best-practices}
+## Best practices {#best-practices}
 
 Do keep the following points in mind when embedding Adaptive Forms in AEM sites pages:
 
