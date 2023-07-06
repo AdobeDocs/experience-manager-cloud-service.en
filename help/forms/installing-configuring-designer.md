@@ -20,6 +20,7 @@ You require the following software and minimum hardware to install and configure
 * Video hardware acceleration (optional)
 * Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC.
 * Administrative privileges to install Designer.
+* Microsoft Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime
 
 ## Install Designer {#install-designer}
 
