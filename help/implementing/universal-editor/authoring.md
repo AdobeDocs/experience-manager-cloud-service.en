@@ -141,7 +141,7 @@ Tap or click the open app preview icon to open the page you are currently editin
 
 >[!TIP]
 >
->Use the hot key `O` to open the app preview.
+>Use the hot key `O` (the letter O) to open the app preview.
 
 #### Publish {#publish}
 
@@ -155,7 +155,7 @@ Tap or click the publish button so you can publish the changes to the content li
 
 ### The Mode Rail {#rail}
 
-The mode rail is always present along the left side of the editor. It allows for easily switching the editor between different editing modes.
+The mode rail is always present along the left side of the editor. It allows easy switching the editor between different editing modes.
 
 ![The mode rail](assets/mode-rail.png)
 
