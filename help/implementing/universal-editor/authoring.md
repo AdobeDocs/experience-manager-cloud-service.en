@@ -78,7 +78,7 @@ The help icon provides quick access to learning and support resources.
 
 #### Notifications {#notifications}
 
-This icon is badged with the number of currently assigned incomplete [notifications](/help/implementing/cloud-manager/notifications.md).
+This icon is badged with the number of currently assigned incomplete [notifications.](/help/implementing/cloud-manager/notifications.md)
 
 ![Notifications](assets/notifications.png)
 
