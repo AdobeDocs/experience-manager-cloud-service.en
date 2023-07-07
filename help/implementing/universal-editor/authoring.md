@@ -259,7 +259,7 @@ Simply tap or click on the content in the blue box to start an in-place editor t
 
 Note that in edit mode, tapping or clicking on content attempts to select it for editing. If you wish to navigate your content by following links, switch to [preview mode.](#preview-mode)
 
-Depending on the mode you are in and the content you select, you may have different in place editing options. Additionally, you may be able to review additional properties for the content using the [component rail.](component-rail)
+Depending on the mode you are in and the content you select, you may have different in place editing options. Additionally, you may be able to review additional properties for the content using the [component rail.](#component-rail)
 
 ## Previewing Content {#previewing-content}
 
