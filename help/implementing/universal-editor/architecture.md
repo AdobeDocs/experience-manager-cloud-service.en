@@ -3,6 +3,7 @@ title: Universal Editor Architecture
 description: Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 ---
+
 # Universal Editor Architecture {#architecture}
 
 Learn about the architecture of the Universal Editor and how data flows between its services and layers.
@@ -22,7 +23,7 @@ This document outlines each of these building blocks and how they exchange data.
 
 >[!TIP]
 >
->To see the Universal Editor and its architecture in action, see [Getting Started with the Universal Editor in AEM](getting-started.md) to learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
+>To see the Universal Editor and its architecture in action, please see the document [Getting Started with the Universal Editor in AEM](getting-started.md) to learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 
 ### Editors {#editors}
 
