@@ -17,7 +17,8 @@ exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html)                  |
 | AEM as a Cloud Service     | This article         |
 
-You can migrate or upgrade your Adaptive Forms, themes, templates, and cloud configurations from <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM 6.5 Forms on OSGi to [!DNL AEM] as a Cloud Service. Before migrating these assets, use the Migration Utility to convert the format used in the earlier versions to the format used in [!DNL AEM] as a Cloud Service. When you run Migration Utility, the following assets are updated:
+You can migrate or upgrade your Adaptive Forms, themes, templates, and cloud configurations from <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM 6.5 Forms on OSGi to [!DNL AEM] as a Cloud Service. Before migrating these assets, use the Migration Utility to convert the format used in the earlier versions to the format used in [!DNL AEM] as a Cloud Service.
+Let's get started with the migration journey to AEM as a Cloud Service | Adobe Experience Manager. When you run Migration Utility, the following assets are updated:
 
 * Custom components for Adaptive Forms
 * Adaptive Forms templates and themes
