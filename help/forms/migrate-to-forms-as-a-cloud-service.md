@@ -5,6 +5,7 @@ SEO description: This article helps users easily migrate from AEM 6.5 Forms to A
 keywords: 6.5 forms to cloud service, 6.5 forms to cs, migrate 6.5 forms to CS, migrate 6.5 forms to cloud service, upgrade 6.5 forms to CS, move 6.5 forms to CS, upgrade AEM 6.5 to CS, AEM Forms 6.5 to Cloud Service, AEM form migration to cloud service, Migration Journey to AEM as a Cloud Service | Adobe Experience Manager
 contentOwner: khsingh
 feature: Adaptive Forms
+feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
 topic: Migration
