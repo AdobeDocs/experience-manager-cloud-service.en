@@ -15,7 +15,6 @@ Summarized below are the continuous improvements for maintenance release 12549, 
 
 ### Enhancements {#enhancements-12549}
 
-- SITES-8769: Improve StyleImpl calls in ResponsiveGrid
 - FORMS-5054: Added support for all the [statues](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) supported by Adobe Sign. 
 
 ### Fixed Issues {#fixed-issues-12549}
