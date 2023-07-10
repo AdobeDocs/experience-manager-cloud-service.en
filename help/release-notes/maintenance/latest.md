@@ -15,7 +15,6 @@ Summarized below are the continuous improvements for maintenance release 12549, 
 
 ### Enhancements {#enhancements-12549}
 
-- SITES-8769: Improve StyleImpl calls in ResponsiveGrid
 - FORMS-5054: Added support for all the [statues](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) supported by Adobe Sign. 
 
 ### Fixed Issues {#fixed-issues-12549}
@@ -49,7 +48,7 @@ Summarized below are the continuous improvements for maintenance release 12549, 
 
 ### Known Issues {#known-issues-12549}
 
-None.
+- SKYOPS-61385: With the latest dispatcher update, certain invalid regular expressions that were previously silently ignored by `libpcre1` are not accepted anymore by the updated `libpcre2` during the deploy. The dispatcher configuration check will be updated soon to also identify these even earlier.
 
 ### Embedded Technologies {#embedded-tech-12549}
 

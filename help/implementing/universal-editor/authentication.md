@@ -3,6 +3,7 @@ title: Universal Editor Authentication
 description: Learn how the Universal Editor authenticates.
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 ---
+
 # Universal Editor Authentication {#authentication}
 
 Learn how the Universal Editor authenticates.
