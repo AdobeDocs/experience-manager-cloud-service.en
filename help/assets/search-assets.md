@@ -31,7 +31,7 @@ Asset search in AEM supports the following use cases and this article describes 
 | [Limitations](#limitations) and [Tips](#tips) | | |
 | [Illustrated examples](#samples)| | |
 
-Search assets using the Omnisearch field at the top of the [!DNL Experience Manager] web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], click ![search_icon](assets/do-not-localize/search_icon.png) in top bar, enter search keyword, and select `Return`. Alternatively, use the keyword shortcut `/` (forward slash) to open the Omnisearch field. `Location:Assets` is pre-selected to limit the searches to DAM assets. [!DNL Experience Manager] provides suggestions as your start typing a search keyword.
+Search assets using the Omnisearch field at the top of the [!DNL Experience Manager] web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], click ![search_icon](assets/do-not-localize/search_icon.png) in top bar, enter search keyword, and select `Return`. Alternatively, use the keyword shortcut `/` (forward slash) to open the Omnisearch field. `Location:Assets` is pre-selected to limit the searches to DAM assets. `Path:/content/dam` also displays when you are performing search at the root level within the **[!UICONTROL Files]** folder. If you navigate to any other folder, `Path:/content/dam/<folder name>` displays in the Omnisearch field to limit the search scope to the current folder. [!DNL Experience Manager] provides suggestions as you start typing a search keyword.
 
 Use the **[!UICONTROL Filters]** panel to search for assets, folders, tags, and metadata. You can filter search results based on the various options (predicates), such as, file type, file size, last modified date, status of asset, insights data, and Adobe Stock licensing. You can customize the Filters panel and add or remove search predicates using [search facets](/help/assets/search-facets.md). The [!UICONTROL File Type] filter in the [!UICONTROL Filters] panel has mixed-state checkboxes. Therefore, unless you select all the nested predicates (or formats) the first-level checkboxes are partially checked.
 
@@ -409,6 +409,7 @@ You can do the following with the assets you have searched in [!DNL Experience M
 * Start a workflow
 * Relate or unrelate assets
 * Apply filters, using the Filters panel that displays automatically after performing the search, to narrow the search results.
+* Navigate to the asset location
 
 ### Sort search results {#sort}
 
@@ -460,6 +461,10 @@ Similar to the create version capability, you can also create a workflow for the
 ### Relate and Unrelate assets {#relate-unrelate-assets}
 
 Relate and unrelate assets that display in the search results. Select the asset(s) and click **[!UICONTROL Relate]** or **[!UICONTROL Unrelate]**.
+
+### Navigate to asset folder location {#navigate-asset-folder-location}
+
+Navigate to the folder location for assets displayed in the search results. Select the asset and click **[!UICONTROL Show File Location]**. 
 
 ## Unexpected search results and issues {#unexpected-results}
 

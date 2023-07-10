@@ -32,7 +32,7 @@ To make the association you first need to [add your media asset(s) to a collecti
 
 1. Confirm (with **Select**). The collection is listed as associated.
 
-   ![cfm-6420-05](assets/cfm-assoc-content-03.png)
+   ![Confirmed association](assets/cfm-assoc-content-03.png)
 
 ## Editing Associated Content {#editing-associated-content}
 
