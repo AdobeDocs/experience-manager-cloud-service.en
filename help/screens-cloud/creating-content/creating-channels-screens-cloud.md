@@ -30,17 +30,18 @@ Follow the steps below to create a new sequence channel in Screens as a Cloud Se
 
 1. Select the **Channels** folder from your project, such as **FirstDigitalExperience** --> **Channels** and click on **Create** from the action bar.
 
-   ![](/help/screens-cloud/assets/create-content/channel-create1.png)
+   ![channel-create1](/help/screens-cloud/assets/create-content/channel-create1.png)
 
 1. Select the template, such as, **Sequence Channel** from the **Create** wizard and click on **Next**.
 
-   ![](/help/screens-cloud/assets/create-content/channel-create2.png)
+   ![channel-create2](/help/screens-cloud/assets/create-content/channel-create2.png)
+
    >[!NOTE]
    > The **Create** wizard provides different types of templates while creating a channel. See [Available Templates](#available-templates) in Create Wizard for more details.
 
 1. Enter the name of your sequence channel, such as, **LoopingChannelOne** and click on **Create**.
 
-   ![](/help/screens-cloud/assets/create-content/channel-create3.png)
+   ![channel-create3](/help/screens-cloud/assets/create-content/channel-create3.png)
 
    You will now see a **LoopingChannelOne** in your Channels folder in your AEM Screens project.
 
@@ -52,7 +53,7 @@ You can edit, view properties and dashboard, copy, preview, and delete a channel
 
 Navigate to the channel from your project and select the channel, as shown in the figure below. You can now select the options such as editing the channel, viewing properties, previewing content, managing publication, or deleting the channel from the action bar.
 
-![](/help/screens-cloud/assets/create-content/channelprop1.png)
+![channelprop1](/help/screens-cloud/assets/create-content/channelprop1.png)
 
 ### Adding Content to a Channel {#add-content}
 
@@ -60,17 +61,17 @@ To add or edit content in a channel, follow the steps below:
 
 1. Select the channel you want to edit, as shown in the figure below. Click on **Edit** from the top left corner of the action bar to open the editor.
 
-   ![](/help/screens-cloud/assets/create-content/edit-channel1.png)
+   ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
 1. The editor allows you to add assets/components to your channel that you want to publish.
 
 1. Drag and drop the assets from the left hand side pane and add it to the editor.
 
-    ![](/help/screens-cloud/assets/create-content/edit-channel2.png)
+    ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
    >Click on **Preview** to preview the contents of your channel.
-   >![](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
+   >![edit-channelpreview](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## Available Templates in Create Wizard {#available-templates}
 
