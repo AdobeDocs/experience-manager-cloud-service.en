@@ -3,6 +3,7 @@ title: Publishing Content with the Universal Visual Editor
 description: Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
 ---
+
 # Publishing Content with the Universal Visual Editor {#publishing}
 
 Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
@@ -25,6 +26,6 @@ Another option is to deploy the app to two different environments that are confi
 
 ## Summary {#summary}
 
-The objective of the Universal Editor is to not impose any particular pattern, so that the implementation can best achieve its goals in a fully decoupled manner while still keeping everything simple and straight-forward for the implementation.
+The objective of the Universal Editor is to not impose any particular pattern, so that the implementation can best achieve its goals in a fully-decoupled manner while still keeping everything simple and straight-forward for the implementation.
 
 Likewise the Universal Editor does not make any requirements on how any particular project should go about determining from which tier to delivery the content. Rather it enables a number of possibilities and allows the project to determine which solution is best for its own requirements.

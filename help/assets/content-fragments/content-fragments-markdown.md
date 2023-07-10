@@ -9,7 +9,7 @@ exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 
 When you are [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write headless content:
 
-![markdown editor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
+![Markdown editor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 You can define:
 
