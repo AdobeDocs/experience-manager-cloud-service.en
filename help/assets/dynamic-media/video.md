@@ -704,7 +704,7 @@ The ability to customize a video thumbnail is only available after you have appl
 
 1. Navigate to an uploaded video asset whose thumbnail image you want to change.
 1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, select the video asset.
-1. On the toolbar, select the **[!UICONTROL Properties** icon (a circle with an "i" in it).
+1. On the toolbar, select the **[!UICONTROL Properties]** icon (a circle with an "i" in it).
 1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
 1. On the Change Thumbnail page, do one of the following:
 
@@ -721,7 +721,7 @@ The ability to customize a video thumbnail is only available after you have appl
         * Select the image asset, then select **[!UICONTROL Select]**.
 
 1. On the Change Thumbnail page, select **[!UICONTROL Save Change]**.
-2. On the video's Properties page, in the upper-right corner, select **[!UICONTROL Save & Close]**.
+1. On the video's Properties page, in the upper-right corner, select **[!UICONTROL Save & Close]**.
 
 
 
