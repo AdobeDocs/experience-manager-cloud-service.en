@@ -39,7 +39,7 @@ Many default options let you crop your image to the best proportions that fit va
 
 ## Resize image {#resize-image}
 
-Resizing an image to a specific size is a popular use case. [!DNL Assets view] lets you quickly resize image to fit the common photo sizes by providing pre-calculated new resolutions for specific photo sizes. You can view the common photo sizes in centimeters or inches to know the dimensions. By default, the resizing method retains the aspect ratio. To manually override the aspect ratio, click ![](assets/do-not-localize/lock-closed-icon.png).
+Resizing an image to a specific size is a popular use case. [!DNL Assets view] lets you quickly resize image to fit the common photo sizes by providing pre-calculated new resolutions for specific photo sizes. You can view the common photo sizes in centimeters or inches to know the dimensions. By default, the resizing method retains the aspect ratio. To manually override the aspect ratio, click ![Options for resizeing a image.](assets/do-not-localize/lock-closed-icon.png).
 
 Enter the dimensions and click **[!UICONTROL Resize Image]** to resize the image. Before you save the changes as a version, you can either undo all the changes done before saving by clicking [!UICONTROL Undo] or you can change the specific step in the editing process by clicking [!UICONTROL Revert].
 
