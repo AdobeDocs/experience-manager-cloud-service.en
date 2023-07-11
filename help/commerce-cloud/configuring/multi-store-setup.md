@@ -37,7 +37,7 @@ To connect an AEM site and AEM CIF Core Components so too to a dedicated store v
    * Select the base configuration you created
    * Create a new configuration using the steps described at point 2 above
 
-   This new configuration will be created as a child configuration of the base one. You can now go to Tools -> General -> Configuration Browser and create the configuration settings.
+   This new configuration is created as a child configuration of the base one. You can now go to Tools -> General -> Configuration Browser and create the configuration settings.
 
    >[!TIP]
    >

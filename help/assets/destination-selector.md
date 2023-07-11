@@ -124,7 +124,7 @@ The following table describes some of the important properties of the selected d
 | *repo:size*| number| The size of the asset in bytes.|
 | *repo:path*| string | The location of the asset within the repository. |
 | *repo:ancestors*| `Array<string>`| An array of ancestor items for the asset in the repository. |
-| *repo:state*| string | Current state of the asset in the repository (For example, active, deleted, etc.). |
+| *repo:state*| string | Current state of the asset in the repository (For example, active, deleted, and so on). |
 | *repo:createdBy*| string | The user or system that created the asset. |
 | *repo:createDate* | string | The date and time when the asset was created. |
 | *repo:modifiedBy* | string | The user or system that last modified the asset. |
@@ -138,7 +138,7 @@ For a complete list of properties and detailed example, visit [Destination Selec
 
 This example demonstrates how to use Destination Selector with a non-SUSI flow when running an [!DNL Adobe] application under Unified Shell or when you already have `imsToken` generated for authentication.
 
-Include the Destination Selector package in your code using the `script` tag, as shown in _lines 6 to 15_ of the example below. Once the script is loaded, the `PureJSSelectors` global variable is available for use. Define the Destination Selector [properties](#destination-selector-properties) as shown in _lines 16 to 23_. The `imsOrg` and `imsToken` properties are both required for authentication in non-SUSI flow. The `handleSelection` property is used to handle the selected assets. To render the Destination Selector, call the `renderDestinationSelector` function as mentioned in _line 17_. The Destination Selector is displayed in the `<div>` container element, as shown in _lines 21 and 22_.
+Include the Destination Selector package in your code using the `script` tag, as shown in _lines 6&ndash;15_ of the example below. After the script is loaded, the `PureJSSelectors` global variable is available for use. Define the Destination Selector [properties](#destination-selector-properties) as shown in _lines 16&ndash;23_. The `imsOrg` and `imsToken` properties are both required for authentication in non-SUSI flow. The `handleSelection` property is used to handle the selected assets. To render the Destination Selector, call the `renderDestinationSelector` function as mentioned in _line 17_. The Destination Selector is displayed in the `<div>` container element, as shown in _lines 21 and 22_.
 
 By following these steps, you can use Destination Selector with a non-SUSI flow in your [!DNL Adobe] application.
 
@@ -179,10 +179,10 @@ You can use the Destination Selector properties to customize the way the Destina
 
 | Property | Type | Required | Default | Description |
 |---|---|---|---|---|
-| *imsOrg*| string | Yes | | Adobe Identity Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The `imsOrg` key is required to authenticate whether the organization you're accessing is under Adobe IMS or not. |
-| *imsToken* | string | No | | IMS bearer token used for authentication. `imsToken` is not required if you're using the SUSI flow. However, it is required if you're using the non-SUSI flow. |
-| *apiKey* | string | No | | API key used for accessing the AEM Discovery service. `apiKey` is not required if you're using the SUSI flow. However, it is required in non-SUSI flow. |
-| *rootPath* | string | No | /content/dam/ | Folder path from which Destination Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example given the following path, `/content/dam/marketing/subfolder/`, Destination Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
+| *imsOrg*| string | Yes | | Adobe Identity Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The `imsOrg` key is required to authenticate whether the organization you are accessing is under Adobe IMS or not. |
+| *imsToken* | string | No | | IMS bearer token used for authentication. `imsToken` is not required if you are using the SUSI flow. However, it is required if you are using the non-SUSI flow. |
+| *apiKey* | string | No | | API key used for accessing the AEM Discovery service. `apiKey` is not required if you are using the SUSI flow. However, it is required in non-SUSI flow. |
+| *rootPath* | string | No | /content/dam/ | Folder path from which Destination Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Destination Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *hasMore* | boolean | No | | When the application has more content to display, you can use this property to add a loader that loads the content to make it visible in the application. It is an indicator that states that content loading is in progress. |
 | *orgName* | boolean | No | | It is the name of org (probably orgID) associated with AEM |
 | *initRepoID* | string | No | | It is the path of assets repository that you want to use in a default initial view  |

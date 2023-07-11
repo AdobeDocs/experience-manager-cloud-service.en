@@ -3,6 +3,7 @@ title: Publishing Content with the Universal Visual Editor
 description: Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
 ---
+
 # Publishing Content with the Universal Visual Editor {#publishing}
 
 Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
@@ -21,7 +22,7 @@ When externally hosted, it is the concern of the web app to ensure that content 
 
 Determining whether the author or publishing tier should be access can be accomplished by a simple conditional statement in the app to choose the appropriate author or publish endpoint when detecting that its being opened within the editor.
 
-Another option is to deploy the app to two different environments that are configured differently, so that one retrieves its content from the author tier, and one that retrieves it from the publish tier. To allow authors to open the published URL in the Universal Editor, a small script can  be created to “convert” the publish-side URL to its equivalent on the author environment (e.g. by prepending an `author` sub-domain), so that the authors are automatically redirected.
+Another option is to deploy the app to two different environments that are configured differently, so that one retrieves its content from the author tier, and one that retrieves it from the publish tier. To allow authors to open the published URL in the Universal Editor, a small script can  be created to "convert" the publish-side URL to its equivalent on the author environment (e.g. by prepending an `author` sub-domain), so that the authors are automatically redirected.
 
 ## Summary {#summary}
 

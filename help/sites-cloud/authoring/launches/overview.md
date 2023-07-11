@@ -58,10 +58,10 @@ Launches allow you to:
   * Automatically - this involves the following:
     * The **Launch**(**Live**) **date** field: this can be set when creating or editing a launch.  
     * The **Production Ready** flag: this can only be set when editing a launch.
-    * If the **Production Ready** flag is set, the launch will be automatically promoted to the production pages on the specified **Launch**(**Live**) **date**. After the promotion, the production pages are automatically published.  
+    * If the **Production Ready** flag is set, the launch is automatically promoted to the production pages on the specified **Launch**(**Live**) **date**. After the promotion, the production pages are automatically published.  
           If no date has been set, the flag will have no effect.
 * Update your source and launch pages in parallel:
-  * Changes to the source pages are automatically implemented in the launch copy (if set up as with inheritance; i.e. as a live copy).  
+  * Changes to the source pages are automatically implemented in the launch copy (if set up as with inheritance; that is, as a live copy).  
   * Changes to your launch copy can be made without disrupting these automatic updates or the source pages.
 
   ![Actions in parallel](/help/sites-cloud/authoring/assets/launches-parallel.png)
@@ -80,17 +80,17 @@ Launches allow you to:
 >
 >Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
 >
->Please contact your system administrator if you experience any problems.
+>Contact your system administrator if you experience any problems.
 
 ## Launches in References (Sites Console) {#launches-in-references-sites-console}
 
 1. In the **Sites** console, navigate to the source of the launch(es).
 1. Open the **References** rail and select the source page.
-1. Select **Launches**, the existing launch(es) will be listed, together with access to the **Launches Console**:
+1. Select **Launches**, the existing launches are listed, together with access to the **Launches Console**:
 
    ![References of launches in sites console](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. Tap/click on the appropriate launch, the list of possible actions will be displayed:
+1. Tap/click on the appropriate launch, the list of possible actions are displayed:
 
    ![Actions to take on launches in sites console](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 

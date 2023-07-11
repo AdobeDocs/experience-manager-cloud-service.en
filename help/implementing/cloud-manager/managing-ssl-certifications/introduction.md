@@ -9,17 +9,17 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="Manage SSL Certificates"
->abstract="Learn how Cloud Manager provides you with self-service tools to install and manage SSL certificates in order to secure your site for your users. Cloud Manager uses a platform TLS service to manage SSL certificates and private keys owned by customers and obtained from third-party certification authorities."
+>abstract="Learn how Cloud Manager provides you with self-service tools to install and manage SSL certificates to secure your site for your users. Cloud Manager uses a platform TLS service to manage SSL certificates and private keys owned by customers and obtained from third-party certification authorities."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="View, Updating & Replace an SSL Certificate"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="Check Status of an SSL Certificate"
 
-Cloud Manager provides you with self-service tools to install and manage SSL certificates in order to secure your site for your users. Cloud Manager uses a platform TLS service to manage SSL certificates and private keys owned by customers and obtained from third-party certification authorities such as Let’s Encrypt.
+Cloud Manager provides you with self-service tools to install and manage SSL certificates so you can secure your site for your users. Cloud Manager uses a platform TLS service to manage SSL certificates and private keys owned by customers and obtained from third-party certification authorities such as Let's Encrypt.
 
 ## Introduction to Certificates {#certificates}
 
-Businesses use SSL certificates to secure their websites and allow their customers to place trust in them. In order to use the SSL protocol, a web server requires the use of an SSL certificate. 
+Businesses use SSL certificates to secure their websites and allow their customers to place trust in them. To use the SSL protocol, a web server requires the use of an SSL certificate. 
 
-When an entity requests a certificate from a Certificate Authority, the CA completes a verification process. This can range from verifying domain name control to collecting company registration documents and subscriber agreements. Once an entity's information has been verified, the CA will sign their public key using the CA's private key. Because all major certificate authorities have root certificates in web browsers, the entity's certificate will be linked through a *chain of trust* and the web browser will recognize it as a trusted certificate.
+When an entity requests a certificate from a Certificate Authority, the CA completes a verification process. This can range from verifying domain name control to collecting company registration documents and subscriber agreements. Once an entity's information has been verified, the CA will sign their public key using the CA's private key. Because all major certificate authorities have root certificates in web browsers, the entity's certificate is linked through a *chain of trust* and the web browser will recognize it as a trusted certificate.
 
 >[!IMPORTANT]
 >
@@ -41,7 +41,7 @@ Cloud Manager supports the following customer SSL certificate usage options.
 AEM as a Cloud Service only supports secure `https` sites.
 
 * Customers with multiple custom domains will not want to upload a certificate every time they add a domain.
-* Such customers will benefit by getting one certificate with multiple domains.
+* Such customers benefit by getting one certificate with multiple domains.
 
 ## Requirements {#requirements}
 
@@ -63,7 +63,7 @@ If you have reached the limit, review your certificates and consider:
 
 ## Learn More {#learn-more}
 
-A user with the necessary permissions can use Cloud Manager to manage SSL certificates for a program. Please refer to the following documents for more details on using these features.
+A user with the necessary permissions can use Cloud Manager to manage SSL certificates for a program. See the following documents for more details on using these features.
 
 * [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
 * [Viewing, Updating or Replacing an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)

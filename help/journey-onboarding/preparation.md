@@ -18,7 +18,7 @@ After reading this document you will understand
 * How that contract affects the onboarding process.
 * How to prepare for your onboarding call.
 
-Don't worry if you are not familiar with all of the terms used on this page. They will be explained in the next part of the journey.
+Don't worry if you are not familiar with all of the terms used on this page. The terms are explained in the next part of the journey.
 
 ## Video {#video}
 
@@ -36,13 +36,13 @@ Onboarding onto AEM as a Cloud Service starts with a signed contract between you
 * Your premier support level (if applicable).
 * Your contacts for onboarding.
 
-If you are not aware of these details, please contact the contracting team within your organization.
+If you are not aware of these details, contact the contracting team within your organization.
 
 Once the contract is signed, Adobe provisions your environments, a welcome email is sent to the onboarding contacts defined in the contract, and an onboarding call is organized by Adobe. This generally happens a couple days after contract close unless a future service start date is arranged.
 
 ## System Provisioning {#provisioning}
 
-Once the contract is signed, all the AEM cloud environments covered by the contract will be automatically provisioned by Adobe. These environments will likewise be linked to your programs in Cloud Manager (more on this topic later in the journey). These AEM cloud environments are included in every AEM as a Cloud Service subscription, and are usually comprised of at least one production environment, one staging environment, and optionally one or more development or test environments.
+After the contract is signed, all the AEM cloud environments covered by the contract are automatically provisioned by Adobe. These environments will likewise be linked to your programs in Cloud Manager (more on this topic later in the journey). These AEM cloud environments are included in every AEM as a Cloud Service subscription, and are usually comprised of at least one production environment, one staging environment, and optionally one or more development or test environments.
 
 ## Onboarding Call {#onboarding-call}
 
@@ -54,7 +54,7 @@ Attendees from your organization should include:
 * Tech practitioners
 * Your implementation partner
 
-Adobe will be represented by:
+Adobe is represented by:
 
 * Onboarding specialist
 * Your technical account manager (as applicable)
@@ -82,4 +82,4 @@ You should now have a basic understanding of:
 * How that contract affects the onboarding process.
 * How to prepare for your onboarding call.
 
-Now that you are familiar with these preparation steps, you are almost ready to sign in to the system yourself. But first you will need a brief overview of how AEM as a Cloud Service is structured from a system administrator's point of view and get to know some important terminology. Please continue on to the next part of the journey, [AEM as a Cloud Service Terminology.](terminology.md)
+Now that you are familiar with these preparation steps, you are almost ready to sign in to the system yourself. But first you will need a brief overview of how AEM as a Cloud Service is structured from a system administrator's point of view and get to know some important terminology. Continue to the next part of the journey, [AEM as a Cloud Service Terminology](terminology.md).

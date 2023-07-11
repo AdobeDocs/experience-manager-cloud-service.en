@@ -82,7 +82,7 @@ Header and footer added in the Structure layer
 
 When you edit the template with structure layer selected, you can unlock the header and footer of the template. If a component is unlocked in the template, form authors can edit the component in the Adaptive Form that uses the template. Locking a component prevents form authors from editing it in the Adaptive Form. Lock option is available in the component toolbar.
 
-For example, you add the header component in the template. When you select the component, you can see a lock option in the component toolbar. Typically, header includes company name and logo, and you don't want form authors to change the logo and header in a template. In an Adaptive Form created using the template with the header component locked, form authors cannot change the logo and company name.
+For example, you add the header component in the template. When you select the component, you can see a lock option in the component toolbar. Typically, header includes company name and logo, and you do not want form authors to change the logo and header in a template. In an Adaptive Form created using the template with the header component locked, form authors cannot change the logo and company name.
 
 >[!NOTE]
 >
@@ -184,7 +184,7 @@ Perform the following steps to show and hide templates:
 1. Locate and open the **FormsManager Configuration** settings:
 
     * To show or hide out of the box Adaptive Forms template, check or uncheck the **Include Out of the box AF and AD Templates** option.
-    * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
+    * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, and you want it to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
 

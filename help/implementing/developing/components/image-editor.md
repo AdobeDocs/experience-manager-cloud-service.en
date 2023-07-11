@@ -1,11 +1,11 @@
 ---
 title: Image Editor
-description: The Image Editor is a core piece of AEM and can be leveraged by components to facilitate the manipulation of images by content authors.
+description: The Image Editor is a core piece of AEM and can be used by components to facilitate the manipulation of images by content authors.
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
 ---
 # Image Editor {#image-editor}
 
-The Image Editor is a core piece of AEM and can be leveraged by components to facilitate the manipulation of images by content authors.
+The Image Editor is a core piece of AEM and can be used by components to facilitate the manipulation of images by content authors.
 
 ## Relative Units for Image Map {#relative-units-for-image-map}
 

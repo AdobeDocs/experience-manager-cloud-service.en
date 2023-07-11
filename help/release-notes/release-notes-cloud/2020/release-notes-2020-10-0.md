@@ -57,9 +57,9 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 ### What is New {#what-is-new-commerce}
 
-* Released CIF Venia Reference Site - 2020.10.2 that includes the latest CIF Core Components version v1.4.0. Refer to [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) for more details.
+* Released CIF Venia Reference Site - 2020.10.2 that includes the latest CIF Core Components version v1.4.0. See [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) for more details.
 
-* Released CIF Core Components v1.4.0. Refer to [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) for more details.
+* Released CIF Core Components v1.4.0. See [CIF Core Components](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) for more details.
 
 ### Bug Fixes {#bug-fixes-commerce}
 
@@ -84,7 +84,7 @@ The Release Date for Cloud Manager in Experience Manager as a Cloud Service 2020
 * The number of environment variables per environment has been increased to 200.
 
 * The Environment card on the Overview page now lists up to three environments. Users can select the **Show All** button to navigate to the Environment summary page to view a table with a complete list of environments.
-   Refer to [Viewing Environment](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) for more details.
+   See [Viewing Environment](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) for more details.
 
 ### Bug Fixes {#bug-fixes-cloud-manager}
 

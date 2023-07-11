@@ -78,7 +78,7 @@ These content fragments can then be assembled to provide experiences over a vari
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
 >
->For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>For more information, see also [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 ## Content Fragments and Content Services {#content-fragments-and-content-services}
 
@@ -136,7 +136,7 @@ Content Fragments are a content structure that:
 * Can [contain, or be connected to, images](#fragments-with-visual-assets).
 * Can use [in-between content](#in-between-content-when-page-authoring-with-content-fragments) when referenced on a page.
 
-* Are independent from the delivery mechanism (i.e. page, channel).
+* Are independent from the delivery mechanism (that is, page, channel).
 
 ### Fragments with Visual Assets {#fragments-with-visual-assets}
 
@@ -283,13 +283,13 @@ To use your Content Fragments for page authoring you also need:
 
   * Instrumental to delivering the fragment in HTML and/or JSON format.
   * Required to [reference the fragment on a page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-  * Responsible for layout and delivery of a fragment; i.e. channels.
+  * Responsible for layout and delivery of a fragment; that is, channels.
   * Fragments need one or more dedicated components to define layout and deliver some or all elements/variations and associated content.
   * Dragging a fragment onto a page in authoring will automatically associate the required component.
 
 ## Example Usage {#example-usage}
 
-A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment you need to consider what will be used where.
+A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment, consider what is used and where.
 
 ### WKND Sample {#wknd-sample}
 

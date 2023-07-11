@@ -34,7 +34,7 @@ Use ArrayList data type to create variable collections. You can create ArrayList
 
 To create a variable:
 
-1. On an AEM instance, navigate to Tools ![](assets/hammer-icon.svg) &gt; Workflow &gt; Models.
+1. On an AEM instance, navigate to Tools ![Hammer Icon](assets/hammer-icon.svg) &gt; Workflow &gt; Models.
 1. Tap **[!UICONTROL Create]** and specify the title and an optional name for the workflow model. Select the model and tap **[!UICONTROL Edit]**.
 1. Tap the variables icon available in the sidekick of the workflow model and tap **[!UICONTROL Add Variable]**.
 
@@ -272,4 +272,4 @@ To delete a variable:
 
 ## References {#references}
 
-For more examples on using variables in [!DNL AEM Forms] Workflow steps, refer to [Variables in AEM workflows](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).
+For more examples on using variables in [!DNL AEM Forms] Workflow steps, see [Variables in AEM workflows](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).

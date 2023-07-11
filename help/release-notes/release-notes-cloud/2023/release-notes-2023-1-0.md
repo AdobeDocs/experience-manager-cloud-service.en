@@ -37,7 +37,7 @@ Have a look at the January 2023 Release Overview video for a summary of the feat
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* Assets Reports now includes the ability for Administrators to [generate assets download reports](/help/assets/asset-reports.md) from the Experience Manager Assets as a Cloud Service deployment. This data further empowers Admins to derive insights from key success metrics in order to measure the adoption of Assets within your enterprise and by customers.
+* Assets Reports now includes the ability for Administrators to [generate assets download reports](/help/assets/asset-reports.md) from the Experience Manager Assets as a Cloud Service deployment. This data further empowers Admins to derive insights from key success metrics to measure the adoption of Assets within your enterprise and by customers.
 
    ![PDF rendition for other formats](/help/release-notes/assets/choose_report.png)
 
@@ -96,7 +96,7 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Cloud Manager {#cloud-manager}
 
-You can find a complete list of Cloud Manager monthly releases [here.](/help/implementing/cloud-manager/release-notes/current.md)
+You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Migration Tools {#migration-tools}
 

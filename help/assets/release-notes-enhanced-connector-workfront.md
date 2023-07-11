@@ -9,26 +9,34 @@ The following section outlines the general Release Notes for [!DNL Workfront for
 
 ## Release Date {#release-date}
 
-The release date for the latest version 1.9.10 of [!DNL Workfront for Experience Manager enhanced connector] is May 18, 2023.
+The release date for the latest version 1.9.11 of [!DNL Workfront for Experience Manager enhanced connector] is June 19, 2023.
 
 ## Release highlights {#release-highlights}
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following updates:
 
-* Workfront returns a 409 HTTP response for duplicate event subscriptions based on a REST call from Experience Manager to Workfront, which leads to a null pointer exception.
+* When you have advanced networking configured, there are issues while sending content from Adobe Workfront to AEM as a Cloud Service.
+
+>[!NOTE]
+>
+>AEM 6.4 has reached the end of extended support. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/?lang=en).
 
 
 >[!IMPORTANT]
 >
->Adobe recommends you to [upgrade to the latest 1.9.10 version](../assets/update-workfront-enhanced-connector.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recommends you [upgrade to the latest 1.9.11 version](/help/assets/workfront-connector-install.md) of the [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Known Issues {#known-issues}
 
 * While configuring project linked folders with AEM 6.4, Experience Manager do not save the values for **[!UICONTROL sub-folders]** and **[!UICONTROL Create linked folder in projects with portfolio]** fields. The value for the **[!UICONTROL sub-folders]** field updates to **[!UICONTROL undefined]** and the value for the **[!UICONTROL Create linked folder in projects with portfolio]** field updates to **[!UICONTROL Default Portfolio]** automatically after saving the configuration.
 
-* When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** dropdown list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** dropdown list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** dropdown list as well as the **[!UICONTROL Document Actions]** dropdown list available in the new Workfront experience.
+* When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** dropdown list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** drop-down list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** drop-down list and the **[!UICONTROL Document Actions]** drop-down list available in the new Workfront experience.
 
 ## Previous releases {#previous-releases}
+
+### May 2023 release {#may-2023-release}
+
+* Workfront returns a 409 HTTP response for duplicate event subscriptions based on a REST call from Experience Manager to Workfront, which leads to a null pointer exception.
 
 ### April 2023 release {#april-2023-release}
 
@@ -125,7 +133,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 [!DNL Workfront for Experience Manager enhanced connector] version 1.9.4, released on October 07, includes the following updates:
 
-* Unable to view Event Subscriptions tab on the enhanced connector configuration page due to a large number of events.
+* Unable to view Event Subscriptions tab on the enhanced connector configuration page due to many events.
 
 * Workfront is not able to fetch the list of existing folders in a project, which is resulting in creation of duplicate folders.
 
@@ -133,7 +141,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 [!DNL Workfront for Experience Manager enhanced connector] version 1.9.3, released on September 16, includes the following updates:
 
-* Unable to upload a file that is more than 8 GB in size.
+* Unable to upload a file that is more than 8 GB.
 * Issues while auto-publishing assets that are sent from Workfront to AEM.
 * The Root path field is not available for the Tags field while editing a default Metadata Schema Form.
 * Issues while adding new versions in Workfront using AEM workflows.
@@ -164,7 +172,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 [!DNL Workfront for Experience Manager enhanced connector] now includes the following updates:
 
-* When you upload via a linked folder or use the `Send To` action available in Workfront to upload assets to Experience Manager as a Cloud Service, the asset(s) get corrupted and cannot be opened in Adobe Photoshop.
+* When you upload via a linked folder or use the `Send To` action available in Workfront to upload assets to Experience Manager as a Cloud Service, the assets get corrupted and cannot be opened in Adobe Photoshop.
 
 ### March 2022 release {#march-2022-release}
 

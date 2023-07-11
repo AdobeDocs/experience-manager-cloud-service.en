@@ -9,9 +9,9 @@ Learn how easy and intuitive it is for content authors to create content using t
 
 ## Introduction {#introduction}
 
-The Universal Editor enables editing any aspect of any content in any implementation in order to deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
+The Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
 
-To do this, it provides content authors with an intuitive UI that requires minimal training to be able to simply jump in and begin editing content.
+To do this, the Universal Editor provides content authors with an intuitive UI that requires minimal training to simply be able to jump in and begin editing content.
 
 >[!TIP]
 >
@@ -23,26 +23,27 @@ To do this, it provides content authors with an intuitive UI that requires minim
 
 ## Prepare the App {#prepare-app}
 
-In order to author content for an app using the Universal Editor, the app must be instrumented by a developer to support the editor.
+To author content for an app using the Universal Editor, the app must be instrumented by a developer to support the editor.
 
 >[!TIP]
 >
->Please see the document [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of how to configure an AEM app to work with the Universal Editor.
+>See [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of how to configure an AEM app to work with the Universal Editor.
 
 ## Sign In {#sign-in}
 
 Once the app is instrumented to work with the Universal Editor, you will need to sign into the Universal Editor. You will need an Adobe ID to sign in and [have access to the Universal Editor.](getting-started.md#request-access)
 
-Once you are signed in, enter the URL of the page you wish to edit in the [address bar.](#address-bar) in order to start [editing the content.](#edit-content)
+After you are signed in, enter the URL of the page you want to edit in the [location bar.](#location-bar) so you can start editing content such as [text content](#text-mode) or [media content.](#media-mode)
 
 ## Understand The UI {#ui}
 
-The UI is divided into four main areas.
+The UI is divided into five main areas.
 
 * [The Experience Cloud header](#experience-cloud-header)
 * [The Universal Editor header](#universal-editor-header)
-* [The rail](#rail)
+* [The mode rail](#mode-rail)
 * [The editor](#editor)
+* [The component rail](#component-rail)
 
 ![The Universal Editor UI](assets/ui.png)
 
@@ -78,19 +79,19 @@ The help icon provides quick access to learning and support resources.
 
 #### Notifications {#notifications}
 
-This icon will be badged with the number of currently assigned incomplete [notifications.](/help/implementing/cloud-manager/notifications.md)
+This icon is badged with the number of currently assigned incomplete [notifications.](/help/implementing/cloud-manager/notifications.md)
 
 ![Notifications](assets/notifications.png)
 
 #### User Properties {#user-properties}
 
-Tap or click the icon representing your user to access your user settings. If you do not have a user picture configured, an icon will be randomly assigned.
+Tap or click the icon representing your user to access your user settings. If you do not have a user picture configured, an icon is randomly assigned.
 
 ![User properties](assets/user-properties.png)
 
 ### The Universal Editor Header {#universal-editor-header}
 
-The Universal Editor header is always present at the top of the screen just below [the Experience Cloud header.](#experience-cloud-header) It gives you quick access to navigate to another page to edit as well as to publish the current page.
+The Universal Editor header is always present at the top of the screen just below [the Experience Cloud header.](#experience-cloud-header) It gives you quick access to navigate to another page to edit and to publish the current page.
 
 ![The Universal Editor header](assets/universal-editor-header.png)
 
@@ -98,13 +99,13 @@ The Universal Editor header is always present at the top of the screen just belo
 
 The hamburger menu is not yet implemented.
 
-![Hambuger menu](assets/hamburger-menu.png)
+![Hamburger menu](assets/hamburger-menu.png)
 
-#### Location Bar {#Location-bar}
+#### Location Bar {#location-bar}
 
 The location bar shows you the address of the page you are editing. Tap or click to enter the address of another page to edit.
 
-![Location bar](assets/address-bar.png)
+![Location bar](assets/location-bar.png)
 
 >[!TIP]
 >
@@ -114,6 +115,24 @@ The location bar shows you the address of the page you are editing. Tap or click
 >
 >Any page that you wish to edit with the Universal Editor must be [instrumented to support he Universal Editor.](getting-started.md)
 
+#### Emulator Settings {#emulator}
+
+Tap or click the emulation icon to define how the Universal Editor renders the page.
+
+![Emulator icon](assets/emulator.png)
+
+Tapping or clicking the emulation icon reveals the options.
+
+![Emulation options](assets/emulation-options.png)
+
+By default the editor will open in desktop layout where the height and width are automatically defined by the browser.
+
+You can also chose to emulate a mobile device and within the Universal Editor:
+
+* Define its orientation
+* Define the width and height
+* Change the orientation
+
 #### Open App Preview {#open-app-preview}
 
 Tap or click the open app preview icon to open the page you are currently editing in its own browser, free of the editor to preview the changes.
@@ -122,11 +141,11 @@ Tap or click the open app preview icon to open the page you are currently editin
 
 >[!TIP]
 >
->Use the hot key `O` to open the app preview.
+>Use the hot key `O` (the letter O) to open the app preview.
 
 #### Publish {#publish}
 
-Tap or click the publish button in order to publish the changes to the content live for consumption by your readers.
+Tap or click the publish button so you can publish the changes to the content live for consumption by your readers.
 
 ![Publish button](assets/publish.png)
 
@@ -134,11 +153,11 @@ Tap or click the publish button in order to publish the changes to the content l
 >
 >See the document [Publishing Content with the Universal Visual Editor](publishing.md) for more information on publishing with the Universal Editor.
 
-### The Rail {#rail}
+### The Mode Rail {#rail}
 
-The rail is always present along the left side of the editor. It allows for easy switching the editor between preview mode and edit mode.
+The mode rail is always present along the left side of the editor. It allows easy switching the editor between different editing modes.
 
-![The rail](assets/rail.png)
+![The mode rail](assets/mode-rail.png)
 
 #### Preview Mode {#preview-mode}
 
@@ -150,23 +169,87 @@ In preview mode, the page rendered in the editor as it would be seen on your pub
 >
 >Use the hot key `P` to switch to preview mode.
 
-#### Edit Mode {#edit-mode}
+#### Text Mode {#text-mode}
 
-In edit mode, the page is rendered in the editor, but the content author can click to select content to edit it. This is the default mode of the editor when a page is loaded.
+In text mode, the page is rendered in the editor, but the content author can click to select text content to edit it. This is the default mode of the editor when a page is loaded.
 
-![Edit mode](assets/edit-mode.png)
+![Text mode](assets/text-mode.png)
+
+>[!TIP]
+>
+>Use the hot key `T` to switch to text mode.
+
+#### Media Mode {#media-mode}
+
+In media mode, the page is rendered in the editor, but the content author can click to select media content to edit it.
+
+![Media mode](assets/media-mode.png)
+
+>[!TIP]
+>
+>Use the hot key `M` to switch to media mode.
+
+#### Component Mode {#component-mode}
+
+In component mode, the page is rendered in the editor, but the content author can click to select page components.
+
+![Component mode](assets/component-mode.png)
+
+>[!TIP]
+>
+>Use the hot key `C` to switch to component mode.
+
+>[!NOTE]
+>
+>Component mode is still in development and is currently limited to selecting components.
 
 ### The Editor {#editor}
 
-The editor occupies most of the window and is where the page specified in [the address bar](#address-bar) is rendered.
+The editor occupies most of the window and is where the page specified in [the location bar](#location-bar) is rendered.
 
-Depending on if the editor is in [edit mode](#edit-mode) or [preview mode,](#edit-mode) the content will either be editable or navigable, respectively.
+* If the editor is in an editing mode such as [text mode](#text-mode) or [media mode,](#media-mode) the content will be editable and you can not follow links.
+* If the editor is in [preview mode,](#preview-mode) the content will be navigable and you can follow links, but you can not edit the content.
 
 ![Editor](assets/editor.png)
 
+### Component Rail {#component-rail}
+
+The component rail is always present along the left side of the editor. Depending on its mode, it can show details for a component selected in the content or the hierarchy of the page contents.
+
+![The component rail](assets/component-rail.png)
+
+#### Properties Mode {#properties-mode}
+
+In properties mode, the rail shows the properties of the component currently selected in the editor. This is the default mode of the component rail when a page is loaded.
+
+![Properties mode](assets/properties-mode.png)
+
+Details of the selected component are shown in the rail. Note that not all components have details to be shown.
+
+![Component details](assets/component-details.png)
+
+>[!TIP]
+>
+>Use the hot key `D` to switch to properties mode.
+
+#### Content Tree Mode {#Content-tree-mode}
+
+In content tree mode, the rail shows the hierarchy of the page content.
+
+![Content tree mode](assets/content-tree-mode.png)
+
+When selecting an item in the content tree, the editor scrolls to that content and selects it.
+
+![Content tree](assets/content-tree.png)
+
+>[!TIP]
+>
+>Use the hot key `F` to switch to content tree mode.
+
+
 ## Editing Content {#editing-content}
 
-Editing content is simple and intuitive. In [edit mode,](#edit-mode) as you mouse over content in the editor, editable content will be highlighted with a blue box.
+Editing content is simple and intuitive. In editing modes ([text mode](#text-mode), [media mode](#media-mode), and [component mode](#component-mode)), as you mouse over content in the editor, editable content is highlighted with a blue box.
 
 ![Editable content is highlighted by a blue box](assets/editable-content.png)
 
@@ -176,17 +259,19 @@ Simply tap or click on the content in the blue box to start an in-place editor t
 
 Note that in edit mode, tapping or clicking on content attempts to select it for editing. If you wish to navigate your content by following links, switch to [preview mode.](#preview-mode)
 
+Depending on the mode you are in and the content you select, you may have different in place editing options. Additionally, you may be able to review additional properties for the content using the [component rail.](#component-rail)
+
 ## Previewing Content {#previewing-content}
 
 When you are finished editing content, you often want to navigate it to see how it looks in the content of other pages. In [preview mode](#preview-mode) you can click links to navigate your content as a reader would. The content is rendered in the editor as it would be published.
 
-Note that in preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you wish to select the content for editing, switch to [edit mode.](#edit-mode)
+Note that in preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you wish to select the content for editing, switch to an editing mode such as [text mode](#text-mode) or [media mode.](#media-mode)
 
 ## Additional Resources {#additional-resources}
 
 To learn more about the Universal Editor, see these documents.
 
-* [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation in order to deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
+* [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
 * [Publishing Content with the Universal Editor](publishing.md) - Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
 * [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.

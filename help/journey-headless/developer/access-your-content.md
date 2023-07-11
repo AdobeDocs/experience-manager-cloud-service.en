@@ -24,9 +24,9 @@ This article builds on those fundamentals so you understand how to access your e
   * Dive into the details of the AEM GraphQL API.
   * Look at some sample queries to see how things work in practice.
 
-## So You'd Like to Access Your Content? {#so-youd-like-to-access-your-content}
+## So You Would Like to Access Your Content? {#so-youd-like-to-access-your-content}
 
-So...you've got all this content, neatly structured (in Content Fragments), and just waiting to feed your new app. Question is - how to get it there?
+So...you have got all this content, neatly structured (in Content Fragments), and just waiting to feed your new app. Question is - how to get it there?
 
 What you need is a way to target specific content, select what you need and return it to your app for further processing.
 
@@ -175,7 +175,7 @@ So for example, if you:
 
 1. Install a package containing `Content-Fragment-Model-1` and `Content-Fragment-Model-2`:
  
-   1. GraphQL types for `Model-1` and `Model-2` will be generated.
+   1. GraphQL types for `Model-1` and `Model-2` are generated.
 
 1. Then modify `Content-Fragment-Model-2`:
 
@@ -254,7 +254,7 @@ To actually use the AEM GraphQL API in a query, we can use the two very basic Co
 
 As you can see, the CEO and Employees fields, reference the Person fragments.
 
-The fragment models will be used:
+The fragment models are used:
 
 * when creating the content in the Content Fragment Editor
 * to generate the GraphQL schemas that you will query

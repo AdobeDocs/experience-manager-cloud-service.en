@@ -27,7 +27,7 @@ A **Convert to experience fragment variation** option, and workflow, has been im
 
 >[!NOTE]
 >
->This is is the recommended workflow to convert legacy offers to experience fragments.
+>This is the recommended workflow to convert legacy offers to experience fragments.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ A **Convert to experience fragment variation** option, and workflow, has been im
 
    ![Converting Legacy Offer to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 
-1. A dialog will be shown. Here you can select the required **Action**:
+1. A dialog box is shown. Here you can select the required **Action**:
 
    * Create a new Experience Fragment
    * Add the content to an existing Experience Fragment
@@ -95,7 +95,7 @@ A **Convert to experience fragment variation** option, and workflow, has been im
 >
 >Therefore, the recommended option is to use Experience Fragments, not this option. 
 
-For customers with pre-existing legacy offers, the **Use Offer Template** options will be visible when targeting components that are **not** Experience Fragments:
+For customers with pre-existing legacy offers, the **Use Offer Template** options are visible when targeting components that are **not** Experience Fragments:
 
    ![Convert to Experience Fragment Variation dialog](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 

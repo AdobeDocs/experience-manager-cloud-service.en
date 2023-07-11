@@ -299,7 +299,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 ```
 
-- SERVICE_NAME refers to the name of the OSGI prefill service. Refer [Create and run a prefill service](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
+- SERVICE_NAME refers to the name of the OSGI prefill service. See [Create and run a prefill service](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
 - IDENTIFIER refers to any metadata required by the OSGI prefill service to fetch the prefill data. An identifier to the logged-in user is an example of metadata that could be used.
 
 >[!NOTE]

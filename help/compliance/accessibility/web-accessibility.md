@@ -58,4 +58,4 @@ Using Adobe Experience Manager, content authors and/or website owners can create
  
 ## Accessibility at Adobe {#accessibility-at-adobe}
  
-For additional information, please visit the [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
+For additional information, see the [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).

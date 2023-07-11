@@ -11,7 +11,7 @@ In the **Projects** console, you access and take action on your projects:
 
 ![The Projects console](/help/sites-cloud/authoring/assets/projects-console.png)
 
-In Projects, you can create a project, associate resources with your project, and also delete a project or Resource links. You may want to open a tile to view its content as well as add items to a tile. This topic describes those procedures.
+In Projects, you can create a project, associate resources with your project, and also delete a project or Resource links. You may want to open a tile to view its content and add items to a tile. This topic describes those procedures.
 
 ## Creating a Project {#creating-a-project}
 
@@ -51,7 +51,7 @@ To associate resources with your project:
 
    >[!NOTE]
    >
-   >Project tiles that can be associated with a project are described in detail in [Project tiles.](/help/sites-cloud/authoring/projects/overview.md#project-tiles)
+   >Project tiles that can be associated with a project are described in detail in [Project tiles](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
 1. Tap/click **Create**. Your resource is linked to your project and from now on you can access it from your project.
 
@@ -121,7 +121,7 @@ If the icon has an x next to, it is displaying the inactive projects.
 
 ## Making Projects Inactive or Active {#making-projects-inactive-or-active}
 
-You may want to make a project inactive if you've completed it but you still want to keep the information on the project.
+You may want to make a project inactive if you have completed it but you still want to keep the information on the project.
 
 To make a project inactive (or active):
 

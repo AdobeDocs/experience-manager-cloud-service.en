@@ -13,15 +13,27 @@ exl-id: e873bd25-f841-4063-824f-7e48f40bb678
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=en)                  |
 | AEM as a Cloud Service     | This article         |
 
-Experience Manager supports the upload, delivery, and interactive preview of 3D assets as part of the authoring process. 
+Experience Manager Assets supports the ingestion, management, preview, and delivery of 3D assets. 
 
-The interactive 3D viewer is available from the asset details page in Experience Manager. The viewer includes, among other things, a collection of interactive camera controls that let you orbit, zoom, and pan the 3D asset.
+You can preview 3D assets with the automatically generated thumbnail renditions or the interactive 3D viewer. The interactive 3D viewer is available from the asset details page in Experience Manager. The viewer includes, among other things, a collection of interactive camera controls that let you rotate, zoom, and pan around the 3D scene.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Supported formats for 3D preview in Experience Manager{#supported-3d-previewing-assets} 
+## Supported formats for thumbnail preview in Experience Manager{#supported-thumbnail-previewing-assets} 
 
-Interactive 3D preview in Experience Manager supports the following file formats: 
+Experience Manager generates thumbnails for the following file formats by default: 
+
+|3D file extension |File format | MIME type |Notes |
+|---|---|---|---|
+| GLB |Binary GL Transmission|model/gltf-binary ||
+| FBX |Autodesk FBX|application/octet-stream ||
+| OBJ |WaveFront 3D Object File|application/x-tgif ||
+| 3DS |3D Studio Model|application/x-3ds ||
+| USDz |Universal Scene Description|model/vnd.usdz+zip ||
+
+## Supported formats for interactive 3D preview in Experience Manager{#supported-3d-previewing-assets} 
+
+Experience Manager supports Interactive 3D preview for the following file formats natively: 
 
 |3D file extension |File format | MIME type |Notes |
 |---|---|---|---|
@@ -29,8 +41,7 @@ Interactive 3D preview in Experience Manager supports the following file formats
 | GLTF |GL Transmission Format|model/gltf+json |See the **Note** below. |
 | OBJ |WaveFront 3D Object File|application/x-tgif ||
 | STL |Stereolithography|application/vnd.ms-pki.stl ||
-| DN |Adobe Dimension|model/x-adobe-dn |Support for ingestion only; preview not available.|
-| USDZ |Universal Scene Description Zip archive|model/vnd.usdz+zip |Support for ingestion only; preview not available.|
+
 
 >[!NOTE]
 >

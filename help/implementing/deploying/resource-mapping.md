@@ -1,6 +1,6 @@
 ---
 title: Resource Mapping
-description: Learn how to define redirects, vanity URLs and virtual hosts for AEM by using resource mapping.
+description: Learn how to define redirects, vanity URLs, and virtual hosts for AEM by using resource mapping.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
@@ -9,7 +9,7 @@ exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
 ---
 # Resource Mapping{#resource-mapping}
 
-Resource mapping is used to define redirects, vanity URLs and virtual hosts for AEM.
+Resource mapping is used to define redirects, vanity URLs, and virtual hosts for AEM.
 
 For example, you can use these mappings to:
 
@@ -20,11 +20,11 @@ One possible HTTP mapping prefixes all requests to `localhost:4503` with `/conte
 
 `localhost:4503/content/we-retail/en/products.html`
 
-to be accessed using:
+To be accessed using:
 
 `localhost:4503/we-retail/en/products.html`
 
-as the mapping will automatically add the prefix `/content` to `/we-retail/en/products.html`.
+As the mapping automatically adds the prefix `/content` to `/we-retail/en/products.html`.
 
 >[!CAUTION]
 >
@@ -32,7 +32,7 @@ as the mapping will automatically add the prefix `/content` to `/we-retail/en/pr
 
 >[!NOTE]
 >
->See the Sling documentation, and [Mappings for Resource Resolution](https://sling.apache.org/site/resources.html) and [Resources](https://sling.apache.org/site/mappings-for-resource-resolution.html) for further information.
+>See the Sling documentation, and [Mappings for Resource Resolution](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) and [Resources](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) for further information.
 
 ## Viewing Mapping Definitions {#viewing-mapping-definitions}
 
@@ -44,7 +44,7 @@ These lists can be viewed (together with configuration information) under the **
   Shows the current configuration (as defined for the [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map)).
 
 * Configuration Test
-  This allows you to enter a URL or resource path. Click **Resolve** or **Map** to confirm how the system will transform the entry.
+  This allows you to enter a URL or resource path. Click **Resolve** or **Map** to confirm how the system transforms the entry.
 
 * **Resolver Map Entries**
   The list of entries used by the ResourceResolver.resolve methods to map URLs to Resources.
@@ -52,7 +52,7 @@ These lists can be viewed (together with configuration information) under the **
 * **Mapping Map Entries**
   The list of entries used by the ResourceResolver.map methods to map Resource Paths to URLs.
 
-The two lists show various entries, including those defined as defaults by the application(s). These often aim to simplify URLs for the user.
+The two lists show various entries, including those entries defined as defaults by the applications. These entries often aim to simplify URLs for the user.
 
 The lists pair a **Pattern**, a regular expression matched to the request, with a **Replacement** that defines the redirection to impose.
 
@@ -60,15 +60,15 @@ For example, the:
 
 **Pattern** `^[^/]+/[^/]+/welcome$`
 
-will trigger the:
+Triggers the:
 
 **Replacement** `/libs/cq/core/content/welcome.html`.
 
-to redirect a request:
+To redirect a request:
 
 `https://localhost:4503/welcome` ``
 
-to:
+To:
 
 `https://localhost:4503/libs/cq/core/content/welcome.html`
 
@@ -76,7 +76,7 @@ New mapping definitions are created within the repository.
 
 >[!NOTE]
 >
->There are many resources available that help explain how to define regular expressions; for example [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>There are many resources available that help explain how to define regular expressions. For example, [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Creating Mapping Definitions in AEM {#creating-mapping-definitions-in-aem}
 
@@ -84,7 +84,7 @@ In a standard installation of AEM you can find the folder:
 
 `/etc/map/http`
 
-This is the structure used when defining mappings for the HTTP protocol. Other folders ( `sling:Folder`) can be created under `/etc/map` for any other protocols that you want to map.
+This folder is the structure used when defining mappings for the HTTP protocol. Other folders ( `sling:Folder`) can be created under `/etc/map` for any other protocols that you want to map.
 
 #### Configuring an Internal Redirect to /content {#configuring-an-internal-redirect-to-content}
 
@@ -92,7 +92,7 @@ To create the mapping that prefixes any request to https://localhost:4503/ with 
 
 1. Using CRXDE navigate to `/etc/map/http`.
 
-1. Create a new node:
+1. Create a node:
 
     * **Type** `sling:Mapping`
       This node type is intended for such mappings, though its use is not mandatory.
@@ -116,17 +116,17 @@ To create the mapping that prefixes any request to https://localhost:4503/ with 
 
 1. Click **Save All**.
 
-This will handle a request such as:
+This mapping handles a request such as:
 `localhost:4503/geometrixx/en/products.html`
 as if:
 `localhost:4503/content/geometrixx/en/products.html`
-had been requested.
+was requested.
 
 >[!NOTE]
 >
->See [Resources](https://sling.apache.org/site/mappings-for-resource-resolution.html) in the Sling Documentation for further information about the sling properties available and how they can be configured.
->For example, [String Interpolation](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) is very useful as it allows to configure a mapping that gets per environment values through environment variables.
+>See [Resources](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) in the Sling Documentation for further information about the sling properties available and how they can be configured.
+>For example, [String Interpolation](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) is useful because it lets you configure a mapping that gets per environment values through environment variables.
 
 >[!NOTE]
 >
->You can use `/etc/map.publish` to hold the configurations for the publish environment. These must then be replicated, and the new location ( `/etc/map.publish`) configured for the **Mapping Location** of the [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map) of the publish environment.
+>You can use `/etc/map.publish` to hold the configurations for the publish environment. These configurations must be replicated, and the new location ( `/etc/map.publish`) configured for the **Mapping Location** of the [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map) of the publish environment.

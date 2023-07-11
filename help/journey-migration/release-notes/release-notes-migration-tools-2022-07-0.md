@@ -36,7 +36,7 @@ The Release Date for Content Transfer Tool v2.0.12 is July 19, 2022.
 * To help debug SSL/TLS connection problems during extractions, users are now able to enable SSL Logging.
 * To help debug source connectivity issues, sub domain names are now printed in the logs when connection to Azure fails.
 * To help debug issues during pre-copy, AzCopy logs are now appended to the extraction logs when pre-copy fails.
-* To avoid stale Check Size results, users will be able to re-run Check Size only after a previous Check Size is completed.
+* To avoid stale Check Size results, users are able to re-run Check Size only after a previous Check Size is completed.
 
 ### Bug Fixes {#bug-fixes-ctt}
 
@@ -53,5 +53,5 @@ The Release Date for Cloud Acceleration Manager is July 15, 2022.
 
 ### What's New {#what-is-new-cam}
 
-* Cloud Acceleration Manager now provides users to manually retrieve the migration token to be able to start an ingestion when automatic retrieval fails. Automatic retrieval can fail if customers have set up an IP allow-list that blocks CAM or if a non-admin user attempts to start an ingestion. Refer to [Troubleshooting](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) for more information.
+* Cloud Acceleration Manager now provides users to manually retrieve the migration token to be able to start an ingestion when automatic retrieval fails. Automatic retrieval can fail if customers have set up an IP allow-list that blocks CAM or if a non-admin user attempts to start an ingestion. See [Troubleshooting](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) for more information.
 * Long tables on the Migration Complexity page are now collapsible for ease of use.

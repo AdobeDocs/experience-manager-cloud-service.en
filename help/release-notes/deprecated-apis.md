@@ -105,7 +105,7 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
   </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
-    <td>The Apache Felix metatype and SCR APIs are deprecated.  Please use the OSGi metatype and Declarative Service APIs instead.</td>
+    <td>The Apache Felix metatype and SCR APIs are deprecated.  Use the OSGi metatype and Declarative Service APIs instead.</td>
     <td>5/27/21</td>
     <td>removed</td>
   </tr>
@@ -152,13 +152,13 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>The Apache Felix Http Whiteboard is not supported anymore. Please migrate your code to the OSGi Http Whiteboard.</td>
+    <td>The Apache Felix Http Whiteboard is not supported anymore. Migrate your code to the OSGi Http Whiteboard.</td>
     <td>1/27/2022</td>
     <td>03/24/2022</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
-    <td>This API is deprecated, please migrate your code to the XML APIs provided by the JDK.</td>
+    <td>This API is deprecated, migrate your code to the XML APIs provided by the JDK.</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>
@@ -200,7 +200,7 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
-    <td>This API is deprecated. Please use Apache Sling's Builders instead.</td>
+    <td>This API is deprecated. Use Apache Sling's Builders instead.</td>
     <td>10/31/2022</td>
     <td>01/01/2023</td>
   </tr>
