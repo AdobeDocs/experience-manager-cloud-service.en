@@ -184,6 +184,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Create Headless Content](/help/trials/headless/create-content.md)
     + [Extract Content via the GraphQL API](/help/trials/headless/extract-content.md)
     + [Fetch JSON content with JavaScript](/help/trials/headless/code-playground.md)
+    + [Edit inline with the Universal Editor](/help/trials/headless/universal-editor.md)
 + AEM as a Cloud Service Migration Journey {#migration-journey}
   + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/getting-started.md)
   + [Readiness Phase](/help/journey-migration/readiness.md)
