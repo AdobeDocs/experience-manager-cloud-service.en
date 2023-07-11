@@ -2,10 +2,10 @@
 title: How to add an Adaptive Form to AEM Sites page? 
 description: Discover how to effortlessly create or add an Adaptive Form to your AEM Sites page. Learn step-by-step techniques and best practices for integrating forms into your website, optimizing your digital experiences for maximum impact.
 feature: Adaptive Forms, Page Editor, Authoring
-Keywords: Forms AEM Sites, Add Form to a Sites page, Adaptive Forms AEM Sites, Add Adaptive Forms to AEM Page, Create Forms in an AEM Sites page
+Keywords: adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 ---
 
-# Create an Adaptive Form in AEM Sites page or Experience Fragment {#create-or-add-an-adaptive-form-to-aem-sites-page}
+# Add an Adaptive Form to an AEM Sites page or Experience Fragment {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
 | Version | Article link |
 | -------- | ---------------------------- |
