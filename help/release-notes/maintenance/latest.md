@@ -15,11 +15,15 @@ Summarized below are the continuous improvements for maintenance release 12585, 
 
 ### Enhancements {#enhancements-12585}
 
-None.
+- DXML-12327: AEM Guides: Support for language variables in Native PDF publishing
+- DXML-11518: AEM Guides: Enhanced metadata support in Native PDF publishing
+- DXML-10093: AEM Guides: Support for connecting to external data sources and inserting data into dita topics
+- DXML-10699: AEM Guides: Support for XLIFF format in translation
+- DXML-10141: AEM Guides: Option to use microservice-based publishing for PDF (Native & DITA-OT), HTML & Custom preset types
 
 ### Fixed Issues {#fixed-issues-12585}
 
-None.
+- AEM Guides: Various Native PDF enhancements and stability fixes
 
 ### Known Issues {#known-issues-12585}
 
