@@ -15,6 +15,7 @@ Summarized below are the continuous improvements for maintenance release 12585, 
 
 ### Enhancements {#enhancements-12585}
 
+- General RDE stability improvements (SKYOPS-61133, SKYOPS-55281, SKYOPS-61216 and SKYOPS-61401)
 - DXML-12327: AEM Guides: Support for language variables in Native PDF publishing
 - DXML-11518: AEM Guides: Enhanced metadata support in Native PDF publishing
 - DXML-10093: AEM Guides: Support for connecting to external data sources and inserting data into dita topics
@@ -24,6 +25,8 @@ Summarized below are the continuous improvements for maintenance release 12585, 
 ### Fixed Issues {#fixed-issues-12585}
 
 - AEM Guides: Various Native PDF enhancements and stability fixes
+- SKYOPS-53130: Improve AC Tool support in RDE
+- SKYOPS-57146: Fix Sling deadlock on AEM startup
 
 ### Known Issues {#known-issues-12585}
 
