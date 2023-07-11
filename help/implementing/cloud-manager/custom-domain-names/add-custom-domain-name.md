@@ -12,7 +12,7 @@ You can add a custom domain name from two locations in Cloud Manager:
 
 >[!NOTE]
 >
->A user must have the **Business Owner** or **Deployment Manager** role in order to add a custom domain name in Cloud Manager
+>A user must have the **Business Owner** or **Deployment Manager** role to add a custom domain name in Cloud Manager
 
 ## Adding a Custom Domain Name from the Domain Settings Page {#adding-cdn-settings}
 
@@ -36,7 +36,7 @@ Follow these steps to add a custom domain name from the **Domain Settings** page
    >
    >Do not include `http://`, `https://`, or spaces when entering in your domain. 
 
-1. Select the **Environment** whose service will be associated with the domain name.
+1. Select the **Environment** whose service is associated with the domain name.
 
 1. Select either the **Publish** or **Preview** service.
 
@@ -48,17 +48,17 @@ Follow these steps to add a custom domain name from the **Domain Settings** page
 
 CDN deployment requires a valid SSL certificate and successful TXT verification. This is indicated by status **Verified and Deployed**.
 
-Refer to the document [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to learn more about various statuses and how to address potential issues.
+See [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to learn more about various statuses and how to address potential issues.
 
 >[!NOTE]
 >
 >DNS verification can take a few hours to process because of DNS propagation delays.
 >
->Cloud Manager will verify ownership and update the status which can be seen in the Domain Settings Table. Refer to the document [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more details.
+>Cloud Manager will verify ownership and update the status which can be seen in the Domain Settings Table. See [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more details.
 
 >[!TIP]
 >
->Refer to [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) to learn more about TXT records.
+>See [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) to learn more about TXT records.
 
 ## Adding a Custom Domain Name from Environments page {#adding-cdn-environments}
 
@@ -92,14 +92,14 @@ Follow these steps to add a custom domain name from the **Environments** page.
 
 CDN deployment requires a valid SSL certificate and successful TXT verification. This is indicated by status **Verified and Deployed**.
 
-Refer to the document [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to learn more about various statuses and how to address potential issues.
+See [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to learn more about various statuses and how to address potential issues.
 
 >[!NOTE]
 >
 >DNS verification can take a few hours to process because of DNS propagation delays.
 >
->Cloud Manager will verify ownership and update the status which can be seen in the Domain Settings Table. Refer to the document [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more details.
+>Cloud Manager will verify ownership and update the status which can be seen in the Domain Settings Table. See [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more details.
 
 >[!TIP]
 >
->Refer to [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) to learn more about TXT records.
+>See [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) to learn more about TXT records.

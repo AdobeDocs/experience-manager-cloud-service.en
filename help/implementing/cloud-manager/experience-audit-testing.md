@@ -23,17 +23,17 @@ Experience Audit is a feature available in Cloud Manager Sites Production pipeli
 
 Experience Audit in Cloud Manager ensures that the end user's experience on the site are of the highest standards.
 
-The audit results are informational and allow the deployment manager to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that will be introduced with the current deployment.
+The audit results are informational and allow the deployment manager to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that was introduced with the current deployment.
 
 Experience Audit is powered by Google Lighthouse, an open source tool from Google and is enabled in all Cloud Manager production pipelines.
 
 >[!TIP]
 >
->You configure what pages are included in the Experience Audit when you [set up your pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+>You configure what pages are included in the Experience Audit when you [set up your pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
 ## Understanding Experience Audit Results {#understanding-experience-audit-results}
 
-Experience Audit provides aggregate and detailed page-level test results via the [production pipeline execution page.](/help/implementing/cloud-manager/deploy-code.md)
+Experience Audit provides aggregate and detailed page-level test results via the [production pipeline execution page](/help/implementing/cloud-manager/deploy-code.md).
 
 * Aggregate metrics measure the average scores across the pages that were audited for performance, accessibility, best practices, SEO (Search Engine Optimization). 
 * Individual page level scores are also available via drill down.
@@ -62,6 +62,6 @@ The change metric can have one of the following values.
 
 By drilling into any of the tests, more detailed page level scoring is available. You can see how the individual pages scored for the specific test along with the change from the previous test run.
 
-Clicking into the details of any individual page provides information on the elements of the page that were evaluated as well as guidance to fix issues if opportunities for improvement are detected.
+Clicking into the details of any individual page provides information on the elements of the page that were evaluated and guidance to fix issues if opportunities for improvement are detected.
 
 ![Page-level scores](/help/implementing/cloud-manager/assets/exp-audit-2.png)

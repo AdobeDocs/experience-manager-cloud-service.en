@@ -76,7 +76,7 @@ Ensure that the images in the training set conform to the following guidelines:
 
 ![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/coherence.png)
 
-**Coverage**: There should be sufficient variety in the images in the training. The idea is to supply a few but reasonably diverse examples so that [!DNL Experience Manager] learns to focus on the right things. If you're applying the same tag on visually dissimilar images, include at least five examples of each kind. For example, for the tag *model-down-pose*, include more training images similar to the highlighted image below for the service to identify similar images more accurately during tagging.
+**Coverage**: There should be sufficient variety in the images in the training. The idea is to supply a few but reasonably diverse examples so that [!DNL Experience Manager] learns to focus on the right things. If you are applying the same tag on visually dissimilar images, include at least five examples of each kind. For example, for the tag *model-down-pose*, include more training images similar to the highlighted image below for the service to identify similar images more accurately during tagging.
 
 ![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/coverage_1.png)
 
@@ -125,7 +125,7 @@ To create and train a model for your business-specific tags, follow these steps:
    >You can sort the tags structure in ascending or descending order based on the **[!UICONTROL Name]** (alphabetical order), **[!UICONTROL Created]** date, or **[!UICONTROL Modified]** date.
    
 
-1. In the **[!UICONTROL Select Assets]** dialog, click **[!UICONTROL Add Assets]** against each tag. Search in the DAM repository or browse the repository to select at least 10 and at most 50 images. Select assets and not the folder. Once you've selected the images, click **[!UICONTROL Select]**.
+1. In the **[!UICONTROL Select Assets]** dialog, click **[!UICONTROL Add Assets]** against each tag. Search in the DAM repository or browse the repository to select at least 10 and at most 50 images. Select assets and not the folder. After you have selected the images, click **[!UICONTROL Select]**.
 
    ![View training status](assets/smart-tags-training-status.png)
 

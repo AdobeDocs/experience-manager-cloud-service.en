@@ -1,22 +1,22 @@
 ---
 title: Learning to use GraphQL with AEM - Sample Content and Queries
-description: Learn to use GraphQL with AEM to serve content headlessly by exploring sample content and queries.
+description: Learn to use GraphQL with AEM so you can serve content headlessly by exploring sample content and queries.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 ---
 # Learning to use GraphQL with AEM - Sample Content and Queries {#learn-graphql-with-aem-sample-content-queries}
 
-Learn to use GraphQL with AEM to serve content headlessly by exploring sample content and queries.
+Learn to use GraphQL with AEM so you can serve content headlessly by exploring sample content and queries.
 
 >[!NOTE]
 >
->This page should be read together with:
+>Read this page along with the following:
 >
 >* [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 >* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
 
-To get started with GraphQL queries and how they work with AEM Content Fragments it helps to see some practical examples. 
+To get started with GraphQL queries, and how they work with AEM Content Fragments, it helps to see some practical examples. 
 
 To help with this see:
 
@@ -35,7 +35,7 @@ See these sample queries for illustrations of create queries, together with samp
 
 >[!NOTE]
 >
->Depending on your instance you can directly access the [GraphiQL interface included with AEM GraphQL API](/help/headless/graphql-api/graphiql-ide.md) for submitting and testing queries.
+>Depending on your instance, you can directly access the [GraphiQL interface included with AEM GraphQL API](/help/headless/graphql-api/graphiql-ide.md) for submitting and testing queries.
 >
 >You can access the query editor from either: 
 >
@@ -48,7 +48,7 @@ See these sample queries for illustrations of create queries, together with samp
 
 ### Sample Query - All Available Schemas and Datatypes {#sample-all-schemes-datatypes}
 
-This will return all `types` for all available schemas.
+Returns all `types` for all available schemas.
 
 **Sample Query**
 
@@ -141,7 +141,7 @@ This will return all `types` for all available schemas.
 
 ### Sample Query - All Information about All Cities {#sample-all-information-all-cities}
 
-To retrieve all information about all cities, you can use the very basic query:
+To retrieve all information about all cities, you can use the following basic query:
 **Sample Query**
 
 ```graphql
@@ -152,7 +152,7 @@ To retrieve all information about all cities, you can use the very basic query:
 }
 ```
 
-When executed, the system will automatically expand the query to include all fields:
+When run, the system automatically expands the query to include all fields:
 
 ```graphql
 {
@@ -224,7 +224,7 @@ When executed, the system will automatically expand the query to include all fie
 
 ### Sample Query - Names of All Cities {#sample-names-all-cities}
 
-This is a straightforward query to return the `name`of all entries in the `city`schema.
+A straightforward query to return the `name`of all entries in the `city`schema.
 
 **Sample Query**
 
@@ -274,7 +274,7 @@ query {
 
 ### Sample Query - A Single Specific City Fragment {#sample-single-specific-city-fragment}
 
-This is a query to return the details of a single fragment entry at a specific location in the repository.
+A query to return the details of a single fragment entry at a specific location in the repository.
 
 **Sample Query**
 
@@ -315,7 +315,7 @@ This is a query to return the details of a single fragment entry at a specific l
 
 ### Sample Query - All Cities with a Named Variation {#sample-cities-named-variation}
 
-If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the `city` Berlin, then you can use a query to return details of the variation.
+If you create a variation, named "Berlin Centre" (`berlin_centre`), for the `city` Berlin, then you can use a query to return details of the variation.
 
 **Sample Query**
 
@@ -360,8 +360,8 @@ If you create a new variation, named "Berlin Centre" (`berlin_centre`), for the 
 
 If you:
 
-* create a variety of tags, named `Tourism` : `Business`, `City Break`, `Holiday`
-* and assign these to the Master variation of various `City` instances
+* create various tags, named `Tourism` : `Business`, `City Break`, `Holiday`
+* and assign them to the Master variation of various `City` instances
 
 Then you can use a query to return details of the `name` and `tags`of all entries tagged as City Breaks in the `city`schema.
 
@@ -538,7 +538,7 @@ query {
 
 ### Sample Query - All Persons that have a name of "Jobs" or "Smith" {#sample-all-persons-jobs-smith}
 
-This will filter all `persons` for any that have the name `Jobs`or `Smith`.
+A query that filters all `persons` for any that have the name `Jobs`or `Smith`.
 
 **Sample Query**
 
@@ -592,7 +592,7 @@ query {
 
 ### Sample Query - All Persons that do not have a name of "Jobs" {#sample-all-persons-not-jobs}
 
-This will filter all `persons` for any that have the name `Jobs`or `Smith`.
+A query that filters all `persons` for any that have the name `Jobs`or `Smith`.
 
 **Sample Query**
 
@@ -702,9 +702,9 @@ query {
 }
 ```
 
-### Sample Query - All cities located in Germany or Switzerland with a population between 400000 and 999999 {#sample-all-cities-d-ch-population}
+### Sample Query - All cities in Germany or Switzerland with a population between 400000 through 999999 {#sample-all-cities-d-ch-population}
 
-Here a combination of fields are filtered on. An `AND` (implicit) is used to select the `population`range, while an `OR` (explicit) is used to select the required cities.
+Here a combination of fields is filtered on. An `AND` (implicit) is used to select the `population`range, while an `OR` (explicit) is used to select the required cities.
 
 **Sample Query**
 
@@ -1146,7 +1146,7 @@ query {
 
 ## Sample Queries using the WKND Project {#sample-queries-using-wknd-project}
 
-These sample queries are based on the WKND project. This has:
+These sample queries are based on the WKND project. It has the following:
 
 * Content Fragment Models available under:
   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
@@ -1157,7 +1157,7 @@ These sample queries are based on the WKND project. This has:
 
 >[!NOTE]
 >
->As the results can be extensive they are not reproduced here.
+>Because the results can be extensive, they are not reproduced here.
 
 ### Sample Query for all Content Fragments of a certain model with the specified properties {#sample-wknd-all-model-properties}
 
@@ -1250,7 +1250,7 @@ This query interrogates:
 This sample query interrogates:
 
 * for a single Content Fragment of type `article` at a specific path
-  * within that, all formats of content:
+  * within that fragment, all formats of content:
     * HTML
     * Markdown
     * Plain Text
@@ -1309,7 +1309,7 @@ This sample query interrogates:
 This query interrogates:
 
 * for a single Content Fragment of type `article` at a specific path
-  * within that, the path and author of the referenced (nested) fragment
+  * within that fragment, the path and author of the referenced (nested) fragment
 
 >[!NOTE]
 >
@@ -1440,7 +1440,7 @@ The following query returns all content references by using `_references`:
 
 #### Sample Query for multiple Content Fragments with Attachments {#sample-wknd-multiple-fragments-attachments}
 
-The following query returns all `attachments` - a specific field (sub-group) of type `content-reference`:
+The following query returns all `attachments` - a specific field (subgroup) of type `content-reference`:
 
 >[!NOTE]
 >
@@ -1532,7 +1532,7 @@ This query interrogates:
 This query interrogates:
 
 * for a single Content Fragment of type `author` at a specific path
-  * within that, the data related to the variation: `another`
+  * within that fragment, the data related to the variation: `another`
 
 **Sample Query**
 
@@ -1558,7 +1558,7 @@ This query interrogates:
 
 >[!NOTE]
 >
->This will demonstrate fallback for Content Fragments that do not have a [Variation](/help/headless/graphql-api/content-fragments.md#variations) of the specified name.
+>This query demonstrates fallback for Content Fragments that do not have a [Variation](/help/headless/graphql-api/content-fragments.md#variations) of the specified name.
 
 **Sample Query**
 
@@ -1711,7 +1711,7 @@ This query interrogates:
 }
 ```
 
-### Sample Query with filtering by _tags ID and excluding variatons {#sample-filtering-tag-not-variations}
+### Sample Query with filtering by _tags ID and excluding variations {#sample-filtering-tag-not-variations}
 
 This query interrogates:
 
@@ -1746,7 +1746,7 @@ query {
 } 
 ```
 
-### Sample Query with filtering by _tags ID and including variatons {#sample-filtering-tag-with-variations}
+### Sample Query with filtering by _tags ID and including variations {#sample-filtering-tag-with-variations}
 
 This query interrogates:
 
@@ -1799,7 +1799,7 @@ The sample queries are based on the following structure, which uses:
 
 ### Sample Content Fragment Models (Schemas) {#sample-content-fragment-models-schemas}
 
-For the sample queries, we will use the following Content Models, and their interrelationships (references ->):
+For the sample queries, you use the following Content Models, and their interrelationships (references ->):
 
 * [Company](#model-company)
   -> [Person](#model-person)
@@ -1813,7 +1813,7 @@ The basic fields defining the company are:
 
 | Field Name | Data Type | Reference |
 |--- |--- |--- |
-| Company Name | Single line text | |
+| Company Name | Single-line text | |
 | CEO | Fragment Reference (single) | [Person](#model-person) |
 | Employees | Fragment Reference (multifield) | [Person](#model-person) |
 
@@ -1823,8 +1823,8 @@ The fields defining a person, who can also be an employee:
 
 | Field Name | Data Type | Reference |
 |--- |--- |--- |
-| Name | Single line text | |
-| First name | Single line text | |
+| Name | Single-line text | |
+| First name | Single-line text | |
 | Awards | Fragment Reference (multifield) | [Award](#model-award) |
 
 #### Award {#model-award}
@@ -1833,8 +1833,8 @@ The fields defining an award are:
 
 | Field Name | Data Type | Reference |
 |--- |--- |--- |
-| Shortcut/ID | Single line text | |
-| Title | Single line text | |
+| Shortcut/ID | Single-line text | |
+| Title | Single-line text | |
 
 #### City {#model-city}
 
@@ -1842,8 +1842,8 @@ The fields for defining a city are:
 
 | Field Name | Data Type | Reference |
 |--- |--- |--- |
-| Name | Single line text | |
-| Country | Single line text | |
+| Name | Single-line text | |
+| Country | Single-line text | |
 | Population | Number | |
 | Categories | Tags | |
 

@@ -54,7 +54,7 @@ By default, you will receive all notifications for all products. Click on **Cust
 
 ### Priority {#priority}
 
-Priority alerts will be marked with a **HIGH** tag and can be configured to be exclusively received as alerts. In the **Priority** section, you can define which categories qualify as priority notifications.
+Priority alerts are marked with a **HIGH** tag and can be configured to be exclusively received as alerts. In the **Priority** section, you can define which categories qualify as priority notifications.
 
 ![Notification priority](assets/notifications-priority.png)
 

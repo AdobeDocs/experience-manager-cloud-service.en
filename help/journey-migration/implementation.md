@@ -9,7 +9,7 @@ In the implementation phase of the journey, you will explore the tools through w
 
 ## The Story So Far {#story-so-far}
 
-In the previous parts of the journey, you've went through [getting familiar with the changes in AEM as a Cloud Service](/help/journey-migration/getting-started.md), as well as determining if your deployment is ready to be moved to the cloud with the [readiness phase](/help/journey-migration/readiness.md).
+In the previous parts of the journey, you have gone through [getting familiar with the changes in AEM as a Cloud Service](/help/journey-migration/getting-started.md), and determined if your deployment is ready to be moved to the cloud with the [readiness phase](/help/journey-migration/readiness.md).
 
 This article continues on with advice on how to use Adobe provided tools to make sure that your code and content are ready to be moved to the cloud.
 
@@ -19,7 +19,7 @@ This document aims to:
 
 * Introduce you to Cloud Manager, AEM's continuous integration and delivery framework used to deploy code to AEM as a Cloud Service
 * Get you up to speed with the content transfer tool
-* Describe the code refactoring tools you have to use in order to modernize your code for AEM as a Cloud Service
+* Describe the code refactoring tools you have to use so you can modernize your code for AEM as a Cloud Service
 
 ## Using Cloud Manager {#using-cloud-manager}
 
@@ -43,7 +43,7 @@ The following figure shows the main steps involved in the phase that involves co
 
 ![image](/help/journey-migration/assets/exec-image1.png)
 
-We will start detailing the tools you need to use in order to achieve this in the chapters below.
+We will start detailing the tools you must use so you can achieve this in the chapters below.
 
 ## Content Migration {#content-migration}
 
@@ -61,10 +61,10 @@ For a complete detail on how the tool works and how we recommend you use it, see
 
 It is time to start refactoring the existing features to be compatible with Cloud Services.
 
-In order to do this, you need to take a look at the documentation detailing the basic tooling you will need to start refactoring your code:
+First, look at the documentation detailing the basic tooling, and start refactoring your code:
 
 
-* During planning, it is a good idea to have a list of areas that must be refactored in order to be compatible with AEM as a Cloud Service. You can review [Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md) for more details on how to refactor and optimize code for Cloud Service.  
+* During planning, it is a good idea to have a list of areas that must be refactored to be compatible with AEM as a Cloud Service. You can review [Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md) for more details on how to refactor and optimize code for Cloud Service.  
 * Read up on how to [Manage Configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=en#what-is-a-configuration) in AEM as a Cloud Service.
 * Learn how to set up a Local Development Environment by downloading the [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)
 * Finally, familiarize yourself with the [AEM as a Cloud Service Java API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
@@ -157,7 +157,7 @@ Gathering data can help you plan the migration activities and associated tasks. 
 
 <!-- Alexandru: hiding this for now
 
-One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, because it is added to the overall extraction timeline and it may not be required to run it during top-ups.
 
 -->
 
@@ -235,7 +235,7 @@ The following section shows the important steps and associated tasks that can be
   * Is in the same network zone
   * Will provide production content like users and groups
   * Clones author and publish - one node each in case of a cluster or publish farm
-* Choose a subset of the content that will be migrated so that:
+* Choose a subset of the content that is migrated so that:
   * It is a mix of all the available content types
   * Contains all users and groups
 * Includes either 25% of the content or up to 1 TB of content, whichever is less.
@@ -250,4 +250,4 @@ The following section shows the important steps and associated tasks that can be
 
 ## What's Next {#what-is-next}
 
-Once you've fully understood how to assess if your AEM installation is ready to be moved to the cloud, as we as learn how to use the tools needed to make it ready, it's time to move on to the [go-live phase](/help/journey-migration/go-live.md).
+After you have fully understood how to assess if your AEM installation is ready to be moved to the cloud, as we as learn how to use the tools needed to make it ready, it's time to move on to the [go-live phase](/help/journey-migration/go-live.md).

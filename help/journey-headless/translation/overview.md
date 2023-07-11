@@ -47,7 +47,7 @@ The following are the personas that interact in this journey.
 |Administrator|Manages the base setup and configuration of AEM|The translation specialist works with the administrator to make configuration changes needed for translation such as installing a translation connector.|
 |Content Architect|Analyzes the requirements for the data that must be delivered headlessly and defines the structure for this data|Translation specialists work with the content architect to define the organization of the content so it can be easily translated.|
 
-Information in this journey can of course be useful to all personas, but some information may be superfluous to certain roles. Stay tuned for [forthcoming journeys covering additional roles.](/help/journey-documentation/documentation-journeys.md#journeys)
+Information in this journey can of course be useful to all personas, but some information may be superfluous to certain roles. Stay tuned for [forthcoming journeys covering additional roles](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## The Headless Translation Journey {#the-journey}
 
@@ -76,6 +76,6 @@ As such journeys are designed to stand on their own. However a number of them ca
 
 * [Headless Authoring Journey](/help/journey-headless/author/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to model your content on your first headless project.
 * [Headless Architect Journey](/help/journey-headless/architect/overview.md) - Start here for an introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to model content for your project.
-* [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first development project.
+* [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to use them on your first development project.
 * [AEM as a Cloud Service technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - If you already have a firm understanding of AEM and headless technologies, you may want to directly consult our in-depth technical docs.
 * [AEM Headless tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - If you prefer to learn by doing and are technically inclined, take our hands-on tutorials organized by API and framework, that explore creating and using applications built on AEM Headless.

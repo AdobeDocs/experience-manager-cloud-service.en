@@ -55,7 +55,7 @@ You can activate Brand Portal while creating the production environments for you
 >
 >Brand Portal must be activated on the same IMS org as of the Experience Manager Assets as a [!DNL Cloud Service] instance.
 >
->If you have an existing Brand Portal cloud configuration ([manually configured using Adobe Developer Console](#manual-configuration)) for an IMS org (org1-existing) and your Experience Manager Assets as a [!DNL Cloud Service] instance is configured for another IMS org (org2-new), activating Brand Portal from the Cloud Manager resets the Brand Portal IMS org to `org2-new`. Although the manually configured cloud configuration on `org1-existing` will be visible in the Experience Manager Assets author instance but will no longer be in use after activating Brand Portal from the Cloud Manager. 
+>If you have an existing Brand Portal cloud configuration ([manually configured using Adobe Developer Console](#manual-configuration)) for an IMS org (org1-existing) and your Experience Manager Assets as a [!DNL Cloud Service] instance is configured for another IMS org (org2-new), activating Brand Portal from the Cloud Manager resets the Brand Portal IMS org to `org2-new`. Although the manually configured cloud configuration on `org1-existing` is visible in the Experience Manager Assets author instance but will no longer be in use after activating Brand Portal from the Cloud Manager. 
 >
 >If the existing Brand Portal cloud configuration and Experience Manager Assets as a [!DNL Cloud Service] instance are using the same IMS org (org1), you only have to activate Brand Portal from the Cloud Manager. 
 >
@@ -95,11 +95,11 @@ Perform the following steps to validate the connection between your Experience M
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
-    ![](assets/test-bpconfig1.png)
+    ![Navigate to the distribution option](assets/test-bpconfig1.png)
 
    A Brand Portal distribution agent (**[!UICONTROL bpdistributionagent0]**) is created under **[!UICONTROL Publish to Brand Portal]**.
 
-   ![](assets/test-bpconfig2.png)
+   ![Create distribution agent](assets/test-bpconfig2.png)
 
 
 1. Click **[!UICONTROL Publish to Brand Portal]** to open the distribution agent. 
@@ -115,11 +115,11 @@ Perform the following steps to validate the connection between your Experience M
    >
    >It is recommended to review the failures and  clear the **error-queue** periodically.  
 
-   ![](assets/test-bpconfig3.png)
+   ![Processing queue for the distribution of assets](assets/test-bpconfig3.png)
 
 1. To verify the connection between Experience Manager Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
 
-   ![](assets/test-bpconfig4.png)
+   ![Verify connection between AEM and Brand Portal](assets/test-bpconfig4.png)
 
    A message appears that your *test package is successfully delivered*.
 
@@ -150,7 +150,7 @@ Let us now publish an asset from Experience Manager Assets to Brand Portal and s
 1. Follow the steps (from 1 to 4) as shown in the **Test connection** section and navigate to the distribution agent page.
 1. Click **[!UICONTROL Logs]** to view the processing and error logs.
 
-   ![](assets/test-bpconfig5.png)
+   ![Processing and error logs](assets/test-bpconfig5.png)
 
 The distribution agent has generated the following logs:
 
@@ -185,7 +185,7 @@ Along with the automation workflow to activate Brand Portal on Experience Manage
 
 The following section describes how to manually configure Experience Manager Assets as a [!DNL Cloud Service] with Brand Portal using Adobe Developer Console. 
 
-Earlier, Experience Manager Assets as a [!DNL Cloud Service] was manually configured with Brand Portal via Adobe Developer Console, which procures an Adobe Identity Management Services (IMS) account token for authorization of the Brand Portal tenant. It requires configurations in both, Experience Manager Assets as well as Adobe Developer Console.
+Earlier, Experience Manager Assets as a [!DNL Cloud Service] was manually configured with Brand Portal via Adobe Developer Console, which procures an Adobe Identity Management Services (IMS) account token for authorization of the Brand Portal tenant. It requires configurations in both, Experience Manager Assets and Adobe Developer Console.
 
 1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).
 1. In Adobe Developer Console, create a project for your Brand Portal tenant (organization).
@@ -334,7 +334,7 @@ You can now use the client ID (API key), client secret, and JWT payload to [conf
 
 1. Navigate to **[!UICONTROL JWT]** tab, and copy the **[!UICONTROL JWT payload]**.
 
-   The API Key, Client Secret key, and JWT payload information will be used to create IMS account configuration.
+   The API Key, Client Secret key, and JWT payload information is used to create IMS account configuration.
 
 -->
 
@@ -366,7 +366,7 @@ Perform the following steps to configure the IMS account.
 
    Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
 
-   ![](assets/create-new-integration5.png)
+   ![Adobe IMS Configurations Check Health.](assets/create-new-integration5.png)
 
 >[!CAUTION]
 >
@@ -390,7 +390,7 @@ Perform the following steps to configure the Brand Portal cloud service:
    
    In the **[!UICONTROL Service URL]** field, specify your Brand Portal tenant (organization) URL.   
    
-    ![](assets/create-cloud-service.png)
+    ![Brand Portal Configuration dialog box.](assets/create-cloud-service.png)
 
 1. Click **[!UICONTROL Save & Close]**. The cloud configuration is created. 
 
@@ -417,11 +417,11 @@ Perform the following steps to validate the configuration:
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
-    ![](assets/test-bpconfig1.png)
+    ![test-bpconfig1](assets/test-bpconfig1.png)
 
    A Brand Portal distribution agent (**[!UICONTROL bpdistributionagent0]**) is created under **[!UICONTROL Publish to Brand Portal]**.
 
-   ![](assets/test-bpconfig2.png)
+   ![test-bpconfig2](assets/test-bpconfig2.png)
 
 
 1. Click **[!UICONTROL Publish to Brand Portal]** to open the distribution agent. 
@@ -437,11 +437,11 @@ Perform the following steps to validate the configuration:
    >
    >It is recommended to review the failures and  clear the **error-queue** periodically.  
 
-   ![](assets/test-bpconfig3.png)
+   ![test-bpconfig3](assets/test-bpconfig3.png)
 
 1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
 
-   ![](assets/test-bpconfig4.png)
+   ![test-bpconfig4](assets/test-bpconfig4.png)
 
    A message appears that your *test package is successfully delivered*.
 
@@ -469,7 +469,7 @@ For example, we have published an asset from AEM Assets to Brand Portal to valid
 1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
 1. Click **[!UICONTROL Logs]** to view the processing and error logs.
 
-   ![](assets/test-bpconfig5.png)
+   ![ctest-bpconfig4](assets/ctest-bpconfig4.png)
 
 The distribution agent has generated the following logs:
 

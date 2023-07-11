@@ -36,7 +36,7 @@ To get your AEM headless application ready for launch, follow the best practices
 
 * Avoid creating queries that output more than 15kb of JSON (gzip compressed). Long JSON files are resource intensive for client application to parse.
 * Avoid more than five nested levels of fragment hierarchies. Additional levels make it hard for content authors to consider the impact of their changes.
-* Use multi-object queries instead of modeling queries with dependency hierarchies within the models. This allows more long-term flexibility to restructure JSON output without having to do a lot of content changes.
+* Use multi-object queries instead of modeling queries with dependency hierarchies within the models. This allows more long-term flexibility to restructure JSON output without having to do many content changes.
 
 ## Maximize CDN Cache-Hit Ratio {#maximize-cdn}
 
@@ -44,7 +44,7 @@ To get your AEM headless application ready for launch, follow the best practices
   * Use persisted queries whenever possible.
   * Provide CDN TTL above 600 seconds in order for the CDN to cache them.
   * AEM can calculate the impact of a model change to existing queries.
-* Split JSON files/GraphQL queries between low and high content change rate in order to reduce client traffic to CDN and assign higher TTL. This minimizes the CDN revalidating the JSON with the origin server.
+* Split JSON files/GraphQL queries between low and high content change rate so you can reduce client traffic to CDN and assign higher TTL. This minimizes the CDN revalidating the JSON with the origin server.
 * To actively invalidate content from the CDN use Soft Purge. This allows the CDN to redownload the content without causing a cache miss.
 
 ## Improve Time to Download Headless Content {#improve-download-time}
@@ -95,7 +95,7 @@ Follow these best practices as a general approach to debugging:
 
 ### Logging a Bug with Support {#logging-a-bug-with-support}
 
-In order to efficiently log a bug with Support in case you need further assistance, follow the below steps:
+To efficiently log a bug with Support in case you need further assistance, do the following:
 
 * Take screenshots of the problem, if necessary
 * Document a way to reproduce the issue
@@ -118,7 +118,7 @@ You have either already launched your first AEM Headless project or now have all
 
 ### Explore Single Page Applications {#explore-spa}
 
-The headless stores in AEM doesn't need to stop here, though. You might remember in the [Getting Started part of the journey](getting-started.md#integration-levels) we discussed briefly how AEM not only supports headless delivery and traditional full-stack models, but also can support hybrid models that combine the advantages of both.
+The headless stores in AEM does not need to stop here, though. You might remember in the [Getting Started part of the journey](getting-started.md#integration-levels) we discussed briefly how AEM not only supports headless delivery and traditional full-stack models, but also can support hybrid models that combine the advantages of both.
 
 If this kind of flexibility is something you need for your project, continue on to the optional, additional part of the journey, [How to Create Single Page Applications (SPAs) with AEM.](create-spa.md)
 

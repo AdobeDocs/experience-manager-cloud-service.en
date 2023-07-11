@@ -23,7 +23,7 @@ Cloud Manager performs a DNS lookup for your domain name and displays one of the
 
 * **DNS Resolves Incorrectly** - This indicates that either the DNS records configuration has not resolved or is erroneous.
 
-   * Refer to the document [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) to learn more.
+   * See [Configuring DNS Settings](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) to learn more.
    * When ready, you must select the **Resolve Again** icon next to the status.
 
 * **DNS Resolution In Progress** - The resolution is in progress.

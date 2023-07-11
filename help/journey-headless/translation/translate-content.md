@@ -206,7 +206,7 @@ Tap or click that icon to open the translated content fragment in its editor con
 
 ![A translated content fragment](assets/translated-content-fragment.png)
 
-You can further modify the content fragment as necessary, providing you have the proper permission, but editing content fragments is beyond the scope of this journey. Please see the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic.
+You can further modify the content fragment as necessary, providing you have the proper permission, but editing content fragments is beyond the scope of this journey. See the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic.
 
 The project's purpose is to collect all the resources related to a translation in one place for easy access and a clear overview. However as you can see by viewing the detail of a translated item, the translations themselves flow back into the asset folder of the translation language. In this example the folder is
 
@@ -226,7 +226,7 @@ It is important to understand that this content is not published and therefore n
 
 If your translation service provides human translation, the review process offers more options. For example, translations arrive back in the project with the status **Draft** and must be reviewed and approved or rejected manually.
 
-Human translation is beyond the scope of this localization journey. Please see the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic. However beyond the additional approval options, the workflow for human translations is the same as machine translations as described in this journey.
+Human translation is beyond the scope of this localization journey. See the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic. However beyond the additional approval options, the workflow for human translations is the same as machine translations as described in this journey.
 
 ## What's Next {#what-is-next}
 

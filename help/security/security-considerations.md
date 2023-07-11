@@ -9,7 +9,7 @@ exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
 
 ## AEM Trust Store {#aem-trust-store}
 
-In order to support asymmetric, cryptographic operations, AEM stores certificates inside the content repository, in a global trust-store. Its contents are public and, by default, are anonymously accessible by everyone on publisher instances.
+To support asymmetric, cryptographic operations, AEM stores certificates inside the content repository, in a global trust-store. Its contents are public and, by default, are anonymously accessible by everyone on publisher instances.
 
 ### Characteristics of the Trust Store {#truststore-characteristics}
 
@@ -31,5 +31,5 @@ Commenting out section for now as requested by Lars
 
 ## Anonymous Permission Hardening Package {#anonymous-permission-hardening-package}
 
-For more information on the Anonymous Hardening Package, please see the [Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#anonymous-permission-hardening-package).
+For more information on the Anonymous Hardening Package, see [Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#anonymous-permission-hardening-package).
 -->

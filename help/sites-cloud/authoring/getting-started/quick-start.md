@@ -27,7 +27,7 @@ Before beginning the quick start guide, here is a small collection of general ti
 
 * Re-ordering Pages
 
-  * This can be done in [List View](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). The changes will be applied and be visible in other views.
+  * This can be done in [List View](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). The changes are applied and visible in other views.
 
 ### Page Authoring {#page-authoring}
 
@@ -51,7 +51,7 @@ Before beginning the quick start guide, here is a small collection of general ti
 
 There are various aspects to finding a page; you can navigate and/or search:
 
-1. Open the **Sites** console (using the **Sites** option in the [Global Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - this is triggered (drop down) when you select the Adobe Experience Manager link (top left).  
+1. Open the **Sites** console (using the **Sites** option in the [Global Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - this is triggered (drop-down) when you select the Adobe Experience Manager link (top left).  
 
 1. Navigate down the tree by tapping/clicking on the appropriate page. How the page resources are represented depends on the view you are using - [Card, List, or Column](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources):
 
@@ -84,11 +84,11 @@ How to select a page depends on which view you are using in the console:
 
 1. Column View:
 
-    * Tap/click on the thumbnail for the required resource - the thumbnail will be overlaid with a tick to show that it has been selected.
+    * Tap/click on the thumbnail for the required resource - the thumbnail is overlaid with a tick to show that it has been selected.
 
 1. List View:
 
-    * Tap/click on the thumbnail for the required resource - the thumbnail will be overlaid with a tick to show that it has been selected.
+    * Tap/click on the thumbnail for the required resource - the thumbnail is overlaid with a tick to show that it has been selected.
 
 1. Card View:
 
@@ -97,7 +97,7 @@ How to select a page depends on which view you are using in the console:
         * On a mobile device: tap-and-hold the card
         * On a desktop device: use the [quick action](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) represented by the tick icon:
 
-    * The card will be overlaid with a tick to show that the page has been selected.
+    * The card is overlaid with a tick to show that the page has been selected.
 
     ![Example card](/help/sites-cloud/authoring/assets/card.png)
 
@@ -106,7 +106,7 @@ How to select a page depends on which view you are using in the console:
 [Quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) are available:
 
 1. [Navigate to the page](#finding-your-page) you want to take action on.
-1. Hover your mouse pointer over the card that represents your required resource. The quick actions will be shown:
+1. Hover your mouse pointer over the card that represents your required resource. The quick actions are shown:
 
    ![Card actions](/help/sites-cloud/authoring/assets/card-actions.png)
 
@@ -139,7 +139,7 @@ To edit your page:
     * [Edit the content of an existing component](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) on the page:
 
         * Open the component toolbar with either tap or click. Use the **Edit** (pencil) icon to open the dialog.
-        * Open the in place editor for the component with either tap-and-hold or a double-slow-click. The available actions will be shown (for some components, this will be a limited selection).
+        * Open the in place editor for the component with either tap-and-hold or a double-slow-click. The available actions are shown (for some components, it is a limited selection).
         * To see all actions available enter full-screen mode using:
 
           ![Full screen button](/help/sites-cloud/authoring/assets/full-screen.png)
@@ -175,7 +175,7 @@ To edit your page:
 
         * Select **Preview** from the toolbar.
 
-    * Return to edit mode (or select another mode) using the **Edit** drop down selector.
+    * Return to edit mode (or select another mode) using the **Edit** drop-down selector.
 
    >[!NOTE]
    >
@@ -195,7 +195,7 @@ There are two (main) methods of [editing page properties](/help/sites-cloud/auth
 
         ![Properties button](/help/sites-cloud/authoring/assets/properties.png)
 
-    1. The page properties will be shown. You can make updates as required, then use Save to persist these
+    1. The page properties are shown. You can make updates as required, then use Save to persist these
 
 * When [editing your page](#editing-your-page-content):
 
@@ -253,7 +253,7 @@ These actions can all be triggered by:
 
     * [Delete](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
-        * You will be asked to confirm the action.
+        * You are asked to confirm the action.
 
    >[!NOTE]
    >
@@ -264,7 +264,7 @@ These actions can all be triggered by:
 [Locking a page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) prevents other authors from working on it while you are. The Lock (and Unlock) icon/button can be found:
 
 * The toolbar when your [page has been selected](#selecting-your-page-for-further-action).
-* The [Page Information drop down menu](#editing-the-page-properties) when editing a page.
+* The [Page Information drop-down menu](#editing-the-page-properties) when editing a page.
 * The page toolbar when editing a page (when the page is locked)
 
 For example, the lock icon looks like this:
@@ -307,14 +307,14 @@ The same basic mechanism is used when restoring and/or comparing versions of you
 
    ![Timeline view option](/help/sites-cloud/authoring/assets/timeline.png)
 
-   If a version of your page has already been saved, this will be listed in the Timeline.
+   If a version of your page has already been saved, it is listed in the Timeline.
 
 1. Tap/click on the version you want to restore - this will reveal additional action buttons:
 
     * **Revert to this Version**
 
-        * The version will be restored.
+        * The version is restored.
 
     * **Show Differences**
 
-        * The page will be opened with differences (between the two versions) highlighted.
+        * The page is opened with differences (between the two versions) highlighted.
