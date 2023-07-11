@@ -23,7 +23,7 @@ Adobe Experience Manager Forms as a Cloud Service brings some notable changes to
 
 *   Developers maintain code for Cloud Service and local development environment in a common [git repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html). A git repository, based on AEM Archetype, is auto created on creation of an AEM as a Cloud Service program. 
 
-    ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
+    ![auto creation of git repository on AEM as a cloud service program](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
 *   Development flow for Forms as a Cloud Service aligns with AEM Archetype for AEM Cloud Service. However, there are some changes required to Adobe Experience Manager Maven projects to be compatible with AEM Cloud Service. At a high-level, AEM requires a separation of content and code into discrete subpackages to respect the split between mutable and immutable content. Use the [Repository Modernizer tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) to restructure existing project packages by separating content and code into discrete packages to be compatible with the project structure defined for Adobe Experience Manager as a Cloud Service.
 
