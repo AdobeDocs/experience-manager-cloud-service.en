@@ -76,7 +76,7 @@ Customzing a theme is a multi-step process. Perform the steps in listed order to
 1. [Set name of the theme](#set-name-of-theme)
 1. [Make changes in the theme](#make-chnages-in-the-theme)
 1. [Test the theme on a local environment](#test-the-theme)
-1. Deploy the theme to your Cloud Service environment 
+1. [Deploy the theme](#deploy-the-theme)
 
 The examples provided in the document are based on the **Canvas** theme, but it is important to note that you can clone any theme and customize it using the same instructions. These instructions are applicable to any theme, allowing you to modify themes according to your specific needs.
 
@@ -97,7 +97,6 @@ Perform the following instructions to clone a reference theme:
 
    ```
       git clone [Path of Git Repository of the theme]
-
    ```
 
    Replace the [Path of Git Repository of the theme] with the  actual URL of the corresponding Git Repository of the theme
@@ -143,7 +142,7 @@ Perform the following instructions to clone a reference theme:
 
 #### 3. Customize the theme {#make-changes-in-the-theme}
 
-You can change font, color, size, and other CSS properties for all AEM core components, for example button, checkbox, container, footer. You can style button or checkbox by editing the CSS file specific to the AEM component to make it unique and align with your organization's style. You can also modify the **variable.scss** file to customize or update a theme for all the Adaptive Form components. 
+You can change font, color, size, and other CSS properties for all AEM core components, for example button, checkbox, container, footer. You can style button or checkbox by editing the CSS file specific to the AEM component to make it unique and align with your organization's style. You can also modify the `variable.scss` file to customize or update a theme for all the Adaptive Form components. 
 
 1. In your text editor, open the file `<your-theme-sources>/src/components/button/button.scss`.
 1. Modify the `button.scss` file to customize or update a theme at a component level, by changing the font color of the text to `white` color.
@@ -166,8 +165,7 @@ The theme designers preview the changes in the local proxy server and customize 
 
 ##### 4.1. Rename the env_template file {#rename-env-file-theme-folder}
 
-1.  Open the theme folder in a plain text editor. For example, to open the `aem-forms-theme-canvas` folder in Visual Studio Code editor, 
-1. Navigate to the `aem-forms-theme-canvas` folder.
+1. Open the theme folder in a plain text editor. 
 1. Rename the `env_template` file to `.env` file in the theme folder and add the following parameters:
 
       ```
@@ -272,7 +270,7 @@ The customizations are pushed to the AEM cloud service theme repository.
 Your customizations are now safely stored in the AEM cloud service repository.    
 
 
-##### 5.3 Run a frontend pipeline{#run-a-frontend-pipeline}
+##### 5.3 Run a frontend pipeline {#run-a-frontend-pipeline}
 
 The theme is deployed using a front end pipleline.
 
