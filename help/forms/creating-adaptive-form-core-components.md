@@ -120,7 +120,7 @@ On submission of a form, you can redirect the user to another webpage or a messa
   
     * To configure a custom or thank you message, for on Submit option, select the **[!UICONTROL Show Message]** option, and provide a message in the **[!UICONTROL Message content]** box. It is a rich text box, you can use the full screen option to view all the available rich text items. 
 
-## Configure a Schema or Form Data Model {#configure-schema-or-data-model-for-form}
+## Configure a Schema or Form Data Model for an Adaptive Form{#configure-schema-or-data-model-for-form}
 
 You can use the Form Data Model to connect a form to a Data Source to send and receive data based on user actions. You can also connect a form to a JSON schema to receive the submitted data in a pre-defined format. Based on the requirement, connect your form to a JSON schema or Form data model:
 
