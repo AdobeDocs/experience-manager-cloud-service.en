@@ -143,31 +143,33 @@ Perform the following instructions to clone a reference theme:
 #### 3. Customize the theme {#make-changes-in-the-theme}
 
 Customization of a theme is possible at two levels:
-* [Theme customization at globel level](#)
-* Component-based customization specific to Adaptive Forms.
 
+* [Theme customization at global level](#theme-customization-global-level)
 
+* [Component-based customization specific to Adaptive Forms](#component-based-customization)
 
+##### Theme customization at global level{#theme-customization-global-level}
 
-
-
-
-You can change font, color, size, and other CSS properties for all Adaptive Form core components, for example button, checkbox, container, footer, and more. You can style button or checkbox by editing the CSS file of the specific component to align it with your organization's style. You can also modify the `variable.scss` file to customize or update a theme for all the Adaptive Form components at global level.
-
-
-
-1. In your text editor, open the file `<your-theme-sources>/src/components/button/button.scss`.
-1. Modify the `button.scss` file to customize or update a theme at a component level, by changing the font color of the text to `white` color.
-
-   ![Edit Textbox CSS](/help/forms/assets/edit_color_textbox.png)
+Modify the `variable.scss` file to customize a theme for all the Adaptive Form components at global level:
 
 1. In your text editor, open the file `<your-theme-sources>/src/site/_variables.scss`.
 
 1. Edit the variable for the `font colour` to `red`.
+1. Save the changes.
 
     ![Edit theme](/help/forms/assets/edit_theme.png)
 
+#####  Component-based customization specific to Adaptive Forms {#theme-customization-global-level}
+
+You can also change font, color, size, and other CSS properties for all Adaptive Form core components, for example button, checkbox, container, footer, and more. You can style button or checkbox by editing the CSS file of the specific component to align it with your organization's style. For example, To change the font color of button component, by modifying the `button.scss` file:
+
+1. Open the file `<your-theme-sources>/src/components/button/button.scss`, in your text editor,.
+1. Modify the `button.scss` file to customize or update a theme at a component level, by changing the font color of the text to the `white` color.
 1. Save the changes.
+
+   ![Edit Textbox CSS](/help/forms/assets/edit_color_textbox.png)
+
+
 
 #### 4. Test the customized theme on a local environment {#test-the-theme}
 
@@ -221,6 +223,7 @@ Once, you are satisfied with the modifications done in a theme folder, deploy th
 > * Click `SIGN IN LOCALLY (ADMIN TASKS ONLY)`.
 > * Ensure that user is a member of the `forms-users` group.
 
+If
 
 #### 5. Deploy the theme {#deploy-the-theme}
 
