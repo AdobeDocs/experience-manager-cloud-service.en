@@ -74,8 +74,8 @@ Customzing a theme is a multi-step process. Perform the steps in listed order to
 
 1. [Clone a reference theme](#download-a-theme-core-components) 
 1. [Set name of the theme](#set-name-of-theme)
-1. [Make changes in the theme](#make-chnages-in-the-theme)
-1. [Test the theme on a local environment](#test-the-theme)
+1. [Customize the theme](#customize-the-theme)
+1. [Test the theme](#test-the-theme)
 1. [Deploy the theme](#deploy-the-theme)
 
 The examples provided in the document are based on the **Canvas** theme, but it is important to note that you can clone any theme and customize it using the same instructions. These instructions are applicable to any theme, allowing you to modify themes according to your specific needs.
@@ -144,22 +144,22 @@ Perform the following instructions to clone a reference theme:
 
 Customization of a theme is possible at two levels:
 
-* [Theme customization at global level](#theme-customization-global-level)
+* [Theme customization at a global level](#theme-customization-global-level)
 
 * [Component-based customization specific to Adaptive Forms](#component-based-customization)
 
-##### Theme customization at global level{#theme-customization-global-level}
+##### Theme customization at a global level{#theme-customization-global-level}
 
-Modify the `variable.scss` file to customize a theme for all the Adaptive Form components at global level:
+Modify the `variable.scss` file to customize a theme for all the Adaptive Form components at global level. Perform the following steps to change the `$dark-gray` colour in the theme folder: 
 
 1. In your text editor, open the file `<your-theme-sources>/src/site/_variables.scss`.
 
-1. Edit the variable for the `font colour` to `red`.
+1. Edit the variable for the `$dark-gray` colour to `red`.
 1. Save the changes.
 
     ![Edit theme](/help/forms/assets/edit_theme.png)
 
-#####  Component-based customization specific to Adaptive Forms {#theme-customization-global-level}
+##### Component-based customization specific to Adaptive Forms {#component-based-customization}
 
 You can also change font, color, size, and other CSS properties for all Adaptive Form core components, for example button, checkbox, container, footer, and more. You can style button or checkbox by editing the CSS file of the specific component to align it with your organization's style. For example, To change the font color of button component, by modifying the `button.scss` file:
 
@@ -170,10 +170,9 @@ You can also change font, color, size, and other CSS properties for all Adaptive
    ![Edit Textbox CSS](/help/forms/assets/edit_color_textbox.png)
 
 
+#### 4. Test the customized theme {#test-the-theme}
 
-#### 4. Test the customized theme on a local environment {#test-the-theme}
-
-The theme designers preview the changes in the local proxy server and customize the theme according to the requirements for different AEM components. To test the customized theme and see the theme customizations in real time, perform the following steps:
+The theme customizations are tested on a local environment. You can preview the changes in the local proxy server and customize the theme according to the requirements for different AEM components. To test the customized theme and see the customizations in real time, perform the following steps:
 4.1 [Rename the env_template file](#rename-env-file-theme-folder)
 4.2 [Start a local proxy server](#start-a-local-proxy-server)
 
@@ -212,18 +211,17 @@ You are directly redirected to a browser, which displays the customized changes 
 
    ![change AF theme](/help/forms/assets/edit_theme_af.png)
 
-You can see the theme customizations are performed in a theme folder on a browser. 
+The theme customizations perform changes at both the global level and the component level. The font colour and the border colour of an Adaptive Form changed to `red` colour by updating the `_variables.scss` file in a theme folder. The label colour for the button component is customized to `white` colour by modifying the `button.scss` file.  
 
 Once, you are satisfied with the modifications done in a theme folder, deploy the theme to your Cloud Service environment using the front-end pipeline. 
 
 >[!NOTE]
 >
 > In case, you want to test your AEM cloud service instance, consider the following points before executing the `npm run live` command:
+>
 > * Specify the `AEM URL` as `http://[author-instance]/` in the `.env` file of a theme folder.
 > * Click `SIGN IN LOCALLY (ADMIN TASKS ONLY)`.
 > * Ensure that user is a member of the `forms-users` group.
-
-If
 
 #### 5. Deploy the theme {#deploy-the-theme}
 
@@ -330,6 +328,13 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 
   Use theme editor if you want to style header and footer using styling options such as font style, background, and transparency.
   If you want to provide information such as a logo image, company name in header, and copyright information in the footer, use the form editor options.
+
+## Frequently asked questions {#faq} 
+
+1. Which customization takes priority when making customizations in a theme folder at both the global level and component level?
+
+   * When customizations are made at both the global level and component level, the customization at the component level takes priority.  
+
 
 <!--
 
