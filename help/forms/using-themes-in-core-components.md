@@ -142,7 +142,19 @@ Perform the following instructions to clone a reference theme:
 
 #### 3. Customize the theme {#make-changes-in-the-theme}
 
-You can change font, color, size, and other CSS properties for all AEM core components, for example button, checkbox, container, footer. You can style button or checkbox by editing the CSS file specific to the AEM component to make it unique and align with your organization's style. You can also modify the `variable.scss` file to customize or update a theme for all the Adaptive Form components. 
+Customization of a theme is possible at two levels:
+* [Theme customization at globel level](#)
+* Component-based customization specific to Adaptive Forms.
+
+
+
+
+
+
+
+You can change font, color, size, and other CSS properties for all Adaptive Form core components, for example button, checkbox, container, footer, and more. You can style button or checkbox by editing the CSS file of the specific component to align it with your organization's style. You can also modify the `variable.scss` file to customize or update a theme for all the Adaptive Form components at global level.
+
+
 
 1. In your text editor, open the file `<your-theme-sources>/src/components/button/button.scss`.
 1. Modify the `button.scss` file to customize or update a theme at a component level, by changing the font color of the text to `white` color.
@@ -198,7 +210,7 @@ You are directly redirected to a browser, which displays the customized changes 
 
    ![change AF theme](/help/forms/assets/edit_theme_af.png)
 
-You can see the customizations performed in a theme folder on a browser. 
+You can see the theme customizations are performed in a theme folder on a browser. 
 
 Once, you are satisfied with the modifications done in a theme folder, deploy the theme to your Cloud Service environment using the front-end pipeline. 
 
@@ -283,7 +295,7 @@ The theme is deployed using a front end pipleline.
 
 Once the pipeline is successfully executed, the theme is available under the **Style** tab. Now, you can [use the deployed theme for styling an Adaptive Form](#using-theme-in-adaptive-form). 
 
-## Using a theme in Adaptive Forms {#using-theme-in-adaptive-form}
+## Apply a theme to an Adaptive Form {#using-theme-in-adaptive-form}
 
 Steps to apply a theme to an Adaptive Form are:
 
