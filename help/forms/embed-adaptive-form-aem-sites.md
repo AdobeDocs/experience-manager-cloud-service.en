@@ -255,10 +255,12 @@ You can customize the advanced settings of the **[!UICONTROL Adaptive Form - Emb
 * **Use Page Language**: Use local of the AEM Sites page instead locale of Adaptive Form.
 * **Set Focus on Form**: Select to set the focus on the first field of the Adaptive Form.
 * **Theme**: Select a theme that defines styling for components of your Adaptive Form. Styling includes appearance properties such as font style, background color, dimensions, and alignment.
-* **Form covers entire width of the frame**: An inline frame (iframe) is an HTML element that loads an Adaptive Form to an AEM Sites page. 
-    * If the **[!UICONTROL Form covers entire width of the frame]** checkbox is checked, an Adaptive Form occupies the full width of the container it is placed in. In this case, an iframe is not used to render the form. An Adaptive Form layout and design adapts to span the entire width of the container. It is useful for an Adaptive Form to have a responsive design and adjust to different screen sizes.
+* **Form covers entire width of the frame**: 
+An inline frame (iframe) is an HTML element that loads an Adaptive Form to an AEM Sites page.
 
-    * If the **[!UICONTROL Form covers entire width of the frame]** checkbox is not checked, an Adaptive Form does not cover the entire width of the container. The iframe is used to render a form, which cannot be extended beyond the specific width. It is useful when an Adaptive Form has a definite boundaries with other AEM components next to the form in the container.  
+    * If the **[!UICONTROL Form covers entire width of the frame]** checkbox is checked, an Adaptive Form occupies the full width of the container in which it is placed. In this case, an iframe is not used to render the form. The layout and design of an Adaptive Form adapt to span the entire width of the container, making it responsive and capable of adjusting to different screen sizes.
+
+    * If the **[!UICONTROL Form covers entire width of the frame]** checkbox is not checked, an Adaptive Form does not cover the entire width of the container. Instead, an iframe is used to render the form, which cannot be extended beyond a specific width. This approach is useful when thane Adaptive Form has definite boundaries and needs to coexist with other AEM components next to it within the container.
 
 * **Height**: Specify the height of the container. Leave it blank to automatically resize the container.
 * **CSS Client library**: Specify path to a CSS client library.
