@@ -284,8 +284,8 @@ Now, commit the changes to the theme repository of your AEM Forms Cloud Service.
    For example, use this command `cp -r [C:/cloned-git-canvas/*] [C:/cloned-theme-repo]`
 
    * For Windows:
-   `cmd copy [source-theme-folder]/* [destination-cloud-repo]`
-   For example, use this command `cmd copy [C:/cloned-git-canvas/*] [C:/cloned-theme-repo]`
+   `xcopy [source-theme-folder]\* [destination-cloud-repo]`
+   For example, use this command `xcopy [C:\cloned-git-canvas\*] [C:\cloned-theme-repo]`
 
 1. Navigate to the directory of the theme repository.
 1. Commit and push the theme files that you moved into with the following commands.
