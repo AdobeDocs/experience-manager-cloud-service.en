@@ -8,6 +8,12 @@ exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
 ---
 # Embed an Adaptive Form to an AEM sites page {#embed-an-adaptive-form-to-aem-sites-page}
 
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 AEM Forms allow form developers to seamlessly embed Adaptive Forms in an AEM Sites page or a web page hosted outside AEM. The embedded Adaptive Form is fully functional and users can fill and submit the form without leaving the page. It helps user remain in context of other elements on the web page and simultaneously interact with the form. This allows your users to conveniently fill and submit forms without ever leaving the page they are on. This integration provides a convenient way to reuse Adaptive Forms they have already created. 
 
 You can use AEM Page Editor to quickly embed multiple forms to your AEM Sites pages. Using AEM Page Editor allows content authors to create seamless data capture experiences within a Sites page using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also allows you to use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager.
@@ -252,7 +258,7 @@ You can customize the advanced settings of the **[!UICONTROL Adaptive Form - Emb
 * **Form covers entire width of the frame**: An inline frame (iframe) is an HTML element that loads an Adaptive Form to an AEM Sites page. 
     * If the **[!UICONTROL Form covers entire width of the frame]** checkbox is checked, an Adaptive Form occupies the full width of the container it is placed in. In this case, an iframe is not used to render the form. An Adaptive Form layout and design adapts to span the entire width of the container. It is useful for an Adaptive Form to have a responsive design and adjust to different screen sizes.
 
-    * If the **[!UICONTROL Form covers entire width of the frame]** checkbox is not checked, an Adaptive Form does not cover the entire width of the container. The iframe is used to render a form, which cannot be extend beyond the specific width. It is useful when an Adaptive Form has a definite boundaries with other AEM components next to the form in the container.  
+    * If the **[!UICONTROL Form covers entire width of the frame]** checkbox is not checked, an Adaptive Form does not cover the entire width of the container. The iframe is used to render a form, which cannot be extended beyond the specific width. It is useful when an Adaptive Form has a definite boundaries with other AEM components next to the form in the container.  
 
 * **Height**: Specify the height of the container. Leave it blank to automatically resize the container.
 * **CSS Client library**: Specify path to a CSS client library.
