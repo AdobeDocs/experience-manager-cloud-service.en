@@ -164,7 +164,7 @@ Modify the `variable.scss` file to customize a theme for all the Adaptive Form c
 You can also change font, color, size, and other CSS properties for all Adaptive Form core components, for example button, checkbox, container, footer, and more. You can style button or checkbox by editing the CSS file of the specific component to align it with your organization's style. For example, To change the font color of button component, by modifying the `button.scss` file:
 
 1. Open the file `<your-theme-sources>/src/components/button/button.scss`, in your text editor,.
-1. Modify the `button.scss` file to customize or update a theme at a component level, by changing the font color of the text to the `white` color.
+1. Modify the `button.scss` file to customize or update a theme at a component level, by changing the label color for the button component to `white` color.
 1. Save the changes.
 
    ![Edit Textbox CSS](/help/forms/assets/edit_color_textbox.png)
@@ -242,20 +242,31 @@ To save the changes, create a new repository for theme. Login to your [AEM Cloud
 
    ![Add Canvas Theme Repo](/help/forms/assets/addcanvasthemerepo.png)
 
-   Once the new repository for theme is added to your AEM Cloud Manager repository, clone it to your local machine.
+   Once the new repository for theme is added to your AEM Cloud Manager repository, now clone it to your local machine.
 
 
 1. Click **[!UICONTROL Copy Repository URL]** to copy the URL of the created repository for theme.  
 
    ![Canvas theme URL](/help/forms/assets/copyurl_canvastheme.png)
+
+1. Open the command prompt or terminal window on your local development environment.
+
+1. Run the `git clone` command to clone a theme. 
+
+   ```
+      git clone [Path of created Git Repository for theme]
+   ```
+
+   Replace the [Path of created Git Repository for theme] with the  actual URL of the corresponding Git Repository for a theme.
+
+   For example, to clone the repository, execute the following  command:
+
+      ```
+          git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
+      ```
+
+   After executing the command successfully, you have a local  copy of the repository created for theme is available on your machine.
    
-1. Open the command prompt and clone the above created repository for theme.
- 
-    ```
-      git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
-
-    ```
-
    >[!NOTE]
    > 
    > One theme repository can be used for multiple themes, but the front-end pipeline configuration should be updated accordingly.
@@ -265,10 +276,19 @@ To save the changes, create a new repository for theme. Login to your [AEM Cloud
 
 Now, commit the changes to the theme repository of your AEM Forms Cloud Service. It makes the customized theme available in your AEM Forms Cloud Service environment for Adaptive Forms authors to use. 
 
-1. Move the files of theme repository that you are editing into the cloned repository of an AEM cloud service with a command similar to
+1. Open the command prompt or terminal window on your local development environment.
+
+1. Move the files of theme repository that you are editing into the cloned repository of an AEM cloud service with a command:
+   * For Liux/Unix:
    `cp -r [source-theme-folder]/* [destination-cloud-repo]`
-   For example, use this command `cp -r [C:/cloned-git-canvas/*] [C:/cloned-theme-repo]` 
-1. In the directory of the theme repository, commit the theme files that you moved into with the following commands.
+   For example, use this command `cp -r [C:/cloned-git-canvas/*] [C:/cloned-theme-repo]`
+
+   * For Windows:
+   `cmd copy [source-theme-folder]/* [destination-cloud-repo]`
+   For example, use this command `cmd copy [C:/cloned-git-canvas/*] [C:/cloned-theme-repo]`
+
+1. Navigate to the directory of the theme repository.
+1. Commit and push the theme files that you moved into with the following commands.
 
    ```text
    git add .
@@ -283,7 +303,7 @@ The customizations are pushed to the AEM cloud service theme repository.
 Your customizations are now safely stored in the AEM cloud service repository.    
 
 
-##### 5.3 Run a frontend pipeline {#run-a-frontend-pipeline}
+##### 5.3 Run frontend pipeline {#run-a-frontend-pipeline}
 
 The theme is deployed using a front end pipleline.
 
@@ -603,7 +623,5 @@ The theme is deployed using a front end pipleline.
 >In future if you make any modifications in a theme folder, you need to rerun the above pipeline again. Hence, it is necessary to remember the name of the pipeline.
 
 Once the pipeline is successfully executed, the theme is available under the **Style** tab. Now, you can [use the deployed theme for styling an Adaptive Form](#using-theme-in-adaptive-form). 
-
-
 
 -->
