@@ -353,3 +353,8 @@ Do keep the following points in mind when embedding Adaptive Forms in AEM sites 
 * User drafts and submissions of embedded forms are supported and visible in Drafts and Submitted Forms tabs on the Forms Portal.
 * The submit action configured on the original form is retained in the embedded form.
 * If you have Adobe Analytics configured for the original form, the analytics data of the embedded form is captured in Adobe Analytics. However, it is not available in the forms analytics report.
+
+## See Also {#see-also}
+
+* [Create Core Component based standalone Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)
+* [Create Core component based Adaptive Form directly in an AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
