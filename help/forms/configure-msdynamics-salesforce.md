@@ -5,6 +5,11 @@ exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
 ---
 # Configure [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloud services {#configure-azure-storage}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html?lang=en)                  |
+| AEM as a Cloud Service     | This article        |
+
 [[!DNL Experience Manager Forms] Data Integration](data-integration.md) provides [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloud services to integrate adaptive forms with out of the box Form Data Models. The Adaptive Forms can then interact with [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] servers to enable business workflows. For example:
 
 * Write data into [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] on Adaptive Form submission.

@@ -7,6 +7,13 @@ exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 ---
 # Supporting new locales for Adaptive Forms localization {#supporting-new-locales-for-adaptive-forms-localization}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=en)                  |
+| AEM as a Cloud Service     | This article
+
+
+
 AEM Forms provide out of the box support for English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. You can add support for more locales also, like Hindi(hi_IN). 
 
 ## Understanding locale dictionaries {#about-locale-dictionaries}

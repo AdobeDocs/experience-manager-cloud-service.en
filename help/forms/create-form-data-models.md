@@ -8,6 +8,12 @@ exl-id: b17b7441-912c-44c7-a835-809f014a8c86
 ---
 # Create Form Data Model {#create-form-data-model}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en)                  |
+| AEM as a Cloud Service     | This article        |
+
+
  ![Data integration](do-not-localize/data-integeration.png)
 
 [!DNL Experience Manager Forms] data integration provides an intuitive user interface to create and work with form data models. A Form Data Model relies on data sources for exchange of data; however, you can create a Form Data Model with or without a data source. There are two approaches to create a from data model depending on whether you have configured data sources:

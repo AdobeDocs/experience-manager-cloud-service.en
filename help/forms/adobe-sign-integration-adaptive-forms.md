@@ -8,6 +8,11 @@ level: Intermediate
 ---
 # Connect [!DNL AEM Forms] as a Cloud Service with [!DNL Adobe Acrobat Sign] {#integrate-adobe-sign-with-aem-forms}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html?lang=en#adobe-acrobat-sign-for-government)                  |
+| AEM as a Cloud Service     | This article        |
+
 [!DNL Adobe Acrobat Sign] enables e-signature workflows for Adaptive Forms and AEM Workflows. E-signatures improve workflows to process documents for legal, sales, payroll, human resource management, and many more areas.
 
 In a typical [!DNL Adobe Acrobat Sign] and Adaptive Forms scenario, a user fills an Adaptive Form to apply for a service. For example, a credit card application and a citizen benefits form. When a user fills, submits, and signs the application form, the form is sent to the service provider for further action. Service provider reviews the application and uses [!DNL Adobe Acrobat Sign] to mark the application approved. AEM Forms supports both Adobe Acrobat Sign and Adobe Acrobat Sign Solutions for Government. Depending on your license and requirements, you can integrate or connect AEM Forms with either of the solution:

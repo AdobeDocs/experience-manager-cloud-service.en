@@ -6,6 +6,12 @@ exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
 ---
 # Connect your data sources to Cloud Service {#aem-forms-data-integration}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=en)                  |
+| AEM as a Cloud Service     | This article        |
+
+
  ![Data Integration](do-not-localize/data-integeration.png)
 
 Enterprise infrastructures include disparate back-end systems or data sources like databases, web services, REST services, OData services, and CRM solutions. Put together, they make an information system that serves data to enterprise applications to perform day-to-day business. On the other hand, applications capture data and send it back to update data sources.

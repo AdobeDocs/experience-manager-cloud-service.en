@@ -8,6 +8,11 @@ exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
 ---
 # Use Layout mode to resize components {#use-layout-mode-to-resize-components}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/resize-using-layout-mode.html?lang=en)                  |
+| AEM as a Cloud Service     | This article 
+
 The Adaptive Form authoring interface enables you to resize components using the Layout mode. Drag blue dots within columns to define the start and end points to position components. The blue dots display after tapping the component within the responsive grid. The responsive grid consists of 12 equal columns. The white and blue color shading in alternate columns differentiates one column from the other.
 
 You can use the Layout mode to resize components for all device types such as desktop, tablet, phone, and other smaller devices. The tablet automatically derives the layout configuration from the desktop version and the smaller devices derive layout configuration from phone. However, you can override the automatically derived configurations to define a different configuration for each device type.

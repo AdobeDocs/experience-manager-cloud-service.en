@@ -7,6 +7,11 @@ exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
 ---
 # Configure Out of Office setting {#configure-out-of-office-settings}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html?lang=en)                  |
+| AEM as a Cloud Service     | This article
+
 If you plan to be out of the office, you can specify what happens to items that are assigned to you for that period.
 
 You have the option of specifying a start date and time and an end date and time for your out-of-office settings to be in effect. If you are located in a different time zone from the server, the time zone used is that of the client.

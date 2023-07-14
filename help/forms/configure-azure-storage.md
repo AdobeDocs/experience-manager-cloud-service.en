@@ -5,6 +5,13 @@ exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
 ---
 # Configure [!DNL Azure] storage {#configure-azure-storage}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=en)                  |
+| AEM as a Cloud Service     | This article        |
+
+ ![data-integeration](assets/data-integeration.png)
+
 [[!DNL Experience Manager Forms] Data Integration](data-integration.md) provides an [!DNL Azure] storage configuration to integrate forms with [!DNL Azure] storage services. The Form Data Model can be used to create Adaptive Forms that interact with [!DNL Azure] server to enable business workflows. For example:
 
 * Write data into [!DNL Azure] on Adaptive Form submission.

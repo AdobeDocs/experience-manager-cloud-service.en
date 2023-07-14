@@ -5,6 +5,12 @@ exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 ---
 # Generate Document of Record for Adaptive Forms
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=en)                  |
+| AEM as a Cloud Service     | This article
+
+
 ## Overview {#overview}
 
 When a form is filled or submitted, you can keep a record of the form, in print or in document format. This record is referred as a Document of Record (DoR). It is a print-friendly copy of the submitted form. You can also refer the document of record for the information customers have filled at a later date or use the Document of Record to archive forms and content together in PDF Format.  
