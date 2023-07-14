@@ -9,8 +9,7 @@ exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=en)                  |
-| AEM as a Cloud Service     | This article 
-
+| AEM as a Cloud Service     | This article         |
 
 [!DNL Adobe Experience Manager] lets you create easy-to-use Adaptive Forms that offer dynamic experiences to end users. The form layout controls how items or components are displayed in an Adaptive Form.
 

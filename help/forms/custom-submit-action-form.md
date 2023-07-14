@@ -11,8 +11,7 @@ exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html?lang=en)                  |
-| AEM as a Cloud Service     | This article
-
+| AEM as a Cloud Service     | This article         |
 
 An Adaptive Form provides multiple Submit Actions out-of-the-box (OOTB). A Submit Action specifies details of the actions to be performed on the data collected via the Adaptive Form. For example, sending data on an email. 
 
