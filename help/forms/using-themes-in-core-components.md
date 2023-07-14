@@ -226,74 +226,64 @@ Once, you are satisfied with the modifications done in a theme folder, deploy th
 #### 5. Deploy the theme {#deploy-the-theme}
 
 To deploy the theme to your Cloud Service environment using the front-end pipeline:
-5.1 [Create and clone a new repository for theme](#create-a-new-theme-repo)
+5.1 [Create a new repository for theme](#create-a-new-theme-repo)
 5.2 [Commit and push the changes](#committing-the-changes)
 5.3 [Run a frontend pipeline](#run-a-frontend-pipeline)
 
-##### 5.1 Create and clone a new repository for theme on your Cloud Service environment{#create-a-new-theme-repo}
+##### 5.1 Create a new repository for theme on your Cloud Service environment{#create-a-new-theme-repo}
 
 To save the changes, create a new repository for theme. Login to your [AEM Cloud Manager repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) and add a new repository for your theme.
 
-1. Create a new repository for theme by clicking the **[!UICONTROL Repositories]** option. 
+1. Create a new repository for theme by clicking the **[!UICONTROL Repositories]** > **[!UICONTROL Add Repository]**. 
 
    ![create new theme repo](/help/forms/assets/createrepo_canvastheme.png)
+
    
-1. Click **[!UICONTROL Add Repository]** and specify the **Repository Name** in the **Add Repository** dialog box. Click **[!UICONTROL Save]**.
+1. Specify the **Repository Name** in the **Add Repository** dialog box. Click **[!UICONTROL Save]**.
 
    ![Add Canvas Theme Repo](/help/forms/assets/addcanvasthemerepo.png)
-
-   Once the new repository for theme is added to your AEM Cloud Manager repository, now clone it to your local machine.
-
 
 1. Click **[!UICONTROL Copy Repository URL]** to copy the URL of the created repository for theme.  
 
    ![Canvas theme URL](/help/forms/assets/copyurl_canvastheme.png)
-
-1. Open the command prompt or terminal window on your local development environment.
-
-1. Run the `git clone` command to clone a theme. 
-
-   ```
-      git clone [Path of created Git Repository for theme]
-   ```
-
-   Replace the [Path of created Git Repository for theme] with the  actual URL of the corresponding Git Repository for a theme.
-
-   For example, to clone the repository, execute the following  command:
-
-      ```
-          git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
-      ```
-
-   After executing the command successfully, you have a local  copy of the repository created for theme is available on your machine.
    
    >[!NOTE]
    > 
-   > One theme repository can be used for multiple themes, but the front-end pipeline configuration should be updated accordingly.
+   > * Make note of the copied URL for future.
+   > * One theme repository is used for multiple themes, but the front-end pipeline configuration should be updated accordingly.
 
 
-##### 5.2. Commit and push the changes {#committing-the-changes}
+##### 5.2. Push the changes in the created repository {#committing-the-changes}
 
-Now, commit the changes to the theme repository of your AEM Forms Cloud Service. It makes the customized theme available in your AEM Forms Cloud Service environment for Adaptive Forms authors to use. 
+Now, push the changes to the theme repository of your AEM Forms Cloud Service. It makes the customized theme available in your AEM Forms Cloud Service environment for Adaptive Forms authors to use. 
 
-1. Open the command prompt or terminal window on your local development environment.
+1. From the command line, navigate to the root of the `aem-forms-theme-canvas` theme folder, in which you are making customizations, on your local machine. 
 
-1. Move the files of theme repository that you are editing into the cloned repository of an AEM cloud service with a command:
-   * For Linux/Unix:
-   `cp -r [source-theme-folder]/* [destination-cloud-repo]`
-   For example, use this command `cp -r [C:/cloned-git-canvas/*] [C:/cloned-theme-repo]`
+1. Open the command prompt or terminal window on your local development environment and execute the following command.
 
-   * For Windows:
-   `xcopy [source-theme-folder]\* [destination-cloud-repo]`
-   For example, use this command `xcopy [C:\cloned-git-canvas\*] [C:\cloned-theme-repo]`
+   ``` 
+   git remote add [name-for-createdrepository] [URL of created repository]
 
-1. Navigate to the directory of the theme repository.
-1. Commit and push the theme files that you moved into with the following commands.
+   ```
 
-   ```text
-   git add .
-   git commit -a -m "Adding theme files"
-   git push
+   For example: 
+
+   ```
+   git remote add cloud https://git.cloudmanager.adobe.com/stage-aemformsdev/customcanvastheme/
+
+   ```
+
+1. Push the theme files that you moved into with the following commands.
+
+   ```
+   git push [name-for-createdrepo] 
+   ```
+
+   For example:
+   
+   ```
+   git push cloud 
+
    ```
 
 The customizations are pushed to the AEM cloud service theme repository.
