@@ -269,7 +269,7 @@ Now, push the changes to the theme repository of your AEM Forms Cloud Service. I
    For example: 
 
    ```
-   git remote add cloud https://git.cloudmanager.adobe.com/stage-aemformsdev/customcanvastheme/
+   git remote add cloudrepo https://git.cloudmanager.adobe.com/stage-aemformsdev/customcanvastheme/
 
    ```
 
@@ -282,7 +282,7 @@ Now, push the changes to the theme repository of your AEM Forms Cloud Service. I
    For example:
    
    ```
-   git push cloud 
+   git push cloudrepo 
 
    ```
 
@@ -299,6 +299,8 @@ The theme is deployed using a front end pipleline.
 
 1. Create the front-end pipeline to deploy the customized theme. Learn [how to set up a pipeline to deploy customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline). 
 1. Run the created frontend pipeline to deploy customized theme folder under the **[!UICONTROL Style]** tab of an Adaptive Form creation wizard. 
+
+![](/help/forms/assets/canvas-theme-frontendpipeline.gif)
 
 >[!NOTE]
 >
