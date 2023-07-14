@@ -57,8 +57,6 @@ Customizing a theme refers to the process of modifying and personalizing the app
 * [Enable Adaptive Forms Core Components](/help/forms/enable-adaptive-forms-core-components.md)  for your local development and Cloud Service environment. 
 * Configure [front-end deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=en) for your Cloud Service environment. Alternatively, you can configure the pipeline later, giving you the flexibility to prioritize testing and refining the theme before setting up the deployment pipeline.
 
-
-
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
 
@@ -68,7 +66,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 After learning the pre-requisites and configuring the development environment, you are well-prepared to start customizing your theme according to your specific requirements.
 
-### Customize a theme {#steps-to-customize-a-theme-core-components}
+### Steps to customize a theme {#steps-to-customize-a-theme-core-components}
 
 Customzing a theme is a multi-step process. Perform the steps in listed order to customize the theme:
 
