@@ -10,7 +10,7 @@ exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html)                  |
 | AEM as a Cloud Service     | This article         |
 
 ## Overview {#overview}

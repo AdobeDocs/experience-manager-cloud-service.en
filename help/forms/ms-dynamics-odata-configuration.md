@@ -10,7 +10,7 @@ exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html)                  |
 | AEM as a Cloud Service     | This article        |
 
  ![data-integeration](assets/data-integeration.png)

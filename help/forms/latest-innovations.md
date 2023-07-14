@@ -18,7 +18,7 @@ An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start us
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/release-notes-new-features/whats-new.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/release-notes-new-features/whats-new.html)                  |
 | AEM as a Cloud Service     | This article        |
 
 Some of the top innovations in Adobe Experience Manager Forms include:

@@ -9,7 +9,7 @@ exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html)                  |
 | AEM as a Cloud Service     | This article         |
 
 If you plan to be out of the office, you can specify what happens to items that are assigned to you for that period.

@@ -11,7 +11,7 @@ exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html)                  |
 | AEM as a Cloud Service     | This article         |
 
 ## Introduction {#introduction}
