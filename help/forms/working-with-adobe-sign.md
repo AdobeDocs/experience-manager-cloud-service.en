@@ -13,7 +13,7 @@ level: Intermediate
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=en)                  |
-| AEM as a Cloud Service     | This article 
+| AEM as a Cloud Service     | This article         |
 
 
 [!DNL Adobe Sign] enables e-signature workflows for Adaptive Forms. E-Signatures improve workflows to process documents for legal, sales, payroll, human resource management, and more areas.

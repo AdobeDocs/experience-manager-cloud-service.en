@@ -8,8 +8,7 @@ exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=en)                  |
-| AEM as a Cloud Service     | This article
-
+| AEM as a Cloud Service     | This article         |
 
 ## Overview {#overview}
 

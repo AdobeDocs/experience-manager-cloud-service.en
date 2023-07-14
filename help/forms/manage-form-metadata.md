@@ -10,8 +10,7 @@ exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html?lang=en)                  |
-| AEM as a Cloud Service     | This article
-
+| AEM as a Cloud Service     | This article          |
 
 Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 

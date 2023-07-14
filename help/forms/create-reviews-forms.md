@@ -11,9 +11,7 @@ exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html?lang=en)                  |
-| AEM as a Cloud Service     | This article
-
-
+| AEM as a Cloud Service     | This article         |
 
 ## Review {#review}
 
