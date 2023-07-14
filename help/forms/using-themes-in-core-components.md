@@ -221,7 +221,7 @@ Once, you are satisfied with the modifications done in a theme folder, deploy th
 >
 > * Specify the `AEM URL` as `http://[author-instance]/` in the `.env` file of a theme folder.
 > * Click `SIGN IN LOCALLY (ADMIN TASKS ONLY)`.
-> * Ensure that user is a member of the `forms-users` group.
+> * Ensure that the user is a member of the `forms-users` group. To create local user: Go to **[!UICONTROL AEM Home]** > **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]** 
 
 #### 5. Deploy the theme {#deploy-the-theme}
 
@@ -299,12 +299,6 @@ The theme is deployed using a front end pipleline.
 
 1. Create the front-end pipeline to deploy the customized theme. Learn [how to set up a pipeline to deploy customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline). 
 1. Run the created frontend pipeline to deploy customized theme folder under the **[!UICONTROL Style]** tab of an Adaptive Form creation wizard. 
-
-![](/help/forms/assets/canvas-theme-frontendpipeline.gif)
-
->[!NOTE]
->
->In future if you make any modifications in a theme folder, you need to rerun the above pipeline again. Hence, it is necessary to remember the name of the pipeline.
 
 Once the pipeline is successfully executed, the theme is available under the **Style** tab. Now, you can [use the deployed theme for styling an Adaptive Form](#using-theme-in-adaptive-form). 
 
