@@ -279,7 +279,7 @@ Now, commit the changes to the theme repository of your AEM Forms Cloud Service.
 1. Open the command prompt or terminal window on your local development environment.
 
 1. Move the files of theme repository that you are editing into the cloned repository of an AEM cloud service with a command:
-   * For Liux/Unix:
+   * For Linux/Unix:
    `cp -r [source-theme-folder]/* [destination-cloud-repo]`
    For example, use this command `cp -r [C:/cloned-git-canvas/*] [C:/cloned-theme-repo]`
 
