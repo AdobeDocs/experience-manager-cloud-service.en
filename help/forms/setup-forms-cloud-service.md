@@ -5,6 +5,12 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 ---
 # Onboard to [!DNL AEM Forms] as a Cloud Service {#overview}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html?lang=en)                  |
+| AEM as a Cloud Service     | This article        |
+
+
 ## Decide personas {#personas-aem-forms-project}
 
 <!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Before onboarding to an [!DNL AEM Forms] as a Cloud Service environment, decide personas and structure a team for your project. A typical [!DNL AEM Forms] project team has the following personas:

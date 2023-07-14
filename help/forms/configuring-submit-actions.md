@@ -5,6 +5,12 @@ exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 ---
 # Adaptive Form Submit Action {#configuring-the-submit-action}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=en)                  |
+| AEM as a Cloud Service     | This article 
+
+
 A Submit Action is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. Adaptive Forms provide some Submit Actions out of the box. The Submit Actions available out of the box are:
 
 * [Submit to REST endpoint](#submit-to-rest-endpoint)
