@@ -10,7 +10,7 @@ exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html)                  |
 | AEM as a Cloud Service     | This article         |
 
 Adaptive Forms enables Form Authors to create multi-step data capture experience with great ease. It comes with built-in support for creating multiple panels and associating each panel with different navigation patterns. Form Authors can group form fields in logical sections and represent a group as a panel. The overall navigation between panels is controlled using the panel layout. Authors can choose to arrange panels in different layouts, for example, placing sequentially using the Wizard layout or in an ad hoc manner using the Tabbed layout. For information about panel layouts, see [Layout capabilities of Adaptive Forms](layout-capabilities-adaptive-forms.md).

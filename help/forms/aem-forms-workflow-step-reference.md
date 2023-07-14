@@ -8,7 +8,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html)                  |
 | AEM as a Cloud Service     | This article            |
 
 You use workflow models to convert a business logic to automated repetitive process. A model helps you define and execute a series of steps. You can also define model properties, such as whether the workflow is transient or uses multiple resources. You can [include various AEM Workflow steps in a model to achieve the business logic](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).   

@@ -8,7 +8,7 @@ contentOwner: khsingh
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html)                  |
 | AEM as a Cloud Service     | This article        |
 
 

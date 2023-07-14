@@ -7,7 +7,7 @@ exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html)                  |
 | AEM as a Cloud Service     | This article        |
 
 You can create and apply themes to stylize an Adaptive Form<!-- or an interactive communication-->. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. Theme is managed independently without a reference to an Adaptive Form<!-- or interactive communication -->.

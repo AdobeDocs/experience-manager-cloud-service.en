@@ -11,7 +11,7 @@ exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-forms-tables.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-forms-tables.html)                  |
 | AEM as a Cloud Service     | This article        |
 
 

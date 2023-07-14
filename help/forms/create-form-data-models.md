@@ -10,7 +10,7 @@ exl-id: b17b7441-912c-44c7-a835-809f014a8c86
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)                  |
 | AEM as a Cloud Service     | This article        |
 
 

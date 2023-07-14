@@ -7,7 +7,7 @@ exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html)                  |
 | AEM as a Cloud Service     | This article        |
 
 When you author a form, you add fields and components to define form structure, content, and actions in the editor. You add fields and components in the `guideRootPanel` of the form container. With Template Editor, you can create a template that contains basic structure and initial content that authors can use to create forms.

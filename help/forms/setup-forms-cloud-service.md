@@ -7,7 +7,7 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html)                  |
 | AEM as a Cloud Service     | This article        |
 
 

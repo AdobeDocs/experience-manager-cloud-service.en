@@ -15,7 +15,7 @@ exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html)                  |
 | AEM as a Cloud Service     | This article        |
 
 ## Overview {#overview}

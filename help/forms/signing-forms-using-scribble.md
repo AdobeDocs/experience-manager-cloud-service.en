@@ -15,7 +15,7 @@ exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html)                  |
 | AEM as a Cloud Service     | This article        |
 
 
