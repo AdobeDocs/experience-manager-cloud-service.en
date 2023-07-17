@@ -36,6 +36,12 @@ Have a look at the July 2023 Release Overview video for a summary of the feature
 * Images can now be dynamically optimized for web-delivery in headless scenarios using AEM GraphQL. [Query variables](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) can be defined in GraphQL queries to allow decoupled client applications request accordingly optimized images from AEM. 
 * Tags on [Content Fragment Variations](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) can now be output to JSON using the AEM GraphQL conent delivery API. 
 
+### New features in [!DNL Experience Manager Sites] prerelease {#prerelease-sites}
+
+* The [Content Fragment Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en) now allows users to view tags and search by tags applied as metadata to Content Fragments. Users will no longer have to swtich to the Assets UI for this capability, reducing context switching and improving efficiency. 
+
+![Tagging in Content Fragment Console](/help/assets/content-fragments-console-tags.png)
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features in [!DNL Assets] {#assets-features}
