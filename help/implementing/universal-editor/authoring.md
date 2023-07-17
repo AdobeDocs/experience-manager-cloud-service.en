@@ -11,7 +11,7 @@ Learn how easy and intuitive it is for content authors to create content using t
 
 The Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
 
-To do this, the Universal Editor provides content authors with an intuitive UI that requires minimal training to simply be able to jump in and begin editing content.
+To do this, the Universal Editor provides content authors with an intuitive UI that requires minimal training to simply be able to jump in and begin editing content. This document describes the authoring experience of the Universal Editor.
 
 >[!TIP]
 >
@@ -19,7 +19,7 @@ To do this, the Universal Editor provides content authors with an intuitive UI t
 
 >[!NOTE]
 >
->The Universal Editor is still in development and can currently not edit all content types.
+>The Universal Editor is still in development. It currently can not edit all content types.
 
 ## Prepare the App {#prepare-app}
 
@@ -195,13 +195,23 @@ In component mode, the page is rendered in the editor, but the content author ca
 
 ![Component mode](assets/component-mode.png)
 
+When you select a Content Fragment, the details of it are displayed in the [component rail.](#component-rail)
+
 >[!TIP]
 >
 >Use the hot key `C` to switch to component mode.
 
->[!NOTE]
+#### Edit {#edit}
+
+When in [component mode,](#component-mode) if you select a Content Fragment, the edit option appears on the mode rail.
+
+![Edit icon](assets/edit.png)
+
+Tapping or clicking the edit button opens the Content Fragment editor in a new tab, allowing you to edit referenced content as well as text and media content from within the Universal Editor.
+
+>[!TIP]
 >
->Component mode is still in development and is currently limited to selecting components.
+>Use the hot key `E` to edit a selected component.
 
 ### The Editor {#editor}
 
@@ -224,9 +234,11 @@ In properties mode, the rail shows the properties of the component currently sel
 
 ![Properties mode](assets/properties-mode.png)
 
-Details of the selected component are shown in the rail. Note that not all components have details to be shown.
+Details of the selected component are shown in the rail. If you have selected a Content Fragment by using [component mode,](#component-mode) you can modify its settings in the component rail. Changes are saved automatically by the Universal Editor.
 
 ![Component details](assets/component-details.png)
+
+Note that not all components have details that can be shown.
 
 >[!TIP]
 >
@@ -253,13 +265,17 @@ Editing content is simple and intuitive. In editing modes ([text mode](#text-mod
 
 ![Editable content is highlighted by a blue box](assets/editable-content.png)
 
-Simply tap or click on the content in the blue box to start an in-place editor to make your changes. Press enter or return to save the changes.
+Simply tap or click on the content in the blue box to start an in-place editor to make your changes. Your changes are saved automatically.
 
 ![Editing content](assets/editing-content.png)
 
 Note that in edit mode, tapping or clicking on content attempts to select it for editing. If you wish to navigate your content by following links, switch to [preview mode.](#preview-mode)
 
-Depending on the mode you are in and the content you select, you may have different in place editing options. Additionally, you may be able to review additional properties for the content using the [component rail.](#component-rail)
+Depending on the [mode](#mode-rail) you are in and the content you select, you may have different in place editing options.
+
+Additionally, you may be able to review additional properties for the content using the [component rail.](#component-rail) For example if you select a rich text component you can edit formatting options in the component rail.
+
+![Editing a rich text component](assets/rich-text-editing.png)
 
 ## Previewing Content {#previewing-content}
 
