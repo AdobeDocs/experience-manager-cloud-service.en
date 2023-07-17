@@ -28,6 +28,7 @@ Summarized below are the continuous improvements for maintenance release 12697, 
 - AEM Guides: Various Native PDF enhancements and stability fixes
 - SKYOPS-53130: Improve AC Tool support in RDE
 - SKYOPS-57146: Fix Sling deadlock on AEM startup
+- SKYOPS-61646: Last replication date is not updated after upgrade to release 12585
 
 ### Known Issues {#known-issues-12697}
 
