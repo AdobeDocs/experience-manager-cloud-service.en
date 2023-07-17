@@ -26,7 +26,7 @@ You can use the **Scribble Signature** component and **Signature Step** componen
 
  Once you tap the Done ![aem_forms_save](assets/aem_forms_save.png) icon in Scribble signature window, you cannot edit the signature. In case, if you want to edit the signature, you have to disregard the current signature and re-sign using the above Paint Brush/Keyboard option.
 
-You can tap the **Configure** ![](assets/configure.png) icon to set the aspect ratio of Scribble Signature canvas. 
+You can tap the **Configure** ![configure icon](assets/configure.png) icon to set the aspect ratio of Scribble Signature canvas. 
 * When the aspect ratio of the Scribble Signature canvas is less than 1, the geolocation information is added at the bottom of the Scribble Signature canvas.
 
 
@@ -53,7 +53,7 @@ You can tap the **Configure** ![](assets/configure.png) icon to set the aspect r
    >
    >The Signature Step component takes up full width available for the form. It is recommended to not have any other component on the section containing the Signature Step component.
 
-1. In the Content browser, tap **Form Container**, and tap the **Configure** ![](assets/configure.png) icon. It opens properties browser and displays Adaptive Form container properties. Navigate to **Adaptive Form Container** &gt; **Electronic Signature** and deselect the **Enable Adobe Sign** option. Tap the Done ![aem_forms_save](assets/aem_forms_save.png) icon to save the changes.
+1. In the Content browser, tap **Form Container**, and tap the **Configure** ![configure icon](assets/configure.png) icon. It opens properties browser and displays Adaptive Form container properties. Navigate to **Adaptive Form Container** &gt; **Electronic Signature** and deselect the **Enable Adobe Sign** option. Tap the Done ![aem_forms_save](assets/aem_forms_save.png) icon to save the changes.
 
    >[!NOTE]
    >
