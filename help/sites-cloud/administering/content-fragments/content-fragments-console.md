@@ -171,9 +171,13 @@ This will present a list of columns that you can hide or show:
 
 The Filter panel offers:
 
-* a selection of predicates; one, or more, predicates can be selected and combined to create the filter
+* a selection of predicates; 
+  * including content fragment models, localization, tags, status fields, among others
+  * one, or more, predicates can be selected and combined to create the filter
 * the opportunity to **Save** your configuration
 * the option to retrieve a saved search filter for reuse
+
+Once selected, the **Filtering by** options are shown (under the Search box). They can be deselected from there. For example:
 
 ![Content Fragments console - Filtering](assets/cfc-console-filter.png)
 
