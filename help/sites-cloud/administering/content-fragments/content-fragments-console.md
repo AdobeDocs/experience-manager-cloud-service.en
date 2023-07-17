@@ -131,15 +131,16 @@ The main/right panel (table view) of the console provides a range of information
   * Information only.
 * **Modified By**
   * Information only.
-  * Can be used for [Fast Filtering](#fast-filtering#fast-filtering)
+  * Can be used for [Fast Filtering](#fast-filtering#fast-filtering).
 * **Tags**
   * Information only.
-  * Can be used for [Fast Filtering](#fast-filtering#fast-filtering)
+  * Shows all tags related to the Content Fragment; both Main and any variations.
+  * Can be used for [Fast Filtering](#fast-filtering#fast-filtering).
 * **Published At**
   * Information only.
 * **Published By**
   * Information only.
-  * Can be used for [Fast Filtering](#fast-filtering#fast-filtering)
+  * Can be used for [Fast Filtering](#fast-filtering#fast-filtering).
 * **Referenced By**
   * Provides a link that opens a dialog listing all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click on the **Title** in the dialog.
 
