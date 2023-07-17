@@ -681,7 +681,7 @@ See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
      </tbody>
    </table>
 
-<!--
+
 
 ## About video thumbnails {#about-video-thumbnails}
 
@@ -689,9 +689,7 @@ A video thumbnail is a reduced-size version of a video frame or an image asset r
 
 All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can either play the video and pause on the frame you want to use, or you can select an image asset that you have already uploaded and *published* in your digital asset manager.
 
-Note that a custom video thumbnail image that you select from a video is not extracted and saved in the DAM as a separate and distinct asset. However, a custom video thumbnail that you select from an existing image asset is saved to the JCR. The path of the selected asset gets stored under the video asset's node as in the following example path:
-
-`/content/dam/*<folder_name*>/<*video_name*>/jcr:content/manualThumbnail`
+Note that once the thumbnail is changed for a video, thumbnail generation via Asset Compute Service on reprocessing the video is skipped.  
 
 The ability to customize a video thumbnail is only available after you have applied a video profile to the folder where the video is located.
 
@@ -706,7 +704,7 @@ The ability to customize a video thumbnail is only available after you have appl
 
 1. Navigate to an uploaded video asset whose thumbnail image you want to change.
 1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, select the video asset.
-1. On the toolbar, select the **[!UICONTROL Properties** icon (a circle with an "i" in it).
+1. On the toolbar, select the **[!UICONTROL Properties]** icon (a circle with an "i" in it).
 1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
 1. On the Change Thumbnail page, do one of the following:
 
@@ -725,7 +723,7 @@ The ability to customize a video thumbnail is only available after you have appl
 1. On the Change Thumbnail page, select **[!UICONTROL Save Change]**.
 1. On the video's Properties page, in the upper-right corner, select **[!UICONTROL Save & Close]**.
 
--->
+
 
 <!--
 
