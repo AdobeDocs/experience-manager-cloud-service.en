@@ -138,32 +138,42 @@ Perform the following instructions to clone a reference theme:
 >
 > * Update the name to a simple text as a user-provided name.
 
+
 #### 3. Customize the theme {#make-changes-in-the-theme}
 
-Customization of a theme is possible at two levels:
+You can customize individual components or make theme level changes using global variables of a theme. Any changs made to global variables impacts all the individual components. For example, you can use Global variables to change the border color of all the components of an Adaptive Form and a bright fill color to set CTA (Call to action) using button components:
 
-* [Theme customization at a global level](#theme-customization-global-level)
+* [Set theme level styles](#theme-customization-global-level)
 
-* [Component-based customization specific to Adaptive Forms](#component-based-customization)
+* [Set component level styles](#component-based-customization)
 
-##### Theme customization at a global level{#theme-customization-global-level}
+##### Set theme level styles{#theme-customization-global-level}
 
-Modify the `variable.scss` file to customize a theme for all the Adaptive Form components at global level. Perform the following steps to change the `$dark-gray` colour in the theme folder: 
+The `variable.scss` file contains the global of theme. You can update these variables bring theme level style related changes. To set a theme level style:
 
-1. In your text editor, open the file `<your-theme-sources>/src/site/_variables.scss`.
+1. Open the `<your-theme-sources>/src/site/_variables.scss` file for editing.
+1. Change the value of any property. For example, the default error color is `red`. To change the error color from `red` to `blue`, change the color hex code of the `$errorvariable`. For example, `$error: #196ee5`.
+1. Save and close the file.
 
-1. Edit the variable for the `$dark-gray` colour to `red`.
-1. Save the changes.
+Similarly, you can use the variable.scss file to set font family and type, theme and font colors, font size, theme spacing, error icon, theme border styles, and more variable that impact multiple Adaptive Form components.
 
-    ![Edit theme](/help/forms/assets/edit_theme.png)
+   ![Edit theme](/help/forms/assets/edit_theme.png)
 
-##### Component-based customization specific to Adaptive Forms {#component-based-customization}
+##### Set component level styles {#component-based-customization}
 
-You can also change font, color, size, and other CSS properties for all Adaptive Form core components, for example button, checkbox, container, footer, and more. You can style button or checkbox by editing the CSS file of the specific component to align it with your organization's style. For example, To change the font color of button component, by modifying the `button.scss` file:
+You can also change font, color, size, and other CSS properties of a specific Adaptive Form core component. For example button, checkbox, container, footer, and more. You can style button or checkbox by editing the CSS file of the specific component to align it with your organization's style. To customize a style of a component:
 
-1. Open the file `<your-theme-sources>/src/components/button/button.scss`, in your text editor,.
-1. Modify the `button.scss` file to customize or update a theme at a component level, by changing the label color for the button component to `white` color.
-1. Save the changes.
+1. Open the file `<your-theme-sources>/src/components/<component>/<component.scss>` for editing. For example, to change the font color of the button component, open the `<your-theme-sources>/src/components/button/button.scss`, file .
+1. Change the value of any as per your requirements. For example, to change the color of the button component on mouse hover to `green`, change the value of the `color: $white` property in the `cmp-adaptiveform-button__widget:hover` class to hex code `#12B453` or any other shade of `green`. The final code looks like the following:
+
+   ```
+   .cmp-adaptiveform-button__widget:hover {
+   background: $dark-gray;
+   color: #12B453;
+   }
+   ```
+
+1. Save and close the file.
 
    ![Edit Textbox CSS](/help/forms/assets/edit_color_textbox.png)
 
@@ -201,15 +211,26 @@ The theme customizations are tested on a local environment. You can preview the 
 1. Execute `npm install` and npm retrieves dependencies and installs the project.
 1. Execute `npm run live` and the proxy server listens to file change and updates them in browser.
 
+   >[!NOTE]
+   >
+   > If an error occurs during the execution of the `npm run live` command, execute the following commands prior to running the `npm run live` command:
+   >
+   > * `npm install parcel --save-dev`
+   > * `npm i @parcel/transformer-sass`
+
 When you save the `_variables.scss` and `button.scss` files, the proxy server recognizes the changes via the line `[Browsersync] File event [change]`.
 
    ![Proxy browsersync](/help/forms/assets/browser_sync.png)
 
-You are directly redirected to a browser, which displays the customized changes in an Adaptive Form:
+You are directly redirected to a browser, which displays the customized changes in an Adaptive Form at global level by editing the `_variables.scss` file:
 
-   ![change AF theme](/help/forms/assets/edit_theme_af.png)
+![change AF theme](/help/forms/assets/canvas_edit_theme.gif)
 
-The theme customizations perform changes at both the global level and the component level. The font colour and the border colour of an Adaptive Form changed to `red` colour by updating the `_variables.scss` file in a theme folder. The label colour for the button component is customized to `white` colour by modifying the `button.scss` file.  
+You can also view changes at the component level using local proxy server by modifying the `button.scss`:
+
+   ![change AF theme](/help/forms/assets/canvas_component-level-theme-change.gif)
+
+The theme customizations perform changes at both the global level and the component level. The error messages of an Adaptive Form changed to `blue` colour by updating the `_variables.scss` file in a theme folder. The label colour for the button component for hovering action is customized to `green` colour by modifying the `button.scss` file.  
 
 Once, you are satisfied with the modifications done in a theme folder, deploy the theme to your Cloud Service environment using the front-end pipeline. 
 
@@ -225,7 +246,7 @@ Once, you are satisfied with the modifications done in a theme folder, deploy th
 
 To deploy the theme to your Cloud Service environment using the front-end pipeline:
 5.1 [Create a new repository for theme](#create-a-new-theme-repo)
-5.2 [Commit and push the changes](#committing-the-changes)
+5.2 [Push the changes](#committing-the-changes)
 5.3 [Run a frontend pipeline](#run-a-frontend-pipeline)
 
 ##### 5.1 Create a new repository for theme on your Cloud Service environment{#create-a-new-theme-repo}
@@ -261,26 +282,19 @@ Now, push the changes to the theme repository of your AEM Forms Cloud Service. I
 
    ``` 
    git remote add [name-for-createdrepository] [URL of created repository]
+   git add .
+   git commit
+   git push [name-for-createdrepository]
 
    ```
 
    For example: 
 
    ```
-   git remote add cloudrepo https://git.cloudmanager.adobe.com/stage-aemformsdev/customcanvastheme/
-
-   ```
-
-1. Push the theme files that you moved into with the following commands.
-
-   ```
-   git push [name-for-createdrepo] 
-   ```
-
-   For example:
-   
-   ```
-   git push cloudrepo 
+   git remote add canvascloudthemerepo https://git.cloudmanager.adobe.com/stage-aemformsdev/customcanvastheme/
+   git add .
+   git commit
+   git push canvascloudthemerepo 
 
    ```
 
@@ -291,11 +305,14 @@ The customizations are pushed to the AEM cloud service theme repository.
 Your customizations are now safely stored in the AEM cloud service repository.    
 
 
-##### 5.3 Run frontend pipeline {#run-a-frontend-pipeline}
+##### 5.3 Run the frontend pipeline {#run-a-frontend-pipeline}
 
 The theme is deployed using a front end pipleline.
 
 1. Create the front-end pipeline to deploy the customized theme. Learn [how to set up a pipeline to deploy customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline). 
+
+   ![create front-endpipeline](/help/forms/assets/canvas-theme-frontendpipeline.gif)
+
 1. Run the created frontend pipeline to deploy customized theme folder under the **[!UICONTROL Style]** tab of an Adaptive Form creation wizard. 
 
 Once the pipeline is successfully executed, the theme is available under the **Style** tab. Now, you can [use the deployed theme for styling an Adaptive Form](#using-theme-in-adaptive-form). 
