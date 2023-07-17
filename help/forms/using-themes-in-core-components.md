@@ -356,5 +356,8 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 
 1. Which customization takes priority when making customizations in a theme folder at both the global level and component level?
 
-   * When customizations are made at both the global level and component level, the customization at the component level takes priority.  
+   When customizations are made at both the global level and component level, the customization at the component level takes priority.  
 
+1. What takes precedence when embedding or creating an Adaptive Form on a Sites page with a customized theme applied?
+
+   If you embed or create an Adaptive Form on a Sites page with a customized theme applied, the theme of the Adaptive Form takes precedence on the Sites page.
