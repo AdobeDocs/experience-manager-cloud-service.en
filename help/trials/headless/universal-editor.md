@@ -22,11 +22,27 @@ index: no
 >title="In this module, you learned how to customize content using the Universal Editor."
 >abstract=""
 
-## Use the Emulator to See Your Content As Your Readers Do {#emulators}
+## Edit Text in Context {#edit-text}
 
-The Universal Editor allows you to interact with your content within its context, seeing the content as it is delivered to your end users and allowing you to edit it in-place.
+Using the Universal Editor, you can edit your text in-context and in-place, allowing simple and intuitive content authoring.
 
-1. The Universal Editor presents your content as your readers will see it, regardless of device. By default the editor renders the desktop version of your content. Tap or click the emulator button at the top-right of the editor to change the target device.
+Editing in-place and in-context can often be advantageous for certain authors over structure content editing in the Content Fragment editor which you saw in previous modules.
+
+1. Tap or click the title of the latest article to edit it.
+
+1. The component is selected as indicated by a blue border with a tab indicating that it is a text component. A cursor is in the border awaiting text input. Change the text to `Aloha Spirit in Lofoten`.
+
+   ![Editing text in the Universal Editor](assets/do-not-localize/ue-edit-text-2.png)
+
+1. Press the enter/return key or tap or click outside of the text component and your changes are saved automatically.
+
+The Universal Editor saves your changes automatically, but they are only persisted in the authoring environment. You still need to publish them for your readers to see.
+
+## Experience Your Content As Your Readers Do {#emulators}
+
+The Universal Editor allows you to interact with your content within its context, seeing the content as it is delivered to the devices of your end users
+
+1. By default the editor renders the desktop version of your content. Tap or click the emulator button at the top-right of the editor to change the target device.
 
    ![The emulator menu item](assets/do-not-localize/ue-emulator-1.png)
 
@@ -40,19 +56,6 @@ The Universal Editor allows you to interact with your content within its context
 
 You can also specify exact dimensions for the emulator and rotate the emulated device in order to view your content on any potential target device.
 
-## Edit Text in Context {#edit-text}
-
-You can edit your text in-context and in-place, allowing simple and intuitive content authoring.
-
-1. Tap or click the title of the latest article to edit it.
-
-1. The component is selected as indicated by a blue border with a tab indicating that it is a text component. A cursor is in the border awaiting text input. Change the text to `Aloha Spirit in Lofoten`.
-
-   ![Editing text in the Universal Editor](assets/do-not-localize/ue-edit-text-2.png)
-
-1. Press the enter/return key or tap or click outside of the text component and your changes are saved automatically.
-
-The Universal Editor saves your changes automatically, but they are only persisted in the authoring environment. You still need to publish them for your readers to see.
 
 ## Previewing and Publishing {#preview}
 
