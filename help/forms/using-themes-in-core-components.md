@@ -224,16 +224,16 @@ When you save the `_variables.scss` and `button.scss` files, the proxy server re
 
    ![Proxy browsersync](/help/forms/assets/browser_sync.png)
 
-You are directly redirected to a browser, which displays the customized changes in an Adaptive Form at global level by editing the `_variables.scss` file:
+You are directly redirected to a browser, which displays the customized changes in an Adaptive Form. The theme customizations perform changes at both the global level and the component level. The error messages of an Adaptive Form are changed to the `blue` color by updating the `_variables.scss` file in a theme folder. The label color for the button component during hovering action is customized to `green` by modifying the `button.scss` file.
+
+**Previewing theme level style**
 
 ![Example: Error color set to blue](/help/forms/assets/theme-level-changes.png)
 
-You can also preview the changes at the component level using the local proxy server by modifying the `button.scss` file:
+**Previewing component level style**
 
-   
    ![Example: Hover color set to green](/help/forms/assets/button-customization.png)
 
-The theme customizations perform changes at both the global level and the component level. The error messages of an Adaptive Form changed to `blue` colour by updating the `_variables.scss` file in a theme folder. The label colour for the button component for hovering action is customized to `green` colour by modifying the `button.scss` file.  
 
 >[!NOTE]
 >
