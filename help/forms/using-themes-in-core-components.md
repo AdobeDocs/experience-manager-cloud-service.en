@@ -183,8 +183,8 @@ You can also change font, color, size, and other CSS properties of a specific Ad
 #### 4. Test the customized theme {#test-the-theme}
 
 The theme customizations are tested on a local environment. You can preview the changes in the local proxy server and customize the theme according to the requirements for different AEM components. To test the customized theme and see the customizations in real time, perform the following steps:
-4.1 [Rename the env_template file](#rename-env-file-theme-folder)
-4.2 [Start a local proxy server](#start-a-local-proxy-server)
+   4.1 [Rename the env_template file](#rename-env-file-theme-folder)
+   4.2 [Start a local proxy server](#start-a-local-proxy-server)
 
 ##### 4.1. Rename the env_template file {#rename-env-file-theme-folder}
 
@@ -249,9 +249,9 @@ Once, you are satisfied with the modifications done in a theme folder, deploy th
 #### 5. Deploy the theme {#deploy-the-theme}
 
 To deploy the theme to your Cloud Service environment using the front-end pipeline:
-5.1 [Create a new repository for theme](#create-a-new-theme-repo)
-5.2 [Commit and Push the changes in the repository for theme](#committing-the-changes)
-5.3 [Run a frontend pipeline](#run-a-frontend-pipeline)
+   5.1 [Create a new repository for theme](#create-a-new-theme-repo)
+   5.2 [Commit and Push the changes in the repository for theme](#committing-the-changes)
+   5.3 [Run a frontend pipeline](#run-a-frontend-pipeline)
 
 ##### 5.1 Create a new repository for theme on your Cloud Service environment{#create-a-new-theme-repo}
 
