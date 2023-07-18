@@ -31,7 +31,10 @@ Have a look at the June 2023 Release Overview video for a summary of the feature
 
 ### New features in [!DNL Experience Manager Sites] {#sites-features}
 
-* Content Fragments and their references can now be published to the [AEM Preview Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) using the [Content Fragment Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), allowing users to preview the final experience on a decoupled preview application before going live.
+* Content Fragments and their references can now be published to the [AEM Preview Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) using the [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md), allowing users to preview the final experience on a decoupled preview application before going live.
+
+![Preview in Content Fragment Console](/help/assets/content-fragments-console-preview.png)
+
 * Images can now be dynamically optimized for web-delivery in headless scenarios using AEM GraphQL. [Query variables](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) can be defined in GraphQL queries to allow decoupled client applications request accordingly optimized images from AEM. 
 * Tags on [Content Fragment Variations](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) can now be output to JSON using the AEM GraphQL conent delivery API. 
 
