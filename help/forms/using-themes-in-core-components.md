@@ -66,7 +66,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 After learning the pre-requisites and configuring the development environment, you are well-prepared to start customizing your theme according to your specific requirements.
 
-### Steps to customize a theme {#steps-to-customize-a-theme-core-components}
+### Customize a theme {#steps-to-customize-a-theme-core-components}
 
 Customzing a theme is a multi-step process. Perform the steps in listed order to customize the theme:
 
@@ -270,7 +270,6 @@ To save the changes, create a new repository for theme. Login to your [AEM Cloud
    > 
    > * Make note of the copied URL for future.
    > * One theme repository is used for multiple themes, but the front-end pipeline configuration should be updated accordingly.
-
 
 ##### 5.2. Push the changes in the created repository {#committing-the-changes}
 
