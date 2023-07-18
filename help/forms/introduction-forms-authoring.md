@@ -13,6 +13,11 @@ exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 ---
 # Adaptive Forms editor {#introduction-to-authoring-adaptive-forms}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html)                  |
+| AEM as a Cloud Service     | This article        |
+
 ## Overview {#overview}
 
 Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. [!DNL AEM Forms] provides an intuitive user interface and out-of-the-box components for creating and working with Adaptive Forms. You can choose to create an Adaptive Form based on a form model or schema or without a form model. It is important to carefully choose the form model that not only suits your requirements but extends your existing infrastructural investments and assets. You get to choose from the following options to create an Adaptive Form:

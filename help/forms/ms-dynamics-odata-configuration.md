@@ -8,6 +8,11 @@ exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 ---
 # [!DNL Microsoft Dynamics] OData configuration {#microsoft-dynamics-odata-configuration}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html)                  |
+| AEM as a Cloud Service     | This article        |
+
  ![data-integeration](assets/data-integeration.png)
 
 [!DNL Microsoft Dynamics] is a Customer Relationship Management (CRM) and Enterprise Resource Planning (ERP) software that provides enterprise solutions for creating and managing customer accounts, contacts, leads, opportunities, and cases. [[!DNL Experience Manager Forms] Data Integration](data-integration.md) provides an OData cloud service configuration to integrate Forms with both online and on-premises [!DNL Microsoft Dynamics] server. It enables you to create Form Data Model based on the entities, attributes, and services defined in [!DNL Microsoft Dynamics] service. The Form Data Model can be used to create Adaptive Forms that interact with [!DNL Microsoft Dynamics] server to enable business workflows. For example:
