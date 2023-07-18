@@ -1,6 +1,6 @@
 ---
 title: Universal Editor
-description: Explore Explore the Universal Editor and learn how it enables anyone to edit any aspect of your content in any implementation.
+description: Explore the Universal Editor and learn how it enables anyone to edit any aspect of your content in any implementation.
 hidefromtoc: yes
 index: no
 ---
@@ -85,4 +85,4 @@ The Universal Editor gives you quick access to the Content Fragment editor as we
 
 1. Tap or click the **Edit** icon on the mode rail to open the Content Fragment editor on a new tab.
 
-On the new tab you can now edit your Content Fragment that you selected in the Universal Editor.
+On the new tab, you can now edit your Content Fragment that you selected in the Universal Editor.
