@@ -1,15 +1,15 @@
 ---
-title: Universal Editor
-description: Explore the Universal Editor and learn how it enables anyone to edit any aspect of your content in any implementation.
+title: Editing In-Context
+description: Explore howe you can use the Universal Editor to edit any aspect of your content in-place and in-context in any implementation.
 hidefromtoc: yes
 index: no
 ---
 
-# Universal Editor {#universal-editor}
+# Editing In-Context {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Universal editor"
+>title="Editing In-Context"
 >abstract="See how your headless apps can instrument the Universal Editor to bring low-friction, in-context editing to the fingertips of your authors."
 
 >[!CONTEXTUALHELP]
@@ -19,14 +19,14 @@ index: no
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="In this module, you learned how to customize content using the Universal Editor."
+>title="In this module, you learned how to customize content in-context and in-place using the Universal Editor."
 >abstract=""
 
 ## Edit Text in Context {#edit-text}
 
-Using the Universal Editor, you can edit your text in-context and in-place, allowing simple and intuitive content authoring.
+For certain authors and in certain situations, editing in-place and in-context can often be advantageous over structured content editing in the Content Fragment editor, which you saw in previous modules.
 
-Editing in-place and in-context can often be advantageous for certain authors over structure content editing in the Content Fragment editor which you saw in previous modules.
+Using the Universal Editor, you can edit your text in-context and in-place, allowing simple and intuitive content authoring.
 
 1. Tap or click the title of the latest article to edit it.
 
