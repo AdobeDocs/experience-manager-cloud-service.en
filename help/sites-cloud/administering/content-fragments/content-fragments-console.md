@@ -109,8 +109,6 @@ Selecting a specific fragment will open a toolbar focused on the actions availab
 
 The main/right panel (table view) of the console provides a range of information about your Content Fragments. Some items also provide direct links to further actions and/or information:
 
-<!-- CHECK: Preview -->
-
 * **Name**
   * Provides a link to open the fragment in the editor.
 * **Model**
@@ -159,8 +157,6 @@ The main/right panel (table view) of the console provides a range of information
 ## Select the Available Columns {#select-available-columns}
 
 As with other consoles you can configure the columns that are visible, and available for action:
-
-<!-- CHECK: Preview -->
 
 ![Content Fragments console - column configuration](assets/cfc-console-column-icon.png)
 
