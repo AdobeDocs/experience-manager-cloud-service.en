@@ -144,6 +144,14 @@ Use [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience
 
 You can send an email to `aem-forms-headless@adobe.com` from your official email ID to join the early adopter program. 
 
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### Actions Center {#actions-center}
+
+Subscribe to email notifications that alert you when critical incidents happen requiring immediate action, and also with personalized recommendations to optimize your site. [Actions Center](/help/operations/actions-center.md) serves as a hub where you can review these alerts, such as blocked replication queues or expiring credentials, and mark them as resolved.
+
+![Actions Center screenshot](/help/assets/assets/actions-center.png)
+
 
 ## Maintenance Release Notes {#maintenance}
 
