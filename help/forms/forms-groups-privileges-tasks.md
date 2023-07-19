@@ -25,19 +25,19 @@ Once you setup [!DNL AEM Forms] as a Cloud Service, the groups listed in the bel
      <li>Create themes</li> 
     </ul> </td> 
   </tr>
-  <tr>
+  <!-- <tr>
    <td>[!DNL forms-power-user]</td> 
    <td>
     <ul> 
      <li>Create, preview, publish, and submit Adaptive Forms</li> 
-     <!-- <li>Create, preview, and publish interactive communications and document fragments</li> 
-     <li>Create scripts for Adaptive Forms using code editor</li> -->
+     <li>Create, preview, and publish interactive communications and document fragments</li> 
+     <li>Create scripts for Adaptive Forms using code editor</li> 
      <li>Upload assets including scripts</li> 
      <li>Create themes</li> 
      <li>Import packages containing XDP</li> 
     </ul> </td> 
   </tr>
-  <!-- <tr>
+ <tr>
    <td>forms-submission-reviewers</td> 
    <td>
     <ul> 
@@ -94,3 +94,14 @@ Once you setup [!DNL AEM Forms] as a Cloud Service, the groups listed in the bel
   </tr>
  </tbody>
 </table>
+
+## See also
+
+* [Onboard to a Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
+* [Setup a local development environment](/help/forms/setup-local-development-environment.md)
+* [Migrate from AEM 6.5 Forms to Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+* [Create a standalone Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+* [Add an Adaptive Form to AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+

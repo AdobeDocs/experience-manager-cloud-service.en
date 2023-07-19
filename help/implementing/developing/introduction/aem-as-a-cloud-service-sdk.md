@@ -28,6 +28,10 @@ The AEM as a Cloud Service SDK is used to build and deploy custom code. For furt
 
 The same steps are executed by Cloud Manager when deploying to Cloud Environments. Performing builds locally allows for local development and testing. Developers can efficiently discover code or structural issues before committing to source control and triggering Cloud Manager deployments, which can take longer.
 
+>[!NOTE]
+>
+>The AEM as a Cloud Service SDK should be built with a distribution and version of Java supported by [Cloud Manager's build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). AEM as a Cloud Service customers may download the Oracle JDK from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) and have Java 11 Extended Support until September 2026 due to Adobe’s licensing and support terms for the Oracle Java technology when used in Adobe Experience Manager projects.
+
 ## Accessing the AEM as a Cloud Service SDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * You can check the AEM Admin Console's **About Adobe Experience Manager** icon to find out the version of AEM you are running on production.
