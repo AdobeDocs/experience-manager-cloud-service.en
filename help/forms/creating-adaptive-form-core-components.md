@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
 ---
-# Create an Adaptive Form (Core Components) {#creating-an-adaptive-form-core-components}
+# Create an Adaptive Form {#creating-an-adaptive-form-core-components}
 
 Adaptive Forms let you create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provides business user-friendly wizard to quickly create Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. 
 
@@ -38,7 +38,7 @@ You require the following to create an Adaptive Form:
 *   **Permissions**: Add your users to [!DNL forms-users] group. The members of the [!DNL forms-users] group have permissions to create an Adaptive Form. For detailed list of forms-specific user groups, see [Groups and permissions](forms-groups-privileges-tasks.md).
 
 
-## Create an Adaptive Form (Core Components) {#create-an-adaptive-form-core-components}
+## Create an Adaptive Form  {#create-an-adaptive-form-core-components}
 
 1.  Log in to your [!DNL Experience Manager Forms] Author instance. It can be a Cloud instance or a local development instance.
 
