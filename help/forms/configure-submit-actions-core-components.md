@@ -6,17 +6,17 @@ hidefromtoc: yes
 ---
 # Adaptive Form Submit Action {#configuring-the-submit-action}
 
+<span class="preview"> Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md). </span>
+
 
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html)                  |
 | AEM as a Cloud Service     | This article         |
+| Applies to     | ✅ Adaptive Form Core Components, ❎ [Adaptive Form Foundation Components](/help/forms/configuring-submit-actions.md)          |
 
-**Applies to**: ✔️ Adaptive Form Core Components ❌ [Adaptive Form Foundation Components](/help/forms/configuring-submit-actions.md). Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](creating-adaptive-form-core-components.md).
 
-A Submit Action allows you to choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. 
-
-Forms as a Cloud Service, for Adaptive Forms built on Core Components, offers an array of pre-built Submit Actions. These out-of-the-box submit actions empower you to: 
+A Submit Action allows you to choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. Forms as a Cloud Service, for Adaptive Forms based on Core Components, offers an array of pre-built Submit Actions. These out-of-the-box submit actions empower you to: 
 
 * Effortlessly send form data via email.
 * Initiate Microsoft Power Automate flows or AEM Workflows while transmitting the data.
