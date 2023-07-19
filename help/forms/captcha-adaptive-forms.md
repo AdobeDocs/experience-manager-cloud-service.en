@@ -56,7 +56,7 @@ Form authors can use the reCAPTCHA service by Google to implement CAPTCHA in Ada
     1. Select key type, the key type should be same as the site key you configured in the google cloud project, for example, **Checkbox site key** or **Score-based site key**.
     1. Specify a threshold score in the range 0 to 1 ([Click to know more about score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Scores greater than or equal to the threshold scores identify human interaction, otherwise considered bot interaction.
 
-        >[!Note]
+        > [!Note]
         >
         > Form authors can specify a score in the range suitable for uninterrupted form submission.
     
