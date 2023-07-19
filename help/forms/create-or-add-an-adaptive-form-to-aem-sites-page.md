@@ -259,5 +259,4 @@ On submission of a form, you can redirect the user to another webpage or a messa
 
 ## Related article {#related-article}
 
-* [Create a standalone Core Components based Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
-
+* [Create a standalone Core Components based Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
