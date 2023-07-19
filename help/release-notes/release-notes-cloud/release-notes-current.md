@@ -32,12 +32,7 @@ Have a look at the July 2023 Release Overview video for a summary of the feature
 
 ### New features in [!DNL Experience Manager Sites] {#sites-features}
 
-* Content Fragments and their references can now be published to the [AEM Preview Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) using the [Content Fragment Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), allowing users to preview the final experience on a decoupled preview application before going live.
-
-![Preview in Content Fragment Console](/help/assets/content-fragments-console-preview.png)
-
-* Images can now be dynamically optimized for web-delivery in headless scenarios using AEM GraphQL. [Query variables](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) can be defined in GraphQL queries to allow decoupled client applications request accordingly optimized images from AEM. 
-* Tags on [Content Fragment Variations](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) can now be output to JSON using the AEM GraphQL conent delivery API. 
+* MSM for Content Fragments. AEM Multisite Manager is now avaiable for Content Fragments, allowing to create Content Fragment Live Copies for bulk content distribution. Granular inheritance controls are available down to Content Fragment Element and Variation level. 
 
 ### New features in [!DNL Experience Manager Sites] prerelease {#prerelease-sites}
 
@@ -149,6 +144,21 @@ Use [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience
 
 You can send an email to `aem-forms-headless@adobe.com` from your official email ID to join the early adopter program. 
 
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### Actions Center {#actions-center}
+
+Subscribe to email notifications that alert you when critical incidents happen requiring immediate action, and also with personalized recommendations to optimize your site. [Actions Center](/help/operations/actions-center.md) serves as a hub where you can review these alerts, such as blocked replication queues or expiring credentials, and mark them as resolved.
+
+![Actions Center screenshot](/help/assets/assets/actions-center.png)
+
+### CDN and WAF Rules early adopter program {#waf-early-adopter}
+
+Filter traffic at the CDN based on:
+* request headers and properties (e.g., IP address)
+* traffic patterns known to be associated with malicious traffic
+
+Interested in trying out the feature and sharing feedback? Send an email to aem-waf-adopter@adobe.com from your official email ID to learn more about the early adopter program. Space is limited.
 
 ## Maintenance Release Notes {#maintenance}
 

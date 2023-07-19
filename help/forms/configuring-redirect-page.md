@@ -8,6 +8,11 @@ exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
 ---
 # Configuring redirect page {#configuring-redirect-page}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-redirect-page.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 Form authors can configure a page for each form, to which the form users are redirected after submitting a form.
 
 1. In the edit mode, select a component, then click ![field-level](assets/select_parent_icon.svg) &gt; **[!UICONTROL Adaptive Form Container]**, and then click ![cmppr](assets/configure-icon.svg).
