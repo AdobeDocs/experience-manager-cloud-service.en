@@ -31,15 +31,15 @@ Follow the steps below to create video renditions in Screens as a Cloud Service 
 
 1. Enter the **Name**, such as **ScreensProcessingProfile**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+   ![Processing Profile dialog box showing Name field highlighted.](/help/screens-cloud/assets/configure/screens-video-3.png)
 
 1. Navigate to **Video** tab so you can add a video encoding,  and then click **Add New**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
+   ![Processing Profile dialog box showing Add New button highlighted.](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
 1. Enter the **Encoding Name** such as , **screens-fullhd** and the **Bitrate** as **2500**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4.png)
+   ![Processing Profile dialog box showing Save button highlighted.](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
    >Use the Encoding name that starts with "screens-". Only these video renditions are considered to play the video experience in Screens as a Cloud Service. Enter the bitrate that works your videos (2500 kbps for 720-px video and 5000 kbps for 1080 px).

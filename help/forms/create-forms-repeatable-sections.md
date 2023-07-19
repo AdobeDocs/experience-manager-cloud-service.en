@@ -10,7 +10,7 @@ role: Architect, Developer, Admin, User
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-forms-repeatable-sections.html?lang=en)                  |
-| AEM as a Cloud Service     | This article        | 
+| AEM as a Cloud Service     | This article        |
 
 A repeatable section refers to a part of a form that can be duplicated or repeated multiple times to collect information for multiple instances of the same data. 
 
@@ -91,6 +91,7 @@ The parent of the panel should contain a delete button to delete instance of the
     * To create a delete panel button, specify `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
     Click **Done**.
+>[!VIDEO](https://video.tv.adobe.com/v/3421620/adaptive-forms-repeatable-sections)
 
 >[!NOTE]
 >

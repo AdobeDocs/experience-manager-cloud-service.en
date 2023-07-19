@@ -60,7 +60,7 @@ If you are not implementing a React app and/or require server-side rendering an 
 
 To be able to edit AEM content with your app using the Universal Editor, CORS and cookie settings must be done within AEM.
 
-The following [OSGi configurations have to be set on the AEM authoring instance](/help/implementing/deploying/configuring-osgi.md).
+The following [OSGi configurations have to be set on the AEM authoring instance.](/help/implementing/deploying/configuring-osgi.md)
 
 * `SameSite Cookies = None` in `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
 * Remove X-FRAME-OPTIONS: SAMEORIGIN Header in `org.apache.sling.engine.impl.SlingMainServlet`
@@ -155,7 +155,7 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-## You are Ready to Use the Universal Editor {#youre-ready}
+## You're Ready to Use the Universal Editor {#youre-ready}
 
 Your app is now instrumented to use the Universal Editor!
 
