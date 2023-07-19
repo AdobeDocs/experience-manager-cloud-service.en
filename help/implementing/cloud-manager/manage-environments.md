@@ -167,6 +167,38 @@ Once activated, you can publish content to the preview service by using the Mana
 >
 >Your environment must be on AEM version `2021.05.5368.20210529T101701Z` or newer to use the preview service. Make sure that an update pipeline has successfully run on your environment so you can use the preview service.
 
+### Status of Additional Publish Regions {#additional-region-status}
+
+If you have activated additional publish regions, you can check the status of these regions from the **Environments** card.
+
+1. On the **Overview** page, locate the **Environments** card.
+
+1. On the **Environments** card, the **Status** column will reflect if there are any issues with the configured additional publish regions. Click the **Info** icon for details of the regions.
+
+   ![Additional publish regions status information on the Environments card](assets/additional-publish-region-status-environments-card.png)
+
+Alternatively you can access the same information from the **Environments** tab.
+
+1. On the **Overview** page, select the **Environments** tab.
+
+1. On the **Environments** tab, select the environment you wish to query in the left navigation panel.
+
+1. Once an environment is selected:
+   
+   * The **Environment Information** table will show which regions are configured for the selected environment.
+   * The **Status** column of the **Environment Segments** table will reflect if there are any issues with the configured additional publish regions. Hover over the status for details of any issue.
+
+   ![Additional publish regions status information on the Environments tab](assets/additional-publish-region-status-environments-tab.png)
+ 
+>[!TIP]
+>
+>If there are any issues reported with additional publish regions:
+>
+>1. Please be patient. Cloud Manager will continuously try to recover the region and it may become available at any time.
+>1. If the status has not changed after a long time, you can remove the additional publish region and re-add it (either the same region or another region) to trigger a complete deployment.
+>
+>If you continue to see issues, please reach out to Adobe Customer Care.
+
 ## Updating Environments {#updating-dev-environment}
 
 As a cloud-native service, updates of your staging and production environments within production programs are automatically managed by Adobe. 
