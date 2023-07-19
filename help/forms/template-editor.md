@@ -5,6 +5,11 @@ exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 ---
 # Create an Adaptive Form template {#adaptive-form-templates}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html)                  |
+| AEM as a Cloud Service     | This article        |
+
 When you author a form, you add fields and components to define form structure, content, and actions in the editor. You add fields and components in the `guideRootPanel` of the form container. With Template Editor, you can create a template that contains basic structure and initial content that authors can use to create forms.
 
 For example, you want all form authors to have certain text boxes, navigation buttons, and a submit button in an enrollment form. You can create a template with the components that authors can use to create a form that is consistent with other enrollment forms. When authors use the template to create an Adaptive Form, the new form inherits the structure and components you have specified in the template. Template Editor lets you:
