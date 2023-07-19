@@ -58,6 +58,7 @@ Here you can see that there are three main areas:
         * Open the appropriate fragment in the editor
         * Show information about references
         * Show information about language versions of the fragment
+        * Fast filter by a selected tag
     * By using mouse-over on the column headers, a drop-down action selector, and width sliders, are shown. These let you do the following:
       * Sort - select the appropriate action for either ascending or descending
         This will sort the entire table according to that column. Sorting is only available on appropriate columns.
@@ -108,30 +109,39 @@ Selecting a specific fragment will open a toolbar focused on the actions availab
 
 The main/right panel (table view) of the console provides a range of information about your Content Fragments. Some items also provide direct links to further actions and/or information:
 
+<!-- CHECK: Preview -->
+
 * **Name**
   * Provides a link to open the fragment in the editor.
 * **Model**
-  * Provides a link to open the fragment in the editor.
+  * Information only.
+  * Can be used for [Fast Filtering](#fast-filtering#fast-filtering)
 * **Folder**
   * Provides a link to open the folder in the console.
     Hovering over the folder name will show the JCR path.
 * **Status**
-  * Information only
+  * Information only.
+  * Can be used for [Fast Filtering](#fast-filtering#fast-filtering)
 * **Preview**
   * Information only:
     * **In sync**: Content Fragment is in-sync on the **Author** and **Preview** services.
     * **Out of sync**: Content Fragment is out-of-sync on the **Author** and **Preview** services. You need to **Publish** to **Preview** to ensure that the two instances return to being in-sync.
     * blank: The Content Fragment does not exist on the **Preview** service.
 * **Modified**
-  * Information only
+  * Information only.
 * **Modified By**
-  * Information only
+  * Information only.
+  * Can be used for [Fast Filtering](#fast-filtering#fast-filtering).
+* **Tags**
+  * Information only.
+  * Shows all tags related to the Content Fragment; both Main and any variations.
+  * Can be used for [Fast Filtering](#fast-filtering#fast-filtering).
 * **Published At**
-  * Information only
+  * Information only.
 * **Published By**
-  * Information only
+  * Information only.
+  * Can be used for [Fast Filtering](#fast-filtering#fast-filtering).
 * **Referenced By**
-
   * Provides a link that opens a dialog listing all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click on the **Title** in the dialog.
 
     ![Content Fragments console - References dialog](assets/cfc-console-references-dialog.png)
@@ -150,6 +160,8 @@ The main/right panel (table view) of the console provides a range of information
 
 As with other consoles you can configure the columns that are visible, and available for action:
 
+<!-- CHECK: Preview -->
+
 ![Content Fragments console - column configuration](assets/cfc-console-column-icon.png)
 
 This will present a list of columns that you can hide or show:
@@ -160,9 +172,13 @@ This will present a list of columns that you can hide or show:
 
 The Filter panel offers:
 
-* a selection of predicates; one, or more, predicates can be selected and combined to create the filter
+* a selection of predicates; 
+  * including content fragment models, localization, tags, status fields, among others
+  * one, or more, predicates can be selected and combined to create the filter
 * the opportunity to **Save** your configuration
 * the option to retrieve a saved search filter for reuse
+
+Once selected, the **Filtering by** options are shown (under the Search box). They can be deselected from there. For example:
 
 ![Content Fragments console - Filtering](assets/cfc-console-filter.png)
 
@@ -174,7 +190,7 @@ For example, select **Published** in the **Status** column:
 
 >[!NOTE]
 >
->Fast filtering is only supported for the **Model**, **Status**, **Modified By**, and **Published By** columns.
+>Fast filtering is only supported for the **Model**, **Status**, **Modified By**, **Tags**, and **Published By** columns.
 
 ![Content Fragments console - Filtering](assets/cfc-console-fast-filter-01.png)
 
