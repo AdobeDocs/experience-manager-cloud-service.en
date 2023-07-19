@@ -195,9 +195,13 @@ Alternatively you can access the same information from the **Environments** tab.
 >If there are any issues reported with additional publish regions:
 >
 >1. Please be patient. Cloud Manager will continuously try to recover the region and it may become available at any time.
->1. If the status has not changed after a long time, you can remove the additional publish region and re-add it (either the same region or another region) to trigger a complete deployment.
+>1. If the problem persists after a number of hous, you can remove the additional publish region and re-add it (either the same region or another region) to trigger a complete deployment.
 >
->If you continue to see issues, please reach out to Adobe Customer Care.
+>   * How long you wait for the system to recover on its own before taking additional action depends on the imediate impact of the failure.
+>   * If a region and 90% of your users are in that region, then that region should recover quickly.
+>   * If only 10% of of your users are in the failed region, it can likely stay down for longer.
+>
+>Please note that in any case, traffic will always be routed to the other closest region that’s online. If you continue to see issues, please reach out to Adobe Customer Care.
 
 ## Updating Environments {#updating-dev-environment}
 
