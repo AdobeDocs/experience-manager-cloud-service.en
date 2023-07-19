@@ -95,7 +95,7 @@ Perform the following steps to validate the connection between your Experience M
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
-    ![Configure AEM Assets as a Cloud Service with Brand Portal](assets/test-bpconfig1.png)
+    ![Navigate to the distribution option](assets/test-bpconfig1.png)
 
    A Brand Portal distribution agent (**[!UICONTROL bpdistributionagent0]**) is created under **[!UICONTROL Publish to Brand Portal]**.
 
@@ -366,7 +366,7 @@ Perform the following steps to configure the IMS account.
 
    Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
 
-   ![](assets/create-new-integration5.png)
+   ![Adobe IMS Configurations Check Health.](assets/create-new-integration5.png)
 
 >[!CAUTION]
 >
@@ -390,7 +390,7 @@ Perform the following steps to configure the Brand Portal cloud service:
    
    In the **[!UICONTROL Service URL]** field, specify your Brand Portal tenant (organization) URL.   
    
-    ![](assets/create-cloud-service.png)
+    ![Brand Portal Configuration dialog box.](assets/create-cloud-service.png)
 
 1. Click **[!UICONTROL Save & Close]**. The cloud configuration is created. 
 
@@ -417,11 +417,11 @@ Perform the following steps to validate the configuration:
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
-    ![](assets/test-bpconfig1.png)
+    ![test-bpconfig1](assets/test-bpconfig1.png)
 
    A Brand Portal distribution agent (**[!UICONTROL bpdistributionagent0]**) is created under **[!UICONTROL Publish to Brand Portal]**.
 
-   ![](assets/test-bpconfig2.png)
+   ![test-bpconfig2](assets/test-bpconfig2.png)
 
 
 1. Click **[!UICONTROL Publish to Brand Portal]** to open the distribution agent. 
@@ -437,11 +437,11 @@ Perform the following steps to validate the configuration:
    >
    >It is recommended to review the failures and  clear the **error-queue** periodically.  
 
-   ![](assets/test-bpconfig3.png)
+   ![test-bpconfig3](assets/test-bpconfig3.png)
 
 1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
 
-   ![](assets/test-bpconfig4.png)
+   ![test-bpconfig4](assets/test-bpconfig4.png)
 
    A message appears that your *test package is successfully delivered*.
 
@@ -469,7 +469,7 @@ For example, we have published an asset from AEM Assets to Brand Portal to valid
 1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
 1. Click **[!UICONTROL Logs]** to view the processing and error logs.
 
-   ![](assets/test-bpconfig5.png)
+   ![ctest-bpconfig4](assets/ctest-bpconfig4.png)
 
 The distribution agent has generated the following logs:
 

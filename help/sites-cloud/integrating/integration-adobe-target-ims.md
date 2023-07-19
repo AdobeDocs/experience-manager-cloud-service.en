@@ -107,7 +107,7 @@ Open the Adobe Developer Console to create a Project with Adobe Target that AEM 
 <!--
 1. The creation is confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
-   ![](assets/integrate-target-ims-07.png)
+   ![integrate-target-ims-07](assets/integrate-target-ims-07.png)
 -->
 
 <!-- could not verify - only saw Adobe Target Classic -->

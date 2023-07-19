@@ -115,14 +115,15 @@ In addition to these features, Assets view also enables you to perform following
 
 * Rename assets and folders available within the repository.
 
+The new Adobe Experience Manager Assets view is tailored to streamline workflows, foster collaboration, and accelerate asset delivery. By embracing content velocity, marketers can unlock the full potential of their digital assets and unleash creativity like never before.
+
+
 Use these links to quickly get started with the Assets view:
 
 * [My Workspace](/help/assets/my-workspace-assets-view.md)
 * [Get Started using Assets view](/help/assets/get-started-assets-view.md)
 
-## Conclusion {#conclusion}
 
-The era of digital-first has arrived, and it's time to transform our marketing tools to support the evolving business landscape. The new Adobe Experience Manager Assets view is tailored to streamline workflows, foster collaboration, and accelerate asset delivery. By embracing content velocity, marketers can unlock the full potential of their digital assets and unleash creativity like never before. Get ready to harness the power of Adobe's new Assets view experience and drive exceptional results in your marketing campaigns. It's time to embrace the future of DAM and propel your business forward.
 
 
 
