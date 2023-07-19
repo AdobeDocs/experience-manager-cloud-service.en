@@ -14,7 +14,7 @@ topic-tags: adaptive_forms, author
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes.
 
-[!DNL AEM Forms] supports CAPTCHA in Adaptive Forms. You can use reCAPTCHA service by Google to implement CAPTCHA.
+[!DNL AEM Forms] support CAPTCHA in Adaptive Forms. You can use reCAPTCHA service by Google to implement CAPTCHA.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Ap
 
 ## Configure reCAPTCHA service by Google {#google-reCAPTCHA}
 
-Form authors can use the reCAPTCHA service by Google to implement CAPTCHA in Adaptive Forms. It offers advance CAPTCHA capabilities to protect your site. For more information on how reCAPTCHA works, see [Google reCAPTCHA](https://developers.google.com/recaptcha/). reCAPTCHA service include [!DNL reCAPTCHA v2] and [!DNL reCAPTCHA Enterprise] which you can integrate into [!DNL AEM Forms]. Based on your requirement you can configure reCAPTCHA service to enable:
+Form authors can use the reCAPTCHA service by Google to implement CAPTCHA in Adaptive Forms. It offers advance CAPTCHA capabilities to protect your site. For more information on how reCAPTCHA works, see [Google reCAPTCHA](https://developers.google.com/recaptcha/). reCAPTCHA service includes [!DNL reCAPTCHA v2] and [!DNL reCAPTCHA Enterprise] which you can integrate into [!DNL AEM Forms]. Based on your requirement you can configure reCAPTCHA service to enable:
 
 ![reCAPTCHA](/help/forms/assets/recaptcha_new.png)
 
@@ -55,9 +55,10 @@ Form authors can use the reCAPTCHA service by Google to implement CAPTCHA in Ada
     1. Select version as [!DNL reCAPTCHA Enterprise] and specify Name; Project ID, Site Key, and API key(Obtained in Step 2 and 3) for reCAPTCHA Enterprise service.
     1. Select key type, the key type should be same as the site key you configured in the google cloud project, for example, **Checkbox site key** or **Score-based site key**.
     1. Specify a threshold score in the range 0 to 1 ([Click to know more about score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Scores greater than or equal to the threshold scores identify human interaction, otherwise considered bot interaction.
+
         >[!Note]
         >
-        > * Form authors can specify a score in the range suitable for uninterrupted form submission.
+        > Form authors can specify a score in the range suitable for uninterrupted form submission.
     
     1. Tap **[!UICONTROL Create]** to create the cloud service configuration.
 
