@@ -8,6 +8,11 @@ exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
 ---
 # Create an Adaptive Form (Foundation Components) {#creating-an-adaptive-form}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/create-first-adaptive-form/create-your-first-adaptive-form.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 
 Adaptive Forms let you create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provides business user friendly wizard to quickly author Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. 
 
