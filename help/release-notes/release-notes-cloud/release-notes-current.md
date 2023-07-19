@@ -152,6 +152,13 @@ Subscribe to email notifications that alert you when critical incidents happen r
 
 ![Actions Center screenshot](/help/assets/assets/actions-center.png)
 
+### CDN and WAF Rules early adopter program {#waf-early-adopter}
+
+Filter traffic at the CDN based on:
+* request headers and properties (e.g., IP address)
+* traffic patterns known to be associated with malicious traffic
+
+Interested in trying out the feature and sharing feedback? Send an email to aem-waf-adopter@adobe.com from your official email ID to learn more about the early adopter program. Space is limited.
 
 ## Maintenance Release Notes {#maintenance}
 
