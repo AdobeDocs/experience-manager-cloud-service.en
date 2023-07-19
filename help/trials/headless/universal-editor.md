@@ -9,8 +9,8 @@ index: no
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Editing In-Context"
->abstract="See how your headless apps can instrument the Universal Editor to bring low-friction, in-context editing to the fingertips of your authors."
+>title="Editing in-context"
+>abstract="See how your headless apps can leverage the Universal Editor to bring low-friction, in-context editing to the fingertips of your authors."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -24,7 +24,7 @@ index: no
 
 ## Edit Text in Context {#edit-text}
 
-For certain authors and in certain situations, editing in-place and in-context can often be advantageous over structured content editing in the Content Fragment editor, which you saw in previous modules.
+For certain authors and in certain situations, editing in-place and in-context can often be advantageous over structured headless content editing in the Content Fragment editor, which you saw in previous modules.
 
 Using the Universal Editor, you can edit your text in-context and in-place, allowing simple and intuitive content authoring.
 
