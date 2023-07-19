@@ -8,6 +8,11 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 ---
 # Configure data sources {#configure-data-sources}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html)                  |
+| AEM as a Cloud Service     | This article        |
+
 ![Data integration](do-not-localize/data-integeration.png)
 
 [!DNL Experience Manager Forms] Data Integration allows you to configure and connect to disparate data sources. The following types are supported out-of-the-box:
