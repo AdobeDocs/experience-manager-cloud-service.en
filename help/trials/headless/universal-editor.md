@@ -22,11 +22,13 @@ index: no
 >title="In this module, you learned how to customize content in-context and in-place using the Universal Editor."
 >abstract=""
 
-## Edit Text in Context {#edit-text}
+## Edit Text In-Context {#edit-text}
 
-For certain authors and in certain situations, editing in-place and in-context can often be advantageous over structured headless content editing in the Content Fragment editor, which you saw in previous modules.
+Editing in-place and in-context can often be advantageous over structured headless content editing as in the Content Fragment editor, which you saw in previous modules.
 
-Using the Universal Editor, you can edit your text in-context and in-place, allowing simple and intuitive content authoring.
+Using the Universal Editor, you have an agile way to edit your text in-context and in-place, allowing simple and intuitive content authoring.
+
+1. The editor should load by default in **Text** mode. If not, please tap or click the **Text** icon in the mode rail.
 
 1. Tap or click the title of the latest article to edit it.
 
@@ -46,7 +48,7 @@ The Universal Editor allows you to interact with your content within its context
 
    ![The emulator menu item](assets/do-not-localize/ue-emulator-1.png)
 
-1. Readers may be on different devices with different aspect ratios, so the editor has emulation modes. To see how the page will be presented to users on a mobile device, select the mobile device option in portrait mode. 
+1. Readers may be on different devices with different aspect ratios, so the editor offers emulation modes in order to see how the page will be presented to users. For example, select the mobile device option in portrait mode.
 
    ![The emulator menu item](assets/do-not-localize/ue-emulator-3.png)
 
