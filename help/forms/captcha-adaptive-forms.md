@@ -39,7 +39,7 @@ Form authors can use the reCAPTCHA service by Google to implement CAPTCHA in Ada
 1. Create an [API key](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) and a [site key for websites](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
 1. Create configuration container for cloud services.
 
-    1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
+    1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. See the [Configuration Browser](/help/implementing/developing/introduction/configurations.md) documentation for more information.
     1. Do the following steps to enable the global folder for cloud configurations or skip this step to create and configure another folder for cloud service configurations.
         1. In the Configuration Browser, select the **[!UICONTROL global]** folder and tap **[!UICONTROL Properties]**.
         1. In the Configuration Properties dialog, enable **[!UICONTROL Cloud Configurations]**.
@@ -74,7 +74,7 @@ Once the reCAPTCHA Enterprise service is enabled, it is available for use in ada
 
 1. Obtain [reCAPTCHA API key pair](https://www.google.com/recaptcha/admin) from Google. It includes a **site key** and a **secret key**.
 1. Create configuration container for cloud services. 
-    1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
+    1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. See the [Configuration Browser](/help/implementing/developing/introduction/configurations.md) documentation for more information.
     1. Do the following to enable the global folder for cloud configurations or skip this step to create and configure another folder for cloud service configurations.
 
         1. In the Configuration Browser, select the **[!UICONTROL global]** folder and tap **[!UICONTROL Properties]**.
@@ -93,7 +93,7 @@ Once the reCAPTCHA Enterprise service is enabled, it is available for use in ada
     1. Select version as reCAPTCHA v2, specify Name; Site key, and Secret Key for reCAPTCHA service(Obtained in Step 1) and tap **[!UICONTROL Create]** to create the cloud service configuration.
     1. In the Edit Component dialog, specify the site and secret keys obtained in step 1. Tap **[!UICONTROL Save Settings]** and then tap **OK** to complete the configuration.
 
-   Once the reCAPTCHA service is configured, it is available for use in adaptive forms. For more information, see [using CAPTCHA in adaptive forms](#using-captcha).
+   Once the reCAPTCHA service is configured, it is available for use in adaptive forms. For more information, see [using CAPTCHA in adaptive forms](#using-reCAPTCHA).
 
 ![reCAPTCHA v2](/help/forms/assets/recaptcha-v2.png)
 
