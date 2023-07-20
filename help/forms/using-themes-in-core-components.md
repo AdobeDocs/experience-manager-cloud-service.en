@@ -127,7 +127,7 @@ To clone a theme, perform the following instructions:
 
 1. Set the values for the `name` and `description` attributes. 
 
-      The name attribute is used to uniquely identify the theme, such as "wknd-travellers-theme" and displayed in the **Style** tab of **Form Creation Wizard**. The description attribute provides additional details about the theme, including its purpose and the scenarios it is designed for. You can also specify the version, description, and license for the theme.
+      The name attribute is used to uniquely identify the theme, such as "aem-forms-wknd-theme" and displayed in the **Style** tab of **Form Creation Wizard**. The description attribute provides additional details about the theme, including its purpose and the scenarios it is designed for. You can also specify the version, description, and license for the theme.
 
 1. Save and close the file. 
 
