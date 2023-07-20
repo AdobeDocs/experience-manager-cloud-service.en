@@ -74,7 +74,7 @@ These rules can be deployed to all cloud environment types (RDE, dev, stage, pro
 
 The format of the rules is described below, followed by some examples in a subsequent section.
 
-| **Property**   | **CND Rules**  | **WAF Rules**  | **Type**  | **Default**  | **Description**  |
+| **Property**   | **CND Rules**  | **WAF Rules**  | **Type**  | **Default value**  | **Description**  |
 |---|---|---|---|---|---|
 | name  | X  | X  | `string`  | -  | Rule name (64 chars long, can only contains alphanumerics and - )  |
 | when  | X  | X  | `Condition`  | -  | The basic structure is:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>See Condition Structure syntax below, which describes the getters, predicates, and how to combine multiple conditions.  |
@@ -106,7 +106,7 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
     - { <getter>: <value>, <predicate>: <value> }
 ```
 
-|  **Property** | **Type**  | **Meaning**  |
+|  **Property** | **Type**  | **Description**  |
 |---|---|---|
 | **allOf**  | `array[Condition]` | **and** operation. true if all listed conditions return true  |
 |  **anyOf** |  `array[Condition]` | **or** operation. true if any of listed conditions return true  |
@@ -122,7 +122,7 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
 
 **Predicate**
 
-| **Property**  | **Type**  | **Meaning**  |
+| **Property**  | **Type**  | **Description**  |
 |---|---|---|
 |  **equals** | `string`  | true if getter result equals to provided value  |
 |  **doesNotEqual** | `string`  | true if getter result not equal to provided value  |
@@ -167,3 +167,190 @@ The `waRules` property may include the following rules:
 | SCANNER  |  Scanner | Identifies popular scanning services and tools  |
 | RESPONSESPLIT  | HTTP Response Splitting  | Identifies when CRLF characters are submitted as input to the application to inject headers into the HTTP response  |
 | XML-ERROR  | XML Encoding Error  | A POST, PUT, or PATCH request body that is specified as containing XML within the "Content-Type" request header but contains XML parsing errors. This is often related to a programming error or an automated or malicious request.  |
+
+## Considerations {#considerations}
+
+* When two conflicting rules are created, the allow rules will always take precedence over the block rules. For example, if you create a rule to block a specific path and a rule to allow one specific IP address, requests from that IP address on the blocked path will be allowed.
+
+* If a rule is matched and blocked, the CDN will respond with a `406` return code.
+
+## Examples {#examples}
+
+Some rule examples follow. See the [rate limit section](#rules-with-rate-limits) further down for examples of rate limiting. 
+
+**Example 1**
+
+This rule blocks requests coming from IP 192.168.1.1:
+
+```
+data:
+  rules:
+    - name: "block-request-from-ip"
+      when: { reqProperty: clientIp, equals: "192.168.1.1" }
+      action: block
+```
+
+**Example 2**
+
+This rule blocks requests on path `/helloworld` on publish with a User-Agent that contains Chrome:
+
+```
+data:
+  rules:
+    - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
+      when:
+        allOf:
+          - { reqProperty: path, equals: /helloworld }
+          - { reqProperty: tier, equals: publish }
+          - { reqHeader: user-agent, matches: '.*Chrome.*'  }
+      action: block
+```
+
+**Example 3**
+
+This rule blocks requests that contain the query parameter `foo`, but allows every request coming from IP 192.168.1.1:
+
+```
+data:
+  rules:
+    - name: "block-request-that-contains-query-parameter-foo"
+      when: { queryParam: url-param, equals: foo }
+      action: block
+    - name: "allow-all-requests-from-ip"
+      when: { reqProperty: clientIp, equals: 192.168.1.1 }
+      action: allow
+```
+
+**Example 4**
+
+This rule blocks requests to path /block-me, and blocks every request that matches a SQLI or XSS pattern:
+
+```
+data:
+  rules:
+    - name: "path-rule"
+      when: { reqProperty: path, equals: /block-me }
+      action: block
+
+    - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+      when: { reqProperty: path, like: "*" }
+      action: enableWafRules
+      wafRules:
+        - SQLI
+        - XSS
+```
+
+## Rules with Rate Limits {#rules-with-rate-limits}
+
+Sometimes it is desirable to block traffic matching a rule only if the match exceeds a certain rate over time. Setting a value for the `rateLimit` property limits the rate of those requests that match the rule condition.
+
+### rateLimit Structure {#ratelimit-structure}
+
+| **Property**  | **Type**  | **Default value**  | **Description**  |
+|---|---|---|---|
+|  limit |  integer from 10 to 10000     |  required |  Request rate in requests per second for which the rule is triggered |
+|  window | integer enum: 1, 10 or 60  | 10  | Sampling window in seconds for which request rate is calculated  |
+|  penalty | integer from 60 to 3600  | 300 (5 minutes) | A period of time in seconds for which matching requests are blocked (rounded to the nearest minute)  |
+
+### Examples {#ratelimiting-examples}
+
+Example 1: When the request rate exceeds 100 requests per second in the last 60 seconds, block `/critical/resource` for 60 seconds
+
+```
+- name: rate-limit-example
+  when: { reqProperty: /critical/resource }
+  action: block
+  rateLimit: { limit: 100, window: 60, penalty: 60 }
+```
+
+Example 2: When the request rate exceeds 10 requests per second in 10 seconds, block the resource for 300 seconds:
+
+```
+- name: rate-limit-using-defaults
+  when: { reqProperty: /critical/resource }
+  action: block
+  rateLimit:
+    limit: 10
+```
+
+## CDN Logs {#cdn-logs}
+
+AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization, and configuring CDN and WAF rules. CDN logs appear in the Cloud Manager **Download Logs** dialog, when selecting the Author or Publish service.
+
+The name of the rule is shown in the rules property if the request matches the rule, even if the action is "allow" and therefore the traffic is not blocked. 
+
+Matching CDN rules appear in the log entry for all requests to the CDN, regardless of whether it is a CDN hit, pass, or miss. However, WAF rules appear in the log entry only for requests to the CDN that are considered CDN misses or passes, but not CDN hits.
+
+The example below shows a sample `cdn.yaml` and two CDN log entries, with non-empty values in the rules property due to blocked requests matching the CDN rule and WAF rule, respectively. 
+
+
+```
+data:
+  rules:
+    - name: "path-rule"
+      when: { reqProperty: path, equals: /block-me }
+      action: block
+
+    - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+      when: { reqProperty: path, like: "*" }
+      action: enableWafRules
+      wafRules:
+        - SQLI
+        - XSS
+```
+
+```
+{
+"timestamp": "2023-05-26T09:20:01+0000",
+"ttfb": 19,
+"cip": "147.160.230.112",
+"rid": "974e67f6",
+"host": "example.com",
+"url": "/block-me",
+"req_mthd": "GET",
+"res_type": "",
+"cache": "PASS",
+"res_status": 406,
+"res_bsize": 3362,
+"server": "PAR",
+"rules": "cdn=path-rule;waf=;action=blocked"
+}
+```
+
+```
+{
+"timestamp": "2023-05-26T09:20:01+0000",
+"ttfb": 19,
+"cip": "147.160.230.112",
+"rid": "974e67f6",
+"host": "example.com",
+"url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
+"req_mthd": "GET",
+"res_type": "",
+"cache": "PASS",
+"res_status": 406,
+"res_bsize": 3362,
+"server": "PAR",
+"rules": "cdn=;waf=SQLI;action=blocked"
+}
+```
+
+### Log Format {#cdn-log-format}
+
+Below is a list of the field names used in CDN logs, along with a brief description.
+
+| **Field Name**  | **Description**  |
+|---|---|
+| *timestamp*  | The time the request started, after TLS termination  |
+| *ttfb*  | Abbreviation for *Time To First Byte*. The time interval between the request started up to the point before the response body started being streamed. |
+| *cip*  |  The client IP address. |
+| *rid* |  The value of the request header used to uniquely identify the request. |
+| *host*  | The authority that the request is intended for.   |
+| *url*  | The full path, including query parameters.  |
+| *req_mthd*  |  HTTP method sent by the client, such as "GET" or "POST". |
+| *res_type*  | The Content-Type used to indicate the original media type of the resource  |
+| *cache*  |  State of the cache. Possible values are HIT, MISS or PASS |
+| *res_status*  | The HTTP status code as an integer value.  |
+| *res_bsize*  | Body bytes sent to the client in the response.  |
+| *server*  | Datacenter of the CDN cache server.  |
+| *rules*  | The name of any matching rules, for both CDN rules and waf rules.<br><br>Matching CDN rules appear in the log entry for all requests to the CDN, regardless of whether it is a CDN hit, pass, or miss.<br><br>Also indicates if the match resulted in a block. <br><br>For example, "`cdn=;waf=SQLI;action=blocked`"<br><br>Empty if no rules matched.  |
