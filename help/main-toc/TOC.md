@@ -148,6 +148,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 + Security {#security}
   + [Security for AEM as a Cloud Service](/help/security/home.md)
   + [Configuring Advanced Networking for AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
+  + [Configuring CDN and Web Application Firewall Rules to Filter Traffic](/help/security/web-application-firewall-and-cnd-rules.md)
   + [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support.md)
   + [Same Site Cookie Support for AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
