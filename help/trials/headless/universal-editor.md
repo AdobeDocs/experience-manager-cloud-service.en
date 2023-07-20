@@ -28,9 +28,11 @@ Editing in-place and in-context can often be advantageous over structured headle
 
 Using the Universal Editor, you have an agile way to edit your text in-context and in-place, allowing simple and intuitive content authoring.
 
-1. The editor should load by default in **Text** mode. If not, please tap or click the **Text** icon in the mode rail.
+1. The editor should load by default in **Text** mode. If not, please tap or click the **Text** icon in the mode rail at the left side of the editor.
 
 1. Tap or click the title of the latest article to edit it.
+
+   ![The Universal Editor](assets/do-not-localize/ue-text-mode.png)
 
 1. The component is selected as indicated by a blue border with a tab indicating that it is a text component. A cursor is in the border awaiting text input. Change the text to `Aloha Spirit in Lofoten`.
 
@@ -38,11 +40,11 @@ Using the Universal Editor, you have an agile way to edit your text in-context a
 
 1. Press the enter/return key or tap or click outside of the text component and your changes are saved automatically.
 
-The Universal Editor saves your changes automatically, but they are only persisted in the authoring environment. You still need to publish them for your readers to see.
+The Universal Editor saves your changes automatically within the authoring environment. You still need to publish them for your readers to see, which we will do in a later step.
 
 ## Experience Your Content As Your Readers Do {#emulators}
 
-The Universal Editor allows you to interact with your content within its context, seeing the content as it is delivered to the devices of your end users
+The Universal Editor allows you to interact with your content within its context, seeing the content as it is delivered to the devices of your users.
 
 1. By default the editor renders the desktop version of your content. Tap or click the emulator button at the top-right of the editor to change the target device.
 
@@ -58,36 +60,42 @@ The Universal Editor allows you to interact with your content within its context
 
 You can also specify exact dimensions for the emulator and rotate the emulated device in order to view your content on any potential target device.
 
-
 ## Previewing and Publishing {#preview}
 
-The editor renders the context as your readers will see it. Because you need to tap or click your content to select it, the editor does not allow you to follow links or interact with your content by tapping or clicking. Using preview mode, you can experience the content as it will be published before publishing.
+Because you need to tap or click your content to select it in the editor, the editor does not allow you to follow links or interact with your content by tapping or clicking when it is in an edit mode. Using preview mode, you can follow the links within your content and experience it as your users would before publishing.
 
 1. In the mode rail on the left side of the editor, tap or click **Preview**.
 
-1. The page is opened in preview mode in a new browser tab.
+1. Now tap or click on the **Read More** link for the main article.
 
-1. Review the changes, and if everything looks okay, return to the Universal Editor tab of your browser and tap or click **Publish**.
+   ![Preview mode](assets/do-not-localize/ue-preview-publish-1.png)
 
-   ![The preview and publish menu items](assets/do-not-localize/ue-preview-publish.png)
+1. Browse the article, then use the **Back** link to return to the main page.
+
+   ![Return to main page using Back link](assets/do-not-localize/ue-preview-publish-3.png)
+
+1. Now tap or click on the **Publish** button at the top-right of the editor to publish your content.
+
+   ![The preview and publish menu items](assets/do-not-localize/ue-preview-publish-4.png)
 
 Your content is published.
 
 ## Editing Content Fragments {#editing-fragments}
 
-The Universal Editor gives you quick access to the Content Fragment editor as well, to accelerate your content authoring experience.
+To accelerate your content authoring experience when structured editing of headless content is more advantageous than in-place editing, the Universal Editor gives you quick access to the Content Fragment editor as well.
 
 1. Scroll further down on the page to the **Adventures** section.
 
 1. In the mode rail on the left side of the editor, select **Components**. This allows you to select page components in the editor.
 
-1. Tap or click one of the adventures to select it. A new **Edit** icon appears on the mode rail.
+1. Tap or click one of the adventures to select it.
 
-   * Note the blue outline. The tab should read **reference** when a Content Fragment is selected.
-   * Because the Universal Editor allows selecting any object on the page, components that parts of a Content Fragment can also be selected individually.
+   * Note the blue outline of the selected component. The tab should read **reference** when a Content Fragment is selected.
+   * Because the Universal Editor allows selecting any object on the page, components that are parts of a Content Fragment can also be selected individually. Tap or click where indicated in the illustration to select the entire Content Fragment component.
+
+1.  A new **Edit** icon appears on the mode rail. Tap or click the **Edit** icon to open the Content Fragment editor on a new tab.
 
    ![Selecting Content Fragments in the Universal Editor](assets/do-not-localize/ue-content-fragments.png)
 
-1. Tap or click the **Edit** icon on the mode rail to open the Content Fragment editor on a new tab.
 
 On the new tab, you can now edit your Content Fragment that you selected in the Universal Editor.
