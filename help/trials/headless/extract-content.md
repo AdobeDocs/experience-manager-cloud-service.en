@@ -60,11 +60,7 @@ You start on the GraphQL Explorer in a new tab. Here you can build and validate 
 
    ![List query](assets/do-not-localize/list-query-1-3-4-5.png)
 
-You have just validated a list query for a full list of all Content Fragments. This process helps to ensure that the response is what your app expects, with results that illustrate how your apps and websites will retrieve the content created in AEM. 
-
->[!NOTE]
->
->If you are not able to select the **AEM Demo Assets** endpoint from the drop-down, contact Adobe Customer Care or reach out on the [AEM Trials Slack channel.](https://adobe-dx-support.slack.com/)
+You have just validated a list query for a full list of all Content Fragments. This process helps to ensure that the response is what your app expects, with results that illustrate how your apps and websites will retrieve the content created in AEM.
 
 ## Query for a Specific Piece of Sample Content {#bypath-query}
 
