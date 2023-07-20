@@ -9,9 +9,9 @@ exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 
 You can create and apply themes to style an Adaptive Form. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. A theme is managed independently without a reference to an Adaptive Form and can be reused across multiple Adaptive Forms.
 
-## Available standard themes
+## Available themes
 
-Forms as Cloud Service provides, the below listed standard themes for Core Components based Adaptive Forms:  
+Forms as Cloud Service provides, the below listed themes for Core Components based Adaptive Forms:  
 
 * [Canvas theme](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND theme](https://github.com/adobe/aem-forms-theme-wknd)
@@ -25,7 +25,7 @@ A theme is a package that encompasses the CSS file, JavaScript files, and resour
 
 * `src/site`: This folder contains CSS files that are applied to an entire AEM Site's page. These files consist of code and styles that affect the overall functionality and layout of your AEM Site's page. Any modifications made here is reflected across all pages of your Site. [When to use it?]
 
-* `src/components`: The CSS files in this folder are specifically designed for individual AEM core components. Each dedicated folder for a component includes a .scss file that styles that particular component within an Adaptive Form. For instance, the /src/components/accordion/_accordion.scss file contains style information for the Adaptive Forms Accordion component.  
+* `src/components`: The CSS files in this folder are designed for individual AEM core components. Each dedicated folder for a component includes a `.scss` file that styles that particular component within an Adaptive Form. For instance, the /src/components/accordion/_accordion.scss file contains style information for the Adaptive Forms Accordion component.  
 
    ![adaptive form based theme structure](/help/forms/assets/theme_structure.png)
 
@@ -33,26 +33,26 @@ A theme is a package that encompasses the CSS file, JavaScript files, and resour
 
 ## Create a theme 
 
-Forms as Cloud Service provides, the below listed standard themes for Core Components based Adaptive Forms.  
+Forms as Cloud Service provides, the below listed themes for Core Components based Adaptive Forms.  
 
 * [Canvas theme](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND theme](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL theme](https://github.com/adobe/aem-forms-theme-easel)
 
-You can [customize any of these standard themes to create a new theme](#customize-a-theme-core-components). 
+You can [customize any of these themes to create new theme](#customize-a-theme-core-components). 
 
 ## Customize a theme {#customize-a-theme-core-components}
 
-Customizing a theme refers to the process of modifying and personalizing the appearance of a theme. When you customize a theme, you make changes to its design elements, layout, colors, typography, and sometimes the underlying code. This allows you to create a unique and tailored look for your website or application while maintaining the basic structure and functionality provided by the theme.
+Customizing a theme refers to the process of modifying and personalizing the appearance of a theme. When you customize a theme, you change its design elements, layout, colors, typography, and sometimes the underlying code. It allows you to create a unique and tailored look for your website or application while maintaining the basic structure and functionality provided by the theme.
 
 ### Prerequisites {#prerequisites-to-customize}
 
 * Familiarize yourself with [setting up a pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) and having basic knowledge of how to set up a pipeline helps you efficiently manage and deploy your theme customizations. 
 * Learn how to [configure a user with the contributor role](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). Understanding how to configure a user with the contributor role allows you to grant the necessary permissions for theme customization.
-* Install the latest release of [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven is a build automation tool commonly used for Java projects. Installing the latest release ensures you have the necessary dependencies for theme customization.
+* Install the latest release of [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven is a build automation tool commonly used for Java&trade; projects. Installing the latest release ensures you have the necessary dependencies for theme customization.
 * Install a plain text editor. For example, Microsoft&reg; Visual Studio Code. Using a plain text editor such as Microsoft&reg; Visual Studio Code provides a user-friendly environment for editing and modifying theme files.
 
-### Setup your environment
+### Set up your environment
 
 * [Enable Adaptive Forms Core Components](/help/forms/enable-adaptive-forms-core-components.md)  for your local development and Cloud Service environment. 
 * Configure [front-end deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=en) for your Cloud Service environment. Alternatively, you can configure the pipeline later, giving you the flexibility to prioritize testing and refining the theme before setting up the deployment pipeline.
@@ -64,13 +64,13 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 -->
 
-After learning the pre-requisites and configuring the development environment, you are well-prepared to start customizing your theme according to your specific requirements.
+After learning the pre-requisites and configuring the development environment, you are well prepared to start customizing your theme according to your specific requirements.
 
 ### Customize a theme {#steps-to-customize-a-theme-core-components}
 
-Customzing a theme is a multi-step process. Perform the steps in listed order to customize the theme:
+Customizing a theme is a multi-step process. To customize the theme, perform the steps in listed order t:
 
-1. [Clone a standard theme](#download-a-theme-core-components) 
+1. [Clone a theme](#download-a-theme-core-components) 
 1. [Set name of the theme](#set-name-of-theme)
 1. [Customize the theme](#customize-the-theme)
 1. [Test the theme](#test-the-theme)
@@ -78,15 +78,15 @@ Customzing a theme is a multi-step process. Perform the steps in listed order to
 
 The examples provided in the document are based on the **Canvas** theme, but it is important to note that you can clone any theme and customize it using the same instructions. These instructions are applicable to any theme, allowing you to modify themes according to your specific needs.
 
-#### 1. Clone a standard theme {#download-a-theme-core-components}
+#### 1. Clone a theme {#download-a-theme-core-components}
 
-To clone a standard theme for Core Components based Adaptive Forms, choose one of the following standard themes:
+To clone a theme for Core Components based Adaptive Forms, choose one of the following themes:
 
 * [Canvas theme](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND theme](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL theme](https://github.com/adobe/aem-forms-theme-easel)
 
-Perform the following instructions to clone a standard theme: 
+To clone a theme, perform the following instructions: 
 
 1. Open the command prompt or terminal window on your local development environment.
 
@@ -140,7 +140,7 @@ Perform the following instructions to clone a standard theme:
 
 #### 3. Customize the theme {#customize-the-theme}
 
-You can customize individual components or make theme level changes using global variables of a theme. Any changs made to global variables impacts all the individual components. For example, you can use Global variables to change the border color of all the components of an Adaptive Form and a bright fill color to set CTA (Call to action) using button component:
+You can customize individual components or make theme level changes using global variables of a theme. Any changes made to global variables impacts all the individual components. For example, you can use Global variables to change the border color of all the components of an Adaptive Form and a bright fill color to set CTA (Call to action) using button component:
 
 * [Set theme level styles](#theme-customization-global-level)
 
