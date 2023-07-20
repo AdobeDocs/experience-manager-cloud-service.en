@@ -55,7 +55,7 @@ Customizing a theme refers to the process of modifying and personalizing the app
 ### Set up your environment
 
 * [Enable Adaptive Forms Core Components](/help/forms/enable-adaptive-forms-core-components.md)  for your local development and Cloud Service environment. 
-* Configure [front-end deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=en) for your Cloud Service environment. Alternatively, you can configure the pipeline later, giving you the flexibility to prioritize testing and refining the theme before setting up the deployment pipeline.
+* Configure [front-end deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) for your Cloud Service environment. Alternatively, you can configure the pipeline later, giving you the flexibility to prioritize testing and refining the theme before setting up the deployment pipeline.
 
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
@@ -71,10 +71,10 @@ After learning the pre-requisites and configuring the development environment, y
 Customizing a theme is a multi-step process. To customize the theme, perform the steps in listed order t:
 
 1. [Clone a theme](#download-a-theme-core-components) 
-1. [Set name of the theme](#set-name-of-theme)
-1. [Customize the theme](#customize-the-theme)
-1. [Test the theme](#test-the-theme)
-1. [Deploy the theme](#deploy-the-theme)
+1. [Set name of a theme](#set-name-of-theme)
+1. [Customize a theme](#customize-the-theme)
+1. [Test a theme](#test-the-theme)
+1. [Deploy a theme](#deploy-the-theme)
 
 The examples provided in the document are based on the **Canvas** theme, but it is important to note that you can clone any theme and customize it using the same instructions. These instructions are applicable to any theme, allowing you to modify themes according to your specific needs.
 
@@ -107,17 +107,17 @@ To clone a theme, perform the following instructions:
    After executing the command successfully, you have a local  copy of the theme available on your machine in the  `aem-forms-theme-canvas` folder.
 
 
-#### 2. Set name of the theme {#set-name-of-theme}
+#### 2. Set name of a theme {#set-name-of-theme}
 
-1. Open the theme folder in a plain text editor. For example, to open the `aem-forms-theme-canvas` folder in Visual Studio Code editor, 
+1. Open the theme folder in a plain text editor. For example, to open the `aem-forms-theme-canvas` folder in Visual Studio Code editor.
    
-   1. Navigate to the `aem-forms-theme-canvas` folder.
+1. Navigate to the `aem-forms-theme-canvas` folder.
    
-   1. Run the following command:
+1. Run the following command:
 
-       ```
+   ```
          code .
-       ```
+   ```
 
       ![Open the theme folder in a plain text editor](/help/forms/assets/aem-forms-theme-folder-in-vs-code.png)
 
@@ -138,7 +138,7 @@ To clone a theme, perform the following instructions:
 > * Update the name to a simple text as a user-provided name.
 
 
-#### 3. Customize the theme {#customize-the-theme}
+#### 3. Customize a theme {#customize-the-theme}
 
 You can customize individual components or make theme level changes using global variables of a theme. Any changes made to global variables impacts all the individual components. For example, you can use Global variables to change the border color of all the components of an Adaptive Form and a bright fill color to set CTA (Call to action) using button component:
 
@@ -180,14 +180,14 @@ You can also change font, color, size, and other CSS properties of a specific Ad
    >
    > When a style is defined both at theme and component level, the style defined at the component level takes priority. 
 
-#### 4. Test the customized theme {#test-the-theme}
+#### 4. Test a customized theme {#test-the-theme}
 
 The theme customizations are tested on a local environment. You can preview the changes in the local proxy server and customize the theme according to the requirements for different AEM components. To test the customized theme and see the customizations in real time, perform the following steps:
 
 * 4.1 [Rename the env_template file](#rename-env-file-theme-folder)
 * 4.2 [Start a local proxy server](#start-a-local-proxy-server)
 
-##### 4.1. Rename the env_template file {#rename-env-file-theme-folder}
+##### 4.1. Rename a env_template file {#rename-env-file-theme-folder}
 
 1. Open the theme folder in a plain text editor. 
 1. Rename the `env_template` file to `.env` file in the theme folder and add the following parameters:
@@ -247,7 +247,7 @@ You are directly redirected to a browser, which displays the customized changes 
 
 Once, you are satisfied with the modifications done in a theme folder, deploy the theme to your Cloud Service environment using the front-end pipeline. 
 
-#### 5. Deploy the theme {#deploy-the-theme}
+#### 5. Deploy a theme {#deploy-the-theme}
 
 To deploy the theme to your Cloud Service environment using the front-end pipeline:
 
@@ -314,7 +314,7 @@ Your customizations are now safely stored in the AEM cloud service repository.
 
 The theme is deployed using a front-end pipeline.
 
-1. To deploy the customized theme, create the front-end pipeline. Learn [how to set up a pipeline to deploy customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline). 
+1. To deploy the customized theme, create the front-end pipeline. Learn [how to set up a frontend pipeline to deploy customized theme](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). 
 
    ![create front-endpipeline](/help/forms/assets/canvas-theme-frontendpipeline.gif)
 
@@ -360,5 +360,6 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 ## Frequently asked questions {#faq} 
 
 **Q:** Which customization takes priority when making customizations in a theme folder at both the global level and component level?
+
 **Ans:** When customizations are made at both the global level and component level, the customization at the component level takes priority.  
 
