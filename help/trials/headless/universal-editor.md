@@ -97,5 +97,4 @@ To accelerate your content authoring experience when structured editing of headl
 
    ![Selecting Content Fragments in the Universal Editor](assets/do-not-localize/ue-content-fragments.png)
 
-
 On the new tab, you can now edit your Content Fragment that you selected in the Universal Editor.
