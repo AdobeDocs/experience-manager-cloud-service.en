@@ -257,9 +257,9 @@ To deploy the theme to your Cloud Service environment using the front-end pipeli
 
 ##### 5.1 Create new repository for theme on your Cloud Service environment{#create-a-new-theme-repo}
 
-To save the changes, create new repository for theme. Login to your [AEM Cloud Manager repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) and add a new repository for your theme.
+To save the changes, create new repository for theme. Log in to your [AEM Cloud Manager repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) and add new repository for your theme.
 
-1. Create a new repository for theme by clicking the **[!UICONTROL Repositories]** > **[!UICONTROL Add Repository]**. 
+1. Create new repository for theme by clicking the **[!UICONTROL Repositories]** > **[!UICONTROL Add Repository]**. 
 
    ![create new theme repo](/help/forms/assets/createrepo_canvastheme.png)
 
@@ -312,9 +312,9 @@ Your customizations are now safely stored in the AEM cloud service repository.
 
 ##### 5.3 Run the frontend pipeline {#run-a-frontend-pipeline}
 
-The theme is deployed using a front end pipleline.
+The theme is deployed using a front-end pipeline.
 
-1. Create the front-end pipeline to deploy the customized theme. Learn [how to set up a pipeline to deploy customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline). 
+1. To deploy the customized theme, create the front-end pipeline. Learn [how to set up a pipeline to deploy customized theme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline). 
 
    ![create front-endpipeline](/help/forms/assets/canvas-theme-frontendpipeline.gif)
 
@@ -362,5 +362,3 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 **Q:** Which customization takes priority when making customizations in a theme folder at both the global level and component level?
 **Ans:** When customizations are made at both the global level and component level, the customization at the component level takes priority.  
 
-**Q:** What takes precedence when embedding or creating an Adaptive Form on a Sites page with a customized theme applied?
-**Ans:** If you embed or create an Adaptive Form on a Sites page with a customized theme applied, the theme of the Adaptive Form takes precedence on the Sites page.
