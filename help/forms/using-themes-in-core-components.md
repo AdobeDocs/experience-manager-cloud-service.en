@@ -216,7 +216,7 @@ The theme customizations are tested on a local environment. You can preview the 
 
    >[!NOTE]
    >
-   > If an error occurs during the execution of the `npm run live` command, execute the following commands prior to `npm run live` command:
+   > If an error occurs during the execution of the `npm run live` command, execute the following commands prior `npm run live` command:
    >
    > * `npm install parcel --save-dev`
    > * `npm i @parcel/transformer-sass`
@@ -255,9 +255,9 @@ To deploy the theme to your Cloud Service environment using the front-end pipeli
 * 5.2 [Commit and Push the changes in the repository for theme](#committing-the-changes)
 * 5.3 [Run a frontend pipeline](#run-a-frontend-pipeline)
 
-##### 5.1 Create a new repository for theme on your Cloud Service environment{#create-a-new-theme-repo}
+##### 5.1 Create new repository for theme on your Cloud Service environment{#create-a-new-theme-repo}
 
-To save the changes, create a new repository for theme. Login to your [AEM Cloud Manager repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) and add a new repository for your theme.
+To save the changes, create new repository for theme. Login to your [AEM Cloud Manager repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) and add a new repository for your theme.
 
 1. Create a new repository for theme by clicking the **[!UICONTROL Repositories]** > **[!UICONTROL Add Repository]**. 
 
