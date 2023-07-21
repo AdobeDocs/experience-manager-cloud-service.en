@@ -362,6 +362,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Configuring the Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md)
         + [Connecting to Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
         + [Translation Best Practices](/help/sites-cloud/administering/translation/best-practices.md)
+    + [Mangaing Tags](/help/sites-cloud/administering/tags.md)
   + Integrating with AEM as a Cloud Service {#integrations}
     + [Integrating with Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
     + [Integrating with Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
