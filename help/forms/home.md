@@ -4,7 +4,14 @@ description: Discover AEM Forms and learn how it helps you produce business-read
 landing-page-description: Understand how to use forms in AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 ---
+
 # Introduction to AEM Forms as a Cloud Service {#introduction}
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html)                  |
+| AEM as a Cloud Service     | This article        |
+
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] offers a cloud-native, Platform as a Service (PaaS) solution for businesses to create, manage, publish, and update complex digital forms while integrating submitted data with back-end processes, business rules, and saving data in an external data store. 
 
@@ -52,5 +59,12 @@ The service integrates with Adobe Analytics that allows you to capture and track
 | E-Signatures |Integrate with Adobe Sign and Adobe Sign Solutions for Government to easily send Forms and documents to users for e-signatures: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html">E-sign an Adaptive Form with Adobe Sign </a></li><li></a> <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=en#sign-document-step">E-sign a document with Adobe Sign and AEM Workflows</a></li></ul>|
 | Forms Analytics |Use Adobe Analytics to gain valuable insights into user behavior and preferences: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html?lang=en">Connect an Adaptive Form with Adobe Analytics</a></li></ul>|
 | Data Sources |Easily connect your forms and documents with external data sources to retrieve and send data: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=en">Connect to an RDBMS or Rest endpoint</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en">Connect to Microsoft&reg; Dynamics 365 or Salesforce cloud service</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=en">Connect to Microsoft&reg; Azure Blob Storage</a></li></ul>|
+
+
+## Related articles
+
+* [Onboard to a Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
+* [Setup a local development environment](/help/forms/setup-local-development-environment.md)
+* [Migrate from AEM 6.5 Forms to Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 
 

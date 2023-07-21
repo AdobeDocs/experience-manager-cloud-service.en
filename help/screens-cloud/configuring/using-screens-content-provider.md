@@ -24,21 +24,21 @@ Follow the steps below to log on to Screens Content Provider:
 1. Navigate to [Adobe Experience Cloud](https://experience.adobe.com) Home page.
 
 1. Select **Experience Manager**.
-   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![Landing page for Quick Access to areas of Experience Manager.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Click **Launch** from the Cloud Manager card. Once you have successfully logged in to [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI).
-   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![Four areas of Cloud Manager -- Brand Portal, Cloud Manager, Cloud Acceleration Manager, and Software Distribution -- each showing their own Launch buttion.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 1. Select the program for Screens as a Cloud Service and click the icon, as shown below to open the Cloud Manager's **Overview** page for that specific program.
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-1.png)
+   ![Icon for Cloud Manager's Overview page is shown on the far left of a a toolbar.](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
    >If you have not created any program, see [First Time Login to Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en). The topic guides you through adding a program for Screens as a Cloud Service, in Cloud Manager.
   
 1. Select the link from  the **Environments** card so you can access the Screens Content Provider.
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-2.png)
+   ![Link highlighted from the Environments card that lets you access the Screens Content Provider.](/help/screens-cloud/assets/configure/screens-cp-2.png)
 
    After you have logged into Screens Content Provider, now you are ready to create your content in content playback. 
 
