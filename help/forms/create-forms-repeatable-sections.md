@@ -20,11 +20,11 @@ For example, consider a form used to collect information about a person's work e
 
 By the end of this article, you learn to:
 
-* Create a repeatbale section in an Adaptive Form
+* Create a repeatable section in an Adaptive Form
 * Set minimum or maximum number of repetitions for an Adaptive Form component
 * Use rule editor to configure addition or deletion actions for repeatable sections
 
-You can use the [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Horizontal Tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), or [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) components to make sections of an Adaptive Form repeatble. You can add child components to the panel, accordion, horizontal tabs, or wizard components to create repeatable section in a form. 
+You can use the [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Horizontal Tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), or [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) components to make sections of an Adaptive Form repeatable. You can add child components to the panel, accordion, horizontal tabs, or wizard components to create repeatable section in a form. 
 
 
 Examples in this document are based on the [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) component. You can perform the identical steps to make the [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Horizontal tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), and [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) components repeatable.
@@ -125,7 +125,11 @@ The parent of the panel should contain a delete button to delete instance of the
 >`Panel1.instanceManager.instances[1].textbox.value`
 >
 >
+>
+
+<!-- 
 >For more information, see: Class: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63).      
+-->
 
 >[!NOTE]
 >
@@ -215,7 +219,7 @@ In the following code, the `SampleType`panel uses the minOccours & maxOccurs pro
 ```
 
 
-## related articles
+## Related articles
 
 * [Create an Adaptive Form](creating-adaptive-form-core-components.md)
 * [Create style or themes for your forms](using-themes-in-core-components.md)
