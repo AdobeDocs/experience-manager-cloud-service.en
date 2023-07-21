@@ -23,7 +23,7 @@ None.
 
 ### Known Issues {#known-issues-12790}
 
-None.
+-  GRANITE-46601 - Quickstart SDK fails to start on jdk 11.0.20 without `-Djdk.util.zip.disableZip64ExtraFieldValidation=true` java option
 
 ### Embedded Technologies {#embedded-tech-12790}
 
