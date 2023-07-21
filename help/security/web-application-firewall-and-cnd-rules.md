@@ -32,7 +32,7 @@ These rules can be deployed to dev, stage and prod cloud environment types, for 
            _config.yaml
    ```
 
-1. `_config.yaml` describes the type of rules, the version, and the environment, as illustrated in the snippet below:
+1. `_config.yaml` describes the type of rules and the version, as illustrated in the snippet below:
 
    ```
    kind: "CDN"
