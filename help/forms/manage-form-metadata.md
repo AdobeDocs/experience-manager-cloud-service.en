@@ -7,6 +7,11 @@ exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 ---
 # Add, remove, or edit metadata of an Adaptive Form {#manage-form-metadata}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html)                  |
+| AEM as a Cloud Service     | This article          |
+
 Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 
 [!DNL AEM Forms], by default, provides a defined set of metadata for each asset type. Beyond the default metadata, you can add custom metadata to each of the asset types. [!DNL AEM Forms] also provides you with the right means of creating, managing, and exchanging all this metadata efficiently for your forms.
