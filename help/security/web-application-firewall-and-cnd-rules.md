@@ -7,7 +7,7 @@ description: Use the CDN and Web Application Firewall Rules to Filter Malicious 
 
 >[!NOTE]
 >
->This feature is not yet generally available.
+>This feature is not yet generally available. To join the ongoing early adopter program, email aemcs-waf-adopter@adobe.com, including the name of your organization and context about your interest in the feature.
 
 Adobe tries to mitigate attacks against customer websites, but it may be useful to proactively filter requests matching certain patterns so malicious traffic does not reach your application. Possible approaches include:
 
