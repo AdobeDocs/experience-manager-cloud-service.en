@@ -41,7 +41,7 @@ Clicking the **Launch the sample CodePen app** button from the trial takes you t
           ...
 ```
 
-If you see an error instead, check the browser console for more detail or reach out [on Slack](https://adobe-dx-support.slack.com). 
+If you see an error instead, check the browser console for more detail or reach out [by email](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request). 
 
 Now that you know a bit about CodePen, next you will configure the app to fetch data from the persisted query you created in a previous module.
 
@@ -86,7 +86,7 @@ On line 25, you indicate from which GraphQL persisted query the app should fetch
    persistedQueryName = 'your-project/adventure-list';
    ```
 
-1. Once this change is made the app should automatically refresh, and print the raw JSON response from your persisted query to the `#output` div. If you see an error message, check the console for additional details. Reach out [on Slack](https://adobe-dx-support.slack.com) if you are still having issues with this step.
+1. Once this change is made the app should automatically refresh, and print the raw JSON response from your persisted query to the `#output` div. If you see an error message, check the console for additional details. Reach out [by email](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request) if you are still having issues with this step.
 
 1. Does this JSON contain the exact properties your app needs? If not, head back to the [Extract content using the GraphQL API](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql) learning guide to make changes. Don't forget to save and publish your query once you are done.
 
