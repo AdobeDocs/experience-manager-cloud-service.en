@@ -64,9 +64,9 @@ Next to providing timeouts also a proper handling of such timeouts and unexpecte
 ## Handling request rate limits {#rate-limit-handling}
 
 >[!NOTE]
->The HTTP error response will change from 503 to 429 in mid-August, 2023. 
+>The HTTP error response will change from 503 to 429 during the week of August 7, 2023. 
 >
-When the rate of incoming requests to AEM exceeds healthy levels, AEM responds to new requests with HTTP error code 429. Applications making programmatic calls to AEM can consider coding defensively, retrying after a few seconds with an exponential backoff strategy. Note that prior to mid-August 2023, AEM responded to the same condition with HTTP error code 503.
+When the rate of incoming requests to AEM exceeds healthy levels, AEM responds to new requests with HTTP error code 429. Applications making programmatic calls to AEM can consider coding defensively, retrying after a few seconds with an exponential backoff strategy. Before mid-August 2023, AEM responded to the same condition with HTTP error code 503.
 
 ## No Classic UI Customizations {#no-classic-ui-customizations}
 
