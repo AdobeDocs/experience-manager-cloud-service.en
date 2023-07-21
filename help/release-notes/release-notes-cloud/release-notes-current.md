@@ -160,6 +160,10 @@ Filter traffic at the CDN based on:
 
 Interested in trying out the feature and sharing feedback? Send an email to aemcs-waf-adopter@adobe.com from your official email ID to learn more about the early adopter program. Space is limited.
 
+### Other Foundation changes {#other-foundation-changes}
+
+* During the week of August 7th, AEM will return error code 429 instead of error code 503 when requests to AEM instances exceed a healthy level. [Learn more](/help/implementing/developing/introduction/development-guidelines.md)
+
 ## Maintenance Release Notes {#maintenance}
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
