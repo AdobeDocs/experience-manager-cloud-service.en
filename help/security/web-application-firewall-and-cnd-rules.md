@@ -12,14 +12,14 @@ description: Use the CDN and Web Application Firewall Rules to Filter Malicious 
 Adobe tries to mitigate attacks against customer websites, but it may be useful to proactively filter requests matching certain patterns so malicious traffic does not reach your application. Possible approaches include:
 
 * Apache layer modules such as `mod_security`
-* Configuring rules that are deployed to the CDN using Cloud Manager's configuration pipeline. 
+* Configuring rules that are deployed to the CDN via Cloud Manager's configuration pipeline. 
 
 This article describes the latter approach, which offers two categories of rules:
 
 1. **CDN rules**: block or allow requests based on request properties and request headers, including IP, paths, and user agent. These rules can be configured by all AEM as a Cloud Service customers
-1. **WAF** (Web Application Firewall) rules: block requests that match various patterns known to be associated with malicious traffic. These rules can be configured by customers who license the WAF add-on.
+1. **WAF** (Web Application Firewall) rules: block requests that match various patterns known to be associated with malicious traffic. These rules can be configured by customers who license the WAF add-on; contact your Adobe account team for details. Note that no additional license is required during the early adopter program.
 
-These rules can be deployed to all cloud environment types (RDE, dev, stage, prod) in production (non-sandbox) programs.
+These rules can be deployed to dev, stage and prod cloud environment types, for production (non-sandbox) programs. Support for RDE environments will be available in the future.
 
 ## Setup {#setup}
 
@@ -37,8 +37,9 @@ These rules can be deployed to all cloud environment types (RDE, dev, stage, pro
    ```
    kind: "CDN"
    version: "1"
-   envType: "dev"
    ```
+
+Two properties -- envType and envId -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches.
 
 1. `cdn.yaml` should include a list of CDN rules and WAF rules, as described in sections below
 1. To match WAF rules, WAF must be enabled in Cloud Manager, as described below for both the new and existing program scenarios. Note that a separate license must be purchased for WAF.
