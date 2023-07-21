@@ -7,81 +7,81 @@ description: Learn how to administer tags in AEM to organize your content.
 
 Tags are a quick and easy method of classifying your content. They can be thought of as keywords or labels (metadata) that allow content to be more quickly found.
 
+It is best practices to minimize the number of tags that relate to the same ideas. For example, if you are managing content for an outdoor supply store, you probably don't need a tag for both *footwear* and *shoes*.
+
 In Adobe Experience Manager (AEM), a tag can be a property of:
 
-* A content node for a page (see [Using Tags](/help/sites-authoring/tags.md))
-
-* A metadata node for an asset (see [Managing Metadata for Digital Assets](/help/assets/metadata.md))
-
-In addition to pages and assets, tags are used for AEM Communities features
-
-* user generated content (see [Tagging UGC)](/help/communities/tag-ugc.md)
-
-* Enablement Resources (see [Tagging Enablement Resources](/help/communities/functions.md#catalog-function))
+* A content node for a page
+  * See the document [Using Tags](/help/sites-cloud/authoring/features/tags.md) for more information.
+* A metadata node for an asset 
+  * See the document [Managing Metadata for Digital Assets](/help/assets/manage-metadata.md) for more information.
 
 ## Tag Features {#tag-features}
 
-Some of the features of tags within AEM include:
+Tags offer robust features for organizing and managing content.
 
-* Tags can be grouped into various namespaces. Such hierarchies allow taxonomies to be built. These taxonomies are global throughout AEM.
-* The main restriction for newly created tags is they must be unique within a specific namespace.
-* A tag's title should not include tag path separation chars (nor will they be displayed if present)
+* Tags can be grouped into various namespaces.
+  * These can be thought of as hierarchies that allow taxonomies to be built. 
+  * These taxonomies are global throughout AEM.
+* Tags can be applied by authors and site visitors.
+* Irrespective of their creator, all forms of tags are made available for selection, both when assigning to a page, or when searching.
+* Tags are used by the [List Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) to generate dynamic lists based on the tags selected.
 
-    * colon `:` - delimits the namespace tag
-    * forward slash `/` - delimits sub-tags
 
-* Tags can be applied by authors and site visitors. Irrespective of their creator, all forms of tags are made available for selection, both when assigning to a page, or when searching.
-* Tags can be created and their taxonomy modified by members of the "tag-administrators" group and members who have modification rights to `/content/cq:tags`.
+If tagging is an important aspect of your content, make sure to:
 
-    * A tag that contains child tags is referred to as a container tag
-    * A tag that is not a container tag is referred to as a leaf tag
-    * A tag namespace is either a leaf tag or container tag
+* Package tags with the pages that use them
+* Configure [tag permissions](#setting-tag-permissions)
 
-* Tags are used by the [Search component](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) to facilitate finding content.
-* Tags are used by the [Teaser component](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), which monitors a user's tag cloud to provide targeted content.
-* If tagging is an important aspect of your content
+## Tag Requirements {#requirements}
 
-    * make sure to package tags with the pages that use them
-    * make sure [tag permissions](#setting-tag-permissions) enable read access
+There are a few technical details to keep in mind when creating and managing tags.
+
+* Tags must be unique within a specific namespace.
+* A tag's name may not include tag delimiters:
+  * Colon (`:`) - Delimits the namespace tag
+  * Slash (`/`) - Delimits sub-tags
+* If a tag's title includes tag delimiters, they will be suppressed in the UI.
+* Tags can be created and their taxonomy can be modified by members of the `tag-administrators` group and members who have modification rights to `/content/cq:tags`.
+  * A tag that contains child tags is referred to as a container tag.
+  * A tag that is not a container tag is referred to as a leaf tag.
+  * A tag namespace can be either a leaf tag or container tag.
 
 ## Tagging Console {#tagging-console}
 
-The Tagging console is used to create and manage tags and their taxonomies. One goal is to avoid having many similar tags relating to basically the same thing : for example, page and pages or footwear and shoes.
+The tagging console is used to create and manage tags and their taxonomies. You can use the tagging console to manage your tags by:
 
-Tags are managed by grouping into namespaces, reviewing usage of exiting tags before creating new ones, and re-organizing without disconnecting the tag from currently referenced content.
+* Grouping them into namespaces.
+* Reviewing the usage of exiting tags before creating new ones.
+* Reorganizing your tags without disconnecting the tag from currently referenced content.
 
-To access the Tagging console :
+To access the tagging console:
 
-* on author
-* sign in with administrative privileges
-* from global navigation
+1. Sign in to an authoring environment with with administrative privileges.
+1. In the global navigation menu select **`Tools`** -&gt; **`General`** -&gt;
+**`Tagging`**.
 
-    * select **`Tools`**
-    * select **`General`**
-    * select **`Tagging`**
+![The tagging console in AEM](/help/sites-cloud/administering/assets/tagging-console.png)
 
-![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
+You can use the tagging console to [create new namespaces](#creating-a-namespace) and tags as well as manage existing tags.
 
-### Creating a Namespace {#creating-a-namespace}
+## Creating a Namespace {#creating-a-namespace}
 
-To create a new namespace, select the **`Create Namespace`** icon.
+A namespace is itself a tag, and need not contain any sub-tags. However, to continue creating a taxonomy, [create sub-tags](#creating-tags), which in turn may be either leaf tags or container tags.
 
-The namespace is itself a tag, and need not contain any sub-tags. However, to continue creating a taxonomy, [create sub-tags](#creating-tags), which in turn may be either leaf tags or container tags.
+1. To create a new namespace, open the [tagging console](#tagging-console) and tap or click the **Create** button in the toolbar and then **Create Namespace**.
 
-![chlimage_1-183](assets/chlimage_1-183a.png) ![creating_tags_andnamespaces](assets/creating_tags_andnamespacesa.png)
+   ![Add Namespace dialog](/help/sites-cloud/administering/assets/add-namespace.png)
 
-* **Title**
-  *(required)* A display title for the namespace.
+1. Provide the necessary information.
 
-* **Name**
-  *(optional)* A name for the namespace. If not specified, a valid node name is created from the Title. See [TagID](/help/sites-developing/framework.md#tagid).
+   * **Title** - A title for the namespace displayed to the user in the UI (optional)
+   * **Name** - If a name is not specified, a valid node name is created from the **Title**. See the document [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md#tagid) for more information.
+   * **Description** - A description of the namespace (optional)
 
-* **Description**
-  *(optional)* A description of the namespace.
+1. Once the required information is entered tap or click **Create**.
 
-Once the required information is entered
-
-* select **Create**
+You can now create new tags in this namespace or manage existing tags.
 
 ### Operations on Tags {#operations-on-tags}
 
