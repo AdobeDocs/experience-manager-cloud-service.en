@@ -9,7 +9,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 12790 {#release-12790}
  
-Summarized below are the continuous improvements for maintenance release 12697, which was publicly released on July 14, 2023. This maintenance release is an update from previous maintenance release 12549. Maintenance release 12697 replaces 12585 to rectify one issue.
+Summarized below are the continuous improvements for maintenance release 12790, which was publicly released on July 21, 2023. This maintenance release is an update from previous maintenance release 12697.
 
 2023.7.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
