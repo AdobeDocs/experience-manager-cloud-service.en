@@ -1,34 +1,79 @@
 ---
 title: How to configure a Submit Action for an Adaptive Form
 description: An Adaptive Form provides multiple Submit Actions. A Submit Action defines how an Adaptive Form is processed after submission. You can use built-in Submit Actions or create your own.
-exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
+hide: yes
+hidefromtoc: yes
 ---
 # Adaptive Form Submit Action {#configuring-the-submit-action}
+
+<span class="preview"> Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md). </span>
+
 
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html)                  |
 | AEM as a Cloud Service     | This article         |
-
-**Applies to**: ✔️ Adaptive Form Foundation Components. ❌ [Adaptive Form Core Components](/help/forms/configure-submit-actions-core-components.md). Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](creating-adaptive-form-core-components.md).
-
-A Submit Action is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. Forms as a Cloud Service provides the following Submit Actions out of the box. 
+| Applies to     | ✅ Adaptive Form Core Components, ❎ [Adaptive Form Foundation Components](/help/forms/configuring-submit-actions.md)          |
 
 
-* [Submit to REST endpoint](#submit-to-rest-endpoint)
-* [Send email](#send-email)
-* [Submit using Form Data Model](#submit-using-form-data-model)
-* [Invoke an AEM Workflow](#invoke-an-aem-workflow)
-* [Submit to SharePoint](#submit-to-sharedrive)
-* [Submit to OneDrive](#submit-to-onedrive)
-* [Submit to Azure Blob Storage](#azure-blob-storage)
+A Submit Action allows you to choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. Forms as a Cloud Service, for Adaptive Forms based on Core Components, offers an array of pre-built Submit Actions. These out-of-the-box submit actions empower you to: 
 
-You can also [extend the default Submit Actions](custom-submit-action-form.md) to create your own Submit Action. 
+* Effortlessly send form data via email.
+* Initiate Microsoft Power Automate flows or AEM Workflows while transmitting the data.
+* Directly transmit the form data to Microsoft SharePoint Server, Microsoft Azure Blob Storage, or Microsoft OneDrive.
+* Seamlessly send the data to a configured data source using the Form Data Model.
+* Conveniently submit the data to a REST endpoint.
 
-You can configure a Submit Action in the **[!UICONTROL Submission]** section of the Adaptive Form Container properties, in the sidebar.
+You can also [extend the default Submit Actions](custom-submit-action-form.md) to create a Submit Action of your own. 
 
-![Configure Submit Action](assets/submission.png)
+## Select and configure a Submit Action for an Adaptive Form {#select-and-configure-submit-action}
 
+To select and configure a Submit Action for your form:
+
+1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
+1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
+
+1. Click the  **[!UICONTROL Submission]** tab. 
+
+    ![Click the Wrench icon to open Adaptive Form Container dialog box to configure a submit action](/help/forms/assets/adaptive-forms-submit-message.png)
+
+1. Select and configure a **[!UICONTROL Submit action]**, based on your requirements. For detailed information about the selected Submit Action, see:
+
+     * [Send email](#send-email)
+     * [Submit to SharePoint](#submit-to-sharedrive)
+     * [Submit using Form Data Model](#submit-using-form-data-model)
+     * [Submit to Azure Blob Storage](#azure-blob-storage)
+     * [Submit to REST endpoint](#submit-to-rest-endpoint)
+     * [Submit to OneDrive](#submit-to-onedrive)
+     * [Invoke an AEM Workflow](#invoke-an-aem-workflow)
+
+## Send Email {#send-email}
+
+To send an email to one or more recipients upon successful submission of the form, you can utilize the **[!UICONTROL Send Email]** Submit Action. This action enables you to create an email that includes form data in a predefined format. For instance, consider the following template where customer name, shipping address, state name, and ZIP code are retrieved from the submitted form data:
+
+     ```
+ 
+     Hi ${customer_Name},
+ 
+     The following is set as your deafult shipping address:
+     ${customer_Name},
+     ${customer_Shipping_Address},
+     ${customer_State},
+     ${customer_ZIPCode}
+ 
+     Regards,
+     WKND 
+ 
+     ```
+
+>[!NOTE]
+>
+> * It is crucial for all form fields to have unique element names, even if they are placed on different panels within an Adaptive Form.
+> * When using AEM as a Cloud Service, outbound email requires encryption. By default, outbound email functionality is disabled. To activate it, submit a support ticket to [Request Access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). 
+
+Furthermore, the **[!UICONTROL Send Email]** Submit Action provides the option to include attachments and a Document of Record (DoR) with the email. 
+
+To enable the [!UICONTROL Attach Document of Record] option, refer to the documentation on [configure the Adaptive Form to generate a Document of Record (DoR)](generate-document-of-record-core-components.md). You can enable this option from the Adaptive Form properties.
 
 <!-- [!NOTE]
 >
@@ -51,6 +96,64 @@ You can configure a Submit Action in the **[!UICONTROL Submission]** section of 
 
 
 -->
+
+## Submit to SharePoint {#submit-to-sharedrive}
+
+The **[!UICONTROL Submit to SharePoint]** Submit Action connects an Adaptive Form with a Microsoft&reg; SharePoint Storage. You can submit the form data file, attachments, or Document of Record to the connected Microsoft&reg; Sharepoint Storage. To use the **[!UICONTROL Submit to SharePoint]** Submit Action in an Adaptive Form:
+
+1. [Create a SharePoint Configuration](#create-a-sharepoint-configuration-create-sharepoint-configuration): It connects AEM Forms to your Microsoft&reg; Sharepoint Storage.
+2. [Use the Submit to SharePoint submit action in an Adaptive Form](#use-sharepoint-configuartion-in-af): It connects your Adaptive Form to configured Microsoft&reg; SharePoint.
+
+### Create a SharePoint Configuration {#create-sharepoint-configuration}
+
+To connect AEM Forms to your Microsoft&reg; Sharepoint Storage:
+
+1. Go to your **AEM Forms** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; SharePoint]**.   
+1. Select a **Configuration Container**. Don't click on the check-box of the Configuration Container. Click the name of the Configuration Container to select it. The configuration is stored in the selected Configuration Container. 
+1. Click **[!UICONTROL Create]**. The SharePoint configuration wizard appears. 
+ ![Sharepoint configuration](/help/forms/assets/sharepoint_configuration.png)
+1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
+    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your AEM Forms Author instance.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` to provide read/write permissions.
+    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
+
+    >[!NOTE]
+    >
+    > The **client secret** field is mandatory or optional depending upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
+    
+1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears. 
+
+1. To select a folder to save the data, select **SharePoint Site** > **Document Library** > **SharePoint Folder**, .
+
+    >[!NOTE]
+    >
+    >* By default, the `forms-ootb-storage-adaptive-forms-submission` folder is availlable in the elected SharePoint Site. If the folder is not available, use the **Create Folder** option to create it. 
+
+Now, you can use this SharePoint Sites configuration for the **Submit to SharePoint** submit action in an Adaptive Form. 
+
+### Use the Submit to SharePoint submit action in an Adaptive Form {#use-sharepoint-configuartion-in-af}
+
+You can use the SharePoint configuration created in the previous section, to save data or Document of Record in a SharePoint folder. Perform the following steps to use the Submit to SharePoint submit action in an Adaptive Form:
+
+1. Create an [Adaptive Form](/help/forms/creating-adaptive-form.md). While creating the Adaptive Form,  select the [!UICONTROL Configuration Container] used for [creating a SharePoint Configuration](#create-sharepoint-configuration).  
+
+    >[!NOTE]
+    >
+    > When no [!UICONTROL Configuration Container] is selected, the global [!UICONTROL Storage Configuration] folders appear in the Submit Action properties window.
+
+1. Select **Submit Action** as **[!UICONTROL Submit to SharePoint]**.
+1. Select the configured **[!UICONTROL Storage Configuration]**. It specifies the folder in SharePoint to save the form data and Document of Record. 
+1. Click **[!UICONTROL Save]** to save the Submit settings.
+
+When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint Storage location (Folder). 
+Folder structure for saved data is `/folder_name/form_name/year/month/date/submission_id/data`. 
+
+## Submit using Form Data Model {#submit-using-form-data-model}
+
+The **[!UICONTROL Submit using Form Data Model]** Submit Action writes submitted Adaptive Form data for the specified data model object in a Form Data Model to its data source. When configuring the Submit Action, you can choose a data model object whose submitted data you want to write back to its data source.
+
+In addition, you can submit a form attachment using a Form Data Model and a Document of Record (DoR) to the data source. For information about form data model, see [[!DNL AEM Forms] Data Integration](data-integration.md).
 
 ## Submit to REST endpoint {#submit-to-rest-endpoint}
 
@@ -89,34 +192,6 @@ You can also **[!UICONTROL Enable POST request]** and provide a URL to post the 
 >
 >To pass the fields as parameters in a REST URL, all the fields must have different element names, even if the fields are placed on different panels.
 
-## Send Email {#send-email}
-
-You can use the **[!UICONTROL Send Email]** Submit Action to send an email to one or more recipients on successful submission of the form. The email generated can contain form data in a predefined format. For example, in the following template, customer name, shipping address, name of the state, and zip code are retrieved from submitted form data.
-
-    ```
-
-    Hi ${customer_Name},
-
-    The following is set as your deafult shipping address:
-    ${customer_Name},
-    ${customer_Shipping_Address},
-    ${customer_State},
-    ${customer_ZIPCode}
-
-    Regards,
-    WKND 
-
-    ```
-
->[!NOTE]
->
-> * All the form fields must have different element names, even if the fields are placed on different panels of an Adaptive Form.
-> * AEM as a Cloud Service requires outbound mail to be encrypted. By default, outbound email is disabled. To activate it, submit a support ticket to [Requesting Access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). 
-
-You can also include attachments and a Document of Record (DoR) to the email. To enable **[!UICONTROL Attach Document of Record]** option, configure the Adaptive Form to generate a Document of Record (DoR). You can enable the option to generate a Document of Record from Adaptive Form properties.
-
-
-
 <!-- ## Send PDF via Email {#send-pdf-via-email}
 
 The **Send PDF via Email** Submit Action sends an email with a PDF containing form data, to one or more recipients on successful submission of the form.
@@ -131,11 +206,7 @@ The **Submit to Forms workflow** submit option sends a data xml and file attachm
 
 For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
 
-## Submit using Form Data Model {#submit-using-form-data-model}
 
-The **[!UICONTROL Submit using Form Data Model]** Submit Action writes submitted Adaptive Form data for the specified data model object in a Form Data Model to its data source. When configuring the Submit Action, you can choose a data model object whose submitted data you want to write back to its data source.
-
-In addition, you can submit a form attachment using a Form Data Model and a Document of Record (DoR) to the data source. For information about form data model, see [[!DNL AEM Forms] Data Integration](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -164,60 +235,7 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 * **[!UICONTROL Processing Server Password]**: Workflow user's password
 
-## Submit to SharePoint {#submit-to-sharedrive}
 
-The **[!UICONTROL Submit to SharePoint]** Submit Action connects an Adaptive Form with a Microsoft&reg; SharePoint Storage. You can submit the form data file, attachments, or Document of Record to the connected Microsoft&reg; Sharepoint Storage. To use the **[!UICONTROL Submit to SharePoint]** Submit Action in an Adaptive Form:
-
-1. [Create a SharePoint Configuration](#create-a-sharepoint-configuration-create-sharepoint-configuration): It connects AEM Forms to your Microsoft&reg; Sharepoint Storage.
-2. [Use the Submit to SharePoint submit action in an Adaptive Form](#use-sharepoint-configuartion-in-af): It connects your Adaptive Form to configured Microsoft&reg; SharePoint.
-
-### Create a SharePoint Configuration {#create-sharepoint-configuration}
-
-To connect AEM Forms to your Microsoft&reg; Sharepoint Storage:
-
-1. Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; SharePoint]**.   
-1. Once you select the **[!UICONTROL Microsoft&reg; SharePoint]**, you are redirected to **[!UICONTROL SharePoint Browser]**.
-1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
-1. Click **[!UICONTROL Create]**. The SharePoint configuration wizard appears. 
- ![Sharepoint configuration](/help/forms/assets/sharepoint_configuration.png)
-1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
-    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
-    * Add the API permissions `offline_access` and `Sites.Manage.All` to provide read/write permissions.
-    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
-
-    >[!NOTE]
-    >
-    > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
-    
-1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears. 
-
-1. Now, select **SharePoint Site** > **Document Library** > **SharePoint Folder**, to save the data.
-
-    >[!NOTE]
-    >
-    >* By default, `forms-ootb-storage-adaptive-forms-submission` is present at selected SharePoint Site.
-    >* Create a folder as `forms-ootb-storage-adaptive-forms-submission`, if not already present in the `Documents` library of the selected SharePoint Site by clicking **Create Folder**.
-
-Now, you can use this SharePoint Sites configuration for the submit action in an Adaptive Form. 
-
-### Use SharePoint Configuration in an Adaptive Form {#use-sharepoint-configuartion-in-af}
-
-You can use the created SharePoint configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint folder. Perform the following steps to use a SharePoint storage configuration in an Adaptive Form as:
-1. Create an [Adaptive Form](/help/forms/creating-adaptive-form.md).
-
-    >[!NOTE]
-    >
-    > * Select the same [!UICONTROL Configuration Container] for an Adaptive Form, where you have created your SharePoint storage. 
-    > * If no [!UICONTROL Configuration Container] is selected, then the global [!UICONTROL Storage Configuration] folders appear in the Submit Action properties window.
-
-1. Select **Submit Action** as **[!UICONTROL Submit to SharePoint]**.
-    ![Sharepoint GIF](/help/forms/assets/sharedrive-video.gif)
-1. Select the **[!UICONTROL Storage Configuration]**, where you want to save your data.
-1. Click **[!UICONTROL Save]** to save the Submit settings.
-
-When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint Storage. 
-Folder structure to save data is `/folder_name/form_name/year/month/date/submission_id/data`. 
 
 ## Submit to OneDrive {#submit-to-onedrive}
 
