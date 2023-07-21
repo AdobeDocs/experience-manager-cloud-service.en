@@ -61,6 +61,13 @@ Alternatives that are known to work, but may require providing the dependency yo
 
 Next to providing timeouts also a proper handling of such timeouts and unexpected HTTP status codes should be implemented.
 
+## Handling request rate limits {#rate-limit-handling}
+
+>[!NOTE]
+>The HTTP error response will change from 503 to 429 in mid-August, 2023. 
+>
+When the rate of incoming requests to AEM exceeds healthy levels, AEM responds to new requests with HTTP error code 429. Applications making programmatic calls to AEM can consider coding defensively, retrying after a few seconds with an exponential backoff strategy. Note that prior to mid-August 2023, AEM responded to the same condition with HTTP error code 503.
+
 ## No Classic UI Customizations {#no-classic-ui-customizations}
 
 AEM as a Cloud Service only supports the Touch UI for third-party customer code. Classic UI is not available for customization.
