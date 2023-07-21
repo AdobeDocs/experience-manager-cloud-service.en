@@ -1,6 +1,6 @@
 ---
 title: Configuring CDN and Web Application Firewall Rules to Filter Traffic
-description: Use the CDN and Web Application Firewall Rules to Filter Malitious Traffic
+description: Use the CDN and Web Application Firewall Rules to Filter Malicious Traffic
 ---
 
 # Configuring CDN and Web Application Firewall Rules to Filter Traffic {#configuring-cdn-and-waf-rules-to-filter-traffic}
@@ -9,7 +9,7 @@ description: Use the CDN and Web Application Firewall Rules to Filter Malitious 
 >
 >This feature is not yet generally available.
 
-Adobe will try to mitigate attacks against customer websites, but itt may be useful to proactively filter requests matching certain patterns so malicious traffic does not reach your application. Possible approaches include:
+Adobe tries to mitigate attacks against customer websites, but it may be useful to proactively filter requests matching certain patterns so malicious traffic does not reach your application. Possible approaches include:
 
 * Apache layer modules such as `mod_security`
 * Configuring rules that are deployed to the CDN using Cloud Manager's configuration pipeline. 
@@ -17,13 +17,13 @@ Adobe will try to mitigate attacks against customer websites, but itt may be use
 This article describes the latter approach, which offers two categories of rules:
 
 1. **CDN rules**: block or allow requests based on request properties and request headers, including IP, paths, and user agent. These rules can be configured by all AEM as a Cloud Service customers
-1. **WAF** (Web Application Firewall) rules: block requests that matches various patterns known to be associated with malicious traffic. These rules can be configured by customers who license the WAF add-on.
+1. **WAF** (Web Application Firewall) rules: block requests that match various patterns known to be associated with malicious traffic. These rules can be configured by customers who license the WAF add-on.
 
 These rules can be deployed to all cloud environment types (RDE, dev, stage, prod) in production (non-sandbox) programs.
 
 ## Setup {#setup}
 
-1. First, create the following folder and file structure the top level folder in git:
+1. First, create the following folder and file structure the top-level folder in git:
 
    ```
    config/
@@ -41,11 +41,11 @@ These rules can be deployed to all cloud environment types (RDE, dev, stage, pro
    ```
 
 1. `cdn.yaml` should include a list of CDN rules and WAF rules, as described in sections below
-1. In order to match WAF rules, WAF must be enabled in Cloud Manager, as described below for both the new and existing program scenarios. Note that a separate license must be purchased for WAF.
+1. To match WAF rules, WAF must be enabled in Cloud Manager, as described below for both the new and existing program scenarios. Note that a separate license must be purchased for WAF.
 
-   1. In order to Configure WAF on a new Program, check the **WAF-DDOS Protection** check-box in the **Security** tab as shown below. Continue by following the steps described in [Add Production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) to create your program
+   1. To Configure WAF on a new Program, check the **WAF-DDOS Protection** check-box in the **Security** tab as shown below. Continue by following the steps described in [Add Production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) to create your program
 
-   1. In order to Configure WAF on an existing program, select the **Edit program** option by following the steps described in the [Editing Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) documentation. Then, in the **Security** tab of the wizard, you can un-check or check the WAF-DDOS option at any time
+   1. To Configure WAF on an existing program, select the **Edit program** option by following the steps described in the [Editing Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) documentation. Then, in the **Security** tab of the wizard, you can uncheck or check the WAF-DDOS option at any time
 
 1. For environment types other than RDE, execute the Cloud Manager configuration pipeline, which can be configured as described below. 
 
@@ -59,7 +59,7 @@ These rules can be deployed to all cloud environment types (RDE, dev, stage, pro
 
       ![Selet Targeted deployment](/help/security/assets/target-deployment.png)
 
-   1. Select the repository and branch as needed. Note that if a Config pipeline already exists for the selected environment, this selection will be disabled.
+   1. Select the repository and branch as needed. If a Config pipeline exists for the selected environment, this selection is disabled.
 
       ![Overview of a Config Pipeline](/help/security/assets/config-pipeline.png)
       
@@ -76,7 +76,7 @@ The format of the rules is described below, followed by some examples in a subse
 
 | **Property**   | **CND Rules**  | **WAF Rules**  | **Type**  | **Default value**  | **Description**  |
 |---|---|---|---|---|---|
-| name  | X  | X  | `string`  | -  | Rule name (64 chars long, can only contains alphanumerics and - )  |
+| name  | X  | X  | `string`  | -  | Rule name (64 chars long, can only contain alphanumerics and - )  |
 | when  | X  | X  | `Condition`  | -  | The basic structure is:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>See Condition Structure syntax below, which describes the getters, predicates, and how to combine multiple conditions.  |
 | action  | X  | X  | `Enum`  | log (CDN rules)  | For CDN rules: allow, block, log. Default is log.<br><br>For WAF rules: `enableWafRules`, `disableWafRules`, log. No default.  |
 |  rateLimit | X  |   | `RateLimit`  | not defined  | Rate limiting configuration. Rate limiting is disabled if not defined.<br><br>There is a separate section further below describing the rateLimit syntax, along with examples.  |
@@ -124,8 +124,8 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
 
 | **Property**  | **Type**  | **Description**  |
 |---|---|---|
-|  **equals** | `string`  | true if getter result equals to provided value  |
-|  **doesNotEqual** | `string`  | true if getter result not equal to provided value  |
+|  **equals** | `string`  | true if the getter result equals to provided value  |
+|  **doesNotEqual** | `string`  | true if the getter result is not equal to provided value  |
 | **like**  | `string`  | true if getter result matches provided pattern  |
 | **notLike**  | `string`  | true if getter result does not match provided pattern  |
 | **matches**  | `string`  | true if getter result matches provided regex  |
@@ -148,21 +148,21 @@ The `waRules` property may include the following rules:
 | LOG4J-JNDI  | Log4J JNDI  |  Log4J JNDI attacks attempt to exploit the [Log4Shell vulnerability](https://en.wikipedia.org/wiki/Log4Shell) present in Log4J versions earlier than 2.16.0 |
 |  AWS SSRF | AWS-SSRF  | Server Side Request Forgery (SSRF) is a request which attempts to send requests made by the web application to target internal systems. AWS SSRF attacks use SSRF to obtain Amazon Web Services (AWS) keys and gain access to S3 buckets and their data.  |
 | BHH  | Bad Hop Headers | Bad Hop Headers indicate an HTTP smuggling attempt through either a malformed Transfer-Encoding (TE) or Content-Length (CL) header, or a well-formed TE and CL header  |
-| ABNORMALPATH  | Abnormal Path  | Abnormal Path indicates the original path differs from the normalized path (e.g., `/foo/./bar` is normalized to `/foo/bar`)  |
+| ABNORMALPATH  | Abnormal Path  | Abnormal Path indicates that the original path differs from the normalized path (for example, `/foo/./bar` is normalized to `/foo/bar`)  |
 | COMPRESSED  | Compression Detected  | The POST request body is compressed and cannot be inspected. For example, if a "Content-Encoding: gzip" request header is specified and the POST body is not plain text.  |
 | DOUBLEENCODING  | Double Encoding  |  Double Encoding checks for the evasion technique of double encoding html characters |
 | FORCEFULBROWSING  | Forceful Browsing  | Forceful Browsing is the failed attempt to access admin pages  |
 | NOTUTF8  | Invalid Encoding  | Invalid Encoding can cause the server to translate malicious characters from a request into a response, causing either a denial of service or XSS  |
 | JSON-ERROR  | JSON Encoding Error  | A POST, PUT, or PATCH request body that is specified as containing JSON within the "Content-Type" request header but contains JSON parsing errors. This is often related to a programming error or an automated or malicious request.  |
-| MALFORMED-DATA  | Malformed Data in the request body  | A POST, PUT or PATCH request body that is malformed according to the "Content-Type" request header. For example, if a "Content-Type: application/x-www-form-urlencoded" request header is specified and contains a POST body that is json. This is often a programming error, automated or malicious request. Requires agent 3.2 or higher.  |
+| MALFORMED-DATA  | Malformed Data in the request body  | A POST, PUT, or PATCH request body that is malformed according to the "Content-Type" request header. For example, if a "Content-Type: application/x-www-form-urlencoded" request header is specified and contains a POST body that is json. This is often a programming error, automated or malicious request. Requires agent 3.2 or higher.  |
 | SANS  | Malicious IP Traffic  | [SANS Internet Storm Center](https://isc.sans.edu/) list of IP addresses that have been reported to have engaged in malicious activity  |
-| SIGSCI-IP  | Network Effect  | IP flagged by SignalSciences: Whenever an IP is flagged due to a malicious signal by our decision engine, that IP will be propagated to all customers. We then log subsequent requests from those IP addresses that contain any additional signal for the duration of the flag.  |
-| NO-CONTENT-TYPE  | Missing "Content-Type" request header  | A POST, PUT or PATCH request that does not have a "Content-Type" request header. By default application servers should assume "Content-Type: text/plain; charset=us-ascii" in this case. Many automated and malicious requests may be missing "Content Type".  |
+| SIGSCI-IP  | Network Effect  | IP flagged by SignalSciences: Whenever an IP is flagged due to a malicious signal by the decision engine, that IP will be propagated to all customers. Subsequent requests from those IP addresses that contain any additional signal for the duration of the flag are then logged |
+| NO-CONTENT-TYPE  | Missing "Content-Type" request header  | A POST, PUT, or PATCH request that does not have a "Content-Type" request header. By default application servers should assume "Content-Type: text/plain; charset=us-ascii" in this case. Many automated and malicious requests may be missing "Content Type".  |
 | NOUA  | No User Agent  | Many automated and malicious requests use fake or missing User-Agents to make it difficult to identify the type of device making the requests.  |
 | TORNODE  |  Tor Traffic | Tor is software that conceals a user's identity. A spike in Tor traffic can indicate an attacker trying to mask their location.  |
 | DATACENTER  | Datacenter Traffic  | Datacenter Traffic is non-organic traffic originating from identified hosting providers. This type of traffic is not commonly associated with a real end user.  |
-| NULLBYTE  | Null Byte | Null bytes do not normally appear in a request and indicate the request is malformed and potentially malicious. |
-| IMPOSTOR  |  SearchBot Impostor | Search bot impostor is someone pretending to be a Google or Bing search bot, but who is not legitimate. Note, doesn not depend on a response per se, but needs to be resolved in the cloud first, so it should not be used in a pre rule.  |
+| NULLBYTE  | Null Byte | Null bytes do not normally appear in a request and indicate that the request is malformed and potentially malicious. |
+| IMPOSTOR  |  SearchBot Impostor | Search bot impostor is someone pretending to be a Google or Bing search bot, but who is not legitimate. Note, does not depend on a response by itself, but must be resolved in the cloud first, so it should not be used in a pre rule.  |
 | PRIVATEFILE  | Private files  | Private files are usually confidential in nature, such as an Apache `.htaccess` file, or a configuration file which could leak sensitive information  |
 | SCANNER  |  Scanner | Identifies popular scanning services and tools  |
 | RESPONSESPLIT  | HTTP Response Splitting  | Identifies when CRLF characters are submitted as input to the application to inject headers into the HTTP response  |
@@ -172,7 +172,7 @@ The `waRules` property may include the following rules:
 
 * When two conflicting rules are created, the allow rules will always take precedence over the block rules. For example, if you create a rule to block a specific path and a rule to allow one specific IP address, requests from that IP address on the blocked path will be allowed.
 
-* If a rule is matched and blocked, the CDN will respond with a `406` return code.
+* If a rule is matched and blocked, the CDN responds with a `406` return code.
 
 ## Examples {#examples}
 
@@ -250,7 +250,7 @@ Sometimes it is desirable to block traffic matching a rule only if the match exc
 |---|---|---|---|
 |  limit |  integer from 10 to 10000     |  required |  Request rate in requests per second for which the rule is triggered |
 |  window | integer enum: 1, 10 or 60  | 10  | Sampling window in seconds for which request rate is calculated  |
-|  penalty | integer from 60 to 3600  | 300 (5 minutes) | A period of time in seconds for which matching requests are blocked (rounded to the nearest minute)  |
+|  penalty | integer from 60 to 3600  | 300 (5 minutes) | A period in seconds for which matching requests are blocked (rounded to the nearest minute)  |
 
 ### Examples {#ratelimiting-examples}
 
@@ -349,7 +349,7 @@ Below is a list of the field names used in CDN logs, along with a brief descript
 | *url*  | The full path, including query parameters.  |
 | *req_mthd*  |  HTTP method sent by the client, such as "GET" or "POST". |
 | *res_type*  | The Content-Type used to indicate the original media type of the resource  |
-| *cache*  |  State of the cache. Possible values are HIT, MISS or PASS |
+| *cache*  |  State of the cache. Possible values are HIT, MISS, or PASS |
 | *res_status*  | The HTTP status code as an integer value.  |
 | *res_bsize*  | Body bytes sent to the client in the response.  |
 | *server*  | Datacenter of the CDN cache server.  |
