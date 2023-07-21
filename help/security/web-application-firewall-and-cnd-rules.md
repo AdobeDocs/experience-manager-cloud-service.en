@@ -135,7 +135,7 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
 
 **wafRules List**
 
-The `waRules` property may include the following rules:
+The `wafRules` property may include the following rules:
 
 | **Rule ID**  | **Rule Name** | **Description**  |
 |---|---|---|
