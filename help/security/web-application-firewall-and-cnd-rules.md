@@ -3,6 +3,7 @@ title: Configuring CDN and Web Application Firewall Rules to Filter Traffic
 description: Use the CDN and Web Application Firewall Rules to Filter Malicious Traffic
 ---
 
+
 # Configuring CDN and Web Application Firewall Rules to Filter Traffic {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]
@@ -32,15 +33,14 @@ These rules can be deployed to dev, stage and prod cloud environment types, for 
            _config.yaml
    ```
 
-1. `_config.yaml` describes the type of rules and the version, as illustrated in the snippet below:
-
+1. `_config.yaml` describes some metadata about the configuration. The "kind" parameter should be set to "CDN" and the version should be set to the schema version, which is currently "1". See the snippet below:  
+  
    ```
    kind: "CDN"
    version: "1"
-   ```
-
-Two properties -- envType and envId -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches.
-
+   ```  
+   Two properties -- envType and envId -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches.
+   
 1. `cdn.yaml` should include a list of CDN rules and WAF rules, as described in sections below
 1. To match WAF rules, WAF must be enabled in Cloud Manager, as described below for both the new and existing program scenarios. Note that a separate license must be purchased for WAF.
 
@@ -69,13 +69,13 @@ Two properties -- envType and envId -- may be included to limit the scope of the
       >You can configure and run only one Config pipeline per environment.
 
    1. Select **Save**. Your new pipeline will appear in the pipeline card and can be run when you are ready. 
-   1. For RDE, use the command line, as described in the section below.
+   1. For RDE, the command line will be used, but RDE is not supported at this time.
 
 ## Rules Syntax {#rules-syntax}
 
 The format of the rules is described below, followed by some examples in a subsequent section.
 
-| **Property**   | **CND Rules**  | **WAF Rules**  | **Type**  | **Default value**  | **Description**  |
+| **Property**   | **CDN Rules**  | **WAF Rules**  | **Type**  | **Default value**  | **Description**  |
 |---|---|---|---|---|---|
 | name  | X  | X  | `string`  | -  | Rule name (64 chars long, can only contain alphanumerics and - )  |
 | when  | X  | X  | `Condition`  | -  | The basic structure is:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>See Condition Structure syntax below, which describes the getters, predicates, and how to combine multiple conditions.  |
