@@ -169,6 +169,16 @@ To do so, on the **Copy Content Activity** page, select the **Cancel** action fr
 >
 >If your environment is in such a state due to cancellation, contact Adobe Customer Care for assistance.
 
+### Accessing Logs {#accessing-logs}
+
+You can check the logs for both the source and destination environments for any completed content copy process.
+
+To do so, on the **Copy Content Activity** page, select the **Logs** action from the ellipsis menu of the copy process for which you would like to review the logs and then choose for which environment.
+
+![Accessing logs for copy content process](assets/copy-content-logs.png)
+
+The logs are downloaded to your local machine.
+
 ## Limitations {#limitations}
 
 The content copy tool has the following limitations.
