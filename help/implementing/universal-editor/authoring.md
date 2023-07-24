@@ -311,6 +311,10 @@ Tap or click the **Replace** button below the preview of the selected image in t
 
 Changes are saved to your content automatically.
 
+>[!TIP]
+>
+>Use the hot key `R` to open the asset selector to replace the selected image.
+
 ### Editing Content Fragments {#edit-content-fragment}
 
 If you are in [component mode](#component-mode) and you select a [Content Fragment,](/help/assets/content-fragments/content-fragments.md) you can edit its details in the component rail.
