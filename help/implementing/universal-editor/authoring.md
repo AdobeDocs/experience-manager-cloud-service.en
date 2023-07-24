@@ -207,7 +207,9 @@ When in [component mode,](#component-mode) if you select a Content Fragment, the
 
 ![Edit icon](assets/edit.png)
 
-Tapping or clicking the edit button opens the Content Fragment editor in a new tab, allowing you to edit referenced content as well as text and media content from within the Universal Editor.
+Tapping or clicking the edit button opens the Content Fragment editor in a new tab, allowing you access to the full power of the Content Fragment Editor.
+
+You can also edit details of the Content Fragment in the [component rail](#edit-content-fragment) as well depending on the needs of your workflow.
 
 >[!TIP]
 >
@@ -234,11 +236,11 @@ In properties mode, the rail shows the properties of the component currently sel
 
 ![Properties mode](assets/properties-mode.png)
 
-Details of the selected component are shown in the rail. If you have selected a Content Fragment by using [component mode,](#component-mode) you can modify its settings in the component rail. Changes are saved automatically by the Universal Editor.
+Depending on the type of component you select, details can be displayed and modified in the properties rail.
 
 ![Component details](assets/component-details.png)
 
-Note that not all components have details that can be shown.
+Note that not all components have details that can be shown and/or edited.
 
 >[!TIP]
 >
@@ -271,11 +273,41 @@ Simply tap or click on the content in the blue box to start an in-place editor t
 
 Note that in edit mode, tapping or clicking on content attempts to select it for editing. If you wish to navigate your content by following links, switch to [preview mode.](#preview-mode)
 
-Depending on the [mode](#mode-rail) you are in and the content you select, you may have different in place editing options.
+Depending on the [mode](#mode-rail) you are in and the content you select, you may have different in place editing options and you may be able to review additional properties for the content using the [component rail.](#component-rail) 
 
-Additionally, you may be able to review additional properties for the content using the [component rail.](#component-rail) For example if you select a rich text component you can edit formatting options in the component rail.
+### Editing Rich Text {#edit-rich-text}
+
+If you are in [text mode](#text-mode) and select a rich text component, you can edit formatting options in the component rail.
 
 ![Editing a rich text component](assets/rich-text-editing.png)
+
+As with in-place text editing, changes are saved to you content automatically.
+
+### Editing Media {#edit-media}
+
+If you are in [media mode](#media-mode) and you select an image, you can view its details in the component rail.
+
+![Editing media](assets/ue-edit-media.png)
+
+Tap or click the **Replace** button below the preview of the selected image in the component rail to replace the image with another from your library of assets.
+
+1. The [asset selector](/help/assets/asset-selector.md#using-asset-selector) window opens to allow you to select an asset.
+1. Tap or click to select a new asset.
+1. Tap or click **Select** to return to the component rail where the asset was replaced.
+
+Changes are saved to your content automatically.
+
+### Editing Content Fragments {#edit-content-fragment}
+
+If you are in [component mode](#component-mode) and you select a Content Fragment, you can edit its details in the component rail.
+
+![Editing a Content Fragment](assets/ue-edit-cf.png)
+
+The fields defined in the content model of the selected Content Fragment are displayed and editable in the component rail.
+
+Changes are saved to your content automatically.
+
+If you wish to edit your Content Fragment in the Content Fragment Editor instead, click the [edit button](#edit) in the mode rail.
 
 ## Previewing Content {#previewing-content}
 
