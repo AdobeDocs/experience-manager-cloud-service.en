@@ -3,6 +3,7 @@ title: The Content Copy Tool
 description: The content copy tool enables users to copy mutable content on-demand from their production environments on AEM as a Cloud Service to lower environments for testing purposes.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
 ---
+
 # The Content Copy Tool {#content-copy}
 
 The content copy tool enables users to copy mutable content on-demand from their production environments on AEM as a Cloud Service to lower environments for testing purposes.
@@ -34,6 +35,8 @@ To use the content copy tool, certain permissions are required in both the sourc
 |---|---|---|
 | Create and modify [content sets](#create-content-set) | Required | Not Required |
 | Start or cancel the [content copy process](#copy-content) | Required | Required |
+
+For more details on permissions and how to set them, please see the document [AEM as a Cloud Service Team and Product Profiles.](/help/onboarding/aem-cs-team-product-profiles.md)
 
 ## Creating a Content Set {#create-content-set}
 
