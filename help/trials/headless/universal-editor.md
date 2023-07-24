@@ -26,6 +26,10 @@ index: no
 
 Editing in-place and in-context can often be advantageous over structured headless content editing as in the Content Fragment editor, which you saw in previous modules.
 
+>[!NOTE]
+>
+>In order to use the Universal Editor in this trial, you must use Chrome as your browser and not in incognito mode. This is a limitation of the trial experience, not of the Universal Editor.
+
 Using the Universal Editor, you have an agile way to edit your text in-context and in-place, allowing simple and intuitive content authoring.
 
 1. The editor should load by default in **Text** mode. If not, please tap or click the **Text** icon in the mode rail at the left side of the editor.
