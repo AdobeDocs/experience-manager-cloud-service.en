@@ -177,7 +177,7 @@ To do so, on the **Copy Content Activity** page, select the **Logs** action from
 
 ![Accessing logs for copy content process](assets/copy-content-logs.png)
 
-The logs are downloaded to your local machine.
+The logs are downloaded to your local machine. If the download does not commence, please check your pop-up blocker settings.
 
 ## Limitations {#limitations}
 
