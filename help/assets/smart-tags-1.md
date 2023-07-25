@@ -13,7 +13,7 @@ Organizations have many digital assets and these are growing continuously. Searc
 
 For an instance, the words saved in the dictionary in an alphabetical order are easier in search, rather than searching the scattered words. Tagging also solves the same purpose. It aligns assets based on business taxonomy and ensures that the most relevant assets appear in searches. For example, a car manufacturer can tag car images with model names so only relevant images are displayed when searched to design a promotion campaign.Therefore, whether you are tagging "runners" or "running" shoes, you do not need to worry about typos, wrong spellings, or alternative search terms as Smart Tags know it already!
 
-In the background, the functionality uses the artificially intelligent framework of [Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) to automatically applies smart tags to uploaded assets, by default along with the text related to business taxonomy.
+In the background, the functionality uses the artificially intelligent framework of [Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) to automatically apply smart tags to uploaded assets, by default, along with the text related to business taxonomy.
 
 ## Prerequisites and configuration
 
@@ -22,6 +22,7 @@ Smart Tags is automatically provisioned for [!DNL Adobe Experience Manager] as a
 ## Smart Tags workflow
 
 [!DNL Adobe Sensei] powered smart tagging uses artificial intelligence models to analyze content and add tags to the assets. Thereby-reducing time for DAM users to deliver rich experiences to their customers. The Smart Tags are displayed in descending order of their [confidence score](#confidence-score) in asset [!UICONTROL Properties].
+
 * **Image-based assets**
   For images, the Smart Tags are based on some visual aspect. Images in many formats are tagged using smart content services. Smart Tags are applied to the [supported file types](#supported-file-formats) that generate renditions in JPG and PNG format.
 
@@ -37,8 +38,10 @@ Smart Tags is automatically provisioned for [!DNL Adobe Experience Manager] as a
 ![Smart-tag-types](assets/smart-tags-types.png)
 
 <br/>Smart Tags are implemented in AEM Assets using the following workflow:
-1.  Create or upload an asset in AEM. Out of the box tags are generated for image, video, and text based Assets.
-1.  If you find that specific tags are not generated, then you can train your image-type tags accordingly. Refer to [Smart Tags training](#smart-tags-training.md).
+
+1. Create or upload an asset in AEM. Out of the box tags are generated for image, video, and text based Assets.
+
+1. If you find that specific tags are not generated, then you can train your image-type tags accordingly. Refer to [Smart Tags training](#smart-tags-training.md).
 
 ## Supported file formats for Smart Tags {#supported-file-formats}
 
@@ -186,7 +189,8 @@ As the automated tagging of assets runs in parallel to other asset processing ta
     ![Disable smart tagging](assets/disable-tagging.png)
 
 1. Select [!UICONTROL Disable] to opt out of smart tagging uploaded to the folder.
-1.  Similarly, you can opt out smart tagging for [!UICONTROL Smart Tags for Text], [!UICONTROL Smart Tags for Image], and [!UICONTROL Color Tags for Images].
+
+1. Similarly, you can opt out smart tagging for [!UICONTROL Smart Tags for Text], [!UICONTROL Smart Tags for Image], and [!UICONTROL Color Tags for Images].
 
 >[!IMPORTANT]
 >
