@@ -13,6 +13,11 @@ exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 ---
 # Use CAPTCHA in Adaptive Forms{#using-captcha-in-adaptive-forms}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html)                  |
+| AEM as a Cloud Service     | This article        |
+
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes.
 
 [!DNL AEM Forms] supports CAPTCHA in Adaptive Forms. You can use reCAPTCHA service by Google to implement CAPTCHA.
