@@ -187,7 +187,7 @@ To preview and test the changes in the local environment and customize the theme
 
 ##### 4.1. Configure local environment for testing {#rename-env-file-theme-folder}
 
-1. Open the theme folder in a plain text editor. 
+1. Open the theme folder in a plain text editor. For example, open the `aem-forms-theme-canvas` folder in Visual Studio Code editor.
 1. Rename the `env_template` file to `.env` file in the theme folder and add the following parameters:
 
       ```
@@ -202,7 +202,7 @@ To preview and test the changes in the local environment and customize the theme
 
       ```
 
-   For example, the URL of the form is `http://localhost:4502/editor.html/content/forms/af/contactusform.html`.  Therefore the values of:
+   For example, the URL of the form is `http://localhost:4502/editor.html/content/forms/af/contactusform.html`. So, the values of:
 
    * AEM_URL = `http://localhost:4502/`
    * AEM_ADAPTIVE_FORM = `contactusform`
@@ -213,9 +213,10 @@ To preview and test the changes in the local environment and customize the theme
 
 ##### 4.2 Test the theme using local environment {#start-a-local-proxy-server}
 
-1. From the command line, navigate to the root of the `aem-forms-theme-canvas` theme folder, in which you are making customizations, on your local machine.
+1. Navigate to the root of the theme folder. In this case, the theme folder name is `aem-forms-theme-canvas`.
+1. Open the command prompt or terminal.
 1. Run `npm install` to install the dependencies.
-1. Run `npm run live` and the server listens to file change.
+1. Run `npm run live` to preview the form with the updated theme in your local browser.
 
    >[!NOTE]
    >
@@ -224,11 +225,11 @@ To preview and test the changes in the local environment and customize the theme
    > * `npm install parcel --save-dev`
    > * `npm i @parcel/transformer-sass`
 
-When you save the `_variables.scss` and `button.scss` files, the server recognizes the changes via the line `[Browsersync] File event [change]`.
+This is a hot deployment. So, whenever you make any changes and save the `_variables.scss` and `button.scss` files, the server automically picks the changes and previews the latest output. The line `[Browsersync] File event [change]` signifies that server has recognized the latest changes and it is deploying the changes at the local environment. 
 
    ![Proxy browsersync](/help/forms/assets/browser_sync.png)
 
-You are directly redirected to a browser, which displays the customized changes in an Adaptive Form. The theme customizations perform changes at both the global level and the component level. The error messages of an Adaptive Form are changed to the `blue` color by updating the `_variables.scss` file in a theme folder. The label color for the button component during hovering action is customized to `green` by modifying the `button.scss` file.
+Having followed the examples provided at both the theme level and component level for theme customizations, the error messages of an Adaptive Form are changed to the `blue` color, while the label color for the button component changes to `green` upon hovering.
 
 **Previewing theme level style**
 
@@ -238,58 +239,87 @@ You are directly redirected to a browser, which displays the customized changes 
 
    ![Example: Hover color set to green](/help/forms/assets/button-customization.png)
 
+###### Test the theme for forms hosted on a Cloud Service environment
 
->[!NOTE]
->
-> In case, you want to test your AEM cloud service instance, consider the following points before executing the `npm run live` command:
->
-> * Specify the `AEM URL` as `http://[author-instance]/` in the `.env` file of a theme folder.
-> * Click `SIGN IN LOCALLY (ADMIN TASKS ONLY)` and login using local user's credentials.
-> * To create local user: Go to **[!UICONTROL AEM Home]** > **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]** 
-> * Ensure that user is a member of the `forms-users` group. 
+You can also test the theme for the Adaptive Form hosted on your AEM Forms as a Cloud Service instance. To configure and set the local environment for the testing the themes with the Adaptive Forms hosted on the cloud instance, perform the following steps:
 
-Once, you are satisfied with the modifications done in a theme folder, deploy the theme to your Cloud Service environment using the front-end pipeline. 
+1. Open the theme folder in a plain text editor. For example, open the `aem-forms-theme-canvas` folder in Visual Studio Code editor. 
+1. Rename the `env_template` file to `.env` file and add the following parameters:
+   
+      ```
+      * **AEM url**
+      AEM_URL=https://[author-instance] 
+
+      * **AEM Adaptive form name**
+      AEM_ADAPTIVE_FORM=Form_name
+
+      * **AEM proxy port**
+      AEM_PROXY_PORT=7000
+
+      ```
+   
+   For example, the URL of the form at the cloud environment is `https://author-XXXX.adobeaemcloud.com/editor.html/content/forms/af/contactusform.html`. So, the values of:
+      
+      * AEM_URL = `https://author-XXXX-cmstg.adobeaemcloud.com/`
+      * AEM_ADAPTIVE_FORM = `contactusform`
+1. Save the file.
+1. Create a local user. 
+
+   >[!NOTE]
+   >
+   > To create a local user:
+   >
+   > * Go to **[!UICONTROL AEM Home]** > **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]** .
+   > * Ensure that user is a member of the `forms-users` group.
+
+1. Navigate to the root of the theme folder. In this case, the theme folder name is `aem-forms-theme-canvas`.
+1. Run `npm run live` and you are redirected to a local browser.
+1. Click `SIGN IN LOCALLY (ADMIN TASKS ONLY)` and login using the local user's credentials.
+
+You can preview the Adaptive Form with the latest changes. Once, you are satisfied with the modifications done in a theme folder, deploy the theme to your AEM Cloud Service environment using the front-end pipeline. 
 
 #### 5. Deploy a theme {#deploy-the-theme}
 
 To deploy the theme to your Cloud Service environment using the front-end pipeline:
 
-* 5.1 [Create a new repository for theme](#create-a-new-theme-repo)
-* 5.2 [Commit and Push the changes in the repository for theme](#committing-the-changes)
-* 5.3 [Run a frontend pipeline](#run-a-frontend-pipeline)
+* 5.1 [Create a repository for theme](#create-a-new-theme-repo)
+* 5.2 [Push the changes to the repository](#committing-the-changes)
+* 5.3 [Run the frontend pipeline](#run-a-frontend-pipeline)
 
-##### 5.1 Create new repository for theme on your Cloud Service environment{#create-a-new-theme-repo}
+##### 5.1 Create a repository for theme{#create-a-new-theme-repo}
 
-To save the changes, create new repository for theme. Log in to your [AEM Cloud Manager repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) and add new repository for your theme.
+You require  a repository to deploy the theme. Log in to your [AEM Cloud Manager repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) and add new repository for your theme.
 
 1. Create new repository for theme by clicking the **[!UICONTROL Repositories]** > **[!UICONTROL Add Repository]**. 
 
    ![create new theme repo](/help/forms/assets/createrepo_canvastheme.png)
 
    
-1. Specify the **Repository Name** in the **Add Repository** dialog box. Click **[!UICONTROL Save]**.
+1. Specify the **Repository Name** in the **Add Repository** dialog box. For example, the name provided is `custom-canvas-theme-repo`.
+1. Click **[!UICONTROL Save]**.
 
    ![Add Canvas Theme Repo](/help/forms/assets/addcanvasthemerepo.png)
 
-1. Click **[!UICONTROL Copy Repository URL]** to copy the URL of the created repository for theme.  
+1. Click **[!UICONTROL Copy Repository URL]** to copy the URL of the repository.  
 
    ![Canvas theme URL](/help/forms/assets/copyurl_canvastheme.png)
    
    >[!NOTE]
    > 
-   > * Make note of the copied URL for future.
-   > * One theme repository is used for multiple themes, but the front-end pipeline configuration should be updated accordingly.
+   > * You can use single repository for multiple themes. 
+   > * To deploy different themes, you have to create separate front-end pipelines. 
+   >* For example, you can use same repository, as `custom-canvas-theme-repo`, for Canvas theme, WKND theme, and EASEL theme. However, to deploy the themes, you need to create separate front-end pipelines. Future customizations for a specific theme are deployed using the corresponding front-end pipeline.
 
-##### 5.2. Commit and push the changes in the created repository {#committing-the-changes}
+##### 5.2. Push the changes to the repository {#committing-the-changes}
 
-Now, commit and push the changes to the theme repository of your AEM Forms Cloud Service. It makes the customized theme available in your AEM Forms Cloud Service environment for Adaptive Forms authors to use. 
+Now, push the changes to the theme repository of your AEM Forms Cloud Service. . 
 
-1. From the command line, navigate to the root of the `aem-forms-theme-canvas` theme folder, in which you are making customizations, on your local machine. 
-
-1. Open the command prompt or terminal window on your local development environment and execute the following command.
+1. Navigate to the root of the theme folder.  In this case, the theme folder name is `aem-forms-theme-canvas`. 
+1. Open the command prompt or terminal.
+1. Run the following command in the listed order:
 
    ``` 
-   git remote add [name-for-createdrepository] [URL of created repository]
+   git remote add [alias-name-for-repository] [URL of repository]
    git add .
    git commit
    git push [name-for-createdrepository]
@@ -306,26 +336,34 @@ Now, commit and push the changes to the theme repository of your AEM Forms Cloud
 
    ```
 
-The customizations are pushed to the AEM cloud service theme repository.
-
    ![Changes committed](/help/forms/assets/cmd_git_push.png)
 
-Your customizations are now safely stored in the AEM cloud service repository.    
 
 
 ##### 5.3 Run the frontend pipeline {#run-a-frontend-pipeline}
 
-The theme is deployed using a front-end pipeline.
+The theme is deployed using the [front-end pipeline.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). To deploy theme, perform folloiwng steps:
 
-1. To deploy the customized theme, create the front-end pipeline. Learn [how to set up a frontend pipeline to deploy customized theme](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). 
-
+1. Log in to your AEM Cloud Manager repository.
+1. Click **[!UICONTROL Add]** button from the **[!UICONTROL Pipelines]** section.
+1. Select **[!UICONTROL Add Non-Production Pipeline]** or **[!UICONTROL Add Production Pipeline]** based on the Cloud Service environment. For example, here the **[!UICONTROL Add Production Pipeline]** option is selected. 
+1. In the **[!UICONTROL Add Production Pipeline]** dialog as part of the **[!UICONTROL Configuration]** steps, specify name for your pipleine. For example, the name of the pipleine is `customcanvastheme`.
+1. Click **[!UICONTROL Continue]**.
+1. Select the **[!UICONTROL Targeted Deployment]** > the **[!UICONTROL Front end code]** options, in 
+ the **[!UICONTROL Source Code]** steps. 
+1. Select the **[!UICONTROL Repository]** and the **[!UICONTROL Git Branch]** values that has your latest changes. For example, here the selected repository name is `custom-canvas-theme-repo` and the Git branch is `main`. 
+1. Select the **[!UICONTROL Code Location]** as `/`, if your changes are present at the root folder.
+1. Click **[!UICONTROL Save]**.
    ![create front-endpipeline](/help/forms/assets/canvas-theme-frontendpipeline.gif)
 
-1. Run the created frontend pipeline to deploy customized theme folder under the **[!UICONTROL Style]** tab of an Adaptive Form creation wizard. 
+   After the pipeline setup is complete, the call-to-action card is updated.
 
-Once the pipeline is successfully executed, the theme is available under the **Style** tab. Now, you can [use the deployed theme for styling an Adaptive Form](#using-theme-in-adaptive-form). 
+1. Right-click on the created pipeline.
+1. Click **[!UICONTROL Run]** .
+    ![run-a-pipleine](/help/forms/assets/canvas-theme-run-pipeline.png)
+Once the build is complete, the theme becomes available at the author instance for the use. It appears under the **[!UICONTROL Style]** tab in the Adaptive Form creation wizard, while creating a new Adaptive Form. 
 
-![custom theme available under style tab](/help/forms/assets/custom-theme-style-tab.png)
+   ![custom theme available under style tab](/help/forms/assets/custom-theme-style-tab.png)
 
 ## Apply a theme to an Adaptive Form {#using-theme-in-adaptive-form}
 
