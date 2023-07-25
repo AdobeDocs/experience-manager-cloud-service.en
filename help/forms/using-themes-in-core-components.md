@@ -138,7 +138,7 @@ To clone a theme, perform the following instructions:
 
 #### 3. Customize a theme {#customize-the-theme}
 
-You can customize individual components or make theme level changes using global variables of a theme. Any changes made to global variables impacts all the individual components. For example, you can use Global variables to change the border color of all the components of an Adaptive Form and a bright fill color to set CTA (Call to action) using button component:
+You can customize individual components or make theme level changes using global variables of a theme. Any changes made to global variables impact all the individual components. For example, you can use Global variables to change the border color of all the components of an Adaptive Form and a bright fill color to set CTA (Call to action) using button component:
 
 * [Set theme level styles](#theme-customization-global-level)
 
@@ -225,7 +225,7 @@ To preview and test the changes in the local environment and customize the theme
    > * `npm install parcel --save-dev`
    > * `npm i @parcel/transformer-sass`
 
-This is a hot deployment. So, whenever you make any changes and save the `_variables.scss` and `button.scss` files, the server automically picks the changes and previews the latest output. The line `[Browsersync] File event [change]` signifies that server has recognized the latest changes and it is deploying the changes at the local environment. 
+This is a hot deployment. So, whenever you make any changes and save the `_variables.scss` and `button.scss` files, the server automatically picks the changes and previews the latest output. The line `[Browsersync] File event [change]` signifies that server has recognized the latest changes and it is deploying the changes at the local environment. 
 
    ![Proxy browsersync](/help/forms/assets/browser_sync.png)
 
@@ -342,16 +342,16 @@ Now, push the changes to the theme repository of your AEM Forms Cloud Service. .
 
 ##### 5.3 Run the frontend pipeline {#run-a-frontend-pipeline}
 
-The theme is deployed using the [front-end pipeline.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). To deploy theme, perform folloiwng steps:
+The theme is deployed using the [front-end pipeline.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). To deploy theme, perform following steps:
 
 1. Log in to your AEM Cloud Manager repository.
 1. Click **[!UICONTROL Add]** button from the **[!UICONTROL Pipelines]** section.
 1. Select **[!UICONTROL Add Non-Production Pipeline]** or **[!UICONTROL Add Production Pipeline]** based on the Cloud Service environment. For example, here the **[!UICONTROL Add Production Pipeline]** option is selected. 
-1. In the **[!UICONTROL Add Production Pipeline]** dialog as part of the **[!UICONTROL Configuration]** steps, specify name for your pipleine. For example, the name of the pipleine is `customcanvastheme`.
+1. In the **[!UICONTROL Add Production Pipeline]** dialog as part of the **[!UICONTROL Configuration]** steps, specify name for your pipeline. For example, the name of the pipeline is `customcanvastheme`.
 1. Click **[!UICONTROL Continue]**.
-1. Select the **[!UICONTROL Targeted Deployment]** > the **[!UICONTROL Front end code]** options, in 
+1. Select the **[!UICONTROL Targeted Deployment]** > the **[!UICONTROL Front-end code]** options, in 
  the **[!UICONTROL Source Code]** steps. 
-1. Select the **[!UICONTROL Repository]** and the **[!UICONTROL Git Branch]** values that has your latest changes. For example, here the selected repository name is `custom-canvas-theme-repo` and the Git branch is `main`. 
+1. Select the **[!UICONTROL Repository]** and the **[!UICONTROL Git Branch]** values that have your latest changes. For example, here the selected repository name is `custom-canvas-theme-repo` and the Git branch is `main`. 
 1. Select the **[!UICONTROL Code Location]** as `/`, if your changes are present at the root folder.
 1. Click **[!UICONTROL Save]**.
    ![create front-endpipeline](/help/forms/assets/canvas-theme-frontendpipeline.gif)
