@@ -3,6 +3,7 @@ title: The Content Copy Tool
 description: The content copy tool enables users to copy mutable content on-demand from their production environments on AEM as a Cloud Service to lower environments for testing purposes.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
 ---
+
 # The Content Copy Tool {#content-copy}
 
 The content copy tool enables users to copy mutable content on-demand from their production environments on AEM as a Cloud Service to lower environments for testing purposes.
@@ -34,6 +35,8 @@ To use the content copy tool, certain permissions are required in both the sourc
 |---|---|---|
 | Create and modify [content sets](#create-content-set) | Required | Not Required |
 | Start or cancel the [content copy process](#copy-content) | Required | Required |
+
+For more details on permissions and how to set them, please see the document [AEM as a Cloud Service Team and Product Profiles.](/help/onboarding/aem-cs-team-product-profiles.md)
 
 ## Creating a Content Set {#create-content-set}
 
@@ -168,6 +171,16 @@ To do so, on the **Copy Content Activity** page, select the **Cancel** action fr
 >When you cancel a content copy operation, it can result in a partial copy of the content in the destination environment. This situation can leave the destination environment in an unusable state.
 >
 >If your environment is in such a state due to cancellation, contact Adobe Customer Care for assistance.
+
+### Accessing Logs {#accessing-logs}
+
+You can check the logs for both the source and destination environments for any completed content copy process.
+
+To do so, on the **Copy Content Activity** page, select the **Logs** action from the ellipsis menu of the copy process for which you would like to review the logs and then choose for which environment.
+
+![Accessing logs for copy content process](assets/copy-content-logs.png)
+
+The logs are downloaded to your local machine. If the download does not commence, please check your pop-up blocker settings.
 
 ## Limitations {#limitations}
 
