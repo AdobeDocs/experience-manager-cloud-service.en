@@ -141,9 +141,9 @@ The selected tag(s) are queued for publication. Similar to page content, only th
 
 To publish an entire taxonomy (a namespace and sub-tags), the best practice is to create a [package](/help/implementing/developing/tools/package-manager.md) of the namespace (see [Taxonomy Root Node](/help/implementing/developing/introduction/tagging-framework.md#taxonomy-root-node)).
 
-<!-->
+<!--
 Be sure to [apply permissions](#setting-tag-permissions) to the namespace before creating the package.
-</!-->
+-->
 ## Managing Tags {#managing-tags}
 
 There are a number of actions that you can take on existing tags and namespaces in order to manage and organize them. Simply select a tag or namespace in the [tagging console](#tagging-console) to reveal in the toolbar the actions available.
@@ -307,7 +307,7 @@ If your tagging taxonomy changes and makes a tag or namespace unnecessary, it ca
 
 The selected tag(s) is deleted and permanently removed from the author environment. If the tag was published, it is also removed from the publish environment. If the selected tag is a container tag, all of its child tags are removed as well.
 
-<!-->
+<!--
 
 ## Setting Tag Permissions {#setting-tag-permissions}
 
@@ -340,7 +340,7 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
         * choose `Replicate` from package manager
 
-</!-->
+-->
 
 ## Managing Tags in Different Languages {#managing-tags-in-different-languages}
 
