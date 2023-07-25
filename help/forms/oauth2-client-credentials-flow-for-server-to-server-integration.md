@@ -10,7 +10,7 @@ Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, sale
 
 You can use OAuth 2.0 client credentials to integrate AEM Forms with the Salesforce application. OAuth 2.0 client credentials is a standard and secure method for direct communication without user involvement.  
 
-
+![Workflow while setting communication between AEM Forms and Salesforce application](/help/forms/assets/salesforce-workflow.png)
 AEM Forms exchanges the client credentials (consumer key and consumer secret), defined in the Salesforce connected application, to obtain an access token.
  
 There are multiple benefits of using OAuth 2.0 client credentials for authentication over Authorization Code Flow authentication:
@@ -20,23 +20,12 @@ There are multiple benefits of using OAuth 2.0 client credentials for authentica
 
 ## Prerequisites {#prerequisites}
 
-To retrieve and fetch data between Salesforce application and AEM environments requires certain prerequisites:
+Before setting communication between a Salesforce application and an AEM environment:
 
-+++ **Set up a Saleforce connected application with client credential flow and an API-only user**
+* Create a [Salesforce connected app with OAuth 2.0 client credential flow](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) and an API-only user for your organization and obtain the consumer key and consumer secret for the app.
 
-It is mandatory to create a Salesforce connected app with OAuth 2.0 client credential flow and an API-only user for your organization. For detailed steps, refer to the article [OAuth 2.0 Client Credentials Flow for Server-to-Server Integration](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5). These steps help you obtain the consumer key and consumer secret.
+* Please ensure that your Swagger file is appropriately configured to match your organization's APIs. Alternatively, you can opt to [create a Swagger file](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) from the scratch, specifically tailored for utilization in your AEM environment.
 
->[!NOTE]
->
-> Make sure to note down consumer key and consumer secret as they are required while creating an AEM data source configuration.
-
-+++
-
-+++ **Create a Swagger file**
-
-Swagger is an open-source set of rules, specifications, and tools to develop and describe RESTful APIs. [Create a swagger file](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) before integrating Salesforce with AEM Forms.   
-
-+++
 
 ## Configure Salesforce application using OAuth 2.0 Client Credential flow {#steps-to-create-aem-datasource-configuration}
 
