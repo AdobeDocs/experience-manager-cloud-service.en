@@ -1,16 +1,16 @@
 ---
-title: Editing In-Context
-description: Explore howe you can use the Universal Editor to edit any aspect of your content in-place and in-context in any implementation.
+title: Editing In Context
+description: Explore howe you can use the Universal Editor to edit any aspect of your content in place and in context in any implementation.
 hidefromtoc: yes
 index: no
 ---
 
-# Editing In-Context {#editing-in-context}
+# Editing In Context {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Editing in-context"
->abstract="See how your headless apps can leverage the Universal Editor to bring low-friction, in-context editing to the fingertips of your authors."
+>title="Editing in context"
+>abstract="See how your headless apps can leverage the Universal Editor to bring low-friction, in context editing to the fingertips of your authors."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -19,14 +19,18 @@ index: no
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="In this module, you learned how to customize content in-context and in-place using the Universal Editor."
+>title="In this module, you learned how to customize content in context and in place using the Universal Editor."
 >abstract=""
 
-## Edit Text In-Context {#edit-text}
+## Edit Text in Context {#edit-text}
 
-Editing in-place and in-context can often be advantageous over structured headless content editing as in the Content Fragment editor, which you saw in previous modules.
+Editing in place and in context can often be advantageous over structured headless content editing as in the Content Fragment editor, which you saw in previous modules.
 
-Using the Universal Editor, you have an agile way to edit your text in-context and in-place, allowing simple and intuitive content authoring.
+>[!NOTE]
+>
+>In order to use the Universal Editor in this trial, you must use Chrome as your browser and not in incognito mode. This is a limitation of the trial experience, not of the Universal Editor.
+
+Using the Universal Editor, you have an agile way to edit your text in context and in place, allowing simple and intuitive content authoring.
 
 1. The editor should load by default in **Text** mode. If not, please tap or click the **Text** icon in the mode rail at the left side of the editor.
 
@@ -41,6 +45,26 @@ Using the Universal Editor, you have an agile way to edit your text in-context a
 1. Press the enter/return key or tap or click outside of the text component and your changes are saved automatically.
 
 The Universal Editor saves your changes automatically within the authoring environment. You still need to publish them for your readers to see, which we will do in a later step.
+
+## Edit Media in Context {#edit-media}
+
+You can also swap out images while still remaining in the context of your content by using the Universal Editor.
+
+1. Change the editor to **Media** mode by tapping or clicking the **Media** button on the mode rail.
+
+1. Tap or click the image of the surfer to select it.
+
+1. In the component rail, you can see the detail of the asset. Tap or click **Replace**.
+
+   ![Selecting an image to edit](assets/do-not-localize/ue-edit-media.png)
+
+1. In the **Select Assets** window, scroll down and tap or click the `surfer-wave-02.JPG` image to select it.
+
+1. Tap or click **Select** in the **Select Assets** window.
+
+   ![Using the Select Asset window to select an image](assets/do-not-localize/ue-select-asset.png)
+
+The image is replaced with the one you selected.
 
 ## Experience Your Content As Your Readers Do {#emulators}
 
@@ -96,6 +120,5 @@ To accelerate your content authoring experience when structured editing of headl
 1.  A new **Edit** icon appears on the mode rail. Tap or click the **Edit** icon to open the Content Fragment editor on a new tab.
 
    ![Selecting Content Fragments in the Universal Editor](assets/do-not-localize/ue-content-fragments.png)
-
 
 On the new tab, you can now edit your Content Fragment that you selected in the Universal Editor.
