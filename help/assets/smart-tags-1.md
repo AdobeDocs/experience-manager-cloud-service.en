@@ -94,7 +94,7 @@ To smart tag assets, or folders (including subfolders) of assets that exist in a
 
 ![Reprocess assets to add tags to videos existing DAM repository](assets/reprocess.gif)-->
 
- ## Confidence Score {#confidence-score}
+## Confidence Score {#confidence-score}
 
 Your asset search results are ranked based on the confidence scores, which generally improve search results beyond what an inspection of the assigned tags of any asset suggests. Inaccurate tags often have low confidence scores so they seldom appear at the top of the Smart Tags list for assets.
 <!--
