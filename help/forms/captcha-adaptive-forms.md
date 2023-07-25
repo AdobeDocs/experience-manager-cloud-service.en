@@ -36,27 +36,23 @@ Form authors can use the reCAPTCHA service by Google to implement CAPTCHA in Ada
 
 ### Configure reCAPTCHA Enterprise  {#steps-to-implement-reCAPTCHA-enterprise-in-forms}
 
-1. Create a [reCAPTCHA Enterprise project](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) enabled with [reCAPTCHA Enterprise API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api). 
-1. [Obtain](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) the Project ID.
-1. Create an [API key](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) and a [site key for websites](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
+1. Create a [Google Cloud project](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) and enable [reCAPTCHA Enterprise API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api). 
+1. Obtain the [Project ID](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) and create an [API key](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) and a [site key for websites](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
 1. Create configuration container for cloud services.
 
     1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. See the [Configuration Browser](/help/implementing/developing/introduction/configurations.md) documentation for more information.
-    1. Do the following steps to enable the global folder for cloud configurations or skip this step to create and configure another folder for cloud service configurations.
+    1. Enable the global folder for cloud configurations: 
         1. In the Configuration Browser, select the **[!UICONTROL global]** folder and tap **[!UICONTROL Properties]**.
         1. In the Configuration Properties dialog, enable **[!UICONTROL Cloud Configurations]**.
         1. Tap **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
 
-    1. In the Configuration Browser, tap **[!UICONTROL Create]**.
-    1. In the Create Configuration dialog, specify a title for the folder and enable **[!UICONTROL Cloud Configurations]**.
-    1. Tap **[!UICONTROL Create]** to create the folder enabled for cloud service configurations.
 1. Configure the cloud service for [!DNL reCAPTCHA Enterprise].
 
     1. On your Experience Manager author instance, go to ![tools-1](assets/tools-1.png) &gt; **[!UICONTROL Cloud Services]**.
     1. Tap **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container created in the previous step and tap **[!UICONTROL Create]**.
-    1. Select version as [!DNL reCAPTCHA Enterprise] and specify Name; Project ID, Site Key, and API key(Obtained in Step 2 and 3) for reCAPTCHA Enterprise service.
+    1. Select version as [!DNL reCAPTCHA Enterprise] and specify Name, Project ID, Site Key, and API key(Obtained in Step 2) for reCAPTCHA Enterprise service.
     1. Select key type, the key type should be same as the site key you configured in the google cloud project, for example, **Checkbox site key** or **Score-based site key**.
-    1. Specify a threshold score in the range 0 to 1 ([Click to know more about score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Scores greater than or equal to the threshold scores identify human interaction, otherwise considered bot interaction.
+    1. Specify a [threshold score in the range 0 to 1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). Scores greater than or equal to the threshold scores identify human interaction, otherwise considered bot interaction.
         
         >[!NOTE]
         >
@@ -65,7 +61,9 @@ Form authors can use the reCAPTCHA service by Google to implement CAPTCHA in Ada
     
     1. Tap **[!UICONTROL Create]** to create the cloud service configuration.
 
+<!--
     1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Tap **[!UICONTROL Save Settings]** and then tap **[!UICONTROL OK]** to complete the configuration.
+-->
 
 Once the reCAPTCHA Enterprise service is enabled, it is available for use in adaptive forms. See [using CAPTCHA in adaptive forms](#using-reCAPTCHA).
 
@@ -77,22 +75,16 @@ Once the reCAPTCHA Enterprise service is enabled, it is available for use in ada
 1. Obtain [reCAPTCHA API key pair](https://www.google.com/recaptcha/admin) from Google. It includes a **site key** and a **secret key**.
 1. Create configuration container for cloud services. 
     1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. See the [Configuration Browser](/help/implementing/developing/introduction/configurations.md) documentation for more information.
-    1. Do the following to enable the global folder for cloud configurations or skip this step to create and configure another folder for cloud service configurations.
-
+    1. Enable the global folder for cloud configurations
         1. In the Configuration Browser, select the **[!UICONTROL global]** folder and tap **[!UICONTROL Properties]**.
-
         1. In the Configuration Properties dialog, enable **[!UICONTROL Cloud Configurations]**.
         1. Tap **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
-
-    1. In the Configuration Browser, tap **[!UICONTROL Create]**.
-    1. In the Create Configuration dialog, specify a title for the folder and enable **[!UICONTROL Cloud Configurations]**.
-    1. Tap **[!UICONTROL Create]** to create the folder enabled for cloud service configurations.
 
 1. Configure the cloud service for reCAPTCHA v2.
 
     1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) &gt; **Cloud Services**.
     1. Tap **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container created in the previous step and tap **[!UICONTROL Create]**.
-    1. Select version as reCAPTCHA v2, specify Name; Site key, and Secret Key for reCAPTCHA service(Obtained in Step 1) and tap **[!UICONTROL Create]** to create the cloud service configuration.
+    1. Select version as [!DNL reCAPTCHA v2] , specify Name; Site key, and Secret Key for reCAPTCHA service (Obtained in Step 1) and tap **[!UICONTROL Create]** to create the cloud service configuration.
     1. In the Edit Component dialog, specify the site and secret keys obtained in step 1. Tap **[!UICONTROL Save Settings]** and then tap **OK** to complete the configuration.
 
    Once the reCAPTCHA service is configured, it is available for use in adaptive forms. For more information, see [using CAPTCHA in adaptive forms](#using-reCAPTCHA).
@@ -124,7 +116,7 @@ To use reCAPTCHA in adaptive forms:
 1. Specify a title for the CAPTCHA widget. The default value is **Captcha**. Select **Hide title** if you do not want title to appear.
 1. From the **Captcha service** drop-down, select **reCAPTCHA** to enable reCAPTCHA service if you configured it as described in [reCAPTCHA service by Google](#google-reCAPTCHA).
 1. Select a configuration from the Settings drop-down for **reCAPTCHA Enterprise** or **reCAPTCHA v2** 
-1. **If the selected configuration has version reCAPTCHA Enterprise**:
+1. If the selected configuration has version reCAPTCHA Enterprise:
     1. You can select reCAPTCHA cloud configuration with **key type** as **checkbox**. In checkbox key type the customized error message appears as an inline message if the captcha validation fails. You can select size as **[!UICONTROL Normal]** and **[!UICONTROL Compact]**.
     1. You can select reCAPTCHA cloud configuration with **key type** as **score based**. In score based key type the customized error message shows as a pop-up message if the captcha validation fails.
     1. When you select a **[!UICONTROL Bind Reference]** the data submitted is a bound data, otherwise it is unbound data. Below are XML examples of unbound data and bound data (with bind reference as SSN) respectively, when a form is submitted.
