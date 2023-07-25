@@ -24,7 +24,7 @@ Before setting communication between a Salesforce application and an AEM environ
 
 * Create a [Salesforce connected app with OAuth 2.0 client credential flow](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) and an API-only user for your organization and obtain the consumer key and consumer secret for the app.
 
-* Please ensure that your Swagger file is appropriately configured to match your organization's APIs. Alternatively, you can opt to [create a Swagger file](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) from the scratch, specifically tailored for utilization in your AEM environment.
+* Ensure that your Swagger file is appropriately configured to match your organization's APIs. Alternatively, you can opt to [create a Swagger file](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) from the scratch, specifically tailored for utilization in your AEM environment.
 
 
 ## Configure Salesforce application using OAuth 2.0 Client Credential flow {#steps-to-create-aem-datasource-configuration}
@@ -40,7 +40,7 @@ To integrate Salesforce application with an Adaptive Form using OAuth 2.0 client
 1. Select the **[!UICONTROL Swagger Source]** as **[!UICONTROL File].** 
     >[!NOTE]
     >
-    > As soon as the swagger file is selected, the Scheme, the Host name and the Base path are populated automatically.
+    > When the swagger file is selected, the Scheme, the Host name and the Base path are populated automatically.
 
 1. Upload the created swagger file from your local machine by clicking **[!UICONTROL Browse]**.
 1. Select the **[!UICONTROL Authentication Type]** as **[!UICONTROL OAuth 2.0]** and the **[!UICONTROL Authentication Settings]** panel appears.
