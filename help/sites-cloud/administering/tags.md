@@ -5,9 +5,7 @@ description: Learn how to administer tags in AEM to organize your content.
 
 # Administering Tags {#administering-tags}
 
-Tags are a quick and easy method of classifying your content. They can be thought of as keywords or labels (metadata) that allow content to be more quickly found.
-
-It is best practice to minimize the number of tags that relate to the same ideas. For example, if you are managing content for an outdoor supply store, you probably don't need a tag for both *footwear* and *shoes*.
+Tags are an intuitive method of classifying your content. They can be thought of as keywords or labels (metadata) that allow content to be more quickly found.
 
 In Adobe Experience Manager (AEM), a tag can be a property of:
 
@@ -16,22 +14,20 @@ In Adobe Experience Manager (AEM), a tag can be a property of:
 * A metadata node for an asset 
   * See the document [Managing Metadata for Digital Assets](/help/assets/manage-metadata.md) for more information.
 
+>[!TIP]
+>
+>It is best practice to minimize the number of tags that relate to the same ideas. For example, if you are managing content for an outdoor supply store, you probably don't need a tag for both **footwear** and **shoes**.
+
 ## Tag Features {#tag-features}
 
 Tags offer robust features for organizing and managing content.
 
 * Tags can be grouped into various namespaces.
-  * These can be thought of as hierarchies that allow taxonomies to be built. 
+  * Namespaces can be thought of as hierarchies that allow taxonomies to be built. 
   * These taxonomies are global throughout AEM.
-* Tags can be applied by authors and site visitors.
+* Tags can be applied by authors and used by site visitors.
 * Irrespective of their creator, all forms of tags are made available for selection, both when assigning to a page, or when searching.
 * Tags are used by the [List Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) to generate dynamic lists based on the tags selected.
-
-
-If tagging is an important aspect of your content, make sure to:
-
-* Package tags with the pages that use them
-* Configure [tag permissions](#setting-tag-permissions)
 
 ## Tag Requirements {#requirements}
 
@@ -46,6 +42,8 @@ There are a few technical details to keep in mind when creating and managing tag
   * A tag that contains child tags is referred to as a container tag.
   * A tag that is not a container tag is referred to as a leaf tag.
   * A tag namespace can be either a leaf tag or container tag.
+
+For further technical details on how tags work, please see the document [AEM Tagging Framework.](/help/implementing/developing/introduction/tagging-framework.md)
 
 ## Tagging Console {#tagging-console}
 
@@ -63,14 +61,12 @@ To access the tagging console:
 
 ![The tagging console in AEM](/help/sites-cloud/administering/assets/tagging-console.png)
 
-You can use the tagging console to [create new namespaces](#creating-a-namespace) and tags as well as [manage existing tags.](#managing-tags)
-
 ## Creating New Tags {#creating-new-tags}
 
 There are a number of steps to create and use tags to organize your content.
 
 1. [Create a namespace for your tags](#creating-namespaces) (or choose an existing one to reuse).
-1. [Create the new tag.](#creating-tags)
+1. [Create a new tag.](#creating-tags)
 1. [Publish the tag.](#publishing-tags)
 
 ### Creating Namespaces {#creating-namespaces}
@@ -89,11 +85,11 @@ A namespace is used to organize other tags. It can be thought of as the lowest-l
 
 1. Once the required information is entered tap or click **Create**.
 
-The namespace is created. Note that in the tagging console the namespaces are at the lowest level (at the far left column in the console) and are represented by folder icons, reflecting their nature as a container or grouping of other tags.
+The namespace is created. Note that in the tagging console the namespaces are at the lowest level (at the far left column in the console) and are represented by folder icons, reflecting their nature as a "container" or grouping of other tags.
 
 You can now [create new tags](#creating-tags) in this namespace or [manage existing tags.](#managing-tags)
 
-A namespace and need not contain any sub-tags. Because a namespace is itself a tag, it can be used to organize your content as any other tag. However, to continue creating a structured tagging taxonomy, you can [create sub-tags](#creating-tags) within that namespace based on your project requirements.
+A namespace need not contain any sub-tags. Because a namespace is itself a tag, it can be used to organize your content as any other tag. However, to continue creating a structured tagging taxonomy, you can [create sub-tags](#creating-tags) within that namespace based on your project requirements.
 
 ### Creating Tags {#creating-tags}
 
@@ -108,7 +104,7 @@ Tags are generally added to namespaces.
 1. The **Create Tag** dialog opens. Provide the required information for the new tag.
 
    * **Title** - A display title for the tag (required)
-   * **Name** - A name for the tag (required). If not specified, a valid node name is created from the Title. See [TagID](/help/implementing/developing/introduction/tagging-framework.md#tagid).
+   * **Name** - A name for the tag (required). If not specified, a valid node name is created from the **Title**. See [TagID](/help/implementing/developing/introduction/tagging-framework.md#tagid).
    * **Description** - A description of the tag
    * **Tag Path** - Defaults to the namespace (or tag) you selected in the tagging console. This can be manually updated by tapping or clicking the path selector icon.
 
@@ -143,11 +139,14 @@ Just as with creating any other content in AEM, once you have created a tag (or 
 
 The selected tag(s) are queued for publication. Similar to page content, only the selected tag(s) is published, regardless of whether or not it has sub-tags.
 
-To publish an entire taxonomy (a namespace and sub-tags), the best practice is to create a [package](/help/implementing/developing/tools/package-manager.md) of the namespace (see [Taxonomy Root Node](/help/implementing/developing/introduction/tagging-framework.md#taxonomy-root-node)). Be sure to [apply permissions](#setting-tag-permissions) to the namespace before creating the package.
+To publish an entire taxonomy (a namespace and sub-tags), the best practice is to create a [package](/help/implementing/developing/tools/package-manager.md) of the namespace (see [Taxonomy Root Node](/help/implementing/developing/introduction/tagging-framework.md#taxonomy-root-node)).
 
+<!-->
+Be sure to [apply permissions](#setting-tag-permissions) to the namespace before creating the package.
+</!-->
 ## Managing Tags {#managing-tags}
 
-There are a number of actions that you can take on existing tags and namespaces in order to manage and organize them. Simply select a tag or namespace in the console to reveal in the toolbar the actions available.
+There are a number of actions that you can take on existing tags and namespaces in order to manage and organize them. Simply select a tag or namespace in the [tagging console](#tagging-console) to reveal in the toolbar the actions available.
 
 * [View Properties](#viewing-tag-properties)
 * [Edit](#editing-tags)
@@ -191,7 +190,7 @@ Tags and namespaces can be edited after creation.
 
    * **Title**
    * **Description**
-   * **Localization** of the **Title**
+   * [**Localization** of the **Title**](#managing-tags-in-different-languages)
 
 1. After edits are made, tap or click **Submit**.
 
@@ -270,7 +269,7 @@ The tag is renamed and/or moved to its new location. When the selected tag is a 
 
 ### Merging Tags {#merging-tags}
 
-If your tagging taxonomy has duplicates or tags that are similar, it can be useful to merge those tags. When tag `A` is merged into tag `B`, all the pages tagged with tag `A` will be tagged with tag `B` and tag `A` is no longer available to authors.
+If your tagging taxonomy has duplicates or tags that are similar, it can be useful to merge those tags. When tag `A` is merged into tag `B`, all the pages tagged with tag `A` become tagged with tag `B` and tag `A` is no longer available to authors.
 
 1. To merge two tags, open the [tagging console.](#tagging-console)
 
@@ -282,7 +281,7 @@ If your tagging taxonomy has duplicates or tags that are similar, it can be usef
 
 1. Tap or click **Submit**.
 
-The tag selected in the console is merged into the tag specified in the dialog. After the merge, the **Merge into** tag specified in the dialog no longer exists. When a referenced tag is moved or merged, the tag is not physically deleted such that it is possible to maintain references. Please see the document [AEM Tagging Framework.](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags)
+The tag selected in the console is merged into the tag specified in the dialog. When a referenced tag is moved or merged, the tag is not physically deleted such that it is possible to maintain references. Please see the document [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) for more information.
 
 ### Deleting Tags {#deleting-tags}
 
@@ -307,6 +306,8 @@ If your tagging taxonomy changes and makes a tag or namespace unnecessary, it ca
       ![References found](assets/references-found.png)
 
 The selected tag(s) is deleted and permanently removed from the author environment. If the tag was published, it is also removed from the publish environment. If the selected tag is a container tag, all of its child tags are removed as well.
+
+<!-->
 
 ## Setting Tag Permissions {#setting-tag-permissions}
 
@@ -338,6 +339,8 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
     * replicate the package
 
         * choose `Replicate` from package manager
+
+</!-->
 
 ## Managing Tags in Different Languages {#managing-tags-in-different-languages}
 
