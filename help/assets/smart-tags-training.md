@@ -14,6 +14,7 @@ Smart tags training allows you to train your tags so that you can specify the pa
 ## Determining the requirement of smart tags training {#smart-tag-training-requirement}
 
 Smart tags training is required in the following scenarios:
+
 * To add an automated labeler to save iterations of adding labels every time you upload the same asset.
 * To improve the ability of assets to apply relevant tags.
 * To increase accuracy of the tags appearing for an asset.
@@ -110,7 +111,7 @@ Ensure that the images in the training set conform to the following guidelines:
   * A tag model that includes car models released in 2019 and 2020.
   * Multiple tag models that include the same few car models.
 
->[!Best Practices]
+>[!NOTE]
 >
 >You can use the same images to train different tag models. However, do not associate an image with more than one tag in a tag model. It is possible to tag the same image with different tags belonging to different tag models. 
 >You cannot undo the training. The above guidelines should help you choose good images to train.
