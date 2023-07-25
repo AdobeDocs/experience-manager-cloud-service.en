@@ -133,10 +133,6 @@ To clone a theme, perform the following instructions:
 
 ![Canvas Theme name change image](/help/forms/assets/changename_canvastheme.png)
 
->[!NOTE]
->
-> * Update the name to a simple text as a user-provided name.
-
 
 #### 3. Customize a theme {#customize-the-theme}
 
@@ -182,12 +178,12 @@ You can also change font, color, size, and other CSS properties of a specific Ad
 
 #### 4. Test a customized theme {#test-the-theme}
 
-The theme customizations are tested on a local environment. You can preview the changes in the local proxy server and customize the theme according to the requirements for different AEM components. To test the customized theme and see the customizations in real time, perform the following steps:
+To preview and test the changes in the local environment and customize the theme according to the requirements for different AEM components, perform the following steps:
 
-* 4.1 [Rename the env_template file](#rename-env-file-theme-folder)
-* 4.2 [Start a local proxy server](#start-a-local-proxy-server)
+* 4.1 [Configure local environment for testing](#rename-env-file-theme-folder)
+* 4.2 [Test the theme using local environment](#start-a-local-proxy-server)
 
-##### 4.1. Rename a env_template file {#rename-env-file-theme-folder}
+##### 4.1. Configure local environment for testing {#rename-env-file-theme-folder}
 
 1. Open the theme folder in a plain text editor. 
 1. Rename the `env_template` file to `.env` file in the theme folder and add the following parameters:
@@ -196,7 +192,7 @@ The theme customizations are tested on a local environment. You can preview the 
       * **AEM url**
       AEM_URL=https://[author-instance] 
 
-      * **AEM site name**
+      * **AEM Adaptive form name**
       AEM_ADAPTIVE_FORM=Form_name
 
       * **AEM proxy port**
@@ -204,15 +200,20 @@ The theme customizations are tested on a local environment. You can preview the 
 
       ```
 
+   For example, the URL of the form is `http://localhost:4502/editor.html/content/forms/af/contactusform.html`.  Therefore the values of:
+
+   * AEM_URL = `http://localhost:4502/`
+   * AEM_ADAPTIVE_FORM = `contactusform`
+
 1. Save the file.
 
    ![Canvas Theme Structure](/help/forms/assets/env-file-canvas-theme.png)
 
-##### 4.2 Start a local proxy server {#start-a-local-proxy-server}
+##### 4.2 Test the theme using local environment {#start-a-local-proxy-server}
 
 1. From the command line, navigate to the root of the `aem-forms-theme-canvas` theme folder, in which you are making customizations, on your local machine.
-1. Execute `npm install` and npm retrieves dependencies and installs the project.
-1. Execute `npm run live` and the proxy server listens to file change and updates them in browser.
+1. Run `npm install` to install the dependencies.
+1. Run `npm run live` and the server listens to file change.
 
    >[!NOTE]
    >
@@ -221,7 +222,7 @@ The theme customizations are tested on a local environment. You can preview the 
    > * `npm install parcel --save-dev`
    > * `npm i @parcel/transformer-sass`
 
-When you save the `_variables.scss` and `button.scss` files, the proxy server recognizes the changes via the line `[Browsersync] File event [change]`.
+When you save the `_variables.scss` and `button.scss` files, the server recognizes the changes via the line `[Browsersync] File event [change]`.
 
    ![Proxy browsersync](/help/forms/assets/browser_sync.png)
 
