@@ -23,7 +23,7 @@ Smart tags training is required in the following scenarios:
 
 >[!NOTE]
 >
->Training smart tags is only applicable in an ***image-type*** of asset.
+>Training smart tags is applicable in an ***image-type*** of asset only.
 
 ## Steps involved in training smart tags
 
