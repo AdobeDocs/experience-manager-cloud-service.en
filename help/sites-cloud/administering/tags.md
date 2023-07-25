@@ -7,7 +7,7 @@ description: Learn how to administer tags in AEM to organize your content.
 
 Tags are a quick and easy method of classifying your content. They can be thought of as keywords or labels (metadata) that allow content to be more quickly found.
 
-It is best practices to minimize the number of tags that relate to the same ideas. For example, if you are managing content for an outdoor supply store, you probably don't need a tag for both *footwear* and *shoes*.
+It is best practice to minimize the number of tags that relate to the same ideas. For example, if you are managing content for an outdoor supply store, you probably don't need a tag for both *footwear* and *shoes*.
 
 In Adobe Experience Manager (AEM), a tag can be a property of:
 
@@ -152,7 +152,7 @@ There are a number of actions that you can take on existing tags and namespaces 
 * [View Properties](#viewing-tag-properties)
 * [Edit](#editing-tags)
 * [Unpublish](#unpublishing-tags)
-* [References](#showing-tag-references)
+* [References](#viewing-tag-references)
 * [Move](#moving-tags)
 * [Merge](#merging-tags)
 * [Delete](#deleting-tags)
@@ -161,96 +161,152 @@ Note that when there is note sufficient space available on the toolbar, addition
 
 ### Viewing Tag Properties {#viewing-tag-properties}
 
-When a single tag or namespace or other tag is selected in the tagging console, details of the selected tag such as time of last edit and last publication are shown in the column to the left of the tag column.
+When a single tag or namespace or other tag is selected in the tagging console, basic details of the selected tag such as time of last edit and last publication are shown in the column to the left of the tag column.
 
-![Tag deails](assets/tag-details.png)
+![Tag details column](assets/tag-details-column.png)
+
+You can view more details about the tag including who last published it and when by switching the console to the **Properties** view.
+
+1. To view the properties of a tag, open the [tagging console.](#tagging-console)
+
+1. Select the tag whose properties you wish to view and in the left rail select **Properties**.
+
+   ![Selecting properties view](assets/view-tag-properties.png)
+
+1. The detailed properties of the selected tag are displayed in the left rail.
+
+   ![Viewing tag properties](assets/tag-properties.png)
+
+For more details on selecting viewing modes and the rail, please see the document [Basic Handling.](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
 ### Editing Tags {#editing-tags}
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+Tags and namespaces can be edited after creation.
 
-When a namespace or other tag is selected, it is possible to alter the Title, Description, and provide localizations of the Title by selecting the **`Edit`**icon.
+1. To edit a tag, open the [tagging console.](#tagging-console)
 
-After edits are made, select **Save**.
+1. Select the tag you wish to edit and in the toolbar, select **Edit**.
+
+1. Make the desired changes. It is possible to alter the:
+
+   * **Title**
+   * **Description**
+   * **Localization** of the **Title**
+
+1. After edits are made, tap or click **Submit**.
 
 For details about adding language translations, see the section on [Managing Tags in Different Languages](#managing-tags-in-different-languages).
 
-![chlimage_1-196](assets/chlimage_1-196.png)
-
-### Showing Tag References {#showing-tag-references}
-
-![chlimage_1-190](assets/chlimage_1-190.png)
-
-When a namespace or other tag is selected, selecting the **References** icon will identify the content to which the tag has been applied.
-
-The initial display is a count of tags applied.
-
-![chlimage_1-191](assets/chlimage_1-191.png)
-
-By selecting the arrow to the right of the count, the reference names are listed.
-
-The path to the reference is displayed as a tool tip when hovering over a reference.
-
-![chlimage_1-192](assets/chlimage_1-192.png)
-
-
-
-### Moving Tags {#moving-tags}
-
-![chlimage_1-197](assets/chlimage_1-197.png)
-
-When a namespace or other tag is selected, selecting the **`Move`** icon will allow Tags Administrators and Developers to clean up the taxonomy by moving the tag to a new location or renaming it. When the selected tag is a container tag, moving the tag will move all child tags as well.
-
->[!NOTE]
->
->It is recommended that Authors only be allowed to [edit](#editing-tags) the tag's `title`, not to move or rename tags.
-
-![chlimage_1-198](assets/chlimage_1-198.png)
-
-* **Path**
-  *(readonly)* The current path to the selected tag.
-
-* **Move to**
-  Browse to the new path under which to move the tag.
-
-* **Rename to**
-  Initially displays the current `name`of the tag. A new `name`may be entered.
-
-* select **Save**
-
-### Merging Tags {#merging-tags}
-
-![chlimage_1-199](assets/chlimage_1-199.png)
-
-Merging tags can be used when a taxonomy has duplicates. When tag A is merged into tag B, all the pages tagged with tag A will be tagged with tag B and tag A is no longer available to authors.
-
-When a namespace or other tag is selected, selecting the **Merge** icon will open a panel where the path to merge into may be selected.
-
-![chlimage_1-200](assets/chlimage_1-200.png)
-
-* **Path**
-  *(readonly)* The path of the tag selected to be merged into another tag.
-
-* **Merge into**
-  Browse to select the path of the tag to merge into.
-
->[!NOTE]
->
->After the merge, the **Path** originally selected will (virtually) no longer exist.
->
->When a referenced tag is moved or merged, the tag is not physically deleted such that it is possible to maintain references.
+If the changes you made were to an already published tag, you may want to [republish it.](#publishing-tags)
 
 ### Unpublishing Tags {#unpublishing-tags}
 
-![chlimage_1-202](assets/chlimage_1-202.png)
+In order to deactivate tag on your author instance and remove it from your publish instance, you can unpublish it. 
 
-When a namespace or other tag is selected, selecting the **Unpublish** icon will deactivate the tag in the author environment and remove it from the publish environment. Similar to the `Delete`operation, if the selected tag is a container tag, all of its child tags will be deactivated in the author environment and removed from the publish environment.
+1. To unpublish a tag, open the [tagging console.](#tagging-console)
+
+1. Select the tag or tags you wish to unpublish and in the toolbar, select **Unpublish**.
+
+   ![Selecting tags in the console](assets/select-tags.png)
+
+1. The **Unuublish Tag** dialog asks for a confirmation to publish the selected tags. Tap or click **Publish**.
+
+   ![The Publish Tag confirmation modal](assets/unpublish-tag.png)
+
+1. The unpublish action is confirmed with a **Success** dialog.
+
+   ![Publish tag success dialog](assets/unpublish-tag-success.png)
+
+The selected tag(s) are queued for unpublication. If the selected tag is a container tag, all of its child tags will be deactivated in the author environment and removed from the publish environment.
+
+### Viewing Tag References {#viewing-tag-references}
+
+It can be useful to see to which content a particular tag is applied. You can do this by using the **References** view in the tagging console.
+
+1. To view the references of a tag, open the [tagging console.](#tagging-console)
+
+1. Select the tag whose references you wish to view and in the left rail select **References**.
+
+   ![Selecting properties view](assets/view-tag-references.png)
+
+1. The total number of references for the selected tag is displayed in the left rail.
+
+   ![Viewing tag references](assets/tag-references.png)
+
+1. Tap or click the number of tag references to view the detailed list of content that is assigned to the tag.
+
+   ![Viewing the detail of the tag's references](assets/tag-references-detail.png)
+
+Hover the mouse or tap a referencing content in the list to reveal the full path of the content.
+
+For more details on selecting viewing modes and the rail, please see the document [Basic Handling.](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+
+### Moving Tags {#moving-tags}
+
+It can be necessary to clean up or otherwise reorganize your tagging taxonomy by moving a tag to a new location or renaming it.
+
+>[!TIP]
+>
+>It is best practice that only administrators be permitted to move and rename tags.
+
+1. To move or rename a tag, open the [tagging console.](#tagging-console)
+
+1. Select the tag that you wish to move or rename and tap or click **Move** in the toolbar.
+
+1. In the **Move Tag** dialog, specify which property you wish to change.
+
+   * **Rename to** - The new name you wish to give the tag
+      * This field is prepopulated with the current name of the tag.
+      * Leave unmodified if you wish to only move the tag and not rename it.
+   * **Move to** - Where you wish to move the tag
+      * This field is prepopulated with the current location of the tag.
+      * Leave unmodified if you wish to only rename the tag and not move it.
+
+   ![Move Tag](assets/move-tag.png)
+
+1. Tap or click **Submit**.
+
+The tag is renamed and/or moved to its new location. When the selected tag is a container tag, moving the tag will move all child tags as well.
+
+### Merging Tags {#merging-tags}
+
+If your tagging taxonomy has duplicates or tags that are similar, it can be useful to merge those tags. When tag `A` is merged into tag `B`, all the pages tagged with tag `A` will be tagged with tag `B` and tag `A` is no longer available to authors.
+
+1. To merge two tags, open the [tagging console.](#tagging-console)
+
+1. Select the tag that you wish to merge into another tag and then tap or click **Merge** in the toolbar.
+
+1. In the **Merge Tag** dialog, tap or click the **Browse** icon of the **Merge into** field to specify into which tag you wish to merge the selected tag.
+
+   ![Merge Tag dialog](assets/merge-tag.png)
+
+1. Tap or click **Submit**.
+
+The tag selected in the console is merged into the tag specified in the dialog. After the merge, the **Merge into** tag specified in the dialog no longer exists. When a referenced tag is moved or merged, the tag is not physically deleted such that it is possible to maintain references. Please see the document [AEM Tagging Framework.](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags)
 
 ### Deleting Tags {#deleting-tags}
 
-![chlimage_1-203](assets/chlimage_1-203.png)
+If your tagging taxonomy changes and makes a tag or namespace unnecessary, it can be deleted.
 
-When a namespace or other tag is selected, selecting the **Delete** icon will permanently remove the tag from the author environment. If the tag was published, it is also removed from the publish environment. If the selected tag is a container tag, all of its child tags will be removed as well.
+1. To delete a tag, open the [tagging console.](#tagging-console)
+
+1. Select the tag that you wish to delete and then tap or click **Delete** in the toolbar.
+
+1. The **Delete Tag** dialog asks for a confirmation to delete the selected tag(s). Tap or click **Delete**.
+
+   ![The Delete Tag confirmation modal](assets/delete-tag.png)
+
+1. AEM checks to make sure that the tag is not referenced.
+
+   1. If no references are found, AEM asks for final confirmation to delete. Tap or click **Delete** 
+
+      ![No references found](assets/no-references-found.png)
+
+   1. If references are found, AEM presents them and asks for final confirmation to delete.
+
+      ![References found](assets/references-found.png)
+
+The selected tag(s) is deleted and permanently removed from the author environment. If the tag was published, it is also removed from the publish environment. If the selected tag is a container tag, all of its child tags are removed as well.
 
 ## Setting Tag Permissions {#setting-tag-permissions}
 
@@ -285,36 +341,30 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 ## Managing Tags in Different Languages {#managing-tags-in-different-languages}
 
-The `title`property of a tag may be translated into multiple languages. Once translated, the appropriate tag `title`may be displayed according to the user language or to the page language.
+The `title` property of a tag may be translated into multiple languages. Once translated, the appropriate tag title can be displayed according to the user or content language.
 
-### Defining Tag Titles in Multiple Languages {#defining-tag-titles-in-multiple-languages}
+Let's assume that we have a tag called `Animals` that we wish to translate into German and French.
 
-The following describes how to translate the `title`of the tag **Animals** from English into German and French.
+1. Open the [tagging console.](#tagging-console)
 
-Start by selecting the tag under the **Stock Photography** namespace and selecting the **`Edit`**icon (see [Editing Tags](#editing-tags) section).
+1. Select the tag that you wish to translate and then tap or click **Edit** in the toolbar.
 
-The Edit Tag panel presents the ability to choose languages into which the tag title is to be localized.
+1. In the **Edit Tag** dialog, in the **Localization** column, select the target language, for example German.
 
-As each language is selected, a text entry box appears into which the translated title may be entered.
+1. In the **German** field that appears, provide the translated title.
 
-Once all translations are entered, select **Save** to exit edit mode.
+1. Repeat the previous two steps for French.
 
-![chlimage_1-205](assets/chlimage_1-205.png)
+   ![Translating tag titles](assets/translate-tag.png)
 
-In general, the language chosen for the tag is taken from the page language, when available. When the [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) is used in other cases (for example in forms or in dialogs), the tag language depends on the context.
+1. Tap or click **Submit**.
 
-Instead of using the page language setting, the Tagging console uses the user language setting. In the Tagging console, for the 'Animals' tag, 'Animaux' would be displayed for a user who sets the language to French in their user properties.
+For content pages, the language chosen for the tag is taken from the page language, when available.
 
-To add a new language to the dialog, see [Adding a New Language to the Edit Tag Dialog](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog).
+However in the authoring environment, AEM uses the user language setting. So in the tagging console, for the `Animals` tag, `Animaux` would be displayed for a user who sets the language to French in their user properties.
 
->[!NOTE]
+To add a new language to the dialog, see the document [Building Tagging into AEM Applications](/help/implementing/developing/introduction/tagging-applications.md#adding-a-new-language-to-the-edit-tag-dialog)
+
+>[!TIP]
 >
->The tag cloud and the meta keywords in the standard page component use the localized tag `titles`based on the page language, if available.
-
-## Resources {#resources}
-
-* [Tagging for Developers](/help/sites-developing/tags.md)
-
-  Information about the tagging framework as well as extending and including tags in custom applications.
-
-* [Classic UI Tagging Console](/help/sites-administering/classic-console.md)
+>If you wish to learn more about AEM localization features, please see the document [Translating Your Content For Multilingual Sites.](/help/sites-cloud/administering/translation/overview.md)
