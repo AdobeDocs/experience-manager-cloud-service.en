@@ -41,6 +41,8 @@ Forms as Cloud Service provides, the below listed themes for Core Components bas
 
 You can [customize any of these themes to create new theme](#customize-a-theme-core-components). 
 
+![Workflow of theme customization](/help/forms/assets/workflow-of-customization-of-theme.png)
+
 ## Customize a theme {#customize-a-theme-core-components}
 
 Customizing a theme refers to the process of modifying and personalizing the appearance of a theme. When you customize a theme, you change its design elements, layout, colors, typography, and sometimes the underlying code. It allows you to create a unique and tailored look for your website or application while maintaining the basic structure and functionality provided by the theme.
@@ -68,7 +70,7 @@ After learning the pre-requisites and configuring the development environment, y
 
 ### Customize a theme {#steps-to-customize-a-theme-core-components}
 
-Customizing a theme is a multi-step process. To customize the theme, perform the steps in listed order t:
+Customizing a theme is a multi-step process. To customize the theme, perform the steps in listed order:
 
 1. [Clone a theme](#download-a-theme-core-components) 
 1. [Set name of a theme](#set-name-of-theme)
