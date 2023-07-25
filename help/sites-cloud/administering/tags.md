@@ -63,11 +63,19 @@ To access the tagging console:
 
 ![The tagging console in AEM](/help/sites-cloud/administering/assets/tagging-console.png)
 
-You can use the tagging console to [create new namespaces](#creating-a-namespace) and tags as well as manage existing tags.
+You can use the tagging console to [create new namespaces](#creating-a-namespace) and tags as well as [manage existing tags.](#managing-tags)
 
-## Creating a Namespace {#creating-a-namespace}
+## Creating New Tags {#creating-new-tags}
 
-A namespace is itself a tag, and need not contain any sub-tags. However, to continue creating a taxonomy, [create sub-tags](#creating-tags), which in turn may be either leaf tags or container tags.
+There are a number of steps to create and use tags to organize your content.
+
+1. [Create a namespace for your tags](#creating-namespaces) (or choose an existing one to reuse).
+1. [Create the new tag.](#creating-tags)
+1. [Publish the tag.](#publishing-tags)
+
+### Creating Namespaces {#creating-namespaces}
+
+A namespace is used to organize other tags. It can be thought of as the lowest-level tag and is typically used to group other tags.
 
 1. To create a new namespace, open the [tagging console](#tagging-console) and tap or click the **Create** button in the toolbar and then **Create Namespace**.
 
@@ -81,43 +89,93 @@ A namespace is itself a tag, and need not contain any sub-tags. However, to cont
 
 1. Once the required information is entered tap or click **Create**.
 
-You can now create new tags in this namespace or manage existing tags.
+The namespace is created. Note that in the tagging console the namespaces are at the lowest level (at the far left column in the console) and are represented by folder icons, reflecting their nature as a container or grouping of other tags.
 
-### Operations on Tags {#operations-on-tags}
+You can now [create new tags](#creating-tags) in this namespace or [manage existing tags.](#managing-tags)
 
-Selecting a namespace or other tag makes available the following operations:
+A namespace and need not contain any sub-tags. Because a namespace is itself a tag, it can be used to organize your content as any other tag. However, to continue creating a structured tagging taxonomy, you can [create sub-tags](#creating-tags) within that namespace based on your project requirements.
+
+### Creating Tags {#creating-tags}
+
+Tags are generally added to namespaces.
+
+1. To create a new tag, open the [tagging console.](#tagging-console)
+
+1. Select the namespace where you wish to create the tag. Or select another tag to create a sub-tag below it.
+
+1. Tap or click the **Create** button on the toolbar and then **Create Tag**.
+
+1. The **Create Tag** dialog opens. Provide the required information for the new tag.
+
+   * **Title** - A display title for the tag (required)
+   * **Name** - A name for the tag (required). If not specified, a valid node name is created from the Title. See [TagID](/help/implementing/developing/introduction/tagging-framework.md#tagid).
+   * **Description** - A description of the tag
+   * **Tag Path** - Defaults to the namespace (or tag) you selected in the tagging console. This can be manually updated by tapping or clicking the path selector icon.
+
+   ![Create tag dialog](assets/create-tag.png)
+
+1. Tap or click **Submit**.
+
+The tag is created and the console is updated to show the new tag.
+
+Tags allow for the flexible creation of your own taxonomy based on your organizational needs.
+
+* You can create child tags of existing tags by selecting the parent tag in the console before creating your new tag.
+* If you create a tag without selecting a namespace or another tag, you effectively create a new namespace.
+
+### Publishing Tags {#publishing-tags}
+
+Just as with creating any other content in AEM, once you have created a tag (or namespace), it only exists in the authoring environment. For your tags to be available to your users, you must publish the tags.
+
+1. To publish a tag, open the [tagging console.](#tagging-console)
+
+1. Select the tag or tags you wish to publish and in the toolbar, select **Publish**.
+
+   ![Selecting tags in the console](assets/select-tags.png)
+
+1. The **Publish Tag** dialog asks for a confirmation to publish the selected tags. Tap or click **Publish**.
+
+   ![The Publish Tag confirmation modal](assets/publish-tag.png)
+
+1. The publish action is confirmed with a **Success** dialog.
+
+   ![Publish tag success dialog](assets/publish-tag-success.png)
+
+The selected tag(s) are queued for publication. Similar to page content, only the selected tag(s) is published, regardless of whether or not it has sub-tags.
+
+To publish an entire taxonomy (a namespace and sub-tags), the best practice is to create a [package](/help/implementing/developing/tools/package-manager.md) of the namespace (see [Taxonomy Root Node](/help/implementing/developing/introduction/tagging-framework.md#taxonomy-root-node)). Be sure to [apply permissions](#setting-tag-permissions) to the namespace before creating the package.
+
+## Managing Tags {#managing-tags}
+
+There are a number of actions that you can take on existing tags and namespaces in order to manage and organize them. Simply select a tag or namespace in the console to reveal in the toolbar the actions available.
 
 * [View Properties](#viewing-tag-properties)
-* [References](#showing-tag-references)
-* [Create Tag](#creating-tags)
 * [Edit](#editing-tags)
+* [Unpublish](#unpublishing-tags)
+* [References](#showing-tag-references)
 * [Move](#moving-tags)
 * [Merge](#merging-tags)
-* [Publish](#publishing-tags)
-* [Unpublish](#unpublishing-tags)
 * [Delete](#deleting-tags)
 
-![chlimage_1-184](assets/chlimage_1-184.png)
-
-When the browser window is not wide enough to display all icons, then the right-most icons are grouped together under a **`... More`** icon, which will display a drop-down list of the hidden operation icons when selected.
-
-![chlimage_1-185](assets/chlimage_1-185.png)
-
-### Selecting a Namespace Tag {#selecting-a-namespace-tag}
-
-When first selected, if the namespace does not contain any tags, then the properties are displayed to the right, else the child tags are displayed. Each tag selected will display either the tags it contains or its properties if it does not have child tags.
-
-To select the tag for operations, and to multi-select, only select the icon next to the title. Selecting the title will only display properties or open the tag to display its contents.
-
-![chlimage_1-186](assets/chlimage_1-186.png) ![chlimage_1-187](assets/chlimage_1-187.png)
+Note that when there is note sufficient space available on the toolbar, additional options are available behind the ellipsis icon.
 
 ### Viewing Tag Properties {#viewing-tag-properties}
 
-![chlimage_1-188](assets/chlimage_1-188.png)
+When a single tag or namespace or other tag is selected in the tagging console, details of the selected tag such as time of last edit and last publication are shown in the column to the left of the tag column.
 
-When a namespace or other tag is selected, selecting the **`View Properties`** icon results in the display of information as to the `name`, time of last edit, and number of references. If published, the time it was last published and the id of the publisher are shown. This information will appear in a column to the left of the tag columns.
+![Tag deails](assets/tag-details.png)
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+### Editing Tags {#editing-tags}
+
+![chlimage_1-195](assets/chlimage_1-195.png)
+
+When a namespace or other tag is selected, it is possible to alter the Title, Description, and provide localizations of the Title by selecting the **`Edit`**icon.
+
+After edits are made, select **Save**.
+
+For details about adding language translations, see the section on [Managing Tags in Different Languages](#managing-tags-in-different-languages).
+
+![chlimage_1-196](assets/chlimage_1-196.png)
 
 ### Showing Tag References {#showing-tag-references}
 
@@ -135,38 +193,7 @@ The path to the reference is displayed as a tool tip when hovering over a refere
 
 ![chlimage_1-192](assets/chlimage_1-192.png)
 
-### Creating Tags {#creating-tags}
 
-![chlimage_1-193](assets/chlimage_1-193.png)
-
-When a namespace or other tag is selected (by selecting the icon next to the title), a child tag may be created for the current tag by selecting the **`Create Tag`** icon.
-
-![chlimage_1-194](assets/chlimage_1-194.png)
-
-* **Title**
-  *(required) *A display title for the tag.
-
-* **Name**
-  *(optional) *A name for the tag. If not specified, a valid node name is created from the Title. See [TagID](/help/sites-developing/framework.md#tagid).
-
-* **Description**
-  *(optional) *A description of the tag.
-
-Once the required information is entered
-
-* select **Create**
-
-### Editing Tags {#editing-tags}
-
-![chlimage_1-195](assets/chlimage_1-195.png)
-
-When a namespace or other tag is selected, it is possible to alter the Title, Description, and provide localizations of the Title by selecting the **`Edit`**icon.
-
-After edits are made, select **Save**.
-
-For details about adding language translations, see the section on [Managing Tags in Different Languages](#managing-tags-in-different-languages).
-
-![chlimage_1-196](assets/chlimage_1-196.png)
 
 ### Moving Tags {#moving-tags}
 
@@ -212,14 +239,6 @@ When a namespace or other tag is selected, selecting the **Merge** icon will ope
 >After the merge, the **Path** originally selected will (virtually) no longer exist.
 >
 >When a referenced tag is moved or merged, the tag is not physically deleted such that it is possible to maintain references.
-
-### Publishing Tags {#publishing-tags}
-
-![chlimage_1-201](assets/chlimage_1-201.png)
-
-When a namespace or other tag is selected, selecting the **Publish** icon to activate the tag in the publish environment. Similar to page content, only the selected tag is published, regardless of whether it is a container tag or not.
-
-To publish a taxonomy (a namespace and sub-tags), the best practice is to create a [package](/help/sites-administering/package-manager.md) of the namespace (see [Taxonomy Root Node](/help/sites-developing/framework.md#taxonomy-root-node)). Be sure to [apply permissions](#setting-tag-permissions) to the namespace before creating the package.
 
 ### Unpublishing Tags {#unpublishing-tags}
 
