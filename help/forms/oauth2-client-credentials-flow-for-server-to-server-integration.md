@@ -8,14 +8,15 @@ Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, sale
 
 # Integration of Salesforce application using OAuth 2.0 client credential flow {#configure-salesforce-with-ouath-2.0-client-credential}
 
-To integrate AEM Forms with the Salesforce application, the OAuth 2.0 client credential flow authentication is used. It is a standardized and secure method for direct communication without user involvement. In this flow, the client application (AEM Form) exchanges the client credentials, defined in the Salesforce connected application, to obtain an access token. The required client credential include the consumer key and consumer secret.
+You can use OAuth 2.0 client credentials to integrate AEM Forms with the Salesforce application. OAuth 2.0 client credentials is a standard and secure method for direct communication without user involvement.  
+
+
+AEM Forms exchanges the client credentials (consumer key and consumer secret), defined in the Salesforce connected application, to obtain an access token.
  
-## Advantages of integrating Salesforce app with  AEM Forms using OAuth 2.0 client credential flow {#advantages-of-integrating-saleforce-aemforms}
+There are multiple benefits of using OAuth 2.0 client credentials for authentication over Authorization Code Flow authentication:
 
-AEM Forms also support the integration of Salesforce application with the Authorization Code Flow authentication, in addition to OAuth 2.0 client credential flow authentication. In the OAuth 2.0 Authorization Code flow, the Client Application (AEM Forms) obtains resource access on behalf of a Salesforce user, which has some limitations:
-
-* Maximum five connections per user are allowed. Further connections automatically revoke older connections.
-* If a user is deactivated, loses access, or updates a password, the AEM data source configuration stops working.
+* OAuth 2.0 client credentials authentication allows more five connections per user.
+* AEM data source configuration continues working on deactivation, access changes, password update for an AEM user.
 
 ## Prerequisites {#prerequisites}
 
