@@ -65,7 +65,7 @@ Perform the following steps to localize a form and its document of record using 
 1. At the bottom of the **Summary** tile, click the **ellipses**. The Translation Project Properties screen opens.
 1. Open the **[!UICONTROL Advanced]** tab  at the top of the **Translation Project Properties** screen. For the **[!UICONTROL Translation field]**, select **[!UICONTROL Human Translation]**. Click **Save & Close** at the top of the screen.
 1. On the **Translation Job** tile, click the ![aem62forms_downarrow](assets/aem62forms_downarrow.png) icon, and click **Export**. On the Export dialog, click the Download Exported File option. It downloads a .zip file. 
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
+   ![Export translation file](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. Extract the downloaded .zip file. The extracted folder has two files:
    * translation_export_summary.xml
    * [form-fields-file].xml.
@@ -73,6 +73,6 @@ Perform the following steps to localize a form and its document of record using 
 1. Zip the files the translation_export_summary.xml and [form-fields-file].xml.
 1. On the **Translation Job** tile, click the ![aem62forms_downarrow](assets/aem62forms_downarrow.png) icon, and click **Import**. Select the archive containing [form-fields-file].xml. with localized strings and messages for form fields.
 
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
+   ![Import translation file](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. To preview the localized form, on the AEM Forms UI, select the localized form. Click **[!UICONTROL Preview]** >**[!UICONTROL Preview as HTML]**. Reopen the form after adding the `afAcceptLang=<locale code>` to the URL off the form. For example, add `afAcceptLang=de`to open German version of the form.
