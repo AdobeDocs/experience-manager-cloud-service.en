@@ -144,6 +144,7 @@ To publish an entire taxonomy (a namespace and sub-tags), the best practice is t
 <!--
 Be sure to [apply permissions](#setting-tag-permissions) to the namespace before creating the package.
 -->
+
 ## Managing Tags {#managing-tags}
 
 There are a number of actions that you can take on existing tags and namespaces in order to manage and organize them. Simply select a tag or namespace in the [tagging console](#tagging-console) to reveal in the toolbar the actions available.
