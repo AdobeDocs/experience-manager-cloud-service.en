@@ -5,10 +5,19 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
+
 ---
 
 # Using [!DNL Adobe Sign] in an Adaptive Form {#using-adobe-sign-in-an-adaptive-form}
+
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 
 [!DNL Adobe Sign] enables e-signature workflows for Adaptive Forms. E-Signatures improve workflows to process documents for legal, sales, payroll, human resource management, and more areas.
 
@@ -189,7 +198,7 @@ You can have one or multiple recipients for an Adobe Sign agreement. When you ad
       >
       >Ensure that the email address of the first recipient or the only recipient (if there is single recipient) is not identical to [!DNL Adobe Sign] account used to configure AEM Cloud Services.
 
-    * **[!UICONTROL Recipient Authentication Method]:** Specify the method to authenticate a recipient before opening the Adobe Sign agreement. You can choose between phone, knowledge base, social identity-based authentication, and [Government ID](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html).
+    * **[!UICONTROL Recipient Authentication Method]:** Specify the method to authenticate a recipient before opening the Adobe Sign agreement. You can choose between phone, knowledge base, social identity-based authentication, and [Government ID](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) for [!DNL Adobe Acrobat Sign]. For [!DNL Adobe Acrobat Sign for Government] you can choose between phone and knowledge-based authentication.
 
    >[!NOTE]
    >
@@ -253,7 +262,7 @@ After you, add [!DNL Adobe Sign] fields to an Adaptive Form, enable [!DNL Adobe 
          </afUnboundData>
          <afBoundData>
             <config xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-               <agreementID>3AAABLblqZhC2MWu7GFauKh45j_t2ih8mAtmbdIcNSl1HgQubhMJfDaDfylyN7NQiYRam_44ISKm45enIOafHqWZrdaxShf9r</agreementID>
+               <userName>3AAABLblqZhC2MWu7GFauKh45j_t2ih8mAtmbdIcNSl1HgQubhMJfDaDfylyN7NQiYRam_44ISKm45enIOafHqWZrdaxShf9r</userName>
                <dateOfBirth>0001-01-01</dateOfBirth>
             </config>
          </afBoundData>
@@ -307,8 +316,12 @@ After [editing Adaptive Form properties for Adobe Sign](working-with-adobe-sign.
 
    Apply digital signatures to the Adaptive Form using:
 
-    * Cloud signatures: Sign with a [digital ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) hosted by a trust service provider.
+    * Cloud signatures: Sign with a [digital ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) hosted by a trust service provider. 
     * Adobe Acrobat or Reader: Download and open the document with Adobe Acrobat or Reader to sign using a smart card, USB token, or file-based digital ID.
+
+      >[!NOTE]
+      >
+      > Digital Signature is also applicable to [!DNL Adobe Acrobat Sign for Government] but you can not apply it using Cloud Signatures.
 
    After adding the cloud signature field to the Adaptive Form, perform the following steps to complete the configuration process:
 

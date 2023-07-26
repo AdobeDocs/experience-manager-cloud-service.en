@@ -17,6 +17,11 @@ Define what is not included
 
 # Use Media Library for basic asset management {#manage-assets-using-media-library}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/medialibrary.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
 [!DNL Adobe Experience Manager] platform provides different capabilities to manage assets. Media Library allows the users to upload a small number of assets to the repository, search and use those in the webpages, and accomplish simple asset management tasks on the assets.
 
 Media Library is a lightweight Digital Asset Management (DAM) solution that comes complimentary with [!DNL Adobe Experience Manager Sites] license. [!DNL Sites] is a Web Content Management (WCM) offering. Media Library works with all capabilities of Experience Manager.
@@ -76,7 +81,7 @@ To use the Media Library functionality, you can use the default [!DNL Experience
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
-As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
+As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
@@ -86,6 +91,21 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 Note that you cannot use smart tags, [!DNL Asset] link, [!DNL Asset] selector, bulk tagging, modify asset workflows, or standard [!DNL Adobe Experience Manager] user interface to access Media Library without [!DNL Assets] license.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

@@ -8,6 +8,14 @@ exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
 ---
 # Improve performance of large forms with lazy loading{#improve-performance-of-large-forms-with-lazy-loading}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/lazy-loading-adaptive-forms.html)                  |
+| AEM as a Cloud Service     | This article        |
+
+
 ## Introduction to lazy loading {#introduction-to-lazy-loading}
 
 When form become large and complex with hundreds and thousands of fields, end users experience long response time when rendering forms at runtime. To minimize the response time, Adaptive Forms allows you to break forms into logical fragments and configure to defer initialization or loading of fragments until the fragment needs to be visible. It is referred to as lazy loading. In addition, the fragments configured for lazy loading are unloaded once user navigates to other sections in the form and the fragments are no longer visible.

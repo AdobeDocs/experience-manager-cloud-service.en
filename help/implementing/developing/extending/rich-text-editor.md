@@ -89,14 +89,14 @@ The following table lists the current plug-ins, showing:
 |Plug-in ID|features|Description|
 |--- |--- |--- |
 |edit| `cut`, `copy`, `paste-default`, `paste-plaintext`, `paste-wordhtml`| [Cut, copy and, the three paste modes](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles).|
-|[findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin)|`find`, `replace`| Find and replace.|
-|[format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin)| `bold`, `italic`, `underline` | [Basic text formatting](configure-rich-text-editor-plug-ins.md#textstyles).|
-|[image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin)|`image`|Basic image support (drag from content or Content Finder). Depending on the browser, the support has different behaviors for authors|
-|[keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin)| - |To define this value, see [tab size](configure-rich-text-editor-plug-ins.md#tabsize).|
-|[justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin)|`justifyleft`, `justifycenter`, `justifyright` |Paragraph alignment.|
-|[links](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin)|`modifylink`, `unlink`, `anchor`|[Hyperlinks and anchors](configure-rich-text-editor-plug-ins.md#linkstyles).|
-|[lists](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin)|`ordered`, `unordered`, `indent`, `outdent` | This plug-in controls both [indentation and lists](configure-rich-text-editor-plug-ins.md#indentmargin); including nested lists.|
-|[misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin)| `specialchars`, `sourceedit` |Miscellaneous tools let authors to enter [special characters](configure-rich-text-editor-plug-ins.md#spchar) or edit the HTML source. Also, you can add a [range of special characters](configure-rich-text-editor-plug-ins.md#definerangechar) if you want to define your own list.|
+|findreplace|`find`, `replace`| Find and replace.|
+|format| `bold`, `italic`, `underline` | [Basic text formatting](configure-rich-text-editor-plug-ins.md#textstyles).|
+|image|`image`|Basic image support (drag from content or Content Finder). Depending on the browser, the support has different behaviors for authors|
+|keys| - |To define this value, see [tab size](configure-rich-text-editor-plug-ins.md#tabsize).|
+|justify|`justifyleft`, `justifycenter`, `justifyright` |Paragraph alignment.|
+|links|`modifylink`, `unlink`, `anchor`|[Hyperlinks and anchors](configure-rich-text-editor-plug-ins.md#linkstyles).|
+|lists|`ordered`, `unordered`, `indent`, `outdent` | This plug-in controls both [indentation and lists](configure-rich-text-editor-plug-ins.md#indentmargin); including nested lists.|
+|misctools| `specialchars`, `sourceedit` |Miscellaneous tools let authors to enter [special characters](configure-rich-text-editor-plug-ins.md#spchar) or edit the HTML source. Also, you can add a [range of special characters](configure-rich-text-editor-plug-ins.md#definerangechar) if you want to define your own list.|
 |Paraformat|`paraformat`|The default paragraph formats are Paragraph, Heading 1, Heading 2, and Heading 3 (`<p>`, `<h1>`, `<h2>`, and `<h3>`). You can [add more paragraph formats](configure-rich-text-editor-plug-ins.md#paraformats) or extend the list.|
 |spellcheck| `checktext` | [Language aware spell checker](configure-rich-text-editor-plug-ins.md#adddict).|
 |styles| `styles` | Support for styling using a CSS class. [Add new text styles](configure-rich-text-editor-plug-ins.md#textstyles) if you want to add (or extend) your own range of styles for use with text.|
@@ -157,7 +157,7 @@ The [Core Components text component](https://experienceleague.adobe.com/docs/exp
 
 ## Configure RTE toolbar {#dialogfullscreen}
 
-[!DNL Experience Manager] lets you to configure the interface for the Rich Text Editor differently for the different editing modes. The default settings are provided below. You can override these defaults based on your requirements. You customize only the toolbar features that you want to provide to your authors. You need not specify all the toolbar configurations.
+[!DNL Experience Manager] lets you configure the interface for the Rich Text Editor differently for the different editing modes. The default settings are provided below. You can override these defaults based on your requirements. You customize only the toolbar features that you want to provide to your authors. You need not specify all the toolbar configurations.
 
 To configure the toolbar for `dialogFullScreen`, use the following sample configuration.
 
@@ -217,7 +217,7 @@ Administrators can control the RTE options using content policies, say instead o
 The available options in the RTE flow downstream from the user interface configurations to the content policies.
 
 * User interface configuration settings define which options are available to the content policies.
-* If the user interface configuration of the RTE removed or doesn't enable an item, the content policy cannot configure it.
+* If the user interface configuration of the RTE removed or does not enable an item, the content policy cannot configure it.
 * An author has access to only such functionality as is made available by the user interface configurations and the content policies.
 
 As an example, you can see the [Text Core Component documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).

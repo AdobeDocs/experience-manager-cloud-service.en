@@ -9,16 +9,16 @@ exl-id: 51b98c24-5566-4088-9010-bd39841a1633
 
 >[!TIP]
 >
->If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM's powerful translation tools, ideal for those with no AEM or translation experience.
 
 ## General {#general}
 
 Creating or expanding a global web presence can be a complex process, but with good forethought and planning AEM can simplify your efforts and support your global business goals.
 
 * **Plan for global expansion** before implementing your first site. Adapting an existing site for global coverage when the site was implemented at short notice is typically harder than planning for global expansion at the beginning:
-  * Assess the current state of your organization’s localization maturity. Determine whether you have the **tools**, **processes** and **resources** in place to support global expansion.
+  * Assess the current state of your organization's localization maturity. Determine whether you have the **tools**, **processes** and **resources** in place to support global expansion.
   * Be aware of **global regulations** and **regional language preferences**. Design flexible content structures and processes that can accommodate a changing global business environment.
-* Determine a **governance** model that supports your global business and use AEM mechanisms like MSM and user permissions to enforce your chosen model. For example, determine if content will be centrally authored and "pushed" or "pulled" to regions/countries. Determine what content can be unlocked and altered in the geographies. Determine who is responsible for initiating and managing translations.
+* Determine a **governance** model that supports your global business and use AEM mechanisms like MSM and user permissions to enforce your chosen model. For example, determine if content is centrally authored and "pushed" or "pulled" to regions/countries. Determine what content can be unlocked and altered in the geographies. Determine who is responsible for initiating and managing translations.
 * If resources allow, it is best to manage translation activity from a central team who can develop expertise in the necessary tools, processes and vendor relationships.
 * **Plan**, **prototype** and **test** your global structure and processes to ensure that they support the business and that you have the required support from stakeholders in the geographies.
 
@@ -26,7 +26,7 @@ Creating or expanding a global web presence can be a complex process, but with g
 
 * When designing your site structure, start by examining your content and determine where and in which language content is authored. This location should be the top level of your site.
 * The best practice is a **language-based structure** with no more than 3 levels between the top-level authoring and country sites.
-* Use a language/country site naming convention that follows **[W3C standards.](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**
+* Use a language/country site naming convention that follows **[W3C standards](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**.
 * Determine how content is distributed by regions and countries. Consider which countries share languages. It is recommended to create language masters, a layer of un-activated pages, where translated content can be reviewed and modified then pushed or pulled to a country site sharing that language.
 * There are two approaches to creating language masters: using language copies, and using MSM/live copies.
   * The language copy approach is the one used by AEM's out-of-the-box translation integration framework, and therefore it's the easiest way to get started. The framework provides a user interface that makes it initially easy to propagate and translate content changes from the main language (for example, English) master to language masters. However, as the project grows, workflow automation becomes increasingly necessary to manage the translation of the increased number of pages and/or languages.

@@ -24,6 +24,10 @@ This page provides an overview of reusing content with MSM. The following pages 
 * [MSM Rollout Conflicts](rollout-conflicts.md)
 * [MSM Best Practices](best-practices.md)
 
+>[!NOTE]
+>
+>MSM can also be used for Assets, including Content Fragments. For further details see [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md) (only available through the Assets console).
+
 ## Possible Scenarios {#possible-scenarios}
 
 There are many use-cases for MSM and Live Copies. Some scenarios include:
@@ -138,20 +142,20 @@ MSM is directly accessible in the UI using various options from the appropriate 
 
 ### Terms Used {#terms-used}
 
-As an introduction, the following table provides an overview of the main terms used with MSM. These will be covered in more details in the subsequent sections and pages.
+As an introduction, the following table provides an overview of the main terms used with MSM. These are covered in more details in the subsequent sections and pages.
 
 |Term|Definition|Further Details|
 |---|---|---|
 |Source|The original pages used as the basis for Live Copies|Synonymous with Blueprints and/or Blueprint pages|
 |Live Copy|The copy (of the source), maintained by synchronization actions as defined by the rollout configurations||
 Live Copy Configuration|Definition of the configuration details for a Live Copy||
-|Live Relationship|Effective definition of the inheritance for a given resource i.e. the connection(s) between the source and Live Copies|Ensures that changes to the source can be synchronized with the Live Copy|
+|Live Relationship|Effective definition of the inheritance for a given resource that is, the connection(s) between the source and Live Copies|Ensures that changes to the source can be synchronized with the Live Copy|
 |Blueprint|Synonymous with Source|Can be defined by a blueprint configuration|
 |Blueprint Configuration|Predefined configuration specifying a source path|When a blueprint page is referenced in a blueprint configuration the Rollout command becomes available|
 |Chapter|The sections of the blueprint to include in the Live Copy|These are generally sub-pages of the root|
 |Synchronization|The generic term for the synchronization of content between the source and the Live Copies (by both **Rollout** and **Synchronize** options)||
 |Rollout|Synchronizes from the source to the Live Copy|Can be triggered by an author (on a blueprint page) or by a system event (as defined by the rollout configuration)|
-|Rollout Configuration|Rules that determine which properties will be synchronized, how and when||
+|Rollout Configuration|Rules that determine which properties are synchronized, how, and when||
 |Synchronize|A manual request for synchronization, made from the Live Copy pages||
 |Inheritance|A Live Copy page/component inherits content from its source page/component when synchronization occurs||
 |Suspend|Temporarily removes the live relationship between a Live Copy and its blueprint page||
@@ -221,15 +225,15 @@ When you create a Live Copy in AEM, you can see and navigate through the Live Co
 When you (or a process) create a [new page within an existing Live Copy](#live-copy-with-non-live-copy-pages) this new page can also be set up as a Live Copy of a different blueprint. This is known as a nested Live Copy. In nested Live Copies the behavior of the second or inner Live Copy is affected by the first or outer Live Copy in the following ways:
 
 * A deep rollout triggered for the top-level Live Copy can be continued into the nested Live Copy.
-* Any links between the sources will be rewritten within the Live Copies.
+* Any links between the sources are rewritten within the Live Copies.
 
-For example, links that point from the second to the first blueprint will be rewritten as links pointing from the nested/second Live Copy to the first Live Copy.
+For example, links that point from the second to the first blueprint are rewritten as links pointing from the nested/second Live Copy to the first Live Copy.
 
 ![Nested Live Copies](../assets/live-copy-nested.png)
 
 >[!NOTE]
 >
->If you move or rename a page within the Live Copy branch, this will be treated as a nested Live Copy to enable AEM to track the relationships.
+>If you move or rename a page within the Live Copy branch, it is treated as a nested Live Copy to enable AEM to track the relationships.
 
 #### Stacked Live Copies {#stacked-live-copies}
 

@@ -1,9 +1,16 @@
 ---
-title: Creating and using themes
+title: Create and use themes to stylize an Adaptive Form
 description: You can use themes to stylize and provide a visual identity to an Adaptive Form. You can share a theme across any number of Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 ---
 # Creating and using themes {#creating-and-using-themes}
+
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html)                  |
+| AEM as a Cloud Service     | This article        |
 
 You can create and apply themes to stylize an Adaptive Form<!-- or an interactive communication-->. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. Theme is managed independently without a reference to an Adaptive Form<!-- or interactive communication -->.
 
@@ -211,7 +218,7 @@ The Theme Editor is divided in two panels:
       When you customize all the field components with a specific background color, all the fields such as age, name, and address inherit the background color. When you select a numeric box, such as age, and reduce its width, width of all the numeric boxes such as age, number of people in a family is reduced. Width of text boxes is not changed.
 
     * **State:** Lets you customize styles of an object in a specific state. For example, you can specify appearance of an object when it is in default, focus, disabled, hover, or error state.
-    * **Property Categories:** Styling properties are divided in various categories. For example Dimension & Position, Text, Background, Border, and Effects. Under each category, you provide styling information. For example, under Background, you can provide Background Color, and Image & Gradient.
+    * **Property Categories:** Styling properties are divided in various categories. For example, Dimension & Position, Text, Background, Border, and Effects. Under each category, you provide styling information. For example, under Background, you can provide Background Color, and Image & Gradient.
 
     * **Advanced:** Lets you add custom CSS to an object, which overrides the properties visual controls define if there is an overlap.
 

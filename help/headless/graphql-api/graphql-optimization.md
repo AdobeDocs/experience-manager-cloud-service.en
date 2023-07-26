@@ -1,8 +1,8 @@
 ---
 title: Optimizing GraphQL queries
 description: Learn how to optimize your GraphQL queries when Filtering, Paging and Sorting your Content Fragments in Adobe Experience Manager as a Cloud Service for headless content delivery.
+exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
 ---
-
 # Optimizing GraphQL Queries {#optimizing-graphql-queries}
 
 >[!NOTE]
@@ -34,7 +34,7 @@ It applies a JCR filter (in the form of a query constraint) before loading the r
 
 >[!NOTE]
 >
->For technical reasons (e.g. flexibility, nesting of fragments), AEM cannot delegate the entire filtering to JCR. 
+>For technical reasons (for example, flexibility, nesting of fragments), AEM cannot delegate the entire filtering to JCR. 
 
 This technique keeps the flexibility that GraphQL filters provide, while delegating as much of the filtering as possible to JCR.
 
@@ -123,7 +123,7 @@ If you are primarily interested in only retrieving the first few pages, there is
 
 ### Logical operations in filter expressions {#logical-operations-in-filter-expressions}
 
-If you are filtering on nested fragments, you can still leverage JCR filtering by providing an accompanying filter on a top-level field that is combined using the `AND` operator.
+If you are filtering on nested fragments, you can still apply JCR filtering by providing an accompanying filter on a top-level field that is combined using the `AND` operator.
 
 A typical use-case would be to restrict the scope of the query using a filter on the `_path` field of the top-level fragment, and then filter on additional fields that might be on the top-level, or on a nested fragment.
 

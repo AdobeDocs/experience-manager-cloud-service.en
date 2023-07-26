@@ -75,9 +75,9 @@ Your translated content is now published! It can now be accessed and consumed.
 
 >[!TIP]
 >
->You can select multiple items (i.e. multiple language folders) when publishing in order to publish multiple translations at one time.
+>You can select multiple items (that is, multiple language folders) when publishing to publish multiple translations at one time.
 
-There are additional options when publishing your content, such as scheduling a publication time, which are beyond the scope of this journey. Please see the [Additional Resources](#additional-resources) section at the end of the document for more information.
+There are additional options when publishing your content, such as scheduling a publication time, which are beyond the scope of this journey. See the [Additional Resources](#additional-resources) section at the end of the document for more information.
 
 ## Updating Your Translated Content {#updating-translations}
 
@@ -111,7 +111,7 @@ You see that a new job card was added to the project. In this example, another S
 
 ![Additional translation job added](assets/additional-translation-job.png)
 
-You may notice that the statistics listed on the new card is different. This is because AEM recognizes what has changed since the last translation and only includes the content that needs to be translated. This includes re-translation of updated content as well as the first-time translation of new content.
+You may notice that the statistics listed on the new card is different. This is because AEM recognizes what has changed since the last translation and only includes the content that needs to be translated. This includes re-translation of updated content and the first-time translation of new content.
 
 From this point, you [start and manage your translation job just as you did the original.](translate-content.md#using-translation-project)
 

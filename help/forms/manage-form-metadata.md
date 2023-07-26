@@ -7,11 +7,19 @@ exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 ---
 # Add, remove, or edit metadata of an Adaptive Form {#manage-form-metadata}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html)                  |
+| AEM as a Cloud Service     | This article          |
+
 Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 
 [!DNL AEM Forms], by default, provides a defined set of metadata for each asset type. Beyond the default metadata, you can add custom metadata to each of the asset types. [!DNL AEM Forms] also provides you with the right means of creating, managing, and exchanging all this metadata efficiently for your forms.
 
-<!-- If you're a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you're using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
+<!-- If you are a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you are using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
 
 ## Metadata in [!DNL AEM Forms] {#metadata-in-aem-forms}
 
@@ -277,12 +285,12 @@ A tool (Metadata Schema Editor) is provided to define the schema for the metadat
 
 1. Click a component that you just dragged. In the Settings tab that opens in the right panel, fill in information for the following fields:
 
-    1. Specify a Field Label which will be used as a display name above the field placed in schema (For example: Department)
-    1. Under Map to property field, you can see a prefilled value **'./jcr:content/metadata/default'**. Change the ‘**default**’ to a desired property name, which is used to store the property in crx repository (For example: './jcr:content/metadata/department')
+    1. Specify a Field Label to use as a display name above the field placed in schema (For example: Department)
+    1. Under Map to property field, you can see a prefilled value **'./jcr:content/metadata/default'**. Change the '**default**' to a desired property name, which is used to store the property in crx repository (For example: './jcr:content/metadata/department')
 
        >[!NOTE]
        >
-       >Do not change the prefix ‘./jcr:content/metadata/’ as it defines the path where the property is stored.
+       >Do not change the prefix './jcr:content/metadata/' as it defines the path where the property is stored.
        >
        >Also, the property name must be unique to avoid writing values for two or more properties at the same location in repository. So, it is recommended that you change the value 'default'.
 

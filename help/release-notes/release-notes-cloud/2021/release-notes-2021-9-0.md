@@ -69,7 +69,7 @@ CQ-4328183 was not reported on CS so not documented here.
 ### Beta features of [!DNL Forms]  {#sep-what-is-new-forms-prerelease}
 
 * **Unified Storage Connector:** Use Unified Storage Connector to externalize in-process data in customer-managed repositories. For example, you can
-  * Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository. 
+  * Enable Forms Portal's save and resume functionality and store adaptive forms drafts in a customer-managed data repository. 
   * Store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) in a customer-managed repository.  
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) help you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
@@ -105,7 +105,7 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 ### What is New {#what-is-new-screens}
 
-* Screens as a Cloud Service now supports basic playback monitoring. The player will now report various playback metrics with each ping (defaults to 30 seconds). Based on the metrics, it provides the ability to detect various edge cases (stuck experience, blank screen, scheduling problem, etc.). This feature allows the team to remotely monitor if a player is properly playing content, improves reactivity to blank screens or broken experiences in the field, and decreases the risk of showing a broken experience to the end user.
+* Screens as a Cloud Service now supports basic playback monitoring. The player will now report various playback metrics with each ping (defaults to 30 seconds). Based on the metrics, it provides the ability to detect various edge cases (stuck experience, blank screen, scheduling problem, and so on). This feature allows the team to remotely monitor if a player is properly playing content, improves reactivity to blank screens or broken experiences in the field, and decreases the risk of showing a broken experience to the end user.
    See [Basic Playback Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) for more details.
 
 * Thumbnail Support for videos in now supported in Screens as a Cloud Service. A content author can define a thumbnail for videos so that the image can be used as a placeholder and properly test content playback and targeting, while the actual video is being finalized by the appropriate team. The image can also be used, in case the playback of the video fails.
@@ -139,7 +139,7 @@ Read the [documentation](/help/security/configuring-advanced-networking.md) for 
 
 **Index Optimizations**
 
-To improve the performance of search queries and indexing, the full-text index lucene-2 is no longer used out-of-the-box in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] from this release. In order to remove this full-text index on AEM environments in accordance with AEM customers, Adobe Engineering works individually and pro-actively with customers for a gentle and sustainable removal of the Lucene full-text index. Please visit the [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [documentation](/help/operations/indexing.md#index-optimizations) for more information and contact our support directly if you have any questions.
+To improve the performance of search queries and indexing, the full-text index lucene-2 is no longer used out-of-the-box in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] from this release. To remove this full-text index on AEM environments in accordance with AEM customers, Adobe Engineering works individually and pro-actively with customers for a gentle and sustainable removal of the Lucene full-text index. Visit the [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [documentation](/help/operations/indexing.md#index-optimizations) for more information and contact our support directly if you have any questions.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -176,7 +176,7 @@ The Release Date for Cloud Acceleration Manager is October 04, 2021.
  
 ### What is New {#what-is-new-cam}
 
-* Cloud Acceleration Manager now provides users with the ability to view the BPA reports in a printable preview, allowing simple printing or printing to PDF for easy shareability. Refer to Step 6 and 7 in [Using Best Practices Analysis Card](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+* Cloud Acceleration Manager now provides users with the ability to view the BPA reports in a printable preview, allowing simple printing or printing to PDF for easy shareability. See Step 6 and 7 in [Using Best Practices Analysis Card](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 ## Content Transfer Tool {#content-transfer-tool}
 
@@ -186,7 +186,7 @@ The Release Date for Content Transfer Tool v1.6.0 is October 04, 2021.
 
 ### What's New {#what-is-new-ctt}
 
-* Improved User Mapping with a simplified User Experience, including the following features listed below. For more details, refer to [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
+* Improved User Mapping with a simplified User Experience, including the following features listed below. For more details, see [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
   * Test connection to the User Management API before running the User Mapping
   * Gracefully skip errors and continue with the User Mapping activity
   * User Mapping no longer fails if Access Token expires (after 24 hours). User Mapping can be re-run from where it last stopped.

@@ -17,7 +17,7 @@ Content fragments contain structured content and can be delivered in JSON format
 
 ## How to Create a Content Fragment {#how-to-create-a-content-fragment}
 
-Content authors will create any number of Content Fragments to represent the content that they create. This will be their main task in AEM. For the purposes of this getting started guide, we will only need to create one.
+Content authors will create any number of Content Fragments to represent the content that they create. This is their main task in AEM. For the purposes of this getting started guide, we will only need to create one.
 
 1. Log into AEM as a Cloud Service and from the main menu select **Navigation** -&gt; **Content Fragments**.
 

@@ -40,6 +40,10 @@ Content begins on the author instance. This is where content authors create thei
 
 Once content is created in the author instance, it must be published to be available to other services to consume. A publish instance contains all content that has been published.
 
+### Preview Service {#preview}
+
+Prior to publishing to the Publish instance you can also publish your Content Fragment to the **Preview Service** for testing and reviewing. This is done from the **Content Fragments** console.
+
 ### Replication {#replication}
 
 Replication is the act of transferring content from the author instance to the publish instance. This is done automatically by AEM when an author or other user with appropriate rights publishes content.
@@ -75,15 +79,15 @@ To modify your content headlessly, AEM offers two robust APIs.
 * The GraphQL API allows you to create requests to access and deliver Content Fragments.
 * The Assets REST API allows you to create and modify Content Fragments (and other assets).
 
-You will learn about these APIs and how to use them in a later part of the AEM headless journey. Or refer to the [additional resources](#additional-resources) section below for additional documentation.
+You will learn about these APIs and how to use them in a later part of the AEM headless journey. Or see [additional resources](#additional-resources) section below for additional documentation.
 
 ## Headless Integration Levels {#integration-levels}
 
 AEM supports both the full headless and the traditional full stack or headful models of a CMS. However AEM offers not only these two exclusive choices, but the ability to support hybrid models that combine the advantages of both, offering unique flexibility for your headless project.
 
-In order to ensure your understanding of headless concepts, this AEM Headless Developer Journey focuses on the pure headless model to get you up-and-running as soon as possible with no coding in AEM.
+To ensure your understanding of headless concepts, this AEM Headless Developer Journey focuses on the pure headless model to get you up-and-running as soon as possible with no coding in AEM.
 
-However you should be aware of the additional hybrid possibilities open to you once you understand AEM's headless features. These cases are laid out below for your awareness. At the end of the journey, you will be introduced to these concepts in more detail in case such flexibility is required for your project.
+However you should be aware of the additional hybrid possibilities open to you once you understand AEM's headless features. These cases are laid out below for your awareness. At the end of the journey, you are introduced to these concepts in more detail in case such flexibility is required for your project.
 
 ### You already have an external consume of headless content such as a singe page application (SPA). {#already-have-a-spa}
 
@@ -135,7 +139,7 @@ For any successful project, it is important to clearly define not only the requi
 
 It is important to have a clearly defined scope for the project. Scope informs acceptance criteria and allows you to establish a definition of done.
 
-The first question you must ask is "What am I trying to achieve with AEM Headless?" The answer should in general be that you have or will have in the future an experience application that you’ve built with your own development tools not with AEM. This experience application could be a mobile app, a web site, or any other end-user customer facing experience application. The goal for using AEM Headless is to feed your experience application with content that is created, stored, and managed in AEM with state-of-the-art APIs that would call AEM Headless to fetch content or even fully CRUD content directly from your experience application. If this is not what you are looking to do, you probably want to [go back to the AEM documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) and find the section that better suits what you want to accomplish.
+The first question you must ask is "What am I trying to achieve with AEM Headless?" The answer should in general be that you have or will have in the future an experience application that you have built with your own development tools not with AEM. This experience application could be a mobile app, a web site, or any other end-user customer facing experience application. The goal for using AEM Headless is to feed your experience application with content that is created, stored, and managed in AEM with state-of-the-art APIs that would call AEM Headless to fetch content or even fully CRUD content directly from your experience application. If this is not what you are looking to do, you probably want to [go back to the AEM documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) and find the section that better suits what you want to accomplish.
 
 ### Roles and Responsibilities {#roles-responsibilities}
 
@@ -169,9 +173,9 @@ Create a plan on what content translation you need.
 * Do you need different languages or also language to adopt to regional specifics?
 * Do you need rich media content like images or videos to be different for different locales?
 
-Be clear about your content update workflow. What is the approval process that the system must support? Might AEM workflows be leveraged to automate this process?
+Be clear about your content update workflow. What is the approval process that the system must support? Might AEM workflows be used to automate this process?
 
-Note that your [content hierarchy](#content-hierarchy) can be leveraged to make translation easier.
+Note that your [content hierarchy](#content-hierarchy) can be used to make translation easier.
 
 See the [additional resources](#additional-resources) section for additional documentation on AEM workflows and translation tools including links to the AEM Headless Translation Journey.
 
@@ -180,7 +184,7 @@ See the [additional resources](#additional-resources) section for additional doc
 Folder hierarchy can address two major concerns with regards to content management:
 
 * [Translation](#translation) - AEM manages translation of content by maintaining copies of content in locale-specific folders.
-* Organization - Folders are used to define a content hierarchy required to support translation needs as well as logically manage Content Fragments.
+* Organization - Folders are used to define a content hierarchy required to support translation needs and logically manage Content Fragments.
 
 AEM allows for a flexible content structure and a hierarchy can be arbitrarily large. However it is important to realize that any changes in folder structure may have unintended consequences for existing queries that [rely on the content path.](#developer) Therefore a well-defined hierarchy that is clearly set out in advance, can be helpful to your content authors.
 
@@ -189,7 +193,7 @@ Folders can also be restricted to only allow certain types of content (based on 
 * Prevents content authors from authoring content that do not belong in the folder.
 * Optimizes the content creation process by filtering the types of content allowed in the folder during creation to only show valid types of content.
 
-By creating an appropriate content structure, it becomes easier to coordinate headless content authoring across channels in order to maximize content reuse. Leveraging content across multiple channels greatly improves content production efficiency and change management.
+By creating an appropriate content structure, it becomes easier to coordinate headless content authoring across channels so you can maximize content reuse. Leveraging content across multiple channels greatly improves content production efficiency and change management.
 
 ##### Establish Good Naming Conventions {#naming-conventions}
 

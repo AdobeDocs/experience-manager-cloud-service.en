@@ -38,7 +38,7 @@ There are a number of requirements before you begin translating your headless AE
 
 >[!TIP]
 >
->If you are not familiar with using a large-scale CMS like AEM, consider reviewing the [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) documentation before proceeding. The Basic Handling documentation is not part of the journey, so please return to this page when complete.
+>If you are not familiar with using a large-scale CMS like AEM, consider reviewing the [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) documentation before proceeding. The Basic Handling documentation is not part of the journey. As such, return to this page when complete.
 
 ### Tools {#tools}
 
@@ -58,7 +58,7 @@ AEM's content, be it headless or traditional web pages, is driven by its structu
 
 ## How AEM Stores Headless Content {#headless-content-in-aem}
 
-For the translation specialist, it is not important to understand in-depth how AEM manages headless content. However being familiar with the basic concepts and terminology will be helpful as you later use AEM's translation tools. Most importantly you need to understand your own content and how it is structured in order to effectively translate it.
+For the translation specialist, it is not important to understand in-depth how AEM manages headless content. However being familiar with the basic concepts and terminology is helpful as you later use AEM's translation tools. Most importantly you need to understand your own content and how it is structured so you can effectively translate it.
 
 ### Content Models {#content-models}
 
@@ -147,7 +147,7 @@ The final structure may look something like the following.
         |- ...
 ```
 
-You should take note of the specific path of your content as it will be required later to configure your translation.
+You should take note of the specific path of your content as it is required later to configure your translation.
 
 >[!NOTE]
 >

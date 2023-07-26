@@ -20,7 +20,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
->title="Nice work! You've learned about the two basic types of queries and how to query your own content. You now understand how to use the AEM GraphQL API to create efficient queries that deliver content in a format that you app expects."
+>title="Nice work! You have learned about the two basic types of queries and how to query your own content. You now understand how to use the AEM GraphQL API to create efficient queries that deliver content in a format that you app expects."
 >abstract=""
 
 ## Query for a List of Sample Content {#list-query}
@@ -60,7 +60,7 @@ You start on the GraphQL Explorer in a new tab. Here you can build and validate 
 
    ![List query](assets/do-not-localize/list-query-1-3-4-5.png)
 
-You've just validated a list query for a full list of all Content Fragments. This process helps to ensure that the response is what your app expects, with results that illustrate how your apps and websites will retrieve the content created in AEM. 
+You have just validated a list query for a full list of all Content Fragments. This process helps to ensure that the response is what your app expects, with results that illustrate how your apps and websites will retrieve the content created in AEM.
 
 ## Query for a Specific Piece of Sample Content {#bypath-query}
 
@@ -99,7 +99,7 @@ Running a byPath query allows you to retrieve content for a specific Content Fra
 
    ![byPath query results](assets/do-not-localize/bypath-query-2-3-4.png)
 
-You've just validated a byPath query to retrieve a specific Content Fragment identified by the path of that fragment.
+You have just validated a byPath query to retrieve a specific Content Fragment identified by the path of that fragment.
 
 ## Query Your Own Content {#own-queries}
 
@@ -107,18 +107,78 @@ Now that you have run the two primary types of queries, you are ready to query y
 
 1. To run queries against your own Content Fragments, change the endpoint from the **AEM Demo Assets** folder to the **Your Project** folder.
 
-1. Delete all existing content in the query editor. Then type open bracket `{` and press Ctrl+Space or Option+Space for an auto-complete list of the models that were defined in your endpoint. Select the model that you created that ends in `List` from the options.
+1. Delete all existing content in the query editor. Then type open bracket `{` and press Ctrl+Space or Option+Space for an auto-complete list of the models that were defined in your endpoint. Select the model that you created that ends in `List` from the options. If you followed the examples in the previous modules, you should find `adventureList` in the auto-complete list.
 
-   ![Start custom query](assets/do-not-localize/custom-query-1-2.png)
+   ![Start custom query](assets/do-not-localize/custom-query-1.png)
 
 1. Define the items that the query should contain for the Content Fragment model you selected. Again, type open bracket `{`, then press Ctrl+Space or Option+Space for an auto-complete list. Select `items` from the options.
 
 1. Tap or click the **Prettify** button to automatically format your code so that it is easier to read.
 
-1. Once complete, tap or click the **Play** button at the top left of the editor to run the query. The editor auto-complete the `items` and the query runs.
+1. Once complete, tap or click the **Play** button at the top left of the editor to run the query. The editor auto-complete the `items`, which are briefly highlighted in yellow, and the query runs.
 
 1. The results are displayed in the right panel, next to the query editor.
 
-   ![Run custom query](assets/do-not-localize/custom-query-3-4-5-6.png)
+   ![Run custom query](assets/do-not-localize/custom-query-2.png)
 
 This is how your content can be delivered to omnichannel digital experiences.
+
+## Persisted Queries {#persisted-queries}
+
+Persisted queries are the preferred mechanism for exposing the GraphQL API to client applications. Once a query has been persisted, it can be requested using a GET request and cached for fast retrieval.
+
+You will create a persisted query that includes data you would like to consume from your client application.
+
+1. You will use the data that you created as a content fragment earlier, so make sure that the **Your Project** endpoint is selected in the **Endpoint** drop-down menu at the top-right corner of the editor.
+
+1. Copy the following code snippet.
+
+   ```text
+      {
+      adventureList {
+       items {
+         title
+         description {
+           plaintext
+         }
+         price
+         image {
+           ... on ImageRef {
+             _publishUrl
+             mimeType
+           }
+         }
+       }
+     }
+   }
+   ```
+
+1. Replace the existing content in the query editor by pasting the copied code. 
+
+   >[!NOTE]
+   >
+   >If you did not use the same field descriptions as described in the previous modules, you will need to update the field names in this query.
+   >
+   >Use the GraphQL autocomplete (Ctrl+Space or Option+Space) feature as described previously to help identify the available properties.
+
+1. Once pasted, click the **Play** button at the top left of the query editor to execute the query.
+
+1. The results are displayed in the right panel, next to the query editor. Should the query be incorrect, an error would appear in the right panel.
+
+   ![Create own query](assets/do-not-localize/own-query.png)
+
+1. When satisfied with your query, click the **Save As** button at the top of the query editor to persist the query.
+
+1. In the **Query name** pop-up, give your query the name `adventure-list`.
+
+1. Tap or click **Save As**.
+
+   ![Persist query](assets/do-not-localize/persist-query.png)
+
+1. The query is persisted as confirmed by a banner message at the bottom of the screen. The query also now appears in the left panel of persisted queries in the window.
+
+1. In order for the persisted query to be available publicly, it will need to be published, much like how your Content Fragments need to be published. Click the **Publish** button at the top right of the query editor to publish the query.
+
+1. The publication is confirmed by a banner notification.
+
+You now have a new persisted query which will contain only the specific properties and formats that you defined.

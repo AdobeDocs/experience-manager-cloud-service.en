@@ -45,7 +45,7 @@ Depending on your organizational needs, the same user(s) can have both roles.
 Before you begin the tasks described in this document as a developer or deployment manager, ensure that your system administrator has completed all the steps in this onboarding journey. This means that:
  
 * Your system administrator has assigned developers and deployment managers to their respective product profiles.
-* Developers must additionally be assigned to **AEM Users** or **AEM Administrators** product profiles in order to also use AEM.
+* Developers must additionally be assigned to **AEM Users** or **AEM Administrators** product profiles ito also use AEM.
 * Cloud resources have been set up.
 
 ## Accessing git {#accessing-git}
@@ -121,7 +121,7 @@ You can see the details of the run by clicking the ellipsis button again and sel
 
 Congratulations! You have now deployed code from your git repository to a non-production environment!
 
-## What’s Next {#whats-next}
+## What's Next {#whats-next}
 
 Now that you have read this document you should:
 
@@ -137,6 +137,8 @@ If you are interested in how content authors access and use AEM as a Cloud servi
 >Now that you are onboarded, you can [learn how to easily add the AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) to a sandbox environment with minimal AEM configuration and be able to test the powerful features of AEM with rich examples based on best-practices.
 
 ## Additional Resources {#additional-resources}
+
+The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
 * [Accessing Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - Learn how to access and manage your git repository using the self-service git account management from Cloud Manager.
 * [Using git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Learn how to use Cloud Manager's git repositories and how to integrate your own on-premise customer-managed git repository with Cloud Manager.

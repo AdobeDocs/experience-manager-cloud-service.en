@@ -5,6 +5,12 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 ---
 # Onboard to [!DNL AEM Forms] as a Cloud Service {#overview}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html)                  |
+| AEM as a Cloud Service     | This article        |
+
+
 ## Decide personas {#personas-aem-forms-project}
 
 <!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Before onboarding to an [!DNL AEM Forms] as a Cloud Service environment, decide personas and structure a team for your project. A typical [!DNL AEM Forms] project team has the following personas:
@@ -15,7 +21,7 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 
 * **Forms developer**: A Forms developer develops a custom forms solution.  A Forms developer typically undertakes backend development like developing custom components, AEM Workflows, pre-fill service and more.
 
-* **AEM administrator**:  An AEM administrator helps with overall configuration like setting up users, hardening the environment, configuring data sources, configuring email, and third party software. AEM administrator also helps with integrations like integrating with Adobe Analytics, Adobe Target, and Adobe Sign.
+* **AEM administrator**:  An AEM administrator helps with overall configuration like setting up users, hardening the environment, configuring data sources, configuring email, and third-party software. AEM administrator also helps with integrations like integrating with Adobe Analytics, Adobe Target, and Adobe Sign.
 
 * **End user**: An end user interacts with and submits the published form, signs submitted forms, tracks submitted applications through web portal, and receives personalized communications.
 

@@ -17,13 +17,13 @@ The tool does not support multiple filter paths or FileVault's `filter.xml`.
 
 >[!CAUTION]
 >
->Please note that the AEM Repo Tool will always overwrite the entire file or directory specified.
+>The AEM Repo Tool always overwrites the entire file or directory specified.
 
 ## Download and Documentation {#download-and-documentation}
 
 The [AEM Repo Tool is available on GitHub via this link](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) along with detailed installation and usage instructions.
 
-If you wish to download the source of the AEM Repo Tool, refer to the GitHub project linked below.
+If you wish to download the source of the AEM Repo Tool, see the GitHub project linked below.
 
 CODE ON GITHUB
 

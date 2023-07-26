@@ -65,7 +65,7 @@ Now that you have read this document you should know how to:
 * Access Cloud Manager.
 * Sign into an AEM as a Cloud Service instance.
 
-Congratulations! You are now ready to author and publish AEM content. Refer to the [Additional Resources](#additional-resources) section for more details on how to author content in AEM and how to administer it.
+Congratulations! You are now ready to author and publish AEM content. See [Additional Resources](#additional-resources) section for more details on how to author content in AEM and how to administer it.
 
 If you are interested in how developers and deployment managers create and manage custom applications for AEM as a Cloud service, continue on to second optional part of the onboarding journey, [AEM Developer Tasks.](developers.md)
 
@@ -74,6 +74,8 @@ If you are interested in how developers and deployment managers create and manag
 >Now that you are onboarded, you can [learn how to easily add the AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) to a sandbox environment with minimal AEM configuration and be able to test the powerful features of AEM with rich examples based on best-practices.
 
 ## Additional Resources {#additional-resources}
+
+The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
 [Quick Start Guide to Authoring Pages](/help/sites-cloud/authoring/getting-started/quick-start.md) - Start here for a quick overview of authoring fundamentals in AEM.
 [Headless Authoring Journey](/help/journey-headless/author/overview.md) - If you want to author headless content, follow this guided introduction.

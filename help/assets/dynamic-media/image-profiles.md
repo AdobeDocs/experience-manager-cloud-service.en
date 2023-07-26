@@ -12,7 +12,7 @@ When uploading images, you can automatically crop the image upon upload by apply
 
 >[!IMPORTANT]
 >
->Image profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
+>Image Profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
 
 ## Unsharp Mask option {#unsharp-mask}
 
@@ -63,16 +63,18 @@ Smart crop coordinates are aspect ratio dependent. For the Smart Crop settings i
 
 Each smart crop generation that you create requires extra processing. For example, adding more than five smart crop aspect ratios may result in a slow asset ingestion rate. It may also cause an increased load on systems. Because you can apply Smart Crop at the folder level, Adobe recommends that you use it on folders *only* where it is needed.
 
-**Guidelines for defining Smart Crop in an Image profile**
+**Guidelines for defining Smart Crop in an Image Profile**
 To keep Smart Crop usage under control, and to optimize for processing time and storage of crops, Adobe recommends the following guidelines and tips:
 
-* Avoid creating duplicate smart crop profiles that have the same width and height values.
+* Image assets that are going to have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger.
+* Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time.
 * Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages.
 * Create page-wise/asset type-wise Image profiles for specific folders and subfolders instead of a common smart crop profile that is applied to all folders or all assets.
 * An Image profile that you apply to subfolders overrides an Image profile that is applied to the folder.
-* Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time.
+* An Image Profile that contains duplicate smart crop dimensions is not permitted.
+* Duplicate named Image Profiles that have smart crop options set are not permitted.
 
-You have two image crop options from which to choose. You can also choose to automate the creation of color and image swatches or preserve crop content across target resolutions.
+You have two image crop options from which to choose: Pixel Crop and Smart Crop. You can also choose to automate the creation of color and image swatches or preserve crop content across target resolutions.
 
 >[!IMPORTANT]
 >
@@ -83,7 +85,7 @@ You have two image crop options from which to choose. You can also choose to aut
 | **[!UICONTROL Pixel Crop]** | Bulk crop images based on dimensions only. | From the **[!UICONTROL Cropping Options]** drop-down list, select **[!UICONTROL Pixel Crop]**.<br>To crop from the sides of an image, you enter the number of pixels to crop from any side or each side of the image. How much of the image is cropped depends on the ppi (pixels per inch) setting in the image file.<br>An Image Profile pixel crop renders in the following manner:<br>&bull; Values are Top, Bottom, Left, and Right.<br>&bull; Upper left is considered `0,0` and the pixel crop is calculated from there.<br>&bull; Crop starting point: Left is X and Top is Y<br>&bull; Horizontal calculation: horizontal pixel size of original image minus Left and then minus Right.<br>&bull; Vertical calculation: vertical pixel height minus Top, and then minus Bottom.<br>For example, suppose you have a 4000 x 3000 pixel image. You use values: Top=250, Bottom=500, Left=300, Right=700.<br>From upper-left (300,250) crop using the fill space of (4000-300-700, 3000-250-500, or 3000,2250). |
 | **[!UICONTROL Smart Crop]** | Bulk crop images based on their visual focal point. | Smart Crop uses the power of artificial intelligence in Adobe Sensei to quickly automate the cropping of images in bulk. Smart Crop automatically detects and crops to the focal point in any image to acquire the intended point of interest, regardless of screen size.<br>From the **[!UICONTROL Cropping Options]** drop-down list, select **[!UICONTROL Smart Crop]**, then to the right of **[!UICONTROL Responsive Image Crop]**, enable (turn on) the feature.<br>The default breakpoint sizes (**[!UICONTROL Large]**, **[!UICONTROL Medium]**, **[!UICONTROL Small]**) cover the full range of sizes that most images are used on mobile and tablet devices, desktops, and banners. If desired, you can edit the default names of Large, Medium, and Small.<br>To add more breakpoints, select **[!UICONTROL Add Crop]**; to delete a crop, select the Garbage Can icon. |
 | **[!UICONTROL Color and Image Swatch]** | Bulk generates an image swatch for each image. | **Note**: Smart Swatch is not supported in Dynamic Media Classic.<br>Automatically locate and generate high-quality swatches from product images that show color or texture.<br>From the **[!UICONTROL Cropping Options]** drop-down list, select **[!UICONTROL Smart Crop]**. Then to the right of **[!UICONTROL Color and Image Swatch]**, enable (turn on) the feature. Enter a pixel value in the **[!UICONTROL Width]** and **[!UICONTROL Height]** text boxes.<br>While all image crops are available from the Renditions rail, swatches are only used by way of the **[!UICONTROL Copy URL]** feature. Use your own viewing component to render the swatch on your site. The exception to this rule is carousel banners. Dynamic Media provides the viewing component for the swatch used in carousel banners.<br><br>**Using image swatches**<br>The URL for image swatches is straightforward:<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>Where `:Swatch` is appended to the asset request.<br><br>**Using color swatches**<br>To use color swatches, you make a `req=userdata` request with the following:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>For example, the following is a swatch asset in Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>And here is the swatch asset's corresponding `req=userdata` URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br>The `req=userdata` response is as follows:<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br>You can also request a `req=userdata` response in either XML or JSON format, as in the following respective URL examples:<br>&bull;`https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>&bull;`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Note**: You must create your own WCM component to request a color swatch and parse the `SmartSwatchColor` attribute, represented by a 24-bit RGB hexadecimal value.<br>See also [`userdata`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html) in the Viewers Reference Guide. |
-| **[!UICONTROL Preserve crop content across target resolutions]** | To maintain crop content across the same aspect ratio | Use when you create a smart crop profile.<br>Uncheck this option to generate new crop content &ndash; while still maintaining the focal point &ndash; for a given aspect ratio across different resolutions.<br>If you decide to uncheck this box, make sure that the original image resolution is greater that the resolutions that you define for your Smart Crop profile.<br><br>As an example, suppose you have set the aspect ratios at 600 x 600 (Large), 400 x 400 (Medium), and 300 x 300 (Small).<br>When **[!UICONTROL Preserve crop content across target resolutions]** option is *checked*, you see the same crop across all three resolutions, similar to the following sample output of images (for illustrative purposes only):<br>![Option checked](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br>When **[!UICONTROL Preserve crop content across target resolutions]** option is *unchecked*, the crop content is new for all three resolutions, similar to the following sample output of images (for illustrative purposes only):<br>![Option unchecked](/help/assets/dynamic-media/assets/preserve-unchecked.png) |
+| **[!UICONTROL Preserve crop content across target resolutions]** | To maintain crop content across the same aspect ratio | Use when you create a smart crop profile.<br>To generate new crop content &ndash; while still maintaining the focal point &ndash; for a given aspect ratio across different resolutions, uncheck this option <br>If you decide to uncheck this box, make sure that the original image resolution is greater that the resolutions that you define for your Smart Crop profile.<br><br>As an example, suppose you have set the aspect ratios at 600 x 600 (Large), 400 x 400 (Medium), and 300 x 300 (Small).<br>When **[!UICONTROL Preserve crop content across target resolutions]** option is *checked*, you see the same crop across all three resolutions, similar to the following sample output of images (for illustrative purposes only):<br>![Option checked](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br>When **[!UICONTROL Preserve crop content across target resolutions]** option is *unchecked*, the crop content is new for all three resolutions, similar to the following sample output of images (for illustrative purposes only):<br>![Option unchecked](/help/assets/dynamic-media/assets/preserve-unchecked.png) |
 
 ### Supported image file formats for Smart Crop and Color Swatches
 
@@ -170,7 +172,7 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 #### Apply Dynamic Media Image Profiles to folders from Properties {#applying-image-profiles-to-folders-from-properties}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Assets]**.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Assets]**.
 1. Navigate to a *folder* (not an asset) to which you want to apply an image profile.
 1. Depending on the view you are in, do one of the following:
    * In Card View, hover the pointer on the folder, then select the check mark to select it.
@@ -225,7 +227,7 @@ See also [Edit the smart crop or smart swatch of multiple images](#editing-the-s
 
 1. Select the Experience Manager logo and navigate to **[!UICONTROL Assets]**, then to the folder that has a smart crop or smart swatch Image Profile applied to it.
 1. To open its contents, select the folder.
-1. Select the image whose smart crop or smart swatch you want to adjust.
+1. Select the image whose smart crop or smart swatch that you want to adjust.
 1. In the toolbar, select **[!UICONTROL Smart Crop]**.
 
 1. Do any of the following:

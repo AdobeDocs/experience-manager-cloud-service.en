@@ -8,7 +8,12 @@ exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
 ---
 # Organize your digital assets {#organize-digital-assets}
 
-All digital assets, metadata, and content of Microsoft® Office and PDF documents are extracted and made searchable. Search allows sophisticated filtering on assets and completely respects the proper permissions. Metadata is covered in detail in Metadata in Digital Asset Management.
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
+
+All digital assets, metadata, and content of Microsoft&reg; Office and PDF documents are extracted and made searchable. Search allows sophisticated filtering on assets and completely respects the proper permissions. Metadata is covered in detail in Metadata in Digital Asset Management.
 
 [!DNL Experience Manager Assets] supports multiple ways of organizing content. You can organize them in a hierarchical manner using folders or you can organize them in an unordered, ad-hoc manner, for example tags. Users can edit tags in the DAM Asset Editor where subassets, renditions, and metadata are displayed.
 
@@ -37,7 +42,7 @@ You can limit who can access certain folders in Assets by making the folder part
 
 ## Use tags to organize assets {#use-tags-to-organize-assets}
 
-You can use folders or tags or both to organize assets. Adding tags to assets makes them more easy to retrieve during a search. To add tags to an asset, follow these steps:
+You can use folders or tags or both to organize assets. Adding tags to assets makes them easier to retrieve during a search. To add tags to an asset, follow these steps:
 
 1. In the Digital Asset Manager, double-click the asset to open it.
 1. In the **Tags** area, open the menu to reveal the available tags. Select tags as appropriate. To delete a tag, hover the pointer over the tag and click `X` to delete it.
@@ -68,7 +73,7 @@ The most basic way to organize assets is to save the assets in folders. It is an
 
 ## Organize assets using tags {#use-tags-to-organize-assets}
 
-Adding tags to assets makes them more easy to retrieve during a search, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
+Adding tags to assets makes them easier to retrieve during a search, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
 
 [!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets.
 
@@ -103,6 +108,21 @@ For more information, see [manage collections](manage-collections.md)
 A processing profile contains [!DNL Assets] processing commands that apply to assets that get uploaded to pre-defined folders. Profiles are used to automate the processing of contents of a folder or freshly uploaded assets. You can use profiles to organize your assets better.
 
 Standardizing metadata usage, file naming, and folder structure ensures that as your pool of digital assets grows, you can apply processing profiles to folders with greater precision and consistency.
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

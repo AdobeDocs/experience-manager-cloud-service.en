@@ -13,7 +13,7 @@ AEM as a Cloud Service (Author Service) is integrated with Unified Shell to impr
 
 The benefits of this are:
 
-* Single Sign-On across all Experience Cloud applications
+* Single Sign-on across all Experience Cloud applications
 * Easy switching between organizations or switching to a different application
 * Improved product help
 * Easy in-product feedback button to report issues or share ideas with Adobe
@@ -26,19 +26,19 @@ Out of the box, AEM as a Cloud Service has unified shell enabled. However, in ca
 >[!NOTE]
 >Unified Shell can be disabled only by an account with administrative privileges.
 
-1. Go to **Tools - Cloud Services**. 
+1. Click **Tools > Cloud Services**. 
 
-   An admin user will see the Unified Shell Configuration card as shown below:
+   An admin user sees the Unified Shell Configuration card as shown below:
 
    ![image](/help/overview/assets/unifiedshell2.png)
 
-1. Click on **Unified Shell Configuration**. Then, deselect the checkbox shown below to disable Unified Shell:
+1. Click **Unified Shell Configuration**. Then, deselect the checkbox shown below to disable Unified Shell:
 
    ![image](/help/overview/assets/unifiedshell3.png)
 
 ## Changing to Dark Theme {#changing-to-dark-theme}
 
-To change to the dark theme, click on your profile icon. This will display a pop-over as shown below. You can use the toggle to switch to a dark theme for the Unified Shell.
+To change to the dark theme, click your profile icon. This action displays a popover as shown below. You can use the toggle to switch to a dark theme for the Unified Shell.
 
 >[!INFO]
 >
@@ -48,13 +48,13 @@ To change to the dark theme, click on your profile icon. This will display a pop
 
 ## Identifying the AEM as a Cloud Service environment {#identify-aemaacs-environment}
 
-AEM as a Cloud Service provides three types of environments: Production, Stage, and Development. Refer to [Environment Types](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) for more details. With this integration with Unified Shell, the type of environment that the user is logged into on the Author service is displayed on the top-header via a label as shown below.
+AEM as a Cloud Service provides three types of environments: Production, Stage, and Development. See [Environment Types](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) for more details. With this integration with Unified Shell, the type of environment that the user is logged into on the Author service is displayed on the top-header via a label as shown below.
 
 ![image](/help/overview/assets/unifiedshell_header_label.png)
 
 ## Accessing the AEM Inbox {#accessing-the-aem-inbox}
 
-The AEM Inbox can be accessed by clicking on the bell icon in the unified shell. 
+The AEM Inbox can be accessed by clicking the bell icon in the unified shell. 
 
 >[!INFO]
 >
@@ -62,6 +62,6 @@ The AEM Inbox can be accessed by clicking on the bell icon in the unified shell.
 
 ![image](/help/overview/assets/unifiedshell5.png)
 
-Click on the Inbox button in the pop-over to go to your AEM Inbox:
+Click the Inbox button in the popover so you can go to your AEM Inbox:
 
 ![image](/help/overview/assets/unifiedshell6.png)

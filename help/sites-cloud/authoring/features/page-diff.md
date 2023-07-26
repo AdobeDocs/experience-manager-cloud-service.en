@@ -13,7 +13,7 @@ The page diff feature allows for the convenient side-by-side comparison of two p
 
 >[!NOTE]
 >
->The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
+>The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` to use the feature.
 >
 >See [Developing and Page Diff](/help/implementing/developing/introduction/page-diff.md#operation-details) for more technical details on this feature.
 
@@ -35,7 +35,7 @@ Regardless of the content being compared, the presentation of the diff remains t
 * The content selected when you started the diff is displayed on the left (the diff entry point).
 * The compare-to content is displayed on the right (what the selected content is compared against).
 
-For example if comparing versions, the current version is displayed on the left and the previous version is displayed on the right.
+For example, if comparing versions, the current version is displayed on the left and the previous version is displayed on the right.
 
 The source of both pages is clearly displayed in the header bar at the top of the browser window.
 
@@ -59,7 +59,7 @@ The diff detects changes at the component and HTML level. Items that have been c
 
 ### Fullscreen and Exiting {#fullscreen-and-exiting}
 
-In order to focus on particular content, you can click on the full screen icon for either "side" of the side-by-side diff to enlarge it to the full browser window.
+To focus on particular content, you can click on the full screen icon for either "side" of the side-by-side diff to enlarge it to the full browser window.
 
 ![Full screen button](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 
@@ -69,7 +69,7 @@ The selected side will fill the entire window, but the bar will remain at the to
 
 >[!NOTE]
 >
->If the browser width can not accommodate both page names in full screen view, only the name of the page being displayed will be shown and the other will be available behind ellipsis.
+>If the browser width can not accommodate both page names in full screen view, only the name of the page being displayed is shown and the other is available behind ellipsis.
 
 You can also choose to close the full screen view by clicking the exit full screen icon.
 
@@ -92,4 +92,4 @@ There are some situations in which the page diff may not detect a difference as 
 
 >[!NOTE]
 >
->For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/implementing/developing/introduction/page-diff.md) of this feature.
+>For more details about the operation of the page diff mechanism and limitations which can affect page diff, see [developer documentation](/help/implementing/developing/introduction/page-diff.md) of this feature.

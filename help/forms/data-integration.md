@@ -6,6 +6,12 @@ exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
 ---
 # Connect your data sources to Cloud Service {#aem-forms-data-integration}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html)                |
+| AEM as a Cloud Service     | This article        |
+
+
  ![Data Integration](do-not-localize/data-integeration.png)
 
 Enterprise infrastructures include disparate back-end systems or data sources like databases, web services, REST services, OData services, and CRM solutions. Put together, they make an information system that serves data to enterprise applications to perform day-to-day business. On the other hand, applications capture data and send it back to update data sources.
@@ -34,7 +40,7 @@ Once you have created a form data model, you can use it in various Adaptive Form
 
 ## Get started with data integration {#get-started-with-data-integration}
 
-The first step to implement data integration is to identify and configure data sources that store information you want to leverage in Adaptive Forms and interactive communications use cases. Next, you create a Form Data Model that uses data model object, properties, and services from one or more data sources. You can create Adaptive Forms and interactive communications based on a Form Data Model where Adaptive Form fields or placeholders in interactive communications are bound to respective data source properties.
+The first step to implement data integration is to identify and configure data sources that store information you want to use in Adaptive Forms and interactive communications use cases. Next, you create a Form Data Model that uses data model object, properties, and services from one or more data sources. You can create Adaptive Forms and interactive communications based on a Form Data Model where Adaptive Form fields or placeholders in interactive communications are bound to respective data source properties.
 
 [!DNL AEM Forms] also allows you to create a Form Data Model independent of data sources and associate or bind data model objects and properties in the Form Data Model with data source later. It eliminates any dependencies on data sources while you work on a form data model.
 

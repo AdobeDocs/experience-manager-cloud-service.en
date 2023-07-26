@@ -30,7 +30,7 @@ This document describes the tools that are available to troubleshoot AEM as a Cl
 
 Debugging AEM as a Cloud Service developer environments is available in the Developer Console for development, stage, and production environments.
 
-Refer to [Implementing for AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) to learn more about development tools.
+See [Implementing for AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) to learn more about development tools.
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -39,13 +39,13 @@ As a user, you can access CRXDE Lite on the development environment but not stag
 >[!IMPORTANT]
 >Writing to immutable repositories such as `/libs` and `/apps` at runtime results in errors. Additionally, you do not have access to developer tooling for staging and production environments.
 
-Refer to [Developing with CRXDE Lite](/help/implementing/developing/tools/crxde.md) to learn how to develop your AEM application using CRXDE Lite.
+See [Developing with CRXDE Lite](/help/implementing/developing/tools/crxde.md) to learn how to develop your AEM application using CRXDE Lite.
 
 ## Managing Logs {#managing-logs}
 
 Users can access a list of available log files for the selected environment.
   
-Refer to [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) to learn how to access and manage logs through UI or from API via Cloud Manager.
+See [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) to learn how to access and manage logs through UI or from API via Cloud Manager.
 
 ## Contacting Support {#contacting-support}
 
