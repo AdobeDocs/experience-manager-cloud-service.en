@@ -25,7 +25,7 @@ You can select a component and drag it to the required location on your page. Yo
 * [Edit Content](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 * [Edit Content - Full Screen Mode](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
-For further information about adding components to a page see the article [Editing Page Content](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+For more information about adding components to a page, see [Editing Page Content](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 ## Overview of All Components {#overview-of-all-components}
 
@@ -36,6 +36,8 @@ The [Components Console](/help/sites-cloud/authoring/features/components-console
 The [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) offer flexible and feature-rich authoring functionality, which provide essential content types to create pages.
 
 They are build using AEM best practices and are the foundation of the AEM authoring experience. Core Components can be easily extended by developers to meet specific project needs.
+
+Along with the WCM Core Components, you can also use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to [create or add forms to an AEM Sites Page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 
 
 ### Configuring Templates {#configuring-templates}
 

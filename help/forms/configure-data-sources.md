@@ -8,6 +8,11 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 ---
 # Configure data sources {#configure-data-sources}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html)                  |
+| AEM as a Cloud Service     | This article        |
+
 ![Data integration](do-not-localize/data-integeration.png)
 
 [!DNL Experience Manager Forms] Data Integration allows you to configure and connect to disparate data sources. The following types are supported out-of-the-box:
@@ -20,11 +25,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 * SalesForce
 * Microsoft&reg; Azure Blob Storage
 
-Data integration supports OAuth2.0, Basic Authentication, and API Key authentication types out-of-the-box, and allows implementing custom authentication for accessing web services. While RESTful, SOAP-based, and OData services are configured in [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> and connector for [!DNL Experience Manager] user profile are configured in [!DNL Experience Manager] web console.
-
->[!NOTE]
->
->[!UICONTROL Experience Manager Forms] does not support relational database.
+Data integration supports OAuth2.0([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, and API Key authentication types out-of-the-box, and allows implementing custom authentication for accessing web services. While RESTful, SOAP-based, and OData services are configured in [!DNL Experience Manager] as a Cloud Service, JDBC for relational databases and connector for [!DNL Experience Manager] user profile are configured in [!DNL Experience Manager] web console.
 
 ## Configure relational database {#configure-relational-database}
 
@@ -64,7 +65,7 @@ You can configure relational databases using [!DNL Experience Manager] Web Conso
 
    >[!NOTE]
    >
-   > Refer [SQL connections using JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) for more detailed information.
+   > See [SQL connections using JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) for more detailed information.
     
 1. Tap **[!UICONTROL Save]** to save the configuration.
 
@@ -76,7 +77,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
-1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties will be available for use in form data model. Use the following format to specify user profile properties:
+1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -134,7 +135,7 @@ RESTful web service can be described using [Swagger specifications](https://swag
         * Base Path: The URL prefix for all API paths. It is an optional field.  
           If necessary, edit the pre-populated values for these fields.
 
-    * Select the authentication type — None, OAuth2.0, Basic Authentication, API Key, or Custom Authentication — to access the RESTful service, and accordingly provide details for authentication.
+    * Select the authentication type — None, OAuth2.0([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, API Key, or Custom Authentication — to access the RESTful service, and accordingly provide details for authentication.
 
     If you select **[!UICONTROL API Key]** as the authentication type, specify the value for the API key. The API key can be sent as a request header or as a query parameter. Select one of these options from the **[!UICONTROL Location]** drop-down list and specify the name of the header or the query parameter in the **[!UICONTROL Parameter Name]** field accordingly.
 
@@ -153,7 +154,7 @@ RESTful web service can be described using [Swagger specifications](https://swag
 
     * Select URL or File from the [!UICONTROL Swagger Source] drop-down, and accordingly specify the [!DNL Swagger 3.0 URL] to the[!DNL  Swagger] definition file or upload the [!DNL Swagger] file from your local file system.
     * Based on the[!DNL  Swagger] Source input, the connection information with the target server is displayed.
-    * Select the authentication type — None, OAuth2.0, Basic Authentication, API Key, or Custom Authentication — to access the RESTful service, and accordingly provide details for authentication.
+    * Select the authentication type — None, OAuth2.0([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, API Key, or Custom Authentication — to access the RESTful service, and accordingly provide details for authentication.
 
     If you select **[!UICONTROL API Key]** as the authentication type, specify the value for the API key. The API key can be sent as a request header or as a query parameter. Select one of these options from the **[!UICONTROL Location]** drop-down list and specify the name of the header or the query parameter in the **[!UICONTROL Parameter Name]** field accordingly.
 
@@ -168,7 +169,7 @@ Some of the operations not supported by RESTful services Open API Specification 
 * Links
 * Different request bodies for different MIME types for a single operation
 
-You can refer to [OpenAPI 3.0 Specification](https://swagger.io/specification/v3/) for detailed information. 
+See [OpenAPI 3.0 Specification](https://swagger.io/specification/v3/) for detailed information. 
 
 ### Form data model HTTP client configuration to optimize performance {#fdm-http-client-configuration}
 
@@ -229,7 +230,7 @@ To configure SOAP-based web service in [!DNL Experience Manager] as a Cloud Serv
 
     * WSDL URL for the web service.
     * Service Endpoint. Specify a value in this field to override the service endpoint mentioned in WSDL.
-    * Select the authentication type — None, OAuth2.0, Basic Authentication, or Custom Authentication — to access the SOAP service, and accordingly provide the details for authentication.
+    * Select the authentication type — None, OAuth2.0([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, or Custom Authentication — to access the SOAP service, and accordingly provide the details for authentication.
 
       <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
       <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
@@ -271,7 +272,7 @@ An OData service is identified by its service root URL. To configure an OData se
 1. Specify the following details for the OData service:
 
     * Service Root URL for the OData service to be configured.
-    * Select the authentication type — None, OAuth2.0, Basic Authentication, API Key, or Custom Authentication — to access the OData service, and accordingly provide the details for authentication.
+    * Select the authentication type — None, OAuth2.0([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, API Key, or Custom Authentication — to access the OData service, and accordingly provide the details for authentication.
 
     If you select **[!UICONTROL API Key]** as the authentication type, specify the value for the API key. The API key can be sent as a request header or as a query parameter. Select one of these options from the **[!UICONTROL Location]** drop-down list and specify the name of the header or the query parameter in the **[!UICONTROL Parameter Name]** field accordingly.
 

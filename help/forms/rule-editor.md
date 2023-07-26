@@ -8,6 +8,13 @@ exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 ---
 # Add rules to an Adaptive Form {#adaptive-forms-rule-editor}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 ## Overview {#overview}
 
 The rule editor feature empowers forms business users and developers to write rules on Adaptive Form objects. These rules define actions to trigger on form objects based on preset conditions, user inputs, and user actions on the form. It helps further streamline the form filling experience ensuring accuracy and speed.
@@ -60,7 +67,7 @@ While you can achieve most of the use cases by using any rule construct, here ar
 
   For example, to hide fields B, C, and D based on the condition that checks for the value a user specifies in field A, write one rule with condition-action construct or When rule type on field A and specify actions to control the visibility of fields B, C, and D. Otherwise, you need three separate rules on fields B, C, and D, where each rule checks the condition and shows or hides the respective field. In this example, it is more efficient to write the When rule type on one object rather than Show or Hide rule type on three objects.
 
-* To trigger an action based on multiple conditions, it is recommended to use action-condition construct. For example to show and hide field A by evaluating conditions on fields B, C, and D, use Show or Hide rule type on field A.
+* To trigger an action based on multiple conditions, it is recommended to use action-condition construct. For example, to show and hide field A by evaluating conditions on fields B, C, and D, use Show or Hide rule type on field A.
 * Use condition-action or action condition construct if the rule contains one action for one condition.
 * If a rule checks for a condition and performs an action immediately on providing a value in a field or exiting a field, it is recommended to write a rule with condition-action construct or the When rule type on the field on which the condition is evaluated.
 * The condition in the When rule is evaluated when a user changes the value of the object on which the When rule is applied. However, if you want the action to trigger when the value changes on the server side, like for prepopulating the value, it is recommended to write a When rule that triggers the action when the field is initialized.
@@ -265,7 +272,7 @@ A typical Disable rule is structured as follows:
 
 ### [!UICONTROL Validate] {#validate}
 
-The **[!UICONTROL Validate]** rule type validates the value in a field using an expression. For example, you can write an expression to check that the text box for specifying name doesn't contain special characters or numbers.
+The **[!UICONTROL Validate]** rule type validates the value in a field using an expression. For example, you can write an expression to check that the text box for specifying name does not contain special characters or numbers.
 
 A typical Validate rule is structured as follows:
 
@@ -277,7 +284,7 @@ A typical Validate rule is structured as follows:
 
 >[!NOTE]
 >
->If the specified value doesn't comply with the Validate rule, you can display a validation message to the user. You can specify the message in the **[!UICONTROL Script validation message]** field in the component properties in the sidebar.
+>If the specified value does not comply with the Validate rule, you can display a validation message to the user. You can specify the message in the **[!UICONTROL Script validation message]** field in the component properties in the sidebar.
 
 ![Script-validation](assets/script-validation.png)
 
@@ -366,7 +373,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. Done and cancel buttons {#done-and-cancel-buttons}
 
-The **[!UICONTROL Done]** button is used to save a rule. You can save an incomplete rule. However, incomplete are invalid and don't execute. Saved rules on a form object are listed when you launch the rule editor next time from the same form object. You can manage existing rules in that view. For more information, see [Manage rules](rule-editor.md#p-manage-rules-p).
+The **[!UICONTROL Done]** button is used to save a rule. You can save an incomplete rule. However, incomplete are invalid and do not run. Saved rules on a form object are listed when you launch the rule editor next time from the same form object. You can manage existing rules in that view. For more information, see [Manage rules](rule-editor.md#p-manage-rules-p).
 
 The **[!UICONTROL Cancel]** button discards any changes you made to a rule and closes the rule editor.
 
@@ -588,7 +595,7 @@ Supported `jsdoc` tags:
       /**
       * @function myTestFunction
       * @this currentComponent
-      * @param {scope} scope in which code inside function will be executed.
+      * @param {scope} scope in which code inside function is run.
       */
       myTestFunction = function (scope) {
          if(this.value == "O"){

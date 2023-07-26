@@ -63,7 +63,7 @@ The following table lists the synchronization actions that are provided out-of-t
 |`contentDelete`|This action deletes nodes of the Live Copy that do not exist on the source. [Configure the **CQ MSM Content Delete Action** service](#excluding-properties-and-node-types-from-synchronization) to specify the node types, paragraph items, and page properties to exclude.||
 |`contentUpdate`|This action updates the Live Copy content with the changes from the source. [Configure the **CQ MSM Content Update Action** service](#excluding-properties-and-node-types-from-synchronization) to specify the node types, paragraph items, and page properties to exclude.||
 |`editProperties`|This action edits properties of the Live Copy. The `editMap` property determines which properties are edited and their value. The value of the `editMap` property must use the following format:<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` and `new_value` are regular expressions and `n` is an incremented integer.<br>For example, consider the following value for `editMap`:<br>`sling:resourceType#/(contentpage`&#8214;`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>This value edits the properties of the Live Copy nodes as follows:<br>The `sling:resourceType` properties that are either set to `contentpage` or to `homepage` are set to `mobilecontentpage`.<br>The `cq:template` properties that are set to `contentpage` are set to `mobilecontentpage`.|`editMap: (String)` identifies the property, the current value, and the new value. See the description for more information.|
-|`notify`|This action sends a page event that the page has been rolled out. In order to be notified, one needs to first subscribe to rollout events.||
+|`notify`|This action sends a page event that the page has been rolled out. To be notified, one needs to first subscribe to rollout events.||
 |`orderChildren`|This action orders the child nodes based on the order on the blueprint.||
 |`referencesUpdate`|This synchronization action updates references on the Live Copy.<br>It searches for paths in the Live Copy pages that point to a resource within the blueprint. When found, it updates the path to point to the related resource inside the Live Copy. References that have targets outside the blueprint are not changed. <br>[Configure the **CQ MSM References Update Action** service](#excluding-properties-and-node-types-from-synchronization) to specify the node types, paragraph items, and page properties to exclude.||
 |`targetVersion`|This action creates a version of the Live Copy.<br>This action must be the only synchronization action included in a rollout configuration.||
@@ -117,7 +117,7 @@ The following table describes the properties that you can configure:
 
 Several properties and node types are excluded by default, these are defined in the OSGi configuration of **CQ MSM Content Update Action**, under **Excluded Page Properties**.
 
-By default properties matching the following regular expressions are excluded (i.e. not updated) on rollout:
+By default properties matching the following regular expressions are excluded (that is, not updated) on rollout:
 
 ![Live Copy exclusion regexes](../assets/live-copy-exclude.png)
 
@@ -190,7 +190,7 @@ Note that the child pages of the blueprint page inherit the configuration. When 
 1. Use the **Sites** console to select the root page of the blueprint.
 1. Select **Properties** from the toolbar.
 1. Open the **Blueprint** tab.
-1. Select one or more **Rollout Configurations** using the drop down selector.
+1. Select one or more **Rollout Configurations** using the drop-down selector.
 1. Persist your updates with **Save**.
 
 ### Setting the System Default Rollout Configuration {#setting-the-system-default-rollout-configuration}

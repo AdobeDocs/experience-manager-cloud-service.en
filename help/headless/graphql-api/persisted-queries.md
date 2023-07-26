@@ -1,6 +1,6 @@
 ---
 title: Persisted GraphQL queries
-description: Learn how to to persist GraphQL queries in Adobe Experience Manager as a Cloud Service to optimize performance. Persisted queries can be requested by client applications using HTTP GET method and the response can be cached at the dispatcher and CDN layers, ultimately improving the performance of the client applications.
+description: Learn how to persist GraphQL queries in Adobe Experience Manager as a Cloud Service to optimize performance. Persisted queries can be requested by client applications using HTTP GET method and the response can be cached at the dispatcher and CDN layers, ultimately improving the performance of the client applications.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 ---
@@ -12,7 +12,7 @@ Persisted queries are GraphQL queries that are created and stored on the Adobe E
 >
 >Persisted Queries are recommended. See [GraphQL Query Best Practices (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) for details, and the related Dispatcher configuration.
 
-The [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) is available in AEM for you to develop, test, and persist your GraphQL queries, before [transferring to your production environment](#transfer-persisted-query-production). For cases that need customization (for example, when [customizing the cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) you can use the API; see the curl example provided in [How to persist a GraphQL query](#how-to-persist-query).
+The [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) is available in AEM for you to develop, test, and persist your GraphQL queries, before [transferring to your production environment](#transfer-persisted-query-production). For cases that need customization (for example, when [customizing the cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) you can use the API; see the cURL example provided in [How to persist a GraphQL query](#how-to-persist-query).
 
 ## Persisted Queries and Endpoints {#persisted-queries-and-endpoints}
 
@@ -32,9 +32,9 @@ Persisted queries must always use the endpoint related to the [appropriate Sites
 
 For example, if there is a particular query called `my-query`, which uses a model `my-model` from the Sites configuration `my-conf`:
 
-* You can create a query using the `my-conf` specific endpoint, and then the query will be saved as following: 
+* You can create a query using the `my-conf` specific endpoint, and then the query is saved as following: 
 `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* You can create the same query using `global` endpoint, but then the query will be saved as following:
+* You can create the same query using `global` endpoint, but then the query is saved as following:
 `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
@@ -50,10 +50,10 @@ It is recommended to persist queries on an AEM author environment initially and 
 There are various methods of persisting queries, including:
 
 * GraphiQL IDE - see [Saving Persisted Queries](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (preferred method)
-* curl - see the following example
+* cURL - see the following example
 * Other tools, including [Postman](https://www.postman.com/)
 
-The GraphiQL IDE is the **preferred** method for persisting queries. To persist a given query using the **curl** command line tool:
+The GraphiQL IDE is the **preferred** method for persisting queries. To persist a given query using the **cURL** command line tool:
 
 1. Prepare the query by PUTing it to the new endpoint URL `/graphql/persist.json/<config>/<persisted-label>`.
 
@@ -190,7 +190,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 Where `PERSISTENT_PATH` is a shortened path to where the Persisted query is saved.
 
-1. For example `wknd` is the configuration name and `plain-article-query` is the name of the Persisted query. To execute the query:
+1. For example, `wknd` is the configuration name and `plain-article-query` is the name of the Persisted query. To execute the query:
 
    ```shell
    $ curl -X GET \
@@ -222,7 +222,7 @@ The pattern looks like the following:
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-For example the following query contains a variable `activity` to filter a list based on an activity value:
+For example, the following query contains a variable `activity` to filter a list based on an activity value:
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -255,46 +255,146 @@ Note that `%3B` is the UTF-8 encoding for `;` and `%3D` is the encoding for `=`.
 
 ## Caching your persisted queries {#caching-persisted-queries}
 
-Persisted queries are recommended as they can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application.
+Persisted queries are recommended as they can be cached at the [Dispatcher](/help/headless/deployment/dispatcher.md) and Content Delivery Network (CDN) layers, ultimately improving the performance of the requesting client application.
 
-By default AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL). 
+By default AEM will invalidate cache based on a Time To Live (TTL) definition. These TTLs can be defined by the following parameters. These parameters can be accessed by various means, with variations in the names according to the mechanism used:
 
-This value is set to:
+|Cache Type |[HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control) |cURL |OSGi Configuration |Cloud Manager |
+|--- |--- |--- |--- |--- |
+|Browser |`max-age` |`cache-control : max-age` |`cacheControlMaxAge` |`graphqlCacheControl` |
+|CDN |`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |`graphqlSurrogateControl` |60 |
+|CDN |`stale-while-revalidate` |`surrogate-control : stale-while-revalidate `|`surrogateControlStaleWhileRevalidate` |`graphqlStaleWhileRevalidate` |
+|CDN |`stale-if-error` |`surrogate-control : stale-if-error` |`surrogateControlStaleIfError` |`graphqlStaleIfError` |
 
-* 7200 seconds is the default TTL for the Dispatcher and CDN; also known as *shared caches*
-  * default: s-maxage=7200
-* 60 is the default TTL for the client (for example, a browser)
-  * default: maxage=60
+{style="table-layout:auto"}
 
-If you want to change the TTL for your GraphLQ query, then the query must be either:
+### Author instances {#author-instances}
 
-* persisted after managing the [HTTP Cache headers - from the GraphQL IDE](#http-cache-headers)
-* persisted using the [API method](#cache-api). 
+For author instances the default values are:
 
-### Managing HTTP Cache Headers in GraphQL  {#http-cache-headers-graphql}
+* `max-age`  : 60
+* `s-maxage` : 60
+* `stale-while-revalidate` : 86400
+* `stale-if-error` : 86400
+
+These:
+
+* cannot be overwritten:
+  * with an OSGi configuration
+* can be overwritten:
+  * by a request that defines HTTP header settings using cURL; it should include suitable settings for `cache-control` and/or `surrogate-control`; for examples, see [Managing Cache at the Persisted Query Level](#cache-persisted-query-level)
+  * if you specify values in the **Headers** dialog of the [GraphiQL IDE](#http-cache-headers-graphiql-ide)
+
+### Publish instances {#publish-instances}
+
+For publish instances the default values are:
+
+* `max-age`  : 60
+* `s-maxage` : 7200
+* `stale-while-revalidate` : 86400
+* `stale-if-error` : 86400
+
+These can be overwritten:
+
+* [from the GraphQL IDE](#http-cache-headers-graphiql-ide)
+
+* [at the Persisted Query Level](#cache-persisted-query-level); this involves posting the query to AEM using cURL in your command line interface, and publishing the Persisted Query.
+
+* [with Cloud Manager variables](#cache-cloud-manager-variables)
+
+* [with an OSGi configuration](#cache-osgi-configration)
+
+### Managing HTTP Cache Headers in the GraphiQL IDE {#http-cache-headers-graphiql-ide}
 
 The GraphiQL IDE - see [Saving Persisted Queries](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
 
-### Managing Cache from the API {#cache-api}
+### Managing Cache at the Persisted Query Level {#cache-persisted-query-level}
 
-This involves posting the query to AEM using CURL in your command line interface. 
+This involves posting the query to AEM using cURL in your command line interface. 
 
-For an example:
+For an example of the PUT (create) method:
 
-```xml
-curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-    -H "Content-Type: application/json" \
-    "https://publish-p123-e456.adobeaemcloud.com/graphql/persist.json/wknd/plain-article-query-max-age" \
-    -d \
-'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```bash
+curl -u admin:admin -X PUT \
+--url "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+--header "Content-Type: application/json" \
+--data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-The `cache-control` can be set at the creation time (PUT) or later on (for example, via a POST request for instance). The cache-control is optional when creating the persisted query, as AEM can provide the default value. See [How to persist a GraphQL query](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), for an example of persisting a query using curl.
+For an example of the POST (update) method:
+
+```bash
+curl -u admin:admin -X POST \
+--url "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+--header "Content-Type: application/json" \
+--data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
+```
+
+The `cache-control` can be set at the creation time (PUT) or later on (for example, via a POST request for instance). The cache-control is optional when creating the persisted query, as AEM can provide the default value. See [How to persist a GraphQL query](#how-to-persist-query), for an example of persisting a query using cURL.
+
+### Managing Cache with Cloud Manager variables {#cache-cloud-manager-variables}
+
+[Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md) can be defined with Cloud Manager to define the required values:
+
+| Name | Value | Service Applied | Type | 
+|--- |--- |--- |--- |
+|`graphqlStaleIfError` |86400 | *as appropriate* | *as appropriate* |
+|`graphqlSurrogateControl` |600 | *as appropriate* | *as appropriate* |
+
+{style="table-layout:auto"}
+
+### Managing Cache with an OSGi configuration {#cache-osgi-configration}
+
+To manage the cache globally, you can [configure the OSGi settings](/help/implementing/deploying/configuring-osgi.md) for the **Persisted Query Service Configuration**.
+
+>[!NOTE]
+>
+>For cache control, the OSGi configuration is only appropriate for publish instances. The configuration exists on author instances, but is ignored.
+
+>[!NOTE]
+>
+>The **Persisted Query Service Configuration** is also used for [configuring the query response code](#configuring-query-response-code).
+
+The default OSGi configuration for publish instances:
+
+* reads the Cloud Manager variables if available: 
+
+  | OSGi Configuration Property | reads this | Cloud Manager Variable |
+  |--- |--- |--- |
+  | `cacheControlMaxAge` | reads | `graphqlCacheControl`|
+  | `surrogateControlMaxAge` | reads | `graphqlSurrogateControl` |
+  | `surrogateControlStaleWhileRevalidate` | reads | `graphqlStaleWhileRevalidate` |
+  | `surrogateControlStaleIfError` | reads | `graphqlStaleIfError` |
+
+  {style="table-layout:auto"}
+
+* and if not available, the OSGi configuration uses the [default values for publish instances](#publish-instances).
+
+## Configuring the query response code {#configuring-query-response-code}
+
+By default the `PersistedQueryServlet` sends a `200` response when it executes a query, regardless of the actual result.
+
+You can [configure the OSGi settings](/help/implementing/deploying/configuring-osgi.md) for the **Persisted Query Service Configuration** to control which status code is returned by the `/execute.json/persisted-query` endpoint, when there is an error in the persisted query.
+
+>[!NOTE]
+>
+>The **Persisted Query Service Configuration** is also used for [managing cache](#cache-osgi-configration).
+
+The field `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) can be defined as required:
+
+* `false` (default value):
+  It does not matter whether the persisted query is successful or not. The `/execute.json/persisted-query` returns the status code `200` and the `Content-Type` header returned is `application/json`.
+
+* `true`:
+  The endpoint will return `400` or `500` as appropriate when there is any form of error upon running the persisted query. Also, the returned `Content-Type` is `application/graphql-response+json`.
+
+  >[!NOTE]
+  >
+  >For further details see https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 
-For use by an application, any special characters used when constructing query variables (i.e semicolons (`;`), equal sign (`=`), slashes `/`) must be converted to use the corresponding UTF-8 encoding.
+For use by an application, any special characters used when constructing query variables (that is, semicolons (`;`), equal sign (`=`), slashes `/`) must be converted to use the corresponding UTF-8 encoding.
 
 For example:
 
@@ -336,7 +436,7 @@ To create a Package:
 1. Create a new package by tapping **Create Package**. This will open a dialog to define the Package.
 1. In the Package Definition Dialog, under **General** enter a **Name** like "wknd-persistent-queries".
 1. Enter a version number like "1.0".
-1. Under **Filters** add a new **Filter**. Use the Path Finder to select the `persistentQueries` folder beneath the configuration. For example for the `wknd` configuration the full path will be `/conf/wknd/settings/graphql/persistentQueries`.
+1. Under **Filters** add a new **Filter**. Use the Path Finder to select the `persistentQueries` folder beneath the configuration. For example, for the `wknd` configuration, the full path is `/conf/wknd/settings/graphql/persistentQueries`.
 1. Tap **Save** to save the new Package definition and close the dialog.
 1. Tap the **Build** button in the newly created Package definition.
 

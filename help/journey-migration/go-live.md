@@ -22,11 +22,11 @@ In the previous phases of the journey:
 
 ## Objective {#objective}
 
-This document will help you understand how to perform the migration to AEM as a Cloud Service once you are familiar with the previous steps of the journey. You will learn how to perform the initial production migration as well as the best practices to follow when migrating to AEM as a Cloud Service.
+This document helps you understand how to perform the migration to AEM as a Cloud Service once you are familiar with the previous steps of the journey. You learn how to perform the initial production migration and the best practices to follow when migrating to AEM as a Cloud Service.
 
 ## Initial Production Migration {#initial-migration}
 
-Before you can perform the production migration, please follow the fitment and proof of migration steps outlined in the [Content migration strategy and timeline](/help/journey-migration/implementation.md##strategy-timeline) section of the [Implementation phase](/help/journey-migration/implementation.md).
+Before you can perform the production migration, follow the fitment and proof of migration steps outlined in the [Content migration strategy and timeline](/help/journey-migration/implementation.md##strategy-timeline) section of the [Implementation phase](/help/journey-migration/implementation.md).
 
 * Initiate the migration from production based on the experience you gained during the AEM as a Cloud Service stage migration performed on clones:
   * Author-Author
@@ -53,7 +53,7 @@ As mentioned previously, you will have to schedule a code and content freeze per
 * How long do I have to freeze content authoring activities?
 * For how long should I ask my delivery team to stop adding new features?
 
-To answer the first question, you should consider the time it has taken to perform trial runs in non-production environments. To answer the second question, you need close collaboration between the team who is adding new features and the team refactoring the code. The goal should be to make sure all the code that is added to the existing deployment is also added, tested, and deployed to the cloud services branch. Generally speaking, this means that the amount of code freeze will be lower. 
+To answer the first question, you should consider the time it has taken to perform trial runs in non-production environments. To answer the second question, you need close collaboration between the team who is adding new features and the team refactoring the code. The goal is to make sure all the code that is added to the existing deployment is also added, tested, and deployed to the cloud services branch. Generally, it means that the amount of code freeze is lower. 
 
 Additionally, you need to plan for a content freeze when the final content top-up is scheduled.
 
@@ -75,12 +75,12 @@ Make sure that when going live, you run the content migration on production inst
 
 When performing the production migration you should avoid running the Content Transfer Tool from a clone because:
 
-* If a customer requires content versions to be migrated during top-up migrations, then executing the Content Transfer Tool from a clone does not migrate the versions. Even if the clone is recreated from live author frequently, each time a clone is created the checkpoints that will be used by the Content Transfer Tool to calculate the deltas will be reset.
+* If a customer requires content versions to be migrated during top-up migrations, then executing the Content Transfer Tool from a clone does not migrate the versions. Even if the clone is recreated from live author frequently, each time a clone is created, the checkpoints that are used by the Content Transfer Tool to calculate the deltas are reset.
 * Since a clone cannot be refreshed as a whole, the ACL Query package must be used to package and install the content being added or edited from production to clone. The problem with this approach is that any deleted content on the source instance will never get to the clone unless it is manually deleted from both source and clone. This introduces the possibility that the deleted content on production will not be deleted on the clone and AEM as a Cloud Service.
 
 **Optimizing the load on your AEM source while performing the content migration**
 
-Remember, the load on the AEM source will be greater during the extraction phase. You should be aware that:
+Remember, the load on the AEM source is greater during the extraction phase. You should be aware that:
 
 * The Content Transfer Tool is an external Java process that uses a JVM Heap of 4 GB
 * The non-AzCopy version downloads binaries, stores them on a temporary space on the source AEM author, consuming disk I/O, then uploads into the Azure container which consumes network bandwidth
@@ -89,10 +89,10 @@ Remember, the load on the AEM source will be greater during the extraction phase
 
 ## Known Limitations {#known-limitations}
 
-Please take into account that the entire ingestion fails if any of the following limitations are found as part of the extracted migration set:
+Take into account that the entire ingestion fails if any of the following limitations are found as part of the extracted migration set:
 
 * A JCR Node that has a name longer than 150 characters
-* A JCR Node that is bigger than 16 MB
+* A JCR Node that is larger than 16 MB
 * Any User / Group with `rep:AuthorizableID` being ingested that is already present on AEM as a Cloud Service
 * If any asset that is extracted and ingested moves into a different path either on source or destination before the next iteration of the migration.
 
@@ -101,20 +101,20 @@ Please take into account that the entire ingestion fails if any of the following
 Compared to the section above the ingestion **does not** fail due to the following asset concerns. However, it is highly recommended you take the appropriate steps in these scenarios:
 
 * Any asset that has the original rendition missing
-* Any folder that has a missing `jcr:content` node
+* Any folder that has a missing `jcr:content` node.
 
-Both of the above items will be identified and reported in the [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) report.
+Both of the above items are identified and reported in the [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) report.
 
 ## Go-Live Checklist {#Go-Live-Checklist}
 
-Please review this list of activities to ensure that you perform a smooth and successful migration.
+Review this list of activities to ensure that you perform a smooth and successful migration.
 
 * Run an end-to-end production pipeline with functional and UI testing to ensure an **always current** AEM product experience. See the following resources.
   * [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)
   * [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
   * [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
 * Migrate content to production and make sure that a relevant subset is available on staging for testing.
-  * Please note that DevOps best practices for AEM imply that code moves up from development to the production environment while content moves down from production environments.
+  * DevOps best practices for AEM imply that code moves up from development to the production environment while content moves down from production environments.
 * Schedule a code and content freeze period.
   * Also see the section [Code and Content Freeze Timelines for the Migration](#code-content-freeze)
 * Perform the final content top-up.
@@ -147,7 +147,7 @@ Please review this list of activities to ensure that you perform a smooth and su
     * If you have a very high TTL, updates to your DNS record will take longer to propagate. 
 * Run performance and security tests that meet your business requirements and objectives.
 * Cut over and make sure that the actual go-live is performed without any new deployment or content update.
-* Create Admin Console user Notification Groups. See [User Groups for Notifications](/help/journey-onboarding/user-groups.md)
+* Create Admin Console user Notification Profiles. See [Notification Profiles](/help/journey-onboarding/notification-profiles.md)
 
 You can always reference the list in case you need to recalibrate your tasks while performing the migration.
 

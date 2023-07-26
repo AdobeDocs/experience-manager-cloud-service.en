@@ -8,9 +8,9 @@ exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
 ---
 # Add Dynamic Media Assets to pages{#adding-dynamic-media-assets-to-pages}
 
-To add the Dynamic Media functionality to assets you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. You enter Layout mode and enable the Dynamic Media components. Then you add these components to the page and add assets to the component. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
+To add the Dynamic Media functionality to assets that you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. You enter Layout mode and enable the Dynamic Media components. Then you add these components to the page and add assets to the component. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
 
-You add Dynamic Media assets directly to the page if you are using [!DNL Adobe Experience Manager] as your WCM. If you are using a third party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. For a responsive third-party website, see [delivering optimized images to a responsive site](/help/assets/dynamic-media/responsive-site.md).
+You add Dynamic Media assets directly to the page if you are using [!DNL Adobe Experience Manager] as your WCM. If you are using a third-party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. For a responsive third-party website, see [delivering optimized images to a responsive site](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
@@ -215,7 +215,7 @@ You can edit the following Dynamic Media Settings by selecting **[!UICONTROL Edi
 
 Use the Dynamic Media component to add Smart Crop image assets to your web pages. When you edit the component, you can choose to use a predefined video viewer preset for playing the video on the page.
 
-See [Use Smart Crop with Experience Manager Assets Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html#dynamic-media)
+See [Use Smart Crop with Experience Manager Assets Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html)
 
 See also [Image Profiles](/help/assets/dynamic-media/image-profiles.md).
 
@@ -350,9 +350,9 @@ See [HTTP2 Delivery of Content](/help/assets/dynamic-media/http2faq.md) for comp
 
 >[!MORELIKETHIS]
 >
->* [Use the Video Player in Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html#dynamic-media)
->* [Use Interactive Video with Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
->* [Understand the Asset Viewer with Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html#dynamic-media)
->* [Use Custom Video Thumbnail with Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html#dynamic-media)
->* [Understand Color Management with Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html#dynamic-media)
->* [Use Image Sharpening with Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)
+>* [Use the Video Player in Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html)
+>* [Use Interactive Video with Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-interactive-video-feature-video-use.html)
+>* [Understand the Asset Viewer with Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html)
+>* [Use Custom Video Thumbnail with Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Understand Color Management with Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html#dynamic-media)
+>* [Use Image Sharpening with Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html)

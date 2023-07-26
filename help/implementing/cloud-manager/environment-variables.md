@@ -28,13 +28,13 @@ Typical use cases for using environment variables include:
 
 >[!NOTE]
 >
->You must be a member of the [**Deployment Manager** role](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) in order to add or modify environment variables.
+>You must be a member of the [**Deployment Manager** role](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) to add or modify environment variables.
 
 1. Log into Adobe Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Cloud Manager lists the various programs available. Select the one you wish to manage.
 1. Select the **Environments** tab for the chosen program then select the environment for which you want to create an environment variable in the left navigation panel.
 1. Within the detail of the environment, select the **Configuration** tab then select **Add** to open the **Environment Configuration** dialog. 
-   * If you're adding an environment variable for the first time, you will see an **Add Configuration** button in the center of the page. You can use this button or **Add** to open the **Environment Configuration** dialog.
+   * If you are adding an environment variable for the first time, you will see an **Add Configuration** button in the center of the page. You can use this button or **Add** to open the **Environment Configuration** dialog.
 
    ![Configuration tab](assets/configuration-tab.png)
 
@@ -53,7 +53,7 @@ Typical use cases for using environment variables include:
 
 1. Select **Save** to persist your variables.
 
-An indicator with the status **Updating** is shown at the top of the table and next to the newly added variable to indicate that the environment is being updated with the configuration. Once complete, the new environment variable will be visible in the table.
+An indicator with the status **Updating** is shown at the top of the table and next to the newly added variable to indicate that the environment is being updated with the configuration. After completion, the new environment variable is visible in the table.
 
 ![Updating variables](assets/updating-variables.png)
 
@@ -82,9 +82,9 @@ After you have created environment variables, you can update them using the **Ad
 
    ![Edit variable](assets/edit-variable.png)
 
-1. Once you've made all of the required configuration changes, select **Save**.
+1. After you have made all of the required configuration changes, select **Save**.
 
-[As when adding variables,](#add-variables) an indicator with the status **Updating** is shown at the top of the table and next to the newly updated variable(s) to indicate that the environment is being updated with the configuration. Once complete, the updated environment variable(s) will be visible in the table.
+[As when adding variables,](#add-variables) an indicator with the status **Updating** is shown at the top of the table and next to the newly updated variable(s) to indicate that the environment is being updated with the configuration. After completion, the updated environment variables are visible in the table.
 
 >[!TIP]
 >
@@ -122,8 +122,8 @@ However environment variables can not be used in `IfDefine` directives.
 
 ### OSGi Configurations {#osgi}
 
-Both regular environment variables and secrets can be used in [OSGi configurations.](/help/implementing/deploying/configuring-osgi.md)
+Both regular environment variables and secrets can be used in [OSGi configurations](/help/implementing/deploying/configuring-osgi.md).
 
 ### Pipeline Variables {#pipeline}
 
-In addition to environment variables, there are also pipeline variables, which are exposed during the build phase. [Learn more about pipeline variables here.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
+In addition to environment variables, there are also pipeline variables, which are exposed during the build phase. [Learn more about pipeline variables here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).

@@ -6,6 +6,11 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 ---
 # Forms-centric AEM Workflows - Step Reference {#forms-centric-workflow-on-osgi-step-reference}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html)                  |
+| AEM as a Cloud Service     | This article            |
+
 You use workflow models to convert a business logic to automated repetitive process. A model helps you define and execute a series of steps. You can also define model properties, such as whether the workflow is transient or uses multiple resources. You can [include various AEM Workflow steps in a model to achieve the business logic](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).   
 
 ## Forms-centric steps {#forms-workflow-steps}
@@ -156,15 +161,15 @@ You can also use the component to control the behavior of the task. For example,
 
 ## Convert to PDF/A step {#convert-pdfa}
 
-PDF/A is an archival format for long-term preservation of the document’s content, by embedding the fonts and uncompressing the file. As a result, a PDF/A document is typically larger than a standard PDF document. You can use the ***Convert to PDF/A*** step in an AEM Workflow to convert your PDF documents to PDF/A format. 
+PDF/A is an archival format for long-term preservation of the document's content, by embedding the fonts and uncompressing the file. As a result, a PDF/A document is typically larger than a standard PDF document. You can use the ***Convert to PDF/A*** step in an AEM Workflow to convert your PDF documents to PDF/A format. 
 
 The convert to PDF/A step has following properties:
 
 **[!UICONTROL Input Document]**: The input document can be relative to the payload, have an absolute path, can be provided as payload or stored in a variable of Document data type.
 
 **[!UICONTROL Conversion Options]**: Using this property, the settings for converting PDF documents to PDF/A documents are specified. Various options available under this tab are:
-* **[!UICONTROL Compliance]**: Specifies the standard to which the output PDF/A document must comply. It supports different PDF standards such as PDF/A-1b, PDF/A-2b or PDF/A-3b.
-* **[!UICONTROL Result Level]**: Specifies the result level as PassFail, Summary or Detailed, for the conversion output.
+* **[!UICONTROL Compliance]**: Specifies the standard to which the output PDF/A document must comply. It supports different PDF standards such as PDF/A-1b, PDF/A-2b, or PDF/A-3b.
+* **[!UICONTROL Result Level]**: Specifies the result level as PassFail, Summary, or Detailed, for the conversion output.
 * **[!UICONTROL Color Space]**: Specifies the predefined color space as S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED or SWOP, that can be used for output PDF/A files. 
 * **[!UICONTROL Optional Content]**: Allow specific graphic objects and/or annotations to be visible in output PDF/A document, only when a specified set of criteria is met.
 
@@ -175,7 +180,7 @@ The convert to PDF/A step has following properties:
 
 Use the email step to send an email, for example an email with a Document of Record, link of an Adaptive Form <!-- , link of an interactive communication-->, or with an attached PDF document. Send Email step supports [HTML email](https://en.wikipedia.org/wiki/HTML_email). HTML emails are responsive and adapt to the recipients' email client and screen size. You can use an HTML email template to define appearance, color-scheme, and behavior of the email.
 
-The email step uses Day CQ Mail Service to send emails. Before using the email step, ensure that the email service is configured. Email support only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email) to enable ports for sending emails and to enable SMTP protocol for your environment. The restriction helps improve security of the platform.
+The email step uses Day CQ Mail Service to send emails. Before using the email step, ensure that the email service is configured. Email support only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) to enable ports for sending emails and to enable SMTP protocol for your environment. The restriction helps improve security of the platform.
 
 The email step has the following properties:
 
@@ -205,7 +210,7 @@ The email step has the following properties:
 
 * **[!UICONTROL Image]**: Use the option to embed an image to the email. After selecting the option, browse and choose the image. The image option is available only for the image tags (&lt;img src="&#42;"/&gt;) available in the email template.
 
-**[!UICONTROL Sender’s / Recipient's Email Address]**: Select the **[!UICONTROL Literal]** option to manually specify an email address or select the **[!UICONTROL Retrieve from Workflow metadata]** option to retrieve the email address from a metadata property. You can also specify a list of metadata property arrays for the **[!UICONTROL Retrieve from Workflow metadata]** option. Select the **[!UICONTROL Variable]** option to retrieve the e-mail address from the value stored in a variable of string data type.
+**[!UICONTROL Sender's / Recipient's Email Address]**: Select the **[!UICONTROL Literal]** option to manually specify an email address or select the **[!UICONTROL Retrieve from Workflow metadata]** option to retrieve the email address from a metadata property. You can also specify a list of metadata property arrays for the **[!UICONTROL Retrieve from Workflow metadata]** option. Select the **[!UICONTROL Variable]** option to retrieve the e-mail address from the value stored in a variable of string data type.
 
 * **[!UICONTROL File Attachment]**: The asset available at the specified location is attached to the email. The path of the asset can be relative to the payload or absolute path. An example path is [Payload_Directory]/attachments/.
 
@@ -232,22 +237,22 @@ If you specify the path of a folder, for example, attachments, all the files dir
 
 **[!UICONTROL Save Generated Document of Record using below options]**: Specify the location to keep a Document of Record file. You can choose to overwrite the payload folder, place Document of Record at a location within the payload directory, or store the Document of Record in a variable of Document data type.
 
-**[!UICONTROL Locale]**: Specify the language of the Document of Record. Select **[!UICONTROL Literal]** to select the locale from a drop-down list or select **[!UICONTROL Variable]** to retrieve the locale from the value stored in a variable of string data type. You must define the locale code while storing the value for the locale in a variable. For example, specify **en_US** for English and **fr_FR** for French.
+**[!UICONTROL Locale]**: Specify the language of the Document of Record. Select **[!UICONTROL Literal]** to select the locale from a drop-down list or select **[!UICONTROL Variable]** to retrieve the locale from the value stored in a variable of string data type. Define the locale code while storing the value for the locale in a variable. For example, specify **en_US** for English and **fr_FR** for French.
 
 ## Invoke DDX step {#invokeddx}
 
-Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX defines a set of operations, which can be applied on one or more input documents to generate one or more output documents.  A single DDX can be used with a range of source documents. You can use the ***Invoke DDX step*** in an AEM Workflow to perform various operations, like Assembling Disassembling documents, Creating, and modifying Acrobat and XFA Forms, and other described in [DDX Reference documentation](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).                    
+Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX defines a set of operations, which can be applied on one or more input documents to generate one or more output documents. A single DDX can be used with a range of source documents. You can use the ***Invoke DDX step*** in an AEM Workflow to perform various operations, like Assembling Disassembling documents, Creating, and modifying Acrobat and XFA Forms, and other described in [DDX Reference documentation](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).                    
 
 Invoke DDX step has the following properties: 
 
 **[!UICONTROL Input Documents]**: Used to set properties of an input document. Various options available under this tab are:
 * **[!UICONTROL Specify DDX Using]**: Specifies the input document relative to the payload, have an absolute path, can be provided as payload, or stored in a variable of Document data type.
-* **[!UICONTROL Create Map from Payload]**: Add all the documents under the payload folder to Input Document’s Map for the invoke API in Assembler. The node name for each document is used as a key in the map.
-* **[!UICONTROL Input Document’s Map]**: Option is used to add multiple entries using **[!UICONTROL ADD]** button. Each entry represents the document’s key in the map and the document's source.
+* **[!UICONTROL Create Map from Payload]**: Add all the documents under the payload folder to Input Document's Map for the invoke API in Assembler. The node name for each document is used as a key in the map.
+* **[!UICONTROL Input Document's Map]**: Option is used to add multiple entries using **[!UICONTROL ADD]** button. Each entry represents the document's key in the map and the document's source.
 
 **[!UICONTROL Environment Options]**: This option is used to set processing settings for invoke API. Various options available under this tab are:
 * **[!UICONTROL Validate Only]**: Checks the validity of the input DDX document.
-* **[!UICONTROL Fail on Error]**: Boolean value to indicate  whether the invoke API service fails, in case of an error or not. By default, its value is set to False.
+* **[!UICONTROL Fail on Error]**: Boolean value to indicate whether the invoke API service fails, if there is an error or not. By default, its value is set to False.
 * **[!UICONTROL First Bates Number]**: Specifies the number, which is self-incrementing. This self-incrementing number is displayed on each consecutive page automatically.  
 * **[!UICONTROL Default Style]**: Sets the default style for the output file.
 
@@ -257,7 +262,7 @@ Invoke DDX step has the following properties:
 
 **[!UICONTROL Output Documents]**: Specifies the location to save the output file. Various options available under this tab are:
 * **[!UICONTROL Save Output in Payload]**: Saves output documents under the payload folder, or overwrites the payload, in case, the payload is a file.
-* **[!UICONTROL Output Document’s Map]**: Specifies the location to save each document file explicitly, by adding one entry per document. Each entry represents the document and the location, where to save it. If there are multiple output documents, this option is used.   
+* **[!UICONTROL Output Document's Map]**: Specifies the location to save each document file explicitly, by adding one entry per document. Each entry represents the document and the location, where to save it. If there are multiple output documents, this option is used.   
 
 ## Invoke Form Data Model Service step {#invoke-form-data-model-service-step}
 
@@ -480,14 +485,14 @@ Encrypt, Sign, and certify a document. [!DNL AEM Forms] supports both password b
 Send a document directly to a printer. It supports the following printing access mechanisms:
 
 * **[!UICONTROL Direct accessible printer]**: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.
-* **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
+* **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX&reg; printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server's IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
     -->
 
 ## Generate Printed Output Step {#generatePrintedOutput}
 
-The step generates a PCL, PostScript, ZPL, IPL, TPCL, or DPL output given a form design and data file. The data file is merged with the form design and formatted for printing. The output generated by this step can be sent directly to a printer or saved as file. It is recommended that you use this step when you want to use form designs or data from an application. If your form designs or form designs are located on the network, local file system, or HTTP location, use the generatePrintedOutput operation operation.
+The step generates a PCL, PostScript, ZPL, IPL, TPCL, or DPL output given a form design and data file. The data file is merged with the form design and formatted for printing. The output generated by this step can be sent directly to a printer or saved as file. It is recommended that you use this step when you want to use form designs or data from an application. If your form designs are on the network, local file system, or HTTP location, use the generatePrintedOutput operation.
 
-For example, your application requires that you merge a form design with a data file. The data contains hundreds of records. In addition, it requires the output is sent to a printer that supports ZPL. The form design and your input data are located in an application. Use the generatePrintedOutput operation to merge each record with a form design and send the output to a printer that supports ZPL.
+For example, your application requires that you merge a form design with a data file. The data contains hundreds of records. In addition, it requires the output is sent to a printer that supports ZPL. The form design and your input data are in an application. Use the generatePrintedOutput operation to merge each record with a form design and send the output to a printer that supports ZPL.
 
 The Generate Printed Output step has the following properties:
 
@@ -495,11 +500,11 @@ The Generate Printed Output step has the following properties:
 
 * **[!UICONTROL Select template file using]**: Specify the path of the template file. You can select the template file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it. Moreover, you can also accept payload as the input data file.
 
-* **[!UICONTROL Select data document using]**: Specify the path of a input data file. You can select the input data file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it.
+* **[!UICONTROL Select data document using]**: Specify the path of an input data file. You can select the input data file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it.
 
 * **[!UICONTROL Printer Format]**: A Print Format value that specifies the page description language to use, when an XDC file is not provided, to generate the output stream. If you provide a literal value, select one of these values:
 
-  * **[!UICONTROL color PCL]**: Use the option to specify a XDC file for PCL.
+  * **[!UICONTROL color PCL]**: Use the option to specify an XDC file for PCL.
   * **[!UICONTROL Generic PostScript]**: Use the option to specify a generic XDC file for PostScript.
   * **[!UICONTROL ZPL 300 DPI]**: Use ZPL 300 DPI. The zpl300.xdc is used.
   * **[!UICONTROL ZPL 600 DPI]**: Use ZPL 600 DPI. The zpl600.xdc file is used.
@@ -515,26 +520,26 @@ The Generate Printed Output step has the following properties:
 
 **[!UICONTROL Output Properties]**
 
-* **[!UICONTROL Save output document using]**: Specify the location to save the output file. You can save the output file at an location  which is relative to the payload, in a variable, or specify an absolute location to save the output file. If the path does not exist in crx-repository, an administrator can create the path before using it.
+* **[!UICONTROL Save output document using]**: Specify the location to save the output file. You can save the output file at a location that is relative to the payload, in a variable, or specify an absolute location to save the output file. If the path does not exist in crx-repository, an administrator can create the path before using it.
 
 **[!UICONTROL Advanced Properties]**
 
-* **[!UICONTROL Select Content Root location using]**: Content root is a string value that specifies the URI, absolute reference, or location in the repository to retrieve relative assets used by the form design. For example, if the form design references an image relatively, such as ../myImage.gif, myImage.gif must be located at repository://. The default value is repository://, which points to the root level of the repository.
+* **[!UICONTROL Select Content Root location using]**: Content root is a string value that specifies the URI, absolute reference, or location in the repository to retrieve relative assets used by the form design. For example, if the form design references an image relatively, such as `../myImage.gif`, `myImage.gif` must be at `repository://`. The default value is `repository://`, which points to the root level of the repository.
 
-  When you pick an asset from your application, the Content Root URI path must have the correct structure. For example, if a form is picked from an application named SampleApp, and is placed at SampleApp/1.0/forms/Test.xdp, the Content Root URI must be specified as repository://administrator@password/Applications/SampleApp/1.0/forms/, or repository:/Applications/SampleApp/1.0/forms/ (when authority is null). When the Content Root URI is specified this way, the paths of all of the referenced assets in the form will be resolved against this URI.
+  When you pick an asset from your application, the Content Root URI path must have the correct structure. For example, if a form is picked from an application named SampleApp, and is placed at `SampleApp/1.0/forms/Test.xdp`, the Content Root URI must be specified as `repository://administrator@password/Applications/SampleApp/1.0/forms/`, or `repository:/Applications/SampleApp/1.0/forms/` (when authority is null). When the Content Root URI is specified this way, the paths of all of the referenced assets in the form are resolved against this URI.
 
 * **[!UICONTROL Select XCI file using]**: XCI files are used to describe fonts and other properties that are used for form design elements. You can keep an XCI file relative to the payload, at an absolute path, or using a variable of Document data type.
 
 * **[!UICONTROL Locale]**: Specifies the language used for generating the PDF document. If you provide a literal value, select a language from the list or select one of these values:
   * **[!UICONTROL To use server default]**:
-    (Default) Use the Locale setting configured on the [!DNL AEM Forms] Server. The Locale setting is configured using Administration Console. (See [Designer Help](http://www.adobe.com/go/learn_aemforms_designer_65).)
+    (Default) Use the Locale setting configured on the [!DNL AEM Forms] Server. The Locale setting is configured using Administration Console. (See [Designer Help](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf).)
 
   * **[!UICONTROL To use custom value]**:
-    Type the Locale code in the literal box or select a string variable containing the locale code. For a complete list of supported locale codes, see http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+    Type the Locale code in the literal box or select a string variable containing the locale code. For a complete list of supported locale codes, see https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Copies]**: An integer value that specifies the number of copies to generate for the output. The default value is 1.
 
-* **[!UICONTROL Duplex Printing]**:  A Pagination value that specifies whether to use two-sided or single-sided printing. Printers that support PostScript and PCL use this value.If you provide a literal value, select one of these values:
+* **[!UICONTROL Duplex Printing]**:  A Pagination value that specifies whether to use two-sided or single-sided printing. Printers that support PostScript and PCL use this value. If you provide a literal value, select one of these values:
     * **[!UICONTROL Duplex Long Edge]**: Use two-sided printing and print using long-edge pagination. 
     * **[!UICONTROL Duplex Short Edge]**: Use two-sided printing and print using short-edge pagination. 
     * **[!UICONTROL Simplex]**: Use single-sided printing.

@@ -8,24 +8,19 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 >[!CONTEXTUALHELP] 
 >id="aemcloud_ctt_overview" 
 >title="Overview" 
->abstract="Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. This tool also transfers principals (users or groups) automatically."
+>abstract="Content Transfer Tool is a tool developed by Adobe that can be used to initiate the migration of existing content from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. This tool also transfers principals (users or groups) automatically."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Guidelines and Best Practices"
 
-The Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. 
+The Content Transfer Tool is a tool developed by Adobe that can be used to initiate the migration of existing content from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. 
 
-This tool also transfers principals (users or groups) automatically. 
+This tool also transfers principals (users or groups) automatically.  See [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) for more information.
 
-A new version of the Content Transfer Tool is available which integrates the content transfer process with Cloud Acceleration Manager. It is highly recommended to switch over to this new version in order to leverage all the benefits it provides:
+The Content Transfer Tool integrates the content transfer process with Cloud Acceleration Manager. This empowers the user with all the benefits it provides:
 
 * Self-service way to extract a migration set once and ingest it into multiple environments in parallel
-* Improved user experience via better loading states, guardrails, and error handling
-* Ingestion logs are persisted and are always available for troubleshooting 
-
-To start using the new version, you will need to uninstall older versions of the Content Transfer Tool because there was a major architectural change in the tool. 
-
->[!NOTE]
->
-> For situations where a migration is already in progress, you may continue using the prior version of CTT until the migration is complete. For documentation related to the prior version of CTT, refer to the [legacy documentation](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
+* Improved user experience via better loading states, guardrails and error handling
+* Ingestion logs are persisted and are always available for troubleshooting
+* Validation and Principal migration reports are available for validating
 
 ## Phases in Content Transfer Tool {#phases-content-transfer-tool}
 
@@ -33,17 +28,17 @@ There are two phases associated with content transfer:
 
 1. **Extraction**:  Extraction refers to extracting content from the source AEM instance into a temporary area called *migration set*. A *migration set* is a cloud storage area provided by Adobe to temporarily store the transferred content between the source AEM instance and the Cloud Service AEM instance. 
 
-   Refer to [Extraction Process in Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html) for more details. 
+   See [Extraction Process in Content Transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) for more details. 
 
     >[!NOTE]
-    > It is recommended to run the User Mapping Tool as part of the Extraction phase. See [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html) for more details.
+    >User Mapping is now run automatically as part of the Extraction phase on author (but can optionally be disabled on author, or enabled on publish). See [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) for more details.
 
 1. **Ingestion**: Ingestion refers to ingesting content from the *migration set* into the target Cloud Service instance. 
 
-   See [Ingestion Process in Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html) for more details.
+   See [Ingestion Process in Content Transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) for more details.
 
 ## Attributes of a Migration Set {#attributes-migration-set}
-  
+ 
 A migration set has the following attributes:
 
 * With the new version, you can create a maximum of five migration sets within a project created in Cloud Acceleration Manager.
@@ -54,10 +49,29 @@ The Content Transfer Tool has a feature that supports differential content top-u
 >[!NOTE]
 >After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service. 
 
-In the extraction phase, to ***top-up*** an existing migration set, the *overwrite* option must be disabled. Refer to [Top Up Extraction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en#top-up-extraction-process) for more details.
+In the extraction phase, to ***top-up*** an existing migration set, the *overwrite* option must be disabled. See [Top Up Extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) for more details.
 
-In the ingestion phase, to apply the delta content on top of the current content, the *wipe* option must be disabled. Refer to [Top Up Ingestion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en#top-up-ingestion-process) for more details.
+In the ingestion phase, to apply the delta content on top of the current content, the *wipe* option must be disabled. See [Top Up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) for more details.
+
+## Migration Set Expiry {#migration-set-expiry}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_migrationset_expiry"
+>title="Expiration of a Migration Set"
+>abstract="Learn about the expiry of a migration set."
+
+All migration sets will eventually expire after a prolonged period of inactivity of approximately 90 days. After indicators are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. The expiry time can easily be extended by acting upon the migration set by:
+
+* editing its description
+* getting its extraction key
+* performing an extraction to it
+* performing an ingestion from it
+
+The expiry of a migration set can be monitored on the Migration Set row. A helpful visual indicator that a migration set is approaching its expiry date also added the project's card.
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
+
 
 ## What's Next {#whats-next}
 
-Once you have learned about Content Transfer Tool and its overview that describes this tool can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance, you must review [Prerequisites for Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).
+Once you have learned about Content Transfer Tool and its overview that describes this tool can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance, you must review [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md).

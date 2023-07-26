@@ -106,6 +106,10 @@ Following are the Annotations that can be applied on a PDF document:
         </tr>
     </table>
 
+>[!NOTE]
+>
+>The annotations that you add to the PDF document are available in the preview mode. However, the annotations are not displayed when you download or print the PDF document. 
+
 ## Support for Multiple Pages Preview for Documents in Other Formats {#multi-format}
 
 In addition to the PDF documents, you can also preview multiple pages for documents in other format types. The supported document format types are TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, and XLSX. Experience Manager Assets automatically converts these document formats into a PDF format and make them available for preview.
@@ -122,3 +126,18 @@ For the multiple page preview of other supported document formats, perform the f
 > * The maximum size of an Asset that you can preview is up to 100 MB.
 > * The maximum size of XLS or XLSX files to preview is 20 MB.
 >
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)

@@ -11,7 +11,7 @@ The Language Copy Wizard is a guided experience for creating and instrumenting m
 
 >[!TIP]
 >
->If you are new to translating content, please refer to our [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
+>If you are new to translating content, see [Sites Translation Journey,](/help/journey-sites/translation/overview.md) which is guided path through translating your AEM Sites content using AEM’s powerful translation tools, ideal for those with no AEM or translation experience.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ To access the wizard:
 
    >[!NOTE]
    >
-   >If you selected multiple languages in the previous step, multiple translation projects will be created.
+   >If you selected multiple languages in the previous step, multiple translation projects are created.
 
    ![Translation step of wizard](../assets/language-copy-wizard-translate.png)
 

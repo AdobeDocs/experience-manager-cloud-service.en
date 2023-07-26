@@ -12,12 +12,6 @@ exl-id: bf358ead-cd39-4284-86d5-5b4ab0cf1ae3
 ---
 # Adobe Developer Console for App Builder
 
->[!IMPORTANT]
->
-> _Adobe Project Firefly, as mentioned in the videos in this series, is now named App Builder_
-
-## Getting started with Adobe Developer Console
-
 Learn what the Adobe Developer Console is, and how to access and navigate it.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339162/?quality=12&learn=on)

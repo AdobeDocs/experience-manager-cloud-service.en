@@ -10,6 +10,11 @@ exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 
 # Use Connected Assets to share DAM assets in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. One reason can be geographically distributed existing deployments that are required to work together. Another reason can be acquisitions leading to heterogenous infrastructure, including different [!DNL Experience Manager] versions, that the parent company wants to use together.
 
 Connected Assets functionality supports the above use cases by integrating [!DNL Experience Manager Sites] and [!DNL Experience Manager Assets]. Users can create web pages in [!DNL Sites] that use the digital assets from a separate [!DNL Assets] deployments.
@@ -20,7 +25,7 @@ Connected Assets functionality supports the above use cases by integrating [!DNL
 
 ## Overview of Connected Assets {#overview-of-connected-assets}
 
-When editing pages in [!UICONTROL Page Editor] as target destination, the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment that acts as a source of assets. The administrators create a one-time integration of a deployment of [!DNL Experience Manager] with [!DNL Sites] capability with another deployment of [!DNL Experience Manager] with [!DNL Assets] capability. You can also use Dynamic Media images in your site's web pages through Connected Assets and leverage the Dynamic Media functionalities, such as smart crop and image presets.
+When editing pages in [!UICONTROL Page Editor] as target destination, the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment that acts as a source of assets. The administrators create a one-time integration of a deployment of [!DNL Experience Manager] with [!DNL Sites] capability with another deployment of [!DNL Experience Manager] with [!DNL Assets] capability. You can also use Dynamic Media images in your site's web pages through Connected Assets and use the Dynamic Media functionalities, such as smart crop and image presets.
 
 For the [!DNL Sites] authors, the remote assets are available as read-only local assets. The functionality supports seamless search and access to remote assets on the Site Editor. For any other use cases that may require the complete asset-corpus to be available on Sites, consider migrating the assets in bulk instead of leveraging Connected Assets.
 
@@ -133,7 +138,7 @@ You can check the connectivity between the configured [!DNL Sites] deployments a
 ## Use Dynamic Media assets {#dynamic-media-assets}
 
 
-With Connected Assets, you can use image assets processed by [!DNL Dynamic Media] from remote DAM deployment on Sites pages, and leverage Dynamic Media functionalities, such as smart crop and image presets.
+With Connected Assets, you can use image assets processed by [!DNL Dynamic Media] from remote DAM deployment on Sites pages, and use Dynamic Media functionalities, such as smart crop and image presets.
 
 To use [!DNL Dynamic Media] with Connected Assets:
 
@@ -239,10 +244,6 @@ Sites authors can preview the available updates on the Sites deployment and then
 
 Experience Manager displays an `expired` status visual indicator on assets in Remote Assets Content Finder to stop site authors from using the asset on a Sites page. If you use an asset with an `expired` status on a Sites page, the asset fails to display on the Experience Manager publish instance. 
 
->[!NOTE]
->
->The updates to assets in remote DAM are made available to the Sites deployment only if remote DAM and Sites deployments are on Experience Manager as a Cloud Service.
-
 ## Frequently Asked Questions {#frequently-asked-questions}
 
 +++**Should  you configure Connected Assets if you need to use assets available on your [!DNL Sites] deployment?**
@@ -309,6 +310,9 @@ You can add assets to the [!DNL Sites] deployment, however, those assets cannot 
 ## Limitations and best practices {#tip-and-limitations}
 
 * To get insights about asset usage, configure the [Assets Insight](/help/assets/assets-insights.md) functionality on the [!DNL Sites] instance.
+* Usage of path browser in authoring components are not supported in connected assets.
+
+* You cannot drag the remote asset onto the [Image Component Configure dialog](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). However, you can drag the remote asset directly to the image component on the Sites page without clicking **[!UICONTROL Configure]**.
 
 ### Permissions and asset management {#permissions-and-managing-assets}
 
@@ -344,7 +348,7 @@ To troubleshoot common errors, follow these steps:
 
 * If you are unable to search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 
-* An asset fetched from the remote DAM may not be published on a web page for one or more reasons. It doesn't exist on remote server, lack of appropriate permissions to fetch it, or network failure can be the reasons. Ensure that the asset is not removed from the remote DAM. Ensure that appropriate permissions are in place and the prerequisites are met. Retry adding the asset to the page and republish. Check the [list of asynchronous jobs](/help/operations/asynchronous-jobs.md) for errors in asset fetching.
+* An asset fetched from the remote DAM may not be published on a web page for one or more reasons. It does not exist on remote server, lack of appropriate permissions to fetch it, or network failure can be the reasons. Ensure that the asset is not removed from the remote DAM. Ensure that appropriate permissions are in place and the prerequisites are met. Retry adding the asset to the page and republish. Check the [list of asynchronous jobs](/help/operations/asynchronous-jobs.md) for errors in asset fetching.
 
 * If you are unable to access the remote DAM deployment from the local [!DNL Sites] deployment, ensure that cross-site cookies are allowed and [same site cookie support](/help/security/same-site-cookie-support.md) is configured. If cross-site cookies are blocked the deployments of [!DNL Experience Manager] may not authenticate. For example, [!DNL Google Chrome] in Incognito mode may block third-party cookies. To allow cookies in [!DNL Chrome] browser, click the 'eye' icon in the address bar, navigate to **Site Not Working** > **Blocked**, select the Remote DAM URL, and allow login-token cookie. Alternately, see [how to enable third-party cookies](https://support.google.com/chrome/answer/95647).
 
@@ -353,3 +357,17 @@ To troubleshoot common errors, follow these steps:
 * If remote references are not retrieved and results in an error message, check if [!DNL Sites] deployment is available and check for network connectivity issues. Retry later to check. [!DNL Assets] deployment attempts twice to establish connection with [!DNL Sites] deployment and then reports a failure.
 
   ![failure to retrieve asset remote references](assets/reference-report-failure.png)
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)

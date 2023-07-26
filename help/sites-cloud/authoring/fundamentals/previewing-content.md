@@ -10,11 +10,7 @@ AEM offers a Sites preview service lets developers and content authors preview a
 
 It facilitates previewing page experiences that would not be otherwise visible from the author environment, like page transitions and other publish side only content.
 
-For more details about the preview environments, please see the document [Manage Environments.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
-
->[!NOTE]
->
->Publishing an Experience Fragment to Preview basically follows the same procedure as for a page, though from the Experience Fragments console or editor.
+For more details about the preview environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Publishing Content to Preview {#publishing-content-to-preview}
 
@@ -46,27 +42,10 @@ Unpublishing content from your **Preview** environment is basically the same pro
 
 The only difference is that you can select the **Destination** to be **Preview**.
 
-## Configuring OSGi Settings for the Preview Tier {#configuring-osgi-settings-for-the-preview-tier}
+## Further Information {#further-information}
 
-The preview tier's OSGi property values are inherited from the publish tier. However the preview tier's values can be distinct from the publish tier by setting the `service` parameter to the value `preview`. The following example of an OSGi property determines the URL of an integration endpoint.
+See also:
 
-```
-[
-{
-"name":"INTEGRATION_URL",
-"type":"string",
-"value":"http://s2.integrationvendor.com",
-"service": "preview"
-}
-]
-```
+* [Configuring OSGi Settings for the Preview Tier](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
 
-For more information, see [this section](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration) of the OSGi configuration documentation.
-
-## Debugging Preview Using the Developer Console {#debugging-preview-using-the-developer-console}
-
-Follow these steps in order to debug the preview tier using the Developer Console:
-
-* In the [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), select either **-- All Preview --** or a production environment that includes **prev** in its name
-* Generate the relevant information for the preview instance
-See [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for more information on how to get the URLs for your environments.
+* [Debugging Preview Using the Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)

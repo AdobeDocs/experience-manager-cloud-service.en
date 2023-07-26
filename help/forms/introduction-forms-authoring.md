@@ -13,6 +13,13 @@ exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 ---
 # Adaptive Forms editor {#introduction-to-authoring-adaptive-forms}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html)                  |
+| AEM as a Cloud Service     | This article        |
+
 ## Overview {#overview}
 
 Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. [!DNL AEM Forms] provides an intuitive user interface and out-of-the-box components for creating and working with Adaptive Forms. You can choose to create an Adaptive Form based on a form model or schema or without a form model. It is important to carefully choose the form model that not only suits your requirements but extends your existing infrastructural investments and assets. You get to choose from the following options to create an Adaptive Form:
@@ -24,10 +31,10 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
   It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into Adaptive Forms. Any existing XFA rules are retained in the associated Adaptive Forms. The resulting Adaptive Forms support XFA constructs, such as validations, events, properties, and patterns.
 
 * **Using an XML Schema Definition (XSD) or a JSON Schema**
-  XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
+  XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
-  Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
+  Adaptive Forms created with this option does not use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
 
   >[!NOTE]
   >
@@ -145,7 +152,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>Email</td>
-   <td><p>Adds a field to capture email address. The Email component, by default, validates email addresses using the following regular expression.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Adds a field to capture email address. The Email component, by default, validates email addresses using the following regular expression.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>File attachment</td>

@@ -29,7 +29,7 @@ Follow these steps to manually hibernate your sandbox program environments.
 
 1. On the **Environments** card, click the ellipsis button and select **Developer Console**. 
 
-   * Refer to the document [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
+   * See [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
 
    ![Developer Console menu option](assets/developer-console-menu-option.png)
 
@@ -63,7 +63,7 @@ You can manually hibernate your Sandbox Program from the Developer Console.
 
 1. On the **Environments** card, click the ellipsis button and select **Developer Console**. 
 
-   * Refer to the document [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
+   * See [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
 
 1. Click on **De-hibernate**.
 
@@ -108,5 +108,9 @@ Hibernated environments still allow for deployments and manual AEM upgrades.
 
 * Environments in a sandbox program are automatically hibernated after eight hours of inactivity. 
   * Inactivity is defined as neither the author service nor preview or publish services receive requests.
-  * Once hibernated, they can be manually de-hibernated.
+  * Once hibernated, they can be [manually de-hibernated.](#de-hibernation-introduction)
 * Sandbox programs are deleted after six months of being in continuous hibernation mode, after which time, they can be recreated.
+
+>[!NOTE]
+>
+>Only sandbox environments are automatically deleted after six months of continuous hibernation. The sandbox program with its repository and code is retained.

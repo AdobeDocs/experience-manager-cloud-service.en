@@ -12,10 +12,6 @@ exl-id: 4aabd84b-0ccb-482b-85e7-09bacbce85c1
 ---
 # App Builder SDKs and CLI
 
->[!IMPORTANT]
->
-> _Adobe Project Firefly, as mentioned in the videos in this series, is now named App Builder_
-
 ## SDKs
 
 Learn about the Adobe I/O SDK and how it is used to develop App Builder applications.

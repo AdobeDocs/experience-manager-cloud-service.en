@@ -1,20 +1,22 @@
 ---
 title: AEM Version Updates
-description: AEM Version Updates 
+description: Learn how AEM as a Cloud Service uses continuous integration and delivery (CI/CD) to keep your projects on the latest version. 
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 ---
 
 # AEM Version Updates {#aem-version-updates}
 
-## Introduction {#introduction}
+Learn how AEM as a Cloud Service uses continuous integration and delivery (CI/CD) to keep your projects on the latest version.
 
-AEM as a Cloud Service now uses continuous integration and continuous delivery (CI/CD) to ensure that your projects are on the most current AEM version. This means that production and staging instances are updated to the latest AEM version without any interruption of service for users. 
+## CI/CD {#ci-cd}
 
->[!NOTE]
->
->If the update to production environment fails, Cloud Manager will automatically roll back the staging environment. This is done automatically to make sure that after an update completes, both the staging and production environments are on same AEM version.
- 
+AEM as a Cloud Service uses continuous integration and continuous delivery (CI/CD) to ensure that your projects are on the most current AEM version. This means that production and staging instances are updated to the latest AEM version without any interruption of service for users.
+
+Version updates are applied automatically to production and staging instances only. [AEM updates must be applied manually to all other instances](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
+
+## Type of Updates {#update-types}
+
 There are two types of AEM version updates:
 
 * **AEM Maintenance Updates**
@@ -25,11 +27,15 @@ There are two types of AEM version updates:
 
 * **New Feature Updates**
 
-   * Are released via a predictable monthly schedule.
+   * Are released on a [predictable, monthly schedule.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
+
+## Update Failure {#update-failure}
 
 AEM updates go through an intense and fully automated product validation pipeline involving multiple steps, ensuring no disruption of service for any systems in production. Health checks are used to monitor the health of the application. If these checks fail during an AEM as a Cloud Service update, the release will not proceed and Adobe will investigate why the update caused this unexpected behavior. 
 
 [Product tests and Customer functional tests,](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) which prevent product upgrades and customer code pushes from breaking production systems, are also validated during an AEM version update.
+
+If the update to production environment fails, Cloud Manager will automatically roll back the staging environment. This is done automatically to make sure that after an update completes, both the staging and production environments are on same AEM version.
 
 >[!NOTE]
 >
@@ -37,6 +43,8 @@ AEM updates go through an intense and fully automated product validation pipelin
 
 ## Composite Node Store {#composite-node-store}
 
-Updates in most cases will incur zero downtime, including for the authoring instance, which is a cluster of nodes. Rolling updates are possible due to the composite node store feature in Oak. 
+In most cases, updates will incur zero downtime, including for the authoring instance, which is a cluster of nodes. Rolling updates are possible due to [the composite node store feature in Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-This feature allows AEM to reference multiple repositories simultaneously. In a rolling deployment, the new green AEM version contains its own `/libs` (the TarMK based immutable repository), distinct from the older blue AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content` , `/conf` , `/etc` and others. Because both the blue and the green have their own versions of `/libs`, they can both be active during the rolling update, both taking on traffic until the blue is fully replaced by the green.
+This feature allows AEM to reference multiple repositories simultaneously. In a [rolling deployment,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) the new AEM version contains its own `/libs` (the TarMK based immutable repository), distinct from the older AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content` , `/conf` , `/etc` and others. 
+
+Because both the old and the new versions have their own versions of `/libs`, they can both be active during the rolling update, and both can take on traffic until the old is fully replaced by the new.

@@ -1,20 +1,25 @@
 ---
-title: Create and manage digital assets in multiple languages
-description: Learn how to automate workflows for translating assets, including binaries, metadata, and tags into multiple languages.
+title: How to translate assets in AEM?
+description: Learn how to automate workflows to translate assets in AEM, including binaries, metadata, and tags into multiple languages.
 contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
 ---
-# Multilingual assets {#multilingual-assets}
+# Translate assets in AEM {#multilingual-assets}
 
-Multilingual assets means assets with binaries, metadata, and tags in multiple languages. Generally, binaries, metadata, and tags for assets exist in one language, which are then translated to other languages for use in multilingual projects. Adobe Experience Manager Assets lets you automate translation workflows on assets (including binaries, metadata, and tags) to generate assets in other languages for use in multilingual projects.
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
 
-To automate translation workflows, you integrate translation service providers with Experience Manager and create projects for translating assets into multiple languages. Experience Manager supports human and machine translation workflows.
+Multilingual assets means assets with binaries, metadata, and tags in multiple languages. Generally, binaries, metadata, and tags for assets exist in one language, which are then translated to other languages for use in multilingual projects. Adobe Experience Manager Assets lets you automate workflows to translate assets (including binaries, metadata, and tags) to generate assets in other languages for use in multilingual projects.
 
-Human translation: The translated assets are returned and imported into Experience Manager. When your translation provider is integrated with Experience Manager, assets are automatically sent between Experience Manager and the translation provider.
+To automate AEM asset translation, you integrate translation service providers with Experience Manager and create projects for translating assets into multiple languages. Experience Manager supports human and machine translation workflows.
 
-Machine translation: The machine translation service immediately translates the metadata and tags for assets.
+Human asset translation in AEM: The translated assets are returned and imported into Experience Manager. When your translation provider is integrated with Experience Manager, assets are automatically sent between Experience Manager and the translation provider.
+
+Machine asset translation in AEM: The machine translation service immediately translates the metadata and tags for assets.
 
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
@@ -42,7 +47,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 -->
 
-## Prepare assets for translation {#prepare-assets-for-translation}
+## Prepare to translate assets {#prepare-to-translate-assets}
 
 Multilingual assets means assets with binaries, metadata, and tags in multiple languages. Generally, binaries, metadata, and tags for assets exist in one language, which are then translated to other languages for use in multilingual projects.
 
@@ -64,7 +69,7 @@ The language copy for which you originally add assets is the language primary. T
         |- zh
 ```
 
-Perform the following steps to prepare your assets for translation:
+Perform the following steps for preparing to translate assets:
 
 1. Create the language root of your language primary. For example, the language root of the English language copy in the sample folder hierarchy is `/content/dam/en`. Ensure that the language root is correctly configured according to the information in [Create a language root](#create-a-language-root).
 
@@ -113,7 +118,7 @@ If you use this option, assets to be translated are copied to the language root 
 
 ### Add to an existing translation project {#add-to-existing-translation-project}
 
-If you use this option, the translation workflow runs for assets that you add to the source folder after running a previous translation workflow. Only the newly-added assets are copied to the target folder that contains previously-translated assets. No new translation project is created in this case.
+If you use this option, the translation workflow runs for assets that you add to the source folder after running a previous translation workflow. Only the newly added assets are copied to the target folder that contains previously translated assets. No new translation project is created in this case.
 
 1. In the Assets UI, navigate to the source folder that contains untranslated assets.
 1. Select an asset you want to translate, and open the **[!UICONTROL Reference pane]**. The **[!UICONTROL Language Copies]** section displays the number of translation copies that are currently available.
@@ -142,7 +147,7 @@ If you use this option, the translation workflow runs for assets that you add to
 
 ### Update language copies {#update-language-copies}
 
-Run this workflow to translate any additional set of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously-translated assets. Depending upon the choice of options, a translation project is created or an existing translation project is updated for the new assets. The Update language copies workflow includes the following options:
+Run this workflow to translate any additional set of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously translated assets. Depending on the choice of options, a translation project is created or an existing translation project is updated for the new assets. The Update language copies workflow includes the following options:
 
 * Create a new translation project
 * Add to existing translation project
@@ -162,7 +167,7 @@ If you use this option, the set of assets are added to an existing translation p
 
 ### Create temporary language copies {#creating-temporary-language-copies}
 
-When you run a translation workflow to update a language copy with edited versions of original assets, the existing language copy is preserved until you approve the translated asset(s). [!DNL Assets] stores the newly-translated asset(s) at a temporary location and updates the existing language copy after you explicitly approve the asset(s). If you reject the asset(s), the language copy remains unchanged.
+When you run a translation workflow to update a language copy with edited versions of original assets, the existing language copy is preserved until you approve the translated asset(s). [!DNL Assets] stores the newly translated assets at a temporary location and updates the existing language copy after you explicitly approve the asset(s). If you reject the asset(s), the language copy remains unchanged.
 
 1. Click/tap the source root folder under **[!UICONTROL Language Copies]** for which you already created a language copy, and then click/tap **[!UICONTROL Reveal in Assets]** to open the folder in [!DNL Assets].
 1. From the Assets UI, select an asset you already translated and click/tap the **[!UICONTROL Edit]** icon from the toolbar to open the asset in edit mode.
@@ -180,7 +185,7 @@ When you run a translation workflow to update a language copy with edited versio
 
 1. Navigate to the Assets console, and open the Properties page for each of the translated assets to view the translated metadata.
 
-<!-- TBD: Possibly this blog wasn't migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
+<!-- TBD: Possibly this blog was not migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
 
 For tips on translating metadata for assets efficiently, see [5 Steps to efficiently translate metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/). 
 -->
@@ -195,7 +200,7 @@ In this workflow, assets to be translated are copied to the language root of the
 
 **Update language copies**
 
-You run this workflow to translate an additional group of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously-translated assets.
+You run this workflow to translate an additional group of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously translated assets.
 
 >[!NOTE]
 >
@@ -253,9 +258,9 @@ Applying translation cloud services directly to your asset folder eliminates the
 
 ### Apply custom translation connector {#applying-custom-translation-connector}
 
-If you want to apply a custom connector for the translation services you want to use in translation workflows. To apply a custom connector, first install the connector from [Package Manager.](/help/implementing/developing/tools/package-manager.md) Then, configure the connector from the Cloud Services console. After you configure the connector, it is available in the list of connectors in the Cloud Services tab described in [Applying the translation services](#applying-the-translation-services). After you apply the custom connector and run translation workflows, the **[!UICONTROL Translation Summary]** tile of the translation project displays the connector details under the heads **[!UICONTROL Provider]** and **[!UICONTROL Method]**.
+If you want to apply a custom connector for the translation services you want to use in translation workflows. To apply a custom connector, first install the connector from [Package Manager](/help/implementing/developing/tools/package-manager.md). Then, configure the connector from the Cloud Services console. After you configure the connector, it is available in the list of connectors in the Cloud Services tab described in [Applying the translation services](#applying-the-translation-services). After you apply the custom connector and run translation workflows, the **[!UICONTROL Translation Summary]** tile of the translation project displays the connector details under the heads **[!UICONTROL Provider]** and **[!UICONTROL Method]**.
 
-1. Install the connector from [Package Manager.](/help/implementing/developing/tools/package-manager.md)
+1. Install the connector from [Package Manager](/help/implementing/developing/tools/package-manager.md).
 1. Click/tap the Experience Manager logo, and navigate to **[!UICONTROL Tools > Deployment > Cloud Services]**.
 1. Locate the connector you installed under **[!UICONTROL Third Party Services]** in the **[!UICONTROL Cloud Services]** page.
 
@@ -269,3 +274,17 @@ If you want to apply a custom connector for the translation services you want to
 1. Run any translation workflow described in creating translation projects after you apply the custom connector. Verify the details of the connector in the **[!UICONTROL Translation Summary]** tile of the translation project in the **[!UICONTROL Projects]** console.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
+
+**See also**
+
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)

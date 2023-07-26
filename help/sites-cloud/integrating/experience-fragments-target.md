@@ -42,7 +42,7 @@ Experience Fragments can be exported to the default workspace in Adobe Target, o
 
 >[!NOTE]
 >
->For further information see also:
+>For more information, see the following:
 >
 >* [Adobe Target development](https://developers.adobetarget.com/)
 >* [Core Components - Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
@@ -69,7 +69,7 @@ Before exporting a fragment you need to add the **Cloud Configuration** for **Ad
 * select a Target workspace as destination
 * select an externalizer domain for rewriting references in the Experience Fragment (optional)
 
-The required options can be selected in **Page Properties** of the required folder and/or fragment; the specification will be inherited as necessary.
+The required options can be selected in **Page Properties** of the required folder, or fragment, or both; the specification is inherited as necessary.
 
 1. Navigate to the **Experience Fragments** console.
 
@@ -171,7 +171,7 @@ You can now select the new configuration for editing.
 
    * **Tenant ID**: the tenant ID
 
-   * **IMS Configuration**: select the required configuration from the drop down list
+   * **IMS Configuration**: select the required configuration from the drop-down list
 
    * **API Type**: defaults to REST (XML is deprecated)
 
@@ -189,7 +189,7 @@ You can now select the new configuration for editing.
 
      >[!NOTE]
      >
-     >The Target Library file, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html), is a new implementation library for Adobe Target that is designed for both typical web implementations and single-page applications. 
+     >The Target Library file, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), is a new implementation library for Adobe Target that is designed for both typical web implementations and single-page applications. 
      >
      >mbox.js has been deprecated and will be removed at a later stage.
      >
@@ -236,7 +236,7 @@ You can create multiple frameworks for a single Target configuration. Multiple f
 
    The framework page opens. Sidekick provides components that represent information from the [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) that you can map.
 
-   <!-- ![chlimage_1-162](assets/chlimage_1-162.png) -->
+   <!-- ![Framework](assets/chlimage_1-162.png) -->
 
 1. Drag the Client Context component that represents the data that you want to use for mapping to the drop target. Alternatively, drag the **ContextHub Store** component to the framework.
 
@@ -246,11 +246,11 @@ You can create multiple frameworks for a single Target configuration. Multiple f
 
    For example, to use **Profile Data** about your site vistors to control your Target campaign, drag the **Profile Data** component to the page. The profile data variables that are available for mapping to Target parameters appear.
 
-   <!-- ![chlimage_1-163](assets/chlimage_1-163.png) -->
+   <!-- ![Profile Data](assets/chlimage_1-163.png) -->
 
 1. Select the variables that you want to make visible to the Adobe Target system by selecting the **Share** checkbox in the appropriate columns.
 
-   <!-- ![chlimage_1-164](assets/chlimage_1-164.png) -->
+   <!-- ![Share](assets/chlimage_1-164.png) -->
 
    >[!NOTE]
    >
@@ -287,7 +287,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. Tap/click **Edit**.
 1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
-  ![chlimage_1-165](assets/chlimage_1-165.png)
+  ![Cloud Service Configuration](assets/chlimage_1-165.png)
 
 1. Select the framework you want under **Configuration Reference**.
 
@@ -350,7 +350,7 @@ To export an experience fragment from AEM to Target (after specifying the Cloud 
 
 ## Using your Experience Fragments in Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-After performing the preceding tasks, the experience fragment displays on the Offers page in Target. Please have a look at the [specific Target documentation](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) to learn about what you can achieve there.
+After performing the preceding tasks, the experience fragment displays on the Offers page in Target. See [specific Target documentation](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) to learn about what you can achieve there.
 
 >[!NOTE]
 >

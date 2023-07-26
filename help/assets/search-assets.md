@@ -1,19 +1,24 @@
 ---
-title: Search digital assets and images in [!DNL Adobe Experience Manager]
-description: Learn how to find the required assets in [!DNL Adobe Experience Manager] by using Filters panel, and how to use the assets that show up in search.
+title: How to search assets in AEM?
+description: Learn how to search assets in AEM by using Filters panel, and how to use the results that show up in asset search.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
 ---
-# Search assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Search assets in AEM {#search-assets-in-aem}
 
-[!DNL Adobe Experience Manager Assets] provides robust asset discovery methods that help you achieve higher content velocity. Your teams can reduce time to market with seamless, intelligent search experience using out-of-the-box functionality and custom methods. Searching assets is central to the usage of a digital asset management system -- be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators. Simple, advanced, and custom searches that you can perform via [!DNL Assets] user interface or other apps and surfaces help fulfill these use cases.
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html)                  |
+| AEM as a Cloud Service     | This article         |
 
-[!DNL Experience Manager Assets] supports the following use cases and this article describes the usage, concepts, configurations, limitations, and troubleshooting for these use cases.
+[!DNL Adobe Experience Manager Assets] provides robust asset search methods that help you achieve higher content velocity. Your teams can reduce time to market with seamless, intelligent asset search experience using out-of-the-box functionality and custom methods. Search assets capability is central to the usage of a digital asset management system -- be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators. Simple, advanced, and custom searches that you can perform via [!DNL Assets] user interface or other apps and surfaces help fulfill these use cases.
 
-| Search for assets | Configure and administer search functionality | Work with search results |
+Asset search in AEM supports the following use cases and this article describes the usage, concepts, configurations, limitations, and troubleshooting for these use cases.
+
+| Search assets | Configure and administer search functionality | Work with asset search results |
 |---|---|---|
 | [Basic searches](#searchbasics) | [Search index](#searchindex) | [Sort results](#sort) |
 | [Understand search UI](#searchui) | [Text extraction](#extracttextupload) | [Check properties and metadata of an asset](#checkinfo) |
@@ -26,15 +31,15 @@ exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
 | [Limitations](#limitations) and [Tips](#tips) | | |
 | [Illustrated examples](#samples)| | |
 
-Search assets using the Omnisearch field at the top of the [!DNL Experience Manager] web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], click ![search_icon](assets/do-not-localize/search_icon.png) in top bar, enter search keyword, and select `Return`. Alternatively, use the keyword shortcut `/` (forward slash) to open the Omnisearch field. `Location:Assets` is pre-selected to limit the searches to DAM assets. [!DNL Experience Manager] provides suggestions as your start typing a search keyword.
+Search assets using the Omnisearch field at the top of the [!DNL Experience Manager] web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], click ![search_icon](assets/do-not-localize/search_icon.png) in top bar, enter search keyword, and select `Return`. Alternatively, use the keyword shortcut `/` (forward slash) to open the Omnisearch field. `Location:Assets` is pre-selected to limit the searches to DAM assets. `Path:/content/dam` also displays when you are performing search at the root level within the **[!UICONTROL Files]** folder. If you navigate to any other folder, `Path:/content/dam/<folder name>` displays in the Omnisearch field to limit the search scope to the current folder. [!DNL Experience Manager] provides suggestions as you start typing a search keyword.
 
 Use the **[!UICONTROL Filters]** panel to search for assets, folders, tags, and metadata. You can filter search results based on the various options (predicates), such as, file type, file size, last modified date, status of asset, insights data, and Adobe Stock licensing. You can customize the Filters panel and add or remove search predicates using [search facets](/help/assets/search-facets.md). The [!UICONTROL File Type] filter in the [!UICONTROL Filters] panel has mixed-state checkboxes. Therefore, unless you select all the nested predicates (or formats) the first-level checkboxes are partially checked.
 
 [!DNL Experience Manager] search capability supports searching for collections and searching for assets within a collection. See [search collections](/help/assets/manage-collections.md).
 
-## Understand search interface {#searchui}
+## Understand asset search interface {#searchui}
 
-Familiarize yourself with the search interface and the available actions.
+Familiarize yourself with the asset search interface and the available actions.
 
 ![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
 
@@ -394,12 +399,17 @@ You can search for digital assets based on one or more of the following properti
 
 ## Work with asset search results {#aftersearch}
 
-You can do the following with the assets you've searched in [!DNL Experience Manager]:
+You can do the following with the assets you have searched in [!DNL Experience Manager]:
 
 * View metadata properties and other information.
 * Download one or more assets.
 * Use Desktop Actions to open these assets in the desktop app.
 * Create smart collections.
+* Create a version
+* Start a workflow
+* Relate or unrelate assets
+* Apply filters, using the Filters panel that displays automatically after performing the search, to narrow the search results.
+* Navigate to the asset location
 
 ### Sort search results {#sort}
 
@@ -440,6 +450,22 @@ A collection is an ordered set of assets that can include assets from different 
 
 You can create smart collections based on the search criteria. From the **[!UICONTROL Filters]** panel, select **[!UICONTROL Files]** and click **[!UICONTROL Save Smart Collection]**. See [manage collections](/help/assets/manage-collections.md).
 
+### Create a version {#create-version}
+
+Create a version for the assets that display in the search results. Select the asset and click **[!UICONTROL Create]** > **[!UICONTROL Version]**. Add an optional label or a comment and click **[!UICONTROL Create]**. You can also select multiple assets and create versions for them simultaneously.
+
+### Create a workflow {#create-workflow}
+
+Similar to the create version capability, you can also create a workflow for the assets that display in the search results. Select the asset(s) and click **[!UICONTROL Create]** > **[!UICONTROL Workflow]**. Select the workflow model, specify a title for the workflow, and click **[!UICONTROL Start]**.
+
+### Relate and Unrelate assets {#relate-unrelate-assets}
+
+Relate and unrelate assets that display in the search results. Select the asset(s) and click **[!UICONTROL Relate]** or **[!UICONTROL Unrelate]**.
+
+### Navigate to asset folder location {#navigate-asset-folder-location}
+
+Navigate to the folder location for assets displayed in the search results. Select the asset and click **[!UICONTROL Show File Location]**. 
+
 ## Unexpected search results and issues {#unexpected-results}
 
 <!--
@@ -452,11 +478,25 @@ You can create smart collections based on the search criteria. From the **[!UICO
 | Too many search results. | Broad search parameter. | Consider limiting the [scope of search](#scope). Use of smart tags may give you more search results than you expected. See [search behavior with smart tags](#withsmarttags). |
 | Unrelated or partly related search results. | Search behavior changes with smart tagging. | Understand [how search changes after smart tagging](#withsmarttags). |
 | No auto-complete suggestions for assets. | Newly uploaded assets are not indexed yet. The metadata is not immediately available as suggestions when you start typing a search keyword in Omnisearch bar.| [!DNL Experience Manager] waits until the expiry of a timeout period (one hour by default) before running a background job to index the metadata for all newly uploaded or updated assets and then adds the metadata to the list of suggestions. |
-| No search results. | <ul><li>Assets matching your query don't exist. </li><li> Whitespace added before the search query. </li><li> Unsupported metadata field contains the keyword that you searched for.</li><li> Search made during an asset's off-time. </li></ul> | <ul><li>Search using a different keyword. Alternatively, use smart tagging or similarity search to improve search results. </li><li>[Known limitation](#limitations).</li><li>All metadata fields are not considered for searches. See [scope](#scope).</li><li>Search later or modify on-time and off-time for the required assets.</li></ul> |
+| No search results. | <ul><li>Assets matching your query do not exist. </li><li> Whitespace added before the search query. </li><li> Unsupported metadata field contains the keyword that you searched for.</li><li> Search made during an asset's off-time. </li></ul> | <ul><li>Search using a different keyword. Alternatively, use smart tagging or similarity search to improve search results. </li><li>[Known limitation](#limitations).</li><li>All metadata fields are not considered for searches. See [scope](#scope).</li><li>Search later or modify on-time and off-time for the required assets.</li></ul> |
 | Search filter or a predicate is not available. | <ul><li>The search filter is either not configured.</li><li>It is not available for your login.</li><li>(Less likely) The search options are not customized on the deployment you are using.</li></ul> | <ul><li>Contact administrator to check if the search customizations are available or not.</li><li>Contact administrator to check if your account has the privilege/permissions to use the customization.</li><li>Contact administrator and check the available customizations for the [!DNL Assets] deployment you are using.</li></ul> |
 | When searching for visually similar images, an expected image is missing. | <ul><li>Image is not available in [!DNL Experience Manager].</li><li>Image is not indexed. Typically, when it is recently uploaded.</li><li>Image is not smart tagged.</li></ul> | <ul><li>Add the image to [!DNL Assets].</li><li>Contact your administrator to re-index the repository. Also, ensure that you are using the appropriate index.</li><li>Contact your administrator to smart tag the relevant assets.</li></ul> |
 | When searching for visually similar images, an irrelevant image is displayed. | Visual search behavior.| [!DNL Experience Manager] displays as many potentially relevant assets as possible. Less relevant images, if any, are added to the results but with a lower search ranking. The quality of the matches and relevance of searched assets decrease as you scroll down the search results. |
 | When selecting and operating on search results, all searched assets are not operated upon. | The [!UICONTROL Select All] option only selects first 100 search results in card view and first 200 search results in list view. | |
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

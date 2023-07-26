@@ -9,27 +9,27 @@ exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispoverview"
 >title="Dispatcher in the Cloud"
->abstract="This page describes how to download and extract the dispatcher tools, the supported apache modules and provides a high-level overview of the legacy and flexible modes."
+>abstract="This page describes how to download and extract the Dispatcher tools, the supported Apache modules and provides a high-level overview of the legacy and flexible modes."
 
 ## Introduction {#apache-and-dispatcher-configuration-and-testing}
 
-This page describes the dispatcher tools and how to download and extract them, the supported apache modules and provides a high-level overview of the legacy and flexible modes. Additionally, there are further references on validation and debugging and migrating the Dispatcher configuration from AMS to AEM as a Cloud Service. Also, see [this video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) for additional details about deploying dispatcher files in a cloud service environment.
+This page describes the Dispatcher tools and how to download and extract them, the supported Apache modules and provides a high-level overview of the legacy and flexible modes. Also, there are further references on validation and debugging and migrating the Dispatcher configuration from AMS to AEM as a Cloud Service. <!-- ERROR: NOT FOUND (HTTP ERROR 404) Also, see [this video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) for additional details about deploying dispatcher files in a cloud service environment. -->
 
 ## Dispatcher Tools {#dispatcher-sdk}
 
 The Dispatcher Tools are part of the overall AEM as a Cloud Service SDK and provide:
 
 * A vanilla file structure containing the configuration files to include in a maven project for Dispatcher.
-* Tooling for customers to validate that the Dispatcher configuration includes only AEM as a Cloud Service supported directives.        Additionally, the tooling also validates that the syntax is correct so apache can start successfully.
+* Tooling for customers to validate that the Dispatcher configuration includes only AEM as a Cloud Service-supported directives. Also, the tooling also validates that the syntax is correct so Apache can start successfully.
 * A Docker image that brings up the Dispatcher locally.
 
 ## Downloading and Extracting the Tools {#extracting-the-sdk}
 
 The Dispatcher Tools, part of the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), can be downloaded from a zip file at the [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) portal. Any new configuration available in that new Dispatcher Tools version can be used to deploy to Cloud environments running that version of AEM in the Cloud or higher.
 
-Unzip the SDK, which bundles Dispatcher Tools for both macOS, Linux and Windows.
+Unzip the SDK, which bundles Dispatcher Tools for macOS, Linux&reg; and Windows.
 
-**For macOS/Linux**, make the Dispatcher tool artifact executable and run it. It will self-extract the Dispatcher Tools files underneath the directory you stored it to (where `version` is the version of the Dispatcher Tools).
+**For macOS/Linux**, make the Dispatcher tool artifact executable and run it. It self-extracts the Dispatcher Tools files underneath the directory that you stored it to (where `version` is the version of the Dispatcher Tools).
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -43,17 +43,17 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 ## Validation and Debugging using the Dispatcher Tools {#validation-debug}
 
-The dispatcher tools are used to validate and debug your project's Dispatcher configuration. Learn more about how to use those tools in the pages referenced below, based on whether your project's dispatcher configuration is structured in flexible mode or legacy mode:
+The Dispatcher tools are used to validate and debug your project's Dispatcher configuration. Learn more about how to use those tools in the pages referenced below, based on whether your project's Dispatcher configuration is structured in flexible mode or legacy mode:
 
-* **Flexible mode** - the recommended mode, and the default for [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) and higher, which is also used by Cloud Manager for new environments created after the Cloud Manager 2021.7.0 release. Customers can activate this mode by adding the folder and file `opt-in/USE_SOURCES_DIRECTLY`. By using this more flexible mode, there are no limitations in the file structure under the rewrites folder that in legacy mode required a single `rewrite.rules` file. Also, there is no limitation on the number of rules you can add. For for details on folder structure and local validation see [Validating and Debugging using Dispatcher Tools](/help/implementing/dispatcher/validation-debug.md).
+* **Flexible mode** - the recommended mode, and the default for [AEM archetype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) and higher, which is also used by Cloud Manager for new environments created after the Cloud Manager 2021.7.0 release. Customers can activate this mode by adding the folder and file `opt-in/USE_SOURCES_DIRECTLY`. By using this more flexible mode, there are no limitations in the file structure under the rewrites folder that in legacy mode required a single `rewrite.rules` file. Also, there is no limitation on the number of rules you can add. For details on folder structure and local validation, see [Validating and Debugging using Dispatcher Tools](/help/implementing/dispatcher/validation-debug.md).
 
-* **Legacy mode** - for details on the folder structure and local validation for dispatcher configuration legacy mode, see [Validating and Debugging using Dispatcher Tools (Legacy)](/help/implementing/dispatcher/validation-debug-legacy.md)
+* **Legacy mode** - for details on the folder structure and local validation for Dispatcher configuration legacy mode, see [Validating and Debugging using Dispatcher Tools (Legacy)](/help/implementing/dispatcher/validation-debug-legacy.md)
 
 For more information on how to migrate from the legacy configuration model to the more flexible one, provided with AEM archetype 28 onwards, see [this documentation](/help/implementing/dispatcher/validation-debug.md#migrating).
   
 ## Content Disposition {#content-disposition}
 
-For the publish tier, the default for serving blobs is as an attachment. This can overridden using the standard [content disposition header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) in the dispatcher.
+For the publish tier, the default for serving blobs is as an attachment. Override this setting using the standard [content disposition header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) in the Dispatcher.
 
 Below is an example of how the configuration should look like:
 
@@ -66,7 +66,7 @@ Below is an example of how the configuration should look like:
 
 ## Supported Apache Modules {#supported-directives}
 
-The table below shows the supported apache modules:
+The table below shows the supported Apache modules:
 
 | Module Name | Reference Page |
 |---|---|
@@ -115,7 +115,7 @@ Allowlisted directives:
 
 ## Folder Structure {#folder-structure}
 
-The project's apache and dispatcher folder structure will differ slightly based on which mode the project is using, as described in the [Validation and Debugging using the Dispatcher Tools](#validation-debug) section above.
+The project's Apache and Dispatcher folder structure differ slightly based on which mode that the project is using, as described in the [Validation and Debugging using the Dispatcher Tools](#validation-debug) section above.
 
 ## Migrating the Dispatcher configuration from AMS {#ams-aem}
 

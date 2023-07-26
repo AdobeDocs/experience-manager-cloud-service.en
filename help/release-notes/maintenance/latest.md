@@ -1,24 +1,35 @@
 ---
-title: Latest Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Latest Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Current Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Current Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 ---
-
 # Maintenance Release Notes {#maintenance-release-notes}
 
-The following section outlines the technical release rotes for the latest maintenance release of Experience Manager as a Cloud Service.
+The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 10912 {#release-10912}
+## Release 12790 {#release-12790}
  
-Summarized below are the continuous improvements for maintenance release 10912, which was publicly released on February 3, 2023. This mainteanance release is an update from previous maintenance release 9850.
+Summarized below are the continuous improvements for maintenance release 12790, which was publicly released on July 21, 2023. This maintenance release is an update from previous maintenance release 12697.
 
-Feature enablement for this maintenance release will provide you with the full feature set. See the [current release notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for full details.
+2023.7.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Known Issues {#known-issues}
+### Enhancements {#enhancements-12790}
 
-Do not upgrade if you are using CORS. We identified an issue impacting GraphQL content delivery part on this release. A change in default AEM dispatcher config around how GraphQL persisted queries are cached can break the GraphQL content delivery of persisted queries for customers using a CORS configuration.
+None.
 
-### Embedded Technologies {#embedded-tech}
+### Fixed Issues {#fixed-issues-112790}
+
+- SLING-11974 - Fixed regression in SlingHttpServletRequest#getUserPrincipal for non authenticated requests. The fix ensures that a principal is returned even for unauthenticated requests.
+
+### Known Issues {#known-issues-12790}
+
+-  GRANITE-46601 - Quickstart SDK fails to start on jdk 11.0.20 without `-Djdk.util.zip.disableZip64ExtraFieldValidation=true` java option
+
+### Embedded Technologies {#embedded-tech-12790}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM WCM Core Components|Version 2.21.2|[GitHub](https://github.com/adobe/aem-core-wcm-components)|
+|AEM OAK |1.52-T20230629133256-25c01b8|[Oak API 1.52.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.52.0/index.html)| 
+|AEM SLING API |Version 2.27.2 |[Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
+|AEM HTL|Version 1.4.20-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
+|AEM Core Components|Version 2.23.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|

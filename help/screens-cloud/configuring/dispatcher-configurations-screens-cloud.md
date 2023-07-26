@@ -16,7 +16,7 @@ Allow the following filters and cache rules in dispatchers for the publish insta
 ```
 ## # Content Configurations
 /0200 { /type "allow" /method '(GET|HEAD)' /url "/content/screens/*" }
-#/0201 { /type "allow" /method '(GET|HEAD)' /url "/content/experience-fragments/*" } ## uncomment this, if you're using experience-fragments
+#/0201 { /type "allow" /method '(GET|HEAD)' /url "/content/experience-fragments/*" } ## uncomment this, if you are using experience-fragments
 ## add any other formats required for your project here
 /0202 { /type "allow" /extension '(css|eot|gif|ico|jpeg|jpg|js|gif|pdf|png|svg|swf|ttf|woff|woff2|html|mp4|mov|m4v)' /path "/content/dam/*" }
 /0203 { /type "allow" /method 'GET' /url "/screens/channels.json" }

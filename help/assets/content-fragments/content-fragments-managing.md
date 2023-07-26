@@ -50,7 +50,7 @@ The method of creating a content fragment is:
 
    After selection, use **Next** to proceed.
 
-   ![fragment basis](assets/cfm-managing-01.png)
+   ![Select Content Fragment Model](assets/cfm-managing-01.png)
 
 1. In the **Properties** step specify:
 
@@ -70,9 +70,9 @@ The method of creating a content fragment is:
 
         * **Name**
 
-          The name; will be used to form the URL.
+          The name; is used to form the URL.
 
-          Mandatory; will be automatically derived from the title, but can be updated.
+          Mandatory; is automatically derived from the title, but can be updated.
 
 1. Select **Create** to complete the action, then either **Open** the fragment for editing or return to the console with **Done**.
 
@@ -86,7 +86,7 @@ In the **Assets** console a range of actions are available for your content frag
 * From the toolbar; after selection of your fragment all appropriate actions are available.
 * As [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); a subset of actions available for the individual fragment cards.
 
-![actions](assets/cfm-managing-02.png)
+![Actions in toolbar](assets/cfm-managing-02.png)
 
 Select the fragment to reveal the toolbar with applicable actions:
 
@@ -123,11 +123,7 @@ To open your fragment for editing:
 
 >[!CAUTION]
 >
->To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
-
->[!CAUTION]
->
->To edit a content fragment you need the appropriate permissions. Please contact your system administrator if you are experiencing issues.
+>To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contact your system administrator if you are experiencing issues.
 
 1. Use the **Assets** console to navigate to the location of your content fragment.
 1. Open the fragment for editing, by either:
@@ -137,7 +133,7 @@ To open your fragment for editing:
 
 1. The fragment editor will open. Make your changes as required:
 
-   ![fragment editor](assets/cfm-managing-03.png)
+   ![Fragment editor](assets/cfm-managing-03.png)
 
 1. After making changes, use **Save**, **Save & close** or **Close** as required.
 
@@ -165,15 +161,15 @@ Navigate through the various modes using the icons in the side panel:
 * [Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [Preview](/help/assets/content-fragments/content-fragments-json-preview.md)
 
-![modes](assets/cfm-managing-04.png)
+![Modes in the Content Fragment editor](assets/cfm-managing-04.png)
 
 ### Toolbar Actions in the Content Fragment Editor {#toolbar-actions-in-the-content-fragment-editor}
 
 Some features in the top toolbar are available from multiple modes:
 
-![modes](assets/cfm-managing-top-toolbar.png)
+![Toolbar actions available in various modes](assets/cfm-managing-top-toolbar.png)
 
-* A message will be shown when the fragment is already referenced on a content page. You can **Close** the message.
+* A message is shown when the fragment is already referenced on a content page. You can **Close** the message.
 
 * The side panel can be hidden/shown using the **Toggle Side Panel** icon.
 
@@ -215,7 +211,7 @@ The editor has various options:
 
   >[!CAUTION]
   >
-  >To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Please contact your system administrator if you are experiencing issues. 
+  >To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contact your system administrator if you are experiencing issues. 
 
   >[!NOTE]
   >
@@ -223,13 +219,13 @@ The editor has various options:
 
   >[!CAUTION]
   >
-  >In addition to simply saving your changes, the actions also update any references and ensures that the Dispatcher is flushed as required. These changes can take time to process. Due to this, there can be a performance impact on a large/complex/heavily-loaded system.
+  >In addition to simply saving your changes, the actions also update any references and ensures that the Dispatcher is flushed as required. These changes can take time to process. Due to this time, there can be a performance impact on a large/complex/heavily-loaded system.
   >
-  >Please bear this in mind when using **Save & close** and then quickly re-entering the fragment editor to make and save further changes.
+  >Keep this process in mind when using **Save & close** and then quickly reentering the fragment editor to make and save more changes.
 
 * **Close**
 
-  Will exit the editor without saving the latest changes (i.e made since the last **Save**).
+  Will exit the editor without saving the latest changes (that is, made since the last **Save**).
 
 While editing your content fragment AEM automatically creates versions to ensure that prior content can be restored if you cancel your changes (using **Close** without saving):
 
@@ -260,7 +256,7 @@ Once you have created the Master content, you can create, and manage, [Variation
 
 ## Associating Content with your Fragment {#associating-content-with-your-fragment}
 
-You can also [associate content](/help/assets/content-fragments/content-fragments-assoc-content.md) with a fragment. This provides a connection so that assets (i.e. images) can be (optionally) used with the fragment when it is added to a content page.
+You can also [associate content](/help/assets/content-fragments/content-fragments-assoc-content.md) with a fragment. This provides a connection so that assets (that is, images) can be (optionally) used with the fragment when it is added to a content page.
 
 ## Viewing and Editing the Metadata (Properties) of your Fragment {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -301,7 +297,7 @@ In addition to the standard options, [Timeline](/help/assets/manage-digital-asse
 
 For example:
 
-![timeline](assets/cfm-managing-05.png)
+![Timeline](assets/cfm-managing-05.png)
 
 ## Comparing Fragment Versions {#comparing-fragment-versions}
 
@@ -313,7 +309,7 @@ This will open:
 
 * the selected version **v&lt;*x.y*&gt;** (right)
 
-They will be shown side by side, where:
+They is shown side by side, where:
 
 * Any differences are highlighted
 
@@ -329,7 +325,7 @@ They will be shown side by side, where:
 >
 >You cannot edit the fragment content when comparing fragments.
 
-![comparing](assets/cfm-managing-06.png)
+![Comparing Variations](assets/cfm-managing-06.png)
 
 ## Reverting to a Version  {#reverting-to-a-version}
 
@@ -347,7 +343,7 @@ You can revert to a specific version of your fragment:
 >
 >If your fragment is based on a model, then you should ensure that the [model has been published](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 >
->If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
+>If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model is published with the fragment.
 
 Content Fragments must be published for use in the publish environment. This is done using the standard Assets functionality:
 
@@ -359,7 +355,7 @@ This can be accessed:
 * After creation; using [actions available in the Assets console](#actions-for-a-content-fragment-assets-console).
 * From the [Content Fragment Editor](#toolbar-actions-in-the-content-fragment-editor).
 
-In addition, when you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment will be listed in the page references.
+In addition, when you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment is listed in the page references.
 
 >[!CAUTION]
 >
@@ -381,4 +377,4 @@ To delete a fragment:
 
    >[!CAUTION]
    >
-   >If the fragment is already referenced in a page you will then see a warning message and be required to confirm that you want to proceed with a **Force Delete**. The fragment, together with its content fragment component, will be deleted from any content pages.
+   >If the fragment is already referenced in a page you will then see a warning message and be required to confirm that you want to proceed with a **Force Delete**. The fragment, together with its content fragment component, is deleted from any content pages.

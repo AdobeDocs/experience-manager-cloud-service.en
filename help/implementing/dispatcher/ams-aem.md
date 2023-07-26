@@ -12,7 +12,7 @@ The Apache and Dispatcher configuration in AEM as a Cloud Service is quite simil
 
 * In AEM as a Cloud Service, some Apache directives may not be used (for example `Listen` or `LogLevel`)
 * In AEM as a Cloud Service, only some pieces of the Dispatcher configuration can be put in include files and their naming is important. For example, filter rules that you want to reuse across different hosts must be put in a file called `filters/filters.any`. See the reference page for more information.
-* In AEM as a Cloud Service there is extra validation to disallow filter rules written using `/glob` to prevent security issues. Since `deny *` will be used rather than `allow *` (which cannot be used), customers will benefit from running the Dispatcher locally and doing trial and error, looking at the logs to know exactly what paths the Dispatcher filters are blocking in order for those can be added.
+* In AEM as a Cloud Service there is extra validation to disallow filter rules written using `/glob` to prevent security issues. Because `deny *` is used rather than `allow *` (which cannot be used), customers benefit from running the Dispatcher locally and doing trial and error, looking at the logs to know exactly what paths the Dispatcher filters are blocking in order for those can be added.
 
 ## Guidelines for migrating dispatcher configuration from AMS to AEM as a Cloud Service
 
@@ -26,11 +26,11 @@ that you have an archive with a structure similar to the one described in [Cloud
 ### Extract the archive and remove an eventual prefix
 
 Extract the archive to a folder, and make sure the immediate subfolders start with `conf`, `conf.d`,
- `conf.dispatcher.d` and `conf.modules.d`. If they don't, move them up in the hierarchy.
+ `conf.dispatcher.d` and `conf.modules.d`. If they do not, move them up in the hierarchy.
 
 ### Get rid of unused subfolders and files
 
-Remove subfolders `conf` and `conf.modules.d`, as well as files matching `conf.d/*.conf`.
+Remove subfolders `conf` and `conf.modules.d`, and files matching `conf.d/*.conf`.
 
 ### Get rid of all non-publish virtual hosts
 
@@ -58,7 +58,7 @@ Enter directory `conf.d/rewrites`.
 Remove any file named `base_rewrite.rules` and `xforwarded_forcessl_rewrite.rules` and remember to
 remove `Include` statements in the virtual host files referring to them.
 
-If `conf.d/rewrites` now contains a single file, it should be renamed to `rewrite.rules` and don't
+If `conf.d/rewrites` now contains a single file, it should be renamed to `rewrite.rules` and do not
 forget to adapt the `Include` statements referring to that file in the virtual host files as well. 
 
 If the folder however contains multiple, virtual host-specific files, their contents should be
@@ -71,7 +71,7 @@ Enter directory `conf.d/variables`.
 Remove any file named `ams_default.vars` and remember to remove `Include` statements in the virtual
 host files referring to them. 
 
-If `conf.d/variables` now contains a single file, it should be renamed to `custom.vars` and don't
+If `conf.d/variables` now contains a single file, it should be renamed to `custom.vars` and do not
 forget to adapt the `Include` statements referring to that file in the virtual host files as well. 
 
 If the folder however contains multiple, virtual host-specific files, their contents should be
@@ -126,7 +126,7 @@ configuration can be found in the folder `src` of this SDK. Don't forget to adap
 as well. 
 
 If instead `conf.dispatcher.d/cache` now contains a single file with suffix `_cache.any`,
-it should be renamed to `rules.any` and don't forget to adapt the `$include` statements
+it should be renamed to `rules.any` and do not forget to adapt the `$include` statements
 referring to that file in the farm files as well. 
 
 If the folder however contains multiple, farm-specific files with that pattern, their contents
@@ -151,7 +151,7 @@ Enter directory `conf.dispatcher.d/clientheaders`.
 Remove any file prefixed `ams_`. 
 
 If `conf.dispatcher.d/clientheaders` now contains a single file with suffix `_clientheaders.any`,
-it should be renamed to `clientheaders.any` and don't forget to adapt the `$include` statements
+it should be renamed to `clientheaders.any` and do not forget to adapt the `$include` statements
 referring to that file in the farm files as well. 
 
 If the folder however contains multiple, farm-specific files with that pattern, their contents
@@ -180,7 +180,7 @@ Enter directory `conf.dispatcher.d/filters`.
 Remove any file prefixed `ams_`.
 
 If `conf.dispatcher.d/filters` now contains a single file it should be renamed to
-`filters.any` and don't forget to adapt the `$include` statements referring to that
+`filters.any` and do not forget to adapt the `$include` statements referring to that
 file in the farm files as well. 
 
 If the folder however contains multiple, farm-specific files with that pattern, their contents
@@ -224,7 +224,7 @@ Rename the directory `conf.dispatcher.d/vhosts` to `conf.dispatcher.d/virtualhos
 Remove any file prefixed `ams_`. 
 
 If `conf.dispatcher.d/virtualhosts` now contains a single file it should be renamed to
-`virtualhosts.any` and don't forget to adapt the `$include` statements referring to that
+`virtualhosts.any` and do not forget to adapt the `$include` statements referring to that
 file in the farm files as well. 
 
 If the folder however contains multiple, farm-specific files with that pattern, their contents
@@ -289,7 +289,7 @@ This will start the container and expose Apache on local port 8080.
 ### Use your new Dispatcher configuration
 
 Congratulations! If the validator no longer reports any issue and the
-docker container starts up without any failures or warnings, you're
+docker container starts up without any failures or warnings, you are
 ready to move your configuration to a `dispatcher/src` subdirectory
 of your git repository.
 

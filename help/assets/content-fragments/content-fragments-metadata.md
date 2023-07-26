@@ -17,7 +17,7 @@ You can view and edit the metadata (properties) for content fragments:
     * Select [**View Properties** to open the dialogs](/help/assets/manage-digital-assets.md#editing-properties). Once open for viewing you can also edit.
     * Open the content fragment for editing, then select **Metadata** from the side panel.
 
-   ![metadata](assets/cfm-metadata-01.png)
+   ![Metadata in side panel](assets/cfm-metadata-01.png)
 
 3. The **Basic** tab provides options that you can view or edit:
 
@@ -28,6 +28,12 @@ You can view and edit the metadata (properties) for content fragments:
     * **Tags**
       * [Tags](/help/sites-cloud/authoring/features/tags.md) are particularly powerful when organizing your fragments as they can be used for content classification and taxonomy. Tags can be used for the purpose of finding content (by tags) and applying bulk operations. 
       For example, you can tag relevant fragments as “Christmas launch” to allow browsing only these as a subset, or to copy them for use with another future launch in a new folder.
-    * Created (display only)
 
-   ![metadata](assets/cfm-metadata-02.png)
+        >[!NOTE]
+        >
+        >**Tags** can also be added when [authoring your Variation content](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) and when [creating Variations](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+
+    * **Created** (display only)
+
+    For example:
+    ![Example of Metadata](assets/cfm-metadata-02.png)

@@ -16,7 +16,7 @@ exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Launch the Content Fragment editor"
->abstract="Your AEM headless trial comes integrated with a sample React app, so you can see how easy it is for anyone to independently manage content without development time.<br><br>Launch this module in a new tab by clicking below, then follow this guide."
+>abstract="Now let's explore how headless content authoring works. Your AEM headless trial comes integrated with a sample React app, so you can see how easy it is for anyone to independently manage content without development time.<br><br>Launch this module in a new tab by clicking below, then follow this guide."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
@@ -29,13 +29,13 @@ You start in the Content Fragment editor with the sample app provided with your 
 
 1. Tap or click the **Preview** button at the top-right of the editor screen.
 
-1. The demo app opens in a new tab. The app is for the fictional WKND outdoor lifestyle brand. Click around to navigate the sample content.
+1. The demo app opens in a new tab. The app is for the fictional WKND outdoor lifestyle brand. Scroll down the page to navigate the sample content.
 
 1. Return to the browser tab of the Content Fragment editor to continue.
 
 ![Preview the app](assets/do-not-localize/preview-app-1.png)
 
-## Edit a header in the App {#edit-app}
+## Edit a Header in the App {#edit-app}
 
 The Content Fragment editor displays the basic layout of the app as a page Content Fragment. The **Panels** represent different pages of the app, each of which is its own Content Fragment. By modifying these fragments, you can change the content of the app.
 
@@ -57,7 +57,7 @@ The Content Fragment editor displays the basic layout of the app as a page Conte
 
 That's how easy it is to update content within a React app when integrated into AEM headless CMS.
 
-## Swap an image in the app {#change-image}
+## Swap an Image in the App {#change-image}
 
 Now that you modified a headline in the app, try changing an image.
 
@@ -73,7 +73,7 @@ Now that you modified a headline in the app, try changing an image.
 
    ![Remove image from fragment](assets/do-not-localize/swap-image-4.png)
 
-1. Tap or click **Add asset**.
+1. Tap or click **Add asset** and then **Browse Assets** in the pop-up menu.
 
 1. The **Select Asset** dialog opens and the path **sample-wknd-app** &gt; **en** &gt; **image-files** is automatically selected for you.
 
@@ -85,9 +85,9 @@ Now that you modified a headline in the app, try changing an image.
 
 It's that easy to update images and assets in your apps with AEM headless CMS.
 
-## Add a reference to a new Content Fragment in the app {#create-moment}
+## Add a Reference to a New Content Fragment in the app {#create-moment}
 
-Now that you updated the image of the biker, let's walk through how to add new content to an app by creating and reference a new Content Fragment. You will add a product call-out managed by a "shoppable moment" Content Fragment to the second panel of the app.
+Now that you updated the image of the biker, let's walk through how to add new content to an app by creating and referencing a new Content Fragment. You will add a product call-out managed by a "shoppable moment" Content Fragment to the second panel of the app.
 
 ![Example of a shoppable moment](assets/do-not-localize/example-shoppable-moment.png)
 
@@ -99,7 +99,7 @@ Now that you updated the image of the biker, let's walk through how to add new c
 
 1. Select the **Mtn Biking - Shoppable** layer.
 
-1. In order to create a new call-out on this panel, you must create a new shoppable moment Content Fragment. Tap or click the **+ Create new fragment** button.
+1. To create a new call-out on this panel, you must create a new shoppable moment Content Fragment. Tap or click the **+ Create new fragment** button.
 
    ![Add a shoppable moment](assets/do-not-localize/add-reference-1-5.png)
 

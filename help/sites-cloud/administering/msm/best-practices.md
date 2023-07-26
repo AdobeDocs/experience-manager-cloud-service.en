@@ -23,8 +23,8 @@ Keep in mind that a Live Copy can be created using either [regular pages](creati
 
 The additional benefits of using a blueprint configuration are that they:
 
-* Allow the author to use the **Rollout** option on a blueprint in order to explicitly push modifications to Live Copies that inherit from this blueprint.
-* Allow the author to use **Create Site** in order to easily select languages and configure the structure of the Live Copy.
+* Allow the author to use the **Rollout** option on a blueprint to explicitly push modifications to Live Copies that inherit from this blueprint.
+* Allow the author to use **Create Site** to easily select languages and configure the structure of the Live Copy.
 * Define a default rollout configuration for Live Copies that have a relationship with the blueprint.
 
 In the case that a blueprint configuration is not referenced, rollouts can only be initiated from the Live Copies themselves, essentially pulling content from source.
@@ -33,7 +33,7 @@ When creating a new site with Live Copy, it is advantageous to create blueprint 
 
 >[!NOTE]
 >
-> Note that CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Please plan around this when configuring Live Copy.
+>CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Plan around this rule when configuring Live Copy.
 
 ## Components and Container Synchronization {#components-and-container-synchronization}
 
@@ -42,7 +42,7 @@ In general, the rollout rule in MSM regarding the synchronization of components 
 * Components are rolled out syncing any resources contained in the blueprint.
 * Containers synchronize only the current resource.
 
-This means that components are treated as an aggregate, and in a rollout the component itself and all its children are replaced with those in the blueprints. This means that if a resource is added to such a component locally, it will be lost to the content of the blueprint at rollout.
+This means that components are treated as an aggregate, and in a rollout the component itself and all its children are replaced with those in the blueprints. This means that if a resource is added to such a component locally, it is lost to the content of the blueprint at rollout.
 
 To support the nesting of components such that locally added components are maintained in a rollout, the component must be declared as a container.
 
@@ -75,13 +75,13 @@ MSM can assist in the creation of multilingual websites in two ways:
 
 When creating language masters keep in mind the following:
 
-* While MSM itself **does not provide content translation**, it can be integrated with third-party translation connectors that do. Please note that:
+* While MSM itself **does not provide content translation**, it can be integrated with third-party translation connectors that do. Note the following:
   * MSM allows you to cancel inheritance at the page and/or component level. This helps prevent overwriting translated content (from a Live Copy, with not-yet-translated content from a blueprint) on the next rollout.
     * Some third-party translation connectors automate this management of MSM inheritances.
-    * Please check with your translation service provider for more information.
+    * Check with your translation service provider for more information.
     * An alternative approach for creating and translating language masters is to use language copies in conjunction with AEM's out-of-the-box translation integration framework.
 
-For more information see [Translating Content for Multilingual Sites](/help/sites-cloud/administering/translation/overview.md) and the [Translation Best Practices.](/help/sites-cloud/administering/translation/best-practices.md)
+For more information see [Translating Content for Multilingual Sites](/help/sites-cloud/administering/translation/overview.md) and the [Translation Best Practices](/help/sites-cloud/administering/translation/best-practices.md).
 
 ## Structure Changes and Rollouts {#structure-changes-and-rollouts}
 
@@ -138,7 +138,7 @@ In addition to customizing rollout actions, MSM also allows you to customize nod
 
 ## Further Information {#further-information}
 
-Refer to the following articles for more details on MSM and Live Copy.
+See the following articles for more details on MSM and Live Copy.
 
 * [Creating and Synchronizing Live Copies](creating-live-copies.md)
 * [Live Copy Overview Console](live-copy-overview.md)

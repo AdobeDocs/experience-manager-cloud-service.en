@@ -166,3 +166,18 @@ Open the properties for a folder configured with a folder metadata schema. A **[
 Enter metadata values in the various fields and tap/click **[!UICONTROL Save]** to store the values. The values you specify are stored in the folder node in the CRX repository.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
