@@ -49,7 +49,7 @@ You can trigger a tree replication by choosing **Tools - Workflow - Models** and
 
 ![The Publish Content Tree Workflow Card](/help/operations/assets/publishcontenttreeworkflow.png)
 
-Do not modify or invoke the original model. Instead, make sure to first copy the model and then modify or invoke that copy.
+Do not invoke the original model. Instead, make sure to first copy the model and invoke that copy.
 
 Like all workflows, it can also be invoked via API. For more information, see [Interacting with Workflows Programmatically](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=en#extending-aem).
 
