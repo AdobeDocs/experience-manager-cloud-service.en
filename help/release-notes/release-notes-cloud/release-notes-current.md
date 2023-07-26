@@ -158,7 +158,7 @@ Filter traffic at the CDN based on:
 * request headers and properties (e.g., IP address)
 * traffic patterns known to be associated with malicious traffic
 
-Interested in trying out the feature and sharing feedback? Send an email to aemcs-waf-adopter@adobe.com from your official email ID to learn more about the early adopter program. Space is limited.
+Interested in trying out the feature and sharing feedback? Send an email to **aemcs-waf-adopter@adobe.com** from your official email ID to learn more about the early adopter program. Space is limited.
 
 Learn more about the feature in the article [here](/help/security/cdn-and-waf-rules.md).
 
