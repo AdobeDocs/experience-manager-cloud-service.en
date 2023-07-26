@@ -66,7 +66,7 @@ AEM as a Cloud Service has several types of notifications, but only a subset app
 
 ## Supported Notification Types {#supported-notification-types}
 
-The following table lists the notification types currently supported in Actions Center.
+The following table lists the notification types currently supported in Actions Center. Notifications are currently limited to production environments.
 
 | Notification Type  | Related Product Profile  | Corrective Action |
 |---|---|---|
