@@ -164,7 +164,7 @@ Learn more about the feature in the article [here](/help/security/cdn-and-waf-ru
 
 ### Other Foundation changes {#other-foundation-changes}
 
-* During the week of August 7th, AEM will return error code 429 instead of error code 503 when requests to AEM instances exceed a healthy level. [Learn more](/help/implementing/developing/introduction/development-guidelines.md)
+* During the week of August 7th, AEM will return error code 429 instead of error code 503 when requests to AEM instances exceed a healthy level. [Learn more](/help/implementing/developing/introduction/development-guidelines.md).
 
 ## Maintenance Release Notes {#maintenance}
 
