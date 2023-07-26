@@ -334,7 +334,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Retrieve git repository access information](/help/journey-sites/quick-site/retrieve-access.md)
         + [Customize the site theme](/help/journey-sites/quick-site/customize-theme.md)
         + [Deploy your customized theme](/help/journey-sites/quick-site/deploy-theme.md)
-    + [Administering Workflows](/help/sites-cloud/administering/workflows-administering.md)
     + Reusing Content {#reusing-content}
       + [MSM and Translation](/help/sites-cloud/administering/msm-and-translation.md)
       + Multi Site Manager {#msm}
@@ -363,6 +362,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Configuring the Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md)
         + [Connecting to Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
         + [Translation Best Practices](/help/sites-cloud/administering/translation/best-practices.md)
+    + [Administering Tags](/help/sites-cloud/administering/tags.md)
+    + [Administering Workflows](/help/sites-cloud/administering/workflows-administering.md)
   + Integrating with AEM as a Cloud Service {#integrations}
     + [Integrating with Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
     + [Integrating with Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
