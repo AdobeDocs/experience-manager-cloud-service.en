@@ -24,6 +24,8 @@ The release date for Cloud Manager release 2023.7.0 in AEM as a Cloud Service is
   * This will be rolled out in a phased manner.
 * When [cancelling execution,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) the pipeline execution approval step now asks the user to provide a reason for cancelling.
   * This will be rolled out in a phased manner.
+* Users can now access [logs from the copy content process.](/help/implementing/developing/tools/content-copy.md#accessing-logs)
+  * This option is available only if both the source and destination environments are on AEM version `2023.7.12549` or higher.
 
 ## Bug Fixes {#bug-fixes}
 
