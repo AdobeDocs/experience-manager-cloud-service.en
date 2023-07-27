@@ -8,6 +8,11 @@ Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, sale
 
 # Integration of Salesforce application using OAuth 2.0 client credential flow {#configure-salesforce-with-ouath-2.0-client-credential}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 You can use OAuth 2.0 client credentials to integrate AEM Forms with the Salesforce application. OAuth 2.0 client credentials are a standard and secure method for direct communication without user involvement.  
 
 ![Workflow while setting communication between AEM Forms and Salesforce application](/help/forms/assets/salesforce-workflow.png)
