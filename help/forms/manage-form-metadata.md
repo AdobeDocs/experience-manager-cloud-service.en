@@ -7,6 +7,14 @@ exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 ---
 # Add, remove, or edit metadata of an Adaptive Form {#manage-form-metadata}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html)                  |
+| AEM as a Cloud Service     | This article          |
+
 Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 
 [!DNL AEM Forms], by default, provides a defined set of metadata for each asset type. Beyond the default metadata, you can add custom metadata to each of the asset types. [!DNL AEM Forms] also provides you with the right means of creating, managing, and exchanging all this metadata efficiently for your forms.
