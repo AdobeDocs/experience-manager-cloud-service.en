@@ -10,17 +10,17 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="Create new content"
+>title="Create headless content"
 >abstract="Using the model that you created in the previous module, you learn how to create content which can be used for page authoring, or as the basis of your headless content."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Launch the Content Fragment console"
->abstract="Creating consistent, high-quality content that works seamlessly across your apps and websites leads to great customer experiences. This module guides you through creating your first Content Fragment to illustrate how to make this happen.<br><br>Launch this module in a new tab by clicking the button below, then follow this guide."
+>abstract="Creating consistent, high-quality content that works seamlessly across your apps and websites leads to great customer experiences. This module guides you through creating your first headless content by using the Content Fragment console.<br><br>Launch this module in a new tab by clicking the button below, then follow this guide."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="Great job! In this module, you learned how to author a Content Fragment based on the model you made previously. You now understand how content teams can create and manage content for apps and websites independent of development cycles."
+>title="Great job! In this module, you learned how to author headless content as a Content Fragment based on the model you made previously. You now understand how content teams can create and manage content for apps and websites independent of development cycles."
 >abstract=""
 
 ## Create a Content Fragment {#create-fragment}
@@ -28,6 +28,8 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 Content Fragments represent your headless content and are based on predefined structures, called Content Fragment models. You already created a model in a previous module.
 
 In this module, you create a new Content Fragment based on that model by using the Content Fragment console. Think of the Content Fragment console as your library of headless content. Use it to create new Content Fragments and manage existing fragments.
+
+The Content Fragment console is used to create and edit headless content across delivery channels and independent of context, which can be the most effective method in many authoring cases. In a later module we will explore editing headless content in-context and in-place.
 
 1. Tap or click the **Create** button at the top-right of the console.
 
