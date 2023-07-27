@@ -5,6 +5,11 @@ exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 ---
 # Use AEM Forms as a Cloud Service Communications {#frequently-asked-questions}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)                  |
+| AEM as a Cloud Service     | This article        |
+
 Communications capability helps you to create brand-approved, personalized, and standardized documents such as business correspondences, statements, claim processing letters, benefit notices, monthly bills, or welcome kits.
 
 The capability provides APIs to generate and manipulate the documents. You can generate or manipulate a document on demand or create a batch job to generate multiple documents at defined intervals. Communications APIs provide:
