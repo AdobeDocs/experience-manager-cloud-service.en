@@ -2,7 +2,7 @@
 title: How to add an Adaptive Form to AEM Sites page?
 description: Discover how to create or add an Adaptive Form to your AEM Sites page. Also learn the benefits, and various ways to integrate forms into your website.
 feature: Adaptive Forms, Page Editor, Authoring
-Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
+Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 ---
 
 # Add an Adaptive Form to an AEM Sites page or Experience Fragment {#create-or-add-an-adaptive-form-to-aem-sites-page}
@@ -35,7 +35,7 @@ If you have created Adaptive Forms Foundation Component or plain HTML based form
 In addtion, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 
-## How to create or add an Adaptive Form in AEM Sites page or AEM Experience Fragment? {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
+## How to create or add an Adaptive Form in AEM Sites page or AEM Experience Fragment? {#various-options}
 
 You can take full advantage of this feature by utilizing the following options:
 
@@ -47,9 +47,9 @@ You can take full advantage of this feature by utilizing the following options:
 
 * **Add multiple forms to an AEM Sites page or Experience Fragment:**  You can create or add multiple Adaptive Forms to an AEM Sites page to provide multiple choices to users based on their preferences and requirements. These can a combination of brand-new form from scratch and existing forms.
 
-* **Create and add forms based on approved templates to an AEM Sites page:** You can leverage pre-approved templates to quickly create Adaptive Forms that align with your organization's branding guidelines and design standards. The option is available only for Adaptive Forms created with Adaptive Forms Editor or Adaptive Forms - Embed component. 
+* **[Create and add forms based on approved templates to an AEM Sites page](embed-adaptive-form-core-components-aem-sites.md):** You can leverage pre-approved templates to quickly create Adaptive Forms that align with your organization's branding guidelines and design standards. The option is available only for Adaptive Forms created with Adaptive Forms Editor or Adaptive Forms - Embed component. 
 
-* **Add existing forms to an AEM Sites page:** You can easily integrate forms that you have already created into your websites, enabling visitors to interact with them directly. The option is available only for Adaptive Forms created with Adaptive Forms Editor or Adaptive Forms - Embed component. 
+* **[Add existing forms to an AEM Sites page](embed-adaptive-form-core-components-aem-sites.md):** You can easily integrate forms that you have already created into your websites, enabling visitors to interact with them directly. The option is available only for Adaptive Forms created with Adaptive Forms Editor or Adaptive Forms - Embed component. 
 
 ## Considerations to create an Adaptive Form in AEM Sites page or AEM Experience Fragment {#consideration}
 
@@ -58,7 +58,7 @@ You can take full advantage of this feature by utilizing the following options:
 * When you create or add a form using the Adaptive Form-embed component, the forms undergo translation and localization using the AEM Forms translation flow. In this case, a single form is maintained and referenced in all the language copies of the Sites pages. Adaptive Form-embed component does not provide access to various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager.
 
 
-## Requirements to create or add an Adaptive Form in AEM Sites page or AEM Experience Fragment {#before-you-start-creating-an-adaptive-form}
+## Requirements to create or add an Adaptive Form in AEM Sites page or AEM Experience Fragment {#before-you-start}
 
 Before you start creating or an Adaptive Form, enable Adaptive Forms Core Components and add Adaptive Forms Client Libraries to your AEM Sites page:
 
@@ -131,7 +131,7 @@ To enable [!UICONTROL Adaptive Forms Container] component in template's policy, 
 
 +++
 
-## Create an Adaptive Form {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
+## Create an Adaptive Form {#create-an-adaptive-form-in-sites-editor}
 
 You can create a brand-new form from scratch, tailoring it specifically to your requirements and design preferences, directly in an AEM Sites page or in Experience Fragment. For single-use forms, direct authoring to an AEM Sites page is recommended, while Experience Fragments are ideal for forms that need to be reused across multiple pages on your website.
 
@@ -139,7 +139,7 @@ You can create a brand-new form from scratch, tailoring it specifically to your 
 * [Create a form in an Experience Fragment](#create-an-adaptive-form-in-experience-fragment) 
 * [Convert an Adaptive Form in AEM Sites page to an Experience Fragment](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment) 
 
-### Create a form in an AEM Sites page {#create-an-adaptive-form-in-sites-editor}
+### Create a form in an AEM Sites page {#create-an-adaptive-form-in-sites-page}
 
 You can use the Adaptive Form Container component in AEM Page Editor to create a custom form. The component allows you to create a form by dragging and dropping the form components. The form components are based on Core Components. You can easily customize these as per the requirement of your organization. 
 
@@ -167,7 +167,7 @@ To create an Adaptive Form in an Experience Fragment:
 
 Next, you [set the Submit Action](#configure-submit-action-for-form) and advanced properties. 
 
-### Convert a form in AEM Sites page to an Experience Fragment {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
+### Convert a form in AEM Sites page to an Experience Fragment {#convert-an-adaptive-form}
 
 You can convert an existing Adaptive Form in a Sites Page Editor to an Experience Fragment to reuse the form across multiple pages or sites. 
 
@@ -187,7 +187,7 @@ To convert an Adaptive Form in AEM Sites page to an Experience Fragment:
     * **Fragment title:** Specify title of the Experience Fragment. The title uniquely identifies an Experience Fragment 
 
 
-## Configure Submit Action for a form in AEM Sites page or Expereince Fragment {#configure-submit-action-for-form}
+## Configure Submit Action for a form in AEM Sites page or Expereince Fragment {#configure-submit-action}
 
 A Submit Action allows you to choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the Submit button on an Adaptive Form. Adaptive forms include some out of the box submit actions. You can also extend a default submit actions to create your own custom submit action. To configure a Submit Action for your form:
 
@@ -198,7 +198,7 @@ A Submit Action allows you to choose the destination of data captured via an Ada
 1. Select and configure a Submit action, based on your requirements. For detailed information about Submit Actions, see [Adaptive Form Submit Action](/help/forms/configuring-submit-actions.md)
 
 
-## Configure a Schema or Form Data Model for a form in AEM Sites page or Expereince Fragment {#configure-schema-or-data-model-for-form}
+## Configure a Schema or Form Data Model for a form in AEM Sites page or Expereince Fragment {#configure-schema-or-data-model}
 
 You can use the Form Data Model to connect a form to a Data Source to send and receive data based on user actions. You can also connect a form to a JSON schema to receive the submitted data in a pre-defined format. Based on the requirement, connect your form to a JSON schema or Form data model:
 
@@ -218,7 +218,7 @@ To configure a JSON Schema or Form Data Model for your form:
 
 1. Click **[!UICONTROL Done]**.
 
-## Configure a pre-fill service for a form in AEM Sites page or Expereince Fragment {#configure-prefill-service-for-form}
+## Configure a pre-fill service for a form in AEM Sites page or Expereince Fragment {#configure-prefill-service}
 
 You can use the prefill service to auto fill fields of an Adaptive Form using existing data. When a user opens a form, the values for those fields are prefilled. You can:
 
