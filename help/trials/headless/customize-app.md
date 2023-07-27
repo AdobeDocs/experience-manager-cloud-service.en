@@ -73,7 +73,7 @@ Now that you modified a headline in the app, try changing an image.
 
    ![Remove image from fragment](assets/do-not-localize/swap-image-4.png)
 
-1. Tap or click **Add asset**.
+1. Tap or click **Add asset** and then **Browse Assets** in the pop-up menu.
 
 1. The **Select Asset** dialog opens and the path **sample-wknd-app** &gt; **en** &gt; **image-files** is automatically selected for you.
 
