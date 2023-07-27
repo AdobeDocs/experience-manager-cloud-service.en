@@ -1,11 +1,9 @@
 ---
-title: Using CAPTCHA in Adaptive Forms
-seo-title: Using CAPTCHA in Adaptive Forms
+title: Using reCAPTCHA in Adaptive Forms
 description: Learn how to configure AEM CAPTCHA or Google reCAPTCHA service in Adaptive Forms.
-seo-description: Learn how to configure AEM CAPTCHA or Google reCAPTCHA service in Adaptive Forms.
 topic-tags: adaptive_forms, author
 ---
-# Use CAPTCHA in Adaptive Forms{#using-captcha-in-adaptive-forms}
+# Use reCAPTCHA in Adaptive Forms{#using-reCAPTCHA-in-adaptive-forms}
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -16,17 +14,17 @@ topic-tags: adaptive_forms, author
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes.
 
-[!DNL AEM Forms] support CAPTCHA in Adaptive Forms. You can use reCAPTCHA service by Google to implement CAPTCHA.
+[!DNL AEM Forms] support reCAPTCHA in Adaptive Forms. You can use reCAPTCHA service by Google to implement CAPTCHA.
 
 >[!NOTE]
 >
->* [!DNL AEM Forms] support reCaptcha v2 and enterprise. Any other version is not supported.
->* CAPTCHA in Adaptive Forms is not supported in offline mode on [!DNL AEM Forms] app.
+>* [!DNL AEM Forms] support reCaptcha v2 and reCaptcha Enterprise. Any other version is not supported.
+>* reCAPTCHA in Adaptive Forms is not supported in offline mode on [!DNL AEM Forms] app.
 >
 
 ## Configure reCAPTCHA service by Google {#google-reCAPTCHA}
 
-Form authors can use the reCAPTCHA service by Google to implement CAPTCHA in Adaptive Forms. It offers advance CAPTCHA capabilities to protect your site. For more information on how reCAPTCHA works, see [Google reCAPTCHA](https://developers.google.com/recaptcha/). reCAPTCHA service includes [!DNL reCAPTCHA v2] and [!DNL reCAPTCHA Enterprise] which you can integrate into [!DNL AEM Forms]. Based on your requirement you can configure reCAPTCHA service to enable:
+Form authors can use the reCAPTCHA service by Google to implement reCAPTCHA in Adaptive Forms. It offers advance CAPTCHA capabilities to protect your site. For more information on how reCAPTCHA works, see [Google reCAPTCHA](https://developers.google.com/recaptcha/). reCAPTCHA service includes [!DNL reCAPTCHA v2] and [!DNL reCAPTCHA Enterprise] which you can integrate into [!DNL AEM Forms]. Based on your requirement you can configure reCAPTCHA service to enable:
 
 ![reCAPTCHA](/help/forms/assets/recaptcha_new.png)
 
@@ -49,9 +47,9 @@ Form authors can use the reCAPTCHA service by Google to implement CAPTCHA in Ada
 1. Configure the cloud service for [!DNL reCAPTCHA Enterprise].
 
     1. On your Experience Manager author instance, go to ![tools-1](assets/tools-1.png) &gt; **[!UICONTROL Cloud Services]**.
-    1. Tap **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container uou created and tap **[!UICONTROL Create]**.
+    1. Tap **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container you created and tap **[!UICONTROL Create]**.
     1. Select version as [!DNL reCAPTCHA Enterprise] and specify Name, Project ID, Site Key, and API key (Obtained in Step 2) for reCAPTCHA Enterprise service.
-    1. Select key type, the key type should be same as the site key you configured in the [Google Cloud project](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin), for example, **Checkbox site key** or **Score-based site key**.
+    1. Select key type, the key type should be same as the site key that you configured in the [Google Cloud project](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin), for example, **Checkbox site key** or **Score-based site key**.
     1. Specify a [threshold score in the range 0 to 1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). Scores greater than or equal to the threshold scores identify human interaction, otherwise considered bot interaction.
     1. Tap **[!UICONTROL Create]** to create the cloud service configuration.
 
@@ -78,7 +76,7 @@ Once the reCAPTCHA Enterprise service is enabled, it is available for use in ada
 1. Configure the cloud service for reCAPTCHA v2.
 
     1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) &gt; **Cloud Services**.
-    1. Tap **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container you created and tap **[!UICONTROL Create]**.
+    1. Tap **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container that you created and tap **[!UICONTROL Create]**.
     1. Select version as [!DNL reCAPTCHA v2] , specify Name, Site key, and Secret Key for reCAPTCHA service (Obtained in Step 1) and tap **[!UICONTROL Create]** to create the cloud service configuration.
     1. In the Edit Component dialog, specify the site and secret keys obtained in step 1. Tap **[!UICONTROL Save Settings]** and then tap **OK** to complete the configuration.
 
@@ -101,20 +99,17 @@ To use reCAPTCHA in adaptive forms:
 
    >[!NOTE]
    >
-   >Using more than one Captcha component in an adaptive form is not supported. Also, it is not recommended to use CAPTCHA in a panel marked for lazy loading or in a fragment.
-
-   >[!NOTE]
-   >
-   >Captcha is time-sensitive and expires in about a minute. Therefore, it is recommended to place the Captcha component just before the Submit button in the adaptive form.
+   >* Using more than one Captcha component in an adaptive form is not supported. Also, it is not recommended to use CAPTCHA in a panel marked for lazy loading or in a fragment.
+   >* Captcha is time-sensitive and expires in about a minute. Therefore, it is recommended to place the Captcha component just before the Submit button in the adaptive form.
 
 1. Select the Captcha component that you added and tap ![cmppr](assets/cmppr.png) to edit its properties.
 1. Specify a title for the CAPTCHA widget. The default value is **Captcha**. Select **Hide title** if you do not want title to appear.
 1. From the **Captcha service** drop-down, select **reCAPTCHA** to enable reCAPTCHA service if you configured it as described in [reCAPTCHA service by Google](#google-reCAPTCHA).
 1. Select a configuration from the Settings drop-down for **reCAPTCHA Enterprise** or **reCAPTCHA v2** 
-1. If the selected configuration has version reCAPTCHA Enterprise:
-    1. You can select reCAPTCHA cloud configuration with **key type** as **checkbox**. In checkbox key type the customized error message appears as an inline message if the captcha validation fails. You can select size as **[!UICONTROL Normal]** and **[!UICONTROL Compact]**.
-    1. You can select reCAPTCHA cloud configuration with **key type** as **score based**. In score based key type the customized error message shows as a pop-up message if the captcha validation fails.
-    1. When you select a **[!UICONTROL Bind Reference]** the data submitted is a bound data, otherwise it is unbound data. Below are XML examples of unbound data and bound data (with bind reference as SSN) respectively, when a form is submitted.
+1. If the selected configuration has version reCAPTCHA Enterprise, the key type can be of **checkbox** or **score based** based on your selection when you configure reCAPTCHA enterprise:
+    1. In the cloud configuration with key type as **checkbox**, the customized error message appears as an inline message if the captcha validation fails. You can select size as **[!UICONTROL Normal]** and **[!UICONTROL Compact]**.
+    1. In the cloud configuration with **key type** as **score based**,  the customized error message shows as a pop-up message if the captcha validation fails.
+    1. You can select a **[!UICONTROL Bind Reference]** in [!DNL AEM Forms], In **[!UICONTROL Bind Reference]** the data submitted is a bound data, otherwise it is unbound data. Below are XML examples of unbound data and bound data (with bind reference as SSN) respectively, when a form is submitted.
 
         ```xml
 
@@ -123,7 +118,7 @@ To use reCAPTCHA in adaptive forms:
             <afUnboundData>
                 <data>
                     <captcha16820607953761>
-                        <captchaType>reCAPTCHAEnterprise</captchaType>
+                        <captchaType>reCaptchaEnterprise</captchaType>
                         <captchaScore>0.9</captchaScore>
                     </captcha16820607953761>
                 </data>
@@ -169,7 +164,7 @@ To use reCAPTCHA in adaptive forms:
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                     <PersonalDetails>
                         <SSN>
-                            <captchaType>reCAPTCHAEnterprise</captchaType>
+                            <captchaType>reCaptchaEnterprise</captchaType>
                             <captchaScore>0.9</captchaScore>
                         </SSN>
                         <FirstName>Sarah</FirstName>
@@ -195,7 +190,7 @@ To use reCAPTCHA in adaptive forms:
 
 
    **If the selected configuration has version reCAPTCHA v2**:
-    1. Select the size as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget. You can also select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only in the case of a suspicious activity. The **protected by reCAPTCHA** badge, displayed below, is displayed on the protected forms.
+    1. You can select the size as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget when you configure reCAPTCHA, you can also select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only in the case of a suspicious activity. The **protected by reCAPTCHA** badge, displayed below, is displayed on the protected forms.
 
         ![Google protected by reCAPTCHA badge](/help/forms/assets/google-recaptcha-v2.png)
 
