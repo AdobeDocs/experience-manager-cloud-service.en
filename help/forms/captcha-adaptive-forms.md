@@ -190,11 +190,12 @@ To use reCAPTCHA in adaptive forms:
             </afSubmissionInfo>
             </afData>
     ```
+    
     If you select **reCAPTCHA v2** version:
       1. You can select the size as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget. 
       1. You can select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only in the case of a suspicious activity.
 
-The reCAPTCHA service is enabled on the adaptive form. You can preview the form and see the CAPTCHA working. The **protected by reCAPTCHA** badge, displayed below, is displayed on the protected forms.
+    The reCAPTCHA service is enabled on the adaptive form. You can preview the form and see the CAPTCHA working. The **protected by reCAPTCHA** badge, displayed below, is displayed on the protected forms.
     ![Google protected by reCAPTCHA badge](/help/forms/assets/google-recaptcha-v2.png)
 
 1. Save the properties.
