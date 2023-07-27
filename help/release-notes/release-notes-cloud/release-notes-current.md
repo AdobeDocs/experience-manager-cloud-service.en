@@ -32,7 +32,7 @@ Have a look at the July 2023 Release Overview video for a summary of the feature
 
 ### New features in [!DNL Experience Manager Sites] {#sites-features}
 
-* MSM for Content Fragments. AEM Multisite Manager is now avaiable for Content Fragments, allowing to create Content Fragment Live Copies for bulk content distribution. Granular inheritance controls are available down to Content Fragment Element and Variation level. 
+* MSM for Content Fragments. AEM Multisite Manager is now available for Content Fragments, allowing to create Content Fragment Live Copies for bulk content distribution. Granular inheritance controls are available down to Content Fragment Element and Variation level. 
 
 ### New features in [!DNL Experience Manager Sites] prerelease {#prerelease-sites}
 
