@@ -81,9 +81,9 @@ Assets Essentials now sorts the search results based on Relevance, by default. Y
 
 ### Pre-release features available in [!DNL Forms] {#pre-release-features-available-in-forms-channel}
 
-* Google reCAPTCHA enterprise support: Use Google reCAPTCHA Enterprise in an Adaptive Form to provide enhanced protection against fraudulent activity and spam, providing a safer user experience. With advanced risk analysis and seamless integration, genuine users can easily submit forms while bots are effectively blocked.
+* [**Google reCAPTCHA enterprise support**](/help/forms/captcha-adaptive-forms.md): Use Google reCAPTCHA Enterprise in an Adaptive Form to provide enhanced protection against fraudulent activity and spam, providing a safer user experience. With advanced risk analysis and seamless integration, genuine users can easily submit forms while bots are effectively blocked.
 
->[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
+    >[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
 
 ### Headless Adaptive Forms early adopter program {#forms-early-adopter}
 
