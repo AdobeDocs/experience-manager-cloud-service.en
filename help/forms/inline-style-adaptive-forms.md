@@ -8,6 +8,13 @@ exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
 ---
 # Inline styling of Adaptive Form components {#inline-styling-of-adaptive-form-components}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 You can define the overall appearance and style of an Adaptive Form by specifying styles using [theme editor](themes.md). Also, you can apply inline CSS styles to individual Adaptive Form components and preview the changes on the fly. Inline styles override styling provided in the theme.
 
 ## Apply inline CSS properties {#apply-inline-css-properties}
