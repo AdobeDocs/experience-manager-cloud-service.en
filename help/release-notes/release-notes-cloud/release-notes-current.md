@@ -36,7 +36,7 @@ Have a look at the July 2023 Release Overview video for a summary of the feature
 
 ### New features in [!DNL Experience Manager Sites] prerelease {#prerelease-sites}
 
-* The [Content Fragment Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en) now allows users to view tags and search by tags applied as metadata to Content Fragments. Users will no longer have to swtich to the Assets UI for this capability, reducing context switching and improving efficiency. 
+* The [Content Fragment Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en) now allows users to view tags and search by tags applied as metadata to Content Fragments. Users will no longer have to switch to the Assets UI for this capability, reducing context switching and improving efficiency. 
 
 ![Tagging in Content Fragment Console](/help/assets/content-fragments-console-tags.png)
 
