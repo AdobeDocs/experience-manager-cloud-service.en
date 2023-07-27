@@ -57,7 +57,7 @@ You can take full advantage of this feature by utilizing the following options:
 
 * **[Create and add a custom Adaptive Form to an Experience Fragments](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor):** You can extend the reach of your forms by adding them to AEM Experience Fragments, allowing for seamless reuse across multiple pages or sites.
 
-* **Add multiple forms to an AEM Sites page or Experience Fragment:**  You can create or add multiple Adaptive Forms to an AEM Sites page to provide multiple choices to users based on their preferences and requirements. You can use AEM Page Editor to quickly embed multiple forms to your AEM Sites pages. You can use the **[!UICONTROL Adaptive Form Container]** component multiple times to add Adaptive Forms in an AEM Sites page. You can use the **[!UICONTROL Adaptive Forms - Embed]** component multiple times in an AEM Sites page,only if **[!UICONTROL Form covers entire width of the frame]** option is selected. In case the **[!UICONTROL Form covers entire width of the frame]** option is not checked, AEM Sites page supports only one Adaptive Form to exist without an iframe. In order to add more Adaptive Forms using  the **[!UICONTROL Adaptive Forms - Embed]** component, you have to select **[!UICONTROL Form covers entire width of the frame]** option. 
+* **Add multiple forms to an AEM Sites page or Experience Fragment:**  You can create or add multiple Adaptive Forms to an AEM Sites page to provide multiple choices to users based on their preferences and requirements. You can use AEM Page Editor to quickly embed multiple forms to your AEM Sites pages. You can use the **[!UICONTROL Adaptive Form Container]** component multiple times to add Adaptive Forms in an AEM Sites page. You can use the **[!UICONTROL Adaptive Forms - Embed]** component multiple times in an AEM Sites page,only if **[!UICONTROL Form covers entire width of the frame]** option is selected. In case the **[!UICONTROL Form covers entire width of the frame]** option is not checked, AEM Sites page supports only one Adaptive Form to exist without an iframe. In order to add more Adaptive Forms using  the **[!UICONTROL Adaptive Forms - Embed]** component, select **[!UICONTROL Form covers entire width of the frame]** option. 
 
 ## Considerations to embed an Adaptive Form in AEM Sites page or AEM Experience Fragment {#consideration}
 
@@ -269,7 +269,7 @@ An inline frame (iframe) is an HTML element that loads an Adaptive Form to an AE
 
         >[!NOTE]
         >
-        > AEM Sites page supports only one Adaptive Form to exist without an iframe. In order to add more Adaptive Forms using  the **[!UICONTROL Adaptive Forms - Embed]** component, you have to select **[!UICONTROL Form covers entire width of the frame]** option. 
+        > AEM Sites page supports only one Adaptive Form to exist without an iframe. In order to add more Adaptive Forms using  the **[!UICONTROL Adaptive Forms - Embed]** component, select **[!UICONTROL Form covers entire width of the frame]** option. 
 
 * **Height**: Specify the height of the container. Leave it blank to automatically resize the container.
 * **CSS Client library**: Specify path to a CSS client library.
