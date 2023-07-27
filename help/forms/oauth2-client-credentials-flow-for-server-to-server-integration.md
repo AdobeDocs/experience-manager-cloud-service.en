@@ -38,6 +38,7 @@ To integrate Salesforce application with an Adaptive Form using OAuth 2.0 client
 1. Specify the **[!UICONTROL Title]** and select the **[!UICONTROL Service Type]** as **[!UICONTROL RESTful Service]**.
 1. Click **[!UICONTROL Next]**.
 1. Select the **[!UICONTROL Swagger Source]** as **[!UICONTROL File].** 
+
     >[!NOTE]
     >
     > When the swagger file is selected, the Scheme, the Host name and the Base path are populated automatically.
