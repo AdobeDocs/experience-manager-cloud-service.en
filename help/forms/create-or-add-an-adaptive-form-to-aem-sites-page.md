@@ -78,6 +78,7 @@ To enable complete functionality of the Adaptive Forms Container component, add 
 
          ```
              //Customheaderlibs.html
+             
              <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
              <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
              </sly> 
