@@ -29,6 +29,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.6.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-6-0.md)
       + [Release Notes for 2023.4.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
       + [Release Notes for 2023.2.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
       + [Release Notes for 2023.1.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
@@ -123,6 +124,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Migration Tools {#migration-tools}
     + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.6.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-06-0.md)
       + [Release Notes for 2023.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-03-0.md)
     + 2022 {#2022}
       + [Release Notes for 2022.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-12-0.md)
@@ -151,6 +153,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support.md)
   + [Same Site Cookie Support for AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
+  + [Configuring CDN and WAF Rules to Filter Traffic](/help/security/cdn-and-waf-rules.md)
   + [AEM as a Cloud Service Security Considerations](/help/security/security-considerations.md)
 + Onboarding {#onboarding}
   + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -332,7 +335,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Retrieve git repository access information](/help/journey-sites/quick-site/retrieve-access.md)
         + [Customize the site theme](/help/journey-sites/quick-site/customize-theme.md)
         + [Deploy your customized theme](/help/journey-sites/quick-site/deploy-theme.md)
-    + [Administering Workflows](/help/sites-cloud/administering/workflows-administering.md)
     + Reusing Content {#reusing-content}
       + [MSM and Translation](/help/sites-cloud/administering/msm-and-translation.md)
       + Multi Site Manager {#msm}
@@ -361,6 +363,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Configuring the Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md)
         + [Connecting to Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
         + [Translation Best Practices](/help/sites-cloud/administering/translation/best-practices.md)
+    + [Administering Tags](/help/sites-cloud/administering/tags.md)
+    + [Administering Workflows](/help/sites-cloud/administering/workflows-administering.md)
   + Integrating with AEM as a Cloud Service {#integrations}
     + [Integrating with Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
     + [Integrating with Adobe Analytics Automated Setup](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
@@ -566,6 +570,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Use machine translation or human translation to translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
         + [Configuring redirect page or thank you message](/help/forms/configure-redirect-page-or-thank-you-message.md)
         + [Create forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md)
+        + [Configure Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)
     + Authoring Adaptive Forms - Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)

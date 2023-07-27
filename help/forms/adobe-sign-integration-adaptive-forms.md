@@ -8,6 +8,11 @@ level: Intermediate
 ---
 # Connect [!DNL AEM Forms] as a Cloud Service with [!DNL Adobe Acrobat Sign] {#integrate-adobe-sign-with-aem-forms}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government)                  |
+| AEM as a Cloud Service     | This article        |
+
 [!DNL Adobe Acrobat Sign] enables e-signature workflows for Adaptive Forms and AEM Workflows. E-signatures improve workflows to process documents for legal, sales, payroll, human resource management, and many more areas.
 
 In a typical [!DNL Adobe Acrobat Sign] and Adaptive Forms scenario, a user fills an Adaptive Form to apply for a service. For example, a credit card application and a citizen benefits form. When a user fills, submits, and signs the application form, the form is sent to the service provider for further action. Service provider reviews the application and uses [!DNL Adobe Acrobat Sign] to mark the application approved. AEM Forms supports both Adobe Acrobat Sign and Adobe Acrobat Sign Solutions for Government. Depending on your license and requirements, you can integrate or connect AEM Forms with either of the solution:
@@ -113,7 +118,7 @@ Connecting AEM Forms with Adobe Acrobat Sign Solutions for Government is a multi
 * Receiving credentials from Adobe Sign team
 * Using the received credentials to connect AEM Forms with Adobe Acrobat Sign Solutions for Government
 
-![](/help/forms/assets/adobe-acrobat-sign-govt-workflow.png)
+![Adobe Sign Government Workflow](/help/forms/assets/adobe-acrobat-sign-govt-workflow.png)
 
 
 AEM Forms as a Cloud Service provides development, stage, and production environments. You can start with connecting your development environment for with Adobe Acrobat Sign Solutions for Government and connect the stage and production environments later. 

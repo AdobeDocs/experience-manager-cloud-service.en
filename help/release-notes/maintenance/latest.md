@@ -7,32 +7,25 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 12585 {#release-12585}
+## Release 12790 {#release-12790}
  
-Summarized below are the continuous improvements for maintenance release 12585, which was publicly released on July 11, 2023. This maintenance release is an update from previous maintenance release 12549.
+Summarized below are the continuous improvements for maintenance release 12790, which was publicly released on July 21, 2023. This maintenance release is an update from previous maintenance release 12697.
 
 2023.7.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-12585}
-
-- General RDE stability improvements (SKYOPS-61133, SKYOPS-55281, SKYOPS-61216 and SKYOPS-61401)
-- DXML-12327: AEM Guides: Support for language variables in Native PDF publishing
-- DXML-11518: AEM Guides: Enhanced metadata support in Native PDF publishing
-- DXML-10093: AEM Guides: Support for connecting to external data sources and inserting data into dita topics
-- DXML-10699: AEM Guides: Support for XLIFF format in translation
-- DXML-10141: AEM Guides: Option to use microservice-based publishing for PDF (Native & DITA-OT), HTML & Custom preset types
-
-### Fixed Issues {#fixed-issues-12585}
-
-- AEM Guides: Various Native PDF enhancements and stability fixes
-- SKYOPS-53130: Improve AC Tool support in RDE
-- SKYOPS-57146: Fix Sling deadlock on AEM startup
-
-### Known Issues {#known-issues-12585}
+### Enhancements {#enhancements-12790}
 
 None.
 
-### Embedded Technologies {#embedded-tech-12585}
+### Fixed Issues {#fixed-issues-112790}
+
+- SLING-11974 - Fixed regression in SlingHttpServletRequest#getUserPrincipal for non authenticated requests. The fix ensures that a principal is returned even for unauthenticated requests.
+
+### Known Issues {#known-issues-12790}
+
+-  GRANITE-46601 - Quickstart SDK fails to start on jdk 11.0.20 without `-Djdk.util.zip.disableZip64ExtraFieldValidation=true` java option
+
+### Embedded Technologies {#embedded-tech-12790}
 
 |Technology|Version|Link|
 |---|---|---|

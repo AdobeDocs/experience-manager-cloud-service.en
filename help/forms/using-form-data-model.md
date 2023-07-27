@@ -8,6 +8,12 @@ exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
 ---
 # Use Form Data Model {#use-form-data-model}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html)                  |
+| AEM as a Cloud Service     | This article        |
+
+
  ![data-integration](do-not-localize/data-integeration.png)
 
 [!DNL Experience Manager Forms] data integration lets you use disparate backend data sources to create a Form Data Model that you can use as schema in various Adaptive Forms <!--and interactive communications--> workflows. It requires configuring data sources and creating Form Data Model based on data model objects and services available in data sources. For more information, see the following:
