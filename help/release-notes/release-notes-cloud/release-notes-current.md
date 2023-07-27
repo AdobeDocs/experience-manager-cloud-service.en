@@ -67,13 +67,12 @@ Assets Essentials now sorts the search results based on Relevance, by default. Y
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### New features available in [!DNL Forms] {#new-features-available-in-channel}
+### New features available in [!DNL Forms] {#new-features-available-in-forms-channel}
 
-* [Adaptive Forms within AEM Page Editor and Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): You can now use AEM Page Editor and Experience Fragment to quickly create and add multiple forms to your AEM Sites pages. This capability allows content authors to create seamless data capture experiences within Sites pages using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. 
-   
-    >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+* [Out of the box themes](/help/forms/using-themes-in-core-components.md) and templates: Kickstart your form creation process with our ready-to-use OOTB themes and templates, tailored to empower both seasoned professionals and new forms authors. Seamlessly built using Adaptive Forms Core Components, these meticulously curated themes and templates allow you to start creating forms swiftly for common use cases. 
 
-* [Use Adobe Acrobat Sign Solutions for Government (HIPPA Complaint) with AEM Forms](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms now integrate with Adobe Acrobat Sign Solutions for Government. This integration provides an advanced level of compliance and security for e-Signatures with Adaptive Form submissions for government associated accounts (Government departments and agencies).
+
+* **React Components for Headless Forms**: You can now preview and customize   Headless Adaptive Form renditions with the React components provided out of the box. These components leverage BEM classes from Adaptive Forms Core Components for styling, making it effortless for you to customize their appearance according to your specific requirements.
 
     Integration with Adobe Acrobat Sign Solutions for Government enables Adobe's partners and government customers to use electronic signatures in Adaptive Forms for some of the most mission-critical and sensitive lines of business. This additional layer of security ensures that all e-signatures are fully compliant with FedRAMP Moderate compliance, providing Adobe's government customers with peace of mind.
 
@@ -83,13 +82,14 @@ Assets Essentials now sorts the search results based on Relevance, by default. Y
 
 * [Enhanced authentication methods for Form Data Model](/help/forms/configure-data-sources.md): Experience heightened security with the introduction of Client Credentials based authentication to connect AEM Forms (Form Data Models) with compatible data sources. This enhancement eliminates the need for impersonation or user login, bolstering the protection of your data. 
 
-* [Create Adaptive Forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md): You can now make [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), and [Horizontal Tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) components in a Core Components based Adaptive Form to create repeatable sections. 
+* [Create Adaptive Forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md): You can now make [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), and [Horizontal Tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) components based Adaptive Form repeatable for multiple data record capture.  These repeatable sections allow you to provide multiple data entries easily. It is useful when the required instances of data are unknown in advance. A form filler can easily add or remove sections, making forms adaptable to different data entry scenarios and simplifying collection of multiple occurrences of the same data record.
 
-    >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
-    These repeatable sections allow you to provide an unlimited number of entries without a fixed field count. It is useful when the required instances of data are unknown in advance. Forms users can easily add or remove sections, making forms adaptable to different data entry scenarios and simplifying collection of multiple occurrences of the same data.
+### Pre-release features available in [!DNL Forms] {#pre-release-features-available-in-forms-channel}
 
-* **[Submit Adaptive Forms to Microsoft&reg; SharePoint and Microsoft&reg; OneDrive](/help/forms/configuring-submit-actions.md)**: You can now submit Adaptive Forms data to everyday tools like Microsoft&reg; SharePoint Site or  Microsoft&reg; OneDrive.
+* Google reCAPTCHA enterprise support: Use Google reCAPTCHA Enterprise in an Adaptive Form to provide enhanced protection against fraudulent activity and spam, providing a safer user experience. With advanced risk analysis and seamless integration, genuine users can easily submit forms while bots are effectively blocked.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
 
 ### Headless Adaptive Forms early adopter program {#forms-early-adopter}
 
