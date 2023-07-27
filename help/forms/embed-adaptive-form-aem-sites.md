@@ -8,7 +8,6 @@ exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
 ---
 # Embed an Adaptive Form to an AEM sites page {#embed-an-adaptive-form-to-aem-sites-page}
 
-
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html?lang=en)                  |
