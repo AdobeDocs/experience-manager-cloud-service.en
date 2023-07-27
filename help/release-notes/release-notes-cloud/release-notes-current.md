@@ -71,7 +71,7 @@ Assets Essentials now sorts the search results based on Relevance, by default. Y
 
 * [**Out of the box themes**](/help/forms/using-themes-in-core-components.md) **and templates**: Kickstart your form creation process with our ready-to-use OOTB themes and templates, tailored to empower both seasoned professionals and new forms authors. Seamlessly built using Adaptive Forms Core Components, these meticulously curated themes and templates allow you to start creating forms swiftly for common use cases. 
 
-!![Out of the box templates](/help/forms/assets/form-templates-ootb.png)
+     ![Out of the box templates](/help/forms/assets/form-templates-ootb.png)
 
 * **React Components for Headless Forms**: You can now preview and customize   Headless Adaptive Form renditions with the React components provided out of the box. These components leverage BEM classes from Adaptive Forms Core Components for styling, making it effortless for you to customize their appearance according to your specific requirements.
 
