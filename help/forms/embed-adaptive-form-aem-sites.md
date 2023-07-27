@@ -83,7 +83,7 @@ When the **[!UICONTROL When form covers entire width of a page]** option is sele
 Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your AEM Sites page using the deployment pipeline. To add the client libraries:
 
   1. Access and clone your [AEM Cloud Service Git Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
-  1. Open the AEM Cloud Service Git Repository folder in a plan text editor. For example, Microsoft Visual Code.
+  1. Open the AEM Cloud Service Git Repository folder in a plan text editor. For example, Microsoft&reg; Visual Code.
   1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` file and add the following code to the file:
 
          ```
