@@ -15,7 +15,7 @@ AEM Forms exchanges the client credentials (consumer key and consumer secret), d
  
 There are multiple benefits of using OAuth 2.0 client credentials for authentication over Authorization Code Flow authentication:
 
-* OAuth 2.0 client credentials authentication allows more five connections per user.
+* OAuth 2.0 client credentials authentication allows more than five connections per user.
 * AEM data source configuration continues working on deactivation, access changes, password update for an AEM user.
 
 ## Prerequisites {#prerequisites}
