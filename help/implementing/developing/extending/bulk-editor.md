@@ -25,13 +25,6 @@ Because of the possibility of multiple values, it is recommended to only enable 
 * `/libs/granite/ui/components/foundation/form/pathbrowser`
 * `/libs/granite/ui/components/foundation/form/checkbox`
 
->[!NOTE]
->
->Bulk editing of page properties is:
->
->* Not available for pages within a live copy.
->* Only available for pages with the same resource type.
-
 ## Enabling a Field {#enabling-a-field}
 
 These steps use the `/apps/core/wcm/components/page/v1/page` from the [WKND sample content](/help/implementing/developing/introduction/develop-wknd-tutorial.md) as an example to enable bulk editing on a field in a development environment.
@@ -45,3 +38,10 @@ These steps use the `/apps/core/wcm/components/page/v1/page` from the [WKND samp
     * **Value**: `true`
 
 1. Select **Save All** to persist your updates.
+
+## Limitations {#limitations}
+
+Bulk editing of page properties is:
+
+* Not available for pages within a live copy.
+* Only available for pages with the same resource type.
