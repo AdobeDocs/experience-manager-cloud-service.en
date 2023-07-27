@@ -29,7 +29,7 @@ To configure receiving Actions Center email notifications, create the Product Pr
 
 ## Detailed User Flow {#detailed-user-flow}
 
-Clicking on the email will bring you to the Actions Center, with a popup showing context for the notification you clicked on and in some cases, links to additional information describing how to take corrective action.
+Clicking on the email will bring you to the Actions Center, with a popup showing context for the notification you clicked on and in some cases, links to additional information describing how to take corrective action. You can also access Actions Center directly at [https://experience.adobe.com/aem/actions-center]( https://experience.adobe.com/aem/actions-center/), where you can select the relevant program and environment.
 
 ![Incident details](/help/operations/assets/incident-details.png)
 
