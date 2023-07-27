@@ -7,6 +7,11 @@ exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 ---
 # Themes in Adaptive Forms {#themes-for-af-using-core-components}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 You can create and apply themes to style an Adaptive Form. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. A theme is managed independently without a reference to an Adaptive Form and can be reused across multiple Adaptive Forms.
 
 ## Available themes
@@ -360,7 +365,9 @@ The theme is deployed using the [front-end pipeline.](https://experienceleague.a
 
 1. Right-click on the created pipeline.
 1. Click **[!UICONTROL Run]** .
+    
     ![run-a-pipleine](/help/forms/assets/canvas-theme-run-pipeline.png)
+
 Once the build is complete, the theme becomes available at the author instance for the use. It appears under the **[!UICONTROL Style]** tab in the Adaptive Form creation wizard, while creating a new Adaptive Form. 
 
    ![custom theme available under style tab](/help/forms/assets/custom-theme-style-tab.png)
@@ -404,3 +411,14 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 
 **Ans:** When customizations are made at both the global level and component level, the customization at the component level takes priority.  
 
+## See next
+
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+* [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
+
+
+## Related article {#related-article}
+
+* [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
+* [Create a standalone Core Components based Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
