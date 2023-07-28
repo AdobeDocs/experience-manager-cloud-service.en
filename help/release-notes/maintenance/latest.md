@@ -7,25 +7,25 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 12790 {#release-12790}
+## Release X {#release-X}
  
-Summarized below are the continuous improvements for maintenance release 12790, which was publicly released on July 21, 2023. This maintenance release is an update from previous maintenance release 12697.
+Summarized below are the continuous improvements for maintenance release X, which was publicly released on August 2, 2023. This maintenance release is an update from previous maintenance release 12790.
 
-2023.7.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
+2023.8.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-12790}
+### Enhancements {#enhancements-X}
 
 None.
 
-### Fixed Issues {#fixed-issues-112790}
+### Fixed Issues {#fixed-issues-X}
 
-- SLING-11974 - Fixed regression in SlingHttpServletRequest#getUserPrincipal for non authenticated requests. The fix ensures that a principal is returned even for unauthenticated requests.
+None.
 
-### Known Issues {#known-issues-12790}
+### Known Issues {#known-issues-X}
 
--  GRANITE-46601 - Quickstart SDK fails to start on jdk 11.0.20 without `-Djdk.util.zip.disableZip64ExtraFieldValidation=true` java option
+None.
 
-### Embedded Technologies {#embedded-tech-12790}
+### Embedded Technologies {#embedded-tech-X}
 
 |Technology|Version|Link|
 |---|---|---|
