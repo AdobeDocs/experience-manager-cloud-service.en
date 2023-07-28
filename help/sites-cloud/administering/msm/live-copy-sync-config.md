@@ -55,7 +55,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 
 The following table lists the synchronization actions that are provided out-of-the-box with AEM.
 
-<!--If the installed actions do not meet your requirements, you can [Create a New Synchronization Action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).-->
+If the installed actions do not meet your requirements, you can [Create a New Synchronization Action.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
 
 |Action Name|Description|Properties|
 |---|---|---|
