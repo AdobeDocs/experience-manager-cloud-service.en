@@ -24,7 +24,7 @@ The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] cu
 
 ## Release Video {#release-video}
 
-Have a look at the July 2023 Release Overview video for a summary of the features added in the 2023.6.0 release:
+Have a look at the July 2023 Release Overview video for a summary of the features added in the 2023.7.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422016/?quality=12)
 
@@ -44,11 +44,15 @@ Have a look at the July 2023 Release Overview video for a summary of the feature
 
 ### New features in Assets view {#assets-view-features}
 
+<!--
+
 **Assign metadata form to a folder**
 
 You can now assign metadata form to a specific folder within your Assets Essentials deployment. All assets in the folder, including assets in the sub-folders, then display properties defined in the assigned metadata form.
 
 ![assign metadata form to a folder](/help/release-notes/assets/assign-to-folder.png)
+
+-->
 
 **Improved artificial intelligence framework for image Smart Tags**
 
