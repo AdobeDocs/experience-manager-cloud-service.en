@@ -727,6 +727,20 @@ You can add the following restrictions to JSON Schema elements to limit the valu
  </tbody>
 </table>
 
+
+## Enable schema compliant data {#enablig-schema-compliant-data}
+
+To enable the Adaptive Form to generate the schema-compliant data on form submission, perform the following steps:
+
+1. Go to Experience Manager web console at `https://server:host/system/console/configMgr`.
+1. Locate **[!UICONTROL Adaptive Form and Interactice Communication Web Channel Configuration]**. 
+1. Tap to open the configuration in edit mode.
+1. Select the **[!UICONTROL Generate Schema Compliant Data]** checkbox.
+1. Save the settings.
+
+  ![adaptive form and interactive communication web channel configuration](/help/forms/assets/af-ic-web-channel-configuration.png)
+
+
 ## Non-supported constructs  {#non-supported-constructs}
 
 Adaptive Forms do not support the following JSON Schema constructs:
