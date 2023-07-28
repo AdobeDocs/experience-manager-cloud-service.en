@@ -1,120 +1,95 @@
 ---
-title: Customizing the Consoles
-description: AEM provides various mechanisms to enable you to customize the consoles of your authoring instance
+title: Customizing Consoles
+description: Learn about the different options that AEM provides to customize the consoles of your authoring instance.
 ---
 
-# Customizing the Consoles {#customizing-the-consoles}
+# Customizing Consoles {#customizing-consoles}
 
-AEM provides various mechanisms to enable you to customize the consoles (and the [page authoring functionality](/help/sites-developing/customizing-page-authoring-touch.md)) of your authoring instance.
+AEM provides options to customize the consoles (and the [page authoring functionality](/help/sites-developing/customizing-page-authoring-touch.md)) of your authoring instance.
 
-* Clientlibs
-  Clientlibs allow you to extend the default implementation to realize new functionality, while reusing the standard functions, objects, and methods. When customizing, you can create your own clientlib under `/apps.` For example it can hold the code required for your custom component.
+## Clientlibs {#clientlibs}
 
-* Overlays
-  Overlays are based on node definitions and allow you to overlay the standard functionality (in `/libs`) with your own customized functionality (in `/apps`). When creating an overlay a 1:1 copy of the original is not required, as the sling resource merger allows for inheritance.
+Clientlibs allow you to extend the default implementation to offer new functionality, while reusing standard functions, objects, and methods. When customizing with clientlibs, you can create your own clientlib under `/apps.` For example it can hold the code required for your custom component.
 
-These can be used in many ways to extend your AEM consoles. A small selection are covered below (at a high level).
+For further details on clientlibs, please see the document [Using Client-Side Libraries on AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
 
->[!NOTE]
+## Overlays {#overlays}
+
+Overlays are based on node definitions and allow you to overlay the standard functionality found under `/libs` with your own customized functionality under `/apps`. When creating an overlay, a 1:1 copy of the original is not required, as [Sling resource merger](/help/implementing/developing/introduction/sling-resource-merger.md) allows for inheritance.
+
+Overlays can be used in many ways to extend your AEM consoles. Serveral examples are provided in the following sections.
+
+For further information on overlays, please see the document [Overlays for Adobe Experience Manager as a Cloud Service.](/help/implementing/developing/introduction/overlays.md)
+
+>[!TIP]
 >
->For further information see:
->
->* Using and creating [clientlibs](/help/sites-developing/clientlibs.md).
->* Using and creating [overlays](/help/sites-developing/overlays.md).
->* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
->
-
-
->[!CAUTION]
->
->You ***must*** not change anything in the `/libs` path.
->
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
->
->The recommended method for configuration and other changes is:
->
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
->
->1. Make any changes within `/apps`
->
-
-For example, the following location within the `/libs` structure can be overlaid:
-
-* consoles (any consoles based on Granite UI pages); for example:
-
-    * `/libs/wcm/core/content`
-
->[!NOTE]
->
->See the Knowledge Base article, [Troubleshooting AEM TouchUI issues](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), for further tips and tools.
+>If you are interested in options to customize the authoring experience, please see the document [Customizing Page Authoring.](/help/implementing/developing/extending/page-authoring.md)
 
 ## Customizing the Default View for a Console {#customizing-the-default-view-for-a-console}
 
 You can customize the default view (column, card, list) for a console:
 
-1. You can reorder the views by overlaying the required entry from under:
+* You can reorder the views by overlaying the required entry under:
 
-   `/libs/wcm/core/content/sites/jcr:content/views`
+  * `/libs/wcm/core/content/sites/jcr:content/views`
 
-   The first entry will be the default.
+  * The first entry is the default.
 
-   The nodes available correlate to the view options available:
+  * The nodes available correlate to the view options available:
 
     * `column`
     * `card`
     * `list`
 
-1. For example, in a overlay for list:
+* For example, in an overlay for a list:
 
-   `/apps/wcm/core/content/sites/jcr:content/views/list`
+  * `/apps/wcm/core/content/sites/jcr:content/views/list`
 
-   Define the following property:
+  * Define the following property:
 
     * **Name**: `sling:orderBefore`
     * **Type**: `String`
     * **Value**: `column`
 
-### Add New Action to the Toolbar {#add-new-action-to-the-toolbar}
+### Add a New Action to the Toolbar {#add-a-new-action-to-the-toolbar}
 
-1. You can build your own components and include the corresponding client libraries for custom actions. For example, a **Promote to Twitter** action at:
+You can build your own components and include the corresponding client libraries for custom actions.
 
-   `/apps/wcm/core/clientlibs/sites/js/twitter.js`
+* For example, you may want to create a **Promote to Social Media** action at:
 
-   This can then be connected to a toolbar item on your console:
+  * `/apps/wcm/core/clientlibs/sites/js/socialmedia.js`
 
-   `/apps/<yourProject>/admin/ext/launches`
+  * This can then be connected to a toolbar item on your console:
 
-   For example, in selection mode:
+  * `/apps/<yourProject>/admin/ext/launches`
 
-   `content/jcr:content/body/content/header/items/selection/items/twitter`
+  * For example, in selection mode:
 
-### Restrict a Toolbar Action to a specific Group {#restrict-a-toolbar-action-to-a-specific-group}
+  * `content/jcr:content/body/content/header/items/selection/items/socialmedia`
 
-1. You can use a custom rendering condition to overlay the standard action and impose specific conditions that must be fulfilled before it is rendered.
+### Restrict a Toolbar Action to a Specific Group {#restrict-a-toolbar-action-to-a-specific-group}
 
-   For example, create a component to control the renderconditions according to group:
+You can use a custom rendering condition to overlay the standard action and impose specific conditions that must be fulfilled before it is rendered.
 
-   `/apps/myapp/components/renderconditions/group`
+For example, you may want to create a component to control the render conditions according to a group:
 
-1. To apply these to the Create Site action on the Sites console:
+* `/apps/myapp/components/renderconditions/group`
 
-   `/libs/wcm/core/content/sites`
+To apply these to the **Create Site** action on the sites console:
 
-   Create the overlay:
+* `/libs/wcm/core/content/sites`
 
-   `/apps/wcm/core/content/sites`
+1. Create the overlay:
 
-1. Then add the rendercondition for the action:
+   * `/apps/wcm/core/content/sites`
 
-   `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
+1. Then add the render condition for the action:
 
-   Using properties on this node you can define the `groups` allowed to perform the specific action; for example, `administrators`
+   * `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-### Customizing Columns in the List View {#customizing-columns-in-the-list-view}
+Using properties on this node you can define the `groups` allowed to perform the specific action; for example, `administrators`
 
->[!NOTE]
->
->This feature is optimized for columns of text fields; for other data types it is possible to overlay `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+### Customizing Columns in List View {#customizing-columns-in-list-view}
 
 To customize the columns in the list view:
 
@@ -122,25 +97,18 @@ To customize the columns in the list view:
 
     * On the node:
 
-      ```
-             /apps/wcm/core/content/common/availablecolumns
-      ```
+      `/apps/wcm/core/content/common/availablecolumns`
 
-    * Add your new columns - or remove existing ones.
+1. Add your new columns or remove existing ones.
 
-   See [Using Overlays (and the Sling Resource Merger)](/help/sites-developing/overlays.md) for more information.
+If you want to insert additional data, you need to write a [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) with a `pageInfoProviderType` property.
 
-1. Optionally:
-
-    * If you want to plug additional data, you need to write a [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) with a
-      `pageInfoProviderType` property.
-
-   For example, see the class/bundle attached (from GitHub) below.
-
-1. You can now select the column in the column configurator of list view.
+>[!NOTE]
+>
+>This feature is optimized for columns of text fields. For other data types it is possible to overlay `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
 
 ### Filtering Resources {#filtering-resources}
 
-When using a console, a common use case is when the user must select from resources (for example, pages, components, assets, etc.). This can take the form of a list for example from which the author must choose an item.
+When using a console, a user must often select from resources such as pages, components, or assets. This can take the form of a list from which the author must choose an item.
 
-In order to keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. See [this article](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) for details.
+In order to keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. Please see the document[Customizing Page Authoring](/help/implementing/developing/extending/page-authoring.md#filtering-resources) for details.
