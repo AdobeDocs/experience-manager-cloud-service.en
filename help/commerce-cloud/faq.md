@@ -61,7 +61,7 @@ We recommend managing marketing related data and content in AEM. Decorate produc
 
 ## 14. How can we ensure PCI compliance when using AEM for the entire presentation layer?
 
-We recommend using abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or the commerce solutions hold or pass cardholder data. This approach requires only a level 3 PCI compliance. However, there are additional things to consider to be fully PCI-compliant such as how employees interact with the system and data. For more information about Adobe Commerce PCI compliance, please refer to [PCI Compliance Requirements](https://business.adobe.com/products/magento/pci-compliance.html).
+We recommend using abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or the commerce solutions hold or pass cardholder data. This approach requires only a level 3 PCI compliance. However, there are additional things to consider to be fully PCI-compliant such as how employees interact with the system and data. For more information about Adobe Commerce PCI compliance, see [PCI Compliance Requirements](https://business.adobe.com/products/magento/pci-compliance.html).
 
 ## 15. If I use AEM and Adobe Commerce cloud versions, is this joint solution PCI compliant?
 

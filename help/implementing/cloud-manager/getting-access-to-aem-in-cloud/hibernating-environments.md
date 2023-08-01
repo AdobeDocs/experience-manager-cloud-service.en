@@ -29,7 +29,7 @@ Follow these steps to manually hibernate your sandbox program environments.
 
 1. On the **Environments** card, click the ellipsis button and select **Developer Console**. 
 
-   * Refer to the document [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
+   * See [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
 
    ![Developer Console menu option](assets/developer-console-menu-option.png)
 
@@ -63,7 +63,7 @@ You can manually hibernate your Sandbox Program from the Developer Console.
 
 1. On the **Environments** card, click the ellipsis button and select **Developer Console**. 
 
-   * Refer to the document [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
+   * See [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
 
 1. Click on **De-hibernate**.
 

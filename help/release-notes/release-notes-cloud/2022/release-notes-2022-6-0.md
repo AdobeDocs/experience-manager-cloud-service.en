@@ -61,7 +61,7 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
  ![product cockpit properties overview](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* Improved compatibility and robustness for 3rd party connectors on I/O Runtime
+* Improved compatibility and robustness for third-party connectors on I/O Runtime
 
 * Improved support for GQL Client configuration overwrites (for example, set custom caching behavior)
 
@@ -92,7 +92,7 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 ## Cloud Manager {#cloud-manager}
 
-You can find a complete list of Cloud Manager monthly releases [here.](/help/implementing/cloud-manager/release-notes/current.md)
+You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Migration Tools {#migration-tools}
 

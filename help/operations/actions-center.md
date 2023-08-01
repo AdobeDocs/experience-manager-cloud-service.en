@@ -1,20 +1,15 @@
 ---
 title: Actions Center
 description: Leverage the Actions Center to conveniently take action on incidents and other important information
-hidefromtoc: yes
-hide: yes
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 ---
 # Actions Center {#actions-center}
 
->[!NOTE]
->This feature has not been released.
-
-AEM as Cloud Service sends Actions Center email notifications when critical incidents occur that require immediate action, as well as proactive recommendations for optimizations. Examples include a blocked queue, or an expiring set of credentials; the full set of Actions Center notification types can be viewed in the [table below](#supported-notification-types), which will expand over time.
+AEM as Cloud Service sends Actions Center email notifications when critical incidents occur that require immediate action, and proactive recommendations for optimizations. Examples include a blocked queue, or an expiring set of credentials; the full set of Actions Center notification types can be viewed in the [table below](#supported-notification-types), which will expand over time.
 
 When an Actions Center email notification is received, it can be clicked to open AEM as a Cloud Service's Actions Center with a popup displaying additional context explaining the action for a customer to take.
 
-In addition to displaying information about the just-clicked email notification, the Actions Center serves as a hub where you can view and manage the set of current and older notifications. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers don't find it) -->
+In addition to displaying information about the just-clicked email notification, the Actions Center serves as a hub where you can view and manage the set of current and older notifications. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
 There are two high level categories of notifications that appear in the Actions Center:
 
@@ -34,7 +29,7 @@ To configure receiving Actions Center email notifications, create the Product Pr
 
 ## Detailed User Flow {#detailed-user-flow}
 
-Clicking on the email will bring you to the Actions Center, with a popup showing context for the notification you clicked on and in some cases, links to additional information describing how to take corrective action.
+Clicking on the email will bring you to the Actions Center, with a popup showing context for the notification you clicked on and in some cases, links to additional information describing how to take corrective action. You can also access Actions Center directly at [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), where you can select the relevant program and environment.
 
 ![Incident details](/help/operations/assets/incident-details.png)
 
@@ -66,7 +61,7 @@ AEM as a Cloud Service has several types of notifications, but only a subset app
 
 ## Supported Notification Types {#supported-notification-types}
 
-The following table lists the notification types currently supported in Actions Center.
+The following table lists the notification types currently supported in Actions Center. Notifications are currently limited to production environments.
 
 | Notification Type  | Related Product Profile  | Corrective Action |
 |---|---|---|

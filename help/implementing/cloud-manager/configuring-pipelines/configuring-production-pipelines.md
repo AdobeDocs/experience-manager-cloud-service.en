@@ -127,11 +127,11 @@ To finish the configuration of the full-stack code production pipeline, follow t
 1. Continue to add paths as necessary by repeating the previous two steps.
 
    * You can add a maximum of 25 paths.
-   * If you don't define any paths, the homepage of the site is included in the Experience Audit by default.
+   * If you do not define any paths, the homepage of the site is included in the Experience Audit by default.
 
 1. Click on **Save** to save your pipeline.
 
-Paths configured for the Experience Audit are submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests when the pipeline runs. Refer to [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+Paths configured for the Experience Audit are submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests when the pipeline runs. See [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 

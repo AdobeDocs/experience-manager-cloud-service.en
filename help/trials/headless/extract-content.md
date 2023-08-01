@@ -20,7 +20,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
->title="Nice work! You've learned about the two basic types of queries and how to query your own content. You now understand how to use the AEM GraphQL API to create efficient queries that deliver content in a format that you app expects."
+>title="Nice work! You have learned about the two basic types of queries and how to query your own content. You now understand how to use the AEM GraphQL API to create efficient queries that deliver content in a format that you app expects."
 >abstract=""
 
 ## Query for a List of Sample Content {#list-query}
@@ -60,11 +60,7 @@ You start on the GraphQL Explorer in a new tab. Here you can build and validate 
 
    ![List query](assets/do-not-localize/list-query-1-3-4-5.png)
 
-You've just validated a list query for a full list of all Content Fragments. This process helps to ensure that the response is what your app expects, with results that illustrate how your apps and websites will retrieve the content created in AEM. 
-
->[!NOTE]
->
->If you are not able to select the **AEM Demo Assets** endpoint from the drop-down, please contact Adobe Customer Care or reach out on the [AEM Trials Slack channel.](https://adobe-dx-support.slack.com/)
+You have just validated a list query for a full list of all Content Fragments. This process helps to ensure that the response is what your app expects, with results that illustrate how your apps and websites will retrieve the content created in AEM.
 
 ## Query for a Specific Piece of Sample Content {#bypath-query}
 
@@ -103,7 +99,7 @@ Running a byPath query allows you to retrieve content for a specific Content Fra
 
    ![byPath query results](assets/do-not-localize/bypath-query-2-3-4.png)
 
-You've just validated a byPath query to retrieve a specific Content Fragment identified by the path of that fragment.
+You have just validated a byPath query to retrieve a specific Content Fragment identified by the path of that fragment.
 
 ## Query Your Own Content {#own-queries}
 

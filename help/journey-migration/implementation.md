@@ -9,7 +9,7 @@ In the implementation phase of the journey, you will explore the tools through w
 
 ## The Story So Far {#story-so-far}
 
-In the previous parts of the journey, you've went through [getting familiar with the changes in AEM as a Cloud Service](/help/journey-migration/getting-started.md), as well as determining if your deployment is ready to be moved to the cloud with the [readiness phase](/help/journey-migration/readiness.md).
+In the previous parts of the journey, you have gone through [getting familiar with the changes in AEM as a Cloud Service](/help/journey-migration/getting-started.md), and determined if your deployment is ready to be moved to the cloud with the [readiness phase](/help/journey-migration/readiness.md).
 
 This article continues on with advice on how to use Adobe provided tools to make sure that your code and content are ready to be moved to the cloud.
 
@@ -250,4 +250,4 @@ The following section shows the important steps and associated tasks that can be
 
 ## What's Next {#what-is-next}
 
-Once you've fully understood how to assess if your AEM installation is ready to be moved to the cloud, as we as learn how to use the tools needed to make it ready, it's time to move on to the [go-live phase](/help/journey-migration/go-live.md).
+After you have fully understood how to assess if your AEM installation is ready to be moved to the cloud, as we as learn how to use the tools needed to make it ready, it's time to move on to the [go-live phase](/help/journey-migration/go-live.md).

@@ -57,7 +57,7 @@ Follow these steps to add a certificate using Cloud Manager.
   
    * Any errors detected are displayed.
      * You must address all errors before your certificate can be saved.
-     * Refer to the [Certificate Errors](#certificate-errors) section to learn more about addressing common errors.
+     * See [Certificate Errors](#certificate-errors) section to learn more about addressing common errors.
 
 1. Click **Save** to save your certificate.
 
@@ -75,7 +75,7 @@ Certain errors may arise if a certificate is not installed properly or meet the 
 
 ### Certificate Policy {#certificate-policy}
 
-If you see the following error, please check the policy of your certificate.
+If you see the following error, check the policy of your certificate.
 
 ```text
 Certificate policy must conform with EV or OV, and not DV policy.

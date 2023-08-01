@@ -22,7 +22,7 @@ The **Template Editor** allows template authors to:
 
 This document explains how a **template author** can use the template console and editor to create and manage editable templates.
 
-For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
+For detailed information about how editable templates work at a technical level, see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
 
 >[!NOTE]
 >
@@ -260,7 +260,7 @@ When a component has been unlocked you can define the [initial content](#editing
 
 >[!NOTE]
 >
->In **Initial Content** mode as well as on the resultant pages, any unlocked components that have an accessible parent (that is, components within a layout container) can be deleted.
+>In **Initial Content** mode and on the resultant pages, any unlocked components that have an accessible parent (that is, components within a layout container) can be deleted.
 
 #### Layout {#template-layout}
 

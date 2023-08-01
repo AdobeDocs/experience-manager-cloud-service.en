@@ -8,6 +8,11 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 ---
 # Configure data sources {#configure-data-sources}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html)                  |
+| AEM as a Cloud Service     | This article        |
+
 ![Data integration](do-not-localize/data-integeration.png)
 
 [!DNL Experience Manager Forms] Data Integration allows you to configure and connect to disparate data sources. The following types are supported out-of-the-box:
@@ -60,7 +65,7 @@ You can configure relational databases using [!DNL Experience Manager] Web Conso
 
    >[!NOTE]
    >
-   > Refer [SQL connections using JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) for more detailed information.
+   > See [SQL connections using JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) for more detailed information.
     
 1. Tap **[!UICONTROL Save]** to save the configuration.
 
@@ -164,7 +169,7 @@ Some of the operations not supported by RESTful services Open API Specification 
 * Links
 * Different request bodies for different MIME types for a single operation
 
-You can refer to [OpenAPI 3.0 Specification](https://swagger.io/specification/v3/) for detailed information. 
+See [OpenAPI 3.0 Specification](https://swagger.io/specification/v3/) for detailed information. 
 
 ### Form data model HTTP client configuration to optimize performance {#fdm-http-client-configuration}
 

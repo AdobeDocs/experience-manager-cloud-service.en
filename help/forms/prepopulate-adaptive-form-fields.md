@@ -9,6 +9,13 @@ exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 ---
 # Prefill Adaptive Form fields{#prefill-adaptive-form-fields}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 ## Introduction {#introduction}
 
 You can prefill the fields of an Adaptive Form using existing data. When a user opens a form, the values for those fields are prefilled. To prefill data in an Adaptive Form, make the user data available as a prefill XML / JSON in the format that adheres to prefill data structure of Adaptive Forms.
@@ -299,7 +306,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 ```
 
-- SERVICE_NAME refers to the name of the OSGI prefill service. Refer [Create and run a prefill service](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
+- SERVICE_NAME refers to the name of the OSGI prefill service. See [Create and run a prefill service](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
 - IDENTIFIER refers to any metadata required by the OSGI prefill service to fetch the prefill data. An identifier to the logged-in user is an example of metadata that could be used.
 
 >[!NOTE]

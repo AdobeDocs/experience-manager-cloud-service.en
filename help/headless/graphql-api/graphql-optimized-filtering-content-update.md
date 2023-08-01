@@ -93,7 +93,7 @@ To run the procedure use the following steps:
       <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Interval (seconds) to process remaining Content Fragments up till next Limit<br>This interval is also considered as a wait-time before starting the job, as well as a delay between processing of each subsequent CF_MIGRATION_LIMIT number of CFs.<br>(*)</td>
+      <td>Interval (seconds) to process remaining Content Fragments up till next Limit<br>This interval is also considered as both a wait-time before starting the job, and a delay between processing of each subsequent CF_MIGRATION_LIMIT number of CFs.<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -140,7 +140,7 @@ To run the procedure use the following steps:
        23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
        ```
 
-   Customers, who enabled access to the environment logs using Splunk, can use the example query below to monitor the upgrade process. For details about enabling Splunk logging, please see [Debugging Production and Stage](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) page.
+   Customers, who enabled access to the environment logs using Splunk, can use the example query below to monitor the upgrade process. For details about enabling Splunk logging, see [Debugging Production and Stage](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) page.
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 

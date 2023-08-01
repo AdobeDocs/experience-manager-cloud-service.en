@@ -135,7 +135,7 @@ If you look again at the watch image below, you can see that there is a `Cart` i
 ![Static and dynamic image presets](/help/assets/dynamic-media/assets/dm-image-presets.png)
 _Static and Dynamic image presets. The watch image was rendered using the `PDP-page` image preset._
 
-But what if you have to change an image on your website? For example, suppose you have done some testing, and found that the image of 120 x 120 (the `Cart` image preset) is not being received as well as you thought. You must make the image larger by increasing the width to 175 pixels and increasing the height to 175 pixels. Traditionally, you would have to go into Adobe Photoshop and re-create all of those cart images. But with Dynamic Media, you simply edit the image preset by updating the Width and Height values to 175 and save your preset, as seen in the example below.
+But what if you have to change an image on your website? For example, suppose you have done some testing, and found that the image of 120 x 120 (the `Cart` image preset) is not being received as you thought. You must make the image larger by increasing the width to 175 pixels and increasing the height to 175 pixels. Traditionally, you would have to go into Adobe Photoshop and re-create all of those cart images. But with Dynamic Media, you simply edit the image preset by updating the Width and Height values to 175 and save your preset, as seen in the example below.
 
 ![Editing an image preset](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _Editing the Width and Height of the `Cart` image preset._
@@ -187,7 +187,7 @@ The single URL lets you use the image set and viewer where you need them on your
 
 The Flyout viewer is a default, out-of-box viewer whose properties you can edit. Or, just like creating an image preset, you can create your own, custom viewer.
 
-Now, supposed your sales and marketing team doesn't like the Flyout viewer. They like the zoom feature but they want customers to see the zoom effect directly over the shoes. In such case, you simply apply the InlineZoom viewer to the image set and copy and paste its URL in your browser to see how it behaves. [Try it](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/InlineZoom){target="_blank"}.
+Now, supposed your sales and marketing team does not like the Flyout viewer. They like the zoom feature but they want customers to see the zoom effect directly over the shoes. In such case, you simply apply the InlineZoom viewer to the image set and copy and paste its URL in your browser to see how it behaves. [Try it](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/InlineZoom){target="_blank"}.
 
 When you move the mouse pointer over the shoe, you zoom in to that image, and you can see more detail as you move the pointer around. And the reason for that is simply the size of the image that was initially uploaded into Dynamic Media.
 
@@ -202,7 +202,7 @@ You just read about image sets and viewers. Let's look at a couple of other view
 
 ## Optional - Learn more
 
-If you'd like to learn more about what you just read, use the materials below to explore concepts in greater detail. Otherwise, your Dynamic Media Journey is complete!
+If to learn more about what you just read, use the materials below to explore concepts in greater detail. Otherwise, your Dynamic Media Journey is complete!
 
 _Dynamic Media Help topics_
 

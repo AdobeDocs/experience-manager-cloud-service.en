@@ -65,7 +65,7 @@ From Navigation the consoles available are:
 |Sites|The Sites consoles let you [create, view, and manage sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) running on your AEM instance. Through this console you can create, edit, copy, move, and delete pages, start workflows, and publish pages.|
 |Experience Fragments|An [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences.|
 |Assets|The Assets console lets you import and manage [digital assets such as images, videos, documents, and audio files](/help/assets/overview.md). These assets can then be used by any site running on the same AEM instance. You can also create and manage [Content Fragments](/help/assets/content-fragments/content-fragments.md) from the Assets console.|
-|Personalization|This console provides a framework of tools for [authoring targeted content and presenting personalized experiences.](/help/sites-cloud/authoring/personalization/overview.md)|
+|Personalization|This console provides a framework of tools for [authoring targeted content and presenting personalized experiences](/help/sites-cloud/authoring/personalization/overview.md).|
 |Content Fragments|[Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) allow you to design, create, curate and publish page-independent content. They allow you to prepare structured content ready for use in multiple locations/over multiple channels, and ideal for both page authoring and headless delivery.|
 
 ## Tools Panel {#tools-panel}
@@ -220,7 +220,7 @@ Due to the space restrictions in some windows, the toolbar can quickly become lo
 
 ## Quick Actions {#quick-actions}
 
-In [Card View](#card-view) certain actions are available as quick action icons as well as being on the toolbar. Quick action icons are available for a single item at a time and eliminate the need for you to preselect.
+In [Card View](#card-view) certain actions are available as quick action icons and being on the toolbar. Quick action icons are available for a single item at a time and eliminate the need for you to preselect.
 
 The quick actions are visible when you mouseover (desktop device) a resource card. The quick actions available can depend on the console and context. For example, here are the quick actions for a page in the **Sites** console:
 
@@ -396,7 +396,7 @@ If content only is selected, then only the rail icon appears. When any other opt
 
 The content tree can be used to quickly navigate the site hierarchy within the side panel and view much information about the pages in the current folder.
 
-Using the content tree side panel in conjunction with a list view or cards view, users can easily see the hierarchical structure of the project and navigate easily across the content structure with the content tree side-panel, as well as view detailed page information in the list view.
+Using the content tree side panel in conjunction with a list view or cards view, users can easily see the hierarchical structure of the project and navigate easily across the content structure with the content tree side-panel, and view detailed page information in the list view.
 
 ![Content tree](/help/sites-cloud/authoring/assets/content-tree.png)
 
@@ -404,7 +404,7 @@ Using the content tree side panel in conjunction with a list view or cards view,
 >
 >Once an entry in the hierarchy view is selected, arrow keys can be used to quickly navigate the hierarchy.
 >
->Refer to the [keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) for more information.
+>See [keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) for more information.
 
 ### Timeline {#timeline}
 
@@ -454,15 +454,15 @@ These options accessible via the chevron next to the **Comment** field.
 
 ### Site {#site}
 
-**Site** shows details of sites [created using a site template.](/help/sites-cloud/administering/site-creation/create-site.md)
+**Site** shows details of sites [created using a site template](/help/sites-cloud/administering/site-creation/create-site.md).
 
 ![Site rail](../assets/site-rail.png)
 
-See the document [Using the Site Rail to Manage Your Site Theme](/help/sites-cloud/administering/site-creation/site-rail.md) for more details on how you can use the rail to manage the [theme of your site.](/help/sites-cloud/administering/site-creation/site-themes.md)
+See the document [Using the Site Rail to Manage Your Site Theme](/help/sites-cloud/administering/site-creation/site-rail.md) for more details on how you can use the rail to manage the [theme of your site](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 >[!TIP]
 >
->An end-to-end description of the process of creating a new site from a template and customizing its theme can be found in the [Quick Site Creation Journey.](/help/journey-sites/quick-site/overview.md)
+>An end-to-end description of the process of creating a new site from a template and customizing its theme can be found in the [Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md).
 
 ### Filter {#filter}
 

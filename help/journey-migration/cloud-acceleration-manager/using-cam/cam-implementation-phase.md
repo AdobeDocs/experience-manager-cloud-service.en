@@ -18,7 +18,7 @@ Click your project card so you can open the project landing page and navigate to
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
    >[!NOTE]
-   >Refer to [Creating and Managing a Project in Cloud Acceleration Manager](getting-started-cam.md#create-project) to learn more.
+   >See [Creating and Managing a Project in Cloud Acceleration Manager](getting-started-cam.md#create-project) to learn more.
 
 
 ## Using Local Development Card {#local-development}
@@ -57,7 +57,7 @@ Follow this section so you can explore the Code Refactoring activity card:
   >[!NOTE]
   >Review the content in these tabs to understand some additional areas that are not covered by the Best Practices Analyzer.
    
-   The **Dispatcher** tab provides information on how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, as well as how to validate and run it locally before deploying to Cloud environments. It also describes debugging in Cloud environments.
+   The **Dispatcher** tab provides information on how to structure the AEM as a Cloud Service Apache and Dispatcher configurations, and how to validate and run it locally before deploying to Cloud environments. It also describes debugging in Cloud environments.
    
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
