@@ -306,6 +306,7 @@ data:
 "ttfb": 19,
 "cip": "147.160.230.112",
 "rid": "974e67f6",
+"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "host": "example.com",
 "url": "/block-me",
 "req_mthd": "GET",
@@ -323,11 +324,12 @@ data:
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
 "cip": "147.160.230.112",
+"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "rid": "974e67f6",
 "host": "example.com",
 "url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
 "req_mthd": "GET",
-"res_type": "",
+"res_type": "image/png",
 "cache": "PASS",
 "res_status": 406,
 "res_bsize": 3362,
@@ -346,6 +348,7 @@ Below is a list of the field names used in CDN logs, along with a brief descript
 | *ttfb*  | Abbreviation for *Time To First Byte*. The time interval between the request started up to the point before the response body started being streamed. |
 | *cip*  |  The client IP address. |
 | *rid* |  The value of the request header used to uniquely identify the request. |
+| *ua* |  The user agent responsible for making a given HTTP request. |
 | *host*  | The authority that the request is intended for.   |
 | *url*  | The full path, including query parameters.  |
 | *req_mthd*  |  HTTP method sent by the client, such as "GET" or "POST". |
