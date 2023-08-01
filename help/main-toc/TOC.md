@@ -564,6 +564,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
+        + [Sample Themes, Templates, and Form Data models in Core Components ](/help/forms/sample-themes-templates-form-data-models-core-components)
         + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
         + [Create an Adaptive Forms - Core Components in an AEM Sites page](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
         + [Use machine translation or human translation to translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
