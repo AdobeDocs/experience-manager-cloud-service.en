@@ -160,7 +160,7 @@ A component is a node of type `cq:Component` and has the following properties an
 |Name|Type|Description|
 |---|---|---|
 |`.`|`cq:Component`|This represents the current component. A component is of node type `cq:Component`.|
-|`componentGroup`|`String`|This represents the group under which the component can be selected in the [Components Browser.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) A value beginning with `.` is used for components that are not available for selection from the UI such as base components from which other components inherit.|
+|`componentGroup`|`String`|This represents the group under which the component can be selected in the [Components Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). A value beginning with `.` is used for components that are not available for selection from the UI such as base components from which other components inherit.|
 |`cq:isContainer`|`Boolean`|This indicates whether the component is a container component and therefore can contain other components such as a paragraph system.|
 |`cq:dialog`|`nt:unstructured`|This is the definition of the edit dialog for the component.|
 |`cq:design_dialog`|`nt:unstructured`|This is the definition of the design dialog for the component.|
@@ -315,7 +315,7 @@ There are many existing configurations in AEM. You can easily search for specifi
 
 Components must always render some HTML that is visible to the author, even when the component has no content. Otherwise it might visually disappear from the editor's interface, making it technically present but invisible on the page and in the editor. In such a case the authors won't be able to select and interact with the empty component.
 
-For this reason, components should render a placeholder as long as they don't render any visible output when the page is rendered in the page editor (when the WCM mode is `edit` or `preview`).
+For this reason, components should render a placeholder as long as they do not render any visible output when the page is rendered in the page editor (when the WCM mode is `edit` or `preview`).
 The typical HTML markup for a placeholder is the following:
 
 ```HTML
@@ -377,7 +377,7 @@ The following configuration enables the in-place editing of the component and de
 
 ### Handling Field Events - cq:listeners {#cq-listeners}
 
-The method of handling events on dialog fields is done with listeners in a custom [client library.](/help/implementing/developing/introduction/clientlibs.md)
+The method of handling events on dialog fields is done with listeners in a custom [client library](/help/implementing/developing/introduction/clientlibs.md).
 
 To inject logic into your field, you should:
 
@@ -463,7 +463,7 @@ All you need to do is place a `README.md` file in the component structure.
 
 ![README.md in component structure](assets/components-documentation.png)
 
-This markdown will then be displayed in the [Component Console.](/help/sites-cloud/authoring/features/components-console.md)
+This markdown will then be displayed in the [Component Console](/help/sites-cloud/authoring/features/components-console.md).
 
 ![README.md visible in the Components Console](assets/components-documentation-console.png)
 

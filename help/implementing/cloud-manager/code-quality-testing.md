@@ -16,7 +16,7 @@ Learn how code quality testing of pipelines works and how it can improve the qua
 
 Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines.
 
-Refer to the document [Configuring Your CI-CD Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) to learn more about different types of pipelines.
+See [Configuring Your CI-CD Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) to learn more about different types of pipelines.
 
 ## Code Quality Rules {#understanding-code-quality-rules}
 
@@ -24,7 +24,7 @@ Code quality testing scans the source code to ensure that it meets certain quali
 
 >[!NOTE]
 >
->You can download the complete list of rules [with this link.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
+>You can download the complete list of rules [with this link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
 ### Three-Tiered Ratings {#three-tiered-gate}
 
@@ -54,16 +54,16 @@ The following table summarizes the ratings and failure thresholds for each of th
 |Coverage|Defined by a mix of unit test line coverage and condition coverage using the formula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <ul><li>`CT` = Conditions that have been evaluated as `true` at least once while running unit tests</li><li>`CF` = Conditions that have been evaluated as `false` at least once while running unit tests</li><li>`LC` = Covered lines = lines_to_cover - uncovered_lines</li><li>`B` = total number of conditions</li><li>`EL` = total number of executable lines (lines_to_cover)</li></ul>|Important|&lt; 50%|
 |Skipped Unit Tests|Number of skipped unit tests|Info|> 1|
 |Open Issues|Overall issue types - Vulnerabilities, Bugs, and Code Smells|Info|&gt; 0|
-|Duplicated Lines|Defined as the number of lines involved in duplicated blocks. A block of code is considered duplicated under the following conditions.<br>Non-Java Projects:<ul><li>There should be at least 100 successive and duplicated tokens.</li><li>Those tokens should be spread over at least: </li><li>30 lines of code for COBOL </li><li>20 lines of code for ABAP </li><li>10 lines of code for other languages</li></ul>Java Projects:<ul></li><li> There should be at least 10 successive and duplicated statements regardless of the number of tokens and lines.</li></ul>Differences in indentation as well as in string literals are ignored when detecting duplicates.|Info|&gt; 1%|
+|Duplicated Lines|Defined as the number of lines involved in duplicated blocks. A block of code is considered duplicated under the following conditions.<br>Non-Java Projects:<ul><li>There should be at least 100 successive and duplicated tokens.</li><li>Those tokens should be spread over at least: </li><li>30 lines of code for COBOL </li><li>20 lines of code for ABAP </li><li>10 lines of code for other languages</li></ul>Java Projects:<ul></li><li> There should be at least 10 successive and duplicated statements regardless of the number of tokens and lines.</li></ul>Differences in indentation and in string literals are ignored when detecting duplicates.|Info|&gt; 1%|
 |Cloud Service Compatibility|Number of identified cloud service compatibility issues|Info|> 0|
 
 >[!NOTE]
 >
->Refer to [SonarQube's Metric Definitions](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) for more detailed definitions.
+>See [SonarQube's Metric Definitions](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) for more detailed definitions.
 
 >[!NOTE]
 >
->To learn more about the custom code quality rules executed by [!UICONTROL Cloud Manager], please refer to the document [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>To learn more about the custom code quality rules run by [!UICONTROL Cloud Manager], see [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## Dealing with False Positives {#dealing-with-false-positives}
 
@@ -100,7 +100,7 @@ Then the correct solution is to remove the hardcoded password.
 >While it is a best practice to make the `@SuppressWarnings` annotation as specific as possible, that is, annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
 
 >[!NOTE]
->While there is no explicit security testing step, there are security-related code quality rules evaluated during the code quality step. Refer to the document [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) to learn more about security in Cloud Service.
+>While there is no explicit security testing step, there are security-related code quality rules evaluated during the code quality step. See [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) to learn more about security in Cloud Service.
 
 ## Content Package Scanning Optimization {#content-package-scanning-optimization}
 
@@ -114,7 +114,7 @@ If the only items inside `myco-all-1.0.0-SNAPSHOT.zip` are the two skipped conte
 
 For projects that produce dozens of embedded packages, this optimization has been shown to save upwards of 10 minutes per pipeline execution.
 
-A special case can occur when the "all" content package contains a combination of skipped content packages and OSGi bundles. For example, if `myco-all-1.0.0-SNAPSHOT.zip` contained the two embedded packages previously mentioned as well as one or more OSGi bundles, then a new, minimal content package is constructed with only the OSGi bundles. This package is always named `cloudmanager-synthetic-jar-package` and the contained bundles are placed in `/apps/cloudmanager-synthetic-installer/install`.
+A special case can occur when the "all" content package contains a combination of skipped content packages and OSGi bundles. For example, if `myco-all-1.0.0-SNAPSHOT.zip` contained the two embedded packages previously mentioned and one or more OSGi bundles, then a new, minimal content package is constructed with only the OSGi bundles. This package is always named `cloudmanager-synthetic-jar-package` and the contained bundles are placed in `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >

@@ -14,7 +14,7 @@ For an overview of Adobe Experience Manager as a Cloud Service, see:
 * the [Architecture](/help/overview/architecture.md) of Adobe Experience Manager as a Cloud Service
 * An [Overview of AEM as a Cloud Service - What is New and What is Different](/help/overview/what-is-new-and-different.md)
 
-<!-- Please link to introduction or what's new of Sites. -->
+<!-- Link to introduction or what's new of Sites. -->
 
 For an overview of Assets, see [Introduction to Assets as a Cloud Service](/help/assets/overview.md)
 

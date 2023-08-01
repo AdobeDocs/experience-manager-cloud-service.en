@@ -8,6 +8,13 @@ exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 ---
 # Add rules to an Adaptive Form {#adaptive-forms-rule-editor}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 ## Overview {#overview}
 
 The rule editor feature empowers forms business users and developers to write rules on Adaptive Form objects. These rules define actions to trigger on form objects based on preset conditions, user inputs, and user actions on the form. It helps further streamline the form filling experience ensuring accuracy and speed.
@@ -265,7 +272,7 @@ A typical Disable rule is structured as follows:
 
 ### [!UICONTROL Validate] {#validate}
 
-The **[!UICONTROL Validate]** rule type validates the value in a field using an expression. For example, you can write an expression to check that the text box for specifying name doesn't contain special characters or numbers.
+The **[!UICONTROL Validate]** rule type validates the value in a field using an expression. For example, you can write an expression to check that the text box for specifying name does not contain special characters or numbers.
 
 A typical Validate rule is structured as follows:
 
@@ -277,7 +284,7 @@ A typical Validate rule is structured as follows:
 
 >[!NOTE]
 >
->If the specified value doesn't comply with the Validate rule, you can display a validation message to the user. You can specify the message in the **[!UICONTROL Script validation message]** field in the component properties in the sidebar.
+>If the specified value does not comply with the Validate rule, you can display a validation message to the user. You can specify the message in the **[!UICONTROL Script validation message]** field in the component properties in the sidebar.
 
 ![Script-validation](assets/script-validation.png)
 
@@ -366,7 +373,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. Done and cancel buttons {#done-and-cancel-buttons}
 
-The **[!UICONTROL Done]** button is used to save a rule. You can save an incomplete rule. However, incomplete are invalid and don't execute. Saved rules on a form object are listed when you launch the rule editor next time from the same form object. You can manage existing rules in that view. For more information, see [Manage rules](rule-editor.md#p-manage-rules-p).
+The **[!UICONTROL Done]** button is used to save a rule. You can save an incomplete rule. However, incomplete are invalid and do not run. Saved rules on a form object are listed when you launch the rule editor next time from the same form object. You can manage existing rules in that view. For more information, see [Manage rules](rule-editor.md#p-manage-rules-p).
 
 The **[!UICONTROL Cancel]** button discards any changes you made to a rule and closes the rule editor.
 

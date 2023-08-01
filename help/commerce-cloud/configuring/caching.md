@@ -42,7 +42,7 @@ venia/components/structure/navigation:true:10:600
 
 Considering that the [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia) is used. Note the use of the component proxy name `venia/components/structure/navigation`, and **not** the name of the CIF navigation component (`core/cif/components/structure/navigation/v1/navigation`).
 
-Caching for other components should be defined on a project basis, usually in coordination with caching configured at the Dispatcher level. Remember that there isn't any active invalidation of these caches, so caching duration should be carefully set. There isn't any "one size fits all" values that would match all possible projects and use cases. Make sure that you define a caching strategy at the project level that best matches the requirements of your project.
+Caching for other components should be defined on a project basis, usually in coordination with caching configured at the Dispatcher level. Remember that there  is not any active invalidation of these caches, so caching duration should be carefully set. There  is not any "one size fits all" values that would match all possible projects and use cases. Make sure that you define a caching strategy at the project level that best matches the requirements of your project.
 
 ## Dispatcher Caching {#dispatcher}
 

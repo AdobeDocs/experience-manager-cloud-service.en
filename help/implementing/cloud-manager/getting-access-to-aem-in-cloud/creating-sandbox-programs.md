@@ -11,15 +11,13 @@ Learn more about program types in the document [Understanding Program and Progra
 
 ## Create a Sandbox Program {#create}
 
-Follow these steps to create a sandbox program.
-
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+1. Log on to Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
  
-1. From Cloud Manager's landing page click on **Add Program** in the top-right corner of the screen.
+1. From Cloud Manager's landing page, near the upper-right corner of the screen, click **Add Program**.
 
    ![Cloud Manager landing page](assets/cloud-manager-my-programs.png) 
 
-1. From the create program wizard, select **Set up a sandbox** and provide a program name.
+1. From the create program wizard, select **Set up a sandbox**, and provide a program name.
 
    ![Program type creation](assets/create-sandbox.png)
 
@@ -27,23 +25,23 @@ Follow these steps to create a sandbox program.
 
    * The image serves only as the tile in the program overview window and helps to identify the program.
 
-1. In the **Set up your sandbox** dialog, choose which solutions you wish to enable in your sandbox program by checking the options in the **Solutions &amp; Add-Ons** table.
+1. In the **Set up your sandbox** dialog box, choose which solutions you wish to enable in your sandbox program by checking the options in the **Solutions &amp; Add-ons** table.
    
-   * Use the chevrons next to the solution names to show additional, optional add-ons for the solutions.
+   * Use the chevrons next to the solution names so you can see additional, optional add-ons for the solutions.
    
-   * The **Sites** and **Assets** solutions are always included in sandbox programs and can not be de-selected.
+   * The **Sites** and **Assets** solutions are always included in sandbox programs and cannot be de-selected.
 
    ![Select solutions and add-ons for a sandbox](assets/sandbox-solutions-add-ons.png)
 
-1. Once you have selected the solutions and add-ons for your sandbox program, tap click **Create**.
+1. Once you have selected the solutions and add-ons for your sandbox program, click **Create**.
 
-You will see a new sandbox program card on the landing page with a status indicator as the setup process progresses.
+You see a new sandbox program card on the landing page with a status indicator as the setup process progresses.
 
 ![Sandbox creation from overview page](assets/sandbox-setup.png)
 
 ## Sandbox Access {#access}
 
-You can view the detail of your sandbox setup as well as access the environment (once available) by viewing the program overview page.
+You can view the detail of your sandbox setup and access the environment (once available) by viewing the program overview page.
 
 1. From the Cloud Manager landing page, click the ellipsis button on your newly created program.
 
@@ -55,7 +53,7 @@ You can view the detail of your sandbox setup as well as access the environment 
    
    >[!TIP]
    >
-   >To learn more about accessing and managing your git repository, refer to the document [Accessing Git.](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+   >To learn more about accessing and managing your git repository, see [Accessing Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 1. Once the development environment is created, you can use the **Access AEM** link to sign into AEM.
 
@@ -65,6 +63,6 @@ You can view the detail of your sandbox setup as well as access the environment 
 
    ![Deploying sandbox](assets/create-program-setup-deploy.png)
 
-If at any time you need to switch to another program or return to the overview page to create another program, click on your program name in the top-left of the screen to reveal the **Navigate to** option.
+If you must switch to another program, or return to the overview page to create another program, click your program name in the top-left of the screen to reveal the **Navigate to** option.
 
 ![Navigate to](assets/create-program-a1.png)

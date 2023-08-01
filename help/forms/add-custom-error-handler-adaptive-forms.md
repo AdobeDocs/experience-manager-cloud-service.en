@@ -10,6 +10,8 @@ feature: Adaptive Forms
 ---
 # Error Handlers in Adaptive Forms {#error-handlers-in-adaptive-form}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html)                  |
@@ -53,7 +55,7 @@ The below code illustrates the existing failure response structure:
     ]
     originCode : <target error Code>
     originMessage : <unstructured error message returned by service>
-}
+    }
 ```
 
 
@@ -113,27 +115,25 @@ Where:
 
 Some of the options to display the error responses are:
 
-+++
-
-+++  Based on the Adaptive Form fieldName
++++  Based on the Adaptive Form fieldName property
 
 
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
 
-        ```javascript
-        {
-            "type": "VALIDATION_ERROR",
-            "validationErrors": [
+    ```javascript
             {
-            "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
-            "dataRef": "",
-            "details": [
-            "Invalid ID supplied. Provided value is not correct!"
-        ]
-        }
+                "type": "VALIDATION_ERROR",
+                "validationErrors": [
+                {
+                "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
+                "dataRef": "",
+                "details": [
+                "Invalid ID supplied. Provided value is not correct!"
+            ]
+            }
             ]}
-        ```
+    ```
 
     You can view the SOM expression of any field in an Adaptive Form by tapping the field and selecting the **[!UICONTROL View SOM Expression]**.
 
@@ -142,32 +142,32 @@ Some of the options to display the error responses are:
 +++
 
 
-+++ Based on the Adaptive Form dataRef
++++ Based on the Adaptive Form dataRef property
 
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
 
     ```javascript
-    {
-        "type": "VALIDATION_ERROR",
-        "validationErrors": [
         {
-            "fieldName": "",
-            "dataRef": "/Pet/id",
-            "details": [
-            "Invalid ID supplied. Provided value is not correct!"
-            ]
-            }
-    ]}
+            "type": "VALIDATION_ERROR",
+            "validationErrors": [
+            {
+                "fieldName": "",
+                "dataRef": "/Pet/id",
+                "details": [
+                "Invalid ID supplied. Provided value is not correct!"
+                ]
+                }
+        ]}
     ```
 
     ![Data Ref of an adaptive form field to display error reponse in custom error handler](/help/forms/assets/custom-errorhandler-dataref.png)
 
 You can view the value of dataRef in the **[!UICONTROL Properties]** window of a form component.
 
- 
 +++
 
+ 
 ## Add error handler using Rule Editor {#add-error-handler-using-rule-editor}
 
 Using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, you define the validation criteria based on the data source that you use with the Adaptive Form. In case, you use RESTful web services as the data source, you can define the validation criteria in a Swagger definition file. By utilizing the error handler functions and Rule Editor in Adaptive Forms, you can effectively manage and customize error handling. You define the conditions using Rule Editor and configure the desired actions to be performed when the rule is triggered. Adaptive Form validates the inputs that you enter in fields based on pre-set validation criteria. In case, the input values do not meet the validation criteria, the error messages are displayed at the field level in an Adaptive Form. 
@@ -231,7 +231,7 @@ To create a custom error function, perform the following steps:
 1. Add a JavaScript file, for example `function.js`. The file comprises the code for custom error handler.
 Let's add the following code to the JavaScript file to display the response and headers, received from the REST service endpoint, in the browser console.
 
-        ```javascript
+    ```javascript
         /**
         * Custom Error handler
         * @name customErrorHandler Custom Error Handler Function
@@ -244,7 +244,7 @@ Let's add the following code to the JavaScript file to display the response and 
             console.log("headers:"+JSON.stringify(headers));
             console.log("Custom Error Handler processing end...");
         }
-        ```
+    ```
 
    <!--  To call the default error handler after the custom error handler, the following line of the sample code is used:
         `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `-->

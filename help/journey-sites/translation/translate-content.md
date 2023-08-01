@@ -168,7 +168,7 @@ Machine translations automatically return with a state of **Approved**. Human tr
 >
 >If you did not deactivate the project option **Delete Launch After Promotion** as [described in the previous section,](#using-translation-project) translated items will appear with the **Deleted** state. This is normal as AEM automatically discards the translation records once the translated items arrive. The translated items have been imported as language copies, only the translation records have been deleted as they are no longer needed.
 >
->Don't worry if this is unclear. These are in-depth details of how AEM works and does not affect your understanding of the journey. If you wish to dive deeper on how AEM processes translations, please refer to the [additional resources](#additional-resources) section at the end of this article.
+>Don't worry if this is unclear. These are in-depth details of how AEM works and does not affect your understanding of the journey. If you wish to dive deeper on how AEM processes translations, see [additional resources](#additional-resources) section at the end of this article.
 
 ### Using a Manually Created Translation Project {#using-manual-project}
 
@@ -228,7 +228,7 @@ Machine translations automatically return with a state of **Approved**. Human tr
 >
 >If you did not deactivate the project option **Delete Launch After Promotion** as [described in the previous section,](#using-translation-project) translated items will appear with the **Deleted** state. This is normal as AEM automatically discards the translation records once the translated items arrive. The translated items have been imported as language copies, only the translation records have been deleted as they are no longer needed.
 >
->Don't worry if this is unclear. These are in-depth details of how AEM works and does not affect your understanding of the journey. If you wish to dive deeper on how AEM processes translations, please refer to the [additional resources](#additional-resources) section at the end of this article.
+>Don't worry if this is unclear. These are in-depth details of how AEM works and does not affect your understanding of the journey. If you wish to dive deeper on how AEM processes translations, see [additional resources](#additional-resources) section at the end of this article.
 
 ## Reviewing Translated Content {#reviewing}
 

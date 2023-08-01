@@ -7,6 +7,14 @@ exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 ---
 # Supporting new locales for Adaptive Forms localization {#supporting-new-locales-for-adaptive-forms-localization}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html)                  |
+| AEM as a Cloud Service     | This article         |
+
 AEM Forms provide out of the box support for English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. You can add support for more locales also, like Hindi(hi_IN). 
 
 ## Understanding locale dictionaries {#about-locale-dictionaries}
@@ -130,7 +138,7 @@ There are two methods to identify the locale of an Adaptive Form. When an Adapti
 
     *   The browser locale set for the user, which is specified in the request using the `Accept-Language` header.
 
-If a client library for the requested locale doesn't exist, it checks for a client library for the language code present in the locale. For example, if the requested locale is `en_ZA` (South African English) and the client library for `en_ZA` doesn't exist, the adaptive form uses the client library for `en` (English) language, if it exists. However, if none of them exist, the Adaptive Form uses the dictionary for `en` locale.
+If a client library for the requested locale does not exist, it checks for a client library for the language code present in the locale. For example, if the requested locale is `en_ZA` (South African English) and the client library for `en_ZA` does not exist, the adaptive form uses the client library for `en` (English) language, if it exists. However, if none of them exist, the Adaptive Form uses the dictionary for `en` locale.
 
 
 Once the locale is identified, the Adaptive Form picks the form-specific dictionary. If the form-specific dictionary for the requested locale is not found, it uses the dictionary for language in which Adaptive Form is authored.

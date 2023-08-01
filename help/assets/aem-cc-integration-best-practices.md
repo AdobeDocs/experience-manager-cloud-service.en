@@ -16,7 +16,7 @@ exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 
 Adobe Experience Manager Assets is a digital asset management (DAM) solution that can integrate with Adobe Creative Cloud to help DAM users work together with creative teams, streamlining collaboration in the content creation process.
 
-Adobe Creative Cloud provides creative teams with an ecosystem of solutions and services to help them to create digital assets. It includes desktop and mobile applications, cloud services like storage with desktop sync or web experience, as well as marketplaces like Adobe Stock.
+Adobe Creative Cloud provides creative teams with an ecosystem of solutions and services to help them to create digital assets. It includes desktop and mobile applications, cloud services like storage with desktop sync or web experience, and marketplaces like Adobe Stock.
 
 Read on to know what integrations to pick between desktop and the enterprise-grade DAM based on your use case and what are the associated best practices for the connecting workflows.
 
@@ -28,7 +28,7 @@ Read on to know what integrations to pick between desktop and the enterprise-gra
 
 | Requirements | Use case | Involved surfaces |
 |---|---|---|
-| Simplify experience for creatives on desktop | Streamline access to asset from a DAM ([!DNL Assets]) for creative professionals, or more broadly, users on desktop working in native asset creation applications. They need an easy and straightforward way to discover, use (open), edit and save changes to Experience Manager, as well as upload new files. | Win or Mac desktop; Creative Cloud apps |
+| Simplify experience for creatives on desktop | Streamline access to asset from a DAM ([!DNL Assets]) for creative professionals, or more broadly, users on desktop working in native asset creation applications. They need an easy and straightforward way to discover, use (open), edit and save changes to Experience Manager, and upload new files. | Win or Mac desktop; Creative Cloud apps |
 | Provide high-quality, ready-to-use assets from [!DNL Adobe Stock] | Marketers help accelerate the content creation process by assisting with asset sourcing and discovery. Creative professionals use the approved assets right from within their creative tools. | [!DNL Assets]; [!DNL Adobe Stock] marketplace; metadata fields |
 | Distribute and share assets by organizations | Internal departments/local branches and external partners, distributors, and agencies use the approved assets shared by the parent organization. The organization wants to securely and seamlessly share the created assets for wider reuse. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
 | Generate predefined variations of uploaded assets automatically | Automatically process assets leveraging Adobe's unique media handling and transformation technology for predefined actions. Create custom logic to define your own actions using APIs and asset microservices. | [!DNL Assets] user interface |
@@ -37,7 +37,7 @@ Read on to know what integrations to pick between desktop and the enterprise-gra
 
 | Value proposition for the involved personas | Adobe offering | Involved surfaces |
 |---|---|---|
-| Creative users discover assets from [!DNL Experience Manager], open and use them, edit and upload changes to [!DNL Experience Manager], as well as upload new files into [!DNL Experience Manager], without leaving their [!DNL Creative Cloud] app. | [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator,and InDesign. |
+| Creative users discover assets from [!DNL Experience Manager], open and use them, edit and upload changes to [!DNL Experience Manager], and upload new files into [!DNL Experience Manager], without leaving their [!DNL Creative Cloud] app. | [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator,and InDesign. |
 | Business users simplify opening and using assets, editing and uploading changes to [!DNL Experience Manager], and uploading new files into [!DNL Experience Manager] from the desktop environment. They use a generic integration to open any asset type in the native desktop application, including non-Adobe ones. | [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Experience Manager desktop app on Win and Mac desktop |
 | Marketers and business users discover, preview, license and save, and manage the Adobe Stock assets from within Experience Manager. Licensed and saved assets provide select Adobe Stock metadata for better governance. | [Experience Manager and Adobe Stock integration](aem-assets-adobe-stock.md) | [!DNL Experience Manager] web interface |
 | Improve collaboration between digital product designers and marketers. Let designers use the digital assets in design and wireframe models on Adobe XD canvas. | [[!DNL Adobe Asset Link] for [!DNL Adobe XD]](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
@@ -113,7 +113,7 @@ This is a brief summary of best practices for Experience Manager and Creative Cl
 * **Understand why and when to store assets in DAM:** Updates to be made available to the broader team in your organization
 * **Mind the volume of assets shared:** If your use case is asset distribution, governance and security might be the most important aspects. Consider using tools built for doing that at scale, like Brand Portal.
 * **Understand asset lifecycle:** Know how assets are handled in your organization by different teams
-* **Handle frequent saves to assets with care:** Adobe Asset Link takes care of that for you with PS, AI, ID. For other applications, don't carry out work in progress tasks in mapped/shared folder unless you need all the changes in DAM
+* **Handle frequent saves to assets with care:** Adobe Asset Link takes care of that for you with PS, AI, ID. For other applications, do not carry out work in progress tasks in mapped/shared folder unless you need all the changes in DAM
 
 ### Access to Adobe Stock assets from Experience Manager Assets {#access-to-adobe-stock-assets-from-aem-assets}
 

@@ -8,6 +8,14 @@ exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 ---
 # Design JSON Schema for an Adaptive Form {#creating-adaptive-forms-using-json-schema}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html)                  |
+| AEM as a Cloud Service     | This article        |
+
+
 ## Prerequisites {#prerequisites}
 
 Authoring an Adaptive Form using a JSON Schema as its form model requires basic understanding of JSON Schema. It is recommended to read through the following content before this article.
@@ -718,6 +726,20 @@ You can add the following restrictions to JSON Schema elements to limit the valu
   </tr>
  </tbody>
 </table>
+
+
+## Enable schema compliant data {#enablig-schema-compliant-data}
+
+To enable all JSON schema-based Adaptive Forms to generate schema-compliant data upon form submission, follow these steps:
+
+1. Go to Experience Manager web console at `https://server:host/system/console/configMgr`.
+1. Locate **[!UICONTROL Adaptive Form and Interactice Communication Web Channel Configuration]**. 
+1. Tap to open the configuration in edit mode.
+1. Select the **[!UICONTROL Generate Schema Compliant Data]** checkbox.
+1. Save the settings.
+
+  ![adaptive form and interactive communication web channel configuration](/help/forms/assets/af-ic-web-channel-configuration.png)
+
 
 ## Non-supported constructs  {#non-supported-constructs}
 

@@ -3,6 +3,7 @@ title: Universal Visual Editor Introduction
 description: Learn how the Universal Visual Editor (a.k.a. Universal Editor) enables what-you-see-is-what-you-get (WYSIWYG) editing of any headless and headful experience. Understand how it can help content authors deliver exceptional experiences, increase their content velocity, and how provides a state-of-the-art developer experience.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 ---
+
 # Universal Visual Editor Introduction {#introduction}
 
 Learn how the Universal Visual Editor (a.k.a. Universal Editor) enables what-you-see-is-what-you-get (WYSIWYG) editing of any headless and headful experience. Understand how it can help content authors deliver exceptional experiences, increase their content velocity, and how provides a state-of-the-art developer experience.
@@ -23,7 +24,7 @@ The Universal Editor can be instrumented for any implementation, for any content
 
 Because experiences can be built in many different ways, any implementation can use the Universal Editor so authors can perform in-context editing.
 
-Users often think that a headless implementation limits the authors to editing all content in a form-based UI, but his isn't true with the Universal Editor
+Users often think that a headless implementation limits the authors to editing all content in a form-based UI, but this isn't the case with the Universal Editor
 
 The requirements for an implementation to use the Universal Editor is straight-forward and supports the following:
 

@@ -30,7 +30,7 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 
 ```
 
-Refer to [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) for more details.
+See [Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) for more details.
 
 The files created in the *OUT_DIR* specified above for consistency can then be checked for paths missing binaries and appropriate action taken like restoring from a backup, deleting the paths, re-indexing, and so on.
 

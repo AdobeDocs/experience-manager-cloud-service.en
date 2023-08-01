@@ -96,7 +96,7 @@ For both views (List and Calendar) you can define settings:
 
   ![Inbox list view settings](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  You can also delegate your calendar to other uses as well as request delegation from other users and manage your delegations.
+  You can also delegate your calendar to other users, request delegation from other users, and manage your delegations.
 
   ![Inbox list view delegation settings](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 

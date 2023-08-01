@@ -5,7 +5,7 @@ exl-id: d441de29-af41-4d3e-9155-531af9702841
 ---
 # Adding a TXT Record {#adding-txt}
 
-A DNS TXT record authorizes a domain to be hosted in a CDN service. You must create a DNS TXT record in the zone that authorizes Cloud Manager to deploy the CDN Service with the custom domain and associate it with the backend service. This association is entirely under your control and authorizes Cloud Manager to serve content from the service to a domain. This authorization may be granted as well as withdrawn. The TXT record is specific to the Domain and the Cloud Manager environment.
+A DNS TXT record authorizes a domain to be hosted in a CDN service. You must create a DNS TXT record in the zone that authorizes Cloud Manager to deploy the CDN Service with the custom domain and associate it with the backend service. This association is entirely under your control and authorizes Cloud Manager to serve content from the service to a domain. This authorization may be granted and withdrawn. The TXT record is specific to the Domain and the Cloud Manager environment.
 
 You must fulfill these requirements before adding a TXT record.
 
@@ -17,7 +17,7 @@ When you initiate domain verification, Cloud Manager gives you the name and TXT 
 1. Login to your domain host and find the DNS records section. 
 1. Add `_aemverification.[yourdomainname]` as the **Name** value, and add the TXT value exactly as it appears.
 
-Refer to the examples in this table.
+See the examples in this table.
 
 |Domain|Name|TXT Value|
 |--- |--- |---|

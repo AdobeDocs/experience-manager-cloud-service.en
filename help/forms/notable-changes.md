@@ -6,6 +6,12 @@ contentOwner: khsingh
 ---
 # Notable changes for existing Adobe Experience Manager 6.5 Forms users  {#notable-changes-for-existing-AEM-Forms-users}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html)                  |
+| AEM as a Cloud Service     | This article        |
+
+
 Adobe Experience Manager Forms as a Cloud Service brings some notable changes to existing features in comparison to Adobe Experience Manager Forms On-Premise and [!DNL Adobe-Managed Service] environments. The key differences are listed below:
 
 ## Cloud native capabilities
@@ -23,7 +29,7 @@ Adobe Experience Manager Forms as a Cloud Service brings some notable changes to
 
 *   Developers maintain code for Cloud Service and local development environment in a common [git repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html). A git repository, based on AEM Archetype, is auto created on creation of an AEM as a Cloud Service program. 
 
-    ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
+    ![auto creation of git repository on AEM as a cloud service program](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
 *   Development flow for Forms as a Cloud Service aligns with AEM Archetype for AEM Cloud Service. However, there are some changes required to Adobe Experience Manager Maven projects to be compatible with AEM Cloud Service. At a high-level, AEM requires a separation of content and code into discrete subpackages to respect the split between mutable and immutable content. Use the [Repository Modernizer tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) to restructure existing project packages by separating content and code into discrete packages to be compatible with the project structure defined for Adobe Experience Manager as a Cloud Service.
 
@@ -107,4 +113,13 @@ Forms as a Cloud Service provide Document Generation and Document Manipulation R
 
 * You can use Communications APIs to produce personalized documents on-demand or in batches on Forms as a Cloud Service. You can use an AEM 6.5 Forms environment for Interactive Communications and Agent UI use-cases.
 
+## See Next
 
+* [Migrate from an AEM Forms (On-Premise and AMS environments) to AEM Forms as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+* [Add or create Adaptive Forms to AEM Sites Page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Create an Adaptive Form (Core Components)](/help/forms/creating-adaptive-form-core-components.md)
+
+## Additional Information
+
+* [Introduction to AEM Forms as a Cloud Service](/help/forms/home.md)
+* [Set up a local development environment and initial development project](/help/forms/setup-local-development-environment.md)

@@ -17,7 +17,7 @@ exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 Follow the steps below to extract your migration set from the Content Transfer Tool:
 
 >[!NOTE]
->If Amazon S3, Azure Data Store, or File Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the extraction phase. The pre-copy step is most effective for the 1st full extraction and ingestion. Refer to [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) for more details.
+>If Amazon S3, Azure Data Store, or File Data Store is used as the type of data store, you can run the optional pre-copy step to significantly speed up the extraction phase. The pre-copy step is most effective for the 1st full extraction and ingestion. See [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) for more details.
 
 1. Select a migration set from **Content Transfer** wizard and click **Extract** to start extraction. 
 

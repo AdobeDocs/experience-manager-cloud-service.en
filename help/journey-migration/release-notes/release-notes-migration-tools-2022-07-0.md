@@ -53,5 +53,5 @@ The Release Date for Cloud Acceleration Manager is July 15, 2022.
 
 ### What's New {#what-is-new-cam}
 
-* Cloud Acceleration Manager now provides users to manually retrieve the migration token to be able to start an ingestion when automatic retrieval fails. Automatic retrieval can fail if customers have set up an IP allow-list that blocks CAM or if a non-admin user attempts to start an ingestion. Refer to [Troubleshooting](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) for more information.
+* Cloud Acceleration Manager now provides users to manually retrieve the migration token to be able to start an ingestion when automatic retrieval fails. Automatic retrieval can fail if customers have set up an IP allow-list that blocks CAM or if a non-admin user attempts to start an ingestion. See [Troubleshooting](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) for more information.
 * Long tables on the Migration Complexity page are now collapsible for ease of use.

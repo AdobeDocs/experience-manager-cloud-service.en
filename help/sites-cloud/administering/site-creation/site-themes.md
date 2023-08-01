@@ -17,7 +17,7 @@ Sites created with AEM site templates allow for the easy download, customization
 
 >[!NOTE]
 >
->AEM site themes should not be confused with [AEM site templates.](site-templates.md) AEM site themes only contain the styling information for an AEM site. AEM site templates define site structure and initial content, and contain an AEM site theme to allow for [quick site creation.](create-site.md)
+>AEM site themes should not be confused with [AEM site templates](site-templates.md). AEM site themes only contain the styling information for an AEM site. AEM site templates define site structure and initial content, and contain an AEM site theme to allow for [quick site creation](create-site.md).
 
 ## Using Site Themes {#using-themes}
 
@@ -28,7 +28,7 @@ Site themes are used in two different ways:
 
 >[!TIP]
 >
->An end-to-end description of the process of creating a site from a template and customizing its theme can be found in the [Quick Site Creation Journey.](/help/journey-sites/quick-site/overview.md)
+>An end-to-end description of the process of creating a site from a template and customizing its theme can be found in the [Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md).
 
 ## Site Theme Structure {#structure}
 
@@ -47,4 +47,4 @@ Adobe provides a best-practices reference theme that you can use as a basis for 
 
 Adobe provides an AEM Site Theme Builder as a set of scripts for creating new site themes.
 
-[The AEM Site Theme Builder is available along with usage documentation on GitHub.](https://github.com/adobe/aem-site-theme-builder) Front-end development experience is required for customizing the theme.
+[The AEM Site Theme Builder is available along with usage documentation on GitHub](https://github.com/adobe/aem-site-theme-builder). Front-end development experience is required for customizing the theme.
