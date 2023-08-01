@@ -33,7 +33,7 @@ To use the content copy tool, certain permissions are required in both the sourc
 
 | Content Copy Feature | AEM Administrator Group | Deployment Manager Role |
 |---|---|---|
-| Create and modify [content sets](#create-content-set) | Required | Not Required |
+| Create and modify [content sets](#create-content-set) | Not Required | Required |
 | Start or cancel the [content copy process](#copy-content) | Required | Required |
 
 For more details on permissions and how to set them, please see the document [AEM as a Cloud Service Team and Product Profiles.](/help/onboarding/aem-cs-team-product-profiles.md)
