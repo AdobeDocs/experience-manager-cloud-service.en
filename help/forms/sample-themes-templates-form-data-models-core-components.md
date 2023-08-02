@@ -3,12 +3,12 @@ title: Sample Themes, Templates, and Form Data models in Core Components
 description: AEM Forms Core Components provides sample adaptive form themes, templates, and form data models
 solution: Experience Manager Forms
 topic: Administration
-role: Author
+role: Admin, User
 hide: yes
 hidefromtoc: yes
 level: Intermediate
-exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 ---
+
 # Sample Themes, Templates, and Form Data models in Core Components {#sample-themes-templates-and-data-models}
 
 AEM Forms as a Cloud Service provides sample reference themes, templates, and form data models to help you start quickly with creating Adaptive Forms with Core Components. You can [enable Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) on AEM Forms as a Cloud Service and local development environment to get reference OOTB templates and to [use and customize themes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
