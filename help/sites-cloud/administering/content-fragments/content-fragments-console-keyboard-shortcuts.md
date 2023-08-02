@@ -4,6 +4,9 @@ description: Various keyboard shortcuts are available throughout AEM, including 
 feature: Content Fragments
 role: User
 exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
+hide: yes
+index: no
+hidefromtoc: yes
 ---
 # Keyboard Shortcuts for the Content Fragments Console {#keyboard-shortcuts-content-fragments-console}
 

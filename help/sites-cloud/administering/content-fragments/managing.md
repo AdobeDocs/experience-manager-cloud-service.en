@@ -3,9 +3,6 @@ title: Managing Content Fragments
 description: Learn how to manage your AEM Content Fragments from the console and editor, as the basis of your headless content, or for page authoring.
 feature: Content Fragments
 role: User, Developer, Architect
-hide: yes
-index: no
-hidefromtoc: yes
 ---
 
 # Managing Content Fragments {#managing-content-fragments}

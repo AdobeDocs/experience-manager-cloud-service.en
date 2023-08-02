@@ -4,6 +4,9 @@ description: Learn how to easily preview a JSON representation of your Content F
 feature: Content Fragments
 role: User
 exl-id: bffc13e5-586b-4598-98fb-b1688d9716c5
+hide: yes
+index: no
+hidefromtoc: yes
 ---
 # Preview - JSON Representation {#preview-json-representation}
 

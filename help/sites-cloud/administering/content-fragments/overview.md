@@ -3,9 +3,6 @@ title: An Overview of working with Content Fragments
 description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service allow you to design, create, curate, and use page-independent content, ideal for headless delivery, and page authoring.
 feature: Content Fragments
 role: User, Developer, Architect
-hide: yes
-index: no
-hidefromtoc: yes
 ---
 
 # An overview of working with Content Fragments {#overview-working-with-content-fragments}

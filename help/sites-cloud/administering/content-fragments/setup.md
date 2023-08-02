@@ -3,9 +3,6 @@ title: Content Fragments - Setup
 description: Learn how to enable Content Fragment and GraphQL functionality to use AEM headless delivery features.
 feature: Content Fragments
 role: Developer, Architect
-hide: yes
-index: no
-hidefromtoc: yes
 ---
 
 # Content Fragments - Setup {#content-fragments-setup}

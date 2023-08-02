@@ -3,9 +3,6 @@ title: Keyboard Shortcuts for the Content Fragments Console
 description: Various keyboard shortcuts are available throughout AEM, including some for managing Content Fragments
 feature: Content Fragments
 role: User, Developer, Architect
-hide: yes
-index: no
-hidefromtoc: yes
 ---
 
 # Keyboard Shortcuts for the Content Fragments Console {#keyboard-shortcuts-content-fragments-console}

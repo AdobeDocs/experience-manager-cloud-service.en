@@ -3,9 +3,6 @@ title: Content Fragment Models
 description: Learn how Content Fragment Models serve as a foundation for your Content Fragments in AEM. These fragments allow you to create structured content for use in headless delivery, or page authoring.
 feature: Content Fragments
 role: User, Developer, Architect
-hide: yes
-index: no
-hidefromtoc: yes
 ---
 
 # Content Fragment Models {#content-fragment-models}
