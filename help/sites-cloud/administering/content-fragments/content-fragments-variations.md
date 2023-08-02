@@ -4,11 +4,14 @@ description: Understand how variations allow you to author content for the fragm
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
+---
+# Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
+
+<!--
 hide: yes
 index: no
 hidefromtoc: yes
----
-# Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
+-->
 
 [Variations](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of AEM's content fragments, as they allow you to create and edit copies of the master content for use on specific channels, and/or scenarios, making both page authoring and headless content delivery even more flexible.
 

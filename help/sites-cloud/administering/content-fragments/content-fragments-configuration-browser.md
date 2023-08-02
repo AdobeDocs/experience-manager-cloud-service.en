@@ -4,11 +4,14 @@ description: Learn how to enable Content Fragment and GraphQL functionality in t
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
+---
+# Content Fragments - Configuration Browser{#content-fragments-configuration-browser}
+
+<!--
 hide: yes
 index: no
 hidefromtoc: yes
----
-# Content Fragments - Configuration Browser{#content-fragments-configuration-browser}
+-->
 
 Learn how to enable specific Content Fragment functionality in the Configuration Browser.
 

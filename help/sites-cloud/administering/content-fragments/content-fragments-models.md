@@ -4,11 +4,14 @@ description: Learn how Content Fragment Models serve as a foundation for your Co
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
+---
+# Content Fragment Models {#content-fragment-models}
+
+<!--
 hide: yes
 index: no
 hidefromtoc: yes
----
-# Content Fragment Models {#content-fragment-models}
+-->
 
 Content Fragment Models in AEM define the structure for the content of your [content fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md). These can be used for page authoring, or as a foundation for your headless content.
 

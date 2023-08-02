@@ -4,11 +4,15 @@ description: Understand how the associated content feature for Content Fragments
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
+---
+
+# Associated Content{#associated-content}
+
+<!--
 hide: yes
 index: no
 hidefromtoc: yes
----
-# Associated Content{#associated-content}
+-->
 
 AEM's Associated content feature provides the connection so that assets can be optionally used with the fragment when it is added to a content page, by [providing a range of assets to access when using the content fragment on a page,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) while also helping to reduce the time required to search for the appropriate asset. This also provides flexibility for your headless content delivery.
 

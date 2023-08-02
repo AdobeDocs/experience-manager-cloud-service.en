@@ -307,6 +307,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
   + Administering {#administering}
     + Content Fragments {#content-fragments}
+      + New
       + [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
       + [Headless Delivery with Content Fragments and GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
       + [Enable Content Fragment Functionality for your Instance](/help/sites-cloud/administering/content-fragments/setup.md)
@@ -317,6 +318,20 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Content Fragments - Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
       + [Analyzing Structure](/help/sites-cloud/administering/content-fragments/analysis.md)
       + [Content Fragments - Keyboard Shortcuts](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
+      + Old
+      + [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+      + [Headless Delivery with Content Fragments and GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
+      + [Enable Content Fragment Functionality for your Instance](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
+      + [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+      + [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+      + [Variations - Authoring Fragment Content](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+      + [Content Fragment Associated Content](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
+      + [Metadata - Fragment Properties](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+      + [Content Fragments - Delete Considerations](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
+      + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
+      + [Structure Tree](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
+      + [Preview - JSON Representation](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+      + [Content Fragments Console - Keyboard Shortcuts](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
     + Site Creation {#site-creation}
       + [Creating a New Site](/help/sites-cloud/administering/site-creation/create-site.md)
       + [Enable Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
