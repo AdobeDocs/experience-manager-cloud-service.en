@@ -9,9 +9,12 @@ role: User, Developer, Architect
 
 Learn how to manage your Adobe Experience Manager (AEM) **Content Fragments** from the dedicated [Content Fragments console](#content-fragments-console), and [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). These Content Fragments can be used as the basis of your headless content, or for page authoring.
 
+<!-- CHECK: file relocated? -->
+<!--
 >[!NOTE]
 >
 >Your project team can customize the console and editor if required. See [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md) for further details.
+-->
 
 After defining your [Content Fragment Models](#creating-a-content-model) you can use these to [create your Content Fragments](#creating-a-content-fragment).
 

@@ -22,9 +22,12 @@ There are two editors available for Content Fragments. The editor described in t
 >
 >See the Assets documentation for full information about the [other Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md) - it is available from both the **Assets** console and the **Content Fragments** console.
 
+<!-- CHECK - file relocated? -->
+<!--
 >[!NOTE]
 >
 >Your project team can customize the editor if required. See [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md) for further details.
+-->
 
 ## Content Fragment Editor {#content-fragment-editor}
 
@@ -379,7 +382,7 @@ Open the **Structure tree** tab from the editor toolbar to show the hierarchical
 
 >[!NOTE]
 >
->See [Content Delivery - Structure tree](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.mdstructure-tree) for more details.
+>See [Analyzing Content Fragment Structure - Structure tree](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree) for more details.
 
 ## Preview your Fragment {#preview-content-fragment}
 
