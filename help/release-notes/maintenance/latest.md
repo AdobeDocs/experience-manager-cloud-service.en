@@ -35,8 +35,6 @@ If the previous behaviour is desired, Customers should follow the steps describe
 
 ### Fixed Issues {#fixed-issues-12874}
 
-- Various accessibility and localization fixes
-- GRANITE-46601: Fixed an issue preventing the Quickstart SDK from starting up on JDK 11.0.20
 - ASSETS-24379: Made improvements to the ReplicateOnModifyListener.
 - ASSETS-25794: Resolved an issue with S7ConfigResolverImpl that caused it to execute an expensive query at startup.
 - ASSETS-25473: Fixed a bug where the Quick Publish Option was visible to users without replication permission.
@@ -67,8 +65,10 @@ If the previous behaviour is desired, Customers should follow the steps describe
 - ASSETS-26671: Fixed an issue preventing Bulk Import from including files located within a DCIM folder
 - ASSETS-26700: Fixed an issue in which saving a Public folder’s properties page with no changes would creates 3 unnecessary groups
 - CQ-4353449: Fixed an issue that allowed users with read-only Tagging permissions to create tags using the Tagging UI
+- GRANITE-46601: Fixed an issue preventing the Quickstart SDK from starting up on JDK 11.0.20
 - SKYOPS-33168: Fixed an issue in CM Developer Console that prevented loading of /content/dam for asset names without extension
 - SKYOPS-61484: Fixed an issue in the RDEProvider service that allowed unsubstituted ${sling.home} tokens to persist in merged OSGi configurations
+- Various security, accessibility, and localization fixes
 
 ### Known Issues {#known-issues-12874}
 
