@@ -3,9 +3,6 @@ title: Authoring Content Fragments
 description: Understand how to author content for your Content Fragments, then create variations of that content according to purpose. This provides added flexibility for both headless delivery and page authoring.
 feature: Content Fragments
 role: User, Developer, Architect
-hide: yes
-index: no
-hidefromtoc: yes
 ---
 
 # Authoring Content Fragments {#authoring-content-fragments}

@@ -3,9 +3,6 @@ title: Analyzing Content Fragments
 description: Understand the structure and content delivery of your Content Fragments. This provides about both headless delivery and page authoring.
 feature: Content Fragments
 role: User, Developer, Architect
-hide: yes
-index: no
-hidefromtoc: yes
 ---
 
 # Analyzing Content Fragment Structure {#analyzing-content-fragments-structure}

@@ -4,6 +4,9 @@ description: Understand how the associated content feature for Content Fragments
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
+hide: yes
+index: no
+hidefromtoc: yes
 ---
 # Associated Content{#associated-content}
 

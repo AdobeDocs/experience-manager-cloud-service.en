@@ -4,6 +4,9 @@ description: Review these important considerations before defining your Content 
 feature: Content Fragments
 role: User
 exl-id: f6698dd8-3e2a-44ac-b00f-df578aa85ffe
+hide: yes
+index: no
+hidefromtoc: yes
 ---
 # Content Fragments - Delete Considerations {#content-fragments-delete-considerations}
 

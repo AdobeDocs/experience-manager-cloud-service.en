@@ -4,6 +4,9 @@ description: Understand how the Content Fragment editor uses markdown syntax to 
 feature: Content Fragments
 role: User
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
+hide: yes
+index: no
+hidefromtoc: yes
 ---
 # Markdown {#markdown}
 

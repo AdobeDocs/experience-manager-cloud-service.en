@@ -4,6 +4,9 @@ description: Understand how variations allow you to author content for the fragm
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
+hide: yes
+index: no
+hidefromtoc: yes
 ---
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 
