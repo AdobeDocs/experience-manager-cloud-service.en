@@ -157,3 +157,8 @@ To verify, choose a path from the validation report and check if it is present o
 Some paths from the extraction and ingestion digests are excluded purposefully to keep the size of these files manageable, with the goal of being able to calculate the migration validation result within two hours of the ingestion completing.
 
 The paths we currently exclude from the digests include: `cqdam.text.txt` renditions, nodes within `/home`, and nodes within `/jcr:system`.
+
+
+### Closed User Groups are not functioning (validating-cugs)
+
+See (Migrating Closed User Groups)[/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md] for extra considerations when using a Closed User Group (CUG) policy.
