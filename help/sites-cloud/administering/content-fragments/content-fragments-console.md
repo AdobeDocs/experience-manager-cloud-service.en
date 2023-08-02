@@ -5,11 +5,14 @@ landing-page-description: Learn how to manage Content Fragments from the Content
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
+---
+# Content Fragments Console  {#content-fragments-console}
+
+<!--
 hide: yes
 index: no
 hidefromtoc: yes
----
-# Content Fragments Console  {#content-fragments-console}
+-->
 
 Learn how the Content Fragments console optimizes access to your Content Fragments, helping you create, search, and manage them by taking administrative actions such as publish, unpublish, copy.
 

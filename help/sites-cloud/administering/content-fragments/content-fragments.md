@@ -4,11 +4,14 @@ description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a 
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
+---
+# Working with Content Fragments {#working-with-content-fragments}
+
+<!--
 hide: yes
 index: no
 hidefromtoc: yes
----
-# Working with Content Fragments {#working-with-content-fragments}
+-->
 
 With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md) They allow you to prepare content ready for use in multiple locations/over multiple channels, ideal for page authoring and headless delivery.
 
