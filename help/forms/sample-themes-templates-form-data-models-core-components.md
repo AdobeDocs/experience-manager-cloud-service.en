@@ -45,7 +45,7 @@ Canvas is the default theme for Adaptive Forms, and emphasizes use of basic colo
 
 ### WKND {#WKND}
 
-The WKND theme embodies a lively, imaginative, and engaging design to showcase a stylish appearance in your forms. The theme is based on the appearance and styling of [WKND site](https://wknd.site/us/en.html) which is a travel and adventure website build on [Adobe Experience Manager Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
+The WKND theme embodies a lively, imaginative, and engaging design to showcase a stylish appearance to your forms. The theme is based on the appearance and styling of [WKND site](https://wknd.site/us/en.html) which is a travel and adventure website build on [Adobe Experience Manager Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
 
 ![WKND theme](assets/WKND-theme.png)
 
@@ -93,19 +93,19 @@ A blank canvas template is used to create an Adaptive form structure, content, a
 
 ### Request for Account Statement {#Request-for-Account-Statement}  
 
-A request for an account statement form to request a statement of transactions. This statement provides a detailed record of financial transactions, activities, or other relevant information about an individual. By completing this form, you can initiate the process of obtaining an accurate and up-to-date statement for your records.
+Request for account statement template helps to create a form that initiate the process of obtaining an accurate and up-to-date statement of customers. The statement provides a detailed record of financial transactions, activities, or other relevant information about customers who use this form.
 
 ![Request-for-account-statment](assets/Request-for-account-statment.png)
 
 ### Contact Details Update {#Contact-Details-Update}
 
-The Contact Details Update Form for address and contact details update is designed to assist you in updating your personal information related to your subscription or benefits to ensure seamless communication and uninterrupted access to the services or benefits you receive.
+Contact details update template help authors to create a form for address and contact details update of customers. The form also assist customers in updating personal information related to subscription or benefits to ensure seamless communication and uninterrupted access to the services or benefits.
 
 ![Contact-details-update](assets/Contact-details-update.png)
 
 ### Safety Inspection {#Safety-Inspection}
 
-The Safety Inspection Form is for maintaining a safe work environment. By conducting regular inspections using this form, potential hazards can be identified. It covers various aspects such as emergency exits, fire safety, electrical safety, hazardous materials, personal protective equipment, workstation ergonomics, etc. for the safety and well-being of employees, visitors, and customers and creates a secure environment for all.
+Safety inspection form is for maintaining a safe work environment. By conducting regular inspections using this form, potential hazards can be identified. It covers various aspects such as emergency exits, fire safety, electrical safety, hazardous materials, personal protective equipment, workstation ergonomics, etc. for the safety and well-being of employees, visitors, and customers and creates a secure environment for all.
 
 ### Purchase Request {#Purchase-Request}
 
