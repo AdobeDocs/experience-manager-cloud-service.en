@@ -5,7 +5,6 @@ git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.en
 index: y
 type: Documentation
 solution: Experience Manager
-version: Cloud Service
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 cloud: Experience Cloud
 ---
