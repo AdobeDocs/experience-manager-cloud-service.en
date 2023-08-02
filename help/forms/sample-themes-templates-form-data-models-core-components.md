@@ -34,7 +34,7 @@ The sample themes, templates, and form data models included in the reference con
 
 ## Sample themes {#Sample-Themes}
 
-Reference themes help you define styling to your forms without the need to have an expertise in CSS, even you can customize your theme as per your requirement. You can [enable Adaptive Forms Core Components]((https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html)) on AEM Forms as a Cloud Service and local development environment to get these themes described as follows:
+Reference themes help you define styling to your forms without the need to have an expertise in CSS, even you can customize your theme as per your requirement. You can [enable Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) on AEM Forms as a Cloud Service and local development environment to get these themes described as follows:
 
 ![OOTB themes](assets/OOTB-themes.png)
 
