@@ -11,7 +11,7 @@ level: Intermediate
 
 # Sample Themes, Templates, and Form Data models in Core Components {#sample-themes-templates-and-data-models}
 
-AEM Forms as a Cloud Service provides sample reference themes, templates, and form data models to help you start quickly with creating Adaptive Forms with Core Components. You can [enable Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) on AEM Forms as a Cloud Service and local development environment to get reference OOTB templates and to [use and customize themes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+AEM Forms as a Cloud Service provides sample reference themes, templates, and form data models to help you start quickly with creating Adaptive Forms with Core Components. You can [enable Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) on AEM Forms as a Cloud Service and local development environment to get sample OOTB templates and to [use and customize sample themes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
 
 The sample themes, templates, and form data models included in the reference content package are:
 
@@ -20,14 +20,13 @@ The sample themes, templates, and form data models included in the reference con
 | Basic |Canvas |Microsoft® Dynamics 365  |
 | Blank |WKND |Salesforce |
 | Contact Us |Easel |  |
-| Consent Form   | |  |
-| Raise Complaint | | |
+| Contact details update |   |   |
+| Consent form   | |  |
 | Log service request |  |  |
 | Give feedback  |  |  |
 | Benefits enrollment |  |   |
 | Employee benefits summary  |   |   |
 | Request for account statement |   |   |
-| Contact details update |   |   |
 | Safety inspection form |   |   |
 | Quality control inspection |   |   |
 | Purchase request |  |  |
@@ -71,15 +70,15 @@ Basic template helps you quickly create an enrollment experience form. You can a
 
 >[!TAB Desktop]
 
-     ![Basic Template Desktop](assets/Basic-template-desktop-view.png)
+![Basic Template Desktop](assets/Basic-template-desktop-view.png)
 
 >[!TAB Phone]
 
-     ![Basic Template Phone](assets/Basic-template-phone-view.png)
+![Basic Template Phone](assets/Basic-temp-phone-view.png)
 
 >[!TAB Tablet]
 
-     ![Basic Template Tablet](assets/Basic-template-tablet-view.png)
+![Basic Template Tablet](assets/Basic-temp-tablet-view.png)
 
 >[!ENDTABS]
 
@@ -90,11 +89,9 @@ A blank canvas template is used to create an Adaptive form structure, content, a
     
 ![Blank template](assets/Blank-template.png)
 
-### Request for Account Statement {#Request-for-Account-Statement}  
+### Contact Us {#Contact-Us}
 
-Request for account statement template helps to create a form that initiates the process of obtaining an accurate and up-to-date statement of customers. The statement provides a detailed record of financial transactions, activities, or other relevant information about customers who use this form.
-
-![Request-for-account-statment](assets/Request-for-account-statment.png)
+Contact us form template is used to create a form to facilitate communication between website visitors and administrators. Users can submit queries, feedback, or support requests through the form.
 
 ### Contact Details Update {#Contact-Details-Update}
 
@@ -102,38 +99,9 @@ Contact details update template help authors to create a form for address and co
 
 ![Contact-details-update](assets/Contact-details-update.png)
 
-### Safety Inspection {#Safety-Inspection}
-
-Safety inspection form template helps to create a form to input details for a safe work environment. By conducting regular inspections using this form, potential hazards can be identified. The form covers various aspects such as emergency exits, fire safety, electrical safety, hazardous materials, personal protective equipment, workstation ergonomics for the safety and well-being of employees, visitors, and customers.
-
-### Purchase Request {#Purchase-Request}
-
-Purchase request form template helps to build a form to initiate the procurement process and allow employees to formally request the purchase of goods or services necessary for their work. The form captures essential details such as item description, quantity, preferred supplier (if applicable), budget allocation, justification for purchase, delivery information, and required approvals.
-
-![purchase-request](assets/purchase-request.gif)
-
-### Employee Benefits Summary {#Employee-Benefits-Summary}
-
-Employee benefits summary form template is used to create a form to gather essential details about an individual's benefits. It helps in evaluating coverage quickly and accurately, providing a comprehensive overview for efficient assistance and support.
-
-### Benefits Enrollment {#Benefits-Enrollment}
-
-Benefits enrollment form template is used to create a form to collect essential information from their employees regarding their preferred benefits and coverage options. It typically accompanies the annual benefits enrollment period.
-
-
-### Quality Control Inspection {#Quality-Control-Inspection}
-
-Quality control inspection form template is used to create a form to assess and document the visual appearance, dimensions, functionality, documentation, testing results, and overall quality of a product or item. It helps identify defects, non-conformances, and corrective actions necessary to ensure adherence to quality standards.
-
-
 ### Consent Form {#Consent-Form}
 
 Consent form template is used to create a form for procuring a legal document from participants who participate in a specific activity, research study, medical procedure, or any situation where their personal information or rights may be involved. The form ensures transparency, protect the rights of the participant, and establish a clear understanding of what the individual is agreeing to.
-
-
-### Contact Us {#Contact-Us}
-
-Contact us form template is used to create a form to facilitate communication between website visitors and administrators. Users can submit queries, feedback, or support requests through the form.
 
 ### Log Service Request {#Log-Service-Request}
 
@@ -142,6 +110,34 @@ Log service request template helps to create a form that request-specific loggin
 ### Give Feedback {#Give-Feedback}
 
 Give feedback form template helps to build a form to provide constructive feedback to another person or team. The form helps to ensure that feedback is clear, specific, and actionable, promoting open communication and improvement.
+
+### Benefits Enrollment {#Benefits-Enrollment}
+
+Benefits enrollment form template is used to create a form to collect essential information from their employees regarding their preferred benefits and coverage options. It typically accompanies the annual benefits enrollment period.
+
+### Employee Benefits Summary {#Employee-Benefits-Summary}
+
+Employee benefits summary form template is used to create a form to gather essential details about an individual's benefits. It helps in evaluating coverage quickly and accurately, providing a comprehensive overview for efficient assistance and support.
+
+### Request for Account Statement {#Request-for-Account-Statement}  
+
+Request for account statement template helps to create a form that initiates the process of obtaining an accurate and up-to-date statement of customers. The statement provides a detailed record of financial transactions, activities, or other relevant information about customers who use this form.
+
+![Request-for-account-statment](assets/Request-for-account-statment.png)
+
+### Safety Inspection {#Safety-Inspection}
+
+Safety inspection form template helps to create a form to input details for a safe work environment. By conducting regular inspections using this form, potential hazards can be identified. The form covers various aspects such as emergency exits, fire safety, electrical safety, hazardous materials, personal protective equipment, workstation ergonomics for the safety and well-being of employees, visitors, and customers.
+
+### Quality Control Inspection {#Quality-Control-Inspection}
+
+Quality control inspection form template is used to create a form to assess and document the visual appearance, dimensions, functionality, documentation, testing results, and overall quality of a product or item. It helps identify defects, non-conformances, and corrective actions necessary to ensure adherence to quality standards.
+
+### Purchase Request {#Purchase-Request}
+
+Purchase request form template helps to build a form to initiate the procurement process and allow employees to formally request the purchase of goods or services necessary for their work. The form captures essential details such as item description, quantity, preferred supplier (if applicable), budget allocation, justification for purchase, delivery information, and required approvals.
+
+![purchase-request](assets/purchase-request.gif)
 
 ## Reference Form Data Models {#reference-models}
 
