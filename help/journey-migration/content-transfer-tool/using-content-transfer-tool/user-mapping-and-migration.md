@@ -51,6 +51,7 @@ The following specific cases are logged:
 * If the setting **Wipe existing content on Cloud instance before ingestion** is set, already transferred users on the Cloud Service instance are deleted along with the entire existing repository. And, a new repository is created into which content is ingested. This process also resets all settings including permissions on the target Cloud Service instance and is true for an admin user added to the **administrators** group. The admin user must be readded to the **administrators** group to retrieve the access token for CTT.
 * When content top-ups are performed, if content is not transferred because it has not changed since the previous transfer, users and groups associated with that content are not transferred either. This rule is true even if the users and groups have changed in the meantime. The reason is because users and groups are migrated along with the content they are associated with.
 * If the target AEM Cloud Service instance has a user with a different user name but same email address as one of the users on the source AEM instance, and User Mapping is enabled, the logs record an error message. Also, the source AEM user is not transferred, as only one user with a given email address is allowed on the target system.
+* See (Migrating Closed User Groups)[/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md] for extra considerations for groups used in a Closed User Group (CUG) policy.
 
 ## Final Summary and Report {#final-report}
 

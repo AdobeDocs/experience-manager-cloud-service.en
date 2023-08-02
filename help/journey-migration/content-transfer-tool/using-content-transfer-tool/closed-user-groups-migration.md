@@ -1,6 +1,6 @@
 ---
 title: Migrating Closed User Groups
-description: Use the Content Transfer Tool to validate content transfers
+description: This page provides the required, special considerations to enable Closed User Groups after migrating content to Adobe Experience Manager as a Cloud Service.
 ---
 # Migrating Closed User Groups {#migrating-closed-user-groups}
 
@@ -22,8 +22,9 @@ associated to the migrated content through that content's ACL.
 
 Currently, groups associated *only* with a Closed User Group (CUG) policy are *not* automatically included in the ingestion. If they are
 associated with any content through an ACL, as said above, then they will be migrated. Verification that the group exists should be done before
-going live, and, if the group does not exist, should be created in the Author instance including adding appropriate members, and activated in
-order to have it exist in the Publish instance.
+going live. The Principal Report, downloaded through the Ingestions Job view, can be used to see if the group in question was included, or was not
+because it was not in an ACL. If the group does not exist, it should be created in the Author instance including adding appropriate members, and
+activated in order to have it exist on the Publish instance.
 
 It is most likely that configurations exist in the `/conf` path related to CUG operation. The app related information in `/conf` should be included
 as a path during the extraction.
@@ -34,17 +35,18 @@ testing processes, if it is found that the CUG does not work, re-publish that co
 This should enable CUG policies on Publish, and the content will only be accessible to those authenticated users that are members of the group
 associated with the policies.
 
-### Summary
-
-In summary, these are the steps to enable CUG after a migration:
-1. Include the app-related configurations in the source `/conf` path in the extraction.
-2. Ensure each group used in the CUG policies exist on Publish after the migration
-   - a group may already exist if included in a migrated content's ACL
-   - if not, define it in Author and activate it and its members and verify it exists on Publish
-3. If the CUG policy does not yet protect the node, re-publish the page again (ensuring it publishes even if no changes were made)
-   - repeat for each CUG protect node
-
 ## Active Development
 
 The migration team is working to make CUG policies migrate and function automatically, without any addition steps after ingesting the content.
 It is advisable to include CUG functionality in any testing processes before attempting to go live.
+
+## Summary
+
+In summary, these are the steps to enable CUG after a migration:
+
+1. Include the app-related configurations in the source `/conf` path in the extraction.
+2. Ensure each group used in CUG policies exist on Publish after the migration.
+   - A group may already exist if included in a migrated content's ACL.
+   - If it does not, define it in Author and activate it and its members and verify it exists on Publish.
+3. If the CUG policy does not yet protect the node, re-publish the page again (ensuring it publishes even if no changes were made to that page).
+   - Verify for each CUG protected node.
