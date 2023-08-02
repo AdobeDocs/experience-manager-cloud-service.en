@@ -29,22 +29,44 @@ Summarized below are the continuous improvements for maintenance release 12874, 
 
 ### Fixed Issues {#fixed-issues-12874}
 
-- GRANITE-46601: Quickstart SDK fails to start on jdk 11.0.20 without `-Djdk.util.zip.disableZip64ExtraFieldValidation=true` java option
-- ASSETS-25794: Resolved an issue with S7ConfigResolverImpl that caused it to execute an expensive query at startup.
+- Various accessibility and localization fixes
+- GRANITE-46601: Fixed an issue preventing the Quickstart SDK from starting up on JDK 11.0.20
 - ASSETS-24379: Made improvements to the ReplicateOnModifyListener.
+- ASSETS-25794: Resolved an issue with S7ConfigResolverImpl that caused it to execute an expensive query at startup.
 - ASSETS-25473: Fixed a bug where the Quick Publish Option was visible to users without replication permission.
 - ASSETS-24803: Addressed an XSS vulnerability in the Viewers feature.
 - ASSETS-25489: Corrected an issue where Smart croppings were being downloaded with the wrong suffix.
 - ASSETS-25435: Fixed an error where the WidthxHeight fields were missing in the Download for dynamic renditions
-- ASSETS-22719: Fixed an issue with Smart Crop Breakpoint Naming when using brackets, which caused problems with the Smart Crop editing feature.
 - ASSETS-25741: Fixed the absence of a visual asterisk (*) symbol for the mandatory 'width' edit field in the 'Basic' tab section.
 - ASSETS-25759: Improved the visibility of focus on dropdown elements in high contrast black/white modes.
 - ASSETS-25749: Fixed the issue where focus was not moving to multiple controls below the video when navigating using the keyboard Tab, resulting in them being inaccessible.
 - ASSETS-26074: Restored the limit of 127 characters for names of non-video assets.
+- ASSETS-21428: Fixed an issue where a Multi Line field in Metadata Schema Editor would overlap the following field
+- ASSETS-21989: Fixed an issue CORS headers could be overwritten on 302 and 401 responses, preventing remote DAM login
+- ASSETS-22603: Fixed issues affecting column names and values when viewing Asset Download Reports
+- ASSETS-23120: Fixed an issue in AssetSetLastModifiedProcess related to leaking resource resolvers
+- ASSETS-25456: Fixed an issue where an Asset with a long name prevents clicking actions in the Asset Properties Editor
+- ASSETS-25832: Fixed Issue with relating assets from a full access folder to read only access folder.
+- ASSETS-25397: Fixed an issue where the new name of an Asset renamed in the new UI would not be reflected in search results
+- ASSETS-26102: Fixed an issue that could prevent uploads from CI Hub connector
+- ASSETS-26172: Reduced the size of Bulk Import progress log content saved in persistent Sling Job nodes
+- ASSETS-26292: Deprecated AssetManager createOrUpdateAsset() and createOrReplaceAsset() methods in the Java API
+- ASSETS-26399: Fixed an issue preventing collections from being published to Brand Portal
+- ASSETS-26533: Fixed an issue in Indesign Server Integration that could lead to a timeout for long processing requests
+- ASSETS-26549: Fixed an issue in Assets List View which caused "External User" to be displayed as the last modified user for all uploaded assets
+- ASSETS-26551: Resolved an issue in which Assets deleted on author were not unpublished
+- ASSETS-26571: Fixed an issue with the Assets Reports page in which the page would fail to load if multiple failed report jobs were present in the list
+- ASSETS-26147: Fixed an issue where Unified Shell would attempt to redirect an iframe into /ui when window.top.opener is set but not window.opener
+- ASSETS-26576: Fixed an issue with Dropbox Import in which the incorrect folder hierarchy was created
+- ASSETS-26671: Fixed an issue preventing Bulk Import from including files located within a DCIM folder
+- ASSETS-26700: Fixed an issue in which saving a Public folder’s properties page with no changes would creates 3 unnecessary groups
+- CQ-4353449: Fixed an issue that allowed users with read-only Tagging permissions to create tags using the Tagging UI
+- SKYOPS-33168: Fixed an issue in CM Developer Console that prevented loading of /content/dam for asset names without extension
+- SKYOPS-61484: Fixed an issue in the RDEProvider service that allowed unsubstituted ${sling.home} tokens to persist in merged OSGi configurations
 
 ### Known Issues {#known-issues-12874}
 
-- TBD
+- GRANITE-46851: Test connection in content distribution does not work
 
 ### Embedded Technologies {#embedded-tech-12874}
 
