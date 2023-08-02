@@ -9,11 +9,11 @@ hidefromtoc: yes
 level: Intermediate
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 ---
-# Sample Themes, Templates, and Form Data models in Core Components {#reference-themes-templates-and-data-models}
+# Sample Themes, Templates, and Form Data models in Core Components {#sample-themes-templates-and-data-models}
 
 AEM Forms as a Cloud Service provides several sample reference themes, templates, and form data models to help you start quickly with creating Adaptive Forms with Core Components. You can [enable Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) on AEM Forms as a Cloud Service and local development environment to get reference OOTB templates and to [use and customize themes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
 
-The sample themes, templates, and form data models included the reference content package are:
+The sample themes, templates, and form data models included in the reference content package are:
 
 |Templates | Themes | Form Data Models |
 ---------|----------|---------
@@ -34,7 +34,7 @@ The sample themes, templates, and form data models included the reference conten
 
 ## Reference themes {#Reference-Themes}
 
-Reference themes help you define styling to your forms without the need to have an expertise in CSS, even you can customize your theme as per your requirement. You can [enable Adaptive Forms Core Components]((https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html)) on AEM Forms as a Cloud Service and local development environment to get these themes (to use and customize) described as follows:
+Reference themes help you define styling to your forms without the need to have an expertise in CSS, even you can customize your theme as per your requirement. You can [enable Adaptive Forms Core Components]((https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html)) on AEM Forms as a Cloud Service and local development environment to get these themes described as follows:
 
 ![OOTB themes](assets/OOTB-themes.png)
 
@@ -64,11 +64,9 @@ Templates define initial form structure, content, and actions to replicate in yo
 
 ![Reference Templates](assets/reference-templates-core-components.png)
 
-### Basic {Basic}
+### Basic {#Basic}
 
 Basic template helps you quickly create an enrollment experience form. You can also use it to preview functionality of adaptive Forms core components. It provides a wizard layout for section-by-section presentation of data.
-    
-![Basic Template](assets/Basic-template.png)
 
 >[!BEGINTABS]
 
@@ -87,7 +85,7 @@ Basic template helps you quickly create an enrollment experience form. You can a
 >[!ENDTABS]
 
 
-### Blank {Blank}
+### Blank {#Blank}
 
 A blank canvas template is used to create an Adaptive form structure, content and rules from scratch. No form components are incorporated.
     
@@ -133,15 +131,15 @@ A quality control inspection form to assess and document the visual appearance, 
 
 A consent form is a legal document that seeks to obtain voluntary and informed permission from an individual or participant before they participate in a specific activity, research study, medical procedure, or any situation where their personal information or rights may be involved. The purpose of a consent form is to ensure transparency, protect the rights of the participant, and establish a clear understanding of what the individual is agreeing to.
 
-### Contact Us {Contact-Us}
+### Contact Us {#Contact-Us}
 
 The Contact Details Update Form for address and contact details update is designed to assist you in updating your personal information related to your subscription or benefits to ensure seamless communication and uninterrupted access to the services or benefits you receive.
 
-### Log Service Request {Log-Service-Request}
+### Log Service Request {#Log-Service-Request}
 
 A log service request form to request specific logging services from a service provider. The form serves as a formal request to create a ticket have certain events, activities, or data logged for monitoring or tracking status.
 
-### Give Feedback {Give-Feedback}
+### Give Feedback {#Give-Feedback}
 
 A "give-feedback" template to provide constructive feedback to another person or team. The template helps ensure that feedback is clear, specific, and actionable, promoting open communication and improvement.
 
