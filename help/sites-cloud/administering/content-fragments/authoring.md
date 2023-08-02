@@ -22,12 +22,9 @@ There are two editors available for Content Fragments. The editor described in t
 >
 >See the Assets documentation for full information about the [other Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md) - it is available from both the **Assets** console and the **Content Fragments** console.
 
-<!-- CHECK - file relocated? -->
-<!--
 >[!NOTE]
 >
 >Your project team can customize the editor if required. See [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md) for further details.
--->
 
 ## Content Fragment Editor {#content-fragment-editor}
 
