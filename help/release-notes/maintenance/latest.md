@@ -27,6 +27,12 @@ Summarized below are the continuous improvements for maintenance release 12874, 
   - ASSETS-24478: Remove 5 potentially large properties from the index (based on analysis of customer index data)
   - ASSETS-3383: Adds an additional tag 'assetsOmnisearch'
 
+AEM releases 12874 and above contain a new version of the damAssetLucene index (damAssetLucene-9). In order to provide the most responsive search experience, damAssetLucene-9 changes the behaviour of Oak Query result faceting to no longer evaluate access control on the facet counts returned by the underlying search index (referred to as "insecure" mode).
+
+As such, it is possible that users will be presented with facet count values which include assets which the current user does not have access to. This does not allow the user to access, download, or read those assets, nor does it allow the user to gain any further information about the assets' existence.
+
+If the previous behaviour is desired, Customers should follow the steps described in [Content Search and Indexing](/help/operations/indexing.md) to create a custom version of the damAssetLucene-9 index with the previous "statistical" facet mode.
+
 ### Fixed Issues {#fixed-issues-12874}
 
 - Various accessibility and localization fixes
