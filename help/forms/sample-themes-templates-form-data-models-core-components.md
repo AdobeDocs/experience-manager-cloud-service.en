@@ -128,19 +128,21 @@ Request for account statement template helps to create a form that initiates the
 ### Safety Inspection {#Safety-Inspection}
 
 Safety inspection form template helps to create a form to input details for a safe work environment. By conducting regular inspections using this form, potential hazards can be identified. The form covers various aspects such as emergency exits, fire safety, electrical safety, hazardous materials, personal protective equipment, workstation ergonomics for the safety and well-being of employees, visitors, and customers.
+
 ![Safety Inspection Form](assets/Safety-inspection-form.png)
 
 ### Quality Control Inspection {#Quality-Control-Inspection}
 
 Quality control inspection form template is used to create a form to assess and document the visual appearance, dimensions, functionality, documentation, testing results, and overall quality of a product or item. It helps identify defects, non-conformances, and corrective actions necessary to ensure adherence to quality standards.
-![Quality Control Inspection](assets/Quality-control-inspection.png)
+
+![Quality Control Inspection](assets/Quality-Control-Inspection.png)
 
 
 ### Purchase Request {#Purchase-Request}
 
 Purchase request form template helps to build a form to initiate the procurement process and allow employees to formally request the purchase of goods or services necessary for their work. The form captures essential details such as item description, quantity, preferred supplier (if applicable), budget allocation, justification for purchase, delivery information, and required approvals.
 
-![purchase-request-form](assets/purchase-request-form.png)
+![purchase-request-form](assets/Purchase-request-form.png)
 
 ## Reference Form Data Models {#reference-models}
 
