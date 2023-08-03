@@ -49,6 +49,7 @@ If the previous behaviour is desired, Customers should follow the steps describe
 - ASSETS-21989: Fixed an issue CORS headers could be overwritten on 302 and 401 responses, preventing remote DAM login
 - ASSETS-22603: Fixed issues affecting column names and values when viewing Asset Download Reports
 - ASSETS-23120: Fixed an issue in AssetSetLastModifiedProcess related to leaking resource resolvers
+- ASSETS-24938: Fixed an issue that was causing the Save button of the Assets Folder Properties dialog to behave like Save + Close 
 - ASSETS-25456: Fixed an issue where an Asset with a long name prevents clicking actions in the Asset Properties Editor
 - ASSETS-25832: Fixed Issue with relating assets from a full access folder to read only access folder.
 - ASSETS-25397: Fixed an issue where the new name of an Asset renamed in the new UI would not be reflected in search results
