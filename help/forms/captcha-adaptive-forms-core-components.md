@@ -21,7 +21,7 @@ To connect your AEM Forms environment with reCAPTCHA service by Google
 
 1. Obtain [reCAPTCHA API key pair](https://www.google.com/recaptcha/admin) from Google. It includes a **site key** and a **secret key**.
 
-    ![Create Google reCAPTCHA configuration of Google's website to obtain reCAPTCHA Keys](/help/forms/assets/google-captcha.gif){width="50%"}
+    ![Create Google reCAPTCHA configuration of Google's website to obtain reCAPTCHA Keys](/help/forms/assets/google-captcha.gif)
 1. Create Configuration Container on your AEM Forms as a Cloud Service environment. A Configuration Container holds Cloud Configurations used to connect AEM to external services. To create and configure a Configuration Container to connect your AEM Forms environment with reCAPTCHA service by Google:   
     1. Open your AEM Forms as a Cloud Service instance. 
     1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. In the Configuration Browser, you can: 
