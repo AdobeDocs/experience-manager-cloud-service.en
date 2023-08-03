@@ -1,6 +1,6 @@
 ---
 title: Authoring Concepts
-description: Concepts of authoring in AEM
+description: Learn the concepts of authoring in AEM, using the author, preview and publish environments.
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 ---
 # Authoring Concepts {#authoring-concepts}
