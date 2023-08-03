@@ -197,7 +197,7 @@ To learn more about the upload algorithms or to build your own upload scripts an
 The new upload method is supported only for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. The APIs from [!DNL Adobe Experience Manager] 6.5 are deprecated. The methods related to upload or update assets or renditions (any binary upload) are deprecated in the following APIs:
 
 * [Experience Manager Assets HTTP API](mac-api-assets.md)
-* `AssetManager` Java API, like `AssetManager.createAsset(..)`
+* `AssetManager` Java API, like `AssetManager.createAsset(..)`, `AssetManager.createAssetForBinary(..)`, `AssetManager.getAssetForBinary(..)`, `AssetManager.removeAssetForBinary(..)`, `AssetManager.createOrUpdateAsset(..)`, `AssetManager.createOrReplaceAsset(..)` 
 
 >[!MORELIKETHIS]
 >

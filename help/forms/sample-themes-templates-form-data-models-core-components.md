@@ -74,7 +74,6 @@ A blank canvas template is used to create an Adaptive form structure, content, a
     
 ![Blank Template](assets/Blank-temp-desktop-view.png)
 
-
 ### Contact Us {#Contact-Us}
 
 Contact us form template is used to create a form to facilitate communication between website visitors and administrators. Users can submit queries, feedback, or support requests through the form.
