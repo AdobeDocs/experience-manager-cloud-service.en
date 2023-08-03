@@ -21,17 +21,17 @@ To connect your AEM Forms environment with reCAPTCHA service by Google
 
 1. Obtain [reCAPTCHA API key pair](https://www.google.com/recaptcha/admin) from Google. It includes a **site key** and a **secret key**.
 
-    ![Create Google reCAPTCHA configuration of Google's website to obtain reCAPTCHA Keys](/help/forms/assets/google-captcha.gif)
+    ![Create Google reCAPTCHA configuration of Google's website to obtain reCAPTCHA Keys](/help/forms/assets/google-captcha.gif){width="50%"}
 1. Create Configuration Container on your AEM Forms as a Cloud Service environment. A Configuration Container holds Cloud Configurations used to connect AEM to external services. To create and configure a Configuration Container to connect your AEM Forms environment with reCAPTCHA service by Google:   
     1. Open your AEM Forms as a Cloud Service instance. 
     1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. In the Configuration Browser, you can: 
-    1. Select an existing folder or create a folder. You can
-        * Create a folder and enable the Cloud Configurations option for it: 
+    1. Select an existing folder or create a folder. You can create a folder and enable the Cloud Configurations option for it or Enable the Cloud Configurations option for an existing folder: 
+
+        * To create a folder and enable the Cloud Configurations option for it: 
             1. In the Configuration Browser, click **[!UICONTROL Create]**. 
             1. In the Create Configuration dialog, specify name, title, and select the **[!UICONTROL Cloud Configurations]** option. 
             1. Click **[!UICONTROL Create]**
-            ![Create a Cloud Configuration to connect your AEM Forms environment with reCAPTCHA service by Google](/help/forms/assets/create-configuration.png){width="50%"}
-        * Enable the Cloud Configurations option for an existing folder: 
+        * To enable the Cloud Configurations option for an existing folder: 
             1. In the Configuration Browser, select the folder and tap **[!UICONTROL Properties]**.
             1. In the Configuration Properties dialog, enable **[!UICONTROL Cloud Configurations]**.
             1. Tap **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
@@ -40,7 +40,9 @@ To connect your AEM Forms environment with reCAPTCHA service by Google
     1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) &gt; **[!UICONTROL Cloud Services]** and tap **[!UICONTROL reCAPTCHA]**.
     1. Select a Configuration Container, created or updated in previous section. Tap **[!UICONTROL Create]**.
     1. Specify **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, and **[!UICONTROL Secret Key]** for reCAPTCHA service (Obtained in Step 1). Tap **[!UICONTROL Create]**.
-    ![Configure the Cloud Service to connect your AEM Forms environment with reCAPTCHA service by Google](/help/forms/assets/captcha-configuration.gif)
+
+    ![Configure the Cloud Service to connect your AEM Forms environment with reCAPTCHA service by Google](/help/forms/assets/captcha-configuration.gif){width="50%"}
+
     
    Once the reCAPTCHA service is configured, it is available for use in an Adaptive Form. For more information, see [using Google reCAPTCHA in an Adaptive Form](#using-reCAPTCHA).
 
@@ -54,8 +56,8 @@ To use reCAPTCHA in Adaptive Forms:
 1. Select an Adaptive Forms and tap **[!UICONTROL Properties]**. For the **[!UICONTROL Configuration Container]** option, select the Configuration Container that contains the Cloud Configuration that connects AEM Forms with reCAPTCHA service by Google and tap **[!UICONTROL Save & Close]**. 
 
     If you do not have such a Configuration Container, see section [Connect your AEM Forms environment with reCAPTCHA service by Google](#connect-your-forms-environment-with-recaptcha-service-by-google) to learn how to create such a Configuration Container.
+    ![Select Configuration Container](/help/forms/assets/captcha-properties.png){width="50%"}
 
-    ![Select Configuration Container](/help/forms/assets/captcha-properties.png)
 1. Select an Adaptive Forms and tap **[!UICONTROL Edit]**. The Adaptive Form opens in Adaptive Forms Editor. 
 1. From the component browser, drag-drop the **[!UICONTROL Adaptive Form reCAPTCHA]** component onto the Adaptive Form. 
 
