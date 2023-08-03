@@ -1,6 +1,6 @@
 ---
 title: Implementing an AEM Connector
-description: Implementing an AEM Connector
+description: Learn how to build and implement an AEM connector.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 ---
 Implementing an AEM Connector
