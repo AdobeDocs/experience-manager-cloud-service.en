@@ -1,6 +1,6 @@
 ---
 title: Ingesting Content into Target
-description: Ingesting Content into Target
+description: Learn how to use the Content Transfer Tool to ingest content from your migration set into a Cloud Service instance.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 ---
 # Ingesting Content into Target {#ingesting-content}
