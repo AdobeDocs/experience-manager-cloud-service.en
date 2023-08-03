@@ -74,7 +74,7 @@ Basic template helps you quickly create an enrollment experience form. You can a
 
 >[!TAB Phone]
 
-![Basic Template Phone](assets/Basic-temp-phone-view.png)
+![Basic Template Phone](assets/Basic-temp-phone-view.png){width:"25%"}
 
 >[!TAB Tablet]
 
@@ -87,7 +87,21 @@ Basic template helps you quickly create an enrollment experience form. You can a
 
 A blank canvas template is used to create an Adaptive form structure, content, and rules from scratch. No form components are pre-incorporated in the blank template.
     
-![Blank template](assets/Blank-template.png)
+>[!BEGINTABS]
+
+>[!TAB Desktop]
+
+![Blank Template Desktop](assets/Blank-temp-desktop-view.png)
+
+>[!TAB Phone]
+
+![Basic Template Phone](assets/Blank-temp-phone-view.png){width:"25%"}
+
+>[!TAB Tablet]
+
+![Basic Template Tablet](assets/Blank-temp-tablet-view.png)
+
+>[!ENDTABS]
 
 ### Contact Us {#Contact-Us}
 
@@ -141,7 +155,7 @@ Purchase request form template helps to build a form to initiate the procurement
 
 ## Reference Form Data Models {#reference-models}
 
-After you create an [Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) based on [Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), you can connect backend of your form with database Microsoft® Dynamics 365 and Salesforce servers to enable business workflows. For example:
+After you create an [Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) based on [Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), you can connect your form with database Microsoft® Dynamics 365 and Salesforce servers to enable business workflows. For example:
 
 * Write data in Microsoft® Dynamics 365 and Salesforce on Adaptive Form submission.
 * Write data in Microsoft® Dynamics 365 and Salesforce through custom entities defined in Form Data Model and vice versa.
