@@ -17,7 +17,7 @@ The sample themes, templates, and form data models included in the reference con
 
 |Templates | Themes | Form Data Models |
 ---------|----------|---------
-| Basic |Canvas |Microsoft® Dynamics 365  |
+| Basic |Canvas |Microsoft&reg; Dynamics 365  |
 | Blank |WKND |Salesforce |
 | Contact Us |Easel |  |
 | Contact details update |   |   |
@@ -74,7 +74,7 @@ Basic template helps you quickly create an enrollment experience form. You can a
 
 >[!TAB Phone]
 
-![Basic Template Phone](assets/Basic-temp-phone-view.png)
+![Basic Template Phone](assets/Basic-temp-phone-view.png){width="25%"}
 
 >[!TAB Tablet]
 
@@ -141,16 +141,16 @@ Purchase request form template helps to build a form to initiate the procurement
 
 ## Reference Form Data Models {#reference-models}
 
-After you create an [Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) based on [Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), you can connect backend of your form with database Microsoft® Dynamics 365 and Salesforce servers to enable business workflows. For example:
+After you create an [Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) based on [Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), you can connect backend of your form with database Microsoft&reg; Dynamics 365 and Salesforce servers to enable business workflows. For example:
 
-* Write data in Microsoft® Dynamics 365 and Salesforce on Adaptive Form submission.
-* Write data in Microsoft® Dynamics 365 and Salesforce through custom entities defined in Form Data Model and vice versa.
-* Query Microsoft® Dynamics 365 and Salesforce server for data and prepopulate Adaptive Forms.
-* Read data from Microsoft® Dynamics 365 and Salesforce server.
+* Write data in Microsoft&reg; Dynamics 365 and Salesforce on Adaptive Form submission.
+* Write data in Microsoft&reg; Dynamics 365 and Salesforce through custom entities defined in Form Data Model and vice versa.
+* Query Microsoft&reg; Dynamics 365 and Salesforce server for data and prepopulate Adaptive Forms.
+* Read data from Microsoft&reg; Dynamics 365 and Salesforce server.
 
 You can get the following Form Data Models by installing the [Reference content package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
 
 * Microsoft&reg; Dynamics 365
 * Salesforce 
 
-For information on using these models, see [Configure Microsoft® Dynamics 365 and Salesforce cloud services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+For information on using these models, see [Configure Microsoft&reg; Dynamics 365 and Salesforce cloud services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
