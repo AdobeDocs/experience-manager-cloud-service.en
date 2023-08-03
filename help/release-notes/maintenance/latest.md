@@ -16,22 +16,21 @@ Summarized below are the continuous improvements for maintenance release 12874, 
 ### Enhancements {#enhancements-12874}
 
 - New version of index definition: `/oak:index/damAssetLucene-9`
+- ASSETS-18351: Switches to insecure facets - to improve search performance
+- ASSETS-17896: Removes Feature Vectors from the index - similarity search based on smart tags
+- ASSETS-8715: Adds null check / not null check for the property "jcr:content/metadata/dam:status"
+- GRANITE-45138: Removes property index from the predicted tags dynamic boost property
+- ASSETS-17614: Adds Scene7 ID as an indexed property (null check and not null check enabled)
+- ASSETS-14516: Adds properties for 'new UI' Trash functionality to the index
+- ASSETS-16270: Adds coalesced title property to the index (for use in sorting)
+- ASSETS-24478: Remove 5 potentially large properties from the index (based on analysis of customer index data)
+- ASSETS-3383: Adds an additional tag 'assetsOmnisearch'
 
-  - ASSETS-18351: Switches to insecure facets - to improve search performance
-  - ASSETS-17896: Removes Feature Vectors from the index - similarity search based on smart tags
-  - ASSETS-8715: Adds null check / not null check for the property "jcr:content/metadata/dam:status"
-  - GRANITE-45138: Removes property index from the predicted tags dynamic boost property
-  - ASSETS-17614: Adds Scene7 ID as an indexed property (null check and not null check enabled)
-  - ASSETS-14516: Adds properties for 'new UI' Trash functionality to the index
-  - ASSETS-16270: Adds coalesced title property to the index (for use in sorting)
-  - ASSETS-24478: Remove 5 potentially large properties from the index (based on analysis of customer index data)
-  - ASSETS-3383: Adds an additional tag 'assetsOmnisearch'
-
-AEM releases 12874 and above contain a new version of the damAssetLucene index (damAssetLucene-9). In order to provide the most responsive search experience, damAssetLucene-9 changes the behaviour of Oak Query result faceting to no longer evaluate access control on the facet counts returned by the underlying search index (referred to as "insecure" mode).
+AEM releases 12874 and above contain a new version of the damAssetLucene index (damAssetLucene-9). In order to provide the most responsive search experience, damAssetLucene-9 changes the behavior of Oak Query result faceting to no longer evaluate access control on the facet counts returned by the underlying search index (referred to as "insecure" mode).
 
 As such, it is possible that users will be presented with facet count values which include assets which the current user does not have access to. This does not allow the user to access, download, or read those assets, nor does it allow the user to gain any further information about the assets' existence.
 
-If the previous behaviour is desired, Customers should follow the steps described in [Content Search and Indexing](/help/operations/indexing.md) to create a custom version of the damAssetLucene-9 index with the previous "statistical" facet mode.
+If the previous behavior is desired, Customers should follow the steps described in [Content Search and Indexing](/help/operations/indexing.md) to create a custom version of the damAssetLucene-9 index with the previous "statistical" facet mode.
 
 ### Fixed Issues {#fixed-issues-12874}
 
@@ -41,7 +40,7 @@ If the previous behaviour is desired, Customers should follow the steps describe
 - ASSETS-24803: Addressed an XSS vulnerability in the Viewers feature.
 - ASSETS-25489: Corrected an issue where Smart croppings were being downloaded with the wrong suffix.
 - ASSETS-25435: Fixed an error where the WidthxHeight fields were missing in the Download for dynamic renditions
-- ASSETS-25741: Fixed the absence of a visual asterisk (*) symbol for the mandatory 'width' edit field in the 'Basic' tab section.
+- ASSETS-25741: Fixed the absence of a visual asterisk (`*`) symbol for the mandatory 'width' edit field in the 'Basic' tab section.
 - ASSETS-25759: Improved the visibility of focus on dropdown elements in high contrast black/white modes.
 - ASSETS-25749: Fixed the issue where focus was not moving to multiple controls below the video when navigating using the keyboard Tab, resulting in them being inaccessible.
 - ASSETS-26074: Restored the limit of 127 characters for names of non-video assets.
