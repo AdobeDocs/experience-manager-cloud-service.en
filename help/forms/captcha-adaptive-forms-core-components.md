@@ -41,7 +41,9 @@ To connect your AEM Forms environment with reCAPTCHA service by Google
     1. Select a Configuration Container, created or updated in previous section. Tap **[!UICONTROL Create]**.
     1. Specify **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, and **[!UICONTROL Secret Key]** for reCAPTCHA service (Obtained in Step 1). Tap **[!UICONTROL Create]**.
 
-    ![Configure the Cloud Service to connect your AEM Forms environment with reCAPTCHA service by Google](/help/forms/assets/captcha-configuration.gif){width="50%"}
+
+    ![Configure the Cloud Service to connect your AEM Forms environment with reCAPTCHA service by Google](/help/forms/assets/captcha-configuration.gif)
+
 
     
    Once the reCAPTCHA service is configured, it is available for use in an Adaptive Form. For more information, see [using Google reCAPTCHA in an Adaptive Form](#using-reCAPTCHA).
@@ -56,12 +58,13 @@ To use reCAPTCHA in Adaptive Forms:
 1. Select an Adaptive Forms and tap **[!UICONTROL Properties]**. For the **[!UICONTROL Configuration Container]** option, select the Configuration Container that contains the Cloud Configuration that connects AEM Forms with reCAPTCHA service by Google and tap **[!UICONTROL Save & Close]**. 
 
     If you do not have such a Configuration Container, see section [Connect your AEM Forms environment with reCAPTCHA service by Google](#connect-your-forms-environment-with-recaptcha-service-by-google) to learn how to create such a Configuration Container.
-    ![Select Configuration Container](/help/forms/assets/captcha-properties.png){width="50%"}
+
+    ![Select Configuration Container](/help/forms/assets/captcha-properties.png)
 
 1. Select an Adaptive Forms and tap **[!UICONTROL Edit]**. The Adaptive Form opens in Adaptive Forms Editor. 
 1. From the component browser, drag-drop the **[!UICONTROL Adaptive Form reCAPTCHA]** component onto the Adaptive Form. 
 
-     Google reCAPTCHA validation is time-sensitive and expires in about a minute. Therefore, Adobe recommends placing the **[!UICONTROL Adaptive Form reCAPTCHA]** component just before the **[!UICONTROL Submit]** button.
+     Google reCAPTCHA validation is time-sensitive and expires in about a couple of minutes. Therefore, Adobe recommends placing the **[!UICONTROL Adaptive Form reCAPTCHA]** component just before the **[!UICONTROL Submit]** button.
 
 1. Select the **[!UICONTROL Adaptive Form reCAPTCHA]** component and tap the properties ![Properties icon](assets/configure-icon.svg) icon. It opens the properties dialog. Specify the following mandatory properties: 
     * **[!UICONTROL Name]:** You can identify a form component easily with its unique name both in the form and in the rule editor, but the name must not contain spaces or special characters. 
