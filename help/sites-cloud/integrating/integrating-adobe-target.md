@@ -1,6 +1,6 @@
 ---
 title: Integrating with Adobe Target
-description: Learn how to integrate Adobe Target with AEM as a Cloud Service.  
+description: Learn how to integrate Adobe Target with AEM as a Cloud Service by using the Touch UI and Adobe Launch.  
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
