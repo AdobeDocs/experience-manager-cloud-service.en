@@ -26,8 +26,9 @@ The structure is built up using References:
   * [Manage these references](/help/sites-cloud/administering/content-fragments/authoring.md##manage-references)
   * [Find Parent References of your Fragment](/help/sites-cloud/administering/content-fragments/managing.md#parent-references-fragment)
 
-<!-- CHECK: Replace with snippet -->
+<!-- CHECK: Replace with snippet, see also authoring.md -->
 
+<!--
 ## JSON preview {#json-preview}
 
 When developing the models for Content Fragments as part of your AEM headless implementation, you might want to view sample JSON output for a content fragment, as based on a model. For example, to get an idea of how the final output will look. This could be helpful when validating the model JSON structure, maybe with default sample content per data type. With **Copy to clipboard** you can also copy the JSON content to another application.
@@ -35,6 +36,7 @@ When developing the models for Content Fragments as part of your AEM headless im
 Select **JSON preview** from the editor toolbar to show the JSON representation of the current fragment. For example:
 
 ![Content Fragment Editor - JSON Preview](assets/cf-authoring-json-preview.png)
+-->
 
 <!-- CHECK: Replace with snippet -->
 

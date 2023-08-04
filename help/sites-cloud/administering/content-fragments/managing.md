@@ -20,7 +20,11 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 * [Edit the content](#editing-the-content-of-your-fragment) and [manage Variations](#creating-and-managing-variations-within-your-fragment)
 * [View, and edit, the Properties (Metadata) and Tags](#viewing-and-editing-properties-and-tags)
 * [View the Structure Tree](/help/sites-cloud/administering/content-fragments/authoring.md#structure-tree)
+
+<!-- CHECK -->
+<!--
 * [Preview the JSON representation](/help/sites-cloud/administering/content-fragments/authoring.md#json-preview)
+-->
 
 >[!NOTE]
 >

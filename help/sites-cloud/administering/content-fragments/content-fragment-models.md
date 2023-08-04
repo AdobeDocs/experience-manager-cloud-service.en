@@ -99,6 +99,13 @@ A selection of data types is available for defining your model:
   * Add one, or more, fields of a single line of text; the maximum length can be defined
 * **Multi line text**
   * A text area that can be Rich Text, Plain Text, or Markdown
+
+  >[!NOTE]
+  >
+  >Whether the text area is Rich Text, Plain Text, or Markdown, is defined in the model by the property **Default Type**. 
+  >
+  >This format cannot be changed from the Content Fragment Editor, but  only from the Model.
+
 * **Number**
   * Add one, or more, numerical fields
 * **Boolean**
