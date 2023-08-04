@@ -78,7 +78,7 @@ If the installed actions do not meet your requirements, you can [Create a New Sy
 
 ### Creating a Rollout Configuration {#creating-a-rollout-configuration}
 
-You can [create a rollout configuration](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) when the installed rollout configurations do not meet your application requirements by performing the following steps.
+You can [create a rollout configuration](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) when the installed rollout configurations do not meet your application requirements by performing the following steps.
 
 1. [Create the rollout configuration-](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
 1. [Add synchronization actions to the rollout configuration.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
