@@ -357,8 +357,9 @@ In the **Version history** tab of the right panel, details of the current, and p
 
 ![Content Fragment Editor - Version History Ooverview](assets/cf-authoring-version-history-overview.png)
 
-<!-- CHECK: Replace with snippet -->
+<!-- CHECK: Replace with snippet, see also analysis.md  -->
 
+<!--
 ## JSON preview {#json-preview}
 
 Select **JSON preview** from the editor toolbar to show the JSON representation of the current fragment. For example:
@@ -368,6 +369,7 @@ Select **JSON preview** from the editor toolbar to show the JSON representation 
 >[!NOTE]
 >
 >See [Content Delivery - JSON Preview](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md#json-preview) for more details.
+-->
 
 <!-- CHECK: Replace with snippet -->
 
