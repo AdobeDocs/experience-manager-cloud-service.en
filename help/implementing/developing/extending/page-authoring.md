@@ -67,7 +67,7 @@ To keep the list to a reasonable size and also relevant to the use case, a filte
 * Implement the custom predicate by implementing [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/predicate/package-summary.html) interface.
 * Specify a name for the predicate, and refer that name when using the `pathbrowser`.
 
-For further detail on creating a custom predicate, see [this article.](help/implementing/developing/introduction/query-builder-custom-predicate.md)
+For further detail on creating a custom predicate, see [this article.](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
 
 ## Add New Action to a Component Toolbar {#add-new-action-to-a-component-toolbar}
 

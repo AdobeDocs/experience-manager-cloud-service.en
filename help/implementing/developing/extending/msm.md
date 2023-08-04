@@ -26,7 +26,7 @@ Multi Site Management consists of the following packages:
 * [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
 * [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
-The main MSM API objects interact as follows (see also the section [Terms Used](/help/sites-administering/msm.md#terms-used)):
+The main MSM API objects interact as follows (see also the section [Terms Used](/help/sites-cloud/administering/msm/overview.md#terms-used)):
 
 ![Main MSM API objects](assets/msm-api-interaction.png)
 
@@ -247,7 +247,7 @@ The following procedure requires that you have added the `adobe-public` profile 
     * **`artifactName`**: `MyLiveActionFactory package`
     * **`packageGroup`**: `myPackages`
 
-1. Start Eclipse and [import the Maven project](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse).
+1. Start Eclipse and [import the Maven project.](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse)
 
 ### Add Dependencies to the POM File {#add-dependencies-to-the-pom-file}
 
@@ -511,7 +511,7 @@ The following `LiveActionFactory` class implements a `LiveAction` that logs mess
 
 Create the MSM rollout configuration that uses the `LiveActionFactory` that you created:
 
-1. Create and configure a [Rollout Configuration with the standard procedure](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) using the properties:
+1. Create and configure a [Rollout Configuration with the standard procedure](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) using the properties:
 
    * **Title**: Example Rollout Configuration
    * **Name**: examplerolloutconfig
