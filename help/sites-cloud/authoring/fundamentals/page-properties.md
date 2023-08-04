@@ -1,6 +1,6 @@
 ---
 title: Editing Page Properties
-description: Define the required properties for a page
+description: Learn how to define the properties required for managing a page in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 ---
 # Editing Page Properties {#editing-page-properties}
