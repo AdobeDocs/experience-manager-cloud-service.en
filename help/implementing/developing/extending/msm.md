@@ -63,7 +63,7 @@ The main MSM API objects interact as follows (see also the section [Terms Used](
 
 * **`RolloutConfig`** - The `RolloutConfig` holds a list of `LiveActions`, to be used when triggered. The `LiveCopy` inherits the `RolloutConfig` and the result is present in the `LiveRelationship`.
 
-  * Setting up a live copy for the very first time also uses a `RolloutConfig`` (which triggers the `LiveAction`s).
+  * Setting up a live copy for the very first time also uses a `RolloutConfig` (which triggers the `LiveAction`s).
 
 ## Creating a New Synchronization Action {#creating-a-new-synchronization-action}
 
@@ -217,7 +217,7 @@ Follow the procedures in this section to develop a `LiveActionFactory` and use i
 
 1. [Create the maven project](#create-the-maven-project) and import it into Eclipse.
 1. [Add dependencies](#add-dependencies-to-the-pom-file) to the POM file.
-1. [Implement the `LiveActionFactory` inteface](#implement-liveactionfactory) and deploy the OSGi bundle.
+1. [Implement the `LiveActionFactory` interface](#implement-liveactionfactory) and deploy the OSGi bundle.
 1. [Create the rollout configuration](#create-the-example-rollout-configuration).
 1. [Create the live copy](#create-the-live-copy).
 
@@ -497,7 +497,7 @@ The following `LiveActionFactory` class implements a `LiveAction` that logs mess
    mvn -PautoInstallPackage clean install
    ```
 
-1. The AEM `error.log` file should indicate that the bundle is started, visible in the logs at `https://<host>:<port>/system/console/status-slinglogs``.
+1. The AEM `error.log` file should indicate that the bundle is started, visible in the logs at `https://<host>:<port>/system/console/status-slinglogs`.
 
    ```text
    13.08.2013 14:34:55.450 *INFO* [OsgiInstallerImpl] com.adobe.example.msm.MyLiveActionFactory-bundle BundleEvent RESOLVED
