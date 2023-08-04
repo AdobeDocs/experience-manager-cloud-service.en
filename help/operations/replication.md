@@ -1,6 +1,6 @@
 ---
 title: Replication
-description: Distribution and troubleshooting replication.
+description: Learn about distribution and troubleshooting replication in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 ---
 # Replication {#replication}
