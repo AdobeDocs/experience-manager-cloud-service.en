@@ -11,7 +11,7 @@ level: Intermediate
 
 # Sample Themes, Templates, and Form Data models in Core Components {#sample-themes-templates-and-data-models}
 
-AEM Forms Core Components provides sample reference themes, templates, and form data models to help you start quickly with creating Adaptive Forms with Core Components. You can [enable Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) on AEM Forms as a Cloud Service and local development environment to get sample OOTB templates and to [use and customize sample themes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+[!DNL AEM Forms] Core Components provide ready-to-use sample themes, templates, and form data models to create versatile adaptive forms quickly. These also help form authors to learn the extensibility, adaptability, and responsiveness of [AEM Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) to create simple forms in no time and complex forms easily while connecting with database seamlessly.
 
 The sample themes, templates, and form data models included in the reference content package are:
 
@@ -33,7 +33,13 @@ The sample themes, templates, and form data models included in the reference con
 
 ## Sample themes {#Sample-Themes}
 
-Reference sample themes help authors to define and customize styling to forms, authors with even a basic knowledge of CSS can customize theme as per requirement. Form authors [enable Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) on AEM Forms as a Cloud Service and local development environment to get these themes described as follows:
+Reference sample themes help authors to define and customize styling to forms, authors with even a basic knowledge of CSS can customize theme as per requirement.
+
+**How to get these themes?**
+* To get these themes on **Forms as a Cloud Service** environment, [enable Adaptive Forms Core Components](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) and use the [front-end pipeline](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) to deploy these themes.
+* To get these themes on a **AEM 6.5 Forms** environment, [enable Adaptive Forms Core Components](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) and use the [package manager](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components) to deploy these themes.
+
+The **out of the box** [Adaptive Form Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) themes are described as follows:
 
 ![OOTB themes](assets/OOTB-themes.png)
 
@@ -45,7 +51,7 @@ Canvas theme is the default theme for forms, and emphasizes use of basic colors,
 
 ### WKND {#WKND}
 
-WKND theme embodies a lively, imaginative, and engaging design to showcase a stylish appearance to your forms. The theme is based on the appearance and styling of [WKND site](https://wknd.site/us/en.html) which is a travel and adventure website build on [Adobe Experience Manager Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
+WKND theme embodies a lively, imaginative, and engaging design to showcase a stylish appearance to your forms. The theme is based on the appearance and styling of [WKND site](https://wknd.site/us/en.html) which is a travel and adventure website build on [Adobe Experience Manager Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html).
 
 ![WKND theme](assets/Safety-Inspection-Form-Theme.png)
 
@@ -58,7 +64,12 @@ Easel theme helps to create a form appearance that is appealing and easy to set 
 
 ## Sample templates {#Sample-templates}
 
-Templates define initial form structure, content, and actions to replicate in your form or use a similar template structure to your form, for example, Consent form, Benefits enrollment form and many more. You can get the following templates by [enabling Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) on AEM Forms as a Cloud Service or local development environment. The sample templates in Adaptive Forms Core Components are:
+Templates define initial form structure, content, and actions to replicate in your form or use a similar template structure to your form, for example, Consent form, Benefits enrollment form and many more. 
+
+**How to get these templates?**
+You can get the templates by deploying an [AEM Archetype 43 or later based project](https://github.com/adobe/aem-project-archetype) to your **AEM Forms as a Cloud Service** or **AEM 6.5** Forms environment.
+
+The **out of the box** [Adaptive Form Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) templates are described as follows:
 
 ![Reference Templates](assets/reference-templates-core-components.png)
 
@@ -76,7 +87,7 @@ A blank canvas template is used to create an Adaptive form structure, content, a
 
 ### Contact Us {#Contact-Us}
 
-Contact us form template is used to create a form to facilitate communication between website visitors and administrators. Users can submit queries, feedback, or support requests through the form.
+Contact us form template is used to create a form to facilitate communication between website visitors and form administrators. Users can submit queries, feedback, or support requests through the form.
 
 ![Contact Us Template](assets/Contact-us-desktop-view.png)
 
@@ -94,7 +105,7 @@ Consent form template is used to create a form for procuring a legal document fr
 
 ### Log Service Request {#Log-Service-Request}
 
-Log service request template helps to create a form that request-specific logging services from a service provider. The form serves as a formal request to create a ticket have certain events, activities, or data logged for monitoring or tracking status.
+Log service request template helps create a form that requests log-specific logging services from a service provider. The form serves as a formal request to create a ticket for events, activities, or data logged for monitoring or tracking status.
 
 ![Log Service Request Template](assets/Log-service-request-desktop-view.png)
 
@@ -146,7 +157,7 @@ Purchase request form template helps to build a form to initiate the procurement
 
 ## Reference Form Data Models {#reference-models}
 
-After you create an [Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) based on [Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), you can connect your form with database Microsoft® Dynamics 365 and Salesforce servers to enable business workflows. For example:
+After you create an [Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#adaptive-forms-core-components) based on [Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction#adaptive-forms-core-components), you can connect your form with database Microsoft® Dynamics 365 and Salesforce servers to enable business workflows. For example:
 
 * Write data in Microsoft&reg; Dynamics 365 and Salesforce on Adaptive Form submission.
 * Write data in Microsoft&reg; Dynamics 365 and Salesforce through custom entities defined in Form Data Model and vice versa.
@@ -158,4 +169,4 @@ You can get the following Form Data Models by installing the [Reference content 
 * Microsoft&reg; Dynamics 365
 * Salesforce 
 
-For information on using these models, see [Configure Microsoft&reg; Dynamics 365 and Salesforce cloud services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+For information on using these models, see [Configure Microsoft&reg; Dynamics 365 and Salesforce cloud services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html#configure-dynamics-cloud-service)
