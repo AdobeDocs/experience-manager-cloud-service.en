@@ -1,6 +1,6 @@
 ---
 title: Submitting an AEM Connector
-description: Learn how to deploy connectors by using Cloud Manager.
+description: Learn how to correctly reference and deploy connectors in AEM as a Cloud Service.
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
 ---
 Submitting an AEM Connector
