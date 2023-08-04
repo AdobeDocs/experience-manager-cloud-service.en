@@ -1,6 +1,6 @@
 ---
 title: Using reCAPTCHA in Adaptive Forms
-description: Learn how to configure AEM CAPTCHA or Google reCAPTCHA service in Adaptive Forms.
+description: Learn how to configure Google reCAPTCHA service in Adaptive Forms.
 topic-tags: adaptive_forms, author
 ---
 # Use reCAPTCHA in Adaptive Forms{#using-reCAPTCHA-in-adaptive-forms}
@@ -47,7 +47,7 @@ Form authors can use the reCAPTCHA service by Google to implement reCAPTCHA in A
 1. Configure the cloud service for [!DNL reCAPTCHA Enterprise].
 
     1. On your Experience Manager author instance, go to ![tools-1](assets/tools-1.png) &gt; **[!UICONTROL Cloud Services]**.
-    1. Tap **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container you created and tap **[!UICONTROL Create]**.
+    1. Tap **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container that you created and tap **[!UICONTROL Create]**.
     1. Select version as [!DNL reCAPTCHA Enterprise] and specify Name, Project ID, Site Key, and API key (Obtained in Step 2) for reCAPTCHA Enterprise service.
     1. Select key type, the key type should be same as the site key that you configured in the [Google Cloud project](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin), for example, **Checkbox site key** or **Score-based site key**.
     1. Specify a [threshold score in the range 0 to 1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). Scores greater than or equal to the threshold scores identify human interaction, otherwise considered bot interaction.
@@ -100,18 +100,23 @@ To use reCAPTCHA in adaptive forms:
    >[!NOTE]
    >
    >* Using more than one Captcha component in an adaptive form is not supported. Also, it is not recommended to use CAPTCHA in a panel marked for lazy loading or in a fragment.
-   >* Captcha is time-sensitive and expires in about a minute. Therefore, it is recommended to place the Captcha component just before the Submit button in the adaptive form.
+   >* reCaptcha is time-sensitive and expires in about a couple of minutes. Therefore, it is recommended to place the Captcha component just before the Submit button in the adaptive form.
 
 1. Select the Captcha component that you added and tap ![cmppr](assets/cmppr.png) to edit its properties.
 1. Specify a title for the CAPTCHA widget. The default value is **Captcha**. Select **Hide title** if you do not want title to appear.
 1. From the **Captcha service** drop-down, select **reCAPTCHA** to enable reCAPTCHA service if you configured it as described in [reCAPTCHA service by Google](#google-reCAPTCHA).
 1. Select a configuration from the Settings drop-down for **reCAPTCHA Enterprise** or **reCAPTCHA v2** 
-1. If the selected configuration has version reCAPTCHA Enterprise, the key type can be of **checkbox** or **score based** based on your selection when you configure reCAPTCHA enterprise:
-    1. In the cloud configuration with key type as **checkbox**, the customized error message appears as an inline message if the captcha validation fails. You can select size as **[!UICONTROL Normal]** and **[!UICONTROL Compact]**.
-    1. In the cloud configuration with **key type** as **score based**,  the customized error message shows as a pop-up message if the captcha validation fails.
-    1. You can select a **[!UICONTROL Bind Reference]** in [!DNL AEM Forms], In **[!UICONTROL Bind Reference]** the data submitted is a bound data, otherwise it is unbound data. Below are XML examples of unbound data and bound data (with bind reference as SSN) respectively, when a form is submitted.
+    1. If you select **reCAPTCHA Enterprise** version, the key type can be of **checkbox** or **score based**, It is based on your selection when you configure [site key for websites](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key):
 
-        ```xml
+    >[!NOTE] 
+    >
+    >* In the cloud configuration with **key type** as **checkbox**, the customized error message appears as an inline message if the captcha validation fails.
+    >* In the cloud configuration with **key type** as **score based**,  the customized error message shows as a pop-up message if the captcha validation fails.
+
+      1. You can select size as **[!UICONTROL Normal]** and **[!UICONTROL Compact]**.
+      1. You can select a **[!UICONTROL Bind Reference]**, In **[!UICONTROL Bind Reference]** the data submitted is a bound data, otherwise it is unbound data. Below are XML examples of unbound data and bound data (with bind reference as SSN) respectively, when a form is submitted.
+
+    ```xml
 
             <?xml version="1.0" encoding="UTF-8" standalone="no"?>
             <afData>
@@ -148,10 +153,9 @@ To use reCAPTCHA in adaptive forms:
             </afSubmissionInfo>
             </afData>
 
-        ```
-
-
-        ```xml
+    ```
+        
+    ```xml
 
             <?xml version="1.0" encoding="UTF-8" standalone="no"?>
             <afData>
@@ -185,23 +189,22 @@ To use reCAPTCHA in adaptive forms:
                 <afSubmissionTime>20230608035111</afSubmissionTime>
             </afSubmissionInfo>
             </afData>
+    ```
+    
+    If you select **reCAPTCHA v2** version:
+      1. You can select the size as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget. 
+      1. You can select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only in the case of a suspicious activity.
 
-        ```
-
-
-   **If the selected configuration has version reCAPTCHA v2**:
-    1. You can select the size as **[!UICONTROL Normal]** or **[!UICONTROL Compact]** for the reCAPTCHA widget when you configure reCAPTCHA, you can also select the **[!UICONTROL Invisible]** option to show the CAPTCHA challenge only in the case of a suspicious activity. The **protected by reCAPTCHA** badge, displayed below, is displayed on the protected forms.
-
-        ![Google protected by reCAPTCHA badge](/help/forms/assets/google-recaptcha-v2.png)
-
-
-    The reCAPTCHA service is enabled on the adaptive form. You can preview the form and see the CAPTCHA working.
+    The reCAPTCHA service is enabled on the adaptive form. You can preview the form and see the CAPTCHA working. The **protected by reCAPTCHA** badge, displayed below, is displayed on the protected forms.
+    ![Google protected by reCAPTCHA badge](/help/forms/assets/google-recaptcha-v2.png)
 
 1. Save the properties.
 
 >[!NOTE]
 > 
 > Do not select **[!UICONTROL Default]** from the Captcha service drop-down as the default AEM CAPTCHA service is deprecated.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
 
 ### Show or hide CAPTCHA component based on rules {#show-hide-captcha}
 
