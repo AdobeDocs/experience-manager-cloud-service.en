@@ -5,6 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 ---
+
 # Configuring Live Copy Synchronization {#configuring-live-copy-synchronization}
 
 Adobe Experience Manager provides a number of synchronization configurations out-of-the-box. Before using Live Copies, you should consider the following to define how and when Live Copies are synchronized with their source content.
@@ -38,9 +39,7 @@ Each rollout configuration uses a rollout trigger that causes the rollout to occ
 
 The following table lists the rollout configurations that are provided out-of-the-box with AEM. The table includes the trigger and synchronization actions of each rollout configuration. 
 
-<!--
-If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
--->
+If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration.](#creating-a-rollout-configuration)
 
 |Name|Description|Trigger|[Synchronization Actions](#synchronization-actions)|
 |---|---|---|---|
@@ -77,16 +76,14 @@ If the installed actions do not meet your requirements, you can [Create a New Sy
 |`PageMoveAction`|The `PageMoveAction` applies when a page has been moved in the blueprint.<br>The action copies rather than moves the (related) Live Copy page from the location before the move to the location after.<br>The `PageMoveAction` does not change the Live Copy page at the location before the move. Therefore, for consecutive rollout configurations it has the status of a live relationship without a blueprint.<br>[Configure the **CQ MSM Page Move Action** service](#excluding-properties-and-node-types-from-synchronization) to specify the node types, paragraph items, and page properties to exclude.<br>This action must be the only synchronization action included in a rollout configuration.|Set `prop_referenceUpdate: (Boolean)` to true (default) to update references.|
 |`markLiveRelationship`|This action Indicates a live relationship exists for launch-created content.||
 
-<!--
 ### Creating a Rollout Configuration {#creating-a-rollout-configuration}
 
 You can [create a rollout configuration](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) when the installed rollout configurations do not meet your application requirements by performing the following steps.
 
-1. [Create the rollout configuration](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
-1. [Add synchronization actions to the rollout configuration](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
+1. [Create the rollout configuration-](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
+1. [Add synchronization actions to the rollout configuration.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
 
 The new rollout configuration is then available to you when configuring rollout configurations on a blueprint or Live Copy page.
--->
 
 ### Excluding Properties and Node Types From Synchronization {#excluding-properties-and-node-types-from-synchronization}
 

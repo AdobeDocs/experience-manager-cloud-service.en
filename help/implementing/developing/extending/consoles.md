@@ -5,7 +5,7 @@ description: Learn about the different options that AEM provides to customize th
 
 # Customizing Consoles {#customizing-consoles}
 
-AEM provides options to customize the consoles (and the [page authoring functionality](/help/sites-developing/customizing-page-authoring-touch.md)) of your authoring instance.
+AEM provides options to customize the consoles (and the [page authoring functionality](/help/implementing/developing/extending/page-authoring.md)) of your authoring instance.
 
 ## Clientlibs {#clientlibs}
 

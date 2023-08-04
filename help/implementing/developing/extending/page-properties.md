@@ -36,7 +36,7 @@ You can also configure the fields available by configuring the dialog of your pa
 For example, by default the [**Create Page** wizard](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) shows the fields grouped under **More Titles and Description**. To hide these you configure:
 
 1. Create your page component under `/apps`.
-1. Create an override (using *dialog diff* provided by the [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)) for the `basic` section of your page component; for example:
+1. Create an override (using *dialog diff* provided by the [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md)) for the `basic` section of your page component; for example:
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
@@ -68,6 +68,6 @@ For example, by default the [**Create Page** wizard](/help/sites-cloud/authoring
 
 ## Sample Configuration of Page Properties {#sample-configuration-of-page-properties}
 
-This sample demonstrates the dialog diff technique of the [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) including use of [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). It also illustrates use of both `cq:showOnCreate` and `cq:hideOnEdit`.
+This sample demonstrates the dialog diff technique of the [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) including use of [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). It also illustrates use of both `cq:showOnCreate` and `cq:hideOnEdit`.
 
 You can find the code of this page on [GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
