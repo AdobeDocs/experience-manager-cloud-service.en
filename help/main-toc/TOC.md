@@ -957,6 +957,11 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Configure Rich Text Editor](/help/implementing/developing/extending/rich-text-editor.md)
     + [Configure the RTE plug-ins](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
     + [Configure RTE to create accessible sites](/help/implementing/developing/extending/rte-accessible-content.md)
+    + [Extending Page Authoring](/help/implementing/developing/extending/page-authoring.md)
+    + [Extending Consoles](/help/implementing/developing/extending/consoles.md)
+    + [Extending Page Properties](/help/implementing/developing/extending/page-properties.md)
+    + [Extending the Bulk Editor](/help/implementing/developing/extending/bulk-editor.md)
+    + [Extending MSM](/help/implementing/developing/extending/msm.md)
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
     + [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)
