@@ -62,7 +62,7 @@ You can find the code of this page on [GitHub.](https://github.com/Adobe-Marketi
 
 When authoring pages, the user must often select from resources in a list.
 
-To keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. For example, if the [pathbrowser` Granite component is used to allow the user to select the path to a particular resource, the paths presented can be filtered in the following way:
+To keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. For example, if the `pathbrowser` Granite component is used to allow the user to select the path to a particular resource, the paths presented can be filtered in the following way:
 
 * Implement the custom predicate by implementing [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/predicate/package-summary.html) interface.
 * Specify a name for the predicate, and refer that name when using the `pathbrowser`.

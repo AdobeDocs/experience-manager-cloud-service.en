@@ -17,7 +17,7 @@ For further details on clientlibs, please see the document [Using Client-Side Li
 
 Overlays are based on node definitions and allow you to overlay the standard functionality found under `/libs` with your own customized functionality under `/apps`. When creating an overlay, a 1:1 copy of the original is not required, as [Sling resource merger](/help/implementing/developing/introduction/sling-resource-merger.md) allows for inheritance.
 
-Overlays can be used in many ways to extend your AEM consoles. Serveral examples are provided in the following sections.
+Overlays can be used in many ways to extend your AEM consoles. Several examples are provided in the following sections.
 
 For further information on overlays, please see the document [Overlays for Adobe Experience Manager as a Cloud Service.](/help/implementing/developing/introduction/overlays.md)
 
