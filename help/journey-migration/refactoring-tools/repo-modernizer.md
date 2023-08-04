@@ -1,6 +1,6 @@
 ---
 title: Repository Modernizer
-description: Repository Modernizer
+description: Learn how to restructure existing project packages and make them compatible with the project structure defined for Adobe Experience Manager as a Cloud Service.
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
 ---
 # Repository Modernizer {#repo-modernizer}
