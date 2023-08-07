@@ -1,6 +1,6 @@
 ---
 title: Deleting a Migration Set in Content Transfer Tool
-description: Deleting a Migration Set in Content Transfer Tool
+description: Learn how to delete a Migration Set in Content Transfer Tool.
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
 ---
 # Deleting a Migration Set {#delete-migration-set}
