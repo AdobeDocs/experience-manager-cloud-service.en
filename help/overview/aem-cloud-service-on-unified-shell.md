@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service on Unified Shell
-description: AEM as a Cloud Service on Unified Shell
+description: Learn about the benefits of AEM as a Cloud Service on Unified Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 ---
 # AEM as a Cloud Service on Unified Shell {#aem-as-a-cloud-service-on-unified-shell}

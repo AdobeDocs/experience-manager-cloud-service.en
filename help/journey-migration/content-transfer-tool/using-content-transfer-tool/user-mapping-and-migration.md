@@ -1,6 +1,6 @@
 ---
 title: User Mapping and Principal Migration
-description: Overview of User Mapping and Principal Migration
+description: Overview of User Mapping and Principal Migration in AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 ---
 # User Mapping and Principal Migration {#user-mapping-and-principal-migration}
