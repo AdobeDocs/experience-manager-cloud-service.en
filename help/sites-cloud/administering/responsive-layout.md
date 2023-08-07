@@ -33,11 +33,11 @@ With these responsive grid mechanisms you can:
 
 ## Configuring the Responsive Emulator {#configuring-the-responsive-emulator}
 
-This tasks allow you to see the responsive **Emulator** on your site.
+The following tasks enable the device emulator on your site and its pages.
 
 ### Register your Page Components for Emulation {#register-your-page-components-for-emulation}
 
-To enable the emulator to support your pages, you must register your page components. See [Registering Page Components for Simulation](/help/sites-developing/responsive.md#registering-page-components-for-simulation).
+To enable the emulator to support your pages, you must register your page components. See [Registering Page Components for Simulation](/help/implementing/developing/introduction/responsive-design.md#registering-page-components-for-simulation).
 
 ### Specify the Device Groups {#specify-the-device-groups}
 
