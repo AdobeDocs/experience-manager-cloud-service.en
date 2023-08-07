@@ -63,85 +63,22 @@ In your CSS file, define media queries based on the properties of the devices th
 
 The [WKND tutorial](develop-wknd-tutorial.md) uses this strategy to define styles in the site design. The CSS file used by WKND is located at `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
 
-The `We.Retail` Media sample uses this strategy to define styles in the site design. The CSS file used by `We.Retail` is at `*/apps/weretail/clientlibs/clientlib-site/less/grid.less`.
-
-The following table lists the files in the css child folder.
-
-<table>
- <tbody>
-  <tr>
-   <th>File name</th>
-   <th>Description</th>
-   <th>Media Query</th>
-  </tr>
-  <tr>
-   <td>style.css</td>
-   <td>Common styles.</td>
-   <td>N/A</td>
-  </tr>
-  <tr>
-   <td>bootstrap.css</td>
-   <td>Common styles, defined by Twitter Bootstrap.</td>
-   <td>N/A</td>
-  </tr>
-  <tr>
-   <td>responsive-1200px.css</td>
-   <td>Styles for all media that are 1200 pixels wide or wider.</td>
-   <td><p>@media (min-width: 1200 px) {<br /> ...<br /> }</p> </td>
-  </tr>
-  <tr>
-   <td>responsive-980px-1199px.css</td>
-   <td>Styles for media that are between 980 pixels and 1199 pixels wide.</td>
-   <td><p>@media (min-width: 980 px) and (max-width: 1199 px) {<br /> ...<br /> }</p> </td>
-  </tr>
-  <tr>
-   <td>responsive-768px-979px.css</td>
-   <td>Styles for media that are between 768 pixels and 979 pixels wide. </td>
-   <td><p>@media (min-width: 768 px) and (max-width: 979 px) {<br /> ...<br /> }</p> </td>
-  </tr>
-  <tr>
-   <td>responsive-767px-max.css</td>
-   <td>Styles for all media that are fewer than 768 pixels wide.</td>
-   <td><p>@media (max-width: 767 px) {<br /> ...<br /> }</p> </td>
-  </tr>
-  <tr>
-   <td>responsive-480px.css</td>
-   <td>Styles for all media that are fewer than 481 pixels wide.</td>
-   <td>@media (max-width: 480 px) {<br /> ...<br /> }</td>
-  </tr>
- </tbody>
-</table>
-
-The css.txt file in the `/etc/designs/weretail/clientlibs` folder lists the CSS files that the client library folder includes. The order of the files implements style precedence. Styles are more specific as the device size decreases.
-
-`#base=css`
-
-```
-style.css
- bootstrap.css
-```
-
-```
-responsive-1200px.css
- responsive-980px-1199px.css
- responsive-768px-979px.css
- responsive-767px-max.css
- responsive-480px.css
-```
-
-**Tip**: Descriptive file names let you easily identify the targeted viewport size.
-
 ### Using Media Queries with AEM Pages {#using-media-queries-with-aem-pages}
 
-Include the client library folder in the JSP script of your page component. Doing so helps generate the CSS file that includes the media queries, and references the file.
+[The WKND sample project](/help/implementing/developing/introduction/develop-wknd-tutorial.md) and [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) use the [Page Core Component,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html) which includes the clientlibs via the page policy.
+
+If your own page component is not based on the Page Core Component, you can also include the client library folder in the HTL or JSP script of it. Doing so helps generate the CSS file that includes the media queries, and references the file.
+
+#### HTL {#htl}
+
+<sly data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}">
+<sly data-sly-call="${clientlib.all @ categories='apps.weretail.all'}"/>
+
+#### JSP {#jsp}
 
 ```xml
 <ui:includeClientLib categories="apps.weretail.all"/>
 ```
-
->[!NOTE]
->
->The `apps.weretail.all` client library folder embeds the clientlibs library.
 
 The JSP script generates the following HTML code that references the style sheets:
 
@@ -150,84 +87,36 @@ The JSP script generates the following HTML code that references the style sheet
 <link href="/etc/designs/weretail.css" rel="stylesheet" type="text/css">
 ```
 
-## Previewing for specific devices {#previewing-for-specific-devices}
+## Previewing for Specific Devices {#previewing-for-specific-devices}
 
-See previews of your pages in different viewport sizes so you can test the behavior of your responsive design. In **[!UICONTROL Preview]** mode, **[!UICONTROL Sidekick]** includes a **[!UICONTROL Devices]** drop-down menu that you use to select a device. When you select a device, the page changes to adapt to the viewport size.
+The emulator allows you to see previews of your pages in different viewport sizes so you can test the behavior of your responsive design. When editing a page in the Sites Console, you can tap or click the **Emulator** icon to reveal the emulator.
 
-![chlimage_1-5](assets/chlimage_1-5a.png)
+![The emulator icon in the toolbar](assets/emulator-icon.png)
 
-To enable the device preview in **[!UICONTROL Sidekick]**, you must configure the page and the **[!UICONTROL MobileEmulatorProvider]** service. Another page configuration controls the list of devices that appears in the **[!UICONTROL Devices]** list.
+In the emulator toolbar you can tap or click the **Devices** icon to reveal a drop-down menu where you can select a device. When you select a device, the page changes to adapt to the viewport size.
 
-### Adding the Devices List {#adding-the-devices-list}
+![The emulator toolbar](assets/emulator.png)
 
-The **[!UICONTROL Devices]** list appears in **[!UICONTROL Sidekick]** when your page includes the JSP script that renders the **[!UICONTROL Devices]** list. To add the **[!UICONTROL Devices]** list to **[!UICONTROL Sidekick]**, include the `/libs/wcm/mobile/components/simulator/simulator.jsp` script in the `head` section of your page.
+### Specifying Device Groups {#specifying-the-device-groups}
 
-Include the following code in the JSP that defines the `head` section:
+To specify the device groups that appear in the **Devices** list, add a `cq:deviceGroups` property to the `jcr:content` node of the template page of your site. The value of the property is an array of paths to the device group nodes.
 
-`<cq:include script="/libs/wcm/mobile/components/simulator/simulator.jsp"/>`
-
-To see an example, open the `/apps/weretail/components/page/head.jsp` file in CRXDE Lite.
-
-### Registering Page components for simulation {#registering-page-components-for-simulation}
-
-To enable the device simulator to support your pages, register your page components with the MobileEmulatorProvider factory service and define the `mobile.resourceTypes` property.
-
-When working with AEM, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
-
-For example, to create a ` [sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)` node in your application:
-
-* Parent folder: `/apps/application_name/config`
-* Name: `com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider-*alias*`
-
-  The - `*alias*` suffix is required because the MobileEmulatorProvider service is a factory service. Use any alias that is unique for this factory.
-
-* jcr:primaryType: `sling:OsgiConfig`
-
-Add the following node property:
-
-* Name: `mobile.resourceTypes`
-* Type: `String[]`
-* Value: The paths to the page components that render your web pages. For example, the geometrixx-media app uses the following values:
-
-  ```
-  geometrixx-media/components/page
-   geometrixx-unlimited/components/pages/page
-   geometrixx-unlimited/components/pages/coverpage
-   geometrixx-unlimited/components/pages/issue
-  ```
-
-### Specifying the device groups {#specifying-the-device-groups}
-
-To specify the device groups that appear in the Devices list, add a `cq:deviceGroups` property to the `jcr:content` node of the root page of your site. The value of the property is an array of paths to the device group nodes.
-
-Device group nodes are in the `/etc/mobile/groups` folder.
-
-For example, the root page of the Geometrixx Media site is `/content/geometrixx-media`. The `/content/geometrixx-media/jcr:content` node includes the following property:
+For example, the template page of the WKND site is `/conf/wknd/settings/wcm/template-types/empty-page/structure`. And the `jcr:content` node beneath it includes the following property:
 
 * Name: `cq:deviceGroups`
 * Type: `String[]`
-* Value: `/etc/mobile/groups/responsive`
+* Value: `mobile/groups/responsive`
 
-Use the Tools console to [create and edit device groups](/help/sites-developing/groupfilters.md).
+Device group nodes are in the `/etc/mobile/groups` folder.
 
->[!NOTE]
->
->For device groups that you use for responsive design, edit the device group and on the General tab select Disable Emulator. This option prevents the emulator carousel from appearing, which is not relevant to responsive design.
->
+## Responsive Images {#responsive-images}
 
-## Using adaptive images {#using-adaptive-images}
+Responsive pages will dynamically adapt to the device on which they are rendered, offering a better experience for the user. However it is also important that images assets that are appropriate to the device are also delivered and thus minimizing page load time.
 
-You can use media queries to select an image resource to display in the page. However, every resource that uses a media query to conditionalize its use is downloaded to the client. The media query merely determines whether the downloaded resource is displayed.
+[The Core Component Image Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) features adaptive image selection and responsive behavior with lazy loading for the page visitor as well as easy image placement for the content author.
 
-For large resources such as images, downloading all resources is not an efficient use of the client's data pipeline. To selectively download resources, use JavaScript to initiate the resource request after the media queries perform the selection.
-
-The following strategy loads a single resource that is chosen using media queries:
-
-1. Add a DIV element for each version of the resource. Include the URI of the resource as the value of an attribute value. The browser does not interpret the attribute as a resource.
-1. Add a media query to each DIV element that is appropriate for the resource.
-1. When the document loads or the window is resized, JavaScript code tests the media query of each DIV element.
-1. Based on the results of the queries, determine which resource to include.
-1. Insert an HTML element in the DOM that references the resource.
+* By default, the Image Component uses the [Adaptive Image Servlet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) to deliver the proper rendition.
+* [Web-Optimized Image Delivery](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) is also available with additional advantages.
 
 ### Evaluating media queries using JavaScript {#evaluating-media-queries-using-javascript}
 
