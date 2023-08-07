@@ -1,43 +1,24 @@
 ---
-title: Configuring Layout Container and Layout Mode
-description: Learn how to configure Layout Container and Layout Mode.
+title: Configuring the Layout Container and Layout Mode
+description: Learn how to configure layout container and layout mode to enable responsive layouts for your content authors.
 ---
 
-# Configuring Layout Container and Layout Mode {#configuring-layout-container-and-layout-mode}
+# Configuring the Layout Container and Layout Mode {#configuring-layout-container-and-layout-mode}
 
-[Responsive Layout](/help/sites-authoring/responsive-layout.md) is a mechanism for realizing [responsive web design](https://en.wikipedia.org/wiki/Responsive_web_design). This allows the user to create web pages that have a layout and dimensions dependent on the devices their users use.
-
->[!NOTE]
->
->This can be compared with the [Mobile Web](/help/sites-developing/mobile-web.md) mechanisms, which use adaptive web design (primarily for the classic UI).
+[Responsive Layout](/help/sites-cloud/authoring/features/responsive-layout.md) is a mechanism for realizing [responsive web design.](https://en.wikipedia.org/wiki/Responsive_web_design) This allows the content author to create web pages that have a layout and dimensions dependent on the devices their users use.
 
 AEM realizes responsive layout for your pages using a combination of mechanisms:
 
-* [**Layout Container**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode) component
-
-  This component provides a grid-paragraph system to allow you to add and position components within a responsive grid. It can be used as the default parsys for your page and/or made available to authors in the component browser.
-
-    * The default **Layout Container** component is defined under:
-
-      /libs/wcm/foundation/components/responsivegrid
-
-    * You can define layout containers:
-
-        * As a component that the user can add to a page.
-        * As the default parsys for the page.
-        * Both.
-
-          You can have the layout container as standard for the page, while allowing the user to add further layout containers within this; for example, to achieve column control.
-
-* **[Layout Mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-  Once the layout container is positioned on your page you can use the **Layout** mode to position content within the responsive grid.
-
-* [**Emulator**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
-  This allows you to create and edit responsive websites that rearrange the layout according to device/window size by resizing components interactively. The user can then see how the content is rendered using the Emulator.
-
->[!CAUTION]
->
->Although the **Layout Container** component is available in the classic UI, its full functionality is only available in the touch-enabled UI.
+* [**Layout Container**](/help/sites-cloud/authoring/features/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode) - This component provides a grid-paragraph system that allows you to add and position components within a responsive grid.
+  * It can be used as the default parsys for your page and/or made available to authors in the component browser.
+  * The default **Layout Container** component is defined under `/libs/wcm/foundation/components/responsivegrid`.
+  * You can define layout containers:
+    * As a component that the user can add to a page.
+    * As the default parsys for the page.
+    * As both a component and the default parsys.
+      * You can have the layout container as standard for the page, while allowing the user to add further layout containers within this; for example, to achieve column control.
+* **[Layout Mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md)** - Once the layout container is positioned on your page you can use the **Layout** mode to position content within the responsive grid.
+* [**Emulator**](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate) - This allows you to create and edit responsive websites that rearrange the layout according to device/window size by resizing components interactively. The user can then see how the content is rendered using the emulator.
 
 With these responsive grid mechanisms you can:
 
@@ -48,7 +29,7 @@ With these responsive grid mechanisms you can:
 
 >[!NOTE]
 >
->In an out-of-the-box installation, responsive layout has been configured for the [We.Retail reference site](/help/sites-developing/we-retail.md). You must still [activate the Layout Container component](#enable-the-layout-container-component-for-page) for other pages.
+>In an out-of-the-box installation, responsive layout has been configured for the [WKND reference site.](/help/implementing/developing/introduction/develop-wknd-tutorial.md) You must still [activate the Layout Container component](#enable-the-layout-container-component-for-page) for other pages.
 
 ## Configuring the Responsive Emulator {#configuring-the-responsive-emulator}
 
