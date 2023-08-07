@@ -1,6 +1,6 @@
 ---
 title: AEM Modernization Tools
-description: AEM Modernization Tools
+description: Learn about the suite of utilities which can be used to convert legacy AEM features to the modern and supported capabilities of AEM as a Cloud Service.
 exl-id: d541fae0-6386-403f-99c9-373dc978ad13
 ---
 # AEM Modernization Tools {#aem-moderization-tools}

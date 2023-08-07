@@ -100,7 +100,7 @@ To use reCAPTCHA in adaptive forms:
    >[!NOTE]
    >
    >* Using more than one Captcha component in an adaptive form is not supported. Also, it is not recommended to use CAPTCHA in a panel marked for lazy loading or in a fragment.
-   >* reCaptcha is time-sensitive and expires in about a minute. Therefore, it is recommended to place the Captcha component just before the Submit button in the adaptive form.
+   >* reCaptcha is time-sensitive and expires in about a couple of minutes. Therefore, it is recommended to place the Captcha component just before the Submit button in the adaptive form.
 
 1. Select the Captcha component that you added and tap ![cmppr](assets/cmppr.png) to edit its properties.
 1. Specify a title for the CAPTCHA widget. The default value is **Captcha**. Select **Hide title** if you do not want title to appear.

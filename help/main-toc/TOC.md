@@ -566,13 +566,13 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
-        + [Sample Themes, Templates, and Form Data models in Core Components ](/help/forms/sample-themes-templates-form-data-models-core-components.md)
         + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
         + [Create an Adaptive Forms - Core Components in an AEM Sites page](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
         + [Use machine translation or human translation to translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
         + [Configuring redirect page or thank you message](/help/forms/configure-redirect-page-or-thank-you-message.md)
         + [Create forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md)
         + [Configure Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)
+        + [Use Google reCAPTCHA in an Adaptive Form ](/help/forms/captcha-adaptive-forms-core-components.md)
     + Authoring Adaptive Forms - Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -956,6 +956,11 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Configure Rich Text Editor](/help/implementing/developing/extending/rich-text-editor.md)
     + [Configure the RTE plug-ins](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
     + [Configure RTE to create accessible sites](/help/implementing/developing/extending/rte-accessible-content.md)
+    + [Extending Page Authoring](/help/implementing/developing/extending/page-authoring.md)
+    + [Extending Consoles](/help/implementing/developing/extending/consoles.md)
+    + [Extending Page Properties](/help/implementing/developing/extending/page-properties.md)
+    + [Extending the Bulk Editor](/help/implementing/developing/extending/bulk-editor.md)
+    + [Extending MSM](/help/implementing/developing/extending/msm.md)
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
     + [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)
