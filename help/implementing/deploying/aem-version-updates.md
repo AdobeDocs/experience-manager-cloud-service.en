@@ -87,6 +87,7 @@ Similarly, if an automated update of a development environment fails, staging an
 * [Customer Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) and [Custom UI Testing](help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) are blocking, if they fail AEM release will not get rolled out. 
 
 ## Regression {#regression}
+
 If you encounter an issue related to regression, please raise a support case via the Admin console.  If the issue is a blocker and it's impacting Production a P1 should be raised.  Provide all details required to reproduce the the regression issue.  
 
 ## Composite Node Store {#composite-node-store}
