@@ -26,7 +26,7 @@ The structure is built up using References:
   * [Manage these references](/help/sites-cloud/administering/content-fragments/authoring.md##manage-references)
   * [Find Parent References of your Fragment](/help/sites-cloud/administering/content-fragments/managing.md#parent-references-fragment)
 
-<!-- CHECK: Replace with snippet, see also authoring.md -->
+<!-- CHECK: Replace with snippet? See also authoring.md -->
 
 <!--
 ## JSON preview {#json-preview}
@@ -38,10 +38,12 @@ Select **JSON preview** from the editor toolbar to show the JSON representation 
 ![Content Fragment Editor - JSON Preview](assets/cf-authoring-json-preview.png)
 -->
 
-<!-- CHECK: Replace with snippet -->
+<!-- CHECK: Replace with snippet? -->
 
 ## Structure tree {#structure-tree}
 
 Open the **Structure tree** tab from the editor toolbar to show the hierarchical structure of the Content Fragment, and its references. For example:
+
+<!-- CHECK: screenshot checked 2023.08.07 -->
 
 ![Content Fragment Editor - Structure tree](assets/cf-authoring-structure-tree.png)
