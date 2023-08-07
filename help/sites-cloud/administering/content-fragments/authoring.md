@@ -54,7 +54,7 @@ When you first open the Content Fragment Editor, you see four main areas:
 >
 >The Content Fragment, and its variations, also have metadata fields (Variation properties) called **Title** and **Description**. These fields are an integral part of any Content Fragment and initially defined when the fragment. They can be updated in the *right panel* when editing the fragment.
 
-<!-- CHECK: needs new screenshot -->
+<!-- CHECK: screenshot checked 2023.08.07 -->
 
 ![Content Fragment Editor - Overview](assets/cf-authoring-overview.png)
 
@@ -102,13 +102,17 @@ To create a Variation of your Content Fragment:
 
 1. In the left panel, select the **plus sign** (**Create variation**) that is to the right of **Variations**.
 
-   <!-- CHECK: needs new screenshot -->
+   >[!NOTE]
+   >
+   >After creating your first variation, existing variations will be listed in the same panel.
 
-   ![Content Fragment Editor - Create a Variation](assets/cf-authoring-create-variation-01.png)
+   <!-- CHECK: screenshot checked 2023.08.07 -->
+
+   ![Content Fragment Editor - Create your first Variation](assets/cf-authoring-create-variation-01.png)
 
 1. In the dialog, enter a **Title** for your variation, and a **Description** if wanted:
 
-   <!-- CHECK: needs new screenshot -->
+   <!-- CHECK: screenshot checked 2023.08.07 -->
 
    ![Content Fragment Editor - Create Variation dialog](assets/cf-authoring-create-variation-02.png)
 
@@ -135,11 +139,11 @@ To delete a Variation of your Content Fragment:
 >
 >You cannot delete **Main**.
 
-<!-- CHECK: needs new screenshot -->
-
 1. Select the Variation.
 
 1. In the **Variation** panel, select the delete icon (Trash Can):
+
+   <!-- CHECK: screenshot checked 2023.08.07 -->
 
    ![Content Fragment Editor - Delete Variation icon](assets/cf-authoring-delete-variation.png)
 
@@ -149,7 +153,7 @@ To delete a Variation of your Content Fragment:
 
 **[Multi line text](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** fields can have one of three formats:
 
-<!-- CHECK: might need a new screenshot, or more details -->
+<!-- CHECK: screenshot checked 2023.08.07 -->
 
 * Plain Text
 * Markdown
@@ -183,7 +187,7 @@ For **[Multi line text](/help/sites-cloud/administering/content-fragments/conten
 
 For example:
 
-<!-- CHECK: needs new screenshot -->
+<!-- CHECK: screenshot checked 2023.08.07 -->
 
 ![Content Fragment Editor - Multi line text - full screen toggle](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
@@ -197,7 +201,7 @@ The full-screen editor offers the same editing options as when in-flow - but off
 
 For example:
 
-<!-- CHECK: needs new screenshot -->
+<!-- CHECK: screenshot checked 2023.08.07 -->
 
 ![Content Fragment Editor - Multi line text - full screen](assets/cf-authoring-multilinetext-fullscreen.png)
 
@@ -207,7 +211,7 @@ The action **Statistics** displays a range of information about the text in a Mu
 
 For example:
 
-<!-- CHECK: needs new screenshot -->
+<!-- CHECK: screenshot checked 2023.08.07 -->
 
 ![Content Fragment Editor - Statistics](assets/cf-authoring-multilinetext-statistics.png)
 
@@ -222,7 +226,7 @@ This opens the Multi line field in full-screen and:
 
 For example:
 
-<!-- CHECK: needs new screenshot -->
+<!-- CHECK: needs new screenshot? -->
 
 ![Content Fragment Editor - Compare and Sync](assets/cf-authoring-multilinetext-compare.png)
 
