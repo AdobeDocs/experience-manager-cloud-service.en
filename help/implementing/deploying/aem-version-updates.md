@@ -84,7 +84,7 @@ Similarly, if an automated update of a development environment fails, staging an
 
 * * **Automated Functional Testing**
 * Include automated testing in your pipeline to test critical functionality. 
-* [Customer Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) and [Custom UI Testing](help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) are blocking, if they fail AEM release will not get rolled out. 
+* [Customer Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) and [Custom UI Testing](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) are blocking, if they fail AEM release will not get rolled out. 
 
 ## Regression {#regression}
 
