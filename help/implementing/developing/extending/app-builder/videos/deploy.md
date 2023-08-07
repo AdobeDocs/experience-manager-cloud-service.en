@@ -1,6 +1,6 @@
 ---
 title: Deploying App Builder applications
-description: Learn how to deploy App Builder applications.
+description: Learn how to deploy App Builder applications for AEM as a Cloud Service.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
