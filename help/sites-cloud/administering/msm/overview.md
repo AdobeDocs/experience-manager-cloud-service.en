@@ -164,11 +164,9 @@ Live Copy Configuration|Definition of the configuration details for a Live Copy|
 |Shallow|A Live Copy of a single page||
 |Deep|A Live Copy of a page, together with its child pages||
 
-<!--
 >[!TIP]
 >
->See [Overview of the Java API](/help/sites-developing/extending-msm.md#overview-of-the-java-api) for the object names.
--->
+>Please see the document [Extending the Multi Site Manager](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) for the object names.
 
 ## Live Copies {#live-copies}
 

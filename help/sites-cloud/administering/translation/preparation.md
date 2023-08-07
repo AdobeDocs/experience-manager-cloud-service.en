@@ -1,6 +1,6 @@
 ---
 title: Preparing Content for Translation
-description: Learn how to prepare content for translation.
+description: Learn how to prepare content for translation when developing multi-lingual websites.
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
