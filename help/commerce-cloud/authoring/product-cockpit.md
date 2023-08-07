@@ -1,6 +1,6 @@
 ---
 title: Product Cockpit
-description: Working with Product Cockpit
+description: Learn how to work with the Product Cockpit, which provides a unified overview of linked product catalogs and associated content.
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
 ---
 # Product Cockpit {#product-cockpit}
