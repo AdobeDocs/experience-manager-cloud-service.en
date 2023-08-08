@@ -57,7 +57,7 @@ For detailed further information see:
 
 Selecting **Content Fragments** will open the console in a new tab. 
 
-<!-- CHECK - needs new screenshot -->
+<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragments console - Overview](assets/cf-managing-console-overview.png)
 
@@ -118,7 +118,7 @@ Certain actions are available from the console - without selecting a specific Co
 
 Selecting a specific fragment will open a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
 
-<!-- CHECK - needs new screenshot -->
+<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragments console - toolbar for a selected fragment](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -174,6 +174,8 @@ The main/right panel (table view) of the console provides a range of information
 * **Referenced By**: 
   * Provides a link that opens a dialog listing all [parent references](#parent-references-fragment)  of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click on the **Title** in the dialog.
 
+    <!-- CHECK: screenshot checked 2023.08.08 -->
+
     ![Content Fragments console - References dialog](assets/cf-managing-console-references-dialog.png)
 
 * **Language**: indicate any [Language](#language-copies-fragment) copies
@@ -182,9 +184,11 @@ The main/right panel (table view) of the console provides a range of information
 
     ![Content Fragments console - Language indicator](assets/cf-managing-console-language-indicator.png)
 
-    * Click/tap on the count to open a dialog that displays all the language copies. To open a specific language copy, click on the **Title** in the dialog.
+  * Click/tap on the count to open a dialog that displays all the language copies. To open a specific language copy, click on the **Title** in the dialog.
 
-      ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
+    <!-- CHECK: screenshot checked 2023.08.08 --> 
+
+    ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
 
 
 ## Creating Content Fragments {#creating-content-fragments}
@@ -212,6 +216,8 @@ To create a content fragment:
    * **Title**
    * **Name** - this will be auto-completed based on the **Title**, but you can edit it if required
    * **Description** 
+
+   <!-- CHECK: screenshot checked 2023.08.08 --> 
 
    ![New Content Fragment dialog](assets/cf-managing-new-cf-dialog.png)
 
@@ -247,7 +253,7 @@ To open your fragment for editing:
 
 1. The fragment editor will open. Select your required **Variation** amd make your changes as required (they will be auto-saved):
 
-   <!-- CHECK - needs new screenshot -->
+   <!-- CHECK: screenshot checked 2023.08.08 -->
 
    ![Fragment editor](assets/cf-managing-editor.png)
 
@@ -300,6 +306,8 @@ After selecting the **Publish** action:
 
 1. Provide all details in the dialog. For example, for a scheduled publish request:
 
+   <!-- CHECK: screenshot checked 2023.08.08 -->
+
    ![Publish dialog](assets/cf-managing-publish-dialog.png)
 
    >[!NOTE]
@@ -328,6 +336,9 @@ You can unpublish Content Fragments:
 In both cases, select **Unpublish** from the toolbarm followed by either **Now** or **Scheduled**.
 
 When the relevant dialog opens you can select the appropriate service:
+
+<!-- CHECK: screenshot checked 2023.08.08 -->
+
 ![Unpublish dialog](assets/cf-managing-unpublish-dialog.png)
 
 >[!NOTE]
@@ -367,6 +378,8 @@ Both provides a link that opens a dialog listing all parent references of that f
 
 For example:
 
+<!-- CHECK: screenshot checked 2023.08.08 -->
+
 ![Content Fragments console - References dialog](assets/cf-managing-console-references-dialog.png)
 
 ## Finding Language Copies of your Fragment {#language-copies-fragment}
@@ -378,9 +391,13 @@ Details of Language Copies can be accessed from:
 
 The icon indicates the locale of the content fragment, together with the total number of locales/language copies associated with the content fragment. For example, from the console:
 
+<!-- CHECK: screenshot checked 2023.08.08 -->
+
 ![Content Fragments console - Language indicator](assets/cfc-console-language-indicator.png)
 
 Click/tap on the count to open a dialog that displays all the language copies. To open a specific language copy, click on the **Title** in the dialog.
+
+<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
 
@@ -388,9 +405,13 @@ Click/tap on the count to open a dialog that displays all the language copies. T
 
 As with other consoles you can configure the columns that are visible, and available for action:
 
+<!-- CHECK: screenshot checked 2023.08.08 -->
+
 ![Content Fragments console - column configuration](assets/cf-managing-console-column-icon.png)
 
 This will present a list of columns that you can hide or show:
+
+<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragments console - column configuration](assets/cf-managing-console-column-selection.png)
 
@@ -406,6 +427,8 @@ The Filter panel offers:
 
  Once selected, the **Filtering by** options are shown (under the Search box). They can be deselected from there. For example:
 
+<!-- CHECK: screenshot checked 2023.08.08 -->
+
 ![Content Fragments console - Filtering](assets/cf-managing-console-filter.png)
 
 ### Fast Filtering {#fast-filtering}
@@ -418,9 +441,13 @@ For example, select **Published** in the **Status** column:
 >
 >Fast filtering is only supported for the **Model**, **Status**, **Modified By**, **Tags**, and **Published By** columns.
 
+<!-- CHECK: screenshot checked 2023.08.08 -->
+
 ![Content Fragments console - Filtering](assets/cf-managing-console-fast-filter-overview.png)
 
 Once selected, this will be shown as a filter predicate, and the list will be filtered accordingly:
+
+<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragments console - Filtering](assets/cf-managing-console-fast-filter-criteria.png)
 
@@ -428,13 +455,19 @@ Once selected, this will be shown as a filter predicate, and the list will be fi
 
 The search box supports full-text search. Entering your search terms in the search box:
 
+<!-- CHECK: screenshot checked 2023.08.08 -->
+
 ![Content Fragments console - Searching](assets/cf-managing-console-search-specification.png)
 
 Will provide the selected results:
 
+<!-- CHECK: screenshot checked 2023.08.08 -->
+
 ![Content Fragments console - Search Results](assets/cf-managing-console-search-results.png)
 
 The search box also provides quick access to **Recent Content Fragments** and **Saved Searches**:
+
+<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragments console - Recent and Saved](assets/cf-managing-console-search-saved.png)
 

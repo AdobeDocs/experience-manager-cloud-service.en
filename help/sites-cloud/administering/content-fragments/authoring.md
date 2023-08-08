@@ -28,7 +28,7 @@ There are two editors available for Content Fragments. The editor described in t
 
 ## Content Fragment Editor {#content-fragment-editor}
 
-<!-- CHECK: needs new screenshot -->
+<!-- CHECK: screenshot checked 2023.08.07 -->
 
 When you first open the Content Fragment Editor, you see four main areas:
 
