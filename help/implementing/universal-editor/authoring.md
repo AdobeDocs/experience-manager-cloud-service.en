@@ -238,7 +238,7 @@ Note that not all components have details that can be shown and/or edited.
 >
 >Use the hot key `D` to switch to properties mode.
 
-#### Content Tree Mode {#Content-tree-mode}
+#### Content Tree Mode {#content-tree-mode}
 
 In content tree mode, the rail shows the hierarchy of the page content.
 
@@ -265,6 +265,18 @@ You can also edit details of the Content Fragment within the component rail depe
 >[!TIP]
 >
 >Use the hot key `E` to edit a selected component.
+
+#### Add {#add}
+
+When in [content tree](#content-tree-mode) mode, if you select a container component, the add option appears on the component rail.
+
+![Add icon](assets/ue-add-component-icon.png)
+
+Tapping or clicking the add button opens a drop-down menu to select from components that are available to add to the selected container.
+
+>[!TIP]
+>
+>Use the hot key `A` to add a component to a selected container component.
 
 ## Editing Content {#editing-content}
 
@@ -325,6 +337,14 @@ The fields defined in the content model of the selected Content Fragment are dis
 Changes are saved to your content automatically.
 
 If you wish to edit your Content Fragment in the [Content Fragment editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) instead, click the [edit button](#edit) in the mode rail.
+
+### Adding Components to Containers {adding-components}
+
+When in [content tree](#content-tree-mode) mode, select a container component and then tap or click the add icon in the component rail.
+
+![Selecting a component to add to a container](assets/ue-add-component.png)
+
+The component is inserted into the container and can be edited in the editor.
 
 ## Previewing Content {#previewing-content}
 
