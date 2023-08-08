@@ -9,7 +9,7 @@ description: Learn how to configure layout container and layout mode to enable r
 
 AEM realizes responsive layout for your pages using a combination of mechanisms:
 
-* [**Layout Container**](/help/sites-cloud/authoring/features/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode) - This component provides a grid-paragraph system that allows you to add and position components within a responsive grid.
+* **[Layout Container](/help/sites-cloud/authoring/features/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - This component provides a grid-paragraph system that allows you to add and position components within a responsive grid.
   * It can be used as the default parsys for your page and/or made available to authors in the component browser.
   * The default **Layout Container** component is defined under `/libs/wcm/foundation/components/responsivegrid`.
   * You can define layout containers:
@@ -18,7 +18,7 @@ AEM realizes responsive layout for your pages using a combination of mechanisms:
     * As both a component and the default parsys.
       * You can have the layout container as standard for the page, while allowing the user to add further layout containers within this; for example, to achieve column control.
 * **[Layout Mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md)** - Once the layout container is positioned on your page you can use the **Layout** mode to position content within the responsive grid.
-* [**Emulator**](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate) - This allows you to create and edit responsive websites that rearrange the layout according to device/window size by resizing components interactively. The user can then see how the content is rendered using the emulator.
+* **[Emulator](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)** - This allows you to create and edit responsive websites that rearrange the layout according to device/window size by resizing components interactively. The user can then see how the content is rendered using the emulator.
 
 With these responsive grid mechanisms you can:
 
