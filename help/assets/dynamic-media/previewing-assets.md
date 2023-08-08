@@ -1,6 +1,6 @@
 ---
 title: Preview assets
-description: Learn how to preview assets in Dynamic Media.
+description: Learn how to preview assets in Dynamic Media so you can see how it is viewed by a customer in their own web browser.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
