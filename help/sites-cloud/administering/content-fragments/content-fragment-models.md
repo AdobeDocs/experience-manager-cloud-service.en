@@ -7,6 +7,8 @@ role: User, Developer, Architect
 
 # Content Fragment Models {#content-fragment-models}
 
+<!-- CHECK: 2023.08.08 screenshots not checked; Child Fragment Reference -->
+
 Content Fragment Models in AEM define the structure for the content of your [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md). These fragments can then be used for page authoring, or as a foundation for your headless content.
 
 To use Content Fragment Models you:
