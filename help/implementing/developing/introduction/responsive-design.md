@@ -71,8 +71,10 @@ If your own page component is not based on the Page Core Component, you can also
 
 #### HTL {#htl}
 
-`<sly data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}">`
-`<sly data-sly-call="${clientlib.all @ categories='apps.weretail.all'}"/>`
+```html
+<sly data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}">
+<sly data-sly-call="${clientlib.all @ categories='apps.weretail.all'}"/>
+```
 
 #### JSP {#jsp}
 
