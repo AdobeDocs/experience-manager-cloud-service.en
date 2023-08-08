@@ -222,11 +222,27 @@ The action **Compare** is available for Multi line fields when you have a **Vari
 This opens the Multi line field in full-screen and:
 
 * displays the content for both **Main** and the current **Variation** in parallel, with any differences highlighted
+
+* differences are indicated by color:
+
+  * green indicates content added (to the variation)
+  * red indicates content removed (from the variation)
+  * blue indicates replaced text
+
 * provides the **Sync** action, which synchronizes the content from **Main** to the current variation
 
-For example:
+  * if **Main** has been updated, then these changes will be transferred to the variation
+  * if the variation has been updated, then these changes will be overwritten by the content from **Main**
 
-<!-- CHECK: needs new screenshot? -->
+  >[!CAUTION]
+  >
+  >Synchronization is only available to copy changes *from **Main** to the variation*.
+  >
+  >Transferring changes *from a variation to **Main*** is not available as an option.
+
+For example, a scenario where the variation content had been completely rewritten, so a synchronization will replace that new content with the content from **Main**:
+
+<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragment Editor - Compare and Sync](assets/cf-authoring-multilinetext-compare.png)
 
@@ -283,7 +299,7 @@ To add an asset, you can either:
 * drag and drop the new asset file directly (for example, from your file system) into the **Content Reference** field
 * use the **Add asset** action, then select either **Browse Assets** or **Upload** to open the appropriate selector for you to use:
 
-  <!-- CHECK: needs new screenshot -->
+  <!-- CHECK: screenshot checked 2023.08.08 -->
 
   ![Content Fragment Editor - Add asset options](assets/cf-authoring-add-asset-options.png)
 
@@ -303,13 +319,13 @@ Selecting the link icon in the top toolbar opens a list of all parent references
 
 For example:
 
-<!-- CHECK: needs new screenshot -->
+<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragment Editor - Show References](assets/cf-authoring-show-references-link.png)
 
 A window opens, listing all related references. For example:
 
-<!-- CHECK: needs new screenshot -->
+<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragment Editor - Show References](assets/cf-authoring-show-references.png)
 
@@ -335,20 +351,6 @@ For example:
 
 ![Content Fragment Editor - open Content Fragment Model](assets/cf-authoring-open-model.png)
 
-## View the Language Copies {#view-language-copies}
-
-In the **Language properties** tab details of any related language copies are shown. Selecting a link icon, opens the copy in a separate tab.
-
-For example:
-
-<!-- CHECK: needs new screenshot -->
-
-![Content Fragment Editor - open Language Copy](assets/cf-authoring-open-language-copies.png)
-
->[!NOTE]
->
->For more details about translating a Content Fragment, and creating language copies, see the [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md).
-
 ## View the Version History {#view-version-history}
 
 In the **Version history** tab of the right panel, details of the current, and previous, versions are shown:
@@ -360,6 +362,21 @@ In the **Version history** tab of the right panel, details of the current, and p
 <!-- CHECK: needs new screenshot -->
 
 ![Content Fragment Editor - Version History Ooverview](assets/cf-authoring-version-history-overview.png)
+
+## View the Language Copies {#view-language-copies}
+
+In the **Language properties** tab details of any related language copies are shown. Selecting a link icon, opens the copy in a separate tab.
+
+For example:
+
+<!-- CHECK: screenshot checked 2023.08.08 -->
+
+![Content Fragment Editor - open Language Copy](assets/cf-authoring-open-language-copies.png)
+
+>[!NOTE]
+>
+>For more details about translating a Content Fragment, and creating language copies, see the [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md).
+
 
 <!-- CHECK: Replace with snippet, see also analysis.md  -->
 
@@ -380,6 +397,8 @@ Select **JSON preview** from the editor toolbar to show the JSON representation 
 ## Structure tree {#structure-tree}
 
 Open the **Structure tree** tab from the editor toolbar to show the hierarchical structure of the Content Fragment, and its references. 
+
+<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragment Editor - Structure tree](assets/cf-authoring-structure-tree.png)
 
@@ -419,7 +438,7 @@ You can unpublish your fragment from either the editor, or the console. See [Unp
 
 ### Fields (and Icons) {#fields-icons}
 
-<!-- CHECK: needs new screenshot -->
+<!-- CHECK: screenshots checked 2023.08.08 -->
 
 The **Fields** panel lists all fields within the Content Fragment. The icon indicates the **[Data Type](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**:
 
@@ -465,6 +484,6 @@ The **Fields** panel lists all fields within the Content Fragment. The icon indi
 
 * **Tab Placeholder**
 
-  Although not represented by an actual icon, a **Tab Placeholder** is represented in the panel:
+  Although not represented by an actual icon, a **Tab Placeholder** is represented in the left panel, as well as in the central panel:
   
   ![Content Fragment Editor - Tab Placeholder](assets/cf-authoring-tab-icon.png)
