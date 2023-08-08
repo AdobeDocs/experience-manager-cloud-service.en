@@ -9,7 +9,7 @@ exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html)                  |
 | AEM as a Cloud Service     | This article        |
 
 
