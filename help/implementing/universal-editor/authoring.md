@@ -272,11 +272,24 @@ When in [content tree](#content-tree-mode) mode, if you select a container compo
 
 ![Add icon](assets/ue-add-component-icon.png)
 
-Tapping or clicking the add button opens a drop-down menu to select from components that are available to add to the selected container.
+Tapping or clicking the add button opens a drop-down menu of components that are available to [add to the selected container.](#adding-components)
 
 >[!TIP]
 >
 >Use the hot key `A` to add a component to a selected container component.
+
+#### Delete {#delete}
+
+When in [content tree](#content-tree-mode) mode, if you select a component within a container component, the delete option appears on the component rail.
+
+![Delete icon](assets/ue-delete-component-icon.png)
+
+Tapping or clicking the delete button [deletes the component.](#deleting-components)
+
+>[!TIP]
+>
+>Use the hot key `Shift+Backspace` to delete a selected component from a container.
+
 
 ## Editing Content {#editing-content}
 
@@ -340,11 +353,26 @@ If you wish to edit your Content Fragment in the [Content Fragment editor](/help
 
 ### Adding Components to Containers {adding-components}
 
-When in [content tree](#content-tree-mode) mode, select a container component and then tap or click the add icon in the component rail.
+When in [content tree](#content-tree-mode) mode:
 
-![Selecting a component to add to a container](assets/ue-add-component.png)
+1. Select a container component in the content tree.
+1. Then tap or click the add icon in the component rail.
+
+   ![Selecting a component to add to a container](assets/ue-add-component.png)
 
 The component is inserted into the container and can be edited in the editor.
+
+### Deleting Components from Containers {deleting-components}
+
+When in [content tree](#content-tree-mode) mode:
+
+1. Select a container component in the content tree.
+1. Then, in the content tree, select a component within the container.
+1. Tap or click the delete icon in the component rail.
+
+   ![Deleting a component](assets/ue-delete-component.png)
+
+The selected component deleted.
 
 ## Previewing Content {#previewing-content}
 
