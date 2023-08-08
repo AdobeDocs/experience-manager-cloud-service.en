@@ -31,63 +31,43 @@ With these responsive grid mechanisms you can:
 >
 >In an out-of-the-box installation, responsive layout has been configured for the [WKND reference site.](/help/implementing/developing/introduction/develop-wknd-tutorial.md) You must still [activate the Layout Container component](#enable-the-layout-container-component-for-page) for other pages.
 
-## Configuring the Responsive Emulator {#configuring-the-responsive-emulator}
+## Enabling the Emulator {#enabling-emulator}
 
-The following tasks enable the device emulator on your site and its pages.
-
-### Register your Page Components for Emulation {#register-your-page-components-for-emulation}
-
-To enable the emulator to support your pages, you must register your page components. See [Registering Page Components for Simulation](/help/implementing/developing/introduction/responsive-design.md#registering-page-components-for-simulation).
-
-### Specify the Device Groups {#specify-the-device-groups}
-
-To specify the device groups that appear in the Devices list of the emulator see [Specifying the Device Groups](/help/sites-developing/responsive.md#specifying-the-device-groups).
-
-### Link your Site to the Specified Device Groups {#link-your-site-to-the-specified-device-groups}
-
-To include the emulator, link your site to the device groups. See [Adding the Devices List](/help/sites-developing/responsive.md#adding-the-devices-list) (for both the classic and touch-optimized UI).
+The WKND sample site and the Core Components are already enabled to use the emulator. If you have developed your own content not based on the Core Components and archetype, please see the document [Responsive Design](/help/implementing/developing/introduction/responsive-design.md) for details on how to develop your components while leveraging these features.
 
 ## Activate Layout Mode for your Site {#activate-layout-mode-for-your-site}
 
-These procedures are used to enable the **Layout** mode on your site.
+**Layout** mode allows you to use the emulator to adjust the layout of your content for different devices. The WKND sample site is already enabled for **Layout** mode. Follow these steps to enable your own site.
 
-### Configure the Breakpoints {#configure-the-breakpoints}
+### Configure Breakpoints {#configure-breakpoints}
 
-[Breakpoints](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate):
+Breakpoints are vital to responsive design and define how and when content is adjusted to the target device.
 
-* Are used in responsive design.
-* Can be defined:
+* Breakpoints have a title and a width:
+  * The title describes the generic device grouping, with orientation if necessary.
+    * For example, `phone`, `tablet`, `tabletlandscape`
+  * The width defines the maximum width in pixels for that generic device grouping.
+    * For example, if the breakpoint phone has a width of 768 then that it the maximum width of the layout used for a phone device.
+* Breakpoints can be defined:
+  * On the page template, from where the settings are copied to any pages created with that template.
+  * On the page node, from where the settings are inherited by any child pages.
+* Breakpoints are visible as markers at the top of the page editor when you are using the emulator.
+* Breakpoints are inherited from the parent node hierarchy and can be overridden at will.
+* There is a default (out-of-the-box) breakpoint which covers everything above the last configured breakpoint.
+* Breakpoints can be defined using CRXDE Lite or XML.
 
-    * On the page template, from where the settings are copied to any pages created with that template.
-    * On the page node, from where the settings are inherited by any child pages.
+Breakpoints should be considered for both new and existing projects.
 
-* Define a title and a width:
+* If you are setting up a new project, you should add breakpoints to the templates.
+* If you are migrating an existing project (with existing content), you must:
+  * Add breakpoints to the templates.
+  * Add the same breakpoints to the existing pages.
 
-    * The title describes the generic device grouping, with orientation if necessary; for example, phone, tablet, tabletlandscape.
-    * The width defines the maximum width in pixels for that generic device grouping. For example, if the breakpoint phone has a width of 768 then that it the maximum width of the layout used for a phone device.
-
-* Are visible as markers at the top of the page editor when you are using the emulator.
-* Are inherited from the parent node hierarchy and can be overridden at will.
-* There is a default (out-of-the-box) breakpoint which covers everything above the last *configured* breakpoint.
-
-They can be defined using CRXDE Lite or XML.
-
->[!NOTE]
->
->If you are setting up a new project:
->
->* add breakpoints to the templates.
->
->If you are migrating an existing project (with existing content), you must:
->
->* add breakpoints to the templates
->* add the same breakpoints to the existing pages
->
->  As inheritance is in operation you can limit this to the root page of your content.
+Because of inheritance you only have to do this for the root page of your content.
 
 #### Configuring Breakpoints using CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 
-1. Using CRXDE Lite (or equivalent), navigate to either:
+1. Using CRXDE Lite, navigate to either:
 
     * Your template definition.
     * The `jcr:content` node of your page.
@@ -106,8 +86,8 @@ They can be defined using CRXDE Lite or XML.
 
     * Name: `<descriptive name>`
     * Type: `nt:unstructured`
-    * Title: `String` * `<descriptive title seen in Emulator>`*
-    * Width: `Decimal` * `<value of breakpoint>`*
+    * Title: `String <descriptive title seen in Emulator>`
+    * Width: `Decimal <value of breakpoint>`
 
 #### Configuring Breakpoints using XML {#configuring-breakpoints-using-xml}
 
@@ -124,19 +104,9 @@ An example definition:
 </cq:responsive>
 ```
 
-### Add a Responsive Information Provider {#add-a-responsive-information-provider}
-
->[!NOTE]
->
->This is only needed if the page component is not based on the foundation page component.
-
-Copy the following `cq:infoProviders` node structure into your parent page component:
-
-`/libs/foundation/components/page/cq:infoProviders/responsive`
-
 ## Enable Component Resizing for the Page {#enable-component-resizing-for-the-page}
 
-These procedures are required so you can resize components in the **Layout** mode.
+Resizing components in **Layout** mode is an important part of responsive design, which can be used in the WKND sample site. Follow these steps to enable your own site.
 
 ### Set Layout Container as Main Parsys {#set-layout-container-as-main-parsys}
 
@@ -159,7 +129,7 @@ The following two examples illustrate the definition:
 
 * **JSP:**
 
-  ```
+  ```xml
   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
   ```
 
@@ -169,7 +139,7 @@ The following two examples illustrate the definition:
 
 AEM uses LESS to generate parts of the necessary CSS, these need to be included for your projects.
 
-You will also must create a [client library](https://experienceleague.adobe.com/docs/) to provide additional configuration and function calls. The following LESS extract is an example of the minimum that you must add to your project:
+You will also must create a [client library](/help/implementing/developing/introduction/clientlibs.md) to provide additional configuration and function calls. The following LESS extract is an example of the minimum that you must add to your project:
 
 ```java
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -222,7 +192,6 @@ Any resizing of a component within the grid will trigger the following listeners
 * `beforeedit`
 * `beforechildedit`
 * `afteredit`
-
 * `afterchildedit`
 
 To properly resize and update the content of an adaptive image included in a responsive grid, you need to add an `afterEdit` set to `REFRESH_PAGE` listener into the `EditConfig` file of every contained component.
@@ -239,42 +208,15 @@ The adaptive image mechanism is made available via a script that controls select
 
 ## Enable the Layout Container Component for Page {#enable-the-layout-container-component-for-page}
 
-These tasks allow authors to drag instances of the **Layout Container** component onto the page.
+For effective responsive layout, the content author must be able to drag instances of the Layout Container component onto the page. This is already enabled for the WKND sample site. Follow these steps to enable your own site.
 
 ### Enable the Layout Container Component for Page Editing {#enable-the-layout-container-component-for-page-editing}
 
 To allow authors to add further responsive grids to the content pages you need to enable the Layout Container component for your page. You can do this using either:
 
-* **Author Environment**
-
-  Use [Design mode](/help/sites-authoring/default-components-designmode.md) to activate the **Layer Container** component for a page.
-
-* **Component Definition**
-
-  Use `allowedComponent` or a static include when defining the component.
+* **Via the Author Environment** - [Edit your page templates](/help/sites-cloud/authoring/features/templates.md) to enable the Layout Container for a page.
+* **Component Definition** - Use `allowedComponent` or a static include when defining the component.
 
 ### Configure the Grid of the Layout Container {#configure-the-grid-of-the-layout-container}
 
-You can configure the number of columns available for each specific instance of layout container:
-
-1. **Author Environment**
-
-   You can configure the number of columns available for each specific instance of layout container.
-
-   To do this, use [Design mode](/help/sites-authoring/default-components-designmode.md), then open the design dialog for the required container. Here you can specific how many columns will be available for positioning and sizing. The default is 12.
-
-1. **XML**
-
-   Definitions for the responsive grid are specified in:
-
-   `etc/design/<*your-project-name*>/.content.xml`
-
-   The following parameters can be defined:
-
-    * Number of columns available:
-
-        * `columns="{String}8"`
-
-    * Components that can be added to the current component:
-
-        * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+You can configure the number of columns available for each specific instance of layout container [by editing your page templates.](/help/sites-cloud/authoring/features/templates.md)

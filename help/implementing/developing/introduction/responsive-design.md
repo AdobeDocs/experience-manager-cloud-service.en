@@ -1,6 +1,6 @@
 ---
 title: Responsive Design
-description: With responsive design, the same experiences can be effectively displayed on multiple devices in multiple orientations
+description: With responsive design, the same experiences can be effectively displayed on multiple devices in multiple orientations.
 ---
 
 # Responsive Design {#responsive-design}
@@ -97,7 +97,7 @@ In the emulator toolbar you can tap or click the **Devices** icon to reveal a dr
 
 ![The emulator toolbar](assets/emulator.png)
 
-### Specifying Device Groups {#specifying-the-device-groups}
+### Specifying Device Groups {#specifying-device-groups}
 
 To specify the device groups that appear in the **Devices** list, add a `cq:deviceGroups` property to the `jcr:content` node of the template page of your site. The value of the property is an array of paths to the device group nodes.
 
