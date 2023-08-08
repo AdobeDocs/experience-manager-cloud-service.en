@@ -367,12 +367,26 @@ The component is inserted into the container and can be edited in the editor.
 When in [content tree](#content-tree-mode) mode:
 
 1. Select a container component in the content tree.
+1. Tap or click the chevron icon of the container to expand its contents in the content tree.
 1. Then, in the content tree, select a component within the container.
 1. Tap or click the delete icon in the component rail.
 
    ![Deleting a component](assets/ue-delete-component.png)
 
 The selected component deleted.
+
+### Reordering Components in Containers {#reordering-components}
+
+When in [content tree](#content-tree-mode) mode:
+
+1. Select a container component in the content tree.
+1. Tap or click the chevron icon of the container to expand its contents in the content tree.
+1. Drag handle icons next to the components within the container show that you can rearrange them. Drag the components to reorder them within the container.
+
+   ![Reordering components](assets/ue-reordering-components.png)
+1. The dragged component turns gray in the component tree, while your insertion point is represented by a blue line. Release the component to place it in its new location.
+
+The components are reordered in both the content tree and in the editor
 
 ## Previewing Content {#previewing-content}
 
