@@ -207,20 +207,6 @@ When you select a Content Fragment, the details of it are displayed in the compo
 >
 >Use the hot key `C` to switch to component mode.
 
-#### Edit {#edit}
-
-When in [component mode,](#component-mode) if you select a [Content Fragment,](/help/assets/content-fragments/content-fragments.md) the edit option appears on the mode rail.
-
-![Edit icon](assets/edit.png)
-
-Tapping or clicking the edit button opens the [Content Fragment editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in a new tab, allowing you access to the full power of the Content Fragment Editor.
-
-You can also edit details of the Content Fragment in the [component rail](#edit-content-fragment) depending on the needs of your workflow.
-
->[!TIP]
->
->Use the hot key `E` to edit a selected component.
-
 ### The Editor {#editor}
 
 The editor occupies most of the window and is where the page specified in [the location bar](#location-bar) is rendered.
@@ -266,6 +252,19 @@ When selecting an item in the content tree, the editor scrolls to that content a
 >
 >Use the hot key `F` to switch to content tree mode.
 
+#### Edit {#edit}
+
+When in [component mode,](#component-mode) if you select a [Content Fragment,](/help/assets/content-fragments/content-fragments.md) the edit option appears on the component rail.
+
+![Edit icon](assets/edit.png)
+
+Tapping or clicking the edit button opens the [Content Fragment editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in a new tab, allowing you access to the full power of the Content Fragment Editor.
+
+You can also edit details of the Content Fragment within the component rail depending on the needs of your workflow.
+
+>[!TIP]
+>
+>Use the hot key `E` to edit a selected component.
 
 ## Editing Content {#editing-content}
 
