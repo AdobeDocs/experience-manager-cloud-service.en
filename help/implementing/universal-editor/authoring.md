@@ -268,7 +268,7 @@ You can also edit details of the Content Fragment within the component rail depe
 
 #### Add {#add}
 
-When in [content tree](#content-tree-mode) mode, if you select a container component, the add option appears on the component rail.
+If you select a container component either in the content tree or in the editor, the add option appears on the component rail.
 
 ![Add icon](assets/ue-add-component-icon.png)
 
@@ -280,7 +280,7 @@ Tapping or clicking the add button opens a drop-down menu of components that are
 
 #### Delete {#delete}
 
-When in [content tree](#content-tree-mode) mode, if you select a component within a container component, the delete option appears on the component rail.
+If you select a component within a container component either in the content tree or in the editor, the delete option appears on the component rail.
 
 ![Delete icon](assets/ue-delete-component-icon.png)
 
@@ -289,7 +289,6 @@ Tapping or clicking the delete button [deletes the component.](#deleting-compone
 >[!TIP]
 >
 >Use the hot key `Shift+Backspace` to delete a selected component from a container.
-
 
 ## Editing Content {#editing-content}
 
@@ -353,9 +352,7 @@ If you wish to edit your Content Fragment in the [Content Fragment editor](/help
 
 ### Adding Components to Containers {adding-components}
 
-When in [content tree](#content-tree-mode) mode:
-
-1. Select a container component in the content tree.
+1. Select a container component in the content tree or in the editor.
 1. Then tap or click the add icon in the component rail.
 
    ![Selecting a component to add to a container](assets/ue-add-component.png)
@@ -364,9 +361,7 @@ The component is inserted into the container and can be edited in the editor.
 
 ### Deleting Components from Containers {deleting-components}
 
-When in [content tree](#content-tree-mode) mode:
-
-1. Select a container component in the content tree.
+1. Select a container component in the content tree or in the editor.
 1. Tap or click the chevron icon of the container to expand its contents in the content tree.
 1. Then, in the content tree, select a component within the container.
 1. Tap or click the delete icon in the component rail.
@@ -377,9 +372,8 @@ The selected component deleted.
 
 ### Reordering Components in Containers {#reordering-components}
 
-When in [content tree](#content-tree-mode) mode:
-
-1. Select a container component in the content tree.
+1. Select a container component in the content tree or in the editor.
+1. If not already in [content tree mode,](#content-tree-mode) switch to it.
 1. Tap or click the chevron icon of the container to expand its contents in the content tree.
 1. Drag handle icons next to the components within the container show that you can rearrange them. Drag the components to reorder them within the container.
 
