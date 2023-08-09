@@ -350,7 +350,7 @@ Changes are saved to your content automatically.
 
 If you wish to edit your Content Fragment in the [Content Fragment editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) instead, click the [edit button](#edit) in the mode rail.
 
-### Adding Components to Containers {adding-components}
+### Adding Components to Containers {#adding-components}
 
 1. Select a container component in the content tree or in the editor.
 1. Then tap or click the add icon in the component rail.
@@ -359,7 +359,7 @@ If you wish to edit your Content Fragment in the [Content Fragment editor](/help
 
 The component is inserted into the container and can be edited in the editor.
 
-### Deleting Components from Containers {deleting-components}
+### Deleting Components from Containers {#deleting-components}
 
 1. Select a container component in the content tree or in the editor.
 1. Tap or click the chevron icon of the container to expand its contents in the content tree.
