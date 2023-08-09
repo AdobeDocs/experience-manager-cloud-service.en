@@ -278,6 +278,9 @@ The WKND project includes:
 
   * `.../assets.html/content/dam/wknd/en`
 
+  <!-- CHECK: Can the following be used - need to change sitesinternal? -->
+
+  <!--
   * `.../@sitesinternal/aem/cf/admin/content/dam/wknd`
 
   * `.../@sitesinternal/aem/cf/admin/content/dam/wknd-shared`
@@ -285,3 +288,4 @@ The WKND project includes:
   * `.../@sitesinternal/aem/cf/admin/content/dam/sample-wknd-app`
 
   * `.../@sitesinternal/aem/cf/admin/content/dam/wknd-vacations`
+  -->
