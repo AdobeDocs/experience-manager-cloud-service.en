@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot Dynamic Media
-description: Troubleshooting tips when you use Dynamic Media.
+description: Learn about troubleshooting tips you can try when you work with images, sets, and viewers in Dynamic Media.
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
