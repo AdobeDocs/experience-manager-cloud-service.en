@@ -217,6 +217,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Guidelines and Best Practices for Using Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
       + [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
       + [Validating Content Transfers](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
+      + Content Transfer Validation Details {#content-transfer-validation-details}
+        + [Migrating Closed User Groups](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
       + [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
       + [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
       + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
