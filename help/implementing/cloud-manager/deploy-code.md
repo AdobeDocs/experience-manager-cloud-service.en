@@ -195,6 +195,6 @@ The syntax of the HAL link's href value is only an example. The actual value sho
 
 Submitting a PUT request to this endpoint results in a 201 response if successful, and the response body is the representation of the new  execution. This is similar to starting a regular execution through the API.
 
-### Identifying a re-execute execution
+### Identifying a Re-Executed Execution {#identify-reexecution}
 
 Re-executed executions can be identified by the value `RE_EXECUTE` in the `trigger` field.
