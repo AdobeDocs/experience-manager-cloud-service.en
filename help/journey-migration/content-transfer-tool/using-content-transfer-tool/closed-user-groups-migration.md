@@ -26,9 +26,6 @@ going live. The Principal Report, downloaded through the Ingestions Job view, ca
 because it was not in an ACL. If the group does not exist, it should be created in the Author instance including adding appropriate members, and
 activated in order to have it exist on the Publish instance.
 
-It is most likely that configurations exist in the `/conf` path related to CUG operation. The app related information in `/conf` should be included
-as a path during the extraction.
-
 Finally, processes have to be triggered to enable CUG. To do this re-publish any of the content that contains the CUG policy. So, in your normal
 testing processes, if it is found that the CUG does not work, re-publish that content (ensuring it is published even if not modified).
 
@@ -44,9 +41,8 @@ It is advisable to include CUG functionality in any testing processes before att
 
 In summary, these are the steps to enable CUG after a migration:
 
-1. Include the app-related configurations in the source `/conf` path in the extraction.
-2. Ensure each group used in CUG policies exists on Publish after the migration.
+1. Ensure each group used in CUG policies exists on Publish after the migration.
    - A group may already exist if included in a migrated content's ACL.
-   - If it does not, use packages to install it on the destination Author instance (or create it manually there) and activate it and its members. Then verify it exists on Publish.
-3. If the CUG policy does not yet protect the node, re-publish the page again (ensuring it publishes even if no changes were made to that page).
+   - If it does not, use packages to install it on the destination instance (or create it manually there) and activate it and its members. Then verify it exists on Publish.
+1. If the CUG policy does not yet protect the node, re-publish the page again (ensuring it publishes even if no changes were made to that page).
    - Verify for each CUG protected node.
