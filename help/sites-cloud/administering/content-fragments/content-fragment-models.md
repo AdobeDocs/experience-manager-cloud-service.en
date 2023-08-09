@@ -357,7 +357,7 @@ Once a model has been created it must be enabled so that it:
 
 To enable a Model that is flagged as either:
 
-* **Draft** : mew (never enabled).
+* **Draft** : new (never enabled).
 * **Disabled** : has been specifically disabled.
 
 You use the **Enable** option from either:
