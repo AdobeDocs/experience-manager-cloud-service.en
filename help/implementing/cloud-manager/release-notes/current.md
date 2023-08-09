@@ -19,4 +19,16 @@ The release date for Cloud Manager release 2023.8.0 in AEM as a Cloud Service is
 
 ## What's New {#what-is-new}
 
+* For [content copy](/help/implementing/developing/tools/content-copy.md) purposes, [content aware configurations](/help/implementing/developing/introduction/configurations.md) are now permitted in content sets when using the UI.
+* Enhancements were made to improve comprehensibility and surfacing of error messages in Cloud Manager UI.
+
 ## Bug Fixes {#bug-fixes}
+
+* The **Environments** menu now closes after triggering the **[Copy Content](/help/implementing/developing/tools/content-copy.md)** modal.
+* [A pipeline re-execution](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) is no longer allowed if the previous execution does not have a `commitId` set on the build phase state.
+* A more understandable message is now displayed for rare errors when a user clicks on a pipeline in the **Activity** or **Pipeline** screens.
+* The `contentSetName` value is no longer missing in logs and is now provided in the inputs when starting a [content copy](/help/implementing/developing/tools/content-copy.md) operation.
+* It is no longer possible under certain rare circumstances to start two executions from the same pipeline leading to a "stuck" state.
+* When a certificate expires, domain names and IP allow-lists associated with the certificate will no longer be removed from the CDN.
+  * In such cases, the site will continue to be reachable.
+  * [The Cloud Manager UI](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) will provide more visible advance warnings that the SSL certificate is about to expire.
