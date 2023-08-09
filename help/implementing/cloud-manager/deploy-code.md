@@ -136,7 +136,7 @@ In such circumstances where a re-execution is possible, the production pipeline 
 >
 >In a re-execution, the build step is labeled in the UI to reflect that it is copying artifacts, not re-building.
 
-Limitations:
+### Limitations {#limitations}
 
 * Re-executing the production deployment step will only be available for the last execution.
 * Re-execution is not available for push update executions.
@@ -147,7 +147,7 @@ Limitations:
 
 In addition to being available in the UI, you can use [the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) to trigger re-executions as well as identify executions that were triggered as re-executions.
 
-### Triggering a Re-Execution {#reexecute-deployment-api}
+#### Triggering a Re-Execution {#reexecute-deployment-api}
 
 To trigger a re-execution, make a PUT request to the HAL Link `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` on the production deploy step state.
 
@@ -195,6 +195,6 @@ The syntax of the HAL link's href value is only an example. The actual value sho
 
 Submitting a PUT request to this endpoint results in a 201 response if successful, and the response body is the representation of the new  execution. This is similar to starting a regular execution through the API.
 
-### Identifying a Re-Executed Execution {#identify-reexecution}
+#### Identifying a Re-Executed Execution {#identify-reexecution}
 
 Re-executed executions can be identified by the value `RE_EXECUTE` in the `trigger` field.
