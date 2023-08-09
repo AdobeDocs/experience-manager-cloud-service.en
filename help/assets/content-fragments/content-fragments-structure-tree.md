@@ -7,6 +7,12 @@ exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
 
 Use the Structure Tree feature of the Content Fragment Editor in AEM to better understand your headless content.
 
+>[!NOTE]
+>
+>Content Fragments are a Sites feature, but are stored as **Assets**. 
+>
+>There are two editors for authoring Content Fragments. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console).
+
 In the Content Fragment Editor you can select the Structure Tree icon:
 
 ![Content Fragment Structure Tree in side panel](assets/cfm-structuretree-01.png)
