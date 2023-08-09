@@ -158,6 +158,6 @@ Some paths from the extraction and ingestion digests are excluded purposefully t
 
 The paths we currently exclude from the digests include: `cqdam.text.txt` renditions, nodes within `/home`, and nodes within `/jcr:system`.
 
-### Closed User Groups are not functioning (validating-cugs)
+### Closed User Groups are not functioning {#validating-cugs}
 
-See (Migrating Closed User Groups)[/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md] for extra considerations when using a Closed User Group (CUG) policy.
+See [Migrating Closed User Groups](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) for extra considerations when using a Closed User Group (CUG) policy.
