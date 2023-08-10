@@ -14,28 +14,20 @@ Learn how to restore your AEM as a Cloud Service content from backup using Cloud
 
 >[!NOTE]
 >
->* This feature is being rolled out in a phased manner, and may not yet be enabled in all tenants in Cloud Manager.
->* This feature is currently limited to staging and development environments. The feature usage and feedback from these environment types will ensure a successful roll out to production environments in the near future.
+>This feature is only available to [the early adopter program](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) within development environments.
 
 ## Overview {#overview}
 
-Cloud Manager's self-service restore process copies data from Adobe system backups and restores it to its original environment. A restore is performed to return data that has been lost, damaged, or accidentally deleted to its original condition.
+Cloud Manager's self-service restore process copies data from Adobe system backups and restores it to its original environment. A restore is performed to return data, which has been lost, damaged, or accidentally deleted, to its original condition.
 
 The restore process only affects content, leaving your code and version of AEM unchanged. You can initiate a restore operation of individual environments at any time.
 
 Cloud Manager provides two types of backups from which you may restore content.
 
-* **Point In Time (PIT):** This type restores from continuous system backups from the last 24 hours from the current time.
+* **Point-In-Time (PIT):** This type restores from continuous system backups from the last 24 hours from the current time.
 * **Last week:** This type restores from system backups in the last seven days excluding the previous 24 hours.
 
 In both cases, the version of your custom code and the AEM version remain unchanged.
-
-The performance metrics of restoring content in AEM as a ContentService refer to the standardized benchmarks:
-
-* **Recovery Time Objective (RTO):** The Recovery Time Objective (RTO) can vary, but as a general guideline, once the recovery sequence starts, the recovery sequence takes between 60 and 90 minutes on average depending on several factors, such as repository size.
-* **The Recovery Point Objective (RPO):** The Recovery Point Objective depends on how far in the past the selected restore time is:
-   * For the first 24 hours of operation: any point in time during those 24 hours
-   * After the initial 24 hours: a maximum of 12 hours for the previous six days
 
 >[!TIP]
 >
