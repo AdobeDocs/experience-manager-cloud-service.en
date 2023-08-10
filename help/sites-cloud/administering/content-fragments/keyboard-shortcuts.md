@@ -9,7 +9,7 @@ role: User, Developer, Architect
 
 A selection of keyboard shortcuts are available for use in the Content Fragments console.
 
-Various keyboard shortcuts are available throughout AEM. Some apply when [editing pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), others to the general [use of consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Various keyboard shortcuts are available throughout AEM. Some apply when [editing pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), others to the [general use of consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 >[!NOTE]
 >

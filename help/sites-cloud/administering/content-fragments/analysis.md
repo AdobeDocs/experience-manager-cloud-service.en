@@ -14,7 +14,6 @@ Content Fragments are designed for [Headless delivery using GraphQL](/help/sites
 ![Content Fragments - Structure](assets/cf-contentdelivery-cf-use-with-graphql.png)
 -->
 
-
 Experience Manager (AEM) provides several methods of viewing and analyzing the structure of your fragments.
 
 ## References {#references}

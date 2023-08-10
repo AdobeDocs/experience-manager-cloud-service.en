@@ -7,7 +7,7 @@ role: User, Developer, Architect
 
 # An overview of working with Content Fragments {#overview-working-with-content-fragments}
 
-With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate, and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). They allow you to prepare content ready for use in multiple locations/over multiple channels, ideal for headless delivery, and page authoring.
+With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate, and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). They allow you to prepare content ready for use in multiple locations, and over multiple channels, ideal for headless delivery, and page authoring.
 
 >[!IMPORTANT]
 >
@@ -17,11 +17,11 @@ With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow 
 >
 >This section deals with the **Content Fragments** console and the *new* Content Fragment editor. These have been developed for headless content delivery (though they can be used for all scenarios)
 >
->See the Assets documentation for full information about:
+>For further information see:
 >
->* use of the **Assets** console,
->* use the [*original* Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md),
->* using Content Fragments for page-authoring.
+>* use of the **Assets** console for [managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
+>* use of the [*original* Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md),
+>* using [Content Fragments for page-authoring](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 
 Content fragments contain structured content:
@@ -58,7 +58,7 @@ Content fragments allow you to:
 * Create and manage channel-neutral editorial content.
 * Build content pools for a range of channels.
 * Design content variations for specific channels.
-* Add images to your text by inserting assets (mixed-media fragments).
+* Add images to your text by inserting assets.
 * Create nested content to reflect the complexity of your data.
 
 These Content Fragments can then be assembled to provide experiences over a variety of channels.
@@ -79,12 +79,13 @@ This and the following pages cover the tasks for creating, configuring, maintain
 
 * [Enable Content Fragment functionality for your instance](/help/sites-cloud/administering/content-fragments/setup.md)
 * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - enabling, creating, and defining your models
-* [Use the Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md) - to your Content Fragments
+* [Create your Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment) (using the Content Fragment Console)
 
 After the fragments have been created, you can:
 
-* [Use the Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md) - to access, publish, and reference your fragments
-* [Use the Content Fragments editor](/help/sites-cloud/administering/content-fragments/authoring.md) - to edit, publish, and reference your fragments
+* [Use the Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md) - to access, publish (to preview or production), and reference your fragments
+* [Use the Content Fragments editor](/help/sites-cloud/administering/content-fragments/authoring.md) - to edit, publish (to preview or production), and reference your fragments
+* [Analyze](/help/sites-cloud/administering/content-fragments/analysis.md)  the structure of your Content Fragment, using the editor
 * [Access your fragments with GraphQL, for headless delivery to your applications](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). 
 * [Or use your fragments for page authoring](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 
@@ -141,7 +142,7 @@ Content fragments are:
 
 Content Fragments are a content structure that:
 
-* Are without layout or design (some text formatting is possible for text fields).
+* Are without layout or design (text formatting is possible for text fields).
 * Are independent from the delivery mechanism (such as the page, or channel).
 * Contain one, or more, [constituent parts](#constituent-parts-of-a-content-fragment).
 * Can [contain, or be connected to, images](#fragments-with-visual-assets).
@@ -164,7 +165,7 @@ The Content Fragment assets are made up of the following parts (either directly 
 * **Fragment Elements**
 
   * Elements correlate to the data fields holding content.
-  * You use a content model to create the Content fragment. The elements (fields) specified in the model define the structure of the fragment. These elements (fields) can be of a variety of data-types.
+  * You use a [Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) to create the Content fragment. The elements (fields) specified in the model define the structure of the fragment. These elements (fields) can be of a variety of data-types.
 
 * **Fragment Paragraphs**
 
@@ -177,15 +178,13 @@ The Content Fragment assets are made up of the following parts (either directly 
 * **Fragment Metadata**
 
   <!-- CHECK: can you view fragment properties from the CF console? -->
+  <!-- CHECK: 2023.8.10 - doesn't look like it -->
 
   * Use the [Assets metadata schemas](/help/assets/metadata-schemas.md).
   * Tags can be created when you:
 
     * Create and author the fragment
-    * Or later:
-
-      * By viewing/editing the fragment **Properties** from the console
-      * By editing the **Metadata** when in the fragment editor
+    * Or later, when you [view or edit the properties](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags) when in the fragment editor
 
   >[!CAUTION]
   >
@@ -204,7 +203,7 @@ The Content Fragment assets are made up of the following parts (either directly 
     * Every Content Fragment has one instance of **Main**.
     * **Main** cannot be deleted.
 
-  * **Main** is accessible in the fragment editor under **[Variations](/help/sites-cloud/administering/content-fragments/authoring.md)**.
+  * **Main** is accessible in the fragment editor under **[Variations](/help/sites-cloud/administering/content-fragments/authoring.md#variations)**.
   * **Main** is not a variation as such, but is the basis of all variations.
 
   >[!NOTE]
@@ -232,9 +231,9 @@ To create Content Fragments you need:
   * Are [created using Tools](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
   * Required to [create a fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments).
   * Defines the structure of a fragment (title, content elements, tag definitions).
-  * Content model definitions require a title and one data element; everything else is optional. 
+  * Content Fragment Model definitions require a title and one data element; everything else is optional. 
   * The model can define default content - if applicable. 
-  * Authors cannot change the defined structure when authoring fragment content.
+  * Authors cannot change the defined structure when authoring fragment content; though they can open the model editor from the fragment editor.
   * Changes made to a model after dependent Content Fragments have been created, can impact those Content Fragments.
 
 To use your Content Fragments for headless content delivery you also need:

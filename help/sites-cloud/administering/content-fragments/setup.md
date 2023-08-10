@@ -7,7 +7,9 @@ role: Developer, Architect
 
 # Content Fragments - Setup {#content-fragments-setup}
 
-Learn how to set up your instance for the Content Fragment functionality:
+Content Fragments within Adobe Experience Manager (AEM) as a Cloud Service allow you to prepare content ready for use in multiple locations, and over multiple channels. This is ideal for headless delivery, and page authoring.
+
+To enable your instance for the Content Fragment functionality you need to enable:
 
 * **Content Fragment Models** - mandatory
 
