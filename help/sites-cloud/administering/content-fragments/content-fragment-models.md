@@ -7,9 +7,9 @@ role: User, Developer, Architect
 
 # Content Fragment Models {#content-fragment-models}
 
-<!-- CHECK: 2023.08.08 screenshots not checked; Child Fragment Reference -->
+<!-- CHECK: 2023.08.08 screenshots not checked; Child Fragment Reference/GraphQL tab -->
 
-Content Fragment Models in AEM define the structure for the content of your [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md). These fragments can then be used for page authoring, or as a foundation for your headless content.
+Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service define the structure for the content of your [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md). These fragments can then be used for page authoring, or as a foundation for your headless content.
 
 To use Content Fragment Models you:
 
@@ -40,9 +40,9 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 
 >[!CAUTION]
 >
->Editing an existing Content Fragment model can impact dependent fragments.
+>Editing a model that is already used by existing Content Fragments can impact those dependent fragments.
 
-<!-- CHECK: add link to opening model editor directly from new fragment editor -->
+<!-- CHECK: add link to opening model editor directly from new fragment editor? -->
 
 1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
 
@@ -106,7 +106,7 @@ A selection of data types is available for defining your model:
   >
   >Whether the text area is Rich Text, Plain Text, or Markdown, is defined in the model by the property **Default Type**. 
   >
-  >This format cannot be changed from the Content Fragment Editor, but  only from the Model.
+  >This format cannot be changed from the [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md), but only from the Model.
 
 * **Number**
   * Add one, or more, numerical fields

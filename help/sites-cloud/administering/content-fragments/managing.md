@@ -7,20 +7,19 @@ role: User, Developer, Architect
 
 # Managing Content Fragments {#managing-content-fragments}
 
-Learn how to manage your Adobe Experience Manager (AEM) **Content Fragments** from the dedicated [Content Fragments console](#content-fragments-console), and [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). These Content Fragments can be used as the basis of your headless content, or for page authoring.
+Learn how to manage your **Content Fragments** in Adobe Experience Manager (AEM) as a Cloud Service, from the dedicated [Content Fragments console](#content-fragments-console), and [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). These Content Fragments can be used as the basis of your headless content, or for page authoring.
 
 >[!NOTE]
 >
 >Your project team can customize the console and editor if required. See [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md) for further details.
 
-After defining your [Content Fragment Models](#creating-a-content-model) you can use these to [create your Content Fragments](#creating-a-content-fragment).
+After defining your [Content Fragment Models](#creating-a-content-model) you can use these to [create your Content Fragments](#creating-a-content-fragment). Then open the [Content Fragment Editor](#opening-the-fragment-editor) to [author your content](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-The [Content Fragment Editor](#opening-the-fragment-editor) provides various [modes](#modes-in-the-content-fragment-editor) to enable you to:
-
-* [Edit the content](#editing-the-content-of-your-fragment) and [manage Variations](#creating-and-managing-variations-within-your-fragment)
+<!--
+* [Edit the content and manage your Variations](#editing-the-content-of-your-fragment)
 * [View, and edit, the Properties (Metadata) and Tags](#viewing-and-editing-properties-and-tags)
 * [View the Structure Tree](/help/sites-cloud/administering/content-fragments/authoring.md#structure-tree)
-
+-->
 <!-- CHECK -->
 <!--
 * [Preview the JSON representation](/help/sites-cloud/administering/content-fragments/authoring.md#json-preview)
@@ -79,15 +78,17 @@ Here you can see that there are three main areas:
   * This can be resized to show nested folders
 * The main/right panel - from here you can:
   * See the list of all Content Fragments in the selected branch of the tree:
-    * The location is indicated by the breadcrumbs; these can also be used to change the location
     * Content Fragments from the selected folder, and all child folders will be shown:
-      * [Various fields of information](#select-columns-console) about a Content Fragment provide links; depending on the field, these can:
-        * Open the appropriate fragment in the editor
-        * Show information about references
-        * Show information about language versions of the fragment
-      * [Other fields of information](#select-columns-console) about a Content Fragment can be used for [Fast Filtering](#fast-filtering):
-        * Select a value in the column and is immediately applied as a filter
-        * Fast filtering is supported for the **Model**, **Status**, **Modified By**, **Tags** and **Published By** columns.
+      * The location is indicated by the breadcrumbs; these can also be used to change the location:
+    * [Information is shown about each fragments](#information-content-fragments)
+      * [You can select which columns to show](#select-columns-console)
+    * [Various fields of information](#information-content-fragments) about a Content Fragment provide links; depending on the field, these can:
+      * Open the appropriate fragment in the editor
+      * Show information about references
+      * Show information about language versions of the fragment
+    * [Certain other fields of information](#information-content-fragments) about a Content Fragment can be used for [Fast Filtering](#fast-filtering):
+      * Select a value in the column and is immediately applied as a filter
+      * Fast filtering is supported for the **Model**, **Status**, **Modified By**, **Tags** and **Published By** columns.
     * By using mouse-over on the column headers a drop-down action selector, and width sliders, will be shown. These allow you to:
       * Sort - select the appropriate action for either ascending or descending
         This will sort the entire table according to that column. Sorting is only available on appropriate columns.
@@ -100,17 +101,17 @@ Here you can see that there are three main areas:
 
 Within the console there is a range of actions that you can use, either directly, or after selecting a specific fragment:
 
-* Various actions are directly [available from the console](#available-actions)
+* Various actions are directly [available from the console](#actions-unselected)
 * You can [select one, or more, Content Fragments to show appropriate actions](#actions-selected-content-fragment)
 
 #### Actions (unselected) {#actions-unselected}
 
 Certain actions are available from the console - without selecting a specific Content Fragment:
 
-* **[Create](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)** a new Content Fragment
+* **[Create](#creating-a-content-fragment)** a new Content Fragment
 * [Filter](#filtering-fragments) the Content Fragments according to a selection of predicates, and save the filter for future use
 * [Search](#searching-fragments) the Content Fragments 
-* [Customize the table view to show selected columns of information](#select-available-columns)
+* [Customize the table view to show selected columns of information](#select-columns-console)
 * Use **Open in Assets** to directly open the current location in the **Assets** console
 
   >[!NOTE]
@@ -118,7 +119,7 @@ Certain actions are available from the console - without selecting a specific Co
   >The **Assets** console is used to access assets, such as images, videos, etc.  This console can be accessed:
   >
   >* using the **Open in Assets** link (in the Content Fragments console)
-  >* directly from the global navigation pane
+  >* directly from the global **Navigation** pane
 
 #### Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
 
@@ -129,11 +130,11 @@ Selecting a specific fragment will open a toolbar focused on the actions availab
 ![Content Fragments console - toolbar for a selected fragment](assets/cf-managing-console-fragment-toolbar.png)
 
 * **[Open in new Editor](#editing-the-content-of-your-fragment)**
-* **[Publish](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)** (and **[Unpublish](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#unpublishing-a-fragment)**)
+* **[Publish](#publishing-and-previewing-a-fragment)** (and **[Unpublish](#unpublishing-a-fragment)**)
 * **Copy**
 * **Move**
 * **Rename**
-* **[Delete](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#deleting-a-fragment)**
+* **[Delete](#deleting-a-fragment)**
 
 >[!NOTE]
 >
@@ -141,7 +142,7 @@ Selecting a specific fragment will open a toolbar focused on the actions availab
 
 >[!NOTE]
 >
->Actions such as Publish, Unpublish, Delete, Move, Rename, Copy, trigger an asynchronous job. The progress of that job can be monitored via the AEM Async Jobs UI.
+>Actions such as Publish, Unpublish, Delete, Move, Rename, and Copy each trigger an asynchronous job. The progress of that job can be monitored via the AEM Async Jobs UI.
 
 ### The Information provided about your Content Fragments {#information-content-fragments}
 
@@ -151,13 +152,13 @@ The main/right panel (table view) of the console provides a range of information
   * Provides a link to open the fragment in the editor.
 * **Model**
   * Information only.
-  * Can be used for [Fast Filtering](#fast-filtering#fast-filtering)
+  * Can be used for [Fast Filtering](#fast-filtering)
 * **Folder**
   * Provides a link to open the folder in the console.
     Hovering over the folder name will show the JCR path.
 * **Status**
   * Information only.
-  * Can be used for [Fast Filtering](#fast-filtering#fast-filtering)
+  * Can be used for [Fast Filtering](#fast-filtering)
 * **Preview**
   * Information only:
     * **In sync**: Content Fragment is in-sync on the **Author** and **Preview** services.
@@ -167,16 +168,16 @@ The main/right panel (table view) of the console provides a range of information
   * Information only.
 * **Modified By**
   * Information only.
-  * Can be used for [Fast Filtering](#fast-filtering#fast-filtering).
+  * Can be used for [Fast Filtering](#fast-filtering).
 * **Tags**
   * Information only.
   * Shows all tags related to the Content Fragment; both Main and any variations.
-  * Can be used for [Fast Filtering](#fast-filtering#fast-filtering).
+  * Can be used for [Fast Filtering](#fast-filtering).
 * **Published At**
   * Information only.
 * **Published By**
   * Information only.
-  * Can be used for [Fast Filtering](#fast-filtering#fast-filtering).
+  * Can be used for [Fast Filtering](#fast-filtering).
 * **Referenced By**: 
   * Provides a link that opens a dialog listing all [parent references](#parent-references-fragment)  of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click on the **Title** in the dialog.
 
@@ -199,11 +200,11 @@ The main/right panel (table view) of the console provides a range of information
 
 ## Creating Content Fragments {#creating-content-fragments}
 
-Before creating your Content Fragment, the underlying Content Fragment Model must be created first.
+Before creating your Content Fragment, the underlying Content Fragment Model must be created.
 
 ### Creating a Content Model {#creating-a-content-model}
 
-[Content fragment models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) can be enabled and created, prior to creating content fragments with structured content.
+[Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) must be enabled and created, prior to creating content fragments with structured content.
 
 ### Creating a Content Fragment {#creating-a-content-fragment}
 
@@ -271,13 +272,13 @@ You can view, and edit, the properties (metadata) of a fragment using the [Prope
 
 You can publish your Content Fragments to:
 
-* the **[Publish Service](/help/overview/architecture.md#runtime-architecture)** - for full, public access
+* the **[Publish Service](/help/headless/deployment/architecture.md)** - for full, public access
 
-* the **[Preview Service](/help/overview/architecture.md#runtime-architecture)** - to preview the content prior to full availability
+* the **[Preview Service](/help/headless/deployment/architecture.md)** - to preview the content prior to full availability
 
   >[!CAUTION]
   >
-  >Publishing Content Fragments to the **Preview Service** is only available from the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); using the **Publish** action.
+  >Publishing Content Fragments to the **Preview Service** is only available from the Content Fragments console; using the **Publish** action.
 
   >[!NOTE]
   >
@@ -297,7 +298,7 @@ You can publish your Content Fragments to:
 
 You can publish your Content Fragments using the **Publish** option from either:
 
-* the toolbar of the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
+* the toolbar of the [Content Fragments console](#actions-selected-content-fragment)
 
   * Select one, or more, fragments from the list.
 
@@ -336,10 +337,13 @@ After publication the fragment status will be updated and visible in the editor 
 
 You can unpublish Content Fragments:
 
-* from the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment): select one or more fragments from the list
-* from the [Content Fragments editor](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
+* the toolbar of the [Content Fragments console](#actions-selected-content-fragment)
 
-In both cases, select **Unpublish** from the toolbarm followed by either **Now** or **Scheduled**.
+  * Select one, or more, fragments from the list.
+
+* the toolbar of the [Content Fragments editor](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
+
+In both cases, select **Unpublish** from the toolbar, followed by either **Now** or **Scheduled**.
 
 When the relevant dialog opens you can select the appropriate service:
 
@@ -360,14 +364,9 @@ When the relevant dialog opens you can select the appropriate service:
 To delete a fragment:
 
 1. In the **Content Fragments** console navigate to the location of the content fragment.
-2. Select the fragment.
-
-   >[!NOTE]
-   >
-   >The **Delete** action is not available as a quick action.
-
-3. Select **Delete** from the toolbar.
-4. Confirm the **Delete** action.
+1. Select the fragment.
+1. Select **Delete** from the toolbar.
+1. Confirm the **Delete** action.
 
    >[!CAUTION]
    >
@@ -380,7 +379,7 @@ Details of parent references can be accessed from the
 * **References** column of the Content Fragments Console
 * the [references link in the top toolbar of the Content Fragments editor](/help/sites-cloud/administering/content-fragments/authoring.md#view-references)
 
-Both provides a link that opens a dialog listing all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click on the **Title** in the dialog.
+Both provide a link that opens a dialog listing all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click on the **Title** in the dialog.
 
 For example:
 
@@ -392,7 +391,7 @@ For example:
 
 Details of Language Copies can be accessed from:
 
-* the **Language** column of the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
+* the **Language** column of the [Content Fragments Console](#information-content-fragments)
 * the [Language Copies tab of the Content Fragments editor](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)
 
 The icon indicates the locale of the content fragment, together with the total number of locales/language copies associated with the content fragment. For example, from the console:

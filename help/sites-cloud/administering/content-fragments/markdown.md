@@ -4,23 +4,24 @@ description: Understand how the Content Fragment editor uses markdown syntax to 
 feature: Content Fragments
 role: User
 ---
+
 # Markdown {#markdown}
 
-When you are [authoring](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write content for both page authoring and headless delivery:
+When you are [authoring](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) your Content Fragments you may have [Multi line text fields](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) defined with the **Default Type** of **Markdown**. The Content Fragment editor uses *markdown* syntax to allow you to easily write content for both page authoring and headless delivery:
 
 ![markdown editor](/help/sites-cloud/administering/content-fragments/assets/cfm-markdown-01.png)
 
 You can define:
 
-* [Heading Notation](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#heading-notation)
-* [Paragraphs and Line Breaks](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#paragraphs-and-line-breaks)
-* [Links](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#links)
-* [Images](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#images)
-* [Block Quotes](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#block-quotes)
-* [Lists](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#lists)
-* [Emphasis](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#emphasis)
-* [Code Blocks](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#code-blocks)
-* [Backslash escapes](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md#backslash-escapes)
+* [Heading Notation](/help/sites-cloud/administering/content-fragments/markdown.md#heading-notation)
+* [Paragraphs and Line Breaks](/help/sites-cloud/administering/content-fragments/markdown.md#paragraphs-and-line-breaks)
+* [Links](/help/sites-cloud/administering/content-fragments/markdown.md#links)
+* [Images](/help/sites-cloud/administering/content-fragments/markdown.md#images)
+* [Block Quotes](/help/sites-cloud/administering/content-fragments/markdown.md#block-quotes)
+* [Lists](/help/sites-cloud/administering/content-fragments/markdown.md#lists)
+* [Emphasis](/help/sites-cloud/administering/content-fragments/markdown.md#emphasis)
+* [Code Blocks](/help/sites-cloud/administering/content-fragments/markdown.md#code-blocks)
+* [Backslash escapes](/help/sites-cloud/administering/content-fragments/markdown.md#backslash-escapes)
 
 ## Heading Notation {#heading-notation}
 
