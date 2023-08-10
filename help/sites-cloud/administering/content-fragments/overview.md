@@ -15,12 +15,12 @@ With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow 
 >
 >There are also two editors available for Content Fragments. (Both editors are accessible from both consoles.)
 >
->This section deals with the **Content Fragments** console and the *new*/*headless* Content Fragment editor. These have been developed for headless content delivery (though they can be used for all scenarios)
+>This section deals with the **Content Fragments** console and the *new* Content Fragment editor. These have been developed for headless content delivery (though they can be used for all scenarios)
 >
 >See the Assets documentation for full information about:
 >
 >* use of the **Assets** console,
->* use the [*other*/*original* Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md),
+>* use the [*original* Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md),
 >* using Content Fragments for page-authoring.
 
 
@@ -32,12 +32,13 @@ Content fragments contain structured content:
   * Basic
     * For example, a single, multi line text field.
     * Can be used for preparing straightforward content for use in page authoring.
+    * Can also be used for headless delivery to your application.
   * Complex
     * A combination of many fields of varying data types, including text, number, boolean, and date and time, among others.
-    * Can be used either for preparing more structured content for page authoring, or for delivery to your application.
+    * Can be used either for preparing more structured content for page authoring, or for headless delivery to your application.
   * Nested
     * The reference data types available allow you to nest your content.
-    * Tends to be used for delivery to your application.
+    * Tends to be used for headless delivery to your application.
 
 Content Fragments can also be delivered in JSON format, using the Sling Model (JSON) export capabilities of AEM core components. This form of delivery:
 
@@ -129,8 +130,8 @@ Content fragments are:
 
 * Stored as **Assets**:
 
-  * Content fragments (and their variations) can be created and maintained from the **Content Fragments** console.
-  * Authored and edited in the Content Fragment Editor.
+  * Content fragments (and their variations) can be created and maintained from the [Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+  * Authored and edited in the [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 * Accessible for content delivery using the [AEM GraphQL API](/help/headless/graphql-api/content-fragments.md).
 

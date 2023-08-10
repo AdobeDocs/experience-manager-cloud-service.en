@@ -53,6 +53,12 @@ For detailed further information see:
 
 * [Search and Filter in the Content Fragments Console](#filtering-fragments)
 
+* A selection of [keyboard shortcuts](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) are available for use in this console
+
+>[!NOTE]
+>
+>This console only displays Content Fragments. It does not display other asset types such as images and videos. 
+
 ### Basic Structure and Handling of the Console {#basic-structure-handling-content-fragments-console}
 
 Selecting **Content Fragments** will open the console in a new tab. 
