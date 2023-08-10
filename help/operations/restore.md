@@ -5,11 +5,6 @@ description: Learn how to restore your AEM as a Cloud Service content from backu
 
 # Content Restore in AEM as a Cloud Service {#content-restore}
 
->[!CONTEXTUALHELP]
->id="aemcloud_golive_backuprestore"
->title="Backup & Restore"
->abstract="Learn how to restore your AEM as a Cloud Service content from backup using Cloud Manager."
-
 Learn how to restore your AEM as a Cloud Service content from backup using Cloud Manager.
 
 >[!NOTE]
