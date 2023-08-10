@@ -77,6 +77,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.7.0](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
       + [Release Notes for 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
       + [Release Notes for 2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
       + [Release Notes for 2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
@@ -995,6 +996,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Backup and Restore](/help/operations/backup.md)
+  + [Self-Service Restore](/help/operations/restore.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
   + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)
