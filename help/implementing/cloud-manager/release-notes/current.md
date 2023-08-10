@@ -19,8 +19,21 @@ The release date for Cloud Manager release 2023.8.0 in AEM as a Cloud Service is
 
 ## What's New {#what-is-new}
 
-* For [content copy](/help/implementing/developing/tools/content-copy.md) purposes, [content aware configurations](/help/implementing/developing/introduction/configurations.md) are now permitted in content sets when using the UI.
+* When configuring a content set to [copy content,](/help/implementing/developing/tools/content-copy.md) [context-aware configurations](/help/implementing/developing/introduction/configurations.md) are now permitted in content sets in the UI.
 * Enhancements were made to improve comprehensibility and surfacing of error messages in Cloud Manager UI.
+
+## Self-Service Content Restore Early-Adoption Program {#early-adoption}
+
+A new self-service content restore feature now provides backup restoration for up to seven days and is available to early adopters for evaluation purposes featuring:
+
+* Point-in-time backup restoration for the previous 24 hours
+* Fixed time restorations for up to seven days
+
+If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-restorefrombackup-adopter@adobe.com` from your email associated with your Adobe ID. Please note:
+
+* The early adopter program is limited to development environments only.
+* Availability of the early adopter program is limited.
+* This feature is for recovering accidentally deleted content and is not intended for disaster recovery.
 
 ## Bug Fixes {#bug-fixes}
 
@@ -32,3 +45,4 @@ The release date for Cloud Manager release 2023.8.0 in AEM as a Cloud Service is
 * When a certificate expires, domain names and IP allow-lists associated with the certificate will no longer be removed from the CDN.
   * In such cases, the site will continue to be reachable.
   * [The Cloud Manager UI](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) will provide more visible advance warnings that the SSL certificate is about to expire.
+* A problem with AEM losing access to a publish endpoint was fixed in situations when Sites is added as a solution to an Assets-only program.
