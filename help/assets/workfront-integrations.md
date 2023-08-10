@@ -38,7 +38,7 @@ As of June 2022, Adobe released a new native integration for connecting Workfron
 >
 >Adobe does not support using the Workfront for Experience Manager enhanced connector and Experience Manager integration in parallel.
 
-The following are some points to note for the deployment and configuration of [!DNL Adobe Workfront for Experience Manager enhanced connector]:
+For installations prior to June 2022, the following are some points to note for the deployment and configuration of [!DNL Adobe Workfront for Experience Manager enhanced connector]:
 
 * Adobe requires deployment and configuration of the [!DNL Adobe Workfront for Experience Manager enhanced connector] only via certified partners or [!DNL Adobe Professional Services]. If deployed and configured without a certified partner or [!DNL Adobe Professional Services], it is not supported by Adobe.
 * Adobe may release updates to [!DNL Adobe Workfront] and [!DNL Adobe Experience Manager] that make this connector redundant; if this occurs, customers may be required to transition from the use of this connector.
