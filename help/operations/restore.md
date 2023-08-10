@@ -10,6 +10,8 @@ Learn how to restore your AEM as a Cloud Service content from backup using Cloud
 >[!NOTE]
 >
 >This feature is only available to [the early adopter program](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) within development environments.
+>
+>For details on the existing backup and restore system, please see the document [Backup and Restore in AEM as a Cloud Service](/help/operations/backup.md)
 
 ## Overview {#overview}
 
