@@ -16,11 +16,15 @@ There are two editors available for Content Fragments. The editor described in t
 
 >[!CAUTION]
 >
+>The editor described in this section is *only* available in the online Adobe Experience Manager (AEM) as a Cloud Service.
+
+>[!CAUTION]
+>
 >To edit a Content Fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contact your system administrator if you are experiencing issues.
 
 >[!NOTE]
 >
->See the Assets documentation for full information about the [other Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md) - it is available from both the **Assets** console and the **Content Fragments** console.
+>See the Assets documentation for full information about the [original Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md) - it is available from both the **Assets** console and the **Content Fragments** console.
 
 >[!NOTE]
 >

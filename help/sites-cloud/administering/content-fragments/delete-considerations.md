@@ -27,9 +27,13 @@ In relation to delete permissions, Content Fragments must be considered at two l
     * **Use case**: A user who needs to edit/update a Content Fragment - **without being allowed to delete an entire fragment**.
     * **Permissions**: See [Permissions Required for Editor Functionality Only](#permissions-required-for-editor-functionality-only).
 
+<!-- CHECK: Is this true for this editor? -->
+
+<!--
 >[!NOTE]
 >
 >When a user does not have any Delete permissions, the Content Fragment editor operates in *read-only* mode.
+-->
 
 >[!NOTE]
 >
