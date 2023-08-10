@@ -156,7 +156,7 @@ To delete a Variation of your Content Fragment:
 <!-- CHECK: screenshot checked 2023.08.07 -->
 
 * Plain Text
-* Markdown
+* [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
 * [Rich Text](#edit-multi-line-text-fields-rich-text)
 
 Fields that are defined as either Plain Text or Markdown have a simple text box, without formatting options:

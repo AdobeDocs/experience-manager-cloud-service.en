@@ -314,6 +314,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
       + [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
       + [Authoring Fragment Content](/help/sites-cloud/administering/content-fragments/authoring.md)
+      + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
       + [Content Fragments - Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
       + [Analyzing Structure](/help/sites-cloud/administering/content-fragments/analysis.md)
       + [Content Fragments - Keyboard Shortcuts](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
