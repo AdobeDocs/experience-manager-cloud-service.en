@@ -204,7 +204,7 @@ To use reCAPTCHA in adaptive forms:
 > 
 > Do not select **[!UICONTROL Default]** from the Captcha service drop-down as the default AEM CAPTCHA service is deprecated.
 
->[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422641/recaptcha-google-adaptive-forms/?quality=12&learn=on)
 
 ### Show or hide CAPTCHA component based on rules {#show-hide-captcha}
 
