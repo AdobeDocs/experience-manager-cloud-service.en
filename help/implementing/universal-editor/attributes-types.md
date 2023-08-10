@@ -47,7 +47,8 @@ Depending on the use case `itemprop` or `itemid` may or may not be required. For
 
 |`data-editor-behavior`|Description|
 |---|---|
-|`component`|Can be used to let standalone text, richtext, and media mimic  components so they are also moveable and deletable on the page|
+|`component`|Used to allow standalone text, richtext, and media mimic components so they are also moveable and deletable on the page|
+|`container`|Used to allow containers to be treated as their own components so they are movable and deletable on the page|
 
 ## Additional Resources {#additional-resources}
 
