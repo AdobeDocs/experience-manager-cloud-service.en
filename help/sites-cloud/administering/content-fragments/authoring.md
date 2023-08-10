@@ -14,6 +14,8 @@ There are two editors available for Content Fragments. The editor described in t
 * has been developed for headless content delivery (though it can be used for all scenarios)
 * is available from the **Content Fragments** console
 
+<!-- CHECK: will this change when the original editor has a toggle? -->
+
 >[!CAUTION]
 >
 >The editor described in this section is *only* available in the online Adobe Experience Manager (AEM) as a Cloud Service.
@@ -39,11 +41,11 @@ When you first open the Content Fragment Editor, you see four main areas:
 * top toolbar: for key information, and actions
   * a link to the Content Fragment Console (Home icon)
   * information about the model, and folder
-  * links to [Preview (if configured for the model)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
-  * Publish actions
+  * links to [Preview (if the Default Preview URL Pattern is configured for the model)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
+  * [Publish](#publish-content-fragment), and [Unpublish](#unpublish-content-fragment) actions
   * an option to show all **Parent References** (link icon)
-  * [status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments) and last saved information
-  * a toggle to switch to the Assets-based (original) editor
+  * the fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, and last saved information
+  * a toggle to switch to the original (Assets-based) editor
 * left panel: shows the **[Variations](#variations)** for the Content Fragment, and its **Fields**:
   * these links can be used to [navigate the Content Fragment structure](#navigate-structure)
 * right panel: presents tabs [showing the properties (metadata) and tags](#view-properties-tags), information about the [version history](#view-version-history), and information related to any [language copies](#view-language-copies)
@@ -52,15 +54,15 @@ When you first open the Content Fragment Editor, you see four main areas:
   * allows you to edit the content
   * if **Tab Placeholder** fields are defined within the model they are shown here, and can be used for navigating
 
+<!-- CHECK: screenshot checked 2023.08.07 -->
+
+![Content Fragment Editor - Overview](assets/cf-authoring-overview.png)
+
 >[!CAUTION]
 >
 >A Content Fragment Model can often define data fields named **Title** and **Description**. If these fields exist, they are user-defined fields and can be updated in the *central panel* when editing the fragment.
 >
 >The Content Fragment, and its variations, also have metadata fields (Variation properties) called **Title** and **Description**. These fields are an integral part of any Content Fragment and initially defined when the fragment. They can be updated in the *right panel* when editing the fragment.
-
-<!-- CHECK: screenshot checked 2023.08.07 -->
-
-![Content Fragment Editor - Overview](assets/cf-authoring-overview.png)
 
 ## Navigate the Content Fragment structure {#navigate-structure}
 
@@ -82,13 +84,13 @@ In the left panel you can see:
 
 ## Saving and auto-saving {#saving-autosaving}
 
-<!-- cannot be saved, no undo, redo -->
+<!-- CHECK: cannot be saved, no undo, redo -->
 
 With every update that you make, the Content Fragment is automatically saved. The last time saved is shown in the top toolbar.
 
 ## Variations {#variations}
 
-[Variations](/help/sites-cloud/administering/content-fragments/overview.md#constituent-parts-of-a-content-fragment) are a significant feature of AEM's Content Fragments. They allow you to create and edit copies of the **Main** content for use on specific channels, and/or scenarios, making headless content delivery and page authoring even more flexible.
+[Variations](/help/sites-cloud/administering/content-fragments/overview.md#constituent-parts-of-a-content-fragment) are a significant feature of AEM's Content Fragments. They allow you to create and edit copies of the **Main** content for use on specific channels, and scenarios, making headless content delivery and page authoring even more flexible.
 
 From the editor you can:
 
@@ -163,7 +165,7 @@ To delete a Variation of your Content Fragment:
 * [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
 * [Rich Text](#edit-multi-line-text-fields-rich-text)
 
-Fields that are defined as either Plain Text or Markdown have a simple text box, without formatting options:
+Fields that are defined as either Plain Text or Markdown have a simple text box, without (on-screen) formatting options:
 
 ![Content Fragment Editor - Multi line text - full screen](assets/cf-authoring-multilinetext-plaintext-markdown.png)
 
@@ -185,9 +187,9 @@ For **[Multi line text](/help/sites-cloud/administering/content-fragments/conten
   * Insert links
   * Select and insert references to image assets
   * Add special characters
-* [Full-screen editor](#full-screen-editor) - toggle between full-screen and in-flow
-* [Statistics](#statistics)
-* [Compare and Synchronize](#compare-and-synchronize)
+* [Full-screen editor](#full-screen-editor-rich-text) - toggle between full-screen and in-flow
+* [Statistics](#statistics-rich-text)
+* [Compare and Synchronize](#compare-and-synchronize-rich-text)
 
 For example:
 
@@ -254,7 +256,7 @@ For example, a scenario where the variation content had been completely rewritte
 
 ### Fragment References {#fragment-references}
 
-[Fragment References](/help/sites-cloud/administering/content-fragments/content-fragment-models.md##fragment-reference-nested-fragments) can be used to:
+[Fragment References](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#fragment-reference-nested-fragments) can be used to:
 
 * [create a reference to an existing Content Fragment](#create-reference-existing-content-fragment)
 * [create a Content Fragment, and then reference it](#create-reference-content-fragment)
@@ -343,6 +345,7 @@ In the properties tab of the right panel, properties (metadata) and tags can be 
 ### Edit Properties and Tags {#edit-properties-tags}
 
 In the properties tab (right panel) you can also edit:
+
 * **Title**
 * **Description**
 * **Tags** 
@@ -382,7 +385,7 @@ For example:
 >For more details about translating a Content Fragment, and creating language copies, see the [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md).
 
 
-<!-- CHECK: Replace with snippet, see also analysis.md  -->
+<!-- CHECK: Replace with snippet? See also analysis.md  -->
 
 <!--
 ## JSON preview {#json-preview}
@@ -396,7 +399,7 @@ Select **JSON preview** from the editor toolbar to show the JSON representation 
 >See [Content Delivery - JSON Preview](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md#json-preview) for more details.
 -->
 
-<!-- CHECK: Replace with snippet -->
+<!-- CHECK: Replace with snippet? -->
 
 ## Structure tree {#structure-tree}
 
@@ -417,7 +420,7 @@ The Content Fragment editor provides authors with the option to preview their ed
 To use this feature, you first need to:
 
 * Work with your IT team to set up the external frontend application that will render the Content Fragment by consuming its JSON output. 
-* Once the external frontend application is set up, the **Default Preview URL Pattern** needs to be defined as a [property of the appropriate Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties).
+* Once the external frontend application is set up, the **Default Preview URL Pattern** needs to be defined as a [property of the appropriate Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
 
 When the URL has been defined, the **Preview** button is active. You can select this button to launch the external application (in a separate tab) to render the Content Fragment. 
 

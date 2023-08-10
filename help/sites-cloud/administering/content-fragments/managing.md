@@ -58,6 +58,10 @@ For detailed further information see:
 >
 >This console only displays Content Fragments. It does not display other asset types such as images and videos. 
 
+>[!CAUTION]
+>
+>This console is *only* available in the online Adobe Experience Manager (AEM) as a Cloud Service.
+
 ### Basic Structure and Handling of the Console {#basic-structure-handling-content-fragments-console}
 
 Selecting **Content Fragments** will open the console in a new tab. 
