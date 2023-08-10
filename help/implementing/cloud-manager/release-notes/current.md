@@ -24,7 +24,7 @@ The release date for Cloud Manager release 2023.8.0 in AEM as a Cloud Service is
 
 ## Self-Service Content Restore Early-Adoption Program {#early-adoption}
 
-A new self-service content restore feature now provides backup restoration for up to seven days and is available to early adopters for evaluation purposes featuring:
+[A new self-service content restore feature](/help/operations/restore.md) now provides backup restoration for up to seven days and is available to early adopters for evaluation purposes featuring:
 
 * Point-in-time backup restoration for the previous 24 hours
 * Fixed time restorations for up to seven days
