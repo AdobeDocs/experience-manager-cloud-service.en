@@ -22,7 +22,11 @@ The release date for Cloud Manager release 2023.8.0 in AEM as a Cloud Service is
 * When configuring a content set to [copy content,](/help/implementing/developing/tools/content-copy.md) [context-aware configurations](/help/implementing/developing/introduction/configurations.md) are now permitted in content sets in the UI.
 * Enhancements were made to improve comprehensibility and surfacing of error messages in Cloud Manager UI.
 
-## Self-Service Content Restore Early-Adoption Program {#early-adoption}
+## Early Adoption Program {#early-adoption}
+
+Be a part of our early adoption program and have a chance to test some upcoming features.
+
+### Self-Service Content Restore {#content-restore}
 
 [A new self-service content restore feature](/help/operations/restore.md) now provides backup restoration for up to seven days and is available to early adopters for evaluation purposes featuring:
 
@@ -32,8 +36,16 @@ The release date for Cloud Manager release 2023.8.0 in AEM as a Cloud Service is
 If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-restorefrombackup-adopter@adobe.com` from your email associated with your Adobe ID. Please note:
 
 * The early adopter program is limited to development environments only.
-* Availability of the early adopter program is limited.
+* Availability of the early adopter program of this feature is limited.
 * This feature is for recovering accidentally deleted content and is not intended for disaster recovery.
+
+### Experience Audit Dashboard {#experience-audit-dashboard}
+
+[The Cloud Manager Experience Audit dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) includes a trended view of your page performance scores along with insights and recommendations to help you improve them. Experience Audit is included as a step in the Cloud Manager production pipeline.
+
+The dashboard leverages Google Lighthouse, an open-source, automated tool for improving the quality of your web apps. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more.
+
+Interested in test-driving the new dashboard? Please send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID and we can get you started.
 
 ## Bug Fixes {#bug-fixes}
 
