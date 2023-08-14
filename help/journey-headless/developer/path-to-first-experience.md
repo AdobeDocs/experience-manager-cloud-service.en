@@ -104,8 +104,8 @@ A headless project is not only successful because of the technology implemented,
 
 ### Authoring Content {#authoring}
 
-* For channel-specific versions of your content, consider using content fragment variations. Variations are synchronized against the content master to streamline content change management.
-* Invite other content producers to review content and give feedback with annotations and comments, which are available within the content fragment editor and globally across fragments in content fragments Admin Console.
+* For channel-specific versions of your content, consider using content fragment variations. Variations are synchronized against the main content to streamline content change management.
+* Invite other content producers to review content and give feedback.
 * Keep things moving with as few mandatory elements as possible. Mandatory elements can block the workflow.
 
 ### Authoring Global Content {#localization}
