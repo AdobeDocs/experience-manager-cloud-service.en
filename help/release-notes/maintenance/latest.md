@@ -25,10 +25,10 @@ Summarized below are the continuous improvements for maintenance release 13099, 
 - SITES-11620: Content Fragments - References path is slightly cut in the UI
 - SITES-14171: GraphQL - Circular references are not broken for cached data in some cases
 - SITES-14577: Experience Fragments -	Bulk publish is not working for live copies
-- SITES-14341:	Admin UI - Inconsistent behaviour of the 'Properties' button when delete permissions are removed
-- SITES-11000:	Admin UI - References: Incoming links missing in some pages
-- SITES-11559:	Admin UI - References: Incoming Links shows wrong pages
-- SITES-14337:	Opening editor page on latest SP snapshot gives error
+- SITES-14341: Admin UI - Inconsistent behaviour of the 'Properties' button when delete permissions are removed
+- SITES-11000: Admin UI - References: Incoming links missing in some pages
+- SITES-11559: Admin UI - References: Incoming Links shows wrong pages
+- SITES-14337: Opening editor page on latest SP snapshot gives error
 - FORMS-9971: When an Adaptive Form is rendered in a different locale, the visibility of components is interpreted and applied inaccurately. 
 - FORMS-9888: When an Adaptive Form is set to redirect to an external URL (thank you page) on form submission, it fails to redirect to the external URL. 
 - FORMS-9845: After clearing a dropdown using the rule editor, the previously provided values persist, despite the supposed clearance. 
