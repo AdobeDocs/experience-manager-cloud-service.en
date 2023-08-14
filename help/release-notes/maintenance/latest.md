@@ -15,10 +15,15 @@ Summarized below are the continuous improvements for maintenance release 13099, 
 
 ### Enhancements {#enhancements-13099}
 
-None.
+- SITES-13906: GraphQL - Upgrade to graphql-java 20.1
+- SITES-8972: GraphQL - Add option "label" in JSON for Enumeration data type
+- SITES-9689: GraphQL - Add title and description in JSON for Content Reference data type
 
 ### Fixed Issues {#fixed-issues-13099}
 
+- SITES-14847: Content Fragments - Content Fragment Links are not highlighted
+- SITES-11620: Content Fragments - References path is slightly cut in the UI
+- SITES-14171: GraphQL - Circular references are not broken for cached data in some cases
 - FORMS-9971: When an Adaptive Form is rendered in a different locale, the visibility of components is interpreted and applied inaccurately. 
 - FORMS-9888: When an Adaptive Form is set to redirect to an external URL (thank you page) on form submission, it fails to redirect to the external URL. 
 - FORMS-9845: After clearing a dropdown using the rule editor, the previously provided values persist, despite the supposed clearance. 
