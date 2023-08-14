@@ -484,6 +484,24 @@ Navigate to the folder location for assets displayed in the search results. Sele
 | When searching for visually similar images, an irrelevant image is displayed. | Visual search behavior.| [!DNL Experience Manager] displays as many potentially relevant assets as possible. Less relevant images, if any, are added to the results but with a lower search ranking. The quality of the matches and relevance of searched assets decrease as you scroll down the search results. |
 | When selecting and operating on search results, all searched assets are not operated upon. | The [!UICONTROL Select All] option only selects first 100 search results in card view and first 200 search results in list view. | |
 
+## damAssetLucene-9 for faster search response times {#damAssetLucene-9-faster-response-times}
+
+Experience Manager Assets displays facet counts for two properties by default:
+
+* Asset type (jcr:content/metadata/dc:format)
+
+* Approval status (jcr:content/metadata/dam:status)
+
+As of August 2023, Experience Manager Assets includes a new version 9 of `damAssetLucene` index. The previous versions, `damAssetLucene-8` and below, use the `statistical` mode to check access control on a sample of the items for each search facet count.
+
+`damAssetLucene-9` changes the behavior of Oak Query facet counting to no longer evaluate access control on the facet counts returned by the underlying search index, which results in the faster search response times. As a result, you might be presented with facet count values, which include assets that you do not have access to. You might not be able to access, download, or read those assets to gain any further information about them.
+
+If you need to switch to the previous behavior, `statistical` mode, see [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) to create a custom version of the `damAssetLucene-9` index. Adobe does not recommend switching to the `statistical` mode due to the impact on search response times with large result sets.
+
+For more information on Oak's facet capabilities, including a detailed description of these modes, see [this article](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
+
+
+
 **See also**
 
 * [Translate Assets](translate-assets.md)
