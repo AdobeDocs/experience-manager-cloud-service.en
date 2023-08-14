@@ -309,9 +309,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
   + Administering {#administering}
     + Content Fragments {#content-fragments}
-      + [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
-      + [Headless Delivery with Content Fragments and GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
-      + [Enable Content Fragment Functionality for your Instance](/help/sites-cloud/administering/content-fragments/setup.md)
+      + [Overview and Introductions](/help/sites-cloud/administering/content-fragments/overview.md)
+      + [Headless Delivery with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
+      + [Content Fragment Setup](/help/sites-cloud/administering/content-fragments/setup.md)
       + [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
       + [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
       + [Authoring Fragment Content](/help/sites-cloud/administering/content-fragments/authoring.md)
