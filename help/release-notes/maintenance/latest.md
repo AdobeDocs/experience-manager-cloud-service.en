@@ -7,17 +7,17 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 13099 {#release-X}
+## Release 13099 {#release-13099}
  
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on Aug 15, 2023. This maintenance release is an update from previous maintenance release 12874.
+Summarized below are the continuous improvements for maintenance release 13099, which was publicly released on Aug 15, 2023. This maintenance release is an update from previous maintenance release 12874.
 
 2023.8.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-X}
+### Enhancements {#enhancements-13099}
 
 None.
 
-### Fixed Issues {#fixed-issues-X}
+### Fixed Issues {#fixed-issues-13099}
 
 - FORMS-9971: When an Adaptive Form is rendered in a different locale, the visibility of components is interpreted and applied inaccurately. 
 - FORMS-9888: When an Adaptive Form is set to redirect to an external URL (thank you page) on form submission, it fails to redirect to the external URL. 
@@ -33,15 +33,15 @@ None.
 - FORMS-3691: Some objects are missing IIFE (Immediately Invoked Function Expression) scoping. The primary purpose of using an IIFE is to create a scope for variables within the function, preventing those variables from polluting the global scope. 
 
 
-### Known Issues {#known-issues-X}
+### Known Issues {#known-issues-13099}
 
-- SITES-15359
+- SITES-15359: The variation name pattern fails to correctly match variations that have ```'_'``` in their resource names.
 
-### Embedded Technologies {#embedded-tech-X}
+### Embedded Technologies {#embedded-tech-13099}
 
 |Technology|Version|Link|
 |---|---|---|
 |AEM OAK |1.52-T20230629133256-25c01b8|[Oak API 1.52.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.52.0/index.html)| 
 |AEM SLING API |Version 2.27.2 |[Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL|Version 1.4.20-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
-|AEM Core Components|Version 2.23.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|AEM Core Components|Version 2.23.2|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
