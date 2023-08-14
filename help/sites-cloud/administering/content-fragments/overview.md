@@ -28,6 +28,9 @@ Content fragments contain structured content:
 
 * Each fragment is based on a [Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
   * The Content Fragment Model defines the structure of the resulting fragment.
+* Every fragment consists of:
+  * **[Main](#main-and-variations)** - always exists, cannot be deleted
+  * **[Variations](#main-and-variations)** - one, or more, created by the author
 * The structure can range between:
   * Basic
     * For example, a single, multi line text field.
@@ -98,6 +101,35 @@ After the fragments have been created, you can:
 >* [Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
 >* [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+
+## Main and Variations {#main-and-variations}
+
+Variations are a significant feature of AEM's Content Fragments. They allow you to create and edit copies of the **Main** content for use on specific channels, and scenarios, making headless content delivery and page authoring even more flexible.
+
+* **Main**
+
+  * **Main** is not a variation as such, but is the basis of all variations.
+  * An integral part of the fragment
+
+    * Every Content Fragment has one instance of **Main**.
+    * **Main** cannot be deleted.
+
+  * **Main** is accessible in the fragment editor under **[Variations](/help/sites-cloud/administering/content-fragments/authoring.md#variations)**.
+
+  >[!NOTE]
+  >
+  >In the editor available from the **Assets** console, **Main** is labeled as **Master**.
+
+* **Variations**
+
+  * Renditions of fragment text that are specific to editorial purpose; can be related to channel but is not compulsory, can also be for ad-hoc local modifications.
+  * Are created as copies of **Main**, but can then be edited as required; there is often content overlap between the variations themselves.
+  * Can be defined during fragment authoring; from the left panel.
+  * Stored in the fragment, to help avoid scattering of content copies.
+  * Variations can be [compared and synchronized](/help/sites-cloud/administering/content-fragments/authoring.md#compare-and-synchronize-rich-text) with **Main**.
+  <!--
+  * Can be [Summarized](/help/sites-cloud/administering/content-fragments/authoring.md#summarizing-text) to quickly truncate the text to a predefined length.
+  -->
 
 ## Content Fragments and Content Services {#content-fragments-and-content-services}
 
@@ -196,30 +228,8 @@ The Content Fragment assets are made up of the following parts (either directly 
   >
   >The Content Fragment, and its variations, also has metadata (property) fields called **Title** and **Description**. These two metadata fields are an integral part of any Content Fragment, and variation, and initially defined when the fragment is created. They can be updated in the properties/metadata area of the editor.
 
-* **Main**
-
-  * An integral part of the fragment
-
-    * Every Content Fragment has one instance of **Main**.
-    * **Main** cannot be deleted.
-
-  * **Main** is accessible in the fragment editor under **[Variations](/help/sites-cloud/administering/content-fragments/authoring.md#variations)**.
-  * **Main** is not a variation as such, but is the basis of all variations.
-
-  >[!NOTE]
-  >
-  >In the editor available from the **Assets** console, **Main** is labeled as **Master**.
-
-* **Variations**
-
-  * Renditions of fragment text that are specific to editorial purpose; can be related to channel but is not compulsory, can also be for ad-hoc local modifications.
-  * Are created as copies of **Main**, but can then be edited as required; there is often content overlap between the variations themselves.
-  * Can be defined during fragment authoring; from the left panel.
-  * Stored in the fragment, to help avoid scattering of content copies.
-  * Variations can be [compared and synchronized](/help/sites-cloud/administering/content-fragments/authoring.md#compare-and-synchronize-rich-text) with **Main**.
-  <!--
-  * Can be [Summarized](/help/sites-cloud/administering/content-fragments/authoring.md#summarizing-text) to quickly truncate the text to a predefined length.
-  -->
+* **[Main](#main-and-variations)**
+* **[Variations](#main-and-variations)**
 
 ### Required by Fragments {#required-by-fragments}
 

@@ -90,7 +90,7 @@ With every update that you make, the Content Fragment is automatically saved. Th
 
 ## Variations {#variations}
 
-[Variations](/help/sites-cloud/administering/content-fragments/overview.md#constituent-parts-of-a-content-fragment) are a significant feature of AEM's Content Fragments. They allow you to create and edit copies of the **Main** content for use on specific channels, and scenarios, making headless content delivery and page authoring even more flexible.
+[Variations](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) are a significant feature of AEM's Content Fragments. They allow you to create and edit copies of the **Main** content for use on specific channels, and scenarios, making headless content delivery and page authoring even more flexible.
 
 From the editor you can:
 
