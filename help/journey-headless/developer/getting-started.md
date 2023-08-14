@@ -160,7 +160,7 @@ The administrator should be the user who sets up AEM and prepares the runtime en
 
 #### Content Author {#content-author}
 
-Content authors create and manage the content that is delivered headlessly by AEM. Content authors use AEM features such as Content Fragments and the Assets Console to manage their content.
+Content authors create and manage the content that is delivered headlessly by AEM. Content authors use AEM features such as Content Fragment editor and various consoles to manage their content.
 
 Content authors should keep in mind the following best practices.
 
