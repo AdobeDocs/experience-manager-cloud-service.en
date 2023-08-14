@@ -1,6 +1,6 @@
 ---
 title: Overview to Content Transformer
-description: Overview to Content Transformer
+description: Learn how to detect and fix content related issues reported by the BPA using Content Transformer.
 ---
 # Overview {#overview-ct}
 

@@ -47,7 +47,7 @@ The only difference is that the remote git repository is part of Cloud Manager, 
 
 ## Program Types {#program-types}
 
-A user can create a a **production** program or a **sandbox** program.
+A user can create a **production** program or a **sandbox** program.
 
 * A **production program** is created to enable live traffic for your site.
   * See [Introduction to Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more details.
