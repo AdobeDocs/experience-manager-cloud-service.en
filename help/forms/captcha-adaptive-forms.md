@@ -100,7 +100,7 @@ To use reCAPTCHA in adaptive forms:
    >[!NOTE]
    >
    >* Using more than one Captcha component in an adaptive form is not supported. Also, it is not recommended to use CAPTCHA in a panel marked for lazy loading or in a fragment.
-   >* reCaptcha is time-sensitive and expires in about a minute. Therefore, it is recommended to place the Captcha component just before the Submit button in the adaptive form.
+   >* reCaptcha is time-sensitive and expires in about a couple of minutes. Therefore, it is recommended to place the Captcha component just before the Submit button in the adaptive form.
 
 1. Select the Captcha component that you added and tap ![cmppr](assets/cmppr.png) to edit its properties.
 1. Specify a title for the CAPTCHA widget. The default value is **Captcha**. Select **Hide title** if you do not want title to appear.
@@ -204,7 +204,7 @@ To use reCAPTCHA in adaptive forms:
 > 
 > Do not select **[!UICONTROL Default]** from the Captcha service drop-down as the default AEM CAPTCHA service is deprecated.
 
->[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422641/recaptcha-google-adaptive-forms/?quality=12&learn=on)
 
 ### Show or hide CAPTCHA component based on rules {#show-hide-captcha}
 

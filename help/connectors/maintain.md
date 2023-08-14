@@ -1,6 +1,6 @@
 ---
 title: Maintaining an AEM Connector
-description: Maintaining an AEM Connector
+description: Learn how to maintain and update your AEM connector after the initial submission.
 exl-id: 8122a8c8-6577-4907-8f6e-52711eed3970
 ---
 Maintaining an AEM Connector

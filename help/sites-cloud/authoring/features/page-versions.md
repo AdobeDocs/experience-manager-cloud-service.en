@@ -1,6 +1,6 @@
 ---
 title: Working with Page Versions
-description: Create, compare, and restore versions of a page
+description: Learn how to create, compare, and restore versions of your pages in AEM.
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 ---
 # Working with Page Versions {#working-with-page-versions}

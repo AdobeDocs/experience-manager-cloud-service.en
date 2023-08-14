@@ -1,13 +1,13 @@
 ---
-title: Release Notes for Cloud Manager 2023.7.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2023.7.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2023.8.0 in Adobe Experience Manager as a Cloud Service
+description: These are the release notes for Cloud Manager 2023.8.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 ---
 
-# Release Notes for Cloud Manager 2023.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release Notes for Cloud Manager 2023.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager release 2023.7.0 in AEM as a Cloud Service.
+This page documents the release notes for Cloud Manager release 2023.8.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -15,20 +15,46 @@ This page documents the release notes for Cloud Manager release 2023.7.0 in AEM 
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager release 2023.7.0 in AEM as a Cloud Service is 29 June 2023. The next release is planned for 10 August 2023.
+The release date for Cloud Manager release 2023.8.0 in AEM as a Cloud Service is 10 August 2023. The next release is planned for 7 September 2023.
 
 ## What's New {#what-is-new}
 
-* Cards on the Cloud Manager landing page now indicate if [enhanced security](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) is enabled for their programs.
-* If a development [pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) contains no testing steps, users now have the option to include testing steps when they [start the pipeline.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
-  * This will be rolled out in a phased manner.
-* When [cancelling execution,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) the pipeline execution approval step now asks the user to provide a reason for cancelling.
-  * This will be rolled out in a phased manner.
-* Users can now access [logs from the copy content process.](/help/implementing/developing/tools/content-copy.md#accessing-logs)
-  * This option is available only if both the source and destination environments are on AEM version `2023.7.12549` or higher.
+* When configuring a content set to [copy content,](/help/implementing/developing/tools/content-copy.md) [context-aware configurations](/help/implementing/developing/introduction/configurations.md) are now permitted in content sets in the UI.
+* Enhancements were made to improve comprehensibility and surfacing of error messages in Cloud Manager UI.
+
+## Early Adoption Program {#early-adoption}
+
+Be a part of our early adoption program and have a chance to test some upcoming features.
+
+### Self-Service Content Restore {#content-restore}
+
+[A new self-service content restore feature](/help/operations/restore.md) now provides backup restoration for up to seven days and is available to early adopters for evaluation purposes featuring:
+
+* Point-in-time backup restoration for the previous 24 hours
+* Fixed time restorations for up to seven days
+
+If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-restorefrombackup-adopter@adobe.com` from your email associated with your Adobe ID. Please note:
+
+* The early adopter program is limited to development environments only.
+* Availability of the early adopter program of this feature is limited.
+* This feature is for recovering accidentally deleted content and is not intended for disaster recovery.
+
+### Experience Audit Dashboard {#experience-audit-dashboard}
+
+[The Cloud Manager Experience Audit dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) includes a trended view of your page performance scores along with insights and recommendations to help you improve them. Experience Audit is included as a step in the Cloud Manager production pipeline.
+
+The dashboard leverages Google Lighthouse, an open-source, automated tool for improving the quality of your web apps. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more.
+
+Interested in test-driving the new dashboard? Please send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID and we can get you started.
 
 ## Bug Fixes {#bug-fixes}
 
-* Navigating to the authoring UI from Cloud Manager no longer fails to redirect into Unified Shell after login.
-* Editing the go-live date via the go-live widget now navigates to the **Go Live** tab instead of the **Enhanced Security** tab.
-* When starting a copy operation, a user will no longer be able to select an environment where a copy operation is already invoked.
+* The **Environments** menu now closes after triggering the **[Copy Content](/help/implementing/developing/tools/content-copy.md)** modal.
+* [A pipeline re-execution](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment) is no longer allowed if the previous execution does not have a `commitId` set on the build phase state.
+* A more understandable message is now displayed for rare errors when a user clicks on a pipeline in the **Activity** or **Pipeline** screens.
+* The `contentSetName` value is no longer missing in logs and is now provided in the inputs when starting a [content copy](/help/implementing/developing/tools/content-copy.md) operation.
+* It is no longer possible under certain rare circumstances to start two executions from the same pipeline leading to a "stuck" state.
+* When a certificate expires, domain names and IP allow-lists associated with the certificate will no longer be removed from the CDN.
+  * In such cases, the site will continue to be reachable.
+  * [The Cloud Manager UI](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) will provide more visible advance warnings that the SSL certificate is about to expire.
+* A problem with AEM losing access to a publish endpoint was fixed in situations when Sites is added as a solution to an Assets-only program.
