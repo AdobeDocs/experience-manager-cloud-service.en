@@ -484,7 +484,7 @@ Navigate to the folder location for assets displayed in the search results. Sele
 | When searching for visually similar images, an irrelevant image is displayed. | Visual search behavior.| [!DNL Experience Manager] displays as many potentially relevant assets as possible. Less relevant images, if any, are added to the results but with a lower search ranking. The quality of the matches and relevance of searched assets decrease as you scroll down the search results. |
 | When selecting and operating on search results, all searched assets are not operated upon. | The [!UICONTROL Select All] option only selects first 100 search results in card view and first 200 search results in list view. | |
 
-## damAssetLucene-9 for faster search response times {#damAssetLucene-9-faster-response-times}
+## damAssetLucene-9 for faster search response times {#damAssetLucene9-index}
 
 Experience Manager Assets displays facet counts for two properties by default:
 
