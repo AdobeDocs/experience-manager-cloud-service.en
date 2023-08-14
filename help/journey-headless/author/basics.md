@@ -181,6 +181,15 @@ Then confirm with either **Create** or **Create and open**.
 
 You can open a fragment immediately after creating it, or by selecting it from the Content Fragments console (also from the Assets console).
 
+>[!NOTE]
+>
+>Content Fragments are a Sites feature, but are stored as **Assets**. 
+>
+>There are two editors for authoring Content Fragments. 
+>
+>* The new editor, primarily accessed from the **Content Fragments** console.
+>* The original editor, primarily accessed from the **Assets** console. 
+
 When the editor first opens you see:
 
 * top toolbar: for key information, and actions
@@ -276,7 +285,7 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
   
   * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
   
-  * [Variations - Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+  * [Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
   * Publishing
 
@@ -297,6 +306,8 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
     * [Content Fragment Models - Properties](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
     *  [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+
+* [Content Fragments - original editor, from the Assets Console](/help/assets/content-fragments/content-fragments-variations.md)
 
 * Getting Started Guides
   * [Creating an Assets Folder Headless Setup](/help/headless/setup/create-assets-folder.md)
