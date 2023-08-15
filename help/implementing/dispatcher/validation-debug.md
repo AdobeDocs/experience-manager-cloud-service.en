@@ -353,7 +353,7 @@ In flexible mode, other files can also be included, as long as they are in subdi
 | `conf.d/modsec`                     |
 | `conf.d/rewrites`                   |
 
-For example, you can include a file in some newly created directory under `conf.d/includes` directory as follows:
+For example, you can include a file in some newly-created directory under `conf.d/includes` directory as follows:
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf

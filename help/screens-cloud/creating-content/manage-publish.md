@@ -7,7 +7,7 @@ exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
 
 ## Introduction {#introduction}
 
-You can publish content from AEM Screens. The Manage Publication feature allows you to deliver content updates from author to publish to player. You can publish or un-publish content for your entire AEM Screens project or only for one of your channels, location, player, or an application.
+You can publish content from AEM Screens. The Manage Publication feature lets you deliver content updates from author to publish to player. You can publish or un-publish content for your entire AEM Screens project or only for one of your channels, location, player, or an application.
 
 >[!IMPORTANT]
 >After you create you channel or channels in your project, it is mandatory to publish the channels to display the channel/channels in inventory list view in AEM Screens Services Provider.

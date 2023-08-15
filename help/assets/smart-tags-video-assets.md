@@ -61,7 +61,7 @@ Your search results are a combination of video assets with searched keywords in 
 
 ## Moderate video smart tags {#moderate-video-smart-tags}
 
-[!DNL Adobe Experience Manager] allows you to curate the smart tags to:
+[!DNL Adobe Experience Manager] lets you curate the smart tags to:
 
 * remove inaccurate tags assigned to your brand videos.
 

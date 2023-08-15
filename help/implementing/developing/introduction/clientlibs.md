@@ -29,7 +29,7 @@ AEM collects the site's CSS and JavaScript into a single file, in a central loca
 
 ## Front-End Development for AEM as a Cloud Service {#fed-for-aemaacs}
 
-All JavaScript, CSS, and other front-end assets should be maintained in the [ui.frontend module of the AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) The flexibility of the archetype allows you to use your modern web tools of choice to create and manage these resources.
+All JavaScript, CSS, and other front-end assets should be maintained in the [ui.frontend module of the AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) The flexibility of the archetype lets you use your modern web tools of choice to create and manage these resources.
 
 The archetype can then compile the resources into single CSS and JS files, embedding them automatically into a `cq:clientLibraryFolder` in the repository.
 
@@ -82,7 +82,7 @@ In order for the client libraries under `/apps` to be accessible, a proxy servel
    * Type: Boolean
    * Value: `true`
 1. If you need to manage static resources, create a subfolder named `resources` below the client library folder.
-   * If you store static resources anywhere other than under the folder `resources`, they can not be referenced on a publish instance.
+   * If you store static resources anywhere other than under the folder `resources`, theycannot be referenced on a publish instance.
 1. Add source files to the library folder.
    * This is typically done by the front-end build process of the [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * You can organize source files in subfolders if desired.
@@ -106,7 +106,7 @@ Once your client library folder is [configured as required,](#creating-clientlib
 * You have a clientlib in `/apps/myproject/clientlibs/foo`
 * You have a static image in `/apps/myprojects/clientlibs/foo/resources/icon.png`
 
-The `allowProxy` property allows you to request:
+The `allowProxy` property lets you request:
 
 * The clientlib via `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * The static image via `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
