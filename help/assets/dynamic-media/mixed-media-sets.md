@@ -112,7 +112,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
 1. To delete an asset, select the corresponding check box and select **[!UICONTROL Delete Asset]**.
 1. To apply a preset, select **[!UICONTROL Preset]** in the upper right corner and select a preset to apply to the assets.
-1. Select **[!UICONTROL Save]**. Your newly created Mixed Media Set appears in the folder you created it in.
+1. Select **[!UICONTROL Save]**. Your newly-created Mixed Media Set appears in the folder you created it in.
 
 ## Edit Mixed Media Sets {#editing-mixed-media-sets}
 

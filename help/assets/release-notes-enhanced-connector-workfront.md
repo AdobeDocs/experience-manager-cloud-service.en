@@ -83,7 +83,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 <!--
 
-* Workfront enhanced connector now allows you to use new search parameters to be more specific while defining folder names on large repositories.
+* Workfront enhanced connector now lets you use new search parameters to be more specific while defining folder names on large repositories.
 
 -->
 
