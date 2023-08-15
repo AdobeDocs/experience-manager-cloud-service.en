@@ -14,15 +14,28 @@ There are two editors available for Content Fragments. The editor described in t
 * has been developed for headless content delivery (though it can be used for all scenarios)
 * is available from the **Content Fragments** console
 
+This editor provides:
+
+* Auto-saving to prevent accidental loss of edits.
+* In-line uploading of assets as content references,without having to upload them to the Asset DAM first.
+* Preview of the rendered experience delivered by the Content Fragment.
+* Ability to Publish and Unpublish from the editor
+* Ability to view associated language copies in the editor.
+* Ability to view version details in the editor.
+* Ability to view Parent references.
+* A hierarchical view of the Content Fragment, and its references, using the Structure tree.
+
 <!-- CHECK: will this change when the original editor has a toggle? -->
 
 >[!CAUTION]
 >
->The editor described in this section is *only* available in the online Adobe Experience Manager (AEM) as a Cloud Service.
+>The editor described in this section is *only* available in the *online* Adobe Experience Manager (AEM) as a Cloud Service.
 
 >[!CAUTION]
 >
 >To edit a Content Fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contact your system administrator if you are experiencing issues.
+> 
+>For example, if you do not have `edit` permissions the editor will be read-only.
 
 >[!NOTE]
 >

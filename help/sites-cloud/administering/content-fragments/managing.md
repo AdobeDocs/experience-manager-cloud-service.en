@@ -40,6 +40,8 @@ After defining your [Content Fragment Models](#creating-a-content-model) you can
 
 The Content Fragments console provides direct access to your fragments, and related tasks. The Content Fragments console can be directly accessed from the top level of the Global Navigation.
 
+![Global Navigation - Content Fragments console](assets/cf-managing-global-navigation.png)
+
 For detailed further information see:
 
 * [Basic Structure and Handling of the Content Fragments Console](#basic-structure-handling-content-fragments-console)
