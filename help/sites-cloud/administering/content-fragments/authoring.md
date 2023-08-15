@@ -212,7 +212,7 @@ For example:
 
 >[!NOTE]
 >
->Multi line text fields are also indicated by the appropriate [icon](#fields-icons) in the **Fields** panel.
+>Multi line text fields are also indicated by the appropriate [icon](#fields-datatypes-icons) in the **Fields** panel.
 
 ### Full-screen editor - Rich Text {#full-screen-editor-rich-text}
 
@@ -455,8 +455,7 @@ You can also **Unpublish** your fragment from either your:
 
 You can unpublish your fragment from either the editor, or the console. See [Unpublishing a fragment](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) for full details.
 
-
-### Fields (and Icons) {#fields-icons}
+## Fields, Data Types and Icons {#fields-datatypes-icons}
 
 <!-- CHECK: screenshots checked 2023.08.08 -->
 

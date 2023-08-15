@@ -29,8 +29,8 @@ Content fragments contain structured content:
 * Each fragment is based on a [Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).
   * The Content Fragment Model defines the structure of the resulting fragment.
 * Every fragment consists of:
-  * **[Main](#main-and-variations)** - always exists, cannot be deleted
-  * **[Variations](#main-and-variations)** - one, or more, created by the author
+  * **[Main](#main-and-variations)** - an integral part of the fragment that holds the core content; always exists, cannot be deleted
+  * **[Variations](#main-and-variations)** - one, or more, permutations of the content, created by the author
 * The structure can range between:
   * Basic
     * For example, a single, multi line text field.
