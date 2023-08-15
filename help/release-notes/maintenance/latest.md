@@ -9,7 +9,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 13099 {#release-13099}
 
-Summarized below are the continuous improvements for maintenance release 13099, which was publicly released on Aug 16, 2023. This maintenance release is an update from previous maintenance release 12874.
+Summarized below are the continuous improvements for maintenance release 13099, which was publicly released on August 15, 2023. This maintenance release is an update from previous maintenance release 12874.
 
 2023.8.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
