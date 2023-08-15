@@ -16,14 +16,14 @@ There are two editors available for Content Fragments. The editor described in t
 
 This editor provides:
 
-* Auto-saving to prevent accidental loss of edits.
-* In-line uploading of assets as content references,without having to upload them to the Asset DAM first.
-* Preview of the rendered experience delivered by the Content Fragment.
-* Ability to Publish and Unpublish from the editor
-* Ability to view associated language copies in the editor.
-* Ability to view version details in the editor.
-* Ability to view Parent references.
-* A hierarchical view of the Content Fragment, and its references, using the Structure tree.
+* [Auto-saving](#saving-autosaving), to prevent accidental loss of edits.
+* [In-line uploading of assets as content references](#reference-images), without having to upload them to the Asset DAM first.
+* [Preview](#preview-content-fragment) of the rendered experience delivered by the Content Fragment.
+* Ability to [Publish](#publish-content-fragment) and [Unpublish](#unpublish-content-fragment) from the editor.
+* Ability to [view associated language copies](#view-language-copies) in the editor.
+* Ability to [view version details](#view-version-history) in the editor.
+* Ability to [view parent references](#view-references).
+* A hierarchical view of the Content Fragment, and its references, using the [Structure tree](#structure-tree).
 
 <!-- CHECK: will this change when the original editor has a toggle? -->
 
