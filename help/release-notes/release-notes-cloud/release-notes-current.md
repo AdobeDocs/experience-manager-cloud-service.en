@@ -55,6 +55,7 @@ The new Content Fragment editor provides the following benefits that are not ava
 
 * Viewing parent references to help authors understand the impact of their edits
 
+     ![Parent References in Content Fragment Editor](/help/release-notes/assets/newCFEditor_Parentreferences.PNG)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
