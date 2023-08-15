@@ -100,21 +100,21 @@ Now that you have learned about references and structure in Content Fragments, t
 
 ## Additional Resources {#additional-resources}
 
-* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
  
-  * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+  * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
 
     * [Apply the Configuration to your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
   
-    * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+    * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
   
   * [Variations - Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-    * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+    * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
   
-    * [Content Fragment Models - Properties](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+    * [Content Fragment Models - Properties](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
 * Getting Started Guides
   * [Creating an Assets Folder - Headless Setup](/help/headless/setup/create-assets-folder.md)

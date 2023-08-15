@@ -277,13 +277,13 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
   
   * [Rail Selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
-* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
  
-  * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+  * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
 
   * [Apply the Configuration to your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
   
-  * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+  * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
   
   * [Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
@@ -297,15 +297,15 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
 
     * From the **Content Fragments** Console
 
-      * [Publishing and Previewing a Content Fragment](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
+      * [Publishing and Previewing a Content Fragment](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
 
-  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-    * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+    * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
   
-    * [Content Fragment Models - Properties](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+    * [Content Fragment Models - Properties](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
-    *  [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+    *  [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
 * [Content Fragments - original editor, from the Assets Console](/help/assets/content-fragments/content-fragments-variations.md)
 
