@@ -32,9 +32,14 @@ Have a look at the August 2023 Release Overview video for a summary of the featu
 
 ### New features in [!DNL Experience Manager Sites] {#sites-features}
 
-* MSM for Content Fragments. AEM Multisite Manager is now available for Content Fragments, allowing to create Content Fragment Live Copies for bulk content distribution. Granular inheritance controls are available down to Content Fragment Element and Variation level. 
+* The new Content Fragment Editor is now available on AEM as a Cloud Service. It empowers content authors to be more productive by streamlining their authoring tasks and reducing the need to switch between different apps while editing content. 
+![Tagging in Content Fragment Console](/help/assets/content-fragments-console-tags.png)
 
-### New features in [!DNL Experience Manager Sites] prerelease {#prerelease-sites}
+
+
+The new Content Fragment editor provides the following benefits that are not available in the original editor:
+     * Auto-saving for improved authoring efficiency and to prevent accidental loss of edits.
+     * Hierarchical view of a Content Fragment and its references using the Structure tree for quick navigation within a deeply structured fragment.
 
 * The [Content Fragment Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en) now allows users to view tags and search by tags applied as metadata to Content Fragments. Users will no longer have to switch to the Assets UI for this capability, reducing context switching and improving efficiency. 
 
