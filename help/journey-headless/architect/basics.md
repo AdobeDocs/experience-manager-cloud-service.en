@@ -61,7 +61,7 @@ Within a model:
 1. **Data Types** allow you to define the individual attributes.
    For example, define the field holding a teacher's name as **Text** and their years of service as **Number**.
 1. The data types **Content Reference** and **Fragment Reference** allow you to create relationships to other content within AEM.
-1. The **Fragment Reference** data type allows you to realize multiple levels of structure by nesting your Content Fragments (according to the model type). This is vital for your content modeling.
+1. The **Fragment Reference** data type lets you realize multiple levels of structure by nesting your Content Fragments (according to the model type). This is vital for your content modeling.
 
 For example:
 
@@ -107,7 +107,7 @@ Two data types provide references to content outside a specific fragment:
 
 ## Levels of Structure (Nested Fragments) {#levels-of-structure-nested-fragments}
 
-For content modeling the **Fragment Reference** data type allows you to create multiple levels of structure and relationships.
+For content modeling the **Fragment Reference** data type lets you create multiple levels of structure and relationships.
 
 With this reference you can *connect* various Content Fragment Models to represent interrelationships. This allows the headless application to follow the connections and access the content as necessary.
 

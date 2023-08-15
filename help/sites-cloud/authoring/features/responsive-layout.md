@@ -1,13 +1,13 @@
 ---
 title: Responsive Layout
-description: AEM allows you to realize a responsive layout for your pages
+description: AEM lets you realize a responsive layout for your pages
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 ---
 # Responsive Layout {#responsive-layout}
 
-AEM allows you to have a responsive layout for your pages by using the **Layout Container** component.
+AEM lets you have a responsive layout for your pages by using the **Layout Container** component.
 
-This provides a paragraph system that allows you to position components within a responsive grid. This grid can rearrange the layout according to the device/window size and format. The component is used in conjunction with the [**Layout** mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), which allows you to create and edit your responsive layout dependent on device.
+This provides a paragraph system that lets you position components within a responsive grid. This grid can rearrange the layout according to the device/window size and format. The component is used in conjunction with the [**Layout** mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), which lets you create and edit your responsive layout dependent on device.
 
 The layout container:
 
@@ -29,7 +29,7 @@ AEM realizes responsive layout for your pages using a combination of mechanisms:
   Once the layout container is positioned on your page you can use the **Layout** mode to position content within the responsive grid.
 
 * [**Emulator**](#selecting-a-device-to-emulate)
-  This allows you to create and edit responsive websites that rearrange the layout according to device/window size by resizing components interactively. The user can then see how the content is rendered using the emulator.
+  This lets you create and edit responsive websites that rearrange the layout according to device/window size by resizing components interactively. The user can then see how the content is rendered using the emulator.
 
 With these responsive grid mechanisms you can:
 
@@ -53,7 +53,7 @@ Depending on your project, the Layout Container might be used as the default par
 
 When you are creating your website content you want to ensure that your content is displayed appropriate to the device being used to view it.
 
-AEM allows you to define layouts dependent on the width of the device:
+AEM lets you define layouts dependent on the width of the device:
 
 * The emulator enables you to emulate these layouts on a range of devices. In addition to the device type, the orientation, selected by the **Rotate device** option, can impact the breakpoint selected as the width changes.
 * Breakpoints are the points which separate the layout definitions.
@@ -90,7 +90,7 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 
    The emulator toolbar displays additional layout options:
 
-    * **Rotate device** - Allows you to rotate a device from vertical (portrait) orientation to horizontal (landscape) orientation and vice-versa.
+    * **Rotate device** - Lets you rotate a device from vertical (portrait) orientation to horizontal (landscape) orientation and vice-versa.
 
    ![Rotate device landscape button](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![Rotate device portrait button](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
@@ -189,8 +189,8 @@ When in layout mode you can perform various actions on a grid:
   >
   >Proportions and ratios are maintained when components such as **Images** are resized.
 
-* Click/tap on a content component, the toolbar allows you to:
-  * **Parent** - Allows you to select the entire layout container component for taking action on the whole.
+* Click/tap on a content component, the toolbar lets you:
+  * **Parent** - Lets you select the entire layout container component for taking action on the whole.
   * **Float to new line** - The component is moved to a new line, dependent on the space available within the grid.
   * **Hide component** - The component is made invisible (it can be restored from the toolbar of the layout container).
 

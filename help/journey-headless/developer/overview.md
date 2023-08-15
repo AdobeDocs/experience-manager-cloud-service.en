@@ -49,7 +49,7 @@ The following are the personas that interact in this journey.
 
 We will cover many topics in this journey, which will provide you with the foundational knowledge of headless in AEM.
 
-Although you can go directly to a particular part of the journey, many concepts are built on ones in previous articles. We recommend that you start at the beginning and progress sequentially.
+Although you can go directly to a particular part of the journey, many concepts are built on ones in previous articles. Adobe recommends that you start at the beginning and progress sequentially.
 
 |#|Article|Description|
 |---|---|---|
