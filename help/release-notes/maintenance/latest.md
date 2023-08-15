@@ -22,7 +22,7 @@ Summarized below are the continuous improvements for maintenance release 13099, 
 
 ### Fixed Issues {#fixed-issues-13099}
 
-- SITES-14937: Inherit Rollout Configs from Parent value get toggled on hitting Save & Close on live copies.
+- SITES-14937: MSM - Inherit Rollout Configs from Parent value get toggled on hitting Save & Close on live copies.
 - SITES-14847: Content Fragments - Content Fragment Links are not highlighted.
 - SITES-11620: Content Fragments - References path is slightly cut in the UI.
 - SITES-14171: GraphQL - Circular references are not broken for cached data in some cases.
