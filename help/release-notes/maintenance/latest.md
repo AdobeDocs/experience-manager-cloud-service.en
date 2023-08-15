@@ -18,6 +18,7 @@ Summarized below are the continuous improvements for maintenance release 13099, 
 - SITES-13906: GraphQL - Upgrade to graphql-java 20.1.
 - SITES-8972: GraphQL - Add option```label``` in JSON for Enumeration data type.
 - SITES-9689: GraphQL - Add title and description in JSON for Content Reference data type.
+- SITES-13052: Content Fragments - Export Content Fragments to Adobe Target
 
 ### Fixed Issues {#fixed-issues-13099}
 
@@ -30,6 +31,7 @@ Summarized below are the continuous improvements for maintenance release 13099, 
 - SITES-11000: Admin UI - References: Incoming links missing in some pages.
 - SITES-11559: Admin UI - References: Incoming Links shows wrong pages.
 - SITES-14337: Admin UI - Opening editor page produces an error in specific cases.
+- SITES-13425: ContextHub - Menu Bar does not display when clicking ContextHub button.
 - FORMS-9971: When an Adaptive Form is rendered in a different locale, the visibility of components is interpreted and applied inaccurately. 
 - FORMS-9888: When an Adaptive Form is set to redirect to an external URL (thank you page) on form submission, it fails to redirect to the external URL. 
 - FORMS-9845: After clearing a dropdown using the rule editor, the previously provided values persist, despite the supposed clearance.
