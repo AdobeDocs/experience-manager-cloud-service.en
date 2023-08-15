@@ -238,7 +238,7 @@ To create a content fragment:
 
 ## Statuses of Content Fragments {#statuses-content-fragments}
 
-During its existence a Content Fragment can have several statuses, as shown in the [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) and [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md):
+During its existence a Content Fragment can have several statuses, as shown in the [Content Fragment Console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) and [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md):
 
 * **New** (grey)
   A new Content Fragment has been created, but never edited, nor opened, in the Content Fragment editor.
@@ -532,7 +532,7 @@ For example:
 >
 >This functionality is only available in the **Assets** console
 
-The **Compare to Current** action is available from the [Timeline](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) after you have selected a specific version.
+The **Compare to Current** action is available from the Timeline after you have selected a specific version.
 
 This will open:
 
@@ -568,9 +568,9 @@ They will be shown side by side, where:
 
 You can revert to a specific version of your fragment:
 
-* Directly from the [Timeline](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
+* Directly from the Timeline.
 
   Select the required version, then the **Revert to this Version** action.
 
-* While [comparing a version to the current version](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#comparing-fragment-versions) you can **Revert** to the selected version.
+* While comparing a version to the current version you can **Revert** to the selected version.
 -->
