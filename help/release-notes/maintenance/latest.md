@@ -16,7 +16,7 @@ Summarized below are the continuous improvements for maintenance release 13099, 
 ### Enhancements {#enhancements-13099}
 
 - SITES-13906: GraphQL - Upgrade to graphql-java 20.1.
-- SITES-8972: GraphQL - Add option```label``` in JSON for Enumeration data type.
+- SITES-8972: GraphQL - Add option label in JSON for Enumeration data type.
 - SITES-9689: GraphQL - Add title and description in JSON for Content Reference data type.
 - SITES-13052: Content Fragments - Export Content Fragments to Adobe Target
 
