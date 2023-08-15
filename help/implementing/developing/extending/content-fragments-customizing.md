@@ -74,7 +74,7 @@ As with standard assets, a content fragment is held under:
 
 #### Asset Permissions {#asset-permissions}
 
-For further details see [Content Fragment - Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-consideratiions.md).
+For further details see [Content Fragment - Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 #### Feature Integration {#feature-integration}
 
