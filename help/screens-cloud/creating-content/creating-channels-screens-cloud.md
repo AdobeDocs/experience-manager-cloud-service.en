@@ -63,7 +63,7 @@ To add or edit content in a channel, follow the steps below:
 
    ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
-1. The editor allows you to add assets/components to your channel that you want to publish.
+1. The editor lets you add assets/components to your channel that you want to publish.
 
 1. Drag and drop the assets from the left hand side pane and add it to the editor.
 
@@ -85,7 +85,7 @@ The following templates are available while using the **Create** channel wizard:
 
 ## Use default assignment details for channels {#default-channels}
 
-This capability allows you to define a default activation schedule for a channel, and use it by default for every assignment for a display. This provides a method so that the cumbersome schedule definition does not need to be repeated.
+This capability lets you define a default activation schedule for a channel, and use it by default for every assignment for a display. This provides a method so that the cumbersome schedule definition does not need to be repeated.
 
 ### Create default assignment details for a channel {#create-default}
 

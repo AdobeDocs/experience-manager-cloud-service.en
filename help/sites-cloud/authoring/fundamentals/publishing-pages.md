@@ -79,7 +79,7 @@ If you are editing a page, it can be published directly from the editor.
 
 >[!NOTE]
 >
->Pages accessed by [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) in the editor can not be published. Publish options in the editor are only available for pages accessed via their actual paths.
+>Pages accessed by [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) in the editor cannot be published. Publish options in the editor are only available for pages accessed via their actual paths.
 
 ### Publishing from the Console {#publishing-from-the-console}
 
@@ -118,7 +118,7 @@ To publish or unpublish a page using Manage Publication:
 
    ![Selecting pages for publication](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. The **Manage Publication** wizard starts. The first step, **Options**, allows you to:
+1. The **Manage Publication** wizard starts. The first step, **Options**, lets you:
 
    * **Action**
 
@@ -222,7 +222,7 @@ When editing a page, if you wish to unpublish that page, select **Unpublish Page
 
 >[!NOTE]
 >
->Pages accessed by [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) in the editor can not be unpublished. Publish options in the editor are only available for pages accessed via their actual paths.
+>Pages accessed by [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) in the editor cannot be unpublished. Publish options in the editor are only available for pages accessed via their actual paths.
 
 ### Unpublishing from the Console {#unpublishing-from-the-console}
 
