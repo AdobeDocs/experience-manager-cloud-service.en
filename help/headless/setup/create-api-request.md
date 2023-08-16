@@ -13,7 +13,7 @@ Learn how to use the GraphQL API for headless delivery of Content Fragment conte
 
 * [The GraphQL API](/help/headless/graphql-api/content-fragments.md) lets you create requests to access and deliver Content Fragments. This API offers the most robust set of capabilities for querying and consuming Content Fragment content.
    * To use the API, [define and enable endpoints in AEM](/help/headless/graphql-api/graphql-endpoint.md), and if necessary, the [GraphiQL interface installed](/help/headless/graphql-api/graphiql-ide.md).
-* [The Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) allows you to create and modify Content Fragments (and other assets).
+* [The Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) lets you create and modify Content Fragments (and other assets).
 
 The remainder of this guide focuses on GraphQL access and Content Fragment delivery.
 
@@ -49,9 +49,9 @@ GraphiQL is an IDE, included in your AEM environment; it is accessible/visible a
    * directly; for example, `http://localhost:4502/aem/graphiql.html`
 
 1. The GraphiQL IDE is an in-browser query editor for GraphQL. You can use it to build queries to retrieve Content Fragments to deliver them headlessly as JSON.
-   * The drop-down top-right allows you to select the endpoint.
+   * The drop-down top-right lets you select the endpoint.
    * A far-left panel lists the persisted queries (when available)
-   * The middle-left panel allows you to build your query.
+   * The middle-left panel lets you build your query.
    * The middle-right panel displays the results.
    * The query editor features code completion and hotkeys to easily execute the query.
 

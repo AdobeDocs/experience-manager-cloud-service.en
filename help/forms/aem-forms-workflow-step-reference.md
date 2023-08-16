@@ -114,11 +114,11 @@ You can also use the component to control the behavior of the task. For example,
 * **[!UICONTROL Assignee]** &gt; **[!UICONTROL Assign options]**: Specify the method to assign the task to a user. You can dynamically assign the task to a user or a group using the Participant Chooser script or assign the task to a specific AEM user or group.
 * **[!UICONTROL Participant Chooser]**: The option is available when the **[!UICONTROL Dynamically to a user or group]** option is selected in the Assign options field. You can use an ECMAScript or a service to dynamically select a user or a group. For more information, see [Dynamically assign a workflow to the users](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) and [Creating a custom Adobe Experience Manager Dynamic Participant step.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk)
 
-* **[!UICONTROL Participants]**: The field is available when the **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** option is selected in the **[!UICONTROL Participant Chooser]** field. The field allows you to select users or groups for the RandomParticipantChooser option.
+* **[!UICONTROL Participants]**: The field is available when the **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** option is selected in the **[!UICONTROL Participant Chooser]** field. The field lets you select users or groups for the RandomParticipantChooser option.
 
-* **[!UICONTROL Assignee]**: The field is available when the **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** is selected in the **[!UICONTROL Participant Chooser]** field. The field allows you to select a variable of String data type to define the assignee.
+* **[!UICONTROL Assignee]**: The field is available when the **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** is selected in the **[!UICONTROL Participant Chooser]** field. The field lets you select a variable of String data type to define the assignee.
 
-* **[!UICONTROL Arguments]**: The field is available when a script other than the RandomParticipantChoose script is selected in the Participant Chooser field. The field allows you to provide a list of a comma-separated argument for the script selected in the Participant Chooser field.  
+* **[!UICONTROL Arguments]**: The field is available when a script other than the RandomParticipantChoose script is selected in the Participant Chooser field. The field lets you provide a list of a comma-separated argument for the script selected in the Participant Chooser field.  
 
 * **[!UICONTROL User or Group]**: The task is assigned to selected user or group. The option is available when the **[!UICONTROL To a specific user or group option]** is selected in the **[!UICONTROL Assign options]** field. The field lists all the users and groups of the [!DNL workflow-users] group.  
   The **[!UICONTROL User or Group]** drop-down menu lists the users and groups that the logged-in user has access to. The username display depends on if you have access permissions on the **[!UICONTROL users]** node in crx-repository for that particular user. 
@@ -266,7 +266,7 @@ Invoke DDX step has the following properties:
 
 ## Invoke Form Data Model Service step {#invoke-form-data-model-service-step}
 
-You can use [[!DNL AEM Forms] Data Integration](data-integration.md) to configure and connect to disparate data sources. These data sources can be a web service, REST service, OData service, and CRM solution. [!DNL AEM Forms] Data Integration allows you to create a Form Data Model encompassing various services to perform data retrieval, addition, updating operations on the configured database. You can use the **[!UICONTROL Invoke Data Model Service step]** to select a Form Data Model (FDM) and use the services of the FDM to retrieve, update, or add data to disparate data sources.
+You can use [[!DNL AEM Forms] Data Integration](data-integration.md) to configure and connect to disparate data sources. These data sources can be a web service, REST service, OData service, and CRM solution. [!DNL AEM Forms] Data Integration lets you create a Form Data Model encompassing various services to perform data retrieval, addition, updating operations on the configured database. You can use the **[!UICONTROL Invoke Data Model Service step]** to select a Form Data Model (FDM) and use the services of the FDM to retrieve, update, or add data to disparate data sources.
 
 To explain inputs for fields of the step, the following database table and JSON file are used as an example :
 
@@ -329,7 +329,7 @@ The Invoke Form Data Model Service step has the below listed fields to facilitat
 
 * **[!UICONTROL Form Data Model Path]**: Browse and select a Form Data Model present on the server.  
 
-* **[!UICONTROL Errors and Validations]**: The option allows you to capture error messages and specify validation options for data retrieved and sent to data sources. With these changes, you can ensure data passed to Invoke Form Data Model Service step adheres to the data constraints defined by data source. For more details, see [Automated validation of input data](work-with-form-data-model.md#automated-validation-of-input-data)
+* **[!UICONTROL Errors and Validations]**: The option lets you capture error messages and specify validation options for data retrieved and sent to data sources. With these changes, you can ensure data passed to Invoke Form Data Model Service step adheres to the data constraints defined by data source. For more details, see [Automated validation of input data](work-with-form-data-model.md#automated-validation-of-input-data)
 
 * **[!UICONTROL Validation level]**: There are three categories of validations: Basic, Full, and OFF:
 

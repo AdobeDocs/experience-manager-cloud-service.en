@@ -88,7 +88,7 @@ When you select a Live Copy page, the following actions are available:
 * **[Synchronize](overview.md#rollout-and-synchronize)** - Synchronize a Live Copy to pull changes from the source to the Live Copy.
 * **[Reset](creating-live-copies.md#resetting-a-live-copy-page)** - Reset a Live Copy page to remove all inheritance cancellations and return the page to the same state as the source page.
 * **[Suspend](overview.md#suspending-and-cancelling-inheritance-and-synchronization)** - Temporarily deactivates the live relationship between a Live Copy and its blueprint page.
-* **[Resume](creating-live-copies.md#resuming-inheritance-for-a-page)** - Resume allows you to reinstate a suspended relationship.
+* **[Resume](creating-live-copies.md#resuming-inheritance-for-a-page)** - Resume lets you reinstate a suspended relationship.
 * **[Detach](overview.md#detaching-a-live-copy)** - Permanently removes the live relationship between a Live Copy and its blueprint page.
 
 ## Relationship Status {#relationship-status}
@@ -106,6 +106,6 @@ This tab provides detailed information about the status of the relationship betw
 
 ### Live Copy {#live-copy-tab}
 
-This tab allows you to view and edit the Live Copy configuration.
+This tab lets you view and edit the Live Copy configuration.
 
 ![Live Copy tab](../assets/live-copy-relationship-status-live-copy.png)
