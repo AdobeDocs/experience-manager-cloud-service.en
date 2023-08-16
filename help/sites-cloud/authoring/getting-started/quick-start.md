@@ -57,7 +57,7 @@ There are various aspects to finding a page; you can navigate and/or search:
 
    ![View selection drop-down](/help/sites-cloud/authoring/assets/views.png)
 
-1. Navigate up the tree using [the breadcrumb in the header](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), which allows you to return to the selected location:
+1. Navigate up the tree using [the breadcrumb in the header](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), which lets you return to the selected location:
 
    ![Breadcrumb dropdown](/help/sites-cloud/authoring/assets/breadcrumb.png)
 

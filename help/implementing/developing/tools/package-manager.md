@@ -99,7 +99,7 @@ You can access Package Manager in three ways:
 
 Package Manager is divided into four main functional areas:
 
-* **Left Navigation Panel** - This panel allows you to filter and sort the list of packages.
+* **Left Navigation Panel** - This panel lets you filter and sort the list of packages.
 * **Package List** - This is the list of packages on your instance filtered and sorted per selections in the Left Navigation Panel.
 * **Activity Log** - This panel is minimized at first and expands to detail the activity of Package Manager such as when a package is built or installed. There are additional buttons in the Activity Log tab to:
   * **Clear Log**
@@ -389,7 +389,7 @@ Package Manager can perform the following validations:
 
 >[!NOTE]
 >
->Because packages can not be used to deploy code in AEMaaCS, **OSGi Package Imports** validation is unnecessary. 
+>Because packagescannot be used to deploy code in AEMaaCS, **OSGi Package Imports** validation is unnecessary. 
 
 **What's Checked**
 
@@ -411,7 +411,7 @@ To resolve errors due to unsatisfied OSGi bundles, the dependency version in the
 
 >[!NOTE]
 >
->Because packages can not be used to deploy code in AEMaaCS, **Overlays** validation is unnecessary. 
+>Because packagescannot be used to deploy code in AEMaaCS, **Overlays** validation is unnecessary. 
 
 **What's Checked**
 
