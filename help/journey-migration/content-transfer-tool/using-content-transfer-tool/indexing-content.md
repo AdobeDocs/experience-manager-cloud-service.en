@@ -61,5 +61,7 @@ the indexing log.
 
 ## What's Next {#whats-next}
 
-Once you have completed Indexing Content into Target, the migration process will being to index your destination assuming the ingestion was successful. 
-You can view logs of the ingestion and extraction steps and look for details and errors. See [Viewing Logs for a Migration Set](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html) to learn more.
+Once you have completed indexing the destination cloud service instance, you can view logs of the indexing jobs and look for details and
+errors.
+
+The migration is complete. Testing and validation of the destination cloud service instance can begin. 

@@ -175,7 +175,7 @@ Best practices indicate that if an ingestion must be run with wipe=false and "in
 
 ## What's Next {#whats-next}
 
-When the ingestion has completed successfully, AEM indexing will start automatically.  See [Indexing after Migrating Content](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) for more information.
+When the ingestion has succeeded, AEM indexing will start automatically. See [Indexing after Migrating Content](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) for more information.
 
 Once you have completed Ingesting Content into Cloud Service, you can view logs of each step (extraction and ingestion) and look for errors. See [Viewing Logs for a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) to learn more.
 
