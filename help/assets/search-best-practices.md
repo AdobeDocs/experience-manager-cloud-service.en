@@ -41,6 +41,8 @@ Files and folders filter helps you narrow down your search. Use the Files, Filte
 * Use the Folders option when you need to limit your search to folders at a specific path.
 * Use the Files and Folders option if you need to search through all assets available at the specified path within the repository.
 
+![Search using files and folders](assets/files-folders.png)
+
 To achieve the scenario:
 
 1. Specify classic car as the search keyword and click Search. 
@@ -53,33 +55,46 @@ To achieve the scenario:
 
 Experience Manager allows you to use a combination of various operators to enhance your search experience. The supported operators are:  
 
-* AND operator 
-AND operator is the default operator in Omni Search. For example, when you type "classic car" in the search bar, the results with "classic" and "car" keywords appear in your search results, by default.  
+### AND operator {#and-operator}
 
-* OR (^) operator 
-When you want to be specific with the search results and want an option in the search results, you can use the OR operator. For example, the "classic or car" keyword provides search results with the either of keywords in their metadata. 
+AND operator is the default operator in Omni Search. For example, when you type "classic car" in the search bar, the results with "classic" and "car" keywords appear in your search results, by default.
+
+![Search using AND Operator](assets/and-operator.png)
+
+### OR (^) operator {#or-operator}
+
+When you want to be specific with the search results and want an option in the search results, you can use the OR operator. For example, the "classic or car" keyword provides search results with the either of keywords in their metadata.
  
-* Hyphen (-) or exclude operator 
-When you want to retrieve excluding some keywords, you can use the hyphen operator. For example, the "car - classic" keyword provides search results of cars excluding classic. 
+### Hyphen (-) or exclude operator {#hyphen-operator}
 
-* Asterisk (*) operator 
+When you want to retrieve excluding some keywords, you can use the hyphen operator. For example, the "car - classic" keyword provides search results of cars excluding classic.
+
+![Search using Hyphen or Exclude operator](assets/hyphen-operator.png)
+
+### Asterisk (*) operator {#asterisk-operator}
+
 Asterisk is a wildcard operator that is used to broaden your search by typing fewer characters. When you know the starting characters of the asset that you are searching for but do not know the rest, you can use the asterisk operator in your search. For example, the "*car" query returns all the assets with car available in their metadata. The results could be classic car, sports car, classic and sports car, etc. Below are a few examples of using the asterisk operator in various ways: 
-    * car returns assets with the exactly car keyword 
-    * car* returns assets with caring, car, carried, and so on. 
-    * *car returns assets with outcar, sportscar, and so on. 
-    * *car* returns all possible combinations 
 
-* Question mark (?) operator 
+* `car*` returns assets with caring, car, carried, and so on. 
+* `*car` returns assets with outcar, sportscar, and so on. 
+* `*car*` returns all possible combinations 
+
+### Question mark (?) operator {#question-mark-operator} 
+
 The question mark symbol can be used as a conditional operator to ease your search in Experience Manager. 
-    * car??? query does not match any asset
-    * car???? query matches the word running with four characters after car. For example, careful.
-    * ?car query matches the word rerun with one character before car. For example, scar.
+
+* `car???` query does not match any asset
+* `car????` query matches the word with four characters after car. For example, careful.
+* `?car` query matches the word with one character before car. For example, scar.
 
 ## Filters {#filters}
 
-Adobe Experience Manager provides various search filters which you can use to refine and segment your search using a scoped query. You can use search filters with or without typing a keyword. For example, if you need to search for all the PDF-type documents available in your Experience Manager repository, go to search > Click Tools drop drown at the right and choose Timeline.
+Adobe Experience Manager provides various search filters which you can use to refine and segment your search using a scoped query. You can use search filters with or without typing a keyword. To open the filters panel, click **GlobalNav** icon and choose **Filters**.
 
-You can choose one or multiple among various filters to refine your search in Adobe Experience Manager. The following filters are available out of the box for all the users of Experience Manager: 
+![Filters panel](assets/filters.png)
+
+You can choose one or multiple among various filters to refine your search in Adobe Experience Manager. 
+<!--The following filters are available out of the box for all the users of Experience Manager:
 
 * File Type Search Filters  
 * File Size Search Filters 
@@ -95,14 +110,19 @@ You can choose one or multiple among various filters to refine your search in Ad
 * Search by Adobe Stock 
 * Color specific Asset search 
 * Content fragment model 
- 
+ -->
+
 **Scenario 4: Search for an Asset named 'classic car' in Black color which has either meta description or a similar asset in Japanese language.**  
  
 To perform a search on such a requirement, type 'classic car' in the search bar.  Navigate to the filters panel and expand the language search filter drop-down. Type "ja-jp", which represents the Japanese language. Expand the 'Asset Color' filter and select black color or add the hexadecimal code for the black color (#000000).
 
-**Scenario 5: Search for PowerPoint Presentation (PPT) file type with the keyword 'classic car' in it. The added asset is created or modified by a specific author within a particular date range.**
+![Filter example 1](assets/filter-1.png)
 
-To search for the above requirement, type classic car in the search bar. Navigate to filters > File type > Documents > Presentation to search for a PPT file. Select Created By and Last Modified By filters to specify the author name. 
+**Scenario 5: Searching for PDF file type with keyword 'classic car' in it. The added asset is created or modified within a particular date range.**
+
+To search for the above requirement, type classic car in the search bar. Then go to filters > File type > Documents > Presentation to search for PPT file. Moreover, check created by and modified by filters to specify author name. 
+
+![Filter example 2](assets/filter-2.png)
 
 ## Operators + Filters {#operators-filters}
 
@@ -116,7 +136,9 @@ To perform a search for scenario 6:
 2. Navigate to the filters panel and select Documents under File Type. 
 3. Refine your search using the asterisk operator. Type "classic car*" to search all assets that contain the 'classic car' keyword. 
  
-Scenario 7: Search for all documents in the Experience Manager repository that include Car but exclude Classic in their metadata and their content.
+![Search using both operators and filters](assets/operators-filters.png)
+
+**Scenario 7: Search for all documents in the Experience Manager repository that include Car but exclude Classic in their metadata and their content.**
 
 To perform a search for scenario 7: 
 
@@ -124,9 +146,8 @@ To perform a search for scenario 7:
 2. Navigate to filters panel and select Documents under File Type. 
 
 The priority order of search is based on the following: 
-Priority 1: Metadata 
-Priority 2: Smart Tags 
-Priority 3: Operators 
+Priority 1: Metadata
+Priority 2: Smart Tags
 
 You can improve the relevance of keywords for particular assets to help boost searches based on the keywords. In other words, the images for which you promote specific keywords appear at the top of the search results when you search based on these keywords.
 
