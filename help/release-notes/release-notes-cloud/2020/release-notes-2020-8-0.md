@@ -78,7 +78,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
    See [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 
-* Newly created environments in Assets programs will now be automatically configured with Smart Content Services.
+* Newlycreated environments in Assets programs will now be automatically configured with Smart Content Services.
 
 * Hibernated environments can be de-hibernated from the Cloud Manager's **Overview** page.
 

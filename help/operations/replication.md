@@ -1,6 +1,6 @@
 ---
 title: Replication
-description: Distribution and troubleshooting replication.
+description: Learn about distribution and troubleshooting replication in AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 ---
 # Replication {#replication}
@@ -58,7 +58,7 @@ Alternatively, you can create a Workflow Model that uses the `Publish Content Tr
 1. From the AEM as a Cloud Service homepage, go to **Tools - Workflow - Models**.
 1. In the Workflow Models page, press **Create** in the upper right corner of the screen.
 1. Add a title and a name to your model. For more information, see [Creating Workflow Models](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
-1. Select the newly created model from the list, and press **Edit**
+1. Select the newly-created model from the list, and press **Edit**
 1. In the following window, drag and drop the Process Step to the current model flow:
    
    ![Process Step](/help/operations/assets/processstep.png)

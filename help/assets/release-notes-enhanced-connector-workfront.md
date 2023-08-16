@@ -9,13 +9,16 @@ The following section outlines the general Release Notes for [!DNL Workfront for
 
 ## Release Date {#release-date}
 
-The release date for the latest version 1.9.11 of [!DNL Workfront for Experience Manager enhanced connector] is June 19, 2023.
+The release date for the latest version 1.9.12 of [!DNL Workfront for Experience Manager enhanced connector] is August 9, 2023.
 
 ## Release highlights {#release-highlights}
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following updates:
 
-* When you have advanced networking configured, there are issues while sending content from Adobe Workfront to AEM as a Cloud Service.
+* Unable to create linked folders in Experience Manager, as there is no user account associated with the linked folder.
+
+* Race conditions during metadata updates for an asset in Experience Manager.
+
 
 >[!NOTE]
 >
@@ -24,7 +27,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 >[!IMPORTANT]
 >
->Adobe recommends you [upgrade to the latest 1.9.11 version](/help/assets/workfront-connector-install.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recommends you [upgrade to the latest 1.9.12 version](/help/assets/workfront-connector-install.md) of the [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Known Issues {#known-issues}
 
@@ -33,6 +36,11 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** dropdown list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** drop-down list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** drop-down list and the **[!UICONTROL Document Actions]** drop-down list available in the new Workfront experience.
 
 ## Previous releases {#previous-releases}
+
+### June 2023 release {#june-2023-release}
+
+* When you have advanced networking configured, there are issues while sending content from Adobe Workfront to AEM as a Cloud Service.
+
 
 ### May 2023 release {#may-2023-release}
 
@@ -75,7 +83,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 <!--
 
-* Workfront enhanced connector now allows you to use new search parameters to be more specific while defining folder names on large repositories.
+* Workfront enhanced connector now lets you use new search parameters to be more specific while defining folder names on large repositories.
 
 -->
 

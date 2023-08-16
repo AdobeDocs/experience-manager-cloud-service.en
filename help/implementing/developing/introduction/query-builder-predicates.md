@@ -1,6 +1,6 @@
 ---
 title: Query Builder Predicate Reference
-description: Predicate reference for the Query Builder API.
+description: Predicate reference for the Query Builder API in AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 ---
 # Query Builder Predicate Reference {#query-builder-predicate-reference}

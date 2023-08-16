@@ -1,6 +1,6 @@
 ---
 title: Using Best Practices Analyzer
-description: Using Best Practices Analyzer
+description: Learn how to use the Best Practices Analyzer in order to understand upgrade readiness.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 ---
 # Using Best Practices Analyzer {#using-best-practices-analyzer}

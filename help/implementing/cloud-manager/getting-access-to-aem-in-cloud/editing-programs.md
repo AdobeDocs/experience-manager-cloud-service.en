@@ -57,7 +57,7 @@ If your production program had enhanced security enabled, an additional **Enhanc
 
 ![Enhanced Security active for a program](assets/edit-program-enhanced.png)
 
-This setting can not be modified once the program is created. For more information about the enhanced security option, see [Creating Production Programs](creating-production-programs.md) document.
+This settingcannot be modified once the program is created. For more information about the enhanced security option, see [Creating Production Programs](creating-production-programs.md) document.
 
 ## Deleting Sandbox Programs {#delete-sandbox-program}
 
@@ -83,4 +83,4 @@ Alternatively you can click the ellipsis button on your program's card from the 
 
 >[!NOTE]
 >
->Only sandbox programs can be deleted. Production programs can not be deleted.
+>Only sandbox programs can be deleted. Production programscannot be deleted.
