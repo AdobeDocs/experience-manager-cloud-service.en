@@ -394,7 +394,7 @@ They are shown side by side, where:
   * Inserted text - green
   * Replaced text - blue
 
-* The full-screen icon allows you to open either version on its own; then toggle back to the parallel view
+* The full-screen icon lets you open either version on its own; then toggle back to the parallel view
 * You can **Revert** to the specific version
 * **Done** will return you to the console
 

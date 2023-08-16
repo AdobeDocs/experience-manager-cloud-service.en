@@ -19,7 +19,7 @@ When [editing a page](/help/sites-cloud/authoring/fundamentals/editing-content.m
 
 ### Structure Pages {#structure-pages}
 
-Pages can not be named `structure`. Pages that are named `structure` will not be editable in the page editor.
+Pagescannot be named `structure`. Pages that are named `structure` will not be editable in the page editor.
 
 ## CSS Limitations {#css-limitations}
 

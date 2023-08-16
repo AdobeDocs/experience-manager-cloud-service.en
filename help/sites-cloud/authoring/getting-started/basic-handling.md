@@ -14,7 +14,7 @@ This document is designed to give an overview of basic handling when using the A
 
 ## A Touch-Enabled UI {#a-touch-enabled-ui}
 
-AEM's user interface is enabled for touch. A touch-enabled interface allows you to use touch to interact with the software through gestures such as tap, touch-and-hold, and swipe. Because the AEM UI is touch-enabled, you can use the touch gestures on your touch devices such as your mobile phone or tablet. However mouse actions on a traditional desktop device are also available, giving you flexibility in how you choose to author your content.
+AEM's user interface is enabled for touch. A touch-enabled interface lets you use touch to interact with the software through gestures such as tap, touch-and-hold, and swipe. Because the AEM UI is touch-enabled, you can use the touch gestures on your touch devices such as your mobile phone or tablet. However mouse actions on a traditional desktop device are also available, giving you flexibility in how you choose to author your content.
 
 ## First Steps {#first-steps}
 
@@ -287,7 +287,7 @@ In all views, all items can be deselected by tapping escape on the keyboard if y
 
 ![Column view](/help/sites-cloud/authoring/assets/column-view.png)
 
-The column view allows for a visual navigation of a content tree through a series of cascading columns. This view allows you to visualize and traverse the tree structure of your website.
+The column view allows for a visual navigation of a content tree through a series of cascading columns. This view lets you visualize and traverse the tree structure of your website.
 
 Selecting a resource in the leftmost column will display the child resources in a column to the right. Selecting a resource in the right column will then display the child resources in another column to the right and so on.
 
@@ -412,7 +412,7 @@ The timeline can be used to view and/or initiate events that have occurred on th
 
 ![Timeline tree](/help/sites-cloud/authoring/assets/timeline.png)
 
-The timeline column allows you to:
+The timeline column lets you:
 
 * View various events related to a selected item.
 

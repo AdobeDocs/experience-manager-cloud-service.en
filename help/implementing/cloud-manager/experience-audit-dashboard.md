@@ -53,7 +53,7 @@ The **Insights** tab provides a brief description of actionable recommendations 
 
 Tap or click the **Show More** button to open the full dashboard.
 
-In the **Insights &amp; recommendations** section, you find a detailed listing of actionable recommendations with a clear value indicator tied to gains that can be expected in performance, along with the impacted percentage of pages. This allows you to easily prioritize these recommendations for your teams.
+In the **Insights &amp; recommendations** section, you find a detailed listing of actionable recommendations with a clear value indicator tied to gains that can be expected in performance, along with the impacted percentage of pages. This lets you easily prioritize these recommendations for your teams.
 
 ![Insights and recommendations](assets/insights-recommendations.png)
 
@@ -99,7 +99,7 @@ The **Issues** tab summarizes any performance problems detected in the code of t
 
 Tap or click the **Show More** button to open the full dashboard.
 
-In the **Insights &amp; recommendations** section, you find a more detail listing of actionable recommendations with a clear value indicator tied to gains that can be expected in performance, along with the impacted percentage of pages. This allows you to easily prioritize these recommendations for your teams.
+In the **Insights &amp; recommendations** section, you find a more detail listing of actionable recommendations with a clear value indicator tied to gains that can be expected in performance, along with the impacted percentage of pages. This lets you easily prioritize these recommendations for your teams.
 
 ![Insights and recommendations](assets/insights-recommendations.png)
 

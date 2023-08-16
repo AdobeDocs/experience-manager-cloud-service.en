@@ -56,7 +56,7 @@ You can create an Adaptive Form Fragment from scratch or save a panel in an exis
 
 In edit mode, you can drag-and-drop any Adaptive Form component from the AEM sidekick onto the fragment. <!-- For information about Adaptive Form components, see Introduction to authoring Adaptive Forms. -->
 
-In addition, if you selected an XML schema or XDP form template as the form model for your fragment, a new tab displaying the form-model hierarchy appears in the content finder. It allows you to drag-and-drop form-model elements onto the fragment. The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD.
+In addition, if you selected an XML schema or XDP form template as the form model for your fragment, a new tab displaying the form-model hierarchy appears in the content finder. It lets you drag-and-drop form-model elements onto the fragment. The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD.
 
 ### Save panel as a fragment {#save-panel-as-a-fragment}
 

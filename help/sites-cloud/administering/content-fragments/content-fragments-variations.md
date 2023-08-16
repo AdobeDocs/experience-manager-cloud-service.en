@@ -114,7 +114,7 @@ The format can be selected when the full-screen editor.
 
 ### Rich Text {#rich-text}
 
-Rich text editing allows you to format:
+Rich text editing lets you format:
 
 * Bold
 * Italic
@@ -151,7 +151,7 @@ Plain Text allows for rapid entry of content without formatting or markdown info
 >
 >For full information see the [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md) documentation.
 
-This allows you to format your text using markdown. You can define:
+This lets you format your text using markdown. You can define:
 
 * Headings
 * Paragraphs and Line Breaks
@@ -470,7 +470,7 @@ To delete an existing variation:
 
 **Master** is an integral part of a content fragment and by definition it holds the master copy of the content, whereas the variations hold the individual updated and tailored versions of that content. When Master is updated it is possible that these changes are also relevant to the variations and, therefore, need to be propagated to them..
 
-When editing a variation you have access to the action for synchronizing the current element of the variation with Master. This allows you to automatically copy changes made to Master to the required variation.
+When editing a variation you have access to the action for synchronizing the current element of the variation with Master. This lets you automatically copy changes made to Master to the required variation.
 
 >[!CAUTION]
 >

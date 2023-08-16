@@ -44,7 +44,7 @@ As with most systems, you need to log on. As an author you are provided with:
 * Password
 * Link to access the login screen
 
-Your account will have been configured with any privileges that you need. If you have any issues, we recommend that you contact your in-house project support team.
+Your account will have been configured with any privileges that you need. If you have any issues, Adobe recommends that you contact your in-house project support team.
 
 ### Navigation {#navigation}
 

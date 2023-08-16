@@ -16,7 +16,7 @@ hidefromtoc: yes
 | Applies to     | ✅ Adaptive Form Core Components, ❎ [Adaptive Form Foundation Components](/help/forms/configuring-submit-actions.md)          |
 
 
-A Submit Action allows you to choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. Forms as a Cloud Service, for Adaptive Forms based on Core Components, offers an array of pre-built Submit Actions. These out-of-the-box submit actions empower you to: 
+A Submit Action lets you choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. Forms as a Cloud Service, for Adaptive Forms based on Core Components, offers an array of pre-built Submit Actions. These out-of-the-box submit actions empower you to: 
 
 * Effortlessly send form data via email.
 * Initiate Microsoft Power Automate flows or AEM Workflows while transmitting the data.

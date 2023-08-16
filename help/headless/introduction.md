@@ -57,7 +57,7 @@ There are several resources available to get started with AEM's headless feature
 
 ## Comparing Headful and Headless {#headful-headless}
 
-This guide focuses on the full headless implementation model of AEM. However headful versus headless need not be a binary choice in AEM. Headless features can be used to manage and deliver content to multiple touch-points, while also enabling content authors to edit single page applications. All in AEM.
+This guide focuses on the full headless implementation model of AEM. However, headful versus headless does not need to be a binary choice in AEM. Headless features can be used to manage and deliver content to multiple touch-points, while also enabling content authors to edit single page applications. All in AEM.
 
 >[!TIP]
 >

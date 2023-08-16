@@ -42,7 +42,7 @@ Have a look at the October 2022 Release Overview video for a summary of the feat
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* Experience Manager Assets now allows you to upload documents in other supported format types and[ preview them using the included Document Cloud viewer](/help/assets/manage-pdf-documents.md). The supported format types include TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, and XLSX.
+* Experience Manager Assets now lets you upload documents in other supported format types and[ preview them using the included Document Cloud viewer](/help/assets/manage-pdf-documents.md). The supported format types include TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, and XLSX.
 
   ![PDF rendition for other formats](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -59,7 +59,7 @@ Have a look at the October 2022 Release Overview video for a summary of the feat
 
 ### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms}
 
-* **Adaptive Forms template editor**: Template editor allows you to pre-define the basic structure and appearance of Adaptive Forms of an organization. This release brings following improvements to the template editor:
+* **Adaptive Forms template editor**: Template editor lets you pre-define the basic structure and appearance of Adaptive Forms of an organization. This release brings following improvements to the template editor:
   * **[Form Data Model in template editor](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: You can associate a Form Data Model schema to an Adaptive Form template in the template editor. It helps reduce the time taken to create an Adaptive Form. The option is also added to Adaptive Forms editor to allows users to select or change Form Data Model for existing forms.
   * **[Document of Record in template editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: You can now standardize Document of Record generation for all forms created using a template. This helps enhance compliance and standardization for org requirements.
 

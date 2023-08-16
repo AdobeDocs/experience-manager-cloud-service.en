@@ -34,7 +34,7 @@ CRXDE Lite's user interface has many parts and has many functions.
 
 ### Top switcher bar {#top-switcher-bar}
 
-The Top Switcher Bar allows you to quickly switch between CRXDE Lite and [Package Manager.](package-manager.md)
+The Top Switcher Bar lets you quickly switch between CRXDE Lite and [Package Manager.](package-manager.md)
 
 ### Node Path Widget {#node-path-widget}
 
@@ -138,7 +138,7 @@ The **Rename Button** renames the selected node.
 
 ### Mixins {#mixins-button}
 
-The **Mixins Button** allows you to add mixin types to the node type. The mixin types are mostly used to add advanced features.
+The **Mixins Button** lets you add mixin types to the node type. The mixin types are mostly used to add advanced features.
 
 ### Tools {#tools-button}
 
@@ -186,7 +186,7 @@ You can now adapt the node to your needs by modifying properties or creating new
 >
 >Most of the edit operations, including **Create Node**, keeps all the changes in memory, and only stores them in the repository upon saving (using the [**Save All Button**](#save-all-button)). However some operations such as move are automatically persisted.
 >
->The validation with regard to whether the newly created node is allowed by the node type of the parent node is also carried out by the repository when saving changes. If you receive an error message while saving a node, check if the content structure is valid (for example, you cannot create an `nt:unstructured` node as a child of `nt:folder` node).
+>The validation with regard to whether the newly-created node is allowed by the node type of the parent node is also carried out by the repository when saving changes. If you receive an error message while saving a node, check if the content structure is valid (for example, you cannot create an `nt:unstructured` node as a child of `nt:folder` node).
 
 ## Creating a Property {#creating-a-property}
 

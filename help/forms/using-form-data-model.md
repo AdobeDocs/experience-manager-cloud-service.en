@@ -82,7 +82,7 @@ For more information, see:
 
 ## Preview with sample data {#preview-ic}
 
-Form Data Model editor allows you to generate and edit sample data for data model objects in the form data model. You can use this data to preview and test <!--interactive communications and--> Adaptive Forms. You must generate the sample data before previewing as described in [Work with form data model](work-with-form-data-model.md#sample).
+Form Data Model editor lets you generate and edit sample data for data model objects in the form data model. You can use this data to preview and test <!--interactive communications and--> Adaptive Forms. You must generate the sample data before previewing as described in [Work with form data model](work-with-form-data-model.md#sample).
 
 <!--To preview an interactive communication with sample Form Data Model data:
 
@@ -133,7 +133,7 @@ You can also submit form attachments to a data source using binary data model ob
 
 ## Invoke services in Adaptive Forms using rules {#invoke-services}
 
-In an Adaptive Form based on a form data model, you can [create rules](rule-editor.md) to invoke services configured in the form data model. The **[!UICONTROL Invoke Services]** operation in a rule lists all available services in the Form Data Model and allows you to select input and output fields for the service. You can also use the **[!UICONTROL Set Value]** rule type to invoke a Form Data Model service and set the value of a field to the output returned by the service.
+In an Adaptive Form based on a form data model, you can [create rules](rule-editor.md) to invoke services configured in the form data model. The **[!UICONTROL Invoke Services]** operation in a rule lists all available services in the Form Data Model and lets you select input and output fields for the service. You can also use the **[!UICONTROL Set Value]** rule type to invoke a Form Data Model service and set the value of a field to the output returned by the service.
 
 For example, the following rule invokes a get service that takes Employee Id as input and the values returned are populated in the corresponding Dependent Id, Last Name, First Name, and Gender fields in the form.
 
