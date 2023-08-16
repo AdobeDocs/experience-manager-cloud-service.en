@@ -133,3 +133,9 @@ Follow these steps to add users for whom federated IDs already exist.
 1. Click **Save** and a welcome email is sent to the user you added.
 
 The invited user will now receive the notifications. Repeat these steps for the users on your team that you would like to receive notifications.
+
+## Additional Resources {#additional-resources}
+
+The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
+
+* [Actions Center](/help/operations/actions-center.md) - Leverage the Actions Center to conveniently take action on incidents and other important information.
