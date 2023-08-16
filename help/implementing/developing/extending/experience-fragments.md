@@ -164,7 +164,7 @@ For these use cases, AEM provides the Link Rewriter Provider Interface.
 
 ### Link Rewriter Provider Interface {#link-rewriter-provider-interface}
 
-For more complicated cases, not covered by the [default](#default-link-rewriting), AEM offers the Link Rewriter Provider Interface. This interface is a `ConsumerType` interface that you can implement in your bundles, as a service. It bypasses the modifications AEM performs on internal links of an HTML offer as rendered from an Experience Fragment. This interface allows you to customize the process of rewriting internal HTML links to align with your business needs.
+For more complicated cases, not covered by the [default](#default-link-rewriting), AEM offers the Link Rewriter Provider Interface. This interface is a `ConsumerType` interface that you can implement in your bundles, as a service. It bypasses the modifications AEM performs on internal links of an HTML offer as rendered from an Experience Fragment. This interface lets you customize the process of rewriting internal HTML links to align with your business needs.
 
 Examples of use cases for implementing this interface as a service include:
 
