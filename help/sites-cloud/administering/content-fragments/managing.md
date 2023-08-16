@@ -29,7 +29,7 @@ After defining your [Content Fragment Models](#creating-a-content-model) you can
 >
 >Content fragments can be used:
 >
->* for [Headless Content Delivery using Content Fragments with GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md),
+>* for [Headless Content Delivery using Content Fragments with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
 >* when authoring pages; see [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!NOTE]
