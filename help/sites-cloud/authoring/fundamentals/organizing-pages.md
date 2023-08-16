@@ -400,7 +400,7 @@ The status of asynchronous jobs can be checked in the [**Async Jobs Status** das
 
     * **Do you want to archive pages before deletion?** - If checked, versions of the pages selected for deletion are created on deletion.
       * [Versions can be restored at a later date](/help/sites-cloud/authoring/features/page-versions.md).
-      * Pages deleted without previous versions can not be restored.
+      * Pages deleted without previous versions cannot be restored.
     * **Cancel** to abort the action
     * **Delete** to confirm the action:
 

@@ -1,6 +1,6 @@
 ---
 title: Deploying to AEM as a Cloud Service
-description: Deploying to AEM as a Cloud Service 
+description: Learn about the fundamentals and best practices of deploying to AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 ---

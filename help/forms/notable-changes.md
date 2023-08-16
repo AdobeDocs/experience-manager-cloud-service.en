@@ -6,12 +6,6 @@ contentOwner: khsingh
 ---
 # Notable changes for existing Adobe Experience Manager 6.5 Forms users  {#notable-changes-for-existing-AEM-Forms-users}
 
-| Version | Article link |
-| -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html)                  |
-| AEM as a Cloud Service     | This article        |
-
-
 Adobe Experience Manager Forms as a Cloud Service brings some notable changes to existing features in comparison to Adobe Experience Manager Forms On-Premise and [!DNL Adobe-Managed Service] environments. The key differences are listed below:
 
 ## Cloud native capabilities

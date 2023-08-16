@@ -20,7 +20,7 @@ There are three categories of tests supported by Cloud Manager for Cloud Service
 
 1. [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   * Experience audit testing is enabled in all Cloud Manager production pipelines and can not be skipped.
+   * Experience audit testing is enabled in all Cloud Manager production pipelines andcannot be skipped.
 
 These tests can be:
 

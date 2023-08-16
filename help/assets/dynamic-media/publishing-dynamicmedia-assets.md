@@ -1,6 +1,6 @@
 ---
 title: Publish Dynamic Media assets
-description: Learn how to publish Dynamic Media assets.
+description: Learn how to publish Dynamic Media video and image assets so you can include them in a web page by way of a URL or embedding code on a web page.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User

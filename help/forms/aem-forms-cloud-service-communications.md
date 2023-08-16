@@ -6,7 +6,7 @@ exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 
 # Use synchronous processing {#sync-processing-introduction}
 
-Forms as a Cloud Service - Communications APIs allows you to create, assemble, and deliver brand-oriented and personalized communications such as business correspondences, documents, statements, claim processing letters, benefit notices, claim processing letters, monthly bills, and welcome kits. You can use Communications APIs to combine a template (XFA or PDF) with customer data to generate documents in PDF, PS, PCL, DPL, IPL, and ZPL formats.
+Forms as a Cloud Service - Communications APIs lets you create, assemble, and deliver brand-oriented and personalized communications such as business correspondences, documents, statements, claim processing letters, benefit notices, claim processing letters, monthly bills, and welcome kits. You can use Communications APIs to combine a template (XFA or PDF) with customer data to generate documents in PDF, PS, PCL, DPL, IPL, and ZPL formats.
 
 Consider a scenario where you have one or more templates and multiple records of XML data for each template. You can use Communications APIs to generate a print document for each record. <!-- You can also combine the records into a single document. --> The result is a non-interactive PDF document. A non-interactive PDF document does not let users enter data into its fields.
 

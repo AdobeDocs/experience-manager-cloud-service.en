@@ -9,7 +9,7 @@ exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html)                  |
 | AEM as a Cloud Service     | This article        |
 
 
@@ -45,7 +45,7 @@ Use forms-centric workflows to automate the processing and routing of form data 
 
 ## Optimize forms performance 
 
-The service integrates with Adobe Analytics that allows you to capture and track performance metrics for your published forms. The objective behind analyzing these metrics is to make informed decisions based on data about the changes required to make forms or document more usable. You can use Adobe Analytics to discover interaction patterns and problems users face while using adaptive forms. 
+The service integrates with Adobe Analytics that lets you capture and track performance metrics for your published forms. The objective behind analyzing these metrics is to make informed decisions based on data about the changes required to make forms or document more usable. You can use Adobe Analytics to discover interaction patterns and problems users face while using adaptive forms. 
 
 
 ## Get started {#key-features}
