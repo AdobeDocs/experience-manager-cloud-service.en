@@ -41,7 +41,7 @@ Similar to how you can publish and unpublish pages pages, you can perform the fo
 
 * Activate individual tags.
 
-  Just as with pages, newly created tags will need to be activated before they become available on the publish environment.
+  Just as with pages, newly-created tags will need to be activated before they become available on the publish environment.
 
 >[!NOTE]
 >

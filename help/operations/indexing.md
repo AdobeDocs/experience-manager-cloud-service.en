@@ -81,7 +81,7 @@ To illustrate the deployment of a customized version of the out-of-the-box index
 1. Create a new folder with the updated index name in the `ui.apps` directory: 
     * Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-2. Add a configuration file `.content.xml` with the custom configurations inside the newly created folder. Below is an example of a customization:
+2. Add a configuration file `.content.xml` with the custom configurations inside the newly-created folder. Below is an example of a customization:
     Filename: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
     ```xml

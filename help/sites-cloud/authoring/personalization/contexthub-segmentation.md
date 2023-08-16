@@ -11,7 +11,7 @@ Depending on the information you have already collected about your site visitors
 
 These segments are then used to provide a visitor with specifically targeted content. [Activities](activities.md) defined here can be included on any page and define which visitor segment the specialized content is applicable for.
 
-AEM allows you to easily personalize your users' experiences. It also allows you to verify the results of your segment definitions.
+AEM lets you easily personalize your users' experiences. It also lets you verify the results of your segment definitions.
 
 ## Accessing Segments {#accessing-segments}
 
@@ -23,8 +23,8 @@ To access your segments, in global navigation select **Navigation &gt; Personali
 
 ## Segment Editor {#segment-editor}
 
-<!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the list of segments and click the **Edit** button.
+<!--The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
+The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the list of segments and click the **Edit** button.
 
 ![Segment editor](../assets/contexthub-segment-editor.png)
 
@@ -95,7 +95,7 @@ To define your new segment:
     * Minimum value: `0`
     * Maximum value: `1000000`
 
-1. From the segments console, edit your newly created segment to open it in the segment editor.
+1. From the segments console, edit your newly-created segment to open it in the segment editor.
 1. Drag a comparison or reference to the segment editor it will appear in the default AND container.
 1. Double-click on or tap the configure option of the new reference or segment to edit the specific parameters. In this example, we are testing for people in Basel.
 

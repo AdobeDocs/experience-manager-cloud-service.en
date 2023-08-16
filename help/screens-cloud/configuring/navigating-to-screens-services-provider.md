@@ -41,7 +41,7 @@ Follow the steps below to set up Screens Services Provider:
 
    ![image](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-6. Screens Content Provider opens in another tab that allows you to create your content.
+6. Screens Content Provider opens in another tab that lets you create your content.
 
    ![image](/help/screens-cloud/assets/configure/configure-screens2.png)
 

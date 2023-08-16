@@ -9,14 +9,14 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 13099 {#release-13099}
 
-Summarized below are the continuous improvements for maintenance release 13099, which was publicly released on Aug 16, 2023. This maintenance release is an update from previous maintenance release 12874.
+Summarized below are the continuous improvements for maintenance release 13099, which was publicly released on August 15, 2023. This maintenance release is an update from previous maintenance release 12874.
 
 2023.8.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
 ### Enhancements {#enhancements-13099}
 
 - SITES-13906: GraphQL - Upgrade to graphql-java 20.1.
-- SITES-8972: GraphQL - Add option```label``` in JSON for Enumeration data type.
+- SITES-8972: GraphQL - Add option label in JSON for Enumeration data type.
 - SITES-9689: GraphQL - Add title and description in JSON for Content Reference data type.
 - SITES-13052: Content Fragments - Export Content Fragments to Adobe Target
 
