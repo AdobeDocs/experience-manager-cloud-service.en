@@ -104,11 +104,11 @@ Now that you have learned about references and structure in Content Fragments, t
  
   * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
 
-    * [Apply the Configuration to your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+    * [Apply the Configuration to your Assets Folder](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
   
     * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
   
-  * [Variations - Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+  * [Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/authoring.md)
 
   * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 

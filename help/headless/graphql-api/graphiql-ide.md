@@ -15,7 +15,7 @@ An implementation of the standard [GraphiQL](https://graphql.org/learn/serving-o
 >In previous releases, a package was needed to install the GraphiQL IDE. If you have this installed, it can now be removed.
 
 >[!NOTE]
->You must have [configured your endpoints](/help/headless/graphql-api/graphql-endpoint.md) in the [configuration browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) before using the GraphiQL IDE.
+>You must have [configured your endpoints](/help/headless/graphql-api/graphql-endpoint.md) in the [configuration browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) before using the GraphiQL IDE.
 
 The **GraphiQL** tool lets you test and debug your GraphQL queries by enabling you to:
 * select the **Endpoint** appropriate to the Sites configuration that you want to use for your queries

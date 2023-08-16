@@ -78,4 +78,4 @@ Various keyboard shortcuts are available throughout AEM. Some apply to the use o
 
 ## Keyboard Shortcuts for the Content Fragments Console {#keyboard-shortcuts-for-the-content-fragments-console}
 
-Some keyboard shortcuts are applicable to the [Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
+Some keyboard shortcuts are applicable to the [Content Fragments console](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
