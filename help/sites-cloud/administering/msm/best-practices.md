@@ -76,7 +76,7 @@ MSM can assist in the creation of multilingual websites in two ways:
 When creating language masters keep in mind the following:
 
 * While MSM itself **does not provide content translation**, it can be integrated with third-party translation connectors that do. Note the following:
-  * MSM allows you to cancel inheritance at the page and/or component level. This helps prevent overwriting translated content (from a Live Copy, with not-yet-translated content from a blueprint) on the next rollout.
+  * MSM lets you cancel inheritance at the page and/or component level. This helps prevent overwriting translated content (from a Live Copy, with not-yet-translated content from a blueprint) on the next rollout.
     * Some third-party translation connectors automate this management of MSM inheritances.
     * Check with your translation service provider for more information.
     * An alternative approach for creating and translating language masters is to use language copies in conjunction with AEM's out-of-the-box translation integration framework.
@@ -107,9 +107,9 @@ When considering moving pages in a Live Copy, consider the following best practi
    * Do not add other actions to this configuration.
 1. Position the new configuration.
    * To fully roll out the page move while deleting respective pages at their old location in the Live Copy:
-     * Position the newly created configuration before the standard rollout configuration. The standard rollout configuration will take care of deleting the pages in their old locations.
+     * Position the newly-created configuration before the standard rollout configuration. The standard rollout configuration will take care of deleting the pages in their old locations.
      * To roll out the page move while keeping respective pages in their old locations in the Live Copies (essentially duplicating the content):
-       * Position the newly created configuration after the standard rollout configuration. This will ensure no content is deleted in the Live Copy or deactivated from publish.
+       * Position the newly-created configuration after the standard rollout configuration. This will ensure no content is deleted in the Live Copy or deactivated from publish.
 
 ## Customizing Rollouts {#customizing-rollouts}
 
@@ -134,7 +134,7 @@ Therefore, it is recommended that you only use `onModify` triggers if the benefi
 
 ### Node Types/Properties {#node-types-properties}
 
-In addition to customizing rollout actions, MSM also allows you to customize node properties that are being rolled out. The [MSM OSGi configuration allows you to exclude node types](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) from being copied from the source to the Live Copy.
+In addition to customizing rollout actions, MSM also lets you customize node properties that are being rolled out. The [MSM OSGi configuration lets you exclude node types](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) from being copied from the source to the Live Copy.
 
 ## Further Information {#further-information}
 

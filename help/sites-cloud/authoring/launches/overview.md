@@ -96,7 +96,7 @@ Launches allow you to:
 
 ## The Launches Console {#the-launches-console}
 
-The Launches console provides an overview of your launches and allows you to take actions on those listed. The console can be accessed by:
+The Launches console provides an overview of your launches and lets you take actions on those listed. The console can be accessed by:
 
 * The **Tools** Console: **Tools**, **Sites**, **Launches**.
 

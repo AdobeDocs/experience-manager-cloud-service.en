@@ -45,7 +45,7 @@ Use forms-centric workflows to automate the processing and routing of form data 
 
 ## Optimize forms performance 
 
-The service integrates with Adobe Analytics that allows you to capture and track performance metrics for your published forms. The objective behind analyzing these metrics is to make informed decisions based on data about the changes required to make forms or document more usable. You can use Adobe Analytics to discover interaction patterns and problems users face while using adaptive forms. 
+The service integrates with Adobe Analytics that lets you capture and track performance metrics for your published forms. The objective behind analyzing these metrics is to make informed decisions based on data about the changes required to make forms or document more usable. You can use Adobe Analytics to discover interaction patterns and problems users face while using adaptive forms. 
 
 
 ## Get started {#key-features}

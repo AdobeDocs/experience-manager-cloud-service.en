@@ -27,13 +27,13 @@ On a high level, there are two types of assets related to products: product & ma
 
 Marketing assets are related to promoting and using the product which is usually owned by marketing. Examples are showing multiple products ("shop the look"), in a specific context ("outdoor fall collection"), or how-to pdfs. CIF provides an easy way to link any AEM asset with product catalog object.
 
-Open the asset properties and switch to the **Commerce** tab. This tab allows you to manage the association with products. The table below the picker provides additional information for the linked objects (only visible with a selection). Click on the details icon to get a full view in the product cockpit. To associate a new object, click on the product picker icon (folder icon), select an object and close the picker.
+Open the asset properties and switch to the **Commerce** tab. This tab lets you manage the association with products. The table below the picker provides additional information for the linked objects (only visible with a selection). Click on the details icon to get a full view in the product cockpit. To associate a new object, click on the product picker icon (folder icon), select an object and close the picker.
 
 ![pem assets](assets/pem-assets.png)
 
 ### Experience Fragments {#experience-fragments}
 
-Experience Fragments are a great way to create re-usable or individual product content at scale. The association works similar to an asset. Open properties and switch to the **Commerce** tab. This tab allows you to manage the association with products and categories. The tables below the pickers provide additional information for the linked objects (only visible with a selection). Click on the details icon to get a full view in the product cockpit. To associate a new object, click on the product picker icon (folder icon), select an object and close the picker.
+Experience Fragments are a great way to create re-usable or individual product content at scale. The association works similar to an asset. Open properties and switch to the **Commerce** tab. This tab lets you manage the association with products and categories. The tables below the pickers provide additional information for the linked objects (only visible with a selection). Click on the details icon to get a full view in the product cockpit. To associate a new object, click on the product picker icon (folder icon), select an object and close the picker.
 
 ![pem xf](assets/pem-xf.png)
 
@@ -63,7 +63,7 @@ Let's start with the Experience Fragment placeholder. Open a product template in
 
 ![pem placeholder](assets/pem-placeholder.png)
 
-Open the component's dialog and enter a name for this placeholder. Placeholder name is required and allows you to add as many placeholders as you need.
+Open the component's dialog and enter a name for this placeholder. Placeholder name is required and lets you add as many placeholders as you need.
 
 ![pem XF dialog](assets/pem-dialog-xf.png)
 

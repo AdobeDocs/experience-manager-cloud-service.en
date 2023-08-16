@@ -56,7 +56,7 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 
 >[!NOTE]
 >
->You can not edit a running pipeline.
+>You cannot edit a running pipeline.
 
 ## Deleting Pipelines {#deleting-pipelines}
 
@@ -66,7 +66,7 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 
 >[!NOTE]
 >
->You can not delete a running pipeline.
+>You cannot delete a running pipeline.
 
 ## View Details {#view-details}
 
