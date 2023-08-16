@@ -9,7 +9,7 @@ description: Learn how the migration process will index the ingested content on 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_indexing"
 >title="Content Indexing"
->abstract="AEM Indexing refers to indexing of the Cloud Service instance migrating content to ti. The indexing is done to bring the performance to an optimum speed for a good experience."
+>abstract="AEM Indexing refers to indexing of the Cloud Service instance after migrating content to it. The indexing is done to bring the performance to an optimum speed for a good experience."
 
 Once the Cloud Acceleration Manager completes the ingestion of content into your Cloud Service instance, it is ready to be used. Initially
 the content is not indexed though which will reduce performance greatly. For the instance to have optimum performance providing a good user
@@ -37,14 +37,14 @@ required from the user. If the ingestion fails for whatever reason, the queueing
 
 ### Running
 
-When the ingestion completes successfully, the indexing job is initiated automatically. The ingestion job row will show a progress icon. 
-You may open the duration dialog to see the simple progress of the job. 
+When the ingestion succeeds, the indexing job is initiated automatically. The ingestion job row will show a progress icon for the AEM indexing
+status. You may open the duration dialog to see the simple progress of the job. 
 
 ![image](/help/journey-migration/content-transfer-tool/assets-indexing/running.png)
 
 ### Complete
 
-When the indexing job completes successfully the instance is ready to be used at optimum performance. At this point the indexing job logs
+When the indexing job succeeds the instance is ready to be used at optimum performance. At this point the indexing job logs
 will be available to view or download in order to inspect them.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-indexing/complete.png)
@@ -54,7 +54,8 @@ will be available to view or download in order to inspect them.
 The indexing of the destination cloud service instance will most likely succeed. In some cases, it can fail and the ingestion job row will
 appear as follows. In all cases, you can find out some details of the failure by hovering over the failure status, and it may provide
 more information to help you determine next steps. At this point the indexing job logs will be available to view or download in order to
-help discover the source of the failure. If the next step is not clear, please contact Adobe Support with details of the ingestion.
+help discover the source of the failure. If the next step is not clear, please contact Adobe Support with details of the ingestion and
+the indexing log.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 
