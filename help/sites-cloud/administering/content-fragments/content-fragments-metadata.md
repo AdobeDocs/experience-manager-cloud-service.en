@@ -3,6 +3,9 @@ title: Metadata - Fragment Properties
 description: Learn how you can view, and edit, the metadata properties in AEM Content Fragments, for both headless content delivery and page authoring.
 feature: Content Fragments
 role: User
+hide: yes
+index: no
+hidefromtoc: yes
 exl-id: c1b90118-4501-4f93-bd2d-6552e0d17aee
 ---
 # Metadata - Fragment Properties {#metadata-fragment-properties}

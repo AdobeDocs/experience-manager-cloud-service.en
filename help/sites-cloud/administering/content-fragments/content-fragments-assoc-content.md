@@ -3,6 +3,9 @@ title: Associated Content
 description: Understand how the associated content feature for Content Fragments provides the connection for assets to be (optionally) used with the fragment, adding additional flexibility to both page authoring and headless content delivery.
 feature: Content Fragments
 role: User
+hide: yes
+index: no
+hidefromtoc: yes
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
 ---
 
