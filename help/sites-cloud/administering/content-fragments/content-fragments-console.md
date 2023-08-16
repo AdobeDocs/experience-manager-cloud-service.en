@@ -4,6 +4,9 @@ description: Learn how to manage Content Fragments from the Content Fragments Co
 landing-page-description: Learn how to manage Content Fragments from the Content Fragments Console that is focused on the high volume use of Content Fragments for Headless use-cases, but also used when page authoring.
 feature: Content Fragments
 role: User
+hide: yes
+index: no
+hidefromtoc: yes
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 ---
 # Content Fragments Console  {#content-fragments-console}
