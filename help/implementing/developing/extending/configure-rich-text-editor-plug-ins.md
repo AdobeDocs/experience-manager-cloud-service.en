@@ -349,7 +349,7 @@ To enable the `paraformat` plug-in, follow these steps:
 
 >[!CAUTION]
 >
->When configuring the paragraph formats of the RTE, do not remove the paragraph tag &lt;p&gt; as a formatting option. If the `<p>` tag is removed, then the content author can not select the [!UICONTROL Paragraph formats] option even if there are additional formats configured.
+>When configuring the paragraph formats of the RTE, do not remove the paragraph tag &lt;p&gt; as a formatting option. If the `<p>` tag is removed, then the content authorcannot select the [!UICONTROL Paragraph formats] option even if there are additional formats configured.
 
 ### Specify the available Paragraph Formats {#paraformatsindropdown}
 

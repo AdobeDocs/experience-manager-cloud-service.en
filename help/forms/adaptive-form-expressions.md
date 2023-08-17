@@ -7,7 +7,7 @@ description: Use Adaptive Forms expressions to add automatic validation, calcula
 
 # Adaptive Form Expressions {#adaptive-form-expressions}
 
-Adaptive Forms provide optimized and simplified form filling experience for end users with dynamic scripting capabilities. It allows you to write expressions to add various behaviors such as dynamic show/hide fields and panels. It also lets you add calculated fields, make fields read-only, add validation logic, and many more. The dynamic behavior is based on the user input or prefilled data.
+Adaptive Forms provide optimized and simplified form filling experience for end users with dynamic scripting capabilities. It lets you write expressions to add various behaviors such as dynamic show/hide fields and panels. It also lets you add calculated fields, make fields read-only, add validation logic, and many more. The dynamic behavior is based on the user input or prefilled data.
 
 JavaScript™ is the expression language of Adaptive Forms. All the expressions are valid JavaScript™ expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript™ Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 

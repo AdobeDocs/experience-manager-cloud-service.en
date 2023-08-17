@@ -83,7 +83,7 @@ Follow this section so you can explore AEM as a Cloud Service Deployment Card ac
 
 ## Using Content Transfer Card {#content-transfer}
 
-The Content Transfer card allows you to start and manage content transfer from your current AEM instance to AEM as a Cloud Service. 
+The Content Transfer card lets you start and manage content transfer from your current AEM instance to AEM as a Cloud Service. 
 
 Follow this section so you can explore the Content Transfer activity card:
 

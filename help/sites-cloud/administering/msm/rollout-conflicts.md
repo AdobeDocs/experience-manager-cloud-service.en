@@ -11,7 +11,7 @@ Conflicts can occur if new pages with the same page name are created in both the
 
 ## Conflict Handling {#conflict-handling}
 
-When conflicting pages do exist (in the blueprint and Live Copy branches), MSM allows you to define how (or even if) they should be handled.
+When conflicting pages do exist (in the blueprint and Live Copy branches), MSM lets you define how (or even if) they should be handled.
 
 To ensure that the rollout is not blocked, possible definitions can include:
 
@@ -48,7 +48,7 @@ In the following sections we use the example of a new page `b`, created in both 
 
 ## Rollout Manager and Conflict Handling {#rollout-manager-and-conflict-handling}
 
-The rollout manager allows you to activate or deactivate conflict management.
+The rollout manager lets you activate or deactivate conflict management.
 
 This is done using [OSGi configuration](/help/implementing/deploying/configuring-osgi.md) of **Day CQ WCM Rollout Manager**. Set the value **Handle conflict with manually created Pages** ( `rolloutmgr.conflicthandling.enabled`) to true if the rollout manager should handle conflicts from a page created in the Live Copy with a name that exists in the blueprint.
 
@@ -63,7 +63,7 @@ AEM provides:
 * The [default conflict handler](#default-conflict-handler):
   * `ResourceNameRolloutConflictHandler`
 * The possibility to implement a [customized handler](#customized-handlers)
-* The service ranking mechanism that allows you to set the priority of each individual handler
+* The service ranking mechanism that lets you set the priority of each individual handler
   * The service with the highest ranking is used.
 
 ### Default Conflict Handler {#default-conflict-handler}

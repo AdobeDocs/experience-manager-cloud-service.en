@@ -103,7 +103,7 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 * **Support to use the literal option to set value for a JSON type variable**
 
-  You can use literal option to set value for a JSON type variable in the set variable step of an AEM Workflow. The literal option allows you to specify a JSON in the form of a string.
+  You can use literal option to set value for a JSON type variable in the set variable step of an AEM Workflow. The literal option lets you specify a JSON in the form of a string.
 
 * **Use local development environment to create Document of Record (DoR)**
 
