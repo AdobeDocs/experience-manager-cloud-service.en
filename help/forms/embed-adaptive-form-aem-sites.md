@@ -88,43 +88,39 @@ Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your A
   1. Open the AEM Cloud Service Git Repository folder in a plan text editor. For example, Microsoft&reg; Visual Code.
   1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` file and add the following code to the file:
 
-         ```
-             //Customheaderlibs.html
-             <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-             <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
-             </sly> 
-
-         ```
+      ```
+          //Customheaderlibs.html
+          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+          <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+          </sly> 
+      ```
 
   1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` file and add the following code to the file:
 
-         ```
-
-             //customfooterlibs.html
-             <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-             <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
-             </sly> 
-         ```
+      ```
+          //customfooterlibs.html
+          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+          <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+          </sly> 
+      ```
 
   1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` file and add the following code to the file:
 
-         ```
-             //Customheaderlibs.html
-             <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-             <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
-             </sly> 
-
-         ```
+      ```
+          //Customheaderlibs.html
+          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+          <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+          </sly> 
+      ```
 
   1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` file and add the following code to the file:
 
-         ```
-
-             //customfooterlibs.html
-             <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-             <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
-             </sly> 
-         ```
+      ```
+          //customfooterlibs.html
+          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+          <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+          </sly> 
+      ```
 
   1. [Run the deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) to deploy the client libraries to your AEM as a Cloud Service environment. 
 
@@ -203,7 +199,7 @@ To embed an existing Adaptive Form in a Sites page:
 1. Tap the **[!UICONTROL Adaptive Forms - Embed]** component in the Sites page and tap ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** dialog opens.
 1. Browse and select the Adaptive Form to embed in the **[!UICONTROL Asset Path]**.
 1. Save the settings. The Adaptive Form is now embedded in the page.
-    
+
 >[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
 
 Next, you can [set the Submit Action](/help/forms/configuring-submit-actions.md) and advanced properties of an embedded Adaptive Form using the Form creation wizard. 
@@ -229,9 +225,11 @@ To convert an Adaptive Form in AEM Sites page to an Experience Fragment:
 1. Open the AEM Sites page containing the Adaptive Form (in Adaptive Forms Container component) in edit mode.
 1. Open the Content Tree, and select the **[!UICONTROL Adaptive Forms Container]** that hosts your Adaptive Form. An AEM Sites page can host multiple Adaptive Forms. So, carefully select the correct Adaptive Forms Container. 
 1. On the menu bar, select the ![Convert to experience fragment variation icon](/help/forms/assets/Smock_FilingCabinet_18_N.svg) Convert to Experience Fragment variation icon. 
+
     ![Click the file cabinet logo to convert an Adaptive Form in AEM Sites page to an Experience Fragment](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
-    
-    A dialog box to convert the Adaptive Form container to a new Experience Fragment or add to an existing Experience Fragment appears .
+
+    A dialog box to convert the Adaptive Form container to a new Experience Fragment or add to an existing Experience Fragment appears.
+
 1. On the **[!UICONTROL Convert to Experience Fragment]** variation dialog box, set values for the following options:
 
     * **Action:** Select to create an Experience Fragment or Add to an existing Experience Fragment.
@@ -259,7 +257,7 @@ You can customize the advanced settings of the **[!UICONTROL Adaptive Form - Emb
 An inline frame (iframe) is an HTML element that loads an Adaptive Form to an AEM Sites page.
 
     * If the **[!UICONTROL Form covers entire width of the frame]** checkbox is checked, an Adaptive Form occupies the full width of the container in which it is placed. In this case, an iframe is not used to render the form. The layout and design of an Adaptive Form adapt to span the entire width of the container, making it responsive and capable of adjusting to different screen sizes. This option allows to embed multiple Adaptive Forms within an AEM Sites page.
-    
+
         >[!NOTE]
         >
         > To embed multiple forms in an AEM Sites page, select **[!UICONTROL Form covers entire width of the frame]** checkbox. 

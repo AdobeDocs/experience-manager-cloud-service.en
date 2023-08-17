@@ -79,44 +79,40 @@ To enable complete functionality of the Adaptive Forms Container component, add 
   1. Open the AEM Cloud Service Git Repository folder in a plan text editor. For example, Microsoft Visual Code.
   1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` file and add the following code to the file:
 
-         ```
-             //Customheaderlibs.html
-             
-             <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-             <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
-             </sly> 
-
-         ```
+      ```
+          //Customheaderlibs.html
+          
+          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+          <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+          </sly> 
+      ```
 
   1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` file and add the following code to the file:
 
-         ```
-
-             //customfooterlibs.html
-             <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-             <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
-             </sly> 
-         ```
+      ```
+          //customfooterlibs.html
+          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+          <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+          </sly> 
+      ```
 
   1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` file and add the following code to the file:
 
-         ```
-             //Customheaderlibs.html
-             <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-             <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
-             </sly> 
-
-         ```
+      ```
+          //Customheaderlibs.html
+          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+          <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+          </sly> 
+      ```
 
   1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` file and add the following code to the file:
 
-         ```
-
-             //customfooterlibs.html
-             <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-             <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
-             </sly> 
-         ```
+      ```
+          //customfooterlibs.html
+          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+          <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+          </sly> 
+      ```
 
   1. [Run the deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) to deploy the client libraries to your AEM as a Cloud Service environment. 
 
@@ -251,7 +247,6 @@ On submission of a form, you can redirect the user to another webpage or a messa
 1. Open the **[!UICONTROL Submission]** tab. 
 
     * To configure a Redirect URL, for on Submit option, select the **[!UICONTROL Redirect to URL]** option, and browse and select an AEM Sites page, or provide URL of an external page.  
-  
     * To configure a custom or thank you message, for on Submit option, select the **[!UICONTROL Show Message]** option, and provide a message in the **[!UICONTROL Message content]** box. It is a rich text box, you can use the full screen option to view all the available rich text items. 
 
 ## See next
