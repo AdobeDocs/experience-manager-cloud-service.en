@@ -241,7 +241,7 @@ To create a content fragment:
 During its existence a Content Fragment can have several statuses, as shown in the [Content Fragment Console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) and [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md):
 
 * **New** (grey)
-  A new Content Fragment has been created, but never edited, nor opened, in the Content Fragment editor.
+  A new Content Fragment has been created, but has no content as it has never edited, nor opened, in the Content Fragment editor.
 * **Draft** (blue)
   Someone has either edited or opened the (new) Content Fragment in the Content Fragment Editor - but it has not yet been published.
 * **Published** (green)

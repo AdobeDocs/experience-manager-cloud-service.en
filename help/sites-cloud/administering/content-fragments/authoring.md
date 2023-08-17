@@ -80,10 +80,16 @@ When you first open the Content Fragment Editor, you see four main areas:
 
 ## Navigate the Content Fragment structure {#navigate-structure}
 
-A single Content Fragment consists of two levels:
+A single Content Fragment;
 
-* **[Variations](#variations)** of the Content Fragment
-* **Fields** - defined by the Content Fragment Model, and used by every variation
+* Consists of two levels:
+
+  * **[Variations](#variations)** of the Content Fragment
+  * **Fields** - defined by the Content Fragment Model, and used by every variation
+
+* Can contain a variety of references.
+
+### Variations and Fields {#variations-and-fields}
 
 In the left panel you can see:
 
@@ -95,6 +101,24 @@ In the left panel you can see:
   * the icon indicates the [Data Type](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
   * the text is the field name
   * together these provide a direct link to the field content in the central panel (for the current Variation)
+
+### Follow Links {#follow-links}
+
+In various parts of the editor you will see the link icon. This can be used to open the item shown; for example a Content Fragment Model, a Parent Reference, or a fragment being referenced:
+
+![Content Fragment Editor - Link Icon](assets/cf-authoring-link-icon.png)
+
+### Structure tree {#structure-tree}
+
+Open the **Structure tree** tab from the editor toolbar to show the hierarchical structure of the Content Fragment, and its references. Use the link icons to navigate to the references.
+
+<!-- CHECK: screenshot checked 2023.08.08 -->
+
+![Content Fragment Editor - Structure tree](assets/cf-authoring-structure-tree.png)
+
+>[!NOTE]
+>
+>See [Analyzing Content Fragment Structure - Structure tree](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree) for more details.
 
 ## Saving and auto-saving {#saving-autosaving}
 
@@ -426,20 +450,6 @@ Select **JSON preview** from the editor toolbar to show the JSON representation 
 >
 >See [Content Delivery - JSON Preview](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md#json-preview) for more details.
 -->
-
-<!-- CHECK: Replace with snippet? -->
-
-## Structure tree {#structure-tree}
-
-Open the **Structure tree** tab from the editor toolbar to show the hierarchical structure of the Content Fragment, and its references. 
-
-<!-- CHECK: screenshot checked 2023.08.08 -->
-
-![Content Fragment Editor - Structure tree](assets/cf-authoring-structure-tree.png)
-
->[!NOTE]
->
->See [Analyzing Content Fragment Structure - Structure tree](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree) for more details.
 
 ## Preview your Fragment {#preview-content-fragment}
 

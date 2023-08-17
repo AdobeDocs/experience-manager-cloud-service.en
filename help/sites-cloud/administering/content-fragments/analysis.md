@@ -41,7 +41,9 @@ Select **JSON preview** from the editor toolbar to show the JSON representation 
 
 ## Structure tree {#structure-tree}
 
-Open the **Structure tree** tab from the editor toolbar to show the hierarchical structure of the Content Fragment, and its references. For example:
+Open the **Structure tree** tab from the editor toolbar to show the hierarchical structure of the Content Fragment, and its references. Use the link icon to open references.
+
+For example:
 
 <!-- CHECK: screenshot checked 2023.08.07 -->
 
