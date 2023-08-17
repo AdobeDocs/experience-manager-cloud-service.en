@@ -383,9 +383,9 @@ To delete a fragment:
 Details of parent references can be accessed from the
 
 * **References** column of the Content Fragments Console
-* the [references link in the top toolbar of the Content Fragments editor](/help/sites-cloud/administering/content-fragments/authoring.md#view-references)
+* the [parent references link in the top toolbar of the Content Fragments editor](/help/sites-cloud/administering/content-fragments/authoring.md#view-parent-references)
 
-Both provide a link that opens a dialog listing all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click on the **Title** in the dialog.
+Both provide a link that opens a dialog listing all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click on the **Title**, or the link icon, in the dialog.
 
 For example:
 

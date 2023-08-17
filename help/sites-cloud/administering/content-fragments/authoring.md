@@ -20,9 +20,10 @@ This editor provides:
 * [In-line uploading of assets as content references](#reference-images), without having to upload them to the Asset DAM first.
 * [Preview](#preview-content-fragment) of the rendered experience delivered by the Content Fragment.
 * Ability to [Publish](#publish-content-fragment) and [Unpublish](#unpublish-content-fragment) from the editor.
-* Ability to [view associated language copies](#view-language-copies) in the editor.
+* Ability to [view, and open, associated language copies](#view-language-copies) in the editor.
 * Ability to [view version details](#view-version-history) in the editor.
-* Ability to [view parent references](#view-references).
+  * You can also revert to a selected version.
+* Ability to [view, and open, parent references](#view-parent-references).
 * A hierarchical view of the Content Fragment, and its references, using the [Structure tree](#structure-tree).
 
 <!-- CHECK: will this change when the original editor has a toggle? -->
@@ -332,9 +333,9 @@ To add references to AEM pages, Experience Fragments, or other content types:
 
 1. Confirm with **Add**.
 
-### View References {#view-references}
+### View Parent References {#view-parent-references}
 
-Selecting the link icon in the top toolbar opens a list of all parent references.
+Selecting the link icon in the top toolbar opens a list of all parent references. 
 
 For example:
 
@@ -342,7 +343,9 @@ For example:
 
 ![Content Fragment Editor - Show References](assets/cf-authoring-show-references-link.png)
 
-A window opens, listing all related references. For example:
+A window opens, listing all related references. To open a reference, select the name or title, or the link icon. 
+
+For example:
 
 <!-- CHECK: screenshot checked 2023.08.08 -->
 
@@ -379,9 +382,21 @@ In the **Version history** tab of the right panel, details of the current, and p
 >
 >A new version is created when the content fragment is published.
 
-<!-- CHECK: needs new screenshot -->
+<!-- CHECK: screenshot -->
 
-![Content Fragment Editor - Version History Ooverview](assets/cf-authoring-version-history-overview.png)
+![Content Fragment Editor - Version History Overview](assets/cf-authoring-version-history-overview.png)
+
+### Revert to a Version {#revert-version}
+
+You can revert to any version. 
+
+To revert to a specific version:
+
+1. Select the three dots icon next to the version.
+
+1. Select **Revert**.
+
+![Content Fragment Editor - Version History Revert](assets/cf-authoring-version-history-revert.png)
 
 ## View the Language Copies {#view-language-copies}
 
