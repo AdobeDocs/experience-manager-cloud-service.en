@@ -108,14 +108,14 @@ MSM is directly accessible in the UI using various options from the appropriate 
 
 * **Create Site** (**Sites**)
 
-  * MSM helps you to manage multiple websites that share common content. For example, websites are often provided for international audiences such that most of the content is common across all countries, with a subset of the content specific to the individual country. MSM allows you to [create Live Copies that automatically update one or more sites based on your source site](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). This also helps you to enforce a common base structure, use the common content across the multiple sites, maintain a common look and feel and focus efforts on managing the content that actually differs between the sites. Creating a site in this manner:
+  * MSM helps you to manage multiple websites that share common content. For example, websites are often provided for international audiences such that most of the content is common across all countries, with a subset of the content specific to the individual country. MSM lets you [create Live Copies that automatically update one or more sites based on your source site](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). This also helps you to enforce a common base structure, use the common content across the multiple sites, maintain a common look and feel and focus efforts on managing the content that actually differs between the sites. Creating a site in this manner:
     * Requires a predefined blueprint configuration to specify the source.
     * Creates a Live Copy of the (predefined) source.
     * Provides the user with the **Rollout** button.
 
 * **Create Live Copy** (**Sites**)
 
-  * MSM allows you to [create an ad-hoc (one-off) Live Copy of an individual page or sub-branch of a website.](creating-live-copies.md#creating-a-live-copy-of-a-page) For example, duplicating a sub-branch to provide information about a new/updated version of a product. Creating a Live Copy in this manner:
+  * MSM lets you [create an ad-hoc (one-off) Live Copy of an individual page or sub-branch of a website.](creating-live-copies.md#creating-a-live-copy-of-a-page) For example, duplicating a sub-branch to provide information about a new/updated version of a product. Creating a Live Copy in this manner:
     * Creates an ad-hoc Live Copy (no blueprint configuration required).
     * Can be used to (immediately) create a Live Copy of any page/branch.
     * Requires **Synchronize** (does not provide the **Rollout** button).
@@ -130,11 +130,11 @@ MSM is directly accessible in the UI using various options from the appropriate 
 
 * **Live Copy Overview** (**Sites**)
 
-  * This console allows you to [view and manage your blueprint and its Live Copies.](live-copy-overview.md)
+  * This console lets you [view and manage your blueprint and its Live Copies.](live-copy-overview.md)
 
 * **Blueprints** (**Tools** - **Sites**)
 
-  * This console allows you to [create and manage your blueprint configurations.](creating-live-copies.md#creating-a-blueprint-configuration)
+  * This console lets you [create and manage your blueprint configurations.](creating-live-copies.md#creating-a-blueprint-configuration)
 
 >[!NOTE]
 >
@@ -239,7 +239,7 @@ A Live Copy is known as a stacked Live Copy when it is created as the child of a
 
 ### Source, Blueprints and Blueprint Configurations {#source-blueprints-and-blueprint-configurations}
 
-Any page or branch of pages can be used as the source of a Live Copy. However, MSM also allows you to define a blueprint configuration that specifies a source path. The benefits of using a blueprint configuration are that they:
+Any page or branch of pages can be used as the source of a Live Copy. However, MSM also lets you define a blueprint configuration that specifies a source path. The benefits of using a blueprint configuration are that they:
 
 * Allow the author to use the **Rollout** option on a blueprint. I.e. to explicitly push modifications to Live Copies that inherit from this blueprint.
 * Allow the author to use **Create Site**. This allows the user to easily select languages and configure the structure of the Live Copy.

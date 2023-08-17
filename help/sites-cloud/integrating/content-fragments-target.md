@@ -298,7 +298,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
+   >If the framework you attached to the page was not activated yet, a wizard opens which lets you publish it as well.
 --> 
 
 ## Exporting a Content Fragment to Adobe Target {#exporting-a-content-fragment-to-adobe-target}

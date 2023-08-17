@@ -53,7 +53,7 @@ With this tool, you can specify the desired content subset that you want to tran
 
 Content Migration is a multi-step process that requires planning, tracking, and collaboration between different teams. 
 
-For a complete detail on how the tool works and how we recommend you use it, see the [Content Transfer Tool documentation](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
+For a complete detail on how the tool works and how Adobe recommends that you use it, see the [Content Transfer Tool documentation](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 ## Code Refactoring {#code-refactor}
 
@@ -106,7 +106,7 @@ Once you have set up the local development environment, get familiar with the AE
 
 ### Schedule a Code Freeze {#schedule-a-code-freeze}  
 
-To manage your on-going code development on your active AEM along with the code refactoring tasks as part of your transition journey, we recommended you schedule a code freeze period until you have completed restructuring your Maven project to be compatible with AEM as a Cloud Service.
+To manage your on-going code development on your active AEM along with the code refactoring tasks as part of your transition journey, Adobe recommends that you schedule a code freeze period until you have completed restructuring your Maven project to be compatible with AEM as a Cloud Service.
 
 Once the project restructuring is done, you can resume new code development based on this new structure. This reduces Cloud Manager pipeline failures during code deployment and testing.
 

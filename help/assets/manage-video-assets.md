@@ -566,7 +566,7 @@ For YouTube publishing jobs, do the following:
 
 ## Transcode using Processing Profile {#transcode-video}
 
-[!DNL Experience Manager] as a [!DNL Cloud Service] lets you do basic transcoding of MP4 video files using Processing Profiles. The functionality allows you to not just upload but also preview and scale a MP4 video file.
+[!DNL Experience Manager] as a [!DNL Cloud Service] lets you do basic transcoding of MP4 video files using Processing Profiles. The functionality lets you not just upload but also preview and scale a MP4 video file.
 
 ![Create Processing Profile for video transcoding in [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 

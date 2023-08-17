@@ -290,7 +290,7 @@ Perform the following steps to configure Dispatcher cache for Experience Manager
 
 1. Open your AEM Project and navigate to `\src\conf.dispatcher.d\available_farms`
 1. Create a copy of the `default.farm` file. For example, `forms.farm`.
-1. Open the newly created `forms.farm` file for editing and replace the following code:
+1. Open the newly-created `forms.farm` file for editing and replace the following code:
 
     ```json
     #/ignoreUrlParams {
@@ -327,7 +327,7 @@ Your local development environment is ready.
 
 ## Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment
 
-Enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service, allows you to start creating, publishing, and delivering Core Components based Adaptive Forms and Headless Forms using your AEM Forms Cloud Service instances to multiple channels. You require Adaptive Forms Core Components enabled environment to use Headless Adaptive Forms.
+Enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service, lets you start creating, publishing, and delivering Core Components based Adaptive Forms and Headless Forms using your AEM Forms Cloud Service instances to multiple channels. You require Adaptive Forms Core Components enabled environment to use Headless Adaptive Forms.
 
 For instructions, see [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
 

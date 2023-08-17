@@ -144,7 +144,7 @@ AEM comes with several layers already implemented for page authoring; including 
 
 ### Layer Switcher {#layer-switcher}
 
-The layer switcher allows you to choose the layer you want to use. When closed, it indicates the layer currently in use.
+The layer switcher lets you choose the layer you want to use. When closed, it indicates the layer currently in use.
 
 The layer switcher is available as a drop-down from the toolbar (at the top of the window, within the editor frame).
 

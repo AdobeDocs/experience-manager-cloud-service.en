@@ -53,7 +53,7 @@ Clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia), and th
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. Add the necessary OSGi configurations so you connect your AEM instance to an Adobe Commerce instance, or add the configurations to the newly created project.
+1. Add the necessary OSGi configurations so you connect your AEM instance to an Adobe Commerce instance, or add the configurations to the newly-created project.
 
 1. At this point, you should have a working version of a storefront that is connected to an Adobe Commerce instance. Navigate to the `US` > `Home` page at: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 

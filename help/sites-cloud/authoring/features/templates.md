@@ -26,7 +26,7 @@ For detailed information about how editable templates work at a technical level,
 
 >[!NOTE]
 >
->The **Template Editor** does not support targeting directly on the template level. Pages created based on an editable template can be targeted, but the templates themselves can not be.
+>The **Template Editor** does not support targeting directly on the template level. Pages created based on an editable template can be targeted, but the templates themselves cannot be.
 
 ## Before You Start {#before-you-start}
 
@@ -224,7 +224,7 @@ As the template is referenced when a page is rendered, the fully configured temp
 
 When creating or editing a template there are various aspects that you can define. Editing templates is similar to page authoring.
 
-The **Mode** selector in the toolbar allows you to select and edit the appropriate aspect of the template:
+The **Mode** selector in the toolbar lets you select and edit the appropriate aspect of the template:
 
 * [Structure](#editing-a-template-structure-template-author)
 * [Initial Content](#editing-a-template-initial-content-author)
@@ -232,7 +232,7 @@ The **Mode** selector in the toolbar allows you to select and edit the appropria
 
 ![Template editor mode selector](/help/sites-cloud/authoring/assets/templates-mode.png)
 
-While the **Page Policy** option on the **Page Information** menu allows you to [select the required page policies](#page-policies):
+While the **Page Policy** option on the **Page Information** menu lets you [select the required page policies](#page-policies):
 
 ![Template Editor Page Information](/help/sites-cloud/authoring/assets/templates-page-information.png)
 
@@ -317,7 +317,7 @@ Once added, each component is marked with:
 
 #### Component Actions {#component-actions}
 
-Take actions on the components once they have been added to the template. Each individual instance has a toolbar that allows you to access the available actions, the toolbar is dependent on the component type.
+Take actions on the components once they have been added to the template. Each individual instance has a toolbar that lets you access the available actions, the toolbar is dependent on the component type.
 
 ![Action toolbar of a template component](/help/sites-cloud/authoring/assets/templates-component-actions.png)
 
@@ -339,7 +339,7 @@ Create a content policy, or select an existing one, for a component.
 
 ![Content Policy button](/help/sites-cloud/authoring/assets/templates-content-policy-button.png)
 
-This allows you to define the design details.
+This lets you define the design details.
 
 ![Content Policy](/help/sites-cloud/authoring/assets/template-content-policy.png)
 
@@ -401,7 +401,7 @@ To remove a configuration, click or tap the **Delete** button.
 
 ###### Features {#features}
 
-The **Features** tab allows you to enable or disable additional features of the component.
+The **Features** tab lets you enable or disable additional features of the component.
 
 For example, for an image component you can define the cropping proportions, allowed image orientations, and if uploads are allowed.
 
@@ -524,7 +524,7 @@ Although all content created in **Structure** mode is visible in **Initial Conte
 
 >[!NOTE]
 >
->Initial content is intended for preparing components and the page layout that serve as a starting point for creating the content. It is not intended to be the actual content that would remain as is. For this reason, initial content can not be translated.
+>Initial content is intended for preparing components and the page layout that serve as a starting point for creating the content. It is not intended to be the actual content that would remain as is. For this reason, initial content cannot be translated.
 >
 >If you need to include translatable text in your template such as in headers or footers, you can use the [localization features of the core components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 

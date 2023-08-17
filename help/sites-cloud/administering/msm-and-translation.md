@@ -11,7 +11,7 @@ Adobe Experience Manager's built-in Multi Site Manager and translation tools sim
 
 * Multi Site Manager (MSM) and its Live Copy features enable you to use the same site content in multiple locations, while allowing for variations:
   * [Reusing Content: Multi Site Manager and Live Copy](msm/overview.md)
-* Translation allows you to automate the translation of page content to create and maintain multilingual websites:
+* Translation lets you automate the translation of page content to create and maintain multilingual websites:
   * [Translating Content for Multilingual Sites](translation/overview.md)
 
 These two features can be combined to cater for websites that are both [multinational and multilingual](#multinational-and-multilingual-sites).

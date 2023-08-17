@@ -15,7 +15,7 @@ exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 >
 >The download feature and default destination of your browser is used.
 
-The **Create CSV Export** wizard allows you to select:
+The **Create CSV Export** wizard lets you select:
 
 * Properties to export
   * Metadata
