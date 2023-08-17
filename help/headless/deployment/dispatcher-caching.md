@@ -2,7 +2,6 @@
 title: GraphQL Persisted Queries - enabling caching in the Dispatcher
 description: The Dispatcher is a caching and security layer in front of Adobe Experience Manager Publish environments. You can enable caching for Persisted Queries in AEM Headless.
 feature: Dispatcher, GraphQL API
-exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 ---
 
 # GraphQL Persisted Queries - enabling caching in the Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
