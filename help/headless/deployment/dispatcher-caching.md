@@ -10,6 +10,7 @@ exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 >[!CAUTION]
 >
 >If caching in the Dispatcher is enabled then the [CORS Filter](/help/headless/deployment/cross-origin-resource-sharing.md) is not needed, and so that section can be ignored.
+
 Caching of persisted queries is not enabled by default in the Dispatcher. Default enablement is not possible as customers using CORS (Cross-Origin Resource Sharing) with multiple origins need to review, and possibly update, their Dispatcher configuration.
 
 >[!NOTE]
@@ -18,7 +19,7 @@ Caching of persisted queries is not enabled by default in the Dispatcher. Defaul
 >
 >Caching of other CORS-related headers can be enabled in the Dispatcher, but might be insufficient when there are multiple CORS origins.
 
-### Enable caching of persisted queries {#enable-caching-persisted-queries}
+## Enable caching of persisted queries {#enable-caching-persisted-queries}
 
 To enable the caching of persisted queries, define the Dispatcher variable `CACHE_GRAPHQL_PERSISTED_QUERIES`:
 
@@ -34,7 +35,7 @@ To enable the caching of persisted queries, define the Dispatcher variable `CACH
 >
 >This suffix is added by a rewrite rule, once persisted query caching is enabled.
 
-### CORS configuration in the Dispatcher {#cors-configuration-in-dispatcher}
+## CORS configuration in the Dispatcher {#cors-configuration-in-dispatcher}
 
 Customers using CORS requests, might need to review and update their CORS configuration in the Dispatcher.
 
