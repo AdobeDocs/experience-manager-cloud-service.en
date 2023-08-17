@@ -13,9 +13,9 @@ You can seamlessly author or embed Adaptive Forms in an AEM Sites page to allow 
  
 You can choose one the following methods to create or add an Adaptive Form to an AEM Sites page:
 
-* **Create an Adaptive Form using Adaptive Forms Container component**: The [Adaptive Form Container](#af-container-component) component  allows you to build digital enrollment experiences by utilizing Adaptive Forms components directly within the AEM Sites editor. This integration provides a seamless experience to AEM Sites authors who want to create and manage forms within their AEM Sites pages.
+* **Create an Adaptive Form using Adaptive Forms Container component**: The [Adaptive Form Container](#af-container-component) component lets you build digital enrollment experiences by utilizing Adaptive Forms components directly within the AEM Sites editor. This integration provides a seamless experience to AEM Sites authors who want to create and manage forms within their AEM Sites pages.
  
-* **Add an existing Adaptive Form**: The [Adaptive Forms - Embed(v2)](#embed-existing-af) component allows you to easily add a pre-existing Adaptive Form into a page within AEM Sites. This feature enhances the adaptability and reusability of Adaptive Forms. This integration provides a convenient way for customers to reuse Adaptive Forms they have already created. 
+* **Add an existing Adaptive Form**: The [Adaptive Forms - Embed(v2)](#embed-existing-af) component lets you easily add a pre-existing Adaptive Form into a page within AEM Sites. This feature enhances the adaptability and reusability of Adaptive Forms. This integration provides a convenient way for customers to reuse Adaptive Forms they have already created. 
 
 * **Use Adaptive Forms Wizard to create a form**: Use the [Adaptive Forms - Embed(v2)](#embed-new-af) component to create an Adaptive Form from within the AEM Sites editor using Form Creation wizard. The form is saved as an external entity. You can reuse this form in other Sites pages and standalone forms also. 
 
@@ -111,7 +111,7 @@ In the [!UICONTROL Edit Adaptive Forms Container] dialog, you can specify the fo
 
     >[!NOTE]
     >
-    > After configuring the Form data model, you can not change the associated Form Model. However, it is possible to modify the schema associated with the Form data model. 
+    > After configuring the Form data model, you cannot change the associated Form Model. However, it is possible to modify the schema associated with the Form data model. 
 
 * **Submission Tab**
    
@@ -134,7 +134,7 @@ In the [!UICONTROL Edit Adaptive Forms Container] dialog, you can specify the fo
 
 ## Embed an Adaptive Form  {#aem-container-component}
 
-Using **[!UICONTROL Adaptive Forms - Embed (V2)]** component, you can either embed new Adaptive Form or embed an existing Adaptive Form in the Site's page. The [!UICONTROL Adaptive Forms - Embed(v2)] component allows you to:
+Using **[!UICONTROL Adaptive Forms - Embed (V2)]** component, you can either embed new Adaptive Form or embed an existing Adaptive Form in the Site's page. The [!UICONTROL Adaptive Forms - Embed(v2)] component lets you:
 
 * [Add an existing Adaptive Form](#embed-new-af)
 

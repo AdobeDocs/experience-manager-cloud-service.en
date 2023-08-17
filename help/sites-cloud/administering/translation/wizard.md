@@ -23,11 +23,11 @@ To access the wizard:
 
    ![Create language copy from wizard](../assets/language-copy-wizard.png)
 
-1. The wizard opens to the **Select Source** step which allows you to add/remove pages. You also have the option of including or excluding the subpages. Select the pages you wish to include and tap or click **Next**.
+1. The wizard opens to the **Select Source** step which lets you add/remove pages. You also have the option of including or excluding the subpages. Select the pages you wish to include and tap or click **Next**.
 
    ![Adding pages with the wizard](../assets/language-copy-wizard-add-pages.png)
 
-1. The **Configure** step of the wizard allows you to add/remove languages and select translation method. Tap or click **Next**.
+1. The **Configure** step of the wizard lets you add/remove languages and select translation method. Tap or click **Next**.
 
    ![Configure step of wizard](../assets/language-copy-wizard-configure.png)
 

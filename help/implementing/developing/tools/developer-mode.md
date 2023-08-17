@@ -46,7 +46,7 @@ This shows a component tree that:
 
 * Outlines the chain of components and templates rendered on the page. The tree can be expanded to show context within the hierarchy.
 * Shows the server-side computational time needed to render the component.
-* Allows you to expand the tree and select specific components within the tree. Selection provides access to component details; such as:
+* Lets you expand the tree and select specific components within the tree. Selection provides access to component details; such as:
   * Repository path
   * Links to scripts (accessed in CRXDE Lite)
   * Component detail as seen in the [Components Console](/help/sites-cloud/authoring/features/components-console.md)
