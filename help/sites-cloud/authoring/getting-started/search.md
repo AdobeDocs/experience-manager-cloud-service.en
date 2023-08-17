@@ -48,7 +48,7 @@ To search and filter your resources:
 
    According to the resource type Search will show a predefined selection of search/filter criteria.
 
-   The side panel allows you to select:
+   The side panel lets you select:
 
     * Saved Searches
     * Search Directory

@@ -437,7 +437,7 @@ See the [runmode documentation](/help/implementing/deploying/overview.md#runmode
 >
 >RDE OSGI configuration is unique in that it inherits the values of any OSGI properties declared by the bundle's `dev` run mode.
 
-RDEs are distinct from other environments in that content can be installed in an install.rde folder (or install.author.rde or install.publish.rde) under /apps. This allows you to commit content to git and deliver it to the RDE using the command line tooling.
+RDEs are distinct from other environments in that content can be installed in an install.rde folder (or install.author.rde or install.publish.rde) under /apps. This lets you commit content to git and deliver it to the RDE using the command line tooling.
 
 ## Populating with Content {#populating-content}
 

@@ -33,11 +33,11 @@ The Form Portal components allow you to add the following functionality:
 
 AEM Forms provide the following portal components out of the box:
 
-* Search & Lister: This component allows you to list forms from the forms repository onto your portal page and provides configuration options to list forms based on specified criteria.
+* Search & Lister: This component lets you list forms from the forms repository onto your portal page and provides configuration options to list forms based on specified criteria.
 
 * Drafts & Submissions: While Search & Lister component displays forms which are made public by Forms author, the Drafts & Submissions component displays forms that are saved as draft for completing later and submitted forms. This component provides personalized experience to any logged in user.
 
-* Link: This component allows you to create a link to a form anywhere on the page.
+* Link: This component lets you create a link to a form anywhere on the page.
 
 You can [import the out-of-the-box Forms Portal components](#import-forms-portal-components-aem-archetype) from the AEM Project Archetype. After importing, perform the following configurations: 
 

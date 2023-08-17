@@ -50,12 +50,12 @@ You can [customize any of these themes to create new theme](#customize-a-theme-c
 
 ## Customize a theme {#customize-a-theme-core-components}
 
-Customizing a theme refers to the process of modifying and personalizing the appearance of a theme. When you customize a theme, you change its design elements, layout, colors, typography, and sometimes the underlying code. It allows you to create a unique and tailored look for your website or application while maintaining the basic structure and functionality provided by the theme.
+Customizing a theme refers to the process of modifying and personalizing the appearance of a theme. When you customize a theme, you change its design elements, layout, colors, typography, and sometimes the underlying code. It lets you create a unique and tailored look for your website or application while maintaining the basic structure and functionality provided by the theme.
 
 ### Prerequisites {#prerequisites-to-customize}
 
 * Familiarize yourself with [setting up a pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) and having basic knowledge of how to set up a pipeline helps you efficiently manage and deploy your theme customizations. 
-* Learn how to [configure a user with the contributor role](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). Understanding how to configure a user with the contributor role allows you to grant the necessary permissions for theme customization.
+* Learn how to [configure a user with the contributor role](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). Understanding how to configure a user with the contributor role lets you grant the necessary permissions for theme customization.
 * Install the latest release of [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven is a build automation tool commonly used for Java&trade; projects. Installing the latest release ensures you have the necessary dependencies for theme customization.
 * Install a plain text editor. For example, Microsoft&reg; Visual Studio Code. Using a plain text editor such as Microsoft&reg; Visual Studio Code provides a user-friendly environment for editing and modifying theme files.
 
