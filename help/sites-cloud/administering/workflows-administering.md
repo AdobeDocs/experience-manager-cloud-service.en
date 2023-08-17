@@ -1,6 +1,6 @@
 ---
 title: Administering Workflow Instances
-description: Learn how to Administer Workflow Instances
+description: Learn how to Administer Workflow Instances using the workflow console
 feature: Administering
 role: Admin
 
