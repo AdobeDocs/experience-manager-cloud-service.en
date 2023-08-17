@@ -25,8 +25,8 @@ To begin, go to Cloud Acceleration Manager. Click your project card and then cli
 and see the jobs listed.
 
 >[!NOTE]
->You can view or download the indexing logs by using the ingestion job's actions, using the ... dropdown. The logs will be available after
->the indexing job is complete.
+>You can view or download the indexing logs by using the ingestion job's actions, using the ... dropdown. The logs will be available in the
+> 'Indexing log' actions section, after the indexing job is complete
 
 ### Pending
 
@@ -61,7 +61,7 @@ the indexing log.
 
 ## What's Next {#whats-next}
 
-Once you have completed indexing the destination cloud service instance, you can view logs of the indexing jobs and look for details and
+Once the destination cloud service instance has been indexed, you can view logs of the indexing jobs and look for details and
 errors.
 
 The migration is complete. Testing and validation of the destination cloud service instance can begin. 
