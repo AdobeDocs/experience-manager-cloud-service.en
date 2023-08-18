@@ -18,6 +18,10 @@ Caching of persisted queries is not enabled by default in the Dispatcher. Defaul
 >
 >Caching of other CORS-related headers can be enabled in the Dispatcher, but might be insufficient when there are multiple CORS origins.
 
+>[!NOTE]
+>
+>For detailed documentation about the Dispatcher, see the [Dispatcher Guide](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
+
 ## Enable caching of persisted queries {#enable-caching-persisted-queries}
 
 To enable the caching of persisted queries, define the Dispatcher variable `CACHE_GRAPHQL_PERSISTED_QUERIES`:
