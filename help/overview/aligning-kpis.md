@@ -1,6 +1,6 @@
 ---
 title: Aligning KPIs
-description: Aligning KPIs
+description: Learn how to choose the right KPIs for your AEM implementation
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 ---
 # To choose the right KPIs, start with your business objectives {#choose-the-right-kpis}
