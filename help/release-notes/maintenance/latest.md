@@ -7,20 +7,20 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 13099 {#release-13099}
+## Release 13173 {#release-13173}
 
-Summarized below are the continuous improvements for maintenance release 13099, which was publicly released on August 15, 2023. This maintenance release is an update from previous maintenance release 12874.
+Summarized below are the continuous improvements for maintenance release 13173, which was publicly released on August 18, 2023. This maintenance release replaces 13099 that was an update from previous maintenance release 12874.
 
 2023.8.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-13099}
+### Enhancements {#enhancements-13173}
 
 - SITES-13906: GraphQL - Upgrade to graphql-java 20.1.
 - SITES-8972: GraphQL - Add option label in JSON for Enumeration data type.
 - SITES-9689: GraphQL - Add title and description in JSON for Content Reference data type.
 - SITES-13052: Content Fragments - Export Content Fragments to Adobe Target.
 
-### Fixed Issues {#fixed-issues-13099}
+### Fixed Issues {#fixed-issues-13173}
 
 - SITES-14937: MSM - Inherit Rollout Configs from Parent value get toggled on hitting Save & Close on live copies.
 - SITES-14847: Content Fragments - Content Fragment Links are not highlighted.
@@ -32,6 +32,7 @@ Summarized below are the continuous improvements for maintenance release 13099, 
 - SITES-11559: Admin UI - References: Incoming Links shows wrong pages.
 - SITES-14337: Admin UI - Opening editor page produces an error in specific cases.
 - SITES-13425: ContextHub - Menu Bar does not display when clicking ContextHub button.
+- SITES-15463: Sites Templates - Templates cannot be published.
 - FORMS-9971: When an Adaptive Form is rendered in a different locale, the visibility of components is interpreted and applied inaccurately. 
 - FORMS-9888: When an Adaptive Form is set to redirect to an external URL (thank you page) on form submission, it fails to redirect to the external URL. 
 - FORMS-9845: After clearing a dropdown using the rule editor, the previously provided values persist, despite the supposed clearance.
@@ -46,14 +47,13 @@ Summarized below are the continuous improvements for maintenance release 13099, 
 - FORMS-3691: Some objects are missing IIFE (Immediately Invoked Function Expression) scoping. The primary purpose of using an IIFE is to create a scope for variables within the function, preventing those variables from polluting the global scope. 
 
 
-### Known Issues {#known-issues-13099}
+### Known Issues {#known-issues-13173}
 
 - SITES-15359: Content Fragments - The variation name pattern fails to correctly match variations that have ```'_'``` in their resource names.
-- SITES-15463: Sites Templates - Templates cannot be published (workaround: use Distribution console).
 - FORMS-10444: Adaptive Forms Templates - Templates cannot be published (workaround: use Distribution console).
 - CQ-4354191: Worfklows - Custom launcher may trigger many times due to replication metadata present on nt:unstructured nodes (workaround: update launchers to exclude replication metadata properties to avoid overlap).
 
-### Embedded Technologies {#embedded-tech-13099}
+### Embedded Technologies {#embedded-tech-13173}
 
 |Technology|Version|Link|
 |---|---|---|
