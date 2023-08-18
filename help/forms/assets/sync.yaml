@@ -228,7 +228,7 @@ components:
           description: |
             The template defines appearance and behavior of the PDF document.
             The API supports templates of format: XDP, Acrobat Form, and PDF
-            document. You can specify a fully qualified path, reference path of
+            document. You can specify a fully-qualified path, reference path of
             your AEM Repository, or path of a binary file.
           oneOf:
             - type: string
@@ -237,7 +237,7 @@ components:
         data:
           description: |
             An XML or JSON file containing the data to be merged with template.
-            You can specify a fully qualified HTTP location or path of a binary file.
+            You can specify a fully-qualified HTTP location or path of a binary file.
           oneOf:
             - type: string
               format: binary

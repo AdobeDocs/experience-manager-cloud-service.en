@@ -9,7 +9,7 @@ exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
 
 With Content Fragments and the GraphQL API you can use Adobe Experience Manager (AEM) as a Cloud Service as a Headless Content Management System (CMS). 
 
-This is achieved using Content Fragments, together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to headlessly deliver structured content for use in your applications. The ability to customize a single API query allows you to retrieve and deliver the specific content that you want/need to render (as the response to the single API query).
+This is achieved using Content Fragments, together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to headlessly deliver structured content for use in your applications. The ability to customize a single API query lets you retrieve and deliver the specific content that you want/need to render (as the response to the single API query).
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ GraphQL is:
 
   See [GraphQL.org](https://graphql.org)
 
-The [AEM GraphQL API](#aem-graphql-api) allows you to perform (complex) queries on your [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md); with each query being according to a specific model type. The content returned can then be used by your applications. 
+The [AEM GraphQL API](#aem-graphql-api) lets you perform (complex) queries on your [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md); with each query being according to a specific model type. The content returned can then be used by your applications. 
 
 ## AEM GraphQL API {#aem-graphql-api}
 
@@ -90,7 +90,7 @@ The **[Fragment Reference](/help/sites-cloud/administering/content-fragments/con
 
 * References another fragment, dependent on a specific Content Fragment Model.
 
-* Allows you to retrieve structured data.
+* Lets you retrieve structured data.
 
   * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
 
@@ -104,4 +104,4 @@ See [Learning to use GraphQL with AEM - Sample Content and Queries](/help/headle
 
 ## Tutorial - Getting Started with AEM Headless and GraphQL
 
-Looking for a hands-on tutorial? Check out [Getting Started with AEM Headless and GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end tutorial illustrating how to build-out and expose content using AEM’s GraphQL APIs and consumed by an external app, in a headless CMS scenario.
+Looking for a hands-on tutorial? Check out [Getting Started with AEM Headless and GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end tutorial illustrating how to build-out and expose content using AEM's GraphQL APIs and consumed by an external app, in a headless CMS scenario.

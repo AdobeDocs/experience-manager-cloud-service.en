@@ -104,7 +104,7 @@ Perform the following steps to enable the new responsive grid:
 
 ### Embed an old fragment in an Adaptive Form with new responsive layout {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
-The new responsive layout for Adaptive Form allows you to add an Adaptive Form Fragment with the old responsive layout to the form. However, the new layout discards the layout properties already defined for components used in the fragment. You can switch to the Layout mode to define the layout properties for components used in the fragment.
+The new responsive layout for Adaptive Form lets you add an Adaptive Form Fragment with the old responsive layout to the form. However, the new layout discards the layout properties already defined for components used in the fragment. You can switch to the Layout mode to define the layout properties for components used in the fragment.
 
 ### Embed a fragment with new responsive layout in an old Adaptive Form {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
 
