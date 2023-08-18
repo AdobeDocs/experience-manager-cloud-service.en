@@ -1,6 +1,6 @@
 ---
 title: How does the new AEM Assets UI or Assets view in AEM benefit you?
-description: Learn more about the key benefits of the new AEM Assets UI or the new Assets view in AEM
+description: Learn more about the key benefits of the new AEM Assets UI or the new Assets view in AEM. Adobe, leveraging its expertise in empowering marketing and creative professionals, introduces a game-changing new user experience.
 mini-toc-levels: 3
 ---
 
