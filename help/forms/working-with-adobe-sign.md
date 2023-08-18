@@ -321,7 +321,7 @@ After [editing Adaptive Form properties for Adobe Sign](working-with-adobe-sign.
 
       >[!NOTE]
       >
-      > Digital Signature is also applicable to [!DNL Adobe Acrobat Sign for Government] but you can not apply it using Cloud Signatures.
+      > Digital Signature is also applicable to [!DNL Adobe Acrobat Sign for Government] but you cannot apply it using Cloud Signatures.
 
    After adding the cloud signature field to the Adaptive Form, perform the following steps to complete the configuration process:
 

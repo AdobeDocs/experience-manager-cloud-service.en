@@ -69,7 +69,7 @@ The selected side will fill the entire window, but the bar will remain at the to
 
 >[!NOTE]
 >
->If the browser width can not accommodate both page names in full screen view, only the name of the page being displayed is shown and the other is available behind ellipsis.
+>If the browser width cannot accommodate both page names in full screen view, only the name of the page being displayed is shown and the other is available behind ellipsis.
 
 You can also choose to close the full screen view by clicking the exit full screen icon.
 
@@ -88,7 +88,7 @@ There are some situations in which the page diff may not detect a difference as 
 
 >[!NOTE]
 >
->Versions can not be compared to each other. Only the current version can be compared with other versions of the page. The current version is always the version that is highlighted with changes.
+>Versions cannot be compared to each other. Only the current version can be compared with other versions of the page. The current version is always the version that is highlighted with changes.
 
 >[!NOTE]
 >

@@ -33,11 +33,11 @@ Some references have dedicated data-types (for example, Content References and F
 
 ## Content References {#content-references}
 
-Content References do just that - they allow you to reference any other content. This will open a browser that allows you to select the content item.
+Content References do just that - they allow you to reference any other content. This will open a browser that lets you select the content item.
 
 ## Asset/Media References {#assets-media-references}
 
-Assets (for example, images or media) can be referenced within a Text block by using the **Insert asset** option. This will open a browser that allows you to select the asset.
+Assets (for example, images or media) can be referenced within a Text block by using the **Insert asset** option. This will open a browser that lets you select the asset.
 
 ![Content Fragments - Insert Asset](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -73,7 +73,7 @@ As an author you are not responsible for defining these relationships (that is d
 
 ### How to author nested fragments {#author-nested-fragment}
 
-Authoring Fragment References is fairly straightforward (though usually the field will not be labelled as **Fragment Reference**). You can either type in the reference directly, or (more likely) select the folder icon to open a browser that allows you to navigate and select the fragment you need. 
+Authoring Fragment References is fairly straightforward (though usually the field will not be labelled as **Fragment Reference**). You can either type in the reference directly, or (more likely) select the folder icon to open a browser that lets you navigate and select the fragment you need. 
 
 ![Content Fragments - References](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 

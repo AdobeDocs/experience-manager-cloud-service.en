@@ -1,6 +1,6 @@
 ---
 title: Accessing KPIs
-description: Accessing KPIs
+description: Learn how to access your KPIs and define the reporting process 
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 ---
 # Are you measuring the things that matter most?{#measuring-the-things-that-matter-most}

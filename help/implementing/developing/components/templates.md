@@ -350,7 +350,7 @@ When creating a new editable template, the value is copied from the template typ
 If you have created a template that can serve as the basis of other templates, you can copy this template as a template type.
 
 1. Create a template as you would any Page Template [as documented here](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author), which will serve as the basis of your template type.
-1. Using CRXDE Lite, copy the newly created template from the `templates` node to the `template-types` node under the [template folder](#template-folders).
+1. Using CRXDE Lite, copy the newly-created template from the `templates` node to the `template-types` node under the [template folder](#template-folders).
 1. Delete the template from the `templates` node under the [template folder](#template-folders).
 1. In the copy of the template that is under the `template-types` node, delete all `cq:template` and `cq:templateType` properties from all `jcr:content` nodes.
 
@@ -535,7 +535,7 @@ When rendering a page:
     * The page component will only allow the author to edit the nodes of the template structure that have been flagged as editable (and any children).
     * When rendering a component on a page, the relative path of that component is taken from the `jcr:content` node; the same path under the `policies/jcr:content` node of the template will then be searched.
       * The `cq:policy` property of this node points to the actual content policy (that is, it holds the design configuration for that component).
-        * This allows you to have multiple templates that re-use the same content policy configurations.
+        * This lets you have multiple templates that re-use the same content policy configurations.
 
 ### Template Availability {#template-availability}
 
@@ -589,6 +589,6 @@ The following diagram depicts the template evaluation process:
 
 To limit what templates can be used to create child pages under a given page, use the `cq:allowedTemplates` property of `jcr:content` node of the page to specify the list of templates to be allowed as child pages. Each value in the list must be an absolute path to a template for an allowed child page, for example `/apps/wknd/templates/page-content`.
 
-You can use the `cq:allowedTemplates` property on the template's  `jcr:content` node to have this configuration applied to all newly created pages that use this template.
+You can use the `cq:allowedTemplates` property on the template's  `jcr:content` node to have this configuration applied to all newly-created pages that use this template.
 
 If you want to add more constraints, for example regarding the template hierarchy, you can use the `allowedParents/allowedChildren` properties on the template. You can then explicitly specify that pages created from a template T have to be parents/children of pages created from a template T.

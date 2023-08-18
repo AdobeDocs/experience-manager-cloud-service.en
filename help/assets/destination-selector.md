@@ -186,12 +186,12 @@ You can use the Destination Selector properties to customize the way the Destina
 | *hasMore* | boolean | No | | When the application has more content to display, you can use this property to add a loader that loads the content to make it visible in the application. It is an indicator that states that content loading is in progress. |
 | *orgName* | boolean | No | | It is the name of org (probably orgID) associated with AEM |
 | *initRepoID* | string | No | | It is the path of assets repository that you want to use in a default initial view  |
-| *onCreateFolder* | string | No | | The `onCreateFolder` property allows you to add icon that adds a new folder in the application. |
+| *onCreateFolder* | string | No | | The `onCreateFolder` property lets you add icon that adds a new folder in the application. |
 | *onConfirm* | string | No | | It is a callback when you hit the confirm button. |
 | *confirmDisabled* | string | No | | This property controls the toggle of the confirm button. |
 | *viewType* | string | No | | The `viewType` property is used to specify the views that you use to display assets.  |
 | *viewTypeOptions* | string | No | | This property is related with `viewType` property. you can specify one or more views to display assets. Available viewTypeOptions are: List view, Grid view, Gallery view, Waterfall view, and Tree view. |
-| *itemNameFormatter* | string | No | | This property allows you to format the item name |
+| *itemNameFormatter* | string | No | | This property lets you format the item name |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No |  | If the OOTB translations are insufficient for your application's needs, you can expose an interface through which you can pass your own custom localized values through the `i18nSymbols` prop. Passing a value through this interface overrides the default translations provided and instead use your own.  To perform the override, you must pass a valid [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) object to the key of `i18nSymbols` that you want to override. |
 | *inlineAlertSetup* | string | No | | It adds an alert message that you want to pass in the application. For example, adding an alert message that You do not have permission to access this folder.  |
 | *intl* | Object | No  | | Destination Selector provides default, OOTB translations. You can select the translation language by providing a valid locale string through the `intl.locale` prop. For example: `intl={{ locale: "es-es" }}` </br></br> The locale strings supported follow the [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) for the representation of names of languages standards. </br></br> List of supported locales: English - 'en-us' (default) Spanish - 'es-es' German - 'de-de' French - 'fr-fr' Italian - 'it-it' Japanese - 'ja-jp' Korean - 'ko-kr' Portuguese - 'pt-br' Chinese (Traditional) - 'zh-cn' Chinese (Taiwan) - 'zh-tw' |
@@ -202,7 +202,7 @@ You can define the Destination Selector [properties](#destination-selector-prope
 
 ### Example 1: Create a folder in Destination Selector
 
-Destination Selector allows you to create a new folder to upload, move, or copy assets at the particular location.
+Destination Selector lets you create a new folder to upload, move, or copy assets at the particular location.
 
    ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -235,7 +235,7 @@ Once the Destination Selector is set up and you are authenticated to use Destina
 
 ### Search bar {#search-bar}
 
-Destination Selector allows you to perform full text search of assets within the selected repository. For example, if you type the keyword `wave` in the search bar, all the assets with the `wave` keyword mentioned in any of the metadata properties are displayed.
+Destination Selector lets you perform full text search of assets within the selected repository. For example, if you type the keyword `wave` in the search bar, all the assets with the `wave` keyword mentioned in any of the metadata properties are displayed.
 
 ### Sorting {#sorting}
 
@@ -243,7 +243,7 @@ You can sort assets in Destination Selector by name, dimension, or size of an as
 
 ### Assets Repository {#assets-repo}
 
-Destination Selector also allows you to view data of repository of your choice available in the AEM application. You can use `repositoryID` property to initialize the path of destination folder that you want to view at the first instance of Destination Selector.
+Destination Selector also lets you view data of repository of your choice available in the AEM application. You can use `repositoryID` property to initialize the path of destination folder that you want to view at the first instance of Destination Selector.
 
 ### Add Suffix or Prefix {#add-suffix-or-prefix}
 
@@ -251,11 +251,11 @@ It is an example of the `optionsFormSetup` property. You can use this to confirm
 
 ### Create a new folder {#create-new-folder}
 
-It allows you to create a new folder in the destination folder of your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+It lets you create a new folder in the destination folder of your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ### Types of view {#types-of-view}
 
-Destination Selector allows you to view the asset in four different views:
+Destination Selector lets you view the asset in four different views:
 
 *   **![list view](assets/do-not-localize/list-view.png) [!UICONTROL List View]**: The list view displays scrollable files and folders in a single column.
 *   **![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL Grid View]**: The grid view displays scrollable files and folders in a grid of rows and columns.
@@ -264,8 +264,8 @@ Destination Selector allows you to view the asset in four different views:
 
 ### Info {#info}
 
-The information or info icon allows you to view metadata of the selected asset. It includes various details such as dimensions, size, description, path, date modified, and date created. The metadata information is provided while uploading or copying or creating a new asset.
+The information or info icon lets you view metadata of the selected asset. It includes various details such as dimensions, size, description, path, date modified, and date created. The metadata information is provided while uploading or copying or creating a new asset.
 
 ### Select folder {#select-folder}
 
-The Select folder button allows you to select assets for perform various operations associated to [properties](#destination-selector-properties) on destination selector.
+The Select folder button lets you select assets for perform various operations associated to [properties](#destination-selector-properties) on destination selector.
