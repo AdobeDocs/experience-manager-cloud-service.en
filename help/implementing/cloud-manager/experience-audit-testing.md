@@ -27,6 +27,10 @@ The audit results are informational and allow the deployment manager to see the 
 
 Experience Audit is powered by Google Lighthouse, an open source tool from Google and is enabled in all Cloud Manager production pipelines.
 
+>[!INFO]
+>
+>Effective August 28th, 2023, Experience Audit will transition to showcasing results specific to the mobile platform. Note that mobile performance metrics typically register lower than those of desktop, so please anticipate a shift in the reported performance following this change.
+
 >[!TIP]
 >
 >You configure what pages are included in the Experience Audit when you [set up your pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
