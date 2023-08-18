@@ -50,6 +50,7 @@ Summarized below are the continuous improvements for maintenance release 13099, 
 
 - SITES-15359: Content Fragments - The variation name pattern fails to correctly match variations that have ```'_'``` in their resource names.
 - SITES-15463: Sites Templates - Templates cannot be published (workaround: use Distribution console).
+- FORMS-10444: Adaptive Forms Templates - Templates cannot be published (workaround: use Distribution console).
 - CQ-4354191: Worfklows - Custom launcher may trigger many times due to replication metadata present on nt:unstructured nodes (workaround: update launchers to exclude replication metadata properties to avoid overlap).
 
 ### Embedded Technologies {#embedded-tech-13099}
