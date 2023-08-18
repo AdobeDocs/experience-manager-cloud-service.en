@@ -1,5 +1,5 @@
 ---
-title: How to assign a workflow to other user, send email, use Adobe Sign in a workflow? 
+title: Use Form-centric AEM workflows to automate business processes
 description: Forms-centric workflows allow you to rapidly build Adaptive Forms-based workflows. You can use Adobe Sign to e-sign documents, create forms-based business processes, retrieve and send data to multiple data sources, and send email notifications
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
@@ -11,7 +11,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html)                  |
 | AEM as a Cloud Service     | This article            |
 
-You use workflow models to convert a business logic to automated repetitive process. A model helps you define and execute a series of steps. You can also define model properties, such as whether the workflow is transient or uses multiple resources. You can [include various AEM Workflow steps in a model to achieve the business logic](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).   
+You use workflow models . A model helps you define and execute a series of steps. You can also define model properties, such as whether the workflow is transient or uses multiple resources. You can [include various AEM Workflow steps in a model to achieve the business logic](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). 
 
 ## Forms-centric steps {#forms-workflow-steps}
 

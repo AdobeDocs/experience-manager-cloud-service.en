@@ -1,11 +1,9 @@
 ---
-title: Add or create an Adaptive Form (Core Components) in AEM Sites page
-seo-title: How to add or create an Adaptive Form (Core Components) to an AEM Sites page?
+title: Add or Create an Adaptive Form to AEM Sites page
 description: You can use Adaptive Form (Core Components) in an AEM Sites page to fill and submit a form without leaving the AEM Sites pages.
 feature: Adaptive Forms
 hide: yes
 hidefromtoc: yes
-exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
 ---
 # Create or add an Adaptive Form using AEM Sites Editor {#add-an-adaptive-form-to-aem-sites-page}
 

@@ -1,5 +1,5 @@
 ---
-title: How to integrate salesforce integration with AEM Forms using OAuth 2.0 client credential flow?
+title: Integration of Salesforce by OAuth 2.0 client credential flow
 seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credential flow
 description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credential flow
 seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credential flow

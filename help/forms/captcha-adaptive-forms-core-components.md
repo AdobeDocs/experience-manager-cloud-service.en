@@ -1,5 +1,5 @@
 ---
-title: Use Google reCAPTCHA in an Adaptive Form based on Core Components
+title: Use Google reCAPTCHA in an Adaptive Form Core Components
 description: Enhance form security with Google reCAPTCHA service effortlessly. Step-by-step guide inside!
 topic-tags: Adaptive Forms, author
 hide: yes

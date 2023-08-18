@@ -1,5 +1,5 @@
 ---
-title: An introduction to Forms as a Cloud Service Communications
+title: Introduction to Forms as a Cloud Service Communications
 description: Automatically merge data with XDP and PDF templates or generate output in PCL, ZPL, and PostScript formats
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 ---
