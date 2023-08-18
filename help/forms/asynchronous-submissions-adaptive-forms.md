@@ -4,7 +4,6 @@ description: Learn how to configure the asynchronous submission for Adaptive For
 feature: Adaptive Forms
 role: User
 level: Intermediate
-exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
 ---
 # Asynchronous submission of Adaptive Forms {#asynchronous-submission-of-adaptive-forms}
 

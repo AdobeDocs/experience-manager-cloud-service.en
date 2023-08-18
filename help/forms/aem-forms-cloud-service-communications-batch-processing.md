@@ -1,5 +1,5 @@
 ---
-title: Experience Manager [!DNL Forms] as a Cloud Service Communications batch processing
+title: AEM Forms as a Cloud Service Communications batch processing
 description: How to create brand-oriented and personalized communications?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
 ---

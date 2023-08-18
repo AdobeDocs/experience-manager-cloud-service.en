@@ -1,7 +1,6 @@
 ---
-title: Set up a local development environment for Adobe Experience Manager Forms as a Cloud Service
+title: Set up local development environment for AEM as a Cloud Service
 description: Set up a local development environment for Adobe Experience Manager Forms as a Cloud Service
-exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 ---
 # Set up a local development environment and initial development project {#overview}
 
