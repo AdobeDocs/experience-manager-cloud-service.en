@@ -18,7 +18,7 @@ Summarized below are the continuous improvements for maintenance release 13099, 
 - SITES-13906: GraphQL - Upgrade to graphql-java 20.1.
 - SITES-8972: GraphQL - Add option label in JSON for Enumeration data type.
 - SITES-9689: GraphQL - Add title and description in JSON for Content Reference data type.
-- SITES-13052: Content Fragments - Export Content Fragments to Adobe Target
+- SITES-13052: Content Fragments - Export Content Fragments to Adobe Target.
 
 ### Fixed Issues {#fixed-issues-13099}
 
@@ -27,7 +27,7 @@ Summarized below are the continuous improvements for maintenance release 13099, 
 - SITES-11620: Content Fragments - References path is slightly cut in the UI.
 - SITES-14171: GraphQL - Circular references are not broken for cached data in some cases.
 - SITES-14577: Experience Fragments - Bulk publish is not working for live copies.
-- SITES-14341: Admin UI - Inconsistent behaviour of the 'Properties' button when delete permissions are removed.
+- SITES-14341: Admin UI - Inconsistent behavior of the 'Properties' button when delete permissions are removed.
 - SITES-11000: Admin UI - References: Incoming links missing in some pages.
 - SITES-11559: Admin UI - References: Incoming Links shows wrong pages.
 - SITES-14337: Admin UI - Opening editor page produces an error in specific cases.
@@ -48,7 +48,9 @@ Summarized below are the continuous improvements for maintenance release 13099, 
 
 ### Known Issues {#known-issues-13099}
 
-- SITES-15359: The variation name pattern fails to correctly match variations that have ```'_'``` in their resource names.
+- SITES-15359: Content Fragments - The variation name pattern fails to correctly match variations that have ```'_'``` in their resource names.
+- SITES-15463: Sites Templates - Templates cannot be published (workaround: use Distribution console).
+- CQ-4354191: Worfklows - Custom launcher may trigger many times due to replication metadata present on nt:unstructured nodes (workaround: update launchers to exclude replication metadata properties to avoid overlap).
 
 ### Embedded Technologies {#embedded-tech-13099}
 

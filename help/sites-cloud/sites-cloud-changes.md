@@ -1,6 +1,6 @@
 ---
 title: Notable Changes to AEM Sites in AEM Cloud Service
-description: Notable Changes to AEM Sites in AEM Cloud Service
+description: Learn more about notable changes to AEM Sites in AEM Cloud Service
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 ---
 
