@@ -13,6 +13,17 @@ Together with the updated JSON exporter, structured content fragments can also b
 
 >[!NOTE]
 >
+>Content Fragments are a **Sites** feature, but are stored as **Assets**. 
+>
+>They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** console, though they can still be managed from the **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console.
+>
+>There are two editors for authoring Content Fragments:
+>
+>* The new editor for [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), is primarily accessed from the **Content Fragments** console.
+>* The [original editor](help/assets/content-fragments/content-fragments-variations.md) is primarily accessed from the **Assets** console. 
+
+>[!NOTE]
+>
 >**Content Fragments** and **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** are different features within AEM:
 >* **Content Fragments** are editorial content, with definition and structure, but without additional visual design and/or layout. They can be used to access structured data, including texts, numbers, and dates, amongst others. 
 >* **Experience Fragments** are fully laid out content; a fragment of a web page.
