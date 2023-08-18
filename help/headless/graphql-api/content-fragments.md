@@ -111,6 +111,8 @@ GraphQL queries using POST requests are not recommended as they are not cached, 
 
 While GraphQL also supports GET requests, these can hit limits (for example the length of the URL) that can be avoided using Persisted Queries.
 
+See [Enable caching of persisted queries](/help/headless/deployment/dispatcher-caching.md) for further details.
+
 >[!NOTE]
 >
 >To allow direct, and/or POST, queries in the Dispatcher you can ask your System Administrator to:
