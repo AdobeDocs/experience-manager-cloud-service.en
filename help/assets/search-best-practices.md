@@ -4,7 +4,9 @@ description: Use Asset selector to search, find, and retrieve assets' metadata a
 contentOwner: Adobe
 ---
 
-# Access Experience League Search {#access-experience-league-search}
+# AEM Search Best Practices
+
+## Access Experience League Search {#access-experience-league-search}
 
 Following are the basic steps to perform in Experience Manager before you begin your search:
 
@@ -15,7 +17,7 @@ Following are the basic steps to perform in Experience Manager before you begin 
 
 **Scenario 1: Perform a basic search using a classic car as the search keyword.**
 
-The keyword search is not case-sensitive and is a full-text search (across the popular metadata fields). If more than one keyword is used, AND is the default operator between the keywords.
+The keyword search is not case-sensitive and is a full-text search (across the popular metadata fields). If more than one keyword is used, **AND is the default operator between the keywords**.
 
 The search results that match all search terms in metadata fields are displayed first, followed by the search results that match any of the search terms in the smart tags. The approximate order of display of search results is:
 
@@ -64,19 +66,13 @@ AND operator is the default operator in Omni Search. For example, when you type 
 ### OR (^) operator {#or-operator}
 
 When you want to be specific with the search results and want an option in the search results, you can use the OR operator. For example, the "classic or car" keyword provides search results with the either of keywords in their metadata.
- 
-### Hyphen (-) or exclude operator {#hyphen-operator}
-
-When you want to retrieve excluding some keywords, you can use the hyphen operator. For example, the "car - classic" keyword provides search results of cars excluding classic.
-
-![Search using Hyphen or Exclude operator](assets/hyphen-operator.png)
 
 ### Asterisk (*) operator {#asterisk-operator}
 
-Asterisk is a wildcard operator that is used to broaden your search by typing fewer characters. When you know the starting characters of the asset that you are searching for but do not know the rest, you can use the asterisk operator in your search. For example, the "*car" query returns all the assets with car available in their metadata. The results could be classic car, sports car, classic and sports car, etc. Below are a few examples of using the asterisk operator in various ways: 
+Asterisk is a wildcard operator that is used to broaden your search by typing fewer characters. When you know the starting characters of the asset that you are searching for but do not know the rest, you can use the asterisk operator in your search. For example, the "*car" query returns all the assets with car available in their metadata. The results could be classic car, sports car, classic and sports car, and so on. Below are a few examples of using the asterisk operator in various ways: 
 
 * `car*` returns assets with caring, car, carried, and so on. 
-* `*car` returns assets with outcar, sportscar, and so on. 
+* `*car` returns assets with out car, sports car, and so on. 
 * `*car*` returns all possible combinations 
 
 ### Question mark (?) operator {#question-mark-operator} 
@@ -86,6 +82,12 @@ The question mark symbol can be used as a conditional operator to ease your sear
 * `car???` query does not match any asset
 * `car????` query matches the word with four characters after car. For example, careful.
 * `?car` query matches the word with one character before car. For example, scar.
+
+### Hyphen (-) or exclude operator {#hyphen-operator}
+
+When you want to retrieve excluding some keywords, you can use the hyphen operator. For example, the "car - classic" keyword provides search results of cars excluding classic.
+
+![Search using Hyphen or Exclude operator](assets/hyphen-operator.png)
 
 ## Filters {#filters}
 
@@ -112,17 +114,17 @@ You can choose one or multiple among various filters to refine your search in Ad
 * Content fragment model 
  -->
 
-**Scenario 4: Search for an Asset named 'classic car' in Black color which has either meta description or a similar asset in Japanese language.**  
+**Scenario 4: Searching for PDF file type with keyword 'classic car' in it. The added asset is created or modified within a particular date range.**
+
+To search for the above requirement, type classic car in the search bar. Then go to filters > File type > Documents > Word Processing > PDF to search for PDF files. Moreover, select the date range in created date and modified date filters. Then select status > publish > unpublished.
+
+![Filter example 2](assets/filter-2.png)
+
+**Scenario 5: Search for an Asset named 'classic car' in Black color which has either meta description or a similar asset in Japanese language.**  
  
 To perform a search on such a requirement, type 'classic car' in the search bar.  Navigate to the filters panel and expand the language search filter drop-down. Type "ja-jp", which represents the Japanese language. Expand the 'Asset Color' filter and select black color or add the hexadecimal code for the black color (#000000).
 
 ![Filter example 1](assets/filter-1.png)
-
-**Scenario 5: Searching for PDF file type with keyword 'classic car' in it. The added asset is created or modified within a particular date range.**
-
-To search for the above requirement, type classic car in the search bar. Then go to filters > File type > Documents > Presentation to search for PPT file. Moreover, check created by and modified by filters to specify author name. 
-
-![Filter example 2](assets/filter-2.png)
 
 ## Operators + Filters {#operators-filters}
 
@@ -149,24 +151,25 @@ The priority order of search is based on the following:
 Priority 1: Metadata
 Priority 2: Smart Tags
 
+## Boosting relevance of keywords {#boosting-keywords}
+
 You can improve the relevance of keywords for particular assets to help boost searches based on the keywords. In other words, the images for which you promote specific keywords appear at the top of the search results when you search based on these keywords.
 
 1. From the Assets user interface, open the properties page for the asset. Click Advanced and click Add under Elevate for search keywords.
 2. In the Search Promote box, specify a keyword for which you want to boost the search for the image and then click Add. You can specify multiple keywords in the same way.
 3. Click Save & Close. The asset which you promoted for this keyword appears among the top search results.
 
-## Notable things while performing search in Experience Manager: 
+## Notable things while performing search in Experience Manager {#notable-things}
 
-* You can use Find Similar option to narrow down your search to the exact or similar match of the searched Asset. 
-* Provide metadata information of the asset to prepare your asset searchable by the Omni Search algorithm. 
-* Use stemming search which means using an exact keyword that you are looking for. 
+* You can use **Find Similar** option to narrow down your search to the exact or similar match of the searched Asset. 
+* Provide metadata information of the asset to prepare your asset searchable by the Omni Search algorithm. Ensure that the metadata information of the asset is updated.
+<!--* Use stemming search approach while searching for the asset. It means using an exact keyword that you are looking for.-->
 * Use double quotes (" ") to make your search exact and to the point. 
 * Cross-check the path that you are looking into. Choose the appropriate option among folder, file, or file and folder to run your search query at the appropriate location. 
-* Specify Smart tags to the asset properties to boost the ranking of the search results. 
+<!--* Specify Smart tags to the asset properties to boost the ranking of the search results.--> 
 * You can check the filters that you are applying to your search on the Omni Search bar. 
-* In case you are not getting any results, cross-check the path you are looking into. Additionally, check the folder you are performing your search from. For example, if you are performing a search inside the 'Automobile folder' but the keyword that you are using is related to 'Apparels' then the search results will be inappropriate.
-* The newly added assets are not indexed. 
-* Check-in case you have added whitespace before the keyword you are searching for. 
-* Ensure metadata information is added/updated. 
+* In case you are not getting any results, cross-check the path you are looking into. Also, check the folder you are performing your search from. For example, if you are performing a search inside the 'Automobile folder' but the keyword that you are using is related to 'Apparels' then the search results are inappropriate.
+<!--* The newly added assets are not indexed.-->
+* Check-in case you have added whitespace before the keyword that you are searching for. 
 * Using a mix and match of keywords, operators, and filters can ease and level up your search experience. 
 
