@@ -163,13 +163,15 @@ You can improve the relevance of keywords for particular assets to help boost se
 
 * You can use **Find Similar** option to narrow down your search to the exact or similar match of the searched Asset. 
 * Provide metadata information of the asset to prepare your asset searchable by the Omni Search algorithm. Ensure that the metadata information of the asset is updated.
-<!--* Use stemming search approach while searching for the asset. It means using an exact keyword that you are looking for.-->
 * Use double quotes (" ") to make your search exact and to the point. 
 * Cross-check the path that you are looking into. Choose the appropriate option among folder, file, or file and folder to run your search query at the appropriate location. 
-<!--* Specify Smart tags to the asset properties to boost the ranking of the search results.--> 
 * You can check the filters that you are applying to your search on the Omni Search bar. 
 * In case you are not getting any results, cross-check the path you are looking into. Also, check the folder you are performing your search from. For example, if you are performing a search inside the 'Automobile folder' but the keyword that you are using is related to 'Apparels' then the search results are inappropriate.
-<!--* The newly added assets are not indexed.-->
 * Check-in case you have added whitespace before the keyword that you are searching for. 
 * Using a mix and match of keywords, operators, and filters can ease and level up your search experience. 
 
+<!--
+* Use stemming search approach while searching for the asset. It means using an exact keyword that you are looking for.
+* Specify Smart tags to the asset properties to boost the ranking of the search results.
+The newly added assets are not indexed.
+--> 
