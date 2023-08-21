@@ -7,20 +7,20 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 13173 {#release-X}
+## Release 13206 {#release-13206}
 
 Summarized below are the continuous improvements for maintenance release X, which was publicly released on August 21, 2023. This maintenance release is an update from previous maintenance releases 13173 and 13099 that were both made private because of an issue.
 
 2023.8.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-X}
+### Enhancements {#enhancements-13206}
 
 - SITES-13906: GraphQL - Upgrade to graphql-java 20.1.
 - SITES-8972: GraphQL - Add option label in JSON for Enumeration data type.
 - SITES-9689: GraphQL - Add title and description in JSON for Content Reference data type.
 - SITES-13052: Content Fragments - Export Content Fragments to Adobe Target.
 
-### Fixed Issues {#fixed-issues-X}
+### Fixed Issues {#fixed-issues-13206}
 
 - SITES-14937: MSM - Inherit Rollout Configs from Parent value get toggled on hitting Save & Close on live copies.
 - SITES-14847: Content Fragments - Content Fragment Links are not highlighted.
@@ -44,16 +44,15 @@ Summarized below are the continuous improvements for maintenance release X, whic
 - FORMS-8554: Adaptive Forms with lazy loading enabled do not work in preview mode of the author instance. 
 - FORMS-8177: When the forms service is active, an exception "com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Failed to retrieve asset dependencies." occurs. The error disappears on disabling the form service. 
 - FORMS-3691: Some objects are missing IIFE (Immediately Invoked Function Expression) scoping. The primary purpose of using an IIFE is to create a scope for variables within the function, preventing those variables from polluting the global scope. 
-
 - SITES-15463: Sites Templates - Templates cannot be published.
 
-### Known Issues {#known-issues-X}
+### Known Issues {#known-issues-13206}
 
 - SITES-15359: Content Fragments - The variation name pattern fails to correctly match variations that have ```'_'``` in their resource names.
 - FORMS-10444: Adaptive Forms Templates - Templates cannot be published (workaround: use Distribution console).
 - CQ-4354191: Worfklows - Custom launcher may trigger many times due to replication metadata present on nt:unstructured nodes (workaround: update launchers to exclude replication metadata properties to avoid overlap).
 
-### Embedded Technologies {#embedded-tech-X}
+### Embedded Technologies {#embedded-tech-13206}
 
 |Technology|Version|Link|
 |---|---|---|
