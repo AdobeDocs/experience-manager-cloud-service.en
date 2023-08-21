@@ -1,5 +1,5 @@
 ---
-title: Add a custom error handler in AEM Adaptive Forms
+title: Add custom error handlers in AEM Adaptive Forms
 description: AEM Forms provides out-of-the-box success and error handlers for a form using the REST endpoint configured to invoke an external service. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 seo-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: Add a custom error handler, add a default error handler, add a error handler in form, use rule editor's invoke service to add a custom error handler, configure rule editor to add a custom error handler , add custom error handler using rule editor
@@ -7,7 +7,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 ---
-# Error Handlers in Adaptive Forms {#error-handlers-in-adaptive-form}
+# Add Custom Error Handlers in AEM Adaptive Forms {#error-handlers-in-adaptive-form}
 
 <span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
 
