@@ -79,7 +79,7 @@ Asterisk is a wildcard operator that is used to broaden your search by typing fe
 
 The question mark symbol can be used as a conditional operator to ease your search in Experience Manager. 
 
-* `car???` query does not match any asset
+* `car?` query matches the word with one character after car. For example,cart.
 * `car????` query matches the word with four characters after car. For example, careful.
 * `?car` query matches the word with one character before car. For example, scar.
 
