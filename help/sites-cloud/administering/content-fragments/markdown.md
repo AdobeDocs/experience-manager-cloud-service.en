@@ -9,7 +9,7 @@ role: User
 
 When you are [authoring](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) your Content Fragments you may have [Multi line text fields](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) defined with the **Default Type** of **Markdown**. The Content Fragment editor uses *markdown* syntax to allow you to easily write content for both page authoring and headless delivery:
 
-![markdown editor](/help/sites-cloud/administering/content-fragments/assets/cfm-markdown-01.png)
+![Markdown Multi line text field in the editor](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
 You can define:
 
