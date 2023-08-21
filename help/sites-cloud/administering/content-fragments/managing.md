@@ -137,11 +137,13 @@ Selecting a specific fragment will open a toolbar focused on the actions availab
 ![Content Fragments console - toolbar for a selected fragment](assets/cf-managing-console-fragment-toolbar.png)
 
 * **[Open in new Editor](#editing-the-content-of-your-fragment)**
+* **[Open](/help/assets/content-fragments/content-fragments-variations.md)** (in original editor)
 * **[Publish](#publishing-and-previewing-a-fragment)** (and **[Unpublish](#unpublishing-a-fragment)**)
 * **[Manage Tags](#manage-tags)**
-* **Copy**
-* **Move**
-* **Rename**
+* **[Copy](/help/assets/manage-digital-assets.md)**
+* **[Replace](/help/assets/manage-digital-assets.md)**
+* **[Move](/help/assets/manage-digital-assets.md)**
+* **[Rename](/help/assets/manage-digital-assets.md)**
 * **[Delete](#deleting-a-fragment)**
 
 >[!NOTE]
@@ -283,8 +285,9 @@ To manage the tags:
 1. Navigate to the Content Fragment console.
 1. Select a Content Fragment.
 1. Select **Manage Tags** in the toolbar.
-1. Use the Tag selector to select tags to apply, or remove.
-1. Save updates. This will return you to the console.
+1. Use the Tag selector to select tags to apply, or remove:
+   ![Manage Tags](assets/cf-managing-manage-tags.png)
+1. **Save** updates. This will return you to the console.
 
 ### Viewing, and Editing, Tags (Editor) {#viewing-and-editing-tags}
 
