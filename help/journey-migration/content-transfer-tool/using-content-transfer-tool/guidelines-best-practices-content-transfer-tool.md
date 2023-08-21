@@ -45,6 +45,8 @@ The following Guidelines and Best Practices apply to the new version of the Cont
   
 * A migration set needs to be maintained throughout the content transfer activity to support content top-ups. A maximum of five  migration sets per project in Cloud Acceleration Manager can be created and maintained at a time during the content transfer activity. If more than five migration sets are needed, you will need to create a second project in Cloud Acceleration Manager. However, this will require additional project management and out-of-product governance to avoid overwriting content on the target by multiple users.
 
+* Avoid altering the installation directory of the CTT tool. By default, the installation takes place in the crx-quickstart/cloud-migration path. This specific location is internally utilized by other libraries. Modifying this path can result in extraction issues.
+
 ## Important Considerations Before Using Content Transfer Tool {#important-considerations}
 
 Follow the section below to understand the important considerations while running the Content Transfer tool:
