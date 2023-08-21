@@ -1,12 +1,10 @@
 ---
-title: Import, export and organize Adaptive Forms, PDF forms, and other assets
-seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
+title: Import or Export Adaptive Forms and AEM Forms assets
 description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance. 
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance. 
 topic-tags: forms-manager
-exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 ---
-# Import, export, and organize Adaptive Forms, PDF forms, and other assets{#importing-and-exporting-assets-to-aem-forms}
+# Import or Export Adaptive Forms and AEM Forms assets {#importing-and-exporting-assets-to-aem-forms}
 
 You can move Adaptive Forms and related assets such as Adaptive Form themes, Form Data Models, Adaptive Form templates, document fragments, and PDF forms between [!DNL AEM Forms] instances. You can import and export assets in CRX package or binary file formats. 
 
