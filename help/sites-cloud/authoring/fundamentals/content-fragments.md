@@ -20,7 +20,7 @@ Together with the updated JSON exporter, structured content fragments can also b
 >There are two editors for authoring Content Fragments:
 >
 >* The new editor for [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), is primarily accessed from the **Content Fragments** console.
->* The [original editor](help/assets/content-fragments/content-fragments-variations.md) is primarily accessed from the **Assets** console. 
+>* The [original editor](/help/assets/content-fragments/content-fragments-variations.md) is primarily accessed from the **Assets** console. 
 
 >[!NOTE]
 >
