@@ -6,7 +6,7 @@ seo-description: Steps to integrate Salesforce integration with AEM Forms using 
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration
 ---
 
-# Integration of Salesforce application using OAuth 2.0 client credential flow {#configure-salesforce-with-ouath-2.0-client-credential}
+# Integration of Salesforce by OAuth 2.0 client credential flow {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Version | Article link |
 | -------- | ---------------------------- |

@@ -1,8 +1,8 @@
 ---
-title: Configure Microsoft Dynamics 365, Salesforce for AEM Forms
+title: Configure Microsoft Dynamics 365 or Salesforce for AEM Forms
 description: Learn how to integrate Microsoft Dynamics 365 and Salesforce with adaptive forms.
 ---
-# Configure [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloud services {#configure-azure-storage}
+# Configure Microsoft Dynamics 365 or Salesforce for AEM Forms {#configure-azure-storage}
 
 | Version | Article link |
 | -------- | ---------------------------- |

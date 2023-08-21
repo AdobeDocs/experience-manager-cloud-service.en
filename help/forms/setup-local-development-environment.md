@@ -1,8 +1,8 @@
 ---
-title: Set up local development environment for AEM as a Cloud Service
+title: Set up local development environment for AEM Forms
 description: Set up a local development environment for Adobe Experience Manager Forms as a Cloud Service
 ---
-# Set up a local development environment and initial development project {#overview}
+# Set up local development environment for AEM Forms {#overview}
 
 When you set up and configure an [!DNL  Adobe Experience Manager Forms] as a [!DNL  Cloud Service] environment, you set up development, staging, and production environments on cloud. In addition, you can also set up and configure a local development environment.
 

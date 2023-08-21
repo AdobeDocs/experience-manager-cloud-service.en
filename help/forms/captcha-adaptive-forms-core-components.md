@@ -1,12 +1,12 @@
 ---
-title: Use Google reCAPTCHA in an Adaptive Form Core Components
+title: Use Google reCAPTCHA in an AEM Adaptive Form
 description: Enhance form security with Google reCAPTCHA service effortlessly. Step-by-step guide inside!
 topic-tags: Adaptive Forms, author
 hide: yes
 hidefromtoc: yes
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
 ---
-# Use reCAPTCHA in Adaptive Forms based on Core Components {#using-reCAPTCHA-in-adaptive-forms}
+# Use Google reCAPTCHA in an AEM Adaptive Form {#using-reCAPTCHA-in-adaptive-forms}
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes. 
 
