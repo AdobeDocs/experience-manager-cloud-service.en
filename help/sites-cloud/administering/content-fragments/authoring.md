@@ -382,13 +382,17 @@ In the properties tab of the right panel, properties (metadata) and tags can be 
 * for the **Content Fragment** - if **Main** is currently selected
 * for a specific **Variation**
 
+![Content Fragment Editor - Properties](assets/cf-authoring-properties.png) 
+
 ### Edit Properties and Tags {#edit-properties-tags}
 
 In the properties tab (right panel) you can also edit:
 
 * **Title**
 * **Description**
-* **Tags** 
+* **Tags**: using the dropdown, or the selection dialog
+
+  ![Content Fragment Editor - Manage Tags](assets/cf-authoring-edit-tags.png) 
 
 ### Open the Content Fragment Model {#open-content-fragment-model}
 
