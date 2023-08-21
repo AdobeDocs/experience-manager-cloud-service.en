@@ -9,18 +9,17 @@ Designer is a point-and-click graphical form design tool that simplifies the cre
 
 ## Pre-requisites {#pre-requisites}
 
-If you have already installed any previous version of AEM Forms Designer 32-bit, uninstall it. To install the latest version AEM Forms Designer 64-bit you require the following software and minimum hardware to install and configure Designer:
+If you have already installed any previous version of AEM Forms Designer 32-bit, uninstall it. To install the latest version AEM Forms Designer 64-bit, you require the following software and minimum hardware to install and configure Designer:
 
 * [!DNL Microsoft® Windows® 2016 Server], [!DNL Microsoft® Windows® 2019 Server], or [!DNL Microsoft® Windows® 10]
-* 1 GB of RAM for 32-bit (Deprecated) or 2 GB of RAM for 64-bit OS
-* 16-GB disk space for 32-bit or 20-GB disk space for 64-bit OS
+* Minimum 2 GB of RAM
 * Graphics memory - 128 MB of GPU (256 MB recommended)
 * 2.35 GB of available hard-disk space
 * 1024 X 768 pixels or greater monitor resolution
 * Video hardware acceleration (optional)
 * Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC.
 * Administrative privileges to install Designer.
-* Microsoft Visual C++ 2019 (VC 14.28 or greater) 64-bit runtime
+* Microsoft® Visual C++ 2019 (VC 14.28 or greater) 64-bit runtime
 
 ## Install Designer {#install-designer}
 
