@@ -28,11 +28,55 @@ To use Content Fragment Models you:
    >
    >If the [use of Content Fragment models have not been enabled](/help/sites-cloud/administering/content-fragments/setup.md), the **Create** option will not be available.
 
-1. Specify the **Model Title**. You can also add **Tags**, a **Description**, and select **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) if required.
+1. Specify the **Model Title**. 
+   You can also define various properties; for example, add **Tags**, a **Description**, select **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) if require and define the
+    **Default Preview URL Pattern**.
+
+    >[!NOTE]
+    >
+    >See [Content Fragment Model - Properties](#content-fragment-model-properties) for full details.
 
    ![Title and description](assets/cf-cfmodels-create.png)
 
 1. Use **Create** to save the empty model. A message indicates the success of the action, you can select **Open** to immediately edit the model, or **Done** to return to the console.
+
+### Content Fragment Model - Properties {#content-fragment-model-properties}
+
+These properties are defined when you create a model, and can be edited later with the **Properties** option for the Content Fragment Model:
+
+* **Basic**
+  * **Model Title**
+  * **Tags**
+  * **Description**
+  * **Enable model**
+  * **Default Preview URL Pattern**
+    The Content Fragment editor allows authors to **Preview** their content in an external frontend application. Once the **Preview Service** is configured, add the URL for the frontend application.
+
+    The preview URL should follow this pattern:
+    &nbsp;&nbsp;&nbsp;&nbsp;`https://<preview_url>?param=${expression}`
+
+    Available expressions are:
+
+    * `${contentFragment.path}`
+    * `${contentFragment.model.path}`
+    * `${contentFragment.model.name}`
+    * `${contentFragment.variation}`
+    * `${contentFragment.id}`
+
+  * **Upload Image**
+
+<!-- CHECK: currently under FT -->
+<!--
+* **GraphQL**
+  Define names relevant for GraphQL.
+  Changing the GraphQL API Name, or Query field names will impact client applications.
+  * **API Name**
+    Represents the GraphQL type and query field names in the GraphQL schema.
+  * **Single Query Field Name**
+    Represents the GraphQL single query field name in the GraphQL schema.
+  * **Multiple Query Field Name**
+    Represents the GraphQL multiple query field name in the GraphQL schema.
+-->
 
 ## Defining your Content Fragment Model {#defining-your-content-fragment-model}
 
@@ -318,30 +362,6 @@ In addition to standard properties you can define:
 >A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference, and may lead to an empty Fragment Reference picker dialog.
 >
 >There is also recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it returns null.
-
-## Content Fragment Model - Properties {#content-fragment-model-properties}
-
-You can edit the **Properties** of a Content Fragment Model:
-
-* **Basic**
-  * **Model Title**
-  * **Tags**
-  * **Description**
-  * **Default Preview URL Pattern**
-    The Content Fragment editor allows authors to **Preview** their content in an external frontend application. Once the **Preview Service** is configured, add the URL for the frontend application.
-
-    The preview URL should follow this pattern:
-    &nbsp;&nbsp;&nbsp;&nbsp;`https://<preview_url>?param=${expression}`
-
-    Available expressions are:
-
-    * `${contentFragment.path}`
-    * `${contentFragment.model.path}`
-    * `${contentFragment.model.name}`
-    * `${contentFragment.variation}`
-    * `${contentFragment.id}`
-
-  * **Upload Image**
 
 ## Enabling or Disabling a Content Fragment Model {#enabling-disabling-a-content-fragment-model}
 
