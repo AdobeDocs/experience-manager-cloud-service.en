@@ -1,9 +1,9 @@
 ---
-title: Use Forms Designer to create Document of Record (DoR) templates and form fragments
+title: Use Forms Designer to create DOR templates and form fragment
 description: Use [!DNL AEM Forms] designer to create Document of Record templates.
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
 ---
-# Using Designer {#install-designer}
+# Use Forms Designer to Create Document of Record (DoR) templates and form fragment {#install-designer}
 
 Designer is a point-and-click graphical form design tool that simplifies the creation of XDP form templates. You can design a form template, define its logic, and meet strict legislative requirements. These templates server as a Document of Record template for an Adaptive Form. These forms templates are different from [Adaptive Form templates](template-editor.md). 
 
