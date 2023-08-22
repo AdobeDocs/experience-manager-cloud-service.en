@@ -1,11 +1,11 @@
 ---
-title: Dynamically select a user or group for AEM Forms-centric workflow steps
+title: Dynamic User or Group Selection in AEM Workflow
 description: Learn how to select a user or group for an [!DNL AEM Forms] workflow at the runtime. 
 content-type: troubleshooting
 topic-tags: publish
 ---
 
-# Dynamically select a user or group for AEM Forms-centric workflow steps {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# Dynamic User or Group Selection in AEM Workflow {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 Learn how to select a user or group for an [!DNL AEM Forms] workflow at the runtime. 
 
