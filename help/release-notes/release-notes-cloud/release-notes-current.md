@@ -116,28 +116,6 @@ Use [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience
 
 You can send an email to `aem-forms-headless@adobe.com` from your official email ID to join the early adopter program. 
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### Actions Center {#actions-center}
-
-Subscribe to email notifications that alert you when critical incidents happen requiring immediate action, and also with personalized recommendations to optimize your site. [Actions Center](/help/operations/actions-center.md) serves as a hub where you can review these alerts, such as blocked replication queues or expiring credentials, and mark them as resolved.
-
-![Actions Center screenshot](/help/assets/assets/actions-center.png)
-
-### CDN and WAF Rules early adopter program {#waf-early-adopter}
-
-Filter traffic at the CDN based on:
-* request headers and properties (e.g., IP address)
-* traffic patterns known to be associated with malicious traffic
-
-Interested in trying out the feature and sharing feedback? Send an email to **aemcs-waf-adopter@adobe.com** from your official email ID to learn more about the early adopter program. Space is limited.
-
-Learn more about the feature in the article [here](/help/security/cdn-and-waf-rules.md).
-
-### Other Foundation changes {#other-foundation-changes}
-
-* During the week of August 7th, AEM will return error code 429 instead of error code 503 when requests to AEM instances exceed a healthy level. [Learn more](/help/implementing/developing/introduction/development-guidelines.md).
-
 ## Maintenance Release Notes {#maintenance}
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
