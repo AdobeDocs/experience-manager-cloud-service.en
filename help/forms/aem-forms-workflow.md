@@ -1,17 +1,11 @@
 ---
 title: Forms-centric workflow on OSGi
-seo-title: Rapidly build Adaptive Forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
 description: Use [!DNL AEM Forms] Workflow to automate and rapidly build review and approvals, to start document services
 seo-description: Use [!DNL AEM Forms] Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Adobe Sign signature workflow, and more.
-uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
-docset: aem65
-
 ---
 
-# Forms-centric workflow on OSGi{#forms-centric-workflow-on-osgi}
+# Forms-centric workflow on OSGi {#forms-centric-workflow-on-osgi}
 
  ![Hero Image](do-not-localize/header.png)
 
