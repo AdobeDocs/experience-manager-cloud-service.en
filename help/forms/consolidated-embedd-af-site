@@ -1,10 +1,10 @@
 ---
-title: Embedd an AEM Adaptive Form to an AEM Sites page
+title: Embed an AEM Adaptive Form to an AEM Sites page
 description: You can use AEM Forms Container component to add or embed Adaptive Forms (Core Components)  to an AEM Sites page to fill and submit a form without leaving the AEM Sites pages.
 feature: Adaptive Forms
 ---
 
-# Embed an Adaptive Form to an AEM sites page {#embed-an-adaptive-form-to-aem-sites-page}
+# Embed an AEM Adaptive Form to an AEM sites page {#embed-an-adaptive-form-to-aem-sites-page}
 
 AEM Forms allow form developers to seamlessly embed Adaptive Forms (Core Components) in an AEM Sites page or a web page hosted outside AEM. The embedded Adaptive Form (Core Components) is fully functional and users can fill and submit the form without leaving the page. It helps user remain in context of other elements on the web page and simultaneously interact with the form.
 
