@@ -490,48 +490,51 @@ You can unpublish your fragment from either the editor, or the console. See [Unp
 
 The **Fields** panel lists all fields within the Content Fragment. The icon indicates the **[Data Type](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**:
 
-* **Single line text**
-
-  ![Content Fragment Editor - Single line text icon](assets/cf-authoring-single-line-text-icon.png)
-
-* **Multi line text**
-
-  ![Content Fragment Editor - Multi line text icon](assets/cf-authoring-multi-line-text-icon.png)
-
-* **Number**
-
-  ![Content Fragment Editor - Number icon](assets/cf-authoring-number-icon.png)
-
-* **Boolean**
-
-  ![Content Fragment Editor - Boolean icon](assets/cf-authoring-boolean-icon.png)
-
-* **Date and time**
-
-  ![Content Fragment Editor - Data and Time icon](assets/cf-authoring-date-time-icon.png)
-
-* **Enumeration**
-
-  ![Content Fragment Editor - Enumeration icon](assets/cf-authoring-enumeration-icon.png)
-
-* **Tags**
-
-  ![Content Fragment Editor - Tags icon](assets/cf-authoring-tags-icon.png)
-
-* **Content Reference**
-
-  ![Content Fragment Editor - Content Reference icon](assets/cf-authoring-content-reference-icon.png)
-  
-* **Fragment Reference**
-
-  ![Content Fragment Editor - Fragment Reference icon](assets/cf-authoring-fragment-reference-icon.png)
-
-* **JSON Object**
-
-  ![Content Fragment Editor - JSON Object icon](assets/cf-authoring-json-icon.png)
-
-* **Tab Placeholder**
-
-  Although not represented by an actual icon, a **Tab Placeholder** is represented in the left panel, as well as in the central panel:
-  
-  ![Content Fragment Editor - Tab Placeholder](assets/cf-authoring-tab-icon.png)
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+   <td><p><b>Single line text</b></p> </td>
+   <td><p> <img src="assets/cf-authoring-single-line-text-icon.png"> </p></td>
+  </tr>
+  <tr>
+   <td><p><b>Multi line text</b></p> </td>
+   <td><p> <img src="assets/cf-authoring-multi-line-text-icon.png"> </p></td>
+  </tr>
+  <tr>
+   <td><p><b>Number</b></p> </td>
+   <td><p> <img src="assets/cf-authoring-number-icon.png"> </p></td>
+  </tr>
+  <tr>
+   <td><p><b>Boolean</b></p> </td>
+   <td><p> <img src="assets/cf-authoring-boolean-icon.png"> </p></td>
+  </tr>
+  <tr>
+   <td><p><b>Date and time</b></p> </td>
+   <td><p> <img src="assets/cf-authoring-date-time-icon.png"> </p></td>
+  </tr>
+  <tr>
+   <td><p><b>Enumeration</b></p> </td>
+   <td><p> <img src="assets/cf-authoring-enumeration-icon.png"> </p></td>
+  </tr>
+  <tr>
+   <td><p><b>Tags</b></p> </td>
+   <td><p> <img src="assets/cf-authoring-tags-icon.png"> </p></td>
+  </tr>
+  <tr>
+   <td><p><b>Content Reference</b></p> </td>
+   <td><p> <img src="assets/cf-authoring-content-reference-icon.png"> </p></td>
+  </tr>
+  <tr>
+   <td><p><b>Fragment Reference</b></p> </td>
+   <td><p> <img src="assets/cf-authoring-fragment-reference-icon.png"> </p></td>
+  </tr>
+  <tr>
+   <td><p><b>JSON Object</b></p> </td>
+   <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
+  </tr>
+  <tr>
+   <td><p><b>Tab Placeholder</b></p><p>Although not represented by an actual icon, a <b>Tab Placeholder</b> is represented in the left panel, as well as in the central panel.</p> </td>
+   <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
+  </tr>
+ </tbody>
+</table>
