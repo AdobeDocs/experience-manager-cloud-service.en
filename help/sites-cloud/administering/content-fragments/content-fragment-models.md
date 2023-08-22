@@ -7,8 +7,6 @@ role: User, Developer, Architect
 
 # Content Fragment Models {#content-fragment-models}
 
-<!-- CHECK: 2023.08.08 screenshots not checked; Child Fragment Reference/GraphQL tab -->
-
 Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service define the structure for the content of your [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md). These fragments can then be used for page authoring, or as a foundation for your headless content.
 
 To use Content Fragment Models you:
@@ -85,8 +83,6 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 >[!CAUTION]
 >
 >Editing a model that is already used by existing Content Fragments can impact those dependent fragments.
-
-<!-- CHECK: add link to opening model editor directly from new fragment editor? -->
 
 1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.
 

@@ -70,8 +70,6 @@ For an example, see the Sling Model implementation of the Image Core Component a
 
 ## Related Documentation {#related-documentation}
 
-<!-- CHECK: original editor for links? -->
-
 For further details see:
 
 * [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)

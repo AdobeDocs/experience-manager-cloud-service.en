@@ -78,8 +78,6 @@ These Content Fragments can then be assembled to provide experiences over a vari
 
 This and the following pages cover the tasks for creating, configuring, maintaining, and using your Content Fragments:
 
-<!-- CHECK: links -->
-
 * [Enable Content Fragment functionality for your instance](/help/sites-cloud/administering/content-fragments/setup.md)
 * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - enabling, creating, and defining your models
 * [Create your Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment) (using the Content Fragment Console)
@@ -190,8 +188,6 @@ Assets can be used with a Content Fragment in several ways; each with its own ad
 
 ### Constituent Parts of a Content Fragment {#constituent-parts-of-a-content-fragment}
 
-<!-- CHECK: How to differentiate between features visible in the two editors -->
-
 The Content Fragment assets are made up of the following parts (either directly or indirectly):
 
 * **Fragment Elements**
@@ -201,16 +197,11 @@ The Content Fragment assets are made up of the following parts (either directly 
 
 * **Fragment Paragraphs**
 
-  <!-- CHECK: is this valid for the new editor? -->
-
   * Blocks of text, often multi line, that are delimited as individual entities.
 
   * Enable content control during page authoring.
 
 * **Fragment Metadata**
-
-  <!-- CHECK: can you view fragment properties from the CF console? -->
-  <!-- CHECK: 2023.8.10 - doesn't look like it -->
 
   * Use the [Assets metadata schemas](/help/assets/metadata-schemas.md).
   * Tags can be created when you:
@@ -287,15 +278,3 @@ The WKND project includes:
 * Content Fragments (and other content) available under:
 
   * `.../assets.html/content/dam/wknd/en`
-
-  <!-- CHECK: Can the following be used - need to change sitesinternal? -->
-
-  <!--
-  * `.../@sitesinternal/aem/cf/admin/content/dam/wknd`
-
-  * `.../@sitesinternal/aem/cf/admin/content/dam/wknd-shared`
-
-  * `.../@sitesinternal/aem/cf/admin/content/dam/sample-wknd-app`
-
-  * `.../@sitesinternal/aem/cf/admin/content/dam/wknd-vacations`
-  -->

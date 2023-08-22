@@ -26,8 +26,6 @@ This editor provides:
 * Ability to [view, and open, parent references](#view-parent-references).
 * A hierarchical view of the Content Fragment, and its references, using the [Structure tree](#structure-tree).
 
-<!-- CHECK: will this change when the original editor has a toggle? -->
-
 >[!CAUTION]
 >
 >The editor described in this section is *only* available in the *online* Adobe Experience Manager (AEM) as a Cloud Service.
@@ -48,8 +46,6 @@ This editor provides:
 
 ## Content Fragment Editor {#content-fragment-editor}
 
-<!-- CHECK: screenshot checked 2023.08.07 -->
-
 When you first open the Content Fragment Editor, you see four main areas:
 
 * top toolbar: for key information, and actions
@@ -67,8 +63,6 @@ When you first open the Content Fragment Editor, you see four main areas:
 * central panel: shows the actual fields, and content, of the selected variation
   * allows you to edit the content
   * if **Tab Placeholder** fields are defined within the model they are shown here, and can be used for navigating; they will either be presented horizontally, or as a dropdown list
-
-<!-- CHECK: screenshot checked 2023.08.07 -->
 
 ![Content Fragment Editor - Overview](assets/cf-authoring-overview.png)
 
@@ -112,8 +106,6 @@ In various parts of the editor you will see the link icon. This can be used to o
 
 Open the **Structure tree** tab from the editor toolbar to show the hierarchical structure of the Content Fragment, and its references. Use the link icons to navigate to the references.
 
-<!-- CHECK: screenshot checked 2023.08.08 -->
-
 ![Content Fragment Editor - Structure tree](assets/cf-authoring-structure-tree.png)
 
 >[!NOTE]
@@ -150,13 +142,9 @@ To create a Variation of your Content Fragment:
    >
    >After creating your first variation, existing variations will be listed in the same panel.
 
-   <!-- CHECK: screenshot checked 2023.08.07 -->
-
    ![Content Fragment Editor - Create your first Variation](assets/cf-authoring-create-variation-01.png)
 
 1. In the dialog, enter a **Title** for your variation, and a **Description** if wanted:
-
-   <!-- CHECK: screenshot checked 2023.08.07 -->
 
    ![Content Fragment Editor - Create Variation dialog](assets/cf-authoring-create-variation-02.png)
 
@@ -187,8 +175,6 @@ To delete a Variation of your Content Fragment:
 
 1. In the **Variation** panel, select the delete icon (Trash Can):
 
-   <!-- CHECK: screenshot checked 2023.08.07 -->
-
    ![Content Fragment Editor - Delete Variation icon](assets/cf-authoring-delete-variation.png)
 
 1. A dialog opens. Select **Delete** to confirm the action.
@@ -196,8 +182,6 @@ To delete a Variation of your Content Fragment:
 ## Edit Multi line text fields - Plain text or Markdown {#edit-multi-line-text-fields-plaintext-markdown}
 
 **[Multi line text](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** fields can have one of three formats:
-
-<!-- CHECK: screenshot checked 2023.08.07 -->
 
 * Plain Text
 * [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
@@ -231,8 +215,6 @@ For **[Multi line text](/help/sites-cloud/administering/content-fragments/conten
 
 For example:
 
-<!-- CHECK: screenshot checked 2023.08.07 -->
-
 ![Content Fragment Editor - Multi line text - full screen toggle](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
 >[!NOTE]
@@ -245,8 +227,6 @@ The full-screen editor offers the same editing options as when in-flow - but off
 
 For example:
 
-<!-- CHECK: screenshot checked 2023.08.07 -->
-
 ![Content Fragment Editor - Multi line text - full screen](assets/cf-authoring-multilinetext-fullscreen.png)
 
 ### Statistics - Rich Text {#statistics-rich-text}
@@ -254,8 +234,6 @@ For example:
 The action **Statistics** displays a range of information about the text in a Multi line field. 
 
 For example:
-
-<!-- CHECK: screenshot checked 2023.08.07 -->
 
 ![Content Fragment Editor - Statistics](assets/cf-authoring-multilinetext-statistics.png)
 
@@ -285,8 +263,6 @@ This opens the Multi line field in full-screen and:
   >Transferring changes *from a variation to **Main*** is not available as an option.
 
 For example, a scenario where the variation content had been completely rewritten, so a synchronization will replace that new content with the content from **Main**:
-
-<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragment Editor - Compare and Sync](assets/cf-authoring-multilinetext-compare.png)
 
@@ -332,18 +308,11 @@ In **Content Reference** fields you can both:
   >
   >* have a **Root Path** defined (in the [Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). This specifies where the image will be stored.
   >* include **Image** in the list of accepted content types
-  
-  <!-- CHECK - error message when accepted content types missing Image?
-  >
-  >If the **Root Path** is not defined you will see an error message when trying to directly upload an image into the **Content Reference** field.
-  -->
 
 To add an asset, you can either:
 
 * drag and drop the new asset file directly (for example, from your file system) into the **Content Reference** field
 * use the **Add asset** action, then select either **Browse Assets** or **Upload** to open the appropriate selector for you to use:
-
-  <!-- CHECK: screenshot checked 2023.08.08 -->
 
   ![Content Fragment Editor - Add asset options](assets/cf-authoring-add-asset-options.png)
 
@@ -363,15 +332,11 @@ Selecting the link icon in the top toolbar opens a list of all parent references
 
 For example:
 
-<!-- CHECK: screenshot checked 2023.08.08 -->
-
 ![Content Fragment Editor - Show References](assets/cf-authoring-show-references-link.png)
 
 A window opens, listing all related references. To open a reference, select the name or title, or the link icon. 
 
 For example:
-
-<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragment Editor - Show References](assets/cf-authoring-show-references.png)
 
@@ -410,8 +375,6 @@ In the **Version history** tab of the right panel, details of the current, and p
 >
 >A new version is created when the content fragment is published.
 
-<!-- CHECK: screenshot -->
-
 ![Content Fragment Editor - Version History Overview](assets/cf-authoring-version-history-overview.png)
 
 ### Revert to a Version {#revert-version}
@@ -432,28 +395,12 @@ In the **Language properties** tab details of any related language copies are sh
 
 For example:
 
-<!-- CHECK: screenshot checked 2023.08.08 -->
-
 ![Content Fragment Editor - open Language Copy](assets/cf-authoring-open-language-copies.png)
 
 >[!NOTE]
 >
 >For more details about translating a Content Fragment, and creating language copies, see the [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md).
 
-
-<!-- CHECK: Replace with snippet? See also analysis.md  -->
-
-<!--
-## JSON preview {#json-preview}
-
-Select **JSON preview** from the editor toolbar to show the JSON representation of the current fragment. For example:
-
-![Content Fragment Editor - JSON Preview](assets/cf-authoring-json-preview.png)
-
->[!NOTE]
->
->See [Content Delivery - JSON Preview](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md#json-preview) for more details.
--->
 
 ## Preview your Fragment {#preview-content-fragment}
 
@@ -485,8 +432,6 @@ You can also **Unpublish** your fragment from either your:
 You can unpublish your fragment from either the editor, or the console. See [Unpublishing a fragment](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) for full details.
 
 ## Fields, Data Types and Icons {#fields-datatypes-icons}
-
-<!-- CHECK: screenshots checked 2023.08.08 -->
 
 The **Fields** panel lists all fields within the Content Fragment. The icon indicates the **[Data Type](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**:
 

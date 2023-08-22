@@ -110,8 +110,6 @@ In the appropriate configuration dialog you can select the available parameters,
 
 ### Quick Connection to Fragment Editor {#quick-connection-to-fragment-editor}
 
-<!-- CHECK: which editor and when -->
-
 You can open the fragment source for editing (the asset) using the **Edit** icon on the component toolbar. This will allow you to [edit and manage the content fragment](/help/sites-cloud/administering/content-fragments/overview.md).
 
 >[!CAUTION]
