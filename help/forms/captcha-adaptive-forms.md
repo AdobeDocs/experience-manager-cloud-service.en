@@ -5,7 +5,7 @@ topic-tags: adaptive_forms, author
 ---
 # Use reCAPTCHA in Adaptive Forms{#using-reCAPTCHA-in-adaptive-forms}
 
-<span class="preview"> This feature is under pre-release channel. To use this feature, [enable the pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 
 | Version | Article link |
