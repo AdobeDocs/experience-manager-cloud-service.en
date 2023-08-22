@@ -92,8 +92,6 @@ Assets Essentials now sorts the search results based on Relevance, by default. Y
 
 * [**Google reCAPTCHA enterprise support**](/help/forms/captcha-adaptive-forms.md): Use Google reCAPTCHA Enterprise in an Adaptive Form to provide enhanced protection against fraudulent activity and spam, providing a safer user experience. With advanced risk analysis and seamless integration, genuine users can easily submit forms while bots are effectively blocked.
 
-      >[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
-
 
 ### Pre-release features available in [!DNL Forms] {#pre-release-features-available-in-forms-channel}
 
