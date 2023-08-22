@@ -39,7 +39,9 @@ After defining your [Content Fragment Models](#creating-a-content-model) you can
 
 ## The Content Fragments Console {#content-fragments-console}
 
-The Content Fragments console provides direct access to your fragments, and related tasks. The Content Fragments console can be directly accessed from the top level of the Global Navigation.
+The Content Fragments console is dedicated to managing, searching for, and creating Content Fragments. It has been optimized for use in a Headless context, but is also used when creating Content Fragments for use in page authoring.
+
+The Content Fragments console provides direct access to your fragments, and related tasks. The console can be directly accessed from the top level of the Global Navigation.
 
 ![Global Navigation - Content Fragments console](assets/cf-managing-global-navigation.png)
 
@@ -148,7 +150,7 @@ Selecting a specific fragment will open a toolbar focused on the actions availab
 
 >[!NOTE]
 >
->Use **Open** to open the selected fragment in the *old*/*original* editor.
+>Use **Open** to open the selected fragment in the *original* editor.
 
 >[!NOTE]
 >
@@ -358,10 +360,6 @@ After publication the fragment status will be updated and visible in the editor 
 >
 >In addition, when you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment will be listed in the page references.
 
->[!CAUTION]
->
->After a fragment has been published and/or referenced, AEM will display a warning when an author opens the fragment for editing again. This is to warn that changes to the fragment will affect the referenced pages as well.
-
 ## Unpublishing a Fragment {#unpublishing-a-fragment}
 
 You can unpublish Content Fragments:
@@ -396,10 +394,6 @@ To delete a fragment:
 1. Select the fragment.
 1. Select **Delete** from the toolbar.
 1. Confirm the **Delete** action.
-
-   >[!CAUTION]
-   >
-   >If the fragment is already referenced from another fragment, or from a page, you will then see a warning message and be required to confirm that you want to proceed with a **Force Delete**. The fragment, together with its content fragment component, will be deleted from any content pages.
 
 ## Finding Parent References of your Fragment {#parent-references-fragment}
 
