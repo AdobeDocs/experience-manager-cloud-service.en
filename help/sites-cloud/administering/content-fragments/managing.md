@@ -21,11 +21,6 @@ After defining your [Content Fragment Models](#creating-a-content-model) you can
 * [View, and edit, the Properties (Metadata)](#viewing-and-editing-properties)
 * [View the Structure Tree](/help/sites-cloud/administering/content-fragments/authoring.md#structure-tree)
 
-<!-- CHECK -->
-<!--
-* [Preview the JSON representation](/help/sites-cloud/administering/content-fragments/authoring.md#json-preview)
--->
-
 >[!NOTE]
 >
 >Content fragments can be used:
@@ -70,8 +65,6 @@ For detailed further information see:
 ### Basic Structure and Handling of the Console {#basic-structure-handling-content-fragments-console}
 
 Selecting **Content Fragments** will open the console in a new tab. 
-
-<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragments console - Overview](assets/cf-managing-console-overview.png)
 
@@ -134,8 +127,6 @@ Certain actions are available from the console - without selecting a specific Co
 
 Selecting a specific fragment will open a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
 
-<!-- CHECK: screenshot checked 2023.08.08 -->
-
 ![Content Fragments console - toolbar for a selected fragment](assets/cf-managing-console-fragment-toolbar.png)
 
 * **[Open in new Editor](#editing-the-content-of-your-fragment)**
@@ -193,8 +184,6 @@ The main/right panel (table view) of the console provides a range of information
 * **Referenced By**: 
   * Provides a link that opens a dialog listing all [parent references](#parent-references-fragment)  of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click on the **Title** in the dialog.
 
-    <!-- CHECK: screenshot checked 2023.08.08 -->
-
     ![Content Fragments console - References dialog](assets/cf-managing-console-references-dialog.png)
 
 * **Language**: indicate any [Language](#language-copies-fragment) copies
@@ -204,8 +193,6 @@ The main/right panel (table view) of the console provides a range of information
     ![Content Fragments console - Language indicator](assets/cf-managing-console-language-indicator.png)
 
   * Click/tap on the count to open a dialog that displays all the language copies. To open a specific language copy, click on the **Title** in the dialog.
-
-    <!-- CHECK: screenshot checked 2023.08.08 --> 
 
     ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
 
@@ -236,8 +223,6 @@ To create a content fragment:
    * **Name** - this will be auto-completed based on the **Title**, but you can edit it if required
    * **Description** 
 
-   <!-- CHECK: screenshot checked 2023.08.08 --> 
-
    ![New Content Fragment dialog](assets/cf-managing-new-cf-dialog.png)
 
 1. Select **Create**, or **Create and open** to persist your definition.
@@ -265,14 +250,10 @@ During its existence a Content Fragment can have several statuses, as shown in t
 
 To open your fragment for editing:
 
-<!-- CHECK - will it be Open or Open in new editor? -->
-
 1. Use the **Content Fragments** console to navigate to the location of your content fragment.
 1. Open the fragment for editing, by selecting the fragment, then **Open in new Editor** from the toolbar.
 
 1. The fragment editor will open. Select your required **Variation** amd make your changes as required (they will be auto-saved):
-
-   <!-- CHECK: screenshot checked 2023.08.08 -->
 
    ![Fragment editor](assets/cf-managing-editor.png)
 
@@ -344,8 +325,6 @@ After selecting the **Publish** action:
 
 1. Provide all details in the dialog. For example, for a scheduled publish request:
 
-   <!-- CHECK: screenshot checked 2023.08.08 -->
-
    ![Publish dialog](assets/cf-managing-publish-dialog.png)
 
    >[!NOTE]
@@ -373,8 +352,6 @@ You can unpublish Content Fragments:
 In both cases, select **Unpublish** from the toolbar, followed by either **Now** or **Scheduled**.
 
 When the relevant dialog opens you can select the appropriate service:
-
-<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Unpublish dialog](assets/cf-managing-unpublish-dialog.png)
 
@@ -412,8 +389,6 @@ Both provide a link that opens a dialog listing all parent references of that fr
 
 For example:
 
-<!-- CHECK: screenshot checked 2023.08.08 -->
-
 ![Content Fragments console - References dialog](assets/cf-managing-console-references-dialog.png)
 
 ## Finding Language Copies of your Fragment {#language-copies-fragment}
@@ -425,13 +400,9 @@ Details of Language Copies can be accessed from:
 
 The icon indicates the locale of the content fragment, together with the total number of locales/language copies associated with the content fragment. For example, from the console:
 
-<!-- CHECK: screenshot checked 2023.08.08 -->
-
 ![Content Fragments console - Language indicator](assets/cfc-console-language-indicator.png)
 
 Click/tap on the count to open a dialog that displays all the language copies. To open a specific language copy, click on the **Title** in the dialog.
-
-<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
 
@@ -439,13 +410,9 @@ Click/tap on the count to open a dialog that displays all the language copies. T
 
 As with other consoles you can configure the columns that are visible, and available for action:
 
-<!-- CHECK: screenshot checked 2023.08.08 -->
-
 ![Content Fragments console - column configuration](assets/cf-managing-console-column-icon.png)
 
 This will present a list of columns that you can hide or show:
-
-<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragments console - column configuration](assets/cf-managing-console-column-selection.png)
 
@@ -461,8 +428,6 @@ The Filter panel offers:
 
  Once selected, the **Filtering by** options are shown (under the Search box). They can be deselected from there. For example:
 
-<!-- CHECK: screenshot checked 2023.08.08 -->
-
 ![Content Fragments console - Filtering](assets/cf-managing-console-filter.png)
 
 ### Fast Filtering {#fast-filtering}
@@ -475,13 +440,9 @@ For example, select **Published** in the **Status** column:
 >
 >Fast filtering is only supported for the **Model**, **Status**, **Modified By**, **Tags**, and **Published By** columns.
 
-<!-- CHECK: screenshot checked 2023.08.08 -->
-
 ![Content Fragments console - Filtering](assets/cf-managing-console-fast-filter-overview.png)
 
 Once selected, this will be shown as a filter predicate, and the list will be filtered accordingly:
-
-<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragments console - Filtering](assets/cf-managing-console-fast-filter-criteria.png)
 
@@ -489,111 +450,12 @@ Once selected, this will be shown as a filter predicate, and the list will be fi
 
 The search box supports full-text search. Entering your search terms in the search box:
 
-<!-- CHECK: screenshot checked 2023.08.08 -->
-
 ![Content Fragments console - Searching](assets/cf-managing-console-search-specification.png)
 
 Will provide the selected results:
-
-<!-- CHECK: screenshot checked 2023.08.08 -->
 
 ![Content Fragments console - Search Results](assets/cf-managing-console-search-results.png)
 
 The search box also provides quick access to **Recent Content Fragments** and **Saved Searches**:
 
-<!-- CHECK: screenshot checked 2023.08.08 -->
-
 ![Content Fragments console - Recent and Saved](assets/cf-managing-console-search-saved.png)
-
-<!-- 
-## Timeline for Content Fragments {#timeline-for-content-fragments}
-
->[!NOTE]
->
->This functionality is only available in the **Assets** console
-
-In addition to the standard options, [Timeline](/help/assets/manage-digital-assets.md#timeline) provides both information and actions specific to content fragments:
-
-* View information about versions, comments, and annotations
-* Actions for Versions
-
-  * **[Revert to this Version](#reverting-to-a-version)** (select an existing fragment, then a specific version)
-
-  * **[Compare to Current](#comparing-fragment-versions)** (select an existing fragment, then a specific version)
-
-  * Add a **Label** and/or **Comment** (select an existing fragment, then a specific version)
-
-  * **Save as Version** (select an existing fragment, then the up arrow at the bottom of Timeline)
-
-* Actions for Annotations
-
-  * **Delete**
-
->[!NOTE]
->
->Comments are:
->
->* Standard functionality for all assets
->* Made in Timeline
->* Related to the fragment asset
->
->Annotations (for Content Fragments) are:  
->
->* Entered in the fragment editor
->* Specific to a selected segment of text within the fragment
->
-
-For example:
-
-![Timeline](assets/cfm-managing-05.png)
--->
-
-<!--
-## Comparing Fragment Versions {#comparing-fragment-versions}
-
->[!NOTE]
->
->This functionality is only available in the **Assets** console
-
-The **Compare to Current** action is available from the Timeline after you have selected a specific version.
-
-This will open:
-
-* the **Current** (latest) version (left)
-
-* the selected version **v&lt;*x.y*&gt;** (right)
-
-They will be shown side by side, where:
-
-* Any differences are highlighted
-
-  * Deleted text - red
-  * Inserted text - green
-  * Replaced text - blue
-
-* The full-screen icon allows you to open either version on its own; then toggle back to the parallel view
-* You can **Revert** to the specific version
-* **Done** will return you to the console
-
->[!NOTE]
->
->You cannot edit the fragment content when comparing fragments.
-
-![Comparing Variations](assets/cfm-managing-06.png)
---> 
-
-<!--
-## Reverting to a Version  {#reverting-to-a-version}
-
->[!NOTE]
->
->This functionality is only available in the **Assets** console
-
-You can revert to a specific version of your fragment:
-
-* Directly from the Timeline.
-
-  Select the required version, then the **Revert to this Version** action.
-
-* While comparing a version to the current version you can **Revert** to the selected version.
--->

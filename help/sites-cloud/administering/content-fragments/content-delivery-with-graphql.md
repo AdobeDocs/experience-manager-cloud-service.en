@@ -100,11 +100,6 @@ To help with analysis, AEM provides several methods of viewing the structure of 
 
 See [Analyzing Content Fragment Structure](/help/sites-cloud/administering/content-fragments/analysis.md) for more details:
 
-<!-- CHECK: later -->
-<!--
-* [JSON preview](/help/sites-cloud/administering/content-fragments/analysis.md#json-preview)
--->
-
 * [Structure tree](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)
 
 ## Learning to use GraphQL with AEM - Sample Content and Queries {#learn-graphql-with-aem-sample-content-queries}
