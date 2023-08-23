@@ -28,7 +28,7 @@ The AEM administrator and authors can consider configurations as workspaces. The
 Configurations can be created for many different features within AEM.
 
 * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Editable Templates](/help/sites-cloud/authoring/features/templates.md)
 * various Cloud Configurations
 
@@ -74,7 +74,7 @@ It is very simple to create a new configuration in AEM by using the Configuratio
      * It can be adjusted if necessary.
 1. Check the type of configurations you wish to allow.
    * [Context Hub Segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [Editable Templates](/help/sites-cloud/authoring/features/templates.md)
    * various Cloud Configurations
 1. Tap or click **Create**.
