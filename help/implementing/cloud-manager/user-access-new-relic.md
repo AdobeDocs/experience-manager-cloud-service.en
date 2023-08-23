@@ -164,6 +164,10 @@ Note:
 * AEM as a Cloud Service environments report to only one New Relic One account.
 * Full monitoring metrics and events for both New Relic One are retained for seven days.
 
+### Does Adobe send alert notifications from New Relic One? {#alerting-new-relic}
+
+Adobe provides New Relic One access for observability purposes only, and do not utilize it for customer alerting or internal operational alerting. Notifications for any incidents would be sent using [user notification profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/notification-profiles.html).
+
 ### Who can access the New Relic One cloud service data? {#access-new-relic-cloud}
 
 Full read access is granted for up to 30 members of your team. Read access will include all APM metrics collected by the New Relic One agent.
