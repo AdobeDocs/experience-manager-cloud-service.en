@@ -134,10 +134,13 @@ Selecting a specific fragment will open a toolbar focused on the actions availab
 * **[Publish](#publishing-and-previewing-a-fragment)** (and **[Unpublish](#unpublishing-a-fragment)**)
 * **[Manage Tags](#manage-tags)**
 * **[Copy](/help/assets/manage-digital-assets.md)**
-* **[Replace](#find-and-replace)**
 * **[Move](/help/assets/manage-digital-assets.md)**
 * **[Rename](/help/assets/manage-digital-assets.md)**
 * **[Delete](#deleting-a-fragment)**
+
+<!--
+* **[Replace](#find-and-replace)**
+-->
 
 >[!NOTE]
 >
@@ -363,11 +366,13 @@ When the relevant dialog opens you can select the appropriate service:
 >
 >If the fragment is already referenced from another fragment, or from a page, you will then see a warning message and be required to confirm that you want to proceed.
 
+<!--
 ## Find and Replace {#find-and-replace}
 
 The **Replace** option is available to find, and replace, specified text in your selected Content Fragment:
 
 ![Unpublish dialog](assets/cf-managing-find-replace.png)
+-->
 
 ## Deleting a Fragment {#deleting-a-fragment}
 
@@ -377,6 +382,10 @@ To delete a fragment:
 1. Select the fragment.
 1. Select **Delete** from the toolbar.
 1. Confirm the **Delete** action.
+
+>[!NOTE]
+>
+>The **Delete** is not available for fragments that are currently published, they must be unpublished first.
 
 ## Finding Parent References of your Fragment {#parent-references-fragment}
 
