@@ -1,17 +1,10 @@
 ---
-title: Apply electronic signatures to a form using scribble signatures
-seo-title: Apply electronic signatures to a form using scribble signatures
+title: E-sign a form using scribble signatures
 description: Signing forms using scribble
 seo-description: Signing forms using scribble
-uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
-docset: aem65
-google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 ---
-# Apply electronic signatures to a form using scribble signatures{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
+# E-sign a form using scribble signatures{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 <span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
 
