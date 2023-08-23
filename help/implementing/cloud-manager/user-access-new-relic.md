@@ -166,7 +166,7 @@ Note:
 
 ### Does Adobe send alert notifications from New Relic One? {#alerting-new-relic}
 
-Adobe provides New Relic One access for observability purposes only, and does not use New Relic One for external customer or internal alerting. Notifications for any incidents would be sent using [user notification profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/notification-profiles.html).
+Adobe provides New Relic One access for observability purposes only, and do not utilize it for customer alerting or internal operational alerting. Notifications for any incidents would be sent using [user notification profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/notification-profiles.html).
 
 ### Who can access the New Relic One cloud service data? {#access-new-relic-cloud}
 
