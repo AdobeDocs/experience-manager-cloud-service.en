@@ -7,7 +7,7 @@ docset: CloudService
 role: Admin
 ---
 
-# Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# Enable Adaptive Forms Core Components {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 | Version | Article link |
 | -------- | ---------------------------- |
