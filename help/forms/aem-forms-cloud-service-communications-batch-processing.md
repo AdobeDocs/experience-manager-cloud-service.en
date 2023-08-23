@@ -1,9 +1,9 @@
 ---
-title: Experience Manager [!DNL Forms] as a Cloud Service Communications batch processing
+title: AEM Forms as a Cloud Service Communications Batch Processing
 description: How to create brand-oriented and personalized communications?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
 ---
-# Use batch processing 
+# AEM Forms as a Cloud Service Communications Batch Processing
 
 Communications lets you create, assemble, and deliver brand-oriented and personalized communications such as business correspondences, documents, statements, claim processing letters, benefit notices, claim processing letters, monthly bills, and welcome kits. You can use Communications APIs to combine a template (XFA or PDF) with customer data to generate documents in PDF, PS, PCL, DPL, IPL, and ZPL formats.
 
