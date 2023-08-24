@@ -54,6 +54,7 @@ Summarized below are the continuous improvements for maintenance release 13206, 
 - FORMS-10444: Adaptive Forms Templates - Templates cannot be published (workaround: use Distribution console).
 - CQ-4354191: Worfklows - Custom launcher may trigger many times due to replication metadata present on nt:unstructured nodes (workaround: update launchers to exclude replication metadata properties to avoid overlap).
 - SITES-15622: GraphQL - Issue with persisted queries with number & boolean parameters.
+- SITES-15654: GraphQL - Issues with unions and properties of same name.
 
 ### Embedded Technologies {#embedded-tech-13206}
 
