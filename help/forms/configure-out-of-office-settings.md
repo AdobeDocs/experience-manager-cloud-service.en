@@ -1,6 +1,6 @@
 ---
 title: Configure Out of Office settings
-description: Configure Out of Office settings for your AEM Forms Workflow.
+description: Delegate tasks while on leave or out of the office for seamless workflow execution.
 ---
 # Configure Out of Office setting {#configure-out-of-office-settings}
 

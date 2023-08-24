@@ -1,6 +1,6 @@
 ---
 title: Use custom fonts
-description: Add custom fonts to your AEM as a Cloud Service environment and use in your PDF document.
+description: Learn to add custom fonts to a Forms as a Cloud Service environment.
 ---
 # Use custom fonts
 

@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting caching performance  
-description: How to troubleshoot caching related issues for AEM Forms as a Cloud Service Environment.
+description: How to troubleshoot caching related issues for AEM Forms as a Cloud Service?
 contentOwner: khsingh
 ---
 # Caching performance {#caching-performance}
