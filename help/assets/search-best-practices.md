@@ -31,7 +31,9 @@ Specify classic car as the search keyword and click Search. You can view the sea
 
 You can make the search more specific by adding your search keyword in double quotes (" "). The search criteria look like - "classic car". 
 
-![Performing simple search method 2](assets/simple-search-2.png)
+![Finding exact match](assets/simple-search-2.png)
+
+* [Watch a video to perform simple search in AEM Assets] ()
 
 ## Files and folders {#files-folders}
 
@@ -50,6 +52,8 @@ To achieve the scenario:
 1. Specify classic car as the search keyword and click Search. 
 2. Click Filters and define the folder path for the Automobiles folder. For example, `/content/dam/automobile`
 3. Select Files from the drop-down list.
+
+* [Watch a video to perform search in AEM Assets using Files and Folders] ()
 
 ## Operators {#operators}
 
@@ -71,23 +75,25 @@ When you want to be specific with the search results and want an option in the s
 
 Asterisk is a wildcard operator that is used to broaden your search by typing fewer characters. When you know the starting characters of the asset that you are searching for but do not know the rest, you can use the asterisk operator in your search. For example, the "*car" query returns all the assets with car available in their metadata. The results could be classic car, sports car, classic and sports car, and so on. Below are a few examples of using the asterisk operator in various ways: 
 
+* `*car*` returns all possible combinations 
 * `car*` returns assets with caring, car, carried, and so on. 
 * `*car` returns assets with out car, sports car, and so on. 
-* `*car*` returns all possible combinations 
 
 ### Question mark (?) operator {#question-mark-operator} 
 
 The question mark symbol can be used as a conditional operator to ease your search in Experience Manager. 
 
 * `car?` query matches the word with one character after car. For example,cart.
-* `car????` query matches the word with four characters after car. For example, careful.
 * `?car` query matches the word with one character before car. For example, scar.
+* `car????` query matches the word with four characters after car. For example, careful.
 
 ### Hyphen (-) or exclude operator {#hyphen-operator}
 
 When you want to retrieve excluding some keywords, you can use the hyphen operator. For example, the "car - classic" keyword provides search results of cars excluding classic.
 
 ![Search using Hyphen or Exclude operator](assets/hyphen-operator.png)
+
+* [Watch a video to perform search in AEM Assets using Operators] ()
 
 ## Filters {#filters}
 
@@ -114,17 +120,19 @@ You can choose one or multiple among various filters to refine your search in Ad
 * Content fragment model 
  -->
 
+**Scenario 5: Search for an Asset named 'classic car' in Black color which has either meta description or a similar asset in Japanese language.**  
+ 
+To perform a search on such a requirement, type 'classic car' in the search bar.  Navigate to the filters panel and expand the language search filter drop-down. Type "ja-jp", which represents the Japanese language. Expand the 'Asset Color' filter and select black color or add the hexadecimal code for the black color (#000000).
+
+![Filter example 1](assets/filter-1.png)
+
 **Scenario 4: Searching for PDF file type with keyword 'classic car' in it. The added asset is created or modified within a particular date range.**
 
 To search for the above requirement, type classic car in the search bar. Then go to filters > File type > Documents > Word Processing > PDF to search for PDF files. Moreover, select the date range in created date and modified date filters. Then select status > publish > unpublished.
 
 ![Filter example 2](assets/filter-2.png)
 
-**Scenario 5: Search for an Asset named 'classic car' in Black color which has either meta description or a similar asset in Japanese language.**  
- 
-To perform a search on such a requirement, type 'classic car' in the search bar.  Navigate to the filters panel and expand the language search filter drop-down. Type "ja-jp", which represents the Japanese language. Expand the 'Asset Color' filter and select black color or add the hexadecimal code for the black color (#000000).
-
-![Filter example 1](assets/filter-1.png)
+* [Watch a video to perform search in AEM Assets using various filters] ()
 
 ## Operators + Filters {#operators-filters}
 
@@ -144,12 +152,11 @@ To perform a search for scenario 6:
 
 To perform a search for scenario 7: 
 
-1. Type the 'car-classic' keyword in the search bar. 
-2. Navigate to filters panel and select Documents under File Type. 
-
-The priority order of search is based on the following: 
+Type the 'car-classic' keyword in the search bar. The priority order of search is based on the following: 
 Priority 1: Metadata
 Priority 2: Smart Tags
+
+* [Watch a video to perform search in AEM Assets using operators and filters] ()
 
 ## Boosting relevance of keywords {#boosting-keywords}
 
