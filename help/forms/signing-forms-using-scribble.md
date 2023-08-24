@@ -1,7 +1,6 @@
 ---
 title: E-sign a form using scribble signatures
-description: Signing forms using scribble
-seo-description: Signing forms using scribble
+description: Use Scribble Signature and Signature Step to Electronically sign or E-sign your Adaptive Forms.
 topic-tags: author
 ---
 # E-sign a form using scribble signatures{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
@@ -70,7 +69,7 @@ You can tap the **Configure** ![configure icon](assets/configure.png) icon to se
 
     * **CSS Class**: Specify CSS class of the client library, if any. It is recommended to use [themes](themes.md) and [in-line styles](inline-style-adaptive-forms.md) instead of CSS Class.
 
-   Tap the Done ![aem_forms_save](assets/aem_forms_save.png) icon to save the changes. The Signature is configured sucessfully.
+   Tap the Done ![aem_forms_save](assets/aem_forms_save.png) icon to save the changes. The Signature is configured successfully.
 
    Now, when you fill a form, a PDF version of Adaptive Form is displayed and options to sign the PDF document are provided. For detailed information, see [Sign an Adaptive Form using Scribble Signature](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 
