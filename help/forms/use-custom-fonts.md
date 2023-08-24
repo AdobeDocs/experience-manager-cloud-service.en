@@ -1,7 +1,6 @@
 ---
 title: Use custom fonts
-description: Use custom fonts
-exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
+description: Add custom fonts to your AEM as a Cloud Service environment and use in your PDF document.
 ---
 # Use custom fonts
 
