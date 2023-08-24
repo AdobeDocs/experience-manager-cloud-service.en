@@ -1,6 +1,6 @@
 ---
 title: E-sign a form using scribble signatures
-description: Use Scribble Signature and Signature Step to Electronically sign or E-sign your Adaptive Forms.
+description: Effortlessly E-sign Adaptive Forms using Scribble Signature & Signature Step. Streamline digital signing for enhanced efficiency.
 topic-tags: author
 ---
 # E-sign a form using scribble signatures{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}

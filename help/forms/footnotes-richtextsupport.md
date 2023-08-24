@@ -1,6 +1,6 @@
 ---
 title: Footnotes support to Adaptive Forms
-description: Add and edit footnotes with RTE support to your Adaptive Forms.
+description: Enhance Adaptive Forms with informative rich-text footnotes. Improve user experience and engagement.
 ---
 # Footnote Component {#footnotecomponent}
 

@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting installation and configuration Cloud Service 
-description: Troubleshoot installation and configuration of AEM as a Cloud Service environment.
+description: How to troubleshoot installation and configuration related issues for AEM Forms as a Cloud Service?
 contentOwner: khsingh
 ---
 # Configuration {#installation-and-configuration}
