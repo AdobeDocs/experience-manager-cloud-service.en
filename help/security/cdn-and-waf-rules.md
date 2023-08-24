@@ -360,4 +360,4 @@ Below is a list of the field names used in CDN logs, along with a brief descript
  | *status*  | The HTTP status code as an integer value.  |
  | *res_age*  | The amount of time (in seconds) a response has been cached (in all nodes).  |
  | *pop*  | Datacenter of the CDN cache server.  |
-| *rules*  | The name of any matching rules, for both CDN rules and waf rules.<br><br>Matching CDN rules appear in the log entry for all requests to the CDN, regardless of whether it is a CDN hit, pass, or miss.<br><br>Also indicates if the match resulted in a block. <br><br>For example, "`cdn=;waf=SQLI;action=blocked`"<br><br>Empty if no rules matched.  |
+ | *rules*  | The name of any matching rules, for both CDN rules and waf rules.<br><br>Matching CDN rules appear in the log entry for all requests to the CDN, regardless of whether it is a CDN hit, pass, or miss.<br><br>Also indicates if the match resulted in a block. <br><br>For example, "`cdn=;waf=SQLI;action=blocked`"<br><br>Empty if no rules matched.  |
