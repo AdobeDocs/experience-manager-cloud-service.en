@@ -36,7 +36,7 @@ To install the latest version AEM Forms Designer 64-bit or 32-bit, you require t
 * Video hardware acceleration (optional)
 * Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC
 * Administrative privileges to install Designer
-* Microsoft® Visual C++ 2019 (VC 14.28 or greater)
+* [!DNL Microsoft® Visual C++ 2019] (VC 14.28 or greater)
 
 >[!ENDTABS]
 
