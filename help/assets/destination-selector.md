@@ -15,10 +15,10 @@ The Micro-Frontend user interface is made available in your application experien
 
 Destination Selector provides many benefits, such as:
 
-*   Ease of integration with any of the Adobe or non-Adobe applications using Vanilla JavaScript library.
-*   Easy to maintain as updates to the Destination Selector package are automatically deployed to the Destination Selector available for your application. There are no updates required within your application to load the latest modifications.
-*   Ease of customization as there are properties available that control the Destination Selector display within your application.
-*   Full-text search to quickly navigate to folders to upload assets from your application.
+* Ease of integration with any of the Adobe or non-Adobe applications using Vanilla JavaScript library.
+* Easy to maintain as updates to the Destination Selector package are automatically deployed to the Destination Selector available for your application. There are no updates required within your application to load the latest modifications.
+* Ease of customization as there are properties available that control the Destination Selector display within your application.
+* Full-text search to quickly navigate to folders to upload assets from your application.
 *   Ability to create folders, sort folders in ascending or descending order, and view them in List, Grid, Gallery, or Waterfall view.
 
 The scope of this article is to demonstrate how to use Destination Selector with an [!DNL Adobe] application under Unified Shell or when you already have an imsToken generated for authentication. These workflows are referred to as non-SUSI flow in this article.
@@ -34,21 +34,23 @@ Perform the following tasks to integrate and use Destination Selector with your 
 You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository and select assets from within the application. 
 
 The integration is done by importing the Destination Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. You must edit an `index.html` or any appropriate file within your application to -
-*   Define the authentication details
-*   Access the Assets as a Cloud Service repository
-*   Configure the Destination Selector display properties
+
+* Define the authentication details
+* Access the Assets as a Cloud Service repository
+* Configure the Destination Selector display properties
 
 You can perform authentication without defining some of the IMS properties, if:
 
-*   You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
-*   You already have an IMS token generated for authentication.
+* You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
+* You already have an IMS token generated for authentication.
 
 ## Prerequisites {#prerequisites}
 
 Define the prerequisites in the `index.html` file or a similar file within your application implementation to define the authentication details to access the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository. The prerequisites include:
-*   imsOrg
-*   imsToken
-*   apikey
+
+* imsOrg
+* imsToken
+* apikey
 
 ## Installation {#installation}
 
@@ -56,26 +58,31 @@ Destination Selector is available via both ESM CDN (For example, [esm.sh](https:
 
 In browsers using **UMD version** (recommended):
 
+In browsers using **UMD version** (recommended):
+
 ```
-<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
 
 <script>
-  const { renderDestinationSelector } = PureJSSelectors;
+  const { renderAssetSelector } = PureJSSelectors;
 </script>
+
 ```
 
 In browsers with `import maps` support using **ESM CDN version**:
 
 ```
 <script type="module">
-  import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 </script>
+
 ```
 
 In Deno/Webpack Module Federation using **ESM CDN version**:
 
 ```
-import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
+
 ```
 
 ### Selected Destination {#selected-destination}
@@ -224,14 +231,14 @@ Once the Destination Selector is set up and you are authenticated to use Destina
 
    ![using-destination-selector](assets/using-destination-selector.png)
 
-*   **A**: [Search bar](#search-bar)
-*   **B**: [Sorting](#sorting)
-*   **C**: [Assets](#assets-repo)
-*   **D**: [Add suffix or prefix](#add-suffix-or-prefix)
-*   **E**: [Create new folder](#create-new-folder)
-*   **F**: [View](#types-of-view)
-*   **G**: [Info](#info)
-*   **H**: [Select folder](#select-folder)
+* **A**: [Search bar](#search-bar)
+* **B**: [Sorting](#sorting)
+* **C**: [Assets](#assets-repo)
+* **D**: [Add suffix or prefix](#add-suffix-or-prefix)
+* **E**: [Create new folder](#create-new-folder)
+* **F**: [View](#types-of-view)
+* **G**: [Info](#info)
+* **H**: [Select folder](#select-folder)
 
 ### Search bar {#search-bar}
 
@@ -257,10 +264,10 @@ It lets you create a new folder in the destination folder of your [!DNL Adobe Ex
 
 Destination Selector lets you view the asset in four different views:
 
-*   **![list view](assets/do-not-localize/list-view.png) [!UICONTROL List View]**: The list view displays scrollable files and folders in a single column.
-*   **![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL Grid View]**: The grid view displays scrollable files and folders in a grid of rows and columns.
-*  **![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL Gallery View]**: The gallery view displays files or folders in a center-locked horizontal list.
-*   **![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall View]**: The waterfall view displays files or folders in the form of a Bridge.
+* **![list view](assets/do-not-localize/list-view.png) [!UICONTROL List View]**: The list view displays scrollable files and folders in a single column.
+* **![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL Grid View]**: The grid view displays scrollable files and folders in a grid of rows and columns.
+* **![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL Gallery View]**: The gallery view displays files or folders in a center-locked horizontal list.
+* **![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall View]**: The waterfall view displays files or folders in the form of a Bridge.
 
 ### Info {#info}
 
