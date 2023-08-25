@@ -15,9 +15,9 @@ The Micro-Frontend user interface is made available in your application experien
 
 Asset Selector provides many benefits, such as:
 
-*   Ease of integration with any of the Adobe or non-Adobe applications using Vanilla JavaScript library.
-*   Easy to maintain as updates to the Assets Selector package are automatically deployed to the Asset Selector available for your application. There are no updates required within your application to load the latest modifications.
-*   Ease of customization as there are properties available that control the Asset Selector display within your application.
+* Ease of integration with any of the Adobe or non-Adobe applications using Vanilla JavaScript library.
+* Easy to maintain as updates to the Assets Selector package are automatically deployed to the Asset Selector available for your application. There are no updates required within your application to load the latest modifications.
+* Ease of customization as there are properties available that control the Asset Selector display within your application.
 
 * Full-text search, out-of-the-box, and customized filters to quickly navigate to assets for use within the authoring experience.
 
@@ -38,9 +38,10 @@ Perform the following tasks to integrate and use Asset Selector with your [!DNL 
 You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository and select assets from within the application. 
 
 The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. You need to edit an `index.html` or any appropriate file within your application to -
-*   Define the authentication details
-*   Access the Assets as a Cloud Service repository
-*   Configure the Asset Selector display properties
+
+* Define the authentication details
+* Access the Assets as a Cloud Service repository
+* Configure the Asset Selector display properties
 
 <!--
 Asset Selector supports authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID`. Authentication using these IMS properties is referred to as SUSI (Sign Up Sign In) flow in this article.
@@ -55,8 +56,8 @@ Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository 
 
 You can perform authentication without defining some of the IMS properties, if:
 
-*   You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
-*   You already have an IMS token generated for authentication.
+* You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
+* You already have an IMS token generated for authentication.
 
 ## Prerequisites {#prerequisites}
 
@@ -67,9 +68,10 @@ You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken
 -->
 
 Define the prerequisites in the `index.html` file or a similar file within your application implementation to define the authentication details to access the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository. The prerequisites include:
-*   imsOrg
-*   imsToken
-*   apikey
+
+* imsOrg
+* imsToken
+* apikey
 <!--
 The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
 
@@ -99,25 +101,28 @@ Assets Selectors is available via both ESM CDN (For example, [esm.sh](https://es
 In browsers using **UMD version** (recommended):
 
 ```
-<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
 
 <script>
   const { renderAssetSelector } = PureJSSelectors;
 </script>
+
 ```
 
 In browsers with `import maps` support using **ESM CDN version**:
 
 ```
 <script type="module">
-  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 </script>
+
 ```
 
 In Deno/Webpack Module Federation using **ESM CDN version**:
 
 ```
-import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
+
 ```
 
 ### Selected Asset Type {#selected-asset-type}
@@ -488,14 +493,14 @@ Once the Asset Selector is set up and you are authenticated to use Asset Selecto
 
    ![using-asset-selector](assets/using-asset-selector.png)
 
-*   **A**: [Hide/Show panel](#hide-show-panel)
-*   **B**: [Repository switcher](#repository-switcher)
-*   **C**: [Assets](#repository)
-*   **D**: [Filters](#filters)
-*   **E**: [Search bar](#search-bar)
-*   **F**: [Sorting](#sorting)
-*   **G**: [Sorting in ascending or descending order](#sorting)
-*   **H**: [View](#types-of-view)
+* **A**: [Hide/Show panel](#hide-show-panel)
+* **B**: [Repository switcher](#repository-switcher)
+* **C**: [Assets](#repository)
+* **D**: [Filters](#filters)
+* **E**: [Search bar](#search-bar)
+* **F**: [Sorting](#sorting)
+* **G**: [Sorting in ascending or descending order](#sorting)
+* **H**: [View](#types-of-view)
 
 ### Hide/Show panel {#hide-show-panel}
 
@@ -516,9 +521,9 @@ It is a collection of assets folders that you can use to perform operations.
 
 Asset Selector also provides out-of-the-box filter options to refine your search results. The following filters are available:
 
-*   `File type`: includes folder, file, images, documents, or video
-*   `MIME type`: includes JPG, GIF, PPTX, PNG, MP4, DOCX, TIFF, PDF, XLSX
-*   `Image Size`: includes minimum/maximum width, minimum/maximum height of image
+* `File type`: includes folder, file, images, documents, or video
+* `MIME type`: includes JPG, GIF, PPTX, PNG, MP4, DOCX, TIFF, PDF, XLSX
+* `Image Size`: includes minimum/maximum width, minimum/maximum height of image
 
    ![rail-view-example](assets/filters-asset-selector.png) 
 
@@ -542,10 +547,10 @@ You can sort assets in Asset Selector by name, dimensions, or size of an asset. 
 
 Asset Selector lets you view the asset in four different views:
 
-*   **![list view](assets/do-not-localize/list-view.png) [!UICONTROL List View]**: The list view displays scrollable files and folders in a single column.
-*   **![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL Grid View]**: The grid view displays scrollable files and folders in a grid of rows and columns.
-*  **![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL Gallery View]**: The gallery view displays files or folders in a center-locked horizontal list.
-*   **![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall View]**: The waterfall view displays files or folders in the form of a Bridge.
+* **![list view](assets/do-not-localize/list-view.png) [!UICONTROL List View]**: The list view displays scrollable files and folders in a single column.
+* **![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL Grid View]**: The grid view displays scrollable files and folders in a grid of rows and columns.
+* **![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL Gallery View]**: The gallery view displays files or folders in a center-locked horizontal list.
+* **![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall View]**: The waterfall view displays files or folders in the form of a Bridge.
 
 <!--
 ### Modes to view Asset Selector
