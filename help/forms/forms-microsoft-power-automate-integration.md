@@ -113,7 +113,7 @@ After you [Connect your Forms as a Cloud Service instance with Microsoft&reg; Po
 1. Log in to your Author instance, select your Adaptive Form and click **[!UICONTROL Properties]**.
 1. In the Configuration Container, browse and select the container created in section [Create Microsoft&reg; Power Automate Dataverse Cloud Configuration](#microsoft-power-automate-dataverse-cloud-configuration), and tap **[!UICONTROL Save and Close]**.
 1. Open the Adaptive Form for editing and navigate to **[!UICONTROL Submission]** section of the Adaptive Form Container properties.
-1. In the properties container, for **[!UICONTROL Submit Actions]** select the **[!UICONTROL Invoke a Power Automate flow]** option. A list of available Power Automate flows becomes available **[!UICONTROL Power Automate flow]** option. Select the required flow and Adaptive Forms data is submitted to it on submission.    
+1. In the properties container, for **[!UICONTROL Submit Actions]** select the **[!UICONTROL Invoke a Power Automate flow]** option and select a **[!UICONTROL Power Automate flow]**. Select the required flow and Adaptive Forms data is submitted to it on submission.    
 
      ![Configure Submit Action](assets/submission.png)
 
