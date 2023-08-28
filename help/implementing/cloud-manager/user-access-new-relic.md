@@ -146,7 +146,9 @@ The following limitations apply to adding users to New Relic One:
 
 >[!NOTE]
 >
->If no activity is detected in your New Relic One account for 90 days or more, the account will be de-activated. Please contact your Adobe representative if you wish to re-activate your account.
+>If no activity is detected in your New Relic One account for 90 days or more, the APM agent will be stopped.
+>
+>Please open a support ticket by way of the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) if you wish to re-enable APM agent for your AEMaaCS environments.
 
 For more help or additional guidance on New Relic One offerings for your AEM as a Cloud Service Program, open a support ticket via the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
@@ -188,6 +190,6 @@ While Adobe support will monitor the AEM as a Cloud Service application using Ne
 >
 >To view both data sets within New Relic One, a user must have the right permissions and use the same login methodology for both accounts (Adobe New Relic One and the customer-managed New Relic accounts).
 
-### My New Relic One account is deactivated. What happened? {#deactivated}
+### The APM agent for my New Relic One account is stopped. What happened? {#deactivated}
 
-[Accounts are de-activated](#limitations) if no activity is detected for 90 days or more. Please contact your Adobe representative if you wish to re-activate your account.
+[APM agents are stopped](#limitations) if no activity is detected for 90 days or more. Please open a support ticket by way of the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) if you wish to re-enable APM agent for your AEMaaCS environments.
