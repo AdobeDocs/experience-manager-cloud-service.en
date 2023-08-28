@@ -45,8 +45,6 @@ You can also navigate to Cloud Manager's Programs and Products page from Adobe E
 |Generate Personal Access Token|Access git||x||x|
 |Create RDE|Create a Rapid Development Environment|x|||x|
 |Reset RDE|Reset a Rapid Development Environment|x|||x|
-|Create/modify content sets|Create or modify a content set for content copy||x|||
-|Start/cancel content copy|Start or cancel a content copy process||x|||
 
 >[!NOTE]
 >

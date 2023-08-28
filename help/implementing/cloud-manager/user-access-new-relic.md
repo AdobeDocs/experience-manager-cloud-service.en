@@ -114,7 +114,7 @@ For more help, open a support ticket by way of the [AEM Support Portal](https://
 
 ## Troubleshooting New Relic One Access {#troubleshooting}
 
-If you were added as a New Relic One user as described in the the section [Manage New Relic One Users](#manage-users) and can not locate the original account confirmation email follow these steps.
+If you were added as a New Relic One user as described in the the section [Manage New Relic One Users](#manage-users) andcannot locate the original account confirmation email follow these steps.
 
 1. Navigate to New Relic's login page at [`login.newrelic.com/login`](https://login.newrelic.com/login).
 
@@ -143,12 +143,6 @@ The following limitations apply to adding users to New Relic One:
 * A maximum of 30 users can be added. If the maximum number of users has been reached, remove users to be able to add new users.
 * Users added to New Relic are of the type **Restricted**, see [the New Relic documentation for details.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service only offers the New Relic One APM solution and does not provide support for alerting, logging, or API integrations.
-
->[!NOTE]
->
->If no activity is detected in your New Relic One account for 90 days or more, the APM agent will be stopped.
->
->Please open a support ticket by way of the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) if you wish to re-enable APM agent for your AEMaaCS environments.
 
 For more help or additional guidance on New Relic One offerings for your AEM as a Cloud Service Program, open a support ticket via the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
@@ -189,7 +183,3 @@ While Adobe support will monitor the AEM as a Cloud Service application using Ne
 >[!NOTE]
 >
 >To view both data sets within New Relic One, a user must have the right permissions and use the same login methodology for both accounts (Adobe New Relic One and the customer-managed New Relic accounts).
-
-### The APM agent for my New Relic One account is stopped. What happened? {#deactivated}
-
-[APM agents are stopped](#limitations) if no activity is detected for 90 days or more. Please open a support ticket by way of the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) if you wish to re-enable APM agent for your AEMaaCS environments.
