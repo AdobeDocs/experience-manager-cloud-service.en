@@ -8,7 +8,7 @@ exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
 
 [!DNL Assets view] provides user-friendly editing options that are powered by [!DNL Adobe Express] and [!DNL Adobe Photoshop Express]. The editing actions that are available using [!DNL Adobe Express] are Resize image, Remove background, Crop image, and Convert JPEG into PNG.
 
-After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](/help/using/navigate-view.md#preview-assets) and click **[!UICONTROL Edit Image]**.
+After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](/help/navigate-view.md#preview-assets) and click **[!UICONTROL Edit Image]**.
 
 >[!NOTE]
 >
@@ -32,10 +32,10 @@ Resizing an image to a specific size is a popular use case. [!DNL Assets view] l
 3. Select the appropriate social media platform from the **[!UICONTROL Resize for]** drop-down list and select the image size from the options that display. 
 4. Scale the image, if required, using the **[!UICONTROL Image Scale]** field.
 5. Click **[!DNL Apply]** to apply your changes.
-   ![Image editing with Adobe Express](/help/assets/adobe-express-resize-image.png)
+   ![Image editing with Adobe Express](assets/adobe-express-resize-image.png)
 
    Your edited image is available for download. You can either save the edited asset as a new version of the same asset or save it as a new asset.
-   ![Save image with Adobe Express](/help/assets/adobe-express-resize-save.png)
+   ![Save image with Adobe Express](assets/adobe-express-resize-save.png)
 
 ### Remove background {#remove-background-using-express}
 
@@ -44,7 +44,7 @@ You can remove background from an image in a few simple steps as mentioned below
 1. Select an image and click **Edit**.
 2. Click **[!DNL Remove Background]** from the quick actions available in the left pane. Experience Manager Assets displays the image with no background.
 3. Click **[!DNL Apply]** to apply your changes.
-![Save image with Adobe Express](/help/assets/adobe-express-remove-background.png)
+![Save image with Adobe Express](assets/adobe-express-remove-background.png)
 
    Your edited image is available for download. You can either save the edited asset as a new version of the same asset or save it as a new asset.
 
@@ -56,7 +56,7 @@ Transforming an image into a perfect size is easy using embedded [!DNL Adobe Exp
 2. Click **[!DNL Crop Image]** from the quick actions available in the left pane.
 3. Drag the handles on the corners of the image to create your desired crop.
 4. Click **[!DNL Apply]**.
-   ![Save image with Adobe Express](/help/assets/adobe-express-crop-image.png)
+   ![Save image with Adobe Express](assets/adobe-express-crop-image.png)
    The cropped image is available for download. You can either save the edited asset as a new version of the same asset or save it as a new asset.
 
 ### Convert JPEG to PNG {#convert-jpeg-to-png-using-express}
@@ -65,7 +65,7 @@ You can quickly convert a JPEG image into a PNG format using Adobe Express. Exec
 
 1. Select an image and click **Edit**.
 2. Click **[!DNL JPEG to PNG]** from the quick actions available in the left pane.
-   ![Convert to PNG with Adobe Express](/help/assets/adobe-express-convert-image.png)
+   ![Convert to PNG with Adobe Express](assets/adobe-express-convert-image.png)
 3. Click **[!UICONTROL Download]**.
 
 ### Limitations {#limitations-adobe-express}
