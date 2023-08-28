@@ -8,7 +8,7 @@ exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
 
 [!DNL Assets view] provides user-friendly editing options that are powered by [!DNL Adobe Express] and [!DNL Adobe Photoshop Express]. The editing actions that are available using [!DNL Adobe Express] are Resize image, Remove background, Crop image, and Convert JPEG into PNG.
 
-After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](/help/navigate-view.md#preview-assets) and click **[!UICONTROL Edit Image]**.
+After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](/help/navigate-view.md) and click **[!UICONTROL Edit Image]**.
 
 >[!NOTE]
 >
