@@ -20,7 +20,7 @@ To do this, the Universal Editor provides content authors with an intuitive UI t
 
 >[!NOTE]
 >
->The Universal Editor is still in development. It currentlycannot edit all content types.
+>The Universal Editor is still in development. It currently cannot edit all content types.
 
 ## Prepare the App {#prepare-app}
 
@@ -218,7 +218,7 @@ The editor occupies most of the window and is where the page specified in [the l
 
 ### Component Rail {#component-rail}
 
-The component rail is always present along the left side of the editor. Depending on its mode, it can show details for a component selected in the content or the hierarchy of the page contents.
+The component rail is always present along the right side of the editor. Depending on its mode, it can show details for a component selected in the content or the hierarchy of the page contents.
 
 ![The component rail](assets/component-rail.png)
 
