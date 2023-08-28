@@ -272,7 +272,9 @@ To manage the tags:
 1. Select a Content Fragment.
 1. Select **Manage Tags** in the toolbar.
 1. Use the Tag selector to select tags to apply, or remove:
+
    ![Manage Tags](assets/cf-managing-manage-tags.png)
+
 1. **Save** updates. This will return you to the console.
 
 ### Viewing, and Editing, Tags (Editor) {#viewing-and-editing-tags}
