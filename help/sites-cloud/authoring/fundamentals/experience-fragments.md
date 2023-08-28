@@ -350,14 +350,17 @@ To personalize your fragment:
    >The **ContextHub Path** selected in the **Personalization** tab must be either:
    >
    >* the same path as the one configured for the page where the fragment is rendered
-   >Or:
+   >
+   >  Or:
+   >
    >* a path that contains a subset of the stores defined in the ContextHub configured for the page
    >
-   >&nbsp;
    >The **Segments Path** selected in the **Personalization** tab must be either:
    >
    >* the same path as the one configured for the page where the fragment is rendered
-   >Or
+   >
+   >  Or
+   >
    >* a path that contains a subset of the segments configured for the page
 
 ### Defining Targeting for your Experience Fragment {#defining-targeting-experience-fragment}
