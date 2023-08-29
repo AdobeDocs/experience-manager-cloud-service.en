@@ -160,7 +160,7 @@ The administrator should be the user who sets up AEM and prepares the runtime en
 
 #### Content Author {#content-author}
 
-Content authors create and manage the content that is delivered headlessly by AEM. Content authors use AEM features such as Content Fragments and the Assets Console to manage their content.
+Content authors create and manage the content that is delivered headlessly by AEM. Content authors use AEM features such as Content Fragment editor and various consoles to manage their content.
 
 Content authors should keep in mind the following best practices.
 
@@ -283,8 +283,8 @@ While it is recommended that you move on to the next part of the headless develo
 * [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md) - Technical documentation of page naming restrictions in AEM
 * [Multi Site Manager and Translation](/help/sites-cloud/administering/msm-and-translation.md) - Technical documentation on AEM's powerful translation features
 * [AEM workflows](/help/sites-cloud/authoring/workflows/overview.md) - Technical documentation on how to automate workflows in AEM
-* [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Technical documentation for Content Fragments.
-* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - Technical documentation for Content Fragment Models.
+* [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) - Technical documentation for Content Fragments.
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - Technical documentation for Content Fragment Models.
 * [GraphQL Technical Documentation](https://graphql.org) - The GraphQL definition (external link)
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) - Technical documentation that explains how to create requests to access and deliver Content Fragments
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - Technical documentation that explains how to create and modify Content Fragments (and other assets)
