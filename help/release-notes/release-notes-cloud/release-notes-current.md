@@ -138,6 +138,23 @@ Use [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience
 
 You can send an email to `aem-forms-headless@adobe.com` from your official email ID to join the early adopter program. 
 
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### CDN Logs {#cdn-logs}
+
+Download CDN logs from Cloud Manager, which is useful for cache-hit ratio optimization and greater visibility into the content delivery flow. [Learn about](/help/implementing/developing/introduction/logging.md#cdn-log) the CDN log format.
+
+### CDN and WAF Rules early adopter program {#waf-early-adopter}
+
+Filter traffic at the CDN based on:
+* request headers and properties (e.g., IP address)
+* traffic patterns known to be associated with malicious traffic
+
+Interested in trying out the feature and sharing feedback? Send an email to **aemcs-waf-adopter@adobe.com** from your official email ID to learn more about the early adopter program. Space is limited.
+
+Learn more about the feature in the article [here](/help/security/cdn-and-waf-rules.md).
+
+
 ## Maintenance Release Notes {#maintenance}
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
