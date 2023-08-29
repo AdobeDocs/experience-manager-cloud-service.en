@@ -142,7 +142,7 @@ You can send an email to `aem-forms-headless@adobe.com` from your official email
 
 ### CDN Logs {#cdn-logs}
 
-Download CDN logs from Cloud Manager, which is useful for cache-hit ratio optimization and greater visibility into the content delivery flow. [Learn about](/help/implementing/developing/introduction/logging.md#cdn-log) the CDN log format.
+Download CDN logs from Cloud Manager, which is useful for cache-hit ratio optimization and greater visibility into the content delivery flow. [Learn about](/help/implementing/developing/introduction/logging.md#cdn-log) the CDN log format. This feature will gradually be rolled out to customers in early September.
 
 ### CDN and WAF Rules early adopter program {#waf-early-adopter}
 
