@@ -9,7 +9,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 13239 {#release-13239}
 
-Summarized below are the continuous improvements for maintenance release 13239, which was publicly released on August 29, 2023. This maintenance release replaces releases 13206.
+Summarized below are the continuous improvements for maintenance release 13239, which was publicly released on August 29, 2023. This maintenance release replaces release 13206.
 
 2023.9.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
