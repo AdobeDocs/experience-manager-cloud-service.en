@@ -259,7 +259,7 @@ Example 1: When the request rate exceeds 100 requests per second in the last 60 
 
 ```
 - name: rate-limit-example
-  when: { reqProperty: /critical/resource }
+  when: { reqProperty: path, equals: /critical/resource }
   action: block
   rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
@@ -268,7 +268,7 @@ Example 2: When the request rate exceeds 10 requests per second in 10 seconds, b
 
 ```
 - name: rate-limit-using-defaults
-  when: { reqProperty: /critical/resource }
+  when: { reqProperty: path, equals: /critical/resource }
   action: block
   rateLimit:
     limit: 10
