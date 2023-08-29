@@ -71,25 +71,29 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-**Improved artificial intelligence framework for image Smart Tags**
+* **Bulk import assets from data sources**: Administrators now have the ability to import large number of assets from a data source to AEM Assets. The administrators do not need to upload individual assets or folders to AEM Assets anymore. The supported data sources for bulk import include Azure, AWS, Google Cloud, and Dropbox.
 
-Experience Manager Assets now uses an improved artificial intelligence framework for image Smart Tags. This content intelligence results in better relevancy and precision of Smart Tags available to all image assets on ingestion.
+  ![Bulk import assets from a data source](/help/release-notes/assets/bulk-import.png)
 
-**Configure display of columns for Assets List view**
+* **Image editing tools powered by Adobe Express**: Easy and intuitive image editing tools powered by Adobe Express available directly within AEM Assets to increase content re-use and accelerate content velocity.
 
-Assets Essentials now provides the ability to select the columns that display in the Assets List view, such as Status, Format, Dimensions, Size, and so on.
+  ![Image editing with Adobe Express](/help/release-notes/assets/edit-adobe-express.png)
 
-![Configure columns](/help/release-notes/assets/configure-columns.png)
+* **Flexibility while pinning items for My Workspace Quick Access**: Ability to select and pin items for you, for your entire organization, or for a list of groups so that they display in the Quick Access section of My Workspace based on your selection.
 
-**Sort search results based on relevance**
+  ![Pin items for groups](/help/release-notes/assets/pin-items-for-groups.png)
 
-Assets Essentials now sorts the search results based on Relevance, by default. You can sort the searched assets in increasing or decreasing order of `Name`, `Relevance`, `Size`, `Modified`, and `Created`.
+### New features in Admin view {#admin-view-features}
 
-### Pre-release feature in [!DNL Dynamic Media] {#prerelease-feature-assets}
+* 
 
-[Multi-subtitle and multi-audio track support for videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma)&mdash;You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
+* 
 
-![Subtitles and Audio tracks tab on the Properties page of a selected video asset.](/help/release-notes/assets/msma-aem-cs.png)*Subtitles and Audio tracks tab on the Properties page of a selected video asset.*
+### Pre-release features available in [!DNL Experience Manager Assets] {#prerelease-features-assets}
+
+* **Dynamic Media**: [Multi-subtitle and multi-audio track support for videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma)&mdash;You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
+
+  ![Subtitles and Audio tracks tab on the Properties page of a selected video asset.](/help/release-notes/assets/msma-aem-cs.png)*Subtitles and Audio tracks tab on the Properties page of a selected video asset.*
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
