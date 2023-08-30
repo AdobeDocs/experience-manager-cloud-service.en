@@ -63,9 +63,9 @@ Experience Manager Assets displays facet counts for two properties by default:
 
 As of August 2023, Experience Manager Assets includes a new version 9 of `damAssetLucene` index. The previous versions, `damAssetLucene-8` and below, use the `statistical` mode to check access control on a sample of the items for each search facet count.
 
-`damAssetLucene-9` changes the behavior of Oak Query facet counting to no longer evaluate access control on the facet counts returned by the underlying search index, which results in the faster search response times. As a result, you might be presented with facet count values, which include assets that you do not have access to. You might not be able to access, download, or read those assets to gain any further information about them.
+`damAssetLucene-9` changes the behavior of Oak Query facet counting to no longer evaluate access control on the facet counts returned by the underlying search index, which results in the faster search response times. As a result, users might be presented with facet count values, which include assets that they do not have access to. Those users cannot access, download, or read any other detail of those assets, including their paths, or gain any further information about them.
 
-If you need to switch to the previous behavior (`statistical` mode), see [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) to create a custom version of the `damAssetLucene-9` index. Adobe does not recommend switching to the `statistical` mode due to the impact on search response times with large result sets.
+If you need to switch to the previous behavior (`statistical` mode), see [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) to create a custom version of the `damAssetLucene-9` index. Adobe does not recommend switching to the `secure` mode due to the impact on search response times with large result sets.
 
 For more information on Oak's facet capabilities, including a detailed description of these modes, see [this article](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
