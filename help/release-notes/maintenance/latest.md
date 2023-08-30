@@ -7,60 +7,46 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 13206 {#release-13206}
+## Release 13239 {#release-13239}
 
-Summarized below are the continuous improvements for maintenance release 13206, which was publicly released on August 21, 2023. This maintenance release replaces releases 13173 and 13099 to fix an issue impacting the Inbox functionality.
+Summarized below are the continuous improvements for maintenance release 13239, which was publicly released on August 29, 2023. This maintenance release replaces release 13206.
 
-2023.8.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
+2023.9.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-13206}
+### Enhancements {#enhancements-13239}
 
-- SITES-13906: GraphQL - Upgrade to graphql-java 20.1.
-- SITES-8972: GraphQL - Add option label in JSON for Enumeration data type.
-- SITES-9689: GraphQL - Add title and description in JSON for Content Reference data type.
-- SITES-13052: Content Fragments - Export Content Fragments to Adobe Target.
+- GRANITE-46784: Add option to disable BearerAuthenticationHandler
+- GRANITE-36205: Update internal oak release version to latest
+- GRANITE-43908: Jackson-databind-2.13.4.jar embeds vulnerable jackson-databind
+- GRANITE-47059: Remove Granite Jetty SSL Bundle
+- ASSETS-26713: Touch UI External Link to New Experience UI Dashboard - unified-shell-integration and ui-touch-optimized upgraded
+- SKYOPS-63302: Upgrade com.adobe.granite:com.adobe.granite.auth.saml to v1.0.54
+- GRANITE-46634: Upgrade to eventing client 1.4.0
+- GRANITE-46788: Update Apache Commons Libraries
+- GRANITE-29211: Update tooling to Sling Feature Model 2.0
+- GRANITE-46705: Update to Apache Felix Http Jetty 4.1.14
+- GRANITE-46631: Update Jackrabbit version to 2.20.11
+- SKYOPS-61895: Update to Jackrabbit Filevault 3.7.0
 
-### Fixed Issues {#fixed-issues-13206}
+### Fixed Issues {#fixed-issues-13239}
 
-- SITES-14937: MSM - Inherit Rollout Configs from Parent value get toggled on hitting Save & Close on live copies.
-- SITES-14847: Content Fragments - Content Fragment Links are not highlighted.
-- SITES-11620: Content Fragments - References path is slightly cut in the UI.
-- SITES-14171: GraphQL - Circular references are not broken for cached data in some cases.
-- SITES-14577: Experience Fragments - Bulk publish is not working for live copies.
-- SITES-14341: Admin UI - Inconsistent behavior of the 'Properties' button when delete permissions are removed.
-- SITES-11000: Admin UI - References: Incoming links missing in some pages.
-- SITES-11559: Admin UI - References: Incoming Links shows wrong pages.
-- SITES-14337: Admin UI - Opening editor page produces an error in specific cases.
-- SITES-13425: ContextHub - Menu Bar does not display when clicking ContextHub button.
-- CQ-4354266: Unable to open inbox items.
-- CQ-4354279: Unable to see activity report under Personalization tab.
-- FORMS-9971: When an Adaptive Form is rendered in a different locale, the visibility of components is interpreted and applied inaccurately. 
-- FORMS-9888: When an Adaptive Form is set to redirect to an external URL (thank you page) on form submission, it fails to redirect to the external URL. 
-- FORMS-9845: After clearing a dropdown using the rule editor, the previously provided values persist, despite the supposed clearance.
-- FORMS-9263: When the label of a checkbox contains special characters and a user clicks the checkbox, the respective checkbox is not selected.
-- FORMS-9254: As a user scrolls through the text of the Terms & Conditions component, the checkbox within the component is automatically enabled even before the user has scrolled through the entire text.
-- FORMS-9045: The script tag does not resolve external fragment references in the base XDP.
-- FORMS-9026: When attempting to create an Adaptive Form using a JSON schema that has Enums with empty strings and validates without errors, the process results in a failure. Next, upon refreshing the page, the form fails to load properly, displaying a blank form along with an error in the logs. 
-- FORMS-8964: In Android&trade; Chrome/Firefox, text becomes uneditable   in Text Box Component if max character limit is reached. 
-- FORMS-8668: Excessive Java&trade; stack dumps in error logs, despite functional form rendering, causing log file bloat. 
-- FORMS-8554: Adaptive Forms with lazy loading enabled do not work in preview mode of the author instance. 
-- FORMS-8177: When the forms service is active, an exception "com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Failed to retrieve asset dependencies." occurs. The error disappears on disabling the form service. 
-- FORMS-3691: Some objects are missing IIFE (Immediately Invoked Function Expression) scoping. The primary purpose of using an IIFE is to create a scope for variables within the function, preventing those variables from polluting the global scope. 
-- SITES-15463: Sites Templates - Templates cannot be published.
+- SKYOPS-63290: Fixed incorrect evolution of buckets
+- SKYOPS-54607: Ratelimiter serverload computation not correct for request that failed
+- ASSETS-27648: ContentModelIT fails to read exclusion files from other bundles
+- GRANITE-43160: Sling Error Handler overwrites Content-Type
+- GRANITE-43744: Sling Authenticator does not work properly if there is misconfiguration with authentication-requirement and vanity path
+- GRANITE-46419: AEM integration issue with Auth0 Idp
+- GRANITE-46292: Okta SAML configuration not working after AEM Cloud update
 
-### Known Issues {#known-issues-13206}
+### Known Issues {#known-issues-13239}
 
-- SITES-15359: Content Fragments - The variation name pattern fails to correctly match variations that have ```'_'``` in their resource names.
-- FORMS-10444: Adaptive Forms Templates - Templates cannot be published (workaround: use Distribution console).
-- CQ-4354191: Worfklows - Custom launcher may trigger many times due to replication metadata present on nt:unstructured nodes (workaround: update launchers to exclude replication metadata properties to avoid overlap).
-- SITES-15622: GraphQL - Issue with persisted queries with number & boolean parameters.
-- SITES-15654: GraphQL - Issues with unions and properties of same name.
+None.
 
-### Embedded Technologies {#embedded-tech-13206}
+### Embedded Technologies {#embedded-tech-13239}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM OAK |1.52-T20230629133256-25c01b8|[Oak API 1.52.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.52.0/index.html)| 
+|AEM OAK |1.54-T20230817132355-3800a65|[Oak API 1.54.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html)| 
 |AEM SLING API |Version 2.27.2 |[Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL|Version 1.4.20-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |AEM Core Components|Version 2.23.2|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
