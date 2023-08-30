@@ -27,7 +27,7 @@ You need Administrator privileges to [configure settings for sharing assets as a
 
 ## Configure link share settings {#config-link-share-settings}
 
-[!DNL Experience Manager Assets] allows you to configure the default link share settings.
+[!DNL Experience Manager Assets] lets you configure the default link share settings.
 
 1. Click the [!DNL Experience Manager] logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Assets Configuration]** &gt; **[!UICONTROL Link Share]**.
 1. Initial Settings:

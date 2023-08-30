@@ -32,4 +32,4 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 
 1. Click **Save** to confirm your submission.
 
-After saving, the newly created IP allowlist appears as a row in the table in the **IP Allow Lists** page.
+After saving, the newly-created IP allowlist appears as a row in the table in the **IP Allow Lists** page.

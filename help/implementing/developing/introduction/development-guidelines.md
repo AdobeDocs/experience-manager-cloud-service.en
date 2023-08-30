@@ -199,7 +199,7 @@ For Production programs, access to the Developer Console is defined by the "Clou
 
 ### Performance Monitoring {#performance-monitoring}
 
-Adobe monitors application performance and takes measures to address if deterioration is observed. At this time, application metrics can not be obeserved.
+Adobe monitors application performance and takes measures to address if deterioration is observed. At this time, application metricscannot be obeserved.
 
 ## Sending Email {#sending-email}
 

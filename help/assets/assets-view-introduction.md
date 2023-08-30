@@ -1,6 +1,6 @@
 ---
 title: How does the new AEM Assets UI or Assets view in AEM benefit you?
-description: Learn more about the key benefits of the new AEM Assets UI or the new Assets view in AEM
+description: Learn more about the key benefits of the new AEM Assets UI or the new Assets view in AEM. Adobe, leveraging its expertise in empowering marketing and creative professionals, introduces a game-changing new user experience.
 mini-toc-levels: 3
 ---
 
@@ -89,7 +89,7 @@ Quickly setup a folder structure for your organization using the new AEM Assets 
 
 ### Search-first approach to enhance efficiency {#search-first}
 
-Unlock the potential of your organization's digital asset library with the power of search with cutting-edge functionality. You can bid farewell to the hassle of manually sifting through countless files and folders. Any user can instantly locate the perfect image, video, or document you need to create stunning marketing campaigns, captivating presentations, and engaging content. Our search first engine allows you to effortlessly navigate through asset types, metadata, smart tags, and even the content itself without knowing the exact keyword. Embrace the future of the DAM with our Search-First and unleash the full potential of your digital asset library.
+Unlock the potential of your organization's digital asset library with the power of search with cutting-edge functionality. You can bid farewell to the hassle of manually sifting through countless files and folders. Any user can instantly locate the perfect image, video, or document you need to create stunning marketing campaigns, captivating presentations, and engaging content. Our search first engine lets you effortlessly navigate through asset types, metadata, smart tags, and even the content itself without knowing the exact keyword. Embrace the future of the DAM with our Search-First and unleash the full potential of your digital asset library.
 
 ![Search first](assets/search-first.gif)
 

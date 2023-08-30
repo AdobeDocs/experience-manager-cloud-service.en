@@ -1,10 +1,7 @@
 ---
-title: Troubleshooting installation and configuration  
-seo-title: Troubleshooting installation and configuration
-description: Troubleshooting installation and configuration
-seo-description: Troubleshooting installation and configuration
+title: Troubleshooting installation and configuration Cloud Service 
+description: How to troubleshoot installation and configuration related issues for AEM Forms as a Cloud Service?
 contentOwner: khsingh
-exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
 ---
 # Configuration {#installation-and-configuration}
 

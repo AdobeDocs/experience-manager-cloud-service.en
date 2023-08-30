@@ -64,7 +64,7 @@ You have just validated a list query for a full list of all Content Fragments. T
 
 ## Query for a Specific Piece of Sample Content {#bypath-query}
 
-Running a byPath query allows you to retrieve content for a specific Content Fragment. Product detail pages and pages that focus on a specific set of content typically require this type of query.
+Running a byPath query lets you retrieve content for a specific Content Fragment. Product detail pages and pages that focus on a specific set of content typically require this type of query.
 
 1. Copy the following code snippet for a byPath query of the preloaded **AEM Demo Assets** endpoint.
 

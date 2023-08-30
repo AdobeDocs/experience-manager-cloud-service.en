@@ -20,7 +20,7 @@ To do this, the Universal Editor provides content authors with an intuitive UI t
 
 >[!NOTE]
 >
->The Universal Editor is still in development. It currently can not edit all content types.
+>The Universal Editor is still in development. It currently cannot edit all content types.
 
 ## Prepare the App {#prepare-app}
 
@@ -68,7 +68,7 @@ This displays the organization you are currently signed into. Tap or click to sw
 
 #### Solutions {#solutions}
 
-Tapping or clicking the solutions switcher allows you to quickly jump to other Experience Cloud solutions.
+Tapping or clicking the solutions switcher lets you quickly jump to other Experience Cloud solutions.
 
 ![Solutions switcher](assets/solutions.png)
 
@@ -211,14 +211,14 @@ When you select a Content Fragment, the details of it are displayed in the compo
 
 The editor occupies most of the window and is where the page specified in [the location bar](#location-bar) is rendered.
 
-* If the editor is in an editing mode such as [text mode](#text-mode) or [media mode,](#media-mode) the content will be editable, but you can not follow links.
-* If the editor is in [preview mode,](#preview-mode) the content will be navigable and you can follow links, but you can not edit the content.
+* If the editor is in an editing mode such as [text mode](#text-mode) or [media mode,](#media-mode) the content will be editable, but you cannot follow links.
+* If the editor is in [preview mode,](#preview-mode) the content will be navigable and you can follow links, but you cannot edit the content.
 
 ![Editor](assets/editor.png)
 
 ### Component Rail {#component-rail}
 
-The component rail is always present along the left side of the editor. Depending on its mode, it can show details for a component selected in the content or the hierarchy of the page contents.
+The component rail is always present along the right side of the editor. Depending on its mode, it can show details for a component selected in the content or the hierarchy of the page contents.
 
 ![The component rail](assets/component-rail.png)
 

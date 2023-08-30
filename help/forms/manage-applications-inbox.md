@@ -1,13 +1,9 @@
 ---
 title: Manage Forms applications and tasks in AEM Inbox
-seo-title: Manage Forms applications and tasks in AEM Inbox
-description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
-seo-description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
-uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
+description: AEM Inbox lets you launch Forms-centric workflows through submitting applications and manage tasks.
 contentOwner: vishgupt
 topic-tags: document_services, publish
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 
 ---
@@ -20,7 +16,7 @@ In addition, AEM Inbox consolidates notifications and tasks from various AEM com
 
 The Inbox user interface provides list and calendar views to view tasks. You can also configure the view settings. You can filter tasks based on various parameters. For more information about view and filters, see [Your Inbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#inbox-in-the-header).
 
-In summary, Inbox allows you to create a new application and manage assigned tasks.
+In summary, Inbox lets you create a new application and manage assigned tasks.
 
 >[!NOTE]
 >
