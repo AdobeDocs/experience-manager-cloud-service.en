@@ -391,8 +391,33 @@ They are added as a reference, in your current location in your fragment.
    >[!CAUTION]
    >
    >If, after adding a reference to another fragment, you change format to:
+   >
    >* **Plain Text**: the reference is completely lost from the fragment.
    >* **Markdown**: the reference will remain.
+
+## Inheritance {#inheritance}
+
+Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+
+You can cancel (then re-enable) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
+
+![A Content Fragment showing inheritance relationship](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
+
+For example:
+
+* Cancel Inheritance
+
+  ![Cancel Inheritance button](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
+
+* Re-enable Inheritance (if inheritance is already cancelled)
+
+  ![Re-Enable Inheritance button](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+
+<!--
+* Rollout action is also available in Live Copy source
+
+  ![Rollout button](/help/assets/content-fragments/assets/editing-rollout.png)
+-->
 
 ## Managing Variations {#managing-variations}
 

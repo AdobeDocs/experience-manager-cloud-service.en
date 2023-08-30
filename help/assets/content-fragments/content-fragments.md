@@ -112,7 +112,7 @@ Together with the JSON export capabilities of AEM core components, this structur
 
 When accessed through the **Assets** console you can use MSM and create Live Copies for your fragments.
 
-For further details see [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md).
+For further details see [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md). This enables [inheritance](/help/assets/content-fragments/content-fragments-variations.md#inheritance) for both variations and individual fields of your fragments.
 
 >[!CAUTION]
 >
