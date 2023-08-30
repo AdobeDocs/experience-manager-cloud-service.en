@@ -85,11 +85,13 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### New features in Admin view {#admin-view-features}
 
+**Search enhancements**
+
 * Administrators can now configure the batch size of assets that display when you perform a search. The asset search results display in multiples of the configured batch size number when you further scroll down to load the results. Setting a lower batch size number results in faster search response times.
 
   ![Assets batch size configuration](/help/release-notes/assets/assets-batch-size-configuration.png)  
 
-* Experience Manager Assets now includes a new version 9 of damAssetLucene index. damAssetLucene-9 changes the behavior of Oak Query facet counting to no longer evaluate access control on the facet counts returned by the underlying search index, which results in the faster search response times.
+* Experience Manager Assets now includes a new version 9 of `damAssetLucene` index. `damAssetLucene-9` changes the behavior of Oak Query facet counting to no longer evaluate access control on the facet counts returned by the underlying search index, which results in the faster search response times.
 
 ### Pre-release features available in [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
