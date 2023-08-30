@@ -69,6 +69,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2023 {#2023}
+      + [Maintenance Release Notes for 2023.9.0](/help/release-notes/maintenance/2023/2023.9.0.md) 
       + [Maintenance Release Notes for 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md) 
       + [Maintenance Release Notes for 2023.7.0](/help/release-notes/maintenance/2023/2023.7.0.md) 
       + [Maintenance Release Notes for 2023.6.0](/help/release-notes/maintenance/2023/2023.6.0.md)
