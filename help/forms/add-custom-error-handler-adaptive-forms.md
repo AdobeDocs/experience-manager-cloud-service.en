@@ -1,6 +1,5 @@
 ---
-title: Add a custom error handlers in Adaptive Forms for AEM Adaptive Forms
-seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms
+title: Add custom error handlers in AEM Adaptive Forms
 description: AEM Forms provides out-of-the-box success and error handlers for a form using the REST endpoint configured to invoke an external service. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 seo-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: Add a custom error handler, add a default error handler, add a error handler in form, use rule editor's invoke service to add a custom error handler, configure rule editor to add a custom error handler , add custom error handler using rule editor
@@ -8,7 +7,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 ---
-# Error Handlers in Adaptive Forms {#error-handlers-in-adaptive-form}
+# Add Custom Error Handlers in AEM Adaptive Forms {#error-handlers-in-adaptive-form}
 
 <span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
 
@@ -167,7 +166,7 @@ You can view the value of dataRef in the **[!UICONTROL Properties]** window of a
 
 +++
 
- 
+
 ## Add error handler using Rule Editor {#add-error-handler-using-rule-editor}
 
 Using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, you define the validation criteria based on the data source that you use with the Adaptive Form. In case, you use RESTful web services as the data source, you can define the validation criteria in a Swagger definition file. By utilizing the error handler functions and Rule Editor in Adaptive Forms, you can effectively manage and customize error handling. You define the conditions using Rule Editor and configure the desired actions to be performed when the rule is triggered. Adaptive Form validates the inputs that you enter in fields based on pre-set validation criteria. In case, the input values do not meet the validation criteria, the error messages are displayed at the field level in an Adaptive Form. 
@@ -251,7 +250,7 @@ Let's add the following code to the JavaScript file to display the response and 
 1. Save the `function.js` file.
 1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
 1. Add a text file as `js.txt`. The file contains:
-  
+
     ```javascript
         #base=js
         functions.js

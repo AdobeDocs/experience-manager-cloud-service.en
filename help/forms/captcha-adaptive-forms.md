@@ -5,6 +5,9 @@ topic-tags: adaptive_forms, author
 ---
 # Use reCAPTCHA in Adaptive Forms{#using-reCAPTCHA-in-adaptive-forms}
 
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html)                  |

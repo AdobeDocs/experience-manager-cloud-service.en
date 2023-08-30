@@ -11,7 +11,7 @@ When a form is filled or submitted, you can keep a record of the form, in print 
 
 ![Document of Record](assets/document-of-record.png)
 
-To create a Document of Record, an XFA or Acroform based template is merged with data collected via an adaptive form. You can generate a Document of Record automatically or on-demand. The on-demand option allows you to specify a custom XFA or Acroform based template to provide a custom appearance to your Document of Record.
+To create a Document of Record, an XFA or Acroform based template is merged with data collected via an adaptive form. You can generate a Document of Record automatically or on-demand. The on-demand option lets you specify a custom XFA or Acroform based template to provide a custom appearance to your Document of Record.
 
 You can:
 
@@ -60,7 +60,7 @@ When an Adaptive Form is configured to automatically generate a Document of Reco
 * Form developers do not have to maintain data bindings manually. Auto-generated Document of Record takes care of data binding related updates.
 * Form developers do not have to manually hide fields which are marked exclude from Document of Record. Auto-generated Document of Record are pre-configured to exclude such fields.
 * Auto-generated Document of Record option saves time required to create a Form template for Document of Record.
-* Auto-generated Document of Record option allows you to use different styling and appearances using different base templates. It helps select best style and appearance for Document of Record for your organization. If you do not specify styling, system styles are set as default.
+* Auto-generated Document of Record option lets you use different styling and appearances using different base templates. It helps select best style and appearance for Document of Record for your organization. If you do not specify styling, system styles are set as default.
 * Auto-generated Document of Record ensures any change in form is immediately reflected in the Document of Record.
 
 Perform the following steps to configure an Adaptive Form to automatically generate a Document of Record:
@@ -88,7 +88,7 @@ Perform the following steps to configure an Adaptive Form to automatically gener
 1. Click **[!UICONTROL Save]**.
 
 <!-- 
-In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
+In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
 You can use submit actions such as "Send Email", "Invoke an AEM workflow", "Invoke a Power Automate flow", and other [Submit Actions](configuring-submit-actions.md) to receive a Document of Record.
@@ -100,7 +100,7 @@ You can use submit actions such as "Send Email", "Invoke an AEM workflow", "Invo
 
 Adaptive forms and corresponding document of record templates can evolve over the period of time. You can choose to add, remove, or modify fields to an Adaptive Form or a Document of Record template.
 
-When you make changes to a Document of Record template and upload the changed Document of Record template to AEM Forms, the Adaptive Forms editor automatically detects the changed bindings and informs you about the adaptive form components that require new bindings. It allows you to make incremental updates to a Document of Record template.
+When you make changes to a Document of Record template and upload the changed Document of Record template to AEM Forms, the Adaptive Forms editor automatically detects the changed bindings and informs you about the adaptive form components that require new bindings. It lets you make incremental updates to a Document of Record template.
 
 For example, an Organization, *We.Retail*, has an AcroForm-based Document of Record template, *we-retail-invoice.pdf*. The template looks like the following:
 
@@ -259,7 +259,7 @@ The Adaptive Forms table components such as header, footer, and row map to corre
 
 ## Base template of a Document of Record {#base-template-of-a-document-of-record}
 
-Base template provides styling and appearance information to Document of Record. It allows you to customize default appearance of auto generated Document of Record. For example, you can use a base template to add your company logo in the header and copyright information in the footer of the Document of Record.
+Base template provides styling and appearance information to Document of Record. It lets you customize default appearance of auto generated Document of Record. For example, you can use a base template to add your company logo in the header and copyright information in the footer of the Document of Record.
 
 The master page from a base template is used as a master page for the Document of Record template. The masterpage can have information such as a page header, page footer, and page number that you can apply to the Document of Record. You can apply such information to the Document of Record using the base template for autogeneration of the Document of Record. Using a base template enables you to change the default properties of fields.
 

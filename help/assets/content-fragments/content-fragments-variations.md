@@ -106,7 +106,7 @@ The format can be selected when the full-screen editor.
 
 ### Rich Text {#rich-text}
 
-Rich text editing allows you to format:
+Rich text editing lets you format:
 
 * Bold
 * Italic
@@ -143,7 +143,7 @@ Plain Text allows for rapid entry of content without formatting or markdown info
 >
 >For full information see the [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) documentation.
 
-This allows you to format your text using markdown. You can define:
+This lets you format your text using markdown. You can define:
 
 * Headings
 * Paragraphs and Line Breaks
@@ -385,8 +385,33 @@ They are added as a reference, in your current location in your fragment.
    >[!CAUTION]
    >
    >If, after adding a reference to another fragment, you change format to:
+   >
    >* **Plain Text**: the reference is completely lost from the fragment.
    >* **Markdown**: the reference will remain.
+
+## Inheritance {#inheritance}
+
+Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+
+You can cancel (then re-enable) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
+
+![A Content Fragment showing inheritance relationship](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
+
+For example:
+
+* Cancel Inheritance
+
+  ![Cancel Inheritance button](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
+
+* Re-enable Inheritance (if inheritance is already cancelled)
+
+  ![Re-Enable Inheritance button](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+
+<!--
+* Rollout action is also available in Live Copy source
+
+  ![Rollout button](/help/assets/content-fragments/assets/editing-rollout.png)
+-->
 
 ## Managing Variations {#managing-variations}
 
@@ -453,7 +478,7 @@ To delete an existing variation:
 
 **Master** is an integral part of a content fragment and by definition it holds the master copy of the content, whereas the variations hold the individual updated and tailored versions of that content. When Master is updated it is possible that these changes are also relevant to the variations and, therefore, need to be propagated to them..
 
-When editing a variation you have access to the action for synchronizing the current element of the variation with Master. This allows you to automatically copy changes made to Master to the required variation.
+When editing a variation you have access to the action for synchronizing the current element of the variation with Master. This lets you automatically copy changes made to Master to the required variation.
 
 >[!CAUTION]
 >

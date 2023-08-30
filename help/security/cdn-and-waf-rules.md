@@ -259,7 +259,7 @@ Example 1: When the request rate exceeds 100 requests per second in the last 60 
 
 ```
 - name: rate-limit-example
-  when: { reqProperty: /critical/resource }
+  when: { reqProperty: path, equals: /critical/resource }
   action: block
   rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
@@ -268,7 +268,7 @@ Example 2: When the request rate exceeds 10 requests per second in 10 seconds, b
 
 ```
 - name: rate-limit-using-defaults
-  when: { reqProperty: /critical/resource }
+  when: { reqProperty: path, equals: /critical/resource }
   action: block
   rateLimit:
     limit: 10
@@ -304,17 +304,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
 "rid": "974e67f6",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "host": "example.com",
 "url": "/block-me",
-"req_mthd": "GET",
-"res_type": "",
+"method": "GET",
+"res_ctype": "",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=path-rule;waf=;action=blocked"
 }
 ```
@@ -323,17 +324,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "rid": "974e67f6",
 "host": "example.com",
 "url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
-"req_mthd": "GET",
-"res_type": "image/png",
+"method": "GET",
+"res_ctype": "image/png",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=;waf=SQLI;action=blocked"
 }
 ```
@@ -342,19 +344,20 @@ data:
 
 Below is a list of the field names used in CDN logs, along with a brief description.
 
-| **Field Name**  | **Description**  |
-|---|---|
-| *timestamp*  | The time the request started, after TLS termination  |
-| *ttfb*  | Abbreviation for *Time To First Byte*. The time interval between the request started up to the point before the response body started being streamed. |
-| *cip*  |  The client IP address. |
-| *rid* |  The value of the request header used to uniquely identify the request. |
-| *ua* |  The user agent responsible for making a given HTTP request. |
-| *host*  | The authority that the request is intended for.   |
-| *url*  | The full path, including query parameters.  |
-| *req_mthd*  |  HTTP method sent by the client, such as "GET" or "POST". |
-| *res_type*  | The Content-Type used to indicate the original media type of the resource  |
-| *cache*  |  State of the cache. Possible values are HIT, MISS, or PASS |
-| *res_status*  | The HTTP status code as an integer value.  |
-| *res_bsize*  | Body bytes sent to the client in the response.  |
-| *server*  | Datacenter of the CDN cache server.  |
-| *rules*  | The name of any matching rules, for both CDN rules and waf rules.<br><br>Matching CDN rules appear in the log entry for all requests to the CDN, regardless of whether it is a CDN hit, pass, or miss.<br><br>Also indicates if the match resulted in a block. <br><br>For example, "`cdn=;waf=SQLI;action=blocked`"<br><br>Empty if no rules matched.  |
+ | **Field Name**  | **Description**  |
+ |---|---|
+ | *timestamp*  | The time the request started, after TLS termination  |
+ | *ttfb*  | Abbreviation for *Time To First Byte*. The time interval between the request started up to the point before the response body started being streamed. |
+ | *cli_ip*  |  The client IP address. |
+ | *cli_country* | Two-letter [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) alpha-2 country code for the client country. |
+ | *rid* |  The value of the request header used to uniquely identify the request. |
+ | *req_ua* |  The user agent responsible for making a given HTTP request. |
+ | *host*  | The authority that the request is intended for.   |
+ | *url*  | The full path, including query parameters.  |
+ | *method*  |  HTTP method sent by the client, such as "GET" or "POST". |
+ | *res_ctype*  | The Content-Type used to indicate the original media type of the resource.  |
+ | *cache*  |  State of the cache. Possible values are HIT, MISS, or PASS |
+ | *status*  | The HTTP status code as an integer value.  |
+ | *res_age*  | The amount of time (in seconds) a response has been cached (in all nodes).  |
+ | *pop*  | Datacenter of the CDN cache server.  |
+ | *rules*  | The name of any matching rules, for both CDN rules and waf rules.<br><br>Matching CDN rules appear in the log entry for all requests to the CDN, regardless of whether it is a CDN hit, pass, or miss.<br><br>Also indicates if the match resulted in a block. <br><br>For example, "`cdn=;waf=SQLI;action=blocked`"<br><br>Empty if no rules matched.  |

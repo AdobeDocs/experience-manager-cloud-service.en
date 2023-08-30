@@ -45,7 +45,7 @@ In this way, front-end development can work separately from and parallel to any 
 
 >[!NOTE]
 >
->The front-end pipelines can only deploy JavaScript, CSS, and static resources to style your AEM site. Site content such as pages or assets can not be deployed in a pipeline.
+>The front-end pipelines can only deploy JavaScript, CSS, and static resources to style your AEM site. Site content such as pages or assets cannot be deployed in a pipeline.
 
 ## Access Cloud Manager {#login}
 

@@ -106,7 +106,7 @@ To access New Relic One directly:
 
 ### Verifying Your Email {#verify-email}
 
-If you are asked to verify your email during login to New Relic One, it means your email is associated with multiple accounts. This allows you to choose which account to access.
+If you are asked to verify your email during login to New Relic One, it means your email is associated with multiple accounts. This lets you choose which account to access.
 
 If you do not verify your email address, New Relic attempts to log you in with the most recently created user record associated with your email address. To avoid verifying your email during each login, click the **Remember Me** checkbox in the login screen.
 
@@ -114,7 +114,7 @@ For more help, open a support ticket by way of the [AEM Support Portal](https://
 
 ## Troubleshooting New Relic One Access {#troubleshooting}
 
-If you were added as a New Relic One user as described in the the section [Manage New Relic One Users](#manage-users) and can not locate the original account confirmation email follow these steps.
+If you were added as a New Relic One user as described in the the section [Manage New Relic One Users](#manage-users) andcannot locate the original account confirmation email follow these steps.
 
 1. Navigate to New Relic's login page at [`login.newrelic.com/login`](https://login.newrelic.com/login).
 
@@ -163,6 +163,10 @@ Note:
 * Each application uses one license key.
 * AEM as a Cloud Service environments report to only one New Relic One account.
 * Full monitoring metrics and events for both New Relic One are retained for seven days.
+
+### Does Adobe send alert notifications from New Relic One? {#alerting-new-relic}
+
+Adobe provides New Relic One access for observability purposes only and does not utilize it for customer alerting or internal operational alerting. Notifications for any incidents are sent using [user notification profiles.](/help/journey-onboarding/notification-profiles.md)
 
 ### Who can access the New Relic One cloud service data? {#access-new-relic-cloud}
 

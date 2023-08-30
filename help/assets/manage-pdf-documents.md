@@ -7,7 +7,7 @@ exl-id: 29660869-6902-4093-845b-cd629be59d4d
 ---
 # Manage PDF documents in Experience Manager Assets as a Cloud Service {#add-assets-to-experience-manager}
 
-Experience Manager Assets integrates with the Document Cloud PDF Viewer seamlessly, which allows you to preview multiple pages of a PDF document. In addition, you can also use advanced Document Cloud PDF viewer features such as annotations, search text, navigate the PDF document using bookmarks and thumbnails, and more under the same roof. Experience Manager Assets also allows you to upload documents in other supported formats and preview them in a PDF format.
+Experience Manager Assets integrates with the Document Cloud PDF Viewer seamlessly, which lets you preview multiple pages of a PDF document. In addition, you can also use advanced Document Cloud PDF viewer features such as annotations, search text, navigate the PDF document using bookmarks and thumbnails, and more under the same roof. Experience Manager Assets also lets you upload documents in other supported formats and preview them in a PDF format.
 
 Document Cloud PDF viewer benefits AEM Assets in the following ways:
 *   [Support for PDF Document Cloud Viewer Components](#pdf-doc-cloud)
@@ -38,7 +38,7 @@ The native PDF Doc Cloud viewer has the following components in AEM Assets:
 
 ## Support for Multiple Pages Preview and Annotations for PDF Asset {#multi-page}
 
-Adobe Experience Manager Assets allows you to preview PDF document consisting of several pages. To preview multiple pages of a PDF document, consider the following steps:
+Adobe Experience Manager Assets lets you preview PDF document consisting of several pages. To preview multiple pages of a PDF document, consider the following steps:
 
 1.  Follow the steps to [upload assets in AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1.  Browse the PDF document that you want to upload and preview.
@@ -60,7 +60,7 @@ You can also apply [annotations](#pdf-annotations) to the PDF document in a mult
 
 **PDF Annotations {#pdf-annotations}** 
 
-Experience Manager Assets allows you to add comments to a PDF document. A PDF document can have multiple annotations. 
+Experience Manager Assets lets you add comments to a PDF document. A PDF document can have multiple annotations. 
 
 To annotate a PDF document, perform the following steps:
 1.  Go to the Assets interface, navigate to the PDF document that you want to annotate. The native PDF viewer opens on the right showing preview of the selected PDF document.
