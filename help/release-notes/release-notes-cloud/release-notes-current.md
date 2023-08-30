@@ -71,15 +71,15 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-* **Bulk import assets from data sources**: Administrators now have the ability to import large number of assets from a data source to AEM Assets. The administrators do not need to upload individual assets or folders to AEM Assets anymore. The supported data sources for bulk import include Azure, AWS, Google Cloud, and Dropbox.
+* **Bulk import assets from data sources**: Administrators now have the [ability to import large number of assets](/help/assets/bulk-import-assets-view.md) from a data source to AEM Assets. The administrators do not need to upload individual assets or folders to AEM Assets anymore. The supported data sources for bulk import include Azure, AWS, Google Cloud, and Dropbox.
 
   ![Bulk import assets from a data source](/help/release-notes/assets/bulk-import.png)
 
-* **Image editing tools powered by Adobe Express**: Easy and intuitive image editing tools powered by Adobe Express available directly within AEM Assets to increase content re-use and accelerate content velocity.
+* **Image editing tools powered by Adobe Express**: Easy and intuitive [image editing tools powered by Adobe Express](/help/assets/edit-images-assets-view.md) available directly within AEM Assets to increase content re-use and accelerate content velocity.
 
   ![Image editing with Adobe Express](/help/release-notes/assets/edit-adobe-express.png)
 
-* **Flexibility while pinning items for My Workspace Quick Access**: Ability to select and pin items for you, for your entire organization, or for a list of groups so that they display in the Quick Access section of My Workspace based on your selection.
+* **Flexibility while pinning items for My Workspace Quick Access**: Ability to select and pin items for you, for your entire organization, or for a list of groups so that they display in the [Quick Access section of My Workspace](/help/assets/my-workspace-assets-view.md) based on your selection.
 
   ![Pin items for groups](/help/release-notes/assets/pin-items-for-groups.png)
 
@@ -94,6 +94,10 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 * **Dynamic Media**: [Multi-subtitle and multi-audio track support for videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma)&mdash;You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
 
   ![Subtitles and Audio tracks tab on the Properties page of a selected video asset.](/help/release-notes/assets/msma-aem-cs.png)*Subtitles and Audio tracks tab on the Properties page of a selected video asset.*
+
+* **Assets**: Ability to select ZIP archives that are managed in Experience Manager and extracting the files directly into Experience Manager without downloading them.
+
+  ![Pin items for groups](/help/release-notes/assets/extract-archive.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
