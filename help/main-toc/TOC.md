@@ -524,6 +524,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Supported file types and use cases](/help/assets/supported-file-formats-assets-view.md)
     + [View assets](/help/assets/navigate-assets-view.md)
     + [Upload and add assets](/help/assets/add-delete-assets-view.md)
+    + [Bulk import assets](/help/assets/bulk-import-assets-view.md)
     + [Search and discover assets](/help/assets/search-assets-view.md)
     + [Asset management tasks](/help/assets/manage-organize-assets-view.md)
     + [Edit images](/help/assets/edit-images-assets-view.md)
