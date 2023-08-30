@@ -26,7 +26,7 @@ The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] cu
 
 Have a look at the August 2023 Release Overview video for a summary of the features added in the 2023.8.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3422016/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3423535/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -85,9 +85,6 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### New features in Admin view {#admin-view-features}
 
-* 
-
-* 
 
 ### Pre-release features available in [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
