@@ -108,13 +108,13 @@ This folder contains relative symbolic links to files under conf.dispatcher.d/av
 
 Example commands required to create these symbolic links:
 
-Apple&reg; macOS, Linux & WSL
+Apple macOS, Linux and WSL
 
 ```
 ln -s ../available_vhosts/wknd.vhost wknd.vhost
 ```
 
-Microsoft&reg; Windows
+Microsoft Windows
 
 ```
 mklink wknd.vhost ..\available_vhosts\wknd.vhost
@@ -146,13 +146,13 @@ This folder contains relative symbolic links to files under conf.dispatcher.d/av
 
 Example commands required to create these symbolic links:
 
-Apple&reg; macOS, Linux & WSL
+Apple macOS, Linux and WSL
 
 ```
 ln -s ../available_farms/wknd.farm wknd.farm
 ```
 
-Microsoft&reg; Windows
+Microsoft Windows
 
 ```
 mklink wknd.farm ..\available_farms\wknd.farm
