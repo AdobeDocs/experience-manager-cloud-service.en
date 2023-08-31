@@ -71,6 +71,21 @@ Once enabled, Experience Manager sends notifications of duplicate assets to the 
 >
 >When you upload assets to the repository, Experience Manager detects duplication and notifies you about the first 100 duplicate assets.
 
+## Extract ZIP archives {#extract-zip-archives}
+
+Select ZIP archives that are managed in Experience Manager and extract the files directly into Experience Manager without downloading them.
+
+To extract the ZIP files, perform the following steps:
+
+1. Select the ZIP file type.
+1. Click the **[!UICONTROL Extract Archive]** option available on the action bar.
+1. Select the folder where you need to save the extracted assets that are available in the compressed folder.
+1. Click **[!UICONTROL Next]**.
+1. Select the appropriate behavior to handle file name conflicts during extraction. You can select to create a new version of an existing asset, replace the asset, keep both the assets in the destination folder, or skip the extraction of the new asset.
+1. Click **[!UICONTROL Extract]**. Zip extraction process starts. Once the process is complete, you can view the extracted assets in the destination folder.
+
+   ![zip extraction](assets/zip-extraction.png)
+
 ## Preview assets {#previewing-assets}
 
 To preview an asset, follow these steps.
