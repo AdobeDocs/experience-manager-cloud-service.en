@@ -3,9 +3,18 @@ title: Managing Content Fragments
 description: Learn how to use the Content Fragments console to manage your AEM Content Fragments; for page authoring, or as the basis of your headless content.
 feature: Content Fragments
 role: User
+hide: yes
+index: no
+hidefromtoc: yes
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 ---
 # Managing Content Fragments {#managing-content-fragments}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 Learn how to use the **Content Fragments** console to manage your AEM Content Fragments. These can be used for page authoring, or as the basis of your headless content.
 
