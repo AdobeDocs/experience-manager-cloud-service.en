@@ -580,6 +580,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + Authoring Adaptive Forms - Core Components {#authoring-adaptive-forms-core-components}
       + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+        + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
         + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
         + [Create an Adaptive Forms - Core Components in an AEM Sites page](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
@@ -588,6 +589,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Create forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md)
         + [Configure Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)
         + [Use Google reCAPTCHA in an Adaptive Form ](/help/forms/captcha-adaptive-forms-core-components.md)
+        + [Add custom error handler in an Adaptive Form](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
     + Authoring Adaptive Forms - Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
