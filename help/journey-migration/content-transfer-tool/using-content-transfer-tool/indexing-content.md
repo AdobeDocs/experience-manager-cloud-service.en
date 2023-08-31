@@ -12,7 +12,7 @@ description: Learn how the migration process will index the ingested content on 
 >abstract="AEM Indexing refers to indexing of the Cloud Service instance after migrating content to it. The indexing is done to bring the performance to an optimum speed for a good experience."
 
 Once the Cloud Acceleration Manager completes the ingestion of content into your Cloud Service instance, it is ready to be used. Initially
-the content is not indexed though which will reduce performance greatly. For the instance to have optimum performance providing a good user
+the content is not indexed, likely resulting in an unstable environment where issues such as unsearchable content and degraded performance can be expected.
 experience, the migration process will automatically start indexing the content. There is nothing to be done, except to monitor the indexing
 progress.
 
