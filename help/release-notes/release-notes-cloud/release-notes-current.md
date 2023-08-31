@@ -91,7 +91,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Assets batch size configuration](/help/release-notes/assets/assets-batch-size-configuration.png)  
 
-* Experience Manager Assets now includes a new version 9 of `damAssetLucene` index. `damAssetLucene-9` changes the behavior of Oak Query facet counting to no longer evaluate access control on the facet counts returned by the underlying search index, which results in the faster search response times.
+* Experience Manager Assets now includes a new version 9 of `damAssetLucene` index. `damAssetLucene-9` changes the behavior of Oak Query facet counting to [no longer evaluate access control on the facet counts](/help/assets/search-assets.md) returned by the underlying search index, which results in the faster search response times.
 
 ### Pre-release features available in [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
@@ -99,7 +99,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Subtitles and Audio tracks tab on the Properties page of a selected video asset.](/help/release-notes/assets/msma-aem-cs.png)*Subtitles and Audio tracks tab on the Properties page of a selected video asset.*
 
-* **Assets**: Ability to select ZIP archives that are managed in Experience Manager and extracting the files directly into Experience Manager without downloading them.
+* **Assets**: Ability to select ZIP archives that are managed in Experience Manager and [extracting the files directly into Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) without downloading them.
 
   ![Pin items for groups](/help/release-notes/assets/extract-archive.png)
 
