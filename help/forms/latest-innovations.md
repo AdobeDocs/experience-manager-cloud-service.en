@@ -1,5 +1,5 @@
 ---
-title: Discover the latest innovations in Adobe Experience Manager Forms as a Cloud Service.
+title: Top Adobe Experience Manager Forms innovations
 description: "Discover the latest capabilities of [!DNL AEM Forms] as a Cloud Service to create, manage, and publish enterprise-class forms and business processes."
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
 ---

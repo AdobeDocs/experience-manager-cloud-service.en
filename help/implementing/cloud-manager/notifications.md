@@ -48,7 +48,7 @@ Subscriptions define for which products you receive notifications and which noti
 
 ![Notification subscriptions](assets/notifications-subscriptions.png)
 
-By default, you will receive all notifications for all products. Click on **Customize** next to a product to define the types of notifications you receive for that product.
+By default, you will receive all notifications for all products both in the application and via email. Click on the chevron next to a product name reveal the detailed options and define the types of notifications you receive for that product. Or check or uncheck the options at the product level to select/deselect all options for the product.
 
 ![Notification subscription customization](assets/notifications-subscriptions-customize.png)
 
