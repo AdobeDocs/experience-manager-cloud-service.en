@@ -108,7 +108,7 @@ This folder contains symbolic links to files under conf.dispatcher.d/available_v
 
 >[!NOTE]
 >
-> When working with symbolic links under Windows, you should be running in an elevated command prompt or the Windows Subsystem for Linux.
+> When working with symbolic links under Windows, you should be running in an elevated command prompt, in the Windows Subsystem for Linux or have the [Create symbolic links](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) privilege assigned.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -132,7 +132,7 @@ This folder contains symbolic links to files under conf.dispatcher.d/available_f
 
 >[!NOTE]
 >
-> When working with symbolic links under Windows, you should be running in an elevated command prompt or the Windows Subsystem for Linux.
+> When working with symbolic links under Windows, you should be running in an elevated command prompt, in the Windows Subsystem for Linux or have the [Create symbolic links](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) privilege assigned.
 
 * `conf.dispatcher.d/cache/rules.any`
 
