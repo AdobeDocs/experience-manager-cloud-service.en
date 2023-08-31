@@ -29,7 +29,7 @@ References are simply a mechanism for connecting your resources, be it other con
 
 Some references have dedicated data-types (for example, Content References and Fragment References), whereas others are simply added as a reference within a text block (asset references and ad hoc references).
 
-![Content Fragments - References](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![Content Fragments - References](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Content References {#content-references}
 
@@ -86,11 +86,7 @@ The definition of the Content Fragment Model controls:
 
 Using the **Structure Tree** tab of the Content Fragment Editor you can navigate through the fragments referenced by your fragment, and then through any references they may contain. Selecting a reference opens that fragment for editing.
 
->[!NOTE]
->
->Using the breadcrumbs in the main panel you can navigate back to your starting point.
-
-![Content Fragment Structure Tree](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
+![Content Fragment Structure Tree](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 ## Ad Hoc References {#adhoc-references}
 
@@ -104,21 +100,21 @@ Now that you have learned about references and structure in Content Fragments, t
 
 ## Additional Resources {#additional-resources}
 
-* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
  
-  * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+  * [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
 
-    * [Apply the Configuration to your Assets Folder](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+    * [Apply the Configuration to your Assets Folder](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
   
-    * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+    * [Creating a Content Fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
   
-  * [Variations - Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+  * [Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/authoring.md)
 
-  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+  * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-    * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+    * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
   
-    * [Content Fragment Models - Properties](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+    * [Content Fragment Models - Properties](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
 * Getting Started Guides
   * [Creating an Assets Folder - Headless Setup](/help/headless/setup/create-assets-folder.md)

@@ -132,6 +132,20 @@ You can use this to your advantage by boosting the rank of some assets in the se
 
 *Video: Understand how search results are ranked and how the rank can be influenced.*
 
+## Configure asset batch size to display search results {#configure-asset-batch-size}
+
+Administrators can now configure the batch size of assets that display when you perform a search. The asset search results display in multiples of the configured batch size number when you further scroll down to load the results. You can select from the available batch sizes of 200, 500, and 1000 assets. Setting a lower batch size number results in faster search response times.
+
+For example, if you set the result count limit to a batch size of 200 assets, Experience Manager Assets displays a batch size of 200 assets in the search results when you start performing the search. When you scroll down to navigate through the search results, the next batch of 200 assets is displayed. The process continues until all assets that match the search query are displayed. 
+
+To configure the asset batch size:
+
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Assets Configurations]** > **[!UICONTROL Assets Omnisearch Configuration]**.
+
+1. Select the result count limit and click **[!UICONTROL Save]**.
+
+   ![Assets batch size configuration](/help/release-notes/assets/assets-batch-size-configuration.png)
+
 ## Advanced search {#scope}
 
 [!DNL Experience Manager] provides various methods like filters that apply to the searched assets, to help you locate the desired assets faster. A few commonly used methods are described below. Some [illustrated examples](#samples) are shared below.
