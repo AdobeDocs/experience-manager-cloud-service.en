@@ -11,7 +11,7 @@ AEM as a Cloud Service logging settings and log levels are managed in configurat
 
 * AEM logging, which performs logging at the AEM application level
 * Apache HTTPD Web Server/Dispatcher logging, which performs logging of the web server and Dispatcher on the Publish tier.
-* CDN logging, which as its name indicates, performs logging at the CDN. This feature is currently available to early adopters; to join the early adopter program, email **aemcs-cdnlogs-adopter@adobe.com**, including the name of your organization and context about your interest in the feature.
+* CDN logging, which as its name indicates, performs logging at the CDN. This feature is being gradually rolled out to customers in early September.
 
 ## AEM Logging {#aem-logging}
 
@@ -498,10 +498,12 @@ Define DISP_LOG_LEVEL debug
 
  >[!NOTE]
  >
- >This feature is not yet generally available. To join the ongoing early adopter program, email **aemcs-cdnlogs-adopter@adobe.com**, including the name of your organization and context about your interest in the feature.
+ >This feature is being gradually rolled out to customers in early September.
  >
 
  AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization. The CDN log format cannot be customized and there is no concept of setting it to different modes such as info, warn, or error.
+
+Note that the Splunk forwarding feature does not yet support CDN logs.
 
  **Example**
 
@@ -594,6 +596,8 @@ Depending on the traffic and the amount of log statement written by Debug, this 
 Customers who have Splunk accounts may request via customer support ticket that their AEM Cloud Service logs are forwarded to the appropriate index. The logging data is equivalent to what is available through the Cloud Manager log downloads, but customers may find it convenient to use the query features available in the Splunk product.
 
 The network bandwidth associated with logs sent to Splunk are considered part of the customer's Network I/O usage.
+
+Note that Splunk forwarding does not yet support CDN logs.
 
 ### Enabling Splunk Forwarding {#enabling-splunk-forwarding}
 

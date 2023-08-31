@@ -24,7 +24,12 @@ To use Content Fragment Models you:
    >
    >If the [use of content fragment models have not been enabled](/help/assets/content-fragments/content-fragments-configuration-browser.md), the **Create** option will not be available.
 
-1. Specify the **Model Title**. You can also add **Tags**, a **Description**, and select **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) if required.
+1. Specify the **Model Title**. 
+   You can also define various properties; for example, add **Tags**, a **Description**, and select **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) if required. 
+
+    >[!NOTE]
+    >
+    >For details about the **Default Preview URL Pattern** see [Content Fragment Model - Properties](#content-fragment-model-properties).
 
    ![title and description](assets/cfm-models-02.png)
 
@@ -307,6 +312,12 @@ You can edit the **Properties** of a Content Fragment Model:
   * **Tags**
   * **Description**
   * **Upload Image**
+  * **Default Preview URL Pattern**
+    
+    >[!NOTE]
+    >
+    >This is only used by the *new* Content Fragment Editor. See [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) for further information.
+
 
 ## Enabling or Disabling a Content Fragment Model {#enabling-disabling-a-content-fragment-model}
 
