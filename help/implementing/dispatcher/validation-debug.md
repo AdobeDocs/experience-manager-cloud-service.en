@@ -104,7 +104,21 @@ If you want to match the exact host because you have multiple vhost files, you c
 
 * `conf.d/enabled_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-This folder contains symbolic links to files under conf.dispatcher.d/available_vhosts.
+This folder contains relative symbolic links to files under conf.dispatcher.d/available_vhosts.
+
+Example commands required to create these symbolic links:
+
+Apple&reg; macOS, Linux & WSL
+
+```
+ln -s ../available_vhosts/wknd.vhost wknd.vhost
+```
+
+Microsoft&reg; Windows
+
+```
+mklink wknd.vhost ..\available_vhosts\wknd.vhost
+```
 
 >[!NOTE]
 >
@@ -128,7 +142,21 @@ You can have one or more of these files, and they contain farms to match host na
 
 * `conf.dispatcher.d/enabled_farms/<CUSTOMER_CHOICE>.farm`
 
-This folder contains symbolic links to files under conf.dispatcher.d/available_farms.
+This folder contains relative symbolic links to files under conf.dispatcher.d/available_farms.
+
+Example commands required to create these symbolic links:
+
+Apple&reg; macOS, Linux & WSL
+
+```
+ln -s ../available_farms/wknd.farm wknd.farm
+```
+
+Microsoft&reg; Windows
+
+```
+mklink wknd.farm ..\available_farms\wknd.farm
+```
 
 >[!NOTE]
 >
