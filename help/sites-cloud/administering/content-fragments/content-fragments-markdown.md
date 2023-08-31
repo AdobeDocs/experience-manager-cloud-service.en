@@ -3,9 +3,18 @@ title: Markdown
 description: Understand how the Content Fragment editor uses markdown syntax to allow you to easily create content, for both page authoring and headless delivery.
 feature: Content Fragments
 role: User
+hide: yes
+index: no
+hidefromtoc: yes
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
 ---
 # Markdown {#markdown}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 When you are [authoring](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write content for both page authoring and headless delivery:
 
