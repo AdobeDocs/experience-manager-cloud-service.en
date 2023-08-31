@@ -1,7 +1,7 @@
 ---
 title: Introduction to Assets as a [!DNL Cloud Service]
-description: What's new in Assets as a [!DNL Cloud Service].
-contentOwner: AG
+description: Learn what's new and the benefits of Experience Manager Assets as a [!DNL Cloud Service]. A cloud-native, PaaS solution for businesses.
+contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
