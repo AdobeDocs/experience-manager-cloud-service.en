@@ -102,6 +102,14 @@ If you want to match the exact host because you have multiple vhost files, you c
 </VirtualHost>
 ```
 
+* `conf.d/enabled_vhosts/<CUSTOMER_CHOICE>.vhost`
+
+This folder contains symbolic links to files under conf.dispatcher.d/available_vhosts.
+
+>[!NOTE]
+>
+> When working with symbolic links under Windows, you should be running in an elevated command prompt or the Windows Subsystem for Linux.
+
 * `conf.d/rewrites/rewrite.rules`
 
 The file is included from inside your `.vhost` files. It has a set of rewrite rules for `mod_rewrite`.
@@ -117,6 +125,14 @@ The file is included from inside the `dispatcher_vhost.conf` file. You can chang
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
 You can have one or more of these files, and they contain farms to match host names and allow the Dispatcher module to handle each farm with different rules. Files are created in the `available_farms` directory and enabled with a symbolic link in the `enabled_farms` directory. From the `.farm` files, other files like filters, cache rules, and others are included.
+
+* `conf.dispatcher.d/enabled_farms/<CUSTOMER_CHOICE>.farm`
+
+This folder contains symbolic links to files under conf.dispatcher.d/available_farms.
+
+>[!NOTE]
+>
+> When working with symbolic links under Windows, you should be running in an elevated command prompt or the Windows Subsystem for Linux.
 
 * `conf.dispatcher.d/cache/rules.any`
 
