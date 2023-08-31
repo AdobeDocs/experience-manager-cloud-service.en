@@ -87,7 +87,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 **Search enhancements**
 
-* Administrators can now configure the batch size of assets that display when you perform a search. The asset search results display in multiples of the configured batch size number when you further scroll down to load the results. Setting a lower batch size number results in faster search response times.
+* Administrators can now [configure the batch size of assets](/help/assets/search-assets.md#configure-asset-batch-size) that display when you perform a search. The asset search results display in multiples of the configured batch size number when you further scroll down to load the results. You can select from the available batch sizes of 200, 500, and 1000 assets. Setting a lower batch size number results in faster search response times.
 
   ![Assets batch size configuration](/help/release-notes/assets/assets-batch-size-configuration.png)  
 
