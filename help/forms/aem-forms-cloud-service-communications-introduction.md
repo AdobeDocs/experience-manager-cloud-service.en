@@ -5,6 +5,8 @@ exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 ---
 # Introduction to AEM Forms as a Cloud Service Communications {#frequently-asked-questions}
 
+<span class="preview"> [DocAssurance service](#doc-assurance) is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). The documentation for the feature is subject to change.</span>
+
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)                  |
@@ -151,7 +153,35 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
-## Types of communications APIs
+
+<span class="preview"> Document Assurance service is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). The documentation for the feature is subject to change.</span>
+
+## Document Assurance {#doc-assurance}
+
+The DocAssurance service includes the Signature and Encyption APIs:
+
+### Signature APIs 
+
+The Signature APIs let your organization protect the security and privacy of Adobe PDF documents that it distributes and receives. This service uses digital signatures and certification to ensure that only intended recipients can alter documents. Because security features are applied to the document itself, the document remains secure and controlled for its entire life cycle. A document remains secure beyond the firewall, when it is downloaded offline, and when it is submitted back to your organization. You can accomplish the following tasks using the Signature APIs:
+
+* Add a signature field to a PDF document. 
+* Sign the specified signature field in a PDF document. 
+* Certify a PDF document
+
+### Encryption APIs
+
+The Encryption APIs let you encrypt and decrypt documents. When a document is encrypted, its contents become unreadable. An authorized user can decrypt the document to obtain access to the contents. If a PDF document is encrypted with a password, the user must specify the open password before the document can be viewed in Adobe Reader or Adobe Acrobat. Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.
+
+You can accomplish these tasks using the Encryption APIs:
+
+* Encrypt a PDF document with a password. 
+* Remove password-based encryption from a PDF document.
+* Retrieve the type of security applied to a PDF document. 
+
+Both Signature APIs and Encryption APIs are [Synchronous APIs](#types-of-communications-apis-types). 
+
+
+## Types of communications APIs {#types}
 
 Communications provide HTTP APIs for on-demand and batch document generation:
 

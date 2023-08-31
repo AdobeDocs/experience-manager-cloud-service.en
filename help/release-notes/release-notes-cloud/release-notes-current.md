@@ -119,20 +119,20 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
      ![Adaptive form user engagement adobe analytics report](/help/forms/assets/forms-analytics-report.png)
 
-* **Form Fragment in Adaptive Forms based on Core Components**: Say goodbye to duplication, optimize your digital inventory, and improve collaboration as you elevate your form-building experience with Form Fragments. These reusable components seamlessly integrate into multiple forms, streamlining the creation of consistent and professional-looking forms. Form Fragments ensure reusability, standardization, and brand consistency through 'change once and reflect everywhere' functionality. Experience greater maintainability and efficiency as updates made in one place are automatically propagated across all forms that utilize these fragments.
+* **[Form Fragment in Adaptive Forms based on Core Components](/help/forms/adaptive-form-fragments-core-components.md)**: Say goodbye to duplication, optimize your digital inventory, and improve collaboration as you elevate your form-building experience with Form Fragments. These reusable components seamlessly integrate into multiple forms, streamlining the creation of consistent and professional-looking forms. Form Fragments ensure reusability, standardization, and brand consistency through 'change once and reflect everywhere' functionality. Experience greater maintainability and efficiency as updates made in one place are automatically propagated across all forms that utilize these fragments.
 
-* **Enhanced Adobe Sign Workflow step**: The Adobe Sign Workflow step is enhanced to include the following:
+* **[Enhanced Adobe Sign Workflow step](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: The Adobe Sign Workflow step is enhanced to include the following:
      * **Government ID-Based Authentication for Adobe Sign**: Adobe Acrobat Sign's Government ID-Based Authentication offers an additional layer of verification by enabling users to authenticate their identity using government-issued IDs (driver's license, national ID, passport). By leveraging trusted identification documents, this enhancement adds an extra level of confidence to the signing process, making it ideal for scenarios that require heightened security, compliance, and user validation. 
 
      * **Audit Trail for Adobe Sign Documents**:  Use the Audit Trail feature for detailed insights into the lifecycle of your Adobe Sign documents. With the Audit Trail, you can now maintain a comprehensive record of all actions and interactions related to your documents. This includes details such as who viewed, edited, or signed the document, along with timestamps for each event. This enhancement is crucial for maintaining compliance, resolving disputes, and ensuring the integrity of your digital agreements. 
      
      * **New roles for Agreement recipients beyond just the Signer**: Adobe Acrobat Sign have the option to expand the roles for Agreement recipients beyond just the Signer to better match their workflow requirements. When enabled, each recipient in an Agreement have their role individually configurable, with Signer being the default. 
 
-* **Enhance Document Security with Document Security APIs (Part of Communication APIs)**: The Document Security APIs service empowers you to safeguard sensitive information by encrypting and decrypting documents. Through encryption, the contents of a document are transformed into an unreadable format, ensuring that only authorized users can gain access. This fortified layer of protection not only shields valuable data from unauthorized eyes but also provides peace of mind.
+* **[Protect your documents with Document Assurance APIs (Part of Communication APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: The Document Assurance APIs  empowers you to safeguard sensitive information by signing and encrypting the documents. Through encryption, the contents of a document are transformed into an unreadable format, ensuring that only authorized users can gain access. This fortified layer of protection not only shields valuable data from unauthorized eyes but also provides peace of mind. The Signature APIs let your organization protect the security and privacy of Adobe PDF documents that it distributes and receives. This service uses digital signatures and certification to ensure that only intended recipients can alter documents.
 
 * **Page Count Support in Communication APIs**: Now, along with retrieving your document through the Communication APIs, you can also receive the valuable information about the number of pages contained within the document. 
 
-* **Error handling with custom error handlers in rule editor**: You can now invoke a custom function in response to an error returned by an external service and provide a tailored response to end users. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down. 
+* **[Error handling with custom error handlers in rule editor](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: You can now invoke a custom function in response to an error returned by an external service and provide a tailored response to end users. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down. 
 
 
 ### Headless Adaptive Forms early adopter program {#forms-early-adopter}
@@ -145,6 +145,7 @@ Use [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience
 * use the power of Adobe Experience Manager Forms 
 
 You can send an email to `aem-forms-headless@adobe.com` from your official email ID to join the early adopter program. 
+
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
