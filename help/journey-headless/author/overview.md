@@ -76,4 +76,6 @@ As such journeys are designed to stand on their own. However a number of them ca
 * [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to use them on your first development project.
 * [Headless Architect Journey](/help/journey-headless/architect/overview.md) - Start here for an introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to model content for your project.
 * [AEM as a Cloud Service technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - If you already have a firm understanding of AEM and headless technologies, you may want to directly consult our in-depth technical docs.
+  * [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - If you prefer to learn by doing and are technically inclined, take our hands-on tutorials organized by API and framework, that explore creating and using applications built on AEM Headless.
