@@ -17,7 +17,6 @@ Summarized below are the continuous improvements for maintenance release 13239, 
 
 - GRANITE-46784: Add option to disable BearerAuthenticationHandler
 - GRANITE-36205: Update internal oak release version to latest
-- GRANITE-43908: Jackson-databind-2.13.4.jar embeds vulnerable jackson-databind
 - GRANITE-47059: Remove Granite Jetty SSL Bundle
 - ASSETS-26713: Touch UI External Link to New Experience UI Dashboard - unified-shell-integration and ui-touch-optimized upgraded
 - SKYOPS-63302: Upgrade com.adobe.granite:com.adobe.granite.auth.saml to v1.0.54
@@ -33,7 +32,6 @@ Summarized below are the continuous improvements for maintenance release 13239, 
 - SKYOPS-63290: Fixed incorrect evolution of buckets
 - SKYOPS-54607: Ratelimiter serverload computation not correct for request that failed
 - ASSETS-27648: ContentModelIT fails to read exclusion files from other bundles
-- GRANITE-43160: Sling Error Handler overwrites Content-Type
 - GRANITE-43744: Sling Authenticator does not work properly if there is misconfiguration with authentication-requirement and vanity path
 - GRANITE-46419: AEM integration issue with Auth0 Idp
 - GRANITE-46292: Okta SAML configuration not working after AEM Cloud update
