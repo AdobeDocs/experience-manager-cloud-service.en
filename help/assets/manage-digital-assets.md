@@ -86,6 +86,11 @@ To extract the ZIP files, perform the following steps:
 
    ![zip extraction](assets/zip-extraction.png)
 
+>[!NOTE]
+>
+>* The maximum supported ZIP file size is 15 GB.
+>* You can extract a maximum of three ZIP files at one time. 
+
 ## Preview assets {#previewing-assets}
 
 To preview an asset, follow these steps.
