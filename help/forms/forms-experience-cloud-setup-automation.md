@@ -10,7 +10,7 @@ Experience Cloud Setup Automation helps to connect Adobe Analytics to AEM Forms,
 ## Advantages of integrating Adobe Analytics with AEM Forms{#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
 * **Insights into end-user behavior**: Adobe Analytics helps to get insights about end-user behavior,  reveals user actions, drop-offs, and completion rates, enabling a deeper understanding of how individuals engage with forms.
-* **Enabling non-technical business users to gain insights**: Adobe Analytics empowers even non-technical users to access and interpret form usage data, fostering data-driven decisions for enhancing form experience for user satisfaction.
+* **Enabling non-technical business users to gain insights**: Adobe Analytics through its easy to use interface empowers even non-technical users to access and interpret form usage data, fostering data-driven decisions for enhancing enrollment experiences.
 * **Optimizing data capture experience based on usage**: Organizations can identify pain points in data capture, leading to targeted improvements that enhance form usability and increase successful submissions.
 
 ## Prerequisites {#prerequisites}
@@ -33,10 +33,9 @@ Adobe Analytics is scalable, comprehensive, and easy to integrate and to use in 
 1. On your AEM instance, Go to **[Forms]** >> **[Forms and Document]** and select you Form. 
 1. Create a configuration container for cloud services:
     1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
-    1. Select a folder or create a folder, and enable the folder for **[!UICONTROL Cloud Configurations]**.
+    1. Select or create a Configuration Container, and enable the folder for **[!UICONTROL Cloud Configurations]**.
     1. Tap **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
-1. Select **[Forms]** >> **[Properties]**.
-1. Select the folder that you created in **[Configuration Browser]** in the **[Configuration Container]** section.
+1. Select your **[!UICONTROL Form]** >> **[!UICONTROL Properties]**, In the **[!UICONTROL Configuration Container]**, select the configuration container that you created or selected in the **[!UICONTROL Configuration Browser]** in Step 2.
 1. Select the Task Panel on the Left Rail and click **Setup Analytics** and **Activate Adobe Analytics**.
 1. Provide the name that you prefer for the report suite, Click **[!UICONTROL Next]** and **[!UICONTROL Save]**.
 1. Once you save the project, the setup runs for sometime till installation and integration of Fast Track Analytics with your AEM Forms, you can also check the **integration status**.
@@ -51,13 +50,13 @@ Adobe Analytics is scalable, comprehensive, and easy to integrate and to use in 
 
 ### Integrate Adobe Analytics with AEM Forms for Core Components {#integrate-adobe-analytics-with-aem-forms-for-core-components}
 
-1. On your AEM instance, Go to **[Forms]** >> **[Forms and Document]** and select you Form. 
+1. On your AEM instance, Go to **[!UICONTROL Forms]** >> **[!UICONTROL Forms and Document]** and select you Form.
 1. Select the Task Panel on the Left and click **Setup Analytics** and **Activate Adobe Analytics**.
 1. Provide the name that you prefer for the report suite, Click **[!UICONTROL Next]** and **[!UICONTROL Save]**.
-1. Once you save the project, the setup runs for sometime till installation and integration of Fast Track Analytics with your AEM Forms, you can also check the integration status.
+1. Once you save the project, the setup runs for sometime till installation and integration of Fast Track Analytics with your AEM Forms, you can also check the integration status while installation.
 
     >[!NOTE] 
     >
-    >If your installation does not set up in sometime, retry. If the issue still persists, you can connect to the Analytics Support team.
+    >If your installation does not set up in sometime, retry. If the issue still persists, you can connect to the Support team.
 
 1. Navigate to your form, and you see that Adobe Analytics is integrated to your form.
