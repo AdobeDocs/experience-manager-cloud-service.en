@@ -124,6 +124,9 @@ If this kind of flexibility is something you need for your project, continue on 
 
 ## Additional Resources {#additional-resources}
 
+* [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) 
 * [An Overview of Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Use Cloud Manager to Deploy Your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
 * [Integrate the Cloud Manager Git Repository with an External Git Repository and Deploy a Project to AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
