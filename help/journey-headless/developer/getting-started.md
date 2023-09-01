@@ -160,7 +160,7 @@ The administrator should be the user who sets up AEM and prepares the runtime en
 
 #### Content Author {#content-author}
 
-Content authors create and manage the content that is delivered headlessly by AEM. Content authors use AEM features such as Content Fragments and the Assets Console to manage their content.
+Content authors create and manage the content that is delivered headlessly by AEM. Content authors use AEM features such as Content Fragment editor and various consoles to manage their content.
 
 Content authors should keep in mind the following best practices.
 
@@ -275,6 +275,8 @@ While it is recommended that you move on to the next part of the headless develo
 
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
 * [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Understand AEM as a Cloud Service's structure
+* An [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
+* The [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use these hands-on tutorials to explore how to use the various options for delivering content to headless endpoints with AEM and chose what's right for you.
 * [Headless Content Management Using GraphQL APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - Follow this course for an overview of the GraphQL API implemented in AEM. Authentication via AdobeID is required.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) -  This GitHub project includes example applications that highlight AEM's GraphQL APIs.
@@ -283,8 +285,8 @@ While it is recommended that you move on to the next part of the headless develo
 * [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md) - Technical documentation of page naming restrictions in AEM
 * [Multi Site Manager and Translation](/help/sites-cloud/administering/msm-and-translation.md) - Technical documentation on AEM's powerful translation features
 * [AEM workflows](/help/sites-cloud/authoring/workflows/overview.md) - Technical documentation on how to automate workflows in AEM
-* [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Technical documentation for Content Fragments.
-* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - Technical documentation for Content Fragment Models.
+* [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) - Technical documentation for Content Fragments.
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - Technical documentation for Content Fragment Models.
 * [GraphQL Technical Documentation](https://graphql.org) - The GraphQL definition (external link)
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) - Technical documentation that explains how to create requests to access and deliver Content Fragments
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - Technical documentation that explains how to create and modify Content Fragments (and other assets)
