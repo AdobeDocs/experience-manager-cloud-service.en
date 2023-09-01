@@ -27,7 +27,7 @@ Summarized below are the continuous improvements for maintenance release 13323, 
 
 ### Fixed Issues {#fixed-issues-13323}
 
-- ASSETS-28461: Doc cloud viewer not working for PDFs fixed from 13239
+- ASSETS-28461: Doc cloud viewer not working for PDFs, fixed from 13239
 - SKYOPS-63290: Fixed incorrect evolution of buckets
 - SKYOPS-54607: Ratelimiter serverload computation not correct for request that failed
 - ASSETS-27648: ContentModelIT fails to read exclusion files from other bundles
