@@ -11,17 +11,9 @@ Designer is a point-and-click graphical form design tool that simplifies the cre
 
 To install the latest version of AEM Forms Designer 64-bit or 32-bit, you require the following software and minimum hardware to install and configure Designer:
 
-   >[!NOTE]
-   >
-   > If you are using 32-bit Designer, before you install 64-bit Designer, you must uninstall 32-bit Designer to avoid issues in installing 64-bit Designer.
-
-<!--
->[!BEGINTABS]
-
->[!TAB 64-bit OS (Recommended)] -->
-
 +++ 64-bit Designer (Recommended)
 
+* Before you install the 64-bit version of Forms Designer, uninstall 32-bit version of Designer.
 * [!DNL Microsoft&reg; Windows&reg; 2016 Server] or [!DNL Microsoft&reg; Windows&reg; 2019 Server], and [!DNL Microsoft&reg; Windows&reg; 10]
 * Minimum 2 GB of RAM
 * 20 GB of disk space
