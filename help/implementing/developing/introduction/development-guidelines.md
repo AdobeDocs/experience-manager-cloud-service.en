@@ -92,8 +92,6 @@ Reverse replication from Publish to Author is not supported in AEM as a Cloud Se
 
 Content is replicated from Author to Publish through a pub-sub mechanism. Custom replication agents are not supported.
 
-## Monitoring and Debugging {#monitoring-and-debugging}
-
 ## No Overloading Development Environments {#overloading-dev-envs}
 
 Production environments are sized higher to ensure stable operation, while Stage environments are sized like Production environments to ensure realistic testing under production conditions.
@@ -101,6 +99,8 @@ Production environments are sized higher to ensure stable operation, while Stage
 Dev environments and Rapid Dev environments should be limited to development, error analysis, and functional tests, and are not designed to process high workloads, nor large amounts of content.
 
 As an example, changing an index definition on a large content repository on a Dev environment can result in re-indexing resulting in too much processing. Tests that require substantial content should be run on Stage environments.
+
+## Monitoring and Debugging {#monitoring-and-debugging}
 
 ### Logs {#logs}
 
