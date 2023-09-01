@@ -104,8 +104,8 @@ A headless project is not only successful because of the technology implemented,
 
 ### Authoring Content {#authoring}
 
-* For channel-specific versions of your content, consider using content fragment variations. Variations are synchronized against the content master to streamline content change management.
-* Invite other content producers to review content and give feedback with annotations and comments, which are available within the content fragment editor and globally across fragments in content fragments Admin Console.
+* For channel-specific versions of your content, consider using content fragment variations. Variations are synchronized against the main content to streamline content change management.
+* Invite other content producers to review content and give feedback.
 * Keep things moving with as few mandatory elements as possible. Mandatory elements can block the workflow.
 
 ### Authoring Global Content {#localization}
@@ -144,6 +144,6 @@ While it is recommended that you move on to the next part of the headless develo
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) -  This GitHub project includes example applications that highlight AEM's GraphQL APIs.
 * [Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - A complete overview of AEM's architecture
 * [Headless Setup](/help/headless/introduction.md#getting-started) - A quick introduction to AEM's headless features for users already knowledgeable of AEM.
-* [Create Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - Technical documentation on Content Fragment Models
-* [Create Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Technical documentation on Content Fragments
+* [Create Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - Technical documentation on Content Fragment Models
+* [Create Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - Technical documentation on Content Fragments
 * [Query content with GraphQL](/help/headless/graphql-api/content-fragments.md) - Technical documentation on the GraphQL API
