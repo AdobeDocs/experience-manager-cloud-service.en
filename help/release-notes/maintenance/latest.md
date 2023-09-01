@@ -7,13 +7,13 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 13239 {#release-13239}
+## Release 13323 {#release-13323}
 
-Summarized below are the continuous improvements for maintenance release 13239, which was publicly released on August 29, 2023. This maintenance release replaces release 13206.
+Summarized below are the continuous improvements for maintenance release 13323, which was publicly released on September 1, 2023. This maintenance release replaces release 13239.
 
 2023.9.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-13239}
+### Enhancements {#enhancements-13323}
 
 - GRANITE-46784: Add option to disable BearerAuthenticationHandler
 - GRANITE-36205: Update internal oak release version to latest
@@ -25,7 +25,7 @@ Summarized below are the continuous improvements for maintenance release 13239, 
 - GRANITE-46631: Update Jackrabbit version to 2.20.11
 - SKYOPS-61895: Update to Jackrabbit Filevault 3.7.0
 
-### Fixed Issues {#fixed-issues-13239}
+### Fixed Issues {#fixed-issues-13323}
 
 - SKYOPS-63290: Fixed incorrect evolution of buckets
 - SKYOPS-54607: Ratelimiter serverload computation not correct for request that failed
@@ -35,11 +35,12 @@ Summarized below are the continuous improvements for maintenance release 13239, 
 - GRANITE-46292: Okta SAML configuration not working after AEM Cloud update
 - GRANITE-47059: Remove Granite Jetty SSL Bundle
 
-### Known Issues {#known-issues-13239}
+### Known Issues {#known-issues-13323}
 
-None.
+- SITES-15622: GraphQL - Issue with persisted queries with number & boolean parameters.
+- SITES-15654: GraphQL - Issues with unions and properties of same name.
 
-### Embedded Technologies {#embedded-tech-13239}
+### Embedded Technologies {#embedded-tech-13323}
 
 |Technology|Version|Link|
 |---|---|---|
