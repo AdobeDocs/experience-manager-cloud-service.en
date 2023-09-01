@@ -31,7 +31,7 @@ Summarized below are the continuous improvements for maintenance release 13323, 
 - SKYOPS-63290: Fixed incorrect evolution of buckets.
 - SKYOPS-54607: Ratelimiter serverload computation not correct for request that failed.
 - ASSETS-27648: ContentModelIT fails to read exclusion files from other bundles.
-- GRANITE-43744: Sling Authenticator does not work properly if there is misconfiguration with authentication-requirement and vanity path.
+- GRANITE-43744: Sling Authenticator does not work properly if there is a misconfiguration with authentication-requirement and vanity path.
 - GRANITE-46419: AEM integration issue with Auth0 Idp.
 - GRANITE-46292: Okta SAML configuration not working after AEM Cloud update.
 - GRANITE-47059: Remove Granite Jetty SSL Bundle.
