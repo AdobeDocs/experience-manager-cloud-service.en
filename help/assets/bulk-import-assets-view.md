@@ -6,6 +6,10 @@ description: Learn how to bulk import assets using the new Assets UI (Assets vie
 
 Bulk Import in AEM Assets view provides administrators with the ability to import large number of assets from a data source to AEM Assets. The administrators do not need to upload individual assets or folders to AEM Assets anymore.
 
+>[!NOTE]
+>
+>The Assets view bulk importer uses the same backend as that of the Admin view bulk importer. However, it offers more data sources to import from and a more streamlined user experience.
+
 You can import assets from the following data sources:
 
 * Azure
@@ -52,6 +56,14 @@ Execute the following steps to create a bulk import configuration:
    ![Execute bulk import](assets/bulk-import-run.png)
 
 1. Click **[!UICONTROL Save]** to execute the selected option.
+
+### Handling filenames during bulk import {#filename-handling-bulkimport-assets-view}
+
+When you import assets or folders in bulk, [!DNL Experience Manager Assets] imports the whole structure of what exists in the import source. [!DNL Experience Manager] follows the inbuilt rules for special characters in the asset and folder names, therefore these filenames need sanitization. For both folder name and asset name, the title defined by the user remains unchanged and is stored in `jcr:title`. 
+
+During bulk import, [!DNL Experience Manager] look for the existing folders  to avoid reimporting the assets and folders, and also verifies the sanitization rules applied in the parent folder where the import takes place. If the sanitization rules are applied in the parent folder, the same rules are applied to the import source. For new import, the following sanitization rules are applied to manage the filenames of assets and folders.
+
+For more information on disallowed names, handling asset names, and handling folder names during bulk import, see [Handling filenames during bulk import in Admin view](add-assets.md##filename-handling-bulkimport).
 
 ## View existing bulk import configurations {#view-import-configuration}
 
