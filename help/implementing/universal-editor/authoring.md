@@ -340,7 +340,7 @@ Changes are saved to your content automatically.
 
 ### Editing Content Fragments {#edit-content-fragment}
 
-If you are in [component mode](#component-mode) and you select a [Content Fragment,](/help/assets/content-fragments/content-fragments.md) you can edit its details in the component rail.
+If you are in [component mode](#component-mode) and you select a [Content Fragment,](/help/sites-cloud/administering/content-fragments/overview.md) you can edit its details in the component rail.
 
 ![Editing a Content Fragment](assets/ue-edit-cf.png)
 
@@ -348,7 +348,7 @@ The fields defined in the content model of the selected Content Fragment are dis
 
 Changes are saved to your content automatically.
 
-If you wish to edit your Content Fragment in the [Content Fragment editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) instead, click the [edit button](#edit) in the mode rail.
+If you wish to edit your Content Fragment in the [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md) instead, click the [edit button](#edit) in the mode rail.
 
 ### Adding Components to Containers {#adding-components}
 
