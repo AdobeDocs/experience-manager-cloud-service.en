@@ -1,13 +1,13 @@
 ---
-title: Integrate Adobe Analytics to AEM Forms with Experience Cloud Setup Automation
-description: Experience Cloud Setup Automation helps to connect Adobe Analytics to AEM Forms. It helps in tracking and analyzing user interaction with AEM Forms, offering insights into visitor interactions and engagement.
+title: Enable Adobe Analytics for an Adaptive Form using Experience Cloud Setup Automation
+description: Experience Cloud Setup Automation helps to connect Adobe Analytics to Adaptive Form. It helps in tracking and analyzing user interaction with Adaptive Form, offering insights into visitor interactions and engagement.
 ---
 
-# Integrate Adobe Analytics to AEM Forms with Experience Cloud Setup Automation {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
+# Enable Adobe Analytics for an Adaptive Form using Experience Cloud Setup Automation {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
 
-Experience Cloud Setup Automation helps to connect Adobe Analytics to AEM Forms, Adobe Analytics aids in tracking and analyzing user interaction with AEM Forms, offering insights into visitor interactions and engagement. Experience Cloud Setup Automation also helps monitoring form performance which involves assessing metrics like completion times and drop-off points. This analysis helps optimize forms for better user experience while distinguishing user behavior based on login status, for example, anonymous users, to identify general trends and patterns.
+Experience Cloud Setup Automation helps to connect Adobe Analytics to an Adaptive Form, Adobe Analytics aids in tracking and analyzing user interaction with Adaptive Forms, offering insights into visitor interactions and engagement. Experience Cloud Setup Automation also helps monitoring form performance which involves assessing metrics like completion times and drop-off points. This analysis helps optimize forms for better user experience while distinguishing user behavior based on login status, for example, anonymous users, to identify general trends and patterns.
 
-## Advantages of integrating Adobe Analytics with AEM Forms {#advantages-of-integrating-adobe-analytics-with-aem-forms}
+## Advantages of integrating Adobe Analytics with Adaptive Forms {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
 * **Insights into end-user behavior**: Adobe Analytics helps to get insights about end-user behavior,  reveals user actions, drop-offs, and completion rates, enabling a deeper understanding of how individuals engage with forms.
 * **Enabling non-technical business users to gain insights**: Adobe Analytics through its easy to use interface empowers even non-technical users to access and interpret form usage data, fostering data-driven decisions for enhancing enrollment experiences.
@@ -51,7 +51,11 @@ When you have access to the above applications, you can visit the developer cons
 -->
 
 >[!NOTE]
-> If you an active license for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you must ensure it is available in your developer console. For more information about your available integrations, see [troubleshooting AEM Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html).
+> If you possess active licenses for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you should verify their availability within your developer console.
+
+
+<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)
+-->
 
 ## Configure Adobe Analytics {#configure-adobe-analytics}
 
@@ -60,35 +64,35 @@ Perform the below listed steps to enable and configure Adobe Analytics for your 
 * [Enable Adobe Analytics for Adaptive Forms based on Foundation Components](#integrate-adobe-analytics-with-aem-forms-for-foundation-component)
 * [Enable Adobe Analytics for Adaptive Forms based on Core Components](#integrate-adobe-analytics-with-aem-forms-for-core-components)
 
-### Integrate Adobe Analytics with AEM Forms for Foundation Component {#integrate-adobe-analytics-with-aem-forms-for-foundation-component}
+### Enable Adobe Analytics with Adaptive Forms for Foundation Component {#integrate-adobe-analytics-with-aem-forms-for-foundation-component}
 
-1. On your AEM instance, Go to **[Forms]** >> **[Forms and Document]** and select your Form.
 1. Create a configuration container for cloud services:
     1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
     1. Select or create a Configuration Container, and enable the folder for **[!UICONTROL Cloud Configurations]**.
     1. Tap **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
-1. Select your **[!UICONTROL Form]** >> **[!UICONTROL Properties]**, In the **[!UICONTROL Configuration Container]**, select the configuration container that you created or selected in the **[!UICONTROL Configuration Browser]** in Step 2.
+1. On your AEM instance, Go to **[Forms]** >> **[Forms and Document]**.
+1. Select your **[!UICONTROL Form]** >> **[!UICONTROL Properties]**, In the **[!UICONTROL Configuration Container]**, select the configuration container that you created or selected in the **[!UICONTROL Configuration Browser]** in Step 1.
 1. Select the Task Panel on the Left Rail and click **Setup Analytics** and **Activate Adobe Analytics**.
 1. Provide the name that you prefer for the report suite, Click **[!UICONTROL Next]** and **[!UICONTROL Save]**.
-1. Once you save the project, the setup runs for sometime till installation and integration of Adobe Analytics with your AEM Forms, you can also check the **integration status**.
+1. Once you save the project, the setup runs for some time till the  integration of Adobe Analytics with your Adaptive Form, You can also check the **integration status**.
 
     >[!NOTE] 
     >
-    >If your installation does not set up in sometime, retry. If the issue still persists, you can connect to the Support team.
+    >If your setup takes longer than 15 minutes, retry the integration steps.
 
 * Navigate to your form, and you see that Adobe Analytics is integrated to your form as shown in the image.
 
 ![Integrated AEM Analytics](assets/analytics-aem-integrated.png)
 
-### Integrate Adobe Analytics with AEM Forms for Core Components {#integrate-adobe-analytics-with-aem-forms-for-core-components}
+### Enable Adobe Analytics with Adaptive Forms for Core Components {#integrate-adobe-analytics-with-aem-forms-for-core-components}
 
 1. On your AEM instance, Go to **[!UICONTROL Forms]** >> **[!UICONTROL Forms and Document]** and select your Form.
 1. Select the Task Panel on the Left and click **Setup Analytics** and **Activate Adobe Analytics**.
 1. Provide the name that you prefer for the report suite, Click **[!UICONTROL Next]** and **[!UICONTROL Save]**.
-1. Once you save the project, the setup runs for sometime till installation and integration of Adobe Analytics with your AEM Forms, you can also check the **integration status** while installation.
+1. Once you save the project, the setup runs for some time till the  integration of Adobe Analytics with your Adaptive Form, You can also check the **integration status**.
 
     >[!NOTE] 
     >
-    >If your installation does not set up in sometime, retry. If the issue still persists, you can connect to the Support team.
+    >If your setup takes longer than 15 minutes, retry the integration steps.
 
 1. Navigate to your form, and you see that Adobe Analytics is integrated to your form.
