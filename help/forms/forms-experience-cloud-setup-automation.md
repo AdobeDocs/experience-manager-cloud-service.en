@@ -17,21 +17,21 @@ Experience Cloud Setup Automation helps to connect Adobe Analytics to AEM Forms,
 
 Adobe Analytics offers a comprehensive array of Adaptive Forms performance metrics designed to provide valuable insights into form usage. These metrics encompass:
 
-* **Form renditions, Form Submissions, Validation Errors, and Unique Visitors**, allowing you to assess the usage and effectiveness of your forms.
+* **Form renditions, Form submissions, Validation errors, and Unique visitors**, allowing you to assess the usage and effectiveness of your forms.
 
-* **Visitor Insights** which encompass visit and submission frequencies, and unique visitor counts, offering a comprehensive view of your form audience.
+* **Visitor insights** which encompass visit and submission frequencies, and unique visitor counts, offering a comprehensive view of your form audience.
 
-* **Device Type** data which informs you about the devices users employ to access your forms.
+* **Device type** data which informs you about the devices users employ to access your forms.
 
-* **Geographical Breakdown** that reveals the regional distribution of your form users.
+* **Geographical breakdown** that reveals the regional distribution of your form users.
 
-* **Traffic Sources** and **Popular Forms** metrics which consist of the top referring domains and most-visited forms, helping you understand where your traffic originates and which forms are the most popular.
+* **Traffic sources** and **Popular forms** metrics which consist of the top referring domains and most-visited forms, helping you understand where your traffic originates and which forms are the most popular.
 
-* **User Activity on Top Forms** that provides insights into field visits, form renditions, validation errors, abandoned forms, and form submissions, allowing you to analyze user behavior.
+* **User activity on top forms** that provides insights into field visits, form renditions, validation errors, abandoned forms, and form submissions, allowing you to analyze user behavior.
 
-* **Timeline for Time Spent on Forms** which offers a timeline-based view of user engagement with your forms.
+* **Timeline for time spent on forms** which offers a timeline-based view of user engagement with your forms.
 
-* **Areas Requiring Visitor Assistance** metrics which include help views, validation error instances, and field visit frequencies, highlighting where users may need assistance in filling out forms.
+* **Areas requiring visitor assistance** metrics which include help views, validation error instances, and field visit frequencies, highlighting where users may need assistance in filling out forms.
 
 ![Analytics Report](assets/analytics-report.png)
 
