@@ -510,6 +510,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Add Dynamic Media assets to pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
     + [Embed the Dynamic Video or Image viewer on a web page](/help/assets/dynamic-media/embed-code.md)
     + [Link URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+    + [Request error report for failed delivery URLs](/help/assets/dynamic-media/reporting-dm.md)
     + [Use Rulesets to transform URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
     + [Publish Dynamic Media assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
     + [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
