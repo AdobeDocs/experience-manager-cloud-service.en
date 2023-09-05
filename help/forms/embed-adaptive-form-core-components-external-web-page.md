@@ -13,7 +13,8 @@ role: Developer
 | AEM as a Cloud Service |   This article                 |
 | AEM 6.5     |   [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html)       |
 
-You can [embed adaptive forms in an AEM Sites page](/help/forms/embed-adaptive-form-core-components-aem-sites.md) or a web page hosted outside AEM. The embedded adaptive form is fully functional and users can fill and submit the form without leaving the page. It helps the user remain in the context of other elements on the web page and simultaneously interact with the form.
+
+You can [embed adaptive forms in an AEM Sites page](/help/forms/embed-adaptive-form-aem-sites.md) or a web page hosted outside AEM. The embedded adaptive form is fully functional and users can fill and submit the form without leaving the page. It helps the user remain in the context of other elements on the web page and simultaneously interact with the form.
 
 ## Prerequisites {#prerequisites}
 

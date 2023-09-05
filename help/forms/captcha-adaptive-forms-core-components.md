@@ -6,9 +6,14 @@ hide: yes
 hidefromtoc: yes
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
 ---
-# Use Google reCAPTCHA in an AEM Adaptive Form {#using-reCAPTCHA-in-adaptive-forms}
+# Use Google reCAPTCHA in an AEM Adaptive Form based on Core Components {#using-reCAPTCHA-in-adaptive-forms}
 
 <span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+| Applies to | Article link |
+| -------- | ---------------------------- |
+|  Adaptive Form based on Core Components   | This article  |
+|  Adaptive Form based on Foundation Components | [Click here](/help/forms/captcha-adaptive-forms.md) |
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes. 
 
@@ -102,3 +107,9 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **Q: Can I use more than one Captcha component in an Adaptive Form?**
 **Ans:** Using more than one Captcha component in an Adaptive Form is not supported. Also, it is not recommended to use Captcha component in a fragment or a panel marked for lazy loading.
 
+## See also
+
+* [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+* [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments-core-components.md)
+* [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Use Google reCAPTCHA in an Adaptive Form ](/help/forms/captcha-adaptive-forms-core-components.md)
