@@ -8,6 +8,8 @@ Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot preve
 ---
 # Use Google reCAPTCHA in an AEM Adaptive Form {#using-reCAPTCHA-in-adaptive-forms}
 
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes. 
 
 [!DNL AEM Forms] as a [!DNL Cloud Service] supports Google reCAPTCHA v2 in Adaptive Forms. You can use it to present a CAPTCHA challenge on form submission. To use the reCAPTCHA in an Adaptive Form:
