@@ -9,7 +9,7 @@ role: User
 
 # Request an error report for Dynamic Media delivery URLs that fail
 
-You can now request an error report that identifies Dynamic Media URLs that failed at delivery time. The report is an aggregation of data over five days and is available in a CSV format. The error report includes the following information:
+You can request an error report that identifies Dynamic Media URLs that failed at delivery time. The report is an aggregation of data up to five days and is available in a CSV format. The error report includes the following information:
 
 * Failed Dynamic Media delivery URL &ndash; A failing URL is a Dynamic Media-generated URL that is not able to produce any content at the time of delivery.
 * Referrer URL &ndash; The referrer URL from which the failed delivery URL is called.
@@ -21,15 +21,11 @@ You can request an error report once a month, for a given company.
 
 **To request an error report for Dynamic Media delivery URLs that fail:**
 
-1. [Send an email to reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com) with the company name.
+1. [Send an email to reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com) with the company name that is associated with your Dynamic Media account.
 
-    To find the company name that is associated with your Adobe Dynamic Media account, see [Dynamic Media Configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=en#configuring-dynamic-media-cloud-services) in Adobe Experience Manager (AEM) **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]**.
+    If you do not know the company name, see the [Dynamic Media Configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=en#configuring-dynamic-media-cloud-services) page in **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuation]**. On the Dynamic Media Configuration Browser page, click **[!UICONTROL global]**, select the *[Dynamic_Media_folder_icon]* checkbox, then select **[!UICONTROL Edit]**. You must have Administrator rights in AEM to access the Dynamic Media Configuration page.
 
-
-      >[!NOTE]
-      >
-      >You must have Administrator rights in AEM to access **[!UICONTROL Dynamic Media Configuration]** information in AEM **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]**.
-
+    ![Accessing the Dynamic Media Configuration page.](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)
 
 
 
