@@ -104,8 +104,8 @@ A headless project is not only successful because of the technology implemented,
 
 ### Authoring Content {#authoring}
 
-* For channel-specific versions of your content, consider using content fragment variations. Variations are synchronized against the content master to streamline content change management.
-* Invite other content producers to review content and give feedback with annotations and comments, which are available within the content fragment editor and globally across fragments in content fragments Admin Console.
+* For channel-specific versions of your content, consider using content fragment variations. Variations are synchronized against the main content to streamline content change management.
+* Invite other content producers to review content and give feedback.
 * Keep things moving with as few mandatory elements as possible. Mandatory elements can block the workflow.
 
 ### Authoring Global Content {#localization}
@@ -138,11 +138,12 @@ While it is recommended that you move on to the next part of the headless develo
 
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
 * [Headless Development for AEM Sites as a Cloud Service](/help/headless/introduction.md) - A quick introduction to orient the AEM Headless developer with the necessary features
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use these hands-on tutorials to explore how to use the various options for delivering content to headless endpoints with AEM and chose what's right for you.
 * [Headless Content Management Using GraphQL APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - Follow this course for an overview of the GraphQL API implemented in AEM. Authentication via AdobeID is required.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) -  This GitHub project includes example applications that highlight AEM's GraphQL APIs.
 * [Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - A complete overview of AEM's architecture
 * [Headless Setup](/help/headless/introduction.md#getting-started) - A quick introduction to AEM's headless features for users already knowledgeable of AEM.
-* [Create Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - Technical documentation on Content Fragment Models
-* [Create Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Technical documentation on Content Fragments
+* [Create Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - Technical documentation on Content Fragment Models
+* [Create Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - Technical documentation on Content Fragments
 * [Query content with GraphQL](/help/headless/graphql-api/content-fragments.md) - Technical documentation on the GraphQL API

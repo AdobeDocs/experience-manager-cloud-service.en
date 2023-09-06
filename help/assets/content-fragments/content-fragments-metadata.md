@@ -7,6 +7,12 @@ exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 
 See how you can view and edit the metadata properties for Content Fragments in AEM to adjust your headless content.
 
+>[!NOTE]
+>
+>Content Fragments are a Sites feature, but are stored as **Assets**. 
+>
+>There are two editors for authoring Content Fragments. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console).
+
 ## Editing Properties / Meta data {#editing-properties-meta-data}
 
 You can view and edit the metadata (properties) for content fragments:
