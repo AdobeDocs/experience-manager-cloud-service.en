@@ -570,7 +570,6 @@ Some of the use cases to consider for adding multi-subtitles and multi-audio tra
 | **Subtitles** | Multiple language support |
 |  | Descriptive text for accessibility |
 | **Audio tracks** | Multiple language support  |
-|  | Stereo versus multi-channel (surround sound) |
 |  | Commentary tracks |
 |  | Descriptive audio |
 
@@ -663,7 +662,7 @@ In the scenario where you have configured Dynamic Media for immediate publish, t
 
 >[!CAUTION]
 >
->When you upload subtitle files or audio files to a video that is already published, these files are deleted if you [*reprocess*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) the video. Only the video's original audio remains intact. In such cases, you must reupload the subtitle files and audio track files to the video, again.
+>When you upload subtitle files or audio files to a video that is either published or unpublished, the files are deleted if you [*reprocess*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) the video. Only the video's original audio remains intact. In such cases, you must reupload the subtitle files and audio track files to the video, again.
 
 #### Add multiple captions to a video that has an existing URL with caption modifier
 
