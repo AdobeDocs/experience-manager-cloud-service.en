@@ -11,11 +11,15 @@ docset: aem65
 
 ---
 
-# Adaptive Form Fragments{#adaptive-form-fragments}
+# Adaptive Form Fragments {#adaptive-form-fragments}
 
-While every form is designed for a specific purpose, there are some common segments in most forms, such as to provide personal details like name and address, family details, income details, and so on. Form developers are required to create these common segments every time a new form is created.
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en)                  |
+| AEM as a Cloud Service     | This article        |
 
-Adaptive Forms provides a convenient mechanism to create form segment like a panel or a group of fields only once and reuse them across Adaptive Forms. These reusable and standalone segments are called Adaptive Form Fragments.
+While every form is designed for a specific purpose, there are some common segments in most forms, such as to provide personal details like name and address, family details, income details, and so on. Form developers are required to create these common segments every time a new form is created. Adaptive Forms provides a convenient mechanism to create form segment like a panel or a group of fields only once and reuse them across Adaptive Forms. These reusable and standalone segments are called Adaptive Form Fragments.
+
 
 ## Create a fragment {#create-a-fragment}
 
@@ -70,6 +74,7 @@ In addition, if you selected an XML schema or XDP form template as the form mode
 1. In the Fragment Creation dialog, specify the following information:
 
     * **Name**: Name of the fragment. The default value is the element name of the panel. It is a mandatory field.
+    
       >[!NOTE]
       >
       >Ensure that you specify a unique name for the fragment. If there already exists another fragment with the same name, the fragment fails to create.  
@@ -220,7 +225,7 @@ To localize an Adaptive Form that contains Adaptive Form Fragments, you need to 
 
 >[!NOTE]
 >
->The localization keys in the fragment won’t appear in the XLIFF file for an Adaptive Form.
+>The localization keys in the fragment won't appear in the XLIFF file for an Adaptive Form.
 
 ## Key points to remember when working with fragments {#key-points-to-remember-when-working-with-fragments}
 
