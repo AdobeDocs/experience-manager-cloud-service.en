@@ -140,3 +140,21 @@ For example, the following rule invokes a get service that takes Employee Id as 
 ![invoke-service](assets/invoke-service.png)
 
 In addition, you can use the `guidelib.dataIntegrationUtils.executeOperation` API to write a JavaScript in the code editor for the rule editor. <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
+
+### Using custom functions to invoke form data model
+
+You can [invoke form data model using custom functions](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). To invoke form data model, it is mandatory to whitelist the form data model for an Adaptive Form. 
+
+   > [{]!NOTE]
+   >
+   > By default, you can not invoke form data model using custom functions.
+
+To whiletlist the FDM for an Adaptive Form, perform the following steps:
+
+1. Go to Experience Manager web console at `https://server:host/system/console/configMgr`.
+1. Locate Adaptive Form and Interactice Communication Web Channel Configuration.
+1. Tap to open the configuration in edit mode.
+1. Add the Generate Schema Compliant Data checkbox.
+1. Save the settings.
+
+
