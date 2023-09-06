@@ -94,14 +94,12 @@ To embed the adaptive form:
 
 The adaptive form is embedded in the web page. Observe the following in the embedded adaptive form:
 
-* Header and footer in the original adaptive form are not included in the embedded form.
 * Drafts and submitted forms are available in the Drafts and Submissions tab in the Forms Portal.
 * Submit action configured on the original adaptive form is retained in the embedded form.
 * Adaptive form rules are retained and fully functional in the embedded form.
 * Experience targeting and A/B tests configured in the original adaptive form do not work in the embedded form.
 * If Adobe Analytics is configured on the original form, the analytics data is captured in Adobe Analytics server. However, it is not available in the Forms analytics report.
-
-In Adaptive Forms based on Core Components, the client libraries (ClientLibs) are included and loaded along with Header and Footer components of a form. So, when you embed an Adaptive Forms based on Core Components to a webpage, it always includes Header and Footer of the form. 
+* In Adaptive Forms based on Core Components, the client libraries (ClientLibs) are included and loaded along with Header and Footer components of a form. So, when you embed an Adaptive Forms based on Core Components to a webpage, it always includes Header and Footer of the form. 
 
 ## Sample topology {#sample-topology}
 
