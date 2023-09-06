@@ -941,4 +941,54 @@ Experience Manager as a Cloud Service prohibits custom search index definitions 
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-Experience Manager as a Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing a property named `reindex`. Indexing using this property must be updated before migration to Experience Manager as a Cloud Service. See the document [Content Search and Indexing](/help/operations/indexing.md#how-to-use) for more information.
+Experience Manager as a Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing a property named `reindex`. Indexing using this property must be updated before migration to Experience Manager as a 
+Cloud Service. See the document [Content Search and Indexing](/help/operations/indexing.md#how-to-use) for more information.
+
+
+
+### Custom DAM asset lucene nodes must not 'queryPaths' {#oakpal-damAssetLucene-queryPaths}
+
+* **Key**: IndexDamAssetLucene
+* **Type**: Bug
+* **Severity**: Blocker
+* **Since**: Version 2022.1.0
+
+#### Non-compliant code {#non-compliant-code-damAssetLucene}
+
+```text
++ oak:index
+    + damAssetLucene-1-custom-1
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - queryPaths: /content/dam
+      - reindex: false
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+#### Compliant code {#compliant-code-damAssetLucene}
+
+```text
++ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+
+
+### Index node specifying 'includedPaths' should also specify 'queryPaths' with the same values {#oakpal-included-paths-without-query-paths}
+
+* **Key**: IndexIncludedPathsWithoutQueryPaths
+* **Type**: Code Smell
+* **Severity**: Minor
+* **Since**: Version 2023.1.0
+
