@@ -131,21 +131,23 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **[Error handling with custom error handlers in rule editor](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: You can now invoke a custom function in response to an error returned by an external service and provide a tailored response to end users. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down. 
 
+* **[64-bit Version of AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: The 64-bit version of AEM Forms Designer brings enhanced performance, scalability, and memory management to empower your form creation experience. With the 64-bit architecture, you can tackle even larger and more complex projects with ease, ensuring seamless design workflows and optimized efficiency. Elevate your form design capabilities and embrace the future of AEM Forms Designer with this cutting-edge release.
+
 
 ### Early adopter program {#forms-early-adopter}
 
 * **[Protect your documents with DocAssurance APIs (Part of Communication APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: The DocAssurance APIs  empowers you to safeguard sensitive information by signing and encrypting the documents. Through encryption, the contents of a document are transformed into an unreadable format, ensuring that only authorized users can gain access. This fortified layer of protection not only shields valuable data from unauthorized eyes but also provides peace of mind. The Signature APIs let your organization protect the security and privacy of Adobe PDF documents that it distributes and receives. This service uses digital signatures and certification to ensure that only intended recipients can alter documents. 
 
-You can connect Adobe Support to join the early adopter program for DocAssurance APIs. 
+     You can connect Adobe Support to join the early adopter program for DocAssurance APIs. 
 
-**Headless Adaptive Forms**: Use [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) to enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. Headless adaptive forms help you: 
+* **[Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**: Use Headless Adaptive Forms to enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. Headless adaptive forms help you: 
 
-* build high-quality multi-channel forms in the programming language of your choice 
-* natively integrate forms to your desktop and mobile apps, websites, and chat applications 
-* reuse your proprietary UI components with forms applications 
-* use the power of Adobe Experience Manager Forms 
+     * build high-quality multi-channel forms in the programming language of your choice 
+     * natively integrate forms to your desktop and mobile apps, websites, and chat applications 
+     * reuse your proprietary UI components with forms applications 
+     * use the power of Adobe Experience Manager Forms 
 
-You can send an email to `aem-forms-headless@adobe.com` from your official email ID to join the early adopter program. 
+     You can send an email to `aem-forms-headless@adobe.com` from your official email ID to join the early adopter program. 
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
