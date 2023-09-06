@@ -7,17 +7,17 @@ role: User
 level: Intermediate
 ---
 
-# Viewing and understanding AEM Forms analytics reports {viewing-and-understanding-aem-forms-analytics-reports}
+# Viewing and understanding AEM Forms analytics reports {#viewing-and-understanding-aem-forms-analytics-reports}
 
 In the rapidly evolving landscape of digital analytics, staying attuned to global trends is imperative for making informed decisions and optimizing digital experiences. To cater to this, Adaptive Forms seamlessly integrate with Adobe Analytics to capture and track performance metrics for your published forms and documents. The objective behind analyzing these metrics is to make data-driven decisions, using metrics and analytics to enhance the usability and effectiveness of the forms.
 
 By capturing and tracking key performance indicators, businesses can identify areas of improvement, optimize user experiences, and ultimately drive better outcomes to create exceptional customer experiences.
 
-## Set up Adobe Analytics to AEM Forms {setup-adobe-analytics-to-aem-forms}
+## Set up Adobe Analytics to AEM Forms {#setup-adobe-analytics-to-aem-forms}
 
 Experience Cloud Setup Automation in Adobe Experience Manager Forms requires an Adobe Analytics license, Data Collection (Formerly Adobe Launch) to manage tracking scripts, and integration with the Experience Platform Launch API for streamlined data aggregation and insights generation. Visit [Enable Adobe Analytics for an Adaptive Form using Experience Cloud Setup Automation](/help/forms/forms-experience-cloud-setup-automation.md) for a complete setup information.
 
-## Adaptive Forms Performance Metrics {adaptive-forms-performance-metrics}
+## Adaptive Forms Performance Metrics {#adaptive-forms-performance-metrics}
 
 Adobe Analytics offers a comprehensive array of Adaptive Forms performance metrics designed to provide valuable insights into form usage. These metrics encompass:
 
@@ -25,11 +25,11 @@ Adobe Analytics offers a comprehensive array of Adaptive Forms performance metri
 
     1. **Form Renditions** : Form Renditions reveal the number of times the form has been rendered or opened.
 
-    2.	**Form Submissions** : Form submissions indicate how many times users successfully complete and submit your adaptive forms.
+    1. **Form Submissions** : Form submissions indicate how many times users successfully complete and submit your adaptive forms.
     
-    3.	**Validation Errors** : This count the number of errors when there is a validation error in one or more of the form fields.
+    1. **Validation Errors** : This count the number of errors when there is a validation error in one or more of the form fields.
 
-    4.	**Unique Visitors**: Number of times the form is rendered by unique visitors. For more information on unique visitors, see [Unique Visitors, Visits, and customer behavior](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
+    1. **Unique Visitors**: Number of times the form is rendered by unique visitors. For more information on unique visitors, see [Unique Visitors, Visits, and customer behavior](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
 
     ![Forms Performance](assets/forms-performance.png)
 
