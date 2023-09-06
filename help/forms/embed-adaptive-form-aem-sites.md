@@ -253,6 +253,11 @@ You can customize the advanced settings of the **[!UICONTROL Adaptive Form - Emb
 * **Use Page Language**: Use local of the AEM Sites page instead locale of Adaptive Form. This option is only applicable for Adaptive Form (Foundation).
 * **Set Focus on Form**: Select to set the focus on the first field of the Adaptive Form. This option is only applicable for Adaptive Form (Foundation).
 * **Theme**: Select a theme that defines styling for components of your Adaptive Form. Styling includes appearance properties such as font style, background color, dimensions, and alignment. This option is only applicable for Adaptive Form (Foundation).
+
+    >[!NOTE]
+    >
+    > You can use the **Use Page Language**, **Set Focus on Form** and **Theme** options only for Adaptive Form (Foundation). 
+
 * **Form covers entire width of the frame**: 
 An inline frame (iframe) is an HTML element that loads an Adaptive Form to an AEM Sites page.
 
