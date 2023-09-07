@@ -90,6 +90,6 @@ GraphQL can avoid iterative API requests and over-delivery, and instead allows f
 
 That's it! You now have a basic understanding of headless content management in AEM. There are many more resources where you can dive deeper for a comprehensive understanding of the features available.
 
-* **[Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)** - For details about creating and managing Content Fragments
+* **[Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)** - For details about creating and managing Content Fragments
 * **[Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)** - For details on accessing AEM content directly over the HTTP API, via CRUD operations (Create, Read, Update, Delete)
 * **[GraphQL API](/help/headless/graphql-api/content-fragments.md)** - For details on how to deliver Content Fragments headlessly

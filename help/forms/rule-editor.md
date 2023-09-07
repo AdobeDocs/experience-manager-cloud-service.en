@@ -144,9 +144,21 @@ For more information about configuring services in form data model, see [[!DNL E
 
 For more information about configuring services in form data model, see [[!DNL Experience Manager Forms] Data Integration](data-integration.md).
 
-The **[!UICONTROL Set Property]** rule type lets you set the value of a property of the specified object based on a condition action.
+The **[!UICONTROL Set Property]** rule type lets you set the value of a property of the specified object based on a condition action. You can set property to on of the following:
+* visible (Boolean)
+* dorExclusion (Boolean)
+* chartType (String)
+* title (String)
+* enabled (Boolean)
+* mandatory (Boolean)
+* validationsDisabled (Boolean)
+* validateExpMessage (String)
+* value (Number, String, Date)
+* items (List)
+* valid (Boolean)
+* errorMessage (String)
 
-It enables you to define rules to add check boxes dynamically to the Adaptive Form. You can use custom function, a form object, or an object property to define a rule.
+For example, it enables you to define rules to add check boxes dynamically to the Adaptive Form. You can use custom function, a form object, or an object property to define a rule.
 
 ![Set Property](assets/set_property_rule_new.png)
 
@@ -802,7 +814,9 @@ The following rule shows how you configure the Invoke service action to accompli
 
 ![Example-invoke-services](assets/example-invoke-services.png)
 
-Invoke Form Data Model service using Adaptive Form rule
+>[!NOTE]
+>
+>If the input is of array type, the fields that support arrays are visible under the Output drop-down section.
 
 ### Triggering multiple actions using the When rule {#triggering-multiple-actions-using-the-when-rule}
 
