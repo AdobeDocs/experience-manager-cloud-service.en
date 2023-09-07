@@ -143,9 +143,7 @@ In addition, you can use the `guidelib.dataIntegrationUtils.executeOperation` AP
 
 ### Invoke a form data model using custom functions {#invoke-form-data-model-using-custom-functions}
 
-You can [invoke a form data model from rule editor using custom functions](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). This allows you to access the form data model directly within your Adaptive Forms, enabling you to work with the form data model effortlessly. To invoke the form data model, it is mandatory to add a form data model to an allowlist. 
-
-To add a form data model to an allowtlist, perform the following steps:
+You can [invoke a form data model from rule editor using custom functions](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). To invoke the form data model, it is mandatory to add a form data model to the allowlist. To add a form data model to an allowtlist:
 
 1. Go to Experience Manager web console at `https://server:host/system/console/configMgr`.
 1. Locate **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]**.
@@ -158,4 +156,5 @@ The added configuration is saved under the **[!UICONTROL Adaptive Form-Level Whi
 
 >[!NOTE]
 >
-> To see another example of specifying paths for the **[!UICONTROL Content path pattern]** and **[!UICONTROL Form Data Model path pattern]**, [click here.](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json)
+> If you want to add the **[!UICONTROL Content path pattern]** and **[!UICONTROL Form Data Model path pattern]**
+To see another example of specifying paths for the **[!UICONTROL Content path pattern]** and **[!UICONTROL Form Data Model path pattern]**, [click here.](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json)

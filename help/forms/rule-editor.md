@@ -654,7 +654,7 @@ After you have added your client library in the CRX repository, use it in your A
 
    >[!NOTE]
    >
-   > You can invoke a form data model from the rule editor using custom functions. By default, you cannot use a form data model directly invoked using custom functions; you need to [add the form data model to an allowlist](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services). 
+   > To invoke a form data model from rule editor using custom functions, [see here](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services). 
 
 #### Function declaration supported types {#function-declaration-supported-types}
 
