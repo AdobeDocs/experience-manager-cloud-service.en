@@ -1058,7 +1058,24 @@ Overriding the default value can lead to very slow page reads, particularly when
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
 
-Multiple active versions of the same index can lead to unexpected results.
+#### non-compliant code {#non-compliant-code-multiple-active-versions}
+
+```text
++ oak:index
+  + damAssetLucene-1-custom-1
+    ...
+  + damAssetLucene-1-custom-2
+    ...
+  + damAssetLucene-1-custom-3
+    ...
+```
+
+#### compliant code {#compliant-code-multiple-active-versions}
+
+```text
++ damAssetLucene-1-custom-3
+    ...
+```
 
 
 ### The name of fully custom index definitions should conform to the official guidelines {#oakpal-fully-custom-index-name}
