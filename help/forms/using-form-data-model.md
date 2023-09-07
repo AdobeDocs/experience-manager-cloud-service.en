@@ -154,7 +154,7 @@ To whiletlist the form data model for an Adaptive Form, perform the following st
 1. Add the regex pattern for **[!UICONTROL Form Data Model path pattern]**. By default, the value is `/content/dams/formsanddocuments-fdm/(.*)`, and you can also change it.
 1. Save the settings. 
 
-The configuration is saved under the **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]** option, and you can modify it in edit mode. 
+The added configuration is saved under the **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]** option, and you can modify it in edit mode. 
 
 
 
