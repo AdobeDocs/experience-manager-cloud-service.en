@@ -143,9 +143,9 @@ In addition, you can use the `guidelib.dataIntegrationUtils.executeOperation` AP
 
 ### Invoke form data model using custom functions {#invoke-form-data-model-using-custom-functions}
 
-You can [invoke form data model from rule editor using custom functions](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). This allows you to access the form data model directly within your Adaptive Forms, enabling you to work with the form data model effortlessly. To invoke the form data model, it is mandatory to whitelist it for an Adaptive Form. 
+You can [invoke form data model from rule editor using custom functions](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). This allows you to access the form data model directly within your Adaptive Forms, enabling you to work with the form data model effortlessly. To invoke the form data model, it is mandatory to add a form data model to an allowlist . 
 
-To whiletlist the form data model for an Adaptive Form, perform the following steps:
+To add a form data model to an allowtlist for an Adaptive Form, perform the following steps:
 
 1. Go to Experience Manager web console at `https://server:host/system/console/configMgr`.
 1. Locate **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]**.
