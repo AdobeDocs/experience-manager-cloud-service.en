@@ -1032,3 +1032,5 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
   + [Attributes and Types](/help/implementing/universal-editor/attributes-types.md)
   + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
++ Edge Delivery {#edge-delivery}
+  + [Overview](/help/edge/overview.md)
