@@ -47,7 +47,6 @@ To install the latest version of AEM Forms Designer 64-bit or 32-bit, you requir
 To install Designer, perform the following steps:
 
 1. Download Designer from [Software Distribution](https://experience.adobe.com/downloads).
-
 1. Double-click setup.exe to run the installer.
 1. Proceed and provide your details on the Personalization screen.
 1. If you accept the license agreement, click **[!UICONTROL Next]** to proceed.
