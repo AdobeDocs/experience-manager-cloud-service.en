@@ -1046,8 +1046,87 @@ When setting the `nodeScopeIndex`` property on a generic node type like `nt:unst
 
 * **Key**: OverrideOfQueryLimitReads
 * **Type**: Code Smell
-* **Severity**: Major
+* **Severity**: Minor
 * **Since**: Version 2023.1.0
 
 Overriding the default value can lead to very slow page reads, particularly when more content is added. 
 
+### Multiple active versions of the same inde {#oakpal-multiple-active-versions}
+
+* **Key**: IndexDetectMultipleActiveVersionsOfSameIndex
+* **Type**: Code Smell
+* **Severity**: Minor
+* **Since**: Version 2023.1.0
+
+Multiple active versions of the same index can lead to unexpected results.
+
+
+### The name of fully custom index definitions should conform to the official guidelines {#oakpal-fully-custom-index-name}
+
+* **Key**: IndexValidFullyCustomName
+* **Type**: Code Smell
+* **Severity**: Minor
+* **Since**: Version 2023.1.0
+
+The expected pattern for fully custom index names is: `[prefix].[indexName]-custom-[version]`. More information can be found in the document [Content Search and Indexing](/help/operations/indexing.md).
+
+
+### Same property with different analyzed values in the same index definition {#oakpal-same-property-different-analyzed-values}
+
+#### Non-compliant code {#non-compliant-code-same-property-different-analyzed-values}
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+```
+
+#### Compliant code {#compliant-code-same-property-different-analyzed-values}
+
+Example: 
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+```
+
+Example: 
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+```
+
+If the analyzed property has not been explicitly set, its default value will be false. 
+
+### Tags property
+
+* **Key**: IndexTagsProperty
+* **Type**: Code Smell
+* **Severity**: Minor
+* **Since**: Version 2023.1.0
+
+For specific indexes, ensure you retain the tags property and its current values. While adding new values to the tags property is permissible, deleting any existing ones (or the property altogether) can lead to unexpected results.
