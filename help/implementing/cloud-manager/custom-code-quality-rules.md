@@ -1002,7 +1002,8 @@ Custom indexes should have both `includedPaths` and `queryPaths` set to the same
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
 
-When setting the `nodeScopeIndex` property on a generic node type like `nt:unstructured` or `nt:base`, you must also specify the `includedPaths` and `queryPaths` properties.
+When setting the `nodeScopeIndex` property on a "generic" node type like `nt:unstructured` or `nt:base`, you must also specify the `includedPaths` and `queryPaths` properties. 
+`nt:base` can be considered "generic", since all node types inherits from it. So setting a `nodeScopeIndex` on `nt:base` will make it index all nodes in the repository. Similarly, `nt:unstructured` is also considered "generic" as there are many nodes in repositories that are of this type.
 
 #### Non-compliant code {#non-compliant-code-full-text-on-generic-node-type}
 
