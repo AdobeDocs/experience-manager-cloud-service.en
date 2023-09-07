@@ -629,7 +629,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a clienPerform the following steps t library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -651,6 +651,10 @@ After you have added your client library in the CRX repository, use it in your A
    [![Using custom functions to create a rule](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
   
 1. Tap **[!UICONTROL Done]**. Your custom function is added.
+
+   >[!NOTE]
+   >
+   > You can invoke a form data model from the rule editor using custom functions. By default, you cannot use a form data model directly invoked using custom functions; you need to [add the form data model to an allowlist](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services). 
 
 #### Function declaration supported types {#function-declaration-supported-types}
 
