@@ -951,7 +951,7 @@ Cloud Service. See the document [Content Search and Indexing](/help/operations/i
 * **Severity**: Blocker
 * **Since**: Version 2022.1.0
 
-#### Non-compliant code {#non-compliant-code-damAssetLucene}
+#### Non-compliant code {#non-compliant-code-damAssetLucene-queryPaths}
 
 ```text
 + oak:index
@@ -965,7 +965,7 @@ Cloud Service. See the document [Content Search and Indexing](/help/operations/i
         + config.xml
 ```
 
-#### Compliant code {#compliant-code-damAssetLucene}
+#### Compliant code {#compliant-code-damAssetLucene-queryPaths}
 
 ```text
 + oak:index
@@ -1004,7 +1004,7 @@ Custom indexes should have both `includedPaths` and `queryPaths` set to the same
 
 When setting the `nodeScopeIndex` property on a generic node type like `nt:unstructured` or `nt:base`, you must also specify the `includedPaths` and `queryPaths` properties.
 
-#### non-compliant code {#non-compliant-code-full-text-on-generic-node-type}
+#### Non-compliant code {#non-compliant-code-full-text-on-generic-node-type}
 
 ```text
 + oak:index/acme.someIndex-custom-1
@@ -1021,7 +1021,7 @@ When setting the `nodeScopeIndex` property on a generic node type like `nt:unstr
             - nodeScopeIndex: true
 ```
 
-#### compliant code {#compliant-code-full-text-on-generic-node-type}
+#### Compliant code {#compliant-code-full-text-on-generic-node-type}
 
 ```text
 + oak:index/acme.someIndex-custom-1
@@ -1056,7 +1056,7 @@ Overriding the default value can lead to very slow page reads, particularly when
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
 
-#### non-compliant code {#non-compliant-code-multiple-active-versions}
+#### Non-compliant code {#non-compliant-code-multiple-active-versions}
 
 ```text
 + oak:index
@@ -1068,7 +1068,7 @@ Overriding the default value can lead to very slow page reads, particularly when
     ...
 ```
 
-#### compliant code {#compliant-code-multiple-active-versions}
+#### Compliant code {#compliant-code-multiple-active-versions}
 
 ```text
 + damAssetLucene-1-custom-3
@@ -1139,7 +1139,7 @@ If the analyzed property has not been explicitly set, its default value will be 
 
 ### Tags property
 
-* **Key**: indexHasValidTagsProperty
+* **Key**: IndexHasValidTagsProperty
 * **Type**: Code Smell
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
