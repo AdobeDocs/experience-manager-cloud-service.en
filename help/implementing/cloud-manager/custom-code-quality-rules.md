@@ -944,9 +944,7 @@ Experience Manager as a Cloud Service prohibits custom search index definitions 
 Experience Manager as a Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing a property named `reindex`. Indexing using this property must be updated before migration to Experience Manager as a 
 Cloud Service. See the document [Content Search and Indexing](/help/operations/indexing.md#how-to-use) for more information.
 
-
-
-### Custom DAM asset lucene nodes must not 'queryPaths' {#oakpal-damAssetLucene-queryPaths}
+### Custom DAM asset lucene nodes must not specify 'queryPaths' {#oakpal-damAssetLucene-queryPaths}
 
 * **Key**: IndexDamAssetLucene
 * **Type**: Bug
@@ -975,7 +973,7 @@ Cloud Service. See the document [Content Search and Indexing](/help/operations/i
     + damAssetLucene-1-custom-2
       - async: [async, nrt]
       - evaluatePathRestrictions: true
-      - includedPaths: /content/dam
+      - includedPaths: [/content/dam]
       - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
@@ -983,6 +981,11 @@ Cloud Service. See the document [Content Search and Indexing](/help/operations/i
         + config.xml
 ```
 
+### If custom search index definition contains compatVersion, it must be set to 2 {#oakpal-compatVersion}
+* **Key**: IndexCompatVersion
+* **Type**: Code Smell
+* **Severity**: Major
+* **Since**: Version 2022.1.0
 
 
 ### Index node specifying 'includedPaths' should also specify 'queryPaths' with the same values {#oakpal-included-paths-without-query-paths}
@@ -991,4 +994,60 @@ Cloud Service. See the document [Content Search and Indexing](/help/operations/i
 * **Type**: Code Smell
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
+
+Custom indexes should have both `includedPaths` and `queryPaths` set to the same value(s). And if only one of them is set, the other must also be with the same values. 
+
+### Index node specifying nodeScopeIndex on generic node type should also specify includedPaths and queryPaths {#oakpal-full-text-on-generic-node-type}
+
+* **Key**: IndexFulltextOnGenericType
+* **Type**: Code Smell
+* **Severity**: Minor
+* **Since**: Version 2023.1.0
+
+When setting the `nodeScopeIndex`` property on a generic node type like `nt:unstructured`` or `nt:base``, you must also specify the `includedPaths` and `queryPaths` properties.
+
+#### non-compliant code {#non-compliant-code-full-text-on-generic-node-type}
+
+```text
++ oak:index/lv.languagelist-custom-2
+  - async: [async, nrt]
+  - evaluatePathRestrictions: true
+  - tags: [visualSimilaritySearch]
+  - type: lucene
+    + indexRules
+      - jcr:primaryType: nt:unstructured
+      + nt:base
+        - jcr:primaryType: nt:unstructured
+        + properties
+          + lv.languagelist-custom-2
+            - nodeScopeIndex: true
+```
+
+#### compliant code {#compliant-code-full-text-on-generic-node-type}
+
+```text
++ oak:index/lv.languagelist-custom-2
+  - async: [async, nrt]
+  - evaluatePathRestrictions: true
+  - tags: [visualSimilaritySearch]
+  - type: lucene
+  - includedPaths: ["/content/dam/"] 
+  - queryPaths: ["/content/dam/"]
+    + indexRules
+      - jcr:primaryType: nt:unstructured
+      + nt:base
+        - jcr:primaryType: nt:unstructured
+        + properties
+          + lv.languagelist-custom-2
+            - nodeScopeIndex: true
+```
+
+### The queryLimitReads property of the query engine should not be overridden {#oakpal-query-limit-reads}
+
+* **Key**: OverrideOfQueryLimitReads
+* **Type**: Code Smell
+* **Severity**: Major
+* **Since**: Version 2023.1.0
+
+Overriding the default value can lead to very slow page reads, particularly when more content is added. 
 
