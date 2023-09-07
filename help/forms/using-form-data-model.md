@@ -143,7 +143,7 @@ In addition, you can use the `guidelib.dataIntegrationUtils.executeOperation` AP
 
 ### Invoke form data model using custom functions {#invoke-form-data-model-using-custom-functions}
 
-You can [invoke form data model using custom functions](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). To invoke the form data model, it is mandatory to whitelist it for an Adaptive Form. 
+You can [invoke form data model from rule editor using custom functions](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). This allows you to access the form data model directly within your Adaptive Forms, enabling you to work with the form data model effortlessly. To invoke the form data model, it is mandatory to whitelist it for an Adaptive Form. 
 
 To whiletlist the form data model for an Adaptive Form, perform the following steps:
 
