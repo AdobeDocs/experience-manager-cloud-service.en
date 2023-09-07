@@ -958,9 +958,8 @@ Cloud Service. See the document [Content Search and Indexing](/help/operations/i
     + damAssetLucene-1-custom-1
       - async: [async, nrt]
       - evaluatePathRestrictions: true
-      - includedPaths: /content/dam
-      - queryPaths: /content/dam
-      - reindex: false
+      - includedPaths: [/content/dam]
+      - queryPaths: [/content/dam]
       - type: lucene
       + tika
         + config.xml
@@ -974,7 +973,6 @@ Cloud Service. See the document [Content Search and Indexing](/help/operations/i
       - async: [async, nrt]
       - evaluatePathRestrictions: true
       - includedPaths: [/content/dam]
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -1004,12 +1002,12 @@ Custom indexes should have both `includedPaths` and `queryPaths` set to the same
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
 
-When setting the `nodeScopeIndex`` property on a generic node type like `nt:unstructured`` or `nt:base``, you must also specify the `includedPaths` and `queryPaths` properties.
+When setting the `nodeScopeIndex` property on a generic node type like `nt:unstructured` or `nt:base`, you must also specify the `includedPaths` and `queryPaths` properties.
 
 #### non-compliant code {#non-compliant-code-full-text-on-generic-node-type}
 
 ```text
-+ oak:index/lv.languagelist-custom-2
++ oak:index/acme.someIndex-custom-1
   - async: [async, nrt]
   - evaluatePathRestrictions: true
   - tags: [visualSimilaritySearch]
@@ -1019,14 +1017,14 @@ When setting the `nodeScopeIndex`` property on a generic node type like `nt:unst
       + nt:base
         - jcr:primaryType: nt:unstructured
         + properties
-          + lv.languagelist-custom-2
+          + acme.someIndex-custom-1
             - nodeScopeIndex: true
 ```
 
 #### compliant code {#compliant-code-full-text-on-generic-node-type}
 
 ```text
-+ oak:index/lv.languagelist-custom-2
++ oak:index/acme.someIndex-custom-1
   - async: [async, nrt]
   - evaluatePathRestrictions: true
   - tags: [visualSimilaritySearch]
@@ -1038,7 +1036,7 @@ When setting the `nodeScopeIndex`` property on a generic node type like `nt:unst
       + nt:base
         - jcr:primaryType: nt:unstructured
         + properties
-          + lv.languagelist-custom-2
+          + acme.someIndex-custom-1
             - nodeScopeIndex: true
 ```
 
@@ -1141,7 +1139,7 @@ If the analyzed property has not been explicitly set, its default value will be 
 
 ### Tags property
 
-* **Key**: IndexTagsProperty
+* **Key**: indexHasValidTagsProperty
 * **Type**: Code Smell
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
