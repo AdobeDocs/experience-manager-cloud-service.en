@@ -175,6 +175,8 @@ The `wafRules` property may include the following rules:
 
 * If a rule is matched and blocked, the CDN responds with a `406` return code.
 
+* The configuration files should not contain secrets since they would be readable by anyone who has access to the git repository 
+
 ## Examples {#examples}
 
 Some rule examples follow. See the [rate limit section](#rules-with-rate-limits) further down for examples of rate limiting. 
