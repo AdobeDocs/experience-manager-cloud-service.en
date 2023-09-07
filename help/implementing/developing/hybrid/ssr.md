@@ -43,6 +43,10 @@ The following sections detail how Adobe I/O Runtime can be used to implement SSR
 >
 >A separate workspace is not needed per instance (author, publish) unless there are differences in the runtime implementation per instance type.
 
+>[!NOTE]
+>
+>Cloud Manager does not support deployment to Adobe I/O Runtime. As a result, your own infrastructure needs to be set up to deploy SSR code to the Adobe I/O Runtime.
+
 ## Remote Renderer Configuration {#remote-content-renderer-configuration}
 
 AEM must know where the remotely rendered content can be retrieved. Regardless of [which model you choose to implement for SSR,](#adobe-i-o-runtime) you must specify to AEM how to access this remote rendering service.
