@@ -149,15 +149,13 @@ Actions are prioritised according to their types in the following table, which i
 
 | **Name**  | **Allowed Properties**  | **Meaning**  |
 |---|---|---|
-|  **allow** | `wafFlags` (optional)  | if wafFlags is not present, stops further rule processing and proceeds to serving response. If wafFlags is present, it disables specified WAF protections and proceeds to further rule processing.
-  |
-|  **block** | `status, wafFlags` (optional and mutually exclusive)  | if wafFlags is not present, returns HTTP error bypassing all other properties, error code is defined by status property or defaults to 406. If wafFlags is present, it enables specified WAF protections and proceeds to further rule processing.
-  |
+|  **allow** | `wafFlags` (optional)  | if wafFlags is not present, stops further rule processing and proceeds to serving response. If wafFlags is present, it disables specified WAF protections and proceeds to further rule processing. |
+|  **block** | `status, wafFlags` (optional and mutually exclusive)  | if wafFlags is not present, returns HTTP error bypassing all other properties, error code is defined by status property or defaults to 406. If wafFlags is present, it enables specified WAF protections and proceeds to further rule processing. |
 | **log**  | `wafFlags` (optional)  | logs the fact that the rule was triggered, otherwise does not affect the processing. wafFlags has no effect |
 
 **wafFlags List**
 
-The `wafRules` property may include the following rules:
+The `wafFlag` property may include the following:
 
 | **Flag ID**  | **Flag Name** | **Description**  |
 |---|---|---|
