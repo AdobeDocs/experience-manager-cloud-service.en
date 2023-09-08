@@ -374,26 +374,43 @@ data:
 
 AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization, and configuring CDN and WAF rules. CDN logs appear in the Cloud Manager **Download Logs** dialog, when selecting the Author or Publish service.
 
-The name of the rule is shown in the rules property if the request matches the rule, even if the action is "allow" and therefore the traffic is not blocked. 
+The "rules" property describes what traffic filter rules are matched, and has the following pattern:
 
-Matching CDN rules appear in the log entry for all requests to the CDN, regardless of whether it is a CDN hit, pass, or miss. However, WAF rules appear in the log entry only for requests to the CDN that are considered CDN misses or passes, but not CDN hits.
+````
+"rules": "match=<matching-customer-named-rules-that-are-matched>,waf=<matching-WAF-rules>,action=<action_type>"
+````
 
-The example below shows a sample `cdn.yaml` and two CDN log entries, with non-empty values in the rules property due to blocked requests matching the CDN rule and WAF rule, respectively. 
+For example:
+````
+"rules": "match=Block-Traffic-under-private-folder,Enable-SQL-injection-everywhere,waf="SQLI,SANS",action=block"
+````
+The rules behave in the following manner:
+
+* the customer-declared rule name of any matching rules will be listed in the matches attribute.
+* the action attribute details whether the rules had the effect of blocking, allowing, or logging
+* if the WAF is licensed and enabled, the waf attribute will list any waf rules (e.g., SQLI; note that this is independent from the customer-declared name) that were detected, regardless of whether the waf rules were listed in the configuration.
+* if no customer-declared rules match and no waf rules match, the rules attribute property will be blank.  
+
+In general, matching rules appear in the log entry for all requests to the CDN, regardless of whether it is a CDN hit, pass, or miss. However,  WAF rules appear in the log entry only for requests to the CDN that are considered CDN misses or passes, but not CDN hits.
+
+The example below shows a sample cdn.yaml and two CDN log entries:
 
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "path-rule"
-      when: { reqProperty: path, equals: /block-me }
-      action: block
-
-    - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
-      when: { reqProperty: path, like: "*" }
-      action: enableWafRules
-      wafRules:
-        - SQLI
-        - XSS
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action: block
+      - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+        when: { reqProperty: path, like: "*" }
+        action:
+          type: block
+          wafFlags: [ SQLI, XSS ]
 ```
 
 ```
@@ -412,11 +429,12 @@ data:
 "status": 406,
 "res_age": 0,
 "pop": "PAR",
-"rules": "cdn=path-rule;waf=;action=blocked"
+"rules": "match=path-rule,action=blocked"
 }
 ```
 
 ```
+
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
@@ -432,7 +450,7 @@ data:
 "status": 406,
 "res_age": 0,
 "pop": "PAR",
-"rules": "cdn=;waf=SQLI;action=blocked"
+"rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
 }
 ```
 
@@ -456,4 +474,4 @@ Below is a list of the field names used in CDN logs, along with a brief descript
  | *status*  | The HTTP status code as an integer value.  |
  | *res_age*  | The amount of time (in seconds) a response has been cached (in all nodes).  |
  | *pop*  | Datacenter of the CDN cache server.  |
- | *rules*  | The name of any matching rules, for both CDN rules and waf rules.<br><br>Matching CDN rules appear in the log entry for all requests to the CDN, regardless of whether it is a CDN hit, pass, or miss.<br><br>Also indicates if the match resulted in a block. <br><br>For example, "`cdn=;waf=SQLI;action=blocked`"<br><br>Empty if no rules matched.  |
+ | *rules*  | The name of any matching rules.<br><br>Also indicates if the match resulted in a block. <br><br>For example, "`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`"<br><br>Empty if no rules matched.  |
