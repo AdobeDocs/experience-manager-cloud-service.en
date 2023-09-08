@@ -1,9 +1,9 @@
 ---
-title: Configuring CDN and WAF Rules to Filter Traffic
-description: Use the CDN and Web Application Firewall Rules to Filter Malicious Traffic
+title: Configuring Traffic Filter Rules (with WAF Rules)
+description: Use Traffic Filter Rules (with WAF Rules) to Filter Traffic
 ---
 
-# Configuring CDN and WAF Rules to Filter Traffic {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# Configuring Traffic Filter Rules (with WAF Rules) to Filter Traffic {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
     - { <getter>: <value>, <predicate>: <value> }
 ```
 
-|  **Property** | **Type**  | **Description**  |
+|  **Property** | **Type**  | **Meaning**  |
 |---|---|---|
 | **allOf**  | `array[Condition]` | **and** operation. true if all listed conditions return true  |
 |  **anyOf** |  `array[Condition]` | **or** operation. true if any of listed conditions return true  |
@@ -128,7 +128,7 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
 
 **Predicate**
 
-| **Property**  | **Type**  | **Description**  |
+| **Property**  | **Type**  | **Meaning**  |
 |---|---|---|
 |  **equals** | `string`  | true if the getter result equals to provided value  |
 |  **doesNotEqual** | `string`  | true if the getter result is not equal to provided value  |
@@ -139,11 +139,27 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
 | **in**  | `array[string]`  | true if provided list contains getter result  |
 |  **notIn** | `array[string]`  | true if provided list does not contain getter result  |
 
-**wafRules List**
+**Action Structure**
+
+Specified by `action` field which can be either a string specifying action type (allow, block, log) and assuming default values for all other options or an object where rule type is defined via `type` required field along with other options applicable to that type.
+
+**Action Types**
+
+Actions are prioritised according to their types in the following table, which is ordered to reflect the order actions are executed:
+
+| **Name**  | **Allowed Properties**  | **Meaning**  |
+|---|---|---|
+|  **allow** | `wafFlags` (optional)  | if wafFlags is not present, stops further rule processing and proceeds to serving response. If wafFlags is present, it disables specified WAF protections and proceeds to further rule processing.
+  |
+|  **block** | `status, wafFlags` (optional and mutually exclusive)  | if wafFlags is not present, returns HTTP error bypassing all other properties, error code is defined by status property or defaults to 406. If wafFlags is present, it enables specified WAF protections and proceeds to further rule processing.
+  |
+| **log**  | `wafFlags` (optional)  | logs the fact that the rule was triggered, otherwise does not affect the processing. wafFlags has no effect |
+
+**wafFlags List**
 
 The `wafRules` property may include the following rules:
 
-| **Rule ID**  | **Rule Name** | **Description**  |
+| **Flag ID**  | **Flag Name** | **Description**  |
 |---|---|---|
 | SQLI  | SQL Injection  | SQL Injection is the attempt to gain access to an application or obtain privileged information by executing arbitrary database queries.  |
 | BACKDOOR  |  Backdoor | A backdoor signal is a request which attempts to determine if a common backdoor file is present on the system.  |
@@ -182,7 +198,7 @@ The `wafRules` property may include the following rules:
 
 * The configuration files should not contain secrets since they would be readable by anyone who has access to the git repository 
 
-## Examples {#examples}
+## Traffic Filter Rules Examples {#examples}
 
 Some rule examples follow. See the [rate limit section](#rules-with-rate-limits) further down for examples of rate limiting. 
 
@@ -191,11 +207,16 @@ Some rule examples follow. See the [rate limit section](#rules-with-rate-limits)
 This rule blocks requests coming from IP 192.168.1.1:
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "block-request-from-ip"
-      when: { reqProperty: clientIp, equals: "192.168.1.1" }
-      action: block
+  trafficFilters
+     rules:
+       - name: "block-request-from-ip"
+         when: { reqProperty: clientIp, equals: "192.168.1.1" }
+         action: 
+           type: block
 ```
 
 **Example 2**
@@ -203,15 +224,20 @@ data:
 This rule blocks requests on path `/helloworld` on publish with a User-Agent that contains Chrome:
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
-      when:
-        allOf:
-          - { reqProperty: path, equals: /helloworld }
-          - { reqProperty: tier, equals: publish }
-          - { reqHeader: user-agent, matches: '.*Chrome.*'  }
-      action: block
+  trafficFilters:
+     rules:
+       - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
+         when: { reqProperty: clientIp, equals: "192.168.1.1" }
+           allOf:
+            - { reqProperty: path, equals: /helloworld }
+            - { reqProperty: tier, equals: publish }
+            - { reqHeader: user-agent, matches: '.*Chrome.*'  }
+           action: 
+             type: block
 ```
 
 **Example 3**
