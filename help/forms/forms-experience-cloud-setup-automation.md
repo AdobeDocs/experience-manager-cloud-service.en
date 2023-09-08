@@ -84,7 +84,7 @@ Perform the below listed steps to enable and configure Adobe Analytics for your 
     >
     >If your setup takes longer than 15 minutes, retry the integration steps.
 
-* Navigate to your form, and you see that Adobe Analytics is integrated to your form as shown in the image.
+1. Navigate to your form, and you see that Adobe Analytics is integrated to your form as shown in the image.
 
 ![Integrated AEM Analytics](assets/analytics-aem-integrated.png)
 
@@ -107,7 +107,7 @@ Perform the below listed steps to enable and configure Adobe Analytics for your 
 1. Select your **[!UICONTROL Form]**.
 1. Upon selection you see Adobe Analytics set up information on the left, Adobe Analytics set up information is available to the Forms activated for Adobe Analytics.
 
-![View Report](assets/activ-aa.png)
+    ![View Report](assets/activ-aa.png)
 
 1. Click **Adobe Analytics** to view and analyze performance data.
  

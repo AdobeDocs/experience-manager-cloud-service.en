@@ -23,7 +23,7 @@ For AEM Forms Analytics report, first you integrate Adobe Analytics to AEM Forms
 1. Select your **[!UICONTROL Form]**.
 1. Upon selection you see Adobe Analytics set up information on the left, Adobe Analytics set up information is available to the Forms activated for Adobe Analytics.
 
-![View Report](assets/activ-aa.png)
+    ![View Report](assets/activ-aa.png)
 
 1. Click **Adobe Analytics** to view and analyze performance data.
 
@@ -62,13 +62,13 @@ Device type helps you to identify the type of device used to access your forms. 
 
 ### **Geographical breakdown** {#geographical-breakdown}
 
-It shows the location from where the Forms are accessed. It provides region-specific information about form users, for example, you can see a region speciic information about a form user is India as shown in the image.
+It shows the location from where the Forms are accessed. It provides region-specific information about form users, for example, you can see that a region speciic information about a form user is India as shown in the image.
 
 ![geographical-breakdown](assets/geographical-breakdown.png)
 
 ### **Top sources of traffic and popular forms** {#top-sources-of-traffic-and-popular-forms}
 
-This helps you to identify the primary source or the link from where your forms are referred. For example, In the given image below you see that 18.9% are **Typed/Bookmarked**, 70.49% based on **search engines**, and 24% are from **Other Web sites**. You can define dimension items based on your requirements. Also, you can sort out which are the most visited or popular forms.
+This helps you to identify the primary source or the link from where your forms are referred. For example, In the given image below you see search instances for your adaptive forms where 18.9% are **Typed/Bookmarked**, 70.49% based on **Search Engines**, and 24% are from **Other Web Sites**. You can define dimension items based on your requirements. Also, you can sort out which are the most visited or popular forms.
 
 ![Referred Sites](assets/referred-sites.png)
 
