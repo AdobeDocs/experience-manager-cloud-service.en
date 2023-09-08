@@ -81,13 +81,12 @@ Traffic filter rules can be deployed to all cloud environment types (RDE, dev, s
 
 The format of the rules is described below, followed by some examples in a subsequent section.
 
-| **Property**   | **CDN Rules**  | **WAF Rules**  | **Type**  | **Default value**  | **Description**  |
+| **Property**   | **Traffic filter rules (in general)**  | **WAF Rules**  | **Type**  | **Default value**  | **Description**  |
 |---|---|---|---|---|---|
 | name  | X  | X  | `string`  | -  | Rule name (64 chars long, can only contain alphanumerics and - )  |
 | when  | X  | X  | `Condition`  | -  | The basic structure is:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>See Condition Structure syntax below, which describes the getters, predicates, and how to combine multiple conditions.  |
-| action  | X  | X  | `Enum`  | log (CDN rules)  | For CDN rules: allow, block, log. Default is log.<br><br>For WAF rules: `enableWafRules`, `disableWafRules`, log. No default.  |
+| action  | X  | X  | `Action` | log  | log, allow, block, log, or action object  Default is log |
 |  rateLimit | X  |   | `RateLimit`  | not defined  | Rate limiting configuration. Rate limiting is disabled if not defined.<br><br>There is a separate section further below describing the rateLimit syntax, along with examples.  |
-| wafRules  |   |  X | `array[Enum]` | -  | List of WAF rules that should be enabled or disabled.<br><br>Examples include SQLI and XSS. See waf Rules list below for a full list.  |
 
 ### Condition Structure {#condition-structure}
 
