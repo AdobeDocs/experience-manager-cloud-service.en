@@ -157,6 +157,7 @@ The added configuration is saved under the **[!UICONTROL Adaptive Form-Level Whi
 >[!NOTE]
 >
 > To invoke a form data model from the rule editor using custom functions in an AEM archetype project:
-> 1.  [Create a configuration file](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json) 
->1. Set properties of **getContentPathPattern** and **getFormDataModelPathPattern**. 
-> 1. Deploy the project. 
+>
+>1. Create a configuration file.
+>1. [Set properties of getContentPathPattern and getFormDataModelPathPattern](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
+>1. Deploy the project. 
