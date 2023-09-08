@@ -152,7 +152,9 @@ You can [invoke a form data model from rule editor using custom functions](/help
 1. Add **[!UICONTROL Form Data Model path pattern]** to specify the location of form data model. By default, the value is `/content/dams/formsanddocuments-fdm/(.*)` which includes all the Form Data Model. You can also specify the path for an specific Form Data Model. 
 1. Save the settings. 
 
-The added configuration is saved under the **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]** option. 
+The added configuration is saved under the **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]** option.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3423977/adaptive-forms-custom-function-rule-editor)
 
 >[!NOTE]
 >
