@@ -9,17 +9,16 @@ description: Use the CDN and Web Application Firewall Rules to Filter Malicious 
 >
 >This feature is not yet generally available. To join the ongoing early adopter program, email **aemcs-waf-adopter@adobe.com**, including the name of your organization and context about your interest in the feature.
 
-Adobe tries to mitigate attacks against customer websites, but it may be useful to proactively filter requests matching certain patterns so malicious traffic does not reach your application. Possible approaches include:
+Adobe tries to mitigate attacks against customer websites, but it may be useful to proactively filter traffic matching certain patterns so malicious traffic does not reach your application. Possible approaches include:
 
 * Apache layer modules such as `mod_security`
-* Configuring rules that are deployed to the CDN via Cloud Manager's configuration pipeline. 
+* Configuring traffic filter rules that are deployed to the CDN via Cloud Manager's configuration pipeline
 
-This article describes the latter approach, which offers two categories of rules:
+This article describes the traffic filter rules approach. Most of the these rules block or allow requests based on request properties and request headers, including IP, paths, and user agent. These rules can be configured by all AEM as a Cloud Service Sites and Forms customers.
 
-1. **CDN rules**: block or allow requests based on request properties and request headers, including IP, paths, and user agent. These rules can be configured by all AEM as a Cloud Service customers
-1. **WAF** (Web Application Firewall) rules: block requests that match various patterns known to be associated with malicious traffic. These rules can be configured by customers who license the WAF add-on; contact your Adobe account team for details. Note that no additional license is required during the early adopter program.
+Customers who license the WAF (Web Application Firewall) add-on can declare an additional category of rules named "WAF traffic filter rules" (or WAF rules for short). These WAF rules block requests that match various patterns known to be associated with malicious traffic. Contact your Adobe account team for details about licensing this upcoming capability. Note that no additional license is required during the early adopter program.
 
-These rules can be deployed to dev, stage and prod cloud environment types, for production (non-sandbox) programs. Support for RDE environments will be available in the future.
+Traffic filter rules can be deployed to all cloud environment types (RDE, dev, stage, prod) in production (non-sandbox) programs.
 
 ## Setup {#setup}
 
@@ -29,26 +28,32 @@ These rules can be deployed to dev, stage and prod cloud environment types, for 
    config/
         cdn/
            cdn.yaml
-           _config.yaml
    ```
 
-1. `_config.yaml` describes some metadata about the configuration. The "kind" parameter should be set to "CDN" and the version should be set to the schema version, which is currently "1". See the snippet below:  
-  
+2. `cdn.yaml` should contain metadata as well as a list of traffic filters rules and WAF rules.
+   
    ```
    kind: "CDN"
    version: "1"
+   envType: "dev"
+   data:
+     trafficFilters:
+       rules:
+         ...
    ```
-
+  
+  The "kind" parameter should be set to "CDN" and the version should be set to the schema version, which is currently "1". See examples further below.  
+      
+      
    <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
-   
-1. `cdn.yaml` should include a list of CDN rules and WAF rules, as described in sections below
-1. To match WAF rules, WAF must be enabled in Cloud Manager, as described below for both the new and existing program scenarios. Note that a separate license must be purchased for WAF.
+       
+4. To match WAF rules, WAF must be enabled in Cloud Manager, as described below for both the new and existing program scenarios. Note that a separate license must be purchased for WAF.
 
    1. To Configure WAF on a new Program, check the **WAF-DDOS Protection** check-box in the **Security** tab as shown below. Continue by following the steps described in [Add Production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) to create your program
 
    1. To Configure WAF on an existing program, select the **Edit program** option by following the steps described in the [Editing Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) documentation. Then, in the **Security** tab of the wizard, you can uncheck or check the WAF-DDOS option at any time
 
-1. For environment types other than RDE, execute the Cloud Manager configuration pipeline, which can be configured as described below. 
+1. For environment types other than RDE, execute the Cloud Manager configuration pipeline, which can be configured as described below.
 
    1. From the pipeline card in your Cloud Manager home page, select **Add Production Pipeline** or **Add Non-Production Pipeline** to launch the add pipeline wizard
    1. Select **Deployment Pipeline** in the configuration tab 
@@ -58,7 +63,7 @@ These rules can be deployed to dev, stage and prod cloud environment types, for 
    1. Give your pipeline a name and select deployment triggers, then select **Continue** 
    1. In the **Source Code** tab, select **Targeted deployment**, then select **Config**
 
-      ![Selet Targeted deployment](/help/security/assets/target-deployment.png)
+      ![Select Targeted deployment](/help/security/assets/target-deployment.png)
 
    1. Select the repository and branch as needed. If a Config pipeline exists for the selected environment, this selection is disabled.
 
@@ -66,7 +71,8 @@ These rules can be deployed to dev, stage and prod cloud environment types, for 
       
       >[!NOTE]
       >
-      >You can configure and run only one Config pipeline per environment.
+      > Users must be logged in as Deployment Manager in order to configure or run these pipelines.
+      > Also, you can configure and run only one Config pipeline per environment.
 
    1. Select **Save**. Your new pipeline will appear in the pipeline card and can be run when you are ready. 
    1. For RDE, the command line will be used, but RDE is not supported at this time.
