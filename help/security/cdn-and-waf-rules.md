@@ -198,7 +198,7 @@ The `wafRules` property may include the following rules:
 
 * The configuration files should not contain secrets since they would be readable by anyone who has access to the git repository 
 
-## Traffic Filter Rules Examples {#examples}
+## Rules Examples {#examples}
 
 Some rule examples follow. See the [rate limit section](#rules-with-rate-limits) further down for examples of rate limiting. 
 
@@ -245,14 +245,20 @@ data:
 This rule blocks requests that contain the query parameter `foo`, but allows every request coming from IP 192.168.1.1:
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "block-request-that-contains-query-parameter-foo"
-      when: { queryParam: url-param, equals: foo }
-      action: block
-    - name: "allow-all-requests-from-ip"
-      when: { reqProperty: clientIp, equals: 192.168.1.1 }
-      action: allow
+  trafficFilters:
+    rules:
+      - name: "block-request-that-contains-query-parameter-foo"
+        when: { queryParam: url-param, equals: foo }
+        action: 
+          type: block
+      - name: "allow-all-requests-from-ip"
+        when: { reqProperty: clientIp, equals: 192.168.1.1 }
+        action: 
+          type: allow
 ```
 
 **Example 4**
@@ -260,19 +266,54 @@ data:
 This rule blocks requests to path /block-me, and blocks every request that matches a SQLI or XSS pattern:
 
 ```
+kind: "CDN"
+version: "1"
+envType: "dev"
 data:
-  rules:
-    - name: "path-rule"
-      when: { reqProperty: path, equals: /block-me }
-      action: block
-
-    - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
-      when: { reqProperty: path, like: "*" }
-      action: enableWafRules
-      wafRules:
-        - SQLI
-        - XSS
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action: 
+          type: block
+      - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+        when: { reqProperty: path, like: "*" }
+        action:
+          type: block
+          wafFlags: [ SQLI, XSS]
 ```
+
+**Example 4**
+
+This rule blocks access to OFAC countries:
+
+````
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    rules:
+      - name: block-ofac-countries
+        when:
+          allOf:
+            - { reqProperty: tier, equals: publish }
+            - reqProperty: clientCountry
+              in:
+                - SY
+                - BY
+                - MM
+                - KP
+                - IQ
+                - CD
+                - SD
+                - IR
+                - LR
+                - ZW
+                - CU
+                - CI
+        action: block
+````
 
 ## Rules with Rate Limits {#rules-with-rate-limits}
 
@@ -280,7 +321,7 @@ Sometimes it is desirable to block traffic matching a rule only if the match exc
 
 ### rateLimit Structure {#ratelimit-structure}
 
-| **Property**  | **Type**  | **Default value**  | **Description**  |
+| **Property**  | **Type**  | **Default**  | **MEANING**  |
 |---|---|---|---|
 |  limit |  integer from 10 to 10000     |  required |  Request rate in requests per second for which the rule is triggered |
 |  window | integer enum: 1, 10 or 60  | 10  | Sampling window in seconds for which request rate is calculated  |
@@ -288,23 +329,45 @@ Sometimes it is desirable to block traffic matching a rule only if the match exc
 
 ### Examples {#ratelimiting-examples}
 
-Example 1: When the request rate exceeds 100 requests per second in the last 60 seconds, block `/critical/resource` for 60 seconds
+**Example 1** 
+
+This rule blocks a client for 5m when it exceeds 100 req/sec in the last 60 sec
 
 ```
-- name: rate-limit-example
-  when: { reqProperty: path, equals: /critical/resource }
-  action: block
-  rateLimit: { limit: 100, window: 60, penalty: 60 }
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: path
+        like: '*'
+      rateLimit:
+        limit: 60
+        window: 10
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: block
 ```
 
-Example 2: When the request rate exceeds 10 requests per second in 10 seconds, block the resource for 300 seconds:
+**Example 2** 
+
+Block requests for 60s on path /critical/resource when it exceeds 100 req/sec in the last 60 sec
 
 ```
-- name: rate-limit-using-defaults
-  when: { reqProperty: path, equals: /critical/resource }
-  action: block
-  rateLimit:
-    limit: 10
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    rules:
+      - name: rate-limit-example
+        when: { reqProperty: path, equals: /critical/resource }
+        action: 
+          type: block
+        rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
 
 ## CDN Logs {#cdn-logs}
