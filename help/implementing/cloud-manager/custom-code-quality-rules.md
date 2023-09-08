@@ -564,7 +564,6 @@ See [indexing documentation](/help/operations/indexing.md#preparing-the-new-inde
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
 ```
@@ -577,7 +576,6 @@ See [indexing documentation](/help/operations/indexing.md#preparing-the-new-inde
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -600,11 +598,8 @@ Oak indexes of type `lucene` must always be asynchronously indexed. Failure to 
     + damAssetLucene-1-custom
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - type: lucene
-      - reindex: false
       - tags: [visualSimilaritySearch]
-      - type: lucene
       + tika
         + config.xml
 ```
@@ -617,7 +612,6 @@ Oak indexes of type `lucene` must always be asynchronously indexed. Failure to 
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -641,7 +635,6 @@ For asset search to work correctly in Experience Manager Assets, customizations 
       - async: [async, nrt]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - type: lucene
       + tika
         + config.xml
@@ -655,7 +648,6 @@ For asset search to work correctly in Experience Manager Assets, customizations 
       - async: [async, nrt]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
