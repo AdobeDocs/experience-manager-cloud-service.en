@@ -5,17 +5,17 @@ description: Experience Cloud Setup Automation helps to connect Adobe Analytics 
 
 # Enable Adobe Analytics for an Adaptive Form using Experience Cloud Setup Automation {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
 
-Experience Cloud Setup Automation helps to connect Adobe Analytics to an Adaptive Form, Adobe Analytics aids in tracking and analyzing user interaction with Adaptive Forms, offering insights into visitor interactions and engagement. Experience Cloud Setup Automation also helps monitoring form performance which involves assessing metrics like completion times and drop-off points. This analysis helps optimize forms for better user experience while distinguishing user behavior based on login status, for example, anonymous users, to identify general trends and patterns.
+Experience Cloud Setup Automation helps to connect Adobe Analytics to Adaptive Forms which aids in tracking and analyzing user interaction with your forms and offering insights into visitor interactions and engagement. Experience Cloud Setup Automation also helps monitoring form performance which involves assessing metrics like completion times and drop-off points. This analysis helps optimize forms for better user experience while distinguishing user behavior based on login status, for example, anonymous users, to identify general trends and patterns.
 
 ## Advantages of integrating Adobe Analytics with Adaptive Forms {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
 * **Insights into end-user behavior**: Adobe Analytics helps to get insights about end-user behavior,  reveals user actions, drop-offs, and completion rates, enabling a deeper understanding of how individuals engage with forms.
 * **Enabling non-technical business users to gain insights**: Adobe Analytics through its easy to use interface empowers even non-technical users to access and interpret form usage data, fostering data-driven decisions for enhancing enrollment experiences.
-* **Optimizing data capture experience based on usage**: Organizations can identify pain points in data capture, leading to targeted improvements that enhance form usability and increase successful submissions.
+* **Optimizing data capture experience based on usage**: Organizations easily identify pain points in data capture, leading to targeted improvements that enhance form usability and increase successful submissions.
 
 ## Scope of Adaptive Forms usage metrics {#scope-of-adaptive-forms-usage-metrics}
 
-Adobe Analytics offers a comprehensive array of Adaptive Forms performance metrics designed to provide valuable insights into form usage. These metrics encompass:
+Adobe Analytics offers a comprehensive array of Adaptive Forms performance metrics designed to provide valuable insights into form usage. These metrics are:
 
 * **Form renditions, Form submissions, Validation errors, and Unique visitors**, allowing you to assess the usage and effectiveness of your forms.
 
@@ -23,9 +23,9 @@ Adobe Analytics offers a comprehensive array of Adaptive Forms performance metri
 
 * **Device type** data which informs you about the devices users employ to access your forms.
 
-* **Geographical breakdown** that reveals the regional distribution of your form users.
+* **Geographical breakdown** reveals the regional distribution of your form users.
 
-* **Traffic sources** and **Popular forms** metrics which consist of the top referring domains and most-visited forms, helping you understand where your traffic originates and which forms are the most popular.
+* **Traffic sources** and **Popular forms** metrics which consist of the top referring domains and most-visited forms, help you understand where your traffic originates and which forms are the most popular.
 
 * **User activity on top forms** that provides insights into field visits, form renditions, validation errors, abandoned forms, and form submissions, allowing you to analyze user behavior.
 
@@ -36,11 +36,15 @@ Adobe Analytics offers a comprehensive array of Adaptive Forms performance metri
 ![Analytics Report](assets/analytics-report.png)
 
 
-For a detailed information about each metric, visit [Viewing and Understanding AEM Forms Analytics Reports](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)
+For a detailed information about each metric, visit [Viewing and Understanding AEM Forms Analytics Reports](/help/forms/view-understand-aem-forms-analytics-reports.md)
 
 ## Prerequisites {#prerequisites}
 
-Experience Cloud Setup Automation in Adobe Experience Manager Forms requires an Adobe Analytics license, Data Collection (Formerly Adobe Launch) to manage tracking scripts, and integration with the Experience Platform Launch API for streamlined data aggregation and insights generation.
+<!--
+Analytics, Data Collection (Formerly Adobe Launch), and Experience Manager (experience.adobe.com)
+-->
+
+Experience Cloud Setup Automation in Adobe Experience Manager Forms requires an **Adobe Analytics license**, **Data Collection (Formerly Adobe Launch)** to manage tracking scripts, and integration with the **Experience Platform Launch (API)** for streamlined data aggregation and insights generation.
 
 <!-- 
 
@@ -96,3 +100,14 @@ Perform the below listed steps to enable and configure Adobe Analytics for your 
     >If your setup takes longer than 15 minutes, retry the integration steps.
 
 1. Navigate to your form, and you see that Adobe Analytics is integrated to your form.
+
+## View Adaptive Forms Adobe Analytics report {#view-adobe-analytics-report}
+
+1. On your AEM instance, Go to **[Forms]** >> **[Forms and Document]**.
+1. Select your **[!UICONTROL Form]**.
+1. Upon selection you see Adobe Analytics set up information on the left, Adobe Analytics set up information is available to the Forms activated for Adobe Analytics.
+
+![View Report](assets/activ-aa.png)
+
+1. Click **Adobe Analytics** to view and analyze performance data.
+ 
