@@ -16,7 +16,7 @@ Adobe tries to mitigate attacks against customer websites, but it may be useful 
 
 This article describes the traffic filter rules approach. Most of the these rules block or allow requests based on request properties and request headers, including IP, paths, and user agent. These rules can be configured by all AEM as a Cloud Service Sites and Forms customers.
 
-Customers who license the WAF (Web Application Firewall) add-on can declare an additional category of rules named "WAF traffic filter rules" (or WAF rules for short). These WAF rules block requests that match various patterns known to be associated with malicious traffic. Contact your Adobe account team for details about licensing this upcoming capability. Note that no additional license is required during the early adopter program.
+Customers who license the WAF (Web Application Firewall) add-on can also configure an additional category of rules called "WAF traffic filter rules" (or WAF rules for short). These WAF rules block requests matching various patterns known to be associated with malicious traffic. Contact your Adobe account team for details about licensing this upcoming capability. Note that no additional license is required during the early adopter program.
 
 Traffic filter rules can be deployed to all cloud environment types (RDE, dev, stage, prod) in production (non-sandbox) programs.
 
@@ -47,7 +47,7 @@ Traffic filter rules can be deployed to all cloud environment types (RDE, dev, s
       
    <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
        
-4. To match WAF rules, WAF must be enabled in Cloud Manager, as described below for both the new and existing program scenarios. Note that a separate license must be purchased for WAF.
+3. To configure WAF rules, WAF must be enabled in Cloud Manager, as described below for both the new and existing program scenarios. Note that a separate license must be purchased for WAF.
 
    1. To Configure WAF on a new Program, check the **WAF-DDOS Protection** check-box in the **Security** tab as shown below. Continue by following the steps described in [Add Production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) to create your program
 
@@ -75,13 +75,38 @@ Traffic filter rules can be deployed to all cloud environment types (RDE, dev, s
       > Also, you can configure and run only one Config pipeline per environment.
 
    1. Select **Save**. Your new pipeline will appear in the pipeline card and can be run when you are ready. 
-   1. For RDE, the command line will be used, but RDE is not supported at this time.
+   1. For RDEs, the command line will be used, but RDE is not supported at this time.
 
-## Rules Syntax {#rules-syntax}
+## Traffic Filter Rules Syntax {#rules-syntax}
 
-The format of the rules is described below, followed by some examples in a subsequent section.
+You can configure `traffic filter rules` to match on patterns such as IPs, user agent, request headers, hostname, geo, and url. 
 
-| **Property**   | **Traffic filter rules (in general)**  | **WAF Rules**  | **Type**  | **Default value**  | **Description**  |
+Customers who license the WAF offering can also configure a special category of traffic filter rules called `WAF traffic filter rules` (or WAF rules for short) that reference one or more WAF flags, which are listed below.
+
+Here's an example of a set of traffic filter rules, which also includes a WAF rule.
+
+```
+kind: "CDN"
+version: "1"
+envType: "dev"
+data:
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action: 
+          type: block
+      - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
+        when: { reqProperty: path, like: "*" }
+        action:
+          type: block
+          wafFlags: [ SQLI, XSS]
+```
+
+The format of the traffic filter rules in the cdn.yaml file is described below. See some examples in a later section. 
+
+
+| **Property**   | **Most traffic filter rules**  | **WAF traffic filter rules**  | **Type**  | **Default value**  | **Description**  |
 |---|---|---|---|---|---|
 | name  | X  | X  | `string`  | -  | Rule name (64 chars long, can only contain alphanumerics and - )  |
 | when  | X  | X  | `Condition`  | -  | The basic structure is:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>See Condition Structure syntax below, which describes the getters, predicates, and how to combine multiple conditions.  |
@@ -139,7 +164,7 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
 | **in**  | `array[string]`  | true if provided list contains getter result  |
 |  **notIn** | `array[string]`  | true if provided list does not contain getter result  |
 
-**Action Structure**
+### Action Structure {#action-structure}
 
 Specified by `action` field which can be either a string specifying action type (allow, block, log) and assuming default values for all other options or an object where rule type is defined via `type` required field along with other options applicable to that type.
 
@@ -153,7 +178,7 @@ Actions are prioritised according to their types in the following table, which i
 |  **block** | `status, wafFlags` (optional and mutually exclusive)  | if wafFlags is not present, returns HTTP error bypassing all other properties, error code is defined by status property or defaults to 406. If wafFlags is present, it enables specified WAF protections and proceeds to further rule processing. |
 | **log**  | `wafFlags` (optional)  | logs the fact that the rule was triggered, otherwise does not affect the processing. wafFlags has no effect |
 
-**wafFlags List**
+### WAF flags List {#waf-flags-list}
 
 The `wafFlag` property may include the following:
 
