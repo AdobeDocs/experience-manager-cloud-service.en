@@ -81,7 +81,7 @@ Traffic filter rules can be deployed to all cloud environment types (RDE, dev, s
 
 You can configure `traffic filter rules` to match on patterns such as IPs, user agent, request headers, hostname, geo, and url. 
 
-Customers who license the WAF offering can also configure a special category of traffic filter rules called `WAF traffic filter rules` (or WAF rules for short) that reference one or more WAF flags, which are listed below.
+Customers who license the WAF offering can also configure a special category of traffic filter rules called `WAF traffic filter rules` (or WAF rules for short) that reference one or more WAF flags, which are listed in its own section below.
 
 Here's an example of a set of traffic filter rules, which also includes a WAF rule.
 
@@ -178,7 +178,7 @@ Actions are prioritised according to their types in the following table, which i
 |  **block** | `status, wafFlags` (optional and mutually exclusive)  | if wafFlags is not present, returns HTTP error bypassing all other properties, error code is defined by status property or defaults to 406. If wafFlags is present, it enables specified WAF protections and proceeds to further rule processing. |
 | **log**  | `wafFlags` (optional)  | logs the fact that the rule was triggered, otherwise does not affect the processing. wafFlags has no effect |
 
-### WAF flags List {#waf-flags-list}
+### WAF Flags List {#waf-flags-list}
 
 The `wafFlag` property may include the following:
 
@@ -234,7 +234,7 @@ kind: "CDN"
 version: "1"
 envType: "dev"
 data:
-  trafficFilters
+  trafficFilters:
      rules:
        - name: "block-request-from-ip"
          when: { reqProperty: clientIp, equals: "192.168.1.1" }
