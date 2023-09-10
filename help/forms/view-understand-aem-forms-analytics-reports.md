@@ -62,7 +62,7 @@ Device type helps you to identify the type of device used to access your forms. 
 
 ### **Geographical breakdown** {#geographical-breakdown}
 
-It shows the location from where the Forms are accessed. It provides region-specific information about form users, for example, you can see that a region speciic information about a form user is India as shown in the image.
+It shows the location from where the Forms are accessed. It provides region-specific information about form users, for example, you can see that a region specific information about a form user is India as shown in the image.
 
 ![geographical-breakdown](assets/geographical-breakdown.png)
 
