@@ -14,7 +14,7 @@ Adobe tries to mitigate attacks against customer websites, but it may be useful 
 * Apache layer modules such as `mod_security`
 * Configuring traffic filter rules that are deployed to the CDN via Cloud Manager's configuration pipeline
 
-This article describes the traffic filter rules approach. Most of the these rules block or allow requests based on request properties and request headers, including IP, paths, and user agent. These rules can be configured by all AEM as a Cloud Service Sites and Forms customers.
+This article describes the traffic filter rules approach. Most of these rules block or allow requests based on request properties and request headers, including IP, paths, and user agent. These rules can be configured by all AEM as a Cloud Service Sites and Forms customers.
 
 Customers who license the WAF (Web Application Firewall) add-on can also configure an additional category of rules called "WAF traffic filter rules" (or WAF rules for short). These WAF rules block requests matching various patterns known to be associated with malicious traffic. Contact your Adobe account team for details about licensing this upcoming capability. Note that no additional license is required during the early adopter program.
 
@@ -30,7 +30,7 @@ Traffic filter rules can be deployed to all cloud environment types (RDE, dev, s
            cdn.yaml
    ```
 
-2. `cdn.yaml` should contain metadata as well as a list of traffic filters rules and WAF rules.
+1. `cdn.yaml` should contain metadata as well as a list of traffic filters rules and WAF rules.
    
    ```
    kind: "CDN"
@@ -47,7 +47,7 @@ Traffic filter rules can be deployed to all cloud environment types (RDE, dev, s
       
    <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
        
-3. To configure WAF rules, WAF must be enabled in Cloud Manager, as described below for both the new and existing program scenarios. Note that a separate license must be purchased for WAF.
+1. To configure WAF rules, WAF must be enabled in Cloud Manager, as described below for both the new and existing program scenarios. Note that a separate license must be purchased for WAF.
 
    1. To Configure WAF on a new Program, check the **WAF-DDOS Protection** check-box in the **Security** tab as shown below. Continue by following the steps described in [Add Production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) to create your program
 
@@ -170,7 +170,7 @@ Specified by `action` field which can be either a string specifying action type 
 
 **Action Types**
 
-Actions are prioritised according to their types in the following table, which is ordered to reflect the order actions are executed:
+Actions are prioritized according to their types in the following table, which is ordered to reflect the order actions are executed:
 
 | **Name**  | **Allowed Properties**  | **Meaning**  |
 |---|---|---|
@@ -310,7 +310,7 @@ data:
 
 This rule blocks access to OFAC countries:
 
-````
+```
 kind: "CDN"
 version: "1"
 envType: "dev"
@@ -336,7 +336,7 @@ data:
                 - CU
                 - CI
         action: block
-````
+```
 
 ## Rules with Rate Limits {#rules-with-rate-limits}
 
@@ -399,14 +399,14 @@ AEM as a Cloud Service provides access to CDN logs, which are useful for use cas
 
 The "rules" property describes what traffic filter rules are matched, and has the following pattern:
 
-````
+```
 "rules": "match=<matching-customer-named-rules-that-are-matched>,waf=<matching-WAF-rules>,action=<action_type>"
-````
+```
 
 For example:
-````
+```
 "rules": "match=Block-Traffic-under-private-folder,Enable-SQL-injection-everywhere,waf="SQLI,SANS",action=block"
-````
+```
 The rules behave in the following manner:
 
 * the customer-declared rule name of any matching rules will be listed in the matches attribute.
