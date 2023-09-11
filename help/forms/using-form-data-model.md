@@ -140,3 +140,26 @@ For example, the following rule invokes a get service that takes Employee Id as 
 ![invoke-service](assets/invoke-service.png)
 
 In addition, you can use the `guidelib.dataIntegrationUtils.executeOperation` API to write a JavaScript in the code editor for the rule editor. <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
+
+### Invoke a form data model using custom functions {#invoke-form-data-model-using-custom-functions}
+
+You can [invoke a form data model from rule editor using custom functions](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). To invoke the form data model add a form data model to the allowlist. To add a form data model to an allowtlist:
+
+1. Go to Experience Manager web console at `https://server:host/system/console/configMgr`.
+1. Locate **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]**.
+1. Click ![plus icon](/help/forms/assets/Smock_Add_18_N.svg) icon to add the configuration..
+1. Add **[!UICONTROL Content path pattern]** to specify the location of your Adaptive Forms.  By default, the value is `/content/forms/af/(.*)` which includes all the Adaptive Forms. You can also specify the path for an specific Adaptive Form. 
+1. Add **[!UICONTROL Form Data Model path pattern]** to specify the location of form data model. By default, the value is `/content/dams/formsanddocuments-fdm/(.*)` which includes all the Form Data Model. You can also specify the path for an specific Form Data Model. 
+1. Save the settings. 
+
+The added configuration is saved under the **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]** option.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3423977/adaptive-forms-custom-function-rule-editor)
+
+>[!NOTE]
+>
+> To invoke a form data model from the rule editor using custom functions through an AEM archetype project:
+>
+>1. [Create a configuration file](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
+>1. Set properties of getContentPathPattern and getFormDataModelPathPattern.
+>1. Deploy the project. 
