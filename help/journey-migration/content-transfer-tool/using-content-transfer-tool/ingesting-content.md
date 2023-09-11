@@ -43,11 +43,9 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
    >[!IMPORTANT]
    > You can initiate an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you are unable to start an ingestion, see [Unable to Start Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) for more details.
 
-   ### Wipe
-
-   The **wipe** option sets the destination's starting point of the ingestion. If enabled, the current content on the destination is replaced with the current version of AEM that is specified in Cloud Manager. If not enabled, the destination maintains its current content as the starting point.
-
-   Note that this option does **NOT** affect how the ingestion will be performed. In both wipe and non-wipe cases, the migration set will destructively overwrite the destination's content. For instance, if the migration set contains `/content/page1` and the destination already contains `/content/page1/product1`, the ingestion will remove the entire `page1` path and its subpages, including `product1`, and replace it with the content in the migration set. This means careful planning must be done when performing a non-wipe ingestion to a destination that contains any content that should be maintained. 
+   * Choose the `Wipe` value
+     * The **wipe** option sets the destination's starting point of the ingestion. If enabled, the current content on the destination is replaced with the current version of AEM that is specified in Cloud Manager. If not enabled, the destination maintains its current content as the starting point.
+     * Note that this option does **NOT** affect how the ingestion will be performed. In both wipe and non-wipe cases, the migration set will destructively overwrite the destination's content. For instance, if the migration set contains `/content/page1` and the destination already contains `/content/page1/product1`, the ingestion will remove the entire `page1` path and its subpages, including `product1`, and replace it with the content in the migration set. This means careful planning must be done when performing a non-wipe ingestion to a destination that contains any content that should be maintained. 
 
    >[!IMPORTANT]
    > If the setting **Wipe** is enabled for the ingestion, it deletes the entire existing repository and creates a repository into which you can ingest content. This workflow means that it resets all settings including permissions on the target Cloud Service instance. This resetting is true also for an admin user added to the **administrators** group and that user must be added to the administrators group again to start an ingestion.
