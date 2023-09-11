@@ -48,7 +48,7 @@ Experience Cloud Setup Automation in Adobe Experience Manager Forms requires an 
 
 If you have an active license for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you should verify their availability within your developer console.
 
-To verify the aforementioned licenses is available, visit the developer console and search your project with the project id, for example, as shown in the image as `AEM-p53584-e979139` and ensure that you have Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API.
+To verify the aforementioned licenses are available, visit the developer console and search your project with the project id, for example, as shown in the image as `AEM-p53584-e979139` and ensure that you have Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API.
 
 ![Prerequiste Forms Analytics Integration](assets/analytics-aem.png)
 
