@@ -54,7 +54,7 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. You can then monitor the Ingestion phase from the Ingestion Jobs list view and use the ingestion's action menu to view the log as the ingestion progresses.
+1. You can then monitor the Ingestion phase from the Ingestion Jobs list view and use the ingestion's action menu to view the durations and log as the ingestion progresses.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
