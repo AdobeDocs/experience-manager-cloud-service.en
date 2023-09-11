@@ -404,9 +404,11 @@ The "rules" property describes what traffic filter rules are matched, and has th
 ```
 
 For example:
+
 ```
 "rules": "match=Block-Traffic-under-private-folder,Enable-SQL-injection-everywhere,waf="SQLI,SANS",action=block"
 ```
+
 The rules behave in the following manner:
 
 * the customer-declared rule name of any matching rules will be listed in the matches attribute.
