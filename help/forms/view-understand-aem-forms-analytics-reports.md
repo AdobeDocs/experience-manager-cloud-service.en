@@ -1,5 +1,5 @@
 ---
-title: Viewing and understanding AEM Forms analytics reports
+title: Viewing and understanding Adaptive Forms analytics reports
 description: Adaptive Forms seamlessly integrate with Adobe Analytics to capture and track performance metrics for your published forms and documents.
 topic-tags: develop
 feature: Adaptive Forms
@@ -9,7 +9,7 @@ level: Intermediate
 
 # Viewing and understanding Adaptive Forms analytics reports {#viewing-and-understanding-aem-forms-analytics-reports}
 
-In the rapidly evolving landscape of digital analytics, staying attuned to global trends is imperative for making informed decisions and optimizing digital experiences. To cater to this, Adaptive Forms seamlessly integrate with Adobe Analytics to capture and track performance metrics for your published forms and documents. The objective behind analyzing these metrics is to make data-driven decisions, using metrics and analytics to enhance the usability and effectiveness of the forms.
+In the rapidly evolving landscape of digital analytics, staying attuned to global trends is imperative for making informed decisions and optimizing digital experiences. To address this, Adaptive Forms seamlessly integrate with Adobe Analytics to capture and track performance metrics for your published forms and documents. The objective behind analyzing these metrics is to make data-driven decisions, using metrics and analytics to enhance the usability and effectiveness of the forms.
 
 By capturing and tracking key performance indicators, businesses can identify areas of improvement, optimize user experiences, and ultimately drive better outcomes to create exceptional customer experiences.
 
@@ -19,15 +19,14 @@ For AEM Forms Analytics report, first you integrate Adobe Analytics to AEM Forms
 
 ## View Adaptive Forms Adobe Analytics report {#view-adobe-analytics-report}
 
-1. On your AEM instance, Go to **[Forms]** >> **[Forms and Document]**.
-1. Select your **[!UICONTROL Form]**.
-1. Upon selection you see Adobe Analytics set up information on the left, Adobe Analytics set up information is available to the Forms activated for Adobe Analytics.
+1. On your AEM instance, Go to **[!UICONTROL Forms]** >> **[!UICONTROL Forms and Document]**.
+1. Select your form, you see that Adobe Analytics is integrated as shown on the left, to the Forms activated for Adobe Analytics.
 
     ![View Report](assets/activ-aa.png)
 
-1. Click **Adobe Analytics** to view and analyze performance data.
+1. Click **Adobe Analytics** to view your report and analyze performance data.
 
-## Understanding Adaptive Forms analytics reports {#understanding-aem-forms-analytics-reports}
+## Understanding Adaptive Forms analytics report {#understanding-aem-forms-analytics-reports}
 
 Adobe Analytics offers a comprehensive array of Adaptive Forms performance metrics designed to provide valuable insights into form usage. These metrics are:
 
@@ -35,34 +34,34 @@ Adobe Analytics offers a comprehensive array of Adaptive Forms performance metri
 
 It has the metrics Form renditions, Form submissions, Validation errors, and Unique visitors, which allow you to assess the usage and effectiveness of your forms:
 
-1. **Form renditions** : Form Renditions reveal the number of times the form has been rendered or opened.
+1. **Form renditions**: Form renditions reveal the number of times the form has been rendered or opened.
 
-1. **Form submissions** : Form submissions indicate how many times users successfully complete and submit your adaptive forms.
+1. **Form submissions**: Form submissions indicate the number of times adaptive forms are successfully completed and submitted by users.
     
-1. **Validation errors** : This count the number of errors when there is a validation error in one or more of the form fields.
+1. **Validation errors**: Validation error displays the total number of validation-related errors that occurred on the fields of the forms.
 
-1. **Unique visitors**: Number of times the form is rendered by unique visitors. For more information on unique visitors, see [Unique Visitors, Visits, and customer behavior](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
+1. **Unique visitors**: Unique visitors represent the number of times the form is rendered. For more information on unique visitors, see [Unique Visitors, Visits, and customer behavior](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
 
     ![Forms Performance](assets/forms-performance.png)
 
 ### **Visitors to your forms** {#visitors-to-your-forms}
 
-It helps you gain valuable insights into visitor activity on your forms with comprehensive analytics based on the metrics Visits and submissions, and Unique visitors and their total visits:
+It helps you gain valuable insights into visitor activity on your forms:
 
-1. **Visits & submissions**: It describes the frequency of visits to your forms in a date range  and the corresponding number of form submissions, for more info on this click [Visits](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
-1. **Unique visitors & their total visits**: Distinguishing between new and returning users is vital. For example, a visitor can come to your site every day for a month, but they still count as a single unique visitor. Visit [Unique visitors](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) for a detailed information.
+1. **Visits & submissions**: It describes the frequency of visits to your forms in a date range and the corresponding number of form submissions, for more info on this click [Visits](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
+1. **Unique visitors & their total visits**: It distinguishes between the new and returning users. For example, a visitor can come to your site every day for a month, but they still count as a single unique visitor. Visit [Unique visitors](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) for a detailed information.
 
     ![Forms Visitors](assets/forms-visitors.png)
 
 ### **Device type** {#device-type}
 
-Device type helps you to identify the type of device used to access your forms. It categorizes the device type as Mobile Device Type. For example, In this case, it is Mobile Device Type: Other, and Mobile Device Type: Mobile Phone.
+Device type helps you to identify the type of device used to access your forms. It categorizes the device type as Mobile Device Type. For example, In this case, it is Mobile Device Type: Other, and Mobile Device Type: Mobile Phone. The various types of mobile devices include "Mobile phone", "Tablet", "Media player", and "Gaming console" and more.
 
 ![Device Type](assets/device-type.png)
 
 ### **Geographical breakdown** {#geographical-breakdown}
 
-It shows the location from where the Forms are accessed. It provides region-specific information about form users, for example, you can see that a region specific information about a form user is India as shown in the image.
+It shows the location from where the Forms are accessed. It provides region-specific information about form users, for example, you can see that a region-specific information about a form user is India as shown in the image.
 
 ![geographical-breakdown](assets/geographical-breakdown.png)
 
@@ -86,7 +85,7 @@ It is the time users spend on your forms over time, which help you to identify e
 
 ### **Areas where visitors require assistance with filling out the form** {#areas-requiring-assistance}
 
-Metrics such as help views, validation errors, and field visits reveal where users need assistance or how we can track errors in fields. For example, In the image below you see that in a form with fields such as **Full Name**, **Phone Number**, **DoB**, **Text Input**. The **Full Name** field have 12 visits, out of 12 visits 8 visits have validation error and 1 clicked help icon for help view on this field. You can see the metrics data for other form fields.
+Metrics such as help views, validation errors, and field visits reveal where users need assistance or how we can track errors in fields. For example, In the image below you see that in a form with fields such as **Full Name**, **Phone Number**, **DoB**. The **Full Name** field have 12 visits, out of 12 visits 8 visits have validation error and 1 clicked help icon for help view on this field. You can see the metrics data for other form fields.
 
 ![assisting-areas](assets/assisting-areas.png)
 
