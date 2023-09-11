@@ -34,13 +34,13 @@ Adobe Analytics offers a comprehensive array of Adaptive Forms performance metri
 
 It has the metrics Form renditions, Form submissions, Validation errors, and Unique visitors, which allow you to assess the usage and effectiveness of your forms:
 
-1. **Form renditions**: Form renditions reveal the number of times the form has been rendered or opened.
+* **Form renditions**: Form renditions reveal the number of times the form has been rendered or opened.
 
-1. **Form submissions**: Form submissions indicate the number of times adaptive forms are successfully completed and submitted by users.
+* **Form submissions**: Form submissions indicate the number of times adaptive forms are successfully completed and submitted by users.
     
-1. **Validation errors**: Validation error displays the total number of validation-related errors that occurred on the fields of the forms.
+* **Validation errors**: Validation error displays the total number of validation-related errors that occurred on the fields of the forms.
 
-1. **Unique visitors**: Unique visitors represent the number of times the form is rendered. For more information on unique visitors, see [Unique Visitors, Visits, and customer behavior](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
+* **Unique visitors**: Unique visitors represent the number of times the form is rendered by a visitor. For more information on unique visitors, see [Unique Visitors, Visits, and Customer behavior](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
 
     ![Forms Performance](assets/forms-performance.png)
 
@@ -48,14 +48,14 @@ It has the metrics Form renditions, Form submissions, Validation errors, and Uni
 
 It helps you gain valuable insights into visitor activity on your forms:
 
-1. **Visits & submissions**: It describes the frequency of visits to your forms in a date range and the corresponding number of form submissions, for more info on this click [Visits](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
-1. **Unique visitors & their total visits**: It distinguishes between the new and returning users. For example, a visitor can come to your site every day for a month, but they still count as a single unique visitor. Visit [Unique visitors](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) for a detailed information.
+* **Visits & submissions**: It describes the frequency of visits to your forms in a date range and the corresponding number of form submissions, for more info on this click [Visits](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
+* **Unique visitors & their total visits**: It distinguishes between the new and returning users. For example, a visitor can come to your site every day for a month, but they still count as a single unique visitor. Visit [Unique visitors](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) for a detailed information.
 
     ![Forms Visitors](assets/forms-visitors.png)
 
 ### **Device type** {#device-type}
 
-Device type helps you to identify the type of device used to access your forms. It categorizes the device type as Mobile Device Type. For example, In this case, it is Mobile Device Type: Other, and Mobile Device Type: Mobile Phone. The various types of mobile devices include "Mobile phone", "Tablet", "Media player", and "Gaming console" and more.
+Device type helps you to identify the type of device used to access your forms. It categorizes the device type as Mobile Device Type. For example, In this case, it is Mobile Device Type: Other, and Mobile Device Type: Mobile Phone. The various types of mobile devices include Mobile phone, Tablet, Media player, Gaming console and more.
 
 ![Device Type](assets/device-type.png)
 
