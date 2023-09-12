@@ -15,11 +15,21 @@ Summarized below are the continuous improvements for maintenance release 13420, 
 
 ### Enhancements {#enhancements-13420}
 
-None.
+ASSETS-19544 - Assets last modified by property is now set to the user requesting processing 
 
 ### Fixed Issues {#fixed-issues-13420}
 
-None.
+ASSETS-27628 - Erroneous “channels” node getting created when customizing Assets search panel 
+ASSETS-27539 - Upload restrictions regular expression matching 
+ASSETS-26530 - Unified Shell does not bring users back to original page 
+ASSETS-22719 - Brackets in Smart Crop Breakpoint Naming break the Smart Crop editing feature
+ASSETS-27726 - linkshare.html should not be indexed by Google
+ASSETS-27791 - Metadata schema validation occurs for only the first field 
+CQ-4354266 - Unable to open inbox items
+CQ-4354347 - Updated AEM Translations 
+DISP-1009 - User-Agent as non first header trims X-Forwarded-Host
+Various accessibility and security related fixes 
+
 
 ### Known Issues {#known-issues-13420}
 
