@@ -111,5 +111,4 @@ Perform the below listed steps to enable and configure Adobe Analytics for your 
 
 1. Click **Adobe Analytics** to view your report and analyze performance data.
 
-
-To connect an Adaptive Form with Adobe Analytics using an older method, visit [Integrate AEM Forms with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md).
+To connect an Adaptive Form with Adobe Analytics using the manual method, visit [Integrate AEM Forms with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md).
