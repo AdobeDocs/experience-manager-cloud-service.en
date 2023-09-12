@@ -36,7 +36,7 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
    >The following notes apply to ingesting content:
    > If the source was Author, it is recommended to ingest it into the Author tier on the target. Similarly, if source was Publish, target should be Publish as well.
    > If the target tier is `Author`, the author instance is shut down during the length of the ingestion and becomes unavailable to users (for example, authors or anyone performing maintenance). The reason is to protect the system, and prevent any changes which could either be lost or cause an ingestion conflict. Ensure that your team is aware of this fact. Also note that the environment appears hibernated during the author ingestion.
-   > You can run the optional pre-copy step to significantly speed up the ingestion phase. See [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details.
+   > You can run the optional pre-copy step to significantly speed up the ingestion. See [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details.
    > If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. Doing so speeds up the Publish ingestion when it is run later.
    > Ingestions do not support a Rapid Development Environment (RDE) destination and do not appear as a possible destination choice, even if the user has access to it.
 
@@ -44,17 +44,17 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
    > You can initiate an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you are unable to start an ingestion, see [Unable to Start Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) for more details.
 
    * Choose the `Wipe` value
-     * The **wipe** option sets the destination's starting point of the ingestion. If enabled, the current content on the destination is replaced with the current version of AEM that is specified in Cloud Manager. If not enabled, the destination maintains its current content as the starting point.
-     * Note that this option does **NOT** affect how the ingestion will be performed. In both wipe and non-wipe cases, the migration set will destructively overwrite the destination's content. For instance, if the migration set contains `/content/page1` and the destination already contains `/content/page1/product1`, the ingestion will remove the entire `page1` path and its subpages, including `product1`, and replace it with the content in the migration set. This means careful planning must be done when performing a non-wipe ingestion to a destination that contains any content that should be maintained. 
+     * The **Wipe** option sets the destination's starting point of the ingestion. If **Wipe** is enabled, the destination including all its content, is reset to the version of AEM that is specified in Cloud Manager. If not enabled, the destination maintains its current content as the starting point.
+     * Note that this option does **NOT** affect how the ingestion of content will be performed. Ingestion always uses a content replacement strategy and not a content merge strategy so, in both **Wipe** and **Non-Wipe** cases, the migration set will destructively overwrite the destination's content. For instance, if the migration set contains `/content/page1` and the destination already contains `/content/page1/product1`, the ingestion will remove the entire `page1` path and its subpages, including `product1`, and replace it with the content in the migration set. This means careful planning must be done when performing a **Non-Wipe** ingestion to a destination that contains any content that should be maintained. 
 
    >[!IMPORTANT]
-   > If the setting **Wipe** is enabled for the ingestion, it deletes the entire existing repository and creates a repository into which you can ingest content. This workflow means that it resets all settings including permissions on the target Cloud Service instance. This resetting is true also for an admin user added to the **administrators** group and that user must be added to the administrators group again to start an ingestion.
+   > If the setting **Wipe** is enabled for the ingestion, it resets the entire existing repository including the user permissions on the target Cloud Service instance. This resetting is true also for an admin user added to the **administrators** group and that user must be added to the administrators group again to start an ingestion.
 
 1. Click **Ingest**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. You can then monitor the Ingestion phase from the Ingestion Jobs list view and use the ingestion's action menu to view the durations and log as the ingestion progresses.
+1. You can then monitor the ingestion from the Ingestion Jobs list view and use the ingestion's action menu to view the durations and log as the ingestion progresses.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
@@ -70,14 +70,14 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
 >abstract="Use the top-up feature to move modified content since the previous content transfer activity. Upon completion of Ingestion, check the logs for any error/warnings. Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe Customer Care."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Viewing Logs"
 
-The Content Transfer Tool has a feature that supports differential content *top-up* extractions where it is possible to transfer only changes made since the previous content transfer activity.
+The Content Transfer Tool has a feature that allows the extraction of differential content by performing a *top-up* of the migration set. This allows the migration set to be modified to quickly include the content that changed since the previous extraction without having to extract all the content again.
 
 >[!NOTE]
->After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service. If you have used the pre-copy step for the first full ingestion, you can skip pre-copy for subsequent top-up ingestions (if the top-up migration set size is less than 200 GB). The reason is that it may add time to the entire process.
+>After the initial content transfer, it is recommended to do frequent differential content top-ups to shorten the content freeze period for the final differential content transfer before going live on Cloud Service. If you have used the pre-copy step for the first ingestion, you can skip pre-copy for subsequent top-up ingestions (if the top-up migration set size is less than 200 GB). The reason is that it may add time to the entire process.
 
-To ingest delta content after previous ingestions are complete, you must run a [Top-Up Extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process), and then use the ingestion method with the `Wipe` option **disabled**. Be sure to read the `Wipe` explanation above to avoid losing content already on the destination. 
+To ingest differential content after some ingestions are complete, you must run a [Top-Up Extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process), and then use the ingestion method with the **Wipe** option **disabled**. Be sure to read the **Wipe** explanation above to avoid losing content already on the destination. 
 
-Begin by creating an Ingestion Job and ensure that **Wipe** is disabled during the Ingestion phase, as shown below:
+Begin by creating an Ingestion Job and ensure that **Wipe** is disabled during the ingestion, as shown below:
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
@@ -147,11 +147,11 @@ This conflict must be resolved manually. Someone familiar with the content must 
 Another common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a version conflict for a particular node on the target instance. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
-This can happen if a node on the target is modified between an ingestion and a subsequent top-up ingestion such that a new version has been created. If the ingestion has "include versions" enabled, a conflict may occur since the target now has a more recent version that is being referenced by version history and other content. The ingestion process will be unable to delete the offending version node due to it being referenced.
+This can happen if a node on the target is modified between an ingestion and a subsequent **Non-Wipe** ingestion such that a new version has been created. If the migration set was extracted with "include versions" enabled, a conflict may occur since the target now has a more recent version that is being referenced by version history and other content. The ingestion process will be unable to delete the offending version node due to it being referenced.
 
 The solution may require that the top-up extraction is done again without the offending node. Or, creating a small migration set of the offending node, but with "include versions" disabled. 
 
-Best practices indicate that if an ingestion must be run with wipe=false and "include versions"=true it is crucial that content on the target is modified as little as possible, until the migration journey is complete. Otherwise, these conflicts can occur.
+Best practices indicate that if an **Non-Wipe** ingestion must be run using a migration set that includes versions (i.e. extracted with "include versions"=true), it is crucial that content on the target is modified as little as possible, until the migration journey is complete. Otherwise, these conflicts can occur.
 
 
 ## What's Next {#whats-next}
@@ -159,4 +159,3 @@ Best practices indicate that if an ingestion must be run with wipe=false and "in
 When the ingestion has succeeded, AEM indexing will start automatically. See [Indexing after Migrating Content](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) for more information.
 
 Once you have completed Ingesting Content into Cloud Service, you can view logs of each step (extraction and ingestion) and look for errors. See [Viewing Logs for a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) to learn more.
-
