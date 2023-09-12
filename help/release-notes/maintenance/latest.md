@@ -7,25 +7,25 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#release-X}
+## Release 13420 {#release-13420}
 
-Summarized below are the continuous improvements for maintenance release 13239, which was publicly released on September X, 2023. This maintenance release replaces release 13229.
+Summarized below are the continuous improvements for maintenance release 13420, which was publicly released on September 11, 2023. This maintenance release replaces release 13323.
 
 2023.9.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-X}
+### Enhancements {#enhancements-13420}
 
 None.
 
-### Fixed Issues {#fixed-issues-X}
+### Fixed Issues {#fixed-issues-13420}
 
 None.
 
-### Known Issues {#known-issues-X}
+### Known Issues {#known-issues-13420}
 
 None.
 
-### Embedded Technologies {#embedded-tech-X}
+### Embedded Technologies {#embedded-tech-13420}
 
 |Technology|Version|Link|
 |---|---|---|
