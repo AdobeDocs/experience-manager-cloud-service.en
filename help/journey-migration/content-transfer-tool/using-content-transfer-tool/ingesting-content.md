@@ -136,22 +136,22 @@ A common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-Each node in AEM must have a unique uuid. This error indicates that a node that is being ingested has the same uuid as one that exists elsewhere at a different path on the target instance.
+Each node in AEM must have a unique uuid. This error indicates that a node that is being ingested has the same uuid as one that exists elsewhere at a different path on the destination instance.
 This situation can happen if a node is moved on the source between an extraction and a subsequent [Top-Up Extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-It can also happen if a node on the target is moved between an ingestion and a subsequent top-up ingestion.
+It can also happen if a node on the destination is moved between an ingestion and a subsequent top-up ingestion.
 
 This conflict must be resolved manually. Someone familiar with the content must decide which of the two nodes must be deleted, keeping in mind other content that references it. The solution may require that the top-up extraction is done again without the offending node. 
 
 ### Top-up Ingestion Failure Due to Unable to Delete Referenced Node
 
-Another common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a version conflict for a particular node on the target instance. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
+Another common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a version conflict for a particular node on the destination instance. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
-This can happen if a node on the target is modified between an ingestion and a subsequent **Non-Wipe** ingestion such that a new version has been created. If the migration set was extracted with "include versions" enabled, a conflict may occur since the target now has a more recent version that is being referenced by version history and other content. The ingestion process will be unable to delete the offending version node due to it being referenced.
+This can happen if a node on the destination is modified between an ingestion and a subsequent **Non-Wipe** ingestion such that a new version has been created. If the migration set was extracted with "include versions" enabled, a conflict may occur since the destination now has a more recent version that is being referenced by version history and other content. The ingestion process will be unable to delete the offending version node due to it being referenced.
 
 The solution may require that the top-up extraction is done again without the offending node. Or, creating a small migration set of the offending node, but with "include versions" disabled. 
 
-Best practices indicate that if an **Non-Wipe** ingestion must be run using a migration set that includes versions (i.e. extracted with "include versions"=true), it is crucial that content on the target is modified as little as possible, until the migration journey is complete. Otherwise, these conflicts can occur.
+Best practices indicate that if an **Non-Wipe** ingestion must be run using a migration set that includes versions (i.e. extracted with "include versions"=true), it is crucial that content on the destination is modified as little as possible, until the migration journey is complete. Otherwise, these conflicts can occur.
 
 
 ## What's Next {#whats-next}
