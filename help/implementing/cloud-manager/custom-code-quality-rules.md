@@ -972,6 +972,7 @@ Cloud Service. See the document [Content Search and Indexing](/help/operations/i
 ```
 
 ### If custom search index definition contains compatVersion, it must be set to 2 {#oakpal-compatVersion}
+
 * **Key**: IndexCompatVersion
 * **Type**: Code Smell
 * **Severity**: Major
@@ -1115,6 +1116,7 @@ Example:
 ```
 
 Example: 
+
 ```text
 + indexRules
   + dam:Asset
