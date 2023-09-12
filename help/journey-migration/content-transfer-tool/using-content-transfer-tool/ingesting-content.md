@@ -1,19 +1,19 @@
 ---
-title: Ingesting Content into Target
-description: Learn how to use the Content Transfer Tool to ingest content from your migration set into a Cloud Service instance.
+title: Ingesting Content into Cloud Service
+description: Learn how to use the Cloud Acceleration Manager to ingest content from your migration set into a destination Cloud Service instance.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 ---
-# Ingesting Content into Target {#ingesting-content}
+# Ingesting Content into Cloud Service {#ingesting-content}
 
 ## Ingestion Process in Content Transfer Tool {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="Content Ingestion"
->abstract="Ingestion refers to ingesting content from the migration set into the target Cloud Service instance. The Content Transfer Tool has a feature that supports differential content top-up where it is possible to transfer only changes made since the previous content transfer activity."
+>abstract="Ingestion refers to ingesting content from the migration set into the destination Cloud Service instance. The Content Transfer Tool has a feature that supports differential content top-up where it is possible to transfer only changes made since the previous content transfer activity."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html" text="Top Up Ingestion"
 
-Follow the steps below to ingest your migration set from the Content Transfer Tool:
+Follow the steps below to ingest your migration set using the Cloud Acceleration Manager:
 
    >[!NOTE]
    >Did you remember to log a support ticket for this ingestion? See [Important Considerations Before Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) for that and other considerations to help make the ingestion successful.
@@ -74,7 +74,7 @@ Follow the steps below to ingest your migration set from the Content Transfer To
    Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
-   
+
    Also, see [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
@@ -175,4 +175,7 @@ Best practices indicate that if an ingestion must be run with wipe=false and "in
 
 ## What's Next {#whats-next}
 
-Once you have completed Ingesting Content into Target, you can view logs of each step (extraction and ingestion) and look for errors. See [Viewing Logs for a Migration Set](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html) to learn more.
+When the ingestion has succeeded, AEM indexing will start automatically. See [Indexing after Migrating Content](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) for more information.
+
+Once you have completed Ingesting Content into Cloud Service, you can view logs of each step (extraction and ingestion) and look for errors. See [Viewing Logs for a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) to learn more.
+
