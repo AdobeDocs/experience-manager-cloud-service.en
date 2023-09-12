@@ -985,7 +985,7 @@ Cloud Service. See the document [Content Search and Indexing](/help/operations/i
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
 
-For custom indexes, both `includedPaths` and `queryPaths` should be configured with identical values. If one is specified, the other must match it. However, an exception exists for custom indexes of type `damAssetLucene`, where only `includedPaths` should be provided.
+For custom indexes, both `includedPaths` and `queryPaths` should be configured with identical values. If one is specified, the other must match it. However, there’s a special case for indexes of `damAssetLucene`, including its custom versions. For these, you should only provide `includedPaths`.
 
 ### Index node specifying nodeScopeIndex on generic node type should also specify includedPaths and queryPaths {#oakpal-full-text-on-generic-node-type}
 
