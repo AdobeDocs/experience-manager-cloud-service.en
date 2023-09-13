@@ -145,7 +145,7 @@ AEM search allows you to craft complex search queries with less effort.
 
 Adobe Experience Manager allows you to add multiple criteria to your search. You can use a combination of keywords, operator(s), and filter(s) to make narrow down your search results. 
  
-To perform a search for scenario 6: 
+To perform a search for scenario 5: 
 
 1. Type the 'classic car' keyword in the search bar. 
 2. Navigate to the filters panel and select Documents under File Type. 
@@ -155,7 +155,7 @@ To perform a search for scenario 6:
 
 **Scenario 6: Search for all documents in the Experience Manager repository that include Car but exclude Classic in their metadata and their content.**
 
-To perform a search for scenario 7: 
+To perform a search for scenario 6: 
 
 Type the 'car-classic' keyword in the search bar. The priority order of search is based on the following: 
 Priority 1: Metadata
