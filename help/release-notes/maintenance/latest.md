@@ -15,21 +15,24 @@ Summarized below are the continuous improvements for maintenance release 13420, 
 
 ### Enhancements {#enhancements-13420}
 
-ASSETS-19544: Assets last modified by property is now set to the user requesting processing.
+- ASSETS-19544: Assets last modified by property is now set to the user requesting processing.
 
 ### Fixed Issues {#fixed-issues-13420}
 
-ASSETS-27628: Erroneous “channels” node getting created when customizing Assets search panel 
-ASSETS-27539: Upload restrictions regular expression matching.
-ASSETS-26530: Unified Shell does not bring users back to original page.
-ASSETS-22719: Brackets in Smart Crop Breakpoint Naming break the Smart Crop editing feature.
-ASSETS-27726: linkshare.html should not be indexed by Google.
-ASSETS-27791: Metadata schema validation occurs for only the first field.
-CQ-4354266: Unable to open inbox items.
-CQ-4354347: Updated AEM Translations.
-DISP-1009: User-Agent as non first header trims X-Forwarded-Host.
-Various accessibility and security related fixes.
-
+- ASSETS-27628: Erroneous “channels” node getting created when customizing Assets search panel 
+- ASSETS-27539: Upload restrictions regular expression matching.
+- ASSETS-26530: Unified Shell does not bring users back to original page.
+- ASSETS-22719: Brackets in Smart Crop Breakpoint Naming break the Smart Crop editing feature.
+- ASSETS-27726: linkshare.html should not be indexed by Google.
+- ASSETS-27791: Metadata schema validation occurs for only the first field.
+- ASSETS-25544: Fixed disabled CDN cache invalidation button.
+- ASSETS-26575: Fixed name truncation when creating image sets.
+- ASSETS-26705: Fixed unnecessary processing on non-DM folder assets and content fragments.
+- ASSETS-25740: Fixed screen readers not narrating Name and role for Edit/Crop controls on 'Edit Smart Crops' page using down arrow keys.
+- CQ-4354266: Unable to open inbox items.
+- CQ-4354347: Updated AEM Translations.
+- DISP-1009: User-Agent as non first header trims X-Forwarded-Host.
+- Various accessibility and security related fixes.
 
 ### Known Issues {#known-issues-13420}
 
