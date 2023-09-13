@@ -137,7 +137,9 @@ To search for the above requirement, type classic car in the search bar. Then go
 
 [Watch a video to perform search in AEM Assets using various filters] ()
 
-## Operators + Filters {#operators-filters}
+## Advanced search {#advanced-search}
+
+AEM search allows you to craft complex search queries with less effort.
 
 **Scenario 5: Search for all documents in the Experience Manager repository with Classic Car in their metadata and their content.**
 
@@ -158,12 +160,6 @@ To perform a search for scenario 7:
 Type the 'car-classic' keyword in the search bar. The priority order of search is based on the following: 
 Priority 1: Metadata
 Priority 2: Smart Tags
-
-[Watch a video to perform search in AEM Assets using operators and filters] ()
-
-## Advanced search {#advanced-search}
-
-AEM search allows you to craft complex search queries with less effort.
 
 **Scenario 7: Search for all images except PNG**
 
