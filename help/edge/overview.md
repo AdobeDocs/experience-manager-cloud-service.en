@@ -5,7 +5,7 @@ description: Introduction to Edge Delivery Services
 
 # Edge Delivery Services Introduction {#introduction-edge}
 
-With Edge Delivery, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering fast performant experiences that are fast to author and develop. As such, with the help of Edge Delivery Services you can improve conversion, reduce costs and increase velocity. Keep in mind that Edge Delivery Services is a composable set of services that are used **in addition** to the usual [AEM authoring methods](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/essentials/author.html) and do not replace the authoring workflows used by customers up to this point.
+With Edge Delivery, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering fast performant experiences that are fast to author and develop. As such, with the help of Edge Delivery Services you can improve conversion, reduce costs and increase velocity. Keep in mind that Edge Delivery Services is a composable set of services that are used **in addition** to the usual [AEM authoring methods](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/essentials/author.html) and do not replace the authoring workflows commonly used by customers up to this point.
 
 By leveraging Edge Delivery you can:
 
@@ -15,7 +15,7 @@ By leveraging Edge Delivery you can:
 
 ## How to use Edge Delivery {#edge-use}
 
-To understand how to build, publish and launch a website by using Edge delivery see:
+To understand how to build, publish and launch a website by using Edge Delivery see:
 
 * Build (link TBD)
 * Publish (link TBD)
@@ -29,4 +29,6 @@ You can also use Edge Delivery Services in combination with Adobe Target, Analyt
 
 ## Useful Resources {#useful-resources}
 
-For additional details about Edge Delivery services, including how to build, publish and launch your website see the [Edge Delivery Services documentation](https://www.hlx.live/docs/). **SR** - link will probably change after rebranding.
+For additional details about Edge Delivery services, see the [Edge Delivery Services documentation](https://www.hlx.live/docs/). **SR** - link will probably change after rebranding.
+
+Also, You can get in touch with the Edge Delivery team on the following Slack channel (link TBD).
