@@ -192,9 +192,11 @@ Select the asset > navigate to ellipsis at the top right > select [!UICONTROL Fi
 
 ## Custom search facets {#custom-search-facets}
 
-Adobe Experience Manager
+Search facets in Adobe Experience Manager lets you search for assets in multiple ways rather than in a single, pre-determined, or taxonomic order. You can customize search facets and add predicates as per your requirement. Read [Search Facets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) for the step by step guide about adding a custom predicate.
 
 **Scenario 10: Search assets based on Sku ID**
+
+
 
 **Scenario 11: Search specific assets based on their modified or expiry date**
 
