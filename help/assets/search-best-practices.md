@@ -91,7 +91,7 @@ Asterisk is a wildcard operator that is used to broaden your search by typing fe
 
 The question mark symbol can be used as a conditional operator to ease your search in Experience Manager. 
 
-* `car?` query matches the word with one character after car. For example,cart.
+* `car?` query matches the word with one character after car. For example, cart.
 * `?car` query matches the word with one character before car. For example, scar.
 * `car????` query matches the word with four characters after car. For example, careful.
 
@@ -129,9 +129,9 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 ![Filter example 1](assets/filter-1.png)
 -->
 
-**Scenario 4: Searching for PDF file type with keyword 'classic car' in it. The added asset is created or modified within a particular date range.**
+**Scenario 4: Searching for PDF file type with keyword 'classic car' in it. We are looking for unpublished assets.**
 
-To search for the above requirement, type classic car in the search bar. Then go to filters > File type > Documents > Word Processing > PDF to search for PDF files. Moreover, select the date range in created date and modified date filters. Then select status > publish > unpublished.
+To search for the above requirement, type classic car in the search bar. Then go to filters > File type > Documents > Word Processing > PDF to search for PDF files. Then select status > publish > unpublished.
 
 ![Filter example 2](assets/filter-2.png)
 
@@ -200,7 +200,7 @@ Adobe Experience Manager
 
 **Scenario 10: Search assets based on Sku ID**
 **Scenario 11: Search specific assets based on their modified or expiry date**
-Date constraints allows you narrow down your custom search to a particular period of time, for example, using the time period search filters.
+Date constraints allows you narrow down your custom search to a particular period of time, for example, using the time period search filters. To search for the above requirement, type classic car in the search bar. Select the date range in created date and modified date filters.
 
 ## Boosting relevance of keywords {#boosting-keywords}
 
