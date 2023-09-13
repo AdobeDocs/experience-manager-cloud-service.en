@@ -24,7 +24,7 @@ For AEM Forms Analytics report, first you integrate Adobe Analytics to AEM Forms
 1. On your AEM instance, Go to **[!UICONTROL Forms]** >> **[!UICONTROL Forms and Document]**.
 1. Select your form, you see that Adobe Analytics is integrated as shown on the left, to the Forms activated for Adobe Analytics.
 
-    ![View Report](assets/activ-aa.png)
+    ![View Report](assets/activ-aa.png){width="100%"}
 
 1. Click **Adobe Analytics** to view your report and analyze performance data.
 
@@ -44,7 +44,7 @@ It has the metrics Form renditions, Form submissions, Validation errors, and Uni
 
 * **Unique visitors**: Unique visitors represent the number of times the form is rendered by a visitor. For more information on unique visitors, see [Unique Visitors, Visits, and Customer behavior](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
 
-    ![Forms Performance](assets/forms-performance.png)
+    ![Forms Performance](assets/forms-performance.png){width="100%"}
 
 ### **Visitors to your forms** {#visitors-to-your-forms}
 
@@ -53,46 +53,46 @@ It helps you gain valuable insights into visitor activity on your forms:
 * **Visits & submissions**: It describes the frequency of visits to your forms in a date range and the corresponding number of form submissions, for more info on this click [Visits](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
 * **Unique visitors & their total visits**: It distinguishes between the new and returning users. For example, a visitor can come to your site every day for a month, but they still count as a single unique visitor. Visit [Unique visitors](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) for a detailed information.
 
-    ![Forms Visitors](assets/forms-visitors.png)
+    ![Forms Visitors](assets/forms-visitors.png){width="100%"}
 
 ### **Device type** {#device-type}
 
 Device type helps you to identify the type of device used to access your forms. It categorizes the device type as Mobile Device Type. For example, In this case, it is Mobile Device Type: Other, and Mobile Device Type: Mobile Phone. The various types of mobile devices include Mobile phone, Tablet, Media player, Gaming console and more.
 
-![Device Type](assets/device-type.png)
+![Device Type](assets/device-type.png){width="100%"}
 
 ### **Geographical breakdown** {#geographical-breakdown}
 
 It shows the location from where the Forms are accessed. It provides region-specific information about form users, for example, you can see that a region-specific information about a form user is India as shown in the image.
 
-![geographical-breakdown](assets/geographical-breakdown.png)
+![Geographical breakdown](assets/geographical-breakdown.png){width="100%"}
 
 ### **Top sources of traffic and popular forms** {#top-sources-of-traffic-and-popular-forms}
 
 This helps you to identify the primary source or the link from where your forms are referred. For example, In the given image below you see search instances for your adaptive forms where 18.9% are **Typed/Bookmarked**, 70.49% based on **Search Engines**, and 24% are from **Other Web Sites**. You can define dimension items based on your requirements. Also, you can sort out which are the most visited or popular forms.
 
-![Referred Sites](assets/referred-sites.png)
+![Referred sites](assets/referred-sites.png){width="100%"}
 
 ### **User activity on top forms** {#user-activity-on-top-forms}
 
 A comprehensive view of user engagement with field visits, form renditions, validation errors, abandoned forms, and form submissions provide insights about the forms which are most active. In the image given below, you see that the Application Form is the most active based on the Form Event metrics.
 
-![user-activity](assets/user-activity.png)
+![User activity](assets/user-activity.png){width="100%"}
 
 ### **Timeline for time spent on forms** {#timeline-for-time-spent-on-forms}
 
 It is the time users spend on your forms over time, which help you to identify engagement patterns.
 
-![time-spent-on-forms](assets/time-spent-on-forms.png)
+![Time spent on forms](assets/time-spent-on-forms.png){width="100%"}
 
 ### **Areas where visitors require assistance with filling out the form** {#areas-requiring-assistance}
 
 Metrics such as help views, validation errors, and field visits reveal where users need assistance or how we can track errors in fields. For example, In the image below you see that in a form with fields such as **Full Name**, **Phone Number**, **DoB**. The **Full Name** field have 12 visits, out of 12 visits 8 visits have validation error and 1 clicked help icon for help view on this field. You can see the metrics data for other form fields.
 
-![assisting-areas](assets/assisting-areas.png)
+![Assisting areas](assets/assisting-areas.png){width="100%"}
 
 ### **The last form field that visitors viewed before they abandoned the form** {#last-form-field-that-visitors-viewed}
 
 It helps you to analyze the form fields where the users have spent time before abandoning the form. For example, In the image given below, out of 5 abandoned forms, 2 left on the field **Full Name**, 2 left on the field **Phone Number**, and 1 left on the Field **Text Input**.
 
-![field-visitors](assets/field-visitors.png)
+![Field visitors](assets/field-visitors.png){width="100%"}
