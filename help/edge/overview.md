@@ -13,13 +13,15 @@ By leveraging Edge Delivery you can:
 * Edit content in Microsoft Word, Google Docs, Microsoft Excel, and Google Sheets as well as any custom authoring environment and AEMs Universal Editor. The content can then be incorporated and rendered on the fly without the need for a lenghty rebuild process.
 * Additionally, Edge Delivery also features a built-in experimentation framework that allows quick test creation, execution without performance impact and fast release to production of a test winner.
 
-To understand how to build, publish and launch a website using Edge delivery see:
+## How to use Edge Delivery {#edge-use}
+
+To understand how to build, publish and launch a website by using Edge delivery see:
 
 * Launch (link TBD)
 * Publish (link TBD)
 * Build (link TBD)
 
-## Edge Delivery Services and other Adobe Experience Cloud products
+## Edge Delivery Services and other Adobe Experience Cloud products {#edge-other-products}
 
 Edge Delivery Services are a part of Adobe Experience Manager and as such Edge Delivery and AEM sites can co-exist on the same domain. This is usually a common use case for larger websites. On top of that, content from Edge Delivery can easily be consumed in your AEM Sites pages and vice-versa.
 
@@ -27,5 +29,4 @@ You can also use Edge Delivery Services in combinations with Adobe Target, Analy
 
 ## Useful Resources {#useful-resources}
 
-For additional details about Edge Delivery services, including how to build, publish and launch your website see the [Edge Delivery Services documentation](https://www.hlx.live/docs/). SR - link will probably change after rebranding.
-
+For additional details about Edge Delivery services, including how to build, publish and launch your website see the [Edge Delivery Services documentation](https://www.hlx.live/docs/). **SR** - link will probably change after rebranding.
