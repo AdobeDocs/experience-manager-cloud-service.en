@@ -71,7 +71,7 @@ AND operator is the default operator between two keywords in Omni Search. For ex
 
 When you want to be specific with the search results and want an option in the search results, you can use the OR operator. For example, the "classic or car" keyword provides search results with the either of keywords in their metadata.
 
-### Not operator {#not-operator}
+### NOT operator {#not-operator}
 
 When you want to retrieve results excluding some keywords, you can use the not operator. The not operator uses hyphen (-) symbol to tell AEM search what to exclude from the search results. For example, the "car - classic" keyword provides search results of cars excluding classic.
 
@@ -79,7 +79,7 @@ When you want to retrieve results excluding some keywords, you can use the not o
 
 ## Wildcard characters {#wildcard-characters}
 
-### Asterisk (*) operator {#asterisk-operator}
+### Asterisk (*) {#asterisk}
 
 Asterisk is a wildcard operator that is used to broaden your search by typing fewer characters. When you know the starting characters of the asset that you are searching for but do not know the rest, you can use the asterisk operator in your search. For example, the "*car" query returns all the assets with car available in their metadata. The results could be classic car, sports car, classic and sports car, and so on. Below are a few examples of using the asterisk operator in various ways: 
 
@@ -87,7 +87,7 @@ Asterisk is a wildcard operator that is used to broaden your search by typing fe
 * `car*` returns assets with caring, car, carried, and so on. 
 * `*car` returns assets with out car, sports car, and so on. 
 
-### Question mark (?) operator {#question-mark-operator} 
+### Question mark (?) {#question-mark} 
 
 The question mark symbol can be used as a conditional operator to ease your search in Experience Manager. 
 
@@ -189,7 +189,9 @@ While performing your search on AEM, you can filter your results by showing simi
 1. Hover over the asset > click ellipsis > select [!UICONTROL Find Similar].
 or
 Select the asset > navigate to ellipsis at the top right > select [!UICONTROL Find Similar].
-![Find similar](assets/find-similar.png)
+
+    ![Find similar](assets/find-similar.png)
+
 1. Notice the search bar. The thumbnail of selected asset appears on search bar indicating your search requirement. As a result, it returns the similar looking assets.
 
 ## Custom search facets {#custom-search-facets}
