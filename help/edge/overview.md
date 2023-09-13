@@ -17,9 +17,9 @@ By leveraging Edge Delivery you can:
 
 To understand how to build, publish and launch a website by using Edge delivery see:
 
-* Launch (link TBD)
-* Publish (link TBD)
 * Build (link TBD)
+* Publish (link TBD)
+* Launch (link TBD)
 
 ## Edge Delivery Services and other Adobe Experience Cloud products {#edge-other-products}
 
