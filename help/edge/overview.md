@@ -11,7 +11,7 @@ By leveraging Edge Delivery you can:
 
 * Create fast sites with a perfect Lighthouse Score and continously monitor your site performance through real user monitoring (RUM).
 * Edit content in Microsoft Word, Google Docs, Microsoft Excel, and Google Sheets as well as any custom authoring environment and AEMs Universal Editor. The content can then be incorporated and rendered on the fly without the need for a lenghty rebuild process.
-* Additionally, Edge Delivery also features a built-in experimentation framework that allows quick test creation, execution without performance impact and fast release to production of a test winner.
+* Use a built-in experimentation framework that allows quick test creation, execution without performance impact and fast release to production of a test winner.
 
 ## How to use Edge Delivery {#edge-use}
 
@@ -25,7 +25,7 @@ To understand how to build, publish and launch a website by using Edge delivery 
 
 Edge Delivery Services are a part of Adobe Experience Manager and as such Edge Delivery and AEM sites can co-exist on the same domain. This is usually a common use case for larger websites. On top of that, content from Edge Delivery can easily be consumed in your AEM Sites pages and vice-versa.
 
-You can also use Edge Delivery Services in combinations with Adobe Target, Analytics and Launch.
+You can also use Edge Delivery Services in combination with Adobe Target, Analytics and Launch.
 
 ## Useful Resources {#useful-resources}
 
