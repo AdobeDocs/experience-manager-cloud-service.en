@@ -33,7 +33,7 @@ You can make the search more specific by adding your search keyword in double qu
 
 ![Finding exact match](assets/simple-search-2.png)
 
-* [Watch a video to perform simple search in AEM Assets] ()
+[Watch a video to perform simple search in AEM Assets] ()
 
 ## Files and folders {#files-folders}
 
@@ -47,13 +47,13 @@ Files and folders filter helps you narrow down your search. Use the Files, Filte
 
 ![Search using files and folders](assets/files-folders.png)
 
-To achieve the scenario:
+To achieve this scenario:
 
 1. Specify classic car as the search keyword and click Search. 
 2. Click Filters and define the folder path for the Automobiles folder. For example, `/content/dam/automobile`
 3. Select Files from the drop-down list.
 
-* [Watch a video to perform search in AEM Assets using Files and Folders] ()
+[Watch a video to perform search in AEM Assets using Files and Folders] ()
 
 ## Operators {#operators}
 
@@ -63,13 +63,21 @@ Experience Manager allows you to use a combination of various operators to enhan
 
 ### AND operator {#and-operator}
 
-AND operator is the default operator in Omni Search. For example, when you type "classic car" in the search bar, the results with "classic" and "car" keywords appear in your search results, by default.
+AND operator is the default operator between two keywords in Omni Search. For example, when you type "classic car" in the search bar, the results with "classic" and "car" keywords appear in your search results, by default.
 
 ![Search using AND Operator](assets/and-operator.png)
 
-### OR (^) operator {#or-operator}
+### OR operator {#or-operator}
 
 When you want to be specific with the search results and want an option in the search results, you can use the OR operator. For example, the "classic or car" keyword provides search results with the either of keywords in their metadata.
+
+### Not operator {#not-operator}
+
+When you want to retrieve results excluding some keywords, you can use the not operator. The not operator uses hyphen (-) symbol to tell AEM search what to exclude from the search results. For example, the "car - classic" keyword provides search results of cars excluding classic.
+
+![Search using Hyphen or Exclude operator](assets/hyphen-operator.png)
+
+## Wildcard characters {#wildcard-characters}
 
 ### Asterisk (*) operator {#asterisk-operator}
 
@@ -87,13 +95,7 @@ The question mark symbol can be used as a conditional operator to ease your sear
 * `?car` query matches the word with one character before car. For example, scar.
 * `car????` query matches the word with four characters after car. For example, careful.
 
-### Hyphen (-) or exclude operator {#hyphen-operator}
-
-When you want to retrieve excluding some keywords, you can use the hyphen operator. For example, the "car - classic" keyword provides search results of cars excluding classic.
-
-![Search using Hyphen or Exclude operator](assets/hyphen-operator.png)
-
-* [Watch a video to perform search in AEM Assets using Operators] ()
+[Watch a video to perform search in AEM Assets using Operators] ()
 
 ## Filters {#filters}
 
@@ -120,11 +122,12 @@ You can choose one or multiple among various filters to refine your search in Ad
 * Content fragment model 
  -->
 
-**Scenario 5: Search for an Asset named 'classic car' in Black color which has either meta description or a similar asset in Japanese language.**  
+<!--**Scenario 5: Search for an Asset named 'classic car' in Black color which has either meta description or a similar asset in Japanese language.**  
  
 To perform a search on such a requirement, type 'classic car' in the search bar.  Navigate to the filters panel and expand the language search filter drop-down. Type "ja-jp", which represents the Japanese language. Expand the 'Asset Color' filter and select black color or add the hexadecimal code for the black color (#000000).
 
 ![Filter example 1](assets/filter-1.png)
+-->
 
 **Scenario 4: Searching for PDF file type with keyword 'classic car' in it. The added asset is created or modified within a particular date range.**
 
@@ -132,11 +135,11 @@ To search for the above requirement, type classic car in the search bar. Then go
 
 ![Filter example 2](assets/filter-2.png)
 
-* [Watch a video to perform search in AEM Assets using various filters] ()
+[Watch a video to perform search in AEM Assets using various filters] ()
 
 ## Operators + Filters {#operators-filters}
 
-**Scenario 6: Search for all documents in the Experience Manager repository with Classic Car in their metadata and their content.**
+**Scenario 5: Search for all documents in the Experience Manager repository with Classic Car in their metadata and their content.**
 
 Adobe Experience Manager allows you to add multiple criteria to your search. You can use a combination of keywords, operator(s), and filter(s) to make narrow down your search results. 
  
@@ -148,7 +151,7 @@ To perform a search for scenario 6:
  
 ![Search using both operators and filters](assets/operators-filters.png)
 
-**Scenario 7: Search for all documents in the Experience Manager repository that include Car but exclude Classic in their metadata and their content.**
+**Scenario 6: Search for all documents in the Experience Manager repository that include Car but exclude Classic in their metadata and their content.**
 
 To perform a search for scenario 7: 
 
@@ -156,7 +159,46 @@ Type the 'car-classic' keyword in the search bar. The priority order of search i
 Priority 1: Metadata
 Priority 2: Smart Tags
 
-* [Watch a video to perform search in AEM Assets using operators and filters] ()
+[Watch a video to perform search in AEM Assets using operators and filters] ()
+
+## Advanced search {#advanced-search}
+
+AEM search allows you to craft complex search queries with less effort.
+
+**Scenario 7: Search for all images except PNG**
+
+When you are unsure about the title or meta description of an asset, in that scenario, you can take help from various search filters to make your search more relevant. There are two methods to perform search using this scenario. Follow the steps below:
+
+**Method 1:** Go to search bar and type `images - jeep`. All the image type assets appear but the asset with metadata jeep does not appear.
+
+**Method 2:** Go to search filters. Under [!UICONTROL File Type], expand [!UICONTROL Images] > select [!UICONTROL Web enabled] > deselect PNG.
+
+![Search all images except jeep](assets/images-jeep.png)
+
+**Scenario 8: Looking for tags:jeep**
+
+You can capture a specific criteria using various search filters. Tag is a keyword that is assigned to an asset to make it identifiable among large number of assets. For example, in this scenario, we are searching for assets with *jeep* tags in it. To do this, type `tags:jeep` in the search bar. Only tags that meet this criteria are listed in the search results.
+
+![Search using tags](assets/search-tags.png)
+
+**Scenario 9: Find similar match for red color car**
+
+While performing your search on AEM, you can filter your results by showing similar assets to the selected ones. You can use **Find Similar** option to narrow down your search to the exact or similar match of the searched Asset. To do this, follow the steps below:
+
+1. Search the asset as per your requirement.
+1. Hover over the asset > click ellipsis > select [!UICONTROL Find Similar].
+or
+Select the asset > navigate to ellipsis at the top right > select [!UICONTROL Find Similar].
+![Find similar](assets/find-similar.png)
+1. Notice the search bar. The thumbnail of selected asset appears on search bar indicating your search requirement. As a result, it returns the similar looking assets.
+
+## Custom search facets {#custom-search-facets}
+
+Adobe Experience Manager
+
+**Scenario 10: Search assets based on Sku ID**
+**Scenario 11: Search specific assets based on their modified or expiry date**
+Date constraints allows you narrow down your custom search to a particular period of time, for example, using the time period search filters.
 
 ## Boosting relevance of keywords {#boosting-keywords}
 
@@ -168,7 +210,6 @@ You can improve the relevance of keywords for particular assets to help boost se
 
 ## Notable things while performing search in Experience Manager {#notable-things}
 
-* You can use **Find Similar** option to narrow down your search to the exact or similar match of the searched Asset. 
 * Provide metadata information of the asset to prepare your asset searchable by the Omni Search algorithm. Ensure that the metadata information of the asset is updated.
 * Use double quotes (" ") to make your search exact and to the point. 
 * Cross-check the path that you are looking into. Choose the appropriate option among folder, file, or file and folder to run your search query at the appropriate location. 
