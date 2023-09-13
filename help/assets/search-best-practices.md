@@ -195,7 +195,9 @@ Select the asset > navigate to ellipsis at the top right > select [!UICONTROL Fi
 Adobe Experience Manager
 
 **Scenario 10: Search assets based on Sku ID**
+
 **Scenario 11: Search specific assets based on their modified or expiry date**
+
 Date constraints allows you narrow down your custom search to a particular period of time, for example, using the time period search filters. To search for the above requirement, type classic car in the search bar. Select the date range in created date and modified date filters.
 
 ## Boosting relevance of keywords {#boosting-keywords}
