@@ -221,7 +221,7 @@ The `wafFlag` property may include the following:
 
 * If a rule is matched and blocked, the CDN responds with a `406` return code.
 
-* The configuration files should not contain secrets since they would be readable by anyone who has access to the git repository
+* The configuration files should not contain secrets since they would be readable by anyone who has access to the git repository.
 
 ## Rules Examples {#examples}
 
@@ -361,7 +361,7 @@ Sometimes it is desirable to block traffic matching a rule only if the match exc
 
 **Example 1**
 
-This rule blocks a client for 5m when it exceeds 100 req/sec in the last 60 sec
+This rule blocks a client for 5m when it exceeds 100 req/sec in the last 60 sec:
 
 ```
 kind: "CDN"
@@ -385,7 +385,7 @@ data:
 
 **Example 2**
 
-Block requests for 60s on path /critical/resource when it exceeds 100 req/sec in the last 60 sec
+Block requests for 60s on path /critical/resource when it exceeds 100 req/sec in the last 60 sec:
 
 ```
 kind: "CDN"
@@ -421,7 +421,7 @@ For example:
 The rules behave in the following manner:
 
 * the customer-declared rule name of any matching rules will be listed in the matches attribute.
-* the action attribute details whether the rules had the effect of blocking, allowing, or logging
+* the action attribute details whether the rules had the effect of blocking, allowing, or logging.
 * if the WAF is licensed and enabled, the waf attribute will list any waf rules (e.g., SQLI; note that this is independent from the customer-declared name) that were detected, regardless of whether the waf rules were listed in the configuration.
 * if no customer-declared rules match and no waf rules match, the rules attribute property will be blank.
 
@@ -495,7 +495,7 @@ Below is a list of the field names used in CDN logs, along with a brief descript
 
  | **Field Name**  | **Description**  |
  |---|---|
- | *timestamp*  | The time the request started, after TLS termination  |
+ | *timestamp*  | The time the request started, after TLS termination.  |
  | *ttfb*  | Abbreviation for *Time To First Byte*. The time interval between the request started up to the point before the response body started being streamed. |
  | *cli_ip*  |  The client IP address. |
  | *cli_country* | Two-letter [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) alpha-2 country code for the client country. |
