@@ -17,7 +17,7 @@ By leveraging Edge Delivery you can:
 
 The following diagram illustrates how you can edit content in Microsoft Word (Document-based editing) and publish to Edge Delivery. It also shows the traditional AEM publishing method using the various editors.
 
-![Image](/assets/assets/edge_delivery.png)
+![Image](help/assets/assets/edge_delivery.png)
 
 TR: Add context to this diagram.
 
