@@ -31,22 +31,23 @@ Traffic filter rules can be deployed to all cloud environment types (RDE, dev, s
    ```
 
 1. `cdn.yaml` should contain metadata as well as a list of traffic filters rules and WAF rules.
-   
+
    ```
    kind: "CDN"
    version: "1"
-   envType: "dev"
+   metadata:
+     envTypes: ["dev"]
    data:
      trafficFilters:
        rules:
          ...
    ```
-  
-  The "kind" parameter should be set to "CDN" and the version should be set to the schema version, which is currently "1". See examples further below.  
-      
-      
+
+  The "kind" parameter should be set to "CDN" and the version should be set to the schema version, which is currently "1". See examples further below.
+
+
    <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
-       
+
 1. To configure WAF rules, WAF must be enabled in Cloud Manager, as described below for both the new and existing program scenarios. Note that a separate license must be purchased for WAF.
 
    1. To Configure WAF on a new Program, check the **WAF-DDOS Protection** check-box in the **Security** tab as shown below. Continue by following the steps described in [Add Production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) to create your program
@@ -56,11 +57,11 @@ Traffic filter rules can be deployed to all cloud environment types (RDE, dev, s
 1. For environment types other than RDE, execute the Cloud Manager configuration pipeline, which can be configured as described below.
 
    1. From the pipeline card in your Cloud Manager home page, select **Add Production Pipeline** or **Add Non-Production Pipeline** to launch the add pipeline wizard
-   1. Select **Deployment Pipeline** in the configuration tab 
+   1. Select **Deployment Pipeline** in the configuration tab
 
       ![Select the Deployment Pipeline option](/help/security/assets/deployment.png)
 
-   1. Give your pipeline a name and select deployment triggers, then select **Continue** 
+   1. Give your pipeline a name and select deployment triggers, then select **Continue**
    1. In the **Source Code** tab, select **Targeted deployment**, then select **Config**
 
       ![Select Targeted deployment](/help/security/assets/target-deployment.png)
@@ -68,18 +69,18 @@ Traffic filter rules can be deployed to all cloud environment types (RDE, dev, s
    1. Select the repository and branch as needed. If a Config pipeline exists for the selected environment, this selection is disabled.
 
       ![Overview of a Config Pipeline](/help/security/assets/config-pipeline.png)
-      
+
       >[!NOTE]
       >
       > Users must be logged in as Deployment Manager in order to configure or run these pipelines.
       > Also, you can configure and run only one Config pipeline per environment.
 
-   1. Select **Save**. Your new pipeline will appear in the pipeline card and can be run when you are ready. 
+   1. Select **Save**. Your new pipeline will appear in the pipeline card and can be run when you are ready.
    1. For RDEs, the command line will be used, but RDE is not supported at this time.
 
 ## Traffic Filter Rules Syntax {#rules-syntax}
 
-You can configure `traffic filter rules` to match on patterns such as IPs, user agent, request headers, hostname, geo, and url. 
+You can configure `traffic filter rules` to match on patterns such as IPs, user agent, request headers, hostname, geo, and url.
 
 Customers who license the WAF offering can also configure a special category of traffic filter rules called `WAF traffic filter rules` (or WAF rules for short) that reference one or more WAF flags, which are listed in its own section below.
 
@@ -88,13 +89,14 @@ Here's an example of a set of traffic filter rules, which also includes a WAF ru
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "path-rule"
         when: { reqProperty: path, equals: /block-me }
-        action: 
+        action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
         when: { reqProperty: path, like: "*" }
@@ -103,7 +105,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-The format of the traffic filter rules in the cdn.yaml file is described below. See some examples in a later section. 
+The format of the traffic filter rules in the cdn.yaml file is described below. See some examples in a later section.
 
 
 | **Property**   | **Most traffic filter rules**  | **WAF traffic filter rules**  | **Type**  | **Default value**  | **Description**  |
@@ -219,11 +221,11 @@ The `wafFlag` property may include the following:
 
 * If a rule is matched and blocked, the CDN responds with a `406` return code.
 
-* The configuration files should not contain secrets since they would be readable by anyone who has access to the git repository 
+* The configuration files should not contain secrets since they would be readable by anyone who has access to the git repository
 
 ## Rules Examples {#examples}
 
-Some rule examples follow. See the [rate limit section](#rules-with-rate-limits) further down for examples of rate limiting. 
+Some rule examples follow. See the [rate limit section](#rules-with-rate-limits) further down for examples of rate limiting.
 
 **Example 1**
 
@@ -232,13 +234,14 @@ This rule blocks requests coming from IP 192.168.1.1:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
        - name: "block-request-from-ip"
          when: { reqProperty: clientIp, equals: "192.168.1.1" }
-         action: 
+         action:
            type: block
 ```
 
@@ -249,7 +252,8 @@ This rule blocks requests on path `/helloworld` on publish with a User-Agent tha
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
@@ -259,7 +263,7 @@ data:
             - { reqProperty: path, equals: /helloworld }
             - { reqProperty: tier, equals: publish }
             - { reqHeader: user-agent, matches: '.*Chrome.*'  }
-           action: 
+           action:
              type: block
 ```
 
@@ -270,17 +274,18 @@ This rule blocks requests that contain the query parameter `foo`, but allows eve
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "block-request-that-contains-query-parameter-foo"
         when: { queryParam: url-param, equals: foo }
-        action: 
+        action:
           type: block
       - name: "allow-all-requests-from-ip"
         when: { reqProperty: clientIp, equals: 192.168.1.1 }
-        action: 
+        action:
           type: allow
 ```
 
@@ -291,13 +296,14 @@ This rule blocks requests to path /block-me, and blocks every request that match
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: "path-rule"
         when: { reqProperty: path, equals: /block-me }
-        action: 
+        action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
         when: { reqProperty: path, like: "*" }
@@ -313,7 +319,8 @@ This rule blocks access to OFAC countries:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -352,14 +359,15 @@ Sometimes it is desirable to block traffic matching a rule only if the match exc
 
 ### Examples {#ratelimiting-examples}
 
-**Example 1** 
+**Example 1**
 
 This rule blocks a client for 5m when it exceeds 100 req/sec in the last 60 sec
 
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     - name: limit-requests-client-ip
@@ -375,20 +383,21 @@ data:
       action: block
 ```
 
-**Example 2** 
+**Example 2**
 
 Block requests for 60s on path /critical/resource when it exceeds 100 req/sec in the last 60 sec
 
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
       - name: rate-limit-example
         when: { reqProperty: path, equals: /critical/resource }
-        action: 
+        action:
           type: block
         rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
@@ -414,7 +423,7 @@ The rules behave in the following manner:
 * the customer-declared rule name of any matching rules will be listed in the matches attribute.
 * the action attribute details whether the rules had the effect of blocking, allowing, or logging
 * if the WAF is licensed and enabled, the waf attribute will list any waf rules (e.g., SQLI; note that this is independent from the customer-declared name) that were detected, regardless of whether the waf rules were listed in the configuration.
-* if no customer-declared rules match and no waf rules match, the rules attribute property will be blank.  
+* if no customer-declared rules match and no waf rules match, the rules attribute property will be blank.
 
 In general, matching rules appear in the log entry for all requests to the CDN, regardless of whether it is a CDN hit, pass, or miss. However,  WAF rules appear in the log entry only for requests to the CDN that are considered CDN misses or passes, but not CDN hits.
 
@@ -424,7 +433,8 @@ The example below shows a sample cdn.yaml and two CDN log entries:
 ```
 kind: "CDN"
 version: "1"
-envType: "dev"
+metadata:
+  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
