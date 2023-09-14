@@ -1036,4 +1036,3 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Overview](/help/edge/overview.md)
   + [Authoring](/help/edge/authoring.md)
   + [Publishing](/help/edge/publishing.md)
-  + [Getting Started](/help/edge/gettingstarted.md)
