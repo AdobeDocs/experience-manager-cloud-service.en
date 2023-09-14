@@ -17,7 +17,7 @@ By leveraging Edge Delivery you can:
 
 The following diagram illustrates how you can edit content in Microsoft Word (Document-based editing) and publish to Edge Delivery. It also shows the traditional AEM publishing method using the various editors.
 
-![Image](/assets/assets/edge_delivery.png)
+![Edge Delivery Architecture](assets/edgedelivery1.png)
 
 TR: Add context to this diagram.
 
@@ -46,3 +46,6 @@ TR: We need details on how a customer receives the details of their Discord Chan
 ## Useful Resources {#useful-resources}
 
 For additional details about Edge Delivery services, see the [Edge Delivery Services documentation](https://www.hlx.live/docs/). **SR** - link will probably change after rebranding.
+
+
+[def]: assets/assets/edge_delivery.png
