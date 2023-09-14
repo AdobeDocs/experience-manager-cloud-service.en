@@ -15,7 +15,9 @@ By leveraging Edge Delivery you can:
 
 ## How Edge Delivery works{#edge-works}
 
-![Image](/help/assets/edge_delivery.png)
+The following diagram illustrates how you can edit content in Microsoft Word (Document-based editing) and publish to Edge Delivery. It also shows the traditional AEM publishing method using the various editors.
+
+![Image](/assets/assets/edge_delivery.png)
 
 TR: Add context to this diagram.
 
@@ -36,6 +38,10 @@ You can also use Edge Delivery Services in combination with Adobe Target, Analyt
 ## Getting Help from Adobe {#adobe-gethelp}
 
 You can engage with Adobe product teams via your provisioned product collaboration channel to answer questions on product use or best practices. Please note that there are no SLT’s associated with the conversations via the product collaboration channel. If a product issue needs additional investigation and troubleshooting, and needs to meet response SLT’s, you can submit a support ticket following the [support process](https://experienceleague.adobe.com/?lang=en&support-tab=home#support).
+
+### How to access my Provisioned Product Collaboration Channel
+
+TR: We need details on how a customer receives the details of their Discord Channel and how they can use it.
 
 ## Useful Resources {#useful-resources}
 
