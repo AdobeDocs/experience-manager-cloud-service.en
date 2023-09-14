@@ -204,6 +204,7 @@ Now, you can use this SharePoint Sites configuration for the submit action in an
 ### Use SharePoint Configuration in an Adaptive Form {#use-sharepoint-configuartion-in-af}
 
 You can use the created SharePoint configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint folder. Perform the following steps to use a SharePoint storage configuration in an Adaptive Form as:
+
 1. Create an [Adaptive Form](/help/forms/creating-adaptive-form.md).
 
     >[!NOTE]
