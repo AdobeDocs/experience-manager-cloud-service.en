@@ -353,10 +353,10 @@ Sometimes it is desirable to block traffic matching a rule only if the match exc
 
 | **Property**  | **Type**  | **Default**  | **MEANING**  |
 |---|---|---|---|
-|  limit |  integer from 10 to 10000     |  required |  Request rate in requests per second for which the rule is triggered |
-|  window | integer enum: 1, 10 or 60  | 10  | Sampling window in seconds for which request rate is calculated  |
-|  penalty | integer from 60 to 3600  | 300 (5 minutes) | A period in seconds for which matching requests are blocked (rounded to the nearest minute)  |
-|  groupBy | array[Getter] | none | rate limiter counter will be aggregated by a set of request properties. (eg: clientIp)  |
+|  limit |  integer from 10 to 10000     |  required |  Request rate in requests per second for which the rule is triggered. |
+|  window | integer enum: 1, 10 or 60  | 10  | Sampling window in seconds for which request rate is calculated.  |
+|  penalty | integer from 60 to 3600  | 300 (5 minutes) | A period in seconds for which matching requests are blocked (rounded to the nearest minute).  |
+|  groupBy | array[Getter] | none | rate limiter counter will be aggregated by a set of request properties (for example clientIp).  |
 
 ### Examples {#ratelimiting-examples}
 
