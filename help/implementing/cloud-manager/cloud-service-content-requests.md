@@ -1,5 +1,5 @@
 ---
-title: Cloud Service Content Requests
+title: Variances of Cloud Service Content Requests
 description: Learn about Content Requests that have variances with an organization's Analytics reporting tools.
 
 ---
@@ -20,4 +20,4 @@ Content Requests have variances with an organization's Analytics reporting tools
 |Traffic Blockers|Using a tracker blocker in a browser may opt out some requests from being tracked.|
 |Firewalls|Firewalls may block Analytics tracking. This scenario is more frequent with corporate firewalls.|
 
-See also [Understanding Content Requests](/help/implementing/cloud-manager/content-requests.md) and [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
+See also [Understanding Cloud Service Content Requests](/help/implementing/cloud-manager/content-requests.md) and [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md).

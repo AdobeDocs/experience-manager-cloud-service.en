@@ -1,15 +1,13 @@
 ---
-title: Understanding Content Requests
+title: Understanding Cloud Service Content Requests
 description: If you have purchased content request licenses from Adobe, learn about the types of content requests that Adobe Experience Cloud as a Service measures.
 
 ---
-# Understanding Content Requests {#about-content-request}
+# Understanding Cloud Service Content Requests {#about-content-request}
 
 Content requests are tracked on Adobe Experience Manager (AEM) as a Cloud Service's Edge servers. Origin traffic does not count towards content requests. The CDN built into AEM as a Cloud Service tracks valid HTML and JSON requests.
 
 AEM also has rules in place to exclude well-known bots, including well-known services visiting the site regularly to refresh their search index or service.
-
-See also [Cloud Service Content Request](/help/implementing/cloud-manager/cloud-service-content-requests.md), and [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md). 
 
 ## Types of excluded content requests{#excluded-content-request}
 
@@ -38,5 +36,7 @@ See also [Cloud Service Content Request](/help/implementing/cloud-manager/cloud-
 | Monitoring and Health Check tools | Included | These are set up by the customer to monitor a certain aspect of the site. For example, availability or real-world user performance. Use `/system/probes/health` endpoint and not the actual HTML pages from the site.<br>Examples:<br>&bull; Amazon-Route53-Health-Check-Service<br>&bull; EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>&bull; Investis-Site24x7<br>&bull; Mozilla/5.0+(compatible; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>&bull; ThousandEyes-Dragonfly-x1<br>&bull; OmtrBot/1.0<br>&bull; WebMon/2.0.0|
 | `<link rel="prefetch">` requests | Included | To increase the speed of loading the next page, customers can have the browser load a set of pages before the user clicks the link&mdash;so they are already in the cache. *Mind: This is increasing the traffic significantly*&mdash;depending on how many of these pages are prefetched.|
 | Traffic that blocks Adobe Analytics or Google Analytics reporting | Included | It is more common that visitors of sites have privacy software installed (Ad-blockers, and so on) that impact the accuracy of Google Analytics or Adobe Analytics. AEM as a Cloud Service counts requests on the first entry-point into the Adobe operated infrastructure and not the client-side.|
+
+See also [Variances of Cloud Service Content Requests](/help/implementing/cloud-manager/cloud-service-content-requests.md), and [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
 
 

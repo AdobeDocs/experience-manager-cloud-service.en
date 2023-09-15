@@ -55,7 +55,7 @@ One content request is counted for each page view or for every five API calls, m
 
 Content Requests exclude requests or activities initiated by or on behalf of Adobe for the sole purpose of providing products and services. Adobe-identified user agent traffic from bots, crawlers, and spiders related to common search engines and social media services are also excluded.
 
-See also [Understanding Content Requests](/help/implementing/cloud-manager/content-requests.md).
+See also [Understanding Cloud Service Content Requests](/help/implementing/cloud-manager/content-requests.md).
 
 ### How does Adobe Experience Manager measure content requests? {#how-are-content-requests-measured}
 
@@ -63,11 +63,11 @@ Content requests are tracked on AEM as a Cloud Service's edge servers. Origin tr
 
 AEM also has rules in place to exclude well-known bots, including well-known services visiting the site regularly to refresh their search index or service.
 
-See also [Understanding Content Requests](/help/implementing/cloud-manager/content-requests.md).
+See also [Understanding Cloud Service Content Requests](/help/implementing/cloud-manager/content-requests.md).
 
 ### Why does my Analytics report show different results than the AEM Content Requests? {#why-are-reports-different}
 
-Content Requests can have variances with an organization's Analytics reporting tools. For more information, see [Cloud Service Content Requests](/help/implementing/cloud-manager/cloud-service-content-requests.md).
+Content Requests can have variances with an organization's Analytics reporting tools. For more information, see [Variances of Cloud Service Content Requests](/help/implementing/cloud-manager/cloud-service-content-requests.md).
 
 ### What if I would like to learn more about my content request volume? {#current-request-volumes}
 
