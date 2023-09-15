@@ -727,6 +727,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
++ Edge Delivery Services{#edge-delivery}
+  + [Overview](/help/edge/overview.md)
+  + [Authoring](/help/edge/authoring.md)
+  + [Publishing](/help/edge/publishing.md)
 + Headless {#headless}
   + [What is a Headless CMS?](/help/headless/what-is-headless.md)
   + [Introduction to AEM Headless](/help/headless/introduction.md)
@@ -1032,7 +1036,3 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
   + [Attributes and Types](/help/implementing/universal-editor/attributes-types.md)
   + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
-+ Edge Delivery {#edge-delivery}
-  + [Overview](/help/edge/overview.md)
-  + [Authoring](/help/edge/authoring.md)
-  + [Publishing](/help/edge/publishing.md)
