@@ -13,7 +13,7 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 
 ## Types of excluded content requests{#excluded-content-request}
 
-| Request Types | Content Request | Description |
+| Request Type | Content Request | Description |
 | --- | --- | --- |
 | HTTP Code 500+ | Excluded | Errors returned to the visitor when something goes wrong on AEM as a Cloud Service or the customer custom code.|
 | HTTP Code 400-499 | Excluded | Errors returned to the visitor when the content does not exist (404) or there are other content or request-related issues.|
@@ -30,7 +30,7 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 
 ## Types of included content requests{#included-content-requests}
 
-| Request Types | Content Request | Description |
+| Request Type | Content Request | Description |
 | --- | --- | --- |
 | Exclude HTML done by way of fetch or XHR | Included | This is being considered and still being evaluated if this should be included |
 | HTTP Code 100-299 | Included | These are regular requests that deliver all or partial content |
