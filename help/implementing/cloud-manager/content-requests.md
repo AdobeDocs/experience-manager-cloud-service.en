@@ -1,9 +1,9 @@
 ---
-title: Understanding Content Requests
+title: Understanding Cloud Service Content Requests
 description: If you have purchased content request licenses from Adobe, learn about the types of content requests that Adobe Experience Cloud as a Service measures.
 
 ---
-# Understanding Content Requests {#about-content-request}
+# Understanding Cloud Service Content Requests {#about-content-request}
 
 Content requests are tracked on Adobe Experience Manager (AEM) as a Cloud Service's Edge servers. Origin traffic does not count towards content requests. The CDN built into AEM as a Cloud Service tracks valid HTML and JSON requests.
 
