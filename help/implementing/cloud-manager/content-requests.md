@@ -9,7 +9,7 @@ Content requests are tracked on Adobe Experience Manager (AEM) as a Cloud Servic
 
 AEM also has rules in place to exclude well-known bots, including well-known services visiting the site regularly to refresh their search index or service.
 
-See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md). 
+See also [Cloud Service Content Request](/help/implementing/cloud-manager/cloud-service-content-requests.md), and [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md). 
 
 ## Types of excluded content requests{#excluded-content-request}
 
