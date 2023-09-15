@@ -727,7 +727,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
-+ Edge Delivery Services{#edge-delivery}
++ Edge Delivery Services {#edge-delivery}
   + [Overview](/help/edge/overview.md)
   + [Authoring](/help/edge/authoring.md)
   + [Publishing](/help/edge/publishing.md)
