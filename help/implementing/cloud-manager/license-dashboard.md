@@ -67,7 +67,7 @@ See also [Understanding Cloud Service Content Requests](/help/implementing/cloud
 
 ### Why does my Analytics report show different results than the AEM Content Requests? {#why-are-reports-different}
 
-Content Requests can have variances with an organization's Analytics reporting tools. For more information, see [Variances of Cloud Service Content Requests](/help/implementing/cloud-manager/cloud-service-content-requests.md).
+Content Requests can have variances with an organization's Analytics reporting tools. For more information, see [Understanding Cloud Service Content Requests](/help/implementing/cloud-manager/content-requests.md).
 
 ### What if I would like to learn more about my content request volume? {#current-request-volumes}
 
