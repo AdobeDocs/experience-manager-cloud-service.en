@@ -5,7 +5,11 @@ description: Introduction to Edge Delivery Services
 
 # Edge Delivery Services Introduction {#introduction-edge}
 
-With Edge Delivery, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering fast performant experiences that are fast to author and develop. As such, with the help of Edge Delivery Services you can improve conversion, reduce costs and increase velocity. Keep in mind that Edge Delivery Services is a composable set of services that are used **in addition** to the usual [AEM authoring methods](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/essentials/author.html) and do not replace the authoring workflows commonly used by customers up to this point.
+>[!NOTE]
+>
+>This is a draft version of the page, feel free to update/modify as needed.
+
+With Edge Delivery, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering fast performant experiences that are fast to author and develop. It is a composable set of services that helps create sites that are fast, helps authors to publish quickly, and gets new sites launched rapidly (SR - check with PM). As such, with Edge Delivery Services you can improve conversion, reduce costs and increase velocity.  Keep in mind that Edge Delivery Services  are used **in addition** to the usual [AEM authoring methods](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/essentials/author.html) and do not replace the authoring workflows commonly used by customers up to this point.
 
 By leveraging Edge Delivery you can:
 
@@ -19,15 +23,9 @@ The following diagram illustrates how you can edit content in Microsoft Word (Do
 
 ![Edge Delivery Architecture](assets/edgedelivery1.png)
 
-As mentioned previously, Edge Delivery is a composable set of services used in addition to the usual AEM authoring methods. This allows for a high degree of flexibility when you add or author content for you website. For example, you can use content directly from Microsoft Word and Goggle Docs. This means that documents from those sources become can become pages on your website. Furthermore, headings, lists, images, font elements can all be transferred from the initial source into you website. The new content will added instantly without a rebuild process.
+As mentioned previously, Edge Delivery is a composable set of services used in addition to the usual AEM authoring methods. This allows for a high degree of flexibility when you add or author content for you website. For example, you can use content directly from Microsoft Word and Goggle Docs. This means that documents from those sources can become pages on your website. Furthermore, headings, lists, images, font elements can all be transferred from the initial source into your website. The new content will be added instantly without a rebuild process.
 
-## How to use Edge Delivery {#edge-use}
-
-To understand how to build, publish and launch a website by using Edge Delivery see:
-
-* Build (link TBD)
-* Publish (link TBD)
-* Launch (link TBD)
+Edge Delivery Services leverages Github to allow customers to manage and deploy code and updates directly from their Github repo. For further details on how to get started see the [Build](https://www.hlx.live/docs/#build) section of the Edge delivery documentation. To understand how to author and publish content by using Edge Delivery see the [Publish section](https://www.hlx.live/docs/authoring). Finally, to understand how to properly launch your website project see the [Launch section](https://www.hlx.live/docs/#launch).
 
 ## Edge Delivery Services and other Adobe Experience Cloud products {#edge-other-products}
 
