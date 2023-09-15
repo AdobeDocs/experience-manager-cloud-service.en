@@ -9,7 +9,7 @@ With Edge Delivery, AEM delivers exceptional experiences that drive engagement a
 
 By leveraging Edge Delivery you can:
 
-* Create fast sites with a perfect Lighthouse Score and continously monitor your site performance through real user monitoring (RUM).
+* Create fast sites with a perfect Lighthouse Score and continuously monitor your site performance through real user monitoring (RUM).
 * Edit content in Microsoft Word, Google Docs, Microsoft Excel, and Google Sheets as well as any custom authoring environment and AEMs Universal Editor. The content can then be incorporated and rendered on the fly without the need for a lenghty rebuild process.
 * Use a built-in experimentation framework that allows quick test creation, execution without performance impact and fast release to production of a test winner.
 
@@ -19,7 +19,7 @@ The following diagram illustrates how you can edit content in Microsoft Word (Do
 
 ![Edge Delivery Architecture](assets/edgedelivery1.png)
 
-TR: Add context to this diagram.
+As mentioned previously, Edge Delivery is a composable set of services used in addition to the usual AEM authoring methods. This allows for a high degree of flexibility when you add or author content for you website. For example, you can use content directly from Microsoft Word and Goggle Docs. This means that documents from those sources become can become pages on your website. Furthermore, headings, lists, images, font elements can all be transferred from the initial source into you website. The new content will added instantly without a rebuild process.
 
 ## How to use Edge Delivery {#edge-use}
 
