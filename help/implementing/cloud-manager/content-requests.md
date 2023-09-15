@@ -37,6 +37,6 @@ AEM also has rules in place to exclude well-known bots, including well-known ser
 | `<link rel="prefetch">` requests | Included | To increase the speed of loading the next page, customers can have the browser load a set of pages before the user clicks the link&mdash;so they are already in the cache. *Mind: This is increasing the traffic significantly*&mdash;depending on how many of these pages are prefetched.|
 | Traffic that blocks Adobe Analytics or Google Analytics reporting | Included | It is more common that visitors of sites have privacy software installed (Ad-blockers, and so on) that impact the accuracy of Google Analytics or Adobe Analytics. AEM as a Cloud Service counts requests on the first entry-point into the Adobe operated infrastructure and not the client-side.|
 
-See also [Variances of Cloud Service Content Requests](/help/implementing/cloud-manager/cloud-service-content-requests.md), and [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
+See also [Variances of Cloud Service Content Requests](/help/implementing/cloud-manager/cloud-service-content-requests.md) and [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
 
 
