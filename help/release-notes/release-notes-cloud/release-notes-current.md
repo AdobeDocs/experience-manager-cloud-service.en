@@ -83,13 +83,13 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Pre-release features available in [!DNL Forms] {#pre-release-features-available-in-forms-channel}
+### New features in [!DNL Experience Manager Forms] {#forms-features}
 
 * [**Google reCAPTCHA enterprise support**](/help/forms/captcha-adaptive-forms-core-components.md): Use Google reCAPTCHA Enterprise in an Adaptive Form to provide enhanced protection against fraudulent activity and spam, providing a safer user experience. With advanced risk analysis and seamless integration, genuine users can easily submit forms while bots are effectively blocked.
 
-* **Adobe Analytics with Experience Cloud Setup Automation for Forms**: You can now enable Adobe Analytics with Experience Cloud Setup Automation with a flip of couple of buttons. It enables you to connect AEM Forms as a Cloud Service with Experience Platform tags and Adobe Analytics to capture and track performance metrics for your published forms. 
+* **Adobe Analytics with Experience Cloud Setup Automation for Forms**: You can now enable Adobe Analytics with Experience Cloud Setup Automation with a flip of couple of buttons. It enables you to connect AEM Forms as a Cloud Service with Experience Platform tags and Adobe Analytics to capture and track performance metrics for your published forms.
 
-* **Adobe Analytics report template for Adaptive Forms**: Forms as a Cloud Service now provides an Adobe Analytics report OOTB. It helps you easily understand performance of your forms. The form-level metrics provide you an insight into how the form is performing on multiple key performance indicators (KPIs) like, renditions, visitors, submissions, Average fill time. By tracking user behavior and feedback, you can identify areas of the form that are causing confusion and guide improvements to the form's design and functionality. 
+* **Adobe Analytics report template for Adaptive Forms**: Forms as a Cloud Service now provides an Adobe Analytics report OOTB. It helps you easily understand performance of your forms. The form-level metrics provide you an insight into how the form is performing on multiple key performance indicators (KPIs) like, renditions, visitors, submissions, Average fill time. By tracking user behavior and feedback, you can identify areas of the form that are causing confusion and guide improvements to the form's design and functionality.
 
      ![Adaptive form user engagement adobe analytics report](/help/forms/assets/forms-analytics-report.png)
 
@@ -101,8 +101,6 @@ You can now assign metadata form to a specific folder within your Assets Essenti
      * **Audit Trail for Adobe Sign Documents**:  Use the Audit Trail feature for detailed insights into the lifecycle of your Adobe Sign documents. With the Audit Trail, you can now maintain a comprehensive record of all actions and interactions related to your documents. This includes details such as who viewed, edited, or signed the document, along with timestamps for each event. This enhancement is crucial for maintaining compliance, resolving disputes, and ensuring the integrity of your digital agreements. 
      
      * **New roles for Agreement recipients beyond just the Signer**: Adobe Acrobat Sign have the option to expand the roles for Agreement recipients beyond just the Signer to better match their workflow requirements. When enabled, each recipient in an Agreement have their role individually configurable, with Signer being the default. 
-
-* **[Protect your documents with Document Assurance APIs (Part of Communication APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: The Document Assurance APIs  empowers you to safeguard sensitive information by signing and encrypting the documents. Through encryption, the contents of a document are transformed into an unreadable format, ensuring that only authorized users can gain access. This fortified layer of protection not only shields valuable data from unauthorized eyes but also provides peace of mind. The Signature APIs let your organization protect the security and privacy of Adobe PDF documents that it distributes and receives. This service uses digital signatures and certification to ensure that only intended recipients can alter documents.
 
 * **Page Count Support in Communication APIs**: Now, along with retrieving your document through the Communication APIs, you can also receive the valuable information about the number of pages contained within the document. 
 
