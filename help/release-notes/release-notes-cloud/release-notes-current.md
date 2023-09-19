@@ -123,6 +123,22 @@ You can now assign metadata form to a specific folder within your Assets Essenti
      * use the power of Adobe Experience Manager Forms 
 
      You can send an email to `aem-forms-headless@adobe.com` from your official email ID to join the early adopter program. 
+     
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### New CDN caching behavior for campaign-related URL parameters {#cache-url-params}
+
+For new environments, the CDN will cache the following url parameters by default. Please submit a support ticket if you have a requirement for it not to be cached. Existing environments are unaffected.
+
+### Traffic Filter Rules (including WAF Rules) early adopter program {#waf-early-adopter}
+
+Filter traffic at the CDN based on:
+* request headers and properties (e.g., IP address)
+* traffic patterns known to be associated with malicious traffic
+
+Interested in trying out the feature and sharing feedback? Send an email to **aemcs-waf-adopter@adobe.com** from your official email ID to learn more about the early adopter program. Space is limited.
+
+Learn more about the feature in the article [here](/help/security/cdn-and-waf-rules.md).
 
 ## Maintenance Release Notes {#maintenance}
 
