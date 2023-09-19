@@ -144,9 +144,21 @@ For more information about configuring services in form data model, see [[!DNL E
 
 For more information about configuring services in form data model, see [[!DNL Experience Manager Forms] Data Integration](data-integration.md).
 
-The **[!UICONTROL Set Property]** rule type lets you set the value of a property of the specified object based on a condition action.
+The **[!UICONTROL Set Property]** rule type lets you set the value of a property of the specified object based on a condition action. You can set property to one of the following:
+* visible (Boolean)
+* dorExclusion (Boolean)
+* chartType (String)
+* title (String)
+* enabled (Boolean)
+* mandatory (Boolean)
+* validationsDisabled (Boolean)
+* validateExpMessage (String)
+* value (Number, String, Date)
+* items (List)
+* valid (Boolean)
+* errorMessage (String)
 
-It enables you to define rules to add check boxes dynamically to the Adaptive Form. You can use custom function, a form object, or an object property to define a rule.
+For example, it enables you to define rules to add check boxes dynamically to the Adaptive Form. You can use custom function, a form object, or an object property to define a rule.
 
 ![Set Property](assets/set_property_rule_new.png)
 
@@ -617,7 +629,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a clienPerform the following steps t library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -639,6 +651,10 @@ After you have added your client library in the CRX repository, use it in your A
    [![Using custom functions to create a rule](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
   
 1. Tap **[!UICONTROL Done]**. Your custom function is added.
+
+   >[!NOTE]
+   >
+   > To invoke a form data model from rule editor using custom functions, [see here](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services). 
 
 #### Function declaration supported types {#function-declaration-supported-types}
 
@@ -802,7 +818,9 @@ The following rule shows how you configure the Invoke service action to accompli
 
 ![Example-invoke-services](assets/example-invoke-services.png)
 
-Invoke Form Data Model service using Adaptive Form rule
+>[!NOTE]
+>
+>If the input is of array type, the fields that support arrays are visible under the Output drop-down section.
 
 ### Triggering multiple actions using the When rule {#triggering-multiple-actions-using-the-when-rule}
 

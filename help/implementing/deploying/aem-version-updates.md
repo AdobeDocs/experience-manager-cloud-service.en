@@ -50,24 +50,24 @@ Similarly, if an automated update of a development environment fails, staging an
 
 ## Best Practices {#best-practices}
 
-* * **Stage Environment Usage**
+* **Stage Environment Usage**
   * Use a different environment (not Stage) for long QA/UAT cycles.
   * After sanity testing is complete on Stage, move to verify on Production.
 
-* * **Production Pipeline**
+* **Production Pipeline**
   * Pause before deploying to Production.
   * Canceling the pipeline after a Stage deploy indicates code is "a throwaway" and not a valid candidate for Production, refer [Configuring a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
 
-* * **Non-Production Pipeline**
-* Configure [Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
-* * Accelerate delivery speed/frequency for production pipeline failures.  Identify issues in non-prod pipelines by enabling Product Functional Testing, Custom Functional Testing and Custom UI Testing. 
+* **Non-Production Pipeline**
+  * Configure [Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+  * Accelerate delivery speed/frequency for production pipeline failures.  Identify issues in non-prod pipelines by enabling Product Functional Testing, Custom Functional Testing and Custom UI Testing. 
 
-* * **Content Copy**
+* **Content Copy**
   * Use [Content Copy](/help/implementing/developing/tools/content-copy.md) to move similar content sets to a non-prod environment.
 
-* * **Automated Functional Testing**
-* Include automated testing in your pipeline to test critical functionality. 
-* [Customer Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) and [Custom UI Testing](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) are blocking, if they fail AEM release will not get rolled out. 
+* **Automated Functional Testing**
+  * Include automated testing in your pipeline to test critical functionality. 
+  * [Customer Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) and [Custom UI Testing](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) are blocking, if they fail AEM release will not get rolled out. 
 
 ## Regression {#regression}
 

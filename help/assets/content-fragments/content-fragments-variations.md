@@ -7,6 +7,12 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 
 [Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of AEM's content fragments, as they allow you to create and edit copies of the master content for use on specific channels, and/or scenarios, making headless content delivery even more flexible.
 
+>[!NOTE]
+>
+>Content Fragments are a Sites feature, but are stored as **Assets**. 
+>
+>There are two editors for authoring Content Fragments. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console).
+
 From the **Variations** tab you can:
 
 * [Enter the content](#authoring-your-content) for your fragment,
@@ -385,8 +391,33 @@ They are added as a reference, in your current location in your fragment.
    >[!CAUTION]
    >
    >If, after adding a reference to another fragment, you change format to:
+   >
    >* **Plain Text**: the reference is completely lost from the fragment.
    >* **Markdown**: the reference will remain.
+
+## Inheritance {#inheritance}
+
+Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+
+You can cancel (then re-enable) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
+
+![A Content Fragment showing inheritance relationship](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
+
+For example:
+
+* Cancel Inheritance
+
+  ![Cancel Inheritance button](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
+
+* Re-enable Inheritance (if inheritance is already cancelled)
+
+  ![Re-Enable Inheritance button](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+
+<!--
+* Rollout action is also available in Live Copy source
+
+  ![Rollout button](/help/assets/content-fragments/assets/editing-rollout.png)
+-->
 
 ## Managing Variations {#managing-variations}
 

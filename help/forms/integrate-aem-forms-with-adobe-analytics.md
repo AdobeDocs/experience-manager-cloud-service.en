@@ -2,15 +2,18 @@
 title: How to integrate AEM Forms with Adobe Analytics?
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
+hidefromtoc: yes
 ---
-# Integrate with [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
+# Integrate AEM Forms with [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
 
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html)                  |
 | AEM as a Cloud Service     | This article        |
 
-AEM Forms integrates with [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) to allow you to capture and track performance metrics for your published forms. The objective behind analyzing these metrics is to enable business users to gain insights into end user behavior and optimize the data capture experience. You can capture and track behavior of both logged-in and not logged-in (Anonymous) users via Adobe Analytics for Adaptive Forms.
+<span class="preview"> This document outlines the manual procedure for enabling Adobe Analytics on an Adaptive Form. However, Adobe recommends to use the [Enable Adobe Analytics for an Adaptive Form using Experience Cloud Setup Automation](/help/forms/forms-experience-cloud-setup-automation.md). </span>
+
+AEM Forms integrates with [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) to allow you to capture and track performance metrics for your published forms. The objective behind analyzing these metrics is to enable business users to gain insights into end-user behavior and optimize the data capture experience. You can capture and track the behavior of both logged-in and not logged-in (Anonymous) users via Adobe Analytics for Adaptive Forms.
 
 After performing the actions mentioned in this article, you can configure and view reports in [!DNL Adobe Analytics], as demonstrated in the following video:
 
@@ -32,7 +35,7 @@ You can use [!DNL Adobe Analytics] to discover interaction patterns and problems
 
 * **Save**: Number of times users save a form to the Forms Portal.
 
-In addition to these out of the box events, you can define custom events in adaptive forms using rule editor and map those events to events in [!DNL Adobe Analytics]
+In addition to these out of the box events, you can define custom events in adaptive forms using a rule editor and map those events to events in [!DNL Adobe Analytics]
 
 The following figure illustrates the actions that you need to perform before viewing reports in [!DNL Adobe Analytics]:
 
@@ -69,7 +72,7 @@ Perform the following steps to configure AEM Forms and [Adobe Analytics](https:/
 
 ### Configure data elements {#configure-data-elements}
 
-You can select any of the configured data elements in a rule created for an event. When an event occurs on an adaptive form, AEM Forms sends these data elements to [!DNL Adobe Analytics].
+You can select any of the configured data elements in a rule created for an event. When an event occurs on an adaptive form, AEM Forms send these data elements to [!DNL Adobe Analytics].
 
 After installing the **[!UICONTROL Adobe Experience Manager Forms]** extension, you can create the following data elements:
 
@@ -161,7 +164,7 @@ Perform the following steps to create rules based on the **[!UICONTROL Adobe Exp
 1. Select **[!UICONTROL Clear Variables]** as the Action Type. Tap **[!UICONTROL Keep Changes]**. After performing these steps, the **[!UICONTROL Actions]** section displays as:
    ![Actions Configuration](assets/actions-config.png)
 
-    Customize the **[!UICONTROL Actions]** section according to your requirements. For example, you can define two **Send Beacon** steps in an Actions flow to send data to [!DNL Adobe Analytics] and treat it as a page view in one step and send data to [!DNL Adobe Analytics] and do not treat it as a page view in the second step.
+    Customize the **[!UICONTROL Actions]** section according to your requirements. For example, you can define two **Send Beacon** steps in an Action flow to send data to [!DNL Adobe Analytics] and treat it as a page view in one step and send data to [!DNL Adobe Analytics] and do not treat it as a page view in the second step.
 
    ![Actions Configuration](assets/actions-config-2.png)
 
@@ -186,13 +189,13 @@ Perform the following steps to publish the configuration:
 
 1. In the **[!UICONTROL Development]** section, tap ![More options](assets/more-options-icon.svg) and then tap **[!UICONTROL Approve & Publish to Production]**.
 
-1. Confirm the changes and the publishing flow soon displays in the **[!UICONTROL Published]** section.
+1. Confirm that the changes and the publishing flow soon displays in the **[!UICONTROL Published]** section.
 
 ![Publish Flow](assets/publish-flow.png)
 
 ## 2. Configure AEM Forms {#configure-aem-forms}
 
-Before creating Adobe Launch configuration, create an [Adobe IMS Configuration using Adobe Launch as the Cloud Solution](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+Before creating an Adobe Launch configuration, create an [Adobe IMS Configuration using Adobe Launch as the Cloud Solution](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
 
 ### Create Adobe Launch Configuration {#create-adobe-launch-configuration}
 
@@ -216,7 +219,7 @@ Perform the following steps to create an Adobe Launch configuration:
 
 ### Enable [!DNL Adobe Analytics] for an adaptive form {#enable-analytics-adaptive-form}
 
-To use [!DNL Adobe Launch] configuration in an existing Adaptive Form:
+To use the [!DNL Adobe Launch] configuration in an existing Adaptive Form:
 
 1. On the AEM Forms Author instance, navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 1. Select the Adaptive Form and tap **[!UICONTROL Properties]**.
@@ -228,11 +231,11 @@ After you enable [!DNL Adobe Analytics] for an adaptive form, you can [validate]
 
 ### Create rules to capture custom events (Optional) {#capture-custom-events}
 
-Create rules on specific fields of an adaptive form using rule editor to send Analytics data from an adaptive form to [!DNL Adobe Analytics].
+Create rules on specific fields of an adaptive form using a rule editor to send Analytics data from an adaptive form to [!DNL Adobe Analytics].
 
-In a two-stage process, you define a rule on a field in an adaptive form. The rule dispatches an event. The name of event is mapped to a custom capture event in Adobe Launch.
+In a two-stage process, you define a rule on a field in an adaptive form. The rule dispatches an event. The name of the event is mapped to a custom capture event in Adobe Launch.
 
-To create rules using rule editor in an adaptive form:
+To create rules using a rule editor in an adaptive form:
 
 1. Tap the field and select ![Rule Editor](assets/rule-editor-icon.svg) to open the rule editor page.
 1. Define a condition in the [!UICONTROL When] section of the rule.
@@ -253,7 +256,7 @@ To map the event to a custom capture event in [!DNL Adobe Analytics]:
 
 1. Select **[!UICONTROL Capture Custom Event]** from the **[!UICONTROL Event Type]** drop-down list.
 
-1. Specify the name of the event that you specified in step 4 while creating a rule using rule editor.
+1. Specify the name of the event that you specified in step 4 while creating a rule using the rule editor.
 
 1. Tap **Keep Changes** and perform the rest of the actions specified in [Configure Rules](#configure-rules).
 
@@ -275,7 +278,7 @@ After configuring an adaptive form to send event data to [!DNL Adobe Analytics],
 
 1. Tap ![Visualizations](assets/visualization-icon.svg) and drop a chart type to the Freeform section. Similarly, you can add multiple chart types to the Freeform section.
 
-1. Tap Ctrl + S keys and specify a name to save the project.
+1. Tap the Ctrl + S keys and specify a name to save the project.
 
 <!--
 
