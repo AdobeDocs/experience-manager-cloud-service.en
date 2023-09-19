@@ -21,7 +21,7 @@ By leveraging Edge Delivery you can:
 
 The following diagram illustrates how you can edit content in Microsoft Word (Document-based editing) and publish to Edge Delivery. It also shows the traditional AEM publishing method using the various editors.
 
-![Edge Delivery Architecture](assets/edgedelivery1.png)
+![Edge Delivery Architecture](assets/edgedelivery2.png)
 
 As mentioned previously, Edge Delivery is a composable set of services used in addition to the usual AEM authoring methods. This allows for a high degree of flexibility in how you author or update content for your website. For example, you can use content directly from Microsoft Word or Goggle Docs. This means that documents from those sources can become pages on your website. Furthermore, headings, lists, images, font elements can all be transferred from the initial source into the website. The new content will be added instantly without a rebuild process.
 
