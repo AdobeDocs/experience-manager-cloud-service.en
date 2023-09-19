@@ -68,7 +68,7 @@ Experience Manager allows you to use a combination of various operators to enhan
 
 ### AND operator {#and-operator}
 
-AND operator is the default operator between two keywords in Omni Search. For example, when you type `classic car` in the search bar, the results with "classic" and "car" keywords appear in your search results, by default.
+AND operator is the default operator between two keywords in Omni Search. For example, when you type `classic car` in the search bar, the results with `classic` and `car` keywords appear in your search results, by default.
 
 ![Search using AND Operator](assets/simple-search-1.png)
 
@@ -80,9 +80,14 @@ When you want to be specific with the search results and want an option in the s
 
 ### NOT operator {#not-operator}
 
-When you want to retrieve results excluding some keywords, you can use the NOT operator. The NOT operator uses the hyphen (-) symbol to direct AEM search what to exclude from the search results. For example, the `car - classic` search query that specifies metadata that contains `cars` but excludes `classic`.
+When you want to retrieve results excluding some keywords, you can use the NOT operator. The NOT operator uses the hyphen (-) symbol to direct AEM search what to exclude from the search results. For example, the `car - classic` search query that specifies metadata that contains `car` but excludes `classic`.
 
 ![Search using NOT operator](assets/not-operator.png)
+
+Similarly, you can search for all cars but not jeep. The query looks like: `car -jeep`. It displays all the assets with metadata `car` but excludes assets with metadata `jeep`.
+
+![Search using NOT operator](assets/images-jeep.png)
+
 
 ## Wildcards {#wildcards}
 
@@ -108,7 +113,7 @@ Asterisk is a wildcard operator that is used to broaden your search by typing fe
 
 ## Filters {#filters}
 
-Adobe Experience Manager provides various search filters which you can use to refine and segment your search using a scoped query. You can use search filters with or without typing a keyword. To open the filters panel, click the **GlobalNav** icon and select **[!UICONTROL Filters]**.
+Adobe Experience Manager provides various search filters which you can use to refine and segment your search using a scoped query. When you are unsure about the title or meta description of an asset, you can use various search filters to make your search more relevant. You can use search filters with or without typing a keyword. To open the filters panel, click the **GlobalNav** icon and select **[!UICONTROL Filters]**.
 
 ![Filters panel](assets/filters.png)
 
@@ -140,55 +145,76 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 
 **Scenario 4: Search for unpublished PDF file type documents with the `classic car` keyword in it.**
 
-To search for the above requirement, type `classic car` in the search bar. Then go to Filters > File type > Documents > Word Processing > PDF to search for PDF files. Then select Status > Publish > Unpublished.
+To search for the above requirement, follow the steps below: 
+
+1. Type `classic car` in the search bar. 
+1. Go to Filters. Under [!UICONTROL File Type], expand [!UICONTROL Documents], further expand [!UICONTROL Word Processing].
+1. Select [!UICONTROL PDF].
+1. Go to [!UICONTROL Status] > [!UICONTROL Publish] > [!UICONTROL Unpublished] .
 
 ![Filter example 2](assets/filter-2.png)
 
 [Watch a video to perform search in AEM Assets using various filters] ()
 
+**Scenario 5: Search for all images except PNG**
+
+When you are unsure about the title or meta description of an asset, you can use various search filters to make your search more relevant. Follow the steps below:
+
+1. Go to search filters. 
+1. Go to Filters. Under [!UICONTROL File Type], expand [!UICONTROL Images] and select [!UICONTROL Web enabled]
+1. Deselect PNG.
+
+![Search all images except jeep](assets/images-png.png)
+
 ## Advanced search {#advanced-search}
 
 AEM search allows you to craft complex search queries with less effort. Following are the various examples to help you create complex search queries:
 
-**Scenario 5: Search for all documents in the Experience Manager repository with `classic car` in their metadata. The content of the document must consist of `classic car` keyword in it.**
+**Scenario 6: Search for all documents in the Experience Manager repository with `classic car` in their metadata. The content of the document must contain `classic car` keyword in it.**
 
 Adobe Experience Manager allows you to add multiple criteria to your search. You can use a combination of keywords, operator(s), and filter(s) to narrow down your search results. 
  
-To perform a search for scenario 5: 
+To perform a search for scenario 7: 
 
 1. Type the `classic car` keyword in the search bar. 
 2. Navigate to the filters panel and select Documents under File Type. 
 3. Refine your search using the asterisk wildcard. Type `"classic car"` to search all assets that contain the `classic car` keyword. 
  
-![Scenario 5](assets/scenario-5.png)
+![Scenario 7](assets/scenario-7.png)
 
-**Scenario 6: Search for all documents in the Experience Manager repository in which the content of the document must include `car` but exclude `classic`. The same condition is should be applied metadata of an asset.**
+**Scenario 8: Search for all documents in the Experience Manager repository in which the content of the document must include `car` but exclude `classic`. The same condition applies on metadata of an asset.**
 
-To perform a search for scenario 6: 
+To perform a search for scenario 8: 
 
 Type the `car - classic` keyword in the search bar. Navigate to the filters panel and select Documents under File Type. The priority order of search is based on the following: 
 Priority 1: Metadata
 Priority 2: Smart Tags
 
-![Scenario 6](assets/scenario-6.png)
+![Scenario 8](assets/scenario-8.png)
 
-**Scenario 7: Search for all images except PNG**
+<!--
+**Scenario 9: Search for all images except PNG**
 
-When you are unsure about the title or meta description of an asset, you can use various search filters to make your search more relevant. There are two methods to perform search using this scenario. Follow the steps below:
+When you are unsure about the title or meta description of an asset, you can use various search filters to make your search more relevant. Follow the steps below:
 
-**Method 1:** Go to search bar and type `images - PNG`. All the image type assets appear but the asset with metadata jeep does not appear.
+1. Go to search filters. 
+1. Under [!UICONTROL File Type], expand [!UICONTROL Images] and select [!UICONTROL Web enabled]
+1. Deselect PNG.
+
+**Method 1:** Go to search bar and type `images - PNG`. All the images appear excluding PNG.
 
 **Method 2:** Go to search filters. Under [!UICONTROL File Type], expand [!UICONTROL Images] > select [!UICONTROL Web enabled] > deselect PNG.
 
 ![Search all images except jeep](assets/images-jeep.png)
+-->
 
-**Scenario 8: Search for metadata tags with metadata jeep**
+**Scenario 9: Search for metadata tags with metadata jeep**
 
 You can capture a specific criteria using various search filters. Tag is a keyword that is assigned to an asset to make it identifiable among a large number of assets. For example, in this scenario, we are searching for assets with *jeep* tags in it. To do this, type `tags:jeep` in the search bar. Only assets that meet this criteria are listed in the search results.
 
 ![Search using tags](assets/search-tags.png)
 
-**Scenario 9: Find similar match for red color car**
+**Scenario 10: Find similar match for red color car**
 
 While performing your search on AEM, you can filter your results by showing similar assets to the selected ones. You can use the **Find Similar** option to narrow down your search to the exact or similar match of the searched Asset. For example, you want to search for duplicate assets. To do this, follow the steps below:
 
@@ -205,13 +231,13 @@ Select the asset > navigate to the ellipsis at the top right > select [!UICONTRO
 
 Search facets in Adobe Experience Manager let you search for assets in multiple ways rather than in a single, pre-determined, or taxonomic order. You can customize search facets and add predicates as per your requirement. Read [Search Facets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) for the step-by-step guide about adding a custom predicate.
 
-**Scenario 10: Search assets based on Sku ID**
+**Scenario 11: Search assets based on Sku ID**
 
 
 
-**Scenario 11: Search specific assets based on their last modified or expiry date**
+**Scenario 12: Search specific assets based on their last modified or expiry date**
 
-Date constraints allow you narrow down your custom search to a particular period, for example, using the time period search filters. To search for the above requirement, type `classic car` in the search bar. Select the date range in [!UICONTROL Created Date] and [!UICONTROL Last Modified] date filters.
+Date constraints allow you to narrow down your custom search to a particular period, for example, using the time period search filters. To search for the above requirement, type `classic car` in the search bar. Select the date range in the [!UICONTROL Created Date] and [!UICONTROL Last Modified] date filters.
 
 ![Date filters](assets/date-filters.png)
 
