@@ -81,6 +81,13 @@ Login to the Brand Portal interface to see the published assets (depending on yo
 
    ![bp_landingpage](assets/bp_landingpage.png)
 
+>[!NOTE]
+>
+>The new users (or non-admin users) require the following rights to publish and read on `path "/conf/global/settings/cloudconfigs/mediaportal"`.
+>/libs  : jcr:read
+>/conf : jcr:read
+>/content :   jcr:read , crx:replicate
+>/content/dam/ :    jcr:read ,Modify , crx:replicate
 
 ## Publish folders to Brand Portal {#publish-folders-to-brand-portal}
 
