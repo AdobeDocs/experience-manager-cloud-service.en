@@ -84,7 +84,7 @@ When you want to retrieve results excluding some keywords, you can use the NOT o
 
 ![Search using NOT operator](assets/not-operator.png)
 
-Similarly, you can search for all cars but not jeep. The query looks like: `car -jeep`. It displays all the assets with metadata `car` but excludes assets with metadata `jeep`.
+Similarly, you can search for all cars but not jeep. The query looks like: `car - jeep`. It displays all the assets with metadata `car` but excludes assets with metadata `jeep`.
 
 ![Search using NOT operator](assets/images-jeep.png)
 
@@ -214,7 +214,7 @@ You can capture a specific criteria using various search filters. Tag is a keywo
 
 ![Search using tags](assets/search-tags.png)
 
-**Scenario 10: Find similar match for red color car**
+**Scenario 9: Find similar match for red color car**
 
 While performing your search on AEM, you can filter your results by showing similar assets to the selected ones. You can use the **Find Similar** option to narrow down your search to the exact or similar match of the searched Asset. For example, you want to search for duplicate assets. To do this, follow the steps below:
 
@@ -231,11 +231,11 @@ Select the asset > navigate to the ellipsis at the top right > select [!UICONTRO
 
 Search facets in Adobe Experience Manager let you search for assets in multiple ways rather than in a single, pre-determined, or taxonomic order. You can customize search facets and add predicates as per your requirement. Read [Search Facets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) for the step-by-step guide about adding a custom predicate.
 
-**Scenario 9: Search assets based on Sku ID**
+**Scenario 10: Search assets based on Sku ID**
 
 
 
-**Scenario 10: Search specific assets based on their last modified or expiry date**
+**Scenario 11: Search specific assets based on their last modified or expiry date**
 
 Date constraints allow you to narrow down your custom search to a particular period, for example, using the time period search filters. To search for the above requirement, type `classic car` in the search bar. Select the date range in the [!UICONTROL Created Date] and [!UICONTROL Last Modified] date filters.
 
