@@ -10,7 +10,7 @@ Adobe Experience Manager Assets provides robust asset search methods that help y
 
 This help document contains best practices of AEM search with the help of various scenarios to assist AEM users to perform basic to advanced level search.
 
-## Access Experience League Search {#access-experience-league-search}
+## Access Experience Manager Search {#access-experience-manager-search}
 
 Following are the basic steps to perform in Experience Manager before you begin your search:
 
