@@ -83,11 +83,14 @@ Login to the Brand Portal interface to see the published assets (depending on yo
 
 >[!NOTE]
 >
->The new users (or non-admin users) require the following rights to publish and read on `path "/conf/global/settings/cloudconfigs/mediaportal"`.
->/libs  : jcr:read
+> * The existing users part of DAM-Users group have read access on path "/conf/global/settings/cloudconfigs/mediaportal"
+>* The new users (or non-admin users) require the following rights to publish on brand portal.
+> Paths:
+> "/conf/global/settings/cloudconfigs/mediaportal" : jcr:read 
+>/libs : jcr:read 
 >/conf : jcr:read
->/content :   jcr:read , crx:replicate
->/content/dam/ :    jcr:read ,Modify , crx:replicate
+>/content : jcr:read , crx:replicate 
+>/content/dam/ : jcr:read ,Modify , crx:replicate 
 
 ## Publish folders to Brand Portal {#publish-folders-to-brand-portal}
 
@@ -128,7 +131,7 @@ You can publish or unpublish asset folders immediately, or schedule to a later d
     
        From **[!UICONTROL Scheduling]**, select **[!UICONTROL Later]**.
 
-   1. Select an **[!UICONTROL Activation date]** and specify time. Click **[!UICONTROL Next]**.
+    1. Select an **[!UICONTROL Activation date]** and specify time. Click **[!UICONTROL Next]**.
 
        ![publishlaterbp](assets/publishlaterbp.png)
     
