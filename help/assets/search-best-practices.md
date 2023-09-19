@@ -174,23 +174,23 @@ AEM search allows you to craft complex search queries with less effort. Followin
 
 Adobe Experience Manager allows you to add multiple criteria to your search. You can use a combination of keywords, operator(s), and filter(s) to narrow down your search results. 
  
-To perform a search for scenario 7: 
+To perform a search for scenario 6: 
 
 1. Type the `classic car` keyword in the search bar. 
 2. Navigate to the filters panel and select Documents under File Type. 
 3. Refine your search using the asterisk wildcard. Type `"classic car"` to search all assets that contain the `classic car` keyword. 
  
-![Scenario 7](assets/scenario-7.png)
+![Scenario 6](assets/scenario-6.png)
 
-**Scenario 8: Search for all documents in the Experience Manager repository in which the content of the document must include `car` but exclude `classic`. The same condition applies on metadata of an asset.**
+**Scenario 7: Search for all documents in the Experience Manager repository in which the content of the document must include `car` but exclude `classic`. The same condition applies on metadata of an asset.**
 
-To perform a search for scenario 8: 
+To perform a search for scenario 7: 
 
 Type the `car - classic` keyword in the search bar. Navigate to the filters panel and select Documents under File Type. The priority order of search is based on the following: 
 Priority 1: Metadata
 Priority 2: Smart Tags
 
-![Scenario 8](assets/scenario-8.png)
+![Scenario 7](assets/scenario-7.png)
 
 <!--
 **Scenario 9: Search for all images except PNG**
@@ -208,7 +208,7 @@ When you are unsure about the title or meta description of an asset, you can use
 ![Search all images except jeep](assets/images-jeep.png)
 -->
 
-**Scenario 9: Search for metadata tags with metadata jeep**
+**Scenario 8: Search for metadata tags with metadata jeep**
 
 You can capture a specific criteria using various search filters. Tag is a keyword that is assigned to an asset to make it identifiable among a large number of assets. For example, in this scenario, we are searching for assets with *jeep* tags in it. To do this, type `tags:jeep` in the search bar. Only assets that meet this criteria are listed in the search results.
 
@@ -231,11 +231,11 @@ Select the asset > navigate to the ellipsis at the top right > select [!UICONTRO
 
 Search facets in Adobe Experience Manager let you search for assets in multiple ways rather than in a single, pre-determined, or taxonomic order. You can customize search facets and add predicates as per your requirement. Read [Search Facets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) for the step-by-step guide about adding a custom predicate.
 
-**Scenario 11: Search assets based on Sku ID**
+**Scenario 9: Search assets based on Sku ID**
 
 
 
-**Scenario 12: Search specific assets based on their last modified or expiry date**
+**Scenario 10: Search specific assets based on their last modified or expiry date**
 
 Date constraints allow you to narrow down your custom search to a particular period, for example, using the time period search filters. To search for the above requirement, type `classic car` in the search bar. Select the date range in the [!UICONTROL Created Date] and [!UICONTROL Last Modified] date filters.
 
