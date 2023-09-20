@@ -89,8 +89,8 @@ Login to the Brand Portal interface to see the published assets (depending on yo
 > "/conf/global/settings/cloudconfigs/mediaportal" : jcr:read 
 >/libs : jcr:read 
 >/conf : jcr:read
->/content : jcr:read , crx:replicate 
->/content/dam/ : jcr:read ,Modify , crx:replicate 
+>/content : jcr:read, crx:replicate 
+>/content/dam/ : jcr:read,modify, crx:replicate 
 
 ## Publish folders to Brand Portal {#publish-folders-to-brand-portal}
 
