@@ -45,6 +45,16 @@ You can also use Edge Delivery Services in combination with Adobe Target, Analyt
 
 You can engage with Adobe product teams via your provisioned product collaboration channel to answer questions on product use or best practices. Please note that there are no SLT’s associated with the conversations via the product collaboration channel. If a product issue needs additional investigation and troubleshooting, and needs to meet response SLT’s, you can submit a support ticket following the [support process](https://experienceleague.adobe.com/?lang=en&support-tab=home#support).
 
+### Logging a Support Ticket
+
+Steps to log a support ticket via Admin Console:
+
+1. Add ‘Edge Delivery’ in the title of the ticket.
+2. In the description, please provide the following details:
+
+* URL of the live site. For example: [www.mydomain.com].
+* URL of the origin (hlx URL)
+
 ### How to access my Provisioned Product Collaboration Channel
 
 TR: We need details on how a customer receives the details of their Discord Channel and how they can use it.
