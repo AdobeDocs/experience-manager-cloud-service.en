@@ -9,15 +9,15 @@ description: Authoring with Edge Delivery Services
 >
 >This is a draft, feel free to update/modify as needed.
 
-With Edge Delivery, authoring is easy, fast and flexible. You can create and update content either by using AEM authoring or document-based authoring. In the case of document-based authoring  you can work with a variety of sources like Microsoft Word or Goggle Docs. Documents from these sources become pages on your website. Headings, lists, images, font elements, videos can all be transferred from the initial source into your website. You can add metadata for SEO purposes or use blocks to work with structured content and add functionality to you website. Adding and updating content is done instantly without a rebuild process.  After you are done editing you use the sidekick browser extension to either preview, publish or delete content.
+With Edge Delivery, authoring is easy, fast and flexible. You can create and update content either by using AEM authoring or document-based authoring. In the case of document-based authoring, you can work with a variety of sources like Microsoft Word and Goggle Docs. Documents from these sources become pages on your website. Headings, lists, images, font elements, videos can all be transferred from the initial source into your website. You can add metadata for SEO purposes or use blocks to work with structured content and add functionality.
 
 ## Edge Delivery Services and Github {#github-edge}
 
-Edge Delivery leverages Github so customers can manage and deploy code directly from their Github repository. For example, you can write content in either Google Docs or Microsoft Word and the functionality of your site can be developed by using CSS and Javascript in GitHub . Every resource that you put into your GitHub repository is available on your website.
+Edge Delivery leverages Github so customers can manage and deploy code directly from their Github repository. For example, you can write content in either Google Docs or Microsoft Word and develop the functionality of your site by using CSS and Javascript in GitHub . Every resource that you put into your GitHub repository is available on your website without a build process.
 
 ## Using the Sidekick {#using-sidekick}
 
-​​The AEM sidekick provides content authors with a toolbar offering context-aware options so that they can edit, preview, and publish their content directly from the website pages. After [installing](https://www.hlx.live/docs/sidekick-extension) the AEM sidekick extension it can be invoked in project environments or when you edit your content (for example, in Google docs or Microsoft word). It has several actions available like: Preview, Reload, Edit and Publish.
+​​The AEM sidekick provides a toolbar with context-aware options so you can easily edit, preview, and publish content. After [installing](https://www.hlx.live/docs/sidekick-extension) the AEM sidekick extension it can be used either in project environments or when you edit your content (for example, in Google docs or Microsoft word). You can also easily switch environments going from preview to production and vice-versa. This means that you always have access to actions like Preview, Reload, Edit regardless of the environment you are currently working from.
 
 ### What's Next
 
