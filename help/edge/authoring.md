@@ -1,15 +1,20 @@
 ---
-title: Authoring with Edge Delivery Services
-description: Authoring with Edge Delivery Services
+title: Using Edge Delivery Services
+description: Using with Edge Delivery Services
 ---
 
-# Authoring with Edge Delivery Services {#authoring-edge}
+# Using Edge Delivery Services {#authoring-edge}
 
 >[!NOTE]
 >
 >This is a draft, feel free to update/modify as needed.
 
 With Edge Delivery, authoring is easy, fast and flexible. You can create and update content either by using AEM authoring or document-based authoring. In the case of document-based authoring, you can work with a variety of sources like Microsoft Word and Goggle Docs. Documents from these sources become pages on your website. Headings, lists, images, font elements, videos can all be transferred from the initial source into your website. You can add metadata for SEO purposes or use blocks to work with structured content and add functionality.
+
+You can take two different paths to author with Edge Delivery Services:
+
+* Document-based authoring (such as Microsoft Word or Google Docs) - Refer to this link (add Helix link)
+* Page Editor/Universal Editor/Content Fragments Editor - Contact your Adobe Sales Representative
 
 ## Edge Delivery Services and Github {#github-edge}
 
