@@ -1,14 +1,12 @@
 ---
-title: Creating and managing reviews in forms
-seo-title: Creating and managing reviews in forms
-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
-seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
+title: How to create and manage reviews in forms?
+description: A Review is a mechanism to add reviewers and allow reviewers to comment on a form.
 topic-tags: forms-manager
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
 ---
 # Creating and managing reviews to forms{#creating-and-managing-reviews-to-forms}
 
-<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes an older approach to author Adaptive Forms using foundation components. </span>
 
 
 | Version | Article link |
@@ -29,7 +27,7 @@ A review is a mechanism that allows one or more reviewers to comment on forms.
     * **Title**: Mandatory, can contain alphanumeric characters, hyphen, and underscore.
     * **Description**: Optional, description of the purpose / content for review.
     * **Deadline**: Optional, the date on which the review ends. When past the deadline the task appears as 'Overdue'.
-    * **Reviewer Name**: A minimum of one is mandatory. Use the combo-box to add reviewers, typing a name list of all matching names; select a name and click **Add**. On the next section of the **Reviewers** tab shows the name of all the reviewers.
+    * **Reviewer Name**: A minimum of one is mandatory. Use the combo-box to add reviewers, typing a name list of all matching names; select a name and click **Add**. On the next section of the **Reviewers** tab shows the names of all the reviewers.
 
 1.  Click the **Start** to start a review.
 
@@ -64,7 +62,7 @@ This section describes what happens when a review is created or set up.
 
    Click the **Manage Review** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)icon.
 
-   For user other than initiator the Manage Review icon is disabled. 
+   For users other than initiator the Manage Review icon is disabled. 
 
 1. Now you get a screen that displays information:
 

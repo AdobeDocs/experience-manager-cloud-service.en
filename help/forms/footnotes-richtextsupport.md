@@ -1,6 +1,6 @@
 ---
-title: Footnotes Support
-description: RTE support for footnotes.
+title: Footnotes Support in Adaptive Forms
+description: RTE support for footnotes in Adaptive Forms.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 ---
 # Footnote Component {#footnotecomponent}

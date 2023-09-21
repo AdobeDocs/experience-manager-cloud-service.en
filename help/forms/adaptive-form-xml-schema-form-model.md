@@ -1,6 +1,6 @@
 ---
 title: Design XML Schema for an Adaptive Form
-description: Learn how to use XML schema as form model in an Adaptive Form. Dig deeper with a sample of an XML schema, add special properties to fields using XML schema, and limit acceptable values for an Adaptive Form component.
+description: Learn to use XML schema as form model in an Adaptive Form. Add special properties to fields using XML schema and limit acceptable values for an Adaptive Form.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate

@@ -1,6 +1,6 @@
 ---
-title: How to configure Microsoft Dynamics 365 and Salesforce out of the box form data models for adaptive forms?
-description: Learn how to integrate Microsoft Dynamics 365 and Salesforce with adaptive forms.
+title: How to configure Microsoft Dynamics 365 and Salesforce out of the box form data models for Adaptive Forms?
+description: Learn how to integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms.
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
 ---
 # Configure [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloud services {#configure-azure-storage}

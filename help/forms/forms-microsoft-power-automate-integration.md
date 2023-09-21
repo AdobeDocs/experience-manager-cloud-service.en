@@ -1,5 +1,5 @@
 ---
-title: Integrate an Adaptive Form with Microsoft® Power Automate
+title: How to integrate an Adaptive Form with Microsoft® Power Automate
 description: Integrate an Adaptive Form with Microsoft® Power Automate.
 hide: yes
 hidefromtoc: yes
