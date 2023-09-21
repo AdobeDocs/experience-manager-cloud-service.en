@@ -29,6 +29,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.7.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-7-0.md)
       + [Release Notes for 2023.6.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-6-0.md)
       + [Release Notes for 2023.4.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
       + [Release Notes for 2023.2.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
@@ -69,6 +70,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2023 {#2023}
+      + [Maintenance Release Notes for 2023.9.0](/help/release-notes/maintenance/2023/2023.9.0.md) 
+      + [Maintenance Release Notes for 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md) 
       + [Maintenance Release Notes for 2023.7.0](/help/release-notes/maintenance/2023/2023.7.0.md) 
       + [Maintenance Release Notes for 2023.6.0](/help/release-notes/maintenance/2023/2023.6.0.md)
       + [Maintenance Release Notes for 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
@@ -77,6 +80,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.8.0](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
+      + [Release Notes for 2023.7.0](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
       + [Release Notes for 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
       + [Release Notes for 2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
       + [Release Notes for 2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
@@ -124,6 +129,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Migration Tools {#migration-tools}
     + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.8.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-08-0.md)
+      + [Release Notes for 2023.7.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-07-0.md)
       + [Release Notes for 2023.6.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-06-0.md)
       + [Release Notes for 2023.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-03-0.md)
     + 2022 {#2022}
@@ -153,7 +160,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support.md)
   + [Same Site Cookie Support for AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
-  + [Configuring CDN and WAF Rules to Filter Traffic](/help/security/cdn-and-waf-rules.md)
+  + [Configuring Traffic Filter Rules with WAF Rules to Filter Traffic](/help/security/cdn-and-waf-rules.md)
   + [AEM as a Cloud Service Security Considerations](/help/security/security-considerations.md)
 + Onboarding {#onboarding}
   + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -217,10 +224,12 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Guidelines and Best Practices for Using Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
       + [Getting Started with Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
       + [Validating Content Transfers](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
+      + [Migrating Closed User Groups](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
       + [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
       + [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
       + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-      + [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+      + [Ingesting Content into Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+      + [Indexing after Migrating Content](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
       + [Viewing Logs for a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
       + [Deleting a Migration Set](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [Running the Content Transfer Tool on a Publish Instance](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
@@ -306,6 +315,16 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
   + Administering {#administering}
     + Content Fragments {#content-fragments}
+      + [Overview and Concepts](/help/sites-cloud/administering/content-fragments/overview.md)
+      + [Headless Delivery with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
+      + [Content Fragment Setup](/help/sites-cloud/administering/content-fragments/setup.md)
+      + [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+      + [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)
+      + [Authoring Fragment Content](/help/sites-cloud/administering/content-fragments/authoring.md)
+      + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
+      + [Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
+      + [Analyzing Structure](/help/sites-cloud/administering/content-fragments/analysis.md)
+      + [Keyboard Shortcuts](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
       + [Headless Delivery with Content Fragments and GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
       + [Enable Content Fragment Functionality for your Instance](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
@@ -496,6 +515,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Add Dynamic Media assets to pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
     + [Embed the Dynamic Video or Image viewer on a web page](/help/assets/dynamic-media/embed-code.md)
     + [Link URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+    + [Request error report for failed delivery URLs](/help/assets/dynamic-media/reporting-dm.md)
     + [Use Rulesets to transform URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
     + [Publish Dynamic Media assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
     + [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
@@ -510,6 +530,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Supported file types and use cases](/help/assets/supported-file-formats-assets-view.md)
     + [View assets](/help/assets/navigate-assets-view.md)
     + [Upload and add assets](/help/assets/add-delete-assets-view.md)
+    + [Bulk import assets](/help/assets/bulk-import-assets-view.md)
     + [Search and discover assets](/help/assets/search-assets-view.md)
     + [Asset management tasks](/help/assets/manage-organize-assets-view.md)
     + [Edit images](/help/assets/edit-images-assets-view.md)
@@ -547,8 +568,11 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Integrate AEM Forms as a Cloud Service with Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
       + [Integrate AEM Forms as a Cloud Service with DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
       + [Integrate AEM Forms as a Cloud Service with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+      + [Integrate Adaptive Forms to Adobe Analytics](/help/forms/forms-experience-cloud-setup-automation.md)
+      + [Viewing and understanding Adaptive Forms Analytics Report](/help/forms/view-understand-aem-forms-analytics-reports.md)
       + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
       + [Embed an Adaptive Forms in an AEM Sites page](/help/forms/embed-adaptive-form-aem-sites.md)
+      + [Embed adaptive form based on core components to an external web page](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
     + Form Data Model {#use-form-data-model}
       + [Connect your data sources to Cloud Service](/help/forms/data-integration.md)
       + [Configure data sources](/help/forms/configure-data-sources.md)
@@ -562,17 +586,19 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Adaptive Forms {#adaptive-forms-authoring}
     + [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)
     + [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-    + Authoring Adaptive Forms - Core Components {#authoring-adaptive-forms-core-components}
+    + Core Components {#authoring-adaptive-forms-core-components}
       + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+        + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
         + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
-        + [Create an Adaptive Forms - Core Components in an AEM Sites page](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
         + [Use machine translation or human translation to translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
         + [Configuring redirect page or thank you message](/help/forms/configure-redirect-page-or-thank-you-message.md)
         + [Create forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md)
         + [Configure Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)
-    + Authoring Adaptive Forms - Foundation Components {#authoring-adaptive-forms-foundation-components}
+        + [Use Google reCAPTCHA in an Adaptive Form ](/help/forms/captcha-adaptive-forms-core-components.md)
+        + [Add custom error handler in an Adaptive Form](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+    + Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
         + [Convert an existing PDF Form to an Adaptive Form](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
@@ -720,18 +746,14 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Content Fragment](/help/headless/setup/create-content-fragment.md)
     + [GraphQL Endpoint](/help/headless/setup/create-api-request.md)
   + Content Fragments {#content-fragments}
-    + [Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
-    + [Content Fragments Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
-    + [Content Fragment Models](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
-    + [Managing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
+    + [Overview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+    + [Content Fragment Models](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+    + [Managing Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
     + Authoring{#authoring}
-      + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
-      + [Text editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
-      + [Associated Content](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
-      + [Variations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
-    + [Metadata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
-    + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
-    + [JSON Preview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
+      + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+      + [Markdown editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+    + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+    + [JSON Preview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
   + GraphQL API {#graphql-api}
     + [GraphQL API for Content Fragments](/help/headless/graphql-api/content-fragments.md)
     + [Manage GraphQL endpoints](/help/headless/graphql-api/graphql-endpoint.md)
@@ -746,7 +768,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Authentication](/help/headless/security/authentication.md)
   + Deployment {#deployment}
     + [Architecture](/help/headless/deployment/architecture.md)
-    + [Dispatcher](/help/headless/deployment/dispatcher.md)
+    + [Dispatcher - Endpoints](/help/headless/deployment/dispatcher.md)
+    + [Dispatcher - Enable Caching for Persisted Queries](/help/headless/deployment/dispatcher-caching.md)
     + [CORS Config](/help/headless/deployment/cross-origin-resource-sharing.md)
     + [Referrer Filter](/help/headless/deployment/referrer-filter.md)
   + Headless Journeys {#journeys}
@@ -820,6 +843,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Java Functional Testing](/help/implementing/cloud-manager/java-functional-testing.md)
         + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
       + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
+      + [Experience Audit Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md)
     + [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md)
     + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)
     + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
@@ -949,12 +973,18 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Customizing and Extending Content Fragments](/help/implementing/developing/extending/content-fragments-customizing.md)
     + [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
     + [Customizing the Content Fragment Console](/help/implementing/developing/extending/content-fragment-console-customizing.md)
+    + [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
     + Manage Search Forms {#manage-search-forms}
       + [Configuring Search Forms](/help/implementing/developing/extending/search-forms.md)
       + [Configure search filters for Inbox](/help/implementing/developing/extending/configure-inbox-search-rail.md)
     + [Configure Rich Text Editor](/help/implementing/developing/extending/rich-text-editor.md)
     + [Configure the RTE plug-ins](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
     + [Configure RTE to create accessible sites](/help/implementing/developing/extending/rte-accessible-content.md)
+    + [Extending Page Authoring](/help/implementing/developing/extending/page-authoring.md)
+    + [Extending Consoles](/help/implementing/developing/extending/consoles.md)
+    + [Extending Page Properties](/help/implementing/developing/extending/page-properties.md)
+    + [Extending the Bulk Editor](/help/implementing/developing/extending/bulk-editor.md)
+    + [Extending MSM](/help/implementing/developing/extending/msm.md)
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
     + [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)
@@ -988,6 +1018,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Backup and Restore](/help/operations/backup.md)
+  + [Self-Service Restore](/help/operations/restore.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
   + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)

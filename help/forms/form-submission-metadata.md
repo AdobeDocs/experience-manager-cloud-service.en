@@ -1,12 +1,12 @@
 ---
-title: How to Add Information from User Data to Form Submission Metadata?
+title: Add Information from User Data to Form Submission Metadata
 description: Learn how to add information to metadata of a submitted form with user provided data. Dig deeper on how to view the updated form submission metadata in the CRX repository.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 ---
 
-# Adding information from user data to form submission metadata {#adding-information-from-user-data-to-form-submission-metadata}
+# Add information from user data to form submission metadata {#adding-information-from-user-data-to-form-submission-metadata}
 
 You can use values entered in an element of your form to compute metadata fields of a draft or a form submission. Metadata lets you filter content based on user data. For example, a user enters John Doe in the name field of your form. You can use this information to compute metadata that can categorize this submission under the initials JD.
 

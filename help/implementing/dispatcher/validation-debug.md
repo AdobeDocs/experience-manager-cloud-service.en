@@ -1,6 +1,6 @@
 ---
 title: Validating and Debugging using Dispatcher Tools
-description: Validating and Debugging using Dispatcher Tools
+description: Learn about local validation, debugging, the flexible mode file structure and how to migrate from legacy mode to flexible mode.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 
@@ -102,6 +102,28 @@ If you want to match the exact host because you have multiple vhost files, you c
 </VirtualHost>
 ```
 
+* `conf.d/enabled_vhosts/<CUSTOMER_CHOICE>.vhost`
+
+This folder contains relative symbolic links to files under conf.dispatcher.d/available_vhosts.
+
+Example commands required to create these symbolic links:
+
+Apple macOS, Linux and WSL
+
+```
+ln -s ../available_vhosts/wknd.vhost wknd.vhost
+```
+
+Microsoft Windows
+
+```
+mklink wknd.vhost ..\available_vhosts\wknd.vhost
+```
+
+>[!NOTE]
+>
+> When working with symbolic links under Windows, you should be running in an elevated command prompt, in the Windows Subsystem for Linux or have the [Create symbolic links](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) privilege assigned.
+
 * `conf.d/rewrites/rewrite.rules`
 
 The file is included from inside your `.vhost` files. It has a set of rewrite rules for `mod_rewrite`.
@@ -117,6 +139,28 @@ The file is included from inside the `dispatcher_vhost.conf` file. You can chang
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
 You can have one or more of these files, and they contain farms to match host names and allow the Dispatcher module to handle each farm with different rules. Files are created in the `available_farms` directory and enabled with a symbolic link in the `enabled_farms` directory. From the `.farm` files, other files like filters, cache rules, and others are included.
+
+* `conf.dispatcher.d/enabled_farms/<CUSTOMER_CHOICE>.farm`
+
+This folder contains relative symbolic links to files under conf.dispatcher.d/available_farms.
+
+Example commands required to create these symbolic links:
+
+Apple macOS, Linux and WSL
+
+```
+ln -s ../available_farms/wknd.farm wknd.farm
+```
+
+Microsoft Windows
+
+```
+mklink wknd.farm ..\available_farms\wknd.farm
+```
+
+>[!NOTE]
+>
+> When working with symbolic links under Windows, you should be running in an elevated command prompt, in the Windows Subsystem for Linux or have the [Create symbolic links](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) privilege assigned.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -353,7 +397,7 @@ In flexible mode, other files can also be included, as long as they are in subdi
 | `conf.d/modsec`                     |
 | `conf.d/rewrites`                   |
 
-For example, you can include a file in some newly created directory under `conf.d/includes` directory as follows:
+For example, you can include a file in some newly-created directory under `conf.d/includes` directory as follows:
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf

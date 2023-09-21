@@ -13,7 +13,7 @@ For those assets for which upload and import via the [!DNL AEM Forms] UI is supp
 
 ## Download or upload Forms &amp; Documents assets {#download-or-upload-forms-amp-documents-assets}
 
-[!DNL AEM Forms] user interface allows you to export assets from an AEM instance by downloading them as an AEM CRX-package or binary files. You can then import the downloaded AEM CRX-package or the binary file into another AEM instance.
+[!DNL AEM Forms] user interface lets you export assets from an AEM instance by downloading them as an AEM CRX-package or binary files. You can then import the downloaded AEM CRX-package or the binary file into another AEM instance.
 
 Export and import via [!DNL AEM Forms] user interface is supported for all assets except for Adaptive Form templates and Adaptive Form content policies. Therefore, on exporting an Adaptive Form from [!DNL AEM Forms] UI, the related Adaptive Form template and content policies are not automatically exported like other related assets.
 
@@ -196,7 +196,7 @@ To create a folder, complete the following steps:
 
    If a folder exists with the name specified, the submission fails with an error. You can view the error message by hovering over the error ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) icon that appears beside the name field.
 
-   You can tap the newly created folder to go inside the folder and create assets or folders within the folder. Further, you can select a folder and choose to queue it for download, delete it, or edit its name.
+   You can tap the newly-created folder to go inside the folder and create assets or folders within the folder. Further, you can select a folder and choose to queue it for download, delete it, or edit its name.
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
 
@@ -215,9 +215,9 @@ Complete the following steps to create copies of assets and letters:
 
 ## Search {#search-forms}
 
-[!DNL AEM Forms] UI allows you to search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
+[!DNL AEM Forms] UI lets you search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
 
-When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 
@@ -233,7 +233,7 @@ On the side panel, you can use the following to narrow down your search results:
 * Tags
 * Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
 
-The side panel also allows you to save your search settings with names of your choice.
+The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).
 

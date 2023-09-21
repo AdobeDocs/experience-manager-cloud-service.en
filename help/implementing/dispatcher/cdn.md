@@ -1,6 +1,6 @@
 ---
 title: CDN in AEM as a Cloud Service
-description: CDN in AEM as a Cloud Service
+description: Learn how to use the AEM-managed CDN and how to point your own CDN to the AEM-managed CDN.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 ---
@@ -34,7 +34,7 @@ See [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/in
 >
 >Only requests from the allowed IPs are served by AEM's managed CDN. If you point your own CDN to the AEM-managed CDN, then make sure the IPs of your CDN are included in the allowlist.
 
-## Customer CDN points to AEM-Managed CDN {#point-to-point-CDN}
+## Customer CDN points to AEM-managed CDN {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"

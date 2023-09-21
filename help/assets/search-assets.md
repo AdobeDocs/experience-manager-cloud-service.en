@@ -55,6 +55,20 @@ You can discover the desired assets faster from the search results page using th
 
 *Figure: See the approximate number of assets without filtering search results in search facets.*
 
+Experience Manager Assets displays facet counts for two properties by default:
+
+* Asset type (jcr:content/metadata/dc:format)
+
+* Approval status (jcr:content/metadata/dam:status)
+
+As of August 2023, Experience Manager Assets includes a new version 9 of `damAssetLucene` index. The previous versions, `damAssetLucene-8` and below, use the `statistical` mode to check access control on a sample of the items for each search facet count.
+
+`damAssetLucene-9` changes the behavior of Oak Query facet counting to no longer evaluate access control on the facet counts returned by the underlying search index, which results in the faster search response times. As a result, users might be presented with facet count values, which include assets that they do not have access to. Those users cannot access, download, or read any other detail of those assets, including their paths, or gain any further information about them.
+
+If you need to switch to the previous behavior (`statistical` mode), see [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) to create a custom version of the `damAssetLucene-9` index. Adobe does not recommend switching to the `secure` mode due to the impact on search response times with large result sets.
+
+For more information on Oak's facet capabilities, including a detailed description of these modes, see [this article](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
+
 ## Search suggestions as you type {#searchsuggestions}
 
 When you start typing a keyword, Experience Manager suggests the possible search keywords or phrases. The suggestions are based on the assets in Experience Manager. Experience Manager indexes all the metadata fields to help with search. To provide search suggestions, the system uses the values of the following few metadata fields. To provide search suggestions, consider populating the following fields with appropriate keywords:
@@ -117,6 +131,20 @@ You can use this to your advantage by boosting the rank of some assets in the se
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Video: Understand how search results are ranked and how the rank can be influenced.*
+
+## Configure asset batch size to display search results {#configure-asset-batch-size}
+
+Administrators can now configure the batch size of assets that display when you perform a search. The asset search results display in multiples of the configured batch size number when you further scroll down to load the results. You can select from the available batch sizes of 200, 500, and 1000 assets. Setting a lower batch size number results in faster search response times.
+
+For example, if you set the result count limit to a batch size of 200 assets, Experience Manager Assets displays a batch size of 200 assets in the search results when you start performing the search. When you scroll down to navigate through the search results, the next batch of 200 assets is displayed. The process continues until all assets that match the search query are displayed. 
+
+To configure the asset batch size:
+
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Assets Configurations]** > **[!UICONTROL Assets Omnisearch Configuration]**.
+
+1. Select the result count limit and click **[!UICONTROL Save]**.
+
+   ![Assets batch size configuration](/help/release-notes/assets/assets-batch-size-configuration.png)
 
 ## Advanced search {#scope}
 

@@ -1,6 +1,6 @@
 ---
 title: Editing Page Properties
-description: Define the required properties for a page
+description: Learn how to define the properties required for managing a page in AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 ---
 # Editing Page Properties {#editing-page-properties}
@@ -70,7 +70,7 @@ The properties are distributed across several tabs.
 
 * **Vanity URL**
 
-  * Allows you to enter a vanity URL for this page, which can allow you to have a shorter and/or more expressive URL.
+  * Lets you enter a vanity URL for this page, which can allow you to have a shorter and/or more expressive URL.
   * For example, if the Vanity URL is set to `welcome` to the page identified by the path `/v1.0/startpage` for the website `http://example.com`, then `http://example.com/welcome` would be the vanity URL of `http://example.com/content/v1.0/startpage`
   
   >[!CAUTION]
@@ -98,7 +98,7 @@ The properties are distributed across several tabs.
   * **Alias** - Specifies an alias to be used with this page
     * For example, if you define an alias of `private` for the page `/content/wknd/us/en/magazine/members-only`, then this page can also be accessed via `/content/wknd/us/en/magazine/private`
     * Creating an alias sets the `sling:alias` property on the page node, which only impacts the resource, not the repository path.
-    * Pages accessed by aliases in the editor can not be published. [Publish options](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) in the editor are only available for pages accessed via their actual paths. 
+    * Pages accessed by aliases in the editor cannot be published. [Publish options](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) in the editor are only available for pages accessed via their actual paths. 
     * For further details see [Localized page names under SEO and URL Management Best Practices](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuration**
@@ -288,18 +288,6 @@ When editing a page you can use **Page Information** to define the page properti
 ### From the Sites Console - Multiple Pages {#from-the-sites-console-multiple-pages}
 
 From the **Sites** console you can select several pages then use **View Properties** to view and/or edit the page properties. This is referred to as bulk editing of page properties.
-
->[!NOTE]
->
->Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See Editing Properties of Multiple Assets for details.
->
->There is also the Bulk Editor, which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
-
-<!--
->Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
->
->There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
--->
 
 You can select multiple pages for bulk editing by various methods, including:
 

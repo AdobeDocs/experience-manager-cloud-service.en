@@ -52,7 +52,7 @@ Before you start reading this section, you should have the following information
 
 >[!TIP]
 >
->For the purpose of onboarding, we recommend that you initially add users who will participate in the immediate tasks, such as administrators, developers and content authors. You can continue the rest of the onboarding without adding all users. After you have finished onboarding, you can scale to a larger number of users later.
+>For the purpose of onboarding, Adobe recommends that you initially add users who will participate in the immediate tasks, such as administrators, developers and content authors. You can continue the rest of the onboarding without adding all users. After you have finished onboarding, you can scale to a larger number of users later.
 
 ## View AEM Product Profiles {#view-profiles}
 

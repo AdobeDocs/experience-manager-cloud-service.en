@@ -45,4 +45,4 @@ Now that you have created a Content Fragment, you can move on to the final part 
 
 >[!TIP]
 >
->For complete details about managing Content Fragments, see the [Content Fragments documentation](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+>For complete details about managing Content Fragments, see the [Content Fragments documentation](/help/sites-cloud/administering/content-fragments/overview.md)

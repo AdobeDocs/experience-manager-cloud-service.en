@@ -1,6 +1,6 @@
 ---
 title: Configure Dynamic Media Publish Setup for Image Server
-description: Learn how to set up Publishing in Dynamic Media.
+description: Learn how to configure Dynamic Media Publish Setup for Image Server, covering, among other things, color management, security, and thumbnail images.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering

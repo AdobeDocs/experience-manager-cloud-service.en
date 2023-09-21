@@ -1,19 +1,19 @@
 ---
 title: Customizing and Extending Content Fragments
-description: A content fragment extends a standard asset.
+description: A content fragment extends a standard asset. Learn how you can customize them.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 ---
 # Customizing and Extending Content Fragments{#customizing-and-extending-content-fragments}
 
 Within Adobe Experience Manager as a Cloud Service a content fragment extends a standard asset; see:
 
-* [Creating and Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) and [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md) for further information about content fragments.
+* [Creating and Managing Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) and [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md) for further information about content fragments.
 
 * [Managing Assets](/help/assets/manage-digital-assets.md) for further information about standard assets.
 
 ## Architecture {#architecture}
 
-The basic [constituent parts](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) of a content fragment are:
+The basic [constituent parts](/help/sites-cloud/administering/content-fragments/overview.md#constituent-parts-of-a-content-fragment) of a content fragment are:
 
 * A *Content Fragment*,
 * consisting of one or more *Content Elements*,
@@ -74,7 +74,7 @@ As with standard assets, a content fragment is held under:
 
 #### Asset Permissions {#asset-permissions}
 
-For further details see [Content Fragment - Delete Considerations](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
+For further details see [Content Fragment - Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 #### Feature Integration {#feature-integration}
 
@@ -92,17 +92,17 @@ To integrate with Assets core:
 >
 >The [Content Fragment component is part of Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html). See [Developing Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html) for more details.
 
-Content fragments can be referenced from AEM pages, just as any other asset type. AEM provides the **[Content Fragment core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)** - a [component that allows you to include content fragments on your pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend this **[Content Fragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)** core component.
+Content fragments can be referenced from AEM pages, just as any other asset type. AEM provides the **[Content Fragment core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)** - a [component that lets you include content fragments on your pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend this **[Content Fragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)** core component.
 
 * The component uses the `fragmentPath` property to reference the actual content fragment. The `fragmentPath` property is handled in the same manner as similar properties of other asset types; for example, when the content fragment is moved to another location.
 
-* The component allows you to select the variation to be displayed.
+* The component lets you select the variation to be displayed.
 
 * Additionally, a range of paragraphs can be selected to restrict the output; for example, this can be used for multi-column output.
 
 * The component allows in-between content:
 
-  * Here the component allows you to place other assets (images, and so on) in between the paragraphs of the referenced fragment.
+  * Here the component lets you place other assets (images, and so on) in between the paragraphs of the referenced fragment.
 
   * For in-between content you need to:
 
@@ -172,7 +172,7 @@ The following three interfaces can serve as entry points:
 
 * **Content Fragment** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-  This interface allows you to work with a content fragment in an abstract way.
+  This interface lets you work with a content fragment in an abstract way.
 
   The interface provides you with the means to:
 
@@ -252,7 +252,7 @@ It should be noted that:
 
 * Tasks that might require additional effort:
 
-  * It is strongly recommended to create new variations from `ContentFragment`. This ensures that all elements share this variation, and that appropriate global data structures are updated as required to reflect the newly created variation in the content structure.
+  * It is strongly recommended to create new variations from `ContentFragment`. This ensures that all elements share this variation, and that appropriate global data structures are updated as required to reflect the newly-created variation in the content structure.
 
   * Removing existing variations through an element, using `ContentElement.removeVariation()`, will not update the global data structures assigned to the variation. To ensure these data structures are kept in sync, use `ContentFragment.removeVariation()` instead, which removes a variation globally.
 
@@ -321,7 +321,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Example: Specifying the auto-save interval {#example-specifying-the-auto-save-interval}
 
-The [auto save interval](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#save-close-and-versions) (measured in seconds) can be defined using the configuration manager (ConfMgr):
+The [auto save interval](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions) (measured in seconds) can be defined using the configuration manager (ConfMgr):
 
 * Node: `<conf-root>/settings/dam/cfm/jcr:content`
 * Property Name: `autoSaveInterval`
