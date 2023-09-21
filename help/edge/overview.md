@@ -9,7 +9,7 @@ description: Introduction to Edge Delivery Services
 >
 >This is a draft, feel free to update/modify as needed.
 
-With Edge Delivery Services, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering high-impact experiences that are fast to author and develop. It is a composable set of services that enables a rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. As such, with Edge Delivery Services you can improve conversion, reduce costs and provide extreme content velocity.
+With Edge Delivery Services, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering high-impact experiences that are fast to author and develop. It is a composable set of services that enables a rapid development environments where authors can update and publish quickly, and new sites are launched rapidly. As such, with Edge Delivery Services you can improve conversion, reduce costs and provide extreme content velocity.
 
 By leveraging Edge Delivery you can:
 
