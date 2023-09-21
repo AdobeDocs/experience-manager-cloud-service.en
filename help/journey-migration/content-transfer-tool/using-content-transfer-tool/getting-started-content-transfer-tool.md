@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Content Transfer Tool
-description: Getting Started with Content Transfer Tool
+description: Learn how to get started with Content Transfer Tool
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 ---
 # Getting Started with Content Transfer Tool {#getting-started-content-transfer-tool}
@@ -134,7 +134,7 @@ To populate the migration set you created in the Cloud Acceleration Manager, you
       >If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
 
 
-   1. **Paths to be included**: Use path browser to select paths which need to be migrated. Path picker accepts input by typing or by selection.
+   1. **Paths to be included**: Use path browser to select paths which need to be migrated. Path picker accepts input by typing or by selection. 
 
       >[!IMPORTANT]
       >Following paths are restricted while creating a migration set:
@@ -158,7 +158,7 @@ To populate the migration set you created in the Cloud Acceleration Manager, you
 1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
-   
+
 ### Determining migration set size {#migration-set-size}
 
 After creating a migration set, it is highly recommended to run a size check on the migration set before starting an Extraction process. 

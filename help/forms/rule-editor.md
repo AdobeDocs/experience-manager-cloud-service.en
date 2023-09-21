@@ -1,6 +1,6 @@
 ---
 title: How to use Adaptive Forms rule editor?
-description: Adaptive Forms rule editor allows you to add dynamic behavior and build complex logic into forms without coding or scripting. Get started on understanding a rule and guidelines for choosing a rule construct. Learn more on available operator types and events in rule editor.
+description: Adaptive Forms rule editor lets you add dynamic behavior and build complex logic into forms without coding or scripting. Get started on understanding a rule and guidelines for choosing a rule construct. Learn more on available operator types and events in rule editor.
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
@@ -37,7 +37,7 @@ Users added to the forms-power-users group can create scripts and edit existing 
 
 A rule is a combination of actions and conditions. In rule editor, actions include activities such as hide, show, enable, disable, or compute the value of an object in a form. Conditions are Boolean expressions that are evaluated by performing checks and operations on the state, value, or property of a form object. Actions are performed based on the value ( `True` or `False`) returned by evaluating a condition.
 
-The rule editor provides a set of predefined rule types, such as When, Show, Hide, Enable, Disable, Set Value Of, and Validate to help you write rules. Each rule type allows you to define conditions and actions in a rule. The document further explains each rule type in detail.
+The rule editor provides a set of predefined rule types, such as When, Show, Hide, Enable, Disable, Set Value Of, and Validate to help you write rules. Each rule type lets you define conditions and actions in a rule. The document further explains each rule type in detail.
 
 A rule typically follows one of the following constructs:
 
@@ -122,7 +122,7 @@ For example, a list has four options: Red, Blue, Green, and Yellow. While creati
 
 ![Multi value displays options](assets/multivaluefcdisplaysoptions.png)
 
-While writing a When rule, you can trigger the Clear Value Of action. Clear Value Of action clears the value of the specified object. Having Clear Value of as an option in the When statement allows you to create complex conditions with multiple fields.
+While writing a When rule, you can trigger the Clear Value Of action. Clear Value Of action clears the value of the specified object. Having Clear Value of as an option in the When statement lets you create complex conditions with multiple fields.
 
 ![Clear value of](assets/clearvalueof.png)
 
@@ -144,9 +144,21 @@ For more information about configuring services in form data model, see [[!DNL E
 
 For more information about configuring services in form data model, see [[!DNL Experience Manager Forms] Data Integration](data-integration.md).
 
-The **[!UICONTROL Set Property]** rule type allows you to set the value of a property of the specified object based on a condition action.
+The **[!UICONTROL Set Property]** rule type lets you set the value of a property of the specified object based on a condition action. You can set property to one of the following:
+* visible (Boolean)
+* dorExclusion (Boolean)
+* chartType (String)
+* title (String)
+* enabled (Boolean)
+* mandatory (Boolean)
+* validationsDisabled (Boolean)
+* validateExpMessage (String)
+* value (Number, String, Date)
+* items (List)
+* valid (Boolean)
+* errorMessage (String)
 
-It enables you to define rules to add check boxes dynamically to the Adaptive Form. You can use custom function, a form object, or an object property to define a rule.
+For example, it enables you to define rules to add check boxes dynamically to the Adaptive Form. You can use custom function, a form object, or an object property to define a rule.
 
 ![Set Property](assets/set_property_rule_new.png)
 
@@ -154,7 +166,7 @@ To define a rule based on a custom function, select **[!UICONTROL Function Outpu
 
 To define a rule based on a form object, select **[!UICONTROL Form Object]** from the drop-down list, and drag-and-drop a form object from the **[!UICONTROL Form Objects]** tab. If the condition action is met, the number of checkboxes defined in the form object are added to the Adaptive Form.
 
-A Set Property rule based on an object property allows you to add the number of checkboxes in an Adaptive Form based on another object property that is included in the Adaptive Form.
+A Set Property rule based on an object property lets you add the number of checkboxes in an Adaptive Form based on another object property that is included in the Adaptive Form.
 
 The following figure depicts an example of dynamically adding checkboxes based on the number of drop-down lists in the Adaptive Form:
 
@@ -180,7 +192,7 @@ The following figure depicts an example of dynamically adding checkboxes based o
 
 ### [!UICONTROL Set Value of] {#set-value-of}
 
-The **[!UICONTROL Set Value of]** rule type allows you to set the value of a form object depending on whether the specified condition is satisfied or not. The value can be set to a value of another object, a literal string, a value derived from a mathematical expression or a function, a value of a property of another object, or the output of a Form Data Model service. Similarly, you can check for a condition on a component, string, property, or values derived from a function or mathematical expression.
+The **[!UICONTROL Set Value of]** rule type lets you set the value of a form object depending on whether the specified condition is satisfied or not. The value can be set to a value of another object, a literal string, a value derived from a mathematical expression or a function, a value of a property of another object, or the output of a Form Data Model service. Similarly, you can check for a condition on a component, string, property, or values derived from a function or mathematical expression.
 
 The **Set Value Of** rule type is not available for all form objects, such as panels and toolbar buttons. A standard Set Value Of rule has the following structure:
 
@@ -256,7 +268,7 @@ A typical Enable rule is structured as follows:
 
 ### [!UICONTROL Disable] {#disable}
 
-Similar to the Enable rule type, the **[!UICONTROL Disable]** rule type allows you to enable or disable a form object based on whether a condition is satisfied or not. The Disable rule type also triggers the Enable action in case the condition is not satisfied or returns `False`.
+Similar to the Enable rule type, the **[!UICONTROL Disable]** rule type lets you enable or disable a form object based on whether a condition is satisfied or not. The Disable rule type also triggers the Enable action in case the condition is not satisfied or returns `False`.
 
 A typical Disable rule is structured as follows:
 
@@ -354,7 +366,7 @@ The toggle button, when tapped, toggles the form objects and functions pane.
 
 ### D. Visual rule editor {#visual-rule-editor}
 
-Visual rule editor is the area in the visual editor mode of the rule editor user interface where you write rules. It allows you to select a rule type and accordingly define conditions and actions. When defining conditions and actions in a rule, you can drag-drop form objects and functions from the Form Objects and Functions pane.
+Visual rule editor is the area in the visual editor mode of the rule editor user interface where you write rules. It lets you select a rule type and accordingly define conditions and actions. When defining conditions and actions in a rule, you can drag-drop form objects and functions from the Form Objects and Functions pane.
 
 For more information about using visual rule editor, see [Write rules](rule-editor.md#p-write-rules-p).
 <!-- 
@@ -617,7 +629,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a clienPerform the following steps t library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -639,6 +651,10 @@ After you have added your client library in the CRX repository, use it in your A
    [![Using custom functions to create a rule](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
   
 1. Tap **[!UICONTROL Done]**. Your custom function is added.
+
+   >[!NOTE]
+   >
+   > To invoke a form data model from rule editor using custom functions, [see here](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services). 
 
 #### Function declaration supported types {#function-declaration-supported-types}
 
@@ -705,7 +721,7 @@ var c = {
 
 ## Manage rules {#manage-rules}
 
-Any existing rules on a form object are listed when you tap the object and tap ![edit-rules1](assets/edit-rules-icon.svg). You can view the title and a preview the rule summary. Furthermore, the UI allows you to expand and view the complete rule summary, change the order of rules, edit rules, and delete rules.
+Any existing rules on a form object are listed when you tap the object and tap ![edit-rules1](assets/edit-rules-icon.svg). You can view the title and a preview the rule summary. Furthermore, the UI lets you expand and view the complete rule summary, change the order of rules, edit rules, and delete rules.
 
 ![List-rules](assets/list-rules.png)
 
@@ -750,7 +766,7 @@ To copy-paste rules, do the following:
 
 ## Nested expressions {#nestedexpressions}
 
-Rule editor allows you to use multiple AND and OR operators to create nested rules. You can mix multiple AND and OR operators in rules.
+Rule editor lets you use multiple AND and OR operators to create nested rules. You can mix multiple AND and OR operators in rules.
 
 Following is an example of a nested rule that displays a message to the user about eligibility for a child's custody when the required conditions are met.
 
@@ -762,7 +778,7 @@ You can also drag-and-drop conditions within a rule to edit it. Tap and hover ov
 
 ## Date expression conditions {#dateexpression}
 
-Rule editor allows you to use date comparisons to create conditions.
+Rule editor lets you use date comparisons to create conditions.
 
 Following is an example condition that displays a static text object if the mortgage on the house is already taken, which the user signifies by filling up the date field.
 
@@ -776,7 +792,7 @@ When filled date is earlier than the current date, the form displays the text me
 
 ## Number comparison conditions {#number-comparison-conditions}
 
-Rule editor allows you to create conditions that compare two numbers.
+Rule editor lets you create conditions that compare two numbers.
 
 Following is an example condition that displays a static text object if the number of months an applicant is staying at current address is less than 36.
 
@@ -802,7 +818,9 @@ The following rule shows how you configure the Invoke service action to accompli
 
 ![Example-invoke-services](assets/example-invoke-services.png)
 
-Invoke Form Data Model service using Adaptive Form rule
+>[!NOTE]
+>
+>If the input is of array type, the fields that support arrays are visible under the Output drop-down section.
 
 ### Triggering multiple actions using the When rule {#triggering-multiple-actions-using-the-when-rule}
 

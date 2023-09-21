@@ -11,7 +11,7 @@ Learn the powerful features of the Site rail to help you easily customize and ma
 
 ## Overview {#overview}
 
-The Site rail allows you to manage the theme and template resources of your site. [Like other rails](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) such as the Content Tree, References, or Timeline rails, the Site rail is displayed as the leftmost panel in the sites console, displaying information about the selected item. Unlike other rails, the Site rail only applies to Site roots.
+The Site rail lets you manage the theme and template resources of your site. [Like other rails](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) such as the Content Tree, References, or Timeline rails, the Site rail is displayed as the leftmost panel in the sites console, displaying information about the selected item. Unlike other rails, the Site rail only applies to Site roots.
 
 The Site rail is used to manage theme and template related information for your site including:
 

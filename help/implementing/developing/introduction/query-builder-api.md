@@ -345,7 +345,7 @@ You can also check the [Javadoc for the `PredicateEvaluator` classes](https://de
 
 The prefix of the class name (for example, `similar` in [`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) is the *principal property* of the class. This property is also the name of the predicate to use in the query (in lower case).
 
-For such principal properties, you can shorten the query and use `similar=/content/en` instead of the fully qualified variant `similar.similar=/content/en`. The fully qualified form must be used for all non-principal properties of a class.
+For such principal properties, you can shorten the query and use `similar=/content/en` instead of the fully-qualified variant `similar.similar=/content/en`. The fully-qualified form must be used for all non-principal properties of a class.
 
 ## Example Query Builder API Usage {#example-query-builder-api-usage}
 

@@ -1,11 +1,11 @@
 ---
 title: Working with Content Fragments (Assets - Content Fragments)
-description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service allow you to design, create, curate, and use page-independent content, ideal for page authoring and headless delivery.
+description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service allow you to design, create, curate, and use page-independent content, ideal for page authoring and headless delivery. Also how they can be used together with MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 ---
 # Working with Content Fragments {#working-with-content-fragments}
 
-With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md) They allow you to prepare content ready for use in multiple locations/over multiple channels, ideal for headless delivery.
+With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). They allow you to prepare content ready for use in multiple locations/over multiple channels, ideal for headless delivery. They can also be used together with [Multi-Site Management to enable you to reuse your content](#reusing-content-fragments-with-msm-assets).
 
 Content fragments contain structured content:
 
@@ -28,7 +28,11 @@ Content fragments can also be delivered in JSON format, using the Sling Model (J
 
 >[!NOTE]
 >
->Content Fragments are stored as **Assets**. They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** console, though they can still be managed from the **Assets** console. This section covers management from the **Assets** console.
+>Content Fragments are a Sites feature, but are stored as **Assets**. 
+>
+>They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** console, though they can still be managed from the **Assets** console. This section covers management from the **Assets** console.
+>
+>There are two editors for authoring Content Fragments. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console).
 
 This and the following pages cover the tasks for creating, configuring, maintaining and using your content fragments:
 
@@ -108,7 +112,7 @@ Together with the JSON export capabilities of AEM core components, this structur
 
 When accessed through the **Assets** console you can use MSM and create Live Copies for your fragments.
 
-For further details see [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md).
+For further details see [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md). This enables [inheritance](/help/assets/content-fragments/content-fragments-variations.md#inheritance) for both variations and individual fields of your fragments.
 
 >[!CAUTION]
 >

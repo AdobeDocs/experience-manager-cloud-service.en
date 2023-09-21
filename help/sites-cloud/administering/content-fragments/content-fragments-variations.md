@@ -3,9 +3,18 @@ title: Variations - Authoring Fragment Content
 description: Understand how variations allow you to author content for the fragment, then create variations of that content according to purpose. This provides added flexibility for both headless delivery and page authoring.
 feature: Content Fragments
 role: User
+hide: yes
+index: no
+hidefromtoc: yes
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
 ---
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 [Variations](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of AEM's content fragments, as they allow you to create and edit copies of the master content for use on specific channels, and/or scenarios, making both page authoring and headless content delivery even more flexible.
 
@@ -108,7 +117,7 @@ The format can be selected when the full-screen editor.
 
 ### Rich Text {#rich-text}
 
-Rich text editing allows you to format:
+Rich text editing lets you format:
 
 * Bold
 * Italic
@@ -145,7 +154,7 @@ Plain Text allows for rapid entry of content without formatting or markdown info
 >
 >For full information see the [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md) documentation.
 
-This allows you to format your text using markdown. You can define:
+This lets you format your text using markdown. You can define:
 
 * Headings
 * Paragraphs and Line Breaks
@@ -464,7 +473,7 @@ To delete an existing variation:
 
 **Master** is an integral part of a content fragment and by definition it holds the master copy of the content, whereas the variations hold the individual updated and tailored versions of that content. When Master is updated it is possible that these changes are also relevant to the variations and, therefore, need to be propagated to them..
 
-When editing a variation you have access to the action for synchronizing the current element of the variation with Master. This allows you to automatically copy changes made to Master to the required variation.
+When editing a variation you have access to the action for synchronizing the current element of the variation with Master. This lets you automatically copy changes made to Master to the required variation.
 
 >[!CAUTION]
 >
