@@ -49,15 +49,18 @@ You can engage with Adobe product teams via your provisioned product collaborati
 
 Steps to log a support ticket via Admin Console:
 
-1. Add ‘Edge Delivery’ in the title of the ticket.
+1. Add **Edge Delivery** in the title of the ticket.
 2. In the description, please provide the following details:
 
-* URL of the live site. For example: [www.mydomain.com].
-* URL of the origin (hlx URL)
+    * URL of the live website. For example: [www.mydomain.com].
+    * URL of the origin website (.hlx URL).
 
 ### How to access my Provisioned Product Collaboration Channel
 
-TR: We need details on how a customer receives the details of their Discord Channel and how they can use it.
+Given the value of direct communication channel with customers, all AEM customers at launch will establish a Slack channel for the purpose of speed, critical updates and scaled reporting on experience quality. You will receive an invitation from Adobe to join a Slack channel specific to your organization.
+
+For more information, see [Using the Slack Bot](https://www.hlx.live/docs/slack) document for more details.
+
 
 ## Useful Resources {#useful-resources}
 
