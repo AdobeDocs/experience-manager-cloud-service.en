@@ -41,9 +41,13 @@ Edge Delivery Services are part of Adobe Experience Manager and as such Edge Del
 
 You can also use Edge Delivery Services in combination with Adobe Target, Analytics and Launch.
 
+## Getting Access to Edge Delivery Services
+
+TBD
+
 ## Getting Help from Adobe {#adobe-gethelp}
 
-You can engage with Adobe product teams via your provisioned product collaboration channel to answer questions on product use or best practices. Please note that there are no SLT’s associated with the conversations via the product collaboration channel. If a product issue needs additional investigation and troubleshooting, and needs to meet response SLT’s, you can submit a support ticket following the [support process](https://experienceleague.adobe.com/?lang=en&support-tab=home#support).
+You can engage with Adobe product teams via your provisioned product collaboration channel (see below for access details) to answer questions on product use or best practices. Please note that there are no SLT’s associated with the conversations via the product collaboration channel. If a product issue needs additional investigation and troubleshooting, and needs to meet response SLT’s, you can submit a support ticket following the [support process](https://experienceleague.adobe.com/?lang=en&support-tab=home#support).
 
 ### Logging a Support Ticket
 
@@ -61,6 +65,9 @@ Given the value of direct communication channel with customers, all AEM customer
 
 For more information, see [Using the Slack Bot](https://www.hlx.live/docs/slack) document for more details.
 
+### What's Next
+
+Get started by reviewing the next article: [Authoring with Edge Delivery Services](/help/edge/overview.md).
 
 ## Useful Resources {#useful-resources}
 
