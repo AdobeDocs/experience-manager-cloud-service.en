@@ -14,7 +14,7 @@ With Edge Delivery Services, AEM delivers exceptional experiences that drive eng
 By leveraging Edge Delivery you can:
 
 * Create fast sites with a perfect Lighthouse Score and continuously monitor your site performance through real user monitoring (RUM).
-* Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document based authoring. As such, you can work with multiple content sources on the same website.
+* Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website.
 * Use a built-in experimentation framework that allows quick test creation, execution without performance impact and fast release to production of a test winner.
 
 ## How Edge Delivery works{#edge-works}
