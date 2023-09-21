@@ -1,9 +1,9 @@
 ---
-title: Introduction to Edge Delivery Services
-description: Introduction to Edge Delivery Services
+title: Getting Started with Edge Delivery Services
+description: Getting Started with Edge Delivery Services
 ---
 
-# Edge Delivery Services Introduction {#introduction-edge}
+# Getting Started with Edge Delivery Services {#getstart-edge}
 
 >[!NOTE]
 >
@@ -49,6 +49,22 @@ TBD
 
 You can engage with Adobe product teams via your provisioned product collaboration channel (see below for access details) to answer questions on product use or best practices. Please note that there are no SLT’s associated with the conversations via the product collaboration channel. If a product issue needs additional investigation and troubleshooting, and needs to meet response SLT’s, you can submit a support ticket following the [support process](https://experienceleague.adobe.com/?lang=en&support-tab=home#support).
 
+Adobe provides three channels to help you with Edge Delivery Services:
+
+* Access to community resources
+* Access you Product Collaboration Channel
+* Log a support ticket
+
+### Access Community Resources
+
+Adobe has two Community Resources to help you with Edge Delivery, Experience League Community [add link] and a Discord channel [add link].
+
+### How to access my Product Collaboration Channel
+
+Given the value of direct communication channel with customers, all AEM customers at launch will establish a Slack channel for the purpose of speed, critical updates and scaled reporting on experience quality. You will receive an invitation from Adobe to join a Slack channel specific to your organization.
+
+For more information, see [Using the Slack Bot](https://www.hlx.live/docs/slack) document for more details.
+
 ### Logging a Support Ticket
 
 Steps to log a support ticket via Admin Console:
@@ -59,15 +75,9 @@ Steps to log a support ticket via Admin Console:
     * URL of the live website. For example: [www.mydomain.com].
     * URL of the origin website (.hlx URL).
 
-### How to access my Provisioned Product Collaboration Channel
+## What's Next
 
-Given the value of direct communication channel with customers, all AEM customers at launch will establish a Slack channel for the purpose of speed, critical updates and scaled reporting on experience quality. You will receive an invitation from Adobe to join a Slack channel specific to your organization.
-
-For more information, see [Using the Slack Bot](https://www.hlx.live/docs/slack) document for more details.
-
-### What's Next
-
-Get started by reviewing the next article: [Authoring with Edge Delivery Services](/help/edge/overview.md).
+Get started by reviewing the next article: [Authoring with Edge Delivery Services](/help/edge/authoring.md).
 
 ## Useful Resources {#useful-resources}
 
