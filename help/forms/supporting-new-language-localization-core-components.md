@@ -44,7 +44,7 @@ AEM Forms currently support localization of Adaptive Forms content in English (e
 
 ![Add a locale to a repository](add-a-locale-adaptive-form-core-components.png)
 
-### 1. Clone your AEM as a Cloud Service Git repository {#clone-the-repository}
+### Clone your AEM as a Cloud Service Git repository {#clone-the-repository}
 
 1. Open the command line and choose a directory to store the repository, such as `/cloud-service-repository/`.
 
@@ -61,7 +61,7 @@ AEM Forms currently support localization of Adaptive Forms content in English (e
     After successful completion of command, a folder `<my-program>` is created. It contains the content cloned from the Git repository. In rest of the article, the  folder is reffred as, `[AEM Forms as a Cloud Service Git repostory]`.
 
 
-### 2. Add the new locale to the Guide Localization Service {#add-a-locale-to-the-guide-localization-service}
+### Add the new locale to the Guide Localization Service {#add-a-locale-to-the-guide-localization-service}
 
 1. Open the repository folder, cloned in previous section, in a plain text editor. 
 1. Navigate to the `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` folder. You can find the `<appid>` in the `archetype.properties` files of the project. 
@@ -72,7 +72,7 @@ AEM Forms currently support localization of Adaptive Forms content in English (e
 1. Add the [locale code for the language](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) you are looking to add, for example, add 'hi' for hindi.  
 1. Save and close the file. 
 
-### 3. Create a Client Library to add a locale
+### Create a Client Library to add a locale
 
 AEM Forms provides a sample client library to help you add new locales easily. You can download and add the `clientlib-it-custom-locale` client library from the Adaptive Forms Core Components repository on GitHub to your Forms as a Cloud Service repository. To add the client library, follow these steps:
 
@@ -82,7 +82,7 @@ AEM Forms provides a sample client library to help you add new locales easily. Y
 1. Navigate to `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` and paste the `clientlib-it-custom-locale` directory.
 
 
-### 4. Create a locale-specific file {#locale-specific-file}
+### Create a locale-specific file {#locale-specific-file}
 
 1. Navigate to `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. Locate the [English locale .json file on GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json), which contains the latest set of default strings included in the product.
@@ -92,7 +92,7 @@ AEM Forms provides a sample client library to help you add new locales easily. Y
 1. Save and Close the file. 
 
 
-### 4. Add locale support to the dictionary {#add-locale-support-for-the-dictionary}
+### Add locale support to the dictionary {#add-locale-support-for-the-dictionary}
 
 Perform this step only if the `<locale>` you are adding is not among `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -137,7 +137,7 @@ Perform this step only if the `<locale>` you are adding is not among `en`, `de`,
 
     ![Add the newly-created folders in the `filter.xml` under `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
-### 5. Commit the changes and deploy the pipeline {#commit-changes-in-repo-deploy-pipeline}
+### Commit the changes and deploy the pipeline {#commit-changes-in-repo-deploy-pipeline}
 
 Commit the changes to the GIT repository after adding a new locale support. Deploy your code using the full stack pipeline. Learn [how to set up a pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) to add new locale support.
 Once the pipeline is complete, the newly added locale appears in the AEM environment. 
