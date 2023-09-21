@@ -1,6 +1,6 @@
 ---
-title: Translate a Core Components based Adaptive Form
-description: Use machine translation or human translation to translate a Core Components based Adaptive Form
+title: How to translate a Core Components based Adaptive Form?
+description: Use machine translation or human translation to translate a Core Components based Adaptive Form in multiple languages.
 feature: Adaptive Forms
 ---
 # Use machine translation or human translation to translate a Core Components based Adaptive Form {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}

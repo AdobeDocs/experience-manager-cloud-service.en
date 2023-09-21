@@ -1,6 +1,6 @@
 ---
 title: Introduction to [!DNL AEM Forms] as a Cloud Service
-description: Discover AEM Forms and learn how it helps you produce business-ready forms and documents. Learn about Platform-as-a-Service (PaaS) and how to manage enterprise-class digital forms and business processes, and connect Forms to Adobe Sign and current data sources.
+description: Discover AEM Forms to produce business-ready forms. Learn about Platform-as-a-Service (PaaS), manage enterprise-class digital forms and connect Adobe Sign.
 landing-page-description: Understand how to use forms in AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 ---

@@ -1,6 +1,6 @@
 ---
-title: Use custom fonts
-description: Use custom fonts
+title: How to use custom fonts in AEM Forms?
+description: Leverage Forms as a Cloud Service to merge XDP templates, XDP-based PDFs, or Acrobat Forms with XML data, creating PDFs and adding custom fonts to your environment.
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
 ---
 # Use custom fonts

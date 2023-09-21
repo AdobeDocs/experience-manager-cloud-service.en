@@ -1,5 +1,5 @@
 ---
-title: Repeatability in Adaptive Form (core components)
+title: How to create repeatable panels in Adaptive Form Core Components
 description: Use the repeatability feature of the panel components to repeat similar sections in an adaptive form.
 role: Architect, Developer, Admin, User
 ---

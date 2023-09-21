@@ -1,6 +1,6 @@
 ---
 title: How to use [!DNL Adobe Sign] in an Adaptive Form?
-description: You can enable e-signature ([!DNL Adobe Sign]) workflows for an Adaptive Form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign forms from mobile devices.
+description: Enable e-signature Adobe Sign workflows to Adaptive Forms to automate signing workflows, simplify signature processes and e-sign forms from mobile devices.
 topic-tags: develop
 feature: Adaptive Forms
 role: User

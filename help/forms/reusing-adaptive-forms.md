@@ -1,7 +1,6 @@
 ---
-title: Reuse metadata properties of an Adaptive Form
-seo-title: Reuse metadata properties of an Adaptive Form
-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
+title: How to reuse metadata properties of an Adaptive Form?
+description: Using metadata reuse an existing Adaptive Form to create new Adaptive Forms.
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
 ---

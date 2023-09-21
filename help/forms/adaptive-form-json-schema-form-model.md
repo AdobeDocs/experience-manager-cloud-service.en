@@ -1,6 +1,6 @@
 ---
 title: Design JSON Schema for an Adaptive Form
-description: Learn how to create Adaptive Forms using JSON schema as form model. You can use existing JSON schemas to create Adaptive Forms. Dig deeper with a sample of a JSON schema, pre-configure fields in JSON schema definition, limit acceptable values for an Adaptive Form component, and learn non-supported constructs.
+description: Create Adaptive Forms using JSON schema as form model or use existing JSON schemas to create Adaptive Forms.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate

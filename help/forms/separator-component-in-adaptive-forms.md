@@ -1,8 +1,6 @@
 ---
-title: Separator component in Adaptive Forms
-seo-title: Separator component in Adaptive Forms
-description: You can use the separator component to visually segregate sections of a form.
-seo-description: You can use the separator component to visually segregate sections of a form.
+title: What is separator component in Adaptive Forms?
+description: Separator component in Adaptive Forms help to visually segregate sections of a form.
 uuid: f8d2aed3-52aa-437f-bfe3-0c8779e7986c
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
