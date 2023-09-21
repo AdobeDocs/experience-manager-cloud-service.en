@@ -11,7 +11,7 @@ description: Authoring with Edge Delivery Services
 
 With Edge Delivery, authoring is easy, fast and flexible. You can create and update content either by using AEM authoring or document-based authoring. In the case of document-based authoring  you can work with a variety of sources like Microsoft Word or Goggle Docs. Documents from these sources become pages on your website. Headings, lists, images, font elements, videos can all be transferred from the initial source into your website. You can add metadata for SEO purposes or use blocks to work with structured content and add functionality to you website. Adding and updating content is done instantly without a rebuild process.  After you are done editing you use the sidekick browser extension to either preview, publish or delete content.
 
-## Edge Delivery Services and Github {#publishing-edge}
+## Edge Delivery Services and Github {#github-edge}
 
 Edge Delivery leverages Github so customers can manage and deploy code directly from their Github repository. For example, you can write content in either Google Docs or Microsoft Word and the functionality of your site can be developed by using CSS and Javascript in GitHub . Every resource that you put into your GitHub repository is available on your website.
 

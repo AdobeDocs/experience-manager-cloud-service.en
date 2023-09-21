@@ -11,7 +11,7 @@ description: Publishing with Edge Delivery Services
 
 With Edge Delivery, you can create rapid development environment where authors can update and publish quickly, and new sites can be launched rapidly. Since you can work with multiple content sources on the same website, publishing is seamless and streamlined regardless of you chosen source.
 
-## Edge Delivery Services and Github {#publishing-edge}
+## Edge Delivery Services and Github {#github-edge}
 
 Edge Delivery leverages Github so customers can manage and deploy code directly from their Github repository. Edge Delivery uses a buildless approach that runs directly from your GitHub repository. This means that after installing the AEM GitHub bot on your repository, websites are automatically created for each of your branches from content preview to production. Every resource that you put into your GitHub repository is available on your website.
 
