@@ -8,6 +8,7 @@ description: Using with Edge Delivery Services
 >[!NOTE]
 >
 >This is a draft, feel free to update/modify as needed.
+>This content is only viewable from inside the Adobe Firewall (VPN) and will be published live on Tuesday September 26, 2023.
 
 With Edge Delivery, authoring is easy, fast and flexible. You can create and update content either by using AEM authoring or document-based authoring. In the case of document-based authoring, you can work with a variety of sources like Microsoft Word and Goggle Docs. Documents from these sources become pages on your website. Headings, lists, images, font elements, videos can all be transferred from the initial source into your website. You can add metadata for SEO purposes or use blocks to work with structured content and add functionality.
 
