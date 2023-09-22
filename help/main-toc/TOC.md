@@ -729,8 +729,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [FAQ](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
   + [Getting Started with Edge Delivery](/help/edge/overview.md)
-  + [Using Edge Delivery](/help/edge/authoring.md)
-  + [Publishing](/help/edge/publishing.md)
+  + [Using Edge Delivery](/help/edge/authoring-publishing.md)
 + Headless {#headless}
   + [What is a Headless CMS?](/help/headless/what-is-headless.md)
   + [Introduction to AEM Headless](/help/headless/introduction.md)
