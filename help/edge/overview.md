@@ -8,6 +8,7 @@ description: Getting Started with Edge Delivery Services
 >[!NOTE]
 >
 >This is a draft, feel free to update/modify as needed.
+>This content is only viewable from inside the Adobe Firewall (VPN) and will be published live on Tuesday September 26, 2023.
 
 With Edge Delivery Services, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering high-impact experiences that are fast to author and develop. It is a composable set of services that enables a rapid development environments where authors can update and publish quickly, and new sites are launched rapidly. As such, with Edge Delivery Services you can improve conversion, reduce costs and provide extreme content velocity.
 
@@ -21,7 +22,7 @@ By leveraging Edge Delivery you can:
 
 The following diagram illustrates how you can edit content in Microsoft Word (document-based editing) and publish to Edge Delivery. It also shows the traditional AEM publishing method using the various editors.
 
-![Edge Delivery Architecture](assets/edgedelivery2.png)
+![Edge Delivery Architecture](assets/edgedelivery.png)
 
 Edge Delivery is a composable set of services that allows for a high degree of flexibility in how you author content on your website. As mentioned previously, you can use both [AEM authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) and [document based authoring](https://www.hlx.live/docs/authoring).
 
@@ -43,7 +44,7 @@ You can also use Edge Delivery Services in combination with Adobe Target, Analyt
 
 ## Getting Access to Edge Delivery Services
 
-TBD
+Its easy to get started using Edge Delivery Services. Get started by following the [Getting Started - Developer Tutorial](https://www.hlx.live/developer/tutorial).
 
 ## Getting Help from Adobe {#adobe-gethelp}
 
@@ -57,7 +58,7 @@ Adobe provides three channels to help you with Edge Delivery Services:
 
 ### Access Community Resources
 
-Adobe has two Community Resources to help you with Edge Delivery, Experience League Community [add link] and a Discord channel [add link].
+Adobe has two Community Resources to help you with Edge Delivery, [Experience League Community](https://adobe.ly/3RzitVw) and a [Discord channel](https://discord.gg/YFTKQK8M).
 
 ### How to access my Product Collaboration Channel
 
