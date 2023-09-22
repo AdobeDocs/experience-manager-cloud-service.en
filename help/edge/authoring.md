@@ -18,7 +18,7 @@ You can take two different paths to author with Edge Delivery Services:
 
 ## Edge Delivery Services and Github {#github-edge}
 
-Edge Delivery leverages Github so customers can manage and deploy code directly from their Github repository. For example, you can write content in either Google Docs or Microsoft Word and develop the functionality of your site by using CSS and Javascript in GitHub . Every resource that you put into your GitHub repository is available on your website without a build process.
+Edge Delivery leverages Github so customers can manage and deploy code directly from their Github repository. For example, you can write content in either Google Docs or Microsoft Word and develop the functionality of your site by using CSS and Javascript in GitHub . Websites are automatically created for each of your branches from content preview to production. Every resource that you put into your GitHub repository is available on your website without a build process.
 
 ## Using the Sidekick {#using-sidekick}
 
