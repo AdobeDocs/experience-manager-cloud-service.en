@@ -10,12 +10,11 @@ description: Learn to add new locales for an Adaptive Form.
 | Foundation Components  |    [Click here](supporting-new-language-localization.md)                  |
 | Core Components     | This article         |
 
-AEM Forms provide out of the box support for English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. 
+AEM Forms provide out of the box support for English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. You can add support for more locales also, like Hindi(hi_IN). 
 
 ## How is the locale selected for an Adaptive Form?
 
-
-There are two methods for identifying and selecting the locale of an Adaptive Form when it is rendered:
+Before you start with adding new locale for Adaptive Forms, build an understanding about how a locale is selected for an Adaptive Form. There are two methods for identifying and selecting the locale of an Adaptive Form when it is rendered:
 
 * **Using the [locale] Selector in the URL**: When rendering an Adaptive Form, the system identifies the requested locale by inspecting the [locale] selector in the adaptive form's URL. The URL follows this format: http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled. The use of the [locale] selector allows for caching of the Adaptive Form.
 
