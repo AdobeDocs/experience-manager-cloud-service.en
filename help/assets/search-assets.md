@@ -40,9 +40,10 @@ Use the **[!UICONTROL Filters]** panel to search for assets, folders, tags, and 
 ## Understand asset search interface {#searchui}
 
 Familiarize yourself with the asset search interface and the available actions.
-
+<!--
 ![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
-
+-->
+![Understand Experience Manager Assets search results interface](assets/aem-search-interface.png)
 *Figure: Understand [!DNL Experience Manager Assets] search results interface.*
 
 **A.** Save search as a smart collection. **B.** Filters or predicates to narrow the search results. **C.** Display files, folders, or both. **D.** Click Filters to open or close the left rail. **E.** Search location is DAM. **F.** Omnisearch field with user-provided search keyword. **G.** Select the loaded search results. **H.** Number of displayed search results out of the total search results. **I.** Close search. **J.** Switch between card view and list view.
