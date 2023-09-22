@@ -13,7 +13,7 @@ With Edge Delivery, authoring is easy, fast and flexible. You can create and upd
 
 You can take two different paths to author with Edge Delivery Services:
 
-* Document-based authoring (such as Microsoft Word or Google Docs) - Refer to this link (add Helix link)
+* Document-based authoring (such as Microsoft Word or Google Docs) - [Learn more here.](https://www.hlx.live/docs/authoring)
 * Page Editor/Universal Editor/Content Fragments Editor - Contact your Adobe Sales Representative
 
 ## Edge Delivery Services and Github {#github-edge}
