@@ -8,7 +8,7 @@ exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
 This section describes how to create a branch for your program in Cloud Manager.
 
 >[!NOTE]
->See [Using the Wizard in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=en) to learn how to create an AEM application project in Cloud Manager using the wizard.
+>See [Using the Wizard in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=en) to learn how to create an AEM application project in Cloud Manager using the wizard.
 
 ## Objective {#objective}
 
@@ -16,24 +16,24 @@ The following section describes how to create a branch for your program in Cloud
 
 ## Steps to Create a Branch for your Screens Project in Cloud Manager {#steps-branch-creation}
 
-1. Navigate to Cloud Manager and select the icon to get to Cloud Manager Overview page.
+1. Navigate to Cloud Manager and select the icon so you can get to the Cloud Manager Overview page.
  
-1. Click on **Create** to create your branch and project.
+1. To create your branch and project, click **Create**.
 
    ![image](/help/screens-cloud/assets/onboarding/create-branch1.png)
  
-1. Select the **Title** and **New Branch Name** from **Create a Branch and Project** wizard and click on **Create**.
+1. Select the **Title** and **New Branch Name** from the **Create a Branch and Project** wizard and click **Create**.
 
    ![image](/help/screens-cloud/assets/onboarding/create-branch2.png)
  
-1. You will see the call-to-action card on Cloud Manager’s **Overview** page update the status as project creation in progress.
+1. You see the call-to-action card on Cloud Manager's **Overview** page update the status as project creation in progress.
 
     ![image](/help/screens-cloud/assets/onboarding/create-branch3.png)
  
-1. Once the project creation is successfully complete, you will see the call-to-action card update in Cloud Manager’s **Overview** page.  
+1. After the project creation is successfully completed, you see the call-to-action card update in Cloud Manager's **Overview** page.  
 
    ![image](/help/screens-cloud/assets/onboarding/create-branch4.png)
 
 ## What's Next {#whats-next}
 
-Once you have learnt how to create a branch for your project in Cloud Manager, you are now ready to move on to the next step in Onboarding process and that is, [Creating and Setting up the Environment](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md).
+When you have learned how to create a branch for your project in Cloud Manager, you are ready for the next step in the Onboarding process: [Creating and Setting up the Environment](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md).
