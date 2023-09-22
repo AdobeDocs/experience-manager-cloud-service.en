@@ -293,14 +293,12 @@ To save data in a tabular form use, Microsoft SharePoint list. To configure an M
 1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
     * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
     * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
-    * Add the API permissions `offline_access` and `Sites.Manage.All` to provide read/write permissions.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` to provide read/write permissions. Also, add `AllSites.Manage` in the **Sharepoint** tab to interact remotely with SharePoint data.
     * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
 
-   <!--
-    >[!NOTE]
-    >
-    > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
-    -->
+      >[!NOTE]
+      >
+      > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
 
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
