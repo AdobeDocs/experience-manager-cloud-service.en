@@ -1,9 +1,9 @@
 ---
-title: How to Add support for new locales to an adaptive form based on core components?
-description: AEM Forms allow you to add new locales for localizing adaptive forms. 
+title: How to Add support for new locales to an Adaptive Form based on core components?
+description: Learn to add new locales for an Adaptive Form. 
 ---
-# Add a locale for Adaptive Forms based on Core Components {#supporting-new-locales-for-adaptive-forms-localization}
 
+# Add a locale for Adaptive Forms based on Core Components {#supporting-new-locales-for-adaptive-forms-localization}
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -12,21 +12,33 @@ description: AEM Forms allow you to add new locales for localizing adaptive form
 
 AEM Forms provide out of the box support for English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. You can add support for more locales also, like Hindi(hi_IN). 
 
-## Understanding locale dictionaries {#about-locale-dictionaries}
+## How is the locale selected for an Adaptive Form?
 
-The localization of adaptive forms relies on two types of locale dictionaries:
+Before you start with adding new locale for Adaptive Forms, build an understanding about how a locale is selected for an Adaptive Form. There are two methods for identifying and selecting the locale of an Adaptive Form when it is rendered:
 
-*   **Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions. It is managed as a set of XLIFF files for each locale and you can access it at `[author-instance]/libs/cq/i18n/gui/translator.html`.
+* **Using the [locale] Selector in the URL**: When rendering an Adaptive Form, the system identifies the requested locale by inspecting the [locale] selector in the adaptive form's URL. The URL follows this format: http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled. The use of the [locale] selector allows for caching of the Adaptive Form.
 
-*   **Global dictionaries** There are two global dictionaries, managed as JSON objects, in AEM client library. These dictionaries contain default error messages, month names, currency symbols, date and time patterns, and so on. You can find these dictionaries at `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. These locations contain separate folders for each locale. Because global dictionaries are not updated frequently, keeping separate JavaScript files for each locale enables browsers to cache them and reduce network bandwidth usage when accessing different adaptive forms on same server.
+* Retrieving the parameters in the order listed below:
+
+    * **Request parameter `afAcceptLang`**: To override the user's browser locale, you can pass the afAcceptLang request parameter. For example, this URL enforces rendering the form in Canadian French locale: `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
+    
+    * **Browser locale (Accept-Language Header)**: The system also considers the user's browser locale, which is specified in the request using the `Accept-Language` header.
+
+    If a client library for the requested locale is not available, the system checks if a client library exists for the language code within the locale. For instance, if the requested locale is `en_ZA` (South African English) and there's no client library for `en_ZA`, the Adaptive Form uses the client library for en (English) if available. If neither is found, the Adaptive Form resorts to the dictionary for the `en` locale.
+
+    Once the locale is identified, the Adaptive Form selects the corresponding form-specific dictionary. If the dictionary for the requested locale is not found, it defaults to using the dictionary in the language in which the Adaptive Form was authored.
+
+    In cases where no locale information is available, the Adaptive Form is displayed in its original language, which is the language used during the form's development
+
 
 ## Prerequisites {#prerequistes}
 
 Before you start adding support for a new locale, 
 
-* Install a plain text editor (IDE) for easier editing. The examples in this document are based on Microsoft VS Code.
-* Clone the Adaptive Forms Core Components repository. To clone the repository: 
-    1. Open the command line or teminal window and navigate to a location to store the repository. For example `/adaptive-forms-core-components`
+* Install a plain text editor (IDE) for easier editing. The examples in this document are based on Microsoft® Visual Studio Code.
+* Install a version of [Git](https://git-scm.com), if not available on your machine. 
+* Clone the [Adaptive Forms Core Components](https://github.com/adobe/aem-core-forms-components) repository. To clone the repository: 
+    1. Open the command line or terminal window and navigate to a location to store the repository. For example `/adaptive-forms-core-components`
     1. Run the following command to clone the repository:
 
         ``` SHELL
@@ -35,18 +47,18 @@ Before you start adding support for a new locale,
 
         ```
         
-    The repository includes a client library necessary for adding a locale.
+    The repository includes a client library necessary for adding a locale. In rest of the article, the folder is reffred as, [Adaptive Forms Core Components repository].
 
 
 ## Add a locale {#add-localization-support-for-non-supported-locales}
 
-AEM Forms currently support localization of Adaptive Forms content in English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. To add support for a new locale at Adaptive Forms runtime, follow these steps:
+To add support for a new locale, follow these steps:
 
 ![Add a locale to a repository](add-a-locale-adaptive-form-core-components.png)
 
-### Clone your AEM as a Cloud Service Git repository {#clone-the-repository}
+### 1. Clone your AEM as a Cloud Service Git repository {#clone-the-repository}
 
-1. Open the command line and choose a directory to store the repository, such as `/cloud-service-repository/`.
+1. Open the command line and choose a directory to store your AEM Forms as a Cloud Service repository, such as `/cloud-service-repository/`.
 
 1. Run the following command to clone the repository:
 
@@ -56,47 +68,47 @@ AEM Forms currently support localization of Adaptive Forms content in English (e
 
     ```
     
-    Replace `<my-org>` and `<my-program>` in the above URL with your organisation name and program name. For detailed instructions to obtain the organisation name, program name, or the complete path of your Git repository and the credentials required to clone the repository, refer to the [Accessing Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) article. 
+    Replace `<my-org>` and `<my-program>` in the above URL with your organization name and program name. For detailed instructions to obtain the organization name, program name, or the complete path of your Git repository and the credentials required to clone the repository, refer to the [Accessing Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) article. 
 
-    After successful completion of command, a folder `<my-program>` is created. It contains the content cloned from the Git repository. In rest of the article, the  folder is reffred as, `[AEM Forms as a Cloud Service Git repostory]`.
+    After successful completion of command, a folder `<my-program>` is created. It contains the content cloned from the Git repository. In rest of the article, the  folder is reffred as, `[AEM Forms as a Cloud Service Git repository]`.
 
 
-### Add the new locale to the Guide Localization Service {#add-a-locale-to-the-guide-localization-service}
+### 2. Add the new locale to the Guide Localization Service {#add-a-locale-to-the-guide-localization-service}
 
-1. Open the repository folder, cloned in previous section, in a plain text editor. 
-1. Navigate to the `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` folder. You can find the `<appid>` in the `archetype.properties` files of the project. 
-1. Open the `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config/Guide Localization Service.cfg.json` file for editing. If the file does not exist, create it. A sample file with supported locales looks like the following:
+1. Open the repository folder, cloned in the previous section, in a plain text editor. 
+1. Navigate to the `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` folder. You can find the `<appid>` in the `archetype.properties` files of the project. 
+1. Open the `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config/Guide Localization Service.cfg.json` file for editing. If the file does not exist, create it. A sample file with supported locales looks like the following:
 
     ![A sample Guide Localization Service.cfg.json](locales.png)
 
-1. Add the [locale code for the language](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) you are looking to add, for example, add 'hi' for hindi.  
+1. Add the [locale code for the language](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) that you are looking to add, for example, add 'hi' for hindi.  
 1. Save and close the file. 
 
-### Create a Client Library to add a locale
+### 3. Create a Client Library to add a locale
 
-AEM Forms provides a sample client library to help you add new locales easily. You can download and add the `clientlib-it-custom-locale` client library from the Adaptive Forms Core Components repository on GitHub to your Forms as a Cloud Service repository. To add the client library, follow these steps:
+AEM Forms provides a sample client library to help you add new locales easily. You can download and add the `clientlib-it-custom-locale` client library from the [Adaptive Forms Core Components repository] on GitHub to your Forms as a Cloud Service repository. To add the client library, follow these steps:
 
-1. Open the Adaptive Forms Core Components repository in your plain text editor. If you do not have the repository cloned, see [Prerequisites](#prerequistes) for instructions to clone the repository.
+1. Open your [Adaptive Forms Core Components repository] in your plain text editor. If you do not have the repository cloned, see [Prerequisites](#prerequistes) for instructions to clone the repository.
 1. Navigate to the `/aem-core-forms-components/it/apps/src/main/content/jcr_root/apps/forms-core-components-it/clientlibs` directory. 
 1. Copy the `clientlib-it-custom-locale` directory.
-1. Navigate to `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` and paste the `clientlib-it-custom-locale` directory.
+1. Navigate to `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` and paste the `clientlib-it-custom-locale` directory.
 
 
-### Create a locale-specific file {#locale-specific-file}
+### 4. Create a locale-specific file {#locale-specific-file}
 
-1. Navigate to `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
+1. Navigate to `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. Locate the [English locale .json file on GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json), which contains the latest set of default strings included in the product.
-1. Create a new .json file for your specific locale.
+1. Create a .json file for your specific locale.
 1. In your newly created .json file, mirror the structure of the English locale file.
 1. Replace the English language strings in your .json file with the corresponding localized strings for your language.
 1. Save and Close the file. 
 
 
-### Add locale support to the dictionary {#add-locale-support-for-the-dictionary}
+### 5. Add locale support to the dictionary {#add-locale-support-for-the-dictionary}
 
 Perform this step only if the `<locale>` you are adding is not among `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
-1. Navigate to the `[AEM Forms as a Cloud Service Git repostory]/ui.content/src/main/content/jcr_root/etc/` folder. 
+1. Navigate to the `[AEM Forms as a Cloud Service Git repository]/ui.content/src/main/content/jcr_root/etc/` folder. 
 
 1. Create an `etc` folder under the `jcr_root` folder, if not present already. 
 
@@ -127,7 +139,7 @@ Perform this step only if the `<locale>` you are adding is not among `en`, `de`,
 
     ```
     
-1. Add the newly-created folders in the `filter.xml` under `/ui.content/src/main/content/meta-inf/vault/filter.xml` as: 
+1. Add the newly created folders in the `filter.xml` under `/ui.content/src/main/content/meta-inf/vault/filter.xml` as: 
 
     ``` 
 
@@ -137,16 +149,17 @@ Perform this step only if the `<locale>` you are adding is not among `en`, `de`,
 
     ![Add the newly-created folders in the `filter.xml` under `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
-### Commit the changes and deploy the pipeline {#commit-changes-in-repo-deploy-pipeline}
+### 6. Commit the changes and deploy the pipeline {#commit-changes-in-repo-deploy-pipeline}
 
-Commit the changes to the GIT repository after adding a new locale support. Deploy your code using the full stack pipeline. Learn [how to set up a pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) to add new locale support.
-Once the pipeline is complete, the newly added locale appears in the AEM environment. 
+Commit the changes to the GIT repository after adding the new locale. Deploy your code using the full stack pipeline. Learn [how to set up a pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) to add new locale support.
 
-## Use added locale in Adaptive Forms {#use-added-locale-in-af}
+Once the pipeline run is successful, the newly added locale is ready for use. 
 
-Perform the following steps to use and render an Adaptive Form using a newly added locale:
+## Preview an Adaptive Form with newly added locale {#use-added-locale-in-af}
 
-1. Log in to your AEM author instance.
+Perform the following steps to preview an Adaptive with newly added locale:
+
+1. Log in to your AEM Forms as a Cloud Service instance.
 1. Go to **Forms** >  **Forms and Documents**.
 1. Select an Adaptive Form and click **Add Dictionary** and **Add Dictionary To Translation Project** wizard appears.
 1. Specify the **Project Title** and select the **Target Languages** from the drop-down menu in the **Add Dictionary To Translation Project** wizard.
@@ -157,7 +170,7 @@ Perform the following steps to use and render an Adaptive Form using a newly add
 
 There are two methods to identify the locale of an Adaptive Form. When an Adaptive Form is rendered, it identifies the requested locale by: 
 
-*   Retrieving the `[local]` selector in the adaptive form URL. The format of the URL is `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Using `[local]` selector allows caching an Adaptive Form. 
+*   Retrieving the `[local]` selector in the adaptive form URL. The format of the URL is `http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Using `[local]` selector allows caching an Adaptive Form. 
 
 *   Retrieving the following parameters in the listed order:
   
@@ -169,12 +182,10 @@ There are two methods to identify the locale of an Adaptive Form. When an Adapti
 
 If a client library for the requested locale does not exist, it checks for a client library for the language code present in the locale. For example, if the requested locale is `en_ZA` (South African English) and the client library for `en_ZA` does not exist, the adaptive form uses the client library for `en` (English) language, if it exists. However, if none of them exist, the Adaptive Form uses the dictionary for `en` locale.
 
-
 Once the locale is identified, the Adaptive Form picks the form-specific dictionary. If the form-specific dictionary for the requested locale is not found, it uses the dictionary for the language in which Adaptive Form is authored.
 
-If there is no locale information available, the Adaptive Form will be displayed in its original language, which is the language used during its development.
+If there is no locale information available, the Adaptive Form is displayed in its original language, the language used during the forms development.
 
-Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add support for new locale. You need to change the content of the folder in the required locale.
 
 ## Best Practices to support for new localization {#best-practices}
 
@@ -183,3 +194,5 @@ Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add
 *   When new fields are added in an existing Adaptive Form:
     * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. 
     * **For human translation**: Export the dictionary through `[server:port]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the newly added fields and upload it.
+
+ 
