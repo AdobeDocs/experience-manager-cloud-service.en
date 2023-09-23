@@ -1,5 +1,5 @@
 ---
-title: How to Add support for new locales to an Adaptive Form based on core components?
+title: How to add support for new locales to an Adaptive Form based on Core Components?
 description: Learn to add new locales for an Adaptive Form. 
 ---
 
@@ -167,25 +167,6 @@ Perform the following steps to preview an Adaptive with newly added locale:
 1. Select an Adaptive Form and click **Preview as HTML**.
 1. Add `&afAcceptLang=<locale-name>` in the URL of an Adaptive Form.
 1. Refresh the page and Adaptive Form is rendered in a specified locale. 
-
-There are two methods to identify the locale of an Adaptive Form. When an Adaptive Form is rendered, it identifies the requested locale by: 
-
-*   Retrieving the `[local]` selector in the adaptive form URL. The format of the URL is `http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Using `[local]` selector allows caching an Adaptive Form. 
-
-*   Retrieving the following parameters in the listed order:
-  
-    *   Request parameter `afAcceptLang`
-  To override the browser locale of users, you can pass the `afAcceptLang` request parameter to force the locale. For example, the following URL forces to render the form in Canadian-French locale:
-  `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
-
-    *   The browser locale set for the user, which is specified in the request using the `Accept-Language` header.
-
-If a client library for the requested locale does not exist, it checks for a client library for the language code present in the locale. For example, if the requested locale is `en_ZA` (South African English) and the client library for `en_ZA` does not exist, the adaptive form uses the client library for `en` (English) language, if it exists. However, if none of them exist, the Adaptive Form uses the dictionary for `en` locale.
-
-Once the locale is identified, the Adaptive Form picks the form-specific dictionary. If the form-specific dictionary for the requested locale is not found, it uses the dictionary for the language in which Adaptive Form is authored.
-
-If there is no locale information available, the Adaptive Form is displayed in its original language, the language used during the forms development.
-
 
 ## Best Practices to support for new localization {#best-practices}
 
