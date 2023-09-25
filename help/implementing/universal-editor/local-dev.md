@@ -90,3 +90,11 @@ Once set, you should see every content update call go to `https://localhost:8000
 >[!TIP]
 >
 >For more details on how pages are instrumented to use the Global Universal Editor Service, see the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md#instrument-page)
+
+## Editing a Page with the Local Universal Editor Service {#editing}
+
+With the Universal Editor Service running locally and your content page instrumented to use the local service, you can now start the editor.
+
+1. Open your browser to `https://localhost:8000/`.
+1. Direct your browser to accept your self-signed certificate.
+1. Once the self-signed certificate is trusted, you can edit the page using your local Universal Editor Service.
