@@ -1,0 +1,100 @@
+---
+title: Local AEM Development with the Universal Editor
+description: Learn how the Universal Editor supports editing on local AEM instances for development purposes.
+---
+
+# Local AEM Development with the Universal Editor {#local-dev-ue}
+
+Learn how the Universal Editor supports editing on local AEM instances for development purposes.
+
+This document will explain how to run AEM in HTTPS alongside a local copy of the Universal Editor Service so you can develop locally on AEM using the Universal Editor.
+
+## Set Up AEM to Run on HTTPS {#aem-https}
+
+Within an outer frame secured with HTTPS an unsecure HTTP frame can not be loaded. The Universal Editor Service runs on HTTPS and therefore AEM or any other remote page must run also on HTTPS.
+
+To do this, you need to set up AEM to run on HTTPS. For development purposes you can use self-signed certificate.
+
+Please see this document on how to set up AEM running on HTTPS including a self-signed certificate you can use.
+
+## Install the Universal Editor Service {#install-ue-service}
+
+The Universal Editor Service is what binds the Universal Editor and the backend system. Because the official Universal Editor Service is hosted globally, your local AEM instance would need to be exposed to the internet. To avoid this, you can run a local copy of the Universal Editor Service.
+
+[NodeJS version 16](https://nodejs.org/en/download/releases) is required to run a local copy of the Universal Editor Service
+
+The Universal Editor Service is distributed by AEM Engineering directly. please reach out to your engineering contact in the VIP program for a local copy.
+
+Engineering will provide you with a `universal-editor-service.cjs` file. Save this to your local development environment.
+
+## Create a Certificate to Run the Universal Editor Service with HTTPS {#ue-https}
+
+The Universal Editor Service also requires a certificate to run on HTTPS in your development environment.
+
+Run the following command.
+
+```text
+$ openssl req -newkey rsa:2048 -nodes -keyout key.pem -x509 -days 365 -out certificate.pem
+```
+
+The command generates a `key.pem` and a `certificate.pem` file. Save these files to the same path as your `universal-editor-service.cjs` file.
+
+## Setting up the Universal Editor Service configuration {#setting-up-service}
+
+A number of environment variables must be set in NodeJS to run the Universal Editor Service locally.
+
+On the same path as your `universal-editor-service.cjs`, `key.pem` and `certificate.pem` files, create an `.env` file with the following content.
+
+```text
+EXPRESS_PORT=8000
+EXPRESS_PRIVATE_KEY=./key.pem
+EXPRESS_CERT=./certificate.pem
+NODE_TLS_REJECT_UNAUTHORIZED=0
+```
+
+The variable have the following meanings:
+
+* `EXPRESS_PORT`: Defines on which port the Universal Editor Service listens
+* `EXPRESS_PRIVATE`: Points to your [previously-created private key,](#ue-https) `key.pem`
+* `EXPRESS_CERT`: Points to your [previously-created certificate,](#ue-https) `certificate.pem`
+* `NODE_TLS_REJECT_UNAUTHORIZED=0`: Accepts self-signed certificates
+
+## Running the Universal Editor Service {#running-ue}
+
+To start the Universal Editor Service, execute the following command:
+
+```text
+$ node ./universal-editor-service.cjs
+```
+
+It should output the following to your terminal:
+
+```text
+Universal Editor Service listening on port 8000 as HTTPS Server
+```
+
+Ensure the service starts HTTPS Server not HTTP Server.
+
+## Using the Local Universal Editor Service Instead of the Global Service {#using-local-ue}
+
+The Universal Editor knows which Universal Editor Service to use to edit a page based on how the page is instrumented. This is done via meta tags in the page loaded in the Universal Editor.
+
+For a page to be edited using your local Universal Editor Service, the following meta tag must be set:
+
+```
+<meta name="urn:adobe:aem:editor:endpoint" content="https://localhost:8000">
+```
+
+Once set, you should see every content update call go to `https://localhost:8000` instead of the default Universal Editor Service.
+
+>[!TIP]
+>
+>For more details on how pages are instrumented to use the Global Universal Editor Service, see the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md#instrument-page)
+
+## Editing a Page with the Local Universal Editor Service {#editing}
+
+With the [Universal Editor Service running locally](#running-ue) and your [content page instrumented to use the local service,](#using-loca-ue) you can now start the editor.
+
+1. Open your browser to `https://localhost:8000/`.
+1. Direct your browser to accept [your self-signed certificate.](#ue-https)
+1. Once the self-signed certificate is trusted, you can edit the page using your local Universal Editor Service.
