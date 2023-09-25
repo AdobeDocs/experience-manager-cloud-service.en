@@ -3,7 +3,7 @@ title: Using Edge Delivery Services
 description: Using Edge Delivery Services
 ---
 
-# Introduction {#introduction}
+# Using Edge Delivery Services {#usingedge}
 
 >[!NOTE]
 >
@@ -15,7 +15,7 @@ With Edge Delivery, you can create rapid development environments where authors 
 
 With Edge Delivery, authoring is easy, fast and flexible. You can take two different paths to authoring within the context of Edge Delivery Services:
 
-* Document-based authoring (such as Microsoft Word or Google Docs) - Refer to this link (add Helix link)
+* Document-based authoring (such as Microsoft Word or Google Docs) - [Refer to this link for more details](https://www.hlx.live/docs/authoring).
 * Page Editor/Universal Editor/Content Fragments Editor - Contact your Adobe Sales Representative.
 
 In the case of document-based authoring, you can work with a variety of sources such as Microsoft Word and Goggle Docs. Documents from these sources become pages on your website. Headings, lists, images, font elements, videos can all be transferred from the initial source into your website. You can add metadata for SEO purposes or use blocks to work with structured content and add functionality.
