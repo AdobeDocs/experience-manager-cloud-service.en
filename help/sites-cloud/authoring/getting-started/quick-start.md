@@ -16,7 +16,7 @@ For full details about authoring with AEM see:
 * [Concepts of Authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
 * [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md)
 
-{{#edge-delivery-authoring}}
+{{edge-delivery-authoring}}
 
 ## A Few Quick Hints {#a-few-quick-hints}
 

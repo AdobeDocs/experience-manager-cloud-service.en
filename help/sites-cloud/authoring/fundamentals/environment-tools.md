@@ -8,7 +8,7 @@ exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 
 The authoring environment of AEM provides various mechanisms for organizing and editing your content. The tools provided are accessed from the various consoles and page editors.
 
-{{#edge-delivery-authoring}}
+{{edge-delivery-authoring}}
 
 ## Managing your Site {#managing-your-site}
 
