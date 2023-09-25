@@ -78,7 +78,7 @@ Steps to log a support ticket via Admin Console:
 
 ## What's Next
 
-Get started by reviewing the next article: [Using Edge Delivery Services](/help/edge/authoring-publishing.md).
+Get started by reviewing the next article: [Using Edge Delivery Services](/help/edge/using.md).
 
 ## Useful Resources {#useful-resources}
 
