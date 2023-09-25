@@ -6,6 +6,4 @@
 
 ## Edge Delivery Services Authoring {#edge-delivery-authoring}
 
->[!TIP]
->
->If you use Adobe Edge Delivery Services, you have additional flexibility to author your content in more ways. [Click here to learn more.](/help/edge/overview.md)
+[!BADGE For authoring AEM content for Edge Delivery Services, click here.]{type=Positive url="/help/edge/overview.md" tooltip="Authoring AEM content for Edge Delivery Services"}
