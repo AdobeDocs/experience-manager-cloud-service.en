@@ -22,7 +22,7 @@ This document describes how to create and manage pages with Adobe Experience Man
 >
 >There are a number of [keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) that you can use from the websites console that make organizing your pages more efficient.
 
-{{#edge-delivery-authoring}}
+{{edge-delivery-authoring}}
 
 ## Organizing your Website {#organizing-your-website}
 

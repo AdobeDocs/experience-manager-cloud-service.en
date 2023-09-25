@@ -27,7 +27,7 @@ Content is added using [components](/help/sites-cloud/authoring/features/compone
 >
 >When in **Edit** mode, links in your content are visible, but **not accessible**. Use [Preview mode](#previewing-pages) if you want to navigate using the links in your content.
 
-{{#edge-delivery-authoring}}
+{{edge-delivery-authoring}}
 
 ## Page Toolbar {#page-toolbar}
 
