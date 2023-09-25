@@ -13,7 +13,7 @@ This document is designed to give an overview of basic handling when using the A
 >* Some functionality is not available in all consoles and additional functionality may be available in some consoles. Specific information about the individual consoles and their related functionality are covered in more detail on other pages.
 >* Keyboard shortcuts are available throughout AEM. In particular when [using consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) and [editing pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
-{{#edge-delivery-authoring}}
+{{edge-delivery-authoring}}
 
 ## A Touch-Enabled UI {#a-touch-enabled-ui}
 
