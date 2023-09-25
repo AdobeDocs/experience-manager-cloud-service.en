@@ -34,6 +34,20 @@ Edge Delivery leverages Github so customers can manage and deploy code directly 
 
 **To publish**, open the sidekick on a preview page and use the Publish action. After you click Publish, the current preview version of the page will be available in live and production environments.
 
+## Integrate AEM Assets with document-based authoring {#integrate-assets-edge}
+
+Edge Delivery enables you to use images available in AEM Assets repositories while authoring documents in Microsoft Word or Google Docs.
+
+The options to use images within your documents are available only after [configuring the AEM Assets sidekick plugin](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin).
+
+The sidekick plugin for AEM Assets supports access to:
+
+* AEM Assets as a Cloud Service
+
+* AEM Assets Essentials
+
+After configuring the AEM Assets sidekick plugin, you can [start using images within your Google Docs or Microsoft Word documents](https://www.hlx.live/docs/aem-assets-sidekick-plugin).
+
 ## Further reading {#further-reading}
 
 For more details see the following pages:
