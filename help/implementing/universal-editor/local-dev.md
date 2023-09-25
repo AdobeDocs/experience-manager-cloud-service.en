@@ -85,7 +85,7 @@ For a page to be edited using your local Universal Editor Service, the following
 <meta name="urn:adobe:aem:editor:endpoint" content="https://localhost:8000">
 ```
 
-Once set, you should see every content update call go to `https://localhost:8000`` instead of the default Universal Editor Service.
+Once set, you should see every content update call go to `https://localhost:8000` instead of the default Universal Editor Service.
 
 >[!TIP]
 >
@@ -93,8 +93,8 @@ Once set, you should see every content update call go to `https://localhost:8000
 
 ## Editing a Page with the Local Universal Editor Service {#editing}
 
-With the Universal Editor Service running locally and your content page instrumented to use the local service, you can now start the editor.
+With the [Universal Editor Service running locally](#running-ue) and your [content page instrumented to use the local service,](#using-loca-ue) you can now start the editor.
 
 1. Open your browser to `https://localhost:8000/`.
-1. Direct your browser to accept your self-signed certificate.
+1. Direct your browser to accept [your self-signed certificate.](#ue-https)
 1. Once the self-signed certificate is trusted, you can edit the page using your local Universal Editor Service.
