@@ -82,7 +82,7 @@ Get started by reviewing the next article: [Using Edge Delivery Services](/help/
 
 ## Useful Resources {#useful-resources}
 
-For additional details about Edge Delivery services, see the [Edge Delivery Services documentation](https://www.hlx.live/docs/). **SR** - link will probably change after rebranding.
+For additional details about Edge Delivery services, see the [Edge Delivery Services documentation](https://www.hlx.live/docs/).
 
 
 [def]: assets/assets/edge_delivery.png
