@@ -1,5 +1,5 @@
 ---
-title: How to Add support for new locales to an Adaptive Form based on core components?
+title: How to add support for new locales to an Adaptive Form based on Core Components?
 description: Learn to add new locales for an Adaptive Form. 
 ---
 
@@ -14,17 +14,17 @@ AEM Forms provide out of the box support for English (en), Spanish (es), French 
 
 ## How is the locale selected for an Adaptive Form?
 
-Before you start with adding new locale for Adaptive Forms, build an understanding about how a locale is selected for an Adaptive Form. There are two methods for identifying and selecting the locale of an Adaptive Form when it is rendered:
+Before you start with adding a locale for Adaptive Forms, build an understanding about how a locale is selected for an Adaptive Form. There are two methods for identifying and selecting the locale for an Adaptive Form when it is rendered:
 
-* **Using the [locale] Selector in the URL**: When rendering an Adaptive Form, the system identifies the requested locale by inspecting the [locale] selector in the adaptive form's URL. The URL follows this format: http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled. The use of the [locale] selector allows for caching of the Adaptive Form.
+* **Using the `locale` Selector in the URL**: When rendering an Adaptive Form, the system identifies the requested locale by inspecting the [locale] selector in the adaptive form's URL. The URL follows this format: http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled. The use of the [locale] selector allows for caching of the Adaptive Form. For example, the URL `www.example.com/content/forms/af/contact-us.hi.html?wcmmmode=disabled` renders the form in Hindi language. 
 
 * Retrieving the parameters in the order listed below:
 
-    * **Request parameter `afAcceptLang`**: To override the user's browser locale, you can pass the afAcceptLang request parameter. For example, this URL enforces rendering the form in Canadian French locale: `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
+    * **Using the `afAcceptLang`request parameter**: To override the user's browser locale, you can pass the afAcceptLang request parameter. For example, the `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr` URL enforces AEM Forms Server to render the form in Canadian French locale.
     
-    * **Browser locale (Accept-Language Header)**: The system also considers the user's browser locale, which is specified in the request using the `Accept-Language` header.
+    * **Using the browser locale (Accept-Language Header)**: The system also considers the user's browser locale, which is specified in the request using the `Accept-Language` header.
 
-    If a client library for the requested locale is not available, the system checks if a client library exists for the language code within the locale. For instance, if the requested locale is `en_ZA` (South African English) and there's no client library for `en_ZA`, the Adaptive Form uses the client library for en (English) if available. If neither is found, the Adaptive Form resorts to the dictionary for the `en` locale.
+    If a client library (the process to create and use the library is covered later in this article) for the requested locale is not available, the system checks if a client library exists for the language code within the locale. For instance, if the requested locale is `en_ZA` (South African English) and there's no client library for `en_ZA`, the Adaptive Form uses the client library for en (English) if available. If neither is found, the Adaptive Form resorts to the dictionary for the `en` locale.
 
     Once the locale is identified, the Adaptive Form selects the corresponding form-specific dictionary. If the dictionary for the requested locale is not found, it defaults to using the dictionary in the language in which the Adaptive Form was authored.
 
@@ -33,12 +33,12 @@ Before you start with adding new locale for Adaptive Forms, build an understandi
 
 ## Prerequisites {#prerequistes}
 
-Before you start adding support for a new locale, 
+Before you start adding a locale: 
 
-* Install a plain text editor (IDE) for easier editing. The examples in this document are based on Microsoft® Visual Studio Code.
+* Install a plain text editor (IDE) for easier editing. The examples in this document are based on [Microsoft® Visual Studio Code](https://code.visualstudio.com/download).
 * Install a version of [Git](https://git-scm.com), if not available on your machine. 
 * Clone the [Adaptive Forms Core Components](https://github.com/adobe/aem-core-forms-components) repository. To clone the repository: 
-    1. Open the command line or terminal window and navigate to a location to store the repository. For example `/adaptive-forms-core-components`
+    1. Open the command line or terminal window and navigate to a location to store the repository. For example, `/adaptive-forms-core-components`
     1. Run the following command to clone the repository:
 
         ``` SHELL
@@ -47,7 +47,9 @@ Before you start adding support for a new locale,
 
         ```
         
-    The repository includes a client library necessary for adding a locale. In rest of the article, the folder is reffred as, [Adaptive Forms Core Components repository].
+    The repository includes a client library necessary for adding a locale. 
+    
+    On successful execution of command, the repository is cloned to the `aem-core-forms-components` folder on your machine. In the rest of the article, the folder is reffred as, [Adaptive Forms Core Components repository].
 
 
 ## Add a locale {#add-localization-support-for-non-supported-locales}
@@ -168,31 +170,18 @@ Perform the following steps to preview an Adaptive with newly added locale:
 1. Add `&afAcceptLang=<locale-name>` in the URL of an Adaptive Form.
 1. Refresh the page and Adaptive Form is rendered in a specified locale. 
 
-There are two methods to identify the locale of an Adaptive Form. When an Adaptive Form is rendered, it identifies the requested locale by: 
-
-*   Retrieving the `[local]` selector in the adaptive form URL. The format of the URL is `http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Using `[local]` selector allows caching an Adaptive Form. 
-
-*   Retrieving the following parameters in the listed order:
-  
-    *   Request parameter `afAcceptLang`
-  To override the browser locale of users, you can pass the `afAcceptLang` request parameter to force the locale. For example, the following URL forces to render the form in Canadian-French locale:
-  `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
-
-    *   The browser locale set for the user, which is specified in the request using the `Accept-Language` header.
-
-If a client library for the requested locale does not exist, it checks for a client library for the language code present in the locale. For example, if the requested locale is `en_ZA` (South African English) and the client library for `en_ZA` does not exist, the adaptive form uses the client library for `en` (English) language, if it exists. However, if none of them exist, the Adaptive Form uses the dictionary for `en` locale.
-
-Once the locale is identified, the Adaptive Form picks the form-specific dictionary. If the form-specific dictionary for the requested locale is not found, it uses the dictionary for the language in which Adaptive Form is authored.
-
-If there is no locale information available, the Adaptive Form is displayed in its original language, the language used during the forms development.
-
-
 ## Best Practices to support for new localization {#best-practices}
 
 *   Adobe recommends creating a translation project after creating an Adaptive Form.
 
 *   When new fields are added in an existing Adaptive Form:
-    * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. 
-    * **For human translation**: Export the dictionary through `[server:port]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the newly added fields and upload it.
+    * **For machine translation**: Re-create the dictionary and [run the translation project](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). Fields added to an Adaptive Form after creating a translation project remain untranslated. 
+    * **For human translation**: Export the dictionary using the UI at `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the newly added fields and upload it.
+
+## See more
+
+* [Use machine translation or human translation to translate a Core Components based Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Generate document of record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+* [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
  
