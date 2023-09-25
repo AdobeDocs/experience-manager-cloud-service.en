@@ -86,3 +86,7 @@ For a page to be edited using your local Universal Editor Service, the following
 ```
 
 Once set, you should see every content update call go to `https://localhost:8000`` instead of the default Universal Editor Service.
+
+>[!TIP]
+>
+>For more details on how pages are instrumented to use the Global Universal Editor Service, see the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md#instrument-page)
