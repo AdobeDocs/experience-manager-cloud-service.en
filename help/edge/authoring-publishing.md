@@ -13,7 +13,7 @@ With Edge Delivery, you can create rapid development environments where authors 
 
 ## Authoring {#authoring-edge}
 
-With Edge Delivery, authoring is easy, fast and flexible. You can take two different paths to author within the context of Edge Delivery Services:
+With Edge Delivery, authoring is easy, fast and flexible. You can take two different paths to authoring within the context of Edge Delivery Services:
 
 * Document-based authoring (such as Microsoft Word or Google Docs) - Refer to this link (add Helix link)
 * Page Editor/Universal Editor/Content Fragments Editor - Contact your Adobe Sales Representative.
@@ -22,11 +22,11 @@ In the case of document-based authoring, you can work with a variety of sources 
 
 ## Publishing {#publishing-edge}
 
-With Edge Delivery, publishing content is seamless and fast. Regardless of your content source the process is the same: you use the [sidekick extension](## Using the Sidekick) to trigger the publishing mechanism and your content will be available live on your website in a couple of seconds.
+With Edge Delivery, publishing content is seamless regardless of your content source. The process is as follows: you use the [sidekick extension](#using-sidekick) to trigger the publishing mechanism and your content will be available live on your website in a couple of seconds.
 
 ## Edge Delivery Services and Github {#github-edge}
 
-Edge Delivery leverages Github so customers can manage and deploy code directly from their Github repository. For example, you can write content in either Google Docs or Microsoft Word and develop the functionality of your site by using CSS and Javascript in GitHub . Websites are automatically created for each of your branches from content preview to production. Every resource that you put into your GitHub repository is available on your website without a build process.
+Edge Delivery leverages Github so customers can manage and deploy code directly from their Github repository. For example, you can write content in either Google Docs or Microsoft Word and develop the functionality of your site by using CSS and Javascript in GitHub. Websites are automatically created for each of your branches from content preview to production. Every resource that you put into your GitHub repository is available on your website without a build process.
 
 ## Using the Sidekick {#using-sidekick}
 
