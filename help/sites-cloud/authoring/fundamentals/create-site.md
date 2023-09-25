@@ -10,7 +10,7 @@ exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
 
 Learn how administrators use AEM create a new site using site templates to define the style and structure of your site.
 
-{{#edge-delivery-authoring}}
+{{edge-delivery-authoring}}
 
 ## Overview {#overview}
 

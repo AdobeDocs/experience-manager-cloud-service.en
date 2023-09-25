@@ -22,7 +22,7 @@ The author environment provides the mechanisms for creating, updating, and revie
 
 On the author environment, the functionality of AEM is made available through AEM's authoring user interface. For the publish environment, you design the entire look-and-feel of the interface made available to your users.
 
-{{#edge-delivery-authoring}}
+{{edge-delivery-authoring}}
 
 ## Author Environment {#author-environment}
 
