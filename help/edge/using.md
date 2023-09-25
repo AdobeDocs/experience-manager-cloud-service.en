@@ -50,7 +50,7 @@ After configuring the AEM Assets sidekick plugin, you can [start using images wi
 
 ## Further reading {#further-reading}
 
-For more details see the following pages:
+For more details, see the following pages:
 
 * For details on how to get started with Edge Delivery see the [Build](https://www.hlx.live/docs/#build) section of the Edge delivery documentation.
 * To understand how to author and publish content by using Edge Delivery see the [Publish section](https://www.hlx.live/docs/authoring).
