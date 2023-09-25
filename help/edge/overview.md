@@ -48,19 +48,19 @@ Its easy to get started using Edge Delivery Services. Get started by following t
 
 ## Getting Help from Adobe {#adobe-gethelp}
 
-You can engage with Adobe product teams via your provisioned product collaboration channel (see below for access details) to answer questions on product use or best practices. Please note that there are no SLT’s associated with the conversations via the product collaboration channel. If a product issue needs additional investigation and troubleshooting, and needs to meet response SLT’s, you can submit a support ticket following the [support process](https://experienceleague.adobe.com/?lang=en&support-tab=home#support).
+You can engage with Adobe product teams via your provisioned product collaboration channel (see below for access details) to answer questions on product use or best practices. Please note that there are no Service Level Terms (SLT) associated with the conversations via the product collaboration channel. If a product issue needs additional investigation and troubleshooting, and needs to meet response SLT’s, you can submit a support ticket following the [support process](https://experienceleague.adobe.com/?lang=en&support-tab=home#support).
 
 Adobe provides three channels to help you with Edge Delivery Services:
 
-* Access to community resources
-* Access you Product Collaboration Channel
-* Log a support ticket
+* Engage with community resources for general inquiries
+* Access your Product Collaboration Channel for specific questions
+* Log a support ticket to solve major and critical issues
 
 ### Access Community Resources
 
 Adobe has two Community Resources to help you with Edge Delivery, [Experience League Community](https://adobe.ly/3RzitVw) and a [Discord channel](https://discord.gg/YFTKQK8M).
 
-### How to access my Product Collaboration Channel
+### How to access your Product Collaboration Channel
 
 Given the value of direct communication channel with customers, all AEM customers at launch will establish a Slack channel for the purpose of speed, critical updates and scaled reporting on experience quality. You will receive an invitation from Adobe to join a Slack channel specific to your organization.
 
