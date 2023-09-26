@@ -46,7 +46,20 @@ Familiarize yourself with the asset search interface and the available actions.
 ![Understand Experience Manager Assets search results interface](assets/aem-search-interface.png)
 *Figure: Understand [!DNL Experience Manager Assets] search results interface.*
 
-**A.** Save search as a smart collection. **B.** Filters or predicates to narrow the search results. **C.** Display files, folders, or both. **D.** Click Filters to open or close the left rail. **E.** Search location is DAM. **F.** Omnisearch field with user-provided search keyword. **G.** Select the loaded search results. **H.** Number of displayed search results out of the total search results. **I.** Close search. **J.** Switch between card view and list view.
+**A.** Save search as a smart collection. 
+**B.** Filters or predicates to narrow the search results. 
+**C.** Display files, folders, or both. 
+**D.** Search location is DAM.
+**E.** Access Saved Searches.
+**F.** Click Filters to open or close the left rail. 
+**G.** Shows Assets as default search. 
+**H.** Search location is DAM.
+**I.** Omnisearch field with user-provided search keyword. 
+**J.** Select the loaded search results.
+**K.** Sort by Created, Modified, Name, None.
+**L.** Sort by Ascending or Descending order.
+**M.** Number of displayed search results out of the total search results. **N.** Close search. 
+**O.** Switch between card view and list view.
 
 ### Dynamic search facets {#dynamicfacets}
 
