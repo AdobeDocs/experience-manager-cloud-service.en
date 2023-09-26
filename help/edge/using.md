@@ -20,9 +20,9 @@ In the case of document-based authoring, you can work with a variety of sources 
 
 With Edge Delivery, publishing content is seamless regardless of your content source. The process is as follows: you use the [sidekick extension](#using-sidekick) to trigger the publishing mechanism and your content will be available live on your website in a couple of seconds.
 
-## Edge Delivery Services and Github {#github-edge}
+## Edge Delivery Services and GitHub {#github-edge}
 
-Edge Delivery leverages Github so customers can manage and deploy code directly from their Github repository. For example, you can write content in either Google Docs or Microsoft Word and develop the functionality of your site by using CSS and JavaScript in GitHub. Websites are automatically created for each of your branches from content preview to production. Every resource that you put into your GitHub repository is available on your website without a build process.
+Edge Delivery leverages GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write content in either Google Docs or Microsoft Word and develop the functionality of your site by using CSS and JavaScript in GitHub. Websites are automatically created for each of your branches from content preview to production. Every resource that you put into your GitHub repository is available on your website without a build process.
 
 ## Using the Sidekick {#using-sidekick}
 
