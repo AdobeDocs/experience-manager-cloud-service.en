@@ -202,7 +202,13 @@ When a HEAD request is received at the Adobe CDN for a resource that is **not** 
 
 ### Marketing campaign parameters {#marketing-parameters}
 
-Website URLs frequently include marketing campaign parameters that are used to track a campaign's success. To use the Dispatcher cache effectively, it is recommended that you configure the Dispatcher configuration's `ignoreUrlParams` property as [documented here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+Website URLs frequently include marketing campaign parameters that are used to track a campaign's success. 
+
+For environments created after late September 2023 (with id xxxxx or higher), the CDN will cache the following url parameters by default. Please submit a support ticket if you have a requirement for it not to be cached.
+
+For environment created before late September 2023:
+
+It is recommended that you configure the Dispatcher configuration's `ignoreUrlParams` property as [documented here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
 
 The `ignoreUrlParams` section must be uncommented and should reference the file `conf.dispatcher.d/cache/marketing_query_parameters.any`. The file can be modified by uncommenting the lines corresponding to the parameters that are relevant to your marketing channels. You may add other parameters as well.
 
