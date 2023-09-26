@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Edge Delivery Services
-description: Getting Started with Edge Delivery Services
+description: Getting Started with Edge Delivery Services.
 ---
 
 # Getting Started with Edge Delivery Services {#getstart-edge}
