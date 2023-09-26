@@ -272,7 +272,9 @@ Pass the following request parameters in a URL to launch the asset selector in a
 
 To access the asset selector interface, go to `https://[aem_server]:[port]/aem/assetpicker`. Navigate to the desired folder, and select one or more assets. Alternatively, search for the desired asset from the Omnisearch box, apply filter as required, and then select it.
 
-![Browse and select asset in the asset selector](assets/assetpicker.png)
+![Browse and select asset in the asset selector](assets/select-asset.png)
+
+<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
 
 *Figure: Browse and select asset in the asset selector.*
 
