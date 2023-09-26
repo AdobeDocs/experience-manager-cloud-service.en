@@ -155,7 +155,10 @@ To configure the asset batch size:
 
 **Search for assets within a folder**: You can limit the search to a specific folder. In the **[!UICONTROL Filters]** panel, add path of a folder. You can select only one folder at a time.
 
+![Limit search results to a folder by adding a folder path in Filters panel](assets/limiting-search.gif)
+<!--
 ![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
+-->
 
 *Figure: Limit search results to a folder by adding a folder path in Filters panel.*
 
