@@ -3,6 +3,7 @@ title: Editing Page Content
 description: Once your page is created you can edit the content to make the updates you require
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 ---
+
 # Editing Page Content{#editing-page-content}
 
 Once your page is created (either new or as part of a launch or live copy) you can edit the content to make the updates you require.
@@ -25,6 +26,8 @@ Content is added using [components](/help/sites-cloud/authoring/features/compone
 >[!TIP]
 >
 >When in **Edit** mode, links in your content are visible, but **not accessible**. Use [Preview mode](#previewing-pages) if you want to navigate using the links in your content.
+
+{{edge-delivery-authoring}}
 
 ## Page Toolbar {#page-toolbar}
 
