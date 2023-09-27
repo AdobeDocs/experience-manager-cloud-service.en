@@ -26,7 +26,6 @@ Summarized below are the continuous improvements for maintenance release 13665, 
 * Various vulnerability-related updates
 * Various translation-related updates
 * CQ-4354428: Workflows: Unable to complete a task in Inbox
-* FORMS-10248: Rule Editor: Unable to set value of Radio button/Checkbox when data value type is boolean in AFv2
 * SITES-9733: Content Fragments: Asset References in content fragment reference panel shows 0(zero) references
 * SITES-14561: Content Fragments: Fixed and improved HTML to Markup conversion
 * SITES-14882: Content Fragments: Once we edit Content Fragment and close the tab without clicking on save or close button, the values are getting stored
