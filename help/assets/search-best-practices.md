@@ -199,6 +199,8 @@ To perform a search for scenario 6:
  
 ![Scenario 6](assets/scenario-6.png)
 
+Scenario 6 is not possible to execute in **[!UICONTROL Assets view]** as it does not support the usage of Wildcards.
+
 **Scenario 7: Search for all documents in the Experience Manager repository in which the content of the document must include `car` but exclude `classic`. The same condition applies on metadata of an asset.**
 
 To perform a search for scenario 7: 
@@ -208,6 +210,8 @@ Priority 1: Metadata
 Priority 2: Smart Tags
 
 ![Scenario 7](assets/scenario-7.png)
+
+Scenario 7 is not possible to execute in **[!UICONTROL Assets view]** as it does not support the usage of Wildcards.
 
 <!--
 **Scenario 9: Search for all images except PNG**
