@@ -105,7 +105,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### New CDN caching behavior for campaign-related URL parameters {#cache-url-params}
 
-For new environments, the CDN will remove marketing releated query parameters by default in order to increase the performance and cache hit ratio for marketing campaigns. Please submit a support ticket if you want this behavior to be disabled. Existing environments are unaffected.
+For new environments, the CDN will remove marketing related query parameters by default in order to increase marketing campaign performance and cache hit ratios. Existing environments are unaffected. [Learn more.](/help/implementing/dispatcher/caching.md#marketing-parameters)
 
 ### Traffic Filter Rules (including WAF Rules) early adopter program {#waf-early-adopter}
 
