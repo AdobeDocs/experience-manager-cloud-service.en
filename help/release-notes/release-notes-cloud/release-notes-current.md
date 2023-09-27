@@ -38,48 +38,19 @@ To add
 
 ### New features in Assets view {#assets-view-features}
 
-<!--
-
 **Assign metadata form to a folder**
 
 You can now assign metadata form to a specific folder within your Assets Essentials deployment. All assets in the folder, including assets in the sub-folders, then display properties defined in the assigned metadata form.
 
 ![assign metadata form to a folder](/help/release-notes/assets/assign-to-folder.png)
 
--->
-
-* **Bulk import assets from data sources**: Administrators now have the [ability to import large number of assets](/help/assets/bulk-import-assets-view.md) from a data source to AEM Assets. The administrators do not need to upload individual assets or folders to AEM Assets anymore. The supported data sources for bulk import include Azure, AWS, Google Cloud, and Dropbox.
-
-  ![Bulk import assets from a data source](/help/release-notes/assets/bulk-import.png)
-
-* **Image editing tools powered by Adobe Express**: Easy and intuitive [image editing tools powered by Adobe Express](/help/assets/edit-images-assets-view.md) available directly within AEM Assets to increase content re-use and accelerate content velocity.
-
-  ![Image editing with Adobe Express](/help/release-notes/assets/edit-adobe-express.png)
-
-* **Flexibility while pinning items for My Workspace Quick Access**: Ability to select and pin items for you, for your entire organization, or for a list of groups so that they display in the [Quick Access section of My Workspace](/help/assets/my-workspace-assets-view.md) based on your selection.
-
-  ![Pin items for groups](/help/release-notes/assets/pin-items-for-groups.png)
-
 ### New features in Admin view {#admin-view-features}
 
-**Search enhancements**
+* **Integrate AEM Assets as a Cloud Service with document-based authoring for Edge Delivery Services**: Integrate AEM Assets with document-based authoring for Edge Delivery Services to enable website authors to [use images available in AEM Assets repositories while authoring documents in Microsoft Word or Google Docs](/help/edge/using.md#integrate-assets-edge).
 
-* Administrators can now [configure the batch size of assets](/help/assets/search-assets.md#configure-asset-batch-size) that display when you perform a search. The asset search results display in multiples of the configured batch size number when you further scroll down to load the results. You can select from the available batch sizes of 200, 500, and 1000 assets. Setting a lower batch size number results in faster search response times.
-
-  ![Assets batch size configuration](/help/release-notes/assets/assets-batch-size-configuration.png)  
-
-* Experience Manager Assets now includes a new version 9 of `damAssetLucene` index. `damAssetLucene-9` changes the behavior of Oak Query facet counting to [no longer evaluate access control on the facet counts](/help/assets/search-assets.md) returned by the underlying search index, which results in the faster search response times.
-
-### Pre-release features available in [!DNL Experience Manager Assets] {#prerelease-features-assets}
-
-* **Dynamic Media**: [Multi-subtitle and multi-audio track support for videos in Dynamic Media](/help/assets/dynamic-media/video.md#about-msma)&mdash;You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
-
-  ![Subtitles and Audio tracks tab on the Properties page of a selected video asset.](/help/release-notes/assets/msma-aem-cs.png)*Subtitles and Audio tracks tab on the Properties page of a selected video asset.*
-
-* **Assets**: Ability to select ZIP archives that are managed in Experience Manager and [extracting the files directly into Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) without downloading them.
+* **Extract ZIP archives**: Ability to select ZIP archives that are managed in Experience Manager and [extracting the files directly into Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) without downloading them.
 
   ![Pin items for groups](/help/release-notes/assets/extract-archive.png)
-
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
