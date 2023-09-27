@@ -14,7 +14,8 @@ This help document contains best practices of AEM search with the help of variou
 
 Following are the basic steps to perform in Experience Manager before you begin your search:
 
-* Go to Assets > Files in Experience Manager and click the search icon on the top bar. Alternatively, use a forward slash (/) to open the Omni Search field.  
+* In **Admin view**, go to Assets > Files in Experience Manager and click the search icon on the top bar. Alternatively, use a forward slash (/) to open the Omni Search field.
+In **Assets view**, search bar is visible on the top and can be accessed directly.
 * `Location:Assets` and `Path:/content/dam` are pre-selected to limit the search scope to your Experience Manager Assets repository. If you navigate to any other folder, `Path:/content/dam/<folder name>` displays in the Omni Search field to limit the search scope to the current folder.
 
 ## Simple Search {#simple-search}
@@ -37,13 +38,15 @@ You can make the search more specific by adding your search keyword in double qu
 
 ![Finding exact match](assets/simple-search-2.png)
 
+The above scenario is common in both **[!UICONTROL Assets view]** and **[!UICONTROL Admin view]**.
+
 [Watch a video to perform a simple search in AEM Assets] ()
 
 ## Files and folders {#files-folders}
 
 **Scenario 2: Search for all files using the `classic car` keyword within the `automobile` folder.**
 
-Files and folders filter helps you narrow down your search. Use Files, Folders, or Files and Folders options available in the drop-down list based on your requirement.
+Files and folders filter helps you narrow down your search. Use Files, Folders, or Files and Folders options available in the drop-down list based on your requirement. The option to choose among Files, Folders, or Files and Folders is accessible in **[!UICONTROL Admin view]** only. In **[!UICONTROL Assets view]**, go to [!UICONTROL Path] and browse the folder where you want to perform search.
 
 * Use the **[!UICONTROL Files]** option when you need to search specifically for files at a specific path within the repository. You do not need to search for folders within the defined path.
 * Use the **[!UICONTROL Folders]** option when you need to limit your search to folders at a specific path.
@@ -64,7 +67,7 @@ Select the folder from the path and navigate to the required folder if you want 
 
 **Scenario 3: Search for `Classic Car` or `Car` keywords using various operator combinations to narrow down your search.**
 
-Experience Manager allows you to use a combination of various operators to enhance your search experience. The supported operators are:  
+**[!UICONTROL Assets view]** does not support the usage of Operators. To execute the above scenario in **[!UICONTROL Admin view]** you can use a combination of various operators to enhance your search experience. The supported operators are:  
 
 ### AND operator {#and-operator}
 
@@ -91,7 +94,7 @@ Similarly, you can search for all cars but not jeep. The query looks like: `car 
 
 ## Wildcards {#wildcards}
 
-Wildcards are used to replace one or more characters in the search. There are two wildcards used to perform the search - Question mark (?) and Asterisk (*). Question mark symbol is used to search a single character, whereas, asterisk symbol is used to search multiple characters.
+Wildcards are used to replace one or more characters in the search. **[!UICONTROL Assets view]** does not support the usage of Wildcards. To execute the above scenario in **[!UICONTROL Admin view]** you can use a combination of various wildcards to enhance your search experience.  There are two wildcards used to perform the search - Question mark (?) and Asterisk (*). Question mark symbol is used to search a single character, whereas, asterisk symbol is used to search multiple characters. 
 
 ### Question mark (?) {#question-mark} 
 
@@ -113,7 +116,7 @@ Asterisk is a wildcard operator that is used to broaden your search by typing fe
 
 ## Filters {#filters}
 
-Adobe Experience Manager provides various search filters which you can use to refine and segment your search using a scoped query. When you are unsure about the title or meta description of an asset, you can use various search filters to make your search more relevant. You can use search filters with or without typing a keyword. To open the filters panel, click the **GlobalNav** icon and select **[!UICONTROL Filters]**.
+Adobe Experience Manager provides various search filters which you can use to refine and segment your search using a scoped query. When you are unsure about the title or meta description of an asset, you can use various search filters to make your search more relevant. You can use search filters with or without typing a keyword. To open the filters panel in **[!UICONTROL Admin view]**, click the **GlobalNav** icon and select **[!UICONTROL Filters]**. Whereas, to open the filters panel in **[!UICONTROL Assets view]**, click [!UICONTROL Filters] beside search bar.
 
 ![Filters panel](assets/filters.png)
 
@@ -145,26 +148,37 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 
 **Scenario 4: Search for unpublished PDF file type documents with the `classic car` keyword in it.**
 
-To search for the above requirement, follow the steps below: 
+To search for the above requirement in **[!UICONTROL Admin view]**, follow the steps below: 
 
 1. Type `classic car` in the search bar. 
 1. Go to Filters. Under [!UICONTROL File Type], expand [!UICONTROL Documents], further expand [!UICONTROL Word Processing].
 1. Select [!UICONTROL PDF].
-1. Go to [!UICONTROL Status] > [!UICONTROL Publish] > [!UICONTROL Unpublished] .
+1. Go to [!UICONTROL Status] > [!UICONTROL Publish] > [!UICONTROL Unpublished].
 
 ![Filter example 2](assets/filter-2.png)
+
+To search for the above requirement in **[!UICONTROL Assets view]**, follow the steps below:
+
+1. Type `classic car` in the search bar. 
+1. Go to Filters. Under [!UICONTROL MIME Type] select [!UICONTROL PDF].
+1. Go to [!UICONTROL Asset Status], select [!UICONTROL All] to include all the published and unpublished assets.
 
 [Watch a video to perform search in AEM Assets using various filters] ()
 
 **Scenario 5: Search for all images except PNG**
 
-When you are unsure about the title or meta description of an asset, you can use various search filters to make your search more relevant. Follow the steps below:
+When you are unsure about the title or meta description of an asset, you can use various search filters to make your search more relevant. For example, to search assets using the mentioned scenario in **[!UICONTROL Admin view]**, follow the steps below:
 
 1. Go to search filters. 
 1. Go to Filters. Under [!UICONTROL File Type], expand [!UICONTROL Images] and select [!UICONTROL Web enabled]
 1. Deselect PNG.
 
 ![Search all images except jeep](assets/images-png.png)
+
+To search assets using the mentioned scenario in **[!UICONTROL Assets view]**, follow the steps below:
+
+1. Go to search filters. 
+1. Go to Filters. Under [!UICONTROL MIME Type] select all the given MIME types but Deselect PNG.
 
 ## Advanced search {#advanced-search}
 
@@ -214,6 +228,8 @@ You can capture a specific criteria using various search filters. Tag is a keywo
 
 ![Search using tags](assets/search-tags.png)
 
+The above scenarios are common in both **[!UICONTROL Assets view]** and **[!UICONTROL Admin view]**.
+
 **Scenario 9: Find similar match for red color car**
 
 While performing your search on AEM, you can filter your results by showing similar assets to the selected ones. You can use the **Find Similar** option to narrow down your search to the exact or similar match of the searched Asset. For example, you want to search for duplicate assets. To do this, follow the steps below:
@@ -226,6 +242,8 @@ Select the asset > navigate to the ellipsis at the top right > select [!UICONTRO
     ![Find similar](assets/find-similar.png)
 
 1. Notice the search bar. The thumbnail of the selected asset appears on the search bar indicating your search requirement. As a result, it returns the similar looking assets.
+
+**[!UICONTROL Assets view]** does not support [!UICONTROL Find Similar] option.
 
 ## Custom search facets {#custom-search-facets}
 
@@ -240,6 +258,8 @@ Search facets in Adobe Experience Manager let you search for assets in multiple 
 Date constraints allow you to narrow down your custom search to a particular period, for example, using the time period search filters. To search for the above requirement, type `classic car` in the search bar. Select the date range in the [!UICONTROL Created Date] and [!UICONTROL Last Modified] date filters.
 
 ![Date filters](assets/date-filters.png)
+
+The above scenarios are common in both **[!UICONTROL Assets view]** and **[!UICONTROL Admin view]**.
 
 ## Boosting relevance of keywords {#boosting-keywords}
 
@@ -264,3 +284,142 @@ You can improve the relevance of keywords for particular assets to help boost se
 * Specify Smart tags to the asset properties to boost the ranking of the search results.
 The newly added assets are not indexed.
 --> 
+
+## Differences between [!UICONTROL Admin view] and [!UICONTROL Assets view] Search {#differences-asset-and-admin-view}
+
+<table>
+    <tr>
+        <th> S.No.</th>
+        <th> Parameters </th>
+        <th> Admin view </th>
+        <th> Assets View </th>
+    </tr>
+    <tr>
+        <td> 1. </td>
+        <td> Custom facets </td>
+        <td> You can add <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en">custom search facets as per the requirement.</td>
+        <td> The custom facets are partially supported in Assets view. The supported facets are:
+            <ul>
+            <li> Predicted tags
+            <li> Name
+            <li> Predicted tags confidence
+            <li> Asset size
+            <li> Title
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td> 2. </td>
+        <td> Operators </td>
+        <td> Supports AND, OR, and NOT </td>
+        <td> Not supported </td>
+    </tr>
+    <tr>
+        <td> 3. </td>
+        <td> Wildcards </td>
+        <td> Supports question mark (?) and asterisk (*).</td>
+        <td> Not supported </td>
+    </tr>
+    <tr>
+        <td> 4. </td>
+        <td> Boosting search results </td>
+        <td> Supported </td>
+        <td> Not supported </td>
+    </tr>
+     <tr>
+        <td> 5. </td>
+        <td> Clear all filters at once </td>
+        <td> Not supported </td>
+        <td> Supported</td>
+    </tr>
+     <tr>
+        <td> 6. </td>
+        <td> Files/Folders/Files & Folders </td>
+        <td> Supported </td>
+        <td> Choose Folder only option is available under "File Type" </td>
+    </tr>
+     <tr>
+        <td> 7. </td>
+        <td> Asset Status </td>
+        <td> 
+            Supported options are:
+            <ul>
+            <li> Publish
+            <li> Published date
+            <li> Last published by
+            <li> Approval 
+            <li> Checkout
+            <li> Expiry
+            <li> Dynamic Media
+            </ul>
+        </td>
+        <td>
+        Supported options are:
+            <ul>
+            <li> All
+            <li> Approved
+            <li> Rejected
+            <li> No Status
+            </ul> 
+        </td>
+    </tr>
+     <tr>
+        <td> 8. </td>
+        <td> File type </td>
+        <td>
+        Supported options are:
+            <ul>
+            <li> Images
+            <li> Documents
+            <li> Multimedia
+            <li> Archives 
+            </ul>
+            These have further hierchical options.
+        </td>
+        <td>
+        Supported options are:
+            <ul>
+            <li> Images
+            <li> Documents
+            <li> Video
+            <li> Folder 
+            </ul> 
+        More options are listed under MIME type.
+        </td>
+    </tr>
+     <tr>
+        <td> 9. </td>
+        <td> File size </td>
+        <td>
+        Supported options are:
+            <ul>
+            <li> From - To
+            <li> Size (Bytes, KB, MB, GB)
+            </ul> 
+        </td>
+        <td> Not supported </td>
+    </tr>
+     <tr>
+        <td> 10. </td>
+        <td> Other filters </td>
+        <td>
+            <ul>
+            <li> Language
+            <li> Status
+            <li> Orientation
+            <li> Style 
+            <li> Insights
+            <li> Stock
+            <li> Asset Color
+            <li> Content fragment model
+            </ul> 
+        </td>
+        <td> Not supported </td>
+    </tr>
+     <tr>
+        <td> 11. </td>
+        <td> Find Similar </td>
+        <td> Supported </td>
+        <td> Not supported </td>
+    </tr>
+</table>
