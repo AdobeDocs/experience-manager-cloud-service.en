@@ -80,7 +80,7 @@ The following articles describe in details the core onboarding concepts and give
 
 >[!NOTE]
 >
->Edge Delivery Services is a new composable set of services that enable a rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. To learn more about Edge Delivery services, see the [Getting started page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
+>Edge Delivery Services is a new set of composable services that enable a flexible, rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. To learn more about Edge Delivery services, see the [Getting started page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## What's Next {#what-is-next}
 
