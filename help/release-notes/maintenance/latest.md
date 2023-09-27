@@ -9,7 +9,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 13665 {#release-13665}
 
-Summarized below are the continuous improvements for maintenance release 13665, which was publicly released on September 12th, 2023. This maintenance release replaces release 13420.
+Summarized below are the continuous improvements for maintenance release 13665, which was publicly released on September 27th, 2023. This maintenance release replaces release 13420.
 
 2023.9.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
@@ -27,15 +27,24 @@ Summarized below are the continuous improvements for maintenance release 13665, 
 * Various translation-related updates
 * CQ-4354428: Workflows: Unable to complete a task in Inbox
 * FORMS-10248: Rule Editor: Unable to set value of Radio button/Checkbox when data value type is boolean in AFv2
-* SITES-8590: Content Fragments: Encoding issues with variables in persisted queries
 * SITES-9733: Content Fragments: Asset References in content fragment reference panel shows 0(zero) references
 * SITES-14561: Content Fragments: Fixed and improved HTML to Markup conversion
 * SITES-14882: Content Fragments: Once we edit Content Fragment and close the tab without clicking on save or close button, the values are getting stored
-* SITES-14800: Content Fragments: Exception in persisted GraphQL queries with variables
-* SITES-14451: Core Components: Fixed missing dependency
-* SITES-15202: Core Components: Fixed missing dependency
+* SITES-15167: Content Fragments: Patching a variation with an invalid payload does not return 400 but 500
+* SITES-15514: Content Fragments: Malformed Markdown output for table inside RTE
+* SITES-15661: Content Fragments: Do not use unique constraint and reorder items in references fields in Fragments API
+* SITES-15730: Screens: Screens Channel Preview functionality not working on Dashboard
+* SITES-15995: Content Fragments: Mime types of both model and fragment long text fields are hardcoded
+* SITES-16074: Content Fragments: Tag fields which are not String[] cannot be retrieved from JCR
+* SITES-16084: Content Fragments: CFHomeCardModelImpl is missing target navigator
 * SITES-14773: Experience Fragments: Link Reference does not get updated inside experience fragment
 * SITES-14899: Experience Fragments: Multiple offers created for XF variations in Target
+* SITES-8590: GraphQL: Encoding issues with variables in persisted queries
+* SITES-9224: GraphQL: "Writer has already been closed" exception in GraphQLServlet
+* SITES-14800: GraphQL: Exception in persisted GraphQL queries with variables
+* SITES-15586: GraphQL: Issue with persisted queries filtering with null values
+* SITES-15622: GraphQL: Issue with persisted queries with numbers & bool parameters
+* SITES-15654: GraphQL: Issue with unions & properties with same name
 * SITES-15267: Launches: Promotion does not pick up launch pages modified before time of modifying the launch configuration
 * SITES-15406: Launches: Unable to add a Launch Page
 * SITES-15427: Launches: Inconsistent behavior of "Promote current page and sub pages" scope
