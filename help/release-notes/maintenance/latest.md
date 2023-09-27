@@ -11,15 +11,15 @@ The following section outlines the technical release notes for the current maint
 
 Summarized below are the continuous improvements for maintenance release 13665, which was publicly released on September 27th, 2023. This maintenance release replaces release 13420.
 
-2023.9.0 Feature Activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
+2023.10.0 Feature Activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
 ### Enhancements {#enhancements-13665}
 
-* Various improvements in the Content Fragment APIs
-* ASSETS-26713: Assets Dashboard: New Experience UI Dashboard now reachable from Touch UI
-* SITES-11206: Content Fragments: Search API for Content Fragments
-* SITES-11262: Content Fragments: Button to switch to the new Content Fragment Editor
-* SITES-15447: Core Components: Release of version 2.23.4
+* Various improvements in the Content Fragment APIs.
+* ASSETS-26713: Assets Dashboard: New Experience UI Dashboard now reachable from Touch UI.
+* SITES-11206: Content Fragments: Search API for Content Fragments.
+* SITES-11262: Content Fragments: Button to switch to the new Content Fragment Editor.
+* SITES-15447: Core Components: Release of version 2.23.4.
 
 ### Fixed Issues {#fixed-issues-13665}
 
