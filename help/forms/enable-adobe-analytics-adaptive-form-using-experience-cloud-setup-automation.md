@@ -9,6 +9,7 @@ description: Experience Cloud Setup Automation helps connect Adobe Analytics to 
 
 Experience Cloud Setup Automation helps to connect Adobe Analytics to Adaptive Forms which aids in tracking and analyzing user interaction with your forms and offering insights into visitor interactions and engagement. Experience Cloud Setup Automation also helps monitoring form performance which involves assessing metrics like completion times and drop-off points. This analysis helps optimize forms for better user experience while distinguishing user behavior based on login status, for example, anonymous users, to identify general trends and patterns.
 
+
 ## Advantages of integrating Adobe Analytics with Adaptive Forms {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
 * **Insights into end-user behavior**: Adobe Analytics helps to get insights about end-user behavior,  reveals user actions, drop-offs, and completion rates, enabling a deeper understanding of how individuals engage with forms.
@@ -69,6 +70,15 @@ Perform the below listed steps to enable and configure Adobe Analytics for your 
 * [Enable Adobe Analytics for Adaptive Forms based on Foundation Components](#integrate-adobe-analytics-with-aem-forms-for-foundation-component)
 * [Enable Adobe Analytics for Adaptive Forms based on Core Components](#integrate-adobe-analytics-with-aem-forms-for-core-components)
 
+>[!VIDEO](https://video.tv.adobe.com/v/3424577/recaptcha-google-adaptive-forms/?quality=12&learn=on)
+
+
+<!--
+>[!NOTE]
+>
+> This is the demo video for **Foundation Component**. In **Core Component** you are required to perform similar steps but the container is not chosen for forms.
+-->
+
 ### Enable Adobe Analytics with Adaptive Forms for Foundation Component {#integrate-adobe-analytics-with-aem-forms-for-foundation-component}
 
 1. Create a configuration container for cloud services:
@@ -90,7 +100,6 @@ Perform the below listed steps to enable and configure Adobe Analytics for your 
 
 ![Integrated AEM Analytics](assets/analytics-aem-integrated.png){width="100%"}
 
->[!VIDEO](https://video.tv.adobe.com/v/3424577/recaptcha-google-adaptive-forms/?quality=12&learn=on)
 
 ### Enable Adobe Analytics with Adaptive Forms for Core Components {#integrate-adobe-analytics-with-aem-forms-for-core-components}
 
@@ -123,7 +132,7 @@ Configuring analytics for your Adaptive Form in AEM Sites help you to track user
 
 ### Prerequisites {#Prerequisites-to-connect-forms-analytics-to-sites}
 
-To connect and enable analytics in Adaptive Forms for AEM Sites, you must ensure that your AEM Sites has an active Adobe Analytics.
+To connect and enable analytics in Adaptive Forms for AEM Sites, you must ensure that your AEM Sites have an active Adobe Analytics.
 
 ### Connect Adaptive Forms in Sites to enable Analytics {#Connect-analytics-to-adaptive-forms}
 
@@ -135,11 +144,11 @@ To connect Adaptive Form in an AEM Sites page to enable Analytics, include the `
 
 1. Copy the value of `sling:resourceSuperType`. For instance, the value is `core/wcm/components/page/v3/page`.
 
-    ![sling resource](/help/forms/assets/slingresource.png)
+    ![sling resource](/help/forms/assets/slingresource.png){width="100%"}
 
 1. Create the similar structure at the location `ui.apps/src/main/content/jcr_root/apps` same as `core/wcm/components/page/v3/page`.
 
-    ![overlay structure](/help/forms/assets/overlaystructure.png)
+    ![overlay structure](/help/forms/assets/overlaystructure.png){width="100%"}
 
 1. Add a `customfooterlibs.html` file.
 
@@ -161,7 +170,7 @@ To connect Adaptive Form in an AEM Sites page to enable Analytics, include the `
 1. Click **Tags** located on the left-hand side.
 1. Search your project with the program id as shown in the image below, for instance, for the environment with URL `https://author-p45921-e175111-cmstg.adobeaemcloud.com/index.html`, program id is `45921`.
 
-    ![Search-your-form-in-data-collection](/help/forms/assets/aep-data-collection.png)
+    ![Search-your-form-in-data-collection](/help/forms/assets/aep-data-collection.png){width="100%"}
 
 1. Add configuration for **Form Rules** and **Data Elements** as given below:
 
@@ -170,12 +179,12 @@ To connect Adaptive Form in an AEM Sites page to enable Analytics, include the `
 1. Select your form and add **New property** located on the upper right, or click your form.
 1. On the properties page, click **Rules** and select events for your form, In the example image below, it is **Form Events**. 
 
-    ![Search-your-form-in-data-collection](/help/forms/assets/aep-form-event-properties.png)
+    ![Search-your-form-in-data-collection](/help/forms/assets/aep-form-event-properties.png){width="100%"}
 
 1. Select all the events of your form and **copy** that is located on the upper right rail.
 1. Once you copy, a **Copy Rule** pop-up appears where you search your Sites page with the project-id, to paste the Form Rules.
    
-    ![Copy-form-rules](/help/forms/assets/copy-form-rules.png)
+    ![Copy-form-rules](/help/forms/assets/copy-form-rules.png){width="100%"}
 
 1. Click **copy** to paste the form rules to the Sites page.
 
@@ -187,7 +196,7 @@ To connect Adaptive Form in an AEM Sites page to enable Analytics, include the `
 1. Once you copy, a **Copy Rule** pop-up appears where you search your Sites page with the project-id, to paste the Form Rules.
 1. Click **copy** to paste the form rules to the Sites page.
 
-    ![Form-data-elements](/help/forms/assets/form-data-elements.png)
+    ![Form-data-elements](/help/forms/assets/form-data-elements.png){width="100%"}
 
 Once you bind your Form and Sites rules through the aforementioned steps, Perform the following steps to enable Analytics to your Adaptive Form in Sites page:
 
@@ -197,4 +206,21 @@ Once you bind your Form and Sites rules through the aforementioned steps, Perfor
 1. Click **Add All Changed Resources**. 
 1. Click **Save and Build to Development**.
 
-![publish-to-development](/help/forms/assets/publish-to-dev.png)
+![publish-to-development](/help/forms/assets/publish-to-dev.png){width="100%"}
+
+
+<!--
+
+## Best Practices
+
+1.	Verify that Adobe Analytics is enabled on all the forms activated for Adobe Analytics.
+
+1.	Check the Adobe Analytics report periodically to gain insights into user behavior and form performance. For instance, you may set the cadence to 15 days or the period you prefer to choose for report analysis. This enables you to improve the forms enrollment experience.
+
+1.	Enable Analytics for all or most of your forms for tracking and analyzing user interaction with your forms and to gain insights into visitor interactions and engagement.
+
+1. Check your forms performance after you update your form fields or components.
+
+1.	Share Analytics report with your peer groups for review, you can schedule your report for a later time.
+
+-->
