@@ -78,6 +78,10 @@ The following articles describe in details the core onboarding concepts and give
 |9|[Developer and Deployment Manager Tasks](developers.md)|Optional - As a Developer, learn how you can access and manage Cloud Manager Git and how as a Deployment Manager you can set up pipelines and deploy code in Cloud Manager.|Developers and Deployment Managers|
 |10|[AEM User Tasks](aem-users.md)|Optional - As an AEM author, learn how you can access AEM as a Cloud Service instance and get familiar with authoring content for AEM as a Cloud Service.|AEM Users|
 
+>[!NOTE]
+>
+>Edge Delivery Services is a new composable set of services that enable a rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. To learn more about Edge Delivery services, see the [Getting started page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
+
 ## What's Next {#what-is-next}
 
 You are now ready to start your AEM as a Cloud Service onboarding journey. You are encouraged to continue to the next part of the journey and read the article [Onboarding Preparation](preparation.md)
