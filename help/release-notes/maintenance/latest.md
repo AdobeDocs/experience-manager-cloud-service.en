@@ -23,7 +23,6 @@ Summarized below are the continuous improvements for maintenance release 13665, 
 
 ### Fixed Issues {#fixed-issues-13665}
 
-* Various vulnerability-related updates
 * Various translation-related updates
 * CQ-4354428: Workflows: Unable to complete a task in Inbox
 * SITES-9733: Content Fragments: Asset References in content fragment reference panel shows 0(zero) references
