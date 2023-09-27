@@ -8,7 +8,11 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 
 AEM offers a Sites preview service lets developers and content authors preview a website's final experience before it reaches the publish environment and is available publicly.
 
-It facilitates previewing page experiences that would not be otherwise visible from the author environment, like page transitions and other publish side only content.
+It facilitates previewing page experiences that would not be otherwise visible from the author environment, like page transitions and other publish side only content. 
+
+>[!NOTE]
+>
+>As the content is *published* to the preview environment it is accessible by URL (so does not need access to AEM).
 
 For more details about the preview environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
@@ -18,13 +22,16 @@ You can publish content to the preview service by using the **Managed Publicatio
 
 1. In the Sites console, select the page or pages you wish to send to preview and click on the **Manage Publication** button
 1. In the following wizard, select **Preview** as the destination
-   
+
    ![managed publication](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 
 1. Click **Next**, and then **Publish** to confirm.
 
 1. A dialog will display the URLs for accessing the content in the preview environment.
 
+   >[!NOTE]
+   >
+   >As the content is *published* to the preview environment it is accessible by URL (so does not need access to AEM).
 
 Alternatively to using the URLs displayed in the wizard to see the preview content, you can also prepend `preview-` to the publish URL of your production instance. 
 
