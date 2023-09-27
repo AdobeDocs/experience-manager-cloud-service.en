@@ -7,42 +7,60 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 13420 {#release-13420}
+## Release 13665 {#release-13665}
 
-Summarized below are the continuous improvements for maintenance release 13420, which was publicly released on September 12, 2023. This maintenance release replaces release 13323.
+Summarized below are the continuous improvements for maintenance release 13665, which was publicly released on September 27th, 2023. This maintenance release replaces release 13420.
 
-2023.9.0 Feature Activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
+2023.10.0 Feature Activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-13420}
+### Enhancements {#enhancements-13665}
 
-- ASSETS-19544: Assets last modified by property is now set to the user requesting processing.
+* Various improvements in the Content Fragment APIs.
+* ASSETS-26713: Assets Dashboard: New Experience UI Dashboard now reachable from Touch UI.
+* SITES-11206: Content Fragments: Search API for Content Fragments.
+* SITES-11262: Content Fragments: Button to switch to the new Content Fragment Editor.
+* SITES-15447: Core Components: Release of version 2.23.4.
 
-### Fixed Issues {#fixed-issues-13420}
+### Fixed Issues {#fixed-issues-13665}
 
-- ASSETS-27628: Erroneous "channels" node getting created when customizing the Assets search panel 
-- ASSETS-27539: Upload restrictions regular expression matching.
-- ASSETS-26530: Unified Shell does not bring users back to the original page.
-- ASSETS-22719: Brackets in Smart Crop Breakpoint Naming break the Smart Crop editing feature.
-- ASSETS-27726: linkshare.html should not be indexed by Google.
-- ASSETS-27791: Metadata schema validation occurs for only the first field.
-- ASSETS-25544: Fixed disabled CDN cache invalidation button.
-- ASSETS-26575: Fixed name truncation when creating image sets.
-- ASSETS-26705: Fixed unnecessary processing on non-DM folder assets and content fragments.
-- ASSETS-25740: Fixed screen readers not narrating Name and role for Edit/Crop controls on 'Edit Smart Crops' page using down arrow keys.
-- CQ-4354266: Unable to open inbox items.
-- CQ-4354347: Updated AEM Translations.
-- DISP-1009: User-Agent as non-first header trims X-Forwarded-Host.
-- Various accessibility and security-related fixes.
+* Various translation-related updates.
+* CQ-4354428: Workflows: Unable to complete a task in Inbox.
+* SITES-9733: Content Fragments: Asset References in content fragment reference panel shows 0(zero) references.
+* SITES-14561: Content Fragments: Fixed and improved HTML to Markup conversion.
+* SITES-14882: Content Fragments: Once we edit Content Fragment and close the tab without clicking on save or close button, the values are getting stored.
+* SITES-15167: Content Fragments: Patching a variation with an invalid payload does not return 400 but 500.
+* SITES-15514: Content Fragments: Malformed Markdown output for table inside RTE.
+* SITES-15661: Content Fragments: Do not use unique constraint and reorder items in references fields in Fragments API.
+* SITES-15730: Screens: Screens Channel Preview functionality not working on Dashboard.
+* SITES-15995: Content Fragments: Mime types of both model and fragment long text fields are hardcoded.
+* SITES-16074: Content Fragments: Tag fields which are not String[] cannot be retrieved from JCR.
+* SITES-16084: Content Fragments: CFHomeCardModelImpl is missing target navigator.
+* SITES-14773: Experience Fragments: Link Reference does not get updated inside experience fragment.
+* SITES-14899: Experience Fragments: Multiple offers created for XF variations in Target.
+* SITES-8590: GraphQL: Encoding issues with variables in persisted queries.
+* SITES-9224: GraphQL: "Writer has already been closed" exception in GraphQLServlet.
+* SITES-14800: GraphQL: Exception in persisted GraphQL queries with variables.
+* SITES-15586: GraphQL: Issue with persisted queries filtering with null values.
+* SITES-15622: GraphQL: Issue with persisted queries with numbers & bool parameters.
+* SITES-15654: GraphQL: Issue with unions & properties with same name.
+* SITES-15267: Launches: Promotion does not pick up launch pages modified before time of modifying the launch configuration.
+* SITES-15406: Launches: Unable to add a Launch Page.
+* SITES-15427: Launches: Inconsistent behavior of "Promote current page and sub pages" scope.
+* SITES-15429: Launches: Authoring pages deleted while promoting launches.
+* SITES-15462: Launches: Auto promotion process publishes pages out of promotion scope.
+* SITES-15815: Launches: Deleted Page from Launch causes Launch to not Promote Successfully.
+* SITES-15223: Page Editor: Not able to resize components whin in tablet size emulator.
+* SITES-15463: Page Templates: Templates cannot be published.
 
-### Known Issues {#known-issues-13420}
+### Known Issues {#known-issues-13665}
 
-None.
+None
 
-### Embedded Technologies {#embedded-tech-13420}
+### Embedded Technologies {#embedded-tech-13665}
 
 |Technology|Version|Link|
 |---|---|---|
 |AEM Oak |1.54-T20230817132355-3800a65|[Oak API 1.54.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html)| 
 |AEM SLING API |Version 2.27.2 |[Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL|Version 1.4.20-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
-|AEM Core Components|Version 2.23.2|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|AEM Core Components|Version 2.23.4|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
