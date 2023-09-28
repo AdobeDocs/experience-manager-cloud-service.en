@@ -44,7 +44,7 @@ Learn more about Edge Delivery Services in the article [here](/help/edge/overvie
 
 **Assign metadata form to a folder**
 
-You can now assign metadata form to a specific folder within your Assets Essentials deployment. All assets in the folder, including assets in the sub-folders, then display properties defined in the assigned metadata form.
+You can now assign metadata form to a specific folder within your deployment. All assets in the folder, including assets in the sub-folders, then display properties defined in the assigned metadata form.
 
 ![assign metadata form to a folder](/help/release-notes/assets/assign-to-folder.png)
 
