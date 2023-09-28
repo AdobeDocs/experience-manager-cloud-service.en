@@ -88,15 +88,9 @@ Summarized below are the continuous improvements for maintenance release 13665, 
 * FORMS-10248: In Adaptive Forms based on Core Components, setting the value of a Radio button or Checkbox when the data value type is Boolean is not working as expected.
 * FORMS-8114: The date picker and pattern not being read correctly by the NVDA screen reader. Specifically, when using the NVDA screen reader, the date picker without a pattern is read correctly. However, when a pattern is applied to the date picker, it is read as a table instead of being interpreted correctly.
 
-
-
-
-
-
-
 ### Known Issues {#known-issues-13665}
 
-None
+None.
 
 ### Embedded Technologies {#embedded-tech-13665}
 
