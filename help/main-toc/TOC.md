@@ -160,7 +160,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support.md)
   + [Same Site Cookie Support for AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
-  + [Configuring CDN and WAF Rules to Filter Traffic](/help/security/cdn-and-waf-rules.md)
+  + [Configuring Traffic Filter Rules with WAF Rules to Filter Traffic](/help/security/cdn-and-waf-rules.md)
   + [AEM as a Cloud Service Security Considerations](/help/security/security-considerations.md)
 + Onboarding {#onboarding}
   + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -325,20 +325,6 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
       + [Analyzing Structure](/help/sites-cloud/administering/content-fragments/analysis.md)
       + [Keyboard Shortcuts](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
-      + [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-      + [Headless Delivery with Content Fragments and GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
-      + [Enable Content Fragment Functionality for your Instance](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
-      + [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-      + [Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
-      + [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
-      + [Variations - Authoring Fragment Content](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
-      + [Content Fragment Associated Content](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
-      + [Metadata - Fragment Properties](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
-      + [Content Fragments - Delete Considerations](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
-      + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
-      + [Structure Tree](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
-      + [Preview - JSON Representation](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
-      + [Content Fragments Console - Keyboard Shortcuts](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
     + Site Creation {#site-creation}
       + [Creating a New Site](/help/sites-cloud/administering/site-creation/create-site.md)
       + [Enable Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -568,7 +554,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Integrate AEM Forms as a Cloud Service with Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
       + [Integrate AEM Forms as a Cloud Service with DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
       + [Integrate AEM Forms as a Cloud Service with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-      + [Integrate Adaptive Forms to Adobe Analytics](/help/forms/forms-experience-cloud-setup-automation.md)
+      + [Integrate Adaptive Forms to Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
       + [Viewing and understanding Adaptive Forms Analytics Report](/help/forms/view-understand-aem-forms-analytics-reports.md)
       + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
       + [Embed an Adaptive Forms in an AEM Sites page](/help/forms/embed-adaptive-form-aem-sites.md)
@@ -598,6 +584,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
         + [Configure Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)
         + [Use Google reCAPTCHA in an Adaptive Form ](/help/forms/captcha-adaptive-forms-core-components.md)
         + [Add custom error handler in an Adaptive Form](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+        + [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md)
     + Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -734,6 +721,9 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
++ Edge Delivery Services {#edge-delivery}
+  + [Getting Started with Edge Delivery](/help/edge/overview.md)
+  + [Using Edge Delivery](/help/edge/using.md)
 + Headless {#headless}
   + [What is a Headless CMS?](/help/headless/what-is-headless.md)
   + [Introduction to AEM Headless](/help/headless/introduction.md)
@@ -1040,3 +1030,4 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
   + [Attributes and Types](/help/implementing/universal-editor/attributes-types.md)
   + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
+  + [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md)

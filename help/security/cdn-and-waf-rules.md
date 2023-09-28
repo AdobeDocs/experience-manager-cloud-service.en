@@ -1,9 +1,9 @@
 ---
-title: Configuring Traffic Filter Rules (with WAF Rules)
-description: Use Traffic Filter Rules (with WAF Rules) to Filter Traffic
+title: Configuring Traffic Filter Rules with WAF Rules
+description: Use Traffic Filter Rules with WAF Rules to Filter Traffic
 ---
 
-# Configuring Traffic Filter Rules (with WAF Rules) to Filter Traffic {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# Configuring Traffic Filter Rules with WAF Rules to Filter Traffic {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]
 >

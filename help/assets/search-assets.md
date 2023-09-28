@@ -40,12 +40,26 @@ Use the **[!UICONTROL Filters]** panel to search for assets, folders, tags, and 
 ## Understand asset search interface {#searchui}
 
 Familiarize yourself with the asset search interface and the available actions.
-
+<!--
 ![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
-
+-->
+![Understand Experience Manager Assets search results interface](assets/aem-search-interface.png)
 *Figure: Understand [!DNL Experience Manager Assets] search results interface.*
 
-**A.** Save search as a smart collection. **B.** Filters or predicates to narrow the search results. **C.** Display files, folders, or both. **D.** Click Filters to open or close the left rail. **E.** Search location is DAM. **F.** Omnisearch field with user-provided search keyword. **G.** Select the loaded search results. **H.** Number of displayed search results out of the total search results. **I.** Close search. **J.** Switch between card view and list view.
+**A.** Save search as a smart collection. 
+**B.** Filters or predicates to narrow the search results. 
+**C.** Display files, folders, or both. 
+**D.** Search location is DAM.
+**E.** Access Saved Searches.
+**F.** Click Filters to open or close the left rail. 
+**G.** Shows Assets as default search. 
+**H.** Search location is DAM.
+**I.** Omnisearch field with user-provided search keyword. 
+**J.** Select the loaded search results.
+**K.** Sort by Created, Modified, Name, None.
+**L.** Sort by Ascending or Descending order.
+**M.** Number of displayed search results out of the total search results. **N.** Close search. 
+**O.** Switch between card view and list view.
 
 ### Dynamic search facets {#dynamicfacets}
 
@@ -154,7 +168,10 @@ To configure the asset batch size:
 
 **Search for assets within a folder**: You can limit the search to a specific folder. In the **[!UICONTROL Filters]** panel, add path of a folder. You can select only one folder at a time.
 
+![Limit search results to a folder by adding a folder path in Filters panel](assets/limiting-search.gif)
+<!--
 ![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
+-->
 
 *Figure: Limit search results to a folder by adding a folder path in Filters panel.*
 
@@ -271,7 +288,9 @@ Pass the following request parameters in a URL to launch the asset selector in a
 
 To access the asset selector interface, go to `https://[aem_server]:[port]/aem/assetpicker`. Navigate to the desired folder, and select one or more assets. Alternatively, search for the desired asset from the Omnisearch box, apply filter as required, and then select it.
 
-![Browse and select asset in the asset selector](assets/assetpicker.png)
+![Browse and select asset in the asset selector](assets/select-asset.png)
+
+<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
 
 *Figure: Browse and select asset in the asset selector.*
 
