@@ -10,6 +10,8 @@ Congratulations on choosing AEM as a Cloud Service! This document is your starti
 
 ## Introduction {#introduction}
 
+Adobe Experience Manager is a powerful suite of composable content services that rapidly deliver highly impactful, personalized experiences across any channel, unlocking content from all for all. **Edge Delivery Services** is the latest innovation in Adobe Experience Manager that enables extreme content velocity and delivers exceptional experiences. Learn how to get started with Edge Delivery Services, by visiting [this page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). To understand how to use Edge Delivery Services, see the [Developer Tutorial](https://www.hlx.live/developer/tutorial) page.
+
 Onboarding is the process during which a designated system administrator sets up AEM as a Cloud Service for your organization. This process includes the initial provisioning of cloud resources and assigning users to roles based on their job responsibilities. As a result, each member is able to log on and access their resource on AEM as a Cloud Service.
 
 ![The onboarding journey](/help/journey-onboarding/assets/onboarding-journey.png)
@@ -77,10 +79,6 @@ The following articles describe in details the core onboarding concepts and give
 |8|[Assigning AEM Product Profiles](assign-profiles-aem.md)|Learn how System Administrator assigns your team members to product profiles in AEM as a Cloud Service.|System Administrator|
 |9|[Developer and Deployment Manager Tasks](developers.md)|Optional - As a Developer, learn how you can access and manage Cloud Manager Git and how as a Deployment Manager you can set up pipelines and deploy code in Cloud Manager.|Developers and Deployment Managers|
 |10|[AEM User Tasks](aem-users.md)|Optional - As an AEM author, learn how you can access AEM as a Cloud Service instance and get familiar with authoring content for AEM as a Cloud Service.|AEM Users|
-
->[!NOTE]
->
->Edge Delivery Services is a new set of composable services that enable a flexible, rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. To learn more about Edge Delivery services, see the [Getting started page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## What's Next {#what-is-next}
 
