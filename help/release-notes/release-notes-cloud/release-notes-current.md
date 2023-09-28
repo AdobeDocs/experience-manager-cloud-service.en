@@ -32,11 +32,11 @@ Have a look at the September 2023 Release Overview video for a summary of the fe
 
 -->
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+## Edge Delivery Services {#edge-delivery}
 
-### New features in [!DNL Experience Manager Sites] {#sites-features}
+Edge Delivery is a new set of composable services focused on maximizing the impact of content to drive measurable business outcomes at the point of customer interaction.
 
-To add
+Learn more about Edge Delivery Services in the article [here](/help/edge/overview.md).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
