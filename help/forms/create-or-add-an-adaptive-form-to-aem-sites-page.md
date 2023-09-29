@@ -49,9 +49,9 @@ You can take full advantage of this feature by utilizing the following options:
 
 * **[Create and add forms based on approved templates to an AEM Sites page:](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** You can leverage pre-approved templates to quickly create Adaptive Forms that align with your organization's branding guidelines and design standards. The option is available only for Adaptive Forms created with Adaptive Forms Editor or Adaptive Forms - Embed component. 
 
-* **[Create and add forms based on approved templates to an AEM Sites page](embed-adaptive-form-core-components-aem-sites.md):** You can leverage pre-approved templates to quickly create Adaptive Forms that align with your organization's branding guidelines and design standards. The option is available only for Adaptive Forms created with Adaptive Forms Editor or Adaptive Forms - Embed component. 
+* **[Create and add forms based on approved templates to an AEM Sites page](/help/forms/embed-adaptive-form-core-components-aem-sites.md):** You can leverage pre-approved templates to quickly create Adaptive Forms that align with your organization's branding guidelines and design standards. The option is available only for Adaptive Forms created with Adaptive Forms Editor or Adaptive Forms - Embed component. 
 
-* **[Add existing forms to an AEM Sites page](embed-adaptive-form-core-components-aem-sites.md):** You can easily integrate forms that you have already created into your websites, enabling visitors to interact with them directly. The option is available only for Adaptive Forms created with Adaptive Forms Editor or Adaptive Forms - Embed component. 
+* **[Add existing forms to an AEM Sites page](/help/forms/embed-adaptive-form-core-components-aem-sites.md):** You can easily integrate forms that you have already created into your websites, enabling visitors to interact with them directly. The option is available only for Adaptive Forms created with Adaptive Forms Editor or Adaptive Forms - Embed component. 
 
 ## Considerations to create an Adaptive Form in AEM Sites page or AEM Experience Fragment {#consideration}
 
