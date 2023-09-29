@@ -184,7 +184,7 @@ See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
    >
    >When creating the image set, you can change the image set thumbnail. Or, you can let Experience Manager select the thumbnail automatically based on the assets in the image set. To select a thumbnail, select **[!UICONTROL Change thumbnail]** above the Title field on the Image Set Editor page. Then, select any image (you can navigate to other folders to find images as well). If you selected a thumbnail, then decide you want Experience Manager to generate one from the image set, select **[!UICONTROL Switch to]** **[!UICONTROL Automatic thumbnail]**.
 
-1. Click **[!UICONTROL Save]**. Your newly created Image Set appears in the folder you created it in.
+1. Click **[!UICONTROL Save]**. Your newly-created Image Set appears in the folder you created it in.
 
 ## View Image Sets {#viewing-image-sets}
 

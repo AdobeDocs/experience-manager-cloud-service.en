@@ -3,6 +3,7 @@ title: Quick Start Guide to Authoring Pages
 description: A quick, high-level guide to get you started authoring page content
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 ---
+
 # Quick Start Guide to Authoring Pages {#quick-guide-to-authoring-pages}
 
 This document is intended as a high-level quick start guide for the key page authoring actions in AEM. This document:
@@ -14,6 +15,8 @@ For full details about authoring with AEM see:
 
 * [Concepts of Authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
 * [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+
+{{edge-delivery-authoring}}
 
 ## A Few Quick Hints {#a-few-quick-hints}
 
@@ -57,7 +60,7 @@ There are various aspects to finding a page; you can navigate and/or search:
 
    ![View selection drop-down](/help/sites-cloud/authoring/assets/views.png)
 
-1. Navigate up the tree using [the breadcrumb in the header](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), which allows you to return to the selected location:
+1. Navigate up the tree using [the breadcrumb in the header](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), which lets you return to the selected location:
 
    ![Breadcrumb dropdown](/help/sites-cloud/authoring/assets/breadcrumb.png)
 

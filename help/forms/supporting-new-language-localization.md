@@ -11,7 +11,8 @@ exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html)                  |
-| AEM as a Cloud Service     | This article         |
+| Core Components  |    [Click here](supporting-new-language-localization-core-components.md)                  |
+| Foundation Components     | This article         |
 
 AEM Forms provide out of the box support for English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. You can add support for more locales also, like Hindi(hi_IN). 
 
@@ -97,7 +98,7 @@ Perform this step only if the `<locale>` you are adding is not among `en`, `de`,
 1. Add the `<locale-name>` default locale values `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, if not present already.
 
 1. Add the `<locale>` to the values of the `languages` property of `/etc/languages`.
-1. Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hierarchy] as: 
+1. Add the newly-created folders in the `filter.xml` under etc/META-INF/[folder hierarchy] as: 
 
     ```
     <filter root="/etc/clientlibs/[locale-name]"/>
@@ -108,12 +109,12 @@ Perform this step only if the `<locale>` you are adding is not among `en`, `de`,
 
 #### 5. Commit the changes in the repository and deploy the pipeline {#commit-changes-in-repo-deploy-pipeline}
 
-Commit the changes to the GIT repository after adding a new locale support. Deploy your code using the full stack pipeline. Learn [how to set up a pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) to add new locale support.
+Commit the changes to the GIT repository after adding a locale support. Deploy your code using the full stack pipeline. Learn [how to set up a pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) to add new locale support.
 Once the pipeline is complete, the newly added locale appears in the AEM environment. 
 
 ### Use added locale in Adaptive Forms {#use-added-locale-in-af}
 
-Perform the following steps to use and render an Adaptive Form using a newly added locale:
+Perform the following steps to use and render an Adaptive Form using newly added locale:
 
 1. Log in to your AEM author instance.
 1. Go to **Forms** >  **Forms and Documents**.

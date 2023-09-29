@@ -158,7 +158,7 @@ The following restrictions apply.
 * You must [opt in to the flexible mode of the dispatcher tools](/help/implementing/dispatcher/disp-overview.md#validation-debug) to use web-tier config pipelines.
 * A user must be logged with the **Deployment Manager** role to configure or run pipelines.
 * At any time, there can only be one web tier config pipeline per environment.
-* The user can not configure a web tier config pipeline when its corresponding full-stack pipeline is running.
+* The usercannot configure a web tier config pipeline when its corresponding full-stack pipeline is running.
 * The web tier structure must adhere to the flexible mode structure, as defined in the document [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 In addition, be aware of how the [full stack pipeline](#full-stack-pipeline) behaves when introducing a web tier pipeline.

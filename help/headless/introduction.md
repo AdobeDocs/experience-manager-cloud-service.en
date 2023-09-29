@@ -36,7 +36,7 @@ AEM as a Cloud Service is a flexible tool for the headless implementation model 
 1. **Content Fragments**
    * A Content Fragment is created based on a Content Fragment Model.
    * Content Fragments are created by content authors, using the AEM Content Fragment editor.
-   * Content Fragments are stored as AEM Assets, but can be managed through either the Assets Console, or the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md).
+   * Content Fragments are stored as AEM Assets, but can be managed through either the Assets Console, or the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
 1. **Content API for delivery**
    * The AEM GraphQL API supports Content Fragment delivery.
    * The AEM Assets REST API supports Content Fragment CRUD operations.
@@ -57,7 +57,7 @@ There are several resources available to get started with AEM's headless feature
 
 ## Comparing Headful and Headless {#headful-headless}
 
-This guide focuses on the full headless implementation model of AEM. However headful versus headless need not be a binary choice in AEM. Headless features can be used to manage and deliver content to multiple touch-points, while also enabling content authors to edit single page applications. All in AEM.
+This guide focuses on the full headless implementation model of AEM. However, headful versus headless does not need to be a binary choice in AEM. Headless features can be used to manage and deliver content to multiple touch-points, while also enabling content authors to edit single page applications. All in AEM.
 
 >[!TIP]
 >

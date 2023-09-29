@@ -17,6 +17,10 @@ From time-to-time, Adobe needs to contact users regarding their AEM as a Cloud S
 * **Incident Notification** - These notifications are sent during an incident or when Adobe has identified a potential availability issue with your AEM as a Cloud Service environment.
 * **Proactive Notification** - These notifications are sent when an Adobe support team member wants to provide guidance on a potential optimization or recommendation that can benefit your AEM as a Cloud Service environment.
 
+>[!NOTE]
+>
+>Assigning groups to proactive notification is not supported. You need to assign users to the product profiles directly instead.
+
 For the correct users to receive these notifications, you need to configure and assign user profiles as described in this document.
 
 ## Prerequisites {#prerequisites}
@@ -133,3 +137,9 @@ Follow these steps to add users for whom federated IDs already exist.
 1. Click **Save** and a welcome email is sent to the user you added.
 
 The invited user will now receive the notifications. Repeat these steps for the users on your team that you would like to receive notifications.
+
+## Additional Resources {#additional-resources}
+
+The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
+
+* [Actions Center](/help/operations/actions-center.md) - Leverage the Actions Center to conveniently take action on incidents and other important information.

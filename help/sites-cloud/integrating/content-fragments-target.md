@@ -1,6 +1,6 @@
 ---
 title: Exporting Content Fragments to Adobe Target
-description: Exporting Content Fragments to Adobe Target
+description: Learn how to export your Content Fragments to Adobe Target, to test and personalize experiences.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 ---
 # Exporting Content Fragments to Adobe Target {#exporting-content-fragments-to-adobe-target}
@@ -298,7 +298,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
+   >If the framework you attached to the page was not activated yet, a wizard opens which lets you publish it as well.
 --> 
 
 ## Exporting a Content Fragment to Adobe Target {#exporting-a-content-fragment-to-adobe-target}

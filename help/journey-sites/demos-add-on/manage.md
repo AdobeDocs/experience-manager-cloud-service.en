@@ -45,8 +45,8 @@ Now that you have your own demo sites, you probably would like to know how you c
 
 Self-Service Demo Utilities provides a number of tools.
 
-* **Delete Sites** - Select the Site you would like to delete in this Adobe Experience Manager instance. Keep in mind that this is a destructive action and can not be undone once initiated.
-* **Delete Site Templates** - Select the Site Template you would like to delete in this Adobe Experience Manager instance. Before you delete a Site Template, make sure all sites referencing the template are also deleted. Keep in mind that this is a destructive action and can not be undone once initiated.
+* **Delete Sites** - Select the Site you would like to delete in this Adobe Experience Manager instance. Keep in mind that this is a destructive action and cannot be undone once initiated.
+* **Delete Site Templates** - Select the Site Template you would like to delete in this Adobe Experience Manager instance. Before you delete a Site Template, make sure all sites referencing the template are also deleted. Keep in mind that this is a destructive action and cannot be undone once initiated.
 * **Prime Author Cache** - This will fetch several resources within the Adobe Experience Manager instance, speeding up their fetch times. It may take several seconds.
 * **Android App** - Tools for installing and launching the demonstration Android App. Create a site based on the **WKND Single Page App** to populate this page. Use from an Android device, emulator, or Bluestacks.
 * **User Preferences** - Turn off Tutorial Popup Dialogs.
@@ -64,7 +64,7 @@ After you have tested a set of AEM functionality, you may no longer need your de
 
    >[!CAUTION]
    >
-   >Site and template deletion is a destructive action and can not be undone once initiated.
+   >Site and template deletion is a destructive action and cannot be undone once initiated.
 
 1. Confirm the site deletion in the dialog.
 

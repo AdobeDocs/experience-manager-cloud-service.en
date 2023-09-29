@@ -111,6 +111,8 @@ GraphQL queries using POST requests are not recommended as they are not cached, 
 
 While GraphQL also supports GET requests, these can hit limits (for example the length of the URL) that can be avoided using Persisted Queries.
 
+See [Enable caching of persisted queries](/help/headless/deployment/dispatcher-caching.md) for further details.
+
 >[!NOTE]
 >
 >To allow direct, and/or POST, queries in the Dispatcher you can ask your System Administrator to:
@@ -152,11 +154,11 @@ Also, the user needs to have access to a GraphQL endpoint to be able to execute 
 
 ## Schema Generation {#schema-generation}
 
-GraphQL is a strongly typed API, which means that data must be clearly structured and organized by type.
+GraphQL is a strongly-typed API, which means that data must be clearly structured and organized by type.
 
 The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client needs to fetch the [Schema](#schema-generation), which contains all the types necessary for a query. 
 
-For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) and their data types.
+For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) and their data types.
 
 >[!CAUTION]
 >
@@ -558,7 +560,7 @@ For further examples, see:
 >
 >For best performance consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
-This feature allows you to sort the query results according to a specified field.
+This feature lets you sort the query results according to a specified field.
 
 The sorting criteria:
 
@@ -625,7 +627,7 @@ query {
 >
 >For best performance consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
-This feature allows you to perform paging on query types that returns a list. Two methods are provided:
+This feature lets you perform paging on query types that returns a list. Two methods are provided:
 
 * `offset` and `limit` in a `List` query
 * `first` and `after` in a `Paginated` query
@@ -701,7 +703,7 @@ query {
 
 ## Web-optimized image delivery in GraphQL queries {#web-optimized-image-delivery-in-graphql-queries}
 
-Web-optimized image delivery allows you to use a Graphql query to:
+Web-optimized image delivery lets you use a Graphql query to:
 
 * Request a URL to an AEM Asset image
 
@@ -719,7 +721,7 @@ You can use AEM to:
 
 This means that the commands get applied during query execution, in the same way as URL parameters on GET requests for those images.
 
-This allows you to dynamically create image renditions for JSON delivery, which avoids having to manually create and store those renditions in the repository.
+This lets you dynamically create image renditions for JSON delivery, which avoids having to manually create and store those renditions in the repository.
 
 The solution in GraphQL means you can:
 

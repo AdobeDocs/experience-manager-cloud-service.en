@@ -1,13 +1,13 @@
 ---
 title: Color tags for images
-description: Experience Manager Assets enables you to distinguish between colors in an image and apply those as tags automatically. You can then use these tags to search and filter images.
+description: Adobe Experience Manager Assets enables you to distinguish between colors in an image and apply those as tags automatically. You can then use these tags to search and filter images.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 ---
 # Color tags for images {#color-tag-images}
 
 ![Color Tagging Banner](assets/banner-image.png)
 
-Experience Manager Assets uses Adobe Sensei AI capabilities to distinguish between colors in an image and apply those as tags automatically on ingestion. These tags enable enhanced Search experience, based on image color composition. 
+Adobe Experience Manager (AEM) Assets uses Adobe Sensei AI capabilities to distinguish between colors in an image and apply those as tags automatically on ingestion. These tags enable an enhanced Search experience, based on image color composition. 
 
 You can configure the number of colors, within a range of one to 40, that are tagged to an image so that you can search for images based on those colors later. Experience Manager Assets applies the tags based on the color coverage in an image. You can also configure the display format for a color tag.
 
@@ -19,12 +19,12 @@ The following figure illustrates the sequence of tasks that you perform to confi
 
 |File format |Extension | MIME type |Input Colorspace |Maximum supported source file size |Maximum supported file size resolution|
 |---|---|---|---|---|---|
-| JPEG |.jpg, .jpeg|image/jpeg |sRGB|15GB |20000px X 20000px | 
-| PNG |.png|image/png |sRGB |15GB |20000px X 20000px |
-| TIFF |.tif, .tiff|image/tiff |sRGB | 4GB (limited by format specifications |20000px X 20000px |
-| PSD |.psd|image/vnd.adobe.photoshop |sRGB|2GB (limited by format specifications)|20000px X 20000px|
-| GIF |.gif|image/gif|sRGB|15GB|20000px X 20000px|
-| BMP |.bmp|image/bmp |sRGB|4GB (limited by format specifications)|20000px X 20000px|
+| JPEG |.jpg and .jpeg|image/jpeg |sRGB|15 GB |20000 × 20000 pixels | 
+| PNG |.png|image/png |sRGB |15 GB |20000 × 20000 pixels |
+| TIFF |.tif and .tiff|image/tiff |sRGB | 4 GB (limited by format specifications) |20000 × 20000 pixels |
+| PSD |.psd|image/vnd.adobe.photoshop |sRGB|2 GB (limited by format specifications)|20000 × 20000 pixels|
+| GIF |.gif|image/gif|sRGB|15 GB|20000 × 20000 pixels|
+| BMP |.bmp|image/bmp |sRGB|4 GB (limited by format specifications)|20000 × 20000 pixels|
 
 ## Manage color tagging properties {#manage-color-tagging-properties}
 
@@ -36,15 +36,15 @@ To manage the color tagging properties for images:
 
    1. Specify a display format for the color tag in the **[!UICONTROL Display Format]** field. The possible options include the color name, RGB, or HEX format.
 
-   1. Specify the number of colors to tag for the images in the **[!UICONTROL Limit]** field. These colors display when you view the properties for an image.  You can define a number between one and 40 in this field. The default value for this field is ten colors. 
+   1. Specify the number of colors that you want to tag for the images in the **[!UICONTROL Limit]** field. These colors display when you view the properties for an image. You can define a number between one and 40 in this field. The default value for this field is ten colors. 
 
    1. Specify the minimum color coverage percentage to include a color tag in the search results in the **[!UICONTROL Coverage/Dominance Threshold %]** field. For example, if the coverage of Red color in an image is ten percent and you define nine percent in this field, the image gets included when you search for images with Red color. However, if the coverage of Red color in an image is ten percent and you define 11 percent in this field, the image does not get included when you search for images with Red color.
 
-      You can specify any number between five and hundred in this field. The default value is 11.
+      You can specify any number between five and 100 in this field. The default value is 11.
 
       >[!NOTE]
       >
-      >Adobe recommends using a value close to the default value in this field. Setting a high number value set for this field (for example, greater than 25) may return very few search results. Similarly, setting a low number value (for example, less than 6) may return too many search results, which may not be useful.
+      >Adobe recommends using a value close to the default value in this field. Setting a high number value set for this field (for example, greater than 25) may return few search results. Similarly, setting a low number value (for example, less than 6) may return too many search results, which may not be useful.
       
    1. Click **[!UICONTROL Save]**.      
 
@@ -78,7 +78,7 @@ Metadata schemas contain specific fields for specific information to be filled i
 
 >[!NOTE]
 >
->Smart Color Tag field is available in default metadata schema. If you are using a customized metadata schema, configure your schema to add smart color tag field.
+>The Smart Color Tag field is available in the default metadata schema. If you are using a customized metadata schema, configure your schema to add a smart color tag field.
 
 To add the Smart Color Tags component to the Metadata Schema Form Editor:
 
@@ -98,21 +98,21 @@ To add the Smart Color Tags component to the Metadata Schema Form Editor:
 
 ## Color tags for existing images in DAM {#color-tags-existing-images}
 
-The already existing images in DAM are not color tagged automatically. You need to [!UICONTROL Reprocess Assets] manually to generate color tags for them.
+The existing images in DAM are not color tagged automatically. [!UICONTROL Reprocess Assets] manually to generate color tags for them.
 
-To color tag images, or folders (including subfolders) of assets that already exist in assets repository, follow these steps:
+To color tag images, or folders (including subfolders) of assets that exist in the assets repository, follow these steps:
 
 1. Select the [!DNL Adobe Experience Manager] logo and then select assets from the [!UICONTROL Navigation] page.
 
-1. Select [!UICONTROL Files] to display the Assets interface.
+1. Select [!UICONTROL Files].
 
-1. Navigate to the folder to which you want to apply color tags.
+1. In the Assets interface, navigate to the folder to which you want to apply color tags.
 
 1. Select the entire folder or specific images.
 
 1. Select ![Reprocess assets icon](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocess Assets] icon and select the [!UICONTROL Full Process] option.
 
-Once the process completes, navigate to the [!UICONTROL Properties] page of any image within the folder. The automatically added tags are seen in [!UICONTROL Smart Color Tags] section in [!UICONTROL Basic] tab.
+When the process completes, navigate to the [!UICONTROL Properties] page of any image within the folder. The automatically added tags are seen in the [!UICONTROL Smart Color Tags] section in the [!UICONTROL Basic] tab.
 
 
 ## View smart color tags for images {#view-color-tags}
@@ -127,15 +127,15 @@ To view smart color tags for images:
 
    ![View Color Tags](assets/view-color-tags.png)
 
-   Hover the mouse over a color tag to view the **[!UICONTROL Coverage/Dominance Threshold %]** of a color in an image.
+   Hover the mouse over a color tag so you can view the **[!UICONTROL Coverage/Dominance Threshold %]** of a color in an image.
 
 ## Configure AEM Assets color predicate {#configure-search-predicate}
 
-You can configure search filter for images. You can then base your search criteria on a specific color to filter the results.
+You can configure a search filter for images. You can then base your search criteria on a specific color to filter the results.
 
 >[!NOTE]
 >
->Configure AEM Assets color predicate only if you are not using the default search form.
+>Configure the AEM Assets color predicate only if you are not using the default search form.
 
 To configure the search filter, create an Asset Color Predicate using the Assets Admin Search Rail.
 
@@ -157,7 +157,7 @@ To configure the search filter:
 
 >[!VIDEO](https://video.tv.adobe.com/v/340761)
 
-After configuring all color tagging properties and [configuring Assets color predicate](#search-images-based-on-colors), you can search images based on a color as a filter.
+After configuring all color tagging properties and [configuring the Assets color predicate](#search-images-based-on-colors), you can search images based on a color as a filter.
 
 To search images based on colors:
 
@@ -174,7 +174,7 @@ To search images based on colors:
 
    You can filter images based on the selection of one color. The images that have the selected color as one of the smart color tags and above the [Coverage/ Dominance Threshold %](#manage-color-tagging-settings) display in the right pane.
 
-1. Click x in the Search bar to clear the filter.
+1. Clear the filter by clicking X in the Search bar.
 
 **See also**
 
