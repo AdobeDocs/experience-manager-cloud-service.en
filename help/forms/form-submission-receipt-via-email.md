@@ -1,6 +1,6 @@
 ---
 title: How to send a form submission acknowledgement via email in AEM Forms?
-description: AEM Forms allows you to configure the email Submit Action that sends an acknowledgement to a user on submitting the form.
+description: AEM Forms allows you to configure the email Submit Action that sends an acknowledgement to a user on form submission.
 uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

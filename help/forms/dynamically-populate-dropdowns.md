@@ -1,6 +1,6 @@
 ---
 title: How to dynamically populate drop-down lists?
-description: Procedure to dynamically populate drop-down lists based on some logic.
+description: Learn to create a cascading list box or dynamically populate drop-down lists.
 uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
 topic-tags: customization

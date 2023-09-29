@@ -1,6 +1,6 @@
 ---
 title: How to import and export assets to [!DNL AEM Forms]?
-description: Learn to import and export Adaptive Forms and related assets to AEM instances.
+description: Learn how to use DocuSign with an Adaptive Form to collect e-signatures.
 ---
 
 # Import and export assets {#importing-and-exporting-assets-to-aem-forms}

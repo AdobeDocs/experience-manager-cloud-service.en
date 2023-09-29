@@ -1,6 +1,6 @@
 ---
 title: Add a custom error handlers in Adaptive Forms
-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling.
+description: Use the custom error handler in Adaptive Form rule editor to effectively manage errors returned by an online service.
 keywords: Add a custom error handler, add a default error handler, add a error handler in form, use rule editor's invoke service to add a custom error handler, configure rule editor to add a custom error handler , add custom error handler using rule editor
 contentOwner: Ruchita Srivastav
 content-type: reference
