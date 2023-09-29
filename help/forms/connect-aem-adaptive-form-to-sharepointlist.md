@@ -6,42 +6,41 @@ seo-description: Connect an Adaptive Form to Microsoft SharePoint List. Learn ho
 keywords: connect AEM Adaptive Form to Microsoft SharePoint List, connect Adaptive Form to Microsoft SharePoint List, integrate AEM Adaptive Form to Microsoft SharePoint List, integrate Adaptive Form to Microsoft SharePoint List, submit data from an Adaptive Form to SharePoint List, submit AEM workflow to SharePoint List.
 ---
 
-# Connect an Adaptive Form to Microsoft® SharePoint Lists 
+# Connect an Adaptive Form to Microsoft® SharePoint List 
 
-Microsoft® SharePoint List is a collection of information in a tabular format. The data is stored in rows and columns. Items are referred to as metadata, fields, or properties, while the rows are called the list itself. SharePoint List maintains the list of items with permissions. It is similar to an Excel spreadsheet.
+**Microsoft® SharePoint**: Microsoft® SharePoint enables collaboration by providing dynamic and efficient team sites for all teams, departments, and divisions. It is used to store, organize, share, and access information from any device using any web browser, for example, Microsoft® Edge, Internet Explorer, Chrome, or Firefox. The two main components of **Microsoft® SharePoint** are:
 
-The two main components of Microsoft® SharePoint are:
+* **Microsoft® SharePoint Document Library**: Microsoft® SharePoint Document Library displays a list of files and folders along with their key information, such as the last modified date and the owner of a file. This feature makes the organization and navigation of files easy.
+For instructions on how to integrate a **Microsoft® SharePoint Document Library** with an Adaptive Form, see the [Adaptive Form Submit Action](/help/forms/configuring-submit-actions.md#submit-to-sharepoint) article.
 
-* **Microsoft® SharePoint Document Libraries**: **: Microsoft® SharePoint Document Libraries are designed for the management of documents such as Word documents, Excel, spreadsheets, images, and more. The Document Libraries allow to attach additional information (metadata) to the documents; hence making categorization and searching easy. For instructions on how to integrate a Microsoft® SharePoint Document Library to an Adaptive Form, see the [Adaptive Form Submit Action](/help/forms/configuring-submit-actions.md#submit-to-sharepoint) article.
+* **Microsoft® SharePoint List**: Microsoft® SharePoint List is a collection of data. You can add columns for different types of data and create views to display data effectively. You can group, filter, sort and format the lists easily. 
 
-* **Microsoft® SharePoint Lists**: Microsoft® SharePoint Lists store structured data in a tabular format. Lists are used to organize and manage various types of data, such as task lists, contact information, inventory records, and more. Lists are customizable, allowing users to define the types of data they want to capture. The choice between them depends on the specific needs and use cases within an organization. 
+## Prerequisites to connect an Adaptive Form to Microsoft® SharePoint List {#prerequisites}
 
-## Prerequisites to connect an Adaptive Form to Microsoft® SharePoint Lists {#prerequisites}
-
-Before connecting an Adaptive Form to Microsoft® SharePoint Lists, perform the following steps:
+Before connecting an Adaptive Form to Microsoft® SharePoint List, perform the following steps:
 
 1. [Configure Microsoft® SharePoint List](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [Create a Form Data Model using created Microsoft® SharePoint List configuration](/help/forms/create-form-data-models.md)
-1. [Configure services to read and write data from/to a Form Data Model](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/create-form-data-models.md)
+1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
 
 Now, you can:
 
-* [Connect Microsoft® SharePoint Lists to an Adaptive Form](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
-* [Connect Microsoft® SharePoint Lists to an AEM workflow](#connect-sharepoint-list-workflow)
+* [Connect Microsoft® SharePoint List to an Adaptive Form](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
+* [Connect Microsoft® SharePoint List to an AEM workflow](#connect-sharepoint-list-workflow)
 
 ## Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
 
-To integrate Microsoft® SharePoint Lists to your Adaptive Form [configure an Adaptive Form to use a Form Data Model](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
+To integrate Microsoft® SharePoint List to your Adaptive Form [configure an Adaptive Form to use a Form Data Model](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
 
 After configuring an Adaptive Form to use a Form Data Model, you can: 
 
 * [Configure Submit action using a Form Data Model](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 * [Configure Rule Editor to invoke a Form Data Model](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
 
-## Connect Microsoft® SharePoint Lists to an AEM workflow {#connect-sharepoint-list-workflow}
+## Connect Microsoft® SharePoint List to an AEM workflow {#connect-sharepoint-list-workflow}
 
-To integrate Microsoft® SharePoint Lists to an AEM Workflow:
+To integrate Microsoft® SharePoint List to an AEM Workflow:
 
 1. [Create a workflow to invoke a Form Data model](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
 
@@ -63,10 +62,12 @@ Learn how to [use AEM Workflow](https://experienceleague.adobe.com/docs/experien
 
 ## Best Practices {#best-practices}
 
-* For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft® SharePoint Lists rather than Microsoft® SharePoint Document Libraries.
-* Use the **Delete by ID** property to remove columns that are no longer in use.
-* In Microsoft® SharePoint Lists, the following column types are not supported:
-
+<!-- * For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft® SharePoint List rather than Microsoft® SharePoint Document Library. -->
+* In Microsoft® SharePoint List, the following column types are not supported:
+    * image column
+    * metadata column
+    * person column
+    * external data column
 
 ## See Also {#see-also}
 
