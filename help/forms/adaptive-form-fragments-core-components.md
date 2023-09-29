@@ -7,7 +7,7 @@ feature: Adaptive Forms
 
 ---
 
-# Adaptive Form fragments {#adaptive-form-fragments}
+#  Create and use Adaptive Forms Fragments in an Adaptive Form based on Core Components {#adaptive-form-fragments}
 
 
 | Version | Article link |
