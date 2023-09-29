@@ -3,6 +3,7 @@ title: Creating and Organizing Pages
 description: Learn how to organize your website by creating and managing pages with AEM.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 ---
+
 # Creating and Organizing Pages {#creating-and-organizing-pages}
 
 This document describes how to create and manage pages with Adobe Experience Manager Cloud Service so that you can then [create content](/help/sites-cloud/authoring/fundamentals/editing-content.md) on those pages.
@@ -20,6 +21,8 @@ This document describes how to create and manage pages with Adobe Experience Man
 >[!TIP]
 >
 >There are a number of [keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) that you can use from the websites console that make organizing your pages more efficient.
+
+{{edge-delivery-authoring}}
 
 ## Organizing your Website {#organizing-your-website}
 

@@ -11,7 +11,6 @@ feature: Adaptive Forms
 
 # Error Handlers for Adaptive Form based on Core Components {#error-handlers-in-adaptive-form}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 | Version | Article link |
 | -------- | ---------------------------- |
