@@ -13,6 +13,7 @@ docset: aem65
 
 #  Create and use Adaptive Forms Fragments in an Adaptive Form based on Core Components {#adaptive-form-fragments}
 
+
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en)                  |
