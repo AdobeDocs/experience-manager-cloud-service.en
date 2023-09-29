@@ -29,6 +29,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.8.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-8-0.md)
       + [Release Notes for 2023.7.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-7-0.md)
       + [Release Notes for 2023.6.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-6-0.md)
       + [Release Notes for 2023.4.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
@@ -455,6 +456,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
     + [Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
     + [Preview - JSON Representation](/help/assets/content-fragments/content-fragments-json-preview.md)
+    + [Reuse Content Fragments using MSM for Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)    
   + Dynamic Media {#dynamicmedia}
     + Dynamic Media Journey: The Basics {#dm-journey}
       + [Part I: What is Dynamic Media - Use cases - How an asset flows through the system](/help/assets/dynamic-media/dm-journey-part1.md)
