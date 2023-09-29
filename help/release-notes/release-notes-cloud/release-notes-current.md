@@ -20,7 +20,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2023.9.0) is September 28, 2023. The next feature release (2023.10.0) is planned for October 26, 2023.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2023.10.0) is October 26, 2023. The next feature release (2023.11.0) is planned for November 30, 2023.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -35,12 +35,6 @@ Have a look at the September 2023 Release Overview video for a summary of the fe
 >[!VIDEO](put new link here)
 
 -->
-
-## Edge Delivery Services {#edge-delivery}
-
-Edge Delivery is a new set of composable services focused on maximizing the impact of content to drive measurable business outcomes at the point of customer interaction.
-
-Learn more about Edge Delivery Services in the article [here](/help/edge/overview.md).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -110,22 +104,6 @@ You can now assign metadata form to a specific folder within your deployment. Al
 
      You can send an email to `aem-forms-headless@adobe.com` from your official email ID to join the early adopter program. 
      
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### New CDN caching behavior for campaign-related URL parameters {#cache-url-params}
-
-For new environments, the CDN will remove marketing related query parameters by default in order to increase marketing campaign performance and cache hit ratios. Existing environments are unaffected. [Learn more.](/help/implementing/dispatcher/caching.md#marketing-parameters)
-
-### Traffic Filter Rules (including WAF Rules) early adopter program {#waf-early-adopter}
-
-Filter traffic at the CDN based on:
-* request headers and properties (e.g., IP address)
-* traffic patterns known to be associated with malicious traffic
-
-Interested in trying out the feature and sharing feedback? Send an email to **aemcs-waf-adopter@adobe.com** from your official email ID to learn more about the early adopter program. Space is limited.
-
-Learn more about the feature in the article [here](/help/security/cdn-and-waf-rules.md).
-
 ## Cloud Manager {#cloud-manager}
 
 You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes/current.md).
