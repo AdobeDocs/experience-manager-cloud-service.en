@@ -117,7 +117,7 @@ This message indicates that the Cloud Acceleration Manager was unable to reach t
 
 ### AEM Version Updates and Ingestions
 
-[AEM Version Updates](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) keeps environments up to date by applying updates automatically. If the update is triggered when an ingestion is performed, it can cause unpredictable results including the corruption of the environment.
+[AEM Version Updates](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) are automatically applied to environments to keep them up to date with the most recent AEM as a Cloud Service version. If the update is triggered when an ingestion is performed, it can cause unpredictable results including the corruption of the environment.
 
 If the "AEM Version Updates" is onboarded on the destination program, the ingestion process will attempt to disable its queue before it starts. When the ingestion is complete the version updater state will be returned to how it was before the ingestion(s) started.
 
@@ -125,7 +125,7 @@ If the "AEM Version Updates" is onboarded on the destination program, the ingest
 >
 > There is no longer a need to log a support ticket to get "AEM Version Updates" disabled.
 
-If "AEM Version Updates" is active (i.e. updates are running or are queued to be run), the ingestion will not begin and the user interface presents the following message. Once the updates are complete, the ingestion can be started. Cloud Manager can be used to see the current state of the updater and the pipelines of the program.
+If "AEM Version Updates" is active (i.e. updates are running or are queued to be run), the ingestion will not begin and the user interface presents the following message. Once the updates are complete, the ingestion can be started. Cloud Manager can be used to see the current state of the pipelines of the program.
 
 >[!NOTE]
 >
