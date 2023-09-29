@@ -49,6 +49,6 @@ Interested in test-driving the new dashboard? Please send an email to `aem-light
 
 ## Bug Fixes {#bug-fixes}
 
-* When a program is deleted, any associated, running pipeline is also deleted, ensuring that the pipeline is not incorrectly designated as failed status.
-* The Go-live complete button is disabled and informs the user of the reason that a pipeline is in progress.
-* Occasionally, when all steps of a pipeline execution are 'completed',  status of the pipeline is seen as "running", making it seem to be in a stuck state. It is now seen as 'Complete'.
+* When a program is deleted, any associated, running pipeline is now also deleted.
+* If a pipeline is in progress, the **Send** button of the **Go-live complete** dialog is now disabled and informs the user that the go-live date can't be set because of the the running pipeline.
+* An occasional error has been fixed where all steps of a pipeline execution were marked as completed, but the status of the pipeline was still running, giving the appearance of a stuck state.

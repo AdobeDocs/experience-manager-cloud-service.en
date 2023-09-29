@@ -2,14 +2,18 @@
 title: Adaptive Form fragments
 description: Adaptive Forms provides a mechanism to create a form segment, such as a panel or a group of fields, as use it in any Adaptive Form. You can also save an existing panel as fragment.
 topic-tags: author
+keywords: Add Adaptive Form fragments, Adaptive Form fragments, Create a form fragment, Add a fragment to an Adaptive Form, Manage fragments
 feature: Adaptive Forms
-hide: yes
-hidefromtoc: yes
+
 ---
 
-# Adaptive Form fragments {#adaptive-form-fragments}
+# Create and use Adaptive Forms Fragments in an Adaptive Form based on Core Components {#adaptive-form-fragments}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service     | This article   |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html)                  |
 
 While every form is designed for a specific purpose, there are some common segments in most forms, such as to provide personal details like name and address, family details, income details. Form developers are required to create these common segments every time a new form is created.
 
@@ -37,6 +41,11 @@ You can create an Adaptive Form fragment from scratch or save a panel in an exis
    ![Displays model type in the Form Model tab](assets/create-af-1-1.png)
 
     * **None**: Specifies to create the fragment from scratch without using any form model.
+
+      >[!NOTE]
+      >
+      >An advantage of core component-based fragments over foundation component-based fragments is the ability to use multiple core component-based fragments not tied to any form model in a single Adaptive Form.
+      
     * **Schema**: Specifies to create the fragment using an XML or JSON schema uploaded to AEM Forms. You can upload or select from the available XML or JSON schemas as the form model for the fragment. When you select an XML schema, you can also create an Adaptive Form fragment by selecting a complexType present in the selected schema from the **[!UICONTROL XML Schema Complex Type]** drop-down box. When you select a JSON schema, you can also create an Adaptive Form fragment by selecting a schema definition present in the selected schema from the **[!UICONTROL JSON Schema Definitions]** drop-down box. 
     * **Form Data Model**:  Specifies to create the fragment using a form data model. You can create an Adaptive Form fragment based on only one data model object in a form data model. Expand Form Data Model Definitions drop-down. It lists all data model objects in the specified form data model. Select a data model object from the list.
 
@@ -175,3 +184,9 @@ You can perform several operations on Adaptive Form fragments using the AEM Form
 
 Reference Adaptive Form fragments that you can use to create your form are available. 
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
+
+## See Also {#see-also}
+
+* [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Create or add themes in Adaptive Forms](/help/forms/using-themes-in-core-components.md)
+* [Use Google reCAPTCHA in an AEM Adaptive Form based on Core Components](/help/forms/captcha-adaptive-forms-core-components.md)
