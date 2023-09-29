@@ -3,13 +3,16 @@ title: Authoring Environment and Tools
 description: The authoring environment of AEM provides various mechanisms for organizing and editing your content
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 ---
+
 # Authoring Environment and Tools {#authoring-the-environment-and-tools}
 
 The authoring environment of AEM provides various mechanisms for organizing and editing your content. The tools provided are accessed from the various consoles and page editors.
 
+{{edge-delivery-authoring}}
+
 ## Managing your Site {#managing-your-site}
 
-The **Sites** console allows you to navigate and manage your website, using the header bar, toolbar, action icons (applicable for the selected resource), breadcrumbs, and, when selected, secondary rails (for example, timeline and references).
+The **Sites** console lets you navigate and manage your website, using the header bar, toolbar, action icons (applicable for the selected resource), breadcrumbs, and, when selected, secondary rails (for example, timeline and references).
 
 For example, column view:
 
@@ -259,9 +262,9 @@ In addition, **Page Information** can provide access to analytics and recommenda
 There are various modes when editing a page allowing for different actions:
 
 * [Edit](/help/sites-cloud/authoring/fundamentals/editing-content.md) - the mode to use when editing the page content.
-* [Layout](/help/sites-cloud/authoring/features/responsive-layout.md) - allows you to create and edit your responsive layout dependent on device (if the page is based on a layout container)
+* [Layout](/help/sites-cloud/authoring/features/responsive-layout.md) - lets you create and edit your responsive layout dependent on device (if the page is based on a layout container)
 * [Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md) - increase content relevance through targeting and measuring across all channels.
-* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - allows you to view a pages state at a particular point in time.
+* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - lets you view a pages state at a particular point in time.
 * [Live Copy Status](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) - allows a quick overview of the live copy status and which components are/are not inherited.
 * [Developer Mode](/help/implementing/developing/tools/developer-mode.md)
 * [Preview](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - used to view the page as it is shown on the publish environment; or to navigate using links in the content.

@@ -164,7 +164,7 @@ For desktop and mobile adaptive video streaming, the videos used for bit rate sw
 
 Video playback occurs using either HLS or DASH, or progressive video download. In prior versions of Experience Manager, such as 6.0, 6.1, and 6.2, videos were streamed over HTTP.
 
-However, in Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, HLS or DASH) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. That is, video streaming will always occur over HTTPS unless it is not supported by the browser. (see the following table).
+However, in Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, HLS or DASH) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. That is, video streaming will always occur over HTTPS unless it is not supported by the browser. See the following table.
 
 Therefore,
 
@@ -301,7 +301,7 @@ You can obtain a file's metadata by viewing its metadata using an editing tool f
 
 When you choose or create a video encoding preset for your primary source video file, make sure that the preset has the same aspect ratio as the primary source video file. The aspect ratio is the ratio of the width to the height of the video.
 
-To determine the aspect ratio of a video file, obtain the file's metadata and note the file's width and height (see Obtaining a file's metadata above). Then use this formula to determine the aspect ratio:
+To determine the aspect ratio of a video file, obtain the file's metadata and note the file's width, and height (see Obtaining a file's metadata above). Then use this formula to determine the aspect ratio:
 
 width/height = aspect ratio
 
@@ -403,37 +403,6 @@ As an example, suppose that your source video is 1920 x 1080. In the following t
 ### Encoded video file format {#encoded-video-file-format}
 
 Dynamic Media recommends using MP4 H.264 video encoding presets. Because MP4 files use the H.264 video codec, it provides high-quality video but in a compressed file size.
-
-### Enable DASH on your account {#enable-dash}
-
-DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.
-
-Some key benefits from enabling DASH on your account include the following:
-     
-* Package DASH stream video for adaptive bitrate streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.
-* Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.
-* You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.
-* Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of video encodes are created for both HLS and DASH to optimize video storage costs.
-* Helps make video delivery more accessible for your customers.
-* Get the streaming URL by way of APIs, too.
-
-You initiate a request to use DASH; it is not automatically enabled on your account.
-
-To enable DASH on your account, create a customer support case as described below. In your support case, specify that you want to enable DASH on your Dynamic Media account and on Experience Manager. 
-
-**To enable DASH on your account:**
-
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-1. To create a support case, follow the instructions while ensuring you provide the following information:
-
-    * Primary contact name, email, phone.
-    * Name of your Dynamic Media account.
-    * Specify that you want DASH enabled on your Dynamic Media account and on Experience Manager.
-   
-1. Adobe Customer Support adds you to the DASH customer Wait List based on the order in which requests are submitted.
-1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for DASH enablement.
-1. You are notified after completion by Customer Support.
-1. Create your [video viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
 
 ## View video reports {#viewing-video-reports}
 
@@ -542,7 +511,313 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
+
+
+
+
+### Enable DASH, multi-subtitle, and multi-audio track support on your Dynamic Media account {#enable-dash}
+
+**About enabling DASH support on your account**
+DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.
+
+Some key benefits from enabling DASH on your account include the following:
+     
+* Package DASH stream video for adaptive bitrate streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.
+* Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.
+* You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.
+* Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of video encodes are created for both HLS and DASH to optimize video storage costs.
+* Helps make video delivery more accessible for your customers.
+* Get the streaming URL by way of APIs, too.
+
+Enabling DASH support on your account is done by way of an Adobe Customer Support case that you create and submit.
+
+**About enabling multi-subtitle and multi-audio track support on your account**
+
+At the same time you create an Adobe Support case to have DASH enabled on your account, you can also benefit from having multi-subtitle and multi-audio track support automatically enabled, too. After enablement, all subsequent videos that you upload are processed with a new backend architecture that includes support for adding multi-subtitle and multi-audio tracks to your videos.
+
+>[!IMPORTANT]
+>
+>Any videos that you uploaded *before* enabling multi-subtitle and multi-audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multi-subtitle and multi-audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
+
+**To enable DASH, multi-subtitle, and multi-audio track support on your Dynamic Media account:** 
+
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. To create a support case, follow the instructions while ensuring you provide the following information:
+
+    * Primary contact name, email, phone.
+    * Name of your Dynamic Media account.
+    * Specify that you want DASH, multi-subtitle, and multi-audio track support enabled on your Dynamic Media account, on Experience Manager 6.5.
+   
+1. Adobe Customer Support adds you to the customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for enablement.
+1. You are notified after completion by Customer Support.
+1. Now you can do either one of the following:
+
+    * Create your [video viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
+    * [Add multi-subtitles and multi-audio tracks](#add-msma) to your video.
+
+
+## About multi-subtitle and multi-audio track support for videos in Dynamic Media{#about-msma}
+
+With multi-subtitle and multi-audio track capability in Dynamic Media, you can easily add multiple subtitles and audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
+
+![Subtitles and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT subtitle files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
+
+Some of the use cases to consider for adding multi-subtitles and multi-audio tracks to your primary video include the following:
+
+| Type | Use case |
+|--- |--- |
+| **Subtitles** | Multiple language support |
+|  | Descriptive text for accessibility |
+| **Audio tracks** | Multiple language support  |
+|  | Commentary tracks |
+|  | Descriptive audio |
+
+All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers&mdash;except the Dynamic Media *Video_360* viewer&mdash;are supported for use with multi-subtitles and multi-audio tracks.
+
+Multi-subtitle and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Customer Support.
+
+### Add multi-subtitles and multi-audio tracks to your video {#add-msma}
+
+Before you add multi-subtitle and multi-audio tracks to your video, be sure you already have the following in-place:
+
+* Dynamic Media is set up in an AEM environment.
+* A [Dynamic Media Video profile is applied to the folder where your videos are ingested](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+* [Multi-subtitle, and multi-audio track is enabled on your Dynamic Media account](#enable-dash).
+
+Added subtitles and captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
+
+>[!IMPORTANT]
+>
+>Any videos that you uploaded *before* enabling multi-subtitle and multi-audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multi-subtitle and multi-audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
+
+**To add multi-subtitles and multi-audio tracks to your video:**
+
+1. [Upload your primary video to a folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it.
+1. Navigate to the uploaded video asset that you want to add multi-subtitle and multi-audio tracks.
+1. In asset selection mode, either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the Properties icon (a circle with an "i" in it).
+![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card view.*
+1. On the video's Properties page, select the **[!UICONTROL Subtitles & Audio Tracks]** tab.
+
+   >[!TIP]
+   >If you do not see the **[!UICONTROL Subtitles & Audio Tracks]** tab, it means either one of two things:
+   >
+   >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
+   >* Or, the video must be reprocessed by Dynamic Media. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+   >
+   >When you have completed either one of the above tasks, return to these steps.
+  
+   ![Subtitles and Audio Tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Subtitles and Audio Tracks tab on the video's Properties page.*
+
+1. (Optional) To add one or more subtitle (or caption) files to a video, do the following:
+    * Select **[!UICONTROL Upload Subtitles]**.
+    * Navigate to, and select, one or more .vtt (Video Text Tracks) files and open them.
+    * For subtitles to be visible on the media player, you *must* add required details (metadata) about *each* subtitle file that you uploaded. Select the pencil icon to the right of a subtitle file name. In the **Edit Subtitle** dialog box, enter the following required details about the file, then select **[!UICONTROL Save]**. Repeat this process for each subtitle file that you uploaded:
+    
+      | Subtitle metadata | Description |
+      |--- |--- |
+      | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional subtitle files and audio track files. |
+      | Language | Select the language of the subtitle. |
+      | Type | Select the type of subtitle that you are using.<br>**Subtitle** &ndash; The subtitle text displayed with the video that translates or transcribes the dialogue.<br>**Caption** &ndash; The caption text also includes background noises, speaker differentiation, and other relevant information, along with the translation or transcription of the dialogue, making the content more accessible for individuals who are deaf or hard of hearing. |
+      | Label | The text that is displayed for the subtitle's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+
+      You can change or edit subtitle metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+
+1. (Optional) To add one or more audio tracks to a video, do the following:
+    * Select **[!UICONTROL Upload Audio Tracks]**.
+    * Navigate to, and select, one or more .mp3 files and open them.
+    * For audio tracks to be visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, you *must* add required details about *each* audio track file that you added. Select the pencil icon to the right of an audio track file name. In the **Edit Audio Track** dialog box, enter the following required details, then select **[!UICONTROL Save]**. Repeat this process for each audio track file that you uploaded.
+    
+      | Audio Track metadata | Description |
+      |--- |--- |
+      | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or subtitle files. |
+      | Language | Select the language of the audio track. |
+      | Type | Select the type of audio track that you are using.<br>**Original** &ndash; The audio track originally attached to the video and represented as `[Original]` in the label with `English` language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** &ndash; An add-on audio track for a language other than the original.<br>**Audio description** &ndash; An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
+      | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original|` by default. |
+
+      You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+
+1. In the upper-right corner of the page, from the **[!UICONTROL Save & Close]** drop-down list, select **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the **Status** column of the interface.
+
+    >[!NOTE]
+    >
+    >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+
+1. (Optional) If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded subtitle and audio track files](#lifecycle-status-video).
+1. (Optional) Preview the video before publishing to ensure the subtitles and audio work as expected. See [Preview a video that has multiple subtitles and audio tracks](#preview-video-audio-subtitle)
+1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
+
+#### About adding subtitle and audio track files to a video that is already published
+
+When you upload additional subtitle files or audio track files to a video that is already published, it means that those files will have a `Processed` status after they are prepared, following upload. At that point, you can preview the video in Dynamic Media to see or hear the newly uploaded files. 
+
+Following preview, however, you must *publish* the video again for the newly added subtitle or audio track files to be published, too. After publishing, the subtitles or audio becomes available with the public Dynamic Media URL.
+
+>[!NOTE]
+>
+>Based on the caching settings of your instance, metadata updates can take several minutes before they are reflected in preview and in published URLs.
+
+In the scenario where you have configured Dynamic Media for immediate publish, the uploading of additional subtitle or audio files immediately triggers a publish of the video following the upload of subtitle or audio files.
+
+>[!CAUTION]
+>
+>When you upload subtitle files or audio files to a video that is either published or unpublished, the files are deleted if you [*reprocess*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) the video. Only the video's original audio remains intact. In such cases, you must reupload the subtitle files and audio track files to the video, again.
+
+#### Add multiple captions to a video that has an existing URL with caption modifier
+
+Dynamic Media supports the addition of a single caption with video by way of a URL modifier. See [Add captions to video](#adding-captions-to-video).
+
+Multiple caption changes take precedence over a caption added by way of a URL modifier for published videos.
+
+**To add multiple captions to a video that has an existing URL with caption modifier:**
+
+1. Upload the caption file that is already added as a modifier to the video, so you can manage the file explicitly.
+1. Upload any additional subtitle/caption files, as necessary.
+1. Publish the video as usual.
+The existing URL with the caption modifier can now load multiple captions.
+
+### View the lifecycle status of uploaded subtitle and audio track files{#lifecycle-status-video}
+
+You can observe the lifecycle status of any subtitle or audio track file uploaded to your primary video from the **Subtitles & Audio Tracks** tab of **Properties**.
+
+**To view the lifecycle status of a video:**
+
+1. Navigate to the video asset whose lifecycle status you want to view.
+1. In asset selection mode, either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the Properties icon (a circle with an "i" in it).
+1. On the Properties page, select the **[!UICONTROL Subtitles & Audio Tracks]** tab. In the Status column, note the state of each subtitle or audio file.
+
+| Subtitle or Audio Track Status | Description |
+| --- | --- |
+| Processing | When a new subtitle or audio track file is added and saved, it goes into a "Processing" state. Dynamic Media processes the file by attaching the streaming manifest to the primary video. |
+| Processed | After processing is complete, the subtitle or audio track file, or the original audio track associated with the primary video, appears in a "Processed" state. You can preview subtitle and audio track files that appear as "Processed" *before* you publish the video live. |
+| Published | A "Published" state represents a similar state as "Published" for a primary video. Assets are published when the primary video is published and are available on the public Dynamic Media URL. |
+| Failed | A "Failed" state means that processing of a subtitle or audio track file did not complete. Delete the subtitle or audio track file and upload again. |
+| Unpublished | When a published primary video is unpublished explicitly, any subtitle or audio track files that you added to the video, are also unpublished. |   
+
+![Status column highlighted for Subtitles and Audio Tracks fields.](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*Lifecycle status of each uploaded subtitle and audio track file.*
+
+### Set the default audio for a video that has multiple audio tracks
+
+By default, a video's original audio is set as the default audio to be played.
+
+However, any uploaded audio track files can be set as the default audio to play after a video is loaded into the viewer. In the Properties user interface, under the **Subtitles & Audio Tracks** tab, the `Default` label is applied to the right of the audio track file for video playback.
+
+>[!NOTE]
+>
+>The playback of default audio can also depend on what is set in the following browsers:
+>
+>* Chrome&mdash;The default audio that is set in the video, is played.
+>* Safari&mdash;If the default language is set in Safari, audio is played with the set default language, if available with the video's manifest. Otherwise, the default audio that is set as part of a video's properties is played.
+
+**To set the default audio for a video that has multiple audio tracks:**
+
+1. Navigate to the video asset whose default audio track you want to set.
+1. In asset selection mode, either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the Properties icon (a circle with an "i" in it).
+1. On the Properties page, select the **[!UICONTROL Subtitles & Audio Tracks]** tab. 
+1. Under the **Audio Tracks** heading, select the audio track file that you want to set as the video's default.
+1. Select **[!UICONTROL Set as default]**.
+In the **Set as default** dialog box, select **[!UICONTROL Replace]**.
+
+   ![The Audio Tracks heading with a selected audio track file name and highlighted "Set as default" button.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*Setting the default audio track for a video.*
+
+1. In the upper-right corner, select **[!UICONTROL Save & Close]**.
+1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
+
+### Preview a video that has multiple subtitles and audio tracks{#preview-video-audio-subtitle}
+
+After subtitle files and audio track files are uploaded to a video and processed, you can use the Dynamic Media video viewer to preview all the different tracks. Doing so helps you to see what your video looks and sounds like to customers and ensures that it is behaving as expected.
+
+When you are satisfied with the video, you can [publish it](publishing-dynamicmedia-assets.md) using any one of the following methods.
+
+See [Embed the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
+See [Link URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
+See [Add Dynamic Media Assets to pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+
+>[!NOTE]
+>
+>The default Experience Manager preview tab does not show multiple subtitle and audio tracks. The reason is because those tracks are associated with Dynamic Media and can only be seen using Dynamic Media Viewer preview.
+
+**To preview a video that has multiple subtitles and audio tracks:**
+
+1. In **[!UICONTROL Assets]**, navigate to an existing video that you have added multiple subtitles and audio tracks. 
+1. Click the video asset so you can open it in preview mode.
+1. On the preview page, near the upper-left corner of the page, select the drop-down list, then select **[!UICONTROL Viewers]**.
+
+   ![Drop-down list showing the Viewers option.](/help/assets/dynamic-media/assets/msma-selectviewers.png)
+
+1. From the Viewers list, select a viewer that you want to use for the video preview. As an example, the following screenshot shows the **[!UICONTROL Video]** viewer being selected.
+
+   ![Selection of the Video viewer from the Viewers drop-down list.](/help/assets/dynamic-media/assets/msma-dmviewerselected.png)
+
+1. Near the lower-right corner, to the left of the volume icon, select the speech bubble icon, then select the audio or subtitle you want to hear, or see or both. If desired, under Subtitles, you can select **[!UICONTROL Off]** to not display any subtitles or captions.
+
+    ![The Audio and Subtitles pop-up list in the Video viewer.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*Simulation of a user selecting the audio and subtitle for video playback.*
+
+1. To begin playback, select the video's **[!UICONTROL Play]** button. 
+    Note the **[!UICONTROL URL]** and **[!UICONTROL Embed]** buttons in the lower-left corner. Use these buttons to [link the video's URL to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or to [embed the video on a Web Page](/help/assets/dynamic-media/embed-code.md), respectively.
+1. Near the upper right corner of the preview page, select **[!UICONTROL Close]**.
+
+### Delete subtitle or audio track files from a video
+
+You can delete subtitle or audio track files from a video. Deletion of published subtitle or audio track files is automatically reflected in the video's published URL.
+
+The original audio track extracted from a primary video cannot be deleted.
+
+**To delete subtitle or audio track files from a video:**
+
+1. Navigate to the video asset whose default audio track you want to set.
+1. In asset selection mode, either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the Properties icon (a circle with an "i" in it).
+1. On the Properties page, select the **[!UICONTROL Subtitles & Audio Tracks]** tab.
+1. Do either one of the following:
+
+   * Subtitles&mdash;Under the **Subtitles** heading, select one or more subtitle files that you want to delete from the video, then select **[!UICONTROL Delete]**.
+   * Audio Tracks&mdash;Under the **Audio Tracks** heading, select one or more audio track files that you want to delete from the video, then select **[!UICONTROL Delete]**.
+
+1. In the Delete dialog box, select **[!UICONTROL OK]**.
+1. Publish the video.
+
+### Download subtitle or audio track files that were uploaded to a video
+
+You can download one or more subtitle or audio track files that you uploaded for use with a video. You have the option of either downloading all selected files as a .zip, or creating a separate download folder for each file.
+
+The original audio track extracted from a primary file cannot be downloaded.
+
+**To download subtitle or audio track files from a video:**
+
+1. Navigate to the video asset whose default audio track you want to set.
+1. In asset selection mode, either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the Properties icon (a circle with an "i" in it).
+1. On the Properties page, select the **[!UICONTROL Subtitles & Audio Tracks]** tab.
+1. Do either one of the following:
+
+   * Subtitles&mdash;Under the **Subtitles** heading, select one or more subtitle files that you want to download from the video, then select **[!UICONTROL Download]**.
+   * Audio Tracks&mdash;Under the **Audio Tracks** heading, select one or more audio track files that you want to download from the video, then select **[!UICONTROL Download]**.
+
+1. In the Download dialog box, set the following options:
+
+    | Option | Description |
+    |--- |--- |
+    | Save As | Use the default file name specified in the Save As text field, or specify your own name. |
+    | Create a separate folder for each asset | Create a folder for each subtitle file or audio track file that you selected for download. |
+    | Email | Use your default email program to send the .zip file to a specified email address. |
+    | Assets | Specifies the number of files that you are downloading and the combined total size of all selected files. Deselecting this option dims (turns off) the **[!UICONTROL Download]** button, preventing you from downloading any file. |
+1. Select **[!UICONTROL Download]**.
+1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
+
+
+
+
+
+
 ## Add closed captions or subtitles to video {#adding-captions-to-video}
+
+>[!IMPORTANT]
+>
+>Adobe recommends that you [enable multi-subtitle and multi-audio track capability](#enable-dash) on your Dynamic Media account. Doing so lets you take advantage of the latest Dynamic Media backend architecture and a simplified workflow for adding captions, subtitles, and audio tracks to your videos.
 
 You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning, you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
 
@@ -687,9 +962,9 @@ See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
 A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail should serve to encourage a customer to select the video.
 
-All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can either play the video and pause on the frame you want to use, or you can select an image asset that you have already uploaded and *published* in your digital asset manager.
+All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can either play the video and pause on the frame you want to use. Or, you can select an image asset that you have already uploaded and *published* in your digital asset manager.
 
-Note that once the thumbnail is changed for a video, thumbnail generation via Asset Compute Service on reprocessing the video is skipped.  
+When the thumbnail is changed for a video, thumbnail generation by way of Asset Compute Service on reprocessing the video is skipped.  
 
 The ability to customize a video thumbnail is only available after you have applied a video profile to the folder where the video is located.
 
@@ -717,7 +992,7 @@ The ability to customize a video thumbnail is only available after you have appl
 
         * On the toolbar, select **[!UICONTROL Select Thumbnail from Assets]**.
         * Select **[!UICONTROL Select Thumbnail]**.
-        * Navigate to a previously uploaded and published image asset you want to use. Note that the asset will automatically be resized to serve as a thumbnail image for the video.
+        * Navigate to a previously uploaded and published image asset that you want to use. The asset is automatically resized to serve as a thumbnail image for the video.
         * Select the image asset, then select **[!UICONTROL Select]**.
 
 1. On the Change Thumbnail page, select **[!UICONTROL Save Change]**.

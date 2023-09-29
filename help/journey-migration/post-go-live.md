@@ -9,10 +9,10 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 >id="aemcloud_golive_troubleshooting"
 >title="Troubleshooting AEM"
 >abstract="Review best practices for continous development and manage logs along with tools like Developer console & CRXDE Lite to help with troubleshooting issues with AEM"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Accessing and Managing Logs"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="Accessing and Managing Logs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
 
-This is the last part of the journey so you will learn to how to monitor for issues and improve performance once the migration is complete. You should ensure the clean-up of temporary files, review best practices for continuous development and manage logs.
+This journey is the last part, so you will learn to how to monitor for issues and improve performance after the migration is complete. You should ensure the clean-up of temporary files, review best practices for continuous development and manage logs.
 
 ## The Story So Far {#story-so-far}
 
@@ -37,35 +37,35 @@ See [Implementing for AEM as a Cloud Service](/help/implementing/developing/intr
 As a user, you can access CRXDE Lite on the development environment but not stage or production. 
   
 >[!IMPORTANT]
->Writing to immutable repositories such as `/libs` and `/apps` at runtime results in errors. Additionally, you do not have access to developer tooling for staging and production environments.
+>Writing to immutable repositories such as `/libs` and `/apps` at runtime results in errors. Also, you do not have access to developer tooling for staging and production environments.
 
-See [Developing with CRXDE Lite](/help/implementing/developing/tools/crxde.md) to learn how to develop your AEM application using CRXDE Lite.
+See [Developing with CRXDE Lite](/help/implementing/developing/tools/crxde.md) for more information about how to develop your AEM application using CRXDE Lite.
 
 ## Managing Logs {#managing-logs}
 
 Users can access a list of available log files for the selected environment.
   
-See [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) to learn how to access and manage logs through UI or from API via Cloud Manager.
+See [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) to learn how to access and manage logs through the user interface or from the API by way of the Cloud Manager.
 
 ## Contacting Support {#contacting-support}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="Help & Support"
->abstract="Reach out to our AEM Support team to get clarifications or to address any concerns."
+>abstract="Contact Adobe's AEM Support team to get clarifications or to address any concerns."
 >additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Support for Experience Cloud"
 
 If you have questions about access to Cloud Service, contact your Adobe representative or [Support for Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) for more details.
 
 ## Document learnings {#document-learnings}
 
-Once the migration is complete, you should document the knowledge gained during this process. Some questions that might help the documentation process are:
+Once the migration is complete, document the knowledge gained during this process. Some questions that might help the documentation process are:
 
 * What worked well and what did not?
 * What were the major pain points?
-* Recommendations in case of a future migration.
+* Recommendations if there is a future migration.
 
-You should then share these post-migration learnings with stakeholders and teams inside your organization.
+Share these post-migration learnings with stakeholders and teams inside your organization.
 
 ## The Journey Ends - Or Does It? {#journey-ends}
 

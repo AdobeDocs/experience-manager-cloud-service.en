@@ -4,13 +4,9 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Use AEM Forms Workflow to automate and rapidly build business process workflows. For example, review and approval, PDF Generation, Adobe Sign workflows.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
-docset: aem65
-
 ---
 
-# Forms-centric workflow on OSGi{#forms-centric-workflow-on-osgi}
+# Forms-centric workflow on OSGi {#forms-centric-workflow-on-osgi}
 
  ![Hero Image](do-not-localize/header.png)
 
@@ -64,7 +60,7 @@ The example creates a workflow model a mortgage application to be filled by a fr
 1. Open the Workflow Models console. The default URL is `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Select **Create**, then **Create Model**. The Add Workflow Model dialog appears.
 1. Enter the **Title** and **Name** (optional). For example, a mortgage application. Tap **Done**.
-1. Select the newly created workflow model and tap **Edit**. Now, you can add workflow steps to build business logic. When you first create a workflow model, it contains:
+1. Select the newly-created workflow model and tap **Edit**. Now, you can add workflow steps to build business logic. When you first create a workflow model, it contains:
 
     * The steps: Flow Start and Flow End. These steps represent the beginning and end of the workflow. These steps are required and cannot be edited or removed.
     * An example Participant step named Step 1. This step is configured to assign a work item to the admin user. Remove this step.
@@ -199,7 +195,7 @@ The workflow application you created is available as an application in Inbox. Us
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
-The [!DNL AEM Forms] app syncs with an [!DNL AEM Forms] server and allows you to make changes to the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [[!DNL AEM Forms] app]((aem-forms-app.md) and related articles.-->
+The [!DNL AEM Forms] app syncs with an [!DNL AEM Forms] server and lets you make changes to the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [[!DNL AEM Forms] app]((aem-forms-app.md) and related articles.-->
 
 ### Submitting an Adaptive Form {#af}
 

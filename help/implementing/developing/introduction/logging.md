@@ -11,6 +11,7 @@ AEM as a Cloud Service logging settings and log levels are managed in configurat
 
 * AEM logging, which performs logging at the AEM application level
 * Apache HTTPD Web Server/Dispatcher logging, which performs logging of the web server and Dispatcher on the Publish tier.
+* CDN logging, which as its name indicates, performs logging at the CDN. This feature is being gradually rolled out to customers in early September.
 
 ## AEM Logging {#aem-logging}
 
@@ -493,6 +494,59 @@ Define DISP_LOG_LEVEL debug
 >
 >For AEM as a Cloud Service environments, debug is the maximal verbosity level. The trace log level is not supported so you should avoid setting it when working in cloud environments.
 
+## CDN Log {#cdn-log}
+
+ >[!NOTE]
+ >
+ >This feature is being gradually rolled out to customers in early September.
+ >
+
+ AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization. The CDN log format cannot be customized and there is no concept of setting it to different modes such as info, warn, or error.
+
+Note that the Splunk forwarding feature does not yet support CDN logs.
+
+ **Example**
+
+ ```
+ {
+ "timestamp": "2023-05-26T09:20:01+0000",
+ "ttfb": 19,
+ "cli_ip": "147.160.230.112",
+ "cli_country": "CH",
+ "rid": "974e67f6",
+ "req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+ "host": "example.com",
+ "url": "/content/hello.png",
+ "method": "GET",
+ "res_ctype": "image/png",
+ "cache": "PASS",
+ "status": 200,
+ "res_age": 0,
+ "pop": "PAR"
+ }
+ ```
+
+ **Log Format**
+
+ The CDN logs are distinct from the other logs in that it adheres to a json format.
+
+ | **Field Name**  | **Description**  |
+ |---|---|
+ | *timestamp*  | The time the request started, after TLS termination  |
+ | *ttfb*  | Abbreviation for *Time To First Byte*. The time interval between the request started up to the point before the response body started being streamed. |
+ | *cli_ip*  |  The client IP address. |
+ | *cli_country* | Two-letter [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) alpha-2 country code for the client country. |
+ | *rid* |  The value of the request header used to uniquely identify the request. |
+ | *req_ua* |  The user agent responsible for making a given HTTP request. |
+ | *host*  | The authority that the request is intended for.   |
+ | *url*  | The full path, including query parameters.  |
+ | *method*  |  HTTP method sent by the client, such as "GET" or "POST". |
+ | *res_ctype*  | The Content-Type used to indicate the original media type of the resource.  |
+ | *cache*  |  State of the cache. Possible values are HIT, MISS, or PASS |
+ | *status*  | The HTTP status code as an integer value.  |
+ | *res_age*  | The amount of time (in seconds) a response has been cached (in all nodes).  |
+ | *pop*  | Datacenter of the CDN cache server.  |
+
 ## How to Access Logs {#how-to-access-logs}
 
 ### Cloud Environments {#cloud-environments}
@@ -542,6 +596,8 @@ Depending on the traffic and the amount of log statement written by Debug, this 
 Customers who have Splunk accounts may request via customer support ticket that their AEM Cloud Service logs are forwarded to the appropriate index. The logging data is equivalent to what is available through the Cloud Manager log downloads, but customers may find it convenient to use the query features available in the Splunk product.
 
 The network bandwidth associated with logs sent to Splunk are considered part of the customer's Network I/O usage.
+
+Note that Splunk forwarding does not yet support CDN logs.
 
 ### Enabling Splunk Forwarding {#enabling-splunk-forwarding}
 

@@ -6,7 +6,7 @@ hide: yes
 hidefromtoc: yes
 ---
 
-# Review step for Forms in Site's page {#review-step-forms-aem-sites-page}
+# Create and manage reviews for an Adaptive Form {#review-step-forms-aem-sites-page}
 
 Using the [Assign step](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step) of the AEM workflow, the reviewer reviews the submitted form and performs action on it. To review the submitted form using the Assign task step, follow these steps:
 

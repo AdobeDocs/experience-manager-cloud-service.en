@@ -14,7 +14,7 @@ docset: aem65
 
 When you create a form, you can specify users who review the submissions of the form via forms portal and provide feedback. Your organization can collect feedback and rework on the submitted forms.
 
-[!DNL AEM Forms] allows you to associate a reviewer group with a form. Users added to a review group of a form see submissions of this form, and provide feedback.
+[!DNL AEM Forms] lets you associate a reviewer group with a form. Users added to a review group of a form see submissions of this form, and provide feedback.
 
 Reviewer groups assigned to a form can only review the submissions of the specified form.
 

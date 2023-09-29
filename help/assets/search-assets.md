@@ -40,12 +40,26 @@ Use the **[!UICONTROL Filters]** panel to search for assets, folders, tags, and 
 ## Understand asset search interface {#searchui}
 
 Familiarize yourself with the asset search interface and the available actions.
-
+<!--
 ![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
-
+-->
+![Understand Experience Manager Assets search results interface](assets/aem-search-interface.png)
 *Figure: Understand [!DNL Experience Manager Assets] search results interface.*
 
-**A.** Save search as a smart collection. **B.** Filters or predicates to narrow the search results. **C.** Display files, folders, or both. **D.** Click Filters to open or close the left rail. **E.** Search location is DAM. **F.** Omnisearch field with user-provided search keyword. **G.** Select the loaded search results. **H.** Number of displayed search results out of the total search results. **I.** Close search. **J.** Switch between card view and list view.
+**A.** Save search as a smart collection. 
+**B.** Filters or predicates to narrow the search results. 
+**C.** Display files, folders, or both. 
+**D.** Search location is DAM.
+**E.** Access Saved Searches.
+**F.** Click Filters to open or close the left rail. 
+**G.** Shows Assets as default search. 
+**H.** Search location is DAM.
+**I.** Omnisearch field with user-provided search keyword. 
+**J.** Select the loaded search results.
+**K.** Sort by Created, Modified, Name, None.
+**L.** Sort by Ascending or Descending order.
+**M.** Number of displayed search results out of the total search results. **N.** Close search. 
+**O.** Switch between card view and list view.
 
 ### Dynamic search facets {#dynamicfacets}
 
@@ -54,6 +68,20 @@ You can discover the desired assets faster from the search results page using th
 ![See the approximate number of assets without filtering search results in search facets.](assets/asset_search_results_in_facets_filters.png)
 
 *Figure: See the approximate number of assets without filtering search results in search facets.*
+
+Experience Manager Assets displays facet counts for two properties by default:
+
+* Asset type (jcr:content/metadata/dc:format)
+
+* Approval status (jcr:content/metadata/dam:status)
+
+As of August 2023, Experience Manager Assets includes a new version 9 of `damAssetLucene` index. The previous versions, `damAssetLucene-8` and below, use the `statistical` mode to check access control on a sample of the items for each search facet count.
+
+`damAssetLucene-9` changes the behavior of Oak Query facet counting to no longer evaluate access control on the facet counts returned by the underlying search index, which results in the faster search response times. As a result, users might be presented with facet count values, which include assets that they do not have access to. Those users cannot access, download, or read any other detail of those assets, including their paths, or gain any further information about them.
+
+If you need to switch to the previous behavior (`statistical` mode), see [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) to create a custom version of the `damAssetLucene-9` index. Adobe does not recommend switching to the `secure` mode due to the impact on search response times with large result sets.
+
+For more information on Oak's facet capabilities, including a detailed description of these modes, see [this article](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
 ## Search suggestions as you type {#searchsuggestions}
 
@@ -118,6 +146,20 @@ You can use this to your advantage by boosting the rank of some assets in the se
 
 *Video: Understand how search results are ranked and how the rank can be influenced.*
 
+## Configure asset batch size to display search results {#configure-asset-batch-size}
+
+Administrators can now configure the batch size of assets that display when you perform a search. The asset search results display in multiples of the configured batch size number when you further scroll down to load the results. You can select from the available batch sizes of 200, 500, and 1000 assets. Setting a lower batch size number results in faster search response times.
+
+For example, if you set the result count limit to a batch size of 200 assets, Experience Manager Assets displays a batch size of 200 assets in the search results when you start performing the search. When you scroll down to navigate through the search results, the next batch of 200 assets is displayed. The process continues until all assets that match the search query are displayed. 
+
+To configure the asset batch size:
+
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Assets Configurations]** > **[!UICONTROL Assets Omnisearch Configuration]**.
+
+1. Select the result count limit and click **[!UICONTROL Save]**.
+
+   ![Assets batch size configuration](/help/release-notes/assets/assets-batch-size-configuration.png)
+
 ## Advanced search {#scope}
 
 [!DNL Experience Manager] provides various methods like filters that apply to the searched assets, to help you locate the desired assets faster. A few commonly used methods are described below. Some [illustrated examples](#samples) are shared below.
@@ -126,7 +168,10 @@ You can use this to your advantage by boosting the rank of some assets in the se
 
 **Search for assets within a folder**: You can limit the search to a specific folder. In the **[!UICONTROL Filters]** panel, add path of a folder. You can select only one folder at a time.
 
+![Limit search results to a folder by adding a folder path in Filters panel](assets/limiting-search.gif)
+<!--
 ![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
+-->
 
 *Figure: Limit search results to a folder by adding a folder path in Filters panel.*
 
@@ -243,7 +288,9 @@ Pass the following request parameters in a URL to launch the asset selector in a
 
 To access the asset selector interface, go to `https://[aem_server]:[port]/aem/assetpicker`. Navigate to the desired folder, and select one or more assets. Alternatively, search for the desired asset from the Omnisearch box, apply filter as required, and then select it.
 
-![Browse and select asset in the asset selector](assets/assetpicker.png)
+![Browse and select asset in the asset selector](assets/select-asset.png)
+
+<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
 
 *Figure: Browse and select asset in the asset selector.*
 

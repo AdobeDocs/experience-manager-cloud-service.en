@@ -106,7 +106,7 @@ To access New Relic One directly:
 
 ### Verifying Your Email {#verify-email}
 
-If you are asked to verify your email during login to New Relic One, it means your email is associated with multiple accounts. This allows you to choose which account to access.
+If you are asked to verify your email during login to New Relic One, it means your email is associated with multiple accounts. This lets you choose which account to access.
 
 If you do not verify your email address, New Relic attempts to log you in with the most recently created user record associated with your email address. To avoid verifying your email during each login, click the **Remember Me** checkbox in the login screen.
 
@@ -144,6 +144,12 @@ The following limitations apply to adding users to New Relic One:
 * Users added to New Relic are of the type **Restricted**, see [the New Relic documentation for details.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service only offers the New Relic One APM solution and does not provide support for alerting, logging, or API integrations.
 
+>[!NOTE]
+>
+>If no activity is detected in your New Relic One account for 90 days or more, the APM agent will be stopped.
+>
+>Please open a support ticket by way of the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) if you wish to re-enable APM agent for your AEMaaCS environments.
+
 For more help or additional guidance on New Relic One offerings for your AEM as a Cloud Service Program, open a support ticket via the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Frequently Asked Questions About New Relic One {#faqs}
@@ -164,6 +170,10 @@ Note:
 * AEM as a Cloud Service environments report to only one New Relic One account.
 * Full monitoring metrics and events for both New Relic One are retained for seven days.
 
+### Does Adobe send alert notifications from New Relic One? {#alerting-new-relic}
+
+Adobe provides New Relic One access for observability purposes only and does not utilize it for customer alerting or internal operational alerting. Notifications for any incidents are sent using [user notification profiles.](/help/journey-onboarding/notification-profiles.md)
+
 ### Who can access the New Relic One cloud service data? {#access-new-relic-cloud}
 
 Full read access is granted for up to 30 members of your team. Read access will include all APM metrics collected by the New Relic One agent.
@@ -183,3 +193,7 @@ While Adobe support will monitor the AEM as a Cloud Service application using Ne
 >[!NOTE]
 >
 >To view both data sets within New Relic One, a user must have the right permissions and use the same login methodology for both accounts (Adobe New Relic One and the customer-managed New Relic accounts).
+
+### The APM agent for my New Relic One account is stopped. What happened? {#deactivated}
+
+[APM agents are stopped](#limitations) if no activity is detected for 90 days or more. Please open a support ticket by way of the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) if you wish to re-enable APM agent for your AEMaaCS environments.

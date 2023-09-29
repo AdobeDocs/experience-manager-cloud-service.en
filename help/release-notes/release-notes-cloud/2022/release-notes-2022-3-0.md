@@ -54,7 +54,7 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### What is new in [!DNL Forms] {#what-is-new-forms}
 
-* **[!DNL Communications - Document Generation APIs]**: [Document Generation APIs](/help/forms/aem-forms-cloud-service-communications.md) help to combine, rearrange, and validate PDF documents. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
+* **[!DNL Communications - Document Generation APIs]**: [Document Generation APIs](/help/forms/aem-forms-cloud-service-communications.md) help to combine, rearrange, and validate PDF documents. The service lets you generate documents in synchronous mode. The APIs enables you to create applications that let you:
 
   * Assemble PDF documents.
   * Disassemble PDF documents.

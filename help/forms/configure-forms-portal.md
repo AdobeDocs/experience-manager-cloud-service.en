@@ -1,9 +1,8 @@
 ---
 title: How to create a Forms Portal on an Experience Manager Sites page?
 description: Learn how to create a Forms Portal and use out-of-the-box core components on an AEM Sites page.
-exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 ---
-# List Adaptive Forms on a Portal {#publish-forms-on-portal}
+# Add Forms Portal to an AEM Sites page {#publish-forms-on-portal}
 
 <span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
 
@@ -33,11 +32,11 @@ The Form Portal components allow you to add the following functionality:
 
 AEM Forms provide the following portal components out of the box:
 
-* Search & Lister: This component allows you to list forms from the forms repository onto your portal page and provides configuration options to list forms based on specified criteria.
+* Search & Lister: This component lets you list forms from the forms repository onto your portal page and provides configuration options to list forms based on specified criteria.
 
 * Drafts & Submissions: While Search & Lister component displays forms which are made public by Forms author, the Drafts & Submissions component displays forms that are saved as draft for completing later and submitted forms. This component provides personalized experience to any logged in user.
 
-* Link: This component allows you to create a link to a form anywhere on the page.
+* Link: This component lets you create a link to a form anywhere on the page.
 
 You can [import the out-of-the-box Forms Portal components](#import-forms-portal-components-aem-archetype) from the AEM Project Archetype. After importing, perform the following configurations: 
 

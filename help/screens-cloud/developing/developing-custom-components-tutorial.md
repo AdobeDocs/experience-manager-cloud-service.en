@@ -420,7 +420,7 @@ The Hello World component is meant for use on a Sequence Channel. To test the co
 
    Design config pointing to /apps/settings/wcm/designs/we-retail-run
 
-1. Edit the newly created Idle Channel so you can open it.
+1. Edit the newly-created Idle Channel so you can open it.
 
 1. Switch the page mode to **Design** Mode.
 

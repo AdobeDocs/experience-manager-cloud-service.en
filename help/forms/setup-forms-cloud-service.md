@@ -13,17 +13,17 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 
 ## Decide personas {#personas-aem-forms-project}
 
-<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Before onboarding to an [!DNL AEM Forms] as a Cloud Service environment, decide personas and structure a team for your project. A typical [!DNL AEM Forms] project team has the following personas:
+<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Before onboarding to an Adobe Experience Manager (AEM) Forms as a Cloud Service environment, decide personas and structure a team for your project. A typical [!DNL AEM Forms] project team has the following personas:
 
-* **User Experience (UX) designer**: A User Experience (UX) designer defines style, layout, and branding for [!DNL AEM Forms] assets.
+* **User Experience (UX) Designer**: A User Experience (UX) Designer defines style, layout, and branding for [!DNL AEM Forms] assets.
 
-* **Forms practitioner**: A Forms practitioner creates Adaptive Forms, themes, and templates as per the style, layout, and branding provided by the UX designer. The practitioner also creates and integrates Adaptive Form with a Form Data Model and AEM Workflows. A Forms Practitioner typically undertakes front-end related tasks.
+* **Forms practitioner**: A Forms practitioner creates Adaptive Forms, themes, and templates as per the style, layout, and branding provided by the UX Designer. The practitioner also creates and integrates Adaptive Form with a Form Data Model and AEM Workflows. A Forms Practitioner typically undertakes front-end related tasks.
 
-* **Forms developer**: A Forms developer develops a custom forms solution.  A Forms developer typically undertakes backend development like developing custom components, AEM Workflows, pre-fill service and more.
+* **Forms developer**: A Forms developer develops a custom forms solution. A Forms developer typically undertakes backend development like developing custom components, AEM Workflows, pre-fill services and more.
 
 * **AEM administrator**:  An AEM administrator helps with overall configuration like setting up users, hardening the environment, configuring data sources, configuring email, and third-party software. AEM administrator also helps with integrations like integrating with Adobe Analytics, Adobe Target, and Adobe Sign.
 
-* **End user**: An end user interacts with and submits the published form, signs submitted forms, tracks submitted applications through web portal, and receives personalized communications.
+* **End user**: An end user interacts with and submits the published form, signs submitted forms, tracks submitted applications through a web portal, and receives personalized communications.
 
 <!-- While onboarding to the service, assign the following AEM groups to [!DNL AEM Forms] as a Cloud Service based on their role:
 
@@ -35,11 +35,11 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 
 ## Onboard to the service {#onboarding}
 
-* [Onboard](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) to the [!DNL Adobe Experience Manager] as a Cloud Service.
+* [Onboard](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) to the [!DNL Adobe Experience Manager] as a Cloud Service.
 
-* (For Sandboxes only) After onboarding the service, [create](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) and [run](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) both production and non-production pipelines. It enables and brings latest features of [!DNL AEM Forms] as a Cloud Service to your environment.
+* (For Sandboxes only) After onboarding the service, [create](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) and [run](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) both production and non-production pipelines. It enables and brings the latest features of [!DNL AEM Forms] as a Cloud Service to your environment.
 
-You can use Forms as a Cloud Service to create an adaptive form (Digital Enrollment) or generate a customer communication. After completing [Onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) to the [!DNL Adobe Experience Manager] as a Cloud Service, perform one of the following actions to enable Digital Enrollment or Customer Communications features. You can also enable both the features:
+You can use Forms as a Cloud Service to create an adaptive form (Digital Enrollment) or generate a customer communication. After completing [Onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) to the [!DNL Adobe Experience Manager] as a Cloud Service, perform one of the following actions to enable Digital Enrollment or Customer Communications features. You can also enable both the features:
 
 1. Log in to Cloud Manager and open your AEM Forms as a Cloud Service Instance.
 
@@ -57,7 +57,7 @@ You can use Forms as a Cloud Service to create an adaptive form (Digital Enrollm
 
 >[!NOTE]
 >
-> To enable and configure document manipulation APIs, add the following rule to [Dispatcher configuration](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+> To enable and configure document manipulation APIs, add the following rule to the [Dispatcher configuration](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
@@ -69,9 +69,9 @@ After you complete onboarding to the service, login to your [!DNL AEM Forms] as 
 | User types (Personas) | User groups | AEM instance |
 |---|---|---|
 | Form practitioner /Forms developer | <ul> <li> [!DNL forms-users] </li><li> [!DNL template-author] </li><li> [!DNL workflow-users] </li><li> [!DNL workflow-editors] </li><li> [!DNL fdm-authors] </li></ul>| Author instance |
-| User Experience(UX) designer| <ul> <li> [!DNL forms-users]</li><li> [!DNL template-author] </li></ul>| Author instance |
+| User Experience(UX) Designer| <ul> <li> [!DNL forms-users]</li><li> [!DNL template-author] </li></ul>| Author instance |
 | AEM administrator | <ul> <li>[!DNL aem-administrators],</li> <li>[!DNL fd-administrators] </li> </ul>| Author and Publish instance |
-| End user| <ul> <li>When a user must log in to view and submit an Adaptive Form, add such users to [!DNL forms-users] group. </li> <li>When no user authentication is required to access Adaptive Forms, do not assign any group to such users. </li> </ul>| Author and Publish instance |
+| End user| <ul> <li>When a user must log in to view and submit an Adaptive Form, add such users to the [!DNL forms-users] group. </li> <li>When no user authentication is required to access Adaptive Forms, do not assign any group to such users. </li> </ul>| Author and Publish instance |
 
 For more information about Forms-specific AEM groups and corresponding permissions, see [Groups and permissions](forms-groups-privileges-tasks.md).
 
@@ -79,7 +79,7 @@ For more information about Forms-specific AEM groups and corresponding permissio
 
 ## Next step {#next-steps}
 
-[Set up a local development environment](setup-local-development-environment.md). You can use local development environment to create an Adaptive Form and related assets (Themes, Templates, custom Submit Actions, pre-fill service and more) and [convert PDF forms to Adaptive Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) without logging in to cloud development environment.
+[Set up a local development environment](setup-local-development-environment.md). You can use a local development environment to create an Adaptive Form and related assets (Themes, Templates, custom Submit Actions, pre-fill service and more). And, [convert PDF forms to Adaptive Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) without logging in to a cloud development environment.
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
 
@@ -87,9 +87,9 @@ For more information about Forms-specific AEM groups and corresponding permissio
 |-----|-------|-----|
 | UX Designer                  | Customer/System Integrator/Partner | Defines user experience design (style, layout, branding) as per organizational requirements for Adaptive Forms to allow AEM Forms practitioners to design the corresponding themes and templates.                                     |
 | Forms Practitioner           | Customer                           | Authors Adaptive Forms, creates Form Data Model integrations, and creates business workflows using the Experience Manager Workflows. Typically undertakes the front-end work.                                                         |
-| Business Executive - Digital | Customer                           | Responsible for business unit’s product marketing strategy and revenues, main business stakeholders for digital use cases, solutions, and service offerings for the end-users, signs off on the use case implementation and delivery. |
+| Business Executive - Digital | Customer                           | Responsible for business unit's product marketing strategy and revenues, main business stakeholders for digital use cases, solutions, and service offerings for the end-users, signs off on the use case implementation and delivery. |
 | Customer Experience Lead     | Customer                           | Business user persona. Authors, personalizes and updates Adaptive Forms fields/rules/styling, identifies, and prioritizes business needs. Validates business use-case with SI/Partner developers/practitioners during UAT.            |
-| Forms Back-Office User       | Customer                           | End-user internal to organization filling forms, participating in back-office Forms workflows such as review/approval of applications etc.                                                                                            |
+| Forms Back-Office User       | Customer                           | End-user internal to organization filling forms, participating in back-office Forms workflows such as review/approval of applications and so on.                                                                                            |
 | Forms End-User               | External to customer               | Interacts with and submits the published form as end customer or citizen, signs submitted forms, tracks her applications through web portal, receives personalized interactive communications.                                        |
 
 ### Project team {#project-team}
@@ -109,7 +109,7 @@ For more information about Forms-specific AEM groups and corresponding permissio
 
 After you onboard the service, configure a [local development environment](setup-local-development-environment.md). 
 
-Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect and use your [!DNL AEM Forms] as a Cloud Service program. When an administrator is provisioned for an organization, the administrator receives an email with title ‘You now have administrator rights to manage Adobe software and services for your organization’. If you are an administrator, check your mailbox for email with previously mentioned title and proceed to [add users](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#onboarding-users-in-admin-console) via IMS and assign [form-specific groups](forms-groups-privileges-tasks.md) to users based on their role.
+Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect and use your [!DNL AEM Forms] as a Cloud Service program. When an administrator is provisioned for an organization, the administrator receives an email with title 'You now have administrator rights to manage Adobe software and services for your organization'. If you are an administrator, check your mailbox for email with previously mentioned title and proceed to [add users](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#onboarding-users-in-admin-console) by way of IMS and assign [form-specific groups](forms-groups-privileges-tasks.md) to users based on their role.
 
 ## Next step {#next-steps} -->
 
