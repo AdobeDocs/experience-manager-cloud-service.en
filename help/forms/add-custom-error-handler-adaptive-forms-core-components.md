@@ -9,7 +9,7 @@ content-type: reference
 feature: Adaptive Forms
 ---
 
-# Error Handlers in Adaptive Forms (Core Components) {#error-handlers-in-adaptive-form}
+# Error Handlers for Adaptive Form based on Core Components {#error-handlers-in-adaptive-form}
 
 
 | Version | Article link |
