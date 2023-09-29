@@ -1,6 +1,6 @@
 ---
 title: How to add support for new locales to an adaptive form?
-description: AEM Forms allow you to add new locales for localizing adaptive forms. English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales.
+description: For Adaptive Forms, you can add locales for more languages apart from the one provided out of the box.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 ---
 # Supporting new locales for Adaptive Forms localization {#supporting-new-locales-for-adaptive-forms-localization}

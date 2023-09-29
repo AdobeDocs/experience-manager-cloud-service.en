@@ -1,6 +1,6 @@
 ---
 title: How to create Form Data Model?
-description: AEM Forms data integration provides an intuitive UI to create and work with form data models(FDM) and create FDM with or without configured data sources.
+description: Learn to create a form data model (FDM), and send or retrieve data to a datasource using an Adaptive Form or an AEM Workflow.
 feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate

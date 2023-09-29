@@ -1,6 +1,6 @@
 ---
 title: How to Configure Data Sources?
-description: AEM Forms Data Integration allows you to configure and connect to disparate data sources such as RESTful web services, SOAP-based web services and more.
+description: Learn how to configure RESTful web services, SOAP-based web services, and OData services as data sources for a form data model.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
