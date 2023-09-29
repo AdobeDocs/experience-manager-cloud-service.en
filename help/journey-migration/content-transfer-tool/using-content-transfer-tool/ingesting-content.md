@@ -111,25 +111,25 @@ This message indicates that the Cloud Acceleration Manager was unable to reach t
 > The "Migration token" field is shown because in a few cases retrieving that token is what is actually disallowed. By allowing it to be manually provided, it may allow the user to start the ingestion quickly, without any additional help. If the token is provided, and the message still appears, then retrieving the token was not the problem.
 
 * AEM as a Cloud Service maintains the environment state, and occasionally must restart the migration service for various normal reasons. If that service is restarting, it cannot be reached, but is available eventually.
-* It is possible that another process is being run on the instance. For example, if Release Orchestrator is applying an update, the system may be busy and the migration service regularly unavailable. Once that process is done, the start of the ingestion can be attempted again. 
+* It is possible that another process is being run on the instance. For example, if [AEM Version Updates](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) is applying an update, the system may be busy and the migration service regularly unavailable. Once that process is done, the start of the ingestion can be attempted again. 
 * If an [IP Allowlist has been applied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) through Cloud Manager, it blocks Cloud Acceleration Manager from reaching the migration service. An IP address cannot be added for ingestions because its address is dynamic. Currently, the only solution is to disable the IP allow list while the ingestion is running.
 * There may be other reasons that need investigation. If the ingestion still continues to fail, contact Adobe Customer Care.
 
-### Release Orchestrator and Ingestions
+### AEM Version Updates and Ingestions
 
-Release Orchestrator keeps environments up to date by applying updates automatically. If the update is triggered when an ingestion is performed, it can cause unpredictable results including the corruption of the environment.
+[AEM Version Updates](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) keeps environments up to date by applying updates automatically. If the update is triggered when an ingestion is performed, it can cause unpredictable results including the corruption of the environment.
 
-If the Release Orchestrator is onboarded on the destination program, the ingestion process will attempt to disable its queue before it starts. When the ingestion is complete the Release Orchestrator state will be returned to how it was before the ingestion(s) started.
-
->[!NOTE]
->
-> There is no longer a need to log a support ticket to get Release Orchestrator disabled.
-
-If Release Orchestrator is active (i.e. updates are running or are queued to be run), the ingestion will not begin and the user interface presents the following message. Once the updates are complete, the ingestion can be started. Cloud Manager can be used to see the current state of the Release Orchestrator and the pipelines of the program.
+If the "AEM Version Updates" is onboarded on the destination program, the ingestion process will attempt to disable its queue before it starts. When the ingestion is complete the version updater state will be returned to how it was before the ingestion(s) started.
 
 >[!NOTE]
 >
-> Release Orchestrator updates are run in the environment's pipeline and will wait until the pipeline is clear. If updates are queued for longer than expected, ensure a custom workflow does not have the pipeline unintentionally locked. 
+> There is no longer a need to log a support ticket to get "AEM Version Updates" disabled.
+
+If "AEM Version Updates" is active (i.e. updates are running or are queued to be run), the ingestion will not begin and the user interface presents the following message. Once the updates are complete, the ingestion can be started. Cloud Manager can be used to see the current state of the updater and the pipelines of the program.
+
+>[!NOTE]
+>
+> "AEM Version Updates" is run in the environment's pipeline and will wait until the pipeline is clear. If updates are queued for longer than expected, ensure a custom workflow does not have the pipeline unintentionally locked. 
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
