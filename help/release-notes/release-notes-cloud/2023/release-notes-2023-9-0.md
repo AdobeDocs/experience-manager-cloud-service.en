@@ -35,7 +35,7 @@ Have a look at the September 2023 Release Overview video for a summary of the fe
 
 -->
 
-## Edge Delivery Services {#edge-delivery}
+## AEM Edge Delivery Services {#edge-delivery}
 
 Edge Delivery is a new set of composable services focused on maximizing the impact of content to drive measurable business outcomes at the point of customer interaction.
 
