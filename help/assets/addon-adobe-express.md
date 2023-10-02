@@ -1,8 +1,6 @@
 ---
 title: AEM Assets add-on for Adobe Express
 description: AEM Assets add-on for Adobe Express allows you to directly access the assets stored in AEM Assets from within the Adobe Express user interface.
-hide: true
-hidefromtoc: true 
 ---
 # AEM Assets add-on for Adobe Express {#assets-addon-adobe-express}
 
