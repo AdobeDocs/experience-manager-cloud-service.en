@@ -2,6 +2,7 @@
 title: Translate a Core Components based Adaptive Form
 description: Use machine translation or human translation to translate a Core Components based Adaptive Form
 feature: Adaptive Forms
+exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 ---
 # Use machine translation or human translation to translate a Core Components based Adaptive Form {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 

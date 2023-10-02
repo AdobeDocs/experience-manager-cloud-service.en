@@ -1,6 +1,7 @@
 ---
 title: Configure Out of Office settings
 description: Delegate tasks while on leave or out of the office for seamless workflow execution.
+exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
 ---
 # Configure Out of Office setting {#configure-out-of-office-settings}
 

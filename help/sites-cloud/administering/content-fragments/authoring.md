@@ -3,8 +3,8 @@ title: Authoring Content Fragments
 description: Understand how to author content for your Content Fragments, then create variations of that content according to purpose. This provides added flexibility for both headless delivery and page authoring.
 feature: Content Fragments
 role: User, Developer, Architect
+exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 ---
-
 # Authoring Content Fragments {#authoring-content-fragments}
 
 Authoring your Content Fragments is focused on both headless delivery and page authoring.

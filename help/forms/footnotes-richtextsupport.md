@@ -1,6 +1,7 @@
 ---
 title: Footnotes support to Adaptive Forms
 description: Enhance Adaptive Forms with informative rich-text footnotes. Improve user experience and engagement.
+exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 ---
 # Footnote Component {#footnotecomponent}
 

@@ -2,6 +2,7 @@
 title: Using reCAPTCHA in Adaptive Forms
 description: Learn how to configure Google reCAPTCHA service in Adaptive Forms.
 topic-tags: adaptive_forms, author
+exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 ---
 # Use reCAPTCHA in Adaptive Forms {#using-reCAPTCHA-in-adaptive-forms}
 

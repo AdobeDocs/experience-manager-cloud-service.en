@@ -1,8 +1,9 @@
 ---
 title: Import or Export Adaptive Forms and AEM Forms assets
-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance. 
-seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance. 
+description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
+seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 ---
 # Import or Export Adaptive Forms and AEM Forms assets {#importing-and-exporting-assets-to-aem-forms}
 

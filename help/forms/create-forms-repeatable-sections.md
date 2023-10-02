@@ -2,8 +2,8 @@
 title: Repeatability in Adaptive Form (core components)
 description: Use the repeatability feature of the panel components to repeat similar sections in an adaptive form.
 role: Architect, Developer, Admin, User
+exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
 ---
-
 # Create forms with repeatable sections (Core Components) {#repeat-panel}
 
 
