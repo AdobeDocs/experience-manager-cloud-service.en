@@ -2,6 +2,7 @@
 title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.09.0
 description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.09.0
 feature: Release Information
+exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
 ---
 # Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.09.0 {#release-notes}
 
@@ -19,6 +20,3 @@ The Content Transfer Tool has been significantly improved to provide the followi
 * Reduced transfer time when migrating a subset of a content repository by leveraging AzCopy to copy only the required blob ids instead of copying all blob ids
 * Faster differential content top-ups using Oak-upgrade
 * Improved robustness by separating the indexing process from the content ingestion process. In case of a failed indexing, content will not have to be ingested again. Only indexing will automatically re-start, saving significant time and effort
-
-
-

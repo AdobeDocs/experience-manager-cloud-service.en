@@ -1,8 +1,8 @@
 ---
 title: Customizing Page Authoring
 description: Learn about the mechanisms that AEM as a Cloud Service provides to customize page authoring functionality.
+exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 ---
-
 # Customizing Page Authoring {#customizing-page-authoring}
 
 Adobe Experience Manager as a Cloud Service provides mechanisms to let you customize the page authoring functionality (and the [consoles](/help/implementing/developing/extending/consoles.md)) of your authoring instance.
