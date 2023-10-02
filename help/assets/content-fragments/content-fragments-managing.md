@@ -191,6 +191,10 @@ Some features in the top toolbar are available from multiple modes:
 
 * A button enables you to **Try New Editor**, by directly opening the *new* [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md) that is accessible via the [Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
 
+  >[!WARNING]
+  >
+  >The new editor will open in the same tab. It is not recommended to have both editors open at the same time.
+
 * **Save** provides access to the **Save & close** option.
   
 * The three dots (**...**) drop-down provides access to additional actions:
