@@ -534,7 +534,10 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Install [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-install.md)
     + [Remove external dependencies for existing installations](/help/assets/remove-external-dependencies.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
-    + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)    
+    + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+
++ Integration with Adobe Express {#integration-adobe-express}
+   + [AEM Assets add-on for Adobe Express](/help/assets/addon-adobe-express.md)    
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
