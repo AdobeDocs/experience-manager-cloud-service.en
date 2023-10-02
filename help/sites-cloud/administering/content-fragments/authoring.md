@@ -56,6 +56,11 @@ When you first open the Content Fragment Editor, you see four main areas:
   * an option to show all **Parent References** (link icon)
   * the fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, and last saved information
   * a toggle to switch to the original (Assets-based) editor
+
+    >[!WARNING]
+    >
+    >The original editor will open in the same tab. It is not recommended to have both editors open at the same time.
+
 * left panel: shows the **[Variations](#variations)** for the Content Fragment, and its **Fields**:
   * these links can be used to [navigate the Content Fragment structure](#navigate-structure)
 * right panel: presents tabs [showing the properties (metadata) and tags](#view-properties-tags), information about the [version history](#view-version-history), and information related to any [language copies](#view-language-copies)
