@@ -15,9 +15,7 @@ exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 >
 >See [Configure Access to AEM for Administrators](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) for an introduction to how users authenticate using Adobe IMS to AEM as a Cloud Service. Also learn how Adobe IMS Users, User Groups, and Product Profiles are used to control access to AEM and its features and functionalities. Adobe ID required.
 
->[!NOTE]
->
->AEM currently does not support assigning groups to profiles. Users should be added individually instead.
+{{#ims-group-profiles}}
 
 ## Key Highlights {#key-highlights}
 
