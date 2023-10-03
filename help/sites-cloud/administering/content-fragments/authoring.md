@@ -3,8 +3,8 @@ title: Authoring Content Fragments
 description: Understand how to author content for your Content Fragments, then create variations of that content according to purpose. This provides added flexibility for both headless delivery and page authoring.
 feature: Content Fragments
 role: User, Developer, Architect
+exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 ---
-
 # Authoring Content Fragments {#authoring-content-fragments}
 
 Authoring your Content Fragments is focused on both headless delivery and page authoring.
@@ -56,6 +56,11 @@ When you first open the Content Fragment Editor, you see four main areas:
   * an option to show all **Parent References** (link icon)
   * the fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, and last saved information
   * a toggle to switch to the original (Assets-based) editor
+
+    >[!WARNING]
+    >
+    >The original editor will open in the same tab. It is not recommended to have both editors open at the same time.
+
 * left panel: shows the **[Variations](#variations)** for the Content Fragment, and its **Fields**:
   * these links can be used to [navigate the Content Fragment structure](#navigate-structure)
 * right panel: presents tabs [showing the properties (metadata) and tags](#view-properties-tags), information about the [version history](#view-version-history), and information related to any [language copies](#view-language-copies)
