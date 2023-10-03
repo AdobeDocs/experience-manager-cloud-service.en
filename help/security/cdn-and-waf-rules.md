@@ -1,8 +1,8 @@
 ---
 title: Configuring Traffic Filter Rules with WAF Rules
 description: Use Traffic Filter Rules with WAF Rules to Filter Traffic
+exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 ---
-
 # Configuring Traffic Filter Rules with WAF Rules to Filter Traffic {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]

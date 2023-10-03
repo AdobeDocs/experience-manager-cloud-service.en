@@ -1,6 +1,7 @@
 ---
 title: Bulk import assets using Assets view
 description: Learn how to bulk import assets using the new Assets UI (Assets view). It provides administrators with the ability to import large number of assets from a data source to AEM Assets.
+exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 ---
 # Bulk import assets using Assets view  {#bulk-import-assets-view}
 
@@ -127,4 +128,3 @@ Click ... corresponding to the configuration name existing in **[!UICONTROL Exec
 ## Navigate to assets after performing bulk import {#view-assets-after-bulk-import}
 
 To view the Assets target location where the assets are imported after running the Bulk Import job, click ... corresponding to the configuration name, and then click **[!UICONTROL View Assets]**.
-
