@@ -1,8 +1,8 @@
 ---
 title: How to add support for new locales to an Adaptive Form based on Core Components?
-description: Learn to add new locales for an Adaptive Form. 
+description: Learn to add new locales for an Adaptive Form.
+exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 ---
-
 # Add a locale for Adaptive Forms based on Core Components {#supporting-new-locales-for-adaptive-forms-localization}
 
 | Version | Article link |
@@ -183,5 +183,3 @@ Perform the following steps to preview an Adaptive with newly added locale:
 * [Use machine translation or human translation to translate a Core Components based Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Generate document of record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
 * [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
- 
