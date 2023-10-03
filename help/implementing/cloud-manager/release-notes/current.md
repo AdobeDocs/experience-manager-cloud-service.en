@@ -15,7 +15,7 @@ This page documents the release notes for Cloud Manager release 2023.10.0 in AEM
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager release 2023.10.0 in AEM as a Cloud Service is 5 October 2023. The next release is planned for X November 2023.
+The release date for Cloud Manager release 2023.10.0 in AEM as a Cloud Service is 5 October 2023. The next release is planned for 2 November 2023.
 
 ## What's New {#what-is-new}
 
@@ -28,6 +28,12 @@ The release date for Cloud Manager release 2023.10.0 in AEM as a Cloud Service i
 ## Early Adoption Program {#early-adoption}
 
 Be a part of our early adoption program and have a chance to test some upcoming features.
+
+### Custom Permissions {#custom-permissions}
+
+[Cloud Manager custom permissions](/help/implementing/cloud-manager/custom-permissions.md) allows you to create new custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.
+
+if you are interested in testing this new feature and sharing your feedback, please send and email `Grp-CloudManager-custom-permissions@adobe.com` from your email address associated with your Adobe ID.
 
 ### Self-Service Content Restore {#content-restore}
 
