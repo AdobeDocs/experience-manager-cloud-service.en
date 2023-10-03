@@ -1,6 +1,6 @@
 ---
 title: How to Configure Data Sources?
-description: Experience Manager Forms Data Integration lets you configure and connect to disparate data sources. Learn how to configure RESTful web services, SOAP-based web services, and OData services as data sources and use them to create form data models.
+description: Learn how to configure RESTful web services, SOAP-based web services, and OData services as data sources for a form data model.
 feature: Form Data Model
 role: User, Developer
 level: Beginner

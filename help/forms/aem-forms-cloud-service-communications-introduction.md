@@ -1,10 +1,9 @@
 ---
-title: Introduction to Forms as a Cloud Service Communications
-description: Automatically merge data with XDP and PDF templates or generate output in PCL, ZPL, and PostScript formats
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+title: An introduction to Forms as a Cloud Service Communications
+description: Use communication APIs to Sign, Certify, or protect your documents, to automate PDF generation processes, and to convert PDF document to another format.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 ---
-
 # Introduction to AEM Forms as a Cloud Service Communications {#frequently-asked-questions}
 
 

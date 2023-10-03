@@ -3,8 +3,8 @@ title: Headless Content Delivery using Content Fragments with GraphQL
 description: Learn the basic concepts of realizing an AEM Headless CMS using Content Fragments with GraphQL for headless content delivery.
 feature: Content Fragments, GraphQL API
 role: Developer, Architect
+exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
 ---
-
 # Headless Content Delivery using Content Fragments with GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
 With Content Fragments and the GraphQL API you can use Adobe Experience Manager (AEM) as a Cloud Service as a Headless Content Management System (CMS). 

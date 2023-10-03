@@ -3,6 +3,7 @@ title: Migrating Closed User Groups
 description: Learn about the required special considerations to enable Closed User Groups after migrating content to Adobe Experience Manager as a Cloud Service.
 hide: yes
 hidefromtoc: yes
+exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 ---
 # Migrating Closed User Groups {#migrating-closed-user-groups}
 
@@ -40,4 +41,3 @@ In summary, these are the steps to enable CUG after a migration:
    - If it does not, use Packages to install it on the destination instance (or create it manually there) and activate it and its members. Then verify it exists on Publish.
 1. Republish all pages associated with a CUG policy, ensuring it is published by, for example, editing the page first. It is important to republish all of them.
     - After all the pages are republished, verify the functionality for each CUG protected page.
-
