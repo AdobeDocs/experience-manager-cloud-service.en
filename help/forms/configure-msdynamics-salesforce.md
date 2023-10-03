@@ -1,6 +1,6 @@
 ---
-title: Configure Microsoft&reg; Dynamics 365 or Salesforce for AEM Forms
-description: Learn how to integrate Microsoft&reg; Dynamics 365 and Salesforce with adaptive forms.
+title: How to configure Microsoft Dynamics 365 and Salesforce out of the box form data models for Adaptive Forms?
+description: Learn how to integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms.
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
 ---
 # Configure Microsoft&reg; Dynamics 365 or Salesforce for AEM Forms {#configure-azure-storage}

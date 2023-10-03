@@ -1,10 +1,7 @@
 ---
-title: Harden your AEM Forms as a Cloud Service environment
-seo-title: Secure your [!DNL AEM Forms] as a Cloud Service environment
-description: Secure your [!DNL AEM Forms] as a Cloud Service environment
-seo-description: Secure your [!DNL AEM Forms] as a Cloud Service environment
+title: Harden your [!DNL AEM Forms] as a Cloud Service environment
+description: Secure your [!DNL AEM Forms] as a Cloud Service environment.
 contentOwner: khsingh
-
 ---
 
 # Harden your [!DNL AEM Forms] as a Cloud Service environment {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
