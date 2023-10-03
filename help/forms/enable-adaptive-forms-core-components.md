@@ -4,8 +4,8 @@ description: Learn how to enable Adaptive Forms Core Components on AEM Forms as 
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
+exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 ---
-
 # Enable Adaptive Forms Core Components {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 | Version | Article link |
@@ -365,4 +365,3 @@ To check that Adaptive Forms Core Components are enabled for your environment:
     ![locate the core-forms-components-af-core artifact in all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
     If the dependencies exist, Adaptive Forms Core Components are enabled for your environment.
-

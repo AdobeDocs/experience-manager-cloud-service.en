@@ -1,7 +1,7 @@
 ---
 title: Configuring OSGi Settings for the Preview Tier
 description: Learn how to configure the AEM preview service to preview content before going live.
-exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
+exl-id: 1310eb1a-63ad-44f1-adf5-7a93ee3a8ae6
 ---
 # Configuring OSGi Settings for the Preview Tier {#configure-osgi-preview-tier}
 
