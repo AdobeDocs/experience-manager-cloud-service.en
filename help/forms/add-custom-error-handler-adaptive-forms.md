@@ -7,6 +7,7 @@ keywords: Add a custom error handler, add a default error handler, add a error h
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
+exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 ---
 # Add Custom Error Handlers in AEM Adaptive Forms {#error-handlers-in-adaptive-form}
 

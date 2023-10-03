@@ -4,7 +4,7 @@ description: Learn how to configure Adobe Acrobat Sign for [!DNL AEM Forms] as a
 feature: Adaptive Forms
 role: User
 level: Intermediate
-
+exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 ---
 # Connect [!DNL AEM Forms] as a Cloud Service with [!DNL Adobe Acrobat Sign] {#integrate-adobe-sign-with-aem-forms}
 

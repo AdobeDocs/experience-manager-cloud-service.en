@@ -1,11 +1,9 @@
 ---
 title: How to apply electronic signatures to a form using scribble signatures?
-description: Learn to apply electronic signatures to a form using scribble signatures
+description: Learn to apply electronic signatures to a form using scribble signatures.
 uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
-discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
-google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 ---
 # E-sign a form using scribble signatures{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
