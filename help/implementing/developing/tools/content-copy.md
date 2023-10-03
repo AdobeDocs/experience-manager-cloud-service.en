@@ -195,4 +195,4 @@ The content copy tool has the following limitations.
   * If you want to update your destination environment with content changes only, since the last content copy operation, you must create a content set. Then, specify the paths on the source instance where changes were made since the last content copy operation.
 * Version information is not included in a content copy.
 
-{{#ims-group-profiles}}
+{{ims-group-profiles}}
