@@ -26,23 +26,9 @@ This editor provides:
 * Ability to [view, and open, parent references](#view-parent-references).
 * A hierarchical view of the Content Fragment, and its references, using the [Structure tree](#structure-tree).
 
->[!CAUTION]
+>[!WARNING]
 >
 >The editor described in this section is *only* available in the *online* Adobe Experience Manager (AEM) as a Cloud Service.
-
->[!CAUTION]
->
->To edit a Content Fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contact your system administrator if you are experiencing issues.
-> 
->For example, if you do not have `edit` permissions the editor will be read-only.
-
->[!NOTE]
->
->See the Assets documentation for full information about the [original Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md) - it is available from both the **Assets** console and the **Content Fragments** console.
-
->[!NOTE]
->
->Your project team can customize the editor if required. See [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md) for further details.
 
 ## Content Fragment Editor {#content-fragment-editor}
 
@@ -70,12 +56,6 @@ When you first open the Content Fragment Editor, you see four main areas:
   * if **Tab Placeholder** fields are defined within the model they are shown here, and can be used for navigating; they will either be presented horizontally, or as a dropdown list
 
 ![Content Fragment Editor - Overview](assets/cf-authoring-overview.png)
-
->[!CAUTION]
->
->A Content Fragment Model can often define data fields named **Title** and **Description**. If these fields exist, they are user-defined fields and can be updated in the *central panel* when editing the fragment.
->
->The Content Fragment, and its variations, also have metadata fields (Variation properties) called **Title** and **Description**. These fields are an integral part of any Content Fragment and initially defined when the fragment. They can be updated in the *right panel* when editing the fragment.
 
 ## Navigate the Content Fragment structure {#navigate-structure}
 
@@ -488,3 +468,19 @@ The **Fields** panel lists all fields within the Content Fragment. The icon indi
   </tr>
  </tbody>
 </table>
+
+## Good to know {#good-to-know}
+
+Additionally:
+
+* To edit a Content Fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contact your system administrator if you are experiencing issues.
+
+  For example, if you do not have `edit` permissions the editor will be read-only.
+
+* A Content Fragment Model can often define data fields named **Title** and **Description**. If these fields exist, they are user-defined fields and can be updated in the *central panel* when editing the fragment.
+
+  The Content Fragment, and its variations, also have metadata fields (Variation properties) called **Title** and **Description**. These fields are an integral part of any Content Fragment and initially defined when the fragment. They can be updated in the *right panel* when editing the fragment.
+
+* See the Assets documentation for full information about the [original Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md) - it is available from both the **Assets** console and the **Content Fragments** console.
+
+* Your project team can customize the editor if required. See [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md) for further details.
