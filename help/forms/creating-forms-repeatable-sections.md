@@ -1,8 +1,6 @@
 ---
-title: Creating forms with repeatable sections
-seo-title: Creating forms with repeatable sections
-description: Repeatable sections are panels that can be dynamically added or removed to a form.
-seo-description: Repeatable sections are panels that can be dynamically added or removed to a form.
+title: How to create forms with repeatable sections?
+description: Learn to create repeatable sections in a form which can be dynamically added or removed to a form.
 uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -21,13 +19,13 @@ You can use one of the following methods to create repeatable panels:
 
 1. In the edit mode, select a panel, then tap ![cmppr](assets/cmppr.png). In the sidebar, under Properties, enable **[!UICONTROL Make Panel Repeatable]**. Specify values for the **[!UICONTROL Maximum]** and **[!UICONTROL Minimum]** fields.
 
-   The Maximum field specifies the maximum number of times a panel can appear on the page. You can specify -1 in the Maximum Count field to allow the panel to appear for infinite number of times.
+   The Maximum field specifies the maximum number of times a panel can appear on the page. You can specify -1 in the Maximum Count field to allow the panel to appear for an infinite number of times.
 
-   The Minimum field specifies the minimum the number times a panel appears on the form. If you set The Minimum Count filed to zero, later, you can remove all the instances via scripts after rendition is complete.
+   The Minimum field specifies the minimum the number times that a panel appears on the form. If you set The Minimum Count filed to zero, later, you can remove all the instances via scripts after rendition is complete.
 
    >[!NOTE]
    >
-   >To create a non-repeatable panel, set value of the Maximum and Minimum field to one. The accordion layout does not support -1 in the Maximum Count field. You can specify a high number to give the notion of infinite value.
+   >To create a non-repeatable panel, set the value of the Maximum and Minimum field to one. The accordion layout does not support -1 in the Maximum Count field. You can specify a high number to give the notion of infinite value.
 
 1. The parent of the panel, which is to be repeated, should contain add and delete buttons to manage instances of the repeatable panels. Perform the following steps to insert buttons to the parent and enable scripts on the buttons:
 
@@ -57,7 +55,7 @@ You can use one of the following methods to create repeatable panels:
        >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
        >
        >
-       >For example, you create an Adaptive Form with a repeatable panel having a text box. When you pre-fill the form with three repeatable text boxes, you need the xml below:
+       >For example, you can create an Adaptive Form with a repeatable panel having a text box. When you pre-fill the form with three repeatable text boxes, you need the xml below:
        >
        >
        >`<panel1><textbox1>AA1</panel1></textbox1>`
@@ -85,14 +83,14 @@ You can use one of the following methods to create repeatable panels:
 
        >[!NOTE]
        >
-       >When all of the instances of a panel are removed from an Adaptive Form, to add an instance of the removed panel, use the _panelName syntax to capture the instance manager of the panel and the use the addInstance API of instance manager to add the deleted instance. For example, _panelName.addInstance(). It adds an instance of the removed panel.
+       >When all of the instances of a panel are removed from an Adaptive Form, to add an instance of the removed panel, use the _panelName syntax to capture the instance manager of the panel and the use the addInstance API of the instance manager to add the deleted instance. For example, _panelName.addInstance(). It adds an instance of the removed panel.
 
 ## Using the accordion layout for the parent panel &nbsp; {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
-A panel has various layouts options. The Layout for accordian design option has out of the box support for repeatable panels. Perform the following steps to repeatable panel with Layout for accordian design option:
+A panel has various layout options. The Layout for accordion design option has out of the box support for repeatable panels. Perform the following steps to repeatable panel with Layout for accordion design option:
 
 1. On the parent of panel to be repeated, tap ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
-1. On a panel, which is to be repeated, tap ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
+1. On a panel, which is to be repeated, tap ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify values for the **Maximum** and **Minimum** fields.
 
    Now, you can use the plus (+) and delete ( ![delete-panel](assets/delete-panel.png)) buttons to add and remove the panels.
 
@@ -108,11 +106,11 @@ Repeatable subform is similar to the repeatable panels in Adaptive Forms. In [!D
 1. To specify the minimum number of repetitions, select Min Count and type a number in the associated box. If this option is set to 0 and no data is provided for the objects in the subform at data-merge time, the subform is not placed when the form is rendered.
 1. To specify the maximum number of subform repetitions, select Max and type a number in the associated box. If you do not specify a value in the Max box, the number of subform repetitions are unlimited.
 1. To specify a set number of subform repetitions, regardless of the quantity of data, select Initial Count and type a number in the associated box. If you select this option and either no data is available or fewer data entries exist than the specified Initial Count value, empty instances of the subform are still placed on the form.
-1. Add two buttons in the parent subform- one for adding instance and another for deleting instance of repeatable subform. For detailed steps, see [Build an action](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
+1. Add two buttons in the parent subform- one for adding instance and another for deleting instance of a repeatable subform. For detailed steps, see [Build an action](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
 1. Now, link the Form Template to the Adaptive Form. For detailed steps, see [Create an Adaptive Form based on a template](creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
 1. Use the buttons created in step 9 to add and remove subforms.
 
-Attached .zip file contains a sample repeatable sub form.
+The attached .zip file contains a sample repeatable sub form.
 
 [Get File](assets/samplerepeatablesubform.zip)
 
@@ -164,4 +162,4 @@ In the following code, the `SampleType`panel uses the minOccours & maxOccurs pro
 
 >[!NOTE]
 >
->For non-accordian layout, use Adaptive Form button components to add and remove instances.
+>For non-accordion layout, use Adaptive Form button components to add and remove instances.

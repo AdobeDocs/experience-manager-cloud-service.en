@@ -1,6 +1,7 @@
 ---
 title: Overview to Content Transformer
 description: Learn how to detect and fix content related issues reported by the BPA using Content Transformer.
+exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
 ---
 # Overview {#overview-ct}
 
@@ -17,7 +18,7 @@ The Content Transformer can help resolve issues that fall under the following [B
 | DOPI         | deprecated.ordered.index                                                                                           | Remove the deprecated indexes.                                                                                                      |
 | OAUI         | non.migrated.oauth.users                                                                                           | Remove these users to ensure they are not migrated to AEM as a Cloud Service.                                              |
 | PCX          | page.complexity.medium <br> page.complexity.high                                                                        | Delete the pages/children or move them to a different location to ensure they are not migrated to AEM as a Cloud Service.                                       |
-| REP          | forward.replication <br> reverse.replication <br> standard.replication.agent.modification <br> custom.replication.agent.detection | Remove the newly created replication agents. <br> OR <br> Remove the modified/added properties.                                                |
+| REP          | forward.replication <br> reverse.replication <br> standard.replication.agent.modification <br> custom.replication.agent.detection | Remove the newly-created replication agents. <br> OR <br> Remove the modified/added properties.                                                |
 | URS          | clientlibs.location <br> file.location <br> node.location <br> workflow.location                                                 | Move to the correct location to avoid issues during migration.                                                                                                       |
 | URS          | node.size                                                                                                          | Move the nodes temporarily to`/etc/packages/content-transformation/paths` to ensure they are not migrated to AEM as a Cloud Service.               |
 

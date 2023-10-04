@@ -5,11 +5,22 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 ---
 # Content Fragments {#content-fragments}
 
-Content fragments in Adobe Experience Manager (AEM) as a Cloud Service are [created and managed as page-independent assets](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+Content fragments in Adobe Experience Manager (AEM) as a Cloud Service are [created and managed as page-independent assets](/help/sites-cloud/administering/content-fragments/overview.md).
 
 They allow you to create channel-neutral content, together with (possibly channel-specific) variations. You can then use these fragments, and their variations, when authoring your content pages.
 
 Together with the updated JSON exporter, structured content fragments can also be used to deliver AEM content via Content Services to channels other than AEM pages.
+
+>[!NOTE]
+>
+>Content Fragments are a **Sites** feature, but are stored as **Assets**. 
+>
+>They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** console, though they can still be managed from the **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console.
+>
+>There are two editors for authoring Content Fragments:
+>
+>* The new editor for [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), is primarily accessed from the **Content Fragments** console.
+>* The [original editor](/help/assets/content-fragments/content-fragments-variations.md) is primarily accessed from the **Assets** console. 
 
 >[!NOTE]
 >
@@ -23,7 +34,7 @@ Together with the updated JSON exporter, structured content fragments can also b
 
 >[!CAUTION]
 >
->This page must be read in conjunction with [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) (and related pages) as it introduces basic terminology and concepts, together with creating and managing fragments.
+>This page must be read in conjunction with [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) (and related pages) as it introduces basic terminology and concepts, together with creating and managing fragments.
 
 The content fragments enable:
 
@@ -99,7 +110,7 @@ In the appropriate configuration dialog you can select the available parameters,
 
 ### Quick Connection to Fragment Editor {#quick-connection-to-fragment-editor}
 
-You can open the fragment source for editing (the asset) using the **Edit** icon on the component toolbar. This will allow you to [edit and manage the content fragment](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+You can open the fragment source for editing (the asset) using the **Edit** icon on the component toolbar. This will allow you to [edit and manage the content fragment](/help/sites-cloud/administering/content-fragments/overview.md).
 
 >[!CAUTION]
 >
@@ -109,7 +120,7 @@ You can open the fragment source for editing (the asset) using the **Edit** icon
 
 When a specific content fragment is added to the page, there is a **Drag components here** placeholder between each HTML paragraph (and at the top/bottom) of the fragment.
 
-This allows you to add extra content [in-between (that is, in-between content)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) the fragment content (at any of the available points), without having to change the root fragment.
+This lets you add extra content [in-between (that is, in-between content)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) the fragment content (at any of the available points), without having to change the root fragment.
 
 For in-between content you can:
 
@@ -125,9 +136,9 @@ For in-between content you can:
 
 >[!NOTE]
 >
->You can also [insert visual assets (images) to the fragment itself](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>You can also [insert visual assets (images) to the fragment itself](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Visual assets inserted into the fragment itself are attached to the preceding paragraph in the fragment. This means that you cannot position in-between content between a visual asset and the preceding paragraph. If you need this level of connection you can add the image to the fragment (as a [mixed-media fragment](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)).
+>Visual assets inserted into the fragment itself are attached to the preceding paragraph in the fragment. This means that you cannot position in-between content between a visual asset and the preceding paragraph. If you need this level of connection you can add the image to the fragment (as a [mixed-media fragment](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
 >[!CAUTION]
 >
@@ -142,11 +153,11 @@ For in-between content you can:
 
 ### Using Associated Content {#using-associated-content}
 
-If you have [associated content](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/sites-cloud/administering/content-fragments/content-fragments.md) these assets are available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for [in-between content](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments). 
+If you have [associated content](/help/assets/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/assets/content-fragments/content-fragments.md) these assets are available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments). 
 
 >[!NOTE]
 >
->There are various methods of adding [visual assets (for example, images)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
+>There are various methods of adding [visual assets (for example, images)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
 >[!NOTE]
 >
@@ -160,7 +171,7 @@ From here you can drag the assets to the required location (either to an existin
 
 ### Assets Inserted into the Fragment {#assets-inserted-into-the-fragment}
 
-If assets (for example, images) have been inserted into the fragment itself (as [mixed-media fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)), then the options for editing these assets in the page editor is limited.
+If assets (for example, images) have been inserted into the fragment itself (as [mixed-media fragments](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), then the options for editing these assets in the page editor is limited.
 
 For example, for an image you can
 
@@ -175,7 +186,7 @@ Other changes, such as move, copy, delete must be made in the fragment editor.
 
 Fragments need to be published so they can used used on your published web pages:
 
-* A fragment can be published after [creating the fragment in the Content Fragments console](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment). 
+* A fragment can be published after [creating the fragment in the Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment). 
 * If an *unpublished fragment* is used on a page that is being published, the fragment can also be published at this time.
 
 ## Exporting Content Fragments {#exporting-content-fragments}

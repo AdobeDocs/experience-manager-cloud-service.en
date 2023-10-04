@@ -1,7 +1,8 @@
 ---
-title: Translate a Core Components based Adaptive Form
-description: Use machine translation or human translation to translate a Core Components based Adaptive Form
+title: How to translate a Core Components based Adaptive Form?
+description: Learn to create a Form Data Model in AEM Forms, test the model with sample data and services, and configure various option for a model.
 feature: Adaptive Forms
+exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 ---
 # Use machine translation or human translation to translate a Core Components based Adaptive Form {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
@@ -18,7 +19,7 @@ The machine translation service immediately translates your content in Adaptive 
    * To add a new dictionary to an existing translation project, select the **[!UICONTROL Add to an existing translation project]** option and select an **[!UICONTROL Existing translation project]**. 
 1. In the **Target Languages** field, specify a locale (For example, `German(de)`). You can specify multiple locales. The form is translated to all the locales specified in the **Target Languages** field. Click **Done**.
 1. In the Dictionary Added dialog box, click **Open Projects**. 
-1. In the Projects screen, click the newly created project. For example, click the **Government Reference Site - German locale** tile.
+1. In the Projects screen, click the newly-created project. For example, click the **Government Reference Site - German locale** tile.
 1. On the **Translation Job** tile, click the ![aem62forms_downarrow](assets/aem62forms_downarrow.png) icon, and click **Start**. The status of the tile changes to Draft. On completion of the translation, the status changes to **Approved**. Refresh the page after a few minutes and verify the status.
 
       ![Start Translation](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
@@ -61,7 +62,7 @@ Perform the following steps to localize a form and its document of record using 
    * To add a new dictionary to an existing translation project, select the **[!UICONTROL Add to an existing translation project]** option and select an **[!UICONTROL Existing translation project]**. 
 1. In the **Target Languages** field, specify a locale (For example, `German(de)`). You can specify multiple locales. The form is translated to all the locales specified in the **Target Languages** field. Click **Done**.
 1. In the Dictionary Added dialog box, click **Open Projects**. 
-1. In the Projects screen, click the newly created project. For example, click the **Government Reference Site - German locale** tile. 
+1. In the Projects screen, click the newly-created project. For example, click the **Government Reference Site - German locale** tile. 
 1. At the bottom of the **Summary** tile, click the **ellipses**. The Translation Project Properties screen opens.
 1. Open the **[!UICONTROL Advanced]** tab  at the top of the **Translation Project Properties** screen. For the **[!UICONTROL Translation field]**, select **[!UICONTROL Human Translation]**. Click **Save & Close** at the top of the screen.
 1. On the **Translation Job** tile, click the ![aem62forms_downarrow](assets/aem62forms_downarrow.png) icon, and click **Export**. On the Export dialog, click the Download Exported File option. It downloads a .zip file. 

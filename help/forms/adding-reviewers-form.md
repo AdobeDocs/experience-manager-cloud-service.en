@@ -1,8 +1,7 @@
 ---
 title: Associating submission reviewers with a form
 seo-title: Associating submission reviewers with a form
-description: Learn how to associate submission reviewers with a form in [!DNL AEM Forms]. Associated reviewers review a form submitted via forms portal.
-seo-description: Learn how to associate submission reviewers with a form in [!DNL AEM Forms]. Associated reviewers review a form submitted via forms portal.
+description: Share an Adaptive Form for review with one or more reviewers.
 uuid: 58c8c8fb-9262-4c37-b9b2-e46fe21b77d9
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -15,7 +14,7 @@ docset: aem65
 
 When you create a form, you can specify users who review the submissions of the form via forms portal and provide feedback. Your organization can collect feedback and rework on the submitted forms.
 
-[!DNL AEM Forms] allows you to associate a reviewer group with a form. Users added to a review group of a form see submissions of this form, and provide feedback.
+[!DNL AEM Forms] lets you associate a reviewer group with a form. Users added to a review group of a form see submissions of this form, and provide feedback.
 
 Reviewer groups assigned to a form can only review the submissions of the specified form.
 

@@ -57,8 +57,8 @@ This philosophy is supported by [HTL](https://experienceleague.adobe.com/docs/ex
 
 This (optional) logic can be implemented in different ways and is invoked from HTL with specific commands:
 
-* Using Java - [The HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) enables an HTL file to access helper methods in a custom Java class. This allows you to use Java code to implement the logic for selecting and configuring the component content.
-* Using JavaScript - [The HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) enables a HTL file to access helper code written in JavaScript. This allows you to use JavaScript code to implement the logic for selecting and configuring the component content.
+* Using Java - [The HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) enables an HTL file to access helper methods in a custom Java class. This lets you use Java code to implement the logic for selecting and configuring the component content.
+* Using JavaScript - [The HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) enables a HTL file to access helper code written in JavaScript. This lets you use JavaScript code to implement the logic for selecting and configuring the component content.
 * Using Client-Side Libraries - Modern websites rely heavily on client-side processing driven by complex JavaScript and CSS code. See the document [Using Client-Side Libraries on AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) for more information.
 
 ## Component Structure {#structure}
@@ -467,4 +467,4 @@ This markdown will then be displayed in the [Component Console](/help/sites-clou
 
 ![README.md visible in the Components Console](assets/components-documentation-console.png)
 
-The supported markdown is the same as that for [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+The supported markdown is the same as that for [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md).

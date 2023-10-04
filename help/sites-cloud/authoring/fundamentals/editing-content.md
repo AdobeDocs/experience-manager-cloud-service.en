@@ -3,6 +3,7 @@ title: Editing Page Content
 description: Once your page is created you can edit the content to make the updates you require
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 ---
+
 # Editing Page Content{#editing-page-content}
 
 Once your page is created (either new or as part of a launch or live copy) you can edit the content to make the updates you require.
@@ -25,6 +26,8 @@ Content is added using [components](/help/sites-cloud/authoring/features/compone
 >[!TIP]
 >
 >When in **Edit** mode, links in your content are visible, but **not accessible**. Use [Preview mode](#previewing-pages) if you want to navigate using the links in your content.
+
+{{edge-delivery-authoring}}
 
 ## Page Toolbar {#page-toolbar}
 
@@ -66,7 +69,7 @@ The toolbar offers access to numerous options. Depending on your current context
 
 * **Mode Selector**
 
-  Displays the current [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) and allows you to select another mode such as edit, layout, timewarp, or targeting.
+  Displays the current [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) and lets you select another mode such as edit, layout, timewarp, or targeting.
 
   ![Mode Selector button](/help/sites-cloud/authoring/assets/mode-selector.png)
 
@@ -78,7 +81,7 @@ The toolbar offers access to numerous options. Depending on your current context
 
 * **Annotate**
 
-  Allows you to add [annotations](/help/sites-cloud/authoring/fundamentals/annotations.md) to the page when reviewing a page. After the first annotation, the icon will switch to a number indicating the number of annotations on the page.
+  Lets you add [annotations](/help/sites-cloud/authoring/fundamentals/annotations.md) to the page when reviewing a page. After the first annotation, the icon will switch to a number indicating the number of annotations on the page.
 
   ![Annotation button](/help/sites-cloud/authoring/assets/annotations.png)
 
@@ -234,25 +237,25 @@ The actual actions available to the user are shown as appropriate and not all ac
 
 * **Group**
 
-  This allows you to select multiple components at once. The same can be achieved on a desktop device by a **Control+Click** or **Command+Click**.
+  This lets you select multiple components at once. The same can be achieved on a desktop device by a **Control+Click** or **Command+Click**.
 
   ![Group button](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
 * **Parent**
 
-  This allows you to select the parent component of the selected component.
+  This lets you select the parent component of the selected component.
 
   ![Parent button](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **Layout**
 
-  This allows you to modify the [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) of the selected component. This only applies to the selected component and does not activate the [Layout mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) for the entire page.
+  This lets you modify the [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) of the selected component. This only applies to the selected component and does not activate the [Layout mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) for the entire page.
 
   ![Layout button](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **Convert to an experience fragment variation**
 
-  This allows you to create a new [experience fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) from the selected component or add it to an existing experience fragment.
+  This lets you create a new [experience fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) from the selected component or add it to an existing experience fragment.
 
   ![Convert to Experience Fragment button](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
@@ -424,7 +427,7 @@ There are two options for previewing a page:
 When editing content you can preview the page using the preview [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes). This mode:
 
 * Hides various edit mechanisms to give you a quick view of how the page will appear on publish.
-* Allows you to use links to navigate.
+* Lets you use links to navigate.
 * Does **not** refresh the page content.
 
 When authoring, the preview mode is available using the icon at the top right of the page editor:
@@ -486,7 +489,7 @@ The Page Information menu lists **Unlock** as an option and the Lock icon in the
 >
 >Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
 >
->Pages can not be unlocked by impersonating the user who locked the page.
+>Pages cannot be unlocked by impersonating the user who locked the page.
 -->
 
 <!--

@@ -5,11 +5,11 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 ---
 # Editing Programs {#editing-programs}
 
-Users with requisite permissions can edit [production programs created in your organization](creating-production-programs.md) and [sandbox programs created in your organization.](creating-sandbox-programs.md) By editing a program you can:
+Users with the requisite permissions can edit [production programs created in your organization](creating-production-programs.md) and [sandbox programs created in your organization.](creating-sandbox-programs.md) By editing a program, you can:
 
-* Add Sites solution to an existing program with Assets and vice versa.
+* Add Sites solution to an existing program with Assets and conversely.
 * Remove Sites or Assets from an existing program with both Sites and Assets.
-* Add a second, unused solution entitlement to either an existing program or as a new Program.
+* Add a second, unused solution entitlement, to either an existing program or as a new Program.
 * Delete sandbox programs.
 
 ## Permissions {#permissions}
@@ -18,13 +18,11 @@ You must be a member of the **Business Owner** role to edit programs or delete s
 
 ## Editing a Program {#editing}
 
-Follow these steps to edit a program.
-
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program you wish to edit to show its details.
+1. Click the program that you want to edit to show its details.
 
-1. Click on your program's name at the top-left of the page and select **Edit program**.
+1. Click your program's name in the upper-left of the page and select **Edit program**.
 
    ![Edit program option](assets/edit-program-overview.png)
 
@@ -38,7 +36,7 @@ Follow these steps to edit a program.
 
    ![Select solutions](assets/edit-prg.png)
 
-1. Click on the chevron before the solution names to reveal optional add-ons such as selecting the **Commerce** add-on option under **Sites**.
+1. Click the chevron before the solution name to reveal optional add-ons such as selecting the **Commerce** add-on option under **Sites**.
 
    ![Edit add-ons](assets/edit-program-add-on.png)
 
@@ -46,34 +44,34 @@ Follow these steps to edit a program.
 
    ![Edit go-live settings](assets/edit-program-go-live.png)
 
-   * This date is for informational use only and triggers the Go Live widget on the program overview page to provide in-product links to AEM as a Cloud Service best practice documentation in a timely manner to align with your journey culminating in a successful and smooth Go Live experience.
+   * This date is for informational use only. It triggers the Go Live widget on the program overview page. In turn, it provides in-product links to Adobe Experience Manager (AEM) as a Cloud Service best practice documentation to align with your journey, culminating in a successful Go Live experience.
    * This tab is not available for sandbox programs.
 
-1. Click on **Update** to save your changes to the program.
+1. Click **Update** to save your changes to the program.
 
-Any time a program is edited, including adding or removing a solution or add-on, those changes will take effect following the next deployment.
+Anytime a program is edited, including adding or removing a solution or add-on, those changes take effect following the next deployment.
 
 If your production program had enhanced security enabled, an additional **Enhanced Security** tab is available in the **Edit Program** window to confirm that the feature is active for the program.
 
 ![Enhanced Security active for a program](assets/edit-program-enhanced.png)
 
-This setting can not be modified once the program is created. For more information about the enhanced security option, see [Creating Production Programs](creating-production-programs.md) document.
+You cannot edit this setting after the program is created. For more information about the enhanced security option, see [Creating Production Programs](creating-production-programs.md).
 
 ## Deleting Sandbox Programs {#delete-sandbox-program}
 
-Deleting a sandbox program will remove all environments and pipelines associated with it.
+Deleting a sandbox program removes all environments and pipelines associated with it.
 
 >[!TIP]
 >
 >Users with the **Business Owner** or **Deployment Manager** roles can alternatively delete their production and stage environments instead of the entire sandbox program. 
 
-Follow these steps to delete a sandbox program.
+To delete a sandbox program, do the following.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program you wish to edit to show its details.
+1. Click the program that you want to edit to show its details.
 
-1. Click on your program's name at the top-left of the page and select **Delete Program**.
+1. Click your program's name in the uppper-left of the page and select **Delete Program**.
 
    ![Delete program option](assets/delete-sandbox1.png)
 
@@ -83,4 +81,4 @@ Alternatively you can click the ellipsis button on your program's card from the 
 
 >[!NOTE]
 >
->Only sandbox programs can be deleted. Production programs can not be deleted.
+>Only sandbox programs can be deleted. Production programs cannot be deleted.

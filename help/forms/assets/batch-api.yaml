@@ -526,7 +526,7 @@ components:
           default: false
           description: >-
             Set true to retain interactive unsigned signature fields in
-            generated Flat PDF. It allows you to use PDF for gathering
+            generated Flat PDF. It lets you use PDF for gathering
             signatures.
         acrobatVersion:
           type: string

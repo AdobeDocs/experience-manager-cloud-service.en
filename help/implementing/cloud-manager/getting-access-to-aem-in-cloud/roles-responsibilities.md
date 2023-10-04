@@ -54,6 +54,6 @@ Adobe provides a set of services around the provisioning, development, staging a
 
 >[!NOTE]
 >
-> The above assumes Premier Support is included. The table may be subject to modification by agreement between the Customer and Customizer. We recommend that you work with your Adobe Sales and customization teams if you require clarification on any of the above. 
-> Customers that do not want to handle customization themselves should obtain the services of Adobe’s Professional Services team or an Experience Manager partner. 
+> The above assumes Premier Support is included. The table may be subject to modification by agreement between the Customer and Customizer. Adobe recommends that you work with your Adobe Sales and customization teams if you require clarification on any of the above. 
+> Customers that do not want to handle customization themselves should obtain the services of Adobe's Professional Services team or an Experience Manager partner. 
 >To maintain high-quality levels, Adobe requires that partners engaged in Experience Manager as a Cloud Service development projects are staffed with at least one individual who has obtained the Advanced Developer certification for Experience Manager software.
