@@ -15,9 +15,6 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 
 Follow the steps below to ingest your migration set using the Cloud Acceleration Manager:
 
-   >[!NOTE]
-   >Did you remember to log a support ticket for this ingestion? See [Important Considerations Before Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) for that and other considerations to help make the ingestion successful.
-
 1. Go to Cloud Acceleration Manager. Click your project card and click the Content Transfer card. Navigate to **Ingestion Jobs** and click **New Ingestion** 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
@@ -114,21 +111,27 @@ This message indicates that the Cloud Acceleration Manager was unable to reach t
 > The "Migration token" field is shown because in a few cases retrieving that token is what is actually disallowed. By allowing it to be manually provided, it may allow the user to start the ingestion quickly, without any additional help. If the token is provided, and the message still appears, then retrieving the token was not the problem.
 
 * AEM as a Cloud Service maintains the environment state, and occasionally must restart the migration service for various normal reasons. If that service is restarting, it cannot be reached, but is available eventually.
-* It is possible that another process is being run on the instance. For example, if Release Orchestrator is applying an update, the system may be busy and the migration service regularly unavailable. That, and the possibility of corrupting the stage or production instance, is why pausing updates during an ingestion is highly recommended.
+* It is possible that another process is being run on the instance. For example, if [AEM Version Updates](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) is applying an update, the system may be busy and the migration service regularly unavailable. Once that process is done, the start of the ingestion can be attempted again. 
 * If an [IP Allowlist has been applied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) through Cloud Manager, it blocks Cloud Acceleration Manager from reaching the migration service. An IP address cannot be added for ingestions because its address is dynamic. Currently, the only solution is to disable the IP allow list while the ingestion is running.
 * There may be other reasons that need investigation. If the ingestion still continues to fail, contact Adobe Customer Care.
 
-### Automatic Updates through Release Orchestrator is still enabled
+### AEM Version Updates and Ingestions
 
-Release Orchestrator automatically keeps environments up to date by applying updates automatically. If the update is triggered when an ingestion is performed, it can cause unpredictable results including the corruption of the environment. A good reason to log a customer support ticket before starting an ingestion (see "Note" above), so that temporarily disabling the Release Orchestrator can be scheduled.
+[AEM Version Updates](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) are automatically applied to environments to keep them up to date with the most recent AEM as a Cloud Service version. If the update is triggered when an ingestion is performed, it can cause unpredictable results including the corruption of the environment.
 
-If Release Orchestrator is still running when an ingestion is being started, the user interface presents this message. You may choose to continue anyway, accepting the risk, by checking the field and pressing the button again.
+If the "AEM Version Updates" is onboarded on the destination program, the ingestion process will attempt to disable its queue before it starts. When the ingestion is complete the version updater state will be returned to how it was before the ingestion(s) started.
 
 >[!NOTE]
 >
-> Release Orchestrator is now being deployed to Development environments, so pausing updates on those environments should be done as well.
+> There is no longer a need to log a support ticket to get "AEM Version Updates" disabled.
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+If "AEM Version Updates" is active (i.e. updates are running or are queued to be run), the ingestion will not begin and the user interface presents the following message. Once the updates are complete, the ingestion can be started. Cloud Manager can be used to see the current state of the pipelines of the program.
+
+>[!NOTE]
+>
+> "AEM Version Updates" is run in the environment's pipeline and will wait until the pipeline is clear. If updates are queued for longer than expected, ensure a custom workflow does not have the pipeline unintentionally locked. 
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
 ### Top-up Ingestion Failure Due to Uniqueness Constraint Violation
 
