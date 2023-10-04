@@ -1,11 +1,11 @@
 ---
 title: Configuring Bulk Editing of Page Properties
 description: Learn how to configure bulk editing so you can edit the properties of multiple pages at once.
+exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
 ---
-
 # Configuring Bulk Editing of Page Properties {#configuring-bulk-editing-of-page-properties}
 
-[Bulk editing of page properties](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages) allows you to edit the properties of multiple pages at once.
+[Bulk editing of page properties](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages) lets you edit the properties of multiple pages at once.
 
 ## Considerations {#considerations}
 

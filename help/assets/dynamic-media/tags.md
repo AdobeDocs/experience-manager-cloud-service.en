@@ -251,7 +251,7 @@ The simplest method to do that is to complete the following two-step process:
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-It is possible, however, to use an alternative approach and bypass Data Element creation. You can directly reference an argument from a Dynamic Media Viewer event. Enter the fully qualified name of the event argument in the **[!UICONTROL value]** input field of the Analytics variable assignment. Be sure you surround by percent (%) signs. For example,
+It is possible, however, to use an alternative approach and bypass Data Element creation. You can directly reference an argument from a Dynamic Media Viewer event. Enter the fully-qualified name of the event argument in the **[!UICONTROL value]** input field of the Analytics variable assignment. Be sure you surround by percent (%) signs. For example,
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -513,7 +513,7 @@ See also [Configure a tap property](https://experienceleague.adobe.com/docs/plat
 
 1. Select **[!UICONTROL Save]**.
 
-   Select the newly created property then proceed to *Installation and setup of extensions*.
+   Select the newly-created property then proceed to *Installation and setup of extensions*.
 
 ### Install and setup of extensions {#installing-and-setup-of-extensions}
 

@@ -1,8 +1,6 @@
 ---
-title: Configure shared queues
-seo-title: Configure shared queues
+title: How to configure shared queues?
 description: Learn how to use shared queues for Forms-centric workflows on [!DNL AEM Forms] on OSGi.
-seo-description: Learn how to use shared queues for Forms-centric workflows on [!DNL AEM Forms] on OSGi.
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
@@ -20,7 +18,7 @@ The logged-in user must be a member of the [!DNL `workflow-users`] group. The us
 
 ## Share a single or all the items of your inbox with another user
 
-AEM Inbox allows you to share a single or all the items in your inbox with another user.
+AEM Inbox lets you share a single or all the items in your inbox with another user.
 
 ### Share all the inbox items
 

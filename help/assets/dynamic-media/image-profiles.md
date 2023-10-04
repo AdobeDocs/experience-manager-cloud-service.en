@@ -128,7 +128,7 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 
    ![crop](assets/crop.png)
 
-1. Select **[!UICONTROL Save]**. The newly created profile appears in the list of available profiles.
+1. Select **[!UICONTROL Save]**. The newly-created profile appears in the list of available profiles.
 
 ## Edit or delete Dynamic Media Image Profiles {#editing-or-deleting-image-profiles}
 

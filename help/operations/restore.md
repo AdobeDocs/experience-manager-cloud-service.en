@@ -1,8 +1,8 @@
 ---
 title: Content Restore in AEM as a Cloud Service
 description: Learn how to restore your AEM as a Cloud Service content from backup using Cloud Manager.
+exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 ---
-
 # Content Restore in AEM as a Cloud Service {#content-restore}
 
 Learn how to restore your AEM as a Cloud Service content from backup using Cloud Manager.
@@ -53,11 +53,11 @@ First determine the time frame of the content that you wish to restore. Then to 
 
 1. On the **Restore Content** tab of the environment details page, first select the time frame of the restore under the **Time to restore** dropdown.
 
-   1. If you select **Last 24 hours** the neighboring **Time** field allows you to specify the exact time within the last 24 hours to restore.
+   1. If you select **Last 24 hours** the neighboring **Time** field lets you specify the exact time within the last 24 hours to restore.
 
       ![Last 24 hours](assets/backup-time.png)
    
-   1. If you select **Last week** the neighboring **Day** field allows you to select a date within the past seven days, excluding the previous 24 hours.
+   1. If you select **Last week** the neighboring **Day** field lets you select a date within the past seven days, excluding the previous 24 hours.
    
       ![Last week](assets/backup-date.png)
 
@@ -124,4 +124,4 @@ Usage of the self-service restore mechanism is subject to the following limitati
 * A restore operation will not initiate if there is a full stack or web tier config pipeline currently running for the environment.
 * A restore cannot be initiated if another restore is already running on the same environment.
 * In rare cases, because of the 24 hour/seven day limit on backups, the selected backup may become unavailable due to a delay between when it was selected and when the restore is initiated.
-* Data from deleted environments is permanently lost and can not be recovered.
+* Data from deleted environments is permanently lost and cannot be recovered.

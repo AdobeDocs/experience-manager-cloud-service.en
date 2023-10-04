@@ -20,7 +20,7 @@ As a system administrator you are responsible for managing users within your org
 
 ## The Admin Console {#admin-console}
 
-The Adobe Admin Console is a central place to administer and manage your Adobe product licenses and users. The Admin Console allows you to create and manage users in a single location instead of within your various individual solutions.
+The Adobe Admin Console is a central place to administer and manage your Adobe product licenses and users. The Admin Console lets you create and manage users in a single location instead of within your various individual solutions.
 
 ## Adobe ID {#adobe-id}
 
@@ -44,7 +44,7 @@ Before you can use the Admin Console to administer users within your team, you n
 
 1. As a system administrator, you will receive multiple emails from Adobe as part of the onboarding process. Look for the welcome email that provides the information about the organization name to which you have been granted access.
 
-1. Click on the **Get started** link in your welcome email to navigate to Admin Console. If you can not find the email, open a browser directly to Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. Click on the **Get started** link in your welcome email to navigate to Admin Console. If you cannot find the email, open a browser directly to Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
    ![Welcome email](/help/journey-onboarding/assets/get-started-email.png)
 
@@ -84,7 +84,7 @@ If you have any issues, Adobe support can be accessed via the Admin Console. The
 
 ![Support tab](/help/journey-onboarding/assets/support-menu.png)
 
-The tab allows you to create and manage cases, chat directly with Adobe customer support representatives, and schedule sessions with experts. System administrators and support administrators must sign in to access support cases and expert session options.
+The tab lets you create and manage cases, chat directly with Adobe customer support representatives, and schedule sessions with experts. System administrators and support administrators must sign in to access support cases and expert session options.
 
 ## What's Next {#whats-next}
 

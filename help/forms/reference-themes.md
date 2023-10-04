@@ -1,8 +1,6 @@
 ---
-title: Reference Themes
-seo-title: Reference Themes
-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
-seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
+title: AEM Forms Reference Assets
+description: Use the reference Adaptive Form themes, templates, and Form Data models provided to get started quickly.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
 ---

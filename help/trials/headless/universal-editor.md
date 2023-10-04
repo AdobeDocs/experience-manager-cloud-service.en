@@ -3,8 +3,8 @@ title: Editing In Context
 description: Explore howe you can use the Universal Editor to edit any aspect of your content in place and in context in any implementation.
 hidefromtoc: yes
 index: no
+exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 ---
-
 # Editing In Context {#editing-in-context}
 
 >[!CONTEXTUALHELP]
@@ -68,7 +68,7 @@ The image is replaced with the one you selected.
 
 ## Experience Your Content As Your Readers Do {#emulators}
 
-The Universal Editor allows you to interact with your content within its context, seeing the content as it is delivered to the devices of your users.
+The Universal Editor lets you interact with your content within its context, seeing the content as it is delivered to the devices of your users.
 
 1. By default the editor renders the desktop version of your content. Tap or click the emulator button at the top-right of the editor to change the target device.
 
@@ -110,7 +110,7 @@ To accelerate your content authoring experience when structured editing of headl
 
 1. Scroll further down on the page to the **Adventures** section.
 
-1. In the mode rail on the left side of the editor, select **Components**. This allows you to select page components in the editor.
+1. In the mode rail on the left side of the editor, select **Components**. This lets you select page components in the editor.
 
 1. Tap or click one of the adventures to select it.
 

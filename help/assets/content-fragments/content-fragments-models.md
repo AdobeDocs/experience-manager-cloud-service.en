@@ -24,7 +24,12 @@ To use Content Fragment Models you:
    >
    >If the [use of content fragment models have not been enabled](/help/assets/content-fragments/content-fragments-configuration-browser.md), the **Create** option will not be available.
 
-1. Specify the **Model Title**. You can also add **Tags**, a **Description**, and select **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) if required.
+1. Specify the **Model Title**. 
+   You can also define various properties; for example, add **Tags**, a **Description**, and select **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) if required. 
+
+    >[!NOTE]
+    >
+    >For details about the **Default Preview URL Pattern** see [Content Fragment Model - Properties](#content-fragment-model-properties).
 
    ![title and description](assets/cfm-models-02.png)
 
@@ -212,7 +217,7 @@ Content Fragments can form nested content, using either of the following data ty
 
 * **[Fragment Reference](#fragment-reference-nested-fragments)** (Nested Fragments)
   * References other fragments, dependent on the specific models specified.
-  * Allows you to include/retrieve structured data.
+  * Lets you include/retrieve structured data.
     >[!NOTE]
     >
     >This method is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
@@ -230,7 +235,7 @@ Content Fragments can form nested content, using either of the following data ty
 
 ### Content Reference {#content-reference}
 
-The Content Reference allows you to render content from another source; for example, image or content fragment.
+The Content Reference lets you render content from another source; for example, image or content fragment.
 
 In addition to standard properties you can specify:
 
@@ -245,7 +250,7 @@ In addition to standard properties you can specify:
 
 ### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
 
-The Fragment Reference references one, or more, content fragments. This feature of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
+The Fragment Reference references one, or more, content fragments. This feature of particular interest when retrieving content for use in your app, as it lets you retrieve structured data with multiple layers.
 
 For example:
 
@@ -307,6 +312,12 @@ You can edit the **Properties** of a Content Fragment Model:
   * **Tags**
   * **Description**
   * **Upload Image**
+  * **Default Preview URL Pattern**
+    
+    >[!NOTE]
+    >
+    >This is only used by the *new* Content Fragment Editor. See [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) for further information.
+
 
 ## Enabling or Disabling a Content Fragment Model {#enabling-disabling-a-content-fragment-model}
 

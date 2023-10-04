@@ -87,7 +87,7 @@ Using these simple tools you can intuitively navigate your content structure.
 
 ### Page Editor {#page-editor}
 
-The sites console allows you to navigate your content and provides an overview of its structure. To see the details of an individual page, you need to use the sites editor.
+The sites console lets you navigate your content and provides an overview of its structure. To see the details of an individual page, you need to use the sites editor.
 
 To edit a page:
 

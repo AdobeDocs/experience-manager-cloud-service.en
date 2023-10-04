@@ -1,12 +1,16 @@
 ---
-title: Use Google reCAPTCHA in an Adaptive Form based on Core Components
+title: Use Google reCAPTCHA in an AEM Adaptive Form
 description: Enhance form security with Google reCAPTCHA service effortlessly. Step-by-step guide inside!
 topic-tags: Adaptive Forms, author
-hide: yes
-hidefromtoc: yes
-Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
+keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
+exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
 ---
-# Use reCAPTCHA in Adaptive Forms based on Core Components {#using-reCAPTCHA-in-adaptive-forms}
+# Use Google reCAPTCHA in an AEM Adaptive Form based on Core Components {#using-reCAPTCHA-in-adaptive-forms}
+
+| Applies to | Article link |
+| -------- | ---------------------------- |
+|  Adaptive Form based on Core Components   | This article  |
+|  Adaptive Form based on Foundation Components | [Click here](/help/forms/captcha-adaptive-forms.md) |
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes. 
 
@@ -41,13 +45,9 @@ To connect your AEM Forms environment with reCAPTCHA service by Google
     1. Select a Configuration Container, created or updated in previous section. Tap **[!UICONTROL Create]**.
     1. Specify **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, and **[!UICONTROL Secret Key]** for reCAPTCHA service (Obtained in Step 1). Tap **[!UICONTROL Create]**.
 
-
     ![Configure the Cloud Service to connect your AEM Forms environment with reCAPTCHA service by Google](/help/forms/assets/captcha-configuration.gif)
-
-
     
    Once the reCAPTCHA service is configured, it is available for use in an Adaptive Form. For more information, see [using Google reCAPTCHA in an Adaptive Form](#using-reCAPTCHA).
-
 
 ## Use Google reCAPTCHA in an Adaptive Form {#using-reCAPTCHA}
 
@@ -100,3 +100,9 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **Q: Can I use more than one Captcha component in an Adaptive Form?**
 **Ans:** Using more than one Captcha component in an Adaptive Form is not supported. Also, it is not recommended to use Captcha component in a fragment or a panel marked for lazy loading.
 
+## See also
+
+* [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+* [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments-core-components.md)
+* [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Use Google reCAPTCHA in an Adaptive Form ](/help/forms/captcha-adaptive-forms-core-components.md)

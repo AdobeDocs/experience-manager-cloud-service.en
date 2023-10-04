@@ -34,9 +34,17 @@ Highlights upcoming features for Assets.
 
 Pin files, folders, and collections for faster access to these items when you need them later. All pinned items display in the **Quick access** section of My Workspace. You can access them using My Workspace instead of navigating to the location where they are saved within the repository.
 
-To pin an asset, a folder, or a collection, select the item and click **[!UICONTROL Pin to Quick Access]**.
+To pin an asset, a folder, or a collection:
 
-![Tasks in Workspace](assets/quick-access.png)
+1. Select the item and click **[!UICONTROL Pin to Quick Access]**.
+
+1. Select if you need to pin the item just for you, for the entire organization, or for selected groups. If you select **[!UICONTROL For groups]**, define the group names in the **[!UICONTROL Pin for groups]** field.
+
+   ![Pin items for groups](assets/pin-items-for-groups.png)
+1. Click **[!UICONTROL Pin]**.
+
+   The selected item displays in the **[!UICONTROL Quick Access]** section of My Workspace. 
+   ![Tasks in Workspace](assets/quick-access.png)
 
 **Insights**
 

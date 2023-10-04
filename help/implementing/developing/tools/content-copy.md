@@ -1,16 +1,15 @@
 ---
 title: The Content Copy Tool
 description: The content copy tool enables users to copy mutable content on-demand from their production environments on AEM as a Cloud Service to lower environments for testing purposes.
-exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
+exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 ---
-
 # The Content Copy Tool {#content-copy}
 
 The content copy tool enables users to copy mutable content on-demand from their production environments on AEM as a Cloud Service to lower environments for testing purposes.
 
 ## Introduction {#introduction}
 
-Current, real data is valuable for testing, validation, and user-acceptance purposes. The content copy tool allows you to copy content from a production AEM as a Cloud Service environment to a staging, development, or [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) environment for such testing.
+Current, real data is valuable for testing, validation, and user-acceptance purposes. The content copy tool lets you copy content from a production AEM as a Cloud Service environment to a staging, development, or [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) environment for such testing.
 
 The content to copy is defined by a content set. A content set consists of a list of JCR paths that contain the mutable content to be copied from a source authoring service environment to a target authoring service environment within the same Cloud Manager program. The following paths are permitted in a content set.
 
@@ -192,6 +191,8 @@ The content copy tool has the following limitations.
 * Running concurrent content copy operations on the same environment is not possible.
 * Up to 50 paths can be specified per content set. There is no limitation on excluded paths.
 * The content copy tool should not be used as a cloning or mirroring tool because it cannot track moved or deleted content on the source.
-* The content copy tool has no versioning capability and cannot automatically detect modified content or newly created content on the source environment in a content set since the last content copy operation.
+* The content copy tool has no versioning capability and cannot automatically detect modified content or newly-created content on the source environment in a content set since the last content copy operation.
   * If you want to update your destination environment with content changes only, since the last content copy operation, you must create a content set. Then, specify the paths on the source instance where changes were made since the last content copy operation.
 * Version information is not included in a content copy.
+
+{{ims-group-profiles}}
