@@ -21,8 +21,7 @@ This editor provides:
 * [Preview](#preview-content-fragment) of the rendered experience delivered by the Content Fragment.
 * Ability to [Publish](#publish-content-fragment) and [Unpublish](#unpublish-content-fragment) from the editor.
 * Ability to [view, and open, associated language copies](#view-language-copies) in the editor.
-* Ability to [view version details](#view-version-history) in the editor.
-  * You can also revert to a selected version.
+* Ability to [view version details](#view-version-history) in the editor. You can also revert to a selected version.
 * Ability to [view, and open, parent references](#view-parent-references).
 * A hierarchical view of the Content Fragment, and its references, using the [Structure tree](#structure-tree).
 
