@@ -25,6 +25,7 @@ The release date for Cloud Manager release 2023.10.0 in AEM as a Cloud Service i
     * The Java versions are being updated to Oracle JDK 8u371 and Oracle JDK 11.0.20.
     * By default, the `JAVA_HOME` environment variable is being updated to `/usr/lib/jvm/jdk1.8.0_371` which contains Oracle JDK 8u371.
     * See the document [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for more details.
+    * [See the OpenJDK advisory](https://openjdk.org/groups/vulnerability/advisories/) for details on the security and bugfixes in these JDK updates.
 
 ## Early Adoption Program {#early-adoption}
 
