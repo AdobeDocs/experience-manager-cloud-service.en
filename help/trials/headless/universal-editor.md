@@ -1,15 +1,15 @@
 ---
-title: Edit in Place with the Universal Editor
-description: Explore howe you can use the Universal Editor to edit any aspect of your content in place and in context in any implementation.
+title: Edit in Context with the Universal Editor
+description: Explore how you can use the Universal Editor to edit any aspect of your content in place and in context in any implementation.
 hidefromtoc: yes
 index: no
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 ---
-# Edit in Place with the Universal Editor {#editing-in-context}
+# Edit in Context with the Universal Editor {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Edit in Place with the Universal Editor"
+>title="Edit in Context with the Universal Editor"
 >abstract="See how your headless apps can leverage the Universal Editor to bring low-friction, in context editing to the fingertips of your authors."
 
 >[!CONTEXTUALHELP]
