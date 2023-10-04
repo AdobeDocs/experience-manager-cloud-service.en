@@ -61,5 +61,3 @@ If you are interested in testing this new feature and sharing your feedback, ple
 The dashboard leverages Google Lighthouse, an open-source, automated tool for improving the quality of your web apps. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more.
 
 Interested in test-driving the new dashboard? Please send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID and we can get you started.
-
-## Bug Fixes {#bug-fixes}
