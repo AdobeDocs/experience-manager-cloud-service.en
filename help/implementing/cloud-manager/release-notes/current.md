@@ -19,7 +19,7 @@ The release date for Cloud Manager release 2023.10.0 in AEM as a Cloud Service i
 
 ## What's New {#what-is-new}
 
-* [You can now safely cancel a pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) in the validate and build image steps.
+* [You can now safely cancel a pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#cancel) in the validate and build image steps.
 * With the October 2023 release of Cloud Manager, Java and Maven versions are being updated via a phased roll-out.
     * Apache Maven is being updated to version 3.8.8.
     * The Java versions are being updated to Oracle JDK 8u371 and Oracle JDK 11.0.20.
