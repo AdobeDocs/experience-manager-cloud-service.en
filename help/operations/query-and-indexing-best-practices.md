@@ -236,7 +236,7 @@ To optimize the performance of this second query, we must create a custom versio
 }
 ```
 
-## JCR Query Cheatsheet {#jcr-query-cheatsheet}
+## JCR Query Cheat Sheet {#jcr-query-cheatsheet}
 
 To support the creation of efficient JCR queries and index definitions, the [JCR Query Cheat Sheet](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet) is available for download and use as a reference during development.
 
