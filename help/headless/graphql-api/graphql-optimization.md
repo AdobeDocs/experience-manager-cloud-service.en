@@ -9,22 +9,7 @@ exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
 >
 >Prior to applying these optimization recommendations consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md) for best performance.
 
-On an AEM instance with a high number of Content Fragments that share the same model, GraphQL list queries can become costly (in terms of resources).
-
-This is because *all* fragments that share a model being used within the GraphQL query have to be loaded into memory. This consumes both time and memory. Filtering, which may reduce the number of items in the (final) result set, can only be applied **after** loading the entire result set into memory.
-
-This can lead to the impression that even small result sets (can) lead to bad performance. However, in reality the slowness is caused by the size of the initial result set, as it has to be handled internally before filtering can be applied.
-
-To reduce performance and memory issues, this initial result set has to be kept as small as possible.
-
-AEM provides two approaches for optimizing GraphQL queries:
-
-* [Hybrid filtering](#hybrid-filtering)
-* [Paging](#paging) (or pagination)
-
-  * [Sorting](#sorting) is not directly related to optimization, but is related to paging
-
-Each approach has its own use-cases and limitations. This document provides information on Hybrid Filtering and Paging, with some [best practices](#best-practices) to optimize GraphQL queries.
+These guidelines are provided to help prevent performance issues with your GraphQL queries. 
 
 ## GraphQL Checklist {#graphql-checklist}
 
@@ -49,7 +34,49 @@ See:
 
 ### GraphQL Query optimization {#graphql-query-optimization}
 
-#### Use GraphQL pagination {#use-graphql-pagination}
+On an AEM instance with a high number of Content Fragments that share the same model, GraphQL list queries can become costly (in terms of resources).
+
+This is because *all* fragments that share a model being used within the GraphQL query have to be loaded into memory. This consumes both time and memory. Filtering, which may reduce the number of items in the (final) result set, can only be applied **after** loading the entire result set into memory.
+
+This can lead to the impression that even small result sets (can) lead to bad performance. However, in reality the slowness is caused by the size of the initial result set, as it has to be handled internally before filtering can be applied.
+
+To reduce performance and memory issues, this initial result set has to be kept as small as possible.
+
+AEM provides two approaches for optimizing GraphQL queries:
+
+* [Hybrid filtering](#use-aem-graphql-hybrid-filtering)
+* [Paging](#use-graphql-pagination) (or pagination)
+
+  * [Sorting](#use-graphql-sorting) is not directly related to optimization, but is related to paging
+
+Each approach has its own use-cases and limitations. This section provides information on Hybrid Filtering and Paging, together with some of the [best practices](#best-practices) for use in optimizing GraphQL queries.
+
+#### Use AEM GraphQL hybrid filtering {#use-aem-graphql-hybrid-filtering}
+
+**Recommendation**
+
+Hybrid filtering combines JCR filtering with AEM filtering.
+
+It applies a JCR filter (in the form of a query constraint) before loading the result set into memory for AEM filtering. This is to reduce the result set loaded into memory, as the JCR filter removes superfluous results prior to this.
+
+>[!NOTE]
+>
+>For technical reasons (for example, flexibility, nesting of fragments), AEM cannot delegate the entire filtering to JCR. 
+
+This technique keeps the flexibility that GraphQL filters provide, while delegating as much of the filtering as possible to JCR.
+
+>[!NOTE]
+>
+>AEM Hybrid Filtering requires updating existing Content Fragments
+
+**Further Reference**
+
+See:
+
+* [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+* [Sample Query with filtering by _tags ID and excluding variations](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+
+#### Use GraphQL pagination {#use-aem-graphql-pagination}
 
 **Recommendation**
 
@@ -73,6 +100,12 @@ GraphQL in AEM provides support for two types of pagination:
   >
   >Backward paging (using `before`/`last` parameters) is not supported.
 
+**Further Reference**
+
+See:
+
+* [Sample Pagination Query using first and after](/help/headless/graphql-api/sample-queries.md#sample-pagination-first-after)
+
 #### Use GraphQL sorting {#use-graphql-sorting}
 
 **Recommendation**
@@ -87,37 +120,33 @@ Sorting can only be efficient if all sort criteria are related to top-level frag
 >
 >Sorting on top-level fields also has an (albeit small) impact on performance.
 
-#### Use AEM GraphQL hybrid filtering {#use-aem-graphql-hybrid-filtering}
+**Further Reference**
+
+See:
+
+* [Sample Query with filtering by _tags ID and excluding variations, and sort by name](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+
+### Cache Strategy {#cache-strategy}
+
+Various methods of caching can also be used for optimization.
+
+#### Enable AEM Dispatcher caching {#enable-aem-dispatcher-caching}
 
 **Recommendation**
 
-Hybrid filtering combines JCR filtering with AEM filtering.
-
-It applies a JCR filter (in the form of a query constraint) before loading the result set into memory for AEM filtering. This is to reduce the result set loaded into memory, as the JCR filter removes superfluous results prior to this.
-
->[!NOTE]
->
->For technical reasons (for example, flexibility, nesting of fragments), AEM cannot delegate the entire filtering to JCR. 
-
-This technique keeps the flexibility that GraphQL filters provide, while delegating as much of the filtering as possible to JCR.
-
->[!NOTE]
->
->AEM Hybrid Filtering requires updating existing content fragments
+[AEM Dispatcher](/help/implementing/dispatcher/overview.md) is the first level cache within the AEM service, before CDN cache. 
 
 **Further Reference**
 
 See:
 
-* [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
-
-### Cache Strategy {#cache-strategy}
+* [GraphQL Persisted Queries - enabling caching in the Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 
 #### Use a Content Delivery Network (CDN) {#use-cdn}
 
 **Recommendation**
 
-GraphQL queries and their JSON responses can be highly cacheable if targeted as GET requests in combination with using a CDN. Uncached requests against origin servers can be contrast be very expensive and slow to process, with potentially further detrimental effects on origin compute resources. 
+GraphQL queries and their JSON responses can be cached if targeted as `GET`` requests when using a CDN. In contrast, uncached requests can be very (resource) expensive and slow to process, with the potential for further detrimental effects on the origin's resources. 
 
 **Further Reference**
 
@@ -129,7 +158,9 @@ See:
 
 **Recommendation**
 
-When using persisted GraphQL queries with a CDN, make sure to set appropriate HTTP cache control headers. Every persisted query can have its own specific set of cache control headers. The headers can be set over API (AEM 6.5, AEM Cloud Service) or the AEM GraphiQL Query UI (AEM Cloud Service). 
+When using persisted GraphQL queries with a CDN, it is recommended to set appropriate HTTP cache control headers. 
+
+Each persisted query can have its own specific set of cache control headers. The headers can be set over the [GraphQL API](/help/headless/graphql-api/content-fragments.md) or the [AEM GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md). 
 
 **Further Reference**
 
@@ -137,18 +168,6 @@ See:
 
 * [Caching your persisted queries](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
 * [Managing cache for your persisted queries](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
-
-#### Enable AEM Dispatcher caching {#enable-aem-dispatcher-caching}
-
-**Recommendation**
-
-AEM Dispatcher is the first level cache, within the AEM service, before CDN cache. 
-
-**Further Reference**
-
-See:
-
-* [GraphQL Persisted Queries - enabling caching in the Dispatcher](/help/headless/deployment/dispatcher-caching.md)
 
 #### Use AEM GraphQL pre-caching {#use-aem-graphql-pre-caching}
 
@@ -162,7 +181,7 @@ Please contact Adobe to enable this capability for your AEM Cloud Service progra
 
 ## Best Practices {#best-practices}
 
-The main goal of all optimizations is to reduce the initial result set. The best practices listed here provide ways to do so. They can (and should) be combined.
+The main goal of all optimization recommendations is to reduce the initial result set. The best practices listed here provide ways to do so. They can (and should) be combined.
 
 ### Filter on top-level properties only {#filter-top-level-properties-only}
 
@@ -255,49 +274,34 @@ There are several other situations where a filter expression cannot be evaluated
 
 ### Minimize the scope of list queries {#minimize-the-scope-of-list-queries}
 
-**Recommendation**
+Keep the scope of list queries as small as possible. The more targeted the scope of a GraphQL list query is, the faster it will process. 
 
-Keep the scope of list queries as small as possible. Plan the scope and size of potential result sets. 
+An overly broad and general list query runs the risk of an excessively large set of JSON results (possibly running into GBs). 
 
-The more targeted the scope of GraphQL list queries is, the faster such queries will process. 
-
-Don't unintentionally run into tens of GB size JSON results or more due to overly broad and general list query scopes 
-
-Plan for and anticipate content growth and its effect on GraphQL queries.
-
-**Further Reference**
+Plan the scope and size of potential result sets, as well as planning for content growth and its effect on GraphQL queries.
 
 ### Use folders {#use-folders}
 
-**Recommendation**
+Organize your content into folders, and use those folders for filtering as well.
 
-Organize content in folders, and use folders for filtering as well
-
-To help GraphQL queries be as targeted as possible, avoid queries searching overly large amounts of content on the same hierarchical level, i.e. all in the same folder. Rather structure content into clear subfolders and use this content structure for making queries more targeted.
-
-**Further Reference**
+To help GraphQL queries be as targeted as possible, avoid queries searching excessively large amounts of content on the same hierarchical level; that means, all in the same folder. To avoid this, structure your content into sub-folders, then use this content structure to target your queries more precisely.
 
 ### Minimize Content Fragment Nesting {#minimize-content-fragment-nesting}
 
-**Recommendation**
+Nesting Content Fragments is a great way to model custom content structures. You can even have a fragment with a nested fragment, that has a nested fragment, that has...and so on. 
 
-Keep Content Fragment nesting level low
+However, creating a structure with too many levels can increase the processing times for a GraphQL query, as GraphQL has to traverse the entire hierarchy of all nested Content Fragments. 
 
-Nesting content fragments is a great way to model custom content structures. But nesting fragments too deep, with potentially additional nesting of respective child fragments, can increase GraphQL query processing times, as GraphQL has to traverse the hierarchy of ever content content fragment. Deep nesting can also have adverse effects on content governance. In general, aim to keep content fragment nesting below max. five or six levels.
+Deep nesting can also have adverse effects on content governance. In general, it is recommended to limit Content Fragment nesting to below five or six levels.
 
 ### Do not output all formats (Multi line text elements) {#do-not-output-all-formats}
 
-**Recommendation**
+AEM GraphQL can return text, authored in the **[Multi line text](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** data type, in multiple formats: Rich Text, Simple Text, and Markdown. 
 
-AEM GraphQL can return text authored in the Rich Text Editor of AEM's Content Fragment Editor in multiple formats - rich text, simple text, and markdown. Outputting all three formats grows the size of text output in JSON by factor 3x. That combined with generally large result sets from very broad queries can produce very large JSON responses that also take a long time to compute. Better output only the text formats in JSON that are required for rendering the content.
-
-**Further Reference**
+Outputting all three formats increases the size of text output in JSON by a factor of three. That, combined with generally large result sets from very broad queries, can produce very large JSON responses that therefore take a long time to compute. It is better to limit the output to only the text formats required for rendering the content.
 
 ### Test your queries {#test-your-queries}
 
-**Recommendation**
+Processing GraphQL queries is similar to processing search queries, and is significantly more complex than simple GET-all-content API requests. 
 
-Processing GraphQL queries is similar to processing search queries and is significantly more complex than simple GET-all-content API request. Carefully planning for, testing, and optimizing queries in controlled non-production environments is key for later success when used in production. 
-
-**Further Reference**
-
+Carefully planning, testing, and optimizing your queries in a controlled non-production environment is key for later success when used in production. 
