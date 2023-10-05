@@ -19,6 +19,7 @@ The name "root" is never used in a query; it's implicit.
 * **`p.limit`** - number indicating the page size.
 * **`p.guessTotal`** - recommended: avoid calculating the full result total, which can be costly. Either a number indicating the maximum total to count up to (for example 1000, a number that gives users enough feedback on the rough size and exact numbers for smaller results). Or, `true` to count only up to the minimum necessary `p.offset` + `p.limit`.
 * **`p.excerpt`** - if set to `true`, include full text excerpt in the result.
+* **`p.indexTag`** - if set will include an index tag option in the query (see [Query Option Index Tag](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag).
 * **`p.hits`** - (only for the JSON servlet) select the way the hits are written as JSON, with these standard ones (extensible by way of the ResultHitWriter service).
   * **`simple`** - minimal items like `path`, `title`, `lastmodified`, `excerpt` (if set).
   * **`full`** - sling JSON rendering of the node, with `jcr:path` indicating the path of the hit. By default, just lists the direct properties of the node, include a deeper tree with `p.nodedepth=N`, with 0 meaning the entire, infinite subtree. Add `p.acls=true` to include the JCR permissions of the current session on the given result item (mappings: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
