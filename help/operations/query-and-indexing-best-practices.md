@@ -102,6 +102,7 @@ Such a limit also prevents the query engine of hitting the **traversal limit** o
 See the section [Queries with large results](#queries-with-large-result-sets) of this document if a potentially large result set must be processed completely.
 
 ## Query Performance Tool {#query-performance-tool}
+
 The Query Performance Tool (located at `/libs/granite/operations/content/diagnosistools/queryPerformance.html` and available via the [Developer Console in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) provides -
   * A list of any 'Slow Queries'; currently defined as those reading / scanning more than 5000 rows.
   * A list of 'Popular Queries'
@@ -124,9 +125,11 @@ These tables help identifying queries which are not fully indexed (see [Use an I
 The `Reset Statistics` option is provided to remove all existing statistics collected in the tables. This allows the execution of a particular query (either via the application itself or the Explain Query tool) and the analysis of the execution statistics. 
 
 ### Explain Query
+
 The Explain Query tool allows developers to understand the Query Execution Plan (see [Reading the Query Execution Plan](#reading-query-execution-plan)), including details of any indexes used when executing the query. This can be used to understand how effectively a query is indexed in order to predict, or retrospectively analyse its performance.
 
 #### Explaining a query
+
 In-order to explain a query, do the following:
   * Select the appropriate query language using the `Language` dropdown.
   * Enter the query statement into the `Query` field.
@@ -154,9 +157,11 @@ This popup includes details of -
 The Query Execution Plan contains everything required to predict (or explain) the performance of a particular query. By comparing the restrictions and ordering in the original JCR (or Query Builder) query to the query executed in the underlying index (Lucene, Elastic or Property) we can understand how efficiently the query will be executed.
 
 Consider the following query -
+
 ```
 /jcr:root/content/dam//element(*, dam:Asset) [jcr:content/metadata/dc:title = "My Title"] order by jcr:created
 ```
+
 ...which contains -
   * 3 restrictions
     * Nodetype (`dam:Asset`)
@@ -165,13 +170,17 @@ Consider the following query -
   * Ordering by the `jcr:created` property
 
 Explaining this query results in the following plan -
+
 ```
 [dam:Asset] as [a] /* lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +jcr:content/metadata/dc:title:My Title ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }] where ([a].[jcr:content/metadata/dc:title] = 'My Title') and (isdescendantnode([a], [/content/dam])) */
 ```
+
 Within this plan, the section describing the query executed in the underlying index is -
+
 ```
 lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +jcr:content/metadata/dc:title:My Title ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]
 ```
+
 This tells us that - 
   * An index is used to execute this query -
     * In this case the Lucene index `/oak:index/damAssetLucene-9` will be used, so the remaining information is in Lucene Query Syntax.
@@ -188,17 +197,23 @@ This tells us that -
 Such a query is likely to perform well, since the results returned from the index query will not be further filtered in the query engine (aside from Access Control filtering). However, it is still possible for such a query to execute slowly if best practices are not followed - see [Index Traversal](#index-traversal) below. 
 
 If we consider a different query -
+
 ```
 /jcr:root/content/dam//element(*, dam:Asset) [jcr:content/metadata/myProperty = "My Property Value"] order by jcr:created
 ```
+
 Explaining this query results in the following plan -
+
 ```
 [dam:Asset] as [a] /* lucene:damAssetLucene-9-custom-1(/oak:index/damAssetLucene-9-custom-1) :ancestors:/content/dam ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }] where ([a].[jcr:content/metadata/myProperty] = 'My Property Value') and (isdescendantnode([a], [/content/dam])) */
 ```
+
 Within this plan, the section describing the query executed in the underlying index is -
+
 ```
 lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]
 ```
+
 This tells us that only 2 (of the 3) restrictions are handled by the index -
       * The nodetype restriction
         * implicit, because `damAssetLucene-9` only indexes nodes of type dam:Asset.
@@ -212,6 +227,7 @@ This query exectuion plan will result in every Asset beneath `/content/dam` bein
 If only a small % of Assets match the restriction `jcr:content/metadata/myProperty = "My Property Value"`, the query will need to read a large number of nodes in order to (attempt to) fill the requested 'page' of results. This can result in a poorly performing query, which will be shown as having a low `Read Optimization` score in the Query Performance tool). 
 
 To optimize the performance of this second query, we must create a custom version of the `damAssetLucene-9` index (`damAssetLucene-9-custom-1`) and add the following property definition - 
+
 ```
 "myProperty": {
   "jcr:primaryType": "nt:unstructured",
@@ -227,6 +243,7 @@ To support the creation of efficient JCR queries and index definitions, the [JCR
 It contains sample queries for QueryBuilder, XPath, and SQL-2, covering multiple scenarios which behave differently in terms of query performance. It also provides recommendations for how to build or customize Oak indexes. The content of this Cheat Sheet applies to AEM as a Cloud Service and AEM 6.5.
 
 ## Index Definition Best Practices {#index-definition-best-practices}
+
 Below are some best practices to consider when defining or extending indexes. For more information, see [Oak Lucene Index documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html). 
 * For nodetypes which have existing indexes (such as `dam:Asset` or `cq:Page`) prefer extension of OOTB indexes to the addition of new indexes.
   * Adding new indexes - particularly fulltext indexes - on the `dam:Asset` nodetype is strongly discouraged.
@@ -260,10 +277,13 @@ With this log snippet you can determine:
 With this information, it is possible to optimize this query using the methods described in the [Optimizing Queries](#optimizing-queries) section of this document.
 
 ### Index Traversal {#index-traversal}
+
 Queries which use an index, but yet still read large numbers of nodes are logged with a message similar to the following (note the term `Index-Traversed` rather than `Traversed`).
+
 ```text
 05.10.2023 10:56:10.498 *WARN* [127.0.0.1 [1696502982443] POST /libs/settings/granite/operations/diagnosis/granite_queryperformance.explain.json HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.search.spi.query.FulltextIndex$FulltextPathCursor Index-Traversed 60000 nodes with filter Filter(query=select [jcr:path], [jcr:score], * from [dam:Asset] as a where isdescendantnode(a, '/content/dam') order by [jcr:content/metadata/unindexedProperty] /* xpath: /jcr:root/content/dam//element(*, dam:Asset) order by jcr:content/metadata/unindexedProperty */, path=/content/dam//*)
 ```
+
 This can occur for a number of reasons -
 1. Not all the restrictions in the query can be handled at the index. 
    * In this case, a superset of the final result set is being read from the index and subsequently filtered in the query engine.
