@@ -19,16 +19,15 @@ The release date for Cloud Manager release 2023.10.0 in AEM as a Cloud Service i
 
 ## What's New {#what-is-new}
 
-* [You can now safely cancel a pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#cancel) in the validate and build image steps.
 * Improvements to [indexing](/help/operations/indexing.md) have reduced pipeline duration when deploying new indexes.
   * Improvements vary depending on content profile.
 * Automatic [updates for development environments](/help/implementing/cloud-manager/manage-environments.md#updating-environments) are enabled by default for new programs, saving you the time having to execute updates manually.
   * This update will be rolled out in a phased manner.
-* With the October 2023 release of Cloud Manager, Java and Maven versions are being updated via a phased roll-out.
-    * Apache Maven is being updated to version 3.8.8.
-    * The Java versions are being updated to Oracle JDK 8u371 and Oracle JDK 11.0.20.
-    * By default, the `JAVA_HOME` environment variable is being updated to `/usr/lib/jvm/jdk1.8.0_371` which contains Oracle JDK 8u371.
-    * See the document [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for more details.
+*  With the October 2023 release of Cloud Manager, Java versions are being updated via a phased roll-out.
+    * The minor versions for Java 8 and 11 and Maven have been updated and will be rolled out in a phased manner over the next 2 months. The new version has multiple security fixes and bugfixes. The new versions are:
+    * *Maven: 3.8.8*
+    * *Java  8 version: /usr/lib/jvm/jdk1.8.0_371*
+    * *Java 11 version: /usr/lib/jvm/jdk-11.0.20*
     * [See the OpenJDK advisory](https://openjdk.org/groups/vulnerability/advisories/) for details on the security and bugfixes in these JDK updates.
 
 ## Early Adoption Program {#early-adoption}
