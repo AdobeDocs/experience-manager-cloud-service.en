@@ -1,12 +1,11 @@
 ---
-title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.09.0
-description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.09.0
+title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.10.0
+description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.10.0
 feature: Release Information
-exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
 ---
-# Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.09.0 {#release-notes}
+# Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.10.0 {#release-notes}
 
-This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.09.0.
+This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.10.0.
 
 ## Content Transfer Tool {#ctt-release}
 
@@ -16,7 +15,4 @@ The Release Date for Content Transfer Tool v3.0.0 is September 07, 2023.
 
 ### What's New {#what-is-new-ctt}
 
-The Content Transfer Tool has been significantly improved to provide the following benefits:
-* Reduced transfer time when migrating a subset of a content repository by leveraging AzCopy to copy only the required blob ids instead of copying all blob ids
-* Faster differential content top-ups using Oak-upgrade
-* Improved robustness by separating the indexing process from the content ingestion process. In case of a failed indexing, content will not have to be ingested again. Only indexing will automatically re-start, saving significant time and effort
+Changes have been made to the content ingestion process - It is no longer required to submit a Customer Care/Support ticket to disable the AEM Version Updates on the destination environment. This process is now automated. For more details, refer to [AEM Version Updates and Ingestions](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#aem-version-updates-and-ingestions)
