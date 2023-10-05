@@ -272,20 +272,6 @@ There are several other situations where a filter expression cannot be evaluated
 
 * Filter expressions on a `Calendar`, `Date` or `Time` value that use the `NOT_AT` operator.
 
-### Minimize the scope of list queries {#minimize-the-scope-of-list-queries}
-
-Keep the scope of list queries as small as possible. The more targeted the scope of a GraphQL list query is, the faster it will process. 
-
-An overly broad and general list query runs the risk of an excessively large set of JSON results (possibly running into GBs). 
-
-Plan the scope and size of potential result sets, as well as planning for content growth and its effect on GraphQL queries.
-
-### Use folders {#use-folders}
-
-Organize your content into folders, and use those folders for filtering as well.
-
-To help GraphQL queries be as targeted as possible, avoid queries searching excessively large amounts of content on the same hierarchical level; that means, all in the same folder. To avoid this, structure your content into sub-folders, then use this content structure to target your queries more precisely.
-
 ### Minimize Content Fragment Nesting {#minimize-content-fragment-nesting}
 
 Nesting Content Fragments is a great way to model custom content structures. You can even have a fragment with a nested fragment, that has a nested fragment, that has...and so on. 
