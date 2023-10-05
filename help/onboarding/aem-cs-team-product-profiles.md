@@ -3,6 +3,7 @@ title: AEM as a Cloud Service Team and Product Profiles
 description: Learn how AEM as a Cloud Service team and product profiles can grant and limit access to your licensed Adobe solutions.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 ---
+
 # AEM as a Cloud Service Team and Product Profiles {#product-profiles}
 
 Learn how AEM as a Cloud Service team and product profiles can grant and limit access to your licensed Adobe solutions.
@@ -48,10 +49,18 @@ Cloud Manager has pre-configured product profiles which can be thought of as rol
 
 Each of the product profiles have specific permissions associated with them.
 
-* **Business Owner** - In this role you have the permission to add a new program or edit a program, add or update an environment, deploy code to AEM environment, or execute code quality checks.
-* **Deployment Manager** - In this role, you have the permission to add or update an environment, run any pipeline, and deploy code to AEM environment, or execute code quality checks.
-* **Developer** - In this role, you have the permission to generate personal access tokens to access git.
-* **Program Manager** - In this role, you have the permission to schedule pipelines, override the 3-tier quality gates, and provide production approval.
+* **Business Owner**
+  * In this role you have the permission to add a new program or edit a program, add or update an environment, deploy code to AEM environment, or execute code quality checks.
+  * This user is responsible for defining KPIs, approving production deployments, and overriding important 3-tier failures when necessary.
+* **Deployment Manager**
+  * In this role, you have the permission to add or update an environment, run any pipeline, and deploy code to AEM environment, or execute code quality checks.
+  * This user manages deployment operations and uses Cloud Manager to execute staging/production deployments, edit CI/CD pipelines, approve important 3-tier failures when necessary, and can access the git repository.
+* **Developer**
+  * In this role, you have the permission to generate personal access tokens to access git.
+  * This user develops and tests custom application code and primarily uses Cloud Manager to view deployment status and can access the git repository for code commits.
+* **Program Manager**
+  * In this role, you have the permission to schedule pipelines, override the 3-tier quality gates, and provide production approval.
+  * This user uses Cloud Manager to perform team setup, review status, view KPIs, and can approve important 3-tier failures when necessary.
 
 A user can be assigned to multiple product profiles. For example, assigning both **Business Owner** and **Deployment Manage**r roles to a user gives them the sum of these permissions. 
 
