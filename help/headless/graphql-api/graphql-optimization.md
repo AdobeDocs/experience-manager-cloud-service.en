@@ -146,7 +146,7 @@ See:
 
 **Recommendation**
 
-GraphQL queries and their JSON responses can be cached if targeted as `GET`` requests when using a CDN. In contrast, uncached requests can be very (resource) expensive and slow to process, with the potential for further detrimental effects on the origin's resources. 
+GraphQL queries and their JSON responses can be cached if targeted as `GET` requests when using a CDN. In contrast, uncached requests can be very (resource) expensive and slow to process, with the potential for further detrimental effects on the origin's resources. 
 
 **Further Reference**
 
