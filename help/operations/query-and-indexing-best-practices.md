@@ -299,7 +299,7 @@ This can occur for a number of reasons -
 | The use of a large or unbounded limit in Query Builder (ie `p.limit=-1`) |Use an appropriate value for `p.limit` (ideally 1000 or below) |
 | The use of a filtering predicate in Query Builder which is filtering large numbers of results from the underlying JCR query | Replace filtering predicates with restrictions which can be applied in the underlying JCR query |
 | The use of a Comparator-based sorting in QueryBuilder |Replace with property-based ordering in the underlying JCR query (using properties indexed as ordered) |
-| Filtering of large numbers of results due to Access Control |Apply additioanal indexed property or path restriction to the query to mirror the Access Control |
+| Filtering of large numbers of results due to Access Control |Apply additional indexed property or path restriction to the query to mirror the Access Control |
 | The use of 'offset pagination' with a large offset |Consider using [Keyset Pagination](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)|
 | Iteration of large or unbounded numbers of results |Consider using [Keyset Pagination](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)|
 | Incorrect index chosen |Use Tags in query and index definition to ensure the expected index is used| 
