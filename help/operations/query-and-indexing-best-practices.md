@@ -118,7 +118,7 @@ The 'Slow Queries' and 'Popular Queries' tables include -
     * A query for which every restriction (and any ordering) can be handled at the index will typically score 90% or above.
   * Details of the maximum number of rows -
     * Read - generally indicating tha row was included as part of a result set.
-    * Scanned - indicating that the row was included in the results from the underlying index query (in the case of an indexed query) or read from the nodestore (in the case of a repository traversal). 
+    * Scanned - indicating that a row was included in the results from the underlying index query (in the case of an indexed query) or read from the nodestore (in the case of a repository traversal). 
 
 These tables help identifying queries which are not fully indexed (see [Use an Index](#use-an-index) or are reading too many nodes (see also [Repository Traversal](#repository-traversal) and [Index Traversal](#index-traversal)). Such queries will be highlighted - with the appropriate areas of concern marked in red.
 
