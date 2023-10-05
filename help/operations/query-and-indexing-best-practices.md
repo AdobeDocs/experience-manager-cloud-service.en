@@ -233,7 +233,7 @@ Below are some best practices to consider when defining or extending indexes. Fo
 * When adding new indexes, use an index tag in the index definition (and associated query) and `selectionPolicy = tag` to ensure that the index is only used for the intended queries.
 * Ensure `queryPaths` and `includedPaths` are both provided (typically with the same values).
 * Use `excludedPaths` to exclude paths which will not contain useful results.
-* Use `analyzed` properties only when required - ie when you need to use a fulltext query restriction against only that property.
+* Use `analyzed` properties only when required, for example when you need to use a fulltext query restriction against only that property.
 * Always specify `async=async,nrt`, `compatVersion=2` and `evaluatePathRestrictions = true`. 
 * Only specify `nodeScopeIndex = true` if you require a nodescope fulltext index.
 
