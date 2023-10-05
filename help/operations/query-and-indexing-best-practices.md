@@ -112,7 +112,7 @@ The Query Performance Tool (located at `/libs/granite/operations/content/diagnos
 
 The 'Slow Queries' and 'Popular Queries' tables include -
   * The query statement itself.
-  * Details of the last Thread which executed the query, allowing the Page or application feature executing the query to be identified.
+  * Details of the last Thread which executed the query, allowing the page or application feature executing the query to be identified.
   * A 'Read Optimization' score for the query.
     * This is calculated as the ratio between the number of rows / nodes scanned in order to execute the query and the number of matching results read.
     * A query for which every restriction (and any ordering) can be handled at the index will typically score 90% or above.
