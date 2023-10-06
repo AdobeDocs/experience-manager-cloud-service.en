@@ -1,8 +1,6 @@
 ---
-title: Configure shared queues
-seo-title: Configure shared queues
+title: How to configure shared queues?
 description: Learn how to use shared queues for Forms-centric workflows on [!DNL AEM Forms] on OSGi.
-seo-description: Learn how to use shared queues for Forms-centric workflows on [!DNL AEM Forms] on OSGi.
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
