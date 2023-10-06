@@ -286,6 +286,10 @@ AEM GraphQL can return text, authored in the **[Multi line text](/help/sites-clo
 
 Outputting all three formats increases the size of text output in JSON by a factor of three. That, combined with generally large result sets from very broad queries, can produce very large JSON responses that therefore take a long time to compute. It is better to limit the output to only the text formats required for rendering the content.
 
+### Modifying Content Fragments {#modifying-content-fragments}
+
+Only modify Content Fragments, and their resources, using the AEM UI or APIs. Do not make modifications directly in JCR.
+
 ### Test your queries {#test-your-queries}
 
 Processing GraphQL queries is similar to processing search queries, and is significantly more complex than simple GET-all-content API requests. 
