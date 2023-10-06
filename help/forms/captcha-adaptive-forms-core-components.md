@@ -2,13 +2,10 @@
 title: Use Google reCAPTCHA in an AEM Adaptive Form
 description: Enhance form security with Google reCAPTCHA service effortlessly. Step-by-step guide inside!
 topic-tags: Adaptive Forms, author
-hide: yes
-hidefromtoc: yes
-Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
+keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
+exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
 ---
 # Use Google reCAPTCHA in an AEM Adaptive Form based on Core Components {#using-reCAPTCHA-in-adaptive-forms}
-
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 | Applies to | Article link |
 | -------- | ---------------------------- |
@@ -48,13 +45,9 @@ To connect your AEM Forms environment with reCAPTCHA service by Google
     1. Select a Configuration Container, created or updated in previous section. Tap **[!UICONTROL Create]**.
     1. Specify **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, and **[!UICONTROL Secret Key]** for reCAPTCHA service (Obtained in Step 1). Tap **[!UICONTROL Create]**.
 
-
     ![Configure the Cloud Service to connect your AEM Forms environment with reCAPTCHA service by Google](/help/forms/assets/captcha-configuration.gif)
-
-
     
    Once the reCAPTCHA service is configured, it is available for use in an Adaptive Form. For more information, see [using Google reCAPTCHA in an Adaptive Form](#using-reCAPTCHA).
-
 
 ## Use Google reCAPTCHA in an Adaptive Form {#using-reCAPTCHA}
 
