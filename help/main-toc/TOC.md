@@ -81,6 +81,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.9.0](/help/implementing/cloud-manager/release-notes/2023/2023-9-0.md)
       + [Release Notes for 2023.8.0](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
       + [Release Notes for 2023.7.0](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
       + [Release Notes for 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
@@ -130,6 +131,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + Release Notes for Migration Tools {#migration-tools}
     + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
       + [Release Notes for 2023.8.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-08-0.md)
       + [Release Notes for 2023.7.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-07-0.md)
       + [Release Notes for 2023.6.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-06-0.md)
@@ -841,6 +843,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [Experience Audit Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md)
     + [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md)
+    + [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md)
     + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)
     + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
     + [Notifications](/help/implementing/cloud-manager/notifications.md)
