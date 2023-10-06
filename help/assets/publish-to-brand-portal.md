@@ -25,7 +25,9 @@ If you make subsequent modifications to the original asset, folder, or collectio
 
 >[!NOTE]
 >
->Adobe recommends staggered publishing, preferably during non-peak hours, so that the AEM author does not occupy excess resources.
+>Adobe recommends staggered publishing, preferably during non-peak hours, so that the AEM author does not occupy excess resources. 
+>Assets should be published in batches. Recommendation for batch size is 15K.
+> For AEM CS, transfer rate is 1000 assets per hour. Rate is observed with average size of 10 MB assets.
 
 ## Publish assets to Brand Portal {#publish-assets-to-bp}
 
