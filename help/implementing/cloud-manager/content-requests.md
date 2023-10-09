@@ -8,15 +8,17 @@ description: If you have purchased content request licenses from Adobe, learn ab
 
 ## Variances of Cloud Service Content Requests{#content-requests-variances}
 
-Content Requests have variances with an organization's Analytics reporting tools as summarized in the following table.
+Content Requests can have variances with an organization's Analytics reporting tools as summarized in the following table. In general, Analytics tools gathering data via client-side instrumentation <b>should not be used</b> to report on the number of content requests for a given site, simply because they often depend on end user consent to be triggered, therefore missing out on a significant fraction of the traffic. Analytics tools gathering data server-side in log files, or CDN reports for customers adding their own CDN on top of AEM as a Cloud Service, will provide better counts. For reporting on Page Views as well as their associated performance, the Adobe RUM Data Service is the Adobe recommended option. 
 
 |Reason For Variance|Explanation|
 |---|---|
-|Tagging|All pages that are tracked as Adobe Experience Manager (AEM) content requests may or may not be tagged with Analytics tracking. All API calls that are tracked as AEM content requests are not tagged by an organization's Analytics tool.<br>Pages or API calls may be tagged to track actions or unique page views instead of all views.|
+|End user consent|Analytics tools relying on client-side instrumention often depend on end user consent to be triggered. This could represent the majority of the traffic not being tracked. For customers who want to measure content requests on their own, it is recommended to rely on analytics tools gathering data server-side or CDN reports.|
+|Tagging|All pages or API calls that are tracked as Adobe Experience Manager (AEM) content requests may not be tagged with Analytics tracking.|
 |Tag Management Rules|Tag management rule settings may result in various data collection configurations on a page, resulting in some combination of discrepancies with content request tracking.|
 |Bots|Unknown bots that have not been pre-identified and removed by AEM may cause tracking discrepancies.|
 |Report Suites|Pages that are part of the same AEM instance and domain may send data to different Analytics report suites.|
 |Third-Party Monitoring and Security Tools|Monitoring and security scanning tools may generate content requests for AEM that are not tracked in Analytics reports.|
+|API Access|Programmatic access to pages or to Adobe Experience Manager APIs may generate content requests for AEM that are not tracked in Analytics reports.|
 |Prefetch Requests|Using a prefetch service to pre-load pages to increase speed can cause significant content request traffic increases.|
 |DDOS|While Adobe makes every effort to automatically detect and filter out traffic from DDOS attacks, there is no guarantee that all possible DDOS attacks are detected|
 |Traffic Blockers|Using a tracker blocker in a browser may opt out some requests from being tracked.|
@@ -26,9 +28,11 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 
 ## Understanding Cloud Service Content Requests {#about-content-request}
 
-Content requests are tracked on Adobe Experience Manager (AEM) as a Cloud Service's Edge servers. Origin traffic does not count towards content requests. The CDN built into AEM as a Cloud Service tracks valid HTML and JSON requests.
+Content requests are automatically tracked at the edge of Adobe Experience Manager (AEM) as a Cloud Service, via automated analysis of the log files originating from the AEM as a Cloud Service CDN, isolating the requests returning HTML (text/html) or JSON (application/json) content from the CDN, and based on a number of inclusion and exclusion rules detailed below. A content request happens independently from the returned content being served from the CDN caches or going back to the origin of the CDN (AEM's dispatchers).
 
-AEM also has rules in place to exclude well-known bots, including well-known services visiting the site regularly to refresh their search index or service.
+For customers that being their own CDN on top of AEM as a Cloud Service, this tracking will result in numbers that cannot be used to compare with the licensed content requests, that will have to be measured by the customer at the edge of the outer CDN.
+
+There are rules in place to exclude well-known bots, including well-known services visiting the site regularly to refresh their search index or service.
 
 ### Types of included content requests{#included-content-requests}
 
@@ -51,12 +55,12 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 | HTTP Code 300-399 | Excluded | These are good requests that either check if something has changed on the server, or redirect the request to another resource. They do not contain content itself, therefore they are not billable.|
 | Requests going to /libs/* | Excluded | AEM internal JSON requests, such as the CSRF token that is not billable.|
 | Traffic from DDOS attacks | Excluded | DDOS protection. AEM does auto-detect some of the DDOS attacks and blocks them. DDOS attacks if detected are not billable.<br><br>Auto-detected DDOS types:<br>&bull; DDOSBlockedCiphersSHA<br>&bull; DDOSBlockedPattern<br>&bull; DDOSSuspiciousRequest |
-| AEM as a Cloud Service NewRelic Monitoring | Excluded | AEM as a Cloud Service global monitoring.<br><br>User Agent: Mozilla/5.0 (X11; Linux&reg; x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/*|
+| AEM as a Cloud Service NewRelic Monitoring | Excluded | AEM as a Cloud Service global monitoring.|
 | URL for customers to monitor their Cloud Service program | Excluded | Recommended URL to externally monitor the availability.<br><br>`/system/probes/health`|
-| AEM as a Cloud Service Pod Warm-up Service | Excluded | User Agent: skyline-service-warmup/1.4|
+| AEM as a Cloud Service Pod Warm-up Service | Excluded | User Agent: skyline-service-warmup/1.*|
 | Well-known search engines, social networks, and HTTP libraries (tagged by Fastly) | Excluded | Well-known services visiting the site regularly to refresh their search index or service:<br><br>Examples:<br>&bull; AddSearchBot<br>&bull; AhrefsBot<br>&bull; Applebot<br>&bull; Ask Jeeves Corporate Spider<br>&bull; Bingbot<br>&bull; BingPreview<br>&bull; BLEXBot<br>&bull; BuiltWith<br>&bull; Bytespider<br>&bull; CrawlerKengo<br>&bull; Facebookexternalhit<br>&bull; Google AdsBot<br>&bull; Google AdsBot Mobile<br>&bull; Googlebot<br>&bull; Googlebot Mobile<br>&bull; lmspider<br>&bull; LucidWorks<br>&bull; MJ12bot<br>&bull; Pingdom<br>&bull; Pinterest<br>&bull; SemrushBot<br>&bull; SiteImprove<br>&bull; StashBot<br>&bull; StatusCake<br>&bull; YandexBot|
 | Exclude Commerce Integration Framework calls | Excluded | These are requests made to AEM that get forwarded to the Commerce Integration Framework&mdash;the URL starts with `/api/graphql`&mdash;to avoid double counting, they are not billable for Cloud Service.|
 | Exclude `manifest.json` | Excluded | Manifest is not an API call, it is here to provide information on how to install web sites on desktop or mobile phone. Adobe should not count JSON request to `/etc.clientlibs/*/manifest.json`|
-| Exclude `favicon.ico` | Excluded | For customers with SAML auth, the favicon request made by browsers is delivered as HTML and counted as a content request. Filtering out `favicon.ico` is recommended.|
+| Exclude `favicon.ico` | Excluded | While the returned content should not be HTML or JSON, we are observing that in some scenarios like SAML authentication flows, favicons can be returned as HTML therefore are explicitly excluded from the count.|
 
 
