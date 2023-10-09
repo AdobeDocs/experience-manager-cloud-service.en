@@ -20,19 +20,19 @@ Summarized below are the continuous improvements for maintenance release 13804, 
 * GRANITE-46618: Publish (Replication) - Improve Publish startup speed through replication status messages batching.
 * GRANITE-47136: Indexing (Download) - Improved download speed of new parallel index downloader (by disabling checksum validation).
 * GRANITE-47211: Publish (Infra) - Improved decoupling of Publish tier deployments (by storing and fetching segment store revision name using mounted secrets).
-* GRANITE-47267:  Update to Apache Felix Http Jetty 4.2.18 (includes bug fix for request parameter handling (FELIX-6625) with performance improvements for local and RDE developments).
-* GRANITE-47247: Update to Sling Servlets Resolver 2.9.14 with performance improvement in servlet resolution.
+* GRANITE-47267:  Update to Apache Felix Http Jetty 4.2.18 (includes bug fix for request parameter handling ([FELIX-6625](https://issues.apache.org/jira/browse/FELIX-6625)) with performance improvements for local and RDE developments).
+* GRANITE-47247: Update to Sling Servlets Resolver 2.9.14 with performance improvements in servlet resolution.
 
 ### Fixed Issues {#fixed-issues-13804}
 
 * GRANITE-47376: Author (Infra) - Fix for DiscoveryTopologyUndefined errors after rolling restart.
-* CQ-4353436: AEM Web Console (Sling) - Empty configurations in ServiceUserMapperImpl Validators (Principal/User) breaks AEM Instance (SLING-11912).
+* CQ-4353436: AEM Web Console (Sling) - Empty configurations in ServiceUserMapperImpl Validators (Principal/User) breaks AEM Instance ([SLING-11912](https://issues.apache.org/jira/browse/SLING-11912)).
 * SKYOPS-63925: Transform Job - Avoid TransformJob failures with JDK 11 - ZipException: Invalid CEN header errors (with disableZip64ExtraFieldValidation JVM flag).
 * SKYOPS-63361: Transform Job (Logging) Improved logging with Transform Jobs (CUSTOMER_EXTRACT substep).
 * SKYOPS-64103: FACT Tool (Logging) - Reduce, or truncate Clientlib compilation error and warning messages.
 * SKYOPS-65109: FACT Tool (Error Handling) - Content Packages with unresolved dependencies results in a properly reported error.
 * SKYOPS-65368: FACT Tool (Error Handling) - Tool runs into endless inclusion cycle and eventually times out on circular embeds of Clientlibs.
-* SKYOPS-64031: RDE - ComponentCacheImpl can get into inconsistent state due to duplicate ResourceResolverFactory registration (SLING-12019).
+* SKYOPS-64031: RDE - ComponentCacheImpl can get into inconsistent state due to duplicate ResourceResolverFactory registration ([SLING-12019](https://issues.apache.org/jira/browse/SLING-12019)).
 * ASSETS-29105: RDE - Restriction provider missing from SecurityProviderRegistration requiredServicePids in RDE feature model.
 * GRANITE-44674: CoralUI - Datepicker required field functionality is incorrect.
 
