@@ -251,7 +251,7 @@ Below are some best practices to consider when defining or extending indexes. Fo
 * Ensure `queryPaths` and `includedPaths` are both provided (typically with the same values).
 * Use `excludedPaths` to exclude paths which will not contain useful results.
 * Use `analyzed` properties only when required, for example when you need to use a fulltext query restriction against only that property.
-* Always specify `async=async,nrt`, `compatVersion=2` and `evaluatePathRestrictions = true`. 
+* Always specify `async = [ async, nrt ] `, `compatVersion = 2` and `evaluatePathRestrictions = true`. 
 * Only specify `nodeScopeIndex = true` if you require a nodescope fulltext index.
 
 ## Queries with Large Result Sets {#queries-with-large-result-sets}
