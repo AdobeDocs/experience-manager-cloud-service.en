@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 ---
 # Maintenance Release Notes {#maintenance-release-notes}
 
-The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service associated with 2023.10.0 feature activation.
+The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
 ## Release 13804 {#release-13804}
 
