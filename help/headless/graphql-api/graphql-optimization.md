@@ -32,6 +32,59 @@ See:
 * [Persisted GraphQL queries](/help/headless/graphql-api/persisted-queries.md).
 * [Learning to use GraphQL with AEM - Sample Content and Queries](/help/headless/graphql-api/sample-queries.md)
 
+### Cache Strategy {#cache-strategy}
+
+Various methods of caching can also be used for optimization.
+
+#### Enable AEM Dispatcher caching {#enable-aem-dispatcher-caching}
+
+**Recommendation**
+
+[AEM Dispatcher](/help/implementing/dispatcher/overview.md) is the first level cache within the AEM service, before CDN cache. 
+
+**Further Reference**
+
+See:
+
+* [GraphQL Persisted Queries - enabling caching in the Dispatcher](/help/headless/deployment/dispatcher-caching.md)
+
+#### Use a Content Delivery Network (CDN) {#use-cdn}
+
+**Recommendation**
+
+GraphQL queries and their JSON responses can be cached if targeted as `GET` requests when using a CDN. In contrast, uncached requests can be very (resource) expensive and slow to process, with the potential for further detrimental effects on the origin's resources. 
+
+**Further Reference**
+
+See:
+
+* [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
+
+#### Set HTTP cache control headers {#set-http-cache-control-headers}
+
+**Recommendation**
+
+When using persisted GraphQL queries with a CDN, it is recommended to set appropriate HTTP cache control headers. 
+
+Each persisted query can have its own specific set of cache control headers. The headers can be set over the [GraphQL API](/help/headless/graphql-api/content-fragments.md) or the [AEM GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md). 
+
+**Further Reference**
+
+See:
+
+* [Caching your persisted queries](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
+* [Managing cache for your persisted queries](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+
+#### Use AEM GraphQL pre-caching {#use-aem-graphql-pre-caching}
+
+**Recommendation**
+
+This capability allows AEM to further cache content within the scope of GraphQL queries that can then be assembled as blocks in JSON output rather than line by line. 
+
+**Further Reference**
+
+Please contact Adobe to enable this capability for your AEM Cloud Service program and environments. 
+
 ### GraphQL Query optimization {#graphql-query-optimization}
 
 On an AEM instance with a high number of Content Fragments that share the same model, GraphQL list queries can become costly (in terms of resources).
@@ -125,59 +178,6 @@ Sorting can only be efficient if all sort criteria are related to top-level frag
 See:
 
 * [Sample Query with filtering by _tags ID and excluding variations, and sort by name](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
-
-### Cache Strategy {#cache-strategy}
-
-Various methods of caching can also be used for optimization.
-
-#### Enable AEM Dispatcher caching {#enable-aem-dispatcher-caching}
-
-**Recommendation**
-
-[AEM Dispatcher](/help/implementing/dispatcher/overview.md) is the first level cache within the AEM service, before CDN cache. 
-
-**Further Reference**
-
-See:
-
-* [GraphQL Persisted Queries - enabling caching in the Dispatcher](/help/headless/deployment/dispatcher-caching.md)
-
-#### Use a Content Delivery Network (CDN) {#use-cdn}
-
-**Recommendation**
-
-GraphQL queries and their JSON responses can be cached if targeted as `GET` requests when using a CDN. In contrast, uncached requests can be very (resource) expensive and slow to process, with the potential for further detrimental effects on the origin's resources. 
-
-**Further Reference**
-
-See:
-
-* [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
-
-#### Set HTTP cache control headers {#set-http-cache-control-headers}
-
-**Recommendation**
-
-When using persisted GraphQL queries with a CDN, it is recommended to set appropriate HTTP cache control headers. 
-
-Each persisted query can have its own specific set of cache control headers. The headers can be set over the [GraphQL API](/help/headless/graphql-api/content-fragments.md) or the [AEM GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md). 
-
-**Further Reference**
-
-See:
-
-* [Caching your persisted queries](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
-* [Managing cache for your persisted queries](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
-
-#### Use AEM GraphQL pre-caching {#use-aem-graphql-pre-caching}
-
-**Recommendation**
-
-This capability allows AEM to further cache content within the scope of GraphQL queries that can then be assembled as blocks in JSON output rather than line by line. 
-
-**Further Reference**
-
-Please contact Adobe to enable this capability for your AEM Cloud Service program and environments. 
 
 ## Best Practices {#best-practices}
 
