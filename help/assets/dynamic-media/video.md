@@ -545,6 +545,7 @@ At the same time you create an Adobe Support case to have DASH enabled on your a
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
+    * Your program ID and environment ID.
     * Name of your Dynamic Media account.
     * Specify that you want DASH, multi-subtitle, and multi-audio track support enabled on your Dynamic Media account, on Experience Manager 6.5.
    
