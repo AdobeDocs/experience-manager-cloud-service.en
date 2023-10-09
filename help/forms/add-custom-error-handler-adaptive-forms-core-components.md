@@ -7,11 +7,10 @@ keywords: Add a custom error handler, add a default error handler, add a error h
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
+exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 ---
+# Error Handlers for Adaptive Form based on Core Components {#error-handlers-in-adaptive-form}
 
-# Error Handlers in Adaptive Forms (Core Components) {#error-handlers-in-adaptive-form}
-
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 | Version | Article link |
 | -------- | ---------------------------- |

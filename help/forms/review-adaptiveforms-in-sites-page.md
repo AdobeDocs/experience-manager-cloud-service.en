@@ -1,6 +1,6 @@
 ---
-title: Create and manage reviews for an Adaptive Form
-description: Review is a mechanism that allows reviewer to perform different tasks for adaptive forms using Assign Task step
+title: How to create and manage reviews of Adaptive Forms embedded or created in Sites page?
+description: Review is a mechanism that allows reviewer to perform different tasks for adaptive forms using Assign Task step.
 feature: Adaptive Forms
 hide: yes
 hidefromtoc: yes

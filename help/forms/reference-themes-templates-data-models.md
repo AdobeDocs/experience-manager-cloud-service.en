@@ -1,7 +1,7 @@
 ---
-title: Reference Themes, Templates, and Form Data models
+title: Reference Themes, Templates, and Form Data models in AEM Forms
 seo-title: Reference Themes, Templates, and Form Data models
-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
+description: AEM Forms provides sample adaptive forms themes, templates, and form data models to help you create forms quickly.
 seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 ---

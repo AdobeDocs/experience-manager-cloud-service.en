@@ -3,8 +3,8 @@ title: Markdown
 description: Understand how the Content Fragment editor uses markdown syntax to allow you to easily create content, for both page authoring and headless delivery.
 feature: Content Fragments
 role: User
+exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 ---
-
 # Markdown {#markdown}
 
 When you are [authoring](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) your Content Fragments you may have [Multi line text fields](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) defined with the **Default Type** of **Markdown**. The Content Fragment editor uses *markdown* syntax to allow you to easily write content for both page authoring and headless delivery:
