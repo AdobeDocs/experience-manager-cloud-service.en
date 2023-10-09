@@ -26,8 +26,7 @@ Traffic filter rules can be deployed to all cloud environment types (RDE, dev, s
 
    ```
    config/
-        cdn/
-           cdn.yaml
+        cdn.yaml
    ```
 
 1. `cdn.yaml` should contain metadata as well as a list of traffic filters rules and WAF rules.
@@ -40,7 +39,15 @@ Traffic filter rules can be deployed to all cloud environment types (RDE, dev, s
    data:
      trafficFilters:
        rules:
-         ...
+       # Block simple path
+       - name: block-path
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/block/me'
+         action: block
    ```
 
   The "kind" parameter should be set to "CDN" and the version should be set to the schema version, which is currently "1". See examples further below.
@@ -75,6 +82,7 @@ Traffic filter rules can be deployed to all cloud environment types (RDE, dev, s
       > Users must be logged in as Deployment Manager in order to configure or run these pipelines.
       > Also, you can configure and run only one Config pipeline per environment.
 
+   1. Set Code Location to where your root configuration is stored (eg. /config).
    1. Select **Save**. Your new pipeline will appear in the pipeline card and can be run when you are ready.
    1. For RDEs, the command line will be used, but RDE is not supported at this time.
 
@@ -165,6 +173,7 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
 | **doesNotMatch**  | `string`  | true if getter result does not match provided regex  |
 | **in**  | `array[string]`  | true if provided list contains getter result  |
 |  **notIn** | `array[string]`  | true if provided list does not contain getter result  |
+|  **exists** | `boolean`  | true when set to true and property exists or when set to false and property does not exist  |
 
 ### Action Structure {#action-structure}
 
@@ -182,7 +191,7 @@ Actions are prioritized according to their types in the following table, which i
 
 ### WAF Flags List {#waf-flags-list}
 
-The `wafFlag` property may include the following:
+The `wafFlags` property may include the following:
 
 | **Flag ID**  | **Flag Name** | **Description**  |
 |---|---|---|
@@ -312,7 +321,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-**Example 4**
+**Example 5**
 
 This rule blocks access to OFAC countries:
 
@@ -327,7 +336,8 @@ data:
       - name: block-ofac-countries
         when:
           allOf:
-            - { reqProperty: tier, equals: publish }
+            - reqProperty: tier
+              matches: "author|publish"
             - reqProperty: clientCountry
               in:
                 - SY
@@ -373,8 +383,8 @@ data:
   trafficFilters:
     - name: limit-requests-client-ip
       when:
-        reqProperty: path
-        like: '*'
+        - reqProperty: tier
+        - matches: "author|publish"
       rateLimit:
         limit: 60
         window: 10

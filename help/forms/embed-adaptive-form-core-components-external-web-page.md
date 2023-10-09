@@ -1,6 +1,6 @@
 ---
-title: Embed adaptive form in external web page
-description: Learn how to embed an adaptive form in an external web page
+title: How to embed an adaptive form based on Core Components to an external web page? 
+description: Learn to embed an Adaptive Forms to a website. 
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
