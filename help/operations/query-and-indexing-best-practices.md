@@ -202,6 +202,13 @@ Considering a different query -
 /jcr:root/content/dam//element(*, dam:Asset) [jcr:content/metadata/myProperty = "My Property Value"] order by jcr:created
 ```
 
+...which contains -
+  * 3 restrictions
+    * Nodetype (`dam:Asset`)
+    * Path (descendants of `/content/dam`)
+    * Property (`jcr:content/metadata/myProperty = "My Property Value"`) 
+  * Ordering by the `jcr:created` property**
+
 Explaining this query results in the following plan -
 
 ```
@@ -246,7 +253,7 @@ It contains sample queries for QueryBuilder, XPath, and SQL-2, covering multiple
 
 Below are some best practices to consider when defining or extending indexes. For more information, see [Oak Lucene Index documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html). 
 * For nodetypes which have existing indexes (such as `dam:Asset` or `cq:Page`) prefer extension of OOTB indexes to the addition of new indexes.
-  * Adding new indexes - particularly fulltext indexes - on the `dam:Asset` nodetype is strongly discouraged.
+  * Adding new indexes - particularly fulltext indexes - on the `dam:Asset` nodetype is strongly discouraged (see [this note](/help/operations/indexing.md##index-names-index-names)).
 * When adding new indexes, use an index tag in the index definition (and associated query) and `selectionPolicy = tag` to ensure that the index is only used for the intended queries.
 * Ensure `queryPaths` and `includedPaths` are both provided (typically with the same values).
 * Use `excludedPaths` to exclude paths which will not contain useful results.
