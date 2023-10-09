@@ -130,7 +130,7 @@ The Explain Query tool allows developers to understand the Query Execution Plan 
 
 #### Explaining a query
 
-In-order to explain a query, do the following:
+In order to explain a query, do the following:
   * Select the appropriate query language using the `Language` dropdown.
   * Enter the query statement into the `Query` field.
   * If required, select how the query will be executed using the provided checkboxes.
