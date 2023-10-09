@@ -98,7 +98,7 @@ To reduce performance and memory issues, this initial result set has to be kept 
 AEM provides two approaches for optimizing GraphQL queries:
 
 * [Hybrid filtering](#use-aem-graphql-hybrid-filtering)
-* [Paging](#use-graphql-pagination) (or pagination)
+* [Paging](#use-aem-graphql-pagination) (or pagination)
 
   * [Sorting](#use-graphql-sorting) is not directly related to optimization, but is related to paging
 
