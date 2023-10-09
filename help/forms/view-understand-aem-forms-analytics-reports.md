@@ -1,15 +1,19 @@
 ---
 title: Viewing and understanding Adaptive Forms analytics reports
 description: Adaptive Forms seamlessly integrate with Adobe Analytics to capture and track performance metrics for your published forms and documents.
+keywords: Viewing and understanding Adaptive Forms analytics reports, Adobe analytics report, Forms Analytics report
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
+exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
 ---
-
 # Viewing and understanding Adaptive Forms analytics reports {#viewing-and-understanding-aem-forms-analytics-reports}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service     | This article   |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)                  |
 
 In the rapidly evolving landscape of digital analytics, staying attuned to global trends is imperative for making informed decisions and optimizing digital experiences. To address this, Adaptive Forms seamlessly integrate with Adobe Analytics to capture and track performance metrics for your published forms and documents. The objective behind analyzing these metrics is to make data-driven decisions, using metrics and analytics to enhance the usability and effectiveness of the forms.
 
@@ -96,3 +100,9 @@ Metrics such as help views, validation errors, and field visits reveal where use
 It helps you to analyze the form fields where the users have spent time before abandoning the form. For example, In the image given below, out of 5 abandoned forms, 2 left on the field **Full Name**, 2 left on the field **Phone Number**, and 1 left on the Field **Text Input**.
 
 ![Field visitors](assets/field-visitors.png){width="100%"}
+
+## See Also {#see-also}
+
+* [Enable Adobe Analytics for an Adaptive Form using Experience Cloud Setup Automation](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Integrate AEM Forms with Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

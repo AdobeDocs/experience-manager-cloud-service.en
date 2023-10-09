@@ -9,11 +9,11 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 13712 {#13712}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on September X, 2023. This maintenance release is an update from previous maintenance release 13665.
+Summarized below are the continuous improvements for maintenance release 13712, which was publicly released on October 10, 2023. This maintenance release is an update from previous maintenance release 13665.
 
 2023.10.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-X}
+### Enhancements {#enhancements-13712}
 
 [GRANITE-47123] set default for vanity path async init to "true"
 [GRANITE-47028] Send extra clone-blob-store job logs to splunk
@@ -43,15 +43,16 @@ Summarized below are the continuous improvements for maintenance release X, whic
 [GRANITE-47211] Changes in cq-quickstart
 
 
-### Fixed Issues {#fixed-issues-X}
+### Fixed Issues {#fixed-issues-13712}
 
 [GRANITE-44674] Datepicker required field functionality is incorrect
 
-### Known Issues {#known-issues-X}
+### Known Issues {#known-issues-13712}
 
 None.
 
-### Embedded Technologies {#embedded-tech-X}
+### Embedded Technologies {#embedded-tech-13712}
+
 
 |Technology|Version|Link|
 |---|---|---|
