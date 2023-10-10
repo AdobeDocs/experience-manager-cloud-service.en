@@ -104,21 +104,20 @@ See the section [Queries with large result sets](#queries-with-large-result-sets
 ## Query Performance Tool {#query-performance-tool}
 
 The Query Performance Tool (located at `/libs/granite/operations/content/diagnosistools/queryPerformance.html` and available via the [Developer Console in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)) provides -
-  * A list of any 'Slow Queries'; currently defined as those reading / scanning more than 5000 rows.
-  * A list of 'Popular Queries'
-  * The 'Explain Query' tool for understanding how a particular query will be executed by Oak.
+* A list of any 'Slow Queries'; currently defined as those reading / scanning more than 5000 rows.
+* A list of 'Popular Queries'
+* The 'Explain Query' tool for understanding how a particular query will be executed by Oak.
 
 ![Query Performance Tool](assets/query-performance-tool.png)
 
 The 'Slow Queries' and 'Popular Queries' tables include -
-  * The query statement itself.
-  * Details of the last Thread which executed the query, allowing the page or application feature executing the query to be identified.
-  * A 'Read Optimization' score for the query.
-    * This is calculated as the ratio between the number of rows / nodes scanned in order to execute the query and the number of matching results read.
-    * A query for which every restriction (and any ordering) can be handled at the index will typically score 90% or above.
-  * Details of the maximum number of rows -
-    * Read - indicating that a row was included as part of a result set.
-    * Scanned - indicating that a row was included in the results from the underlying index query (in the case of an indexed query) or read from the nodestore (in the case of a repository traversal). 
+* The query statement itself.
+* Details of the last Thread which executed the query, allowing the page or application feature executing the query to be identified.* A 'Read Optimization' score for the query.
+  * This is calculated as the ratio between the number of rows / nodes scanned in order to execute the query and the number of matching results read.
+  * A query for which every restriction (and any ordering) can be handled at the index will typically score 90% or above.
+* Details of the maximum number of rows -
+  * Read - indicating that a row was included as part of a result set.
+  * Scanned - indicating that a row was included in the results from the underlying index query (in the case of an indexed query) or read from the nodestore (in the case of a repository traversal). 
 
 These tables help identifying queries which are not fully indexed (see [Use an Index](#use-an-index) or are reading too many nodes (see also [Repository Traversal](#repository-traversal) and [Index Traversal](#index-traversal)). Such queries will be highlighted - with the appropriate areas of concern marked in red.
 
@@ -131,14 +130,14 @@ The Explain Query tool allows developers to understand the Query Execution Plan 
 #### Explaining a query
 
 In order to explain a query, do the following:
-  * Select the appropriate query language using the `Language` dropdown.
-  * Enter the query statement into the `Query` field.
-  * If required, select how the query will be executed using the provided checkboxes.
-      * By default, JCR queries do not need to be executed in order to identify the Query Execution Plan (this is not the case for QueryBuilder queries).
-      * Three options are provided for executing the query -
-        * `Include Execution Time` - execute the query but do not attempt to read any results.
-        * `Read first page of results` - execute the query and read the first 'page' of 20 results (replicating the best practices for executing queries).
-        * `Include Node Count` - execute the query and read the entire result set (generally this is not advised - see [Index Traversal](#index-traversal)).
+* Select the appropriate query language using the `Language` dropdown.
+* Enter the query statement into the `Query` field.
+* If required, select how the query will be executed using the provided checkboxes.
+    * By default, JCR queries do not need to be executed in order to identify the Query Execution Plan (this is not the case for QueryBuilder queries).
+    * Three options are provided for executing the query -
+      * `Include Execution Time` - execute the query but do not attempt to read any results.
+      * `Read first page of results` - execute the query and read the first 'page' of 20 results (replicating the best practices for executing queries).
+      * `Include Node Count` - execute the query and read the entire result set (generally this is not advised - see [Index Traversal](#index-traversal)).
 
 #### Query Explanation popup {#query-explanation-popup}
 
@@ -146,11 +145,11 @@ In order to explain a query, do the following:
 
 After selecting `Explain`, the user is presented with a popup describing the result of the query explain (and execution, if selected). 
 This popup includes details of -
-  * The Indexes Used when executing the query (or no index if the query would be executed using [Repository Traversal](#repository-traversal)).
-  * The execution time (if `Include Execution Time` checkbox was checked) and count of results read (if `Read first page of results` or `Include Node Count` checkboxes were checked).
-  * The execution plan, allowing detailed analysis of how the query is executed - see [Reading the Query Execution Plan](#reading-query-execution-plan) for how to interpret this.
-  * The paths of the first 20 query results (if `Read first page of results` checkbox was checked)
-  * The full logs of the query planning, showing the relative costs of the indexes which were considered for the execution of this query (the index with the lowest cost will be the one chosen).
+* The Indexes Used when executing the query (or no index if the query would be executed using [Repository Traversal](#repository-traversal)).
+* The execution time (if `Include Execution Time` checkbox was checked) and count of results read (if `Read first page of results` or `Include Node Count` checkboxes were checked).
+* The execution plan, allowing detailed analysis of how the query is executed - see [Reading the Query Execution Plan](#reading-query-execution-plan) for how to interpret this.
+* The paths of the first 20 query results (if `Read first page of results` checkbox was checked)
+* The full logs of the query planning, showing the relative costs of the indexes which were considered for the execution of this query (the index with the lowest cost will be the one chosen).
   
 #### Reading the Query Execution Plan {#reading-query-execution-plan}
 
@@ -163,11 +162,11 @@ Consider the following query -
 ```
 
 ...which contains -
-  * 3 restrictions
-    * Nodetype (`dam:Asset`)
-    * Path (descendants of `/content/dam`)
-    * Property (`jcr:content/metadata/dc:title = "My Title"`) 
-  * Ordering by the `jcr:created` property
+* 3 restrictions
+  * Nodetype (`dam:Asset`)
+  * Path (descendants of `/content/dam`)
+  * Property (`jcr:content/metadata/dc:title = "My Title"`) 
+* Ordering by the `jcr:created` property
 
 Explaining this query results in the following plan -
 
@@ -182,17 +181,17 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 ```
 
 This tells us that - 
-  * An index is used to execute this query -
-    * In this case the Lucene index `/oak:index/damAssetLucene-9` will be used, so the remaining information is in Lucene Query Syntax.
-  * All 3 restrictions are handled by the index -
-      * The nodetype restriction
-        * implicit, because `damAssetLucene-9` only indexes nodes of type dam:Asset.
-      * The path restriction
-        * because `+:ancestors:/content/dam` appears in the Lucene query.
-      * The property restriction
-        * because `+jcr:content/metadata/dc:title:My Title` appears in the Lucene query.
-  * The ordering is handled by the index
-    * because `ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]`  appears in the Lucene query.
+* An index is used to execute this query -
+  * In this case the Lucene index `/oak:index/damAssetLucene-9` will be used, so the remaining information is in Lucene Query Syntax.
+* All 3 restrictions are handled by the index -
+    * The nodetype restriction
+      * implicit, because `damAssetLucene-9` only indexes nodes of type dam:Asset.
+    * The path restriction
+      * because `+:ancestors:/content/dam` appears in the Lucene query.
+    * The property restriction
+      * because `+jcr:content/metadata/dc:title:My Title` appears in the Lucene query.
+* The ordering is handled by the index
+  * because `ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]`  appears in the Lucene query.
 
 Such a query is likely to perform well, since the results returned from the index query will not be further filtered in the query engine (aside from Access Control filtering). However, it is still possible for such a query to execute slowly if best practices are not followed - see [Index Traversal](#index-traversal) below. 
 
@@ -203,11 +202,11 @@ Considering a different query -
 ```
 
 ...which contains -
-  * 3 restrictions
-    * Nodetype (`dam:Asset`)
-    * Path (descendants of `/content/dam`)
-    * Property (`jcr:content/metadata/myProperty = "My Property Value"`) 
-  * Ordering by the `jcr:created` property**
+* 3 restrictions
+  * Nodetype (`dam:Asset`)
+  * Path (descendants of `/content/dam`)
+  * Property (`jcr:content/metadata/myProperty = "My Property Value"`) 
+* Ordering by the `jcr:created` property**
 
 Explaining this query results in the following plan -
 
@@ -222,13 +221,13 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 ```
 
 This tells us that -
-  * Only 2 (of the 3) restrictions are handled by the index -
-      * The nodetype restriction
-        * implicit, because `damAssetLucene-9` only indexes nodes of type dam:Asset.
-      * The path restriction
-        * because `+:ancestors:/content/dam` appears in the Lucene query.
-  * The property restriction `jcr:content/metadata/myProperty = "My Property Value"` is not executed at the index, but rather will be applied as Query Engine filtering on the results of the underlying Lucene query.
-    * We can tell this because `+jcr:content/metadata/myProperty:My Property Value` does not appears in the Lucene query, since this property is not indexed in the `damAssetLucene-9` index used for this query.
+* Only 2 (of the 3) restrictions are handled by the index -
+    * The nodetype restriction
+      * implicit, because `damAssetLucene-9` only indexes nodes of type dam:Asset.
+    * The path restriction
+      * because `+:ancestors:/content/dam` appears in the Lucene query.
+* The property restriction `jcr:content/metadata/myProperty = "My Property Value"` is not executed at the index, but rather will be applied as Query Engine filtering on the results of the underlying Lucene query.
+  * We can tell this because `+jcr:content/metadata/myProperty:My Property Value` does not appears in the Lucene query, since this property is not indexed in the `damAssetLucene-9` index used for this query.
 
 This query execution plan will result in every asset beneath `/content/dam` being read from the index, and then filtered further by the query engine (which will only include those matching the non-indexed property restriction in the result set). 
 
