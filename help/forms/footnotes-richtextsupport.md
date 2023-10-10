@@ -1,5 +1,5 @@
 ---
-title: Footnotes Support in Adaptive Forms
+title: What is Footnote Component in Adaptive Forms?
 description: Use Rich Text editor (RTE) for footnotes in an Adaptive Form.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 ---

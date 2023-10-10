@@ -1,5 +1,5 @@
 ---
-title: AEM Forms as a Cloud Service Architecture
+title: What is AEM Forms as a Cloud Service Architecture?
 description: Understand the architecture of [!DNL AEM Forms] as a Cloud Service to learn about the scalability, resilience, and performance aspects of the platform.
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 ---
