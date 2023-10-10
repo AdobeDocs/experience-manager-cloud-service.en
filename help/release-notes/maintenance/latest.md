@@ -11,7 +11,7 @@ The following section outlines the technical release notes for the current maint
 
 Summarized below are the continuous improvements for maintenance release 13665, which was publicly released on September 27th, 2023. This maintenance release replaces release 13420.
 
-2023.10.0 Feature Activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
+2023.10.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
 ### Enhancements {#enhancements-13665}
 
