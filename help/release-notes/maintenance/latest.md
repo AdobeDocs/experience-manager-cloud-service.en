@@ -18,8 +18,8 @@ Summarized below are the continuous improvements for maintenance release 13804, 
 * GRANITE-47238: Audit Log Maintenance - Purge cronjobs to use the customer configuration.
 * GRANITE-47123: Publish (Sling) - Improve startup time by initializing vanity path cache asynchronously by default.
 * GRANITE-46618: Publish (Replication) - Improve Publish startup speed through replication status messages batching.
-* GRANITE-47136: Indexing (Download) - Improved download speed of new parallel index downloader (by disabling checksum validation).
-* GRANITE-47211: Publish (Infra) - Improved decoupling of Publish tier deployments (by storing and fetching segment store revision name using mounted secrets).
+* GRANITE-47136: Indexing (Download) - Improve download speed of new parallel index downloader (by disabling checksum validation).
+* GRANITE-47211: Publish (Infra) - Improve decoupling of Publish tier deployments (by storing and fetching segment store revision name).
 * GRANITE-47267:  Update to Apache Felix Http Jetty 4.2.18 (includes bug fix for request parameter handling ([FELIX-6625](https://issues.apache.org/jira/browse/FELIX-6625)) with performance improvements for local and RDE developments).
 * GRANITE-47247: Update to Sling Servlets Resolver 2.9.14 with performance improvements in servlet resolution.
 
