@@ -231,7 +231,7 @@ The property restriction `jcr:content/metadata/myProperty = "My Property Value"`
 
 This query execution plan will result in every asset beneath `/content/dam` being read from the index, and then filtered further by the query engine (which will only include those matching the non-indexed property restriction in the result set). 
 
-If only a small % of Assets match the restriction `jcr:content/metadata/myProperty = "My Property Value"`, the query will need to read a large number of nodes in order to (attempt to) fill the requested 'page' of results. This can result in a poorly performing query, which will be shown as having a low `Read Optimization` score in the Query Performance tool). 
+Even if only a small percentage of assets match the restriction `jcr:content/metadata/myProperty = "My Property Value"`, the query will need to read a large number of nodes in order to (attempt to) fill the requested 'page' of results. This can result in a poorly performing query, which will be shown as having a low `Read Optimization` score in the Query Performance tool). 
 
 To optimize the performance of this second query, we must create a custom version of the `damAssetLucene-9` index (`damAssetLucene-9-custom-1`) and add the following property definition - 
 
