@@ -1,5 +1,5 @@
 ---
-title: How to create an Adaptive Form
+title: How to create an Adaptive Form?
 description: Learn how to create an Adaptive Form using [!DNL Experience Manager Forms]. Adaptive Forms are responsive HTML5 forms that streamline information gathering and processing. Dig deeper on how to create an Adaptive Form based on a Form Data Model and XML or JSON schema.
 feature: Adaptive Forms, Core Components
 role: User, Developer

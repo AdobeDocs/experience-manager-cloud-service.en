@@ -1,5 +1,5 @@
 ---
-title: How to configure [!DNL Microsoft Dynamics] OData?
+title: How do I configure [!DNL Microsoft Dynamics] OData?
 description: Learn to create Form Data Model based on the entities, attributes, and services defined in [!DNL Microsoft Dynamics] service.
 feature: Form Data Model
 role: User, Developer

@@ -1,5 +1,5 @@
 ---
-title: How to use SOM expressions in Adaptive Forms?
+title: How can we use SOM expressions in Adaptive Forms?
 description: Learn how to extract SOM expressions of a panel in Adaptive Forms.
 uuid: c5d55aff-fb69-4a1c-96ea-fb3f9322cbb0
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

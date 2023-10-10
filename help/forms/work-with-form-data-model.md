@@ -1,5 +1,5 @@
 ---
-title: How to Work with Form Data Model?
+title: What is the process to work with a Form Data Model in AEM Forms?
 description: Add data model objects, services, create data model objects and child properties, configure services, work with navigation properties of OData services.
 feature: Form Data Model
 role: User

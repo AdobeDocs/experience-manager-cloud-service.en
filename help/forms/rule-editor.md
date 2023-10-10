@@ -1,5 +1,5 @@
 ---
-title: What is Adaptive Forms rule editor?
+title: What is the Adaptive Forms rule editor?
 description: Adaptive Forms rule editor allows you to add dynamic behavior and build complex logic into forms without coding or scripting.
 feature: Adaptive Forms
 role: User

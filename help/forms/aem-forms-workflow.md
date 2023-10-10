@@ -1,5 +1,5 @@
 ---
-title: Forms-centric workflow on OSGi
+title: What is Forms-centric workflow on OSGi?
 seo-title: Rapidly build Adaptive Forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
 description: Use AEM Forms Workflow to automate and rapidly build business process workflows. For example, review and approval, PDF Generation, Adobe Sign workflows.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be

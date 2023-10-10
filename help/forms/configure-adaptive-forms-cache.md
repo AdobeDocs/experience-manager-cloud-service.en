@@ -1,5 +1,5 @@
 ---
-title: Configure Adaptive Forms cache
+title: What are Adaptive Forms cache?
 description: Adaptive Forms cache is designed for Adaptive Forms and documents with the objective to reduce the time required to render an Adaptive Form or document.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference

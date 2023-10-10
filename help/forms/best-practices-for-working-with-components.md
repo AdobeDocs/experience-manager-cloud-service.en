@@ -1,8 +1,6 @@
 ---
-title: Best practices for working with components
-seo-title: Best practices for working with components
-description: Some best practices and key points to remember when working with Adaptive Form components
-seo-description: Some best practices and key points to remember when working with Adaptive Form components
+title: What are the best practices for working with Adaptive Form components?
+description: Some best practices and key points to remember when working with Adaptive Form components.
 
 ---
 
