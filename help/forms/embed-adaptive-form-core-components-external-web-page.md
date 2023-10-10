@@ -1,5 +1,5 @@
 ---
-title: How to embed adaptive form in external web page?
+title: How can we embed adaptive form in external web page?
 description: Learn how to embed an adaptive form in an external web page
 contentOwner: Khushwant Singh
 docset: CloudService
