@@ -1,6 +1,6 @@
 ---
-title: [!DNL AEM Forms] as a Cloud Service release notes
-description: [!DNL AEM Forms] as a Cloud Service release notes
+title: AEM Forms as a Cloud Service release notes
+description: Know about new features, beta releases, pre-release information and more for AEM Forms as a Cloud Service.
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 ---
 
