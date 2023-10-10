@@ -13,9 +13,10 @@ Learn about Cloud Manager's build environment and how it builds and tests your c
 Cloud Manager builds and tests your code using a specialized build environment.
 
 * The build environment is Linux-based, derived from Ubuntu 18.04.
-* Apache Maven 3.6.0 is installed.
-* The Java versions installed are Oracle JDK 8u202 and Oracle JDK 11.0.2.
-* By default, the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_202`  which contains Oracle JDK 8u202. See [Alternate Maven Execution JDK Version](#alternate-maven-jdk-version) section for more details.
+* With the [October 2023 release of Cloud Manager,](/help/implementing/cloud-manager/release-notes/current.md) Java and Maven versions are being updated on an ongoing basis.
+    * Apache Maven 3.6.0 or 3.8.8 is installed.
+    * The Java versions installed are Oracle JDK 8u202 and Oracle JDK 11.0.2. or Oracle JDK 8u371 and Oracle JDK 11.0.20.
+    * By default, the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_202` which contains Oracle JDK 8u202 or to `/usr/lib/jvm/jdk1.8.0_371` which contains Oracle JDK 8u371. See the [Alternate Maven Execution JDK Version](#alternate-maven-jdk-version) section for more details.
 * There are some additional system packages installed which are necessary.
 
   * `bzip2`

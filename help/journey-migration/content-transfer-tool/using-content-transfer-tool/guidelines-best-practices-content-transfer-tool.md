@@ -73,12 +73,6 @@ Follow the section below to understand the important considerations while runnin
 
 * During the extraction phase, the Content Transfer Tool is executed on an active AEM source instance.
 
-* After completing the *Extraction* phase of the content transfer process and before starting the *Ingestion Phase* to ingest content into your AEM as a Cloud Service *Stage* or *Production* instances, log a support ticket. Notify Adobe of your intention of running *Ingestion* so that Adobe can ensure that no interruptions occur during the *Ingestion* process. Log the support ticket one week before your planned *Ingestion* date. After you have submitted the support ticket, the support team provides guidance on the next steps. You can submit a support ticket with the following details:
-
-   * Exact date and estimated time (with your time-zone) when you plan to start the *Ingestion* phase. 
-   * Environment type (Stage or Production) that you plan to ingest data into.
-   * Program ID.
-
 * The *Ingestion Phase* for the author scales down the whole author deployment. It means that the author AEM is unavailable during the whole ingestion process. Also ensure that no Cloud Manager pipelines are executed while you are running the *Ingestion* phase. 
 
 * When using `Amazon S3` or `Azure` as the data store on the source AEM system, the data store should be configured so that the blobs stored cannot be deleted (garbage collected). This ensures integrity of index data and failure to configure this way may result in failed extractions due to lack of integrity of this index data.
