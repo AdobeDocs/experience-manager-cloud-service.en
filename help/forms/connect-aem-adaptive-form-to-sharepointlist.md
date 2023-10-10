@@ -5,9 +5,9 @@ role: User, Developer
 keywords: connect AEM Adaptive Form to Microsoft SharePoint List, connect Adaptive Form to Microsoft SharePoint List, integrate AEM Adaptive Form to Microsoft SharePoint List, integrate Adaptive Form to Microsoft SharePoint List, submit data from an Adaptive Form to SharePoint List, submit AEM workflow to SharePoint List.
 ---
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 # Connect an Adaptive Form to Microsoft® SharePoint List 
+
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 **Microsoft® SharePoint**: Microsoft® SharePoint enables collaboration by providing dynamic and efficient team sites for all teams, departments, and divisions. It is used to store, organize, share, and access information from any device using any web browser, for example, Microsoft® Edge, Internet Explorer, Chrome, or Firefox. The two main components of **Microsoft® SharePoint** are:
 
