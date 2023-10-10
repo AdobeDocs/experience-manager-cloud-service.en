@@ -1,22 +1,22 @@
 ---
-title: Manage Forms applications and tasks in AEM Inbox
-description: AEM Inbox lets you launch Forms-centric workflows through submitting applications and manage tasks.
+title: How to manage forms applications and tasks in the AEM Inbox?
+description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
+uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
+discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 
 ---
 
 # Manage Forms applications and tasks in AEM Inbox{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-One of the many ways to launch or trigger a Forms-centric workflow is through applications in AEM Inbox. You need to create a workflow application to make a Forms workflow available as application in Inbox. For more information about workflow application and other ways to launch Forms workflows, see [Launch a Forms-centric workflow on OSGi](aem-forms-workflow.md#launch).
+One of the many ways to launch or trigger a Forms-centric workflow is through applications in AEM Inbox. You need to create a workflow application to make a Forms Workflow available as an application in Inbox. For more information about workflow application and other ways to launch Forms workflows, see [Launch a Forms-centric workflow on OSGi](aem-forms-workflow.md#launch).
 
-In addition, AEM Inbox consolidates notifications and tasks from various AEM components, including Forms workflows. When a forms workflow containing an Assign task step is triggered, the associated application is listed as a task in the assignee's Inbox. If the assignee is a group, the task appears in the Inbox of all group members until an individual claims or delegates the task.
+In addition, AEM Inbox consolidates notifications and tasks from various AEM components, including Forms workflows. When a Forms Workflow containing an Assign task step is triggered, the associated application is listed as a task in the assignee's Inbox. If the assignee is a group, the task appears in the Inbox of all group members until an individual claims or delegates the task.
 
 The Inbox user interface provides list and calendar views to view tasks. You can also configure the view settings. You can filter tasks based on various parameters. For more information about view and filters, see [Your Inbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#inbox-in-the-header).
 
-In summary, Inbox lets you create a new application and manage assigned tasks.
+In summary, Inbox allows you to create an application and manage assigned tasks.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ In summary, Inbox lets you create a new application and manage assigned tasks.
 
 ## Manage tasks {#manage-tasks}
 
-When a Forms workflow triggers and you are an assignee or part of the assignee group, a task appears in your Inbox. You can view task details and perform available actions on the task from within Inbox.
+When a Forms workflow trigger and you are an assignee or part of the assignee group, a task appears in your Inbox. You can view task details and perform available actions on the task from within the Inbox.
 
 ### Claim or delegate tasks {#claim-or-delegate-tasks}
 
@@ -52,7 +52,7 @@ Tasks that are assigned to a group appear in the Inbox of all group members. Any
 
 ### View details and perform actions on tasks {#view-details-and-perform-actions-on-tasks}
 
-When you open a task, you can view task details and perform available actions. The actions available for a task are defined in the Assign task step of the associated Forms workflow.
+When you open a task, you can view task details and perform available actions. The actions available for a task are defined in the Assign task step of the associated Forms Workflow.
 
 1. Tap to select the thumbnail of the task. Options to open or delegate the selected task appear at the top.
 1. Tap **Open** to view task details and take actions. The detailed task view opens. In this view, you can view task details and take actions on the task.
@@ -82,19 +82,19 @@ The Form tab in the main content area displays the submitted form and field-leve
 
 The Workflow Details tab at the top shows the progress of the task through various stages in the workflow. It shows completed, current, and pending stages for the task. The stages for a workflow are defined in the [Assign task step](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem) of the associated workflow.
 
-In addition, the tab displays task history for each completed stage in the workflow. You can tap **[!UICONTROL View Details]** for a completed stage to know details about that stage. It displays comments, form and task attachments, status, start and end dates, and so on about the task.
+In addition, the tab displays task history for each completed stage in the workflow. You can tap **[!UICONTROL View Details]** for a completed stage to know details about that stage. It displays comments, form and task attachments, status, start and end dates, and so on, about the task.
 
 ![workflow-details](assets/workflow-details.png)
 
 #### Actions toolbar {#actions-toolbar}
 
-The Actions toolbar shows all available options for the task. While Save, Reset, and Delegate are default actions, other available actions are configured in [Assign task step](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem). In the example above, Approve and Reject are configured in the workflow.
+The Actions toolbar shows all available options for the task. While Save, Reset, and Delegate are default actions, other available actions are configured in the [Assign task step](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem). In the example above, Approve and Reject are configured in the workflow.
 
 As you take action on the task, it proceeds further in the workflow.
 
 ### View completed tasks {#view-completed-tasks}
 
-AEM Inbox displays only active tasks. Completed tasks do not appear in the list. However, you can use Inbox filters to filter tasks based on several parameters, such as task type, status, start and end dates, and so on. To view completed tasks:
+AEM Inbox displays only active tasks. Completed tasks do not appear in the list. However, you can use Inbox filters to filter tasks based on several parameters, such as task type, status, start and end dates. To view completed tasks:
 
 1. In AEM Inbox, tap ![toggle-side-panel1](assets/toggle-side-panel1.png) to open the filter selector.
 1. Tap **[!UICONTROL Task Status]** accordion and select **[!UICONTROL Complete]**. All your completed tasks appear.
@@ -115,9 +115,9 @@ The **[!UICONTROL Workflow Details]** tab shows each step of the workflow. Tap *
 
 ## Troubleshooting {#troubleshooting-workflows}
 
-### Unable to view items related to AEM Workflow in AEM inbox {#unable-to-see-aem-worklow-items}
+### Unable to view items related to AEM Workflow in AEM Inbox {#unable-to-see-aem-worklow-items}
 
-A workflow model owner is unable to view items related to AEM Workflow in AEM inbox. To resolve the issue add the below listed indices to your AEM repository and rebuild the index. 
+A workflow model owner is unable to view items related to AEM Workflow in AEM Inbox. To resolve the issue, add the below listed indices to your AEM repository and rebuild the index. 
 
 1. Use one of the following methods to add indices: 
 

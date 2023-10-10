@@ -7,3 +7,9 @@
 ## Edge Delivery Services Authoring {#edge-delivery-authoring}
 
 [!BADGE For authoring AEM content for Edge Delivery Services, click here.]{type=Positive url="/help/edge/overview.md" tooltip="Authoring AEM content for Edge Delivery Services"}
+
+## IMS Support for Assigning Groups to Profiles {#ims-group-profiles}
+
+>[!NOTE]
+>
+>AEM currently does not support assigning groups to profiles. Users should be added individually instead.

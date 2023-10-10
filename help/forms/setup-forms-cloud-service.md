@@ -1,6 +1,7 @@
 ---
-title: Onboard to AEM Forms as a Cloud Service 
-description: Learn to set up and configure an [!DNL Adobe Experience Manager (AEM) Forms] as a Cloud Service environment
+title: How to set up an [!DNL AEM Forms] as a Cloud Service environment? 
+description: Learn to set up and configure an [!DNL AEM Forms] as a Cloud Service environment.
+exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 ---
 # Onboard to [!DNL AEM Forms] as a Cloud Service {#overview}
 

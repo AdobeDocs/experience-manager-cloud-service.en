@@ -1,6 +1,6 @@
 ---
-title: Create or add an Adaptive Form using AEM Sites Editor
-description: You can use Adaptive Form (Core Components) in an AEM Sites page to fill and submit a form without leaving the AEM Sites pages.
+title: How to add or create an Adaptive Form Core Components in AEM Sites page?
+description: Use Adaptive Form Core Components in an AEM Sites page to fill and submit a form without leaving the AEM Sites pages.
 feature: Adaptive Forms
 hide: yes
 hidefromtoc: yes
@@ -261,3 +261,8 @@ AEM sites page maintains a reference to the Adaptive Form. When you translate an
 
 * Header and footer in the original form are not included in the embedded form.
 * User drafts and submissions of embedded forms are supported and visible in Drafts and Submitted Forms tabs on the Forms Portal.
+
+>[!MORELIKETHIS]
+>
+>* [Embed adaptive form based on core components to an external web page](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+>* [Embed adaptive form in external web page](/help/forms/embed-adaptive-form-external-web-page.md)
