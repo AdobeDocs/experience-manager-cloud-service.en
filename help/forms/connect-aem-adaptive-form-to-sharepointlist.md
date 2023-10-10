@@ -1,10 +1,11 @@
 ---
 title: How to connect AEM Adaptive Form to Microsoft® SharePoint List?
-description: This article helps you to configure to Microsoft® SharePoint List and connect it to an Adaptive Form. Learn how to configure and use it to create form data models.
+description: Connect an Adaptive Form to Microsoft® SharePoint List. Learn how to configure the Microsoft® SharePoint list and create a Form Data Model using the configuration. Further, you will learn how to integrate the FDM with your Adaptive Form.
 role: User, Developer
-seo-description: Connect an Adaptive Form to Microsoft SharePoint List. Learn how to configure the Microsoft SharePoint list and create a Form Data Model using the configuration. Further, you will learn how to integrate the FDM with your Adaptive Form.
 keywords: connect AEM Adaptive Form to Microsoft SharePoint List, connect Adaptive Form to Microsoft SharePoint List, integrate AEM Adaptive Form to Microsoft SharePoint List, integrate Adaptive Form to Microsoft SharePoint List, submit data from an Adaptive Form to SharePoint List, submit AEM workflow to SharePoint List.
 ---
+
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 # Connect an Adaptive Form to Microsoft® SharePoint List 
 
@@ -13,7 +14,9 @@ keywords: connect AEM Adaptive Form to Microsoft SharePoint List, connect Adapti
 * **Microsoft® SharePoint Document Library**: Microsoft® SharePoint Document Library displays a list of files and folders along with their key information, such as the last modified date and the owner of a file. This feature makes the organization and navigation of files easy.
 For instructions on how to integrate a **Microsoft® SharePoint Document Library** with an Adaptive Form, see the [Adaptive Form Submit Action](/help/forms/configuring-submit-actions.md#submit-to-sharepoint) article.
 
-* **Microsoft® SharePoint List**: Microsoft® SharePoint List is a collection of data. You can add columns for different types of data and create views to display data effectively. You can group, filter, sort and format the lists easily. 
+* **Microsoft® SharePoint List**: Microsoft® SharePoint List is a collection of data. You can add columns for different types of data and create views to display data effectively. You can group, filter, sort, and format the lists easily. 
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 ## Prerequisites to connect an Adaptive Form to Microsoft® SharePoint List {#prerequisites}
 
