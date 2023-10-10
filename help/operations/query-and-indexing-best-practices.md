@@ -229,7 +229,7 @@ This tells us that only 2 (of the 3) restrictions are handled by the index -
         
 The property restriction `jcr:content/metadata/myProperty = "My Property Value"` is not executed at the index because this property is not indexed. 
 
-This query exectuion plan will result in every Asset beneath `/content/dam` being read from the index, and then filtered further by the query engine (which will only include those matching the unindexed property restriction in the resultset). 
+This query execution plan will result in every asset beneath `/content/dam` being read from the index, and then filtered further by the query engine (which will only include those matching the non-indexed property restriction in the result set). 
 
 If only a small % of Assets match the restriction `jcr:content/metadata/myProperty = "My Property Value"`, the query will need to read a large number of nodes in order to (attempt to) fill the requested 'page' of results. This can result in a poorly performing query, which will be shown as having a low `Read Optimization` score in the Query Performance tool). 
 
