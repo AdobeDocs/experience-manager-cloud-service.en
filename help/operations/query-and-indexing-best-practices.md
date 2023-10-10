@@ -233,7 +233,7 @@ This query execution plan will result in every asset beneath `/content/dam` bein
 
 Even if only a small percentage of assets match the restriction `jcr:content/metadata/myProperty = "My Property Value"`, the query will need to read a large number of nodes in order to (attempt to) fill the requested 'page' of results. This can result in a poorly performing query, which will be shown as having a low `Read Optimization` score in the Query Performance tool). 
 
-To optimize the performance of this second query, we must create a custom version of the `damAssetLucene-9` index (`damAssetLucene-9-custom-1`) and add the following property definition - 
+To optimize the performance of this second query, create a custom version of the `damAssetLucene-9` index (`damAssetLucene-9-custom-1`) and add the following property definition - 
 
 ```
 "myProperty": {
