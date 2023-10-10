@@ -2,8 +2,8 @@
 title: How does Assets view in AEM benefit you?
 description: Learn more about the key benefits of Assets view in AEM. Adobe, leveraging its expertise in empowering marketing and creative professionals, introduces a game-changing new user experience.
 mini-toc-levels: 3
+exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 ---
-
 # Introducing the Assets view {#assets-view}
 
 ![Deploy Assets Essentials](assets/banner-image.jpg)
@@ -122,9 +122,3 @@ Use these links to quickly get started with Assets view:
 
 * [My Workspace](/help/assets/my-workspace-assets-view.md)
 * [Get Started using Assets view](/help/assets/get-started-assets-view.md)
-
-
-
-
-
-    

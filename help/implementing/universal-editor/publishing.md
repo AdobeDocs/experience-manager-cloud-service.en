@@ -1,20 +1,20 @@
 ---
-title: Publishing Content with the Universal Visual Editor
-description: Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
+title: Publishing Content with the Universal Editor
+description: Learn how the Universal Editor publishes content and how your apps can handle the published content.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
 ---
 
-# Publishing Content with the Universal Visual Editor {#publishing}
+# Publishing Content with the Universal Editor {#publishing}
 
-Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
+Learn how the Universal Editor publishes content and how your apps can handle the published content.
 
 ## Similarities with AEM {#similarities}
 
-For users of AEM, the process to publish content with the Universal Visual Editor works as you are accustomed: on publication in AEM, the content is replicated from the author tier to the publish tier.
+For users of AEM, the process to publish content with the Universal Editor works as you are accustomed: on publication in AEM, the content is replicated from the author tier to the publish tier.
 
 ## Differences {#differences}
 
-What makes publishing with the Universal Visual Editor a bit different is not so much the editor itself, but rather the external hosting of the app that the Universal Editor makes possible.
+What makes publishing with the Universal Editor a bit different is not so much the editor itself, but rather the external hosting of the app that the Universal Editor makes possible.
 
 When externally hosted, it is the concern of the web app to ensure that content is loaded from the author tier when the app is opened by authors within the editor, and is loaded from the publish tier when the app is accessed by visitors.
 

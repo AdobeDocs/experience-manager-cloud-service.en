@@ -1,9 +1,8 @@
 ---
 title: The Content Copy Tool
 description: The content copy tool enables users to copy mutable content on-demand from their production environments on AEM as a Cloud Service to lower environments for testing purposes.
-exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
+exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 ---
-
 # The Content Copy Tool {#content-copy}
 
 The content copy tool enables users to copy mutable content on-demand from their production environments on AEM as a Cloud Service to lower environments for testing purposes.
@@ -195,3 +194,5 @@ The content copy tool has the following limitations.
 * The content copy tool has no versioning capability and cannot automatically detect modified content or newly-created content on the source environment in a content set since the last content copy operation.
   * If you want to update your destination environment with content changes only, since the last content copy operation, you must create a content set. Then, specify the paths on the source instance where changes were made since the last content copy operation.
 * Version information is not included in a content copy.
+
+{{ims-group-profiles}}

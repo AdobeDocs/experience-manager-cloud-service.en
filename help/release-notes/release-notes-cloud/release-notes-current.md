@@ -22,6 +22,10 @@ The following section outlines the feature release notes for the current (latest
 
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2023.9.0) is September 28, 2023. The next feature release (2023.10.0) is planned for October 26, 2023.
 
+## Maintenance Release Notes {#maintenance}
+
+You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
+
 <!-- 
 
 ## Release Video {#release-video}
@@ -121,10 +125,6 @@ Filter traffic at the CDN based on:
 Interested in trying out the feature and sharing feedback? Send an email to **aemcs-waf-adopter@adobe.com** from your official email ID to learn more about the early adopter program. Space is limited.
 
 Learn more about the feature in the article [here](/help/security/cdn-and-waf-rules.md).
-
-## Maintenance Release Notes {#maintenance}
-
-You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
 ## Cloud Manager {#cloud-manager}
 

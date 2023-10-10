@@ -1,6 +1,5 @@
 ---
-title: Layout capabilities of Adaptive Forms
-seo-title: Layout capabilities of Adaptive Forms
+title: What are the layout capabilities of Adaptive Forms?
 description: Layout and appearances of Adaptive Forms on various devices are governed by the layout settings. Understand the various layouts and how to apply them.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 ---
