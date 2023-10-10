@@ -99,11 +99,11 @@ This also means that the size of the result set can only be determined correctly
 
 Such a limit also prevents the query engine of hitting the **traversal limit** of 100,000 nodes, which leads to a forced stop of the query.
 
-See the section [Queries with large results](#queries-with-large-result-sets) of this document if a potentially large result set must be processed completely.
+See the section [Queries with large result sets](#queries-with-large-result-sets) of this document if a potentially large result set must be processed completely.
 
 ## Query Performance Tool {#query-performance-tool}
 
-The Query Performance Tool (located at `/libs/granite/operations/content/diagnosistools/queryPerformance.html` and available via the [Developer Console in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) provides -
+The Query Performance Tool (located at `/libs/granite/operations/content/diagnosistools/queryPerformance.html` and available via the [Developer Console in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)) provides -
   * A list of any 'Slow Queries'; currently defined as those reading / scanning more than 5000 rows.
   * A list of 'Popular Queries'
   * The 'Explain Query' tool for understanding how a particular query will be executed by Oak.
