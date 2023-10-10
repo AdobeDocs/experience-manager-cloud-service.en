@@ -3,8 +3,8 @@ title: Destination Selector for AEM as a Cloud Service
 description: Use the AEM Destination Selector to show and select assets that you can use as a copy of the original asset.
 contentOwner: Adobe
 role: Admin,User
+exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 ---
-
 # Micro-Frontend Destination Selector {#Overview}
 
 Micro-Frontend Destination Selector provides a user interface within your application that easily integrates with the [!DNL Experience Manager Assets as a Cloud Service] repository. You can search or browse to the appropriate folder within the [!DNL Experience Manager Assets as a Cloud Service] repository and upload assets from your application.
