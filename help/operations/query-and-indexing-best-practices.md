@@ -221,13 +221,14 @@ Within this plan, the section describing the query executed in the underlying in
 lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]
 ```
 
-This tells us that only 2 (of the 3) restrictions are handled by the index -
+This tells us that -
+  * Only 2 (of the 3) restrictions are handled by the index -
       * The nodetype restriction
         * implicit, because `damAssetLucene-9` only indexes nodes of type dam:Asset.
       * The path restriction
         * because `+:ancestors:/content/dam` appears in the Lucene query.
-        
-The property restriction `jcr:content/metadata/myProperty = "My Property Value"` is not executed at the index because this property is not indexed. 
+  * The property restriction `jcr:content/metadata/myProperty = "My Property Value"` is not executed at the index, but rather will be applied as Query Engine filtering on the results of the underlying Lucene query.
+    * We can tell this because `+jcr:content/metadata/myProperty:My Property Value` does not appears in the Lucene query, since this property is not indexed in the `damAssetLucene-9` index used for this query.
 
 This query execution plan will result in every asset beneath `/content/dam` being read from the index, and then filtered further by the query engine (which will only include those matching the non-indexed property restriction in the result set). 
 
@@ -251,15 +252,24 @@ It contains sample queries for QueryBuilder, XPath, and SQL-2, covering multiple
 
 ## Index Definition Best Practices {#index-definition-best-practices}
 
-Below are some best practices to consider when defining or extending indexes. For more information, see [Oak Lucene Index documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html). 
+Below are some best practices to consider when defining or extending indexes. 
+
 * For nodetypes which have existing indexes (such as `dam:Asset` or `cq:Page`) prefer extension of OOTB indexes to the addition of new indexes.
   * Adding new indexes - particularly fulltext indexes - on the `dam:Asset` nodetype is strongly discouraged (see [this note](/help/operations/indexing.md##index-names-index-names)).
-* When adding new indexes, use an index tag in the index definition (and associated query) and `selectionPolicy = tag` to ensure that the index is only used for the intended queries.
-* Ensure `queryPaths` and `includedPaths` are both provided (typically with the same values).
-* Use `excludedPaths` to exclude paths which will not contain useful results.
-* Use `analyzed` properties only when required, for example when you need to use a fulltext query restriction against only that property.
-* Always specify `async = [ async, nrt ] `, `compatVersion = 2` and `evaluatePathRestrictions = true`. 
-* Only specify `nodeScopeIndex = true` if you require a nodescope fulltext index.
+* When adding new indexes
+  * Always define indexes of type 'lucene'. 
+  * Use an index tag in the index definition (and associated query) and `selectionPolicy = tag` to ensure that the index is only used for the intended queries.
+  * Ensure `queryPaths` and `includedPaths` are both provided (typically with the same values).
+  * Use `excludedPaths` to exclude paths which will not contain useful results.
+  * Use `analyzed` properties only when required, for example when you need to use a fulltext query restriction against only that property.
+  * Always specify `async = [ async, nrt ] `, `compatVersion = 2` and `evaluatePathRestrictions = true`. 
+  * Only specify `nodeScopeIndex = true` if you require a nodescope fulltext index.
+
+>[!NOTE]
+>
+>For more information, see [Oak Lucene Index documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+
+Automated Cloud Manager pipeline checks will enforce some of the best-practices described above.
 
 ## Queries with Large Result Sets {#queries-with-large-result-sets}
 
