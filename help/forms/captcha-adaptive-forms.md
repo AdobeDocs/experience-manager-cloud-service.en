@@ -1,8 +1,13 @@
 ---
-title: Using reCAPTCHA in Adaptive Forms
-description: Learn how to configure Google reCAPTCHA service in Adaptive Forms.
+title: How to use CAPTCHA in Adaptive Forms?
+description: Learn to configure AEM CAPTCHA or Google reCAPTCHA service for an Adaptive Form.
+uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
+contentOwner: vishgupt
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
+exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 ---
+
 # Use reCAPTCHA in Adaptive Forms {#using-reCAPTCHA-in-adaptive-forms}
 
 <span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>

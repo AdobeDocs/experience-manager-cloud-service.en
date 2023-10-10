@@ -1,6 +1,6 @@
 ---
-title: How to Create Form Data Model?
-description: Experience Manager Forms data integration provides an intuitive user interface to create and work with form data models. Learn how to create form data models with or without configured data sources.
+title: How to create Form Data Model?
+description: Learn to create a form data model (FDM), and send or retrieve data to a datasource using an Adaptive Form or an AEM Workflow.
 feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate

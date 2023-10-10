@@ -1,8 +1,8 @@
 ---
 title: Customizing Views of Page Properties
 description: Learn how to page properties are viewed and edited by authors.
+exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
 ---
-
 # Customizing Views of Page Properties{#customizing-views-of-page-properties}
 
 Every page has a set of [properties](/help/sites-cloud/authoring/fundamentals/page-properties.md) that can be viewed and edited by users. Some are required when creating the page (create view), others can be viewed and edited (edit view) at a later stage. These page properties are defined and made available by the dialog (`cq:dialog`) of the appropriate page component.
