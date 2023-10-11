@@ -101,16 +101,17 @@ When modifying the caching headers at the Dispatcher layer, be cautious not to c
 
 JCR resources (bigger than 16KB) that are stored in blob store are typically served as 302 redirects by AEM. These redirects are intercepted and followed by CDN and the content is delivered directly from the blob store. Only a limited set of headers can be customised on these responses. For example, in order to customise `Content-Disposition` you should use the dispatcher directives as follows:
 
-{code:java}
+```
 <LocationMatch "\.(?i:pdf)$">
   ForceType application/pdf
   Header set Content-Disposition inline
-</LocationMatch>
-{code}
+  </LocationMatch>
+
+```
 
 The list of headers that can be be customised on blob responses are:
 
-{code:java}
+```
 content-security-policy
 x-frame-options
 x-xss-protection
@@ -124,7 +125,8 @@ x-vhost
 content-disposition
 cache-control
 vary
-{code}
+
+```
 
 #### New default caching behavior {#new-caching-behavior}
 
