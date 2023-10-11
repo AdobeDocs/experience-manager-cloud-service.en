@@ -1,8 +1,8 @@
 ---
 title: Administering Tags
 description: Learn how to administer tags in AEM to organize your content.
+exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 ---
-
 # Administering Tags {#administering-tags}
 
 Tags are an intuitive method of classifying your content. They can be thought of as keywords or labels (metadata) that allow content to be more quickly found.

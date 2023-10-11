@@ -515,7 +515,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 
 
-### Enable DASH, multi-subtitle, and multi-audio track support on your Dynamic Media account {#enable-dash}
+## Enable DASH, multi-subtitle, and multi-audio track support on your Dynamic Media account {#enable-dash}
 
 **About enabling DASH support on your account**
 DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.
@@ -533,7 +533,7 @@ Enabling DASH support on your account is done by way of an Adobe Customer Suppor
 
 **About enabling multi-subtitle and multi-audio track support on your account**
 
-At the same time you create an Adobe Support case to have DASH enabled on your account, you can also benefit from having multi-subtitle and multi-audio track support automatically enabled, too. After enablement, all subsequent videos that you upload are processed with a new backend architecture that includes support for adding multi-subtitle and multi-audio tracks to your videos.
+At the same time that you create an Adobe Support case to have DASH enabled on your account, you can also benefit from having multi-subtitle and multi-audio track support automatically enabled. After enablement, all subsequent videos that you upload are processed with a new backend architecture that includes support for adding multi-subtitle and multi-audio tracks to your videos.
 
 >[!IMPORTANT]
 >
@@ -545,7 +545,9 @@ At the same time you create an Adobe Support case to have DASH enabled on your a
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
-    * Name of your Dynamic Media account.
+    * Your Cloud Services environment (program ID and environment ID).
+    * Your Dynamic Media company account name.
+    * Your Dynamic Media region: North America (NA), Asia-Pacific (APAC), or Europe-Middle East-Asia (EMEA).
     * Specify that you want DASH, multi-subtitle, and multi-audio track support enabled on your Dynamic Media account, on Experience Manager 6.5.
    
 1. Adobe Customer Support adds you to the customer Wait List based on the order in which requests are submitted.
@@ -880,7 +882,7 @@ See [Serving static (non-image) contents](https://experienceleague.adobe.com/doc
 
 ## Add chapter markers to video {#adding-chapter-markers-to-video}
 
-You can make your long form videos easier to watch and navigate by adding chapter markers to single videos or to Adaptive Video Sets. When a user plays the video, they can select the chapter markers on the video timeline (also known as the video scrubber). They can easily navigate to their point of interest, or immediately jump to new content, training, and demonstrations.
+You can make your long-form videos easier to watch and navigate by adding chapter markers to single videos or to Adaptive Video Sets. When a user plays the video, they can select the chapter markers on the video timeline (also known as the video scrubber). They can easily navigate to their point of interest, or immediately jump to new content, training, and demonstrations.
 
 >[!NOTE]
 >
