@@ -180,7 +180,7 @@ Within this plan, the section describing the query executed in the underlying in
 lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +jcr:content/metadata/dc:title:My Title ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]
 ```
 
-This tells us that - 
+This section of the plan states that - 
 * An index is used to execute this query -
   * In this case the Lucene index `/oak:index/damAssetLucene-9` will be used, so the remaining information is in Lucene Query Syntax.
 * All 3 restrictions are handled by the index -
@@ -220,18 +220,18 @@ Within this plan, the section describing the query executed in the underlying in
 lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]
 ```
 
-This tells us that -
+This section of the plan states that - 
 * Only 2 (of the 3) restrictions are handled by the index -
     * The nodetype restriction
       * implicit, because `damAssetLucene-9` only indexes nodes of type dam:Asset.
     * The path restriction
       * because `+:ancestors:/content/dam` appears in the Lucene query.
 * The property restriction `jcr:content/metadata/myProperty = "My Property Value"` is not executed at the index, but rather will be applied as Query Engine filtering on the results of the underlying Lucene query.
-  * We can tell this because `+jcr:content/metadata/myProperty:My Property Value` does not appears in the Lucene query, since this property is not indexed in the `damAssetLucene-9` index used for this query.
+  * This is because `+jcr:content/metadata/myProperty:My Property Value` does not appears in the Lucene query, since this property is not indexed in the `damAssetLucene-9` index used for this query.
 
 This query execution plan will result in every asset beneath `/content/dam` being read from the index, and then filtered further by the query engine (which will only include those matching the non-indexed property restriction in the result set). 
 
-Even if only a small percentage of assets match the restriction `jcr:content/metadata/myProperty = "My Property Value"`, the query will need to read a large number of nodes in order to (attempt to) fill the requested 'page' of results. This can result in a poorly performing query, which will be shown as having a low `Read Optimization` score in the Query Performance tool). 
+Even if only a small percentage of assets match the restriction `jcr:content/metadata/myProperty = "My Property Value"`, the query will need to read a large number of nodes in order to (attempt to) fill the requested 'page' of results. This can result in a poorly performing query, which will be shown as having a low `Read Optimization` score in the Query Performance tool) and can lead to WARN messages indicating that large numbers of nodes are being traversed (see [Index Traversal](#index-traversal)).
 
 To optimize the performance of this second query, create a custom version of the `damAssetLucene-9` index (`damAssetLucene-9-custom-1`) and add the following property definition - 
 
