@@ -1,5 +1,5 @@
 ---
-title: How can we create and manage reviews of Adaptive Forms?
+title: How to send an adaptive form for review? How to manage reviews for an aem adaptive form?
 description: Review is a mechanism that allows reviewer to perform different tasks for adaptive forms using Assign Task step.
 feature: Adaptive Forms
 hide: yes

@@ -1,5 +1,5 @@
 ---
-title: What is placeholder text in AEM Forms? 
+title: How to add placeholder text to form fields?
 description: Placeholder text is intended to aid the user with data entry when the control has no value. It could be a sample value or a brief description of the expected format.
 ---
 

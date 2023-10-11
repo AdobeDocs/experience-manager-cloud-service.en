@@ -1,5 +1,5 @@
 ---
-title: What are the best practices for working with Adaptive Form components?
+title: Best practices and key points to remember when working with AEM adaptive forms.
 description: Some best practices and key points to remember when working with Adaptive Form components.
 
 ---

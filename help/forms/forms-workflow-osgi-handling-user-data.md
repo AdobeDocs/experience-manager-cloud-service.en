@@ -1,6 +1,5 @@
 ---
-title: What are Forms-centric workflows on OSGi | Handling user data?
-seo-title: Forms-centric workflows on OSGi | Handling user data
+title: Forms-centric workflows on OSGi | Handling user data
 description: Forms-centric workflows on OSGi | Handling user data
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp

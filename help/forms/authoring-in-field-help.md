@@ -1,5 +1,5 @@
 ---
-title: What is in-context help for form fields in Adaptive Forms?
+title: How to add help text for AEM Adaptive Forms fields?
 description: AEM Forms lets you add in-context help to Adaptive Form fields and panels, as text or rich media, including videos.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
