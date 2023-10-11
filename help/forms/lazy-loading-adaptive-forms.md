@@ -4,6 +4,7 @@ description: Learn about how to improve performance of large forms with lazy loa
 feature: Adaptive Forms
 role: User
 level: Intermediate
+exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
 ---
 # Improve performance of large forms with lazy loading{#improve-performance-of-large-forms-with-lazy-loading}
 

@@ -496,12 +496,7 @@ Define DISP_LOG_LEVEL debug
 
 ## CDN Log {#cdn-log}
 
- >[!NOTE]
- >
- >This feature is being gradually rolled out to customers in early September.
- >
-
- AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization. The CDN log format cannot be customized and there is no concept of setting it to different modes such as info, warn, or error.
+AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization. The CDN log format cannot be customized and there is no concept of setting it to different modes such as info, warn, or error.
 
 Note that the Splunk forwarding feature does not yet support CDN logs.
 

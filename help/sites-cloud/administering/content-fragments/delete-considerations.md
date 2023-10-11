@@ -3,8 +3,8 @@ title: Content Fragments - Delete Considerations
 description: Review these important considerations before defining your Content Fragments deletion policies in AEM. Content Fragments are a powerful tool for delivering headless content, and the implications of deleting them must be carefully considered.
 feature: Content Fragments
 role: User, Developer, Architect
+exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
 ---
-
 # Delete Considerations for Content Fragments {#delete-considerations-content-fragments}
 
 Review these important considerations before defining your deletion policies for Content Fragments in AEM. Content Fragments are a powerful tool for delivering headless content, and the implications of deleting them must be carefully considered.
@@ -70,4 +70,3 @@ The permissions prerequisite to allowing a specific user and/or group to edit/up
 * For all nodes below `jcr:content` of all Content Fragments:
 
   * `jcr:addChildNodes`, `jcr:modifyProperties`, and `jcr:removeChildNodes`, `jcr:removeNode`
-
