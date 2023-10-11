@@ -193,7 +193,7 @@ The new architecture for AEM as a Cloud Service introduces some fundamental chan
 
 * The architecture completely separates the application content from the application code and configuration. All code and configuration is practically immutable and baked into the baseline image used to create the various nodes of the author and publish services. As a result, there is an absolute guarantee that each node is identical, and the changes to code and configuration can only be made globally by running a Cloud Manager pipeline.
 
-## AEM with EDGE Services
+## AEM with Edge Delivery Services {#aem-with-edge-delivery-services}
 
 With the addition of Edge Delivery Services, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering high-impact experiences that are fast to author and develop. It is a composable set of services that enables a rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. As such, with Edge Delivery Services you can improve conversion, reduce costs, and provide extreme content velocity.
 
@@ -205,7 +205,7 @@ The updated architecture:comprises of:
   * Document based authoring; from either SharePoint or Google Drive
 * Experience Delivery, now including:
   * Edge Delivery Services
-* Ancilliary Services
+* Ancillary Services for the quick, and efficient delivery of content and code
 
 ![AEM as a Cloud Service Overview - with Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEM as a Cloud Service Overview - with Edge Delivery Services")
 
