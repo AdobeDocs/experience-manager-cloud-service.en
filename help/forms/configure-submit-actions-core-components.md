@@ -1,5 +1,5 @@
 ---
-title: How to configure a Submit Action for an Adaptive Form
+title: How to configure a Submit Action for an Adaptive Form?
 description: An Adaptive Form provides multiple Submit Actions. A Submit Action defines how an Adaptive Form is processed after submission. You can use built-in Submit Actions or create your own.
 hide: yes
 hidefromtoc: yes
