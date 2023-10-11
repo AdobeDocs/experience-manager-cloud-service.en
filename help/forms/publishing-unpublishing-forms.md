@@ -1,5 +1,5 @@
 ---
-title: How to publishing and unpublishing forms and documents?
+title: How to publish and unpublish forms and documents in AEM forms?
 description: Schedule publishing and unpublishing of your Adaptive Forms. Published forms are replicated on the publish instance.
 content-type: reference
 topic-tags: publish
