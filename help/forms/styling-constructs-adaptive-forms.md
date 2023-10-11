@@ -1,5 +1,5 @@
 ---
-title: How to style constructs for Adaptive Forms?
+title: How to customize appearance of adaptive forms?
 description: Use LESS framework for Adaptive Forms to customize appearance of Adaptive Forms.
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

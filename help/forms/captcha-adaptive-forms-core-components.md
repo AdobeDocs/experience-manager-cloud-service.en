@@ -1,5 +1,5 @@
 ---
-title: Use Google reCAPTCHA in an AEM Adaptive Form
+title: How to use Google reCAPTCHA in an AEM Adaptive Form?
 description: Enhance form security with Google reCAPTCHA service effortlessly. Step-by-step guide inside!
 topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
