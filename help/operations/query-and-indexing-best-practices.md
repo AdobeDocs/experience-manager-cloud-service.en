@@ -153,7 +153,7 @@ This popup includes details of -
   
 #### Reading the Query Execution Plan {#reading-query-execution-plan}
 
-The Query Execution Plan contains everything required to predict (or explain) the performance of a particular query. By comparing the restrictions and ordering in the original JCR (or Query Builder) query to the query executed in the underlying index (Lucene, Elastic or Property) we can understand how efficiently the query will be executed.
+The Query Execution Plan contains everything required to predict (or explain) the performance of a particular query. Understand how efficiently the query will be executed by comparing the restrictions and ordering in the original JCR (or Query Builder) query to the query executed in the underlying index (Lucene, Elastic or Property).
 
 Consider the following query -
 
