@@ -156,11 +156,25 @@ These guidelines are provided to help prevent performance issues with your Graph
 >
 >The optimization guidelines cover cache configuration, already covered in [Setup](#setup).
 
-### Your Apps {#your-apps}
+### Access GraphQL from your apps {#access-graphql-from-your-apps}
+
+AEM headless CMS gives developers the freedom to build and deliver exceptional experiences using the languages, frameworks, and tools they're already familiar with.
 
 #### Details {#details-your-apps}
 
+* [Install, and use, the AEM SDK for development](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)
+* [AEM Headless Developer Resources](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* Examples, including [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html), [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html), [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html), among others
+
 #### Environments {#environments-your-apps}
+
+* Publish
+
+For:
+
+* Development
+* Testing
+* Production
 
 ### Further Resources
 
@@ -168,3 +182,4 @@ For further details about AEM GraphQL and Content Fragments see:
 
 * [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
 * [Using the GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
+* [AEM Headless Developer Resources](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
