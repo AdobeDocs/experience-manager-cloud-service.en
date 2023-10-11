@@ -1,5 +1,5 @@
 ---
-title: How to translate a Core Components based Adaptive Form?
+title: How can we translate a Core Components based Adaptive Form?
 description: Learn to create a Form Data Model in AEM Forms, test the model with sample data and services, and configure various option for a model.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
