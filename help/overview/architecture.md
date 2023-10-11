@@ -192,3 +192,14 @@ The new architecture for AEM as a Cloud Service introduces some fundamental chan
 * The concept of a golden master was introduced for automating the lifecycle of the publish nodes. The golden master is a specialized publish node, never accessed by any end user, and from which all the nodes of the publish service are created. Maintenance operations such as compaction are performed on the content repository attached to the golden master. The publish nodes are recycled daily and do not require any sort of routine maintenance; in the past such maintenance required some downtime, especially for the author instance.
 
 * The architecture completely separates the application content from the application code and configuration. All code and configuration is practically immutable and baked into the baseline image used to create the various nodes of the author and publish services. As a result, there is an absolute guarantee that each node is identical, and the changes to code and configuration can only be made globally by running a Cloud Manager pipeline.
+
+## AEM with EDGE Services
+
+With Edge Delivery Services, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering high-impact experiences that are fast to author and develop. It is a composable set of services that enables a rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. As such, with Edge Delivery Services you can improve conversion, reduce costs, and provide extreme content velocity.
+
+![AEM as a Cloud Service Overview - with Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEM as a Cloud Service Overview - with Edge Delivery Services")
+
+See also:
+
+* [AEM as a Cloud Service Overview - with Edge Delivery Services](/help/edge/overview.md)
+* [Using Edge Delivery Services](/help/edge/using.md)
