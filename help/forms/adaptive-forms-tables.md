@@ -1,5 +1,5 @@
 ---
-title: What are table component in adaptive forms?
+title: How to add tables to an adaptive form?
 description: Use the table component to add tables to an Adaptive Form. Along with helping with the responsive layout, the table component allows adding XDP table elements.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms

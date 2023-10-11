@@ -1,5 +1,5 @@
 ---
-title: What are In-built AEM Forms as a Cloud Service Groups? 
+title: What user groups are available out of the box in AEM Forms as a Cloud Service?
 description: List of out of the box user groups and permissions assigned to each group 
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 ---

@@ -1,5 +1,5 @@
 ---
-title: What is AEM Forms as a Cloud Service Communications Batch Processing?
+title: Effortless Bulk PDF Creation - Master the Art with Batch Processing – Your Self-Help Guide to Generating Millions of PDF Documents!
 description: How to create brand-oriented and personalized communications?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
 ---

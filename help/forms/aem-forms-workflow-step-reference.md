@@ -1,5 +1,5 @@
 ---
-title: How to use Form-centric AEM workflows to automate business processes?
+title: Which workflow steps are available for on AEM Forms Cloud Service to create a workflow or for business process automation (BPM)?
 description: Forms-centric workflows allow you to rapidly build Adaptive Forms-based workflows. You can use Adobe Sign to e-sign documents, create forms-based business processes, retrieve and send data to multiple data sources, and send email notifications
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4

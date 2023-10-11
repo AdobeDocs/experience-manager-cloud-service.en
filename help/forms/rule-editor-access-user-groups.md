@@ -1,5 +1,5 @@
 ---
-title: How can we grant rule editor access to select user groups?
+title: How to provide access to aem adaptive forms rule editor to select user groups?
 description: There are different types of users with varied skills that work with Adaptive Forms. Learn how to limit rule editor access to users based on their role or function.
 feature: Adaptive Forms
 role: User
