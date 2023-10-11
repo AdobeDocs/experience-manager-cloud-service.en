@@ -195,7 +195,17 @@ The new architecture for AEM as a Cloud Service introduces some fundamental chan
 
 ## AEM with EDGE Services
 
-With Edge Delivery Services, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering high-impact experiences that are fast to author and develop. It is a composable set of services that enables a rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. As such, with Edge Delivery Services you can improve conversion, reduce costs, and provide extreme content velocity.
+With the addition of Edge Delivery Services, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering high-impact experiences that are fast to author and develop. It is a composable set of services that enables a rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. As such, with Edge Delivery Services you can improve conversion, reduce costs, and provide extreme content velocity.
+
+The updated architecture:comprises of:
+
+* Content Management, now including a selection of editors:
+  * Universal Visual Editor
+  * Content Fragment Editor
+  * Document based authoring; from either SharePoint or Google Drive
+* Experience Delivery, now including:
+  * Edge Delivery Services
+* Ancilliary Services
 
 ![AEM as a Cloud Service Overview - with Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEM as a Cloud Service Overview - with Edge Delivery Services")
 
@@ -203,3 +213,4 @@ See also:
 
 * [AEM as a Cloud Service Overview - with Edge Delivery Services](/help/edge/overview.md)
 * [Using Edge Delivery Services](/help/edge/using.md)
+* [Explore the underlying architecture and important pieces of AEM as a Cloud Service with Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
