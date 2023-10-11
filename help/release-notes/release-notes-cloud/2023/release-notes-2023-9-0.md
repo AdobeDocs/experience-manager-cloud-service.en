@@ -25,15 +25,11 @@ The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] cu
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
-<!-- 
-
 ## Release Video {#release-video}
 
 Have a look at the September 2023 Release Overview video for a summary of the features added in the 2023.9.0 release:
 
->[!VIDEO](put new link here)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
 ## AEM Edge Delivery Services {#edge-delivery}
 
