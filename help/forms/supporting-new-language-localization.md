@@ -1,5 +1,5 @@
 ---
-title: How to add support for new locales to an adaptive form?
+title: How do I add support for new locales to an Adaptive Form based on Foundation Components?
 description: For Adaptive Forms, you can add locales for more languages apart from the one provided out of the box.
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 ---
