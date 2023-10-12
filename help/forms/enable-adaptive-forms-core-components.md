@@ -1,5 +1,5 @@
 ---
-title: How to enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment
+title: How to enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment?
 description: Learn how to enable Adaptive Forms Core Components on AEM Forms as a Cloud Service.
 contentOwner: Khushwant Singh
 docset: CloudService

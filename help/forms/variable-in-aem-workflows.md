@@ -1,5 +1,5 @@
 ---
-title: How to add variables in AEM Workflow steps?
+title: How can we add variables to AEM Workflow steps?
 description: Learn to create a variable, set a value for the variable, and use it in [!DNL AEM Forms] Workflow steps.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 ---
