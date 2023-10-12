@@ -112,7 +112,8 @@ The Query Performance Tool (located at `/libs/granite/operations/content/diagnos
 
 The 'Slow Queries' and 'Popular Queries' tables include -
 * The query statement itself.
-* Details of the last Thread which executed the query, allowing the page or application feature executing the query to be identified.* A 'Read Optimization' score for the query.
+* Details of the last Thread which executed the query, allowing the page or application feature executing the query to be identified.
+* A 'Read Optimization' score for the query.
   * This is calculated as the ratio between the number of rows / nodes scanned in order to execute the query and the number of matching results read.
   * A query for which every restriction (and any ordering) can be handled at the index will typically score 90% or above.
 * Details of the maximum number of rows -
@@ -125,7 +126,7 @@ The `Reset Statistics` option is provided to remove all existing statistics coll
 
 ### Explain Query
 
-The Explain Query tool allows developers to understand the Query Execution Plan (see [Reading the Query Execution Plan](#reading-query-execution-plan)), including details of any indexes used when executing the query. This can be used to understand how effectively a query is indexed in order to predict, or retrospectively analyse its performance.
+The Explain Query Tool allows developers to understand the Query Execution Plan (see [Reading the Query Execution Plan](#reading-query-execution-plan)), including details of any indexes used when executing the query. This can be used to understand how effectively a query is indexed in order to predict, or retrospectively analyse its performance.
 
 #### Explaining a query
 
