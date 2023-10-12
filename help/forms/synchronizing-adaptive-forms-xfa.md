@@ -1,8 +1,6 @@
 ---
-title: Synchronizing Adaptive Forms with XFA Form Templates
-seo-title: Synchronizing Adaptive Forms with XFA Form Templates
+title: How can we synchronize Adaptive Forms with XFA Form templates?
 description: Synchronizing Adaptive Forms with XFA/XDP files.
-seo-description: Synchronizing Adaptive Forms with XFA/XDP files.
 uuid: 92818132-1ae0-4576-84f2-ece485a34457
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
