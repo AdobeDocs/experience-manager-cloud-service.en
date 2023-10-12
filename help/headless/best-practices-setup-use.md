@@ -53,6 +53,10 @@ Caching of persisted queries is not enabled by default in the Dispatcher. Defaul
 
 #### Environments {#environments-dispatcher-caching}
 
+The Dispatcher is usually configured for:
+
+* Publish: production
+
 ### CORS setup {#cors-setup}
 
 >[!NOTE]
@@ -80,6 +84,8 @@ A primary use case for The Adobe Experience Manager as a Cloud Service (AEM) Gra
 
 #### Environments {#environments-authentication}
 
+Authentication is usually configured for:
+
 * Preview
 * Publish
 
@@ -98,6 +104,8 @@ With a headless implementation, there are several areas of security and permissi
 [Permission considerations for headless content](/help/headless/security/permissions.md)
 
 #### Environments {#environments-permissions}
+
+Permissions are usually configured for:
 
 * Author
 * Preview
@@ -119,6 +127,10 @@ GraphQL queries and their JSON responses can be cached if targeted as `GET` requ
 
 #### Environments {#environments-cdn}
 
+A CDN is usually configured for:
+
+* Publish: production
+
 ### Configure and create Content Fragments {#cconfigure-create-content-fragments}
 
 AEM GraphQL is used to retrieve information from your Content Fragments. These need to be configured, then a structure and location defined, before you can create the content. 
@@ -131,6 +143,8 @@ AEM GraphQL is used to retrieve information from your Content Fragments. These n
 * [Create, and edit, your Content Fragments](/help/headless/setup/create-content-fragment.md)
 
 #### Environments {#eenvironments-content-fragments}
+
+Content Fragments are defined, authored, tested, published, and accessed on:
 
 * Author
 * Preview
@@ -168,6 +182,9 @@ AEM headless CMS gives developers the freedom to build and deliver exceptional e
 
 #### Environments {#environments-your-apps}
 
+Apps are usually developed, tested, and used on:
+
+* Preview
 * Publish
 
 For:
