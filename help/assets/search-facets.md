@@ -298,7 +298,7 @@ Similar to the way you add a Property predicate or an Options predicate, you can
  </tbody>
 </table>
 
-## Remove default search facets {#removing-deafult-search-facets}
+## Remove default search facets {#removing-default-search-facets}
 
 Adobe recommends you to be careful while removing default search facets to avoid performance issues. Removing default search facets might also impact the default feature behavior.
 
