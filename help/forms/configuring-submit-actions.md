@@ -231,6 +231,8 @@ configured Microsoft&reg; OneDrive.
 
 ### Create a OneDrive Configuration {#create-onedrice-configuration}
 
+>[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
+
 To connect AEM Forms to your Microsoft&reg; OneDrive Storage:
 
 1. Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; OneDrive]**.   
