@@ -1,6 +1,6 @@
 ---
-title: How to Use Form Data Model?
-description: Learn how to create Adaptive Forms and Adaptive Form Fragments based on a form data model. Dig deeper by generating and editing sample data for data model objects in the form data model. You can use this data to preview and test Adaptive Forms.
+title: How can we create Form Data Model for an Adaptive Form?
+description: Learn to create Adaptive Forms and Fragments based on a form data model(FDM). Generate and edit sample data for data model objects in the FDM.
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate

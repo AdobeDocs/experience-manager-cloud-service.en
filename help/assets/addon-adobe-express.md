@@ -1,6 +1,7 @@
 ---
 title: AEM Assets add-on for Adobe Express
 description: AEM Assets add-on for Adobe Express allows you to directly access the assets stored in AEM Assets from within the Adobe Express user interface.
+exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 ---
 # AEM Assets add-on for Adobe Express {#assets-addon-adobe-express}
 
@@ -58,4 +59,3 @@ After incorporating appropriate modifications in the Express canvas, you can sav
 1. Click **[!UICONTROL Upload]** to upload the asset to AEM Assets.
 
    ![Save assets in AEM](assets/aem-assets-add-on-save.png)
-

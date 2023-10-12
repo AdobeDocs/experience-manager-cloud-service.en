@@ -1,10 +1,9 @@
 ---
-title: Enable Adobe Analytics for an Adaptive Form
+title: How to enable Adobe Analytics for an Adaptive Form?
 description: Experience Cloud Setup Automation helps connect Adobe Analytics to an Adaptive Form to track insights about visitor interactions and engagement.
 keywords: Enable Adobe Analytics for an Adaptive Form using Experience Cloud Setup Automation, Enable Adobe Analytics in Forms, Adobe Analytics in Adaptive Forms, Forms analytics integration, Forms and Adobe Analytics
-
+exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
 ---
-
 # Enable Adobe Analytics for an Adaptive Form using Experience Cloud Setup Automation {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
 
 | Version | Article link |
