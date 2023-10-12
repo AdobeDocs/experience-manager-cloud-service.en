@@ -1,5 +1,5 @@
 ---
-title: Configure Asynchronous Submission of AEM Adaptive Forms
+title: How to configure Asynchronous Submission for AEM Adaptive Forms?
 description: Learn how to configure the asynchronous submission for Adaptive Forms. Dig deeper on how asynchronous submission works for Adaptive Forms.
 feature: Adaptive Forms
 role: User

@@ -1,5 +1,5 @@
 ---
-title: How to create and use themes in Adaptive Forms?
+title: How can we create and use themes in Adaptive Forms?
 description: You can use themes to style and provide a visual identity to an Adaptive Form using core components. You can share a theme across any number of Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 ---
