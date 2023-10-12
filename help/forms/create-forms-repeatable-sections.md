@@ -1,5 +1,5 @@
 ---
-title: How to create repeatable panels in Adaptive Form Core Components
+title: How to create repeatable panels in Adaptive Form Core Components?
 description: Learn to create repeatable section or fields in an Adaptive Form.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9

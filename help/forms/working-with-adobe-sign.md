@@ -1,5 +1,5 @@
 ---
-title: How to use [!DNL Adobe Sign] in an Adaptive Form?
+title: How can we use Adobe Sign in an Adaptive Form?
 description: Use Adobe Sign in an Adaptive Form to allow form recipients to e-sign a form from device and place of their choice.
 topic-tags: develop
 feature: Adaptive Forms

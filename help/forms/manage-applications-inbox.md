@@ -1,5 +1,5 @@
 ---
-title: How to manage forms applications and tasks in the AEM Inbox?
+title: How do I manage forms, applications, and tasks in the AEM Inbox?
 description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
