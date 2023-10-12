@@ -298,6 +298,18 @@ Similar to the way you add a Property predicate or an Options predicate, you can
  </tbody>
 </table>
 
+## Remove default search facets {#removing-default-search-facets}
+
+Adobe recommends you to be careful while removing default search facets to avoid performance issues. Removing default search facets might also impact the default feature behavior.
+
+Do not remove the following hidden fields as it causes a query performance issue with OmniSearch and smart collections:
+
+* group.2_group.type=dam:Asset
+
+* group.1_group.type=nt:folder
+
+* group.p.or=true
+
 ## Restore default search facets {#restoring-default-search-facets}
 
 By default, a Lock icon appears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page. The Lock icon disappears if you add search facets to the form indicating that the default form has been modified.

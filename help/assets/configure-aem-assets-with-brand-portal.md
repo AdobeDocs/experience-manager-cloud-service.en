@@ -101,7 +101,6 @@ Perform the following steps to validate the connection between your Experience M
 
    ![Create distribution agent](assets/test-bpconfig2.png)
 
-
 1. Click **[!UICONTROL Publish to Brand Portal]** to open the distribution agent. 
 
    You can see the distribution queues under the **[!UICONTROL Status]** tab. 
