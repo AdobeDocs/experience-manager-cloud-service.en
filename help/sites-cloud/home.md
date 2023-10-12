@@ -13,6 +13,7 @@ This page provides a complete list of all Adobe AEM Cloud Services support resou
 * [Notable Changes to AEM Sites as a Cloud Service](sites-cloud-changes.md)
 * [Authoring quick start guide](authoring/getting-started/quick-start.md)
 * [Publishing Pages](authoring/fundamentals/publishing-pages.md)
+* [Authoring with Edge Delivery Services](/help/edge/overview.md)
 * [Authoring Responsive Layout](authoring/features/responsive-layout.md)
 * [Authoring Templates](authoring/features/templates.md)
 * [Using Experience Fragments](authoring/fundamentals/experience-fragments.md)
