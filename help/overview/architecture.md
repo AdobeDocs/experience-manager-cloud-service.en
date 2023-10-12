@@ -101,9 +101,13 @@ Both of these allow access to a number of features and functionalities. The auth
 
 There are various main components of this new architecture:
 
-<!--- needs reworking -->
+<!--
 
 ![AEM as a Cloud Service - Runtime Architecture](assets/concepts-03.png "AEM as a Cloud Service - Runtime Architecture")
+
+-->
+
+![AEM as a Cloud Service Overview - with Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEM as a Cloud Service Overview - with Edge Delivery Services")
 
 * For AEM Sites as a Cloud Service:
 
@@ -162,8 +166,6 @@ There are various main components of this new architecture:
 Cloud Manager manages all updates to the instances of the AEM as a Cloud Service. It is mandatory, being the only way to build, test, and deploy the customer application, to both the author, the preview, and the publish tiers. These updates can be triggered by Adobe, when a new version of the AEM Cloud Service is ready, or by the Customer, when a new version of their application is ready.
 
 Technically, this is implemented due to the concept of a deployment pipeline, coupled to each environment within a program. When a Cloud Manager pipeline is running, it creates a new version of the customer application, both for the author, the preview, and the publish tiers. This is achieved by combining the latest customer packages with the latest baseline Adobe image. When the new images are built and tested successfully, Cloud Manager fully automates the cutover to the latest version of the image by updating all service nodes using a rolling update pattern. This results in no downtime for either the author or publish service.
-
-<!--- needs reworking -->
 
 ![AEM as a Cloud Service - Deployment Architecture](assets/concepts-04.png "AEM as a Cloud Service - Deployment Architecture")
 
