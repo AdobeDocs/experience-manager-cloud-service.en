@@ -55,7 +55,7 @@ An index definition can fall into one of the following categories:
 
 >[!NOTE]
 >
->Introducing new indexes on the `dam:Asset` nodetype (particularly fulltext indexes) is strongly discouraged as these can conflict with OOTB product features leading to functional and performance issues. In general, adding additional properties to the current `damAssetLucene-*` index version is the most appropriate way to index queries on the `dam:Asset` nodetype (these changes will automatically be merged into a new product version of the index if it is subseqently released). If in-doubt please contact Adobe Support for advice.
+>Introducing new indexes on the `dam:Asset` nodetype (particularly fulltext indexes) is strongly discouraged as these can conflict with OOTB product features leading to functional and performance issues. In general, adding additional properties to the current `damAssetLucene-*` index version is the most appropriate way to index queries on the `dam:Asset` nodetype (these changes will automatically be merged into a new product version of the index if it is subseqently released). If in doubt please contact Adobe Support for advice.
 
 ## Preparing the New Index Definition {#preparing-the-new-index-definition}
 
