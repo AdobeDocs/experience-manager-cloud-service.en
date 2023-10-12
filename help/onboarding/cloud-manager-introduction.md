@@ -3,6 +3,7 @@ title: Introduction to Cloud Manager
 description: Learn about how Cloud Manager supports your AEM project through its programs, environments, and pipelines.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 ---
+
 # Introduction to Cloud Manager {#intro-cloud-manager}
 
 Cloud Manager is an essential component of AEM as a Cloud Service and serves as the single entry point for your team. Its purpose-built CI/CD pipelines are equipped to ensure thorough testing and highest code quality to deliver exceptional experiences. To ensure customers can quickly start their projects, Cloud Manager provides everything required in a self-service manner including the ability to create your cloud resources and environments and access your git repositories. These features support enterprise development setups so teams can work towards committing changes frequently, rapidly delivering exceptional digital experiences, and accelerating time-to-value.

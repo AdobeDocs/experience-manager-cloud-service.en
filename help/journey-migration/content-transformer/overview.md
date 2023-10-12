@@ -1,6 +1,7 @@
 ---
 title: Overview to Content Transformer
 description: Learn how to detect and fix content related issues reported by the BPA using Content Transformer.
+exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
 ---
 # Overview {#overview-ct}
 

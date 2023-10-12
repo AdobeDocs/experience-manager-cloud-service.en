@@ -1,6 +1,7 @@
 ---
-title: Use custom fonts
+title: How can we use custom fonts in AEM Forms?
 description: Learn to add custom fonts to a Forms as a Cloud Service environment.
+exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
 ---
 # Use custom fonts
 

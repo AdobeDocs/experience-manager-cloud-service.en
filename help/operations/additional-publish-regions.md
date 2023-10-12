@@ -1,8 +1,8 @@
 ---
 title: Additional Publish Regions
 description: Learn how AEM as a Cloud Service supports additional publish regions for increased availability and reduced latency.
+exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 ---
-
 # Additional Publish Regions {#additional-publish-regions}
 
 Additional publish regions can be licensed and enabled on programs set up with AEM Sites. When configured, traffic on stage and production environments is routed to multiple publish farms, which has the following benefits:

@@ -3,8 +3,8 @@ title: Analyzing Content Fragments
 description: Understand the structure and content delivery of your Content Fragments. This provides about both headless delivery and page authoring.
 feature: Content Fragments
 role: User, Developer, Architect
+exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
 ---
-
 # Analyzing Content Fragment Structure {#analyzing-content-fragments-structure}
 
 Content Fragments are designed for [Headless delivery using GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). This means that they can have a multi-layered structure. 

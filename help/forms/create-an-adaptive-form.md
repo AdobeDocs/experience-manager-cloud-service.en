@@ -1,14 +1,14 @@
 ---
 title: How to create an Adaptive Form?
-description: Learn how to create mobile-responsive Adaptive Forms with our step-by-step tutorial. These forms adapt seamlessly across devices, ensuring a smooth experience. 
+description: Learn how to create mobile-responsive Adaptive Forms with our step-by-step tutorial. These forms adapt seamlessly across devices, ensuring a smooth experience.
 keywords: Adaptive Forms, Mobile Forms, Responsive Forms, HTML5 Forms
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 hide: yes
 hidefromtoc: yes
+exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
 ---
-
 # Create an Adaptive Form {#creating-an-adaptive-form}
 
 | Version | Article link |

@@ -1,8 +1,6 @@
 ---
-title: Creating and using themes
-description: You can use themes to stylize and provide a visual identity to an Adaptive Form using core components. You can share a theme across any number of Adaptive Forms.
-seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
-keywords: create new theme, customize theme, upload new theme, use theme in forms, customize theme using frontend pipeline
+title: How can we create and use themes in Adaptive Forms?
+description: You can use themes to style and provide a visual identity to an Adaptive Form using core components. You can share a theme across any number of Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 ---
 # Themes in Adaptive Forms {#themes-for-af-using-core-components}

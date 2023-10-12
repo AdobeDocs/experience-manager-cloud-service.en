@@ -1,6 +1,6 @@
 ---
-title: Integrate an Adaptive Form with Microsoft&reg; Power Automate
-description: Integrate an Adaptive Form with Microsoft&reg; Power Automate.
+title: How to integrate an Adaptive Form with Microsoft® Power Automate?
+description: Integrate an Adaptive Form with Microsoft® Power Automate.
 hide: yes
 hidefromtoc: yes
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6

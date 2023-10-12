@@ -1,15 +1,10 @@
 ---
-title: Publishing and unpublishing forms and documents
-seo-title: Publishing and unpublishing forms and documents
-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.
-seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.
-uuid: 0bad5608-b7a8-4599-81cc-2cd0a3dc7dd5
+title: How to publish and unpublish forms and documents in AEM forms?
+description: Schedule publishing and unpublishing of your Adaptive Forms. Published forms are replicated on the publish instance.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-content-strategy: max-2018
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
-docset: aem65
+docset: aem65s
 
 ---
 
