@@ -6,7 +6,7 @@ contentOwner: KK
 
 # AEM Search Best Practices
 
-Adobe Experience Manager Assets provides robust asset search methods that help you achieve higher content velocity. Sometimes, finding the right asset can be arduous and time-consuming if you only use the generic search capabilities of Experience Manager. Search assets capability is central to the usage of a digital asset management system - be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators.
+[!DNL Adobe Experience Manager Assets] provides robust asset search methods that help you achieve higher content velocity. Sometimes, finding the right asset can be arduous and time-consuming. Therefore, search assets capability in [!DNL Adobe Experience Manager Assets] is central to the usage of a digital asset management system - be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators.
 
 This help document contains best practices of AEM search with the help of various scenarios to assist AEM users to perform basic to advanced level search.
 
@@ -18,11 +18,11 @@ Following are the basic steps to perform in Experience Manager before you begin 
 In the **Assets view**, the search bar is visible on the top and can be accessed directly.
 * `Location:Assets` and `Path:/content/dam` are pre-selected to limit the search scope to your Experience Manager Assets repository. If you navigate to any other folder, `Path:/content/dam/<folder name>` displays in the Omni Search field to limit the search scope to the current folder.
 
-## Simple Search {#simple-search}
+## Basic Search {#basic-search}
 
 **Scenario 1: Perform a basic search using a `classic car` as the search keyword.**
 
-The keyword search is not case-sensitive and is a full-text search (across the popular metadata fields). If more than one keyword is used, **AND is the default operator between the keywords, thus, write AND between the keywords**.
+The keyword search is not case-sensitive and is a full-text search across the metadata fields that are included in the Asset *full text search* index (configurable in the index definition). If more than one keyword is used, **AND is the default operator between the keywords, thus, it considers a search for 'classic car' to be 'classic AND car'**.
 
 The search results that match all search terms in metadata fields are displayed first, followed by the search results that match any of the search terms in the smart tags. The approximate order of display of search results is:
 
@@ -30,11 +30,11 @@ The search results that match all search terms in metadata fields are displayed 
 2. Matches of `Classic Car` in smart tags.
 3. Matches of `Classic` or of `Car` in smart tags.
 
-Specify `classic car` as the search keyword and click Search. You can view the search suggestions in a drop-down list as you type the keyword. The search suggestions are based on the historical searches performed on your Experience Manager deployment. If you cannot view the appropriate assets in the drop-down menu, press the Enter key to view the list of results. The results are sorted by relevance, starting from the closest matches.
+Specify `classic car` as the search keyword and click Search. You can view the search suggestions in a drop-down list as you type the keyword. The search suggestions are based on the contents of the search index on your Experience Manager deployment. If you cannot view the appropriate assets in the drop-down menu, press the Enter key to view the list of results. The results are sorted by relevance, starting from the closest matches.
 
-![Performing simple search method 1](assets/simple-search-1.png)
+![Performing basic search method 1](assets/simple-search-1.png)
 
-You can make the search more specific by adding your search keyword in double quotes (" "). The search criteria look like - `"classic car"`. 
+You can make the search more specific by adding your search keyword in double quotes (" "). This search only include Assets which contain the specified terms together. The search criteria look like - `"classic car"`. Therefore, the search results with both terms `classic` and `car` are shown. 
 
 ![Finding exact match](assets/simple-search-2.png)
 
@@ -239,7 +239,7 @@ The search displays similar results if you are working in the **[!UICONTROL Asse
 
 **Scenario 9: Find similar match for red color car**
 
-While performing your search on AEM, you can filter your results by showing similar assets to the selected ones. You can use the **Find Similar** option to narrow down your search to the exact or similar match of the searched Asset. For example, you want to search for duplicate assets. Execute the following steps:
+While performing your search on AEM, you can filter your results by showing similar assets to the selected ones. You can use the **Find Similar** option to narrow down your search to the exact or similar match of the searched Asset. This helps finding assets which have similar smart tags to the selected asset. For example, when you want to search for alike assets, execute the following steps:
 
 1. Search the asset as per your requirement.
 1. Hover over the asset > click ellipsis > select [!UICONTROL Find Similar].
@@ -248,7 +248,7 @@ Select the asset > navigate to the ellipsis at the top right > select [!UICONTRO
 
     ![Find similar](assets/find-similar.png)
 
-1. Notice the search bar. The thumbnail of the selected asset appears on the search bar indicating your search requirement. As a result, it returns the similar looking assets.
+1. Notice the search bar. The thumbnail of the selected asset appears on the search bar indicating your search requirement. As a result, it return assets with similar smart tags.
 
 **[!UICONTROL Assets view]** does not support the [!UICONTROL Find Similar] option.
 
@@ -256,11 +256,11 @@ Select the asset > navigate to the ellipsis at the top right > select [!UICONTRO
 
 Search facets in Adobe Experience Manager let you search for assets in multiple ways rather than in a single, pre-determined, or taxonomic order. You can customize search facets and add predicates as per your requirement. Read [Search Facets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) for the step-by-step guide about adding a custom predicate.
 
-**Scenario 10: Search assets based on Sku ID**
+<!--**Scenario 10: Search assets based on Sku ID**
+to be added later
+-->
 
-
-
-**Scenario 11: Search specific assets based on their last modified or expiry date**
+**Scenario 10: Search specific assets based on their last modified or expiry date**
 
 Date constraints allow you to narrow down your custom search to a particular period, for example, using the time period search filters. To search for the above requirement, type `classic car` in the search bar. Select the date range in the [!UICONTROL Created Date] and [!UICONTROL Last Modified] date filters.
 
