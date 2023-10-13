@@ -9,17 +9,18 @@ The following section outlines the general Release Notes for [!DNL Workfront for
 
 ## Release Date {#release-date}
 
-The release date for the latest version 1.9.13 of [!DNL Workfront for Experience Manager enhanced connector] is September 11, 2023.
+The release date for the latest version 1.9.14 of [!DNL Workfront for Experience Manager enhanced connector] is October 13, 2023.
 
 ## Release highlights {#release-highlights}
 
-The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following updates:
+The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fixes:
 
-* Experience Manager enhanced connector fetches all event subscriptions from Workfront while deleting an event subscription for a project, which leads to a performance impact on the application.
+* When event subscriptions are disabled under Advanced Settings, you can still select the options to **Subscribe to document update events to update AEM asset metadata**, **Publish all project assets to Brand Portal upon project completion**, and **Enable Comment Sync**.
 
-* When an asset is sent from Workfront to Experience Manager, the asset MIME type is not set to `dc:format` attribute within Experience Manager.
+* Some of the assets stored in Experience Manager do not render appropriately when you preview them in Workfront.
 
-* Workfront project IDs stored on Experience Manager enhanced connector include duplicates.
+* While configuring a new Experience Manager connection with Workfront, the old subscription is not deleted and the new subscription does not point to the new Experience Manager URL.
+
 
 >[!NOTE]
 >
@@ -28,7 +29,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 >[!IMPORTANT]
 >
->Adobe recommends you [upgrade to the latest 1.9.13 version](/help/assets/workfront-connector-install.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recommends you [upgrade to the latest 1.9.14 version](/help/assets/workfront-connector-install.md) of the [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Known Issues {#known-issues}
 
@@ -37,6 +38,14 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** dropdown list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** drop-down list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** drop-down list and the **[!UICONTROL Document Actions]** drop-down list available in the new Workfront experience.
 
 ## Previous releases {#previous-releases}
+
+### September 2023 release {#september-2023-release}
+
+* Experience Manager enhanced connector fetches all event subscriptions from Workfront while deleting an event subscription for a project, which leads to a performance impact on the application.
+
+* When an asset is sent from Workfront to Experience Manager, the asset MIME type is not set to `dc:format` attribute within Experience Manager.
+
+* Workfront project IDs stored on Experience Manager enhanced connector include duplicates.
 
 ### August 2023 release {#august-2023-release}
 
