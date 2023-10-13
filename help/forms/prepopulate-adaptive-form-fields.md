@@ -398,12 +398,11 @@ You can configure the [!DNL AEM Forms] server to perform the data merge action a
    To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->
 
 
-## See Also {#see-also}
-
-
-- [Translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
-- [Add a new locale for an Adaptive Form](/help/forms/supporting-new-language-localization-core-components.md)
-- [Connect Adaptive Form to Microsoft SharePoint,](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive) [Microsoft Power Automate,](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate) [Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration) [or Azure Blob Storage](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
-- [Send Adaptive Form data to AEM Workflow or a business process manager](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
-- [Send Adaptive Form data to a database or REST endpoint](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
-- [Enable Adobe Analytics to Adaptive Form to track forms usage](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+>[!MORELIKETHIS]
+>
+>* [Translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+>* [Add a new locale for an Adaptive Form](/help/forms/supporting-new-language-localization-core-components.md)
+>* [Connect Adaptive Form to Microsoft SharePoint,](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive) [Microsoft Power Automate,](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate) [Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration) [or Azure Blob Storage](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
+>* [Send Adaptive Form data to AEM Workflow or a business process manager](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+>* [Send Adaptive Form data to a database or REST endpoint](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
+>* [Enable Adobe Analytics to Adaptive Form to track forms usage](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
