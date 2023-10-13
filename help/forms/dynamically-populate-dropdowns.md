@@ -166,3 +166,7 @@ Consider a scenario where you want to populate the **State** drop-down list base
 The Content package that contains a sample Adaptive Form (demo/AFdemo) with the above code implemented.
 
 [Get File](assets/dropdown-demo-content-1.0.1-snapshot.zip)
+
+>[!MORELIKETHIS]
+>
+>* [Prefill Adaptive Form fields](/help/forms/prepopulate-adaptive-form-fields.md)
