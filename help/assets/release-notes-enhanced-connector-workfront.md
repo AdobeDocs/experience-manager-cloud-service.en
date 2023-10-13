@@ -19,7 +19,9 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 * Some of the assets stored in Experience Manager do not render appropriately when you preview them in Workfront.
 
-* While configuring a new Experience Manager connection with Workfront, the old subscription is not deleted and the new subscription does not point to the new Experience Manager URL.
+* While reconfiguring Experience Manager connection with Workfront, event subscriptions such as comment sync update, delete, document update are not created successfully.
+
+* Major API performance improvements for linked folder creation, update, enable linked folder, comment sync enable and disable, advance settings save on connector.
 
 
 >[!NOTE]
