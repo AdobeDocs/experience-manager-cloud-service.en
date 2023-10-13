@@ -110,3 +110,8 @@ Perform the following steps to write rules to handle success and error events.
    ![successful submission handler](assets/form-submission-handler.png)
 
 1. Tap **[!UICONTROL Done]** to save the rule.
+
+
+>[!MORELIKETHIS]
+>
+>* [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)

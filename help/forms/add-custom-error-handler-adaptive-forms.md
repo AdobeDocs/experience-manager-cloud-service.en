@@ -400,9 +400,15 @@ Using this custom error handler, the adaptive form converts the fields listed in
  -->
 
 
-## See also {#see-also}
+## See Also {#see-also}
 
 * [Create and use custom error handlers in Adaptive Forms (Core Components)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
 * [Create a standalone Core Components based Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
 * [Create style or themes for your forms](/help/forms/using-themes-in-core-components.md)
 * [Create or add an Adaptive Form to AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Add a new locale for an Adaptive Form](/help/forms/supporting-new-language-localization-core-components.md)
+* [Connect Adaptive Form to Microsoft SharePoint,](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive) [Microsoft Power Automate,](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate) [Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration) [or Azure Blob Storage](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
+* [Send Adaptive Form data to AEM Workflow or a business process manager](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+* [Send Adaptive Form data to a database or REST endpoint](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
+* [Enable Adobe Analytics to Adaptive Form to track forms usage](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)

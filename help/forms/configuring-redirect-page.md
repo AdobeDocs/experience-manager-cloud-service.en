@@ -29,3 +29,7 @@ Form authors can configure a page for each form, to which the form users are red
 Form authors can use the following parameters that are passed to the Thank you page. For all the available Submit Actions, `status` and `owner` parameters are passed. Besides these two parameters, some additional parameters are passed for the following Submit Actions:
 
 * **[!UICONTROL Submit to REST endpoint]**: Parameters added for in-field to parameter mapping are passed. `status` and `owner` parameters are not passed in this Submit Action. For more information, see [Configuring the Submit to REST endpoint Submit Action](configuring-submit-actions.md).
+
+>[!MORELIKETHIS]
+>
+>* [Configure a Redirect Page or thank you message](/help/forms/configure-redirect-page-or-thank-you-message.md)

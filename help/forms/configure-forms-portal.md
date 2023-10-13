@@ -176,3 +176,24 @@ You can configure the auto-save feature for an adaptive form as follows:
 1. Select the **[!UICONTROL Enable]** check box to enable auto-save of the form. You can configure the following:
 * By default, the [!UICONTROL Adaptive Form Event] is set to "true", which implies that the form is auto-saved after every event.
 * In [!UICONTROL Trigger], configure to trigger auto-save based on the occurrence of an event or after a specific interval of time.
+
+## See Also {#see-also}
+
+* [Translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Add a new locale for an Adaptive Form](/help/forms/supporting-new-language-localization-core-components.md)
+* [Connect Adaptive Form to Microsoft SharePoint,](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive) [Microsoft Power Automate,](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate) [Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration) [or Azure Blob Storage](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
+* [Send Adaptive Form data to AEM Workflow or a business process manager](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+* [Send Adaptive Form data to a database or REST endpoint](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
+* [Enable Adobe Analytics to Adaptive Form to track forms usage](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+
+-->

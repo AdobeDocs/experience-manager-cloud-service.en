@@ -177,3 +177,6 @@ When the Adaptive Form URL does not have any localization information, and **[!U
    </VirtualHost>
 
 ```
+>[!MORELIKETHIS]
+>
+>* [Troubleshoot caching-related issues for AEM Forms as a Cloud Service](/help/forms/troubleshooting-caching-performance.md)

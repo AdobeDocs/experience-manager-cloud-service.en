@@ -1,6 +1,6 @@
 ---
 title: How to use CAPTCHA in Adaptive Forms?
-description: Learn to configure AEM CAPTCHA or Google reCAPTCHA service for an Adaptive Form.
+description: Learn to configure or Google reCAPTCHA service for an Adaptive Form.
 uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -339,3 +339,18 @@ Set the **[!UICONTROL af.cloudservices.recaptcha.domain]** property of the **[!U
 ```
 
 To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
+
+## See Also {#see-also}
+
+* [Translate an adaptive form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Add a new locale for an adaptive form](/help/forms/supporting-new-language-localization-core-components.md)
+* [Connect Adaptive Form to Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive), [Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate), [Microsoft OneDrive](/help/forms/), or [Azure Blob Storage](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
+* [Send Adaptive Form data to AEM Workflow or a business process manager](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+* [Enable Adobe Analytics to Adaptive Form to track forms usage](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Send Adaptive Form data to a database or REST endpoint](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
+
+
+>[!MORELIKETHIS]
+>
+>* [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)
+>* [Reference Themes, Templates, and Form Data models for Adaptive Forms](/help/forms/reference-themes-templates-data-models.md)

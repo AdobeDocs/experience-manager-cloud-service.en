@@ -218,3 +218,8 @@ On the side panel, you can use the following to narrow down your search results:
 The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html). -->
+
+>[!MORELIKETHIS]
+>
+>* [Import export form templates](/help/forms/import-export-forms-and-related-assets.md)
+>* [Use themes in Adaptive Form Core Components ](/help/forms/using-themes-in-core-components.md)

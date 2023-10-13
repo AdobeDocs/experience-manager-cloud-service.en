@@ -214,3 +214,8 @@ To set values of a configuration, [Generate OSGi Configurations using the AEM SD
 * [Using Adobe Acrobat Sign in an Adaptive Form](working-with-adobe-sign.md)
 
 * [Best practices for using Adobe Acrobat Sign with Adaptive Forms](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+
+>[!MORELIKETHIS]
+>
+>* [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)
+>* [E-sign a form using scribble signatures](/help/forms/signing-forms-using-scribble.md)

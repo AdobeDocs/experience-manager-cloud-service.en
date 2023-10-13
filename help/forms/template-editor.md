@@ -217,3 +217,13 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 * When you modify properties of the form in template editor, do not use the BindReference property.
 * If you want to add a breakpoint, create it when you author an Adaptive Form template.
   For more information on breakpoints, see [Responsive Layout](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring).
+
+
+## See Also {#see-also}
+
+* [Translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Add a new locale for an Adaptive Form](/help/forms/supporting-new-language-localization-core-components.md)
+* [Connect Adaptive Form to Microsoft SharePoint,](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive) [Microsoft Power Automate,](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate) [Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration) [or Azure Blob Storage](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
+* [Send Adaptive Form data to AEM Workflow or a business process manager](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+* [Send Adaptive Form data to a database or REST endpoint](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
+* [Enable Adobe Analytics to Adaptive Form to track forms usage](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)

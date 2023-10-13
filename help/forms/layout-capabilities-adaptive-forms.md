@@ -140,3 +140,14 @@ For the Mobile layout, you can add action buttons using icons.
 ![Mobile fixed layout for toolbar](assets/toolbar_layout_mobile_fixed.png)
 
 Mobile fixed layout for toolbar-->
+
+
+## See Also {#see-also}
+
+
+* [Translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Add a new locale for an Adaptive Form](/help/forms/supporting-new-language-localization-core-components.md)
+* [Connect Adaptive Form to Microsoft SharePoint,](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive) [Microsoft Power Automate,](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate) [Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration) [or Azure Blob Storage](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
+* [Send Adaptive Form data to AEM Workflow or a business process manager](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+* [Send Adaptive Form data to a database or REST endpoint](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
+* [Enable Adobe Analytics to Adaptive Form to track forms usage](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)

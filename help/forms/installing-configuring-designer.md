@@ -68,3 +68,8 @@ To install Designer, perform the following steps:
 * [Use custom fonts](/help/forms/use-custom-fonts.md)
 * [Create a standalone Core Components based Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
 * [Create or add an Adaptive Form to AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+>[!MORELIKETHIS]
+>
+>* [Use Forms Designer to create Document of Record (DoR) templates and form fragments](/help/forms/use-forms-designer.md)

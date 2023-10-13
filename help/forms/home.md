@@ -67,5 +67,7 @@ The service integrates with Adobe Analytics that lets you capture and track perf
 * [Setup a local development environment](/help/forms/setup-local-development-environment.md)
 * [Migrate from AEM 6.5 Forms to Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 
-
+>[!MORELIKETHIS]
+>
+>* [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
 
