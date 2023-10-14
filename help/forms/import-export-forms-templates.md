@@ -221,5 +221,4 @@ For more information and instructions on using search, filters, saved search, an
 
 >[!MORELIKETHIS]
 >
->* [Import export form templates](/help/forms/import-export-forms-and-related-assets.md)
 >* [Use themes in Adaptive Form Core Components ](/help/forms/using-themes-in-core-components.md)

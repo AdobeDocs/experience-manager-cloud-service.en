@@ -235,6 +235,10 @@ In the following code, the `SampleType`panel uses the minOccours & maxOccurs pro
 * [Send Adaptive Form data to a database or REST endpoint](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Enable Adobe Analytics to Adaptive Form to track forms usage](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 
+
+<!--
 >[!MORELIKETHIS]
 >
 >* [Creating forms with repeatable sections](/help/forms/creating-forms-repeatable-sections.md)
+
+-->

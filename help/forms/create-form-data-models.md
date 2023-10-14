@@ -138,4 +138,3 @@ For more information, see [Work with form data model](work-with-form-data-model.
 >[!MORELIKETHIS]
 >
 >* [Use Form Data Model](/help/forms/using-form-data-model.md)
->* [Invoke Form Data Model service from Adaptive Forms](/help/forms/invoke-form-data-model-services.md)
