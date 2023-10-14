@@ -777,7 +777,10 @@ The extension of JSON Schema file must be .schema.json. For example, &lt;filenam
 * [Send Adaptive Form data to a database or REST endpoint](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 
 
+<!--
+
 >[!MORELIKETHIS]
 >
 >* [Design XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
 
+-->

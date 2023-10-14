@@ -119,6 +119,11 @@ This section describes what happens on **Review Update/End**:
 * [Send Adaptive Form data to a database or REST endpoint](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Enable Adobe Analytics to Adaptive Form to track forms usage](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 
+
+<!--
+
 >[!MORELIKETHIS]
 >
 >* [Associating submission reviewers with a form](/help/forms/adding-reviewers-form.md)
+
+-->

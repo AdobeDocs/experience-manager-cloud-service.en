@@ -339,5 +339,3 @@ In addition, you can drag-drop a group of XSD complex type elements to create a 
 >[!MORELIKETHIS]
 >
 >* [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)
->* [Creating forms with repeatable sections](/help/forms/creating-forms-repeatable-sections.md)
->* [Create and use Adaptive Forms Fragments in an Adaptive Form](/help/forms/adaptive-form-fragments.md)
