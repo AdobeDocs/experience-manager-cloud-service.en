@@ -13,3 +13,16 @@
 >[!NOTE]
 >
 >AEM currently does not support assigning groups to profiles. Users should be added individually instead.
+
+## See Also {#see-also}
+
+* [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+* [Translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Generate PDF version (DoR) of an adaptive form](/help/forms/generate-document-of-record-core-components.md)
+* [Add a new locale for an Adaptive Form](/help/forms/supporting-new-language-localization-core-components.md)
+* [Connect Adaptive Form to Microsoft SharePoint,](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive) [Microsoft Power Automate,](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate) [Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration) [or Azure Blob Storage](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
+* [Send Adaptive Form data to AEM Workflow or a business process manager](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+* [Send Adaptive Form data to a database or REST endpoint](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
+* [Enable Adobe Analytics to Adaptive Form to track forms usage](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Use Google reCAPTCHA in an adaptive form](/help/forms/captcha-adaptive-forms-core-components.md)
+* [Use Adobe Sign in an adaptive form](/help/forms/adobe-sign-integration-adaptive-forms.md)
