@@ -378,12 +378,6 @@ To start the prefill service, upload the JAR file to [!DNL AEM Forms] Web Consol
 1. In the Properties console, navigate to [!DNL AEM Forms] container &gt; Basic &gt; Prefill Service.
 1. Select the Default Prefill Service and click **[!UICONTROL Save]**. The service is associated to the form.
 
-## See Also {#see-also}
-
-{{see-also}})
-
-
-
 <!-- ## Prepopulate data at client {#prefill-at-client}
 
 When you prefill an Adaptive Form, the [!DNL AEM Forms] server merges data with an Adaptive Form and delivers the filled form to you. By default, the data merge action takes place at the server.
