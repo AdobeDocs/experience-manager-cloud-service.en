@@ -309,7 +309,8 @@ This can occur for a number of reasons -
    * In this case, all results returned by the the index must be read by the query Engine and sorted in-memory.
    * This is many times slower than applying sorting in the underlying index query. 
 1. The executor of the query is attempting to iterate a large result set.
-   * This situation might happen for a number of reasons -
+   * This situation might happen for a number of reasons, as listed below:
+   
 | Cause    | Mitigation   | 
 |----------|--------------|
 | The ommission of `p.guessTotal` (or the use of a very large guessTotal) causing QueryBuilder to iterate large numbers of results counting results |Provide `p.guessTotal` with an appropriate value |
