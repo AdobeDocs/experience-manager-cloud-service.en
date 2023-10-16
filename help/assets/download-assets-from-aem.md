@@ -126,6 +126,15 @@ If you do not need the download functionality, then disable the servlet to preve
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
+## OnTime/OffTime rendition {#on-off-time-rendition}
+
+To allow the on/off time to block access to renditions and metadata in addition to the asset itself, the `OnOffTimeAssetAccessFilter` service must be enabled. This can be done by [adding an empty OSGi configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en) for its PID. To do this, follow the steps below:
+
+1. Create an OSGi configuration for `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. 
+1. In the project code in Git, add a configuration `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`
+1. Deploy the code including this configuration through [!DNL Cloud Manager].
+1. Once deployed, the renditions and metadata are accessible as per the on/off time settings of the assets. Additionally, if the current date or time is before the on-time or after the off-time, the error pops up.
+
 ## Tips and limitations {#tips-limitations}
 
 * If you download an empty folder, [!DNL Experience Manager] conveys a success message about creating a ZIP archive, but the archive is not created.
