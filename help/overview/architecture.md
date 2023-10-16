@@ -8,7 +8,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 >[!CONTEXTUALHELP]
 >id="intro_aem_cloudservice_architecture"
 >title="Introduction to AEM as a Cloud Service Architecture"
->abstract="In this tab, you can view the new architecture of AEM as a Cloud Service and understand the changes. AEM has resulted in a dynamic architecture with a variable number of images so it is important to take the time to understand.the cloud architecture"
+>abstract="In this tab, you can view the new architecture of AEM as a Cloud Service and understand the changes. AEM has resulted in a dynamic architecture with a variable number of images so it is important to take the time to understand the cloud architecture."
 >additional-url="https://video.tv.adobe.com/v/330542/" text="Architecture Overview"
 
 
@@ -38,9 +38,9 @@ This enables autoscaling for varying usage patterns:
 
 To achieve this, all instances of the AEM as a Cloud Service are created equal, each with the same default sizing characteristics in terms of the number of nodes, allocated memory and allocated computing capacity. 
 
-AEM as a Cloud Service is based on the use of an orchestration engine that:
+AEM as a Cloud Service:
 
-* Constantly monitors the state of the service.
+* Constantly monitors the state of the services.
 
 * Dynamically scales each of the service instances as per the actual needs; both scaling up or down as appropriate. 
 
@@ -111,7 +111,9 @@ There are various main components of this new architecture:
 
 * For AEM Sites as a Cloud Service:
 
-  * There continues to be the concept of an authoring tier and a publish tier for each environment (at a high level).
+  * For a traditional configuration, there continues to be the concept of an authoring tier and a publish tier for each environment (at a high level).
+
+  * With the newer [Edge Delivery Services](/help/edge/overview.md), authoring can *also* use [document-based editing](https://www.hlx.live/docs/authoring) that takes place externally; in either SharePoint or Google Drive. There is still a publish tier.
 
   * The author tier is made of two or more nodes within a single author cluster. It scales automatically, dependent on the authoring activity.
 
@@ -124,16 +126,18 @@ There are various main components of this new architecture:
   * The preview tier is comprised of a single preview node. This used for quality assurance of content before publishing to the publish tier.
 
   * The publish tier is comprised of two or more nodes within a single publish farm.
-    
+
     * The nodes can operate independently from each other.
-    
+
     * Each node consists of an AEM publisher and a web server equipped with the AEM Dispatcher module.
-    
+
     * It scales automatically with site traffic needs.
-    
+
     * By default there is a single publish farm in the primary region, however [additional publish regions](/help/operations/additional-publish-regions.md) may be licensed.
-    
+
     * End users, or site visitors, visit the website via the AEM Publish Service.
+
+  * Edge Delivery Services are part of Adobe Experience Manager and as such, Edge Delivery and AEM Sites can co-exist on the same domain. This is a common use case for larger websites. Content from Edge Delivery can easily be consumed in your AEM Sites pages and vice versa.
 
 * For AEM Assets as a Cloud Service:
   
@@ -159,7 +163,7 @@ There are various main components of this new architecture:
 
   * For the publish tier and the preview tier, a Continuous Delivery Network (CDN) Service is also available as the first entry point.
 
-* For demonstration instances of AEM as a Cloud Service the architecture is simplified to a single author node. Therefore it does not present all the characteristics of standard development, stage or production environment. This also means that there can be some downtime and there is not support for backup/restore operations.
+* For demonstration instances of AEM as a Cloud Service the architecture is simplified. Therefore it does not present all the characteristics of standard development, stage or production environment. This also means that there can be some downtime and there is not support for backup/restore operations.
 
 ## Deployment Architecture {#deployment-architecture}
 
