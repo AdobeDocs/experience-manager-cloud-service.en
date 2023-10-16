@@ -28,7 +28,11 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 
 >[!NOTE]
 >
->Content Fragments are stored as **Assets**. They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** console, though they can still be managed from the **Assets** console. This section covers management from the **Assets** console.
+>Content Fragments are a Sites feature, but are stored as **Assets**. 
+>
+>They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** console, though they can still be managed from the **Assets** console. This section covers management from the **Assets** console.
+>
+>There are two editors for authoring Content Fragments. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console). Both editors have a toggle switch in the top toolbar to provide quick access to the other editor.
 
 ## Creating Content Fragments {#creating-content-fragments}
 
@@ -99,11 +103,11 @@ Select the fragment to reveal the toolbar with applicable actions:
 * **Checkout**
 * **Properties**
 
-    * Allows you to view and/or edit the fragment's metadata.
+    * Lets you view, or edit, or both, the fragment's metadata.
 
 * **Edit**
 
-    * Allows you to [open the fragment for editing content](/help/assets/content-fragments/content-fragments-variations.md) together with its elements, variations, associated content and metadata.
+    * Lets you [open the fragment for editing content](/help/assets/content-fragments/content-fragments-variations.md) together with its elements, variations, associated content and metadata.
 
 * **Quick Publish**
 * **Manage Publication**
@@ -184,6 +188,12 @@ Some features in the top toolbar are available from multiple modes:
   * **Published**: green
   * **Modified**: orange
   * **Deactivated**: red
+
+* A button enables you to **Try New Editor**, by directly opening the *new* [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md) that is accessible via the [Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+
+  >[!WARNING]
+  >
+  >The new editor will open in the same tab. It is not recommended to have both editors open at the same time.
 
 * **Save** provides access to the **Save & close** option.
   
@@ -317,7 +327,7 @@ They is shown side by side, where:
   * Inserted text - green
   * Replaced text - blue
 
-* The full-screen icon allows you to open either version on its own; then toggle back to the parallel view
+* The full-screen icon lets you open either version on its own; then toggle back to the parallel view
 * You can **Revert** to the specific version
 * **Done** will return you to the console
 

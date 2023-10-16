@@ -128,7 +128,7 @@ The `Multi Value Property` predicate lets you search assets for multiple values.
 
 ## Add a Tags predicate {#adding-a-tags-predicate}
 
-The `Tags` predicate allows you to perform tag-based searches for assets. By default, [!DNL Assets] searches assets for one or more tags matches based on the tags you specify. In other words, the search query performs an OR operation using the specified tags. However, you can use the match all tags option to search for assets that include all tags that you specify.
+The `Tags` predicate lets you perform tag-based searches for assets. By default, [!DNL Assets] searches assets for one or more tags matches based on the tags you specify. In other words, the search query performs an OR operation using the specified tags. However, you can use the match all tags option to search for assets that include all tags that you specify.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]** and then tap **Edit** ![aemassets_edit](assets/aemassets_edit.png).
@@ -297,6 +297,18 @@ Similar to the way you add a Property predicate or an Options predicate, you can
   </tr>
  </tbody>
 </table>
+
+## Remove default search facets {#removing-default-search-facets}
+
+Adobe recommends you to be careful while removing default search facets to avoid performance issues. Removing default search facets might also impact the default feature behavior.
+
+Do not remove the following hidden fields as it causes a query performance issue with OmniSearch and smart collections:
+
+* group.2_group.type=dam:Asset
+
+* group.1_group.type=nt:folder
+
+* group.p.or=true
 
 ## Restore default search facets {#restoring-default-search-facets}
 

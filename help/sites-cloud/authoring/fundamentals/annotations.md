@@ -5,9 +5,9 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 ---
 # Adding Page Annotations {#adding-page-annotations}
 
-Creating content for your digital experience often requires discussion and feedback prior to publication. To aid this feedback process, AEM allows you to add annotations to your content.
+Creating content for your digital experience often requires discussion and feedback prior to publication. To aid this feedback process, AEM lets you add annotations to your content.
 
-An annotation places a simple sketch or note (think real-world sticky-note) on the page. The annotation allows you to leave comments or questions for other authors and reviewers.
+An annotation places a simple sketch or note (think real-world sticky-note) on the page. The annotation lets you leave comments or questions for other authors and reviewers.
 
 >[!TIP]
 >
@@ -45,7 +45,7 @@ Annotations are only visible in Annotate mode.
 
 ## Adding and Editing Annotations {#annotating-a-component}
 
-In addition to viewing the annotations, Annotate mode allows you to create, edit, move, or delete annotations on your content
+In addition to viewing the annotations, Annotate mode lets you create, edit, move, or delete annotations on your content
 
 1. [Start Annotate mode](#annotate-mode) on the page.
 
@@ -83,7 +83,7 @@ In addition to viewing the annotations, Annotate mode allows you to create, edit
 
 >[!NOTE]
 >
->Annotations can not be added to a page that has been locked by another user.
+>Annotations cannot be added to a page that has been locked by another user.
 
 >[!NOTE]
 >

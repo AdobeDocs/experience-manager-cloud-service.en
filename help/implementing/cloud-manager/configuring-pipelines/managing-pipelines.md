@@ -4,6 +4,7 @@ description: Learn how to manage your existing pipelines including editing, runn
 index: yes
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 ---
+
 # Managing Pipelines {#managing-pipelines}
 
 Learn how to manage your existing pipelines including editing, running, and deleting them.
@@ -56,7 +57,7 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 
 >[!NOTE]
 >
->You can not edit a running pipeline.
+>You cannot edit a running pipeline.
 
 ## Deleting Pipelines {#deleting-pipelines}
 
@@ -66,9 +67,11 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 
 >[!NOTE]
 >
->You can not delete a running pipeline.
+>You cannot delete a running pipeline.
 
-## View Details {#view-details}
+## View Pipeline Details {#view-details}
+
+You can view the details of a pipeline to see the status and logs of its last run.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
@@ -78,8 +81,32 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 
 ![Pipeline details](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
 
-From here you can see the status of the various steps of the pipeline and retrieve build logs for diagnostic purposes. See the document [Deploying Your Code](/help/implementing/cloud-manager/deploy-code.md) for more information.
+From here you can see the status of the various steps of the pipeline and retrieve build logs for diagnostic purposes. See the document [Deploying Your Code](/help/implementing/cloud-manager/deploy-code.md) for more information on code deployment and tests run.
 
 >[!NOTE]
 >
 >You can only view details of a pipeline that is running or has been run at least once.
+
+## Cancel Pipelines {#cancel}
+
+If a pipeline is in the validation or build image phase you can safely cancel the pipeline run.
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+
+1. From the program overview page, click the ellipsis button of the pipeline you wish to cancel on the **Pipelines** card.
+
+   ![Cancelling a pipeline](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
+
+1. Tap or click **Cancel**.
+
+Alternatively you can cancel a pipeline from the pipeline details page.
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+
+1. Navigate to the **Pipelines** tab from the **Program Overview** page and tap or click the pipeline you wish to cancel.
+
+1. You are taken to the details page of the running pipeline.
+
+   ![Cancel Pipeline details](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
+
+1. Tap or click **Cancel**.

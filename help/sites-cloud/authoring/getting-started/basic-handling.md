@@ -3,6 +3,7 @@ title: Basic Handling
 description: Get comfortable with navigating AEM and its basic usage
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 ---
+
 # Basic Handling {#basic-handling}
 
 This document is designed to give an overview of basic handling when using the AEM author environment. It uses the **Sites** console as a basis.
@@ -12,9 +13,11 @@ This document is designed to give an overview of basic handling when using the A
 >* Some functionality is not available in all consoles and additional functionality may be available in some consoles. Specific information about the individual consoles and their related functionality are covered in more detail on other pages.
 >* Keyboard shortcuts are available throughout AEM. In particular when [using consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) and [editing pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
+{{edge-delivery-authoring}}
+
 ## A Touch-Enabled UI {#a-touch-enabled-ui}
 
-AEM's user interface is enabled for touch. A touch-enabled interface allows you to use touch to interact with the software through gestures such as tap, touch-and-hold, and swipe. Because the AEM UI is touch-enabled, you can use the touch gestures on your touch devices such as your mobile phone or tablet. However mouse actions on a traditional desktop device are also available, giving you flexibility in how you choose to author your content.
+AEM's user interface is enabled for touch. A touch-enabled interface lets you use touch to interact with the software through gestures such as tap, touch-and-hold, and swipe. Because the AEM UI is touch-enabled, you can use the touch gestures on your touch devices such as your mobile phone or tablet. However mouse actions on a traditional desktop device are also available, giving you flexibility in how you choose to author your content.
 
 ## First Steps {#first-steps}
 
@@ -66,7 +69,7 @@ From Navigation the consoles available are:
 |Experience Fragments|An [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences.|
 |Assets|The Assets console lets you import and manage [digital assets such as images, videos, documents, and audio files](/help/assets/overview.md). These assets can then be used by any site running on the same AEM instance. You can also create and manage [Content Fragments](/help/assets/content-fragments/content-fragments.md) from the Assets console.|
 |Personalization|This console provides a framework of tools for [authoring targeted content and presenting personalized experiences](/help/sites-cloud/authoring/personalization/overview.md).|
-|Content Fragments|[Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) allow you to design, create, curate and publish page-independent content. They allow you to prepare structured content ready for use in multiple locations/over multiple channels, and ideal for both page authoring and headless delivery.|
+|Content Fragments|[Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) allow you to design, create, curate and publish page-independent content. They allow you to prepare structured content ready for use in multiple locations/over multiple channels, and ideal for both page authoring and headless delivery.|
 
 ## Tools Panel {#tools-panel}
 
@@ -287,7 +290,7 @@ In all views, all items can be deselected by tapping escape on the keyboard if y
 
 ![Column view](/help/sites-cloud/authoring/assets/column-view.png)
 
-The column view allows for a visual navigation of a content tree through a series of cascading columns. This view allows you to visualize and traverse the tree structure of your website.
+The column view allows for a visual navigation of a content tree through a series of cascading columns. This view lets you visualize and traverse the tree structure of your website.
 
 Selecting a resource in the leftmost column will display the child resources in a column to the right. Selecting a resource in the right column will then display the child resources in another column to the right and so on.
 
@@ -412,7 +415,7 @@ The timeline can be used to view and/or initiate events that have occurred on th
 
 ![Timeline tree](/help/sites-cloud/authoring/assets/timeline.png)
 
-The timeline column allows you to:
+The timeline column lets you:
 
 * View various events related to a selected item.
 

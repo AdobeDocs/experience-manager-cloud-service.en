@@ -1,8 +1,6 @@
 ---
-title: Adaptive Forms keywords
-seo-title: Adaptive Forms keywords
-description: You cannnot use these reserved words as identifiers in your Adaptive Forms.
-seo-description: You cannnot use these reserved words as identifiers in your Adaptive Forms.
+title: What are Adaptive Forms reserved keywords?
+description: Reserved keywords that you cannot use as identifiers in your Adaptive Forms.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author

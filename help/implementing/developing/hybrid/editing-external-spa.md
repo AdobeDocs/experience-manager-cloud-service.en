@@ -105,7 +105,7 @@ The `initializationAsync` can optionally accept an `options` object as a paramet
 
    ![Text component properties](assets/external-spa-text-properties.png)
 
-   These values are passed as properties to the newly created `AEMText` React component and can be used to render the content.
+   These values are passed as properties to the newly-created `AEMText` React component and can be used to render the content.
 
    ```javascript
    import React from 'react';
@@ -337,7 +337,7 @@ To enable editing within AEM for this example SPA, the following steps are requi
 
 1. Add helpers within SPA routing.
 
-   * The newly created page cannot yet render the expected content in AEM. The reason is because the router expects a path of `/test` whereas the AEM active path is `/wknd-spa-react/us/en/test`. To accommodate the AEM-specific portion of the URL, you must add some helpers on the SPA side.
+   * The newly-created page cannot yet render the expected content in AEM. The reason is because the router expects a path of `/test` whereas the AEM active path is `/wknd-spa-react/us/en/test`. To accommodate the AEM-specific portion of the URL, you must add some helpers on the SPA side.
 
    ![Routing helper](assets/external-spa-router-helper.png)
 
@@ -350,7 +350,7 @@ To enable editing within AEM for this example SPA, the following steps are requi
 
 1. Verify editing the page in AEM.
 
-   * Deploy the project to AEM and navigate to the newly created `test` page. The page content is now rendered and AEM components are editable.
+   * Deploy the project to AEM and navigate to the newly-created `test` page. The page content is now rendered and AEM components are editable.
 
 ## Framework Limitations {#framework-limitations}
 
