@@ -1,8 +1,8 @@
 ---
 title: Extending the Multi Site Manager
 description: Learn how to extend the functionality of the Multi Site Manager.
+exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 ---
-
 # Extending the Multi Site Manager {#extending-the-multi-site-manager}
 
 This document helps you understand how to extend the functionality of the Multi Site Manager and covers the following topics.

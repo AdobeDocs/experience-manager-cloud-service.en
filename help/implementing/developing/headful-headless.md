@@ -13,7 +13,7 @@ AEM offers powerful tools to manage both the creation of content and its deliver
 
 AEM can also be used to simply manage content, allowing presentation and delivery of the content to be managed by another platform. This is the "headless" model of content management, where the content authors and developers work on different platforms to deliver experience to the content consumers.
 
-But this need not be a binary choice. AEM offers unprecedented flexibility, allowing you to exploit the advantages of both models for your project.
+But this does not need to be a binary choice. AEM offers unprecedented flexibility, allowing you to exploit the advantages of both models for your project.
 
 ![AEM Implementation Models](/help/headless/assets/aem-implementation-models.png)
 
@@ -21,7 +21,7 @@ In a headful or full-stack model, the content is managed in the AEM repository a
 
 In a headless model, the content is managed in the AEM repository, but delivered via APIs such as REST and GraphQL to another system to render the content for the user experience. In this model, content is created in AEM, but styling it, presenting it, and delivering it all happen on another platform.
 
-Single Page Applications (SPAs) are often the destination for content delivered headlessly by AEM. However, these SPAs need not be entirely external to AEM. AEM allows you to decide to what degree your SPAs are integrated into AEM. Let's take an example.
+Single Page Applications (SPAs) are often the destination for content delivered headlessly by AEM. However, these SPAs do not need to be entirely external to AEM. AEM lets you decide to what degree your SPAs are integrated into AEM. Let's take an example.
 
 ## Web Shop Example {#web-shop-example}
 
@@ -47,18 +47,18 @@ SPA integration falls on a spectrum of four levels in AEM.
   * The SPA and AEM exist separately and exchange no information.
   * Content is created, managed, and delivered independently in two separate systems.
 * **Level 1: Content fragment integration**
-  * [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) are used in AEM to create and manage limited content for the SPA.
+  * [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) are used in AEM to create and manage limited content for the SPA.
   * The SPA retrieves this content via AEM's [GraphQL API](/help/headless/graphql-api/content-fragments.md).
   * Some content is managed in AEM and some in an external system.
   * Content can only be viewed in the SPA.
 * **Level 2: Embed the SPA in AEM**
-  * [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) are used in AEM to create and manage content for the SPA.
+  * [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) are used in AEM to create and manage content for the SPA.
   * The SPA retrieves this content via AEM's [GraphQL API](/help/headless/graphql-api/content-fragments.md).
   * Some content is managed in AEM and some in an external system.
   * Content can be viewed in-context within AEM.
   * Limited content can be edited within AEM.
 * **Level 3: Embed and fully enable SPA in AEM**
-  * [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) are used in AEM to create and manage content for the SPA.
+  * [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) are used in AEM to create and manage content for the SPA.
   * The SPA retrieves this content via AEM's [GraphQL API](/help/headless/graphql-api/content-fragments.md).
   * Content can be viewed in-context within AEM.
   * Most content can be edited within AEM.

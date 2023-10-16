@@ -1,8 +1,6 @@
 ---
-title: Synchronizing Adaptive Forms with XFA Form Templates
-seo-title: Synchronizing Adaptive Forms with XFA Form Templates
+title: How can we synchronize Adaptive Forms with XFA Form templates?
 description: Synchronizing Adaptive Forms with XFA/XDP files.
-seo-description: Synchronizing Adaptive Forms with XFA/XDP files.
 uuid: 92818132-1ae0-4576-84f2-ece485a34457
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -15,9 +13,9 @@ docset: aem65
 
 ## Introduction {#introduction}
 
-You can create an Adaptive Form based on an XFA form template ( `*.XDP` file). This reuse allows you to preserve your investment in existing XFA forms. For information on how to use an XFA form template for creating an Adaptive Form, [Create an Adaptive Form based on a template](creating-adaptive-form.md).
+You can create an Adaptive Form based on an XFA form template ( `*.XDP` file). This reuse lets you preserve your investment in existing XFA forms. For information on how to use an XFA form template for creating an Adaptive Form, [Create an Adaptive Form based on a template](creating-adaptive-form.md).
 
-You can reuse fields from the XDP file in your Adaptive Form. These fields are referred to as binded fields. The properties of the binded fields (such as scripts, labels, and display format) are copied from the XDP file. You can also choose to override the value of some of these properties.
+You can reuse fields from the XDP file in your Adaptive Form. These fields are referred to as bound fields. The properties of the bound fields (such as scripts, labels, and display format) are copied from the XDP file. You can also choose to override the value of some of these properties.
 
 [!DNL AEM Forms] provides a way to help you keep the fields of the Adaptive Forms synchronized with any changes that are later made to the corresponding fields in the XDP file. This article explains how you can enable this synchronization.
 
@@ -128,7 +126,7 @@ The field that has been deleted is also marked with an icon to indicate an error
 
 >[!NOTE]
 >
->The fields in the Adaptive Form that have an incorrect binding (an invalid `bindRef` value in the edit dialog) are also considered as deleted fields. If the author does not fix these errors and publish the Adaptive Form, the field is treated as a normal unbinded Adaptive Form field and is included in the unbinded section of the output XML file.
+>The fields in the Adaptive Form that have an incorrect binding (an invalid `bindRef` value in the edit dialog) are also considered as deleted fields. If the author does not fix these errors and publishes the Adaptive Form, the field is treated as a normal unbound Adaptive Form field and is included in the unbound section of the output XML file.
 
 ## Downloads {#downloads}
 

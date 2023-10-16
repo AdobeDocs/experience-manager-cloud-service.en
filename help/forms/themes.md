@@ -1,6 +1,6 @@
 ---
-title: Create and use themes to stylize an Adaptive Form
-description: You can use themes to stylize and provide a visual identity to an Adaptive Form. You can share a theme across any number of Adaptive Forms.
+title: How can we create and use themes to style an adaptive form?
+description: Use Adaptive Form themes to style and provide a visual identity to an Adaptive Form. You can share a theme across any number of Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 ---
 # Creating and using themes {#creating-and-using-themes}

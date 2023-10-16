@@ -1,5 +1,5 @@
 ---
-title: How to Grant Rule Editor Access to Select User Groups?
+title: How to provide access to aem adaptive forms rule editor to select user groups?
 description: There are different types of users with varied skills that work with Adaptive Forms. Learn how to limit rule editor access to users based on their role or function.
 feature: Adaptive Forms
 role: User
@@ -12,7 +12,7 @@ level: Beginner, Intermediate
 
 There are different types of users with varied skills that work with Adaptive Forms. While expert users may have the right knowledge to work with scripts and complex rules, there may be basic-level users who must work only with the layout and basic properties of Adaptive Forms.
 
-[!DNL Experience Manager Forms] allows you to limit rule editor access to users based on their role or function. In the Adaptive Forms Configuration Service settings, you can specify the [user groups](forms-groups-privileges-tasks.md) that can view and access rule editor.
+[!DNL Experience Manager Forms] lets you limit rule editor access to users based on their role or function. In the Adaptive Forms Configuration Service settings, you can specify the [user groups](forms-groups-privileges-tasks.md) that can view and access rule editor.
 
 ## Specify user groups that can access rule editor {#specify-user-groups-that-can-access-rule-editor}
 

@@ -26,7 +26,7 @@ Persisted queries must always use the endpoint related to the [appropriate Sites
 
 >[!NOTE]
 >
->See [Enable Content Fragment Functionality in Configuration Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
+>See [Enable Content Fragment Functionality in Configuration Browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) for more details.
 >
 >The **GraphQL Persisted Queries** need to be enabled, for the appropriate Sites configuration. 
 
@@ -438,7 +438,7 @@ To create a Package:
 1. Enter a version number like "1.0".
 1. Under **Filters** add a new **Filter**. Use the Path Finder to select the `persistentQueries` folder beneath the configuration. For example, for the `wknd` configuration, the full path is `/conf/wknd/settings/graphql/persistentQueries`.
 1. Tap **Save** to save the new Package definition and close the dialog.
-1. Tap the **Build** button in the newly created Package definition.
+1. Tap the **Build** button in the newly-created Package definition.
 
 After the package has been built you can: 
 

@@ -6,6 +6,10 @@ exl-id: 426be9f9-f44a-4744-ac08-e64bb97308a0
 ---
 # Cross-Origin Resource Sharing (CORS) configuration
 
+>[!CAUTION]
+>
+>If [caching in the Dispatcher has been enabled](/help/headless/deployment/dispatcher-caching.md) then the CORS Filter is not needed, and so this section can be ignored.
+
 >[!NOTE]
 >
 >For a detailed overview of the CORS resource sharing policy in AEM see [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).

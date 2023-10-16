@@ -1,7 +1,7 @@
 ---
 title: Introduction to Assets as a [!DNL Cloud Service]
-description: What's new in Assets as a [!DNL Cloud Service].
-contentOwner: AG
+description: Learn what's new and the benefits of Experience Manager Assets as a [!DNL Cloud Service]. A cloud-native, PaaS solution for businesses.
+contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
@@ -45,7 +45,13 @@ DAM librarians, developers, and super-users may continue to use the Admin view o
 
 ![add-tags](assets/newui-overview.svg)
 
-For information on how to access the Assets view and some of the simplifications that it offers over Admin view, see [Introduction to Assets view](/help/assets/assets-view-introduction.md). 
+For information on how to access the Assets view and some of the simplifications that it offers over Admin view, see [Introduction to Assets view](/help/assets/assets-view-introduction.md).
+
+## Integration with document-based authoring for Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
+
+Edge Delivery enables you to create fast, engaging websites where authors can update and publish content quickly, and new sites can be launched rapidly. 
+
+Integrate AEM Assets with document-based authoring for Edge Delivery Services to enable website authors to use images available in AEM Assets repositories while authoring documents in Microsoft Word or Google Docs. For more information, see [Integrate AEM Assets with document-based authoring](/help/edge/using.md#integrate-assets-edge).
 
 ## New Assets capabilities {#whats-new-assets}
 

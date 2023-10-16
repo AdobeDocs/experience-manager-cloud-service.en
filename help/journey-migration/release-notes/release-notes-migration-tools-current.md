@@ -1,31 +1,20 @@
 ---
-title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.07.0
-description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.07.0
+title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.10.0
+description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.10.0
 feature: Release Information
-exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
+exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
 ---
-# Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.07.0 {#release-notes}
+# Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.10.0 {#release-notes}
 
-This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.07.0.
+This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.10.0.
 
-## Best Practices Analyzer {#bpa-release}
+## Content Transfer Tool {#ctt-release}
 
-### Release Date {#release-date-bpa}
+### Release Date {#release-date-ctt}
 
-The Release Date for Best Practices Analyzer v2.1.42 is July 06, 2023.
+The Release Date for Content Transfer Tool v3.0.4 is October 06, 2023.
 
-### What's New {#what-is-new-bpa}
+### What's New {#what-is-new-ctt}
 
-* Multiple best practices patterns were added to this release of the Best Practices Analyzer. These include:
-  * Identifying minimum maintenance task configuration
-  * Detecting long-running/heavy queries
-  * Detecting high number of author workflows in running or stale state
-  * Detecting OSGI Apache sling job configuration
-  * Detecting custom Guava-caches
-
-### Bug Fixes {#bug-fixes-bpa}
-
-* BPA was improved to prevent out of memory report generation failures for reports with high number of findings.
-* BPA was improved to detect escape characters in paths to prevent content ingestion failures when migration content to AEM as a Cloud Service.
-
-
+* Changes have been made to the content ingestion process - It is no longer required to submit a Customer Care/Support ticket to disable the AEM Version Updates on the destination environment. This process is now automated. For more details, refer to [AEM Version Updates and Ingestions](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#aem-version-updates-and-ingestions)
+* Dynamic concurrency will be used during the [pre-copy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) step in both extraction and ingestion phases, significantly reducing the content migration time.  

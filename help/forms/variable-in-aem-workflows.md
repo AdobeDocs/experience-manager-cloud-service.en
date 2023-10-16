@@ -1,5 +1,5 @@
 ---
-title: How to add variables in AEM Workflow steps?
+title: How can we add variables to AEM Workflow steps?
 description: Learn to create a variable, set a value for the variable, and use it in [!DNL AEM Forms] Workflow steps.
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 ---
@@ -161,7 +161,7 @@ Similarly, select an external script path or specify the ECMA script for routing
 
 #### Go To step {#go-to-step}
 
-The **Goto Step** allows you to specify the next step in the workflow model to execute, dependent on the result of a routing expression.
+The **Goto Step** lets you specify the next step in the workflow model to execute, dependent on the result of a routing expression.
 
 Similar to the OR Split step, you can define routing expression for Goto step using a rule definition, ECMA script, or an external script.
 

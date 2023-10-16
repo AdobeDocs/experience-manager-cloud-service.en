@@ -1,8 +1,6 @@
 ---
 title: Introduction to authoring Adaptive Forms
-seo-title: Introduction to authoring Adaptive Forms
 description: AEM Forms provide easy-to-use yet powerful interface for authoring Adaptive Forms. It provides a host of components and tools that you can use to build forms.
-seo-description: AEM Forms provide easy-to-use yet powerful interface for authoring Adaptive Forms. It provides a host of components and tools that you can use to build forms.
 uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 topic-tags: author, introduction
@@ -63,7 +61,7 @@ When you create a new or edit an existing Adaptive Form, you use the following U
 
 ### Sidebar {#sidebar}
 
-The Sidebar allows you to
+The Sidebar lets you
 
 * Search, view, and use assets in your AEM Digital Asset Management (DAM) repository.
 * See form content such as panels, components, fields, and layout.
@@ -88,7 +86,7 @@ The sidebar comprises the following browsers:
 
   * **Data Model Objects**
       Lets you see the form model hierarchy.
-      It allows you to drag and drop form-model elements on the Adaptive Form. The added elements automatically get converted into form components while retaining their original properties. You can see data model objects when your form uses XML schema, JSON schema, or XDP template.
+      It lets you drag and drop form-model elements on the Adaptive Form. The added elements automatically get converted into form components while retaining their original properties. You can see data model objects when your form uses XML schema, JSON schema, or XDP template.
 
 * **Properties browser**
 
@@ -172,7 +170,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>Image</td>
-   <td>Allows you to insert an image.</td>
+   <td>Lets you insert an image.</td>
   </tr>
   <tr>
    <td>Image Choice</td>
@@ -228,7 +226,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>Text</td>
-   <td>Allows you to specify static text.</td>
+   <td>Lets you specify static text.</td>
   </tr>
   <tr>
    <td>Submit Button</td>

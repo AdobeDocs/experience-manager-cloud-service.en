@@ -1,5 +1,5 @@
 ---
-title: How to configure a Submit Action for an Adaptive Form
+title: How to configure a Submit Action for an Adaptive Form?
 description: An Adaptive Form provides multiple Submit Actions. A Submit Action defines how an Adaptive Form is processed after submission. You can use built-in Submit Actions or create your own.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 ---
@@ -14,7 +14,6 @@ exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 
 A Submit Action is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. Forms as a Cloud Service provides the following Submit Actions out of the box. 
 
-
 * [Submit to REST endpoint](#submit-to-rest-endpoint)
 * [Send email](#send-email)
 * [Submit using Form Data Model](#submit-using-form-data-model)
@@ -22,6 +21,7 @@ A Submit Action is triggered when a user clicks the **[!UICONTROL Submit]** butt
 * [Submit to SharePoint](#submit-to-sharedrive)
 * [Submit to OneDrive](#submit-to-onedrive)
 * [Submit to Azure Blob Storage](#azure-blob-storage)
+* [Submit to Power Automate](#microsoft-power-automate)
 
 You can also [extend the default Submit Actions](custom-submit-action-form.md) to create your own Submit Action. 
 
@@ -178,7 +178,8 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint Storage:
 1. Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; SharePoint]**.   
 1. Once you select the **[!UICONTROL Microsoft&reg; SharePoint]**, you are redirected to **[!UICONTROL SharePoint Browser]**.
 1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
-1. Click **[!UICONTROL Create]**. The SharePoint configuration wizard appears. 
+1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint Document Library]** from the drop-down list. The SharePoint configuration wizard appears. 
+
  ![Sharepoint configuration](/help/forms/assets/sharepoint_configuration.png)
 1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
     * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
@@ -204,6 +205,7 @@ Now, you can use this SharePoint Sites configuration for the submit action in an
 ### Use SharePoint Configuration in an Adaptive Form {#use-sharepoint-configuartion-in-af}
 
 You can use the created SharePoint configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint folder. Perform the following steps to use a SharePoint storage configuration in an Adaptive Form as:
+
 1. Create an [Adaptive Form](/help/forms/creating-adaptive-form.md).
 
     >[!NOTE]
@@ -221,7 +223,11 @@ Folder structure to save data is `/folder_name/form_name/year/month/date/submiss
 
 ## Submit to OneDrive {#submit-to-onedrive}
 
-The **[!UICONTROL Submit to OneDrive]** Submit Action connects an Adaptive Form with a Microsoft&reg; OneDrive. You can submit the form data, file, attachments, or Document of Record to the connected Microsoft&reg; OneDrive Storage. To use the [!UICONTROL Submit to OneDrive] Submit Action in an Adaptive Form:
+The **[!UICONTROL Submit to OneDrive]** Submit Action connects an Adaptive Form with a Microsoft&reg; OneDrive. You can submit the form data, file, attachments, or Document of Record to the connected Microsoft&reg; OneDrive Storage. 
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
+
+To use the [!UICONTROL Submit to OneDrive] Submit Action in an Adaptive Form:
 
 1. [Create a OneDrive Configuration](#create-a-onedrive-configuration-create-onedrive-configuration): It connects AEM Forms to your Microsoft&reg; OneDrive Storage.
 2. [Use the Submit to OneDrive submit action in an Adaptive Form](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): It connects your Adaptive Form to
@@ -322,6 +328,20 @@ When you submit the form, the data is saved in the specified Azure Storage conta
 Folder structure to save data is `/configuration_container/form_name/year/month/date/submission_id/data`. 
 
 To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
+
+
+## Submit to Power Automate {#microsoft-power-automate}
+
+You can configure an Adaptive Form to run a Microsoft&reg; Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft&reg; Power Automate to build business logics around captured data and automate customer workflows. Here are a few examples of what you can do after integrating an Adaptive Form with Microsoft&reg; Power Automate: 
+
+* Use Adaptive Forms data in a Power Automate business processes
+* Use Power Automate to send captured data to more than 500 data sources or any publicly available API  
+* Perform complex calculations on captured data
+* Save Adaptive Forms data to storage systems at a predefined schedule
+
+Adaptive Forms editor provides the **Invoke a Microsoft&reg; Power Automate flow** submit action to send adaptive forms data, attachments, and Document Of Record are sent to Power Automate Cloud Flow. To use the Submit action to send captured data to Microsoft&reg; Power Automate, [Connect your Forms as a Cloud Service instance with Microsoft&reg; Power Automate](forms-microsoft-power-automate-integration.md)  
+
+After a successful configuration, use the [Invoke a Microsoft&reg; Power Automate flow](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) submit action to send data to a Power Automate Flow.  
 
 ## Use synchronous or asynchronous submission {#use-synchronous-or-asynchronous-submission}
 

@@ -70,7 +70,7 @@ The properties are distributed across several tabs.
 
 * **Vanity URL**
 
-  * Allows you to enter a vanity URL for this page, which can allow you to have a shorter and/or more expressive URL.
+  * Lets you enter a vanity URL for this page, which can allow you to have a shorter and/or more expressive URL.
   * For example, if the Vanity URL is set to `welcome` to the page identified by the path `/v1.0/startpage` for the website `http://example.com`, then `http://example.com/welcome` would be the vanity URL of `http://example.com/content/v1.0/startpage`
   
   >[!CAUTION]
@@ -98,7 +98,7 @@ The properties are distributed across several tabs.
   * **Alias** - Specifies an alias to be used with this page
     * For example, if you define an alias of `private` for the page `/content/wknd/us/en/magazine/members-only`, then this page can also be accessed via `/content/wknd/us/en/magazine/private`
     * Creating an alias sets the `sling:alias` property on the page node, which only impacts the resource, not the repository path.
-    * Pages accessed by aliases in the editor can not be published. [Publish options](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) in the editor are only available for pages accessed via their actual paths. 
+    * Pages accessed by aliases in the editor cannot be published. [Publish options](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) in the editor are only available for pages accessed via their actual paths. 
     * For further details see [Localized page names under SEO and URL Management Best Practices](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuration**

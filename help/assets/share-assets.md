@@ -67,7 +67,7 @@ There are two ways of sharing the assets using the link sharing functionality:
 1. Generate a shared link, [copy, and share the asset link](#copy-and-share-assets-link) with other users.
 1. Generate a shared link and [share the asset link through email](#share-assets-link-through-email). You can modify the default values such as expiration date and time, and allow downloading the original assets and its renditions. You can send email to multiple users by adding their email addresses.
 
-![Link Sharing dialog](assets/share-link.png)
+   ![Link Sharing dialog](assets/share-link.png)
 
 In both cases, you can modify the default values such as expiration date and time, and allow downloading the original assets and its renditions.
 
@@ -99,7 +99,7 @@ To share assets through email:
 
 1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users. The users receive an email containing the shared link. 
 
-![Link Sharing email](assets/link-sharing-email-notification.png)
+   ![Link Sharing email](assets/link-sharing-email-notification.png)
 
 ### Download assets using the asset link
 

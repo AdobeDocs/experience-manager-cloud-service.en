@@ -72,7 +72,7 @@ To navigate into a folder, double-click on the folder's thumbnails or select the
 
 Before you use, share, or download an asset, you can view it more closely. The preview feature lets you view not just the images but a few other supported asset types.
 
-To preview an asset, select it and click [!UICONTROL Details] ![details icon](assets/do-not-localize/edit-in-icon.png) from the toolbar at the top. You can not only view the asset but also view its detailed metadata and take other actions.
+To preview an asset, select it and click [!UICONTROL Details] ![details icon](assets/do-not-localize/edit-in-icon.png) from the toolbar at the top. You cannot only view the asset but also view its detailed metadata and take other actions.
 
 ![Preview an asset](assets/preview-asset-2.png)
 
