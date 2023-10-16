@@ -876,11 +876,6 @@ In the purchase order form explained in the previous example, you want to restri
 
 Rule in the visual editor
 
-
-## See Also {#see-also}
-
-{{see-also}}
-
 <!-- The rule appears as follows in the code editor.
 
 ![example-validate-code](assets/example-validate-code.png)
