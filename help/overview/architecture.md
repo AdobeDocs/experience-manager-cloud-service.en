@@ -137,11 +137,11 @@ There are various main components of this new architecture:
 
     * End users, or site visitors, visit the website via the AEM Publish Service.
 
-  * Edge Delivery Services are part of Adobe Experience Manager and as such, Edge Delivery and AEM Sites can co-exist on the same domain. This is a common use case for larger websites. Content from Edge Delivery can easily be consumed in your AEM Sites pages and vice versa.
-
 * For AEM Assets as a Cloud Service:
   
   * The architecture only includes an authoring environment.
+
+* Edge Delivery Services are part of Adobe Experience Manager and as such, Edge Delivery, AEM Sites and AEM Assets can co-exist on the same domain. This is a common use case for larger websites. Content from Edge Delivery can easily be consumed in your AEM Sites pages and vice versa.
 
 * Both the author tier, the preview tier, and the publish tier read and persist content from/to a Content Repository Service.
 
@@ -199,25 +199,12 @@ The new architecture for AEM as a Cloud Service introduces some fundamental chan
 
 * The architecture completely separates the application content from the application code and configuration. All code and configuration is practically immutable and baked into the baseline image used to create the various nodes of the author and publish services. As a result, there is an absolute guarantee that each node is identical, and the changes to code and configuration can only be made globally by running a Cloud Manager pipeline.
 
-## AEM with Edge Delivery Services {#aem-with-edge-delivery-services}
-
-With the addition of Edge Delivery Services, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering high-impact experiences that are fast to author and develop. Edge Delivery Services are a composable set of services that enable a rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. As such, with Edge Delivery Services you can improve conversion, reduce costs, and provide extreme content velocity.
-
-The updated architecture comprises of:
-
-* Content Management, now including a selection of editors:
-  * Universal Visual Editor
-  * Content Fragment Editor
-  * Page Editor
-  * Document based authoring; from either SharePoint or Google Drive
-* Experience Delivery, now including:
-  * Edge Delivery Services
-* Ancillary Services for the quick, and efficient delivery of content and code
-
-![AEM as a Cloud Service Overview - with Edge Delivery Services](assets/architecture-aem-edge.png "AEM as a Cloud Service Overview - with Edge Delivery Services")
+## Further Information {#further-information}
 
 See also:
 
-* [AEM as a Cloud Service Overview - with Edge Delivery Services](/help/edge/overview.md)
-* [Using Edge Delivery Services](/help/edge/using.md)
-* [Explore the underlying architecture and important pieces of AEM as a Cloud Service with Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
+* Edge Delivery Services:
+
+  * [AEM as a Cloud Service Overview - with Edge Delivery Services](/help/edge/overview.md)
+  * [Using Edge Delivery Services](/help/edge/using.md)
+  * [Explore the underlying architecture and important pieces of AEM as a Cloud Service with Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
