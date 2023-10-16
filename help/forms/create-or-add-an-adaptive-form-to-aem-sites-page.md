@@ -75,46 +75,46 @@ Ensure that the [Adaptive Forms Core Components are enabled for your AEM Forms a
 
 To enable complete functionality of the Adaptive Forms Container component, add the Customheaderlibs and Customfooterlibs client libraries to your AEM Sites page using the deployment pipeline. To add the libraries:
 
-  1. Access and clone your [AEM Cloud Service Git Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
-  1. Open the AEM Cloud Service Git Repository folder in a plan text editor. For example, Microsoft Visual Code.
-  1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` file and add the following code to the file:
+1. Access and clone your [AEM Cloud Service Git Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
+1. Open the AEM Cloud Service Git Repository folder in a plan text editor. For example, Microsoft Visual Code.
+1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` file and add the following code to the file:
 
-      ```
-          //Customheaderlibs.html
+    ```
+        //Customheaderlibs.html
           
-          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-          <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
-          </sly> 
-      ```
+        <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+        <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+        </sly> 
+    ```
 
-  1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` file and add the following code to the file:
+1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` file and add the following code to the file:
 
-      ```
-          //customfooterlibs.html
-          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-          <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
-          </sly> 
-      ```
+    ```
+        //customfooterlibs.html
+        <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+        <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+        </sly> 
+    ```
 
-  1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` file and add the following code to the file:
+1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` file and add the following code to the file:
 
-      ```
-          //Customheaderlibs.html
-          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-          <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
-          </sly> 
-      ```
+    ```
+        //Customheaderlibs.html
+        <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+        <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+        </sly> 
+    ```
 
-  1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` file and add the following code to the file:
+1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` file and add the following code to the file:
 
-      ```
-          //customfooterlibs.html
-          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-          <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
-          </sly> 
-      ```
+    ```
+        //customfooterlibs.html
+        <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+        <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+        </sly> 
+    ```
 
-  1. [Run the deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) to deploy the client libraries to your AEM as a Cloud Service environment. 
+1. [Run the deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) to deploy the client libraries to your AEM as a Cloud Service environment. 
 
 +++ 
 
@@ -122,10 +122,10 @@ To enable complete functionality of the Adaptive Forms Container component, add 
 
 To enable [!UICONTROL Adaptive Forms Container] component in template's policy, perform the following steps:
 
-  1. Open the AEM Sites page or Experience Fragment for editing. To open the page for editing, select the page, and click Edit.
-  1. Open the template of your Sites or Experience Fragment page. To open the template, go to the [!UICONTROL Page Information] ![Page Information](/help/forms/assets/Smock_Properties_18_N.svg) > [!UICONTROL Edit Template]. It opens the corresponding template in template editor.
-  1. In the Structure view, click the **[!UICONTROL Policy]** ![Policy](/help/forms/assets/Smock_FeedManagement_18_N.svg) icon in the menu bar. In the **[!UICONTROL Allowed Components]** list and select the **[!UICONTROL Adaptive Forms Container]**  checkbox under the **[AEM Archetype Project Name] - Adaptive Form**.
-  1. Click **[!UICONTROL Done]**.
+1. Open the AEM Sites page or Experience Fragment for editing. To open the page for editing, select the page, and click Edit.
+1. Open the template of your Sites or Experience Fragment page. To open the template, go to the [!UICONTROL Page Information] ![Page Information](/help/forms/assets/Smock_Properties_18_N.svg) > [!UICONTROL Edit Template]. It opens the corresponding template in template editor.
+1. In the Structure view, click the **[!UICONTROL Policy]** ![Policy](/help/forms/assets/Smock_FeedManagement_18_N.svg) icon in the menu bar. In the **[!UICONTROL Allowed Components]** list and select the **[!UICONTROL Adaptive Forms Container]**  checkbox under the **[AEM Archetype Project Name] - Adaptive Form**.
+1. Click **[!UICONTROL Done]**.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
