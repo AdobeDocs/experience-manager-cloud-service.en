@@ -401,8 +401,6 @@ Setting of the Document of Record component are available under its properties. 
 
 ## See Also {#see-also}
 
-## See Also {#see-also}
-
 {{see-also}}
 
 

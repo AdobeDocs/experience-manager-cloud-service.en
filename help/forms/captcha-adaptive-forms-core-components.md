@@ -102,6 +102,4 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 
 ## See Also {#see-also}
 
-## See Also {#see-also}
-
 {{see-also}}

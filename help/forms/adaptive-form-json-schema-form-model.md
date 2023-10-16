@@ -769,8 +769,6 @@ The extension of JSON Schema file must be .schema.json. For example, &lt;filenam
 
 ## See Also {#see-also}
 
-## See Also {#see-also}
-
 {{see-also}}
 
 <!--

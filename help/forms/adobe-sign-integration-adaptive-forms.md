@@ -217,5 +217,4 @@ To set values of a configuration, [Generate OSGi Configurations using the AEM SD
 
 >[!MORELIKETHIS]
 >
->* [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)
 >* [E-sign a form using scribble signatures](/help/forms/signing-forms-using-scribble.md)

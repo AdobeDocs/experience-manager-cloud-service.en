@@ -327,12 +327,5 @@ In addition, you can drag-drop a group of XSD complex type elements to create a 
 
 ## See Also {#see-also}
 
-## See Also {#see-also}
-
 {{see-also}}
 
-
-
->[!MORELIKETHIS]
->
->* [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)

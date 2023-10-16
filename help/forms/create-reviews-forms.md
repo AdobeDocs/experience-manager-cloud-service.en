@@ -109,8 +109,6 @@ This section describes what happens on **Review Update/End**:
 
     ![review complete](assets/review-complete-imgg.png)
 
-## See Also {#see-also}
-
 
 ## See Also {#see-also}
 

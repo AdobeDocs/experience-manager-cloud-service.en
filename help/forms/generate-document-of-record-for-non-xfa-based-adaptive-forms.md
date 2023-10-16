@@ -501,7 +501,4 @@ An XCI file helps you set various properties of a document. Forms as a Cloud Ser
 
 ## See Also {#see-also}
 
-
-## See Also {#see-also}
-
 {{see-also}}

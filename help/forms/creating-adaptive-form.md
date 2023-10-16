@@ -202,7 +202,4 @@ You can also modify the form model properties from the Adaptive Form editor or A
 
 ## See Also {#see-also}
 
-* [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
-## See Also {#see-also}
-
 {{see-also}}

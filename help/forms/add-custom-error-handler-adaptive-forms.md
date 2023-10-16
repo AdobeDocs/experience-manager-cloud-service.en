@@ -403,9 +403,10 @@ Using this custom error handler, the adaptive form converts the fields listed in
 ## See Also {#see-also}
 
 * [Create and use custom error handlers in Adaptive Forms (Core Components)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-* [Create a standalone Core Components based Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
 * [Create style or themes for your forms](/help/forms/using-themes-in-core-components.md)
 * [Create or add an Adaptive Form to AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
 ## See Also {#see-also}
 
 {{see-also}}

@@ -53,7 +53,4 @@ At runtime, number appears on the text as a superscript and its corresponding de
 
 ## See Also {#see-also}
 
-
-## See Also {#see-also}
-
 {{see-also}}

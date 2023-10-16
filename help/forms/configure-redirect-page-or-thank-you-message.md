@@ -33,6 +33,4 @@ Form authors can configure a page for each form, to which the form users are red
 
 ## See Also {#see-also}
 
-## See Also {#see-also}
-
 {{see-also}}

@@ -295,5 +295,4 @@ In a repeatable subform, you must use the Complete subform. If you want only sel
 
 >[!MORELIKETHIS]
 >
->* [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)
 >* [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)

@@ -296,7 +296,6 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## See Also {#see-also}
 
-
 * [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
 * [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 * [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)

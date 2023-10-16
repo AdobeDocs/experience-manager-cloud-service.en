@@ -157,7 +157,4 @@ Get a [sample client library](/help/forms/assets/locale-support-sample.zip) to a
 
 ## See Also {#see-also}
 
-
-## See Also {#see-also}
-
 {{see-also}}

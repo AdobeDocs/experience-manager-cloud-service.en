@@ -128,7 +128,4 @@ Perform the following steps to disable the Layout mode:
 
 ## See Also {#see-also}
 
-
-## See Also {#see-also}
-
 {{see-also}}

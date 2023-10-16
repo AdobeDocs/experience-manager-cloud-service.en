@@ -167,6 +167,7 @@ The Content package that contains a sample Adaptive Form (demo/AFdemo) with the 
 
 [Get File](assets/dropdown-demo-content-1.0.1-snapshot.zip)
 
+
 >[!MORELIKETHIS]
 >
 >* [Prefill Adaptive Form fields](/help/forms/prepopulate-adaptive-form-fields.md)

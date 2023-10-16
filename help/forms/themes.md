@@ -669,7 +669,4 @@ You can see the generated CSS using the following options:
 
 ## See Also {#see-also}
 
-
-## See Also {#see-also}
-
 {{see-also}}
