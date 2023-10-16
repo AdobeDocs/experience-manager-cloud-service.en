@@ -179,8 +179,6 @@ You can configure the auto-save feature for an adaptive form as follows:
 
 ## See Also {#see-also}
 
-## See Also {#see-also}
-
 {{see-also}}
 
 

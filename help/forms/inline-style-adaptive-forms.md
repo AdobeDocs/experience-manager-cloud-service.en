@@ -130,9 +130,6 @@ You can also simulate the success and error states. Tap the Expand icon to view 
 
 ## See Also {#see-also}
 
-
-## See Also {#see-also}
-
 {{see-also}}
 
 >[!MORELIKETHIS]
