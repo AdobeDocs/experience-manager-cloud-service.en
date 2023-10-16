@@ -1,5 +1,5 @@
 ---
-title: Forms as a Cloud Service frequently asked questions 
+title: Frequently asked questions for AEM Forms as a Cloud Service 
 description: Forms as a Cloud Service frequently asked questions
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
