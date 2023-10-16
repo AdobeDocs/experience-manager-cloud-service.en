@@ -1,5 +1,5 @@
 ---
-title: Design XML Schema for an Adaptive Form
+title: How to design XML Schema for an Adaptive Form?
 description: Learn to create a XML schema for an Adaptive Form and create an Adaptive Form based on the schema to produce schema complaint data.
 feature: Adaptive Forms
 role: User, Developer

@@ -1,5 +1,5 @@
 ---
-title: Known issues and limitations of [!DNL AEM Forms] as a Cloud Service environment
+title: What are the known issues and limitations of AEM Forms as a Cloud Service environment?
 description: Known issues and limitations of  [!DNL AEM Forms] as a Cloud Service environment.
 contentOwner: khsingh
 role: User, Developer
