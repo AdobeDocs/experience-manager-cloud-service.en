@@ -228,8 +228,6 @@ In the following code, the `SampleType`panel uses the minOccours & maxOccurs pro
 
 ## See Also {#see-also}
 
-## See Also {#see-also}
-
 {{see-also}}
 
 
