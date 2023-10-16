@@ -34,13 +34,13 @@ Specify `classic car` as the search keyword and click Search. You can view the s
 
 ![Performing basic search method 1](assets/simple-search-1.png)
 
-You can make the search more specific by adding your search keyword in double quotes (" "). This search only include Assets which contain the specified terms together. The search criteria look like - `"classic car"`. Therefore, the search results with both terms `classic` and `car` are shown. 
+You can make the search more specific by adding your search keyword in double quotes (" "). This search only includes Assets which contain the specified terms together. The search criteria look like - `"classic car"`. Therefore, the search results with both terms `classic` and `car` are shown. 
 
 ![Finding exact match](assets/simple-search-2.png)
 
 The search displays similar results if you are working in the **[!UICONTROL Assets view]** as well.
 
-[Watch a video to perform a simple search in AEM Assets] ()
+<!--[Watch a video to perform a simple search in AEM Assets] ()-->
 
 ## Files and folders {#files-folders}
 
@@ -61,7 +61,7 @@ Select the folder from the path and navigate to the required folder if you want 
 
 ![Search using files and folders](assets/files-folders.png)
 
-[Watch a video to perform search in AEM Assets using Files and Folders] ()
+<!--[Watch a video to perform search in AEM Assets using Files and Folders] ()-->
 
 ## Operators {#operators}
 
@@ -113,7 +113,7 @@ Asterisk is a wildcard operator that is used to broaden your search by typing fe
 * `car*` returns assets with carwash, carrier, carriage, and so on. 
 * `*car` returns assets with modern car, sports car, and so on. 
 
-[Watch a video to perform a search in AEM Assets using wildcards] ()
+<!--[Watch a video to perform a search in AEM Assets using wildcards] ()-->
 
 **[!UICONTROL Assets view]** does not support the usage of Wildcards.
 
@@ -166,7 +166,7 @@ Execute the following steps in **[!UICONTROL Assets view]**:
 1. Go to Filters. Under [!UICONTROL MIME Type], select [!UICONTROL PDF].
 1. Go to [!UICONTROL Asset Status], select [!UICONTROL All] to include all the published and unpublished assets.
 
-[Watch a video to perform search in AEM Assets using various filters] ()
+<!--[Watch a video to perform search in AEM Assets using various filters] ()-->
 
 **Scenario 5: Search for all images except PNG**
 
@@ -231,7 +231,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 **Scenario 8: Search for metadata tags with metadata jeep**
 
-You can capture a specific criteria using various search filters. Tag is a keyword that is assigned to an asset to make it identifiable among a large number of assets. For example, in this scenario, we are searching for assets with *jeep* tags in it. To do this, type `tags:jeep` in the search bar. Only assets that meet this criteria are listed in the search results.
+You can capture a specific criteria using various search filters. Tag is a keyword that is assigned to an asset to make it identifiable among a large number of assets. For example, in this scenario, search for assets with *jeep* tags in it. To do this, type `tags:jeep` in the search bar. Only assets that meet this criteria are listed in the search results.
 
 ![Search using tags](assets/search-tags.png)
 
@@ -248,7 +248,7 @@ Select the asset > navigate to the ellipsis at the top right > select [!UICONTRO
 
     ![Find similar](assets/find-similar.png)
 
-1. Notice the search bar. The thumbnail of the selected asset appears on the search bar indicating your search requirement. As a result, it return assets with similar smart tags.
+1. Notice the search bar. The thumbnail of the selected asset appears on the search bar indicating your search requirement. As a result, it returns assets with similar smart tags.
 
 **[!UICONTROL Assets view]** does not support the [!UICONTROL Find Similar] option.
 
@@ -430,3 +430,8 @@ The newly added assets are not indexed.
         <td> Not supported </td>
     </tr>
 </table>
+
+>[!MORELIKETHIS]
+>
+>* [Search assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en)
+>* [Search facets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en)
