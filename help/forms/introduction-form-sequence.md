@@ -46,8 +46,6 @@ Let us take a use case where you must create a sequence for fill, verify, sign, 
 
 After you have defined the form sequence in the form template, you can use it create forms that will have the basic structure defined as the sequence in place, though you can always customize the form to suit your requirements.
 
-## See Also {#see-also}
-
 
 ## See Also {#see-also}
 

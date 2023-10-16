@@ -69,7 +69,4 @@ The content of a pasted Adaptive Forms can be changed using the following approa
 
 ## See Also {#see-also}
 
-
-## See Also {#see-also}
-
 {{see-also}}

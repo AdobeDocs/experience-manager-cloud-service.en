@@ -367,7 +367,4 @@ When [!DNL Adobe Sign] service is configured for an Adaptive Form, the service f
 
 ## See Also {#see-also}
 
-
-## See Also {#see-also}
-
 {{see-also}}

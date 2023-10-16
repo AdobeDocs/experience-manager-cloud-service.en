@@ -221,6 +221,4 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 ## See Also {#see-also}
 
-## See Also {#see-also}
-
 {{see-also}}

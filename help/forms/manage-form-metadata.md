@@ -305,7 +305,4 @@ All the Adaptive Forms in [!DNL AEM Forms] now contain this additional metadata 
 
 ## See Also {#see-also}
 
-
-## See Also {#see-also}
-
 {{see-also}}

@@ -247,5 +247,4 @@ Reference Adaptive Form Fragments that you can use to create your form are avail
 
 >[!MORELIKETHIS]
 >
->* [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)
 >* [Adaptive Form fragments in Core Components](/help/forms/adaptive-form-fragments-core-components.md)

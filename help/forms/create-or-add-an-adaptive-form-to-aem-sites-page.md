@@ -256,6 +256,7 @@ On submission of a form, you can redirect the user to another webpage or a messa
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
 
 
+## See Also {#see-also}
 
 {{#see-also}}
 

@@ -387,4 +387,4 @@ Perform the following steps to create a custom Submit Action that saves the data
 
 >[!MORELIKETHIS]
 >
->* [Create forms with repeatable sections in Adaptive Form Core Components](/help/forms/configure-submit-actions-core-components.md)
+>* [Configure a Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)

@@ -94,6 +94,4 @@ The signatures are added to the form and the form control moves to the next pane
 
 ## See Also {#see-also}
 
-## See Also {#see-also}
-
 {{see-also}}

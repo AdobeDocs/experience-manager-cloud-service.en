@@ -88,6 +88,4 @@ Important points to keep in mind while developing scripts for lazy loading panel
 
 ## See Also {#see-also}
 
-## See Also {#see-also}
-
 {{see-also}}

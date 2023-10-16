@@ -184,9 +184,7 @@ You can perform several operations on Adaptive Form fragments using the AEM Form
 Reference Adaptive Form fragments that you can use to create your form are available. 
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
 
-## See Also {#see-also}
 
-**See Also**
 
 ## See Also {#see-also}
 

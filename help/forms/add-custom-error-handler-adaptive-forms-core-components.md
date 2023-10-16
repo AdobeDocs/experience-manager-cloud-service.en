@@ -408,7 +408,5 @@ Using this custom error handler, the adaptive form converts the fields listed in
 
 ## See Also {#see-also}
 
-## See Also {#see-also}
-
 {{see-also}}
 

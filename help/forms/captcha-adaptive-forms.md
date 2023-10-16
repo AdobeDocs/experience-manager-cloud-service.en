@@ -342,11 +342,9 @@ To set values of a configuration, [Generate OSGi Configurations using the AEM SD
 
 ## See Also {#see-also}
 
-## See Also {#see-also}
-
 {{see-also}}
+
 
 >[!MORELIKETHIS]
 >
->* [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)
 >* [Reference Themes, Templates, and Form Data models for Adaptive Forms](/help/forms/reference-themes-templates-data-models.md)

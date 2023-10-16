@@ -192,6 +192,11 @@ You can use the Form Data Model Prefill service to prepopulate fields of an Adap
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
+## See Also {#see-also}
+
+{{see-also}}
+
+
 <!--
 
 ## Related article {#related-article}
@@ -201,8 +206,3 @@ You can use the Form Data Model Prefill service to prepopulate fields of an Adap
 -->
 
 
-## See Also {#see-also}
-
-## See Also {#see-also}
-
-{{see-also}}

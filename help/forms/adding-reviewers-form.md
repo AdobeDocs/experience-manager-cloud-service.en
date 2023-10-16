@@ -72,6 +72,5 @@ To associate user groups with an Adaptive Form:
 
 >[!MORELIKETHIS]
 >
->* [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)
 >* [Creating and managing reviews to forms](/help/forms/create-reviews-forms.md)
 >* [Create and manage reviews for an Adaptive Form](/help/forms/review-adaptiveforms-in-sites-page.md)

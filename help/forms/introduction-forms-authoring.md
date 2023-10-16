@@ -359,6 +359,4 @@ The content structure typically contains the following primary components:
 
 ## See Also {#see-also}
 
-## See Also {#see-also}
-
 {{see-also}}

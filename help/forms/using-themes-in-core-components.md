@@ -424,6 +424,4 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 
 ## See Also {#see-also}
 
-## See Also {#see-also}
-
 {{see-also}}
