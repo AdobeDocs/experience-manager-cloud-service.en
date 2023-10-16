@@ -107,7 +107,7 @@ There are various main components of this new architecture:
 
 -->
 
-![AEM as a Cloud Service Overview - with Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEM as a Cloud Service Overview - with Edge Delivery Services")
+![AEM as a Cloud Service Overview - with Edge Delivery Services](assets/aemaacs-edge-architecture.png "AEM as a Cloud Service Overview - with Edge Delivery Services")
 
 * For AEM Sites as a Cloud Service:
 
