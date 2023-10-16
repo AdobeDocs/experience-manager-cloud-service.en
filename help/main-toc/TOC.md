@@ -527,6 +527,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Remove external dependencies for existing installations](/help/assets/remove-external-dependencies.md)
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
     + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)    
++ Best practices
+  + [Search best practices](/help/assets/search-best-practices.md)
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
