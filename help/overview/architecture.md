@@ -109,59 +109,69 @@ There are various main components of this new architecture:
 
 ![AEM as a Cloud Service Overview - with Edge Delivery Services](assets/architecture-aem-edge.png "AEM as a Cloud Service Overview - with Edge Delivery Services")
 
-* For AEM Sites as a Cloud Service:
+### AEM Sites as a Cloud Service {#aem-sites}
 
-  * For a traditional configuration, there continues to be the concept of an authoring tier and a publish tier for each environment (at a high level).
+For AEM Sites as a Cloud Service:
 
-  * With the newer [Edge Delivery Services](/help/edge/overview.md), authoring can *also* use [document-based editing](https://www.hlx.live/docs/authoring) that takes place externally; in either SharePoint or Google Drive. There is still a publish tier.
+* For a traditional configuration (when not using Edge Delivery Services), there continues to be the concept of an authoring tier and a publish tier for each environment (at a high level).
 
-  * The author tier is made of two or more nodes within a single author cluster. It scales automatically, dependent on the authoring activity.
+* With the newer [Edge Delivery Services](/help/edge/overview.md), authoring can *also* use [document-based editing](https://www.hlx.live/docs/authoring) that takes place externally to AEM; for example, in either SharePoint or Google Drive. There is still a preview tier and a publish tier.
 
-    * Content authors/creators login to the AEM author tier to create, edit, and manage content.
+* The author tier is made of two or more nodes within a single author cluster. It scales automatically, dependent on the authoring activity.
 
-    * Logging into the author tier is managed by the Adobe Identity Management Services (IMS).
+  * Content authors/creators login to the AEM author tier to create, edit, and manage content.
 
-    * Assets integration and processing use a dedicated Assets Compute Service.
+  * Logging into the author tier is managed by the Adobe Identity Management Services (IMS).
 
-  * The preview tier is comprised of a single preview node. This used for quality assurance of content before publishing to the publish tier.
+  * Assets integration and processing use a dedicated Assets Compute Service.
 
-  * The publish tier is comprised of two or more nodes within a single publish farm.
+* The preview tier is comprised of a single preview node. This used for quality assurance of content before publishing to the publish tier.
 
-    * The nodes can operate independently from each other.
+* The publish tier is comprised of two or more nodes within a single publish farm.
 
-    * Each node consists of an AEM publisher and a web server equipped with the AEM Dispatcher module.
+  * The nodes can operate independently from each other.
 
-    * It scales automatically with site traffic needs.
+  * Each node consists of an AEM publisher and a web server equipped with the AEM Dispatcher module.
 
-    * By default there is a single publish farm in the primary region, however [additional publish regions](/help/operations/additional-publish-regions.md) may be licensed.
+  * It scales automatically with site traffic needs.
 
-    * End users, or site visitors, visit the website via the AEM Publish Service.
+  * By default there is a single publish farm in the primary region, however [additional publish regions](/help/operations/additional-publish-regions.md) may be licensed.
 
-* For AEM Assets as a Cloud Service:
+  * End users, or site visitors, visit the website via the AEM Publish Service.
+
+### AEM Assets as a Cloud Service {#aem-sites}
+
+For AEM Assets as a Cloud Service:
   
-  * The architecture only includes an authoring environment.
+* The architecture only includes an authoring environment.
 
-* Edge Delivery Services are part of Adobe Experience Manager and as such, Edge Delivery, AEM Sites and AEM Assets can co-exist on the same domain. This is a common use case for larger websites. Content from Edge Delivery can easily be consumed in your AEM Sites pages and vice versa.
+### Edge Delivery Services in AEM as a Cloud Service {#edge-delivery-services-aem}
 
-* Both the author tier, the preview tier, and the publish tier read and persist content from/to a Content Repository Service.
+Edge Delivery Services are part of Adobe Experience Manager and as such, Edge Delivery, AEM Sites and AEM Assets can co-exist on the same domain. This is a common use case for larger websites. Content from Edge Delivery can easily be consumed in your AEM Sites pages and vice versa.
 
-  * The publish tier and the preview tier only read content from the persistence layer.
+### AEM and the Content Repository {#aem-content-repository}
 
-  * The author tier reads and writes content from and to the persistence layer.
+As appropriate to the deployment, the author tier, the preview tier, and the publish tier read and persist content from/to a Content Repository Service.
 
-  * The blobs storage is shared across the publish, the preview, and the author tiers; files are not *moved*.
+* The publish tier and the preview tier only read content from the persistence layer.
 
-  * When content is approved from the author tier, this is an indication that it can be activated, therefore pushed to the publish tier persistence layer; or optionally to the preview tier. This happens via the Replication Service, a middleware pipeline. This pipeline receives the new content, with the individual publish service (or preview service) nodes subscribing to the content pushed to the pipeline.
+* The author tier reads and writes content from and to the persistence layer.
 
-    >[!NOTE]
-    >
-    >For more details see [Replication](/help/operations/replication.md).
+* The blobs storage is shared across the publish, the preview, and the author tiers; files are not *moved*.
 
-  * Developers and administrators manage the AEM as a Cloud Service application by using a Continuous Integration/Continuous Delivery (CI/CD) service, made available via the [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager)). This includes code and configuration deployments using the Cloud Manager's CI/CD pipeline. Anything related to monitoring, maintenance and troubleshooting (for example, log files) is exposed to customers within Cloud Manager.
+* When content is approved from the author tier, this is an indication that it can be activated, therefore pushed to the publish tier persistence layer; or optionally to the preview tier. This happens via the Replication Service, a middleware pipeline. This pipeline receives the new content, with the individual publish service (or preview service) nodes subscribing to the content pushed to the pipeline.
+
+  >[!NOTE]
+  >
+  >For more details see [Replication](/help/operations/replication.md).
   
-  * Accessing the author and publish tiers always happens via a load balancer. This is always up-to-date with the active nodes in each of the tiers.
+* Accessing the author and publish tiers always happens via a load balancer. This is always up-to-date with the active nodes in each of the tiers.
 
-  * For the publish tier and the preview tier, a Continuous Delivery Network (CDN) Service is also available as the first entry point.
+* For the publish tier and the preview tier, a Continuous Delivery Network (CDN) Service is also available as the first entry point.
+
+### Development {#development}
+
+* Developers and administrators manage the AEM as a Cloud Service application by using a Continuous Integration/Continuous Delivery (CI/CD) service, made available via the [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager)). This includes code and configuration deployments using the Cloud Manager's CI/CD pipeline. Anything related to monitoring, maintenance and troubleshooting (for example, log files) is exposed to customers within Cloud Manager.
 
 * For demonstration instances of AEM as a Cloud Service the architecture is simplified. Therefore it does not present all the characteristics of standard development, stage or production environment. This also means that there can be some downtime and there is not support for backup/restore operations.
 
