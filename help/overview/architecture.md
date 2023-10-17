@@ -149,6 +149,10 @@ For AEM Assets as a Cloud Service:
 
 Edge Delivery Services are part of Adobe Experience Manager and as such, Edge Delivery, AEM Sites and AEM Assets can co-exist on the same domain. This is a common use case for larger websites. Content from Edge Delivery can easily be consumed in your AEM Sites pages and vice versa.
 
+The following diagram illustrates how you can edit Sites content in Microsoft Word (document-based editing) and publish to Edge Delivery. It also shows the traditional AEM publishing method using the various editors.
+
+![AEM Sites as a Cloud Service - with Edge Delivery Services](assets/architecture-aem-edge-author-publish.png "AEM Sites as a Cloud Service - with Edge Delivery Services")
+
 ### AEM and the Content Repository {#aem-content-repository}
 
 As appropriate to the deployment, the author tier, the preview tier, and the publish tier read and persist content from/to a Content Repository Service.
@@ -179,9 +183,11 @@ As appropriate to the deployment, the author tier, the preview tier, and the pub
 
 Cloud Manager manages all updates to the instances of the AEM as a Cloud Service. It is mandatory, being the only way to build, test, and deploy the customer application, to both the author, the preview, and the publish tiers. These updates can be triggered by Adobe, when a new version of the AEM Cloud Service is ready, or by the Customer, when a new version of their application is ready.
 
+![AEM as a Cloud Service - Deployment Model](assets/architecture-aem-edge-deployment-model.png "AEM as a Cloud Service - Deployment Model")
+
 Technically, this is implemented due to the concept of a deployment pipeline, coupled to each environment within a program. When a Cloud Manager pipeline is running, it creates a new version of the customer application, both for the author, the preview, and the publish tiers. This is achieved by combining the latest customer packages with the latest baseline Adobe image. When the new images are built and tested successfully, Cloud Manager fully automates the cutover to the latest version of the image by updating all service nodes using a rolling update pattern. This results in no downtime for either the author or publish service.
 
-![AEM as a Cloud Service - Deployment Architecture](assets/concepts-04.png "AEM as a Cloud Service - Deployment Architecture")
+![AEM as a Cloud Service - Deployment Architecture](assets/architecture-aem-edge-deployment-pipelines.png "AEM as a Cloud Service - Deployment Architecture")
 
 ## Content Distribution {#content-distribution}
 
