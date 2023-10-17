@@ -139,7 +139,7 @@ For AEM Sites as a Cloud Service:
 
   * End users, or site visitors, visit the website via the AEM Publish Service.
 
-### AEM Assets as a Cloud Service {#aem-sites}
+### AEM Assets as a Cloud Service {#aem-assets}
 
 For AEM Assets as a Cloud Service:
   
