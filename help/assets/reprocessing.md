@@ -25,12 +25,12 @@ To reprocess assets in a folder:
 
 1. Select **[!UICONTROL Reprocess Assets]**. Choose between the two options:
 
- ![Reprocessing Assets Options](assets/reprocessing-assets-options.png)
+    ![Reprocessing Assets Options](assets/reprocessing-assets-options.png)
 
  * **[!UICONTROL Full Process]:** Select this option when you want to execute the overall process including default profile, custom profile, dynamic processing (if configured), and post processing workflows.
  * **[!UICONTROL Advanced]:** Select this option to choose advanced reprocessing.
 
- ![Advanced Reprocessing Assets Options](assets/reprocessing-assets-options-advanced.png)
+    ![Advanced Reprocessing Assets Options](assets/reprocessing-assets-options-advanced.png)
 
 Select among the following advanced options:
 
