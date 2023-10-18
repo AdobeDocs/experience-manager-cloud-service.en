@@ -588,6 +588,7 @@ Traffic Filter Rules early adopter customers should request a zip of the dashboa
 1. Once the right filters have been applied, you should be able to see a dashboard loaded with the expected data. In the screenshot below, the rule log-rule-example has been triggered 3 times in the last 2 hours, by the same IP located in Ireland, using a web browser and curl.
    
    ![View dev dashboard data](/help/security/assets/dashboard-see-data-logmode.png)
+   ![View dev dashboard data widgets](/help/security/assets/dashboard-see-data-logmode2.png)
    
 1. Now change the cdn.yaml to put the rule into block mode to ensure that the pages are blocked, as expected. Then commit, push and trigger the configuration pipeline as done earlier.
    
