@@ -522,7 +522,7 @@ Below is a list of the field names used in CDN logs, along with a brief descript
  | *pop*  | Datacenter of the CDN cache server.  |
  | *rules*  | The name of any matching rules.<br><br>Also indicates if the match resulted in a block. <br><br>For example, "`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`"<br><br>Empty if no rules matched.  |
 
-## Dashboard tooling to declare rules  {#dashboard-tooling}
+## Dashboard tooling tutorial  {#dashboard-tooling}
  
 Adobe provides local dashboard tooling to ingest CDN logs downloaded via Cloud Manager. You can analyze your traffic to help come up with the appropriate traffic filter rules to declare, including WAF rules. This section first provides some instructions to gain familiarity with the dashboard tooling on a dev environment, followed by guidance on how to leverage that knowledge to create rules on a prod environment.
 
@@ -533,180 +533,180 @@ Traffic Filter Rules early adopter customers should request a zip of the dashboa
 
 1. Create a Cloud Manager non-production configuration pipeline, associated with a dev env. First select the Deployment Pipeline option. Then select Targeted Deployment, Config, your repository, git branch and set the code location to /config.
 
-![Add non-production pipeline select deployment](/help/security/assets/waf-select-pipeline1.png)
+    ![Add non-production pipeline select deployment](/help/security/assets/waf-select-pipeline1.png)
 
-![Add non-production pipeline select targeted](/help/security/assets/waf-select-pipeline2.png)
+    ![Add non-production pipeline select targeted](/help/security/assets/waf-select-pipeline2.png)
 
 
 1. In your workspace, create a folder config at the root level and add to it a file named cdn.yaml. Finally, declare a simple rule in cdn.yaml file, setting it in log mode rather than in blocking mode.
-
-```
-kind: "CDN"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  trafficFilters:
-    rules:
-    # Log request on simple path
-    - name: log-rule-example
-      when:
-        allOf:
-          - reqProperty: tier
-            matches: "author|publish"
-          - reqProperty: path
-            equals: '/log/me'
-      action: log
-```
-
+   
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+       # Log request on simple path
+       - name: log-rule-example
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/log/me'
+         action: log
+   ```
+   
 1. Commit and push your changes, and  deploy your configuration using the configuration pipeline. 
-
-![Run configuration pipeline](/help/security/assets/waf-run-pipeline.png)
-
+    
+   ![Run configuration pipeline](/help/security/assets/waf-run-pipeline.png)
+    
 1. Once your configuration has been deployed, try to access https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me using your web browser or with the curl command below. You should be served with a 404 error page since that page doesn't exist.
 
-```
-curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
-```
+   ```
+   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+   ```
 
 1. Download the CDN logs from Cloud Manager and validate that the rules matched as expected, with a rules property matching the rule name:
 
-```
-"rules": "match=log-rule-example"
-```
+   ```
+   "rules": "match=log-rule-example"
+   ```
 
-![Select Download logs](/help/security/assets/waf-download-logs1.png)
+   ![Select Download logs](/help/security/assets/waf-download-logs1.png)
 
-![Download logs](/help/security/assets/waf-download-logs2.png)
-
+   ![Download logs](/help/security/assets/waf-download-logs2.png)
+   
 1. Load the Docker image with the dashboard tooling and follow the README to ingest the CDN logs. As depicted in the following screenshots, select the right time period, the right environment, and the right filters. 
+   
+   ![Select time from dashboard](/help/security/assets/dashboard-select-time.png)
 
-![Select time from dashboard](/help/security/assets/dashboard-select-time.png)
-
-![Select environment from dashboard](/help/security/assets/dashboard-select-env.png)
-
+   ![Select environment from dashboard](/help/security/assets/dashboard-select-env.png)
+   
 1. Once the right filters have been applied, you should be able to see a dashboard loaded with the expected data. In the screenshot below, the rule log-rule-example has been triggered 3 times in the last 2 hours, by the same IP located in Ireland, using a web browser and curl.
-
-![View dev dashboard data](/help/security/assets/dashboard-see-data-logmode.png)
-
+   
+   ![View dev dashboard data](/help/security/assets/dashboard-see-data-logmode.png)
+   
 1. Now change the cdn.yaml to put the rule into block mode to ensure that the pages are blocked, as expected. Then commit, push and trigger the configuration pipeline as done earlier.
-
-```
-kind: "CDN"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  trafficFilters:
-    rules:
-    # Log request on simple path
-    - name: log-rule-example
-      when:
-        allOf:
-          - reqProperty: tier
-            matches: "author|publish"
-          - reqProperty: path
-            equals: '/log/me'
-      action: block
-```
-
+   
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+       # Log request on simple path
+       - name: log-rule-example
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/log/me'
+         action: block
+   ```
+   
 1. Once your configuration has been deployed, try to access https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me using your web browser or with the curl command below. You should be served with a 406 error page, indicating that the request was blocked.
-
-```
-curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
-```
-
+   
+   ```
+   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+   ```
+   
 1. Once again download again your CDN logs in Cloud Manager (note: It can take up to 5 minutes for the new requests logs to be exposed in your CDN logs) and import them in the dashboard tooling as we did earlier. Once it is done, refresh your dashboard. As you can see in the screenshot below, requests towards /log/me are being blocked by our rule. 
-
-![View prod dashboard data](/help/security/assets/dashboard-see-data-blockmode.png)
-
+   
+   ![View prod dashboard data](/help/security/assets/dashboard-see-data-blockmode.png)
+   
 1. If you have WAF traffic filters enabled (this will require an additional license after GA), repeat with a WAF traffic filter rule, in log mode, and deploy the rules.
-
-```
-kind: "CDN"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  trafficFilters:
-    rules:
-      - name: log-waf-flags
-        when:
-          reqProperty: tier
-          matches: "author|publish"
-        action:
-          type: log
-          wafFlags:
-              - SANS
-              - SIGSCI-IP
-              - TORNODE
-              - NOUA
-              - SCANNER
-              - USERAGENT
-              - PRIVATEFILE
-              - ABNORMALPATH
-              - TRAVERSAL
-              - NULLBYTE
-              - BACKDOOR
-              - LOG4J-JNDI
-              - SQLI
-              - XSS
-              - CODEINJECTION
-              - CMDEXE
-              - NO-CONTENT-TYPE
-              - UTF8
-``` 
-
+   
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+         - name: log-waf-flags
+           when:
+             reqProperty: tier
+             matches: "author|publish"
+           action:
+             type: log
+             wafFlags:
+                 - SANS
+                 - SIGSCI-IP
+                 - TORNODE
+                 - NOUA
+                 - SCANNER
+                 - USERAGENT
+                 - PRIVATEFILE
+                 - ABNORMALPATH
+                 - TRAVERSAL
+                 - NULLBYTE
+                 - BACKDOOR
+                 - LOG4J-JNDI
+                 - SQLI
+                 - XSS
+                 - CODEINJECTION
+                 - CMDEXE
+                 - NO-CONTENT-TYPE
+                 - UTF8
+   ``` 
+   
 1. Use a tool like [nikto](https://github.com/sullo/nikto/tree/master) to generate matching requests. The command below will send around 550 malicious requests in less than 1 minute.
-
-```
-./nikto.pl -useragent "MyAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXXX-eYYYYY.adobeaemcloud.com
-```
-
+   
+   ```
+   ./nikto.pl -useragent "MyAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXXX-eYYYYY.adobeaemcloud.com
+   ```
+   
 1. Download the CDN logs from Cloud Manager (remember that they may take up to 5 minutes to appear) and validate that both the matching declared rules and the WAF flags appear. 
-
-As you can see, several of the requests produced by Nikto are being flagged by the WAF as being malicious. We can see that Nikto tried to exploit CMDEXE, SQLI and NULLBYTE vulnerabilities. If you now change the action from log to block and re-trigger a scan using Nikto, all the requests that were previously flagged will this time get blocked.
-
-![View WAF data](/help/security/assets/dashboard-see-data-waf.png)
-
-
-Note that whenever a request matches any of the WAF flags, those WAF flags will appear, even if not part of the declared rule; this is so you're always aware of potentially new malicious traffic, for which you haven't yet declared matching rules. As an example:
-
-```
-"rules": "match=log-waf-flags,waf=SQLI,action=blocked"
-```
-
+   
+   As you can see, several of the requests produced by Nikto are being flagged by the WAF as being malicious. We can see that Nikto tried to exploit CMDEXE, SQLI and NULLBYTE vulnerabilities. If you now change the action from log to block and re-trigger a scan using Nikto, all the requests that were previously flagged will this time get blocked.
+   
+   ![View WAF data](/help/security/assets/dashboard-see-data-waf.png)
+   
+   
+   Note that whenever a request matches any of the WAF flags, those WAF flags will appear, even if not part of the declared rule; this is so you're always aware of potentially new malicious traffic, for which you haven't yet declared matching rules. As an example:
+   
+   ```
+   "rules": "match=log-waf-flags,waf=SQLI,action=blocked"
+   ```
+   
 1. Repeat with a rule that uses rate limiting, in log mode. As always, commit, push and trigger the configuration pipeline to apply your configuration.
-
-```
-kind: "CDN"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  trafficFilters:
-    rules:
-      - name: limit-requests-client-ip
-        when:
-          reqProperty: tier
-          matches: "author|publish"
-        rateLimit:
-          limit: 10
-          window: 1
-          penalty: 60
-          groupBy:
-            - reqProperty: clientIp
-        action: log
-```
-
+   
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+         - name: limit-requests-client-ip
+           when:
+             reqProperty: tier
+             matches: "author|publish"
+           rateLimit:
+             limit: 10
+             window: 1
+             penalty: 60
+             groupBy:
+               - reqProperty: clientIp
+           action: log
+   ```
+   
 1. Use a tool like [Vegeta](https://github.com/tsenart/vegeta) to generate traffic.
-
-```
-echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s
-```
-
+   
+   ```
+   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s
+   ```
+   
 1. After running the tool, you can download CDN logs and ingest them in the dashboard to verify that the rate limiter rule has been triggered
-
-Now that you're familiar with how traffic filter rules work, you can move onto the prod environment.
+   
+   Now that you're familiar with how traffic filter rules work, you can move onto the prod environment.
 
 
