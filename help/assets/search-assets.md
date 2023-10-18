@@ -533,6 +533,7 @@ Navigate to the folder location for assets displayed in the search results. Sele
 
 **See also**
 
+* [Search best practices](search-best-practices.md) 
 * [Translate Assets](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [Assets supported file formats](file-format-support.md)
