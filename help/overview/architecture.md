@@ -143,7 +143,9 @@ For AEM Assets as a Cloud Service:
 
 ### Edge Delivery Services in AEM as a Cloud Service {#edge-delivery-services-aem}
 
-[Edge Delivery Services](/help/edge/overview.md) are part of Adobe Experience Manager and as such, Edge Delivery, AEM Sites and AEM Assets can co-exist on the same domain. This is a common use case for larger websites. Content from Edge Delivery can easily be consumed in your AEM Sites pages and vice versa.
+[Edge Delivery Services](/help/edge/overview.md) are designed for rapid content generation and development.
+
+As Edge Delivery Services are part of Adobe Experience Manager and as such, Edge Delivery, AEM Sites and AEM Assets can co-exist on the same domain. This is a common use case for larger websites. Content from Edge Delivery can easily be consumed in your AEM Sites pages and vice versa.
 
 The following diagram illustrates how you can edit Sites content in Microsoft Word (document-based editing) and publish to Edge Delivery. It also shows the traditional AEM publishing method using the various editors.
 
