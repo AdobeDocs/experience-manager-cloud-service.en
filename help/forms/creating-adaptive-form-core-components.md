@@ -197,12 +197,3 @@ You can use the Form Data Model Prefill service to prepopulate fields of an Adap
 {{see-also}}
 
 
-<!--
-
-## Related article {#related-article}
-
-* [Create a standalone Core Components based Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
-
--->
-
-
