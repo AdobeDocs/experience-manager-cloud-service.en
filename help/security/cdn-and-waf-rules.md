@@ -531,10 +531,14 @@ Traffic Filter Rules early adopter customers should request a zip of the dashboa
 
 ### Getting familiar with the dashboard tooling {#dashboard-getting-familiar}
 
+1. Create a Cloud Manager non-production configuration pipeline, associated with a dev env. First select the Deployment Pipeline option. Then select Targeted Deployment, Config, your repository, git branch and set the code location to /config.
 
-Create a Cloud Manager non-production configuration pipeline, associated with a dev env.
+![Add non-production pipeline select deployment](/help/security/assets/waf-select-pipeline1.png)
 
-In git, Declare a simple rule in cdn.yaml, setting it in log mode rather than in blocking mode.
+![Add non-production pipeline select targeted](/help/security/assets/waf-select-pipeline2.png)
+
+
+1. In your workspace, create a folder config at the root level and add to it a file named cdn.yaml. Finally, declare a simple rule in cdn.yaml file, setting it in log mode rather than in blocking mode.
 
 ```
 kind: "CDN"
@@ -555,21 +559,35 @@ data:
       action: log
 ```
 
-Deploy using the configuration pipeline and browser call or curl request that matches the rules:
+1. Commit and push your changes, and  deploy your configuration using the configuration pipeline. 
+
+![Run configuration pipeline](/help/security/assets/waf-run-pipeline.png)
+
+1. Once your configuration has been deployed, try to access https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me using your web browser or with the curl command below. You should be served with a 404 error page since that page doesn't exist.
 
 ```
-curl -svo https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
 ```
 
-Download the CDN logs from Cloud Manager and validate that the rules matched as expected, with a rules property matching the rule name:
+1. Download the CDN logs from Cloud Manager and validate that the rules matched as expected, with a rules property matching the rule name:
 
 ```
 "rules": "match=log-rule-example"
 ```
 
-Load the Docker image with the dashboard tooling and follow the README to ingest the CDN logs.
+![Select Download logs](/help/security/assets/waf-download-logs1.png)
 
-Confirm that you can see the matching traffic appear in the appropriate dashboard widget.
+![Download logs](/help/security/assets/waf-download-logs2.png)
+
+1. Load the Docker image with the dashboard tooling and follow the README to ingest the CDN logs. As depicted in the following screenshots, select the right time period, the right environment, and the right filters. 
+
+![Select time from dashboard](/help/security/assets/dashboard-select-time.png)
+
+![Select environment from dashboard](/help/security/assets/dashboard-select-env.png)
+
+1. Once the right filters have been applied, you should be able to see a dashboard loaded with the expected data. In the screenshot below, the rule log-rule-example has been triggered 3 times in the last 2 hours, by the same IP located in Ireland, using a web browser and curl.
+
+![View dashboard data](/help/security/assets/dashboard-see-data-logmode.png)
 
 Now change the cdn.yaml to put the rule into block mode to ensure that the traffic doesn't go through:
 
