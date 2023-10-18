@@ -359,10 +359,10 @@ When [!DNL Adobe Sign] service is configured for an Adaptive Form, the service f
 
 * Use separate email addresses to configure [!DNL Adobe Sign] account and for the first or single recipient. The email address of the first recipient or the only recipient (if there is the single recipient) cannot be identical to [!DNL Adobe Sign] account used to configure AEM Cloud Services.
 
-## Related Articles {#related-articles}
-
-* [Integrate [!DNL Adobe Sign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
-* [Best practices for using [!DNL Adobe Sign] with Adaptive Forms](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+>[!MORELIKETHIS]
+>
+>* [Integrate [!DNL Adobe Sign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
+>* [Best practices for using [!DNL Adobe Sign] with Adaptive Forms](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 
 
 ## See Also {#see-also}
