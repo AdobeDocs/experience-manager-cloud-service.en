@@ -296,13 +296,11 @@ The newly added assets are not indexed.
 
 <table>
     <tr>
-        <th> S.No.</th>
         <th> Parameters </th>
         <th> Admin view </th>
         <th> Assets View </th>
     </tr>
     <tr>
-        <td> 1. </td>
         <td> Custom facets </td>
         <td> You can add <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en">custom search facets as per the requirement.</td>
         <td> The custom facets are partially supported in the Assets view. The supported facets are:
@@ -316,37 +314,31 @@ The newly added assets are not indexed.
         </td>
     </tr>
     <tr>
-        <td> 2. </td>
         <td> Operators </td>
         <td> Supports AND, OR, and NOT </td>
         <td> Not supported </td>
     </tr>
     <tr>
-        <td> 3. </td>
         <td> Wildcards </td>
         <td> Supports question mark (?) and asterisk (*).</td>
         <td> Not supported </td>
     </tr>
     <tr>
-        <td> 4. </td>
         <td> Boosting search results </td>
         <td> Supported </td>
         <td> Not supported </td>
     </tr>
      <tr>
-        <td> 5. </td>
         <td> Clear all filters at once </td>
         <td> Not supported </td>
         <td> Supported</td>
     </tr>
      <tr>
-        <td> 6. </td>
         <td> Files/Folders/Files & Folders </td>
         <td> Supported </td>
         <td> An option to select a Folder is available under "File Type" </td>
     </tr>
      <tr>
-        <td> 7. </td>
         <td> Asset Status </td>
         <td> 
             Supported options are:
@@ -371,7 +363,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 8. </td>
         <td> File type </td>
         <td>
         Supported options are:
@@ -395,7 +386,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 9. </td>
         <td> File size </td>
         <td>
         Supported options are:
@@ -407,7 +397,6 @@ The newly added assets are not indexed.
         <td> Not supported </td>
     </tr>
      <tr>
-        <td> 10. </td>
         <td> Other filters </td>
         <td>
             <ul>
@@ -424,7 +413,6 @@ The newly added assets are not indexed.
         <td> Not supported </td>
     </tr>
      <tr>
-        <td> 11. </td>
         <td> Find Similar </td>
         <td> Supported </td>
         <td> Not supported </td>
