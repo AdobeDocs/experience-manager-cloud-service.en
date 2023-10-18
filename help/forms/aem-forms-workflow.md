@@ -264,3 +264,9 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 ### Purge workflow instances {#purge-workflow-instances}
 
 Minimizing the number of workflow instances increases the performance of the workflow engine, so you can regularly purge completed or running workflow instances from the repository. For detailed information see, [Regular Purging of Workflow Instances](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html) purging of workflow instances
+
+
+>[!MORELIKETHIS]
+>
+>* [Use AEM translation workflow to localize Adaptive Forms and Document of Record](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
+>* [Variables in Forms-centric AEM Workflows](/help/forms/variable-in-aem-workflows.md)

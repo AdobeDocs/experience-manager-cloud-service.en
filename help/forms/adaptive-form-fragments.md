@@ -244,3 +244,7 @@ To localize an Adaptive Form that contains Adaptive Form Fragments, you need to 
 ## Reference Fragments {#reference-fragments}
 
 Reference Adaptive Form Fragments that you can use to create your form are available. For more information, see [Reference Fragments](reference-adaptive-form-fragments.md).
+
+>[!MORELIKETHIS]
+>
+>* [Adaptive Form fragments in Core Components](/help/forms/adaptive-form-fragments-core-components.md)
