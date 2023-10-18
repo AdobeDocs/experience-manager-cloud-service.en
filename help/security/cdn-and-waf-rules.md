@@ -619,7 +619,8 @@ Traffic Filter Rules early adopter customers should request a zip of the dashboa
 1. Once again download again your CDN logs in Cloud Manager (note: It can take up to 5 minutes for the new requests logs to be exposed in your CDN logs) and import them in the dashboard tooling as we did earlier. Once it is done, refresh your dashboard. As you can see in the screenshot below, requests towards /log/me are being blocked by our rule. 
    
    ![View prod dashboard data](/help/security/assets/dashboard-see-data-blockmode.png)
-   
+   ![View prod dashboard data](/help/security/assets/dashboard-see-data-blockmode2.png)
+      
 1. If you have WAF traffic filters enabled (this will require an additional license after GA), repeat with a WAF traffic filter rule, in log mode, and deploy the rules.
    
    ```
