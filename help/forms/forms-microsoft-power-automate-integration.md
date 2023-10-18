@@ -192,3 +192,6 @@ After you [Connect your Forms as a Cloud Service instance with Microsoft&reg; Po
 * [Configure a Submit Action](configure-submit-actions-core-components.md)
 * [Adobe Experience Manager Connector for Microsoft&reg; Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
 
+>[!MORELIKETHIS]
+>
+>* [Connect Adaptive Form to Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
