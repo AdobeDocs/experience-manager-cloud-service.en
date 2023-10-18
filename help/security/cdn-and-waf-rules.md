@@ -587,9 +587,9 @@ curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
 
 1. Once the right filters have been applied, you should be able to see a dashboard loaded with the expected data. In the screenshot below, the rule log-rule-example has been triggered 3 times in the last 2 hours, by the same IP located in Ireland, using a web browser and curl.
 
-![View dashboard data](/help/security/assets/dashboard-see-data-logmode.png)
+![View dev dashboard data](/help/security/assets/dashboard-see-data-logmode.png)
 
-Now change the cdn.yaml to put the rule into block mode to ensure that the traffic doesn't go through:
+1. Now change the cdn.yaml to put the rule into block mode to ensure that the pages are blocked, as expected. Then commit, push and trigger the configuration pipeline as done earlier.
 
 ```
 kind: "CDN"
@@ -610,53 +610,17 @@ data:
       action: block
 ```
 
-Redeploy the rules via configuration pipeline and validating that pages are blocked, as expected.
-
-If you have WAF traffic filters enabled (this will require an additional license after GA), repeat with a WAF traffic filter rule.  We will skip the "log" mode, instead using "block" mode directly, however note that it is recommended to start off in log mode when working on prod environments.
+1. Once your configuration has been deployed, try to access https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me using your web browser or with the curl command below. You should be served with a 406 error page, indicating that the request was blocked.
 
 ```
-- name: log-waf-flags
-  when:
-    reqProperty: tier
-    matches: "author|publish"
-  action:
-    type: log
-    wafFlags:
-      - SANS
-      - SIGSCI-IP
-      - TORNODE
-      - NOUA
-      - SCANNER
-      - USERAGENT
-      - PRIVATEFILE
-      - ABNORMALPATH
-      - TRAVERSAL
-      - NULLBYTE
-      - BACKDOOR
-      - LOG4J-JNDI
-      - SQLI
-      - XSS
-      - CODEINJECTION
-      - CMDEXE
-      - NO-CONTENT-TYPE
-      - UTF8
-``` 
-
-Use a tool like [nikto](https://github.com/sullo/nikto/tree/master) to generate a matching request. 
-
-```
-./nikto.pl -useragent “MyAgent (Demo/1.0)” -D V -T 9 -h http://publish-pXXXXX-eYYYYYY.adobeaemcloud.com
+curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
 ```
 
-Download the CDN logs and let the dashboard ingest them. that both declared rules and WAF flags appear in the dashboard. Note that WAF flags always appear, even if they're not part of a declared rule condition; this is so you're always aware of potentially new malicious traffic, for which you haven't yet declared matching rules.
+1. Once again download again your CDN logs in Cloud Manager (note: It can take up to 5 minutes for the new requests logs to be exposed in your CDN logs) and import them in the dashboard tooling as we did earlier. Once it is done, refresh your dashboard. As you can see in the screenshot below, requests towards /log/me are being blocked by our rule. 
 
-Download the CDN logs from Cloud Manager and validate that both the matching declared rules and the WAF flags appear. Note that whenever a request matches any of the WAF flags, thos WAF flags will appear, even if not part of the declared rule; this is so you're always aware of potentially new malicious traffic, for which you haven't yet declared matching rules. As an example:
+![View prod dashboard data](/help/security/assets/dashboard-see-data-blockmode.png)
 
-```
-"rules": "match=log-waf-flags,waf=SQLI,action=blocked"
-```
-
-Repeat with a rule that uses rate limiting. Again, we'll use block mode, skipping over log mode.
+1. If you have WAF traffic filters enabled (this will require an additional license after GA), repeat with a WAF traffic filter rule, in log mode, and deploy the rules.
 
 ```
 kind: "CDN"
@@ -665,24 +629,83 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
-    - name: limit-requests-client-ip
-      when:
-        reqProperty: tier
-        matches: "author|publish"
-      rateLimit:
-        limit: 10
-        window: 1
-        penalty: 60
-        groupBy:
-          - reqProperty: clientIp
-      action: log
+    rules:
+      - name: log-waf-flags
+        when:
+          reqProperty: tier
+          matches: "author|publish"
+        action:
+          type: log
+          wafFlags:
+              - SANS
+              - SIGSCI-IP
+              - TORNODE
+              - NOUA
+              - SCANNER
+              - USERAGENT
+              - PRIVATEFILE
+              - ABNORMALPATH
+              - TRAVERSAL
+              - NULLBYTE
+              - BACKDOOR
+              - LOG4J-JNDI
+              - SQLI
+              - XSS
+              - CODEINJECTION
+              - CMDEXE
+              - NO-CONTENT-TYPE
+              - UTF8
+``` 
+
+1. Use a tool like [nikto](https://github.com/sullo/nikto/tree/master) to generate matching requests. The command below will send around 550 malicious requests in less than 1 minute.
+
+```
+./nikto.pl -useragent "MyAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXXX-eYYYYY.adobeaemcloud.com
 ```
 
-Using a tool like [Vegeta](https://github.com/tsenart/vegeta) to generate traffic. Do not use many requests since dev environments are not intended for heavy traffic.
+1. Download the CDN logs from Cloud Manager (remember that they may take up to 5 minutes to appear) and validate that both the matching declared rules and the WAF flags appear. 
+
+As you can see, several of the requests produced by Nikto are being flagged by the WAF as being malicious. We can see that Nikto tried to exploit CMDEXE, SQLI and NULLBYTE vulnerabilities. If you now change the action from log to block and re-trigger a scan using Nikto, all the requests that were previously flagged will this time get blocked.
+
+![View WAF data](/help/security/assets/dashboard-see-data-waf.png)
+
+
+Note that whenever a request matches any of the WAF flags, those WAF flags will appear, even if not part of the declared rule; this is so you're always aware of potentially new malicious traffic, for which you haven't yet declared matching rules. As an example:
 
 ```
-echo "GET http://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=1s
+"rules": "match=log-waf-flags,waf=SQLI,action=blocked"
 ```
+
+1. Repeat with a rule that uses rate limiting, in log mode. As always, commit, push and trigger the configuration pipeline to apply your configuration.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+      - name: limit-requests-client-ip
+        when:
+          reqProperty: tier
+          matches: "author|publish"
+        rateLimit:
+          limit: 10
+          window: 1
+          penalty: 60
+          groupBy:
+            - reqProperty: clientIp
+        action: log
+```
+
+1. Use a tool like [Vegeta](https://github.com/tsenart/vegeta) to generate traffic.
+
+```
+echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s
+```
+
+1. After running the tool, you can download CDN logs and ingest them in the dashboard to verify that the rate limiter rule has been triggered
 
 Now that you're familiar with how traffic filter rules work, you can move onto the prod environment.
 
