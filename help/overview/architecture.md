@@ -101,12 +101,6 @@ Both of these allow access to a number of features and functionalities. The auth
 
 There are various main components of this new architecture:
 
-<!--
-
-![AEM as a Cloud Service - Runtime Architecture](assets/concepts-03.png "AEM as a Cloud Service - Runtime Architecture")
-
--->
-
 ![AEM as a Cloud Service Overview - with Edge Delivery Services](assets/architecture-aem-edge.png "AEM as a Cloud Service Overview - with Edge Delivery Services")
 
 ### AEM Sites as a Cloud Service {#aem-sites}
@@ -145,9 +139,11 @@ For AEM Assets as a Cloud Service:
   
 * The architecture only includes an authoring environment.
 
+* The [AEM Assets Sidekick plugin](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin) can be used to [incorporate managed assets into high-impact experiences delivered through Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html?lang=en).
+
 ### Edge Delivery Services in AEM as a Cloud Service {#edge-delivery-services-aem}
 
-Edge Delivery Services are part of Adobe Experience Manager and as such, Edge Delivery, AEM Sites and AEM Assets can co-exist on the same domain. This is a common use case for larger websites. Content from Edge Delivery can easily be consumed in your AEM Sites pages and vice versa.
+[Edge Delivery Services](/help/edge/overview.md) are part of Adobe Experience Manager and as such, Edge Delivery, AEM Sites and AEM Assets can co-exist on the same domain. This is a common use case for larger websites. Content from Edge Delivery can easily be consumed in your AEM Sites pages and vice versa.
 
 The following diagram illustrates how you can edit Sites content in Microsoft Word (document-based editing) and publish to Edge Delivery. It also shows the traditional AEM publishing method using the various editors.
 
@@ -206,6 +202,8 @@ A single publish or unpublish request can include multiple resources, but will r
 ## Key Evolutions {#key-evolutions}
 
 The new architecture for AEM as a Cloud Service introduces some fundamental changes and innovations compared to the previous generations:
+
+* The introduction of [Edge Delivery Services](/help/edge/overview.md).
 
 * All files (blobs) are directly uploaded and served from a cloud data store. The associated stream of bits never goes through the JVM of the AEM Author and Publish services. As a result, the nodes of the AEM author and publish services can be smaller in size and more compatible with the expectation of fast autoscaling. For business practitioners, this results in a faster experience when uploading and downloading images, video, etc.
 
