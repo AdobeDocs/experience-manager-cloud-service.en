@@ -524,21 +524,21 @@ Below is a list of the field names used in CDN logs, along with a brief descript
 
 ## Dashboard tooling tutorial  {#dashboard-tooling}
  
-Adobe provides local dashboard tooling to ingest CDN logs downloaded via Cloud Manager. You can analyze your traffic to help come up with the appropriate traffic filter rules to declare, including WAF rules. This section first provides some instructions to gain familiarity with the dashboard tooling on a dev environment, followed by guidance on how to leverage that knowledge to create rules on a prod environment.
+Adobe provides a mechanism to download dashboard tooling onto your computer to ingest CDN logs downloaded via Cloud Manager. With this tooling, you can analyze your traffic to help come up with the appropriate traffic filter rules to declare, including WAF rules. This section first provides some instructions to gain familiarity with the dashboard tooling on a dev environment, followed by guidance on how to leverage that knowledge to create rules on a prod environment.
 
-Traffic Filter Rules early adopter customers should request a zip of the dashboard tooling, which includes README file describing how to load the Docker container and ingest the CDN logs.
+Traffic Filter Rules early adopter customers should request a zip of the dashboard tooling, which includes a README file describing how to load the Docker container and ingest the CDN logs.
 
 
 ### Getting familiar with the dashboard tooling {#dashboard-getting-familiar}
 
-1. Create a Cloud Manager non-production configuration pipeline, associated with a dev env. First select the Deployment Pipeline option. Then select Targeted Deployment, Config, your repository, git branch and set the code location to /config.
+1. Create a Cloud Manager non-production configuration pipeline, associated with a dev env. First select the Deployment Pipeline option. Then select Targeted Deployment, Config, your repository, the git branch, and set the code location to /config.
 
     ![Add non-production pipeline select deployment](/help/security/assets/waf-select-pipeline1.png)
 
     ![Add non-production pipeline select targeted](/help/security/assets/waf-select-pipeline2.png)
 
 
-1. In your workspace, create a folder config at the root level and add to it a file named cdn.yaml. Finally, declare a simple rule in cdn.yaml file, setting it in log mode rather than in blocking mode.
+1. In your workspace, create a folder config at the root level and add a file named cdn.yaml, where you'll declare a simple rule, setting it in log mode rather than in blocking mode.
    
    ```
    kind: "CDN"
@@ -617,12 +617,12 @@ Traffic Filter Rules early adopter customers should request a zip of the dashboa
    curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
    ```
    
-1. Once again download again your CDN logs in Cloud Manager (note: It can take up to 5 minutes for the new requests logs to be exposed in your CDN logs) and import them in the dashboard tooling as we did earlier. Once it is done, refresh your dashboard. As you can see in the screenshot below, requests towards /log/me are being blocked by our rule. 
+1. Once again, download your CDN logs in Cloud Manager (note: It can take up to 5 minutes for the new requests to be exposed in your CDN logs) and import them in the dashboard tooling as we did earlier. Once it is done, refresh your dashboard. As you can see in the screenshot below, requests to /log/me are  blocked by our rule. 
    
    ![View prod dashboard data](/help/security/assets/dashboard-see-data-blockmode.png)
    ![View prod dashboard data](/help/security/assets/dashboard-see-data-blockmode2.png)
       
-1. If you have WAF traffic filters enabled (this will require an additional license after GA), repeat with a WAF traffic filter rule, in log mode, and deploy the rules.
+1. If you have WAF traffic filters enabled (this will require an additional license after the feature is GA), repeat with a WAF traffic filter rule, in log mode, and deploy the rules.
    
    ```
    kind: "CDN"
