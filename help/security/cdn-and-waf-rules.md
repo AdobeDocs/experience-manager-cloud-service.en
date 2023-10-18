@@ -711,4 +711,106 @@ Traffic Filter Rules early adopter customers should request a zip of the dashboa
    
    Now that you're familiar with how traffic filter rules work, you can move onto the prod environment.
 
+### Deploying rules to the prod environment {#dashboard-prod-env}
+
+Make sure to initially declare rules in log mode to validate that there are no false positives, which means legitimate traffic that would be incorrectly blocked.
+
+1. Create a production configuration pipeline associated with your production environment.
+   
+1. Copy the recommended rules below into your cdn.yaml. You may wish to modify the rules based on the unique characteristics of your website's live traffic. Commit, push and trigger your configuration pipeline. Make sure rules are in log mode.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+    #  Block client for 5m when it exceeds 100 req/sec on a time window of 1sec
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: path
+        like: '*'
+      rateLimit:
+        limit: 100
+        window: 1
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: block
+      # Block requests coming from OFAC countries
+      - name: block-ofac-countries
+        when:
+          allOf:
+            - { reqProperty: tier, equals: publish }
+            - reqProperty: clientCountry
+              in:
+                - SY
+                - BY
+                - MM
+                - KP
+                - IQ
+                - CD
+                - SD
+                - IR
+                - LR
+                - ZW
+                - CU
+                - CI
+        action: block
+        # Enable recommended WAF protections (only works if WAF is enabled for your environment)
+        - name: block-waf-flags-globally
+          when:
+            reqProperty: tier
+            matches: "author|publish"
+          action:
+            type: block
+            wafFlags:
+              - SANS
+              - SIGSCI-IP
+              - TORNODE
+              - NOUA
+              - SCANNER
+              - USERAGENT
+              - PRIVATEFILE
+              - ABNORMALPATH
+              - TRAVERSAL
+              - NULLBYTE
+              - BACKDOOR
+              - LOG4J-JNDI
+              - SQLI
+              - XSS
+              - CODEINJECTION
+              - CMDEXE
+              - NO-CONTENT-TYPE
+              - UTF8
+        # Disable protection against CMDEXE on /bin
+        - name: allow-cdmexe-on-root-bin
+          when:
+            allOf:
+              - reqProperty: tier
+                matches: "author|publish"
+              - reqProperty: path
+                matches: "^/bin/.*"
+          action:
+            type: allow
+            wafFlags:
+              - CMDEXE
+```
+
+1. Add any additional rules to block malicious traffic that you may be aware of. For example, certain IPs that have been attacking your site.
+
+1. After a few minutes, hours, or days, depending on your site's traffic volume, download CDN logs from Cloud Manager and analyze them with the dashboard.
+
+1. Here are some considerations:
+    1. Traffic matching declared rules appear in charts and request logs so you can easily check if your declared rules are being triggered.
+    1. Traffic matching WAF flags appear in charts and request logs, even if you didn't log them in a rule. This is so you're always aware of potentially new malicious traffic and can create new rules as needed. Look at WAF flags that are not reflected in the declared rules and consider declaring them.
+    1. For matching rules, inspect the request logs for false positives and see if you can filter them out of the rules. For example, maybe they're a false positive only for certain paths.
+   
+1. Set the appropriate rules to block mode and also consider adding additional rules. Perhaps some of the rules should remain in log mode as you analyze further with more traffic. 
+   
+1. Redeploy the configuration  
+
+1. Iterate, analyzing the dashboards on a frequent basis.
 
