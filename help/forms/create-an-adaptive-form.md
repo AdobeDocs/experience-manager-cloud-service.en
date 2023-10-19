@@ -265,7 +265,4 @@ You can also modify the form model properties from the Adaptive Form editor or A
 
 >[!MORELIKETHIS]
 >
->* [Create an Adaptive Form in AEM Sites page or Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
->* [Create a custom Adaptive Forms theme](using-themes-in-core-components.md)
->* [Configure submit actions for a form](configuring-submit-actions.md)
->* [Available Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
+>* [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)

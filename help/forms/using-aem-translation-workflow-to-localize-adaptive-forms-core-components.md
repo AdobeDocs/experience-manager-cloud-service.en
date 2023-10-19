@@ -77,3 +77,7 @@ Perform the following steps to localize a form and its document of record using 
    ![Import translation file](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. To preview the localized form, on the AEM Forms UI, select the localized form. Click **[!UICONTROL Preview]** >**[!UICONTROL Preview as HTML]**. Reopen the form after adding the `afAcceptLang=<locale code>` to the URL off the form. For example, add `afAcceptLang=de`to open German version of the form.
+
+## See Also {#see-also}
+
+{{see-also}}
