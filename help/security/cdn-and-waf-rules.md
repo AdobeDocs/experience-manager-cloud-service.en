@@ -527,7 +527,7 @@ Below is a list of the field names used in CDN logs, along with a brief descript
 
 Adobe provides a mechanism to download dashboard tooling onto your computer to ingest CDN logs downloaded via Cloud Manager. With this tooling, you can analyze your traffic to help come up with the appropriate traffic filter rules to declare, including WAF rules. This section first provides some instructions to gain familiarity with the dashboard tooling on a dev environment, followed by guidance on how to leverage that knowledge to create rules on a prod environment.
 
-Traffic Filter Rules early adopter customers should request a zip of the dashboard tooling, which includes a README file describing how to load the Docker container and ingest the CDN logs.
+Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github repository.
 
 
 ### Getting familiar with the dashboard tooling {#dashboard-getting-familiar}
