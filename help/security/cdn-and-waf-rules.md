@@ -705,10 +705,16 @@ data:
 1. Use a tool like [Vegeta](https://github.com/tsenart/vegeta) to generate traffic.
 
    ```
-   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s
+   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s | tee results.bin | vegeta report
    ```
 
 1. After running the tool, you can download CDN logs and ingest them in the dashboard to verify that the rate limiter rule has been triggered
+
+   ![View WAF data](/help/security/assets/waf-dashboard-ratelimiter-1.png)
+
+   ![View WAF data](/help/security/assets/waf-dashboard-ratelimiter-2.png)
+
+   As you can see our rule *limit-requests-client-ip* has been triggered.
 
    Now that you're familiar with how traffic filter rules work, you can move onto the prod environment.
 
