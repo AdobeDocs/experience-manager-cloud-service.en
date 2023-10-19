@@ -126,7 +126,7 @@ If you do not need the download functionality, then disable the servlet to preve
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
-## OnTime/OffTime rendition {#on-off-time-rendition}
+## OnTime or OffTime rendition {#on-off-time-rendition}
 
 To enable the `OnOffTimeAssetAccessFilter` service, you need to create an OSGi configuration. This service allows the blocking of access to renditions and metadata in addition to the asset itself based on on/off time settings. The OSGi configuration should be for `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Follow the steps below:
 
