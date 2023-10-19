@@ -665,3 +665,8 @@ You can see the generated CSS using the following options:
 
   Use theme editor if you want to style header and footer using styling options such as font style, background, and transparency.
   If you want to provide information such as a logo image, company name in header, and copyright information in the footer, use the form editor options.
+
+
+## See Also {#see-also}
+
+{{see-also}}
