@@ -305,3 +305,7 @@ Perform the following steps to add AEM Forms and Adobe Analytics integration spe
 * Adobe Analytics can track form metrics only for authenticated users.
 
 -->
+
+>[!MORELIKETHIS]
+>
+>*[Enable Adobe Analytics to an Adaptive Form](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)

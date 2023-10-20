@@ -1,5 +1,5 @@
 ---
-title: How to apply electronic signatures to a form using scribble signatures?
+title: How do I apply e-signatures to a form using scribble signatures?
 description: Learn to apply electronic signatures to a form using scribble signatures.
 uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
@@ -91,3 +91,7 @@ You can tap the **Configure** ![configure icon](assets/configure.png) icon to se
    ![Complete the signing process](assets/scribblecomplete.jpg)
 
 The signatures are added to the form and the form control moves to the next panel.
+
+## See Also {#see-also}
+
+{{see-also}}
