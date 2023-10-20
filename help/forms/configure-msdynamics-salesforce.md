@@ -94,3 +94,9 @@ A [!DNL Microsoft&reg; Dynamics 365] Form Data Model is available out of the box
 To access the Form Data Model, navigate to **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Data Integrations]**. The list of available folders include a folder with the title specified for `DappTitle`  while [generating the AEM archetype project](setup-local-development-environment.md#forms-cloud-service-local-development-environment). Tap the folder name, select the **[!UICONTROL Microsoft&reg; Dynamics 365 Data Model]**, and tap the Edit ![Edit](assets/edit.png) icon to view the form data model.
 
 After configuring the [[!DNL Microsoft&reg; Dynamics 365] Cloud Config service](#configure-dynamics-cloud-service), you can integrate adaptive forms with out of the box [!DNL Microsoft&reg; Dynamics 365] Data Model.
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>  [Add Forms Portal to an AEM Sites page](/help/forms/configure-forms-portal.md)

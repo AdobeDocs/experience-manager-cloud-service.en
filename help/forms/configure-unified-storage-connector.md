@@ -60,3 +60,10 @@ The following are the guidelines when you are using AEM Workflows and storing da
 * Do not use a custom AEM Workflow step in a workflow model to store data in the CRX DE repository.
 
 * When you [configure an AEM Workflow model for external data storage](#configure-workflow-external-data-storage), do not create custom columns for AEM Inbox since the values of the custom columns are not fetched if the workitem in the AEM Inbox belongs to a workflow that is marked for external storage.
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>  [Add Forms Portal to an AEM Sites page](/help/forms/configure-forms-portal.md)
