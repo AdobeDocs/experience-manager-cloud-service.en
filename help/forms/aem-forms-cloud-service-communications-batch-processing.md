@@ -1,11 +1,11 @@
 ---
-title: AEM Forms as a Cloud Service Communications Batch Processing
+title: Effortless Bulk PDF Creation - Master the Art with Batch Processing – Your Self-Help Guide to Generating Millions of PDF Documents!
 description: How to create brand-oriented and personalized communications?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
 ---
 # AEM Forms as a Cloud Service Communications Batch Processing
 
-Communications lets you create, assemble, and deliver brand-oriented and personalized communications such as business correspondences, documents, statements, claim processing letters, benefit notices, claim processing letters, monthly bills, and welcome kits. You can use Communications APIs to combine a template (XFA or PDF) with customer data to generate documents in PDF, PS, PCL, DPL, IPL, and ZPL formats.
+Communications lets you create, assemble, and deliver brand-oriented and personalized communications such as business correspondences, documents, statements, claim processing letters, benefit notices, monthly bills, and welcome kits. You can use Communications APIs to combine a template (XFA or PDF) with customer data to generate documents in PDF, PS, PCL, DPL, IPL, and ZPL formats.
 
 Communications provide APIs for on-demand and scheduled document generation. You can use synchronous APIs for on-demand and batch APIs (asynchronous APIs) for scheduled document generation:
 
@@ -165,3 +165,10 @@ Let's understand with the help of an example: Assume there is an input data file
 ## API reference documentation
 
 The API reference documentation provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is available in the .yaml format. You can download the [Batch APIs](assets/batch-api.yaml) file and upload it to Postman to check functionality of APIs.
+
+>[!MORELIKETHIS]
+>
+>* [Introduction to AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

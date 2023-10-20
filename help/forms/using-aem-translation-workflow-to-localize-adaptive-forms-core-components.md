@@ -1,5 +1,5 @@
 ---
-title: How to translate a Core Components based Adaptive Form?
+title: How can we translate a Core Components based Adaptive Form?
 description: Learn to create a Form Data Model in AEM Forms, test the model with sample data and services, and configure various option for a model.
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
@@ -77,3 +77,7 @@ Perform the following steps to localize a form and its document of record using 
    ![Import translation file](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. To preview the localized form, on the AEM Forms UI, select the localized form. Click **[!UICONTROL Preview]** >**[!UICONTROL Preview as HTML]**. Reopen the form after adding the `afAcceptLang=<locale code>` to the URL off the form. For example, add `afAcceptLang=de`to open German version of the form.
+
+## See Also {#see-also}
+
+{{see-also}}

@@ -1,5 +1,5 @@
 ---
-title: AEM Forms as a Cloud Service - Communications
+title: How to use Forms as a Cloud Service to merge data with XDP and PDF templates or generate output in PCL, ZPL, and PostScript formats?
 description: Automatically merge data with XDP and PDF templates or generate output in PCL, ZPL, and PostScript formats
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 ---
@@ -136,3 +136,10 @@ The [API reference documentation](https://developer.adobe.com/experience-manager
 >[!NOTE]
 >
 >Only members of forms-users group can access Communications APIs.
+
+>[!MORELIKETHIS]
+>
+>* [Introduction to AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

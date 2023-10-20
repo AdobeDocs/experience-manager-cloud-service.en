@@ -1,5 +1,5 @@
 ---
-title: Adaptive Form fragments
+title: What are Adaptive Form fragments?
 description: Adaptive Forms provides a mechanism to create a form segment, such as a panel or a group of fields, as use it in any Adaptive Form. You can also save an existing panel as fragment.
 topic-tags: author
 keywords: Add Adaptive Form fragments, Adaptive Form fragments, Create a form fragment, Add a fragment to an Adaptive Form, Manage fragments
@@ -184,8 +184,8 @@ You can perform several operations on Adaptive Form fragments using the AEM Form
 Reference Adaptive Form fragments that you can use to create your form are available. 
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
 
+
+
 ## See Also {#see-also}
 
-* [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Create or add themes in Adaptive Forms](/help/forms/using-themes-in-core-components.md)
-* [Use Google reCAPTCHA in an AEM Adaptive Form based on Core Components](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

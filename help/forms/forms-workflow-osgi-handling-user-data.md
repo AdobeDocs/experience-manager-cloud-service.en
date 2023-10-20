@@ -1,6 +1,5 @@
 ---
 title: Forms-centric workflows on OSGi | Handling user data
-seo-title: Forms-centric workflows on OSGi | Handling user data
 description: Forms-centric workflows on OSGi | Handling user data
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
@@ -154,3 +153,6 @@ You can also use APIs to access and remove nodes and properties. See the followi
 * [Removing Nodes and Properties](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [API reference](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
 
+>[!MORELIKETHIS]
+>
+>* [Use AEM Forms workflow for business process automation](/help/forms/aem-forms-workflow.md)

@@ -1,5 +1,5 @@
 ---
-title: Configure Out of Office settings
+title: How to configure Out of Office settings in AEM Forms?
 description: Delegate tasks while on leave or out of the office for seamless workflow execution.
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
 ---

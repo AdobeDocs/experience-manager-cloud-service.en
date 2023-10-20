@@ -1,5 +1,5 @@
 ---
-title: How to generate a document of record for Adaptive Forms
+title: How to generate a document of record (DoR) for AEM Forms?
 description: Learn to generate a template for a Document of Record (DoR) for Adaptive Forms.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 ---
@@ -497,3 +497,8 @@ An XCI file helps you set various properties of a document. Forms as a Cloud Ser
   1. Open Cloud Service SDK configuraion manager. The default URL is: <http://localhost:4502/system/console/configMgr>.
   1. Locate and open the **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]** configuration.
   1. Specify path of the XCI file and click **[!UICONTROL Save]**.
+
+
+## See Also {#see-also}
+
+{{see-also}}

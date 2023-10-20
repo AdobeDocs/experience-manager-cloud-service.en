@@ -1,5 +1,5 @@
 ---
-title: An introduction to Forms as a Cloud Service Communications
+title: What are Forms as a Cloud Service Communication APIs?
 description: Use communication APIs to Sign, Certify, or protect your documents, to automate PDF generation processes, and to convert PDF document to another format.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
@@ -296,6 +296,6 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## See Also {#see-also}
 
-
 * [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
 * [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)

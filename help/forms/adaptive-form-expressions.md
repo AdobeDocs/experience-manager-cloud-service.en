@@ -1,6 +1,5 @@
 ---
-title: Adaptive Form Expressions
-seo-title: Adaptive Form Expressions
+title: What are Adaptive Form Expressions?
 description: Use Adaptive Forms expressions to add automatic validation, calculation, and turn visibility of a section on or off.
 
 ---
