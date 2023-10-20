@@ -126,3 +126,12 @@ To define styling for a state of a component:
 You can also simulate the success and error states. Tap the Expand icon to view the **[!UICONTROL Simulate Success]** and **[!UICONTROL Simulate Error]** options.
 
 ![Simulate states](assets/simulate-states.png)
+
+
+## See Also {#see-also}
+
+{{see-also}}
+
+>[!MORELIKETHIS]
+>
+>* [Use themes in Adaptive Form Core Components ](/help/forms/using-themes-in-core-components.md)

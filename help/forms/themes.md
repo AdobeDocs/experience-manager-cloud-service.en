@@ -1,5 +1,5 @@
 ---
-title: How to create and use themes to style an Adaptive Form?
+title: How can we create and use themes to style an adaptive form?
 description: Use Adaptive Form themes to style and provide a visual identity to an Adaptive Form. You can share a theme across any number of Adaptive Forms.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 ---
@@ -665,3 +665,8 @@ You can see the generated CSS using the following options:
 
   Use theme editor if you want to style header and footer using styling options such as font style, background, and transparency.
   If you want to provide information such as a logo image, company name in header, and copyright information in the footer, use the form editor options.
+
+
+## See Also {#see-also}
+
+{{see-also}}

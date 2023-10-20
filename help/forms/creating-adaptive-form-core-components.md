@@ -1,5 +1,5 @@
 ---
-title: How to create an Adaptive Form
+title: How to create an Adaptive Form based on Core Components?
 description: Learn how to create an Adaptive Form using [!DNL Experience Manager Forms]. Adaptive Forms are responsive HTML5 forms that streamline information gathering and processing. Dig deeper on how to create an Adaptive Form based on a Form Data Model and XML or JSON schema.
 feature: Adaptive Forms, Core Components
 role: User, Developer
@@ -192,7 +192,8 @@ You can use the Form Data Model Prefill service to prepopulate fields of an Adap
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
+## See Also {#see-also}
 
-## Related article {#related-article}
+{{see-also}}
 
-* [Create a standalone Core Components based Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+

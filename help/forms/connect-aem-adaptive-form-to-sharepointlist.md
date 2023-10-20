@@ -85,7 +85,9 @@ Learn how to [use AEM Workflow](https://experienceleague.adobe.com/docs/experien
 * [Embed an Adaptive Form to an AEM Sites page](/help/forms/embed-adaptive-form-aem-sites.md)
 * [Create, use, and customize themes in an Adaptive Form](/help/forms/using-themes-in-core-components.md)
 
-
+>[!MORELIKETHIS]
+>
+>* [Create a custom Submit Action for Adaptive Forms](/help/forms/custom-submit-action-form.md)
 
 
 
