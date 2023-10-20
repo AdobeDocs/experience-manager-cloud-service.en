@@ -83,6 +83,12 @@ You can now assign metadata form to a specific folder within your deployment. Al
 
      You can write to `aem-forms-early-adopter-program@adobe.com` from your official email id to join the early adopter program and request access to the capability.
      
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### Traffic Filter Rules, including WAF {#traffic-filter-rules-waf}
+
+Filter traffic at the CDN by matching properties of the incoming request, including url, IP address, and user agent. or set custom traffic rate limits. Customers can also license a set of advanced Web Application Firewall (WAF) rules for extra protection against sophisticated attacks. Learn more about how to declare Traffic Filter Rules and how to deploy them with Cloud Manager's new Configuration Pipeline.
+
 ## Cloud Manager {#cloud-manager}
 
 You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes/current.md).
