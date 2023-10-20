@@ -301,3 +301,8 @@ A tool (Metadata Schema Editor) is provided to define the schema for the metadat
    You have successfully added a custom metadata property.
 
 All the Adaptive Forms in [!DNL AEM Forms] now contain this additional metadata property. You can edit it from the properties page.
+
+
+## See Also {#see-also}
+
+{{see-also}}

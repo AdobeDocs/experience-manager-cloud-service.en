@@ -163,3 +163,8 @@ In the following code, the `SampleType`panel uses the minOccours & maxOccurs pro
 >[!NOTE]
 >
 >For non-accordion layout, use Adaptive Form button components to add and remove instances.
+
+
+>[!MORELIKETHIS]
+>
+>* [Create forms with repeatable sections in Adaptive Form Core Components](/help/forms/create-forms-repeatable-sections.md)

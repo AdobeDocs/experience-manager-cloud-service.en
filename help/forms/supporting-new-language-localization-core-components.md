@@ -180,6 +180,10 @@ Perform the following steps to preview an Adaptive with newly added locale:
 
 ## See more
 
-* [Use machine translation or human translation to translate a Core Components based Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Generate document of record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
 * [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+## See Also {#see-also}
+
+{{see-also}}
