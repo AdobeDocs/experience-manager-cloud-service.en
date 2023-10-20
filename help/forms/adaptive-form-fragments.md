@@ -155,6 +155,14 @@ You can create nested Adaptive Form Fragments, which means you can drag-drop a f
 
 You can replace or change an Adaptive Form Fragment by another fragment by using the **Select Fragment asset** property in the Edit component dialog for an Adaptive Form Fragment panel.
 
+### Using a form fragment multiple times in an Adaptive Form {#using-form-fragment-mutiple-times-in-af}
+
+You can add a form fragment multiple times in an Adaptive Form. For example, you can use an address form fragment to collect address details for permanent, communication, and present living addresses in a loan application form. If the address form fragment used for permanent, communication, and present living addresses shares the same field names, then all the fragments store the same data, even if different details are entered in each fragment. To reuse the same form fragment in an Adaptive Form without duplicating the data:
+
+* Use different field names within the form fragments in a none-based form.
+* Use bindRef to link the same field names with different elements in the data for schema-based forms.
+
+
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 
 When you create an Adaptive Form Fragment using an XFA form template or XSD complex type and drag-drop the fragment to an Adaptive Form, the XFA fragment or the XSD complex type is automatically replaced by the corresponding Adaptive Form Fragment whose fragment model root is mapped to the XFA fragment or XSD complex Type.
