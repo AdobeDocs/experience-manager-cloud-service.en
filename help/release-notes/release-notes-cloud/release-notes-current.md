@@ -64,45 +64,24 @@ You can now assign metadata form to a specific folder within your deployment. Al
 
 ### New features in [!DNL Experience Manager Forms] {#forms-features}
 
-* [**Google reCAPTCHA enterprise support**](/help/forms/captcha-adaptive-forms-core-components.md): Use Google reCAPTCHA Enterprise in an Adaptive Form to provide enhanced protection against fraudulent activity and spam, providing a safer user experience. With advanced risk analysis and seamless integration, genuine users can easily submit forms while bots are effectively blocked.
+* **Custom properties for Adaptive Forms**: You can use custom properties to associate custom attributes (key-value pairs) with a form template or adaptive forms component. It allows forms developers to deliver dynamic form behaviors that adapts based on the values of these custom attributes. For example, developers can craft different renditions of a Headless Forms component on mobile, desktop, or web platforms, based on the values of custom attributes, thereby significantly enhancing the user experience across a wide array of devices.
 
-* [**Adobe Analytics with Experience Cloud Setup Automation for Forms**](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md): You can now enable Adobe Analytics with Experience Cloud Setup Automation with a flip of couple of buttons. It enables you to connect AEM Forms as a Cloud Service with Experience Platform tags and Adobe Analytics to capture and track performance metrics for your published forms.
+* **Themes and templates**: Kickstart your form creation process with our new themes and templates, tailored to empower both seasoned professionals and new forms authors. Seamlessly built using Adaptive Forms Core Components, these meticulously curated themes and templates allow you to start creating forms swiftly for common use cases.
 
-     >[!VIDEO](https://video.tv.adobe.com/v/3424577/enable-adobe-analytics/?quality=12&learn=on)
+     ![Out of the box templates](/help/forms/assets/form-templates-ootb.png)
 
-* [**Adobe Analytics report template for Adaptive Forms**](/help/forms/view-understand-aem-forms-analytics-reports.md): Forms as a Cloud Service now provides an Adobe Analytics report OOTB. It helps you easily understand performance of your forms. The form-level metrics provide you an insight into how the form is performing on multiple key performance indicators (KPIs) like, renditions, visitors, submissions, Average fill time. By tracking user behavior and feedback, you can identify areas of the form that are causing confusion and guide improvements to the form's design and functionality.
 
-     ![Adaptive form user engagement adobe analytics report](/help/forms/assets/forms-analytics-report.png)
+### Pre-release features available in [!DNL Forms] {#pre-release-features-available-in-forms-channel} 
 
-* **[Form Fragment in Adaptive Forms based on Core Components](/help/forms/adaptive-form-fragments-core-components.md)**: Say goodbye to duplication, optimize your digital inventory, and improve collaboration as you elevate your form-building experience with Form Fragments. These reusable components seamlessly integrate into multiple forms, streamlining the creation of consistent and professional-looking forms. Form Fragments ensure reusability, standardization, and brand consistency through 'change once and reflect everywhere' functionality. Experience greater maintainability and efficiency as updates made in one place are automatically propagated across all forms that utilize these fragments.
+* **Submit Forms to Microsoft SharePoint List**: AEM Forms provides an OOTB integration to submit forms data directly to SharePoint List, enabling you to leverage SharePoint's Lists capabilities. 
 
-* **[Enhanced Adobe Sign Workflow step](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: The Adobe Sign Workflow step is enhanced to include the following:
-     * **Government ID-Based Authentication for Adobe Sign**: Adobe Acrobat Sign's Government ID-Based Authentication offers an additional layer of verification by enabling users to authenticate their identity using government-issued IDs (driver's license, national ID, passport). By leveraging trusted identification documents, this enhancement adds an extra level of confidence to the signing process, making it ideal for scenarios that require heightened security, compliance, and user validation. 
-
-     * **Audit Trail for Adobe Sign Documents**:  Use the Audit Trail feature for detailed insights into the lifecycle of your Adobe Sign documents. With the Audit Trail, you can now maintain a comprehensive record of all actions and interactions related to your documents. This includes details such as who viewed, edited, or signed the document, along with timestamps for each event. This enhancement is crucial for maintaining compliance, resolving disputes, and ensuring the integrity of your digital agreements. 
-     
-     * **New roles for Agreement recipients beyond just the Signer**: Adobe Acrobat Sign have the option to expand the roles for Agreement recipients beyond just the Signer to better match their workflow requirements. When enabled, each recipient in an Agreement have their role individually configurable, with Signer being the default. 
-
-* **Page Count Support in Communication APIs**: Now, along with retrieving your document through the Communication APIs, you can also receive the valuable information about the number of pages contained within the document. 
-
-* **[Error handling with custom error handlers in rule editor](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**: You can now invoke a custom function in response to an error returned by an external service and provide a tailored response to end users. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down. 
-
-* **[64-bit Version of AEM Forms Designer](/help/forms/installing-configuring-designer.md)**: The 64-bit version of AEM Forms Designer brings enhanced performance, scalability, and memory management to empower your form creation experience. With the 64-bit architecture, you can tackle even larger and more complex projects with ease, ensuring seamless design workflows and optimized efficiency. Elevate your form design capabilities and embrace the future of AEM Forms Designer with this cutting-edge release.
+     >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 ### Early adopter program {#forms-early-adopter}
 
 * **[Protect your documents with DocAssurance APIs (Part of Communication APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: The DocAssurance APIs empower you to safeguard sensitive information by signing and encrypting the documents. Through encryption, the contents of a document are transformed into an unreadable format, ensuring that only authorized users can gain access. This fortified layer of protection not only shields valuable data from unauthorized eyes but also provides peace of mind. The Signature APIs let your organization protect the security and privacy of Adobe PDF documents that it distributes and receives. This service uses digital signatures and certification to ensure that only intended recipients can alter documents. 
 
      You can write to `aem-forms-early-adopter-program@adobe.com` from your official email id to join the early adopter program and request access to the capability.
-
-* **[Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**: Use Headless Adaptive Forms to enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. Headless adaptive forms help you: 
-
-     * build high-quality multi-channel forms in the programming language of your choice 
-     * natively integrate forms to your desktop and mobile apps, websites, and chat applications 
-     * reuse your proprietary UI components with forms applications 
-     * use the power of Adobe Experience Manager Forms 
-
-     You can send an email to `aem-forms-headless@adobe.com` from your official email ID to join the early adopter program. 
      
 ## Cloud Manager {#cloud-manager}
 
