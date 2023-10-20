@@ -64,7 +64,7 @@ You can now assign metadata form to a specific folder within your deployment. Al
 
 ### New features in [!DNL Experience Manager Forms] {#forms-features}
 
-* **Custom properties for Adaptive Forms**: You can use custom properties to associate custom attributes (key-value pairs) with a form template or adaptive forms component. It allows forms developers to deliver dynamic form behaviors that adapts based on the values of these custom attributes. For example, developers can craft different renditions of a Headless Forms component on mobile, desktop, or web platforms, based on the values of custom attributes, thereby significantly enhancing the user experience across a wide array of devices.
+* **Custom properties for Adaptive Forms**: You can associate custom attributes (key-value pairs) with a form template or adaptive forms component to allow forms developers to deliver dynamic form behaviors that adapts based on the values of these custom attributes. For example, developers can craft different renditions of a Headless Forms component on mobile, desktop, or web platforms, based on the values of custom attributes, thereby significantly enhancing the user experience across a wide array of devices.
 
 * **Themes and templates**: Kickstart your form creation process with our new themes and templates, tailored to empower both seasoned professionals and new forms authors. Seamlessly built using Adaptive Forms Core Components, these meticulously curated themes and templates allow you to start creating forms swiftly for common use cases.
 
