@@ -24,7 +24,7 @@ Traffic filter rules can be deployed via Cloud Manager Configuration Pipeline to
 
 This article is organized into these sections:
 * Traffic protection overview: Learn how you are protected from malicious traffic.
-* Process for using traffic filter rules: Read about a high level methodology for protecting your website.
+* Suggested process for configuring rules: Read about a high level methodology for protecting your website.
 * Setup: Discover how to setup, configure, and deploy traffic filter rules, including WAF rules.
 * Rules syntax: Read about how to declare traffic filter rules in the cdn.yaml configuration file. This includes both the traffic filter rules available to all Sites and Forms customers, as well as the subcategory of WAF rules for those who license that capability.
 * Rules examples: See examples of declared rules to get you on your way.
@@ -41,6 +41,18 @@ At the edge, the Adobe Managed CDN absorbs DDoS attacks at the Network Layer (la
 In the event of a DDoS attack impacting site availability, Adobe's operations teams are alerted and take steps to mitigate.
 
 Customers may take proactive measures to mitigate Application Layer attacks (layer 7) by configuring rules at various modules involved in the content delivery flow. At the Apache layer, write dispatcher rules to configure access to content or use ModSecurity to declare rules. And related to this article in particular, use Cloud Manager's Configuration Pipeline to deploy Traffic Filter Rules, which include the licensable subcategory of WAF Traffic Filter Rules.
+
+## Suggested Process {#suggested-process}
+
+Here's a high-level recommended end-to-end process for coming up with the right traffic filter rules:
+
+1. Configure a non-production and production configuration pipeline, as described in the Setup section.
+1. Customers who have licensed the subcategory of WAF traffic filter rules should enable them in Cloud Manager.
+1. Read and try out the tutorial to concretely understand how to use traffic filter rules, including WAF rules if they've been licensed. The tutorial walks you through deploying rules to a dev environment, simulating malicious traffic, downloading the CDN logs and analyzing them in dashboard tooling.
+1. Copy the recommended initial rules to cdn.yaml and deploy the configuration to production in log mode.
+1. After collecting some traffic, analyze the results using dashboard tooling to see if there were any matches. Look for false positives, and make any necessary adjustments, ultimately enabling the default rules in block mode.
+1. Add custom rules based on analysis of the CDN logs, first testing with simulated traffic on dev environments, before deploying to stage and production in log mode, then block mode.
+1. Monitor traffic on an ongoing basis, making changes to the rules as the threat landscape evolves.
 
 ## Setup {#setup}
 
