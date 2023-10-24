@@ -28,7 +28,7 @@ This article is organized into these sections:
 * Setup: Discover how to setup, configure, and deploy traffic filter rules, including the advanced WAF rules.
 * Rules syntax: Read about how to declare traffic filter rules in the cdn.yaml configuration file. This includes both the traffic filter rules available to all Sites and Forms customers, as well as the subcategory of WAF rules for those who license that capability.
 * Rules examples: See examples of declared rules to get you on your way.
-* Rules with rate limits: Learn how to use rate limiting rules to protect your site from high volume attacks.
+* Rate limit rules: Learn how to use rate limiting rules to protect your site from high volume attacks.
 * CDN logs: See what declared rules and WAF Flags match your traffic.
 * Dashboard Tooling: Analyze your CDN logs to come up with new traffic filter rules.
 * Tutorial: Practical knowledge about the feature, including how to use dashboard tooling to declare the right rules.
@@ -130,7 +130,7 @@ Here's a high-level recommended end-to-end process for coming up with the right 
 
 You can configure `traffic filter rules` to match on patterns such as IPs, user agent, request headers, hostname, geo, and url.
 
-Customers who license the WAF offering can also configure a special category of traffic filter rules called `WAF traffic filter rules` (or WAF rules for short) that reference one or more WAF flags, which are listed in its own section below.
+Customers who license the Enhanced Security or WAF-DDoS Protection Security offering can also configure a special category of traffic filter rules called `WAF traffic filter rules` (or WAF rules for short) that reference one or more [WAF flags](#waf-flags-list).
 
 Here's an example of a set of traffic filter rules, which also includes a WAF rule.
 
@@ -153,7 +153,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-The format of the traffic filter rules in the cdn.yaml file is described below. See some examples in a later section.
+The format of the traffic filter rules in the cdn.yaml file is described below. See some [other examples](#examples) in a later section, as well as a separate section on [Rate Limit Rules](#rate-limit-rules) .
 
 
 | **Property**   | **Most traffic filter rules**  | **WAF traffic filter rules**  | **Type**  | **Default value**  | **Description**  |
@@ -231,7 +231,7 @@ Actions are prioritized according to their types in the following table, which i
 
 ### WAF Flags List {#waf-flags-list}
 
-The `wafFlags` property may include the following:
+The `wafFlags` property, which can be used in the licensable WAF traffic filter rules, may reference the following:
 
 | **Flag ID**  | **Flag Name** | **Description**  |
 |---|---|---|
@@ -274,7 +274,7 @@ The `wafFlags` property may include the following:
 
 ## Rules Examples {#examples}
 
-Some rule examples follow. See the [rate limit section](#rules-with-rate-limits) further down for examples of rate limiting.
+Some rule examples follow. See the [rate limit section](#rules-with-rate-limits) further down for examples of rate limit rules.
 
 **Example 1**
 
@@ -340,7 +340,7 @@ data:
 
 **Example 4**
 
-This rule blocks requests to path /block-me, and blocks every request that matches a SQLI or XSS pattern:
+This rule blocks requests to path /block-me, and blocks every request that matches a SQLI or XSS pattern. This example includes a WAF traffic filter rules, which references the SQLI and XSS [WAF Flags](#waf-flags-list), which require a separate license.
 
 ```
 kind: "CDN"
@@ -395,15 +395,17 @@ data:
         action: block
 ```
 
-## Rules with Rate Limits {#rules-with-rate-limits}
+## Rate Limit Rules {#rate-limits-rules}
 
-Sometimes it is desirable to block traffic matching a rule only if the match exceeds a certain rate over time. Setting a value for the `rateLimit` property limits the rate of those requests that match the rule condition.
+Sometimes it is desirable to block traffic matching a rule only if the match exceeds a certain rate over time. Setting a value for the `rateLimit` property limits the rate of those requests that match the rule condition. 
+
+Rate limit rules cannot reference WAF flags. They are available to all Sites and Forms customers.
 
 ### rateLimit Structure {#ratelimit-structure}
 
 | **Property**  | **Type**  | **Default**  | **MEANING**  |
 |---|---|---|---|
-|  limit |  integer from 10 to 10000     |  required |  Request rate in requests per second for which the rule is triggered. |
+|  limit |  integer from 10 to 10000     |  required |  Request rate (per CDN POP) in requests per second for which the rule is triggered. |
 |  window | integer enum: 1, 10 or 60  | 10  | Sampling window in seconds for which request rate is calculated.  |
 |  penalty | integer from 60 to 3600  | 300 (5 minutes) | A period in seconds for which matching requests are blocked (rounded to the nearest minute).  |
 |  groupBy | array[Getter] | none | rate limiter counter will be aggregated by a set of request properties (for example clientIp).  |
@@ -412,7 +414,7 @@ Sometimes it is desirable to block traffic matching a rule only if the match exc
 
 **Example 1**
 
-This rule blocks a client for 5m when it exceeds 100 req/sec in the last 60 sec:
+This rule blocks a client for 5m when it exceeds 100 req/sec (per CDN POP) in the last 60 sec:
 
 ```
 kind: "CDN"
@@ -437,7 +439,7 @@ data:
 
 **Example 2**
 
-Block requests for 60s on path /critical/resource when it exceeds 100 req/sec in the last 60 sec:
+Block requests for 60s on path /critical/resource when it exceeds 100 req/sec (per CDN POP) in the last 60 sec:
 
 ```
 kind: "CDN"
@@ -565,7 +567,7 @@ Below is a list of the field names used in CDN logs, along with a brief descript
  | *pop*  | Datacenter of the CDN cache server.  |
  | *rules*  | The name of any matching rules.<br><br>Also indicates if the match resulted in a block. <br><br>For example, "`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`"<br><br>Empty if no rules matched.  |
 
-## Dashboard tooling {#dashboard-tooling}
+## Dashboard Tooling {#dashboard-tooling}
 
 Adobe provides a mechanism to download dashboard tooling onto your computer to ingest CDN logs downloaded via Cloud Manager. With this tooling, you can analyze your traffic to help come up with the appropriate traffic filter rules to declare, including WAF rules.
 
