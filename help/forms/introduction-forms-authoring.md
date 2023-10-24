@@ -356,3 +356,7 @@ The content structure typically contains the following primary components:
 * **toolbar:** An Adaptive Form container has an associated global toolbar, which is global to the form. This toolbar can be added using the **[!UICONTROL Add Toolbar]** action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
 
 * **assets:** This node contains additional information used for form authoring. For example, form model details, localization details, and so on.
+
+## See Also {#see-also}
+
+{{see-also}}

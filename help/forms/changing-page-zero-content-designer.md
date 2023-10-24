@@ -40,3 +40,8 @@ Page Zero content is displayed by default when a non-Adobe PDF viewer, such as t
 >[!NOTE]
 >
 >The custom property you just created may not appear properly in the Form Properties dialog when you reopen the form. However, it works fine and the form displays the updated Page Zero message.
+
+>[!MORELIKETHIS]
+>
+>* [Download and install Forms Designer to create Document of Record templates](/help/forms/installing-configuring-designer.md)
+>* [Use Forms Designer to create Document of Record (DoR) templates and form fragments?](/help/forms/use-forms-designer.md)

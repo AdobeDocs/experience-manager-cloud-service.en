@@ -153,3 +153,8 @@ Get a [sample client library](/help/forms/assets/locale-support-sample.zip) to a
 *   When new fields are added in an existing Adaptive Form:
     * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. 
     * **For human translation**: Export the dictionary through `[server:port]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the newly added fields and upload it.
+
+
+## See Also {#see-also}
+
+{{see-also}}
