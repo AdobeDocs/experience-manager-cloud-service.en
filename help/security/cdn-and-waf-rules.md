@@ -30,7 +30,8 @@ This article is organized into these sections:
 * Rules examples: See examples of declared rules to get you on your way.
 * Rules with rate limits: Learn how to use rate limiting rules to protect your site from high volume attacks
 * CDN logs: Interpret the results of matching rules in your CDN logs.
-* About the tutorial: sets the context for a linked tutorial, which gives you practical knowledge about the feature, including how to use dashboard tooling to declare the right rules. 
+* Tutorial: Practical knowledge about the feature, including how to use dashboard tooling to declare the right rules.
+<!-- About the tutorial: sets the context for a linked tutorial, which gives you practical knowledge about the feature, including how to use dashboard tooling to declare the right rules. -->
 
 ## Traffic Protection Overview {#traffic-protection-overview}
 
