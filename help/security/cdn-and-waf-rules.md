@@ -16,7 +16,7 @@ Traffic filter rules can be used to block or allow requests at the CDN layer, wh
 
 Some of these traffic filter rules are available to all AEM as a Cloud Service Sites and Forms customers. They mainly operate on request properties and request headers, including IP, hostname, path, and user agent.
 
-A subcategory of traffic filter rules require either an Enhanced Security license or WAF-DDoS Protection Security license. These rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the WAF Flags described later in this article. Sites and Forms customers can contact their Adobe account team for details about licensing this advanced capability.
+A subcategory of traffic filter rules require either an Enhanced Security license or WAF-DDoS Protection Security license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the WAF Flags described later in this article. Sites and Forms customers can contact their Adobe account team for details about licensing this advanced capability.
 
 Traffic filter rules can be deployed via Cloud Manager Configuration Pipeline to dev, stage, and production environment types in production (non-sandbox) programs. Support for RDEs will come in the future.
 
@@ -25,7 +25,7 @@ Traffic filter rules can be deployed via Cloud Manager Configuration Pipeline to
 This article is organized into these sections:
 * Traffic protection overview: Learn how you are protected from malicious traffic.
 * Suggested process for configuring rules: Read about a high level methodology for protecting your website.
-* Setup: Discover how to setup, configure, and deploy traffic filter rules, including WAF rules.
+* Setup: Discover how to setup, configure, and deploy traffic filter rules, including the advanced WAF rules.
 * Rules syntax: Read about how to declare traffic filter rules in the cdn.yaml configuration file. This includes both the traffic filter rules available to all Sites and Forms customers, as well as the subcategory of WAF rules for those who license that capability.
 * Rules examples: See examples of declared rules to get you on your way.
 * Rules with rate limits: Learn how to use rate limiting rules to protect your site from high volume attacks
@@ -44,7 +44,7 @@ Customers may take proactive measures to mitigate Application Layer attacks (lay
 
 For example, at the Apache layer, customers may configure either the [dispatcher module](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter) or [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) to limit access to certain content. 
 
-And as this article describes, Traffic Filter Rules rules may be deployed to the CDN, using Cloud Manager's Configuration Pipeline. In addition to traffic request-based traffic filter rules based on properties like IP address, path, and headers, customers may also license a subcategory of traffic filter rules called WAF Rules.
+And as this article describes, Traffic Filter Rules rules may be deployed to the CDN, using Cloud Manager's Configuration Pipeline. In addition to traffic request-based traffic filter rules based on properties like IP address, path, and headers, customers may also license a powerful subcategory of traffic filter rules called WAF Rules.
 
 ## Suggested Process {#suggested-process}
 
