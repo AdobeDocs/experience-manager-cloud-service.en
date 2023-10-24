@@ -40,7 +40,11 @@ At the edge, the Adobe Managed CDN absorbs DDoS attacks at the Network Layer (la
 
 In the event of a DDoS attack impacting site availability, Adobe's operations teams are alerted and take steps to mitigate.
 
-Customers may take proactive measures to mitigate Application Layer attacks (layer 7) by configuring rules at various modules involved in the content delivery flow. At the Apache layer, write dispatcher rules to configure access to content or use ModSecurity to declare rules. And related to this article in particular, use Cloud Manager's Configuration Pipeline to deploy Traffic Filter Rules, which include the licensable subcategory of WAF Traffic Filter Rules.
+Customers may take proactive measures to mitigate Application Layer attacks (layer 7) by configuring rules at various layers of the content delivery flow. 
+
+For example, at the Apache layer, customers may configure either the [dispatcher module](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter) or [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) to limit access to certain content. 
+
+And as this article describes, Traffic Filter Rules rules may be deployed to the CDN, using Cloud Manager's Configuration Pipeline. In addition to traffic request-based traffic filter rules based on properties like IP address, path, and headers, customers may also license a subcategory of traffic filter rules called WAF Rules.
 
 ## Suggested Process {#suggested-process}
 
