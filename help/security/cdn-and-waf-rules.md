@@ -16,7 +16,7 @@ Traffic filter rules can be used to block or allow requests at the CDN layer, wh
 
 Some of these traffic filter rules are available to all AEM as a Cloud Service Sites and Forms customers. They mainly operate on request properties and request headers, including IP, hostname, path, and user agent.
 
-A subcategory of traffic filter rules require either an Enhanced Security license or WAF-DDoS Protection Security license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the WAF Flags described later in this article. Sites and Forms customers can contact their Adobe account team for details about licensing this advanced capability.
+A subcategory of traffic filter rules require either an Enhanced Security license or WAF-DDoS Protection Security license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article. Sites and Forms customers can contact their Adobe account team for details about licensing this advanced capability.
 
 Traffic filter rules can be deployed via Cloud Manager Configuration Pipeline to dev, stage, and production environment types in production (non-sandbox) programs. Support for RDEs will come in the future.
 
@@ -28,8 +28,9 @@ This article is organized into these sections:
 * Setup: Discover how to setup, configure, and deploy traffic filter rules, including the advanced WAF rules.
 * Rules syntax: Read about how to declare traffic filter rules in the cdn.yaml configuration file. This includes both the traffic filter rules available to all Sites and Forms customers, as well as the subcategory of WAF rules for those who license that capability.
 * Rules examples: See examples of declared rules to get you on your way.
-* Rules with rate limits: Learn how to use rate limiting rules to protect your site from high volume attacks
-* CDN logs: Interpret the results of matching rules in your CDN logs.
+* Rules with rate limits: Learn how to use rate limiting rules to protect your site from high volume attacks.
+* CDN logs: See what declared rules and WAF Flags match your traffic.
+* Dashboard Tooling: Analyze your CDN logs to come up with new traffic filter rules.
 * Tutorial: Practical knowledge about the feature, including how to use dashboard tooling to declare the right rules.
 <!-- About the tutorial: sets the context for a linked tutorial, which gives you practical knowledge about the feature, including how to use dashboard tooling to declare the right rules. -->
 
@@ -51,11 +52,11 @@ And as this article describes, Traffic Filter Rules rules may be deployed to the
 
 Here's a high-level recommended end-to-end process for coming up with the right traffic filter rules:
 
-1. Configure a non-production and production configuration pipeline, as described in the Setup section.
+1. Configure a non-production and production configuration pipeline, as described in the [Setup](#setup) section.
 1. Customers who have licensed the subcategory of WAF traffic filter rules should enable them in Cloud Manager.
-1. Read and try out the tutorial to concretely understand how to use traffic filter rules, including WAF rules if they've been licensed. The tutorial walks you through deploying rules to a dev environment, simulating malicious traffic, downloading the CDN logs and analyzing them in dashboard tooling.
+1. Read and try out the tutorial to concretely understand how to use traffic filter rules, including WAF rules if they've been licensed. The tutorial walks you through deploying rules to a dev environment, simulating malicious traffic, downloading the [CDN logs](#cdn-logs), and analyzing them in [dashboard tooling](#dashboard-tooling).
 1. Copy the recommended initial rules to cdn.yaml and deploy the configuration to production in log mode.
-1. After collecting some traffic, analyze the results using dashboard tooling to see if there were any matches. Look for false positives, and make any necessary adjustments, ultimately enabling the default rules in block mode.
+1. After collecting some traffic, analyze the results using [dashboard tooling](#dashboard-tooling) to see if there were any matches. Look for false positives, and make any necessary adjustments, ultimately enabling the default rules in block mode.
 1. Add custom rules based on analysis of the CDN logs, first testing with simulated traffic on dev environments, before deploying to stage and production in log mode, then block mode.
 1. Monitor traffic on an ongoing basis, making changes to the rules as the threat landscape evolves.
 
@@ -457,6 +458,8 @@ data:
 
 AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization, and configuring CDN and WAF rules. CDN logs appear in the Cloud Manager **Download Logs** dialog, when selecting the Author or Publish service.
 
+Note that CDN logs may be up to 5-minutes delayed.
+
 The "rules" property describes what traffic filter rules are matched, and has the following pattern:
 
 ```
@@ -562,7 +565,15 @@ Below is a list of the field names used in CDN logs, along with a brief descript
  | *pop*  | Datacenter of the CDN cache server.  |
  | *rules*  | The name of any matching rules.<br><br>Also indicates if the match resulted in a block. <br><br>For example, "`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`"<br><br>Empty if no rules matched.  |
 
-## Dashboard tooling tutorial  {#dashboard-tooling}
+## Dashboard tooling {#dashboard-tooling}
+
+Adobe provides a mechanism to download dashboard tooling onto your computer to ingest CDN logs downloaded via Cloud Manager. With this tooling, you can analyze your traffic to help come up with the appropriate traffic filter rules to declare, including WAF rules.
+
+Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github repository.
+
+See the tutorial for concrete instructions on how to use the dashboard tooling.
+
+## Tutorial {#tutorial}
 
 Adobe provides a mechanism to download dashboard tooling onto your computer to ingest CDN logs downloaded via Cloud Manager. With this tooling, you can analyze your traffic to help come up with the appropriate traffic filter rules to declare, including WAF rules. This section first provides some instructions to gain familiarity with the dashboard tooling on a dev environment, followed by guidance on how to leverage that knowledge to create rules on a prod environment.
 
