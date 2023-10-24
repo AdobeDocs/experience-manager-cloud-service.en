@@ -160,6 +160,7 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
 | reqHeader  | `string`  | Returns Request Header with specified name  |
 | queryParam  | `string` | Returns Query Parameter with specified name  |
 | reqCookie  | `string`  | Returns Cookie with specified name  |
+| postParam  | `string`  | Returns parameter with specified name from body. Only work when body is of content type `application/x-www-form-urlencoded` |
 
 **Predicate**
 
