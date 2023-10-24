@@ -20,6 +20,28 @@ A subcategory of traffic filter rules require either an Enhanced Security licens
 
 Traffic filter rules can be deployed via Cloud Manager Configuration Pipeline to dev, stage, and production environment types in production (non-sandbox) programs. Support for RDEs will come in the future.
 
+## How this article is organized {#how-organized}
+
+This article is organized into these sections:
+* Traffic protection overview: Learn how you are protected from malicious traffic.
+* Process for using traffic filter rules: Read about a high level methodology for protecting your website.
+* Setup: Discover how to setup, configure, and deploy traffic filter rules, including WAF rules.
+* Rules syntax: Read about how to declare traffic filter rules in the cdn.yaml configuration file. This includes both the traffic filter rules available to all Sites and Forms customers, as well as the subcategory of WAF rules for those who license that capability.
+* Rules examples: See examples of declared rules to get you on your way.
+* Rules with rate limits: Learn how to use rate limiting rules to protect your site from high volume attacks
+* CDN logs: Interpret the results of matching rules in your CDN logs.
+* About the tutorial: sets the context for a linked tutorial, which gives you practical knowledge about the feature, including how to use dashboard tooling to declare the right rules. 
+
+## Traffic Protection Overview {#traffic-protection-overview}
+
+In the current digital landscape, malicious traffic is an ever-present threat. We recognize the gravity of the risk and offer several approaches to protect customer applications and mitigate attacks when they occur. 
+
+At the edge, the Adobe Managed CDN absorbs DDoS attacks at the Network Layer (layers 3 and 4), including flood and reflection/amplification attacks.
+
+In the event of a DDoS attack impacting site availability, Adobe's operations teams are alerted and take steps to mitigate.
+
+Customers may take proactive measures to mitigate Application Layer attacks (layer 7) by configuring rules at various modules involved in the content delivery flow. At the Apache layer, write dispatcher rules to configure access to content or use ModSecurity to declare rules. And related to this article in particular, use Cloud Manager's Configuration Pipeline to deploy Traffic Filter Rules, which include the licensable subcategory of WAF Traffic Filter Rules.
+
 ## Setup {#setup}
 
 1. First, create the following folder and file structure the top-level folder in git:
