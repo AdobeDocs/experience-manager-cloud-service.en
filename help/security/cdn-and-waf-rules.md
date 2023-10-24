@@ -153,7 +153,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-The format of the traffic filter rules in the cdn.yaml file is described below. See some [other examples](#examples) in a later section, as well as a separate section on [Rate Limit Rules](#rate-limit-rules) .
+The format of the traffic filter rules in the cdn.yaml file is described below. See some [other examples](#examples) in a later section, as well as a separate section on [Rate Limit Rules](#rate-limit-rules).
 
 
 | **Property**   | **Most traffic filter rules**  | **WAF traffic filter rules**  | **Type**  | **Default value**  | **Description**  |
