@@ -1,24 +1,24 @@
 ---
-title: Configuring Traffic Filter Rules with WAF Rules
-description: Use Traffic Filter Rules with WAF Rules to Filter Traffic
+title: Traffic Filter Rules including WAF Rules
+description: Configuring Traffic Filter Rules including Web Applicarion Firewall (WAF) Rules
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 ---
-# Configuring Traffic Filter Rules with WAF Rules to Filter Traffic {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# Traffic Filter Rules including WAF Rules {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
 >
 >This feature is not yet generally available. To join the ongoing early adopter program, email **aemcs-waf-adopter@adobe.com**, including the name of your organization and context about your interest in the feature.
 
-Adobe tries to mitigate attacks against customer websites, but it may be useful to proactively filter traffic matching certain patterns so malicious traffic does not reach your application. Possible approaches include:
+Traffic filter rules can be used to block or allow requests at the CDN layer, which may be useful in scenarios such as:
+* restricting access to specific domains to internal company traffic, before a new site goes live 
+* establishing rate limits so as to be less susceptable to volumetric DDoS attacks
+* preventing IP addresses known to be malicious from targeting your pages
 
-* Apache layer modules such as `mod_security`
-* Configuring traffic filter rules that are deployed to the CDN via Cloud Manager's configuration pipeline
+Some of these traffic filter rules are available to all AEM as a Cloud Service Sites and Forms customers. They mainly operate on request properties and request headers, including IP, hostname, path, and user agent.
 
-This article describes the traffic filter rules approach. Most of these rules block or allow requests based on request properties and request headers, including IP, paths, and user agent. These rules can be configured by all AEM as a Cloud Service Sites and Forms customers.
+A subcategory of traffic filter rules require either an Enhanced Security license or WAF-DDoS Protection Security license. These rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the WAF Flags described later in this article. Sites and Forms customers can contact their Adobe account team for details about licensing this advanced capability.
 
-Customers who license the WAF (Web Application Firewall) add-on can also configure an additional category of rules called "WAF traffic filter rules" (or WAF rules for short). These WAF rules block requests matching various patterns known to be associated with malicious traffic. Contact your Adobe account team for details about licensing this upcoming capability. Note that no additional license is required during the early adopter program.
-
-Traffic filter rules can be deployed to all cloud environment types (RDE, dev, stage, prod) in production (non-sandbox) programs.
+Traffic filter rules can be deployed via Cloud Manager Configuration Pipeline to dev, stage, and production environment types in production (non-sandbox) programs. Support for RDEs will come in the future.
 
 ## Setup {#setup}
 
