@@ -95,3 +95,13 @@ After defining data model object properties as search keys, the hash values are 
 >[!NOTE]
 >
 >Only 10 search keys are allowed per Azure entity since Azure only allows 10 tags per Blob and properties value marked as search keys are stored in Azure index tags after hashing. 
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>  [Add Forms Portal to an AEM Sites page](/help/forms/configure-forms-portal.md)
+
+-->

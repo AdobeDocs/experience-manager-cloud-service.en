@@ -70,3 +70,7 @@ To associate user groups with an Adaptive Form:
 >
 >Ensure that all users are replicated as reviewing members of the user groups in the remote implementation.
 
+>[!MORELIKETHIS]
+>
+>* [Creating and managing reviews to forms](/help/forms/create-reviews-forms.md)
+>* [Create and manage reviews for an Adaptive Form](/help/forms/review-adaptiveforms-in-sites-page.md)

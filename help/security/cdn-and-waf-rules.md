@@ -159,7 +159,8 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
 | reqProperty  | `string`  | Request property.<br><br>One of: `path` , `queryString`, `method`, `tier`, `domain`, `clientIp`, `clientCountry`<br><br>The domain property is a lower-case transformation of the request's host header. It is useful for string comparisons so matches aren't missed due to case sensitivity.<br><br>The `clientCountry` uses two letter codes displayed at [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)  |
 | reqHeader  | `string`  | Returns Request Header with specified name  |
 | queryParam  | `string` | Returns Query Parameter with specified name  |
-| cookie  | `string`  | Returns Cookie with specified name  |
+| reqCookie  | `string`  | Returns Cookie with specified name  |
+| postParam  | `string`  | Returns parameter with specified name from body. Only work when body is of content type `application/x-www-form-urlencoded` |
 
 **Predicate**
 
@@ -202,12 +203,9 @@ The `wafFlags` property may include the following:
 | TRAVERSAL  | Directory Traversal  | Directory Traversal is the attempt to navigate privileged folders throughout a system in hopes of obtaining sensitive information.  |
 | USERAGENT  |  Attack tooling |  Attack Tooling is the use of automated software to identify security vulnerabilities or to attempt to exploit a discovered vulnerability. |
 | LOG4J-JNDI  | Log4J JNDI  |  Log4J JNDI attacks attempt to exploit the [Log4Shell vulnerability](https://en.wikipedia.org/wiki/Log4Shell) present in Log4J versions earlier than 2.16.0 |
-|  AWS SSRF | AWS-SSRF  | Server Side Request Forgery (SSRF) is a request which attempts to send requests made by the web application to target internal systems. AWS SSRF attacks use SSRF to obtain Amazon Web Services (AWS) keys and gain access to S3 buckets and their data.  |
 | BHH  | Bad Hop Headers | Bad Hop Headers indicate an HTTP smuggling attempt through either a malformed Transfer-Encoding (TE) or Content-Length (CL) header, or a well-formed TE and CL header  |
 | ABNORMALPATH  | Abnormal Path  | Abnormal Path indicates that the original path differs from the normalized path (for example, `/foo/./bar` is normalized to `/foo/bar`)  |
-| COMPRESSED  | Compression Detected  | The POST request body is compressed and cannot be inspected. For example, if a "Content-Encoding: gzip" request header is specified and the POST body is not plain text.  |
 | DOUBLEENCODING  | Double Encoding  |  Double Encoding checks for the evasion technique of double encoding html characters |
-| FORCEFULBROWSING  | Forceful Browsing  | Forceful Browsing is the failed attempt to access admin pages  |
 | NOTUTF8  | Invalid Encoding  | Invalid Encoding can cause the server to translate malicious characters from a request into a response, causing either a denial of service or XSS  |
 | JSON-ERROR  | JSON Encoding Error  | A POST, PUT, or PATCH request body that is specified as containing JSON within the "Content-Type" request header but contains JSON parsing errors. This is often related to a programming error or an automated or malicious request.  |
 | MALFORMED-DATA  | Malformed Data in the request body  | A POST, PUT, or PATCH request body that is malformed according to the "Content-Type" request header. For example, if a "Content-Type: application/x-www-form-urlencoded" request header is specified and contains a POST body that is json. This is often a programming error, automated or malicious request. Requires agent 3.2 or higher.  |
@@ -216,9 +214,7 @@ The `wafFlags` property may include the following:
 | NO-CONTENT-TYPE  | Missing "Content-Type" request header  | A POST, PUT, or PATCH request that does not have a "Content-Type" request header. By default application servers should assume "Content-Type: text/plain; charset=us-ascii" in this case. Many automated and malicious requests may be missing "Content Type".  |
 | NOUA  | No User Agent  | Many automated and malicious requests use fake or missing User-Agents to make it difficult to identify the type of device making the requests.  |
 | TORNODE  |  Tor Traffic | Tor is software that conceals a user's identity. A spike in Tor traffic can indicate an attacker trying to mask their location.  |
-| DATACENTER  | Datacenter Traffic  | Datacenter Traffic is non-organic traffic originating from identified hosting providers. This type of traffic is not commonly associated with a real end user.  |
 | NULLBYTE  | Null Byte | Null bytes do not normally appear in a request and indicate that the request is malformed and potentially malicious. |
-| IMPOSTOR  |  SearchBot Impostor | Search bot impostor is someone pretending to be a Google or Bing search bot, but who is not legitimate. Note, does not depend on a response by itself, but must be resolved in the cloud first, so it should not be used in a pre rule.  |
 | PRIVATEFILE  | Private files  | Private files are usually confidential in nature, such as an Apache `.htaccess` file, or a configuration file which could leak sensitive information  |
 | SCANNER  |  Scanner | Identifies popular scanning services and tools  |
 | RESPONSESPLIT  | HTTP Response Splitting  | Identifies when CRLF characters are submitted as input to the application to inject headers into the HTTP response  |
@@ -265,15 +261,15 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
-     rules:
-       - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
-         when: { reqProperty: clientIp, equals: "192.168.1.1" }
-           allOf:
-            - { reqProperty: path, equals: /helloworld }
-            - { reqProperty: tier, equals: publish }
-            - { reqHeader: user-agent, matches: '.*Chrome.*'  }
-           action:
-             type: block
+    rules:
+      - name: "block-request-from-chrome-on-path-helloworld-for-publish-tier"
+        when:
+          allOf:
+          - { reqProperty: path, equals: /helloworld }
+          - { reqProperty: tier, equals: publish }
+          - { reqHeader: user-agent, matches: '.*Chrome.*'  }
+        action:
+          type: block
 ```
 
 **Example 3**
@@ -381,10 +377,11 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
+    rules:
     - name: limit-requests-client-ip
       when:
-        - reqProperty: tier
-        - matches: "author|publish"
+        reqProperty: tier
+        matches: "author|publish"
       rateLimit:
         limit: 60
         window: 10
@@ -521,3 +518,302 @@ Below is a list of the field names used in CDN logs, along with a brief descript
  | *res_age*  | The amount of time (in seconds) a response has been cached (in all nodes).  |
  | *pop*  | Datacenter of the CDN cache server.  |
  | *rules*  | The name of any matching rules.<br><br>Also indicates if the match resulted in a block. <br><br>For example, "`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`"<br><br>Empty if no rules matched.  |
+
+## Dashboard tooling tutorial  {#dashboard-tooling}
+
+Adobe provides a mechanism to download dashboard tooling onto your computer to ingest CDN logs downloaded via Cloud Manager. With this tooling, you can analyze your traffic to help come up with the appropriate traffic filter rules to declare, including WAF rules. This section first provides some instructions to gain familiarity with the dashboard tooling on a dev environment, followed by guidance on how to leverage that knowledge to create rules on a prod environment.
+
+Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github repository.
+
+
+### Getting familiar with the dashboard tooling {#dashboard-getting-familiar}
+
+1. Create a Cloud Manager non-production configuration pipeline, associated with a dev env. First select the Deployment Pipeline option. Then select Targeted Deployment, Config, your repository, the git branch, and set the code location to /config.
+
+    ![Add non-production pipeline select deployment](/help/security/assets/waf-select-pipeline1.png)
+
+    ![Add non-production pipeline select targeted](/help/security/assets/waf-select-pipeline2.png)
+
+
+1. In your workspace, create a folder config at the root level and add a file named cdn.yaml, where you'll declare a simple rule, setting it in log mode rather than in blocking mode.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+    # Log request on simple path
+    - name: log-rule-example
+      when:
+        allOf:
+          - reqProperty: tier
+            matches: "author|publish"
+          - reqProperty: path
+            equals: '/log/me'
+      action: log
+```
+
+1. Commit and push your changes, and  deploy your configuration using the configuration pipeline.
+
+   ![Run configuration pipeline](/help/security/assets/waf-run-pipeline.png)
+
+1. Once your configuration has been deployed, try to access https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me using your web browser or with the curl command below. You should be served with a 404 error page since that page doesn't exist.
+
+   ```
+   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+   ```
+
+1. Download the CDN logs from Cloud Manager and validate that the rules matched as expected, with a rules property matching the rule name:
+
+   ```
+   "rules": "match=log-rule-example"
+   ```
+
+   ![Select Download logs](/help/security/assets/waf-download-logs1.png)
+
+   ![Download logs](/help/security/assets/waf-download-logs2.png)
+
+1. Load the Docker image with the dashboard tooling and follow the README to ingest the CDN logs. As depicted in the following screenshots, select the right time period, the right environment, and the right filters.
+
+   ![Select time from dashboard](/help/security/assets/dashboard-select-time.png)
+
+   ![Select environment from dashboard](/help/security/assets/dashboard-select-env.png)
+
+1. Once the right filters have been applied, you should be able to see a dashboard loaded with the expected data. In the screenshot below, the rule log-rule-example has been triggered 3 times in the last 2 hours, by the same IP located in Ireland, using a web browser and curl.
+
+   ![View dev dashboard data](/help/security/assets/dashboard-see-data-logmode.png)
+   ![View dev dashboard data widgets](/help/security/assets/dashboard-see-data-logmode2.png)
+
+1. Now change the cdn.yaml to put the rule into block mode to ensure that the pages are blocked, as expected. Then commit, push and trigger the configuration pipeline as done earlier.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+    # Log request on simple path
+    - name: log-rule-example
+      when:
+        allOf:
+          - reqProperty: tier
+            matches: "author|publish"
+          - reqProperty: path
+            equals: '/log/me'
+      action: block
+```
+
+1. Once your configuration has been deployed, try to access https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me using your web browser or with the curl command below. You should be served with a 406 error page, indicating that the request was blocked.
+
+   ```
+   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+   ```
+
+1. Once again, download your CDN logs in Cloud Manager (note: It can take up to 5 minutes for the new requests to be exposed in your CDN logs) and import them in the dashboard tooling as we did earlier. Once it is done, refresh your dashboard. As you can see in the screenshot below, requests to /log/me are  blocked by our rule.
+
+   ![View prod dashboard data](/help/security/assets/dashboard-see-data-blockmode.png)
+   ![View prod dashboard data](/help/security/assets/dashboard-see-data-blockmode2.png)
+
+1. If you have WAF traffic filters enabled (this will require an additional license after the feature is GA), repeat with a WAF traffic filter rule, in log mode, and deploy the rules.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+      - name: log-waf-flags
+        when:
+          reqProperty: tier
+          matches: "author|publish"
+        action:
+          type: log
+          wafFlags:
+              - SANS
+              - SIGSCI-IP
+              - TORNODE
+              - NOUA
+              - SCANNER
+              - USERAGENT
+              - PRIVATEFILE
+              - ABNORMALPATH
+              - TRAVERSAL
+              - NULLBYTE
+              - BACKDOOR
+              - LOG4J-JNDI
+              - SQLI
+              - XSS
+              - CODEINJECTION
+              - CMDEXE
+              - NO-CONTENT-TYPE
+              - UTF8
+```
+
+1. Use a tool like [nikto](https://github.com/sullo/nikto/tree/master) to generate matching requests. The command below will send around 550 malicious requests in less than 1 minute.
+
+   ```
+   ./nikto.pl -useragent "MyAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXXX-eYYYYY.adobeaemcloud.com
+   ```
+
+1. Download the CDN logs from Cloud Manager (remember that they may take up to 5 minutes to appear) and validate that both the matching declared rules and the WAF flags appear.
+
+   As you can see, several of the requests produced by Nikto are being flagged by the WAF as being malicious. We can see that Nikto tried to exploit CMDEXE, SQLI and NULLBYTE vulnerabilities. If you now change the action from log to block and re-trigger a scan using Nikto, all the requests that were previously flagged will this time get blocked.
+
+   ![View WAF data](/help/security/assets/dashboard-see-data-waf.png)
+
+
+   Note that whenever a request matches any of the WAF flags, those WAF flags will appear, even if not part of the declared rule; this is so you're always aware of potentially new malicious traffic, for which you haven't yet declared matching rules. As an example:
+
+   ```
+   "rules": "match=log-waf-flags,waf=SQLI,action=blocked"
+   ```
+
+1. Repeat with a rule that uses rate limiting, in log mode. As always, commit, push and trigger the configuration pipeline to apply your configuration.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+      - name: limit-requests-client-ip
+        when:
+          reqProperty: tier
+          matches: "author|publish"
+        rateLimit:
+          limit: 10
+          window: 1
+          penalty: 60
+          groupBy:
+            - reqProperty: clientIp
+        action: log
+```
+
+1. Use a tool like [Vegeta](https://github.com/tsenart/vegeta) to generate traffic.
+
+   ```
+   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s | tee results.bin | vegeta report
+   ```
+
+1. After running the tool, you can download CDN logs and ingest them in the dashboard to verify that the rate limiter rule has been triggered
+
+   ![View WAF data](/help/security/assets/waf-dashboard-ratelimiter-1.png)
+
+   ![View WAF data](/help/security/assets/waf-dashboard-ratelimiter-2.png)
+
+   As you can see our rule *limit-requests-client-ip* has been triggered.
+
+   Now that you're familiar with how traffic filter rules work, you can move onto the prod environment.
+
+### Deploying rules to the prod environment {#dashboard-prod-env}
+
+Make sure to initially declare rules in log mode to validate that there are no false positives, which means legitimate traffic that would be incorrectly blocked.
+
+1. Create a production configuration pipeline associated with your production environment.
+
+1. Copy the recommended rules below into your cdn.yaml. You may wish to modify the rules based on the unique characteristics of your website's live traffic. Commit, push and trigger your configuration pipeline. Make sure rules are in log mode.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+    #  Block client for 5m when it exceeds 100 req/sec on a time window of 1sec
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: path
+        like: '*'
+      rateLimit:
+        limit: 100
+        window: 1
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: log
+    # Block requests coming from OFAC countries
+    - name: block-ofac-countries
+      when:
+        allOf:
+          - { reqProperty: tier, equals: publish }
+          - reqProperty: clientCountry
+            in:
+              - SY
+              - BY
+              - MM
+              - KP
+              - IQ
+              - CD
+              - SD
+              - IR
+              - LR
+              - ZW
+              - CU
+              - CI
+      action: log
+    # Enable recommended WAF protections (only works if WAF is enabled for your environment)
+    - name: block-waf-flags-globally
+      when:
+        reqProperty: tier
+        matches: "author|publish"
+      action:
+        type: log
+        wafFlags:
+          - SANS
+          - SIGSCI-IP
+          - TORNODE
+          - NOUA
+          - SCANNER
+          - USERAGENT
+          - PRIVATEFILE
+          - ABNORMALPATH
+          - TRAVERSAL
+          - NULLBYTE
+          - BACKDOOR
+          - LOG4J-JNDI
+          - SQLI
+          - XSS
+          - CODEINJECTION
+          - CMDEXE
+          - NO-CONTENT-TYPE
+          - UTF8
+    # Disable protection against CMDEXE on /bin
+    - name: allow-cdmexe-on-root-bin
+      when:
+        allOf:
+          - reqProperty: tier
+            matches: "author|publish"
+          - reqProperty: path
+            matches: "^/bin/.*"
+      action:
+        type: log
+        wafFlags:
+          - CMDEXE
+```
+
+1. Add any additional rules to block malicious traffic that you may be aware of. For example, certain IPs that have been attacking your site.
+
+1. After a few minutes, hours, or days, depending on your site's traffic volume, download CDN logs from Cloud Manager and analyze them with the dashboard.
+
+1. Here are some considerations:
+    1. Traffic matching declared rules appear in charts and request logs so you can easily check if your declared rules are being triggered.
+    1. Traffic matching WAF flags appear in charts and request logs, even if you didn't log them in a rule. This is so you're always aware of potentially new malicious traffic and can create new rules as needed. Look at WAF flags that are not reflected in the declared rules and consider declaring them.
+    1. For matching rules, inspect the request logs for false positives and see if you can filter them out of the rules. For example, maybe they're a false positive only for certain paths.
+
+1. Set the appropriate rules to block mode and also consider adding additional rules. Perhaps some of the rules should remain in log mode as you analyze further with more traffic.
+
+1. Redeploy the configuration
+
+1. Iterate, analyzing the dashboards on a frequent basis.
+
