@@ -38,9 +38,9 @@ In the current digital landscape, malicious traffic is an ever-present threat. W
 
 At the edge, the Adobe Managed CDN absorbs DDoS attacks at the Network Layer (layers 3 and 4), including flood and reflection/amplification attacks.
 
-In the event of a DDoS attack impacting site availability, Adobe's operations teams are alerted and take steps to mitigate.
+By default, Adobe takes measures to prevent performance degredation due to bursts of unexpectedly high traffic beyond a certain threshold. In the event of a DDoS attack impacting site availability, Adobe's operations teams are alerted and take steps to mitigate.
 
-Customers may take proactive measures to mitigate Application Layer attacks (layer 7) by configuring rules at various layers of the content delivery flow. 
+Customers may take proactive measures to mitigate Application Layer attacks (layer 7) by configuring rules at various layers of the content delivery flow.
 
 For example, at the Apache layer, customers may configure either the [dispatcher module](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter) or [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) to limit access to certain content. 
 
