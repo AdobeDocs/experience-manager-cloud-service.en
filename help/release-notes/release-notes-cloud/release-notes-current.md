@@ -48,19 +48,11 @@ Experience Manager Assets now provides an add-on for Adobe Express. The add-on a
 
 ### New features in Assets view {#assets-view-features}
 
-**Assign metadata form to a folder**
+**Bulk import assets from OneDrive data source**
 
-You can now assign metadata form to a specific folder within your deployment. All assets in the folder, including assets in the sub-folders, then display properties defined in the assigned metadata form.
+Administrators now have the ability to import large number of assets from OneDrive to AEM Assets. The updated list for the supported data sources for bulk import include Azure, AWS, Google Cloud, Dropbox, and OneDrive. 
 
-![assign metadata form to a folder](/help/release-notes/assets/assign-to-folder.png)
-
-### New features in Admin view {#admin-view-features}
-
-* **Integrate AEM Assets as a Cloud Service with document-based authoring for Edge Delivery Services**: Integrate AEM Assets with document-based authoring for Edge Delivery Services to enable website authors to [use images available in AEM Assets repositories while authoring documents in Microsoft Word or Google Docs](/help/edge/using.md#integrate-assets-edge).
-
-* **Extract ZIP archives**: Ability to select ZIP archives that are managed in Experience Manager and [extracting the files directly into Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) without downloading them.
-
-  ![Pin items for groups](/help/release-notes/assets/extract-archive.png)
+![assign metadata form to a folder](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
 ### Pre-release features available in [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
