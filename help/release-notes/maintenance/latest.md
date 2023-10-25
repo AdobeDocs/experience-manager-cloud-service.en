@@ -19,7 +19,7 @@ Summarized below are the continuous improvements for maintenance release 14029, 
 * ASSETS-28566: Add dam:metadataForm Lucene index
 * ASSETS-29281: Update RAPI to send v2 download events
 
-### Fixed Issues {#fixed-issues-140229}
+### Fixed Issues {#fixed-issues-14029}
 
 * ASSETS-25199: image core component not showing right smart crops
 * ASSETS-26142: unified-shell.js customEnvLabel not set or reattempted if discovery request fails or is interrupted
