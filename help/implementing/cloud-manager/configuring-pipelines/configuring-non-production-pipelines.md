@@ -59,7 +59,7 @@ Once you have set up your program and have at least one environment using the Cl
    * **[Full Stack Code](#full-stack-code)**
    * **[Targeted deployment](#targeted-deployment)**
 
-The steps to complete the creation of your non-production pipeline vary depending on the option for type of source code you selected. Follow the links above to jump to the next section of this document so you can complete the configuration of your pipeline.
+The steps to complete the creation of your non-production pipeline vary depending on the type of source code you selected. Follow the links above to jump to the next section of this document so you can complete the configuration of your pipeline.
 
 ### Full Stack Code {#full-stack-code}
 
@@ -83,7 +83,6 @@ To finish the configuration of the full-stack code non-production pipeline, foll
    * **Git Branch** - This option defines from which branch in the selected pipeline should retrieve the code.
      * Enter the first few characters of the branch name and the auto-complete feature of this field. It helps you find the matching branches that you can select.
    * **Ignore Web Tier Configuration** - When checked, the pipeline does not deploy your web tier configuration.
-
    * **Pipeline** - If your pipeline is a deployment pipeline, you can choose to run a testing phase. Check the options that you want to enable in this phase. If none of the options are selected, the testing phase is not displayed during the pipeline's run.
 
      * **Product Functional Testing** - Execute [product functional tests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) against the development environment.
@@ -142,7 +141,7 @@ The steps to complete the creation of your non-production, targeted deployment p
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
-When running a targeted deployment pipeline, configurations [such as WAF configurations](/help/security/traffic-filter-rules-including-waf.md)will be deployed, provided they are saved to environment, repository, and branch you defined in the pipeline.
+When running a targeted deployment pipeline, configurations [such as WAF configurations](/help/security/traffic-filter-rules-including-waf.md) will be deployed, provided they are saved to environment, repository, and branch you defined in the pipeline.
 
 ## Skip Dispatcher Packages {#skip-dispatcher-packages}
 
