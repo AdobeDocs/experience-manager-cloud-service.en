@@ -54,6 +54,7 @@ You must be a member of the **Business Owner** role to edit programs or delete s
    * HIPAA can not be enabled or disabled after [program creation.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
       * [Learn more](https://www.adobe.com/go/hipaa-ready) about Adobe's HIPAA ready solution implementation.
    * Once activated, WAF-DDOS protection can then be configured by setting up a [non-production pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * {{waf-limited-release}}
 
 1. Click **Update** to save your changes to the program.
 
