@@ -465,7 +465,7 @@ The rules behave in the following manner:
 
 In general, matching rules appear in the log entry for all requests to the CDN, regardless of whether it is a CDN hit, pass, or miss. However,  WAF rules appear in the log entry only for requests to the CDN that are considered CDN misses or passes, but not CDN hits.
 
-The example below shows a sample `cdn.yaml`` and two CDN log entries:
+The example below shows a sample `cdn.yaml` and two CDN log entries:
 
 
 ```
