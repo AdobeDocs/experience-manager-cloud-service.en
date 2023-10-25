@@ -26,12 +26,13 @@ Follow these steps to create a production program.
 
 1. Optionally, you can add an image to the program by dragging and dropping an image file to the **Add a program image** target or clicking it to select an image from a file browser. Tap or click **Continue**.
 
-1. If you have enhanced security entitlements, the **Enhanced Security** tab will provide the option to **Enable Enhanced Security** for your production program. If required, check the option to enable enhanced security and tap or click **Continue**.
+1. If you have the necessary entitlements, the **Security** tab will be shown and provide the option to activate **HIPAA** and/or **WAF-DDOS Protection** for your production program. If required for the program you are creating, check the applicable option(s) and then tap or click **Continue**.
 
-   * Enhanced security cannot be enabled or disabled after program creation.
-   * [Learn more](https://www.adobe.com/go/hipaa-ready) about Adobe's HIPAA ready solution implementation.
+   * HIPAA can not be enabled or disabled after program creation.
+      * [Learn more](https://www.adobe.com/go/hipaa-ready) about Adobe's HIPAA ready solution implementation.
+   * Once activated, WAF-DDOS protection can then be configured by setting up a [non-production pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 
-   ![Enhanced Security option](assets/create-production-program-enhanced.png)
+   ![Security options](assets/create-production-program-security.png)
 
 1. On the **Solutions &amp; Add-ons** tab, select the solutions to include in the program.
 
