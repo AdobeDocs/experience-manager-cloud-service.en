@@ -117,7 +117,7 @@ A targeted deployment deploys code only for selected parts of your AEM applicati
 
 * **[Config](#config)** - Configure settings on your AEM environment, maintenance tasks, CDN rules, and more.
   * See the document [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage the configurations in your repository so they are deployed properly.
-  * {{waf-limited-release}}
+  {{waf-limited-release}}
 * **[Front End Code](#front-end-code)** - Configure JavaScript and CSS for the front end of your AEM application.
   * With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
   * See the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.
