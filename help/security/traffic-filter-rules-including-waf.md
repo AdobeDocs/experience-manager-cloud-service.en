@@ -1,24 +1,64 @@
 ---
-title: Configuring Traffic Filter Rules with WAF Rules
-description: Use Traffic Filter Rules with WAF Rules to Filter Traffic
+title: Traffic Filter Rules including WAF Rules
+description: Configuring Traffic Filter Rules including Web Applicarion Firewall (WAF) Rules
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 ---
-# Configuring Traffic Filter Rules with WAF Rules to Filter Traffic {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# Traffic Filter Rules including WAF Rules {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
 >
 >This feature is not yet generally available. To join the ongoing early adopter program, email **aemcs-waf-adopter@adobe.com**, including the name of your organization and context about your interest in the feature.
 
-Adobe tries to mitigate attacks against customer websites, but it may be useful to proactively filter traffic matching certain patterns so malicious traffic does not reach your application. Possible approaches include:
+Traffic filter rules can be used to block or allow requests at the CDN layer, which may be useful in scenarios such as:
+* restricting access to specific domains to internal company traffic, before a new site goes live 
+* establishing rate limits so as to be less susceptable to volumetric DDoS attacks
+* preventing IP addresses known to be malicious from targeting your pages
 
-* Apache layer modules such as `mod_security`
-* Configuring traffic filter rules that are deployed to the CDN via Cloud Manager's configuration pipeline
+Some of these traffic filter rules are available to all AEM as a Cloud Service Sites and Forms customers. They mainly operate on request properties and request headers, including IP, hostname, path, and user agent.
 
-This article describes the traffic filter rules approach. Most of these rules block or allow requests based on request properties and request headers, including IP, paths, and user agent. These rules can be configured by all AEM as a Cloud Service Sites and Forms customers.
+A subcategory of traffic filter rules require either an Enhanced Security license or WAF-DDoS Protection Security license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article. Sites and Forms customers can contact their Adobe account team for details about licensing this advanced capability.
 
-Customers who license the WAF (Web Application Firewall) add-on can also configure an additional category of rules called "WAF traffic filter rules" (or WAF rules for short). These WAF rules block requests matching various patterns known to be associated with malicious traffic. Contact your Adobe account team for details about licensing this upcoming capability. Note that no additional license is required during the early adopter program.
+Traffic filter rules can be deployed via Cloud Manager Configuration Pipeline to dev, stage, and production environment types in production (non-sandbox) programs. Support for RDEs will come in the future.
 
-Traffic filter rules can be deployed to all cloud environment types (RDE, dev, stage, prod) in production (non-sandbox) programs.
+## How this article is organized {#how-organized}
+
+This article is organized into these sections:
+* Traffic protection overview: Learn how you are protected from malicious traffic.
+* Suggested process for configuring rules: Read about a high level methodology for protecting your website.
+* Setup: Discover how to setup, configure, and deploy traffic filter rules, including the advanced WAF rules.
+* Rules syntax: Read about how to declare traffic filter rules in the cdn.yaml configuration file. This includes both the traffic filter rules available to all Sites and Forms customers, as well as the subcategory of WAF rules for those who license that capability.
+* Rules examples: See examples of declared rules to get you on your way.
+* Rate limit rules: Learn how to use rate limiting rules to protect your site from high volume attacks.
+* CDN logs: See what declared rules and WAF Flags match your traffic.
+* Dashboard Tooling: Analyze your CDN logs to come up with new traffic filter rules.
+* Tutorial: Practical knowledge about the feature, including how to use dashboard tooling to declare the right rules.
+<!-- About the tutorial: sets the context for a linked tutorial, which gives you practical knowledge about the feature, including how to use dashboard tooling to declare the right rules. -->
+
+## Traffic Protection Overview {#traffic-protection-overview}
+
+In the current digital landscape, malicious traffic is an ever-present threat. We recognize the gravity of the risk and offer several approaches to protect customer applications and mitigate attacks when they occur. 
+
+At the edge, the Adobe Managed CDN absorbs DDoS attacks at the Network Layer (layers 3 and 4), including flood and reflection/amplification attacks.
+
+By default, Adobe takes measures to prevent performance degredation due to bursts of unexpectedly high traffic beyond a certain threshold. In the event of a DDoS attack impacting site availability, Adobe's operations teams are alerted and take steps to mitigate.
+
+Customers may take proactive measures to mitigate Application Layer attacks (layer 7) by configuring rules at various layers of the content delivery flow.
+
+For example, at the Apache layer, customers may configure either the [dispatcher module](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter) or [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) to limit access to certain content. 
+
+And as this article describes, Traffic Filter Rules rules may be deployed to the CDN, using Cloud Manager's Configuration Pipeline. In addition to traffic request-based traffic filter rules based on properties like IP address, path, and headers, customers may also license a powerful subcategory of traffic filter rules called WAF Rules.
+
+## Suggested Process {#suggested-process}
+
+Here's a high-level recommended end-to-end process for coming up with the right traffic filter rules:
+
+1. Configure a non-production and production configuration pipeline, as described in the [Setup](#setup) section.
+1. Customers who have licensed the subcategory of WAF traffic filter rules should enable them in Cloud Manager.
+1. Read and try out the tutorial to concretely understand how to use traffic filter rules, including WAF rules if they've been licensed. The tutorial walks you through deploying rules to a dev environment, simulating malicious traffic, downloading the [CDN logs](#cdn-logs), and analyzing them in [dashboard tooling](#dashboard-tooling).
+1. Copy the recommended initial rules to cdn.yaml and deploy the configuration to production in log mode.
+1. After collecting some traffic, analyze the results using [dashboard tooling](#dashboard-tooling) to see if there were any matches. Look for false positives, and make any necessary adjustments, ultimately enabling the default rules in block mode.
+1. Add custom rules based on analysis of the CDN logs, first testing with simulated traffic on dev environments, before deploying to stage and production in log mode, then block mode.
+1. Monitor traffic on an ongoing basis, making changes to the rules as the threat landscape evolves.
 
 ## Setup {#setup}
 
@@ -90,7 +130,7 @@ Traffic filter rules can be deployed to all cloud environment types (RDE, dev, s
 
 You can configure `traffic filter rules` to match on patterns such as IPs, user agent, request headers, hostname, geo, and url.
 
-Customers who license the WAF offering can also configure a special category of traffic filter rules called `WAF traffic filter rules` (or WAF rules for short) that reference one or more WAF flags, which are listed in its own section below.
+Customers who license the Enhanced Security or WAF-DDoS Protection Security offering can also configure a special category of traffic filter rules called `WAF traffic filter rules` (or WAF rules for short) that reference one or more [WAF flags](#waf-flags-list).
 
 Here's an example of a set of traffic filter rules, which also includes a WAF rule.
 
@@ -113,7 +153,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-The format of the traffic filter rules in the cdn.yaml file is described below. See some examples in a later section.
+The format of the traffic filter rules in the cdn.yaml file is described below. See some [other examples](#examples) in a later section, as well as a separate section on [Rate Limit Rules](#rate-limit-rules).
 
 
 | **Property**   | **Most traffic filter rules**  | **WAF traffic filter rules**  | **Type**  | **Default value**  | **Description**  |
@@ -192,7 +232,7 @@ Actions are prioritized according to their types in the following table, which i
 
 ### WAF Flags List {#waf-flags-list}
 
-The `wafFlags` property may include the following:
+The `wafFlags` property, which can be used in the licensable WAF traffic filter rules, may reference the following:
 
 | **Flag ID**  | **Flag Name** | **Description**  |
 |---|---|---|
@@ -230,7 +270,7 @@ The `wafFlags` property may include the following:
 
 ## Rules Examples {#examples}
 
-Some rule examples follow. See the [rate limit section](#rules-with-rate-limits) further down for examples of rate limiting.
+Some rule examples follow. See the [rate limit section](#rules-with-rate-limits) further down for examples of rate limit rules.
 
 **Example 1**
 
@@ -296,7 +336,7 @@ data:
 
 **Example 4**
 
-This rule blocks requests to path /block-me, and blocks every request that matches a SQLI or XSS pattern:
+This rule blocks requests to path /block-me, and blocks every request that matches a SQLI or XSS pattern. This example includes a WAF traffic filter rules, which references the SQLI and XSS [WAF Flags](#waf-flags-list), which require a separate license.
 
 ```
 kind: "CDN"
@@ -351,15 +391,17 @@ data:
         action: block
 ```
 
-## Rules with Rate Limits {#rules-with-rate-limits}
+## Rate Limit Rules {#rate-limits-rules}
 
-Sometimes it is desirable to block traffic matching a rule only if the match exceeds a certain rate over time. Setting a value for the `rateLimit` property limits the rate of those requests that match the rule condition.
+Sometimes it is desirable to block traffic matching a rule only if the match exceeds a certain rate over time. Setting a value for the `rateLimit` property limits the rate of those requests that match the rule condition. 
+
+Rate limit rules cannot reference WAF flags. They are available to all Sites and Forms customers.
 
 ### rateLimit Structure {#ratelimit-structure}
 
 | **Property**  | **Type**  | **Default**  | **MEANING**  |
 |---|---|---|---|
-|  limit |  integer from 10 to 10000     |  required |  Request rate in requests per second for which the rule is triggered. |
+|  limit |  integer from 10 to 10000     |  required |  Request rate (per CDN POP) in requests per second for which the rule is triggered. |
 |  window | integer enum: 1, 10 or 60  | 10  | Sampling window in seconds for which request rate is calculated.  |
 |  penalty | integer from 60 to 3600  | 300 (5 minutes) | A period in seconds for which matching requests are blocked (rounded to the nearest minute).  |
 |  groupBy | array[Getter] | none | rate limiter counter will be aggregated by a set of request properties (for example clientIp).  |
@@ -368,7 +410,7 @@ Sometimes it is desirable to block traffic matching a rule only if the match exc
 
 **Example 1**
 
-This rule blocks a client for 5m when it exceeds 100 req/sec in the last 60 sec:
+This rule blocks a client for 5m when it exceeds 100 req/sec (per CDN POP) in the last 60 sec:
 
 ```
 kind: "CDN"
@@ -393,7 +435,7 @@ data:
 
 **Example 2**
 
-Block requests for 60s on path /critical/resource when it exceeds 100 req/sec in the last 60 sec:
+Block requests for 60s on path /critical/resource when it exceeds 100 req/sec (per CDN POP) in the last 60 sec:
 
 ```
 kind: "CDN"
@@ -413,6 +455,8 @@ data:
 ## CDN Logs {#cdn-logs}
 
 AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization, and configuring CDN and WAF rules. CDN logs appear in the Cloud Manager **Download Logs** dialog, when selecting the Author or Publish service.
+
+Note that CDN logs may be up to 5-minutes delayed.
 
 The "rules" property describes what traffic filter rules are matched, and has the following pattern:
 
@@ -519,7 +563,15 @@ Below is a list of the field names used in CDN logs, along with a brief descript
  | *pop*  | Datacenter of the CDN cache server.  |
  | *rules*  | The name of any matching rules.<br><br>Also indicates if the match resulted in a block. <br><br>For example, "`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`"<br><br>Empty if no rules matched.  |
 
-## Dashboard tooling tutorial  {#dashboard-tooling}
+## Dashboard Tooling {#dashboard-tooling}
+
+Adobe provides a mechanism to download dashboard tooling onto your computer to ingest CDN logs downloaded via Cloud Manager. With this tooling, you can analyze your traffic to help come up with the appropriate traffic filter rules to declare, including WAF rules.
+
+Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github repository.
+
+See the tutorial for concrete instructions on how to use the dashboard tooling.
+
+## Tutorial {#tutorial}
 
 Adobe provides a mechanism to download dashboard tooling onto your computer to ingest CDN logs downloaded via Cloud Manager. With this tooling, you can analyze your traffic to help come up with the appropriate traffic filter rules to declare, including WAF rules. This section first provides some instructions to gain familiarity with the dashboard tooling on a dev environment, followed by guidance on how to leverage that knowledge to create rules on a prod environment.
 
