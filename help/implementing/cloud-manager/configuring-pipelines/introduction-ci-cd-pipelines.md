@@ -47,7 +47,7 @@ A non-production pipeline mainly serves to run code quality scans or to deploy s
 In addition to production and non-production, pipelines can be differentiated by the type of code they deploy.
 
 * **[Full Stack Pipelines](#full-stack-pipeline)** - Simultaneously deploy back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configurations
-* **[Config Deployment Pipelines](#config-deployment-pipeline)** - Configure settings on your AEM environment, maintenance tasks, CDN rules, and more. {{waf-limited-release}}
+* **[Config Deployment Pipelines](#config-deployment-pipeline)** - Configure settings on your AEM environment, maintenance tasks, CDN rules, and more.
 * **[Front-End Pipelines](#front-end)** - Deploy front-end code builds containing one or more client-side UI applications 
 * **[Web Tier Config Pipelines](#web-tier-config-pipelines)** - Deploys HTTPD/Dispatcher configurations
 
@@ -62,11 +62,11 @@ The following table summarizes all of the pipelines available in Cloud Manager a
 |Production or Non-Production|Deployment|Full-Stack|Simultaneously deploys back-end and front-end code builds along with HTTPD/Dispatcher configurations|When front-end code must be deployed simultaneously with AEM server code.<br>When front-end pipelines or web tier config pipelines have not yet been adopted.|
 |Production or Non-Production|Deployment|Front-End|Deploys front-end code build containing one or more client-side UI application|Supports multiple, concurrent front-end pipelines<br>Much faster than full-stack deployments|
 |Production or Non-Production|Deployment|Web Tier Config|Deploys HTTPD/Dispatcher configurations|Deploys in minutes|
-|Production or Non-Production|Deployment|Config|Deploys WAF configurations {{waf-limited-release}}|Deploys in minutes|
+|Production or Non-Production|Deployment|Config|Deploys traffic filtering rules|Deploys in minutes|
 |Non-Production|Code Quality|Full-Stack|Runs code quality scans on full-stack code without a deployment|Supports multiple pipelines|
 |Non-Production|Code Quality|Front-End|Runs code quality scans on front-end code without a deployment|Supports multiple pipelines|
 |Non-Production|Code Quality|Web Tier Config|Runs code quality scans on dispatcher configurations without a deployment|Supports multiple pipelines|
-|Non-Production|Code Quality|Config|Deploys WAF configurations {{waf-limited-release}}||
+|Non-Production|Code Quality|Config|Deploys traffic filtering rules||
 
 The following diagram illustrates Cloud Manager's pipeline configurations with traditional, single front-end repository, or independent front-end repository setups.
 
@@ -106,8 +106,6 @@ To learn how to configure full-stack pipelines, see the following documents:
 * [Adding a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
 ## Config Deployment Pipelines {#config-deployment-pipeline}
-
-{{waf-limited-release}}
 
 With a config deployment pipeline you can deploy configuration settings on your AEM environment for maintenance tasks, CDN rules, and more.
 
