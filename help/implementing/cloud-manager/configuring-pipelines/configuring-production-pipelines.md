@@ -7,7 +7,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 
 # Configuring a Production Pipeline {#configure-production-pipeline}
 
-Learn how to configuring Production pipelines to build and deploy your code to Production environments. A Production pipeline deploys code first to Stage environment, and upon approval deploys the same code to the Production environment.
+Learn how to configuring production pipelines to build and deploy your code to production environments. A production pipeline deploys code first to stage environment, and upon approval deploys the same code to the production environment.
 
 A user must have the **[Deployment Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** role to configure production pipelines.
 
@@ -115,6 +115,7 @@ A targeted deployment deploys code only for selected parts of your AEM applicati
 
 * **[Config](#config)** - Configure settings on your AEM environment, maintenance tasks, CDN rules, and more.
   * See the document [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage the configurations in your repository so they are deployed properly.
+  * {{waf-limited-release}}
 * **[Front End Code](#front-end-code)** - Configure JavaScript and CSS for the front end of your AEM application.
   * With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
   * See the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.
