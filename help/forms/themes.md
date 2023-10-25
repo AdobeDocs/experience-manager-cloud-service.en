@@ -647,7 +647,7 @@ You can see the generated CSS using the following options:
 
     * **Theme Editor:**
 
-      The Theme Editor lets you create themes to style your form <!-- or interactive communication -->. You can specify styling of components in a theme, that enable consistency in look and feel among multiple forms <!-- or interactive communications --> you develop. Specifying styling information in a theme, and then applying the theme to a form is recommended.
+      The Theme Editor lets you create themes to style your form <!-- or interactive communication -->. You can specify styling of components in a theme, that enable consistency in look and feel among multiple forms you develop. Specifying styling information in a theme, and then applying the theme to a form is recommended.
 
     * **Inline styling:**
 
