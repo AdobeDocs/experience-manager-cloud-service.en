@@ -66,9 +66,9 @@ In addition, if you selected an XML schema or XDP form template as the form mode
 1. Open an Adaptive Form that contains the panel you want to save as Adaptive Form Fragment.
 1. In the panel toolbar, click **[!UICONTROL Save as Fragment]**. The Save As Fragment dialog opens.
 
-   >[!NOTE]
-   >
-   >If the panel you are saving as fragment contains child panel, the resulting fragment will include them.
+      >[!NOTE]
+      >
+      >If the panel you are saving as fragment contains child panel, the resulting fragment will include them.
 
 1. In the Fragment Creation dialog, specify the following information:
 
@@ -160,8 +160,6 @@ You can replace or change an Adaptive Form Fragment by another fragment by using
 You can add a form fragment multiple times in an Adaptive Form. For example, you can use an address form fragment to collect address details for permanent, communication, and present living addresses in a loan application form. If the address form fragment used for permanent, communication, and present living addresses shares the same field names, then all the fragments store the same data, even if different details are entered in each fragment. To reuse the same form fragment in an Adaptive Form without duplicating the data:
 
 * Use different field names within the form fragments in a none-based form.
-* Use bindRef to link the same field names with different elements in the data for schema-based forms.
-
 
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 

@@ -107,7 +107,7 @@ You can add a form fragment multiple times in an Adaptive Form. For example, you
 
 * Use different field names within the form fragments in a none-based form.
 * Use bindRef to link the same field names with different elements in the data for schema-based forms.
-* Include panel hierarchy in the data by selecting the **[!UICONTROL Wrap in data]** option in the panel edit dialog.
+
 
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 
