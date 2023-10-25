@@ -34,6 +34,18 @@ Have a look at the September 2023 Release Overview video for a summary of the fe
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
+### New features {#assets-features}
+
+**AEM Assets add-on for Adobe Express**
+
+Experience Manager Assets now provides an add-on for Adobe Express. The add-on allows you to directly access the assets stored in Experience Manager Assets from within the Adobe Express user interface. You can place content managed in AEM Assets in the Express canvas and then save new or edited content in an AEM Assets repository. The add-on provides the following key benefits:
+
+* Increased content reuse by editing and saving new assets in AEM
+
+* Reduced overall time and effort  to create new assets or create new versions of existing assets
+
+  ![Include assets from Assets add-on](/help/assets/assets/aem-assets-add-on-include-assets.png)
+
 ### New features in Assets view {#assets-view-features}
 
 **Assign metadata form to a folder**
