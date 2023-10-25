@@ -61,7 +61,7 @@ Your program is created by Cloud Manager and is displayed and selectable on the 
 
 ![Cloud manager overview](assets/navigate-cm.png)
 
-## Access Your Program {#acessing}
+## Access Your Program {#accessing}
 
 1. Once you see your program card on the landing page, select the ellipsis button to view the menu options available to you.
 
