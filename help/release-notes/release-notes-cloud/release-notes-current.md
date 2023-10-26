@@ -36,9 +36,7 @@ Have a look at the October 2023 Release Overview video for a summary of the feat
 
 ### New features {#assets-features}
 
-**AEM Assets add-on for Adobe Express**
-
-Experience Manager Assets now provides an add-on for Adobe Express. The add-on allows you to directly access the assets stored in Experience Manager Assets from within the Adobe Express user interface. You can place content managed in AEM Assets in the Express canvas and then save new or edited content in an AEM Assets repository. The add-on provides the following key benefits:
+**AEM Assets add-on for Adobe Express**: Experience Manager Assets now provides an [add-on for Adobe Express](/help/assets/addon-adobe-express.md). The add-on allows you to directly access the assets stored in Experience Manager Assets from within the Adobe Express user interface. You can place content managed in AEM Assets in the Express canvas and then save new or edited content in an AEM Assets repository. The add-on provides the following key benefits:
 
 * Increased content reuse by editing and saving new assets in AEM
 
@@ -48,11 +46,11 @@ Experience Manager Assets now provides an add-on for Adobe Express. The add-on a
 
 ### New features in Assets view {#assets-view-features}
 
-**Bulk import assets from OneDrive data source**
+* **Bulk import assets from OneDrive data source**: Administrators now have the ability to import large number of assets from OneDrive to AEM Assets. The updated list for the supported data sources for bulk import include Azure, AWS, Google Cloud, Dropbox, and OneDrive. 
 
-Administrators now have the ability to import large number of assets from OneDrive to AEM Assets. The updated list for the supported data sources for bulk import include Azure, AWS, Google Cloud, Dropbox, and OneDrive. 
+  ![assign metadata form to a folder](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-![assign metadata form to a folder](/help/assets/assets/bulk-import-source-details-onedrive.png)
+* **Cross-Org Entitlement Support for Libraries**: Experience Manager Assets now enables you to access your Creative Cloud libraries in an Org that is not provisioned for those libraries. It allows easier access to the latest cross-product workflows between Creative Cloud and Experience Manager and reduced time and effort for creatives.
 
 ### Pre-release features available in [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
