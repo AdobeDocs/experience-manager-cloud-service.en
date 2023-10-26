@@ -7,18 +7,17 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 # Traffic Filter Rules Including WAF Rules {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
->
->This feature is not yet generally available. To join the ongoing early adopter program, email **aemcs-waf-adopter@adobe.com**, including the name of your organization and context about your interest in the feature.
+>This feature will soon be available on dev environments, with a gradual rollout to stage and prod environments in November. You may request earlier access on stage and prod by emailing **aemcs-waf-adopter@adobe.com**.
 
 Traffic filter rules can be used to block or allow requests at the CDN layer, which may be useful in scenarios such as:
 
 * Restricting access to specific domains to internal company traffic, before a new site goes live 
-* Establishing rate limits so as to be less susceptible to volumetric DDoS attacks
+* Establishing rate limits so as to be less susceptible to volumetric DoS attacks
 * Preventing IP addresses known to be malicious from targeting your pages
 
-Some of these traffic filter rules are available to all AEM as a Cloud Service Sites and Forms customers. They mainly operate on request properties and request headers, including IP, hostname, path, and user agent.
+Most of these traffic filter rules are available to all AEM as a Cloud Service Sites and Forms customers. They mainly operate on request properties and request headers, including IP, hostname, path, and user agent.
 
-A subcategory of traffic filter rules require either an Enhanced Security license or WAF-DDoS Protection Security license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article. Sites and Forms customers can contact their Adobe account team for details about licensing this advanced capability.
+A subcategory of traffic filter rules require either an Enhanced Security license or WAF-DDoS Protection license, and will be available later this year. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
 
 Traffic filter rules can be deployed via Cloud Manager configuration pipelines to dev, stage, and production environment types in production (non-sandbox) programs. Support for RDEs will come in the future.
 
@@ -42,27 +41,27 @@ This article is organized into the following sections:
 
 In the current digital landscape, malicious traffic is an ever-present threat. We recognize the gravity of the risk and offer several approaches to protect customer applications and mitigate attacks when they occur. 
 
-At the edge, the Adobe Managed CDN absorbs DDoS attacks at the network 
+At the edge, the Adobe Managed CDN absorbs DoS attacks at the network 
 layer (layers 3 and 4), including flood and reflection/amplification attacks.
 
-By default, Adobe takes measures to prevent performance degradation due to bursts of unexpectedly high traffic beyond a certain threshold. In the event of a DDoS attack impacting site availability, Adobe's operations teams are alerted and take steps to mitigate.
+By default, Adobe takes measures to prevent performance degradation due to bursts of unexpectedly high traffic beyond a certain threshold. In the event of a DoS attack impacting site availability, Adobe's operations teams are alerted and take steps to mitigate.
 
 Customers may take proactive measures to mitigate application layer attacks (layer 7) by configuring rules at various layers of the content delivery flow.
 
 For example, at the Apache layer, customers may configure either the [dispatcher module](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter) or [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) to limit access to certain content. 
 
-And as this article describes, traffic filter rules rules may be deployed to the CDN, using Cloud Manager's configuration pipeline. In addition to traffic request-based traffic filter rules based on properties like IP address, path, and headers, customers may also license a powerful subcategory of traffic filter rules called WAF rules.
+And as this article describes, traffic filter rules rules may be deployed to the Adobe Managed CDN, using Cloud Manager's configuration pipeline. In addition to traffic filter rules based on properties like IP address, path, and headers, or rules based on setting rate limits, customers may also license a powerful subcategory of traffic filter rules called WAF rules.
 
 ## Suggested Process {#suggested-process}
 
 The following is a high-level recommended end-to-end process for coming up with the right traffic filter rules:
 
-1. Configure a non-production and production configuration pipeline, as described in the [Setup](#setup) section.
+1. Configure non-production and production configuration pipelines, as described in the [Setup](#setup) section.
 1. Customers who have licensed the subcategory of WAF traffic filter rules should enable them in Cloud Manager.
 1. Read and try out the tutorial to concretely understand how to use traffic filter rules, including WAF rules if they've been licensed. The tutorial walks you through deploying rules to a dev environment, simulating malicious traffic, downloading the [CDN logs](#cdn-logs), and analyzing them in [dashboard tooling](#dashboard-tooling).
-1. Copy the recommended initial rules to `cdn.yaml` and deploy the configuration to production in log mode.
-1. After collecting some traffic, analyze the results using [dashboard tooling](#dashboard-tooling) to see if there were any matches. Look for false positives, and make any necessary adjustments, ultimately enabling the default rules in block mode.
-1. Add custom rules based on analysis of the CDN logs, first testing with simulated traffic on dev environments, before deploying to stage and production in log mode, then block mode.
+1. Copy the recommended starter rules to `cdn.yaml` and deploy the configuration to the production environment in log mode.
+1. After collecting some traffic, analyze the results using [dashboard tooling](#dashboard-tooling) to see if there were any matches. Lookout for false positives, and make any necessary adjustments, ultimately enabling the starter rules in block mode.
+1. Add custom rules based on analysis of the CDN logs, first testing with simulated traffic on dev environments before deploying to stage and production environments in log mode, then block mode.
 1. Monitor traffic on an ongoing basis, making changes to the rules as the threat landscape evolves.
 
 ## Setup {#setup}
@@ -94,25 +93,25 @@ The following is a high-level recommended end-to-end process for coming up with 
                equals: '/block/me'
          action: block
    ```
-
+   
   The `kind` parameter should be set to `CDN` and the version should be set to the schema version, which is currently `1`. See examples further below.
-
-
+   
+   
    <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
-
-1. To configure WAF rules, WAF must be enabled in Cloud Manager, as described below for both the new and existing program scenarios. Note that a separate license must be purchased for WAF.
-
+   
+1. If WAF rules are licensed, you should enable the feature in Cloud Manager, as described below for both the new and existing program scenarios.
+     
    1. To configure WAF on a new program, check the **WAF-DDOS Protection** check-box on the **Security** tab when you [add a production program.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-
+     
    1. To configure WAF on an existing program, [editing your program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) and on the **Security** tab uncheck or check the **WAF-DDOS** option at any time.
-
+     
 1. For environment types other than RDE, create a targeted deployment config pipeline in Cloud Manager.
-
+     
    * [Please see this document for production pipelines.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
    * [Please see this document for non-production pipelines.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-
+   
 For RDEs, the command line will be used, but RDE is not supported at this time.
-
+   
 ## Traffic Filter Rules Syntax {#rules-syntax}
 
 You can configure `traffic filter rules` to match on patterns such as IPs, user agent, request headers, hostname, geo, and url.
@@ -323,7 +322,7 @@ data:
 
 **Example 4**
 
-This rule blocks requests to path `/block-me`, and blocks every request that matches a `SQLI` or `XSS` pattern. This example includes a WAF traffic filter rules, which references the `SQLI` and `XSS` [WAF Flags](#waf-flags-list), which require a separate license.
+This rule blocks requests to path `/block-me`, and blocks every request that matches a `SQLI` or `XSS` pattern. This example includes a WAF traffic filter rules, which references the `SQLI` and `XSS` [WAF Flags](#waf-flags-list), and thus requires a separate license.
 
 ```
 kind: "CDN"
@@ -380,9 +379,11 @@ data:
 
 ## Rate Limit Rules {#rate-limits-rules}
 
-Sometimes it is desirable to block traffic matching a rule only if the match exceeds a certain rate over time. Setting a value for the `rateLimit` property limits the rate of those requests that match the rule condition. 
+Sometimes it is desirable to block traffic if it exceeds a certain rate of incoming requests, perhaps based on a specific condition. Setting a value for the `rateLimit` property limits the rate of those requests that match the rule condition. 
 
 Rate limit rules cannot reference WAF flags. They are available to all Sites and Forms customers.
+
+Rate limits are calculated per CDN POP. As an example, assume that POPs in Montreal, Miami, and Dublin experience traffic rates of 80, 90, and 120 request per second respectively, and that the rate limit rule is set to a limit of 100. In that case, only the traffic to Dublin would be rate limited.
 
 ### rateLimit Structure {#ratelimit-structure}
 
@@ -558,19 +559,6 @@ Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-ELK-To
 
 [See the tutorial](#tutorial) for concrete instructions on how to use the dashboard tooling.
 
-
-## Tutorial {#tutorial}
-
-[Work through a tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) to gain practical knowledge and experience around traffic filter rules.
-
-The tutorial walks you through:
-
-* Setting up the Cloud Manager configuration pipeline
-* Using tools to simulate malicious traffic
-* Declaring traffic filter rules, including WAF rules
-* Analyzing results with dashboard tooling
-* Best practices
-
 ## Recommended starter rules {recommended-starter-rules|
 
 You can copy the recommended rules below into your `cdn.yaml` to get started. Start in log mode, analyze your traffic, and when satisfied, change to block mode. You may wish to modify the rules based on the unique characteristics of your website's live traffic.
@@ -654,5 +642,18 @@ data:
         wafFlags:
           - CMDEXE
 ```
+
+## Tutorial {#tutorial}
+
+[Work through a tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) to gain practical knowledge and experience around traffic filter rules.
+
+The tutorial walks you through:
+
+* Setting up the Cloud Manager configuration pipeline
+* Using tools to simulate malicious traffic
+* Declaring traffic filter rules, including WAF rules
+* Analyzing results with dashboard tooling
+* Best practices
+
 
 
