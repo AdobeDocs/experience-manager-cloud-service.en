@@ -35,7 +35,8 @@ This article is organized into the following sections:
 * **Dashboard Tooling:** Analyze your CDN logs to come up with new traffic filter rules.
 * **Recommended Starter Rules:** A set of rules to get started with.
 * **Tutorial:** Practical knowledge about the feature, including how to use dashboard tooling to declare the right rules.
-<!-- About the tutorial: sets the context for a linked tutorial, which gives you practical knowledge about the feature, including how to use dashboard tooling to declare the right rules. -->
+
+We invite you to give feedback or ask questions about traffic filter rules by emailing **aemcs-waf-adopter@adobe.com**.
 
 ## Traffic Protection Overview {#traffic-protection-overview}
 
@@ -442,7 +443,7 @@ data:
 
 ## CDN Logs {#cdn-logs}
 
-AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization, and configuring CDN and WAF rules. CDN logs appear in the Cloud Manager **Download Logs** dialog, when selecting the Author or Publish service.
+AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization, and configuring traffic filter rules. CDN logs appear in the Cloud Manager **Download Logs** dialog, when selecting the Author or Publish service.
 
 Note that CDN logs may delayed up to 5 minutes.
 
@@ -460,10 +461,10 @@ For example:
 
 The rules behave in the following manner:
 
-* The customer-declared rule name of any matching rules will be listed in the matches attribute.
-* The action attribute details whether the rules had the effect of blocking, allowing, or logging.
-* If the WAF is licensed and enabled, the waf attribute will list any waf rules (e.g., SQLI; note that this is independent from the customer-declared name) that were detected, regardless of whether the waf rules were listed in the configuration.
-* If no customer-declared rules match and no waf rules match, the rules attribute property will be blank.
+* The customer-declared rule name of any matching rules will be listed in the `match` attribute.
+* The `action` attribute determines whether the rules had the effect of blocking, allowing, or logging.
+* If the WAF is licensed and enabled, the `waf` attribute will list any WAF flags (e.g., SQLI) that were detected, regardless of whether the WAF flags were listed in any rules. This is to provide insight into potential new rules to declare.
+* If no customer-declared rules match and no waf rules match, the `rules` property will be blank.
 
 In general, matching rules appear in the log entry for all requests to the CDN, regardless of whether it is a CDN hit, pass, or miss. However,  WAF rules appear in the log entry only for requests to the CDN that are considered CDN misses or passes, but not CDN hits.
 
