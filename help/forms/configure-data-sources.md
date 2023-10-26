@@ -322,3 +322,14 @@ When you enable mutual authentication for form data model, both the data source 
 ## Next steps {#next-steps}
 
 You have configured the data sources. Next you can create a Form Data Model or if you have already created a Form Data Model without a data source, you can associate it with the data sources you configured. See [Create form data model](create-form-data-models.md) for details.
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>*  [Add Forms Portal to an AEM Sites page](/help/forms/configure-forms-portal.md)
+
+-->

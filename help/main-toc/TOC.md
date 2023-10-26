@@ -3,11 +3,9 @@ cloud: Experience Cloud
 product: Adobe Experience Manager
 sub-product: Adobe Experience Manager as a Cloud Service
 solution-title: Experience Cloud
-feature: Release Information
 user-guide-description: Learn how Experience Manager as a Cloud Service works and what the software can do for you.
 breadcrumb-title: User Guide
 user-guide-title: AEM as a Cloud Service
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 ---
 
 # Experience Manager as a Cloud Service Help {#content}
@@ -164,7 +162,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support.md)
   + [Same Site Cookie Support for AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
-  + [Configuring Traffic Filter Rules with WAF Rules to Filter Traffic](/help/security/cdn-and-waf-rules.md)
+  + [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md)
   + [AEM as a Cloud Service Security Considerations](/help/security/security-considerations.md)
 + Onboarding {#onboarding}
   + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -531,6 +529,8 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
     + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
     + [Manage reports](/help/assets/manage-reports-assets-view.md)
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
+  + Best practices{#best-practices}
+    + [Search best practices](/help/assets/search-best-practices.md)
   + Integration with Adobe Workfront {#integrations}
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
@@ -569,13 +569,12 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Embed adaptive form based on Core Components to an external web page](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + [Embed adaptive form based on Foundation Components to an external web page](/help/forms/embed-adaptive-form-external-web-page.md)
     + Form Data Model {#use-form-data-model}
-      + [Connect your data sources to Cloud Service](/help/forms/data-integration.md)
+      + [Connect AEM Forms to database or data source](/help/forms/data-integration.md)
       + [Configure data sources](/help/forms/configure-data-sources.md)
       + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-      + [Salesforce application integration using OAuth 2.0 client credential flow](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+      + [Connect Adaptive Form to Salesforce application using OAuth 2.0 client credential flow](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
       + [Configure [!DNL Azure] storage](/help/forms/configure-azure-storage.md)
       + [Configure [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
-      + [Connect an Adaptive Form to Microsoft SharePoint List](/help/forms/connect-aem-adaptive-form-to-sharepointlist.md)
       + [Create Form Data Model](/help/forms/create-form-data-models.md)
       + [Work with Form Data Model](/help/forms/work-with-form-data-model.md)
       + [Use Form Data Model](/help/forms/using-form-data-model.md)
@@ -868,6 +867,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
       + [Applying and Un-Applying IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
       + [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
     + [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md)
+    + [Understanding Cloud Service Content Requests](/help/implementing/cloud-manager/content-requests.md)
     + [Cloud Manager FAQs](/help/implementing/cloud-manager/faqs.md)
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
