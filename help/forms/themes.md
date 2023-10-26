@@ -647,7 +647,7 @@ You can see the generated CSS using the following options:
 
     * **Theme Editor:**
 
-      The Theme Editor lets you create themes to style your form <!-- or interactive communication -->. You can specify styling of components in a theme, that enable consistency in look and feel among multiple forms <!-- or interactive communications --> you develop. Specifying styling information in a theme, and then applying the theme to a form is recommended.
+      The Theme Editor lets you create themes to style your form <!-- or interactive communication -->. You can specify styling of components in a theme, that enable consistency in look and feel among multiple forms you develop. Specifying styling information in a theme, and then applying the theme to a form is recommended.
 
     * **Inline styling:**
 
@@ -665,3 +665,8 @@ You can see the generated CSS using the following options:
 
   Use theme editor if you want to style header and footer using styling options such as font style, background, and transparency.
   If you want to provide information such as a logo image, company name in header, and copyright information in the footer, use the form editor options.
+
+
+## See Also {#see-also}
+
+{{see-also}}

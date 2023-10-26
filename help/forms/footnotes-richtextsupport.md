@@ -49,3 +49,8 @@ To add footnote in Adaptive Forms, perform the following steps:
 1. Save the properties.
 
 At runtime, number appears on the text as a superscript and its corresponding description appears in the **[!UICONTROL Footnote]** component at the position where [!UICONTROL Footnote Placeholder] is placed on the Adaptive Form. You can directly navigate to the footnote description by clicking its corresponding number on the [!UICONTROL Footnote].
+
+
+## See Also {#see-also}
+
+{{see-also}}
