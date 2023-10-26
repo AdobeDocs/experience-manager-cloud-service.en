@@ -38,5 +38,9 @@ AEM Forms provide a component that you can add to your site pages. The AEM Forms
     </tr>
   </tbody>
 
+>[!MORELIKETHIS]
+>
+>* [Create or add an Adaptive Form using AEM Sites Editor](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+>* [Embed adaptive form based on core components to an external web page](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
 
 

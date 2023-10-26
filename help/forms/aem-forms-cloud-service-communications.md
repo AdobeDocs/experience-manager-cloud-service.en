@@ -136,3 +136,10 @@ The [API reference documentation](https://developer.adobe.com/experience-manager
 >[!NOTE]
 >
 >Only members of forms-users group can access Communications APIs.
+
+>[!MORELIKETHIS]
+>
+>* [Introduction to AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
