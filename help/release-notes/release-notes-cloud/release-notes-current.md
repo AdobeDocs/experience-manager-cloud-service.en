@@ -30,7 +30,7 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 Have a look at the September 2023 Release Overview video for a summary of the features added in the 2023.9.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425186/?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

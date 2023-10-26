@@ -47,15 +47,19 @@ You must be a member of the **Business Owner** role to edit programs or delete s
    * This date is for informational use only. It triggers the Go Live widget on the program overview page. In turn, it provides in-product links to Adobe Experience Manager (AEM) as a Cloud Service best practice documentation to align with your journey, culminating in a successful Go Live experience.
    * This tab is not available for sandbox programs.
 
+1. If the required entitlements are available for the program, the **Security** tab will show where you can modify the security options for the program.
+
+   ![Edit security settings](assets/edit-program-security.png)
+
+   * HIPAA can not be enabled or disabled after [program creation.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+      * [Learn more](https://www.adobe.com/go/hipaa-ready) about Adobe's HIPAA ready solution implementation.
+   * Once activated, WAF-DDOS protection can then be configured by setting up a [non-production pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   
+   {{waf-limited-release}}
+
 1. Click **Update** to save your changes to the program.
 
 Anytime a program is edited, including adding or removing a solution or add-on, those changes take effect following the next deployment.
-
-If your production program had enhanced security enabled, an additional **Enhanced Security** tab is available in the **Edit Program** window to confirm that the feature is active for the program.
-
-![Enhanced Security active for a program](assets/edit-program-enhanced.png)
-
-You cannot edit this setting after the program is created. For more information about the enhanced security option, see [Creating Production Programs](creating-production-programs.md).
 
 ## Deleting Sandbox Programs {#delete-sandbox-program}
 
