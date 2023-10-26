@@ -589,3 +589,11 @@ The Generate Printed Output step has the following properties:
 * [Variables in Forms-centric AEM Workflows](/help/forms/variable-in-aem-workflows.md)
 * [Configure Out of Office setting](/help/forms/configure-out-of-office-settings.md)
 
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Forms-centric workflow on OSGi](/help/forms/aem-forms-workflow.md)
+>* [Use AEM translation workflow to localize Adaptive Forms and Document of Record](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
+
+-->
