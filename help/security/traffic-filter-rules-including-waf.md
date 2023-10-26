@@ -222,7 +222,7 @@ when:
 
 ### Action Structure {#action-structure}
 
-Specified by `action` field which can be either a string specifying action type (allow, block, log) and assuming default values for all other options or an object where rule type is defined via `type` required field along with other options applicable to that type.
+An `action` can either be a string specifying the action (allow, block or log), or an object composed of both the action type (allow, block or log) and options like wafFlags and/or status.
 
 **Action Types**
 
@@ -273,6 +273,8 @@ The `wafFlags` property, which can be used in the licensable WAF traffic filter 
 * The configuration files should not contain secrets since they would be readable by anyone who has access to the git repository.
 
 * IP Allow lists defined in Cloud Manager take precedence over Traffic Filters Rules.
+
+* WAF rule matches only appear in CDN logs for CDN misses and passes, not hits.
 
 ## Rules Examples {#examples}
 
@@ -486,7 +488,7 @@ The rules behave in the following manner:
 * If the WAF is licensed and enabled, the `waf` attribute will list any WAF flags (e.g., SQLI) that were detected, regardless of whether the WAF flags were listed in any rules. This is to provide insight into potential new rules to declare.
 * If no customer-declared rules match and no waf rules match, the `rules` property will be blank.
 
-In general, matching rules appear in the log entry for all requests to the CDN, regardless of whether it is a CDN hit, pass, or miss. However,  WAF rules appear in the log entry only for requests to the CDN that are considered CDN misses or passes, but not CDN hits.
+As noted earlier, WAF rule matches only appear in CDN logs for CDN misses and passes, not hits.
 
 The example below shows a sample `cdn.yaml` and two CDN log entries:
 
