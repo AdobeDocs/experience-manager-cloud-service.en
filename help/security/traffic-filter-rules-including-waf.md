@@ -11,7 +11,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 
 Traffic filter rules can be used to block or allow requests at the CDN layer, which may be useful in scenarios such as:
 
-* Restricting access to specific domains to internal company traffic, before a new site goes live 
+* Restricting access to specific domains to internal company traffic, before a new site goes live
 * Establishing rate limits so as to be less susceptible to volumetric DoS attacks
 * Preventing IP addresses known to be malicious from targeting your pages
 
@@ -40,16 +40,16 @@ We invite you to give feedback or ask questions about traffic filter rules by em
 
 ## Traffic Protection Overview {#traffic-protection-overview}
 
-In the current digital landscape, malicious traffic is an ever-present threat. We recognize the gravity of the risk and offer several approaches to protect customer applications and mitigate attacks when they occur. 
+In the current digital landscape, malicious traffic is an ever-present threat. We recognize the gravity of the risk and offer several approaches to protect customer applications and mitigate attacks when they occur.
 
-At the edge, the Adobe Managed CDN absorbs DoS attacks at the network 
+At the edge, the Adobe Managed CDN absorbs DoS attacks at the network
 layer (layers 3 and 4), including flood and reflection/amplification attacks.
 
 By default, Adobe takes measures to prevent performance degradation due to bursts of unexpectedly high traffic beyond a certain threshold. In the event of a DoS attack impacting site availability, Adobe's operations teams are alerted and take steps to mitigate.
 
 Customers may take proactive measures to mitigate application layer attacks (layer 7) by configuring rules at various layers of the content delivery flow.
 
-For example, at the Apache layer, customers may configure either the [dispatcher module](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter) or [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) to limit access to certain content. 
+For example, at the Apache layer, customers may configure either the [dispatcher module](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter) or [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) to limit access to certain content.
 
 And as this article describes, traffic filter rules rules may be deployed to the Adobe Managed CDN, using Cloud Manager's configuration pipeline. In addition to traffic filter rules based on properties like IP address, path, and headers, or rules based on setting rate limits, customers may also license a powerful subcategory of traffic filter rules called WAF rules.
 
@@ -94,25 +94,29 @@ The following is a high-level recommended end-to-end process for coming up with 
                equals: '/block/me'
          action: block
    ```
-   
+
   The `kind` parameter should be set to `CDN` and the version should be set to the schema version, which is currently `1`. See examples further below.
-   
-   
+
+
    <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
-   
+
 1. If WAF rules are licensed, you should enable the feature in Cloud Manager, as described below for both the new and existing program scenarios.
-     
+
    1. To configure WAF on a new program, check the **WAF-DDOS Protection** check-box on the **Security** tab when you [add a production program.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-     
+
    1. To configure WAF on an existing program, [editing your program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) and on the **Security** tab uncheck or check the **WAF-DDOS** option at any time.
-     
+
 1. For environment types other than RDE, create a targeted deployment config pipeline in Cloud Manager.
-     
+
    * [Please see this document for production pipelines.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
    * [Please see this document for non-production pipelines.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-   
+
 For RDEs, the command line will be used, but RDE is not supported at this time.
-   
+
+**Notes**
+
+* You can use `yq` to validate locally the YAML syntax of your configuration file (eg. `yq cdn.yaml`).
+
 ## Traffic Filter Rules Syntax {#rules-syntax}
 
 You can configure `traffic filter rules` to match on patterns such as IPs, user agent, request headers, hostname, geo, and url.
@@ -147,7 +151,7 @@ The format of the traffic filter rules in the `cdn.yaml` file is described below
 |---|---|---|---|---|---|
 | name  | X  | X  | `string`  | -  | Rule name (64 chars long, can only contain alphanumerics and - )  |
 | when  | X  | X  | `Condition`  | -  | The basic structure is:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[See Condition Structure syntax](#condition-structure) below, which describes the getters, predicates, and how to combine multiple conditions.  |
-| action  | X  | X  | `Action` | log  | log, allow, block, log, or action object  Default is log |
+| action  | X  | X  | `Action` | log  | log, allow, block, or Action object. Default is log |
 |  rateLimit | X  |   | `RateLimit`  | not defined  | Rate limiting configuration. Rate limiting is disabled if not defined.<br><br>There is a separate section further below describing the rateLimit syntax, along with examples.  |
 
 ### Condition Structure {#condition-structure}
@@ -183,11 +187,11 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
 
 | **Property**   | **Type**  | **Description**  |
 |---|---|---|
-| reqProperty  | `string`  | Request property.<br><br>One of: `path` , `queryString`, `method`, `tier`, `domain`, `clientIp`, `clientCountry`<br><br>The domain property is a lower-case transformation of the request's host header. It is useful for string comparisons so matches aren't missed due to case sensitivity.<br><br>The `clientCountry` uses two letter codes displayed at [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)  |
+| reqProperty  | `string`  | Request property.<br><br>One of:<br><ul><li>`path`: Returns the full path of an URL without the query parameters.</li><li>`queryString`: Returns the query part of an URL</li><li>`method`: Returns the HTTP method used in the request.</li><li>`tier`: Returns one of `author`, `preview` or `publish`.</li><li>`domain`: Returns the domain property (as defined in the `Host` header) in lower-case</li><li>`clientIp`: Returns the client IP.</li><li>`clientCountry`: Returns a two letter code ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) that identify in which country the client is located.</li></ul> |
 | reqHeader  | `string`  | Returns Request Header with specified name  |
 | queryParam  | `string` | Returns Query Parameter with specified name  |
 | reqCookie  | `string`  | Returns Cookie with specified name  |
-| postParam  | `string`  | Returns parameter with specified name from body. Only works when body is of content type `application/x-www-form-urlencoded` |
+| postParam  | `string`  | Returns Post Parameter with specified name from Request body. Only works when body is of content type `application/x-www-form-urlencoded` |
 
 **Predicate**
 
@@ -202,6 +206,19 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
 | **in**  | `array[string]`  | true if provided list contains getter result  |
 |  **notIn** | `array[string]`  | true if provided list does not contain getter result  |
 |  **exists** | `boolean`  | true when set to true and property exists or when set to false and property does not exist  |
+
+**Notes**
+
+* The request property `clientIp` can only be used with the following predicates: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` can also be compared against IP ranges when using `in` and `notIn` predicates. The following example implements a condition to evaluate if a client IP is in the IP range of 192.168.0.0/24 (so from 192.168.0.0 to 192.168.0.255):
+
+```
+when:
+  reqProperty: clientIp
+  in: [ "192.168.0.0/24" ]
+```
+
+* We recommend to use [regex101](https://regex101.com/) and [Fastly Fiddle](https://fiddle.fastly.dev/) when working with regex. You can also learn more about how Fastly handles regex in this [article](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes).
+
 
 ### Action Structure {#action-structure}
 
@@ -254,6 +271,8 @@ The `wafFlags` property, which can be used in the licensable WAF traffic filter 
 * If a rule is matched and blocked, the CDN responds with a `406` return code.
 
 * The configuration files should not contain secrets since they would be readable by anyone who has access to the git repository.
+
+* IP Allow lists defined in Cloud Manager take precedence over Traffic Filters Rules.
 
 ## Rules Examples {#examples}
 
@@ -380,7 +399,7 @@ data:
 
 ## Rate Limit Rules {#rate-limits-rules}
 
-Sometimes it is desirable to block traffic if it exceeds a certain rate of incoming requests, perhaps based on a specific condition. Setting a value for the `rateLimit` property limits the rate of those requests that match the rule condition. 
+Sometimes it is desirable to block traffic if it exceeds a certain rate of incoming requests, perhaps based on a specific condition. Setting a value for the `rateLimit` property limits the rate of those requests that match the rule condition.
 
 Rate limit rules cannot reference WAF flags. They are available to all Sites and Forms customers.
 
