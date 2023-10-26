@@ -115,7 +115,7 @@ For RDEs, the command line will be used, but RDE is not supported at this time.
 
 **Notes**
 
-* You can use `yq` to validate locally the YAML syntax of your configuration file (eg. `yq cdn.yaml`).
+* You can use `yq` to validate locally the YAML formatting of your configuration file (eg. `yq cdn.yaml`).
 
 ## Traffic Filter Rules Syntax {#rules-syntax}
 
