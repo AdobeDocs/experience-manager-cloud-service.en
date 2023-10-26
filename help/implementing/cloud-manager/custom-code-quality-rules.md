@@ -532,9 +532,9 @@ Check the [Apache Sling documentation](https://sling.apache.org/documentation/bu
 * **Severity**: Minor
 * **Since**: Version 2023.11
 
-AEM applications often reach out to other applications using the HTTP protocol, and the Apache HttpClient is an often used library to achieve this. But the creation of such an HttpClient object comes with some overhead, so these objects should be reused as possible. 
+AEM applications often reach out to other applications using the HTTP protocol, and the Apache HttpClient is an often used library to achieve this. But the creation of such an HttpClient object comes with some overhead, so these objects should be reused as much as possible. 
 
-This rule checks that such a HttpClient object is not private within a method, but global on a class level, so it can be reused. In this case the httpClient field should be set in the constructor of the class or the `activate()` method (if this class is an OSGI component/service). 
+This rule checks that such a HttpClient object is not private within a method, but global on a class level, so it can be reused. In this case the httpClient field should be set in the constructor of the class or the `activate()` method (if this class is an OSGi component/service). 
 
 Please also check the [Optimization Guide](https://hc.apache.org/httpclient-legacy/performance.html) of the HttpClient for some best practices regarding the use of the HttpClient.
 
