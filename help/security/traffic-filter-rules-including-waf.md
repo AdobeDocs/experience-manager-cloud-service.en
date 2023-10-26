@@ -560,7 +560,7 @@ Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-ELK-To
 
 [See the tutorial](#tutorial) for concrete instructions on how to use the dashboard tooling.
 
-## Recommended starter rules {recommended-starter-rules}
+## Recommended starter rules {#recommended-starter-rules}
 
 You can copy the recommended rules below into your `cdn.yaml` to get started. Start in log mode, analyze your traffic, and when satisfied, change to block mode. You may wish to modify the rules based on the unique characteristics of your website's live traffic.
 
