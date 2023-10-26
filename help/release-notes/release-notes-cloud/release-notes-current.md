@@ -28,7 +28,7 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Release Video {#release-video}
 
-Have a look at the September 2023 Release Overview video for a summary of the features added in the 2023.9.0 release:
+Have a look at the October 2023 Release Overview video for a summary of the features added in the 2023.10.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425186/?quality=12)
 
@@ -69,7 +69,6 @@ Administrators now have the ability to import large number of assets from OneDri
 * **Themes and templates**: Kickstart your form creation process with our new themes and templates, tailored to empower both seasoned professionals and new forms authors. Seamlessly built using Adaptive Forms Core Components, these meticulously curated themes and templates allow you to start creating forms swiftly for common use cases.
 
      ![Out of the box templates](/help/forms/assets/form-templates-ootb.png)
-
 
 ### Pre-release features available in [!DNL Forms] {#pre-release-features-available-in-forms-channel} 
 
