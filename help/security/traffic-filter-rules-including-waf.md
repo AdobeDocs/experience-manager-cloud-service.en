@@ -217,7 +217,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* We recommend to use [regex101](https://regex101.com/) and [Fastly Fiddle](https://fiddle.fastly.dev/) when working with regex. You can also learn more about how Fastly handles regex in this [article](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes).
+* We recommend the use of [regex101](https://regex101.com/) and [Fastly Fiddle](https://fiddle.fastly.dev/) when working with regex. You can also learn more about how Fastly handles regex in this [article](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 
 ### Action Structure {#action-structure}
