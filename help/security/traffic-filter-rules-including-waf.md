@@ -655,6 +655,3 @@ The tutorial walks you through:
 * Declaring traffic filter rules, including WAF rules
 * Analyzing results with dashboard tooling
 * Best practices
-
-
-
