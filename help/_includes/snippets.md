@@ -14,6 +14,10 @@
 >
 >AEM currently does not support assigning groups to profiles. Users should be added individually instead.
 
+## WAF Config Limited Release {#waf-limited-release}
+
+[!BADGE WAF-DDOS protection will be available end of 2023.]{type=Caution tooltip="WAF-DDOS protection will be available end of 2023."}
+
 ## See Also {#see-also}
 
 * [Create an AEM Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
