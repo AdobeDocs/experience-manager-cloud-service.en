@@ -87,7 +87,13 @@ Administrators now have the ability to import large number of assets from OneDri
 
 ### Traffic Filter Rules, including WAF {#traffic-filter-rules-waf}
 
-Filter traffic at the CDN by matching properties of the incoming request, including url, IP address, and user agent. or set custom traffic rate limits. Customers can also license a set of advanced Web Application Firewall (WAF) rules for extra protection against sophisticated attacks. Learn more about how to declare Traffic Filter Rules and how to deploy them with Cloud Manager's new Configuration Pipeline.
+[Filter traffic at the Adobe Managed CDN](/help/security/traffic-filter-rules-including-waf.md) by declaring rules matching website traffic by properties including url, IP address, and user agent -- or set custom traffic rate limits to guard against DoS attacks. Customers may also license a set of advanced Web Application Firewall (WAF) rules for extra protection against sophisticated website threats. 
+
+We encourage you to get familar with traffic filter rules by [trying out a tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! It walks you through setting up a new Cloud Manager Configuration Pipeline, declaring rules in a configuration file, and analyzing CDN logs for malicious traffic.
+
+Traffic filter rules are available now on dev environments, with a gradual rollout to stage and prod environments in November. You may request earlier access on stage and prod by emailing **aemcs-waf-adopter@adobe.com**. 
+
+The advanced WAF traffic filter rules can be licensed later this year through the Enhanced Security or WAF-DDoS Protection offerings.
 
 ## Cloud Manager {#cloud-manager}
 
