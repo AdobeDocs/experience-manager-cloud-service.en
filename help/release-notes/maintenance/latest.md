@@ -65,8 +65,7 @@ Summarized below are the continuous improvements for maintenance release 14029, 
 
 ### Known Issues {#known-issues-14029}
 
-* CQ-4354836: Unable to start Workflow or Create Task from Projects Console.
-* CQ-4354834 : Users are unable to add comments in an inbox task. 
+None.
 
 ### Embedded Technologies {#embedded-tech-14029}
 
