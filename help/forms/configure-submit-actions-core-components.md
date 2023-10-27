@@ -492,12 +492,14 @@ When you prefill a form data model, or schema based Adaptive Form with XML or JS
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 
 
+<!--
 ## See next
 
 * [Create style or themes for your forms](using-themes-in-core-components.md)
 * [Create an Adaptive Form (core components)](/help/forms/creating-adaptive-form-core-components.md)
 * [Create a custom Submit Action for Adaptive Forms](/help/forms/custom-submit-action-form.md)
 
+-->
 
 ## See Also {#see-also}
 
