@@ -37,6 +37,11 @@ You can create an Adaptive Form Fragment from scratch or save a panel in an exis
 1. Click to open the **Form Model** tab, and from the **Select From** drop-down menu, select one of the following models for the fragment:
 
     * **None**: Specifies to create the fragment from scratch without using any form model.
+
+      >[!NOTE]
+      >
+      >An advantage of core component-based fragments over foundation component-based fragments is the ability to use multiple core component none-based fragments in a single Adaptive Form.
+
     * **Form Template**: Specifies to create the fragment using an XDP template uploaded to [!DNL AEM Forms]. Select the appropriate XDP template as the form model for the fragment.
 
    ![Creating an Adaptive Form using form template as model](assets/form-template-model.png)
@@ -157,8 +162,11 @@ You can replace or change an Adaptive Form Fragment by another fragment by using
 
 ### Using a form fragment multiple times in an Adaptive Form {#using-form-fragment-mutiple-times-in-af}
 
-You can use a schema-based form fragment multiple times in an Adaptive Form. For example, you can use an address form fragment to collect address details for permanent, communication, and present living addresses in a loan application form. The form saves different data for each address if the user has entered different addresses for each form fragment.
-In case you want to use a none-based form fragment multiple times in an Adaptive Form, use different field names for each form fragment to avoid data duplication.
+You can use a schema-based form fragment multiple times in an Adaptive Form to save data uniquely for each form fragment fields. For example, you can use an address form fragment to collect address details for permanent, communication, and present living addresses in a loan application form. 
+
+  >[!NOTE]
+  >
+  > If you use none-based form fragments multiple times in an Adaptive form, data syncing between the fields of fragments occurs. One advantage of [core component-based form fragments](/help/forms/adaptive-form-fragments-core-components.md) over foundation component-based form fragments is the ability to use multiple none-based form fragments based on core components in a single Adaptive Form without data syncing issues.
 
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 
