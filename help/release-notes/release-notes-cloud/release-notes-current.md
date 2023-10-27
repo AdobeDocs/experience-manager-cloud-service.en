@@ -20,7 +20,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2023.10.0) is October 26, 2023. The next feature release (2023.11.0) is planned for November 30, 2023.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2023.11.0) is November 30, 2023. The next feature release (2023.12.0) is planned for December 14, 2023.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -28,7 +28,7 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Release Video {#release-video}
 
-Have a look at the October 2023 Release Overview video for a summary of the features added in the 2023.10.0 release:
+Have a look at the November 2023 Release Overview video for a summary of the features added in the 2023.11.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425186/?quality=12)
 
@@ -75,18 +75,6 @@ Have a look at the October 2023 Release Overview video for a summary of the feat
 
      You can write to `aem-forms-early-adopter-program@adobe.com` from your official email id to join the early adopter program and request access to the capability.
      
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### Traffic Filter Rules, including WAF {#traffic-filter-rules-waf}
-
-[Filter traffic at the Adobe Managed CDN](/help/security/traffic-filter-rules-including-waf.md) by declaring rules matching website traffic by properties including url, IP address, and user agent -- or set custom traffic rate limits to guard against DoS attacks. Customers may also license a set of advanced Web Application Firewall (WAF) rules for extra protection against sophisticated website threats. 
-
-We encourage you to get familar with traffic filter rules by [trying out a tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! It walks you through setting up a new Cloud Manager Configuration Pipeline, declaring rules in a configuration file, and analyzing CDN logs for malicious traffic.
-
-Traffic filter rules are available now on dev environments, with a gradual rollout to stage and prod environments in November. You may request earlier access on stage and prod by emailing **aemcs-waf-adopter@adobe.com**. 
-
-The advanced WAF traffic filter rules can be licensed later this year through the Enhanced Security or WAF-DDoS Protection offerings.
-
 ## Cloud Manager {#cloud-manager}
 
 You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes/current.md).
