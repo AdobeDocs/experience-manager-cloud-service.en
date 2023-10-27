@@ -7,18 +7,17 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 # Traffic Filter Rules Including WAF Rules {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
->
->This feature is not yet generally available. To join the ongoing early adopter program, email **aemcs-waf-adopter@adobe.com**, including the name of your organization and context about your interest in the feature.
+>This feature will soon be available on dev environments, with a gradual rollout to stage and prod environments in November. You may request earlier access on stage and prod by emailing **aemcs-waf-adopter@adobe.com**.
 
 Traffic filter rules can be used to block or allow requests at the CDN layer, which may be useful in scenarios such as:
 
-* Restricting access to specific domains to internal company traffic, before a new site goes live 
-* Establishing rate limits so as to be less susceptible to volumetric DDoS attacks
+* Restricting access to specific domains to internal company traffic, before a new site goes live
+* Establishing rate limits so as to be less susceptible to volumetric DoS attacks
 * Preventing IP addresses known to be malicious from targeting your pages
 
-Some of these traffic filter rules are available to all AEM as a Cloud Service Sites and Forms customers. They mainly operate on request properties and request headers, including IP, hostname, path, and user agent.
+Most of these traffic filter rules are available to all AEM as a Cloud Service Sites and Forms customers. They mainly operate on request properties and request headers, including IP, hostname, path, and user agent.
 
-A subcategory of traffic filter rules require either an Enhanced Security license or WAF-DDoS Protection Security license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article. Sites and Forms customers can contact their Adobe account team for details about licensing this advanced capability.
+A subcategory of traffic filter rules require either an Enhanced Security license or WAF-DDoS Protection license, and will be available later this year. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
 
 Traffic filter rules can be deployed via Cloud Manager configuration pipelines to dev, stage, and production environment types in production (non-sandbox) programs. Support for RDEs will come in the future.
 
@@ -34,34 +33,36 @@ This article is organized into the following sections:
 * **Rate limit rules:** Learn how to use rate limiting rules to protect your site from high volume attacks.
 * **CDN logs:** See what declared rules and WAF Flags match your traffic.
 * **Dashboard Tooling:** Analyze your CDN logs to come up with new traffic filter rules.
+* **Recommended Starter Rules:** A set of rules to get started with.
 * **Tutorial:** Practical knowledge about the feature, including how to use dashboard tooling to declare the right rules.
-<!-- About the tutorial: sets the context for a linked tutorial, which gives you practical knowledge about the feature, including how to use dashboard tooling to declare the right rules. -->
+
+We invite you to give feedback or ask questions about traffic filter rules by emailing **aemcs-waf-adopter@adobe.com**.
 
 ## Traffic Protection Overview {#traffic-protection-overview}
 
-In the current digital landscape, malicious traffic is an ever-present threat. We recognize the gravity of the risk and offer several approaches to protect customer applications and mitigate attacks when they occur. 
+In the current digital landscape, malicious traffic is an ever-present threat. We recognize the gravity of the risk and offer several approaches to protect customer applications and mitigate attacks when they occur.
 
-At the edge, the Adobe Managed CDN absorbs DDoS attacks at the network 
+At the edge, the Adobe Managed CDN absorbs DoS attacks at the network
 layer (layers 3 and 4), including flood and reflection/amplification attacks.
 
-By default, Adobe takes measures to prevent performance degradation due to bursts of unexpectedly high traffic beyond a certain threshold. In the event of a DDoS attack impacting site availability, Adobe's operations teams are alerted and take steps to mitigate.
+By default, Adobe takes measures to prevent performance degradation due to bursts of unexpectedly high traffic beyond a certain threshold. In the event of a DoS attack impacting site availability, Adobe's operations teams are alerted and take steps to mitigate.
 
 Customers may take proactive measures to mitigate application layer attacks (layer 7) by configuring rules at various layers of the content delivery flow.
 
-For example, at the Apache layer, customers may configure either the [dispatcher module](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter) or [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) to limit access to certain content. 
+For example, at the Apache layer, customers may configure either the [dispatcher module](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter) or [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) to limit access to certain content.
 
-And as this article describes, traffic filter rules rules may be deployed to the CDN, using Cloud Manager's configuration pipeline. In addition to traffic request-based traffic filter rules based on properties like IP address, path, and headers, customers may also license a powerful subcategory of traffic filter rules called WAF rules.
+And as this article describes, traffic filter rules rules may be deployed to the Adobe Managed CDN, using Cloud Manager's configuration pipeline. In addition to traffic filter rules based on properties like IP address, path, and headers, or rules based on setting rate limits, customers may also license a powerful subcategory of traffic filter rules called WAF rules.
 
 ## Suggested Process {#suggested-process}
 
 The following is a high-level recommended end-to-end process for coming up with the right traffic filter rules:
 
-1. Configure a non-production and production configuration pipeline, as described in the [Setup](#setup) section.
+1. Configure non-production and production configuration pipelines, as described in the [Setup](#setup) section.
 1. Customers who have licensed the subcategory of WAF traffic filter rules should enable them in Cloud Manager.
 1. Read and try out the tutorial to concretely understand how to use traffic filter rules, including WAF rules if they've been licensed. The tutorial walks you through deploying rules to a dev environment, simulating malicious traffic, downloading the [CDN logs](#cdn-logs), and analyzing them in [dashboard tooling](#dashboard-tooling).
-1. Copy the recommended initial rules to `cdn.yaml` and deploy the configuration to production in log mode.
-1. After collecting some traffic, analyze the results using [dashboard tooling](#dashboard-tooling) to see if there were any matches. Look for false positives, and make any necessary adjustments, ultimately enabling the default rules in block mode.
-1. Add custom rules based on analysis of the CDN logs, first testing with simulated traffic on dev environments, before deploying to stage and production in log mode, then block mode.
+1. Copy the recommended starter rules to `cdn.yaml` and deploy the configuration to the production environment in log mode.
+1. After collecting some traffic, analyze the results using [dashboard tooling](#dashboard-tooling) to see if there were any matches. Lookout for false positives, and make any necessary adjustments, ultimately enabling the starter rules in block mode.
+1. Add custom rules based on analysis of the CDN logs, first testing with simulated traffic on dev environments before deploying to stage and production environments in log mode, then block mode.
 1. Monitor traffic on an ongoing basis, making changes to the rules as the threat landscape evolves.
 
 ## Setup {#setup}
@@ -99,7 +100,7 @@ The following is a high-level recommended end-to-end process for coming up with 
 
    <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
-1. To configure WAF rules, WAF must be enabled in Cloud Manager, as described below for both the new and existing program scenarios. Note that a separate license must be purchased for WAF.
+1. If WAF rules are licensed, you should enable the feature in Cloud Manager, as described below for both the new and existing program scenarios.
 
    1. To configure WAF on a new program, check the **WAF-DDOS Protection** check-box on the **Security** tab when you [add a production program.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
@@ -111,6 +112,10 @@ The following is a high-level recommended end-to-end process for coming up with 
    * [Please see this document for non-production pipelines.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 
 For RDEs, the command line will be used, but RDE is not supported at this time.
+
+**Notes**
+
+* You can use `yq` to validate locally the YAML formatting of your configuration file (eg. `yq cdn.yaml`).
 
 ## Traffic Filter Rules Syntax {#rules-syntax}
 
@@ -146,7 +151,7 @@ The format of the traffic filter rules in the `cdn.yaml` file is described below
 |---|---|---|---|---|---|
 | name  | X  | X  | `string`  | -  | Rule name (64 chars long, can only contain alphanumerics and - )  |
 | when  | X  | X  | `Condition`  | -  | The basic structure is:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[See Condition Structure syntax](#condition-structure) below, which describes the getters, predicates, and how to combine multiple conditions.  |
-| action  | X  | X  | `Action` | log  | log, allow, block, log, or action object  Default is log |
+| action  | X  | X  | `Action` | log  | log, allow, block, or Action object. Default is log |
 |  rateLimit | X  |   | `RateLimit`  | not defined  | Rate limiting configuration. Rate limiting is disabled if not defined.<br><br>There is a separate section further below describing the rateLimit syntax, along with examples.  |
 
 ### Condition Structure {#condition-structure}
@@ -182,11 +187,11 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
 
 | **Property**   | **Type**  | **Description**  |
 |---|---|---|
-| reqProperty  | `string`  | Request property.<br><br>One of: `path` , `queryString`, `method`, `tier`, `domain`, `clientIp`, `clientCountry`<br><br>The domain property is a lower-case transformation of the request's host header. It is useful for string comparisons so matches aren't missed due to case sensitivity.<br><br>The `clientCountry` uses two letter codes displayed at [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)  |
+| reqProperty  | `string`  | Request property.<br><br>One of:<br><ul><li>`path`: Returns the full path of an URL without the query parameters.</li><li>`queryString`: Returns the query part of an URL</li><li>`method`: Returns the HTTP method used in the request.</li><li>`tier`: Returns one of `author`, `preview` or `publish`.</li><li>`domain`: Returns the domain property (as defined in the `Host` header) in lower-case</li><li>`clientIp`: Returns the client IP.</li><li>`clientCountry`: Returns a two letter code ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) that identify in which country the client is located.</li></ul> |
 | reqHeader  | `string`  | Returns Request Header with specified name  |
 | queryParam  | `string` | Returns Query Parameter with specified name  |
 | reqCookie  | `string`  | Returns Cookie with specified name  |
-| postParam  | `string`  | Returns parameter with specified name from body. Only work when body is of content type `application/x-www-form-urlencoded` |
+| postParam  | `string`  | Returns Post Parameter with specified name from Request body. Only works when body is of content type `application/x-www-form-urlencoded` |
 
 **Predicate**
 
@@ -202,9 +207,22 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
 |  **notIn** | `array[string]`  | true if provided list does not contain getter result  |
 |  **exists** | `boolean`  | true when set to true and property exists or when set to false and property does not exist  |
 
+**Notes**
+
+* The request property `clientIp` can only be used with the following predicates: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` can also be compared against IP ranges when using `in` and `notIn` predicates. The following example implements a condition to evaluate if a client IP is in the IP range of 192.168.0.0/24 (so from 192.168.0.0 to 192.168.0.255):
+
+```
+when:
+  reqProperty: clientIp
+  in: [ "192.168.0.0/24" ]
+```
+
+* We recommend the use of [regex101](https://regex101.com/) and [Fastly Fiddle](https://fiddle.fastly.dev/) when working with regex. You can also learn more about how Fastly handles regex in this [article](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes).
+
+
 ### Action Structure {#action-structure}
 
-Specified by `action` field which can be either a string specifying action type (allow, block, log) and assuming default values for all other options or an object where rule type is defined via `type` required field along with other options applicable to that type.
+An `action` can either be a string specifying the action (allow, block or log), or an object composed of both the action type (allow, block or log) and options like wafFlags and/or status.
 
 **Action Types**
 
@@ -253,6 +271,10 @@ The `wafFlags` property, which can be used in the licensable WAF traffic filter 
 * If a rule is matched and blocked, the CDN responds with a `406` return code.
 
 * The configuration files should not contain secrets since they would be readable by anyone who has access to the git repository.
+
+* IP Allow lists defined in Cloud Manager take precedence over Traffic Filters Rules.
+
+* WAF rule matches only appear in CDN logs for CDN misses and passes, not hits.
 
 ## Rules Examples {#examples}
 
@@ -322,7 +344,7 @@ data:
 
 **Example 4**
 
-This rule blocks requests to path `/block-me`, and blocks every request that matches a `SQLI` or `XSS` pattern. This example includes a WAF traffic filter rules, which references the `SQLI` and `XSS` [WAF Flags](#waf-flags-list), which require a separate license.
+This rule blocks requests to path `/block-me`, and blocks every request that matches a `SQLI` or `XSS` pattern. This example includes a WAF traffic filter rules, which references the `SQLI` and `XSS` [WAF Flags](#waf-flags-list), and thus requires a separate license.
 
 ```
 kind: "CDN"
@@ -379,18 +401,21 @@ data:
 
 ## Rate Limit Rules {#rate-limits-rules}
 
-Sometimes it is desirable to block traffic matching a rule only if the match exceeds a certain rate over time. Setting a value for the `rateLimit` property limits the rate of those requests that match the rule condition. 
+Sometimes it is desirable to block traffic if it exceeds a certain rate of incoming requests, perhaps based on a specific condition. Setting a value for the `rateLimit` property limits the rate of those requests that match the rule condition.
 
 Rate limit rules cannot reference WAF flags. They are available to all Sites and Forms customers.
+
+Rate limits are calculated per CDN POP. As an example, assume that POPs in Montreal, Miami, and Dublin experience traffic rates of 80, 90, and 120 request per second respectively, and that the rate limit rule is set to a limit of 100. In that case, only the traffic to Dublin would be rate limited.
 
 ### rateLimit Structure {#ratelimit-structure}
 
 | **Property**  | **Type**  | **Default**  | **MEANING**  |
 |---|---|---|---|
 |  limit |  integer from 10 to 10000     |  required |  Request rate (per CDN POP) in requests per second for which the rule is triggered. |
-|  window | integer enum: 1, 10 or 60  | 10  | Sampling window in seconds for which request rate is calculated.  |
+|  window | integer enum: 1, 10 or 60  | 10  | Sampling window in seconds for which request rate is calculated. The accuracy of counters will depend on the size of the window (bigger window bigger accuracy). For example one can expect 50% accuracy for the 1 second window and 90% accuracy for the 60 second window. |
 |  penalty | integer from 60 to 3600  | 300 (5 minutes) | A period in seconds for which matching requests are blocked (rounded to the nearest minute).  |
 |  groupBy | array[Getter] | none | rate limiter counter will be aggregated by a set of request properties (for example clientIp).  |
+
 
 ### Examples {#ratelimiting-examples}
 
@@ -440,7 +465,7 @@ data:
 
 ## CDN Logs {#cdn-logs}
 
-AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization, and configuring CDN and WAF rules. CDN logs appear in the Cloud Manager **Download Logs** dialog, when selecting the Author or Publish service.
+AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization, and configuring traffic filter rules. CDN logs appear in the Cloud Manager **Download Logs** dialog, when selecting the Author or Publish service.
 
 Note that CDN logs may delayed up to 5 minutes.
 
@@ -458,12 +483,12 @@ For example:
 
 The rules behave in the following manner:
 
-* The customer-declared rule name of any matching rules will be listed in the matches attribute.
-* The action attribute details whether the rules had the effect of blocking, allowing, or logging.
-* If the WAF is licensed and enabled, the waf attribute will list any waf rules (e.g., SQLI; note that this is independent from the customer-declared name) that were detected, regardless of whether the waf rules were listed in the configuration.
-* If no customer-declared rules match and no waf rules match, the rules attribute property will be blank.
+* The customer-declared rule name of any matching rules will be listed in the `match` attribute.
+* The `action` attribute determines whether the rules had the effect of blocking, allowing, or logging.
+* If the WAF is licensed and enabled, the `waf` attribute will list any WAF flags (e.g., SQLI) that were detected, regardless of whether the WAF flags were listed in any rules. This is to provide insight into potential new rules to declare.
+* If no customer-declared rules match and no waf rules match, the `rules` property will be blank.
 
-In general, matching rules appear in the log entry for all requests to the CDN, regardless of whether it is a CDN hit, pass, or miss. However,  WAF rules appear in the log entry only for requests to the CDN that are considered CDN misses or passes, but not CDN hits.
+As noted earlier, WAF rule matches only appear in CDN logs for CDN misses and passes, not hits.
 
 The example below shows a sample `cdn.yaml` and two CDN log entries:
 
@@ -557,215 +582,15 @@ Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-ELK-To
 
 [See the tutorial](#tutorial) for concrete instructions on how to use the dashboard tooling.
 
-## Tutorial {#tutorial}
+## Recommended starter rules {#recommended-starter-rules}
 
-Adobe provides a mechanism to download dashboard tooling onto your computer to ingest CDN logs downloaded via Cloud Manager. With this tooling, you can analyze your traffic to help come up with the appropriate traffic filter rules to declare, including WAF rules. This section first provides some instructions to gain familiarity with the dashboard tooling on a dev environment, followed by guidance on how to leverage that knowledge to create rules on a prod environment.
-
-Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) GitHub repository.
-
-
-### Getting familiar with the dashboard tooling {#dashboard-getting-familiar}
-
-1. Create a Cloud Manager non-production configuration pipeline, associated with a dev environment. First select the **Deployment Pipeline** option. Then select **Targeted Deployment**, Config, your repository, the git branch, and set the code location to /config.
-
-    ![Add non-production pipeline select deployment](/help/security/assets/waf-select-pipeline1.png)
-
-    ![Add non-production pipeline select targeted](/help/security/assets/waf-select-pipeline2.png)
-
-    [Please see this document for details on setting up non-production pipelines.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-
-1. In your workspace, create a folder config at the root level and add a file named `cdn.yaml`, where you'll declare a simple rule, setting it in log mode rather than in blocking mode.
+You can copy the recommended rules below into your `cdn.yaml` to get started. Start in log mode, analyze your traffic, and when satisfied, change to block mode. You may wish to modify the rules based on the unique characteristics of your website's live traffic.
 
 ```
 kind: "CDN"
 version: "1"
 metadata:
-  envTypes: ["dev"]
-data:
-  trafficFilters:
-    rules:
-    # Log request on simple path
-    - name: log-rule-example
-      when:
-        allOf:
-          - reqProperty: tier
-            matches: "author|publish"
-          - reqProperty: path
-            equals: '/log/me'
-      action: log
-```
-
-1. Commit and push your changes, and  deploy your configuration using the configuration pipeline.
-
-   ![Run configuration pipeline](/help/security/assets/waf-run-pipeline.png)
-
-1. Once your configuration has been deployed, try to access `https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me` using your web browser or with the curl command below. You should be served with a 404 error page since that page doesn't exist.
-
-   ```
-   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
-   ```
-
-1. Download the CDN logs from Cloud Manager and validate that the rules matched as expected, with a rules property matching the rule name:
-
-   ```
-   "rules": "match=log-rule-example"
-   ```
-
-   ![Select Download logs](/help/security/assets/waf-download-logs1.png)
-
-   ![Download logs](/help/security/assets/waf-download-logs2.png)
-
-1. Load the Docker image with the dashboard tooling and follow the README to ingest the CDN logs. As depicted in the following screenshots, select the right time period, the right environment, and the right filters.
-
-   ![Select time from dashboard](/help/security/assets/dashboard-select-time.png)
-
-   ![Select environment from dashboard](/help/security/assets/dashboard-select-env.png)
-
-1. Once the right filters have been applied, you should be able to see a dashboard loaded with the expected data. In the screenshot below, the rule log-rule-example has been triggered 3 times in the last 2 hours, by the same IP located in Ireland, using a web browser and curl.
-
-   ![View dev dashboard data](/help/security/assets/dashboard-see-data-logmode.png)
-   ![View dev dashboard data widgets](/help/security/assets/dashboard-see-data-logmode2.png)
-
-1. Now change the cdn.yaml to put the rule into block mode to ensure that the pages are blocked, as expected. Then commit, push and trigger the configuration pipeline as done earlier.
-
-```
-kind: "CDN"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  trafficFilters:
-    rules:
-    # Log request on simple path
-    - name: log-rule-example
-      when:
-        allOf:
-          - reqProperty: tier
-            matches: "author|publish"
-          - reqProperty: path
-            equals: '/log/me'
-      action: block
-```
-
-1. Once your configuration has been deployed, try to access `https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me` using your web browser or with the curl command below. You should be served with a 406 error page, indicating that the request was blocked.
-
-   ```
-   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
-   ```
-
-1. Once again, download your CDN logs in Cloud Manager (note: It can take up to 5 minutes for the new requests to be exposed in your CDN logs) and import them in the dashboard tooling as we did earlier. Once it is done, refresh your dashboard. As you can see in the screenshot below, requests to `/log/me` are  blocked by our rule.
-
-   ![View prod dashboard data](/help/security/assets/dashboard-see-data-blockmode.png)
-   ![View prod dashboard data](/help/security/assets/dashboard-see-data-blockmode2.png)
-
-1. If you have WAF traffic filters enabled (this will require an additional license after the feature is GA), repeat with a WAF traffic filter rule, in log mode, and deploy the rules.
-
-```
-kind: "CDN"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  trafficFilters:
-    rules:
-      - name: log-waf-flags
-        when:
-          reqProperty: tier
-          matches: "author|publish"
-        action:
-          type: log
-          wafFlags:
-              - SANS
-              - SIGSCI-IP
-              - TORNODE
-              - NOUA
-              - SCANNER
-              - USERAGENT
-              - PRIVATEFILE
-              - ABNORMALPATH
-              - TRAVERSAL
-              - NULLBYTE
-              - BACKDOOR
-              - LOG4J-JNDI
-              - SQLI
-              - XSS
-              - CODEINJECTION
-              - CMDEXE
-              - NO-CONTENT-TYPE
-              - UTF8
-```
-
-1. Use a tool like [nikto](https://github.com/sullo/nikto/tree/master) to generate matching requests. The command below will send around 550 malicious requests in less than 1 minute.
-
-   ```
-   ./nikto.pl -useragent "MyAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXXX-eYYYYY.adobeaemcloud.com
-   ```
-
-1. Download the CDN logs from Cloud Manager (remember that they may take up to 5 minutes to appear) and validate that both the matching declared rules and the WAF flags appear.
-
-   As you can see, several of the requests produced by Nikto are being flagged by the WAF as being malicious. We can see that Nikto tried to exploit CMDEXE, SQLI and NULLBYTE vulnerabilities. If you now change the action from log to block and re-trigger a scan using Nikto, all the requests that were previously flagged will this time get blocked.
-
-   ![View WAF data](/help/security/assets/dashboard-see-data-waf.png)
-
-
-   Note that whenever a request matches any of the WAF flags, those WAF flags will appear, even if not part of the declared rule; this is so you're always aware of potentially new malicious traffic, for which you haven't yet declared matching rules. As an example:
-
-   ```
-   "rules": "match=log-waf-flags,waf=SQLI,action=blocked"
-   ```
-
-1. Repeat with a rule that uses rate limiting, in log mode. As always, commit, push and trigger the configuration pipeline to apply your configuration.
-
-```
-kind: "CDN"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  trafficFilters:
-    rules:
-      - name: limit-requests-client-ip
-        when:
-          reqProperty: tier
-          matches: "author|publish"
-        rateLimit:
-          limit: 10
-          window: 1
-          penalty: 60
-          groupBy:
-            - reqProperty: clientIp
-        action: log
-```
-
-1. Use a tool like [Vegeta](https://github.com/tsenart/vegeta) to generate traffic.
-
-   ```
-   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s | tee results.bin | vegeta report
-   ```
-
-1. After running the tool, you can download CDN logs and ingest them in the dashboard to verify that the rate limiter rule has been triggered
-
-   ![View WAF data](/help/security/assets/waf-dashboard-ratelimiter-1.png)
-
-   ![View WAF data](/help/security/assets/waf-dashboard-ratelimiter-2.png)
-
-   As you can see our rule **limit-requests-client-ip** has been triggered.
-
-   Now that you're familiar with how traffic filter rules work, you can move onto the prod environment.
-
-### Deploying rules to the prod environment {#dashboard-prod-env}
-
-Make sure to initially declare rules in log mode to validate that there are no false positives, which means legitimate traffic that would be incorrectly blocked.
-
-1. Create a production configuration pipeline associated with your production environment.
-
-1. Copy the recommended rules below into your cdn.yaml. You may wish to modify the rules based on the unique characteristics of your website's live traffic. Commit, push and trigger your configuration pipeline. Make sure rules are in log mode.
-
-```
-kind: "CDN"
-version: "1"
-metadata:
-  envTypes: ["dev"]
+  envTypes: ["dev", "stage", "prod"]
 data:
   trafficFilters:
     rules:
@@ -801,7 +626,7 @@ data:
               - CU
               - CI
       action: log
-    # Enable recommended WAF protections (only works if WAF is enabled for your environment)
+    # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
     - name: block-waf-flags-globally
       when:
         reqProperty: tier
@@ -827,7 +652,7 @@ data:
           - CMDEXE
           - NO-CONTENT-TYPE
           - UTF8
-    # Disable protection against CMDEXE on /bin
+    # Disable protection against CMDEXE on /bin (only works if WAF is licensed enabled for your environment)
     - name: allow-cdmexe-on-root-bin
       when:
         allOf:
@@ -841,18 +666,14 @@ data:
           - CMDEXE
 ```
 
-1. Add any additional rules to block malicious traffic that you may be aware of. For example, certain IPs that have been attacking your site.
+## Tutorial {#tutorial}
 
-1. After a few minutes, hours, or days, depending on your site's traffic volume, download CDN logs from Cloud Manager and analyze them with the dashboard.
+[Work through a tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) to gain practical knowledge and experience around traffic filter rules.
 
-1. Here are some considerations:
-    1. Traffic matching declared rules appear in charts and request logs so you can easily check if your declared rules are being triggered.
-    1. Traffic matching WAF flags appear in charts and request logs, even if you didn't log them in a rule. This is so you're always aware of potentially new malicious traffic and can create new rules as needed. Look at WAF flags that are not reflected in the declared rules and consider declaring them.
-    1. For matching rules, inspect the request logs for false positives and see if you can filter them out of the rules. For example, maybe they're a false positive only for certain paths.
+The tutorial walks you through:
 
-1. Set the appropriate rules to block mode and also consider adding additional rules. Perhaps some of the rules should remain in log mode as you analyze further with more traffic.
-
-1. Redeploy the configuration.
-
-1. Iterate, analyzing the dashboards on a frequent basis.
-
+* Setting up the Cloud Manager configuration pipeline
+* Using tools to simulate malicious traffic
+* Declaring traffic filter rules, including WAF rules
+* Analyzing results with dashboard tooling
+* Best practices
