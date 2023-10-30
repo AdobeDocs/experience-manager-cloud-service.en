@@ -132,6 +132,11 @@ You can also simulate the success and error states. Tap the Expand icon to view 
 
 {{see-also}}
 
+
+<!--
+
 >[!MORELIKETHIS]
 >
 >* [Use themes in Adaptive Form Core Components ](/help/forms/using-themes-in-core-components.md)
+
+-->
