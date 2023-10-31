@@ -186,7 +186,7 @@ If there is an issue with AzCopy, the extraction fails immediately, and the extr
 Any blobs that were copied before the error are skipped automatically by AzCopy on subsequent runs, and do not need to be copied again.
 
 >[!TIP]
->An ingestion can now be scheduled to start immediately after an extraction succeeds. See [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) for more information.
+>An ingestion can now be scheduled to start automatically immediately after an extraction succeeds. See [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) for more information.
 
 #### For File Data Store {#file-data-store-extract}
 
