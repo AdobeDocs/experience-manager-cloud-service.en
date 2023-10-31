@@ -7,7 +7,7 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 # Traffic Filter Rules Including WAF Rules {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
->This feature will soon be available on dev environments, with a gradual rollout to stage and prod environments in November. You may request earlier access on stage and prod by emailing **aemcs-waf-adopter@adobe.com**.
+>This feature is now available on dev environments, with a gradual rollout to stage and prod environments later in November. You may request earlier access on stage and prod by emailing **aemcs-waf-adopter@adobe.com**.
 
 Traffic filter rules can be used to block or allow requests at the CDN layer, which may be useful in scenarios such as:
 
@@ -20,6 +20,8 @@ Most of these traffic filter rules are available to all AEM as a Cloud Service S
 A subcategory of traffic filter rules require either an Enhanced Security license or WAF-DDoS Protection license, and will be available later this year. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
 
 Traffic filter rules can be deployed via Cloud Manager configuration pipelines to dev, stage, and production environment types in production (non-sandbox) programs. Support for RDEs will come in the future.
+
+[Follow through a tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) to quickly build concrete expertise on this feature.
 
 ## How This Article is Organized {#how-organized}
 
