@@ -21,7 +21,10 @@ Follow the steps below to extract your migration set from the Content Transfer T
 
 1. Select a migration set from the **Content Transfer** wizard and click **Extract** to start extraction. 
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png) 
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
+
+   >[!TIP]
+   >An ingestion can now be scheduled to start immediately after an extraction succeeds. See [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) for more information.
 
    >[!IMPORTANT]
    >

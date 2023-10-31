@@ -95,7 +95,7 @@ Migration validation took 33 minutes
 
 This is an example of a validation that has succeeded, since there were no entries missing from the ingestion digest that were present in the extraction digest.
 
-To compare, here is how a validation report would look if validation had failed:
+To compare, here is how a validation report would look if validation had failed (or if a top-up migration was performed):
 
 ```
 Beginning publish migration validation. Migration job id=[ac217e5a-a08d-4e81-cbd6-f39f88b174ce]
