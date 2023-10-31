@@ -165,7 +165,7 @@ When you migrate AEM Workflow models from AEM Forms 6.5 to Cloud Service, specif
 The migration utility helps you to migrate Adaptive Forms based on foundation components. In addition, Forms as a Cloud Service supports Adaptive Forms Core Components. So, you can:
 
 * [Create Core Component based standalone Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)
-* [Create Core component based Adaptive Form directly in an AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Create Core Component based Adaptive Form directly in an AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 To learn more about AEM Forms as a Cloud Service, you can refer:
 
