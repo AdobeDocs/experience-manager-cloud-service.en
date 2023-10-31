@@ -542,6 +542,10 @@ user-guide-title: AEM as a Cloud Service
 
    + Integration with Adobe Express {#integration-adobe-express}
       + [AEM Assets add-on for Adobe Express](/help/assets/addon-adobe-express.md)    
+
+  + Integration with Creative Cloud {#integration-creative-cloud}
+      + [Connect AEM Assets to Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)  
+      
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
