@@ -429,7 +429,6 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 ## See Also {#see-also}
 
 {{see-also}}
-
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
