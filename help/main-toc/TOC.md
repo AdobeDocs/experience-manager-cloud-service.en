@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.9.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-9-0.md)
       + [Release Notes for 2023.8.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-8-0.md)
       + [Release Notes for 2023.7.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-7-0.md)
       + [Release Notes for 2023.6.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-6-0.md)
@@ -541,6 +542,10 @@ user-guide-title: AEM as a Cloud Service
 
    + Integration with Adobe Express {#integration-adobe-express}
       + [AEM Assets add-on for Adobe Express](/help/assets/addon-adobe-express.md)    
+
+  + Integration with Creative Cloud {#integration-creative-cloud}
+      + [Connect AEM Assets to Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)  
+      
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
@@ -586,6 +591,7 @@ user-guide-title: AEM as a Cloud Service
         + [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
         + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
+        + [Create an Adaptive Form template based on Core Components](/help/forms/template-editor-core-components.md)
         + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
         + [Use machine translation or human translation to translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
         + [Configuring redirect page or thank you message](/help/forms/configure-redirect-page-or-thank-you-message.md)
