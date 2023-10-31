@@ -1,17 +1,17 @@
 ---
-title: How to configure Unified Storage Connector for AEM Forms?
-description: Learn how to manage Unified Storage Connector for AEM Forms. Use the Unified Storage Connector to connect AEM Forms to external data storages.
+title: How to configure Unified Storage Connector (USC) for AEM Forms?
+description: Learn how to manage Unified Storage Connector (USC) for AEM Forms. Use the Unified Storage Connector (USC) to connect AEM Forms to external data storages.
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
 ---
-# Manage Unified Storage Connector for AEM Forms {#manage-unified-storage-connector}
+# Manage Unified Storage Connector (USC) for AEM Forms {#manage-unified-storage-connector}
 
-You can use Unified Storage Connector to connect AEM Forms to external data storages. 
+You can use Unified Storage Connector (USC) to connect AEM Forms to external data storages. 
 
-For example, you can fill values for fields in an adaptive form and submit it to an AEM Workflow. You can further configure AEM Workflows to store data in an external storage, such as the Microsoft Azure storage server. Use the Unified Storage Connector to create a connection between AEM Workflows and the external storage.
+For example, you can fill values for fields in an adaptive form and submit it to an AEM Workflow. You can further configure AEM Workflows to store data in an external storage, such as the Microsoft Azure storage server. Use the Unified Storage Connector (USC) to create a connection between AEM Workflows and the external storage.
 
 ## Connect AEM Workflows with a Microsoft Azure storage server {#connect-workflows-with-azure}
 
-Create an Azure storage configuration and refer to that configuration using the Unified Storage Connector. You can then configure AEM Workflow models to externalize the data storage to connect them to an Azure storage server. 
+Create an Azure storage configuration and refer to that configuration using the Unified Storage Connector (USC). You can then configure AEM Workflow models to externalize the data storage to connect them to an Azure storage server. 
 
 ### Create [!DNL Azure] storage configuration {#create-azure-storage-configuration}
 
@@ -25,9 +25,9 @@ Perform the following steps to create an [!DNL Azure] storage configuration:
 1. Specify the name of the [!DNL Azure] storage account in the **[!UICONTROL Azure Storage Account]** field.
 1. Specify the key to access Azure storage account in the **[!UICONTROL Azure Access Key]** field and tap **[!UICONTROL Save]**.
 
-### Configure Unified Storage Connector for AEM Workflows {#configure-unified-storage-connector-workflows}
+### Configure Unified Storage Connector (USC) for AEM Workflows {#configure-unified-storage-connector-workflows}
 
-Perform the following steps to configure Unified Storage Connector for AEM Workflows:
+Perform the following steps to configure Unified Storage Connector (USC) for AEM Workflows:
 
 1. Navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Unified Storage Connector]**.
 

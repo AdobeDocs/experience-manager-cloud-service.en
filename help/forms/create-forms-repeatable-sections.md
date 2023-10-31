@@ -223,6 +223,7 @@ In the following code, the `SampleType`panel uses the minOccours & maxOccurs pro
 
 {{see-also}}
 
+<!--
 
 >[!MORELIKETHIS]
 >
@@ -230,3 +231,5 @@ In the following code, the `SampleType`panel uses the minOccours & maxOccurs pro
 >* [Create style or themes for your forms](using-themes-in-core-components.md)
 >* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
 >* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+-->
