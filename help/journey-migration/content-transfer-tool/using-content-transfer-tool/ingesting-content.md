@@ -27,7 +27,9 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
 
    * **Migration Set:** Select the migration set that contains the extracted data as the Source.
      * Migration Sets will expire after a prolonged period of inactivity, so it is expected that the ingestion occurs relatively soon after the extraction has been performed. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
-     * [!TIP] If the extraction is currently running, the dialog will indicate it. The ingestion will wait for the extraction's successful completion and will start normally at that time. If the extraction fails or is stopped, the ingestion job will be rescinded.
+   
+   >[!TIP]
+   > If the extraction is currently running, the dialog will indicate it. The ingestion will wait for the extraction's successful completion and will start normally at that time. If the extraction fails or is stopped, the ingestion job will be rescinded.
 
    * **Destination:** Select the destination environment. This environment is where the content of the migration set is ingested.
      * Ingestions do not support a Rapid Development Environment (RDE) destination, and they do not appear as a possible destination choice, even if the user has access to it.
