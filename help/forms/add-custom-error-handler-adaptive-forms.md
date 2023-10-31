@@ -403,8 +403,7 @@ Using this custom error handler, the adaptive form converts the fields listed in
 ## See Also {#see-also}
 
 {{see-also}}
-
->* [Create and use custom error handlers in Adaptive Forms (Core Components)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+* [Create and use custom error handlers in Adaptive Forms (Core Components)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
 
 <!--
 
