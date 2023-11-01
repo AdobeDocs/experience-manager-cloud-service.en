@@ -144,7 +144,7 @@ Many properties are self-explanatory, for certain properties additional details 
   >If models created in earlier versions of AEM contain illegal characters, remove or update those characters.
 
 * **Render As**
-  The various options for realizing/rendering the field in a fragment. Often this property lets you  define whether the author sees a single instance of the field, or is allowed to create multiple instances.
+  The various options for realizing/rendering the field in a fragment. Often this property lets you define whether the author sees a single instance of the field, or is allowed to create multiple instances. When **Multiple Field** is used you can define the minimum and maximum number of items - see [Validation](#validation) for further details. 
 
 * **Field Label**
   Entering a **Field Label** will autogenerate a **Property Name**, which can then be manually updated if required.
