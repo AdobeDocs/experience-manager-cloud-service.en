@@ -250,7 +250,15 @@ Various data types now include the possibility to define validation requirements
   * Only images within a predefined range of width and/or height (in pixels) can be referenced. 
 * **Fragment Reference**
   * Test for a specific Content Fragment model.
+* **Min Number of Items** / **Max Number of Items**
 
+  Fields that have been defined as a **Multiple Field** (set with **Render As**) have the options:
+
+  * **Min Number of Items**
+  * **Max Number of Items**
+
+  These are validated in the [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
+  
 ## Using References to form Nested Content {#using-references-to-form-nested-content}
 
 Content Fragments can form nested content, using either of the following data types:
