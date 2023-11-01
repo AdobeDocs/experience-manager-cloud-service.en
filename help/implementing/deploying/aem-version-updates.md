@@ -24,15 +24,17 @@ Before your instances are automatically updated, a new AEM Maintenance release i
 
 There are two types of AEM version updates:
 
-* **AEM Maintenance Updates**
+* [**AEM Maintenance Updates**](/help/release-notes/maintenance/latest.md)
 
-  * They can be released daily.
   * They are mostly for maintenance purposes, including the latest bug-fixes and security updates.
   * It has minimal impact because changes are applied regularly.
 
-* **New Feature Updates**
+* [**New Feature Updates**](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-   * They are released on a [predictable, monthly schedule.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
+   * They are released on a predictable, monthly schedule.
+
+>[!NOTE]
+> Check key dates for monthly releases on the [Experience Manager releases roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) and mark your calendars to prepare yourself for the key activities to get ready for the release.
 
 ## Update Failure {#update-failure}
 
