@@ -105,6 +105,8 @@ You can create nested Adaptive Form fragments, which means you can drag-drop a f
 
 You can use a none-based as well as schema-based form fragment multiple times in an Adaptive Form to save data uniquely for each form fragments fields. For example, you can use an address form fragment to collect address details for permanent, communication, and present living addresses in a loan application form. 
 
+![using multiple fragment in adaptive form](/help/forms/assets/using-multiple-fragment-af.gif)
+
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 
 When you create an Adaptive Form fragment using an XFA form template or XSD complex type and drag-drop the fragment to an Adaptive Form, the XFA fragment or the XSD complex type is automatically replaced by the corresponding Adaptive Form fragment whose fragment model root is mapped to the XFA fragment or XSD complex Type.
