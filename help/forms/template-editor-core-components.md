@@ -276,11 +276,17 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 * Limit the number of templates to match the fundamentally different form types available on the websites
 * Provide the necessary flexibility and configuration capabilities to your custom components used in an template.
 
+<!--
 ## See next
 
 * [Create style or themes for your forms](using-themes-in-core-components.md)
 * [Create an Adaptive Form (core components)](/help/forms/creating-adaptive-form-core-components.md)
 
+-->
+
 ## See Also {#see-also}
 
 {{see-also}}
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Create an Adaptive Form (core components)](/help/forms/creating-adaptive-form-core-components.md)
+
