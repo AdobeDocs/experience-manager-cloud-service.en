@@ -34,6 +34,7 @@ There are two types of AEM version updates:
    * They are released on a predictable, monthly schedule.
 
 >[!NOTE]
+>
 > Check key dates for monthly releases on the [Experience Manager releases roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) and mark your calendars to prepare yourself for the key activities to get ready for the release.
 
 ## Update Failure {#update-failure}
