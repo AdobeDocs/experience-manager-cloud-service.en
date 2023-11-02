@@ -1,6 +1,6 @@
 ---
-title: Design JSON Schema for an Adaptive Form
-description: Learn how to create Adaptive Forms using JSON schema as form model. You can use existing JSON schemas to create Adaptive Forms. Dig deeper with a sample of a JSON schema, pre-configure fields in JSON schema definition, limit acceptable values for an Adaptive Form component, and learn non-supported constructs.
+title: How to design JSON Schema for an Adaptive Form?
+description: Learn to create a JSON schema for an Adaptive Form and create an Adaptive Form based on the schema to produce schema complaint data.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
@@ -766,3 +766,15 @@ You have two options:
 **What should be the extension of the JSON schema file?**
 
 The extension of JSON Schema file must be .schema.json. For example, &lt;filename&gt;.schema.json.
+
+## See Also {#see-also}
+
+{{see-also}}
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Design XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
+
+-->

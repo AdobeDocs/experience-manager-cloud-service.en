@@ -1,11 +1,13 @@
 ---
-title: Add custom error handlers in AEM Adaptive Forms
+title: Add a custom error handlers in Adaptive Forms for AEM Adaptive Forms
+seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms
 description: AEM Forms provides out-of-the-box success and error handlers for a form using the REST endpoint configured to invoke an external service. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 seo-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: Add a custom error handler, add a default error handler, add a error handler in form, use rule editor's invoke service to add a custom error handler, configure rule editor to add a custom error handler , add custom error handler using rule editor
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
+exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 ---
 # Add Custom Error Handlers in AEM Adaptive Forms {#error-handlers-in-adaptive-form}
 
@@ -398,9 +400,16 @@ Using this custom error handler, the adaptive form converts the fields listed in
  -->
 
 
-## See also {#see-also}
+## See Also {#see-also}
 
+{{see-also}}
 * [Create and use custom error handlers in Adaptive Forms (Core Components)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-* [Create a standalone Core Components based Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
-* [Create style or themes for your forms](/help/forms/using-themes-in-core-components.md)
-* [Create or add an Adaptive Form to AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Create style or themes for your forms](/help/forms/using-themes-in-core-components.md)
+>* [Create or add an Adaptive Form to AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+-->

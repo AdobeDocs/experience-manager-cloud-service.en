@@ -1,8 +1,6 @@
 ---
-title: Changing Page Zero content in Designer
-seo-title: Changing Page Zero content in Designer
-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
-seo-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
+title: How to change Page Zero content in Designer?
+description: Change the message displayed on Page Zero of an XFA PDF for non-Adobe PDF viewers.
 uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -42,3 +40,8 @@ Page Zero content is displayed by default when a non-Adobe PDF viewer, such as t
 >[!NOTE]
 >
 >The custom property you just created may not appear properly in the Form Properties dialog when you reopen the form. However, it works fine and the form displays the updated Page Zero message.
+
+>[!MORELIKETHIS]
+>
+>* [Download and install Forms Designer to create Document of Record templates](/help/forms/installing-configuring-designer.md)
+>* [Use Forms Designer to create Document of Record (DoR) templates and form fragments?](/help/forms/use-forms-designer.md)

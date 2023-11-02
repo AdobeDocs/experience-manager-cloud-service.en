@@ -1,7 +1,8 @@
 ---
-title: Forms-centric workflow on OSGi
-description: Use [!DNL AEM Forms] Workflow to automate and rapidly build review and approvals, to start document services
-seo-description: Use [!DNL AEM Forms] Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Adobe Sign signature workflow, and more.
+title: How to use AEM Forms for business process automation (BPM)?
+seo-title: Rapidly build Adaptive Forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
+description: Use AEM Forms Workflow to automate and rapidly build business process workflows. For example, review and approval, PDF Generation, Adobe Sign workflows.
+uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
 ---
 
@@ -263,3 +264,9 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 ### Purge workflow instances {#purge-workflow-instances}
 
 Minimizing the number of workflow instances increases the performance of the workflow engine, so you can regularly purge completed or running workflow instances from the repository. For detailed information see, [Regular Purging of Workflow Instances](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html) purging of workflow instances
+
+
+>[!MORELIKETHIS]
+>
+>* [Use AEM translation workflow to localize Adaptive Forms and Document of Record](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
+>* [Variables in Forms-centric AEM Workflows](/help/forms/variable-in-aem-workflows.md)

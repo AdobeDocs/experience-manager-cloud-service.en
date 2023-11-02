@@ -1,8 +1,6 @@
 ---
-title: Adaptive Form Fragments
-seo-title: Adaptive Form Fragments
-description: Adaptive Forms provides a mechanism to create a form segment, such as a panel or a group of fields, as use it in any Adaptive Form. You can also save an existing panel as fragment.
-seo-description: Adaptive Forms provides a mechanism to create a form segment, such as a panel or a group of fields, as use it in any Adaptive Form. You can also save an existing panel as fragment.
+title: How to create and use Adaptive Form Fragments?
+description: Form fragment is a modular and reusable component of a form. Learn to build form fragments and reuse them across forms for efficient form assembly.
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -11,7 +9,8 @@ docset: aem65
 
 ---
 
-# Adaptive Form Fragments {#adaptive-form-fragments}
+# Create and use Adaptive Forms Fragments in an Adaptive Form  {#adaptive-form-fragments}
+
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -245,3 +244,7 @@ To localize an Adaptive Form that contains Adaptive Form Fragments, you need to 
 ## Reference Fragments {#reference-fragments}
 
 Reference Adaptive Form Fragments that you can use to create your form are available. For more information, see [Reference Fragments](reference-adaptive-form-fragments.md).
+
+>[!MORELIKETHIS]
+>
+>* [Adaptive Form fragments in Core Components](/help/forms/adaptive-form-fragments-core-components.md)

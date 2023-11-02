@@ -1,6 +1,6 @@
 ---
-title: Generate document of record for Adaptive Forms
-description: Explains how you can generate a template for a Document of Record (DoR) for Adaptive Forms.
+title: How to generate document of record for Adaptive Forms?
+description: Learn to generate a template for a Document of Record (DoR) for Adaptive Forms Core Components.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 ---
 # Generate Document of Record for Adaptive Forms (Core Components)
@@ -398,4 +398,15 @@ Setting of the Document of Record component are available under its properties. 
 **Form level settings**
 
 * **Include unbound fields in DoR:** Setting the property includes unbound fields from Schema based Adaptive Form in Document of Record. By default it is true.
-<!-- **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.->>
+
+## See Also {#see-also}
+
+{{see-also}}
+
+
+<!-- 
+
+**Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
+
+!->>
+

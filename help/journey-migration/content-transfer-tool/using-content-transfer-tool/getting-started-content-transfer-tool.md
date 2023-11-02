@@ -80,7 +80,7 @@ The following section applies to the new version of the Content Transfer Tool. F
 
    >[!NOTE]
    >
-   >A maximum of five migration sets, including expired sets, can be created per project in Cloud Acceleration Manager.
+   >A maximum of twenty migration sets, including expired sets, can be created per project in Cloud Acceleration Manager.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 

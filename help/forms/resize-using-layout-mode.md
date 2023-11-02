@@ -1,6 +1,6 @@
 ---
-title: Use Layout Mode to Resize Components for Adaptive Forms
-description: Define the position of components using the responsive grid available in Layout mode. Learn how to access Layout mode, resize components, resize panels, define multicolumn layout for a panel, enable the new responsive grid for old responsive layouts, and disable Layout mode for forms with old responsive layout.
+title: How do I use layout mode to resize components for adaptive forms?
+description: Define the position of AEM Forms components, learn to access layout mode, resize components, resize panels and define multicolumn layout for a panel.
 feature: Adaptive Forms
 role: User
 level: Intermediate
@@ -125,3 +125,7 @@ Perform the following steps to disable the Layout mode:
 
 1. Tap the **[!UICONTROL Layout Settings]** tab and select **[!UICONTROL Disable Layout Mode]**. 
 1. Tap ![Save changes](assets/save_icon.svg) to save the template properties.
+
+## See Also {#see-also}
+
+{{see-also}}

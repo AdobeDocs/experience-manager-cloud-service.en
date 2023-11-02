@@ -1,17 +1,17 @@
 ---
-title: Use Form-centric AEM workflows to automate business processes
+title: Which workflow steps are available for on AEM Forms Cloud Service to create a workflow or for business process automation (BPM)?
 description: Forms-centric workflows allow you to rapidly build Adaptive Forms-based workflows. You can use Adobe Sign to e-sign documents, create forms-based business processes, retrieve and send data to multiple data sources, and send email notifications
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
+keywords: Use AEM workflows, using assign task steps, convert to PDF/A step, Generate document of recored step, use workflows, Sign document step, Genertae printed output step, Generate non interactive PDF output
 ---
-# Use Forms-centric AEM Workflows - Step Reference to automate business processes{#forms-centric-workflow-on-osgi-step-reference}
+
+# Use Forms-centric AEM Workflows - Step Reference to automate business processes {#forms-centric-workflow-on-osgi-step-reference}
 
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html)                  |
 | AEM as a Cloud Service     | This article            |
-
-<span class="preview"> Singer roles, Audit trail, and Government-ID based authentication options in the [Sign Document step](#sign-document-step) are pre-release features and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 You use workflow models . A model helps you define and execute a series of steps. You can also define model properties, such as whether the workflow is transient or uses multiple resources. You can [include various AEM Workflow steps in a model to achieve the business logic](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). 
 
@@ -35,7 +35,6 @@ Forms-centric workflow steps perform AEM Forms-specific operations in an AEM Wor
 >
 >If the workflow model is marked for an external storage, then for all the Forms Workflow steps, you can select only the variable option to store or retrieve data files and attachments.
  
-
 ## Assign task step {#assign-task-step}
 
 The assign task step creates a work item and assigns it to a user or group. Along with assigning the task, the component also specifies the Adaptive Form or non-interactive PDF for the task. The Adaptive Form is required to accept input from users and non-interactive PDF or a read-only Adaptive Form is used for review only workflows.
@@ -374,8 +373,6 @@ The Invoke Form Data Model Service step has the below listed fields to facilitat
 
 ## Sign Document step {#sign-document-step}
 
-<span class="preview"> Singer roles, Audit trail, and Government-ID based authentication option in the Adobe Sign step are pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 The Sign Document step enables you to use [!DNL Adobe Sign] to sign documents. When you use the [!DNL Adobe Sign] Workflow step to Sign an Adaptive Form, the form can be passed across recipients one after another or can be sent to all the recipients simultaneously, depending on the configuration of the workflow step. [!DNL Adobe Sign] enabled Adaptive Forms are submitted to Experience Manager Forms Server, only after all the recipients complete the signing process.
 
 By default, the [!DNL Adobe Sign] Scheduler service checks (polls) recipient response after every 24 hours. You can [change the default interval for your environment](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status). 
@@ -586,3 +583,17 @@ The Generate Printed Output step has the following properties:
 * **Linearized PDF**: Specifies whether to optimize the generated PDF for web viewing.
 * **Tagged PDF**: Specifies whether to make the generated PDF accessible.
 * **XCI document**: Specifies the path to the XCI file.
+
+## See Also {#see-also}
+
+* [Variables in Forms-centric AEM Workflows](/help/forms/variable-in-aem-workflows.md)
+* [Configure Out of Office setting](/help/forms/configure-out-of-office-settings.md)
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Forms-centric workflow on OSGi](/help/forms/aem-forms-workflow.md)
+>* [Use AEM translation workflow to localize Adaptive Forms and Document of Record](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
+
+-->

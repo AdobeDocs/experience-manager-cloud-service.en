@@ -1,8 +1,8 @@
 ---
-title: Import or Export Adaptive Forms and AEM Forms assets
-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance. 
-seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance. 
+title: How to import, export, and organize Adaptive Forms or PDF forms on an AEM Forms instance?
+description: Learn to migrate Adaptive Forms, PDF forms, themes, and other supporting assets, to and from an AEM instances.
 topic-tags: forms-manager
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 ---
 # Import or Export Adaptive Forms and AEM Forms assets {#importing-and-exporting-assets-to-aem-forms}
 
@@ -218,3 +218,7 @@ On the side panel, you can use the following to narrow down your search results:
 The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html). -->
+
+>[!MORELIKETHIS]
+>
+>* [Use themes in Adaptive Form Core Components ](/help/forms/using-themes-in-core-components.md)

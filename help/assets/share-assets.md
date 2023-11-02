@@ -15,7 +15,7 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 
 [!DNL Adobe Experience Manager Assets] lets you share assets, folders, and collections with members of your organization and external entities, including partners and vendors. Use the following methods to share assets from [!DNL Experience Manager Assets] as a [!DNL Cloud Service]:
 
-* [Share as a link](#sharelink).
+* [Share as a link](#sharelink)
 * [Download assets](/help/assets/download-assets-from-aem.md) and share separately.
 * Share using [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
 * Share using [[!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).

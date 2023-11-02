@@ -3,9 +3,12 @@ title: Authoring Environment and Tools
 description: The authoring environment of AEM provides various mechanisms for organizing and editing your content
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 ---
+
 # Authoring Environment and Tools {#authoring-the-environment-and-tools}
 
 The authoring environment of AEM provides various mechanisms for organizing and editing your content. The tools provided are accessed from the various consoles and page editors.
+
+{{edge-delivery-authoring}}
 
 ## Managing your Site {#managing-your-site}
 
@@ -215,7 +218,10 @@ Open the required console, then navigate to the required resource and open **Ref
 
 Select the appropriate reference type for more information. In certain situations further actions are available when you select a specific reference, including:
 
-* **Incoming Links**, provides a list of pages that reference the page, together with direct access to **Edit** one of those pages when you select a specific link
+* **Incoming Links**, provides a list of pages that reference the page, together with direct access to **Edit** one of those pages when you select a specific link.
+
+  * This can only show static links, not dynamically generated links; for example from the List component.
+
 * Instances of borrowed and lent content using the **Reference** component, from here you can navigate to the referencing/referenced page
 * [Launches](/help/sites-cloud/authoring/launches/overview.md), provides access to related launches
 * [Live Copies](/help/sites-cloud/administering/msm/overview.md) displays the paths of all live copies that are based on the selected resource.
