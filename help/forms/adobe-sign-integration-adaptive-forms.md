@@ -204,11 +204,7 @@ The representative generates and shares credentials with you. In the next sectio
       > * It is recommended not to change URLs of the **[!UICONTROL OAuth URL]** and **[!UICONTROL Access token URL]**
       > * Keep the **Create Adobe Acrobat Sign Configuration** page open. Do not close it. You can retrieve **Client Id** and **Client Secret** after configuring OAuth settings for the [!DNL Adobe Acrobat Sign] application as described in upcoming steps.
       > * Go to **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** to get information related to the shard for the [!DNL Adobe Acrobat Sign] application from your [!DNL Adobe Acrobat Sign] developer account.
-
-1.  The **[!UICONTROL OAuth URL]** field includes the Adobe Sign database shard. The field contains the default URL. Do not change the URL. 
-
-1. The **[!UICONTROL Access token URL]** field includes the Adobe Sign database shard. The field contains the default URL. Do not change the URL. 
-
+ 
 1.  Use the credentials shared by  Adobe Acrobat Sign for Government Solution representative ([Adobe Professional Services team member]) in the previous section as [**[!UICONTROL Client ID]** and **[!UICONTROL Client Secret]**].  
 
 1.  Select the **[!UICONTROL Enable Adobe Acrobat Sign for attachments]** option to append files attached to an Adaptive Form to the corresponding [!DNL Adobe Acrobat Sign] document sent for signing.
