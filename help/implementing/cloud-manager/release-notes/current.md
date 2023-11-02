@@ -21,9 +21,6 @@ The release date for Cloud Manager release 2023.11.0 in AEM as a Cloud Service i
 
 * Web Application Firewall-DDOS protection (WAF-DDOS) is now available for purchase as part of your AEM as a Cloud Service entitlements and [can be configured in a self-service manner.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 * Specialized [Config Deployment Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pipelines are now available to configure environment settings, maintenance tasks, CDN rules, and more within minutes.
-* [A new self-service content restore feature](/help/operations/restore.md) now provides backup restoration for up to seven days featuring:
-  * Point-in-time backup restoration for the previous 24 hours
-  * Fixed time restorations for up to seven days
 * [The pipeline execution details page](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) will now show all the steps in a pipeline execution with the ones not yet started grayed out.
 * On both **[Activity](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** and **[Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** pages, a summary of the pipeline execution is now available when clicking on a pipeline with a running status.
 * A new **Duration** section has been added to the [pipeline details page](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) that includes the average duration for the pipeline step based on the historical trend for that program.
