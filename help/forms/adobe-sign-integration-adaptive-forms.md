@@ -81,7 +81,7 @@ After prerequisites are in place, perform the following steps to configure [!DNL
    
       >[!NOTE]
       >
-      >* It is recommended not to change URLs of the **[!UICONTROL OAuth URL]** and **[!UICONTROL Access token URL]**. 
+      >* It is recommended not to change URLs of **[!UICONTROL OAuth URL]** and **[!UICONTROL Access token URL]**. 
       >* Keep the **Create Adobe Acrobat Sign Configuration** page open. Do not close it. You can retrieve **Client Id** and **Client Secret** after configuring OAuth settings for the [!DNL Adobe Acrobat Sign] application as described in upcoming steps.
       > * Navigate to **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** to access information related to the shard for the [!DNL Adobe Acrobat Sign] application from your [!DNL Adobe Acrobat Sign] developer account.
 
