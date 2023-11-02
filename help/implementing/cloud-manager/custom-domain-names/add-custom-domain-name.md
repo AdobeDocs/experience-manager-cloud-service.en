@@ -60,6 +60,11 @@ See [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom
 >
 >See [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) to learn more about TXT records.
 
+>[!TIP]
+>
+>Review the following aricle on the need to[Add a CNAME or A Record next](/help/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.md) , to avoid doubling effort when adding DNS-records to your custom-domain.
+>The TXT entry and the CNAME or A Record can be set simultaniously in the governing DNS Server.
+
 ## Adding a Custom Domain Name from Environments page {#adding-cdn-environments}
 
 Follow these steps to add a custom domain name from the **Environments** page.
