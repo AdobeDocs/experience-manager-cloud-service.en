@@ -3,6 +3,7 @@ title: Basic Handling
 description: Get comfortable with navigating AEM and its basic usage
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 ---
+
 # Basic Handling {#basic-handling}
 
 This document is designed to give an overview of basic handling when using the AEM author environment. It uses the **Sites** console as a basis.
@@ -11,6 +12,8 @@ This document is designed to give an overview of basic handling when using the A
 >
 >* Some functionality is not available in all consoles and additional functionality may be available in some consoles. Specific information about the individual consoles and their related functionality are covered in more detail on other pages.
 >* Keyboard shortcuts are available throughout AEM. In particular when [using consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) and [editing pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+
+{{edge-delivery-authoring}}
 
 ## A Touch-Enabled UI {#a-touch-enabled-ui}
 

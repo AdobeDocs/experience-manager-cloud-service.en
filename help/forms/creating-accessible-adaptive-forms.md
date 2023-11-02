@@ -1,8 +1,6 @@
 ---
-title: Creating accessible Adaptive Forms
-seo-title: Creating accessible Adaptive Forms
-description: AEM Forms provides you tools and to create accessible Adaptive Forms and helps comply with accessibility standards.
-seo-description: AEM Forms provides you tools and to create accessible Adaptive Forms and helps comply with accessibility standards.
+title: How to create accessible Adaptive Forms?
+description: AEM Forms provides you tools to create accessible Adaptive Forms and helps comply with accessibility standards.
 uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author

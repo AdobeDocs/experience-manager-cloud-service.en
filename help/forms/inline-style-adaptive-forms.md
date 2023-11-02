@@ -1,6 +1,6 @@
 ---
 title: How to Apply Inline Styles to Adaptive Form Components?
-description: While you can apply custom styles on an Adaptive Form, you can also apply inline CSS properties on individual components of an Adaptive Form. Learn how to apply inline styles to Adaptive Form components. Dig deeper using an example to apply inline style to a text field component.
+description: Learn to apply custom styles on an Adaptive Form, you can also apply inline CSS properties on individual components of an Adaptive Form.
 feature: Adaptive Forms
 role: User
 level: Intermediate
@@ -126,3 +126,17 @@ To define styling for a state of a component:
 You can also simulate the success and error states. Tap the Expand icon to view the **[!UICONTROL Simulate Success]** and **[!UICONTROL Simulate Error]** options.
 
 ![Simulate states](assets/simulate-states.png)
+
+
+## See Also {#see-also}
+
+{{see-also}}
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Use themes in Adaptive Form Core Components ](/help/forms/using-themes-in-core-components.md)
+
+-->

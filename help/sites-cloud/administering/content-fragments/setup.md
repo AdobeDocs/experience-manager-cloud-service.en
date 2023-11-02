@@ -3,8 +3,8 @@ title: Content Fragments - Setup
 description: Learn how to enable Content Fragment and GraphQL functionality to use AEM headless delivery features.
 feature: Content Fragments
 role: Developer, Architect
+exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 ---
-
 # Content Fragments - Setup {#content-fragments-setup}
 
 Content Fragments within Adobe Experience Manager (AEM) as a Cloud Service allow you to prepare content ready for use in multiple locations, and over multiple channels. This is ideal for headless delivery, and page authoring.

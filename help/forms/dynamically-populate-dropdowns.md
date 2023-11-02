@@ -1,15 +1,10 @@
 ---
-title: Dynamically populating drop-down lists
-seo-title: Dynamically populating drop-down lists
-description: Procedure to dynamically populate drop-down lists based on some logic
-seo-description: Procedure to dynamically populate drop-down lists based on some logic
+title: How to dynamically populate drop-down lists?
+description: Learn to create a cascading list box or dynamically populate drop-down lists.
 uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
-docset: aem65
-
 ---
 
 # Dynamically populating drop-down lists {#dynamically-populating-drop-down-lists}
@@ -171,3 +166,8 @@ Consider a scenario where you want to populate the **State** drop-down list base
 The Content package that contains a sample Adaptive Form (demo/AFdemo) with the above code implemented.
 
 [Get File](assets/dropdown-demo-content-1.0.1-snapshot.zip)
+
+
+>[!MORELIKETHIS]
+>
+>* [Prefill Adaptive Form fields](/help/forms/prepopulate-adaptive-form-fields.md)

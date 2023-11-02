@@ -1,6 +1,6 @@
 ---
-title: Considerations known issues, and best practices
-description: Communications best practices, known issues, and limitations
+title: What are considerations, known issues, and best practices in AEM Forms?
+description: Considerations known issues and best practices for AEM Forms Communication APIs.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 ---
 # Considerations known issues, and best practices {#best-practices-known-issues-and-limitations}
@@ -199,4 +199,12 @@ In comparison to on-premise environment,  the Cloud Service provides additional 
 **Where is data hosted?** -->
 
 **Can I run multiple batch operations simultaneously?**
-Yes, you can run multiple batch operations simuntabously. Always use different source and destination folders for every operation to avoid any conflicts.
+Yes, you can run multiple batch operations simultaneously. Always use different source and destination folders for every operation to avoid any conflicts.
+
+>[!MORELIKETHIS]
+>
+>* [Introduction to AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+

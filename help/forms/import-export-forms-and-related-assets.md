@@ -1,8 +1,6 @@
 ---
-title: Import and export assets 
-seo-title: Import and export assets to [!DNL AEM Forms]
-description: You can import and export Adaptive Forms and related assets to an AEM instances. This helps in migrating forms or moving them across systems.
-seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
+title: How to import and export assets to [!DNL AEM Forms]?
+description: Learn how to use DocuSign with an Adaptive Form to collect e-signatures.
 ---
 
 # Import and export assets {#importing-and-exporting-assets-to-aem-forms}
@@ -238,3 +236,8 @@ The side panel also lets you save your search settings with names of your choice
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).
 
 -->
+
+>[!MORELIKETHIS]
+>
+>* [Import export form templates](/help/forms/import-export-forms-templates.md)
+>* [Use themes in Adaptive Form Core Components ](/help/forms/using-themes-in-core-components.md)

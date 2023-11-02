@@ -1,6 +1,5 @@
 ---
-title: Layout capabilities of Adaptive Forms
-seo-title: Layout capabilities of Adaptive Forms
+title: What are the layout capabilities of Adaptive Forms?
 description: Layout and appearances of Adaptive Forms on various devices are governed by the layout settings. Understand the various layouts and how to apply them.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 ---
@@ -110,6 +109,11 @@ This layout, as the name suggests, shows only the navigation menu and navigation
 
 ![Mobile layouts without panel titles in the form headers](assets/mobile-layout2.png)
 
+## See Also {#see-also}
+
+{{see-also}}
+
+
 <!-- ## Toolbar layouts {#toolbar-layouts}
 
 A Toolbar Layout controls positioning and display of any action buttons that you add to your Adaptive Forms. The layout can be added at a form level or at a panel level.
@@ -141,3 +145,5 @@ For the Mobile layout, you can add action buttons using icons.
 ![Mobile fixed layout for toolbar](assets/toolbar_layout_mobile_fixed.png)
 
 Mobile fixed layout for toolbar-->
+
+

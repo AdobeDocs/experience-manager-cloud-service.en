@@ -1,7 +1,10 @@
 ---
-title: E-sign a form using scribble signatures
-description: Effortlessly E-sign Adaptive Forms using Scribble Signature & Signature Step. Streamline digital signing for enhanced efficiency.
+title: How do I apply e-signatures to a form using scribble signatures?
+description: Learn to apply electronic signatures to a form using scribble signatures.
+uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
+products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
+exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 ---
 # E-sign a form using scribble signatures{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
@@ -88,3 +91,7 @@ You can tap the **Configure** ![configure icon](assets/configure.png) icon to se
    ![Complete the signing process](assets/scribblecomplete.jpg)
 
 The signatures are added to the form and the form control moves to the next panel.
+
+## See Also {#see-also}
+
+{{see-also}}

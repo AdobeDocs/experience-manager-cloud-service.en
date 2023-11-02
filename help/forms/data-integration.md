@@ -1,6 +1,7 @@
 ---
-title: Connect AEM Forms to a database
-description: You can retrieve and save data to a RESTful web services, SOAP-based web services, and OData services from [!DNL AEM Forms] as a Cloud Service. The service provides a dedicated tool to retrieve, test, validate, and send data to various types of data sources.
+title: How to connect a database to [!DNL AEM Forms] as a Cloud Service? 
+description: Retrieve and save data to RESTful web services, SOAP-based web services, and OData services from an Adaptive Form or an AEM Workflow.
+exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
 ---
 # Connect AEM Forms to a database {#aem-forms-data-integration}
 
@@ -10,11 +11,12 @@ description: You can retrieve and save data to a RESTful web services, SOAP-base
 | AEM as a Cloud Service     | This article        |
 
 
+
  ![Data Integration](do-not-localize/data-integeration.png)
 
 Enterprise infrastructures include disparate back-end systems or data sources like databases, web services, REST services, OData services, and CRM solutions. Put together, they make an information system that serves data to enterprise applications to perform day-to-day business. On the other hand, applications capture data and send it back to update data sources.
 
-[!DNL AEM Forms] applications like Adaptive Forms and interactive communications require integration with data sources to fetch customer data while rendering forms and creating interactive communications. There are use cases when data is fetched from data sources based on user inputs in Adaptive Forms. In addition, the submitted Adaptive Form data can be written back to update the respective data sources.
+When you connect Adaptive Form to a Database, it requires integration with data sources to fetch customer data while rendering forms. There are use cases when data is fetched from data sources based on user inputs in Adaptive Forms. In addition, when you send an Adaptive Form to a database, the submitted Adaptive Form data can be written back to update the respective data sources.
 
 While a distributed, modular system has its own benefits, the challenge lies in integrating and creating data associations across data sources. Data integration is the key to a functional and efficient enterprise infrastructure with disparate data sources connected to applications for exchange of business data.
 
@@ -29,20 +31,20 @@ While a distributed, modular system has its own benefits, the challenge lies in 
 * Build associations between data model objects within and across data sources.
 * Invoke data model object services to query or write data to and from data sources.
 
-Once you have created a form data model, you can use it in various Adaptive Form and interactive communications workflows, such as:
+Once you have created a form data model, you can use it to:
 
-* Create Adaptive Forms and interactive communications based on form data model
-* Prefill Adaptive Forms and interactive communications from configured data sources
+* Create Adaptive Forms based on a form data model
+* Prefill Adaptive Forms from configured data sources
 * Invoke data source services/operations using Adaptive Form rules
 * Write submitted Adaptive Form data to data sources
 
 ## Get started with data integration {#get-started-with-data-integration}
 
-The first step to implement data integration is to identify and configure data sources that store information you want to use in Adaptive Forms and interactive communications use cases. Next, you create a Form Data Model that uses data model object, properties, and services from one or more data sources. You can create Adaptive Forms and interactive communications based on a Form Data Model where Adaptive Form fields or placeholders in interactive communications are bound to respective data source properties.
+The first step to implement data integration to send Adaptive Form to a database, is to identify and configure data sources that store information you want to use in Adaptive Forms. Next, you create a Form Data Model that uses data model objects, properties, and services from one or more data sources. You can create Adaptive Forms based on a Form Data Model where Adaptive Form fields are bound to respective data source properties.
 
 [!DNL AEM Forms] also lets you create a Form Data Model independent of data sources and associate or bind data model objects and properties in the Form Data Model with data source later. It eliminates any dependencies on data sources while you work on a form data model.
 
-Review the following to get started, understand, and implement data integration.
+Review the following to get started, understand, and implement data integration:
 
 * [Configure data sources](configure-data-sources.md)
 * [Create form data model](create-form-data-models.md)

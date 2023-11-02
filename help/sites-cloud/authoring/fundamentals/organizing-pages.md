@@ -3,6 +3,7 @@ title: Creating and Organizing Pages
 description: Learn how to organize your website by creating and managing pages with AEM.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 ---
+
 # Creating and Organizing Pages {#creating-and-organizing-pages}
 
 This document describes how to create and manage pages with Adobe Experience Manager Cloud Service so that you can then [create content](/help/sites-cloud/authoring/fundamentals/editing-content.md) on those pages.
@@ -20,6 +21,8 @@ This document describes how to create and manage pages with Adobe Experience Man
 >[!TIP]
 >
 >There are a number of [keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) that you can use from the websites console that make organizing your pages more efficient.
+
+{{edge-delivery-authoring}}
 
 ## Organizing your Website {#organizing-your-website}
 
@@ -364,18 +367,15 @@ AEM offers you the functionality to update any internal links that refer to the 
 
 #### Asynchronous Actions {#asynchronous-actions}
 
-Normally a page move or rename action is carried out immediately. This is considered synchronous processing and further action in the UI is blocked until the action is complete.
+Page move actions are always processed asynchronously, allowing the user to continue authoring in the UI unimpeded.
 
-However, if the number of pages impacted is above a defined limit, the action is processed asynchronously, allowing the user to continue authoring in the UI unimpeded by the page move or rename action.
+* The user must define when the asynchronous operation should be performed
+  * **Now** begins the execution of the asynchronous job immediately.
+  * **Later** allows the user to define when the asynchronous job will start.
 
-* When clicking **Move** in the last step above, AEM checks the configured limit.
-* If the number of pages impacted is below the limit, it performs a synchronous operation.
-* If the number of pages impacted is above the limit, it performs an asynchronous operation.
-  * The user must define when the asynchronous operation should be performed
-    * **Now** begins the execution of the asynchronous job immediately.
-    * **Later** allows the user to define when the asynchronous job will start.
-
-      ![Asynchronous page move](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+<!--
+  ![Asynchronous page move](assets/asynchronous-page-move.png)
+-->
 
 The status of asynchronous jobs can be checked in the [**Async Jobs Status** dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
 
