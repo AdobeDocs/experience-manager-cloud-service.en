@@ -53,6 +53,11 @@ After prerequisites are in place, perform the following steps to configure [!DNL
    
    ![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)
 
+<!--
+
+[create URL](#create-a-redirect-url-for-your-aem-instance)
+ -->
+
 1. Copy the URL present in your current browser window to a notepad and remove the part `/ui#/aem` from the URL. The modified URL is then required to configure [!DNL Adobe Acrobat Sign] application with [!DNL AEM Forms], in a later step. Tap **[!UICONTROL Next]**.
 
 1.  In the **[!UICONTROL Settings]** tab,
@@ -73,14 +78,12 @@ After prerequisites are in place, perform the following steps to configure [!DNL
       where:
    
       **na1** refers to the default database shard. You can modify the value for the database shard. Ensure that  the [!DNL  Adobe Acrobat Sign] Cloud Configurations point to the [correct Shard](https://helpx.adobe.com/sign/using/identify-account-shard.html).
-
-      If you create another [!DNL Adobe Acrobat Sign] configuration for an Adobe Experience Manager feature or component, ensure that all the [!DNL Adobe Acrobat Sign] Cloud Configurations point to the same shard.
    
       >[!NOTE]
       >
-      > * Keep the **Create Adobe Acrobat Sign Configuration** page open. Do not close it. You can retrieve **Client Id** and **Client Secret** after configuring OAuth settings for the [!DNL Adobe Acrobat Sign] application as described in upcoming steps.
-      > * Go to **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** to get information related to the shard for the [!DNL Adobe Acrobat Sign] application from your [!DNL Adobe Acrobat Sign] developer account.
-
+      >* It is recommended not to change URLs of the **[!UICONTROL OAuth URL]** and **[!UICONTROL Access token URL]**. 
+      >* Keep the **Create Adobe Acrobat Sign Configuration** page open. Do not close it. You can retrieve **Client Id** and **Client Secret** after configuring OAuth settings for the [!DNL Adobe Acrobat Sign] application as described in upcoming steps.
+      > * Navigate to **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** to access information related to the shard for the [!DNL Adobe Acrobat Sign] application from your [!DNL Adobe Acrobat Sign] developer account.
 
 1. Configure OAuth settings for the [!DNL Adobe Acrobat Sign] application:
 
@@ -115,6 +118,10 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 1. Repeat all the above steps on your developer, stage, and production instances (whichever left) to complete configuring [!DNL Adobe Acrobat Sign] with [!DNL AEM Forms] for your environment.
 
 Now, you can [use add Adobe Acrobat Sign fields to an Adaptive Form](working-with-adobe-sign.md). Ensure that you add the configuration container used for the Cloud Service to all the Adaptive Forms being enabled for [!DNL Adobe Acrobat Sign]. You can specify a configuration container from the  properties of an Adaptive Form.
+
+>[!NOTE]
+>
+> To configure the Adobe Sign sandbox, you can follow the same configuration steps as explained in [Adobe Sign](#adobe-sign).
 
 ## Connect AEM Forms with Adobe Acrobat Sign Solutions for Government {#adobe-acrobat-sign-for-government}
 
@@ -167,7 +174,7 @@ The representative generates and shares credentials with you. In the next sectio
 
 #### Use the received credentials to connect AEM Forms with Adobe Acrobat Sign Solutions for Government
 
-1.  Open the `re-direct URL` in your browser. You created and noted down the `re-direct URL` in the last step of the [create a redirect URL on your AEM instance](#create-redirect-url) section. 
+1.  Open the `re-direct URL` in your browser. You created and noted down the `re-direct URL` in the last step of the [create a redirect URL on your AEM instance](#create-a-redirect-url-for-your-aem-instance) section. 
 
 1. In the **[!UICONTROL General]** tab of the **[!UICONTROL Create Adobe Sign Configuration]** page, specify a **[!UICONTROL Name]** for the configuration, and tap **[!UICONTROL Next]**. You can optionally specify a **[!UICONTROL Title]** and browse to select a **[!UICONTROL Thumbnail]** for the configuration. Click **[!UICONTROL Next]**. 
 
@@ -196,14 +203,12 @@ The representative generates and shares credentials with you. In the next sectio
       where:
    
       **na1** refers to the default database shard. You can modify the value for the database shard. Ensure that  the [!DNL  Adobe Acrobat Sign] Cloud Configurations point to the [correct Shard](https://helpx.adobe.com/sign/using/identify-account-shard.html).
-
-      If you create another [!DNL Adobe Acrobat Sign] configuration for an Adobe Experience Manager feature or component, ensure that all the [!DNL Adobe Acrobat Sign] Cloud Configurations point to the same shard.
    
       >[!NOTE]
       >
-      > * It is recommended not to change URLs of the **[!UICONTROL OAuth URL]** and **[!UICONTROL Access token URL]**
+      > * It is recommended not to change URLs of the **[!UICONTROL OAuth URL]** and **[!UICONTROL Access token URL]**.
       > * Keep the **Create Adobe Acrobat Sign Configuration** page open. Do not close it. You can retrieve **Client Id** and **Client Secret** after configuring OAuth settings for the [!DNL Adobe Acrobat Sign] application as described in upcoming steps.
-      > * Go to **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** to get information related to the shard for the [!DNL Adobe Acrobat Sign] application from your [!DNL Adobe Acrobat Sign] developer account.
+      > * Navigate to **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** to access information related to the shard for the [!DNL Adobe Acrobat Sign] application from your [!DNL Adobe Acrobat Sign] developer account.
  
 1.  Use the credentials shared by  Adobe Acrobat Sign for Government Solution representative ([Adobe Professional Services team member]) in the previous section as [**[!UICONTROL Client ID]** and **[!UICONTROL Client Secret]**].  
 
