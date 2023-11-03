@@ -11,209 +11,159 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 >abstract="In this tab, you can view the new architecture of AEM as a Cloud Service and understand the changes. AEM has resulted in a dynamic architecture with a variable number of images so it is important to take the time to understand the cloud architecture."
 >additional-url="https://video.tv.adobe.com/v/330542/" text="Architecture Overview"
 
+Adobe Experience Manager (AEM) as a Cloud Service offers a set of composable services for the creation and management of high impact experiences. 
 
-Adobe Experience Manager (AEM) as a Cloud Service has resulted in changes to the architecture.
+This page covers the logical architecture, the service architecture, the system architecture, and the development architecture for AEM as a Cloud Service.
 
-## Scaling {#scaling}
+## Logical architecture {#logical-architecture}
 
-AEM as a Cloud Service now has:
+AEM as a Cloud Service is made up of high-level solutions such as AEM Sites, AEM Assets, and AEM Forms. These services are licensed individually, but can be used in collaboration. Each solution uses a combination of the composable services that AEM as a Cloud Service provides, dependent on their respective use cases.
 
-* A dynamic architecture with a variable number of AEM images.
+### Programs {#programs}
 
-![Dynamic architecture](assets/concepts-01.png "Dynamic architecture")
+AEM applications are materialized in the form of a Program that is created by the customers in the Cloud Manager application, in a self-service manner according to their licensing entitlements. The programs give full control and autonomy for the customers in the way the associated AEM application is named, configured and permissioned in the context of a particular project (link: cloud manager programs)
 
-This architecture:
+A customer is usually known to Adobe as a “tenant”, or sometimes also known as an “IMS” (Identity Management System) organization. A tenant can have as many programs as needed and licensed. For instance, it’s quite usual to see a central program for AEM Assets, while AEM Sites might be used in multiple programs corresponding to multiple online experiences. Note that the AEM Edge Delivery Services are exposed as a top-level solution in Cloud Manager while being part of the other main solutions from a licensing standpoint (e.g. AEM Sites with Edge Delivery Services).
 
-* Is scaled based on the *actual* traffic and *actual* activity.
+A program can be configured to leverage from one to all these high-level solutions. Each can support from one-to-many add-ons itself (e.g., Commerce or Screens for AEM Sites, or Dynamic Media or Brand Portal for AEM Assets). 
 
-* Has individual instances that only run when needed.
+![AEM as a Cloud Service - Programs](assets/architecture-aem-edge-programs.png "AEM as a Cloud Service - Deployment Architecture")
 
-* Uses modular applications.
+### Environments {#environments}
 
-* Has an author cluster as default; this avoids downtime for maintenance tasks.
+Once a program is created with the AEM Sites, AEM Assets or AEM Forms solutions, the associated AEM instances will be represented in the form of AEM environments in this program.
 
-This enables autoscaling for varying usage patterns:
+There are four types of environments available with AEM as a Cloud Service:
 
-![Autoscaling for varying usage patterns](assets/concepts-02.png "Autoscaling for varying usage patterns")
+* Production environment:
 
-To achieve this, all instances of the AEM as a Cloud Service are created equal, each with the same default sizing characteristics in terms of the number of nodes, allocated memory and allocated computing capacity. 
+  * A production environment hosts the applications for the business practitioners and runs the live experiences.
 
-AEM as a Cloud Service:
+* Stage environment:
 
-* Constantly monitors the state of the services.
+  * A stage environment is usually coupled to a production environment in a 1:1 relationship. The stage environment is primarily designed for automated testing before changes to the application are pushed to the production environment, independently from the changes being initiated by Adobe as part of a maintenance update or by customers as part of a code deployment. Manual testing can also be conducted by customer in case of a code deployment. The content of the stage environment is usually kept in sync with the production content using the self-service content copy feature.
+* Development environment:
+  * A development environment allows developers to implement and to test AEM applications under the same runtime conditions as the stage and production environments. The changes are going through a deployment pipeline allowing for the same code quality and security gates as in production deployment pipelines.
+* Rapid development environment (RDE):
+  * An RDE environment allows for rapid development iterations for deploying new or existing code into the RDE instances, without going through a formal deployment pipeline that is found on regular development environments.
 
-* Dynamically scales each of the service instances as per the actual needs; both scaling up or down as appropriate. 
+(link: Cloud Manager, manage environments).
 
-This:
+### Edge Delivery Services {#logical-architecture-edge-delivery-services}
 
-* Is applicable to the number of nodes, the amount of memory and the allocated CPU capacity on each node.
+An AEM program can be configured with the Edge Delivery Services as well. Once done, it allows to reference GitHub code repositories used for building the experiences with Edge Delivery Services. As a result, new configuration options such as setting up the Adobe-Managed CDN, accessing to licensing metrics or the SLA reports becomes available for the associated experiences.
+ 
+## Service architecture {#service-architecture}
 
-* Allows AEM as a Cloud Service to accommodate your traffic patterns as they change.
-
-The scaling of per-tenant instances of the service applies to the two axes:
-
-* Horizontal: the number of nodes for a given service are increased or decreased automatically, still allowing for individual default configurations.
-
-* Vertical: allocated memory and CPU capacity can be scaled up or down via configuration for a fixed number of nodes to address individual requirements as needed.
-
-## Environments {#environments}
-
->[!NOTE]
->For more information, see [Deploying - Runmodes](/help/implementing/deploying/overview.md#runmodes)
-
-AEM as a Cloud Service is made available as individual instances  with each instance representing a complete AEM environment. 
-
-There are three types of environments available with AEM as a Cloud Service:
-
-* **Production environment**: hosts the applications for the business practitioners.
-
-* **Stage environment**: is always coupled to a single production environment in a 1:1 relationship. The stage environment is used for various performance and quality tests before changes to the application are pushed to the production environment.
-
-* **Development environment**: allows developers to implement AEM applications under the same runtime conditions as the stage and production environments.
-
-   See [Managing Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) for more details.
-
-* **Rapid development environment**: allows for rapid development iterations for debugging new or existing code.
-
-## Programs {#programs}
-
-Any new AEM project is always bound to exactly one specific codebase, where you can store both configuration and custom code for your project. This information is stored in a code repository, accessible via the usual Git clients, made available to you at the time new programs are created. 
-
-An AEM program is the container that includes:
-
-| Program Element | Number |
-|--- |--- |
-| Code repository (Git) | 1 |
-| Baseline image (Sites or Assets) | 1 |
-| Stage and production environment set (1:1) | 0 or 1 |
-| Non-production environments (RDE, development or demonstration) | 0 to N |
-| Pipeline for each environment | 0 or 1 |
-
-Two types of programs are initially available for AEM as a Cloud Service:
-
-* AEM Cloud Sites Service
-
-* AEM Cloud Assets Service
-
-Both of these allow access to a number of features and functionalities. The author tier will contain all Sites and Assets functionality for all programs, but the Assets programs will not have a publish tier, nor a preview tier, by default.
-
-## Runtime Architecture {#runtime-architecture}
-
-There are various main components of this new architecture:
+The list of high-level composable services in AEM as a Cloud Service can be represented like this:
 
 ![AEM as a Cloud Service Overview - with Edge Delivery Services](assets/architecture-aem-edge.png "AEM as a Cloud Service Overview - with Edge Delivery Services")
 
-### AEM Sites as a Cloud Service {#aem-sites}
+The lower part of is made of the services allowing for content management, while the upper part if made of services allowing for experience delivery.
 
-For AEM Sites as a Cloud Service:
+For content management, there’s two main set of services allow for the authoring of content, both represented as “content sources”:
 
-* For a traditional configuration (when not using Edge Delivery Services), there continues to be the concept of an authoring tier and a publish tier for each environment (at a high level).
+* The AEM Author tier, providing a web-based interface (with associated APIs) for the management of Web content both in headful (via the page editor or via the universal visual editor) and in headless (via the content fragment editor) ways.
+* The Document-based authoring tier, allowing to leverage standard applications such as Microsoft Word and Excel (via SharePoint), or Google Docs or Sheets (via Google Drive), to author content from these well-known applications.
 
-* With the newer [Edge Delivery Services](/help/edge/overview.md), authoring can *also* use [document-based editing](https://www.hlx.live/docs/authoring) that takes place externally to AEM; for example, in either SharePoint or Google Drive. There is still a preview tier and a publish tier.
+For experience delivery, when using AEM Sites or AEM Forms, there’s also two main sets of services, non-mutually exclusive and operating under a shared Adobe-Managed CDN (content delivery network) as different origins:
 
-* The author tier is made of two or more nodes within a single author cluster. It scales automatically, dependent on the authoring activity.
+* The AEM Publish tier, running a farm of standard AEM publishers and dispatchers, allowing for the dynamic rendering of web pages and API content (e.g., GraphQL) assembled with published content, based on server-side application logic primarily,
+* The Edge Delivery Publish Tier, allowing for the dynamic rendering of web pages and API content from various content sources such as the AEM Author tier or the Document-based authoring tier, based on client-side application logic and designed for maximum performance.
 
-  * Content authors/creators login to the AEM author tier to create, edit, and manage content.
+It’s also worth noting the adjacent services:
 
-  * Logging into the author tier is managed by the Adobe Identity Management Services (IMS).
+* The Edge Delivery Assets Tier, allowing for the delivery of approved and published media items (e.g. images, videos) out of AEM Assets. The media items are usually referenced from experiences running on the AEM publish tier, or the Edge Delivery publish tier, or from any other Adobe Experience Cloud application integrated with AEM Assets
+* The AEM Preview tier and the Edge Delivery Services Preview tier are also available for experiences built with the AEM Publish tier or the Edge Delivery publish tier respectively, allowing content authors to preview content in-context before publish operations. 
 
-  * Assets integration and processing use a dedicated Assets Compute Service.
+>[!NOTE]
+>
+>Assets-only programs do not have a publish tier nor a preview tier by default.
 
-* The preview tier is comprised of a single preview node. This used for quality assurance of content before publishing to the publish tier.
+There are other “adjacent” services to highlight:
 
-* The publish tier is comprised of two or more nodes within a single publish farm.
+* The replication service, situated in between the content management tier and the experience delivery tier, is responsible for processing the “publish” operations issued by content authors and for providing the published content to the publish tiers (AEM or Edge Delivery). It is worth mentioning that the replication service went through a complete redesign compared to the 6.x versions of AEM, as the replication framework from previous versions of AEM is no longer used to publish content. The latest architecture is based on a “publish and subscribe” approach with cloud-based content queues. For the AEM publish tier, it allows a variable number of publishers to subscribe to the publish content and it was essential to achieve true and rapid autoscaling for AEM as a Cloud Service
+* The content repository service, leveraged by the AEM author tier, is a cloud-based instance of a JCR-compliant content repository, implemented by the Apache Oak technology.  The persistence of content is primarily based on blob-based cloud storage.
+* The CI/CD service represents the subset of Cloud Manager functionalities dedicated to managing deployment pipelines to the AEM environments.
+* The testing service represents the underlying infrastructure used to execute functional tests, UI tests (e.g. based on Selenium or Cypress scripts), experience audit tests (e.g. Lighthouse scores), as part of a deployment pipeline to an AEM environment or as part of a GitHub pull request to an Edge Delivery code repository
+* The data service is responsible for exposing customer data both via APIs and within product user interfaces (e.g., Cloud Manager), such as licensing metrics (e.g. Content Requests, Storage, Users) or usage reports (e.g. number of uploads, downloads)
+* The real-user metric (RUM) service is responsible to both collect key metrics from a customer experience (e.g., page views, core web vitals, conversion events) and to respond to associated queries (e.g. top page views for a given domain in the last 7 days)
+* The assets compute service is responsible for processing uploaded images, videos and documents (e.g. PDF or Photoshop files) in order to extract image and video metadata (via Adobe Sensei, e.g descriptive tags or primary color tones) and to generate renditions (e.g. in different sizes or formats), with access to the Adobe Photoshop and Lightroom APIs in this context
+* The identity management service is the central place responsible for managing and authenticating users and user groups for a given Adobe Experience Cloud application (e.g. Cloud Manager or the AEM author tier), accessed via the Adobe Admin Console
+ 
+## System architecture {#system-architecture}
 
-  * The nodes can operate independently from each other.
+### AEM Publish and Author Tiers {#aem-publish-author-tiers}
 
-  * Each node consists of an AEM publisher and a web server equipped with the AEM Dispatcher module.
+The AEM publish and author tiers are implemented as a set of Docker containers, operated by a standard Container Orchestration Service. The resulting containerized architecture means a fully dynamic system with a variable number of pods depending on actual activity (for content management) and actual traffic (for experience delivery): AEM as a Cloud Service accommodates your traffic patterns as they change.
 
-  * It scales automatically with site traffic needs.
+The AEM author tier is operated as a cluster of AEM author pods sharing a single content repository. A minimum of two pods allows for business continuity while maintenance tasks are running or while a deployment process is happening. 
 
-  * By default there is a single publish farm in the primary region, however [additional publish regions](/help/operations/additional-publish-regions.md) may be licensed.
+The AEM publish tier is operated as a farm of AEM publish instances each with their own content repository of published content. Each publisher is coupled to a single Apache instance equipped with the AEM dispatcher module for a materialized view of the content, serving as the origin for the Adobe-managed CDN. A minimum of two pods allows for business continuity as well, but it’s not unusual to see this number expanding in periods of high traffic.
 
-  * End users, or site visitors, visit the website via the AEM Publish Service.
+The AEM preview tier is comprised of a single AEM node. This used for quality assurance of content before publishing to the publish tier. Occasional downtime, especially during deployments, can happen on the preview tier.
 
-### AEM Assets as a Cloud Service {#aem-assets}
+### Edge Delivery Services {#system-architecture-edge-delivery-services}
 
-For AEM Assets as a Cloud Service:
-  
-* The architecture only includes an authoring environment.
+The Edge Delivery Services are operated on top of a CDN and serverless infrastructure for assembling the pages in the most performant way. When a resource is requested, the serverless infrastructure is responsible for converting the published content into semantic HTML and serves as the origin to the CDN.
 
-* The [AEM Assets Sidekick plugin](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin) can be used to [incorporate managed assets into high-impact experiences delivered through Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html?lang=en).
+The conversion to semantic HTML happens from the published content out of the AEM author tier or out of the document-based authoring environment.
 
-### Edge Delivery Services in AEM as a Cloud Service {#edge-delivery-services-aem}
-
-[Edge Delivery Services](/help/edge/overview.md) are designed for rapid content generation and development.
-
-As Edge Delivery Services are part of Adobe Experience Manager and as such, Edge Delivery, AEM Sites and AEM Assets can co-exist on the same domain. This is a common use case for larger websites. Content from Edge Delivery can easily be consumed in your AEM Sites pages and vice versa.
-
-The following diagram illustrates how you can edit Sites content in Microsoft Word (document-based editing) and publish to Edge Delivery. It also shows the traditional AEM publishing method using the various editors.
+The following diagram illustrates how you can edit Sites content in Microsoft Word (document-based authoring) and publish to Edge Delivery. It also shows the traditional AEM publishing method using the various editors.
 
 ![AEM Sites as a Cloud Service - with Edge Delivery Services](assets/architecture-aem-edge-author-publish.png "AEM Sites as a Cloud Service - with Edge Delivery Services")
 
-### AEM and the Content Repository {#aem-content-repository}
+As Edge Delivery Services are part of Adobe Experience Manager and as such, Edge Delivery, AEM Sites and AEM Assets can co-exist on the same domain. This is a common use case for larger websites. For instance, a customer might want to migrate a particular page with high traffic to Edge Delivery Services, while all other pages might remain on the AEM Publish Tier.
+ 
 
-As appropriate to the deployment, the author tier, the preview tier, and the publish tier read and persist content from/to a Content Repository Service.
+## Development Architecture {#development-architecture}
 
-* The publish tier and the preview tier only read content from the persistence layer.
+### Code repositories {#code-repositories}
 
-* The author tier reads and writes content from and to the persistence layer.
+The code and configuration for AEM projects is necessarily stored in a code repository, from which deployment pipelines are issued when changes are made. There are code repositories of different type:
 
-* The blobs storage is shared across the publish, the preview, and the author tiers; files are not *moved*.
+* AEM full stack:
+  * allows for storing server-side Java code and OSGI configurations for the AEM author and publish tiers.
+* AEM front end:
+  * allows for storing client-side JS, CSS and HTML code for the AEM author and publish tiers (link to clientlibs)
+* AEM web tier:
+  * allows for storing the dispatcher configuration files for the AEM publish tier.
+* AEM configuration:
+  * allows for storing various configuration options (e.g. CDN settings, or maintenance tasks settings) for the AEM publish tier and the Edge Delivery Services publish tier.
+* AEM edge delivery:
+  * allows for storing the client-side JS, CSS and HTML code for the sites built with the Edge Delivery Services 
 
-* When content is approved from the author tier, this is an indication that it can be activated, therefore pushed to the publish tier persistence layer; or optionally to the preview tier. This happens via the Replication Service, a middleware pipeline. This pipeline receives the new content, with the individual publish service (or preview service) nodes subscribing to the content pushed to the pipeline.
+### Deployment pipelines {#deployment-pipelines}
 
-  >[!NOTE]
-  >
-  >For more details see [Replication](/help/operations/replication.md).
-  
-* Accessing the author and publish tiers always happens via a load balancer. This is always up-to-date with the active nodes in each of the tiers.
-
-* For the publish tier and the preview tier, a Continuous Delivery Network (CDN) Service is also available as the first entry point.
-
-### Development {#development}
-
-* Developers and administrators manage the AEM as a Cloud Service application by using a Continuous Integration/Continuous Delivery (CI/CD) service, made available via the [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager)). This includes code and configuration deployments using the Cloud Manager's CI/CD pipeline. Anything related to monitoring, maintenance and troubleshooting (for example, log files) is exposed to customers within Cloud Manager.
-
-* For demonstration instances of AEM as a Cloud Service the architecture is simplified. Therefore it does not present all the characteristics of standard development, stage or production environment. This also means that there can be some downtime and there is not support for backup/restore operations.
-
-## Deployment Architecture {#deployment-architecture}
-
-Cloud Manager manages all updates to the instances of the AEM as a Cloud Service. It is mandatory, being the only way to build, test, and deploy the customer application, to both the author, the preview, and the publish tiers. These updates can be triggered by Adobe, when a new version of the AEM Cloud Service is ready, or by the Customer, when a new version of their application is ready.
-
-![AEM as a Cloud Service - Deployment Model](assets/architecture-aem-edge-deployment-model.png "AEM as a Cloud Service - Deployment Model")
-
-Technically, this is implemented due to the concept of a deployment pipeline, coupled to each environment within a program. When a Cloud Manager pipeline is running, it creates a new version of the customer application, both for the author, the preview, and the publish tiers. This is achieved by combining the latest customer packages with the latest baseline Adobe image. When the new images are built and tested successfully, Cloud Manager fully automates the cutover to the latest version of the image by updating all service nodes using a rolling update pattern. This results in no downtime for either the author or publish service.
+Developers and administrators manage the AEM as a Cloud Service application by using a Continuous Integration/Continuous Delivery (CI/CD) service, made available via the Cloud Manager. Cloud Manager is also where anything related to monitoring, maintenance, troubleshooting (for example, access to log files) or licensing is exposed.
 
 ![AEM as a Cloud Service - Deployment Architecture](assets/architecture-aem-edge-deployment-pipelines.png "AEM as a Cloud Service - Deployment Architecture")
 
-## Content Distribution {#content-distribution}
+Cloud Manager manages all updates to the instances of the AEM as a Cloud Service. It is mandatory, being the only way to build, test, and deploy the customer application, to both the author, the preview, and the publish tiers. These updates can be triggered by Adobe, when a new version of the AEM Cloud Service is ready, or by the Customer, when a new version of their application is ready.
 
-Adobe Experience Manager as a Cloud Service has modified the way publishing content works. With AEM as a Cloud Service, the replication framework from previous versions of AEM is no longer used to publish pages (move changes from author instance to publish instances).
+Technically, this is implemented via the concept of a deployment pipeline, coupled to each environment within a program. When a Cloud Manager pipeline is running, it creates a new version of the customer application, both for the author and the publish tiers. This is achieved by combining the latest customer packages with the latest baseline Adobe image.
 
-AEM as a Cloud Service now uses the [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) capability to move the appropriate content. This uses a pipeline service run on Adobe I/O, which is outside the AEM runtime. 
+The deployment pipeline is triggered either when customers are making code changes, or when Adobe is deploying a new maintenance release.
 
-The setup is automated, including automatic self-configuration when publish nodes are added, removed or recycled during runtime.
+In both cases, the same set of automated tests is executed. It is made of tests contributed by Adobe to ensure the product integrity, and tests contributed by the customer: functional tests (http) or UI tests (based on Selenium or Cypress technology).
 
-A single publish or unpublish request can include multiple resources, but will return a single status applied to all; it will succeed for all resources in the AEM Publish Service, or fail for all. This ensures that the resources within the AEM Publish Service will never be in a inconsistent state.
+These automated tests are happening on the Stage environment – that’s why it’s important to keep the Stage environment content as close as possible to the content on the Production instance. When passing all tests, the new code is deployed to the Production environment.
 
-**High-level Content Distribution Architecture Diagram**
+### Rolling updates {#rolling-updates}
 
-![High-level Content Distribution Architecture Diagram](assets/architecture-diagram.png "High-level Content Distribution Architecture Diagram")
+Cloud Manager fully automates the cutover to the latest version of the AEM application by updating all service nodes using a rolling update pattern. This results in no downtime for either the author or publish service.
 
-## Key Evolutions {#key-evolutions}
+## Major innovations since AEM 6.x {#major-innovations-since-aem-6x}
 
-The new architecture for AEM as a Cloud Service introduces some fundamental changes and innovations compared to the previous generations:
+The latest architecture for AEM as a Cloud Service introduces some fundamental changes and innovations compared to the previous generations:
 
-* The introduction of [Edge Delivery Services](/help/edge/overview.md).
-
-* All files (blobs) are directly uploaded and served from a cloud data store. The associated stream of bits never goes through the JVM of the AEM Author and Publish services. As a result, the nodes of the AEM author and publish services can be smaller in size and more compatible with the expectation of fast autoscaling. For business practitioners, this results in a faster experience when uploading and downloading images, video, etc.
+* All files are directly uploaded and served from a cloud data store. The associated stream of bits never goes through the JVM of the AEM Author and Publish services. As a result, the nodes of the AEM author and publish services can be smaller in size and more compatible with the expectation of fast autoscaling. For business practitioners, this results in a faster experience when uploading and downloading images, video, etc.
 
 * All operations consisting of publishing content now involve a pipeline following a subscription pattern. Published content is pushed to various queues in the pipeline, to which all nodes of the publish service subscribe. As a result, the author tier does not need to be aware of the number of nodes in the publish service; this allows for fast autoscaling of the publish tier.
 
-* The concept of a golden master was introduced for automating the lifecycle of the publish nodes. The golden master is a specialized publish node, never accessed by any end user, and from which all the nodes of the publish service are created. Maintenance operations such as compaction are performed on the content repository attached to the golden master. The publish nodes are recycled daily and do not require any sort of routine maintenance; in the past such maintenance required some downtime, especially for the author instance.
-
 * The architecture completely separates the application content from the application code and configuration. All code and configuration is practically immutable and baked into the baseline image used to create the various nodes of the author and publish services. As a result, there is an absolute guarantee that each node is identical, and the changes to code and configuration can only be made globally by running a Cloud Manager pipeline.
+
+* The architecture includes multiple micro-services built on serverless technology, especially with the Adobe I/O runtime
 
 ## Further Information {#further-information}
 
@@ -224,3 +174,9 @@ See also:
   * [AEM as a Cloud Service Overview - with Edge Delivery Services](/help/edge/overview.md)
   * [Using Edge Delivery Services](/help/edge/using.md)
   * [Explore the underlying architecture and important pieces of AEM as a Cloud Service with Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
+
+
+![AEM as a Cloud Service - Deployment Model](assets/architecture-aem-edge-deployment-model.png "AEM as a Cloud Service - Deployment Model")
+
+
+![AEM as a Cloud Service - Deployment Architecture](assets/architecture-aem-edge-deployment-pipelines.png "AEM as a Cloud Service - Deployment Architecture")
