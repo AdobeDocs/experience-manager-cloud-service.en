@@ -13,7 +13,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 
 Adobe Experience Manager (AEM) as a Cloud Service offers a set of composable services for the creation and management of high impact experiences. 
 
-This page covers the logical architecture, the service architecture, the system architecture, and the development architecture for AEM as a Cloud Service.
+This page provides an introduction to the logical architecture, the service architecture, the system architecture, and the development architecture for AEM as a Cloud Service.
 
 ## Logical architecture {#logical-architecture}
 
@@ -21,11 +21,15 @@ AEM as a Cloud Service is made up of high-level solutions such as AEM Sites, AEM
 
 ### Programs {#programs}
 
-AEM applications are materialized in the form of a Program that is created by the customers in the Cloud Manager application, in a self-service manner according to their licensing entitlements. The programs give full control and autonomy for the customers in the way the associated AEM application is named, configured and permissioned in the context of a particular project (link: cloud manager programs)
+AEM applications are materialized in the form of a [Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) that you create in the Cloud Manager application, according to your licensing entitlements. These programs give you full control over how the associated AEM application is named, configured and how permissions are allocated, in the context of a particular project.
 
-A customer is usually known to Adobe as a “tenant”, or sometimes also known as an “IMS” (Identity Management System) organization. A tenant can have as many programs as needed and licensed. For instance, it’s quite usual to see a central program for AEM Assets, while AEM Sites might be used in multiple programs corresponding to multiple online experiences. Note that the AEM Edge Delivery Services are exposed as a top-level solution in Cloud Manager while being part of the other main solutions from a licensing standpoint (e.g. AEM Sites with Edge Delivery Services).
+As a customer, you are usually identified by Adobe as a **tenant**, also known as an *IMS organization* (Identity Management System). A tenant can have as many programs as needed and licensed. For example, it is quite usual to see a central program for AEM Assets, while AEM Sites might be used in multiple programs corresponding to multiple online experiences. 
 
-A program can be configured to leverage from one to all these high-level solutions. Each can support from one-to-many add-ons itself (e.g., Commerce or Screens for AEM Sites, or Dynamic Media or Brand Portal for AEM Assets). 
+>[!NOTE]
+>
+>AEM Edge Delivery Services are exposed as a top-level solution in Cloud Manager, while being part of the other main solutions from a licensing standpoint. For example, AEM Sites with Edge Delivery Services.
+
+A program can be configured with any combination of the high-level solutionsn and each solution can support from one-to-many add-ons. For example, Commerce or Screens for AEM Sites, Dynamic Media or Brand Portal for AEM Assets.
 
 ![AEM as a Cloud Service - Programs](assets/architecture-aem-edge-programs.png "AEM as a Cloud Service - Deployment Architecture")
 
@@ -33,7 +37,7 @@ A program can be configured to leverage from one to all these high-level solutio
 
 Once a program is created with the AEM Sites, AEM Assets or AEM Forms solutions, the associated AEM instances will be represented in the form of AEM environments in this program.
 
-There are four types of environments available with AEM as a Cloud Service:
+There are four types of [environment](/help/implementing/cloud-manager/manage-environments.md) available with AEM as a Cloud Service:
 
 * Production environment:
 
@@ -41,23 +45,30 @@ There are four types of environments available with AEM as a Cloud Service:
 
 * Stage environment:
 
-  * A stage environment is usually coupled to a production environment in a 1:1 relationship. The stage environment is primarily designed for automated testing before changes to the application are pushed to the production environment, independently from the changes being initiated by Adobe as part of a maintenance update or by customers as part of a code deployment. Manual testing can also be conducted by customer in case of a code deployment. The content of the stage environment is usually kept in sync with the production content using the self-service content copy feature.
+  * A stage environment is usually coupled to a production environment in a 1:1 relationship. 
+  * The stage environment is primarily designed for automated testing before changes to the application are pushed to the production environment. 
+    * This is independent from the changes being initiated either by Adobe as part of a maintenance update, or by your code deployments. 
+    * You can also conduct manual testing in the case of a code deployment. 
+  * The content of the stage environment is usually kept in sync with the production content using the self-service content copy feature.
 * Development environment:
-  * A development environment allows developers to implement and to test AEM applications under the same runtime conditions as the stage and production environments. The changes are going through a deployment pipeline allowing for the same code quality and security gates as in production deployment pipelines.
+  * A development environment allows your developers to implement, and test AEM applications under the same runtime conditions as the stage and production environments. 
+  * The changes go through a deployment pipeline allowing for the same code quality and security gates as in production deployment pipelines.
 * Rapid development environment (RDE):
-  * An RDE environment allows for rapid development iterations for deploying new or existing code into the RDE instances, without going through a formal deployment pipeline that is found on regular development environments.
-
-(link: Cloud Manager, manage environments).
+  * An RDE environment allows for rapid development iterations when deploying new or existing code into the RDE instances, without going through a formal deployment pipeline as found on regular development environments.
 
 ### Edge Delivery Services {#logical-architecture-edge-delivery-services}
 
-An AEM program can be configured with the Edge Delivery Services as well. Once done, it allows to reference GitHub code repositories used for building the experiences with Edge Delivery Services. As a result, new configuration options such as setting up the Adobe-Managed CDN, accessing to licensing metrics or the SLA reports becomes available for the associated experiences.
+An AEM program can be configured with the [Edge Delivery Services](/help/edge/overview.md) as well. 
+
+Once configured, it allows AEM to reference GitHub code repositories used for building the experiences with Edge Delivery Services. As a result, new configuration options become available for the associated experiences. These include setting up the Adobe-Managed CDN, amd accessing licensing metrics or SLA reports.
  
 ## Service architecture {#service-architecture}
 
-The list of high-level composable services in AEM as a Cloud Service can be represented like this:
+The list of high-level composable services in AEM as a Cloud Service can be represented as:
 
 ![AEM as a Cloud Service Overview - with Edge Delivery Services](assets/architecture-aem-edge.png "AEM as a Cloud Service Overview - with Edge Delivery Services")
+
+<!-- tbc -->
 
 The lower part of is made of the services allowing for content management, while the upper part if made of services allowing for experience delivery.
 
@@ -174,9 +185,3 @@ See also:
   * [AEM as a Cloud Service Overview - with Edge Delivery Services](/help/edge/overview.md)
   * [Using Edge Delivery Services](/help/edge/using.md)
   * [Explore the underlying architecture and important pieces of AEM as a Cloud Service with Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
-
-
-![AEM as a Cloud Service - Deployment Model](assets/architecture-aem-edge-deployment-model.png "AEM as a Cloud Service - Deployment Model")
-
-
-![AEM as a Cloud Service - Deployment Architecture](assets/architecture-aem-edge-deployment-pipelines.png "AEM as a Cloud Service - Deployment Architecture")
