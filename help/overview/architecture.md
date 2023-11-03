@@ -64,43 +64,63 @@ Once configured, it allows AEM to reference GitHub code repositories used for bu
  
 ## Service architecture {#service-architecture}
 
-The list of high-level composable services in AEM as a Cloud Service can be represented as:
+The list of high-level composable services in AEM as a Cloud Service can be represented with two segments - Content Management and Experience Delivery:
 
 ![AEM as a Cloud Service Overview - with Edge Delivery Services](assets/architecture-aem-edge.png "AEM as a Cloud Service Overview - with Edge Delivery Services")
 
-<!-- tbc -->
+For content management, there are two main sets of services for the authoring of content, both represented as *content sources*:
 
-The lower part of is made of the services allowing for content management, while the upper part if made of services allowing for experience delivery.
+* The AEM Author tier:
+  Provides a web-based interface (with associated APIs) for the management of Web content. This operates for both methodologies:
+  * Headful - via the Page editor and the Universal Editor
+  * Headless - via the Content Fragment editor
+* The Document-based authoring tier:
+  Allows you to author content using standard applications, such as:
+  * Microsoft Word and Excel - via SharePoint
+  * Google Docs and Sheets - via Google Drive
 
-For content management, there’s two main set of services allow for the authoring of content, both represented as “content sources”:
+For experience delivery, when using AEM Sites or AEM Forms, there are also two main sets of services, non-mutually exclusive and operating under a shared Adobe-Managed CDN (Content Delivery Network) as different origins:
 
-* The AEM Author tier, providing a web-based interface (with associated APIs) for the management of Web content both in headful (via the page editor or via the universal visual editor) and in headless (via the content fragment editor) ways.
-* The Document-based authoring tier, allowing to leverage standard applications such as Microsoft Word and Excel (via SharePoint), or Google Docs or Sheets (via Google Drive), to author content from these well-known applications.
+* The AEM Publish tier:
+  * Runs a farm of standard AEM publishers and dispatchers, allowing for the dynamic rendering of web pages and API content (for example, GraphQL) assembled with published content.
+  * Is primarily based on server-side application logic.
+* The Edge Delivery Publish Tier:
+  * Allows for the dynamic rendering of web pages and API content from various content sources such as the AEM Author tier or the Document-based authoring tier.
+  * Is based on client-side application logic and designed for maximum performance.
 
-For experience delivery, when using AEM Sites or AEM Forms, there’s also two main sets of services, non-mutually exclusive and operating under a shared Adobe-Managed CDN (content delivery network) as different origins:
+There are also the key adjacent services:
 
-* The AEM Publish tier, running a farm of standard AEM publishers and dispatchers, allowing for the dynamic rendering of web pages and API content (e.g., GraphQL) assembled with published content, based on server-side application logic primarily,
-* The Edge Delivery Publish Tier, allowing for the dynamic rendering of web pages and API content from various content sources such as the AEM Author tier or the Document-based authoring tier, based on client-side application logic and designed for maximum performance.
-
-It’s also worth noting the adjacent services:
-
-* The Edge Delivery Assets Tier, allowing for the delivery of approved and published media items (e.g. images, videos) out of AEM Assets. The media items are usually referenced from experiences running on the AEM publish tier, or the Edge Delivery publish tier, or from any other Adobe Experience Cloud application integrated with AEM Assets
-* The AEM Preview tier and the Edge Delivery Services Preview tier are also available for experiences built with the AEM Publish tier or the Edge Delivery publish tier respectively, allowing content authors to preview content in-context before publish operations. 
+* The Edge Delivery Assets Tier:
+  * Allows for the delivery of approved and published media items from AEM Assets. For example, images, and videos. 
+  * The media items are usually referenced from experiences running on the AEM publish tier, or the Edge Delivery publish tier, or from any other Adobe Experience Cloud application integrated with AEM Assets.
+* The AEM Preview tier and the Edge Delivery Services Preview tier:
+  * Are also available for experiences built with the AEM Publish tier or the Edge Delivery publish tier respectively. 
+  * Allows content authors to preview content in-context before publish operations. 
 
 >[!NOTE]
 >
 >Assets-only programs do not have a publish tier nor a preview tier by default.
 
-There are other “adjacent” services to highlight:
+<!-- tbc -->
 
-* The replication service, situated in between the content management tier and the experience delivery tier, is responsible for processing the “publish” operations issued by content authors and for providing the published content to the publish tiers (AEM or Edge Delivery). It is worth mentioning that the replication service went through a complete redesign compared to the 6.x versions of AEM, as the replication framework from previous versions of AEM is no longer used to publish content. The latest architecture is based on a “publish and subscribe” approach with cloud-based content queues. For the AEM publish tier, it allows a variable number of publishers to subscribe to the publish content and it was essential to achieve true and rapid autoscaling for AEM as a Cloud Service
-* The content repository service, leveraged by the AEM author tier, is a cloud-based instance of a JCR-compliant content repository, implemented by the Apache Oak technology.  The persistence of content is primarily based on blob-based cloud storage.
-* The CI/CD service represents the subset of Cloud Manager functionalities dedicated to managing deployment pipelines to the AEM environments.
-* The testing service represents the underlying infrastructure used to execute functional tests, UI tests (e.g. based on Selenium or Cypress scripts), experience audit tests (e.g. Lighthouse scores), as part of a deployment pipeline to an AEM environment or as part of a GitHub pull request to an Edge Delivery code repository
-* The data service is responsible for exposing customer data both via APIs and within product user interfaces (e.g., Cloud Manager), such as licensing metrics (e.g. Content Requests, Storage, Users) or usage reports (e.g. number of uploads, downloads)
-* The real-user metric (RUM) service is responsible to both collect key metrics from a customer experience (e.g., page views, core web vitals, conversion events) and to respond to associated queries (e.g. top page views for a given domain in the last 7 days)
-* The assets compute service is responsible for processing uploaded images, videos and documents (e.g. PDF or Photoshop files) in order to extract image and video metadata (via Adobe Sensei, e.g descriptive tags or primary color tones) and to generate renditions (e.g. in different sizes or formats), with access to the Adobe Photoshop and Lightroom APIs in this context
-* The identity management service is the central place responsible for managing and authenticating users and user groups for a given Adobe Experience Cloud application (e.g. Cloud Manager or the AEM author tier), accessed via the Adobe Admin Console
+There are other adjacent services:
+
+* The replication service:
+  * situated in between the content management tier and the experience delivery tier, is responsible for processing the “publish” operations issued by content authors and for providing the published content to the publish tiers (AEM or Edge Delivery). It is worth mentioning that the replication service went through a complete redesign compared to the 6.x versions of AEM, as the replication framework from previous versions of AEM is no longer used to publish content. The latest architecture is based on a “publish and subscribe” approach with cloud-based content queues. For the AEM publish tier, it allows a variable number of publishers to subscribe to the publish content and it was essential to achieve true and rapid autoscaling for AEM as a Cloud Service
+* The content repository service:
+  * leveraged by the AEM author tier, is a cloud-based instance of a JCR-compliant content repository, implemented by the Apache Oak technology.  The persistence of content is primarily based on blob-based cloud storage.
+* The CI/CD service:
+  * represents the subset of Cloud Manager functionalities dedicated to managing deployment pipelines to the AEM environments.
+* The testing service.
+  * represents the underlying infrastructure used to execute functional tests, UI tests (e.g. based on Selenium or Cypress scripts), experience audit tests (e.g. Lighthouse scores), as part of a deployment pipeline to an AEM environment or as part of a GitHub pull request to an Edge Delivery code repository
+* The data service:
+  * is responsible for exposing customer data both via APIs and within product user interfaces (e.g., Cloud Manager), such as licensing metrics (e.g. Content Requests, Storage, Users) or usage reports (e.g. number of uploads, downloads)
+* The real-user metric (RUM) service:
+  * is responsible to both collect key metrics from a customer experience (e.g., page views, core web vitals, conversion events) and to respond to associated queries (e.g. top page views for a given domain in the last 7 days)
+* The assets compute service:
+  * is responsible for processing uploaded images, videos and documents (e.g. PDF or Photoshop files) in order to extract image and video metadata (via Adobe Sensei, e.g descriptive tags or primary color tones) and to generate renditions (e.g. in different sizes or formats), with access to the Adobe Photoshop and Lightroom APIs in this context
+* The identity management service:
+  * is the central place responsible for managing and authenticating users and user groups for a given Adobe Experience Cloud application (e.g. Cloud Manager or the AEM author tier), accessed via the Adobe Admin Console
  
 ## System architecture {#system-architecture}
 
