@@ -17,19 +17,19 @@ This page provides an introduction to the logical architecture, the service arch
 
 ## Logical architecture {#logical-architecture}
 
-AEM as a Cloud Service is made up of high-level solutions such as AEM Sites, AEM Assets, and AEM Forms. These services are licensed individually, but can be used in collaboration. Each solution uses a combination of the composable services that AEM as a Cloud Service provides, dependent on their respective use cases.
+AEM as a Cloud Service is made up of high-level solutions such as AEM Sites, AEM Assets, and AEM Forms. These services are licensed individually, but can be used in collaboration. Each solution uses a combination of composable services provided by AEM as a Cloud Service, dependent on their respective use cases.
 
 ### Programs {#programs}
 
 AEM applications are materialized in the form of a [Program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) that you create in the Cloud Manager application, according to your licensing entitlements. These programs give you full control over how the associated AEM application is named, configured and how permissions are allocated, in the context of a particular project.
 
-As a customer, you are usually identified by Adobe as a **tenant**, also known as an *IMS organization* (Identity Management System). A tenant can have as many programs as needed and licensed. For example, it is quite usual to see a central program for AEM Assets, while AEM Sites might be used in multiple programs corresponding to multiple online experiences. 
+As a customer, you are usually identified by Adobe as a **tenant**, also known as an *IMS organization* (Identity Management System). A tenant can have as many programs as needed, and licensed. For example, it is quite usual to see a central program for AEM Assets, while AEM Sites might be used in multiple programs corresponding to multiple online experiences. 
 
 >[!NOTE]
 >
 >AEM Edge Delivery Services are exposed as a top-level solution in Cloud Manager, while being part of the other main solutions from a licensing standpoint. For example, AEM Sites with Edge Delivery Services.
 
-A program can be configured with any combination of the high-level solutionsn and each solution can support from one-to-many add-ons. For example, Commerce or Screens for AEM Sites, Dynamic Media or Brand Portal for AEM Assets.
+A program can be configured with any combination of the high-level solutions, and each solution can support from one-to-many add-ons. For example, Commerce or Screens for AEM Sites, Dynamic Media or Brand Portal for AEM Assets.
 
 ![AEM as a Cloud Service - Programs](assets/architecture-aem-edge-programs.png "AEM as a Cloud Service - Deployment Architecture")
 
@@ -60,7 +60,7 @@ There are four types of [environment](/help/implementing/cloud-manager/manage-en
 
 An AEM program can be configured with the [Edge Delivery Services](/help/edge/overview.md) as well. 
 
-Once configured, it allows AEM to reference GitHub code repositories used for building the experiences with Edge Delivery Services. As a result, new configuration options become available for the associated experiences. These include setting up the Adobe-Managed CDN, amd accessing licensing metrics or SLA reports.
+Once configured, AEM can reference GitHub code repositories used for building the experiences with Edge Delivery Services. As a result, new configuration options become available for the associated experiences. These include setting up the Adobe-Managed CDN, amd accessing licensing metrics or SLA reports.
  
 ## Service architecture {#service-architecture}
 
@@ -71,7 +71,7 @@ The list of high-level composable services in AEM as a Cloud Service can be repr
 For content management, there are two main sets of services for the authoring of content, both represented as *content sources*:
 
 * The AEM Author tier:
-  Provides a web-based interface (with associated APIs) for the management of Web content. This operates for both methodologies:
+  Provides a web-based interface (with associated APIs) for the management of Web content. This operates for both approaches:
   * Headful - via the Page editor and the Universal Editor
   * Headless - via the Content Fragment editor
 * The Document-based authoring tier:
@@ -106,10 +106,12 @@ There are other adjacent services:
 * The Replication Service:
   * Situated in between the content management tier and the experience delivery tier.
   * Is responsible for processing the *publish* operations issued by content authors, then providing the published content to the publish tiers (AEM or Edge Delivery). 
+
   >[!NOTE]
   >The replication service went through a complete redesign compared to the 6.x versions of AEM, as the replication framework from previous versions of AEM is no longer used to publish content. 
   >
-  >The latest architecture is based on a “publish and subscribe” approach with cloud-based content queues. For the AEM publish tier, it allows a variable number of publishers to subscribe to the publish content and it is an essential part of achieving true and rapid autoscaling for AEM as a Cloud Service
+  >The latest architecture is based on a *publish and subscribe* approach with cloud-based content queues. For the AEM publish tier, it allows a variable number of publishers to subscribe to the publish content and is an essential part of achieving true and rapid autoscaling for AEM as a Cloud Service
+
 * The Content Repository service:
   * Is used by the AEM author tier.
   * Is a cloud-based instance of a JCR-compliant content repository, implemented by the Apache Oak technology.  
@@ -118,19 +120,18 @@ There are other adjacent services:
   * Represents the subset of Cloud Manager functionalities dedicated to managing deployment pipelines to the AEM environments.
 * The Testing service:
   * Represents the underlying infrastructure used to execute:
-
     * functional tests, 
-    * UI tests (for example, based on Selenium or Cypress scripts), 
-    * experience audit tests (for example, Lighthouse scores), 
+    * UI tests: for example, based on Selenium or Cypress scripts, 
+    * experience audit tests: for example, Lighthouse scores, 
 
     as part of a deployment pipeline to an AEM environment, or as part of a GitHub pull request to an Edge Delivery code repository.
 * The Data service:
   * Is responsible for exposing customer data such as licensing metrics (for example, Content Requests, Storage, Users) or usage reports (such as the number of uploads, downloads).
-  * The customer data can be exposed via APIs, and within product user interfaces (such as the Cloud Manager),
+  * The customer data can be exposed via APIs, and within product user interfaces (such as the Cloud Manager).
 * The Real-User Metric (RUM) service:
   * Is responsible for collecting key metrics from a customer experience (such as page views, core web vitals, conversion events), as well as responding to associated queries (for example, top page views for a given domain in the last 7 days).
 * The Assets Compute service:
-  * Is responsible for processing uploaded images, videos and documents; for example, PDF and Photoshop files. Processing can use Adobe Sensei to extract image and video metadata, such as descriptive tags or primary color tones, then generate renditions (such as different sizes or formats), with access to APIs such as the Adobe Photoshop and Lightroom APIs.
+  * Is responsible for processing uploaded images, videos and documents; for example, PDF and Adobe Photoshop files. Processing can use Adobe Sensei to extract image and video metadata (such as descriptive tags or primary color tones), then generate renditions (such as different sizes or formats), with access to APIs such as the Adobe Photoshop and Adobe Lightroom APIs.
 * The Identity Management Service (IMS):
   * Is the central place responsible for managing and authenticating users and user groups for a given Adobe Experience Cloud application (for example, the Cloud Manager or the AEM author tier).
   * Is accessed via the Adobe Admin Console.
@@ -143,7 +144,7 @@ The AEM Author and Publish tiers are implemented as a set of Docker containers, 
 
 The AEM Author tier is operated as a cluster of AEM author pods sharing a single content repository. A minimum of two pods allows for business continuity while maintenance tasks are running, or while a deployment process is happening. 
 
-The AEM Publish tier is operated as a farm of AEM publish instances each with their own content repository of published content. Each publisher is coupled to a single Apache instance equipped with the AEM dispatcher module for a materialized view of the content, serving as the origin for the Adobe-managed CDN. A minimum of two pods allows for business continuity as well, but it is not unusual to see this number expanding in periods of high traffic.
+The AEM Publish tier is operated as a farm of AEM publish instances, each with their own content repository of published content. Each publisher is coupled to a single Apache instance equipped with the AEM dispatcher module for a materialized view of the content, serving as the origin for the Adobe-managed CDN. A minimum of two pods allows for business continuity as well, but it is not unusual to see this number expanding in periods of high traffic.
 
 The AEM Preview tier is comprised of a single AEM node. This is used for quality assurance of content before publishing to the publish tier. Occasional downtimes, especially during deployments, can happen on the preview tier.
 
@@ -169,7 +170,7 @@ The code and configuration for AEM projects is stored in a code repository, from
   * For storing server-side Java code and OSGI configurations for the AEM author and publish tiers.
 * AEM front end:
   * For storing client-side JS, CSS and HTML code for the AEM author and publish tiers. 
-For further details on clientlibs, please see the document [Using Client-Side Libraries on AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+    For further details on clientlibs, see [Using Client-Side Libraries on AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
 * AEM web tier:
   * Stores the dispatcher configuration files for the AEM publish tier.
 * AEM configuration:
@@ -190,6 +191,7 @@ This is implemented by a deployment pipeline, coupled to each environment within
 The deployment pipeline is triggered either when customers are making code changes, or when Adobe is deploying a new maintenance release.
 
 In both cases, the same set of automated tests is executed. It is made up of tests:
+
 * contributed by Adobe to ensure the product integrity
 * tests contributed by the customer
   * Functional tests: http 
@@ -201,7 +203,7 @@ Once all tests pass successfully, the new code is deployed to the Production env
 
 ### Rolling updates {#rolling-updates}
 
-Cloud Manager fully automates the cut-over to the latest version of the AEM application by updating all service nodes using a rolling update pattern. This means there is **no downtime** for either the author or publish service.
+The Cloud Manager fully automates the cut-over to the latest version of the AEM application by updating all service nodes using a rolling update pattern. This means there is **no downtime** for either the author or publish service.
 
 ## Major innovations since AEM 6.x {#major-innovations-since-aem-6x}
 
