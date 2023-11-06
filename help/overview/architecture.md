@@ -60,7 +60,7 @@ There are four types of [environment](/help/implementing/cloud-manager/manage-en
 
 An AEM program can be configured with the [Edge Delivery Services](/help/edge/overview.md) as well. 
 
-Once configured, AEM can reference GitHub code repositories used for building the experiences with Edge Delivery Services. As a result, new configuration options become available for the associated experiences. These include setting up the Adobe-Managed CDN, amd accessing licensing metrics or SLA reports.
+Once configured, AEM can reference GitHub code repositories used for building the experiences with Edge Delivery Services. As a result, new configuration options become available for the associated experiences. These include setting up the Adobe-Managed CDN, and accessing licensing metrics or SLA reports.
  
 ## Service architecture {#service-architecture}
 
@@ -194,7 +194,7 @@ In both cases, the same set of automated tests is executed. It is made up of tes
 
 * contributed by Adobe to ensure the product integrity
 * tests contributed by the customer
-  * Functional tests: http 
+  * Functional tests: via http requests to the AEM author or publish tier  
   * UI tests: based on Selenium or Cypress technology
 
 These automated tests are run on the Stage environment – which is why it is important to keep the Stage environment content as close as possible to the content on the Production instance.
