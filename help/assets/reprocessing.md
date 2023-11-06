@@ -12,7 +12,7 @@ Reprocess assets in a folder if you experience either of the following two scena
 * You want to run a batch set preset on an existing asset folder that already has assets uploaded to it.
 * You later edit an existing batch set preset that was previously applied to a folder of assets.
 
-## Steps to reprocess assets {#reprocessing-steps}
+## Reprocess assets {#reprocessing-steps}
 
 To reprocess assets in a folder:
 
@@ -42,13 +42,11 @@ Select among the following advanced options:
 
 * **[!UICONTROL Post-processing Workflow]:** Choose this option where additional processing of assets is required that cannot be achieved using the processing profiles. Additional post-processing workflows can be added to the configuration. Post-processing lets you add completely customized processing on top of the configurable processing using asset microservices. Select the required profile from the drop-down.
 
-Visit, [use asset microservices and processing profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) to learn more about processing profiles and post-processing workflow.
+See [use asset microservices and processing profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) to learn more about processing profiles and post-processing workflow.
 
   ![Advanced Reprocessing Assets Options2](assets/reprocessing-assets-options-advanced-2.png)
 
-After selecting the appropriate options, click **[!UICONTROL Reprocess]**. The following message appears:
-  
-  ![Reprocessing Assets Success message](assets/reprocessing-assets-success.png)
+After selecting the appropriate options, click **[!UICONTROL Reprocess]**. The success message appears.
 
 ## Scenarios for reprocessing digital assets {#scenarios-reprocessing}
 
