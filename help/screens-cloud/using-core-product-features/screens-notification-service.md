@@ -2,7 +2,6 @@
 title: Screens Notification Service in Screens as a Cloud Service
 description: This page describes how to configure Notification Service in Screens as a Cloud Service.
 index: yes
-exl-id:
 ---
 
 # Screens Notification Service {#notification-service}
