@@ -63,9 +63,9 @@ Interested in test-driving the new dashboard? Please send an email to `aem-light
 
 ## Known Issues {#known-issues}
 
-There is a know bug preventing [config deployment pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) from being pushed to production.
+There is a known bug preventing [config deployment pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) from being pushed to production.
 
-If the **Pause before deploying to Production** option is required for a config deployment pipeline, the following is the suggested workaround until the bug is addressed.
+If the **Pause before deploying to Production** option is required for a config deployment pipeline, the following is the suggested workaround until the bug is resolved.
 
 1. Run the pipeline.
 1. Test the code in the staging environment.
