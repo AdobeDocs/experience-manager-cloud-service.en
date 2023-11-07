@@ -262,6 +262,14 @@ The other properties and metadata information is retained. A partial copy is not
 
    You can configure the dimensions for the rendition you want displayed in the details page of an image or video asset. Based on the dimensions you specify, Assets displays the rendition with the exact or closest dimensions.
 
+   You cannot create renditions with the following prefixes, as these are internal to Adobe:
+
+   * cq5
+
+   * cqdam
+
+   * cq5dam 
+
    To configure rendition dimensions of an image at the asset detail level, overlay the `renditionpicker` node (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) and configure the value of the width property. Configure the property **[!UICONTROL size (Long) in KB]** in place of width to customize rendition on asset detail page based on image size. For size-based customization, the property `preferOriginal` assigns preference to the original if the size of the matched rendition is greater than the original.
 
    Similarly, you can customize the Annotation page image by overlaying `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
