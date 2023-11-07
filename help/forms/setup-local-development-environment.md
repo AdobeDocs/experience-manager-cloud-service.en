@@ -262,6 +262,10 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
     * Use the `includeFormscommunications=y` option to include Forms Core Components and dependencies required to include Customer Communications functionality.
 
+        >[!WARNING]
+        >
+        >* When creating an Archetype project with version 45, the [AEM Archetype Project Folder]/pom.xml initially sets the forms core components version to 2.0.64. Prior to building or deploying the Archetype project, update the forms core components version to 2.0.62.
+
 1. Deploy the project to your local development environment. You can use the following command to deploy to your local development environment
 
     `mvn -PautoInstallPackage clean install`

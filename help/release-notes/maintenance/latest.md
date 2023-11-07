@@ -86,7 +86,7 @@ Summarized below are the continuous improvements for maintenance release 14157, 
 
 ### Known Issues {#known-issues-14157}
 
-None.
+* ASSETS-31015: Unable to upload files to Assets with unknown file extensions.
 
 ### Embedded Technologies {#embedded-tech-14157}
 

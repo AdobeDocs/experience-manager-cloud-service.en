@@ -21,7 +21,7 @@ A major change to AEM as a Cloud Service is the fully integrated use of Adobe ID
 
 ## Principal Migration Details {#principal-migration-detail}
 
-The Content Transfer Tool and Cloud Acceleration Manager will migrate to the cloud system any principals associated with the content being migrated.  The Content Transfer Tool does this by copying all principals from the source AEM system during the extraction process.  CAM Ingestion then selects and migrates only those principals associated with the content being ingested.
+The Content Transfer Tool and Cloud Acceleration Manager will migrate to the cloud system any principals associated with the content being migrated.  The Content Transfer Tool does this by copying all principals from the source AEM system during the extraction process.  CAM Ingestion then selects and migrates only those principals associated with the content being ingested. If a principal is on an ACL or CUG policy of migrated content, that principal and all groups it is in and their ancestor (parent) groups will all be migrated. Further, if a principal on the content is a group, all its descendent (child) groups and users will also be migrated.
 
 ## User Mapping Details {#user-mapping-detail}
 
