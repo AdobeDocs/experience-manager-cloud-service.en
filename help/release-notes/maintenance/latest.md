@@ -9,7 +9,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 14157 {#release-14157}
 
-Summarized below are the continuous improvements for maintenance release 14157, which was publicly released on November 8, 2023. This maintenance release is an update from previous maintenance release 14029.
+Summarized below are the continuous improvements for maintenance release 14157, which was publicly released on November 7, 2023. This maintenance release is an update from previous maintenance release 14029.
 
 2023.11.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
