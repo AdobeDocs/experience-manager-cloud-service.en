@@ -11,8 +11,9 @@ Live Search for Adobe Commerce delivers a fast, relevant, and intuitive search e
 >
 > For Commerce customers, we recommend using Live Search and its widget as it provides personalized product results
 
-## How-to
+## AEM Commerce Integration Framework with Popover {#popover}
 
+### Setting Up AEM Local Environment {#set-up-env}
 
 
 
