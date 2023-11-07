@@ -53,7 +53,7 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 | HTTP Code 400-499 | Excluded | Errors returned to the visitor when the content does not exist (404) or there are other content or request-related issues.|
 | HTTP Code 300-399 | Excluded | These are good requests that either check if something has changed on the server, or redirect the request to another resource. They do not contain content itself, therefore they are not billable.|
 | Requests going to /libs/* | Excluded | AEM internal JSON requests, such as the CSRF token that is not billable.|
-| Traffic from DDOS attacks | Excluded | DDOS protection. AEM does auto-detect some of the DDOS attacks and blocks them. DDOS attacks if detected are not billable.<br><br>Auto-detected DDOS types:<br>&bull; DDOSBlockedCiphersSHA<br>&bull; DDOSBlockedPattern<br>&bull; DDOSSuspiciousRequest |
+| Traffic from DDOS attacks | Excluded | DDOS protection. AEM does auto-detect some of the DDOS attacks and blocks them. DDOS attacks if detected are not billable. |
 | AEM as a Cloud Service NewRelic Monitoring | Excluded | AEM as a Cloud Service global monitoring.|
 | URL for customers to monitor their Cloud Service program | Excluded | Recommended URL to externally monitor the availability.<br><br>`/system/probes/health`|
 | AEM as a Cloud Service Pod Warm-up Service | Excluded | User Agent: skyline-service-warmup/1.*|
