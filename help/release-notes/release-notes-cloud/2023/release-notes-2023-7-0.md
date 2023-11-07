@@ -74,8 +74,6 @@ Assets Essentials now sorts the search results based on Relevance, by default. Y
 
 * [**Out of the box themes**](/help/forms/using-themes-in-core-components.md) **and templates**: Kickstart your form creation process with our ready-to-use OOTB themes and templates, tailored to empower both seasoned professionals and new forms authors. Seamlessly built using Adaptive Forms Core Components, these meticulously curated themes and templates allow you to start creating forms swiftly for common use cases. 
 
-     ![Out of the box templates](/help/forms/assets/form-templates-ootb.png)
-
 * **[React Components for Headless Forms](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: You can now preview and customize   Headless Adaptive Form renditions with the React components provided out of the box. These components leverage BEM classes from Adaptive Forms Core Components for styling, making it effortless for you to customize their appearance according to your specific requirements.
 
 * [**Create Adaptive Forms with repeatable sections**](/help/forms/create-forms-repeatable-sections.md): You can now make [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), and [Horizontal Tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) components based Adaptive Form repeatable for multiple data record capture.  These repeatable sections allow you to provide multiple data entries easily. It is useful when the required instances of data are unknown in advance. A form filler can easily add or remove sections, making forms adaptable to different data entry scenarios and simplifying collection of multiple occurrences of the same data record.
@@ -114,7 +112,7 @@ Filter traffic at the CDN based on:
 
 Interested in trying out the feature and sharing feedback? Send an email to **aemcs-waf-adopter@adobe.com** from your official email ID to learn more about the early adopter program. Space is limited.
 
-Learn more about the feature in the article [here](/help/security/cdn-and-waf-rules.md).
+Learn more about the feature in the article [here](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Other Foundation changes {#other-foundation-changes}
 

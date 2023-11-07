@@ -157,3 +157,11 @@ When embedding an adaptive form in a web page, consider the following best pract
 1. On AEM publish instance, go to AEM Web Console Configuration Manager at `https://'[server]:[port]'/system/console/configMgr`.
 1. Locate and open the **Apache Sling Referrer Filter** configuration.
 1. In the Allowed Hosts field, specify the domain where the web page resides. It enables the host to make POST requests to the AEM server. You can also use regular expression to specify a series of external application domains.
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Embed adaptive form based on core components to AEM sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+
+-->

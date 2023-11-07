@@ -4,6 +4,8 @@ description: Learn how to request an error report for Dynamic Media deliver URLs
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+hide: yes
+hidefromtoc: yes
 exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
 ---
 # Request an error report for Dynamic Media delivery URLs that fail
