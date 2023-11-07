@@ -46,5 +46,5 @@ Within projects, AEM CIF Core Components and custom project components can easil
 
 ## Search {#search}
 
-CIF provides out-of-the-box a [Search Core Component](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) that is a server-side rendered search experience based on [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/). Commerce customers have the option to use [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) instead. Follow this [link](./live-search) to learn more about the CIF - Live Search integration.
+CIF provides out-of-the-box a [Search Core Component](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) that is a server-side rendered search experience based on [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/). Commerce customers have the option to use [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) instead. Follow this [link](/help/commerce-cloud/integrating/live-search.md) to learn more about the CIF - Live Search integration.
 
