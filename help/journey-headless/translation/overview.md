@@ -60,8 +60,8 @@ Although you can go directly to a particular part of the journey, many concepts 
 |0|AEM Headless Translation Journey|This document|
 |1|[Learn about headless content and how to translate it in AEM](learn-about.md)|Learn headless concepts, how they map to AEM, and the theory of AEM translation.|
 |2|[Get started with AEM headless translation](getting-started.md)|Get to know how to organize your headless content and how AEM's translation tools work.|
-|3|[Configure the translation connector](configure-connector.md)|Learn how to connect AEM to a translation service.|
-|4|[Translate content](translate-content.md)|Use the translation connector and rules to translate your headless content.|
+|3|[Configure the translation integration](configure-connector.md)|Learn how to connect AEM to a translation service.|
+|4|[Translate content](translate-content.md)|Use the translation integration and rules to translate your headless content.|
 |5|[Publish translated content](publish-content.md)|Learn how to publish your translated content and update the translation when the underlying content is updated.|
 
 ## What's Next {#what-is-next}

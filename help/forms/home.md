@@ -61,11 +61,10 @@ The service integrates with Adobe Analytics that lets you capture and track perf
 | Data Sources |Easily connect your forms and documents with external data sources to retrieve and send data: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=en">Connect to an RDBMS or Rest endpoint</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en">Connect to Microsoft&reg; Dynamics 365 or Salesforce cloud service</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=en">Connect to Microsoft&reg; Azure Blob Storage</a></li></ul>|
 
 
-## Related articles
-
-* [Onboard to a Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
-* [Setup a local development environment](/help/forms/setup-local-development-environment.md)
-* [Migrate from AEM 6.5 Forms to Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-
-
+>[!MORELIKETHIS]
+>
+>* [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+>* [Onboard to a Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
+>* [Setup a local development environment](/help/forms/setup-local-development-environment.md)
+>* [Migrate from AEM 6.5 Forms to Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 

@@ -60,3 +60,7 @@ Adding help for panel displays a **?** icon next to the panel description. Click
 
 ![Example of in-context help at form panel level](assets/photoshop-1.png)
 
+>[!MORELIKETHIS]
+>
+>* [Add placeholder text to form fields](/help/forms/placeholder-text-in-aem-forms.md)
+>* [Add Footnote to an adaptive form for rich text](/help/forms/footnotes-richtextsupport.md)

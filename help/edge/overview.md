@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Edge Delivery Services
-description: Getting Started with Edge Delivery Services.
+description: Getting Started with Edge Delivery Services (EDS).
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 ---
@@ -54,7 +54,7 @@ Adobe provides three channels to help you with Edge Delivery Services:
 
 ### Access Community Resources {#community-resource}
 
-Adobe has two Community Resources to help you with Edge Delivery, [Experience League Community](https://adobe.ly/3Q6kTKl) and a [Discord channel](https://discord.gg/aem-live).
+Adobe is committed to empowering you with the best community engagement & support for Edge Delivery Services and Document-based Authoring. Participate in [Experience League Community](https://adobe.ly/3Q6kTKl) to ask questions, share feedback, initiate discussions, seek assistance from Adobe experts and AEM Advisors/Champs, and connect with like-minded individuals in real-time. And join our [Discord channel](https://discord.gg/aem-live), a more casual platform for real-time interactions and quick idea exchanges.
 
 ### How to access your Product Collaboration Channel {#collab-channel}
 

@@ -31,6 +31,8 @@ The capabilities of individual environments depend upon the solutions enabled in
 
 ## Adding an Environment {#adding-environments}
 
+To add or edit an environment, a user must be a member of the **Business Owner** role.
+
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
 1. Click the program for which you want to add an environment.
@@ -228,7 +230,7 @@ This option is also available by clicking the **Environments** tab of the progra
 
 ![Update option from Environments tab](assets/environ-update3.png)
 
-A user with the **Deployment Manager** role can use this option to update the pipeline associated with this environment to the latest AEM version.
+A user with the **Deployment Manager** or **Business Owner** role can use this option to update the pipeline associated with this environment to the latest AEM version.
 
 Once the pipeline version is updated to the latest publicly available AEM version, the user is prompted to run the associated pipeline to deploy the latest version to the environment.
 
@@ -242,7 +244,7 @@ The **Update** option's behavior varies depending on the configuration and curre
 
 ## Deleting Development Environments {#deleting-environment}
 
-User with the requisite permission is able to delete a development environment. 
+A user with the **Deployment Manager** or **Business Owner** role is able to delete a development environment. 
 
 From the **Overview** screen of the program on the **Environments** card, click the ellipsis button of the development environment you want to delete.
 
@@ -281,7 +283,7 @@ This option is also available from the **Environment** tab of the **Overview** w
 
 ## Login Locally {#login-locally}
 
-Select **Local Login** from the ellipsis menu of the environment in the **Environments** card so you can log on locally to Adobe Experience Manager. 
+Select **Local Login** from the ellipsis menu of the environment in the **Environments** card to log on locally to Adobe Experience Manager. 
 
 ![Login locally](assets/environ-login-locally.png)
 
@@ -294,6 +296,8 @@ Also, you can log on locally from the **Environments** tab of the **Overview** p
 Custom domain names are supported in Cloud Manager for Sites programs for both publish and preview services. Each Cloud Manager environment can host up to a maximum of 250 custom domains.
 
 To configure custom domain names, navigate to the **Environments** tab and click an environment to view environment details.
+
+A user must have the **Business Owner** or **Deployment Manager** role to add a custom domain name in Cloud Manager
 
 ![Environment details](assets/domain-names.png)
 

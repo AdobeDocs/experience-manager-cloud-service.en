@@ -1,6 +1,6 @@
 ---
 title: How to use CAPTCHA in Adaptive Forms?
-description: Learn to configure AEM CAPTCHA or Google reCAPTCHA service for an Adaptive Form.
+description: Learn to configure or Google reCAPTCHA service for an Adaptive Form.
 uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -339,3 +339,15 @@ Set the **[!UICONTROL af.cloudservices.recaptcha.domain]** property of the **[!U
 ```
 
 To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
+
+## See Also {#see-also}
+
+{{see-also}}
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Reference Themes, Templates, and Form Data models for Adaptive Forms](/help/forms/reference-themes-templates-data-models.md)
+
+-->
