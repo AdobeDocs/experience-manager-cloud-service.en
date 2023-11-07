@@ -150,7 +150,7 @@ Filter traffic at the CDN based on:
 
 Interested in trying out the feature and sharing feedback? Send an email to **aemcs-waf-adopter@adobe.com** from your official email ID to learn more about the early adopter program. Space is limited.
 
-Learn more about the feature in the article [here](/help/security/cdn-and-waf-rules.md).
+Learn more about the feature in the article [here](/help/security/traffic-filter-rules-including-waf.md).
 
 
 ## Maintenance Release Notes {#maintenance}

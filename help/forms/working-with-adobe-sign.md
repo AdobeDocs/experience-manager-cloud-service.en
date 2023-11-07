@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
 ---
-# Using [!DNL Adobe Sign] in an Adaptive Form {#using-adobe-sign-in-an-adaptive-form}
+# Use [!DNL Adobe Sign] in an Adaptive Form {#using-adobe-sign-in-an-adaptive-form}
 
 <span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
 
@@ -359,7 +359,12 @@ When [!DNL Adobe Sign] service is configured for an Adaptive Form, the service f
 
 * Use separate email addresses to configure [!DNL Adobe Sign] account and for the first or single recipient. The email address of the first recipient or the only recipient (if there is the single recipient) cannot be identical to [!DNL Adobe Sign] account used to configure AEM Cloud Services.
 
-## Related Articles {#related-articles}
+>[!MORELIKETHIS]
+>
+>* [Integrate [!DNL Adobe Sign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
+>* [Best practices for using [!DNL Adobe Sign] with Adaptive Forms](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 
-* [Integrate [!DNL Adobe Sign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
-* [Best practices for using [!DNL Adobe Sign] with Adaptive Forms](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+
+## See Also {#see-also}
+
+{{see-also}}

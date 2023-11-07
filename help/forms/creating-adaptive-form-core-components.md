@@ -35,7 +35,7 @@ You require the following to create an Adaptive Form:
 
     * The `blank` template is included with every fresh AEM Forms as a Cloud Service program.
     * You can install the reference package, via Package Manager, to add the `blank` template to your AEM Forms as a Cloud Service program. 
-    * You can also [create a new Adaptive Forms template (Core Components)](template-editor.md) from scratch.
+    * You can also [create a new Adaptive Forms template (Core Components)](/help/forms/template-editor-core-components.md) from scratch.
     * You can also deploy [sample templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your environment. These help you start creating forms swiftly.
 
 *   **An Adaptive Form theme**: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components.  The `Canvas` template is included with every fresh AEM Forms as a Cloud Service program. You can also deploy [sample themes](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your environment. These help you start styling your forms and provide a base structure to create or customize a theme as per your business requirements.
@@ -185,6 +185,8 @@ You can use the Form Data Model Prefill service to prepopulate fields of an Adap
 1. Tap **[!UICONTROL Save]** to save the properties.
 
 
+<!--
+
 ## See next
 
 * [Create style or themes for your forms](using-themes-in-core-components.md)
@@ -192,7 +194,11 @@ You can use the Form Data Model Prefill service to prepopulate fields of an Adap
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
+-->
 
-## Related article {#related-article}
+## See Also {#see-also}
 
-* [Create a standalone Core Components based Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+{{see-also}}
+* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+

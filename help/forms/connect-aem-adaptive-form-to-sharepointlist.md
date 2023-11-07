@@ -3,6 +3,8 @@ title: How to connect AEM Adaptive Form to Microsoft® SharePoint List?
 description: Connect an Adaptive Form to Microsoft® SharePoint List. Learn how to configure the Microsoft® SharePoint list and create a Form Data Model using the configuration. Further, you will learn how to integrate the FDM with your Adaptive Form.
 role: User, Developer
 keywords: connect AEM Adaptive Form to Microsoft SharePoint List, connect Adaptive Form to Microsoft SharePoint List, integrate AEM Adaptive Form to Microsoft SharePoint List, integrate Adaptive Form to Microsoft SharePoint List, submit data from an Adaptive Form to SharePoint List, submit AEM workflow to SharePoint List.
+hide: yes
+hidefromToC: yes
 ---
 
 # Connect an Adaptive Form to Microsoft® SharePoint List 
@@ -78,9 +80,7 @@ Learn how to [use AEM Workflow](https://experienceleague.adobe.com/docs/experien
 * [Configure data sources](/help/forms/configuring-submit-actions.md)
 * [Create form data model](/help/forms/create-form-data-models.md)
 * [Use Forms-centric AEM Workflows - Step Reference to automate business processes](/help/forms/aem-forms-workflow-step-reference.md)
-
-## Additional Information
-
+* [Create a custom Submit Action for Adaptive Forms](/help/forms/custom-submit-action-form.md)
 * [Create or add an Adaptive Form to an AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Embed an Adaptive Form to an AEM Sites page](/help/forms/embed-adaptive-form-aem-sites.md)
 * [Create, use, and customize themes in an Adaptive Form](/help/forms/using-themes-in-core-components.md)
