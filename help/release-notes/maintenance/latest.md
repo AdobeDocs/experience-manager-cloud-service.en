@@ -21,8 +21,10 @@ Summarized below are the continuous improvements for maintenance release 14157, 
 * FORMS-10570: Onboard EC APIs to API - First Router
 * GRANITE-48143: Upgrade Sling ResourceMerger to 1.4.4
 * SITES-14874: Eventing: Expand the CFM tree for model events to include metadata changes
-* SITES-2719: Content Fragments: Tagging support for Content Fragment Variations
+* SITES-2719: Content Fragments: Tagging support for Content Fragment Variations (re-enabled)
+* SITES-3619: Content Fragments: GraphQL CF variation tags output in JSON and filtering by variation tag (re-enabled)
 * SITES-13750: Content Fragments: Delete tags for a Content Fragment Model
+* SITES-13920: Content Fragments: Support for minItems config for multiple fields (pre-release)
 * SITES-14080: Content Fragments: Delete tag of a Content Fragment Variation
 * SITES-14770: Content Fragments: Fragment variation should include fieldTags property
 * SITES-15356: Content Fragments: Returning etag as response header when a resource is created
@@ -50,10 +52,12 @@ Summarized below are the continuous improvements for maintenance release 14157, 
 * FORMS-11302: Title of component edited in RTE is displayed incorrectly in Adaptive Form Editor > Rule Editor
 * GRANITE-45706: i18n import fails if the key value has ‚Äú))‚Äù
 * SITES-14156: Eventing: Publish events are not always sent
+* SITES-14520: GraphQL: Bad performance with paginated graphql queries due to FT_SITES-2719
 * SITES-16444: GraphQL: DataFetchingException for same name fields missing from GraphQL query
 * SITES-16225: GraphQL: Content types of model and fragment RTE fields returned by the Java API are not correct
 * SITES-15373: Content Fragments: The /adobe/sites/cf/fragments/{fragmentId}/variation/{name}/tags endpoint doesn't use the correct resource naming conventions
 * SITES-15709: Content Fragments: Create Model endpoint issue when creating Boolean Field
+* SITES-15727: Content Fragments: Field of type "Tag" can only be added once in model editor
 * SITES-15782: Content Fragments: Missing unique property from field model of Enumeration type
 * SITES-15786: Content Fragments: Content Fragment cannot be created in folder containing '
 * SITES-15790: Content Fragments: Update Location header for Version Creation
