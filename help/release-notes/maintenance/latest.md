@@ -87,6 +87,17 @@ Summarized below are the continuous improvements for maintenance release 14157, 
 * SITES-16797: MSM: Fixed Re-enable inheritance for a CF field in Editor
 * SITES-16273: Page Editor: Copy paste error inside aem sites pages from the clipboard
 * SITES-16126: Sites Admin: Authoring performance slow for non admin users after SITES-10288
+* FORMS-10534: An error occurs in the rule editor on selecting the Boolean operand option.
+* FORMS-10248: In an adaptive form, when the data value is of type Boolean, rules fail to properly set values for radio buttons or checkbox components.
+* FORMS-11361: The drop-down component automatically defaults to selecting the first option from the list.
+* FORMS-11413: An error related to the Forms Portal prefill service is triggered by Adaptive Forms, even when the service is not in use.
+* FORMS-11433: When a non-form component is included in an Adaptive Form, the submission process fails to complete.
+* FORMS-11206: When a user tries to schedule a Publish workflow for an Adaptive Form, it fails to function as expected.
+* FORMS-11546: Lighthouse has detected a missing ARIA label for repeated panels in an Adaptive Form, affecting accessibility.
+* FORMS-11095: The ARIA attribute is incorrectly defined for phone number, email address, and number fields, leading to accessibility issues.
+* FORMS-9894: The Output Service API generates an incorrect error code when a user provides an invalid repository path, leading to confusion for users encountering this issue. 
+* FORMS-11404: The ImportData service exhibits inconsistent behavior when merging various XML data with a reader-extended PDF. Specifically, it successfully retains reader extension properties for one output PDF document but fails to do so for other output PDFs.
+
 
 ### Known Issues {#known-issues-14157}
 
