@@ -25,9 +25,9 @@ The release date for Cloud Manager release 2023.10.0 in AEM as a Cloud Service i
   * This update will be rolled out in a phased manner.
 *  With the October 2023 release of Cloud Manager, Java versions are being updated via a phased roll-out.
     * The minor versions for Java 8 and 11 and Maven have been updated and will be rolled out in a phased manner over the next 2 months. The new version has multiple security fixes and bugfixes. The new versions are:
-    * *Maven: 3.8.8*
-    * *Java  8 version: /usr/lib/jvm/jdk1.8.0_371*
-    * *Java 11 version: /usr/lib/jvm/jdk-11.0.20*
+      * **Maven:** `3.8.8`
+      * **Java  8 version:** `/usr/lib/jvm/jdk1.8.0_371`
+      * **Java 11 version:** `/usr/lib/jvm/jdk-11.0.20`
     * [See the OpenJDK advisory](https://openjdk.org/groups/vulnerability/advisories/) for details on the security and bugfixes in these JDK updates.
 
 ## Early Adoption Program {#early-adoption}
@@ -60,3 +60,15 @@ If you are interested in testing this new feature and sharing your feedback, ple
 The dashboard leverages Google Lighthouse, an open-source, automated tool for improving the quality of your web apps. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more.
 
 Interested in test-driving the new dashboard? Please send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID and we can get you started.
+
+## Known Issues {#known-issues}
+
+There is a known bug preventing [config deployment pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) from being pushed to production.
+
+If the **Pause before deploying to Production** option is required for a config deployment pipeline, the following is the suggested workaround until the bug is resolved.
+
+1. Run the pipeline.
+1. Test the code in the staging environment.
+1. When deploying and approval becomes available, click on **Reject**.
+1. Edit the pipeline to disable the **Pause before deploying to Production** option.
+1. Run the pipeline again. Iit will run again on staging then on production.
