@@ -125,3 +125,7 @@ Perform the following steps to disable the Layout mode:
 
 1. Tap the **[!UICONTROL Layout Settings]** tab and select **[!UICONTROL Disable Layout Mode]**. 
 1. Tap ![Save changes](assets/save_icon.svg) to save the template properties.
+
+## See Also {#see-also}
+
+{{see-also}}

@@ -100,9 +100,6 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **Q: Can I use more than one Captcha component in an Adaptive Form?**
 **Ans:** Using more than one Captcha component in an Adaptive Form is not supported. Also, it is not recommended to use Captcha component in a fragment or a panel marked for lazy loading.
 
-## See also
+## See Also {#see-also}
 
-* [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
-* [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments-core-components.md)
-* [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Use Google reCAPTCHA in an Adaptive Form ](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}
