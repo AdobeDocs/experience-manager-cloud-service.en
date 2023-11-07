@@ -40,9 +40,7 @@ You can make the search more specific by adding your search keyword in double qu
 
 The search displays similar results if you are working in the **[!UICONTROL Assets view]** as well.
 
-<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425489)
--->
 
 ## Files and folders {#files-folders}
 
@@ -63,9 +61,7 @@ Select the folder from the path and navigate to the required folder if you want 
 
 ![Search using files and folders](assets/files-folders.png)
 
-<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
--->
 
 ## Operators {#operators}
 
@@ -117,9 +113,7 @@ Asterisk is a wildcard operator that is used to broaden your search by typing fe
 * `car*` returns assets with carwash, carrier, carriage, and so on. 
 * `*car` returns assets with modern car, sports car, and so on. 
 
-<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425488)
--->
 
 **[!UICONTROL Assets view]** does not support the usage of Wildcards.
 
@@ -187,9 +181,7 @@ To search assets using the mentioned scenario in **[!UICONTROL Assets view]**, f
 1. Go to search filters. 
 1. Go to Filters. Under [!UICONTROL MIME Type], select all the given MIME types but Deselect PNG.
 
-<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425486)
--->
 
 ## Advanced search {#advanced-search}
 
@@ -245,9 +237,7 @@ You can capture a specific criteria using various search filters. Tag is a keywo
 
 The search displays similar results if you are working in the **[!UICONTROL Assets view]** as well.
 
-<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425490)  
--->
 
 **Scenario 9: Find similar match for red color car**
 
