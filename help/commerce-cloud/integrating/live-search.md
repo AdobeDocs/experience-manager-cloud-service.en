@@ -16,7 +16,7 @@ The widget will replace the out-of-the-box [Search Core Component](https://www.a
 ### Setting Up AEM Local Environment {#set-up-env}
 
 ## Product Listing Page (PLP) {#plp}
-The widget will replace the out-of-the-box [Product List Core Component](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/productlist.html) category filtered product list and faceted filtering.
+The widget will replace the out-of-the-box [Product List Core Component](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/productlist.html) with category filtered product list and faceted filtering.
 
 
 ## Resources
