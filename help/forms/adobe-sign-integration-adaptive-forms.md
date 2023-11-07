@@ -209,8 +209,7 @@ For example, to run the configuration service daily at 00:00 am, set the **sign.
 To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
 
-## Related Articles {#related-articles}
-
-* [Using Adobe Acrobat Sign in an Adaptive Form](working-with-adobe-sign.md)
-
-* [Best practices for using Adobe Acrobat Sign with Adaptive Forms](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+>[!MORELIKETHIS]
+>
+>* [E-sign a form using scribble signatures](/help/forms/signing-forms-using-scribble.md)
+>* [Best practices for using Adobe Acrobat Sign with Adaptive Forms](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)

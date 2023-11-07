@@ -92,6 +92,7 @@ Follow the same steps as above to add these additional fields. The only differen
 
    * **Render As:** **Content Reference** - When you create an adventure, this field points to the image asset representing this trip.
    * **Field Label:** `Image` - The label that is displayed for this field when creating an adventure.
+   * **Root Path:** `/content/dam/aem-demo-assets/en` - This specifies a starting point path when browsing for assets with the Asset Selector.
 
 1. After you have added the necessary fields for the Content Fragment model, at the top-right of the window, click **Save**.
 
