@@ -56,36 +56,38 @@ searchbar.js, it injects LiveSearchAutocomplete.js from cdn and other store even
 services-graphql is installed.
    * Below are all required config for LS Popover (refer to branch for complete setup):
 
-```
-  // initialize live-search
-   const storeConfig = JSON.parse(
-   document.querySelector("meta[name='store-config']").getAttribute("content")
-   );
-   const { storeRootUrl } = storeConfig;
-   const redirectUrl = storeRootUrl.split(".html")[0];
-   new window.LiveSearchAutocomplete({
-   environmentId: dataServicesStorefrontInstanceContext.environment_id,
-   websiteCode: dataServicesStorefrontInstanceContext.website_code,
-   storeCode: dataServicesStorefrontInstanceContext.store_code,
-   storeViewCode: dataServicesStorefrontInstanceContext.store_view_code,
-   config: {
-   pageSize: 8,
-   minQueryLength: "2",
-   currencySymbol: "$",
-   currencyRate: "1",
-   displayOutOfStock: true,
-   allowAllProducts: false,
-   },
-   context: {
-   customerGroup: dataServicesStorefrontInstanceContext.customer_group,
-   },
-   route: ({ sku }) => {
-   return `${redirectUrl}.cifproductredirect.html/${sku}`;
-   },
-   searchRoute: {
-   route: `${redirectUrl}/search.html`,
-   query: "search_query",
-   }, 
+```js
+ // initialize live-search
+ const storeConfig = JSON.parse(
+ document.querySelector("meta[name='store-config']").getAttribute("content"));
+ const { storeRootUrl } = storeConfig;
+ const redirectUrl = storeRootUrl.split(".html")[0];
+  new window.LiveSearchAutocomplete({
+    environmentId: dataServicesStorefrontInstanceContext.environment_id,
+    websiteCode: dataServicesStorefrontInstanceContext.website_code,
+    storeCode: dataServicesStorefrontInstanceContext.store_code,
+    storeViewCode: dataServicesStorefrontInstanceContext.store_view_code,
+    config: {
+      pageSize: dataServicesStoreConfigurationContext.page_size,
+      minQueryLength: "2",
+      currencySymbol: dataServicesStoreConfigurationContext.currency_symbol,
+      currencyRate: dataServicesStoreConfigurationContext.currency_rate,
+      displayOutOfStock: dataServicesStoreConfigurationContext.display_out_of_stock,
+      allowAllProducts: dataServicesStoreConfigurationContext.allow_all_products,
+    },
+    context: {
+      customerGroup: dataServicesStorefrontInstanceContext.customer_group,
+    },
+    route: ({ sku }) => {
+      return `${
+        this.getStoreConfigMetadata().redirectUrl
+      }.cifproductredirect.html/${sku}`;
+    },
+    searchRoute: {
+      route: `${this.getStoreConfigMetadata().redirectUrl}/search.html`,
+      query: "search_query",
+    },
+  });
 ```
 
    * By replacing existing searchbar.html with above structures and once you export to AEM or rebuild process, you will notice searchbar is now replaced with live-search searchbar.
@@ -113,47 +115,50 @@ searchbar.js.
    * For search , only sling:resourceType="venia/components/commerce/productlist" will need to be updated. search
 component is what shows when user search (View all / on Enter).
       * This tells AEM to use productlist (widget) component instead of default search component.
-* Update .content.xml clientlibs/clientlib-cif/.content.xml to add core.cif.productlist.v1
+* Update .content.xml clientlibs/clientlib-cif/.content.xml to add `"core.cif.productlist.v1"`
 * Productlist update is similar to popover which relies /clientlibs (css/js)
 * Styling: clientlibs/css/productlist.css
    * Widget uses tailwind css framework, which will have some conflict css to previous store so those will need to be updated manually inside
 css/productlist.css (Refer to branch)
 * Below are all required config for widget (refer to branch for complete setup)
 
-```
+```js
 // clientlibs/js/productlist.js,
+const categoryUrlPath = root.getAttribute("data-plp-urlPath") || "";
+const categoryName = root.getAttribute("data-plp-title") || "";
 const storeDetails = {
-environmentId: dataServicesStorefrontInstanceContext.environment_id,
-environmentType: dataServicesStorefrontInstanceContext.environment,
-apiKey: dataServicesStorefrontInstanceContext.api_key,
-websiteCode: dataServicesStorefrontInstanceContext.website_code,
-storeCode: dataServicesStorefrontInstanceContext.store_code,
-storeViewCode: dataServicesStorefrontInstanceContext.store_view_code,
-config: {
-pageSize: "8",
-perPageConfig: {
-pageSizeOptions: "12,24,36,48",
-defaultPageSizeOption: "12",
-},
-minQueryLength: "2",
-currencySymbol: "LBP",
-currencyRate: "1",
-displayOutOfStock: "1",
-allowAllProducts: "1",
-locale: "en_US",
-currentCategoryUrlPath: categoryUrlPath,
-categoryName,
-displayMode: "", // Keep as "" string.
-},
-context: {
-customerGroup: dataServicesStorefrontInstanceContext.customer_group,
-},
-route: ({ sku }) => {
-return `${
-this.getStoreConfigMetadata().redirectUrl
-}.cifproductredirect.html/${sku}`;
-},
-searchQuery: "search_query",
+  environmentId: dataServicesSessionContext.environment_id,
+  environmentType: dataServicesSessionContext.environment,
+  apiKey: dataServicesSessionContext.api_key,
+  websiteCode: dataServicesSessionContext.website_code,
+  storeCode: dataServicesSessionContext.store_code,
+  storeViewCode: dataServicesSessionContext.store_view_code,
+  config: {
+    pageSize: dataServicesSessionContext.page_size,
+    perPageConfig: {
+      pageSizeOptions: dataServicesSessionContext.page_size_options,
+      defaultPageSizeOption:
+        dataServicesSessionContext.default_page_size_option,
+    },
+    minQueryLength: "2",
+    currencySymbol: dataServicesSessionContext.currency_symbol,
+    currencyRate: dataServicesSessionContext.currency_rate,
+    displayOutOfStock: dataServicesSessionContext.display_out_of_stock,
+    allowAllProducts: dataServicesSessionContext.allow_all_products,
+    locale: dataServicesSessionContext.locale,
+    currentCategoryUrlPath: categoryUrlPath,
+    categoryName,
+    displayMode: "", // "" for plp || "PAGE" for category/catalog
+  },
+  context: {
+    customerGroup: dataServicesSessionContext.customer_group,
+  },
+  route: ({ sku }) => {
+    return `${
+      this.getStoreConfigMetadata().redirectUrl
+    }.cifproductredirect.html/${sku}`;
+  },
+  searchQuery: "search_query",
 };
 ```
 
