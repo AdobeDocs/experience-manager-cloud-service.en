@@ -26,3 +26,11 @@ Form authors can configure a page for each form, to which the form users are red
 **Related**
 
 * [Configuring redirect page (Foundation Forms)](configuring-redirect-page.md)
+
+>[!MORELIKETHIS]
+>
+>* [Configure a Redirect Page](/help/forms/configuring-redirect-page.md)
+
+## See Also {#see-also}
+
+{{see-also}}

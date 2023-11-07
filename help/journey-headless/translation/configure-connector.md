@@ -1,9 +1,9 @@
 ---
-title: Configure the Translation Connector for Headless Content
+title: Configure the Translation Integration for Headless Content
 description: Learn how to connect AEM to a translation service.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 ---
-# Configure the Translation Connector {#configure-connector}
+# Configure the Translation Integration {#configure-integration}
 
 Learn how to connect AEM to a translation service.
 
@@ -19,7 +19,7 @@ This article builds on those fundamentals so you can take the first configuratio
 
 ## Objective {#objective}
 
-This document helps you understand how to set up an AEM connector to your chosen translation service. After reading you should:
+This document helps you understand how to set up an AEM integration to your chosen translation service. After reading you should:
 
 * Understand the important parameters of the Translation Integration Framework in AEM.
 * Be able to set up your own connection to your translation service.

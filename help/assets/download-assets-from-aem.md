@@ -82,7 +82,7 @@ To download assets, follow these steps:
 
 1. In the dialog box, click **[!UICONTROL Download]**.
 
-   If email notification is enabled for large downloads, an email containing a download URL of the archived zip folder appears in your inbox. Click on the download link from the email to download the zip archive.
+   If email notification is enabled for large downloads, an email containing a download URL of the archived zip folder appears in your inbox. Click the download link from the email to download the zip archive.
 
    ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
 
@@ -125,6 +125,15 @@ If you do not need the download functionality, then disable the servlet to preve
 1. To block asset download requests via a dispatcher configuration edit the `dispatcher.any` configuration and add a new rule to the [filter section](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring).
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+
+## OnTime or OffTime rendition {#on-off-time-rendition}
+
+To enable the `OnOffTimeAssetAccessFilter` service, you need to create an OSGi configuration. This service allows the blocking of access to renditions and metadata in addition to the asset itself based on on/off time settings. The OSGi configuration should be for `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Follow the steps below:
+
+1. In your project code in Git, create a configuration file at `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. The file should contain `{}` as its content, signifying an empty OSGi configuration for the corresponding OSGi component. This action enables the service.
+1. Deploy your code, including this new configuration, through [!DNL Cloud Manager].
+1. Once deployed, the renditions and metadata are accessible according to the on/off time settings of the assets. If the current date or time falls before the on-time or after the off-time, an error message is displayed.
+For more details on adding an empty OSGi configuration, you can refer to this [guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
 
 ## Tips and limitations {#tips-limitations}
 

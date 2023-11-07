@@ -30,6 +30,11 @@ After licensing an additional publish region, the regions are configured using C
 
 Additional publish regions are applied to stage and production environments, but not to RDE or development environments.
 
+In the event a region becomes unavailable, customers do not need to manage the routing of traffic to available regions since it is managed by the Adobe CDN.
+
+As described in the Advanced Networking Considerations section below, it is recommended that customers using advanced networking configure it for each additional publish region in order for availability to be maintained if a region becomes unavailable.
+
+
 ## Advanced Networking Considerations {#advanced-networking-considerations}
 
 When an additional publish region is enabled on a program with advanced networking already configured, the traffic in the additional publish region that matches the advanced networking rules will by default route through the primary region. To take advantage of increased availability, it is recommended to enable advanced networking on the additional regions.
