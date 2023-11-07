@@ -25,9 +25,9 @@ The release date for Cloud Manager release 2023.10.0 in AEM as a Cloud Service i
   * This update will be rolled out in a phased manner.
 *  With the October 2023 release of Cloud Manager, Java versions are being updated via a phased roll-out.
     * The minor versions for Java 8 and 11 and Maven have been updated and will be rolled out in a phased manner over the next 2 months. The new version has multiple security fixes and bugfixes. The new versions are:
-    * *Maven: 3.8.8*
-    * *Java  8 version: /usr/lib/jvm/jdk1.8.0_371*
-    * *Java 11 version: /usr/lib/jvm/jdk-11.0.20*
+      * **Maven:** `3.8.8`
+      * **Java  8 version:** `/usr/lib/jvm/jdk1.8.0_371`
+      * **Java 11 version:** `/usr/lib/jvm/jdk-11.0.20`
     * [See the OpenJDK advisory](https://openjdk.org/groups/vulnerability/advisories/) for details on the security and bugfixes in these JDK updates.
 
 ## Early Adoption Program {#early-adoption}
