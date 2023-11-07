@@ -21,7 +21,7 @@ Follow the AEM + CIF setup video on experienceleague:
 * The video has dated build options for aem-cif-guides-venia; use:
 mvn clean install -PautoInstallSinglePackage
 * run locally using on of our LS cloud instances (can set up COMMERCE_ENDPOINT as an environment variable instead also, like the video says):
-COMMERCE_ENDPOINT=https://<magento-server-domain>/graphql
+```COMMERCE_ENDPOINT=https://<magento-server-domain>/graphql```
 * for vscode, install vscode-aem-sync extension for auto-update on code change. setting-> "{ aemsync.autopush: true }"
 * CRXDE can also be used to see the changes http://localhost:4502/crx/de/index.jsp
 
@@ -40,13 +40,13 @@ Have a look at [Project Setup](https://experienceleague.adobe.com/docs/experienc
    * Not every step is listed below, please look at the branch and compare what file is changed.
 * Have a look at this [Example of Live Search searchbar branch](https://github.com/adobe/aem-cif-guides-venia/tree/cif-livesearch-popover) implemented in Venia. 
    * Refer to this [searchbar.js](https://github.com/adobe/aem-cif-guides-venia/blob/cif-livesearch-popover/ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js/searchbar.js) file.
-* Custom searchbar implementation requires use of clientlibs (css/js) inside '''/searchbar'''
+* Custom searchbar implementation requires use of clientlibs (css/js) inside ```/searchbar```
 * Requires magento/module-data-services-graphql module to the cloud instance to retrieve store data (environment_id, others...)
 * Have a look at an [example of popover + AEM implementations](https://github.com/adobe/aem-cif-guides-venia/pull/319).
-   * under '''ui.apps/src/main/content/jcr_root/apps/venia/components''' directory, below are basic files that are needed:
+   * under ```ui.apps/src/main/content/jcr_root/apps/venia/components``` directory, below are basic files that are needed:
    ![CIF Popover files](../assets/cif-popover-2.jpg)
-   * Layout: '''searchbar.html''' is the layout of the searchbar
-   * '''.contents.xml''' are required two places both under searchbar and clientlibs, tells AEM that this is a component file.
+   * Layout: ```searchbar.html``` is the layout of the searchbar
+   * ```.contents.xml``` are required two places both under searchbar and clientlibs, tells AEM that this is a component file.
    * resourceSupertype will need to be removed for custom component. (refer to branch)
 * Clientlibs - custom css/js directory, requires js.txt, css.txt tells where the css/js files are located.
 * Styling: clientlibs/css/searchbar.css. You may modify any style here and it will be injected during the build process. Javascript: clientlibs/js/
@@ -56,7 +56,8 @@ searchbar.js, it injects LiveSearchAutocomplete.js from cdn and other store even
 services-graphql is installed.
    * Below are all required config for LS Popover (refer to branch for complete setup):
 
-   '''   // initialize live-search
+```
+  // initialize live-search
    const storeConfig = JSON.parse(
    document.querySelector("meta[name='store-config']").getAttribute("content")
    );
@@ -84,7 +85,8 @@ services-graphql is installed.
    searchRoute: {
    route: `${redirectUrl}/search.html`,
    query: "search_query",
-   }, '''
+   }, 
+```
 
    * By replacing existing searchbar.html with above structures and once you export to AEM or rebuild process, you will notice searchbar is now replaced with live-search searchbar.
 
@@ -97,7 +99,7 @@ The widget will replace the out-of-the-box [Product List Core Component](https:/
 ### Prerequisites for Widget {#prerequisite-plp}
 
 * AEM/CIF + Popover is required to setup before setting up widget.
-* Widget relies on '''WIDGET_STOREFRONT_INSTANCE_CONTEXT'''s from session_storage which is set from cif-livesearch-popover branch in
+* Widget relies on ```WIDGET_STOREFRONT_INSTANCE_CONTEXT```s from session_storage which is set from cif-livesearch-popover branch in
 searchbar.js.
 
 ### Installing Widget to AEM Store as CIF Component {#installing-widget}
@@ -118,7 +120,7 @@ component is what shows when user search (View all / on Enter).
 css/productlist.css (Refer to branch)
 * Below are all required config for widget (refer to branch for complete setup)
 
-'''
+```
 // clientlibs/js/productlist.js,
 const storeDetails = {
 environmentId: dataServicesStorefrontInstanceContext.environment_id,
@@ -153,7 +155,7 @@ this.getStoreConfigMetadata().redirectUrl
 },
 searchQuery: "search_query",
 };
-'''
+```
 
 ### Category/Catalog Page (Non-PLP) {#category-catalog}
 
