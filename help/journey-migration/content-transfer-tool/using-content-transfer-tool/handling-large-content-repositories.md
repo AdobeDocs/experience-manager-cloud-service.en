@@ -185,6 +185,9 @@ If there is an issue with AzCopy, the extraction fails immediately, and the extr
 
 Any blobs that were copied before the error are skipped automatically by AzCopy on subsequent runs, and do not need to be copied again.
 
+>[!TIP]
+>An ingestion can now be scheduled to start automatically immediately after an extraction succeeds. See [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) for more information.
+
 #### For File Data Store {#file-data-store-extract}
 
 When AzCopy is running for source file dataStore, you should see messages like these in the logs indicating that folders are getting processed:
@@ -192,9 +195,7 @@ When AzCopy is running for source file dataStore, you should see messages like t
 
 ### 5. Ingesting with AzCopy {#ingesting-azcopy}
 
-See [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-for general information about ingesting content into the target from the Cloud Acceleration Manager (CAM), including
-instruction on how to use AzCopy (pre-copy), or not, in the "New Ingestion" dialog.
+See [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) for general information about ingesting content into the target from the Cloud Acceleration Manager (CAM), including instruction on how to use AzCopy (pre-copy), or not, in the "New Ingestion" dialog.
 
 To take advantage of AzCopy during ingestion, Adobe requires that you are on an AEM as a Cloud Service version that is at least version 2021.6.5561.
 

@@ -2,8 +2,8 @@
 title: Search best practices for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Best practices to search, find, and retrieve assets' metadata within your application.
 contentOwner: KK
+exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 ---
-
 # AEM Search Best Practices
 
 [!DNL Adobe Experience Manager Assets] provides robust asset search methods that help you achieve higher content velocity. Sometimes, finding the right asset can be arduous and time-consuming. Therefore, search assets capability in [!DNL Adobe Experience Manager Assets] is central to the usage of a digital asset management system - be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators.
@@ -40,7 +40,9 @@ You can make the search more specific by adding your search keyword in double qu
 
 The search displays similar results if you are working in the **[!UICONTROL Assets view]** as well.
 
-<!--[Watch a video to perform a simple search in AEM Assets] ()-->
+<!--
+>[!VIDEO](https://video.tv.adobe.com/v/3425489)
+-->
 
 ## Files and folders {#files-folders}
 
@@ -61,7 +63,9 @@ Select the folder from the path and navigate to the required folder if you want 
 
 ![Search using files and folders](assets/files-folders.png)
 
-<!--[Watch a video to perform search in AEM Assets using Files and Folders] ()-->
+<!--
+>[!VIDEO](https://video.tv.adobe.com/v/3425487)
+-->
 
 ## Operators {#operators}
 
@@ -113,7 +117,9 @@ Asterisk is a wildcard operator that is used to broaden your search by typing fe
 * `car*` returns assets with carwash, carrier, carriage, and so on. 
 * `*car` returns assets with modern car, sports car, and so on. 
 
-<!--[Watch a video to perform a search in AEM Assets using wildcards] ()-->
+<!--
+>[!VIDEO](https://video.tv.adobe.com/v/3425488)
+-->
 
 **[!UICONTROL Assets view]** does not support the usage of Wildcards.
 
@@ -166,8 +172,6 @@ Execute the following steps in **[!UICONTROL Assets view]**:
 1. Go to Filters. Under [!UICONTROL MIME Type], select [!UICONTROL PDF].
 1. Go to [!UICONTROL Asset Status], select [!UICONTROL All] to include all the published and unpublished assets.
 
-<!--[Watch a video to perform search in AEM Assets using various filters] ()-->
-
 **Scenario 5: Search for all images except PNG**
 
 When you are unsure about the title or meta description of an asset, you can use various search filters to make your search more relevant. For example, to search assets in **[!UICONTROL Admin view]**, follow the steps below:
@@ -182,6 +186,10 @@ To search assets using the mentioned scenario in **[!UICONTROL Assets view]**, f
 
 1. Go to search filters. 
 1. Go to Filters. Under [!UICONTROL MIME Type], select all the given MIME types but Deselect PNG.
+
+<!--
+>[!VIDEO](https://video.tv.adobe.com/v/3425486)
+-->
 
 ## Advanced search {#advanced-search}
 
@@ -236,6 +244,10 @@ You can capture a specific criteria using various search filters. Tag is a keywo
 ![Search using tags](assets/search-tags.png)
 
 The search displays similar results if you are working in the **[!UICONTROL Assets view]** as well.
+
+<!--
+>[!VIDEO](https://video.tv.adobe.com/v/3425490)  
+-->
 
 **Scenario 9: Find similar match for red color car**
 
