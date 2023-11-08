@@ -95,9 +95,6 @@ Summarized below are the continuous improvements for maintenance release 14157, 
 * FORMS-11206: When a user tries to schedule a Publish workflow for an Adaptive Form, it fails to function as expected.
 * FORMS-11546: Lighthouse has detected a missing ARIA label for repeated panels in an Adaptive Form, affecting accessibility.
 * FORMS-11095: The ARIA attribute is incorrectly defined for phone number, email address, and number fields, leading to accessibility issues.
-* FORMS-9894: The Output Service API generates an incorrect error code when a user provides an invalid repository path, leading to confusion for users encountering this issue. 
-* FORMS-11404: The ImportData service exhibits inconsistent behavior when merging various XML data with a reader-extended PDF. Specifically, it successfully retains reader extension properties for one output PDF document but fails to do so for other output PDFs.
-
 
 ### Known Issues {#known-issues-14157}
 
