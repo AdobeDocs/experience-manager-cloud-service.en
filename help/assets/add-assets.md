@@ -52,7 +52,7 @@ You can also choose to have additional processing done on the uploaded assets. S
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-To upload a file (or multiple files), you can either select them on your desktop and drag on the user interface (web browser) to the destination folder. Alternatively, you can initiate upload from the user interface.
+To upload a file (or multiple files), you can either select them on your desktop and drag on the user interface (web browser) to the destination folder. Alternatively, you can initiate upload from the user interface. [!DNL Experience Manager] can accomodate folders with more than 1000 assets. If you want to upload more items in such folder with 1000+ items existing already can result delay in upload or creation of the new folder.
 
 >[!IMPORTANT]
 >
