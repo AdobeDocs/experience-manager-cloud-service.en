@@ -256,9 +256,11 @@ To localize an Adaptive Form that contains Adaptive Form Fragments, you need to 
 * (**Mac only**) To ensure that the form fragments functionality works perfectly in all the scenarios, add the following entry to the /private/etc/hosts file:
   `127.0.0.1 <Host machine>` **Host machine**: The Apple Mac machine on which [!DNL AEM Forms] is deployed.
 
+<!--
 ## Reference Fragments {#reference-fragments}
 
 Reference Adaptive Form Fragments that you can use to create your form are available. For more information, see [Reference Fragments](reference-adaptive-form-fragments.md).
+-->
 
 >[!MORELIKETHIS]
 >
