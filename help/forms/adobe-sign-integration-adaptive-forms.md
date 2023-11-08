@@ -81,9 +81,8 @@ After prerequisites are in place, perform the following steps to configure [!DNL
    
       >[!NOTE]
       >
-      >* It is recommended not to change URLs of **[!UICONTROL OAuth URL]** and **[!UICONTROL Access token URL]**. 
       >* Keep the **Create Adobe Acrobat Sign Configuration** page open. Do not close it. You can retrieve **Client Id** and **Client Secret** after configuring OAuth settings for the [!DNL Adobe Acrobat Sign] application as described in upcoming steps.
-      > * Navigate to **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** to access information related to the shard for the [!DNL Adobe Acrobat Sign] application from your [!DNL Adobe Acrobat Sign] developer account.
+      > * After logging in your Adobe Sign account,navigate to **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** to access information related to Adobe Sign OAuth URL and Access Token URL.
 
 1. Configure OAuth settings for the [!DNL Adobe Acrobat Sign] application:
 
@@ -101,7 +100,7 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 
    For step-by-step information to configure OAuth settings for an [!DNL Adobe Acrobat Sign] application and obtain the keys, see [Configure oAuth settings for the application](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) developer documentation.
 
-   ![OAuth Config](assets/oauthconfig_new.png)
+   ![OAuth Config](/help/forms/assets/oauthconfig-new.png)
 
 1. Go back to the **[!UICONTROL Create Adobe Acrobat Sign Configuration]** page. In the **[!UICONTROL Settings]** tab, specify the [**[!UICONTROL Client ID]** (also referred to as Application ID) and **[!UICONTROL Client Secret]**]. Use the [Client ID and Client Secret of Adobe Acrobat Sign application](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) you created in the previous step.
 
@@ -151,8 +150,8 @@ Before you start connecting AEM Forms with Adobe Acrobat Sign Solution, ensure t
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a **[!UICONTROL Title]** for the configuration, enable **[!UICONTROL Cloud Configurations]**, and tap **[!UICONTROL Create]**. It creates a configuration container to store Cloud Services. Ensure that the folder name does not contain any space.
 1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Adobe Acrobat Sign]** and open the configuration container you created in the previous step. When you create an Adaptive Form, specify the container name in the **[!UICONTROL Configuration Container]** field.  
 1. On the configuration page, tap **[!UICONTROL Create]** to create [!DNL Adobe Acrobat Sign] configuration in AEM Forms.
-1. Copy the URL of your current browser window to a notepad and remove `/ui#/aem` from the URL. This URL is referred as `re-direct URL`. In the next section, you share the `re-direct URL` and `Scopes` with Adobe Sign team and request credentials (Client Id and Client Secret).  
-
+1. Copy the URL of your current browser window to a notepad and remove `/ui#/aem` from the URL. This URL is referred as `re-direct URL`. 
+In the next section, you share the `re-direct URL` and `Scopes` with Adobe Sign team and request credentials (Client Id and Client Secret).  
 
 #### Share the redirect URL and scopes with Adobe Sign team and receive credentials
 
@@ -206,9 +205,8 @@ The representative generates and shares credentials with you. In the next sectio
    
       >[!NOTE]
       >
-      > * It is recommended not to change URLs of the **[!UICONTROL OAuth URL]** and **[!UICONTROL Access token URL]**.
       > * Keep the **Create Adobe Acrobat Sign Configuration** page open. Do not close it. You can retrieve **Client Id** and **Client Secret** after configuring OAuth settings for the [!DNL Adobe Acrobat Sign] application as described in upcoming steps.
-      > * Navigate to **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** to access information related to the shard for the [!DNL Adobe Acrobat Sign] application from your [!DNL Adobe Acrobat Sign] developer account.
+      > * After logging in your Adobe Sign account,navigate to **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** to access information related to Adobe Sign oAuth URL and Access Token URL.
  
 1.  Use the credentials shared by  Adobe Acrobat Sign for Government Solution representative ([Adobe Professional Services team member]) in the previous section as [**[!UICONTROL Client ID]** and **[!UICONTROL Client Secret]**].  
 
