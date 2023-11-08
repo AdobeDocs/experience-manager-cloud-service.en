@@ -38,7 +38,7 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 * You can now use the [!DNL Experience Manager Assets] user interface to:
 
-  * Configure the [detection of duplicate assets](/help/assets/manage-digital-assets.md#detect-duplicate-assets) in a repository.
+  * Configure the [detection of duplicate assets](/help/assets/detect-duplicate-assets.md) in a repository.
 
   * Configure [adding digital watermarks](/help/assets/watermark-assets.md) to images.
 
