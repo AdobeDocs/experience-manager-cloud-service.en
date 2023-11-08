@@ -40,7 +40,7 @@ You can create an Adaptive Form Fragment from scratch or save a panel in an exis
 
       >[!NOTE]
       >
-      >An advantage of core component-based fragments over foundation component-based fragments is the ability to use multiple core component none-based fragments in a single Adaptive Form.
+      > In Adaptive Forms based on Core Components, you can use a single form fragment multiple times in a form. It supports both none-based and schema-based form fragments.
 
     * **Form Template**: Specifies to create the fragment using an XDP template uploaded to [!DNL AEM Forms]. Select the appropriate XDP template as the form model for the fragment.
 
@@ -168,7 +168,7 @@ You can use a schema-based form fragment multiple times in an Adaptive Form to s
 
   >[!NOTE]
   >
-  > If you use none-based form fragments multiple times in an Adaptive form, data syncing between the fields of fragments occurs. One advantage of [core component-based form fragments](/help/forms/adaptive-form-fragments-core-components.md) over foundation component-based form fragments is the ability to use multiple none-based form fragments based on core components in a single Adaptive Form without data syncing issues.
+  > * If you use none-based form fragments multiple times in an Adaptive form, data syncing between the fields of fragments occurs. You can use a single [form fragment (based on core components)](/help/forms/adaptive-form-fragments-core-components.md)  multiple times in a form. It supports both none-based and schema-based form fragments without data syncing issues. 
 
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 
