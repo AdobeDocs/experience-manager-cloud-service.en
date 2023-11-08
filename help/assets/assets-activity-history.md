@@ -5,6 +5,8 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
+hide: yes
+hidefromtoc: yes
 ---
 # View asset operation logs in activity stream {#activity-stream-in-timeline}
 
