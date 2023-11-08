@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.9.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-9-0.md)
       + [Release Notes for 2023.8.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-8-0.md)
       + [Release Notes for 2023.7.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-7-0.md)
       + [Release Notes for 2023.6.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-6-0.md)
@@ -541,6 +542,10 @@ user-guide-title: AEM as a Cloud Service
 
    + Integration with Adobe Express {#integration-adobe-express}
       + [AEM Assets add-on for Adobe Express](/help/assets/addon-adobe-express.md)    
+
+  + Integration with Creative Cloud {#integration-creative-cloud}
+      + [Connect AEM Assets to Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)  
+      
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
@@ -689,6 +694,7 @@ user-guide-title: AEM as a Cloud Service
     + [Assigning Player to a Display](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
   + Using Core Product Features {#core-product-features}
     + [Thumbnail Support for Videos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
+    + [Screens Notification Service](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
   + Developing in Screens as a Cloud Service {#developing-screens-cloud}
     + [REST APIs](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
     + [Creating Components](/help/screens-cloud/developing/creating-components.md)

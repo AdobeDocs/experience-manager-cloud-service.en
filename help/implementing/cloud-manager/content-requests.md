@@ -1,9 +1,8 @@
 ---
 title: Understanding Cloud Service Content Requests
 description: If you have purchased content request licenses from Adobe, learn about the types of content requests that Adobe Experience Cloud as a Service measures and the variances with an organization's analytics reporting tools.
-
+exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 ---
-
 # Cloud Service Content Requests
 
 ## Variances of Cloud Service Content Requests{#content-requests-variances}
@@ -20,7 +19,7 @@ Content Requests can have variances with an organization's Analytics reporting t
 |Third-Party Monitoring and Security Tools|Monitoring and security scanning tools may generate content requests for AEM that are not tracked in Analytics reports.|
 |API Access|Programmatic access to pages or to Adobe Experience Manager APIs may generate content requests for AEM that are not tracked in Analytics reports.|
 |Prefetch Requests|Using a prefetch service to pre-load pages to increase speed can cause significant content request traffic increases.|
-|DDOS|While Adobe makes every effort to automatically detect and filter out traffic from DDOS attacks, there is no guarantee that all possible DDOS attacks are detected|
+|DDOS|While Adobe makes attempts to automatically detect and filter out traffic from DDOS attacks, there is no guarantee that all possible DDOS attacks are detected.|
 |Traffic Blockers|Using a tracker blocker in a browser may opt out some requests from being tracked.|
 |Firewalls|Firewalls may block Analytics tracking. This scenario is more frequent with corporate firewalls.|
 
@@ -54,7 +53,7 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 | HTTP Code 400-499 | Excluded | Errors returned to the visitor when the content does not exist (404) or there are other content or request-related issues.|
 | HTTP Code 300-399 | Excluded | These are good requests that either check if something has changed on the server, or redirect the request to another resource. They do not contain content itself, therefore they are not billable.|
 | Requests going to /libs/* | Excluded | AEM internal JSON requests, such as the CSRF token that is not billable.|
-| Traffic from DDOS attacks | Excluded | DDOS protection. AEM does auto-detect some of the DDOS attacks and blocks them. DDOS attacks if detected are not billable.<br><br>Auto-detected DDOS types:<br>&bull; DDOSBlockedCiphersSHA<br>&bull; DDOSBlockedPattern<br>&bull; DDOSSuspiciousRequest |
+| Traffic from DDOS attacks | Excluded | DDOS protection. AEM does auto-detect some of the DDOS attacks and blocks them. DDOS attacks if detected are not billable. |
 | AEM as a Cloud Service NewRelic Monitoring | Excluded | AEM as a Cloud Service global monitoring.|
 | URL for customers to monitor their Cloud Service program | Excluded | Recommended URL to externally monitor the availability.<br><br>`/system/probes/health`|
 | AEM as a Cloud Service Pod Warm-up Service | Excluded | User Agent: skyline-service-warmup/1.*|
@@ -62,5 +61,3 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 | Exclude Commerce Integration Framework calls | Excluded | These are requests made to AEM that get forwarded to the Commerce Integration Framework&mdash;the URL starts with `/api/graphql`&mdash;to avoid double counting, they are not billable for Cloud Service.|
 | Exclude `manifest.json` | Excluded | Manifest is not an API call, it is here to provide information on how to install web sites on desktop or mobile phone. Adobe should not count JSON request to `/etc.clientlibs/*/manifest.json`|
 | Exclude `favicon.ico` | Excluded | While the returned content should not be HTML or JSON, we are observing that in some scenarios like SAML authentication flows, favicons can be returned as HTML therefore are explicitly excluded from the count.|
-
-
