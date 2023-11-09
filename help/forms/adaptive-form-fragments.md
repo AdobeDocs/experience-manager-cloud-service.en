@@ -168,7 +168,7 @@ You can use a schema-based form fragment multiple times in an Adaptive Form to s
 
   >[!NOTE]
   >
-  > If you use none-based form fragments multiple times in an Adaptive form, data synchronization between the fields of the fragments occurs. You can use a single [form fragment (based on core components)](/help/forms/adaptive-form-fragments-core-components.md) that is not tied to any form data model multiple times in a form without experiencing data synchronization issues. 
+  > If you use none-based form fragments multiple times in an Adaptive form, data synchronization issue between the fields of the fragments occurs. You can use a single [form fragment (based on core components)](/help/forms/adaptive-form-fragments-core-components.md) that is not tied to any form data model, multiple times in a form without experiencing data synchronization issues. 
 
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 
