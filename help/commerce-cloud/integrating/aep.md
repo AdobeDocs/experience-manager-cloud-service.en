@@ -499,6 +499,6 @@ __Profile XDM Events:__
 For more information, see the following resources:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [Experience Platform connector overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
-- [Experience Platform Connector Events](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
+- [Data Connection overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+- [Data Connection Events](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
 - [Adobe Experience Platform overview](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
