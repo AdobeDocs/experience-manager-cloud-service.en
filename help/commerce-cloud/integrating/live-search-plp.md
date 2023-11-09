@@ -135,12 +135,6 @@ Multiple files must be updated to enable [!DNL Live Search] functionality. Edit 
   ~ limitations under the License.
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   "use strict";
-  // TODO: Document steps categories="[core.cif.productlist.v1]" on clientlibs/.content.xml
-  // then need to add this to the clientlib-cif/.content.xml embed="[core.cif.productlist.v1]"
-
-  const qaPLP =
-    "https://plp-widgets-ui-qa.magento-datasolutions.com/v1/search.js";
-  const prodPLP = "https://plp-widgets-ui.magento-ds.com/v1/search.js";
 
   class ProductList {
     constructor() {
@@ -173,8 +167,7 @@ Multiple files must be updated to enable [!DNL Live Search] functionality. Edit 
       // if not, we will need to retrieve from graphql separately here.
 
       if (sessionData) {
-        this._state.dataServicesSessionContext =
-          JSON.parse(sessionData);
+        this._state.dataServicesSessionContext = JSON.parse(sessionData);
         return;
       }
     }
@@ -193,8 +186,9 @@ Multiple files must be updated to enable [!DNL Live Search] functionality. Edit 
 
     async _initWidgetPLP() {
       if (!window.LiveSearchPLP) {
-        // this._injectStoreScript(qaPLP);
-        this._injectStoreScript(prodPLP);
+        const liveSearchPlpSrc =
+          "https://plp-widgets-ui.magento-ds.com/v1/search.js";
+        this._injectStoreScript(liveSearchPlpSrc);
         // wait until script is loaded
         await new Promise((resolve) => {
           const interval = setInterval(() => {
@@ -212,7 +206,6 @@ Multiple files must be updated to enable [!DNL Live Search] functionality. Edit 
         console.log("no dataServicesSessionContext");
         return;
       }
-
 
       const root = document.getElementById("search-plp-root");
       if (!root) {
@@ -233,7 +226,8 @@ Multiple files must be updated to enable [!DNL Live Search] functionality. Edit 
           pageSize: dataServicesSessionContext.page_size,
           perPageConfig: {
             pageSizeOptions: dataServicesSessionContext.page_size_options,
-            defaultPageSizeOption: dataServicesSessionContext.default_page_size_option,
+            defaultPageSizeOption:
+              dataServicesSessionContext.default_page_size_option,
           },
           minQueryLength: "2",
           currencySymbol: dataServicesSessionContext.currency_symbol,
@@ -305,21 +299,21 @@ Multiple files must be updated to enable [!DNL Live Search] functionality. Edit 
   sling:resourceType="venia/components/commerce/productlist"
   ```
 
-  * ui.content/src/main/content/jcr_root/content/venia/us/en/search/.content.xml
+* ui.content/src/main/content/jcr_root/content/venia/us/en/search/.content.xml
 
-    Edit `.content.xml` at Line 26:
+  Edit `.content.xml` at Line 26:
 
-    ```xml
-    sling:resourceType="venia/components/commerce/productlist"
-    ```
-  
-  * ui.frontend/src/main/components/App/App.js
+  ```xml
+  sling:resourceType="venia/components/commerce/productlist"
+  ```
 
-    Edit `App.js` at Line 47, just above the `../../site/main.scss`:
+* ui.frontend/src/main/components/App/App.js
 
-    ```javascript
-    import '@adobe/magento-storefront-event-collector';
-    ```
+  Edit `App.js` at Line 47, just above the `../../site/main.scss`:
+
+  ```javascript
+  import '@adobe/magento-storefront-event-collector';
+  ```
 
 * ui.tests/test-module/specs/venia/productlist-dialog.js
 
@@ -335,4 +329,12 @@ There may be some categories where the default category or catalog page is desir
 
 1. From the Author page, select a category page template. _Venia Store - Home_ > _Catalog Page_ > _Venia Store - Category Page_ and select "Shop the look" or create a new page template.
 
-1. Click the _Properties_ section and in the _Commerce_ tab, chose the category you want to display with the selected category page template.
+  ![Select the template](../assets/cif-widget-1.jpg)
+
+1. Click the _Properties_ section and select the _Commerce_ tab. 
+
+![Choose Properties](../assets/cif-widget-2.jpg)
+
+1. Chose the category that you wish to display with the selected category page template.
+
+![Select the category](../assets/cif-widget-3.jpg)
