@@ -3,6 +3,7 @@ title: Getting Started with the Universal Editor in AEM
 description: Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 ---
+
 # Getting Started with the Universal Editor in AEM {#getting-started}
 
 Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
@@ -103,14 +104,17 @@ The instrumentation attributes added to the page consist mostly of [HTML Microda
 Connections which are used in the app are stored as `<meta>` tags in the page's `<head>`.
 
 ```html
-<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
+* `<category>` - This is a classification of the connection with two options.
+  * `system` - For creating a basic connection
+  * `config` - For [setting endpoints](#setting-endpoints) (optional)
 * `<referenceName>` - This is a short name which is reused in the document to identify the connection. E.g. `aemconnection`
 * `<protocol>` - This indicates which persistence plugin of the Universal Editor Persistence Service to use. E.g. `aem`
 * `<url>` - Ths is the URL to the system where the changes shall be persisted. E.g. `http://localhost:4502`
 
-The identifier `adobe:aem:editor` represents the connection for the Adobe Universal Editor.
+The identifier `urn:adobe:aue:system` represents the connection for the Adobe Universal Editor.
 
 `itemid`s will use the `urn` prefix to shorten the identifier.
 
@@ -128,10 +132,12 @@ itemid="urn:<referenceName>:<resource>"
 ### Example Connection {#example}
 
 ```html
+<meta name="urn:adobe:aue:system:<referenceName>" content="<protocol>:<url>">
+
 <html>
 <head>
-    <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:adobe:aem:editor:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aue:system:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>
@@ -141,9 +147,9 @@ itemid="urn:<referenceName>:<resource>"
               <p itemprop="title" itemtype="text">Journalist</p>
               <img itemprop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" itemtype="image" alt="avatar"/>
             </li>
- 
+
 ...
- 
+
             <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="component">
               <p itemprop="name" itemtype="text">John Smith</p>
               <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
@@ -153,6 +159,28 @@ itemid="urn:<referenceName>:<resource>"
         </aside>
 </body>
 </html>
+```
+
+### Setting Endpoints {#setting-endpoints}
+
+You can use the `config` prefix in your connection URN to set service and extension endpoints if required.
+
+In order to overwrite the default service endpoint that the Universal Editor provides, set a service endpoint:
+
+* Meta name - `urn:adobe:aue:config:service`
+* Meta content - `content="https://adobe.com"` (example)
+
+```html
+<meta name="urn:adobe:aue:config:service" content="<url>">
+```
+
+To fetch extensions, set the extension endpoints:
+
+* Meta name: `urn:adobe:aue:config:extensions`
+* Meta content: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (example)
+
+```html
+<meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
 ## You're Ready to Use the Universal Editor {#youre-ready}
