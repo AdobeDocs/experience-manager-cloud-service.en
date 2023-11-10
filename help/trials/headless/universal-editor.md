@@ -5,6 +5,7 @@ hidefromtoc: yes
 index: no
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 ---
+
 # Edit in Context with the Universal Editor {#editing-in-context}
 
 >[!CONTEXTUALHELP]
@@ -32,11 +33,11 @@ Editing in place and in context can often be advantageous over structured headle
 
 Using the Universal Editor, you have an agile way to edit your text in context and in place, allowing simple and intuitive content authoring.
 
-1. The editor should load by default in **Text** mode. If not, please tap or click the **Text** icon in the mode rail at the left side of the editor.
+1. The editor should load by default in **Components** mode. If not, please tap or click the **Components** icon in the mode rail at the left side of the editor.
 
-1. Tap or click the title of the latest article to edit it.
+1. Double tap or click the title of the latest article to edit it.
 
-   ![The Universal Editor](assets/do-not-localize/ue-text-mode.png)
+   ![The Universal Editor](assets/do-not-localize/ue-component-mode.png)
 
 1. The component is selected as indicated by a blue border with a tab indicating that it is a text component. A cursor is in the border awaiting text input. Change the text to `Aloha Spirit in Lofoten`.
 
@@ -50,11 +51,9 @@ The Universal Editor saves your changes automatically within the authoring envir
 
 You can also swap out images while still remaining in the context of your content by using the Universal Editor.
 
-1. Change the editor to **Media** mode by tapping or clicking the **Media** button on the mode rail.
+1. Remaining in **Components** mode, tap or click the image of the surfer to select it.
 
-1. Tap or click the image of the surfer to select it.
-
-1. In the component rail, you can see the detail of the asset. Tap or click **Replace**.
+1. In the component rail, you can see the detail of the asset. Tap or click the **Featured Image** thumbnail.
 
    ![Selecting an image to edit](assets/do-not-localize/ue-edit-media.png)
 
@@ -76,7 +75,7 @@ The Universal Editor lets you interact with your content within its context, see
 
 1. Readers may be on different devices with different aspect ratios, so the editor offers emulation modes in order to see how the page will be presented to users. For example, select the mobile device option in portrait mode.
 
-   ![The emulator menu item](assets/do-not-localize/ue-emulator-3.png)
+   ![The emulator menu item](assets/do-not-localize/ue-emulator-2.png)
 
 1. See the content change in the editor. The icon for the emulator also changes to reflect the mode it is in. Tap or click anywhere outside of the emulator menu to close it and interact with your content.
 
@@ -112,12 +111,12 @@ To accelerate your content authoring experience when structured editing of headl
 
 1. In the mode rail on the left side of the editor, select **Components**. This lets you select page components in the editor.
 
-1. Tap or click one of the adventures to select it.
+1. Tap or click one of the adventures such as **Bali Surf Camp** to select it.
 
-   * Note the blue outline of the selected component. The tab should read **reference** when a Content Fragment is selected.
+   * Note the blue outline of the selected component. The tab should display the name of the Content Fragment when a Content Fragment is selected. In this case **Bali Surf Camp**.
    * Because the Universal Editor allows selecting any object on the page, components that are parts of a Content Fragment can also be selected individually. Tap or click where indicated in the illustration to select the entire Content Fragment component.
 
-1.  A new **Edit** icon appears on the mode rail. Tap or click the **Edit** icon to open the Content Fragment editor on a new tab.
+1.  The **Edit** icon appears on the component rail. Tap or click the **Edit** icon to open the Content Fragment editor on a new tab.
 
    ![Selecting Content Fragments in the Universal Editor](assets/do-not-localize/ue-content-fragments.png)
 
