@@ -308,7 +308,7 @@ Press enter/return or tap or click outside of the text box to save your changes.
 
 When you tap or click to select the text component, its details are shown in the properties rail. You can also edit the text in the rail.
 
-![Editing text in the properties rail](assets/ue-editing-text-properties-rail.png)
+![Editing text in the properties rail](assets/ue-editing-text-component-rail.png)
 
 Additionally, details on your text are available in the properties rail. Changes are automatically saved once focus leaves the edited field in the properties rail.
 
