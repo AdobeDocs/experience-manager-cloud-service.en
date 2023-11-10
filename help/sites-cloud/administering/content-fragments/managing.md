@@ -137,10 +137,7 @@ Selecting a specific fragment will open a toolbar focused on the actions availab
 * **[Move](/help/assets/manage-digital-assets.md)**
 * **[Rename](/help/assets/manage-digital-assets.md)**
 * **[Delete](#deleting-a-fragment)**
-
-<!--
 * **[Replace](#find-and-replace)**
--->
 
 >[!NOTE]
 >
@@ -368,13 +365,11 @@ When the relevant dialog opens you can select the appropriate service:
 >
 >If the fragment is already referenced from another fragment, or from a page, you will then see a warning message and be required to confirm that you want to proceed.
 
-<!--
 ## Find and Replace {#find-and-replace}
 
-The **Replace** option is available to find, and replace, specified text in your selected Content Fragment:
+The **Replace** option is available to find, and replace, specified text in your selected Content Fragments. Before replacement, validation criteria are checked and you are informed of any conflicts, allowing you to change the replacement string or only replace the validated instances.
 
-![Unpublish dialog](assets/cf-managing-find-replace.png)
--->
+![Find and Replace](assets/cf-managing-find-replace.png)
 
 ## Deleting a Fragment {#deleting-a-fragment}
 
