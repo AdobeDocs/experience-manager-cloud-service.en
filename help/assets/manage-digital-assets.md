@@ -38,39 +38,6 @@ The following (space-separated list of) characters are not supported:
 
 See [add digital assets to Experience Manager](add-assets.md).
 
-## Detect duplicate assets {#detect-duplicate-assets}
-
-<!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
-
-If a DAM user uploads one or more assets that already exist in the repository, [!DNL Experience Manager] detects the duplication and notifies the user. Duplicate detection is disabled by default as it can have performance impact depending on size of repository and number of assets uploaded.
-
-To enable the feature:
-
-1. Navigate to **[!UICONTROL Tools > Assets > Assets Configurations]**.
-
-1. Click **[!UICONTROL Asset Duplication Detector]**.
-
-1. On the [!UICONTROL Asset Duplication Detector page], click **[!UICONTROL Enabled]**.
-
-   `dam:sha1` value for the Detect Metadata field ensures that duplicate assets are detected even if the filenames are different.
-
-1. Click **[!UICONTROL Save]**.
-
-   ![Asset Duplication Detector](assets/asset-duplication-detector.png)
-
->[!NOTE]
->
->If you have configured Duplication Detector using `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` configuration file (OSGi configuration), you can continue to use it, however, Adobe recommends using the new method.
- 
-
-Once enabled, Experience Manager sends notifications of duplicate assets to the Experience Manager Inbox. It is an aggregated result for multiple duplicates. Users can choose to remove the assets based on the results.
-
-![Inbox notification for duplicate assets](assets/duplicate-detect-inbox-notification.png)
-
->[!NOTE]
->
->When you upload assets to the repository, Experience Manager detects duplication and notifies you about the first 100 duplicate assets.
-
 ## Extract ZIP archives {#extract-zip-archives}
 
 Select ZIP archives that are managed in Experience Manager and extract the files directly into Experience Manager without downloading them.
