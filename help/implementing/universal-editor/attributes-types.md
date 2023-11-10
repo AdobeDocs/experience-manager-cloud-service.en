@@ -3,6 +3,7 @@ title: Attributes and Types
 description: Learn about the data attributes and types that the Universal Editor requires.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 ---
+
 # Attributes and Types {#attributes-types}
 
 Learn about the data attributes and types that the Universal Editor requires.
