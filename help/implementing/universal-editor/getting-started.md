@@ -108,8 +108,8 @@ Connections which are used in the app are stored as `<meta>` tags in the page's 
 ```
 
 * `<category>` - This is a classification of the connection with two options.
-  * `system` - For creating a basic connection
-  * `config` - For [setting endpoints](#setting-endpoints) (optional)
+  * `system` - For connection endpoints
+  * `config` - For [defining optional configuration settings](#configuration-settings)
 * `<referenceName>` - This is a short name which is reused in the document to identify the connection. E.g. `aemconnection`
 * `<protocol>` - This indicates which persistence plugin of the Universal Editor Persistence Service to use. E.g. `aem`
 * `<url>` - Ths is the URL to the system where the changes shall be persisted. E.g. `http://localhost:4502`
@@ -161,7 +161,7 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-### Setting Endpoints {#setting-endpoints}
+### Configuration Settings {#configuration-settings}
 
 You can use the `config` prefix in your connection URN to set service and extension endpoints if required.
 
