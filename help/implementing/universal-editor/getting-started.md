@@ -165,7 +165,7 @@ itemid="urn:<referenceName>:<resource>"
 
 You can use the `config` prefix in your connection URN to set service and extension endpoints if required.
 
-In order to overwrite the default service endpoint that the Universal Editor provides, set a service endpoint:
+If you would like not to use the Universal Editor Service, which is hosted by Adobe, but your own hosted version, you can set this in a meta tag. In order to overwrite the default service endpoint that the Universal Editor provides, set your own service endpoint:
 
 * Meta name - `urn:adobe:aue:config:service`
 * Meta content - `content="https://adobe.com"` (example)
@@ -174,7 +174,7 @@ In order to overwrite the default service endpoint that the Universal Editor pro
 <meta name="urn:adobe:aue:config:service" content="<url>">
 ```
 
-To fetch extensions, set the extension endpoints:
+If you only want to have certain extensions enabled for a page, you can set this in a meta tag. To fetch extensions, set the extension endpoints:
 
 * Meta name: `urn:adobe:aue:config:extensions`
 * Meta content: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (example)
