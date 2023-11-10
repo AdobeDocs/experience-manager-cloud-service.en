@@ -214,7 +214,7 @@ The editor occupies most of the window and is where the page specified in [the l
 
 The properties rail is always present along the right side of the editor. Depending on its mode, it can show details for a component selected in the content or the hierarchy of the page contents.
 
-![The properties rail](assets/properties-rail.png)
+![The properties rail](assets/component-rail.png)
 
 #### Properties Mode {#properties-mode}
 
