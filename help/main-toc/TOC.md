@@ -70,6 +70,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2023 {#2023}
+      + [Maintenance Release Notes for 2023.11.0](/help/release-notes/maintenance/2023/2023.11.0.md) 
       + [Maintenance Release Notes for 2023.10.0](/help/release-notes/maintenance/2023/2023.10.0.md) 
       + [Maintenance Release Notes for 2023.9.0](/help/release-notes/maintenance/2023/2023.9.0.md) 
       + [Maintenance Release Notes for 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md) 
@@ -426,6 +427,7 @@ user-guide-title: AEM as a Cloud Service
     + [Color tags for images](/help/assets/color-tag-images.md)
     + [Manage PDF documents](/help/assets/manage-pdf-documents.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
+    + [Detect duplicate assets](/help/assets/detect-duplicate-assets.md)
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
     + [Folder metadata schema](/help/assets/folder-metadata-schema.md)
     + [Work with image and video profiles](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -586,6 +588,7 @@ user-guide-title: AEM as a Cloud Service
       + [Use Form Data Model](/help/forms/using-form-data-model.md)
   + Adaptive Forms {#adaptive-forms-authoring}
     + [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)
+    + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments.md)
     + [Add an Adaptive Form to an AEM Sites page or Experience Fragment](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
     + Core Components {#authoring-adaptive-forms-core-components}
       + Create an Adaptive Form {#create-an-adaptive-form-on-forms-cs}
@@ -695,6 +698,7 @@ user-guide-title: AEM as a Cloud Service
     + [Assigning Player to a Display](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
   + Using Core Product Features {#core-product-features}
     + [Thumbnail Support for Videos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
+    + [Screens Notification Service](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
   + Developing in Screens as a Cloud Service {#developing-screens-cloud}
     + [REST APIs](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
     + [Creating Components](/help/screens-cloud/developing/creating-components.md)
