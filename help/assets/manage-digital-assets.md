@@ -38,39 +38,6 @@ The following (space-separated list of) characters are not supported:
 
 See [add digital assets to Experience Manager](add-assets.md).
 
-## Detect duplicate assets {#detect-duplicate-assets}
-
-<!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
-
-If a DAM user uploads one or more assets that already exist in the repository, [!DNL Experience Manager] detects the duplication and notifies the user. Duplicate detection is disabled by default as it can have performance impact depending on size of repository and number of assets uploaded.
-
-To enable the feature:
-
-1. Navigate to **[!UICONTROL Tools > Assets > Assets Configurations]**.
-
-1. Click **[!UICONTROL Asset Duplication Detector]**.
-
-1. On the [!UICONTROL Asset Duplication Detector page], click **[!UICONTROL Enabled]**.
-
-   `dam:sha1` value for the Detect Metadata field ensures that duplicate assets are detected even if the filenames are different.
-
-1. Click **[!UICONTROL Save]**.
-
-   ![Asset Duplication Detector](assets/asset-duplication-detector.png)
-
->[!NOTE]
->
->If you have configured Duplication Detector using `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` configuration file (OSGi configuration), you can continue to use it, however, Adobe recommends using the new method.
- 
-
-Once enabled, Experience Manager sends notifications of duplicate assets to the Experience Manager Inbox. It is an aggregated result for multiple duplicates. Users can choose to remove the assets based on the results.
-
-![Inbox notification for duplicate assets](assets/duplicate-detect-inbox-notification.png)
-
->[!NOTE]
->
->When you upload assets to the repository, Experience Manager detects duplication and notifies you about the first 100 duplicate assets.
-
 ## Extract ZIP archives {#extract-zip-archives}
 
 Select ZIP archives that are managed in Experience Manager and extract the files directly into Experience Manager without downloading them.
@@ -261,6 +228,14 @@ The other properties and metadata information is retained. A partial copy is not
    >If you select a rendition from the **[!UICONTROL Renditions]** panel, the toolbar changes context and displays only those actions that are relevant to the rendition. Options, such as the Upload Rendition icon is not displayed. To view these options in the toolbar, navigate to the details page for the asset.
 
    You can configure the dimensions for the rendition you want displayed in the details page of an image or video asset. Based on the dimensions you specify, Assets displays the rendition with the exact or closest dimensions.
+
+   You cannot create renditions with the following prefixes, as these are internal to Adobe:
+
+   * cq5
+
+   * cqdam
+
+   * cq5dam 
 
    To configure rendition dimensions of an image at the asset detail level, overlay the `renditionpicker` node (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) and configure the value of the width property. Configure the property **[!UICONTROL size (Long) in KB]** in place of width to customize rendition on asset detail page based on image size. For size-based customization, the property `preferOriginal` assigns preference to the original if the size of the matched rendition is greater than the original.
 

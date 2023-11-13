@@ -43,7 +43,7 @@ You can create an Adaptive Form fragment from scratch or save a panel in an exis
 
       >[!NOTE]
       >
-      >An advantage of core component-based fragments over foundation component-based fragments is the ability to use multiple core component-based fragments not tied to any form model in a single Adaptive Form.
+      > In Adaptive Forms, you can use single form fragment (based on Core Components) multiple times. It supports both none-based and schema-based form fragments.
       
     * **Schema**: Specifies to create the fragment using an XML or JSON schema uploaded to AEM Forms. You can upload or select from the available XML or JSON schemas as the form model for the fragment. When you select an XML schema, you can also create an Adaptive Form fragment by selecting a complexType present in the selected schema from the **[!UICONTROL XML Schema Complex Type]** drop-down box. When you select a JSON schema, you can also create an Adaptive Form fragment by selecting a schema definition present in the selected schema from the **[!UICONTROL JSON Schema Definitions]** drop-down box. 
     * **Form Data Model**:  Specifies to create the fragment using a form data model. You can create an Adaptive Form fragment based on only one data model object in a form data model. Expand Form Data Model Definitions drop-down. It lists all data model objects in the specified form data model. Select a data model object from the list.
@@ -101,7 +101,11 @@ Perform the following steps to show complete fragments in forms:
 
 You can create nested Adaptive Form fragments, which means you can drag-drop a fragment in another fragment, and can have nested fragment structure.
 
+### Using a form fragment multiple times in an Adaptive Form {#using-form-fragment-mutiple-times-in-af}
 
+You can use a none-based as well as schema-based form fragment multiple times in an Adaptive Form to save data uniquely for each form fragments fields. For example, you can use an address form fragment to collect address details for permanent, communication, and present living addresses in a loan application form. 
+
+![using multiple fragment in adaptive form](/help/forms/assets/using-multiple-fragment-af.gif)
 
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 

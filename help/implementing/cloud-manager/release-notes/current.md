@@ -62,3 +62,15 @@ If you are interested in testing this new feature and sharing your feedback, ple
 The dashboard leverages Google Lighthouse, an open-source, automated tool for improving the quality of your web apps. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more.
 
 Interested in test-driving the new dashboard? Please send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID and we can get you started.
+
+## Known Issues {#known-issues}
+
+There is a known bug preventing [config deployment pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) from being pushed to production.
+
+If the **Pause before deploying to Production** option is required for a config deployment pipeline, the following is the suggested workaround until the bug is resolved.
+
+1. Run the pipeline.
+1. Test the code in the staging environment.
+1. When deploying and approval becomes available, click on **Reject**.
+1. Edit the pipeline to disable the **Pause before deploying to Production** option.
+1. Run the pipeline again. Iit will run again on staging then on production.
