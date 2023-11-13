@@ -15,7 +15,7 @@ This page documents the release notes for Cloud Manager release 2023.11.0 in AEM
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager release 2023.11.0 in AEM as a Cloud Service is 2 November 2023. The next release is planned for X December 2023.
+The release date for Cloud Manager release 2023.11.0 in AEM as a Cloud Service is 2 November 2023. The next release is planned for 7 December 2023.
 
 ## What's New {#what-is-new}
 
