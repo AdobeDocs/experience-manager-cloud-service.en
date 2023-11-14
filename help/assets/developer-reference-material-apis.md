@@ -359,7 +359,7 @@ fi
 
 # Step 4: Upload binary to the blob store in parts
 PART_NUMBER=1
-for i in {1..1}; do
+for i in $(seq 1 $NUM_PARTS); do
     PART_SIZE=${MAX_PART_SIZE}
     if [ ${PART_NUMBER} -eq ${NUM_PARTS} ]; then
         PART_SIZE=${LAST_PART_SIZE}
@@ -376,7 +376,7 @@ for i in {1..1}; do
         debug "Creating part file: ${PART_FILE}"
     fi
 	
-	UPLOAD_URI=${UPLOAD_URIS[$PART_NUMBER]}
+	UPLOAD_URI=${UPLOAD_URIS[$PART_NUMBER-1]}
 
     debug "Uploading part ${PART_NUMBER}..."
     debug "Part File: ${PART_FILE}"
@@ -384,16 +384,16 @@ for i in {1..1}; do
 
     # Upload the part in the background
     if command -v pv &> /dev/null; then
-        pv "${PART_FILE}" | curl --progress-bar -X PUT --data-binary "@-" "${UPLOAD_URI}" &
+        pv "${PART_FILE}" | curl --progress-bar -X PUT --data-binary "@-" "${UPLOAD_URI}" 
     else
-        curl -# -X PUT --data-binary "@${PART_FILE}" "${UPLOAD_URI}" &
+        curl -# -X PUT --data-binary "@${PART_FILE}" "${UPLOAD_URI}" 
     fi
 
     PART_NUMBER=$((PART_NUMBER + 1))
 done
 
 # Wait for all background processes to finish
-wait
+#wait
 
 # Step 5: Complete the upload in AEM
 COMPLETE_UPLOAD_ENDPOINT="${AEM_URL}${COMPLETE_URI}"
