@@ -44,7 +44,7 @@ The UI is divided into five main areas.
 * [The Universal Editor header](#universal-editor-header)
 * [The mode rail](#mode-rail)
 * [The editor](#editor)
-* [The component rail](#component-rail)
+* [The properties rail](#properties-rail)
 
 ![The Universal Editor UI](assets/ui.png)
 
@@ -96,11 +96,19 @@ The Universal Editor header is always present at the top of the screen just belo
 
 ![The Universal Editor header](assets/universal-editor-header.png)
 
-#### The Hamburger Menu {#hamburger-menu}
+#### The Home Button {#home-button}
 
-The hamburger menu is not yet implemented.
+The home button returns you to the start page of the Universal Editor
 
-![Hamburger menu](assets/hamburger-menu.png)
+![Hamburger menu](assets/home-button.png)
+
+On the start page you can enter the URL of the site you want to edit with the Universal Editor.
+
+![Start page](assets/start-page.png)
+
+>[!NOTE]
+>
+>Any page that you wish to edit with the Universal Editor must be [instrumented to support he Universal Editor.](getting-started.md)
 
 #### Location Bar {#location-bar}
 
@@ -115,6 +123,12 @@ The location bar shows you the address of the page you are editing. Tap or click
 >[!NOTE]
 >
 >Any page that you wish to edit with the Universal Editor must be [instrumented to support he Universal Editor.](getting-started.md)
+
+#### Authentication Header Settings {#authentication-settings}
+
+Tap or click the authentication header settings icon if you need to set an authentication secret.
+
+![Authentication heder settings button](assets/authentication-header-settings.png)
 
 #### Emulator Settings {#emulator}
 
@@ -156,7 +170,7 @@ Tap or click the publish button so you can publish the changes to the content li
 
 ### The Mode Rail {#rail}
 
-The mode rail is always present along the left side of the editor. It allows easy switching the editor between different editing modes.
+The mode rail is just below the home button and is always present along the left side of the editor. It allows easy switching the editor between different usage modes.
 
 ![The mode rail](assets/mode-rail.png)
 
@@ -170,52 +184,41 @@ In preview mode, the page rendered in the editor as it would be seen on your pub
 >
 >Use the hot key `P` to switch to preview mode.
 
-#### Media Mode {#media-mode}
+#### Components Mode {#component-mode}
 
-In media mode, the content author can click to select media content.
-
-![Media mode](assets/media-mode.png)
-
- Details of the content are displayed in the component rail and the author can also [edit the media content.](#editing-media)
-
->[!TIP]
->
->Use the hot key `M` to switch to media mode.
-
-#### Component Mode {#component-mode}
-
-In component mode, the content author can click to select components in order to edit them including:
+In components mode, the content author can click to select components in order to edit them including:
 
 * [Editing plain text](#editing-content) in place.
-* [Editing rich text](#editing-rich-text) in place with additional formatting options displayed in the component rail.
+* [Editing rich text](#editing-rich-text) in place with additional formatting options displayed in the properties rail.
+* [Editing media content](#editing-media)
 * [Editing Content Fragments](#edit-content-fragment)
 
-![Component mode](assets/component-mode.png)
+![Components mode](assets/component-mode.png)
 
-When you select a [Content Fragment](/help/assets/content-fragments/content-fragments.md), the details of it are displayed in the component rail where you can edit the Content Fragment.
+When you select a component, the details of its content are displayed in the [properties rail.](#properties-rail) Depending on the content type, you can edit either in-place or in the properties rail.
 
 >[!TIP]
 >
->Use the hot key `C` to switch to component mode.
+>Use the hot key `C` to switch to components mode.
 
 ### The Editor {#editor}
 
 The editor occupies most of the window and is where the page specified in [the location bar](#location-bar) is rendered.
 
-* If the editor is in [component mode,](#component-mode) the content will be editable, but you cannot follow links.
+* If the editor is in [components mode,](#component-mode) the content will be editable, but you cannot follow links.
 * If the editor is in [preview mode,](#preview-mode) the content will be navigable and you can follow links, but you cannot edit the content.
 
 ![Editor](assets/editor.png)
 
-### Component Rail {#component-rail}
+### Properties Rail {#properties-rail}
 
-The component rail is always present along the right side of the editor. Depending on its mode, it can show details for a component selected in the content or the hierarchy of the page contents.
+The properties rail is always present along the right side of the editor. Depending on its mode, it can show details for a component selected in the content or the hierarchy of the page contents.
 
-![The component rail](assets/component-rail.png)
+![The properties rail](assets/component-rail.png)
 
 #### Properties Mode {#properties-mode}
 
-In properties mode, the rail shows the properties of the component currently selected in the editor. This is the default mode of the component rail when a page is loaded.
+In properties mode, the rail shows the properties of the component currently selected in the editor. This is the default mode of the properties rail when a page is loaded.
 
 ![Properties mode](assets/properties-mode.png)
 
@@ -228,20 +231,6 @@ Note that not all components have details that can be shown and/or edited.
 >[!TIP]
 >
 >Use the hot key `D` to switch to properties mode.
-
-##### Edit {#edit}
-
-When in [component mode,](#component-mode) the edit options for the selected component appear in the component rail. In the component rail you can edit the selected component. However you can also tap or click the edit button.
-
-![Edit icon](assets/edit.png)
-
-Tapping or clicking the edit button opens the [Content Fragment editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in a new tab. This allows you access to the full power of the Content Fragment Editor to edit the associated Content Fragment.
-
-Depending on the needs of your workflow, you may wish to edit the Content Fragment in the Universal Editor or directly in the Content Fragment editor.
-
->[!TIP]
->
->Use the hot key `E` to edit a selected component.
 
 #### Content Tree Mode {#content-tree-mode}
 
@@ -257,13 +246,29 @@ When selecting an item in the content tree, the editor scrolls to that content a
 >
 >Use the hot key `F` to switch to content tree mode.
 
+##### Edit {#edit}
+
+When in [components mode,](#component-mode) the edit options for the selected component appear in the properties rail. In the properties rail you can edit the selected component. If the selected component is a Content Fragment, you can also tap or click the edit button.
+
+![Edit icon](assets/edit.png)
+
+Tapping or clicking the edit button opens the [Content Fragment editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in a new tab. This allows you access to the full power of the Content Fragment Editor to edit the associated Content Fragment.
+
+Depending on the needs of your workflow, you may wish to edit the Content Fragment in the Universal Editor or directly in the Content Fragment editor.
+
+>[!TIP]
+>
+>Use the hot key `E` to edit a selected component.
+
 ##### Add {#add}
 
-If you select a container component either in the content tree or in the editor, the add option appears on the component rail.
+If you select a container component either in the content tree or in the editor, the add option appears on the properties rail.
 
 ![Add icon](assets/ue-add-component-icon.png)
 
 Tapping or clicking the add button opens a drop-down menu of components that are available to [add to the selected container.](#adding-components)
+
+![Add context menu](assets/add-context-menu.png)
 
 >[!TIP]
 >
@@ -271,7 +276,7 @@ Tapping or clicking the add button opens a drop-down menu of components that are
 
 ##### Delete {#delete}
 
-If you select a component within a container component either in the content tree or in the editor, the delete option appears on the component rail.
+If you select a component within a container component either in the content tree or in the editor, the delete option appears on the properties rail.
 
 ![Delete icon](assets/ue-delete-component-icon.png)
 
@@ -283,51 +288,51 @@ Tapping or clicking the delete button [deletes the component.](#deleting-compone
 
 ## Editing Content {#editing-content}
 
-Editing content is simple and intuitive. In editing modes ([media mode](#media-mode) and [component mode](#component-mode)), as you mouse over content in the editor, editable content is highlighted with a blue box.
+Editing content is simple and intuitive. In [components mode](#component-mode), as you mouse over content in the editor, editable content is highlighted with a blue box.
 
 ![Editable content is highlighted by a blue box](assets/editable-content.png)
 
 >[!TIP]
 >
->Note that in edit mode, tapping or clicking on content selects it for editing. If you wish to navigate your content by following links, switch to [preview mode.](#preview-mode)
+>Note that in components mode, tapping or clicking on content selects it for editing. If you wish to navigate your content by following links, switch to [preview mode.](#preview-mode)
 
-Depending on the [mode](#mode-rail) you are in and the content you select, you may have different in place editing options and you may be able to review additional properties for the content using the [component rail.](#component-rail)
+Depending on the content you select, you may have different in-place editing options and you may additional information and options for the content in the [properties rail.](#properties-rail)
 
 ### Editing Plain Text {#edit-plain-text}
 
-If you are in [component mode](#component-mode) and select a plain text component, you can edit the text in place by double-clicking or double-tapping the component.
+If you are in [components mode](#component-mode) and select a plain text component, you can edit the text in place by double-clicking or double-tapping the component.
 
 ![Editing content](assets/editing-content.png)
 
 Press enter/return or tap or click outside of the text box to save your changes.
 
-When you tap or click to select the text component, its details are shown in the component rail. You can also edit the text in the rail.
+When you tap or click to select the text component, its details are shown in the properties rail. You can also edit the text in the rail.
 
-![Editing text in the component rail](assets/ue-editing-text-component-rail.png)
+![Editing text in the properties rail](assets/ue-editing-text-component-rail.png)
 
-Additionally, details on your text are available in the component rail. Changes are automatically saved once focus leaves the edited field in the component rail.
+Additionally, details on your text are available in the properties rail. Changes are automatically saved once focus leaves the edited field in the properties rail.
 
 ### Editing Rich Text {#edit-rich-text}
 
-If you are in [component mode](#component-mode) and select a rich text component, you can edit the text in place by double-clicking or double-tapping the component.
+If you are in [components mode](#component-mode) and select a rich text component, you can edit the text in place by double-clicking or double-tapping the component.
 
 Press enter/return or tap or click outside of the text box to save your changes.
 
 ![Editing a rich text component](assets/rich-text-editing.png)
 
-Additionally, formatting options and details on your text are available in the component rail. Changes are automatically saved once focus leaves the edited field in the component rail.
+Additionally, formatting options and details on your text are available in the properties rail. Changes are automatically saved once focus leaves the edited field in the properties rail.
 
 ### Editing Media {#edit-media}
 
-If you are in [media mode](#media-mode) and you select an image, you can view its details in the component rail.
+If you are in [components mode](#component-mode) and you select an image, you can view its details in the properties rail.
 
 ![Editing media](assets/ue-edit-media.png)
 
-Tap or click the **Replace** button below the preview of the selected image in the component rail to replace the image with another from your library of assets.
+Tap or click the **Replace** button below the preview of the selected image in the properties rail to replace the image with another from your library of assets.
 
 1. The [asset selector](/help/assets/asset-selector.md#using-asset-selector) window opens to allow you to select an asset.
 1. Tap or click to select a new asset.
-1. Tap or click **Select** to return to the component rail where the asset was replaced.
+1. Tap or click **Select** to return to the properties rail where the asset was replaced.
 
 Changes are saved to your content automatically.
 
@@ -337,15 +342,15 @@ Changes are saved to your content automatically.
 
 ### Editing Content Fragments {#edit-content-fragment}
 
-If you are in [component mode](#component-mode) and you select a [Content Fragment,](/help/sites-cloud/administering/content-fragments/overview.md) you can edit its details in the component rail.
+If you are in [components mode](#component-mode) and you select a [Content Fragment,](/help/sites-cloud/administering/content-fragments/overview.md) you can edit its details in the properties rail.
 
 ![Editing a Content Fragment](assets/ue-edit-cf.png)
 
-The fields defined in the content model of the selected Content Fragment are displayed and editable in the component rail.
+The fields defined in the content model of the selected Content Fragment are displayed and editable in the properties rail.
 
 If you select a field that is related to a Content Fragment, the Content Fragment loads in the components rail and the field is automatically scrolled to.
 
-Changes are automatically saved once focus leaves the edited field in the component rail.
+Changes are automatically saved once focus leaves the edited field in the properties rail.
 
 If you wish to edit your Content Fragment in the [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md) instead, click the [edit button](#edit) in the mode rail.
 
@@ -354,7 +359,7 @@ Depending on the needs of your workflow, you may wish to edit the Content Fragme
 ### Adding Components to Containers {#adding-components}
 
 1. Select a container component in the content tree or in the editor.
-1. Then tap or click the add icon in the component rail.
+1. Then tap or click the add icon in the properties rail.
 
    ![Selecting a component to add to a container](assets/ue-add-component.png)
 
@@ -369,7 +374,7 @@ The component is inserted into the container and can be edited in the editor.
 1. Select a container component in the content tree or in the editor.
 1. Tap or click the chevron icon of the container to expand its contents in the content tree.
 1. Then, in the content tree, select a component within the container.
-1. Tap or click the delete icon in the component rail.
+1. Tap or click the delete icon in the properties rail.
 
    ![Deleting a component](assets/ue-delete-component.png)
 
@@ -396,7 +401,7 @@ The components are reordered in both the content tree and in the editor
 
 When you are finished editing content, you often want to navigate it to see how it looks in the content of other pages. In [preview mode](#preview-mode) you can click links to navigate your content as a reader would. The content is rendered in the editor as it would be published.
 
-Note that in preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you wish to select the content for editing, switch to an editing mode such as [component mode](#component-mode) or [media mode.](#media-mode)
+Note that in preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you wish to select the content for editing, switch to [components mode.](#component-mode)
 
 ## Additional Resources {#additional-resources}
 
