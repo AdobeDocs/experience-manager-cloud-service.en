@@ -367,7 +367,7 @@ When the relevant dialog opens you can select the appropriate service:
 
 ## Find and Replace {#find-and-replace}
 
-The **Replace** option is available to find, and replace, specified text in your selected Content Fragments. 
+The **Replace** action is available (in the top toolbar) to find, and replace, specified text in your selected Content Fragments. 
 
 ![Find and Replace](assets/cf-managing-find-replace.png)
 
