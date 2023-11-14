@@ -16,7 +16,9 @@ You can add a custom domain name from two locations in Cloud Manager:
 
 ## Adding a Custom Domain Name from the Domain Settings Page {#adding-cdn-settings}
 
-Follow these steps to add a custom domain name from the **Domain Settings** page. If you are using a different CDN than the Fastly that was provided, these steps will not work for you, and you must configure your domain with the CDN you have set up. 
+When adding a custom domain name, the domain will be served using the most specific, valid certificate. If multiple certificates have the same domain, then the most recently updated is chosen. Adobe recommends that you manage certificates such that there are no overlapping domains.
+
+Follow these steps to add a custom domain name from the **Domain Settings** page. These steps are based on Fastly. If you use a different CDN, you must configure your domain with the CDN you have chosen to use.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
