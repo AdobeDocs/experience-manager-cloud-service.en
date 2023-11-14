@@ -73,21 +73,7 @@ Aside from changes under the `/home` folder on the publish tier, direct changes 
 
 ## Custom run modes are not allowed {#custom-runmodes}
 
-The following run modes are provided out-of-the-box for AEM Cloud Service:
-
-* `author`
-* `publish`
-* `prod`
-* `author.prod`
-* `publish.prod`
-* `stage`
-* `author.stage`
-* `publish.stage`
-* `dev`
-* `author.dev`
-* `publish.dev`
-
-Additional or custom run modes are not possible in AEM Cloud Service.
+Additional or custom run modes are not possible in AEM Cloud Service. For a list of run modes that are provided out-of-the-box for AEM Cloud Service, please see the document [Deploying to AEM as a Cloud Service.](/help/implementing/deploying/overview.md#runmodes)
 
 ## Removal of Replication Agents and related changes {#replication-agents}
 
