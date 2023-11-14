@@ -367,9 +367,20 @@ When the relevant dialog opens you can select the appropriate service:
 
 ## Find and Replace {#find-and-replace}
 
-The **Replace** option is available to find, and replace, specified text in your selected Content Fragments. Before replacement, validation criteria are checked and you are informed of any conflicts, allowing you to change the replacement string or only replace the validated instances.
+The **Replace** option is available to find, and replace, specified text in your selected Content Fragments. 
 
 ![Find and Replace](assets/cf-managing-find-replace.png)
+
+Before replacement, validation criteria are checked and you are informed of any conflicts, allowing you to change the replacement string or only replace the validated instances.
+
+>[!NOTE]
+>
+>The find and replace action can only be performed on a maximum of 20 selected Content Fragments (at a time). 
+>
+>If you select more than 20 Content Fragments, you will see the message **Unable to find and replace**.
+
+![Confirm Replace](assets/cf-managing-confirm-replace.png)
+
 
 ## Deleting a Fragment {#deleting-a-fragment}
 
