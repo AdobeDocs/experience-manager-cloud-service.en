@@ -332,16 +332,24 @@ COMPLETE_URI=$(echo "${INITIATE_UPLOAD_RESPONSE}" | jq -r '.completeURI')
 AFFINITY_COOKIE=$(echo "${INITIATE_UPLOAD_RESPONSE}" | grep -i 'Affinity-cookie' | awk '{print $2}')
 
 debug "Folder Path: ${FOLDER_PATH}"
-debug "Upload URIs: ${UPLOAD_URIS[@]}"
 debug "Upload Token: ${UPLOAD_TOKEN}"
 debug "MIME Type: ${MIME_TYPE}"
 debug "Min Part Size: ${MIN_PART_SIZE}"
 debug "Max Part Size: ${MAX_PART_SIZE}"
 debug "Complete URI: ${COMPLETE_URI}"
 debug "Affinity Cookie: ${AFFINITY_COOKIE}"
+if $DEBUG; then
+	i=1
+	for UPLOAD_URI in "${UPLOAD_URIS[@]}"; do
+		debug "Upload URI $i: "$UPLOAD_URI
+		i=$((i+1))
+	done
+fi
+
 
 # Calculate the number of parts needed
 NUM_PARTS=$(( (FILE_SIZE + MAX_PART_SIZE - 1) / MAX_PART_SIZE ))
+debug "Number of Parts: $NUM_PARTS"
 
 # Calculate the part size for the last chunk
 LAST_PART_SIZE=$(( FILE_SIZE % MAX_PART_SIZE ))
@@ -351,7 +359,7 @@ fi
 
 # Step 4: Upload binary to the blob store in parts
 PART_NUMBER=1
-for UPLOAD_URI in "${UPLOAD_URIS[@]}"; do
+for i in {1..1}; do
     PART_SIZE=${MAX_PART_SIZE}
     if [ ${PART_NUMBER} -eq ${NUM_PARTS} ]; then
         PART_SIZE=${LAST_PART_SIZE}
@@ -367,6 +375,8 @@ for UPLOAD_URI in "${UPLOAD_URIS[@]}"; do
         dd if="${FILE_TO_UPLOAD}" of="${PART_FILE}" bs=${PART_SIZE} count=1 2>/dev/null
         debug "Creating part file: ${PART_FILE}"
     fi
+	
+	UPLOAD_URI=${UPLOAD_URIS[$PART_NUMBER]}
 
     debug "Uploading part ${PART_NUMBER}..."
     debug "Part File: ${PART_FILE}"
@@ -391,14 +401,16 @@ COMPLETE_UPLOAD_ENDPOINT="${AEM_URL}${COMPLETE_URI}"
 debug "Completing the upload..."
 debug "Complete Upload Endpoint: ${COMPLETE_UPLOAD_ENDPOINT}"
 
-curl -X POST \
+RESPONSE=$(curl -X POST \
     -H "Authorization: Bearer ${BEARER_TOKEN}" \
     -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" \
     -H "Affinity-cookie: ${AFFINITY_COOKIE}" \
     --data-urlencode "uploadToken=${UPLOAD_TOKEN}" \
     --data-urlencode "fileName=${FILE_NAME}" \
     --data-urlencode "mimeType=${MIME_TYPE}" \
-    "${COMPLETE_UPLOAD_ENDPOINT}"
+    "${COMPLETE_UPLOAD_ENDPOINT}")
+	
+debug $RESPONSE
 
 echo "File upload completed successfully."
 ```
