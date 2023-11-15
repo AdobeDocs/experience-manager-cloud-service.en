@@ -25,7 +25,10 @@ The release date for Cloud Manager release 2023.11.0 in AEM as a Cloud Service i
 * [The pipeline execution details page](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) will now show all the steps in a pipeline execution with the ones not yet started grayed out.
 * On both **[Activity](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** and **[Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** pages, a summary of the pipeline execution is now available when clicking on a pipeline with a running status.
 * A new **Duration** section has been added to the [pipeline details page](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) that includes the average duration for the pipeline step based on the historical trend for that program.
-* On the pipeline execution page, the finished steps now display duration.
+* On the [pipeline execution page,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window) the finished steps now display duration.
+* Executions that [reuse build artifacts](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) will now show the link to the execution that initially built those artifacts. 
+* The option to select **Important Metric Failures** can now be configured for [code quality pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) as well.
+
 
 ## Early Adoption Program {#early-adoption}
 
