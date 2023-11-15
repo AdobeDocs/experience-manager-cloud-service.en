@@ -52,7 +52,7 @@ You can also choose to have additional processing done on the uploaded assets. S
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-To upload a file (or multiple files), you can either select them on your desktop and drag on the user interface (web browser) to the destination folder. Alternatively, you can initiate upload from the user interface. [!DNL Experience Manager] can accomodate folders with more than 1000 assets. If you want to upload more items in such folder with 1000+ items existing already can result delay in upload or creation of the new folder.
+To upload a file (or multiple files), you can either select them on your desktop and drag on the user interface (web browser) to the destination folder. Alternatively, you can initiate upload from the user interface.
 
 >[!IMPORTANT]
 >
@@ -380,7 +380,7 @@ Technical details of the upload APIs and protocol, and links to open-source SDK 
 
 * Direct binary upload is a new method to upload assets. It is supported by default by the product capabilities and clients, like [!DNL Experience Manager] user interface, [!DNL Adobe Asset Link], and [!DNL Experience Manager] desktop app. Any custom code that is customized or extended by customers technical teams must use the new upload APIs and protocols.
 
-* Adobe recommends adding not more than 1000 assets in each folder in [!DNL Experience Manager Assets]. While you can add more assets to a folder, it is possible that you experience performance issues such as slower navigation to such folders.
+* Adobe recommends adding not more than 1000 assets in each folder in [!DNL Experience Manager Assets]. If you try to do so, you may get an alert message saying, "This directory contains 1000+ items. Uploads and new folder creations may be delayed." While you can still add more assets to a folder, you may experience performance issues such as slower navigation to such folders.
 
 * When you select **[!UICONTROL Replace]** in the [!UICONTROL Name Conflict] dialog, the asset ID is regenerated for the new asset. This ID is different from the ID of the previous asset. If [Assets Insights](/help/assets/assets-insights.md) is enabled to track impressions or clicks with [!DNL Adobe Analytics], the regenerated asset ID invalidates the data-captured for the asset on [!DNL Analytics].
 
