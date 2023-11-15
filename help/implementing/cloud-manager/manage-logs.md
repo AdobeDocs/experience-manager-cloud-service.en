@@ -77,3 +77,8 @@ See the following additional resources to learn more about the Cloud Manager API
 
 * [Cloud Manager API Documentation](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+
+See the following additional resources to learn more about log files in AEM as a Cloud Service:
+
+* [Cloud 5 AEM Log Files](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
+* [Debugging AEM as a Cloud Service using logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html)
