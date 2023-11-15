@@ -45,7 +45,7 @@ To do an end-to-end validation of the code and process including asset ingestion
 
 | Functionality or use case | Status in [!DNL Experience Manager] as a [!DNL Cloud Service] | Comments |
 |-----|-----|-----|
-| [Duplicate asset detection](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Works differently | See [how it worked in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
+| [Duplicate asset detection](/help/assets/detect-duplicate-assets.md) | Works differently | See [how it worked in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [For Placement Only (FPO) renditions](/help/assets/configure-fpo-renditions.md) | Works differently | Processing Profiles use asset microservices to generate FPO renditions. In Experience Manager 6.5, a third-party solution such as [!DNL ImageMagick] was available to generate the renditions. |
 | Metadata writeback | Works differently | Disabled by default. Enable the corresponding workflow launcher if needed. Writeback is handled by asset microservices. |
 | Processing of assets uploaded using Package Manager | Needs manual intervention | Manually reprocess using the **[!UICONTROL Reprocess Asset]** action. |
