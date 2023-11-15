@@ -47,7 +47,7 @@ A non-production pipeline mainly serves to run code quality scans or to deploy s
 In addition to production and non-production, pipelines can be differentiated by the type of code they deploy.
 
 * **[Full Stack Pipelines](#full-stack-pipeline)** - Simultaneously deploy back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configurations
-* **[Config Deployment Pipelines](#config-deployment-pipeline)** - Configure settings on your AEM environment, maintenance tasks, CDN rules, and more.
+* **[Config Pipelines](#config-deployment-pipeline)** - Configure settings on your AEM environment, maintenance tasks, CDN rules, and more.
 * **[Front-End Pipelines](#front-end)** - Deploy front-end code builds containing one or more client-side UI applications 
 * **[Web Tier Config Pipelines](#web-tier-config-pipelines)** - Deploys HTTPD/Dispatcher configurations
 
@@ -105,15 +105,15 @@ To learn how to configure full-stack pipelines, see the following documents:
 * [Adding a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
 * [Adding a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
-## Config Deployment Pipelines {#config-deployment-pipeline}
+## Config Pipelines {#config-deployment-pipeline}
 
-With a config deployment pipeline you can deploy configuration settings on your AEM environment for maintenance tasks, CDN rules, and more.
+With a config pipeline you can deploy configuration settings on your AEM environment for maintenance tasks, CDN rules, and more.
 
 Please see the document [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage the configurations in your repository so they are deployed properly.
 
-### Configuring Config Deployment Pipelines {#configure-config-deployment}
+### Configuring Config Pipelines {#configure-config-deployment}
 
-To learn how to configure config deployment pipelines, see the following documents:
+To learn how to configure config pipelines, see the following documents:
 
 * [Adding a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
 * [Adding a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
