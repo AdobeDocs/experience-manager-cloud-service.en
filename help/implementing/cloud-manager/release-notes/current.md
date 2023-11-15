@@ -20,7 +20,7 @@ The release date for Cloud Manager release 2023.11.0 in AEM as a Cloud Service i
 ## What's New {#what-is-new}
 
 * Web Application Firewall-DDOS protection (WAF-DDOS) is now available for purchase as part of your AEM as a Cloud Service entitlements and [can be configured in a self-service manner.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* Specialized [Config Deployment Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pipelines are now available to configure environment settings, maintenance tasks, CDN rules, and more within minutes.
+* Specialized [Config Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pipelines are now available to configure environment settings, maintenance tasks, CDN rules, and more within minutes.
 * [When copying content](/help/implementing/developing/tools/content-copy.md) from a higher environment to a development environment, a message is now shown advising caution when copying large content sets since development environments are capacity-limited.
 * [The pipeline execution details page](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) will now show all the steps in a pipeline execution with the ones not yet started grayed out.
 * On both **[Activity](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** and **[Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** pages, a summary of the pipeline execution is now available when clicking on a pipeline with a running status.
@@ -69,9 +69,9 @@ Interested in test-driving the new dashboard? Please send an email to `aem-light
 
 ## Known Issues {#known-issues}
 
-There is a known bug preventing [config deployment pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) from being pushed to production.
+There is a known bug preventing [config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) from being pushed to production.
 
-If the **Pause before deploying to Production** option is required for a config deployment pipeline, the following is the suggested workaround until the bug is resolved.
+If the **Pause before deploying to Production** option is required for a config pipeline, the following is the suggested workaround until the bug is resolved.
 
 1. Run the pipeline.
 1. Test the code in the staging environment.
