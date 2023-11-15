@@ -371,7 +371,7 @@ for i in $(seq 1 $NUM_PARTS); do
     # Creatnig part file 
 	SKIP=$((PART_NUMBER - 1))
 	SKIP=$((MAX_PART_SIZE * SKIP))
-	dd if="${FILE_TO_UPLOAD}" of="${PART_FILE}"  bs="${PART_SIZE}" skip="${SKIP}" count="${PART_SIZE}" iflag=skip_bytes,count_bytes # > /dev/null 2>&1
+	dd if="${FILE_TO_UPLOAD}" of="${PART_FILE}"  bs="${PART_SIZE}" skip="${SKIP}" count="${PART_SIZE}" iflag=skip_bytes,count_bytes  > /dev/null 2>&1
 	debug "Creating part file: ${PART_FILE} with size ${PART_SIZE}, skipping first ${SKIP} bytes."
 
 	
@@ -385,17 +385,16 @@ for i in $(seq 1 $NUM_PARTS); do
 
     # Upload the part in the background
     if command -v pv &> /dev/null; then
-        #pv "${PART_FILE}" | curl --progress-bar -X PUT --data-binary "@-" "${UPLOAD_URI}" 
-		curl -# -X PUT --data-binary "@${PART_FILE}" "${UPLOAD_URI}"
+        pv "${PART_FILE}" | curl --progress-bar -X PUT --data-binary "@-" "${UPLOAD_URI}" &
     else
-        curl -# -X PUT --data-binary "@${PART_FILE}" "${UPLOAD_URI}" 
+        curl -# -X PUT --data-binary "@${PART_FILE}" "${UPLOAD_URI}" &
     fi
 
     PART_NUMBER=$((PART_NUMBER + 1))
 done
 
 # Wait for all background processes to finish
-#wait
+wait
 
 # Step 5: Complete the upload in AEM
 COMPLETE_UPLOAD_ENDPOINT="${AEM_URL}${COMPLETE_URI}"
