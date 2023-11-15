@@ -32,6 +32,16 @@ Have a look at the November 2023 Release Overview video for a summary of the fea
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425186/?quality=12)
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Early adopter program {#sites-early-adopter}
+
+**[Find and Replace strings in Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: The Content Fragment Console provides users with an easy and intuitive way to replace a string appearing in multiple content fragments at once to help accelerate content velocity.
+
+![Find and Replace](assets/cf-managing-find-replace.png)
+
+Interested in trying out the feature and sharing feedback? Send an email to **aemcs-headless-adopter@adobe.com** from your official email ID to learn more about the early adopter program. 
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### New features {#assets-features}
