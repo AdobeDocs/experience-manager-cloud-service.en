@@ -368,23 +368,25 @@ for i in $(seq 1 $NUM_PARTS); do
 
     PART_FILE="/tmp/${FILE_NAME}_part${PART_NUMBER}"
 
-    # Check if the part file already exists
-    if file_exists "${PART_FILE}"; then
-        debug "Using existing part file: ${PART_FILE}"
-    else
-        dd if="${FILE_TO_UPLOAD}" of="${PART_FILE}" bs=${PART_SIZE} count=1 2>/dev/null
-        debug "Creating part file: ${PART_FILE}"
-    fi
+    # Creatnig part file 
+	SKIP=$((PART_NUMBER - 1))
+	SKIP=$((MAX_PART_SIZE * SKIP))
+	dd if="${FILE_TO_UPLOAD}" of="${PART_FILE}"  bs="${PART_SIZE}" skip="${SKIP}" count="${PART_SIZE}" iflag=skip_bytes,count_bytes # > /dev/null 2>&1
+	debug "Creating part file: ${PART_FILE} with size ${PART_SIZE}, skipping first ${SKIP} bytes."
+
 	
 	UPLOAD_URI=${UPLOAD_URIS[$PART_NUMBER-1]}
 
     debug "Uploading part ${PART_NUMBER}..."
+	debug "Part Size: $PART_SIZE"
     debug "Part File: ${PART_FILE}"
+	debug "Part File Size: $(stat -c %s "${PART_FILE}")"
     debug "Upload URI: ${UPLOAD_URI}"
 
     # Upload the part in the background
     if command -v pv &> /dev/null; then
-        pv "${PART_FILE}" | curl --progress-bar -X PUT --data-binary "@-" "${UPLOAD_URI}" 
+        #pv "${PART_FILE}" | curl --progress-bar -X PUT --data-binary "@-" "${UPLOAD_URI}" 
+		curl -# -X PUT --data-binary "@${PART_FILE}" "${UPLOAD_URI}"
     else
         curl -# -X PUT --data-binary "@${PART_FILE}" "${UPLOAD_URI}" 
     fi
