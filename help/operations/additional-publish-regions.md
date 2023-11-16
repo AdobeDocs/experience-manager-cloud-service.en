@@ -41,6 +41,10 @@ When an additional publish region is enabled on a program with advanced networki
 
 See the [Advanced Networking Configuration for Additional Publish Regions](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) section in the Advanced Networking documentation for details, including how to add advanced networking configurations to additional regions without incurring loss of connectivity.
 
+## Logging {#logging}
+
+If additional publish regions are enabled, separate logs for each region will be made available through Cloud Manager. For more information, see [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) and [Logs for Additional Publish Regions](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions). 
+
 ## Limitations {#limitations}
 
 Keep in mind the following limitations when considering using additional publish regions.
