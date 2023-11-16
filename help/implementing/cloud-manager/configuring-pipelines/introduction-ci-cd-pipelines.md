@@ -47,7 +47,7 @@ A non-production pipeline mainly serves to run code quality scans or to deploy s
 In addition to production and non-production, pipelines can be differentiated by the type of code they deploy.
 
 * **[Full Stack Pipelines](#full-stack-pipeline)** - Simultaneously deploy back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configurations
-* **[Config Pipelines](#config-deployment-pipeline)** - Configure settings on your AEM environment, maintenance tasks, CDN rules, and more.
+* **[Config Pipelines](#config-deployment-pipeline)** - Configure and deploy traffic filter rules, including WAF rules, within minutes
 * **[Front-End Pipelines](#front-end)** - Deploy front-end code builds containing one or more client-side UI applications 
 * **[Web Tier Config Pipelines](#web-tier-config-pipelines)** - Deploys HTTPD/Dispatcher configurations
 
@@ -107,7 +107,7 @@ To learn how to configure full-stack pipelines, see the following documents:
 
 ## Config Pipelines {#config-deployment-pipeline}
 
-With a config pipeline you can deploy configuration settings on your AEM environment for maintenance tasks, CDN rules, and more.
+With a config pipeline you can configure and deploy traffic filter rules, including WAF rules, within minutes.
 
 Please see the document [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage the configurations in your repository so they are deployed properly.
 
