@@ -229,7 +229,7 @@ Multiple files must be updated to enable [!DNL Live Search] functionality. Edit 
             defaultPageSizeOption:
               dataServicesSessionContext.default_page_size_option,
           },
-          minQueryLength: "2",
+          minQueryLength: dataServicesSessionContext.min_query_length,
           currencySymbol: dataServicesSessionContext.currency_symbol,
           currencyRate: dataServicesSessionContext.currency_rate,
           displayOutOfStock: dataServicesSessionContext.display_out_of_stock,

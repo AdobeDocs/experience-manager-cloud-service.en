@@ -207,17 +207,50 @@ To enable the CIF component, files must be edited and created.
           display_out_of_stock
           allow_all_products
           locale
+          min_query_length
         }
       }
     `;
 
+  const getCookie = (cookieName) => {
+    const cookie = document.cookie.match(
+      `(^|[^;]+)\\s*${cookieName}\\s*=\\s*([^;]+)`
+    );
+    return cookie ? cookie.pop() : "";
+  };
+
+  const getLoginToken = () => {
+    const key = "M2_VENIA_BROWSER_PERSISTENCE__signin_token";
+    let token = getCookie("cif.userToken") || "";
+
+    try {
+      const lsToken = JSON.parse(localStorage.getItem(key));
+      if (lsToken && lsToken.value) {
+        const timestamp = new Date().getTime();
+        if (timestamp - lsToken.timeStored < lsToken.ttl * 1000) {
+          token = lsToken.value.replace(/"/g, "");
+        }
+      }
+    } catch (e) {
+      console.error(`Login token at ${key} is not valid JSON.`);
+    }
+    return token;
+  };
+
   async function getGraphQLQuery(query, variables = {}) {
     const graphqlEndpoint = `/api/graphql`;
+    const headers = {
+      "Content-Type": "application/json",
+    };
+
+    const loginToken = getLoginToken();
+    if (loginToken) {
+      headers["Authorization"] = `Bearer ${loginToken}`;
+    }
+
     const response = await fetch(graphqlEndpoint, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers,
       body: JSON.stringify({
         query,
         variables,
@@ -328,7 +361,6 @@ To enable the CIF component, files must be edited and created.
         return;
       }
 
-
       // initialize live-search
       new window.LiveSearchAutocomplete({
         environmentId: dataServicesStorefrontInstanceContext.environment_id,
@@ -337,11 +369,13 @@ To enable the CIF component, files must be edited and created.
         storeViewCode: dataServicesStorefrontInstanceContext.store_view_code,
         config: {
           pageSize: dataServicesStoreConfigurationContext.page_size,
-          minQueryLength: "2",
+          minQueryLength: dataServicesStoreConfigurationContext.min_query_length,
           currencySymbol: dataServicesStoreConfigurationContext.currency_symbol,
           currencyRate: dataServicesStoreConfigurationContext.currency_rate,
-          displayOutOfStock: dataServicesStoreConfigurationContext.display_out_of_stock,
-          allowAllProducts: dataServicesStoreConfigurationContext.allow_all_products,
+          displayOutOfStock:
+            dataServicesStoreConfigurationContext.display_out_of_stock,
+          allowAllProducts:
+            dataServicesStoreConfigurationContext.allow_all_products,
         },
         context: {
           customerGroup: dataServicesStorefrontInstanceContext.customer_group,
