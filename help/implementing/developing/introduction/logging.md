@@ -551,6 +551,17 @@ Note that the Splunk forwarding feature does not yet support CDN logs.
 
 AEM as a Cloud Service logs for cloud services can be accessed either by downloading through the Cloud Manager interface or by tailing logs at the command line using the using the Adobe I/O command line interface. For more information, see the [Cloud Manager logging documentation](/help/implementing/cloud-manager/manage-logs.md).
 
+### Logs for Additional Publish Regions {#logs-for-additional-publish-regions}
+
+If Additional Publish Regions are enabled for a particular environment, logs for each region will be available to download from Cloud Manager, as mentioned above.
+
+The AEM logs and the dispatcher logs for the Additional Publish Regions will specify the region in the first 3 letters after the environment id, as exemplified by **nld2** in the sample below, which refers to an additional AEM publish instance located in the Netherlands:
+
+```
+cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
+
+```
+
 ### Local SDK {#local-sdk}
 
 AEM as a Cloud Service SDK provides logs files to support local development.
