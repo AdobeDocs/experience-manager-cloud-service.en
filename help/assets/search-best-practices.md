@@ -32,11 +32,11 @@ The search results that match all search terms in metadata fields are displayed 
 
 Specify `classic car` as the search keyword and click Search. You can view the search suggestions in a drop-down list as you type the keyword. The search suggestions are based on the contents of the search index on your Experience Manager deployment. If you cannot view the appropriate assets in the drop-down menu, press the Enter key to view the list of results. The results are sorted by relevance, starting from the closest matches.
 
-![Performing basic search method 1](assets/simple-search-1.png)
+<!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
 You can make the search more specific by adding your search keyword in double quotes (" "). This search only includes Assets which contain the specified terms together. The search criteria look like - `"classic car"`. Therefore, the search results with both terms `classic` and `car` are shown. 
 
-![Finding exact match](assets/simple-search-2.png)
+<!--![Finding exact match](assets/simple-search-2.png)-->
 
 The search displays similar results if you are working in the **[!UICONTROL Assets view]** as well.
 
@@ -59,7 +59,7 @@ To achieve this scenario, execute the steps below:
 Select the folder from the path and navigate to the required folder if you want to search within the specific folder.
 3. Select Files from the drop-down list to display all files with the keyword `classic car`. 
 
-![Search using files and folders](assets/files-folders.png)
+<!--![Search using files and folders](assets/files-folders.png)-->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
@@ -158,7 +158,7 @@ Execute the following steps in **[!UICONTROL Admin view]**:
 1. Select [!UICONTROL PDF].
 1. Go to [!UICONTROL Status] > [!UICONTROL Publish] > [!UICONTROL Unpublished].
 
-![Filter example 2](assets/filter-2.png)
+<!--![Filter example 2](assets/filter-2.png)-->
 
 Execute the following steps in **[!UICONTROL Assets view]**:
 
@@ -174,7 +174,7 @@ When you are unsure about the title or meta description of an asset, you can use
 1. Go to Filters. Under [!UICONTROL File Type], expand [!UICONTROL Images] and select [!UICONTROL Web enabled]
 1. Deselect PNG.
 
-![Search all images except jeep](assets/images-png.png)
+<!--![Search all images except jeep](assets/images-png.png)-->
 
 To search assets using the mentioned scenario in **[!UICONTROL Assets view]**, follow the steps below:
 
@@ -197,7 +197,7 @@ To perform a search for scenario 6:
 2. Navigate to the filters panel and select Documents under File Type. 
 3. Refine your search using the asterisk wildcard. Type `"classic car"` to search all assets that contain the `classic car` keyword. 
  
-![Scenario 6](assets/scenario-6.png)
+<!--![Scenario 6](assets/scenario-6.png)-->
 
 Scenario 6 is not possible to execute in **[!UICONTROL Assets view]** as it does not support the usage of Wildcards.
 
@@ -209,7 +209,7 @@ Type the `car - classic` keyword in the search bar. Navigate to the filters pane
 Priority 1: Metadata
 Priority 2: Smart Tags
 
-![Scenario 7](assets/scenario-7.png)
+<!--![Scenario 7](assets/scenario-7.png)-->
 
 Scenario 7 is not possible to execute in **[!UICONTROL Assets view]** as it does not support the usage of Wildcards.
 
@@ -233,7 +233,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 You can capture a specific criteria using various search filters. Tag is a keyword that is assigned to an asset to make it identifiable among a large number of assets. For example, in this scenario, search for assets with *jeep* tags in it. To do this, type `tags:jeep` in the search bar. Only assets that meet this criteria are listed in the search results.
 
-![Search using tags](assets/search-tags.png)
+<!--![Search using tags](assets/search-tags.png)-->
 
 The search displays similar results if you are working in the **[!UICONTROL Assets view]** as well.
 
