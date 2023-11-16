@@ -6,9 +6,6 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 
 # Traffic Filter Rules Including WAF Rules {#traffic-filter-rules-including-waf-rules}
 
->[!NOTE]
->This feature is now available on dev environments, with a gradual rollout to stage and prod environments later in November. You may request earlier access on stage and prod by emailing **aemcs-waf-adopter@adobe.com**.
-
 Traffic filter rules can be used to block or allow requests at the CDN layer, which may be useful in scenarios such as:
 
 * Restricting access to specific domains to internal company traffic, before a new site goes live
