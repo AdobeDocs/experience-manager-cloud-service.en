@@ -15,7 +15,7 @@ Summarized below are the continuous improvements for maintenance release 14227, 
 
 ### Enhancements {#enhancements-14227}
 
-* ASSETS-29631: Assets Cloud: Use dam:roles for secure delivery/search.
+<!--* ASSETS-29631: Assets Cloud: Use dam:roles for secure delivery/search.-->
 * CQ-4354515: Translations: Option to Suppress translation of referenced resources.
 * FORMS-9993: Define Steps to move Forms Core Components into Skyline.
 * FORMS-10570: Onboard EC APIs to API - First Router.

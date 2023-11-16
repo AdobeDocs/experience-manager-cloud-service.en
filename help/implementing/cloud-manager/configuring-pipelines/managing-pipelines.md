@@ -27,7 +27,39 @@ At the bottom of the list of pipelines, you have general options.
 * **Add** - To [add a new production pipeline](configuring-production-pipelines.md) or [add new non-production pipeline](configuring-non-production-pipelines.md)
 * **Show All** - Takes the user to the Pipelines screen to view all pipelines in a more detailed table.
 * **Access Repo Info** - Displays the information necessary to access the Cloud Manager git repository
-* **Learn More** - Navigates to CI/CD pipeline documentation resources. 
+* **Learn More** - Navigates to CI/CD pipeline documentation resources.
+
+## Pipelines Window {#pipelines}
+
+The **Pipelines** window shows a complete list of all pipelines for the selected program. This is useful as it presents more comprehensive information than what is available in the [Pipeline Card.](#pipeline-card)
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+
+1. From the **Program Overview** page, tap or click on **Pipelines** tab to switch to the **Pipelines** window.
+
+1. Here you can see a list of all pipelines for the program as well as start and stop pipeline execution as you would in the **Pipelines Card**.
+
+If a pipeline is executing, hovering over its **Status** column will reveal details about the execution.
+
+![Pipeline execution details](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
+
+Tapping or clicking **View details** will take you to the [details of the pipeline execution.](#view-details)
+
+## Activity Window {#activity}
+
+The **Activities** window shows a complete list of all pipelines executions for the selected program.
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+
+1. From the **Program Overview** page, tap or click on **Activity** tab to switch to the **Activity** window.
+
+1. Here you can see a list of all pipeline executions for the program including current and historical executions.
+
+If a pipeline is executing, hovering over its **Status** column will reveal details about the execution.
+
+![Pipeline execution details](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
+
+Tapping or clicking **View details** will take you to the [details of the pipeline execution.](#view-details)
 
 ## Running Pipelines {#running-pipelines}
 
@@ -82,6 +114,16 @@ You can view the details of a pipeline to see the status and logs of its last ru
 ![Pipeline details](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
 
 From here you can see the status of the various steps of the pipeline and retrieve build logs for diagnostic purposes. See the document [Deploying Your Code](/help/implementing/cloud-manager/deploy-code.md) for more information on code deployment and tests run.
+
+All the steps in a pipeline execution are displayed with the ones not yet started grayed out. Finished steps display their duration.
+
+Once a pipeline step is complete, a summary is presented.
+
+![Step summary](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
+
+Tap or click the **View details** link to reveal the **Duration** section. This includes the average duration for the pipeline based on the historical trend for that program.
+
+![Duration](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
 >[!NOTE]
 >
