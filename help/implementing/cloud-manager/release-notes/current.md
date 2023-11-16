@@ -20,7 +20,7 @@ The release date for Cloud Manager release 2023.11.0 in AEM as a Cloud Service i
 ## What's New {#what-is-new}
 
 * Web Application Firewall-DDOS protection (WAF-DDOS) is now available for purchase as part of your AEM as a Cloud Service entitlements and [can be configured in a self-service manner.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* Specialized [config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) are now available to configure environment settings, maintenance tasks, CDN rules, and more within minutes.
+* Specialized [config pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) are now available to configure and deploy traffic filter rules, including WAF rules, within minutes.
 * [When copying content](/help/implementing/developing/tools/content-copy.md) from a higher environment to a development environment, a message is now shown advising caution when copying large content sets since development environments are capacity-limited.
 * [The pipeline execution details page](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) will now show all the steps in a pipeline execution with the ones not yet started grayed out.
 * On both **[Activity](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** and **[Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** pages, a summary of the pipeline execution is now available when clicking on a pipeline with a running status.
