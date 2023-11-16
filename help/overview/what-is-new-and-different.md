@@ -200,7 +200,7 @@ To support rapid iterations and development, it is also possible to develop AEM 
 
 >[!NOTE]
 >
->For further details start with [Backup](/help/operations/backup.md), [Indexing](/help/operations/indexing.md), and [other Maintenance Tasks](/help/operations/maintenance.md).
+>For further details start with [content restoration](/help/operations/backup.md), [Indexing](/help/operations/indexing.md), and [other Maintenance Tasks](/help/operations/maintenance.md).
 
 With AEM as a Cloud Service, such operations are automated so that any interruption of service is no longer necessary.
 
