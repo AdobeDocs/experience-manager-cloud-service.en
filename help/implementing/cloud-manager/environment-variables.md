@@ -34,7 +34,7 @@ Typical use cases for using environment variables include:
 1. Cloud Manager lists the various programs available. Select the one you wish to manage.
 1. Select the **Environments** tab for the chosen program then select the environment for which you want to create an environment variable in the left navigation panel.
 1. Within the detail of the environment, select the **Configuration** tab then select **Add** to open the **Environment Configuration** dialog. 
-   * If you are adding an environment variable for the first time, you will see an **Add Configuration** button in the center of the page. You can use this button or **Add** to open the **Environment Configuration** dialog.
+   * If you are adding an environment variable for the first time, you can see an **Add Configuration** button in the center of the page. You can use this button or **Add** to open the **Environment Configuration** dialog.
 
    ![Configuration tab](assets/configuration-tab.png)
 

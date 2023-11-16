@@ -41,7 +41,7 @@ To open the AEM notification inbox:
 
 1. Click/tap on the indicator in the toolbar.
 
-1. Select **View all**. The **AEM Inbox** will open. The inbox shows items from workflows, projects and tasks.
+1. Select **View all**. The **AEM Inbox** opens. The inbox shows items from workflows, projects and tasks.
 1. The default view is [List View](#inbox-list-view), but you can also switch to [Calendar View](#inbox-calendar-view). This is done with the view selector (toolbar, top right).
 
    For both views you can also define [View Settings](#inbox-view-settings). The options available are dependent on the current view.
@@ -136,7 +136,7 @@ For both views (List and Calendar) you can define settings:
     * An action wizard is started
     * A documentation page is opened
 
-   For example, **Delegate** will open a dialog:
+   For example, **Delegate** opens a dialog:
 
    ![Delegate inbox task](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 

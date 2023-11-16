@@ -31,7 +31,7 @@ Once you have set up your program and have at least one environment using the [!
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click on **Add** to select **Add Production Pipeline**. 
+1. Navigate to the **Pipelines** card from the **Program Overview** page and click **Add** to select **Add Production Pipeline**. 
 
    ![The Pipelines card on the Program Manager overview](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
@@ -105,7 +105,7 @@ To finish the configuration of the full-stack code production pipeline, follow t
    * You can add a maximum of 25 paths.
    * If you do not define any paths, the homepage of the site is included in the Experience Audit by default.
 
-1. Click on **Save** to save your pipeline.
+1. Click **Save** to save your pipeline.
 
 Paths configured for the Experience Audit are submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests when the pipeline runs. See [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 

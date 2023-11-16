@@ -127,7 +127,7 @@ Now that you have completed this part of the AEM Sites translation journey you s
 * Understand the important parameters of the Translation Integration Framework in AEM.
 * Be able to set up your own connection to your translation service.
 
-Build on this knowledge and continue your AEM Sites translation journey by next reviewing the document [Configure translation rules,](translation-rules.md) where you will learn how to define which content to translate.
+Build on this knowledge and continue your AEM Sites translation journey by next reviewing the document [Configure translation rules,](translation-rules.md) where you learn how to define which content to translate.
 
 ## Additional Resources {#additional-resources}
 

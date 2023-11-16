@@ -49,7 +49,7 @@ Once called, it typically takes approximately 15 minutes for the networking infr
 If the program-scoped flexible port egress configuration is ready, the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint must be invoked per environment to enable networking at the environment level and to optionally declare any port forwarding rules. Parameters are configurable per environment to offer flexibility.
 
 Port forwarding rules should be declared for any destination ports other than 80/443, but only if not using http or https protocol,
-by specifying the set of destination hosts (names or IP, and with ports). The client connection using port 80/443 over http/https must still use proxy settings in their connection in order to have the properties of advanced networking applied to the connection. For each destination host, customers must map the intended destination port to a port from 30000 through 30999.
+by specifying the set of destination hosts (names or IP, and with ports). The client connection using port 80/443 over http/https must still use proxy settings in their connection to have the properties of advanced networking applied to the connection. For each destination host, customers must map the intended destination port to a port from 30000 through 30999.
 
 The API should respond in just a few seconds, indicating a status of updating and after about 10 minutes, the endpoint's `GET` method should indicate that advanced networking is enabled.
 

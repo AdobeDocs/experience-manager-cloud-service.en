@@ -79,7 +79,7 @@ To modify your content headlessly, AEM offers two robust APIs.
 * The GraphQL API lets you create requests to access and deliver Content Fragments.
 * The Assets REST API lets you create and modify Content Fragments (and other assets).
 
-You will learn about these APIs and how to use them in a later part of the AEM headless journey. Or see [additional resources](#additional-resources) section below for additional documentation.
+You learn about these APIs and how to use them in a later part of the AEM headless journey. Or, see [additional resources](#additional-resources) section below for more documentation.
 
 ## Headless Integration Levels {#integration-levels}
 
@@ -267,7 +267,7 @@ Now that you have completed this part of the AEM Headless Developer Journey, you
 * Be aware of AEM's headless integration levels.
 * Be able to define your project in terms of scope.
 
-You should continue your AEM headless journey by next reviewing the document [Path to Your First Experience Using AEM Headless](path-to-first-experience.md) where you will learn how to set up the necessary tools and how to begin thinking about modeling your data in AEM.
+You should continue your AEM headless journey by next reviewing the document [Path to Your First Experience Using AEM Headless](path-to-first-experience.md) where you learn how to set up the necessary tools and how to begin thinking about modeling your data in AEM.
 
 ## Additional Resources {#additional-resources}
 

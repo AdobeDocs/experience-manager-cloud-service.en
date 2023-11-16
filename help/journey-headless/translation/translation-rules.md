@@ -94,7 +94,7 @@ Now that you have completed this part of the headless translation journey you sh
 * Understand what the translation rules do.
 * Be able to define your own translation rules.
 
-Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Translate content](translate-content.md) where you will learn how your integration and rules work together to translate headless content.
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Translate content](translate-content.md) where you learn how your integration and rules work together to translate headless content.
 
 ## Additional Resources {#additional-resources}
 
