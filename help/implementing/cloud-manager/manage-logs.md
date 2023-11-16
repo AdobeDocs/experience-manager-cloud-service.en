@@ -12,7 +12,7 @@ You can access a list of available log files for the selected environment using 
 
 ## Downloading Logs {#download-logs}
 
-To download logs, do the following.
+To download logs, do the following:
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
@@ -26,11 +26,17 @@ To download logs, do the following.
 
    ![Download Logs dialog](assets/download-preview.png)
 
+   In case [Additional Publish Regions](/help/operations/additional-publish-regions.md) are enabled for your environment, you will be able to select each region and download its logs separately, as shown below:
+
+   ![Download Logs for additional publish regions](assets/download-publish-region-logs.png)
+
 1. Once you select your service, click the download icon next to the log you wish to retrieve.
 
 You can also access your logs from the **Environments** page.
 
 ![Logs from the Environments screen](assets/download-logs.png)
+
+
 
 ## Logs Via API {#logs-through-api}
 
