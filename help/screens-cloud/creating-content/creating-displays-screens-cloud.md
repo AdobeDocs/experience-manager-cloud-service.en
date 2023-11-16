@@ -21,7 +21,7 @@ This document helps you understand how to create and manage displays in the Scre
 Follow the steps below to create the display from the Screens Services Provider:
 
 1. Navigate to Screens Services Provider from your AEM Cloud Service instance.
-1. Select **Displays** from the left navigation panel and click on **Create** from the top right corner of the screen.
+1. Select **Displays** from the left navigation panel and click **Create** from the upper-right corner of the screen.
 
    ![image](/help/screens-cloud/assets/display/disp-1.png)
 
@@ -29,7 +29,7 @@ Follow the steps below to create the display from the Screens Services Provider:
 
    ![image](/help/screens-cloud/assets/display/disp-2.png)
 
-1. Enter the title as **LoopingChannelDisplay** in **Display Name** and click on **Create**.
+1. Enter the title as **LoopingChannelDisplay** in **Display Name** and click **Create**.
 
    ![image](/help/screens-cloud/assets/display/disp3.png)
 
@@ -41,7 +41,7 @@ Follow the steps below to create the display from the Screens Services Provider:
 
 You can delete a display from Screens Services Provider.
 
-Select the display and click on **Delete** from the bottom of the panel, as shown in the figure below.
+Select the display and click **Delete** from the bottom of the panel, as shown in the figure below.
 
    ![image](/help/screens-cloud/assets/display/disp-5.png)
 

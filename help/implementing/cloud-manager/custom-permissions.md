@@ -38,7 +38,7 @@ This section will detail these steps. You may find it useful to refer to the [Te
 
 >[!NOTE]
 >
->You must have product administrator rights in Admin Console for Adobe Experience Manager as a Cloud Service in order to create new profiles and manage permissions for Cloud Manager.
+>You must have product administrator rights in Admin Console for Adobe Experience Manager as a Cloud Service to create new profiles and manage permissions for Cloud Manager.
 
 ### Create a New Product Profile {#create}
 
@@ -75,7 +75,7 @@ Now that you have a new product profile, you can assign custom permissions to it
 
    ![Editable permissions](assets/permissions-tab.png)
 
-1. Tap or click on the **Edit** link of a permission to edit it.
+1. Tap or click the **Edit** link of a permission to edit it.
 
 1. The **Edit Persmissions** window opens.
    * The permission you selected in the previous step is selected in the left column.

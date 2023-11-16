@@ -175,6 +175,7 @@ A selection of data types is available for defining your model:
   * Allows the introduction of tabs for use when editing the Content Fragment content.
     * These are shown as dividers in the model editor, separating sections of the list of content data types. Each instance represents the start of a new tab.
     * In the fragment editor each instance appears as a tab.
+    
     >[!NOTE]
     >
     >This data type is purely used for formatting, it is ignored by the AEM GraphQL schema.
@@ -192,7 +193,7 @@ Many properties are self-explanatory, for certain properties additional details 
   >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
 
 * **Render As**
-  The various options for realizing/rendering the field in a fragment. Often this allows you to define whether the author will see a single instance of the field, or will be allowed to create multiple instances.
+  The various options for realizing/rendering the field in a fragment. Often this lets you define whether the author sees a single instance of the field, or is allowed to create multiple instances.
 
 * **Field Label**
   Entering a **Field Label** autogenerates a **Property Name**, which can then be manually updated if required.

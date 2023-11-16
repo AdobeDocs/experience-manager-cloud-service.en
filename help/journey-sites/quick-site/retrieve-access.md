@@ -70,7 +70,7 @@ If you have not received this email, contact the Cloud Manager administrator.
 
 ## Access Cloud Manager {#access-cloud-manager}
 
-1. Log into Adobe Experience Cloud at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) or click on the link provided in the welcome email.
+1. Log into Adobe Experience Cloud at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) or click the link provided in the welcome email.
 
 1. Cloud Manager lists the various programs available. Tap or click the one you need to access as provided by the Cloud Manager administrator. If this is your first front-end project for AEMaaCS, you likely only have one program available.
 
@@ -105,7 +105,7 @@ Now that you have completed this part of the AEM Quick Site Creation journey you
 * Understand at a high level what Cloud Manager is.
 * Have retrieved your credentials to access the AEM git so you can commit your customizations.
 
-Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Customize the Site Theme,](customize-theme.md) where you will learn how the site theme is built, how to customize, and how to test using live AEM content.
+Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Customize the Site Theme,](customize-theme.md) where you learn how the site theme is built, how to customize, and how to test using live AEM content.
 
 ## Additional Resources {#additional-resources}
 

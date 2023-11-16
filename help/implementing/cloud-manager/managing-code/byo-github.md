@@ -21,7 +21,7 @@ Configuration consists of two main steps:
 
 ### Add Repository {#add-repo}
 
-1. In Cloud Manager, from the **Program Overview** page, tap or click on **Repositories** tab to switch to the **Repositories** page and click on **Add Repository**.
+1. In Cloud Manager, from the **Program Overview** page, tap or click the **Repositories** tab to switch to the **Repositories** page and click **Add Repository**.
 
 1. In the **Add Repository** dialog, select **Private Repository** as the repository type.
 
@@ -43,7 +43,7 @@ Configuration consists of two main steps:
 
 Cloud Manager now knows about your GitHub repository, but it still needs access to it. To grant access, you need to install the Adobe GitHub app and verify that you own the specified repository.
 
-1. After adding your own repository, the **Private Repository Ownership Validation** dialog will open.
+1. After adding your own repository, the **Private Repository Ownership Validation** dialog opens.
 
    ![Private Repository Ownership Validation](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
@@ -59,7 +59,7 @@ Cloud Manager now knows about your GitHub repository, but it still needs access 
 
 1. Back in the **Private Repository Ownership Validation** window, Cloud Manager has generated the content of the private fil in the **Secret file content** field. Copy the content from that field.
 
-    * The contents of the secret file will only be shown once. If you do not copy the content before closing this window, you will need to regenerate the secret.
+    * The contents of the secret file will only be shown once. If you do not copy the content before closing this window, regenerate the secret.
 
     ![Copy secret file content](/help/implementing/cloud-manager/assets/repos/new-secret.png)
 
@@ -75,7 +75,7 @@ Until validation, the repository will be listed with a red icon, indicating that
 
 Note that the **Type** column easily identifies Adobe-provided repositories (**Adobe**) and your own GitHub repositories (**GitHub**).
 
-If you need to return to the repository at a later date in order to complete the validation, on the **Repositories** page, tap or click the ellipsis button in the row representing the GitHub repository you just added and select **Ownership Validation** from the drop-down menu.
+If you need to return to the repository at a later date to complete the validation, on the **Repositories** page, tap or click the ellipsis button in the row representing the GitHub repository you just added and select **Ownership Validation** from the drop-down menu.
 
 ## Using Your Own GitHub Repositories with Cloud Manager {#using}
 

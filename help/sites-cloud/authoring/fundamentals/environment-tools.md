@@ -67,7 +67,7 @@ The actual appearance and handling is dependent on the device type you are using
 
   The component browser is opened at the left side of the window.
 
-  To add a component to your page click on the required component and drag it to the required location.
+  To add a component to your page, click the required component and drag it to the required location.
 
   ![Component Browser on desktop](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
@@ -143,7 +143,7 @@ The actual appearance and handling is dependent on the device type you are using
 
   The assets browser is opened at the left side of the window.
 
-  To add an asset to your page click on the required asset and drag it to the required component or location.
+  To add an asset to your page, click the required asset and drag it to the required component or location.
 
   ![Assets Browser on desktop](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 

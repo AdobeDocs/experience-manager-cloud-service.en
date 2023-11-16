@@ -147,7 +147,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 ## Managing Tags {#managing-tags}
 
-There are a number of actions that you can take on existing tags and namespaces in order to manage and organize them. Simply select a tag or namespace in the [tagging console](#tagging-console) to reveal in the toolbar the actions available.
+There are a number of actions that you can take on existing tags and namespaces to manage and organize them. Simply select a tag or namespace in the [tagging console](#tagging-console) to reveal in the toolbar the actions available.
 
 * [View Properties](#viewing-tag-properties)
 * [Edit](#editing-tags)
@@ -201,7 +201,7 @@ If the changes you made were to an already published tag, you may want to [repub
 
 ### Unpublishing Tags {#unpublishing-tags}
 
-In order to deactivate tag on your author instance and remove it from your publish instance, you can unpublish it. 
+To deactivate tag on your author instance and remove it from your publish instance, you can unpublish it. 
 
 1. To unpublish a tag, open the [tagging console.](#tagging-console)
 

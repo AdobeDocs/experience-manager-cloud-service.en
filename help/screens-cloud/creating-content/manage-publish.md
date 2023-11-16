@@ -27,16 +27,16 @@ Follow the steps below to publish the channel:
 
    ![Select Channel](/help/screens-cloud/assets/create-content/managepub-1.png)
 
-1. Click on **Manage Publication** from the action bar.
+1. Click **Manage Publication** from the action bar.
 
-1. Select the **Action** as **Publish** and **Scheduling** as **Now** from the **Manage Publication wizard** and click on **Next**.
+1. Select the **Action** as **Publish** and **Scheduling** as **Now** from the **Manage Publication wizard** and click **Next**.
 
     ![Select Publish Action](/help/screens-cloud/assets/create-content/managepub-2.png)
 
     >[!NOTE]
     >Click **Include Children** from the action bar and un-check all the options to publish all the modules in your project and click Add to publish. By default, all the boxes are checked and you have to manually un-check the boxes to publish all the modules in your project.
 
-1. After selecting the channel from the **Manage Publication** wizard, click on **Publish** to publish the channel.
+1. After selecting the channel from the **Manage Publication** wizard, click **Publish** to publish the channel.
 
    ![Publish the Channel](/help/screens-cloud/assets/create-content/managepub-3.png)
 
