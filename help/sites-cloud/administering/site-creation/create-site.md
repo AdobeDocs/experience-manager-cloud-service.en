@@ -53,7 +53,7 @@ Using a template to create a site is simple.
 
    ![Creating a site from a template](../assets/create-site-from-template.png)
 
-1. In the Create Site wizard, tap or click on an existing template in the left panel or on **Import** at the top of the left column to import a new template.
+1. In the Create Site wizard, tap or click an existing template in the left panel or on **Import** at the top of the left column to import a new template.
 
    ![Site creation wizard](../assets/site-creation-wizard.png)
 

@@ -138,7 +138,7 @@ Areas can span activities and offers. After you have created an area in either o
 
 >[!NOTE]
 >
->The default area called Master Area is collapsed by default when you tap or click on the name of a brand **until** you create another area. Then, when you select a brand in either the **Activity** or **Offers** console, you see the **Area** console.
+>The default area called Master Area is collapsed by default when you tap or click the name of a brand **until** you create another area. Then, when you select a brand in either the **Activity** or **Offers** console, you see the **Area** console.
 
 To create a new area:
 

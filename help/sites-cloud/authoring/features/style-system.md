@@ -89,7 +89,7 @@ If you wish to use the Style System for your own components do the following:
 
    ![Edit properties](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
-    * **Group Name:** Styles can be grouped together within the style menu that the content author will see when configuring the style of the component.
+    * **Group Name:** Styles can be grouped together within the style menu that the content author sees when configuring the style of the component.
     * **Styles can be combined:** Allows for multiple styles within that group to be selected at one time.
     * **Style Name:** The description of the style that will display to the content author when configuring the style of the component.
     * **CSS Classes:** The actual name of the CSS class associated with the style.

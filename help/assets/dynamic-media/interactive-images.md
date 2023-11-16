@@ -399,7 +399,7 @@ The embed code returned by Experience Manager Assets has a ready-to-use event ha
              s7interactiveimageviewer.setHandlers({
                 "quickViewActivate": function(inData) {
                     var sku=inData.sku; //SKU for product ID
-                    //To pass other parameter from the hotspot, you will need to add custom parameter during the hotspot setup as parameterName=value
+                    //To pass other parameter from the hotspot, add custom parameter during the hotspot setup as parameterName=value
                     loadQuickView(sku); //Replace this call with your Quickview plugin
                     //See your Quickviewer plugin for the Quickview call
                  },

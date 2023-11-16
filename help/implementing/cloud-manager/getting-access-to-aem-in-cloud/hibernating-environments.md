@@ -25,7 +25,7 @@ Follow these steps to manually hibernate your sandbox program environments.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program you wish to hibernate to show its details.
+1. Click the program you want to hibernate to show its details.
 
 1. On the **Environments** card, click the ellipsis button and select **Developer Console**. 
 
@@ -41,7 +41,7 @@ Follow these steps to manually hibernate your sandbox program environments.
 
    ![Confirm hibernation](assets/hibernate-2.png)
 
-When the hibernation is successful, you will see the hibernation process complete notification for your environment in the **Developer Console** screen.
+When the hibernation is successful, you see the hibernation process complete notification for your environment in the **Developer Console** screen.
 
 ![Hibernation confirmation](assets/hibernate-4.png)
 
@@ -59,13 +59,13 @@ You can manually hibernate your Sandbox Program from the Developer Console.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program you wish to hibernate to show its details.
+1. Click the program you want to hibernate to show its details.
 
 1. On the **Environments** card, click the ellipsis button and select **Developer Console**. 
 
    * See [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
 
-1. Click on **De-hibernate**.
+1. Click **De-hibernate**.
 
     ![De-hibernate button](assets/de-hibernation-img1.png)
     

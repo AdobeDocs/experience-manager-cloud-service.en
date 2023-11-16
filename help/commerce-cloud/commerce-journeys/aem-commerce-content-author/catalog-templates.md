@@ -31,11 +31,11 @@ Catalog pages are built dynamically using an AEM CIF catalog template and real-t
 The navigation component shows content and catalog pages. It is possible to show either the catalog landing page or the first level categories in the navigation. Hovering over a category will show second level categories as a second line.
 ![catalog navigation](assets/catalog-navigation.png)
 
-Clicking on a category will open the category page (or product list page).
+Clicking on a category opens the category page (or product list page).
 
 ![PLP](assets/catalog-plp.png)
 
-Clicking on a product will open the product detail page.
+Clicking on a product opens the product detail page.
 
 ![PLP](assets/catalog-pdp.png)
 
@@ -83,11 +83,11 @@ The template can be previewed with any category / product. Open **Page Informati
 
 ![create template ](assets/create-template-picker.png)
 
-Now we have to assign this template to the specific category. Open properties in the **Page Information** menu and switch to the commerce tab. Click on the folder icon to select the **Shop The Look** category from the category picker. It is possible to assign multiple categories to a template and also including sub-categories by enabling the checkbox.
+Now we have to assign this template to the specific category. Open properties in the **Page Information** menu and switch to the commerce tab. Click the folder icon to select the **Shop The Look** category from the category picker. It is possible to assign multiple categories to a template and also including sub-categories by enabling the checkbox.
 
 ![create template associate](assets/create-template-associate.png)
 
-Go back to the main homepage and click on **Shop The Look** category to see the specific template. All the other categories still use the generic template.
+Go back to the main homepage and click **Shop The Look** category to see the specific template. All the other categories still use the generic template.
 
 ![create template result](assets/create-template-result.png)
 
@@ -101,7 +101,7 @@ Now that you have completed this part of the journey you should:
 * how generic templates work
 * have created an individual template
 
-Build on this knowledge and continue your journey by next reviewing the document [Manage staged product catalog experiences](staged-catalog.md), where you will learn how to work with staged product data and AEM Launches.
+Build on this knowledge and continue your journey by next reviewing the document [Manage staged product catalog experiences](staged-catalog.md), where you learn how to work with staged product data and AEM Launches.
 
 ## Additional Resources {#additional-resources}
 

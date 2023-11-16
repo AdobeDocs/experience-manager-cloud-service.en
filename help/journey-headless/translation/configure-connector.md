@@ -126,7 +126,7 @@ Now that you have completed this part of the headless translation journey you sh
 * Understand the important parameters of the Translation Integration Framework in AEM.
 * Be able to set up your own connection to your translation service.
 
-Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Translate content,](translation-rules.md) where you will learn how to use your configuration so far to actually translate your content.
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Translate content,](translation-rules.md) where you learn how to use your configuration so far to actually translate your content.
 
 ## Additional Resources {#additional-resources}
 

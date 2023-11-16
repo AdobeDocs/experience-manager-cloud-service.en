@@ -59,7 +59,7 @@ You now see an overview of your program. Your page will look different but simil
 
 ![Cloud Manager overview](assets/cloud-manager-overview.png)
 
-Note the name of the program that you have accessed or copy the URL. You will need to provide this to the front-end developer later.
+Note the name of the program that you have accessed or copy the URL. You need to provide this to the front-end developer later.
 
 ## Create a Front-End Pipeline {#create-front-end-pipeline}
 

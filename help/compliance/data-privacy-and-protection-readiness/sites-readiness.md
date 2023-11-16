@@ -54,7 +54,7 @@ To Opt-out:
 
     * To opt-out of aggregation and analysis of data about your visit to this site, it is necessary to install a cookie on your browser. This cookie identifies that you have opted-out.
 
-      If you delete the opt-out cookie, or if you change computers or Web browsers, you will need to opt-out again.
+      If you delete the opt-out cookie, or if you change computers or Web browsers, you need to opt-out again.
 
       Opt-out - Exclude me from visitor session aggregation and analysis (install the `amcglobal.sc.omtrdc.net` opt-out cookie) - Click Here.
 
