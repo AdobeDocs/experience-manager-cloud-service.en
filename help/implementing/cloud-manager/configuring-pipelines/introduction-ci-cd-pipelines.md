@@ -124,10 +124,6 @@ Front-end code is any code that is served as a static files. It is separate from
 
 Front-end pipelines help your teams streamline your design and development process by enabling accelerated deployment of front-end code asynchronous of back-end development. This dedicated pipeline deploys JavaScript and CSS to the AEM distribution layer as a theme, resulting in a new theme version which may be referenced from pages delivered by AEM.
 
->[!IMPORTANT]
->
->You must be on AEM version `2021.10.5933.20211012T154732Z ` or higher with AEM Sites enabled to use front-end pipelines.
-
 >[!NOTE]
 >
 >A user with the **Deployment Manager** role can create and run multiple front-end pipelines concurrently.
