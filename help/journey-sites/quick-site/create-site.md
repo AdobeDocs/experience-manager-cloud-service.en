@@ -69,13 +69,13 @@ Using a template to create a new site is very easy.
 
    ![Creating a new site from a template](assets/create-site-from-template.png)
 
-1. In the Create Site wizard, tap or click on **Import** at the top of the left column.
+1. In the Create Site wizard, tap or click **Import** at the top of the left column.
 
    ![Site creation wizard](assets/site-creation-wizard.png)
 
 1. In the file browser, locate the template [you downloaded previously](#obtaining-template) and tap or click **Upload**.
 
-1. Once uploaded, it appears in the list of available templates. Tap or click on it to select it (which also reveals information about the template in the right column) and then tap or click **Next**.
+1. Once uploaded, it appears in the list of available templates. Tap or click it to select it (which also reveals information about the template in the right column) and then tap or click **Next**.
 
    ![Select a template](assets/select-site-template.png)
 

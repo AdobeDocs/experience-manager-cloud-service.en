@@ -75,6 +75,6 @@ If the **Pause before deploying to Production** option is required for a config 
 
 1. Run the pipeline.
 1. Test the code in the staging environment.
-1. When deploying and approval becomes available, click on **Reject**.
+1. When deploying and approval becomes available, click **Reject**.
 1. Edit the pipeline to disable the **Pause before deploying to Production** option.
 1. Run the pipeline again. Iit will run again on staging then on production.

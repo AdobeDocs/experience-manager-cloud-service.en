@@ -35,7 +35,7 @@ The **Pipelines** window shows a complete list of all pipelines for the selected
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. From the **Program Overview** page, tap or click on **Pipelines** tab to switch to the **Pipelines** window.
+1. From the **Program Overview** page, tap or click the **Pipelines** tab to switch to the **Pipelines** window.
 
 1. Here you can see a list of all pipelines for the program as well as start and stop pipeline execution as you would in the **Pipelines Card**.
 
@@ -51,7 +51,7 @@ The **Activities** window shows a complete list of all pipelines executions for 
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. From the **Program Overview** page, tap or click on **Activity** tab to switch to the **Activity** window.
+1. From the **Program Overview** page, tap or click the **Activity** tab to switch to the **Activity** window.
 
 1. Here you can see a list of all pipeline executions for the program including current and historical executions.
 
@@ -65,7 +65,7 @@ Tapping or clicking **View details** will take you to the [details of the pipeli
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click on the ellipsis button next to the pipeline you run select **Run** from the menu.
+1. Navigate to the **Pipelines** card from the **Program Overview** page and click the ellipsis button next to the pipeline you run select **Run** from the menu.
 
 1. The pipeline run begins and is indicated by the **Status** column. 
 
@@ -77,7 +77,7 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click on the ellipsis button next to the pipeline you want to edit and then select **Edit** from the menu.
+1. Navigate to the **Pipelines** card from the **Program Overview** page and click the ellipsis button next to the pipeline you want to edit and then select **Edit** from the menu.
 
 1. The **Edit Production Pipeline** or **Edit Non-Production Pipeline** dialog box displays, allowing you to edit the same details that you entered when creating the pipeline.
 
@@ -85,7 +85,7 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
      * [Configuring Production Pipelines](configuring-production-pipelines.md)
      * [Configuring Non-Production Pipelines](configuring-non-production-pipelines.md)
 
-1. Click on **Update** once you are done editing the pipeline.
+1. Click **Update** once you are done editing the pipeline.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click on the ellipsis button next to the pipeline you run select **Delete** from the menu.
+1. Navigate to the **Pipelines** card from the **Program Overview** page and click the ellipsis button next to the pipeline you run select **Delete** from the menu.
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ You can view the details of a pipeline to see the status and logs of its last ru
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click on the ellipsis button next to the pipeline you run select **View details** from the menu.
+1. Navigate to the **Pipelines** card from the **Program Overview** page and click the ellipsis button next to the pipeline you run select **View details** from the menu.
 
 1. You are taken to the details page of the running pipeline.
 

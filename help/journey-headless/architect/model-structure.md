@@ -47,7 +47,7 @@ Confirm with **Create** and you can then **Open** your model to start defining t
 
 ## Defining Content Fragment Models {#defining-content-fragment-models}
 
-When you first open a new model you will see - a large blank space to the left, and a long list of **Data Types** at the right:
+When you first open a new model you see - a large blank space to the left, and a long list of **Data Types** at the right:
 
 ![Empty Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 

@@ -148,7 +148,7 @@ Select **View** (to the right of a specific project entry) to show further detai
 * APIS
   * For example, Adobe Target
 
-Some of these you will need to complete the integration of Adobe Target in AEM based on IMS.
+Some of these you must complete the integration of Adobe Target in AEM based on IMS.
 
 ## Completing the IMS Configuration in AEM {#completing-the-ims-configuration-in-aem}
 
@@ -190,7 +190,7 @@ To confirm that the configuration is operating as expected:
 
    ![Check Health](assets/integrate-target-ims-12.png)
 
-1. If successful, you will see a confirmation message.
+1. If successful, you see a confirmation message.
 
 ## Complete the Integration with Adobe Target {#complete-the-integration-with-adobe-target}
 
@@ -205,7 +205,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 1. Open the **Tools** menu. Then, within the **Cloud Services** section, select **Legacy Cloud Services**.
 1. Scroll down to **Adobe Target** and select **Configure now**.
 
-   The **Create Configuration** dialog will open.
+   The **Create Configuration** dialog opens.
 
 1. Enter a **Title** and, if you want, a **Name** (if left blank it is generated from the title).
 
@@ -213,7 +213,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 1. Confirm with **Create**.
 
-   The **Edit Component** dialog will open.
+   The **Edit Component** dialog opens.
 
 1. Enter the details in the **Adobe Target Settings** tab:
 

@@ -25,7 +25,7 @@ See [How to access Assets view](/help/assets/assets-view-introduction.md#how-to-
 
 ## Configure [!DNL Assets View] {#configuration}
 
-To open preferences, click on the avatar in the upper-right corner of the user interface. You can switch between the light and the dark themes in the solution preferences.
+To open preferences, click the avatar in the upper-right corner of the user interface. You can switch between the light and the dark themes in the solution preferences.
 
 If you are part of different organizations, you can also change the organization and access your accounts across various organizations.
 
