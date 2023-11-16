@@ -40,13 +40,13 @@ First determine the time frame of the content that you wish to restore. Then to 
 
 >[!NOTE]
 >
->A user with the **Business Owner** or **Deployment Manager** role must be logged in, in order to initiate a restore operation.
+>A user with the **Business Owner** or **Deployment Manager** role must be logged in to initiate a restore operation.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program for which you want to initiate a restore.
+1. Click the program for which you want to initiate a restore.
 
-1. From the **Program Overview** page, in the **Environments** card, click on the ellipsis button next to the environment for which you want to initiate a restore and select **Restore Content**.
+1. From the **Program Overview** page, in the **Environments** card, click the ellipsis button next to the environment for which you want to initiate a restore and select **Restore Content**.
 
    ![Restore option](assets/backup-option.png)
 
