@@ -90,11 +90,6 @@ Now that you have a new product profile, you can assign custom permissions to it
 
 1. Tap or click the **Add all** button at the top of the **Available Permissions** column to add all permissions.
 
-1. If the profile should always have all permissions items, consider using the **Auto-Include** option.
-
-   * **On** - All current permissions items and future permission items will be moved to Included Permission Items and on save will be applicable accordingly.
-   * **Off** - All permission Items will moved back to available permission items and on save will be applicable accordingly.
-
 1. Tap or click **Save** when you are finished defining the permission items for your new product profile.
 
 Your new product profile is now saved with its custom permissions.
@@ -123,6 +118,10 @@ The following permissions are available for creating custom profiles.
 |Environment Create|Allow users to create a new environment|
 |Environment Edit|Allow users to update and edit environments|
 |Environment Logs Read|Allow users to read environment logs|
+|Environment Variables Manage|Allow users to create/edit/delete environment configurations|
+|Environment Restore Create|Allow users to create environment restore|
+|Rapid Dev Environment Reset|Allow users to reset rapid dev environment|
+|Content Copy Manage|Allow users to manage content copy operations|
 |Pipeline Create|Allow users to create new pipelines|
 |Pipeline Delete|Allow users to delete pipelines|
 |Pipeline Edit|Allow users to edit pipelines|
@@ -132,6 +131,15 @@ The following permissions are available for creating custom profiles.
 |Override/Reject Important Metric Failures|Allow users to override/reject important metric failures|
 |Production Deployments Schedule|Allow users to schedule a production deployment step|
 |Repository Info Access|Allow users to access repository info and generate access password|
+|Repository Create|Allow users to create new git repositories|
+|Repository Delete|Allow users to delete git repositories|
+|Repository Edit|Allow users to edit git repositories|
+|Repository Code Generate|Allow users to generate project from archetype|
+|Domain Name Manage|Allow users to create/edit/delete domain names|
+|IP Allowlist Manage|Allow users to create/edit/delete IP allowlist and IP allowlist binding|
+|Network Infrastructure Manage|Allow users to create/edit/delete network infrastructure|
+|SSL Certificate Manage|Allow users to create/edit/delete SSL certificate|
+|New Relic Sub Account User Manage|Allow users to read/edit new relic sub account users|
 
 ### Organization-Level Permissions {#organization-level}
 
