@@ -517,7 +517,8 @@ Note that the Splunk forwarding feature does not yet support CDN logs.
  "cache": "PASS",
  "status": 200,
  "res_age": 0,
- "pop": "PAR"
+ "pop": "PAR",
+ "rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
  }
  ```
 
@@ -541,6 +542,8 @@ Note that the Splunk forwarding feature does not yet support CDN logs.
  | *status*  | The HTTP status code as an integer value.  |
  | *res_age*  | The amount of time (in seconds) a response has been cached (in all nodes).  |
  | *pop*  | Datacenter of the CDN cache server.  |
+ | *rules*  | The names of any matching [traffic filter rules](/help/security/traffic-filter-rules-including-waf.md) and WAF flags, also indicating if the match resulted in a block. Empty if no rules matched.  |
+ 
 
 ## How to Access Logs {#how-to-access-logs}
 
