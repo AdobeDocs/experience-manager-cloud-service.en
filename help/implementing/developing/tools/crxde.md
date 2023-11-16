@@ -65,7 +65,7 @@ Once a file is edited in the **Edit Pane**, the following tools are available on
 * **Show in tree** - Shows the file in the repository tree.
 * **Search/Replace** - Performs a search or replace.
 
-Double-click on the status line of the **Edit Pane** opens the **Go to line** dialog so you can enter a specific line number.
+Double-click the status line of the **Edit Pane** opens the **Go to line** dialog so you can enter a specific line number.
 
 ### Properties Tab {#properties-tab}
 

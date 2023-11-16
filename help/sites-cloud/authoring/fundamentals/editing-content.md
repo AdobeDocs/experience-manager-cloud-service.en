@@ -145,9 +145,9 @@ You can add a new component by using the **Drag components here** box of the par
 
       ![Insert a component](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-    * If you are on a desktop device you can double-click on the **Drag components here** box.
+    * If you are on a desktop device you can double-click the **Drag components here** box.
 
-    * The **Insert New Component** dialog will open to allow you to select your required component:
+    * The **Insert New Component** dialog open to let you select your required component:
 
       ![Insert New Component dialog](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -179,7 +179,7 @@ If when browsing the assets you find that you need to make a quick change to an 
 
 ## Component Toolbar {#component-toolbar}
 
-Selecting a component will open the toolbar. This provides access to various actions that can be performed on the component.
+Selecting a component opens the toolbar. This provides access to various actions that can be performed on the component.
 
 The actual actions available to the user are shown as appropriate and not all actions may be described here.
 
@@ -355,7 +355,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-cloud/aut
 
 >[!TIP]
 >
->The Layout action is limited in scope to the selected component. For example, if you are editing the layout of one component and then click on another component, the standard edit toolbar (not the layout toolbar) displays for the newly selected component and the resizing handles and the emulator toolbar disappear.
+>The Layout action is limited in scope to the selected component. For example, if you are editing the layout of one component and then click another component, the standard edit toolbar (not the layout toolbar) displays for the newly selected component and the resizing handles and the emulator toolbar disappear.
 >
 >If you need to edit the overall layout of the page, affecting multiple components, switch to the [layout mode](/help/sites-cloud/authoring/features/responsive-layout.md).
 

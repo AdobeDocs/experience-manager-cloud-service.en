@@ -221,7 +221,7 @@ This tab is only visible for pages that are configured as live copies. As with B
 
 ### Preview {#preview}
 
-When a Preview environment is enabled you will see:
+When a Preview environment is enabled you see the following:
 
 * Preview URL - the URL used for accessing the content on the Preview environment
 
@@ -280,7 +280,7 @@ When editing a page you can use **Page Information** to define the page properti
 
 1. Open the page for which you want to edit properties.
 1. Select the **Page Information** icon to open the selection menu:
-1. Select **Open Properties** and a dialog will open allowing you to edit the properties, sorted by the appropriate tab. The following buttons are also available at the right of the toolbar:
+1. Select **Open Properties** and a dialog box opens that lets you edit the properties, sorted by the appropriate tab. The following buttons are also available at the right of the toolbar:
    * **Cancel**
    * **Save & Close**
 1. Use the **Save & Close** button to save the changes.

@@ -25,7 +25,7 @@ Before using this feature, it is important to follow these instructions to ensur
 
 1. Log into Adobe Admin Console (https://adminconsole.adobe.com/).
 1. Ensure the proper IMS Org ID is selected in the upper right corner.
-1. Click on the Products navigation option.
+1. Click the Products navigation option.
 1. Check that "Adobe Experience Manager as a Cloud Service" has been provisioned for the IMS Org.
 1. Check that "Adobe Analytics" has been provisioned for the IMS Org.
 1. Go to Cloud Manager (https://experience.adobe.com/cloud-manager).
@@ -40,7 +40,7 @@ The environment should now be ready for Experience Cloud Setup Automation.
 1. Navigate to **Sites** and select the root of the site to integrate with Adobe Analytics.
 1. Expand the side rail menu and tap **Setup Analytics**.
 
-    This is a new option in the side rail that will open a panel that will provide controls and status for Experience Cloud Setup Automation. 
+    This is a new option in the side rail that opens a panel that provides controls and status for Experience Cloud Setup Automation. 
 1. Tap the **Integrate Analytics** button.
 1. In the resulting dialog, provide a name for the **Report Suite ID**.
 

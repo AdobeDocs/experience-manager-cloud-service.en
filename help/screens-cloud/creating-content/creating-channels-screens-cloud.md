@@ -28,18 +28,18 @@ Follow the steps below to create a new sequence channel in Screens as a Cloud Se
 
 1. Navigate to your AEM Screens project, such as *FirstDigitalExperience*.
 
-1. Select the **Channels** folder from your project, such as **FirstDigitalExperience** --> **Channels** and click on **Create** from the action bar.
+1. Select the **Channels** folder from your project, such as **FirstDigitalExperience** --> **Channels** and click **Create** from the action bar.
 
    ![channel-create1](/help/screens-cloud/assets/create-content/channel-create1.png)
 
-1. Select the template, such as, **Sequence Channel** from the **Create** wizard and click on **Next**.
+1. Select the template, such as, **Sequence Channel** from the **Create** wizard and click **Next**.
 
    ![channel-create2](/help/screens-cloud/assets/create-content/channel-create2.png)
 
    >[!NOTE]
    > The **Create** wizard provides different types of templates while creating a channel. See [Available Templates](#available-templates) in Create Wizard for more details.
 
-1. Enter the name of your sequence channel, such as, **LoopingChannelOne** and click on **Create**.
+1. Enter the name of your sequence channel, such as, **LoopingChannelOne** and click **Create**.
 
    ![channel-create3](/help/screens-cloud/assets/create-content/channel-create3.png)
 
@@ -59,7 +59,7 @@ Navigate to the channel from your project and select the channel, as shown in th
 
 To add or edit content in a channel, follow the steps below:
 
-1. Select the channel you want to edit, as shown in the figure below. Click on **Edit** from the top left corner of the action bar to open the editor.
+1. Select the channel you want to edit, as shown in the figure below. Click **Edit** from the top left corner of the action bar to open the editor.
 
    ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
@@ -70,7 +70,7 @@ To add or edit content in a channel, follow the steps below:
     ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >Click on **Preview** to preview the contents of your channel.
+   >Click **Preview** to preview the contents of your channel.
    >![edit-channelpreview](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## Available Templates in Create Wizard {#available-templates}

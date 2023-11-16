@@ -87,7 +87,7 @@ The rule editor provides the following logical operators and events using which 
 * **Has Selected:** Returns true when the user selects a particular option for a checkbox, drop-down, radio button.
 * **Is Initialized (event):** Returns true when a form object renders in the browser.
 * **Is Changed (event):** Returns true when the user changes the entered value or selected option for a form object.
-* **Navigation(event):** Returns true when the user click on a navigation  object. Navigation objects are used to move between panels. 
+* **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
 * **Step Completion(event):** Returns true when a step of a rule completes.
 * **Successful Submission(event):** Returns true on successful submission of data to a form data model.
 * **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model.

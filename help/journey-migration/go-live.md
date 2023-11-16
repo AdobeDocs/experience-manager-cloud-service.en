@@ -10,7 +10,7 @@ exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 >title="Go-Live Preparation"
 >abstract="To ensure a smooth and successful go-live on AEM as a Cloud Service, you should plan for code and content freeze periods, testing iterations, content top-ups, performance tests, security tests and more."
 
-In this part of the journey, you will learn how to plan and perform the migration once both the code and the content are ready to be moved over to AEM as a Cloud Service. Additionally, you will learn what are the best practices and known limitations when performing the migration.
+In this part of the journey, you learn how to plan and perform the migration once both the code and the content are ready to be moved over to AEM as a Cloud Service. Additionally, you learn what are the best practices and known limitations when performing the migration.
 
 ## The Story So Far {#story-so-far}
 
@@ -132,7 +132,7 @@ Review this list of activities to ensure that you perform a smooth and successfu
 * Configure CDN, SSL and DNS.
   * If you are using your own CDN, enter a support ticket to configure appropriate routing.
     * See the section [Customer CDN points to AEM Managed CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) in the CDN documentation for details.
-    * You will need to configure SSL and DNS according to the documentation of your CDN vendor.
+    * Configure SSL and DNS according to the documentation of your CDN vendor.
   * If you are not using an additional CDN, manage SSL and DNS as per the following documentation:
     * Managing SSL Certificates
       * [Introduction to Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
