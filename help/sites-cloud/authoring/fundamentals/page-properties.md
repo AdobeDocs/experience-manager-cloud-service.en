@@ -81,9 +81,9 @@ The properties are distributed across several tabs.
   >* Do not support regex patterns.
   >* Should not be set to an existing page.
 
-  * **Add** - Tap or click to show a field to define a vanity URL for the page.
-    * Tap or click again to add multiple.
-    * Tap or click the **Remove** icon to delete the vanity URL.
+  * **Add** - Select to show a field to define a vanity URL for the page.
+    * Select again to add multiple.
+    * Select the **Remove** icon to delete the vanity URL.
   * **Redirect Vanity URL** - Indicates whether you want the page to use the vanity URL.
 
 ### Advanced {#advanced}
@@ -99,7 +99,7 @@ The properties are distributed across several tabs.
     * For example, if you define an alias of `private` for the page `/content/wknd/us/en/magazine/members-only`, then this page can also be accessed via `/content/wknd/us/en/magazine/private`
     * Creating an alias sets the `sling:alias` property on the page node, which only impacts the resource, not the repository path.
     * Pages accessed by aliases in the editor cannot be published. [Publish options](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) in the editor are only available for pages accessed via their actual paths. 
-    * For further details see [Localized page names under SEO and URL Management Best Practices](/help/overview/seo-and-url-management.md#localized-page-names).
+    * See [Localized page names under SEO and URL Management Best Practices](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuration**
 
@@ -141,7 +141,7 @@ The properties are distributed across several tabs.
 
 * **Featured Image**
 
-  Select, and configure, the image to be featured. This is used in components referencing the page; for example, teasers, page lists, etc.
+  Select, and configure, the image to be featured. This is used in components referencing the page; for example, teasers, page lists, and so on.
 
   * **Image**
 
@@ -231,7 +231,7 @@ Through a simple configuration, a content author can now enable progressive web 
 
 >[!NOTE]
 >
->For further details see [Enabling Progressive Web App Features](/help/sites-cloud/authoring/features/enable-pwa.md).
+>See [Enabling Progressive Web App Features](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **Configure installable experience**
 

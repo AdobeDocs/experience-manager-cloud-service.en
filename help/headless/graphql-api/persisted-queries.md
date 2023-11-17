@@ -390,7 +390,7 @@ The field `Respond with application/graphql-response+json` (`responseContentType
 
   >[!NOTE]
   >
-  >For further details see https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >See https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 

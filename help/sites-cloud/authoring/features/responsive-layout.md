@@ -39,7 +39,7 @@ With these responsive grid mechanisms you can:
 * Hide components for specific device layouts.
 * Realize column control.
 
-Depending on your project, the Layout Container might be used as the default paragraph system for your pages or as a component available to be added to your page via the component browser (or both).
+Depending on your project, the Layout Container might be used as the default paragraph system for your pages or as a component available to be added to your page by way of the component browser (or both).
 
 >[!TIP]
 >
@@ -102,7 +102,7 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 1. To select a specific device to emulate you can either:
 
     * Use the Select Device icon and select from a drop-down selector.
-    * Tap/click the device indicator in the emulator toolbar.
+    * Select the device indicator in the emulator toolbar.
 
    ![Select device dropdown](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
@@ -137,7 +137,7 @@ A **Layout Container** is a paragraph system that:
 
 ## Selecting and Taking Action on a Layout Container (Edit mode) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-As with other components, you can select and then take action on (cut, copy, delete) a Layout Container (when in **Edit** mode):
+As with other components, you can select and then act on (cut, copy, delete) a Layout Container (when in **Edit** mode):
 
 >[!CAUTION]
 >
@@ -189,14 +189,14 @@ When in layout mode you can perform various actions on a grid:
   >
   >Proportions and ratios are maintained when components such as **Images** are resized.
 
-* Click/tap on a content component, the toolbar lets you:
+* Select a content component, the toolbar lets you:
   * **Parent** - Lets you select the entire layout container component for taking action on the whole.
   * **Float to new line** - The component is moved to a new line, dependent on the space available within the grid.
   * **Hide component** - The component is made invisible (it can be restored from the toolbar of the layout container).
 
   ![Hide component](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* In **Layout** mode you can tap/click the **Drag components here** to select the entire component. The toolbar is shown for this mode.
+* In **Layout** mode you can select the **Drag components here** to select the entire component. The toolbar is shown for this mode.
 
   The toolbar has different options depending on the state of the layout component and the components belonging to it. For example:
 

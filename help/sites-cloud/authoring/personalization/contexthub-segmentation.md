@@ -82,11 +82,11 @@ To define your new segment:
 
 1. After [accessing the segments](#accessing-segments), [navigate to the folder](#organizing-segments) where you would like to create the segment.
 
-1. Tap or click the **Create** button and select **Create ContextHub Segment**.
+1. Select the **Create** button and select **Create ContextHub Segment**.
 
    ![Add segment](../assets/contexthub-create-segment.png)
 
-1. In the **New ContextHub Segment**, enter a title for the segment and a boost value if required and then tap or click **Create**.
+1. In the **New ContextHub Segment**, enter a title for the segment and a boost value if required and then select **Create**.
 
    ![New segment](../assets/contexthub-new-segment.png)
 
@@ -97,7 +97,7 @@ To define your new segment:
 
 1. From the segments console, edit your newly-created segment to open it in the segment editor.
 1. Drag a comparison or reference to the segment editor it will appear in the default AND container.
-1. Double-click or tap the configure option of the new reference or segment to edit the specific parameters. In this example, we are testing for people in Basel.
+1. Double-select the configure option of the new reference or segment to edit the specific parameters. In this example, we are testing for people in Basel.
 
    ![Testing for people in Basel](../assets/contexthub-comparing-property-value.png)
 
@@ -187,7 +187,7 @@ If you have many segments, they can become hard to manage as a flat list. In suc
 
 ### Create a New Folder {#create-folder}
 
-1. After [accessing the segments](#accessing-segments), click or tap the **Create** button and select **Folder**.
+1. After [accessing the segments](#accessing-segments), select the **Create** button and select **Folder**.
 
    ![Add folder](../assets/contexthub-create-segment.png)
 
@@ -199,24 +199,24 @@ If you have many segments, they can become hard to manage as a flat list. In suc
 
     ![Create folder](../assets/contexthub-create-folder.png)
 
-1. Tap or click **Create**.
+1. Select **Create**.
 
    ![Confirm folder](../assets/contexthub-confirm-folder.png)
 
 1. The folder will appear in the list of segments.
    * How you sort your columns will affect where in the list the new folder appears.
-   * You can tap or click the column headings to adjust your sort.
+   * You can select the column headings to adjust your sort.
    ![The new folder](../assets/contexthub-folder.png)
 
 ### Modify Existing Folders {#modify-folders}
 
-1. After [accessing the segments](#accessing-segments), click or tap the folder you wish to modify to select it.
+1. After [accessing the segments](#accessing-segments), select the folder you want to modify to select it.
 
    ![Select folder](../assets/contexthub-select-folder.png)
 
-1. Tap or click **Rename** in the toolbar to rename the folder.
+1. Select **Rename** in the toolbar to rename the folder.
 
-1. Provide a new **Folder Title** and tap or click **Save**.
+1. Provide a new **Folder Title** and select **Save**.
 
    ![Rename folder](../assets/contexthub-rename-folder.png)
 
@@ -226,25 +226,25 @@ If you have many segments, they can become hard to manage as a flat list. In suc
 
 ### Delete a Folder
 
-1. After [accessing the segments](#accessing-segments), click or tap the folder you wish to modify to select it.
+1. After [accessing the segments](#accessing-segments), select the folder you want to modify to select it.
 
    ![Select folder](../assets/contexthub-select-folder.png)
 
-1. Tap or click **Delete** in the toolbar to delete the folder.
+1. Select **Delete** in the toolbar to delete the folder.
 
 1. A dialog presents a list of folders selected for deletion.
 
    ![Confirm delete](../assets/contexthub-confirm-segment-delete.png)
 
-   * Tap or click **Delete** to confirm.
-   * Tap or click **Cancel** to abort.
+   * Select **Delete** to confirm.
+   * Select **Cancel** to abort.
 
 1. If any of the selected folders contains subfolders or segments, their deletion must be confirmed.
 
    ![Confirm deletion of children](../assets/contexthub-confirm-segment-child-delete.png)
 
-   * Tap or click **Force Delete** to confirm.
-   * Tap or click **Cancel** to abort.
+   * Select **Force Delete** to confirm.
+   * Select **Cancel** to abort.
 
 >[!NOTE]
 >

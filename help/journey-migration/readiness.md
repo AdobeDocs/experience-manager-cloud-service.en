@@ -74,7 +74,7 @@ The list of items in the below table is the subset of the changes most relevant 
   <tr>
     <td>Built in CDN and Get your own CDN</td>
     <td></td>
-    <td>AEM as a Cloud Service includes the CDN for all environments which is optimized for most use cases.<br>If you wish to set up your own CDN, you must submit a request to Adobe Support for it to be approved.<br>If it is approved, the CDN points to Fastly and not to AEM instances in any environments.</td>
+    <td>AEM as a Cloud Service includes the CDN for all environments which is optimized for most use cases.<br>If you want to set up your own CDN, you must submit a request to Adobe Support for it to be approved.<br>If it is approved, the CDN points to Fastly and not to AEM instances in any environments.</td>
   </tr>
   <tr>
     <td>Long Running Jobs</td>

@@ -24,7 +24,7 @@ This page helps you understand more about AEM Screens and how this digital signa
 
 |User Guide|Description|
 |---|---|
-|[Overview](/help/overview/home.md)|This guide provides an overview of Experience Manager as a Cloud service, including an introduction, terminology, architecture, etc.|
+|[Overview](/help/overview/home.md)|This guide provides an overview of Experience Manager as a Cloud service, including an introduction, terminology, architecture, and so on.|
 |[Release Notes](/help/release-notes/home.md)|This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what's new deprecated and removed features, and known issues.|
 |[Security User Guide](/help/security/home.md)|Learn about important security topics regarding Experience Manager as a Cloud Service.|
 |[Onboarding Journey](/help/journey-onboarding/overview.md)|This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.|

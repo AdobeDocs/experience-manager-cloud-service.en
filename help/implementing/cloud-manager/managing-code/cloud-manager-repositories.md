@@ -18,7 +18,7 @@ Follow these steps view and manage repositories in Cloud Manager.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. From the **Program Overview** page, tap or click the **Repositories** tab to switch to the **Repositories** page.
+1. From the **Program Overview** page, select the **Repositories** tab to switch to the **Repositories** page.
 
 1. Click **Add Repository**.
 
@@ -124,5 +124,5 @@ When using git submodules, be aware of the following limitations.
 * For security reasons, do not embed credentials in git URLs.
 * Unless otherwise necessary, it is highly recommended to use shallow submodules.
   * To do this, run `git config -f .gitmodules submodule.<submodule path>.shallow true` for each submodule.
-* Git submodule references are stored to specific git commits. As a result, when changes to the submodule repository are made, the commit referenced needs to be updated.
+* Git submodule references are stored to specific git commits. As a result, when changes to the submodule repository are made, the commit referenced must be updated.
   * For example, by using `git submodule update --remote`

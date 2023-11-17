@@ -45,7 +45,7 @@ When defining your hide expression keep in mind:
 
 Examples of hide conditions can be found throughout AEM and the [core components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in particular. For example, consider the [list core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) as implemented in the [WKND tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
-[Using the template editor](/help/sites-cloud/authoring/features/templates.md), the template author can define in the design dialog which options of the list component that are available to the page author. Such options as whether to allow the list to be a static list, a list of child pages, a list of tagged pages, etc. can be enabled or disabled.
+[Using the template editor](/help/sites-cloud/authoring/features/templates.md), the template author can define in the design dialog which options of the list component that are available to the page author. Such options as whether to allow the list to be a static list, a list of child pages, a list of tagged pages, and so on can be enabled or disabled.
 
 If a template author chooses to disable the child pages option, a design property is set and a hide condition is evaluated against it, which causes the option to not render for the page author.
 

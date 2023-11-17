@@ -152,7 +152,7 @@ AEM can continue to support local logins for Admin users. The logon screen lets 
 
 ![Local Login](/help/security/assets/ims9.png)
 
-<!-- the above image needs to be updated for skyline -->
+<!-- the above image must be updated for skyline -->
 
 **IMS Based Login**
 

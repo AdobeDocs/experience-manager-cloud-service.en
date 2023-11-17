@@ -34,7 +34,7 @@ There are three types of Adobe IDs:
 
 * **Enterprise ID**: Organizations usually want to increase control of the users accounts. Only system administrators can create enterprise IDs and the organization owns these accounts with Adobe serving only as the host.
 
-* **Federated ID**: With federated IDs the organization takes full ownership and control of the accounts. To do this your organization needs to integrate the Adobe Experience Cloud with your SAML2 single sign-on (SSO) system. This allows users to authenticate against their organization's SSO system rather than an account hosted by Adobe.
+* **Federated ID**: With federated IDs the organization takes full ownership and control of the accounts. To do this your organization must integrate the Adobe Experience Cloud with your SAML2 single sign-on (SSO) system. This allows users to authenticate against their organization's SSO system rather than an account hosted by Adobe.
 
 As system administrator, you may decide to onboard yourself and your team onto AEM as a Cloud Service using personal IDs before enterprise or federated IDs are set up. Once enterprise or federated IDs are set up, members can be transitioned to using those IDs.
 

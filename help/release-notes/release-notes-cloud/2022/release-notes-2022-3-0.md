@@ -28,7 +28,7 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
 
-* Content model data types can now be defined as translatable using a simple checkbox in the content model editor. Additionally, AEM translation rules and configurations are automatically updated.
+* Content model data types can now be defined as translatable using a simple checkbox in the content model editor. Also, AEM translation rules and configurations are automatically updated.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

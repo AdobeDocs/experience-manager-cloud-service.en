@@ -84,7 +84,7 @@ To connect PWA Studio with the GraphQL endpoint of AEM, you can use the [AEM Ext
 
 ## Setup AEM {#setup-aem}
 
-Follow the AEM Content Fragments documentation to setup a GraphQL endpoint for your AEM project. Additionally, in your AEM project, add the following configurations to allow your PWA Studio application to access the GraphQL endpoint:
+Follow the AEM Content Fragments documentation to setup a GraphQL endpoint for your AEM project. Also, in your AEM project, add the following configurations to allow your PWA Studio application to access the GraphQL endpoint:
 
 * Adobe Granite Cross-Origin Resource Sharing Policy (com.adobe.granite.cors.impl.CORSPolicyImpl)
 

@@ -118,7 +118,7 @@ Certain actions are available from the console - without selecting a specific Co
 
   >[!NOTE]
   >
-  >The **Assets** console is used to access assets, such as images, videos, etc.  This console can be accessed:
+  >The **Assets** console is used to access assets, such as images, videos, and so on.  This console can be accessed:
   >
   >* using the **Open in Assets** link (in the Content Fragments console)
   >* directly from the global **Navigation** pane
@@ -195,7 +195,7 @@ The main/right panel (table view) of the console provides a range of information
 
     ![Content Fragments console - Language indicator](assets/cf-managing-console-language-indicator.png)
 
-  * Click/tap on the count to open a dialog that displays all the language copies. To open a specific language copy, click the **Title** in the dialog.
+  * Select the count to open a dialog that displays all the language copies. To open a specific language copy, click the **Title** in the dialog.
 
     ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
 
@@ -299,7 +299,7 @@ You can publish your Content Fragments to:
 
   >[!NOTE]
   >
-  >For more details about the Preview environments, please see:
+  >For more details about the Preview environments, see the following:
   >
   >* [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   >* [Configuring OSGi Settings for the Preview Tier](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
@@ -413,7 +413,7 @@ The icon indicates the locale of the content fragment, together with the total n
 
 ![Content Fragments console - Language indicator](assets/cfc-console-language-indicator.png)
 
-Click/tap on the count to open a dialog that displays all the language copies. To open a specific language copy, click the **Title** in the dialog.
+Select the count to open a dialog that displays all the language copies. To open a specific language copy, click the **Title** in the dialog.
 
 ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
 

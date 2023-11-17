@@ -18,13 +18,13 @@ To edit metadata:
 
 1. Do one of the following:
 
-    * From the Assets UI, select the asset and click/tap the **[!UICONTROL View Properties]** icon from the toolbar.
+    * From the Assets UI, select the asset and select the **[!UICONTROL View Properties]** icon from the toolbar.
     * From the asset thumbnail, select the **[!UICONTROL View Properties]** quick action.
-    * From the asset page, click/tap **[!UICONTROL View Properties]** from the toolbar.
+    * From the asset page, select **[!UICONTROL View Properties]** from the toolbar.
 
-   The asset page displays all of the asset's metadata. This metadata was automatically extracted when it was uploaded (ingested) into Experience Manager Assets.
+   The asset page displays the asset's metadata. This metadata was automatically extracted when it was uploaded (ingested) into Experience Manager Assets.
 
-1. Make edits to the metadata under the various tabs, as required, and when completed, click/tap **[!UICONTROL Save]** from the toolbar to save your changes. Click/tap **[!UICONTROL Close]** to return to the Assets web interface.
+1. Make edits to the metadata under the various tabs, as required, and when completed, select **[!UICONTROL Save]** from the toolbar to save your changes. Select **[!UICONTROL Close]** to return to the Assets web interface.
 
    >[!NOTE]
    >
@@ -43,10 +43,10 @@ For details on how to edit metadata schema, see [Editing metadata schema forms](
 You can add your own namespaces within Experience Manager. Just as there are predefined namespaces such as cq, jcr and sling, you can have a namespace for your repository metadata and xml processing.
 
 1. Go to the node type administration page *https://&lt;host&gt;:&lt;port&gt;/crx/explorer/nodetypes/index.jsp*.
-1. Click or tap **[!UICONTROL Namespaces]** at the top of the page. The namespace administration page is displayed in a window.
+1. Select **[!UICONTROL Namespaces]** at the top of the page. The namespace administration page is displayed in a window.
 
-1. To add a namespace, click or tap **[!UICONTROL New]** at the bottom.
-1. Specify a custom namespace in the XML namespace convention (Specify the id in the form of a URI and an associated prefix for the id), and click or tap **[!UICONTROL Save]**.
+1. To add a namespace, select **[!UICONTROL New]** at the bottom.
+1. Specify a custom namespace in the XML namespace convention (Specify the id in the form of a URI and an associated prefix for the id), and select **[!UICONTROL Save]**.
 
 **See also**
 

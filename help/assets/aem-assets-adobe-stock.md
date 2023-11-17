@@ -118,7 +118,7 @@ The public key (certificate) authenticates your product profile in Adobe Develop
 
 1. In Adobe IMS Configurations page, click **[!UICONTROL Create]**. The **[!UICONTROL Adobe IMS Technical Account Configuration]** page opens. 
 
-1. In the **[!UICONTROL Certificate]** tab, select **[!UICONTROL Adobe Stock]** from the **[!UICONTROL Cloud Solution]** dropdown list.  
+1. In the **[!UICONTROL Certificate]** tab, select **[!UICONTROL Adobe Stock]** from the **[!UICONTROL Cloud Solution]** drop-down list.  
 
 1. You can create a certificate or reuse an existing certificate for the configuration. 
 
@@ -145,7 +145,7 @@ To generate the service account credentials and JWT payload:
 1. Log in to Adobe Developer Console with system administrator privileges. The default URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
-   Ensure that you have selected the correct IMS organization (Stock entitlement) from the dropdown (organization) list.
+   Ensure that you have selected the correct IMS organization (Stock entitlement) from the drop-down (organization) list.
 
 1. Click **[!UICONTROL Create new project]**. A blank project with a system-generated name is created for your organization. 
 
@@ -214,7 +214,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
    Select the IMS configuration that you have created while [configuring the IMS account](#create-ims-account-configuration).
 
-   Select your locale from the dropdown list.
+   Select your locale from the drop-down list.
 
    ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
 
@@ -302,7 +302,7 @@ To activate the [!DNL Adobe Stock] cloud configuration:
 
 1. Click the user icon from the upper-right corner and then click **[!UICONTROL My Preferences]**. The **[!UICONTROL User Preferences]** window opens.
 
-1. Select the desired **[!UICONTROL Stock Configuration]** from the dropdown list and click **[!UICONTROL Accept]** to activate the configuration. 
+1. Select the desired **[!UICONTROL Stock Configuration]** from the drop-down list and click **[!UICONTROL Accept]** to activate the configuration. 
 
    ![user-preferences](assets/aem-stock-preferences.png)
 

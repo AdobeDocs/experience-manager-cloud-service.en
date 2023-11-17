@@ -51,7 +51,7 @@ In this way, front-end development can work separately from and parallel to any 
 
 1. Log into Adobe Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Cloud Manager lists the various programs available. Tap or click the one you wish to manage. If you are just starting with AEM as a Cloud Service, you likely only have one program available.
+1. Cloud Manager lists the various programs available. Select the one you want to manage. If you are just starting with AEM as a Cloud Service, you likely only have one program available.
 
    ![Selecting a program in Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -65,7 +65,7 @@ Note the name of the program that you have accessed or copy the URL. You need to
 
 Now that you have accessed Cloud Manager, you can create a pipeline for front-end deployment.
 
-1. In the **Pipelines** section of the Cloud Manager page, tap or click the **Add** button.
+1. In the **Pipelines** section of the Cloud Manager page, select the **Add** button.
 
    ![Pipelines](assets/pipelines-add.png)
 
@@ -77,7 +77,7 @@ Now that you have accessed Cloud Manager, you can create a pipeline for front-en
 
    ![Add pipeline configuration](assets/add-pipeline-configuration.png)
 
-1. Tap or click **Continue**.
+1. Select **Continue**.
 
 1. On the **Source Code** tab:
    * Select **Front End Code** as the type of code to deploy.
@@ -88,7 +88,7 @@ Now that you have accessed Cloud Manager, you can create a pipeline for front-en
 
    ![Source code info for adding pipeline](assets/add-pipeline-source-code.png)
 
-1. Tap or click **Save**.
+1. Select **Save**.
 
 The new pipeline is created and visible in the **Pipelines** section of the Cloud Manager window. Tapping of clicking the ellipsis after the pipeline name reveals options to further edit or view details as necessary.
 

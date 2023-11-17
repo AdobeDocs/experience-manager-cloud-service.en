@@ -29,7 +29,7 @@ The additional benefits of using a blueprint configuration are that they:
 
 In the case that a blueprint configuration is not referenced, rollouts can only be initiated from the Live Copies themselves, essentially pulling content from source.
 
-When creating a new site with Live Copy, it is advantageous to create blueprint configurations to ensure the availability of the full MSM feature set.
+When creating a site with Live Copy, it is advantageous to create blueprint configurations to ensure the availability of the full MSM feature set.
 
 >[!NOTE]
 >

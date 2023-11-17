@@ -29,7 +29,7 @@ State must not be kept in memory but persisted in the repository. Otherwise, thi
 
 The instance's file system should not be used in AEM as a Cloud Service. The disk is ephemeral and is disposed when instances are recycled. Limited use of the filesystem for temporary storage relating to the processing of single requests is possible, but should not be abused for huge files. This is because it may have a negative impact on the resource usage quota and run into disk limitations.
 
-As an example where file system usage is not supported, the Publish tier should ensure that any data that needs to be persisted is shipped off to an external service for longer term storage.
+As an example where file system usage is not supported, the Publish tier should ensure that any data that must be persisted is shipped off to an external service for longer term storage.
 
 ## Observation {#observation}
 
@@ -237,7 +237,7 @@ See the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experien
 
 The SMTP server port should be set as the `portDest` value set in the portForwards parameter used in the API call when configuring advanced networking and the `portOrig` value should be a meaningful value that is within the required range of 30000 - 30999. For example, if the SMTP server port is 465, port 30465 should be used as the `portOrig` value.
 
-In this case and assuming SSL needs to be enabled, in the configuration of the **Day CQ Mail Service OSGI** service:
+In this case, and assuming SSL needs to be enabled, in the configuration of the **Day CQ Mail Service OSGI** service:
 
 * Set `smtp.port` to `30465`
 * Set `smtp.ssl` to `true`

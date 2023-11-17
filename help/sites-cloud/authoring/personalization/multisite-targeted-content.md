@@ -20,7 +20,7 @@ This document describes the following:
 
 To set up how your sites share personalized content, you need to perform the following steps:
 
-1. [Create a new area](#creating-new-areas) or [create an area as live copy](#creating-new-areas). An area includes all the activities tha are available for an *area* of the page; that is , the location on the page where the component is targeted. Creating a new area creates an empty area, whereas creating a new area as a live copy lets you inherit content across site structures.
+1. [Create a new area](#creating-new-areas) or [create an area as live copy](#creating-new-areas). An area includes all the activities tha are available for an *area* of the page; that is , the location on the page where the component is targeted. Creating a new area creates an empty area, whereas creating an area as a live copy lets you inherit content across site structures.
 
 1. [Link your site or page](#linking-sites-to-an-area) to an area.
 
@@ -46,7 +46,7 @@ A site or live copy links to an area containing the activities that need to be a
 
 ## Use cases {#use-cases}
 
-You can set up multisite support for targeted content in a number of ways, depending on your use case. This section describes how this would work theoretically with one brand. In addition, in [Example: Targeting Content Based on Geography](#example-targeting-content-based-on-geography), you can see a real-world application of targeting content in multiple sites.
+You can set up multisite support for targeted content in several ways, depending on your use case. This section describes how this would work theoretically with one brand. In addition, in [Example: Targeting Content Based on Geography](#example-targeting-content-based-on-geography), you can see a real-world application of targeting content in multiple sites.
 
 Targeted content is wrapped in a so-called areas, which define the scope for sites or pages. These areas are defined at the brand level. One brand can contain multiple areas. Areas can be distinct between brands. While one brand may just contain the master area and therefore is shared across all brands, another brand may contain multiple brands (for example, by region). Brands, therefore, do not need to mirror the set of areas between them.
 
@@ -138,18 +138,18 @@ Areas can span activities and offers. After you have created an area in either o
 
 >[!NOTE]
 >
->The default area called Master Area is collapsed by default when you tap or click the name of a brand **until** you create another area. Then, when you select a brand in either the **Activity** or **Offers** console, you see the **Area** console.
+>The default area called Master Area is collapsed by default when you select the name of a brand **until** you create another area. Then, when you select a brand in either the **Activity** or **Offers** console, you see the **Area** console.
 
 To create an area:
 
 1. Navigate to **Personalization** &gt; **Activities** or **Offers** or and then to your brand.
-1. Tap or click **Create Area**.
+1. Select **Create Area**.
 
    ![Create area](/help/sites-cloud/authoring/assets/multisite-create-area.png)
 
 1. Click the **Area** icon and click **Next**.
 1. In the **Title** field, enter a name for the new area. Optionally select tags.
-1. Tap or click **Create**.
+1. Select **Create**.
 
    AEM redirects to the brand window, where it lists any areas created. If there is another area besides the Master Area, then you can create areas directly in the Brand console.
 
@@ -162,7 +162,7 @@ You create an area as a live copy to inherit the targeted content across site st
 To create an area as a livecopy:
 
 1. Navigate to **Personalization** &gt; **Activities** or **Offers** and then to your brand.
-1. Tap or click **Create Area as Live Copy**.
+1. Select **Create Area as Live Copy**.
 
    ![Create area as live copy](/help/sites-cloud/authoring/assets/multisite-area-as-livecopy.png)
 
@@ -184,7 +184,7 @@ To create an area as a livecopy:
    >
    >When a page is rolled out to a Live Copy and the area configured for the Blueprint page is also the Blueprint for the area configured for the Pages Live Copy, the LiveAction **personalizationContentRollout** triggers a synchronous subRollout, which is part of the **Standard rollout config**.
 
-1. Tap or click **Create**.
+1. Select **Create**.
 
    AEM redirects to the brand window, where it lists any areas created. If there is another area besides the Master Area, then you can create areas directly from the brand window.
 
@@ -203,13 +203,13 @@ When you link, only those activities, experiences, and offers from the selected 
 To link a site to an area:
 
 1. Navigate to the site (or page) that you want to link to an area.
-1. Select the site or page and tap or click **View Properties**.
-1. Tap or click the **Personalization** tab.
+1. Select the site or page and select **View Properties**.
+1. Select the **Personalization** tab.
 1. In the **Brand** menu, select the brand you want to link your area to. After you select the brand, available areas are available in the **Area Reference** menu.
 
    ![Linking sites](/help/sites-cloud/authoring/assets/multisite-english.png)
 
-1. Select the area from the **Area Reference** drop-down menu and tap or click **Save**.
+1. Select the area from the **Area Reference** drop-down menu and select **Save**.
 
    ![Area reference](/help/sites-cloud/authoring/assets/multisite-area-reference.png)
 
@@ -233,8 +233,8 @@ An activity that is inheriting from another site is marked green next to the act
 
 To suspend or detach inheritance of targeted content in an activity:
 
-1. Navigate to the page where you want to detach or suspend inheritance and tap or click **Targeting** in the mode drop-down menu.
-1. If your page is linked to an area that is a live copy, you see the inheritance status. Tap or click **Start Targeting**.
+1. Navigate to the page where you want to detach or suspend inheritance and select **Targeting** in the mode drop-down menu.
+1. If your page is linked to an area that is a live copy, you see the inheritance status. Select **Start Targeting**.
 1. To suspend on an activity, do one of the following:
 
     1. Select an element of the activity, such as the audience. AEM automatically displays a Suspend Live Copy confirmation box. (You can suspend live copy by tapping or clicking on any element throughout the Targeting process.)
@@ -242,7 +242,7 @@ To suspend or detach inheritance of targeted content in an activity:
 
    ![Suspend live copy](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
-1. Tap or click **Suspend** to suspend the activity. Suspended activities are marked in red.
+1. Select **Suspend** to suspend the activity. Suspended activities are marked in red.
 
    ![Suspended live copy](/help/sites-cloud/authoring/assets/multisite-suspended.png)
 
@@ -250,10 +250,10 @@ To suspend or detach inheritance of targeted content in an activity:
 
 To break inheritance of targeted content in an activity:
 
-1. Navigate to the page where you want to detach the live copy from the master and tap or click **Targeting** in the mode drop-down menu.
-1. If your page is linked to an area that is a live copy, you see the inheritance status. Tap or click **Start Targeting**.
+1. Navigate to the page where you want to detach the live copy from the master and select **Targeting** in the mode drop-down menu.
+1. If your page is linked to an area that is a live copy, you see the inheritance status. Select **Start Targeting**.
 1. Select **Detach Live Copy** from the drop-down menu in the toolbar. AEM confirms that you want to detach the live copy.
-1. Tap or click **Detach** to detach the live copy from the activity. After it is detached, the drop-down menu regarding inheritance no longer displays. The activity is now a local activity.
+1. Select **Detach** to detach the live copy from the activity. After it is detached, the drop-down menu regarding inheritance no longer displays. The activity is now a local activity.
 
    ![Local activity](/help/sites-cloud/authoring/assets/multisite-winter.png)
 
@@ -263,13 +263,13 @@ If you have suspended inheritance of targeted content in an activity, you can re
 
 To restore inheritance of targeted content in an activity:
 
-1. Navigate to the page where you want to restore inheritance and tap or click **Targeting** in the mode drop-down menu.
-1. Tap or click **Start Targeting**.
+1. Navigate to the page where you want to restore inheritance and select **Targeting** in the mode drop-down menu.
+1. Select **Start Targeting**.
 1. Select **Resume Live Copy** from the drop-down menu in the toolbar.
 
    ![Resuming live copy](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
-1. Tap or click **Resume** to confirm that you want to resume live copy inheritance. Any modifications made to the current activity are lost if you resume inheritance.
+1. Select **Resume** to confirm that you want to resume live copy inheritance. Any modifications made to the current activity are lost if you resume inheritance.
 
 ## Deleting areas {#deleting-areas}
 
@@ -278,5 +278,5 @@ When you delete an area, you delete all the activities in that area. AEM warns y
 To delete an area:
 
 1. Navigate to **Personalization** &gt; **Activities** or **Offers** and then your brand.
-1. Tap or click the icon next to the area you want to delete.
-1. Tap or click **Delete** and confirm that you want to delete the area.
+1. Select the icon next to the area you want to delete.
+1. Select **Delete** and confirm that you want to delete the area.

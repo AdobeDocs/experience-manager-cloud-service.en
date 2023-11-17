@@ -239,7 +239,7 @@ For environments created in October 2023 or later, to better cache requests, the
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
 ```
  
-Please submit a support ticket if you want this behavior to be disabled.
+Submit a support ticket if you want this behavior to be disabled.
 
 For environments created before October 2023, it is recommended to configure the Dispatcher configuration's `ignoreUrlParams` property as [documented here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
 
