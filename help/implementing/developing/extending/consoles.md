@@ -111,4 +111,4 @@ If you want to insert additional data, you need to write a [PageInfoProvider](ht
 
 When using a console, a user must often select from resources such as pages, components, or assets. This can take the form of a list from which the author must choose an item.
 
-In order to keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. Please see the document[Customizing Page Authoring](/help/implementing/developing/extending/page-authoring.md#filtering-resources) for details.
+To keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. Please see the document[Customizing Page Authoring](/help/implementing/developing/extending/page-authoring.md#filtering-resources) for details.

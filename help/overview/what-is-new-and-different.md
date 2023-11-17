@@ -138,7 +138,7 @@ It is also significantly different as there is now:
 
 * Deployment requirements:
 
-  * Code updates; any customer applications developed for a previous version of AEM will need to be reviewed and possibly updated.
+  * Code updates; any customer applications developed for a previous version of AEM must be reviewed and possibly updated.
 
   * Content migration
 

@@ -60,7 +60,7 @@ For AEM you, as a Content Architect, will perform the content modeling to design
 
 This is more of a development detail - but it might interest you, just to complete the story.
 
-After you have created the Content Fragment Models, and your authors have used them to generate the content, the headless applications will need to access this content. 
+After you have created the Content Fragment Models, and your authors have used them to generate the content, the headless applications need to access this content. 
 
 Adobe Experience Manager (AEM) as a Cloud Service, can selectively access your Content Fragments using the AEM GraphQL API, to return only the content that is needed. Using the API a developer can formulate queries that select specific content.This selection process is based on *your* Content Fragment Models. 
 

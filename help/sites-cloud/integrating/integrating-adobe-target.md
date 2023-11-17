@@ -101,7 +101,7 @@ A property is a container that is filled with extensions, rules, data elements.
 **Extensions** are the container that manages the core library settings. The Adobe Target extension supports client-side implementations by using Target JavaScript SDK for the modern web, at.js. Add both the **Adobe Target** and **Adobe ContextHub** extensions.
 
 1. Select the Extension Catalog option, and search for Target in the filter.
-2. Select **Adobe Target** at.js and Click on the Install option.
+2. Select **Adobe Target** at.js and click on the Install option.
 ![Target Search](assets/search_ext1.png "Target Search")
 3. Select the **Configure** button. Notice the configuration window with the Target account credentials imported, and the at.js version for this extension.
 4. Select **Save** to add the Target extension to your Launch property. You should be able to see the Target extension listed under the **Installed Extensions** list.
