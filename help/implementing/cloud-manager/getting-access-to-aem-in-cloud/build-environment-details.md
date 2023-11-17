@@ -36,7 +36,7 @@ Cloud Manager builds and tests your code using a specialized build environment.
 
 ### Using a Specific Java Version {#using-java-support}
 
-By default, projects are built by the Cloud Manager build process using the Oracle 8 JDK. Customers wishing to use an alternate JDK have two options.
+By default, projects are built by the Cloud Manager build process using the Oracle 8 JDK. Customers wanting to use an alternate JDK have two options.
 
 * [Use Maven Toolchains.](#maven-toolchains)
 * [Select an alternate JDK version for the entire Maven execution process.](#alternate-maven-jdk-version)
@@ -173,7 +173,7 @@ When used inside a Maven `pom.xml` file, it is typically helpful to map these va
 
 ## Installing Additional System Packages {#installing-additional-system-packages}
 
-Some builds require additional system packages to be installed to function fully. For example, a build may invoke a Python or Ruby script and needs to have an appropriate language interpreter installed. This can be done by calling the [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) in your `pom.xml` to invoke APT. This execution should generally be wrapped in a Cloud Manager-specific Maven profile. This example installs Python.
+Some builds require additional system packages to be installed to function fully. For example, a build may invoke a Python or Ruby script and must have an appropriate language interpreter installed. This can be done by calling the [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) in your `pom.xml` to invoke APT. This execution should generally be wrapped in a Cloud Manager-specific Maven profile. This example installs Python.
 
 ```xml
         <profile>

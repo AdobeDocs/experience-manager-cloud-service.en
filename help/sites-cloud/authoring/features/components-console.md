@@ -23,7 +23,7 @@ With the **Content Only** icon (top left) you can open the **Search** panel to s
 
 ### Component Details {#component-details}
 
-To view details about a specific component tap/click the required resource. Three tabs provide:
+To view details about a specific component select the required resource. Three tabs provide:
 
 * **Properties**
 

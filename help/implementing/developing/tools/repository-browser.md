@@ -46,7 +46,7 @@ The repository browser can be launched by following the steps below.
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
 1. Next, click the **Repository Browser** tab   
-1. Choose any pod corresponding to author, publish, or preview by clicking the **Pod** dropdown list.
+1. Choose any pod corresponding to author, publish, or preview by clicking the **Pod** drop-down list.
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 

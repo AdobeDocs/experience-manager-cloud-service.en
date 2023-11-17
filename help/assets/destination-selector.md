@@ -256,7 +256,7 @@ Destination Selector also lets you view data of repository of your choice availa
 
 It is an example of the `optionsFormSetup` property. You can use this to confirm the selection, it is passed on the `onConfirm` event. 
 
-### Create a new folder {#create-new-folder}
+###  Create a folder {#create-new-folder}
 
 It lets you create a folder in the destination folder of your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
@@ -271,7 +271,7 @@ Destination Selector lets you view the asset in four different views:
 
 ### Info {#info}
 
-The information or info icon lets you view metadata of the selected asset. It includes various details such as dimensions, size, description, path, date modified, and date created. The metadata information is provided while uploading or copying or creating a new asset.
+The information or info icon lets you view metadata of the selected asset. It includes various details such as dimensions, size, description, path, date modified, and date created. The metadata information is provided while uploading or copying or creating an asset.
 
 ### Select folder {#select-folder}
 

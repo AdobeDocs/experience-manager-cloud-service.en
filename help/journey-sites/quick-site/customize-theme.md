@@ -58,7 +58,7 @@ Once you are comfortable with the structure of the theme project, start the loca
 
    ![npm run live](assets/npm-run-live.png)
 
-1. When the proxy server starts, it automatically opens a browser to `http://localhost:7001/`. Tap or click **SIGN IN LOCALLY (ADMIN TASKS ONLY)** and sign on with the proxy user credentials provided to you by the AEM administrator.
+1. When the proxy server starts, it automatically opens a browser to `http://localhost:7001/`. Select **SIGN IN LOCALLY (ADMIN TASKS ONLY)** and sign on with the proxy user credentials provided to you by the AEM administrator.
    
    ![Sign in locally](assets/sign-in-locally.png)
 

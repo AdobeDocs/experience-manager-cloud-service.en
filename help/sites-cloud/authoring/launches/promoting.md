@@ -46,7 +46,7 @@ You can promote launches from either the **Sites** console or the **Launches** c
      1. Select the required launch page using [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md).
      1. The **Promote** action is available in the toolbar.
    * The **Launches** console:
-     1. Select your launch (tap/click the thumbnail).
+     1. Select your launch (select the thumbnail).
      1. Select **Promote**.
 1. In the first step you can specify:
     * **Target**

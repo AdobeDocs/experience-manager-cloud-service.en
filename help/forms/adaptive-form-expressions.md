@@ -104,7 +104,7 @@ The options expression is used to dynamically fill options of a drop-down list f
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
-Whenever the value of **marital_status** field changes, the expression is retriggered. You can also populate the dropdown from a REST service. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
+Whenever the value of **marital_status** field changes, the expression is retriggered. You can also populate the drop-down list from a REST service. <!-- For detailed information, see [Dynamically populating dropdowns](dynamically-populate-dropdowns.md). -->
 
 ### Summary Expression {#summary}
 

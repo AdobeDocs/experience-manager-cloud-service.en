@@ -133,7 +133,7 @@ The parent of the panel should contain a delete button to delete instance of the
 
 >[!NOTE]
 >
-> When all of the instances of a panel are removed from an adaptive form, to add an instance of the removed panel, use the _panelName syntax to capture the instance manager of the panel and the use the addInstance API of instance manager to add the deleted instance. For example, _panelName.addInstance(). It adds an instance of the removed panel.
+> When all instances of a panel are removed from an adaptive form, to add an instance of the removed panel, use the _panelName syntax to capture the instance manager of the panel and the use the addInstance API of instance manager to add the deleted instance. For example, _panelName.addInstance(). It adds an instance of the removed panel.
 
 <!--
 ![panel-repeatability-video](/help/adaptive-forms/assets/panel-repeatability-video.mp4)

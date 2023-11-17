@@ -16,7 +16,7 @@ Within an outer frame secured with HTTPS an unsecure HTTP frame can not be loade
 
 To do this, you need to set up AEM to run on HTTPS. For development purposes you can use self-signed certificate.
 
-Please see this document on how to set up AEM running on HTTPS including a self-signed certificate you can use.
+See this document on how to set up AEM running on HTTPS including a self-signed certificate you can use.
 
 ## Install the Universal Editor Service {#install-ue-service}
 
@@ -24,7 +24,7 @@ The Universal Editor Service is what binds the Universal Editor and the backend 
 
 [NodeJS version 16](https://nodejs.org/en/download/releases) is required to run a local copy of the Universal Editor Service
 
-The Universal Editor Service is distributed by AEM Engineering directly. please reach out to your engineering contact in the VIP program for a local copy.
+The Universal Editor Service is distributed by AEM Engineering directly. Contact your engineer in the VIP program for a local copy.
 
 Engineering will provide you with a `universal-editor-service.cjs` file. Save this to your local development environment.
 

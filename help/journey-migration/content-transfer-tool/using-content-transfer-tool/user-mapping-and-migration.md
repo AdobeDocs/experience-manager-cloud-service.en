@@ -28,7 +28,7 @@ The Content Transfer Tool and Cloud Acceleration Manager will migrate to the clo
 AEM users can be mapped to corresponding Adobe IMS users with the same email address.  This mapping can be done automatically in CTT (during the extraction step), and whether it is done or not can be controlled by a toggle before extraction is started. The toggle's default setting can be overridden by the user when starting extraction.
 
 * If the source system is an author instance, by default the choice to do the mapping is _on_, because it is the recommended process.
-* If the source system is a publish instance, by default the choice to do the mapping is _off_, because users are not normally migrated or used on publish instances; or if they are used, a different authentication system (i.e., not IMS) is typically used for them.
+* If the source system is a publish instance, by default the choice to do the mapping is _off_, because users are not normally migrated or used on publish instances; or if they are used, a different authentication system (that is, not IMS) is typically used for them.
 
 Whether or not users are mapped during extraction, they, along with the groups, are migrated to the cloud system during ingestion if they are associated with content being migrated.
 

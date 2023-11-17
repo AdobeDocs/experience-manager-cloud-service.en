@@ -63,13 +63,13 @@ After you configure a translation integration framework, you can [associate it w
 
 A single configuration of the framework controls how page content and assets are translated. To create a translation configuration:
 
-1. In the [global navigation menu,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) click or tap **Tools -&gt; Cloud Services -&amp; Translation Cloud Services**.
-1. Navigate to where you wish to create the configuration in your content structure. This is often based on a particular site or can be global.
-1. Provide the following information in the fields and then click or tap **Create**.:
+1. In the [global navigation menu,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) select **Tools &gt; Cloud Services &amp; Translation Cloud Services**.
+1. Navigate to where you want to create the configuration in your content structure. This is often based on a particular site or can be global.
+1. Provide the following information in the fields and then select **Create**.:
    1. Select **Configuration Type** in the drop-down.
    1. Enter a **Title** for your configuration. The **Title** identifies the configuration in the **Cloud Services** console and in page property drop-down lists.
    1. Optionally, type a **Name** to use for the repository node that stores the configuration.
-1. In the **Edit Configuration** window, configure the properties on the **Sites** and **Assets** tabs, and then click or tap **Save &amp; Close**.
+1. In the **Edit Configuration** window, configure the properties on the **Sites** and **Assets** tabs, and then select **Save &amp; Close**.
 
 ### Sites Configuration Properties {#sites-configuration-properties}
 
@@ -112,7 +112,7 @@ To configure the translation of your source pages into other languages, associat
 * The cloud configuration that connects AEM to your translation provider.
 * The translation integration framework that configures the details of the translation.
 
-Note that the translation integration framework cloud configuration identifies the cloud configuration to use for connecting to the service provider. When you associate a source page with a framework cloud configuration, the page must be associated with the service provider cloud configuration that the framework cloud configuration uses.
+The translation integration framework cloud configuration identifies the cloud configuration to use for connecting to the service provider. When you associate a source page with a framework cloud configuration, the page must be associated with the service provider cloud configuration that the framework cloud configuration uses.
 
 When you associate a page with a cloud configuration, the descendants of the page inherit the association. For example, if you associate the `/content/wknd/language-masters/en/magazine` page with a Translation Integration Framework, the `magazine` page and child pages below it are translated according to the framework.
 
@@ -122,16 +122,16 @@ When required, you can override the association on a descendent page. For exampl
 
 Associate a page with the translation provider that you are using to translate the page and descendent pages.
 
-1. In the sites console, select the page to configure and click or tap **View Properties**.
-1. Click or tap the **Cloud Services** tab.
-1. In the **Add Configuration** dropdown, select the configuration.
-1. Click or tap **Save &amp; Close**.
+1. In the sites console, select the page to configure and select **View Properties**.
+1. Select the **Cloud Services** tab.
+1. In the **Add Configuration** drop-down list, select the configuration.
+1. Select **Save &amp; Close**.
 
 ### Associating Pages with a Translation Integration Framework {#associating-pages-with-a-translation-integration-framework}
 
 Associate a page with the Translation Integration Framework that defines how you want to perform the translation of the page and descendent pages.
 
-1. In the sites console, select the page to configure and click or tap **View Properties**.
-1. Click or tap the **Cloud Services** tab.
-1. In the **Add Configuration** dropdown, select the configuration.
-1. Click or tap **Save &amp; Close**.
+1. In the sites console, select the page to configure and select **View Properties**.
+1. Select the **Cloud Services** tab.
+1. In the **Add Configuration** drop-down list, select the configuration.
+1. Select **Save &amp; Close**.

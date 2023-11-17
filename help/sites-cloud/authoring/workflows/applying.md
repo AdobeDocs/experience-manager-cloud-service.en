@@ -1,11 +1,11 @@
 ---
 title: Applying Workflows to Pages
-description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
+description: When authoring, you can invoke workflows to act on your pages; it is also possible to apply more than one workflow..
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 ---
 # Applying Workflows to Pages {#applying-workflows-to-pages}
 
-When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow.
+When authoring, you can invoke workflows to act on your pages; it is also possible to apply more than one workflow.
 
 When you apply the workflow, you specify the following information:
 
@@ -110,7 +110,7 @@ You can specify details:
 
 1. In the **Scope** step you can select:
 
-    * **Add Content** to open the [path browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) and select additional resources; when in the browser, click/tap **Select** to add the content to the workflow instance.
+    * **Add Content** to open the [path browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) and select additional resources; when in the browser, select **Select** to add the content to the workflow instance.
 
     * An existing resource to see additional actions:
 

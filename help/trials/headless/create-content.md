@@ -31,15 +31,15 @@ In this module, you create a Content Fragment based on that model by using the C
 
 The Content Fragment console is used to create and edit headless content across delivery channels and independent of context, which can be the most effective method in many authoring cases. In a later module we will explore editing headless content in-context and in-place.
 
-1. Tap or click the **Create** button at the top-right of the console.
+1. Select the **Create** button at the top-right of the console.
 
-1. The **New Content Fragment** dialog box opens where you can start creating a new Content Fragment. **Location** is automatically populated with where the new content is saved.
+1. The **New Content Fragment** dialog box opens where you can start creating a Content Fragment. **Location** is automatically populated with where the new content is saved.
 
 1. In the **Content Fragment model** drop-down, select the **Adventure** Content Fragment model you created previously.
 
 1. Add `Tuscany` as a descriptive **Title** for the Content Fragment. This is to identify your fragment in the console.
 
-1. Tap or click **Create and open**.
+1. Select **Create and open**.
 
 ![Creating a new Content Fragment](assets/do-not-localize/create-content.png)
 
@@ -65,7 +65,7 @@ After you save and open your new Content Fragment, the Content Fragment editor o
 
 1. Provide an **Image** that is representative of the trip by tapping or clicking **Add asset** in the **Image** field.
 
-1. In the asset pop-up, tap or click **Browse Assets** to select from an existing asset in the assets library.
+1. In the asset pop-up, select **Browse Assets** to select from an existing asset in the assets library.
 
    ![Add asset](assets/do-not-localize/add-asset.png)
 
@@ -73,17 +73,17 @@ After you save and open your new Content Fragment, the Content Fragment editor o
 
 1. The contents of the **cycling-tuscany** folder are displayed to the right. Select the image `ADOBESTOCK_141786166.JPEG`.
 
-1. Tap or click **Select**.
+1. Select **Select**.
 
    ![Select asset](assets/do-not-localize/select-asset.png)
 
 1. The selected image is shown in the content fragment. The editor automatically saves the changes.
 
-1. Once you are finished adding content, tap or click the **Publish** button at the top-right of the editor. This makes your Content Fragment available for consumption by external apps. Then select **Now** from the drop-down. You can also schedule it to publish at a later time.
+1. Once you are finished adding content, select the **Publish** button at the top-right of the editor. This makes your Content Fragment available for consumption by external apps. Then select **Now** from the drop-down. You can also schedule it to publish at a later time.
 
    ![Publish content](assets/do-not-localize/publish.png)
 
-1. The **Publish Content Fragments** dialog appears. AEM automatically performs a reference check to make sure that all necessary resources are published for your Content Fragment. In this case, you will also need to publish the model that you created. Tap or click **Publish**.
+1. The **Publish Content Fragments** dialog appears. AEM automatically performs a reference check to make sure that all necessary resources are published for your Content Fragment. In this case, you will also need to publish the model that you created. Select **Publish**.
 
    ![Publish and reference check](assets/do-not-localize/publish-confirm.png)
 
