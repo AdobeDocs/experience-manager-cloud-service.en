@@ -155,7 +155,7 @@ You can add a new component by using the **Drag components here** box of the par
 
 ### Inserting a Component using the Assets Browser {#inserting-a-component-using-the-assets-browser}
 
-You can also add a new component to the page by dragging an asset from the [assets browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). This will automatically create a new component of the appropriate type (and containing the asset).
+You can also add a new component to the page by dragging an asset from the [assets browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). This automatically creates a component of the appropriate type (and containing the asset).
 
 This behavior can be configured for your installation. See Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance for further details. <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
@@ -255,7 +255,7 @@ The actual actions available to the user are shown as appropriate and not all ac
 
 * **Convert to an experience fragment variation**
 
-  This lets you create a new [experience fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) from the selected component or add it to an existing experience fragment.
+  This lets you create an [experience fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) from the selected component or add it to an existing experience fragment.
 
   ![Convert to Experience Fragment button](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 

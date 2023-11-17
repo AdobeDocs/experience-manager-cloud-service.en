@@ -42,7 +42,7 @@ This section will detail these steps. You may find it useful to refer to the [Te
 
 ### Create a New Product Profile {#create}
 
-You first must create a new product profile before to which you can assign custom permissions.
+You first must create a product profile before to which you can assign custom permissions.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)
 
@@ -117,10 +117,10 @@ The following permissions are available for creating custom profiles.
 
 |Permission|Description|
 |---|---|
-|Program Create|Allow users to create a new program|
+|Program Create|Allow users to create a program|
 |Program Access|Allow users to access programs|
 |Program Edit|Allow users to edit programs|
-|Environment Create|Allow users to create a new environment|
+|Environment Create|Allow users to create an environment|
 |Environment Edit|Allow users to update and edit environments|
 |Environment Logs Read|Allow users to read environment logs|
 |Pipeline Create|Allow users to create new pipelines|
@@ -139,7 +139,7 @@ Organization-level permissions refer to permissions which are always given acros
 
 The following permissions are organization-level permissions:
 
-* **Program Create** - This permission allow users to create a new program in the organization.
+* **Program Create** - This permission lets users create a program in the organization.
 * **Repository Info Access** This tenant/organization level permission allows users to generate username, password and repository URL for access and contributing to customer project.
   * Username and password for repository access will be common across all the repos in the org, however repository URL will be unique to each program.
   * Please see the document [Accessing Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md) for more information.

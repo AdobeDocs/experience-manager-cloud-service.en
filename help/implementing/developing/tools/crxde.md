@@ -200,7 +200,7 @@ To create a property with CRXDE Lite:
 
 ## Creating a File {#creating-a-file}
 
-To create a new file with CRXDE Lite:
+To create a file with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
 1. In the [**Exploerer Pane**,](#explorer-pane) right-click the component where you want to create the file, select **Create**, then **Create File**.

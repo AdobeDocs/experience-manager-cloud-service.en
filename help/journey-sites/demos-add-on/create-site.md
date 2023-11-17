@@ -11,7 +11,7 @@ Create a demo site in AEM based on a library of pre-configured templates.
 
 In the previous document of the AEM Reference Demos Add-On journey, [Create Program,](create-program.md) you took the first configuration step to create a program for testing purposes and used a pipeline to deploy the add-on content. You should now:
 
-* Understand how to use Cloud Manager to create a new program.
+* Understand how to use Cloud Manager to create a program.
 * Know how to activate the Reference Demos Add-On for the new program.
 * Be able to run a pipeline to deploy the add-on content.
 
@@ -19,7 +19,7 @@ This article describes the next step of the process by creating a new site or AE
 
 ## Objective {#objective}
 
-This document helps you understand how to create a new site based on the templates of the Reference Demo Add-On. After reading you should:
+This document helps you understand how to create a site based on the templates of the Reference Demo Add-On. After reading you should:
 
 * Understand how to access the AEM authoring environment.
 * Know how to create a site based on a template.

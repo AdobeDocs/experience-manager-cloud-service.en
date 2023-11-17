@@ -31,7 +31,7 @@ A **Convert to experience fragment variation** option, and workflow, has been im
 
 >[!NOTE]
 >
->You can also create a new Experience Fragment yourself, manually transfer the content from your legacy offer to the fragment, then delete the legacy offer.
+>You can also create an Experience Fragment yourself, manually transfer the content from your legacy offer to the fragment, then delete the legacy offer.
 
 >[!CAUTION]
 >

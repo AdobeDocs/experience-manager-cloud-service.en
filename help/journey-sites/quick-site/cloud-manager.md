@@ -111,7 +111,7 @@ Now that you have completed this part of the AEM Quick Site Creation journey you
 * Understand how AEM Sites and the Cloud Manager work together to facilitate front-end development
 * See how the front-end customization step is entirely decoupled from AEM and requires no AEM knowledge.
 
-Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Create Site from Template,](create-site.md) where you learn how to quickly create a new AEM site using a template.
+Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Create Site from Template,](create-site.md) where you learn how to quickly create an new AEM site using a template.
 
 ## Additional Resources {#additional-resources}
 

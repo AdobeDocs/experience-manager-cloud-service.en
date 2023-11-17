@@ -12,7 +12,7 @@ Create a front-end pipeline to manage the customization of your site's theme.
 In the previous document of the AEM Quick Site Creation journey, [Create Site from Template,](create-site.md) you learned how to use a site template to quickly create an AEM site that can be further customized using front-end tools and now you should now:
 
 * Understand how to obtain AEM Site templates.
-* Learn how to create a new site using a template.
+* Learn how to create a site using a template.
 * See how to download the template from your new site to provide to the front-end developer.
 
 This article builds on those fundamentals so you can set up a front-end pipeline, which the front-end developer will use later in the journey to deploy front-end customizations.
