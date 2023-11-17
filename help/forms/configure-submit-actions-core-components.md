@@ -95,18 +95,15 @@ To enable the [!UICONTROL Attach Document of Record] option, refer to the docume
 >
 >If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
 
-
 -->
 
 ## Submit to SharePoint {#submit-to-sharedrive}
 
 The **[!UICONTROL Submit to SharePoint]** Submit Action connects an Adaptive Form with a Microsoft&reg; SharePoint Storage. You can submit the form data file, attachments, or Document of Record to the connected Microsoft&reg; Sharepoint Storage. 
 
-<!--
 Using Submit to SharePoint, you can:
 * [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
 * [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list)
--->
 
 ### Connect an Adaptive Form to SharePoint Document Library {#connect-af-sharepoint-doc-library}
 
@@ -165,8 +162,6 @@ You can use the created SharePoint Document Library configuration in an Adaptive
 When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint Document Library Storage. 
 Folder structure to save data is `/folder_name/form_name/year/month/date/submission_id/data`. 
 
-<!--
-
 ### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
 
 <span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
@@ -218,8 +213,6 @@ When you submit the form, the data is saved in the specified Microsoft&reg; Shar
 > * metadata column
 > * person column
 > * external data column
-
--->
 
 ## Submit using Form Data Model {#submit-using-form-data-model}
 
