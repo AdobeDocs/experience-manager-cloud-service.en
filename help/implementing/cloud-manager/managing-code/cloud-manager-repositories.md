@@ -16,9 +16,11 @@ Learn how to create, view, and delete your git repositories in Cloud Manager.
 
 Follow these steps view and manage repositories in Cloud Manager.
 
-1. From the **Program Overview** page, click on **Repositories** tab and navigate to the **Repositories** page.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Click on **Add Repository** to start the wizard.
+1. From the **Program Overview** page, tap or click the **Repositories** tab to switch to the **Repositories** page.
+
+1. Click **Add Repository**.
 
    ![Add repository button](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
   
@@ -28,7 +30,7 @@ Follow these steps view and manage repositories in Cloud Manager.
 
 When the wizard closes, your new repository is displayed in the table.
 
-You can select the repository in the table and click on the ellipsis button and select **Copy Repository URL**, **View &amp; Update**, or **Delete**.
+You can select the repository in the table and click the ellipsis button and select **Copy Repository URL**, **View &amp; Update**, or **Delete**.
 
 ![Repository options](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
@@ -50,9 +52,9 @@ Deleting a repository will:
 
 Follow these to delete a repository in Cloud Manager.
 
-1. From the **Program Overview** page, click on **Repositories** tab and navigate to the **Repositories** page.
+1. From the **Program Overview** page, click the **Repositories** tab and navigate to the **Repositories** page.
 
-1. Select the repository and click on the ellipsis button and select **Delete** to delete the repository.
+1. Select the repository and click the ellipsis button and select **Delete** to delete the repository.
 
    ![Delete repository](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 

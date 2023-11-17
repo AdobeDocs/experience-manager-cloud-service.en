@@ -382,7 +382,7 @@ Now that you have completed this part of the AEM Reference Demo Add-on journey y
 * Understand the We.Cafe demo content.
 * Know how to configure AEM Screens for We.Cafe.
 
-You are now ready to explore the capabilities of AEM Screens using your own demo sites. Continue to the next section of the journey, [Manage Your Demo Sites,](manage.md) where you will learn about the tools available to help you manage your demo sites and how to remove them.
+You are now ready to explore the capabilities of AEM Screens using your own demo sites. Continue to the next section of the journey, [Manage Your Demo Sites,](manage.md) where you learn about the tools available to help you manage your demo sites and how to remove them.
 
 You can also check out some of the additional resources available in the [Additional Resources section](#additional-resources) to learn more about the features you saw in this journey.
 

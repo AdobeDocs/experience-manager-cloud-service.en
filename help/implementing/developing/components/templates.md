@@ -97,7 +97,7 @@ When creating a new editable template you:
 
 1. Use it to create content pages.
 
-    * When using a template to create a new page there is no visible difference and no indication between static and editable templates.
+    * When using a template to create a page there is no visible difference and no indication between static and editable templates.
     * For the page author, the process is transparent.
 
    For details on how a page author uses templates to create a page, see [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
@@ -135,11 +135,11 @@ For organizing your templates you can use the following folders:
 >
 >Even though you can nest your folders, when the user views them in the **Templates** console they are presented as a flat structure.
 
-In a standard AEM instance the `global` folder already exists in the template console. This holds default templates and acts as a fallback if no policies and/or template-types are found in the current folder. You can add your default templates to this folder or create a new folder (recommended).
+In a standard AEM instance the `global` folder already exists in the template console. This holds default templates and acts as a fallback if no policies and/or template-types are found in the current folder. You can add your default templates to this folder or create a folder (recommended).
 
 >[!NOTE]
 >
->It is best practice to create a new folder to hold your customized templates and not to use the `global` folder.
+>It is best practice to create a folder to hold your customized templates and not to use the `global` folder.
 
 >[!CAUTION]
 >
@@ -155,7 +155,7 @@ Template types and policies are inherited across all folders according to the fo
 
 A list of all allowed entries is created. If any configurations overlap ( `path`/ `label`), only the instance closest to the current folder is presented to the user.
 
-To create a new folder, you can either do this:
+To create a folder, you can either do this:
 
 * Programmatically or with CRXDE Lite
 * Using the [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)

@@ -8,7 +8,7 @@ exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 
 # Assign Team Members to Cloud Manager Product Profiles {#assign-team-members}
 
-In this part of the [onboarding journey,](overview.md) you will learn how to assign team members to Cloud Manager product profiles.
+In this part of the [onboarding journey,](overview.md) you learn how to assign team members to Cloud Manager product profiles.
 
 ## Objective {#objective}
 
@@ -27,7 +27,7 @@ After reading this document you should:
 
 ## Prerequisites {#prerequisites}
 
-To assign team members to product profiles, you will need to have details about your team members, who will need to access AEM as a Cloud Service, including:
+To assign team members to product profiles, you need to have details about your team members, who needs to access AEM as a Cloud Service, including:
 
 * Names
 * Email addresses
@@ -67,7 +67,7 @@ Using the Admin Console you can see the list of Cloud Manager profiles.
 
     ![Cloud Manager](/help/journey-onboarding/assets/assign-team2.png)
 
-1. You will see the list of pre-configured Cloud Manager product profiles. 
+1. You can see the list of pre-configured Cloud Manager product profiles. 
    
    ![Product profiles](/help/journey-onboarding/assets/assign-team3.png)
 
@@ -171,7 +171,7 @@ In this part of the onboarding journey you learned about assigning your team mem
 * Know the three important Cloud Manager product profiles: **Business Owner**, **Deployment Manager**, and **Developer**.
 * Be able to assign team members to Cloud Manager product profiles.
 
-You are now ready to continue your onboarding journey by next reviewing the document [Access Cloud Manager,](cloud-manager.md) where you will learn how to access Cloud Manager and create your project resources.
+You are now ready to continue your onboarding journey by next reviewing the document [Access Cloud Manager,](cloud-manager.md) where you learn how to access Cloud Manager and create your project resources.
 
 ## Additional Resources {#additional-resources}
 

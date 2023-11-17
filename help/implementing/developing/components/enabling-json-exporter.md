@@ -11,7 +11,7 @@ Components can be adapted to generate JSON export of their content based on a mo
 
 The JSON Export is based on [Sling Models](https://sling.apache.org/documentation/bundles/models.html), and on the [Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) framework (which itself relies on [Jackson annotations](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
-This means that the component must have a Sling Model if it needs to export JSON. Therefore you will need to follow these two steps to enable JSON export on any component.
+This means that the component must have a Sling Model if it needs to export JSON. Therefore, follow these two steps to enable JSON export on any component.
 
 * [Define a Sling Model for the component](#define-a-sling-model-for-the-component)
 * [Annotate the Sling Model interface](#annotate-the-sling-model-interface)
