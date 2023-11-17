@@ -16,7 +16,7 @@ Search is available from the top toolbar:
 With the search rail you can:
 
 * Search for a specific keyword, path or tag
-* Filter according to resource specific criteria, such as modified dates, page status, file size, etc.
+* Filter according to resource specific criteria, such as modified dates, page status, file size, and so on.
 * Define and use a [saved search](#saved-searches) - based on the above criteria
 
 >[!NOTE]

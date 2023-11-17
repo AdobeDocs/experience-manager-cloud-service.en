@@ -58,7 +58,7 @@ The default configurations (listed alphabetically) available are:
 
 >[!NOTE]
 >
->For further details about Asset related search forms, see [Assets - Search Facets](/help/assets/search-facets.md)
+>For more details about Asset related search forms, see [Assets - Search Facets](/help/assets/search-facets.md).
 
 
 ## Predicates and Their Settings {#predicates-and-their-settings}

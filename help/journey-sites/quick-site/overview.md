@@ -23,7 +23,7 @@ This documentation journey will take you through all the features in the video  
 
 ## AEM Documentation Journeys {#documentation-journeys}
 
-[A Documentation Journey](/help/journey-documentation/documentation-journeys.md) ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
+[A Documentation Journey](/help/journey-documentation/documentation-journeys.md) ties together many different, complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
 
 Documentation Journeys are designed around best practices principles, informed by Adobe's latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
 
@@ -61,7 +61,7 @@ You are now ready to get started on your Adobe Quick Site Creation journey.
 
 * If you are an AEM or Cloud Manager administrator, or if you serve both front-end developer and administrator roles, or if you simply want to understand the end-to-end process in AEM, start at the beginning of the journey with [Understand Cloud Manager](cloud-manager.md) as laid out below.
 * If you are only responsible for front-end development and will interact with the AEM and Cloud Manager administrators, you can skip directly to [Retrieve git repository access information](retrieve-access.md) to get access to the AEM git repository and start customizing.
-* If you already understand AEM Sites and Cloud Manager work together and want to start directly with configuration, you can [skip directly to creating a new site from a template.](create-site.md)
+* If you already understand AEM Sites and Cloud Manager work together and want to start directly with configuration, you can [skip directly to creating a site from a template.](create-site.md)
 
 ## Additional Resources {#additional-resources}
 

@@ -9,7 +9,7 @@ The ContextHub toolbar displays data from ContextHub stores and enables you to c
 
 The toolbar consists of a series of UI modes that contain one or more UI modules.
 
-* UI modes are icons that appear on the left hand side of the toolbar. When you click or tap an icon, the toolbar reveals the UI modules that it contains.
+* UI modes are icons that appear on the left hand side of the toolbar. When you select an icon, the toolbar reveals the UI modules that it contains.
 * UI modules display data from one or more ContextHub stores. Some UI modules also enable you to manipulate store data.
 
 ContextHub installs several UI modes and UI modules. Your administrator may have [configured ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) to display different ones.
@@ -20,11 +20,11 @@ The ContextHub toolbar is available in Preview mode. The toolbar is available on
 
 ![The ContextHub toolbar](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
 
-1. With your page open for editing, on the toolbar click or tap Preview.
+1. With your page open for editing, on the toolbar select Preview.
 
    ![The Preview button](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
 
-1. To reveal the toolbar, click or tap the ContextHub icon.
+1. To reveal the toolbar, select the ContextHub icon.
 
    ![The ContextHub button](/help/sites-cloud/authoring/assets/contexthub-button.png)
 
@@ -50,6 +50,6 @@ The popup overlay of a module can include form elements that enable you to chang
 
 ### Fullscreen Mode {#fullscreen-mode}
 
-Popup overlays can include an icon that you click or tap to expand the popup content to cover the entire browser window or screen.
+Popup overlays can include an icon that you select to expand the popup content to cover the entire browser window or screen.
 
 ![Fullscreen button](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)

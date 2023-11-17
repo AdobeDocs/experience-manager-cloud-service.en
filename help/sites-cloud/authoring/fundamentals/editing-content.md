@@ -335,7 +335,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-cloud/aut
 
    ![The component toolbar of a page component](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Click or tap the **Layout** action to adjust the layout of the component.
+   Select the **Layout** action to adjust the layout of the component.
 
    ![The Layout button of the component toolbar](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

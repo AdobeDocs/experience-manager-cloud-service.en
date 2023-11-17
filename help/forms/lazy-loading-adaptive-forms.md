@@ -18,7 +18,7 @@ exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
 
 ## Introduction to lazy loading {#introduction-to-lazy-loading}
 
-When form become large and complex with hundreds and thousands of fields, end users experience long response time when rendering forms at runtime. To minimize the response time, Adaptive Forms lets you break forms into logical fragments and configure to defer initialization or loading of fragments until the fragment needs to be visible. It is referred to as lazy loading. In addition, the fragments configured for lazy loading are unloaded once user navigates to other sections in the form and the fragments are no longer visible.
+When form become large and complex with hundreds and thousands of fields, end users experience long response time when rendering forms at runtime. To minimize the response time, Adaptive Forms lets you break forms into logical fragments and configure to defer initialization or loading of fragments until the fragment must be visible. It is referred to as lazy loading. In addition, the fragments configured for lazy loading are unloaded once user navigates to other sections in the form and the fragments are no longer visible.
 
 Let's first understand the requirements and preparatory steps before you configure lazy loading.
 
@@ -67,7 +67,7 @@ You can mark the values of objects in the lazily loaded fragment as global so th
 
 Some limitations, recommendations, and important points to keep in mind when working with lazy loading are as follows:
 
-* It is recommended to use XSD schema-based Adaptive Forms over XFA-based Adaptive Forms for configuring lazy loading on large forms. The performance gain due to lazy loading implementation in XFA-based Adaptive Forms is relatively less than gain in XSD-based Adaptive Forms.
+* Adobe recommends using XSD schema-based Adaptive Forms over XFA-based Adaptive Forms for configuring lazy loading on large forms. The performance gain due to lazy loading implementation in XFA-based Adaptive Forms is relatively less than gain in XSD-based Adaptive Forms.
 * Do not configure lazy loading on fragments in an Adaptive Form that use **[!UICONTROL Responsive -everything on one page without navigation]** layout for the root panel. As a result of the Responsive layout configuration, all fragments load simultaneously in an Adaptive Form. It can also result in degraded performance.
 * It is recommended not to configure lazy loading on fragments in the first panel that renders on loading the Adaptive Form.
 * Lazy loading is supported up to two levels in the fragment hierarchy.

@@ -94,9 +94,9 @@ After the wizard completes, you find the content deployed under Sites and you ca
 
 ![We.Cafe content](assets/wecafe-content.png)
 
-Now that you have We.Cafe demo content, you have a choice about how you wish to test AEM Screens:
+Now that you have We.Cafe demo content, you have a choice about how you want to test AEM Screens:
 
-* If you only wish to explore the content within the AEM Sites console, simply start exploring and discover more in the [Additional Resources](#additional-resources) section! no more action is required.
+* If you only want to explore the content within the AEM Sites console, simply start exploring and discover more in the [Additional Resources](#additional-resources) section! no more action is required.
 * If you want to experience the full dynamic features of AEM Screens, continue to the next section, [Dynamically Change Screens Content.](#dynamically-change)
 
 ## Dynamically Change Screens Content {#dynamically-change}
@@ -139,7 +139,7 @@ First, you must create a Google API key to facilitate the exchange of data.
 
 To allow the exchange of Google Sheets data using your API key, you must enable the Google Sheets API.
 
-1. Return to the Google Cloud Console at `https://console.cloud.google.com` for your project and then use the hamburger menu to select **APIs &amp; Services -&gt; Library**.
+1. Return to the Google Cloud Console at `https://console.cloud.google.com` for your project and then use the hamburger menu to select **APIs &amp; Services &gt; Library**.
 
    ![API library](assets/api-library.png)
 
@@ -215,9 +215,9 @@ When the screen content is displayed, ContextHub calls your weather service to f
 
 For demo purposes, the values in the sheet can be changed. ContextHub recognizes this fact and the content adjusts in the channel according to the updated temperature.
 
-1. On the AEMaaCS author instance, go to **Global Navigation -&gt; Tools -&gt; Sites -&gt; ContextHub**.
+1. On the AEMaaCS author instance, go to **Global Navigation &gt; Tools &gt; Sites &gt; ContextHub**.
 1. Select the configuration container that has the same name as what you gave the project when you created the Screens project from the **We.Cafe Website Template**.
-1. Select **Configuration -&gt; ContextHub Configuration -&gt; Google Sheets** then click **Next** at the top right.
+1. Select **Configuration &gt; ContextHub Configuration &gt; Google Sheets** then click **Next** at the top right.
 1. The configuration should already have pre-configured JSON data. There are two values that must be changed:
    1. Replace `[your Google Sheets id]` with the sheet ID that [you saved previously](#create-spreadsheet).
    1. Replace `[your Google API Key]` with the API key that [you saved previously](#create-api-key).
@@ -230,7 +230,7 @@ Now you can change the temperature value in your Google Sheet spreadsheet and Co
 Now that AEM Screens and ContextHub are connected to your weather service, you can test it to see how screens can update content dynamically.
 
 1. Access your sandbox author instance.
-1. Navigate to the sites console via **Global Navigation -&gt; Sites** and select the following page **Screens -&gt; &lt;project-name&gt; -&gt; Channels -&gt; Entrance Morning (Portrait)**.
+1. Navigate to the sites console via **Global Navigation &gt; Sites** and select the following page **Screens &gt; &lt;project-name&gt; &gt; Channels &gt; Entrance Morning (Portrait)**.
 
    ![Select demo project content](assets/project-content.png)
 
@@ -319,7 +319,7 @@ First, you must create a registration code to securely connect a player to AEM S
 
    ![Check your Screens org](assets/screens-org.png)
 
-1. In the left panel, click **Player Management -&gt; Registration Codes** and then click **Create code** at the top-right of the screen.
+1. In the left panel, click **Player Management &gt; Registration Codes** and then click **Create code** at the top-right of the screen.
 
   ![Registration codes](assets/registration-codes.png)
 
@@ -354,7 +354,7 @@ First, you must create a registration code to securely connect a player to AEM S
 
    ![Check your Screens org](assets/screens-org.png)
 
-1. In the left panel, click **Player Management -&gt; Players** and you see the player that you previously installed and registered.
+1. In the left panel, click **Player Management &gt; Players** and you see the player that you previously installed and registered.
 
    ![Players](assets/players.png)
 

@@ -49,7 +49,7 @@ This means you only need to redefine the required differences, as opposed to red
 
 ### Content Logic and Rendering Markup  {#content-logic-and-rendering-markup}
 
-Your component is rendered with [HTML](https://www.w3schools.com/htmL/html_intro.asp). Your component needs to define the HTML needed to take the required content and then render it as required, on both the author and publish environments.
+Your component is rendered with [HTML](https://www.w3schools.com/htmL/html_intro.asp). Your component must define the HTML needed to take the required content and then render it as required, on both the author and publish environments.
 
 It is recommended to keep the code responsible for markup and rendering separate from the code that controls the logic used to select the component's content.
 
@@ -175,7 +175,7 @@ A component is a node of type `cq:Component` and has the following properties an
 |`component.html`|`nt:file`|This is the HTL script file of the component.|
 |`cq:icon`|`String`|This value points to the [icon of the component](#component-icon) and appears in the Components Browser.|
 
-If we look at the **Text** component, we can see a number of these elements:
+If you look at the **Text** component, you can see several of these elements:
 
 ![Text Component structure](assets/components-text.png)
 
@@ -244,7 +244,7 @@ Content not found
 
 To create a widget for use in a component dialog requires you to create a Granite UI field component.
 
-If you consider your dialog as a simple container for a form element, then you can also see the primary content of your dialog content as form fields. Creating a new form field requires you to create a resource type; this is equivalent to creating a new component. To help you in that task, Granite UI offers a generic field component to inherit from (using `sling:resourceSuperType`):
+If you consider your dialog as a simple container for a form element, then you can also see the primary content of your dialog content as form fields. Creating a new form field requires you to create a resource type; this is equivalent to creating a component. To help you in that task, Granite UI offers a generic field component to inherit from (using `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -435,7 +435,7 @@ Field validation in Granite UI and the Granite UI widgets is done by using the `
 
 ### Detecting Availability of the Dialog {#dialog-ready}
 
-If you have a custom JavaScript that needs to be executed only when the dialog is available and ready, you should listen for the `dialog-ready` event.
+If you have a custom JavaScript that must be run only when the dialog is available and ready, you should listen for the `dialog-ready` event.
 
 This event is triggered  whenever the dialog loads (or re-loads) and is ready for use, which means whenever there is a change (create/update) in the DOM of the dialog.
 

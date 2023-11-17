@@ -45,7 +45,7 @@ The following sections detail how Adobe I/O Runtime can be used to implement SSR
 
 >[!NOTE]
 >
->Cloud Manager does not support deployment to Adobe I/O Runtime. As a result, your own infrastructure needs to be set up to deploy SSR code to the Adobe I/O Runtime.
+>Cloud Manager does not support deployment to Adobe I/O Runtime. As a result, your own infrastructure must be set up to deploy SSR code to the Adobe I/O Runtime.
 
 ## Remote Renderer Configuration {#remote-content-renderer-configuration}
 

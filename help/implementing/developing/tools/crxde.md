@@ -26,7 +26,7 @@ The CRXDE Lite User Interface appears as follows in your browser:
 
 >[!TIP]
 >
->You can also access CRXDE Lite from the AEM menu. From the main menu select **Tools** -&gt; **General** -&gt; **CRXDE Lite**.
+>You can also access CRXDE Lite from the AEM menu. From the main menu select **Tools** &gt; **General** &gt; **CRXDE Lite**.
 
 ## Overview of the User Interface {#overview-of-the-user-interface}
 
@@ -157,7 +157,7 @@ The **Login Widget** displays the currently logged-in user.
 
 Click it to log in or re-login as another user. The `@crx.default` represents that you are in the default (and only) workspace in the repository.
 
-The **Preferences** option can be used to set your UI language and to view and customize the hot keys for various actions such as save, search, create note, etc.
+The **Preferences** option can be used to set your UI language and to view and customize the hot keys for various actions such as save, search, create note, and so on.
 
 ## Creating a Folder {#creating-a-folder}
 

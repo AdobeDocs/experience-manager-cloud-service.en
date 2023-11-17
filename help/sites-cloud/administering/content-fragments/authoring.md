@@ -52,7 +52,7 @@ When you first open the Content Fragment Editor, you see four main areas:
   * in the **Properties** tab you can update the **Title** and **Description** for the fragment, or **Variation**
 * central panel: shows the actual fields, and content, of the selected variation
   * allows you to edit the content
-  * if **Tab Placeholder** fields are defined within the model they are shown here, and can be used for navigating; they will either be presented horizontally, or as a dropdown list
+  * if **Tab Placeholder** fields are defined within the model they are shown here, and can be used for navigating; they will either be presented horizontally, or as a drop-down list.
 
 ![Content Fragment Editor - Overview](assets/cf-authoring-overview.png)
 
@@ -339,7 +339,7 @@ In the properties tab (right panel) you can also edit:
 
 * **Title**
 * **Description**
-* **Tags**: using the dropdown, or the selection dialog
+* **Tags**: using the drop-down list, or the selection dialog
 
   ![Content Fragment Editor - Manage Tags](assets/cf-authoring-edit-tags.png) 
 
@@ -393,7 +393,7 @@ The Content Fragment editor provides authors with the option to preview their ed
 To use this feature, you first need to:
 
 * Work with your IT team to set up the external frontend application that will render the Content Fragment by consuming its JSON output. 
-* Once the external frontend application is set up, the **Default Preview URL Pattern** needs to be defined as a [property of the appropriate Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* When the external frontend application is set up, the **Default Preview URL Pattern** must be defined as a [property of the appropriate Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
 
 When the URL has been defined, the **Preview** button is active. You can select this button to launch the external application (in a separate tab) to render the Content Fragment. 
 
@@ -469,8 +469,6 @@ The **Fields** panel lists all fields within the Content Fragment. The icon indi
 </table>
 
 ## Good to know {#good-to-know}
-
-Additionally:
 
 * To edit a Content Fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contact your system administrator if you are experiencing issues.
 

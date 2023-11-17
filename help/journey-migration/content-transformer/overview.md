@@ -28,4 +28,4 @@ The Content Transformer provides the following benefits:
 
 * Fail-safe: a package is created by the Content Transformer every time it makes any modification to the repository to fix issues. If needed, you can revert back to the previous state by installing the package.
 * Easy-to-use: the Content Transformer has been integrated with the Content Transfer Tool and comes with a simple user interface that is intuitive. 
-* Saves time: when you have a high number of content issues that fall under one pattern category, you can resolve all of them with just a couple of clicks using the Content Transformer.
+* Saves time: when you have a high number of content issues that fall under one pattern category, you can resolve them all with several clicks using the Content Transformer.
