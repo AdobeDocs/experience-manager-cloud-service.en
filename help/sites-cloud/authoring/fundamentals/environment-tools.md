@@ -114,7 +114,7 @@ To add an asset to your page, select and drag to the required location. This can
 
 * An existing component of the appropriate type.
   * For example, you can drag an asset of type image onto an Image component.
-* A [placeholder](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) in the paragraph system to create a new component of the appropriate type.
+* A [placeholder](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) in the paragraph system to create a component of the appropriate type.
   * For example, you can drag an asset of type image onto the paragraph system to create an Image component.
 
 >[!NOTE]

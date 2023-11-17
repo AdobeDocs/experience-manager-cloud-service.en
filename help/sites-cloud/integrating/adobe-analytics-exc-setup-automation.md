@@ -44,7 +44,7 @@ The environment should now be ready for Experience Cloud Setup Automation.
 1. Tap the **Integrate Analytics** button.
 1. In the resulting dialog, provide a name for the **Report Suite ID**.
 
-    This string is used to create a new [Report Suite ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en) in Adobe Analytics as the data store for the analytics data for the selected AEM site. The string provided is appended with environment and tier identifiers to ensure uniqueness.
+    This string is used to create a [Report Suite ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en) in Adobe Analytics as the data store for the analytics data for the selected AEM site. The string provided is appended with environment and tier identifiers to ensure uniqueness.
 
 1. Refresh the page and panel and tap **Check Integration Status** to check the status of the automation.
 

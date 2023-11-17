@@ -348,7 +348,7 @@ In addition to standard properties you can define:
 
 * **Allow Fragment Creation**
 
-  This allows the fragment author to create a new fragment based on the appropriate model.
+  This allows the fragment author to create a fragment based on the appropriate model.
 
   * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
 

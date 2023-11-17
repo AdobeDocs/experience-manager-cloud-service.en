@@ -55,7 +55,7 @@ Templates can be edited either by opening directly the template page or by switc
 
 ### Category or Product Specific Templates {#specific}
 
-CIF supports multiple templates in just a few clicks. To create another template, select the generic template from the respective category and create a new page using the **Create** action.
+CIF supports multiple templates in just a few clicks. To create another template, select the generic template from the respective category and create a page using the **Create** action.
 
 ![create template page](assets/create-template-page.png)
 

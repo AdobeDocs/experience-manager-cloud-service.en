@@ -73,7 +73,7 @@ There are a number of steps to create and use tags to organize your content.
 
 A namespace is used to organize other tags. It can be thought of as the lowest-level tag and is typically used to group other tags.
 
-1. To create a new namespace, open the [tagging console](#tagging-console) and tap or click the **Create** button in the toolbar and then **Create Namespace**.
+1. To create a namespace, open the [tagging console](#tagging-console) and tap or click the **Create** button in the toolbar and then **Create Namespace**.
 
    ![Add Namespace dialog](/help/sites-cloud/administering/assets/add-namespace.png)
 
@@ -95,7 +95,7 @@ A namespace need not contain any sub-tags. Because a namespace is itself a tag, 
 
 Tags are generally added to namespaces.
 
-1. To create a new tag, open the [tagging console.](#tagging-console)
+1. To create a tag, open the [tagging console.](#tagging-console)
 
 1. Select the namespace where you wish to create the tag. Or select another tag to create a sub-tag below it.
 
@@ -117,11 +117,11 @@ The tag is created and the console is updated to show the new tag.
 Tags allow for the flexible creation of your own taxonomy based on your organizational needs.
 
 * You can create child tags of existing tags by selecting the parent tag in the console before creating your new tag.
-* If you create a tag without selecting a namespace or another tag, you effectively create a new namespace.
+* If you create a tag without selecting a namespace or another tag, you effectively create a namespace.
 
 ### Publishing Tags {#publishing-tags}
 
-Just as with creating any other content in AEM, once you have created a tag (or namespace), it only exists in the authoring environment. For your tags to be available to your users, you must publish the tags.
+Just as with creating any other content in AEM, after you have created a tag (or namespace), it only exists in the authoring environment. For your tags to be available to your users, you must publish the tags.
 
 1. To publish a tag, open the [tagging console.](#tagging-console)
 

@@ -64,7 +64,7 @@ During the development stage, it is recommended you work with a development and 
 
 Developers need an AEM development environment set up with the populated content models. The developer develops the client that will consume content from AEM headless as the content authors are still creating the content. That is why the API definitions are really important. By leveraging the AEM SDK, the developer can create a test hook so client and unit tests can be created to make sure the client is able to properly render the content.
 
-Content authors create content based on the content models that have been defined on the staging environment. Using the content fragment authoring tool, the author would create a new content fragment or edit an existing content fragment. Before publishing it, the author can preview how it will look in the client by working with the developer to push the content model onto development or set up a developer environment just for authors to preview how it would look in the client.
+Content authors create content based on the content models that have been defined on the staging environment. Using the content fragment authoring tool, the author would create a content fragment or edit an existing content fragment. Before publishing it, the author can preview how it will look in the client by working with the developer to push the content model onto development or set up a developer environment just for authors to preview how it would look in the client.
 
 ## Setup {#setup}
 

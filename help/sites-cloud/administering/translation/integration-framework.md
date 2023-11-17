@@ -61,7 +61,7 @@ After you configure a translation integration framework, you can [associate it w
 >
 >For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](overview.md).
 
-A single configuration of the framework controls how page content and assets are translated. To create a new translation configuration:
+A single configuration of the framework controls how page content and assets are translated. To create a translation configuration:
 
 1. In the [global navigation menu,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) click or tap **Tools -&gt; Cloud Services -&amp; Translation Cloud Services**.
 1. Navigate to where you wish to create the configuration in your content structure. This is often based on a particular site or can be global.

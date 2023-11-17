@@ -159,7 +159,7 @@ The new rollout configuration is then available to you when setting rollout conf
 
 ### Create the Rollout Configuration {#create-the-rollout-configuration}
 
-To create a new rollout configuration:
+To create a rollout configuration:
 
 1. Open CRXDE Lite at `https://<host>:<port>/crx/de`.
 
