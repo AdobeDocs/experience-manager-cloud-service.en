@@ -391,7 +391,7 @@ By default, the [!DNL Adobe Sign] Scheduler service checks (polls) recipient res
 * **[!UICONTROL Signature Process]**: You can choose to sign a document in a sequential or a parallel order. In sequential order, one signer receives the document at a time for signing. After the first signer completes signing the document, the document is sent to the second signer, and so on. In parallel order, multiple signers can sign a document at a time.
 * **[!UICONTROL Redirection URL]**: Specify a redirection URL. After the document is signed, you can redirect the assignee to a URL. Usually, this URL contains a thank you message or further instructions.
 * **[!UICONTROL Workflow Stage]**: A workflow can have multiple stages. These stages are displayed in the AEM Inbox. You can define these stages in the properties of the model ( **[!UICONTROL Sidekick]** &gt; **[!UICONTROL Page]** &gt; **[!UICONTROL Page Properties]** &gt; **[!UICONTROL Stages]**).
-* **[!UICONTROL Select Recipients]**: Specify the method to choose recipients for the document. You can dynamically assign the workflow to a user or a group or manually add details of a recipient. When you select Manually in the dropdown, you add recipient details such as Email, Role, and Authentication method.
+* **[!UICONTROL Select Recipients]**: Specify the method to choose recipients for the document. You can dynamically assign the workflow to a user or a group or manually add details of a recipient. When you select Manually in the drop-down list, you add recipient details such as Email, Role, and Authentication method.
 
     >[!NOTE]
     >
@@ -541,7 +541,7 @@ The Generate Printed Output step has the following properties:
 
 * **[!UICONTROL Select Content Root location using]**: Content root is a string value that specifies the URI, absolute reference, or location in the repository to retrieve relative assets used by the form design. For example, if the form design references an image relatively, such as `../myImage.gif`, `myImage.gif` must be at `repository://`. The default value is `repository://`, which points to the root level of the repository.
 
-  When you pick an asset from your application, the Content Root URI path must have the correct structure. For example, if a form is picked from an application named SampleApp, and is placed at `SampleApp/1.0/forms/Test.xdp`, the Content Root URI must be specified as `repository://administrator@password/Applications/SampleApp/1.0/forms/`, or `repository:/Applications/SampleApp/1.0/forms/` (when authority is null). When the Content Root URI is specified this way, the paths of all of the referenced assets in the form are resolved against this URI.
+  When you pick an asset from your application, the Content Root URI path must have the correct structure. For example, if a form is picked from an application named SampleApp, and is placed at `SampleApp/1.0/forms/Test.xdp`, the Content Root URI must be specified as `repository://administrator@password/Applications/SampleApp/1.0/forms/`, or `repository:/Applications/SampleApp/1.0/forms/` (when authority is null). When the Content Root URI is specified this way, the paths of all referenced assets in the form are resolved against this URI.
 
 * **[!UICONTROL Select XCI file using]**: XCI files are used to describe fonts and other properties that are used for form design elements. You can keep an XCI file relative to the payload, at an absolute path, or using a variable of Document data type.
 
@@ -569,7 +569,7 @@ The Generate Printed Output step has the following properties:
 
 * **Template File**: Specifies the location of the XDP template. It is a mandatory field.
 
-* **Data Document**: Specifies the location of the data xml that needs to be merged with the template.
+* **Data Document**: Specifies the location of the data xml that must be merged with the template.
 
 ### Output document {#output-document}
 

@@ -23,7 +23,7 @@ This document outlines each of these building blocks and how they exchange data.
 
 >[!TIP]
 >
->To see the Universal Editor and its architecture in action, please see the document [Getting Started with the Universal Editor in AEM](getting-started.md) to learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
+>To see the Universal Editor and its architecture in action, see [Getting Started with the Universal Editor in AEM](getting-started.md) to learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 
 ### Editors {#editors}
 
@@ -44,7 +44,7 @@ The Universal Editor strives for a minimal SDK, thus the instrumentation is the 
 ### Persistence Layer {#persistence-layer}
 
 * **Content Fragment Model** - To support the rail for editing Content Fragment properties, the Content Fragment Editor, and form-based editors, models per component and content fragment are required.
-* **Content** - Content can be stored anywhere, such as in AEM, Magento, etc. 
+* **Content** - Content can be stored anywhere, such as in AEM, Magento, and so on. 
 
 ![Persistence layer](assets/persistence-layer.png)
 

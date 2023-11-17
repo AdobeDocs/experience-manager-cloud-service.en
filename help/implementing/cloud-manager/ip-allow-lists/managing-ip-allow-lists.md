@@ -73,7 +73,7 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 1. Navigate to the **Environments** screen from the **Overview** page.
 1. Navigate to the **IP Allow Lists** page from the **Environments** screen.
-1. Identify the row of the IP allowlist that you wish to delete.
+1. Identify the row of the IP allowlist that you want to delete.
 1. Select the ellipsis menu at the far right end of the row.
 1. Click **Delete**.
 1. Confirm your submission.

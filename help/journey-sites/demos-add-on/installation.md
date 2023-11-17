@@ -49,7 +49,7 @@ Cloud Manager is used to administer the cloud resources supporting your AEM Proj
 
 >[!TIP]
 >
->If you wish to learn about Cloud Manager in depth, see [Additional Resources](#additional-resources) section of this article for links to more information.
+>If you want to learn about Cloud Manager in depth, see [Additional Resources](#additional-resources) section of this article for links to more information.
 
 ### Programs {#programs}
 

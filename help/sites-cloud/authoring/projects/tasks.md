@@ -41,7 +41,7 @@ Click the ellipsis (...) in the Task tile to display the list of the tasks relat
 
 #### Task Details {#task-details}
 
-For more information on a particular task, in the Task List, tap/click the task and **Open**.
+For more information on a particular task, in the Task List, select the task and **Open**.
 
 ![Task details](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -57,12 +57,12 @@ You can add new tasks to projects. These tasks then appear in the Tasks tile and
 
 To add a task:
 
-1. In the project, in the **Tasks** tile, tap/click the + icon. The **Add Task** window opens.
+1. In the project, in the **Tasks** tile, select the + icon. The **Add Task** window opens.
 1. Enter information about the task. The title of the task and which group it is assigned to are mandatory. Additional information such as the content path, description, task priority, and due date are optional. In addition, you can select the **Advanced** tab to enter the name of the task, which is used to name the URL.
 
    ![Add a task](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
-1. Tap/click **Create**.
+1. Select **Create**.
 
 ## Working with Tasks in the Inbox {#working-with-tasks-in-the-inbox}
 

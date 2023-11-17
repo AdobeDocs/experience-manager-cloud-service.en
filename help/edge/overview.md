@@ -8,7 +8,7 @@ exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 
 With Edge Delivery Services, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering high-impact experiences that are fast to author and develop. It is a composable set of services that enables a rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. As such, with Edge Delivery Services you can improve conversion, reduce costs, and provide extreme content velocity.
 
-By leveraging Edge Delivery, you can:
+By using Edge Delivery, you can:
 
 * Create fast sites with a perfect Lighthouse Score and continuously monitor your site performance through real user monitoring (RUM).
 * Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website.
@@ -44,7 +44,7 @@ It's easy to get started using Edge Delivery Services. Get started by following 
 
 ## Getting Help from Adobe {#adobe-gethelp}
 
-You can engage with Adobe product teams via your provisioned product collaboration channel (see below for access details) to answer questions on product use or best practices. Please note that there are no Service Level Terms (SLT) associated with the conversations via the product collaboration channel. If a product issue needs additional investigation and troubleshooting, and needs to meet response SLTs, you can submit a support ticket following the [support process](https://experienceleague.adobe.com/?lang=en&support-tab=home#support).
+You can engage with Adobe product teams via your provisioned product collaboration channel (see below for access details) to answer questions on product use or best practices. There are no Service Level Terms (SLT) associated with the conversations via the product collaboration channel. If a product issue needs additional investigation and troubleshooting, and must meet response SLTs, you can submit a support ticket following the [support process](https://experienceleague.adobe.com/?lang=en&support-tab=home#support).
 
 Adobe provides three channels to help you with Edge Delivery Services:
 
@@ -67,14 +67,14 @@ For more information, see [Using the Slack Bot](https://www.hlx.live/docs/slack)
 Steps to log a support ticket via the Admin Console:
 
 1. Add **Edge Delivery** in the title of the ticket.
-2. In the description, please provide the following details:
+2. In the description, provide the following details:
 
     * URL of the live website. For example: [www.mydomain.com].
     * URL of the origin website (.hlx URL).
 
 ## What's Next {#whats-next}
 
-Get started by reviewing the next article: [Using Edge Delivery Services](/help/edge/using.md).
+Get started by reviewing [Using Edge Delivery Services](/help/edge/using.md).
 
 ## Useful Resources {#useful-resources}
 

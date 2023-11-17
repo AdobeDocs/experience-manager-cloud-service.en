@@ -57,7 +57,7 @@ The Content Transformer is bundled with the [Content Transfer Tool](/help/journe
    >[!NOTE]
    > Any operation that can change the source content (`move`/`remove`/`rename`) will by default create a backup package of the source paths under `/etc/packages/content-transformation` before the transformation. Although each operation dialog has an option to disable/enable backup package creation, it is strictly recommended to always have the enable package creation selected.
 
-1. An example of a backup package created for the move operation of the paths is shown below, click install to bring back the source paths. Note that the installation will only bring the source paths back to their original location and not delete the paths where they were moved during transformation. To delete the paths in the moved location, click **Add Paths** button to add the location (for example `/etc/packages/content-transformation/paths`), select the location and click **Remove**. 
+1. An example of a backup package created for the move operation of the paths is shown below, click install to bring back the source paths. The installation only brings the source paths back to their original location and not delete the paths where they were moved during transformation. To delete the paths in the moved location, click **Add Paths** button to add the location (for example `/etc/packages/content-transformation/paths`), select the location and click **Remove**. 
 
    >[!CAUTION]
    > Do not delete `/etc/packages/content-transformation` as this is the location where the backup packages reside. Only when you are sure that you do not need these packages anymore, you can delete this location to reduce the repository size.

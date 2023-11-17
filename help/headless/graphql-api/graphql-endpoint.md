@@ -58,7 +58,7 @@ To enable the corresponding endpoint:
 1. Select **Create**.
 1. The **Create new GraphQL Endpoint** dialog opens. Here you can specify:
    * **Name**: name of the endpoint; you can enter any text.
-   * **Use GraphQL schema provided by**: use the dropdown to select the required site/project.
+   * **Use GraphQL schema provided by**: use the drop-down list to select the required site/project.
 
    >[!NOTE]
    >

@@ -7,7 +7,7 @@ exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 
 Projects lets you organize your project by grouping resources into one entity.
 
-In the **Projects** console, you access and take action on your projects:
+In the **Projects** console, you access and act on your projects:
 
 ![The Projects console](/help/sites-cloud/authoring/assets/projects-console.png)
 
@@ -27,7 +27,7 @@ Out of the box, AEM provides these templates to choose from when you create a pr
 
 The procedure of creating a project is the same from project to project. The difference between the types of projects includes available [user roles](/help/sites-cloud/authoring/projects/overview.md) and [workflows](/help/sites-cloud/authoring/projects/workflows.md).  To create a project:
 
-1. In **Projects**, tap/click **Create** to open the **Create Project** wizard:
+1. In **Projects**, select **Create** to open the **Create Project** wizard:
 1. Select a template and click **Next**.
 
    ![Creating a project](/help/sites-cloud/authoring/assets/projects-create.png)
@@ -36,7 +36,7 @@ The procedure of creating a project is the same from project to project. The dif
 
    ![Adding project detail](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. Tap/click **Create**. The confirmation asks whether you want to open your new project or to return to the console.
+1. Select **Create**. The confirmation asks whether you want to open your new project or to return to the console.
 
 ### Associating Resources with your Project {#associating-resources-with-your-project}
 
@@ -45,7 +45,7 @@ As projects enable you to group resources into one entity, you want to associate
 To associate resources with your project:
 
 1. Open your project from the **Projects** console.
-1. Tap/click **Add Tile** and select the tile that you want to link to your project. You can select multiple types of tiles.
+1. Select **Add Tile** and select the tile that you want to link to your project. You can select multiple types of tiles.
 
    ![Adding a tile to a project](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
@@ -53,7 +53,7 @@ To associate resources with your project:
    >
    >Project tiles that can be associated with a project are described in detail in [Project tiles](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
-1. Tap/click **Create**. Your resource is linked to your project and from now on you can access it from your project.
+1. Select **Create**. Your resource is linked to your project and from now on you can access it from your project.
 
 ### Deleting a Project or Resource Link {#deleting-a-project-or-resource-link}
 
@@ -65,13 +65,13 @@ The same method is used to delete a project from the console or a linked resourc
     * To delete a resource link within a project, open your project in the **Projects** console.
 
 1. Enter selection mode by clicking **Select** and selecting your project or resource link.
-1. Tap/click **Delete**.
+1. Select **Delete**.
 
-1. You need to confirm the deletion in a dialog. If confirmed, the project or resource link is deleted. Tap/click **Deselect** to exit selection mode.
+1. You need to confirm the deletion in a dialog. If confirmed, the project or resource link is deleted. Select **Deselect** to exit selection mode.
 
 >[!NOTE]
 >
->When you create the project and add users to the various roles, groups associated with the project are automatically created to manage associated permissions. For example, a project called Myproject would have three groups **Myproject Owners**, **Myproject Editors**, **Myproject Observers**. However, if the project is deleted, those groups are not automatically deleted. An administrator needs to manually delete the groups in **Tools** &gt; **Security** &gt; **Groups**.
+>When you create the project and add users to the various roles, groups associated with the project are automatically created to manage associated permissions. For example, a project called Myproject would have three groups **Myproject Owners**, **Myproject Editors**, **Myproject Observers**. However, if the project is deleted, those groups are not automatically deleted. An administrator must manually delete the groups in **Tools** &gt; **Security** &gt; **Groups**.
 
 ### Adding Items to a Tile {#adding-items-to-a-tile}
 
@@ -79,11 +79,11 @@ In some tiles, you may want to add more than one item. For example, you may have
 
 To add items to a Tile:
 
-1. In **Projects**, navigate to the project and tap or click the down chevron on the tile you want to add an item to.
+1. In **Projects**, navigate to the project and select the down chevron on the tile you want to add an item to.
 
    ![Add item to a tile](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-1. Add an item to the tile as you would when creating a new tile. Project tiles are described [here](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In this example, another workflow was added.
+1. Add an item to the tile as you would when creating a tile. Project tiles are described [here](/help/sites-cloud/authoring/projects/overview.md#project-tiles). In this example, another workflow was added.
 
 ### Opening a Tile {#opening-a-tile}
 
@@ -91,7 +91,7 @@ You may want to see what items are included in a current tile, or modify or dele
 
 To open a tile so that you can view or modify items:
 
-1. In the Projects console, tap/click the ellipses (...) icon at the bottom of the card.
+1. In the Projects console, select the ellipses (...) icon at the bottom of the card.
 
    ![Opening a tile](/help/sites-cloud/authoring/assets/project-links.png)
 
@@ -105,7 +105,7 @@ You can view project statistics, in the **Projects** console.
 
 ### Viewing a Project Timeline {#viewing-a-project-timeline}
 
-The project timeline provides information on when assets in the project were last used. To view the project timeline, click/tap **Timeline**, then enter selection mode and select the project. Assets are displayed in the left pane. Click/tap **Timeline** to return to the **Projects** console.
+The project timeline provides information on when assets in the project were last used. To view the project timeline, select **Timeline**, then enter selection mode and select the project. Assets are displayed in the left pane. Select **Timeline** to return to the **Projects** console.
 
 ![Project timeline](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
@@ -131,9 +131,9 @@ To make a project inactive (or active):
    >
    >You may need to add this tile if it is not already in your project. See [Adding Tiles](#adding-items-to-a-tile).
 
-1. Tap/click **Edit**.
+1. Select **Edit**.
 1. Change the selector from **Active** to **Inactive** (or vice versa).
 
    ![Activating a project](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. Tap/click **Done** to save your changes.
+1. Select **Done** to save your changes.

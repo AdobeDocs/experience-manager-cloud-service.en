@@ -84,7 +84,7 @@ The actual appearance and handling is dependent on the device type you are using
   * Filter components by name.
   * Limit the display to a specific group using the drop-down selection.
 
-  For a more detailed description of the component, you can click or tap the information icon next to the component in the **Components** browser (if available). For example, for the **Content Fragment**:
+  For a more detailed description of the component, you can select the information icon next to the component in the **Components** browser (if available). For example, for the **Content Fragment**:
 
   ![Component Browser information](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -157,13 +157,13 @@ If you need to quickly make a change to an asset, you can start the [asset edito
 
 ## Content Tree {#content-tree}
 
-The **Content Tree** gives an overview of all of the components on the page in a hierarchy so you can see at a glance how the page is composed.
+The **Content Tree** gives an overview of all the components on the page in a hierarchy so you can see at a glance how the page is composed.
 
 The Content Tree is a tab within the side panel (together with the components and assets browser). To open (or close) the side panel use the icon at the top left of the toolbar:
 
 ![Content Tree button](/help/sites-cloud/authoring/assets/content-tree-button.png)
 
-When you open the side panel it will slide open (from the left side). Select the **Content Tree** tab if necessary. When open you can see a tree view representation of your page or template, so that it's easier to understand how its content is structured hierarchically. Additionally on a complex page, it makes it easier to jump between components of the page.
+When you open the side panel it will slide open (from the left side). Select the **Content Tree** tab if necessary. When open you can see a tree view representation of your page or template, so that it's easier to understand how its content is structured hierarchically. Also, on a complex page, it makes it easier to jump between components of the page.
 
 ![Content Tree](/help/sites-cloud/authoring/assets/content-tree-editor.png)
 
@@ -309,7 +309,7 @@ The path browser is organized like the [column view](/help/sites-cloud/authoring
 
 ![Path Browser](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Once a resource is selected, the **Select** button at the upper-right of the dialogue becomes active. Click or tap to confirm the selection or **Cancel** to abort.
+* Once a resource is selected, the **Select** button at the upper-right of the dialogue becomes active. Select to confirm the selection or **Cancel** to abort.
 * If the context allows for the selection of multiple resources, selecting a resource also activates the **Select** button, but also adds a count of the number of selected resources to the upper-right of the window. Click the **X** next to the number to deselect all.
 * When you navigate through the tree, your location is reflected in the breadcrumbs at the top of the dialog. These breadcrumbs can also be used to quickly jump within the resource hierarchy.
 * At any time you can use the search field at the top of the dialogue. Click the **X** in the search field to clear the search.

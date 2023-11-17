@@ -23,7 +23,7 @@ When the next quarter arrives, you promote the launch pages so that you can publ
 
 Launches can also be:
 
-* Created for multiple root branches. While you could create the launch for the entire site (and do the changes there) this can be impractical as the whole site needs to be copied. When hundreds or even thousands of pages are involved, the system requirements and performance are impacted by both the copy action and later the comparisons required for the promotion tasks.
+* Created for multiple root branches. While you could create the launch for the entire site (and do the changes there) this can be impractical as the whole site must be copied. When hundreds or even thousands of pages are involved, the system requirements and performance are impacted by both the copy action and later the comparisons required for the promotion tasks.
 * Nested (a launch within a launch) to give you the ability to create a launch from an existing launch so that authors can take advantage of changes already made, rather than having to make the same changes multiple times for each launch.
 
 This section describes how to create, edit and promote (and if necessary [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) launch pages from within the Sites console or [the Launches console](#the-launches-console):
@@ -90,7 +90,7 @@ Launches allow you to:
 
    ![References of launches in sites console](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. Tap/click the appropriate launch, the list of possible actions are displayed:
+1. Select the appropriate launch, the list of possible actions are displayed:
 
    ![Actions to take on launches in sites console](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 

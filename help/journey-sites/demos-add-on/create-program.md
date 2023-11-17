@@ -40,30 +40,30 @@ After logging in to Cloud Manager, you can create a sandbox program for your tes
 
    ![Cloud Manager overview](assets/cloud-manager.png)
 
-1. Tap or click **Add Program** at the top-right of the window.
+1. Select **Add Program** at the top-right of the window.
 
 1. In the **Let's create your Program** dialog:
 
    1. Provide a **Program name** to describe your program.
-   1. Tap or click **Set up a sandbox** for your **Program Objective**
-   1. Tap or click **Continue**.
+   1. Select **Set up a sandbox** for your **Program Objective**
+   1. Select **Continue**.
 
    ![Create program dialog](assets/create-program.png)
 
 1. In the **Setup your sandbox** dialog in the **Solutions &amp; Add-ons** table, expand the **Sites** entry in the list by tapping or clicking it and then check **Reference Demos**.
 
-   * If you also want to create demos for AEM Screens, check the **Screens** option in the list. Tap or click **Update**.
+   * If you also want to create demos for AEM Screens, check the **Screens** option in the list. Select **Update**.
 
    ![Selecting add-on for reference demo in program setup](assets/select-reference-demo-add-on.png)
 
 
-1. Tap or click **Create** and Cloud Manager begins setting up your sandbox program. You are taken to the program overview screen and a brief banner notification indicates that the process has started. A card has been added to the overview page for your new program. The setup process takes a few minutes to complete.
+1. Select **Create** and Cloud Manager begins setting up your sandbox program. You are taken to the program overview screen and a brief banner notification indicates that the process has started. A card has been added to the overview page for your new program. The setup process takes a few minutes to complete.
 
-1. Once the setup is complete, the card for the environment on the overview page shows its status as **Ready**. Tap or click the card so you can open the environment.
+1. Once the setup is complete, the card for the environment on the overview page shows its status as **Ready**. Select the card so you can open the environment.
 
    ![Program creation complete](assets/ready.png)
 
-1. Your environment is ready and the add-on is now enabled as an option, but the contents of the demo must be deployed to AEM to be available. To do this, tap or click the ellipsis button next to the Deploy to Dev pipeline in the **Pipelines** card and select **Run**.
+1. Your environment is ready and the add-on is now enabled as an option, but the contents of the demo must be deployed to AEM to be available. To do this, select the ellipsis button next to the Deploy to Dev pipeline in the **Pipelines** card and select **Run**.
 
    ![Start](assets/run.png)
 

@@ -155,7 +155,7 @@ When you click the **CSV** option from your AEM instance, the CSV format of the 
 
 If the cache has expired, then the report is regenerated before the CSV file is built and downloaded.
 
-The CSV format of the report includes information that is generated from the Pattern Detector output, sorted and organized by category type, sub-type, and importance level. Its format is suitable for viewing and editing in an application such as Microsoft Excel. It is intended to provide all of the finding information in a repeatable format that can be helpful when comparing reports over time to measure progress.
+The CSV format of the report includes information that is generated from the Pattern Detector output, sorted and organized by category type, sub-type, and importance level. Its format is suitable for viewing and editing in an application such as Microsoft Excel. It is intended to provide allthe finding information in a repeatable format that can be helpful when comparing reports over time to measure progress.
 
 The columns of the CSV format report are:
 

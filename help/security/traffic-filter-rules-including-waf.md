@@ -107,8 +107,8 @@ The following is a high-level recommended end-to-end process for coming up with 
 
 1. For environment types other than RDE, create a targeted deployment config pipeline in Cloud Manager.
 
-   * [Please see this document for production pipelines.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-   * [Please see this document for non-production pipelines.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * [See configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [See configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 For RDEs, the command line will be used, but RDE is not supported at this time.
 
@@ -583,7 +583,7 @@ Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-ELK-To
 
 ## Recommended starter rules {#recommended-starter-rules}
 
-You can copy the recommended rules below into your `cdn.yaml` to get started. Start in log mode, analyze your traffic, and when satisfied, change to block mode. You may wish to modify the rules based on the unique characteristics of your website's live traffic.
+You can copy the recommended rules below into your `cdn.yaml` to get started. Start in log mode, analyze your traffic, and when satisfied, change to block mode. You may want to modify the rules based on the unique characteristics of your website's live traffic.
 
 ```
 kind: "CDN"

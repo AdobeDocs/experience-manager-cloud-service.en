@@ -41,7 +41,7 @@ GraphQL is:
   See [GraphQL Foundation](https://foundation.graphql.org/).
 
 <!--
-"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
+"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world the tools they need to understand and adopt GraphQL.*". 
 -->
 
 For  information about the GraphQL API, see the following sections (amongst many other resources):
@@ -150,13 +150,13 @@ The permissions are those required for accessing Assets.
 
 GraphQL queries are executed with the permission of the AEM user of the underlying request. If the user does not have read access to some fragments (stored as Assets), they will not become part of the result set. 
 
-Also, the user needs to have access to a GraphQL endpoint to be able to execute GraphQL queries. 
+Also, the user must have access to a GraphQL endpoint to be able to execute GraphQL queries. 
 
 ## Schema Generation {#schema-generation}
 
 GraphQL is a strongly-typed API, which means that data must be clearly structured and organized by type.
 
-The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client needs to fetch the [Schema](#schema-generation), which contains all the types necessary for a query. 
+The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client must fetch the [Schema](#schema-generation), which contains all the types necessary for a query. 
 
 For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) and their data types.
 
@@ -229,9 +229,9 @@ Within the schema there are individual fields, of two basic categories:
 
   A selection of [Data Types](#Data-types) are used to create fields based on how you configure your Content Fragment Model. The field names are taken from the **Property Name** field of the **Data Type** tab.
   
-  * There is also the **Render As** setting to take into consideration, as users can configure certain data types. For example, a single line text field can be configured to contain multiple single line texts by choosing `multifield` from the dropdown.
+  * There is also the **Render As** setting to take into consideration, as users can configure certain data types. For example, a single line text field can be configured to contain multiple single line texts by choosing `multifield` from the drop-down list.
 
-* GraphQL for AEM also generates a number of [helper fields](#helper-fields).
+* GraphQL for AEM also generates several [helper fields](#helper-fields).
 
 ### Data Types {#data-types}
 
@@ -239,7 +239,7 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 
 | Content Fragment Model - Data Type | GraphQL Type | Description |
 |--- |--- |--- |
-| Single line Text | `String`, `[String]` | Used for simple strings such as author names, location names, etc. |
+| Single line Text | `String`, `[String]` | Used for simple strings such as author names, location names, and so on. |
 | Multi line Text | `String`, `[String]` | Used for outputting text such as the body of an article |
 | Number | `Float`, `[Float]` | Used to display floating point number and regular numbers |
 | Boolean | `Boolean` | Used to display checkboxes → simple true/false statements |
@@ -253,7 +253,7 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 
 ### Helper Fields {#helper-fields}
 
-In addition to the data types for user generated fields, GraphQL for AEM also generates a number of *helper* fields to help identify a Content Fragment, or to provide additional information about a Content Fragment.
+In addition to the data types for user generated fields, GraphQL for AEM also generates several *helper* fields to help identify a Content Fragment, or to provide additional information about a Content Fragment.
 
 These [helper fields](#helper-fields) are marked with a preceding `_` to distinguish between what has been defined by the user and what has been auto-generated.
 
@@ -359,7 +359,7 @@ The `_variations` field has been implemented to simplify querying the variations
 
 >[!NOTE]
 >
->Note that the `_variations` field does not contain a `master` variation, as technically the original data (referenced as *Master* in the UI) is not considered an explicit variation.
+>The `_variations` field does not contain a `master` variation, as technically the original data (referenced as *Master* in the UI) is not considered an explicit variation.
 
 See [Sample Query - All Cities with a Named Variation](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation).
 
@@ -565,8 +565,8 @@ This feature lets you sort the query results according to a specified field.
 The sorting criteria:
 
 * is a comma separated list of values representing the field path
-  * the first field in the list will define the primary sort order, the second field is used if two values of the primary sort criterion are equal, the third one if the first two criteria are equal, etc.
-  * dotted notation, that is, field1.subfield.subfield etc...
+  * the first field in the list will define the primary sort order, the second field is used if two values of the primary sort criterion are equal, the third one if the first two criteria are equal, and so on.
+  * dotted notation, that is, field1.subfield.subfield and so on...
 * with an optional order direction
   * ASC (ascending) or DESC (descending); as default ASC is applied
   * the direction can be specified per field; this means that you can sort one field in ascending order, another one in descending order (name, firstName DESC)

@@ -19,7 +19,7 @@ If you are familiar with [page templates in a full-stack AEM implementation,](/h
 
 An administrator would only need to create a configuration once, or very seldomly when a new workspace is required for organizing your Content Models. For the purposes of this getting started guide, we only need to create one configuration.
 
-1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; General -&gt; Configuration Browser**.
+1. Log into AEM as a Cloud Service and from the main menu select **Tools &gt; General &gt; Configuration Browser**.
 1. Provide a **Title** and a **Name** for your configuration.
    * The **Title** should be descriptive.
    * The **Name** becomes the node name in the repository.
@@ -31,7 +31,7 @@ An administrator would only need to create a configuration once, or very seldoml
 
    ![Create Configuration](../assets/create-configuration.png)
 
-1. Tap or click **Create**
+1. Select **Create**
 
 You can create multiple configurations if required. Configurations can also be nested.
 
