@@ -54,7 +54,7 @@ With the Site rail showing in the sites console, select the root of your site to
 
 The current version of the theme is displayed with its commit hash along with timestamp of its last update.
 
-Tap or click on **Select Version** to view previous versions of the theme.
+Tap or click **Select Version** to view previous versions of the theme.
 
 ![Select theme version](/help/sites-cloud/administering/assets/select-theme-versions.png)
 

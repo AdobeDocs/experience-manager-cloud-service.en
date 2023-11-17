@@ -326,7 +326,7 @@ AEM Screens components are rendered differently in Edit mode versus Preview/Prod
 
 1. Copy and paste the `shared` client library folder to create a client library named `production`.
 
-   ![Copy the shared client library to create a new production client library](/help/screens-cloud/developing/assets/copy-clientlib.gif)
+   ![Copy the shared client library to create a production client library](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
    Copy the shared client library to create a production client library.
 

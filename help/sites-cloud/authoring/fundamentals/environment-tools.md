@@ -67,7 +67,7 @@ The actual appearance and handling is dependent on the device type you are using
 
   The component browser is opened at the left side of the window.
 
-  To add a component to your page click on the required component and drag it to the required location.
+  To add a component to your page, click the required component and drag it to the required location.
 
   ![Component Browser on desktop](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
@@ -114,7 +114,7 @@ To add an asset to your page, select and drag to the required location. This can
 
 * An existing component of the appropriate type.
   * For example, you can drag an asset of type image onto an Image component.
-* A [placeholder](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) in the paragraph system to create a new component of the appropriate type.
+* A [placeholder](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) in the paragraph system to create a component of the appropriate type.
   * For example, you can drag an asset of type image onto the paragraph system to create an Image component.
 
 >[!NOTE]
@@ -143,7 +143,7 @@ The actual appearance and handling is dependent on the device type you are using
 
   The assets browser is opened at the left side of the window.
 
-  To add an asset to your page click on the required asset and drag it to the required component or location.
+  To add an asset to your page, click the required asset and drag it to the required component or location.
 
   ![Assets Browser on desktop](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 

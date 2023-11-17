@@ -22,7 +22,7 @@ This article builds on these so you understand how to create your own Content Fr
 <!--
 ## Enabling Content Fragment Models {#enabling-content-fragment-models}
 
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a new configuration. For example:
+At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
 
 ![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cfm-conf-01.png)
 
@@ -47,7 +47,7 @@ Confirm with **Create** and you can then **Open** your model to start defining t
 
 ## Defining Content Fragment Models {#defining-content-fragment-models}
 
-When you first open a new model you will see - a large blank space to the left, and a long list of **Data Types** at the right:
+When you first open a new model you see - a large blank space to the left, and a long list of **Data Types** at the right:
 
 ![Empty Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 

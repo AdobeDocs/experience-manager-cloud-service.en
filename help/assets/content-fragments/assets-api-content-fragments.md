@@ -257,7 +257,7 @@ Usage can differ depending on whether you are using an AEM Author or Publish env
 
 There are a few limitations:
 
-* **Content fragment models are currently not supported**: they cannot be read or created. To be able to create a new, or update an existing, content fragment, developers have to know the correct path to the content fragment model. Currently the only method to get an overview of these is through the administration UI.
+* **Content fragment models are currently not supported**: they cannot be read or created. To be able to create or update an existing content fragment, developers have to know the correct path to the content fragment model. Currently the only method to get an overview of these is through the administration UI.
 * **References are ignored**. Currently there are no checks on whether an existing content fragment is referenced. Therefore, for example, deleting a content fragment might result in issues on a page that contains a reference to the deleted Content Fragment.
 * **JSON data type** The REST API output of the *JSON data type* is *string-based output*.
 

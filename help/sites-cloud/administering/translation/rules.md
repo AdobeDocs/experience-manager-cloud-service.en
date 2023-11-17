@@ -165,7 +165,7 @@ In the translation rules UI you can:
 
    ![Select context](../assets/select-context.png)
 
-1. Then you need to select your context and then click **Edit**. This will open the Translation Rules Editor.
+1. Then you need to select your context and then click **Edit**. This opens the Translation Rules Editor.
 
    ![Translation Rules Editor](../assets/translation-rules-editor.png)
 

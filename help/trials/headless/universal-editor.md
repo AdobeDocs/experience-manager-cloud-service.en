@@ -29,7 +29,7 @@ Editing in place and in context can often be advantageous over structured headle
 
 >[!NOTE]
 >
->In order to use the Universal Editor in this trial, you must use Chrome as your browser and not in incognito mode. This is a limitation of the trial experience, not of the Universal Editor.
+>To use the Universal Editor in this trial, you must use Chrome as your browser and not in incognito mode. This is a limitation of the trial experience, not of the Universal Editor.
 
 Using the Universal Editor, you have an agile way to edit your text in context and in place, allowing simple and intuitive content authoring.
 
@@ -73,7 +73,7 @@ The Universal Editor lets you interact with your content within its context, see
 
    ![The emulator menu item](assets/do-not-localize/ue-emulator-1.png)
 
-1. Readers may be on different devices with different aspect ratios, so the editor offers emulation modes in order to see how the page will be presented to users. For example, select the mobile device option in portrait mode.
+1. Readers may be on different devices with different aspect ratios, so the editor offers emulation modes to see how the page will be presented to users. For example, select the mobile device option in portrait mode.
 
    ![The emulator menu item](assets/do-not-localize/ue-emulator-2.png)
 
@@ -81,7 +81,7 @@ The Universal Editor lets you interact with your content within its context, see
 
 1. Return the emulator to desktop mode.
 
-You can also specify exact dimensions for the emulator and rotate the emulated device in order to view your content on any potential target device.
+You can also specify exact dimensions for the emulator and rotate the emulated device to view your content on any potential target device.
 
 ## Previewing and Publishing {#preview}
 
@@ -89,7 +89,7 @@ Because you need to tap or click your content to select it in the editor, the ed
 
 1. In the mode rail on the left side of the editor, tap or click **Preview**.
 
-1. Now tap or click on the **Read More** link for the main article.
+1. Now tap or click the **Read More** link for the main article.
 
    ![Preview mode](assets/do-not-localize/ue-preview-publish-1.png)
 
@@ -97,7 +97,7 @@ Because you need to tap or click your content to select it in the editor, the ed
 
    ![Return to main page using Back link](assets/do-not-localize/ue-preview-publish-3.png)
 
-1. Now tap or click on the **Publish** button at the top-right of the editor to publish your content.
+1. Now tap or click the **Publish** button at the top-right of the editor to publish your content.
 
    ![The preview and publish menu items](assets/do-not-localize/ue-preview-publish-4.png)
 
