@@ -62,7 +62,7 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 * Quick access to product cockpit: Easily access full detailed product information with one-click in Sites Editor
 
-    ![Enable wantlist](/help/assets/CIF/enable-wantlist.png)
+<!-- Image was not found during PR validation despite correct path   ![Enable wantlist](/help/assets/CIF/enable-wishlist.png) -->
 
 * Support for additional marketing commerce components:  Components can be configured to show an add-to-cart and add-to-wantlist call-to-action
 
