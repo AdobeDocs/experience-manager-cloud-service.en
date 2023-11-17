@@ -35,9 +35,9 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
    ![select_form](assets/select_form.png)
 
-1. (Optional) In the metadata schema editor, create a new field to conditionalize. Specify a name and property path in the **[!UICONTROL Settings]** tab.
+1. (Optional) In the metadata schema editor, create a field to conditionalize. Specify a name and property path in the **[!UICONTROL Settings]** tab.
 
-   To create a new tab, tap/click `+` to add a tab and then add a metadata field.
+   To create a tab, tap/click `+` to add a tab and then add a metadata field.
 
    ![add_tab](assets/add_tab.png)
 

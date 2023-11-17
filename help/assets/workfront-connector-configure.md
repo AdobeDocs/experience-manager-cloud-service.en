@@ -92,7 +92,7 @@ Metadata mapping between Adobe Workfront Documents and Assets is defined within 
 To configure the mappings, follow these steps:
 
 1. Navigate to **Tools** > **Assets** > **Metadata Schemas**.
-1. Select the metadata schema form you wish to edit and click **Edit** or create a new metadata schema from scratch.
+1. Select the metadata schema form you wish to edit and click **Edit** or create a metadata schema from scratch.
 1. Select the metadata schema form field you wish to edit and select **Settings** tab on the right panel.
 1. In [!DNL Workfront] Custom Form Field select the name of the [!DNL Workfront] field that you wish to map to the selected AEM property. Available options are:
 

@@ -61,7 +61,7 @@ You can switch the folder rail from displaying all the folders to specific folde
 
 1. Select **Hide Folders** to close it again.
 
-## How to create a new folder {#create-folder}
+## How to create a folder {#create-folder}
 
 You can create folders to better organize your displays.
 
@@ -80,7 +80,7 @@ You can create folders to better organize your displays.
 
    ![image](/help/screens-cloud/assets/display/Createfolder2.png)
 
-## How to create a new nested folder {#nested-folder}
+## How to create a nested folder {#nested-folder}
 
 1. Navigate to the displays inventory view.
 

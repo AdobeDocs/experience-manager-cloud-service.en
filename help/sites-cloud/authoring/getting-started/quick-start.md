@@ -70,7 +70,7 @@ There are various aspects to finding a page; you can navigate and/or search:
 
 ### Creating a New Page {#creating-a-new-page}
 
-To [create a new page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
+To [create a page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
 1. [Navigate to the location](#finding-your-page) where you want to create the new page.
 1. Use the **Create** icon and then select **Page** from the list:

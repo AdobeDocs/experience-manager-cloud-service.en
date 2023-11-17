@@ -1,11 +1,11 @@
 ---
 title: Create Site from Template
-description: Learn how to quickly create a new AEM site using a site template.
+description: Learn how to quickly create an AEM site using a site template.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 ---
 # Create Site from Template {#create-site-from-template}
 
-Learn how to quickly create a new AEM site using a site template.
+Learn how to quickly create an AEM site using a site template.
 
 ## The Story So Far {#story-so-far}
 
@@ -14,14 +14,14 @@ In the previous document of the AEM Quick Site Creation journey, [Understand Clo
 * Understand how AEM Sites and the Cloud Manager work together to facilitate front-end development
 * See how the front-end customization step is entirely decoupled from AEM and requires no AEM knowledge.
 
-This article builds on those fundamentals so you can take the first configuration step and create a new site form a template which you can then later customize using front-end tools.
+This article builds on those fundamentals so you can take the first configuration step and create a site for a template which you can then later customize using front-end tools.
 
 ## Objective {#objective}
 
-This document helps you understand how to quickly create a new AEM site using a site template. After reading you should:
+This document helps you understand how to quickly create an AEM site using a site template. After reading you should:
 
 * Understand how to obtain AEM Site templates.
-* Learn how to create a new site using a template.
+* Learn how to create a site using a template.
 * See how to download the template from your new site to provide to the front-end developer.
 
 ## Responsible Role {#responsible-role}
@@ -59,7 +59,7 @@ Once downloaded you can upload it to your AEM environment as you would any other
 
 ## Installing a Site Template {#installing-template}
 
-Using a template to create a new site is very easy.
+Using a template to create a site is easy.
 
 1. Sign into your AEM authoring environment and navigate to the Sites console
 
@@ -165,7 +165,7 @@ You now have completed the configuration. Content authors can now begin to creat
 Now that you have completed this part of the AEM Quick Site Creation journey you should:
 
 * Understand how to obtain AEM Site templates.
-* Learn how to create a new site using a template.
+* Learn how to create a site using a template.
 * See how to download the template from your new site to provide to the front-end developer.
 
 Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Set Up Your Pipeline,](pipeline-setup.md) where you will create a front-end pipeline to manage the customization of your site's theme.
