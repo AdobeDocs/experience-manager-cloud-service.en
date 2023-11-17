@@ -60,7 +60,7 @@ Notice that AEM has two main approaches for creating Live Copies:
 
 The following are a few considerations to keep in mind when creating a site:
 
-* To create a new site, you need a [blueprint configuration](creating-live-copies.md#managing-blueprint-configurations).
+* To create a site, you need a [blueprint configuration](creating-live-copies.md#managing-blueprint-configurations).
 * To allow the selection of language paths to create in a new site, the corresponding language roots must exist in the blueprint (source).
 * Once a [new site has been created as a Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (using **Create**, then **Site**), the first two levels of this Live Copy are *shallow*. Children of the page do not belong to the live-relationship, but a roll-out will still descend if a live-relationship that matches the trigger is found.
 

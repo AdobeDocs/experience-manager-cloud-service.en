@@ -22,7 +22,7 @@ This document helps you understand creating and managing channels for your AEM S
 >**Prerequisites**
 >Before starting this section of the Guide, review [Creating and Managing Projects in Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
-Follow the steps below to create a new sequence channel in Screens as a Cloud Service:
+Follow the steps below to create a sequence channel in Screens as a Cloud Service:
 
 1. Navigate to Screens Content Provider.
 

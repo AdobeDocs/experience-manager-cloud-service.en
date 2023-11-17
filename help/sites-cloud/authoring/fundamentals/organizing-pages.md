@@ -207,7 +207,7 @@ Unless all pages have been created for you in advance, you must create a page be
    >
    >See [Page Naming Conventions](#page-naming-conventions).
 
-   The minimum information required to create a new page is the **Title**.
+   The minimum information required to create a page is the **Title**.
 
    ![Providing page title](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 

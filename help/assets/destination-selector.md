@@ -209,7 +209,7 @@ You can define the Destination Selector [properties](#destination-selector-prope
 
 ### Example 1: Create a folder in Destination Selector
 
-Destination Selector lets you create a new folder to upload, move, or copy assets at the particular location.
+Destination Selector lets you create a folder to upload, move, or copy assets at the particular location.
 
    ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -258,7 +258,7 @@ It is an example of the `optionsFormSetup` property. You can use this to confirm
 
 ### Create a new folder {#create-new-folder}
 
-It lets you create a new folder in the destination folder of your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+It lets you create a folder in the destination folder of your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ### Types of view {#types-of-view}
 

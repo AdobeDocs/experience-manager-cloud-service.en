@@ -87,7 +87,7 @@ You can delete templates in the same manner under the heading **Delete Site Temp
 Congratulations! You have completed the AEM Reference Demos Add-On journey! You should now:
 
 * Have a basic understanding of Cloud Manager and understand how pipelines deliver content and configuration to AEM.
-* Understand how to use Cloud Manager to create a new program.
+* Understand how to use Cloud Manager to create a program.
 * Know how to activate the Reference Demos Add-On for the new program and be able to run a pipeline to deploy the add-on content.
 * Understand how to access the AEM authoring environment to create a site based on a template.
 * Understand how to access the Self-Service Demo Utilities.

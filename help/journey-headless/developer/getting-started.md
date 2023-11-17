@@ -111,7 +111,7 @@ This level of integration builds on level two by enabling most content in the ex
 
 ### You do not yet have an external consumer of the headless content such as a single page application (SPA). {#do-not-have-a-spa}
 
-If your goal is to create a new SPA that headlessly consumes content from AEM, you can use features such as Content Fragments to manage your headless content, and also build a SPA with AEM's SPA Editor framework.
+If your goal is to create a SPA that headlessly consumes content from AEM, you can use features such as Content Fragments to manage your headless content, and also build a SPA with AEM's SPA Editor framework.
 
 Using the SPA Editor, the SPA not only consumes content from AEM, but is also fully editable within AEM by your content authors giving you both the flexibility of headless delivery and in-context editing within AEM.
 
