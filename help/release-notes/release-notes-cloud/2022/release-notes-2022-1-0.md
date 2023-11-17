@@ -87,7 +87,7 @@ Have a look at the [January 2022 Release Overview](https://video.tv.adobe.com/v/
   * The "Add to wantlist" button can be enabled / disabled on a component level via policy (example product teaser, product detail
   * Available as a Core Component and in the AEM Venia Storefront
 
-![Wishlist](/help/assets/CIF/wantlist.png)
+<!-- Image was not found during PR validation despite correct path ![Wishlist](/help/assets/CIF/wantlist.png) -->
 
 ## Cloud Manager {#cloud-manager}
 
