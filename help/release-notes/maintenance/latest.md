@@ -7,15 +7,15 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 14157 {#release-14157}
+## Release 14227 {#release-14227}
 
-Summarized below are the continuous improvements for maintenance release 14157, which was publicly released on November 7, 2023. This maintenance release is an update from previous maintenance release 14029.
+Summarized below are the continuous improvements for maintenance release 14227, which was publicly released on November 9, 2023. This maintenance release is an update from previous maintenance release 14029. Maintenance release 14227 replaces 14157 to rectify one issue.
 
 2023.11.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-14157}
+### Enhancements {#enhancements-14227}
 
-* ASSETS-29631: Assets Cloud: Use dam:roles for secure delivery/search.
+<!--* ASSETS-29631: Assets Cloud: Use dam:roles for secure delivery/search.-->
 * CQ-4354515: Translations: Option to Suppress translation of referenced resources.
 * FORMS-9993: Define Steps to move Forms Core Components into Skyline.
 * FORMS-10570: Onboard EC APIs to API - First Router.
@@ -34,7 +34,7 @@ Summarized below are the continuous improvements for maintenance release 14157, 
 * SITES-16545: Content Fragments: Add endpoint for retrieving the references of a content fragment's variation.
 * SITES-16853: Content Fragments: Remove /adobe/sites/cf/fragments/{fragmentId}/variation/{name}/tags endpoint.
 
-### Fixed Issues {#fixed-issues-14157}
+### Fixed Issues {#fixed-issues-14227}
 
 * Various accessibility issues fixed
 * ASSETS-31015: Unable to upload files to Assets with unknown file extensions.
@@ -79,7 +79,6 @@ Summarized below are the continuous improvements for maintenance release 14157, 
 * SITES-16243: Content Fragments: Find and replace does not work with fields having Render as: Multiple.
 * SITES-16250: Content Fragments: Patching a CF sometimes returns an incorect etag header.
 * SITES-16686: Content Fragments: Content Fragment non-fragment references are serialised when parent reference is at max depth.
-* SITES-16234: ContextHub: Correct Selected Brand Activity Name does not show when Start Targeting.
 * SITES-12880: Fast-Track: Fix localisation for Sites > Setup Analytics.
 * SITES-16103: Experience Fragments: Target options are not displayed under Cloud Services due to console error. 
 * SITES-16001: MSM: Ability to exclude multi field components from rollout configuration while creating Live Copy.
@@ -96,11 +95,11 @@ Summarized below are the continuous improvements for maintenance release 14157, 
 * FORMS-11546: Lighthouse has detected a missing ARIA label for repeated panels in an Adaptive Form, affecting accessibility.
 * FORMS-11095: The ARIA attribute is incorrectly defined for phone number, email address, and number fields, leading to accessibility issues.
 
-### Known Issues {#known-issues-14157}
+### Known Issues {#known-issues-14227}
 
 None.
 
-### Embedded Technologies {#embedded-tech-14157}
+### Embedded Technologies {#embedded-tech-14227}
 
 |Technology|Version|Link|
 |---|---|---|

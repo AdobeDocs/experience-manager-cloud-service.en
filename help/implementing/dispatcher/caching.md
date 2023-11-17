@@ -99,7 +99,7 @@ In both cases, the caching headers can be overridden on a finer grained level at
 
 When modifying the caching headers at the Dispatcher layer, be cautious not to cache too widely. See the discussion in the HTML/text section [above](#html-text). Also, make sure that assets that are meant to be kept private (rather than cached) are not part of the `LocationMatch` directive filters.
 
-JCR resources (bigger than 16KB) that are stored in blob store are typically served as 302 redirects by AEM. These redirects are intercepted and followed by CDN and the content is delivered directly from the blob store. Only a limited set of headers can be customised on these responses. For example, in order to customise `Content-Disposition` you should use the dispatcher directives as follows:
+JCR resources (bigger than 16KB) that are stored in blob store are typically served as 302 redirects by AEM. These redirects are intercepted and followed by CDN and the content is delivered directly from the blob store. Only a limited set of headers can be customised on these responses. For example, to customise `Content-Disposition` you should use the dispatcher directives as follows:
 
 ```
 <LocationMatch "\.(?i:pdf)$">
@@ -233,7 +233,7 @@ When a HEAD request is received at the Adobe CDN for a resource that is **not** 
 
 Website URLs frequently include marketing campaign parameters that are used to track a campaign's success. 
 
-For environments created in October 2023 or later, in order to better cache requests, the CDN will remove common marketing related query parameters, specifically those matching the following regex pattern:
+For environments created in October 2023 or later, to better cache requests, the CDN will remove common marketing related query parameters, specifically those matching the following regex pattern:
  
 ```
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$

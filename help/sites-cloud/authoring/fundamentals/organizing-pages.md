@@ -26,7 +26,7 @@ This document describes how to create and manage pages with Adobe Experience Man
 
 ## Organizing your Website {#organizing-your-website}
 
-As an author you will need to organize your website within AEM. This involves creating and naming your content pages so that:
+As an author, you need to organize your website within AEM. This involves creating and naming your content pages so that:
 
 * You can easily find them on the author environment
 * Visitors to your site can easily browse them on the publish environment
@@ -207,7 +207,7 @@ Unless all pages have been created for you in advance, you must create a page be
    >
    >See [Page Naming Conventions](#page-naming-conventions).
 
-   The minimum information required to create a new page is the **Title**.
+   The minimum information required to create a page is the **Title**.
 
    ![Providing page title](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
@@ -219,7 +219,7 @@ Unless all pages have been created for you in advance, you must create a page be
    >
    >If you create a page using a name that already exists at that location, the system will automatically generate a variation of the name by appending a number. For example, if `beach` already exists, a new page becomes `beach1`.
 
-1. If you return to the console you will see your new page:
+1. If you return to the console you can see your new page:
 
    ![Resulting new page](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
 
@@ -303,7 +303,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
    ![Move button](/help/sites-cloud/authoring/assets/move.png)
 
-   This will open the move page wizard.
+   This opens the move page wizard.
 
 1. From the **Rename** stage of the wizard you can either:
 

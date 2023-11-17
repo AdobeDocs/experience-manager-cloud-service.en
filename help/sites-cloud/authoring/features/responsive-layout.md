@@ -84,7 +84,7 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 
    ![Emulator button](/help/sites-cloud/authoring/assets/emulator.png)
 
-1. The emulator toolbar will open.
+1. The emulator toolbar opens.
 
    ![Emulator toolbar](/help/sites-cloud/authoring/assets/responsive-layout-emulator-toolbar.png)
 
@@ -102,7 +102,7 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 1. To select a specific device to emulate you can either:
 
     * Use the Select Device icon and select from a drop-down selector.
-    * Tap/click on the device indicator in the emulator toolbar.
+    * Tap/click the device indicator in the emulator toolbar.
 
    ![Select device dropdown](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
@@ -114,8 +114,8 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 
    ![The fold](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
-    * The fold can also be considered the page line break (not to be confused with the [breakpoints](#layout-definitions-device-emulation-and-breakpoints)) for the content. This is displayed for convenience to show what part of the content the user will see on the device before scrolling.
-    * The line for the fold will not be shown if the height of the device being emulated is higher than the screen size.
+    * The fold can also be considered the page line break (not to be confused with the [breakpoints](#layout-definitions-device-emulation-and-breakpoints)) for the content. This is displayed for convenience to show what part of the content the user sees on the device before scrolling.
+    * The line for the fold is not shown if the height of the device being emulated is higher than the screen size.
     * The fold is shown for the author's convenience and is not shown on the published page.
 
 ## Adding a Layout Container and its Content (Edit mode) {#adding-a-layout-container-and-its-content-edit-mode}
@@ -130,7 +130,7 @@ A **Layout Container** is a paragraph system that:
 >
 >If not already available, the **Layout Container** must be explicitly activated for a paragraph system/page. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. The **Layout Container** is available as a standard component in the [Components Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). From here you can drag it to the required location on the page after which you will see the **Drag Components here** placeholder.
+1. The **Layout Container** is available as a standard component in the [Components Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). From here you can drag it to the required location on the page after which you can see the **Drag Components here** placeholder.
 1. You can then add components to the layout container. These components will hold the actual content:
 
    ![Layout container](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
@@ -196,7 +196,7 @@ When in layout mode you can perform various actions on a grid:
 
   ![Hide component](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* In **Layout** mode you can tap/click on the **Drag components here** to select the entire component. The toolbar is shown for this mode.
+* In **Layout** mode you can tap/click the **Drag components here** to select the entire component. The toolbar is shown for this mode.
 
   The toolbar has different options depending on the state of the layout component and the components belonging to it. For example:
 

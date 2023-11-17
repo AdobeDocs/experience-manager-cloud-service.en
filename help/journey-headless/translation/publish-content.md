@@ -89,7 +89,7 @@ However as before, the process differs slightly if you chose to automatically cr
 1. Navigate to **Navigation** -&gt; **Assets** -&gt; **Files**. Remember that headless content in AEM is stored as assets known as Content Fragments.
 1. Select the language root of your project. In this case we have selected `/content/dam/wknd/en`.
 1. Tap or click the rail selector and show the **References** panel.
-1. Tap or click on **Language Copies**.
+1. Tap or click **Language Copies**.
 1. Check the **Language Copies** checkbox.
 1. Expand the section **Update Language Copies** at the bottom of the references panel.
 1. In the **Project** dropdown, select **Add to an existing Translation Project**.
@@ -131,7 +131,7 @@ To update a translation you can add a new job to your existing project that is r
 
    ![Select target language](assets/select-target-language.png)
 
-1. Once your new translation job's target language is set, tap or click on the ellipsis button at the bottom of the job card to view the details of the job.
+1. Once your new translation job's target language is set, tap or click the ellipsis button at the bottom of the job card to view the details of the job.
 1. The job is empty when first created. Add content to the job by tapping or clicking the **Add** button and using the path browser [as you did before when originally creating the translation project.](translate-content.md##manually-creating)
 
 >[!TIP]

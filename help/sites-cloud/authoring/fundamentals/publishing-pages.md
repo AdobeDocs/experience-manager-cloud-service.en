@@ -94,7 +94,7 @@ In the sites console there are two options for publishing:
 
 To publish a page with Quick Publish:
 
-1. Select the page or pages in the sites console and click on the **Quick Publish** button.
+1. Select the page or pages in the sites console and click the **Quick Publish** button.
 
    ![Selecting pages for publication](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -114,7 +114,7 @@ To publish a page with Quick Publish:
 
 To publish or unpublish a page using Manage Publication:
 
-1. Select the page or pages in the sites console and click on the **Manage Publication** button.
+1. Select the page or pages in the sites console and click the **Manage Publication** button.
 
    ![Selecting pages for publication](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -228,7 +228,7 @@ When editing a page, if you wish to unpublish that page, select **Unpublish Page
 
 Just as you [use the Manage Publication option to publish](#manage-publication), you can also use it to unpublish.
 
-1. Select the page or pages in the sites console and click on the **Manage Publication** button.
+1. Select the page or pages in the sites console and click the **Manage Publication** button.
 1. The **Manage Publication** wizard starts. In the first step, **Options**, select to **Unpublish** instead of the default option of **Publish**.
 
    ![Unpublishing - Options](/help/sites-cloud/authoring/assets/publishing-unpublish.png)

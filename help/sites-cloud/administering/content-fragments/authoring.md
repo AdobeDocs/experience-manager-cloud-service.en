@@ -44,7 +44,7 @@ When you first open the Content Fragment Editor, you see four main areas:
 
     >[!WARNING]
     >
-    >The original editor will open in the same tab. It is not recommended to have both editors open at the same time.
+    >The original editor opens in the same tab. It is not recommended to have both editors open at the same time.
 
 * left panel: shows the **[Variations](#variations)** for the Content Fragment, and its **Fields**:
   * these links can be used to [navigate the Content Fragment structure](#navigate-structure)
@@ -82,7 +82,7 @@ In the left panel you can see:
 
 ### Follow Links {#follow-links}
 
-In various parts of the editor you will see the link icon. This can be used to open the item shown; for example a Content Fragment Model, a Parent Reference, or a fragment being referenced:
+In various parts of the editor you can see the link icon. This can be used to open the item shown; for example a Content Fragment Model, a Parent Reference, or a fragment being referenced:
 
 ![Content Fragment Editor - Link Icon](assets/cf-authoring-link-icon.png)
 

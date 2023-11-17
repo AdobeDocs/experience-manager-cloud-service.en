@@ -5,7 +5,7 @@ exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 ---
 # AEM as a Cloud Service Terminology {#terminology}
 
-In this part of the [onboarding journey,](overview.md) you will learn some of the terminology of AEM as a Cloud Service and its basic structure.
+In this part of the [onboarding journey,](overview.md) you learn some of the terminology of AEM as a Cloud Service and its basic structure.
 
 ## Objective {#objective}
 
@@ -47,4 +47,4 @@ Now that you have completed this part of the AEM onboarding journey you should u
 * The different layers that make up AEMaaCS.
 * The basics of what each layer does.
 
-Build on this knowledge and continue your AEM onboarding journey by next reading the document [Accessing the Admin Console](admin-console.md), where you will learn how access the console and verify your status as a system administrator.
+Build on this knowledge and continue your AEM onboarding journey by next reading the document [Accessing the Admin Console](admin-console.md), where you learn how access the console and verify your status as a system administrator.
