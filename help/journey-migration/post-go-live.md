@@ -12,7 +12,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="Accessing and Managing Logs"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
 
-This journey is the last part, so you will learn to how to monitor for issues and improve performance after the migration is complete. You should ensure the clean-up of temporary files, review best practices for continuous development and manage logs.
+This journey is the last part, so you learn to how to monitor for issues and improve performance after the migration is complete. You should ensure the clean-up of temporary files, review best practices for continuous development and manage logs.
 
 ## The Story So Far {#story-so-far}
 

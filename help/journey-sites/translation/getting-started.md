@@ -101,7 +101,7 @@ To edit a page:
 
    ![Editing a page](assets/sites-editor-title.png)
 
-You can return to the sites console by switching back to that tab in your browser at any time. Using the sites editor you can quickly view the content of the page as the content authors and your audience will see it.
+You can return to the sites console by switching back to that tab in your browser at any time. Using the sites editor you can quickly view the content of the page as the content authors and your audience can see it.
 
 >[!NOTE]
 >
@@ -195,7 +195,7 @@ Now that you have completed this part of the AEM Sites translation journey you s
 * Understand how AEM stores content.
 * Be familiar with AEM's translation tools.
 
-Build on this knowledge and continue your AEM Sites translation journey by next reviewing the document [Configure the translation connector](configure-connector.md) where you will learn how to connect AEM to a translation service.|
+Build on this knowledge and continue your AEM Sites translation journey by next reviewing the document [Configure the translation connector](configure-connector.md) where you learn how to connect AEM to a translation service.|
 
 ## Additional Resources {#additional-resources}
 

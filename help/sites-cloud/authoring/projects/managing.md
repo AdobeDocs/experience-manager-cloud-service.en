@@ -25,7 +25,7 @@ Out of the box, AEM provides these templates to choose from when you create a pr
 * Product Photo Shoot Project 
 -->
 
-The procedure of creating a project is the same from project to project. The difference between the types of projects includes available [user roles](/help/sites-cloud/authoring/projects/overview.md) and [workflows](/help/sites-cloud/authoring/projects/workflows.md).  To create a new project:
+The procedure of creating a project is the same from project to project. The difference between the types of projects includes available [user roles](/help/sites-cloud/authoring/projects/overview.md) and [workflows](/help/sites-cloud/authoring/projects/workflows.md).  To create a project:
 
 1. In **Projects**, tap/click **Create** to open the **Create Project** wizard:
 1. Select a template and click **Next**.

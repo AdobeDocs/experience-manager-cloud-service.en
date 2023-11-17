@@ -143,7 +143,7 @@ If the package has been changed or was never built, the status is presented as a
 
 ## Package Settings {#package-settings}
 
-A package is essentially a set of filters and the repository data based on those filters. Using the Package Manager UI, you can click on a package and then the **Edit** button to view the details of a package including the following settings.
+A package is essentially a set of filters and the repository data based on those filters. Using the Package Manager UI, you can click a package and then the **Edit** button to view the details of a package including the following settings.
 
 * [General Settings](#general-settings)
 * [Package Filters](#package-filters)

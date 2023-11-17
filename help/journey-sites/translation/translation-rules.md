@@ -91,7 +91,7 @@ Now that you have completed this part of the AEM Sites translation journey you s
 * Understand what the translation rules do.
 * Be able to define your own translation rules.
 
-Build on this knowledge and continue your AEM Sites translation journey by next reviewing the document [Translate content](translate-content.md) where you will learn how your connector and rules work together to translate content.
+Build on this knowledge and continue your AEM Sites translation journey by next reviewing the document [Translate content](translate-content.md) where you learn how your connector and rules work together to translate content.
 
 ## Additional Resources {#additional-resources}
 

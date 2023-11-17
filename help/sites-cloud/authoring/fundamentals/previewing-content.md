@@ -20,8 +20,8 @@ For more details about the preview environments, see [Manage Environments](/help
 
 You can publish content to the preview service by using the **Managed Publication** UI.
 
-1. In the Sites console, select the page or pages you wish to send to preview and click on the **Manage Publication** button
-1. In the following wizard, select **Preview** as the destination
+1. In the Sites console, select the page or pages you want to send to preview and click the **Manage Publication** button.
+1. In the following wizard, select **Preview** as the destination.
 
    ![managed publication](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 

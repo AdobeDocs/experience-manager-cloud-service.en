@@ -50,7 +50,7 @@ To send the image from Workfront to Experience Manager Assets:
 
 1. Click the Main Menu icon ![Show Menu](assets/show-menu.svg) available in the upper-right corner of the Adobe Workfront application, then click **[!UICONTROL Projects]**.
 
-1. Click **[!UICONTROL New Project]** to create a new project.
+1. Click **[!UICONTROL New Project]** to create a project.
 
 1. Click **[!UICONTROL Documents]** option available in the left pane, drag and then select the image that you need to send to Experience Manager Assets.
 
@@ -76,7 +76,7 @@ To configure metadata mapping using a new metadata form in Experience Manager As
 
 1. Select the schema form and click **[!UICONTROL Edit]**.
 
-1. (Optional) On the Metadata Schema Form Editor, click `+` to create a new tab for the Workfront fields.
+1. (Optional) On the Metadata Schema Form Editor, click `+` to create a tab for the Workfront fields.
 
 1. Click the **[!UICONTROL Build Form]** tab and drag the **[!UICONTROL Single Line Text]** component to the form. Click the component in the form. In the **[!UICONTROL Build Form]** tab:
 

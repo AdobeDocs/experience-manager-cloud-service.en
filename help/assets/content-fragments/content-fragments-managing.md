@@ -135,7 +135,7 @@ To open your fragment for editing:
    * Clicking/tapping on the fragment or fragment link (this is dependent on the console view).
    * Selecting the fragment, then **Edit** from the toolbar.
 
-1. The fragment editor will open. Make your changes as required:
+1. The fragment editor opens. Make your changes as required:
 
    ![Fragment editor](assets/cfm-managing-03.png)
 
@@ -179,7 +179,7 @@ Some features in the top toolbar are available from multiple modes:
 
 * Underneath the fragment name you can see the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) used for creating the current fragment:
 
-  * The name is also a link that will open the model editor.
+  * The name is also a link that opens the model editor.
 
 * See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
 
@@ -193,7 +193,7 @@ Some features in the top toolbar are available from multiple modes:
 
   >[!WARNING]
   >
-  >The new editor will open in the same tab. It is not recommended to have both editors open at the same time.
+  >The new editor opens in the same tab. It is not recommended to have both editors open at the same time.
 
 * **Save** provides access to the **Save & close** option.
   
@@ -313,7 +313,7 @@ For example:
 
 The **Compare to Current** action is available from the [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) after you have selected a specific version.
 
-This will open:
+This opens:
 
 * the **Current** (latest) version (left)
 

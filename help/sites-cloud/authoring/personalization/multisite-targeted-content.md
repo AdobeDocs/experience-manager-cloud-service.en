@@ -20,7 +20,7 @@ This document describes the following:
 
 To set up how your sites share personalized content, you need to perform the following steps:
 
-1. [Create a new area](#creating-new-areas) or [create a new area as live copy](#creating-new-areas). An area includes all the activities tha are available for an *area* of the page; that is , the location on the page where the component is targeted. Creating a new area creates an empty area, whereas creating a new area as a live copy lets you inherit content across site structures.
+1. [Create a new area](#creating-new-areas) or [create an area as live copy](#creating-new-areas). An area includes all the activities tha are available for an *area* of the page; that is , the location on the page where the component is targeted. Creating a new area creates an empty area, whereas creating a new area as a live copy lets you inherit content across site structures.
 
 1. [Link your site or page](#linking-sites-to-an-area) to an area.
 
@@ -113,9 +113,9 @@ At any time, you can suspend the inheritance or detach the inheritance completel
 
 ### Creating a new area versus creating a new area as livecopy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-In AEM, you have the option of creating a new area or creating a new areas as livecopy. Creating a new area groups activities and anything that belongs to those activities, such as offers, experiences, and so on. You create a new area when you want to create either a completely distinct set of targeted content or you want share a set of targeted content.
+In AEM, you have the option of creating a new area or creating a new areas as livecopy. Creating a new area groups activities and anything that belongs to those activities, such as offers, experiences, and so on. You create an area when you want to create either a completely distinct set of targeted content or you want share a set of targeted content.
 
-If, however, you have inheritance set up via the MSM between the two sites, then you may want to inherit the activities. In this case, you create a new area as a live copy, where Y is a live copy of X and therefore inherits all the activities as well.
+If, however, you have inheritance set up via the MSM between the two sites, then you may want to inherit the activities. In this case, you create an area as a live copy, where Y is a live copy of X and therefore inherits all the activities as well.
 
 >[!NOTE]
 >
@@ -138,9 +138,9 @@ Areas can span activities and offers. After you have created an area in either o
 
 >[!NOTE]
 >
->The default area called Master Area is collapsed by default when you tap or click on the name of a brand **until** you create another area. Then, when you select a brand in either the **Activity** or **Offers** console, you see the **Area** console.
+>The default area called Master Area is collapsed by default when you tap or click the name of a brand **until** you create another area. Then, when you select a brand in either the **Activity** or **Offers** console, you see the **Area** console.
 
-To create a new area:
+To create an area:
 
 1. Navigate to **Personalization** &gt; **Activities** or **Offers** or and then to your brand.
 1. Tap or click **Create Area**.
