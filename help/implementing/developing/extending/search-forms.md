@@ -569,7 +569,7 @@ You can add or edit fields and define/update their settings:
 
     * You are adding a new field:
 
-      After adding the predicate the **Settings** tab will open and show the properties that can be defined.
+      After adding the predicate, the **Settings** tab opens and shows the properties that can be defined.
 
     * You want to update an existing predicate:
 
@@ -628,7 +628,7 @@ The following example (to search according to the template used to create a page
 
 1. Create the node defining the property to be searched on.
 
-   You will need a root node holding definitions of the individual options to be available to the user.
+   You need a root node holding definitions of the individual options to be available to the user.
 
    The nodes for the individual options need the properties:
 

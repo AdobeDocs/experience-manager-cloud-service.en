@@ -65,7 +65,7 @@ After the connector package for your preferred translation service is installed,
 * Whether human or machine translation is to be performed
 * Whether to translate other content that is associated with the pages such as tags
 
-To create a new translation configuration:
+To create a translation configuration:
 
 1. In the global navigation menu, click or tap **Tools** -&gt; **Cloud Services** -&gt; **Translation Cloud Services**.
 1. Navigate to where you wish to create the configuration in your content structure. This is often based on a particular project or can be global.
@@ -127,7 +127,7 @@ Now that you have completed this part of the AEM Sites translation journey you s
 * Understand the important parameters of the Translation Integration Framework in AEM.
 * Be able to set up your own connection to your translation service.
 
-Build on this knowledge and continue your AEM Sites translation journey by next reviewing the document [Configure translation rules,](translation-rules.md) where you will learn how to define which content to translate.
+Build on this knowledge and continue your AEM Sites translation journey by next reviewing the document [Configure translation rules,](translation-rules.md) where you learn how to define which content to translate.
 
 ## Additional Resources {#additional-resources}
 

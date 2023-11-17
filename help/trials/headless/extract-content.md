@@ -157,7 +157,7 @@ You will create a persisted query that includes data you would like to consume f
 
    >[!NOTE]
    >
-   >If you did not use the same field descriptions as described in the previous modules, you will need to update the field names in this query.
+   >If you did not use the same field descriptions as described in the previous modules, update the field names in this query.
    >
    >Use the GraphQL autocomplete (Ctrl+Space or Option+Space) feature as described previously to help identify the available properties.
 
@@ -177,7 +177,7 @@ You will create a persisted query that includes data you would like to consume f
 
 1. The query is persisted as confirmed by a banner message at the bottom of the screen. The query also now appears in the left panel of persisted queries in the window.
 
-1. In order for the persisted query to be available publicly, it will need to be published, much like how your Content Fragments need to be published. Click the **Publish** button at the top right of the query editor to publish the query.
+1. For the persisted query to be available publicly, it needs to be published, much like how your Content Fragments need to be published. Click **Publish** at the top right of the query editor to publish the query.
 
 1. The publication is confirmed by a banner notification.
 

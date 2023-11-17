@@ -42,7 +42,7 @@ You can activate Brand Portal while creating the production environments for you
 
    Brand Portal is entitled to one of the available environments and is reflected under the **[!UICONTROL Environment Information]**.
 
-   Once you find the environment associated with Brand Portal, click on the **[!UICONTROL Activate Brand Portal]** button to begin the activation workflow.
+   Once you find the environment associated with Brand Portal, click the **[!UICONTROL Activate Brand Portal]** button to begin the activation workflow.
 
    ![Activate Brand Portal](assets/create-environment4.png)
 
@@ -80,7 +80,7 @@ Perform the following steps if you are not sure of the Brand Portal URL:
 
 1. Login to [Admin Console](https://adminconsole.adobe.com/) and navigate to **[!UICONTROL Products]**.
 1. From the left panel, select **[!UICONTROL Adobe Experience Manager Brand Portal – Brand Portal]**.
-1. Click on **[!UICONTROL Go to Brand Portal]** to directly open Brand Portal in the browser.
+1. Click **[!UICONTROL Go to Brand Portal]** to directly open Brand Portal in the browser.
 
    Or copy the Brand Portal tenant URL from the **[!UICONTROL Go to Brand Portal]** link and paste it in your browser to open the Brand Portal interface.
 
@@ -116,7 +116,7 @@ Perform the following steps to validate the connection between your Experience M
 
    ![Processing queue for the distribution of assets](assets/test-bpconfig3.png)
 
-1. To verify the connection between Experience Manager Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
+1. To verify the connection between Experience Manager Assets as a [!DNL Cloud Service] and Brand Portal, click the **[!UICONTROL Test Connection]** icon.
 
    ![Verify connection between AEM and Brand Portal](assets/test-bpconfig4.png)
 
@@ -284,7 +284,7 @@ Perform the following steps to generate the service account credentials and JWT 
 
    ![Select Product Profile](assets/service-account4.png)
 
-1. Once the API is configured, you are redirected to the API overview page. From the left navigation under **[!UICONTROL Credentials]**, click on the **[!UICONTROL Service Account (JWT)]** option.
+1. Once the API is configured, you are redirected to the API overview page. From the left navigation under **[!UICONTROL Credentials]**, click the **[!UICONTROL Service Account (JWT)]** option.
 
    >[!NOTE]
    >
@@ -438,7 +438,7 @@ Perform the following steps to validate the configuration:
 
    ![test-bpconfig3](assets/test-bpconfig3.png)
 
-1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
+1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click the **[!UICONTROL Test Connection]** icon.
 
    ![test-bpconfig4](assets/test-bpconfig4.png)
 

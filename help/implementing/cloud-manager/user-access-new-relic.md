@@ -38,7 +38,7 @@ Follow these steps to define the users of your New Relic One sub-account associa
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program for which you want to manage your New Relic One users.
+1. Click the program for which you want to manage your New Relic One users.
 
 1. At the bottom of the **Environments** card on the program overview page, click the ellipsis button and select **Manage users**.
 
@@ -88,7 +88,7 @@ To access New Relic One via Cloud Manager:
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program for which you want to access New Relic One.
+1. Click the program for which you want to access New Relic One.
 
 1. At the bottom of the **Environments** card on the program overview page, click the ellipsis button and select **Open New Relic**.
 

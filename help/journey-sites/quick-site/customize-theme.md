@@ -129,7 +129,7 @@ Now that you have completed this part of the AEM Quick Site Creation journey you
 * See how to test your theme customizations using real AEM content via local proxy.
 * Know how to commit your changes to the AEM git repository.
 
-Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Deploy Your Customized Theme,](deploy-theme.md) where you will learn how to deploy the theme using the front-end pipeline.
+Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Deploy Your Customized Theme,](deploy-theme.md) where you learn how to deploy the theme using the front-end pipeline.
 
 ## Additional Resources {#additional-resources}
 

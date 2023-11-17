@@ -16,7 +16,7 @@ Follow these steps to create a production program.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on **Add Program** from the top-right corner of the screen.
+1. Click **Add Program** from the top-right corner of the screen.
 
    ![Cloud manager landing page](assets/log-in.png) 
 
@@ -43,7 +43,7 @@ Follow these steps to create a production program.
 
    ![Select solutions](assets/setup-prod-select.png)
 
-1. Click on the chevron before the solution names to reveal optional add-ons such as selecting the **Commerce** add-on option under **Sites**.
+1. Click the chevron before the solution names to reveal optional add-ons such as selecting the **Commerce** add-on option under **Sites**.
 
    ![Select add-ons](assets/setup-prod-commerce.png)
 
@@ -64,7 +64,7 @@ Your program is created by Cloud Manager and is displayed and selectable on the 
 
 ## Access Your Program {#accessing}
 
-1. Once you see your program card on the landing page, select the ellipsis button to view the menu options available to you.
+1. When you see your program card on the landing page, select the ellipsis button to view the menu options available to you.
 
    ![Program overview](assets/program-overview.png)
 
@@ -74,7 +74,7 @@ Your program is created by Cloud Manager and is displayed and selectable on the 
 
    ![Program overview](assets/set-up-prod5.png)
 
-If at any time you need to switch to another program or return to the overview page to create another program, click on your program name in the top-left of the screen to reveal the **Navigate to** option.
+If at any time you need to switch to another program or return to the overview page to create another program, click your program name in the top-left of the screen to reveal the **Navigate to** option.
 
 ![Navigate to](assets/create-program-a1.png)
 

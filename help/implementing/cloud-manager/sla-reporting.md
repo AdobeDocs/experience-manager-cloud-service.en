@@ -16,7 +16,7 @@ SLA reporting data is available for every production program via the **Reports**
 
 1. Navigate to the **Reports** tab from the **Overview** page.
 
-1. Click on the year desired to see the SLA data graphed.
+1. Click the year desired to see the SLA data graphed.
 
 ![SLA graph example](assets/sla-reporting-1.png)
 
