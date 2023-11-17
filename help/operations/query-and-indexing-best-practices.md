@@ -114,7 +114,7 @@ The 'Slow Queries' and 'Popular Queries' tables include -
 * The query statement itself.
 * Details of the last Thread which executed the query, allowing the page or application feature executing the query to be identified.
 * A 'Read Optimization' score for the query.
-  * This is calculated as the ratio between the number of rows / nodes scanned in order to execute the query and the number of matching results read.
+  * This is calculated as the ratio between the number of rows / nodes scanned to run the query and the number of matching results read.
   * A query for which every restriction (and any ordering) can be handled at the index will typically score 90% or above.
 * Details of the maximum number of rows -
   * Read - indicating that a row was included as part of a result set.
@@ -126,15 +126,16 @@ The `Reset Statistics` option is provided to remove all existing statistics coll
 
 ### Explain Query
 
-The Explain Query Tool allows developers to understand the Query Execution Plan (see [Reading the Query Execution Plan](#reading-query-execution-plan)), including details of any indexes used when executing the query. This can be used to understand how effectively a query is indexed in order to predict, or retrospectively analyse its performance.
+The Explain Query Tool allows developers to understand the Query Execution Plan (see [Reading the Query Execution Plan](#reading-query-execution-plan)), including details of any indexes used when executing the query. This can be used to understand how effectively a query is indexed to predict, or retrospectively analyse its performance.
 
 #### Explaining a query
 
-In order to explain a query, do the following:
+To explain a query, do the following:
+
 * Select the appropriate query language using the `Language` dropdown.
 * Enter the query statement into the `Query` field.
 * If required, select how the query will be executed using the provided checkboxes.
-    * By default, JCR queries do not need to be executed in order to identify the Query Execution Plan (this is not the case for QueryBuilder queries).
+    * By default, JCR queries do not need to be run to identify the Query Execution Plan (this is not the case for QueryBuilder queries).
     * Three options are provided for executing the query -
       * `Include Execution Time` - execute the query but do not attempt to read any results.
       * `Read first page of results` - execute the query and read the first 'page' of 20 results (replicating the best practices for executing queries).
@@ -232,7 +233,7 @@ This section of the plan states that -
 
 This query execution plan will result in every asset beneath `/content/dam` being read from the index, and then filtered further by the query engine (which will only include those matching the non-indexed property restriction in the result set). 
 
-Even if only a small percentage of assets match the restriction `jcr:content/metadata/myProperty = "My Property Value"`, the query will need to read a large number of nodes in order to (attempt to) fill the requested 'page' of results. This can result in a poorly performing query, which will be shown as having a low `Read Optimization` score in the Query Performance tool) and can lead to WARN messages indicating that large numbers of nodes are being traversed (see [Index Traversal](#index-traversal)).
+Even if only a small percentage of assets match the restriction `jcr:content/metadata/myProperty = "My Property Value"`, the query needs to read a large number of nodes to (attempt to) fill the requested 'page' of results. This can result in a poorly performing query, which will be shown as having a low `Read Optimization` score in the Query Performance tool) and can lead to WARN messages indicating that large numbers of nodes are being traversed (see [Index Traversal](#index-traversal)).
 
 To optimize the performance of this second query, create a custom version of the `damAssetLucene-9` index (`damAssetLucene-9-custom-1`) and add the following property definition - 
 

@@ -433,7 +433,7 @@ Persisted queries can be built into [AEM Packages](/help/implementing/developing
 To create a Package:
 
 1. Navigate to **Tools** > **Deployment** > **Packages**.
-1. Create a new package by tapping **Create Package**. This will open a dialog to define the Package.
+1. Create a new package by tapping **Create Package**. This opens a dialog to define the Package.
 1. In the Package Definition Dialog, under **General** enter a **Name** like "wknd-persistent-queries".
 1. Enter a version number like "1.0".
 1. Under **Filters** add a new **Filter**. Use the Path Finder to select the `persistentQueries` folder beneath the configuration. For example, for the `wknd` configuration, the full path is `/conf/wknd/settings/graphql/persistentQueries`.

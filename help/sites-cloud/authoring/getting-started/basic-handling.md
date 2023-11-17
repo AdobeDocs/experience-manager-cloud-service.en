@@ -127,7 +127,7 @@ The header is always present at the top of the screen. While most options in the
 
   Situated in the middle of the rail, and always showing the description of the currently selected item, the breadcrumbs allow you to navigate within a specific console. In the **Sites** console, you can navigate through the levels of your website.
 
-  Simply click on the breadcrumb text to display a drop-down listing the levels of the hierarchy of the currently selected item. Click on an entry to jump to that location.
+  Simply click the breadcrumb text to display a drop-down listing the levels of the hierarchy of the currently selected item. Click an entry to jump to that location.
 
   ![Example of breadcrumbs expanded](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
@@ -165,7 +165,7 @@ There are various help resources available:
 
 * **Console Toolbar**
 
-  Depending on your location the **Help** icon will open the appropriate resources:
+  Depending on your location, the **Help** icon opens the appropriate resources:
 
   ![Help icon](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -298,7 +298,7 @@ Selecting a resource in the leftmost column will display the child resources in 
 
   * The resource name and chevron are highlighted when tapped or clicked.
   * The children of the clicked/tapped resource are displayed in the column to the right of the clicked/tapped resource.
-  * If you tap or click on a resource name that has no children, its details are displayed in the final column.
+  * If you tap or click a resource name that has no children, its details are displayed in the final column.
 
 * Tapping or clicking on the thumbnail selects the resource.
 
@@ -469,6 +469,6 @@ See the document [Using the Site Rail to Manage Your Site Theme](/help/sites-clo
 
 ### Filter {#filter}
 
-This will open a panel similar to [search](/help/sites-cloud/authoring/getting-started/search.md) with the appropriate location filters already set, allowing you to further filter the content you wish to view.
+This opens a panel similar to [search](/help/sites-cloud/authoring/getting-started/search.md) with the appropriate location filters already set, allowing you to further filter the content you wish to view.
 
 ![Filter example](/help/sites-cloud/authoring/assets/filter.png)

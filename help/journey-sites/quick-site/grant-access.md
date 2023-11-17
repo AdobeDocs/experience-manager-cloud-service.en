@@ -59,7 +59,7 @@ First you need to add the front-end developer as a user by using the Admin Conso
 
    ![Product profiles](assets/product-profiles.png)
 
-1. To assign the front-end developer to the correct profiles, tap or click on the **Users** tab and then the **Add User** button.
+1. To assign the front-end developer to the correct profiles, tap or click the **Users** tab and then the **Add User** button.
 
    ![Add user](assets/add-user.png)
 

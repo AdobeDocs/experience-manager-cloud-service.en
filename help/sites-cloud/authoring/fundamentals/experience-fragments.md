@@ -273,7 +273,7 @@ You can select one or more components to create a building block for recycling w
 
 ### Creating a Building Block {#creating-a-building-block}
 
-To create a new Building Block:
+To create a Building Block:
 
 1. In the Experience Fragment editor, select the components you want to re-use:
 

@@ -13,25 +13,21 @@ Learn about Cloud Manager's build environment and how it builds and tests your c
 Cloud Manager builds and tests your code using a specialized build environment.
 
 * The build environment is Linux-based, derived from Ubuntu 18.04.
-* With the [October 2023 release of Cloud Manager,](/help/implementing/cloud-manager/release-notes/current.md) Java and Maven versions are being updated on an ongoing basis.
-    * Apache Maven 3.6.0 or 3.8.8 is installed.
-    * The Java versions installed are Oracle JDK 8u202 and Oracle JDK 11.0.2. or Oracle JDK 8u371 and Oracle JDK 11.0.20.
-    * By default, the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_202` which contains Oracle JDK 8u202 or to `/usr/lib/jvm/jdk1.8.0_371` which contains Oracle JDK 8u371. See the [Alternate Maven Execution JDK Version](#alternate-maven-jdk-version) section for more details.
+* Apache Maven 3.8.8 is installed.
+* The Java versions installed are Oracle JDK 8u371 and Oracle JDK 11.0.20.
+* By default, the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_371` which contains Oracle JDK 8u371. See the [Alternate Maven Execution JDK Version](#alternate-maven-jdk-version) section for more details.
 * There are some additional system packages installed which are necessary.
-
   * `bzip2`
   * `unzip`
   * `libpng`
   * `imagemagick`
   * `graphicsmagick`
-
 * Other packages may be installed at build time as described in the section [Installing Additional System Packages.](#installing-additional-system-packages)
 * Every build is done on a pristine environment; the build container does not keep any state between executions.
 * Maven is always run with the following three commands.
-
- * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
- * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
- * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
+  * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+  * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+  * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven is configured at a system level with a `settings.xml` file, which automatically includes the public Adobe artifact repository using a profile named `adobe-public`. (See [Adobe Public Maven Repository](https://repo1.maven.org/) for more details).
 
 >[!NOTE]
@@ -177,7 +173,7 @@ When used inside a Maven `pom.xml` file, it is typically helpful to map these va
 
 ## Installing Additional System Packages {#installing-additional-system-packages}
 
-Some builds require additional system packages to be installed to function fully. For example, a build may invoke a Python or Ruby script and will need to have an appropriate language interpreter installed. This can be done by calling the [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) in your `pom.xml` to invoke APT. This execution should generally be wrapped in a Cloud Manager-specific Maven profile. This example installs Python.
+Some builds require additional system packages to be installed to function fully. For example, a build may invoke a Python or Ruby script and needs to have an appropriate language interpreter installed. This can be done by calling the [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) in your `pom.xml` to invoke APT. This execution should generally be wrapped in a Cloud Manager-specific Maven profile. This example installs Python.
 
 ```xml
         <profile>
