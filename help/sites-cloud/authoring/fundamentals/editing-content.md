@@ -145,9 +145,9 @@ You can add a new component by using the **Drag components here** box of the par
 
       ![Insert a component](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-    * If you are on a desktop device you can double-click on the **Drag components here** box.
+    * If you are on a desktop device you can double-click the **Drag components here** box.
 
-    * The **Insert New Component** dialog will open to allow you to select your required component:
+    * The **Insert New Component** dialog open to let you select your required component:
 
       ![Insert New Component dialog](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -155,7 +155,7 @@ You can add a new component by using the **Drag components here** box of the par
 
 ### Inserting a Component using the Assets Browser {#inserting-a-component-using-the-assets-browser}
 
-You can also add a new component to the page by dragging an asset from the [assets browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). This will automatically create a new component of the appropriate type (and containing the asset).
+You can also add a new component to the page by dragging an asset from the [assets browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). This automatically creates a component of the appropriate type (and containing the asset).
 
 This behavior can be configured for your installation. See Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance for further details. <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
@@ -179,7 +179,7 @@ If when browsing the assets you find that you need to make a quick change to an 
 
 ## Component Toolbar {#component-toolbar}
 
-Selecting a component will open the toolbar. This provides access to various actions that can be performed on the component.
+Selecting a component opens the toolbar. This provides access to various actions that can be performed on the component.
 
 The actual actions available to the user are shown as appropriate and not all actions may be described here.
 
@@ -255,7 +255,7 @@ The actual actions available to the user are shown as appropriate and not all ac
 
 * **Convert to an experience fragment variation**
 
-  This lets you create a new [experience fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) from the selected component or add it to an existing experience fragment.
+  This lets you create an [experience fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) from the selected component or add it to an existing experience fragment.
 
   ![Convert to Experience Fragment button](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
@@ -355,7 +355,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-cloud/aut
 
 >[!TIP]
 >
->The Layout action is limited in scope to the selected component. For example, if you are editing the layout of one component and then click on another component, the standard edit toolbar (not the layout toolbar) displays for the newly selected component and the resizing handles and the emulator toolbar disappear.
+>The Layout action is limited in scope to the selected component. For example, if you are editing the layout of one component and then click another component, the standard edit toolbar (not the layout toolbar) displays for the newly selected component and the resizing handles and the emulator toolbar disappear.
 >
 >If you need to edit the overall layout of the page, affecting multiple components, switch to the [layout mode](/help/sites-cloud/authoring/features/responsive-layout.md).
 

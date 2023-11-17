@@ -177,7 +177,7 @@ To include a `testing.properties` file in the build artifact, add an `include` s
 
 >[!NOTE]
 >
->If your project does not include this line, you will need to edit the file to opt into UI testing.
+>If your project does not include this line, edit the file to opt into UI testing.
 >
 >The file may contain a line advising not to edit it. This is due to it being introduced into your project before opt-in UI testing was introduced and clients were not intended to edit the file. This can be safely ignored.
 

@@ -7,7 +7,7 @@ exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 
 Segmentation is a key consideration when creating a campaign. See [Understanding Segmentation](segmentation.md) for information on how segmentation works and key terms.
 
-Depending on the information you have already collected about your site visitors and the goals you want to achieve, you will need to define the segments and strategies needed for your targeted content.
+Depending on the information you have already collected about your site visitors and the goals you want to achieve, define the segments and strategies needed for your targeted content.
 
 These segments are then used to provide a visitor with specifically targeted content. [Activities](activities.md) defined here can be included on any page and define which visitor segment the specialized content is applicable for.
 
@@ -97,7 +97,7 @@ To define your new segment:
 
 1. From the segments console, edit your newly-created segment to open it in the segment editor.
 1. Drag a comparison or reference to the segment editor it will appear in the default AND container.
-1. Double-click on or tap the configure option of the new reference or segment to edit the specific parameters. In this example, we are testing for people in Basel.
+1. Double-click or tap the configure option of the new reference or segment to edit the specific parameters. In this example, we are testing for people in Basel.
 
    ![Testing for people in Basel](../assets/contexthub-comparing-property-value.png)
 

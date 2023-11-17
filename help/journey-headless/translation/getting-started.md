@@ -73,8 +73,8 @@ The content architect works early in the project to define this structure. As th
 Because the Content Models define the structure of your content, you need to know which fields of your models must be translated. Generally you work with the content architect to define this. To browse the fields of your content models, follow the steps below.
 
 1. Navigate to **Tools** -&gt; **General** -&gt; **Content Fragment Models**.
-1. Content Fragment Models are generally stored in a folder structure. Tap or click on the folder for your project.
-1. The models are listed. Tap or click on the model to see the details.
+1. Content Fragment Models are generally stored in a folder structure. Tap or click the folder for your project.
+1. The models are listed. Tap or click the model to see the details.
 ![Content Fragment Models](assets/content-fragment-models.png)
 1. The **Content Fragment Model Editor** opens.
    1. The left column contains the fields of the model. This column interests us.
@@ -172,7 +172,7 @@ Now that you have completed this part of the headless translation journey you sh
 * Understand how AEM stores headless content.
 * Be familiar with AEM's translation tools.
 
-Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Configure the translation integration](configure-connector.md) where you will learn how to connect AEM to a translation service.|
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Configure the translation integration](configure-connector.md) where you learn how to connect AEM to a translation service.|
 
 ## Additional Resources {#additional-resources}
 

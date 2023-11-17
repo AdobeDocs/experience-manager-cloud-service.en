@@ -327,7 +327,7 @@ To change Live Copy content, you can:
 
 >[!TIP]
 >
->If you manually create a new page in the Live Copy, the new page is local to the Live Copy, meaning it does not have a corresponding source page to which it is attached.
+>If you manually create a page in the Live Copy, the new page is local to the Live Copy, meaning it does not have a corresponding source page to which it is attached.
 >
 >As a best practice so you can create a local page that is part of the relationship is to create the local page in the source and perform a deep rollout. This will create the page locally as Live Copies.
 
