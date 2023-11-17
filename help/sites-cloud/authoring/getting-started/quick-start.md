@@ -70,7 +70,7 @@ There are various aspects to finding a page; you can navigate and/or search:
 
 ### Creating a New Page {#creating-a-new-page}
 
-To [create a new page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
+To [create a page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
 1. [Navigate to the location](#finding-your-page) where you want to create the new page.
 1. Use the **Create** icon and then select **Page** from the list:
@@ -87,11 +87,11 @@ How to select a page depends on which view you are using in the console:
 
 1. Column View:
 
-    * Tap/click on the thumbnail for the required resource - the thumbnail is overlaid with a tick to show that it has been selected.
+    * Tap/click the thumbnail for the required resource - the thumbnail is overlaid with a tick to show that it has been selected.
 
 1. List View:
 
-    * Tap/click on the thumbnail for the required resource - the thumbnail is overlaid with a tick to show that it has been selected.
+    * Tap/click the thumbnail for the required resource - the thumbnail is overlaid with a tick to show that it has been selected.
 
 1. Card View:
 
@@ -162,7 +162,7 @@ To edit your page:
 
    >[!NOTE]
    >
-   >You can **Paste** components to either the same page, or a different page. If pasting to a different page that was already open before the cut/copy operation, then that page will need a page refresh.
+   >You can **Paste** components to either the same page, or a different page. If pasting to a different page that was already open before the cut/copy operation, then that page needs a page refresh.
 
     * [Delete](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) a component:
 
@@ -252,7 +252,7 @@ These actions can all be triggered by:
 
     * [Move](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
-        * The wizard will open to collect the information needed to move the page. Follow the on-screen instructions.
+        * The wizard opens to collect the information needed to move the page. Follow the on-screen instructions.
 
     * [Delete](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
@@ -286,7 +286,7 @@ For example, the lock icon looks like this:
 
    ![References view](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. Tap/click on the required type of reference to show more details and (when appropriate) take further actions.
+1. Tap/click the required type of reference to show more details and (when appropriate) take further actions.
 
 ### Creating a Version of Your Page {#creating-a-version-of-your-page}
 
@@ -296,7 +296,7 @@ To create a [version](/help/sites-cloud/authoring/features/page-versions.md) of 
 
    ![Timeline view option](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Tap/click on the ellipsis at the bottom right of the Timeline column to reveal extra buttons, including **Save as Version**.
+1. Tap/click the ellipsis at the bottom right of the Timeline column to reveal extra buttons, including **Save as Version**.
 
    ![Timeline view](/help/sites-cloud/authoring/assets/timeline-view.png)
 
@@ -312,7 +312,7 @@ The same basic mechanism is used when restoring and/or comparing versions of you
 
    If a version of your page has already been saved, it is listed in the Timeline.
 
-1. Tap/click on the version you want to restore - this will reveal additional action buttons:
+1. Tap/click the version you want to restore - this will reveal additional action buttons:
 
     * **Revert to this Version**
 

@@ -99,7 +99,7 @@ Now that you updated the image of the biker, let's walk through how to add new c
 
 1. Select the **Mtn Biking - Shoppable** layer.
 
-1. To create a new call-out on this panel, you must create a new shoppable moment Content Fragment. Tap or click the **+ Create new fragment** button.
+1. To create a call-out on this panel, create a shoppable moment Content Fragment. Tap or click the **+ Create new fragment** button.
 
    ![Add a shoppable moment](assets/do-not-localize/add-reference-1-5.png)
 

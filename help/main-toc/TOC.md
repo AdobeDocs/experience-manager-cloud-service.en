@@ -82,6 +82,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md)
       + [Release Notes for 2023.9.0](/help/implementing/cloud-manager/release-notes/2023/2023-9-0.md)
       + [Release Notes for 2023.8.0](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
       + [Release Notes for 2023.7.0](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
@@ -716,7 +717,8 @@ user-guide-title: AEM as a Cloud Service
       + [Building Product Experiences](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
   + Integrations {#integrations}
     + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-    + [Live Search](/help/commerce-cloud/integrating/live-search.md)
+    + [Live Search CIF Component](/help/commerce-cloud/integrating/live-search-plp.md)
+    + [Live Search Popover CIF Component](/help/commerce-cloud/integrating/live-search-popover.md)
     + [Third-Party Commerce Solution](/help/commerce-cloud/integrating/third-party.md)
     + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
   + AEM Storefront {#storefront}
@@ -838,6 +840,7 @@ user-guide-title: AEM as a Cloud Service
       + [Using git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
       + [Using Multiple Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [Enterprise Development Team Setup](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+      + [Working with Your Own GitHub Repositories](/help/implementing/cloud-manager/managing-code/byo-github.md)
     + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md)
     + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Introduction](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
@@ -1030,8 +1033,8 @@ user-guide-title: AEM as a Cloud Service
   + [Additional Publish Regions](/help/operations/additional-publish-regions.md)
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
-  + [Backup and Restore](/help/operations/backup.md)
-  + [Self-Service Restore](/help/operations/restore.md)
+   + [Backup and Restore](/help/operations/backup.md)
+   + [Self-Service Restore](/help/operations/restore.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
   + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)

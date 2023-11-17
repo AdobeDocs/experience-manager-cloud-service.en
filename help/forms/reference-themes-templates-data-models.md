@@ -5,6 +5,12 @@ exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 ---
 # Reference Themes, Templates, and Form Data models {#reference-themes-templates-and-data-models}
 
+
+| Applies to | Article link |
+| -------- | ---------------------------- |
+|  Adaptive Form based on Core Components   | [Click here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)   |
+|  Adaptive Form based on Foundation Components | This article |
+
 <span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
 
 AEM Forms as a Cloud Service provides multiple reference themes, templates, and form data models to help you start quickly with creating Adaptive Forms. You can download the [reference content package from software distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) and use the [Package Manager](/help/implementing/developing/tools/package-manager.md) to install the [reference content package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) on your production, development, or local development environment to get these reference assets to your environment. 

@@ -25,7 +25,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 >* Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Experience Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
 >* Experience Manager does not allow using `subassets` word as the name of a folder. It is a keyword reserved for node that contain subassets for compound assets
 
-1. Navigate to the place in your digital assets folder where you want to create a new folder. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
+1. Navigate to the place in your digital assets folder where you want to create a folder. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
 1. In the **[!UICONTROL Title]** field, provide a folder name. By default, DAM uses the title that you provided as the folder name. Once the folder is created, you can override the default and specify another folder name.
 1. Click **[!UICONTROL Create]**. Your folder is displayed in the digital assets folder.
 
@@ -48,7 +48,7 @@ To extract the ZIP files, perform the following steps:
 1. Click the **[!UICONTROL Extract Archive]** option available on the action bar.
 1. Select the folder where you need to save the extracted assets that are available in the compressed folder.
 1. Click **[!UICONTROL Next]**.
-1. Select the appropriate behavior to handle file name conflicts during extraction. You can select to create a new version of an existing asset, replace the asset, keep both the assets in the destination folder, or skip the extraction of the new asset.
+1. Select the appropriate behavior to handle file name conflicts during extraction. You can select to create a version of an existing asset, replace the asset, keep both the assets in the destination folder, or skip the extraction of the new asset.
 1. Click **[!UICONTROL Extract]**. Zip extraction process starts. Once the process is complete, you can view the extracted assets in the destination folder.
 
    ![zip extraction](assets/zip-extraction.png)

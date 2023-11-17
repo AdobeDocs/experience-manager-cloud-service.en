@@ -18,7 +18,7 @@ With AEM Forms, you can seamlessly add a form to your AEM Sites page. This allow
 
 You can use AEM Page Editor to quickly create and add multiple forms to your AEM Sites pages. Using AEM Page Editor allows content authors to create seamless data capture experiences within a Sites page using the power of adaptive forms components including dynamic behavior, validations, data integration, generate document of record, and business process automation. It also lets you use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager.
 
-AEM Forms Cloud Service provides Adaptive Form Container and Adaptive Forms – Embed components. You can use Adaptive Form Container to create a new form in an AEM Sites page or Experience Fragment, while Adaptive Forms – Embed component lets you add an existing Adaptive Form or create a new form using Adaptive Forms Editor. 
+AEM Forms Cloud Service provides Adaptive Form Container and Adaptive Forms – Embed components. You can use Adaptive Form Container to create a form in an AEM Sites page or Experience Fragment, while Adaptive Forms – Embed component lets you add an existing Adaptive Form or create a form using Adaptive Forms Editor. 
 
 ![An example of an Adaptive Form in an AEM Sites page](/help/forms/assets/adaptive-form-in-sites-page.png)
 
@@ -181,7 +181,7 @@ To convert an Adaptive Form in AEM Sites page to an Experience Fragment:
     A dialog box to convert the Adaptive Form container to a new Experience Fragment or add to an existing Experience Fragment appears 
 1. On the Convert to Experience Fragment variation dialog box, set values for the following options:
 
-    * **Action:** Select to create a new Experience Fragment or Add to an existing Experience Fragment.
+    * **Action:** Select to create an Experience Fragment or Add to an existing Experience Fragment.
     * **Parent path:** Specify path of the folder to host the Experience Fragment in. The option is available only for creating a new Experience Fragment. 
     * **Template:** Specify path of the Experience Fragment template. If you do not have an Experience Fragment template, [create it](/help/implementing/developing/extending/experience-fragments.md). The option is available only for adding Adaptive Form to an existing Experience Fragment. 
     * **Fragment title:** Specify title of the Experience Fragment. The title uniquely identifies an Experience Fragment 

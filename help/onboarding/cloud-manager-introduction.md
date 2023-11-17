@@ -26,7 +26,7 @@ You can also navigate to Cloud Manager's Programs and Products page from Adobe E
 
 1. Select **Experience Manager**.
 
-1. On the **Cloud Manager** card, click on **Launch**
+1. On the **Cloud Manager** card, click **Launch**
 
 ## Role Based Permissions in Cloud Manager {#role-based-permissions}
 

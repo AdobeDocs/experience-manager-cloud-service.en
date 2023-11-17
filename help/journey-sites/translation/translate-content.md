@@ -54,7 +54,7 @@ For content owners who are also responsible for translation, it is often easier 
    * Note that before the first translation that the other language folders are empty placeholders. These are normally created by the content architect.
 1. Locate the language root of your project.
 1. Tap or click the rail selector and show the **References** panel.
-1. Tap or click on **Language Copies**.
+1. Tap or click **Language Copies**.
 1. Check the **Language Copies** checkbox.
 1. Expand the section **Update Language Copies** at the bottom of the references panel.
 1. In the **Project** dropdown, select **Create Translation Project(s)**.
@@ -138,7 +138,7 @@ When automatically creating the translation project, AEM evaluates the content u
 
 To see the detail of the content included in this project:
 
-1. Tap or click on the ellipsis button at the bottom of the **Translation Job** card.
+1. Tap or click the ellipsis button at the bottom of the **Translation Job** card.
 1. The **Translation Job** window lists all items in the job.
 
    ![Translation Job detail](assets/translation-job-detail.png)
@@ -256,7 +256,7 @@ If you navigate to this folder via **Navigation** -&gt; **Sites**, you see the t
 
 AEM's translation framework receives the translations from the translation connector and then automatically creates the content structure based on the language root and using the translations provided by the connector.
 
-It is important to understand that this content is not published and therefore not available for consumption. We will learn about this author-publish structure and see how to publish our translated content in the next step of the translation journey.
+It is important to understand that this content is not published and therefore not available for consumption. You learn about this author-publish structure and see how to publish our translated content in the next step of the translation journey.
 
 ## Human Translation {#human-translation}
 
@@ -272,7 +272,7 @@ Now that you have completed this part of the AEM Sites translation journey you s
 * Be able to create new translation projects.
 * Use translation projects to translate your content.
 
-Build on this knowledge and continue your AEM Sites translation journey by next reviewing the document [Publish translated content](publish-content.md) where you will learn how to publish your translated content and how to update those translations as your language root content changes.
+Build on this knowledge and continue your AEM Sites translation journey by next reviewing the document [Publish translated content](publish-content.md) where you learn how to publish your translated content and how to update those translations as your language root content changes.
 
 ## Additional Resources {#additional-resources}
 

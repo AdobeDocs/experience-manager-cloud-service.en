@@ -3,12 +3,12 @@ title: '[!DNL Live Search] Popover CIF component'
 description: Using CIF components to enable [!DNL Live Search] Popover component on an AEM site
 ---
 
-# [!DNL Live Search] Popover CIF component
+# [!DNL Live Search] Popover CIF Component {#live-search-popover}
 
 The [!DNL Live Search] Popover is the element that contains the [!DNL Live Search] results as you type in the search field.
 This topic describes how to integrate this component into your AEM site.
 
-## File structure
+## File Structure {#file-strucure}
 
 To enable the CIF component, files must be edited and created.
 

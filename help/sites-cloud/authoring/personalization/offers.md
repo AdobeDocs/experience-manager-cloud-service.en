@@ -31,7 +31,7 @@ A **Convert to experience fragment variation** option, and workflow, has been im
 
 >[!NOTE]
 >
->You can also create a new Experience Fragment yourself, manually transfer the content from your legacy offer to the fragment, then delete the legacy offer.
+>You can also create an Experience Fragment yourself, manually transfer the content from your legacy offer to the fragment, then delete the legacy offer.
 
 >[!CAUTION]
 >
@@ -80,7 +80,7 @@ A **Convert to experience fragment variation** option, and workflow, has been im
 
 1. Confirm with **Done**.
 
-   If you now navigate to the **Experience Fragment Offers** console, you will see your new experience fragment, together with its associated variations.
+   If you now navigate to the **Experience Fragment Offers** console, you can see your new experience fragment, together with its associated variations.
 
 ### Targeting with the Offers Template {#targeting-offers-template}
 

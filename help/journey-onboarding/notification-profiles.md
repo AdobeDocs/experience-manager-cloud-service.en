@@ -32,7 +32,7 @@ Because user profiles are created and maintained in the Admin Console, before cr
 
 ## Create New Cloud Manager Product Profiles {#create-profiles}
 
-To properly set up receipt of notifications you will need to create two user profiles. These steps must only be done once.
+To properly set up receipt of notifications, create two user profiles. These steps are only done one time.
 
 1. Log in to Admin Console at [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
 
@@ -46,7 +46,7 @@ To properly set up receipt of notifications you will need to create two user pro
 
      ![List of instances in the Admin Console](assets/cloud_manager_instance.png)
 
-1. You will see the list of all configured Cloud Manager product profiles.
+1. You can see the list of all configured Cloud Manager product profiles.
 
     ![Product profiles in the Admin Console](assets/cloud_manager_profiles.png)
 
