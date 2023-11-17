@@ -129,7 +129,7 @@ You can do this by creating a series of folders within **Files** section of the 
 
 ![Create Folder option](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-A dialog will open where you can enter the details, then confirm with **Create**:
+A dialog opens where you can enter the details, then confirm with **Create**:
 
 ![Create Folder dialog](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -210,7 +210,7 @@ When the editor first opens you see:
 
 As example, a fragment can:
 
-* Require multiple pieces of information, some with a specific type. For headless content, references are key (you will learn about these later in your journey).
+* Require multiple pieces of information, some with a specific type. For headless content, references are key (you learn about these later in your journey).
 
 * Allow you to write a long section of text. Here there are additional options for managing, and formatting the text. You can even open the individual text fields in a full screen editor (using the small screen-like icon at the right)
   
@@ -234,7 +234,7 @@ OK, this might seem a slightly strange section, but as soon as you open the Cont
 
 * **Content Fragment Models**
 
-  You will see the name of the Content Fragment Model in the right panel of the editor. This is also a link that takes you to the model editor.
+  You can see the name of the Content Fragment Model in the right panel of the editor. This is also a link that takes you to the model editor.
   Content Fragment Models are actually vital to your Content Fragments as they define the structure that you use. However, creating and editing them is (usually) the responsibility of another persona, the Content Architect. 
 
   >[!NOTE]

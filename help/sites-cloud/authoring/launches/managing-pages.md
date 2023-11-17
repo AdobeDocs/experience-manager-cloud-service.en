@@ -39,7 +39,7 @@ You can navigate through the structure of your launch from:
   >
   >You can also select **Launches Console** to access **Manage Content** (and other actions).
   
-All of these entry points will open the launch in the Sites console, where you can:
+All of these entry points opens the launch in the Sites console, where you can:
 
 * Navigate, 
 * **Create** new pages,

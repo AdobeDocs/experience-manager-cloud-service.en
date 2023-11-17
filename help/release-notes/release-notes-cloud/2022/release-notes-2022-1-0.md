@@ -98,7 +98,7 @@ The release date for Cloud Manager in AEM as a Cloud Service 2022.01.0 is 20 Jan
 ### What's New {#what-is-new-cm}
 
 * Cloud Manager will [avoid rebuilding the code base when it detects that the same git commit is used](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) in multiple full-stack pipeline executions.
-* Accessing the AEM environment log now requires the **Deployment Manager** product profile. Users without this profile will see a disabled button in the user interface.
+* Accessing the AEM environment log now requires the **Deployment Manager** product profile. Users without this profile see a disabled button in the user interface.
 *  The UI will not allow front-end pipeline configuration for a program where Sites is not enabled as a solution. 
 * In generating a git password, the expiration date is displayed.
 
@@ -117,7 +117,7 @@ The Release Date for Content Transfer Tool v1.8.6 is February 03, 2022.
 
 ### What's New {#what-is-new-ctt}
 
-* Content Validation - Users have the ability to reliably determine if all of the content that was extracted by the Content Transfer Tool was successfully ingested into the target instance. To use this feature, you will need to enable it in the `System Console` of the source AEM environment. See [Validating Content Transfers - Getting Started](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) for more details.
+* Content Validation - Users have the ability to reliably determine if all of the content that was extracted by the Content Transfer Tool was successfully ingested into the target instance. To use this feature, enable it in the `System Console` of the source AEM environment. See [Validating Content Transfers - Getting Started](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) for more details.
 
 ### Bug Fixes {#bug-fixes-ctt}
 

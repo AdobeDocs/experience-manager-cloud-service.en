@@ -361,7 +361,7 @@ The theme is deployed using the [front-end pipeline.](https://experienceleague.a
 
    After the pipeline setup is complete, the call-to-action card is updated.
 
-1. Right-click on the created pipeline.
+1. Right-click the created pipeline.
 1. Click **[!UICONTROL Run]** .
     
     ![run-a-pipleine](/help/forms/assets/canvas-theme-run-pipeline.png)

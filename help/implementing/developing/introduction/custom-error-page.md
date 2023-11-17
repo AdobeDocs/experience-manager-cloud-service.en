@@ -30,7 +30,7 @@ You can develop your own scripts to customize the pages shown by the error handl
     * from `/libs/sling/servlet/errorhandler/`
     * to `/apps/sling/servlet/errorhandler/`
 
-   The destination path does not exist by default, so you will need to create it when doing this for the first time.
+   The destination path does not exist by default, so you need to create it when doing this for the first time.
 
 1. Navigate to `/apps/sling/servlet/errorhandler`. Here you can either:
 
