@@ -39,7 +39,7 @@ Each rollout configuration uses a rollout trigger that causes the rollout to occ
 
 The following table lists the rollout configurations that are provided out-of-the-box with AEM. The table includes the trigger and synchronization actions of each rollout configuration. 
 
-If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration.](#creating-a-rollout-configuration)
+If the installed rollout configuration actions do not meet your requirements, you can [create a rollout configuration.](#creating-a-rollout-configuration)
 
 |Name|Description|Trigger|[Synchronization Actions](#synchronization-actions)|
 |---|---|---|---|

@@ -90,7 +90,7 @@ Launches allow you to:
 
    ![References of launches in sites console](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. Tap/click on the appropriate launch, the list of possible actions are displayed:
+1. Tap/click the appropriate launch, the list of possible actions are displayed:
 
    ![Actions to take on launches in sites console](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 

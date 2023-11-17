@@ -73,7 +73,7 @@ To share assets through email:
 
 Any user having access to the shared asset link can download the assets bundled in a zip folder. The download process is same, whether a user is accessing the copied asset link, or using the asset link shared through the email. 
 
-* Click on the asset link or paste the URL in your browser. The [!UICONTROL Link Share] interface opens wherein you can switch to the [!UICONTROL Card View] or [!UICONTROL List View]. 
+* Click the asset link or paste the URL in your browser. The [!UICONTROL Link Share] interface opens wherein you can switch to the [!UICONTROL Card View] or [!UICONTROL List View]. 
 
 * In the [!UICONTROL Card View], you can hover the mouse over the shared asset or shared assets folder to either select the assets or queue them for download.
 
@@ -83,11 +83,11 @@ Any user having access to the shared asset link can download the assets bundled 
 
   ![Queue download](assets/queue-download.png)
 
-* While the download file is prepared, click on the **[!UICONTROL Download Inbox]** option to view the status of your download. For large downloads, click on the **[!UICONTROL Refresh]** button to update the status. 
+* While the download file is prepared, click the **[!UICONTROL Download Inbox]** option to view the status of your download. For large downloads, click the **[!UICONTROL Refresh]** button to update the status. 
 
   ![Download inbox](assets/link-sharing-download-inbox.png)
 
-* Once the processing is complete, click on the **[!UICONTROL Download]** button to download the zip file.  
+* Once the processing is complete, click the **[!UICONTROL Download]** button to download the zip file.  
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.

@@ -27,7 +27,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 
 Content Fragments represent your headless content and are based on predefined structures, called Content Fragment models. You already created a model in a previous module.
 
-In this module, you create a new Content Fragment based on that model by using the Content Fragment console. Think of the Content Fragment console as your library of headless content. Use it to create new Content Fragments and manage existing fragments.
+In this module, you create a Content Fragment based on that model by using the Content Fragment console. Think of the Content Fragment console as your library of headless content. Use it to create new Content Fragments and manage existing fragments.
 
 The Content Fragment console is used to create and edit headless content across delivery channels and independent of context, which can be the most effective method in many authoring cases. In a later module we will explore editing headless content in-context and in-place.
 

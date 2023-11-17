@@ -601,7 +601,7 @@ Using page properties, you can define the required client-side libraries by usin
 
 >[!NOTE]
 >
->While the template author can specify the page policy on the template, he or she will need to get details of the appropriate client-side libraries from the developer.
+>While the template author can specify the page policy on the template, they need to get details of the appropriate client-side libraries from the developer.
 
 ### Editing a Template - Initial Page Properties - Author {#editing-a-template-initial-page-properties-author}
 

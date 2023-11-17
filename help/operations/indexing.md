@@ -41,7 +41,7 @@ Index definitions can be categorized into three primary use cases, as follows:
 2. **Update** an existing index definition by adding a new version. 
 3. **Remove** an index definition that is no longer necessary.
 
-For both points 1 and 2 above, you need to create a new index definition as part of your custom code base in the respective Cloud Manager release schedule. For more information, see the [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md) documentation.
+For both points 1 and 2 above, you need to create an index definition as part of your custom code base in the respective Cloud Manager release schedule. For more information, see the [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md) documentation.
 
 ## Index Names {#index-names}
 

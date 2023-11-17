@@ -18,9 +18,9 @@ AEM as a Cloud Service is a fully cloud-native offering that delivers AEM as a s
 
 Your AEM as a Cloud Service team members are added and assigned to one or more of the following product profiles via the Admin Console during onboarding.
 
-* **AEM Administrators**: An AEM administrator is typically assigned to developers, in particular developers who will need to have access to, for example, the development environments. The AEM administrator's product profile is used to grant administrator privileges in the associated AEM instance.
+* **AEM Administrators**: An AEM administrator is typically assigned to developers, in particular developers who need access to, for example, the development environments. The AEM administrator's product profile is used to grant administrator privileges in the associated AEM instance.
 
-* **AEM Users**: AEM users are the users in your organization who use AEM as a Cloud Service generally to create content. These users will need to access AEM to do their tasks. The AEM users product profile is typically assigned to an AEM content author who creates and reviews the content. This content can be of many types such as pages, assets, publications, and so on. The AEM users product profile shown below is assigned to these members.
+* **AEM Users**: AEM users are the users in your organization who use AEM as a Cloud Service generally to create content. These users need to access AEM to do their tasks. The AEM users product profile is typically assigned to an AEM content author who creates and reviews the content. This content can be of many types such as pages, assets, publications, and so on. The AEM users product profile shown below is assigned to these members.
 
 ![Product profiles](/help/onboarding/assets/admin-console-profiles.png)
 
