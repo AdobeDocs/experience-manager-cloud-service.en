@@ -32,7 +32,7 @@ To author content for an app using the Universal Editor, the app must be instrum
 
 ## Sign In {#sign-in}
 
-Once the app is instrumented to work with the Universal Editor, you will need to sign into the Universal Editor. You will need an Adobe ID to sign in and [have access to the Universal Editor.](getting-started.md#request-access)
+After the app is instrumented to work with the Universal Editor, sign into the Universal Editor. You need an Adobe ID to sign in and [have access to the Universal Editor.](getting-started.md#request-access)
 
 After you are signed in, enter the URL of the page you want to edit in the [location bar.](#location-bar) so you can start editing content such as [text content](#text-mode) or [media content.](#media-mode)
 
@@ -140,7 +140,7 @@ Tapping or clicking the emulation icon reveals the options.
 
 ![Emulation options](assets/emulation-options.png)
 
-By default the editor will open in desktop layout where the height and width are automatically defined by the browser.
+By default the editor opens in desktop layout where the height and width are automatically defined by the browser.
 
 You can also chose to emulate a mobile device and within the Universal Editor:
 
@@ -186,7 +186,7 @@ In preview mode, the page rendered in the editor as it would be seen on your pub
 
 #### Components Mode {#component-mode}
 
-In components mode, the content author can click to select components in order to edit them including:
+In components mode, the content author can select components to edit them including:
 
 * [Editing plain text](#editing-content) in place.
 * [Editing rich text](#editing-rich-text) in place with additional formatting options displayed in the properties rail.

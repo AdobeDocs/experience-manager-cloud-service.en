@@ -340,7 +340,7 @@ You can make sure that your web pages are given the appropriate structure by usi
 
 * **Emphasis**: Use the `<strong>` or `<em>` element to indicate emphasis. Do not use headings to highlight text within paragraphs.
   * Highlight the text that you want to emphasize;
-  * Click on the **B** icon (for `<strong>`) or the **I** icon (for `<em>`) shown within the **Properties** panel (make sure that HTML is selected).
+  * Click the **B** icon (for `<strong>`) or the **I** icon (for `<em>`) shown within the **Properties** panel (make sure that HTML is selected).
 
     >[!NOTE]
     >

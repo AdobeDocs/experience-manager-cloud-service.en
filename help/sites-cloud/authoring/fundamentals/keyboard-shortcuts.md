@@ -29,7 +29,7 @@ Various keyboard shortcuts are available throughout AEM. Some apply when editing
 
 >[!NOTE]
 >
->Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. The user must click on the top editor bar or go back to the Edit mode for the shortcut to once again become available.
+>Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. The user must click the top editor bar or go back to the Edit mode for the shortcut to once again become available.
 
 Various keyboard shortcuts are also available for desktop users when using the [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), and some in particular to the [Content Fragments console](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 

@@ -35,9 +35,9 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
    ![select_form](assets/select_form.png)
 
-1. (Optional) In the metadata schema editor, create a new field to conditionalize. Specify a name and property path in the **[!UICONTROL Settings]** tab.
+1. (Optional) In the metadata schema editor, create a field to conditionalize. Specify a name and property path in the **[!UICONTROL Settings]** tab.
 
-   To create a new tab, tap/click `+` to add a tab and then add a metadata field.
+   To create a tab, tap/click `+` to add a tab and then add a metadata field.
 
    ![add_tab](assets/add_tab.png)
 
@@ -61,7 +61,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
    >[!NOTE]
    >
-   >When adding choices, if you click the pop-up field, the interface is distorted and the delete icon for the choices stops working. Do not click on the dropdown till you save the changes. If you face this issue, save the schema and open it again to continue editing.
+   >When adding choices, if you click the pop-up field, the interface is distorted and the delete icon for the choices stops working. Do not click the drop-down until you save the changes. If you face this issue, save the schema and open it again to continue editing.
 
 1. (Optional) Add the other required fields. For example, format, codec, and duration for the asset type video.
 

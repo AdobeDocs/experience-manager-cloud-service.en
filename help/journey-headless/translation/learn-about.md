@@ -51,7 +51,7 @@ In addition to offering robust tools to create, manage, and deliver traditional 
 
 The power of AEM allows it to deliver content either headlessly, full-stack, or in both models at the same time. For the translation specialist, the same set of translation tools can be applied to both types of content, giving you a unified approach for translating your content.
 
-Further in the journey you will learn the details about how AEM translates content, but at a high level, the concept is simple:
+Further in the journey you learn the details about how AEM translates content, but at a high level, the concept is simple:
 
 1. Define a connection to a translation service by configuring the translation integration framework.
 1. Define which content should be translated using translation rules.

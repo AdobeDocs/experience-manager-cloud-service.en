@@ -23,11 +23,11 @@ Follow these steps to add a certificate using Cloud Manager.
 
 1. Navigate to **Environments** screen from the **Overview** page.
 
-1. Click on **SSL Certificates** from the left navigation panel. A table with details of any existing SSL certificates are displayed on the main screen.
+1. Click **SSL Certificates** from the left navigation panel. A table with details of any existing SSL certificates are displayed on the main screen.
 
    ![Adding an SSL cert](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. Click on **Add SSL Certificate** to open **Add SSL Certificate** dialog box.
+1. Click **Add SSL Certificate** to open **Add SSL Certificate** dialog box.
 
    * Enter a name for your certificate in **Certificate Name**.
      * This is for informational purposes only and can be any name that helps you reference your certificate easily.
@@ -41,7 +41,7 @@ Follow these steps to add a certificate using Cloud Manager.
 
 1. Click **Save** to save your certificate.
 
-Once saved, you will see your certificate displayed as a new row in the table.
+Once saved, you see your certificate displayed as a new row in the table.
 
 ![Saved SSL certificate](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 

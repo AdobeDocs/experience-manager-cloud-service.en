@@ -62,9 +62,9 @@ After the connector package for your preferred translation service is installed,
 * Whether human or machine translation is to be performed
 * Whether to translate other content that is associated with the Content Fragment such as tags
 
-To create a new translation configuration:
+To create a translation configuration:
 
-1. In the global navigation menu, click or tap **Tools** -&gt; **Cloud Services** -&gt; **Translation Cloud Services**.
+1. In the global navigation menu, click or tap **Tools** &gt; **Cloud Services** &gt; **Translation Cloud Services**.
 1. Navigate to where you wish to create the configuration in your content structure. This is often based on a particular project or can be global.
    * For example, in this case, a configuration could be made globally to apply to all content, or just for the WKND project.
 
@@ -126,7 +126,7 @@ Now that you have completed this part of the headless translation journey you sh
 * Understand the important parameters of the Translation Integration Framework in AEM.
 * Be able to set up your own connection to your translation service.
 
-Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Translate content,](translation-rules.md) where you will learn how to use your configuration so far to actually translate your content.
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Translate content,](translation-rules.md) where you learn how to use your configuration so far to actually translate your content.
 
 ## Additional Resources {#additional-resources}
 
