@@ -90,7 +90,7 @@ In addition, the tab displays task history for each completed stage in the workf
 
 The Actions toolbar shows all available options for the task. While Save, Reset, and Delegate are default actions, other available actions are configured in the [Assign task step](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem). In the example above, Approve and Reject are configured in the workflow.
 
-As you take action on the task, it proceeds further in the workflow.
+As you act on the task, it proceeds further in the workflow.
 
 ### View completed tasks {#view-completed-tasks}
 

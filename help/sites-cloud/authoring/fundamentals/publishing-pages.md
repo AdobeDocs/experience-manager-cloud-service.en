@@ -218,7 +218,7 @@ In a [manner similar to publishing](#publishing-pages), one or more pages can be
 
 ### Unpublishing from the Editor {#unpublishing-from-the-editor}
 
-When editing a page, if you wish to unpublish that page, select **Unpublish Page** in the **Page Information** menu, much as you would [publish the page](#publishing-from-the-editor).
+When editing a page, if you want to unpublish that page, select **Unpublish Page** in the **Page Information** menu, much as you would [publish the page](#publishing-from-the-editor).
 
 >[!NOTE]
 >
@@ -252,7 +252,7 @@ When you have entered or updated a considerable number of content pages - all of
 
 You can use the [Manage Publication](#manage-publication) option on the sites console to do this.
 
-1. In the sites console, select the root page of the tree you wish to publish or unpublish and select **Manage Publication**.
+1. In the sites console, select the root page of the tree you want to publish or unpublish and select **Manage Publication**.
 1. The **Manage Publication** wizard starts. Choose to publish or unpublish and when it should occur and select **Next** to continue.
 1. In the **Scope** step, select the root page and select **Include Children**.
 

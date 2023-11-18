@@ -27,7 +27,7 @@ exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 
 You start in the Content Fragment editor with the sample app provided with your AEM headless trial already loaded. The sample app is powered by Content Fragments delivered via GraphQL. Use the Content Fragment editor to get familiar with the editor by previewing the sample app.
 
-1. Tap or click the **Preview** button at the top-right of the editor screen.
+1. Select the **Preview** button at the top-right of the editor screen.
 
 1. The demo app opens in a new tab. The app is for the fictional WKND outdoor lifestyle brand. Scroll down the page to navigate the sample content.
 
@@ -39,7 +39,7 @@ You start in the Content Fragment editor with the sample app provided with your 
 
 The Content Fragment editor displays the basic layout of the app as a page Content Fragment. The **Panels** represent different pages of the app, each of which is its own Content Fragment. By modifying these fragments, you can change the content of the app.
 
-1. Tap or click **Mtn Biker in Canyon** in the **Panels** section.
+1. Select **Mtn Biker in Canyon** in the **Panels** section.
 
    ![Select text panel](assets/do-not-localize/edit-header-1.png)
 
@@ -51,7 +51,7 @@ The Content Fragment editor displays the basic layout of the app as a page Conte
 
 1. Change the text from `Your next great adventure is calling` to `Choose your own adventure`. The change is saved automatically by the editor.
 
-1. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab.
+1. Select **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab.
 
    ![Demo app preview](assets/do-not-localize/edit-header-5-6.png)
 
@@ -69,19 +69,19 @@ Now that you modified a headline in the app, try changing an image.
 
 1. Select the **Mtn Biking - Biker** image layer. This opens the Content Fragment editor
 
-1. Tap or click the **X** to remove the biker image. The image disappears and the editor shows an error since the image is required data for this Content Fragment model.
+1. Select the **X** to remove the biker image. The image disappears and the editor shows an error since the image is required data for this Content Fragment model.
 
    ![Remove image from fragment](assets/do-not-localize/swap-image-4.png)
 
-1. Tap or click **Add asset** and then **Browse Assets** in the pop-up menu.
+1. Select **Add asset** and then **Browse Assets** in the pop-up menu.
 
 1. The **Select Asset** dialog opens and the path **sample-wknd-app** &gt; **en** &gt; **image-files** is automatically selected for you.
 
-1. Select the image `biker-yellow.png` and then tap or click **Select**.
+1. Select the image `biker-yellow.png` and then select **Select**.
 
 1. The image of the biker is replaced with the selected image. The editor automatically saves the changes.
 
-1. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab. Click refresh on the browser and you should see your new biker image with yellow shorts in the app.
+1. Select **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab. Click refresh on the browser and you should see your new biker image with yellow shorts in the app.
 
 It's that easy to update images and assets in your apps with AEM headless CMS.
 
@@ -93,13 +93,13 @@ Now that you updated the image of the biker, let's walk through how to add new c
 
 1. Return to the browser tab of the Content Fragment editor from the preview tab.
 
-1. You need to return to the correct place in the Content Fragment editor. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Tap or click **WKND Home** in the breadcrumbs to return to that page.
+1. You need to return to the correct place in the Content Fragment editor. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Select **WKND Home** in the breadcrumbs to return to that page.
 
 1. Select the **Mtn Biker on WKND Yellow** panel.
 
 1. Select the **Mtn Biking - Shoppable** layer.
 
-1. To create a call-out on this panel, create a shoppable moment Content Fragment. Tap or click the **+ Create new fragment** button.
+1. To create a call-out on this panel, create a shoppable moment Content Fragment. Select the **+ Create new fragment** button.
 
    ![Add a shoppable moment](assets/do-not-localize/add-reference-1-5.png)
 
@@ -107,7 +107,7 @@ Now that you updated the image of the biker, let's walk through how to add new c
 
 1. Give the Content Fragment a name. For example, enter `Shorts` into the **Name** field.
 
-1. Tap or click **Create and open**.
+1. Select **Create and open**.
 
    ![Name the shoppable moment](assets/do-not-localize/add-reference-6-7-8.png)
 
@@ -120,7 +120,7 @@ Now that you updated the image of the biker, let's walk through how to add new c
    * **X**: `-5`
    * **Y**: `-10`
 
-1. Tap or click **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab. Click refresh on the browser to test the positioning and make adjustments as needed in the editor.
+1. Select **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab. Click refresh on the browser to test the positioning and make adjustments as needed in the editor.
 
    ![Preview](assets/do-not-localize/add-reference-10-11-12.png)
 

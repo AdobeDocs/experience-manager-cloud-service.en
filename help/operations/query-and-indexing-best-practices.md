@@ -18,7 +18,7 @@ When designing the taxonomy of a repository, several factors need to be taken in
 
 While designing a taxonomy that addresses these concerns, it is also important to consider the "traversability" of the indexing design. In this context, the traversability is the ability of a taxonomy to allow content to be predictably accessed based on its path. This makes for a more efficient system that is easier to maintain than one that requires multiple queries to be executed.
 
-Additionally, when designing a taxonomy, it is important to consider whether ordering is important. In cases where explicit ordering is not required and a large number of sibling nodes are expected, it is preferred to use an unordered node type such as `sling:Folder` or `oak:Unstructured`. In cases where ordering is required, `nt:unstructured` and `sling:OrderedFolder` would be more appropriate.
+Also, when designing a taxonomy, it is important to consider whether ordering is important. In cases where explicit ordering is not required and a large number of sibling nodes are expected, it is preferred to use an unordered node type such as `sling:Folder` or `oak:Unstructured`. In cases where ordering is required, `nt:unstructured` and `sling:OrderedFolder` would be more appropriate.
 
 ### Queries in Components {#queries-in-components}
 
@@ -40,7 +40,7 @@ For example, if the content is stored in a taxonomy similar to:
 
 the `/content/myUnstructuredContent/parentCategory/childCategory` node can simply be retrieved, its children can be parsed and used to render the component.
 
-Additionally, when you are dealing with a small or homogenous result set, it can be faster to traverse the repository and gather the required nodes, rather than crafting a query to return the same result set. As a general consideration, queries should be avoided where it is possible to do so.
+Also, when you are dealing with a small or homogenous result set, it can be faster to traverse the repository and gather the required nodes, rather than crafting a query to return the same result set. As a general consideration, queries should be avoided where it is possible to do so.
 
 ### Prefetching Results {#prefetching-results}
 
@@ -79,7 +79,7 @@ The primary constraint on any query should be a property match, as this is the m
 
 The query engine considers just a single index. That means that an existing index can and should be customized by adding more custom index properties to it.
 
-The [JCR Query cheatsheet](#jcr-query-cheatsheet) section of this document lists the available constraints and also outlines how an index definition needs to look so it picked up. Use the [Query Performance Tool](#query-performance-tool) to test the query and to make sure that the right index is used and that the query engine does not need to evaluate constraints outside of the index. 
+The [JCR Query cheatsheet](#jcr-query-cheatsheet) section of this document lists the available constraints and also outlines how an index definition must look so it picked up. Use the [Query Performance Tool](#query-performance-tool) to test the query and to make sure that the right index is used and that the query engine does not need to evaluate constraints outside of the index. 
 
 ### Ordering {#ordering}
 
@@ -132,7 +132,7 @@ The Explain Query Tool allows developers to understand the Query Execution Plan 
 
 To explain a query, do the following:
 
-* Select the appropriate query language using the `Language` dropdown.
+* Select the appropriate query language using the `Language` drop-down list.
 * Enter the query statement into the `Query` field.
 * If required, select how the query will be executed using the provided checkboxes.
     * By default, JCR queries do not need to be run to identify the Query Execution Plan (this is not the case for QueryBuilder queries).
@@ -233,7 +233,7 @@ This section of the plan states that -
 
 This query execution plan will result in every asset beneath `/content/dam` being read from the index, and then filtered further by the query engine (which will only include those matching the non-indexed property restriction in the result set). 
 
-Even if only a small percentage of assets match the restriction `jcr:content/metadata/myProperty = "My Property Value"`, the query needs to read a large number of nodes to (attempt to) fill the requested 'page' of results. This can result in a poorly performing query, which will be shown as having a low `Read Optimization` score in the Query Performance tool) and can lead to WARN messages indicating that large numbers of nodes are being traversed (see [Index Traversal](#index-traversal)).
+Even if only a small percentage of assets match the restriction `jcr:content/metadata/myProperty = "My Property Value"`, the query must read a large number of nodes to (attempt to) fill the requested 'page' of results. This can result in a poorly performing query, which will be shown as having a low `Read Optimization` score in the Query Performance tool) and can lead to WARN messages indicating that large numbers of nodes are being traversed (see [Index Traversal](#index-traversal)).
 
 To optimize the performance of this second query, create a custom version of the `damAssetLucene-9` index (`damAssetLucene-9-custom-1`) and add the following property definition - 
 
@@ -302,7 +302,8 @@ Queries which use an index, but yet still read large numbers of nodes are logged
 05.10.2023 10:56:10.498 *WARN* [127.0.0.1 [1696502982443] POST /libs/settings/granite/operations/diagnosis/granite_queryperformance.explain.json HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.search.spi.query.FulltextIndex$FulltextPathCursor Index-Traversed 60000 nodes with filter Filter(query=select [jcr:path], [jcr:score], * from [dam:Asset] as a where isdescendantnode(a, '/content/dam') order by [jcr:content/metadata/unindexedProperty] /* xpath: /jcr:root/content/dam//element(*, dam:Asset) order by jcr:content/metadata/unindexedProperty */, path=/content/dam//*)
 ```
 
-This can occur for a number of reasons -
+This can occur for several reasons -
+
 1. Not all the restrictions in the query can be handled at the index. 
    * In this case, a superset of the final result set is being read from the index and subsequently filtered in the query engine.
    * This is many times slower than applying restrictions in the underlying index query.
@@ -310,7 +311,7 @@ This can occur for a number of reasons -
    * In this case, all results returned by the the index must be read by the query Engine and sorted in-memory.
    * This is many times slower than applying sorting in the underlying index query. 
 1. The executor of the query is attempting to iterate a large result set.
-   * This situation might happen for a number of reasons, as listed below:
+   * This situation might happen for several reasons, as listed below:
    
 | Cause    | Mitigation   | 
 |----------|--------------|

@@ -14,7 +14,7 @@ This information is required when:
 * You need to implement your own Content Fragment-based component,
 * And need to make use of the advanced services.
 
-It is recommended to use the Core Components.
+Adobe recommends using the Core Components.
 
 >[!CAUTION]
 >
@@ -41,7 +41,7 @@ If you need one or more of these features, then (typically) it is easier to use 
 
 ## OSGi Service - Content Fragment Component Configuration {#osgi-service-content-fragment-component-configuration}
 
-The configuration needs to be bound to the OSGi service **Content Fragment Component Configuration**:
+The configuration must be bound to the OSGi service **Content Fragment Component Configuration**:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 

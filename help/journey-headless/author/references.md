@@ -52,7 +52,7 @@ For example, you might have the following Content Fragment Models defined:
 * Person
 * Awards
 
-Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
+Seems pretty straightforward, but a Company has both a CEO and Employees....and these are all people, each defined as a Person.
 
 And a Person can have an Award (or maybe two).
 

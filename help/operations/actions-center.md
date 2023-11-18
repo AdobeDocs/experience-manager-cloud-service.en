@@ -1,6 +1,6 @@
 ---
 title: Actions Center
-description: Leverage the Actions Center to conveniently take action on incidents and other important information
+description: Leverage the Actions Center to conveniently act on incidents and other important information
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 ---
 # Actions Center {#actions-center}

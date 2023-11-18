@@ -18,7 +18,7 @@ In this part of the [onboarding journey,](overview.md) you learn how to grant yo
 
 After you have read the previous document in this onboarding journey, [Create Environments,](create-environments.md) and have your cloud resources configured, grant your team access to AEM itself using AEM product profiles. As the system administrator, you do this by assigning AEM product profiles.
 
-After reading this document you should understand:
+After reading this document, you should understand:
 
 * What AEM product profiles are. 
 * How to add team members to AEM User product profile.
@@ -82,7 +82,7 @@ These tasks require you to be a system administrator with the **Business Owner**
 
    ![Mange access](/help/journey-onboarding/assets/add-team1.png)
 
-1. A new tab navigates you to the Admin Console from where you have access to the author instance of the environment. Select **AEM Administrators** or **AEM Users** based on the permissions this individual needs to be given.
+1. A new tab navigates you to the Admin Console from where you have access to the author instance of the environment. Select **AEM Administrators** or **AEM Users** based on the permissions this individual must be given.
 
    ![Assign access](/help/journey-onboarding/assets/add-team2.png)
 

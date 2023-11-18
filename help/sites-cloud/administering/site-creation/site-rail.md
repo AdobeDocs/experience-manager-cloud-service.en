@@ -32,7 +32,7 @@ With the Site rail showing in the sites console, select the root of your site to
 
 ![Download theme sources](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Tap or click **Download Theme Sources** to download a local copy of the site theme as `.zip` file for customization purposes.
+Select **Download Theme Sources** to download a local copy of the site theme as `.zip` file for customization purposes.
 
 ## Downloading Template Resources {#downloading-template-resources}
 
@@ -42,7 +42,7 @@ If your site is based on a site template, with the Site rail showing in the site
 
 ![Download theme sources](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Tap or click the button or buttons below the heading **Download additional template resources** to download a local copy of the available files.
+Select the button or buttons below the heading **Download additional template resources** to download a local copy of the available files.
 
 ## Viewing and Changing Theme Versions {#them-versions}
 
@@ -54,11 +54,11 @@ With the Site rail showing in the sites console, select the root of your site to
 
 The current version of the theme is displayed with its commit hash along with timestamp of its last update.
 
-Tap or click **Select Version** to view previous versions of the theme.
+Select **Select Version** to view previous versions of the theme.
 
 ![Select theme version](/help/sites-cloud/administering/assets/select-theme-versions.png)
 
-Tap or click the version you wish to change to and then tap or click **Apply** to make the change.
+Select the version you want to change to and then select **Apply** to make the change.
 
 If AEM detects that a newer version of the theme has been deployed via the front-end pipeline but not applied to your site, a notification icon will display.
 
@@ -72,7 +72,7 @@ If your site was not created using a site template, it is not possible to use th
 
 However you can enable the front-end pipeline for your site using the Site rail.
 
-With the Site rail showing in the sites console, select the root of your site to reveal theme information about the site and then tap or click **Enable Front End Pipeline**.
+With the Site rail showing in the sites console, select the root of your site to reveal theme information about the site and then select **Enable Front End Pipeline**.
 
 ![Enabling front-end pipeline](/help/sites-cloud/administering/assets/enable-fep.png)
 
