@@ -97,7 +97,7 @@ The following is a high-level recommended end-to-end process for coming up with 
   The `kind` parameter should be set to `CDN` and the version should be set to the schema version, which is currently `1`. See examples further below.
 
 
-   <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+   <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
 1. If WAF rules are licensed, you should enable the feature in Cloud Manager, as described below for both the new and existing program scenarios.
 
@@ -114,7 +114,7 @@ For RDEs, the command line will be used, but RDE is not supported at this time.
 
 **Notes**
 
-* You can use `yq` to validate locally the YAML formatting of your configuration file (eg. `yq cdn.yaml`).
+* You can use `yq` to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
 
 ## Traffic Filter Rules Syntax {#rules-syntax}
 
@@ -484,7 +484,7 @@ The rules behave in the following manner:
 
 * The customer-declared rule name of any matching rules will be listed in the `match` attribute.
 * The `action` attribute determines whether the rules had the effect of blocking, allowing, or logging.
-* If the WAF is licensed and enabled, the `waf` attribute will list any WAF flags (e.g., SQLI) that were detected, regardless of whether the WAF flags were listed in any rules. This is to provide insight into potential new rules to declare.
+* If the WAF is licensed and enabled, the `waf` attribute will list any WAF flags (for example, SQLI) that were detected, regardless of whether the WAF flags were listed in any rules. This is to provide insight into potential new rules to declare.
 * If no customer-declared rules match and no waf rules match, the `rules` property will be blank.
 
 As noted earlier, WAF rule matches only appear in CDN logs for CDN misses and passes, not hits.

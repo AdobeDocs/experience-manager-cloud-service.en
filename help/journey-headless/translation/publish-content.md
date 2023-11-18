@@ -149,7 +149,7 @@ Congratulations! You have completed the headless translation journey! You should
 * Have an overview of what headless content delivery is.
 * Have a basic Understanding AEM's headless features.
 * Understand AEM's translation features and how they related to headless content.
-* Have the ability to start translating your own headless content.
+* Be able to start translating your own headless content.
 
 You are now ready to translate your own headless content in AEM. However AEM is a powerful tool and there are many additional options available. Check out some of the additional resources available in the [Additional Resources section](#additional-resources) to learn more about the features you saw in this journey.
 

@@ -29,7 +29,7 @@ Content authors will create any number of Content Fragments to represent the con
    * The models available depend on the [**Cloud Configuration** you defined for the assets folder](create-assets-folder.md) in which you are creating the Content Fragment.
    * If your model is not available, check the configuration of your assets folder.
 
-   Add the Title, Name, and if required, Description.
+   Add the Title, Name, and if necessary, Description.
 
    ![Create New Content Fragment dialog](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 

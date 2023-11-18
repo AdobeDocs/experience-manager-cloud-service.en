@@ -41,7 +41,7 @@ When creating an editable template you:
 
    >[!NOTE]
    >
-   >A selection of template types are provided out-of-the-box. You can also [create your own site-specific template types](#creating-template-types) if required.
+   >A selection of template types are provided out-of-the-box. You can also [create your own site-specific template types](#creating-template-types) if necessary.
 
 1. Configure the structure, content policies, initial content, and layout of the new template.
 
@@ -443,7 +443,7 @@ Defines the initial content that a new page will have upon creation:
 * Is merged with the structure ( `/structure`) when creating a page.
 * Any existing pages will not be updated if the initial content is changed after creation.
 * The `root` node holds a list of components to define what is available in the resulting page.
-* If content is added to a component in structure mode and that component is subsequently unlocked (or vice versa), then this content is used as initial content.
+* If content is added to a component in structure mode and that component is subsequently unlocked (or conversely), then this content is used as initial content.
 
 ### Layout {#layout}
 

@@ -26,7 +26,7 @@ Follow these steps to create a production program.
 
 1. Optionally, you can add an image to the program by dragging and dropping an image file to the **Add a program image** target or clicking it to select an image from a file browser. Select **Continue**.
 
-1. If you have the necessary entitlements, the **Security** tab will be shown and provide the option to activate **HIPAA** and/or **WAF-DDOS Protection** for your production program. If required for the program you are creating, check the applicable option(s) and then select **Continue**.
+1. If you have the necessary entitlements, the **Security** tab will be shown and provide the option to activate **HIPAA** and/or **WAF-DDOS Protection** for your production program. If necessary for the program you are creating, check the applicable option(s) and then select **Continue**.
 
    * HIPAA can not be enabled or disabled after program creation.
       * [Learn more](https://www.adobe.com/go/hipaa-ready) about Adobe's HIPAA ready solution implementation.

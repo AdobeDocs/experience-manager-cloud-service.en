@@ -579,7 +579,7 @@ To simulate the visitor's experience, use the following tools:
 
    The page changes to show the content that is targeted for the current context.
 
-1. To make changes to the offers that are displayed, switch to Targeting mode. With the simulation activity selected, edit the offers for the context that you configured in Preview mode.
+1. To change the offers that are displayed, switch to Targeting mode. With the simulation activity selected, edit the offers for the context that you configured in Preview mode.
 
 ## Configuring Target Component Options {#configuring-target-component-options}
 

@@ -36,7 +36,7 @@ To support larger customer data volumes, Adobe no longer creates the generic Luc
 
 Adobe has already adjusted the index costings via the `costPerEntry` and `costPerExecution` properties to ensure that other indexes such as `/oak:index/pathreference` are used in preference wherever possible. 
 
-Customer applications which use queries which still depend on this index should be updated immediately to use other existing indexes, which can be customized if required. Alternatively new custom indexes can be added to the customer application. Full instructions for index management in AEM as a Cloud Service can be found in the [indexing documentation](/help/operations/indexing.md).
+Customer applications which use queries which still depend on this index should be updated immediately to use other existing indexes, which can be customized if necessary. Alternatively new custom indexes can be added to the customer application. Full instructions for index management in AEM as a Cloud Service can be found in the [indexing documentation](/help/operations/indexing.md).
 
 ## Are You Affected? {#are-you-affected}
 
@@ -123,7 +123,7 @@ Historically the generic Lucene index has been used to support reference search 
 
 #### Path Field Picker Search {#picker-search}
 
-AEM includes a custom dialog component with the Sling resource type `granite/ui/components/coral/foundation/form/pathfield`, which provides a browser/picker for selecting another AEM path. The default path field picker, which is used when no custom `pickerSrc` property is defined in the content structure, renders a search bar in the popup dialog box.
+AEM includes a custom dialog component with the Sling resource type `granite/ui/components/coral/foundation/form/pathfield`, which provides a browser/picker for selecting another AEM path. The default path field picker, which is used when no custom `pickerSrc` property is defined in the content structure, renders a search bar in the pop-up dialog box.
 
 The node types against which to search can be specified using the `nodeTypes` property.
 

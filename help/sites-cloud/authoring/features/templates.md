@@ -67,7 +67,7 @@ When creating an editable template you:
   * Or directly at: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Can [create a folder for the templates](#creating-a-template-folder-admin) if necessary
 * [Create a new template](#creating-a-new-template-template-author), which will initially be empty
-* [Define additional properties](#defining-template-properties-template-author) for the template if required
+* [Define additional properties](#defining-template-properties-template-author) for the template if necessary
 * [Edit the template](#editing-templates-template-authors) to define the:
   * [Structure](#editing-a-template-structure-template-author) - Predefined content that cannot be changed on pages created with the template.
   * [Initial Content](#editing-a-template-initial-content-author) - Predefined content that can be changed on pages created with the template.
@@ -345,8 +345,8 @@ This lets you define the design details.
 
 The configuration window is divided in two.
 
-* In the left side of the dialogue under **Policy**, you have the ability to select an existing policy or select an existing one.
-* In the right side of the dialogue under **Properties**, you can set the properties specific to the component type.
+* In the left side of the dialog under **Policy**, you can select an existing policy or select an existing one.
+* In the right side of the dialog under **Properties**, you can set the properties specific to the component type.
 
 The properties available are dependent on the selected component. For example, for a text component the properties define the copy and paste options, formatting options, and paragraph style amongst other options.
 

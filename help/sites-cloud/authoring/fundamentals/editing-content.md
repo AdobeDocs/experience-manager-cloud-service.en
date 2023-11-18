@@ -167,7 +167,7 @@ To create a component by dragging one of the above asset types:
 
    A component, appropriate for the asset type, is created at the required location - it contains the selected asset.
 
-1. [Edit](#edit-content) the component if required.
+1. [Edit](#edit-content) the component if necessary.
 
 >[!NOTE]
 >

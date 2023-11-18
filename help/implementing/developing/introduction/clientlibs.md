@@ -23,7 +23,7 @@ Clientlibs are the built-in solution for delivering CSS and JavaScript from AEM.
 
 ## What Are Client-Side Libraries {#what-are-clientlibs}
 
-Sites require JavaScript and CSS and static resources such as icons and web fonts to be processed client-side. A clientlib is AEM's mechanism to reference (by category if required) and serving such resources.
+Sites require JavaScript and CSS and static resources such as icons and web fonts to be processed client-side. A clientlib is AEM's mechanism to reference (by category if necessary) and serving such resources.
 
 AEM collects the site's CSS and JavaScript into a single file, in a central location, to ensure that only one copy of any resource is included in the HTML output. This maximizes the efficiency of delivery and allows such resources to be maintained centrally in the repository via proxy, keeping access secure.
 

@@ -204,7 +204,7 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-The central idea of SPAs in AEM is the idea of mapping SPA components to AEM components and updating the component when the content is modified (and vice versa). See the document [SPA Editor Overview](editor-overview.md) for a summary of this communication model.
+The central idea of SPAs in AEM is the idea of mapping SPA components to AEM components and updating the component when the content is modified (and conversely). See the document [SPA Editor Overview](editor-overview.md) for a summary of this communication model.
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 

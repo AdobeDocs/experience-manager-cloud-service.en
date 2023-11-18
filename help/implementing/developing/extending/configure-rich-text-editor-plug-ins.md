@@ -396,7 +396,7 @@ You can configure the RTE to make your selection of characters available; either
 
 >[!CAUTION]
 >
->Adding your special characters overrides the default selection. If required, redefine these characters in your selection.
+>Adding your special characters overrides the default selection. If necessary, redefine these characters in your selection.
 
 ### Define a single character {#definesinglechar}
 
@@ -564,7 +564,7 @@ A standard Experience Manager installation includes the dictionaries for:
 >
 >The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, along with the appropriate ReadMe files. Do not modify the files.
 
-To add more dictionaries, if required, follow these steps.
+To add more dictionaries, if necessary, follow these steps.
 
 1. Navigate to the page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 1. Select the required language and download the ZIP file with the spelling definitions. Extract the contents of the archive on your file system.
