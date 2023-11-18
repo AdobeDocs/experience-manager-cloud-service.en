@@ -40,16 +40,16 @@ UI modules can display data from one or more ContextHub stores in the toolbar. U
 
 ### Popup Content {#popup-content}
 
-Some UI modules display a popup overlay when clicked or tapped. Typically, the popup contains additional information than what appears on the toolbar.
+Some UI modules display a pop-up overlay when clicked or tapped. Typically, the pop-up contains additional information than what appears on the toolbar.
 
 ![ContextHub profile information](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
 ### Popup Forms {#popup-forms}
 
-The popup overlay of a module can include form elements that enable you to change the data in the ContextHub store. If page content is determined by the store data, you can use the form and observe changes to page content.
+The pop-up overlay of a module can include form elements that enable you to change the data in the ContextHub store. If page content is determined by the store data, you can use the form and observe changes to page content.
 
 ### Fullscreen Mode {#fullscreen-mode}
 
-Popup overlays can include an icon that you select to expand the popup content to cover the entire browser window or screen.
+Popup overlays can include an icon that you select to expand the pop-up content to cover the entire browser window or screen.
 
 ![Fullscreen button](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)

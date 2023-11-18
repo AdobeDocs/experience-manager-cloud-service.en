@@ -53,7 +53,7 @@ Your component is rendered with [HTML](https://www.w3schools.com/htmL/html_intro
 
 It is recommended to keep the code responsible for markup and rendering separate from the code that controls the logic used to select the component's content.
 
-This philosophy is supported by [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), a templating language that is purposely limited to ensure a real programming language is used to define the underlying business logic. This mechanism highlights the code that is called for a given view and, if required, allows specific logic for different views of the same component.
+This philosophy is supported by [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), a templating language that is purposely limited to ensure a real programming language is used to define the underlying business logic. This mechanism highlights the code that is called for a given view and, if necessary, allows specific logic for different views of the same component.
 
 This (optional) logic can be implemented in different ways and is invoked from HTL with specific commands:
 

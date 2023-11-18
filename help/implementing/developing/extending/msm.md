@@ -560,7 +560,7 @@ AEM uses a default set of language and country codes.
 * The default language code is the lower-case, two-letter code as defined by ISO-639-1.
 * The default country code is the lower-case or upper-case, two-letter code as defined by ISO 3166.
 
-MSM uses a stored list of language and country codes to determine the name of the country that is associated with the name of the language version of your page. You can change the following aspects of the list if required:
+MSM uses a stored list of language and country codes to determine the name of the country that is associated with the name of the language version of your page. You can change the following aspects of the list if necessary:
 
 * Language titles
 * Country names
@@ -601,11 +601,11 @@ For example, if two new page properties are being added:
 
 * Contact Email:
 
-  * This property is not required to be rolled out, as it will be different in each country (or brand, etc).
+  * This property is not required to be rolled out, as it will be different in each country (or brand, and so on).
 
 * Key Visual Style:
 
-  * The project requirement is that this property is to be rolled out as it is (usually) common to all countries (or brands, etc).
+  * The project requirement is that this property is to be rolled out as it is (usually) common to all countries (or brands, and so on).
 
 Then you need to ensure that:
 

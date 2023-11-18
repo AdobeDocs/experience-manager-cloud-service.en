@@ -18,7 +18,7 @@ This guide leads you through the most important headless translation topics so t
 * Have an overview of what headless content delivery is.
 * Have a basic understanding AEM's headless features.
 * Understand AEM's translation features and how they related to headless content.
-* Have the ability to start translating your own headless content.
+* Can start translating your own headless content.
 
 The goal is to give you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it. If you are not familiar with any of these topics, this is your ideal place to start.
 

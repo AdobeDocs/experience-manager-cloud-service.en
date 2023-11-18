@@ -176,7 +176,7 @@ The AEM SPA Editor SDK is fully supported by Adobe and it continues to be enhanc
 * Target mode
 * ContextHub
 * Inline image editing
-* Edit configs (eg. listeners)
+* Edit configs (for example, listeners)
 * Undo / Redo
 * Page diff and Time Warp
 * Features performing HTML rewriting server-side such as Link Checker, CDN rewriter service, URL shortening and so on.

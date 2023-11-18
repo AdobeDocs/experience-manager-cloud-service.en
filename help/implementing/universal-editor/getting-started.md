@@ -163,7 +163,7 @@ itemid="urn:<referenceName>:<resource>"
 
 ### Configuration Settings {#configuration-settings}
 
-You can use the `config` prefix in your connection URN to set service and extension endpoints if required.
+You can use the `config` prefix in your connection URN to set service and extension endpoints if necessary.
 
 If you would like not to use the Universal Editor Service, which is hosted by Adobe, but your own hosted version, you can set this in a meta tag. To overwrite the default service endpoint that the Universal Editor provides, set your own service endpoint:
 

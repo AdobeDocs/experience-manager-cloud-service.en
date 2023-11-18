@@ -39,7 +39,7 @@ When defining your hide expression keep in mind:
 
 * To be valid, the scope in which property is found should be expressed (for example, `cqDesign.myProperty`).
 * Values are read only.
-* Functions (if required) should be limited to a given set provided by the service.
+* Functions (if necessary) should be limited to a given set provided by the service.
 
 ## Example {#example}
 

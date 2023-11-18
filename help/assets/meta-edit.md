@@ -10,7 +10,7 @@ exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
 
 Metadata is additional information about the asset that can be searched. It is automatically extracted when you upload an image. You can edit the existing metadata or add new metadata properties to existing fields (for example, when a metadata field is blank).
 
-Because companies need controlled and reliable metadata vocabularies, [!DNL Experience Manager Assets] does not allow for ad hoc adding of new metadata properties. Although authors cannot add new metadata fields for assets, developers can. See [Creating New Metadata Property for Assets](meta-edit.md#editing-metadata-schema).
+Because companies need controlled and reliable metadata vocabularies, [!DNL Experience Manager Assets] does not allow for on demand adding of new metadata properties. Although authors cannot add new metadata fields for assets, developers can. See [Creating New Metadata Property for Assets](meta-edit.md#editing-metadata-schema).
 
 ## Editing metadata for an asset {#editing-metadata-for-an-asset}
 

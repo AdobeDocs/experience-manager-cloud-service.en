@@ -164,7 +164,7 @@ The source of the UI module is located at `/libs/granite/contexthub/components/m
 
 ### Configuration {#configuration-5}
 
-Instances of the `contexthub.screen-orientation` UI module do not require a value for the Detail Configuration. The following JSON text represents the default configuration of the module. The `clickable` property is `false` by default. If you override the default configuration to set `clickable` to `true`, clicking the module reveals a popup where you can select the orientation.
+Instances of the `contexthub.screen-orientation` UI module do not require a value for the Detail Configuration. The following JSON text represents the default configuration of the module. The `clickable` property is `false` by default. If you override the default configuration to set `clickable` to `true`, clicking the module reveals a pop-up where you can select the orientation.
 
 ```javascript
 {
@@ -180,7 +180,7 @@ Instances of the `contexthub.screen-orientation` UI module do not require a valu
 
 ## contexthub.tagcloud UI Module Type {#contexthub-tagcloud-ui-module-type}
 
-The `contexthub.tagcloud` UI module displays information about tags. On the toolbar the UI module shows the number of tags. The popup reveals a tagcloud and a texbox for adding new tags. The UI module obtains information from a ContextHub store named tagcloud that is based on the `contexthub.tagcloud` store candidate.
+The `contexthub.tagcloud` UI module displays information about tags. On the toolbar the UI module shows the number of tags. The pop-up reveals a tagcloud and a texbox for adding new tags. The UI module obtains information from a ContextHub store named tagcloud that is based on the `contexthub.tagcloud` store candidate.
 
 ![contexthub.tagcloud module](assets/tagcloud-module.png)
 
@@ -204,7 +204,7 @@ Instances of the `contexthub.tagcloud` UI module do not require a value for the 
 
 ## granite.profile UI Module Type {#granite-profile-ui-module-type}
 
-The `granite.profile` ContextHub UI module displays the display name of the current user. The popup reveals the login name of the user and enables you to change the value of the display name. The UI module obtains information from a ContextHub store named profile that is based on the [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) store candidate.
+The `granite.profile` ContextHub UI module displays the display name of the current user. The pop-up reveals the login name of the user and enables you to change the value of the display name. The UI module obtains information from a ContextHub store named profile that is based on the [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) store candidate.
 
 ![granite.profile module](assets/profile-module.png)
 

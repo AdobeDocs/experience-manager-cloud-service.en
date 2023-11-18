@@ -183,7 +183,7 @@ Clicking on the component will highlight the component in the page editor. The a
 
   The components of a basic page will have the usual options.
   
-  If the component you click in the tree is editable a wrench icon will appear to the right of the name. Clicking on this icon will directly start the edit dialogue for the component.
+  If the component you click in the tree is editable a wrench icon will appear to the right of the name. Clicking on this icon starts the edit dialog box for the component.
 
   ![Content Tree edit button](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
@@ -282,7 +282,7 @@ You can access these using the icons in the top right corner. The actual icon wi
 >* Depending on the characteristics of the page, some modes my not be available.
 >* Access to some modes require the appropriate permissions/privileges.
 >* Developer mode is not available on mobile devices due to space restrictions.
->* There is a [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) to toggle between **Preview** and the currently selected mode (for example, **Edit**, **Layout**, etc).
+>* There is a [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) to toggle between **Preview** and the currently selected mode (for example, **Edit**, **Layout**, and so on).
 >
 
 ## Path Selection {#path-selection}
@@ -309,10 +309,10 @@ The path browser is organized like the [column view](/help/sites-cloud/authoring
 
 ![Path Browser](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Once a resource is selected, the **Select** button at the upper-right of the dialogue becomes active. Select to confirm the selection or **Cancel** to abort.
+* Once a resource is selected, the **Select** button at the upper-right of the dialog box becomes active. Select to confirm the selection or **Cancel** to abort.
 * If the context allows for the selection of multiple resources, selecting a resource also activates the **Select** button, but also adds a count of the number of selected resources to the upper-right of the window. Click the **X** next to the number to deselect all.
 * When you navigate through the tree, your location is reflected in the breadcrumbs at the top of the dialog. These breadcrumbs can also be used to quickly jump within the resource hierarchy.
-* At any time you can use the search field at the top of the dialogue. Click the **X** in the search field to clear the search.
+* At any time you can use the search field at the top of the dialog box. Click the **X** in the search field to clear the search.
 * To narrow your search, you can reveal the filter options and filter your results based on a certain path.
 
   ![Filters option](/help/sites-cloud/authoring/assets/filters-option.png)
