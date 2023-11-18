@@ -15,7 +15,7 @@ The release date for the latest version 1.9.15 of [!DNL Workfront for Experience
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fixes:
 
-* While viewing the list of AEM folders, dialog takes more than a minute to load.
+* While viewing the list of AEM folders, the dialog takes more than a minute to load.
 * Authorized [!DNL Workfront] users are consistently receiving authentication failure error logs.
 
 >[!NOTE]
