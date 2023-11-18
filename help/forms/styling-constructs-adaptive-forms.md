@@ -271,7 +271,7 @@ Depending on their type, widgets also include classes. Commonly, widgets include
   </tr>
   <tr>
    <td><p><code>listboxwidget-height</code></p> </td>
-   <td><p>Maximum height for a multi-select dropdown</p> </td>
+   <td><p>Maximum height for a multi-select drop-down list</p> </td>
   </tr>
  </tbody>
 </table>
@@ -681,7 +681,7 @@ Tab navigator on top:
 
 `}`
 
-Additionally, there are classes to style tab navigators (both left and top) based on whether they have nested/child/sub navigators.
+Also, there are classes to style tab navigators (both left and top) based on whether they have nested/child/sub navigators.
 
 <table>
  <tbody>

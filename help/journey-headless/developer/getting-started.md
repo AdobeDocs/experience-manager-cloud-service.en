@@ -117,7 +117,7 @@ Using the SPA Editor, the SPA not only consumes content from AEM, but is also fu
 
 ## Requirements and Prerequisites {#requirements-prerequisites}
 
-There are a number of requirements before you begin your headless AEM project.
+There are several requirements before you begin your headless AEM project.
 
 ### Knowledge {#knowledge}
 

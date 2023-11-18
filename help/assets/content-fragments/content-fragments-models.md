@@ -82,7 +82,7 @@ The content fragment model effectively defines the structure of the resulting co
 
 1. **To Remove a Field**
 
-   Select the required field, then click/tap the trash-can icon. You are asked to confirm the action.
+   Select the required field, then select the trash-can icon. You are asked to confirm the action.
 
    ![remove](assets/cfm-models-06.png)
 
@@ -107,7 +107,7 @@ A selection of data types is available for defining your model:
 * **Date and time**
   * Add a date and/or time
 * **Enumeration**
-  * Add a set of checkbox, radio button(s), or dropdown fields
+  * Add a set of checkbox, radio buttons, or drop-down list fields
 * **Tags**
   * Allows fragment authors to access and select areas of tags
 * **Content Reference**
@@ -325,9 +325,9 @@ For full control over the use of your Content Fragment Models they have a status
 
 ### Enabling a Content Fragment Model {#enabling-a-content-fragment-model}
 
-Once a model has been created it needs to be enabled so that it:
+When a model is created it must be enabled so that it:
 
-* Is available for selection when creating a new Content Fragment.
+* Is available for selection when creating a Content Fragment.
 * Can be referenced from within a Content Fragment Model.
 * Is available to GraphQL; so the schema is generated.
 

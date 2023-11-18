@@ -227,7 +227,7 @@ Then, specify the location(s) of the style sheet(s) you want to reference:
 
     * **Name** `externalStyleSheets`
     * **Type** `String[]` (multi-string; click **Multi** in CRXDE)
-    * **Value(s)** The path and filename of every style sheet you want to include. Use repository paths.
+    * **Values** The path and filename of every style sheet you want to include. Use repository paths.
 
    >[!NOTE]
    >
@@ -370,7 +370,7 @@ Paragraph formats are made available for selection by:
 
     * **Name** `tag`
     * **Type** `String`
-    * **Value** The block tag for the format; for example: p, h1, h2, etc.
+    * **Value** The block tag for the format; for example: p, h1, h2, and so on.
 
       You do not need to enter the delimiting angle-brackets.
 
@@ -580,9 +580,9 @@ To add more dictionaries, if required, follow these steps.
 >
 >The RTE spell checker is available on-demand. It does not run automatically as you start typing text.
 >
->To run the spell checker, tap/click the Spellchecker button from the toolbar. RTE checks the spelling of words and highlights mis-spelled words.
+>To run the spell checker, select the Spellchecker button from the toolbar. RTE checks the spelling of words and highlights mis-spelled words.
 >
->If you incorporate any change that the spell checker suggests, the state of the text changes and mis-spelled words are no longer highlighted. To run the spell checker, tap/click Spellchecker button again.
+>If you incorporate any change that the spell checker suggests, the state of the text changes and mis-spelled words are no longer highlighted. To run the spell checker, select Spellchecker button again.
 
 ## Configure the history size for undo and redo actions {#undohistory}
 

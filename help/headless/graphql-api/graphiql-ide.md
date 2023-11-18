@@ -76,7 +76,7 @@ You can run a new query immediately, or you can load and run a persisted query. 
 
 In either case, the query showing in the editor panel is the query that is run when you either:
 
-* click/tap on the **Execute Query** icon
+* select on the **Execute Query** icon
 * use the keyboard combination `Control-Enter`
 
 ## Query variables {#query-variables}
@@ -93,7 +93,7 @@ For example:
 
 >[!NOTE]
 >
->For further details see [Caching your persisted queries](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>See [Caching your persisted queries](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >

@@ -40,4 +40,4 @@ dig TXT _aemverification.example.com -t txt
 
 >[!TIP]
 >
->There are a number of [DNS lookup tools](https://www.ultratools.com/tools/dnsLookup) available. Google DoH can be used to lookup TXT record entries and identify if the TXT record is missing or erroneous.
+>There are several [DNS lookup tools](https://www.ultratools.com/tools/dnsLookup) available. Google DoH can be used to lookup TXT record entries and identify if the TXT record is missing or erroneous.

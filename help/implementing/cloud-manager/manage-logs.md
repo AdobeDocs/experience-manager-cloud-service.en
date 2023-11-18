@@ -30,7 +30,7 @@ To download logs, do the following:
 
    ![Download Logs for additional publish regions](assets/download-publish-region-logs.png)
 
-1. Once you select your service, click the download icon next to the log you wish to retrieve.
+1. Once you select your service, click the download icon next to the log you want to retrieve.
 
 You can also access your logs from the **Environments** page.
 

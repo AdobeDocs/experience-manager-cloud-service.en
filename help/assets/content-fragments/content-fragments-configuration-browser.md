@@ -32,7 +32,7 @@ To use certain [Content Fragment functionality](#creating-a-content-fragment-mod
 
 >[!NOTE]
 >
->For further details, see [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>See [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >

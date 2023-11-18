@@ -27,7 +27,7 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 
 ## Understanding Cloud Service Content Requests {#about-content-request}
 
-Content requests are automatically tracked at the edge of Adobe Experience Manager (AEM) as a Cloud Service, via automated analysis of the log files originating from the AEM as a Cloud Service CDN, isolating the requests returning HTML (text/html) or JSON (application/json) content from the CDN, and based on a number of inclusion and exclusion rules detailed below. A content request happens independently from the returned content being served from the CDN caches or going back to the origin of the CDN (AEM's dispatchers).
+Content requests are automatically tracked at the edge of Adobe Experience Manager (AEM) as a Cloud Service, via automated analysis of the log files originating from the AEM as a Cloud Service CDN, isolating the requests returning HTML (text/html) or JSON (application/json) content from the CDN, and based on several inclusion and exclusion rules detailed below. A content request happens independently from the returned content being served from the CDN caches or going back to the origin of the CDN (AEM's dispatchers).
 
 For customers that bring their own CDN on top of AEM as a Cloud Service, this tracking will result in numbers that cannot be used to compare with the licensed content requests, that will have to be measured by the customer at the edge of the outer CDN.
 

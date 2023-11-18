@@ -529,7 +529,7 @@ In this example, the input data is validated based on maximum, minimum, and requ
    {
    name: "orderId",
    in: "path",
-   description: "ID of pet that needs to be fetched",
+   description: "ID of pet that must be fetched",
    required: true,
    type: "integer",
    maximum: 10,

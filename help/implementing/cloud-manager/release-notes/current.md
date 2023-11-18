@@ -38,13 +38,13 @@ Be a part of our early adoption program and have a chance to test some upcoming 
 
 If you use GitHub to manage your repositories, [you can now validate code directly within your GitHub repositories through Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) This integration eliminates the need to consistently sync code with the Adobe repository and allows you to verify pull requests before merging them into the main branches.
 
-If you are interested in testing this new feature and sharing your feedback, please send an email to `Grp-CloudManager_BYOG@adobe.com` from your email address associated with your Adobe ID.
+If you are interested in testing this new feature and sharing your feedback, send an email to `Grp-CloudManager_BYOG@adobe.com` from your email address associated with your Adobe ID.
 
 ### Custom Permissions {#custom-permissions}
 
 [Cloud Manager custom permissions](/help/implementing/cloud-manager/custom-permissions.md) allows you to create new custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.
 
-if you are interested in testing this new feature and sharing your feedback, please send and email `Grp-CloudManager-custom-permissions@adobe.com` from your email address associated with your Adobe ID.
+if you are interested in testing this new feature and sharing your feedback, send an email to `Grp-CloudManager-custom-permissions@adobe.com` from your email address associated with your Adobe ID.
 
 ### Self-Service Content Restore {#content-restore}
 
@@ -53,7 +53,7 @@ if you are interested in testing this new feature and sharing your feedback, ple
 * Point-in-time backup restoration for the previous 24 hours
 * Fixed time restorations for up to seven days
 
-If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-restorefrombackup-adopter@adobe.com` from your email associated with your Adobe ID. Please note:
+If you are interested in testing this new feature and sharing your feedback, send an email to `aemcs-restorefrombackup-adopter@adobe.com` from your email associated with your Adobe ID.
 
 * The early adopter program is limited to development environments only.
 * Availability of the early adopter program of this feature is limited.
@@ -65,7 +65,7 @@ If you are interested in testing this new feature and sharing your feedback, ple
 
 The dashboard leverages Google Lighthouse, an open-source, automated tool for improving the quality of your web apps. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more.
 
-Interested in test-driving the new dashboard? Please send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID and we can get you started.
+Interested in test-driving the new dashboard? Send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID and we can get you started.
 
 ## Known Issues {#known-issues}
 

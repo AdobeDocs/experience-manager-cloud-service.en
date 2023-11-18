@@ -77,7 +77,7 @@ Now imagine the Creative Director looks at the images and says,
 
 _"I really wanted this shot so that the large hand is pointing at the four, and the small hand is pointing at the 1 to make the watch dial easier to see."_
 
-The creative would have to reshoot all of these new static images again.
+The creative would have to reshoot all new static images again.
 
 But, with Dynamic Media, if you have different image presets, you can use those images wherever you need them. The image presets enforce standards.
 

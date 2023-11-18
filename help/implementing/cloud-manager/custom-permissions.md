@@ -46,11 +46,11 @@ You first must create a product profile before to which you can assign custom pe
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)
 
-1. On the Cloud Manager landing page, tap or click the **Manage Access** button 
+1. On the Cloud Manager landing page, select the **Manage Access** button 
 
   ![Manage Access button](assets/manage-access.png)
 
-1. You are redirected to the **Products** tab of the Admin Console, where you can manage users and permissions for cloud manager. In the Admin Console, tap or click the **New Profile** button.
+1. You are redirected to the **Products** tab of the Admin Console, where you can manage users and permissions for cloud manager. In the Admin Console, select the **New Profile** button.
 
   ![New Profile button](assets/admin-console-new-profile.png)
 
@@ -61,7 +61,7 @@ You first must create a product profile before to which you can assign custom pe
    * **Description** - An informative description of the profile explaining its purpose (optional)
    * **Notify users by email** - When selected, users will be notified by email when they are added or removed from this profile. 
 
-1. Tap or click **Save** when complete.
+1. Select **Save** when complete.
 
 The new product profile is saved and is visible in the list of product profiles in the Admin Console.
 
@@ -69,13 +69,13 @@ The new product profile is saved and is visible in the list of product profiles 
 
 Now that you have a new product profile, you can assign custom permissions to it.
 
-1. In the Admin Console, tap or click the name of the [new product profile you just created.](#create)
+1. In the Admin Console, select the name of the [new product profile you just created.](#create)
 
 1. In the window that opens, select the **Permissions** tab to view a list of editable permissions.
 
    ![Editable permissions](assets/permissions-tab.png)
 
-1. Tap or click the **Edit** link of a permission to edit it.
+1. Select the **Edit** link of a permission to edit it.
 
 1. The **Edit Persmissions** window opens.
    * The permission you selected in the previous step is selected in the left column.
@@ -84,13 +84,13 @@ Now that you have a new product profile, you can assign custom permissions to it
 
    ![Edit permission items](assets/edit-permission-items.png)
 
-1. Tap or click the plus (`+`) icon next to the permission item to add it to the column **Included Permission Items**.
+1. Select the plus (`+`) icon next to the permission item to add it to the column **Included Permission Items**.
 
-   * Tap or click the `i` icon next to a permission item to learn more about it.
+   * Select the `i` icon next to a permission item to learn more about it.
 
-1. Tap or click the **Add all** button at the top of the **Available Permissions** column to add all permissions.
+1. Select the **Add all** button at the top of the **Available Permissions** column to add all permissions.
 
-1. Tap or click **Save** when you are finished defining the permission items for your new product profile.
+1. Select **Save** when you are finished defining the permission items for your new product profile.
 
 Your new product profile is now saved with its custom permissions.
 
@@ -98,13 +98,13 @@ Your new product profile is now saved with its custom permissions.
 
 You can now assign users to the new product profile you created with custom permissions.
 
-1. In the Admin Console, tap or click the name of the [new product profile to which you just assigned custom permissions.](#assign-permissions)
+1. In the Admin Console, select the name of the [new product profile to which you just assigned custom permissions.](#assign-permissions)
 
 1. In the window that opens, select the **Users** tab.
 
-1. Tap or click the **Add Users** button and assign users to your new product profile with custom permissions.
+1. Select the **Add Users** button and assign users to your new product profile with custom permissions.
 
-Please see the section **Add users and user groups to a product profile** of the document [Manage product profiles for enterprise users](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) for more details on how to use the Admin Console.
+See the section **Add users and user groups to a product profile** of the document [Manage product profiles for enterprise users](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) for more details on how to use the Admin Console.
 
 ## Configurable Permissions {#configurable-permissions}
 
@@ -143,14 +143,14 @@ The following permissions are available for creating custom profiles.
 
 ### Organization-Level Permissions {#organization-level}
 
-Organization-level permissions refer to permissions which are always given across all of the programs in an organization.
+Organization-level permissions refer to permissions which are always given across all programs in an organization.
 
 The following permissions are organization-level permissions:
 
 * **Program Create** - This permission lets users create a program in the organization.
 * **Repository Info Access** This tenant/organization level permission allows users to generate username, password and repository URL for access and contributing to customer project.
   * Username and password for repository access will be common across all the repos in the org, however repository URL will be unique to each program.
-  * Please see the document [Accessing Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md) for more information.
+  * See [Accessing Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md) for more information.
 
 ## Terms {#terms}
 
@@ -158,7 +158,7 @@ The following terms are used in creating and managing custom permissions and pre
 
 |Term|Description|
 |---|---|
-|Predefined Permissions|Predefined roles like **Business Owner**, **Deployment Manager**, etc. to govern various features of Cloud Manager. For details on pre-defined roles, please see the document [AEM as a Cloud Service Team and Product Profiles.](/help/onboarding/aem-cs-team-product-profiles.md)|
+|Predefined Permissions|Predefined roles like **Business Owner**, **Deployment Manager**, and so on to govern various features of Cloud Manager. For details on pre-defined roles, please see the document [AEM as a Cloud Service Team and Product Profiles.](/help/onboarding/aem-cs-team-product-profiles.md)|
 |Custom Permissions|Cloud Manager features which allows users to create permission profiles to define roles to govern supported features of Cloud Manager|
 |Product Profile|Created in the admin console to manage configurable permissions which will be applicable to users who are part of the permission profile| 
 |Configurable Permission|Cloud manager permissions which can be configured in permission profile|
@@ -178,7 +178,7 @@ Permission items refer to the scope where permission will be applied. Typically 
 Keep in mind the following limitations when using custom permissions.
 
 * Custom permissions profile will also list AMS programs, environments, and pipelines while configuring permissions.
-* Resources like program, environment, pipeline etc. created in Cloud Manager may take up two minutes to display in Admin Console for permission configuration.
+* Resources like program, environment, pipeline and so on created in Cloud Manager may take up two minutes to display in Admin Console for permission configuration.
 * In rare scenarios where custom permissions service fails to respond, predefined profiles are still available and users in predefined profiles still have appropriate access.
 
 ## Frequently-Asked Questions {#faq}
@@ -190,7 +190,7 @@ Keep in mind the following limitations when using custom permissions.
 * Deployment Manager
 * Developer
 
-For details on pre-defined roles, please see the document [AEM as a Cloud Service Team and Product Profiles.](/help/onboarding/aem-cs-team-product-profiles.md)
+For details on pre-defined roles, see [AEM as a Cloud Service Team and Product Profiles.](/help/onboarding/aem-cs-team-product-profiles.md)
 
 ### What happens to predefined permission profiles with introduction to custom profiles?
 

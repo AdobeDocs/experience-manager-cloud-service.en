@@ -25,21 +25,21 @@ Immediately after logging in you arrive on the [Navigation panel](#navigation-pa
 
 ![Navigation panel](/help/sites-cloud/authoring/assets/navigation.png)
 
-To get a good understanding of the basic use of AEM, this document is based on the **Sites** console. Click or tap on **Sites** to get started.
+To get a good understanding of the basic use of AEM, this document is based on the **Sites** console. Select on **Sites** to get started.
 
 ## Product Navigation {#product-navigation}
 
-Whenever a user first accesses a console, a product navigation tutorial is started. Take a minute to click or tap through to get a good overview of the basic handling of AEM.
+Whenever a user first accesses a console, a product navigation tutorial is started. Take a minute to select through to get a good overview of the basic handling of AEM.
 
 ![Navigation tutorial](/help/sites-cloud/authoring/assets/tutorial.png)
 
-Click or tap **Next** to advance to the next page of the overview. Click or tap **Close** or click or tap outside of the overview dialog to close.
+Select **Next** to advance to the next page of the overview. Select **Close** or select outside of the overview dialog to close.
 
 The overview will restart the next time you access a console unless you either view all slides or check the option **Don't show this again**.
 
 ## Global Navigation {#global-navigation}
 
-You can navigate between the consoles using the global navigation panel. This is triggered as a full-screen drop-down when you click or tap the Adobe Experience Manager link at the top-left of the screen.
+You can navigate between the consoles using the global navigation panel. This is triggered as a full-screen drop-down when you select the Adobe Experience Manager link at the top-left of the screen.
 
 You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
 
@@ -73,7 +73,7 @@ From Navigation the consoles available are:
 
 ## Tools Panel {#tools-panel}
 
-In the Tools panel has a side panel containing a range of categories, that group together similar Tools consoles. The Tools consoles provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+In the Tools panel has a side panel containing a range of categories, that group together similar Tools consoles. The Tools consoles provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![Tools panel](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -298,7 +298,7 @@ Selecting a resource in the leftmost column will display the child resources in 
 
   * The resource name and chevron are highlighted when tapped or clicked.
   * The children of the clicked/tapped resource are displayed in the column to the right of the clicked/tapped resource.
-  * If you tap or click a resource name that has no children, its details are displayed in the final column.
+  * If you select a resource name that has no children, its details are displayed in the final column.
 
 * Tapping or clicking on the thumbnail selects the resource.
 
@@ -325,7 +325,7 @@ Selecting a resource in the leftmost column will display the child resources in 
   * The page title
   * Important dates (such as last edited, last published)
   * If the page is locked, hidden or part of a livecopy
-  * If appropriate, when you are required to take action as part of a workflow
+  * If appropriate, when you are required to act as part of a workflow
     * Markers that indicate required actions may be related to entries in your [Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 * [Quick actions](#quick-actions) are also available in this view such as selection and common actions such as edit.
@@ -346,12 +346,12 @@ Selecting a resource in the leftmost column will display the child resources in 
 
   * When all items in the list are selected, this checkbox appears checked.
 
-    * Click or tap the checkbox to deselect all.
+    * Select the checkbox to deselect all.
 
   * When only some items are selected, it appears with a minus sign.
 
-    * Click or tap the checkbox to select all.
-    * Click or tap the checkbox again to deselect all.
+    * Select the checkbox to select all.
+    * Select the checkbox again to deselect all.
 
 * Select the columns to be shown using **View Settings** option located under the Views button. The following columns are available for display:
 
@@ -377,7 +377,7 @@ Selecting a resource in the leftmost column will display the child resources in 
 
   ![Column order](/help/sites-cloud/authoring/assets/column-order.png)
 
-  Click or tap on the vertical selection bar and drag the item to a new position in the list.
+  Select the vertical selection bar and drag the item to a new position in the list.
 
   ![Order list](/help/sites-cloud/authoring/assets/order-list.png)
 
@@ -465,10 +465,10 @@ See the document [Using the Site Rail to Manage Your Site Theme](/help/sites-clo
 
 >[!TIP]
 >
->An end-to-end description of the process of creating a new site from a template and customizing its theme can be found in the [Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md).
+>An end-to-end description of the process of creating a site from a template and customizing its theme can be found in the [Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md).
 
 ### Filter {#filter}
 
-This opens a panel similar to [search](/help/sites-cloud/authoring/getting-started/search.md) with the appropriate location filters already set, allowing you to further filter the content you wish to view.
+This opens a panel similar to [search](/help/sites-cloud/authoring/getting-started/search.md) with the appropriate location filters already set, allowing you to further filter the content you want to view.
 
 ![Filter example](/help/sites-cloud/authoring/assets/filter.png)

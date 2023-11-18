@@ -31,7 +31,7 @@ The projects console is where you access and manage your projects within AEM.
 ![The Projects console](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * Select **Timeline** and then a project to view its timeline.
-* Click/tap **Select** to enter selection mode.
+* Select **Select** to enter selection mode.
 * Click **Create** to add projects.
 * **Toggle Active Projects** lets you switch between all projects and only those that are active.
 * **Show Statistics View** lets you see project statistics concerning task completions.
@@ -172,4 +172,4 @@ All projects support the following default roles to let you administer security 
 
 >[!NOTE]
 >
->When you create the project and add users to the various roles, groups associated with the project are automatically created to manage associated permissions. For example, a project called Myproject would have three groups **Myproject Owners**, **Myproject Editors**, **Myproject Observers**. However, if the project is deleted, those groups are not automatically deleted. An administrator needs to manually delete the groups in **Tools** &gt; **Security** &gt; **Groups**.
+>When you create the project and add users to the various roles, groups associated with the project are automatically created to manage associated permissions. For example, a project called Myproject would have three groups **Myproject Owners**, **Myproject Editors**, **Myproject Observers**. However, if the project is deleted, those groups are not automatically deleted. An administrator must manually delete the groups in **Tools** &gt; **Security** &gt; **Groups**.

@@ -25,7 +25,7 @@ This document helps you understand how to use CIF for Content and Commerce speci
 
 CIF extends the Universal Editor with capabilities to access the real-time product data without leaving the context:
 
-Open the side panel and select 'Products' from the dropdown.
+Open the side panel and select 'Products' from the drop-down list.
 ![Select product type](assets/asset-finder-overview.png)
 
 You can  browse the product catalog or use the full-text search field to find products.

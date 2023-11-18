@@ -19,7 +19,7 @@ Before you begin your Adobe Experience Manager launch, everyone who has a stake 
 
 In a 2018 study, IDC analyzed the business value several large companies saw when using Adobe Experience Manager. On average, the organizations using Experience Manager Sites had improved the productivity of their digital experience teams by 23%, decreased the time required to make minor editorial changes by 64%, and increased site visits per month by 10%. The companies using Experience Manager Assets increased the productivity of their digital assets teams by 19%, shortened the creation time for new assets by 47%, and reduced the time to launch for marketing campaigns by 20%.
 
-To realize the same dramatic gains, your organization needs to have clear goals for your Experience Manager implementation. And you need to have KPIs that help everyone stay focused on those goals.
+To realize the same dramatic gains, your organization must have clear goals for your Experience Manager implementation. And you need to have KPIs that help everyone stay focused on those goals.
 
 ## Accessing KPIs 
 

@@ -29,7 +29,7 @@ Before starting this procedure:
 * Your organization's System Administrator should use the Admin Console to add the required developers in your organization to the relevant product profiles. 
 
   * This provides the specific developers with permissions to enable integrations using the Adobe Developer Console. 
-  * For further details see [Manage Developers](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+  * See [Manage Developers](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
 ## Configuring an IMS Configuration - Generating a Public Key {#configuring-ims-generating-a-public-key}
