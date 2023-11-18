@@ -76,7 +76,7 @@ A **Convert to experience fragment variation** option, and workflow, has been im
    * **Fragment title**
      Specify the title.
    * **Fragment tags**
-     Add tags, if required.
+     Add tags, if necessary.
 
 1. Confirm with **Done**.
 

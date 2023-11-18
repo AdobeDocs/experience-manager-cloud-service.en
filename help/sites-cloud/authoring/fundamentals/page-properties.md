@@ -309,7 +309,7 @@ Once you have entered Bulk Editing you can:
 * **View**
 
   * A list of the pages impacted
-    * You can select/deselect if required
+    * You can select/deselect if necessary
     * Tabs
       * As when viewing properties for a single page, the properties are ordered under tabs.
   * A subset of properties

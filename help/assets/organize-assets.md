@@ -81,7 +81,7 @@ Following are the steps to add tags to an asset:
 
 1. Log in to [!DNL Experience Manager Assets].
 1. Click **[!UICONTROL Assets]** > **[!UICONTROL Files]**, select the asset and click **[!UICONTROL Properties]** to open the asset properties. 
-1. In the **[!UICONTROL Basic]** tab, click the folder icon in **[!UICONTROL Tags]** metadata. A popup window opens. 
+1. In the **[!UICONTROL Basic]** tab, click the folder icon in **[!UICONTROL Tags]** metadata. A pop-up window opens. 
 1. Search or select the appropriate tags from the existing tags in `cq-tags`. You can assign multiple tags to the asset. 
 
    You can sort the tags structure in ascending or descending order based on the **[!UICONTROL Name]** (alphabetical order), **[!UICONTROL Created]** date, or **[!UICONTROL Modified]** date. In the following Illustration, the tag structure is sorted alphabetically based on the **[!UICONTROL Name]**. 

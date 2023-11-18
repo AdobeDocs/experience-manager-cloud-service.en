@@ -42,7 +42,7 @@ You can map/configure these form items to a field within a metadata node in the 
 
 1. To configure a component, select it and modify its properties in the **[!UICONTROL Settings]** tab.
 
-   If required, delete a component from the **[!UICONTROL Settings]** tab.
+   If necessary, delete a component from the **[!UICONTROL Settings]** tab.
 
    ![configure_properties](assets/configure_properties.png)
 

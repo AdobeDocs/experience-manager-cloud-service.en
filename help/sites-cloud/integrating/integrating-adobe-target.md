@@ -44,7 +44,7 @@ When configuring the Adobe Target Tenant ID and Adobe Target Client Code fields,
 In both cases:
 
 * By default, the Client Code (if added first) is also automatically copied into the Tenant ID field.
-* If required, you can change the default Tenant ID set.
+* If necessary, you can change the default Tenant ID set.
 * Backend calls to Target are based on the Tenant ID and the client side calls to Target are based on the Client Code.
 
 As stated previously, the first case is the most common for AEM as a Cloud Service. Either way, make sure that **both** fields contain the correct information depending on your requirements.

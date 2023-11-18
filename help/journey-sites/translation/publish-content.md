@@ -151,7 +151,7 @@ Congratulations! You have completed the AEM Sites translation journey! You shoul
 
 * Have a basic understanding AEM's content management features.
 * Understand AEM's translation features and how they related to your sites content.
-* Have the ability to start translating your own content.
+* Be abtart translating your own content.
 
 You are now ready to translate your own content in AEM. However AEM is a powerful tool and there are many additional options available. Check out some of the additional resources available in the [Additional Resources section](#additional-resources) to learn more about the features you saw in this journey.
 

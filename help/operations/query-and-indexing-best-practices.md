@@ -134,19 +134,19 @@ To explain a query, do the following:
 
 * Select the appropriate query language using the `Language` drop-down list.
 * Enter the query statement into the `Query` field.
-* If required, select how the query will be executed using the provided checkboxes.
+* If necessary, select how the query will be executed using the provided checkboxes.
     * By default, JCR queries do not need to be run to identify the Query Execution Plan (this is not the case for QueryBuilder queries).
     * Three options are provided for executing the query -
       * `Include Execution Time` - execute the query but do not attempt to read any results.
       * `Read first page of results` - execute the query and read the first 'page' of 20 results (replicating the best practices for executing queries).
       * `Include Node Count` - execute the query and read the entire result set (generally this is not advised - see [Index Traversal](#index-traversal)).
 
-#### Query Explanation popup {#query-explanation-popup}
+#### Query Explanation pop-up {#query-explanation-popup}
 
-![Query Explanation popup](./assets/query-explanation-popup.png)
+![Query Explanation pop-up](./assets/query-explanation-popup.png)
 
-After selecting `Explain`, the user is presented with a popup describing the result of the query explain (and execution, if selected). 
-This popup includes details of -
+After selecting `Explain`, the user is presented with a pop-up describing the result of the query explain (and execution, if selected). 
+This pop-up includes details of -
 * The Indexes Used when executing the query (or no index if the query would be executed using [Repository Traversal](#repository-traversal)).
 * The execution time (if `Include Execution Time` checkbox was checked) and count of results read (if `Read first page of results` or `Include Node Count` checkboxes were checked).
 * The execution plan, allowing detailed analysis of how the query is executed - see [Reading the Query Execution Plan](#reading-query-execution-plan) for how to interpret this.

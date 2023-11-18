@@ -103,7 +103,7 @@ Two data types provide references to content outside a specific fragment:
 
 >[!NOTE]
 >
->You can also create ad hoc references by using links within Text blocks.
+>You can also create improvised references by using links within Text blocks.
 
 ## Levels of Structure (Nested Fragments) {#levels-of-structure-nested-fragments}
 

@@ -11,7 +11,7 @@ Learn how to manage your **Content Fragments** in Adobe Experience Manager (AEM)
 
 >[!NOTE]
 >
->Your project team can customize the console and editor if required. See [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md) for further details.
+>Your project team can customize the console and editor if necessary. See [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md) for further details.
 
 After defining your [Content Fragment Models](#creating-a-content-model) you can use these to:
 
@@ -220,10 +220,10 @@ To create a content fragment:
 
 1. The **New Content Fragment** dialog opens, from here you can specify the:
 
-   * **Location** - this will be auto-completed with the current location, but you can select a different location if required
+   * **Location** - this will be auto-completed with the current location, but you can select a different location if necessary
    * **Content Fragment Model** - select the model to be used as a basis of the fragment from the drop down list
    * **Title**
-   * **Name** - this will be auto-completed based on the **Title**, but you can edit it if required
+   * **Name** - this will be auto-completed based on the **Title**, but you can edit it if necessary
    * **Description** 
 
    ![New Content Fragment dialog](assets/cf-managing-new-cf-dialog.png)

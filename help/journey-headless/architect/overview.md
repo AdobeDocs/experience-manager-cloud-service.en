@@ -19,7 +19,7 @@ This guide leads you through the most important topics so that on completion you
 
 * Understand what headless content delivery is and its benefits.
 * Understand how to model your content for AEM's headless features.
-* Have the ability to take the first steps modeling your content for your first AEM headless project.
+* Take the first steps modeling your content for your first AEM headless project.
 
 ## AEM Documentation Journeys {#documentation-journeys}
 

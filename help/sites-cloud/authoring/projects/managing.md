@@ -32,7 +32,7 @@ The procedure of creating a project is the same from project to project. The dif
 
    ![Creating a project](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Define the **Title** and **Description** and add a **Thumbnail** image if required. You also add or delete users and what group they belong to. In addition, click **Advanced** to add a name used in the URL.
+1. Define the **Title** and **Description** and add a **Thumbnail** image if necessary. You also add or delete users and what group they belong to. In addition, click **Advanced** to add a name used in the URL.
 
    ![Adding project detail](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -132,7 +132,7 @@ To make a project inactive (or active):
    >You may need to add this tile if it is not already in your project. See [Adding Tiles](#adding-items-to-a-tile).
 
 1. Select **Edit**.
-1. Change the selector from **Active** to **Inactive** (or vice versa).
+1. Change the selector from **Active** to **Inactive** (or conversely).
 
    ![Activating a project](/help/sites-cloud/authoring/assets/projects-add-team.png)
 

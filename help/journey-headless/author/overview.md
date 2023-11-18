@@ -21,7 +21,7 @@ This guide leads you through the most important topics so that on completion you
 
 * Have a basic understanding of what headless content delivery is and its benefits.
 * Understand AEM's headless features and how they work together to deliver a headless experience.
-* Have the ability to author content for your AEM headless project.
+* Can author content for your AEM headless project.
 
 ## AEM Documentation Journeys {#documentation-journeys}
 

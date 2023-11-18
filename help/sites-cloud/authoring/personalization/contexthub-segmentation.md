@@ -86,7 +86,7 @@ To define your new segment:
 
    ![Add segment](../assets/contexthub-create-segment.png)
 
-1. In the **New ContextHub Segment**, enter a title for the segment and a boost value if required and then select **Create**.
+1. In the **New ContextHub Segment**, enter a title for the segment and a boost value if necessary and then select **Create**.
 
    ![New segment](../assets/contexthub-new-segment.png)
 

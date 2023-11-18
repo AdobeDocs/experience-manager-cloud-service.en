@@ -411,7 +411,7 @@ Once [suspended](#suspending-inheritance-from-page-properties) the **Resume** ac
 
 ![Resume button](../assets/resume.png)
 
-When selected, the dialog box is shown. You can select a synchronization, if required, then confirm the action.
+When selected, the dialog box is shown. You can select a synchronization, if necessary, then confirm the action.
 
 #### Resume a Live Copy Page from the Live Copy Overview {#resume-a-live-copy-page-from-the-live-copy-overview}
 
@@ -461,7 +461,7 @@ To specify or change the depth:
 
 ### Cancelling Inheritance for a Component {#cancelling-inheritance-for-a-component}
 
-Cancel the Live Copy inheritance for a component so that the component is no longer synchronized with the source component. You can enable inheritance at a later point if required.
+Cancel the Live Copy inheritance for a component so that the component is no longer synchronized with the source component. You can enable inheritance at a later point if necessary.
 
 >[!NOTE]
 >
@@ -517,7 +517,7 @@ When you cancel inheritance, you can change the property value. A broken-link ic
 
 ![Properties not inherited](../assets/properties-not-inherited.png)
 
-You can later re-enable inheritance for a property if required.
+You can later re-enable inheritance for a property if necessary.
 
 >[!NOTE]
 >

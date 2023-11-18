@@ -497,7 +497,7 @@ Some types also allow to specify additional options that modify how an expressio
 
 | Option | Type(s) | Description |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | Ignores the case of a string, e.g. a value of `time` will match `TIME`, `time`, `tImE`, ... |
+| `_ignoreCase` | `String` | Ignores the case of a string, for example, a value of `time` matches `TIME`, `time`, `tImE`, ... |
 | `_sensitiveness` | `Float` | Allows a certain margin for `float` values to be considered the same (to work around technical limitations due to the internal representation of `float` values; should be avoided, as this option might have a negative impact on performance |
 
 Expressions can be combined to a set with the help of a logical operator (`_logOp`):
@@ -509,7 +509,7 @@ Each field can be filtered by its own set of expressions. The expression sets of
 
 A filter definition (passed as the `filter` argument to a query) contains:
 
-* A sub-definition for each field (the field can be accessed through its name, e.g. there's a `lastName` field in the filter for the `lastName` field in the Data (field) Type)
+* A sub-definition for each field (the field can be accessed through its name, for example, there's a `lastName` field in the filter for the `lastName` field in the Data (field) Type)
 * Each sub-definition contains the `_expressions` array, providing the expression set, and the `_logOp` field that defines the logical operator the expressions should be combined with
 * Each expression is defined by the value (`value` field) and the operator (`_operator` field) the content of a field should be compared to
 
@@ -908,7 +908,7 @@ The following limitations exist:
 The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
 
 * If you require a single result:
-  * use the model name; eg city
+  * use the model name; for example, city
 
 * If you expect a list of results:
   * add `List` to the model name; for example,  `cityList`
