@@ -17,7 +17,7 @@ To enable the author to use the AEM Page Editor to edit the data exposed by an S
 >
 >The following requirements are framework-independent. If these requirements are fulfilled, a framework-specific layer composed of modules, components, and services can be provided.
 >
->**These requirements are already met for the React and Angular frameworks in AEM.** The requirements in this blueprint are only relevant if you wish to implement another framework for use with AEM.
+>**These requirements are already met for the React and Angular frameworks in AEM.** The requirements in this blueprint are only relevant if you want to implement another framework for use with AEM.
 
 >[!CAUTION]
 >
@@ -57,7 +57,7 @@ The remainder of this document describes the requirements of this intermediary f
 
 The content structure of the page is stored in AEM. The model of the page is used to map and instantiate SPA components. The SPA developers create SPA components which they map to AEM components. To do this, they use the resource type (or path to the AEM component) as a unique key.
 
-The SPA components must be in sync with the page model and be updated with any changes to its content accordingly. A pattern leveraging dynamic components must be used to instantiate components on the fly following the provided page model structure.
+The SPA components must be in sync with the page model and be updated with any changes to its content accordingly. A pattern using dynamic components must be used to instantiate components on the fly following the provided page model structure.
 
 ### Meta Fields {#meta-fields}
 
@@ -253,7 +253,7 @@ The following fragment illustrates the typical HTML representation of a page con
 
 ## Navigation and Routing {#navigation-and-routing}
 
-The App owns the routing. The front end developer first needs to implement a Navigation component (mapped to an AEM navigation component). This component would render URL links to be used in conjunction with a series of routes that will display or hide fragments of content.
+The App owns the routing. The front end developer first must implement a Navigation component (mapped to an AEM navigation component). This component would render URL links to be used in conjunction with a series of routes that will display or hide fragments of content.
 
 The underlying [`PageModelManager`](#pagemodelmanager) library and its [`ModelRouter`](routing.md) module (enabled by default) are responsible for pre-fetching and providing access to the model associated with a given resource path.
 

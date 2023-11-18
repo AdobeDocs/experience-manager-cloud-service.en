@@ -57,13 +57,13 @@ The simplest way to publish the translations is to navigate to the project asset
 
 Under this path you have sub-folders for each translation language and can choose which to publish.
 
-1. Go to **Navigation** -&gt; **Assets** -&gt; **Files** and open the project folder.
-1. Here you see the language root folder and all other language folders. Select the localized language or languages that you wish to publish.
+1. Go to **Navigation** &gt; **Assets** &gt; **Files** and open the project folder.
+1. Here you see the language root folder and all other language folders. Select the localized language or languages that you want to publish.
 ![Select language folder](assets/select-language-folder.png)
-1. Tap or click **Manage Publication**.
-1. In the **Manage Publication** window, make sure that **Publish** is automatically selected under **Action** and that **Now** is selected under **Scheduling**. Tap or click **Next**.
+1. Select **Manage Publication**.
+1. In the **Manage Publication** window, make sure that **Publish** is automatically selected under **Action** and that **Now** is selected under **Scheduling**. Select **Next**.
 ![Manage publication options](assets/manage-publication-options.png)
-1. In the next **Manage Publication** window, confirm that the proper path(s) is/are selected. Tap or click **Publish**.
+1. In the next **Manage Publication** window, confirm that the proper path(s) is/are selected. Select **Publish**.
 ![Manage publication scope](assets/manage-publication-scope.png)
 1. AEM confirms the publish action with a pop-up message at the bottom of the screen.
 ![Resources published banner](assets/resources-published-message.png)
@@ -86,29 +86,29 @@ However as before, the process differs slightly if you chose to automatically cr
 
 ### Updating an Automatically Created Translation Project {#updating-automatic-project}
 
-1. Navigate to **Navigation** -&gt; **Assets** -&gt; **Files**. Remember that headless content in AEM is stored as assets known as Content Fragments.
+1. Navigate to **Navigation** &gt; **Assets** &gt; **Files**. Remember that headless content in AEM is stored as assets known as Content Fragments.
 1. Select the language root of your project. In this case we have selected `/content/dam/wknd/en`.
-1. Tap or click the rail selector and show the **References** panel.
-1. Tap or click on **Language Copies**.
+1. Select the rail selector and show the **References** panel.
+1. Select **Language Copies**.
 1. Check the **Language Copies** checkbox.
 1. Expand the section **Update Language Copies** at the bottom of the references panel.
-1. In the **Project** dropdown, select **Add to an existing Translation Project**.
-1. In the **Existing Translation Project** dropdown, select the project created for the initial translation.
-1. Tap or click **Start**.
+1. In the **Project** drop-down list, select **Add to an existing Translation Project**.
+1. In the **Existing Translation Project** drop-down list, select the project created for the initial translation.
+1. Select **Start**.
 
 ![Add items to existing translation project](assets/add-to-existing-project.png)
 
 The content is added to the existing translation project. To view the translation project:
 
-1. Navigate to **Navigation** -&gt; **Projects**.
-1. Tap or click the project that you just updated.
-1. Tap or click the language or one of the languages that you updated.
+1. Navigate to **Navigation** &gt; **Projects**.
+1. Select the project that you just updated.
+1. Select the language or one of the languages that you updated.
 
 You see that a new job card was added to the project. In this example, another Spanish translation was added.
 
 ![Additional translation job added](assets/additional-translation-job.png)
 
-You may notice that the statistics listed on the new card (number of assets and content fragments) is different. This is because AEM recognizes what has changed since the last translation and only includes the content that needs to be translated. This includes retranslation of updated content and the first-time translation of new content.
+You may notice that the statistics listed on the new card (number of assets and content fragments) is different. This is because AEM recognizes what has changed since the last translation and only includes the content that must be translated. This includes retranslation of updated content and the first-time translation of new content.
 
 From this point, you [start and manage your translation job just as you did the original.](translate-content.md#using-translation-project)
 
@@ -116,22 +116,22 @@ From this point, you [start and manage your translation job just as you did the 
 
 To update a translation you can add a new job to your existing project that is responsible for translating the updated content.
 
-1. Navigate to **Navigation** -&gt; **Projects**.
-1. Tap or click the project that you need to update.
-1. Tap or click the **Add** button at the top of the window.
-1. In the **Add Tile** window, tap or click **Translation Job** and then **Submit**.
+1. Navigate to **Navigation** &gt; **Projects**.
+1. Select the project that you need to update.
+1. Select the **Add** button at the top of the window.
+1. In the **Add Tile** window, select **Translation Job** and then **Submit**.
 
    ![Add tile](assets/add-translation-job-tile.png)
 
-1. On the card of the new translation job, tap or click the chevron button at the top of the card, and select **Update Target** to define the target language of the new job.
+1. On the card of the new translation job, select the chevron button at the top of the card, and select **Update Target** to define the target language of the new job.
 
    ![Update target](assets/update-target.png)
 
-1. In the **Select Target Language** dialog, use the drop-down to select the language and tap or click **Done**.
+1. In the **Select Target Language** dialog, use the drop-down to select the language and select **Done**.
 
    ![Select target language](assets/select-target-language.png)
 
-1. Once your new translation job's target language is set, tap or click on the ellipsis button at the bottom of the job card to view the details of the job.
+1. Once your new translation job's target language is set, select the ellipsis button at the bottom of the job card to view the details of the job.
 1. The job is empty when first created. Add content to the job by tapping or clicking the **Add** button and using the path browser [as you did before when originally creating the translation project.](translate-content.md##manually-creating)
 
 >[!TIP]

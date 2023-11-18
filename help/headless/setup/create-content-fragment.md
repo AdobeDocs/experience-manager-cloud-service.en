@@ -19,12 +19,12 @@ Content fragments contain structured content and can be delivered in JSON format
 
 Content authors will create any number of Content Fragments to represent the content that they create. This is their main task in AEM. For the purposes of this getting started guide, we will only need to create one.
 
-1. Log into AEM as a Cloud Service and from the main menu select **Navigation** -&gt; **Content Fragments**.
+1. Log into AEM as a Cloud Service and from the main menu select **Navigation** &gt; **Content Fragments**.
 
-1. Tap or click the [folder you created previously.](create-assets-folder.md)
-1. Tap or click **Create**.
+1. Select the [folder you created previously.](create-assets-folder.md)
+1. Select **Create**.
 1. The creation of a Content Fragment is presented as a dialog. 
-   Select the location and model you wish to use to create your content fragment.
+   Select the location and model you want to use to create your content fragment.
    
    * The models available depend on the [**Cloud Configuration** you defined for the assets folder](create-assets-folder.md) in which you are creating the Content Fragment.
    * If your model is not available, check the configuration of your assets folder.
@@ -33,7 +33,7 @@ Content authors will create any number of Content Fragments to represent the con
 
    ![Create New Content Fragment dialog](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-1. Tap or click **Create** or  **Create and open**.
+1. Select **Create** or  **Create and open**.
 
 Content Fragments can reference other Content Fragments, allowing for a nested content structure if necessary.
 

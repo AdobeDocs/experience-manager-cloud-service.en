@@ -26,10 +26,10 @@ To download Forms & Documents assets:
 1. Select the forms assets and tap the **[!UICONTROL Download]** icon.
 1. In the Download Asset(s), choose one of the following options, and tap **[!UICONTROL Download]**.
 
-    * **Download as CRX Package:** Use the option to download and move all selected asset(s) and related dependencies from an [!DNL AEM Forms] instance to another. It downloads all assets and folders as crx package. Any form asset(s) including the forms authored in AEM (Adaptive Forms and Adaptive Form Fragments), PDF documents, and resources (XSDs, XFS, images) can be downloaded as package from [!DNL AEM Forms] UI.
+    * **Download as CRX Package:** Use the option to download and move all selected assets and related dependencies from an [!DNL AEM Forms] instance to another. It downloads all assets and folders as crx package. Any form assets including the forms authored in AEM (Adaptive Forms and Adaptive Form Fragments), PDF documents, and resources (XSDs, XFS, images) can be downloaded as package from [!DNL AEM Forms] UI.
       The advantage of downloading assets as package is that it also downloads assets that have been used by the asset selected to download. For example, If you have an Adaptive Form which uses a form template, XSD, and an image. When you select this Adaptive Form and download it as package, the downloaded package also contains the form template, XSD, and the image. All the metadata properties (including custom properties) associated with the asset are also downloaded.
 
-    * **Download asset(s) as binary files:** Use the option to download only form templates (XDP), PDF forms (PDF), document (PDF), and resources (images, schemas, stylesheets). You can edit these assets with external applications. It downloads the forms assets that have binaries, such as XSDs, XDPs, images, PDFs, and XDPs as a .zip file.
+    * **Download assets as binary files:** Use the option to download only form templates (XDP), PDF forms (PDF), document (PDF), and resources (images, schemas, stylesheets). You can edit these assets with external applications. It downloads the forms assets that have binaries, such as XSDs, XDPs, images, PDFs, and XDPs as a .zip file.
       You cannot download Adaptive Forms, Adaptive Form Fragments, and themes, with **[!UICONTROL Download asset(s) as binary files]** option. To download these assets, you should use **[!UICONTROL Download as CRX Package]** option.
 
    The selected assets are downloaded as an archive (.zip file).

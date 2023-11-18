@@ -30,13 +30,13 @@ There are intrinsic differences between these previous approaches and AEM as a C
 
 >[!NOTE]
 >
->For further details on the On-Premise and Managed Service versions, see the documentation set for [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html).
+>For more details on the On-Premise and Managed Service versions, see the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html) .
 
 ## Architecture {#architecture}
 
 >[!NOTE]
 >
->For further details see [Architecture](/help/overview/architecture.md).
+>For more details, see [Architecture](/help/overview/architecture.md).
 
 AEM as a Cloud Service now has:
 
@@ -81,7 +81,7 @@ There are two types of AEM version updates:
 
 >[!TIP]
 >
->For further details see the [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md).
+>For more details, see [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -138,7 +138,7 @@ It is also significantly different as there is now:
 
 * Deployment requirements:
 
-  * Code updates; any customer applications developed for a previous version of AEM will need to be reviewed and possibly updated.
+  * Code updates; any customer applications developed for a previous version of AEM must be reviewed and possibly updated.
 
   * Content migration
 
@@ -150,7 +150,7 @@ It is also significantly different as there is now:
 
 >[!NOTE]
 >
->For further details you can start with [Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md) and [Developing - The WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+>For more details, you can start with [Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md) and [Developing - The WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 The new architecture supporting AEM as a Cloud Service involves some key changes to the overall developer experience. One of the major goals for AEM as a Cloud Service is to allow experienced customers (having used AEM either on-premise or in the context of the Adobe Managed Services) to migrate to AEM as a Cloud Service as quickly as possible, without having to rewrite the bulk of their customized code. However, some adjustments might still be needed. 
 
@@ -200,7 +200,7 @@ To support rapid iterations and development, it is also possible to develop AEM 
 
 >[!NOTE]
 >
->For further details start with [Backup](/help/operations/backup.md), [Indexing](/help/operations/indexing.md), and [other Maintenance Tasks](/help/operations/maintenance.md).
+>For more details, start with [content restoration](/help/operations/backup.md), [Indexing](/help/operations/indexing.md), and [other Maintenance Tasks](/help/operations/maintenance.md).
 
 With AEM as a Cloud Service, such operations are automated so that any interruption of service is no longer necessary.
 
@@ -218,7 +218,7 @@ Operations for AEM as a Cloud Service are also supported by a new monitoring, re
 
 >[!NOTE]
 >
->For further details see [Security - IMS Support](/help/security/ims-support.md).
+>See [Security - IMS Support](/help/security/ims-support.md).
 
 A major change to AEM as a Cloud Service is the fully integrated use of Adobe IDs for accessing the author tier. 
 
@@ -234,7 +234,7 @@ This combines the benefits of:
 
 >[!NOTE]
 >
->For further details, the [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) is a good starting point.
+>For more details, the [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) is a good starting point.
 
 The basic principles of the authoring user interface (UI), for both Sites and Assets, willvery familiar to anyone who has used AEM in the past.
 
@@ -268,6 +268,6 @@ For more information, see:
 
 >[!TIP]
 >
->Once you have an overview of AEM as a Cloud Service, you can onboard quickly by reviewing the [Onboarding Journey](/help/journey-onboarding/overview.md).
+>When you have an overview of AEM as a Cloud Service, you can onboard quickly by reviewing the [Onboarding Journey](/help/journey-onboarding/overview.md).
 >
 >Already onboarded or ready to dive into testing AEM's features? Install the [AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) to explore AEM's powerful features using rich examples.

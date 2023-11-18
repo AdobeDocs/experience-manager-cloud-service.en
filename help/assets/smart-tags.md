@@ -72,7 +72,7 @@ Ensure that the images in the training set conform to the following guidelines:
 
 **Quantity and size:** Minimum 10 images and maximum 50 images per tag.
 
-**Coherence**: Ensure that the images for a tag are visually similar. It is best to add the tags about the same visual aspects (such as the same type of objects in an image) together into a single tag model. For example, it is not a good idea to tag all of these images as `my-party` (for training) because they are not visually similar.
+**Coherence**: Ensure that the images for a tag are visually similar. It is best to add the tags about the same visual aspects (such as the same type of objects in an image) together into a single tag model. For example, it is not a good idea to tag these images as `my-party` (for training) because they are not visually similar.
 
 ![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/coherence.png)
 
@@ -117,7 +117,7 @@ To create and train a model for your business-specific tags, follow these steps:
 1. Create the necessary tags and the appropriate tag structure. Upload the relevant images in the DAM repository.
 1. In [!DNL Experience Manager] user interface, access **[!UICONTROL Assets]** > **[!UICONTROL Smart Tag Training]**.
 1. Click **[!UICONTROL Create]**. Provide a **[!UICONTROL Title]**, **[!UICONTROL Description]**.
-1. Click on the folder icon in **[!UICONTROL Tags]** field. A popup window opens. 
+1. Click the folder icon in **[!UICONTROL Tags]** field. A popup window opens. 
 1. Search or select the appropriate tags from the existing tags in `cq-tags` that you want to add to the model. Click **[!UICONTROL Next]**.
 
    >[!NOTE]

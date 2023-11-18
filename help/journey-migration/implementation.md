@@ -69,7 +69,7 @@ First, look at the documentation detailing the basic tooling, and start refactor
 * Learn how to set up a Local Development Environment by downloading the [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)
 * Finally, familiarize yourself with the [AEM as a Cloud Service Java API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
-Additionally, you can also:
+Also, you can also:
 
 * Watch this video to understand how to install the Dispatcher SDK locally:
 

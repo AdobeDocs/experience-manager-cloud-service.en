@@ -35,7 +35,7 @@ This document helps you understand how you can manage the demo sites you created
 
 Now that you have your own demo sites, you probably would like to know how you can manage them. The pipeline not only deployed the site templates to give your demo sites content, it also deployed a set of utilities to manage those sites.
 
-1. From the AEM global navigation bar, select **Tools** -&gt; **Reference Demos** -&gt; **Reference Demo Utilities**.
+1. From the AEM global navigation bar, select **Tools** &gt; **Reference Demos** &gt; **Reference Demo Utilities**.
 
    ![Self-Service Demo Utilities](assets/demo-utilities.png)
 
@@ -43,7 +43,7 @@ Now that you have your own demo sites, you probably would like to know how you c
 
    ![Dashboard](assets/dashboard.png)
 
-Self-Service Demo Utilities provides a number of tools.
+Self-Service Demo Utilities provides several tools.
 
 * **Delete Sites** - Select the Site you would like to delete in this Adobe Experience Manager instance. Keep in mind that this is a destructive action and cannot be undone once initiated.
 * **Delete Site Templates** - Select the Site Template you would like to delete in this Adobe Experience Manager instance. Before you delete a Site Template, make sure all sites referencing the template are also deleted. Keep in mind that this is a destructive action and cannot be undone once initiated.
@@ -56,11 +56,11 @@ Self-Service Demo Utilities provides a number of tools.
 
 After you have tested a set of AEM functionality, you may no longer need your demo site or even the template on which it is based. It is easy to delete both demo sites and site templates.
 
-1. Access the **Reference Demo Utilities** and tap or click **Delete Sites**.
+1. Access the **Reference Demo Utilities** and select **Delete Sites**.
 
    ![Delete sites](assets/delete-sites.png)
 
-1. The sites that are available are presented in a list. Check the site or sites you wish to delete and then tap or click **Delete**.
+1. The sites that are available are presented in a list. Check the site or sites you want to delete and then select **Delete**.
 
    >[!CAUTION]
    >
@@ -87,7 +87,7 @@ You can delete templates in the same manner under the heading **Delete Site Temp
 Congratulations! You have completed the AEM Reference Demos Add-On journey! You should now:
 
 * Have a basic understanding of Cloud Manager and understand how pipelines deliver content and configuration to AEM.
-* Understand how to use Cloud Manager to create a new program.
+* Understand how to use Cloud Manager to create a program.
 * Know how to activate the Reference Demos Add-On for the new program and be able to run a pipeline to deploy the add-on content.
 * Understand how to access the AEM authoring environment to create a site based on a template.
 * Understand how to access the Self-Service Demo Utilities.

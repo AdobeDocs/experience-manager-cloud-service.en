@@ -38,7 +38,7 @@ Follow these steps to define the users of your New Relic One sub-account associa
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program for which you want to manage your New Relic One users.
+1. Click the program for which you want to manage your New Relic One users.
 
 1. At the bottom of the **Environments** card on the program overview page, click the ellipsis button and select **Manage users**.
 
@@ -46,7 +46,7 @@ Follow these steps to define the users of your New Relic One sub-account associa
 
    * You can also access the **Manage users** option via the ellipsis button at the top of the **Environments** screen of your program.
 
-1. In the **Manage New Relic users** dialog, enter the first and last name of the user you wish to add, and click the **Add** button. Repeat this step for all users you wish to add.
+1. In the **Manage New Relic users** dialog, enter the first and last name of the user you want to add, and click the **Add** button. Repeat this step for all users you want to add.
 
    ![Add users](assets/newrelic-add-users.png)
 
@@ -88,7 +88,7 @@ To access New Relic One via Cloud Manager:
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program for which you want to access New Relic One.
+1. Click the program for which you want to access New Relic One.
 
 1. At the bottom of the **Environments** card on the program overview page, click the ellipsis button and select **Open New Relic**.
 
@@ -148,7 +148,7 @@ The following limitations apply to adding users to New Relic One:
 >
 >If no activity is detected in your New Relic One account for 90 days or more, the APM agent will be stopped.
 >
->Please open a support ticket by way of the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) if you wish to re-enable APM agent for your AEMaaCS environments.
+>Open a support ticket by way of the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) if you want to re-enable APM agent for your AEMaaCS environments.
 
 For more help or additional guidance on New Relic One offerings for your AEM as a Cloud Service Program, open a support ticket via the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
@@ -196,4 +196,4 @@ While Adobe support will monitor the AEM as a Cloud Service application using Ne
 
 ### The APM agent for my New Relic One account is stopped. What happened? {#deactivated}
 
-[APM agents are stopped](#limitations) if no activity is detected for 90 days or more. Please open a support ticket by way of the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) if you wish to re-enable APM agent for your AEMaaCS environments.
+[APM agents are stopped](#limitations) if no activity is detected for 90 days or more. Open a support ticket by way of the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) if you want to re-enable APM agent for your AEMaaCS environments.

@@ -23,7 +23,7 @@ This guide leads you through the most important topics so that on completion you
 
 ## AEM Documentation Journeys {#documentation-journeys}
 
-[A Documentation Journey](/help/journey-documentation/documentation-journeys.md) ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
+[A Documentation Journey](/help/journey-documentation/documentation-journeys.md) ties together many different, complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
 
 Documentation Journeys are designed around best practices principles, informed by Adobe's latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
 
@@ -35,7 +35,7 @@ This journey is designed for the Content Architect persona. As a Content Archite
 
 The journey lays out the requirements, steps, and approach of an AEM Headless project from the perspective of a Content Architect. The journey will define additional personas with which the content architect must interact for a successful project, but the point-of-view for the journey is that of the content architect.
 
-Information in this journey can of course be useful to other personas, but some information is superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
+Information in this journey can be useful to other personas, but some information is superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
 
 ## The Headless Content Architect Journey {#the-journey}
 
@@ -58,7 +58,7 @@ You are now ready to get started on your Adobe Headless journey. We encourage yo
 
 Documentation journeys show you how AEM solves a business problem by providing a narrative that guides you through complex, interrelated processes and features. A journey illustrates how multiple features work together to serve a single business need.
 
-As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM's powerful features work together.
+As such journeys are designed to stand on their own. However, several of them can be related to each other. Check out these additional journeys for more information on how AEM's powerful features work together.
 
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
 * [Headless Authoring Journey](/help/journey-headless/author/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to model your content on your first headless project.

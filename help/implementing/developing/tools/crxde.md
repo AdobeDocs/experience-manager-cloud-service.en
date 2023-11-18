@@ -26,7 +26,7 @@ The CRXDE Lite User Interface appears as follows in your browser:
 
 >[!TIP]
 >
->You can also access CRXDE Lite from the AEM menu. From the main menu select **Tools** -&gt; **General** -&gt; **CRXDE Lite**.
+>You can also access CRXDE Lite from the AEM menu. From the main menu select **Tools** &gt; **General** &gt; **CRXDE Lite**.
 
 ## Overview of the User Interface {#overview-of-the-user-interface}
 
@@ -65,7 +65,7 @@ Once a file is edited in the **Edit Pane**, the following tools are available on
 * **Show in tree** - Shows the file in the repository tree.
 * **Search/Replace** - Performs a search or replace.
 
-Double-click on the status line of the **Edit Pane** opens the **Go to line** dialog so you can enter a specific line number.
+Double-click the status line of the **Edit Pane** opens the **Go to line** dialog so you can enter a specific line number.
 
 ### Properties Tab {#properties-tab}
 
@@ -157,7 +157,7 @@ The **Login Widget** displays the currently logged-in user.
 
 Click it to log in or re-login as another user. The `@crx.default` represents that you are in the default (and only) workspace in the repository.
 
-The **Preferences** option can be used to set your UI language and to view and customize the hot keys for various actions such as save, search, create note, etc.
+The **Preferences** option can be used to set your UI language and to view and customize the hot keys for various actions such as save, search, create note, and so on.
 
 ## Creating a Folder {#creating-a-folder}
 
@@ -200,7 +200,7 @@ To create a property with CRXDE Lite:
 
 ## Creating a File {#creating-a-file}
 
-To create a new file with CRXDE Lite:
+To create a file with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
 1. In the [**Exploerer Pane**,](#explorer-pane) right-click the component where you want to create the file, select **Create**, then **Create File**.

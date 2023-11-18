@@ -34,7 +34,7 @@ This document:
 
 Creating Page Templates is primarily done with the [template console and template editor](/help/sites-cloud/authoring/features/templates.md) by a template author. This section gives an overview of this process and follows with a description of what occurs at a technical level.
 
-When creating a new editable template you:
+When creating an editable template you:
 
 1. Create a [folder for the templates](#template-folders). This is not mandatory, but is recommended best practice.
 1. Select a [template type](#template-type). This is copied to create the [template definition](#template-definitions).
@@ -97,7 +97,7 @@ When creating a new editable template you:
 
 1. Use it to create content pages.
 
-    * When using a template to create a new page there is no visible difference and no indication between static and editable templates.
+    * When using a template to create a page there is no visible difference and no indication between static and editable templates.
     * For the page author, the process is transparent.
 
    For details on how a page author uses templates to create a page, see [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
@@ -106,7 +106,7 @@ When creating a new editable template you:
 
 >[!TIP]
 >
->Never enter any information that needs to be internationalized into a template. For internalization purposes, the [localization features of the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) are recommended.
+>Never enter any information that must be internationalized into a template. For internalization purposes, the [localization features of the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) are recommended.
 
 >[!NOTE]
 >
@@ -135,11 +135,11 @@ For organizing your templates you can use the following folders:
 >
 >Even though you can nest your folders, when the user views them in the **Templates** console they are presented as a flat structure.
 
-In a standard AEM instance the `global` folder already exists in the template console. This holds default templates and acts as a fallback if no policies and/or template-types are found in the current folder. You can add your default templates to this folder or create a new folder (recommended).
+In a standard AEM instance the `global` folder already exists in the template console. This holds default templates and acts as a fallback if no policies and/or template-types are found in the current folder. You can add your default templates to this folder or create a folder (recommended).
 
 >[!NOTE]
 >
->It is best practice to create a new folder to hold your customized templates and not to use the `global` folder.
+>It is best practice to create a folder to hold your customized templates and not to use the `global` folder.
 
 >[!CAUTION]
 >
@@ -155,7 +155,7 @@ Template types and policies are inherited across all folders according to the fo
 
 A list of all allowed entries is created. If any configurations overlap ( `path`/ `label`), only the instance closest to the current folder is presented to the user.
 
-To create a new folder, you can either do this:
+To create a folder, you can either do this:
 
 * Programmatically or with CRXDE Lite
 * Using the [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
@@ -185,13 +185,13 @@ To create a new folder, you can either do this:
 
 1. In addition to the standard authoring permissions and privileges (for example, `content-authors`) you now need to assign group(s) and define the required access rights (ACLs) for your authors to be able to create templates in the new folder.
 
-   The `template-authors` group is the default group that needs to be assigned. See the section [ACLs and Groups](#acls-and-groups) for details.
+   The `template-authors` group is the default group that must be assigned. See the section [ACLs and Groups](#acls-and-groups) for details.
 
    <!--See [Access Right Management](/help/sites-administering/user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.-->
 
 ### Using the Configuration Browser {#using-the-configuration-browser}
 
-1. Go to **Global Navigation** -&gt; **Tools** &gt; [**Configuration Browser**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+1. Go to **Global Navigation** &gt; **Tools** &gt; [**Configuration Browser**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    The existing folders are listed to the left including the `global` folder.
 
@@ -205,7 +205,7 @@ To create a new folder, you can either do this:
 
 >[!NOTE]
 >
->In the [Configuration Browser,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) you can edit the global folder and activate the **Editable Templates** option if you wish to create templates within this folder, however this is not recommended best practice.
+>In the [Configuration Browser,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) you can edit the global folder and activate the **Editable Templates** option if you want to create templates within this folder, however this is not recommended best practice.
 
 ### ACLs and Groups {#acls-and-groups}
 
@@ -283,9 +283,9 @@ This default `template-authors` group only covers the project setups, where all 
 
 ## Template Type {#template-type}
 
-When creating a new template you need to specify a template type:
+When creating a template you need to specify a template type:
 
-* Template types effectively provide templates for a template. When creating a new template the structure and initial content of the selected template type is used to create to the new template.
+* Template types effectively provide templates for a template. When creating a template the structure and initial content of the selected template type is used to create to the new template.
 
   * The template type is copied to create the template.
   * Once the copy has occurred, the only connection between the template and the template type is a static reference for information purposes.
@@ -332,7 +332,7 @@ The [device groups](/help/sites-developing/mobile.md#device-groups) used for an 
 * On the editable template type
 * On the editable template
 
-When creating a new editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
+When creating an editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
 
 >[!CAUTION]
 >
@@ -426,7 +426,7 @@ This node holds properties for the template:
 
 Defines the structure of the resultant page:
 
-* Is merged with the initial content ( `/initial`) when creating a new page.
+* Is merged with the initial content ( `/initial`) when creating a page.
 * Changes made to the structure are reflected in any pages created with the template.
 * The `root` ( `structure/jcr:content/root`) node defines the list of components that are available in the resulting page.
   * Components defined in the template structure cannot be moved on or deleted from any resultant pages.
@@ -440,7 +440,7 @@ Defines the structure of the resultant page:
 Defines the initial content that a new page will have upon creation:
 
 * Contains a `jcr:content` node that is copied to any new pages.
-* Is merged with the structure ( `/structure`) when creating a new page.
+* Is merged with the structure ( `/structure`) when creating a page.
 * Any existing pages will not be updated if the initial content is changed after creation.
 * The `root` node holds a list of components to define what is available in the resulting page.
 * If content is added to a component in structure mode and that component is subsequently unlocked (or vice versa), then this content is used as initial content.
@@ -539,7 +539,7 @@ When rendering a page:
 
 ### Template Availability {#template-availability}
 
-When creating a new page in the site admin interface, the list of available templates depends on the location of the new page and the restrictions on placement specified in each template.
+When creating a page in the site admin interface, the list of available templates depends on the location of the new page and the restrictions on placement specified in each template.
 
 The following properties determine whether a template `T` is allowed to be used for a new page to be placed as a child of page `P`. Each of these properties is a multi-value string holding zero or more Regular Expressions that are used for matching with paths:
 

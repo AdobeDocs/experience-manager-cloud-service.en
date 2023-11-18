@@ -19,7 +19,7 @@ Follow these steps to create an AEM application project in Cloud Manager using t
 
    ![Create a branch and project](assets/create-wizard2.png)
 
-1. Optionally, click on the divider to reveal the additional parameters of your project. The default values are provided by the AEM Project Archetype and generally do not need to be changed.
+1. Optionally, click the divider to reveal the additional parameters of your project. The default values are provided by the AEM Project Archetype and generally do not need to be changed.
 
    ![Additional project parameters](assets/create-wizard5.png)
 
