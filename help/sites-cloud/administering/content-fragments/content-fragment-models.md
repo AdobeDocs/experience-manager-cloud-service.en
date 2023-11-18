@@ -196,7 +196,7 @@ Many properties are self-explanatory, for certain properties additional details 
   The various options for realizing/rendering the field in a fragment. Often this lets you define whether the author sees a single instance of the field, or is allowed to create multiple instances.
 
 * **Field Label**
-  Entering a **Field Label** autogenerates a **Property Name**, which can then be manually updated if required.
+  Entering a **Field Label** autogenerates a **Property Name**, which can then be manually updated if necessary.
 
 * **Validation**
   Basic validation is available by mechanisms such as the **Required** property. Some data types have addition validation fields. See [Validation](#validation) for further details.

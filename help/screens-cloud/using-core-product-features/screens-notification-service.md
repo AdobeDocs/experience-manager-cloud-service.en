@@ -18,6 +18,6 @@ On AEM Screens Cloud, customers can request alerts on device inactivity status b
 
 * Customer Name
 * IMS OrgID
-* Schedule Frequency: Specify a time or frequency in hours (e.g., 1) at which this monitor should send emails.
+* Schedule Frequency: Specify a time or frequency in hours (for example, 1) at which this monitor should send emails.
 * Ping Timeout: Specifies the interval in minutes after which a device should be considered not reachable.
 * Email ID(s) : Email id(s) where the report will be sent

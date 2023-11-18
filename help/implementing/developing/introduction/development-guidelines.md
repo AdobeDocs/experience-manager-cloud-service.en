@@ -73,7 +73,7 @@ AEM as a Cloud Service only supports the Touch UI for third-party customer code.
 
 Native binaries and libraries must not be deployed to or installed in cloud environments.
 
-In addition, code should not attempt to download native binaries or native java extensions (e.g., JNI) at runtime.
+In addition, code should not attempt to download native binaries or native java extensions (for example, JNI) at runtime.
 
 ## No Streaming Binaries through AEM as a Cloud Service {#no-streaming-binaries}
 

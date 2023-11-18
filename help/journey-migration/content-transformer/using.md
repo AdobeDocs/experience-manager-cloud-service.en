@@ -46,7 +46,7 @@ The Content Transformer is bundled with the [Content Transfer Tool](/help/journe
 
    ![image](/help/journey-migration/content-transformer/assets/ct-4.png)
 
-1. You can select all or specific issues and take actions such as move, remove, and rename to resolve them. Custom paths can also be added using **Add Paths** button on the top-right corner.
+1. You can select all or specific issues and move, remove, or rename to resolve them. Custom paths can also be added using **Add Paths** button on the top-right corner.
 
    >[!NOTE]
    > When using the move operation, it is recommended to move all the paths to only one folder (for example under `/etc/packages/content-transformation/paths`), so when the backup packages are installed to bring the instance back to the original state, the folder (`/etc/packages/content-transformation/paths`) can be deleted using remove operation to reduce the repository size.

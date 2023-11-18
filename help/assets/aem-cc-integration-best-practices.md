@@ -76,7 +76,7 @@ To support asset distribution use cases, consider the following options:
 * [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) for a configurable add-on to Assets to publish assets.
 
 * Custom solutions are created based on [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/) code base.
-* Experience Manager [link share](/help/assets/share-assets.md) to share assets ad hoc using links.
+* Experience Manager [link share](/help/assets/share-assets.md) to share assets on demand using links.
 * [Assets web interface](/help/assets/manage-digital-assets.md) with areas for external parties secured by Experience Manager Access Control setup and with necessary IT / network configuration adjustments, giving these external users access to Experience Manager.
 
 ## Key concepts and use cases {#key-concepts-and-use-cases}

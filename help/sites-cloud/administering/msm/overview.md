@@ -13,7 +13,7 @@ The Multi Site Manager (MSM) enables you to use the same site content in multipl
   * Create content once and then
   * Reuse this content in other areas (via [Live Copies](#live-copies)) of the same or other sites.
 * MSM then maintains the live relationships between your source content and its Live Copies so that:
-  * When you make changes to the source content, the source and Live Copies are synchronized.
+  * When you change the source content, the source and Live Copies are synchronized.
   * You can make adjustments only to the content of the Live Copies by disconnecting the live relationship for individual sub pages and/or components.
 
 This page provides an overview of reusing content with MSM. The following pages cover related issues in detail.
@@ -183,7 +183,7 @@ In the previous example, `/content/wknd/language-masters/en` is the global maste
 
 * The content below `/content/wknd/language-masters/en` is the source.
 * The content below `/content/wknd/language-masters/en` is copied below the `/content/wknd/us/en/` and `/content/wknd/ca/en` nodes. These are the Live Copies.
-* Authors make changes to pages below `/content/wknd/language-masters/en`.
+* Authors change pages below `/content/wknd/language-masters/en`.
 * When triggered, MSM synchronizes these changes to the Live Copies.
 
 ### Live Copies - Composition {#live-copies-composition}
@@ -314,10 +314,10 @@ The following steps describe the standard procedure for using MSM to reuse conte
 1. Determine the rollout configuration to use.
 
     1. MSM [installs several rollout configurations](live-copy-sync-config.md#installed-rollout-configurations) that can satisfy several use cases.
-    1. Optionally you can [create a rollout configuration](live-copy-sync-config.md#creating-a-rollout-configuration) if required.
+    1. Optionally you can [create a rollout configuration](live-copy-sync-config.md#creating-a-rollout-configuration) if necessary.
 
 1. Determine where you need to [specify the rollout configurations to use](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) and configure as required.
-1. If required, [create a blueprint configuration](creating-live-copies.md#creating-a-blueprint-configuration) that identifies the source content of the Live Copy.
+1. If necessary, [create a blueprint configuration](creating-live-copies.md#creating-a-blueprint-configuration) that identifies the source content of the Live Copy.
 1. [Create a Live Copy.](creating-live-copies.md#creating-a-live-copy)
 1. Make changes to the source content as required. You should employ the normal content review and approval process that your organization has established.
 1. [Roll out](creating-live-copies.md#rolling-out-a-blueprint) the blueprint, or [synchronize the Live Copy](creating-live-copies.md#synchronizing-a-live-copy) with the changes.

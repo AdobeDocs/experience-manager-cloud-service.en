@@ -9,7 +9,7 @@ A DNS TXT record authorizes a domain to be hosted in a CDN service. You must cre
 
 You must fulfill these requirements before adding a TXT record.
 
-* You must have the ability to modify the DNS records for your organization's domain, or contact the appropriate person who can.
+* You must be able to edit the DNS records for your organization's domain, or contact the appropriate person who can.
 * You must identify your domain host or registrar if you do not know it already.
 
 When you initiate domain verification, Cloud Manager gives you the name and TXT value to use for verification. Add a TXT record to your domain's DNS server using the specified name and value.

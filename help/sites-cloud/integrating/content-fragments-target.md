@@ -92,7 +92,7 @@ The required options can be selected in **Page Properties** of the required fold
    * the appropriate configuration
    * the required format option
    * an Adobe Target workspace
-   * if required - the externalizer domain
+   * if necessary - the externalizer domain
 
    >[!CAUTION]
    >

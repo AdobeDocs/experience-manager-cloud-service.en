@@ -176,7 +176,7 @@ Another common requirement for developers is quick access to the log files of th
 
 Due to the clear separation of code and content, developers can use a particular process for updating content as part of a deployment. The typical use cases for mutable content are:
 
-* Standard *default* content that is part of the customer project (for example, folders, templates, workflows, etc)
+* Standard *default* content that is part of the customer project (for example, folders, templates, workflows, and so on)
 
 * Search index definitions
 

@@ -25,7 +25,7 @@ To use Content Fragment Models you:
    >If the [use of content fragment models have not been enabled](/help/assets/content-fragments/content-fragments-configuration-browser.md), the **Create** option will not be available.
 
 1. Specify the **Model Title**. 
-   You can also define various properties; for example, add **Tags**, a **Description**, and select **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) if required. 
+   You can also define various properties; for example, add **Tags**, a **Description**, and select **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) if necessary. 
 
     >[!NOTE]
     >
@@ -147,7 +147,7 @@ Many properties are self-explanatory, for certain properties additional details 
   The various options for realizing/rendering the field in a fragment. Often this property lets you  define whether the author sees a single instance of the field, or is allowed to create multiple instances.
 
 * **Field Label**
-  Entering a **Field Label** will autogenerate a **Property Name**, which can then be manually updated if required.
+  Entering a **Field Label** will autogenerate a **Property Name**, which can then be manually updated if necessary.
 
 * **Validation**
   Basic validation is available by mechanisms such as the **Required** property. Some data types have addition validation fields. See [Validation](#validation) for further details.

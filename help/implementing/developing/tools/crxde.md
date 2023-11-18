@@ -220,7 +220,7 @@ To export a node type definition in CRXDE Lite:
 1. Select your required node.
 1. Select **Tools** then **Export Node Type**.
 1. The definition is displayed in CND notation in a new tab in your browser.
-1. Save the information if required.
+1. Save the information if necessary.
 
 To import a node type definition:
 

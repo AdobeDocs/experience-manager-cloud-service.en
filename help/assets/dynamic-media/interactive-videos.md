@@ -629,7 +629,7 @@ The embed code returned by Experience Manager already has a ready-to-use event h
     //See your quickviewer plugin for the quickview call
     },
 "initComplete":function() {
-    //--- Attach quickview popup to viewer container so popup will work in fullscreen mode ---
+    //--- Attach quickview pop-up to viewer container so pop-up works in fullscreen mode ---
     var popup = document.getElementById('quickview_div'); // get custom quickview container
     popup.parentNode.removeChild(popup); // remove it from current DOM
     var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -752,7 +752,7 @@ The complete source code is as follows:
     loadQuickView(quickViewUrl);
     },
    "initComplete":function() {
-    //--- Attach quickview popup to viewer container so popup will work in fullscreen mode ---
+    //--- Attach quickview pop-up to viewer container so pop-up works in fullscreen mode ---
     var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
     var inner_container = document.getElementById(sdkContainerId);
     inner_container.appendChild(document.getElementById("quickview-modal"));

@@ -142,7 +142,7 @@ For both views (List and Calendar) you can define settings:
 
    Depending on whether a dialog, wizard, documentation page has been opened you can:
 
-    * Confirm the appropriate action, e.g re-assign.
+    * Confirm the appropriate action, for example, re-assign.
     * Cancel the action
     * Select the back arrow to return to the inbox, for example if an action wizard or documentation page has been opened, you can return to the Inbox.
 
