@@ -82,7 +82,7 @@ To download latest version of Adobe Experience Manager as a Cloud Service SDK, E
 
 1. Navigate to the **[!UICONTROL AEM as a Cloud Service]** tab.
 1. Sort by published date in descending order.
-1. Click on the latest Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms feature archive (AEM Forms add-on), forms reference assets, or Forms Designer.
+1. Click the latest Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms feature archive (AEM Forms add-on), forms reference assets, or Forms Designer.
 1. Review and accept the EULA. Tap the **[!UICONTROL Download]** button.
 
 ## Set up development tools for AEM Projects {#setup-development-tools-for-AEM-projects}

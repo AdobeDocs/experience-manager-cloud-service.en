@@ -361,12 +361,12 @@ The theme is deployed using the [front-end pipeline.](https://experienceleague.a
 
    After the pipeline setup is complete, the call-to-action card is updated.
 
-1. Right-click on the created pipeline.
+1. Right-click the created pipeline.
 1. Click **[!UICONTROL Run]** .
     
     ![run-a-pipleine](/help/forms/assets/canvas-theme-run-pipeline.png)
 
-Once the build is complete, the theme becomes available at the author instance for the use. It appears under the **[!UICONTROL Style]** tab in the Adaptive Form creation wizard, while creating a new Adaptive Form. 
+Once the build is complete, the theme becomes available at the author instance for the use. It appears under the **[!UICONTROL Style]** tab in the Adaptive Form creation wizard, while creating an Adaptive Form. 
 
    ![custom theme available under style tab](/help/forms/assets/custom-theme-style-tab.png)
 

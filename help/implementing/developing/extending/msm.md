@@ -100,11 +100,11 @@ The `LiveActionFactory` creates instances of the `LiveAction` class for a given 
 
 Use the `LiveAction` configuration node in the repository to store information that affects the runtime behavior of the `LiveAction` instance. The node in the repository that stores the `LiveAction` configuration is available to the `LiveActionFactory` object at runtime. Therefore, you can add properties to the configuration node to and use them in your `LiveActionFactory` implementation as needed.
 
-For example, a `LiveAction` needs to store the name of the blueprint author. A property of the configuration node includes the property name of the blueprint page that stores the information. At runtime, the `LiveAction` retrieves the property name from the configuration, then obtains the property value.
+For example, a `LiveAction` must store the name of the blueprint author. A property of the configuration node includes the property name of the blueprint page that stores the information. At runtime, the `LiveAction` retrieves the property name from the configuration, then obtains the property value.
 
 The parameter of the [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) method is a `Resource` object. This `Resource` object represents the `cq:LiveSyncAction` node for this live action in the rollout configuration.
 
-Please see the document [Creating a Rollout Configuration](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) for more information.
+See [Creating a Rollout Configuration](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) for more information.
 
 As usual when using a configuration node, you should adapt it to a `ValueMap` object:
 
@@ -130,7 +130,7 @@ The following objects are provided as parameters of the `execute` method of the 
   * The `autoSave` value indicates whether your `LiveAction` should save changes that are made to the repository
   * The `reset` value indicates the rollout reset mode.
 
-From these objects you can obtain all of the information about the `LiveCopy`. You can also use the `Resource` objects to obtain `ResourceResolver`, `Session`, and `Node` objects. These objects are useful for manipulating repository content:
+From these objects, you can obtain information about the `LiveCopy`. You can also use the `Resource` objects to obtain `ResourceResolver`, `Session`, and `Node` objects. These objects are useful for manipulating repository content:
 
 In the first line of the following code, source is the `Resource` object of the source page:
 
@@ -159,7 +159,7 @@ The new rollout configuration is then available to you when setting rollout conf
 
 ### Create the Rollout Configuration {#create-the-rollout-configuration}
 
-To create a new rollout configuration:
+To create a rollout configuration:
 
 1. Open CRXDE Lite at `https://<host>:<port>/crx/de`.
 
@@ -343,7 +343,7 @@ Add dependencies so that the Eclipse compiler can reference the classes that are
 
 The following `LiveActionFactory` class implements a `LiveAction` that logs messages about the source and target pages, and copies the `cq:lastModifiedBy` property from the source node to the target node. The name of the live action is `exampleLiveAction`.
 
-1. In the Eclipse Project Explorer, right-click the `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` package and click **New** -&gt; **Class**.
+1. In the Eclipse Project Explorer, right-click the `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` package and click **New** &gt; **Class**.
 
 1. For the **Name**, enter `ExampleLiveActionFactory` and then click **Finish**.
 
@@ -612,7 +612,7 @@ Then you need to ensure that:
 * Contact Email:
 
   * Is excluded from the rolled out properties.
-  * Please see the document [Configuring Live Copy Synchronization](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) for more information.
+  * See [Configuring Live Copy Synchronization](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) for more information.
 
 * Key Visual Style:
 

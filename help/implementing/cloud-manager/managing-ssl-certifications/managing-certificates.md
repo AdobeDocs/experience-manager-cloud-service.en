@@ -27,9 +27,9 @@ When a certificate expires any domains that are in use with the expired certific
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 1. Navigate to **Environments** screen from the **Overview** page.
 1. Navigate to the **SSL Certificates** screen from the **Environments** screen.
-1. You will see a table with a row for each SSL certificate that has been successfully installed in your program. Click on the ellipsis button at the far right in the row of the certificate you wish to update and select **View &amp; Update**.
+1. You can see a table with a row for each SSL certificate that has been successfully installed in your program. Click the ellipsis button at the far right in the row of the certificate you want to update and select **View &amp; Update**.
 1. The certificate details are displayed and can be updated.
-1. Run the pipeline in order to deploy the updated certificate.
+1. Run the pipeline to deploy the updated certificate.
 
 >[!NOTE]
 >
@@ -50,9 +50,9 @@ Follow these steps to delete an SSL certificate.
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 1. Navigate to **Environments** screen from the **Overview** page.
 1. Navigate to the **SSL Certificates** screen from the **Environments** screen.
-1. You will see a table with a row for each SSL certificate that has been successfully installed in your program. Click on the ellipsis button at the far right in the row of the certificate you wish to delete and select **Delete**.
+1. You can see a table with a row for each SSL certificate that has been successfully installed in your program. Click the ellipsis at the far right in the row of the certificate you want to delete and select **Delete**.
 1. Confirm the deletion in the **Delete SSL Certificate** dialog.
-1. Run the pipeline in order to undeploy the deleted certificate.
+1. Run the pipeline to undeploy the deleted certificate.
 
 >[!NOTE]
 >

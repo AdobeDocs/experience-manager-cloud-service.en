@@ -32,6 +32,6 @@ Or, click the **FINISHED** status to view logs in a new tab.
 
 ### Ingestion Logs
 
-To view Ingestion logs, go to the Ingestion Jobs list in Cloud Acceleration Manager, then find the desired migration job and click on the three dots (**...**) of the job. You can then click on **Download log** to download logs.
+To view Ingestion logs, go to the Ingestion Jobs list in Cloud Acceleration Manager, then find the desired migration job and click the three dots (**...**) of the job. You can then click **Download log** to download logs.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

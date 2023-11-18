@@ -94,7 +94,7 @@ In the sites console there are two options for publishing:
 
 To publish a page with Quick Publish:
 
-1. Select the page or pages in the sites console and click on the **Quick Publish** button.
+1. Select the page or pages in the sites console and click the **Quick Publish** button.
 
    ![Selecting pages for publication](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -114,7 +114,7 @@ To publish a page with Quick Publish:
 
 To publish or unpublish a page using Manage Publication:
 
-1. Select the page or pages in the sites console and click on the **Manage Publication** button.
+1. Select the page or pages in the sites console and click the **Manage Publication** button.
 
    ![Selecting pages for publication](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -218,7 +218,7 @@ In a [manner similar to publishing](#publishing-pages), one or more pages can be
 
 ### Unpublishing from the Editor {#unpublishing-from-the-editor}
 
-When editing a page, if you wish to unpublish that page, select **Unpublish Page** in the **Page Information** menu, much as you would [publish the page](#publishing-from-the-editor).
+When editing a page, if you want to unpublish that page, select **Unpublish Page** in the **Page Information** menu, much as you would [publish the page](#publishing-from-the-editor).
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ When editing a page, if you wish to unpublish that page, select **Unpublish Page
 
 Just as you [use the Manage Publication option to publish](#manage-publication), you can also use it to unpublish.
 
-1. Select the page or pages in the sites console and click on the **Manage Publication** button.
+1. Select the page or pages in the sites console and click the **Manage Publication** button.
 1. The **Manage Publication** wizard starts. In the first step, **Options**, select to **Unpublish** instead of the default option of **Publish**.
 
    ![Unpublishing - Options](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
@@ -252,7 +252,7 @@ When you have entered or updated a considerable number of content pages - all of
 
 You can use the [Manage Publication](#manage-publication) option on the sites console to do this.
 
-1. In the sites console, select the root page of the tree you wish to publish or unpublish and select **Manage Publication**.
+1. In the sites console, select the root page of the tree you want to publish or unpublish and select **Manage Publication**.
 1. The **Manage Publication** wizard starts. Choose to publish or unpublish and when it should occur and select **Next** to continue.
 1. In the **Scope** step, select the root page and select **Include Children**.
 

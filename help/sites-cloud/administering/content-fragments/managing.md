@@ -64,7 +64,7 @@ For detailed further information see:
 
 ### Basic Structure and Handling of the Console {#basic-structure-handling-content-fragments-console}
 
-Selecting **Content Fragments** will open the console in a new tab. 
+Selecting **Content Fragments** opens the console in a new tab. 
 
 ![Content Fragments console - Overview](assets/cf-managing-console-overview.png)
 
@@ -118,14 +118,14 @@ Certain actions are available from the console - without selecting a specific Co
 
   >[!NOTE]
   >
-  >The **Assets** console is used to access assets, such as images, videos, etc.  This console can be accessed:
+  >The **Assets** console is used to access assets, such as images, videos, and so on.  This console can be accessed:
   >
   >* using the **Open in Assets** link (in the Content Fragments console)
   >* directly from the global **Navigation** pane
 
 #### Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
 
-Selecting a specific fragment will open a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
+Selecting a specific fragment opens a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
 
 ![Content Fragments console - toolbar for a selected fragment](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -185,7 +185,7 @@ The main/right panel (table view) of the console provides a range of information
   * Information only.
   * Can be used for [Fast Filtering](#fast-filtering).
 * **Referenced By**: 
-  * Provides a link that opens a dialog listing all [parent references](#parent-references-fragment)  of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click on the **Title** in the dialog.
+  * Provides a link that opens a dialog listing all [parent references](#parent-references-fragment)  of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click the **Title** in the dialog.
 
     ![Content Fragments console - References dialog](assets/cf-managing-console-references-dialog.png)
 
@@ -195,7 +195,7 @@ The main/right panel (table view) of the console provides a range of information
 
     ![Content Fragments console - Language indicator](assets/cf-managing-console-language-indicator.png)
 
-  * Click/tap on the count to open a dialog that displays all the language copies. To open a specific language copy, click on the **Title** in the dialog.
+  * Select the count to open a dialog that displays all the language copies. To open a specific language copy, click the **Title** in the dialog.
 
     ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
 
@@ -218,7 +218,7 @@ To create a content fragment:
    >
    >To have the location of the new fragment predefined you can navigate to the folder where you want to create the fragment, or you can specify the location during the creation process.
 
-1. The **New Content Fragment** dialog will open, from here you can specify the:
+1. The **New Content Fragment** dialog opens, from here you can specify the:
 
    * **Location** - this will be auto-completed with the current location, but you can select a different location if required
    * **Content Fragment Model** - select the model to be used as a basis of the fragment from the drop down list
@@ -256,7 +256,7 @@ To open your fragment for editing:
 1. Use the **Content Fragments** console to navigate to the location of your content fragment.
 1. Open the fragment for editing, by selecting the fragment, then **Open in new Editor** from the toolbar.
 
-1. The fragment editor will open. Select your required **Variation** amd make your changes as required (they will be auto-saved):
+1. The fragment editor opens. Select your required **Variation** amd make your changes as required (they will be auto-saved):
 
    ![Fragment editor](assets/cf-managing-editor.png)
 
@@ -299,7 +299,7 @@ You can publish your Content Fragments to:
 
   >[!NOTE]
   >
-  >For more details about the Preview environments, please see:
+  >For more details about the Preview environments, see the following:
   >
   >* [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   >* [Configuring OSGi Settings for the Preview Tier](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
@@ -396,7 +396,7 @@ Details of parent references can be accessed from the
 * **References** column of the Content Fragments Console
 * the [parent references link in the top toolbar of the Content Fragments editor](/help/sites-cloud/administering/content-fragments/authoring.md#view-parent-references)
 
-Both provide a link that opens a dialog listing all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click on the **Title**, or the link icon, in the dialog.
+Both provide a link that opens a dialog listing all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages. To open a specific reference, click the **Title**, or the link icon, in the dialog.
 
 For example:
 
@@ -413,7 +413,7 @@ The icon indicates the locale of the content fragment, together with the total n
 
 ![Content Fragments console - Language indicator](assets/cfc-console-language-indicator.png)
 
-Click/tap on the count to open a dialog that displays all the language copies. To open a specific language copy, click on the **Title** in the dialog.
+Select the count to open a dialog that displays all the language copies. To open a specific language copy, click the **Title** in the dialog.
 
 ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
 

@@ -14,7 +14,7 @@ In order for an app to be editable by the Universal Editor, it must be properly 
 
 >[!NOTE]
 >
->Content validation is performed on the server side. The Universal Editor simply works with the data attributes. Validation that they fit the model/structure needs to be addressed at the API level.
+>Content validation is performed on the server side. The Universal Editor simply works with the data attributes. Validation that they fit the model/structure must be addressed at the API level.
 
 ## Data Properties {#data-properties}
 

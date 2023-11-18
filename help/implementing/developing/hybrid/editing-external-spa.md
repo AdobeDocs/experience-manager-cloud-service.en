@@ -19,7 +19,7 @@ The prerequisites are simple.
 * Create a base AEM SPA project using [the AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
   * Forms the basis of the AEM project which is updated to include the external SPA.
   * For the samples in this document, Adobe is using the starting point of [the WKND SPA project](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
-* Have the working, external React SPA that you wish to integrate at hand.
+* Have the working, external React SPA that you want to integrate at hand.
 
 ## Upload SPA to AEM Project {#upload-spa-to-aem-project}
 

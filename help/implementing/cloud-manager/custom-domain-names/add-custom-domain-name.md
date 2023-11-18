@@ -24,11 +24,11 @@ Follow these steps to add a custom domain name from the **Domain Settings** page
 
 1. Navigate to the **Environments** screen from the **Overview** page.
 
-1. Click on **Domain Settings** in the left navigation panel.
+1. Click **Domain Settings** in the left navigation panel.
 
    ![The Domain Settings window](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. Click on the **Add Domain** button at the top-right to open the **Add Domain Name** dialog.
+1. Click the **Add Domain** button at the top-right to open the **Add Domain Name** dialog.
 
    ![Add Domain dialog](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
@@ -44,7 +44,7 @@ Follow these steps to add a custom domain name from the **Domain Settings** page
 
 1. Select the **Domain SSL Certificate** associated with the domain name from the drop-down and select **Continue**.
 
-1. The **Add Domain Name** dialog box appears and will take you to the domain name verification process. Follow the instructions provided to prove domain ownership for your environment. Click on **Create**.
+1. The **Add Domain Name** dialog box appears and will take you to the domain name verification process. Follow the instructions provided to prove domain ownership for your environment. Click **Create**.
 
    ![Domain name verification](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
 
@@ -76,7 +76,7 @@ Follow these steps to add a custom domain name from the **Environments** page.
 
    1. Enter the custom domain name.
    1. Select the SSL certificate associated with this name from the drop-down list.
-   1. Click on **+Add**.
+   1. Click **+Add**.
 
    ![Add Custom Domain Name](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
@@ -88,7 +88,7 @@ Follow these steps to add a custom domain name from the **Environments** page.
    >
    >Do not include `http://`, `https://`, or spaces when entering in the domain name.
 
-1. The **Add Domain Name** dialog box appears and will take you to the domain name verification process. Follow the instructions provided to prove domain ownership for your environment. Click on **Create**.
+1. The **Add Domain Name** dialog box appears and will take you to the domain name verification process. Follow the instructions provided to prove domain ownership for your environment. Click **Create**.
 
    ![Domain name verification](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
 

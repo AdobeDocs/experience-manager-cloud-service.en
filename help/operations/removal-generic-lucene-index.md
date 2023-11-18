@@ -32,7 +32,7 @@ For example, reference lookup queries, such as in the following example, should 
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-To support larger customer data volumes, Adobe no longer creates the generic Lucene index on new AEM as a Cloud Service environments. Additionally, Adobe removes the index from existing repositories. [See the timeline](#timeline) at the end of this document for more details.
+To support larger customer data volumes, Adobe no longer creates the generic Lucene index on new AEM as a Cloud Service environments. Also, Adobe removes the index from existing repositories. [See the timeline](#timeline) at the end of this document for more details.
 
 Adobe has already adjusted the index costings via the `costPerEntry` and `costPerExecution` properties to ensure that other indexes such as `/oak:index/pathreference` are used in preference wherever possible. 
 
@@ -68,7 +68,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 ## Potential Dependencies on Generic Lucene Indexes {#potential-dependencies}
 
-There are a number of areas where your applications and AEM installations may be dependent on generic Lucene indexes both on author and publish instances.
+There are several areas where your applications and AEM installations may be dependent on generic Lucene indexes both on author and publish instances.
 
 ### Publish Instance {#publish-instance}
 
@@ -115,7 +115,7 @@ As such, the query falls back on the generic full text index where all the inclu
 
 ### Author Instance {#author-instance}
 
-In addition to queries in customer application servlets, OSGi components, and rendering scripts there can be a number of author-specific usages of the generic Lucene index. 
+In addition to queries in customer application servlets, OSGi components, and rendering scripts there can be several author-specific usages of the generic Lucene index. 
 
 #### Reference Search {#reference-search}
 

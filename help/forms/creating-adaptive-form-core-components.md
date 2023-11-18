@@ -18,7 +18,7 @@ Adaptive Forms let you create forms that are engaging, responsive, dynamic, and 
 
 Before you start, learn about the type of Forms components available to you: 
 
-*   [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): These are standardized data capture components. These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrollment experiences. A developer can easily customize and style these components. Adobe recommends leveraging these modern and extensible components to develop Adaptive Forms.  
+*   [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): These are standardized data capture components. These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrollment experiences. A developer can easily customize and style these components. Adobe recommends using these modern and extensible components to develop Adaptive Forms.  
 
 *   [Adaptive Forms Foundation Components](creating-adaptive-form.md): These are classic (old) data capture components. You can continue to use these to edit your existing foundation components based Adaptive Form. If you are creating new forms, Adobe recommends using  [Adaptive Forms Core Components](creating-adaptive-form-core-components.md) to create an Adaptive Forms. 
 
@@ -29,19 +29,19 @@ Before you start, learn about the type of Forms components available to you:
 
 You require the following to create an Adaptive Form:
 
-*   **Enable Adaptive Forms Core Components for your environment**: When you create a new program, the Adaptive Forms Core Components already enabled for your environment. If you have a Forms as a Cloud Service environment based on Archetype 39 or earlier, [Enable Adaptive Forms Core Components for your environment](enable-adaptive-forms-core-components.md). On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** template and canvas theme is added to your environment. If your AEM SDK version older than 2023.02.0, [ensure that you have `prerelease` flag enabled on your environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) as Adaptive Forms Core Components were part of pre-prelease before the 2023.02.0 release.   
+*   **Enable Adaptive Forms Core Components for your environment**: When you create a program, the Adaptive Forms Core Components already enabled for your environment. If you have a Forms as a Cloud Service environment based on Archetype 39 or earlier, [Enable Adaptive Forms Core Components for your environment](enable-adaptive-forms-core-components.md). On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** template and canvas theme is added to your environment. If your AEM SDK version older than 2023.02.0, [ensure that you have `prerelease` flag enabled on your environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) as Adaptive Forms Core Components were part of pre-prelease before the 2023.02.0 release.   
 
 *   **An Adaptive Form template**: A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an Adaptive Form. For example, sending the collected data to a data source. The cloud service provides an OOTB template, named blank:
 
     * The `blank` template is included with every fresh AEM Forms as a Cloud Service program.
     * You can install the reference package, via Package Manager, to add the `blank` template to your AEM Forms as a Cloud Service program. 
-    * You can also [create a new Adaptive Forms template (Core Components)](/help/forms/template-editor-core-components.md) from scratch.
+    * You can also [create an Adaptive Forms template (Core Components)](/help/forms/template-editor-core-components.md) from scratch.
     * You can also deploy [sample templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your environment. These help you start creating forms swiftly.
 
 *   **An Adaptive Form theme**: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components.  The `Canvas` template is included with every fresh AEM Forms as a Cloud Service program. You can also deploy [sample themes](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your environment. These help you start styling your forms and provide a base structure to create or customize a theme as per your business requirements.
 
     <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
-    * You can also [create a new Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. --> 
+    * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. --> 
 
 *   **Permissions**: Add your users to [!DNL forms-users] group. The members of the [!DNL forms-users] group have permissions to create an Adaptive Form. For detailed list of forms-specific user groups, see [Groups and permissions](forms-groups-privileges-tasks.md).
 

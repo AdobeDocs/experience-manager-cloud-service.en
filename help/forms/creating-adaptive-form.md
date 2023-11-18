@@ -20,7 +20,7 @@ Adaptive Forms let you create forms that are engaging, responsive, dynamic, and 
 
 Before you start, learn about the type of Forms components available to you: 
 
-*   [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) are standardized data capture components. These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrolment experiences. A developer can easily customize and style these components. Adobe recommends leveraging these modern and extensible components to develop Adaptive Forms.  
+*   [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) are standardized data capture components. These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrolment experiences. A developer can easily customize and style these components. Adobe recommends using these modern and extensible components to develop Adaptive Forms.  
 
 *   [Adaptive Forms Foundation Components](creating-adaptive-form.md) are classic (old) data capture components. You can continue to use these to edit your existing foundation components based Adaptive Form. If you are creating new forms, Adobe recommends using  [Adaptive Forms Core Components](creating-adaptive-form-core-components.md) to create an Adaptive Forms. 
 
@@ -54,15 +54,15 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 You require the following to create an Adaptive Form:
 
-*   **Permissions**: Add your users to [!DNL forms-users] to provide them permissions to create an Adaptive Form. For detailed list of forms specific user groups, see [Groups and permissions](forms-groups-privileges-tasks.md).
+* **Permissions**: Add your users to [!DNL forms-users] to provide them permissions to create an Adaptive Form. For detailed list of forms specific user groups, see [Groups and permissions](forms-groups-privileges-tasks.md).
 
-*   **An Adaptive Form theme**: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. You can [create a new theme](themes.md) or [import an existing theme](import-export-forms-templates.md#uploading-a-theme). You can also deploy the [latest archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) for some sample themes.
+* **An Adaptive Form theme**: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. You can [create a theme](themes.md) or [import an existing theme](import-export-forms-templates.md#uploading-a-theme). You can also deploy the [latest archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) for some sample themes.
 
-*   **An Adaptive Form template**: A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an Adaptive Form. For example, sending the collected data to a data source. The cloud service supports two types of templates: 
+* **An Adaptive Form template**: A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an Adaptive Form. For example, sending the collected data to a data source. The cloud service supports two types of templates: 
 
-    *   **Editable template**: You can [create a new](template-editor.md) or [import an existing editable template](migrate-to-forms-as-a-cloud-service.md). You can also deploy the [latest archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) to get some sample editable templates. 
+    * **Editable template**: You can [create a](template-editor.md) or [import an existing editable template](migrate-to-forms-as-a-cloud-service.md). You can also deploy the [latest archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) to get some sample editable templates. 
 
-    *   **Static template**: These are legacy templates and are recommended only for customers migrating from Adobe Managed Services (AMS) and on-premise AEM Forms installations (AEM 6.5 Forms or earlier). These let you continue to use your existing investment in static templates. When you are create a new Adaptive Form, it is recommended to use an Editable template.
+    * **Static template**: These are legacy templates and are recommended only for customers migrating from Adobe Managed Services (AMS) and on-premise AEM Forms installations (AEM 6.5 Forms or earlier). These let you continue to use your existing investment in static templates. When you are create an Adaptive Form, use an Editable template.
 
 
 
@@ -83,7 +83,7 @@ You require the following to create an Adaptive Form:
       >
       > You can also create [!UICONTROL Document of Record] template using an Adaptive Forms editor. For more information, see [Document of Record Support in Adaptive Form Editor](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
-   * When you select a static template, the data, style, submission, delivery, and preview options are not available. When you are create a new Adaptive Form, it is recommended to use an Editable template.
+   * When you select a static template, the data, style, submission, delivery, and preview options are not available. When you are create an Adaptive Form, use an Editable template.
 
 1. In the **[!UICONTROL Style]** tab, select a theme:
 

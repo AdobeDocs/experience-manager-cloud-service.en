@@ -26,7 +26,7 @@ This page provides an overview of reusing content with MSM. The following pages 
 
 >[!NOTE]
 >
->MSM can also be used for Assets, including Content Fragments. For further details see [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md) (only available through the Assets console).
+>MSM can also be used for Assets, including Content Fragments. See [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md) (only available through the Assets console).
 
 ## Possible Scenarios {#possible-scenarios}
 
@@ -100,7 +100,7 @@ There are many use-cases for MSM and Live Copies. Some scenarios include:
   >
   >Against:
   >
-  >* How much of the individual copies needs to be adjusted.
+  >* How much of the individual copies must be adjusted.
 
 ## MSM from the UI {#msm-from-the-ui}
 
@@ -166,7 +166,7 @@ Live Copy Configuration|Definition of the configuration details for a Live Copy|
 
 >[!TIP]
 >
->Please see the document [Extending the Multi Site Manager](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) for the object names.
+>See [Extending the Multi Site Manager](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) for the object names.
 
 ## Live Copies {#live-copies}
 
@@ -272,7 +272,7 @@ A rollout is the central MSM action that synchronizes Live Copies with their sou
 A rollout configuration defines when and how a Live Copy is synchronized with the source content. A rollout configuration consists of a trigger and one or more synchronization actions:
 
 * **Trigger** - A trigger is an event that causes the live action synchronization to occur, such as the activation of a source page. MSM defines the triggers that you can use.
-* **Synchronization Actions** - Synchronization actions are performed on the Live Copy to synchronize it with the source. Example actions are copying content, ordering child nodes, and activating the Live Copy page. MSM provides a number of synchronization actions.
+* **Synchronization Actions** - Synchronization actions are performed on the Live Copy to synchronize it with the source. Example actions are copying content, ordering child nodes, and activating the Live Copy page. MSM provides several synchronization actions.
 
 >[!NOTE]
 >
@@ -290,7 +290,7 @@ Each page and component in a Live Copy is associated with its source page and co
 
 You can **Suspend** the Live Copy inheritance for a Live Copy page so that you can change page properties and components. When you suspend inheritance, the page properties and components are no longer synchronized with the source.
 
-When editing an individual page, authors can **Cancel Inheritance** for a component. When inheritance is cancelled, the live relationship is suspended and synchronization does not occur for that component. Cancelling inheritance and synchronization is useful when sub-sections of the content needs to be customized.
+When editing an individual page, authors can **Cancel Inheritance** for a component. When inheritance is cancelled, the live relationship is suspended and synchronization does not occur for that component. Cancelling inheritance and synchronization is useful when sub-sections of the content must be customized.
 
 ### Detaching a Live Copy {#detaching-a-live-copy}
 
@@ -313,7 +313,7 @@ The following steps describe the standard procedure for using MSM to reuse conte
 1. Develop the content of the source site.
 1. Determine the rollout configuration to use.
 
-    1. MSM [installs several rollout configurations](live-copy-sync-config.md#installed-rollout-configurations) that can satisfy a number of use cases.
+    1. MSM [installs several rollout configurations](live-copy-sync-config.md#installed-rollout-configurations) that can satisfy several use cases.
     1. Optionally you can [create a rollout configuration](live-copy-sync-config.md#creating-a-rollout-configuration) if required.
 
 1. Determine where you need to [specify the rollout configurations to use](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) and configure as required.

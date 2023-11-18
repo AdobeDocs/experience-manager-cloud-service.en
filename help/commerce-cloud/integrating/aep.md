@@ -435,9 +435,9 @@ To trigger the event, you can use AEM author or the publish service from your lo
 
 1.  From Sites page, select the __My Demo StoreFront > us > en__ page and click __Edit__ in top action bar.
 
-1.  From the top action bar, click __View as Published__, then click on any preferred category from the storefront's navigation.
+1.  From the top action bar, click __View as Published__, then click any preferred category from the storefront's navigation.
 
-1.  Click on any preferred product card in the __Product Page__, then select __color, size__ to enable the __Add to Cart__ button. 
+1.  Click any preferred product card in the __Product Page__, then select __color, size__ to enable the __Add to Cart__ button. 
 
 
 1.  Open the __Adobe Experience Platform Debugger__ extension from the browser's extension panel and select __Experience Platform Wed SDK__ in the left rail. 
@@ -499,6 +499,6 @@ __Profile XDM Events:__
 For more information, see the following resources:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [Experience Platform connector overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
-- [Experience Platform Connector Events](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
+- [[!DNL Data Connection] overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+- [[!DNL Data Connection] Events](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
 - [Adobe Experience Platform overview](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

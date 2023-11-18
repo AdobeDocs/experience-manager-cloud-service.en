@@ -29,7 +29,7 @@ The additional benefits of using a blueprint configuration are that they:
 
 In the case that a blueprint configuration is not referenced, rollouts can only be initiated from the Live Copies themselves, essentially pulling content from source.
 
-When creating a new site with Live Copy, it is advantageous to create blueprint configurations to ensure the availability of the full MSM feature set.
+When creating a site with Live Copy, it is advantageous to create blueprint configurations to ensure the availability of the full MSM feature set.
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ Notice that AEM has two main approaches for creating Live Copies:
 
 The following are a few considerations to keep in mind when creating a site:
 
-* To create a new site, you need a [blueprint configuration](creating-live-copies.md#managing-blueprint-configurations).
+* To create a site, you need a [blueprint configuration](creating-live-copies.md#managing-blueprint-configurations).
 * To allow the selection of language paths to create in a new site, the corresponding language roots must exist in the blueprint (source).
 * Once a [new site has been created as a Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (using **Create**, then **Site**), the first two levels of this Live Copy are *shallow*. Children of the page do not belong to the live-relationship, but a roll-out will still descend if a live-relationship that matches the trigger is found.
 
