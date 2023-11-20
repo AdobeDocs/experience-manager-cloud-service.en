@@ -165,3 +165,5 @@ in your local testing strategy to test as close as possible to AEM cloud environ
 
 The Manual testing quality gate is a placeholder for customers who do manual testing. AEM cloud pipelines do not support
 manual testing and therefore this needs to happen as part of your own local testing strategy.
+
+For manual testing it can be useful to integrate with an additional AEM Cloud Service development environment. 
