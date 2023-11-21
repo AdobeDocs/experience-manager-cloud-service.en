@@ -55,7 +55,7 @@ These are described in detail later in this document.
 
 ### Understanding CI-CD Pipelines in Cloud Manager {#understand-pipelines}
 
-The following table summarizes all of the pipelines available in Cloud Manager and their usages.
+The following table summarizes the pipelines available in Cloud Manager and their usages.
 
 |Pipeline Type|Deployment or Code Quality|Source Code|Purpose|Notes|
 |--- |--- |--- |---|---|
@@ -109,7 +109,7 @@ To learn how to configure full-stack pipelines, see the following documents:
 
 With a config pipeline you can configure and deploy traffic filter rules, including WAF rules, within minutes.
 
-Please see the document [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage the configurations in your repository so they are deployed properly.
+See [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage the configurations in your repository so they are deployed properly.
 
 ### Configuring Config Pipelines {#configure-config-deployment}
 
@@ -151,7 +151,7 @@ See [Developing Sites with the Front-End Pipeline](/help/implementing/developing
 
 ## Web Tier Config Pipelines {#web-tier-config-pipelines}
 
-Web tier config pipelines enable exclusive deployment of HTTPD/Dispatcher configuration to the AEM runtime by decoupling it from other code changes. It a streamlined pipeline that provides users who wish to only deploy dispatcher configuration changes, an accelerated means to do so in only a few minutes.
+Web tier config pipelines enable exclusive deployment of HTTPD/Dispatcher configuration to the AEM runtime by decoupling it from other code changes. It a streamlined pipeline that provides users who want to only deploy dispatcher configuration changes, an accelerated means to do so in only a few minutes.
 
 >[!TIP]
 >
@@ -163,7 +163,7 @@ The following restrictions apply.
 * You must [opt in to the flexible mode of the dispatcher tools](/help/implementing/dispatcher/disp-overview.md#validation-debug) to use web-tier config pipelines.
 * A user must be logged with the **Deployment Manager** role to configure or run pipelines.
 * At any time, there can only be one web tier config pipeline per environment.
-* The user can not configure a web tier config pipeline when its corresponding full-stack pipeline is running.
+* The user cannot configure a web tier config pipeline when its corresponding full-stack pipeline is running.
 * The web tier structure must adhere to the flexible mode structure, as defined in the document [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 In addition, be aware of how the [full stack pipeline](#full-stack-pipeline) behaves when introducing a web tier pipeline.

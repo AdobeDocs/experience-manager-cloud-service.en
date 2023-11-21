@@ -29,7 +29,7 @@ You can create a version of your resource from:
 1. Navigate to show the page for which you want to create a version.
 1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** rail.
-1. Click/tap on the ellipsis by the comment field to reveal the options:
+1. Select the ellipsis by the comment field to reveal the options:
 
    ![Versions in the timeline rail](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
@@ -203,7 +203,7 @@ To use this feature:
 
 Timewarp is a [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) of the page editor. To start it, simply switch it as you would any other mode.
 
-1. Start the editor for the page where you wish to start Timewarp and then select **Timewarp** in the mode selection.
+1. Start the editor for the page where you want to start Timewarp and then select **Timewarp** in the mode selection.
 
    ![Timewarp mode](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 

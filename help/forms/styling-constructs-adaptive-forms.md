@@ -48,7 +48,7 @@ Currently, LESS variables are defined only for these properties of the various e
 
 ## Changing component style {#changing-component-style}
 
-You can make changes to the appearance, layout, positioning, and visibility of elements. To achieve this task, create or update your custom .css files to include the styling constructs listed in this article.
+You can change the appearance, layout, positioning, and visibility of elements. To achieve this task, create or update your custom .css files to include the styling constructs listed in this article.
 
 To apply a style to an Adaptive Form, open the Adaptive Form in for editing, open properties of Adaptive Form conatiner, specify the path of custom CSS File in the basic tab. Defaut styling constructs of the Adaptive Form and overridden with the constructs listed in the custom .css file.
 
@@ -271,7 +271,7 @@ Depending on their type, widgets also include classes. Commonly, widgets include
   </tr>
   <tr>
    <td><p><code>listboxwidget-height</code></p> </td>
-   <td><p>Maximum height for a multi-select dropdown</p> </td>
+   <td><p>Maximum height for a multi-select drop-down list</p> </td>
   </tr>
  </tbody>
 </table>
@@ -681,7 +681,7 @@ Tab navigator on top:
 
 `}`
 
-Additionally, there are classes to style tab navigators (both left and top) based on whether they have nested/child/sub navigators.
+Also, there are classes to style tab navigators (both left and top) based on whether they have nested/child/sub navigators.
 
 <table>
  <tbody>

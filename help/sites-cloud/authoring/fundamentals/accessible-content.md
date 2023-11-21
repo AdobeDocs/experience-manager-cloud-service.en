@@ -340,7 +340,7 @@ You can make sure that your web pages are given the appropriate structure by usi
 
 * **Emphasis**: Use the `<strong>` or `<em>` element to indicate emphasis. Do not use headings to highlight text within paragraphs.
   * Highlight the text that you want to emphasize;
-  * Click on the **B** icon (for `<strong>`) or the **I** icon (for `<em>`) shown within the **Properties** panel (make sure that HTML is selected).
+  * Click the **B** icon (for `<strong>`) or the **I** icon (for `<em>`) shown within the **Properties** panel (make sure that HTML is selected).
 
     >[!NOTE]
     >
@@ -470,7 +470,7 @@ For example, someone with red-green color vision deficiency are unable to distin
 
 Also, color cannot be perceived by people using text-only browsers, monochrome display devices, or viewing a black-and-white printout of the page.
 
-A further consideration is the *selected* state for an interface element (for example, tabs, toggle buttons, among others), which needs to be conveyed in some way other than just with color and beyond just a visual presentation. For such elements, the additional use of patterns, shapes, and programmatic information are helpful when creating a fully inclusive user experience that does not rely on a specific sense.
+A further consideration is the *selected* state for an interface element (for example, tabs, toggle buttons, among others), which must be conveyed in some way other than just with color and beyond just a visual presentation. For such elements, the additional use of patterns, shapes, and programmatic information are helpful when creating a fully inclusive user experience that does not rely on a specific sense.
 
 #### How to Meet - Use of Color (1.4.1) {#how-to-meet-use-of-color}
 
@@ -665,7 +665,7 @@ Follow the guidelines under [How to Meet Success Criteria 2.1.2](https://www.w3.
 
 [Guideline 2.2 Enough Time: Provide users enough time to read and use content.](https://www.w3.org/TR/WCAG/#enough-time)
 
-This deals with ensuring that users have enough time to read and take action.
+This deals with ensuring that users have enough time to read and act.
 
 ### Timing Adjustable (2.2.1)  {#timing-adjustable}
 

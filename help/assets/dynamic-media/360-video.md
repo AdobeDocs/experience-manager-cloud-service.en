@@ -62,7 +62,7 @@ See [Edit 360/VR video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-
 
     * Process 360-video content in a folder that is dedicated exclusively to 360 video assets.
 
-   This approach places greater demands on the network and CPU of the end user.
+   This approach places greater demands on the network and CPU of the user.
 
 1. [Upload your video to the folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 

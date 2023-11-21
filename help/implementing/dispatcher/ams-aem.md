@@ -97,7 +97,7 @@ Run the Dispatcher validator in your directory, with the `httpd` subcommand:
 $ validator httpd .
 ```
 
-If you see errors about missing include files, check whether you correctly renamed those
+If you see errors that are about missing include files, check whether you correctly renamed those
 files.
 
 If you see Apache directives that are not allowlisted, remove them.
@@ -253,7 +253,7 @@ Run the AEM as a Cloud Service Dispatcher validator in your directory, with the 
 $ validator dispatcher .
 ```
 
-If you see errors about missing include files, check whether you correctly renamed those
+If you see errors that are about missing include files, check whether you correctly renamed those
 files.
 
 If you see errors concerning undefined variable `PUBLISH_DOCROOT`, rename it to `DOCROOT`.

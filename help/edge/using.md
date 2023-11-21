@@ -27,7 +27,7 @@ Edge Delivery leverages GitHub so customers can manage and deploy code directly 
 
 ## Using the Sidekick {#using-sidekick}
 
-The AEM sidekick provides a toolbar with context-aware options so you can easily edit, preview, and publish content. After [installing](https://www.hlx.live/docs/sidekick-extension) the AEM sidekick extension it can be used either in project environments or when you edit your content (for example, in Google Docs). Depending on the environment, it has several actions available like: Preview, Reload, Edit, and Publish. You can also switch environments when using the sidekick going from preview to production and vice versa.
+The AEM sidekick provides a toolbar with context-aware options so you can easily edit, preview, and publish content. After [installing](https://www.hlx.live/docs/sidekick-extension) the AEM sidekick extension it can be used either in project environments or when you edit your content (for example, in Google Docs). Depending on the environment, it has several actions available like: Preview, Reload, Edit, and Publish. You can also switch environments when using the sidekick going from preview to production and conversely.
 
 **To publish**, open the sidekick on a preview page and use the Publish action. After you click Publish, the current preview version of the page will be available in live and production environments.
 
