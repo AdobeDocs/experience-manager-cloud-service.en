@@ -6,7 +6,7 @@ exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
 ---
 # Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.10.0 {#release-notes}
 
-This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.10.0.
+This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2023.10.0.
 
 ## Content Transfer Tool {#ctt-release}
 
