@@ -7,9 +7,9 @@ description: Learn how to use Dynatrace's OneAgent with AEM as a Cloud Service
 
 >[!INFO]
 >
->This feature is part of the AEM adopter program.
+>This feature is part of the AEM early adopter program. For access, please reach out to Adobe support, as described in this article.
 
-Adobe provides the ability to use Dynatrace's OneAgent to monitor AEM as a Cloud Service as a part of an enterprise deployment, identify the cause of any potential issues, and take action to remediate them as needed.
+Adobe provides the ability to use Dynatrace's OneAgent to monitor AEM as a Cloud Service as a part of an enterprise deployment, identify the cause of any potential issues, and take action to remediate them as needed. <!-- When GA, add: Read this [Dynatrace article](https://www.dynatrace.com/hub/detail/adobe-experience-manager/) about AEM monitoring to learn more. -->
 
 ## Integrating OneAgent with AEM as a Cloud Service {#integrating-oneagent-with-aem-as-a-cloud-service}
 
