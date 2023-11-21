@@ -335,7 +335,7 @@ When selecting a bitrate encoding, there are two types you can choose:
 When do you use VBR versus CRB?
 When selecting VBR versus CBR, it is almost always recommended that you use VBR for your media files. VBR provides higher-quality files at competitive bitrates. When you use VBR, be sure you use with two-pass encoding, and set the maximum bitrate to be 1.5x the target video bitrate.
 
-When you choose a video encoding preset, be sure you account for the target end user's connection speed. Choose a preset with a data rate that is 80 percent of that speed. For example, if the target end user's connection speed is 1000 Kbps, the best preset is one with a video data rate of 800 Kbps.
+When you choose a video encoding preset, be sure you account for the target user's connection speed. Choose a preset with a data rate that is 80 percent of that speed. For example, if the target user's connection speed is 1000 Kbps, the best preset is one with a video data rate of 800 Kbps.
 
 This table describes the data rate of typical connection speeds.
 

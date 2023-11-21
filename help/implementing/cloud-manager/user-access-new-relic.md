@@ -114,7 +114,7 @@ For more help, open a support ticket by way of the [AEM Support Portal](https://
 
 ## Troubleshooting New Relic One Access {#troubleshooting}
 
-If you were added as a New Relic One user as described in the the section [Manage New Relic One Users](#manage-users) and can not locate the original account confirmation email follow these steps.
+If you were added as a New Relic One user as described in the section [Manage New Relic One Users](#manage-users) and cannot locate the original account confirmation email follow these steps.
 
 1. Navigate to New Relic's login page at [`login.newrelic.com/login`](https://login.newrelic.com/login).
 

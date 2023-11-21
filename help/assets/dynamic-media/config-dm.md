@@ -78,7 +78,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    The new password is saved when you select **[!UICONTROL Save]** in the upper-right corner of the **[!UICONTROL Create Dynamic Media Configuration]** page.
 
-   If you selected **[!UICONTROL Cancel]** in the **[!UICONTROL Change Password]** dialog box, you must still enter a new password when you save the newly-created Dynamic Media configuration.
+   If you selected **[!UICONTROL Cancel]** in the **[!UICONTROL Change Password]** dialog box, you must still enter a new password when you save the created Dynamic Media configuration.
   
    See also [Change the password to Dynamic Media](#change-dm-password).
 

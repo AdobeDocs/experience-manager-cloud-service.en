@@ -191,7 +191,7 @@ The content copy tool has the following limitations.
 * Running concurrent content copy operations on the same environment is not possible.
 * Up to 50 paths can be specified per content set. There is no limitation on excluded paths.
 * The content copy tool should not be used as a cloning or mirroring tool because it cannot track moved or deleted content on the source.
-* The content copy tool has no versioning capability and cannot automatically detect modified content or newly-created content on the source environment in a content set since the last content copy operation.
+* The content copy tool has no versioning capability and cannot automatically detect modified content or created content on the source environment in a content set since the last content copy operation.
   * If you want to update your destination environment with content changes only, since the last content copy operation, you must create a content set. Then, specify the paths on the source instance where changes were made since the last content copy operation.
 * Version information is not included in a content copy.
 

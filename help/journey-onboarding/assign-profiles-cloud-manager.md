@@ -175,7 +175,7 @@ You are now ready to continue your onboarding journey by next reviewing the docu
 
 ## Additional Resources {#additional-resources}
 
-It is recommend to continue on the onboarding journey as described previously. These are some additional resources if you want to do a deep dive on a particular topic from this journey.
+It is recommended that you continue the onboarding journey as described previously. These are some additional resources if you want to do a deep dive on a particular topic from this journey.
 
 * [Cloud Manager Introduction](/help/onboarding/cloud-manager-introduction.md) - Learn about Cloud Manager, Cloud Manager programs, and environments.
 * [Cloud Manager Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) - Learn about AEM as a Cloud Service team and product profiles.

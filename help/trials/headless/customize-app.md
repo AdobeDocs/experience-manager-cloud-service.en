@@ -83,7 +83,7 @@ Now that you modified a headline in the app, try changing an image.
 
 1. Select **Preview** at the top-right of the window to see your changes. The preview of the demo app opens in a new tab. Click refresh on the browser and you should see your new biker image with yellow shorts in the app.
 
-It's that easy to update images and assets in your apps with AEM headless CMS.
+It is that easy to update images and assets in your apps with AEM headless CMS.
 
 ## Add a Reference to a New Content Fragment in the app {#create-moment}
 

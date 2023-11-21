@@ -69,7 +69,7 @@ Cloud Manager now knows about your GitHub repository, but it still needs access 
 
 The app can be installed and secret file can be created in any order. However both steps must be completed before you can validate.
 
-Until validation, the repository will be listed with a red icon, indicating that it is not yet validated and can not yet be used.
+Until validation, the repository will be listed with a red icon, indicating that it is not yet validated and cannot yet be used.
 
 ![Unvalidated repo](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 

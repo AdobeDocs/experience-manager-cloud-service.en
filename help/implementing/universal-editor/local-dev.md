@@ -12,7 +12,7 @@ This document will explain how to run AEM in HTTPS alongside a local copy of the
 
 ## Set Up AEM to Run on HTTPS {#aem-https}
 
-Within an outer frame secured with HTTPS an unsecure HTTP frame can not be loaded. The Universal Editor Service runs on HTTPS and therefore AEM or any other remote page must run also on HTTPS.
+Within an outer frame secured with HTTPS an unsecure HTTP frame cannot be loaded. The Universal Editor Service runs on HTTPS and therefore AEM or any other remote page must run also on HTTPS.
 
 To do this, you need to set up AEM to run on HTTPS. For development purposes you can use self-signed certificate.
 
