@@ -18,10 +18,10 @@ the context of an overall testing strategy.
 
 ## Overview
 
-The following diagram gives an overview of the quality gates available in
-the [AEM as a Cloud Service deployment process](/help/implementing/cloud-manager/deploy-code.md).
+The following diagram provides a high level overview of the available pipelines in the context of an overall testing
+strategy and the [AEM as a Cloud Service deployment process](/help/implementing/cloud-manager/deploy-code.md).
 
-![AEM Cloud Service deployment quality gates](assets/functional-testing/quality-gates-overview.svg)
+![AEM Cloud Service deployment quality gates](assets/functional-testing/quality-gates-compact.svg)
 
 ## Purpose
 
@@ -47,15 +47,20 @@ process, rather than being a substitute for a full testing regimen.
 
 ## Quality Gates
 
-### Summary
+The following diagram provides a detailed view of available quality gates and their use in the overall testing
+strategy and the [AEM as a Cloud Service deployment process](/help/implementing/cloud-manager/deploy-code.md).
 
-|                           | Unit Tests            | Code Quality | Product Tests            | Custom<br/> Functional Tests        | Custom<br/> UI Tests                | Experience Audit             | Customer Validations | Manual Testing |
-|---------------------------|-----------------------|--------------|--------------------------|-------------------------------------|-------------------------------------|------------------------------|----------------------|----------------|
-| Production Pipeline       | Yes<br/>Blocking<br/> | Yes          | Yes<br/>Blocking<br/>    | Yes<br/>Blocking<br/>60m Timeout    | Yes<br/>Blocking<br/>60m Timeout    | Yes<br/>Non-Blocking<br/>    | No                   | No             |
-| Non-Production Pipeline   | Yes<br/>Blocking<br/> | Yes          | Opt-In<br/>Blocking<br/> | Opt-In<br/>Blocking<br/>60m Timeout | Opt-In<br/>Blocking<br/>60m Timeout | Opt-In<br/>Non-Blocking<br/> | No                   | No             |
-| Adobe Internal Validation | Yes<br/>Blocking<br/> | Yes          | Yes<br/>Blocking<br/>    | Yes<br/>Blocking<br/>60m Timeout    | Yes<br/>Blocking<br/>60m Timeout    | Yes<br/>Non-Blocking<br/>    | No                   | No             |
-| Customer CI/CD            | Yes                   | No           | No                       | Yes                                 | Yes                                 | No                           | Yes                  | Yes            |
-| Customer Local Developer  | Yes                   | No           | No                       | Yes                                 | Yes                                 | No                           | Yes                  | Yes            |
+![AEM Cloud Service deployment quality gates](assets/functional-testing/quality-gates-overview.svg)
+
+### Summary Customer Provided Quality Gates
+
+|                               |      Unit Tests       |    Custom<br/> Functional Tests     |        Custom<br/> UI Tests         | Customer<br/> Validations | Manual<br/> Testing |
+|:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
+| **Production Pipeline**       | Yes<br/>Blocking<br/> |  Yes<br/>Blocking<br/>60m Timeout   |  Yes<br/>Blocking<br/>60m Timeout   |            No             |         No          |
+| **Non-Production Pipeline**   | Yes<br/>Blocking<br/> | Opt-In<br/>Blocking<br/>60m Timeout | Opt-In<br/>Blocking<br/>60m Timeout |            No             |         No          |
+| **Adobe Internal Validation** | Yes<br/>Blocking<br/> |  Yes<br/>Blocking<br/>60m Timeout   |  Yes<br/>Blocking<br/>60m Timeout   |            No             |         No          |
+| **Customer CI/CD**            |          Yes          |                 Yes                 |                 Yes                 |            Yes            |         Yes         |
+| **Customer Local Developer**  |          Yes          |                 Yes                 |                 Yes                 |            Yes            |         Yes         |
 
 ### Unit Test
 
@@ -88,9 +93,9 @@ follows best-practices and can be considered a good starting point for the imple
 
 ### Custom Functional Tests
 
-After the unit tests, this is the second customer-provided quality gate. Like the product tests, customer functional
-tests are HTTP integration tests (ITs) and are as well implemented using Junit, are executed using Maven and
-built on top of the official [AEM Testing Clients](https://github.com/adobe/aem-testing-clients).
+Like the product tests, customer functional tests are HTTP integration tests (ITs) and are as well implemented using
+Junit, are executed using Maven and built on top of the
+official [AEM Testing Clients](https://github.com/adobe/aem-testing-clients).
 
 > [!NOTE]
 >
