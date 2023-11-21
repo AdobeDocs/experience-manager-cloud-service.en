@@ -1,12 +1,12 @@
 ---
 title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.06.0
-description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.06.0
+description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.06.0
 feature: Release Information
 exl-id: 021b7472-d1e4-4ef6-a040-c612fed8d3c3
 ---
 # Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.06.0 {#release-notes}
 
-This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.06.0.
+This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2023.06.0.
 
 ## Content Transfer Tool {#ctt-release}
 
