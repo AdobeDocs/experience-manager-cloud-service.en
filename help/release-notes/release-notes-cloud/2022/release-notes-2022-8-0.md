@@ -61,7 +61,7 @@ Have a look at the August 2022 Release Overview video for a summary of the featu
 
   * Use Static Templates: Customers with existing investments in legacy static templates can continue their journey of cloud adoption by using static templates in wizard to author adaptive forms. This provides additional time to customers to migrate old static templates to modern editable templates.
 
-* [Remove hidden fields from a Document of Record (DoR) while server-side processing](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): You can generate the document of record PDF for end users containing only those fields which were visible to them during data capture experience. Upon form submission, the server validates which fields were hidden to the end user based on submitted data and excludes from document of record for consistency.
+* [Remove hidden fields from a Document of Record (DoR) while server-side processing](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): You can generate the document of record PDF for end users containing only those fields which were visible to them during data capture experience. Upon form submission, the server validates which fields were hidden to the user based on submitted data and excludes from document of record for consistency.
 
 ## CIF Add-on {#cloud-services-cif}
 

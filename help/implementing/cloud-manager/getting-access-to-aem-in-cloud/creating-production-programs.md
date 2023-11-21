@@ -28,7 +28,7 @@ Follow these steps to create a production program.
 
 1. If you have the necessary entitlements, the **Security** tab will be shown and provide the option to activate **HIPAA** and/or **WAF-DDOS Protection** for your production program. If necessary for the program you are creating, check the applicable option(s) and then select **Continue**.
 
-   * HIPAA can not be enabled or disabled after program creation.
+   * HIPAA cannot be enabled or disabled after program creation.
       * [Learn more](https://www.adobe.com/go/hipaa-ready) about Adobe's HIPAA ready solution implementation.
    * Once activated, WAF-DDOS protection can then be configured by setting up a [non-production pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
    

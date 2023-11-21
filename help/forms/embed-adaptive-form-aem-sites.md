@@ -260,7 +260,7 @@ You can customize the advanced settings of the **[!UICONTROL Adaptive Form - Emb
 * **Form covers entire width of the frame**: 
 An inline frame (iframe) is an HTML element that loads an Adaptive Form to an AEM Sites page.
 
-    * If the **[!UICONTROL Form covers entire width of the frame]** checkbox is checked, an Adaptive Form occupies the full width of the container in which it is placed. In this case, an iframe is not used to render the form. The layout and design of an Adaptive Form adapt to span the entire width of the container, making it responsive and capable of adjusting to different screen sizes. This option allows to embed multiple Adaptive Forms within an AEM Sites page.
+    * If the **[!UICONTROL Form covers entire width of the frame]** checkbox is checked, an Adaptive Form occupies the full width of the container in which it is placed. In this case, an iframe is not used to render the form. The layout and design of an Adaptive Form adapt to span the entire width of the container, making it responsive and capable of adjusting to different screen sizes. This option lets you embed multiple Adaptive Forms within an AEM Sites page.
 
         >[!NOTE]
         >

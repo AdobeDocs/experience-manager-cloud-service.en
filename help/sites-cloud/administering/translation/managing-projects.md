@@ -449,7 +449,7 @@ The best practice in this scenario is to follow this procedure:
 1. Unpublish the language copies associated with the source page you want to move.
 1. Delete them.
 1. Create new language copies from the newly moved source page.
-1. Publish the newly-created language copies. 
+1. Publish the created language copies. 
 
 ## Importing and Exporting Translation Jobs {#import-export}
 

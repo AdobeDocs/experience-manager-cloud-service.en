@@ -1,8 +1,6 @@
 ---
 title: Configure transcription service
-seo-title: Configure transcription service
 description: Adobe Experience Manager Assets is configured with [!DNL Azure Media Services] which automatically generates text transcript of the spoken language in a supported audio or video file in the WebVTT (Vtt) format.
-seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content and increase the ROI of these assets by supporting accessibility and localization.
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
 content-type: reference
@@ -152,7 +150,7 @@ The following audio and video file formats are supported for transcription:
 ## Known limitations {#known-limitations}
 
 * The transcription feature is supported for videos of duration up to 10 mins.
-* The video title must be less than 80 characters long.
+* The video title must be 80 characters or less.
 * The supported file size is up to 15 GB.
 * The maximum processing duration supported is 60 mins.
 * In a paid [!DNL Azure] account, you can upload up to 50 movies per minute. However, in a trial account you can upload up to five movies per minute.

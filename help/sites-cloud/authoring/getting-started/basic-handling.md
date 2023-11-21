@@ -225,7 +225,7 @@ Due to the space restrictions in some windows, the toolbar can quickly become lo
 
 In [Card View](#card-view) certain actions are available as quick action icons and being on the toolbar. Quick action icons are available for a single item at a time and eliminate the need for you to preselect.
 
-The quick actions are visible when you mouseover (desktop device) a resource card. The quick actions available can depend on the console and context. For example, here are the quick actions for a page in the **Sites** console:
+The quick actions are visible when you mouse over (desktop device) a resource card. The quick actions available can depend on the console and context. For example, here are the quick actions for a page in the **Sites** console:
 
 ![Additional options](/help/sites-cloud/authoring/assets/quick-actions.png)
 
@@ -360,7 +360,7 @@ Selecting a resource in the leftmost column will display the child resources in 
   * **Published** - Publication status
   * **Preview** - Preview status
   * **Template** - Template on which the page is based
-  * **Workflow** - Workflow currently applied to the page. More information is available when you mouseover, or open Timeline.
+  * **Workflow** - Workflow currently applied to the page. More information is available when you mouse over, or open Timeline.
   * **Page analytics**
   * **Unique visitors**
   * **Time on page**

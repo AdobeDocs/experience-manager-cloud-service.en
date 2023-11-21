@@ -90,7 +90,7 @@ To illustrate the deployment of a customized version of the out-of-the-box index
 1. Create a new folder with the updated index name in the `ui.apps` directory: 
     * Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-2. Add a configuration file `.content.xml` with the custom configurations inside the newly-created folder. Below is an example of a customization:
+2. Add a configuration file `.content.xml` with the custom configurations inside the created folder. Below is an example of a customization:
     Filename: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
     ```xml
@@ -302,7 +302,7 @@ After Adobe changes an out-of-the-box index like "damAssetLucene" or "cqPageLuce
 
 ### Current Limitations {#current-limitations}
 
-Index management is only supported for indexes of type `lucene`, with `compatVersion` set to `2`. Internally, other indexes might be configured and used for queries, for example Elasticsearch indexes. Queries that are written against the `damAssetLucene` index might, on AEM as a Cloud Service, in fact be executed against an Elasticsearch version of this index. This difference is invisible to the application end user, however certain tools such as the `explain` feature reports a different index. For differences between Lucene and Elasticsearch indexes, see [the Elasticsearch documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers cannot and do not need to configure Elasticsearch indexes directly.
+Index management is only supported for indexes of type `lucene`, with `compatVersion` set to `2`. Internally, other indexes might be configured and used for queries, for example Elasticsearch indexes. Queries that are written against the `damAssetLucene` index might, on AEM as a Cloud Service, in fact be run against an Elasticsearch version of this index. This difference is invisible to the application user, however certain tools such as the `explain` feature reports a different index. For differences between Lucene and Elasticsearch indexes, see [the Elasticsearch documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers cannot and do not need to configure Elasticsearch indexes directly.
 
 Only built-in analyzers are supported (that is, those analyzers that are shipped with the product). Custom analyzers are not supported.
 

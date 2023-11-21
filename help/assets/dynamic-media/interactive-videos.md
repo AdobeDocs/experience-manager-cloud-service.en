@@ -581,7 +581,7 @@ The existing Quickview implementation normally represents a chain of inter-relat
 1. The backend logic returns the corresponding Quickview data or content back to the front-end code.
 1. The front-end code loads the Quickview data or content.
 1. Optionally, the front-end code converts the loaded Quickview data into an HTML representation.
-1. The front-end code displays a modal dialog box or panel and renders the HTML content on the screen for the end user.
+1. The front-end code displays a modal dialog box or panel and renders the HTML content on the screen for the user.
 
 These calls do not represent independent public API calls which can be called by the web page logic from an arbitrary step. Instead, it is a chained call where every next step is hidden in the last phase (callback) of the previous step.
 
@@ -593,7 +593,7 @@ In such an event handler, the front-end code does the following:
 * Constructs a Quickview URL based on the thumbnail data.
 * Triggers the process of loading the Quickview from the backend and rendering it on the screen for display.
 
-In addition, the Interactive Video viewer supports full screen operation mode. The end user triggers Quick views by selecting a thumbnail without leaving the full screen. To achieve this functionality, you alter the front-end code so that the Quickview modal dialog box is attached to the viewer's container. Do not add document BODY or some other web page element that is not available when the viewer is in full-screen mode. The code that performs this job listens to one more viewer callback that is sent after the viewer loads on the page.
+In addition, the Interactive Video viewer supports full screen operation mode. The user triggers Quick views by selecting a thumbnail without leaving the full screen. To achieve this functionality, you alter the front-end code so that the Quickview modal dialog box is attached to the viewer's container. Do not add document BODY or some other web page element that is not available when the viewer is in full-screen mode. The code that performs this job listens to one more viewer callback that is sent after the viewer loads on the page.
 
 The embed code returned by Experience Manager already has a ready-to-use event handler in place. It is commented out as seen in the following highlighted code snippet:
 

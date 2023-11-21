@@ -124,7 +124,7 @@ Additional authoring tools such as dragging-and-dropping additional components o
 
 ## SPA Apps and the AEM SPA Editor {#spa-apps-and-the-aem-spa-editor}
 
-Experiencing how a SPA behaves for the end user and then inspecting the SPA page helps to better understand how a SAP app works with the SPA Editor in AEM.
+Experiencing how a SPA behaves for the user and then inspecting the SPA page helps to better understand how a SAP app works with the SPA Editor in AEM.
 
 ### Using an SPA Application {#using-an-spa-application}
 

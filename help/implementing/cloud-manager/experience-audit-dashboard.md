@@ -1,12 +1,12 @@
 ---
 title: Experience Audit Dashboard
-description: Learn how Experience Audit validates your deployment process and helps ensure that changes deployed meet baseline standards for performance, accessibility, best practices, and SEO through an clear, informative dashboard interface.
+description: Learn how Experience Audit validates your deployment process and helps ensure that changes deployed meet baseline standards for performance, accessibility, best practices, and SEO through a clear, informative dashboard interface.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 ---
 # Experience Audit Dashboard {#experience-audit-dashboard}
 
 
-Learn how Experience Audit validates your deployment process and helps ensure that changes deployed meet baseline standards for performance, accessibility, best practices, and SEO through an clear, informative dashboard interface.
+Learn how Experience Audit validates your deployment process and helps ensure that changes deployed meet baseline standards for performance, accessibility, best practices, and SEO through a clear, informative dashboard interface.
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ Experience Audit is a feature available in Cloud Manager Sites Production pipeli
 
 1. Do not introduce regressions.
 
-Experience Audit in Cloud Manager ensures that the end user's experience on the site are of the highest standards.
+Experience Audit in Cloud Manager ensures that the user's experience on the site are of the highest standards.
 
 The audit results are informational and allow the deployment manager to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that was introduced with the current deployment.
 

@@ -148,6 +148,7 @@ Prior to removal of the generic Lucene index, the `pathfield` component will be 
 >[!NOTE]
 >
 >The Content Fragment Model Editor uses a specialized path fields with the Sling resource type `dam/cfm/models/editor/components/contentreference`.
+>
 > * At present these perform queries without node types specified, resulting in a WARN being logged due to usage of the generic Lucene index.
 > * Instances of these components will soon automatically default to using `cq:Page` and `dam:Asset` node types without further customer action.
 > * The `nodeTypes` property can be added to override these default node types.
@@ -161,6 +162,6 @@ Adobe will take a two-phase approach to remove the generic Lucene index.
 
 Adobe will monitor the log messages noted above and will attempt to contact customers who remain dependant on the generic Lucene index.
 
-As a short term mitigation, Adobe will add custom index definitions directly to customer systems to prevent functional or performance issues as a result of the removal of the generic Lucene index as necessary.
+As a short term mitigation, Adobe adds custom index definitions directly to customer systems to prevent functional or performance issues as a result of the removal of the generic Lucene index as necessary.
 
-In such cases, the customer will be provided with the updated index definition and advised to include this in future releases of their application via Cloud Manager.
+In such cases, the customer is provided with the updated index definition and is advised that they include it in future releases of their application via Cloud Manager.

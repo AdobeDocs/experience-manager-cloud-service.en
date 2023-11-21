@@ -36,7 +36,7 @@ Your AEM as a Cloud Service team members are added and assigned to one or more o
 
 >[!TIP]
 >
->* To learn more about about AEM product profiles, see [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md).
+>* To learn more about AEM product profiles, see [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md).
 >* For more information on the onboarding process, see [onboarding journey](/help/journey-onboarding/overview.md).
 
 ## Cloud Manager Product Profiles {#cloud-manager-product-profiles}
@@ -76,5 +76,5 @@ Your Cloud Manager team will include at least:
 
 >[!TIP]
 >
->* To learn more about about Cloud Manager product profiles, see [Assigning Team Members to Cloud Manager Product Profiles](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+>* To learn more about Cloud Manager product profiles, see [Assigning Team Members to Cloud Manager Product Profiles](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 >* For more information on the onboarding process, see [onboarding journey](/help/journey-onboarding/overview.md).

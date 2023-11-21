@@ -308,7 +308,7 @@ This can occur for several reasons -
    * In this case, a superset of the final result set is being read from the index and subsequently filtered in the query engine.
    * This is many times slower than applying restrictions in the underlying index query.
 1. The query is sorted by a property which is not marked as 'ordered' in the index.
-   * In this case, all results returned by the the index must be read by the query Engine and sorted in-memory.
+   * In this case, all results returned by the index must be read by the query Engine and sorted in-memory.
    * This is many times slower than applying sorting in the underlying index query. 
 1. The executor of the query is attempting to iterate a large result set.
    * This situation might happen for several reasons, as listed below:

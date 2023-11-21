@@ -151,9 +151,9 @@ Variable names must observe the following conventions.
 * Variables may only contain alphanumeric characters and the underscore (`_`).
 * The names should be all upper-case.
 * There is a limit of 200 variables per pipeline.
-* Each name must be less than 100 characters.
+* Each name must be 100 characters or less.
 * Each `string` variable value must be less than 2048 characters.
-* Each `secretString` type variable value must be less than 500 characters.
+* Each `secretString` type variable value must be 500 characters or less.
 
 When used inside a Maven `pom.xml` file, it is typically helpful to map these variables to Maven properties using a syntax similar to this.
 
