@@ -25,22 +25,25 @@ the [AEM as a Cloud Service deployment process](/help/implementing/cloud-manager
 
 ## Purpose
 
-The AEM Cloud Service deployment pipelines run at different stages in your development and AEM product release
-lifecycle and provide various quality gates at different levels with the goal to ensure robust and safe deployments for
-your AEM application changes and AEM product changes likewise.
+The purpose of the AEM Cloud Service deployment pipelines is to facilitate robust and secure deployments at various
+stages of your development and AEM product release lifecycle. These pipelines incorporate multiple quality gates at
+different levels to ensure the integrity and safety of deployments for both your AEM application changes and AEM product
+updates.
 
-Adobe provides some quality gates out-of-the-box, while others need to be implemented and configured by you. The same
-quality gate can run at different stages in the lifecycle, some can even be used in your own development setup and
-CI/CD.
+Adobe provides several built-in quality gates, while others require your intervention for implementation and
+configuration. These quality gates are versatile, with some being applicable at various stages of the lifecycle and even
+integrable into your own development setup and CI/CD processes.
 
-The out-of-the-box provided quality gates ensure the AEM product functionality works as expected in the context of your
-AEM application. On the other hand, the custom quality gates you provide focus on validating that your application's
-essential features and user interactions work as expected. The two types of quality gates together ensure robust and
-safe automatic deployments for your code changes and AEM product changes.
+The built-in quality gates primarily validate the functionality of the AEM product within the context of your AEM
+application. In contrast, the custom quality gates you set up are designed to verify that your application's critical
+features and user interactions perform as intended. Collectively, these two sets of quality gates work together to
+ensure robust and secure automated deployments for both your code modifications and AEM product updates.
 
-The quality gates are not a general purpose testing framework intended to cover your complete testing strategy. The AEM
-product undergoes extended testing before it reaches the AEM cloud service deployment process. Likewise, your
-application is expected to have a good quality already before it reaches the deployment phase.
+It is important to note that these quality gates are not intended to be a comprehensive testing framework for your
+entire testing strategy. The AEM product is subjected to extensive testing before entering the AEM cloud service
+deployment process. Similarly, your application should already be of high quality before it reaches the deployment
+phase. This approach ensures that the quality gates focus on their primary objective of safeguarding the deployment
+process, rather than being a substitute for a full testing regimen.
 
 ## Quality Gates
 
@@ -56,9 +59,9 @@ application is expected to have a good quality already before it reaches the dep
 
 ### Unit Test
 
-You need to provide the unit tests for your AEM application, which are the foundation of every testing strategy. They
-are intended to run fast and often and give early and fast feedback. They are tightly integrated into the developer
-workflows, your own CI/CD and the AEM cloud service deployment pipelines.
+You are encouraged to provide the unit tests for your AEM application, which are the foundation of every testing
+strategy. They are intended to run fast and often and give early and fast feedback. They are tightly integrated into the
+developer workflows, your own CI/CD and the AEM cloud service deployment pipelines.
 
 They are implemented using JUnit and are executed with Maven. Please refer to the
 [core module of the AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests)
@@ -99,9 +102,8 @@ built on top of the official [AEM Testing Clients](https://github.com/adobe/aem-
 
 In order to keep pipeline executions efficient, we recommend to focus on key features and main user interaction flows.
 An execution time of ~15 minutes or less for functional tests is recommended. Full functional test suites that do not
-fit in
-this quality gate are recommended to be executed as part of general customer validation pipelines during the customer's
-development flow.
+fit in this quality gate are recommended to be executed as part of general customer validation pipelines during the
+customer's development flow.
 
 Please refer to the [open-sourced product tests](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) or the
 [it.tests module of the AEM Projects Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html)
@@ -111,11 +113,12 @@ See [Java Functional Tests](/help/implementing/cloud-manager/java-functional-tes
 
 ### Custom UI Tests
 
-Custom UI testing enables you to create and automatically run UI tests for your AEM applications. Custom UI tests
-follow the same characteristics and purpose like the custom functional tests but are focused on UI interactions.
+To maximise risk control for your customer specific development, Adobe strongly encourages you to capture critical UI
+tests into AEMCS. They are intended to be kept rather limited in number, but with the highest impact on your customer
+experience.
 
-UI tests support different UI-testing frameworks (e.g. Cypress) and tests are packaged in a Docker image to allow for a
-wide choice of language and frameworks.
+The tests are packaged in a Docker images - designed to be as volatile as possible (with support for Cypress, Selenium,
+Java, Javascript, etc). They follow the same characteristics and purpose like the custom functional tests.
 
 > [!NOTE]
 >
@@ -140,7 +143,7 @@ The experience audit quality gate is
 performing [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
 audits against the customer's webpage.
 
-This quality gate is provided by AEM out-of-the box, but is currently not blocking the deployment pipelines. By default,
+This quality gate is provided by AEM out-of-the box, but is not blocking the deployment pipelines. By default,
 an audit against the root page (`/`) of the publish instance is performed. You can contribute by configuring up to 25
 custom paths that are considered for audits.
 
