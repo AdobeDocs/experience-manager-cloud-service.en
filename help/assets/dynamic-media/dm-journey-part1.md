@@ -82,7 +82,7 @@ As you read on, you are going to learn more about why this concept of "one prima
 
 When you are ready to go live with an image asset or a video asset, it is supported by Dynamic Media's backbone consisting of a powerful, top-tier delivery network. The network serves hundreds of clients around the world every day. The assets are distributed on the Content Delivery Network &ndash; or CDN &ndash; hosted by Akamai. The CDN is a system of computer services networked together that cooperate transparently to deliver content, especially large rich media content, to end users. 
 
-In the CDN system, web content is stored in web caches across the Internet. Then it is delivered from the web cache to end users to make for faster delivery. So, the first time someone downloads a web page, the assets they see are delivered to a CDN cache. They are stored on the server so that the next time someone in the same area accesses the webpage, the same cache content is delivered faster. The content is delivered faster because it is located closer to the end user. A CDN makes for faster web page displays, and yet it decreases bandwidth demands on the central server because content is delivered from a cache network, not from a central server in every instance. This optimized flow means a better user experience, leading to increased sales.
+In the CDN system, web content is stored in web caches across the Internet. Then it is delivered from the web cache to end users to make for faster delivery. So, the first time someone downloads a web page, the assets they see are delivered to a CDN cache. They are stored on the server so that the next time someone in the same area accesses the webpage, the same cache content is delivered faster. The content is delivered faster because it is located closer to the user. A CDN makes for faster web page displays, and yet it decreases bandwidth demands on the central server because content is delivered from a cache network, not from a central server in every instance. This optimized flow means a better user experience, leading to increased sales.
 
 <!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
 
@@ -170,7 +170,7 @@ Another use case that Dynamic Media solves for is video. Video is complex. It is
 | **Issue** | **Dynamic Media solution** |
 |---|---|
 | Difficult to manage and deliver video optimized for various devices. | Use a single video that automatically sizes for all devices. |
-| Videos stall or play back in low quality due to end user's available bandwidth. | Deliver video through an HTML player that auto-detects available bandwidth and adapts quality to ensure high fidelity and smooth playback. |
+| Videos stall or play back in low quality due to user's available bandwidth. | Deliver video through an HTML player that auto-detects available bandwidth and adapts quality to ensure high fidelity and smooth playback. |
 | Unfeasible and time-consuming to manually create all versions of a video just to ensure good display and playback across devices. | Eliminate hours of tedious transcoding work with a simplified workflow. |
 | | Free up time for higher value work. | 
 

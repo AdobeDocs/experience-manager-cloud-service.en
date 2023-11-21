@@ -49,7 +49,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 * Only the last page of the InDesign Template is there in the PDF Rendition. (CQ-4317305)
 * Tag picker takes long to open when the picker is part of a complex metadata schema. (CQ-4316426)
 * When uploading asset with same filename as an existing one, the name conflict dialog does not display to prompt the user to create a version. (CQ-4315424)
-* Folder Metadata Properties can be set and saved from the popup menu in a folder's Properties page. While the selection is saved in the repository, it is not displayed when the Folder Metadata Properties are opened again. (CQ-4314429)
+* Folder Metadata Properties can be set and saved from the pop-up menu in a folder's Properties page. While the selection is saved in the repository, it is not displayed when the Folder Metadata Properties are opened again. (CQ-4314429)
 * Assets with filenames containing spaces or special characters get uploaded using the browser. (CQ-4318381)
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}

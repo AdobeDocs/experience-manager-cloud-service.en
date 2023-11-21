@@ -48,7 +48,7 @@ Have a look at the [August 2021 Release Overview](https://video.tv.adobe.com/v/3
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
 * When a member of the contributor group navigates to the [!DNL Assets] Console, an extra `POST` request is generated to create a Collection. This request is not required; it fails due to permissions issues, and creates many errors in the logs. (CQ-4328856)
-* When users view an asset and select the [!UICONTROL Timeline] from the popup menu in the left panel, an error is displayed. In the logs, many warnings are logged due to a bad query. (CQ-4328919)
+* When users view an asset and select the [!UICONTROL Timeline] from the pop-up menu in the left panel, an error is displayed. In the logs, many warnings are logged due to a bad query. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

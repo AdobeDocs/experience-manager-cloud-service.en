@@ -21,7 +21,7 @@ The **GraphiQL** tool lets you test and debug your GraphQL queries by enabling y
 * select the **Endpoint** appropriate to the Sites configuration that you want to use for your queries
 * directly input new queries 
 * create, and access, **[Persisted Queries](/help/headless/graphql-api/persisted-queries.md)**
-* run your queries to immediately see the the results
+* run your queries to immediately see the results
 * manage **Query Variables** 
 * save, and manage **Persisted Queries**
 * publish, or unpublish, **Persisted Queries**, to either your **Publish** or **Preview** service; for example, to/from `dev-publish`
@@ -76,7 +76,7 @@ You can run a new query immediately, or you can load and run a persisted query. 
 
 In either case, the query showing in the editor panel is the query that is run when you either:
 
-* click/tap on the **Execute Query** icon
+* select on the **Execute Query** icon
 * use the keyboard combination `Control-Enter`
 
 ## Query variables {#query-variables}
@@ -93,13 +93,13 @@ For example:
 
 >[!NOTE]
 >
->For further details see [Caching your persisted queries](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>See [Caching your persisted queries](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >
 >Custom rewrite rules on the Dispatcher might override defaults from AEM publish. 
 >
->In the case that you are sending TTL-based cache-control headers from the dispatcher, based on a location match pattern, then, if necessary, you might want to exclude `/graphql/execute.json/*` from the matches.
+>In the case that you are sending TTL-based cache-control headers from the dispatcher, based on a location match pattern, then if it is necessary, you might want to exclude `/graphql/execute.json/*` from the matches.
 
 Using GraphQL you can configure the HTTP Cache Headers  to control these parameters for your individual persisted query.
 
@@ -107,7 +107,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
    ![Persisted Query HTTP Cache Headers](assets/cfm-graphqlapi-headers-01.png "Persisted Query HTTP Cache Headers")
 
-1. Selecting this will open the **Cache Configuration** dialog:
+1. Selecting this opens the **Cache Configuration** dialog box:
 
    ![Persisted Query HTTP Cache Header Settings](assets/cfm-graphqlapi-headers-02.png "Persisted Query HTTP Cache Header Settings")
 
@@ -153,7 +153,7 @@ The **Copy URL** option lets you simulate a query, by copying the URL used to di
 <!--
   >[!NOTE]
   >
-  >The URL will need [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
+  >The URL needs [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
   >
   >The target environment might need adjusting, depending on your requirements.
 -->

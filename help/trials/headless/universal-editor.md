@@ -29,13 +29,13 @@ Editing in place and in context can often be advantageous over structured headle
 
 >[!NOTE]
 >
->In order to use the Universal Editor in this trial, you must use Chrome as your browser and not in incognito mode. This is a limitation of the trial experience, not of the Universal Editor.
+>To use the Universal Editor in this trial, you must use Chrome as your browser and not in incognito mode. This is a limitation of the trial experience, not of the Universal Editor.
 
 Using the Universal Editor, you have an agile way to edit your text in context and in place, allowing simple and intuitive content authoring.
 
-1. The editor should load by default in **Components** mode. If not, please tap or click the **Components** icon in the mode rail at the left side of the editor.
+1. The editor should load by default in **Components** mode. If not, select the **Components** icon in the mode rail at the left side of the editor.
 
-1. Double tap or click the title of the latest article to edit it.
+1. Double select the title of the latest article to edit it.
 
    ![The Universal Editor](assets/do-not-localize/ue-component-mode.png)
 
@@ -43,7 +43,7 @@ Using the Universal Editor, you have an agile way to edit your text in context a
 
    ![Editing text in the Universal Editor](assets/do-not-localize/ue-edit-text-2.png)
 
-1. Press the enter/return key or tap or click outside of the text component and your changes are saved automatically.
+1. Press the enter/return key or select outside of the text component and your changes are saved automatically.
 
 The Universal Editor saves your changes automatically within the authoring environment. You still need to publish them for your readers to see, which we will do in a later step.
 
@@ -51,15 +51,15 @@ The Universal Editor saves your changes automatically within the authoring envir
 
 You can also swap out images while still remaining in the context of your content by using the Universal Editor.
 
-1. Remaining in **Components** mode, tap or click the image of the surfer to select it.
+1. Remaining in **Components** mode, select the image of the surfer to select it.
 
-1. In the component rail, you can see the detail of the asset. Tap or click the **Featured Image** thumbnail.
+1. In the component rail, you can see the detail of the asset. Select the **Featured Image** thumbnail.
 
    ![Selecting an image to edit](assets/do-not-localize/ue-edit-media.png)
 
-1. In the **Select Assets** window, scroll down and tap or click the `surfer-wave-02.JPG` image to select it.
+1. In the **Select Assets** window, scroll down and select the `surfer-wave-02.JPG` image to select it.
 
-1. Tap or click **Select** in the **Select Assets** window.
+1. Select **Select** in the **Select Assets** window.
 
    ![Using the Select Asset window to select an image](assets/do-not-localize/ue-select-asset.png)
 
@@ -69,27 +69,27 @@ The image is replaced with the one you selected.
 
 The Universal Editor lets you interact with your content within its context, seeing the content as it is delivered to the devices of your users.
 
-1. By default the editor renders the desktop version of your content. Tap or click the emulator button at the top-right of the editor to change the target device.
+1. By default the editor renders the desktop version of your content. Select the emulator button at the top-right of the editor to change the target device.
 
    ![The emulator menu item](assets/do-not-localize/ue-emulator-1.png)
 
-1. Readers may be on different devices with different aspect ratios, so the editor offers emulation modes in order to see how the page will be presented to users. For example, select the mobile device option in portrait mode.
+1. Readers may be on different devices with different aspect ratios, so the editor offers emulation modes to see how the page will be presented to users. For example, select the mobile device option in portrait mode.
 
    ![The emulator menu item](assets/do-not-localize/ue-emulator-2.png)
 
-1. See the content change in the editor. The icon for the emulator also changes to reflect the mode it is in. Tap or click anywhere outside of the emulator menu to close it and interact with your content.
+1. See the content change in the editor. The icon for the emulator also changes to reflect the mode it is in. Select anywhere outside of the emulator menu to close it and interact with your content.
 
 1. Return the emulator to desktop mode.
 
-You can also specify exact dimensions for the emulator and rotate the emulated device in order to view your content on any potential target device.
+You can also specify exact dimensions for the emulator and rotate the emulated device to view your content on any potential target device.
 
 ## Previewing and Publishing {#preview}
 
-Because you need to tap or click your content to select it in the editor, the editor does not allow you to follow links or interact with your content by tapping or clicking when it is in an edit mode. Using preview mode, you can follow the links within your content and experience it as your users would before publishing.
+Because you need to select your content to select it in the editor, the editor does not allow you to follow links or interact with your content by tapping or clicking when it is in an edit mode. Using preview mode, you can follow the links within your content and experience it as your users would before publishing.
 
-1. In the mode rail on the left side of the editor, tap or click **Preview**.
+1. In the mode rail on the left side of the editor, select **Preview**.
 
-1. Now tap or click on the **Read More** link for the main article.
+1. Now select the **Read More** link for the main article.
 
    ![Preview mode](assets/do-not-localize/ue-preview-publish-1.png)
 
@@ -97,7 +97,7 @@ Because you need to tap or click your content to select it in the editor, the ed
 
    ![Return to main page using Back link](assets/do-not-localize/ue-preview-publish-3.png)
 
-1. Now tap or click on the **Publish** button at the top-right of the editor to publish your content.
+1. Now select the **Publish** button at the top-right of the editor to publish your content.
 
    ![The preview and publish menu items](assets/do-not-localize/ue-preview-publish-4.png)
 
@@ -111,12 +111,12 @@ To accelerate your content authoring experience when structured editing of headl
 
 1. In the mode rail on the left side of the editor, select **Components**. This lets you select page components in the editor.
 
-1. Tap or click one of the adventures such as **Bali Surf Camp** to select it.
+1. Select one of the adventures such as **Bali Surf Camp** to select it.
 
    * Note the blue outline of the selected component. The tab should display the name of the Content Fragment when a Content Fragment is selected. In this case **Bali Surf Camp**.
-   * Because the Universal Editor allows selecting any object on the page, components that are parts of a Content Fragment can also be selected individually. Tap or click where indicated in the illustration to select the entire Content Fragment component.
+   * Because the Universal Editor allows selecting any object on the page, components that are parts of a Content Fragment can also be selected individually. Select where indicated in the illustration to select the entire Content Fragment component.
 
-1.  The **Edit** icon appears on the component rail. Tap or click the **Edit** icon to open the Content Fragment editor on a new tab.
+1.  The **Edit** icon appears on the component rail. Select the **Edit** icon to open the Content Fragment editor on a new tab.
 
    ![Selecting Content Fragments in the Universal Editor](assets/do-not-localize/ue-content-fragments.png)
 

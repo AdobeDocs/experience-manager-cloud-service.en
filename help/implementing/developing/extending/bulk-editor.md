@@ -14,7 +14,7 @@ Page properties are not enabled for bulk editing as default. They must be explic
 * Certain fields are usually unique. You must decide whether it is meaningful to enable such fields for bulk editing, when one value will be applied.
   *  For example, page titles are nearly always unique.
 * Certain fields might have multiple values which needs meaningful representation when rendering.
-  * For example, a status drop-down labeled **Ready for Publication**. This might have several values before bulk-editing such as **ready**, **in-review**, **in-progress**, etc.
+  * For example, a status drop-down labeled **Ready for Publication**. This might have several values before bulk-editing such as **ready**, **in-review**, **in-progress**, and so on.
 
 Because of the possibility of multiple values, it is recommended to only enable the following field types for bulk editing.
 

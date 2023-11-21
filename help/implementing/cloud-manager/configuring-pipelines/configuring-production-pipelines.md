@@ -13,7 +13,7 @@ A user must have the **[Deployment Manager](/help/onboarding/cloud-manager-intro
 
 >[!NOTE]
 >
->A production pipeline can not be set up until program creation is complete, a git repository has at least one branch, and a production and staging environment set is created.
+>A production pipeline cannot be set up until program creation is complete, a git repository has at least one branch, and a production and staging environment set is created.
 
 Before you start to deploy your code, you must configure your pipeline settings from the [!UICONTROL Cloud Manager].
 
@@ -31,7 +31,7 @@ Once you have set up your program and have at least one environment using the [!
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click on **Add** to select **Add Production Pipeline**. 
+1. Navigate to the **Pipelines** card from the **Program Overview** page and click **Add** to select **Add Production Pipeline**. 
 
    ![The Pipelines card on the Program Manager overview](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
@@ -55,7 +55,7 @@ Once you have set up your program and have at least one environment using the [!
    * **[Full Stack Code](#full-stack-code)**
    * **[Targeted deployment](#targeted-deployment)**
 
-Please see the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) for more information about the types of pipelines.
+See [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) for more information about the types of pipelines.
 
 The steps to complete the creation of your production pipeline vary depending on the type of source code you selected. Follow the links above to jump to the next section of this document so you can complete the configuration of your pipeline.
 
@@ -105,7 +105,7 @@ To finish the configuration of the full-stack code production pipeline, follow t
    * You can add a maximum of 25 paths.
    * If you do not define any paths, the homepage of the site is included in the Experience Audit by default.
 
-1. Click on **Save** to save your pipeline.
+1. Click **Save** to save your pipeline.
 
 Paths configured for the Experience Audit are submitted to the service and evaluated according to the performance, accessibility, SEO (Search Engine Optimization), best practice, and PWA (Progressive Web App) tests when the pipeline runs. See [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 

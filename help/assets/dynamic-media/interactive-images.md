@@ -372,7 +372,7 @@ The existing Quickview implementation normally represents a chain of inter-relat
 1. The backend logic returns the corresponding Quickview data or content back to the front-end code.
 1. The front-end code loads the Quickview data or content.
 1. Optionally, the front-end code converts the loaded Quickview data into an HTML representation.
-1. The front-end code displays a modal dialog box or panel and renders the HTML content on the screen for the end user.
+1. The front-end code displays a modal dialog box or panel and renders the HTML content on the screen for the user.
 
 These calls do not necessarily represent independent public API calls that are called by the web page logic from an arbitrary step. Instead, it is a chained call where every next step is hidden in the last phase (callback) of the previous step.
 
@@ -399,7 +399,7 @@ The embed code returned by Experience Manager Assets has a ready-to-use event ha
              s7interactiveimageviewer.setHandlers({
                 "quickViewActivate": function(inData) {
                     var sku=inData.sku; //SKU for product ID
-                    //To pass other parameter from the hotspot, you will need to add custom parameter during the hotspot setup as parameterName=value
+                    //To pass other parameter from the hotspot, add custom parameter during the hotspot setup as parameterName=value
                     loadQuickView(sku); //Replace this call with your Quickview plugin
                     //See your Quickviewer plugin for the Quickview call
                  },

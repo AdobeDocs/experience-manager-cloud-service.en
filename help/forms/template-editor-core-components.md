@@ -274,7 +274,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 * Create templates using the components based on Core Components, for example Adaptive Form Text, Adaptive Form Container and more. To get information on Adaptive Forms Core Components, [click here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html).  
 * Limit the number of templates to match the fundamentally different form types available on the websites
-* Provide the necessary flexibility and configuration capabilities to your custom components used in an template.
+* Provide the necessary flexibility and configuration capabilities to your custom components used in a template.
 
 <!--
 ## See next

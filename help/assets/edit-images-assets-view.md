@@ -30,7 +30,7 @@ Resizing an image to a specific size is a popular use case. [!DNL Assets view] l
 1. Select an image and click **Edit**.
 2. Click **[!DNL Resize Image]** from the quick actions available in the left pane.
 3. Select the appropriate social media platform from the **[!UICONTROL Resize for]** drop-down list and select the image size from the options that display. 
-4. Scale the image, if required, using the **[!UICONTROL Image Scale]** field.
+4. Scale the image, if necessary, using the **[!UICONTROL Image Scale]** field.
 5. Click **[!DNL Apply]** to apply your changes.
    ![Image editing with Adobe Express](assets/adobe-express-resize-image.png)
 
