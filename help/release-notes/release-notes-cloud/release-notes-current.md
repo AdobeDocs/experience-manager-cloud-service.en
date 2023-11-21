@@ -95,6 +95,20 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
      You can write to `aem-forms-early-adopter-program@adobe.com` from your official email id to join the early adopter program and request access to the capability.
      
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### CDN Configuration early adopter program {#cdn-config-early-adopter}
+
+In additon to the recently released [Traffic Filter Rules (including WAF)](/help/security/traffic-filter-rules-including-waf.md), there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. We'd love to hear about your use cases, including:
+* client-side redirects
+* server-side proxies
+* setting headers
+* error pages when the CDN can't reach AEM
+* basic auth
+* any other potential CDN configurations
+
+Send an email to **aemcs-cdn-config-adopter@adobe.com** from your official email ID with your feedback.
+
 ## Cloud Manager {#cloud-manager}
 
 You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes/current.md).
