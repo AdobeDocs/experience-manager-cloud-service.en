@@ -99,7 +99,7 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
 ### CDN Configuration early adopter program {#cdn-config-early-adopter}
 
-In additon to the recently released [Traffic Filter Rules (including WAF)](/help/security/traffic-filter-rules-including-waf.md), there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. We'd love to hear about your use cases, including:
+In addition to the recently released [Traffic Filter Rules (including WAF)](/help/security/traffic-filter-rules-including-waf.md), there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. We'd love to hear about your use cases, including:
 * client-side redirects
 * server-side proxies
 * setting headers
