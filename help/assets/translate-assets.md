@@ -53,7 +53,7 @@ Multilingual assets means assets with binaries, metadata, and tags in multiple l
 
 In Adobe Experience Manager Assets, multilingual assets are included in folders, where each folder contains the assets in a different language.
 
-Each language folder is called a language copy. The root folder of a language copy, known as the language root, identifies the language of the content in the language copy. For example, `/content/dam/it` is the Italian language root for the Italian language copy. Language copies must use a [correctly-configured language root](#create-a-language-root) so that the correct language is targeted when translations of source assets are performed.
+Each language folder is called a language copy. The root folder of a language copy, known as the language root, identifies the language of the content in the language copy. For example, `/content/dam/it` is the Italian language root for the Italian language copy. Language copies must use a [correctly configured language root](#create-a-language-root) so that the correct language is targeted when translations of source assets are performed.
 
 The language copy for which you originally add assets is the language primary. The language primary is the source that is translated into other languages. A sample folder hierarchy includes several language roots:
 
@@ -118,7 +118,7 @@ If you use this option, assets to be translated are copied to the language root 
 
 ### Add to an existing translation project {#add-to-existing-translation-project}
 
-If you use this option, the translation workflow runs for assets that you add to the source folder after running a previous translation workflow. Only the newly added assets are copied to the target folder that contains previously-translated assets. No new translation project is created in this case.
+If you use this option, the translation workflow runs for assets that you add to the source folder after running a previous translation workflow. Only the newly added assets are copied to the target folder that contains previously translated assets. No new translation project is created in this case.
 
 1. In the Assets UI, navigate to the source folder that contains untranslated assets.
 1. Select an asset you want to translate, and open the **[!UICONTROL Reference pane]**. The **[!UICONTROL Language Copies]** section displays the number of translation copies that are currently available.
@@ -147,7 +147,7 @@ If you use this option, the translation workflow runs for assets that you add to
 
 ### Update language copies {#update-language-copies}
 
-Run this workflow to translate any additional set of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously-translated assets. Depending on the choice of options, a translation project is created or an existing translation project is updated for the new assets. The Update language copies workflow includes the following options:
+Run this workflow to translate any additional set of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously translated assets. Depending on the choice of options, a translation project is created or an existing translation project is updated for the new assets. The Update language copies workflow includes the following options:
 
 * Create a new translation project
 * Add to existing translation project
@@ -200,7 +200,7 @@ In this workflow, assets to be translated are copied to the language root of the
 
 **Update language copies**
 
-You run this workflow to translate an additional group of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously-translated assets.
+You run this workflow to translate an additional group of assets and include it in a language copy for a particular locale. In this case, the translated assets are added to the target folder that already contains previously translated assets.
 
 >[!NOTE]
 >

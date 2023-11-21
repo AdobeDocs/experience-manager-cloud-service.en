@@ -143,7 +143,7 @@ As with other components, you can select and then act on (cut, copy, delete) a L
 >
 >As a layout container is a paragraph system, deleting the component will delete both the layout grid and all the components (and their content) held within the container.
 
-1. If you mouseover or tap the grid placeholder, the action menu is displayed.
+1. If you mouse over or tap the grid placeholder, the action menu is displayed.
 
    ![Add to the layout container](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 

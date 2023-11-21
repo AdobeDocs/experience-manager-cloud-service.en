@@ -265,7 +265,7 @@ You can create a user group or assign permissions to an existing user group. Per
 
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**. Select the [!DNL Adobe Stock] cloud configuration and click **[!UICONTROL Properties]**.
 
-1. Add the newly-created user group to the [!DNL Adobe Stock] configuration. Click **[!UICONTROL Save & Close]**.
+1. Add the created user group to the [!DNL Adobe Stock] configuration. Click **[!UICONTROL Save & Close]**.
    
    ![assign-user](assets/aem-stock-adduser.png)
 

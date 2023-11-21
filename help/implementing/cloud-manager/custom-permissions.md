@@ -198,7 +198,7 @@ Default product profiles and cloud manager roles continue to work the same as be
 
 ### Can I edit predefined permission profiles?
 
-No, default profiles are non-editable. You can not add or remove permissions to default permission profile. You can only add or remove users from predefined profiles.
+No, default profiles are non-editable. You cannot add or remove permissions to default permission profile. You can only add or remove users from predefined profiles.
 
 ### Should I delete predefined permission profiles since custom profiles are now available?
 

@@ -13,7 +13,7 @@ A user must have the **[Deployment Manager](/help/onboarding/cloud-manager-intro
 
 >[!NOTE]
 >
->A production pipeline can not be set up until program creation is complete, a git repository has at least one branch, and a production and staging environment set is created.
+>A production pipeline cannot be set up until program creation is complete, a git repository has at least one branch, and a production and staging environment set is created.
 
 Before you start to deploy your code, you must configure your pipeline settings from the [!UICONTROL Cloud Manager].
 

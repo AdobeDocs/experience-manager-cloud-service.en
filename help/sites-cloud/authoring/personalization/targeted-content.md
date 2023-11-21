@@ -45,7 +45,7 @@ The activities and experiences that you see in Target mode reflect the [Activiti
 
 >[!NOTE]
 >
->When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId` to each campaign. When you delete the campaign in Adobe Target, thirdPartyId is not deleted. You cannot re-use the `thirdPartyId` for campaigns of different types (AB, XT) and it cannot be manually removed. To avoid this issue, name each campaign a unique name; campaign names can therefore not be re-used in different campaign types.
+>When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId` to each campaign. When you delete the campaign in Adobe Target, thirdPartyId is not deleted. You cannot re-use the `thirdPartyId` for campaigns of different types (AB, XT) and it cannot be manually removed. To avoid this issue, name each campaign a unique name; campaign names cannot be re-used in different campaign types.
 >
 >If you use the same name in the same campaign type, you will overwrite the existing campaign.
 >

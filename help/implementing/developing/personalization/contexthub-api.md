@@ -213,7 +213,7 @@ Retrieves the keys from the store. Optionally you can retrieve the keys that are
 
 ##### Parameters {#parameters-getkeys}
 
-* **`includeInternals`:** A value of `true` includes internally-used keys in the results. These keys begin with the underscore (`_`) character. The default value is `false`.
+* **`includeInternals`:** A value of `true` includes internally used keys in the results. These keys begin with the underscore (`_`) character. The default value is `false`.
 
 ##### Returns {#returns-getkeys}
 
@@ -236,7 +236,7 @@ Retrieves the data tree from the store. Optionally you can include the key/value
 
 ##### Parameters {#parameters-gettree}
 
-* `includeInternals:` A value of `true` includes internally-used key/value pairs in the results. The keys of this data begin with the underscore (`_`) character. The default value is `false`.
+* `includeInternals:` A value of `true` includes internally used key/value pairs in the results. The keys of this data begin with the underscore (`_`) character. The default value is `false`.
 
 ##### Returns {#returns-gettree}
 
@@ -850,7 +850,7 @@ A copy of tree that is cleaned.
 
 #### getItem() {#getitem}
 
-Retrieves the value from an object for the a key.
+Retrieves the value from an object for the key.
 
 ##### Parameters {#parameters-getitem-2}
 

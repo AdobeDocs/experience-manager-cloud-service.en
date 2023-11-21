@@ -95,7 +95,7 @@ To define your new segment:
     * Minimum value: `0`
     * Maximum value: `1000000`
 
-1. From the segments console, edit your newly-created segment to open it in the segment editor.
+1. From the segments console, edit your created segment to open it in the segment editor.
 1. Drag a comparison or reference to the segment editor it will appear in the default AND container.
 1. Double-select the configure option of the new reference or segment to edit the specific parameters. In this example, we are testing for people in Basel.
 

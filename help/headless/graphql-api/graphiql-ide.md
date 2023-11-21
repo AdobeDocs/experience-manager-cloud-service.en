@@ -21,7 +21,7 @@ The **GraphiQL** tool lets you test and debug your GraphQL queries by enabling y
 * select the **Endpoint** appropriate to the Sites configuration that you want to use for your queries
 * directly input new queries 
 * create, and access, **[Persisted Queries](/help/headless/graphql-api/persisted-queries.md)**
-* run your queries to immediately see the the results
+* run your queries to immediately see the results
 * manage **Query Variables** 
 * save, and manage **Persisted Queries**
 * publish, or unpublish, **Persisted Queries**, to either your **Publish** or **Preview** service; for example, to/from `dev-publish`
@@ -99,7 +99,7 @@ For example:
 >
 >Custom rewrite rules on the Dispatcher might override defaults from AEM publish. 
 >
->In the case that you are sending TTL-based cache-control headers from the dispatcher, based on a location match pattern, then, if necessary, you might want to exclude `/graphql/execute.json/*` from the matches.
+>In the case that you are sending TTL-based cache-control headers from the dispatcher, based on a location match pattern, then if it is necessary, you might want to exclude `/graphql/execute.json/*` from the matches.
 
 Using GraphQL you can configure the HTTP Cache Headers  to control these parameters for your individual persisted query.
 

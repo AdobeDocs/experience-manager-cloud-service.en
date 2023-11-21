@@ -186,7 +186,7 @@ You can now adapt the node to your needs by modifying properties or creating new
 >
 >Most of the edit operations, including **Create Node**, keeps all the changes in memory, and only stores them in the repository upon saving (using the [**Save All Button**](#save-all-button)). However some operations such as move are automatically persisted.
 >
->The validation with regard to whether the newly-created node is allowed by the node type of the parent node is also carried out by the repository when saving changes. If you receive an error message while saving a node, check if the content structure is valid (for example, you cannot create an `nt:unstructured` node as a child of `nt:folder` node).
+>The validation with regard to whether the created node is allowed by the node type of the parent node is also carried out by the repository when saving changes. If you receive an error message while saving a node, check if the content structure is valid (for example, you cannot create an `nt:unstructured` node as a child of `nt:folder` node).
 
 ## Creating a Property {#creating-a-property}
 
@@ -236,7 +236,7 @@ To import a node type definition:
 With CRXDE Lite you can display the file `error.log` that is located on the file system at `<aem-install-dir>/crx-quickstart/logs` and filter it with the appropriate log level. Proceed as follows:
 
 1. Open CRXDE Lite in your browser.
-1. In the in the drop-down menu on the right of the [**Console Tab**](#console-tab) at the bottom of the window, select **Server Logs**.
+1. In the drop-down menu on the right of the [**Console Tab**](#console-tab) at the bottom of the window, select **Server Logs**.
 1. Click the **Stop** icon to display the messages.
 
 You can:
