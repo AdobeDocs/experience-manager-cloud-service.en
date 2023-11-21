@@ -315,7 +315,7 @@ You require  a repository to deploy the theme. Log in to your [AEM Cloud Manager
 
 ##### 5.2. Push the changes to the repository {#committing-the-changes}
 
-Now, push the changes to the theme repository of your AEM Forms Cloud Service. . 
+Now, push the changes to the theme repository of your AEM Forms Cloud Service.
 
 1. Navigate to the root of the theme folder.  In this case, the theme folder name is `aem-forms-theme-canvas`. 
 1. Open the command prompt or terminal.

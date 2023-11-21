@@ -112,7 +112,7 @@ Production setups can vary in multiple aspects.
 
 * You can have a single federated GraphQL endpoint which combines AEM and Adobe Commerce GraphQL data instead of customising Apollo client.
 * Your PWA Studio application could use the AEM GraphQL endpoint URL directly, without a proxy with UPWARD. The proxy could also be moved to a different layer (for example, CDN).
-* Which approach fits best for you also heavily depends on how you deliver the PWA Studio application to the end user.
+* Which approach fits best for you also heavily depends on how you deliver the PWA Studio application to the user.
 
 This extension comes with two examples.
 

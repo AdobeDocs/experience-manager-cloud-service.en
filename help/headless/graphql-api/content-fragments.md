@@ -493,7 +493,7 @@ The following operators can be used to compare fields to a certain value:
 | `AFTER` | `Calendar`, `Date`, `Time` | ... the point in time denoted by the value is after the point in time denoted by the content of the field |
 | `AT_OR_AFTER` | `Calendar`, `Date`, `Time` | ... the point in time denoted by the value is after or at the same point in time denoted by the content of the field |
 
-Some types also allow to specify additional options that modify how an expression is evaluated:
+Some types also let you specify additional options that modify how an expression is evaluated:
 
 | Option | Type(s) | Description |
 |--- |--- |--- |

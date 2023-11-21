@@ -36,7 +36,7 @@ To create a ContextHub segment in the Audiences console:
 
    >[!NOTE]
    >
-   >You can sort the modified list by tapping or clicking **Modified** to sort by descending order to see any newly-created audiences.
+   >You can sort the modified list by tapping or clicking **Modified** to sort by descending order to see any created audiences.
 
 For further detail about creating segments using ContextHub, see the Configuring Segmentation with ContextHub documentation. <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 

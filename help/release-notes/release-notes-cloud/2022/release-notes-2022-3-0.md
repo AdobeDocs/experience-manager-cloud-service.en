@@ -85,7 +85,7 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### What is New {#what-is-new-foundation}
 
-* For more efficient and effective troubleshooting of custom features in Cloud environments, we've released a new developer tool – [the Repository Browser](/help/implementing/developing/tools/repository-browser.md). It's a lightweight, read-only, HTML browser that you can launch from the Developer Console. Get visibility into the content repository on the publisher, author, and preview tiers—and in all environments, including production, stage, and dev. Browse the content structure, view properties, and preview and download binaries.
+* For more efficient and effective troubleshooting of custom features in Cloud environments, we've released a new developer tool – [the Repository Browser](/help/implementing/developing/tools/repository-browser.md). It is a lightweight, read-only, HTML browser that you can launch from the Developer Console. Get visibility into the content repository on the publisher, author, and preview tiers—and in all environments, including production, stage, and dev. Browse the content structure, view properties, and preview and download binaries.
 
   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 

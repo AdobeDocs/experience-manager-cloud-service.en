@@ -46,7 +46,7 @@ The [WKND tutorial site](/help/implementing/developing/introduction/develop-wknd
 
 The language copy for which you originally author site content is the language master. The language master is the source that is translated into other languages.
 
-Each language branch of a site is called a language copy. The root page of a language copy, known as the language root, identifies the language of the content in the language copy. For example, `/content/wknd/fr` is the language root for the French language copy. Language copies must use a [correctly-configured language root](preparation.md#creating-a-language-root) so that the correct language is targeted when translations of a source site are performed.
+Each language branch of a site is called a language copy. The root page of a language copy, known as the language root, identifies the language of the content in the language copy. For example, `/content/wknd/fr` is the language root for the French language copy. Language copies must use a [correctly configured language root](preparation.md#creating-a-language-root) so that the correct language is targeted when translations of a source site are performed.
 
 Use the following steps to prepare your site for translation:
 

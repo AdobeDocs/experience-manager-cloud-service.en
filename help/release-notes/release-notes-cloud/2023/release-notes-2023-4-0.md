@@ -57,7 +57,7 @@ Have a look at the April 2023 Release Overview video for a summary of the featur
 *   Color Search facet usability improvements - Input field for color values is now editable and search results update only when you exit the color picker. 
 
 *   New protocol support launched (DASH - Dynamic Adaptive Streaming over HTTP) for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled):
-    * Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos
+    * Adaptive streaming (DASH/HLS) ensures better user viewing experience for videos
     * DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry
     * Available in all regions, to be enabled via support ticket
 

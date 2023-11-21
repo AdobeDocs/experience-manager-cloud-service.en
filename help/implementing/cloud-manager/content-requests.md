@@ -7,11 +7,11 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 
 ## Variances of Cloud Service Content Requests{#content-requests-variances}
 
-Content Requests can have variances with an organization's Analytics reporting tools as summarized in the following table. In general, Analytics tools gathering data via client-side instrumentation <b>should not be used</b> to report on the number of content requests for a given site, simply because they often depend on end user consent to be triggered, therefore missing out on a significant fraction of the traffic. Analytics tools gathering data server-side in log files, or CDN reports for customers adding their own CDN on top of AEM as a Cloud Service, will provide better counts. For reporting on Page Views as well as their associated performance, the Adobe RUM Data Service is the Adobe recommended option. 
+Content Requests can have variances with an organization's Analytics reporting tools as summarized in the following table. In general, Analytics tools gathering data via client-side instrumentation <b>should not be used</b> to report on the number of content requests for a given site, simply because they often depend on user consent to be triggered, therefore missing out on a significant fraction of the traffic. Analytics tools gathering data server-side in log files, or CDN reports for customers adding their own CDN on top of AEM as a Cloud Service, will provide better counts. For reporting on Page Views as well as their associated performance, the Adobe RUM Data Service is the Adobe recommended option. 
 
 |Reason For Variance|Explanation|
 |---|---|
-|End user consent|Analytics tools relying on client-side instrumention often depend on end user consent to be triggered. This could represent the majority of the traffic not being tracked. For customers who want to measure content requests on their own, it is recommended to rely on analytics tools gathering data server-side or CDN reports.|
+|End user consent|Analytics tools relying on client-side instrumention often depend on user consent to be triggered. This could represent the majority of the traffic not being tracked. For customers who want to measure content requests on their own, it is recommended to rely on analytics tools gathering data server-side or CDN reports.|
 |Tagging|All pages or API calls that are tracked as Adobe Experience Manager (AEM) content requests may not be tagged with Analytics tracking.|
 |Tag Management Rules|Tag management rule settings may result in various data collection configurations on a page, resulting in some combination of discrepancies with content request tracking.|
 |Bots|Unknown bots that have not been pre-identified and removed by AEM may cause tracking discrepancies.|

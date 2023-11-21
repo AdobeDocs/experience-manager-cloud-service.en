@@ -21,7 +21,7 @@ Experience Audit is a feature available in Cloud Manager Sites Production pipeli
 
 1. Do not introduce regressions.
 
-Experience Audit in Cloud Manager ensures that the end user's experience on the site are of the highest standards.
+Experience Audit in Cloud Manager ensures that the user's experience on the site are of the highest standards.
 
 The audit results are informational and allow the deployment manager to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that was introduced with the current deployment.
 

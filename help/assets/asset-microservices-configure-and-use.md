@@ -240,7 +240,7 @@ When post-processing is not needed, create and use an "empty" Workflow Model in 
     * Title: Disable Auto-start Workflow
     * Name: disable-auto-start-workflow
 1. Select __Done__ to create the Workflow Model
-1. __Select__ and __Edit__ the newly-created Workflow Model
+1. __Select__ and __Edit__ the created Workflow Model
 1. In the Workflow Model editor, select __Step 1__ from the model definition and delete it
 1. Open the __Side Panel__, and select __Steps__
 1. Drag the __DAM Update Asset Workflow Completed__ step into the model definition
