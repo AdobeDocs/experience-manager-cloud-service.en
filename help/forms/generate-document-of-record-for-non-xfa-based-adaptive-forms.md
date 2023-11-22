@@ -494,7 +494,7 @@ An XCI file helps you set various properties of a document. Forms as a Cloud Ser
 ### Use a custom XCI file in your local Forms as a Cloud Service development environment
 
   1. Upload the XCI file to your local development environment.
-  1. Open Cloud Service SDK configuraion manager. The default URL is: <http://localhost:4502/system/console/configMgr>.
+  1. Open Cloud Service SDK configuration manager. The default URL is: <http://localhost:4502/system/console/configMgr>.
   1. Locate and open the **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]** configuration.
   1. Specify path of the XCI file and click **[!UICONTROL Save]**.
 
