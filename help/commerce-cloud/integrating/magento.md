@@ -26,7 +26,7 @@ The overall architecture is as follows:
 ![CIF Architecture Overview](../assets/AEM_Magento_Architecture.png)
 
 Within CIF, there is support for server-side and client-side communication patterns.
-Server-side APIs calls are implemented using the built-in, generic [GraphQL client](https://github.com/adobe/commerce-cif-graphql-client) in combination with a [set of generated data models](https://github.com/adobe/commerce-cif-magento-graphql) for the commerce GraphQL schema. Additionally, any GraphQL query or mutation in GQL format can be used.
+Server-side APIs calls are implemented using the built-in, generic [GraphQL client](https://github.com/adobe/commerce-cif-graphql-client) in combination with a [set of generated data models](https://github.com/adobe/commerce-cif-magento-graphql) for the commerce GraphQL schema. Also, any GraphQL query or mutation in GQL format can be used.
 
 For the client-side components, which are built using [React](https://reactjs.org/), the [Apollo Client](https://www.apollographql.com/docs/react/) is used.
 

@@ -60,7 +60,7 @@ If you are editing a page, it can be published directly from the editor.
 
    * The page is published directly if there are no references to be published.
    * If the page has references that need publishing, these are listed in the **Publish** wizard, where you can either:
-     * Specify which of the assets/tags/etc. you want to publish together with the page, then use **Publish** to complete the process.
+     * Specify which of the assets, or tags, and so on, that you want to publish together with the page, then use **Publish** to complete the process.
      * Use **Cancel** to abort the action.
 
    ![Publishing references with the page](/help/sites-cloud/authoring/assets/publishing-references.png)
@@ -218,7 +218,7 @@ In a [manner similar to publishing](#publishing-pages), one or more pages can be
 
 ### Unpublishing from the Editor {#unpublishing-from-the-editor}
 
-When editing a page, if you wish to unpublish that page, select **Unpublish Page** in the **Page Information** menu, much as you would [publish the page](#publishing-from-the-editor).
+When editing a page, if you want to unpublish that page, select **Unpublish Page** in the **Page Information** menu, much as you would [publish the page](#publishing-from-the-editor).
 
 >[!NOTE]
 >
@@ -252,7 +252,7 @@ When you have entered or updated a considerable number of content pages - all of
 
 You can use the [Manage Publication](#manage-publication) option on the sites console to do this.
 
-1. In the sites console, select the root page of the tree you wish to publish or unpublish and select **Manage Publication**.
+1. In the sites console, select the root page of the tree you want to publish or unpublish and select **Manage Publication**.
 1. The **Manage Publication** wizard starts. Choose to publish or unpublish and when it should occur and select **Next** to continue.
 1. In the **Scope** step, select the root page and select **Include Children**.
 

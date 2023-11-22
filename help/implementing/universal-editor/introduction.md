@@ -28,8 +28,8 @@ Users often think that a headless implementation limits the authors to editing a
 
 The requirements for an implementation to use the Universal Editor is straight-forward and supports the following:
 
-* **Any Architecture** - Server-side rendering, edge-side rendering, client-side rendering, etc.
-* **Any Framework** - Vanilla AEM, or any third-party framework like React, Next.js, Angular, etc.
+* **Any Architecture** - Server-side rendering, edge-side rendering, client-side rendering, and so on.
+* **Any Framework** - Vanilla AEM, or any third-party framework like React, Next.js, Angular, and so on.
 * **Any Hosting** - Can be hosted locally to AEM, or on a remote domain
 
 ### Any Content {#any-content}
@@ -44,7 +44,7 @@ A content author should have the same powerful editing experience formerly offer
 
 For a content author, content is not just about the information contained, but how it is rendered and received. Content comes with additional meta-data and instrumentation rules, which the Universal Editor can understand and edit including:
 
-* **Applying Layout &amp; Style** - By using a style system, the marketing practitioner and content author can apply different styles to their content and create different layouts for the content such as columns, carousels, tabs, accordions, etc.
+* **Applying Layout &amp; Style** - By using a style system, the marketing practitioner and content author can apply different styles to their content and create different layouts for the content such as columns, carousels, tabs, accordions, and so on.
 
 ## Value {#value}
 

@@ -110,7 +110,7 @@ Basic template helps you quickly create an enrollment form. You can also use it 
 The Adaptive Forms can then interact with Microsoft Dynamics 365 and Salesforce servers to enable business workflows. For example:
 
 * Write data into Microsoft Dynamics 365 and Salesforce on Adaptive Form submission.
-* Write data in Microsoft Dynamics 365 and Salesforce through custom entities defined in Form Data Model and vice versa.
+* Write data in Microsoft Dynamics 365 and Salesforce through custom entities defined in Form Data Model and conversely.
 * Query Microsoft Dynamics 365 and Salesforce server for data and prepopulate Adaptive Forms.
 * Read data from Microsoft Dynamics 365 and Salesforce server.
 

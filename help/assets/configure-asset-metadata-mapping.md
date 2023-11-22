@@ -35,7 +35,7 @@ To set metadata mapping for the Project Name, Document Name, and Document Descri
 
 1. Select the Experience Manager Assets integration and click **[!UICONTROL Edit]**.
 
-1. Click **[!UICONTROL Metadata]**. In the **[!UICONTROL Assets]** tab, map the [!UICONTROL Project] > [!UICONTROL Name] Workfront field to the `wm:projectName` Experience Manager Assets field. If you do not find the exact match, Adobe recommends to look for the best match to map the Workfront and Experience Manager Assets field. You can avoid mapping fields of different data types. For example, mapping a date Workfront field to a description Assets field.
+1. Click **[!UICONTROL Metadata]**. In the **[!UICONTROL Assets]** tab, map the [!UICONTROL Project] > [!UICONTROL Name] Workfront field to the `wm:projectName` Experience Manager Assets field. If you do not find the exact match, Adobe recommends that you look for the best match to map the Workfront and Experience Manager Assets field. You can avoid mapping fields of different data types. For example, mapping a date Workfront field to a description Assets field.
 1. Map the [!UICONTROL Document] > [!UICONTROL Name] Workfront field to the `wm:documentName` Experience Manager Assets field.
 
    ![Mapping in Workfront](assets/workfront-metadata-mapping.png)

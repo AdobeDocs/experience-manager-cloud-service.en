@@ -20,7 +20,7 @@ For more information on the AEM as a Cloud Service Mail Service, see [Sending Em
    ![Start app registration process](assets/oauth-outlook1.png)
 
 1. Fill in the information according to your requirements, then click **Register**.
-1. Go to the newly-created app, and select **API Permissions**.
+1. Go to the created app, and select **API Permissions**.
 1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**.
 1. Select the below permissions for your app, then click **Add Permission**:
    * `https://outlook.office.com/SMTP.Send`

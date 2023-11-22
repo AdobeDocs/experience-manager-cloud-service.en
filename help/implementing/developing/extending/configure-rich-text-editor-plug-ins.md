@@ -227,7 +227,7 @@ Then, specify the location(s) of the style sheet(s) you want to reference:
 
     * **Name** `externalStyleSheets`
     * **Type** `String[]` (multi-string; click **Multi** in CRXDE)
-    * **Value(s)** The path and filename of every style sheet you want to include. Use repository paths.
+    * **Values** The path and filename of every style sheet you want to include. Use repository paths.
 
    >[!NOTE]
    >
@@ -370,7 +370,7 @@ Paragraph formats are made available for selection by:
 
     * **Name** `tag`
     * **Type** `String`
-    * **Value** The block tag for the format; for example: p, h1, h2, etc.
+    * **Value** The block tag for the format; for example: p, h1, h2, and so on.
 
       You do not need to enter the delimiting angle-brackets.
 
@@ -396,7 +396,7 @@ You can configure the RTE to make your selection of characters available; either
 
 >[!CAUTION]
 >
->Adding your special characters overrides the default selection. If required, redefine these characters in your selection.
+>Adding your special characters overrides the default selection. If necessary, redefine these characters in your selection.
 
 ### Define a single character {#definesinglechar}
 
@@ -564,7 +564,7 @@ A standard Experience Manager installation includes the dictionaries for:
 >
 >The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, along with the appropriate ReadMe files. Do not modify the files.
 
-To add more dictionaries, if required, follow these steps.
+To add more dictionaries, if necessary, follow these steps.
 
 1. Navigate to the page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 1. Select the required language and download the ZIP file with the spelling definitions. Extract the contents of the archive on your file system.
@@ -580,9 +580,9 @@ To add more dictionaries, if required, follow these steps.
 >
 >The RTE spell checker is available on-demand. It does not run automatically as you start typing text.
 >
->To run the spell checker, tap/click the Spellchecker button from the toolbar. RTE checks the spelling of words and highlights mis-spelled words.
+>To run the spell checker, select the Spellchecker button from the toolbar. RTE checks the spelling of words and highlights mis-spelled words.
 >
->If you incorporate any change that the spell checker suggests, the state of the text changes and mis-spelled words are no longer highlighted. To run the spell checker, tap/click Spellchecker button again.
+>If you incorporate any change that the spell checker suggests, the state of the text changes and mis-spelled words are no longer highlighted. To run the spell checker, select Spellchecker button again.
 
 ## Configure the history size for undo and redo actions {#undohistory}
 

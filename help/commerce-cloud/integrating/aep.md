@@ -51,7 +51,7 @@ Follow the [AEM Project Archetype](https://experienceleague.adobe.com/docs/exper
 ![AEM Commerce Project](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-Build and deploy the newly-created AEM Commerce project to the local AEM SDK by running the following command from the project's root directory.
+Build and deploy the created AEM Commerce project to the local AEM SDK by running the following command from the project's root directory.
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
@@ -400,11 +400,11 @@ Complete the following steps to create a Datastream in the Experience Platform.
 
     ![AEP Create Datastreams](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1.  Name your Datastream using the __Name__ required field. Under the __Event Schema__ field, select the newly-created schema and click __Save__.
+1.  Name your Datastream using the __Name__ required field. Under the __Event Schema__ field, select the created schema and click __Save__.
 
     ![AEP Define Datastreams](../assets/aep-integration/AEP-Datastream-Define.png)
 
-1.  Open the newly-created Datastream, and click __Add Service__.
+1.  Open the created Datastream, and click __Add Service__.
 
     ![AEP Datastreams Add Service](../assets/aep-integration/AEP-Datastream-Add-Service.png)    
 

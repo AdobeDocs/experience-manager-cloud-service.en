@@ -25,7 +25,7 @@ Brands can integrate Experience Manager with Adobe Commerce, part of Adobe Exper
 As these projects have to deal with the complexity of integrating a commerce solution. A commerce solution can be anything from a commercial solution such as the Adobe Commerce Cloud to a set of custom commerce services. The integration is highly dependent on the use-cases and ecosystem. It usually touches various places and comes in many different flavors:
 
 * Integration of a complex and dynamic ecosystem (example product catalogs)
-* Business needs to manage product content with its own lifecycle in an efficient and omnichannel way
+* Business must manage product content with its own lifecycle in an efficient and omnichannel way
 * Building complex and personalized shopping journeys for various heads
 * Ability to quickly adapt and innovate on the back- and front-end
 * Running a scalable and stable E2E infrastructure that is built for peak performance (Flash sale, Black Friday, ...). This includes unified search and cache management.

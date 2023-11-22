@@ -18,7 +18,7 @@ Follow the recommended approach as described below:
 
 * Use the same version of the Content Transfer Tool which was used on the Author instance.
 
-* Only a single publish node needs to be migrated. It should be removed from the load balancer prior to beginning the extraction.
+* Only a single publish node must be migrated. It should be removed from the load balancer prior to beginning the extraction.
 
 * During ingestion to publish, the publish tier will not be scaled down (unlike the author). 
 

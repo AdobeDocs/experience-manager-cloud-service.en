@@ -57,7 +57,7 @@ In addition, only Adobe should write code into `/libs`, with customers and partn
 
 Existing connectors may also need to be refactored to move any configuration that might once have been placed `/etc` into other top level folders such as `/conf`. This restructuring was done as part of AEM 6.5 and is described in the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html).
 
-It's recommended that the majority of connector code is placed under `/apps/connectors/<vendor>` to promote a clean repository structure for customers who have several connectors.
+It is recommended that the majority of connector code is placed under `/apps/connectors/<vendor>` to promote a clean repository structure for customers who have several connectors.
 
 Cloud Services Configurations
 -----------------------------

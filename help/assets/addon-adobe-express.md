@@ -22,7 +22,7 @@ Perform the following steps to add AEM Assets add-on to Adobe Express:
 
 1. Open the Adobe Express web application.
 
-1. Open a new blank canvas by loading a new template or a project, or by creating a new asset.
+1. Open a new blank canvas by loading a new template or a project, or by creating an asset.
 
 1. Click **[!UICONTROL Add-ons]** available in the left navigation pane.
 

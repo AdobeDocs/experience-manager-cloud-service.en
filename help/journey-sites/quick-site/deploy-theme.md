@@ -36,11 +36,11 @@ After you have committed the theme customization changes to the AEM git reposito
 
    ![Cloud Manager overview](assets/cloud-manager-overview.png)
 
-1. Tap or click the ellipsis next to the pipeline you need to start. From the drop-down menu, select **Run**.
+1. Select the ellipsis next to the pipeline you need to start. From the drop-down menu, select **Run**.
 
    ![Run pipeline](assets/run-pipeline.png)
 
-1. In the **Run Pipeline** confirmation dialog, tap or click **Yes**.
+1. In the **Run Pipeline** confirmation dialog, select **Yes**.
 
    ![Confirm pipeline run](assets/pipeline-confirm.png)
 
@@ -52,7 +52,7 @@ After you have committed the theme customization changes to the AEM git reposito
 
 You can check the status of the pipeline to see the detail of its progress at any time.
 
-1. Tap or click the ellipsis next to your pipeline.
+1. Select the ellipsis next to your pipeline.
 
    ![View pipeline details](assets/view-pipeline-details.png)
 
@@ -62,7 +62,7 @@ You can check the status of the pipeline to see the detail of its progress at an
 
 >[!TIP]
 >
->In the pipeline details window, you can tap or click **Download Log** for any step of the pipeline for debugging purposes if any step should fail. Debugging the pipeline is beyond the scope of this journey. See the technical docs for Cloud Manager in the [Additional Resources](#additional-resources) section of this page.
+>In the pipeline details window, you can select **Download Log** for any step of the pipeline for debugging purposes if any step should fail. Debugging the pipeline is beyond the scope of this journey. See the technical docs for Cloud Manager in the [Additional Resources](#additional-resources) section of this page.
 
 ## Validate the Deployed Customizations {#view-customizations}
 
@@ -106,7 +106,7 @@ The following are some additional resources that do a deeper dive on some concep
 * [AEM Site Theme](https://github.com/adobe/aem-site-template-standard-theme-e2e) - This is the GitHub repository of the AEM Site Theme.
 * [npm](https://www.npmjs.com) - AEM themes used to quickly build sites are based on npm.
 * [webpack](https://webpack.js.org) - AEM themes used to quickly build sites rely on webpack.
-* [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - This guide details how to manage pages of your AEM Site if you wish to customize it further after creating it from the template.
+* [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - This guide details how to manage pages of your AEM Site if you want to customize it further after creating it from the template.
 * [How to Work with Package](/help/implementing/developing/tools/package-manager.md) - Packages enable the importing and exporting of repository content. This document explains how to work with packages in AEM 6.5, which also applies to AEMaaCS.
 * [Onboarding Journey](/help/journey-onboarding/overview.md) - This guide serves as your starting point to ensure that your teams are set up and have access to AEM as a Cloud Service.
 * [Adobe Experience Manager Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Explore the Cloud Manager documentation for full details of its features.

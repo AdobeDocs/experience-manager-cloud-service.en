@@ -123,7 +123,7 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 
 1. **To Remove a Field**
 
-   Select the required field, then click/tap the trash-can icon. You are asked to confirm the action.
+   Select the required field, then select the trash-can icon. You are asked to confirm the action.
 
    ![Remove](assets/cf-cfmodels-remove-icon.png)
 
@@ -155,7 +155,7 @@ A selection of data types is available for defining your model:
 * **Date and time**
   * Add a date and/or time
 * **Enumeration**
-  * Add a set of checkbox, radio button, or dropdown fields
+  * Add a set of checkbox, radio button, or drop-down list fields
 * **Tags**
   * Allows fragment authors to access and select areas of tags
 * **Content Reference**
@@ -190,13 +190,13 @@ Many properties are self-explanatory, for certain properties additional details 
 
   >[!CAUTION]
   >
-  >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
+  >If models created in earlier versions of AEM contain illegal characters, remove or update those characters.
 
 * **Render As**
   The various options for realizing/rendering the field in a fragment. Often this lets you define whether the author sees a single instance of the field, or is allowed to create multiple instances.
 
 * **Field Label**
-  Entering a **Field Label** autogenerates a **Property Name**, which can then be manually updated if required.
+  Entering a **Field Label** autogenerates a **Property Name**, which can then be manually updated if necessary.
 
 * **Validation**
   Basic validation is available by mechanisms such as the **Required** property. Some data types have addition validation fields. See [Validation](#validation) for further details.
@@ -368,7 +368,7 @@ You can either **Enable** or **Disable** your Content Fragment Models, for full 
 
 Once a model has been created it must be enabled so that it:
 
-* Is available for selection when creating a new Content Fragment.
+* Is available for selection when creating a Content Fragment.
 * Can be referenced from within a Content Fragment Model.
 * Is available to GraphQL; so the schema is generated.
 
