@@ -77,7 +77,7 @@ Now imagine the Creative Director looks at the images and says,
 
 _"I really wanted this shot so that the large hand is pointing at the four, and the small hand is pointing at the 1 to make the watch dial easier to see."_
 
-The creative would have to reshoot all of these new static images again.
+The creative would have to reshoot all new static images again.
 
 But, with Dynamic Media, if you have different image presets, you can use those images wherever you need them. The image presets enforce standards.
 
@@ -115,7 +115,7 @@ _Creating an image preset by selecting options from the Advanced tab._
 
 You recall in [Anatomy of a Dynamic Media URL](#dm-journey-d) earlier, that you read about the Dynamic Media URL and how that is built. The **[!UICONTROL Image Modifier]** text box is where you can type any additional image processing parameters that you want. The parameters get included in the preset name of the URL when your images are delivered, using the preset. In the screenshot above, the parameter `bgc=451B15` was added. That is, a dark brown background color was added.
 
-You can think of an image preset as a recipe for your images. It's going to deliver any images that use the preset, consistently, every time; it's going to be the same. The parameter `&op_brightness=+10` was also added to increase the brightness slightly.  
+You can think of an image preset as a recipe for your images. It is going to deliver any images that use the preset, consistently, every time; it's going to be the same. The parameter `&op_brightness=+10` was also added to increase the brightness slightly.  
 
 When you are finished, you save the preset, and now it is available for all images that you have. In this case, we want to apply the _Medium_ image preset to an image of a bowl of liquid chocolate.
 
@@ -148,7 +148,7 @@ Some of the more popular uses of Dynamic Media, is the ability for you to create
 
 Image sets are typically made up of a series of image assets that are presented as a single entity. These kinds of sets give users an integrated viewing experience, where users can see different views of an item by clicking a thumbnail image. Image sets let you present alternative views of something and the viewer offers zooming tools for examining images closely. [View an image set called "Running" that uses the Flyout viewer](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running).
 
-Here inside Dynamic Media you can see several images of running shoes. It's a product line series that sales and marketing want customers to view as a single presentation; an Image set.
+Here inside Dynamic Media you can see several images of running shoes. It is a product line series that sales and marketing want customers to view as a single presentation; an Image set.
 
 ![Creating an image set](/help/assets/dynamic-media/assets/dm-create-image-set.png)
 _The start of creating an Image set._

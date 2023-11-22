@@ -27,7 +27,7 @@ When a certificate expires any domains that are in use with the expired certific
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 1. Navigate to **Environments** screen from the **Overview** page.
 1. Navigate to the **SSL Certificates** screen from the **Environments** screen.
-1. You can see a table with a row for each SSL certificate that has been successfully installed in your program. Click the ellipsis button at the far right in the row of the certificate you wish to update and select **View &amp; Update**.
+1. You can see a table with a row for each SSL certificate that has been successfully installed in your program. Click the ellipsis button at the far right in the row of the certificate you want to update and select **View &amp; Update**.
 1. The certificate details are displayed and can be updated.
 1. Run the pipeline to deploy the updated certificate.
 
@@ -60,7 +60,7 @@ Follow these steps to delete an SSL certificate.
 
 ## Pre-Existing CDN Configurations {#pre-existing-cdn}
 
-If you have a pre-existing CDN configuration for your SSL certificate, there is an informative message on the the **SSL Certificates** page, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
+If you have a pre-existing CDN configuration for your SSL certificate, there is an informative message on the **SSL Certificates** page, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
 
 The message disappears once all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
 

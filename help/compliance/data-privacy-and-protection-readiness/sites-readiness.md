@@ -90,7 +90,7 @@ By default, this visitor-data is not stored in AEM; AEM sends rules to the data 
 
 ### Implementing Opt-in/Opt-Out {#implementing-opt-in-opt-out}
 
-The site owner needs to implement an opt-out component according to the following guidelines.
+The site owner must implement an opt-out component according to the following guidelines.
 
 These guidelines implement opt-in as the default. Thus, a website visitor must clearly agree, before any personal data is stored in the browser's (client-side) persistence.
 

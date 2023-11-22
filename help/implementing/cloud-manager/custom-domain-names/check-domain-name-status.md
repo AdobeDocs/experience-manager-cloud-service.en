@@ -76,7 +76,7 @@ The error is fixed as follows:
 
 ## Pre-Existing CDN Configurations for Custom Domain Names {#pre-existing-cdn}
 
-If you have a pre-existing CDN configuration for your custom domain names, there is an informative message on the the **Custom Domain Names** and **Environment** pages, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
+If you have a pre-existing CDN configuration for your custom domain names, there is an informative message on the **Custom Domain Names** and **Environment** pages, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
 
 The message disappears once all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
 

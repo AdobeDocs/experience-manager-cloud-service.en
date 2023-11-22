@@ -6,7 +6,7 @@ exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 
 # Notable Changes to AEM Sites as a Cloud Service {#notable-changes}
 
-AEM Sites as a Cloud Service provides experience management capabilities as part of the cloud-native AEM as a Cloud Service platform. In addition to core benefits of AEM as a Cloud Service, such as cloud-native scalability, uptime, and always being up-to-date, AEM Sites as a Cloud Service also provides a number of Sites-specific changes and additions. 
+AEM Sites as a Cloud Service provides experience management capabilities as part of the cloud-native AEM as a Cloud Service platform. In addition to core benefits of AEM as a Cloud Service, such as cloud-native scalability, uptime, and always being up-to-date, AEM Sites as a Cloud Service also provides several Sites-specific changes and additions. 
 
 >[!NOTE]
 >This document highlights the notable changes to AEM Sites. For changes general to AEM as a Cloud Service, and other modules, see:

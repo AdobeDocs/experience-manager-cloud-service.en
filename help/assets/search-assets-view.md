@@ -117,7 +117,7 @@ To remove custom filters:
 
 ## Saved searches {#saved-search}
 
-Search functionality is quite easy to use in [!DNL Assets view]. From within the search box, you can not only just type a keyword and press return to see the results, you can also quickly search again for your recently searched keywords in a single click.
+Search functionality is quite easy to use in [!DNL Assets view]. From within the search box, you can just type a keyword and press return to see the results, or you can quickly search again for your recently searched keywords in a single click.
 
 You can also filter the search results based on specific criteria around metadata and type of assets. For frequently used filters, to improve the search experience, [!DNL Assets view] lets you save the search parameters. You can then select the saved search to search and apply the filter with just a single click as well.
 

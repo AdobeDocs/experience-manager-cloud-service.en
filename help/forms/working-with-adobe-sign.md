@@ -162,13 +162,13 @@ To select a Cloud Service and order of signing:
 
    If the **[!UICONTROL Adobe Sign Cloud Service]** list is empty, follow the [Configure [!DNL Adobe Sign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) article to configure the service.
 
-   The dropdown lists the Cloud Services that exist in the `global` folder in Tools > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. In addition, the dropdown also lists the Cloud Services that exist in the folder that you select in the **[!UICONTROL Configuration Container]** field when you create an Adaptive Form.
+   The drop-down lists the Cloud Services that exist in the `global` folder in Tools > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. In addition, the drop-down list also lists the Cloud Services that exist in the folder that you select in the **[!UICONTROL Configuration Container]** field when you create an Adaptive Form.
 
 1. Select the signing order from the **[!UICONTROL Recipients can complete]** dialog box. The recipients can sign an Adaptive Form **[!UICONTROL Sequentially]** - one after another recipient, or **[!UICONTROL Simultaneously]** - in any order.
 
    In sequential order, one recipient receives the Adobe Sign agreement at a time. After the recipient completes the assigned action, the agreement is sent to the next recipient, and so on.
 
-   In simultaneous order, all the recipients receive the Adobe Sign agreement and can take action in parallel to each other.
+   In simultaneous order, all the recipients receive the Adobe Sign agreement and can act in parallel to each other.
 
 1. Use the Agreement Id Field to associate a bindref to Agreement ID (agreementId). It adds Agreement ID to afBoundData section of submit data for schema-based forms. The Agreement ID is also added to afSubmissionInfo section in the submitted data for all Adobe Sign-enabled forms. You can use the agreement ID for tracking agreement status using custom code (requires custom implementation).
 
@@ -284,7 +284,7 @@ After you, add [!DNL Adobe Sign] fields to an Adaptive Form, enable [!DNL Adobe 
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the Adaptive Form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+>Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
 Your form signing experience is ready. You can preview the form to verify the signing experience. On the published form, [!DNL Adobe Sign] Block fields are displayed when a recipient receives the form for signing through an email. When the **[!UICONTROL When Is the recipient and the person filling the form same?]** option is marked yes and condition is met, the user is redirected to Adobe Sign agreement after submissions and user can Sign the document immediately, instead of waiting for agreement to appear on email.

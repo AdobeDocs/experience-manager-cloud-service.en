@@ -124,7 +124,7 @@ Additional authoring tools such as dragging-and-dropping additional components o
 
 ## SPA Apps and the AEM SPA Editor {#spa-apps-and-the-aem-spa-editor}
 
-Experiencing how a SPA behaves for the end user and then inspecting the SPA page helps to better understand how a SAP app works with the SPA Editor in AEM.
+Experiencing how a SPA behaves for the user and then inspecting the SPA page helps to better understand how a SAP app works with the SPA Editor in AEM.
 
 ### Using an SPA Application {#using-an-spa-application}
 
@@ -161,7 +161,7 @@ The next section, [Loading a SPA Application](#loading-a-spa-application), digs 
    ![WKND SPA Project preview](assets/wknd-preview.png)
 
 1. Use the built-in tool of your browser to view the source of the page.
-1. Note that the content of the source is limited.
+1. The content of the source is limited.
    * The page does not have any content within its body. It is primarily made up of stylesheets and a call to various scripts such as `clientlib-react.min.js`.
    * These scripts are the primary drivers of this application and are responsible for rendering all content.
 
@@ -201,9 +201,9 @@ The next section, [Loading a SPA Application](#loading-a-spa-application), digs 
 
 ### Interaction with the SPA Editor {#interaction-with-the-spa-editor}
 
-Using the sample WKND SPA Project application, it is clear how the app behaves and is loaded when published, leveraging content services for JSON content delivery and asynchronous loading of resources.
+Using the sample WKND SPA Project application, it is clear how the app behaves and is loaded when published, using content services for JSON content delivery and asynchronous loading of resources.
 
-Additionally, for the content author, content creation using a SPA editor is seamless within AEM.
+Also, for the content author, content creation using a SPA editor is seamless within AEM.
 
 In the following section we will explore the contract that allows the SPA Editor to relate components within the SPA to AEM components and achieve this seamless editing experience.
 
@@ -213,7 +213,7 @@ In the following section we will explore the contract that allows the SPA Editor
 
 1. Using your browser's built-in developer tools, inspect the content of the page. Using the selection tool, select an editable component on the page and view the element detail.
 
-   Note that the component has a new data attribute `data-cq-data-path`.
+   The component has a new data attribute `data-cq-data-path`.
 
    ![Inspecting WKND SPA Project elements](assets/wknd-inspector.png)
 
@@ -223,7 +223,7 @@ In the following section we will explore the contract that allows the SPA Editor
 
    This path allows the retrieval and association of the edit context configuration object of each component.
 
-   This is the only markup attribute required for the editor to recognize this as an editable component within the SPA. Based on this attribute, the SPA Editor will determine which editable configuration is associated with the component, so that the correct frame, toolbar, etc. is loaded.
+   This is the only markup attribute required for the editor to recognize this as an editable component within the SPA. Based on this attribute, the SPA Editor will determine which editable configuration is associated with the component, so that the correct frame, toolbar, and so on is loaded.
 
    Some specific class names are also added for marking placeholders and for asset drag-and-drop functionality.
 
@@ -235,7 +235,7 @@ In the following section we will explore the contract that allows the SPA Editor
 
 ## Headful and Headless in AEM {#headful-headless}
 
-SPAs can be enabled with flexible levels of integration within AEM including SPAs developed and maintained outside of AEM. Additionally, SPAs can be used within AEM while also using AEM to deliver content to additional endpoints headlessly.
+SPAs can be enabled with flexible levels of integration within AEM including SPAs developed and maintained outside of AEM. Also, SPAs can be used within AEM while also using AEM to deliver content to additional endpoints headlessly.
 
 >[!TIP]
 >

@@ -62,7 +62,7 @@ Select the Adobe Experience Cloud link at the left of the header to navigate to 
 
 #### Organization {#organization}
 
-This displays the organization you are currently signed into. Tap or click to switch to another organization if your Adobe ID is associated with multiple.
+This displays the organization you are currently signed into. Select to switch to another organization if your Adobe ID is associated with multiple.
 
 ![Organization indicator](assets/organization.png)
 
@@ -86,7 +86,7 @@ This icon is badged with the number of currently assigned incomplete [notificati
 
 #### User Properties {#user-properties}
 
-Tap or click the icon representing your user to access your user settings. If you do not have a user picture configured, an icon is randomly assigned.
+Select the icon representing your user to access your user settings. If you do not have a user picture configured, an icon is randomly assigned.
 
 ![User properties](assets/user-properties.png)
 
@@ -108,11 +108,11 @@ On the start page you can enter the URL of the site you want to edit with the Un
 
 >[!NOTE]
 >
->Any page that you wish to edit with the Universal Editor must be [instrumented to support he Universal Editor.](getting-started.md)
+>Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor.](getting-started.md)
 
 #### Location Bar {#location-bar}
 
-The location bar shows you the address of the page you are editing. Tap or click to enter the address of another page to edit.
+The location bar shows you the address of the page you are editing. Select to enter the address of another page to edit.
 
 ![Location bar](assets/location-bar.png)
 
@@ -122,17 +122,17 @@ The location bar shows you the address of the page you are editing. Tap or click
 
 >[!NOTE]
 >
->Any page that you wish to edit with the Universal Editor must be [instrumented to support he Universal Editor.](getting-started.md)
+>Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor.](getting-started.md)
 
 #### Authentication Header Settings {#authentication-settings}
 
-Tap or click the authentication header settings icon if you need to set an authentication secret.
+Select the authentication header settings icon if you need to set an authentication secret.
 
 ![Authentication heder settings button](assets/authentication-header-settings.png)
 
 #### Emulator Settings {#emulator}
 
-Tap or click the emulation icon to define how the Universal Editor renders the page.
+Select the emulation icon to define how the Universal Editor renders the page.
 
 ![Emulator icon](assets/emulator.png)
 
@@ -150,7 +150,7 @@ You can also chose to emulate a mobile device and within the Universal Editor:
 
 #### Open App Preview {#open-app-preview}
 
-Tap or click the open app preview icon to open the page you are currently editing in its own browser tab, free of the editor to preview your content.
+Select the open app preview icon to open the page you are currently editing in its own browser tab, free of the editor to preview your content.
 
 ![Open app preview](assets/open-app-preview.png)
 
@@ -160,7 +160,7 @@ Tap or click the open app preview icon to open the page you are currently editin
 
 #### Publish {#publish}
 
-Tap or click the publish button so you can publish the changes to the content live for consumption by your readers.
+Select the publish button so you can publish the changes to the content live for consumption by your readers.
 
 ![Publish button](assets/publish.png)
 
@@ -176,7 +176,7 @@ The mode rail is just below the home button and is always present along the left
 
 #### Preview Mode {#preview-mode}
 
-In preview mode, the page rendered in the editor as it would be seen on your published service. This allows the content author to navigate the content by clicking links, etc.
+In preview mode, the page rendered in the editor as it would be seen on your published service. This allows the content author to navigate the content by clicking links, and so on.
 
 ![Preview mode](assets/preview-mode.png)
 
@@ -248,13 +248,13 @@ When selecting an item in the content tree, the editor scrolls to that content a
 
 ##### Edit {#edit}
 
-When in [components mode,](#component-mode) the edit options for the selected component appear in the properties rail. In the properties rail you can edit the selected component. If the selected component is a Content Fragment, you can also tap or click the edit button.
+When in [components mode,](#component-mode) the edit options for the selected component appear in the properties rail. In the properties rail you can edit the selected component. If the selected component is a Content Fragment, you can also select the edit button.
 
 ![Edit icon](assets/edit.png)
 
 Tapping or clicking the edit button opens the [Content Fragment editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) in a new tab. This allows you access to the full power of the Content Fragment Editor to edit the associated Content Fragment.
 
-Depending on the needs of your workflow, you may wish to edit the Content Fragment in the Universal Editor or directly in the Content Fragment editor.
+Depending on the needs of your workflow, you may want to edit the Content Fragment in the Universal Editor or directly in the Content Fragment editor.
 
 >[!TIP]
 >
@@ -294,7 +294,7 @@ Editing content is simple and intuitive. In [components mode](#component-mode), 
 
 >[!TIP]
 >
->Note that in components mode, tapping or clicking on content selects it for editing. If you wish to navigate your content by following links, switch to [preview mode.](#preview-mode)
+>Note that in components mode, tapping or clicking on content selects it for editing. If you want to navigate your content by following links, switch to [preview mode.](#preview-mode)
 
 Depending on the content you select, you may have different in-place editing options and you may additional information and options for the content in the [properties rail.](#properties-rail)
 
@@ -304,23 +304,23 @@ If you are in [components mode](#component-mode) and select a plain text compone
 
 ![Editing content](assets/editing-content.png)
 
-Press enter/return or tap or click outside of the text box to save your changes.
+Press enter/return or select outside of the text box to save your changes.
 
-When you tap or click to select the text component, its details are shown in the properties rail. You can also edit the text in the rail.
+When you select to select the text component, its details are shown in the properties rail. You can also edit the text in the rail.
 
 ![Editing text in the properties rail](assets/ue-editing-text-component-rail.png)
 
-Additionally, details on your text are available in the properties rail. Changes are automatically saved once focus leaves the edited field in the properties rail.
+Also, details on your text are available in the properties rail. Changes are automatically saved once focus leaves the edited field in the properties rail.
 
 ### Editing Rich Text {#edit-rich-text}
 
 If you are in [components mode](#component-mode) and select a rich text component, you can edit the text in place by double-clicking or double-tapping the component.
 
-Press enter/return or tap or click outside of the text box to save your changes.
+Press enter/return or select outside of the text box to save your changes.
 
 ![Editing a rich text component](assets/rich-text-editing.png)
 
-Additionally, formatting options and details on your text are available in the properties rail. Changes are automatically saved once focus leaves the edited field in the properties rail.
+Also, formatting options and details on your text are available in the properties rail. Changes are automatically saved once focus leaves the edited field in the properties rail.
 
 ### Editing Media {#edit-media}
 
@@ -328,11 +328,11 @@ If you are in [components mode](#component-mode) and you select an image, you ca
 
 ![Editing media](assets/ue-edit-media.png)
 
-Tap or click the **Replace** button below the preview of the selected image in the properties rail to replace the image with another from your library of assets.
+Select the **Replace** button below the preview of the selected image in the properties rail to replace the image with another from your library of assets.
 
 1. The [asset selector](/help/assets/asset-selector.md#using-asset-selector) window opens to allow you to select an asset.
-1. Tap or click to select a new asset.
-1. Tap or click **Select** to return to the properties rail where the asset was replaced.
+1. Select to select a new asset.
+1. Select **Select** to return to the properties rail where the asset was replaced.
 
 Changes are saved to your content automatically.
 
@@ -352,14 +352,14 @@ If you select a field that is related to a Content Fragment, the Content Fragmen
 
 Changes are automatically saved once focus leaves the edited field in the properties rail.
 
-If you wish to edit your Content Fragment in the [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md) instead, click the [edit button](#edit) in the mode rail.
+If you want to edit your Content Fragment in the [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md) instead, click the [edit button](#edit) in the mode rail.
 
-Depending on the needs of your workflow, you may wish to edit the Content Fragment in the Universal Editor or directly in the Content Fragment editor.
+Depending on the needs of your workflow, you may want to edit the Content Fragment in the Universal Editor or directly in the Content Fragment editor.
 
 ### Adding Components to Containers {#adding-components}
 
 1. Select a container component in the content tree or in the editor.
-1. Then tap or click the add icon in the properties rail.
+1. Then select the add icon in the properties rail.
 
    ![Selecting a component to add to a container](assets/ue-add-component.png)
 
@@ -372,9 +372,9 @@ The component is inserted into the container and can be edited in the editor.
 ### Deleting Components from Containers {#deleting-components}
 
 1. Select a container component in the content tree or in the editor.
-1. Tap or click the chevron icon of the container to expand its contents in the content tree.
+1. Select the chevron icon of the container to expand its contents in the content tree.
 1. Then, in the content tree, select a component within the container.
-1. Tap or click the delete icon in the properties rail.
+1. Select the delete icon in the properties rail.
 
    ![Deleting a component](assets/ue-delete-component.png)
 
@@ -388,7 +388,7 @@ The selected component deleted.
 
 1. Select a container component in the content tree or in the editor.
 1. If not already in [content tree mode,](#content-tree-mode) switch to it.
-1. Tap or click the chevron icon of the container to expand its contents in the content tree.
+1. Select the chevron icon of the container to expand its contents in the content tree.
 1. Drag handle icons next to the components within the container show that you can rearrange them. Drag the components to reorder them within the container.
 
    ![Reordering components](assets/ue-reordering-components.png)
@@ -401,7 +401,7 @@ The components are reordered in both the content tree and in the editor
 
 When you are finished editing content, you often want to navigate it to see how it looks in the content of other pages. In [preview mode](#preview-mode) you can click links to navigate your content as a reader would. The content is rendered in the editor as it would be published.
 
-Note that in preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you wish to select the content for editing, switch to [components mode.](#component-mode)
+Note that in preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you want to select the content for editing, switch to [components mode.](#component-mode)
 
 ## Additional Resources {#additional-resources}
 

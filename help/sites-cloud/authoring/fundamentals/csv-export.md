@@ -40,7 +40,7 @@ The resulting `export.csv` file can be opened in Excel or any other compatible a
 
 To create a CSV export:
 
-1. Open the **Sites** console, navigate to the required location if required.
+1. Open the **Sites** console, navigate to the required location if necessary.
    * The create **CSV Report** option is available when browsing the **Sites** console (in List view)
    * It is an option of the **Create** drop-down menu:
 
