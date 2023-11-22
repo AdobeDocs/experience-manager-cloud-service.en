@@ -102,7 +102,7 @@ official [AEM Testing Clients](https://github.com/adobe/aem-testing-clients).
 >Custom functional tests are executed in the production and non-production (opt-in) pipelines which are used by your AEM application changes deployments and AEM product push updates and are therefore a key contribution to help ensure proper functioning of your application and increase release safety.
 >The customer functional tests are also executed in internal pre-release validation pipelines for each customer, which helps provide early feedback.
 
-In order to keep pipeline executions efficient, we recommend to focus on key features and main user interaction flows.
+In order to keep pipeline executions efficient, we recommend focusing on key features and main user interaction flows.
 An execution time of ~15 minutes or less for functional tests is recommended. Full functional test suites that do not
 fit in this quality gate are recommended to be executed as part of general customer validation pipelines during the
 customer's development flow.
