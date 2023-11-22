@@ -15,13 +15,13 @@ Sites built using common SPA frameworks such as React and Angular load their con
 
 To enable the editing of SPAs within AEM, a mapping between the JSON output of the SPA and the content model in the AEM repository is needed to save changes to the content.
 
-SPA support in AEM introduces a thin JS layer that interacts with the SPA JS code when loaded in the Page Editor with which events can be sent and the location for the edit controls can be activated to allow in-context editing. This feature builds upon the Content Services API Endpoint concept since the content from the SPA needs to be loaded via Content Services.
+SPA support in AEM introduces a thin JS layer that interacts with the SPA JS code when loaded in the Page Editor with which events can be sent and the location for the edit controls can be activated to allow in-context editing. This feature builds upon the Content Services API Endpoint concept because the content from the SPA must be loaded by way of Content Services.
 
-For further details about SPAs in AEM, see the following documents:
+For more details about SPAs in AEM, see the following:
 
-* [SPA Blueprint](blueprint.md) for the technical requirements of an SPA
-* [Getting Started with SPAs in AEM using React](getting-started-react.md) for a quick tour of a simple SPA using React
-* [Getting Started with SPAs in AEM using Angular](getting-started-angular.md) for a quick tour of a simple SPA using Angular
+* [SPA Blueprint](blueprint.md) for the technical requirements of an SPA.
+* [Getting Started with SPAs in AEM using React](getting-started-react.md) for a quick tour of a simple SPA using React.
+* [Getting Started with SPAs in AEM using Angular](getting-started-angular.md) for a quick tour of a simple SPA using Angular.
 
 ## Design {#design}
 
@@ -176,9 +176,9 @@ The AEM SPA Editor SDK is fully supported by Adobe and it continues to be enhanc
 * Target mode
 * ContextHub
 * Inline image editing
-* Edit configs (eg. listeners)
+* Edit configs (for example, listeners)
 * Undo / Redo
 * Page diff and Time Warp
-* Features performing HTML rewriting server-side such as Link Checker, CDN rewriter service, URL shortening etc.
+* Features performing HTML rewriting server-side such as Link Checker, CDN rewriter service, URL shortening and so on.
 * Developer mode
 * AEM Launches

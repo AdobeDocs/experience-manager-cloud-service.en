@@ -28,7 +28,7 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
 
-* Content model data types can now be defined as translatable using a simple checkbox in the content model editor. Additionally, AEM translation rules and configurations are automatically updated.
+* Content model data types can now be defined as translatable using a simple checkbox in the content model editor. Also, AEM translation rules and configurations are automatically updated.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -85,7 +85,7 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### What is New {#what-is-new-foundation}
 
-* For more efficient and effective troubleshooting of custom features in Cloud environments, we've released a new developer tool – [the Repository Browser](/help/implementing/developing/tools/repository-browser.md). It's a lightweight, read-only, HTML browser that you can launch from the Developer Console. Get visibility into the content repository on the publisher, author, and preview tiers—and in all environments, including production, stage, and dev. Browse the content structure, view properties, and preview and download binaries.
+* For more efficient and effective troubleshooting of custom features in Cloud environments, we've released a new developer tool – [the Repository Browser](/help/implementing/developing/tools/repository-browser.md). It is a lightweight, read-only, HTML browser that you can launch from the Developer Console. Get visibility into the content repository on the publisher, author, and preview tiers—and in all environments, including production, stage, and dev. Browse the content structure, view properties, and preview and download binaries.
 
   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 

@@ -29,7 +29,7 @@ The additional benefits of using a blueprint configuration are that they:
 
 In the case that a blueprint configuration is not referenced, rollouts can only be initiated from the Live Copies themselves, essentially pulling content from source.
 
-When creating a new site with Live Copy, it is advantageous to create blueprint configurations to ensure the availability of the full MSM feature set.
+When creating a site with Live Copy, it is advantageous to create blueprint configurations to ensure the availability of the full MSM feature set.
 
 >[!NOTE]
 >
@@ -107,9 +107,9 @@ When considering moving pages in a Live Copy, consider the following best practi
    * Do not add other actions to this configuration.
 1. Position the new configuration.
    * To fully roll out the page move while deleting respective pages at their old location in the Live Copy:
-     * Position the newly-created configuration before the standard rollout configuration. The standard rollout configuration will take care of deleting the pages in their old locations.
+     * Position the created configuration before the standard rollout configuration. The standard rollout configuration will take care of deleting the pages in their old locations.
      * To roll out the page move while keeping respective pages in their old locations in the Live Copies (essentially duplicating the content):
-       * Position the newly-created configuration after the standard rollout configuration. This will ensure no content is deleted in the Live Copy or deactivated from publish.
+       * Position the created configuration after the standard rollout configuration. This will ensure no content is deleted in the Live Copy or deactivated from publish.
 
 ## Customizing Rollouts {#customizing-rollouts}
 

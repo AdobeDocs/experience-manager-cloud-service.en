@@ -97,7 +97,7 @@ The following is a high-level recommended end-to-end process for coming up with 
   The `kind` parameter should be set to `CDN` and the version should be set to the schema version, which is currently `1`. See examples further below.
 
 
-   <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+   <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
 1. If WAF rules are licensed, you should enable the feature in Cloud Manager, as described below for both the new and existing program scenarios.
 
@@ -107,14 +107,14 @@ The following is a high-level recommended end-to-end process for coming up with 
 
 1. For environment types other than RDE, create a targeted deployment config pipeline in Cloud Manager.
 
-   * [Please see this document for production pipelines.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-   * [Please see this document for non-production pipelines.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * [See configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [See configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 For RDEs, the command line will be used, but RDE is not supported at this time.
 
 **Notes**
 
-* You can use `yq` to validate locally the YAML formatting of your configuration file (eg. `yq cdn.yaml`).
+* You can use `yq` to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
 
 ## Traffic Filter Rules Syntax {#rules-syntax}
 
@@ -186,7 +186,7 @@ A Group of Conditions is composed of multiple Simple and/or Group Conditions.
 
 | **Property**   | **Type**  | **Description**  |
 |---|---|---|
-| reqProperty  | `string`  | Request property.<br><br>One of:<br><ul><li>`path`: Returns the full path of an URL without the query parameters.</li><li>`queryString`: Returns the query part of an URL</li><li>`method`: Returns the HTTP method used in the request.</li><li>`tier`: Returns one of `author`, `preview` or `publish`.</li><li>`domain`: Returns the domain property (as defined in the `Host` header) in lower-case</li><li>`clientIp`: Returns the client IP.</li><li>`clientCountry`: Returns a two letter code ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) that identify in which country the client is located.</li></ul> |
+| reqProperty  | `string`  | Request property.<br><br>One of:<br><ul><li>`path`: Returns the full path of a URL without the query parameters.</li><li>`queryString`: Returns the query part of a URL</li><li>`method`: Returns the HTTP method used in the request.</li><li>`tier`: Returns one of `author`, `preview` or `publish`.</li><li>`domain`: Returns the domain property (as defined in the `Host` header) in lower-case</li><li>`clientIp`: Returns the client IP.</li><li>`clientCountry`: Returns a two letter code ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) that identify in which country the client is located.</li></ul> |
 | reqHeader  | `string`  | Returns Request Header with specified name  |
 | queryParam  | `string` | Returns Query Parameter with specified name  |
 | reqCookie  | `string`  | Returns Cookie with specified name  |
@@ -484,7 +484,7 @@ The rules behave in the following manner:
 
 * The customer-declared rule name of any matching rules will be listed in the `match` attribute.
 * The `action` attribute determines whether the rules had the effect of blocking, allowing, or logging.
-* If the WAF is licensed and enabled, the `waf` attribute will list any WAF flags (e.g., SQLI) that were detected, regardless of whether the WAF flags were listed in any rules. This is to provide insight into potential new rules to declare.
+* If the WAF is licensed and enabled, the `waf` attribute will list any WAF flags (for example, SQLI) that were detected, regardless of whether the WAF flags were listed in any rules. This is to provide insight into potential new rules to declare.
 * If no customer-declared rules match and no waf rules match, the `rules` property will be blank.
 
 As noted earlier, WAF rule matches only appear in CDN logs for CDN misses and passes, not hits.
@@ -583,7 +583,7 @@ Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-ELK-To
 
 ## Recommended starter rules {#recommended-starter-rules}
 
-You can copy the recommended rules below into your `cdn.yaml` to get started. Start in log mode, analyze your traffic, and when satisfied, change to block mode. You may wish to modify the rules based on the unique characteristics of your website's live traffic.
+You can copy the recommended rules below into your `cdn.yaml` to get started. Start in log mode, analyze your traffic, and when satisfied, change to block mode. You may want to modify the rules based on the unique characteristics of your website's live traffic.
 
 ```
 kind: "CDN"

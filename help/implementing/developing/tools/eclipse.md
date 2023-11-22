@@ -58,7 +58,7 @@ In Eclipse, a Perspective determines the actions and views available within a wi
 
 _Experience Manager Development Tools for Eclipse_ provide an AEM Perspective that offers you full control over your AEM Projects and instances. To open the AEM Perspective:
 
-1. From the Eclipse menu bar, select **Window** -&gt; **Perspective** -&gt; **Open Perspective** -&gt; **Other**.
+1. From the Eclipse menu bar, select **Window** &gt; **Perspective** &gt; **Open Perspective** &gt; **Other**.
 1. Select **AEM** in the dialog and click **Open**.
 
 ![The AEM perspective in Eclipse](assets/eclipse-aem-perspective.png)
@@ -77,7 +77,7 @@ Follow these steps to create the sample project:
 
    >[!NOTE]
    >
-   >This step might take a moment since m2eclipse needs to scan the archetype catalogs.
+   >This step might take a moment because m2eclipse must scan the archetype catalogs.
 
 1. Choose `com.adobe.granite.archetypes : sample-project-archetype : <highest-number>` from the menu, then click **Next**.
 
@@ -133,7 +133,7 @@ You can use the **New Project** feature to create the right structure for you:
 1. Then do the same for the `PROJECT.ui.content` and replace its content folder with the one of your packages:
 
    1. In the Project Explorer panel, unfold `PROJECT.ui.content` &gt; `src` &gt; `main` &gt; `content` &gt; `jcr_root` &gt; `content`.
-   1. Right-click the deeper content folder and choose **Show In** -&gt; **System Explorer**.
+   1. Right-click the deeper content folder and choose **Show In** &gt; **System Explorer**.
    1. Delete the content folder that you should now see and place here the content folder of your content package.
    1. In Eclipse, right-click the `PROJECT.ui.content` project and choose **Refresh**.
 
@@ -188,7 +188,7 @@ You can use the **New Project** feature to create the right structure for you:
 
 Once done, you should have your package running on your instance, and on save, any change automatically gets synchronized to the instance.
 
-If you wish to re-build a package out of your project, right-click the `PROJECT.ui.apps` or `PROJECT.ui.content` and choose **Run As** -&gt; **Maven Install**.
+If you want to re-build a package out of your project, right-click the `PROJECT.ui.apps` or `PROJECT.ui.content` and choose **Run As** &gt; **Maven Install**.
 
 You now have a target folder created with your package inside (called, for example `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
@@ -200,7 +200,7 @@ To resolve invalid dependencies and project definition proceed as follows:
 
 1. Select all created projects.
 1. Right-click.
-1. In the context menu, select **Maven** -&gt; **Update Projects**.
+1. In the context menu, select **Maven** &gt; **Update Projects**.
 1. Check **Force Updates of Snapshot/Releases**.
 1. Click **OK**.
 

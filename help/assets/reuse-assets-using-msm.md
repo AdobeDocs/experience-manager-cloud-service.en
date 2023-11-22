@@ -245,7 +245,7 @@ You can cancel the Live Copy inheritance for a:
 * Content Fragment variation
 * Content Fragment data field
 
-This will mean that the item is no longer synchronized with the source component. You can enable inheritance at a later point if required.
+This will mean that the item is no longer synchronized with the source component. You can enable inheritance at a later point if necessary.
 
 ### Cancel Inheritance {#cancel-inheritance}
 

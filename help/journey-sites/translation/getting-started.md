@@ -29,7 +29,7 @@ This document helps you understand how to get started translating sites content 
 
 ## Requirements and Prerequisites {#requirements-prerequisites}
 
-There are a number of requirements before you begin translating your AEM content.
+There are several requirements before you begin translating your AEM content.
 
 ### Knowledge {#knowledge}
 
@@ -59,7 +59,7 @@ The sites console provides an overview of the structure of your content making i
 
 To access the sites console:
 
-1. In the global navigation menu, click or tap **Navigation** -&gt; **Sites**.
+1. In the global navigation menu, select **Navigation** &gt; **Sites**.
 1. The sites console opens to the top level of your content.
 1. Make sure that the **Column View** is selected using the view selector at the top-right of the window.
 
@@ -69,7 +69,7 @@ To access the sites console:
 
    ![Content hierarchy](assets/sites-console-hierarchy.png)
 
-1. By tapping or clicking the checkbox of an item in a column, it selects that item and shows the selected item's details in the column to the right and revealing a number of actions available for the selected item in the toolbar above.
+1. By tapping or clicking the checkbox of an item in a column, it selects that item and shows the selected item's details in the column to the right and revealing several actions available for the selected item in the toolbar above.
 
    ![Content selection](assets/sites-console-selection.png)
 
@@ -91,7 +91,7 @@ The sites console lets you navigate your content and provides an overview of its
 
 To edit a page:
 
-1. Use the sites console to locate and select a page. Remember that you need to tap or click the check box of an individual page to select it.
+1. Use the sites console to locate and select a page. Remember that you need to select the check box of an individual page to select it.
 
    ![Selecting a page to edit](assets/sites-editor-select-page.png)
 

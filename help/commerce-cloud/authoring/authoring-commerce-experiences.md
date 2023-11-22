@@ -71,7 +71,7 @@ This creates a placeholder link that gets replaced with a real link when the pag
 
 ### Accessing Associated Product Content {#associated-content}
 
-If the Universal Editor recognizes 1:n products on a page, the side panel will automatically show the tab "Associated Commerce Content". This tab allows authors to quickly access AEM content that was tagged with the product (See [enrich product data with associated AEM content](./enrich-product-associated-content.md) for more information). This tab offers dropdowns to filter for content type and specific products if multiple products are on the page. Using the content works exactly like using content from the "Assets" tab.
+If the Universal Editor recognizes 1:n products on a page, the side panel will automatically show the tab "Associated Commerce Content". This tab allows authors to quickly access AEM content that was tagged with the product (See [enrich product data with associated AEM content](./enrich-product-associated-content.md) for more information). This tab offers drop-down lists to filter for content type and specific products if multiple products are on the page. Using the content works exactly like using content from the "Assets" tab.
 
 ![Product data side panel](../assets/authoring/associated-commerce-content-tab.png)
 

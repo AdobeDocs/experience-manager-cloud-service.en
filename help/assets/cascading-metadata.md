@@ -30,14 +30,14 @@ Consider a scenario where you want to display cascading metadata based on the ty
 
 Irrespective of the asset type chosen, display the copyright information as a required field.
 
-1. Tap/click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
-1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then tap/click **[!UICONTROL Edit]** from the toolbar to edit the schema.
+1. Select the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
+1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then select **[!UICONTROL Edit]** from the toolbar to edit the schema.
 
    ![select_form](assets/select_form.png)
 
 1. (Optional) In the metadata schema editor, create a field to conditionalize. Specify a name and property path in the **[!UICONTROL Settings]** tab.
 
-   To create a tab, tap/click `+` to add a tab and then add a metadata field.
+   To create a tab, select `+` to add a tab and then add a metadata field.
 
    ![add_tab](assets/add_tab.png)
 
@@ -47,7 +47,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
 1. Key-values pairs are the options provided to a form-user. You can provide the key-value pairs either manually or from a JSON file.
 
-    * To specify the values manually, select **[!UICONTROL Add Manually]**, and tap/click **[!UICONTROL Add Choice]** and specify the option text and value. For example, specify Video, PDF, Word, and Image asset types.
+    * To specify the values manually, select **[!UICONTROL Add Manually]**, and select **[!UICONTROL Add Choice]** and specify the option text and value. For example, specify Video, PDF, Word, and Image asset types.
 
     * To fetch the values from a JSON file dynamically, select **[!UICONTROL Add Through JSON Path]** and provide the path of the JSON file. [!DNL Experience Manager] fetches the key-value pairs in the real time when the form is presented to the user.
 
@@ -74,7 +74,7 @@ Irrespective of the asset type chosen, display the copyright information as a re
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. Under **[!UICONTROL Requirement]**, choose the **[!UICONTROL Required, based on new rule]** option.
-1. Tap/click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. Tap/click **[!UICONTROL Done]** to save the changes.
+1. Select **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value on which to create the dependency. In this case, choose **[!UICONTROL Video]**. Select **[!UICONTROL Done]** to save the changes.
 
    ![define_rule](assets/define_rule.png)
 
@@ -84,13 +84,13 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
 1. Under **[!UICONTROL Visibility]**, choose the **[!UICONTROL Visible, based on new rule]** option.
 
-1. Tap/click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. Tap/click **[!UICONTROL Done]** to save the changes.
+1. Select **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. Select **[!UICONTROL Done]** to save the changes.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!CAUTION]
    >
-   >To reset the values, click or tap on whitespace or anywhere on the interface other than the values. If the values are reset, select the values again.
+   >To reset the values, select anywhere on the interface other than the values. If the values are reset, select the values again.
 
    >[!NOTE]
    >

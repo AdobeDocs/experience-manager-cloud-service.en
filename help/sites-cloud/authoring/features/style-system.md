@@ -11,7 +11,7 @@ This eliminates the need to develop a custom component for each style or to cust
 
 ## Use Case {#use-case}
 
-Template authors not only need the ability to configure how components function for the content authors, but also to configure a number of alternative visual variations of a component.
+Template authors not only need the ability to configure how components function for the content authors, but also to configure several alternative visual variations of a component.
 
 Likewise, content authors not only need the ability to structure and arrange their content, but also to select how it is presented visually.
 
@@ -54,10 +54,10 @@ To demonstrate the feature, we will use [WKND](https://experienceleague.adobe.co
 
 The following sections [As a Content Author](#as-a-content-author) and [As a Template Author](#as-a-template-author) describe how to test the functionality of the Style System using the Style System of WKND.
 
-If you wish to use the Style System for your own components do the following:
+If you want to use the Style System for your own components do the following:
 
 1. Install the CSS as client libraries as discussed in the section [Overview](#overview).
-1. Configure the CSS classes that you wish to make available to your content authors as described in the section [As a Template Author](#as-a-template-author).
+1. Configure the CSS classes that you want to make available to your content authors as described in the section [As a Template Author](#as-a-template-author).
 1. Content authors can then use the styles as described in the section [As a Content Author](#as-a-content-author).
 
 ### As a Content Author {#as-a-content-author}
@@ -67,7 +67,7 @@ If you wish to use the Style System for your own components do the following:
 
    ![Style System for the author](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
-1. Tap or click the **Styles** button on the toolbar of the **List** component to open the style menu and change the appearance of the component.
+1. Select the **Styles** button on the toolbar of the **List** component to open the style menu and change the appearance of the component.
 
    ![Selecting styles](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
@@ -77,7 +77,7 @@ If you wish to use the Style System for your own components do the following:
 
 ### As a Template Author {#as-a-template-author}
 
-1. While editing WKND's English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information -&gt; Edit Template**.
+1. While editing WKND's English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information &gt; Edit Template**.
 
    ![Edit Template](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
@@ -153,4 +153,4 @@ This property is set on the `cq:Component` node. For example:
 
 This ability to define style names is useful for generic components, like the Layout Container, or the Content Fragment component, to provide them with additional meaning.
 
-For instance it allows a Layout Container to be given semantics like `<main>`, `<aside>`, `<nav>`, etc.
+For instance it allows a Layout Container to be given semantics like `<main>`, `<aside>`, `<nav>`, and so on.

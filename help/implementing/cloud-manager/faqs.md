@@ -102,7 +102,7 @@ If [adding a RepositoryInitializer OSGi configuration](#cloud-manager-deployment
   * Follow these steps so you can simulate the issue on a local setup.
     1. Install an author and publish instance locally using the latest AEM SDK jars.
     1. Log on to the author instance.
-    1. Go to **Tools** -&gt; **Deployment** -&gt; **Distribution**.
+    1. Go to **Tools** &gt; **Deployment** &gt; **Distribution**.
     1. Distribute the content packages that are part of the code base and see if the queue gets blocked with an error.
 
 ## I am unable to set a variable using an aio command. What can I do? {#set-variable} 
