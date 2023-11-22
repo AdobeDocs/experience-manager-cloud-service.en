@@ -83,7 +83,7 @@ To programmatically generate an access token, generate a JSON Web Token (JWT) an
 Use the following keys, referred to as claims, to construct JWT JSON object:
 
 
-* `exp`- the requested expiration of the access token, expressed as a number of seconds since January 1, 1970 GMT. For most use cases, this is a relatively small value. For example, 5 minutes, for five minutes from now, this value should be 1670923791.
+* `exp`- the requested expiration of the access token, expressed as several seconds since January 1, 1970 GMT. For most use cases, this is a relatively small value. For example, 5 minutes, for five minutes from now, this value should be 1670923791.
 * `iss` - the Organization ID from the Adobe Developer Console project, in the format org_ident@AdobeOrg.
 * `sub` - the Technical Account ID from the Adobe Developer Console integration, in the format: id@techacct.adobe.com.
 * `aud` - the Client ID from the Adobe Developer Console integration prepended with `https://ims-na1.adobelogin.com/c/`.

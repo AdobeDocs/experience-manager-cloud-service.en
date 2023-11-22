@@ -35,7 +35,7 @@ The **Pipelines** window shows a complete list of all pipelines for the selected
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. From the **Program Overview** page, tap or click the **Pipelines** tab to switch to the **Pipelines** window.
+1. From the **Program Overview** page, select the **Pipelines** tab to switch to the **Pipelines** window.
 
 1. Here you can see a list of all pipelines for the program as well as start and stop pipeline execution as you would in the **Pipelines Card**.
 
@@ -51,7 +51,7 @@ The **Activities** window shows a complete list of all pipelines executions for 
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. From the **Program Overview** page, tap or click the **Activity** tab to switch to the **Activity** window.
+1. From the **Program Overview** page, select the **Activity** tab to switch to the **Activity** window.
 
 1. Here you can see a list of all pipeline executions for the program including current and historical executions.
 
@@ -81,7 +81,7 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 
 1. The **Edit Production Pipeline** or **Edit Non-Production Pipeline** dialog box displays, allowing you to edit the same details that you entered when creating the pipeline.
 
-   * See the following pages for details on all of the fields and configuration options available for pipelines.
+   * See the following pages for details on the fields and configuration options available for pipelines.
      * [Configuring Production Pipelines](configuring-production-pipelines.md)
      * [Configuring Non-Production Pipelines](configuring-non-production-pipelines.md)
 
@@ -121,7 +121,7 @@ Once a pipeline step is complete, a summary is presented.
 
 ![Step summary](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
 
-Tap or click the **View details** link to reveal the **Duration** section. This includes the average duration for the pipeline based on the historical trend for that program.
+Select the **View details** link to reveal the **Duration** section. This includes the average duration for the pipeline based on the historical trend for that program.
 
 ![Duration](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
@@ -135,20 +135,20 @@ If a pipeline is in the validation or build image phase you can safely cancel th
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. From the program overview page, click the ellipsis button of the pipeline you wish to cancel on the **Pipelines** card.
+1. From the program overview page, click the ellipsis button of the pipeline you want to cancel on the **Pipelines** card.
 
    ![Cancelling a pipeline](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
 
-1. Tap or click **Cancel**.
+1. Select **Cancel**.
 
 Alternatively you can cancel a pipeline from the pipeline details page.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** tab from the **Program Overview** page and tap or click the pipeline you wish to cancel.
+1. Navigate to the **Pipelines** tab from the **Program Overview** page and select the pipeline you want to cancel.
 
 1. You are taken to the details page of the running pipeline.
 
    ![Cancel Pipeline details](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
 
-1. Tap or click **Cancel**.
+1. Select **Cancel**.

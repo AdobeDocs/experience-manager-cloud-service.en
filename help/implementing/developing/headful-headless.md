@@ -17,7 +17,7 @@ But this does not need to be a binary choice. AEM offers unprecedented flexibili
 
 ![AEM Implementation Models](/help/headless/assets/aem-implementation-models.png)
 
-In a headful or full-stack model, the content is managed in the AEM repository and AEM components based on Java, HTL, etc. are used to render the content for the user experience. In this model, creating the content, styling it, presenting it, and delivering it all happen in AEM.
+In a headful or full-stack model, the content is managed in the AEM repository and AEM components based on Java, HTL, and so on are used to render the content for the user experience. In this model, creating the content, styling it, presenting it, and delivering it all happen in AEM.
 
 In a headless model, the content is managed in the AEM repository, but delivered via APIs such as REST and GraphQL to another system to render the content for the user experience. In this model, content is created in AEM, but styling it, presenting it, and delivering it all happen on another platform.
 

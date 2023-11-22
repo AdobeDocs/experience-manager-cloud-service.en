@@ -75,7 +75,7 @@ Dynamic Media enabled assets include `pyramid.tiffs`.
 
 ### Asset views change {#asset-views-change}
 
-With Dynamic Media enabled, you can zoom in and out by clicking the `+` and `-` buttons. You can also click/tap to zoom into certain area. Revert brings you to the original version and you can make the image full screen by clicking the diagonal arrows. Dynamic Media enabled appears like the following:
+With Dynamic Media enabled, you can zoom in and out by clicking the `+` and `-` buttons. You can also select to zoom into certain area. Revert brings you to the original version and you can make the image full screen by clicking the diagonal arrows. Dynamic Media enabled appears like the following:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

@@ -143,7 +143,7 @@ To open your fragment for editing:
 
    >[!NOTE]
    >
-   >**Save & close** is available via the **Save** dropdown.
+   >**Save & close** is available by way of the **Save** drop-down list.
 
    >[!NOTE]
    >

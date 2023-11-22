@@ -1,10 +1,8 @@
 ---
 title: How to create accessible Adaptive Forms?
 description: AEM Forms provides you tools to create accessible Adaptive Forms and helps comply with accessibility standards.
-uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
 ---
@@ -12,7 +10,7 @@ exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
 
 ## Introduction {#introduction}
 
-An accessible form is a form that everyone can use, including users with special needs. Adaptive Forms include a number of features and capabilities that enhance the usability for users with different abilities. Building accessibility into Adaptive Forms not only allows the widest possible audience for content, but also it is a requirement when supplying documents in geographies where compliance with accessibility standards is mandated. [!DNL AEM Forms] help form developers comply with the accessibility standards.
+An accessible form is a form that everyone can use, including users with special needs. Adaptive Forms include several features and capabilities that enhance the usability for users with different abilities. Building accessibility into Adaptive Forms not only allows the widest possible audience for content, but also it is a requirement when supplying documents in geographies where compliance with accessibility standards is mandated. [!DNL AEM Forms] help form developers comply with the accessibility standards.
 
 While authoring an Adaptive Form, author should consider the following points to create accessible Adaptive Form:
 
@@ -134,7 +132,7 @@ Accessibility design involves considering additional guidelines for color usage.
 
 Users with vision impairment rely on a high contrast between text and the background to read digital content. Without sufficient contrast, a form can become difficult, if not impossible, to read for some users.
 
-It is recommended that you use the default font and background colors--content in black color on a white background. If you change the default colors, choose either a dark foreground color on a light background color, or vice versa.
+It is recommended that you use the default font and background colors--content in black color on a white background. If you change the default colors, choose either a dark foreground color on a light background color, or conversely.
 
 <!-- See [Creating custom themes for Adaptive Forms](creating-custom-adaptive-form-themes.md), for more information about changing the color contrast and theme for the Adaptive Forms. -->
 
@@ -153,7 +151,7 @@ The following keyboard shortcuts are available in [!DNL AEM Forms].
 | Reset the filled data in a form |Alt+R |
 | Submit a form |Alt+S |
 
-In addition, there are various keyboard shortcut keys available for the **[!UICONTROL Date Picker]** component in Adaptive Forms. To enable the shortcut keys, tap the **[!UICONTROL Date Picker]** component and tap ![Configure](assets/configure-icon.svg) to open the properties. In the **[!UICONTROL Patterns]** section, select a display pattern using the **[!UICONTROL Type]** and **[!UICONTROL Pattern]** dropdown lists. Save the properties to enable the use of shortcut keys for the **[!UICONTROL Date Picker]** component.
+In addition, there are various keyboard shortcut keys available for the **[!UICONTROL Date Picker]** component in Adaptive Forms. To enable the shortcut keys, tap the **[!UICONTROL Date Picker]** component and tap ![Configure](assets/configure-icon.svg) to open the properties. In the **[!UICONTROL Patterns]** section, select a display pattern using the **[!UICONTROL Type]** and **[!UICONTROL Pattern]** drop-down lists. Save the properties to enable the use of shortcut keys for the **[!UICONTROL Date Picker]** component.
 
 The following keyboard shortcut keys are available for the Date Picker component in Adaptive Forms:
 

@@ -122,7 +122,7 @@ All Cloud Service deployments follow a rolling process to ensure zero downtime. 
 
 ## Re-Executing a Production Deployment {#reexecute-deployment}
 
-In rare cases, production deployment steps may fail for transient reasons. In such cases, re-execution of the production deployment step is supported so long as the production deployment step has completed, regardless of the type of completion (e.g. cancelled or unsuccessful). Re-execution creates a new execution using the same pipeline consisting of three steps.
+In rare cases, production deployment steps may fail for transient reasons. In such cases, re-execution of the production deployment step is supported so long as the production deployment step has completed, regardless of the type of completion (for example, cancelled or unsuccessful). Re-execution creates a new execution using the same pipeline consisting of three steps.
 
 1. The validate step - This is essentially the same validation that occurs during a normal pipeline execution.
 1. The build step - In the context of a re-execution, the build step copies artifacts and does not actually execute a new build process.

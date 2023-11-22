@@ -43,7 +43,7 @@ There are a few technical details to keep in mind when creating and managing tag
   * A tag that is not a container tag is referred to as a leaf tag.
   * A tag namespace can be either a leaf tag or container tag.
 
-For further technical details on how tags work, please see the document [AEM Tagging Framework.](/help/implementing/developing/introduction/tagging-framework.md)
+For more technical details on how tags work, see [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md).
 
 ## Tagging Console {#tagging-console}
 
@@ -56,14 +56,14 @@ The tagging console is used to create and manage tags and their taxonomies. You 
 To access the tagging console:
 
 1. Sign in to an authoring environment with with administrative privileges.
-1. In the global navigation menu select **`Tools`** -&gt; **`General`** -&gt;
+1. In the global navigation menu select **`Tools`** &gt; **`General`** -&gt;
 **`Tagging`**.
 
 ![The tagging console in AEM](/help/sites-cloud/administering/assets/tagging-console.png)
 
 ## Creating New Tags {#creating-new-tags}
 
-There are a number of steps to create and use tags to organize your content.
+There are several steps to create and use tags to organize your content.
 
 1. [Create a namespace for your tags](#creating-namespaces) (or choose an existing one to reuse).
 1. [Create a new tag.](#creating-tags)
@@ -73,7 +73,7 @@ There are a number of steps to create and use tags to organize your content.
 
 A namespace is used to organize other tags. It can be thought of as the lowest-level tag and is typically used to group other tags.
 
-1. To create a namespace, open the [tagging console](#tagging-console) and tap or click the **Create** button in the toolbar and then **Create Namespace**.
+1. To create a namespace, open the [tagging console](#tagging-console) and select the **Create** button in the toolbar and then **Create Namespace**.
 
    ![Add Namespace dialog](/help/sites-cloud/administering/assets/add-namespace.png)
 
@@ -83,7 +83,7 @@ A namespace is used to organize other tags. It can be thought of as the lowest-l
    * **Name** - If a name is not specified, a valid node name is created from the **Title**. See the document [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md#tagid) for more information.
    * **Description** - A description of the namespace (optional)
 
-1. Once the required information is entered tap or click **Create**.
+1. Once the required information is entered select **Create**.
 
 The namespace is created. Note that in the tagging console the namespaces are at the lowest level (at the far left column in the console) and are represented by folder icons, reflecting their nature as a "container" or grouping of other tags.
 
@@ -97,9 +97,9 @@ Tags are generally added to namespaces.
 
 1. To create a tag, open the [tagging console.](#tagging-console)
 
-1. Select the namespace where you wish to create the tag. Or select another tag to create a sub-tag below it.
+1. Select the namespace where you want to create the tag. Or select another tag to create a sub-tag below it.
 
-1. Tap or click the **Create** button on the toolbar and then **Create Tag**.
+1. Select the **Create** button on the toolbar and then **Create Tag**.
 
 1. The **Create Tag** dialog opens. Provide the required information for the new tag.
 
@@ -110,7 +110,7 @@ Tags are generally added to namespaces.
 
    ![Create tag dialog](assets/create-tag.png)
 
-1. Tap or click **Submit**.
+1. Select **Submit**.
 
 The tag is created and the console is updated to show the new tag.
 
@@ -125,11 +125,11 @@ Just as with creating any other content in AEM, after you have created a tag (or
 
 1. To publish a tag, open the [tagging console.](#tagging-console)
 
-1. Select the tag or tags you wish to publish and in the toolbar, select **Publish**.
+1. Select the tag or tags you want to publish and in the toolbar, select **Publish**.
 
    ![Selecting tags in the console](assets/select-tags.png)
 
-1. The **Publish Tag** dialog asks for a confirmation to publish the selected tags. Tap or click **Publish**.
+1. The **Publish Tag** dialog asks for a confirmation to publish the selected tags. Select **Publish**.
 
    ![The Publish Tag confirmation modal](assets/publish-tag.png)
 
@@ -147,7 +147,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 ## Managing Tags {#managing-tags}
 
-There are a number of actions that you can take on existing tags and namespaces to manage and organize them. Simply select a tag or namespace in the [tagging console](#tagging-console) to reveal in the toolbar the actions available.
+There are several actions that you can take on existing tags and namespaces to manage and organize them. Simply select a tag or namespace in the [tagging console](#tagging-console) to reveal in the toolbar the actions available.
 
 * [View Properties](#viewing-tag-properties)
 * [Edit](#editing-tags)
@@ -169,7 +169,7 @@ You can view more details about the tag including who last published it and when
 
 1. To view the properties of a tag, open the [tagging console.](#tagging-console)
 
-1. Select the tag whose properties you wish to view and in the left rail select **Properties**.
+1. Select the tag whose properties you want to view and in the left rail select **Properties**.
 
    ![Selecting properties view](assets/view-tag-properties.png)
 
@@ -177,7 +177,7 @@ You can view more details about the tag including who last published it and when
 
    ![Viewing tag properties](assets/tag-properties.png)
 
-For more details on selecting viewing modes and the rail, please see the document [Basic Handling.](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+For more details on selecting viewing modes and the rail, see [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 ### Editing Tags {#editing-tags}
 
@@ -185,7 +185,7 @@ Tags and namespaces can be edited after creation.
 
 1. To edit a tag, open the [tagging console.](#tagging-console)
 
-1. Select the tag you wish to edit and in the toolbar, select **Edit**.
+1. Select the tag you want to edit and in the toolbar, select **Edit**.
 
 1. Make the desired changes. It is possible to alter the:
 
@@ -193,7 +193,7 @@ Tags and namespaces can be edited after creation.
    * **Description**
    * [**Localization** of the **Title**](#managing-tags-in-different-languages)
 
-1. After edits are made, tap or click **Submit**.
+1. After edits are made, select **Submit**.
 
 For details about adding language translations, see the section on [Managing Tags in Different Languages](#managing-tags-in-different-languages).
 
@@ -205,11 +205,11 @@ To deactivate tag on your author instance and remove it from your publish instan
 
 1. To unpublish a tag, open the [tagging console.](#tagging-console)
 
-1. Select the tag or tags you wish to unpublish and in the toolbar, select **Unpublish**.
+1. Select the tag or tags you want to unpublish and in the toolbar, select **Unpublish**.
 
    ![Selecting tags in the console](assets/select-tags.png)
 
-1. The **Unuublish Tag** dialog asks for a confirmation to publish the selected tags. Tap or click **Publish**.
+1. The **Unuublish Tag** dialog asks for a confirmation to publish the selected tags. Select **Publish**.
 
    ![The Publish Tag confirmation modal](assets/unpublish-tag.png)
 
@@ -225,7 +225,7 @@ It can be useful to see to which content a particular tag is applied. You can do
 
 1. To view the references of a tag, open the [tagging console.](#tagging-console)
 
-1. Select the tag whose references you wish to view and in the left rail select **References**.
+1. Select the tag whose references you want to view and in the left rail select **References**.
 
    ![Selecting properties view](assets/view-tag-references.png)
 
@@ -233,13 +233,13 @@ It can be useful to see to which content a particular tag is applied. You can do
 
    ![Viewing tag references](assets/tag-references.png)
 
-1. Tap or click the number of tag references to view the detailed list of content that is assigned to the tag.
+1. Select the number of tag references to view the detailed list of content that is assigned to the tag.
 
    ![Viewing the detail of the tag's references](assets/tag-references-detail.png)
 
 Hover the mouse or tap a referencing content in the list to reveal the full path of the content.
 
-For more details on selecting viewing modes and the rail, please see the document [Basic Handling.](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+For more details on selecting viewing modes and the rail, see [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 ### Moving Tags {#moving-tags}
 
@@ -251,20 +251,20 @@ It can be necessary to clean up or otherwise reorganize your tagging taxonomy by
 
 1. To move or rename a tag, open the [tagging console.](#tagging-console)
 
-1. Select the tag that you wish to move or rename and tap or click **Move** in the toolbar.
+1. Select the tag that you want to move or rename and select **Move** in the toolbar.
 
-1. In the **Move Tag** dialog, specify which property you wish to change.
+1. In the **Move Tag** dialog, specify which property you want to change.
 
-   * **Rename to** - The new name you wish to give the tag
+   * **Rename to** - The new name you want to give the tag
       * This field is prepopulated with the current name of the tag.
-      * Leave unmodified if you wish to only move the tag and not rename it.
-   * **Move to** - Where you wish to move the tag
+      * Leave unmodified if you want to only move the tag and not rename it.
+   * **Move to** - Where you want to move the tag
       * This field is prepopulated with the current location of the tag.
-      * Leave unmodified if you wish to only rename the tag and not move it.
+      * Leave unmodified if you want to only rename the tag and not move it.
 
    ![Move Tag](assets/move-tag.png)
 
-1. Tap or click **Submit**.
+1. Select **Submit**.
 
 The tag is renamed and/or moved to its new location. When the selected tag is a container tag, moving the tag will move all child tags as well.
 
@@ -274,15 +274,15 @@ If your tagging taxonomy has duplicates or tags that are similar, it can be usef
 
 1. To merge two tags, open the [tagging console.](#tagging-console)
 
-1. Select the tag that you wish to merge into another tag and then tap or click **Merge** in the toolbar.
+1. Select the tag that you want to merge into another tag and then select **Merge** in the toolbar.
 
-1. In the **Merge Tag** dialog, tap or click the **Browse** icon of the **Merge into** field to specify into which tag you wish to merge the selected tag.
+1. In the **Merge Tag** dialog, select the **Browse** icon of the **Merge into** field to specify into which tag you want to merge the selected tag.
 
    ![Merge Tag dialog](assets/merge-tag.png)
 
-1. Tap or click **Submit**.
+1. Select **Submit**.
 
-The tag selected in the console is merged into the tag specified in the dialog. When a referenced tag is moved or merged, the tag is not physically deleted such that it is possible to maintain references. Please see the document [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) for more information.
+The tag selected in the console is merged into the tag specified in the dialog. When a referenced tag is moved or merged, the tag is not physically deleted such that it is possible to maintain references. See [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) for more information.
 
 ### Deleting Tags {#deleting-tags}
 
@@ -290,15 +290,15 @@ If your tagging taxonomy changes and makes a tag or namespace unnecessary, it ca
 
 1. To delete a tag, open the [tagging console.](#tagging-console)
 
-1. Select the tag that you wish to delete and then tap or click **Delete** in the toolbar.
+1. Select the tag that you want to delete and then select **Delete** in the toolbar.
 
-1. The **Delete Tag** dialog asks for a confirmation to delete the selected tag(s). Tap or click **Delete**.
+1. The **Delete Tag** dialog asks for a confirmation to delete the selected tag(s). Select **Delete**.
 
    ![The Delete Tag confirmation modal](assets/delete-tag.png)
 
 1. AEM checks to make sure that the tag is not referenced.
 
-   1. If no references are found, AEM asks for final confirmation to delete. Tap or click **Delete** 
+   1. If no references are found, AEM asks for final confirmation to delete. Select **Delete** 
 
       ![No references found](assets/no-references-found.png)
 
@@ -347,11 +347,11 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 The `title` property of a tag may be translated into multiple languages. Once translated, the appropriate tag title can be displayed according to the user or content language.
 
-Let's assume that we have a tag called `Animals` that we wish to translate into German and French.
+Let's assume that we have a tag called `Animals` that we want to translate into German and French.
 
 1. Open the [tagging console.](#tagging-console)
 
-1. Select the tag that you wish to translate and then tap or click **Edit** in the toolbar.
+1. Select the tag that you want to translate and then select **Edit** in the toolbar.
 
 1. In the **Edit Tag** dialog, in the **Localization** column, select the target language, for example German.
 
@@ -361,7 +361,7 @@ Let's assume that we have a tag called `Animals` that we wish to translate into 
 
    ![Translating tag titles](assets/translate-tag.png)
 
-1. Tap or click **Submit**.
+1. Select **Submit**.
 
 For content pages, the language chosen for the tag is taken from the page language, when available.
 
@@ -371,4 +371,4 @@ To add a new language to the dialog, see the document [Building Tagging into AEM
 
 >[!TIP]
 >
->If you wish to learn more about AEM localization features, please see the document [Translating Your Content For Multilingual Sites.](/help/sites-cloud/administering/translation/overview.md)
+>If you want to learn more about AEM localization features, see [Translating Your Content For Multilingual Sites](/help/sites-cloud/administering/translation/overview.md).

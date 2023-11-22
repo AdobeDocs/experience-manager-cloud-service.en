@@ -27,7 +27,7 @@ Connected Assets functionality supports the above use cases by integrating [!DNL
 
 When editing pages in [!UICONTROL Page Editor] as target destination, the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment that acts as a source of assets. The administrators create a one-time integration of a deployment of [!DNL Experience Manager] with [!DNL Sites] capability with another deployment of [!DNL Experience Manager] with [!DNL Assets] capability. You can also use Dynamic Media images in your site's web pages through Connected Assets and use the Dynamic Media functionalities, such as smart crop and image presets.
 
-For the [!DNL Sites] authors, the remote assets are available as read-only local assets. The functionality supports seamless search and access to remote assets on the Site Editor. For any other use cases that may require the complete asset-corpus to be available on Sites, consider migrating the assets in bulk instead of leveraging Connected Assets.
+For the [!DNL Sites] authors, the remote assets are available as read-only local assets. The functionality supports seamless search and access to remote assets on the Site Editor. For any other use cases that may require the complete asset-corpus to be available on Sites, consider migrating the assets in bulk instead of using Connected Assets.
 
 ### Prerequisites and supported deployments {#prerequisites}
 

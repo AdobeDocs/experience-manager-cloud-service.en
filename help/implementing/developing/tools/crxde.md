@@ -26,7 +26,7 @@ The CRXDE Lite User Interface appears as follows in your browser:
 
 >[!TIP]
 >
->You can also access CRXDE Lite from the AEM menu. From the main menu select **Tools** -&gt; **General** -&gt; **CRXDE Lite**.
+>You can also access CRXDE Lite from the AEM menu. From the main menu select **Tools** &gt; **General** &gt; **CRXDE Lite**.
 
 ## Overview of the User Interface {#overview-of-the-user-interface}
 
@@ -157,7 +157,7 @@ The **Login Widget** displays the currently logged-in user.
 
 Click it to log in or re-login as another user. The `@crx.default` represents that you are in the default (and only) workspace in the repository.
 
-The **Preferences** option can be used to set your UI language and to view and customize the hot keys for various actions such as save, search, create note, etc.
+The **Preferences** option can be used to set your UI language and to view and customize the hot keys for various actions such as save, search, create note, and so on.
 
 ## Creating a Folder {#creating-a-folder}
 
@@ -186,7 +186,7 @@ You can now adapt the node to your needs by modifying properties or creating new
 >
 >Most of the edit operations, including **Create Node**, keeps all the changes in memory, and only stores them in the repository upon saving (using the [**Save All Button**](#save-all-button)). However some operations such as move are automatically persisted.
 >
->The validation with regard to whether the newly-created node is allowed by the node type of the parent node is also carried out by the repository when saving changes. If you receive an error message while saving a node, check if the content structure is valid (for example, you cannot create an `nt:unstructured` node as a child of `nt:folder` node).
+>The validation with regard to whether the created node is allowed by the node type of the parent node is also carried out by the repository when saving changes. If you receive an error message while saving a node, check if the content structure is valid (for example, you cannot create an `nt:unstructured` node as a child of `nt:folder` node).
 
 ## Creating a Property {#creating-a-property}
 
@@ -220,7 +220,7 @@ To export a node type definition in CRXDE Lite:
 1. Select your required node.
 1. Select **Tools** then **Export Node Type**.
 1. The definition is displayed in CND notation in a new tab in your browser.
-1. Save the information if required.
+1. Save the information if necessary.
 
 To import a node type definition:
 
@@ -236,7 +236,7 @@ To import a node type definition:
 With CRXDE Lite you can display the file `error.log` that is located on the file system at `<aem-install-dir>/crx-quickstart/logs` and filter it with the appropriate log level. Proceed as follows:
 
 1. Open CRXDE Lite in your browser.
-1. In the in the drop-down menu on the right of the [**Console Tab**](#console-tab) at the bottom of the window, select **Server Logs**.
+1. In the drop-down menu on the right of the [**Console Tab**](#console-tab) at the bottom of the window, select **Server Logs**.
 1. Click the **Stop** icon to display the messages.
 
 You can:

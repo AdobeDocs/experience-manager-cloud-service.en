@@ -5,7 +5,7 @@ exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 ---
 # API Reference Materials {#api-reference-materials}
 
-Adobe Experience Manager (AEM) provides many APIs for developing applications and extending AEM. AEM is built on top of a number of open-source technologies, which can also be used.
+Adobe Experience Manager (AEM) provides many APIs for developing applications and extending AEM. AEM is built on top of several open-source technologies, which can also be used.
 
 ## AEM Core APIs {#core-aem-apis}
 
@@ -13,8 +13,8 @@ The following APIs are core to AEM.
 
 |API|Description|
 |---|---|
-|[Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html)|Product abstractions such as pages, assets, workflows, etc.|
-|[Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#)|Adobe’s Open Web stack, providing various essential components (Note that the 6.5 Granite materials apply to AEMaaCS)|
+|[Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html)|Product abstractions such as pages, assets, workflows, and so on.|
+|[Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#)|Adobe’s Open Web stack, providing various essential components (The 6.5 Granite materials apply to AEMaaCS)|
 |[Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/)|Adobe’s visual style for cloud UIs, designed to provide consistency in the user experience|
 
 <!---
@@ -23,7 +23,7 @@ The following APIs are core to AEM.
 
 ## Additional Frameworks {#additional-apis}
 
-AEM relies on a number of additional open-source APIs.
+AEM relies on several additional open-source APIs.
 
 |API|Description|
 |---|---|
@@ -38,7 +38,7 @@ AEM is built on the following four primary Java API sets in descending order of 
 
 |Priority|API|Description|
 |---|---|---|
-|1|[Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html)|Product abstractions such as pages, assets, workflows, etc.|
+|1|[Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html)|Product abstractions such as pages, assets, workflows, and so on.|
 |2|[Apache Sling](https://sling.apache.org/apidocs/sling11/)|REST and resource-based abstractions such as resources, value maps, and HTTP requests.|
 |3|[Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)|Data and content abstractions such as node, properties and sessions.|
 |4|[Apache Felix](https://felix.apache.org/)|OSGi application container abstractions such as services and (OSGi) components.|
