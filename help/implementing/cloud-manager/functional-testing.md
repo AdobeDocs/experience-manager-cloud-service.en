@@ -18,7 +18,7 @@ the context of an overall testing strategy.
 
 ## Overview
 
-The following diagram provides a high level overview of the available pipelines in the context of an overall testing
+The following diagram provides a high-level overview of the available pipelines in the context of an overall testing
 strategy and the [AEM as a Cloud Service deployment process](/help/implementing/cloud-manager/deploy-code.md).
 
 ![AEM Cloud Service deployment quality gates](assets/functional-testing/quality-gates-compact.svg)
@@ -82,7 +82,7 @@ See [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing
 ### Product Tests
 
 Product functional tests are a set of stable HTTP integration tests (ITs) of core functionality in AEM such as authoring
-and replication tasks. Adobe provides and maintains them out-of-the box. They are intended to prevent changes to custom
+and replication tasks. Adobe provides and maintains them out-of-the-box. They are intended to prevent changes to custom
 application code from being deployed if it breaks core functionality in the AEM product.
 
 They are implemented using Junit, are executed using Maven and make use of the
@@ -115,19 +115,19 @@ See [Java Functional Tests](/help/implementing/cloud-manager/java-functional-tes
 
 ### Custom UI Tests
 
-To maximise risk control for your customer specific development, Adobe strongly encourages you to capture critical UI
+To maximize risk control for your customer-specific development, Adobe strongly encourages you to capture critical UI
 tests into AEMCS. They are intended to be kept rather limited in number, but with the highest impact on your customer
 experience.
 
-The tests are packaged in a Docker images - designed to be as volatile as possible (with support for Cypress, Selenium,
-Java, Javascript, etc). They follow the same characteristics and purpose like the custom functional tests.
+The tests are packaged in a Docker image - designed to be as volatile as possible (with support for Cypress, Selenium,
+Java, Javascript, etc.). They follow the same characteristics and purposes like the custom functional tests.
 
 >[!NOTE]
 >
 >Custom UI tests are executed in the production and non-production (opt-in) pipelines which are used by your AEM application changes deployments and AEM product push updates and are therefore a key contribution to help ensure proper functioning of your application and increase release safety.
 >The customer UI tests are also executed in internal pre-release validation pipelines for each customer, which helps provide early feedback.
 
-In order to keep pipeline executions efficient, we recommend to focus on key features and main user interaction flows.
+In order to keep pipeline executions efficient, we recommend focusing on key features and main user interaction flows.
 Full UI test suites that do not fit in this quality gate are recommended to be executed as part of general customer
 validation pipelines during customer's development flow.
 
@@ -143,7 +143,7 @@ The experience audit quality gate is
 performing [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
 audits against the customer's webpage.
 
-This quality gate is provided by AEM out-of-the box, but is not blocking the deployment pipelines. By default,
+This quality gate is provided by AEM out-of-the-box, but is not blocking the deployment pipelines. By default,
 an audit against the root page (`/`) of the publish instance is performed. You can contribute by configuring up to 25
 custom paths that are considered for audits.
 
@@ -156,10 +156,10 @@ The customer validations quality gate is a placeholder for the customer's own te
 before the customer's application changes reach the AEM cloud deployment pipelines.
 
 Here you can, of course, choose the tools and frameworks you prefer. In contrast to customer function tests
-and custom UI tests, there are no AEM cloud service related limits, and we therefore recommend to perform long-running
+and custom UI tests, there are no AEM as a Cloud Service related limits, and we therefore recommend to perform long-running
 functional and UI testing here.
 
-While you are free to choose any tool and framework, we recommend you align HTTP based integration tests
+While you are free to choose any tool and framework, we recommend you align HTTP-based integration tests
 and UI tests with the tools and frameworks available in the custom functional tests and custom UI test quality gates.
 We recommend integrating
 [Rapid Development Environments (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md)
