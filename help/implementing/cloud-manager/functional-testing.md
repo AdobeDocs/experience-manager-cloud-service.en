@@ -6,10 +6,10 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 
 # Introduction {#functional-testing-introduction}
 
-> [!CONTEXTUALHELP]
-> id="aemcloud_nonbpa_functionaltesting"
-> title="Functional Testing"
-> abstract="Learn about the three different types of functional testing built into the AEM as a Cloud Service deployment process to ensure quality and reliability of your code."
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_functionaltesting"
+>title="Functional Testing"
+>abstract="Learn about the three different types of functional testing built into the AEM as a Cloud Service deployment process to ensure quality and reliability of your code."
 
 Learn about the quality gates available in the [AEM as a Cloud Service deployment process](/help/implementing/cloud-manager/deploy-code.md), the different types of functional testing built in, how you can contribute and how you can make best use of them in the context of an overall testing strategy.
 
@@ -68,7 +68,7 @@ an [open-source project](https://github.com/adobe/aem-test-samples/tree/aem-clou
 
 Like the product tests, customer functional tests are HTTP integration tests (ITs) and are as well implemented using Junit, are executed using Maven and built on top of the official [AEM Testing Clients](https://github.com/adobe/aem-testing-clients).
 
-> [!NOTE]
+>[!NOTE]
 >
 >Custom functional tests are executed in the production and non-production (opt-in) pipelines which are used by your AEM application changes deployments and AEM product push updates and are therefore a key contribution to help ensure proper functioning of your application and increase release safety. The customer functional tests are also executed in internal pre-release validation pipelines for each customer, which helps provide early feedback.
 
@@ -84,7 +84,7 @@ To maximize risk control for your customer-specific development, Adobe strongly 
 
 The tests are packaged in a Docker image - designed to be as volatile as possible (with support for Cypress, Selenium, Java, Javascript, etc.). They follow the same characteristics and purposes like the custom functional tests.
 
-> [!NOTE]
+>[!NOTE]
 >
 >Custom UI tests are executed in the production and non-production (opt-in) pipelines which are used by your AEM application changes deployments and AEM product push updates and are therefore a key contribution to help ensure proper functioning of your application and increase release safety. The customer UI tests are also executed in internal pre-release validation pipelines for each customer, which helps provide early feedback.
 
