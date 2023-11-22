@@ -133,6 +133,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Migration Tools {#migration-tools}
     + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-10-0.md)
       + [Release Notes for 2023.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
       + [Release Notes for 2023.8.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-08-0.md)
       + [Release Notes for 2023.7.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-07-0.md)
