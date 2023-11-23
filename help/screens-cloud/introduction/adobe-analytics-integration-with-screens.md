@@ -60,7 +60,7 @@ Please contact your Adobe Relationship Manager to enable Adobe analytics in Scre
 >
 >Before you configure the properties, please contact your Adobe Relationship Manager to create a ticket to obtain an **Analytics API Key** and **Analytics Project** for use with AEM Screens.
 
-#### Using Adobe Analytics Service in AEM Screens {#using-adobe-analytics-service-in-aem-screens}
+## Using Adobe Analytics Service in AEM Screens {#using-adobe-analytics-service-in-aem-screens}
 
 This scenario invokes Analytics API through REST calls from an analytics service in the firmware and instrument screens-core components to explicitly create and send events specific to a particular use case while allowing extensibility where any custom message can be sent to Analytics from a custom developed channel.
 
