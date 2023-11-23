@@ -288,6 +288,8 @@ You can invoke the custom servlet that includes `ValidateCAPTCHA` API using the 
 
 Similarly, you can use rule editor to include a custom method to validate CAPTCHA in an Adaptive Form.
 
+<!--
+
 ### Add custom CAPTCHA services {#add-custom-captcha-service}
 
 [!DNL Experience Manager Forms] provides reCAPTCHA as the CAPTCHA service. However, you can add a custom service to display in the **[!UICONTROL CAPTCHA Service]** drop-down list.  
