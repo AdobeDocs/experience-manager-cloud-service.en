@@ -10,7 +10,6 @@ products: SG_EXPERIENCEMANAGER/Cloud/SCREENS
 topic-tags: administering
 discoiquuid: b1a0e00e-0368-42c9-8bcd-5f00b4d0990c
 docset: aem65
-feature: Administering Screens
 role: Admin, Developer
 level: Intermediate
 ---
@@ -48,7 +47,7 @@ An AEM Screens customers wants to understand what content was shown at what time
 
 The following architectural diagram explains the Adobe Analytics Integration with AEM Screens:
 
-![Integration with Adobe Analytics](assets/analytics-architecture.png)
+![Integration with Adobe Analytics](/help/screens-cloud/assets/analytics-architecture.png)
 
 ## Enabling Adobe Analytics in AEM Screens cloud {#enabling-adobe-analytics-in-aem-screens-cloud}
 
