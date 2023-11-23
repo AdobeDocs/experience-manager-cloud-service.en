@@ -19,7 +19,6 @@ This section covers the following topics:
 
 * **Overview**
 * **Architectural Details**
-* **Configuring the Properties**
 
 ## Overview {#overview}
 
@@ -64,7 +63,3 @@ Please contact your Adobe Relationship Manager to enable Adobe analytics in Scre
 This scenario invokes Analytics API through REST calls from an analytics service in the firmware and instrument screens-core components to explicitly create and send events specific to a particular use case while allowing extensibility where any custom message can be sent to Analytics from a custom developed channel.
 
 Analytics events are stored offline in indexedDB and later chunked and sent to the cloud.
-
->[!NOTE]
->
->To learn more about the ***Sequencing*** and ***Standard Data Model for Events***, please refer to **[Configuring Adobe Analytics for AEM Screens](configuring-adobe-analytics-aem-screens.md)**.
