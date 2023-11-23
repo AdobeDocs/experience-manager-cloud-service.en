@@ -12,6 +12,7 @@ discoiquuid: b1a0e00e-0368-42c9-8bcd-5f00b4d0990c
 docset: aem65
 role: Admin, Developer
 level: Intermediate
+exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
 ---
 # Adobe Analytics Integration with AEM Screens {#adobe-analytics-integration-with-aem-screens}
 
