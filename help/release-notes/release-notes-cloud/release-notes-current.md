@@ -46,7 +46,7 @@ Have a look at the October 2023 Release Overview video for a summary of the feat
 
 ### New features in Assets view {#assets-view-features}
 
-* **Bulk import assets from OneDrive data source**: Administrators now have the ability to [import large number of assets from OneDrive to AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). The updated list for the supported data sources for bulk import include Azure, AWS, Google Cloud, Dropbox, and OneDrive. 
+* **Bulk import assets from OneDrive data source**: Administrators can now [import large number of assets from OneDrive to AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). The updated list for the supported data sources for bulk import include Azure, AWS, Google Cloud, Dropbox, and OneDrive. 
 
   ![assign metadata form to a folder](/help/assets/assets/bulk-import-source-details-onedrive.png)
 

@@ -58,7 +58,7 @@ The default configurations (listed alphabetically) available are:
 
 >[!NOTE]
 >
->For further details about Asset related search forms, see [Assets - Search Facets](/help/assets/search-facets.md)
+>For more details about Asset related search forms, see [Assets - Search Facets](/help/assets/search-facets.md).
 
 
 ## Predicates and Their Settings {#predicates-and-their-settings}
@@ -474,7 +474,7 @@ The following predicates are available, dependent on the configuration:
 >The common search predicates are defined in:
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->This information is for reference only, you must not make changes to `/libs`.
+>This information is for reference only, you must not change `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -521,7 +521,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
 * **Option Path**
 
-  The user can select the path using the Path Browser in the predicate setting tab. After selecting the **+** icon is used to add the selection to the list of valid options (then the **-** icon to remove if required).
+  The user can select the path using the Path Browser in the predicate setting tab. After selecting the **+** icon is used to add the selection to the list of valid options (then the **-** icon to remove if necessary).
 
   The options are content nodes created by the user, having the following structure:
 

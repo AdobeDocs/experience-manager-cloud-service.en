@@ -15,7 +15,7 @@ In the previous document of the AEM Reference Demos Add-On journey, [Create Prog
 * Know how to activate the Reference Demos Add-On for the new program.
 * Be able to run a pipeline to deploy the add-on content.
 
-This article describes the next step of the process by creating a new site or AEM Screens project in AEM based on the templates of the Reference Demo Add-On.
+This article describes the next step of the process by creating a site or AEM Screens project in AEM based on the templates of the Reference Demo Add-On.
 
 ## Objective {#objective}
 
@@ -29,23 +29,23 @@ This document helps you understand how to create a site based on the templates o
 
 Once the pipeline has deployed the Reference Demo Add-On, you can access the AEM authoring environment to create demo sites based on the add-on content.
 
-1. From the program overview page in Cloud Manager, tap or click the link to the AEM authoring environment.
+1. From the program overview page in Cloud Manager, select the link to the AEM authoring environment.
 
    ![Access authoring environment](assets/access-author.png)
 
-1. From the main menu of AEM, tap or click **Sites**.
+1. From the main menu of AEM, select **Sites**.
 
    ![Access sites](assets/access-sites.png)
 
-1. From the sites console, tap or click **Create** at the top-right of the screen and select **Site from template** in the drop-down.
+1. From the sites console, select **Create** at the top-right of the screen and select **Site from template** in the drop-down.
 
    ![Create site from template](assets/create-site-from-template.png)
 
-1. The site creation wizard starts. In the left column you can see the demo templates that the pipeline deployed to your authoring instance. Tap or click one to select it and show details in the right column. If you wish to test or demo AEM Screens, be sure to choose the **We.Cafe Site Template**. Tap or click **Next**.
+1. The site creation wizard starts. In the left column you can see the demo templates that the pipeline deployed to your authoring instance. Select one to select it and show details in the right column. If you want to test or demo AEM Screens, be sure to choose the **We.Cafe Site Template**. Select **Next**.
 
    ![Site creation wizard](assets/site-creation-wizard.png)
 
-1. In the next screen, provide a title for your site or Screens project. A site name can be provided or generated from the title, if omitted. Tap or click **Create**.
+1. In the next screen, provide a title for your site or Screens project. A site name can be provided or generated from the title, if omitted. Select **Create**.
 
    * The site title appears in the browsers title bar.
    * The site name becomes part of the URL.
@@ -53,7 +53,7 @@ Once the pipeline has deployed the Reference Demo Add-On, you can access the AEM
 
    ![Site details](assets/site-details.png)
 
-1. The site creation is confirmed with a dialog. Tap or click **Done**.
+1. The site creation is confirmed with a dialog. Select **Done**.
 
    ![Site creation complete](assets/site-creation-complete.png)
 
@@ -71,11 +71,11 @@ Now that your demo site is created, you can navigate and use it as you would any
 
    ![Column view](assets/column-view.png)
 
-1. Tap or click the site to explore its structure and contents. The column view continuously expands as you navigate the content tree of the demo site.
+1. Select the site to explore its structure and contents. The column view continuously expands as you navigate the content tree of the demo site.
 
    ![Site structure](assets/site-structure.png)
 
-1. Tap or click a page to select it and then tap or click **Edit** in the toolbar.
+1. Select a page to select it and then select **Edit** in the toolbar.
 
    ![Select page](assets/select-page.png)
 
@@ -97,7 +97,7 @@ Now that you have completed this part of the AEM Reference Demo Add-On journey y
 
 You can now test the features of AEM using add-on content. You have two options to continue your journey:
 
-* If you wish to fully demo and test AEM Screens content, make sure that you have deployed a site based on the **We.Cafe Site Template** as described previously and continue to [Enable AEM Screens for Your Demo Site.](screens.md)
+* If you want to fully demo and test AEM Screens content, make sure that you have deployed a site based on the **We.Cafe Site Template** as described previously and continue to [Enable AEM Screens for Your Demo Site.](screens.md)
 * If you only with to demo Sites content, continue to [Manage Your Demo Sites,](manage.md) where you learn about the tools available to help you manage your demo sites and how to remove them.
 
 ## Additional Resources {#additional-resources}

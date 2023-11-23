@@ -45,7 +45,7 @@ When the hibernation is successful, you see the hibernation process complete not
 
 ![Hibernation confirmation](assets/hibernate-4.png)
 
-In the Developer Console you can also click the **Environments** link in the breadcrumbs above the **Pod** dropdown for a list of environments to hibernate.
+In the Developer Console you can also click the **Environments** link in the breadcrumbs above the **Pod** drop-down list for a list of environments to hibernate.
 
 ![List of environments to hibernate](assets/hibernate-1b.png)
 
@@ -82,7 +82,7 @@ You can manually hibernate your Sandbox Program from the Developer Console.
    ![De-hibernation complete](assets/de-hibernation-img4.png)
 
 
-In the Developer Console you can also click the **Environments** link in the breadcrumbs above the **Pod** dropdown for a list of environments to de-hibernate.
+In the Developer Console you can also click the **Environments** link in the breadcrumbs above the **Pod** drop-down list for a list of environments to de-hibernate.
  
 ![List of hibernated pods](assets/de-hibernate-1b.png)
 

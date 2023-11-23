@@ -15,7 +15,7 @@ You can receive notifications from various areas of AEM, including workflows and
     * These are the product of workflow **Participant** steps.
   * Failure items, to allow administrators to retry the failed step
 
-You receive these notifications in your own Inbox where you can view them and take action.
+You receive these notifications in your own Inbox where you can view and act on them.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ From any of the consoles the current number of items in your inbox is shown in t
 
 To open the AEM notification inbox:
 
-1. Click/tap on the indicator in the toolbar.
+1. Select the indicator in the toolbar.
 
 1. Select **View all**. The **AEM Inbox** opens. The inbox shows items from workflows, projects and tasks.
 1. The default view is [List View](#inbox-list-view), but you can also switch to [Calendar View](#inbox-calendar-view). This is done with the view selector (toolbar, top right).
@@ -142,7 +142,7 @@ For both views (List and Calendar) you can define settings:
 
    Depending on whether a dialog, wizard, documentation page has been opened you can:
 
-    * Confirm the appropriate action, e.g re-assign.
+    * Confirm the appropriate action, for example, re-assign.
     * Cancel the action
     * Select the back arrow to return to the inbox, for example if an action wizard or documentation page has been opened, you can return to the Inbox.
 

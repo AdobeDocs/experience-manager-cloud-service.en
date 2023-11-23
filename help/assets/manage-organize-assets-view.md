@@ -98,7 +98,7 @@ To set asset status:
 
 1. Select the asset, and click **[!UICONTROL Details]** in the toolbar.
 
-1. In the **[!UICONTROL Basic]** tab, select the asset status from the **[!UICONTROL Status]** dropdown list. The possible values include Approved, Rejected, and No Status (default).
+1. In the **[!UICONTROL Basic]** tab, select the asset status from the **[!UICONTROL Status]** drop-down list. The possible values include Approved, Rejected, and No Status (default).
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 

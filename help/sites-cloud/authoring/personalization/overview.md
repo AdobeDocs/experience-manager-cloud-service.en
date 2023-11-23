@@ -18,7 +18,7 @@ AEM provides a framework of tools for:
 * Defining the rules used to resolve the known user information against an audience definition.
 * Configuring your pages to present targeted personalized experiences; to render the specific content applicable to the current end-user.
 
-The following overview presents some the terms used for personalization in AEM as a Cloud Service, followed by a recommended order of action.
+The following overview presents some of the terms used for personalization in AEM as a Cloud Service, followed by a recommended order of action.
 
 ## Experience {#experience}
 

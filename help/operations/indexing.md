@@ -30,7 +30,7 @@ Limitations:
 
 >[!TIP]
 >
->For further details on the Oak Indexing and Queries, including a detailed description of advanced search and indexing features, see the [Apache Oak Documentation](https://jackrabbit.apache.org/oak/docs/query/query.html).
+>For more details on the Oak Indexing and Queries, including a detailed description of advanced search and indexing features, see the [Apache Oak Documentation](https://jackrabbit.apache.org/oak/docs/query/query.html).
 
 
 ## How to Use {#how-to-use}
@@ -55,13 +55,13 @@ An index definition can fall into one of the following categories:
 
 >[!NOTE]
 >
->Introducing new indexes on the `dam:Asset` nodetype (particularly fulltext indexes) is strongly discouraged as these can conflict with OOTB product features leading to functional and performance issues. In general, adding additional properties to the current `damAssetLucene-*` index version is the most appropriate way to index queries on the `dam:Asset` nodetype (these changes will automatically be merged into a new product version of the index if it is subseqently released). If in doubt please contact Adobe Support for advice.
+>Introducing new indexes on the `dam:Asset` nodetype (particularly fulltext indexes) is strongly discouraged as these can conflict with OOTB product features leading to functional and performance issues. In general, adding additional properties to the current `damAssetLucene-*` index version is the most appropriate way to index queries on the `dam:Asset` nodetype (these changes will automatically be merged into a new product version of the index if it is subseqently released). If in doubt, contact Adobe Support for advice.
 
 ## Preparing the New Index Definition {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->If customizing an out-of-the-box index, for example `damAssetLucene-8`, please copy the latest out-of-the-box index definition from a *Cloud Service environment* using the CRX DE Package Manager (`/crx/packmgr/`) . Rename it to `damAssetLucene-8-custom-1` (or higher), and add your customizations inside the XML file. This ensures that the required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-8/tika` is required in the customized index deployed to an AEM Cloud Service environment but doesn't exist on the local AEM SDK.
+>If customizing an out-of-the-box index, for example `damAssetLucene-8`, copy the latest out-of-the-box index definition from a *Cloud Service environment* using the CRX DE Package Manager (`/crx/packmgr/`) . Rename it to `damAssetLucene-8-custom-1` (or higher), and add your customizations inside the XML file. This ensures that the required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-8/tika` is required in the customized index deployed to an AEM Cloud Service environment but doesn't exist on the local AEM SDK.
 
 For customizations of an OOTB index prepare a new package that contains the actual index definition that follows this naming pattern:
 
@@ -90,7 +90,7 @@ To illustrate the deployment of a customized version of the out-of-the-box index
 1. Create a new folder with the updated index name in the `ui.apps` directory: 
     * Example: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-2. Add a configuration file `.content.xml` with the custom configurations inside the newly-created folder. Below is an example of a customization:
+2. Add a configuration file `.content.xml` with the custom configurations inside the created folder. Below is an example of a customization:
     Filename: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
     ```xml
@@ -235,7 +235,7 @@ After adding the new index definition, deploy the new application using Cloud Ma
 
 >[!TIP]
 >
->For further details on the required package structure for AEM as a Cloud Service, see the document [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+>For more details on the required package structure for AEM as a Cloud Service, see [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## Index Management using Rolling Deployments {#index-management-using-rolling-deployments}
 
@@ -302,7 +302,7 @@ After Adobe changes an out-of-the-box index like "damAssetLucene" or "cqPageLuce
 
 ### Current Limitations {#current-limitations}
 
-Index management is only supported for indexes of type `lucene`, with `compatVersion` set to `2`. Internally, other indexes might be configured and used for queries, for example Elasticsearch indexes. Queries that are written against the `damAssetLucene` index might, on AEM as a Cloud Service, in fact be executed against an Elasticsearch version of this index. This difference is invisible to the application end user, however certain tools such as the `explain` feature reports a different index. For differences between Lucene and Elasticsearch indexes, see [the Elasticsearch documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers cannot and do not need to configure Elasticsearch indexes directly.
+Index management is only supported for indexes of type `lucene`, with `compatVersion` set to `2`. Internally, other indexes might be configured and used for queries, for example Elasticsearch indexes. Queries that are written against the `damAssetLucene` index might, on AEM as a Cloud Service, in fact be run against an Elasticsearch version of this index. This difference is invisible to the application user, however certain tools such as the `explain` feature reports a different index. For differences between Lucene and Elasticsearch indexes, see [the Elasticsearch documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers cannot and do not need to configure Elasticsearch indexes directly.
 
 Only built-in analyzers are supported (that is, those analyzers that are shipped with the product). Custom analyzers are not supported.
 

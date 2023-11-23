@@ -34,7 +34,7 @@ Follow these steps so you can use Cloud Manager to create an RDE for your progra
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click the program to which you wish to add an RDE to show its details.
+1. Click the program to which you want to add an RDE to show its details.
 
    * RDEs can be added to both [sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) and [production programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 

@@ -167,7 +167,7 @@ To create a component by dragging one of the above asset types:
 
    A component, appropriate for the asset type, is created at the required location - it contains the selected asset.
 
-1. [Edit](#edit-content) the component if required.
+1. [Edit](#edit-content) the component if necessary.
 
 >[!NOTE]
 >
@@ -335,7 +335,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-cloud/aut
 
    ![The component toolbar of a page component](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Click or tap the **Layout** action to adjust the layout of the component.
+   Select the **Layout** action to adjust the layout of the component.
 
    ![The Layout button of the component toolbar](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

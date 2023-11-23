@@ -162,7 +162,7 @@ See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
 
     * To apply a preset, near the upper-right corner of the page, select **[!UICONTROL Preset]**, then select a preset to apply to all the assets at once.
 
-1. Select **[!UICONTROL Save]**. Your newly-created Spin Set appears in the folder you created it in.
+1. Select **[!UICONTROL Save]**. Your created Spin Set appears in the folder you created it in.
 
 ## Viewing Spin Sets {#viewing-spin-sets}
 
