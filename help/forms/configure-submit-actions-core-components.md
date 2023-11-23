@@ -465,7 +465,7 @@ Use the **[!UICONTROL Revalidate on server]** under Adaptive Form Container in t
 
 Enabling Server-Side Validation
 
-If end-user bypass those validations and submit the forms, the server again performs the validation. If the validation fails at server end, then the submit transaction is stopped. The end user is presented with the original form again. The captured data and submitted data are presented to the user as an error.
+If end-user bypass those validations and submit the forms, the server again performs the validation. If the validation fails at server end, then the submit transaction is stopped. The user is presented with the original form again. The captured data and submitted data are presented to the user as an error.
 
 >[!NOTE]
 >

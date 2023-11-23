@@ -112,7 +112,7 @@ You can move content to your new folders to better organize your displays.
 
  ![image](/help/screens-cloud/assets/display/movetofolder.png)
 
-**Note**: The folder should be selected in the folder side rail. Additionally, the breadcrumb navigation should show the current folder name next to **Displays**.
+**Note**: The folder should be selected in the folder side rail. Also, the breadcrumb navigation should show the current folder name next to **Displays**.
 
 ## How to delete content from a folder {#delete-folder}
 

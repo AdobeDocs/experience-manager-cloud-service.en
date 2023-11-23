@@ -78,7 +78,7 @@ You can edit or delete an existing blueprint configuration:
 
 ## Creating a Live Copy {#creating-a-live-copy}
 
-There are a number of ways to create a Live Copy.
+There are several ways to create a Live Copy.
 
 ### Creating a Live Copy of a Page {#creating-a-live-copy-of-a-page}
 
@@ -104,11 +104,11 @@ To create a Live Copy:
 
    ![Create Live Copy](../assets/create-live-copy.png)
 
-1. Select the source page then click or tap **Next**. For example:
+1. Select the source page then select **Next**. For example:
 
    ![Select Live Copy source](../assets/live-copy-from.png)
 
-1. Specify the destination path of the Live Copy (open the parent folder/page of the Live Copy) and then click or tap **Next**.
+1. Specify the destination path of the Live Copy (open the parent folder/page of the Live Copy) and then select **Next**.
 
    ![Select Live Copy destination](../assets/live-copy-to.png)
 
@@ -129,7 +129,7 @@ To create a Live Copy:
     * Not Selected: create a Live Copy that includes all descendants of the selected page (deep Live Copy)
 
 1. (Optional) To specify one or more rollout configurations to use for the Live Copy, use the **Rollout Configs** drop-down list to select them. Selected configurations are shown underneath the drop-down selector.
-1. Click or tap **Create**. A confirmation message is shown, from here you can select either **Open** or **Done**.
+1. Select **Create**. A confirmation message is shown, from here you can select either **Open** or **Done**.
 
    >[!NOTE]
    >
@@ -163,9 +163,9 @@ To create a Live Copy of a site from a blueprint configuration:
 
    ![Create site from blueprint](../assets/create-site-from-blueprint.png)
 
-1. Use the **Initial Languages** selector to specify the language(s) of the blueprint site to use for the Live Copy.
+1. Use the **Initial Languages** selector to specify the languages of the blueprint site to use for the Live Copy.
 
-   All available languages are selected by default. To remove a language, click or tap the **X** that appears next to the language.
+   All available languages are selected by default. To remove a language, select the **X** that appears next to the language.
 
    For example:
 
@@ -211,7 +211,7 @@ Blueprint pages (that are referenced in a blueprint configuration) provide you w
 
 ## Synchronizing your Live Copy {#synchronizing-your-live-copy}
 
-There are a number of ways to synchronize your Live Copy.
+There are several ways to synchronize your Live Copy.
 
 ### Rolling Out a Blueprint {#rolling-out-a-blueprint}
 
@@ -246,7 +246,7 @@ Rollouts are processed as asynchronous jobs and can be checked on the [***Async 
 1. In the **Sites** console, select the page in the live copy and open the **[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** panel (from the toolbar).
 1. Select the **Blueprint** option from the list, to show the blueprints associated with this page.
 1. Select the required blueprint from the list.
-1. Click or tap **Rollout**.
+1. Select **Rollout**.
 
    ![Rollout blueprint from references rail](../assets/rollout-blueprint-from-references.png)
 
@@ -299,7 +299,7 @@ Synchronize a Live Copy to pull changes from the source to the Live Copy.
 
 1. In the **Sites** console, select the Live Copy page and open the properties.
 1. Open the **Live Copy** tab.
-1. Click or tap **Synchronize**.
+1. Select **Synchronize**.
 
    ![Synchronize button](../assets/synchronize.png)
 
@@ -362,7 +362,7 @@ You can suspend the Live Copy inheritance for a Live Copy page so that you can c
 To suspend inheritance on a page:
 
 1. Open the properties of the Live Copy page either using the **View Properties** command of the **Sites** console or using **Page Information** on the page toolbar.
-1. Click or tap the **Live Copy** tab.
+1. Select the **Live Copy** tab.
 1. Select **Suspend** from the toolbar. You can then select either:
 
     * **Suspend**: to suspend current page only.
@@ -411,7 +411,7 @@ Once [suspended](#suspending-inheritance-from-page-properties) the **Resume** ac
 
 ![Resume button](../assets/resume.png)
 
-When selected, the dialog box is shown. You can select a synchronization, if required, then confirm the action.
+When selected, the dialog box is shown. You can select a synchronization, if necessary, then confirm the action.
 
 #### Resume a Live Copy Page from the Live Copy Overview {#resume-a-live-copy-page-from-the-live-copy-overview}
 
@@ -445,7 +445,7 @@ On an existing Live Copy you can change the depth for a page, that is, whether c
 To specify or change the depth:
 
 1. Open the properties of the Live Copy page either using the **View Properties** command of the **Sites** console or using **Page Information** on the page toolbar.
-1. Click or tap the **Live Copy** tab.
+1. Select the **Live Copy** tab.
 1. In the **Configuration** section, set or clear the **Live Copy Inheritance** option depending on whether child pages are included:
 
     * Checked - a deep Live Copy (the child pages are included)
@@ -457,11 +457,11 @@ To specify or change the depth:
    >
    >See [Live Copies - Composition](overview.md#live-copies-composition) for more information.
 
-1. Click or tap **Save** to persist your updates.
+1. Select **Save** to persist your updates.
 
 ### Cancelling Inheritance for a Component {#cancelling-inheritance-for-a-component}
 
-Cancel the Live Copy inheritance for a component so that the component is no longer synchronized with the source component. You can enable inheritance at a later point if required.
+Cancel the Live Copy inheritance for a component so that the component is no longer synchronized with the source component. You can enable inheritance at a later point if necessary.
 
 >[!NOTE]
 >
@@ -469,11 +469,11 @@ Cancel the Live Copy inheritance for a component so that the component is no lon
 
 Cancel inheritance to change the component content or delete the component:
 
-1. Click or tap the component for which you want to cancel inheritance.
+1. Select the component for which you want to cancel inheritance.
 
    ![Inheritance in the component toolbar](../assets/inheritance-toolbar.png)
 
-1. On the component toolbar, click or tap the **Cancel Inheritance** icon.
+1. On the component toolbar, select the **Cancel Inheritance** icon.
 
    ![Cancel inheritance icon](../assets/cancel-inheritance-icon.png)
 
@@ -483,7 +483,7 @@ Cancel inheritance to change the component content or delete the component:
 
 ### Re-Enabling Inheritance for a Component {#re-enabling-inheritance-for-a-component}
 
-To enable inheritance for a component, click or tap the **Re-enable Inheritance** icon on the component toolbar.
+To enable inheritance for a component, select the **Re-enable Inheritance** icon on the component toolbar.
 
 ![Re-enable inheritance icon](../assets/re-enable-inheritance-icon.png)
 
@@ -517,22 +517,22 @@ When you cancel inheritance, you can change the property value. A broken-link ic
 
 ![Properties not inherited](../assets/properties-not-inherited.png)
 
-You can later re-enable inheritance for a property if required.
+You can later re-enable inheritance for a property if necessary.
 
 >[!NOTE]
 >
 >When you re-enable inheritance, the Live Copy page property is not automatically synchronized with the source property. You can manually request a synchronization if this is required.
 
 1. Open the properties of the Live Copy page using either the **View Properties** option of the **Sites** console or **Page Information** icon on the page toolbar.
-1. To cancel inheritance of a property, click or tap the link icon that appears to the right of the property.
+1. To cancel inheritance of a property, select the link icon that appears to the right of the property.
 
    ![Cancel inheritance button](../assets/cancel-inheritance-button.png)
 
-1. In the **Cancel Inheritance** confirmation dialog, click or tap **Yes**.
+1. In the **Cancel Inheritance** confirmation dialog, select **Yes**.
 
 ### Revert Properties of a Live Copy Page {#revert-properties-of-a-live-copy-page}
 
-To enable inheritance for a property, click or tap the **Revert Inheritance** icon that appears next to the property.
+To enable inheritance for a property, select the **Revert Inheritance** icon that appears next to the property.
 
 ![Revert inheritance button](../assets/revert-inheritance-button.png)
 
@@ -629,7 +629,7 @@ There are implications on where within the tree that you use **Detach**:
 
 To detach a Live Copy:
 
-1. In the **Sites** console, select the Live Copy page and click or tap **View Properties**.
+1. In the **Sites** console, select the Live Copy page and select **View Properties**.
 1. Open the **Live Copy** tab.
 1. On the toolbar, select **Detach**.
 

@@ -13,7 +13,7 @@ Learn how to add your own SSL certificate using Cloud Manager's self-service too
 
 ## Certificate Requirements {#certificate-requirements}
 
-Please review the section **Certificate Requirements** of the document [Introduction to Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) to ensure that the certificate you wish to add is supported by AEM as a Cloud Service.
+Review the section **Certificate Requirements** of the document [Introduction to Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) to ensure that the certificate you want to add is supported by AEM as a Cloud Service.
 
 ## Adding a Certificate {#adding-a-cert}
 

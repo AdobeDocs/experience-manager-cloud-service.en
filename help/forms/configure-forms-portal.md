@@ -27,7 +27,7 @@ The Form Portal components allow you to add the following functionality:
 * Enable searching of forms based on title and description.
 * Use custom CSS to customize the look and feel of the portal.
 * Create links to forms.
-* Lists drafts and submissions related to Adaptive Forms created by the end user.
+* Lists drafts and submissions related to Adaptive Forms created by the user.
 
 ## Components of a Forms Portal Page {#forms-portal-components}
 

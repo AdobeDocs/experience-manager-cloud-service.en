@@ -169,7 +169,7 @@ To configure the Bulk Import tool, follow these steps:
 
 1. Specify a title for the bulk import configuration in the **[!UICONTROL Title]** field.
 
-1. Select the data source type from the **[!UICONTROL Import Source]** dropdown list. 
+1. Select the data source type from the **[!UICONTROL Import Source]** drop-down list. 
 
 1. Provide the values to create a connection with the data source. For example, if you select **Azure Blob Storage** as the data source, specify the values for Azure storage account, Azure blob container, and Azure access key.
 

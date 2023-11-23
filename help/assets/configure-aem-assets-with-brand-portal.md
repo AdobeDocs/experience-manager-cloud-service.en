@@ -231,7 +231,7 @@ The public key (certificate) authenticates your profile on Adobe Developer Conso
 1. Login to Experience Manager Assets.
 1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 1. In Adobe IMS Configurations page, click **[!UICONTROL Create]**. It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. By default, the **Certificate** tab opens.
-1. Select **[!UICONTROL Adobe Brand Portal]** in the **[!UICONTROL Cloud Solution]** dropdown list.  
+1. Select **[!UICONTROL Adobe Brand Portal]** in the **[!UICONTROL Cloud Solution]** drop-down list.  
 1. Select the **[!UICONTROL Create new certificate]** check box and specify an **alias** for the public key. The alias serves as name of the public key. 
 1. Click **[!UICONTROL Create certificate]**. Then, click **[!UICONTROL OK]** to generate the public key.
 
@@ -260,7 +260,7 @@ Perform the following steps to generate the service account credentials and JWT 
 
    >[!NOTE]
    >
-   >Ensure that you have selected the correct IMS organization (Brand Portal tenant) from the dropdown (organization) list located at the upper-right corner.
+   >Ensure that you have selected the correct IMS organization (Brand Portal tenant) from the drop-down (organization) list located at the upper-right corner.
 
 1. Click **[!UICONTROL Create new project]**. A blank project with a system-generated name is created for your organization. 
 
@@ -307,7 +307,7 @@ You can now use the client ID (API key), client secret, and JWT payload to [conf
 
    ![Create New Integration](assets/create-new-integration1.png)
 
-1. Create a new integration page opens. 
+1. Create an integration page. 
    
    Select your organization from the drop-down list.
 
@@ -371,7 +371,7 @@ Perform the following steps to configure the IMS account.
 >
 >You must have only one IMS configuration.
 >
->Ensure that the IMS configuration passes the health check. If the configuration does not pass the health check, it is invalid. You must delete it and create a new, valid configuration.
+>Ensure that the IMS configuration passes the health check. If the configuration does not pass the health check, it is invalid. You must delete it and create another valid configuration.
 
 ### Configure cloud service {#configure-the-cloud-service}
 

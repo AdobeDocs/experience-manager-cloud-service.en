@@ -19,7 +19,7 @@ The translation rules described in this document apply to Content Fragments only
 
 If the **Enable Content Model Fields for Translation** option is active, AEM will use the **Translatable** field on [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) to determine if the field is to be translated and automatically creates translation rules accordingly. This option supersedes any translation rules you may have created and requires no intervention or additional steps.
 
-If you wish to use translation rules for translating your Content Fragments, the **Enable Content Model Fields for Translation** option on the translation integration framework configuration must be disabled and you need to follow the steps outlined below to create your rules.
+If you want to use translation rules for translating your Content Fragments, the **Enable Content Model Fields for Translation** option on the translation integration framework configuration must be disabled and you need to follow the steps outlined below to create your rules.
 
 ## Overview {#overview}
 
@@ -161,7 +161,7 @@ In the translation rules UI you can:
 
    ![Add translation context](../assets/add-translation-context.png)
 
-1. Use the path browser to select the required context and tap or click the **Confirm** button to save.
+1. Use the path browser to select the required context and select the **Confirm** button to save.
 
    ![Select context](../assets/select-context.png)
 

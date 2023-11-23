@@ -18,7 +18,7 @@ If you also serve the role of Cloud Manager or AEM administrator and front-end d
 
 This article takes the next step of showing how the front-end developer uses the Cloud Manager access to retrieve credentials to access the AEM git repository.
 
-Now that there is a site created based on a template, there is a pipeline set up, the front-end developer is onboarded and has all of the information they need, this article shifts perspective away from the administrators and exclusively to the front-end developer role.
+Now that there is a site created based on a template, there is a pipeline set up, the front-end developer is onboarded and has all the information they need, this article shifts perspective away from the administrators and exclusively to the front-end developer role.
 
 ## Objective {#objective}
 
@@ -72,7 +72,7 @@ If you have not received this email, contact the Cloud Manager administrator.
 
 1. Log into Adobe Experience Cloud at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) or click the link provided in the welcome email.
 
-1. Cloud Manager lists the various programs available. Tap or click the one you need to access as provided by the Cloud Manager administrator. If this is your first front-end project for AEMaaCS, you likely only have one program available.
+1. Cloud Manager lists the various programs available. Select the one you need to access as provided by the Cloud Manager administrator. If this is your first front-end project for AEMaaCS, you likely only have one program available.
 
    ![Selecting a program in Cloud Manager](assets/cloud-manager-select-program.png)
 
@@ -82,7 +82,7 @@ You now see an overview of your program. Your page will look different but simil
 
 ## Retrieve Repository Access Information {#repo-access}
 
-1. In the **Pipelines** section of the Cloud Manager page, tap or click the **Access Repo Info** button.
+1. In the **Pipelines** section of the Cloud Manager page, select the **Access Repo Info** button.
 
    ![Pipelines](assets/pipelines-repo-info.png)
 
@@ -90,13 +90,13 @@ You now see an overview of your program. Your page will look different but simil
 
    ![Repo info](assets/repo-info.png)
 
-1. Tap or click the **Generate password** button to create a password for yourself.
+1. Select the **Generate password** button to create a password for yourself.
 
 1. Save the password generated to a secure password manager. The password will never be displayed again.
 
 1. Also copy the **username** and **Git command line** fields. You will use this information later to access the repo.
 
-1. Tap or click **Close**.
+1. Select **Close**.
 
 ## What's Next {#what-is-next}
 

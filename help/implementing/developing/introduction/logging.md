@@ -273,7 +273,7 @@ AEM as a Cloud Service provides three logs for the Apache Web Servers and dispat
 * Apache HTTPD Web Server Error log
 * Dispatcher log
 
-Note that these logs are only available for the Publish tier.
+These logs are only available for the Publish tier.
 
 This set of logs provides insights into HTTP requests to the AEM as a Cloud Service Publish tier prior to those requests reaching the AEM application. This is important to understand as, ideally, most HTTP requests to the Publish tier servers are served by content that is cached by the Apache HTTPD Web Server and AEM Dispatcher, and never reach the AEM application itself. Thus there are no log statements for these requests in AEM's Java, Request or Access logs.
 
@@ -498,7 +498,7 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization. The CDN log format cannot be customized and there is no concept of setting it to different modes such as info, warn, or error.
 
-Note that the Splunk forwarding feature does not yet support CDN logs.
+The Splunk forwarding feature does not yet support CDN logs.
 
  **Example**
 
@@ -638,7 +638,7 @@ Below you will find a sample customer support request:
 Program 123, Production Env
 
 * Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
-* Splunk index: acme_123prod (customer can choose whatever naming convention it wishes)
+* Splunk index: acme_123prod (customer can choose whatever naming convention it wantes)
 * Splunk port: 443
 * Splunk HEC token: ABC123
 
