@@ -253,7 +253,6 @@ The `wafFlags` property, which can be used in the licensable WAF traffic filter 
 | JSON-ERROR  | JSON Encoding Error  | A POST, PUT, or PATCH request body that is specified as containing JSON within the "Content-Type" request header but contains JSON parsing errors. This is often related to a programming error or an automated or malicious request.  |
 | MALFORMED-DATA  | Malformed Data in the request body  | A POST, PUT, or PATCH request body that is malformed according to the "Content-Type" request header. For example, if a "Content-Type: application/x-www-form-urlencoded" request header is specified and contains a POST body that is json. This is often a programming error, automated or malicious request. Requires agent 3.2 or higher.  |
 | SANS  | Malicious IP Traffic  | [SANS Internet Storm Center](https://isc.sans.edu/) list of IP addresses that have been reported to have engaged in malicious activity  |
-| SIGSCI-IP  | Network Effect  | IP flagged by SignalSciences: Whenever an IP is flagged due to a malicious signal by the decision engine, that IP will be propagated to all customers. Subsequent requests from those IP addresses that contain any additional signal for the duration of the flag are then logged |
 | NO-CONTENT-TYPE  | Missing "Content-Type" request header  | A POST, PUT, or PATCH request that does not have a "Content-Type" request header. By default application servers should assume "Content-Type: text/plain; charset=us-ascii" in this case. Many automated and malicious requests may be missing "Content Type".  |
 | NOUA  | No User Agent  | Many automated and malicious requests use fake or missing User-Agents to make it difficult to identify the type of device making the requests.  |
 | TORNODE  |  Tor Traffic | Tor is software that conceals a user's identity. A spike in Tor traffic can indicate an attacker trying to mask their location.  |
@@ -634,7 +633,6 @@ data:
         type: log
         wafFlags:
           - SANS
-          - SIGSCI-IP
           - TORNODE
           - NOUA
           - SCANNER
