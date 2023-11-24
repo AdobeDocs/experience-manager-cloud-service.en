@@ -60,5 +60,4 @@ This scenario invokes Analytics API through REST calls from an analytics service
 Analytics events are stored offline in indexedDB and later chunked and sent to the cloud.
 
 >[!NOTE]
-   >To learn more about the Sequencing and Standard Data Model for Events, please refer to [Configuring Adobe Analytics for AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html?lang=en).
-   
+>To learn more about the Sequencing and Standard Data Model for Events, please refer to [Configuring Adobe Analytics for AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) for details.
