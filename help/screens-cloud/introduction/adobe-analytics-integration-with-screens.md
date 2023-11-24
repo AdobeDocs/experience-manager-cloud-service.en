@@ -1,5 +1,5 @@
 ---
-title: Adobe Analytics Integration with AEM Screens
+title: Adobe Analytics Integration with AEM Screens Cloud
 seo-title: Adobe Analytics Integration with AEM Screens
 description: Follow this page to learn about out of the box integration of AEM Screens with Adobe Analytics and provides you with a proof of play.
 seo-description: Follow this page to learn about out of the box integration of AEM Screens with Adobe Analytics and provides you with a proof of play.
@@ -14,7 +14,7 @@ role: Admin, Developer
 level: Intermediate
 exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
 ---
-# Adobe Analytics Integration with AEM Screens {#adobe-analytics-integration-with-aem-screens}
+# Adobe Analytics Integration with AEM Screens Cloud {#adobe-analytics-integration-with-aem-screens}
 
 This section covers the following topics:
 
@@ -49,18 +49,15 @@ The following architectural diagram explains the Adobe Analytics Integration wit
 
 ![Integration with Adobe Analytics](/help/screens-cloud/assets/analytics-architecture.png)
 
-## Enabling Adobe Analytics in AEM Screens cloud {#enabling-adobe-analytics-in-aem-screens-cloud}
+## Enabling Adobe Analytics in AEM Screens Cloud {#enabling-adobe-analytics-in-aem-screens-cloud}
 
 Please contact your Adobe Relationship Manager to enable Adobe analytics in Screens Cloud.
 
-## Screens Analytics: Enablement Flow {#screens-analytics-enablement-flow}
-
->[!CAUTION]
->
->Before you configure the properties, please contact your Adobe Relationship Manager to create a ticket to obtain an **Analytics API Key** and **Analytics Project** for use with AEM Screens.
-
-## Using Adobe Analytics Service in AEM Screens {#using-adobe-analytics-service-in-aem-screens}
+## Using Adobe Analytics Service in AEM Screens Cloud {#using-adobe-analytics-service-in-aem-screens}
 
 This scenario invokes Analytics API through REST calls from an analytics service in the firmware and instrument screens-core components to explicitly create and send events specific to a particular use case while allowing extensibility where any custom message can be sent to Analytics from a custom developed channel.
 
 Analytics events are stored offline in indexedDB and later chunked and sent to the cloud.
+
+>[!NOTE]
+>To learn more about the Sequencing and Standard Data Model for Events, please refer to [Configuring Adobe Analytics for AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) for details.
