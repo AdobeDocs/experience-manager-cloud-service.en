@@ -102,8 +102,11 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
 ### WAF Traffic Filter Rules can now be licensed {#cdn-waf-license}
 
-[Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) were released in October, and included a note that the special category of WAF rules would be available later this year for further protection against malicious traffic. As an update, the WAF-DDoS Protection offering can now be licensed -- speak to your Adobe representative for more information.
+Traffic Filter Rules were released in October, and included a note that the special category of Web Application Firewall (WAF) rules would be available later this year to supplement the rules already available to Sites and Forms customers. As an update, the WAF-DDoS Protection offering can now be licensed.
 
+Once licensed, these advanced WAF rules can be deployed to the CDN using the Cloud Manager Configuration Pipeline to add an extra layer of protection against web attacks. 
+ 
+Read about [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), including WAF. Speak to your AEM account team about licensing WAF-DDoS Protection or Enhanced Security.
 
 ### CDN Configuration early adopter program {#cdn-config-early-adopter}
 
