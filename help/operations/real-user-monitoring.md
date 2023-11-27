@@ -1,0 +1,125 @@
+---
+title: Real User Monitoring (RUM) for AEM as a Cloud Service
+description: Leverage Real User Monitoring (RUM) in order to keep track of all the actual user interactions of a website or an application in real-time
+---
+
+# Real User Monitoring (RUM) for AEM as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
+
+>[!INFO]
+>
+>This feature is only available to the early adopter program. Customers need to be on AEM version 2023.11.14227 and above for enabling RUM data service.
+>
+>For details on the existing Real User Monitoring (RUM) Data Service feature for AEM as a Cloud Service, please see below.
+
+You can leverage the Real User Monitoring (RUM) data service to enhance accuracy in page view tracking for AEM as a Cloud Service. While especially beneficial for those utilizing Adobe CDN, Real User Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. 
+
+Additionally, for customers using their own CDN, Adobe can now streamline traffic reporting automatically. Additionally, it is a great opportunity to gain advanced insights into your page performance.
+
+## Overview {#overview}
+
+Real User Monitoring (RUM) is a type of performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It gives complete visibility into the real-time performance of a web application and provides accurate insight into the end-user experience. 
+
+RUM provides deep insight into key performance metrics right from the initiation of the URL until the request is served back to the browser all of which helps the developers enhance the application to make it easy to use for the end users. 
+
+## Understand how the RUM Data Service Works {#understand-how-the-rum-data-service-works}
+
+Adobe Experience Manager uses Real User Monitoring (RUM) to understand how visitors are interacting with Adobe Experience Manager-powered sites, to diagnose performance issues, and to measure the effectiveness of experiments. RUM preserves the privacy of visitors through sampling - only a small portion of all page views will be monitored - and judicious exclusion of all personally identifiable information (PII). 
+
+## Rum and Privacy {#rum-and-privacy}
+
+Real User Monitoring in Adobe Experience Manager is designed to preserve visitor privacy and minimize data collection. As a visitor, this means that no personal information will be collected by the site you are visiting or made available to Adobe. As a site operator, this means no opt-in is required to enable this feature. It is not permitted to add any personal data into the RUM data collection.
+
+Additionally, RUM monitoring depends on end user approval to collect data. When end users grant consent, they enable the monitoring processes, contributing to the pool of performance data customers can analyze.
+
+## RUM Data is Sampled {#rum-data-is-sampled}
+
+Traditional web analytics solutions try to collect data on every single visitor. Adobe Experience Manager's Real User Monitoring only captures information from a small fraction of page views. Under normal circumstances this is one out of one hundred visitors, although site operators can decide to increase or decrease this number. 
+
+As the decision of wether data will be collected is made on a page view by page view basis, it becomes virtually impossible to track interactions across multiple pages. RUM has no concept of visits, visitors, or sessions, only of page views. This is by design.
+
+## What Data is Being Collected {#what-data-is-being-collected}
+
+RUM is designed to prevent the collection of personally identifiable information. The full set of information that can be collected by Adobe Experience Manager's Real User Monitoring is listed below:
+
+* The host name of the site being visited, for example: `experienceleague.adobe.com`
+* The user agent that is used to display the page, such as: `Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1`
+* The time of the data collection, such as: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
+* The URL of the page being visited, for instance: `https://experienceleague.adobe.com/docs`
+* The Referrer URL (the URL of the page that linked to the current page, if the user followed a link)
+* A randomly generated ID of the page view, in a format similar to: `2Ac6`
+* The weight or inverse of the sampling rate, such as: `100`. This means only one in one hundred page views will be recorded
+* The checkpoint, or name of a particular event in the sequence of loading the page or interacting with it as a visitor
+* The source, or identifier of the DOM element that the user interacts with for the checkpoint mentioned above. For instance, this could be an image
+* The target, or link to an external page or resource that the user interacts with for the checkpoint mentioned above. For example: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
+* The Core Web Vitals (CWV) performance metrics, the Largest Contentful Paint (LCP), First Input Delay (FID), and Cumulative Layout Shift (CLS) that describe the visitor's quality of experience.
+
+## How RUM Data is Being Used {#how-rum-data-is-being-used}
+
+Adobe uses RUM data for the following purposes:
+
+* To identify and fix performance bottlenecks for customer sites
+* To estimate the number of page views for customer sites
+* To understand how Adobe Experience Manager interacts with other scripts (such as analytics, targeting, or external libraries) on the same page, in order to increase compatibility.
+
+## Limitations and Understanding Variance in Page Views and Performance Metrics {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
+
+As you will analyze this data, there might or might not be variances in page views and other performance metrics reported by Real User Monitoring (RUM). These variances can be attributed to several factors inherent in real-time, client-side monitoring. Here are key considerations for customers to keep in mind when interpreting their RUM data:
+
+1. **End-user consent**
+
+   * RUM operates on user consent, meaning it collects data only from users who have agreed to monitoring. This practice ensures privacy compliance but also contributes to variances in reported page views and user metrics. This means that you may observe lower page view counts or gaps in user data, reflecting only the segment of users who consented to monitoring. 
+
+1. **Tracker blockers**
+
+   * End-users employing tracker blockers or privacy extensions can impede RUM's data collection, as these tools restrict the tracking scripts' execution. This restriction can lead to underreported page views and user interactions, creating a discrepancy between actual site activity and the data captured by RUM.
+
+1. **Limitations in capturing API/JSON calls**
+
+   * RUM data service focuses on the client-side experience and doesn't capture the backend API or JSON calls at this time. The exclusion of these calls from RUM data will create variances from the content requests measured by CDN Analytics.
+
+
+## How to Set Up the RUM Data Service {#how-to-set-up-them-rum-data-service}
+
+1. Upon request, Adobe enables the Feature Flag to enable monitoring
+1. You must then enable an environment variable through Cloud Manager. Please know that this is just a temporary additional step for now and no configuration or set up would be needed in the future
+1. In order to set the environment variable, please follow the below steps:
+
+   1. Go to the program in Cloud Manager you wish to enable the RUM Data Service for
+   1. Navigate to the **Environments** tab
+   1. Under the displayed environments, select the 3 dots on the right hand side, then click on **View Details**. 
+   1. Next, click on the **Configuration** tab
+   1. Click the **+ Add / Update** button
+   1. Add these configuration details:
+
+      * Name: `AEM_WEBVITALS_EXCLUDE`
+      * Value: `/FOO`
+      * Service Applied: All
+      * Type: Variable
+
+1. Once this is completed, please let the Adobe team know and we will provide you with the domain key and dashboard URL to view the metrics and data through the support collaboration channel. 
+
+## How can You View the Traffic and Performance Metrics for Your Website {#how-can-you-view-traffic-and-performance-metrics-for-your-website}
+
+A Slack channel would be created for Early Adopter customers to provide them with the initial support for sharing the data desk dashboard link to access the Page Views and Core Web Vital metrics. 
+
+To access the data desk dashboard and view Page Views and Core Web Vitals, customers you will need a domain key which will be created by Adobe and will be provided to them in the Slack collaboration channel. 
+
+You will then be guided on how to use the domain key to access the data dashboard link and view the metrics.
+
+## FAQ {#faq}
+
+1. **How can I opt-out?**
+
+   Customers who want to opt-out of the RUM monitoring bundle can reach out to Adobe Support.
+
+1. **How can I configure paths to include or exclude in monitoring?**
+
+   Customers will be able to configure paths to include or exclude the URLs for monitoring through the SSG Gateway within Cloud Manager by using these variables: `AEM_WEBVITALS_EXCLUDE` and `AEM_WEBVITALS_INCLUDE_PATHS`
+
+1. **Would Adobe be able to track all the page views prior to them reaching the customer's CDN?**
+
+   Yes.
+
+1. **Will customers be able to integrat the RUM data service scripts with third-party systems like Dynatrace?**
+
+   Yes.
