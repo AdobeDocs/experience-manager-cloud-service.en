@@ -100,15 +100,21 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
+### WAF Traffic Filter Rules can now be licensed {#cdn-waf-license}
+
+[Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md) were released in October, and included a note that the special category of WAF rules would be available later this year for further protection against malicious traffic. As an update, the WAF-DDoS Protection offering can now be licensed -- speak to your Adobe representative for more information.
+
+
 ### CDN Configuration early adopter program {#cdn-config-early-adopter}
 
 In addition to the recently released [Traffic Filter Rules (including WAF)](/help/security/traffic-filter-rules-including-waf.md), there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. We'd love to hear about your use cases, including:
-* client-side redirects
-* server-side proxies
-* setting headers
-* error pages when the CDN can't reach AEM
-* basic auth
-* any other potential CDN configurations
+* 301/302 client-side redirects
+* proxying at the edge to arbitrary origins
+* URL transformations
+* setting or modifying request or response headers
+* custom error pages when the CDN can't reach AEM
+* authentication by username/password
+* any other useful CDN configurations
 
 Send an email to **aemcs-cdn-config-adopter@adobe.com** from your official email ID with your feedback.
 
