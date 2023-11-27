@@ -53,6 +53,34 @@ RUM is designed to prevent the collection of personally identifiable information
 * The target, or link to an external page or resource that the user interacts with for the checkpoint mentioned above. For example: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
 * The Core Web Vitals (CWV) performance metrics, the Largest Contentful Paint (LCP), First Input Delay (FID), and Cumulative Layout Shift (CLS) that describe the visitor's quality of experience.
 
+## How to Set Up the RUM Data Service {#how-to-set-up-them-rum-data-service}
+
+1. Upon request, Adobe enables the Feature Flag to enable monitoring
+1. You must then enable an environment variable through Cloud Manager. Please know that this is just a temporary additional step for now and no configuration or set up would be needed in the future
+1. In order to set the environment variable, please follow the below steps:
+
+   1. Go to the program in Cloud Manager you wish to enable the RUM Data Service for
+   1. Navigate to the **Environments** tab
+   1. Under the displayed environments, select the 3 dots on the right hand side, then click on **View Details**. 
+   1. Next, click on the **Configuration** tab
+   1. Click the **+ Add / Update** button
+   1. Add these configuration details:
+
+      * Name: `AEM_WEBVITALS_EXCLUDE`
+      * Value: `/FOO`
+      * Service Applied: All
+      * Type: Variable
+
+1. Once this is completed, please let the Adobe team know and we will provide you with the domain key and dashboard URL to view the metrics and data through the support collaboration channel. 
+
+## Viewing the Traffic and Performance Metrics for Your Website {#viewing-the-traffic-and-performance-metrics-for-your-website}
+
+A Slack channel would be created for Early Adopter customers to provide them with the initial support for sharing the data desk dashboard link to access the Page Views and Core Web Vital metrics. 
+
+To access the data desk dashboard and view Page Views and Core Web Vitals, customers you will need a domain key which will be created by Adobe and will be provided to them in the Slack collaboration channel. 
+
+You will then be guided on how to use the domain key to access the data dashboard link and view the metrics.
+
 ## How RUM Data is Being Used {#how-rum-data-is-being-used}
 
 Adobe uses RUM data for the following purposes:
@@ -76,35 +104,6 @@ As you will analyze this data, there might or might not be variances in page vie
 1. **Limitations in capturing API/JSON calls**
 
    * RUM data service focuses on the client-side experience and doesn't capture the backend API or JSON calls at this time. The exclusion of these calls from RUM data will create variances from the content requests measured by CDN Analytics.
-
-
-## How to Set Up the RUM Data Service {#how-to-set-up-them-rum-data-service}
-
-1. Upon request, Adobe enables the Feature Flag to enable monitoring
-1. You must then enable an environment variable through Cloud Manager. Please know that this is just a temporary additional step for now and no configuration or set up would be needed in the future
-1. In order to set the environment variable, please follow the below steps:
-
-   1. Go to the program in Cloud Manager you wish to enable the RUM Data Service for
-   1. Navigate to the **Environments** tab
-   1. Under the displayed environments, select the 3 dots on the right hand side, then click on **View Details**. 
-   1. Next, click on the **Configuration** tab
-   1. Click the **+ Add / Update** button
-   1. Add these configuration details:
-
-      * Name: `AEM_WEBVITALS_EXCLUDE`
-      * Value: `/FOO`
-      * Service Applied: All
-      * Type: Variable
-
-1. Once this is completed, please let the Adobe team know and we will provide you with the domain key and dashboard URL to view the metrics and data through the support collaboration channel. 
-
-## How can You View the Traffic and Performance Metrics for Your Website {#how-can-you-view-traffic-and-performance-metrics-for-your-website}
-
-A Slack channel would be created for Early Adopter customers to provide them with the initial support for sharing the data desk dashboard link to access the Page Views and Core Web Vital metrics. 
-
-To access the data desk dashboard and view Page Views and Core Web Vitals, customers you will need a domain key which will be created by Adobe and will be provided to them in the Slack collaboration channel. 
-
-You will then be guided on how to use the domain key to access the data dashboard link and view the metrics.
 
 ## FAQ {#faq}
 
