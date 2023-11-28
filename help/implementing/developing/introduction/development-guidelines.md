@@ -182,7 +182,7 @@ A set of tools for debugging AEM as a Cloud Service developer environments are a
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-As a shortcut, the following Cloud Manager CLI command can be used to launch the AEM as a Cloud Service Developer console based on an environment parameter described below:
+As a shortcut, the following Cloud Manager CLI command can be used to launch the AEM as a Cloud Service Developer Console based on an environment parameter described below:
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
