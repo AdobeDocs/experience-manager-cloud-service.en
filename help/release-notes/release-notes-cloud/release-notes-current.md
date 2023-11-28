@@ -44,23 +44,23 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features {#assets-features}
-
-**AEM Assets add-on for Adobe Express**: Experience Manager Assets now provides an [add-on for Adobe Express](/help/assets/addon-adobe-express.md). The add-on allows you to directly access the assets stored in Experience Manager Assets from within the Adobe Express user interface. You can place content managed in AEM Assets in the Express canvas and then save new or edited content in an AEM Assets repository. The add-on provides the following key benefits:
-
-* Increased content reuse by editing and saving new assets in AEM
-
-* Reduced overall time and effort  to create new assets or create new versions of existing assets
-
-  ![Include assets from Assets add-on](/help/assets/assets/aem-assets-add-on-include-assets.png)
-
 ### New features in Assets view {#assets-view-features}
 
-* **Bulk import assets from OneDrive data source**: Administrators now have the ability to [import large number of assets from OneDrive to AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). The updated list for the supported data sources for bulk import include Azure, AWS, Google Cloud, Dropbox, and OneDrive. 
+* **Adobe Express editor in AEM Assets**: Easy and intuitive editing and content creation tools powered by Adobe Express available directly within AEM Assets to increase content re-use and accelerate content velocity.
 
-  ![assign metadata form to a folder](/help/assets/assets/bulk-import-source-details-onedrive.png)
+  ![assign metadata form to a folder](/help/assets/assets/adobe-express-aem-assets.png)
 
-* **Cross-Org Entitlement Support for Libraries**: Experience Manager Assets now enables you to configure access to Creative Cloud libraries in a different IMS Organization. It allows easier access to the latest cross-product workflows between Creative Cloud and Experience Manager and reduces time and effort for creatives.
+* **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
+
+  ![storage usage insights](/help/assets/assets/block-tags.png)
+
+* **Storage usage reports in Insights**: Administrators now have the ability to view the storage usage reports available as part of Insights.
+
+  ![storage usage insights](/help/assets/assets/storage-usage-insights.png)
+
+* **Search first homepage configuration**: Experience Manager Assets now enables you to configure the homepage experience for your organization. If you select search first as the homepage, you can configure the search bar alignment, background image, and logo for your organization.
+
+  ![search first configuration](/help/assets/assets/search-first-configuration.png)
 
 ### Pre-release features available in [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
