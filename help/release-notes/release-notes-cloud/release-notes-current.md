@@ -106,7 +106,7 @@ Read about [Traffic Filter Rules](/help/security/traffic-filter-rules-including-
 
 In addition to the recently released [Traffic Filter Rules (including WAF)](/help/security/traffic-filter-rules-including-waf.md), there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. We'd love to hear about your use cases, including:
 * 301/302 client-side redirects
-* proxying at the edge to arbitrary origins
+* proxying requests at the edge to arbitrary origins
 * URL transformations
 * setting or modifying request or response headers
 * custom error pages when the CDN can't reach AEM
