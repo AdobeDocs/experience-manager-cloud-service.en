@@ -15,7 +15,7 @@ These operations include:
 * Fetching assets, which are above the threshold limit set, from a remote Experience Manager deployment
 * Rolling out Live Copies
 
-You can view the status of asynchronous jobs from the **[!UICONTROL Background Operations]** dashboard at **Global Navigation** -&gt; **Tools** -&gt; **General** -&gt; **Jobs**.
+You can view the status of asynchronous jobs from the **[!UICONTROL Background Operations]** dashboard at **Global Navigation** &gt; **Tools** &gt; **General** &gt; **Jobs**.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Whenever AEM processes an operation asynchronously, you receive a notification i
 
 To view the status of the asynchronous operations in detail, navigate to the **[!UICONTROL Background Operations]** page.
 
-1. In the Experience Manager interface select **Global Navigation** -&gt; **Tools** -&gt; **General** -&gt; **Jobs**.
+1. In the Experience Manager interface select **Global Navigation** &gt; **Tools** &gt; **General** &gt; **Jobs**.
 
 1. In the **[!UICONTROL Background Operations]** page, review the details of the operations.
 
@@ -65,7 +65,7 @@ To view the status of the asynchronous operations in detail, navigate to the **[
 
 ## Configuring Asynchronous Job Processing Options {#configure}
 
-There are a number of options around asynchronous jobs that can be configured. The following examples show how this can be done using the configuration manager on a local development system.
+There are several options around asynchronous jobs that can be configured. The following examples show how this can be done using the configuration manager on a local development system.
 
 >[!NOTE]
 >

@@ -234,7 +234,7 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-The central idea of SPAs in AEM is the idea of mapping SPA components to AEM components and updating the component when the content is modified (and vice versa). See the document [SPA Editor Overview](editor-overview.md) for an summary of this communication model.
+The central idea of SPAs in AEM is the idea of mapping SPA components to AEM components and updating the component when the content is modified (and conversely). See the document [SPA Editor Overview](editor-overview.md) for an summary of this communication model.
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 
@@ -271,4 +271,4 @@ It is regularly necessary for components within a single-page application to sha
 * [SPA Editor Overview](editor-overview.md) goes into more depth into the communication model between AEM and the SPA.
 * [WKND SPA Project](wknd-tutorial.md) is a step-by step tutorial implementing a simple SPA project in AEM.
 * [Dynamic Model to Component Mapping for SPAs](model-to-component-mapping.md) explains the dynamic model to component mapping and how it works within SPAs in AEM.
-* [SPA Blueprint](blueprint.md) offers a deep dive into how the SPA SDK for AEM works in case you wish to implement SPAs in AEM for a framework other than React or Angular or simply would like a deeper understanding.
+* [SPA Blueprint](blueprint.md) offers a deep dive into how the SPA SDK for AEM works in case you want to implement SPAs in AEM for a framework other than React or Angular or simply would like a deeper understanding.

@@ -58,7 +58,7 @@ The default configurations (listed alphabetically) available are:
 
 >[!NOTE]
 >
->For further details about Asset related search forms, see [Assets - Search Facets](/help/assets/search-facets.md)
+>For more details about Asset related search forms, see [Assets - Search Facets](/help/assets/search-facets.md).
 
 
 ## Predicates and Their Settings {#predicates-and-their-settings}
@@ -474,7 +474,7 @@ The following predicates are available, dependent on the configuration:
 >The common search predicates are defined in:
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->This information is for reference only, you must not make changes to `/libs`.
+>This information is for reference only, you must not change `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -521,7 +521,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
 * **Option Path**
 
-  The user can select the path using the Path Browser in the predicate setting tab. After selecting the **+** icon is used to add the selection to the list of valid options (then the **-** icon to remove if required).
+  The user can select the path using the Path Browser in the predicate setting tab. After selecting the **+** icon is used to add the selection to the list of valid options (then the **-** icon to remove if necessary).
 
   The options are content nodes created by the user, having the following structure:
 
@@ -569,7 +569,7 @@ You can add or edit fields and define/update their settings:
 
     * You are adding a new field:
 
-      After adding the predicate the **Settings** tab will open and show the properties that can be defined.
+      After adding the predicate, the **Settings** tab opens and shows the properties that can be defined.
 
     * You want to update an existing predicate:
 
@@ -628,7 +628,7 @@ The following example (to search according to the template used to create a page
 
 1. Create the node defining the property to be searched on.
 
-   You will need a root node holding definitions of the individual options to be available to the user.
+   You need a root node holding definitions of the individual options to be available to the user.
 
    The nodes for the individual options need the properties:
 

@@ -15,7 +15,7 @@ However, since components within a channel are typically rendered full screen, t
 
 For example, `http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
 
-The user does not have to take care of adding the selector to the URL while editing. A client side logic is listening to the layer switch event and adds the selector if a the channel has the dedicated resource type *screens/core/components/channel.*
+The user does not have to take care of adding the selector to the URL while editing. A client side logic is listening to the layer switch event and adds the selector if the channel has the dedicated resource type *screens/core/components/channel.*
 
 ## Rendering Components {#rendering-components}
 

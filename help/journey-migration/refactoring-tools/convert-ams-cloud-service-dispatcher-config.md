@@ -73,7 +73,7 @@ This section provides step-by-step instructions on how to convert an AMS configu
     Run the Dispatcher validator in your directory, with the httpd subcommand:
 
     `$ validator httpd`
-    If you see errors about missing "include" files, check whether you correctly renamed those files.
+    If you see errors that are about missing "include" files, check whether you correctly renamed those files.
 
     If you see Apache directives that are not whitelisted, remove them.
 
@@ -184,7 +184,7 @@ This section provides step-by-step instructions on how to convert an AMS configu
 
       `$ validator dispatcher`
 
-    * If you see errors about missing "include" files, check whether you correctly renamed those files.
+    * If you see errors that are about missing "include" files, check whether you correctly renamed those files.
 
     * If you see errors concerning undefined variable `PUBLISH_DOCROOT`, rename it to `DOCROOT`.
 

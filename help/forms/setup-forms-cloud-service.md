@@ -23,7 +23,7 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 
 * **AEM administrator**:  An AEM administrator helps with overall configuration like setting up users, hardening the environment, configuring data sources, configuring email, and third-party software. AEM administrator also helps with integrations like integrating with Adobe Analytics, Adobe Target, and Adobe Sign.
 
-* **End user**: An end user interacts with and submits the published form, signs submitted forms, tracks submitted applications through a web portal, and receives personalized communications.
+* **End user**: A user interacts with and submits the published form, signs submitted forms, tracks submitted applications through a web portal, and receives personalized communications.
 
 <!-- While onboarding to the service, assign the following AEM groups to [!DNL AEM Forms] as a Cloud Service based on their role:
 

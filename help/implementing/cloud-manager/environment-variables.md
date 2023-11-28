@@ -31,10 +31,10 @@ Typical use cases for using environment variables include:
 >You must be a member of the [**Deployment Manager** role](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) to add or modify environment variables.
 
 1. Log into Adobe Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Cloud Manager lists the various programs available. Select the one you wish to manage.
+1. Cloud Manager lists the various programs available. Select the one you want to manage.
 1. Select the **Environments** tab for the chosen program then select the environment for which you want to create an environment variable in the left navigation panel.
 1. Within the detail of the environment, select the **Configuration** tab then select **Add** to open the **Environment Configuration** dialog. 
-   * If you are adding an environment variable for the first time, you will see an **Add Configuration** button in the center of the page. You can use this button or **Add** to open the **Environment Configuration** dialog.
+   * If you are adding an environment variable for the first time, you can see an **Add Configuration** button in the center of the page. You can use this button or **Add** to open the **Environment Configuration** dialog.
 
    ![Configuration tab](assets/configuration-tab.png)
 
@@ -59,20 +59,20 @@ An indicator with the status **Updating** is shown at the top of the table and n
 
 >[!TIP]
 >
->If you wish to add multiple variables, it is recommended to add the first variable, then use the **Add** button in the **Environment Configuration** dialog to add the additional variables. This way you can add them with one update to the environment.
+>If you want to add multiple variables, it is recommended to add the first variable, then use the **Add** button in the **Environment Configuration** dialog to add the additional variables. This way you can add them with one update to the environment.
 
 ## Updating Environment Variables {#update-variables}
 
 After you have created environment variables, you can update them using the **Add/Update** button to launch the **Environment Configuration** dialog.
 
 1. Log into Adobe Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. Cloud Manager lists the various programs available. Select the one you wish to manage.
+1. Cloud Manager lists the various programs available. Select the one you want to manage.
 1. Select the **Environments** tab for the chosen program then select the environment for which you want to create an environment variable in the left navigation panel.
 1. Within the detail of the environment, select the **Configuration** tab then select **Add/update** in the top right to open the **Environment Configuration** dialog.
 
    ![Add/Update button for variables](assets/add-update-variables.png)
 
-1. Using the ellipsis button in the last column of the row of the variable you wish to modify, select **Edit** or **Delete**. 
+1. Using the ellipsis button in the last column of the row of the variable you want to modify, select **Edit** or **Delete**. 
 
    ![Edit or delete variable](assets/edit-delete-variable.png)
 
@@ -82,13 +82,13 @@ After you have created environment variables, you can update them using the **Ad
 
    ![Edit variable](assets/edit-variable.png)
 
-1. After you have made all of the required configuration changes, select **Save**.
+1. After you have made the required configuration changes, select **Save**.
 
 [As when adding variables,](#add-variables) an indicator with the status **Updating** is shown at the top of the table and next to the newly updated variable(s) to indicate that the environment is being updated with the configuration. After completion, the updated environment variables are visible in the table.
 
 >[!TIP]
 >
->If you wish to update multiple variables, it is recommended to use the **Environment Configuration** dialog to update all of the necessary variables at once before tapping or clicking **Save**. This way you can add them with one update to the environment.
+>If you want to update multiple variables, it is recommended to use the **Environment Configuration** dialog to update all necessary variables at once before tapping or clicking **Save**. This way you can add them with one update to the environment.
 
 ## Using Environment Variables {#using}
 
@@ -104,7 +104,7 @@ See the [official Maven documentation](https://maven.apache.org/settings.html#qu
 
 ## Environment Variable Availability {#availability}
 
-Environment variables can be used in a number of places.
+Environment variables can be used in several places.
 
 ### Author, Preview, and Publish {#author-preview-publish}
 

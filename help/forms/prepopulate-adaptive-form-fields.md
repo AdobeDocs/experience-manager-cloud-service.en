@@ -260,7 +260,7 @@ Generally, bound (form schema) and unbound fields are authored in the same Adapt
 
 >[!NOTE]
 >
-> As a rule of thumb, do not mix bound and unbound fields if they are intersected in data filled by the end user in unbound fields. If possible, you should modify the schema or the XFA form template and add an entry for unbound fields, so that it also becomes bound and its data is available like other fields in submitted data.
+> As a rule of thumb, do not mix bound and unbound fields if they are intersected in data filled by the user in unbound fields. If possible, you should modify the schema or the XFA form template and add an entry for unbound fields, so that it also becomes bound and its data is available like other fields in submitted data.
 
 ## Supported protocols for prefilling user data {#supported-protocols-for-prefilling-user-data}
 

@@ -5,7 +5,7 @@ exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 ---
 # Getting Started with the Migration Journey to AEM as a Cloud Service {#getting-started}
 
-In this part of the AEM as a Cloud Service Migration Journey, you will learn about the basics of moving your on-premise or Adobe Managed Services installation of AEM to the cloud.
+In this part of the AEM as a Cloud Service Migration Journey, you learn about the basics of moving your on-premise or Adobe Managed Services installation of AEM to the cloud.
 
 ## Objective {#objective}
 

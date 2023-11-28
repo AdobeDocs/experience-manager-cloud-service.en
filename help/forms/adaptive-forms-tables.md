@@ -65,13 +65,13 @@ To add, delete, or move the row, click any cell of the row. open the content bro
 
 ![add-delete-move-row-column](assets/add-delete-move-row.png)
 
-Double click on the row to configure properties of a row, such as Name, Bind Reference, Repeat Settings, CSS Class.
+Double-click the row to configure properties of a row, such as Name, Bind Reference, Repeat Settings, CSS Class.
 ![add-delete-move-row-column](assets/row-properties-image.png)
 
 
 #### Add or delete a column
 
-To add or delete a column, click on the text cell in the header section, a toolbar opens with the options to add or delete a column:
+To add or delete a column, click the text cell in the header section, a toolbar opens with the options to add or delete a column:
 
 ![add-delete-move-row-column](assets/add-delet-column.png)
 
@@ -149,7 +149,7 @@ Tables provide out-of-the box support for dynamically adding or deleting rows at
 1. In the Repeat settings tab, specify the minimum and maximum counts to limit the number of rows in the table.
 1. Click **Done**.
 
-At runtime or preview, you will see **+** and ![Delete Button](/help/forms/assets/Smock_Delete.svg) buttons to add or delete a row.
+At runtime or preview, you see **+** and ![Delete Button](/help/forms/assets/Smock_Delete.svg) buttons to add or delete a row.
 
 ![add-delete-rows-dynamically](assets/add-delete-layout.png)
 
