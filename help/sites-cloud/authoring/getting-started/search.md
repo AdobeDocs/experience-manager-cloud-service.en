@@ -16,7 +16,7 @@ Search is available from the top toolbar:
 With the search rail you can:
 
 * Search for a specific keyword, path or tag
-* Filter according to resource specific criteria, such as modified dates, page status, file size, etc.
+* Filter according to resource specific criteria, such as modified dates, page status, file size, and so on.
 * Define and use a [saved search](#saved-searches) - based on the above criteria
 
 >[!NOTE]
@@ -35,7 +35,7 @@ To search and filter your resources:
 
    ![Search location](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. If required, you can remove the location filter (select **X** on the filter you want removed) to search across all consoles/resource types.
+1. If necessary, you can remove the location filter (select **X** on the filter you want removed) to search across all consoles/resource types.
 1. The results are shown, grouped according to console and related resource type.
 
    You can either select a specific resource (for further action), or drill down by selecting the required resource type; for example **View All Sites**:

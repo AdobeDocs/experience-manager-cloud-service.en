@@ -36,7 +36,7 @@ The following sections describe these steps in more detail.
 
 ## Connecting to a Translation Service Provider {#connect-translation-provider}
 
-The first step is to choose which translation service you wish to use. There are many choices for human and machine translation services available to AEM. Most providers offer a translator package to be installed. See the [Additional Resources](#additional-resources) section for a selection of options available.
+The first step is to choose which translation service you want to use. There are many choices for human and machine translation services available to AEM. Most providers offer a translator package to be installed. See the [Additional Resources](#additional-resources) section for a selection of options available.
 
 >[!NOTE]
 >
@@ -62,24 +62,24 @@ After the connector package for your preferred translation service is installed,
 * Whether human or machine translation is to be performed
 * Whether to translate other content that is associated with the Content Fragment such as tags
 
-To create a new translation configuration:
+To create a translation configuration:
 
-1. In the global navigation menu, click or tap **Tools** -&gt; **Cloud Services** -&gt; **Translation Cloud Services**.
-1. Navigate to where you wish to create the configuration in your content structure. This is often based on a particular project or can be global.
+1. In the global navigation menu, select **Tools** &gt; **Cloud Services** &gt; **Translation Cloud Services**.
+1. Navigate to where you want to create the configuration in your content structure. This is often based on a particular project or can be global.
    * For example, in this case, a configuration could be made globally to apply to all content, or just for the WKND project.
 
    ![Translation configuration location](assets/translation-configuration-location.png)
 
-1. Provide the following information in the fields and then click or tap **Create**.
+1. Provide the following information in the fields and then select **Create**.
    1. Select **Configuration Type** in the drop-down. Select **Translation Integration** from the list.
    1. Enter a **Title** for your configuration. The **Title** identifies the configuration in the **Cloud Services** console and in page property drop-down lists.
    1. Optionally, type a **Name** to use for the repository node that stores the configuration.
 
    ![Create translation configuration](assets/create-translation-configuration.png)
 
-1. Tap or click **Create** and the **Edit Configuration** window appears where you can configure the configuration properties.
+1. Select **Create** and the **Edit Configuration** window appears where you can configure the configuration properties.
 
-1. Remember that Content Fragments are stored as assets in AEM. Tap or click the **Assets** tab.
+1. Remember that Content Fragments are stored as assets in AEM. Select the **Assets** tab.
 
 ![Translation configuration properties](assets/translation-configuration.png)
 
@@ -96,7 +96,7 @@ To create a new translation configuration:
    1. **Disable Update-Only Translation** - When this option is checked, updating the translation project will submit all translatable fields for translation, not just the ones changed since last translation. Updating your translation project is discussed later in the journey.
    1. **Enable Content Model Fields for Translation** - Check this option so the translation configuration automatically recognizes fields in the Content Models based on the **Translatable** flag.
 
-1. Tap or click **Save &amp; Close**.
+1. Select **Save &amp; Close**.
 
 You have now configured the connector to your translation service.
 
@@ -110,12 +110,12 @@ To do this, navigate to the language root of your content. For our example purpo
 /content/dam/<your-project>/en
 ```
 
-1. Go to the global navigation and go to **Navigation** -&gt; **Assets** -&gt; **Files**.
-1. In the assets console, select the language root to configure and click or tap **Properties**.
-1. Tap or click the **Cloud Services** tab.
-1. Under **Cloud Service Configurations** in the **Add Configuration** dropdown, select your connector. It should appear in the dropdown when you have installed its package as [described previously.](#connect-translation-provider)
-1. Under **Cloud Service Configurations** in the **Add Configuration** dropdown, also select your configuration.
-1. Tap or click **Save &amp; Close**.
+1. Go to the global navigation and go to **Navigation** &gt; **Assets** &gt; **Files**.
+1. In the assets console, select the language root to configure and select **Properties**.
+1. Select the **Cloud Services** tab.
+1. Under **Cloud Service Configurations** in the **Add Configuration** drop-down list, select your connector. It should appear in the drop-down list when you have installed its package as [described previously.](#connect-translation-provider)
+1. Under **Cloud Service Configurations** in the **Add Configuration** drop-down list, also select your configuration.
+1. Select **Save &amp; Close**.
 
 ![Select cloud service configurations](assets/select-cloud-service-configurations.png)
 
@@ -126,7 +126,7 @@ Now that you have completed this part of the headless translation journey you sh
 * Understand the important parameters of the Translation Integration Framework in AEM.
 * Be able to set up your own connection to your translation service.
 
-Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Translate content,](translation-rules.md) where you will learn how to use your configuration so far to actually translate your content.
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Translate content,](translation-rules.md) where you learn how to use your configuration so far to actually translate your content.
 
 ## Additional Resources {#additional-resources}
 

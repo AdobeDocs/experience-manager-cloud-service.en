@@ -5,7 +5,7 @@ exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
 ---
 # Understanding Segmentation {#understanding-segmentation}
 
-Segmentation is a key consideration when creating a campaign. In most cases, you will need to have segments already defined before starting your campaign.
+Segmentation is a key consideration when creating a campaign. In most cases, you must have segments already defined before starting your campaign.
 
 Site visitors have different interests and objectives when they come to a site. Understanding these goals and fulfilling the expectations is an important success factor for online marketing.
 

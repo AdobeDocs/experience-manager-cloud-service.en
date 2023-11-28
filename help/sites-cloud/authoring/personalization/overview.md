@@ -8,7 +8,7 @@ exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 
 Personalization of the web content that you provide to customers, means tailoring those experiences to their interests and needs. You can do this based on the information that you have about them; for example, shopping summary, age, gender, geography, among others. 
 
-With Adobe Experience Manager as a Cloud Service (AEM) you can create a selection of content, then specify which audiences (groups of end-users) will see each individual experience. This means that you are targeting your personalized experiences at specific audiences.
+With Adobe Experience Manager as a Cloud Service (AEM) you can create a selection of content, then specify which audiences (groups of end-users) see each individual experience. This means that you are targeting your personalized experiences at specific audiences.
 
 When your reader is online, your targeting engine will review the information available about the end-user and compare it against the experience definitions. The engine then *"decides"* which personalized experience should be displayed. 
 
@@ -18,7 +18,7 @@ AEM provides a framework of tools for:
 * Defining the rules used to resolve the known user information against an audience definition.
 * Configuring your pages to present targeted personalized experiences; to render the specific content applicable to the current end-user.
 
-The following overview presents some the terms used for personalization in AEM as a Cloud Service, followed by a recommended order of action.
+The following overview presents some of the terms used for personalization in AEM as a Cloud Service, followed by a recommended order of action.
 
 ## Experience {#experience}
 
@@ -34,7 +34,7 @@ When creating pages you define multiple experiences, with each experience resolv
 
 An offer is a personalized experience, often available for a limited time period. 
 
-For example, a page from a sample web site can use offers as the teaser image that appears at the top of the page. A Person Over 30 and a Person under 30 will see different offers as the experience teaser.
+For example, a page from a sample website can use offers as the teaser image that appears at the top of the page. A Person Over 30 and a Person under 30 can see different offers as the experience teaser.
 
 ## Audience {#audience}
 

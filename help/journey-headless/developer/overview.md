@@ -22,11 +22,11 @@ Learn about the powerful and flexible headless features, their capabilities, and
 
 The Headless implementation of AEM uses Content Fragments Models and Content Fragments to focus on the creation of structured, channel-neutral, and reusable fragments of content and their cross-channel delivery. To achieve this it forgoes page and component management as is traditional in full stack solutions. It is a modern and dynamic development pattern for implementing digital experiences.
 
-This guide leads you through headless implementation topics in AEM so when you are done you will:
+This guide leads you through headless implementation topics in AEM so when you are done you can:
 
 * Have a full understanding of what headless content delivery is and its benefits.
 * Understand AEM's headless features and how they work together to deliver a headless experience.
-* Have the ability to take the first steps implementing your first AEM headless project.
+* Take the first steps implementing your first AEM headless project.
 
 >[!TIP]
 >

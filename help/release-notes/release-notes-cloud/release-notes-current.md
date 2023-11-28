@@ -46,7 +46,7 @@ Have a look at the October 2023 Release Overview video for a summary of the feat
 
 ### New features in Assets view {#assets-view-features}
 
-* **Bulk import assets from OneDrive data source**: Administrators now have the ability to [import large number of assets from OneDrive to AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). The updated list for the supported data sources for bulk import include Azure, AWS, Google Cloud, Dropbox, and OneDrive. 
+* **Bulk import assets from OneDrive data source**: Administrators can now [import large number of assets from OneDrive to AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). The updated list for the supported data sources for bulk import include Azure, AWS, Google Cloud, Dropbox, and OneDrive. 
 
   ![assign metadata form to a folder](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
@@ -81,7 +81,7 @@ Have a look at the October 2023 Release Overview video for a summary of the feat
 
 [Filter traffic at the Adobe Managed CDN](/help/security/traffic-filter-rules-including-waf.md) by declaring rules matching website traffic by properties including url, IP address, and user agent -- or set custom traffic rate limits to guard against DoS attacks. Customers may also license a set of advanced Web Application Firewall (WAF) rules for extra protection against sophisticated website threats. 
 
-We encourage you to get familar with traffic filter rules by [trying out a tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! It walks you through setting up a new Cloud Manager Configuration Pipeline, declaring rules in a configuration file, and analyzing CDN logs for malicious traffic.
+We encourage you to get familiar with traffic filter rules by [trying out a tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! It walks you through setting up a new Cloud Manager Configuration Pipeline, declaring rules in a configuration file, and analyzing CDN logs for malicious traffic.
 
 Traffic filter rules are available now on dev environments, with a gradual rollout to stage and prod environments in November. You may request earlier access on stage and prod by emailing **aemcs-waf-adopter@adobe.com**. 
 

@@ -273,7 +273,7 @@ AEM as a Cloud Service provides three logs for the Apache Web Servers and dispat
 * Apache HTTPD Web Server Error log
 * Dispatcher log
 
-Note that these logs are only available for the Publish tier.
+These logs are only available for the Publish tier.
 
 This set of logs provides insights into HTTP requests to the AEM as a Cloud Service Publish tier prior to those requests reaching the AEM application. This is important to understand as, ideally, most HTTP requests to the Publish tier servers are served by content that is cached by the Apache HTTPD Web Server and AEM Dispatcher, and never reach the AEM application itself. Thus there are no log statements for these requests in AEM's Java, Request or Access logs.
 
@@ -498,7 +498,7 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization. The CDN log format cannot be customized and there is no concept of setting it to different modes such as info, warn, or error.
 
-Note that the Splunk forwarding feature does not yet support CDN logs.
+The Splunk forwarding feature does not yet support CDN logs.
 
  **Example**
 
@@ -517,7 +517,8 @@ Note that the Splunk forwarding feature does not yet support CDN logs.
  "cache": "PASS",
  "status": 200,
  "res_age": 0,
- "pop": "PAR"
+ "pop": "PAR",
+ "rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
  }
  ```
 
@@ -541,12 +542,25 @@ Note that the Splunk forwarding feature does not yet support CDN logs.
  | *status*  | The HTTP status code as an integer value.  |
  | *res_age*  | The amount of time (in seconds) a response has been cached (in all nodes).  |
  | *pop*  | Datacenter of the CDN cache server.  |
+ | *rules*  | The names of any matching [traffic filter rules](/help/security/traffic-filter-rules-including-waf.md) and WAF flags, also indicating if the match resulted in a block. Empty if no rules matched.  |
+ 
 
 ## How to Access Logs {#how-to-access-logs}
 
 ### Cloud Environments {#cloud-environments}
 
 AEM as a Cloud Service logs for cloud services can be accessed either by downloading through the Cloud Manager interface or by tailing logs at the command line using the using the Adobe I/O command line interface. For more information, see the [Cloud Manager logging documentation](/help/implementing/cloud-manager/manage-logs.md).
+
+### Logs for Additional Publish Regions {#logs-for-additional-publish-regions}
+
+If Additional Publish Regions are enabled for a particular environment, logs for each region will be available to download from Cloud Manager, as mentioned above.
+
+The AEM logs and the dispatcher logs for the Additional Publish Regions will specify the region in the first 3 letters after the environment id, as exemplified by **nld2** in the sample below, which refers to an additional AEM publish instance located in the Netherlands:
+
+```
+cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
+
+```
 
 ### Local SDK {#local-sdk}
 
@@ -624,7 +638,7 @@ Below you will find a sample customer support request:
 Program 123, Production Env
 
 * Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
-* Splunk index: acme_123prod (customer can choose whatever naming convention it wishes)
+* Splunk index: acme_123prod (customer can choose whatever naming convention it wantes)
 * Splunk port: 443
 * Splunk HEC token: ABC123
 
