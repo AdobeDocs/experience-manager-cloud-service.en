@@ -1,6 +1,6 @@
 ---
 title: Real User Monitoring (RUM) for AEM as a Cloud Service
-description: Leverage Real User Monitoring (RUM) in order to keep track of all the actual user interactions of a website or an application in real-time
+description: Leverage Real User Monitoring (RUM) in order to keep track of all the actual user interactions of a website or an application in real-time.
 ---
 
 # Real User Monitoring (RUM) for AEM as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
