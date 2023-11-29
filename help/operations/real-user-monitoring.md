@@ -23,7 +23,7 @@ Adobe Experience Manager uses Real User Monitoring (RUM) to understand how visit
 
 ## Rum and Privacy {#rum-and-privacy}
 
-Real User Monitoring in Adobe Experience Manager is designed to preserve visitor privacy and minimize data collection. RUM monitoring depends on end user approval to collect data. When end users grant consent, they enable the monitoring processes, contributing to the pool of performance data customers can analyze. As a visitor, this means that no personal information will be collected by the site you are visiting or made available to Adobe. 
+Real User Monitoring in Adobe Experience Manager is designed to preserve visitor privacy and minimize data collection. As a visitor, this means that no personal information will be collected by the site you are visiting or made available to Adobe. 
 
 As a site operator, this means no additional opt-in is required to enable monitoring through this feature.So, there will be no additional pop up for the end users to accept for enabling RUM monitoring. 
 
@@ -72,10 +72,6 @@ Adobe uses RUM data for the following purposes:
 ## Limitations and Understanding Variance in Page Views and Performance Metrics {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
 
 As you will analyze this data, there might or might not be variances in page views and other performance metrics reported by Real User Monitoring (RUM). These variances can be attributed to several factors inherent in real-time, client-side monitoring. Here are key considerations for customers to keep in mind when interpreting their RUM data:
-
-1. **End-user consent**
-
-   * RUM operates on user consent, meaning it collects data only from users who have agreed to monitoring. This practice ensures privacy compliance but also contributes to variances in reported page views and user metrics. This means that you may observe lower page view counts or gaps in user data, reflecting only the segment of users who consented to monitoring. 
 
 1. **Tracker blockers**
 
