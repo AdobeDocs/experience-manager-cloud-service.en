@@ -51,7 +51,7 @@ RUM is designed to prevent the collection of personally identifiable information
 
 ## How to Set Up the RUM Data Service {#how-to-set-up-them-rum-data-service}
 
-If you have requested to be a part of our Early Adopter program, Adobe's product team will enable the Feature Flag to enable RUM Data monitoring for you. Once this is completed, Adobe's product team will reach out to you to provide you with the domain key and data dashboard URL for you to view the Page View and [The Core Web Vitals(CWB)](https://web.dev/vitals/) metrics through the support collaboration channel create by Adobe's Product team. 
+If you have requested to be a part of our Early Adopter program, Adobe's product team will enable the Feature Flag to enable RUM Data monitoring for you. Once this is completed, Adobe's product team will reach out to you to provide you with the domain key and data dashboard URL for you to view the Page View and [The Core Web Vitals(CWB)](https://web.dev/vitals/) metrics through the support collaboration channel created by Adobe's Product team. 
 
 ## Viewing the Traffic and Performance Metrics for Your Website {#viewing-the-traffic-and-performance-metrics-for-your-website}
 
