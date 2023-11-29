@@ -57,7 +57,7 @@ If you have requested to be a part of our Early Adopter program, Adobe's product
 
 A Slack channel would be created for Early Adopter customers to provide them with the initial support for sharing the data desk dashboard link to access the Page Views and Core Web Vital metrics. 
 
-To access the data desk dashboard and view Page Views and Core Web Vitals, customers you will need a domain key which will be created by Adobe and it will be provided to them in the Slack collaboration channel. 
+To access the data desk dashboard and view Page Views and Core Web Vitals, customers will need a domain key which will be created by Adobe and it will be provided to them in the Slack collaboration channel. 
 
 You will then be guided on how to use the domain key to access the data dashboard link and view the metrics.
 
