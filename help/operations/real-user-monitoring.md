@@ -29,7 +29,7 @@ As a site operator, this means no additional opt-in is required to enable monito
 
 ## RUM Data is Sampled {#rum-data-is-sampled}
 
-Traditional web analytics solutions try to collect data on every single visitor. Adobe Experience Manager's Real User Monitoring only captures information from a small fraction of page views. Currently, this is one out of one hundred visitor. this means that smaple rate is configured at a rate of 1:100 and site operators cannot configure this number to increase or decrease the sampling rate. 
+Traditional web analytics solutions try to collect data on every single visitor. Adobe Experience Manager's Real User Monitoring only captures information from a small fraction of page views. Currently, this is one out of one hundred visitors. This means that sample rate is configured at a rate of 1:100 and site operators cannot configure this number to increase or decrease the sampling rate. 
 
 As the decision of wether data will be collected is made on a page view by page view basis, it becomes virtually impossible to track interactions across multiple pages. RUM has no concept of visits, visitors, or sessions, only of page views. This is by design.
 
