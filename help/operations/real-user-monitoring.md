@@ -31,7 +31,7 @@ As a site operator, this means no additional opt-in is required to enable monito
 
 Traditional web analytics solutions try to collect data on every single visitor. Adobe Experience Manager's Real User Monitoring only captures information from a small fraction of page views. Currently, this is one out of one hundred visitors. RUM is meant to be sampled and anonymized rather than a replacement for analytics. By default, pages will have a 1:100 sampling ratio. Site operators cannot configure this number to increase or decrease the sampling rate as of today.
 
-As the decision of wether data will be collected is made on a page view by page view basis, it becomes virtually impossible to track interactions across multiple pages. RUM has no concept of visits, visitors, or sessions, only of page views. This is by design.
+As the decision of whether the data will be collected is made on a page view by page view basis, it becomes virtually impossible to track interactions across multiple pages. RUM has no concept of visits, visitors, or sessions, only of page views. This is by design.
 
 ## What Data is Being Collected {#what-data-is-being-collected}
 
@@ -51,13 +51,13 @@ RUM is designed to prevent the collection of personally identifiable information
 
 ## How to Set Up the RUM Data Service {#how-to-set-up-them-rum-data-service}
 
-If you have requested to be a part of our Early Adopter program, Adobe's product team will enable the Feature Flag to enable RUM Data monitoring for you. Once this is completed, Adobe's product team will reach out to you to provide you with the domain key and data dashboard URL to view the Page View and [The Core Web Vitals(CWB)](https://web.dev/vitals/) metrics through the support collaboration channel create by Adobe's Product team. 
+If you have requested to be a part of our Early Adopter program, Adobe's product team will enable the Feature Flag to enable RUM Data monitoring for you. Once this is completed, Adobe's product team will reach out to you to provide you with the domain key and data dashboard URL for you to view the Page View and [The Core Web Vitals(CWB)](https://web.dev/vitals/) metrics through the support collaboration channel create by Adobe's Product team. 
 
 ## Viewing the Traffic and Performance Metrics for Your Website {#viewing-the-traffic-and-performance-metrics-for-your-website}
 
-A Slack channel would be created for Early Adopter customers to provide them with the initial support for sharing the data desk dashboard link to access the Page Views and Core Web Vital metrics. 
+A Slack channel would be created for Early Adopter customers to provide them with the initial support for sharing the data desk dashboard url to access the Page Views and Core Web Vital metrics. 
 
-To access the data desk dashboard and view Page Views and Core Web Vitals, customers will need a domain key which will be created by Adobe and it will be provided to them in the Slack collaboration channel. 
+To access the data desk dashboard url, customers will need a domain key which will be created by Adobe and it will be provided to them in the Slack collaboration channel. 
 
 You will then be guided on how to use the domain key to access the data dashboard link and view the metrics.
 
@@ -102,3 +102,6 @@ As you will analyze this data, there might or might not be variances in page vie
 1. **Will customers be able to integrat the RUM data service scripts with third-party systems like Dynatrace?**
 
    Yes.
+1. **Does “Interaction to next paint”, “Time to first byte” and “First contentful paint” Web vitals Metrics being collected?**
+
+   Interaction to next paint (INP) and Time to first byte (TTFB) are collected.  First contentful paint is not collected at this time.
