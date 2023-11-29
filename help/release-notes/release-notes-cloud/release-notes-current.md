@@ -46,7 +46,7 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
 ### New features in Assets view {#assets-view-features}
 
-* **Adobe Express editor in AEM Assets**: Easy and intuitive editing and content creation tools powered by Adobe Express available directly within AEM Assets to increase content re-use and accelerate content velocity.
+* **Embedded Adobe Express editor in AEM Assets**: Easy and intuitive editing and content creation tools powered by Adobe Express available directly within AEM Assets to increase content re-use and accelerate content velocity.
 
   ![assign metadata form to a folder](/help/assets/assets/adobe-express-aem-assets.png)
 
