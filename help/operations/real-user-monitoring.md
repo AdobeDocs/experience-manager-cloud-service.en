@@ -90,6 +90,8 @@ As you will analyze this data, there might or might not be variances in page vie
 1. **How can I configure paths to include or exclude in monitoring?**
 
    Customers will be able to configure paths to include or exclude the URLs for monitoring by setting the Environment variables within the configuration in Cloud Manager by using these variables: `AEM_WEBVITALS_EXCLUDE` and `AEM_WEBVITALS_INCLUDE_PATHS`
+   
+   Please note that by default, the 'include' setting is configured to target '/content'. It's important to remember that the paths you need to configure here are content paths within the system, not the URL paths you see in your browser. This distinction is key for accurately setting up and customizing your configuration to meet your specific needs.
 
 1. **Would Adobe be able to track all the page views prior to them reaching the customer's CDN?**
 
