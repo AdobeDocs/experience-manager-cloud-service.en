@@ -39,5 +39,5 @@ In summary, these are the steps to enable CUG after a migration:
 1. Ensure each group used in CUG policies exists on Publish after the migration.
    - A group may exist if included in a migrated content's ACL.
    - If it does not, use Packages to install it on the destination instance (or create it manually there) and activate it and its members. Then verify it exists on Publish.
-1. Republish all pages associated with a CUG policy, ensuring it is published by, for example, editing the page first. It is important to republish all of them.
+1. Republish all pages associated with a CUG policy, ensuring it is published by, for example, editing the page first. It is important to republish them all.
     - After all the pages are republished, verify the functionality for each CUG protected page.

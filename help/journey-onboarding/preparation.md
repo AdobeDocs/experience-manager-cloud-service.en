@@ -11,14 +11,14 @@ Now that you know what is in store for you in the onboarding process by having r
 
 AEM as a Cloud Service is a powerful and flexible tool with numerous solutions, add-ons, and deployment models available. The solution your organization is entitled to use is defined in your contract with Adobe, which guides the start of the onboarding process. 
 
-After reading this document you will understand
+After reading this document, you should understand
 
 * What your contract with Adobe defines.
 * What Adobe provisions.
 * How that contract affects the onboarding process.
 * How to prepare for your onboarding call.
 
-Don't worry if you are not familiar with all of the terms used on this page. The terms are explained in the next part of the journey.
+Don't worry if you are not familiar with all the terms used on this page. The terms are explained in the next part of the journey.
 
 ## Video {#video}
 
@@ -28,7 +28,7 @@ This video summarizes the onboarding process laid out in this journey and is int
 
 ## Your Contract {#contract}
 
-Onboarding onto AEM as a Cloud Service starts with a signed contract between your organization and Adobe. This is because the contract specifies a number of important agreements between Adobe and your organization such as:
+Onboarding onto AEM as a Cloud Service starts with a signed contract between your organization and Adobe. The reason is because the contract specifies several important agreements between Adobe and your organization such as:
 
 * Which solutions and add-ons your organization can use.
 * The number and types of environments you can access
@@ -67,7 +67,7 @@ The goal of the call is to give you the opportunity to ask questions, learn abou
 
 Upon completion of the environment provisioning process, the system administrator defined in the contract receives a welcome email with the confirmation they have been granted access to the Adobe Experience Cloud. If you are reading this documentation journey, that person is likely you!
 
-The email contains detailed information on how to get started with the Experience Cloud services and the Cloud Manager self-service portal. Additionally, the email contains important information such as where to go for support resources, forums, FAQs, and much more. In the list of resources provided in the email, you will also get details on how to access your AEM cloud environments.
+The email contains detailed information on how to get started with the Experience Cloud services and the Cloud Manager self-service portal. Also, the email contains important information such as where to go for support resources, forums, FAQs, and much more. In the list of resources provided in the email, you will also get details on how to access your AEM cloud environments.
 
 >[!TIP]
 >
@@ -82,4 +82,4 @@ You should now have a basic understanding of:
 * How that contract affects the onboarding process.
 * How to prepare for your onboarding call.
 
-Now that you are familiar with these preparation steps, you are almost ready to sign in to the system yourself. But first you will need a brief overview of how AEM as a Cloud Service is structured from a system administrator's point of view and get to know some important terminology. Continue to the next part of the journey, [AEM as a Cloud Service Terminology](terminology.md).
+Now that you are familiar with these preparation steps, you are almost ready to sign in to the system yourself. But first you need a brief overview of how AEM as a Cloud Service is structured from a system administrator's point of view and get to know some important terminology. Continue to the next part of the journey, [AEM as a Cloud Service Terminology](terminology.md).

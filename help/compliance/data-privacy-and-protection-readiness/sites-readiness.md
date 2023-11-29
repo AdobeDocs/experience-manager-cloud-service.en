@@ -54,7 +54,7 @@ To Opt-out:
 
     * To opt-out of aggregation and analysis of data about your visit to this site, it is necessary to install a cookie on your browser. This cookie identifies that you have opted-out.
 
-      If you delete the opt-out cookie, or if you change computers or Web browsers, you will need to opt-out again.
+      If you delete the opt-out cookie, or if you change computers or Web browsers, you need to opt-out again.
 
       Opt-out - Exclude me from visitor session aggregation and analysis (install the `amcglobal.sc.omtrdc.net` opt-out cookie) - Click Here.
 
@@ -90,7 +90,7 @@ By default, this visitor-data is not stored in AEM; AEM sends rules to the data 
 
 ### Implementing Opt-in/Opt-Out {#implementing-opt-in-opt-out}
 
-The site owner needs to implement an opt-out component according to the following guidelines.
+The site owner must implement an opt-out component according to the following guidelines.
 
 These guidelines implement opt-in as the default. Thus, a website visitor must clearly agree, before any personal data is stored in the browser's (client-side) persistence.
 

@@ -41,11 +41,15 @@ When an additional publish region is enabled on a program with advanced networki
 
 See the [Advanced Networking Configuration for Additional Publish Regions](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) section in the Advanced Networking documentation for details, including how to add advanced networking configurations to additional regions without incurring loss of connectivity.
 
+## Logging {#logging}
+
+If additional publish regions are enabled, separate logs for each region will be made available through Cloud Manager. For more information, see [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) and [Logs for Additional Publish Regions](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions). 
+
 ## Limitations {#limitations}
 
 Keep in mind the following limitations when considering using additional publish regions.
 
-* Additional publish regions may only be added to AEM Sites. Additional publish regions do not extend to other AEM solutions or related functionality deployed in the same program (e.g. AEM Forms or Adobe Learning Manager).
+* Additional publish regions may only be added to AEM Sites. Additional publish regions do not extend to other AEM solutions or related functionality deployed in the same program (for example, AEM Forms or Adobe Learning Manager).
 * Additional regions can only be added if associated entitlements are available and unused in the tenant.
 * A maximum of three additional publish regions can be added to any individual environment.
 * Additional regions are available on production programs only. The feature is not available in sandbox programs.

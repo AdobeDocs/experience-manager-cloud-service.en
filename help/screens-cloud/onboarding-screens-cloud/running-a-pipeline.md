@@ -46,7 +46,7 @@ The following section describes how to configure the CI/CD pipeline and deploy y
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
 
-1. After the build process completes, you will see an author link from the **Environments** Card from the Cloud Manager's **Overview** page.
+1. After the build process completes, you can see an author link from the **Environments** Card from the Cloud Manager's **Overview** page.
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 

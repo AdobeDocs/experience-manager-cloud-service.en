@@ -8,7 +8,7 @@ exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 
 # AEM User Tasks {#aem-user-tasks}
 
-In this optional part of the [onboarding journey,](overview.md) you will learn how AEM users can access AEM as a Cloud Service to author content.
+In this optional part of the [onboarding journey,](overview.md) you learn how AEM users can access AEM as a Cloud Service to author content.
 
 ## The Story So Far {#story-so-far}
 
@@ -46,7 +46,7 @@ As an AEM author, you need to log into AEM to begin creating content.
 
 1. Select the appropriate program from Cloud Manager’s **Programs and Products** page to launch the **Overview** page. Ask your system administrator if you are uncertain which program to access.
 
-1. From the **Overview** page in Cloud Manager, click on the author link from the **Environments** card.
+1. From the **Overview** page in Cloud Manager, click the author link from the **Environments** card.
 
    ![Environment card](/help/journey-onboarding/assets/author-environ.png)
 

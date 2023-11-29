@@ -41,7 +41,7 @@ The following release (2020.11.0) will be on December 1, 2020.
 
 ### What is new in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (anonymous) via Adobe Analytics for Adaptive Forms to gather end user insights. It helps business users make informed decisions about adaptive form content, layout, and style based on the gathered insights. 
+* **Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (anonymous) by way of Adobe Analytics for Adaptive Forms to gather user insights. It helps business users make informed decisions about adaptive form content, layout, and style based on the gathered insights. 
 
 ### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms-oct-2021}
 
@@ -79,7 +79,7 @@ The Release Date for Cloud Manager in Experience Manager as a Cloud Service 2020
 
 * Hibernated environments now show a discrete status in Cloud Manager when they are hibernated.
 
-* The Cloud Manager "build container" now supports compiling projects using either Java™ 8 or Java™ 11. Support for Java™ 11 is provided by the Maven toolchains system.
+* The Cloud Manager "build container" now supports compiling projects using either Java&trade; 8 or Java&trade; 11. Support for Java&trade; 11 is provided by the Maven toolchains system.
 
 * The number of environment variables per environment has been increased to 200.
 

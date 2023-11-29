@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 ---
 # Components {#components}
 
-Components are the fundamental authoring building block of content pages in Adobe Experience Manager (AEM). Components such as images, text, titles, etc. can be easily dragged and dropped to build your content.
+Components are the fundamental authoring building block of content pages in Adobe Experience Manager (AEM). Components such as images, text, titles, and so on, can be easily dragged and dropped to build your content.
 
 AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors. They are available when [editing a page](/help/sites-cloud/authoring/fundamentals/editing-content.md) and are grouped by main functional area (called component group) to aid filtering.
 

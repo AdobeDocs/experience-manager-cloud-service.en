@@ -21,7 +21,7 @@ WCAG 2.1 consists of a set of technology independent guidelines and success crit
 
 For example, describing an image (or any other non-text content) by using the `alt` attribute in HTML greatly benefits people who are blind or partially sighted. The textual description in the `alt` attribute can either be converted into speech output or transmitted to electronic refreshable braille displays.
 
-Additionally, WCAG 2.1 can result in advantages for other beneficiaries, including people who may be considered *situationally disabled*. People who, because of circumstances such as browsing technology, network connection speed or browsing environment, may experience barriers similar to people with disabilities.
+Also, WCAG 2.1 can result in advantages for other beneficiaries, including people who may be considered *situationally disabled*. People who, because of circumstances such as browsing technology, network connection speed or browsing environment, may experience barriers similar to people with disabilities.
 
 Using Adobe Experience Manager, content authors and/or website owners can create web content that meets relevant WCAG 2.1 Level A and Level AA success criteria.
 

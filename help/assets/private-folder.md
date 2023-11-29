@@ -25,7 +25,7 @@ You can create a private folder in the [!DNL Adobe Experience Manager Assets] us
 
 To create and share a private folder:
 
-1. In the [!DNL Assets] console, click on the **[!UICONTROL Create]** button from the toolbar and then select **[!UICONTROL Folder]** from the menu.
+1. In the [!DNL Assets] console, click the **[!UICONTROL Create]** button from the toolbar and then select **[!UICONTROL Folder]** from the menu.
 
    ![Create assets folder](assets/create-folder.png)
 
