@@ -1,19 +1,15 @@
 ---
 title: Real User Monitoring (RUM) for AEM as a Cloud Service
-description: Leverage Real User Monitoring (RUM) in order to keep track of all the actual user interactions of a website or an application in real-time.
+description: Leverage Real User Monitoring (RUM) in order to keep track of all the actual user interactions of a website or an application in real-time
 ---
 
 # Real User Monitoring (RUM) for AEM as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
->This feature is only available to the early adopter program. Customers need to be on AEM version 2023.11.14227 and above for enabling RUM data service.
+>This feature is only available  the early adopter program. 
+>Customers need to be on AEM Cloud Service version 2023.11.14227 and above for enabling RUM data service.
 >
->For details on the existing Real User Monitoring (RUM) Data Service feature for AEM as a Cloud Service, please see below.
-
-You can leverage the Real User Monitoring (RUM) data service to enhance accuracy in page view tracking for AEM as a Cloud Service. While especially beneficial for those utilizing Adobe CDN, Real User Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. 
-
-Additionally, for customers using their own CDN, Adobe can now streamline traffic reporting automatically. Additionally, it is a great opportunity to gain advanced insights into your page performance.
 
 ## Overview {#overview}
 
@@ -27,13 +23,13 @@ Adobe Experience Manager uses Real User Monitoring (RUM) to understand how visit
 
 ## Rum and Privacy {#rum-and-privacy}
 
-Real User Monitoring in Adobe Experience Manager is designed to preserve visitor privacy and minimize data collection. As a visitor, this means that no personal information will be collected by the site you are visiting or made available to Adobe. As a site operator, this means no opt-in is required to enable this feature. It is not permitted to add any personal data into the RUM data collection.
+Real User Monitoring in Adobe Experience Manager is designed to preserve visitor privacy and minimize data collection. RUM monitoring depends on end user approval to collect data. When end users grant consent, they enable the monitoring processes, contributing to the pool of performance data customers can analyze. As a visitor, this means that no personal information will be collected by the site you are visiting or made available to Adobe. 
 
-Additionally, RUM monitoring depends on end user approval to collect data. When end users grant consent, they enable the monitoring processes, contributing to the pool of performance data customers can analyze.
+As a site operator, this means no additional opt-in is required to enable monitoring through this feature.So, there will be no additional pop up for the end users to accept for enabling RUM monitoring. 
 
 ## RUM Data is Sampled {#rum-data-is-sampled}
 
-Traditional web analytics solutions try to collect data on every single visitor. Adobe Experience Manager's Real User Monitoring only captures information from a small fraction of page views. Under normal circumstances this is one out of one hundred visitors, although site operators can decide to increase or decrease this number. 
+Traditional web analytics solutions try to collect data on every single visitor. Adobe Experience Manager's Real User Monitoring only captures information from a small fraction of page views. Currently, this is one out of one hundred visitor. this means that smaple rate is configured at a rate of 1:100 and site operators cannot configure this number to increase or decrease the sampling rate. 
 
 As the decision of wether data will be collected is made on a page view by page view basis, it becomes virtually impossible to track interactions across multiple pages. RUM has no concept of visits, visitors, or sessions, only of page views. This is by design.
 
@@ -55,29 +51,13 @@ RUM is designed to prevent the collection of personally identifiable information
 
 ## How to Set Up the RUM Data Service {#how-to-set-up-them-rum-data-service}
 
-1. Upon request, Adobe enables the Feature Flag to enable monitoring
-1. You must then enable an environment variable through Cloud Manager. Please know that this is just a temporary additional step for now and no configuration or set up would be needed in the future
-1. In order to set the environment variable, please follow the below steps:
-
-   1. Go to the program in Cloud Manager you wish to enable the RUM Data Service for
-   1. Navigate to the **Environments** tab
-   1. Under the displayed environments, select the 3 dots on the right hand side, then click on **View Details**. 
-   1. Next, click on the **Configuration** tab
-   1. Click the **+ Add / Update** button
-   1. Add these configuration details:
-
-      * Name: `AEM_WEBVITALS_EXCLUDE`
-      * Value: `/FOO`
-      * Service Applied: All
-      * Type: Variable
-
-1. Once this is completed, please let the Adobe team know and we will provide you with the domain key and dashboard URL to view the metrics and data through the support collaboration channel. 
+If you have requested to be a part of our Early Adopter program, Adobe's product team will enable the Feature Flag to enable RUM Data monitoring for you. Once this is completed, Adobe's product team will reach out to you to provide you with the domain key and data dashboard URL to view the Page View and [The Core Web Vitals(CWB)](https://web.dev/vitals/) metrics through the support collaboration channel create by Adobe's Product team. 
 
 ## Viewing the Traffic and Performance Metrics for Your Website {#viewing-the-traffic-and-performance-metrics-for-your-website}
 
 A Slack channel would be created for Early Adopter customers to provide them with the initial support for sharing the data desk dashboard link to access the Page Views and Core Web Vital metrics. 
 
-To access the data desk dashboard and view Page Views and Core Web Vitals, customers you will need a domain key which will be created by Adobe and will be provided to them in the Slack collaboration channel. 
+To access the data desk dashboard and view Page Views and Core Web Vitals, customers you will need a domain key which will be created by Adobe and it will be provided to them in the Slack collaboration channel. 
 
 You will then be guided on how to use the domain key to access the data dashboard link and view the metrics.
 
