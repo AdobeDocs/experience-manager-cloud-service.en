@@ -12,7 +12,7 @@ When a launch has been created for a page (or set of pages) you can edit the con
 1. Access the [Launch from References (Sites console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) to show the available actions.
 1. Select **Go to the page** to open the page for editing.
 
-When editing the page you will see an indication in the top toolbar, together with the **Leave** and **Navigate** options:
+When editing the page, you can see an indication in the top toolbar, together with the **Leave** and **Navigate** options:
 
 ![Leave and Navigate launch from Page Editor](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 

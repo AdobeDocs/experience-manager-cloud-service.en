@@ -182,7 +182,7 @@ These, in conjunction with standard functionality, enable you to:
 
 * **Hide children of a node (while keeping the properties of the node)**
 
-  The node, its properties and its children are defined in `/libs`. The node and its properties are required in the `/apps` overlay/override, but some or all of the child nodes are not required in the `/apps` overlay/override.
+  The node, its properties and its children are defined in `/libs`. The node and its properties are required in the `/apps` overlay/override, but some or all child nodes are not required in the `/apps` overlay/override.
 
     1. Create the corresponding node under `/apps`
     1. Create the property `sling:hideChildren`:
@@ -214,7 +214,7 @@ The Sling Resource Merger includes two custom resource providers - one for overl
 >
 >When accessing your resource it is recommended to use the appropriate mount point.
 >
->This ensures that the Sling Resource Merger is invoked and the fully merged resource returned (reducing the structure that needs to be replicated from `/libs`).
+>This ensures that the Sling Resource Merger is invoked and the fully merged resource returned (reducing the structure that must be replicated from `/libs`).
 
 * Overlay:
 

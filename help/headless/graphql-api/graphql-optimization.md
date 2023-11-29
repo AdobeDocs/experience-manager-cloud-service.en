@@ -83,7 +83,7 @@ This capability allows AEM to further cache content within the scope of GraphQL 
 
 **Further Reference**
 
-Please contact Adobe to enable this capability for your AEM Cloud Service program and environments. 
+Contact Adobe to enable this capability for your AEM Cloud Service program and environments. 
 
 ### GraphQL Query optimization {#graphql-query-optimization}
 
@@ -274,7 +274,7 @@ There are several other situations where a filter expression cannot be evaluated
 
 ### Minimize Content Fragment Nesting {#minimize-content-fragment-nesting}
 
-Nesting Content Fragments is a great way to model custom content structures. You can even have a fragment with a nested fragment, that has a nested fragment, that has...and so on. 
+Nesting Content Fragments is a great way to model custom content structures. You can even have a fragment with a nested fragment, that also has a nested fragment, that has...and so on. 
 
 However, creating a structure with too many levels can increase the processing times for a GraphQL query, as GraphQL has to traverse the entire hierarchy of all nested Content Fragments. 
 

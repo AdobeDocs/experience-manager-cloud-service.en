@@ -13,7 +13,7 @@ Learn how to use AEM create a site using site templates to define the style and 
 
 Before content authors can create pages with content, the site must first be created. This is generally performed by an AEM administrator who defines the initial structure of the site. Using site templates makes site creation fast and flexible.
 
-The AEM Quick Site Creation tool allows non-developers to quickly create a new site from scratch by using site templates.
+The AEM Quick Site Creation tool allows non-developers to quickly create a site from scratch by using site templates.
 
 Once created, the Quick Site Creation tool also enables fast customization of the theme and styling of the AEM site (JavaScript, CSS, and static resources). This allows the front-end developer, who need zero knowledge of AEM, to work separately from and parallel to the content creators. The AEM administrator simply downloads the site theme and provides it to the front-end developer who customizes it using their favorite tools and then commits the changes to the AEM code repository, which is then deployed.
 
@@ -49,19 +49,19 @@ Using a template to create a site is simple.
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Tap or click **Create** at the top-right of the screen and from the drop-down menu select **Site from template**.
+1. Select **Create** at the top-right of the screen and from the drop-down menu select **Site from template**.
 
    ![Creating a site from a template](../assets/create-site-from-template.png)
 
-1. In the Create Site wizard, tap or click on an existing template in the left panel or on **Import** at the top of the left column to import a new template.
+1. In the Create Site wizard, select an existing template in the left panel or on **Import** at the top of the left column to import a new template.
 
    ![Site creation wizard](../assets/site-creation-wizard.png)
 
-   1. If you chose to import, in the file browser, locate the template you wish to use and tap or click **Upload**.
+   1. If you chose to import, in the file browser, locate the template you want to use and select **Upload**.
 
    1. Once uploaded, it appears in the list of available templates. 
    
-1. When selecting a template, it reveals information about the template in the right column. With your desired template selected, tap or click **Next**.
+1. When selecting a template, it reveals information about the template in the right column. With your desired template selected, select **Next**.
 
    ![Select a template](../assets/select-site-template.png)
 
@@ -71,11 +71,11 @@ Using a template to create a site is simple.
    * The site name becomes part of the URL.
    * The site name must comply with [AEM's page naming conventions](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
 
-1. Tap or click **Create** and the site is created from the site template.
+1. Select **Create** and the site is created from the site template.
 
    ![Details of the new site](../assets/create-site-details.png)
 
-1. In the confirmation dialog that appears, tap or click **Done**.
+1. In the confirmation dialog that appears, select **Done**.
 
    ![Success dialog](../assets/success.png)
 
@@ -87,10 +87,10 @@ Content authors can now begin authoring!
 
 ## Site Customization {#site-customization}
 
-If your site requires customization beyond the templates available you have a number of options.
+If your site requires customization beyond the templates available you have several options.
 
-* If the site structure or initial content needs to be adjusted, [the site template can be customized to meet your requirements](site-templates.md).
-* If the site styling needs to be adjusted, [the site theme can be downloaded and customized](/help/journey-sites/quick-site/overview.md).
-* If the site functionality needs to be adjusted, [the site can be fully customized](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+* If the site structure or initial content must be adjusted, [the site template can be customized to meet your requirements](site-templates.md).
+* If the site styling must be adjusted, [the site theme can be downloaded and customized](/help/journey-sites/quick-site/overview.md).
+* If the site functionality must be adjusted, [the site can be fully customized](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 Any customization should be undertaken with the support of a development team.

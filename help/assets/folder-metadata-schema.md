@@ -14,9 +14,9 @@ exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
 
 Use the Folder Metadata Schema Forms editor to create and edit metadata schemas for folders.
 
-1. Tap/click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
-1. In the Folder Metadata Schema Forms page, tap/click **[!UICONTROL Create]**.
-1. Specify a name for the form, and tap/click **[!UICONTROL Create]**. The new schema form is listed in the Schema Forms page.
+1. Select the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
+1. In the Folder Metadata Schema Forms page, select **[!UICONTROL Create]**.
+1. Specify a name for the form, and select **[!UICONTROL Create]**. The new schema form is listed in the Schema Forms page.
 
 ## Edit folder metadata schema forms {#edit-folder-metadata-schema-forms}
 
@@ -27,26 +27,26 @@ You can edit a newly added or existing metadata schema form, which includes the 
 
 You can map/configure these form items to a field within a metadata node in the CRX repository. You can add new tabs or form items to the metadata schema form.
 
-1. In the Schema Forms page, select the form you created, and then tap/click the **[!UICONTROL Edit]** icon from the toolbar.
-1. In the Folder Metadata Schema Editor page, tap/click the **[!UICONTROL +]** icon to add a tab to the form. To rename the tab, tap/click the default name and specify the new name under **[!UICONTROL Settings]**.
+1. In the Schema Forms page, select the form you created, and then select the **[!UICONTROL Edit]** icon from the toolbar.
+1. In the Folder Metadata Schema Editor page, select the **[!UICONTROL +]** icon to add a tab to the form. To rename the tab, select the default name and specify the new name under **[!UICONTROL Settings]**.
 
    ![custom_tab](assets/custom_tab.png)
 
-   To add more tabs, tap/click the **[!UICONTROL +]** icon. Tap/click **[!UICONTROL X]** to delete a tab.
+   To add more tabs, select the **[!UICONTROL +]** icon. Select **[!UICONTROL X]** to delete a tab.
 
 1. In the active tab, add one or more components from the **[!UICONTROL Build Form]** tab.
 
    ![adding_components](assets/adding_components.png)
 
-   If you create multiple tabs, tap/click a particular tab to add components.
+   If you create multiple tabs, select a particular tab to add components.
 
 1. To configure a component, select it and modify its properties in the **[!UICONTROL Settings]** tab.
 
-   If required, delete a component from the **[!UICONTROL Settings]** tab.
+   If necessary, delete a component from the **[!UICONTROL Settings]** tab.
 
    ![configure_properties](assets/configure_properties.png)
 
-1. Tap/click **[!UICONTROL Save]** from the toolbar to save the changes.
+1. Select **[!UICONTROL Save]** from the toolbar to save the changes.
 
 ### Components to build forms {#components-to-build-forms}
 
@@ -95,7 +95,7 @@ The **[!UICONTROL Build Form]** tab lists form items that you use in your folder
 
 ### Editing form items {#editing-form-items}
 
-To edit the properties of form items, tap/click the component and edit all or a subset of the following properties in the **[!UICONTROL Settings]** tab. It is recommended to map only one field to a given property in the metadata schema. Otherwise, the latest added field mapped to the property is picked by the system.
+To edit the properties of form items, select the component and edit all or a subset of the following properties in the **[!UICONTROL Settings]** tab. It is recommended to map only one field to a given property in the metadata schema. Otherwise, the latest added field mapped to the property is picked by the system.
 
 **[!UICONTROL Field Label]**: The name of the metadata property that is displayed on the properties page for the folder.
 
@@ -121,7 +121,7 @@ To ensure that the component is displayed properly in the metadata schema form, 
 
 ## Delete folder metadata schema forms {#delete-folder-metadata-schema-forms}
 
-You can delete folder metadata schema forms from the Folder Metadata Schema Forms page. To delete a form, select it and tap/click the Delete icon from the toolbar.
+You can delete folder metadata schema forms from the Folder Metadata Schema Forms page. To delete a form, select it and select the Delete icon from the toolbar.
 
 ![delete_form](assets/delete_form.png)
 
@@ -133,16 +133,16 @@ If you configure a metadata schema for a folder, the path to the schema form is 
 
 ### Assign to a schema from the Folder Metadata Schema page {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Tap/click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]**> **[!UICONTROL Folder Metadata Schemas]**.
+1. Select the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]**> **[!UICONTROL Folder Metadata Schemas]**.
 1. From the Folder Metadata Schema Forms page, select the schema form you want to apply to a folder.
-1. From the toolbar, tap/click **[!UICONTROL Apply to Folder(s)]**.
+1. From the toolbar, select **[!UICONTROL Apply to Folder(s)]**.
 
-1. Select the folder on which to apply the schema and then click/tap **[!UICONTROL Apply]**. If a metadata schema is already applied on the folder, a warning message informs that you are about to overwrite the existing metadata schema. Tap/click **[!UICONTROL Overwrite]**.
+1. Select the folder on which to apply the schema and then select **[!UICONTROL Apply]**. If a metadata schema is already applied on the folder, a warning message informs that you are about to overwrite the existing metadata schema. Select **[!UICONTROL Overwrite]**.
 1. Open the metadata properties for the folder to which you applied the metadata schema.
 
    ![folder_properties](assets/folder_properties.png)
 
-   To view the folder metadata fields, tap/click the **[!UICONTROL Folder Metadata]** tab.
+   To view the folder metadata fields, select the **[!UICONTROL Folder Metadata]** tab.
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
@@ -150,20 +150,20 @@ If you configure a metadata schema for a folder, the path to the schema form is 
 
 You can assign a folder metadata schema when creating a folder. If at least one folder metadata schema exists in the system, an extra list is displayed in the **[!UICONTROL Create Folder]** dialog. You can select the desired schema. By default, no schema is selected.
 
-1. From the [!DNL Experience Manager Assets] user interface, tap/click **[!UICONTROL Create]** from the toolbar.
+1. From the [!DNL Experience Manager Assets] user interface, select **[!UICONTROL Create]** from the toolbar.
 1. Specify a title and name for the folder.
-1. From the Folder Metadata Schema list, select the desired schema. Then, tap/click **[!UICONTROL Create]**.
+1. From the Folder Metadata Schema list, select the desired schema. Then, select **[!UICONTROL Create]**.
 
    ![select_schema](assets/select_schema.png)
 
 1. Open the metadata properties for the folder to which you applied the metadata schema.
-1. To view the folder metadata fields, tap/click the **[!UICONTROL Folder Metadata]** tab.
+1. To view the folder metadata fields, select the **[!UICONTROL Folder Metadata]** tab.
 
 ## Use the folder metadata schema {#use-the-folder-metadata-schema}
 
 Open the properties for a folder configured with a folder metadata schema. A **[!UICONTROL Folder Metadata]** tab is displayed in the folder properties page. To view the folder metadata schema form, select this tab.
 
-Enter metadata values in the various fields and tap/click **[!UICONTROL Save]** to store the values. The values you specify are stored in the folder node in the CRX repository.
+Enter metadata values in the various fields and select **[!UICONTROL Save]** to store the values. The values you specify are stored in the folder node in the CRX repository.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
 
