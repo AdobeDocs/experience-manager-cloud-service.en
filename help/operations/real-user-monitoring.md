@@ -38,7 +38,7 @@ As the decision of whether the data will be collected is made on a page view by 
 RUM is designed to prevent the collection of personally identifiable information. The full set of information that can be collected by Adobe Experience Manager's Real User Monitoring is listed below:
 
 * The host name of the site being visited, for example: `experienceleague.adobe.com`
-* The user agent that is used to display the page, such as: `Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1`
+* The broad user agent type that is used to display the page, such as: desktop or mobile
 * The time of the data collection, such as: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
 * The URL of the page being visited, for instance: `https://experienceleague.adobe.com/docs`
 * The Referrer URL (the URL of the page that linked to the current page, if the user followed a link)
