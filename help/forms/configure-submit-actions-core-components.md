@@ -164,7 +164,6 @@ When you submit the form, the data is saved in the specified Microsoft&reg; Shar
 Folder structure to save data is `/folder_name/form_name/year/month/date/submission_id/data`. 
 
 <!--
-
 ### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
 
 <span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
