@@ -7,7 +7,7 @@ description: Leverage Real User Monitoring (RUM) in order to keep track of all t
 
 >[!INFO]
 >
->This feature is only available  the early adopter program. 
+>This feature is only available to the early adopter program. 
 >Customers need to be on AEM Cloud Service version 2023.11.14227 and above for enabling RUM data service.
 >
 
