@@ -89,7 +89,7 @@ As you will analyze this data, there might or might not be variances in page vie
 
 1. **How can I configure paths to include or exclude in monitoring?**
 
-   Customers will be able to configure paths to include or exclude the URLs for monitoring through the SSG Gateway within Cloud Manager by using these variables: `AEM_WEBVITALS_EXCLUDE` and `AEM_WEBVITALS_INCLUDE_PATHS`
+   Customers will be able to configure paths to include or exclude the URLs for monitoring by setting the Environment variables within the configuration in Cloud Manager by using these variables: `AEM_WEBVITALS_EXCLUDE` and `AEM_WEBVITALS_INCLUDE_PATHS`
 
 1. **Would Adobe be able to track all the page views prior to them reaching the customer's CDN?**
 
