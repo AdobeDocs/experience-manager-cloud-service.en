@@ -1,5 +1,5 @@
 ---
-title: Forms-centric workflow on OSGi
+title: How to use AEM Forms for business process automation (BPM)?
 seo-title: Rapidly build Adaptive Forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
 description: Use AEM Forms Workflow to automate and rapidly build business process workflows. For example, review and approval, PDF Generation, Adobe Sign workflows.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
@@ -60,7 +60,7 @@ The example creates a workflow model a mortgage application to be filled by a fr
 1. Open the Workflow Models console. The default URL is `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Select **Create**, then **Create Model**. The Add Workflow Model dialog appears.
 1. Enter the **Title** and **Name** (optional). For example, a mortgage application. Tap **Done**.
-1. Select the newly-created workflow model and tap **Edit**. Now, you can add workflow steps to build business logic. When you first create a workflow model, it contains:
+1. Select the created workflow model and tap **Edit**. Now, you can add workflow steps to build business logic. When you first create a workflow model, it contains:
 
     * The steps: Flow Start and Flow End. These steps represent the beginning and end of the workflow. These steps are required and cannot be edited or removed.
     * An example Participant step named Step 1. This step is configured to assign a work item to the admin user. Remove this step.
@@ -195,7 +195,7 @@ The workflow application you created is available as an application in Inbox. Us
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
-The [!DNL AEM Forms] app syncs with an [!DNL AEM Forms] server and lets you make changes to the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [[!DNL AEM Forms] app]((aem-forms-app.md) and related articles.-->
+The [!DNL AEM Forms] app syncs with an [!DNL AEM Forms] server and lets you change the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [[!DNL AEM Forms] app]((aem-forms-app.md) and related articles.-->
 
 ### Submitting an Adaptive Form {#af}
 
@@ -264,3 +264,9 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 ### Purge workflow instances {#purge-workflow-instances}
 
 Minimizing the number of workflow instances increases the performance of the workflow engine, so you can regularly purge completed or running workflow instances from the repository. For detailed information see, [Regular Purging of Workflow Instances](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html) purging of workflow instances
+
+
+>[!MORELIKETHIS]
+>
+>* [Use AEM translation workflow to localize Adaptive Forms and Document of Record](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
+>* [Variables in Forms-centric AEM Workflows](/help/forms/variable-in-aem-workflows.md)

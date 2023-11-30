@@ -1,5 +1,5 @@
 ---
-title: How to create repeatable panels in Adaptive Form Core Components
+title: How to create repeatable panels in Adaptive Form Core Components?
 description: Learn to create repeatable section or fields in an Adaptive Form.
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
@@ -133,7 +133,7 @@ The parent of the panel should contain a delete button to delete instance of the
 
 >[!NOTE]
 >
-> When all of the instances of a panel are removed from an adaptive form, to add an instance of the removed panel, use the _panelName syntax to capture the instance manager of the panel and the use the addInstance API of instance manager to add the deleted instance. For example, _panelName.addInstance(). It adds an instance of the removed panel.
+> When all instances of a panel are removed from an adaptive form, to add an instance of the removed panel, use the _panelName syntax to capture the instance manager of the panel and the use the addInstance API of instance manager to add the deleted instance. For example, _panelName.addInstance(). It adds an instance of the removed panel.
 
 <!--
 ![panel-repeatability-video](/help/adaptive-forms/assets/panel-repeatability-video.mp4)
@@ -219,9 +219,17 @@ In the following code, the `SampleType`panel uses the minOccours & maxOccurs pro
 ```
 
 
-## Related articles
+## See Also {#see-also}
 
-* [Create an Adaptive Form](creating-adaptive-form-core-components.md)
-* [Create style or themes for your forms](using-themes-in-core-components.md)
-* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+{{see-also}}
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Create an Adaptive Form](creating-adaptive-form-core-components.md)
+>* [Create style or themes for your forms](using-themes-in-core-components.md)
+>* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
+>* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+-->

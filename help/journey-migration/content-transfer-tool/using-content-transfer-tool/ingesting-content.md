@@ -25,27 +25,35 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
 
 1. Provide the required information to create an ingestion.
 
-   * Select the migration set that contains the extracted data as the Source.
+   * **Migration Set:** Select the migration set that contains the extracted data as the Source.
      * Migration Sets will expire after a prolonged period of inactivity, so it is expected that the ingestion occurs relatively soon after the extraction has been performed. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
-   * Select the destination environment. This environment is where the content of the migration set is ingested. Select the tier. (Author/Publish). Rapid Development Environments are not supported.
+   
+   >[!TIP]
+   > If the extraction is currently running, the dialog will indicate it. Once extraction has completed successfully, the ingestion will start automatically. If the extraction fails or is stopped, the ingestion job will be rescinded.
+
+   * **Destination:** Select the destination environment. This environment is where the content of the migration set is ingested.
+     * Ingestions do not support a Rapid Development Environment (RDE) destination, and they do not appear as a possible destination choice, even if the user has access to it.
+     * While a migration set can be ingested into multiple destinations simultaneously, a destination can be the target of only one running or waiting ingestion at a time.
+
+   * **Tier:** Select the tier. (Author/Publish).
+     * If the source was `Author`, it is recommended to ingest it into the `Author` tier on the target. Similarly, if source was `Publish`, the target should be `Publish` as well.
 
    >[!NOTE]
-   >The following notes apply to ingesting content:
-   > If the source was Author, it is recommended to ingest it into the Author tier on the target. Similarly, if source was Publish, target should be Publish as well.
    > If the target tier is `Author`, the author instance is shut down during the length of the ingestion and becomes unavailable to users (for example, authors or anyone performing maintenance). The reason is to protect the system, and prevent any changes which could either be lost or cause an ingestion conflict. Ensure that your team is aware of this fact. Also note that the environment appears hibernated during the author ingestion.
-   > You can run the optional pre-copy step to significantly speed up the ingestion. See [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details.
-   > If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. Doing so speeds up the Publish ingestion when it is run later.
-   > Ingestions do not support a Rapid Development Environment (RDE) destination and do not appear as a possible destination choice, even if the user has access to it.
 
-   >[!IMPORTANT]
-   > You can initiate an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you are unable to start an ingestion, see [Unable to Start Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) for more details.
-
-   * Choose the `Wipe` value
+   * **Wipe:** Choose the `Wipe` value
      * The **Wipe** option sets the destination's starting point of the ingestion. If **Wipe** is enabled, the destination including all its content is reset to the version of AEM that is specified in Cloud Manager. If not enabled, the destination maintains its current content as the starting point.
      * Note that this option does **NOT** affect how the ingestion of content will be performed. Ingestion always uses a content replacement strategy and _not_ a content merge strategy so, in both **Wipe** and **Non-Wipe** cases, the ingestion of a migration set will overwrite contents in the same path on the destination. For instance, if the migration set contains `/content/page1` and the destination already contains `/content/page1/product1`, the ingestion will remove the entire `page1` path and its subpages, including `product1`, and replace it with the content in the migration set. This means careful planning must be done when performing a **Non-Wipe** ingestion to a destination that contains any content that should be maintained. 
 
    >[!IMPORTANT]
    > If the setting **Wipe** is enabled for the ingestion, it resets the entire existing repository including the user permissions on the target Cloud Service instance. This resetting is true also for an admin user added to the **administrators** group and that user must be added to the administrators group again to start an ingestion.
+
+   * **Pre-Copy:** Choose the `Pre-copy` value
+     * You can run the optional pre-copy step to significantly speed up the ingestion. See [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details.
+     * If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run `Author` ingestion first alone. Doing so speeds up the `Publish` ingestion when it is run later.
+
+   >[!IMPORTANT]
+   > You can initiate an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you are unable to start an ingestion, see [Unable to Start Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) for more details.
 
 1. Click **Ingest**.
 
@@ -125,7 +133,7 @@ If the "AEM Version Updates" is onboarded on the destination program, the ingest
 >
 > There is no longer a need to log a support ticket to get "AEM Version Updates" disabled.
 
-If "AEM Version Updates" is active (i.e. updates are running or are queued to be run), the ingestion will not begin and the user interface presents the following message. Once the updates are complete, the ingestion can be started. Cloud Manager can be used to see the current state of the pipelines of the program.
+If "AEM Version Updates" is active (that is, updates are running or are queued to be run), the ingestion will not begin and the user interface presents the following message. Once the updates are complete, the ingestion can be started. Cloud Manager can be used to see the current state of the pipelines of the program.
 
 >[!NOTE]
 >
@@ -148,14 +156,18 @@ This conflict must be resolved manually. Someone familiar with the content must 
 ### Top-up Ingestion Failure Due to Unable to Delete Referenced Node
 
 Another common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a version conflict for a particular node on the destination instance. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
+
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
 This can happen if a node on the destination is modified between an ingestion and a subsequent **Non-Wipe** ingestion such that a new version has been created. If the migration set was extracted with "include versions" enabled, a conflict may occur since the destination now has a more recent version that is being referenced by version history and other content. The ingestion process will be unable to delete the offending version node due to it being referenced.
 
 The solution may require that the top-up extraction is done again without the offending node. Or, creating a small migration set of the offending node, but with "include versions" disabled. 
 
-Best practices indicate that if an **Non-Wipe** ingestion must be run using a migration set that includes versions (i.e. extracted with "include versions"=true), it is crucial that content on the destination is modified as little as possible, until the migration journey is complete. Otherwise, these conflicts can occur.
+Best practices indicate that if a **Non-Wipe** ingestion must be run using a migration set that includes versions (that is, extracted with "include versions"=true), it is crucial that content on the destination is modified as little as possible, until the migration journey is complete. Otherwise, these conflicts can occur.
 
+### Ingestion Rescinded
+
+An ingestion that was created with a running extraction as its source migration set will wait patiently until that extraction succeeds, and at that point will start normally. If the extraction fails or is stopped, the ingestion and its indexing job will not begin but will be rescinded. In this case, check the extraction to determine why it failed, remedy the problem and start extracting again. Once the fixed extraction is running, a new ingestion can be scheduled. 
 
 ## What's Next {#whats-next}
 

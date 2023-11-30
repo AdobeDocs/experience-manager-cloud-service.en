@@ -21,7 +21,7 @@ Experience Audit is a feature available in Cloud Manager Sites Production pipeli
 
 1. Do not introduce regressions.
 
-Experience Audit in Cloud Manager ensures that the end user's experience on the site are of the highest standards.
+Experience Audit in Cloud Manager ensures that the user's experience on the site are of the highest standards.
 
 The audit results are informational and allow the deployment manager to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that was introduced with the current deployment.
 
@@ -29,7 +29,7 @@ Experience Audit is powered by Google Lighthouse, an open source tool from Googl
 
 >[!INFO]
 >
->Effective August 31st, 2023, Experience Audit will transition to showcasing results specific to the mobile platform. Note that mobile performance metrics typically register lower than those of desktop, so please anticipate a shift in the reported performance following this change.
+>Effective August 31st, 2023, Experience Audit will transition to showcasing results specific to the mobile platform. Note that mobile performance metrics typically register lower than those of desktop, so you should anticipate a shift in the reported performance following this change.
 
 >[!TIP]
 >

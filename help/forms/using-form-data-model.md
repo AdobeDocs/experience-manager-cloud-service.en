@@ -1,5 +1,5 @@
 ---
-title: How to Use Form Data Model?
+title: How can we create Form Data Model for an Adaptive Form?
 description: Learn to create Adaptive Forms and Fragments based on a form data model(FDM). Generate and edit sample data for data model objects in the FDM.
 feature: Form Data Model
 role: User
@@ -148,8 +148,8 @@ You can [invoke a form data model from rule editor using custom functions](/help
 1. Go to Experience Manager web console at `https://server:host/system/console/configMgr`.
 1. Locate **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]**.
 1. Click ![plus icon](/help/forms/assets/Smock_Add_18_N.svg) icon to add the configuration..
-1. Add **[!UICONTROL Content path pattern]** to specify the location of your Adaptive Forms.  By default, the value is `/content/forms/af/(.*)` which includes all the Adaptive Forms. You can also specify the path for an specific Adaptive Form. 
-1. Add **[!UICONTROL Form Data Model path pattern]** to specify the location of form data model. By default, the value is `/content/dams/formsanddocuments-fdm/(.*)` which includes all the Form Data Model. You can also specify the path for an specific Form Data Model. 
+1. Add **[!UICONTROL Content path pattern]** to specify the location of your Adaptive Forms.  By default, the value is `/content/forms/af/(.*)` which includes all the Adaptive Forms. You can also specify the path for a specific Adaptive Form. 
+1. Add **[!UICONTROL Form Data Model path pattern]** to specify the location of form data model. By default, the value is `/content/dams/formsanddocuments-fdm/(.*)` which includes all the Form Data Model. You can also specify the path for a specific Form Data Model. 
 1. Save the settings. 
 
 The added configuration is saved under the **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]** option.

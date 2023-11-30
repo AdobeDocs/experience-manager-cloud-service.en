@@ -59,7 +59,7 @@ First you need to add the front-end developer as a user by using the Admin Conso
 
    ![Product profiles](assets/product-profiles.png)
 
-1. To assign the front-end developer to the correct profiles, tap or click on the **Users** tab and then the **Add User** button.
+1. To assign the front-end developer to the correct profiles, select the **Users** tab and then the **Add User** button.
 
    ![Add user](assets/add-user.png)
 
@@ -67,11 +67,11 @@ First you need to add the front-end developer as a user by using the Admin Conso
 
    ![Add user to team](assets/add-to-team.png)
 
-1. In the **Product** selection, tap or click the plus sign and then select **Adobe Experience Manager as a Cloud Service** and assign the **Deployment Manager** and **Developer** product profiles to the user.
+1. In the **Product** selection, select the plus sign and then select **Adobe Experience Manager as a Cloud Service** and assign the **Deployment Manager** and **Developer** product profiles to the user.
 
    ![Assign team profiles](assets/assign-team.png)
 
-1. Tap or click **Save** and a welcome email is sent to the front-end developer you added as a user.
+1. Select **Save** and a welcome email is sent to the front-end developer you added as a user.
 
 The invited front-end developer can access Cloud Manager by clicking the link in the welcome email and signing in using their Adobe ID.
 

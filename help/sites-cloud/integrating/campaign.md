@@ -18,7 +18,7 @@ Lean about AEM as a Cloud Service's support for integrations with Adobe Campaign
 
 ## Integrating with Adobe Campaign Classic {#acc}
 
-There are a number of Adobe Campaign Classic (ACC) versions. The support for integration with AEM as a Cloud Service depends on the ACC version you have implemented.
+There are several Adobe Campaign Classic (ACC) versions. The support for integration with AEM as a Cloud Service depends on the ACC version you have implemented.
 
 |ACC Version|Integration with AEMaaCS|
 |---|---|

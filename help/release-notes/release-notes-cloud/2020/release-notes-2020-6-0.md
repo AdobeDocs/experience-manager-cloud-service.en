@@ -78,7 +78,7 @@ Follow this section to learn about what is new and the updates for Cloud Manager
 
 * The Build log now includes the list of discovered artifacts, including skipped content packages.
 
-* The Build step now validates that all of the generated content packages include all mandatory properties – name, group and version.
+* The Build step now validates that all the generated content packages include all mandatory properties – name, group and version.
 
 * The Build step now validates that the build produced at least one content package.
 

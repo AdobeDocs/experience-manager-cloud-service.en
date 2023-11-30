@@ -180,7 +180,7 @@ To create a sign-enabled Adaptive Form:
 1. Tap **[!UICONTROL Create.]** A sign-enabled Adaptive Form is created. You can add your [!DNL DocuSign] fields to the form and send it for signing.
 1. Open the adaptive form in edit mode. In the **[!UICONTROL Content]** tab, tap the **[!UICONTROL Form Container]** and tap ![Configure](assets/configure-icon.svg).
 
-1. In the **[!UICONTROL Submission]** section, select **[!UICONTROL Submit with DocuSign electronic signatures]** from the **[!UICONTROL Submit Action]** dropdown list.
+1. In the **[!UICONTROL Submission]** section, select **[!UICONTROL Submit with DocuSign electronic signatures]** from the **[!UICONTROL Submit Action]** drop-down list.
 
 1. In the **[!UICONTROL Action Configuration]** section, tap **[!UICONTROL Add]** to add a recipient and specify the email address of the recipient. Tap **[!UICONTROL Add]** again to add more recipients.
 
@@ -205,7 +205,7 @@ To use [!DNL DocuSign] in an existing Adaptive Form:
 
 1. Open the adaptive form in edit mode. In the **[!UICONTROL Content]** tab, tap the **[!UICONTROL Form Container]** and tap ![Configure](assets/configure-icon.svg).
 
-1. In the **[!UICONTROL Submission]** section, select **[!UICONTROL Submit with DocuSign electronic signatures]** from the **[!UICONTROL Submit Action]** dropdown list.
+1. In the **[!UICONTROL Submission]** section, select **[!UICONTROL Submit with DocuSign electronic signatures]** from the **[!UICONTROL Submit Action]** drop-down list.
 
 1. In the **[!UICONTROL Action Configuration]** section, tap **[!UICONTROL Add]** to add a recipient and specify the email address of the recipient. Tap **[!UICONTROL Add]** again to add more recipients.
 

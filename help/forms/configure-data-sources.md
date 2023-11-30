@@ -18,7 +18,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 
 [!DNL Experience Manager Forms] Data Integration lets you configure and connect to disparate data sources. The following types are supported out-of-the-box:
 
-* Relational databases - MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], and [!DNL Oracle RDBMS] 
+* Relational databases - MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], postgreSQL, and [!DNL Oracle RDBMS] 
 * RESTful web services  
 * SOAP-based web services
 * OData services (Version 4.0)
@@ -246,13 +246,11 @@ You can specify a regular expression that serves as the filter for absolute URLs
 
 Set the `importAllowlistPattern` property of the **[!UICONTROL Form Data Model SOAP Web Services Import Allowlist]** configuration to specify the regular expression. The following JSON file displays a sample:
 
-
 ```json
 {
   "importAllowlistPattern": ".*"
 }
 ```
-
 
 To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
@@ -279,17 +277,18 @@ An OData service is identified by its service root URL. To configure an OData se
 
    >[!NOTE]
    >
-   >You must select the OAuth 2.0 authentication type to connect with [!DNL Microsoft®&reg; Dynamics] services using the OData endpoint as the service root.
+   >Select the OAuth 2.0 authentication type to connect with [!DNL Microsoft®&reg; Dynamics] services using the OData endpoint as the service root.
 
 1. Tap **[!UICONTROL Create]** to create the cloud configuration for the OData service.
 
+<!--
 ## Configure Microsoft® SharePoint List {#config-sharepoint-list}
 
 <span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 To save data in a tabular form use, Microsoft® SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 
-1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft®&reg; SharePoint]**.   
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
 1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
 1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
 1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
@@ -305,6 +304,8 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
 1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+
+-->
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
@@ -322,3 +323,14 @@ When you enable mutual authentication for form data model, both the data source 
 ## Next steps {#next-steps}
 
 You have configured the data sources. Next you can create a Form Data Model or if you have already created a Form Data Model without a data source, you can associate it with the data sources you configured. See [Create form data model](create-form-data-models.md) for details.
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>*  [Add Forms Portal to an AEM Sites page](/help/forms/configure-forms-portal.md)
+
+-->

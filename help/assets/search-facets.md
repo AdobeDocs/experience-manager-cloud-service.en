@@ -102,7 +102,7 @@ If you want to use an existing node, specify it using the selection dialog.
 1. Do one of the following:
 
     * In the **[!UICONTROL Property Name]** field, mention the path of the JSON file where you define the nodes for the options and specify corresponding key-value pairs.
-    * Tap ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) next to the Options field to specify the display text and value for the options you want to supply in the Filters panel. To add another option, tap/click ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) and repeat the step.
+    * Tap ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) next to the Options field to specify the display text and value for the options you want to supply in the Filters panel. To add another option, select ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) and repeat the step.
 
 1. Ensure that **[!UICONTROL Single Select]** is cleared to let the user select multiple options for file types at a time (for example, Images, Documents, Multimedia, and Archives). If you select **[!UICONTROL Single Select]**, the user can select only one option for file types at a time.
 
@@ -139,7 +139,7 @@ The `Tags` predicate lets you perform tag-based searches for assets. By default,
 
    ![Typical settings of Tags predicate](assets/tags_predicate.png)
 
-1. In the **[!UICONTROL Description]** field, enter an optional description and then click/tap **[!UICONTROL Done]**.
+1. In the **[!UICONTROL Description]** field, enter an optional description and then select **[!UICONTROL Done]**.
 1. Navigate to the Search panel. The **[!UICONTROL Tags]** predicate is added to the Search panel.
 1. Specify tags based on which you want to search assets or select from the list of suggestions.
 1. Select **[!UICONTROL Match all]** to search for matches that include all tags that you specify.
@@ -298,6 +298,18 @@ Similar to the way you add a Property predicate or an Options predicate, you can
  </tbody>
 </table>
 
+## Remove default search facets {#removing-default-search-facets}
+
+Adobe recommends you to be careful while removing default search facets to avoid performance issues. Removing default search facets might also impact the default feature behavior.
+
+Do not remove the following hidden fields as it causes a query performance issue with OmniSearch and smart collections:
+
+* group.2_group.type=dam:Asset
+
+* group.1_group.type=nt:folder
+
+* group.p.or=true
+
 ## Restore default search facets {#restoring-default-search-facets}
 
 By default, a Lock icon appears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page. The Lock icon disappears if you add search facets to the form indicating that the default form has been modified.
@@ -324,6 +336,7 @@ If you are not assigned an administrator role, here is a list of permissions you
 
 **See also**
 
+* [Search best practices](search-best-practices.md) 
 * [Translate Assets](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
 * [Assets supported file formats](file-format-support.md)

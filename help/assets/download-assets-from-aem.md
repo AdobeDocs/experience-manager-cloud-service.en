@@ -34,7 +34,7 @@ You can download assets from Experience Manager using the following methods:
 
 ## Download assets using [!DNL Experience Manager] interface {#download-assets}
 
-Experience Manager optimizes the download experience based on the asset quantity and size. Smaller files are downloaded from the user interface in real time. [!DNL Experience Manager] directly downloads single asset requests for the original file rather than enclosing single assets in a ZIP archive to allow for faster downloads. Experience Manager supports large downloads with asynchronous requests. Download requests larger than 100 GB are split into multiple ZIP archives with a maximum size of 100 GB each. 
+Experience Manager optimizes the download experience based on the asset quantity and size. Smaller files are downloaded from the user interface in real time. [!DNL Experience Manager] directly downloads single asset requests for the original file rather than enclosing single assets in a ZIP archive to allow for faster downloads. Experience Manager supports large downloads with asynchronous requests. Download requests larger than 100 GB are split into multiple ZIP archives with a maximum size of 100 MB each. 
 
 By default, [!DNL Experience Manager] triggers a notification in the [[!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md) upon generation of a download archive.
 
@@ -73,7 +73,7 @@ To download assets, follow these steps:
 
    | Download option | Description |
    |---|---|
-   | **[!UICONTROL Create separate folder for each asset]** | Select this option to create a folder for each asset containing all of the downloaded renditions for the asset. If unselected, each asset (and its renditions if selected for download) is contained in the parent folder of the generated archive. |
+   | **[!UICONTROL Create separate folder for each asset]** | Select this option to create a folder for each asset containing all downloaded renditions for the asset. If unselected, each asset (and its renditions if selected for download) is contained in the parent folder of the generated archive. |
    | **[!UICONTROL Email]** | Select this option to send an email notification (containing a link to your download) to another user. The recipient user must be a member of the `dam-users` group. Standard emails templates are available at the following locations:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Templates that you customize during deployment are available at the following locations: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>You can store tenant-specific custom templates at the following locations:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Asset(s)]** | Select this option to download the asset in its original form.<br>The subassets option is available if the original asset has subassets.|
    | **[!UICONTROL Rendition(s)]** | A rendition is the binary representation of an asset. Assets have a primary representation - that of the uploaded file. They can have any number of representations. <br> With this option, you can select the renditions you want downloaded. The renditions that are available depend on the asset you selected. |
@@ -82,7 +82,7 @@ To download assets, follow these steps:
 
 1. In the dialog box, click **[!UICONTROL Download]**.
 
-   If email notification is enabled for large downloads, an email containing a download URL of the archived zip folder appears in your inbox. Click on the download link from the email to download the zip archive.
+   If email notification is enabled for large downloads, an email containing a download URL of the archived zip folder appears in your inbox. Click the download link from the email to download the zip archive.
 
    ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
 
@@ -110,7 +110,7 @@ To allow downloading assets from your DAM, say when using something like Asset S
 
    `/apps/<your-app-name>/config.publish`
 
-1. In the config folder, create a new file of type `nt:file` named `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
+1. In the config folder, create a file of type `nt:file` named `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
 1. Populate `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` with the following. Sets a maximum size (in bytes) for the download as value of `asset.download.prezip.maxcontentsize`. The below sample configures the maximum size of the ZIP download to not exceed 100 KB.
 
    ```java
@@ -125,6 +125,15 @@ If you do not need the download functionality, then disable the servlet to preve
 1. To block asset download requests via a dispatcher configuration edit the `dispatcher.any` configuration and add a new rule to the [filter section](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring).
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+
+## OnTime or OffTime rendition {#on-off-time-rendition}
+
+To enable the `OnOffTimeAssetAccessFilter` service, you need to create an OSGi configuration. This service allows the blocking of access to renditions and metadata in addition to the asset itself based on on/off time settings. The OSGi configuration should be for `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. Follow the steps below:
+
+1. In your project code in Git, create a configuration file at `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. The file should contain `{}` as its content, signifying an empty OSGi configuration for the corresponding OSGi component. This action enables the service.
+1. Deploy your code, including this new configuration, through [!DNL Cloud Manager].
+1. Once deployed, the renditions and metadata are accessible according to the on/off time settings of the assets. If the current date or time falls before the on-time or after the off-time, an error message is displayed.
+For more details on adding an empty OSGi configuration, you can refer to this [guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
 
 ## Tips and limitations {#tips-limitations}
 

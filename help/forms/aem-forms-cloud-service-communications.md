@@ -1,5 +1,5 @@
 ---
-title: AEM Forms as a Cloud Service - Communications
+title: How to use Forms as a Cloud Service to merge data with XDP and PDF templates or generate output in PCL, ZPL, and PostScript formats?
 description: Automatically merge data with XDP and PDF templates or generate output in PCL, ZPL, and PostScript formats
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 ---
@@ -83,7 +83,7 @@ To programmatically generate an access token, generate a JSON Web Token (JWT) an
 Use the following keys, referred to as claims, to construct JWT JSON object:
 
 
-* `exp`- the requested expiration of the access token, expressed as a number of seconds since January 1, 1970 GMT. For most use cases, this is a relatively small value. For example, 5 minutes, for five minutes from now, this value should be 1670923791.
+* `exp`- the requested expiration of the access token, expressed as several seconds since January 1, 1970 GMT. For most use cases, this is a relatively small value. For example, 5 minutes, for five minutes from now, this value should be 1670923791.
 * `iss` - the Organization ID from the Adobe Developer Console project, in the format org_ident@AdobeOrg.
 * `sub` - the Technical Account ID from the Adobe Developer Console integration, in the format: id@techacct.adobe.com.
 * `aud` - the Client ID from the Adobe Developer Console integration prepended with `https://ims-na1.adobelogin.com/c/`.
@@ -136,3 +136,10 @@ The [API reference documentation](https://developer.adobe.com/experience-manager
 >[!NOTE]
 >
 >Only members of forms-users group can access Communications APIs.
+
+>[!MORELIKETHIS]
+>
+>* [Introduction to AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

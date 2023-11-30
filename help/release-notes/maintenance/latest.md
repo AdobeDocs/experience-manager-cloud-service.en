@@ -7,96 +7,103 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 13665 {#release-13665}
+## Release 14227 {#release-14227}
 
-Summarized below are the continuous improvements for maintenance release 13665, which was publicly released on September 27th, 2023. This maintenance release replaces release 13420.
+Summarized below are the continuous improvements for maintenance release 14227, which was publicly released on November 9, 2023. This maintenance release is an update from previous maintenance release 14029. Maintenance release 14227 replaces 14157 to rectify one issue.
 
-2023.10.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
+2023.11.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-13665}
+### Enhancements {#enhancements-14227}
 
-* Various improvements in the Content Fragment APIs.
-* ASSETS-26713: Assets Dashboard: New Experience UI Dashboard now reachable from Touch UI.
-* SITES-11206: Content Fragments: Search API for Content Fragments.
-* SITES-11262: Content Fragments: Button to switch to the new Content Fragment Editor.
-* SITES-15447: Core Components: Release of version 2.23.4.
-* FORMS-9624: Introduced CAPTCHA component for Adaptive Forms based on Core Components. 
-* FORMS-9913: Enhanced the visual editor's invoke service by adding the capability to validate fields and display appropriate error and success messages.
-* FORMS-10106: Enhanced GeneratePDFOutput API to return the number of pages contained within the generated document.
-* FORMS-2494: Added support for Form Fragments for Adaptive Forms based on Core Components. 
-* FORMS-9807: Added support to allow navigating to a page URL that is returned as a result of a successful submission through the Adaptive Form rule editor. 
-* FORMS-10571: Added the ability to set a thank you page redirect URL based on response of a service used in a custom submit action for Adaptive Forms based on Core Components. 
+<!--* ASSETS-29631: Assets Cloud: Use dam:roles for secure delivery/search.-->
+* CQ-4354515: Translations: Option to Suppress translation of referenced resources.
+* FORMS-9993: Define Steps to move Forms Core Components into Skyline.
+* FORMS-10570: Onboard EC APIs to API - First Router.
+* GRANITE-48143: Upgrade Sling ResourceMerger to 1.4.4.
+* SITES-14874: Eventing: Expand the CFM tree for model events to include metadata changes.
+* SITES-2719: Content Fragments: Tagging support for Content Fragment Variations (re-enabled).
+* SITES-3619: Content Fragments: GraphQL CF variation tags output in JSON and filtering by variation tag (re-enabled).
+* SITES-13750: Content Fragments: Delete tags for a Content Fragment Model.
+* SITES-13920: Content Fragments: Support for minItems config for multiple fields (pre-release).
+* SITES-14080: Content Fragments: Delete tag of a Content Fragment Variation.
+* SITES-14770: Content Fragments: Fragment variation should include fieldTags property.
+* SITES-15356: Content Fragments: Returning etag as response header when a resource is created.
+* SITES-15357: Content Fragments: Allow publishing of fragments without their references.
+* SITES-15938: Content Fragments: Missing content reference metadata.
+* SITES-16078: Content Fragments: Fill in the validation result property of the variation when a fragment is fetched.
+* SITES-16545: Content Fragments: Add endpoint for retrieving the references of a content fragment's variation.
+* SITES-16853: Content Fragments: Remove /adobe/sites/cf/fragments/{fragmentId}/variation/{name}/tags endpoint.
 
-### Fixed Issues {#fixed-issues-13665}
+### Fixed Issues {#fixed-issues-14227}
 
-* Various translation-related updates.
-* CQ-4354428: Workflows: Unable to complete a task in Inbox.
-* SITES-9733: Content Fragments: Asset References in content fragment reference panel shows 0(zero) references.
-* SITES-14561: Content Fragments: Fixed and improved HTML to Markup conversion.
-* SITES-14882: Content Fragments: Once we edit Content Fragment and close the tab without clicking on save or close button, the values are getting stored.
-* SITES-15167: Content Fragments: Patching a variation with an invalid payload does not return 400 but 500.
-* SITES-15514: Content Fragments: Malformed Markdown output for table inside RTE.
-* SITES-15661: Content Fragments: Do not use unique constraint and reorder items in references fields in Fragments API.
-* SITES-15730: Screens: Screens Channel Preview functionality not working on Dashboard.
-* SITES-15995: Content Fragments: Mime types of both model and fragment long text fields are hardcoded.
+* Various accessibility issues fixed
+* ASSETS-31015: Unable to upload files to Assets with unknown file extensions.
+* ASSETS-24739: Disable Frame.io Custom Action Endpoint on Publish.
+* CMGR-49845: Content Backflow: Issue with identifying the correct root path for given checkpoint.
+* CMGR-49709: Content Backflow: Update the property filter to ignore additional properties.
+* CQ-4354503: Adobe IMS Configuration getting randomly removed.
+* CQ-4354414: ConfigurationReplicationEventHandler creates a lot of individual flush actions.
+* CQ-4354401: Translations: Asset created by Projects must be saved before starting asset processing.
+* CQ-4354430: Translations: Getting an error adding assets not part of a language folder structure to a translation project.
+* CQ-4354412: Translations: Deleting Translation Job Content not deleting all referenced content.
+* CQ-4354636: Translations: Creating a language copy at language root level does not adjust paths in the page.
+* CQ-4354700: Workflows: Workflow payload screen does not load.
+* CQ-4354834: Workflows: Unable to add comment in workflow inbox task.
+* FORMS-11302: Title of component edited in RTE is displayed incorrectly in Adaptive Form Editor > Rule Editor.
+* GRANITE-45706: i18n import fails if the key value has ‚Äú))‚Äù.
+* SITES-14156: Eventing: Publish events are not always sent.
+* SITES-14520: GraphQL: Bad performance with paginated graphql queries due to FT_SITES-2719.
+* SITES-16444: GraphQL: DataFetchingException for same name fields missing from GraphQL query.
+* SITES-16225: GraphQL: Content types of model and fragment RTE fields returned by the Java API are not correct.
+* SITES-15373: Content Fragments: The /adobe/sites/cf/fragments/{fragmentId}/variation/{name}/tags endpoint doesn't use the correct resource naming conventions.
+* SITES-15709: Content Fragments: Create Model endpoint issue when creating Boolean Field.
+* SITES-15727: Content Fragments: Field of type "Tag" can only be added once in model editor.
+* SITES-15782: Content Fragments: Missing unique property from field model of Enumeration type.
+* SITES-15786: Content Fragments: Content Fragment cannot be created in folder containing '.
+* SITES-15790: Content Fragments: Update Location header for Version Creation.
+* SITES-15923: Content Fragments: CF Admin does not show all folders.
+* SITES-15987: Content Fragments: Getting 500 while creating variant.
+* SITES-16067: Content Fragments: The mime type of long text fragment field cannot be modified.
 * SITES-16074: Content Fragments: Tag fields which are not String[] cannot be retrieved from JCR.
-* SITES-16084: Content Fragments: CFHomeCardModelImpl is missing target navigator.
-* SITES-14773: Experience Fragments: Link Reference does not get updated inside experience fragment.
-* SITES-14899: Experience Fragments: Multiple offers created for XF variations in Target.
-* SITES-8590: GraphQL: Encoding issues with variables in persisted queries.
-* SITES-9224: GraphQL: "Writer has already been closed" exception in GraphQLServlet.
-* SITES-14800: GraphQL: Exception in persisted GraphQL queries with variables.
-* SITES-15586: GraphQL: Issue with persisted queries filtering with null values.
-* SITES-15622: GraphQL: Issue with persisted queries with numbers & bool parameters.
-* SITES-15654: GraphQL: Issue with unions & properties with same name.
-* SITES-15267: Launches: Promotion does not pick up launch pages modified before time of modifying the launch configuration.
-* SITES-15406: Launches: Unable to add a Launch Page.
-* SITES-15427: Launches: Inconsistent behavior of "Promote current page and sub pages" scope.
-* SITES-15429: Launches: Authoring pages deleted while promoting launches.
-* SITES-15462: Launches: Auto promotion process publishes pages out of promotion scope.
-* SITES-15815: Launches: Deleted Page from Launch causes Launch to not Promote Successfully.
-* SITES-15223: Page Editor: Not able to resize components whin in tablet size emulator.
-* SITES-15463: Page Templates: Templates cannot be published.
-* FORMS-10700: When utilizing the date picker component within an Adaptive Form built on Core Components:
-    * When the user submits the form without providing any input for date component, an error is logged.
-    * On using localized versions of the date picker, some months operate seamlessly, selecting certain others leads to a component malfunction.
-* FORMS-9598: The AEM Forms embed component is not working.
-* FORMS-9579: You cannot pass a Boolean value to a function while using the Rules Editor.
-* FORMS-9916: Marking the field as invalid causes a change event to be triggered again on the same field. This unexpected event triggers the rule once more, creating a loop that keeps repeating until it reaches a maximum limit of 10 repetitions.
-* FORMS-10243: The Set Focus option is not working properly for Adaptive Forms based on Core Components. Specifically, when a radio button is clicked, and the "set focus" rule is enabled for a text box object, it fails to set the focus as intended, despite other rules functioning correctly.
-* FORMS-10416: For a Headless Adaptive Form, when the ":type" property is included, the multiline-input component appears as a regular single line text-input component.
-* FORMS-10015: For an Adaptive Form based on Core Components, in the rule editor, when we choose the Form object, it passes the entire field instance object to the custom function instead of just the field's value.
-* FORMS-9890: Users in the cloud administrators group, without forms-user access, can create data sources, forms, and Form Data Model. However, they cannot view available services in the system when using 'Invoke service' in the rule editor.
-* FORMS-9075: On submitting an Adaptive Form, the screen readers do not announce all the Error Messages for the mandatory fields.
-* FORMS-9014: The following accessibility issues were fixed:
-    * When opening the scribble signature box, the cursor skips to the next component, not within the box itself. This behavior has been confirmed as an issue by the Accessibility Team.
-    * After signing, pressing Enter doesn't close the dialog; users must explicitly click the OK button. 
-    * Post-signing, the tab order resets to the top, rather than staying at the signature component or moving to the next.
-    * The option to clear the signature, represented by a cross icon, isn't part of the tab order and only appears on hover. 
-    * The "clear signature confirmation" dialog can not be accessed via keyboard.
-    * The label for the keyboard sign button should be corrected for clarity.
-    * Controls within the scribble signature lack the recommended contrast ratio.
-    * The inactive state of the OK/check mark button should include the "aria-disabled" attribute.
-    * The screen reader doesn't convey the text used to create the typed signature, making it inaccessible to visually impaired users.
-* FORMS-9214: For Adaptive Forms based on Core Components, the Custom Function is not invoked unless it is used to modify another field, such as setting the value of a different field.
-* For Document Generation APIs, the "/content" path shows inconsistency in its usage across template path, content root, and data. It functions correctly in some cases but not uniformly.
-* FORMS-10718: Added support for the GuideBridge's resolveNode API for Adaptive Forms based on Core Components. 
-* FORMS-9998: In Adaptive Forms based on Core Components, the "Is Empty" and "Is Not Empty" functions do not function as expected when validating text input via the Rule Editor.
-* FORMS-10236: The File Attachment Component does not function correctly for Adaptive Forms based on Core Components. While using the attachment component, file previews work initially, but if you attach additional files of similar or different types or formats, the preview malfunctions.
-* FORMS-10470: In checkbox component, when the default value as unchecked ('off') and datatype is String, the submit button does not work. 
-* FORMS-10534: In Adaptive Forms based on Core Components, the Boolean operand option appears on the left side, indicating that it is selectable. However, when a user attempts to select it, an error highlight or some form of error indication occurs, suggesting that the selection is not functioning as expected. 
-* FORMS-10248: In Adaptive Forms based on Core Components, setting the value of a Radio button or Checkbox when the data value type is Boolean is not working as expected.
-* FORMS-8114: The date picker and pattern not being read correctly by the NVDA screen reader. Specifically, when using the NVDA screen reader, the date picker without a pattern is read correctly. However, when a pattern is applied to the date picker, it is read as a table instead of being interpreted correctly.
+* SITES-16079: Content Fragments: /fragments/{id}/references started to return duplicates.
+* SITES-16118: Content Fragments: If a fragment is patched and a fragment field is missing from the model, an exception is thrown.
+* SITES-16119: Content Fragments: If the fragment metadata contains unrecognized fields, an exception is thrown.
+* SITES-16121: Content Fragments: Retrieval of a model date field throws exception.
+* SITES-16123: Content Fragments: If a resource is not a content fragment, the get fragments endpoint throws an exception.
+* SITES-16208: Content Fragments: The ContentFragmentModelIdentifier exposes a misleading title property.
+* SITES-16707: Content Fragments: Content Fragment Models data types are not correctly read.
+* SITES-16818: Content Fragments: Perform delete only when tags are present.
+* SITES-16207: Content Fragments: The POST /adobe/sites/cf/models operation returns two different OK status codes.
+* SITES-15616: Content Fragments: Publish endpoint does not publish sometimes all the references of a Content Fragment.
+* SITES-16027: Content Fragments: Variation reference information is missing from fragment response.
+* SITES-16243: Content Fragments: Find and replace does not work with fields having Render as: Multiple.
+* SITES-16250: Content Fragments: Patching a CF sometimes returns an incorect etag header.
+* SITES-16686: Content Fragments: Content Fragment non-fragment references are serialised when parent reference is at max depth.
+* SITES-12880: Fast-Track: Fix localisation for Sites > Setup Analytics.
+* SITES-16103: Experience Fragments: Target options are not displayed under Cloud Services due to console error. 
+* SITES-16001: MSM: Ability to exclude multi field components from rollout configuration while creating Live Copy.
+* SITES-16559: MSM: Rollout configs removed during rollout process for experience fragments.
+* SITES-16797: MSM: Fixed Re-enable inheritance for a CF field in Editor.
+* SITES-16273: Page Editor: Copy paste error inside aem sites pages from the clipboard.
+* SITES-16126: Sites Admin: Authoring performance slow for non admin users after SITES-10288.
+* FORMS-10534: An error occurs in the rule editor on selecting the Boolean operand option.
+* FORMS-10248: In an adaptive form, when the data value is of type Boolean, rules fail to properly set values for radio buttons or checkbox components.
+* FORMS-11361: The drop-down component automatically defaults to selecting the first option from the list.
+* FORMS-11413: An error related to the Forms Portal prefill service is triggered by Adaptive Forms, even when the service is not in use.
+* FORMS-11433: When a non-form component is included in an Adaptive Form, the submission process fails to complete.
+* FORMS-11206: When a user tries to schedule a Publish workflow for an Adaptive Form, it fails to function as expected.
+* FORMS-11546: Lighthouse has detected a missing ARIA label for repeated panels in an Adaptive Form, affecting accessibility.
+* FORMS-11095: The ARIA attribute is incorrectly defined for phone number, email address, and number fields, leading to accessibility issues.
 
-### Known Issues {#known-issues-13665}
+### Known Issues {#known-issues-14227}
 
 None.
 
-### Embedded Technologies {#embedded-tech-13665}
+### Embedded Technologies {#embedded-tech-14227}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak |1.54-T20230817132355-3800a65|[Oak API 1.54.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html)| 
+|AEM OAK |1.56-T20230927085643-189caed|[Oak API 1.56.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.56.0/index.html)| 
 |AEM SLING API |Version 2.27.2 |[Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL|Version 1.4.20-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |AEM Core Components|Version 2.23.4|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|

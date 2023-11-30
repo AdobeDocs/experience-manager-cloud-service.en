@@ -1,5 +1,5 @@
 ---
-title: How to configure [!DNL Microsoft Dynamics] OData?
+title: How do I configure [!DNL Microsoft Dynamics] OData for AEM Forms?
 description: Learn to create Form Data Model based on the entities, attributes, and services defined in [!DNL Microsoft Dynamics] service.
 feature: Form Data Model
 role: User, Developer
@@ -19,7 +19,7 @@ exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 
 * Query [!DNL Microsoft Dynamics] server for data and prepopulate Adaptive Forms
 * Write data into [!DNL Microsoft Dynamics] on Adaptive Form submission
-* Write data in [!DNL Microsoft Dynamics] through custom entities defined in Form Data Model and vice versa
+* Write data in [!DNL Microsoft Dynamics] through custom entities defined in Form Data Model and conversely
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 

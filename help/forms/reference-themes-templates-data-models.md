@@ -1,11 +1,15 @@
 ---
-title: Reference Themes, Templates, and Form Data models in AEM Forms
-seo-title: Reference Themes, Templates, and Form Data models
+title: How to get reference themes and templates for AEM forms?
 description: AEM Forms provides sample adaptive forms themes, templates, and form data models to help you create forms quickly.
-seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 ---
 # Reference Themes, Templates, and Form Data models {#reference-themes-templates-and-data-models}
+
+
+| Applies to | Article link |
+| -------- | ---------------------------- |
+|  Adaptive Form based on Core Components   | [Click here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)   |
+|  Adaptive Form based on Foundation Components | This article |
 
 <span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
 
@@ -106,7 +110,7 @@ Basic template helps you quickly create an enrollment form. You can also use it 
 The Adaptive Forms can then interact with Microsoft Dynamics 365 and Salesforce servers to enable business workflows. For example:
 
 * Write data into Microsoft Dynamics 365 and Salesforce on Adaptive Form submission.
-* Write data in Microsoft Dynamics 365 and Salesforce through custom entities defined in Form Data Model and vice versa.
+* Write data in Microsoft Dynamics 365 and Salesforce through custom entities defined in Form Data Model and conversely.
 * Query Microsoft Dynamics 365 and Salesforce server for data and prepopulate Adaptive Forms.
 * Read data from Microsoft Dynamics 365 and Salesforce server.
 
@@ -116,3 +120,8 @@ You can get the following Form Data Models by installing the [Reference content 
 * Salesforce 
 
 For information on using these models, see [Configure Microsoft Dynamics 365 and Salesforce cloud services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+
+
+## See Also {#see-also}
+
+{{see-also}}

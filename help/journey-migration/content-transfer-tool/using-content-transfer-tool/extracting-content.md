@@ -21,7 +21,10 @@ Follow the steps below to extract your migration set from the Content Transfer T
 
 1. Select a migration set from the **Content Transfer** wizard and click **Extract** to start extraction. 
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png) 
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
+
+   >[!TIP]
+   >An ingestion can now be scheduled to start automatically immediately after an extraction succeeds. See [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) for more information.
 
    >[!IMPORTANT]
    >
@@ -30,7 +33,7 @@ Follow the steps below to extract your migration set from the Content Transfer T
 
 1. This brings up the Extraction dialog. Click **Extract** to start the extraction phase.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png) 
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png) 
 
    >[!NOTE]
    >You can optionally overwrite the staging container during the extraction phase. If **Overwrite staging container** is disabled, it can speed up extractions for subsequent migrations where the content paths or include versions settings have not changed. However, if the content paths or include versions settings have changed, then **Overwrite staging container** should be enabled.

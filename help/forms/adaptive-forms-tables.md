@@ -1,5 +1,5 @@
 ---
-title: Tables in adaptive forms
+title: How to add tables to an adaptive form?
 description: Use the table component to add tables to an Adaptive Form. Along with helping with the responsive layout, the table component allows adding XDP table elements.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
@@ -65,13 +65,13 @@ To add, delete, or move the row, click any cell of the row. open the content bro
 
 ![add-delete-move-row-column](assets/add-delete-move-row.png)
 
-Double click on the row to configure properties of a row, such as Name, Bind Reference, Repeat Settings, CSS Class.
+Double-click the row to configure properties of a row, such as Name, Bind Reference, Repeat Settings, CSS Class.
 ![add-delete-move-row-column](assets/row-properties-image.png)
 
 
 #### Add or delete a column
 
-To add or delete a column, click on the text cell in the header section, a toolbar opens with the options to add or delete a column:
+To add or delete a column, click the text cell in the header section, a toolbar opens with the options to add or delete a column:
 
 ![add-delete-move-row-column](assets/add-delet-column.png)
 
@@ -149,7 +149,7 @@ Tables provide out-of-the box support for dynamically adding or deleting rows at
 1. In the Repeat settings tab, specify the minimum and maximum counts to limit the number of rows in the table.
 1. Click **Done**.
 
-At runtime or preview, you will see **+** and ![Delete Button](/help/forms/assets/Smock_Delete.svg) buttons to add or delete a row.
+At runtime or preview, you see **+** and ![Delete Button](/help/forms/assets/Smock_Delete.svg) buttons to add or delete a row.
 
 ![add-delete-rows-dynamically](assets/add-delete-layout.png)
 
@@ -324,3 +324,8 @@ In addition, you can drag-drop a group of XSD complex type elements to create a 
 * Each body cell in a default table has a predefined element name associated with it. If you add another table in the adaptive form, the default body cells in the new table will have the same element name as in the first table. In such scenario, the data generated on submitting the form will include data in the default body cells of only one of the tables. Therefore, ensure that you rename the element names for default body cells to keep them unique across tables and avoid data loss.
 
   Note that this is applicable only to the default body cells. If you add more rows or columns to a table will autogenerate unique element names for non-default body cells.
+
+## See Also {#see-also}
+
+{{see-also}}
+

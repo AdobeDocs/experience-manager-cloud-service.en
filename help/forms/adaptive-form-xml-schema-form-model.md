@@ -1,5 +1,5 @@
 ---
-title: Design XML Schema for an Adaptive Form
+title: How to design XML Schema for an Adaptive Form?
 description: Learn to create a XML schema for an Adaptive Form and create an Adaptive Form based on the schema to produce schema complaint data.
 feature: Adaptive Forms
 role: User, Developer
@@ -292,3 +292,7 @@ A `bindRef` is the connection between an Adaptive Form component and a schema el
 **Why I am not able to drag individual elements of a subform (structure generated from any complex type) for repeatable subforms (minOccours or maxOccurs values are greater than 1)?**
 
 In a repeatable subform, you must use the Complete subform. If you want only selective fields, use the entire structure and delete the unwanted ones.
+
+>[!MORELIKETHIS]
+>
+>* [Design JSON Schema for an Adaptive Form](/help/forms/adaptive-form-json-schema-form-model.md)

@@ -1,11 +1,9 @@
 ---
 title: Introduction to authoring Adaptive Forms
 description: AEM Forms provide easy-to-use yet powerful interface for authoring Adaptive Forms. It provides a host of components and tools that you can use to build forms.
-uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 ---
@@ -48,7 +46,7 @@ The touch-optimized UI for authoring Adaptive Forms is intuitive, and provides:
 * Standard form components
 * Integrated repository for assets
 
-When you create a new or edit an existing Adaptive Form, you use the following UI elements:
+When you create or edit an existing Adaptive Form, you use the following UI elements:
 
 * [Sidebar](#sidebar)
 * [Page toolbar](#page-toolbar)
@@ -356,3 +354,7 @@ The content structure typically contains the following primary components:
 * **toolbar:** An Adaptive Form container has an associated global toolbar, which is global to the form. This toolbar can be added using the **[!UICONTROL Add Toolbar]** action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
 
 * **assets:** This node contains additional information used for form authoring. For example, form model details, localization details, and so on.
+
+## See Also {#see-also}
+
+{{see-also}}

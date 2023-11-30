@@ -1,8 +1,6 @@
 ---
 title: Add a custom error handler in Adaptive Forms based on Core Components for AEM Adaptive Forms
-seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms core components
 description: AEM Forms provides out-of-the-box success and error handlers for a form using the REST endpoint configured to invoke an external service. You can add a default error handler and custom error handler in an AEM Adaptive Form.
-seo-description: Error handler function and Rule Editor in Adaptive Forms core components helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: Add a custom error handler, add a default error handler, add a error handler in form, use rule editor's invoke service to add a custom error handler, configure rule editor to add a custom error handler , add custom error handler using rule editor
 contentOwner: Ruchita Srivastav
 content-type: reference
@@ -246,7 +244,7 @@ Let's add the following code to the JavaScript file to display the response and 
             console.log("Custom Error Handler processing start...");
             console.log("response:"+JSON.stringify(response));
             console.log("headers:"+JSON.stringify(headers));
-            alert("CustomErrorHandler - Please enter valid PetId.")
+            alert("CustomErrorHandler - Enter valid PetId.")
             globals.invoke('defaultErrorHandler',response, headers)
             console.log("Custom Error Handler processing end...");
         }
@@ -405,3 +403,8 @@ Using this custom error handler, the adaptive form converts the fields listed in
 * [Create a standalone Core Components based Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
 * [Create style or themes for your forms](/help/forms/using-themes-in-core-components.md)
 * [Create or add an Adaptive Form to AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+## See Also {#see-also}
+
+{{see-also}}
+

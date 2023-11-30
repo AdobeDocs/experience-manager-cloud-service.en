@@ -61,8 +61,6 @@ Your page can contain either a single content fragment or multiple components of
 
 ### Further Information {#further-information}
 
-See also:
-
 * Assets HTTP API
   * [Assets HTTP API](/help/assets/developer-reference-material-apis.md)
 * Sling Models:
@@ -71,8 +69,6 @@ See also:
   * [Enabling JSON Export for a Component](enabling-json-exporter.md)
 
 ## Related Documentation {#related-documentation}
-
-For further details see:
 
 * [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

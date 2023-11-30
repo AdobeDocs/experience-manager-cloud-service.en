@@ -1,5 +1,5 @@
 ---
-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
+title: How to import, export, and organize Adaptive Forms or PDF forms on an AEM Forms instance?
 description: Learn to migrate Adaptive Forms, PDF forms, themes, and other supporting assets, to and from an AEM instances.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
@@ -179,7 +179,7 @@ You can uses folders to arrange and organize assets. Organizing documents and as
 
    If a folder exists with the name specified, the submission fails with an error. You can view the error message by hovering over the error ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) icon that appears beside the name field.
 
-   You can tap the newly-created folder to go inside the folder and create assets or folders within the folder. Further, you can select a folder and choose to queue it for download, delete it, or edit its name.
+   You can tap the created folder to go inside the folder and create assets or folders within the folder. Further, you can select a folder and choose to queue it for download, delete it, or edit its name.
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
@@ -194,7 +194,7 @@ Complete the following steps to create copies of assets and letters:
 
    If you are copying and pasting the assets/letters at the same place, a suffix "-CopyXX" gets added to the existing name of the asset/letter. If no title existed for the copied asset/letter, the auto generated title field remains blank.
 
-1. If required, edit the Title and Name with which you want to save the copy of the asset/letter.
+1. If necessary, edit the Title and Name with which you want to save the copy of the asset/letter.
 1. Tap **[!UICONTROL Paste]**. New copies of the copied assets are created.
 
 ## Search {#search-forms}
@@ -218,3 +218,7 @@ On the side panel, you can use the following to narrow down your search results:
 The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html). -->
+
+>[!MORELIKETHIS]
+>
+>* [Use themes in Adaptive Form Core Components ](/help/forms/using-themes-in-core-components.md)
