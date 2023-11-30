@@ -36,11 +36,12 @@ Select among the following advanced options:
 
 * **[!UICONTROL Default Preview Renditions]:** Choose this option when you want to reprocess the renditions that are previewed by default.
 
-* **[!UICONTROL Metadata]:** Choose this option when you want to reprocess metadata associated to the selected assets.
+* **[!UICONTROL Metadata]:** Choose this option when you want to extract metadata information and smart tags for the selected assets.
 
-* **[!UICONTROL Processing Profiles]:** Choose this option when you want to reprocess a processing profile applied to a folder. When assets are uploaded to a folder, Experience Manager checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.
+* **[!UICONTROL Processing Profiles]:** Choose this option when you want to reprocess a selected profile. You can choose **[!UICONTROL Full Process]** option to include the default processing and the custom profile assigned at the folder level. 
+<!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-* **[!UICONTROL Post-processing Workflow]:** Choose this option where additional processing of assets is required that cannot be achieved using the processing profiles. Additional post-processing workflows can be added to the configuration. Post-processing lets you add completely customized processing on top of the configurable processing using asset microservices. Select the required profile from the drop-down.
+* **[!UICONTROL Post-processing Workflow]:** Choose this option where additional processing of assets is required that cannot be achieved using the processing profiles. Additional post-processing workflows can be added to the configuration. Post-processing lets you add completely customized processing on top of the configurable processing using asset microservices.
 
 See [use asset microservices and processing profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) to learn more about processing profiles and post-processing workflow.
 
@@ -75,6 +76,11 @@ Read more about [Reprocessing metadata profiles](https://experienceleague.adobe.
 ### Reprocess Dynamic Media assets in a folder {#reprocessing-dynamic-media}
 
 You can reprocess assets in a folder that already has an existing Dynamic Media Image Profile or a Dynamic Media Video Profile that you later changed. For more information, visit [reprocess Dynamic Media assets in a folder.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
+
+>[!NOTE]
+>
+>You need to configure [!DNL Dynamic Media] on the environment to enable Dynamic Media dialog box.
+>
 
 ### Workflows
 
