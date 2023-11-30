@@ -71,6 +71,10 @@ You can:
 
 * [Create and manage variations](#managing-variations) of the **Master** content.
 
+>[!NOTE]
+>
+>Depending on definitions in the underlying model, fields can be subject to certain types of [Validation](/help/assets/content-fragments/content-fragments-models.md#validation).
+
 ### Full Screen Editor {#full-screen-editor}
 
 When editing a multi-line text field you can open the full screen editor; select within the actual text, then select the following action icon:
