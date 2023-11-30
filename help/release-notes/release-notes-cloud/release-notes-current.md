@@ -124,3 +124,7 @@ You can find a complete list of Cloud Manager monthly releases [here](/help/impl
 ## Migration Tools {#migration-tools}
 
 You can find a complete list of Migration Tools releases [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+
+## Known issues {#known-issues}
+
+* Unable to submit Adaptive Forms that are built using Adaptive Form Core Components versions 2.0.38 – 2.0.60. You can [move to Adaptive Form Core Components version 2.0.62 or later](/help/forms/core-com) to resolve the issue. To move to a specific version you can, [change versions of the `core.forms.components.version`, `core.forms.components.af.version` and `core.wcm.components.version component` in the pom.xml](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) of your Forms as a Cloud Service repository or AEM Archetype based project and [deploy the changes to your Forms as a Cloud Service environment](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). 
