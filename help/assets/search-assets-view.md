@@ -156,13 +156,13 @@ You can select the assets that display in the search results and do the followin
 
 * **Assign Tasks**: Assign tasks to users for an asset.
 
-* **Share Link**: [Share links](share-links-for-assets.md) for an asset with other users so that they can access and download it.
+* **Share Link**: [Share links](share-links-for-assets-view.md) for an asset with other users so that they can access and download it.
 
-* **Watch**: [Monitor the operations](manage-notifications.md) performed on an asset.
+* **Watch**: [Monitor the operations](manage-notifications-assets-view.md) performed on an asset.
 
 * **Show File Location**: Navigate to asset folder location.
 
-* **Pin to Quick Access**: [Pin an asset](my-workspace.md) for faster access when you need it later. All pinned items display in the **Quick access** section of My Workspace.
+* **Pin to Quick Access**: [Pin an asset](my-workspace-assets-view.md) for faster access when you need it later. All pinned items display in the **Quick access** section of My Workspace.
 
 ## Configuring search first homepage {#configuring-search-first-homepage}
 
