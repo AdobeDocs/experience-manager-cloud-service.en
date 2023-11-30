@@ -136,6 +136,67 @@ What about temporarily hiding an asset (suspending search on it) from the search
 When userA is searching and userB add an asset that matches search results, will the asset display in search as soon as userA refreshes the page? Assuming indexing is near real-time. May not be so for bulk uploads.
 -->
 
+## Work with Search results {#work-with-search-results}
+
+You can select the assets that display in the search results and do the following actions:
+
+* **Details**: View and edit asset properties.
+
+* **Add to Collection**: Add the selected asset to a collection.
+
+* **Download**: Download an asset.
+
+* **Delete**: Delete an asset.
+
+* **Copy**: Copy an asset to a different folder location.
+
+* **Move**: Move an asset to a different folder location.
+
+* **Rename**: Rename an asset.
+
+* **Assign Tasks**: Assign tasks to users for an asset.
+
+* **Share Link**: [Share links](share-links-for-assets-view.md) for an asset with other users so that they can access and download it.
+
+* **Watch**: [Monitor the operations](manage-notifications-assets-view.md) performed on an asset.
+
+* **Show File Location**: Navigate to asset folder location.
+
+* **Pin to Quick Access**: [Pin an asset](my-workspace-assets-view.md) for faster access when you need it later. All pinned items display in the **Quick access** section of My Workspace.
+
+## Configuring search first homepage {#configuring-search-first-homepage}
+
+Search first homepage allows you to navigate through various files and folders instantly. It lets you effortlessly navigate through asset types, metadata, smart tags, and even the content itself without knowing the exact keyword. [!DNL Assets view] allows you to configure your homepage by controlling what should appear when you log on to [!DNL Assets view].
+
+To configure the search first homepage, execute the steps below:
+
+1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
+1. Select **[!UICONTROL Search first]**. It further opens search first related configuration. You can set [alignment](#setting-alignment-search-bar) or [set background and logo image](#setting-background-image-and-logo) of your homepage.
+
+### Setting alignment of search bar {#setting-alignment-search-bar}
+
+[!DNL Assets view] allows you to change alignment of the search bar. You can make search bar appear either at the center or at the top. Select the appropriate alignment and click **[!UICONTROL Save]**.
+
+   ![Search first homepage alignment](assets/search-first-alignment.png)
+
+### Setting background and logo image of homepage {#setting-background-image-and-logo}
+
+You can add brand logo and background image to your search first homepage. Execute the following steps:
+
+1. Navigate to **[!UICONTROL Background and Logo image]** section under **[!UICONTROL Homepage]**.
+1. Click **[!UICONTROL Replace]** to browse images from existing assets repository.
+1. Click **[!UICONTROL Save]**. [Preview](#preview-configured-homepage) the changes to go over the modifications.
+
+### Preview configured homepage {#preview-configured-homepage}
+
+You can preview to check the layout and formatting of the search first homepage. Using **[!UICONTROL Preview]**, you can fix the layout or make modifications as per the requirement. To preview the configured homepage, execute the steps below:
+
+1. Click **[!UICONTROL General Settings]** and select **[!UICONTROL Search first]**.
+1. Navigate to **[!UICONTROL Customize search first homepage]** and click **[!UICONTROL Preview]**. Toggle through **[!UICONTROL Dark theme]** button to preview homepage in dark or light theme.
+1. Click **[!UICONTROL Close]** to close the preview screen.
+
+   ![Search first homepage preview](assets/search-first-preview.gif)
+
 ## Next Steps {#next-steps}
 
 * [Watch a video to search assets in Assets view](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
