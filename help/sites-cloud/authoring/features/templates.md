@@ -34,7 +34,7 @@ For detailed information about how editable templates work at a technical level,
 >
 >An administrator must configure a template folder in the **Configurations Browser** and apply proper permissions before a template author can create a template in that folder.
 
-Before you start, it is important to consider that creating a new template requires collaboration. For this reason the [Role](#roles) is indicated for each task. This does not impact how you actually use a template to create a page, but it does impact how a page relates to its template.
+Before you start, it is important to consider that creating a template requires collaboration. For this reason the [Role](#roles) is indicated for each task. This does not impact how you actually use a template to create a page, but it does impact how a page relates to its template.
 
 ### Roles {#roles}
 
@@ -61,13 +61,13 @@ The tasks detailed in this document are listed with the role responsible for car
 
 ## Creating and Managing Templates {#creating-and-managing-templates}
 
-When creating a new editable template you:
+When creating an editable template you:
 
 * Use the **Template** console. This is available in the **General** section of the **Tools** console.
   * Or directly at: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * Can [create a folder for the templates](#creating-a-template-folder-admin) if necessary
 * [Create a new template](#creating-a-new-template-template-author), which will initially be empty
-* [Define additional properties](#defining-template-properties-template-author) for the template if required
+* [Define additional properties](#defining-template-properties-template-author) for the template if necessary
 * [Edit the template](#editing-templates-template-authors) to define the:
   * [Structure](#editing-a-template-structure-template-author) - Predefined content that cannot be changed on pages created with the template.
   * [Initial Content](#editing-a-template-initial-content-author) - Predefined content that can be changed on pages created with the template.
@@ -83,7 +83,7 @@ When creating a new editable template you:
 
 >[!TIP]
 >
->Never enter any information that needs to be internationalized into a template. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>Never enter any information that must be internationalized into a template. <!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
 >For template elements such as headers and footers that must be localized, use the [localization features of the core components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
@@ -154,12 +154,12 @@ To view and/or edit the properties:
 To define the template thumbnail:
 
 1. Edit the template properties.
-1. Choose if you wish to upload a thumbnail or have it generated from the template content.
-    * If you wish to upload a thumbnail, click or tap **Upload Image**
-    * If you wish to generate a thumbnail, click or tap **Generate Preview**
+1. Choose if you want to upload a thumbnail or have it generated from the template content.
+    * If you want to upload a thumbnail, select **Upload Image**
+    * If you want to generate a thumbnail, select **Generate Preview**
 1. For both methods a preview of the thumbnail is displayed.
-   * If it is not satisfactory, click or tap **Clear** to upload another image or re-generate the thumbnail.
-1. When you are satisfied with the thumbnail, click or tap **Save & Close**.
+   * If it is not satisfactory, select **Clear** to upload another image or re-generate the thumbnail.
+1. When you are satisfied with the thumbnail, select **Save & Close**.
 
 ### Enabling and Allowing a Template - Template Author {#enabling-and-allowing-a-template-template-author}
 
@@ -178,7 +178,7 @@ A template can be enabled or disabled to make it available or unavailable in the
 
 1. In the **Templates Console**, select the template.
 1. Select **Enable** or **Disable** from the toolbar, and again in the confirmation dialog.
-1. You can now use your template when [creating a new page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), though you will probably want to [edit the template](#editing-templates-template-authors) according to your requirements.
+1. You can now use your template when [creating a page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), though you will probably want to [edit the template](#editing-templates-template-authors) according to your requirements.
 
 >[!NOTE]
 >
@@ -213,7 +213,7 @@ A template can be made available or unavailable for certain page branches.
 
 ### Publishing a Template - Template Author {#publishing-a-template-template-author}
 
-As the template is referenced when a page is rendered, the fully configured template needs to be published so that it is available on the publish environment.
+As the template is referenced when a page is rendered, the fully configured template must be published so that it is available on the publish environment.
 
 1. In the **Templates Console**, select the template.
 1. Select **Publish** from the toolbar to open the wizard.
@@ -287,7 +287,7 @@ In **Structure** mode you define components and content for your template and de
 
 ![Template Editor page structure](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
-There are a number of actions you can take in the **Structure** mode of the template editor and a number of features to assist you:
+There are several actions you can take in the **Structure** mode of the template editor and several features to assist you:
 
 #### Add Components {#add-components}
 
@@ -345,8 +345,8 @@ This lets you define the design details.
 
 The configuration window is divided in two.
 
-* In the left side of the dialogue under **Policy**, you have the ability to select an existing policy or select an existing one.
-* In the right side of the dialogue under **Properties**, you can set the properties specific to the component type.
+* In the left side of the dialog under **Policy**, you can select an existing policy or select an existing one.
+* In the right side of the dialog under **Properties**, you can set the properties specific to the component type.
 
 The properties available are dependent on the selected component. For example, for a text component the properties define the copy and paste options, formatting options, and paragraph style amongst other options.
 
@@ -354,21 +354,21 @@ The properties available are dependent on the selected component. For example, f
 
 The content (or design) policies define the design properties of a component. For example, the components available or minimum/maximum dimensions. These are applicable to the template (and pages created with the template).
 
-Under **Policy** you can select an existing policy to apply to the component via the drop-down.
+Under **Policy** you can select an existing policy to apply to the component by way of the drop-down.
 
 ![Select policy](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-A new policy can be added by selecting the add button next to the **Select policy** dropdown. A new title should then be given in the **Policy Title** field.
+A new policy can be added by selecting the add button next to the **Select policy** drop-down. Give a new title in the **Policy Title** field.
 
 ![Add Policy button](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-The selected existing policy in the **Select policy** dropdown can be copied as a new policy using the copy button next to the dropdown. A new title should then be given in the **Policy Title** field. By default the copied policy is titled **Copy of X**, where X is the title of the copied policy.
+The selected existing policy in the **Select policy** drop-down list can be copied as a new policy using the copy button next to the drop-down list. Give a new title in the **Policy Title** field. By default the copied policy is titled **Copy of X**, where X is the title of the copied policy.
 
 ![Copy Policy button](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 A description of the policy is optional in the **Policy Description** field.
 
-In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** dropdown.
+In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** drop-down list.
 
 ![Usage of existing policy](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
@@ -389,13 +389,13 @@ On the **Main** tab, the most important settings of the component are defined.
 
 For example, for an image component the allowed widths can be defined along with enabling lazy loading.
 
-If a setting allows for multiple configurations, click or tap the **Add** button to add another configuration.
+If a setting allows for multiple configurations, select the **Add** button to add another configuration.
 
 ![Add button](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-To remove a configuration, click or tap the **Delete** button located to the right of the configuration.
+To remove a configuration, select the **Delete** button located to the right of the configuration.
 
-To remove a configuration, click or tap the **Delete** button.
+To remove a configuration, select the **Delete** button.
 
 ![Delete button](/help/sites-cloud/authoring/assets/templates-delete-button.png)
 
@@ -455,9 +455,9 @@ On the **Allowed Components** tab, you define which components are available for
 
 On the **Default Components** tab, you define which components are automatically associated with given media types so that when an author drags an asset from the asset browser, AEM knows with which component to associate it. Note that only components with drop zones are available for such configuration.
 
-Click or tap **Add Mapping** to add an entirely new component and MIME type mapping.
+Select **Add Mapping** to add an entirely new component and MIME type mapping.
 
-Select a component in the list and click or tap **Add type** to add an additional MIME type to an already mapped component. Click the **Delete** icon to remove a MIME type.
+Select a component in the list and select **Add type** to add an additional MIME type to an already mapped component. Click the **Delete** icon to remove a MIME type.
 
 ![Default Components tab](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -562,20 +562,20 @@ You can apply a content policy to either the template or resultant pages. This d
 
   ![Policy selector](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-  A new policy can be added by selecting the add button next to the **Select policy** dropdown. A new title should then be given in the **Policy Title** field.
+  A new policy can be added by selecting the add button next to the **Select policy** drop-down list. Give a new title in the **Policy Title** field.
 
   ![Add Policy button](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  The selected existing policy in the **Select policy** dropdown can be copied as a new policy using the copy button next to the dropdown. A new title should then be given in the **Policy Title** field. By default the copied policy is titled **Copy of X**, where X is the title of the copied policy.
+  The selected existing policy in the **Select policy** drop-down list can be copied as a new policy using the copy button next to the drop-down list. Give a new title in the **Policy Title** field. By default the copied policy is titled **Copy of X**, where X is the title of the copied policy.
 
   ![Copy Policy button](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
-* Define a title for the policy in the **Policy Title** field. A policy is required to have a title so that it can be easily selected in the **Select policy** dropdown.
+* Define a title for the policy in the **Policy Title** field. A policy is required to have a title so that it can be easily selected in the **Select policy** drop-down list.
 
   ![Policy title](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * A description of the policy is optional in the **Policy Description** field.
-* In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** dropdown.
+* In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** drop-down list.
 
   ![Policy usage](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
@@ -601,7 +601,7 @@ Using page properties, you can define the required client-side libraries by usin
 
 >[!NOTE]
 >
->While the template author can specify the page policy on the template, he or she will need to get details of the appropriate client-side libraries from the developer.
+>While the template author can specify the page policy on the template, they need to get details of the appropriate client-side libraries from the developer.
 
 ### Editing a Template - Initial Page Properties - Author {#editing-a-template-initial-page-properties-author}
 

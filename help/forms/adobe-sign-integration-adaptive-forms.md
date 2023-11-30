@@ -33,8 +33,6 @@ You require the following setup to integrate [!DNL Adobe Acrobat Sign] with [!DN
 1. Credentials (Client ID and Client Secret) of [!DNL Adobe Acrobat Sign] API application.
 1. (Only for Government ID-based authentication) [Enable the authentication method](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html#AuditReport) for Government ID authentication.
 
-
-
 ### Connect AEM Forms Author and publish instances with Adobe Acrobat Sign {#configure-adobe-sign-with-aem-forms}
 
 After prerequisites are in place, perform the following steps to configure [!DNL Adobe Acrobat Sign] with [!DNL AEM Forms] on the Author instances.
@@ -53,27 +51,38 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 
 1. Now you can **[!UICONTROL Select solution]** to select [!DNL Adobe Acrobat Sign].
    
-   ![Adobe Acrobat Sign Solutions for Government](assets/adobe-sign-solution.png)
+   ![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)
+
+<!--
+
+[create URL](#create-a-redirect-url-for-your-aem-instance)
+ -->
 
 1. Copy the URL present in your current browser window to a notepad and remove the part `/ui#/aem` from the URL. The modified URL is then required to configure [!DNL Adobe Acrobat Sign] application with [!DNL AEM Forms], in a later step. Tap **[!UICONTROL Next]**.
 
-1.  In the **[!UICONTROL Settings]** tab, the **[!UICONTROL OAuth URL]** field contains the default URL. The format of the URL is:
+1.  In the **[!UICONTROL Settings]** tab,
+      * the **[!UICONTROL OAuth URL]** field contains the default URL which includes the Adobe Sign database shard. The format of the URL is:
 
-      `https://<shard>/public/oAuth/v2`
+         `https://<shard>/public/oauth/v2`
    
-      For example: 
-      `https://secure.na1.echosign.com/public/oauth/v2`
+         For example: 
+         `https://secure.na1.echosign.com/public/oauth/v2`
+
+      * the **[!UICONTROL Access token URL]** field contains the default URL which includes the Adobe Sign database shard. The format of the URL is:
+
+         `https://<shard>/oauth/v2/token`
+   
+         For example: 
+         `https://api.na1.echosign.com/oauth/v2/token`
    
       where:
    
       **na1** refers to the default database shard. You can modify the value for the database shard. Ensure that  the [!DNL  Adobe Acrobat Sign] Cloud Configurations point to the [correct Shard](https://helpx.adobe.com/sign/using/identify-account-shard.html).
    
-      If you create another [!DNL Adobe Acrobat Sign] configuration for an Adobe Experience Manager feature or component, ensure that all the [!DNL Adobe Acrobat Sign] Cloud Configurations point to the same shard.
-   
       >[!NOTE]
       >
-      > Keep the **Create Adobe Acrobat Sign Configuration** page open. Do not close it. You can retrieve **Client Id** and **Client Secret** after configuring OAuth settings for the [!DNL Adobe Acrobat Sign] application as described in upcoming steps.
-
+      >* Keep the **Create Adobe Acrobat Sign Configuration** page open. Do not close it. You can retrieve **Client Id** and **Client Secret** after configuring OAuth settings for the [!DNL Adobe Acrobat Sign] application as described in upcoming steps.
+      > * After logging in your Adobe Sign account,navigate to **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** to access information related to Adobe Sign OAuth URL and Access Token URL.
 
 1. Configure OAuth settings for the [!DNL Adobe Acrobat Sign] application:
 
@@ -91,7 +100,7 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 
    For step-by-step information to configure OAuth settings for an [!DNL Adobe Acrobat Sign] application and obtain the keys, see [Configure oAuth settings for the application](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) developer documentation.
 
-   ![OAuth Config](assets/oauthconfig_new.png)
+   ![OAuth Config](/help/forms/assets/oauthconfig-new.png)
 
 1. Go back to the **[!UICONTROL Create Adobe Acrobat Sign Configuration]** page. In the **[!UICONTROL Settings]** tab, specify the [**[!UICONTROL Client ID]** (also referred to as Application ID) and **[!UICONTROL Client Secret]**]. Use the [Client ID and Client Secret of Adobe Acrobat Sign application](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) you created in the previous step.
 
@@ -108,6 +117,10 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 1. Repeat all the above steps on your developer, stage, and production instances (whichever left) to complete configuring [!DNL Adobe Acrobat Sign] with [!DNL AEM Forms] for your environment.
 
 Now, you can [use add Adobe Acrobat Sign fields to an Adaptive Form](working-with-adobe-sign.md). Ensure that you add the configuration container used for the Cloud Service to all the Adaptive Forms being enabled for [!DNL Adobe Acrobat Sign]. You can specify a configuration container from the  properties of an Adaptive Form.
+
+>[!NOTE]
+>
+> To configure the Adobe Sign sandbox, you can follow the same configuration steps as explained in [Adobe Sign](#adobe-sign).
 
 ## Connect AEM Forms with Adobe Acrobat Sign Solutions for Government {#adobe-acrobat-sign-for-government}
 
@@ -137,8 +150,8 @@ Before you start connecting AEM Forms with Adobe Acrobat Sign Solution, ensure t
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a **[!UICONTROL Title]** for the configuration, enable **[!UICONTROL Cloud Configurations]**, and tap **[!UICONTROL Create]**. It creates a configuration container to store Cloud Services. Ensure that the folder name does not contain any space.
 1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Adobe Acrobat Sign]** and open the configuration container you created in the previous step. When you create an Adaptive Form, specify the container name in the **[!UICONTROL Configuration Container]** field.  
 1. On the configuration page, tap **[!UICONTROL Create]** to create [!DNL Adobe Acrobat Sign] configuration in AEM Forms.
-1. Copy the URL of your current browser window to a notepad and remove `/ui#/aem` from the URL. This URL is referred as `re-direct URL`. In the next section, you share the `re-direct URL` and `Scopes` with Adobe Sign team and request credentials (Client Id and Client Secret).  
-
+1. Copy the URL of your current browser window to a notepad and remove `/ui#/aem` from the URL. This URL is referred as `re-direct URL`. 
+In the next section, you share the `re-direct URL` and `Scopes` with Adobe Sign team and request credentials (Client Id and Client Secret).  
 
 #### Share the redirect URL and scopes with Adobe Sign team and receive credentials
 
@@ -160,18 +173,40 @@ The representative generates and shares credentials with you. In the next sectio
 
 #### Use the received credentials to connect AEM Forms with Adobe Acrobat Sign Solutions for Government
 
-1.  Open the `re-direct URL` in your browser. You created and noted down the `re-direct URL` in the last step of the [create a redirect URL on your AEM instance](#create-redirect-url) section. 
+1.  Open the `re-direct URL` in your browser. You created and noted down the `re-direct URL` in the last step of the [create a redirect URL on your AEM instance](#create-a-redirect-url-for-your-aem-instance) section. 
 
 1. In the **[!UICONTROL General]** tab of the **[!UICONTROL Create Adobe Sign Configuration]** page, specify a **[!UICONTROL Name]** for the configuration, and tap **[!UICONTROL Next]**. You can optionally specify a **[!UICONTROL Title]** and browse to select a **[!UICONTROL Thumbnail]** for the configuration. Click **[!UICONTROL Next]**. 
 
 1. In the **[!UICONTROL Settings]** tab of the **[!UICONTROL Create Adobe Sign Configuration]** page, for the **[!UICONTROL Select solution]** option, select [!DNL Adobe Acrobat Sign Solutions for Government].
+
    
       ![Adobe Acrobat Sign Solutions for Government](assets/adobe-sign-for-govt.png)
 
 1.  In the **[!UICONTROL Email]** filed, specify the email address associated with your Adobe Acrobat Sign Solutions for Government account.  
 
-1.  The **[!UICONTROL OAuth URL]** field specifies the Adobe Sign database shard. The field contains the default URL. Do not change the URL. 
+1.  In the **[!UICONTROL Settings]** tab,
+      * the **[!UICONTROL OAuth URL]** field contains the default URL which includes the Adobe Sign database shard. The format of the URL is:
 
+         `https://<shard>/api/gateway/adobesignauthservice/api/v1/authorize`
+   
+         For example: 
+         `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/authorize`
+
+      * the **[!UICONTROL Access token URL]** field contains the default URL which includes the Adobe Sign database shard. The format of the URL is:
+
+         `https://<shard>/api/gateway/adobesignauthservice/api/v1/token`
+   
+         For example: 
+         `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/token`
+   
+      where:
+   
+      **na1** refers to the default database shard. You can modify the value for the database shard. Ensure that  the [!DNL  Adobe Acrobat Sign] Cloud Configurations point to the [correct Shard](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   
+      >[!NOTE]
+      >
+      > * After logging in your Adobe Sign account,navigate to **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** to access information related to Adobe Sign oAuth URL and Access Token URL.
+ 
 1.  Use the credentials shared by  Adobe Acrobat Sign for Government Solution representative ([Adobe Professional Services team member]) in the previous section as [**[!UICONTROL Client ID]** and **[!UICONTROL Client Secret]**].  
 
 1.  Select the **[!UICONTROL Enable Adobe Acrobat Sign for attachments]** option to append files attached to an Adaptive Form to the corresponding [!DNL Adobe Acrobat Sign] document sent for signing.

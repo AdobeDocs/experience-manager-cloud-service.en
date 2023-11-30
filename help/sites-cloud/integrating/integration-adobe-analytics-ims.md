@@ -29,7 +29,7 @@ Before starting this procedure:
 * Your organization's System Administrator should use the Admin Console to add the required developers in your organization to the relevant product profiles. 
 
   * This provides the specific developers with permissions to enable integrations using the Adobe Developer Console. 
-  * For further details see [Manage Developers](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+  * See [Manage Developers](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
 ## Configuring an IMS Configuration - Generating a Public Key {#configuring-ims-generating-a-public-key}
@@ -139,7 +139,7 @@ Select a specific project entry to show further details about the configuration.
 * APIS
   * For example, Adobe Analytics
 
-Some of these you will need to complete the integration of Adobe Analytics in AEM based on IMS.
+Some of these you must complete the integration of Adobe Analytics in AEM based on IMS.
 
 ## Completing the IMS Configuration in AEM {#completing-the-ims-configuration-in-aem}
 
@@ -181,7 +181,7 @@ To confirm that the configuration is operating as expected:
 
    ![IMS Configuration - Check Health](assets/integrate-analytics-ims-12.png)
 
-1. If successful, you will see a confirmation message.
+1. If successful, you see a confirmation message.
 
 ## Complete the Integration with Adobe Analytics {#complete-the-integration-with-adobe-analytics}
 
@@ -195,7 +195,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 1. Open the **Tools** menu. Then, within the **Cloud Services** section, select **Legacy Cloud Services**.
 1. Scroll down to **Adobe Analytics** and select **Configure now**.
 
-   The **Create Configuration** dialog will open.
+   The **Create Configuration** dialog opens.
 
 1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
@@ -203,7 +203,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
 1. Confirm with **Create**.
 
-   The **Edit Component** dialog will open.
+   The **Edit Component** dialog opens.
 
 1. Enter the details in the **Analytics Settings** tab:
 

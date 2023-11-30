@@ -46,7 +46,7 @@ The [WKND tutorial site](/help/implementing/developing/introduction/develop-wknd
 
 The language copy for which you originally author site content is the language master. The language master is the source that is translated into other languages.
 
-Each language branch of a site is called a language copy. The root page of a language copy, known as the language root, identifies the language of the content in the language copy. For example, `/content/wknd/fr` is the language root for the French language copy. Language copies must use a [correctly-configured language root](preparation.md#creating-a-language-root) so that the correct language is targeted when translations of a source site are performed.
+Each language branch of a site is called a language copy. The root page of a language copy, known as the language root, identifies the language of the content in the language copy. For example, `/content/wknd/fr` is the language root for the French language copy. Language copies must use a [correctly configured language root](preparation.md#creating-a-language-root) so that the correct language is targeted when translations of a source site are performed.
 
 Use the following steps to prepare your site for translation:
 
@@ -65,20 +65,20 @@ To create the language root you create a page and use an ISO language code as th
 * `<language-code>` - The supported language code is a two-letter code as defined by ISO-639-1, for example `en`.
 * `<language-code>_<country-code>` or `<language-code>-<country-code>` - The supported country code is a lower-case or upper-case two-letter code as defined by ISO 3166, for example `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-You can use either format, according to the structure that you have chosen for your global site. For example, the root page of the French language copy of the WKND site has `fr` as the **Name** property. Note that the **Name** property is used as the name of the page node in the repository, and therefore determines the path of the page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+You can use either format, according to the structure that you have chosen for your global site. For example, the root page of the French language copy of the WKND site has `fr` as the **Name** property. The **Name** property is used as the name of the page node in the repository, and therefore determines the path of the page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Navigate to sites.
-1. Click or tap the site for which you want to create a language copy.
-1. Click or tap **Create**, and then click or tap **Page**.
+1. Select the site for which you want to create a language copy.
+1. Select **Create**, and then select **Page**.
 
    ![Create page](../assets/create-page.png)
 
-1. Select the page template and then click or tap **Next**.
+1. Select the page template and then select **Next**.
 1. In the **Name** field type the country code in the format of `<language-code>` or `<language-code>_<country-code>`, for example `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Type a title for the page.
 
    ![Create language root page](../assets/create-language-root.png)
 
-1. Click or tap **Create**. In the confirmation dialog box, click or tap either **Done** to return to the Sites console, or **Open** to open the language copy.
+1. Select **Create**. In the confirmation dialog box, select either **Done** to return to the Sites console, or **Open** to open the language copy.
 
 ## Seeing the Status of Language Roots {#seeing-the-status-of-language-roots}
 
@@ -88,11 +88,11 @@ AEM provides a **References** rail that shows a list of language roots that have
 
 Use the following procedure view the language copies for a page using the [rail selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
-1. On the sites console, select a page of the site and then click or tap **References**.
+1. On the sites console, select a page of the site and then select **References**.
 
    ![Open references rail](../assets/opening-references-rail.png)
 
-1. In the references rail, click or tap **Language Copies**. The rail shows the language copies of the web site.
+1. In the references rail, select **Language Copies**. The rail shows the language copies of the web site.
 
 ## Language Copies on Multiple Levels {#multiple-levels}
 

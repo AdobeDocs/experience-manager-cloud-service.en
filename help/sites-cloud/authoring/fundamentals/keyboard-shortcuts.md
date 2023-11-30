@@ -15,7 +15,7 @@ Various keyboard shortcuts are available throughout AEM. Some apply when editing
 
 |Location|Shortcut|Description|
 |---|---|---|
-|Any edit window mode|`Ctrl-Shift-m`|Toggle between **Preview** and the currently selected [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (for example, **Edit**, **Layout**, etc)*|
+|Any edit window mode|`Ctrl-Shift-m`|Toggle between **Preview** and the currently selected [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (for example, **Edit**, **Layout**, and so on)*|
 |**Edit** mode|`Ctrl-z`|[Undo last change](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits)|
 ||`Ctrl-y`|[Redo last change](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits)|
 ||`Ctrl-Click`|Select multiple paragraphs|
@@ -29,7 +29,7 @@ Various keyboard shortcuts are available throughout AEM. Some apply when editing
 
 >[!NOTE]
 >
->Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. The user must click on the top editor bar or go back to the Edit mode for the shortcut to once again become available.
+>Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. The user must click the top editor bar or go back to the Edit mode for the shortcut to once again become available.
 
 Various keyboard shortcuts are also available for desktop users when using the [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), and some in particular to the [Content Fragments console](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
