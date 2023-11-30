@@ -165,12 +165,11 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 ## Submit to SharePoint {#submit-to-sharedrive}
 
 The **[!UICONTROL Submit to SharePoint]** Submit Action connects an Adaptive Form with a Microsoft&reg; SharePoint Storage. You can submit the form data file, attachments, or Document of Record to the connected Microsoft&reg; Sharepoint Storage. 
-<!--
+
 Using Submit to SharePoint, you can:
 * [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
 * [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) 
 
--->
 
 ### Connect an Adaptive Form to SharePoint Document Library {#connect-af-sharepoint-doc-library}
 
@@ -229,8 +228,6 @@ You can use the created SharePoint Document Library configuration in an Adaptive
 When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint Document Library Storage. 
 Folder structure to save data is `/folder_name/form_name/year/month/date/submission_id/data`. 
 
-<!--
-
 ### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
 
 <span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
@@ -266,7 +263,7 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 
 #### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
 
-You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List folder. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
+You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
 
 1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/create-form-data-models.md)
 1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
@@ -283,7 +280,6 @@ When you submit the form, the data is saved in the specified Microsoft&reg; Shar
 > * person column
 > * external data column
 
--->
 
 ## Submit to OneDrive {#submit-to-onedrive}
 
