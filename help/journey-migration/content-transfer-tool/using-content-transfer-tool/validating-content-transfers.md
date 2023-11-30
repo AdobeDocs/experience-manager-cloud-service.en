@@ -7,7 +7,7 @@ exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 
 ## Getting Started {#getting-started}
 
-Users have the ability to reliably determine if all of the content that was extracted by the Content Transfer Tool was successfully ingested into the target instance. This validation feature works by comparing a digest of the paths of all nodes that were involved during extraction, with a digest of the paths of all nodes that were involved during ingestion. If there are any node paths included in the extraction digest that are missing from the ingestion digest, the validation is considered to have failed, and additional manual validation may be necessary.
+Users can reliably determine if all the content that was extracted by the Content Transfer Tool was successfully ingested into the target instance. This validation feature works by comparing a digest of the paths of all nodes that were involved during extraction, with a digest of the paths of all nodes that were involved during ingestion. If there are any node paths included in the extraction digest that are missing from the ingestion digest, the validation is considered to have failed, and additional manual validation may be necessary.
 
 >[!INFO]
 >
@@ -121,7 +121,7 @@ Migration validation took 0 minutes
 
 The above failure example was achieved by running an ingestion, and then re-running the same ingestion again with Wipe disabled, such that no nodes were involved during ingestion — everything was already present on the target.
 
-In addition to being included in the ingestion log, the validation report can also be accessed from the **Ingestion Jobs** user interface in Cloud Acceleration Manager. To do so, click on the three dots (**...**)  then click on **Validation report** in the drop-down to view the validation report. 
+In addition to being included in the ingestion log, the validation report can also be accessed from the **Ingestion Jobs** user interface in Cloud Acceleration Manager. To do so, click the three dots (**...**)  then click **Validation report** in the drop-down to view the validation report. 
 
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
@@ -132,11 +132,11 @@ See [User Mapping and Principal Migration](/help/journey-migration/content-trans
 
 After the extraction and ingestion are successfully completed, a summary and report of the principal migration is available. This information can be used to validate which users and groups were migrated successfully, and, perhaps, to determine why some were not.
 
-To view this information, go to Cloud Acceleration Manager. Click on your project card and click on the Content Transfer card. Navigate to **Ingestion Jobs** and locate the ingestion that you want to verify. Click on the three dots (**...**) for that ingestion, then click on **View principal summary** in the drop-down.
+To view this information, go to Cloud Acceleration Manager. Click your project card and click the Content Transfer card. Navigate to **Ingestion Jobs** and locate the ingestion that you want to verify. Click the three dots (**...**) for that ingestion, then click **View principal summary** in the drop-down.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-You will see a dialog with the summary information. Use the help icons to read a more full description. Click the **Download report** button to download the full comma-separated (CSV) report.
+You see a dialog with the summary information. Use the help icons to read a more full description. Click the **Download report** button to download the full comma-separated (CSV) report.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 

@@ -315,7 +315,7 @@ You require  a repository to deploy the theme. Log in to your [AEM Cloud Manager
 
 ##### 5.2. Push the changes to the repository {#committing-the-changes}
 
-Now, push the changes to the theme repository of your AEM Forms Cloud Service. . 
+Now, push the changes to the theme repository of your AEM Forms Cloud Service.
 
 1. Navigate to the root of the theme folder.  In this case, the theme folder name is `aem-forms-theme-canvas`. 
 1. Open the command prompt or terminal.
@@ -361,12 +361,12 @@ The theme is deployed using the [front-end pipeline.](https://experienceleague.a
 
    After the pipeline setup is complete, the call-to-action card is updated.
 
-1. Right-click on the created pipeline.
+1. Right-click the created pipeline.
 1. Click **[!UICONTROL Run]** .
     
     ![run-a-pipleine](/help/forms/assets/canvas-theme-run-pipeline.png)
 
-Once the build is complete, the theme becomes available at the author instance for the use. It appears under the **[!UICONTROL Style]** tab in the Adaptive Form creation wizard, while creating a new Adaptive Form. 
+Once the build is complete, the theme becomes available at the author instance for the use. It appears under the **[!UICONTROL Style]** tab in the Adaptive Form creation wizard, while creating an Adaptive Form. 
 
    ![custom theme available under style tab](/help/forms/assets/custom-theme-style-tab.png)
 

@@ -26,17 +26,17 @@ The **Announcements** tab includes Adobe product announcements. Announcements co
 
 ![Notifications sidebar](assets/notificaitons-announcements.png)
 
-Click on a notification or announcement to view its details. Notifications linked to activities such as pipeline deployments take you to the detail of that activity such as the pipeline execution window.
+Click a notification or announcement to view its details. Notifications linked to activities such as pipeline deployments take you to the detail of that activity such as the pipeline execution window.
 
-Click on the **View all** option at the bottom of the panel to view all announcements in your inbox.
+Click the **View all** option at the bottom of the panel to view all announcements in your inbox.
 
-Click on the **Mark all as read** option at the bottom of the panel to mark all unread notifications as read and clear the bell icon badging.
+Click the **Mark all as read** option at the bottom of the panel to mark all unread notifications as read and clear the bell icon badging.
 
 ## Notification Configuration {#configuration}
 
 You can customize how you receive notifications and what notifications you receive.
 
-Click on the gear icon at the top of the notifications sidebar.
+Click the gear icon at the top of the notifications sidebar.
 
 ![Notification settings icon](assets/notifications-configuration.png)
 
@@ -48,7 +48,7 @@ Subscriptions define for which products you receive notifications and which noti
 
 ![Notification subscriptions](assets/notifications-subscriptions.png)
 
-By default, you will receive all notifications for all products both in the application and via email. Click on the chevron next to a product name reveal the detailed options and define the types of notifications you receive for that product. Or check or uncheck the options at the product level to select/deselect all options for the product.
+By default, you will receive all notifications for all products both in the application and via email. Click the chevron next to a product name reveal the detailed options and define the types of notifications you receive for that product. Or check or uncheck the options at the product level to select/deselect all options for the product.
 
 ![Notification subscription customization](assets/notifications-subscriptions-customize.png)
 

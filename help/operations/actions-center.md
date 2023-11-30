@@ -1,13 +1,13 @@
 ---
 title: Actions Center
-description: Leverage the Actions Center to conveniently take action on incidents and other important information
+description: Leverage the Actions Center to conveniently act on incidents and other important information
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 ---
 # Actions Center {#actions-center}
 
 AEM as Cloud Service sends Actions Center email notifications when critical incidents occur that require immediate action, and proactive recommendations for optimizations. Examples include a blocked queue, or an expiring set of credentials; the full set of Actions Center notification types can be viewed in the [table below](#supported-notification-types), which will expand over time.
 
-When an Actions Center email notification is received, it can be clicked to open AEM as a Cloud Service's Actions Center with a popup displaying additional context explaining the action for a customer to take.
+When an Actions Center email notification is received, it can be clicked to open AEM as a Cloud Service's Actions Center with a pop-up displaying additional context explaining the action for a customer to take.
 
 In addition to displaying information about the just-clicked email notification, the Actions Center serves as a hub where you can view and manage the set of current and older notifications. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -29,7 +29,7 @@ To configure receiving Actions Center email notifications, create the Product Pr
 
 ## Detailed User Flow {#detailed-user-flow}
 
-Clicking on the email will bring you to the Actions Center, with a popup showing context for the notification you clicked on and in some cases, links to additional information describing how to take corrective action. You can also access Actions Center directly at [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), where you can select the relevant program and environment.
+Clicking on the email will bring you to the Actions Center, with a pop-up showing context for the notification you clicked on and in some cases, links to additional information describing how to take corrective action. You can also access Actions Center directly at [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), where you can select the relevant program and environment.
 
 ![Incident details](/help/operations/assets/incident-details.png)
 
@@ -39,7 +39,7 @@ In the Actions Center, you can see a list of other recent notifications. It is r
 
 ![Notification list](/help/operations/assets/notification-list.png)
 
-In most cases, the popup should provide all the necessary context to resolve the issue. However, if there are questions for Adobe Support, you can click the **Contact Support** link in the popup. This will bring up a form from where you can describe the question and submit it to create a Support ticket, which will also include a reference to the specific notification so an Adobe Support Engineer has the relevant context.
+In most cases, the pop-up should provide all the necessary context to resolve the issue. However, if there are questions for Adobe Support, you can click the **Contact Support** link in the pop-up. This will bring up a form from where you can describe the question and submit it to create a Support ticket, which will also include a reference to the specific notification so an Adobe Support Engineer has the relevant context.
 
 ![Contact support 1](/help/operations/assets/contact-support1.png)
 

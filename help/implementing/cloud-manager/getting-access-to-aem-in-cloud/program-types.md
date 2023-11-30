@@ -27,7 +27,7 @@ An example is often helpful in contextualizing this hierarchy.
 
 A Cloud Manager program will come auto-provisioned with its own git repository.
 
-To access the Cloud Manager git repository, users will need to use a git client with a command-line tool, a standalone visual git client, or the user's IDE of choice such as Eclipse, IntelliJ, or NetBeans.
+To access the Cloud Manager git repository, users need to use a git client with a command-line tool, a standalone visual git client, or the user's IDE of choice such as Eclipse, IntelliJ, or NetBeans.
 
 Once a git client is set up, you can manage your git repository from the Cloud Manager user interface. To learn about how to manage git using Cloud Manager user interface, see [Accessing Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 

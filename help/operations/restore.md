@@ -15,7 +15,7 @@ Learn how to restore your AEM as a Cloud Service content from backup using Cloud
 >* The feature is only available in development environments.
 >* Content restorations are limited to two per month per program.
 >
->For details on the existing backup and restore system for AEM as a Cloud Service, please see the document [Backup and Restore in AEM as a Cloud Service](/help/operations/backup.md)
+>For details on the existing backup and restore system for AEM as a Cloud Service, see [Backup and Restore in AEM as a Cloud Service](/help/operations/backup.md).
 
 ## Overview {#overview}
 
@@ -36,23 +36,23 @@ In both cases, the version of your custom code and the AEM version remain unchan
 
 ## Restoring Content {#restoring-content}
 
-First determine the time frame of the content that you wish to restore. Then to restore your environment's content from a backup perform these steps.
+First determine the time frame of the content that you want to restore. Then to restore your environment's content from a backup perform these steps.
 
 >[!NOTE]
 >
->A user with the **Business Owner** or **Deployment Manager** role must be logged in, in order to initiate a restore operation.
+>A user with the **Business Owner** or **Deployment Manager** role must be logged in to initiate a restore operation.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program for which you want to initiate a restore.
+1. Click the program for which you want to initiate a restore.
 
-1. From the **Program Overview** page, in the **Environments** card, click on the ellipsis button next to the environment for which you want to initiate a restore and select **Restore Content**.
+1. From the **Program Overview** page, in the **Environments** card, click the ellipsis button next to the environment for which you want to initiate a restore and select **Restore Content**.
 
    ![Restore option](assets/backup-option.png)
 
    * Alternatively you can navigate directly to the **Restore Content** tab of the environment details page of a specific environment.
 
-1. On the **Restore Content** tab of the environment details page, first select the time frame of the restore under the **Time to restore** dropdown.
+1. On the **Restore Content** tab of the environment details page, first select the time frame of the restore under the **Time to restore** drop-down list.
 
    1. If you select **Last 24 hours** the neighboring **Time** field lets you specify the exact time within the last 24 hours to restore.
 
@@ -66,13 +66,13 @@ First determine the time frame of the content that you wish to restore. Then to 
 
    ![Backups available](assets/backup-available.png)
 
-1. Find the backup you wish to restore by using the information icon to view information regarding the version of the code and AEM release included in that backup and consider the implications of a restore when [choosing the backup.](#choosing-the-right-backup)
+1. Find the backup you want to restore by using the information icon to view information regarding the version of the code and AEM release included in that backup and consider the implications of a restore when [choosing the backup.](#choosing-the-right-backup)
 
    ![Backup info](assets/backup-info.png)
 
-   * Note that the time stamp displayed for the restore options are all based on the user's computer's time zone.
+   * The time stamp displayed for the restore options are all based on the user's computer's time zone.
 
-1. Click the **Restore** icon at the right end of the row representing the backup you wish to restore to start the restore process.
+1. Click the **Restore** icon at the right end of the row representing the backup you want to restore to start the restore process.
 
 1. Review the details on the **Restore Content** dialog before confirming your request by clicking on **Restore**.
 
@@ -97,7 +97,7 @@ There are several scenarios.
   * In this case, a commit ID will not be displayed.
   * It is strongly recommended that you clone both repositories and use a diff tool to compare the branches.
 
-Additionally, keep in mind that a restore might cause your production and staging environments to fall out of sync. You are responsible for the consequences of restoring content.
+Also, keep in mind that a restore might cause your production and staging environments to fall out of sync. You are responsible for the consequences of restoring content.
 
 ## Restore Activity {#restore-activity}
 

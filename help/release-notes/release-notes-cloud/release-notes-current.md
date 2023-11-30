@@ -46,6 +46,8 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
 ### New features in Assets view {#assets-view-features}
 
+### New features in Assets view {#assets-view-features}
+
 * **Embedded Adobe Express editor in AEM Assets**: Users with access to Express now have integrated image editing and creation tools from Adobe Express and Adobe Firefly available directly within AEM Assets to improve content reuse and accelerate content velocity.
 
   ![assign metadata form to a folder](/help/assets/assets/adobe-express-aem-assets.png)

@@ -25,7 +25,7 @@ To use Content Fragment Models you:
    >If the [use of content fragment models have not been enabled](/help/assets/content-fragments/content-fragments-configuration-browser.md), the **Create** option will not be available.
 
 1. Specify the **Model Title**. 
-   You can also define various properties; for example, add **Tags**, a **Description**, and select **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) if required. 
+   You can also define various properties; for example, add **Tags**, a **Description**, and select **Enable model** to [enable the model](#enabling-disabling-a-content-fragment-model) if necessary. 
 
     >[!NOTE]
     >
@@ -82,7 +82,7 @@ The content fragment model effectively defines the structure of the resulting co
 
 1. **To Remove a Field**
 
-   Select the required field, then click/tap the trash-can icon. You are asked to confirm the action.
+   Select the required field, then select the trash-can icon. You are asked to confirm the action.
 
    ![remove](assets/cfm-models-06.png)
 
@@ -107,7 +107,7 @@ A selection of data types is available for defining your model:
 * **Date and time**
   * Add a date and/or time
 * **Enumeration**
-  * Add a set of checkbox, radio button(s), or dropdown fields
+  * Add a set of checkbox, radio buttons, or drop-down list fields
 * **Tags**
   * Allows fragment authors to access and select areas of tags
 * **Content Reference**
@@ -147,7 +147,7 @@ Many properties are self-explanatory, for certain properties additional details 
   The various options for realizing/rendering the field in a fragment. Often this property lets you define whether the author sees a single instance of the field, or is allowed to create multiple instances. When **Multiple Field** is used you can define the minimum and maximum number of items - see [Validation](#validation) for further details. 
 
 * **Field Label**
-  Entering a **Field Label** will autogenerate a **Property Name**, which can then be manually updated if required.
+  Entering a **Field Label** will autogenerate a **Property Name**, which can then be manually updated if necessary.
 
 * **Validation**
   Basic validation is available by mechanisms such as the **Required** property. Some data types have addition validation fields. See [Validation](#validation) for further details.
@@ -302,7 +302,7 @@ In addition to standard properties you can define:
 
 * **Allow Fragment Creation**
 
-  This will allow the fragment author to create a new fragment based on the appropriate model.
+  This allows the fragment author to create a fragment based on the appropriate model.
 
   * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
 
@@ -336,9 +336,9 @@ For full control over the use of your Content Fragment Models they have a status
 
 ### Enabling a Content Fragment Model {#enabling-a-content-fragment-model}
 
-Once a model has been created it needs to be enabled so that it:
+When a model is created it must be enabled so that it:
 
-* Is available for selection when creating a new Content Fragment.
+* Is available for selection when creating a Content Fragment.
 * Can be referenced from within a Content Fragment Model.
 * Is available to GraphQL; so the schema is generated.
 

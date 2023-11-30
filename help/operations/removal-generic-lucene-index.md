@@ -32,11 +32,11 @@ For example, reference lookup queries, such as in the following example, should 
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-To support larger customer data volumes, Adobe no longer creates the generic Lucene index on new AEM as a Cloud Service environments. Additionally, Adobe removes the index from existing repositories. [See the timeline](#timeline) at the end of this document for more details.
+To support larger customer data volumes, Adobe no longer creates the generic Lucene index on new AEM as a Cloud Service environments. Also, Adobe removes the index from existing repositories. [See the timeline](#timeline) at the end of this document for more details.
 
 Adobe has already adjusted the index costings via the `costPerEntry` and `costPerExecution` properties to ensure that other indexes such as `/oak:index/pathreference` are used in preference wherever possible. 
 
-Customer applications which use queries which still depend on this index should be updated immediately to use other existing indexes, which can be customized if required. Alternatively new custom indexes can be added to the customer application. Full instructions for index management in AEM as a Cloud Service can be found in the [indexing documentation](/help/operations/indexing.md).
+Customer applications which use queries which still depend on this index should be updated immediately to use other existing indexes, which can be customized if necessary. Alternatively new custom indexes can be added to the customer application. Full instructions for index management in AEM as a Cloud Service can be found in the [indexing documentation](/help/operations/indexing.md).
 
 ## Are You Affected? {#are-you-affected}
 
@@ -68,7 +68,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 ## Potential Dependencies on Generic Lucene Indexes {#potential-dependencies}
 
-There are a number of areas where your applications and AEM installations may be dependent on generic Lucene indexes both on author and publish instances.
+There are several areas where your applications and AEM installations may be dependent on generic Lucene indexes both on author and publish instances.
 
 ### Publish Instance {#publish-instance}
 
@@ -115,7 +115,7 @@ As such, the query falls back on the generic full text index where all the inclu
 
 ### Author Instance {#author-instance}
 
-In addition to queries in customer application servlets, OSGi components, and rendering scripts there can be a number of author-specific usages of the generic Lucene index. 
+In addition to queries in customer application servlets, OSGi components, and rendering scripts there can be several author-specific usages of the generic Lucene index. 
 
 #### Reference Search {#reference-search}
 
@@ -123,7 +123,7 @@ Historically the generic Lucene index has been used to support reference search 
 
 #### Path Field Picker Search {#picker-search}
 
-AEM includes a custom dialog component with the Sling resource type `granite/ui/components/coral/foundation/form/pathfield`, which provides a browser/picker for selecting another AEM path. The default path field picker, which is used when no custom `pickerSrc` property is defined in the content structure, renders a search bar in the popup dialog box.
+AEM includes a custom dialog component with the Sling resource type `granite/ui/components/coral/foundation/form/pathfield`, which provides a browser/picker for selecting another AEM path. The default path field picker, which is used when no custom `pickerSrc` property is defined in the content structure, renders a search bar in the pop-up dialog box.
 
 The node types against which to search can be specified using the `nodeTypes` property.
 
@@ -148,6 +148,7 @@ Prior to removal of the generic Lucene index, the `pathfield` component will be 
 >[!NOTE]
 >
 >The Content Fragment Model Editor uses a specialized path fields with the Sling resource type `dam/cfm/models/editor/components/contentreference`.
+>
 > * At present these perform queries without node types specified, resulting in a WARN being logged due to usage of the generic Lucene index.
 > * Instances of these components will soon automatically default to using `cq:Page` and `dam:Asset` node types without further customer action.
 > * The `nodeTypes` property can be added to override these default node types.
@@ -161,6 +162,6 @@ Adobe will take a two-phase approach to remove the generic Lucene index.
 
 Adobe will monitor the log messages noted above and will attempt to contact customers who remain dependant on the generic Lucene index.
 
-As a short term mitigation, Adobe will add custom index definitions directly to customer systems to prevent functional or performance issues as a result of the removal of the generic Lucene index as necessary.
+As a short term mitigation, Adobe adds custom index definitions directly to customer systems to prevent functional or performance issues as a result of the removal of the generic Lucene index as necessary.
 
-In such cases, the customer will be provided with the updated index definition and advised to include this in future releases of their application via Cloud Manager.
+In such cases, the customer is provided with the updated index definition and is advised that they include it in future releases of their application via Cloud Manager.
