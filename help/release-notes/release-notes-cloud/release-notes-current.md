@@ -46,13 +46,18 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
 ### New features in Assets view {#assets-view-features}
 
-* **Embedded Adobe Express editor in AEM Assets**: Easy and intuitive editing and content creation tools powered by Adobe Express available directly within AEM Assets to increase content re-use and accelerate content velocity.
+* **Embedded Adobe Express editor in AEM Assets**: Users with access to Express now have integrated image editing and creation tools from Adobe Express and Adobe Firefly available directly within AEM Assets to improve content reuse and accelerate content velocity.
 
   ![assign metadata form to a folder](/help/assets/assets/adobe-express-aem-assets.png)
+
+<!--
 
 * **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
 
   ![storage usage insights](/help/assets/assets/block-tags.png)
+
+-->
+
 
 * **Storage usage reports in Insights**: Administrators now have the ability to view the storage usage reports available as part of Insights.
 
@@ -61,6 +66,10 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 * **Search first homepage configuration**: Experience Manager Assets now enables you to configure the homepage experience for your organization. If you select search first as the homepage, you can configure the search bar alignment, background image, and logo for your organization.
 
   ![search first configuration](/help/assets/assets/search-first-configuration.png)
+
+### New features in  prerelease for Admin view {#admin-view-features-prerelease}
+
+**Video Preview**: AEM Assets now generates preview renditions of all supported video formats by default, without the need to configure a processing profile.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
