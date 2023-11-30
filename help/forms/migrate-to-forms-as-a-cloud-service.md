@@ -1,5 +1,5 @@
 ---
-title: Migrate from AEM 6.5 Forms to AEM Forms as a Cloud Service
+title: How can we migrate from AEM 6.5 Forms to AEM Forms as a Cloud Service?
 description: Getting Started with the Migration Journey to AEM as a Cloud Service | Adobe Experience Manager. Migrate from an [!DNL AEM Forms] (On-Premise and AMS environments) to [!DNL AEM Forms] as a Cloud Service environment. 
 Keywords: 6.5 forms to cloud service, 6.5 forms to cs, migrate 6.5 forms to CS, migrate 6.5 forms to cloud service, upgrade 6.5 forms to CS, move 6.5 forms to CS, upgrade AEM 6.5 to CS, AEM Forms 6.5 to Cloud Service, AEM form migration to cloud service, Migration Journey to AEM as a Cloud Service | Adobe Experience Manager.
 contentOwner: khsingh
@@ -165,7 +165,7 @@ When you migrate AEM Workflow models from AEM Forms 6.5 to Cloud Service, specif
 The migration utility helps you to migrate Adaptive Forms based on foundation components. In addition, Forms as a Cloud Service supports Adaptive Forms Core Components. So, you can:
 
 * [Create Core Component based standalone Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)
-* [Create Core component based Adaptive Form directly in an AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Create Core Component based Adaptive Form directly in an AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 To learn more about AEM Forms as a Cloud Service, you can refer:
 

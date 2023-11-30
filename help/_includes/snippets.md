@@ -13,3 +13,32 @@
 >[!NOTE]
 >
 >AEM currently does not support assigning groups to profiles. Users should be added individually instead.
+
+## WAF Config Limited Release {#waf-limited-release}
+
+[!BADGE WAF-DDOS protection will be available end of 2023.]{type=Caution tooltip="WAF-DDOS protection will be available end of 2023."}
+
+## See Also {#see-also}
+
+* [Create an AEM Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+* [Add an AEM Adaptive Form to AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Apply themes to an AEM Adaptive Form](/help/forms/using-themes-in-core-components.md)
+* [Add components to an AEM Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
+* [Use CAPTCHA in an AEM Adaptive Form](/help/forms/captcha-adaptive-forms-core-components.md)
+* [Generate PDF version (DoR) of an AEM Adaptive Form](/help/forms/generate-document-of-record-core-components.md)
+* [Translate an AEM Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Enable Adobe Analytics for an Adaptive Form to track form usage](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [Connect Adaptive Form to Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
+* [Connect Adaptive Form to Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [Connect Adaptive Form to Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
+* [Connect Adaptive Form to Microsoft Azure Blob Storage](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
+* [Connect Adaptive Form to Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Use Adobe Sign in an AEM Adaptive Form](/help/forms/working-with-adobe-sign.md)
+* [Add a new locale for an Adaptive Form](/help/forms/supporting-new-language-localization-core-components.md)
+* [Send Adaptive Form data to a database](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
+* [Send Adaptive Form data to a REST endpoint](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
+* [Send Adaptive Form data to AEM Workflow](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
+* [Use Forms Portal to list AEM Adaptive Forms on an AEM website](/help/forms/configure-forms-portal.md)
+
+
+

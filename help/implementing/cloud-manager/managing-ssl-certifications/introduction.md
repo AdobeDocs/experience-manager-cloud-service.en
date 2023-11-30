@@ -43,7 +43,7 @@ AEM as a Cloud Service only supports secure `https` sites.
 * Customers with multiple custom domains will not want to upload a certificate every time they add a domain.
 * Such customers benefit by getting one certificate with multiple domains.
 
-## Requirements {#requirements}
+## Certificate Requirements {#requirements}
 
 * AEM as a Cloud Service will only accept certificates that conform with OV (Organization Validation) or EV (Extended Validation) policy.
 * Any certificate must be a X.509 TLS certificate from a trusted certification authority (CA) with a matching 2048-bit RSA private key.
@@ -51,6 +51,30 @@ AEM as a Cloud Service only supports secure `https` sites.
 * Self-signed certificates are not accepted.
 
 OV and EV certificates provide users with extra, CA-validated information that can be used to decide if the owner of a website, sender of an email, or digital signatory of executable code or PDF documents is trustworthy. DV certificates do not allow such ownership verification.
+
+### Certificate Format {#certificate-format}
+
+SSL certificate files must be in PEM format to be installed with Cloud Manager. Common file extensions of the PEM format include `.pem,` .`crt`, `.cer`, and `.cert`. 
+
+The following `openssl` commands can be used to convert non-PEM certificates.
+
+* Convert PFX to PEM
+
+  ```shell
+  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+  ```
+
+* Convert P7B to PEM
+
+  ```shell
+  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+  ```
+
+* Convert DER to PEM
+
+  ```shell
+  openssl x509 -inform der -in certificate.cer -out certificate.pem
+  ```
 
 ## Limitations {#limitations}
 

@@ -1,5 +1,5 @@
 ---
-title: Manage metadata for AEM Forms
+title: How can we manage metadata for AEM Forms?
 description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 ---
@@ -134,7 +134,7 @@ The following is an extensive list of metadata properties supported in [!DNL AEM
      <li>HTML</li> 
      <li>PDF</li> 
      <li>Both</li> 
-    </ul> <p>This option is used for restricting the rendering format of the forms only on forms portal where they are visible to the end user.</p> </td> 
+    </ul> <p>This option is used for restricting the rendering format of the forms only on forms portal where they are visible to the user.</p> </td> 
   </tr> 
   <tr> 
    <td>Tags</td> 
@@ -301,3 +301,8 @@ A tool (Metadata Schema Editor) is provided to define the schema for the metadat
    You have successfully added a custom metadata property.
 
 All the Adaptive Forms in [!DNL AEM Forms] now contain this additional metadata property. You can edit it from the properties page.
+
+
+## See Also {#see-also}
+
+{{see-also}}

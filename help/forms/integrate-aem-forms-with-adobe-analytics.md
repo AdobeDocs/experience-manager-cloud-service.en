@@ -268,7 +268,7 @@ After configuring an adaptive form to send event data to [!DNL Adobe Analytics],
 
 1. Tap **[!UICONTROL Create Project]** and select **[!UICONTROL Blank project]**.
 
-1. Select the report suite name from the dropdown list at the top-right of the freeform.
+1. Select the report suite name from the drop-down list at the top-right of the freeform.
 
 1. Specify **Form Title** in the **[!UICONTROL Search dimension items]** text to view all form titles.
 
@@ -305,3 +305,7 @@ Perform the following steps to add AEM Forms and Adobe Analytics integration spe
 * Adobe Analytics can track form metrics only for authenticated users.
 
 -->
+
+>[!MORELIKETHIS]
+>
+>*[Enable Adobe Analytics to an Adaptive Form](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)

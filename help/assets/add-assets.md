@@ -169,7 +169,7 @@ To configure the Bulk Import tool, follow these steps:
 
 1. Specify a title for the bulk import configuration in the **[!UICONTROL Title]** field.
 
-1. Select the data source type from the **[!UICONTROL Import Source]** dropdown list. 
+1. Select the data source type from the **[!UICONTROL Import Source]** drop-down list. 
 
 1. Provide the values to create a connection with the data source. For example, if you select **Azure Blob Storage** as the data source, specify the values for Azure storage account, Azure blob container, and Azure access key.
 
@@ -380,7 +380,7 @@ Technical details of the upload APIs and protocol, and links to open-source SDK 
 
 * Direct binary upload is a new method to upload assets. It is supported by default by the product capabilities and clients, like [!DNL Experience Manager] user interface, [!DNL Adobe Asset Link], and [!DNL Experience Manager] desktop app. Any custom code that is customized or extended by customers technical teams must use the new upload APIs and protocols.
 
-* Adobe recommends adding not more than 1000 assets in each folder in [!DNL Experience Manager Assets]. While you can add more assets to a folder, it is possible that you experience performance issues such as slower navigation to such folders.
+* Adobe recommends adding not more than 1000 assets in each folder in [!DNL Experience Manager Assets]. If you try to do so, you may get an alert message saying, "This directory contains 1000+ items. Uploads and new folder creations may be delayed." While you can still add more assets to a folder, you may experience performance issues such as slower navigation to such folders.
 
 * When you select **[!UICONTROL Replace]** in the [!UICONTROL Name Conflict] dialog, the asset ID is regenerated for the new asset. This ID is different from the ID of the previous asset. If [Assets Insights](/help/assets/assets-insights.md) is enabled to track impressions or clicks with [!DNL Adobe Analytics], the regenerated asset ID invalidates the data-captured for the asset on [!DNL Analytics].
 

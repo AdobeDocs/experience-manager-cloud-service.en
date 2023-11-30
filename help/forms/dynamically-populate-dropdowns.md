@@ -33,7 +33,7 @@ Consider a scenario where you want to populate the **State** drop-down list base
    @Properties({
            @Property(name = "sling.servlet.resourceTypes", value = "/apps/populatedropdown"),
            @Property(name = "sling.servlet.methods", value = {"GET", "POST"}),
-           @Property(name = "service.description", value = "Populate states dropdown based on country value")
+           @Property(name = "service.description", value = "Populate states drop-down based on country value")
    })
    public class DropDownPopulator extends SlingAllMethodsServlet {
        private Logger logger = LoggerFactory.getLogger(DropDownPopulator.class);
@@ -166,3 +166,8 @@ Consider a scenario where you want to populate the **State** drop-down list base
 The Content package that contains a sample Adaptive Form (demo/AFdemo) with the above code implemented.
 
 [Get File](assets/dropdown-demo-content-1.0.1-snapshot.zip)
+
+
+>[!MORELIKETHIS]
+>
+>* [Prefill Adaptive Form fields](/help/forms/prepopulate-adaptive-form-fields.md)

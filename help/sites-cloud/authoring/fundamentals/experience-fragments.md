@@ -31,7 +31,7 @@ You can use Experience Fragments:
   Without Experience Fragments, the author would need to copy and paste that fragment. Creating and maintaining these copy/paste experiences is time-consuming and prone to user errors. 
   Experience Fragments eliminate the need for copy/paste.
 * To support the headless CMS use-case. 
-  Authors want to use AEM only for authoring but not for delivering to the customer. A third-party system/touchpoint would consume that experience and then deliver to the end user.
+  Authors want to use AEM only for authoring but not for delivering to the customer. A third-party system/touchpoint would consume that experience and then deliver to the user.
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ You can select one or more components to create a building block for recycling w
 
 ### Creating a Building Block {#creating-a-building-block}
 
-To create a new Building Block:
+To create a Building Block:
 
 1. In the Experience Fragment editor, select the components you want to re-use:
 

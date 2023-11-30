@@ -513,6 +513,54 @@ Often, these APIs are deprecated using the standard Java&trade; `@Deprecated` an
 
 However, there are cases where an API is deprecated in the context of Experience Manager but may not be deprecated in other contexts. This rule identifies this second class.
 
+### Do not use @Inject annotation with @Optional in Sling Models {#sonarqube-slingmodels-inject-optional}
+
+* **Key**: InjectAnnotationWithOptionalInjectionCheck
+* **Type**: Software quality
+* **Severity**: Minor
+* **Since**: Version 2023.11
+
+The Apache Sling project discourages the use of the `@Inject` annotation in the context of Sling Models, as it can lead to bad performance when combined with the `DefaultInjectionStrategy.OPTIONAL` (either at field or class level). Instead more specific injections (like the `@ValueMapValue` or `@OsgiInjector` annotations) should be used.
+
+Check the [Apache Sling documentation](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) for more information about the recommended annotations and why this recommendation was made in the first place.
+
+
+### Reuse instances of a HTTPClient {#sonarqube-reuse-httpclient}
+
+* **Key**: AEMSRE-870
+* **Type**: Software quality
+* **Severity**: Minor
+* **Since**: Version 2023.11
+
+AEM applications often reach out to other applications using the HTTP protocol, and the Apache HttpClient is an often used library to achieve this. But the creation of such an HttpClient object comes with some overhead, so these objects should be reused as much as possible. 
+
+This rule checks that such a HttpClient object is not private within a method, but global on a class level, so it can be reused. In this case the httpClient field should be set in the constructor of the class or the `activate()` method (if this class is an OSGi component/service). 
+
+Check the [Optimization Guide](https://hc.apache.org/httpclient-legacy/performance.html) of the HttpClient for some best practices regarding the use of the HttpClient.
+
+#### Non-compliant code {#non-compliant-code-14}
+
+```java
+public void doHttpCall() {
+  HttpClient httpclient = HttpClients.createDefault();
+  // do something with the httpclient
+}
+```
+
+#### Compliant code {#compliant-code-11}
+
+```java
+
+public class myClass {
+
+  HttpClient httpclient;
+
+  public void doHttpCall() {
+    // do something with the httpclient
+  }
+
+}
+```
 
 ## OakPAL content rules {#oakpal-rules}
 
@@ -986,7 +1034,7 @@ Cloud Service. See the document [Content Search and Indexing](/help/operations/i
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
 
-For custom indexes, both `includedPaths` and `queryPaths` should be configured with identical values. If one is specified, the other must match it. However, there’s a special case for indexes of `damAssetLucene`, including its custom versions. For these, you should only provide `includedPaths`.
+For custom indexes, both `includedPaths` and `queryPaths` should be configured with identical values. If one is specified, the other must match it. However, there's a special case for indexes of `damAssetLucene`, including its custom versions. For these, you should only provide `includedPaths`.
 
 ### Index node specifying nodeScopeIndex on generic node type should also specify includedPaths and queryPaths {#oakpal-full-text-on-generic-node-type}
 

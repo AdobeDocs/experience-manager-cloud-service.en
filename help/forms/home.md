@@ -22,7 +22,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] is a customer-centric s
 
 ## Digitize and streamline enrollment and onboarding experience 
 
-You can use the service to create and roll out interactive and engaging digital forms. For example, take an organization that is looking to digitize its customer enrollment journey. They have multiple data sources with existing customer data. They are looking to pre-populate forms, add e-sign their forms, and archive filled forms as PDF files. Besides, the organization has multiple print forms (PDF forms), they are also looking to convert all of their print forms to digital forms.
+You can use the service to create and roll out interactive and engaging digital forms. For example, take an organization that is looking to digitize its customer enrollment journey. They have multiple data sources with existing customer data. They are looking to pre-populate forms, add e-sign their forms, and archive filled forms as PDF files. Besides, the organization has multiple print forms (PDF forms), they are also looking to convert their print forms to digital forms.
 
 The organization can use [!DNL AEM Forms] as a Cloud Service to create digital forms, connect forms to existing data sources, integrate forms with [!DNL Adobe Sign] to add e-signatures to forms, and generate Document of Record (DoR) to archive submitted forms as PDF files. The organization can also use the service to convert their existing PDF forms to digital forms.
 
@@ -61,11 +61,10 @@ The service integrates with Adobe Analytics that lets you capture and track perf
 | Data Sources |Easily connect your forms and documents with external data sources to retrieve and send data: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=en">Connect to an RDBMS or Rest endpoint</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en">Connect to Microsoft&reg; Dynamics 365 or Salesforce cloud service</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=en">Connect to Microsoft&reg; Azure Blob Storage</a></li></ul>|
 
 
-## Related articles
-
-* [Onboard to a Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
-* [Setup a local development environment](/help/forms/setup-local-development-environment.md)
-* [Migrate from AEM 6.5 Forms to Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-
-
+>[!MORELIKETHIS]
+>
+>* [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+>* [Onboard to a Cloud Service environment](/help/forms/setup-forms-cloud-service.md)
+>* [Setup a local development environment](/help/forms/setup-local-development-environment.md)
+>* [Migrate from AEM 6.5 Forms to Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 

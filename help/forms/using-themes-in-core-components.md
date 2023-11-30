@@ -1,5 +1,5 @@
 ---
-title: How to create and use themes in Adaptive Forms?
+title: How can we create and use themes in Adaptive Forms?
 description: You can use themes to style and provide a visual identity to an Adaptive Form using core components. You can share a theme across any number of Adaptive Forms.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 ---
@@ -315,7 +315,7 @@ You require  a repository to deploy the theme. Log in to your [AEM Cloud Manager
 
 ##### 5.2. Push the changes to the repository {#committing-the-changes}
 
-Now, push the changes to the theme repository of your AEM Forms Cloud Service. . 
+Now, push the changes to the theme repository of your AEM Forms Cloud Service.
 
 1. Navigate to the root of the theme folder.  In this case, the theme folder name is `aem-forms-theme-canvas`. 
 1. Open the command prompt or terminal.
@@ -361,12 +361,12 @@ The theme is deployed using the [front-end pipeline.](https://experienceleague.a
 
    After the pipeline setup is complete, the call-to-action card is updated.
 
-1. Right-click on the created pipeline.
+1. Right-click the created pipeline.
 1. Click **[!UICONTROL Run]** .
     
     ![run-a-pipleine](/help/forms/assets/canvas-theme-run-pipeline.png)
 
-Once the build is complete, the theme becomes available at the author instance for the use. It appears under the **[!UICONTROL Style]** tab in the Adaptive Form creation wizard, while creating a new Adaptive Form. 
+Once the build is complete, the theme becomes available at the author instance for the use. It appears under the **[!UICONTROL Style]** tab in the Adaptive Form creation wizard, while creating an Adaptive Form. 
 
    ![custom theme available under style tab](/help/forms/assets/custom-theme-style-tab.png)
 
@@ -409,6 +409,8 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 
 **Ans:** When customizations are made at both the global level and component level, the customization at the component level takes priority.  
 
+<!--
+
 ## See next
 
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
@@ -417,7 +419,18 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 * [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
-## Related article {#related-article}
+>[!MORELIKETHIS]
+>
+>* [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
 
+-->
+
+
+## See Also {#see-also}
+
+{{see-also}}
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+* [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 * [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
-* [Create a standalone Core Components based Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)

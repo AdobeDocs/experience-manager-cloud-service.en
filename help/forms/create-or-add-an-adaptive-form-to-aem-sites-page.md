@@ -18,7 +18,7 @@ With AEM Forms, you can seamlessly add a form to your AEM Sites page. This allow
 
 You can use AEM Page Editor to quickly create and add multiple forms to your AEM Sites pages. Using AEM Page Editor allows content authors to create seamless data capture experiences within a Sites page using the power of adaptive forms components including dynamic behavior, validations, data integration, generate document of record, and business process automation. It also lets you use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager.
 
-AEM Forms Cloud Service provides Adaptive Form Container and Adaptive Forms – Embed components. You can use Adaptive Form Container to create a new form in an AEM Sites page or Experience Fragment, while Adaptive Forms – Embed component lets you add an existing Adaptive Form or create a new form using Adaptive Forms Editor. 
+AEM Forms Cloud Service provides Adaptive Form Container and Adaptive Forms – Embed components. You can use Adaptive Form Container to create a form in an AEM Sites page or Experience Fragment, while Adaptive Forms – Embed component lets you add an existing Adaptive Form or create a form using Adaptive Forms Editor. 
 
 ![An example of an Adaptive Form in an AEM Sites page](/help/forms/assets/adaptive-form-in-sites-page.png)
 
@@ -27,7 +27,7 @@ AEM Forms Cloud Service provides Adaptive Form Container and Adaptive Forms – 
 If you have created Adaptive Forms Foundation Component or plain HTML based forms for your Sites in the past, Adobe recommends that you use Adaptive Forms Core Components to create an Adaptive Form in AEM Sites page or Expereince Fragment. It lets you use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager, enhancing the overall form creation and management experience for Adaptive Forms. Let's explore some of these features:
 
 * **Versioning:** AEM Sites pages offer [robust versioning capabilities](/help/sites-cloud/authoring/features/page-versions.md), allowing you to track and manage different versions of your forms. This enables you to make changes and enhancements to forms while maintaining the ability to roll back to previous versions if needed. Versioning ensures a controlled and organized approach to form development and evolution.
-* **Targeting (Integration with Adobe Target):** With AEM Sites pages targeting capabilities, you can also [personalize the form experience for different audiences](/help/sites-cloud/integrating/integration-adobe-target-ims.md). By leveraging user segments and targeting criteria, you can tailor the form's content, design, or behavior to specific groups of users. This enables you to provide a personalized and relevant form experience, increasing engagement and conversion rates.
+* **Targeting (Integration with Adobe Target):** With AEM Sites pages targeting capabilities, you can also [personalize the form experience for different audiences](/help/sites-cloud/integrating/integration-adobe-target-ims.md). By using user segments and targeting criteria, you can tailor the form's content, design, or behavior to specific groups of users. This enables you to provide a personalized and relevant form experience, increasing engagement and conversion rates.
 * **Translation:** AEM Sites [seamless integration with translation services](/help/sites-cloud/administering/translation/overview.md), allowing you to translate forms into multiple languages easily. This feature simplifies the localization process, ensuring that your forms are accessible to a global audience. You can manage translations efficiently within AEM translation projects, reducing time and effort required for multilingual form support. See considerations section for more information on translation.  
 * **Multi-site Management and Live Copy:** AEM Sites provide robust [Multi-site Management and Live Copy capabilities](/help/sites-cloud/administering/msm/overview.md), enabling you to create and manage multiple websites within a single environment. This feature now lets you reuse forms across different sites, ensuring consistency and reducing duplication efforts. With centralized control and management, you can efficiently maintain and update forms across multiple websites.
 * **Themes:** AEM Sites pages provide a framework for designing and maintaining consistent visual styles across multiple web pages. These define colors, fonts, style sheets, and other visual elements that contribute to the overall look and feel of the website. [You can use the themes designed for an AEM Sites page for an Adaptive Form, saving time and effort](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes). 
@@ -75,46 +75,46 @@ Ensure that the [Adaptive Forms Core Components are enabled for your AEM Forms a
 
 To enable complete functionality of the Adaptive Forms Container component, add the Customheaderlibs and Customfooterlibs client libraries to your AEM Sites page using the deployment pipeline. To add the libraries:
 
-  1. Access and clone your [AEM Cloud Service Git Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
-  1. Open the AEM Cloud Service Git Repository folder in a plan text editor. For example, Microsoft Visual Code.
-  1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` file and add the following code to the file:
+1. Access and clone your [AEM Cloud Service Git Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
+1. Open the AEM Cloud Service Git Repository folder in a plan text editor. For example, Microsoft Visual Code.
+1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` file and add the following code to the file:
 
-      ```
-          //Customheaderlibs.html
+    ```
+        //Customheaderlibs.html
           
-          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-          <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
-          </sly> 
-      ```
+        <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+        <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+        </sly> 
+    ```
 
-  1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` file and add the following code to the file:
+1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` file and add the following code to the file:
 
-      ```
-          //customfooterlibs.html
-          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-          <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
-          </sly> 
-      ```
+    ```
+        //customfooterlibs.html
+        <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+        <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+        </sly> 
+    ```
 
-  1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` file and add the following code to the file:
+1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` file and add the following code to the file:
 
-      ```
-          //Customheaderlibs.html
-          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-          <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
-          </sly> 
-      ```
+    ```
+        //Customheaderlibs.html
+        <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+        <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+        </sly> 
+    ```
 
-  1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` file and add the following code to the file:
+1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` file and add the following code to the file:
 
-      ```
-          //customfooterlibs.html
-          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-          <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
-          </sly> 
-      ```
+    ```
+        //customfooterlibs.html
+        <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+        <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+        </sly> 
+    ```
 
-  1. [Run the deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) to deploy the client libraries to your AEM as a Cloud Service environment. 
+1. [Run the deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) to deploy the client libraries to your AEM as a Cloud Service environment. 
 
 +++ 
 
@@ -122,10 +122,10 @@ To enable complete functionality of the Adaptive Forms Container component, add 
 
 To enable [!UICONTROL Adaptive Forms Container] component in template's policy, perform the following steps:
 
-  1. Open the AEM Sites page or Experience Fragment for editing. To open the page for editing, select the page, and click Edit.
-  1. Open the template of your Sites or Experience Fragment page. To open the template, go to the [!UICONTROL Page Information] ![Page Information](/help/forms/assets/Smock_Properties_18_N.svg) > [!UICONTROL Edit Template]. It opens the corresponding template in template editor.
-  1. In the Structure view, click the **[!UICONTROL Policy]** ![Policy](/help/forms/assets/Smock_FeedManagement_18_N.svg) icon in the menu bar. In the **[!UICONTROL Allowed Components]** list and select the **[!UICONTROL Adaptive Forms Container]**  checkbox under the **[AEM Archetype Project Name] - Adaptive Form**.
-  1. Click **[!UICONTROL Done]**.
+1. Open the AEM Sites page or Experience Fragment for editing. To open the page for editing, select the page, and click Edit.
+1. Open the template of your Sites or Experience Fragment page. To open the template, go to the [!UICONTROL Page Information] ![Page Information](/help/forms/assets/Smock_Properties_18_N.svg) > [!UICONTROL Edit Template]. It opens the corresponding template in template editor.
+1. In the Structure view, click the **[!UICONTROL Policy]** ![Policy](/help/forms/assets/Smock_FeedManagement_18_N.svg) icon in the menu bar. In the **[!UICONTROL Allowed Components]** list and select the **[!UICONTROL Adaptive Forms Container]**  checkbox under the **[AEM Archetype Project Name] - Adaptive Form**.
+1. Click **[!UICONTROL Done]**.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
@@ -181,8 +181,8 @@ To convert an Adaptive Form in AEM Sites page to an Experience Fragment:
     A dialog box to convert the Adaptive Form container to a new Experience Fragment or add to an existing Experience Fragment appears 
 1. On the Convert to Experience Fragment variation dialog box, set values for the following options:
 
-    * **Action:** Select to create a new Experience Fragment or Add to an existing Experience Fragment.
-    * **Parent path:** Specify path of the folder to host the Experience Fragment in. The option is available only for creating a new Experience Fragment. 
+    * **Action:** Select to create an Experience Fragment or Add to an existing Experience Fragment.
+    * **Parent path:** Specify path of the folder to host the Experience Fragment in. The option is available only for creating an Experience Fragment. 
     * **Template:** Specify path of the Experience Fragment template. If you do not have an Experience Fragment template, [create it](/help/implementing/developing/extending/experience-fragments.md). The option is available only for adding Adaptive Form to an existing Experience Fragment. 
     * **Fragment title:** Specify title of the Experience Fragment. The title uniquely identifies an Experience Fragment 
 
@@ -249,13 +249,20 @@ On submission of a form, you can redirect the user to another webpage or a messa
     * To configure a Redirect URL, for on Submit option, select the **[!UICONTROL Redirect to URL]** option, and browse and select an AEM Sites page, or provide URL of an external page.  
     * To configure a custom or thank you message, for on Submit option, select the **[!UICONTROL Show Message]** option, and provide a message in the **[!UICONTROL Message content]** box. It is a rich text box, you can use the full screen option to view all the available rich text items. 
 
+
+<!--
 ## See next
 
 * [Create style or themes for your forms](using-themes-in-core-components.md)
 * [Add dynamic behavior to forms using the rule editor](rule-editor.md)
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
 
+-->
 
-## Related article {#related-article}
+## See Also {#see-also}
 
-* [Create a standalone Core Components based Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
+{{see-also}}
+* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+

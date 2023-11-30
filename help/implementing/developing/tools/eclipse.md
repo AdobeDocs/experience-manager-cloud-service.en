@@ -28,7 +28,7 @@ Before using the AEM Developer Tools, you need to:
 
 >[!NOTE]
 >
->On macOS, you need to right-click on **Eclipse.app**, and then select **Show Package Contents** to find your `eclipse.ini`**.**
+>On macOS, you need to right-click **Eclipse.app**, and then select **Show Package Contents** to find your `eclipse.ini`**.**
 
 ## How to Install the AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -58,7 +58,7 @@ In Eclipse, a Perspective determines the actions and views available within a wi
 
 _Experience Manager Development Tools for Eclipse_ provide an AEM Perspective that offers you full control over your AEM Projects and instances. To open the AEM Perspective:
 
-1. From the Eclipse menu bar, select **Window** -&gt; **Perspective** -&gt; **Open Perspective** -&gt; **Other**.
+1. From the Eclipse menu bar, select **Window** &gt; **Perspective** &gt; **Open Perspective** &gt; **Other**.
 1. Select **AEM** in the dialog and click **Open**.
 
 ![The AEM perspective in Eclipse](assets/eclipse-aem-perspective.png)
@@ -77,7 +77,7 @@ Follow these steps to create the sample project:
 
    >[!NOTE]
    >
-   >This step might take a moment since m2eclipse needs to scan the archetype catalogs.
+   >This step might take a moment because m2eclipse must scan the archetype catalogs.
 
 1. Choose `com.adobe.granite.archetypes : sample-project-archetype : <highest-number>` from the menu, then click **Next**.
 
@@ -126,16 +126,16 @@ You can use the **New Project** feature to create the right structure for you:
 1. Replace the content of your `PROJECT.ui.apps` project with the `apps` and `etc` folders of your package:
 
    1. In the Project Explorer panel, unfold `PROJECT.ui.apps` &gt; `src` &gt; `main` &gt; `content` &gt; `jcr_root` &gt; `apps`.
-   1. Right-click on the `apps` folder and choose **Show In** &gt; **System Explorer**.
+   1. Right-click the `apps` folder and choose **Show In** &gt; **System Explorer**.
    1. Delete the `apps` and `etc` folders that you should now see and place here the `apps` and `etc` folders of your content package.
-   1. In Eclipse, right-click on the `PROJECT.ui.apps` project and choose **Refresh**.
+   1. In Eclipse, right-click the `PROJECT.ui.apps` project and choose **Refresh**.
 
 1. Then do the same for the `PROJECT.ui.content` and replace its content folder with the one of your packages:
 
    1. In the Project Explorer panel, unfold `PROJECT.ui.content` &gt; `src` &gt; `main` &gt; `content` &gt; `jcr_root` &gt; `content`.
-   1. Right-click on the deeper content folder and choose **Show In** -&gt; **System Explorer**.
+   1. Right-click the deeper content folder and choose **Show In** &gt; **System Explorer**.
    1. Delete the content folder that you should now see and place here the content folder of your content package.
-   1. In Eclipse, right-click on the `PROJECT.ui.content` project and choose **Refresh**.
+   1. In Eclipse, right-click the `PROJECT.ui.content` project and choose **Refresh**.
 
 1. Now you have to update the `filter.xml` files of these two projects to correspond to the content of your content package. For that, open the `META-INF/vault/filter.xml` file of your content package in a separate text/code editor.
 
@@ -184,11 +184,11 @@ You can use the **New Project** feature to create the right structure for you:
 1. Make sure to save all your changes. You can now synchronize that new content to your AEM instance.
 
 1. In the Servers panel, make sure that your connection is started, and if not start it.
-1. Click on the **Clean and Publish** icon.
+1. Click the **Clean and Publish** icon.
 
 Once done, you should have your package running on your instance, and on save, any change automatically gets synchronized to the instance.
 
-If you wish to re-build a package out of your project, right-click on the `PROJECT.ui.apps` or `PROJECT.ui.content` and choose **Run As** -&gt; **Maven Install**.
+If you want to re-build a package out of your project, right-click the `PROJECT.ui.apps` or `PROJECT.ui.content` and choose **Run As** &gt; **Maven Install**.
 
 You now have a target folder created with your package inside (called, for example `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
@@ -200,7 +200,7 @@ To resolve invalid dependencies and project definition proceed as follows:
 
 1. Select all created projects.
 1. Right-click.
-1. In the context menu, select **Maven** -&gt; **Update Projects**.
+1. In the context menu, select **Maven** &gt; **Update Projects**.
 1. Check **Force Updates of Snapshot/Releases**.
 1. Click **OK**.
 

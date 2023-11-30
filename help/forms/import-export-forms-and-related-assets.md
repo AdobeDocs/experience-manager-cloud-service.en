@@ -26,10 +26,10 @@ To download Forms & Documents assets:
 1. Select the forms assets and tap the **[!UICONTROL Download]** icon.
 1. In the Download Asset(s), choose one of the following options, and tap **[!UICONTROL Download]**.
 
-    * **Download as CRX Package:** Use the option to download and move all selected asset(s) and related dependencies from an [!DNL AEM Forms] instance to another. It downloads all assets and folders as crx package. Any form asset(s) including the forms authored in AEM (Adaptive Forms and Adaptive Form Fragments), PDF documents, and resources (XSDs, XFS, images) can be downloaded as package from [!DNL AEM Forms] UI.
+    * **Download as CRX Package:** Use the option to download and move all selected assets and related dependencies from an [!DNL AEM Forms] instance to another. It downloads all assets and folders as crx package. Any form assets including the forms authored in AEM (Adaptive Forms and Adaptive Form Fragments), PDF documents, and resources (XSDs, XFS, images) can be downloaded as package from [!DNL AEM Forms] UI.
       The advantage of downloading assets as package is that it also downloads assets that have been used by the asset selected to download. For example, If you have an Adaptive Form which uses a form template, XSD, and an image. When you select this Adaptive Form and download it as package, the downloaded package also contains the form template, XSD, and the image. All the metadata properties (including custom properties) associated with the asset are also downloaded.
 
-    * **Download asset(s) as binary files:** Use the option to download only form templates (XDP), PDF forms (PDF), document (PDF), and resources (images, schemas, stylesheets). You can edit these assets with external applications. It downloads the forms assets that have binaries, such as XSDs, XDPs, images, PDFs, and XDPs as a .zip file.
+    * **Download assets as binary files:** Use the option to download only form templates (XDP), PDF forms (PDF), document (PDF), and resources (images, schemas, stylesheets). You can edit these assets with external applications. It downloads the forms assets that have binaries, such as XSDs, XDPs, images, PDFs, and XDPs as a .zip file.
       You cannot download Adaptive Forms, Adaptive Form Fragments, and themes, with **[!UICONTROL Download asset(s) as binary files]** option. To download these assets, you should use **[!UICONTROL Download as CRX Package]** option.
 
    The selected assets are downloaded as an archive (.zip file).
@@ -194,7 +194,7 @@ To create a folder, complete the following steps:
 
    If a folder exists with the name specified, the submission fails with an error. You can view the error message by hovering over the error ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) icon that appears beside the name field.
 
-   You can tap the newly-created folder to go inside the folder and create assets or folders within the folder. Further, you can select a folder and choose to queue it for download, delete it, or edit its name.
+   You can tap the created folder to go inside the folder and create assets or folders within the folder. Further, you can select a folder and choose to queue it for download, delete it, or edit its name.
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
 
@@ -208,7 +208,7 @@ Complete the following steps to create copies of assets and letters:
 
    If you are copying and pasting the assets/letters at the same place, a suffix "-CopyXX" gets added to the existing name of the asset/letter. If no title existed for the copied asset/letter, the auto generated title field remains blank.
 
-1. If required, edit the Title and Name with which you want to save the copy of the asset/letter.
+1. If necessary, edit the Title and Name with which you want to save the copy of the asset/letter.
 1. Tap Paste. New copies of the copied assets are created.
 
 ## Search {#search-forms}
@@ -236,3 +236,8 @@ The side panel also lets you save your search settings with names of your choice
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).
 
 -->
+
+>[!MORELIKETHIS]
+>
+>* [Import export form templates](/help/forms/import-export-forms-templates.md)
+>* [Use themes in Adaptive Form Core Components ](/help/forms/using-themes-in-core-components.md)

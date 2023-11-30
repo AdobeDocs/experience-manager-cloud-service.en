@@ -1,5 +1,5 @@
 ---
-title: Configure Adaptive Forms cache
+title: What is adaptive forms cache? and how to cache an AEM adaptive form?
 description: Adaptive Forms cache is designed for Adaptive Forms and documents with the objective to reduce the time required to render an Adaptive Form or document.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
@@ -177,3 +177,9 @@ When the Adaptive Form URL does not have any localization information, and **[!U
    </VirtualHost>
 
 ```
+
+
+
+>[!MORELIKETHIS]
+>
+>* [Troubleshoot caching-related issues for AEM Forms as a Cloud Service](/help/forms/troubleshooting-caching-performance.md)

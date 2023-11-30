@@ -107,13 +107,20 @@ Forms as a Cloud Service provide Document Generation and Document Manipulation R
 
 * You can use Communications APIs to produce personalized documents on-demand or in batches on Forms as a Cloud Service. You can use an AEM 6.5 Forms environment for Interactive Communications and Agent UI use-cases.
 
-## See Next
+## See Also
 
 * [Migrate from an AEM Forms (On-Premise and AMS environments) to AEM Forms as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [Add or create Adaptive Forms to AEM Sites Page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Create an Adaptive Form (Core Components)](/help/forms/creating-adaptive-form-core-components.md)
+* [Introduction to AEM Forms as a Cloud Service](/help/forms/home.md)
+* [Set up a local development environment and initial development project](/help/forms/setup-local-development-environment.md)
+
+
+<!--
 
 ## Additional Information
 
 * [Introduction to AEM Forms as a Cloud Service](/help/forms/home.md)
 * [Set up a local development environment and initial development project](/help/forms/setup-local-development-environment.md)
+
+-->

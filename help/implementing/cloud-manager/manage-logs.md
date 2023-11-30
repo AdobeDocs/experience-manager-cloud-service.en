@@ -12,7 +12,7 @@ You can access a list of available log files for the selected environment using 
 
 ## Downloading Logs {#download-logs}
 
-To download logs, do the following.
+To download logs, do the following:
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
@@ -26,11 +26,17 @@ To download logs, do the following.
 
    ![Download Logs dialog](assets/download-preview.png)
 
-1. Once you select your service, click the download icon next to the log you wish to retrieve.
+   In case [Additional Publish Regions](/help/operations/additional-publish-regions.md) are enabled for your environment, you will be able to select each region and download its logs separately, as shown below:
+
+   ![Download Logs for additional publish regions](assets/download-publish-region-logs.png)
+
+1. Once you select your service, click the download icon next to the log you want to retrieve.
 
 You can also access your logs from the **Environments** page.
 
 ![Logs from the Environments screen](assets/download-logs.png)
+
+
 
 ## Logs Via API {#logs-through-api}
 
@@ -77,3 +83,8 @@ See the following additional resources to learn more about the Cloud Manager API
 
 * [Cloud Manager API Documentation](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+
+See the following additional resources to learn more about log files in AEM as a Cloud Service:
+
+* [Cloud 5 AEM Log Files](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
+* [Debugging AEM as a Cloud Service using logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html)

@@ -83,7 +83,7 @@ You can use one of the following methods to create repeatable panels:
 
        >[!NOTE]
        >
-       >When all of the instances of a panel are removed from an Adaptive Form, to add an instance of the removed panel, use the _panelName syntax to capture the instance manager of the panel and the use the addInstance API of the instance manager to add the deleted instance. For example, _panelName.addInstance(). It adds an instance of the removed panel.
+       >When all instances of a panel are removed from an Adaptive Form, to add an instance of the removed panel, use the _panelName syntax to capture the instance manager of the panel and the use the addInstance API of the instance manager to add the deleted instance. For example, _panelName.addInstance(). It adds an instance of the removed panel.
 
 ## Using the accordion layout for the parent panel &nbsp; {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
@@ -163,3 +163,8 @@ In the following code, the `SampleType`panel uses the minOccours & maxOccurs pro
 >[!NOTE]
 >
 >For non-accordion layout, use Adaptive Form button components to add and remove instances.
+
+
+>[!MORELIKETHIS]
+>
+>* [Create forms with repeatable sections in Adaptive Form Core Components](/help/forms/create-forms-repeatable-sections.md)

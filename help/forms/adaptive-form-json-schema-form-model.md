@@ -1,5 +1,5 @@
 ---
-title: Design JSON Schema for an Adaptive Form
+title: How to design JSON Schema for an Adaptive Form?
 description: Learn to create a JSON schema for an Adaptive Form and create an Adaptive Form based on the schema to produce schema complaint data.
 feature: Adaptive Forms
 role: User, Developer
@@ -766,3 +766,15 @@ You have two options:
 **What should be the extension of the JSON schema file?**
 
 The extension of JSON Schema file must be .schema.json. For example, &lt;filename&gt;.schema.json.
+
+## See Also {#see-also}
+
+{{see-also}}
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Design XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
+
+-->

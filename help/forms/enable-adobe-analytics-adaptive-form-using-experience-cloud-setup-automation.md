@@ -1,5 +1,5 @@
 ---
-title: Enable Adobe Analytics for an Adaptive Form
+title: How to enable Adobe Analytics for an Adaptive Form?
 description: Experience Cloud Setup Automation helps connect Adobe Analytics to an Adaptive Form to track insights about visitor interactions and engagement.
 keywords: Enable Adobe Analytics for an Adaptive Form using Experience Cloud Setup Automation, Enable Adobe Analytics in Forms, Adobe Analytics in Adaptive Forms, Forms analytics integration, Forms and Adobe Analytics
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
@@ -155,13 +155,12 @@ To connect Adaptive Form in an AEM Sites page to enable Analytics, include the `
 
 1. Add a `customfooterlibs.html` file.
 
-        ```
-        // customheaderlibs.html
-        <sly data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page">
-        <sly data-sly-test="${page.data && page.dataLayerClientlibIncluded}" data-sly-call="${clientlib.js @ categories='core.forms.components.commons.v1.datalayer', async=true}"></sly>
-        </sly>
-
-        ```
+   ```
+   // customheaderlibs.html
+   <sly data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page">
+   <sly data-sly-test="${page.data && page.dataLayerClientlibIncluded}" data-sly-call="${clientlib.js @ categories='core.forms.components.commons.v1.datalayer', async=true}"></sly>
+   </sly>
+   ```
 
     The `customfooterlibs.html` is used for JavaScript.
 

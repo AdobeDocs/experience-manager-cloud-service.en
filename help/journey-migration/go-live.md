@@ -10,7 +10,7 @@ exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 >title="Go-Live Preparation"
 >abstract="To ensure a smooth and successful go-live on AEM as a Cloud Service, you should plan for code and content freeze periods, testing iterations, content top-ups, performance tests, security tests and more."
 
-In this part of the journey, you will learn how to plan and perform the migration once both the code and the content are ready to be moved over to AEM as a Cloud Service. Additionally, you will learn what are the best practices and known limitations when performing the migration.
+In this part of the journey, you learn how to plan and perform the migration once both the code and the content are ready to be moved over to AEM as a Cloud Service. Also, you learn what are the best practices and known limitations when performing the migration.
 
 ## The Story So Far {#story-so-far}
 
@@ -55,7 +55,7 @@ As mentioned previously, you will have to schedule a code and content freeze per
 
 To answer the first question, you should consider the time it has taken to perform trial runs in non-production environments. To answer the second question, you need close collaboration between the team who is adding new features and the team refactoring the code. The goal is to make sure all the code that is added to the existing deployment is also added, tested, and deployed to the cloud services branch. Generally, it means that the amount of code freeze is lower. 
 
-Additionally, you need to plan for a content freeze when the final content top-up is scheduled.
+Also, you need to plan for a content freeze when the final content top-up is scheduled.
 
 ## Best Practices {#best-practices}
 
@@ -132,7 +132,7 @@ Review this list of activities to ensure that you perform a smooth and successfu
 * Configure CDN, SSL and DNS.
   * If you are using your own CDN, enter a support ticket to configure appropriate routing.
     * See the section [Customer CDN points to AEM Managed CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) in the CDN documentation for details.
-    * You will need to configure SSL and DNS according to the documentation of your CDN vendor.
+    * Configure SSL and DNS according to the documentation of your CDN vendor.
   * If you are not using an additional CDN, manage SSL and DNS as per the following documentation:
     * Managing SSL Certificates
       * [Introduction to Managing SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)

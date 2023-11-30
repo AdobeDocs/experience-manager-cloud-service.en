@@ -15,7 +15,7 @@ Use the **View and Update** menu to view the details of any of your custom domai
 
 1. Navigate to the **Environments** screen from the **Overview** page.
 
-1. Identify the row of the custom domain name you wish to view or update.
+1. Identify the row of the custom domain name you want to view or update.
 
 1. Click the ellipsis button at the far right end of the row.
 
@@ -41,7 +41,7 @@ A user with the **Business Owner** or **Deployment Manager** role can use Cloud 
 
 1. Navigate to the **Domain Settings** page from the **Environments** screen.
 
-1. Identify the row of the custom domain name you wish to delete.
+1. Identify the row of the custom domain name you want to delete.
 
 1. Click the ellipsis button at the far right end of the row.
 
@@ -56,7 +56,7 @@ A user with the **Business Owner** or **Deployment Manager** role can use Cloud 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 1. Navigate to the **Environments** screen from the **Overview** page.
 1. From the **Environments** page, navigate to details screen of the environment of interest.
-1. From the domain names table, identify the row of the custom domain name you wish to delete.
+1. From the domain names table, identify the row of the custom domain name you want to delete.
 1. Click the ellipsis button at the far right end of the row.
 1. Select **Delete**.
 1. Confirm your submission.

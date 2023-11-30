@@ -73,9 +73,9 @@ AEM as a Cloud Service runmodes are well defined based on the environment type a
 OSGi configuration values specified by runmode can be verified by:
 
 1. Opening the AEM as a Cloud Services environment's [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
-1. Selecting the service tier(s) to inspect, using the __Pod__ dropdown
+1. Selecting the service tier(s) to inspect, using the __Pod__ drop-down list
 1. Selecting the __Status__ tab
-1. Selecting __Configurations__ from the __Status Dump__ dropdown
+1. Selecting __Configurations__ from the __Status Dump__ drop-down list
 1. Selecting the __Get Status__ button
 
 The resulting view displays all OSGi component configurations for the selected tier(s) with their applicable OSGi configuration values. These values can be cross-referenced with the OSGi configuration values in the AEM project's source code under `/apps/example/osgiconfig/config.<runmode(s)>`.
@@ -151,7 +151,7 @@ Whenever defining an OSGi configuration value, start with inline values, and onl
 Only use environment-specific configurations (`$[env:ENV_VAR_NAME]`) for non-secret configuration values when the values vary for the preview tier or vary across development environments. This includes local development instances and any Adobe Experience Manager as a Cloud Service development environments. Other than for setting unique values for the preview tier, avoid using non-secret environment-specific configurations for Adobe Experience Manager as a Cloud Service Stage or Production environments.
 
 * Only use non-secret environment-specific configurations for configuration values that differ between publish and preview tier, or for values that differ between development environments, including local development instances.
-* Aside from the scenario when the preview tier needs to vary from the publish tier, use the standard inline values in the OSGi configurations for Stage and Production non-secret values. In relation, it is not recommended to use environment-specific configurations to facilitate making configuration changes at runtime to Stage and Production environments; these changes should be introduced via source code management.
+* Aside from the scenario when the preview tier must vary from the publish tier, use the standard inline values in the OSGi configurations for Stage and Production non-secret values. In relation, it is not recommended to use environment-specific configurations to facilitate making configuration changes at runtime to Stage and Production environments; these changes should be introduced via source code management.
 
 ### When to use secret environment-specific configuration values {#when-to-use-secret-environment-specific-configuration-values}
 
@@ -588,7 +588,7 @@ Up to 200 variables per environment can be declared.
 
 Because the secret and environment-specific configuration values live outside of Git, and therefore, are not part of the formal Adobe Experience Manager as a Cloud Service deployment mechanisms, the customer should manage, govern, and integrate into the Adobe Experience Manager as a Cloud Service deployment process.
 
-As mentioned above, calling the API deploys the new variables and values to Cloud environments, similar to a typical customer code deployment pipeline. The author and publish services are restarted and reference the new values, typically taking a few minutes. Note that the quality gates and tests that are executed by Cloud Manager during a regular code deployment are not performed during this process.
+As mentioned above, calling the API deploys the new variables and values to Cloud environments, similar to a typical customer code deployment pipeline. The author and publish services are restarted and reference the new values, typically taking a few minutes. The quality gates and tests that are run by Cloud Manager during a regular code deployment are not performed during this process.
 
 Typically, customers would call the API to set environment variables before deploying code that relies on them in Cloud Manager. In some situations, one might want to modify an existing variable after code has already been deployed. 
 

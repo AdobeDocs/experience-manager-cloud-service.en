@@ -56,7 +56,7 @@ The following release (2020.12.0) will be on December 17, 2020
   * Users can navigate the Email link dialog using the `Tab` key.
   * The workflow to create video encoding profiles is more user-friendly given the screen reader enhancement.
   * When navigating using `Tab` key, the focus moves to the appropriate user interface elements in the workflow to create an interactive video.
-  * The Publish page, Edit Asset page, Edit Smart Crops page, and Image Set Editor page are improved to comply with web standards. Assistive technology (AT) users can now navigate these pages easily and take actions such as cropping images.
+  * The Publish page, Edit Asset page, Edit Smart Crops page, and Image Set Editor page are improved to comply with web standards. Assistive technology (AT) users can now navigate these pages easily and act on them such as cropping images.
   * Viewers are improved to let users navigate using a keyboard.
   * The keyboard and screen reader users can use the crop functionality.
   * The keyboard users can better manage the hotspots.

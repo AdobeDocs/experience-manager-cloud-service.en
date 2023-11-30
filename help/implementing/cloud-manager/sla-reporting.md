@@ -16,7 +16,7 @@ SLA reporting data is available for every production program via the **Reports**
 
 1. Navigate to the **Reports** tab from the **Overview** page.
 
-1. Click on the year desired to see the SLA data graphed.
+1. Click the year desired to see the SLA data graphed.
 
 ![SLA graph example](assets/sla-reporting-1.png)
 
@@ -26,7 +26,7 @@ Roll your cursor over a data point to show the specific values for that point.
 
 ## SLA Metrics {#sla-metrics}
 
-The graph of the selected year includes a number of data sets.
+The graph of the selected year includes several data sets.
 
 * **Publish Tier Contract** - This is the SLA defined in your contract with Adobe for the publish tier.
 

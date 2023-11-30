@@ -384,3 +384,7 @@ Perform the following steps to create a custom Submit Action that saves the data
    Select the action in the Adaptive Form. The action sends an email and stores the data. 
 
 -->
+
+>[!MORELIKETHIS]
+>
+>* [Configure a Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)

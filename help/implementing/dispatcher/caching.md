@@ -85,7 +85,7 @@ This method is useful, for example, when your business logic requires fine-tunin
 
 ### Images and any content large enough to be stored in blob storage {#images}
 
-The default behavior for programs created after mid-May 2022 (specifically, for program ids that are higher than 65000) is to cache by default, while also respecting the request's authentication context. Older programs (program ids equal or lower than 65000) do not cache blob content by default.
+The default behavior for programs created after mid-May 2022 (specifically, for program ids that are higher than 65000) is to cache by default,while also respecting the request's authentication context. Older programs (program ids equal or lower than 65000) do not cache blob content by default.
 
 In both cases, the caching headers can be overridden on a finer grained level at the Apache/Dispatcher layer by using the Apache `mod_headers` directives, for example:
 
@@ -98,6 +98,35 @@ In both cases, the caching headers can be overridden on a finer grained level at
    ```
 
 When modifying the caching headers at the Dispatcher layer, be cautious not to cache too widely. See the discussion in the HTML/text section [above](#html-text). Also, make sure that assets that are meant to be kept private (rather than cached) are not part of the `LocationMatch` directive filters.
+
+JCR resources (bigger than 16KB) that are stored in blob store are typically served as 302 redirects by AEM. These redirects are intercepted and followed by CDN and the content is delivered directly from the blob store. Only a limited set of headers can be customised on these responses. For example, to customise `Content-Disposition` you should use the dispatcher directives as follows:
+
+```
+<LocationMatch "\.(?i:pdf)$">
+  ForceType application/pdf
+  Header set Content-Disposition inline
+  </LocationMatch>
+
+```
+
+The list of headers that can be be customised on blob responses are:
+
+```
+content-security-policy
+x-frame-options
+x-xss-protection
+x-content-type-options
+x-robots-tag
+access-control-allow-origin
+content-disposition
+permissions-policy
+referrer-policy
+x-vhost
+content-disposition
+cache-control
+vary
+
+```
 
 #### New default caching behavior {#new-caching-behavior}
 
@@ -204,13 +233,13 @@ When a HEAD request is received at the Adobe CDN for a resource that is **not** 
 
 Website URLs frequently include marketing campaign parameters that are used to track a campaign's success. 
 
-For environments created in October 2023 or later, in order to better cache requests, the CDN will remove common marketing related query parameters, specifically those matching the following regex pattern:
+For environments created in October 2023 or later, to better cache requests, the CDN will remove common marketing related query parameters, specifically those matching the following regex pattern:
  
 ```
 ^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
 ```
  
-Please submit a support ticket if you want this behavior to be disabled.
+Submit a support ticket if you want this behavior to be disabled.
 
 For environments created before October 2023, it is recommended to configure the Dispatcher configuration's `ignoreUrlParams` property as [documented here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
 

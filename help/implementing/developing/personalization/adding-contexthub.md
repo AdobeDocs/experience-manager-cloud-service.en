@@ -28,7 +28,7 @@ Use ContextHub stores to persist context data. ContextHub provides the following
 * [JSONPStore](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PersistedJSONPStore](contexthub-api.md#contexthub-store-persistedstore)
 
-All store types are extensions of the [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) class. For information about creating a new store type, see [Creating Custom Stores](extending-contexthub.md#creating-custom-store-candidates). For information about sample store types, see [Sample ContextHub Store Candidates](sample-stores.md).
+All store types are extensions of the [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) class. For information about creating a store type, see [Creating Custom Stores](extending-contexthub.md#creating-custom-store-candidates). For information about sample store types, see [Sample ContextHub Store Candidates](sample-stores.md).
 
 ### Persistence Modes {#persistence-modes}
 
@@ -79,7 +79,7 @@ The tree structure defines data items in the store as key/value pairs. In the ab
 
 ContextHub provides the [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) class for manipulating JavaScript objects. Use the functions of this class for manipulating JavaScript objects before you add them to a store, or after you obtain them from a store.
 
-Additionally, the [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) class provides functions for serializing objects to stings, and deserializing strings to objects. Use this class for handling JSON data to support browsers that do not natively include the `JSON.parse` and `JSON.stringify` functions.
+Also, the [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) class provides functions for serializing objects to stings, and deserializing strings to objects. Use this class for handling JSON data to support browsers that do not natively include the `JSON.parse` and `JSON.stringify` functions.
 
 ## Interacting with ContextHub Stores {#interacting-with-contexthub-stores}
 
@@ -137,7 +137,7 @@ The rules that are used to resolve these segments are summarized as follows:
 
 ## Debugging ContextHub {#debugging-contexthub}
 
-There are a number of options for debugging ContextHub including generating logs. See [Configuring ContextHub for more information.](configuring-contexthub.md#logging-debug-messages-for-contexthub)
+There are several options for debugging ContextHub including generating logs. See [Configuring ContextHub for more information.](configuring-contexthub.md#logging-debug-messages-for-contexthub)
 
 ## See an Overview of the ContextHub Framework {#see-an-overview-of-the-contexthub-framework}
 
