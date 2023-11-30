@@ -133,3 +133,9 @@ You can find a complete list of Cloud Manager monthly releases [here](/help/impl
 ## Migration Tools {#migration-tools}
 
 You can find a complete list of Migration Tools releases [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+
+## Known issues {#known-issues}
+
+* Users are unable to submit Adaptive Forms based on Core Components. The issue occurs for Adaptive Forms built using Core Components versions 2.0.38 – 2.0.60. 
+
+  To resolve the issue. you can move to Adaptive Form Core Components version 2.0.62 or later. To set a version of Adaptive Forms Core Components for your environment, [set versions of the core.forms.components.version, core.forms.components.af.version, and core.wcm.components.version component](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) dependencies in your Forms as a Cloud Service repository or AEM Archetype based project and [deploy the changes to your Forms as a Cloud Service environment](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). You can find the latest version of Adaptive Forms Core Components dependencies at [Adaptive Forms Core Components Git repository](https://github.com/adobe/aem-core-forms-components#system-requirements).
