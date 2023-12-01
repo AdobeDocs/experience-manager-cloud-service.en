@@ -89,11 +89,11 @@ As you will analyze this data, there might or might not be variances in page vie
    
    Please note that by default, the 'include' setting is configured to target '/content'. It's important to remember that the paths you need to configure here are content paths within the system, not the URL paths you see in your browser. This distinction is key for accurately setting up and customizing your configuration to meet your specific needs.
 
-1. **Would Adobe be able to track all the page views prior to them reaching the customer managed CDN?**
+1. **Would Adobe be able to track all the page views before the interaction reaches the customer managed CDN or at the point when the interaction reaches the customer managed CDN?**
 
    Yes.
 
-1. **Will customers be able to integrat the RUM data service scripts with third-party systems like Dynatrace?**
+1. **Will customers be able to integrate the RUM data service scripts with third-party systems like Dynatrace?**
 
    Yes.
 1. **Are “Interaction to next paint”, “Time to first byte” and “First contentful paint” Web vitals Metrics being collected?**
