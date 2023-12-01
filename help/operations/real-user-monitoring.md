@@ -13,13 +13,13 @@ description: Leverage Real User Monitoring (RUM) in order to keep track of all t
 
 ## Overview {#overview}
 
-Real User Monitoring (RUM) is a type of performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It gives complete visibility into the real-time performance of a web application and provides accurate insight into the end-user experience. 
+Real User Monitoring (RUM) is a type of performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It provides visibility into the real-time performance of a web application and provides accurate insight into the end-user experience. 
 
 RUM provides deep insight into key performance metrics right from the initiation of the URL until the request is served back to the browser all of which helps the developers enhance the application to make it easy to use for the end users. 
 
 ## Understand how the RUM Data Service Works {#understand-how-the-rum-data-service-works}
 
-Adobe Experience Manager uses Real User Monitoring (RUM) to understand how visitors are interacting with Adobe Experience Manager-powered sites, to diagnose performance issues, and to measure the effectiveness of experiments. RUM preserves the privacy of visitors through sampling - only a small portion of all page views will be monitored - and judicious exclusion of all personally identifiable information (PII). 
+Adobe Experience Manager uses Real User Monitoring (RUM) to help customers and Adobe understand, how visitors are interacting with Adobe Experience Manager-powered sites, to diagnose performance issues, and to measure the effectiveness of experiments. RUM preserves the privacy of visitors through sampling - only a small portion of all page views will be monitored - and judicious exclusion of all personally identifiable information (PII). 
 
 ## RUM and Privacy {#rum-and-privacy}
 
