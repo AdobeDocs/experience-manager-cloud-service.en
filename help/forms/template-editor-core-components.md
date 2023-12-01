@@ -1,6 +1,7 @@
 ---
 title: How to create an Adaptive Form template based on core component?
 description: Create Adaptive Form templates based on core component to define the basic structure and initial content using the Template Editor.
+feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 ---
 

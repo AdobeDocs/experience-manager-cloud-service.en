@@ -1,6 +1,7 @@
 ---
 title: How to generate a document of record (DoR) for AEM Forms?
 description: Learn to generate a template for a Document of Record (DoR) for Adaptive Forms.
+feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 ---
 # Generate Document of Record for Adaptive Forms

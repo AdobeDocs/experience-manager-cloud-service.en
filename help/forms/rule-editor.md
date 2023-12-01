@@ -1,7 +1,7 @@
 ---
 title: How to use the rule editor to add rules to form fields to add dynamic behavior and build complex logic to an adaptive form?
 description: Adaptive Forms rule editor allows you to add dynamic behavior and build complex logic into forms without coding or scripting.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00

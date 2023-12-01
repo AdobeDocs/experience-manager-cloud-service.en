@@ -4,9 +4,7 @@ description: AEM Forms provides you tools to create accessible Adaptive Forms an
 uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
-docset: aem65
-exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
+feature: Adaptive Forms, Foundation Components
 ---
 # Creating accessible Adaptive Forms{#creating-accessible-adaptive-forms}
 
