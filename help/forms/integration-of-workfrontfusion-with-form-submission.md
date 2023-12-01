@@ -124,6 +124,9 @@ To make the scenario active:
 
 Once you click the toggle button, the Workfront scenario starts appearing in the **[!UICONTROL Active Scenario]** tab.
 
+>[!NOTE]
+>
+> In case you do not activate the Workfront scenario, it does not detect the form submission, and setting the submit action to Workfront results in a failed submission.
 
 ### 2. Configure submit action of an Adaptive Form for Workfront Fusion
 
