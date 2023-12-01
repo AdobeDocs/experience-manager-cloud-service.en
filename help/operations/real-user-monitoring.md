@@ -15,13 +15,13 @@ description: Leverage Real User Monitoring (RUM) in order to keep track of all t
 
 Real User Monitoring (RUM) is a type of performance monitoring technology that captures and analyzes the digital user experiences of a website or application in real-time. It provides visibility into the real-time performance of a web application and provides accurate insight into the end-user experience. 
 
-RUM provides deep insight into key performance metrics right from the initiation of the URL until the request is served back to the browser all of which helps the developers enhance the application to make it easy to use for the end users. 
+Real User Monitoring (RUM) provides deep insight into key performance metrics right from the initiation of the URL until the request is served back to the browser all of which helps the developers enhance the application to make it easy to use for the end users. 
 
-## Understand how the RUM Data Service Works {#understand-how-the-rum-data-service-works}
+## Understand how the Real User Monitoring (RUM) Data Service Works {#understand-how-the-rum-data-service-works}
 
 Adobe Experience Manager uses Real User Monitoring (RUM) to help customers and Adobe understand, how visitors are interacting with Adobe Experience Manager-powered sites, to diagnose performance issues, and to measure the effectiveness of experiments. RUM preserves the privacy of visitors through sampling - only a small portion of all page views will be monitored - and judicious exclusion of all personally identifiable information (PII). 
 
-## RUM and Privacy {#rum-and-privacy}
+## Real User Monitoring (RUM) and Privacy {#rum-and-privacy}
 
 Real User Monitoring in Adobe Experience Manager is designed to preserve visitor privacy and minimize data collection. As a visitor, this means that no personal information will be collected by the site you are visiting or made available to Adobe. 
 
@@ -29,13 +29,13 @@ As a site operator, this means no additional opt-in is required to enable monito
 
 ## RUM Data is Sampled {#rum-data-is-sampled}
 
-Traditional web analytics solutions try to collect data on every single visitor. Adobe Experience Manager's Real User Monitoring only captures information from a small fraction of page views.RUM is meant to be sampled and anonymized rather than a replacement for analytics. By default, pages will have a 1:100 sampling ratio. Site operators cannot configure this number to increase or decrease the sampling rate as of today.
+Traditional web analytics solutions try to collect data on every single visitor. Adobe Experience Manager's Real User Monitoring only captures information from a small fraction of page views. Real User Monitoring (RUM) is meant to be sampled and anonymized rather than a replacement for analytics. By default, pages will have a 1:100 sampling ratio. Site operators cannot configure this number to increase or decrease the sampling rate as of today. To estimate total traffic accurately,for every 100 page views, we gather detailed data from one, giving you a reliable approximation of overall traffic."
 
 As the decision of whether the data will be collected is made on a page view by page view basis, it becomes virtually impossible to track interactions across multiple pages. RUM has no concept of visits, visitors, or sessions, only of page views. This is by design.
 
 ## What Data is Being Collected {#what-data-is-being-collected}
 
-RUM is designed to prevent the collection of personally identifiable information. The full set of information that can be collected by Adobe Experience Manager's Real User Monitoring is listed below:
+Real User Monitoring (RUM) is designed to prevent the collection of personally identifiable information. The full set of information that can be collected by Adobe Experience Manager's Real User Monitoring is listed below:
 
 * The host name of the site being visited, for example: `experienceleague.adobe.com`
 * The broad user agent type that is used to display the page, such as: desktop or mobile
@@ -49,19 +49,19 @@ RUM is designed to prevent the collection of personally identifiable information
 * The target, or link to an external page or resource that the user interacts with for the checkpoint mentioned above. For example: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
 * The Core Web Vitals (CWV) performance metrics, the Largest Contentful Paint (LCP), First Input Delay (FID), and Cumulative Layout Shift (CLS) that describe the visitor's quality of experience.
 
-## How to Set Up the RUM Data Service {#how-to-set-up-them-rum-data-service}
+## How to Set Up the Real User Monitoring (RUM) Data Service {#how-to-set-up-them-rum-data-service}
 
-If you have requested to be a part of our Early Adopter program, Adobe's product team will enable RUM Data monitoring for you. Once this is completed, Adobe's product team will reach out to you to provide you with the domain key and data dashboard URL for you to view the Page View and [The Core Web Vitals(CWB)](https://web.dev/vitals/) metrics through the support collaboration channel created by Adobe's Product team. 
+If you have requested to be a part of our Early Adopter program, Adobe's product team will enable Real User Monitoring (RUM) Data Service for you. Once this is completed, Adobe's product team will reach out to you to provide you with the domain key and data dashboard URL for you to view the Page View and [The Core Web Vitals(CWB)](https://web.dev/vitals/) metrics through the support collaboration channel created by Adobe's Product team. 
 
 ## Viewing the Traffic and Performance Metrics for Your Website {#viewing-the-traffic-and-performance-metrics-for-your-website}
 
-A Slack channel would be created for Early Adopter customers to provide them with the initial support for sharing the data desk dashboard url to access the Page Views and Core Web Vital metrics. 
+A Slack channel will be created for Early Adopter customers to provide them with the initial support for sharing the data desk dashboard url to access the Page Views and Core Web Vital metrics. 
 
 To access the data desk dashboard url, customers will need a domain key which will be created by Adobe and it will be provided to them in the Slack collaboration channel. 
 
 You will then be guided on how to use the domain key to access the data dashboard link and view the metrics.
 
-## How RUM Data is Being Used {#how-rum-data-is-being-used}
+## How Real User Monitoring (RUM) Data is Being Used {#how-rum-data-is-being-used}
 
 Adobe uses RUM data for the following purposes:
 
@@ -75,17 +75,13 @@ As you will analyze this data, there might or might not be variances in page vie
 
 1. **Tracker blockers**
 
-   * End-users employing tracker blockers or privacy extensions can impede RUM's data collection, as these tools restrict the tracking scripts' execution. This restriction can lead to underreported page views and user interactions, creating a discrepancy between actual site activity and the data captured by RUM.
+   * End-users employing tracker blockers or privacy extensions can impede Real User Monitoring (RUM)'s data collection, as these tools restrict the tracking scripts' execution. This restriction can lead to underreported page views and user interactions, creating a discrepancy between actual site activity and the data captured by RUM.
 
 1. **Limitations in capturing API/JSON calls**
 
-   * RUM data service focuses on the client-side experience and doesn't capture the backend API or JSON calls at this time. The exclusion of these calls from RUM data will create variances from the content requests measured by CDN Analytics.
+   * RUM data service focuses on the client-side experience and doesn't capture the backend API or JSON calls at this time. The exclusion of these calls from Real User Monitoring (RUM) data will create variances from the content requests measured by CDN Analytics.
 
 ## FAQ {#faq}
-
-1. **How can I opt-out?**
-
-   Customers who want to opt-out of the RUM monitoring bundle can reach out to Adobe Support.
 
 1. **How can I configure paths to include or exclude in monitoring?**
 
@@ -103,3 +99,7 @@ As you will analyze this data, there might or might not be variances in page vie
 1. **Are “Interaction to next paint”, “Time to first byte” and “First contentful paint” Web vitals Metrics being collected?**
 
    Interaction to next paint (INP) and Time to first byte (TTFB) are collected.  First contentful paint is not collected at this time.
+
+1. **How can I opt-out?**
+
+Opt-out of RUM monitoring is discouraged as it limits the support Adobe can provide. Customers who want to opt-out of the RUM monitoring bundle can reach out to Adobe Support.
