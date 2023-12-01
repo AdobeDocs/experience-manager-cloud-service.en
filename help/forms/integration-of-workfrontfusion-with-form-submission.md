@@ -84,6 +84,10 @@ To add a connection:
 
 1. Replace `ims-na1.adobelogin.com` in the **IMS endpoint** with the value from the service credentials in the Developer console.
 
+    >[!NOTE]
+    >
+    > Retain the `https://` in the **IMS endpoint** textbox; only replace the content following `https://`.
+
 1. Specify the following values from the service credentials:
     - **Client ID**
     - **Client Secret**, 
@@ -96,7 +100,10 @@ To add a connection:
     >
     >- Reorganize the Private Key by removing *\r\n* from its value. For example, if the private key value is:
     >*\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw*, then restructure the private key before adding it as:
-    >*IJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL**My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw*
+    >*IJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL*
+    >
+    >*My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw*
+    >
     >- You also have the option to retrieve a private key or certificate from the file by selecting the **Extract** button.
 
 1. Click **Continue**.
