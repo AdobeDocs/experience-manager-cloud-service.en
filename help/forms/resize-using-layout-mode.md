@@ -4,6 +4,7 @@ description: Define the position of AEM Forms components, learn to access layout
 feature: Adaptive Forms
 role: User
 level: Intermediate
+feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
 ---
 # Use Layout mode to resize components for Adaptive Forms {#use-layout-mode-to-resize-components}

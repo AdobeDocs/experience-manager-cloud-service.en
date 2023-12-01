@@ -6,7 +6,7 @@ seo-description: Error handler function and Rule Editor in Adaptive Forms core c
 keywords: Add a custom error handler, add a default error handler, add a error handler in form, use rule editor's invoke service to add a custom error handler, configure rule editor to add a custom error handler , add custom error handler using rule editor
 contentOwner: Ruchita Srivastav
 content-type: reference
-feature: Adaptive Forms
+feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 ---
 # Error Handlers for Adaptive Form based on Core Components {#error-handlers-in-adaptive-form}

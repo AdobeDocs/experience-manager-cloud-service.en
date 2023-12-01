@@ -4,6 +4,7 @@ description: With [!DNL Experience Manager Forms], you can define a sequence of 
 feature: Adaptive Forms
 role: User
 level: Intermediate
+feature: Adaptive Forms, Foundation Components
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
 ---
 # Introduction to multi-step form sequence {#introduction-to-multi-step-form-sequence}
