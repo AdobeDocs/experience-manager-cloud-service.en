@@ -11,7 +11,7 @@ Possible topics to cover in this article are below.
 
 * Compile a list of enhancements done in the last ~1 year.
 * Showcase a few prominent use cases (search?) in a screencast.
-* Top-level actions supported, such as clickable UI elements, keyboard shortcuts, popup dialogs, and so on.
+* Top-level actions supported, such as clickable UI elements, keyboard shortcuts, pop-up dialogs, and so on.
 * List all UIs that are keyboard navigable.
 * Unified list of the product tasks supported, such as, search assets, download assets, add or editing metadata, use DM Viewers, and so on.
 * Do we need to add support matrix of user tasks with browser and screen reader combinations. Everything may not work in all browsers and/or using all screen readers.
@@ -67,7 +67,7 @@ Many user interface elements that are clickable or actionable with a pointer can
 <!-- TBD items:
 
 * The button/menu to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
-* How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
+* How to open and browse through the profile pop-up dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
 * Using the [!DNL Experience Manager] tag browser and operating the buttons like delete tag? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * Read-only form fields can be focused with the keyboard. Can users tab to these fields to understand the contents and are they able to copy text from the fields?
 -->
@@ -165,7 +165,7 @@ For metadata operations that are typically done by roles such as marketers and a
 
 * [!UICONTROL Save & Close] option on asset [!UICONTROL Properties] page can now be accessed using the keyboard.
 * Screen readers announce the options to delete the selected tags in [!UICONTROL Basic] tab of asset [!UICONTROL Properties].
-* Users can use the Datepicker popup dialog with a keyboard. The Datepicker user interface element is used to set on-times and off-times, and select date.
+* Users can use the Datepicker pop-up dialog with a keyboard. The Datepicker user interface element is used to set on-times and off-times, and select date.
 * The drag functionality using keyboard correctly functions in [!UICONTROL Metadata Schema Editor] in browse mode of screen reader.
 * A user can move the focus using keyboard to the Add User or Group field under [!UICONTROL Closed User Group] in the [!UICONTROL Permissions] tab of folder [!UICONTROL Properties].
 

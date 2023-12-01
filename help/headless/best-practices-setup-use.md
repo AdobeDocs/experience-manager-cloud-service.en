@@ -1,8 +1,8 @@
 ---
 title: Best Practices for the setup and use of AEM GraphQL with Content Fragments
-description: Learn the recommended Best Practices for the setup and use of AEM GraphQL with Content Fragments. 
+description: Learn the recommended Best Practices for the setup and use of AEM GraphQL with Content Fragments.
+exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
 ---
-
 # Best Practices for the setup and use of AEM GraphQL with Content Fragments{#best-practices-setup-use-aem-graphql-content-fragments}
 
 These guidelines summarize the recommended best practices for setting up, configuring and using AEM with GraphQL and Content Fragments.
@@ -193,9 +193,9 @@ For:
 * Testing
 * Production
 
-### Further Resources
+### Additional Resources
 
-For further details about AEM GraphQL and Content Fragments see:
+For more details about AEM GraphQL and Content Fragments, see the following:
 
 * [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
 * [Using the GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)

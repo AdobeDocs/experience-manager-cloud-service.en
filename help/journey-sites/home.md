@@ -13,7 +13,7 @@ Start here for an overview of the guided journeys available to understand AEM's 
 
 ## AEM Documentation Journeys {#documentation-journeys}
 
-[A Documentation Journey](/help/journey-documentation/documentation-journeys.md) ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
+[A Documentation Journey](/help/journey-documentation/documentation-journeys.md) ties together many different, complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
 
 Documentation Journeys are designed around best practices principles, informed by Adobe's latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
 
@@ -25,7 +25,7 @@ Sites Journeys are designed for varying personas, laying out the requirements, s
 
 An individual journey is defined for a specific persona or audience, but also defines additional personas with which the reader interacts.
 
-Information in the journeys can of course be useful to multiple personas, but a journey is targeted to a specific persona and some information may be superfluous to certain roles.
+Information in the journeys can be useful to multiple personas, but a journey is targeted to a specific persona and some information may be superfluous to certain roles.
 
 ## Sites Journeys {#sites-journeys}
 

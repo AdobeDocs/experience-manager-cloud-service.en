@@ -81,9 +81,9 @@ The properties are distributed across several tabs.
   >* Do not support regex patterns.
   >* Should not be set to an existing page.
 
-  * **Add** - Tap or click to show a field to define a vanity URL for the page.
-    * Tap or click again to add multiple.
-    * Tap or click the **Remove** icon to delete the vanity URL.
+  * **Add** - Select to show a field to define a vanity URL for the page.
+    * Select again to add multiple.
+    * Select the **Remove** icon to delete the vanity URL.
   * **Redirect Vanity URL** - Indicates whether you want the page to use the vanity URL.
 
 ### Advanced {#advanced}
@@ -99,7 +99,7 @@ The properties are distributed across several tabs.
     * For example, if you define an alias of `private` for the page `/content/wknd/us/en/magazine/members-only`, then this page can also be accessed via `/content/wknd/us/en/magazine/private`
     * Creating an alias sets the `sling:alias` property on the page node, which only impacts the resource, not the repository path.
     * Pages accessed by aliases in the editor cannot be published. [Publish options](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) in the editor are only available for pages accessed via their actual paths. 
-    * For further details see [Localized page names under SEO and URL Management Best Practices](/help/overview/seo-and-url-management.md#localized-page-names).
+    * See [Localized page names under SEO and URL Management Best Practices](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuration**
 
@@ -141,7 +141,7 @@ The properties are distributed across several tabs.
 
 * **Featured Image**
 
-  Select, and configure, the image to be featured. This is used in components referencing the page; for example, teasers, page lists, etc.
+  Select, and configure, the image to be featured. This is used in components referencing the page; for example, teasers, page lists, and so on.
 
   * **Image**
 
@@ -221,7 +221,7 @@ This tab is only visible for pages that are configured as live copies. As with B
 
 ### Preview {#preview}
 
-When a Preview environment is enabled you will see:
+When a Preview environment is enabled you see the following:
 
 * Preview URL - the URL used for accessing the content on the Preview environment
 
@@ -231,7 +231,7 @@ Through a simple configuration, a content author can now enable progressive web 
 
 >[!NOTE]
 >
->For further details see [Enabling Progressive Web App Features](/help/sites-cloud/authoring/features/enable-pwa.md).
+>See [Enabling Progressive Web App Features](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **Configure installable experience**
 
@@ -280,7 +280,7 @@ When editing a page you can use **Page Information** to define the page properti
 
 1. Open the page for which you want to edit properties.
 1. Select the **Page Information** icon to open the selection menu:
-1. Select **Open Properties** and a dialog will open allowing you to edit the properties, sorted by the appropriate tab. The following buttons are also available at the right of the toolbar:
+1. Select **Open Properties** and a dialog box opens that lets you edit the properties, sorted by the appropriate tab. The following buttons are also available at the right of the toolbar:
    * **Cancel**
    * **Save & Close**
 1. Use the **Save & Close** button to save the changes.
@@ -309,7 +309,7 @@ Once you have entered Bulk Editing you can:
 * **View**
 
   * A list of the pages impacted
-    * You can select/deselect if required
+    * You can select/deselect if necessary
     * Tabs
       * As when viewing properties for a single page, the properties are ordered under tabs.
   * A subset of properties

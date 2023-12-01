@@ -55,7 +55,7 @@ This all means that it can be used as a:
 
 So content modeling (also known as data modeling) is another technical term - why should it interest you as an author?
 
-For the headless applications to be able to access your content, and do something with it, your content really needs to have a predefined structure. It would be possible to have your content as free-form, but it would make life *very* complicated for the applications.
+For the headless applications to be able to access your content, and do something with it, your content really must have a predefined structure. It would be possible to have your content as free-form, but it would make life *very* complicated for the applications.
 
 Basically the process of defining the structure for your content to adhere to involves designing a model - and this is called data modeling. 
 

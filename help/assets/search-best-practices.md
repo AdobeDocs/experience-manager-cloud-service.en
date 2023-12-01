@@ -2,9 +2,9 @@
 title: Search best practices for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Best practices to search, find, and retrieve assets' metadata within your application.
 contentOwner: KK
+exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 ---
-
-# AEM Search Best Practices
+# AEM Assets Search Best Practices
 
 [!DNL Adobe Experience Manager Assets] provides robust asset search methods that help you achieve higher content velocity. Sometimes, finding the right asset can be arduous and time-consuming. Therefore, search assets capability in [!DNL Adobe Experience Manager Assets] is central to the usage of a digital asset management system - be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators.
 
@@ -32,15 +32,15 @@ The search results that match all search terms in metadata fields are displayed 
 
 Specify `classic car` as the search keyword and click Search. You can view the search suggestions in a drop-down list as you type the keyword. The search suggestions are based on the contents of the search index on your Experience Manager deployment. If you cannot view the appropriate assets in the drop-down menu, press the Enter key to view the list of results. The results are sorted by relevance, starting from the closest matches.
 
-![Performing basic search method 1](assets/simple-search-1.png)
+<!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
 You can make the search more specific by adding your search keyword in double quotes (" "). This search only includes Assets which contain the specified terms together. The search criteria look like - `"classic car"`. Therefore, the search results with both terms `classic` and `car` are shown. 
 
-![Finding exact match](assets/simple-search-2.png)
+<!--![Finding exact match](assets/simple-search-2.png)-->
 
 The search displays similar results if you are working in the **[!UICONTROL Assets view]** as well.
 
-<!--[Watch a video to perform a simple search in AEM Assets] ()-->
+>[!VIDEO](https://video.tv.adobe.com/v/3425489)
 
 ## Files and folders {#files-folders}
 
@@ -59,9 +59,9 @@ To achieve this scenario, execute the steps below:
 Select the folder from the path and navigate to the required folder if you want to search within the specific folder.
 3. Select Files from the drop-down list to display all files with the keyword `classic car`. 
 
-![Search using files and folders](assets/files-folders.png)
+<!--![Search using files and folders](assets/files-folders.png)-->
 
-<!--[Watch a video to perform search in AEM Assets using Files and Folders] ()-->
+>[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
 ## Operators {#operators}
 
@@ -113,7 +113,7 @@ Asterisk is a wildcard operator that is used to broaden your search by typing fe
 * `car*` returns assets with carwash, carrier, carriage, and so on. 
 * `*car` returns assets with modern car, sports car, and so on. 
 
-<!--[Watch a video to perform a search in AEM Assets using wildcards] ()-->
+>[!VIDEO](https://video.tv.adobe.com/v/3425488)
 
 **[!UICONTROL Assets view]** does not support the usage of Wildcards.
 
@@ -158,15 +158,13 @@ Execute the following steps in **[!UICONTROL Admin view]**:
 1. Select [!UICONTROL PDF].
 1. Go to [!UICONTROL Status] > [!UICONTROL Publish] > [!UICONTROL Unpublished].
 
-![Filter example 2](assets/filter-2.png)
+<!--![Filter example 2](assets/filter-2.png)-->
 
 Execute the following steps in **[!UICONTROL Assets view]**:
 
 1. Type `classic car` in the search bar. 
 1. Go to Filters. Under [!UICONTROL MIME Type], select [!UICONTROL PDF].
 1. Go to [!UICONTROL Asset Status], select [!UICONTROL All] to include all the published and unpublished assets.
-
-<!--[Watch a video to perform search in AEM Assets using various filters] ()-->
 
 **Scenario 5: Search for all images except PNG**
 
@@ -176,12 +174,14 @@ When you are unsure about the title or meta description of an asset, you can use
 1. Go to Filters. Under [!UICONTROL File Type], expand [!UICONTROL Images] and select [!UICONTROL Web enabled]
 1. Deselect PNG.
 
-![Search all images except jeep](assets/images-png.png)
+<!--![Search all images except jeep](assets/images-png.png)-->
 
 To search assets using the mentioned scenario in **[!UICONTROL Assets view]**, follow the steps below:
 
 1. Go to search filters. 
 1. Go to Filters. Under [!UICONTROL MIME Type], select all the given MIME types but Deselect PNG.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425486)
 
 ## Advanced search {#advanced-search}
 
@@ -197,7 +197,7 @@ To perform a search for scenario 6:
 2. Navigate to the filters panel and select Documents under File Type. 
 3. Refine your search using the asterisk wildcard. Type `"classic car"` to search all assets that contain the `classic car` keyword. 
  
-![Scenario 6](assets/scenario-6.png)
+<!--![Scenario 6](assets/scenario-6.png)-->
 
 Scenario 6 is not possible to execute in **[!UICONTROL Assets view]** as it does not support the usage of Wildcards.
 
@@ -209,7 +209,7 @@ Type the `car - classic` keyword in the search bar. Navigate to the filters pane
 Priority 1: Metadata
 Priority 2: Smart Tags
 
-![Scenario 7](assets/scenario-7.png)
+<!--![Scenario 7](assets/scenario-7.png)-->
 
 Scenario 7 is not possible to execute in **[!UICONTROL Assets view]** as it does not support the usage of Wildcards.
 
@@ -233,9 +233,11 @@ When you are unsure about the title or meta description of an asset, you can use
 
 You can capture a specific criteria using various search filters. Tag is a keyword that is assigned to an asset to make it identifiable among a large number of assets. For example, in this scenario, search for assets with *jeep* tags in it. To do this, type `tags:jeep` in the search bar. Only assets that meet this criteria are listed in the search results.
 
-![Search using tags](assets/search-tags.png)
+<!--![Search using tags](assets/search-tags.png)-->
 
 The search displays similar results if you are working in the **[!UICONTROL Assets view]** as well.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425490)  
 
 **Scenario 9: Find similar match for red color car**
 

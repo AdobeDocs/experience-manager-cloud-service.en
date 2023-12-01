@@ -61,7 +61,7 @@ Once you make sure that everything has been tested and is working properly, you 
 
 After the updates have been uploaded to Cloud Manager, they can be deployed to AEM as a Cloud Service using [Cloud Manager's CI/CD pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
 
-You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
+You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 
 ## Performance Monitoring {#performance-monitoring}
 

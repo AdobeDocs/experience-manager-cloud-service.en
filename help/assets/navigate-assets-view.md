@@ -35,7 +35,7 @@ When you log into [!DNL Assets view], you see the following interface.
 You can browse the folders from the main user interface or from the left sidebar. When browsing, you can use the interface to view asset thumbnails to visually browse the repository or view asset details to quickly find the asset you want. The options available in the left sidebar are:
 
 * [My Workspace](/help/assets/my-workspace-assets-view.md): Assets now includes a customizable workspace that provides widgets for convenient access to key areas of the Assets user interface and information that is most relevant to you. This page serves as a one-stop solution to provide an overview of your work items and to give quick access to key workflows. More convenient access to these options increases your efficiency and content velocity.
-* [Tasks](/help/assets/my-workspace-assets-view.md): You can view the tasks assigned to you under **My tasks** tab. Whereas, the tasks that are created by you can be viewed under **Assigned tasks** tab. Additionally, the tasks that you complete are located under **Completed tasks** tab.
+* [Tasks](/help/assets/my-workspace-assets-view.md): You can view the tasks assigned to you under **My tasks** tab. Whereas, the tasks that are created by you can be viewed under **Assigned tasks** tab. Also, the tasks that you complete are located under **Completed tasks** tab.
 * [Assets](/help/assets/manage-organize-assets-view.md): List of all folders in a tree view, that you have access to.
 * **Recently Viewed**: List of assets that you previewed recently. [!DNL Assets view] displays only the assets that you preview. It does not display the assets that you scroll past when browsing the repository files or folders.
 * [Collections](/help/assets/manage-collections-assets-view.md): A collection is a set of assets, folders, or other collections within Adobe Experience Manager Assets view. Use collections to share assets between users. Unlike folders, a collection can include assets from different locations. You can share multiple collections with a user. Each collection contains references to assets. The referential integrity of assets is maintained across collections.
@@ -62,7 +62,7 @@ In [!DNL Assets view], you can view assets, folders, and search results in four 
 
 To locate an asset, you can sort the assets in ascending or descending order of `Name`, `Relevancy`, `Size`, `Modified`, and `Created`.
 
-To navigate into a folder, double-click on the folder's thumbnails or select the folder from the left sidebar. To view details of a folder, select it and click Details from the toolbar at the top. To navigate up and down the hierarchy, either use the left sidebar or use the breadcrumbs at the top.
+To navigate into a folder, double-click the folder's thumbnails or select the folder from the left sidebar. To view details of a folder, select it and click Details from the toolbar at the top. To navigate up and down the hierarchy, either use the left sidebar or use the breadcrumbs at the top.
 
 ![Browse folders](assets/browsing-folders.png)
 

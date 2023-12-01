@@ -61,7 +61,7 @@ Once you have set up your program and have at least one environment using the Cl
    * **[Full Stack Code](#full-stack-code)**
    * **[Targeted deployment](#targeted-deployment)**
 
-Please see the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) for more information about the types of pipelines.
+See [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) for more information about the types of pipelines.
 
 The steps to complete the creation of your non-production pipeline vary depending on the type of source code you selected. Follow the links above to jump to the next section of this document so you can complete the configuration of your pipeline.
 
@@ -115,7 +115,7 @@ A targeted deployment deploys code only for selected parts of your AEM applicati
 >
 >* If a web-tier code pipeline exists for the selected environment, this selection is disabled.
 >* If you have an existing full-stack pipeline deploying to an environment, creating a web tier config pipeline for the same environment will case the existing web tier configuration in the full-stack pipeline to be ignored.
-> * At any time, there can only be one config deployment pipeline per environment. 
+> * At any time, there can only be one config pipeline per environment. 
 
 The steps to complete the creation of your non-production, targeted deployment pipeline are the same once you choose a deployment type.
 
@@ -139,7 +139,7 @@ The steps to complete the creation of your non-production, targeted deployment p
      * Enter the first few characters of the branch name and the auto-complete feature of this field. It finds the matching branches that you can select.
    * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
    
-   ![Config deployment pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
 
 1. Click **Save**.
 

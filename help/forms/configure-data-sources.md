@@ -18,7 +18,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 
 [!DNL Experience Manager Forms] Data Integration lets you configure and connect to disparate data sources. The following types are supported out-of-the-box:
 
-* Relational databases - MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], and [!DNL Oracle RDBMS] 
+* Relational databases - MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], postgreSQL, and [!DNL Oracle RDBMS] 
 * RESTful web services  
 * SOAP-based web services
 * OData services (Version 4.0)
@@ -277,7 +277,7 @@ An OData service is identified by its service root URL. To configure an OData se
 
    >[!NOTE]
    >
-   >You must select the OAuth 2.0 authentication type to connect with [!DNL Microsoft®&reg; Dynamics] services using the OData endpoint as the service root.
+   >Select the OAuth 2.0 authentication type to connect with [!DNL Microsoft®&reg; Dynamics] services using the OData endpoint as the service root.
 
 1. Tap **[!UICONTROL Create]** to create the cloud configuration for the OData service.
 
