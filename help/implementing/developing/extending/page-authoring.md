@@ -16,7 +16,7 @@ When customizing, you can create your own clientlib under `/apps.` The new clien
 * Depend on the authoring clientlib `cq.authoring.editor.sites.page`.
 * Be part of the appropriate `cq.authoring.editor.sites.page.hook` category.
 
-For further details on clientlibs, please see the document [Using Client-Side Libraries on AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+See [Using Client-Side Libraries on AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Overlays {#overlays}
 
@@ -24,9 +24,9 @@ Overlays are based on node definitions and allow you to overlay the standard fun
 
 When creating an overlay, a 1:1 copy of the original is not required, as the [sling resource merger](/help/implementing/developing/introduction/sling-resource-merger.md) allows for inheritance.
 
-For more information, please see the [JS documentation set](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+For more information, see the [JS documentation set](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
-For further information on overlays, please see the document [Overlays for Adobe Experience Manager as a Cloud Service.](/help/implementing/developing/introduction/overlays.md)
+For more information on overlays, see [Overlays for Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 ## Add New Layer (Mode) {#add-new-layer-mode}
 

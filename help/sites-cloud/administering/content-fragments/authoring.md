@@ -44,7 +44,7 @@ When you first open the Content Fragment Editor, you see four main areas:
 
     >[!WARNING]
     >
-    >The original editor will open in the same tab. It is not recommended to have both editors open at the same time.
+    >The original editor opens in the same tab. It is not recommended to have both editors open at the same time.
 
 * left panel: shows the **[Variations](#variations)** for the Content Fragment, and its **Fields**:
   * these links can be used to [navigate the Content Fragment structure](#navigate-structure)
@@ -52,7 +52,11 @@ When you first open the Content Fragment Editor, you see four main areas:
   * in the **Properties** tab you can update the **Title** and **Description** for the fragment, or **Variation**
 * central panel: shows the actual fields, and content, of the selected variation
   * allows you to edit the content
-  * if **Tab Placeholder** fields are defined within the model they are shown here, and can be used for navigating; they will either be presented horizontally, or as a dropdown list
+  * if **Tab Placeholder** fields are defined within the model they are shown here, and can be used for navigating; they will either be presented horizontally, or as a drop-down list.
+
+  >[!NOTE]
+  >
+  >Depending on definitions in the underlying model, fields can be subject to certain types of [Validation](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ![Content Fragment Editor - Overview](assets/cf-authoring-overview.png)
 
@@ -82,7 +86,7 @@ In the left panel you can see:
 
 ### Follow Links {#follow-links}
 
-In various parts of the editor you will see the link icon. This can be used to open the item shown; for example a Content Fragment Model, a Parent Reference, or a fragment being referenced:
+In various parts of the editor you can see the link icon. This can be used to open the item shown; for example a Content Fragment Model, a Parent Reference, or a fragment being referenced:
 
 ![Content Fragment Editor - Link Icon](assets/cf-authoring-link-icon.png)
 
@@ -339,7 +343,7 @@ In the properties tab (right panel) you can also edit:
 
 * **Title**
 * **Description**
-* **Tags**: using the dropdown, or the selection dialog
+* **Tags**: using the drop-down list, or the selection dialog
 
   ![Content Fragment Editor - Manage Tags](assets/cf-authoring-edit-tags.png) 
 
@@ -393,7 +397,7 @@ The Content Fragment editor provides authors with the option to preview their ed
 To use this feature, you first need to:
 
 * Work with your IT team to set up the external frontend application that will render the Content Fragment by consuming its JSON output. 
-* Once the external frontend application is set up, the **Default Preview URL Pattern** needs to be defined as a [property of the appropriate Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* When the external frontend application is set up, the **Default Preview URL Pattern** must be defined as a [property of the appropriate Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
 
 When the URL has been defined, the **Preview** button is active. You can select this button to launch the external application (in a separate tab) to render the Content Fragment. 
 
@@ -470,8 +474,6 @@ The **Fields** panel lists all fields within the Content Fragment. The icon indi
 
 ## Good to know {#good-to-know}
 
-Additionally:
-
 * To edit a Content Fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contact your system administrator if you are experiencing issues.
 
   For example, if you do not have `edit` permissions the editor will be read-only.
@@ -482,4 +484,4 @@ Additionally:
 
 * See the Assets documentation for full information about the [original Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md) - it is available from both the **Assets** console and the **Content Fragments** console.
 
-* Your project team can customize the editor if required. See [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md) for further details.
+* Your project team can customize the editor if necessary. See [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md) for further details.

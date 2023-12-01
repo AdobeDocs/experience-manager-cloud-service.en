@@ -96,7 +96,7 @@ The required options can be selected in **Page Properties** of the required fold
    * the appropriate configuration
    * the required format option
    * an Adobe Target workspace
-   * if required - the externalizer domain
+   * if necessary - the externalizer domain
 
    >[!CAUTION]
    >
@@ -159,7 +159,7 @@ You can now select the new configuration for editing.
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    >1. Set the property **disable** to **false**.
-   >1. Tap or click **Save All**.
+   >1. Select **Save All**.
 
    -->
 
@@ -183,7 +183,7 @@ You can now select the new configuration for editing.
 
    * **Use accurate targeting:** By default this check box is selected. If selected, the cloud service configuration will wait for the context to load before loading content. See note that follows.
 
-   * **Synchronize Segments from Adobe Target:** Select this option to download segments that are defined in Target to use them in AEM. You must select this option when the API Type property is REST, because inline segments are not supported and you always need to use segments from Target. (Note that the AEM term of 'segment' is equivalent to the Target 'audience'.)
+   * **Synchronize Segments from Adobe Target:** Select this option to download segments that are defined in Target to use them in AEM. Select this option when the API Type property is REST, because inline segments are not supported and you always need to use segments from Target. (The AEM term of 'segment' is equivalent to the Target 'audience'.)
 
    * **Client library:** this defaults to AT.js (mbox.js is deprecated)
 
@@ -284,8 +284,8 @@ When you associate a page with the framework, the child pages inherit the associ
 1. In the **Sites** console, navigate to the site that you want to configure.
 1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
-1. Tap/click **Edit**.
-1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
+1. Select **Edit**.
+1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
   ![Cloud Service Configuration](assets/chlimage_1-165.png)
 
@@ -295,7 +295,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
-1. Tap/click **Done**.
+1. Select **Done**.
 1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
 
    >[!NOTE]
@@ -309,7 +309,7 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >For media assets, such as images, only a reference is exported to Target. The asset itself remains stored in AEM Assets and is delivered from the AEM publish instance.
 >
->Due to this the Experience Fragment, with all related assets, needs to be published before exporting to Target.
+>Due to this the Experience Fragment, with all related assets, must be published before exporting to Target.
 
 To export an experience fragment from AEM to Target (after specifying the Cloud Configuration):
 
@@ -320,19 +320,19 @@ To export an experience fragment from AEM to Target (after specifying the Cloud 
    >
    >It has to be an Experience Fragment Web variation.
 
-1. Tap/click **Export to Adobe Target**.
+1. Select **Export to Adobe Target**.
 
    >[!NOTE]
    >
    >If the Experience Fragment has already been exported, select **Update in Adobe Target**.
 
-1. Tap/click **Export without publishing** or **Publish** as required.
+1. Select **Export without publishing** or **Publish** as required.
 
    >[!NOTE]
    >
    >Selecting **Publish** will publish the experience fragment right away and send it to Target.
 
-1. Tap/click **OK** in the confirmation dialog.
+1. Select **OK** in the confirmation dialog.
 
    Your experience fragment should now be in Target.
 

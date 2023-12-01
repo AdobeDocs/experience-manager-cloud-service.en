@@ -36,6 +36,11 @@ You can create an Adaptive Form Fragment from scratch or save a panel in an exis
 1. Click to open the **Form Model** tab, and from the **Select From** drop-down menu, select one of the following models for the fragment:
 
     * **None**: Specifies to create the fragment from scratch without using any form model.
+
+      >[!NOTE]
+      >
+      > In Adaptive Forms, you can use single form fragment (based on Core Components) multiple times in a form. It supports both none-based and schema-based form fragments.
+
     * **Form Template**: Specifies to create the fragment using an XDP template uploaded to [!DNL AEM Forms]. Select the appropriate XDP template as the form model for the fragment.
 
    ![Creating an Adaptive Form using form template as model](assets/form-template-model.png)
@@ -65,9 +70,9 @@ In addition, if you selected an XML schema or XDP form template as the form mode
 1. Open an Adaptive Form that contains the panel you want to save as Adaptive Form Fragment.
 1. In the panel toolbar, click **[!UICONTROL Save as Fragment]**. The Save As Fragment dialog opens.
 
-   >[!NOTE]
-   >
-   >If the panel you are saving as fragment contains child panel, the resulting fragment will include them.
+      >[!NOTE]
+      >
+      >If the panel you are saving as fragment contains child panel, the resulting fragment will include them.
 
 1. In the Fragment Creation dialog, specify the following information:
 
@@ -153,6 +158,16 @@ You can create nested Adaptive Form Fragments, which means you can drag-drop a f
 ### Change fragments {#change-fragments}
 
 You can replace or change an Adaptive Form Fragment by another fragment by using the **Select Fragment asset** property in the Edit component dialog for an Adaptive Form Fragment panel.
+
+### Using a form fragment multiple times in an Adaptive Form {#using-form-fragment-mutiple-times-in-af}
+
+You can use a schema-based form fragment multiple times in an Adaptive Form to save data uniquely for each form fragment fields. For example, you can use an address form fragment to collect address details for permanent, communication, and present living addresses in a loan application form. 
+
+![using multiple fragment in adaptive form](/help/forms/assets/using-multiple-fragment-af.gif)
+
+  >[!NOTE]
+  >
+  > If you use none-based form fragments multiple times in an Adaptive form, data synchronization issue between the fields of the fragments occurs. You can use a [core component based form fragment](/help/forms/adaptive-form-fragments-core-components.md) that is not tied to any form data model, multiple times in a form without experiencing data synchronization issues. 
 
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 
@@ -240,9 +255,11 @@ To localize an Adaptive Form that contains Adaptive Form Fragments, you need to 
 * (**Mac only**) To ensure that the form fragments functionality works perfectly in all the scenarios, add the following entry to the /private/etc/hosts file:
   `127.0.0.1 <Host machine>` **Host machine**: The Apple Mac machine on which [!DNL AEM Forms] is deployed.
 
+<!--
 ## Reference Fragments {#reference-fragments}
 
 Reference Adaptive Form Fragments that you can use to create your form are available. For more information, see [Reference Fragments](reference-adaptive-form-fragments.md).
+-->
 
 >[!MORELIKETHIS]
 >

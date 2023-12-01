@@ -104,7 +104,7 @@ And if you wanted to output a simple message only when the build is run outside 
 
 >[!NOTE]
 >
->Artifacts from a password-protected Maven repository should only be used very cautiously as code deployed through this mechanism is currently not run through all of the [code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) implemented in Cloud Manager's quality gates. Therefore it should only be used in rare cases and for code not tied to AEM. It is advised to also deploy the Java sources and the whole project source code alongside with the binary.
+>Artifacts from a password-protected Maven repository should be used cautiously because code deployed through this mechanism is currently not run through [code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) implemented in Cloud Manager's quality gates. Therefore it should only be used in rare cases and for code not tied to AEM. It is advised to also deploy the Java sources and the whole project source code alongside with the binary.
 
 To use a password-protected Maven repository within Cloud Manager:
 

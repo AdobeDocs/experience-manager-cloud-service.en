@@ -289,6 +289,8 @@ You can invoke the custom servlet that includes `ValidateCAPTCHA` API using the 
 
 Similarly, you can use rule editor to include a custom method to validate CAPTCHA in an Adaptive Form.
 
+<!--
+
 ### Add custom CAPTCHA services {#add-custom-captcha-service}
 
 [!DNL Experience Manager Forms] provides reCAPTCHA as the CAPTCHA service. However, you can add a custom service to display in the **[!UICONTROL CAPTCHA Service]** drop-down list.  
@@ -325,7 +327,7 @@ public interface GuideCaptchaValidator {
 
 `captchaPropertyNodePath` refers to the resource path of the CAPTCHA component in the Sling repository. Use this property to include details specific to the CAPTCHA component. For example, `captchaPropertyNodePath` includes information for the reCAPTCHA cloud configuration configured on the CAPTCHA component. The cloud configuration information provides **[!UICONTROL Site Key]** and **[!UICONTROL Secret Key]** settings for implementing the reCAPTCHA service.
 
-`userResponseToken` refers to the `g_recaptcha_response` that gets generated after solving a CAPTCHA in a form.
+`userResponseToken` refers to the `g_recaptcha_response` that gets generated after solving a CAPTCHA in a form. -->
 
 ### Edit reCAPTCHA service domain {#reCAPTCHA-service-domain}
 
@@ -345,7 +347,10 @@ To set values of a configuration, [Generate OSGi Configurations using the AEM SD
 
 {{see-also}}
 
+<!--
 
 >[!MORELIKETHIS]
 >
 >* [Reference Themes, Templates, and Form Data models for Adaptive Forms](/help/forms/reference-themes-templates-data-models.md)
+
+-->
