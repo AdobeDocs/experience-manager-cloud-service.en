@@ -150,7 +150,7 @@ Perform this step only if the `<locale>` you are adding is not among `en`, `de`,
     
     ```
 
-    ![Add the newly-created folders in the `filter.xml` under `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
+    ![Add the created folders in the `filter.xml` under `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
 ### 6. Commit the changes and deploy the pipeline {#commit-changes-in-repo-deploy-pipeline}
 

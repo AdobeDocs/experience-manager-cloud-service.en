@@ -56,7 +56,7 @@ In most cases only one candidate is necessary and the priority can be set to `0`
 
 ## Creating ContextHub UI Module Types {#creating-contexthub-ui-module-types}
 
-Create custom UI module types when the ones that are [installed with ContextHub](sample-modules.md) do not meet your requirements. To create a UI module type, create a new UI module renderer by extending the `ContextHub.UI.BaseModuleRenderer` class and then registering it with `ContextHub.UI`.
+Create custom UI module types when the ones that are [installed with ContextHub](sample-modules.md) do not meet your requirements. To create a UI module type, create a UI module renderer by extending the `ContextHub.UI.BaseModuleRenderer` class and then registering it with `ContextHub.UI`.
 
 To create a UI module renderer, create a `Class` object that contains the logic that renders the UI module. At a minimum, your class must perform the following actions:
 

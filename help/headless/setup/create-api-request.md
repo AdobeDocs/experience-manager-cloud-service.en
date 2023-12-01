@@ -25,7 +25,7 @@ Before the GraphQL APIs can be used, a GraphQL endpoint must be created.
 1. Select **Create**.
 1. The **Create new GraphQL Endpoint** dialog box opens. Here you can specify:
    * **Name**: name of the endpoint; you can enter any text.
-   * **Use GraphQL schema provided by**: use the dropdown to select the required configuration.
+   * **Use GraphQL schema provided by**: use the drop-down list to select the required configuration.
 1. Confirm with **Create**.
 1. In the console, a **Path** is displayed based on the configuration created earlier. This path is used to run GraphQL queries.
 

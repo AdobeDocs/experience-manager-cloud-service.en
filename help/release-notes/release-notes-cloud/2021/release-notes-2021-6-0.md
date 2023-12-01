@@ -96,7 +96,7 @@ The next release is planned for July 15, 2021.
 * The view settings are enhanced to let users choose a default view and a default sorting parameter.
 * The Linkshare download functionality uses asynchronous downloads that boosts the download speed.
 * Users can search and filter the folders based on property predicates.
-* [!DNL Experience Manager Assets] embeds the the PDF Viewer powered by [!DNL Adobe Document Cloud] to preview the supported documents. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] embeds the PDF Viewer powered by [!DNL Adobe Document Cloud] to preview the supported documents. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5.
 
 ### Bugs fixed in [!DNL Assets] {#bugs-fixed-assets}
 

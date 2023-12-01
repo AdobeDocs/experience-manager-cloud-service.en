@@ -27,7 +27,7 @@ Connected Assets functionality supports the above use cases by integrating [!DNL
 
 When editing pages in [!UICONTROL Page Editor] as target destination, the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment that acts as a source of assets. The administrators create a one-time integration of a deployment of [!DNL Experience Manager] with [!DNL Sites] capability with another deployment of [!DNL Experience Manager] with [!DNL Assets] capability. You can also use Dynamic Media images in your site's web pages through Connected Assets and use the Dynamic Media functionalities, such as smart crop and image presets.
 
-For the [!DNL Sites] authors, the remote assets are available as read-only local assets. The functionality supports seamless search and access to remote assets on the Site Editor. For any other use cases that may require the complete asset-corpus to be available on Sites, consider migrating the assets in bulk instead of leveraging Connected Assets.
+For the [!DNL Sites] authors, the remote assets are available as read-only local assets. The functionality supports seamless search and access to remote assets on the Site Editor. For any other use cases that may require the complete asset-corpus to be available on Sites, consider migrating the assets in bulk instead of using Connected Assets.
 
 ### Prerequisites and supported deployments {#prerequisites}
 
@@ -227,7 +227,7 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
    ![Remote references in asset Properties page](assets/connected-assets-remote-reference.png)
 
 1. The references for [!DNL Sites] pages display total count of references for each local [!DNL Sites]. It may take some time to find all the references and display the total number of references.
-1. The list of references is interactive and DAM users can click on a reference to open the referencing page. If remote references cannot be fetched for some reason, a notification is displayed informing the user of the failure.
+1. The list of references is interactive and DAM users can click a reference to open the referencing page. If remote references cannot be fetched for some reason, a notification is displayed informing the user of the failure.
 1. Users can move or delete the asset. When moving or deleting an asset, the total number of references of all the selected assets/folders are displayed in a warning dialog. When deleting an asset for which the references are not yet retrieved, a warning dialog is displayed.
 
    ![force delete warning](assets/delete-referenced-asset.png)

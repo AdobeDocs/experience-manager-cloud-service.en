@@ -13,7 +13,7 @@ The Quick Site Creation tool is an easy-to-use tool that allows administrators t
 
 To do this, the Quick Site Creation tool uses several powerful AEM as a Cloud Service features:
 
-1. **AEM Site Templates** are used to define base site content and structure and site styling and are selected by an administrator when creating a new site.
+1. **AEM Site Templates** are used to define base site content and structure and site styling and are selected by an administrator when creating a site.
 1. An **AEM Site Theme** is included in the template and contains the CSS, JavaScript, and static resources that define the styling of the site.
 1. The **Front-End Pipeline** can be used to deploy customizations to the site theme independently of back-end development.
 

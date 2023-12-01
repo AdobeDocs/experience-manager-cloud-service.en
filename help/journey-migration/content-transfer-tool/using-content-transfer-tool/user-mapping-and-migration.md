@@ -21,14 +21,14 @@ A major change to AEM as a Cloud Service is the fully integrated use of Adobe ID
 
 ## Principal Migration Details {#principal-migration-detail}
 
-The Content Transfer Tool and Cloud Acceleration Manager will migrate to the cloud system any principals associated with the content being migrated.  The Content Transfer Tool does this by copying all principals from the source AEM system during the extraction process.  CAM Ingestion then selects and migrates only those principals associated with the content being ingested.
+The Content Transfer Tool and Cloud Acceleration Manager will migrate to the cloud system any principals associated with the content being migrated.  The Content Transfer Tool does this by copying all principals from the source AEM system during the extraction process.  CAM Ingestion then selects and migrates only those principals associated with the content being ingested. If a principal is on an ACL or CUG policy of migrated content, that principal and all groups it is in and their ancestor (parent) groups will all be migrated. Further, if a principal on the content is a group, all its descendent (child) groups and users will also be migrated.
 
 ## User Mapping Details {#user-mapping-detail}
 
 AEM users can be mapped to corresponding Adobe IMS users with the same email address.  This mapping can be done automatically in CTT (during the extraction step), and whether it is done or not can be controlled by a toggle before extraction is started. The toggle's default setting can be overridden by the user when starting extraction.
 
 * If the source system is an author instance, by default the choice to do the mapping is _on_, because it is the recommended process.
-* If the source system is a publish instance, by default the choice to do the mapping is _off_, because users are not normally migrated or used on publish instances; or if they are used, a different authentication system (i.e., not IMS) is typically used for them.
+* If the source system is a publish instance, by default the choice to do the mapping is _off_, because users are not normally migrated or used on publish instances; or if they are used, a different authentication system (that is, not IMS) is typically used for them.
 
 Whether or not users are mapped during extraction, they, along with the groups, are migrated to the cloud system during ingestion if they are associated with content being migrated.
 

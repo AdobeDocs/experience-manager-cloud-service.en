@@ -96,8 +96,8 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 With [the prerequisites](#prerequisites) met, it is easy for a content author to enable PWA features to a site. The following is a basic outline of how to do this. Individual options are detailed in the section [Detailed Options.](#detailed-options)
 
 1. Log into AEM.
-1. From the main menu, tap or click **Navigation** -&gt; **Sites**.
-1. Select your sites project and tap or click [**Properties**](/help/sites-cloud/authoring/fundamentals/page-properties.md) or use the hotkey `p`.
+1. From the main menu, select **Navigation** &gt; **Sites**.
+1. Select your sites project and select [**Properties**](/help/sites-cloud/authoring/fundamentals/page-properties.md) or use the hotkey `p`.
 1. Select the **Progressive Web App** tab and configure the applicable properties. At a minimum, you want to:
    1. Select the option **Enable PWA**.
    1. Define the **Startup URL**.
@@ -117,7 +117,7 @@ With [the prerequisites](#prerequisites) met, it is easy for a content author to
 
       ![Define PWA offline paths](../assets/pwa-offline.png)
 
-1. Tap or click **Save &amp; Close**.
+1. Select **Save &amp; Close**.
 
 Your site is now configured and you can [install it as a local app.](#using-pwa-enabled-site)
 
