@@ -100,10 +100,9 @@ To add a connection:
     >
     >- Reorganize the Private Key by removing *\r\n* from its value. For example, if the private key value is:
     >*\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw*, then restructure the private key before adding it as:
+    >
     >*IJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL*
-    >
     >*My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw*
-    >
     >- You also have the option to retrieve a private key or certificate from the file by selecting the **Extract** button.
 
 1. Click **Continue**.
@@ -151,5 +150,5 @@ To configure submit action of an Adaptive Form for Workfront Fusion:
 
 - During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to update the Author URL with the Publish URL.
 
-- It is recommended to choose your web hook name carefully, as there is no way to get the scenario name at the AEM instance. In case, you change the web hook name in future it is not reflected at the AEM Forms submit action drop-down list.
-- A scenario can have multiple web hook links but at a time only one webhook link is active. It is recommended to delete the unlinked webhook, so that it does not appear in AEM Forms submit action drop-down list.
+- It is recommended to choose your webhook name carefully, as there is no way to get the scenario name at the AEM instance. In case, you change the webhook name in future it is not reflected at the AEM Forms submit action drop-down list.
+- A scenario can have multiple webhook links but at a time only one webhook link is active. It is recommended to delete the unlinked webhook, so that it does not appear in AEM Forms submit action drop-down list.
