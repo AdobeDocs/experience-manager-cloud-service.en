@@ -9,7 +9,7 @@ hidefromtoc: yes
 
 # Integrate Adobe Workfront Fusion with AEM Forms Submission
 
-Adobe Workfront Fusion automates the process of repeating the same tasks, allowing you to focus on new tasks instead of recurring ones. Workfront Fusion connects AEM Forms using services to create scenarios that automatically transfer data. A scenario consists of series of modules which executes data transfer between applications and web services. In a scenario, you orchestrate various modules to automate tasks.
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automates the process of repeating the same tasks, allowing you to focus on new tasks instead of recurring ones. Workfront Fusion connects AEM Forms using services to create scenarios that automatically transfer data. A scenario consists of series of modules which executes data transfer between applications and web services. In a scenario, you orchestrate various modules to automate tasks.
 
 For example, using Workfront Fusion, you can create a scenario to monitor new data in an application using a module in an AEM Form. A subsequent module uses the gathered data to create a record in a table. Once a scenario is set up, Workfront Fusion automatically executes the tasks whenever a user fills out a new form, updating the database seamlessly.
 
