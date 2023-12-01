@@ -38,13 +38,13 @@ To create a Workfront scenario:
 1. Click **[!UICONTROL Scenarios]** ![Share icon](/help/forms/assets/Smock_ShareAndroid_18_N.svg) in the left panel. 
  1. Click **[!UICONTROL Create a new scenario]** in the upper-right corner of the page.
 1. Click **[!UICONTROL New scenario]** in the upper-left corner and type a proper name for the scenario.
-1. Click the question mark, to add a first module to the scenario and select **[UICONTROL AEM Forms]**.
+1. Click the question mark, to add a first module to the scenario and select **[!UICONTROL AEM Forms]**.
 
       ![Add a AEM Forms module](/help/forms/assets/workfront-aemforms.png)
 
-    > [!NOTE]
+    >[!NOTE]
     >
-    > It is mandatory to add first module as **[UICONTROL AEM Forms]**.
+    >It is mandatory to add first module as **[UICONTROL AEM Forms]**.
 
     The **[!UICONTROL Watch for Form Events]** dialog box appears.
 1. Select the **[!UICONTROL Watch for Form Events]** dilog box and a window to add a **[Webhook]** appears.
@@ -76,9 +76,9 @@ To add a connection:
 
 1. Enter the **Instance URL**.
 
-    > [!NOTE]
+    >[!NOTE]
     >
-    > Add the Author URL to the instance URL, during testing or development of the Workfront. Change the Author URL to Publish URL while deploying the Workfront Fusion to production.
+    >Add the Author URL to the instance URL, during testing or development of the Workfront. Change the Author URL to Publish URL while deploying the Workfront Fusion to production.
 
      You can retrieve the [service credentials from the Developer console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) required to create a connection.
 
@@ -100,7 +100,7 @@ To add a connection:
 1. Click **[!UICONTROL Save]**.
 1. Click **[!UICONTROL Ok]** and save the changes for the scenario.
 
-#### 1.3 Activate the Workfront scenario {#add-connection}
+#### 1.3 Activate the Workfront scenario {#activate-scenario}
 
 To make the scenario active:
 
@@ -132,7 +132,7 @@ To configure submit action of an Adaptive Form for Workfront Fusion:
 
 ## Best Practices {#best-practices}
 
-* During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to update the Author URL with the Publish URL.
+- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to update the Author URL with the Publish URL.
 
-* It is recommended to choose your web hook name carefully, as there is no way to get the scenario name at the AEM instance. In case, you change the web hook name in future it is not reflected at the AEM Forms submit action drop-down list.
-* A scenario can have multiple web hook links but at a time only one webhook link is active. It is recommended to delete the unlinked webhook, so that it does not appear in AEM Forms submit action drop-down list.
+- It is recommended to choose your web hook name carefully, as there is no way to get the scenario name at the AEM instance. In case, you change the web hook name in future it is not reflected at the AEM Forms submit action drop-down list.
+- A scenario can have multiple web hook links but at a time only one webhook link is active. It is recommended to delete the unlinked webhook, so that it does not appear in AEM Forms submit action drop-down list.
