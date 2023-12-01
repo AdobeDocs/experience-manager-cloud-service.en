@@ -1,7 +1,6 @@
 ---
 title: How do I use layout mode to resize components for adaptive forms?
 description: Define the position of AEM Forms components, learn to access layout mode, resize components, resize panels and define multicolumn layout for a panel.
-feature: Adaptive Forms
 role: User
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
