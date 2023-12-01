@@ -1,7 +1,6 @@
 ---
 title: How to create Multi-step Form Sequence?
 description: With [!DNL Experience Manager Forms], you can define a sequence of form panels for the users to navigate and fill an Adaptive Form.
-feature: Adaptive Forms
 role: User
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
