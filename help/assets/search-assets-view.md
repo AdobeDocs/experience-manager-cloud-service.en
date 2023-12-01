@@ -166,7 +166,7 @@ You can select the assets that display in the search results and do the followin
 
 ## Configuring search first homepage {#configuring-search-first-homepage}
 
-Search first homepage allows you to navigate through various files and folders instantly. It lets you effortlessly navigate through asset types, metadata, smart tags, and even the content itself without knowing the exact keyword. [!DNL Assets view] allows you to configure your homepage by controlling what should appear when you log on to [!DNL Assets view].
+Experience Manager Assets enables you to select the default landing page for your organization. When using Search First as the home page, you also have options to tailor the branding of the page by configuring the background and logo images to match your brand.
 
 To configure the search first homepage, execute the steps below:
 
@@ -185,7 +185,7 @@ You can add brand logo and background image to your search first homepage. Execu
 
 1. Navigate to **[!UICONTROL Background and Logo image]** section under **[!UICONTROL Homepage]**.
 1. Click **[!UICONTROL Replace]** to browse images from existing assets repository.
-1. Click **[!UICONTROL Save]**. [Preview](#preview-configured-homepage) the changes to go over the modifications.
+1. Click **[!UICONTROL Save]**. [Preview](#preview-configured-homepage) the changes to review the modifications.
 
 ### Preview configured homepage {#preview-configured-homepage}
 
