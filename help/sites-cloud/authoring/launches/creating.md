@@ -19,7 +19,7 @@ Optionally, you can specify the **Launch Date** (and time) to define when the la
 >
 >* `/libs/launches/templates/outofscope`
 >
->These pages cannot be edited. You will see the message: 
+>These pages cannot be edited. You see the message: 
 >
 >* **This page is not part of the launch. Go to production page**
 

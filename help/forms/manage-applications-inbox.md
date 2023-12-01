@@ -55,7 +55,7 @@ Tasks that are assigned to a group appear in the Inbox of all group members. Any
 When you open a task, you can view task details and perform available actions. The actions available for a task are defined in the Assign task step of the associated Forms Workflow.
 
 1. Tap to select the thumbnail of the task. Options to open or delegate the selected task appear at the top.
-1. Tap **Open** to view task details and take actions. The detailed task view opens. In this view, you can view task details and take actions on the task.
+1. Select **Open** to view task details and available actions. The detailed task view opens. In this view, you can view task details and act on a task.
 
    >[!NOTE]
    >
@@ -90,7 +90,7 @@ In addition, the tab displays task history for each completed stage in the workf
 
 The Actions toolbar shows all available options for the task. While Save, Reset, and Delegate are default actions, other available actions are configured in the [Assign task step](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem). In the example above, Approve and Reject are configured in the workflow.
 
-As you take action on the task, it proceeds further in the workflow.
+As you act on the task, it proceeds further in the workflow.
 
 ### View completed tasks {#view-completed-tasks}
 

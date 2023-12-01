@@ -45,7 +45,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Retrieving a Tag object {#retrieving-a-tag-object}
 
-A `Tag` can be retrieved through the `TagManager`, by either resolving an existing tag or creating a new one:
+A `Tag` can be retrieved through the `TagManager`, by either resolving an existing tag or creating one:
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -162,4 +162,4 @@ Finnish is now available in the tag dialog of the page properties and in the **E
 
 >[!NOTE]
 >
->The new language needs to be one of the AEM recognized languages, that is, it needs to be available as a node below `/libs/wcm/core/resources/languages`.
+>The new language must be one of the AEM recognized languages. That is, it must be available as a node below `/libs/wcm/core/resources/languages`.

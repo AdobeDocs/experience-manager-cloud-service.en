@@ -11,7 +11,7 @@ exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
 [[!DNL Experience Manager Forms] Data Integration](data-integration.md) provides an [!DNL Azure] storage configuration to integrate forms with [!DNL Azure] storage services. The Form Data Model can be used to create Adaptive Forms that interact with [!DNL Azure] server to enable business workflows. For example:
 
 * Write data into [!DNL Azure] on Adaptive Form submission.
-* Write data in [!DNL Azure] through custom entities defined in Form Data Model and vice versa.
+* Write data in [!DNL Azure] through custom entities defined in Form Data Model and conversely.
 * Query [!DNL Azure] server for data and prepopulate Adaptive Forms.
 * Read data from [!DNL Azure] server.
 
