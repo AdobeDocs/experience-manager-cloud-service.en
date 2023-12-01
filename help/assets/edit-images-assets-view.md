@@ -76,12 +76,12 @@ You can quickly convert a JPEG image into a PNG format using Adobe Express. Exec
 
 ## Edit images using Adobe Express embedded editor {#edit-using-embedded-editor}
 
-[!DNL Assets view] provides comprehensive editing of the images directly from your assets repository. The embedded editor allows easy and intuitive editing of an image using [!DNL Adobe Express]. It accelerates reusability of the assets by using templates or modifying the existing assets. You can use pre-defined elements to make your asset look stunning or perform quick actions to edit your image with just a few clicks.
+Users with access to Express now have integrated image editing and creation tools from Adobe Express and Adobe Firefly available directly within AEM Assets to improve content reuse and accelerate content velocity. You can also use pre-defined elements to make your asset look stunning or perform quick actions to edit your image with just a few clicks.
 
 To edit images using [!DNL Adobe Express] embedded editor, follow the steps below:
 
 1. Select an image from your [!DNL Experience Manager] Assets repository.
-1. Click **[!UICONTROL Open in Adobe Express]**. [!DNL Adobe Express] screen appears.
+1. Click **[!UICONTROL Open in Adobe Express]**.
 
    ![Adobe Express embedded editor](assets/embedded-editor.png)
 
@@ -89,20 +89,20 @@ To edit images using [!DNL Adobe Express] embedded editor, follow the steps belo
 
 1. Once you complete image editing, you can download an asset as a new asset or save the asset as a new version. 
 
-## Create new asset using Adobe Express {#create-new-embedded-editor}
+## Create new assets using Adobe Express {#create-new-embedded-editor}
 
-[!DNL Assets view] provides functionality to create a new template from scratch using [!DNL Adobe Express] embedded editor. To create a new asset using [!DNL Adobe Expresss], execute the below steps:
+[!DNL Assets view] provides functionality to create a new template from scratch using [!DNL Adobe Express] embedded editor. To create a new asset using [!DNL Adobe Express], execute the below steps:
 
-1. Navigate to **[!UICONTROL My Workspace]** and click **[!UICONTROL Create]**. [!DNL Adobe Express] blank canvas displays within the [!DNL Assets view] user interface.
+1. Navigate to **[!UICONTROL My Workspace]** and click **[!UICONTROL Create]** within the Adobe Express banner that displays above the [!UICONTROL Quick access] section. [!DNL Adobe Express] blank canvas displays within the [!DNL Assets view] user interface.
 1. Create your content using [Templates](https://helpx.adobe.com/in/express/using/work-with-templates.html). Otherwise, navigate to **[!UICONTROL Your Stuff]** to modify existing content.
 1. Once you complete editing, click **[!UICONTROL Save as new asset]**. 
-1. Specify destination path for the created asset.
+1. Specify destination path for the created asset and click **[!UICONTROL Save]**.
 
 >[!NOTE]
 >
->* You can only modify `JPEG` and `PNG` formats.
->* The asset size should be less than 14 MB.
->* You can save an image as `PDF`, `JPEG`, or `PNG` formats.
+>* You can only modify images of `JPEG` and `PNG` format types.
+>* The asset size must be less than 14 MB.
+>* You can save an image in `PDF`, `JPEG`, or `PNG` formats.
 
 ## Edit images using [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
 
