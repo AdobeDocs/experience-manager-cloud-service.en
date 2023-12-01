@@ -47,7 +47,7 @@ To create a Workfront scenario:
     > It is mandatory to add first module as **[!UICONTROL AEM Forms]**.
 
     The **[!UICONTROL Watch for Form Events]** dialog box appears.
-1. Select the **[!UICONTROL Watch for Form Events]** dilog box and a window to add a **[Webhook]** appears.
+1. Select the **[!UICONTROL Watch for Form Events]** dialog box and a window to add a **[Webhook]** appears.
 
 #### 1.1 Add a webhook {#add-webhook}
 
