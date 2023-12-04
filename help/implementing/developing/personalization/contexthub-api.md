@@ -156,7 +156,7 @@ Merges a data object or an array with the store data. Each key/value pair in the
 * **Object:** Keys are the property names.
 * **Array:** Keys are the array indices.
 
-Note that values can be objects.
+Values can be objects.
 
 ##### Parameters {#parameters-addallitems}
 

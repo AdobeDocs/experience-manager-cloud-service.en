@@ -106,7 +106,7 @@ See [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit
 
 The customer validations quality gate is a placeholder for the customer's own testing strategy and effort, executed before the customer's application changes reach the AEM cloud deployment pipelines.
 
-Here you can, of course, choose the tools and frameworks you prefer. In contrast to customer function tests and custom UI tests, there are no AEM as a Cloud Service related limits, and we therefore recommend to perform long-running functional and UI testing here.
+Here you can choose the tools and frameworks you prefer. In contrast to customer function tests and custom UI tests, there are no AEM as a Cloud Service related limits, and we therefore recommend to perform long-running functional and UI testing here.
 
 While you are free to choose any tool and framework, we recommend you align HTTP-based integration tests and UI tests with the tools and frameworks available in the custom functional tests and custom UI test quality gates. We recommend integrating [Rapid Development Environments (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) in your local testing strategy to test as close as possible to AEM cloud environments.
 

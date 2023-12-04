@@ -39,7 +39,7 @@ If product and category data is required in commerce components or AEM back-offi
 
 ### Product Picker
 
-Clicking the folder icon opens the picker modal UI (for example product teaser)
+Clicking the folder icon opens the picker modal UI (for example, product teaser)
 ![product picker](assets/product-picker-open.png)
 
 Products can be found either by browsing through the catalog structure on the left or search. Full-text search respects the selected category and limits the search results to this category.
@@ -51,7 +51,7 @@ Products with variations are marked with a folder icon that can be clicked to sh
 
 ### Category Picker
 
-Works like a product picker. Clicking the folder icon opens the picker modal UI (for example category carousel)
+Works like a product picker. Clicking the folder icon opens the picker modal UI (for example, category carousel)
 ![category picker](assets/category-picker-open.png)
 
 Browse the catalog structure on the left and select the category.

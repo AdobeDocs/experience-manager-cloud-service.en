@@ -175,7 +175,7 @@ Create a plan on what content translation you need.
 
 Be clear about your content update workflow. What is the approval process that the system must support? Might AEM workflows be used to automate this process?
 
-Note that your [content hierarchy](#content-hierarchy) can be used to make translation easier.
+Your [content hierarchy](#content-hierarchy) can be used to make translation easier.
 
 See the [additional resources](#additional-resources) section for additional documentation on AEM workflows and translation tools including links to the AEM Headless Translation Journey.
 

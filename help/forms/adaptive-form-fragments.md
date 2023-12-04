@@ -92,7 +92,7 @@ In addition, if you selected an XML schema or XDP form template as the form mode
 
     * **Form Model**: Depending on the form model for the Adaptive Form, this field displays the **XML Schema**, **Form Template**, or **None**. It is a non-editable field.
 
-    * **Fragment Model Root**: Appears only in XSD-based Adaptive Forms. It specifies the root for the fragment model. You can choose **/** or the XSD complex type from the drop-down. Note that you can reuse the fragment in another Adaptive Form only if you select the complex type as the fragment model root.
+    * **Fragment Model Root**: Appears only in XSD-based Adaptive Forms. It specifies the root for the fragment model. You can choose **/** or the XSD complex type from the drop-down. You can reuse the fragment in another Adaptive Form only if you select the complex type as the fragment model root.
       If you choose **/** as the fragment model root, the complete XSD tree from the root is visible in the Adaptive Form Data Model tab. For a complex type fragment model root, only the descendants of the selected complex type are visible in the Adaptive Form Data Model tab.
 
     * **XSD Ref**: Appears only in XSD-based Adaptive Forms. It displays the location of the XML schema.

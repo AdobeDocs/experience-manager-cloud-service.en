@@ -457,7 +457,7 @@ Although AEM offers several translation solutions and interfaces, it is also pos
 
 ### Exporting a Translation Job {#exporting-a-translation-job}
 
-You can download the content of a translation job, for example to send to a translation provider that is not integrated with AEM via a connector, or to review the content.
+You can download the content of a translation job, for example, to send to a translation provider that is not integrated with AEM via a connector, or to review the content.
 
 1. From the drop-down menu of the translation job tile, select **Export**.
 1. In the dialog box, select **Download Exported File**, and if necessary use the web browser dialog box to save the file.
@@ -465,7 +465,7 @@ You can download the content of a translation job, for example to send to a tran
 
 ### Importing a Translation Job {#importing-a-translation-job}
 
-You can import translated content into AEM, for example when your translation provider sends it to you because they are not integrated with AEM via a connector.
+You can import translated content into AEM, for example, when your translation provider sends it to you because they are not integrated with AEM via a connector.
 
 1. From the drop-down menu of the translation job tile, select **Import**.
 1. Use the web browser's dialog box to select the file to import.
