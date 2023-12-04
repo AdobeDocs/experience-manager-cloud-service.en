@@ -9,7 +9,7 @@ hidefromtoc: yes
 
 # Integrate Adobe Workfront Fusion with AEM Forms Submission
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automates the process of repeating the same tasks, allowing you to focus on new tasks instead of recurring ones. Adobe Workfront Fusion includes multiple scenarios. A scenario consists of series of modules which executes data transfer between applications and web services. In a scenario, you orchestrate various modules to automate tasks. Workfront Fusion connects AEM Forms using services to create scenarios that automatically transfer data.
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automates the process of repeating the same tasks, allowing you to focus on new tasks instead of recurring ones using scenarios. A scenario consists of series of modules which executes data transfer between applications and web services. In a scenario, you orchestrate various modules to automate tasks. Workfront Fusion connects AEM Forms using services to create scenarios that automatically transfer data.
 
 For example, using Workfront Fusion, you can create a scenario to monitor new data in an application using a module in an AEM Form. A subsequent module uses the gathered data to create a record in a table. Once a scenario is set up, Workfront Fusion automatically executes the tasks whenever a user fills out a new form, updating the database seamlessly.
 
@@ -78,7 +78,7 @@ To add a connection:
 
     >[!NOTE]
     >
-    > Add the Author URL to the instance URL, during testing or development of the Workfront. Replicate the scenario URLs for the Publish instance.
+    > Add the Author URL to the instance URL, during testing or development of the Workfront. Replicate the scenario URL for the Publish instance.
 
      You can retrieve the [service credentials from the Developer console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) required to create a connection.
 
@@ -148,7 +148,7 @@ To configure submit action of an Adaptive Form for Workfront Fusion:
 
 ## Best Practices {#best-practices}
 
-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance.
+- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URL for the Publish instance.
 
 - It is recommended to choose your webhook name carefully, as there is no way to get the scenario name at the AEM instance. In case, you change the webhook name in future it is not reflected at the AEM Forms submit action drop-down list.
 - A scenario can have multiple webhook links but at a time only one webhook link is active. It is recommended to delete the unlinked webhook, so that it does not appear in AEM Forms submit action drop-down list.
