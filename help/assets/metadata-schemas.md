@@ -222,7 +222,7 @@ Metadata inheritance by assets is based on the schema that is applied to the top
 1. In the **[!UICONTROL Metadata Schema Forms]** page, select the `my_default` form, and then click **[!UICONTROL Edit]**.
 1. In the **[!UICONTROL Metadata Schema Editor]** page, add a text field to the schema form. For example, add a field with the label **[!UICONTROL Category]**.
 1. Click **[!UICONTROL Save]**. The modified form is listed in the **[!UICONTROL Metadata Schema Forms]** page.
-1. Select **[!UICONTROL Apply to Folder(s)]** from the toolbar to apply the custom metadata to a folder.
+1. Select **[!UICONTROL Apply to Folders]** from the toolbar to apply the custom metadata to a folder.
 1. Select the folder on which to apply the modified schema and then select **[!UICONTROL Apply]**.
 1. If the folder has the other metadata schema applied, a message appears warning that you are about to overwrite the existing metadata schema. Click **Overwrite**.
 1. Click **OK** to close the success message.
@@ -239,7 +239,7 @@ You can define mandatory fields at a folder level, which is enforced on assets t
 1. Click the Experience Manager logo and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Assets]** &gt; **[!UICONTROL Metadata Schemas]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
 1. Save the default metadata form as a custom form. For example, save it as `my_default`.
 1. Edit the custom form. Add a mandatory field. For example, add a **[!UICONTROL Category]** field and make the field mandatory.
-1. Click **[!UICONTROL Save]**. The modified form is listed in the **[!UICONTROL Metadata Schema Forms]** page. Select the form and then select **[!UICONTROL Apply to Folder(s)]** from the toolbar to apply the custom metadata to a folder.
+1. Click **[!UICONTROL Save]**. The modified form is listed in the **[!UICONTROL Metadata Schema Forms]** page. Select the form and then select **[!UICONTROL Apply to Folders]** from the toolbar to apply the custom metadata to a folder.
 1. Navigate to the folder and upload some assets with missing metadata for the mandatory field you added to the custom form. A message for the missing metadata for the mandatory field is displayed on the Card view of the asset.
 1. (Optional) Access `https://[server]:[port]/system/console/components/`. Configure and enable `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` component that is disabled by default. Set a frequency at which Experience Manager checks for the validity of metadata on the assets.
 

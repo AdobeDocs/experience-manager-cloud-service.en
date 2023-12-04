@@ -39,7 +39,7 @@ See these sample queries for illustrations of create queries, together with samp
 >
 >You can access the query editor from either: 
 >
->* **Tools** -> **General** -> **GraphQL Query Editor**
+>* **Tools** > **General** > **GraphQL Query Editor**
 >* directly; for example, `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
@@ -1802,7 +1802,7 @@ The sample queries are based on the following structure, which uses:
 For the sample queries, you use the following Content Models, and their interrelationships (references ->):
 
 * [Company](#model-company)
-  -> [Person](#model-person)
+  > [Person](#model-person)
   &nbsp;&nbsp;&nbsp;&nbsp;-> [Award](#model-award)
 
 * [City](#model-city)

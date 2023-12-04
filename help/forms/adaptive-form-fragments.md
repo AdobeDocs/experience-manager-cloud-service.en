@@ -245,7 +245,7 @@ To localize an Adaptive Form that contains Adaptive Form Fragments, you need to 
 * Ensure that the fragment name is unique. The fragment fails to create if there is an existing fragment with the same name.
 * In an XDP-based Adaptive Form, if you save a panel as fragment that includes another XDP fragment, the resulting fragment is automatically bound to the child XDP fragment. In case of an XSD-based Adaptive Form, the resulting fragment is bound to the schema root.
 * When you create an Adaptive Form Fragment, a fragment node gets created, which is similar to the guideContainer node for an Adaptive Form, in CRXDe Lite.
-* A fragment in an Adaptive Form that uses a different Form Data Model is not supported. For example, an XDP-based fragment is not supported in an XSD-based Adaptive Form and vice-versa.
+* A fragment in an Adaptive Form that uses a different Form Data Model is not supported. For example, an XDP-based fragment is not supported in an XSD-based Adaptive Form and conversely.
 * Adaptive Form Fragments are available for use through the Adaptive Form Fragments tab in AEM content finder.
 * Any expression, script, or style in a stand-alone Adaptive Form Fragment is retained when it is inserted by reference or embedded in an Adaptive Form.
 * You cannot edit an Adaptive Form Fragment, which is inserted by reference, from within an Adaptive Form. To edit, you either edit the stand-alone Adaptive Form Fragment or embed the fragment in the Adaptive Form.

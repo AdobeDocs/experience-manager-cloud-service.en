@@ -133,7 +133,7 @@ The rules that are used to resolve these segments are summarized as follows:
 
 >[!WARNING]
 >
->The installed segments are provided as reference configurations to help you build your own dedicated configuration for your project and as such should not be used directly.
+>The installed segments are provided as reference configurations to help you build your own dedicated configuration for your project. Do not use them directly.
 
 ## Debugging ContextHub {#debugging-contexthub}
 

@@ -47,7 +47,7 @@ The following architectural diagram explains the Adobe Analytics Integration wit
 
 ## Enabling Adobe Analytics in AEM Screens Cloud {#enabling-adobe-analytics-in-aem-screens-cloud}
 
-Please contact your Adobe Relationship Manager to enable Adobe analytics in Screens Cloud.
+Contact your Adobe Relationship Manager to enable Adobe analytics in Screens Cloud.
 
 ## Using Adobe Analytics Service in AEM Screens Cloud {#using-adobe-analytics-service-in-aem-screens}
 
