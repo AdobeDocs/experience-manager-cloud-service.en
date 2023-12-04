@@ -155,13 +155,12 @@ To connect Adaptive Form in an AEM Sites page to enable Analytics, include the `
 
 1. Add a `customfooterlibs.html` file.
 
-        ```
-        // customheaderlibs.html
-        <sly data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page">
-        <sly data-sly-test="${page.data && page.dataLayerClientlibIncluded}" data-sly-call="${clientlib.js @ categories='core.forms.components.commons.v1.datalayer', async=true}"></sly>
-        </sly>
-
-        ```
+   ```
+   // customheaderlibs.html
+   <sly data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page">
+   <sly data-sly-test="${page.data && page.dataLayerClientlibIncluded}" data-sly-call="${clientlib.js @ categories='core.forms.components.commons.v1.datalayer', async=true}"></sly>
+   </sly>
+   ```
 
     The `customfooterlibs.html` is used for JavaScript.
 
