@@ -80,7 +80,7 @@ To add a connection:
 
     >[!NOTE]
     >
-    > * Instance URL is the unique web address which points to a specific AEM Forms instance.
+    > Instance URL is the unique web address which points to a specific AEM Forms instance.
 
     You can retrieve the [service credentials from the Developer console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) required to create a connection.
 
