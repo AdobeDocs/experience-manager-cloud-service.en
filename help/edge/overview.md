@@ -44,7 +44,7 @@ It is easy to get started using Edge Delivery Services. Get started by following
 
 ## Getting Help from Adobe {#adobe-gethelp}
 
-You can engage with Adobe product teams via your provisioned product collaboration channel (see below for access details) to answer questions on product use or best practices. There are no Service Level Terms (SLT) associated with the conversations via the product collaboration channel. If a product issue needs additional investigation and troubleshooting, and must meet response SLTs, you can submit a support ticket following the [support process](https://experienceleague.adobe.com/?lang=en&support-tab=home#support).
+You can engage with Adobe product teams via your provisioned product collaboration channel (see below for access details) to answer questions on product use or best practices. There is no Service Level Target (SLT) associated with the conversations via the product collaboration channel. If a product issue needs additional investigation and troubleshooting, and must meet the response SLT, you can submit a support ticket following the [support process](https://experienceleague.adobe.com/?lang=en&support-tab=home#support).
 
 Adobe provides three channels to help you with Edge Delivery Services:
 
