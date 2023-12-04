@@ -1,10 +1,8 @@
 ---
 title: Integration of Adobe Workfront Fusion with AEM Forms Submission
 description: Adobe Workfront Fusion allows you to focus on new tasks rather than focusing on repetitive tasks. You can connect Adobe Workfront Fusion to an Adaptive Form using Form Submission.
-keywords: Integration of Adobe Workfront Fusion with AEM Forms Submission, Adobe Workfront Fusion with AEM Forms, Workfront Fusion with AEM Forms, Connect Workfront Fusion to AEM Forms, AEM Forms and Workfront Fusion, How to connect Workfront Fusion with AEM Forms?, Connect Workfront Fusion to a Form
+keywords: Submit an Adaptive Form to Adobe Workfront Fusion, Integration of Adobe Workfront Fusion with AEM Forms Submission, Adobe Workfront Fusion with AEM Forms, Workfront Fusion with AEM Forms, Connect Workfront Fusion to AEM Forms, AEM Forms and Workfront Fusion, How to connect Workfront Fusion with AEM Forms?, Connect Workfront Fusion to a Form
 topic-tags: author, developer
-hide: yes
-hidefromtoc: yes
 ---
 ​
 # Submit an Adaptive Form to Adobe Workfront Fusion
@@ -27,7 +25,7 @@ Some of the advantages of using Adobe Workfront Fusion with AEM Forms:
 Prerequisites required to connect Workfront Fusion to AEM Forms are:
 
 - A valid [Workfront Fusion license](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-- An AEM user with rights to access [Dev Console](https://my.cloudmanager.adobe.com/) to [retrieve the service credentials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+- An AEM user with right to access [Dev Console](https://my.cloudmanager.adobe.com/) to [retrieve the service credentials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## Integrate AEM Forms with Adobe Workfront Fusion
 
@@ -38,7 +36,7 @@ To connect [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/
 To create a Workfront scenario:
 1. Sign into your [Workfront Fusion account](https://app-qa.workfrontfusion.com/).
 1. Click **[!UICONTROL Scenarios]** ![Share icon](/help/forms/assets/Smock_ShareAndroid_18_N.svg) in the left panel. 
- 1. Click **[!UICONTROL Create a new scenario]** in the upper-right corner of the page. A page to create new scenario appears on screen.
+ 1. Click **[!UICONTROL Create a new scenario]** in the upper-right corner of the page. A page to create new scenario appears on-screen.
 1. Select **[!UICONTROL New scenario]** in the upper-left corner on the page and type a proper name for the scenario.
 1. Click the question mark and make sure you add first module as **[!UICONTROL AEM Forms]**.
 ​
@@ -104,10 +102,10 @@ To add a connection:
     >
     >- For **Private Key**, remove `\r\n` from its value. 
     >  For example, if the private key value is:
-    >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`, then after removing the `\r\n` from the private key, the key would look like the following, with both the values appearing in a seprate line: 
+    >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`, then after removing the `\r\n` from the private key, the key would look like the following, with both the values appearing in a separate line: 
     >
     >   `IJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL`
-    >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
+    >  `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
     > 
     >- You also have the option to retrieve a private key or certificate from the file by selecting the **Extract** button.
 ​
