@@ -105,7 +105,8 @@ To add a connection:
     >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`, then after removing the `\r\n` from the private key, the key would look like the following, with both the values appearing in a separate line: 
     >
     >   `IJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL`
-    >  `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
+    >
+    >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
     > 
     >- You also have the option to retrieve a private key or certificate from the file by selecting the **Extract** button.
 
