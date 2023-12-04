@@ -129,7 +129,7 @@ There are other adjacent services:
   * Is responsible for exposing customer data such as licensing metrics (for example, Content Requests, Storage, Users) or usage reports (such as the number of uploads, downloads).
   * The customer data can be exposed via APIs, and within product user interfaces (such as the Cloud Manager).
 * The Real-User Metric (RUM) service:
-  * Is responsible for collecting key metrics from a customer experience (such as page views, core web vitals, conversion events), as well as responding to associated queries (for example, top page views for a given domain in the last 7 days).
+  * Is responsible for collecting key metrics from a customer experience (such as page views, core web vitals, conversion events), and responding to associated queries (for example, top page views for a given domain in the last 7 days).
 * The Assets Compute service:
   * Is responsible for processing uploaded images, videos and documents; for example, PDF and Adobe Photoshop files. Processing can use Adobe Sensei to extract image and video metadata (such as descriptive tags or primary color tones), then generate renditions (such as different sizes or formats), with access to APIs such as the Adobe Photoshop and Adobe Lightroom APIs.
 * The Identity Management Service (IMS):

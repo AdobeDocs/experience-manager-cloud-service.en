@@ -103,7 +103,7 @@ You can create nested Adaptive Form fragments, which means you can drag-drop a f
 
 ### Using a form fragment multiple times in an Adaptive Form {#using-form-fragment-mutiple-times-in-af}
 
-You can use a none-based as well as schema-based form fragment multiple times in an Adaptive Form to save data uniquely for each form fragments fields. For example, you can use an address form fragment to collect address details for permanent, communication, and present living addresses in a loan application form. 
+You can use a none-based and schema-based form fragment multiple times in an Adaptive Form to save data uniquely for each form fragments fields. For example, you can use an address form fragment to collect address details for permanent, communication, and present living addresses in a loan application form. 
 
 ![using multiple fragment in adaptive form](/help/forms/assets/using-multiple-fragment-af.gif)
 

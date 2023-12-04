@@ -184,7 +184,7 @@ The following are examples of the recommended logging configurations (using the 
 
 AEM as a Cloud Service's HTTP request logging provides insight into the HTTP requests made to AEM and their HTTP responses in time order. This log is helpful to understand the HTTP Requests made to AEM and the order they are processed and responded to.
 
-The key to understanding this log is mapping the HTTP request and response pairs by their IDs, denoted by the numeric value in the brackets. Note that often requests and their corresponding responses have other HTTP requests and responses interjected between them in the log.
+The key to understanding this log is mapping the HTTP request and response pairs by their IDs, denoted by the numeric value in the brackets. Often requests and their corresponding responses have other HTTP requests and responses interjected between them in the log.
 
 **Example Log**
 
@@ -279,7 +279,7 @@ This set of logs provides insights into HTTP requests to the AEM as a Cloud Serv
 
 ### Apache HTTPD Web Server Access Log {#apache-httpd-web-server-access-log}
 
-The Apache HTTP Web Server access log provides statements for each HTTP request that reaches the Publish tier's Web server/Dispatcher. Note that requests that are served from an upstream CDN are not reflected in these logs.
+The Apache HTTP Web Server access log provides statements for each HTTP request that reaches the Publish tier's Web server/Dispatcher. Requests that are served from an upstream CDN are not reflected in these logs.
 
 See information about the error log format in the [official apache documentation](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -606,7 +606,7 @@ Customers who have Splunk accounts may request via customer support ticket that 
 
 The network bandwidth associated with logs sent to Splunk are considered part of the customer's Network I/O usage.
 
-Note that Splunk forwarding does not yet support CDN logs.
+Splunk forwarding does not yet support CDN logs.
 
 ### Enabling Splunk Forwarding {#enabling-splunk-forwarding}
 

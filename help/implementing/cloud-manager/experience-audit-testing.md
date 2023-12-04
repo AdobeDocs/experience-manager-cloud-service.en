@@ -29,7 +29,7 @@ Experience Audit is powered by Google Lighthouse, an open source tool from Googl
 
 >[!INFO]
 >
->Effective August 31st, 2023, Experience Audit will transition to showcasing results specific to the mobile platform. Note that mobile performance metrics typically register lower than those of desktop, so you should anticipate a shift in the reported performance following this change.
+>Effective August 31st, 2023, Experience Audit will transition to showcasing results specific to the mobile platform. Mobile performance metrics typically register lower than those of desktop, so you should anticipate a shift in the reported performance following this change.
 
 >[!TIP]
 >

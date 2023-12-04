@@ -103,7 +103,7 @@ As an example, changing an index definition on a large content repository on a D
 
 For local development, logs entries are written to local files in the `/crx-quickstart/logs` folder.
 
-On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Setting the Log Level**
 
@@ -166,7 +166,7 @@ Thread dumps on Cloud environments are collected on an ongoing basis, but cannot
 
 For local development, Developers have full access to CRXDE Lite (`/crx/de`)  and the AEM Web Console (`/system/console`).
 
-Note that on local development (using the SDK), `/apps` and `/libs` can be written to directly, which is different from Cloud environments where those top level folders are immutable.
+On local development (using the SDK), `/apps` and `/libs` can be written to directly, which is different from Cloud environments where those top level folders are immutable.
 
 ### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 

@@ -144,7 +144,7 @@ For both views (List and Calendar) you can define settings:
 
     * Confirm the appropriate action, for example, re-assign.
     * Cancel the action
-    * Select the back arrow to return to the inbox, for example if an action wizard or documentation page has been opened, you can return to the Inbox.
+    * Select the back arrow to return to the inbox, for example, if an action wizard or documentation page has been opened, you can return to the Inbox.
 
 ## Creating a Task {#creating-a-task}
 
