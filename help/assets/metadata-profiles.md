@@ -84,7 +84,7 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 1. Navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 1. Select the metadata profile that you want to apply to a folder or multiple folders.
-1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and Click **[!UICONTROL Done]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+1. Click **[!UICONTROL Apply Metadata Profile to Folders]** and select the folder or multiple folders you want use to receive the newly uploaded assets and Click **[!UICONTROL Done]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
 #### Apply metadata profiles to folders from Properties {#applying-metadata-profiles-to-folders-from-properties}
 
@@ -114,7 +114,7 @@ You can remove a metadata profile from a folder from within the **Tools** menu o
 
 1. Click the Experience Manager logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 1. Select the metadata profile that you want to remove from a folder or multiple folders.
-1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
+1. Click **[!UICONTROL Remove Metadata Profile from Folders]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
 
    You can confirm that the metadata profile is no longer applied to a folder because the name no longer appears below the folder name.
 

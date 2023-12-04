@@ -22,8 +22,8 @@ To download forms or related assets:
     * **Download as CRX Package:** Use the option to download and move all selected assets and related dependencies from an [!DNL AEM Forms] instance to another. It downloads all assets and folders as a CRX package including the forms authored in AEM (Adaptive Forms and Adaptive Form Fragments), form sets, form data model, form templates, PDF documents, and referenced resources (XSDs and images). 
       The advantage of downloading assets as a package is that it also downloads referenced by selected assets. For example, If you have an Adaptive Form that uses a form template, XSD, and an image. When you select this Adaptive Form and download it as a package, the downloaded package also contains the form template, XSD, and the image. All the metadata properties (including custom properties) associated with the asset are also downloaded.
 
-    * **Download asset(s) as binary files:** Use the option to download only form templates (XDP), PDF forms (PDF), document (PDF), and resources (images, schemas, stylesheets). You can edit these assets with external applications. It downloads the assets that have binaries, such as images, PDFs, and other supported formats  as a .zip file.
-      You cannot download Adaptive Forms, Adaptive Form Fragments, themes, and form sets with **[!UICONTROL Download asset(s) as binary files]** option. To download these assets, you should use **[!UICONTROL Download as CRX Package]** option.
+    * **Download assets as binary files:** Use the option to download only form templates (XDP), PDF forms (PDF), document (PDF), and resources (images, schemas, stylesheets). You can edit these assets with external applications. It downloads the assets that have binaries, such as images, PDFs, and other supported formats  as a .zip file.
+      You cannot download Adaptive Forms, Adaptive Form Fragments, themes, and form sets with **[!UICONTROL Download assets as binary files]** option. To download these assets, you should use **[!UICONTROL Download as CRX Package]** option.
 
    The selected assets are downloaded as an archive (.zip file).
 
