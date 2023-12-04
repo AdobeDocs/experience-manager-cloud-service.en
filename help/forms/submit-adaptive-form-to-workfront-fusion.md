@@ -3,16 +3,16 @@ title: Integration of Adobe Workfront Fusion with AEM Forms Submission
 description: Adobe Workfront Fusion allows you to focus on new tasks rather than focusing on repetitive tasks. You can connect Adobe Workfront Fusion to an Adaptive Form using Form Submission.
 keywords: Submit an Adaptive Form to Adobe Workfront Fusion, Integration of Adobe Workfront Fusion with AEM Forms Submission, Adobe Workfront Fusion with AEM Forms, Workfront Fusion with AEM Forms, Connect Workfront Fusion to AEM Forms, AEM Forms and Workfront Fusion, How to connect Workfront Fusion with AEM Forms?, Connect Workfront Fusion to a Form
 topic-tags: author, developer
+
 ---
-# Submit an Adaptive Form to Adobe Workfront Fusion {#submit-adaptive-form-workfront-fusion}
-​
+
+# Submit an Adaptive Form to Adobe Workfront Fusion
+
 [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automates the process of repeating the same tasks, like document approval workflows, email filtering and sorting, allowing you to focus on new tasks instead of recurring ones. Adobe Workfront Fusion includes multiple scenarios. A scenario consists of series of modules which executes data transfer between applications and web services. In a scenario, you add various steps (modules) to automate a task. 
-​
+
 For example, using Workfront Fusion, you can create a scenario to gather data with Adaptive Form, process the data, and send the data to a data store for archival. Once a scenario is set up, Workfront Fusion automatically executes the tasks whenever a user fills out a form, updating the data store seamlessly.
 
-
 ## Advantages of using Adobe Workfront Fusion{#advatages-of-workfront-fusion}
-
 
 Some of the advantages of using Adobe Workfront Fusion with AEM Forms:
 
@@ -40,11 +40,11 @@ To create a Workfront scenario:
  1. Click **[!UICONTROL Create a new scenario]** in the upper-right corner of the page. A page to create new scenario appears on-screen.
 1. Select **[!UICONTROL New scenario]** in the upper-left corner on the page and type a proper name for the scenario.
 1. Click the question mark and make sure you add first module as **[!UICONTROL AEM Forms]**.
-​
+
       ![Add a AEM Forms module](/help/forms/assets/workfront-aemforms.png)
 
     The **[!UICONTROL Watch for Form Events]** dialog box appears.
-​
+
     >[!NOTE]
     >
     > It is mandatory to add first module as **[!UICONTROL AEM Forms]**.
@@ -53,27 +53,23 @@ To create a Workfront scenario:
 
 #### 1.1 Add a webhook {#add-webhook}
 
-​
 ![Add a webhook](/help/forms/assets/workfront-add-webhook.png)
-​
+
 To add a webhook:
 
 1. Click **[!UICONTROL Add]** and a **[!UICONTROL Add a webhook]** dialog box appears.
 1. Specify a webhook name.
-​
+
     >[!NOTE]
     >
     > It is recommended to choose your webhook name carefully, as the specified webhook name appears in the AEM instance. 
-​
 
 1. Click **[!UICONTROL Add]** to add new connection. The **[!UICONTROL Create a Connection]** dialog box appears.
 
-
 #### 1.2 Add a connection to a webhook {#add-connection}
 
-
 ![Add a connection](/help/forms/assets/workfront-add-connection.png)
-​
+
 To add a connection:
 
 1. Specify a **[!UICONTROL Connection Name]** in the **[!UICONTROL Create a Connection]** dialog box.
@@ -81,28 +77,27 @@ To add a connection:
 1. Select **Environment** and **Type** from the drop-down list.
 
 1. Enter the **Instance URL**.
-​
+
     >[!NOTE]
     >
-    > Instance URL is the unique web address which points to a specific AEM Forms instance.
+    > * Instance URL is the unique web address which points to a specific AEM Forms instance.
 
-    ​You can retrieve the [service credentials from the Developer console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) required to create a connection.
+    You can retrieve the [service credentials from the Developer console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) required to create a connection.
 
 1. Replace `ims-na1.adobelogin.com` in the **IMS endpoint** with the value of **imsEndpoint** from the service credentials in the Developer console.
-​
+
     >[!NOTE]
     >
     > Retain the `https://` in the **IMS endpoint** textbox while adding the `imsEndpoint` URL. 
-​
-1. Specify the following values in the **[!UICONTROL Create a Connection]** dialog box:
 
+1. Specify the following values in the **[!UICONTROL Create a Connection]** dialog box:
     - Specify **Client ID** with value of **clientId** from the service credentials in the Developer console.
     - Specify **Client Secret** with value of **clientSecret** from the service credentials in the Developer console.
     - Specify **Technical Account ID**  with value of **id** from the service credentials in the Developer console.
     - Specify **Org ID**  with value of **org** from the service credentials in the Developer console.
     - **Meta Scopes**  with value of **metascopes** from the service credentials in the Developer console.
     - **Private Keys**  with value of **privateKey** from the service credentials in the Developer console.
-​
+
     >[!NOTE]
     >
     >- For **Private Key**, remove `\r\n` from its value. 
@@ -113,7 +108,6 @@ To add a connection:
     >  `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
     > 
     >- You also have the option to retrieve a private key or certificate from the file by selecting the **Extract** button.
-​
 
 1. Click **Continue**.
 
@@ -132,12 +126,10 @@ To activate the scenario:
 
 Once you click the toggle button, the Workfront scenario starts appearing in the **[!UICONTROL Active Scenario]** tab.
 
-
 >[!NOTE]
 >
 > In case you do not activate the Workfront scenario, it does not detect the form submission, and setting the submit action to Workfront results in a failed submission.
 
-​
 ### 2. Configure submit action of an Adaptive Form for Workfront Fusion
 
 You can configure the submit action for Workfont Fusion for:
@@ -155,16 +147,13 @@ To configure submit action of new Adaptive Form for Workfront Fusion:
 
       ![Submit action for Workfront Fusion](/help/forms/assets/workfront-scenario-new-af.png)
 
-
 1. Select the **[!UICONTROL Invoke a WorkFront Fusion Scenario]** from the **[!UICONTROL Submission]** tab.
 1. Select the created webhook from the **[!UICONTROL Options]** tab in the **[!UICONTROL Properties]** window.
 
-​
     >[!NOTE]
     >
     > The webhook name of the WorkFront scenario appears in the **Options** drop-down list.
-    
-​
+
 1. Click **[!UICONTROL Create]**.
 1. Specify the name for your new Adaptive Form and click **[!UICONTROL Create]**.
 
@@ -191,3 +180,5 @@ To configure submit action of existing Adaptive Form for Workfront Fusion:
 - A scenario can have multiple webhook links but at a time only one webhook link is active. It is recommended to delete the unlinked webhook, so that it does not appear in AEM Forms submit action drop-down list.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
+
+ 
