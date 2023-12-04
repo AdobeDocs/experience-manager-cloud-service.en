@@ -91,7 +91,7 @@ Begin by creating an Ingestion Job and ensure that **Wipe** is disabled during t
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Content Ingestion Troubleshooting"
->abstract="Refer to the documentation to find solutions to common reasons why an ingestion can fail, find the way to fix the problem and run the ingestion again."
+>abstract="Refer to the ingestion logs and the documentation to find solutions to common reasons why an ingestion can fail, find the way to fix the problem and run the ingestion again."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Validating Content Transfers"
 
 ### CAM Unable to Retrieve the Migration Token {#cam-unable-to-retrieve-the-migration-token}
