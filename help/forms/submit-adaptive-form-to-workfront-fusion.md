@@ -3,15 +3,20 @@ title: Integration of Adobe Workfront Fusion with AEM Forms Submission
 description: Adobe Workfront Fusion allows you to focus on new tasks rather than focusing on repetitive tasks. You can connect Adobe Workfront Fusion to an Adaptive Form using Form Submission.
 keywords: Submit an Adaptive Form to Adobe Workfront Fusion, Integration of Adobe Workfront Fusion with AEM Forms Submission, Adobe Workfront Fusion with AEM Forms, Workfront Fusion with AEM Forms, Connect Workfront Fusion to AEM Forms, AEM Forms and Workfront Fusion, How to connect Workfront Fusion with AEM Forms?, Connect Workfront Fusion to a Form
 topic-tags: author, developer
+
 ---
 ​
+
 # Submit an Adaptive Form to Adobe Workfront Fusion
 ​
+
 [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automates the process of repeating the same tasks, like document approval workflows, email filtering and sorting, allowing you to focus on new tasks instead of recurring ones. Adobe Workfront Fusion includes multiple scenarios. A scenario consists of series of modules which executes data transfer between applications and web services. In a scenario, you add various steps (modules) to automate a task. 
 ​
 For example, using Workfront Fusion, you can create a scenario to gather data with Adaptive Form, process the data, and send the data to a data store for archival. Once a scenario is set up, Workfront Fusion automatically executes the tasks whenever a user fills out a form, updating the data store seamlessly.
-​
+
+
 ## Advantages of using Adobe Workfront Fusion{#advatages-of-workfront-fusion}
+
 
 Some of the advantages of using Adobe Workfront Fusion with AEM Forms:
 
@@ -48,8 +53,8 @@ To create a Workfront scenario:
     >
     > It is mandatory to add first module as **[!UICONTROL AEM Forms]**.
 
-
 1. Select the **[!UICONTROL Watch for Form Events]** dialog box and a window to add a webhook appears.
+
 ​
 #### 1.1 Add a webhook {#add-webhook}
 ​
