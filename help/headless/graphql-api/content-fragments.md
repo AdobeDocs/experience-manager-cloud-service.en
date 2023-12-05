@@ -109,7 +109,7 @@ The [Persisted Queries](/help/headless/graphql-api/persisted-queries.md) are the
 
 GraphQL queries using POST requests are not recommended as they are not cached, so on a default instance the Dispatcher is configured to block such queries.
 
-While GraphQL also supports GET requests, these can hit limits (for example the length of the URL) that can be avoided using Persisted Queries.
+While GraphQL also supports GET requests, these can hit limits (for example, the length of the URL) that can be avoided using Persisted Queries.
 
 See [Enable caching of persisted queries](/help/headless/deployment/dispatcher-caching.md) for further details.
 
@@ -513,7 +513,7 @@ A filter definition (passed as the `filter` argument to a query) contains:
 * Each sub-definition contains the `_expressions` array, providing the expression set, and the `_logOp` field that defines the logical operator the expressions should be combined with
 * Each expression is defined by the value (`value` field) and the operator (`_operator` field) the content of a field should be compared to
 
-Note that you can omit `_logOp` if you want to combine items with `AND` and `_operator` if you want to check for equality, as these are the default values.
+You can omit `_logOp` if you want to combine items with `AND` and `_operator` if you want to check for equality, as these are the default values.
 
 The following example demonstrates a full query that filters all persons that have a `lastName` of `Provo` or containing `sjö`, independent of the case:
 

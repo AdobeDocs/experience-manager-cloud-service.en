@@ -40,8 +40,8 @@ Use ArrayList data type to create variable collections. You can create ArrayList
 To create a variable:
 
 1. On an AEM instance, navigate to Tools ![Hammer Icon](assets/hammer-icon.svg) &gt; Workflow &gt; Models.
-1. Tap **[!UICONTROL Create]** and specify the title and an optional name for the workflow model. Select the model and tap **[!UICONTROL Edit]**.
-1. Tap the variables icon available in the sidekick of the workflow model and tap **[!UICONTROL Add Variable]**.
+1. Select **[!UICONTROL Create]** and specify the title and an optional name for the workflow model. Select the model and select **[!UICONTROL Edit]**.
+1. Select the variables icon available in the sidekick of the workflow model and select **[!UICONTROL Add Variable]**.
 
    ![Add Variable](assets/variables_add_variable_new.png)
 
@@ -53,7 +53,7 @@ To create a variable:
     * Form Data Model - Specify a Form Data Model path.
     * ArrayList - Specify a subtype for the collection.
 
-1. Specify an optional description for the variable and tap ![done_icon](assets/Smock_Checkmark_18_N.svg) to save the changes. The variable displays in the list available in the left pane.
+1. Specify an optional description for the variable and select ![done_icon](assets/Smock_Checkmark_18_N.svg) to save the changes. The variable displays in the list available in the left pane.
 
 When you create variables, consider the following practices:
 
@@ -86,11 +86,11 @@ You can also update specific elements of a JSON or XML type variable using JSON 
 
 To add mapping between variables:
 
-1. On the workflow edit page, tap the Steps icon available in the sidekick of the workflow model.
-1. Drag-and-drop the **[!UICONTROL Set Variable]** step to the workflow editor, tap the step and select ![configure_icon](assets/Smock_Wrench_18_N.svg) (Configure).
+1. On the workflow edit page, select the Steps icon available in the sidekick of the workflow model.
+1. Drag-and-drop the **[!UICONTROL Set Variable]** step to the workflow editor, select the step and select ![configure_icon](assets/Smock_Wrench_18_N.svg) (Configure).
 1. On the Set Variable dialog, select **[!UICONTROL Mapping]** > **[!UICONTROL Add Mapping]**.
 1. In the **Map Variable** section, select the variable to store data, select the mapping mode, and specify a value to store in the variable. The mapping modes vary based on the type of variable.
-1. Map more variables to make a meaningful expression. Tap ![done_icon](assets/Smock_Checkmark_18_N.svg) to save the changes.
+1. Map more variables to make a meaningful expression. Select ![done_icon](assets/Smock_Checkmark_18_N.svg) to save the changes.
 
 ### Example 1: Query an XML variable to set value for a string variable {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -155,7 +155,7 @@ In this example, before defining the routing expression, use [example 2](variabl
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
-Similarly, select an external script path or specify the ECMA script for routing expressions to evaluate the active branch. Tap **[!UICONTROL Rename Branch]** to specify an alternate name for the branch.
+Similarly, select an external script path or specify the ECMA script for routing expressions to evaluate the active branch. Select **[!UICONTROL Rename Branch]** to specify an alternate name for the branch.
 
 <!-- For more examples, see [Create a workflow model](aem-forms-workflow.md#create-a-workflow-model). -->
 
@@ -261,9 +261,9 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ## Edit a variable {#edit-a-variable}
 
-1. On the edit workflow page, tap the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
-1. Tap the ![edit](assets/edit.svg) (Edit) icon next to the variable name that you want to edit.
-1. Edit the variable information and tap ![done_icon](assets/Smock_Checkmark_18_N.svg) to save the changes. You cannot edit the **[!UICONTROL Name]** and **[!UICONTROL Type]** fields for a variable.
+1. On the edit workflow page, select the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
+1. Select the ![edit](assets/edit.svg) (Edit) icon next to the variable name that you want to edit.
+1. Edit the variable information and select ![done_icon](assets/Smock_Checkmark_18_N.svg) to save the changes. You cannot edit the **[!UICONTROL Name]** and **[!UICONTROL Type]** fields for a variable.
 
 ## Delete a variable {#delete-a-variable}
 
@@ -271,9 +271,9 @@ Before deleting the variable, remove all the references of the variable from the
 
 To delete a variable:
 
-1. On the edit workflow page, tap the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
-1. Tap the Delete icon next to the variable name that you want to delete.
-1. Tap ![done_icon](assets/Smock_Checkmark_18_N.svg) to confirm and delete the variable.
+1. On the edit workflow page, select the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
+1. Select the Delete icon next to the variable name that you want to delete.
+1. Select ![done_icon](assets/Smock_Checkmark_18_N.svg) to confirm and delete the variable.
 
 ## References {#references}
 

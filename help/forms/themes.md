@@ -358,7 +358,7 @@ When you select a component in the Canvas, you see the component toolbar on top 
 * **[!UICONTROL Numeric Box Widget]**: Lets you select the component to customize its look in sidebar.
 * **[!UICONTROL Field Widget]**: Lets you select the generic component for styling. In this example, all text input components (text box/numeric box/numeric stepper/date input) are selected for styling.
 
-* ![field-level](assets/select_parent_icon.svg): Lets you select the parent component for styling. If you select numeric box and tap this icon, field component is selected. If you select field component and tap this icon, panel is selected. If you keep tapping this icon for selection, you end up selecting the layout for styling.
+* ![field-level](assets/select_parent_icon.svg): Lets you select the parent component for styling. If you select numeric box and select this icon, field component is selected. If you select field component and select this icon, panel is selected. If you keep tapping this icon for selection, you end up selecting the layout for styling.
 
 >[!NOTE]
 >
@@ -584,7 +584,7 @@ To copy a theme, perform the following steps:
 
 1. In authoring instance, navigate to **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Themes]**.
 1. Open the Theme Library folder.
-1. In the Theme Library folder, hover pointer over the corresponding out-of-the-box theme and tap **[!UICONTROL Copy]**.
+1. In the Theme Library folder, hover pointer over the corresponding out-of-the-box theme and select **[!UICONTROL Copy]**.
 1. Paste the copied theme outside the Theme Library folder.
 1. Customize the copied theme.
 

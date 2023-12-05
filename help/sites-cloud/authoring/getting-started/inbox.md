@@ -27,7 +27,7 @@ You receive these notifications in your own Inbox where you can view and act on 
 
 ## Inbox in the Header {#inbox-in-the-header}
 
-From any of the consoles the current number of items in your inbox is shown in the header. The indicator can also be opened to provide either quick access to the page(s) requiring action(s) or access to the inbox:
+From any of the consoles the current number of items in your inbox is shown in the header. The indicator can also be opened to provide either quick access to the pages requiring action(s) or access to the inbox:
 
 ![Inbox overview in header](/help/sites-cloud/authoring/assets/inbox-header.png)
 
@@ -144,7 +144,7 @@ For both views (List and Calendar) you can define settings:
 
     * Confirm the appropriate action, for example, re-assign.
     * Cancel the action
-    * Select the back arrow to return to the inbox, for example if an action wizard or documentation page has been opened, you can return to the Inbox.
+    * Select the back arrow to return to the inbox, for example, if an action wizard or documentation page has been opened, you can return to the Inbox.
 
 ## Creating a Task {#creating-a-task}
 
