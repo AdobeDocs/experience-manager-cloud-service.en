@@ -7,25 +7,25 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 14441 {#release-14441}
+## Release 14538 {#release-14538}
 
-Summarized below are the continuous improvements for maintenance release 14441, which was publicly released on December 5, 2023. This maintenance release is an update from previous maintenance release 14227.
+Summarized below are the continuous improvements for maintenance release 14538, which was publicly released on December 6, 2023. This maintenance release is an update from previous maintenance release 14227.
 
 2023.12.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-14441}
+### Enhancements {#enhancements-14538}
 
 None.
 
-### Fixed Issues {#fixed-issues-14441}
+### Fixed Issues {#fixed-issues-14538}
 
 None.
 
-### Known Issues {#known-issues-14441}
+### Known Issues {#known-issues-14538}
 
 None.
 
-### Embedded Technologies {#embedded-tech-14441}
+### Embedded Technologies {#embedded-tech-14538}
 
 |Technology|Version|Link|
 |---|---|---|
