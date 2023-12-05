@@ -35,7 +35,7 @@ Within AEM the delivery is achieved using the selector `model` and `.json` exten
 
 You can alternatively deliver the contents of a structured content fragment by targeting it specifically.
 
-This is done using the entire path to the fragment (via the `jcr:content`); for example with a suffix such as.
+This is done using the entire path to the fragment (via the `jcr:content`); for example, with a suffix such as.
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
@@ -61,8 +61,6 @@ Your page can contain either a single content fragment or multiple components of
 
 ### Further Information {#further-information}
 
-See also:
-
 * Assets HTTP API
   * [Assets HTTP API](/help/assets/developer-reference-material-apis.md)
 * Sling Models:
@@ -71,8 +69,6 @@ See also:
   * [Enabling JSON Export for a Component](enabling-json-exporter.md)
 
 ## Related Documentation {#related-documentation}
-
-For further details see:
 
 * [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

@@ -62,7 +62,7 @@ AEM auto-adds the Smart Tags to the text-based assets and to videos by default. 
 
 ## Understand tag models and guidelines {#understand-tag-models-guidelines}
 
-A tag model is a group of related tags that are associated with various visual aspects of images being tagged. Tags relate with the distinctly different visual aspects of images so that when applied, the tags help in searching for specific types of images. For example, a shoes collection can have different tags but all the tags are related to shoes and can belong to the same tag model. When applied, the tags help find different types of shoes, say for example by design or by usage. To understand the content representation of a training model in [!DNL Experience Manager], visualize a training model as a top-level entity comprised of a group of manually added tags and example images for each tag. Each tag can be exclusively applied to an image.
+A tag model is a group of related tags that are associated with various visual aspects of images being tagged. Tags relate with the distinctly different visual aspects of images so that when applied, the tags help in searching for specific types of images. For example, a shoes collection can have different tags but all the tags are related to shoes and can belong to the same tag model. When applied, the tags help find different types of shoes, say for example, by design or by usage. To understand the content representation of a training model in [!DNL Experience Manager], visualize a training model as a top-level entity comprised of a group of manually added tags and example images for each tag. Each tag can be exclusively applied to an image.
 
 Before you create a tag model and train the service, identify a set of unique tags that best describe the objects in the images in the context of your business. Ensure that the assets in your curated set conform to [the training guidelines](#training-guidelines).
 
@@ -72,7 +72,7 @@ Ensure that the images in the training set conform to the following guidelines:
 
 **Quantity and size:** Minimum 10 images and maximum 50 images per tag.
 
-**Coherence**: Ensure that the images for a tag are visually similar. It is best to add the tags about the same visual aspects (such as the same type of objects in an image) together into a single tag model. For example, it is not a good idea to tag all of these images as `my-party` (for training) because they are not visually similar.
+**Coherence**: Ensure that the images for a tag are visually similar. It is best to add the tags about the same visual aspects (such as the same type of objects in an image) together into a single tag model. For example, it is not a good idea to tag these images as `my-party` (for training) because they are not visually similar.
 
 ![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/coherence.png)
 
@@ -117,7 +117,7 @@ To create and train a model for your business-specific tags, follow these steps:
 1. Create the necessary tags and the appropriate tag structure. Upload the relevant images in the DAM repository.
 1. In [!DNL Experience Manager] user interface, access **[!UICONTROL Assets]** > **[!UICONTROL Smart Tag Training]**.
 1. Click **[!UICONTROL Create]**. Provide a **[!UICONTROL Title]**, **[!UICONTROL Description]**.
-1. Click on the folder icon in **[!UICONTROL Tags]** field. A popup window opens. 
+1. Click the folder icon in **[!UICONTROL Tags]** field. A pop-up window opens. 
 1. Search or select the appropriate tags from the existing tags in `cq-tags` that you want to add to the model. Click **[!UICONTROL Next]**.
 
    >[!NOTE]

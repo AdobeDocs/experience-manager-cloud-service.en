@@ -91,7 +91,7 @@ To create, modify, upload, and install packages, users must have the appropriate
 
 You can access Package Manager in three ways:
 
-1. From the AEM main menu -&gt; **Tools** -&gt; **Deployment** -&gt; **Packages**
+1. From the AEM main menu &gt; **Tools** &gt; **Deployment** &gt; **Packages**
 1. From [CRXDE Lite](crxde.md) using the top switcher bar
 1. Directly by accessing `http://<host>:<port>/crx/packmgr/`
 
@@ -143,7 +143,7 @@ If the package has been changed or was never built, the status is presented as a
 
 ## Package Settings {#package-settings}
 
-A package is essentially a set of filters and the repository data based on those filters. Using the Package Manager UI, you can click on a package and then the **Edit** button to view the details of a package including the following settings.
+A package is essentially a set of filters and the repository data based on those filters. Using the Package Manager UI, you can click a package and then the **Edit** button to view the details of a package including the following settings.
 
 * [General Settings](#general-settings)
 * [Package Filters](#package-filters)
@@ -298,7 +298,7 @@ You may need to [rebuild the package](#building-a-package) to update its content
 
 ### Rewrapping a Package {#rewrapping-a-package}
 
-Once a package has been built, it can be rewrapped. Rewrapping changes the package information without such as thumbnail, description, etc., without changing the package content.
+Once a package has been built, it can be rewrapped. Rewrapping changes the package information without such as thumbnail, description, and so on, without changing the package content.
 
 1. [Access Package Manager.](#accessing)
 
@@ -308,7 +308,7 @@ Once a package has been built, it can be rewrapped. Rewrapping changes the packa
 
 1. Click **Save** to save.
 
-1. Click **More** -&gt; **Rewrap** and a dialog will ask for confirmation.
+1. Click **More** &gt; **Rewrap** and a dialog will ask for confirmation.
 
 ### Viewing Other Package Versions {#other-versions}
 
@@ -318,7 +318,7 @@ Because every version of a package appears in the list as any other package, Pac
 
 1. Open the package details from the package list by clicking the package name.
 
-1. Click **More** -&gt; **Other Versions** and a dialog opens with a list of other versions of the same package with status information.
+1. Click **More** &gt; **Other Versions** and a dialog opens with a list of other versions of the same package with status information.
 
 ### Viewing Package Contents and Testing Installation {#viewing-package-contents-and-testing-installation}
 
@@ -328,11 +328,11 @@ After a package has been built, you can view the contents.
 
 1. Open the package details from the package list by clicking the package name.
 
-1. To view the contents, click **More** -&gt; **Contents**, and Package Manager lists the entire contents of the package in the activity log.
+1. To view the contents, click **More** &gt; **Contents**, and Package Manager lists the entire contents of the package in the activity log.
 
    ![Package Contents](assets/package-contents.png)
 
-1. To perform a dry run of the installation click **More** -&gt; **Test Install** and Package Manager reports in the activity log the results as if installation were performed.
+1. To perform a dry run of the installation click **More** &gt; **Test Install** and Package Manager reports in the activity log the results as if installation were performed.
 
    ![Test installation](assets/test-install.png)
 
@@ -395,7 +395,7 @@ Package Manager can perform the following validations:
 
 This validation inspects the package for all JAR files (OSGi bundles), extracts their `manifest.xml` (which contains the versioned dependencies on which said OSGi bundle relies), and verifies the AEM instance exports said dependencies with the correct versions.
 
-**How It's Reported**
+**How It is Reported**
 
 Any versioned dependencies that cannot be satisfied by the AEM instance are listed in the Activity Log of Package Manager.
 
@@ -419,7 +419,7 @@ This validation determines if the package being installed contains a file that i
 
 For example, given an existing overlay at `/apps/sling/servlet/errorhandler/404.jsp`, a package that contains `/libs/sling/servlet/errorhandler/404.jsp`, such that it will change the existing file at `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**How It's Reported**
+**How It is Reported**
 
 Any such overlays are described in the Activity Log of Package Manager.
 
@@ -441,7 +441,7 @@ To resolve this issue, the maintainer of the overlay file in `/apps` must review
 
 This validation checks which permissions are being added, how they are handled (merge/replace), and if the current permissions are impacted.
 
-**How It's Reported**
+**How It is Reported**
 
 The permissions are described in the Activity Log of Package Manager.
 
@@ -472,7 +472,7 @@ Validation should always occur after uploading the package but before installing
 
 1. Open the package details from the package list by clicking the package name.
 
-1. To validate the package, click **More** -&gt; **Validate**, 
+1. To validate the package, click **More** &gt; **Validate**, 
 
 1. In the modal dialog box that then appears, use the checkboxes to select the type(s) of validation and begin the validation by clicking **Validate**.
 
@@ -510,7 +510,7 @@ Packages are defined by their filters. You can have Package Manager apply filter
 
 1. Open the package details from the package list by clicking the package name.
 
-1. Click **More** -&gt; **Coverage**.
+1. Click **More** &gt; **Coverage**.
 
 1. The coverage details are listed in the Activity Log.
 
@@ -526,7 +526,7 @@ Prior to installation of your package, Package Manager automatically creates a s
 
 1. [Access Package Manager.](#accessing)
 
-1. Open the package details of the package you wish to install from the package list by clicking the package name.
+1. Open the package details of the package you want to install from the package list by clicking the package name.
 
 1. Either click the **Install** button in the item details or the **Install** link in the package status.
 
@@ -568,9 +568,9 @@ Uninstalling package reverts the contents of the repository to the snapshot made
 
 1. [Access Package Manager.](#accessing)
 
-1. Open the package details of the package you wish to uninstall from the package list by clicking the package name.
+1. Open the package details of the package you want to uninstall from the package list by clicking the package name.
 
-1. Click **More** -&gt; **Uninstall**, to remove the contents of this package from the repository.
+1. Click **More** &gt; **Uninstall**, to remove the contents of this package from the repository.
 
 1. A dialog will request confirmation and list all changes being made. 
 
@@ -582,7 +582,7 @@ Deleting a package only deletes its details from Package Manager. If this packag
 
 1. [Access Package Manager.](#accessing)
 
-1. Open the package details of the package you wish to delete from the package list by clicking the package name.
+1. Open the package details of the package you want to delete from the package list by clicking the package name.
 
 1. AEM asks for confirmation that you want to delete the package. Click **OK** to confirm the deletion.
 
@@ -594,9 +594,9 @@ Replicate the contents of a package to install it on the publish instance.
 
 1. [Access Package Manager.](#accessing)
 
-1. Open the package details of the package you wish to replicate from the package list by clicking the package name.
+1. Open the package details of the package you want to replicate from the package list by clicking the package name.
 
-1. Click **More** -&gt; **Replicate**.
+1. Click **More** &gt; **Replicate**.
 
 1. The package is replicated and details are reported in the Activity Log.
 

@@ -71,7 +71,7 @@ A Screens project's source code is typically managed as a multi-module Maven pro
     * `/content/dam/we-retail-run`
     * `/content/screens/we-retail-run`
 
-   This package contains the starting content and configuration structure needed for the project. **`/conf/we-retail-run`** contains all configurations for the We.Retail Run project. **`/content/dam/we-retail-run`** includes starting digital assets for the project. **`/content/screens/we-retail-run`** contains the Screens content structure. The content beneath all of these paths is updated primarily in AEM. To promote consistency between environments (local, Dev, Stage, Prod) often a base content structure is saved in source control.
+   This package contains the starting content and configuration structure needed for the project. **`/conf/we-retail-run`** contains all configurations for the We.Retail Run project. **`/content/dam/we-retail-run`** includes starting digital assets for the project. **`/content/screens/we-retail-run`** contains the Screens content structure. The content beneath these paths is updated primarily in AEM. To promote consistency between environments (local, Dev, Stage, Prod) often a base content structure is saved in source control.
 
 1. **Navigate to the AEM Screens &gt; We.Retail Run project:**
 
@@ -119,14 +119,14 @@ AEM Screens has some interesting constraints that are not necessarily true for t
    <!--/* production: preview authoring mode + unspecified mode (that is, on publish) */-->
    <sly data-sly-test.production="${wcmmode.preview || wcmmode.disabled}" data-sly-include="production.html" />
 
-   <!--/* edit: any other authoring mode, that is, edit, design, scaffolding, etc. */-->
+   <!--/* edit: any other authoring mode, that is, edit, design, scaffolding, and so on. */-->
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
    Screens components require two different renderings depending on which [authoring mode](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=en#page-modes) is being used:
 
     1. **Production**: Preview or Publish mode (wcmmode=disabled)
-    1. **Edit**: used for all other authoring modes, i.e edit, design, scaffolding, developer...
+    1. **Edit**: used for all other authoring modes, that is, edit, design, scaffolding, developer...
 
    `helloworld.html`acts as a switch, checking which authoring mode is active and redirecting to another HTL script. A common convention used by screens components is to have an `edit.html` script for Edit mode and a `production.html` script for Production mode.
 
@@ -285,7 +285,7 @@ AEM Screens components are rendered differently in Edit mode versus Preview/Prod
 
    The categories property is a string that identifies the client library. The cq.screens.componentscategory is used in both Edit and Preview/Production mode. Therefore any CSS/JS defined in the sharedclientlib is loaded in all modes.
 
-   It is a best practice to never expose any paths directly to /apps in a production environment. The allowProxy property ensures the client library CSS and JS is referenced via a prefix of/etc.clientlibs. 
+   It is a best practice to never expose any paths directly to /apps in a production environment. The allowProxy property ensures the client library CSS and JS is referenced by way of a prefix of/etc.clientlibs. 
 
 1. Create file named `css.txt` beneath the shared folder.
 
@@ -326,7 +326,7 @@ AEM Screens components are rendered differently in Edit mode versus Preview/Prod
 
 1. Copy and paste the `shared` client library folder to create a client library named `production`.
 
-   ![Copy the shared client library to create a new production client library](/help/screens-cloud/developing/assets/copy-clientlib.gif)
+   ![Copy the shared client library to create a production client library](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
    Copy the shared client library to create a production client library.
 
@@ -420,7 +420,7 @@ The Hello World component is meant for use on a Sequence Channel. To test the co
 
    Design config pointing to /apps/settings/wcm/designs/we-retail-run
 
-1. Edit the newly-created Idle Channel so you can open it.
+1. Edit the created Idle Channel so you can open it.
 
 1. Switch the page mode to **Design** Mode.
 

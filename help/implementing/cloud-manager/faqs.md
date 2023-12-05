@@ -21,7 +21,7 @@ For example, see the [wknd project sample project code](https://github.com/adobe
 Your AEM Cloud Manager build may fail when attempting to switch the build from Java&trade; 8 through 11. If you encounter the following error, then you must remove `maven-scr-plugin` and convert all OSGi annotations to OSGi R6 annotations.
 
 ```text
-[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
+[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 > [Help 1]
 ```
 
 For instructions on how to remove this plugin, see [here](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
@@ -102,7 +102,7 @@ If [adding a RepositoryInitializer OSGi configuration](#cloud-manager-deployment
   * Follow these steps so you can simulate the issue on a local setup.
     1. Install an author and publish instance locally using the latest AEM SDK jars.
     1. Log on to the author instance.
-    1. Go to **Tools** -&gt; **Deployment** -&gt; **Distribution**.
+    1. Go to **Tools** &gt; **Deployment** &gt; **Distribution**.
     1. Distribute the content packages that are part of the code base and see if the queue gets blocked with an error.
 
 ## I am unable to set a variable using an aio command. What can I do? {#set-variable} 

@@ -23,7 +23,7 @@ Clientlibs are the built-in solution for delivering CSS and JavaScript from AEM.
 
 ## What Are Client-Side Libraries {#what-are-clientlibs}
 
-Sites require JavaScript and CSS and static resources such as icons and web fonts to be processed client-side. A clientlib is AEM's mechanism to reference (by category if required) and serving such resources.
+Sites require JavaScript and CSS and static resources such as icons and web fonts to be processed client-side. A clientlib is AEM's mechanism to reference (by category if necessary) and serving such resources.
 
 AEM collects the site's CSS and JavaScript into a single file, in a central location, to ensure that only one copy of any resource is included in the HTML output. This maximizes the efficiency of delivery and allows such resources to be maintained centrally in the repository via proxy, keeping access secure.
 
@@ -58,7 +58,7 @@ If the client library folder contains one or more source files that, at runtime,
 Client library folders contain the following items:
 
 * The JS and/or CSS source files
-* Static resources that support CSS styles, such as icons, web fonts, etc.
+* Static resources that support CSS styles, such as icons, web fonts, and so on.
 * One `js.txt` file and/or one `css.txt` file which identify the source files to merge in the generated JS and/or CSS files
 
 ![Clientlib architecture](assets/clientlib-architecture.drawio.png)
@@ -164,7 +164,7 @@ The `dumplibs` component includes a test selector that displays the source code 
 
 ## Additional Client Library Folder Features {#additional-features}
 
-There are a number of other features that are supported by client library folders in AEM. However, these are not required on AEM as a Cloud Service and as such their use is discouraged. They are listed here for completeness.
+There are several other features that are supported by client library folders in AEM. However, these are not required on AEM as a Cloud Service and as such their use is discouraged. They are listed here for completeness.
 
 >[!WARNING]
 >
@@ -333,7 +333,7 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-For further details on GCC options, see the [GCC documentation](https://developers.google.com/closure/compiler/docs/compilation_levels).
+For more details on GCC options, see [GCC documentation](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
 #### Set System Default Minifier {#set-system-default-minifier}
 

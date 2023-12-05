@@ -35,7 +35,7 @@ To use the content copy tool, certain permissions are required in both the sourc
 | Create and modify [content sets](#create-content-set) | Not Required | Required |
 | Start or cancel the [content copy process](#copy-content) | Required | Required |
 
-For more details on permissions and how to set them, please see the document [AEM as a Cloud Service Team and Product Profiles.](/help/onboarding/aem-cs-team-product-profiles.md)
+For more details on permissions and how to set them, see [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Creating a Content Set {#create-content-set}
 
@@ -51,7 +51,7 @@ Before any content can be copied, a content set must be defined. After it is def
 
    ![Content Sets](assets/content-sets.png)
 
-1. On the **Details** tab of the wizard, provide a name and description for the content set and tap or click **Continue**.
+1. On the **Details** tab of the wizard, provide a name and description for the content set and select **Continue**.
 
    ![Content set details](assets/add-content-set-details.png)
 
@@ -68,8 +68,8 @@ Before any content can be copied, a content set must be defined. After it is def
 
    1. In the list of included paths, click **Add exclude sub-paths** next to the path you want to restrict.
    1. Enter the subpath to exclude beneath the selected path.
-   1. Tap or click **Exclude Path**.
-   1. Tap or click **Add exclude sub-paths** again to add additional paths to exclude as necessary.
+   1. Select **Exclude Path**.
+   1. Select **Add exclude sub-paths** again to add additional paths to exclude as necessary.
       * Excluded paths must be relative to the included path.
       * There is no limit on the number of excluded paths.
 
@@ -82,7 +82,7 @@ Before any content can be copied, a content set must be defined. After it is def
 
    ![Editing path list](assets/add-content-set-excluded-paths.png)
 
-1. Tap or click **Create** to create the content set.
+1. Select **Create** to create the content set.
 
 The content set can now be used to copy content between environments.
 
@@ -130,7 +130,7 @@ After a content set is created, you can use it to copy content. Follow these ste
 
 1. If necessary, you can also elect to **Include Access Control Lists** in your copy process.
 
-1. Tap or click **Copy**.
+1. Select **Copy**.
 
 The copy process starts. The status of the copy process is reflected in the console for the selected content set.
 
@@ -179,7 +179,7 @@ To do so, on the **Copy Content Activity** page, select the **Logs** action from
 
 ![Accessing logs for copy content process](assets/copy-content-logs.png)
 
-The logs are downloaded to your local machine. If the download does not commence, please check your pop-up blocker settings.
+The logs are downloaded to your local machine. If the download does not commence, check your pop-up blocker settings.
 
 ## Limitations {#limitations}
 
@@ -190,8 +190,8 @@ The content copy tool has the following limitations.
 * Cross-program content copy is not possible.
 * Running concurrent content copy operations on the same environment is not possible.
 * Up to 50 paths can be specified per content set. There is no limitation on excluded paths.
-* The content copy tool should not be used as a cloning or mirroring tool because it cannot track moved or deleted content on the source.
-* The content copy tool has no versioning capability and cannot automatically detect modified content or newly-created content on the source environment in a content set since the last content copy operation.
+* Do not use the content copy tool as a cloning or mirroring tool because it cannot track moved or deleted content on the source.
+* The content copy tool has no versioning capability and cannot automatically detect modified content or created content on the source environment in a content set since the last content copy operation.
   * If you want to update your destination environment with content changes only, since the last content copy operation, you must create a content set. Then, specify the paths on the source instance where changes were made since the last content copy operation.
 * Version information is not included in a content copy.
 

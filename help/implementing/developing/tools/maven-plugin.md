@@ -20,6 +20,7 @@ This document details how to use the Maven to manage these tasks. However it is 
 >[!NOTE]
 >
 >Package **creation** is now owned by the [Apache Jackrabbit FileVault Package Maven plugin.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>
 >* The `content-package-maven-plugin` no longer supports packaging from release 1.0.2.
 >* This article describes the **deployment** of the constructed packages to AEM is performed by the Adobe Content Package Maven plugin.
 
@@ -29,7 +30,7 @@ AEM as a Cloud Service adheres to the latest best practices for package manageme
 
 >[!TIP]
 >
->For further details, see the [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) article in the AEM as a Cloud Service documentation and the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentation. Both of which are fully supported for AEM 6.5.
+>See the [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) article in the AEM as a Cloud Service documentation and the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentation. Both of which are fully supported for AEM 6.5.
 
 ## Obtaining the Content Package Maven Plugin {#obtaining-the-content-package-maven-plugin}
 
@@ -261,4 +262,4 @@ The latest AEM Project Archetype implements the best-practice package structure 
 
 >[!TIP]
 >
->For further details, see the [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) article in the AEM as a Cloud Service documentation and the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentation. Both of which are fully supported for AEM 6.5.
+>See the [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) article in the AEM as a Cloud Service documentation and the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentation. Both of which are fully supported for AEM 6.5.

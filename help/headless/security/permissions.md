@@ -58,7 +58,7 @@ The ability to modify **Content Fragment Models** should be left to administrato
 >
 >Modifications to Content Fragment Models alter the underlying GraphQL API that headless applications rely on.
 
-If you wish you to create a group that manages Content Fragment Models but not full administrator access, you can create a group with the following access control entries:
+If you want you to create a group that manages Content Fragment Models but not full administrator access, you can create a group with the following access control entries:
 
 | Path | Permission | Privileges|
 |-----| -------------| ---------|

@@ -140,7 +140,7 @@ To help with designing and developing your Content Fragment Models, you can prev
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
 
-GraphQL is a strongly-typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
+GraphQL is a strongly-typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client must fetch the Schema, which contains all the types necessary for a query. 
 
 For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** Content Fragment Models and their data types.
 
@@ -236,7 +236,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Before starting with queries on your content you need to:
 
 * Enable your endpoint
-  * Use Tools -> General -> GraphQL
+  * Use Tools > General > GraphQL
   * [Enabling your GraphQL Endpoint](/help/headless/graphql-api/graphql-endpoint.md)
     * This will also enable the GraphiQL IDE.
   
@@ -263,7 +263,7 @@ The fragment models are used:
 
 The queries can be entered in the GraphiQL interface. You can access the query editor from either: 
 
-* **Tools** -> **General** -> **GraphQL Query Editor**
+* **Tools** > **General** > **GraphQL Query Editor**
 * directly; for example, `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")

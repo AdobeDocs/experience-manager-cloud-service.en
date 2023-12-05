@@ -43,7 +43,7 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
 
    * **Wipe:** Choose the `Wipe` value
      * The **Wipe** option sets the destination's starting point of the ingestion. If **Wipe** is enabled, the destination including all its content is reset to the version of AEM that is specified in Cloud Manager. If not enabled, the destination maintains its current content as the starting point.
-     * Note that this option does **NOT** affect how the ingestion of content will be performed. Ingestion always uses a content replacement strategy and _not_ a content merge strategy so, in both **Wipe** and **Non-Wipe** cases, the ingestion of a migration set will overwrite contents in the same path on the destination. For instance, if the migration set contains `/content/page1` and the destination already contains `/content/page1/product1`, the ingestion will remove the entire `page1` path and its subpages, including `product1`, and replace it with the content in the migration set. This means careful planning must be done when performing a **Non-Wipe** ingestion to a destination that contains any content that should be maintained. 
+     * This option does **NOT** affect how the ingestion of content will be performed. Ingestion always uses a content replacement strategy and _not_ a content merge strategy so, in both **Wipe** and **Non-Wipe** cases, the ingestion of a migration set will overwrite contents in the same path on the destination. For instance, if the migration set contains `/content/page1` and the destination already contains `/content/page1/product1`, the ingestion will remove the entire `page1` path and its subpages, including `product1`, and replace it with the content in the migration set. This means careful planning must be done when performing a **Non-Wipe** ingestion to a destination that contains any content that should be maintained. 
 
    >[!IMPORTANT]
    > If the setting **Wipe** is enabled for the ingestion, it resets the entire existing repository including the user permissions on the target Cloud Service instance. This resetting is true also for an admin user added to the **administrators** group and that user must be added to the administrators group again to start an ingestion.
@@ -133,7 +133,7 @@ If the "AEM Version Updates" is onboarded on the destination program, the ingest
 >
 > There is no longer a need to log a support ticket to get "AEM Version Updates" disabled.
 
-If "AEM Version Updates" is active (i.e. updates are running or are queued to be run), the ingestion will not begin and the user interface presents the following message. Once the updates are complete, the ingestion can be started. Cloud Manager can be used to see the current state of the pipelines of the program.
+If "AEM Version Updates" is active (that is, updates are running or are queued to be run), the ingestion will not begin and the user interface presents the following message. Once the updates are complete, the ingestion can be started. Cloud Manager can be used to see the current state of the pipelines of the program.
 
 >[!NOTE]
 >
@@ -156,13 +156,14 @@ This conflict must be resolved manually. Someone familiar with the content must 
 ### Top-up Ingestion Failure Due to Unable to Delete Referenced Node
 
 Another common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a version conflict for a particular node on the destination instance. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
+
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
 This can happen if a node on the destination is modified between an ingestion and a subsequent **Non-Wipe** ingestion such that a new version has been created. If the migration set was extracted with "include versions" enabled, a conflict may occur since the destination now has a more recent version that is being referenced by version history and other content. The ingestion process will be unable to delete the offending version node due to it being referenced.
 
 The solution may require that the top-up extraction is done again without the offending node. Or, creating a small migration set of the offending node, but with "include versions" disabled. 
 
-Best practices indicate that if a **Non-Wipe** ingestion must be run using a migration set that includes versions (i.e. extracted with "include versions"=true), it is crucial that content on the destination is modified as little as possible, until the migration journey is complete. Otherwise, these conflicts can occur.
+Best practices indicate that if a **Non-Wipe** ingestion must be run using a migration set that includes versions (that is, extracted with "include versions"=true), it is crucial that content on the destination is modified as little as possible, until the migration journey is complete. Otherwise, these conflicts can occur.
 
 ### Ingestion Rescinded
 

@@ -11,7 +11,7 @@ cloud: Experience Cloud
 
 # Metadata for internal use
 
-Metadata in the GitHub authoring system is hierarchal and is defined the the following increasing levels of precedent.
+Metadata in the GitHub authoring system is hierarchal and is defined the following increasing levels of precedent.
 
 1. metadata.md
 1. ToC

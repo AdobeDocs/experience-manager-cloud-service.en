@@ -2,8 +2,8 @@
 title: Screens Notification Service in Screens as a Cloud Service
 description: This page describes how to configure Notification Service in Screens as a Cloud Service.
 index: yes
+exl-id: 74215a70-45c8-4b7f-ba30-60c332de07e9
 ---
-
 # Screens Notification Service {#notification-service}
 
 ## Introduction {#introduction}
@@ -18,6 +18,6 @@ On AEM Screens Cloud, customers can request alerts on device inactivity status b
 
 * Customer Name
 * IMS OrgID
-* Schedule Frequency: Specify a time or frequency in hours (e.g., 1) at which this monitor should send emails.
+* Schedule Frequency: Specify a time or frequency in hours (for example, 1) at which this monitor should send emails.
 * Ping Timeout: Specifies the interval in minutes after which a device should be considered not reachable.
 * Email ID(s) : Email id(s) where the report will be sent

@@ -161,7 +161,7 @@ Similarly, you can use the `variable.scss` file to set font family and type, the
 
 ##### Set component level styles {#component-based-customization}
 
-You can also change font, color, size, and other CSS properties of a specific Adaptive Form core component. For example button, checkbox, container, footer, and more. You can style button or checkbox by editing the CSS file of the specific component to align it with your organization's style. To customize a style of a component:
+You can also change font, color, size, and other CSS properties of a specific Adaptive Form core component. For example, button, checkbox, container, footer, and more. You can style button or checkbox by editing the CSS file of the specific component to align it with your organization's style. To customize a style of a component:
 
 1. Open the file `<your-theme-sources>/src/components/<component>/<component.scss>` for editing. For example, to change the font color of the button component, open the `<your-theme-sources>/src/components/button/button.scss`, file .
 1. Change the value of any as per your requirements. For example, to change the color of the button component on mouse hover to `green`, change the value of the `color: $white` property in the `cmp-adaptiveform-button__widget:hover` class to hex code `#12B453` or any other shade of `green`. The final code looks like the following:
@@ -315,7 +315,7 @@ You require  a repository to deploy the theme. Log in to your [AEM Cloud Manager
 
 ##### 5.2. Push the changes to the repository {#committing-the-changes}
 
-Now, push the changes to the theme repository of your AEM Forms Cloud Service. . 
+Now, push the changes to the theme repository of your AEM Forms Cloud Service.
 
 1. Navigate to the root of the theme folder.  In this case, the theme folder name is `aem-forms-theme-canvas`. 
 1. Open the command prompt or terminal.
@@ -361,12 +361,12 @@ The theme is deployed using the [front-end pipeline.](https://experienceleague.a
 
    After the pipeline setup is complete, the call-to-action card is updated.
 
-1. Right-click on the created pipeline.
+1. Right-click the created pipeline.
 1. Click **[!UICONTROL Run]** .
     
     ![run-a-pipleine](/help/forms/assets/canvas-theme-run-pipeline.png)
 
-Once the build is complete, the theme becomes available at the author instance for the use. It appears under the **[!UICONTROL Style]** tab in the Adaptive Form creation wizard, while creating a new Adaptive Form. 
+Once the build is complete, the theme becomes available at the author instance for the use. It appears under the **[!UICONTROL Style]** tab in the Adaptive Form creation wizard, while creating an Adaptive Form. 
 
    ![custom theme available under style tab](/help/forms/assets/custom-theme-style-tab.png)
 
@@ -376,7 +376,7 @@ Steps to apply a theme to an Adaptive Form are:
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 

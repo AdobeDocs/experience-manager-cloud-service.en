@@ -1,6 +1,6 @@
 ---
 title: Using Best Practices Analyzer
-description: Learn how to use the Best Practices Analyzer in order to understand upgrade readiness.
+description: Learn how to use the Best Practices Analyzer to understand upgrade readiness.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 ---
 # Using Best Practices Analyzer {#using-best-practices-analyzer}
@@ -51,11 +51,11 @@ The Best Practices Analyzer can be downloaded as a zip file from the Software Di
 
 Follow this section to learn how to view the Best Practices Analyzer report:
 
-1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Best Practices Analyzer**.
+1. Select Adobe Experience Manager and navigate to tools > **Operations** > **Best Practices Analyzer**.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Click on **Generate Report** to execute the Best Practices Analyzer. 
+1. Click **Generate Report** to execute the Best Practices Analyzer. 
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -63,7 +63,7 @@ Follow this section to learn how to view the Best Practices Analyzer report:
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-1. Once the BPA report is generated, it displays a summary and the number of the findings in a tabular format organized by the type of finding and the importance level. To get more details about a particular finding, you can click on the number that corresponds to the type of finding in the table. 
+1. After the BPA report is generated, it displays a summary and the number of the findings in a tabular format organized by the type of finding and the importance level. To get more details about a particular finding, you can click the number that corresponds to the type of finding in the table. 
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
@@ -89,7 +89,7 @@ Follow this section to learn how to view the Best Practices Analyzer report:
 
 To filter out findings related to [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), follow the steps below:
 
-1. Click on the left rail icon on the left-hand side of the page. This will display the **ACS Commons Filter**. Click on the **ACS Commons Filter** to display the interactive checkbox as shown in the image below.
+1. Click the left rail icon on the left-hand side of the page. This will display the **ACS Commons Filter**. Click the **ACS Commons Filter** to display the interactive checkbox as shown in the image below.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
@@ -155,7 +155,7 @@ When you click the **CSV** option from your AEM instance, the CSV format of the 
 
 If the cache has expired, then the report is regenerated before the CSV file is built and downloaded.
 
-The CSV format of the report includes information that is generated from the Pattern Detector output, sorted and organized by category type, sub-type, and importance level. Its format is suitable for viewing and editing in an application such as Microsoft Excel. It is intended to provide all of the finding information in a repeatable format that can be helpful when comparing reports over time to measure progress.
+The CSV format of the report includes information that is generated from the Pattern Detector output, sorted and organized by category type, sub-type, and importance level. Its format is suitable for viewing and editing in an application such as Microsoft Excel. It is intended to provide allthe finding information in a repeatable format that can be helpful when comparing reports over time to measure progress.
 
 The columns of the CSV format report are:
 
