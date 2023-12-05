@@ -123,6 +123,7 @@ To add a connection:
 #### 1.3 Activate the Workfront scenario {#activate-scenario}
 
 To activate the scenario:
+
 1. Click **[!UICONTROL Scenarios]** ![Share icon](/help/forms/assets/Smock_ShareAndroid_18_N.svg) in the left panel. 
 1. Click the **[!UICONTROL Inactive Scenario]** tab.
 1. Click the **ON/OFF** toggle button for your AEM Forms scenario.
