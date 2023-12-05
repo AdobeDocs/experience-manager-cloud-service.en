@@ -40,7 +40,7 @@ When using Edge Delivery Services with AEM as a Cloud Service, the most fundamen
    * Content remains stored in AEM.
    * AEM renders semantic HTML that is needed for ingestion.
    * Content is published to Edge Delivery Services.
-1. [Edge Delivery Services](https://www.aem.live/home) ensures a 100% Lighthouse score.
+1. [Edge Delivery Services](https://www.aem.live/home) ensure a 100% Lighthouse score.
 
 
 ## Authoring {#authoring-edge}
@@ -66,11 +66,3 @@ Please see the document [Developing for Edge Delivery Services](developing.md) f
 You needn't wait for a new AEM project to benefit from Edge Delivery Services. Edge Delivery Services can be integrated into your existing AEM project so you can leverage its performance gains immediately.
 
 Please see the document [Using Edge Delivery Services with Existing AEM Projects](existing-projects.md) for more information.
-
-## Further Reading {#further-reading}
-
-For more details, see the following documents:
-
-* For details on how to get started with Edge Delivery, see the [Build](https://www.aem.live/docs/#build) section of the Edge delivery documentation.
-* To understand how to author and publish content by using Edge Delivery, see the [Publish section](https://www.aem.live/docs/authoring) of the Edge Delivery Services documentation.
-* For AEM authoring, see the [Authoring Concepts page.](/help/sites-cloud/authoring/getting-started/concepts.md)
