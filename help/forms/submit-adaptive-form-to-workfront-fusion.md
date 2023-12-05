@@ -139,7 +139,7 @@ You can configure the submit action for Workfont Fusion for:
 - [New Adaptive Forms](#new-af-submit-action)
 - [Existing Adaptive forms](#existing-af-submit-action)
 
-#### 2.1 Configure submit action of new Adaptive Form for Workfront Fusion {#new-af-submit-action}
+#### Configure submit action of new Adaptive Form for Workfront Fusion {#new-af-submit-action}
 
 To configure submit action of new Adaptive Form for Workfront Fusion:
 
@@ -160,7 +160,7 @@ To configure submit action of new Adaptive Form for Workfront Fusion:
 1. Click **[!UICONTROL Create]**.
 1. Specify the name for your new Adaptive Form and click **[!UICONTROL Create]**.
 
-#### 2.2 Configure submit action of existing Adaptive Form for Workfront Fusion {#existing-af-submit-action}
+#### Configure submit action of existing Adaptive Form for Workfront Fusion {#existing-af-submit-action}
 
 To configure submit action of existing Adaptive Form for Workfront Fusion:
 
@@ -173,7 +173,7 @@ To configure submit action of existing Adaptive Form for Workfront Fusion:
     ![Submit action for Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
 
 1. Open the **[!UICONTROL Submission]** tab.
-1. Select the **[Submit action]** as **[!UICONTROL Invoke a WorkFront Fusion Scenario]**
+1. Select the **[!UICONTROL Submit action]** as **[!UICONTROL Invoke a WorkFront Fusion Scenario]**
 1. Select **[!UICONTROL Workfront Fusion scenario]** from the drop-down list.
 1. Click **[!UICONTROL Done]**.
 
