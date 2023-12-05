@@ -47,6 +47,7 @@ To select and configure a Submit Action for your form:
      * [Submit to OneDrive](#submit-to-onedrive)
      * [Invoke an AEM Workflow](#invoke-an-aem-workflow)
      * [Submit to Power Automate](#microsoft-power-automate)
+     * [Submit to Workfront Fusion](#workfront-fusion)
 
 ## Send Email {#send-email}
 
@@ -427,6 +428,12 @@ You can configure an Adaptive Form to run a Microsoft&reg; Power Automate Cloud 
 Adaptive Forms editor provides the **Invoke a Microsoft&reg; Power Automate flow** submit action to send adaptive forms data, attachments, and Document Of Record to Power Automate Cloud Flow. To use the Submit action to send captured data to Microsoft&reg; Power Automate, [Connect your Forms as a Cloud Service instance with Microsoft&reg; Power Automate](forms-microsoft-power-automate-integration.md)  
 
 After a successful configuration, use the [Invoke a Microsoft&reg; Power Automate flow](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) submit action to send data to a Power Automate Flow.  
+
+## Submit to Workfront Fusion {#workfront-fusion}
+
+You can configure an Adaptive Form to submit data to Workfront Fusion on submission. Workfront Fusion allows automation of processes so that user can concentrate on new tasks rather than repeating the same tasks again and again. It automates both simple and complex tasks, saving time and ensuring consistent process execution.
+
+The Adaptive Forms editor provides the **Invoke a WorkFront Fusion Scenario** submit action to send Adaptive Forms data or attachments to a Workfront Fusion scenario. To use the submit action for sending captured data to a Workfront Fusion scenario, refer to [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
 
 ## Use synchronous or asynchronous submission {#use-synchronous-or-asynchronous-submission}
 
