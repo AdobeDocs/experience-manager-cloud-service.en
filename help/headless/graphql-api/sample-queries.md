@@ -1802,7 +1802,7 @@ The sample queries are based on the following structure, which uses:
 For the sample queries, you use the following Content Models, and their interrelationships (references ->):
 
 * [Company](#model-company)
-  > [Person](#model-person)
+  -> [Person](#model-person)
   &nbsp;&nbsp;&nbsp;&nbsp;-> [Award](#model-award)
 
 * [City](#model-city)
