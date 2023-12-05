@@ -316,7 +316,7 @@ For example, the **Text** component:
 
 To move a paragraph component:
 
-1. Select the paragraph to be moved with either tap-and-hold or click-and-hold.
+1. Select the paragraph to be moved with either select-and-hold or click-and-hold.
 1. Drag the paragraph to the new location. AEM indicates where the paragraph can be deposited. Drop it in your desired location.
 
    ![Moving a component](/help/sites-cloud/authoring/assets/editing-moving-component.png)

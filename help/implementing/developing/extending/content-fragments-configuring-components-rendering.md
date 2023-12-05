@@ -12,7 +12,7 @@ This is done by configuring the [OSGi Service - Content Fragment Component Confi
 This information is required when:
 
 * You need to implement your own Content Fragment-based component,
-* And need to make use of the advanced services.
+* And need to use the advanced services.
 
 Adobe recommends using the Core Components.
 

@@ -99,20 +99,20 @@ Perform the following steps to make your [!DNL AEM Forms] assets compatible with
 
 1. Use the option one-after another to make your [!DNL AEM Forms] assets compatible with [!DNL AEM] as a Cloud Service:
 
-    1. Tap **[!UICONTROL AEM Forms Assets Migration]**, and in the next screen, tap **[!UICONTROL Start Migration]**. It makes Adaptive Forms and themes on your [!DNL AEM Forms] environment compatible with [!DNL AEM] as a Cloud Service .
+    1. Select **[!UICONTROL AEM Forms Assets Migration]**, and in the next screen, select **[!UICONTROL Start Migration]**. It makes Adaptive Forms and themes on your [!DNL AEM Forms] environment compatible with [!DNL AEM] as a Cloud Service .
 
-    1. Tap **[!UICONTROL Adaptive Forms Custom Components Migration]** and in the Custom Components Migration page, tap **[!UICONTROL Start Migration]**. It makes any custom component developed for Adaptive Forms and component overlays on your [!DNL AEM Forms] environment compatible with [!DNL AEM] as a Cloud Service .
+    1. Select **[!UICONTROL Adaptive Forms Custom Components Migration]** and in the Custom Components Migration page, select **[!UICONTROL Start Migration]**. It makes any custom component developed for Adaptive Forms and component overlays on your [!DNL AEM Forms] environment compatible with [!DNL AEM] as a Cloud Service .
 
-    1. Tap **[!UICONTROL Adaptive Forms Template Migration]** and in the Custom Components Migration page, tap **[!UICONTROL Start Migration]**. It makes Adaptive Form templates at `/apps` or `/conf` and created using AEM Template Editor compatible with [!DNL AEM] as a Cloud Service .
+    1. Select **[!UICONTROL Adaptive Forms Template Migration]** and in the Custom Components Migration page, select **[!UICONTROL Start Migration]**. It makes Adaptive Form templates at `/apps` or `/conf` and created using AEM Template Editor compatible with [!DNL AEM] as a Cloud Service .
 
-    1. Tap **[!UICONTROL AEM Forms Cloud Configurations Migration]** and then on the Configuration Migration page, tap **[!UICONTROL Start Migration]**. It updates and moves the following Cloud Services to a new location:
+    1. Select **[!UICONTROL AEM Forms Cloud Configurations Migration]** and then on the Configuration Migration page, select **[!UICONTROL Start Migration]**. It updates and moves the following Cloud Services to a new location:
 
         * Form Data Model Cloud Service
         * Google reCAPTCHA Cloud Service
         * [!DNL Adobe Sign] Cloud Service
         * Adobe Fonts Cloud Service
 
-    1. Tap **[!UICONTROL Code Editor Script Migration]**, specify a location to save reusable functions, and tap **[!UICONTROL Start Migration].
+    1. Select **[!UICONTROL Code Editor Script Migration]**, specify a location to save reusable functions, and select **[!UICONTROL Start Migration].
 
     The Cloud Service does not support rule editor scripts. The **[!UICONTROL Code editor script migration]** tool converts all rule scripts on your environment to reusable functions and applies the reusable functions to visual editor at appropriate location. These reusable functions are saved in the form of client libraries and help you keep existing functionality intact. The tool automatically applies the generated reusable functions to corresponding Adaptive Forms.
 

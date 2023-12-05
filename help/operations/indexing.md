@@ -61,7 +61,7 @@ An index definition can fall into one of the following categories:
 
 >[!NOTE]
 >
->If customizing an out-of-the-box index, for example `damAssetLucene-8`, copy the latest out-of-the-box index definition from a *Cloud Service environment* using the CRX DE Package Manager (`/crx/packmgr/`) . Rename it to `damAssetLucene-8-custom-1` (or higher), and add your customizations inside the XML file. This ensures that the required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-8/tika` is required in the customized index deployed to an AEM Cloud Service environment but doesn't exist on the local AEM SDK.
+>If customizing an out-of-the-box index, for example, `damAssetLucene-8`, copy the latest out-of-the-box index definition from a *Cloud Service environment* using the CRX DE Package Manager (`/crx/packmgr/`) . Rename it to `damAssetLucene-8-custom-1` (or higher), and add your customizations inside the XML file. This ensures that the required configurations are not being removed inadvertently. For example, the `tika` node under `/oak:index/damAssetLucene-8/tika` is required in the customized index deployed to an AEM Cloud Service environment but doesn't exist on the local AEM SDK.
 
 For customizations of an OOTB index prepare a new package that contains the actual index definition that follows this naming pattern:
 
@@ -269,7 +269,7 @@ During development, or when using on-premise installations, indexes can be added
 
 ### Index Management With Rolling Deployments {#index-management-with-rolling-deployments}
 
-With rolling deployments, there is no downtime. For some time during an update, both the old version (for example, version 1) of the application, and the new version (version 2), run concurrently against the same repository. If version 1 requires a certain index to be available, then this index must not be removed in version 2. The index should be removed later, for example in version 3, at which point it is guaranteed that version 1 of the application is no longer running. Also, applications should be written such that version 1 works well, even if version 2 is running, and if indexes of version 2 are available.
+With rolling deployments, there is no downtime. For some time during an update, both the old version (for example, version 1) of the application, and the new version (version 2), run concurrently against the same repository. If version 1 requires a certain index to be available, then this index must not be removed in version 2. The index should be removed later, for example, in version 3, at which point it is guaranteed that version 1 of the application is no longer running. Also, applications should be written such that version 1 works well, even if version 2 is running, and if indexes of version 2 are available.
 
 After upgrading to the new version is complete, old indexes can be garbage collected by the system. The old indexes might still stay for some time, to speed up rollbacks (if a rollback should be needed).
 
@@ -302,7 +302,7 @@ After Adobe changes an out-of-the-box index like "damAssetLucene" or "cqPageLuce
 
 ### Current Limitations {#current-limitations}
 
-Index management is only supported for indexes of type `lucene`, with `compatVersion` set to `2`. Internally, other indexes might be configured and used for queries, for example Elasticsearch indexes. Queries that are written against the `damAssetLucene` index might, on AEM as a Cloud Service, in fact be run against an Elasticsearch version of this index. This difference is invisible to the application user, however certain tools such as the `explain` feature reports a different index. For differences between Lucene and Elasticsearch indexes, see [the Elasticsearch documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers cannot and do not need to configure Elasticsearch indexes directly.
+Index management is only supported for indexes of type `lucene`, with `compatVersion` set to `2`. Internally, other indexes might be configured and used for queries, for example, Elasticsearch indexes. Queries that are written against the `damAssetLucene` index might, on AEM as a Cloud Service, in fact be run against an Elasticsearch version of this index. This difference is invisible to the application user, however certain tools such as the `explain` feature reports a different index. For differences between Lucene and Elasticsearch indexes, see [the Elasticsearch documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers cannot and do not need to configure Elasticsearch indexes directly.
 
 Only built-in analyzers are supported (that is, those analyzers that are shipped with the product). Custom analyzers are not supported.
 
