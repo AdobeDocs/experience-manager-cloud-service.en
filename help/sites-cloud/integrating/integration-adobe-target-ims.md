@@ -277,7 +277,7 @@ When configuring the Tenant ID and Client Code fields, be aware of that for most
 >
 >For legacy purposes, you can also enter different values in the Tenant ID and the Client Code fields.
 
-In both cases, be aware that:
+In both cases, note the following:
 
 * By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field.
 * You have the option to change the default Tenant ID set.

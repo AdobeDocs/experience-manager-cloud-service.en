@@ -51,7 +51,7 @@ The Best Practices Analyzer can be downloaded as a zip file from the Software Di
 
 Follow this section to learn how to view the Best Practices Analyzer report:
 
-1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Best Practices Analyzer**.
+1. Select Adobe Experience Manager and navigate to tools > **Operations** > **Best Practices Analyzer**.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 

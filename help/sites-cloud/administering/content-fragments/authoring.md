@@ -86,7 +86,7 @@ In the left panel you can see:
 
 ### Follow Links {#follow-links}
 
-In various parts of the editor you can see the link icon. This can be used to open the item shown; for example a Content Fragment Model, a Parent Reference, or a fragment being referenced:
+In various parts of the editor you can see the link icon. This can be used to open the item shown; for example, a Content Fragment Model, a Parent Reference, or a fragment being referenced:
 
 ![Content Fragment Editor - Link Icon](assets/cf-authoring-link-icon.png)
 
@@ -466,7 +466,7 @@ The **Fields** panel lists all fields within the Content Fragment. The icon indi
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Tab Placeholder</b></p><p>Although not represented by an actual icon, a <b>Tab Placeholder</b> is represented in the left panel. <br>It is also represented in the central panel, either horizontally as shown, or in a drop down list (when there are too many to show horizontally).</p> </td>
+   <td><p><b>Tab Placeholder</b></p><p>Although not represented by an actual icon, a <b>Tab Placeholder</b> is represented in the left panel. <br>It is also represented in the central panel, either horizontally as shown, or in a drop-down list (when there are too many to show horizontally).</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>

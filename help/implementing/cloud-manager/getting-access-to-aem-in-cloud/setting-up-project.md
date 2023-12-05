@@ -114,7 +114,7 @@ To use a password-protected Maven repository within Cloud Manager:
 When the Cloud Manager build process starts:
 
 * The `<servers>` element in this file is merged into the default `settings.xml` file provided by Cloud Manager.
-  * Server IDs starting with `adobe` and `cloud-manager` are considered reserved and should not be used by custom servers.
+  * Server IDs starting with `adobe` and `cloud-manager` are considered reserved. Do not use them on custom servers.
   * Server IDs not matching one of these prefixes or the default ID `central` will never be mirrored by Cloud Manager.
 * With this file in place, the server ID would be referenced from inside a `<repository>` and/or `<pluginRepository>` element inside the `pom.xml` file.
 * Generally, these `<repository>` and/or `<pluginRepository>` elements would be contained inside a [Cloud Manager-specific profile](#activating-maven-profiles-in-cloud-manager), although that is not strictly necessary.
