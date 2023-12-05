@@ -16,7 +16,7 @@ In AEM, full text queries are those using the following functions:
 
 Such queries cannot return results without using an index. Unlike a query containing only path or property restrictions, a query containing a full text restriction for which no index can be found (and thus a traversal is performed) will always return zero results.
 
-The generic Lucene index (`/oak:index/lucene-*`) has existed since AEM 6.0 / Oak 1.0 to provide a full text search across most of the repository hierarchy, although some paths, such as `/jcr:system` and `/var` have always been excluded from this. However this index has largely been superseded by indexes on more specific node types (for example `damAssetLucene-*` for the `dam:Asset` node type), which support both full text and property searches.
+The generic Lucene index (`/oak:index/lucene-*`) has existed since AEM 6.0 / Oak 1.0 to provide a full text search across most of the repository hierarchy, although some paths, such as `/jcr:system` and `/var` have always been excluded from this. However this index has largely been superseded by indexes on more specific node types (for example, `damAssetLucene-*` for the `dam:Asset` node type), which support both full text and property searches.
 
 In AEM 6.5 the generic Lucene index was marked as deprecated, indicating that it would be removed in future versions. Since then, a WARN has been logged when the index has been used as illustrated by the following log snippet:
 
