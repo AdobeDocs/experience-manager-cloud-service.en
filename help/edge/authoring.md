@@ -1,6 +1,6 @@
 ---
 title: Authoring Content for Edge Delivery Services
-description: Learn how content authoring works with Edge Delivery Services and how to author AEM with Edge Delivery Services.
+description: Learn how content authoring works with Edge Delivery Services and how to author AEM content with Edge Delivery Services.
 feature: Edge Delivery Services
 ---
 
