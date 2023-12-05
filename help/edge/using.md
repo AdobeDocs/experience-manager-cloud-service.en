@@ -46,19 +46,25 @@ When using Edge Delivery Services with AEM as a Cloud Service, the most fundamen
 
 With Edge Delivery Services, authoring is easy, fast, and flexible. You can choose to author using document-based authoring or authoring in AEM with the Universal Editor.
 
-Please see the document [Authoring](authoring.md) for more information.
+Please see the document [Authoring Content for Edge Delivery Services](authoring.md) for more information.
 
 ## Publishing {#publishing-edge}
 
 With Edge Delivery, publishing content is seamless regardless of your content source.
 
-Please see the document [Publishing](publishing.md) for more information.
+Please see the document [Publishing Content for Edge Delivery Services](publishing.md) for more information.
 
 ## Developing {#developing-edge}
 
 Edge Delivery Services is based around the concept of blocks. AEM comes with a comprehensive library of predefined blocks, which can be extended to meet your project needs. Code for Edge Delivery Services projects are managed in GitHub.
 
-Please see the document [Developing](developing.md) for more information.
+Please see the document [Developing for Edge Delivery Services](developing.md) for more information.
+
+## Existing AEM Projects {#existing-projects}
+
+You needn't wait for a new AEM project to benefit from Edge Delivery Services. Edge Delivery Services can be integrated into your existing AEM project so you can leverage its performance gains immediately.
+
+Please see the document [Using Edge Delivery Services with Existing AEM Projects](existing-projects.md) for more information.
 
 ## Further Reading {#further-reading}
 
