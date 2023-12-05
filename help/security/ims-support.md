@@ -49,7 +49,7 @@ After a customer exists as an IMS Organization, they have to configure their sys
 ![IMS Onboarding](/help/security/assets/ims2.png)
 
 1. The designated System Administrator receives an invite to log in to Cloud Manager. After logging into Cloud manager, the System Administrators can choose to provision AEM programs and environments or navigate to Admin Console for Administrative tasks.
-1. The System Administrator claims a domain to confirm the ownership of the respective domain (for example acme.com)
+1. The System Administrator claims a domain to confirm the ownership of the respective domain (for example, acme.com)
 1. The System Administrator sets up User Directories
 1. The System Administrator does IDP configuration in Admin Console to set up Single Sign On.
 1. The AEM Administrator manages the local groups and permissions and privileges as usual.

@@ -43,7 +43,7 @@ Depending on your project, the Layout Container might be used as the default par
 
 >[!TIP]
 >
->Adobe provides [GitHub documentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) of the responsive layout as a reference that can be given to front-end developers allowing them to use the AEM grid outside of AEM, for example when creating static HTML mock-ups for a future AEM site.
+>Adobe provides [GitHub documentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) of the responsive layout as a reference that can be given to front-end developers allowing them to use the AEM grid outside of AEM, for example, when creating static HTML mock-ups for a future AEM site.
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 
    The emulator toolbar displays additional layout options:
 
-    * **Rotate device** - Lets you rotate a device from vertical (portrait) orientation to horizontal (landscape) orientation and vice-versa.
+    * **Rotate device** - Lets you rotate a device from vertical (portrait) orientation to horizontal (landscape) orientation and conversely.
 
    ![Rotate device landscape button](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![Rotate device portrait button](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
@@ -143,7 +143,7 @@ As with other components, you can select and then act on (cut, copy, delete) a L
 >
 >As a layout container is a paragraph system, deleting the component will delete both the layout grid and all the components (and their content) held within the container.
 
-1. If you mouse over or tap the grid placeholder, the action menu is displayed.
+1. If you mouse over or select the grid placeholder, the action menu is displayed.
 
    ![Add to the layout container](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 

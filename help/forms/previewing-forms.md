@@ -1,7 +1,6 @@
 ---
 title: How to preview an adaptive form?
 description: Users can preview forms before publishing or activating, to ensure it meets the expectations. Preview options may vary across the supported form types.
-uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
@@ -13,7 +12,7 @@ discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
 
 In [!DNL AEM Forms], you can preview the forms and documents present in the repository. Preview helps to know exactly how the forms look and behave when they are released to the end users.
 
-When previewing forms, they are rendered in interactive interface and the user can fill the forms with data. When previewing documents, they are rendered in non-interactive mode and the user can only view the document. For forms, an additional option of Custom Preview is available. Using this option, you can preview the form using data from an XML file. The data fills up some or all of the fields of the form being previewed.
+When previewing forms, they are rendered in interactive interface and the user can fill the forms with data. When previewing documents, they are rendered in non-interactive mode and the user can only view the document. For forms, an additional option of Custom Preview is available. Using this option, you can preview the form using data from an XML file. The data fills up some of the fields, or all the fields, of the form being previewed.
 
 The following table lists the preview options available for different types of supported forms:
 

@@ -27,7 +27,7 @@ State must not be kept in memory but persisted in the repository. Otherwise, thi
 
 ## State on the Filesystem {#state-on-the-filesystem}
 
-The instance's file system should not be used in AEM as a Cloud Service. The disk is ephemeral and is disposed when instances are recycled. Limited use of the filesystem for temporary storage relating to the processing of single requests is possible, but should not be abused for huge files. This is because it may have a negative impact on the resource usage quota and run into disk limitations.
+Do not use the instance's file system in AEM as a Cloud Service. The disk is ephemeral and is disposed when instances are recycled. Limited use of the filesystem for temporary storage relating to the processing of single requests is possible, but should not be abused for huge files. This is because it may have a negative impact on the resource usage quota and run into disk limitations.
 
 As an example where file system usage is not supported, the Publish tier should ensure that any data that must be persisted is shipped off to an external service for longer term storage.
 
@@ -41,7 +41,7 @@ Code executed as a background tasks must assume that the instance it is running 
 
 To minimize the trouble, long running jobs should be avoided if possible, and they should be resumable at a minimum. For executing such jobs, use Sling Jobs, which have an at-least-once guarantee and hence if they get interrupted will get re-executed as soon as possible. But they should probably not start from the beginning again. For scheduling such jobs, it is best to use the [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler as this again ensures the at-least-once execution.
 
-The Sling Commons Scheduler should not be used for scheduling as execution cannot be guaranteed. It is just more likely that it is scheduled.
+Do not use the Sling Commons Scheduler for scheduling as execution cannot be guaranteed. It is just more likely that it is scheduled.
 
 Similarly, with everything that is asynchronously happening, like acting on observation events, (being it JCR events or Sling resource events), can't be guaranteed to be executed and therefore must be used with care. This is already true for AEM deployments in the present.
 
@@ -103,7 +103,7 @@ As an example, changing an index definition on a large content repository on a D
 
 For local development, logs entries are written to local files in the `/crx-quickstart/logs` folder.
 
-On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Setting the Log Level**
 
@@ -166,7 +166,7 @@ Thread dumps on Cloud environments are collected on an ongoing basis, but cannot
 
 For local development, Developers have full access to CRXDE Lite (`/crx/de`)  and the AEM Web Console (`/system/console`).
 
-Note that on local development (using the SDK), `/apps` and `/libs` can be written to directly, which is different from Cloud environments where those top level folders are immutable.
+On local development (using the SDK), `/apps` and `/libs` can be written to directly, which is different from Cloud environments where those top level folders are immutable.
 
 ### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 

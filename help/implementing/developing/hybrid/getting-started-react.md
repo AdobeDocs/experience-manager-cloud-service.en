@@ -251,7 +251,7 @@ For more information see the [SPA Blueprint document](blueprint.md).
 
 It is regularly necessary for components within a single-page application to share information. There are several recommended ways of doing this, listed as follows in increasing order of complexity.
 
-* **Option 1:** Centralize the logic and broadcast to the necessary components for example by using React Context.
+* **Option 1:** Centralize the logic and broadcast to the necessary components for example, by using React Context.
 * **Option 2:** Share component states by using a state library such as Redux.
 * **Option 3:** Leverage the object hierarchy by customizing and extending the container component.
 
