@@ -7,29 +7,29 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#release-X}
+## Release 14441 {#release-14441}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on November 23, 2023. This maintenance release is an update from previous maintenance release 14227.
+Summarized below are the continuous improvements for maintenance release 14441, which was publicly released on December 5, 2023. This maintenance release is an update from previous maintenance release 14227.
 
-2023.11.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
+2023.12.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-X}
-
-None.
-
-### Fixed Issues {#fixed-issues-X}
+### Enhancements {#enhancements-14441}
 
 None.
 
-### Known Issues {#known-issues-X}
+### Fixed Issues {#fixed-issues-14441}
 
 None.
 
-### Embedded Technologies {#embedded-tech-X}
+### Known Issues {#known-issues-14441}
+
+None.
+
+### Embedded Technologies {#embedded-tech-14441}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM OAK |1.56-T20230927085643-189caed|[Oak API 1.56.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.56.0/index.html)| 
+|AEM OAK |1.58-T20231123092841-619e1bd|[Oak API 1.58.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.58.0/index.html)| 
 |AEM SLING API |Version 2.27.2 |[Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL|Version 1.4.20-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |AEM Core Components|Version 2.23.4|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
