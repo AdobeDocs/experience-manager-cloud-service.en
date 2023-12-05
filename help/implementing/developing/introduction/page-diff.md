@@ -15,7 +15,7 @@ The page diff allows a user to compare the current page to launches, previous ve
 
 When comparing versions of a page, the previous version that the user wants to compare is recreated by AEM in the background to facilitate the diff. This previous version is necessary to render the content [for side-by-side comparison](/help/sites-cloud/authoring/features/page-diff.md).
 
-This recreation operation is done by AEM internally and is transparent to the user and requires no intervention. However, an administrator viewing the repository, for example in CRXDE Lite, would see these recreated versions within the content structure.
+This recreation operation is done by AEM internally and is transparent to the user and requires no intervention. However, an administrator viewing the repository, for example, in CRXDE Lite, would see these recreated versions within the content structure.
 
 When content is compared, the whole tree up to the page to compare is recreated in the following location:
 

@@ -56,7 +56,7 @@ The tagging console is used to create and manage tags and their taxonomies. You 
 To access the tagging console:
 
 1. Sign in to an authoring environment with with administrative privileges.
-1. In the global navigation menu select **`Tools`** &gt; **`General`** -&gt;
+1. In the global navigation menu select **`Tools`** &gt; **`General`** &gt;
 **`Tagging`**.
 
 ![The tagging console in AEM](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -85,7 +85,7 @@ A namespace is used to organize other tags. It can be thought of as the lowest-l
 
 1. Once the required information is entered select **Create**.
 
-The namespace is created. Note that in the tagging console the namespaces are at the lowest level (at the far left column in the console) and are represented by folder icons, reflecting their nature as a "container" or grouping of other tags.
+The namespace is created. In the tagging console the namespaces are at the lowest level (at the far left column in the console) and are represented by folder icons, reflecting their nature as a "container" or grouping of other tags.
 
 You can now [create new tags](#creating-tags) in this namespace or [manage existing tags.](#managing-tags)
 
@@ -157,7 +157,7 @@ There are several actions that you can take on existing tags and namespaces to m
 * [Merge](#merging-tags)
 * [Delete](#deleting-tags)
 
-Note that when there is note sufficient space available on the toolbar, additional options are available behind the ellipsis icon.
+When there is note sufficient space available on the toolbar, additional options are available behind the ellipsis icon.
 
 ### Viewing Tag Properties {#viewing-tag-properties}
 
@@ -237,7 +237,7 @@ It can be useful to see to which content a particular tag is applied. You can do
 
    ![Viewing the detail of the tag's references](assets/tag-references-detail.png)
 
-Hover the mouse or tap a referencing content in the list to reveal the full path of the content.
+Hover the mouse or select a referencing content in the list to reveal the full path of the content.
 
 For more details on selecting viewing modes and the rail, see [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
@@ -353,7 +353,7 @@ Let's assume that we have a tag called `Animals` that we want to translate into 
 
 1. Select the tag that you want to translate and then select **Edit** in the toolbar.
 
-1. In the **Edit Tag** dialog, in the **Localization** column, select the target language, for example German.
+1. In the **Edit Tag** dialog, in the **Localization** column, select the target language, for example, German.
 
 1. In the **German** field that appears, provide the translated title.
 

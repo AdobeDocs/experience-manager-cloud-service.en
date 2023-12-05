@@ -89,7 +89,7 @@ You can provide some, all, or none of these three icons to your authors in the R
 
 To configure RTE to display the required icons, follow these steps.
 
-1. Navigate to your component, say for example `/apps/<myProject>/components/text`.
+1. Navigate to your component, say for example, `/apps/<myProject>/components/text`.
 1. Navigate to the node `rtePlugins/edit`. See [activate a plug-in](#activateplugin) if the node does not exist.
 1. Create the `features` property on the `edit` node and add one or more of the features. Save all changes.
 
@@ -222,7 +222,7 @@ This is done by enabling the styles plug-in.
 
 Then, specify the location(s) of the style sheet(s) you want to reference:
 
-1. Navigate to the root node of your text component, for example `/apps/<myProject>/components/text`.
+1. Navigate to the root node of your text component, for example, `/apps/<myProject>/components/text`.
 1. Add the property `externalStyleSheets` to the parent node of `<rtePlugins-node>`:
 
     * **Name** `externalStyleSheets`
@@ -323,7 +323,7 @@ Any text authored in RTE is placed within a block tag, the default being `<p>`. 
 
 >[!NOTE]
 >
->If a block tag, for example an `<hr>` tag, can't be assigned to a paragraph, it is not a valid use case for a `paraformat` plug-in.
+>If a block tag, for example, an `<hr>` tag, can't be assigned to a paragraph, it is not a valid use case for a `paraformat` plug-in.
 
 When the Paragraph Formats plug-in is enabled for the first time, no default Paragraph Formats are available. The pop-up list is empty. To provide the authors with paragraph formats, do the following:
 
