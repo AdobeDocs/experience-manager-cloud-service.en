@@ -1,13 +1,13 @@
 ---
 title: Editing Launches
-description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s).
+description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the pages.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 ---
 # Editing Launches {#editing-launches}
 
 ## Editing Launch Pages {#editing-launch-pages}
 
-When a launch has been created for a page (or set of pages) you can edit the content in the launch copy of the page(s).
+When a launch has been created for a page (or set of pages) you can edit the content in the launch copy of the pages.
 
 1. Access the [Launch from References (Sites console)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) to show the available actions.
 1. Select **Go to the page** to open the page for editing.

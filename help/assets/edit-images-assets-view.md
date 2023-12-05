@@ -85,7 +85,7 @@ To edit images using [!DNL Adobe Express] embedded editor, follow the steps belo
 
    ![Adobe Express embedded editor](assets/embedded-editor.png)
 
-   You can leverage the functionality of [!DNL Adobe Express] to perform all the image-editing related actions, such as [resize image](https://helpx.adobe.com/in/express/using/resize-image.html), [remove or change background color](https://helpx.adobe.com/in/express/using/remove-background.html), [crop image](https://helpx.adobe.com/in/express/using/crop-image.html), and much more.
+   You can use the functionality of [!DNL Adobe Express] to perform all the image-editing related actions, such as [resize image](https://helpx.adobe.com/in/express/using/resize-image.html), [remove or change background color](https://helpx.adobe.com/in/express/using/remove-background.html), [crop image](https://helpx.adobe.com/in/express/using/crop-image.html), and much more.
 
 1. Once you complete image editing, you can download an asset as a new asset or save the asset as a new version. 
 

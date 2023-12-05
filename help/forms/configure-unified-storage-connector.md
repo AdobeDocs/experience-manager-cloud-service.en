@@ -20,10 +20,10 @@ Before executing these steps, ensure that you have an [!DNL Azure] storage accou
 Perform the following steps to create an [!DNL Azure] storage configuration: 
 
 1. Navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Azure Storage]**.
-1. Select a folder to create the configuration and tap **[!UICONTROL Create]**.
+1. Select a folder to create the configuration and select **[!UICONTROL Create]**.
 1. Specify a title for the configuration in the **[!UICONTROL Title]** field.
 1. Specify the name of the [!DNL Azure] storage account in the **[!UICONTROL Azure Storage Account]** field.
-1. Specify the key to access Azure storage account in the **[!UICONTROL Azure Access Key]** field and tap **[!UICONTROL Save]**.
+1. Specify the key to access Azure storage account in the **[!UICONTROL Azure Access Key]** field and select **[!UICONTROL Save]**.
 
 ### Configure Unified Storage Connector (USC) for AEM Workflows {#configure-unified-storage-connector-workflows}
 
@@ -33,17 +33,17 @@ Perform the following steps to configure Unified Storage Connector (USC) for AEM
 
 1. In the **[!UICONTROL Workflow]** section, Select **[!UICONTROL Azure]** from the Storage drop-down list.
 1.  Specify the [configuration path for the Azure storage configuration](#create-azure-storage-configuration) in the **[!UICONTROL Storage Configuration Path]** field.
-1. Tap **[!UICONTROL Publish]** and then tap **[!UICONTROL Save]** to save the configuration.
+1. Select **[!UICONTROL Publish]** and then select **[!UICONTROL Save]** to save the configuration.
 
 ### Configure an AEM Workflow model for external data storage {#configure-workflow-external-data-storage}
 
 Perform the following steps to configure an AEM Workflow model for an external data storage:
 
 1. Navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
-1. Select a model name and tap **[!UICONTROL Edit]**.
-1. Tap the Page Information icon and tap **[!UICONTROL Open Properties]**.
+1. Select a model name and select **[!UICONTROL Edit]**.
+1. Select the Page Information icon and select **[!UICONTROL Open Properties]**.
 1. Select **[!UICONTROL Externalize workflow data storage]**.
-1. Tap **[!UICONTROL Save & Close]** to save the properties.
+1. Select **[!UICONTROL Save & Close]** to save the properties.
 
 >[!NOTE]
 >

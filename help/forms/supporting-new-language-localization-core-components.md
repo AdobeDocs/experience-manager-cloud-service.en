@@ -72,7 +72,7 @@ To add support for a new locale, follow these steps:
 
     ```
     
-    Replace `<my-org>` and `<my-program>` in the above URL with your organization name and program name. For detailed instructions to obtain the organization name, program name, or the complete path of your Git repository and the credentials required to clone the repository, refer to the [Accessing Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) article. 
+    Replace `<my-org>` and `<my-program>` in the above URL with your organization name and program name. For detailed instructions to obtain the organization name, program name, or the complete path of your Git repository and the credentials required to clone the repository, see [Accessing Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) article. 
 
     After successful completion of command, a folder `<my-program>` is created. It contains the content cloned from the Git repository. In rest of the article, the  folder is reffred as, `[AEM Forms as a Cloud Service Git repository]`.
 
