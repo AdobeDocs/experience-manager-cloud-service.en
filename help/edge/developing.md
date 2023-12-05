@@ -1,4 +1,27 @@
+---
+title: Developing for Edge Delivery Services
+description: Learn how to develop blocks and customize your AEM project to work with Edge Delivery Services.
+feature: Edge Delivery Services
+---
+
+# Developing for Edge Delivery Services {#developing-edge}
+
+Edge Delivery Services is based around the concept of blocks. AEM comes with a comprehensive library of predefined blocks, which can be extended to meet your project needs. Code for Edge Delivery Services projects are managed in GitHub.
+
+## Blocks {#blocks}
+
+Blocks are the most fundamental part of a page delivered by Content Delivery Services. A block encapsulates styling and code that drives a logical component of a content page.
+
+AEM provides standard blocks as part of the product within the project boilerplate. Such blocks include heading, text, images, links, lists, etc.
+
+Please see the [Build section](https://www.aem.live/docs/#build) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.
 
 ## Edge Delivery Services and GitHub {#github-edge}
 
-Edge Delivery leverages GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write content in either Google Docs or Microsoft Word and develop the functionality of your site by using CSS and JavaScript in GitHub. Websites are automatically created for each of your branches from content preview to production. Every resource that you put into your GitHub repository is available on your website without a build process.
+Edge Delivery leverages GitHub so you can manage and deploy code directly from your GitHub repository.
+
+Your authors can create content using either document-based authoring or content in AEM with the Universal Editor. Developers can customize the functionality of your site by using CSS and JavaScript in GitHub regardless of how the authors create their content.
+
+Websites are automatically created for each of your branches from content preview to production. Every resource that you put into your GitHub repository is available on your website without a build process.
+
+Please see the [Build section](https://www.aem.live/docs/#build) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.
