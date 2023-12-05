@@ -43,7 +43,7 @@ An information architect would perform these tasks only sporadically as new mode
    * not selected - the new model is created in **Draft** mode
 
 1. If not already enabled, the model must be **Enabled** to use it. 
-   1. Select the model you just created and then select **Enable**.
+   1. Select the model you created and then select **Enable**.
 
       ![Enabling the model](../assets/models-enable.png)
    1. Confirm enabling the model by tapping or clicking **Enable** in the confirmation dialog.

@@ -38,7 +38,7 @@ You can create a collection either with [static references](#create-a-collection
 
 ### Create a collection with static references {#create-a-collection-with-static-references}
 
-You can create a collection with static references, for example a collection with references to assets, folders, collections, spin sets, and image sets.
+You can create a collection with static references, for example, a collection with references to assets, folders, collections, spin sets, and image sets.
 
 1. Navigate to the **[!UICONTROL Collections]** console.
 1. From the toolbar, select **[!UICONTROL Create]**.
@@ -248,7 +248,7 @@ You can run a workflow for the assets within a collection. If the collection con
 
 1. From the Collections console, select a collection on which you want to run a workflow.
 1. Select the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
-1. From the timeline, select or tap the Caret icon at the bottom, and then select **[!UICONTROL Start Workflow]**.
+1. From the timeline, select the Caret icon at the bottom, and then select **[!UICONTROL Start Workflow]**.
 1. In the **[!UICONTROL Start Workflow]** section, select a workflow model from the list. For example, select the **[!UICONTROL DAM Update Asset]** model.
 1. Enter a title for the workflow, and select **[!UICONTROL Start]**.
 1. In the dialog, select **[!UICONTROL Proceed]**. The workflow runs on all the assets in the collection.
