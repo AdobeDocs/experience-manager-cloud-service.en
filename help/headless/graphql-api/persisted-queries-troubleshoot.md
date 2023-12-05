@@ -6,9 +6,9 @@ feature: Content Fragments,GraphQL API
 
 # Troubleshoot Persisted GraphQL Queries {#troubleshoot-persisted-graphql-queries}
 
-The Actions Center includes the **GraphQL persisted query error** alert. This means that you are informed whenever one of your GraphQL persisted queries throws an error.
+The [Actions Center](/help/operations/actions-center.md) includes the **GraphQL persisted query error** alert. This means that you are informed whenever one of your GraphQL persisted queries throws an error.
 
-To help you troubleshoot and resolve such problems, we are providing documentation to explain the *most common* causes of failures, and steps on how to fix them.
+To help you troubleshoot and resolve such problems, we explain the *most common* causes of failures, and steps on how to fix them.
 
 ## Changes to the Content Fragment model {#changes-to-content-fragment-model}
 
@@ -19,7 +19,7 @@ This can happen for a variety of reasons. For example, when a content model auth
 * removes or renames a field
 * updates the allowed models defined for a fragment reference
 * unpublishes a model that is referenced by other models
-* other reasons
+* other actions and reasons
 
 To address this, either:
 
@@ -28,10 +28,12 @@ To address this, either:
 
 To illustrate with an example scenario:
 
-* Check error logs on the publisher and look for the persisted query error messages - splunk (update the env ID)
+<!-- CHECK: splunk? env ID? needs more details/examples -->
+
+* Check error logs on the publisher and look for the persisted query error messages - splunk (update the environment ID)
   * ` "Field 'abc' in type 'XYZModel' is undefined" `
-* This means the Content Fragment model `XYZ` has been updated, and the field `abc` has been most likely removed
-  * Can be confirmed by accessing the author environment - link (update the env ID + `/conf` path to the parent of the model)
+* This means the Content Fragment model `XYZ` has been updated, and the field `abc` has (probably) been removed
+  * Can be confirmed by accessing the author environment - link (update the environment ID + `/conf` path to the parent of the model)
 * If the same persisted query works on the author environment, it likely that the model has not been published
 
 ## GraphQL endpoint not configured {#graphql-endpoint-not-configured}
@@ -42,9 +44,9 @@ To correct this, follow the steps for enabling and publishing your endpoint from
 
 ## Missing path in the GraphQL persisted query URL {#missing-path-query-url}
 
-If persisted queries return the `500` error code with the information `Suffix: '/' does not contain a path`
+If persisted queries return the `500` error code with the information `Suffix: '/' does not contain a path`, the GraphQL servlet is being called without a path suffix. 
 
-This means that the GraphQL servlet is being called without a path suffix. The pattern should be `/graphql/execute.json/thePath`.
+The pattern should be `/graphql/execute.json/thePath`.
 
 ## Blocked due to IP allow list {#blocked-due-to-ip-allow-list}
 
@@ -56,13 +58,9 @@ This is not something specific to GraphQL. See the KB article [405 Error Not All
 
 If the GraphQL endpoint returns the `404` error on publish for `POST` requests, it means the GraphQL queries are blocked at the dispatcher level and the endpoint needs to be manually enabled.
 
-<!-- CHECK: might transform? -->
+Keep in mind that direct `POST` GraphQL queries on the publish tier for production and stage environments are blocked by default at the dispatcher level, generating a `404` response. 
 
->[!NOTE]
->
->Keep in mind that direct `POST` GraphQL queries on the publish tier for production and stage environments are blocked by default at the dispatcher level generating a `404` response. 
->
->The CDN might transform the `404` coming from the dispatcher into a `301`.
+The CDN might transform the `404` coming from the dispatcher into a `301`.
 
 This should not be the case by default, but a custom dispatcher configuration might cause this issue. See more under [Dispatcher - Endpoint configuration with AEM Headless](/help/headless/deployment/dispatcher.md).
 
@@ -111,12 +109,14 @@ curl 'https://author-p${PROGRAM_ID}-e${ENVIRONMENT_ID}.adobeaemcloud.com/content
    --compressed
 ```
 
-<!-- CHECK: A lot of could/should/might -->
+<!-- CHECK: A lot of could/should/might - can it be improved? -->
 
 If the GraphQL schema is generated correctly, the response will be a JSON object. This object contains the names of the different GraphQL queries that can be executed on the instance, under `data__schema.queryType.fields`. For example, you should see a `adventureByPath` field when the instance contains an `Adventure` Content Fragment model.
 
 When a schema generation issue exists the `Introspection` query will still return a `200` code. However the response payload will only contain the `basic/scalar` types instead of the full schema.
 
 This case is rare and due to a glitch in the schema generation. Touching a Content Fragment model to retrigger the schema generation should solve the problem in such cases.
+
+<!-- CHECK: can the customer do this? -->
 
 If the problem only affects a single pod, then recycling the faulty pod will address the problem.
