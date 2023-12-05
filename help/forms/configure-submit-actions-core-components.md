@@ -435,6 +435,7 @@ You can configure an Adaptive Form to submit data to Workfront Fusion on submiss
 
 The Adaptive Forms editor provides the **Invoke a WorkFront Fusion Scenario** submit action to send Adaptive Forms data or attachments to a Workfront Fusion scenario. To use the submit action for sending captured data to a Workfront Fusion scenario, refer to [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
 
+
 ## Use synchronous or asynchronous submission {#use-synchronous-or-asynchronous-submission}
 
 A Submit Action can use synchronous or asynchronous submission.
