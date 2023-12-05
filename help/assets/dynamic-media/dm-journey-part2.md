@@ -117,7 +117,7 @@ You recall in [Anatomy of a Dynamic Media URL](#dm-journey-d) earlier, that you 
 
 You can think of an image preset as a recipe for your images. It is going to deliver any images that use the preset, consistently, every time; it's going to be the same. The parameter `&op_brightness=+10` was also added to increase the brightness slightly.  
 
-When you are finished, you save the preset, and now it is available for all images that you have. In this case, we want to apply the _Medium_ image preset to an image of a bowl of liquid chocolate.
+When you are finished, you save the preset, and now it is available for all images that you have. In this case, you want to apply the _Medium_ image preset to an image of a bowl of liquid chocolate.
 
 ![Applying the image preset *Medium* to generate a rendition of an image](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Applying the image preset Medium to generate a rendition of an image._

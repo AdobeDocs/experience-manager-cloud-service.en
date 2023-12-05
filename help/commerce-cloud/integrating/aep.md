@@ -263,7 +263,7 @@ To initialize the React-based Peregrine and CIF core components, create the requ
         useDataLayerEvents();
         
         useEffect(() => {
-            // implement a proper marketing opt-in, for demo purpose we hard-set the consent cookie
+            // implement a proper marketing opt-in, for demo purpose you hard-set the consent cookie
             if (document.cookie.indexOf('mg_dnt') < 0) {
                 document.cookie += '; mg_dnt=track';
             }

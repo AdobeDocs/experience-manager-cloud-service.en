@@ -258,7 +258,7 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
-1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
 
 
 #### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}

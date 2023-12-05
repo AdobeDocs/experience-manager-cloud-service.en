@@ -17,7 +17,7 @@ To enable the ContextHub features and to link to the ContextHub JavaScript libra
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-Note that you also need to configure whether the ContextHub toolbar appears in Preview mode. See [Showing and Hiding the ContextHub UI](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
+You also need to configure whether the ContextHub toolbar appears in Preview mode. See [Showing and Hiding the ContextHub UI](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
 
 ## About ContextHub Stores {#about-contexthub-stores}
 
@@ -97,7 +97,7 @@ Individual data items are stored as a set of key/value pairs. To store and retri
 * [getItem](contexthub-api.md#getitem-key)
 * [setItem](contexthub-api.md#setitem-key-value-options)
 
-Note that custom store candidates can define additional functions that provide access to store data.
+Custom store candidates can define additional functions that provide access to store data.
 
 >[!NOTE]
 >
@@ -133,7 +133,7 @@ The rules that are used to resolve these segments are summarized as follows:
 
 >[!WARNING]
 >
->The installed segments are provided as reference configurations to help you build your own dedicated configuration for your project and as such should not be used directly.
+>The installed segments are provided as reference configurations to help you build your own dedicated configuration for your project. Do not use them directly.
 
 ## Debugging ContextHub {#debugging-contexthub}
 
