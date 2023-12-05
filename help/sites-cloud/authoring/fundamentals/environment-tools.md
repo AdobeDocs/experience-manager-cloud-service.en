@@ -220,7 +220,7 @@ Select the appropriate reference type for more information. In certain situation
 
 * **Incoming Links**, provides a list of pages that reference the page, together with direct access to **Edit** one of those pages when you select a specific link.
 
-  * This can only show static links, not dynamically generated links; for example from the List component.
+  * This can only show static links, not dynamically generated links; for example, from the List component.
 
 * Instances of borrowed and lent content using the **Reference** component, from here you can navigate to the referencing/referenced page
 * [Launches](/help/sites-cloud/authoring/launches/overview.md), provides access to related launches

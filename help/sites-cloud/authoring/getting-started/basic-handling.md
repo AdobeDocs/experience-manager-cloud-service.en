@@ -17,7 +17,7 @@ This document is designed to give an overview of basic handling when using the A
 
 ## A Touch-Enabled UI {#a-touch-enabled-ui}
 
-AEM's user interface is enabled for touch. A touch-enabled interface lets you use touch to interact with the software through gestures such as tap, touch-and-hold, and swipe. Because the AEM UI is touch-enabled, you can use the touch gestures on your touch devices such as your mobile phone or tablet. However mouse actions on a traditional desktop device are also available, giving you flexibility in how you choose to author your content.
+AEM's user interface is enabled for touch. A touch-enabled interface lets you use touch to interact with the software through gestures such as select, touch-and-hold, and swipe. Because the AEM UI is touch-enabled, you can use the touch gestures on your touch devices such as your mobile phone or tablet. However mouse actions on a traditional desktop device are also available, giving you flexibility in how you choose to author your content.
 
 ## First Steps {#first-steps}
 
@@ -249,9 +249,9 @@ Selecting a specific resource is dependent on a combination of the view and the 
 
 |View|Select Touch|Select Desktop|Deselect Touch|Deselect Desktop|
 |---|---|---|---|---|
-|Column|Tap the thumbnail|Click the thumbnail|Tap the thumbnail|Click the thumbnail|
-|Card|Tap and hold the card|Mouse over then use the check mark quick action|Tap the card|Click the card|
-|List|Tap the thumbnail|Click the thumbnail|Tap the thumbnail|Click the thumbnail|
+|Column|Select the thumbnail|Click the thumbnail|Select the thumbnail|Click the thumbnail|
+|Card|Select and hold the card|Mouse over then use the check mark quick action|Select the card|Click the card|
+|List|Select the thumbnail|Click the thumbnail|Select the thumbnail|Click the thumbnail|
 
 #### Select All {#select-all}
 
