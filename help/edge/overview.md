@@ -21,7 +21,7 @@ The following diagram illustrates how you can edit content in Microsoft Word (do
 
 ![Edge Delivery Architecture](assets/edgedelivery.png)
 
-Edge Delivery is a composable set of services that allows for a high degree of flexibility in how you author content on your website. As mentioned previously, you can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) with [Universal Editor authoring](/help/implementing/universal-editor/introduction.md) as well as document-based authoring.](https://www.aem.live/docs/authoring)
+Edge Delivery is a composable set of services that allows for a high degree of flexibility in how you author content on your website. As mentioned previously, you can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) with [Universal Editor authoring](/help/implementing/universal-editor/introduction.md) as well as [document-based authoring.](https://www.aem.live/docs/authoring)
 
 For example, you can use content directly from Microsoft Word or Google Docs. This means that documents from those sources can become pages on your website. Furthermore, headings, lists, images, font elements can all be transferred from the initial source into the website. The new content is added instantly without a rebuild process.
 
@@ -80,7 +80,3 @@ Steps to log a support ticket via the Admin Console:
 ## What's Next {#whats-next}
 
 Get started by reviewing [Using Edge Delivery Services](/help/edge/using.md).
-
-## Useful Resources {#useful-resources}
-
-For additional details about Edge Delivery Services, see the [Edge Delivery Services documentation.](https://www.aem.live/docs/)
