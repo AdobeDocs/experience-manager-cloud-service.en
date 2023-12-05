@@ -752,7 +752,7 @@ user-guide-title: AEM as a Cloud Service
   + [Using Edge Delivery](/help/edge/using.md)
   + [Authoring Content for Edge Delivery](/help/edge/authoring.md)
   + [Publishing Content for Edge Delivery](/help/edge/publishing.md)
-  + [Developing](/help/edge/developing.md)
+  + [Developing for Edge Delivery](/help/edge/developing.md)
   + [Existing Projects](/help/edge/existing-projects.md)
 + Headless {#headless}
   + [What is a Headless CMS?](/help/headless/what-is-headless.md)
