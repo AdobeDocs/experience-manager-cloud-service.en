@@ -45,7 +45,7 @@ Since they serve different purposes, the different environments have different o
 
    ![Cloud Manager landing page](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png) 
 
-1. From the create program wizard, select **Set up a sandbox**, then provide a program name and tap or click **Continue**.
+1. From the create program wizard, select **Set up a sandbox**, then provide a program name and select **Continue**.
 
    ![Program type creation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 

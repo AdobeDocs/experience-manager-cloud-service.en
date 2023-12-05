@@ -134,7 +134,7 @@ The following is an extensive list of metadata properties supported in [!DNL AEM
      <li>HTML</li> 
      <li>PDF</li> 
      <li>Both</li> 
-    </ul> <p>This option is used for restricting the rendering format of the forms only on forms portal where they are visible to the end user.</p> </td> 
+    </ul> <p>This option is used for restricting the rendering format of the forms only on forms portal where they are visible to the user.</p> </td> 
   </tr> 
   <tr> 
    <td>Tags</td> 

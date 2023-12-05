@@ -79,7 +79,7 @@ To modify your content headlessly, AEM offers two robust APIs.
 * The GraphQL API lets you create requests to access and deliver Content Fragments.
 * The Assets REST API lets you create and modify Content Fragments (and other assets).
 
-You will learn about these APIs and how to use them in a later part of the AEM headless journey. Or see [additional resources](#additional-resources) section below for additional documentation.
+You learn about these APIs and how to use them in a later part of the AEM headless journey. Or, see [additional resources](#additional-resources) section below for more documentation.
 
 ## Headless Integration Levels {#integration-levels}
 
@@ -111,13 +111,13 @@ This level of integration builds on level two by enabling most content in the ex
 
 ### You do not yet have an external consumer of the headless content such as a single page application (SPA). {#do-not-have-a-spa}
 
-If your goal is to create a new SPA that headlessly consumes content from AEM, you can use features such as Content Fragments to manage your headless content, and also build a SPA with AEM's SPA Editor framework.
+If your goal is to create a SPA that headlessly consumes content from AEM, you can use features such as Content Fragments to manage your headless content, and also build a SPA with AEM's SPA Editor framework.
 
 Using the SPA Editor, the SPA not only consumes content from AEM, but is also fully editable within AEM by your content authors giving you both the flexibility of headless delivery and in-context editing within AEM.
 
 ## Requirements and Prerequisites {#requirements-prerequisites}
 
-There are a number of requirements before you begin your headless AEM project.
+There are several requirements before you begin your headless AEM project.
 
 ### Knowledge {#knowledge}
 
@@ -175,7 +175,7 @@ Create a plan on what content translation you need.
 
 Be clear about your content update workflow. What is the approval process that the system must support? Might AEM workflows be used to automate this process?
 
-Note that your [content hierarchy](#content-hierarchy) can be used to make translation easier.
+Your [content hierarchy](#content-hierarchy) can be used to make translation easier.
 
 See the [additional resources](#additional-resources) section for additional documentation on AEM workflows and translation tools including links to the AEM Headless Translation Journey.
 
@@ -267,7 +267,7 @@ Now that you have completed this part of the AEM Headless Developer Journey, you
 * Be aware of AEM's headless integration levels.
 * Be able to define your project in terms of scope.
 
-You should continue your AEM headless journey by next reviewing the document [Path to Your First Experience Using AEM Headless](path-to-first-experience.md) where you will learn how to set up the necessary tools and how to begin thinking about modeling your data in AEM.
+You should continue your AEM headless journey by next reviewing the document [Path to Your First Experience Using AEM Headless](path-to-first-experience.md) where you learn how to set up the necessary tools and how to begin thinking about modeling your data in AEM.
 
 ## Additional Resources {#additional-resources}
 

@@ -31,7 +31,7 @@ Read on to know what integrations to pick between desktop and the enterprise-gra
 | Simplify experience for creatives on desktop | Streamline access to asset from a DAM ([!DNL Assets]) for creative professionals, or more broadly, users on desktop working in native asset creation applications. They need an easy and straightforward way to discover, use (open), edit and save changes to Experience Manager, and upload new files. | Win or Mac desktop; Creative Cloud apps |
 | Provide high-quality, ready-to-use assets from [!DNL Adobe Stock] | Marketers help accelerate the content creation process by assisting with asset sourcing and discovery. Creative professionals use the approved assets right from within their creative tools. | [!DNL Assets]; [!DNL Adobe Stock] marketplace; metadata fields |
 | Distribute and share assets by organizations | Internal departments/local branches and external partners, distributors, and agencies use the approved assets shared by the parent organization. The organization wants to securely and seamlessly share the created assets for wider reuse. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
-| Generate predefined variations of uploaded assets automatically | Automatically process assets leveraging Adobe's unique media handling and transformation technology for predefined actions. Create custom logic to define your own actions using APIs and asset microservices. | [!DNL Assets] user interface |
+| Generate predefined variations of uploaded assets automatically | Automatically process assets using Adobe's unique media handling and transformation technology for predefined actions. Create custom logic to define your own actions using APIs and asset microservices. | [!DNL Assets] user interface |
 
 ## Adobe offerings to support the collaboration need {#adobe-offerings-to-support-the-collaboration-need}
 
@@ -76,7 +76,7 @@ To support asset distribution use cases, consider the following options:
 * [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) for a configurable add-on to Assets to publish assets.
 
 * Custom solutions are created based on [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/) code base.
-* Experience Manager [link share](/help/assets/share-assets.md) to share assets ad hoc using links.
+* Experience Manager [link share](/help/assets/share-assets.md) to share assets on demand using links.
 * [Assets web interface](/help/assets/manage-digital-assets.md) with areas for external parties secured by Experience Manager Access Control setup and with necessary IT / network configuration adjustments, giving these external users access to Experience Manager.
 
 ## Key concepts and use cases {#key-concepts-and-use-cases}
@@ -93,7 +93,7 @@ To support asset distribution use cases, consider the following options:
 * **Major asset  update/change :** A change to a digital asset that requires considerable work, and sometimes must be done over a longer period of time. It typically includes multiple changes. The asset must be saved multiple times while being updated. Major asset updates typically cause the asset to enter a WIP stage.
 * **DAM:** Digital asset management. In this document, it is synonymous with Experience Manager Assets, unless specifically mentioned otherwise.
 * **Creative user:** A creative professional, who creates digital assets using Creative Cloud apps and services. In some cases, a creative user may be a member of a creative team who may use Creative Cloud, but does not create digital assets (like a creative director or creative team manager).
-* **DAM user:** A typical user of a DAM system. Depending on the organization, a DAM user can be a marketing or a non-marketing user, for example a Line-of-Business (LOB) user, librarian, sales person, and so on.
+* **DAM user:** A typical user of a DAM system. Depending on the organization, a DAM user can be a marketing or a non-marketing user, for example, a Line-of-Business (LOB) user, librarian, sales person, and so on.
 
 ### Considerations when using Experience Manager and Creative Cloud integration {#considerations-when-using-aem-and-creative-cloud-integration}
 
@@ -140,7 +140,7 @@ Most organizations choose to only store assets that are relevant to the downstre
 
 Storing assets is also subject to technical and resource utilization considerations. DAM provides additional services around stored assets, including extracting metadata, versioning, generating previews/transcoding, managing references, and adding access control information. These services consume additional time and infrastructure resources.
 
-Often, storing all of the assets and updates is not desirable. For example, if updates to specific assets are of poor quality and consume excessive resources, the assets may not be stored in DAM.
+Often, storing all assets and updates is not desirable. For example, if updates to specific assets are of poor quality and consume excessive resources, the assets may not be stored in DAM.
 
 #### When assets are stored in DAM {#when-assets-are-stored-in-dam}
 
@@ -199,12 +199,12 @@ Adobe Asset Link offers a good support for this use case:
 * When users in Photoshop, InDesign, or Illustrator intent to edit a file, they execute a Check-out operation on the given asset
 * The asset is downloaded in background, put into users Creative Cloud account synchronized to disk by Creative Cloud desktop app, and the check-out flag is toggled in Experience Manager on the asset to minimize editing conflicts
 * From there on, the user works in a file that's stored locally in the synced location, and can continue working and saving necessary changes at any frequency required
-* Additionally, because the asset is in the Creative Cloud account, it is also available on other devices that the user might have (for example, can be opened or edited in a dedicated Creative Cloud mobile app), and can be shared with other Creative Cloud users for collaboration purposes.
+* Also, because the asset is in the Creative Cloud account, it is also available on other devices that the user might have (for example, can be opened or edited in a dedicated Creative Cloud mobile app), and can be shared with other Creative Cloud users for collaboration purposes.
 * When the creative user is done with the changes, they can execute a Check-in operation on that file in their Creative Cloud application, with an optional comment. The corresponding asset in Experience Manager are versioned and updated to with the new binary. Experience Manager users like Marketers or LOB users have access to major asset changes, or milestones, via Experience Manager asset timeline UI.
 
 Experience Manager desktop app provides a network share for assets opened in the native app. By default, all the changes done locally are uploaded to Experience Manager automatically after a brief while. With such a configuration, frequent saves during the work-in-progress phase would all be uploaded into Experience Manager and versioned, creating a large amount of network traffic and potential scalability challenges - not to mention unnecessary versions in Experience Manager.
 
-The recommended approach here is to use an option in Experience Manager desktop app to turn off automated updates, and upload changes to assets to Experience Manager manually, leveraging the upload changes action in the app's Asset Status UI.
+The recommended approach here is to use an option in Experience Manager desktop app to turn off automated updates, and upload changes to assets to Experience Manager manually, using the upload changes action in the app's Asset Status UI.
 
 #### Bulk upload to DAM {#bulk-upload-to-dam}
 
@@ -214,7 +214,7 @@ You may have a requirement to simultaneously upload a larger number of files int
 * Uploading assets provided by creative agencies
 * Uploading selected assets from a larger set if the selection is done outside DAM
 
-Note that this description refers to uploading files operationally (for example, every week or with every  photoshoot ), as a normal part of desktop user's workflow. Large asset migrations are not covered here.
+This description refers to uploading files operationally (for example, every week or with every  photoshoot ), as a normal part of desktop user's workflow. Large asset migrations are not covered here.
 
 You can use the following upload capabilities:
 

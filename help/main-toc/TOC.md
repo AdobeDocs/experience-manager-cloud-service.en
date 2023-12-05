@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.10.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-10-0.md)
       + [Release Notes for 2023.9.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-9-0.md)
       + [Release Notes for 2023.8.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-8-0.md)
       + [Release Notes for 2023.7.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-7-0.md)
@@ -133,6 +134,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Migration Tools {#migration-tools}
     + [Current Release Notes](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-10-0.md)
       + [Release Notes for 2023.9.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-09-0.md)
       + [Release Notes for 2023.8.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-08-0.md)
       + [Release Notes for 2023.7.0](/help/journey-migration/release-notes/release-notes-migration-tools-2023-07-0.md)
@@ -573,6 +575,7 @@ user-guide-title: AEM as a Cloud Service
       + [Integrate Adaptive Forms to Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
       + [Viewing and understanding Adaptive Forms Analytics Report](/help/forms/view-understand-aem-forms-analytics-reports.md)
       + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+      + [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
       + [Embed an Adaptive Forms in an AEM Sites page](/help/forms/embed-adaptive-form-aem-sites.md)
       + [Embed adaptive form based on Core Components to an external web page](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + [Embed adaptive form based on Foundation Components to an external web page](/help/forms/embed-adaptive-form-external-web-page.md)
@@ -673,6 +676,7 @@ user-guide-title: AEM as a Cloud Service
   + Overview to Screens as a Cloud Service {#overview}
     + [Introduction](/help/screens-cloud/introduction/introduction.md)
     + [Understanding Role Definitions](/help/screens-cloud/introduction/personas-screens-cloud.md)
+    + [Adobe Analytics Integration with Screens Cloud](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
   + Onboarding to Screens as a Cloud Service {#onboarding-screens-cloud}
     + [First Time Login](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
     + Adding Screens Program as an Add-On in Cloud Manager {#adding-screens-addon}
@@ -717,6 +721,8 @@ user-guide-title: AEM as a Cloud Service
       + [Building Product Experiences](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
   + Integrations {#integrations}
     + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
+    + [Live Search CIF Component](/help/commerce-cloud/integrating/live-search-plp.md)
+    + [Live Search Popover CIF Component](/help/commerce-cloud/integrating/live-search-popover.md)
     + [Third-Party Commerce Solution](/help/commerce-cloud/integrating/third-party.md)
     + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
   + AEM Storefront {#storefront}

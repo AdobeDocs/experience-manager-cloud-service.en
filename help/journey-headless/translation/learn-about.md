@@ -20,7 +20,7 @@ Ever since the rise of easy-to-use, large-scale content management systems (CMSe
 
 ![The classic full-stack CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-In a full-stack CMS, all of the functionality for manipulating content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
+In a full-stack CMS, the functionality for manipulating content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
 
 * There is one system to maintain.
 * Content is managed centrally.
@@ -41,7 +41,7 @@ When we talk about a headless CMS, the CMS manages the content and continues to 
 
 ![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-The consuming services, be they AR experiences, a web shop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
+The consuming services, be they AR experiences, a web shop, mobile experiences, progressive web apps (PWAs), and so on, take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
 
 Omitting the head simplifies the CMS by removing complexity. Doing this also shifts the responsibility of rendering the content to the services that actually need the content and are often better suited to such rendering.
 
@@ -51,7 +51,7 @@ In addition to offering robust tools to create, manage, and deliver traditional 
 
 The power of AEM allows it to deliver content either headlessly, full-stack, or in both models at the same time. For the translation specialist, the same set of translation tools can be applied to both types of content, giving you a unified approach for translating your content.
 
-Further in the journey you will learn the details about how AEM translates content, but at a high level, the concept is simple:
+Further in the journey you learn the details about how AEM translates content, but at a high level, the concept is simple:
 
 1. Define a connection to a translation service by configuring the translation integration framework.
 1. Define which content should be translated using translation rules.

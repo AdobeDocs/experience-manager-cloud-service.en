@@ -19,20 +19,20 @@ exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 
 The repository browser is a developer tool that provides a read-only view into the repository for all environments on author, publish, and preview tiers. It is designed to facilitate viewing of the content structure to make it easier to see or debug content.
 
-Accessible from the Developer Console, it can be used to browse the repository of an author or publish instance for a selected environment.
+Accessible from the [AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console), it can be used to browse the repository of an author or publish instance for a selected environment.
 
 ### Access Prerequisites {#access-prerequisites}
 
-These following conditions must be met to access the Developer Console or the Repository browser
+These following conditions must be met to access the AEM as a Cloud Service Developer Console or the Repository browser
 
-To access Developer Console:
+To access the AEM as a Cloud Service Developer Console:
 
-* For Production programs, users must have the **Cloud Manager - Developer Role** in the Admin Console
+* For Production programs, users must have the **Cloud Manager - Developer Role** in the Adobe Admin Console
 * For sandbox programs, it is available to any user with a product profile giving them access to AEM as a Cloud Service.
 
 To access the Repository Browser:
 
-* Users must have the **Cloud Manager - Developer** Role in the Admin Console to view Author and Publish instances.
+* Users must have the **Cloud Manager - Developer** Role in the AEM as a Cloud Service Developer Console to view Author and Publish instances.
 * In addition, for author, users with the AEM Users Product Profile can view the repository browser with minimal read access; the user's permissions are respected when browsing the repository. Users with the AEM Administrators Product Profile can view the repository browser with full read access.
 
 For more information about setting up user permissions, see the [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
@@ -46,7 +46,7 @@ The repository browser can be launched by following the steps below.
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
 1. Next, click the **Repository Browser** tab   
-1. Choose any pod corresponding to author, publish, or preview by clicking the **Pod** dropdown list.
+1. Choose any pod corresponding to author, publish, or preview by clicking the **Pod** drop-down list.
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 

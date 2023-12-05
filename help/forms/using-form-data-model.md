@@ -40,7 +40,7 @@ You can create [Adaptive Forms](creating-adaptive-form.md) and Adaptive Form Fra
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Tap to expand **[!UICONTROL Select Form Data Model]**. All available form data models are listed.
+1. Select to expand **[!UICONTROL Select Form Data Model]**. All available form data models are listed.
 
    Select a from data model.
 
@@ -87,14 +87,14 @@ Form Data Model editor lets you generate and edit sample data for data model obj
 <!--To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
-1. Select an interactive communication and tap **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
-1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and tap **[!UICONTROL Preview]**.
+1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
+1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and select **[!UICONTROL Preview]**.
 
 The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-To preview an Adaptive Form with sample data, open the Adaptive Form in author mode and tap **[!UICONTROL Preview]**.
+To preview an Adaptive Form with sample data, open the Adaptive Form in author mode and select **[!UICONTROL Preview]**.
 
 ## Prefill using Form Data Model service {#prefill}
 
@@ -124,10 +124,10 @@ You can also submit form attachments to a data source using binary data model ob
 
 1. Add a data model object that includes a binary property to the form data model.
 1. In the Adaptive Form, drag-drop the **[!UICONTROL File Attachment]** component from the Components browser onto the Adaptive Form.
-1. Tap to select the added component and tap ![settings_icon](assets/configure-icon.svg) to open the Properties browser for the component.
-1. In the Bind Reference field, tap ![foldersearch_18](assets/folder-search-icon.svg) and navigate to select the binary property you added in the form data model. Configure other properties, as appropriate.
+1. Select to select the added component and select ![settings_icon](assets/configure-icon.svg) to open the Properties browser for the component.
+1. In the Bind Reference field, select ![foldersearch_18](assets/folder-search-icon.svg) and navigate to select the binary property you added in the form data model. Configure other properties, as appropriate.
 
-   Tap ![check-button](assets/save_icon.svg) to save the properties. The attachment field is now bound to the binary property of the form data model.
+   Select ![check-button](assets/save_icon.svg) to save the properties. The attachment field is now bound to the binary property of the form data model.
 
 1. In the Submission section of the Adaptive Form Container properties, enable **[!UICONTROL Submit Form Attachments]**. It submits the attachment in the binary property field to the data source on form submission.
 
@@ -148,8 +148,8 @@ You can [invoke a form data model from rule editor using custom functions](/help
 1. Go to Experience Manager web console at `https://server:host/system/console/configMgr`.
 1. Locate **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]**.
 1. Click ![plus icon](/help/forms/assets/Smock_Add_18_N.svg) icon to add the configuration..
-1. Add **[!UICONTROL Content path pattern]** to specify the location of your Adaptive Forms.  By default, the value is `/content/forms/af/(.*)` which includes all the Adaptive Forms. You can also specify the path for an specific Adaptive Form. 
-1. Add **[!UICONTROL Form Data Model path pattern]** to specify the location of form data model. By default, the value is `/content/dams/formsanddocuments-fdm/(.*)` which includes all the Form Data Model. You can also specify the path for an specific Form Data Model. 
+1. Add **[!UICONTROL Content path pattern]** to specify the location of your Adaptive Forms.  By default, the value is `/content/forms/af/(.*)` which includes all the Adaptive Forms. You can also specify the path for a specific Adaptive Form. 
+1. Add **[!UICONTROL Form Data Model path pattern]** to specify the location of form data model. By default, the value is `/content/dams/formsanddocuments-fdm/(.*)` which includes all the Form Data Model. You can also specify the path for a specific Form Data Model. 
 1. Save the settings. 
 
 The added configuration is saved under the **[!UICONTROL Adaptive Form-Level Whitelisting of Form Data Model for Service Invocation - Configuration Factory]** option.
