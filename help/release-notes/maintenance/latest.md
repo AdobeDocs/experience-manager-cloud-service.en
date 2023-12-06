@@ -28,7 +28,7 @@ Summarized below are the continuous improvements for maintenance release 14538, 
 * GRANITE-45341: Localization of success/failure strings for activate/deactivate user action  under Tools → Security → Users.
 * GRANITE-46650: Localization of error message "UserId/Password mismatch." string under Tools → Security → Users Create Dialog.
 * GRANITE-47764: Update to Sling Models API 1.5.0: Injection to a static variable in a Sling Model will cause compilation errors (SLING-11507).
-* GRANITE-48452: Sending empty clientlibs with statuscode 200.
+* GRANITE-48452: Sending empty clientlibs with status code 200.
 * GRANITE-48410: ResourceResolver is not closed.
 * ASSETS-31297: Prevent delete of copied asset from dynamic media.
 * ASSETS-30811: Reference Updates for Blocktag Service bound.
