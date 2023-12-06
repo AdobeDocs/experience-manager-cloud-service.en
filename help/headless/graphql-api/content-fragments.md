@@ -1030,6 +1030,15 @@ To access the GraphQL endpoint from an external website you need to configure th
 
 See [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/headless/security/authentication.md).
 
+## Limitations {#limitations}
+
+To protect against potential problems there are default limitations imposed on your queries:
+
+* The query cannot contain more than 1M (1024 * 1024) characters
+* The query cannot contain more than 15000 tokens 
+* The query cannot contain more than 200000 whitespace tokens 
+* The query depth cannot exceed 500
+
 ## FAQs {#faqs}
 
 Questions that have arisen:
