@@ -18,7 +18,8 @@ Real User Monitoring (RUM) is a type of performance monitoring technology that c
 Real User Monitoring (RUM) provides deep insight into key performance metrics right from the initiation of the URL until the request is served back to the browser all of which helps the developers enhance the application to make it easy to use for the end users. 
 
 ## Who Can Benefit from RUM Data Monitoring Service? {#Who Can Benefit from RUM Data Monitoring Service }
-RUM Data Service is beneficial for those utilizing Adobe’s CDN, as it offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement by reflecting the number of Page Views on the client-side that can be compared against the existing server-side CDN log Page Views. Additionally, for customers using their own CDN, Adobe can now streamline automatic traffic reporting that includes Page Views for them, which means they don’t have to share any traffic report with Adobe.
+
+RUM Data Service is beneficial for those utilizing Adobe's CDN, as it offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement by reflecting the number of Page Views on the client-side that can be compared against the existing server-side CDN log Page Views. Additionally, for customers using their own CDN, Adobe can now streamline automatic traffic reporting that includes Page Views for them, which means they don't have to share any traffic report with Adobe.
 
 It is also a great opportunity to gain advanced insights into your page performance for both the customers who,  are using Adobe's CDN and for those who are using their own CDN.
 
