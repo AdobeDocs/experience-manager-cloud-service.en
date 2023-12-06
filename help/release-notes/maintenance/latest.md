@@ -15,11 +15,24 @@ Summarized below are the continuous improvements for maintenance release 14538, 
 
 ### Enhancements {#enhancements-14538}
 
-None.
+* GRANITE-46723 - User Sync - SAML Migration from default-sync to IDP-based sync
+* OAK-10311 - Replication - Optimize blob comparison to reduce replication time of large batch of assets in AEM
+* OAK-10511 - Replication - Reduce network round-trips to reduce replication time of large assets in AEM
+* GRANITE-48334 - Publishers - Collection script is missing for RUM
 
 ### Fixed Issues {#fixed-issues-14538}
 
-None.
+* CQ-4354867 - ToggleCondition reference refers to non-existent field in InstanceActionServlet
+* CQ-4349948 - Localisation of 'Profile Properties' strings in Edit User Settings under Tools → Security → Users
+* GRANITE-44541 -  Localisation of Error dialogues on adding Private Key File screen of Edit User > Keystore under Tools → Security → Users
+* GRANITE-45341 - Localisation of success/failure strings for activate/deactivate user action  under Tools → Security → Users
+* GRANITE-46650 - Localisation of error message "UserId/Password mismatch." string under Tools → Security → Users Create Dialogue
+* GRANITE-47764 - Update to Sling Models API 1.5.0: Injection to a static variable in a Sling Model will cause compilation errors (SLING-11507);
+* GRANITE-48452 - Sending empty clientlibs with statuscode 200
+* GRANITE-48410 - ResourceResolver is not closed
+* ASSETS-31297 - Prevent delete of copied asset from dynamic media
+* ASSETS-30811 - Reference Updates for Blocktag Service bound
+* GRANITE-46418 - Update Sling events in AEM: GaugeSupport has infinite recursion in registerWithSuffix (SLING-11918)
 
 ### Known Issues {#known-issues-14538}
 
