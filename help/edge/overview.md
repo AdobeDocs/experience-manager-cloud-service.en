@@ -17,7 +17,7 @@ By using Edge Delivery Services, you can:
 
 ## Edge Delivery Overview {#edge-overview}
 
-The following diagram illustrates how you can edit content in Microsoft Word (document-based editing) and publish to Edge Delivery. It also shows the traditional AEM publishing method using the Universal Editor.
+The following diagram illustrates how you can edit content in Microsoft Word (document-based editing) and publish to Edge Delivery. It also shows the AEM publishing method using the Universal Editor.
 
 ![Edge Delivery Architecture](assets/edgedelivery.png)
 

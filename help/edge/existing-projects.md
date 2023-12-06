@@ -12,18 +12,22 @@ You needn't wait for a new AEM project to benefit from Edge Delivery Services. E
 
 Before the advent of Edge Delivery Services, content managed in AEM was edited using the AEM Page Editor. If your project began before the introduction of Edge Delivery Services, it is almost certain that you are using the Page Editor.
 
-The AEM Page Editor only works with [traditional AEM components](/help/implementing/developing/components/overview.md) such as the [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) These components are incompatible with Edge Delivery Services. Because of this, two phases are required to introduce Edge Delivery Services to an existing AEM project:
+The AEM Page Editor only works with [AEM components](/help/implementing/developing/components/overview.md) such as the [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) These components are incompatible with Edge Delivery Services. Because of this, two phases are required to introduce Edge Delivery Services to an existing AEM project:
 
 * [Phase 1 - Replace Front End](#replace-front-end)
 * [Phase 2 - Switch to Universal Editor](#switch-ue) 
 
 ## Phase 1 - Replace Front End {#replace-front-end}
 
-In phase one, the front end will be rebuilt using Edge Delivery functionality. A converter on App Builder will be required to convert the AEM rendered HTML output to the required semantic HTML.
+In phase one, you can continue to use your existing AEM site structure, components, and authoring tools. The website rendering will be rebuilt using blocks using JavaScript and CSS and it delivered via Edge Delivery Services. 
+
+Please see the [Build section](https://www.aem.live/docs/#build) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.
+
+A converter on App Builder will be required to convert the AEM rendered HTML output and send ingest it to Edge Delivery Services.
 
 ![The content converter in the publishing flow](assets/content-converter.png)
 
-However this also introduces a problem. Developers now have a technology overlap: AEM Core Components with HTL and Java on AEM Author, JS-based Blocks on Edge Delivery, and a nodeJS-based converter. This will be resolved in phase two.
+Phase two completes the process by eliminating the technology overlap: AEM Core Components with HTL and Java on AEM Author, JS-based Blocks on Edge Delivery, and a nodeJS-based converter.
 
 ## Phase 2 - Switch to Universal Editor {#switch-ue}
 
