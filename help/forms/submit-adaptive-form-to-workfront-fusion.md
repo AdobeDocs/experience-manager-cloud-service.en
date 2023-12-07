@@ -3,9 +3,8 @@ title: Integration of Adobe Workfront Fusion with AEM Forms Submission
 description: Adobe Workfront Fusion allows you to focus on new tasks rather than focusing on repetitive tasks. You can connect Adobe Workfront Fusion to an Adaptive Form using Form Submission.
 keywords: Submit an Adaptive Form to Adobe Workfront Fusion, Integration of Adobe Workfront Fusion with AEM Forms Submission, Adobe Workfront Fusion with AEM Forms, Workfront Fusion with AEM Forms, Connect Workfront Fusion to AEM Forms, AEM Forms and Workfront Fusion, How to connect Workfront Fusion with AEM Forms?, Connect Workfront Fusion to a Form
 topic-tags: author, developer
-
+exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 ---
-
 # Submit an Adaptive Form to Adobe Workfront Fusion
 
 <span class="preview"> The feature is available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
@@ -184,5 +183,3 @@ To configure submit action of existing Adaptive Form for Workfront Fusion:
 - A scenario can have multiple webhook links but at a time only one webhook link is active. It is recommended to delete the unlinked webhook, so that it does not appear in AEM Forms submit action drop-down list.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
-
- 
