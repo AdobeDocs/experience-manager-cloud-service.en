@@ -73,7 +73,7 @@ To share assets through email:
 
 Any user having access to the shared asset link can download the assets bundled in a zip folder. The download process is same, whether a user is accessing the copied asset link, or using the asset link shared through the email. 
 
-* Click on the asset link or paste the URL in your browser. The [!UICONTROL Link Share] interface opens wherein you can switch to the [!UICONTROL Card View] or [!UICONTROL List View]. 
+* Click the asset link or paste the URL in your browser. The [!UICONTROL Link Share] interface opens wherein you can switch to the [!UICONTROL Card View] or [!UICONTROL List View]. 
 
 * In the [!UICONTROL Card View], you can hover the mouse over the shared asset or shared assets folder to either select the assets or queue them for download.
 
@@ -83,11 +83,11 @@ Any user having access to the shared asset link can download the assets bundled 
 
   ![Queue download](assets/queue-download.png)
 
-* While the download file is prepared, click on the **[!UICONTROL Download Inbox]** option to view the status of your download. For large downloads, click on the **[!UICONTROL Refresh]** button to update the status. 
+* While the download file is prepared, click the **[!UICONTROL Download Inbox]** option to view the status of your download. For large downloads, click the **[!UICONTROL Refresh]** button to update the status. 
 
   ![Download inbox](assets/link-sharing-download-inbox.png)
 
-* Once the processing is complete, click on the **[!UICONTROL Download]** button to download the zip file.  
+* Once the processing is complete, click the **[!UICONTROL Download]** button to download the zip file.  
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -109,7 +109,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 >* Before you share a link with users, ensure that Day CQ Mail Service is configured. Otherwise, an error occurs.
 
 1. In the Assets user interface, select the asset to share as a link.
-1. From the toolbar, click/tap the **[!UICONTROL Share Link]**.
+1. From the toolbar, select the **[!UICONTROL Share Link]**.
 
    An asset link is auto-created in the **[!UICONTROL Share Link]** field. Copy this link and share it with the users. The default expiration time for the link is one day.
 
@@ -147,20 +147,20 @@ To generate the URL for assets you want to share with users, use the Link Sharin
    >By default, users can only download the renditions of the asset that you share as a link.
 
 1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users through an email.
-1. To view the shared asset, click/tap the link in the email that is sent to the user. The shared asset is displayed in the **[!UICONTROL Adobe Marketing Cloud]** page.
+1. To view the shared asset, select the link in the email that is sent to the user. The shared asset is displayed in the **[!UICONTROL Adobe Marketing Cloud]** page.
 
-   To toggle to the list view, click/tap the layout icon in the toolbar.
+   To toggle to the list view, select the layout icon in the toolbar.
 
-1. To generate a preview of the asset, click/tap the shared asset. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, click/tap **[!UICONTROL Back]** in the toolbar. If you have shared a folder, click/tap **[!UICONTROL Parent Folder]** to return to the parent folder.
+1. To generate a preview of the asset, select the shared asset. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, select **[!UICONTROL Back]** in the toolbar. If you have shared a folder, select **[!UICONTROL Parent Folder]** to return to the parent folder.
 
    >[!NOTE]
    >
    >Experience Manager supports generating the preview of assets of these MIME types: JPG, PNG, GIF, BMP, INDD, PDF, and PPT. You can only download the assets of the other MIME types.
 
-1. To download the shared asset, click/tap **[!UICONTROL Select]** from the toolbar, click/tap the asset, and then click/tap **[!UICONTROL Download]** from the toolbar.
-1. To view the assets you shared as links, go to the Assets user interface and click/tap the GlobalNav icon. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
+1. To download the shared asset, select **[!UICONTROL Select]** from the toolbar, select the asset, and then select **[!UICONTROL Download]** from the toolbar.
+1. To view the assets you shared as links, go to the Assets user interface and select the GlobalNav icon. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
 1. From the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
-1. To un-share an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar.
+1. To un-share an asset, select it and select **[!UICONTROL Unshare]** from the toolbar.
 
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
@@ -200,7 +200,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
 Before you can share assets as links, configure the email service.
 
-1. Click or tap the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Select the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
 1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
 
@@ -209,7 +209,7 @@ Before you can share assets as links, configure the email service.
     * SMTP user: email server user name
     * SMTP password: email server password
 
-1. Click/tap **[!UICONTROL Save]**.
+1. Select **[!UICONTROL Save]**.
 -->
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -217,14 +217,14 @@ Before you can share assets as links, configure the email service.
 
 When you download assets from the link shared using the Link Sharing feature, Experience Manager compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, you can configure the maximum size of the downloaded files. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
 
-1. Click/Tap the Experience Manager logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Select the Experience Manager logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the web console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
 1. Open the configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
 1. Save the changes.
 -->
 
 <!--
-Add content or link about how to configure sharing via BP, DA, AAL, etc.
+Add content or link about how to configure sharing by way of BP, DA, AAL, and so on.
 -->
 
 ### Enable desktop actions to use with desktop app {#desktop-actions}

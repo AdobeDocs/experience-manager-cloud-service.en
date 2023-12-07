@@ -11,7 +11,7 @@ Within Cloud Manager you can determine whether your domain name is properly reso
 
 1. Navigate to the **Environments** screen from the **Overview** page.
 
-1. Click on **Domain Settings** in the left navigation panel.
+1. Click **Domain Settings** in the left navigation panel.
 
 1. Click the **Status** icon for the domain name.
 

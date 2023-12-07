@@ -56,7 +56,7 @@ To connect PWA Studio with the GraphQL endpoint of AEM, you can use the [AEM Ext
 
    You can find more details on the customization of the Navigation component in [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) and in the [Extensibility Framework](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) documentation of PWA Studio.
 
-1. The Apollo client will expect the AEM GraphQL endpoint at `<https://pwa-studio/endpoint.js>`. To map the endpoint to this location, you will need to customise the UPWARD configuration of your PWA Studio application:
+1. The Apollo client will expect the AEM GraphQL endpoint at `<https://pwa-studio/endpoint.js>`. To map the endpoint to this location, customize the UPWARD configuration of your PWA Studio application:
    a. Add the AEM_CFM_GRAPHQL variable to pwa-root/.env and adapt it to point to your AEM Content Fragments GraphQL endpoint.
 
    Example: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
@@ -84,7 +84,7 @@ To connect PWA Studio with the GraphQL endpoint of AEM, you can use the [AEM Ext
 
 ## Setup AEM {#setup-aem}
 
-Follow the AEM Content Fragments documentation to setup a GraphQL endpoint for your AEM project. Additionally, in your AEM project, add the following configurations to allow your PWA Studio application to access the GraphQL endpoint:
+Follow the AEM Content Fragments documentation to setup a GraphQL endpoint for your AEM project. Also, in your AEM project, add the following configurations to allow your PWA Studio application to access the GraphQL endpoint:
 
 * Adobe Granite Cross-Origin Resource Sharing Policy (com.adobe.granite.cors.impl.CORSPolicyImpl)
 
@@ -100,7 +100,7 @@ Follow the AEM Content Fragments documentation to setup a GraphQL endpoint for y
 
 You can find full examples of both configurations here: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
-To showcase the GraphQL endpoint, we prepared some sample Content Fragment models and data via a content package. These work well together with the React Components provided with the PWA Studio extension.
+To showcase the GraphQL endpoint, there are some prepared sample Content Fragment models and data via a content package. These work well together with the React Components provided with the PWA Studio extension.
 
 ## How to Use {#how-to-use}
 
@@ -112,7 +112,7 @@ Production setups can vary in multiple aspects.
 
 * You can have a single federated GraphQL endpoint which combines AEM and Adobe Commerce GraphQL data instead of customising Apollo client.
 * Your PWA Studio application could use the AEM GraphQL endpoint URL directly, without a proxy with UPWARD. The proxy could also be moved to a different layer (for example, CDN).
-* Which approach fits best for you also heavily depends on how you deliver the PWA Studio application to the end user.
+* Which approach fits best for you also heavily depends on how you deliver the PWA Studio application to the user.
 
 This extension comes with two examples.
 

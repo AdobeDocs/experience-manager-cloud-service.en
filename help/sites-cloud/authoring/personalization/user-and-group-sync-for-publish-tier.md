@@ -27,7 +27,7 @@ There are two approaches to implementing registration, as described below.
 
 ### AEM Managed {#aem-managed-registration}
 
-Custom registration code can be written that takes, minimally, the end user's username and password, and creates a user record in AEM which can then be used to authenticate against during login. The following steps are typically used to construct this registration mechanism:
+Custom registration code can be written that takes, minimally, the user's username and password, and creates a user record in AEM which can then be used to authenticate against during login. The following steps are typically used to construct this registration mechanism:
 
 1. Display a custom AEM component that collects registration info
 1. Upon submission, a properly provisioned service user is used to
@@ -61,7 +61,7 @@ Customers can integrate with an IdP (identity provider), which authenticates the
 
 **SAML BASED** 
 
-Customers can use SAML-based authentication via their preferred SAML IdP. When using an IdP with AEM, the IdP is responsible for authenticating the end user's credentials and brokering the user's authentication with AEM, creating the user record in AEM as needed, and managing the user's group membership in AEM, as described by the SAML assertion.
+Customers can use SAML-based authentication via their preferred SAML IdP. When using an IdP with AEM, the IdP is responsible for authenticating the user's credentials and brokering the user's authentication with AEM, creating the user record in AEM as needed, and managing the user's group membership in AEM, as described by the SAML assertion.
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ Independent of login, custom code can also persist and manage a user's group mem
 
 ## Data Synchronization {#data-synchronization}
 
-Website end users have an expectation of a consistent experience on every web page request or even when they log in using a different browser, even if unbeknownst to them, they are brought to different server nodes of the publish tier infrastructure. AEM as a Cloud Service accomplishes this by quickly synchronizing the `/home` folder hierarchy (user profile information, group membership, etc) across all the nodes of the publish tier.
+Website end users have an expectation of a consistent experience on every web page request or even when they log in using a different browser, even if unbeknownst to them, they are brought to different server nodes of the publish tier infrastructure. AEM as a Cloud Service accomplishes this by quickly synchronizing the `/home` folder hierarchy (user profile information, group membership, and so on) across all the nodes of the publish tier.
 
 Unlike other AEM solutions, user and group membership synchronization in AEM as a Cloud Service does not use a point-to-point messaging approach, instead implementing a publish-subscribe approach that does not require customer configuration.
 

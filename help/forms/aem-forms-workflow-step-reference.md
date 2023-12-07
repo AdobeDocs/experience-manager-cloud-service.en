@@ -49,8 +49,8 @@ You can also use the component to control the behavior of the task. For example,
 * **[!UICONTROL Priority]**: Selected priority is displayed in the AEM Inbox. The available options are High, Medium, and Low. The default value is Medium.
 * **[!UICONTROL Due Date]**: Specify the number of days or hours after which the task is marked overdue. If you select **[!UICONTROL Off]**, then the task is never marked overdue. You can also specify a time-out handler to perform specific tasks after the task is overdue.
 
-* **[!UICONTROL Days]**: The number of days before which the task is to be completed. The number of days are counted after the task is assigned to a user. If a task is not complete and crosses the number of days specifies in the Days field, then, if selected, a timeout handler is triggered after the due date.
-* **[!UICONTROL Hours]**: The number of hours before which the task is to be completed. The number of hours are counted after the task is assigned to a user. If a task is not complete and crosses the number of hours specifies in the Hours field, then, if selected, a timeout handler is triggered after the due hours.
+* **[!UICONTROL Days]**: The number of days before which the task is to be completed. The number of days are counted after the task is assigned to a user. If a task is not complete and crosses the number of days specified in the Days field, then if it is selected, a timeout handler is triggered after the due date.
+* **[!UICONTROL Hours]**: The number of hours before which the task is to be completed. The number of hours are counted after the task is assigned to a user. If a task is not complete and crosses the number of hours specifies in the Hours field, then if it is selected, a timeout handler is triggered after the due hours.
 * **[!UICONTROL Time-out after Due Date]**: Select this option to enable the Timeout Handler selection field.
 * **[!UICONTROL Timeout Handler]**: Select the script to be executed when the assign task step crosses the due date. Scripts placed in the CRX-repository at [apps]/fd/dashboard/scripts/timeoutHandler are available for selection. The specified path does not exist in crx-repository. An administrator creates the path before using it.
 * **[!UICONTROL Highlight the action and comment from the last task in Task Details]**: Select this option to display the last action that was taken and comment received on the task details section of a task.
@@ -179,7 +179,7 @@ The convert to PDF/A step has the following properties:
 
 ## Send Email Step {#send-email-step}
 
-Use the email step to send an email, for example an email with a Document of Record, link of an Adaptive Form <!-- , link of an interactive communication-->, or with an attached PDF document. Send Email step supports [HTML email](https://en.wikipedia.org/wiki/HTML_email). HTML emails are responsive and adapt to the recipients' email client and screen size. You can use an HTML email template to define the appearance, color-scheme, and behavior of the email.
+Use the email step to send an email, for example, an email with a Document of Record, link of an Adaptive Form <!-- , link of an interactive communication-->, or with an attached PDF document. Send Email step supports [HTML email](https://en.wikipedia.org/wiki/HTML_email). HTML emails are responsive and adapt to the recipients' email client and screen size. You can use an HTML email template to define the appearance, color-scheme, and behavior of the email.
 
 The email step uses Day CQ Mail Service to send emails. Before using the email step, ensure that the email service is configured. Email support only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) to enable ports to send emails and  enable SMTP protocol for your environment. The restriction helps improve the security of the platform.
 
@@ -391,7 +391,7 @@ By default, the [!DNL Adobe Sign] Scheduler service checks (polls) recipient res
 * **[!UICONTROL Signature Process]**: You can choose to sign a document in a sequential or a parallel order. In sequential order, one signer receives the document at a time for signing. After the first signer completes signing the document, the document is sent to the second signer, and so on. In parallel order, multiple signers can sign a document at a time.
 * **[!UICONTROL Redirection URL]**: Specify a redirection URL. After the document is signed, you can redirect the assignee to a URL. Usually, this URL contains a thank you message or further instructions.
 * **[!UICONTROL Workflow Stage]**: A workflow can have multiple stages. These stages are displayed in the AEM Inbox. You can define these stages in the properties of the model ( **[!UICONTROL Sidekick]** &gt; **[!UICONTROL Page]** &gt; **[!UICONTROL Page Properties]** &gt; **[!UICONTROL Stages]**).
-* **[!UICONTROL Select Recipients]**: Specify the method to choose recipients for the document. You can dynamically assign the workflow to a user or a group or manually add details of a recipient. When you select Manually in the dropdown, you add recipient details such as Email, Role, and Authentication method.
+* **[!UICONTROL Select Recipients]**: Specify the method to choose recipients for the document. You can dynamically assign the workflow to a user or a group or manually add details of a recipient. When you select Manually in the drop-down list, you add recipient details such as Email, Role, and Authentication method.
 
     >[!NOTE]
     >
@@ -541,7 +541,7 @@ The Generate Printed Output step has the following properties:
 
 * **[!UICONTROL Select Content Root location using]**: Content root is a string value that specifies the URI, absolute reference, or location in the repository to retrieve relative assets used by the form design. For example, if the form design references an image relatively, such as `../myImage.gif`, `myImage.gif` must be at `repository://`. The default value is `repository://`, which points to the root level of the repository.
 
-  When you pick an asset from your application, the Content Root URI path must have the correct structure. For example, if a form is picked from an application named SampleApp, and is placed at `SampleApp/1.0/forms/Test.xdp`, the Content Root URI must be specified as `repository://administrator@password/Applications/SampleApp/1.0/forms/`, or `repository:/Applications/SampleApp/1.0/forms/` (when authority is null). When the Content Root URI is specified this way, the paths of all of the referenced assets in the form are resolved against this URI.
+  When you pick an asset from your application, the Content Root URI path must have the correct structure. For example, if a form is picked from an application named SampleApp, and is placed at `SampleApp/1.0/forms/Test.xdp`, the Content Root URI must be specified as `repository://administrator@password/Applications/SampleApp/1.0/forms/`, or `repository:/Applications/SampleApp/1.0/forms/` (when authority is null). When the Content Root URI is specified this way, the paths of all referenced assets in the form are resolved against this URI.
 
 * **[!UICONTROL Select XCI file using]**: XCI files are used to describe fonts and other properties that are used for form design elements. You can keep an XCI file relative to the payload, at an absolute path, or using a variable of Document data type.
 
@@ -569,7 +569,7 @@ The Generate Printed Output step has the following properties:
 
 * **Template File**: Specifies the location of the XDP template. It is a mandatory field.
 
-* **Data Document**: Specifies the location of the data xml that needs to be merged with the template.
+* **Data Document**: Specifies the location of the data xml that must be merged with the template.
 
 ### Output document {#output-document}
 

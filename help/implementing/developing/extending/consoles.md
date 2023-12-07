@@ -9,9 +9,9 @@ AEM provides options to customize the consoles (and the [page authoring function
 
 ## Clientlibs {#clientlibs}
 
-Clientlibs allow you to extend the default implementation to offer new functionality, while reusing standard functions, objects, and methods. When customizing with clientlibs, you can create your own clientlib under `/apps.` For example it can hold the code required for your custom component.
+Clientlibs allow you to extend the default implementation to offer new functionality, while reusing standard functions, objects, and methods. When customizing with clientlibs, you can create your own clientlib under `/apps.` For example, it can hold the code required for your custom component.
 
-For further details on clientlibs, please see the document [Using Client-Side Libraries on AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+See [Using Client-Side Libraries on AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Overlays {#overlays}
 
@@ -19,11 +19,11 @@ Overlays are based on node definitions and allow you to overlay the standard fun
 
 Overlays can be used in many ways to extend your AEM consoles. Several examples are provided in the following sections.
 
-For further information on overlays, please see the document [Overlays for Adobe Experience Manager as a Cloud Service.](/help/implementing/developing/introduction/overlays.md)
+See also [Overlays for Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 >[!TIP]
 >
->If you are interested in options to customize the authoring experience, please see the document [Customizing Page Authoring.](/help/implementing/developing/extending/page-authoring.md)
+>If you are interested in options to customize the authoring experience, see [Customizing Page Authoring](/help/implementing/developing/extending/page-authoring.md).
 
 ## Customizing the Default View for a Console {#customizing-the-default-view-for-a-console}
 
@@ -111,4 +111,4 @@ If you want to insert additional data, you need to write a [PageInfoProvider](ht
 
 When using a console, a user must often select from resources such as pages, components, or assets. This can take the form of a list from which the author must choose an item.
 
-In order to keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. Please see the document[Customizing Page Authoring](/help/implementing/developing/extending/page-authoring.md#filtering-resources) for details.
+To keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. See [Customizing Page Authoring](/help/implementing/developing/extending/page-authoring.md#filtering-resources) for details.
