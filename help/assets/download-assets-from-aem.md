@@ -34,7 +34,7 @@ You can download assets from Experience Manager using the following methods:
 
 ## Download assets using [!DNL Experience Manager] interface {#download-assets}
 
-Experience Manager optimizes the download experience based on the asset quantity and size. Smaller files are downloaded from the user interface in real time. [!DNL Experience Manager] directly downloads single asset requests for the original file rather than enclosing single assets in a ZIP archive to allow for faster downloads. Experience Manager supports large downloads with asynchronous requests. Download requests larger than 100 GB are split into multiple ZIP archives with a maximum size of 100 GB each. 
+Experience Manager optimizes the download experience based on the asset quantity and size. Smaller files are downloaded from the user interface in real time. [!DNL Experience Manager] directly downloads single asset requests for the original file rather than enclosing single assets in a ZIP archive to allow for faster downloads. Experience Manager supports large downloads with asynchronous requests. Download requests larger than 100 GB are split into multiple ZIP archives with a maximum size of 100 MB each. 
 
 By default, [!DNL Experience Manager] triggers a notification in the [[!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md) upon generation of a download archive.
 
@@ -133,7 +133,7 @@ To enable the `OnOffTimeAssetAccessFilter` service, you need to create an OSGi c
 1. In your project code in Git, create a configuration file at `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. The file should contain `{}` as its content, signifying an empty OSGi configuration for the corresponding OSGi component. This action enables the service.
 1. Deploy your code, including this new configuration, through [!DNL Cloud Manager].
 1. Once deployed, the renditions and metadata are accessible according to the on/off time settings of the assets. If the current date or time falls before the on-time or after the off-time, an error message is displayed.
-For more details on adding an empty OSGi configuration, you can refer to this [guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
+For more details on adding an empty OSGi configuration, see this [guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
 
 ## Tips and limitations {#tips-limitations}
 

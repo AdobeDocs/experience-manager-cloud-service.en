@@ -63,13 +63,13 @@ To extract the ZIP files, perform the following steps:
 To preview an asset, follow these steps.
 
 1. From the Assets user interface, navigate to the location of the asset you want to preview.
-1. Tap the desired asset to open it.
+1. Select the desired asset to open it.
 
 1. In the preview mode, zoom options are available for [supported Image types](/help/assets/file-format-support.md) (with interactive editing).
 
    To zoom into an asset, select `+` (or select the magnifying glass on the asset). To zoom out, select `-`. When you zoom in, you can look closely at any area of the image by panning. The reset zoom arrow brings you back to the original view.
 
-   Tap **[!UICONTROL Reset]** to reset the view to the original size.
+   Select **[!UICONTROL Reset]** to reset the view to the original size.
 
 ## Edit properties {#editing-properties}
 
@@ -335,7 +335,7 @@ For simple, advanced, and custom searches to discover and use the most appropria
 
 Quick action icons are available for a single asset at a time. Depending upon your device, perform the following actions to display the quick action icons:
 
-* Touch devices: Touch and hold. For example, on an iPad, you can tap-and-hold an asset so that the quick actions display.
+* Touch devices: Touch and hold. For example, on an iPad, you can select-and-hold an asset so that the quick actions display.
 * Non-touch devices: Hover pointer. For example, On a desktop device, the quick action bar is displayed if you hover the pointer over the asset thumbnail.
 
 <!-- Hiding this topic via cqdoc-18707
@@ -538,7 +538,7 @@ To print the annotations and review status, select the **[!UICONTROL Print]** ic
 
    <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
-   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-digital-assets.md#annotating).
+   To modify the appearance of the rendered PDF file, for example, the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-digital-assets.md#annotating).
 
    Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
 

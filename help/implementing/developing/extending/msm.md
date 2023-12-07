@@ -80,7 +80,7 @@ The `LiveActionFactory` creates instances of the `LiveAction` class for a given 
 
   * `getName` - Returns the name of the action
   
-    * The name is used to refer to the action, for example in rollout configurations.
+    * The name is used to refer to the action, for example, in rollout configurations.
   
   * `execute` - Performs the tasks of the action
 
@@ -169,7 +169,7 @@ To create a rollout configuration:
 
 1. Under this location, create a node with the following properties:
 
-    * **Name**: The node name of the rollout configuration, for example `contentCopy` or `workflow`
+    * **Name**: The node name of the rollout configuration, for example, `contentCopy` or `workflow`
     * **Type**: `cq:RolloutConfig`
 
 1. Add the following properties to this node:
@@ -198,7 +198,7 @@ Rollout configurations are stored below the [rollout configuration node](#create
 
 Add child nodes of type `cq:LiveSyncAction` to add synchronization actions to the rollout configuration. The order of the synchronization action nodes determines the order in which the actions occur.
 
-1. In CRXDE Lite, select your [Rollout Configuration](#create-the-rollout-configuration) node, for example `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
+1. In CRXDE Lite, select your [Rollout Configuration](#create-the-rollout-configuration) node, for example, `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
 
 1. Create a node with the following node properties:
 

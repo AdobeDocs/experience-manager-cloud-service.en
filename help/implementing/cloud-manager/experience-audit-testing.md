@@ -29,7 +29,7 @@ Experience Audit is powered by Google Lighthouse, an open source tool from Googl
 
 >[!INFO]
 >
->Effective August 31st, 2023, Experience Audit will transition to showcasing results specific to the mobile platform. Note that mobile performance metrics typically register lower than those of desktop, so you should anticipate a shift in the reported performance following this change.
+>Effective August 31st, 2023, Experience Audit will transition to showcasing results specific to the mobile platform. Mobile performance metrics typically register lower than those of desktop, so you should anticipate a shift in the reported performance following this change.
 
 >[!TIP]
 >
@@ -52,11 +52,11 @@ There is an aggregate level score for each test types such as performance, acces
 
 The change metric can have one of the following values.
 
-* **Positive value** - The page(s) has improved on the selected test since the last production pipeline run.
+* **Positive value** - The pages have improved on the selected test since the last production pipeline run.
 
-* **Negative value** - the page(s) has regressed on the selected test since the last production pipeline run.
+* **Negative value** - the pages have regressed on the selected test since the last production pipeline run.
 
-* **No Change** - The page(s) scored the same since the last production pipeline run.
+* **No Change** - The pages have scored the same since the last production pipeline run.
 
 * **N/A** - There was no previous score available to compare.
 

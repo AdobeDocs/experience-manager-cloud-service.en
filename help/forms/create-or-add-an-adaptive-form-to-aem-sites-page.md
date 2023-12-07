@@ -47,7 +47,7 @@ You can take full advantage of this feature by utilizing the following options:
 
 * **[Convert an Adaptive Form to Experience Fragment](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment):** Convert an Adaptive Form added to an AEM Sites page to an Experience Fragment for reusing the form across multiple AEM Sites pages.
 
-* **[Create and add forms based on approved templates to an AEM Sites page:](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** You can leverage pre-approved templates to quickly create Adaptive Forms that align with your organization's branding guidelines and design standards. The option is available only for Adaptive Forms created with Adaptive Forms Editor or Adaptive Forms - Embed component. 
+* **[Create and add forms based on approved templates to an AEM Sites page:](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** You can use pre-approved templates to quickly create Adaptive Forms that align with your organization's branding guidelines and design standards. The option is available only for Adaptive Forms created with Adaptive Forms Editor or Adaptive Forms - Embed component. 
 
 * **[Add existing forms to an AEM Sites page:](/help/forms/embed-adaptive-form-aem-sites.md#embed-an-adaptive-form-in-sites-editor)** You can easily integrate forms that you have already created into your websites, enabling visitors to interact with them directly. The option is available only for Adaptive Forms created with Adaptive Forms Editor or Adaptive Forms - Embed component. 
 
