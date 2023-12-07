@@ -26,19 +26,9 @@ To address this, either:
 * the persisted query that is failing should be updated to accommodate the change on the Content Fragment model 
 * or the change on the model that introduced the problem should be reverted
 
-To illustrate with an example scenario:
-
-<!-- CHECK: splunk? env ID? needs more details/examples -->
-
-* Check error logs on the publisher and look for the persisted query error messages - splunk (update the environment ID)
-  * ` "Field 'abc' in type 'XYZModel' is undefined" `
-* This means the Content Fragment model `XYZ` has been updated, and the field `abc` has (probably) been removed
-  * Can be confirmed by accessing the author environment - link (update the environment ID + `/conf` path to the parent of the model)
-* If the same persisted query works on the author environment, it likely that the model has not been published
-
 ## GraphQL endpoint not configured {#graphql-endpoint-not-configured}
 
-When persisted queries return the `500` error code, together with the information `No suitable endpoint found`, this means that no GraphQL endpoint is configured on the AEM environment. 
+When persisted queries return the `400` or `500` error code, together with the information `No suitable endpoint found`, this means that no GraphQL endpoint is configured on the AEM environment. 
 
 To correct this, follow the steps for enabling and publishing your endpoint from [Manage GraphQL endpoints in AEM](/help/headless/graphql-api/graphql-endpoint.md).
 
@@ -63,27 +53,6 @@ Keep in mind that direct `POST` GraphQL queries on the publish tier for producti
 The CDN might transform the `404` coming from the dispatcher into a `301`.
 
 This should not be the case by default, but a custom dispatcher configuration might cause this issue. See more under [Dispatcher - Endpoint configuration with AEM Headless](/help/headless/deployment/dispatcher.md).
-
-cURL queries can be executed on the GraphQL endpoints with `newrelic` as `user-agent` to bybass the blocking:
-
-```curl
-# To send a standard GET GraphQL query on the publish instance
- curl 'https://publish-p${PROGRAM_ID}-e${ENVIRONMENT_ID}.adobeaemcloud.com/content/_cq_graphql/global/endpoint.json' \
-      -H 'accept: application/json' \
-      -H 'content-type: application/json' \
-      -H 'user-agent: newrelic' \
-      --data-binary '{"query":"{__schema{queryType{fields{name}}}}","variables":null}' \
-      --compressed
- 
-# To send a POST GraphQL query on the publish instance bypassing the blocking using `newrelic` as `user-agent
-curl 'https://publish-p${PROGRAM_ID}-e${ENVIRONMENT_ID}.adobeaemcloud.com/content/_cq_graphql/global/endpoint.json' \
-      --request POST \
-      -H 'accept: application/json' \
-      -H 'content-type: application/json' \
-      -H 'user-agent: newrelic' \
-      --data-raw '{"query":"query IntrospectionQuery {\n  __schema {\n    types {\n      name\n    }\n  }\n}","variables":{}}' \
-      --compressed
-```
 
 ## GraphQL schema incorrectly constructed {#graphql-schema-incorrectly-contructed}
 
