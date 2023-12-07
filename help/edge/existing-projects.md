@@ -15,15 +15,15 @@ Before the advent of Edge Delivery Services, content managed in AEM was edited u
 The AEM Page Editor only works with [AEM components](/help/implementing/developing/components/overview.md) such as the [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) These components are incompatible with Edge Delivery Services. Because of this, two phases are required to introduce Edge Delivery Services to an existing AEM project:
 
 * [Phase 1 - Replace Front End](#replace-front-end)
-* [Phase 2 - Switch to Universal Editor](#switch-ue) 
+* [Phase 2 - Switch to Universal Editor](#switch-ue)
 
 ## Phase 1 - Replace Front End {#replace-front-end}
 
-In phase one, you can continue to use your existing AEM site structure, components, and authoring tools. The website rendering will be rebuilt using blocks using JavaScript and CSS and it delivered via Edge Delivery Services. 
+In phase one, you can continue to use your existing AEM site structure, components, and authoring tools. The website rendering will be rebuilt by using blocks using JavaScript and CSS and it will be delivered via Edge Delivery Services.
 
 Please see the [Build section](https://www.aem.live/docs/#build) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.
 
-A converter on App Builder will be required to convert the AEM rendered HTML output and send ingest it to Edge Delivery Services.
+A converter on App Builder will be required to convert the AEM rendered HTML output and send it to Edge Delivery Services.
 
 ![The content converter in the publishing flow](assets/content-converter.png)
 

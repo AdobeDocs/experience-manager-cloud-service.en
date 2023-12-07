@@ -6,11 +6,11 @@ feature: Edge Delivery Services
 
 # Developing for Edge Delivery Services {#developing-edge}
 
-Edge Delivery Services is based around the concept of blocks. AEM comes with a comprehensive library of predefined blocks, which can be extended to meet your project needs. Code for Edge Delivery Services projects are managed in GitHub.
+Edge Delivery Services is based around the concept of blocks. AEM comes with a comprehensive library of predefined blocks, which can be extended to meet your project needs. Code for Edge Delivery Services projects is managed in GitHub.
 
 ## Blocks {#blocks}
 
-Blocks are the most fundamental part of a page delivered by Content Delivery Services. A block encapsulates styling and code that drives a logical component of a content page.
+Blocks are the most fundamental part of a page delivered by Edge Delivery Services. A block encapsulates styling and code that drives a logical component of a content page.
 
 AEM provides standard blocks as part of the product within the project boilerplate. Such blocks include heading, text, images, links, lists, etc.
 
