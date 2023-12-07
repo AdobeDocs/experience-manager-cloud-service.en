@@ -21,7 +21,7 @@ Ingesting from multiple content sources offers maximum flexibility to the user. 
 
 There are cases where the content source is predefined or otherwise not flexible (e.g. the project can not use Sharepoint or Google Drive). But in many cases, the tool is not preordained and choice of tool is not black and white.
 
-Adobe's guiding principle is simplicity. Start with document-based authoring and add complexity when needed. If a tool change is needed, Crosswalk covers content migration.
+Adobe's guiding principle is simplicity. Start with document-based authoring and add complexity when needed. If a tool change is needed, AEM's Edge Delivery Services integration covers content migration.
 
 ## How AEM Authoring Works with Edge Delivery Services {#how-it-works}
 
