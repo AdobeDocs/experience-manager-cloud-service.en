@@ -13,7 +13,7 @@ exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=en)                  |
 | AEM as a Cloud Service     | This article         |
 
-You can create a private folder in the [!DNL Adobe Experience Manager Assets] user interface that is available exclusively to you. You can share this private folder to other users and assign various privileges to them. Based on the privilege level you assign, users can perform various tasks on the folder, for example view assets within the folder or edit the assets.
+You can create a private folder in the [!DNL Adobe Experience Manager Assets] user interface that is available exclusively to you. You can share this private folder to other users and assign various privileges to them. Based on the privilege level you assign, users can perform various tasks on the folder, for example, view assets within the folder or edit the assets.
 
 >[!NOTE]
 >

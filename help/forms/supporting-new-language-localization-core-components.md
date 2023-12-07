@@ -10,7 +10,9 @@ exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 | Foundation Components  |    [Click here](supporting-new-language-localization.md)                  |
 | Core Components     | This article         |
 
-AEM Forms provide out of the box support for English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. You can add support for more locales also, like Hindi(hi_IN). 
+<span class="preview"> The Right-to-Left language support feature is available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+AEM Forms provide out of the box support for English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. You can add support for more locales also, like Hindi(hi_IN). You can also present Adaptive Forms in a Right-to-Left (RTL) language like Arabic, Persian, and Urdu by adding these locales.  
 
 ## How is the locale selected for an Adaptive Form?
 
@@ -35,7 +37,7 @@ Before you start with adding a locale for Adaptive Forms, build an understanding
 
 Before you start adding a locale: 
 
-* Install a plain text editor (IDE) for easier editing. The examples in this document are based on [Microsoft® Visual Studio Code](https://code.visualstudio.com/download).
+* Install a plain text editor (IDE) for easier editing. The examples in this document are based on [Microsoft&reg; Visual Studio Code](https://code.visualstudio.com/download).
 * Install a version of [Git](https://git-scm.com), if not available on your machine. 
 * Clone the [Adaptive Forms Core Components](https://github.com/adobe/aem-core-forms-components) repository. To clone the repository: 
     1. Open the command line or terminal window and navigate to a location to store the repository. For example, `/adaptive-forms-core-components`
@@ -70,7 +72,7 @@ To add support for a new locale, follow these steps:
 
     ```
     
-    Replace `<my-org>` and `<my-program>` in the above URL with your organization name and program name. For detailed instructions to obtain the organization name, program name, or the complete path of your Git repository and the credentials required to clone the repository, refer to the [Accessing Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) article. 
+    Replace `<my-org>` and `<my-program>` in the above URL with your organization name and program name. For detailed instructions to obtain the organization name, program name, or the complete path of your Git repository and the credentials required to clone the repository, see [Accessing Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) article. 
 
     After successful completion of command, a folder `<my-program>` is created. It contains the content cloned from the Git repository. In rest of the article, the  folder is reffred as, `[AEM Forms as a Cloud Service Git repository]`.
 

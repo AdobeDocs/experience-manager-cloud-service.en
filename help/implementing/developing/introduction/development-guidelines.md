@@ -27,7 +27,7 @@ State must not be kept in memory but persisted in the repository. Otherwise, thi
 
 ## State on the Filesystem {#state-on-the-filesystem}
 
-The instance's file system should not be used in AEM as a Cloud Service. The disk is ephemeral and is disposed when instances are recycled. Limited use of the filesystem for temporary storage relating to the processing of single requests is possible, but should not be abused for huge files. This is because it may have a negative impact on the resource usage quota and run into disk limitations.
+Do not use the instance's file system in AEM as a Cloud Service. The disk is ephemeral and is disposed when instances are recycled. Limited use of the filesystem for temporary storage relating to the processing of single requests is possible, but should not be abused for huge files. This is because it may have a negative impact on the resource usage quota and run into disk limitations.
 
 As an example where file system usage is not supported, the Publish tier should ensure that any data that must be persisted is shipped off to an external service for longer term storage.
 
@@ -41,7 +41,7 @@ Code executed as a background tasks must assume that the instance it is running 
 
 To minimize the trouble, long running jobs should be avoided if possible, and they should be resumable at a minimum. For executing such jobs, use Sling Jobs, which have an at-least-once guarantee and hence if they get interrupted will get re-executed as soon as possible. But they should probably not start from the beginning again. For scheduling such jobs, it is best to use the [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler as this again ensures the at-least-once execution.
 
-The Sling Commons Scheduler should not be used for scheduling as execution cannot be guaranteed. It is just more likely that it is scheduled.
+Do not use the Sling Commons Scheduler for scheduling as execution cannot be guaranteed. It is just more likely that it is scheduled.
 
 Similarly, with everything that is asynchronously happening, like acting on observation events, (being it JCR events or Sling resource events), can't be guaranteed to be executed and therefore must be used with care. This is already true for AEM deployments in the present.
 
@@ -103,7 +103,7 @@ As an example, changing an index definition on a large content repository on a D
 
 For local development, logs entries are written to local files in the `/crx-quickstart/logs` folder.
 
-On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Setting the Log Level**
 
@@ -160,25 +160,29 @@ The log levels are as follows:
 
 Thread dumps on Cloud environments are collected on an ongoing basis, but cannot be downloaded in a self-serve manner at this time. In the meanwhile, contact AEM support if thread dumps are needed for debugging an issue, specifying the exact time window.
 
-## CRX/DE Lite and Developer Console {#crxde-lite-and-developer-console}
+## CRX/DE Lite and AEM as a Cloud Service Developer Console {#crxde-lite-and-developer-console}
 
 ### Local Development {#local-development}
 
 For local development, Developers have full access to CRXDE Lite (`/crx/de`)  and the AEM Web Console (`/system/console`).
 
-Note that on local development (using the SDK), `/apps` and `/libs` can be written to directly, which is different from Cloud environments where those top level folders are immutable.
+On local development (using the SDK), `/apps` and `/libs` can be written to directly, which is different from Cloud environments where those top level folders are immutable.
 
 ### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
+>[!NOTE]
+>The AEM as a Cloud Service Developer Console should not be confused with the similarly named [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
+>
+
 Customers can access CRXDE lite on the author tier's development environment but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
 
-Instead, the Repository Browser can be launched from the Developer Console, providing a read-only view into the repository for all environments on author, publish, and preview tiers. Read more about the Repository Browser [here](/help/implementing/developing/tools/repository-browser.md).
+Instead, the Repository Browser can be launched from the AEM as a Cloud Service Developer Console, providing a read-only view into the repository for all environments on author, publish, and preview tiers. Read more about the Repository Browser [here](/help/implementing/developing/tools/repository-browser.md).
 
-A set of tools for debugging AEM as a Cloud Service developer environments are available in the Developer Console for RDE, dev, stage, and production environments. The url can be determined by adjusting the Author or Publish service urls as follows:
+A set of tools for debugging AEM as a Cloud Service developer environments are available in the AEM as a Cloud Service Developer Console for RDE, dev, stage, and production environments. The url can be determined by adjusting the Author or Publish service urls as follows:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-As a shortcut, the following Cloud Manager CLI command can be used to launch the developer console based on an environment parameter described below:
+As a shortcut, the following Cloud Manager CLI command can be used to launch the AEM as a Cloud Service Developer Console based on an environment parameter described below:
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -196,11 +200,11 @@ As illustrated below, developers can resolve package dependencies and servlets:
 
 ![Dev Console 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-Also useful for debugging, the Developer console has a link to the Explain Query tool:
+Also useful for debugging, the AEM as a Cloud Service Developer Console has a link to the Explain Query tool:
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-For Production programs, access to the Developer Console is defined by the "Cloud Manager - Developer Role" in the Admin Console, while for sandbox programs, the Developer Console is available to any user with a product profile giving them access to AEM as a Cloud Service. For all programs, "Cloud Manager - Developer Role" is needed for status dumps and the repository browser and users must also be defined in the AEM Users or AEM Administrators Product Profile on both author and publish services to view data from both services. For more information about setting up user permissions, see [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+For Production programs, access to the AEM as a Cloud Service Developer Console is defined by the "Cloud Manager - Developer Role" in the Adobe Admin Console, while for sandbox programs, the AEM as a Cloud Service Developer Console is available to any user with a product profile giving them access to AEM as a Cloud Service. For all programs, "Cloud Manager - Developer Role" is needed for status dumps and the repository browser and users must also be defined in the AEM Users or AEM Administrators Product Profile on both author and publish services to view data from both services. For more information about setting up user permissions, see [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Performance Monitoring {#performance-monitoring}
 

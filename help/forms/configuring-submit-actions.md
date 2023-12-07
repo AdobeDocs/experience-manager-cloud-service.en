@@ -22,6 +22,7 @@ A Submit Action is triggered when a user clicks the **[!UICONTROL Submit]** butt
 * [Submit to OneDrive](#submit-to-onedrive)
 * [Submit to Azure Blob Storage](#azure-blob-storage)
 * [Submit to Power Automate](#microsoft-power-automate)
+* [Submit to Workfront Fusion](#workfront-fusion)
 
 You can also [extend the default Submit Actions](custom-submit-action-form.md) to create your own Submit Action. 
 
@@ -48,8 +49,6 @@ You can configure a Submit Action in the **[!UICONTROL Submission]** section of 
 >[!CAUTION]
 >
 >If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
-
-
 -->
 
 ## Submit to REST endpoint {#submit-to-rest-endpoint}
@@ -168,9 +167,10 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 The **[!UICONTROL Submit to SharePoint]** Submit Action connects an Adaptive Form with a Microsoft&reg; SharePoint Storage. You can submit the form data file, attachments, or Document of Record to the connected Microsoft&reg; Sharepoint Storage. 
 
-<!-- Using Submit to SharePoint, you can:
+Using Submit to SharePoint, you can:
 * [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
-* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) -->
+* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) 
+
 
 ### Connect an Adaptive Form to SharePoint Document Library {#connect-af-sharepoint-doc-library}
 
@@ -188,7 +188,7 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint Document Library Storage:
 1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
 1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint Document Library]** from the drop-down list. The SharePoint configuration wizard appears. 
 
- ![Sharepoint configuration](/help/forms/assets/sharepoint_configuration.png)
+    ![Sharepoint configuration](/help/forms/assets/sharepoint_configuration.png)
 1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
     * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
     * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
@@ -229,7 +229,6 @@ You can use the created SharePoint Document Library configuration in an Adaptive
 When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint Document Library Storage. 
 Folder structure to save data is `/folder_name/form_name/year/month/date/submission_id/data`. 
 
-<!--
 ### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
 
 <span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
@@ -260,19 +259,12 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
-1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
 
-    >[!NOTE]
-    >
-    > In Microsoft® SharePoint List, the following column types are not supported:
-    > * image column
-    > * metadata column
-    > * person column
-    > * external data column
 
 #### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
 
-You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List folder. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
+You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
 
 1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/create-form-data-models.md)
 1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
@@ -281,15 +273,14 @@ You can use the created SharePoint List configuration in an Adaptive Form, to sa
 
 When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
 
-    >[!NOTE]
-    >
-    > In Microsoft® SharePoint List, the following column types are not supported:
-    > * image column
-    > * metadata column
-    > * person column
-    > * external data column
-    
--->
+>[!NOTE]
+>
+> In Microsoft® SharePoint List, the following column types are not supported:
+> * image column
+> * metadata column
+> * person column
+> * external data column
+
 
 ## Submit to OneDrive {#submit-to-onedrive}
 
@@ -408,6 +399,12 @@ You can configure an Adaptive Form to run a Microsoft&reg; Power Automate Cloud 
 Adaptive Forms editor provides the **Invoke a Microsoft&reg; Power Automate flow** submit action to send adaptive forms data, attachments, and Document Of Record are sent to Power Automate Cloud Flow. To use the Submit action to send captured data to Microsoft&reg; Power Automate, [Connect your Forms as a Cloud Service instance with Microsoft&reg; Power Automate](forms-microsoft-power-automate-integration.md)  
 
 After a successful configuration, use the [Invoke a Microsoft&reg; Power Automate flow](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) submit action to send data to a Power Automate Flow.  
+
+## Submit to Workfront Fusion {#workfront-fusion}
+
+You can configure an Adaptive Form to submit data to Workfront Fusion on submission. Workfront Fusion allows automation of processes so that user can concentrate on new tasks rather than repeating the same tasks again and again. It automates both simple and complex tasks, saving time and ensuring consistent process execution.
+
+The Adaptive Forms editor provides the **Invoke a WorkFront Fusion Scenario** submit action to send Adaptive Forms data or attachments to a Workfront Fusion scenario. To use the submit action for sending captured data to a Workfront Fusion scenario, refer to [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
 
 ## Use synchronous or asynchronous submission {#use-synchronous-or-asynchronous-submission}
 
