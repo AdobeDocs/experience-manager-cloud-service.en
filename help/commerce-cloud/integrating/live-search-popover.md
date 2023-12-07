@@ -1,8 +1,8 @@
 ---
 title: '[!DNL Live Search] Popover CIF component'
 description: Using CIF components to enable [!DNL Live Search] Popover component on an AEM site
+exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 ---
-
 # [!DNL Live Search] Popover CIF Component {#live-search-popover}
 
 The [!DNL Live Search] Popover is the element that contains the [!DNL Live Search] results as you type in the search field.

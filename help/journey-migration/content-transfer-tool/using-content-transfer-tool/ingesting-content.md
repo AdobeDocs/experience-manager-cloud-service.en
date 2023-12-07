@@ -72,7 +72,7 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Top Up Ingestion"
->abstract="Use the top-up feature to move modified content since the previous content transfer activity. Upon completion of Ingestion, check the logs for any error/warnings. Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe Customer Care."
+>abstract="Use the top-up feature to move content modified since the previous content transfer activity. Upon completion of Ingestion, check the logs for any error/warnings. Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe Customer Care."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Viewing Logs"
 
 The Content Transfer Tool has a feature that allows the extraction of differential content by performing a *top-up* of the migration set. This allows the migration set to be modified to include only the content that has changed since the previous extraction without having to extract all the content again.
@@ -87,6 +87,12 @@ Begin by creating an Ingestion Job and ensure that **Wipe** is disabled during t
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
 ## Troubleshooting {#troubleshooting}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion_troubleshooting"
+>title="Content Ingestion Troubleshooting"
+>abstract="Refer to the ingestion logs and the documentation to find solutions to common reasons why an ingestion can fail, find the way to fix the problem and run the ingestion again."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Validating Content Transfers"
 
 ### CAM Unable to Retrieve the Migration Token {#cam-unable-to-retrieve-the-migration-token}
 
@@ -120,8 +126,8 @@ This message indicates that the Cloud Acceleration Manager was unable to reach t
 
 * AEM as a Cloud Service maintains the environment state, and occasionally must restart the migration service for various normal reasons. If that service is restarting, it cannot be reached, but is available eventually.
 * It is possible that another process is being run on the instance. For example, if [AEM Version Updates](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) is applying an update, the system may be busy and the migration service regularly unavailable. Once that process is done, the start of the ingestion can be attempted again. 
-* If an [IP Allowlist has been applied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) through Cloud Manager, it blocks Cloud Acceleration Manager from reaching the migration service. An IP address cannot be added for ingestions because its address is dynamic. Currently, the only solution is to disable the IP allow list while the ingestion is running.
-* There may be other reasons that need investigation. If the ingestion still continues to fail, contact Adobe Customer Care.
+* If an [IP Allowlist has been applied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) through Cloud Manager, it blocks Cloud Acceleration Manager from reaching the migration service. An IP address cannot be added for ingestions because its address is dynamic. Currently, the only solution is to disable the IP allow list during the ingestion and indexing process.
+* There may be other reasons that need investigation. If the ingestion or indexing continues to fail, contact Adobe Customer Care.
 
 ### AEM Version Updates and Ingestions
 
