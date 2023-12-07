@@ -6,10 +6,10 @@ feature: Edge Delivery Services
 
 # Publishing Content for Edge Delivery Services {#publishing-edge}
 
-With Edge Delivery, publishing content is seamless regardless of your content source:
+With Edge Delivery Services, publishing content is seamless regardless of your content source:
 
-* Document-based content - Please see Publish section of the Edge Delivery Services documentation.
-* AEM content - Please see the details below. 
+* Document-based content - Please see [Publish section](https://www.aem.live/docs/#publish) of the Edge Delivery Services documentation.
+* AEM content - Please see the details below.
 
 ## Publishing Flow from AEM {#publishing-flow}
 

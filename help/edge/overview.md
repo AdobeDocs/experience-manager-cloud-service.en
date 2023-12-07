@@ -15,17 +15,17 @@ By using Edge Delivery Services, you can:
 * Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website.
 * Use a built-in experimentation framework that allows quick test creation, execution without performance impact and fast release to production of a test winner.
 
-## Edge Delivery Overview {#edge-overview}
+## Edge Delivery Services Overview {#edge-overview}
 
-The following diagram illustrates how you can edit content in Microsoft Word (document-based editing) and publish to Edge Delivery. It also shows the AEM publishing method using the Universal Editor.
+The following diagram illustrates how you can edit content in Microsoft Word (document-based editing) and publish to Edge Delivery Services. It also shows the AEM publishing method using the Universal Editor.
 
 ![Edge Delivery Architecture](assets/AEM-with-EDS-publishing-simple.png)
 
-Edge Delivery is a composable set of services that allows for a high degree of flexibility in how you author content on your website. As mentioned previously, you can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) with [Universal Editor authoring](/help/implementing/universal-editor/introduction.md) as well as [document-based authoring.](https://www.aem.live/docs/authoring)
+Edge Delivery services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. As mentioned previously,you can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) with [Universal Editor authoring](/help/implementing/universal-editor/introduction.md) as well as [document-based authoring.](https://www.aem.live/docs/authoring)
 
 For example, you can use content directly from Microsoft Word or Google Docs. This means that documents from those sources can become pages on your website. Furthermore, headings, lists, images, font elements can all be transferred from the initial source into the website. The new content is added instantly without a rebuild process.
 
-Edge Delivery uses GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write content in either Google Docs or Microsoft Word and the functionality of your site can be developed by using CSS and JavaScript in GitHub. When you are ready, you can use the Sidekick browser extension to preview and publish content updates.
+Edge Delivery Services uses GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write content in either Google Docs or Microsoft Word and the functionality of your site can be developed by using CSS and JavaScript in GitHub. When you are ready, you can use the Sidekick browser extension to preview and publish content updates.
 
 Further reading in the Edge Delivery Services documentation:
 
@@ -35,7 +35,7 @@ Further reading in the Edge Delivery Services documentation:
 
 ## Edge Delivery Services and Other Adobe Experience Cloud products {#edge-other-products}
 
-Edge Delivery Services are part of Adobe Experience Manager and as such Edge Delivery and AEM sites can co-exist on the same domain. This is a common use case for larger websites. On top of that, content from Edge Delivery can easily be consumed in your AEM Sites pages and conversely.
+Edge Delivery Services are part of Adobe Experience Manager and as such Edge Delivery Services and AEM sites can co-exist on the same domain. This is a common use case for larger websites. On top of that, content from Edge Delivery Services can easily be consumed in your AEM Sites pages and conversely.
 
 You can also use Edge Delivery Services with Adobe Target, Analytics, and Launch.
 
