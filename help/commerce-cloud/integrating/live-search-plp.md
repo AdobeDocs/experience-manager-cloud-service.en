@@ -1,8 +1,8 @@
 ---
 title: '[!DNL Live Search] Product Listing Page CIF component'
 description: Using CIF components to enable [!DNL Live Search] Product Listing Page component on an AEM site
+exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 ---
-
 # [!DNL Live Search] CIF Component {#live-search-cif-component}
 
 Live Search for Adobe Commerce delivers a fast, relevant, and intuitive search experience at no additional cost. Live Search powered by Adobe Sensei uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your Adobe Commerce catalog, results in a relevant and personalized shopping experiences.
