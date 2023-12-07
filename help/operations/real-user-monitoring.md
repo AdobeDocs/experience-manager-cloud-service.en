@@ -58,7 +58,7 @@ Real User Monitoring (RUM) is designed to prevent the collection of personally i
 
 * To be a part of our Early Adopter program , please send an email to aemcs-rum-adopter@adobe.com <aemcs-rum-adopter@adobe.com> along with your AEM Cloud Services, please share the domain name for production, stage and dev environment from your email address associated with your Adobe ID. * Adobe's product team will enable Real User Monitoring (RUM) Data Service for you. 
 * Once this is completed, Adobe's product team will create a Customer collaboration Channel.
-* Adobe's Product team will reach out to you to provide you with the domain key and data dashboard URL where you can view the Page Views and [The Core Web Vitals(CWB)](https://web.dev/vitals/) metrics collected by the client-side Real User Monitoring (RUM) collection.
+* Adobe's Product team will reach out to you to provide you with the domain key and data dashboard URL where you can view the Page Views and [The Core Web Vitals(CWV)](https://web.dev/vitals/) metrics collected by the client-side Real User Monitoring (RUM) collection.
 * You will then be guided on how to use the domain key to access the data dashboard link and view the metrics.
 
 ## How Real User Monitoring (RUM) Data is Being Used {#how-rum-data-is-being-used}
