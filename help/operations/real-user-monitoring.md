@@ -101,10 +101,11 @@ As you will analyze this data, there might or might not be variances in page vie
 1. **Will customers be able to integrate the RUM data service scripts with third-party systems like Dynatrace?**
 
    Yes.
+
 1. **Are "Interaction to next paint", "Time to first byte" and "First contentful paint" Web vitals Metrics being collected?**
 
    Interaction to next paint (INP) and Time to first byte (TTFB) are collected.  First contentful paint is not collected at this time.
-
+   
 1. **How can I opt-out?**
 
-Opt-out of RUM monitoring is discouraged as it limits the support Adobe can provide. Customers who want to opt-out of the RUM monitoring bundle can reach out to Adobe Support.
+   Opt-out of RUM monitoring is discouraged as it limits the support Adobe can provide. Customers who want to opt-out of the RUM monitoring bundle can reach out to Adobe Support.
