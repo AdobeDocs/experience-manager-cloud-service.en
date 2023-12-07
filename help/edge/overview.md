@@ -19,7 +19,7 @@ By using Edge Delivery Services, you can:
 
 The following diagram illustrates how you can edit content in Microsoft Word (document-based editing) and publish to Edge Delivery Services. It also shows the AEM publishing method using the Universal Editor.
 
-![Edge Delivery Architecture](assets/AEM-with-EDS-publishing-simple.png)
+![Edge Delivery Architecture](assets/AEM-with-EDS-publishing-simple2.png)
 
 Edge Delivery services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. As mentioned previously,you can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) with [Universal Editor authoring](/help/implementing/universal-editor/introduction.md) as well as [document-based authoring.](https://www.aem.live/docs/authoring)
 
