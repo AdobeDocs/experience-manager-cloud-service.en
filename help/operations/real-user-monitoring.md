@@ -56,15 +56,10 @@ Real User Monitoring (RUM) is designed to prevent the collection of personally i
 
 ## How to Set Up the Real User Monitoring (RUM) Data Service {#how-to-set-up-them-rum-data-service}
 
-If you have requested to be a part of our Early Adopter program, Adobe's product team will enable Real User Monitoring (RUM) Data Service for you. Once this is completed, Adobe's product team will reach out to you to provide you with the domain key and data dashboard URL for you to view the Page View and [The Core Web Vitals(CWB)](https://web.dev/vitals/) metrics through the support collaboration channel created by Adobe's Product team. 
-
-## Viewing the Traffic and Performance Metrics for Your Website {#viewing-the-traffic-and-performance-metrics-for-your-website}
-
-A Slack channel will be created for Early Adopter customers to provide them with the initial support for sharing the data desk dashboard url to access the Page Views and Core Web Vital metrics. 
-
-To access the data desk dashboard url, customers will need a domain key which will be created by Adobe and it will be provided to them in the Slack collaboration channel. 
-
-You will then be guided on how to use the domain key to access the data dashboard link and view the metrics.
+* To be a part of our Early Adopter program , please send an email to aemcs-rum-adopter@adobe.com <aemcs-rum-adopter@adobe.com> along with your AEM Cloud Services, please share the domain name for production, stage and dev environment from your email address associated with your Adobe ID. * Adobe's product team will enable Real User Monitoring (RUM) Data Service for you. 
+* Once this is completed, Adobe's product team will create a Customer collaboration Channel.
+* Adobe's Product team will reach out to you to provide you with the domain key and data dashboard URL where you can view the Page Views and [The Core Web Vitals(CWB)](https://web.dev/vitals/) metrics collected by the client-side Real User Monitoring (RUM) collection.
+* You will then be guided on how to use the domain key to access the data dashboard link and view the metrics.
 
 ## How Real User Monitoring (RUM) Data is Being Used {#how-rum-data-is-being-used}
 
@@ -106,6 +101,3 @@ As you will analyze this data, there might or might not be variances in page vie
 
    Interaction to next paint (INP) and Time to first byte (TTFB) are collected.  First contentful paint is not collected at this time.
    
-1. **How can I opt-out?**
-
-   Opt-out of RUM monitoring is discouraged as it limits the support Adobe can provide. Customers who want to opt-out of the RUM monitoring bundle can reach out to Adobe Support.
