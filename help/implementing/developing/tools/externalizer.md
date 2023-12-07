@@ -66,7 +66,7 @@ To define a domain mapping for the Externalizer service:
 
     * **`scheme`** is usually http or https, but can be another protocol.
 
-        * It is recommended to use https to enforce https links.
+        * Adobe recommends using https to enforce https links.
         * It is used if the client code does not override the scheme when asking for externalization of a URL.
 
     * **`server`** is the host name (either a domain name or ip address).
@@ -93,7 +93,7 @@ This section shows a few examples of how the Externalizer service can be used.
 
 >[!NOTE]
 >
->No absolute links should be created in the context of HTML. Therefore this utility should not be used in such cases.
+>No absolute links should be created in the context of HTML. Therefore, do not use this utility in such cases.
 
 * **To externalize a path with the 'publish' domain:**
 

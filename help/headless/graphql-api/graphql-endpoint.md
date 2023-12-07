@@ -56,9 +56,9 @@ To enable the corresponding endpoint:
 
 1. Navigate to **Tools**, **General**, then select **GraphQL**.
 1. Select **Create**.
-1. The **Create new GraphQL Endpoint** dialog will open. Here you can specify:
+1. The **Create new GraphQL Endpoint** dialog opens. Here you can specify:
    * **Name**: name of the endpoint; you can enter any text.
-   * **Use GraphQL schema provided by**: use the dropdown to select the required site/project.
+   * **Use GraphQL schema provided by**: use the drop-down list to select the required site/project.
 
    >[!NOTE]
    >
@@ -67,7 +67,7 @@ To enable the corresponding endpoint:
    >* *GraphQL endpoints may introduce data security and performance issues if not managed carefully. Ensure that appropriate permissions are set after creating an endpoint.*
    
 1. Confirm with **Create**.
-1. The **Next steps** dialog will provide a direct link to the Security console so that you can ensure that newly-created endpoint has suitable permissions.
+1. The **Next steps** dialog will provide a direct link to the Security console so that you can ensure that the created endpoint has suitable permissions.
 
    >[!CAUTION]
    >
@@ -85,4 +85,4 @@ Select the new endpoint and **Publish** to make it fully available in all enviro
 >
 >On publish instances this can pose a security concern, as GraphQL queries can impose a heavy load on the server.
 >
->You must set up [ACLs appropriate to your use case](/help/headless/security/permissions.md) on the endpoint.
+>Set up [ACLs appropriate to your use case](/help/headless/security/permissions.md) on the endpoint.

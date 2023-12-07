@@ -1,6 +1,6 @@
 ---
 title: How does Assets view in AEM benefit you?
-description: Learn more about the key benefits of Assets view in AEM. Adobe, leveraging its expertise in empowering marketing and creative professionals, introduces a game-changing new user experience.
+description: Learn more about the key benefits of Assets view in AEM. Adobe, using its expertise in empowering marketing and creative professionals, introduces a game-changing new user experience.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 ---
@@ -8,7 +8,7 @@ exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 
 ![Deploy Assets Essentials](assets/banner-image.jpg)
 
-In today's fast-paced digital-first landscape, where real-time content creation and delivery are essential, a Digital Asset Management (DAM) experience designed for downstream marketing velocity is paramount. Adobe, leveraging its expertise in empowering marketing and creative professionals, introduces a game-changing new user experience. This workflow-first approach revolutionizes how businesses handle their dynamic digital assets, empowering marketers to maximize efficiency in finding, collaborating, personalizing, and delivering assets. These streamlined workflows accelerate content velocity and propel your marketing efforts to new heights.
+In today's fast-paced digital-first landscape, where real-time content creation and delivery are essential, a Digital Asset Management (DAM) experience designed for downstream marketing velocity is paramount. Adobe, using its expertise in empowering marketing and creative professionals, introduces a game-changing new user experience. This workflow-first approach revolutionizes how businesses handle their dynamic digital assets, empowering marketers to maximize efficiency in finding, collaborating, personalizing, and delivering assets. These streamlined workflows accelerate content velocity and propel your marketing efforts to new heights.
 
 To know more about the available persona-based experiences for Assets as a Cloud Service, see [Introducing Assets as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
 
@@ -89,7 +89,7 @@ Quickly setup a folder structure for your organization using the Assets view by 
 
 ### Search-first approach to enhance efficiency {#search-first}
 
-Unlock the potential of your organization's digital asset library with the power of search with cutting-edge functionality. You can bid farewell to the hassle of manually sifting through countless files and folders. Any user can instantly locate the perfect image, video, or document you need to create stunning marketing campaigns, captivating presentations, and engaging content. Our search first engine lets you effortlessly navigate through asset types, metadata, smart tags, and even the content itself without knowing the exact keyword. Embrace the future of the DAM with our Search-First and unleash the full potential of your digital asset library.
+Unlock the potential of your organization's digital asset library with the power of search with cutting-edge functionality. You can bid farewell to the hassle of manually navigating through countless files and folders. Any user can instantly locate the perfect image, video, or document you need to create stunning marketing campaigns, captivating presentations, and engaging content. Our search first engine lets you effortlessly navigate through asset types, metadata, smart tags, and even the content itself without knowing the exact keyword. Embrace the future of the DAM with our Search-First and unleash the full potential of your digital asset library.
 
 ![Search first](assets/search-first.gif)
 

@@ -21,11 +21,11 @@ Learn more about program types in the document [Understanding Program and Progra
 
    ![Program type creation](assets/create-sandbox.png)
 
-1. Optionally, you can add an image to the program by dragging and dropping an image file to the **Add a program image** target or clicking it to select an image from a file browser. Tap or click **Continue**.
+1. Optionally, you can add an image to the program by dragging and dropping an image file to the **Add a program image** target or clicking it to select an image from a file browser. Select **Continue**.
 
    * The image serves only as the tile in the program overview window and helps to identify the program.
 
-1. In the **Set up your sandbox** dialog box, choose which solutions you wish to enable in your sandbox program by checking the options in the **Solutions &amp; Add-ons** table.
+1. In the **Set up your sandbox** dialog box, choose which solutions you want to enable in your sandbox program by checking the options in the **Solutions &amp; Add-ons** table.
    
    * Use the chevrons next to the solution names so you can see additional, optional add-ons for the solutions.
    
@@ -43,7 +43,7 @@ You see a new sandbox program card on the landing page with a status indicator a
 
 You can view the detail of your sandbox setup and access the environment (once available) by viewing the program overview page.
 
-1. From the Cloud Manager landing page, click the ellipsis button on your newly-created program.
+1. From the Cloud Manager landing page, click the ellipsis button on your created program.
 
    ![Accessing program overview](assets/program-overview-sandbox.png)
 

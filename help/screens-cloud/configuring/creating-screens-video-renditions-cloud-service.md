@@ -23,7 +23,7 @@ Follow the steps below to create video renditions in Screens as a Cloud Service 
 
 1. Click the Tools section from the left navigation bar and click **Assets** and then click **Processing Profiles**.
 
-    ![Click on Processing Profiles](/help/screens-cloud/assets/configure/screens-cp-3.png)
+    ![Click Processing Profiles](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. Click **Create** to create a processing profile.
 
