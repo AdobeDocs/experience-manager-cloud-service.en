@@ -107,7 +107,7 @@ Independent of login, custom code can also persist and manage a user's group mem
 
 ## Data Synchronization {#data-synchronization}
 
-Website end users have an expectation of a consistent experience on every web page request or even when they log in using a different browser, even if unbeknownst to them, they are brought to different server nodes of the publish tier infrastructure. AEM as a Cloud Service accomplishes this by quickly synchronizing the `/home` folder hierarchy (user profile information, group membership, etc) across all the nodes of the publish tier.
+Website end users have an expectation of a consistent experience on every web page request or even when they log in using a different browser, even if unbeknownst to them, they are brought to different server nodes of the publish tier infrastructure. AEM as a Cloud Service accomplishes this by quickly synchronizing the `/home` folder hierarchy (user profile information, group membership, and so on) across all the nodes of the publish tier.
 
 Unlike other AEM solutions, user and group membership synchronization in AEM as a Cloud Service does not use a point-to-point messaging approach, instead implementing a publish-subscribe approach that does not require customer configuration.
 
