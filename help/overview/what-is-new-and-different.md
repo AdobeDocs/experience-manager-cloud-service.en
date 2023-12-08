@@ -236,7 +236,7 @@ This combines the benefits of:
 >
 >For more details, the [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) is a good starting point.
 
-The basic principles of the authoring user interface (UI), for both Sites and Assets, willvery familiar to anyone who has used AEM in the past.
+The basic principles of the authoring user interface (UI), for both Sites and Assets, will be very familiar to anyone who has used AEM in the past.
 
 The main difference is that the UI is purely touch-enabled; the classic UI is no longer available. Otherwise the basics remain unchanged, with only small changes apparent. 
 

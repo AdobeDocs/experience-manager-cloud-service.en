@@ -51,7 +51,7 @@ For content owners who are also responsible for translation, it is often easier 
 
 1. Navigate to **Navigation** &gt; **Sites** and select your project.
 1. Locate the language root of your project. For example, if you language root is English, `/content/<your-project>/en`.
-   * Note that before the first translation that the other language folders are empty placeholders. These are normally created by the content architect.
+   * Before the first translation that the other language folders are empty placeholders. These are normally created by the content architect.
 1. Locate the language root of your project.
 1. Select the rail selector and show the **References** panel.
 1. Select **Language Copies**.
@@ -117,7 +117,7 @@ The project is divided into multiple cards.
 
 * **Summary** - This card shows the basic header information of the project including the owner, language, and translation provider.
 * **Translation Job** - This card or these cards show(s) provide an overview of the actual translation job including the status, number of assets, and so on. Generally there is one job per language with the ISO-2 language code appended to the job name.
-  * Note that when [automatically creating translation jobs,](#automatically-creating) AEM creates the jobs asynchronously and they may not appear immediately within the project.
+  * When [automatically creating translation jobs,](#automatically-creating) AEM creates the jobs asynchronously and they may not appear immediately within the project.
 * **Team** - This card shows the users who are collaborating on this translation project. This journey does not cover this topic.
 * **Tasks** - Additional tasks associated with translating the content such as to do items or workflow items. This journey does not cover this topic.
 

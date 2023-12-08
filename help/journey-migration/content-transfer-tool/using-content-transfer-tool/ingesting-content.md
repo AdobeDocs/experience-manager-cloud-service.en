@@ -43,7 +43,7 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
 
    * **Wipe:** Choose the `Wipe` value
      * The **Wipe** option sets the destination's starting point of the ingestion. If **Wipe** is enabled, the destination including all its content is reset to the version of AEM that is specified in Cloud Manager. If not enabled, the destination maintains its current content as the starting point.
-     * Note that this option does **NOT** affect how the ingestion of content will be performed. Ingestion always uses a content replacement strategy and _not_ a content merge strategy so, in both **Wipe** and **Non-Wipe** cases, the ingestion of a migration set will overwrite contents in the same path on the destination. For instance, if the migration set contains `/content/page1` and the destination already contains `/content/page1/product1`, the ingestion will remove the entire `page1` path and its subpages, including `product1`, and replace it with the content in the migration set. This means careful planning must be done when performing a **Non-Wipe** ingestion to a destination that contains any content that should be maintained. 
+     * This option does **NOT** affect how the ingestion of content will be performed. Ingestion always uses a content replacement strategy and _not_ a content merge strategy so, in both **Wipe** and **Non-Wipe** cases, the ingestion of a migration set will overwrite contents in the same path on the destination. For instance, if the migration set contains `/content/page1` and the destination already contains `/content/page1/product1`, the ingestion will remove the entire `page1` path and its subpages, including `product1`, and replace it with the content in the migration set. This means careful planning must be done when performing a **Non-Wipe** ingestion to a destination that contains any content that should be maintained. 
 
    >[!IMPORTANT]
    > If the setting **Wipe** is enabled for the ingestion, it resets the entire existing repository including the user permissions on the target Cloud Service instance. This resetting is true also for an admin user added to the **administrators** group and that user must be added to the administrators group again to start an ingestion.
@@ -72,7 +72,7 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Top Up Ingestion"
->abstract="Use the top-up feature to move modified content since the previous content transfer activity. Upon completion of Ingestion, check the logs for any error/warnings. Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe Customer Care."
+>abstract="Use the top-up feature to move content modified since the previous content transfer activity. Upon completion of Ingestion, check the logs for any error/warnings. Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe Customer Care."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Viewing Logs"
 
 The Content Transfer Tool has a feature that allows the extraction of differential content by performing a *top-up* of the migration set. This allows the migration set to be modified to include only the content that has changed since the previous extraction without having to extract all the content again.
@@ -87,6 +87,12 @@ Begin by creating an Ingestion Job and ensure that **Wipe** is disabled during t
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
 ## Troubleshooting {#troubleshooting}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion_troubleshooting"
+>title="Content Ingestion Troubleshooting"
+>abstract="Refer to the ingestion logs and the documentation to find solutions to common reasons why an ingestion can fail, find the way to fix the problem and run the ingestion again."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Validating Content Transfers"
 
 ### CAM Unable to Retrieve the Migration Token {#cam-unable-to-retrieve-the-migration-token}
 
@@ -120,8 +126,8 @@ This message indicates that the Cloud Acceleration Manager was unable to reach t
 
 * AEM as a Cloud Service maintains the environment state, and occasionally must restart the migration service for various normal reasons. If that service is restarting, it cannot be reached, but is available eventually.
 * It is possible that another process is being run on the instance. For example, if [AEM Version Updates](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) is applying an update, the system may be busy and the migration service regularly unavailable. Once that process is done, the start of the ingestion can be attempted again. 
-* If an [IP Allowlist has been applied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) through Cloud Manager, it blocks Cloud Acceleration Manager from reaching the migration service. An IP address cannot be added for ingestions because its address is dynamic. Currently, the only solution is to disable the IP allow list while the ingestion is running.
-* There may be other reasons that need investigation. If the ingestion still continues to fail, contact Adobe Customer Care.
+* If an [IP Allowlist has been applied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) through Cloud Manager, it blocks Cloud Acceleration Manager from reaching the migration service. An IP address cannot be added for ingestions because its address is dynamic. Currently, the only solution is to disable the IP allow list during the ingestion and indexing process.
+* There may be other reasons that need investigation. If the ingestion or indexing continues to fail, contact Adobe Customer Care.
 
 ### AEM Version Updates and Ingestions
 

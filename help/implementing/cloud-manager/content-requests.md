@@ -53,7 +53,7 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 
 ## Variances of Cloud Service Content Requests {#content-requests-variances}
 
-Content Requests can have variances with an organization's Analytics reporting tools as summarized in the following table. In general, Analytics tools gathering data via client-side instrumentation <b>should not be used</b> to report on the number of content requests for a given site, simply because they often depend on user consent to be triggered, therefore missing out on a significant fraction of the traffic. Analytics tools gathering data server-side in log files, or CDN reports for customers adding their own CDN on top of AEM as a Cloud Service, will provide better counts. For reporting on Page Views as well as their associated performance, the Adobe RUM Data Service is the Adobe recommended option. 
+Content Requests can have variances with an organization's Analytics reporting tools as summarized in the following table. In general, *do not* use analytics tools that gather data by way of client-side instrumentation to report on the number of content requests for a given site, simply because they often depend on user consent to be triggered, therefore missing out on a significant fraction of the traffic. Analytics tools gathering data server-side in log files, or CDN reports for customers adding their own CDN on top of AEM as a Cloud Service, will provide better counts. For reporting on Page Views and their associated performance, the Adobe RUM Data Service is the Adobe recommended option. 
 
 |Reason For Variance|Explanation|
 |---|---|

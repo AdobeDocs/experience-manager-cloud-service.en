@@ -133,7 +133,7 @@ To enable the `OnOffTimeAssetAccessFilter` service, you need to create an OSGi c
 1. In your project code in Git, create a configuration file at `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. The file should contain `{}` as its content, signifying an empty OSGi configuration for the corresponding OSGi component. This action enables the service.
 1. Deploy your code, including this new configuration, through [!DNL Cloud Manager].
 1. Once deployed, the renditions and metadata are accessible according to the on/off time settings of the assets. If the current date or time falls before the on-time or after the off-time, an error message is displayed.
-For more details on adding an empty OSGi configuration, you can refer to this [guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
+For more details on adding an empty OSGi configuration, see this [guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
 
 ## Tips and limitations {#tips-limitations}
 

@@ -42,7 +42,7 @@ Upload your XFA template (XDP file) to your AEM Forms instance. Perform the foll
 
 1. In Experience Manager author instance, click **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms and Documents].**
 1. Select a form, and click **[!UICONTROL Properties]**.
-1. In the Properties window, tap **[!UICONTROL Form Model]**.
+1. In the Properties window, select **[!UICONTROL Form Model]**.
 1. On the  **[!UICONTROL Form Model]** tab, in the **[!UICONTROL Select From]** drop-down, select **[!UICONTROL Schema]** or **[!UICONTROL None]**. You can also select a form model when you create a form.
 1. In the Document of Record Template Configuration section of the Form Model tab, select **Associate Form Template as Document of Record Template**. On selecting this option, all XFA template (XDP files) available on your machine are displayed. Select the appropriate file. Also, ensure same schema (data schema) is used for Adaptive Form and selected XFA template (XDP file).  
 1. Click **[!UICONTROL Done.]**
@@ -55,7 +55,7 @@ Upload your Adobe Acrobat PDF (Acroform) to your AEM Forms instance. Perform the
 
 1. In Experience Manager author instance, click **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms and Documents].**
 1. Select a form, and click **[!UICONTROL Properties]**.
-1. In the Properties window, tap **[!UICONTROL Form Model]**.
+1. In the Properties window, select **[!UICONTROL Form Model]**.
 1. On the  **[!UICONTROL Form Model]** tab, in the **[!UICONTROL Select From]** drop-down, select **[!UICONTROL Schema]** or **[!UICONTROL None]**. You can also select a form model when you create a form.
 1. In the Document of Record Template Configuration section of the Form Model tab, select **Associate Form Template as Document of Record Template**. On selecting this option, all Acrobat PDF (Acroform) available on your machine are displayed. Select the appropriate file.
 1. Click **[!UICONTROL Done.]**
@@ -76,7 +76,7 @@ Perform the following steps to configure an Adaptive Form to automatically gener
 
 1. In Experience Manager author instance, click **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms and Documents].**
 1. Select a form, and click **[!UICONTROL Properties]**.
-1. In the Properties window, tap **[!UICONTROL Form Model]**.
+1. In the Properties window, select **[!UICONTROL Form Model]**.
 1. On the  **[!UICONTROL Form Model]** tab, in the **[!UICONTROL Select From]** drop-down, select **[!UICONTROL Schema]** or **[!UICONTROL None]**. You can also select a form model when you create a form.
 1. In the Document of Record Template Configuration section of the Form Model tab, select **Generate Document of Record**.
 1. Click **[!UICONTROL Done.]**
@@ -329,10 +329,10 @@ While generating a Document of Record, you can change branding information for t
 
 To localize the branding information that you enter in the Document of Record tab, ensure that the locale of the browser is set appropriately. To customize the branding information of Document of Record, perform the following steps:
 
-1. Select a panel (root panel) in the Document of Record and then tap ![configure](assets/configure.png).
-1. Tap ![dortab](assets/dortab.png). The Document of Record tab appears.
+1. Select a panel (root panel) in the Document of Record and then select ![configure](assets/configure.png).
+1. Select ![dortab](assets/dortab.png). The Document of Record tab appears.
 1. Select either the default template or a custom template for rendering the Document of Record. If you select the default template, a thumbnail preview of the Document of Record appears below the Template drop-down.
-1. Based on whether you select a default or a custom template, some or all of the following properties appear in the Document of Record tab. Specify the below mentioned properties to define the appearance of the Document of Record:
+1. Based on whether you select a default or a custom template, some of the following properties, or all properties, appear in the Document of Record tab. Specify the below mentioned properties to define the appearance of the Document of Record:
 
     1. **Basic Properties**: 
         * **Template**:  If you choose to select a custom template, browse a select an XDP on your [!DNL AEM Forms] server. If you want to use a template that is not already on your [!DNL AEM Forms] server, you should first upload the XDP to your [!DNL AEM Forms] server.
@@ -378,7 +378,7 @@ To localize the branding information that you enter in the Document of Record ta
    </proto>
    ```
 
-1. To save the branding changes, tap **[!UICONTROL Done]**.
+1. To save the branding changes, select **[!UICONTROL Done]**.
 
 ## Document of Record Support in Adaptive Form Editor {#dor-support-in-adaptiveform}
 
@@ -395,7 +395,7 @@ Perform the following steps from the author instance of Adaptive Form editor:
 
     * **[!UICONTROL Generate Document of Record]**: When this option is selected, the [!UICONTROL Document of Record] template is automatically generated for your Adaptive Form. 
     
-1. Tap ![Save](/help/forms/assets/check-button.png) to save the properties.
+1. Select ![Save](/help/forms/assets/check-button.png) to save the properties.
 
   ![Document of Record Template Support](/help/forms/assets/dor-templatesupport.png)
 
