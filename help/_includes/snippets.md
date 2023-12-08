@@ -8,12 +8,6 @@
 
 [!BADGE For authoring AEM content for Edge Delivery Services, click here.]{type=Positive url="/help/edge/overview.md" tooltip="Authoring AEM content for Edge Delivery Services"}
 
-## IMS Support for Assigning Groups to Profiles {#ims-group-profiles}
-
->[!NOTE]
->
->AEM currently does not support assigning groups to profiles. Users should be added individually instead.
-
 ## WAF Config Limited Release {#waf-limited-release}
 
 [!BADGE WAF-DDOS protection will be available end of 2023.]{type=Caution tooltip="WAF-DDOS protection will be available end of 2023."}

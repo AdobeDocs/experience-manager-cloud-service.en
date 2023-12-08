@@ -85,4 +85,4 @@ Select the new endpoint and **Publish** to make it fully available in all enviro
 >
 >On publish instances this can pose a security concern, as GraphQL queries can impose a heavy load on the server.
 >
->You must set up [ACLs appropriate to your use case](/help/headless/security/permissions.md) on the endpoint.
+>Set up [ACLs appropriate to your use case](/help/headless/security/permissions.md) on the endpoint.

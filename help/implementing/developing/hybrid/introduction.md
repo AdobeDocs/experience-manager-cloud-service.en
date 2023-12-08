@@ -32,7 +32,7 @@ The walkthrough is based on standard AEM functionality and the sample WKND SPA P
 
 >[!CAUTION]
 >
->This document uses the [WKND SPA Project app](https://github.com/adobe/aem-guides-wknd-spa) for demonstration purposes only. It should not be used for any project work.
+>This document uses the [WKND SPA Project app](https://github.com/adobe/aem-guides-wknd-spa) for demonstration purposes only. Do not use it for any project work.
 
 >[!TIP]
 >

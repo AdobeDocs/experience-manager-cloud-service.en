@@ -22,6 +22,7 @@ A Submit Action is triggered when a user clicks the **[!UICONTROL Submit]** butt
 * [Submit to OneDrive](#submit-to-onedrive)
 * [Submit to Azure Blob Storage](#azure-blob-storage)
 * [Submit to Power Automate](#microsoft-power-automate)
+* [Submit to Workfront Fusion](#workfront-fusion)
 
 You can also [extend the default Submit Actions](custom-submit-action-form.md) to create your own Submit Action. 
 
@@ -258,7 +259,7 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
-1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
 
 
 #### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
@@ -398,6 +399,12 @@ You can configure an Adaptive Form to run a Microsoft&reg; Power Automate Cloud 
 Adaptive Forms editor provides the **Invoke a Microsoft&reg; Power Automate flow** submit action to send adaptive forms data, attachments, and Document Of Record are sent to Power Automate Cloud Flow. To use the Submit action to send captured data to Microsoft&reg; Power Automate, [Connect your Forms as a Cloud Service instance with Microsoft&reg; Power Automate](forms-microsoft-power-automate-integration.md)  
 
 After a successful configuration, use the [Invoke a Microsoft&reg; Power Automate flow](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) submit action to send data to a Power Automate Flow.  
+
+## Submit to Workfront Fusion {#workfront-fusion}
+
+You can configure an Adaptive Form to submit data to Workfront Fusion on submission. Workfront Fusion allows automation of processes so that user can concentrate on new tasks rather than repeating the same tasks again and again. It automates both simple and complex tasks, saving time and ensuring consistent process execution.
+
+The Adaptive Forms editor provides the **Invoke a WorkFront Fusion Scenario** submit action to send Adaptive Forms data or attachments to a Workfront Fusion scenario. To use the submit action for sending captured data to a Workfront Fusion scenario, refer to [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
 
 ## Use synchronous or asynchronous submission {#use-synchronous-or-asynchronous-submission}
 

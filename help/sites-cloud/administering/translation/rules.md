@@ -208,7 +208,7 @@ In the UI, you can check/uncheck **Translate** in the **Properties** tab.
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** is used for properties that do not have text but language codes, for example `jcr:language`. The user is not translating text but the language locale from source to destination. Such properties are not sent for translation.
+**`updateDestinationLanguage`** is used for properties that do not have text but language codes, for example, `jcr:language`. The user is not translating text but the language locale from source to destination. Such properties are not sent for translation.
 
 In the UI, you can check/uncheck **Translate** in the **Properties** tab to modify this value, but for the specific properties that have language codes as value.
 

@@ -97,7 +97,7 @@ How to select a page depends on which view you are using in the console:
 
     * Enter selection mode by [selecting the required resource](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources). How you do this depends on your device:
 
-        * On a mobile device: tap-and-hold the card
+        * On a mobile device: select-and-hold the card
         * On a desktop device: use the [quick action](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) represented by the tick icon:
 
     * The card is overlaid with a tick to show that the page has been selected.
@@ -142,7 +142,7 @@ To edit your page:
     * [Edit the content of an existing component](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) on the page:
 
         * Open the component toolbar with either select. Use the **Edit** (pencil) icon to open the dialog.
-        * Open the in place editor for the component with either tap-and-hold or a double-slow-click. The available actions are shown (for some components, it is a limited selection).
+        * Open the in place editor for the component with either select-and-hold or a double-slow-click. The available actions are shown (for some components, it is a limited selection).
         * To see all actions available enter full-screen mode using:
 
           ![Full screen button](/help/sites-cloud/authoring/assets/full-screen.png)
