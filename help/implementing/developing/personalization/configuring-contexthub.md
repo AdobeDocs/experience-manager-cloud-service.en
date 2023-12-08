@@ -47,7 +47,7 @@ Add a UI mode to group related ContextHub modules. When you create the UI mode, 
 1. Provide values for the following properties:
 
     * UI Mode Title: The title that identifies the UI mode
-    * Mode Icon: The selector for the [Coral UI icon](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) to use, for example `coral-Icon--user`
+    * Mode Icon: The selector for the [Coral UI icon](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) to use, for example, `coral-Icon--user`
     * Enabled: Select to show the UI mode in the ContextHub toolbar
 
 1. Select Save.
@@ -72,7 +72,7 @@ The UI module properties include a detail configuration where you can provide va
 
 1. On the Experience Manager rail, select Tools &gt; Sites &gt; ContextHub.
 1. Select the Configuration Container to which you want to add a UI module.
-1. Click or typ the ContextHub Configuration to which you want to add the UI module.
+1. Select or type the ContextHub Configuration to which you want to add the UI module.
 1. Select the UI mode to which you are adding the UI module.
 1. Select the Create button, then select ContextHub UI Module (generic).
 

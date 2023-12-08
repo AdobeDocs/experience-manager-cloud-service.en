@@ -87,7 +87,7 @@ Perform the below listed steps to enable and configure Adobe Analytics for your 
 1. Create a configuration container for cloud services:
     1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
     1. Select or create a Configuration Container, and enable the folder for **[!UICONTROL Cloud Configurations]**.
-    1. Tap **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
+    1. Select **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
 1. On your AEM instance, Go to **[Forms]** >> **[Forms and Document]**.
 1. Select your **[!UICONTROL Form]** >> **[!UICONTROL Properties]**, In the **[!UICONTROL Configuration Container]**, select the configuration container that you created or selected in the **[!UICONTROL Configuration Browser]** in Step 1.
 1. Select the Task Panel on the Left Rail and click **Setup Analytics** and **Activate Adobe Analytics**.
@@ -204,7 +204,7 @@ Once you bind your Form and Sites rules through the aforementioned steps, Perfor
 
 1. Click **Publishing Flow** on the left.
 1. Click **Add Library** and enter the name you prefer.
-1. In the **Environment** drop down on the right, select **development**.
+1. In the **Environment** drop-down on the right, select **development**.
 1. Click **Add All Changed Resources**. 
 1. Click **Save and Build to Development**.
 

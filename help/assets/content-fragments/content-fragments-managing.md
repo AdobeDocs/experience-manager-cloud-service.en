@@ -48,7 +48,7 @@ The method of creating a content fragment is:
 1. Select **Create**, then **Content Fragment** to open the wizard.
 1. The first step of the wizard requires you to specify the basis of the new fragment.
 
-      * [Model](/help/assets/content-fragments/content-fragments-models.md) - used to create a fragment that requires structured content; for example the **Adventure** model
+      * [Model](/help/assets/content-fragments/content-fragments-models.md) - used to create a fragment that requires structured content; for example, the **Adventure** model
 
         * All available models are displayed.
 

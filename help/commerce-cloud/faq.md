@@ -59,7 +59,7 @@ Product data is already translated in PIM or in Adobe Commerce. The AEM - Adobe 
 
 Adobe recommends managing marketing related data and content in AEM. Decorate product data from your commerce solution with additional attributes using Content Fragments or create and link Experience Fragments for unstructured content with your products.
 
-## 14. How can we ensure PCI compliance when using AEM for the entire presentation layer?
+## 14. How can PCI compliance be ensured when using AEM for the entire presentation layer?
 
 Adobe recommends using abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or the commerce solutions hold or pass cardholder data. This approach requires only a level 3 PCI compliance. However, there are additional things to consider to be fully PCI-compliant such as how employees interact with the system and data. For more information about Adobe Commerce PCI compliance, see [PCI Compliance Requirements](https://business.adobe.com/products/magento/pci-compliance.html).
 

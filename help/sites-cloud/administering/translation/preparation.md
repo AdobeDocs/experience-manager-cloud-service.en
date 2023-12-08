@@ -62,8 +62,8 @@ Create a language root as the root page of a language copy that identifies the l
 
 To create the language root you create a page and use an ISO language code as the value for the **Name** property. The language code must be in one of the following formats:
 
-* `<language-code>` - The supported language code is a two-letter code as defined by ISO-639-1, for example `en`.
-* `<language-code>_<country-code>` or `<language-code>-<country-code>` - The supported country code is a lower-case or upper-case two-letter code as defined by ISO 3166, for example `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>` - The supported language code is a two-letter code as defined by ISO-639-1, for example, `en`.
+* `<language-code>_<country-code>` or `<language-code>-<country-code>` - The supported country code is a lower-case or upper-case two-letter code as defined by ISO 3166, for example, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
 You can use either format, according to the structure that you have chosen for your global site. For example, the root page of the French language copy of the WKND site has `fr` as the **Name** property. The **Name** property is used as the name of the page node in the repository, and therefore determines the path of the page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
@@ -74,7 +74,7 @@ You can use either format, according to the structure that you have chosen for y
    ![Create page](../assets/create-page.png)
 
 1. Select the page template and then select **Next**.
-1. In the **Name** field type the country code in the format of `<language-code>` or `<language-code>_<country-code>`, for example `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Type a title for the page.
+1. In the **Name** field type the country code in the format of `<language-code>` or `<language-code>_<country-code>`, for example, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Type a title for the page.
 
    ![Create language root page](../assets/create-language-root.png)
 
@@ -96,7 +96,7 @@ Use the following procedure view the language copies for a page using the [rail 
 
 ## Language Copies on Multiple Levels {#multiple-levels}
 
-Language roots can also be grouped under nodes, for example by region, while still being recognized as roots of language copies.
+Language roots can also be grouped under nodes, for example, by region, while still being recognized as roots of language copies.
 
 ```text
 /content

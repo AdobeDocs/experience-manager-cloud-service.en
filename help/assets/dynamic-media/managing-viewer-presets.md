@@ -324,13 +324,13 @@ The following table identifies the mobile viewer gestures that are supported on 
    <td><p>Pans</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Tap</strong></p> </td>
+   <td><p><strong>Select</strong></p> </td>
    <td><p>Shows flyout window</p> </td>
    <td><p>Shows or hides the user interface</p> </td>
    <td><p>Shows or hides the user interface</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Double-tap</strong></p> </td>
+   <td><p><strong>Double-select</strong></p> </td>
    <td><p>Does not apply</p> </td>
    <td><p>Zooms in or resets</p> </td>
    <td><p>Zooms in or resets</p> </td>
@@ -378,7 +378,7 @@ Experience Manager shows a wide variety of viewer presets when viewing assets fr
 
    ![chlimage_1-222](/help/assets/dynamic-media/assets/chlimage_1-222.png)
 
-1. In the limit property, change the number to the desired number, for example `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. In the limit property, change the number to the desired number, for example, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Select **[!UICONTROL Save All]**.
 
 ## Create viewer presets {#creating-a-new-viewer-preset}
