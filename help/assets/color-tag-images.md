@@ -163,7 +163,7 @@ To search images based on colors:
 
 1. Navigate to **[!UICONTROL Assets > Files]**.
 
-1. Select **[!UICONTROL Filter]** from the dropdown list.
+1. Select **[!UICONTROL Filter]** from the drop-down list.
    ![Filter Assets](assets/filter-assets.png)
 
 1. Select the [AEM Assets color predicate](#configure-search-predicate).

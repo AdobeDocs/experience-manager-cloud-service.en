@@ -173,7 +173,7 @@ The log entries from AzCopy appear in the extraction log, and are prefixed with 
 > For the first few minutes of an extraction, watch the extraction logs closely for any sign of an issue. As an example, here is what would be logged if the source Azure container could not be found:
 
 ```
-[AzCopy pre-copy] failed to perform copy command due to error: cannot start job due to error: cannot list files due to reason -> github.com/Azure/azure-storage-blob-go/azblob.newStorageError, github.com/Azure/azure-storage-blob-go@v0.10.1-0.20210407023846-16cf969ec1c3/azblob/zc_storage_error.go:42
+[AzCopy pre-copy] failed to perform copy command due to error: cannot start job due to error: cannot list files due to reason > github.com/Azure/azure-storage-blob-go/azblob.newStorageError, github.com/Azure/azure-storage-blob-go@v0.10.1-0.20210407023846-16cf969ec1c3/azblob/zc_storage_error.go:42
 [AzCopy pre-copy] ===== RESPONSE ERROR (ServiceCode=ContainerNotFound) =====
 [AzCopy pre-copy] Description=The specified container does not exist.
 [AzCopy pre-copy] RequestId:5fb674b9-201e-001b-2a5b-527400000000

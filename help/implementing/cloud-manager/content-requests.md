@@ -7,11 +7,11 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 
 ## Variances of Cloud Service Content Requests{#content-requests-variances}
 
-Content Requests can have variances with an organization's Analytics reporting tools as summarized in the following table. In general, Analytics tools gathering data via client-side instrumentation <b>should not be used</b> to report on the number of content requests for a given site, simply because they often depend on end user consent to be triggered, therefore missing out on a significant fraction of the traffic. Analytics tools gathering data server-side in log files, or CDN reports for customers adding their own CDN on top of AEM as a Cloud Service, will provide better counts. For reporting on Page Views as well as their associated performance, the Adobe RUM Data Service is the Adobe recommended option. 
+Content Requests can have variances with an organization's Analytics reporting tools as summarized in the following table. In general, *do not* use analytics tools that gather data by way of client-side instrumentation to report on the number of content requests for a given site, simply because they often depend on user consent to be triggered, therefore missing out on a significant fraction of the traffic. Analytics tools gathering data server-side in log files, or CDN reports for customers adding their own CDN on top of AEM as a Cloud Service, will provide better counts. For reporting on Page Views and their associated performance, the Adobe RUM Data Service is the Adobe recommended option. 
 
 |Reason For Variance|Explanation|
 |---|---|
-|End user consent|Analytics tools relying on client-side instrumention often depend on end user consent to be triggered. This could represent the majority of the traffic not being tracked. For customers who want to measure content requests on their own, it is recommended to rely on analytics tools gathering data server-side or CDN reports.|
+|End user consent|Analytics tools relying on client-side instrumention often depend on user consent to be triggered. This could represent the majority of the traffic not being tracked. For customers who want to measure content requests on their own, it is recommended to rely on analytics tools gathering data server-side or CDN reports.|
 |Tagging|All pages or API calls that are tracked as Adobe Experience Manager (AEM) content requests may not be tagged with Analytics tracking.|
 |Tag Management Rules|Tag management rule settings may result in various data collection configurations on a page, resulting in some combination of discrepancies with content request tracking.|
 |Bots|Unknown bots that have not been pre-identified and removed by AEM may cause tracking discrepancies.|
@@ -19,7 +19,7 @@ Content Requests can have variances with an organization's Analytics reporting t
 |Third-Party Monitoring and Security Tools|Monitoring and security scanning tools may generate content requests for AEM that are not tracked in Analytics reports.|
 |API Access|Programmatic access to pages or to Adobe Experience Manager APIs may generate content requests for AEM that are not tracked in Analytics reports.|
 |Prefetch Requests|Using a prefetch service to pre-load pages to increase speed can cause significant content request traffic increases.|
-|DDOS|While Adobe makes every effort to automatically detect and filter out traffic from DDOS attacks, there is no guarantee that all possible DDOS attacks are detected|
+|DDOS|While Adobe makes attempts to automatically detect and filter out traffic from DDOS attacks, there is no guarantee that all possible DDOS attacks are detected.|
 |Traffic Blockers|Using a tracker blocker in a browser may opt out some requests from being tracked.|
 |Firewalls|Firewalls may block Analytics tracking. This scenario is more frequent with corporate firewalls.|
 
@@ -27,7 +27,7 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 
 ## Understanding Cloud Service Content Requests {#about-content-request}
 
-Content requests are automatically tracked at the edge of Adobe Experience Manager (AEM) as a Cloud Service, via automated analysis of the log files originating from the AEM as a Cloud Service CDN, isolating the requests returning HTML (text/html) or JSON (application/json) content from the CDN, and based on a number of inclusion and exclusion rules detailed below. A content request happens independently from the returned content being served from the CDN caches or going back to the origin of the CDN (AEM's dispatchers).
+Content requests are automatically tracked at the edge of Adobe Experience Manager (AEM) as a Cloud Service, via automated analysis of the log files originating from the AEM as a Cloud Service CDN, isolating the requests returning HTML (text/html) or JSON (application/json) content from the CDN, and based on several inclusion and exclusion rules detailed below. A content request happens independently from the returned content being served from the CDN caches or going back to the origin of the CDN (AEM's dispatchers).
 
 For customers that bring their own CDN on top of AEM as a Cloud Service, this tracking will result in numbers that cannot be used to compare with the licensed content requests, that will have to be measured by the customer at the edge of the outer CDN.
 
@@ -53,7 +53,7 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 | HTTP Code 400-499 | Excluded | Errors returned to the visitor when the content does not exist (404) or there are other content or request-related issues.|
 | HTTP Code 300-399 | Excluded | These are good requests that either check if something has changed on the server, or redirect the request to another resource. They do not contain content itself, therefore they are not billable.|
 | Requests going to /libs/* | Excluded | AEM internal JSON requests, such as the CSRF token that is not billable.|
-| Traffic from DDOS attacks | Excluded | DDOS protection. AEM does auto-detect some of the DDOS attacks and blocks them. DDOS attacks if detected are not billable.<br><br>Auto-detected DDOS types:<br>&bull; DDOSBlockedCiphersSHA<br>&bull; DDOSBlockedPattern<br>&bull; DDOSSuspiciousRequest |
+| Traffic from DDOS attacks | Excluded | DDOS protection. AEM does auto-detect some of the DDOS attacks and blocks them. DDOS attacks if detected are not billable. |
 | AEM as a Cloud Service NewRelic Monitoring | Excluded | AEM as a Cloud Service global monitoring.|
 | URL for customers to monitor their Cloud Service program | Excluded | Recommended URL to externally monitor the availability.<br><br>`/system/probes/health`|
 | AEM as a Cloud Service Pod Warm-up Service | Excluded | User Agent: skyline-service-warmup/1.*|

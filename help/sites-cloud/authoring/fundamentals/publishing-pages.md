@@ -60,7 +60,7 @@ If you are editing a page, it can be published directly from the editor.
 
    * The page is published directly if there are no references to be published.
    * If the page has references that need publishing, these are listed in the **Publish** wizard, where you can either:
-     * Specify which of the assets/tags/etc. you want to publish together with the page, then use **Publish** to complete the process.
+     * Specify which of the assets, or tags, and so on, that you want to publish together with the page, then use **Publish** to complete the process.
      * Use **Cancel** to abort the action.
 
    ![Publishing references with the page](/help/sites-cloud/authoring/assets/publishing-references.png)
@@ -94,7 +94,7 @@ In the sites console there are two options for publishing:
 
 To publish a page with Quick Publish:
 
-1. Select the page or pages in the sites console and click on the **Quick Publish** button.
+1. Select the page or pages in the sites console and click the **Quick Publish** button.
 
    ![Selecting pages for publication](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -114,7 +114,7 @@ To publish a page with Quick Publish:
 
 To publish or unpublish a page using Manage Publication:
 
-1. Select the page or pages in the sites console and click on the **Manage Publication** button.
+1. Select the page or pages in the sites console and click the **Manage Publication** button.
 
    ![Selecting pages for publication](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -218,7 +218,7 @@ In a [manner similar to publishing](#publishing-pages), one or more pages can be
 
 ### Unpublishing from the Editor {#unpublishing-from-the-editor}
 
-When editing a page, if you wish to unpublish that page, select **Unpublish Page** in the **Page Information** menu, much as you would [publish the page](#publishing-from-the-editor).
+When editing a page, if you want to unpublish that page, select **Unpublish Page** in the **Page Information** menu, much as you would [publish the page](#publishing-from-the-editor).
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ When editing a page, if you wish to unpublish that page, select **Unpublish Page
 
 Just as you [use the Manage Publication option to publish](#manage-publication), you can also use it to unpublish.
 
-1. Select the page or pages in the sites console and click on the **Manage Publication** button.
+1. Select the page or pages in the sites console and click the **Manage Publication** button.
 1. The **Manage Publication** wizard starts. In the first step, **Options**, select to **Unpublish** instead of the default option of **Publish**.
 
    ![Unpublishing - Options](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
@@ -252,7 +252,7 @@ When you have entered or updated a considerable number of content pages - all of
 
 You can use the [Manage Publication](#manage-publication) option on the sites console to do this.
 
-1. In the sites console, select the root page of the tree you wish to publish or unpublish and select **Manage Publication**.
+1. In the sites console, select the root page of the tree you want to publish or unpublish and select **Manage Publication**.
 1. The **Manage Publication** wizard starts. Choose to publish or unpublish and when it should occur and select **Next** to continue.
 1. In the **Scope** step, select the root page and select **Include Children**.
 

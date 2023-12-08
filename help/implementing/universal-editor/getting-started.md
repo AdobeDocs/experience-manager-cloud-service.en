@@ -3,6 +3,7 @@ title: Getting Started with the Universal Editor in AEM
 description: Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 ---
+
 # Getting Started with the Universal Editor in AEM {#getting-started}
 
 Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
@@ -15,7 +16,7 @@ Learn how to get access to the Universal Editor and how to start instrumenting y
 
 Although the Universal Editor can edit content from any source, this document will use an AEM app as an example.
 
-There are a number of steps to onboarding your AEM app and instrumenting it to use the Universal Editor.
+There are several steps to onboarding your AEM app and instrumenting it to use the Universal Editor.
 
 1. [Request access to the Universal Editor.](#request-access)
 1. [Include the Universal Editor core library.](#core-library)
@@ -36,13 +37,13 @@ Click **Request access** and fill out the form as directed to request access. An
 
 ## Include the Universal Editor Core Library {#core-library}
 
-Before your app can be instrumented for use with the Universal Editor, it needs to include following dependency.
+Before your app can be instrumented for use with the Universal Editor, it must include following dependency.
 
 ```javascript
 @adobe/universal-editor-cors
 ```
 
-To activate the instrumentation, the following import needs to be added to your `index.js`.
+To activate the instrumentation, the following import must be added to your `index.js`.
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -96,21 +97,24 @@ This property must be set in the `org.apache.sling.engine.impl.SlingMainServlet`
 
 The Universal Editor service requires a [uniform resource name (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) to identify and utilize the correct backend system for the content in the app being edited. Therefore, a URN schema is required to map content back to content resources.
 
-The instrumentation attributes added to the page consist mostly of [HTML Microdata,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) an industry-standard that can also be used to make HTML more semantic, make HTML documents indexable, etc.
+The instrumentation attributes added to the page consist mostly of [HTML Microdata,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) an industry-standard that can also be used to make HTML more semantic, make HTML documents indexable, and so on.
 
 ### Creating Connections {#connections}
 
 Connections which are used in the app are stored as `<meta>` tags in the page's `<head>`.
 
 ```html
-<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
+* `<category>` - This is a classification of the connection with two options.
+  * `system` - For connection endpoints
+  * `config` - For [defining optional configuration settings](#configuration-settings)
 * `<referenceName>` - This is a short name which is reused in the document to identify the connection. E.g. `aemconnection`
 * `<protocol>` - This indicates which persistence plugin of the Universal Editor Persistence Service to use. E.g. `aem`
 * `<url>` - Ths is the URL to the system where the changes shall be persisted. E.g. `http://localhost:4502`
 
-The identifier `adobe:aem:editor` represents the connection for the Adobe Universal Editor.
+The identifier `urn:adobe:aue:system` represents the connection for the Adobe Universal Editor.
 
 `itemid`s will use the `urn` prefix to shorten the identifier.
 
@@ -128,10 +132,12 @@ itemid="urn:<referenceName>:<resource>"
 ### Example Connection {#example}
 
 ```html
+<meta name="urn:adobe:aue:system:<referenceName>" content="<protocol>:<url>">
+
 <html>
 <head>
-    <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:adobe:aem:editor:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aue:system:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>
@@ -141,9 +147,9 @@ itemid="urn:<referenceName>:<resource>"
               <p itemprop="title" itemtype="text">Journalist</p>
               <img itemprop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" itemtype="image" alt="avatar"/>
             </li>
- 
+
 ...
- 
+
             <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="component">
               <p itemprop="name" itemtype="text">John Smith</p>
               <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
@@ -153,6 +159,28 @@ itemid="urn:<referenceName>:<resource>"
         </aside>
 </body>
 </html>
+```
+
+### Configuration Settings {#configuration-settings}
+
+You can use the `config` prefix in your connection URN to set service and extension endpoints if necessary.
+
+If you would like not to use the Universal Editor Service, which is hosted by Adobe, but your own hosted version, you can set this in a meta tag. To overwrite the default service endpoint that the Universal Editor provides, set your own service endpoint:
+
+* Meta name - `urn:adobe:aue:config:service`
+* Meta content - `content="https://adobe.com"` (example)
+
+```html
+<meta name="urn:adobe:aue:config:service" content="<url>">
+```
+
+If you only want to have certain extensions enabled for a page, you can set this in a meta tag. To fetch extensions, set the extension endpoints:
+
+* Meta name: `urn:adobe:aue:config:extensions`
+* Meta content: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (example)
+
+```html
+<meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
 ## You're Ready to Use the Universal Editor {#youre-ready}

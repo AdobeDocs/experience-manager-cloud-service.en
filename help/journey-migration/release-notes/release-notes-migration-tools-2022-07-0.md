@@ -17,7 +17,7 @@ The Release Date for Best Practices Analyzer v2.1.30 is July 27, 2022.
 ### What's New {#what-is-new-bpa}
 
 * BPA can now detect and report on the total migratable Lucene Index size which is Total Lucene Index excluding `/oak:index/lucene` and `/oak:index/damAssetLucene`.
-* New pattern added in BPA to detect and report on the use of custom i18n dictionary. Translator.html is not available in AEM as a Cloud Service and custom i18n dictionary needs to be deployed from Git via the Cloud Manager CI/CD pipeline.
+* New pattern added in BPA to detect and report on the use of custom i18n dictionary. Translator.html is not available in AEM as a Cloud Service and custom i18n dictionary must be deployed from Git by way of the Cloud Manager CI/CD pipeline.
 
 ### Bug Fixes {#bug-fixes-bpa}
 

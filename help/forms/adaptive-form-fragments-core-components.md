@@ -26,9 +26,9 @@ You can add a fragment multiple times to a document and use data binding propert
 
 You can create an Adaptive Form fragment from scratch or save a panel in an existing Adaptive Form as fragment. To create a form fragment: 
 
-1. Log into your AEM Forms instance at https://[*hostname*]:[*port*]/aem/forms.html.
+1. Log in to your AEM Forms instance at https://[*hostname*]:[*port*]/aem/forms.html.
 1. Click **Create &gt; Adaptive Form Fragment**.
-1. Specify title, name, description, and tags for the fragment. Ensure that you specify a unique name for the fragment. If there already exists another fragment with the same name, the fragment fails to create.
+1. Specify title, name, description, and tags for the fragment. Ensure that you specify a unique name for the fragment. If another fragment exists with the same name, the fragment fails to create.
 1. Select a form template. You can create a form fragment for Core Components based Adaptive Forms or Foundation Components based Adaptive Forms. 
    * To create form fragment for Core Components based forms, select a Core Components based template. 
    * To create form fragment for Foundation Components based forms, select a Foundation Components template. For example, /libs/fd/af/templateForFragment/defaultFragmentTemplate.
@@ -43,7 +43,7 @@ You can create an Adaptive Form fragment from scratch or save a panel in an exis
 
       >[!NOTE]
       >
-      >An advantage of core component-based fragments over foundation component-based fragments is the ability to use multiple core component-based fragments not tied to any form model in a single Adaptive Form.
+      > In Adaptive Forms, you can use single form fragment (based on Core Components) multiple times. It supports both none-based and schema-based form fragments.
       
     * **Schema**: Specifies to create the fragment using an XML or JSON schema uploaded to AEM Forms. You can upload or select from the available XML or JSON schemas as the form model for the fragment. When you select an XML schema, you can also create an Adaptive Form fragment by selecting a complexType present in the selected schema from the **[!UICONTROL XML Schema Complex Type]** drop-down box. When you select a JSON schema, you can also create an Adaptive Form fragment by selecting a schema definition present in the selected schema from the **[!UICONTROL JSON Schema Definitions]** drop-down box. 
     * **Form Data Model**:  Specifies to create the fragment using a form data model. You can create an Adaptive Form fragment based on only one data model object in a form data model. Expand Form Data Model Definitions drop-down. It lists all data model objects in the specified form data model. Select a data model object from the list.
@@ -101,7 +101,11 @@ Perform the following steps to show complete fragments in forms:
 
 You can create nested Adaptive Form fragments, which means you can drag-drop a fragment in another fragment, and can have nested fragment structure.
 
+### Using a form fragment multiple times in an Adaptive Form {#using-form-fragment-mutiple-times-in-af}
 
+You can use a none-based and schema-based form fragment multiple times in an Adaptive Form to save data uniquely for each form fragments fields. For example, you can use an address form fragment to collect address details for permanent, communication, and present living addresses in a loan application form. 
+
+![using multiple fragment in adaptive form](/help/forms/assets/using-multiple-fragment-af.gif)
 
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 
@@ -168,8 +172,8 @@ You can perform several operations on Adaptive Form fragments using the AEM Form
 
 * Ensure that the fragment name is unique. The fragment fails to create if there is an existing fragment with the same name.
 * In an XDP-based Adaptive Form, if you save a panel as fragment that includes another XDP fragment, the resulting fragment will be automatically bound to the child XDP fragment. In case of an XSD-based Adaptive Form, the resulting fragment will be bound to the schema root.
-* When you create an Adaptive Form fragment, a fragment node gets created, which is similar to the guideContainer node for an Adaptive Form, in CRXDe Lite.
-* A fragment in an Adaptive Form that uses a different form data model is not supported. For example, an XDP-based fragment is not supported in an XSD-based Adaptive Form and vice-versa.
+* When you create an Adaptive Form fragment, a fragment node gets created, which is similar to the guideContainer node for an Adaptive Form, in CRXDE Lite.
+* A fragment in an Adaptive Form that uses a different form data model is not supported. For example, an XDP-based fragment is not supported in an XSD-based Adaptive Form and conversely.
 * Adaptive Form fragments are available for use through the Adaptive Form Fragments tab in AEM content finder.
 * Any expression, script, or style in a stand-alone Adaptive Form fragment is retained when it is inserted by reference or embedded in an Adaptive Form.
 * You cannot edit an Adaptive Form fragment, which is inserted by reference, from within an Adaptive Form. To edit, you either edit the stand-alone Adaptive Form fragment or embed the fragment in the Adaptive Form.

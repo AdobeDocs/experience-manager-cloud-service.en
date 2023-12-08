@@ -100,7 +100,7 @@ This means that subsequent (`write`) requests cannot be combined into a single t
 
 ### Security {#security}
 
-If the Assets REST API is used within an environment without specific authentication requirements, AEM's CORS filter needs to be configured correctly.
+If the Assets REST API is used within an environment without specific authentication requirements, AEM's CORS filter must be configured correctly.
 
 >[!NOTE]
 >
@@ -157,7 +157,7 @@ The response will contain paging information as part of the `properties` section
 
 Folders act as containers for assets and other folders. They reflect the structure of the AEM content repository.
 
-The Assets REST API exposes access to the properties of a folder; for example its name, title, etc. Assets are exposed as child entities of folders, and sub-folders.
+The Assets REST API exposes access to the properties of a folder; for example, its name, title, and so on Assets are exposed as child entities of folders, and sub-folders.
 
 >[!NOTE]
 >
@@ -190,9 +190,9 @@ Content fragments:
 
 ### Content Models and Content Fragments {#content-models-and-content-fragments}
 
-Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, etc. are part of the definition.
+Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore, the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, and so on, are part of the definition.
 
-To create a new content fragment, the (internal repository) path of the model has to be provided.
+To create a content fragment, the (internal repository) path of the model has to be provided.
 
 ### Associated Content {#associated-content}
 
@@ -248,7 +248,7 @@ Usage can differ depending on whether you are using an AEM author or publish env
 
 >[!NOTE]
 >
->For further details, see the API Reference. In particular, [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>See the API Reference [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ### Read/Delivery {#read-delivery}
 
@@ -287,11 +287,11 @@ This can simply be the title or description of a content fragment, or a single e
 
 ### Delete {#delete}
 
-Usage is via:
+Usage is by way of:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-For further details of using the AEM Assets REST API, you can reference:
+For more details about using the AEM Assets REST API, see the following:
 
 * Adobe Experience Manager Assets HTTP API (Additional Resources)
 * Content Fragments Support in AEM Assets HTTP API (Additional Resources)

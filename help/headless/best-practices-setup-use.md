@@ -193,9 +193,9 @@ For:
 * Testing
 * Production
 
-### Further Resources
+### Additional Resources
 
-For further details about AEM GraphQL and Content Fragments see:
+For more details about AEM GraphQL and Content Fragments, see the following:
 
 * [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
 * [Using the GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)

@@ -16,11 +16,11 @@ Migration sets can be deleted from Cloud Acceleration Manager.
 
 To delete a migration set, follow the steps below:
 
-1. Navigate to the Migration Set list view in Cloud Acceleration Manager and click on the three dots (**...**) next to the migration set that you want to delete. The **Delete** action should be visible as shown below.
+1. Navigate to the Migration Set list view in Cloud Acceleration Manager and click the three dots (**...**) next to the migration set that you want to delete. The **Delete** action should be visible as shown below.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
-1. Once you click on **Delete** you will see a dialog to confirm the delete action.
+1. When you click **Delete** you see a dialog box to confirm the delete action.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)
 
@@ -30,6 +30,6 @@ To delete a migration set, follow the steps below:
 >
 >To keep the Content Transfer Tool in sync with the Cloud Acceleration Manager, the user can also delete the migration set from the Content Transfer Tool.
 
-To delete the migration set from the Content Transfer wizard, select the migration set and click on **Delete** in the action bar.
+To delete the migration set from the Content Transfer wizard, select the migration set and click **Delete** in the action bar.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam27.png)

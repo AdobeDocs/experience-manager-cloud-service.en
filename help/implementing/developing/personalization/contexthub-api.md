@@ -156,7 +156,7 @@ Merges a data object or an array with the store data. Each key/value pair in the
 * **Object:** Keys are the property names.
 * **Array:** Keys are the array indices.
 
-Note that values can be objects.
+Values can be objects.
 
 ##### Parameters {#parameters-addallitems}
 
@@ -213,7 +213,7 @@ Retrieves the keys from the store. Optionally you can retrieve the keys that are
 
 ##### Parameters {#parameters-getkeys}
 
-* **`includeInternals`:** A value of `true` includes internally-used keys in the results. These keys begin with the underscore (`_`) character. The default value is `false`.
+* **`includeInternals`:** A value of `true` includes internally used keys in the results. These keys begin with the underscore (`_`) character. The default value is `false`.
 
 ##### Returns {#returns-getkeys}
 
@@ -236,7 +236,7 @@ Retrieves the data tree from the store. Optionally you can include the key/value
 
 ##### Parameters {#parameters-gettree}
 
-* `includeInternals:` A value of `true` includes internally-used key/value pairs in the results. The keys of this data begin with the underscore (`_`) character. The default value is `false`.
+* `includeInternals:` A value of `true` includes internally used key/value pairs in the results. The keys of this data begin with the underscore (`_`) character. The default value is `false`.
 
 ##### Returns {#returns-gettree}
 
@@ -397,7 +397,7 @@ An object that represents the raw response.
 
 #### getServiceDetails() {#getservicedetails}
 
-Retrieves the service object for this ContextHub.Store.JSONPStore object. The service object contains all of the information required to create the service URL.
+Retrieves the service object for this ContextHub.Store.JSONPStore object. The service object contains the information required to create the service URL.
 
 ##### Returns {#returns-getservicedetails}
 
@@ -475,15 +475,15 @@ Resolves the given parameter.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` extends [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) so it inherits all of the functions of that class. However, the data that is retrieved from the JSONP service is persisted according to the configuration of ContextHub persistence. (See [Persistence Modes:](adding-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` extends [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) so it inherits all functions of that class. However, the data that is retrieved from the JSONP service is persisted according to the configuration of ContextHub persistence. (See [Persistence Modes:](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
-`ContextHub.Store.PersistedStore` extends [ContextHub.Store.Core](#contexthub-store-core) so it inherits all of the functions of that class. The data in this store is persisted according to the configuration of ContextHub persistence.
+`ContextHub.Store.PersistedStore` extends [ContextHub.Store.Core](#contexthub-store-core) so it inherits all functions of that class. The data in this store is persisted according to the configuration of ContextHub persistence.
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-`ContextHub.Store.SessionStore` extends [ContextHub.Store.Core](#contexthub-store-core) so it inherits all of the functions of that class. The data in this store is persisted using in-memory persistance (JavaScript object).
+`ContextHub.Store.SessionStore` extends [ContextHub.Store.Core](#contexthub-store-core) so it inherits all functions of that class. The data in this store is persisted using in-memory persistance (JavaScript object).
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -850,7 +850,7 @@ A copy of tree that is cleaned.
 
 #### getItem() {#getitem}
 
-Retrieves the value from an object for the a key.
+Retrieves the value from an object for the key.
 
 ##### Parameters {#parameters-getitem-2}
 
