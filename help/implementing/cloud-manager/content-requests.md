@@ -10,7 +10,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 Cloud Service content requests are measured via server-side collection of data. The collection is enabled via CDN log analysis.
 
 >[!NOTE]
->Additionally, for a limited number of Early Adopter customers <!--(hyper link to release notes)-->, client-side collection will also be enabled via RUM (Real User Monitoring) measurement. You can learn more by consulting the documentation in this article <!--(hyperlink to main article)-->.
+>Additionally, for a limited number of Early Adopter customers <!--(hyper link to release notes)-->, client-side collection will also be enabled via RUM (Real User Monitoring) measurement. You can learn more by consulting the documentation in [this article](#real-user-monitoring-for-aem-as-a-cloud-service).
 
 ## Understanding Cloud Service Content Requests {#understaing-cloud-service-content-requests}
 
@@ -78,7 +78,7 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 >[!INFO]
 >
 >This feature is only available to the early adopter program. 
->Customers need to be on AEM Cloud Service version 2023.11.14227 and above for enabling RUM data service.
+>You need to be using AEM Cloud Service version **2023.11.14227** and above in order to enabled the RUM data service.
 
 ### Overview {#overview}
 
@@ -126,7 +126,7 @@ Real User Monitoring (RUM) is designed to prevent the collection of personally i
 
 ### How to Set Up the Real User Monitoring (RUM) Data Service {#how-to-set-up-them-rum-data-service}
 
-* To be a part of our Early Adopter program , please send an email to aemcs-rum-adopter@adobe.com <aemcs-rum-adopter@adobe.com> along with your AEM Cloud Services, please share the domain name for production, stage and dev environment from your email address associated with your Adobe ID. * Adobe's product team will enable Real User Monitoring (RUM) Data Service for you. 
+* If you wish to be a part of our Early Adopter program , please send an email to `aemcs-rum-adopter@adobe.com`, along with your AEM Cloud Services <!-- Alexandru: what does this mean? -->. Please share the domain name for production, stage and dev environment from your email address associated with your Adobe ID. Adobe's product team will then enable the Real User Monitoring (RUM) Data Service for you. 
 * Once this is completed, Adobe's product team will create a Customer collaboration Channel.
 * Adobe's Product team will reach out to you to provide you with the domain key and data dashboard URL where you can view the Page Views and [The Core Web Vitals(CWV)](https://web.dev/vitals/) metrics collected by the client-side Real User Monitoring (RUM) collection.
 * You will then be guided on how to use the domain key to access the data dashboard link and view the metrics.
