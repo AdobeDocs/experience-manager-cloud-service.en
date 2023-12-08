@@ -29,7 +29,7 @@ If your translation service provider does not provide a connector to integration
 
 >[!NOTE]
 >
->Your user needs to be a member of the `project-administrators` group to use the Language Copy features.
+>Your user must be a member of the `project-administrators` group to use the Language Copy features.
 
 ## Best Practices {#best-practices}
 

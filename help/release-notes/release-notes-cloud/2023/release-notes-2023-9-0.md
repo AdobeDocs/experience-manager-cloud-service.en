@@ -3,7 +3,8 @@ title: Release Notes for 2023.9.0 release of [!DNL Adobe Experience Manager] as 
 description: Release Notes for 2023.9.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 ---
-# Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+
+# 2023.9.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 The following section outlines the feature release notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
 
@@ -78,7 +79,7 @@ You can now assign metadata form to a specific folder within your deployment. Al
 * **[Form Fragment in Adaptive Forms based on Core Components](/help/forms/adaptive-form-fragments-core-components.md)**: Say goodbye to duplication, optimize your digital inventory, and improve collaboration as you elevate your form-building experience with Form Fragments. These reusable components seamlessly integrate into multiple forms, streamlining the creation of consistent and professional-looking forms. Form Fragments ensure reusability, standardization, and brand consistency through 'change once and reflect everywhere' functionality. Experience greater maintainability and efficiency as updates made in one place are automatically propagated across all forms that utilize these fragments.
 
 * **[Enhanced Adobe Sign Workflow step](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: The Adobe Sign Workflow step is enhanced to include the following:
-     * **Government ID-Based Authentication for Adobe Sign**: Adobe Acrobat Sign's Government ID-Based Authentication offers an additional layer of verification by enabling users to authenticate their identity using government-issued IDs (driver's license, national ID, passport). By leveraging trusted identification documents, this enhancement adds an extra level of confidence to the signing process, making it ideal for scenarios that require heightened security, compliance, and user validation. 
+     * **Government ID-Based Authentication for Adobe Sign**: Adobe Acrobat Sign's Government ID-Based Authentication offers an additional layer of verification by enabling users to authenticate their identity using government-issued IDs (driver's license, national ID, passport). By using trusted identification documents, this enhancement adds an extra level of confidence to the signing process, making it ideal for scenarios that require heightened security, compliance, and user validation. 
 
      * **Audit Trail for Adobe Sign Documents**:  Use the Audit Trail feature for detailed insights into the lifecycle of your Adobe Sign documents. With the Audit Trail, you can now maintain a comprehensive record of all actions and interactions related to your documents. This includes details such as who viewed, edited, or signed the document, along with timestamps for each event. This enhancement is crucial for maintaining compliance, resolving disputes, and ensuring the integrity of your digital agreements. 
      
@@ -109,12 +110,13 @@ You can now assign metadata form to a specific folder within your deployment. Al
 
 ### New CDN caching behavior for campaign-related URL parameters {#cache-url-params}
 
-For new environments, the CDN will remove marketing related query parameters by default in order to increase marketing campaign performance and cache hit ratios. Existing environments are unaffected. [Learn more.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+For new environments, the CDN will remove marketing related query parameters by default to increase marketing campaign performance and cache hit ratios. Existing environments are unaffected. [Learn more.](/help/implementing/dispatcher/caching.md#marketing-parameters)
 
 ### Traffic Filter Rules (including WAF Rules) early adopter program {#waf-early-adopter}
 
 Filter traffic at the CDN based on:
-* request headers and properties (e.g., IP address)
+
+* request headers and properties (for example, IP address)
 * traffic patterns known to be associated with malicious traffic
 
 Interested in trying out the feature and sharing feedback? Send an email to **aemcs-waf-adopter@adobe.com** from your official email ID to learn more about the early adopter program. Space is limited.

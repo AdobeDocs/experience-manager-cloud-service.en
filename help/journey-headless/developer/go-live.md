@@ -61,7 +61,7 @@ Once you make sure that everything has been tested and is working properly, you 
 
 After the updates have been uploaded to Cloud Manager, they can be deployed to AEM as a Cloud Service using [Cloud Manager's CI/CD pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
 
-You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
+You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 
 ## Performance Monitoring {#performance-monitoring}
 
@@ -77,7 +77,7 @@ For users to have the best possible experience when using the AEM headless appli
     * Check number of users, requests and load
 * Access App and space specific performance reports
   * Once the server is up, check whether the general metrics are green/orange/red, then identify specific app issues
-  * Open same reports above filtered to app or space (for example Photoshop desktop, paywall)
+  * Open same reports above filtered to app or space (for example, Photoshop desktop, paywall)
   * Use Splunk log APIs to access service and application performance
   * Contact Customer Support in case there are other issues.
 
@@ -118,7 +118,7 @@ You have either already launched your first AEM Headless project or now have all
 
 ### Explore Single Page Applications {#explore-spa}
 
-The headless stores in AEM does not need to stop here, though. You might remember in the [Getting Started part of the journey](getting-started.md#integration-levels) we discussed briefly how AEM not only supports headless delivery and traditional full-stack models, but also can support hybrid models that combine the advantages of both.
+The headless stores in AEM does not need to stop here, though. You might remember in the [Getting Started part of the journey](getting-started.md#integration-levels) we discussed briefly how AEM not only supports headless delivery and traditional full-stack models, but can also support hybrid models that combine the advantages of both.
 
 If this kind of flexibility is something you need for your project, continue on to the optional, additional part of the journey, [How to Create Single Page Applications (SPAs) with AEM.](create-spa.md)
 

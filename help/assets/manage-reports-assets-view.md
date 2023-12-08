@@ -20,13 +20,23 @@ All users who are assigned to the Assets view Administrators product profile can
 
 Assets view enables you to view real-time data for your Assets view environment with the Insights dashboard. You can view real-time event metrics during the last 30 days or for the last 12 months. 
 
-![Toolbar options when you select an asset](assets/assets-essentials-live-statistics.png)
+<!--![Toolbar options when you select an asset](assets/assets-essentials-live-statistics.png)-->
 
 Click **[!UICONTROL Insights]** available in the left navigation pane to view the following automatically generated charts:
+
+   ![Insights](assets/insights.png)
 
 * **Downloads**: The number of assets downloaded from the Assets view environment in the last 30 days or 12 months represented using a line chart.
 
 * **Uploads**: The number of assets uploaded to the Assets view environment in the last 30 days or 12 months represented using a line chart.
+
+<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+
+* **Storage usage**: The storage usage, in bytes, for the Assets view environment represented using a bar chart.
+
+<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+
+<!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Top Searches**: View top searched terms along with the number of times those terms are searched within your Assets view environment in the last 30 days or 12 months represented in a tabular format.
 

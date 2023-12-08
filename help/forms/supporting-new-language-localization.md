@@ -98,7 +98,7 @@ Perform this step only if the `<locale>` you are adding is not among `en`, `de`,
 1. Add the `<locale-name>` default locale values `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, if not present already.
 
 1. Add the `<locale>` to the values of the `languages` property of `/etc/languages`.
-1. Add the newly-created folders in the `filter.xml` under etc/META-INF/[folder hierarchy] as: 
+1. Add the created folders in the `filter.xml` under etc/META-INF/[folder hierarchy] as: 
 
     ```
     <filter root="/etc/clientlibs/[locale-name]"/>

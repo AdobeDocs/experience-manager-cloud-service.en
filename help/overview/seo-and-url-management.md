@@ -430,7 +430,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
         }
         String location = externalizer.externalize(resource);
         Url url = sitemap.addUrl(location + ".html");
-        // add any additional content to the Url like lastmod, change frequency, etc
+        // add any additional content to the Url like lastmod, change frequency, and so on
     }
 
     @Override
@@ -461,7 +461,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 
 ```
 
-Furthermore, the functionality implemented for XML sitemaps can be used in different use cases as well, for example to add the canonical link or the language alternates to a page's head. See the [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface for more information. 
+Furthermore, the functionality implemented for XML sitemaps can be used in different use cases as well, for example, to add the canonical link or the language alternates to a page's head. See the [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface for more information. 
 
 ### Creating 301 redirects for legacy URLs {#creating-redirects-for-legacy-urls}
 

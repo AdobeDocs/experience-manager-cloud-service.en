@@ -37,7 +37,7 @@ To change the layout of an Adaptive Form, use the Authoring Mode in [!DNL Experi
 
 A form author can associate a layout with each panel of an Adaptive Form, including the root panel.
 
-The Panel layouts are available at `/libs/fd/af/layouts/panel` location. Tap the panel and select ![cmppr1](assets/configure-icon.svg) to view the panel properties.
+The Panel layouts are available at `/libs/fd/af/layouts/panel` location. Select the panel and select ![cmppr1](assets/configure-icon.svg) to view the panel properties.
 
 ![List of panel layouts for root panel of an Adaptive Form](assets/layouts.png)
 
@@ -65,7 +65,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 Using this layout, you can place the **[!UICONTROL Panel Adaptive Form]** component in a panel with accordion style navigation. Using this layout, you can also create repeatable panels. Repeatable panels enable you to dynamically add or remove panels as needed. You can define the minimum and the maximum number of times a panel repeats. Also, the title of the panel can be determined dynamically, based on the information provided in the panel items.
 
-Summary expression can be used to show the values provided by the end user in the title of the minimized panel.
+Summary expression can be used to show the values provided by the user in the title of the minimized panel.
 
 ![Repeatable panels using Accordion layout in Adaptive Forms](assets/accordion-layout.png)
 
