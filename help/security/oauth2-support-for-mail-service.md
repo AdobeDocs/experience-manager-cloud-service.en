@@ -23,10 +23,12 @@ For more information on the AEM as a Cloud Service Mail Service, see [Sending Em
 1. Go to the created app, and select **API Permissions**.
 1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**.
 1. Select the below permissions for your app, then click **Add Permission**:
+
+   >[!NOTE]
+   >
+   >Permissions configuration may evolve over time. Work with Microsoft if these do not work as expected.
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
@@ -128,10 +130,12 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
    
 1. Fill in the `authUrl`, `tokenUrl`, and `refreshURL` by constructing them as described in the previous section.
 1. Add the following Scopes to the configuration:
+
+   >[!NOTE]
+   >
+   >Scopes may evolve over time. Work with Microsoft if these do not work as expected.
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
