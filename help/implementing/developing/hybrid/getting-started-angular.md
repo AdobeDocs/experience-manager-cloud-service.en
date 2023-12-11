@@ -261,7 +261,7 @@ Finally the image can be rendered in `image.component.html`.
 
 It is regularly necessary for components within a single-page application to share information. There are several recommended ways of doing this, listed as follows in increasing order of complexity.
 
-* **Option 1:** Centralize the logic and broadcast to the necessary components for example by using a util class as a pure object-oriented solution.
+* **Option 1:** Centralize the logic and broadcast to the necessary components for example, by using a util class as a pure object-oriented solution.
 * **Option 2:** Share component states by using a state library such as NgRx.
 * **Option 3:** Leverage the object hierarchy by customizing and extending the container component.
 

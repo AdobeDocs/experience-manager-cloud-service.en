@@ -37,7 +37,7 @@ The **Pipelines** window shows a complete list of all pipelines for the selected
 
 1. From the **Program Overview** page, select the **Pipelines** tab to switch to the **Pipelines** window.
 
-1. Here you can see a list of all pipelines for the program as well as start and stop pipeline execution as you would in the **Pipelines Card**.
+1. Here you can see a list of all pipelines for the program and start and stop pipeline execution as you would in the **Pipelines Card**.
 
 If a pipeline is executing, hovering over its **Status** column will reveal details about the execution.
 

@@ -114,7 +114,7 @@ See also [Preview assets using the software interface](/help/assets/dynamic-medi
     | **Turn your camera** | Orbit your view around the 3D scene and objects. | Left click + drag. | Single-finger press + drag. |
     | **Pan your camera**  | Pan your view left, right, up, or down. | Right click + drag. | Two-finger press + drag. |
     | **Zoom your camera**  | Move in and out of areas in the 3D scene. | Scroll wheel. | Two-finger pinch. |
-    | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-tap. |
+    | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-select. |
     | **Reset**  | Near the lower-right corner of the page, select the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |
     | **Full screen mode**  | To enter full screen mode, in the lower-right corner of the page, select the Fullscreen icon.  |   |   |
 
@@ -147,7 +147,7 @@ See also [Preview assets using the software interface](/help/assets/dynamic-medi
     | **Turn your camera** | Orbit your view around the 3D scene and objects. | Left click + drag. | Single-finger press + drag. |
     | **Pan your camera**  | Pan your view left, right, up, or down. | Right click + drag. | Two-finger press + drag. |
     | **Zoom your camera**  | Move in and out of areas in the 3D scene. | Scroll wheel. | Two-finger pinch. |
-    | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-tap. |
+    | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-select. |
     | **Reset**  | Near the lower-right corner of the page, select the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |
     | **Full screen mode**  | To enter full screen mode, in the lower-right corner of the page, select the Fullscreen icon.  |   |   |
 
@@ -172,7 +172,7 @@ Dynamic Media includes a Dynamic Media 3D Media component that you can use in [!
 1. To select an empty area and open its associated toolbar, select the empty area in the **[!UICONTROL Layout Container]** region.  
 1. On the toolbar, select the **[!UICONTROL Policy]** icon to open the **[!UICONTROL Policy Editor]**.
 1. In the **[!UICONTROL Properties]** section, under the **[!UICONTROL Allowed Components]** tab, scroll to **[!UICONTROL Dynamic Media]**, then expand the list and check **[!UICONTROL 3D Media]**.
-1. Tap **[!UICONTROL Done]** to save the changes and close the **[!UICONTROL Policy Editor]**.
+1. Select **[!UICONTROL Done]** to save the changes and close the **[!UICONTROL Policy Editor]**.
 
    You can now place the Dynamic Media 3D Media component on all pages that use this template.
 
@@ -250,12 +250,12 @@ See also [Publish pages](/help/sites-cloud/authoring/fundamentals/publishing-pag
 
     ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publisha.png)
 
-1. Tap **[!UICONTROL Close]** to exit the dialog box and return to the asset details page.
+1. Select **[!UICONTROL Close]** to exit the dialog box and return to the asset details page.
 1. From the drop-down list to the left of the 3D asset's file name, select **[!UICONTROL Renditions]**.
 
     ![3d-asset-renditions](/help/assets/dynamic-media/assets/3d-asset-renditionsa.png)
 
-1. Tap **[!UICONTROL original]**. When a 3D asset is published (or "activated"), the **[!UICONTROL URL]** button appears near the bottom-left corner of the page if all the following 3D asset conditions are met:
+1. Select **[!UICONTROL original]**. When a 3D asset is published (or "activated"), the **[!UICONTROL URL]** button appears near the bottom-left corner of the page if all the following 3D asset conditions are met:
     * The 3D asset is a supported format (GLB, OBJ, STL, and USDZ).
     * The 3D asset was ingested into the Dynamic Media Image Production System (IPS).
     * The 3D asset is published.

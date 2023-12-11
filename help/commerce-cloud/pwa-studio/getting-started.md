@@ -100,7 +100,7 @@ Follow the AEM Content Fragments documentation to setup a GraphQL endpoint for y
 
 You can find full examples of both configurations here: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
-To showcase the GraphQL endpoint, we prepared some sample Content Fragment models and data via a content package. These work well together with the React Components provided with the PWA Studio extension.
+To showcase the GraphQL endpoint, there are some prepared sample Content Fragment models and data via a content package. These work well together with the React Components provided with the PWA Studio extension.
 
 ## How to Use {#how-to-use}
 

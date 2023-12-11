@@ -67,7 +67,7 @@ In the **Translation Configuration** UI, there are several options available for
 ![Add context](assets/add-translation-context.png)
 1. Use the path browser to select the required path and select **Confirm** to save. Remember, Content Fragments, which hold headless content, are generally located under `/content/dam/<your-project>`.
 ![Select the path](assets/select-context.png)
-1. Select the context you just created and then select **Edit**. This opens the **Translation Rules Editor** to configure the properties.
+1. Select the context you created and then select **Edit**. This opens the **Translation Rules Editor** to configure the properties.
 ![Translation rules editor](assets/translation-rules-editor.png)
 1. By default all configurations are inherited from the parent path, in this case `/content/dam`. Uncheck the option **Inherit from `/content/dam`** so you can add additional fields to the configuration.
 1. When unchecked, under the **General** section of the list, add the property names of the Content Fragment Model(s) that you [previously identified as fields for translation.](getting-started.md#content-models)

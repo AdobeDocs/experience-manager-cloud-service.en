@@ -21,8 +21,8 @@ Consider another example of a form that captures email id and phone number. When
 Perform the following steps to add an element in the metadata:
 
 1. Open your Adaptive Form in edit mode.  
-   To open your form in edit mode, in the forms manager, select your form and tap **[!UICONTROL Open]**.
-1. In the edit mode, select a component, tap ![field-level](assets/select_parent_icon.svg) &gt; **[!DNL Adaptive Form Container]**, and then tap ![cmppr](assets/configure-icon.svg).
+   To open your form in edit mode, in the forms manager, select your form and select **[!UICONTROL Open]**.
+1. In the edit mode, select a component, select ![field-level](assets/select_parent_icon.svg) &gt; **[!DNL Adaptive Form Container]**, and then select ![cmppr](assets/configure-icon.svg).
 1. In the sidebar, click **[!DNL Metadata]**.
 1. In the Metadata section, click **[!DNL Add]**.
 1. Use the Value field of the Metadata tab to add scripts. The scripts you add collect data from elements on the form and compute values that are fed to the metadata.

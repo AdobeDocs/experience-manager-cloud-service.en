@@ -251,7 +251,7 @@ This query can be persisted under a path `wknd/adventures-by-activity`. To call 
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-Note that `%3B` is the UTF-8 encoding for `;` and `%3D` is the encoding for `=`. The query variables and any special characters must be [encoded properly](#encoding-query-url) for the Persisted query to execute.
+The UTF-8 encoding `%3B` is for `;` and `%3D` is the encoding for `=`. The query variables and any special characters must be [encoded properly](#encoding-query-url) for the Persisted query to execute.
 
 ## Caching your persisted queries {#caching-persisted-queries}
 
@@ -437,8 +437,8 @@ To create a Package:
 1. In the Package Definition Dialog, under **General** enter a **Name** like "wknd-persistent-queries".
 1. Enter a version number like "1.0".
 1. Under **Filters** add a new **Filter**. Use the Path Finder to select the `persistentQueries` folder beneath the configuration. For example, for the `wknd` configuration, the full path is `/conf/wknd/settings/graphql/persistentQueries`.
-1. Tap **Save** to save the new Package definition and close the dialog.
-1. Tap the **Build** button in the created Package definition.
+1. Select **Save** to save the new Package definition and close the dialog.
+1. Select the **Build** button in the created Package definition.
 
 After the package has been built you can: 
 
