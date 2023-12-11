@@ -175,7 +175,7 @@ Best practices indicate that if a **Non-Wipe** ingestion must be run using a mig
 
 Node property values stored in MongoDB cannot exceed 16 MB. If a node value exceeds the supported size, the ingestion will fail and the log will contain a `BSONObjectTooLarge` error and specify which node exceeded the maximum. Note that this is a MongoDB restriction.
 
-See the `Node property value in MongoDB` note in [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) for more information and a link to an Oak tool that could help find all the large nodes. Once any nodes with large sizes are remedied, run the extraction and ingestion again.
+See the `Node property value in MongoDB` note in [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) for more information and a link to an Oak tool that could help find all the large nodes. Once all nodes with large sizes are remedied, run the extraction and ingestion again.
 
 ### Ingestion Rescinded
 
