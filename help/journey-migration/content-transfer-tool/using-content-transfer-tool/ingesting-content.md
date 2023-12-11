@@ -171,7 +171,7 @@ The solution may require that the top-up extraction is done again without the of
 
 Best practices indicate that if a **Non-Wipe** ingestion must be run using a migration set that includes versions (that is, extracted with "include versions"=true), it is crucial that content on the destination is modified as little as possible, until the migration journey is complete. Otherwise, these conflicts can occur.
 
-### Top-up Ingestion Failure Due to Large Node property values
+### Ingestion Failure Due to Large Node Property Values
 
 Node property values stored in MongoDB cannot exceed 16 MB. If a node value exceeds the supported size, the ingestion will fail and the log will contain a `BSONObjectTooLarge` error and specify which node exceeded the maximum. Note that this is a MongoDB restriction.
 
