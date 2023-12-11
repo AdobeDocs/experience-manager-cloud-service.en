@@ -1,7 +1,7 @@
 ---
 title: Metadata management and best practices
 description: Learn about metadata best practices to effectively manage your digital assets.
-role: User, Beginner, Admin
+role: User, Admin
 hide: yes
 hidefromtoc: yes
 ---
