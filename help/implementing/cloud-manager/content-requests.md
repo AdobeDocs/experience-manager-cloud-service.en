@@ -21,6 +21,7 @@ The Real User Monitoring (RUM) Data Service offers a more precise reflection of 
 For customers that bring their own CDN on top of AEM as a Cloud Service, this tracking will result in numbers that cannot be used to compare with the licensed content requests. These numbers will have to be measured by the customer at the edge of the outer CDN. For these customers, client-side reporting and associated performance, the Adobe RUM Data Service is the Adobe recommended option. See the release notes <!-- link here--> on information on how to opt-in. To learn more (link to main article). <!-- This last part is a bit redundant -->
 
 ## Server-side Collection {#serverside-collection}
+There are rules in place to exclude well-known bots, including well-known services visiting the site regularly to refresh their search index or service.
 
 ### Types of included content requests {#included-content-requests}
 
