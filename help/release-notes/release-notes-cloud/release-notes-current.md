@@ -87,7 +87,7 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
 ### New features in [!DNL Forms] prerelease {#prerelease-features-forms}
 
-* **[Connect an Adaptive Forms with Microsoft&reg; SharePoint List](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms provides an OOTB integration to submit forms data directly to SharePoint List, enabling you to leverage SharePoint's Lists capabilities. You can configure Microsoft SharePoint List as a datasource for a Form Data Model and use the **Submit using Form Data Model** submit action to connect an Adaptive Form with SharePoint List. 
+* **[Connect an Adaptive Forms with Microsoft&reg; SharePoint List](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms provides an OOTB integration to submit forms data directly to SharePoint List, letting you use SharePoint's Lists capabilities. You can configure Microsoft SharePoint List as a datasource for a Form Data Model and use the **Submit using Form Data Model** submit action to connect an Adaptive Form with SharePoint List. 
 
 <!-- 
 
@@ -97,9 +97,9 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
 ### Early adopter program {#forms-early-adopter}
 
-* **Submit an Adaptive Form to Adobe Workfront Fusion Scenario**: Forms as a Cloud Service offers an out-of-the-box options to effortlessly connect an Adaptive Form with Adobe Workfront. This simplifies the process of submitting an Adaptive Form to an Adobe Workfront scenario, allowing you trigger a Workfront Fusion scenario on submission of an Adaptive Form. 
+* **[Submit an Adaptive Form to Adobe Workfront Fusion Scenario](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service offers an out-of-the-box options to effortlessly connect an Adaptive Form with Adobe Workfront. This simplifies the process of submitting an Adaptive Form to an Adobe Workfront scenario, allowing you trigger a Workfront Fusion scenario on submission of an Adaptive Form. 
 
-* **Right to left languages support**: Adaptive Forms built on Core Components can now be presented in a Right-to-Left (RTL) language like Arabic, Persian, and Urdu. The RTL languages are spoken by over 2 billion people globally. Using a form in RTL language allows you to extend the reach of your adaptive forms to cater to these diverse audiences and tap into RTL markets. In certain regions, it's also a legal mandate to provide forms in the local language. By accommodating local languages, you not only open doors to a broader audience but also ensure compliance with relevant laws and regulations. 
+* **[Right to left languages support](/help/forms/supporting-new-language-localization-core-components.md)**: Adaptive Forms built on Core Components can now be presented in a Right-to-Left (RTL) language like Arabic, Persian, and Urdu. The RTL languages are spoken by over 2 billion people globally. Using a form in RTL language allows you to extend the reach of your adaptive forms to cater to these diverse audiences and select into RTL markets. In certain regions, it's also a legal mandate to provide forms in the local language. By accommodating local languages, you not only open doors to a broader audience but also ensure compliance with relevant laws and regulations. 
 
   ![Right to left language support](/help/forms/assets/right-to-left-language-support.png)
 
@@ -140,6 +140,6 @@ You can find a complete list of Migration Tools releases [here](/help/journey-mi
 
 ## Known issues {#known-issues}
 
-* Users are unable to submit Adaptive Forms based on Core Components. The issue occurs for Adaptive Forms built using Core Components versions 2.0.38 – 2.0.60. 
+* Unable to submit Adaptive Forms based on Core Components. The issue occurs for Adaptive Forms built using Core Components versions 2.0.38 – 2.0.60. 
 
   To resolve the issue. you can move to Adaptive Form Core Components version 2.0.62 or later. To set a version of Adaptive Forms Core Components for your environment, [set versions of the core.forms.components.version, core.forms.components.af.version, and core.wcm.components.version component](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) dependencies in your Forms as a Cloud Service repository or AEM Archetype based project and [deploy the changes to your Forms as a Cloud Service environment](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). You can find the latest version of Adaptive Forms Core Components dependencies at [Adaptive Forms Core Components Git repository](https://github.com/adobe/aem-core-forms-components#system-requirements).

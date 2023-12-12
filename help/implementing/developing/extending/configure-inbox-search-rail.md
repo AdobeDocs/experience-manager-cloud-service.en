@@ -27,7 +27,7 @@ The following are the available predicate types for Inbox:
 
 1. Navigate to **[!UICONTROL Tools]**, **[!UICONTROL General]**, **[!UICONTROL Search Forms]**.
 
-1. Select the **[!UICONTROL Inbox Search Rail]** configuration and tap **[!UICONTROL Edit]**.
+1. Select the **[!UICONTROL Inbox Search Rail]** configuration and select **[!UICONTROL Edit]**.
 1. Incorporate the predicate configuration changes using **[!UICONTROL Edit Search Forms]**.
 1. Select **[!UICONTROL Done]** to save the configuration.
 
@@ -37,7 +37,7 @@ To delete a customized configuration:
 
 1. Navigate to **[!UICONTROL Tools]**, **[!UICONTROL General]**, **[!UICONTROL Search Forms]**.
 
-1. Select the **[!UICONTROL Inbox Search Rail]** configuration and tap **[!UICONTROL Delete]**.
+1. Select the **[!UICONTROL Inbox Search Rail]** configuration and select **[!UICONTROL Delete]**.
 
 ## Configure Range Predicate {#range-predicate}
 
@@ -46,10 +46,10 @@ You can filter Inbox items to search for a number range within an Inbox column u
 To configure a Range Predicate:
 
 1. Open the [form for configuration](#creating-opening-customized-configuration).
-1. Tap the **[!UICONTROL Select Predicate]** tab and drag **[!UICONTROL Range Predicate]** to the form.
+1. Select the **[!UICONTROL Select Predicate]** tab and drag **[!UICONTROL Range Predicate]** to the form.
 1. In the **[!UICONTROL Settings]** tab, select the Inbox column name to base your search on, from **[!UICONTROL Column Name]** field.
 1. Specify the label for the filter in the **[!UICONTROL Filter Label]** field. Select the **[!UICONTROL Enable Decimal Values]** checkbox to accept decimal values for numbers while defining the range.
-1. Specify an optional description for the configuration and tap **[!UICONTROL Done]** to save it.
+1. Specify an optional description for the configuration and select **[!UICONTROL Done]** to save it.
 
 The configuration changes reflect when you open the Filters page. The filter label that you specified in step 4 displays as the label with an option to define the maximum and minimum values. When you press the Enter key, [!DNL Experience Manager] applies the search criteria on the column name specified in step 3 and returns the Inbox items.
 
@@ -64,10 +64,10 @@ Filter Inbox items to search for a text string within an Inbox column using the 
 To configure a Text Predicate:
 
 1. Open the [form for configuration](#creating-opening-customized-configuration).
-1. Tap the **[!UICONTROL Select Predicate]** tab and drag **[!UICONTROL Text Predicate]** to the form.
+1. Select the **[!UICONTROL Select Predicate]** tab and drag **[!UICONTROL Text Predicate]** to the form.
 1. In the **[!UICONTROL Settings]** tab, select the Inbox column name to base your search on, from **[!UICONTROL Column Name]** field.
 1. Specify the text that displays in the Search text box as a placeholder text in the **[!UICONTROL Search Text Box Placeholder]** field.
-1. Specify an optional description for the configuration and tap **[!UICONTROL Done]** to save it.
+1. Specify an optional description for the configuration and select **[!UICONTROL Done]** to save it.
 
 The configuration changes reflect when you open the Filters page. When you press the Enter key, [!DNL Experience Manager] applies the search text specified in step 4 on the column name specified in step 3 and returns the Inbox items.
 
@@ -78,11 +78,11 @@ You can filter Inbox items to search for a date range within an Inbox column usi
 To configure a Date Range Predicate:
 
 1. Open the [form for configuration](#creating-opening-customized-configuration).
-1. Tap the **[!UICONTROL Select Predicate]** tab and drag **[!UICONTROL Date Range Predicate]** to the form.
+1. Select the **[!UICONTROL Select Predicate]** tab and drag **[!UICONTROL Date Range Predicate]** to the form.
 1. In the **[!UICONTROL Settings]** tab, select the Inbox column name to base your search on, from **[!UICONTROL Column Name]** field.
 1. Specify the label for the date range filter in the **[!UICONTROL Filter Label]** field.
 1. Specify the start date and end date labels for the filter.
-1. Specify an optional description for the configuration and tap **[!UICONTROL Done]** to save it.
+1. Specify an optional description for the configuration and select **[!UICONTROL Done]** to save it.
 
 The configuration changes reflect when you open the Filters page. The filter label that you specified in step 4 displays as the label for the date range filter along with the start date and end date labels specified in step 5. [!DNL Experience Manager] applies the search criteria on the column name specified in step 3 and returns the Inbox items.
 
@@ -93,12 +93,12 @@ You can filter Inbox items to search for a custom option within an Inbox column 
 To configure a Custom Column Options Predicate:
 
 1. Open the [form for configuration](#creating-opening-customized-configuration).
-1. Tap the **[!UICONTROL Select Predicate]** tab and drag **[!UICONTROL Custom Column Options Predicate]** to the form.
+1. Select the **[!UICONTROL Select Predicate]** tab and drag **[!UICONTROL Custom Column Options Predicate]** to the form.
 1. In the **[!UICONTROL Settings]** tab, select the Inbox column name to base your search on, from **[!UICONTROL Column Name]** field.
 1. Specify the label for the custom column options filter in the **[!UICONTROL Filter Label]** field.
 1. Select the **[!UICONTROL Single Select]** checkbox to enable the selection of just one option while applying filter on an Inbox column.
 1. In the **[!UICONTROL Add Options]** section:
-   1. Select **[!UICONTROL Manual]** to define the filter search options manually. Tap **[!UICONTROL Add Filter Options]** to define the first option. Specify the label for the column option and the option value text to search for. For example, if you want to search for **Female** as a value in an Inbox column, you can specify **F** as label for the column option and add **Female** as the option value text. Similarly, you can add more filter options.
+   1. Select **[!UICONTROL Manual]** to define the filter search options manually. Select **[!UICONTROL Add Filter Options]** to define the first option. Specify the label for the column option and the option value text to search for. For example, if you want to search for **Female** as a value in an Inbox column, you can specify **F** as label for the column option and add **Female** as the option value text. Similarly, you can add more filter options.
    1. Select **[!UICONTROL JSON Path]** to define options using a JSON file path. The following is a sample JSON file to define filter options:
 
       ```JSON
@@ -117,7 +117,7 @@ To configure a Custom Column Options Predicate:
 
       ```
 
-   1. Select **[!UICONTROL CRX Options Path]** to define options using the CRX repository paths. Tap **[!UICONTROL Add Option Paths]** to add multiple paths. The following is a sample to define `Male` and `Female` filter options:
+   1. Select **[!UICONTROL CRX Options Path]** to define options using the CRX repository paths. Select **[!UICONTROL Add Option Paths]** to add multiple paths. The following is a sample to define `Male` and `Female` filter options:
 
       ```JSON          
          <gender jcr:primaryType="sling:OrderedFolder">
@@ -133,7 +133,7 @@ To configure a Custom Column Options Predicate:
 
       ```
 
-1. Specify an optional description for the configuration and tap **[!UICONTROL Done]** to save it.
+1. Specify an optional description for the configuration and select **[!UICONTROL Done]** to save it.
 
 The configuration changes reflect when you open the Filters page. The filter label that you specified in step 4 displays as the label for the Custom Column Option Predicate. [!DNL Experience Manager] applies the search criteria defined in step 6 on the column name specified in step 3 and returns the Inbox items.
 

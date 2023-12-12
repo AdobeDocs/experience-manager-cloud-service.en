@@ -117,7 +117,7 @@ To apply metadata settings to the image folder:
 
 1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 
-1. Select the metadata schema from the available list and click **[!UICONTROL Apply to Folder(s)]**.
+1. Select the metadata schema from the available list and click **[!UICONTROL Apply to Folders]**.
 
 1. Select the destination folder to which [the image is sent from the Adobe Workfront application](#send-image-workfront-assets) and click **[!UICONTROL Apply]**.
 
