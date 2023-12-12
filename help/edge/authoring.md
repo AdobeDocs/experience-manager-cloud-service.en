@@ -47,3 +47,7 @@ Details of the blocks can then be configured in the Properties rail.
 ![Configuring block properties](assets/block-properties.png)
 
 For details on how to author using the Universal Editor, please see the document [Authoring Content with the Universal Editor.](/help/implementing/universal-editor/authoring.md)
+
+### How to get started {#how-to-get-started}
+Please contact your Adobe represenatitive to get access to this feature.
+
