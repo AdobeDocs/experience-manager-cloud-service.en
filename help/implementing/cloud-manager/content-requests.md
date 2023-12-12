@@ -10,7 +10,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 Cloud Service content requests are measured via server-side collection of data. The collection is enabled via CDN log analysis.
 
 >[!NOTE]
->Additionally, for a limited number of Early Adopter customers <!--(hyper link to release notes)-->, client-side collection will also be enabled via RUM (Real User Monitoring) measurement. You can learn more by consulting the documentation in [this article](#real-user-monitoring-for-aem-as-a-cloud-service).
+>Additionally, for a limited number of [Early Adopter customers](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter), client-side collection will also be enabled via RUM (Real User Monitoring) measurement. You can learn more by consulting the documentation in [this article](#real-user-monitoring-for-aem-as-a-cloud-service).
 
 ## Understanding Cloud Service Content Requests {#understaing-cloud-service-content-requests}
 
@@ -18,9 +18,10 @@ Content requests are automatically collected server-side at the edge of Adobe Ex
 
 The Real User Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. This gives customers advanced insights into their page traffic and performance. While this is beneficial for both customers who use either the Adobe managed CDN or a non-Adobe managed CDN. In addition, automatic traffic reporting can now be enabled for customers using a non-Adobe managed CDN, thus removing the need to share any traffic reports with Adobe.
 
-For customers that bring their own CDN on top of AEM as a Cloud Service, this tracking will result in numbers that cannot be used to compare with the licensed content requests. These numbers will have to be measured by the customer at the edge of the outer CDN. For these customers, client-side reporting and associated performance, the [Adobe RUM Data Service](#real-user-monitoring-for-aem-as-a-cloud-service) is the Adobe recommended option. See the release notes <!-- link here--> on information on how to opt-in.
+For customers that bring their own CDN on top of AEM as a Cloud Service, this tracking will result in numbers that cannot be used to compare with the licensed content requests. These numbers will have to be measured by the customer at the edge of the outer CDN. For these customers, client-side reporting and associated performance, the [Adobe RUM Data Service](#real-user-monitoring-for-aem-as-a-cloud-service) is the Adobe recommended option. See the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter) on information on how to opt-in.
 
 ## Server-side Collection {#serverside-collection}
+
 There are rules in place to exclude well-known bots, including well-known services visiting the site regularly to refresh their search index or service.
 
 ### Types of included content requests {#included-content-requests}
