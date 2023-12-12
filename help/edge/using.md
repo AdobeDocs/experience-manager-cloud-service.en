@@ -17,11 +17,11 @@ Edge Delivery Services is decoupled from the content source and can ingest conte
 
 Ingesting from multiple content sources offers maximum flexibility to the user. Adobe offers guidance to help you choose which content sources are the best fit for your project.
 
-![Content source flexibility](assets/content-source-flexiblity.png)
-
 There are cases where the content source is predefined or otherwise not flexible (e.g. the project can not use Sharepoint or Google Drive). But in many cases, the tool is not preordained and choice of tool is not black and white.
 
 Adobe's guiding principle is simplicity. Start with document-based authoring and add complexity when needed. If a tool change is needed, AEM's Edge Delivery Services integration covers content migration.
+
+![Content source flexibility](assets/content-source-flexiblity.png)
 
 ## How AEM Authoring Works with Edge Delivery Services {#how-it-works}
 
