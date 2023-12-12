@@ -1,6 +1,7 @@
 ---
 title: How do I add support for new locales to an adaptive form based on core components?
 description: Learn to add new locales for an Adaptive Form.
+feature: Adaptive Forms, Core Components
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 ---
 # Add a locale for Adaptive Forms based on Core Components {#supporting-new-locales-for-adaptive-forms-localization}
