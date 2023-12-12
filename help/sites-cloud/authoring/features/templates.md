@@ -89,11 +89,11 @@ When creating an editable template you:
 
 ### Creating a Template Folder - Admin {#creating-a-template-folder-admin}
 
-A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).-->
+A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).
 
 ### Creating a New Template - Template Author {#creating-a-new-template-template-author}
 
-1. Open the **Templates Console** (via **Tools -&gt;** **General**) then navigate to the required folder.
+1. Open the **Templates Console** (by way of **Tools &gt;** **General**) then navigate to the required folder.
 
    >[!NOTE]
    >
@@ -137,7 +137,7 @@ A template can have the following properties:
 * Title
   * A title used for identifying the template such as in the **Create Page** wizard.
 * Description
-  * An optional description to provide more information about the template and its use, which can be seen for example in the **Create Page** wizard.
+  * An optional description to provide more information about the template and its use, which can be seen for example, in the **Create Page** wizard.
 
 To view and/or edit the properties:
 
@@ -409,7 +409,7 @@ For example, for an image component you can define the cropping proportions, all
 
 >[!CAUTION]
 >
->Note that in AEM crop ratios are defined as **height/width**. This differs from the conventional definition of width/height and is done for legacy compatibility reasons. The page authoring users will not be aware of any difference provided you define the **Name** clearly as this is what is displayed in the UI.
+>In AEM crop ratios are defined as **height/width**. This differs from the conventional definition of width/height and is done for legacy compatibility reasons. The page authoring users will not be aware of any difference provided you define the **Name** clearly as this is what is displayed in the UI.
 
 >[!NOTE]
 >
@@ -453,7 +453,7 @@ On the **Allowed Components** tab, you define which components are available for
 
 ###### Default Components {#default-components}
 
-On the **Default Components** tab, you define which components are automatically associated with given media types so that when an author drags an asset from the asset browser, AEM knows with which component to associate it. Note that only components with drop zones are available for such configuration.
+On the **Default Components** tab, you define which components are automatically associated with given media types so that when an author drags an asset from the asset browser, AEM knows with which component to associate it. Only components with drop zones are available for such configuration.
 
 Select **Add Mapping** to add an entirely new component and MIME type mapping.
 

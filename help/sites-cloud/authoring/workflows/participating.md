@@ -27,7 +27,7 @@ When you are assigned a work item (for example, **Approve Content**) various ale
   ![Notifications in inbox](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * When you are using the page editor the status bar will show:
-  * The name of the workflow(s) being applied to the page; for example Request for Activation.
+  * The name of the workflow(s) being applied to the page; for example, Request for Activation.
   * Any actions available to the current user for the current step of the workflow; for example, Complete, Delegate, View details.
   * The number of workflows that the page is subject to. You can:
     * use the left/right arrows to navigate through the status information of the various workflows.

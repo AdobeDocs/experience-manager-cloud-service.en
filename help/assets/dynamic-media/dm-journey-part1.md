@@ -176,7 +176,7 @@ Another use case that Dynamic Media solves for is video. Video is complex. It is
 
 Customers come to Dynamic Media with the following issue that they are hoping to solve:
 
-"_We have the video, and we spent a large amount of money creating it. But we shied away from placing it on pages, or delivering it, because from our testing, we cannot guarantee the quality of the video, or if it's really going to play. And ultimately, that affects our brands and potentially our role to even conversion._"
+"_My business has the video, and our department spent a large amount of money creating it, but shied away from placing it on pages, or delivering it. The reason was because from our testing, the quality of the video could not be guaranteed, or even if it was really going to play. And ultimately, that affects our brands and potentially our role to even conversion._"
 
 Dynamic Media's solution is to take that one primary video file, and let Dynamic Media make all the sizes through its transcoding process. Then, pair that with Dynamic Media's intelligent video player. This workflow guarantees that whether you are using that video on your main landing page, or on a category or product detail page, it is going to be consistent throughout and delivered with high quality.
 
