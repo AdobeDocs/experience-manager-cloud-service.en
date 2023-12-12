@@ -1,7 +1,7 @@
 ---
 title: How to design JSON Schema for an Adaptive Form?
 description: Learn to create a JSON schema for an Adaptive Form and create an Adaptive Form based on the schema to produce schema complaint data.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
