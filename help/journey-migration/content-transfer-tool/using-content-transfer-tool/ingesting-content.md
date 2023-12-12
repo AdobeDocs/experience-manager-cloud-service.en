@@ -129,7 +129,7 @@ This message indicates that the Cloud Acceleration Manager was unable to reach t
 * If an [IP Allowlist has been applied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) through Cloud Manager, it blocks Cloud Acceleration Manager from reaching the migration service. An IP address cannot be added for ingestions because its address is dynamic. Currently, the only solution is to disable the IP allowlist during the ingestion and indexing process.
 * There may be other reasons that need investigation. If the ingestion or indexing continues to fail, contact Adobe Customer Care.
 
-### AEM Version Updates and Ingestions
+### AEM Version Updates and Ingestions {#aem-version-updates-and-ingestions}
 
 [AEM Version Updates](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) are automatically applied to environments to keep them up to date with the most recent AEM as a Cloud Service version. If the update is triggered when an ingestion is performed, it can cause unpredictable results including the corruption of the environment.
 
@@ -147,7 +147,7 @@ If "AEM Version Updates" is active (that is, updates are running or are queued t
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Top-up Ingestion Failure Due to Uniqueness Constraint Violation
+### Top-up Ingestion Failure Due to Uniqueness Constraint Violation {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 A common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a conflict in node ids. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
 
@@ -159,7 +159,7 @@ It can also happen if a node on the destination is moved between an ingestion an
 
 This conflict must be resolved manually. Someone familiar with the content must decide which of the two nodes must be deleted, keeping in mind other content that references it. The solution may require that the top-up extraction is done again without the offending node. 
 
-### Top-up Ingestion Failure Due to Unable to Delete Referenced Node
+### Top-up Ingestion Failure Due to Unable to Delete Referenced Node {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 Another common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a version conflict for a particular node on the destination instance. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
 
@@ -171,13 +171,13 @@ The solution may require that the top-up extraction is done again without the of
 
 Best practices indicate that if a **Non-Wipe** ingestion must be run using a migration set that includes versions, it is crucial that content on the destination is modified as little as possible, until the migration journey is complete. Otherwise, these conflicts can occur.
 
-### Ingestion Failure Due to Large Node Property Values
+### Ingestion Failure Due to Large Node Property Values {#ingestion-failure-due-to-large-node-property-values}
 
 Node property values stored in MongoDB cannot exceed 16 MB. If a node value exceeds the supported size, the ingestion fails and the log will contain a `BSONObjectTooLarge` error and specify which node exceeded the maximum. Note that this is a MongoDB restriction.
 
 See the `Node property value in MongoDB` note in [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) for more information and a link to an Oak tool that could help find all the large nodes. Once all nodes with large sizes are remedied, run the extraction and ingestion again.
 
-### Ingestion Rescinded
+### Ingestion Rescinded {#ingestion-rescinded}
 
 An ingestion that was created with a running extraction as its source migration set waits patiently until that extraction succeeds, and at that point starts normally. If the extraction fails or is stopped, the ingestion and its indexing job will not begin but is rescinded. In this case, check the extraction to determine why it failed, remedy the problem and start extracting again. Once the fixed extraction is running, a new ingestion can be scheduled. 
 
