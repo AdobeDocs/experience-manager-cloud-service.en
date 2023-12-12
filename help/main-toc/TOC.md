@@ -537,6 +537,7 @@ user-guide-title: AEM as a Cloud Service
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
   + Best practices{#best-practices}
     + [Search best practices](/help/assets/search-best-practices.md)
+    + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
   + Integration with Adobe Workfront {#integrations}
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
