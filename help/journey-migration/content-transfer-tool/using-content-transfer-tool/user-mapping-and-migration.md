@@ -7,7 +7,7 @@ exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
->title="User Mapping"
+>title="User Migration"
 >abstract="The Content Transfer Tool helps you move users and groups from your existing Adobe Experience Manager (AEM) system to AEM as a Cloud Service. Existing users must be mapped so that they can login via their IMS IDs."
 
 >[!NOTE]
@@ -41,11 +41,11 @@ The following specific cases are logged:
 1. If a user has no email address in the `profile/email` field of their *jcr* node, the user in question may be migrated but is not mapped. This scenario is the case even if the email address is used as a user name for logging in.
 2. If the user is disabled, it is treated the same as other users; it is mapped and migrated as normal, and remains disabled on the cloud instance.
 3. If a principal exists with any of the same uniqueness-constrained data (rep:principalName, rep:authorizableId, jcr:uuid or rep:externalId) on both the source AEM instance and the target AEM Cloud Service instance, the principal in question is not migrated and the previously existing principal on the cloud system remains unchanged.  This is logged in the Principal Migration Report.
-4. If a user is not mapped to IMS via user mapping, the user profile on the cloud AEM system will not be recognized by IMs; in this case, if they log in via IMS a new (duplicate) profile will be created on AEM but it will not contain their previous profile information. The original user profile will exist on the cloud AEM system, but they will not be able to log into it via IMS, only using the traditional AEM method (local login).  For this reason, mapping all users is highly recommended for all author migrations.
+4. If a user is not mapped to IMS via user mapping, the user profile on the cloud AEM system will not be recognized by IMS; in this case, if they log in via IMS a new (duplicate) profile will be created on AEM but it will not contain their previous profile information. The original user profile will exist on the cloud AEM system, but they will not be able to log into it via IMS, only using the traditional AEM method (local login).  For this reason, mapping all users is highly recommended for all author migrations.
 
 ## Additional Considerations {#additional-considerations}
 
-* If the setting **Wipe existing content on Cloud instance before ingestion** is set, already transferred principals on the Cloud Service instance are deleted along with the entire existing repository; a new repository is created into which content is ingested. This process also resets all settings including permissions on the target Cloud Service instance and is true for an admin user added to the **administrators** group. The admin user must be re-added to the **administrators** group to retrieve the access token for CTT/CAM Ingestion.
+* If the setting **Wipe existing content on Cloud instance before ingestion** is set, principals previously transferred to the Cloud Service instance are deleted along with the entire existing repository; a new repository is created into which content is ingested. This process also resets all settings including permissions on the target Cloud Service instance and is true for an admin user added to the **administrators** group. The admin user must be re-added to the **administrators** group to retrieve the access token for CTT/CAM Ingestion.
 * When content top-ups are performed (**Wipe existing content** is unset), if content is not transferred because it has not changed since the previous transfer, users and groups associated with that content are not transferred either. This rule is true even if the users and groups have changed on the source system. This is because users and groups are only migrated along with the content they are associated with.
 * Since groups are not re-migrated on a top-up (non-wipe) ingestion, any principals new to that group on the source system will not be migrated unless they are part of a different group that is being migrated, or in the ACL of different content being migrated.  To migrate these principals afterwards, consider using packages, or delete principals from the target and re-migrate the relevant content (Extract with overwrite and Ingest with wipe).
 * Duplicate email addresses are not permitted in IMS, but they are permitted in AEM.  A user may log into AEM via IMS using their email address, and they will be logged into the user profile referenced by IMS. 
