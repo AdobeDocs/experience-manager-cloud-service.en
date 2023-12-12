@@ -19,6 +19,23 @@ For further details on document-based authoring, please refer to [this document 
 
 ## Universal Editor Authoring {#universal-editor}
 
+When using Edge Delivery Services with AEM as a Cloud Service, the most fundamental fact to understand is that the content you author is persisted in AEM as a Cloud Service.
+
+![How AEM authoring works with Edge Delivery Services](assets/how-aem-edge-works.png)
+
+1. [The AEM authoring environment](/help/sites-cloud/authoring/getting-started/quick-start.md) is used for content management such as creating new pages, Experience Fragments, Content Fragments, etc.
+   * All features of AEM are available such as workflows, MSM, translation, Launches, etc.
+1. [The Universal Editor](/help/implementing/universal-editor/authoring.md) is used to author the content managed in AEM.
+   * The Universal Editor offers a new and modern UI for content authoring.
+   * For authoring, AEM renders the HTML but includes the scripts, styles, icons and other resources from Edge Delivery Services.
+   * Although the Universal Editor is used, all changes are persisted to AEM.
+   * The Universal Editor is not yet at feature-parity with the AEM Page Editor and some AEM features may not be available in the Universal Editor.
+1. Content that you author with the Universal Editor and persist to AEM is published to Edge Delivery Services.
+   * Content remains stored in AEM.
+   * AEM renders semantic HTML that is needed for ingestion.
+   * Content is published to Edge Delivery Services.
+1. [Edge Delivery Services](https://www.aem.live/home) ensure a 100% Lighthouse score.
+
 Blocks are fundamental components of a page delivered by Edge Delivery Services. Authors can choose from default blocks provided as standard by Adobe or from blocks customized for your project by your developers.
 
 The Universal Editor provides a modern and intuitive GUI for authoring your content by dragging-and-dropping blocks.
