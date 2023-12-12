@@ -201,7 +201,7 @@ The representative generates and shares credentials with you. In the next sectio
    
       where:
    
-      **na1** refers to the default database shard. You can modify the value for the database shard. Ensure that  the [!DNL  Adobe Acrobat Sign] Cloud Configurations point to the [correct Shard](https://helpx.adobe.com/sign/using/identify-account-shard.html). You can configure Adobe Sign with multiple shards, but only one at a time. 
+      **na1** refers to the default database shard. You can modify the value for the database shard. Ensure that  the [!DNL  Adobe Acrobat Sign] Cloud Configurations point to the [correct Shard](https://helpx.adobe.com/sign/using/identify-account-shard.html).  
    
       >[!NOTE]
       >
@@ -227,8 +227,12 @@ Now, you can [use add Adobe Acrobat Sign fields in an Adaptive Form](working-wit
 
 ## Configure [!DNL Adobe Acrobat Sign] scheduler to sync the signing status {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
+You can configure scheduler to sync the signing status:
+
+* **In Sign step in AEM Workflow**:
 When you use [!DNL Adobe Acrobat Sign] Workflow step to Sign an Adaptive Form, the form can be passed across signers one after another or can be sent to all the signers simultaneously, depending on the configuration of workflow step. [!DNL Adobe Acrobat Sign] enabled Adaptive Forms are submitted to Experience Manager Forms Server only after all the signers complete the signing process.
 
+* **In Adaptive Form to enable Adobe Sign**:
 When you use the **after every recipient completes signing ceremony** option for **Submit the form**, the scheduler is used to sync the signing status.
 
 By default, the [!DNL Adobe Acrobat Sign] Scheduler services checks (polls) signer response after every 24 hours. You can change the default interval for your environment.
