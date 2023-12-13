@@ -40,7 +40,7 @@ The following specific cases are logged:
 
 1. If a user has no email address in the `profile/email` field of their *jcr* node, the user in question may be migrated but is not mapped. This scenario is the case even if the email address is used as a user name for logging in.
 2. If the user is disabled, it is treated the same as other users; it is mapped and migrated as normal, and remains disabled on the cloud instance.
-3. If a principal exists with any of the same uniqueness-constrained data (rep:principalName, rep:authorizableId, jcr:uuid or rep:externalId) on both the source AEM instance and the target AEM Cloud Service instance, the principal in question is not migrated and the previously existing principal on the cloud system remains unchanged.  This is logged in the Principal Migration Report.
+3. If a principal exists with any of the same uniqueness-constrained data (rep:principalName, rep:authorizableId, jcr:uuid or rep:externalId) on both the source AEM instance and the target AEM Cloud Service instance, the principal in question is not migrated and the previously existing principal on the cloud system remains unchanged. This is logged in the Principal Migration Report.
 4. If a user is not mapped to IMS via user mapping, the user profile on the cloud AEM system will not be recognized by IMS; in this case, if they log in via IMS a new (duplicate) profile will be created on AEM but it will not contain their previous profile information. The original user profile will exist on the cloud AEM system, but they will not be able to log into it via IMS, only using the traditional AEM method (local login).  For this reason, mapping all users is highly recommended for all author migrations.
 
 ## Additional Considerations {#additional-considerations}
