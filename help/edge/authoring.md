@@ -15,7 +15,7 @@ With Edge Delivery Services, authoring is easy, fast, and flexible. You have two
 
 In the case of document-based authoring, you can work with a variety of sources such as Microsoft Word and Google Docs. Documents from these sources become pages on your website. Headings, lists, images, font elements, videos can all be transferred from the initial source into your website. You can add metadata for SEO purposes or use blocks to work with structured content and add functionality.
 
-For further details on document-based authoring, please refer to [this document in the Edge Delivery Services documentation.](/help/edge/developer/authoring.md)
+For further details on document-based authoring, please refer to [this document in the Edge Delivery Services documentation.](/help/edge/docs/authoring.md)
 
 ## Universal Editor Authoring {#universal-editor}
 
