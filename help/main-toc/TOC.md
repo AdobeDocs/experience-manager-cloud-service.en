@@ -749,8 +749,12 @@ user-guide-title: AEM as a Cloud Service
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
-  + [Getting Started with Edge Delivery](/help/edge/overview.md)
+  + [AEM and Edge Delivery Services](/help/edge/overview.md)
   + [Using Edge Delivery](/help/edge/using.md)
+  + [Authoring Content for Edge Delivery](/help/edge/authoring.md)
+  + [Publishing Content for Edge Delivery](/help/edge/publishing.md)
+  + [Developing for Edge Delivery](/help/edge/developing.md)
+  + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
 + Headless {#headless}
   + [What is a Headless CMS?](/help/headless/what-is-headless.md)
   + [Introduction to AEM Headless](/help/headless/introduction.md)
@@ -780,6 +784,7 @@ user-guide-title: AEM as a Cloud Service
     + [Optimizing GraphQL Queries](/help/headless/graphql-api/graphql-optimization.md)
     + [Updating your Content Fragments for optimized GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
     + [Sample GraphQL queries](/help/headless/graphql-api/sample-queries.md)
+    + [Troubleshoot GraphQL queries](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
   + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
   + Security {#security}
     + [Permissions](/help/headless/security/permissions.md)

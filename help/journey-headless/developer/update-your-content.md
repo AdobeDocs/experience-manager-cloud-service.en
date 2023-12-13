@@ -315,6 +315,7 @@ You should continue your AEM headless journey by next reviewing the document [Ho
 
 ## Additional Resources {#additional-resources}
 
+* [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
   * [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
