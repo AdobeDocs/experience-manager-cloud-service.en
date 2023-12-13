@@ -8,7 +8,7 @@ feature: Edge Delivery Services
 
 With Edge Delivery Services, publishing content is seamless regardless of your content source:
 
-* Document-based content - Please see [Publish section](https://www.aem.live/docs/#publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/content/edge-delivery/publishing.html) of the Edge Delivery Services documentation.
+* Document-based content - Please see [Publish section](/help/edge/docs/authoring.md) of the Edge Delivery Services documentation.
 * AEM content - Please see the details below.
 
 ## Publishing Flow from AEM {#publishing-flow}
