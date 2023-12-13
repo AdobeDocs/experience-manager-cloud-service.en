@@ -14,11 +14,11 @@ Cloud Service content requests are measured via server-side collection of data. 
 
 ## Understanding Cloud Service Content Requests {#understaing-cloud-service-content-requests}
 
-Content requests are automatically collected server-side at the edge of Adobe Experience Manager as a Cloud Service, via automated analysis of the log files originating from the AEM as a Cloud Service CDN. This is done by isolating the requests' returning HTML `(text/html)` or JSON `(application /Json)` content from the CDN, and based on several inclusion and exclusion rules detailed below. A content request happens independently from the returned content being served from the CDN caches or the content going back to the origin of the CDN (AEM's dispatchers).
+Content requests are automatically collected server-side at the edge of Adobe Experience Manager as a Cloud Service, via automated analysis of the log files originating from the AEM as a Cloud Service CDN. This is done by isolating the requests returning HTML `(text/html)` or JSON `(application /Json)` content from the CDN, and based on several inclusion and exclusion rules detailed below. A content request occurs independently from the returned content being served from the CDN caches or the content going back to the origin of the CDN (AEM's dispatchers).
 
-The Real User Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. This gives customers advanced insights into their page traffic and performance. While this is beneficial for both customers who use either the Adobe managed CDN or a non-Adobe managed CDN. In addition, automatic traffic reporting can now be enabled for customers using a non-Adobe managed CDN, thus removing the need to share any traffic reports with Adobe.
+The Real User Monitoring (RUM) Data Service , the client-side collection, offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. This gives customers advanced insights into their page traffic and performance. While this is beneficial for both customers who use either the Adobe managed CDN or a non-Adobe managed CDN. In addition, automatic traffic reporting can now be enabled for customers using a non-Adobe managed CDN, thus removing the need to share any traffic reports with Adobe.
 
-For customers that bring their own CDN on top of AEM as a Cloud Service, this tracking will result in numbers that cannot be used to compare with the licensed content requests. These numbers will have to be measured by the customer at the edge of the outer CDN. For these customers, client-side reporting and associated performance, the [Adobe RUM Data Service](#real-user-monitoring-for-aem-as-a-cloud-service) is the Adobe recommended option. See the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter) on information on how to opt-in.
+For customers that bring their own CDN on top of AEM as a Cloud Service, this tracking will result in numbers that cannot be used to compare with the licensed content requests. These numbers will have to be measured by the customer at the edge of the outer CDN. For these customers, client-side reporting and associated performance, the [Adobe RUM Data Service](#real-user-monitoring-for-aem-as-a-cloud-service) is the Adobe recommended option. See the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter) for the information on how to opt-in.
 
 ## Server-side Collection {#serverside-collection}
 
@@ -131,7 +131,7 @@ Real User Monitoring (RUM) is designed to prevent the collection of personally i
 * If you wish to be a part of our Early Adopter program, please send an email to `aemcs-rum-adopter@adobe.com`, along with your domain name for the production, stage and dev environment from your email address associated with your Adobe ID. Adobe's product team will then enable the Real User Monitoring (RUM) Data Service for you.
 * Once this is completed, Adobe's product team will create a Customer collaboration Channel.
 * Adobe's Product team will reach out to you to provide you with the domain key and data dashboard URL where you can view the Page Views and [The Core Web Vitals(CWV)](https://web.dev/vitals/) metrics collected by the client-side Real User Monitoring (RUM) collection.
-* You will then be guided on how to use the domain key to access the data dashboard link and view the metrics.
+* You will then be guided on how to use the domain key to access the data dashboard url and view the metrics.
 
 ### How Real User Monitoring (RUM) Data is Being Used {#how-rum-data-is-being-used}
 
