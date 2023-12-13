@@ -537,6 +537,7 @@ user-guide-title: AEM as a Cloud Service
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
   + Best practices{#best-practices}
     + [Search best practices](/help/assets/search-best-practices.md)
+    + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
   + Integration with Adobe Workfront {#integrations}
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
@@ -748,8 +749,12 @@ user-guide-title: AEM as a Cloud Service
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
-  + [Getting Started with Edge Delivery](/help/edge/overview.md)
+  + [AEM and Edge Delivery Services](/help/edge/overview.md)
   + [Using Edge Delivery](/help/edge/using.md)
+  + [Authoring Content for Edge Delivery](/help/edge/authoring.md)
+  + [Publishing Content for Edge Delivery](/help/edge/publishing.md)
+  + [Developing for Edge Delivery](/help/edge/developing.md)
+  + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
 + Headless {#headless}
   + [What is a Headless CMS?](/help/headless/what-is-headless.md)
   + [Introduction to AEM Headless](/help/headless/introduction.md)
@@ -779,6 +784,7 @@ user-guide-title: AEM as a Cloud Service
     + [Optimizing GraphQL Queries](/help/headless/graphql-api/graphql-optimization.md)
     + [Updating your Content Fragments for optimized GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
     + [Sample GraphQL queries](/help/headless/graphql-api/sample-queries.md)
+    + [Troubleshoot GraphQL queries](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
   + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
   + Security {#security}
     + [Permissions](/help/headless/security/permissions.md)
@@ -1041,7 +1047,7 @@ user-guide-title: AEM as a Cloud Service
    + [Self-Service Restore](/help/operations/restore.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
-  + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)
+  + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)  
 + Compliance {#compliance}
   + [Compliance in AEM as a Cloud Service](/help/compliance/home.md)
   + Data Privacy and Protection Readiness {#data-privacy}
