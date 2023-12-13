@@ -1,6 +1,7 @@
 ---
 title: What are the layout capabilities of Adaptive Forms?
 description: Layout and appearances of Adaptive Forms on various devices are governed by the layout settings. Understand the various layouts and how to apply them.
+feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 ---
 # Layout capabilities of Adaptive Forms {#layout-capabilities-of-adaptive-forms}
@@ -37,7 +38,7 @@ To change the layout of an Adaptive Form, use the Authoring Mode in [!DNL Experi
 
 A form author can associate a layout with each panel of an Adaptive Form, including the root panel.
 
-The Panel layouts are available at `/libs/fd/af/layouts/panel` location. Tap the panel and select ![cmppr1](assets/configure-icon.svg) to view the panel properties.
+The Panel layouts are available at `/libs/fd/af/layouts/panel` location. Select the panel and select ![cmppr1](assets/configure-icon.svg) to view the panel properties.
 
 ![List of panel layouts for root panel of an Adaptive Form](assets/layouts.png)
 

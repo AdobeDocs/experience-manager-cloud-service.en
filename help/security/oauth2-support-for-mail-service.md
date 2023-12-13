@@ -26,7 +26,7 @@ For more information on the AEM as a Cloud Service Mail Service, see [Sending Em
 
    >[!NOTE]
    >
-   >Permissions configuration may evolve over time. Please work with Microsoft if these do not work as expected.
+   >Permissions configuration may evolve over time. Work with Microsoft if these do not work as expected.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -133,7 +133,7 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
 
    >[!NOTE]
    >
-   >Scopes may evolve over time. Please work with Microsoft if these do not work as expected.
+   >Scopes may evolve over time. Work with Microsoft if these do not work as expected.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`

@@ -71,7 +71,7 @@ In the **Lighthouse scores** section, you find a trended view of the various sco
 
 ![Lighthouse scores graph](assets/lighthouse-scores.png)
 
-Note that each point on the graph is the average across all deployments in the month of interest.
+Each point on the graph is the average across all deployments in the month of interest.
 
 To navigate back to the production pipeline execution page, simply select the back arrow on your browser.
 

@@ -39,7 +39,7 @@ See these sample queries for illustrations of create queries, together with samp
 >
 >You can access the query editor from either: 
 >
->* **Tools** -> **General** -> **GraphQL Query Editor**
+>* **Tools** > **General** > **GraphQL Query Editor**
 >* directly; for example, `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]

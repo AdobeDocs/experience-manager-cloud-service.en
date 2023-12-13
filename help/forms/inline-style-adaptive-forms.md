@@ -1,7 +1,7 @@
 ---
 title: How to Apply Inline Styles to Adaptive Form Components?
 description: Learn to apply custom styles on an Adaptive Form, you can also apply inline CSS properties on individual components of an Adaptive Form.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
@@ -21,8 +21,8 @@ You can define the overall appearance and style of an Adaptive Form by specifyin
 
 To add inline styles to a component:
 
-1. Open your form in the form editor, and change the mode to styling mode. To change the mode to styling mode, in the page toolbar, tap ![canvas-drop-down](assets/Smock_ChevronDown.svg) &gt; **[!UICONTROL Style]**.
-1. Select a component in the page, and tap the edit button ![edit-button](assets/edit.svg). Styling properties open in the sidebar.
+1. Open your form in the form editor, and change the mode to styling mode. To change the mode to styling mode, in the page toolbar, select ![canvas-drop-down](assets/Smock_ChevronDown.svg) &gt; **[!UICONTROL Style]**.
+1. Select a component in the page, and select the edit button ![edit-button](assets/edit.svg). Styling properties open in the sidebar.
 
    You can also select components from the form hierarchy tree in the sidebar. Form hierarchy tree is available as Form Objects in the sidebar.
 
@@ -40,7 +40,7 @@ To add inline styles to a component:
     * [!UICONTROL Advanced] (Lets you write custom CSS for the component)
 
 1. Similarly, you can apply styles for other parts of a component such as [!UICONTROL Widget], [!UICONTROL Caption], and [!UICONTROL Help].
-1. Tap **[!UICONTROL Done]** to confirm the changes or **[!UICONTROL Cancel]** to discard the changes.
+1. Select **[!UICONTROL Done]** to confirm the changes or **[!UICONTROL Cancel]** to discard the changes.
 
 ## Example: inline styles for a field component {#example-inline-styles-for-a-field-component}
 
@@ -105,9 +105,9 @@ Following the steps above, you can select and style other components, such as pa
 
 ## Copy and paste styles {#copy-paste-styles}
 
-You can also copy and paste a style from one component to another component in an Adaptive Form. In the **[!UICONTROL Style]** mode, tap the component and tap the Copy icon ![Copy](assets/property-copy-icon.svg).
+You can also copy and paste a style from one component to another component in an Adaptive Form. In the **[!UICONTROL Style]** mode, select the component and select the Copy icon ![Copy](assets/property-copy-icon.svg).
 
-Tap the other component of the same type and tap the Paste icon ![Copy](assets/Smock_Paste_18_N.svg) to paste the copied style. You can also tap the Clear Style icon ![Copy](assets/clear-style-icon.svg) to clear the applied style.
+Select the other component of the same type and select the Paste icon ![Copy](assets/Smock_Paste_18_N.svg) to paste the copied style. You can also select the Clear Style icon ![Copy](assets/clear-style-icon.svg) to clear the applied style.
 
 ## Set styles for different states of a component {#set-styles-for-states}
 
@@ -115,15 +115,15 @@ You can set styles for different states of a component type. The different state
 
 To define styling for a state of a component:
 
-1. In the **[!UICONTROL Style]** mode, tap the component and tap the Edit icon ![Edit](assets/Smock_Edit_18_N.svg).
+1. In the **[!UICONTROL Style]** mode, select the component and select the Edit icon ![Edit](assets/Smock_Edit_18_N.svg).
 
 1. Select the state for the component using the **[!UICONTROL State]** drop-down list.
 
    ![Select state](assets/select-state.png)
 
-1. Define the styling for the selected state of the component and tap ![Save](assets/save_icon.svg) to save the properties.
+1. Define the styling for the selected state of the component and select ![Save](assets/save_icon.svg) to save the properties.
 
-You can also simulate the success and error states. Tap the Expand icon to view the **[!UICONTROL Simulate Success]** and **[!UICONTROL Simulate Error]** options.
+You can also simulate the success and error states. Select the Expand icon to view the **[!UICONTROL Simulate Success]** and **[!UICONTROL Simulate Error]** options.
 
 ![Simulate states](assets/simulate-states.png)
 

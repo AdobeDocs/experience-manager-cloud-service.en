@@ -4,8 +4,8 @@ description: AEM Forms provide easy-to-use yet powerful interface for authoring 
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+feature: Adaptive Forms, Foundation Components
 docset: aem65
-exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 ---
 # Adaptive Forms editor {#introduction-to-authoring-adaptive-forms}
 
@@ -90,7 +90,7 @@ The sidebar comprises the following browsers:
 
   Lets you edit the properties of a component. Properties change according to a component. To see properties of the Adaptive Form container:
 
-  Select a component, then tap ![field-level](assets/Smock_SelectContainer_18_N.svg) &gt; **[!UICONTROL Adaptive Form Container]**, and then tap ![properties](assets/Smock_Wrench_18_N.svg).
+  Select a component, then select ![field-level](assets/Smock_SelectContainer_18_N.svg) &gt; **[!UICONTROL Adaptive Form Container]**, and then select ![properties](assets/Smock_Wrench_18_N.svg).
 
 * **Assets browser**
 
@@ -301,7 +301,7 @@ The page toolbar on the top provides options that let you preview the form, chan
 
 When you select a component, you see a toolbar that lets you work it. You get options to cut, paste, move, and specify properties of the components. Your options are:
 
-A.**Configure**: When you tap **[!UICONTROL Configure]**, component properties are visible in the sidebar. Configuring these properties let you customize the data capturing experience. You can change the element name of the component, specify the label text in the Title field of the component. Element name lets you capture values users enter using the component. In the component properties, you specify the behavior of the component, and manage user input. Configure properties in the sidebar to capture user data and use it for further processing. Properties for Adaptive Form container let you specify Client libraries, Layouts, Themes, Document of Record settings, save settings, submission settings, and metadata settings.
+A.**Configure**: When you select **[!UICONTROL Configure]**, component properties are visible in the sidebar. Configuring these properties let you customize the data capturing experience. You can change the element name of the component, specify the label text in the Title field of the component. Element name lets you capture values users enter using the component. In the component properties, you specify the behavior of the component, and manage user input. Configure properties in the sidebar to capture user data and use it for further processing. Properties for Adaptive Form container let you specify Client libraries, Layouts, Themes, Document of Record settings, save settings, submission settings, and metadata settings.
 
 B.**Copy**: You can use the copy option to copy a component and paste it in other places in the form. When you paste a component, the pasted component gets a new element name but retains the properties of the copied component.
 
@@ -319,7 +319,7 @@ H. **Group**: Lets you select multiple components if you want to cut, copy, or p
 
 I. **Parent**: Lets you select the parent of a component. For example, a text field lies within a sub-section, which resides in a section. The section resides in the guide root panel, and the Adaptive Form container is the parent of a guide root panel. For a component, you can see all the options with the hierarchy sorted bottoms-up.
 
-For example, if you tap **[!UICONTROL Parent]** for a text box, you can see:
+For example, if you select **[!UICONTROL Parent]** for a text box, you can see:
 
 * Sub-section
 * Section
