@@ -227,9 +227,12 @@ Now, you can [use add Adobe Acrobat Sign fields in an Adaptive Form](working-wit
 
 ## Configure [!DNL Adobe Acrobat Sign] scheduler to sync the signing status {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
-You can submit an Adaptive Form to Experience Manager Forms Server only after all the signers have signed the form. If you use the [Sign Step in an AEM Workflow](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step) to sign a document, the sign step waits for all the signers to sign the document, before proceeding to the next step of the workflow.
+AEM Forms as a Cloud Service, provides a scheduler service that checks the status of signers at defined intervals. The scenarios in which you configure the scheduler service: 
 
-AEM Forms as a Cloud Service, provides a scheduler service that checks the status of signers at defined intervals. By default, the [!DNL Adobe Acrobat Sign] Scheduler services checks (polls) signer response after every 24 hours. You can change the default interval for your environment.
+* If you use [Submit the form (after every recipient completes signing ceremony)](/help/forms/working-with-adobe-sign.md#select-adobe-sign-cloud-service-and-signing-order) to sign a document, the form is submitted only after all signers have signed the form.
+* If you use the [Sign Step in an AEM Workflow](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step) to sign a document, the sign step waits for all the signers to sign the document, before proceeding to the next step of the workflow.
+
+By default, the [!DNL Adobe Acrobat Sign] Scheduler services checks (polls) signer response after every 24 hours. You can change the default interval for your environment.
 
 To change the default interval, specify a [cron expression](https://en.wikipedia.org/wiki/Cron#CRON_expression) for the **sign.status.exp** property of the **Adobe Acrobat Sign Configuration Service** configuration.
 
