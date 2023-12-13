@@ -24,6 +24,10 @@ Learn about support for Content Fragments in the Assets HTTP API, an important p
 >
 >The current implementation of the Assets HTTP API is based on the [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) architectural style.
 
+>[!NOTE]
+>
+>For the latest information about Experience Manager APIs, please also visit [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+
 The [Assets REST API](/help/assets/mac-api-assets.md) allows developers for Adobe Experience Manager as a Cloud Service to access content (stored in AEM) directly over the HTTP API, by way of CRUD (Create, Read, Update, Delete) operations.
 
 The API lets you operate Adobe Experience Manager as a Cloud Service as a headless CMS (Content Management System) by providing Content Services to a JavaScript front-end application. Or any other application that can execute HTTP requests and handle JSON responses.
