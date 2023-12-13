@@ -48,8 +48,4 @@ This is not something specific to GraphQL. See the KB article [405 Error Not All
 
 If the GraphQL endpoint returns the `404` error on publish for `POST` requests, it means the GraphQL queries are blocked at the dispatcher level and the endpoint needs to be manually enabled.
 
-Keep in mind that direct `POST` GraphQL queries on the publish tier for production and stage environments are blocked by default at the dispatcher level, generating a `404` response. 
-
-The CDN might transform the `404` coming from the dispatcher into a `301`.
-
 This should not be the case by default, but a custom dispatcher configuration might cause this issue. See more under [Dispatcher - Endpoint configuration with AEM Headless](/help/headless/deployment/dispatcher.md).
