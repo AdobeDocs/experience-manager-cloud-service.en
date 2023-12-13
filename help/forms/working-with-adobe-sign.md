@@ -2,7 +2,7 @@
 title: How can we use Adobe Sign in an Adaptive Form?
 description: Use Adobe Sign in an Adaptive Form to allow form recipients to e-sign a form from device and place of their choice.
 topic-tags: develop
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
@@ -154,7 +154,7 @@ A document can also have multiple recipients. For example, a credit-card applica
 
 To select a Cloud Service and order of signing:
 
-![Cloud-service](assets/cloud-service.png)
+![Cloud-service](/help/forms/assets/adobe-sign-cloud-service.png)
 
 1. In the Content browser, select **[!UICONTROL Form Container]**, and select the **[!UICONTROL Configure]** ![configure](assets/Smock_Wrench_18_N.svg) icon. It opens properties browser and displays Adaptive Form container properties.
 1. In the properties browser, expand the **[!UICONTROL Electronic Signature]** accordion, and select the **[!UICONTROL Enable Adobe Sign]** option. It enables [!DNL Adobe Sign] for an Adaptive Form.
@@ -164,6 +164,10 @@ To select a Cloud Service and order of signing:
 
    The drop-down lists the Cloud Services that exist in the `global` folder in Tools > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. In addition, the drop-down list also lists the Cloud Services that exist in the folder that you select in the **[!UICONTROL Configuration Container]** field when you create an Adaptive Form.
 
+1. Select the option to configure the submit action using **[!UICONTROL Submit the form]**. You can select either of the two options from the following:
+   * **Submit the form (and send the agreement for signing)**: This option submits the form immediately and then send the form for signing to the recipients.
+   * **Submit the form (after every recipient completes signing ceremony)**: This option submits Adaptive Forms only after all the signers complete the signing process. You can configure the interval to check the signing status for all the signers. For details, see  [Configure [!DNL Adobe Acrobat Sign] scheduler](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status). 
+
 1. Select the signing order from the **[!UICONTROL Recipients can complete]** dialog box. The recipients can sign an Adaptive Form **[!UICONTROL Sequentially]** - one after another recipient, or **[!UICONTROL Simultaneously]** - in any order.
 
    In sequential order, one recipient receives the Adobe Sign agreement at a time. After the recipient completes the assigned action, the agreement is sent to the next recipient, and so on.
@@ -171,6 +175,10 @@ To select a Cloud Service and order of signing:
    In simultaneous order, all the recipients receive the Adobe Sign agreement and can act in parallel to each other.
 
 1. Use the Agreement Id Field to associate a bindref to Agreement ID (agreementId). It adds Agreement ID to afBoundData section of submit data for schema-based forms. The Agreement ID is also added to afSubmissionInfo section in the submitted data for all Adobe Sign-enabled forms. You can use the agreement ID for tracking agreement status using custom code (requires custom implementation).
+
+   >[!NOTE]
+   >
+   > If an Adaptive Form is created using a Form Data Model, the Agreement ID field becomes visible in the dialog box.
 
 1. [Add recipients to an Adaptive Form](working-with-adobe-sign.md#addsignerstoanadaptiveform) and select the Done ![Save](assets/save_icon.svg) icon to save the changes.
 
