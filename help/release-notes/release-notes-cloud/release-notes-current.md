@@ -36,7 +36,7 @@ Have a look at the November 2023 Release Overview video for a summary of the fea
 
 ### Early adopter program {#sites-early-adopter}
 
-**You can leverage the [Real User Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md)** to enable client-side collection for AEM as a Cloud Service. 
+**You can leverage the [Real User Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** to enable client-side collection for AEM as a Cloud Service. 
 
 Real User Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. While this is beneficial for customers who use either Adobe-managed CDN or non-Adobe-managed CDN. Additionally, for customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
 
