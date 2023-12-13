@@ -33,5 +33,6 @@ Phase two completes the process by eliminating the technology overlap: AEM Core 
 
 In this phase, the AEM Page Editor is replaced with the Universal Editor. Because the Universal Editor can directly work with blocks, the AEM Core Components and converter will no longer be needed.
 
-### How to get started {#how-to-get-started}
-Please contact your Adobe represenatitive to get access to this feature.
+## How to get started {#how-to-get-started}
+
+Please contact your Adobe representative to get access to this feature.

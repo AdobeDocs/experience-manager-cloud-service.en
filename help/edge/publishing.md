@@ -25,5 +25,6 @@ The flow of information when publishing is as follows. Once the author starts pu
 1. Edge Delivery pulls and ingest semantic HTML from AEM Author.
 1. AEM is updated with publish status.
 
-### How to get started {#how-to-get-started}
-Please contact your Adobe represenatitive to get access to this feature.
+## How to get started {#how-to-get-started}
+
+Please contact your Adobe representative to get access to this feature.
