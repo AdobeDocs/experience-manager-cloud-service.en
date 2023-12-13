@@ -48,6 +48,6 @@ Details of the blocks can then be configured in the Properties rail.
 
 For details on how to author using the Universal Editor, please see the document [Authoring Content with the Universal Editor.](/help/implementing/universal-editor/authoring.md)
 
-### How to get started {#how-to-get-started}
-Please contact your Adobe represenatitive to get access to this feature.
+## How to get started {#how-to-get-started}
 
+Please contact your Adobe representative to get access to this feature.
