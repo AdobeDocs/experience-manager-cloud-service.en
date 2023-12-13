@@ -75,18 +75,6 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
 ### New features in [!DNL Experience Manager Forms] {#forms-features}
 
-* **[Checkbox component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: Adaptive Forms based on Core Components can now include a checkbox component. It allows users to make binary choices, selecting or deselecting a particular option. It typically appears as a small box that can be clicked or tapped to toggle between two states: checked and unchecked. The checkbox is a common form element used to present a yes/no or true/false choice. 
-
-* **[Terms and Conditions component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Adaptive Forms based on Core Components can now include a Terms and Conditions component. It allows forms authors to introduce a specific section within the form where users are presented with the terms, conditions, or legal agreements associated with the use of a service, product, or platform. This component is designed to inform users about the rules, regulations, and obligations they are agreeing to by submitting the form. 
-
-  ![Checkbox, Terms and Conditions, and Vertical tab components](/help/forms/assets/forms-components.png)
-
-* **[Vertical tabs component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Adaptive Forms based on Core Components can now organize form content into a vertical list of tabs, providing a structured and navigable layout. The use of vertical tabs in a form can enhance the overall user experience by simplifying navigation and improving the organization of form content, especially in situations where a form contains multiple sections or complex information. 
-
-
-
-### New features in [!DNL Forms] prerelease {#prerelease-features-forms}
-
 * **[Connect an Adaptive Forms with Microsoft&reg; SharePoint List](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms provides an OOTB integration to submit forms data directly to SharePoint List, letting you use SharePoint's Lists capabilities. You can configure Microsoft SharePoint List as a datasource for a Form Data Model and use the **Submit using Form Data Model** submit action to connect an Adaptive Form with SharePoint List. 
 
 <!-- 
