@@ -201,7 +201,7 @@ The representative generates and shares credentials with you. In the next sectio
    
       where:
    
-      **na1** refers to the default database shard. You can modify the value for the database shard. Ensure that  the [!DNL  Adobe Acrobat Sign] Cloud Configurations point to the [correct Shard](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+      **na1** refers to the default database shard. You can modify the value for the database shard. Ensure that  the [!DNL  Adobe Acrobat Sign] Cloud Configurations point to the [correct Shard](https://helpx.adobe.com/sign/using/identify-account-shard.html).  
    
       >[!NOTE]
       >
@@ -225,9 +225,12 @@ The representative generates and shares credentials with you. In the next sectio
 
 Now, you can [use add Adobe Acrobat Sign fields in an Adaptive Form](working-with-adobe-sign.md) or [AEM Workflow](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Ensure that you add the configuration container used for the Cloud Service configuration to all the Adaptive Forms being enabled for [!DNL Adobe Acrobat Sign]. You can specify a configuration container from the  properties of an Adaptive Form.
 
-## (For AEM Workflows only) Configure [!DNL Adobe Acrobat Sign] scheduler to sync the signing status {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
+## Configure [!DNL Adobe Acrobat Sign] scheduler to sync the signing status {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
-When you use [!DNL Adobe Acrobat Sign] Workflow step to Sign an Adaptive Form, the form can be passed across signers one after another or can be sent to all the signers simultaneously, depending on the configuration of workflow step. [!DNL Adobe Acrobat Sign] enabled Adaptive Forms are submitted to Experience Manager Forms Server only after all the signers complete the signing process.
+AEM Forms as a Cloud Service, provides a scheduler service that checks the status of signers at defined intervals. The scenarios in which you configure the scheduler service: 
+
+* If you use [Submit the form (after every recipient completes signing ceremony)](/help/forms/working-with-adobe-sign.md#select-adobe-sign-cloud-service-and-signing-order) to sign a document, the form is submitted only after all signers have signed the form.
+* If you use the [Sign Step in an AEM Workflow](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step) to sign a document, the sign step waits for all the signers to sign the document, before proceeding to the next step of the workflow.
 
 By default, the [!DNL Adobe Acrobat Sign] Scheduler services checks (polls) signer response after every 24 hours. You can change the default interval for your environment.
 
