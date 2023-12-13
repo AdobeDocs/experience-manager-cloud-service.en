@@ -166,7 +166,7 @@ To select a Cloud Service and order of signing:
 
 1. Select the option to configure the submit action using **[!UICONTROL Submit the form]**. You can select either of the two options from the following:
    * **Submit the form (and send the agreement for signing)**: This option submits the form immediately and then send the form for signing to the recipients.
-   * **Submit the form (after every recipient completes signing ceremony)**: This option submits Adaptive Forms to Experience Manager Forms Server only after all the signers complete the signing process. You can configure the interval to check the signing status for all the signers. For details, see  [Configure [!DNL Adobe Acrobat Sign] scheduler](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status). 
+   * **Submit the form (after every recipient completes signing ceremony)**: This option submits Adaptive Forms only after all the signers complete the signing process. You can configure the interval to check the signing status for all the signers. For details, see  [Configure [!DNL Adobe Acrobat Sign] scheduler](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status). 
 
 1. Select the signing order from the **[!UICONTROL Recipients can complete]** dialog box. The recipients can sign an Adaptive Form **[!UICONTROL Sequentially]** - one after another recipient, or **[!UICONTROL Simultaneously]** - in any order.
 
