@@ -43,3 +43,8 @@ The business logic and backend communication with Adobe Commerce for the AEM CIF
 >The [Customizing AEM CIF Core Components](../customizing/customize-cif-components.md) page has a detailed example and best practice on how to customize CIF Core Components.
 
 Within projects, AEM CIF Core Components and custom project components can easily retrieve the configured client for an Adobe Commerce store associated with an AEM page via Sling Context-Aware configuration.
+
+## Search {#search}
+
+CIF provides out-of-the-box a [Search Core Component](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) that is a server-side rendered search experience based on [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/). Commerce customers have the option to use [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) instead. Follow this [link](/help/commerce-cloud/integrating/live-search-plp.md) to learn more about the CIF - Live Search integration.
+

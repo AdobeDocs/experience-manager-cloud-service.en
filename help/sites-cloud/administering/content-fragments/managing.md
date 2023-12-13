@@ -217,10 +217,10 @@ To create a content fragment:
 
 1. The **New Content Fragment** dialog opens, from here you can specify the:
 
-   * **Location** - this will be auto-completed with the current location, but you can select a different location if necessary
-   * **Content Fragment Model** - select the model to be used as a basis of the fragment from the drop down list
+   * **Location** - Auto-completed with the current location, but you can select a different location if necessary.
+   * **Content Fragment Model** - Select the model to be used as a basis of the fragment from the drop-down list.
    * **Title**
-   * **Name** - this will be auto-completed based on the **Title**, but you can edit it if necessary
+   * **Name** - Auto-completed based on the **Title**, but you can edit it, if necessary.
    * **Description** 
 
    ![New Content Fragment dialog](assets/cf-managing-new-cf-dialog.png)

@@ -157,7 +157,7 @@ The response will contain paging information as part of the `properties` section
 
 Folders act as containers for assets and other folders. They reflect the structure of the AEM content repository.
 
-The Assets REST API exposes access to the properties of a folder; for example its name, title, and so on Assets are exposed as child entities of folders, and sub-folders.
+The Assets REST API exposes access to the properties of a folder; for example, its name, title, and so on Assets are exposed as child entities of folders, and sub-folders.
 
 >[!NOTE]
 >
@@ -315,6 +315,7 @@ You should continue your AEM headless journey by next reviewing the document [Ho
 
 ## Additional Resources {#additional-resources}
 
+* [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
   * [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)

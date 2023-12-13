@@ -62,7 +62,7 @@ Experience Fragments should be used:
   * Embedding content in third-party touchpoints.
 * If you have an Experience with different variations or renditions.
   * Channel or context-specific variations.
-  * Experiences that make sense to group; for example a campaign with different experiences across channels.
+  * Experiences that make sense to group; for example, a campaign with different experiences across channels.
 * When you use Omnichannel Commerce.
   * Making touchpoints transactional.
 

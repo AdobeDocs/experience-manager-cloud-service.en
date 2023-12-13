@@ -105,7 +105,7 @@ The **Restore Activity** list shows the status of the ten most recent restore re
 
 ![Restore activity](assets/backup-activity.png)
 
-By clicking on the information icon for a backup you can download logs for that backup as well as inspect the code details including the differences between the snapshot and data at the moment the restore was initiated.
+By clicking on the information icon for a backup, you can download logs for that backup and inspect the code details including the differences between the snapshot and data at the moment the restore was initiated.
 
 ## Offsite Backup {#offsite-backup}
 

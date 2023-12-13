@@ -35,7 +35,7 @@ The initiator of such actions can check their status in a new UI at `/mnt/overla
 
 >[!NOTE]
 >
->There is no change required by the user of the system to make use of this new feature. It is noted here simply as a change in behavior from previous on-premise versions of AEM.
+>There is no change required by the user of the system to use this new feature. It is noted here simply as a change in behavior from previous on-premise versions of AEM.
 
 ## New Reference Site and Tutorial {#new-reference-site-and-tutorial}
 

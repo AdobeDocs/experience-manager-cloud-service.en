@@ -1,7 +1,7 @@
 ---
 title: How can we improve the performance of large forms with lazy loading?
 description: Learn about how to improve performance of large forms with lazy loading. Lazy loading significantly improves the performance of large and complex Adaptive Forms by deferring initialization and loading of form fragments until they are visible.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
@@ -46,8 +46,8 @@ Before you configure lazy loading of fragments in your Adaptive Form, it is impo
 Perform the following steps to enable lazy loading on an Adaptive Form Fragment:
 
 1. Open the Adaptive Form in authoring mode that contains the fragment you want to enable for lazy loading.
-1. Select the Adaptive Form Fragment and tap ![configure](assets/configure-icon.svg).
-1. In the sidebar, enable **[!UICONTROL Load fragment lazily]** and tap **Done**.
+1. Select the Adaptive Form Fragment and select ![configure](assets/configure-icon.svg).
+1. In the sidebar, enable **[!UICONTROL Load fragment lazily]** and select **Done**.
 
    ![Enable lazy loading for the Adaptive Form Fragment](assets/lazy-loading-fragment.png)
 
@@ -56,7 +56,7 @@ Perform the following steps to enable lazy loading on an Adaptive Form Fragment:
 You can mark the values of objects in the lazily loaded fragment as global so that they are available for use in scripts when the containing fragment is not loaded. Do the following:
 
 1. Open the Adaptive Form Fragment in authoring mode.
-1. Tap the field whose value you want to mark as global, and then tap ![configure](assets/configure-icon.svg).
+1. Select the field whose value you want to mark as global, and then select ![configure](assets/configure-icon.svg).
 1. In the sidebar, enable **[!UICONTROL Use value during lazy loading]**.
 
    ![Lazy loading field in sidebar](assets/enable-lazy-loading.png)

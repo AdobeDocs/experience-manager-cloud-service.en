@@ -80,7 +80,7 @@ When performing the production migration you should avoid running the Content Tr
 
 **Optimizing the load on your AEM source while performing the content migration**
 
-Remember, the load on the AEM source is greater during the extraction phase. You should be aware that:
+Remember, the load on the AEM source is greater during the extraction phase. Be aware of the following:
 
 * The Content Transfer Tool is an external Java process that uses a JVM Heap of 4 GB
 * The non-AzCopy version downloads binaries, stores them on a temporary space on the source AEM author, consuming disk I/O, then uploads into the Azure container which consumes network bandwidth

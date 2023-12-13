@@ -1,6 +1,7 @@
 ---
 title: How can we create an Adaptive Form template?
 description: Create Adaptive Form templates to define the basic structure and initial content using the Template Editor.
+feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 ---
 # Create an Adaptive Form template {#adaptive-form-templates}
@@ -32,13 +33,13 @@ Experience Manager provides a global folder to organize templates. However, it i
 
 After you have created a folder, open the folder and perform the following steps to create a template:
 
-1. Tap **[!UICONTROL Create]** inside the folder you have created.
-1. In the Pick a Template Type section, select **[!UICONTROL Adaptive Form template]** and tap **[!UICONTROL Next]**.
+1. Select **[!UICONTROL Create]** inside the folder you have created.
+1. In the Pick a Template Type section, select **[!UICONTROL Adaptive Form template]** and select **[!UICONTROL Next]**.
 
-1. In the Template Details section, provide a Template Title and tap **[!UICONTROL Create]**.
+1. In the Template Details section, provide a Template Title and select **[!UICONTROL Create]**.
    You can also provide a description.
 
-1. Tap **[!UICONTROL Done]** to return to the console, or tap **[!UICONTROL Open]** to open the template in the editor.
+1. Select **[!UICONTROL Done]** to return to the console, or select **[!UICONTROL Open]** to open the template in the editor.
 
 ### Template editor UI {#template-editor-ui}
 
@@ -99,7 +100,7 @@ For example, you add the header component in the template. When you select the c
 
 When the Initial Content option is selected, the Adaptive Form Container of the template opens like an Adaptive Form for editing. Like authoring an Adaptive Form, you can specify initial settings, such as selecting a theme and Submit Actions.
 
-Form authors use it as a base to create a form. Content flow structure is specified in the Initial Content layer of the template. To switch to editing initial content of the form template, before Preview in the page toolbar, tap ![canvas-drop-down](assets/canvas-drop-down.png) **&gt;** **[!UICONTROL Initial Content]**.
+Form authors use it as a base to create a form. Content flow structure is specified in the Initial Content layer of the template. To switch to editing initial content of the form template, before Preview in the page toolbar, select ![canvas-drop-down](assets/canvas-drop-down.png) **&gt;** **[!UICONTROL Initial Content]**.
 
 
 In the Initial Content layer, you create the Adaptive Form template that your authors use as a base. Authoring a template is similar to authoring a form, you use options available in the Sidebar. Sidebar provides content, properties, assets, and components browsers.
@@ -126,7 +127,7 @@ Change the layer from Structure to Initial Content, and start adding content to 
 * You can drag-drop the panel component from the components browser in the sidebar.
 * You can add child panel of the `guideRootPanel` from the component toolbar.
 
-To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and tap ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, tap content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Tap ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and tap **[!UICONTROL Done]**. The tabbed template structure is applied.
+To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and select ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, select content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Select ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and select **[!UICONTROL Done]**. The tabbed template structure is applied.
 
 #### Adding content in tabs {#adding-content-in-tabs}
 
@@ -145,7 +146,7 @@ When you create a template, it is added as a draft. Enable the template to use i
 1. Navigate to **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Tools]** &gt; **[!UICONTROL Templates]**, and open the folder in which you have created the template.
 
 1. The template you have created is marked as Draft.
-1. Select the template and tap **[!UICONTROL Enable]** in the toolbar.
+1. Select the template and select **[!UICONTROL Enable]** in the toolbar.
    When you create an Adaptive Form, you can see the template listed when you are asked to choose a template.
 
 ## Importing or exporting a template {#importing-or-exporting-a-template}
@@ -161,7 +162,7 @@ A form works with its template. When you download an Adaptive Form created using
 
 Authors can associate a [!UICONTROL Form Data Model Schema] to an Adaptive Form template in the template editor. It allows authors to select a schema from the template editor. When you associate a schema to a template and a form author creates a form based on the template, the schema is pre-selected for the form. It helps forms authors regulate the use of schema and saves time for forms author also. To select a form data model schema in template editor:
 
-1. Tap **[!UICONTROL Content Browser]** located on the left hand side.
+1. Select **[!UICONTROL Content Browser]** located on the left hand side.
 1. Go to the form container **[!UICONTROL Setting]**.
 1. Select **[!UICONTROL Data Model]**. 
 1. Choose your form data model through **[!UICONTROL Select Form Data Model]** and save the configuration.
