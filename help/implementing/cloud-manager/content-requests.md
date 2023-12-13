@@ -18,11 +18,31 @@ Content requests are automatically collected server-side at the edge of Adobe Ex
 
 The Real User Monitoring (RUM) Data Service , the client-side collection, offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. This gives customers advanced insights into their page traffic and performance. While this is beneficial for both customers who use either the Adobe managed CDN or a non-Adobe managed CDN. In addition, automatic traffic reporting can now be enabled for customers using a non-Adobe managed CDN, thus removing the need to share any traffic reports with Adobe.
 
-For customers that bring their own CDN on top of AEM as a Cloud Service, this tracking will result in numbers that cannot be used to compare with the licensed content requests. These numbers will have to be measured by the customer at the edge of the outer CDN. For these customers, client-side reporting and associated performance, the [Adobe RUM Data Service](#real-user-monitoring-for-aem-as-a-cloud-service) is the Adobe recommended option. See the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter) for the information on how to opt-in.
+For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting will result in numbers that cannot be used to compare with the licensed content requests. These numbers will have to be measured by the customer at the edge of the outer CDN. For these customers, client-side reporting and associated performance, the [Adobe RUM Data Service](#real-user-monitoring-for-aem-as-a-cloud-service) is the Adobe recommended option. See the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter) for the information on how to opt-in.
 
 ## Server-side Collection {#serverside-collection}
 
 There are rules in place to exclude well-known bots, including well-known services visiting the site regularly to refresh their search index or service.
+
+### Variances of Cloud Service Content Requests {#content-requests-variances}
+
+Content Requests can have variances with an organization's Analytics reporting tools as summarized in the following table. In general, *do not* use analytics tools that gather data by way of client-side instrumentation to report on the number of content requests for a given site, simply because they often depend on user consent to be triggered, therefore missing out on a significant fraction of the traffic. Analytics tools gathering data server-side in log files, or CDN reports for customers adding their own CDN on top of AEM as a Cloud Service, will provide better counts. For reporting on Page Views and their associated performance, the Adobe RUM Data Service is the Adobe recommended option. 
+
+|Reason For Variance|Explanation|
+|---|---|
+|End user consent|Analytics tools relying on client-side instrumention often depend on user consent to be triggered. This could represent the majority of the traffic not being tracked. For customers who want to measure content requests on their own, it is recommended to rely on analytics tools gathering data server-side or CDN reports.|
+|Tagging|All pages or API calls that are tracked as Adobe Experience Manager (AEM) content requests may not be tagged with Analytics tracking.|
+|Tag Management Rules|Tag management rule settings may result in various data collection configurations on a page, resulting in some combination of discrepancies with content request tracking.|
+|Bots|Unknown bots that have not been pre-identified and removed by AEM may cause tracking discrepancies.|
+|Report Suites|Pages that are part of the same AEM instance and domain may send data to different Analytics report suites.|
+|Third-Party Monitoring and Security Tools|Monitoring and security scanning tools may generate content requests for AEM that are not tracked in Analytics reports.|
+|API Access|Programmatic access to pages or to Adobe Experience Manager APIs may generate content requests for AEM that are not tracked in Analytics reports.|
+|Prefetch Requests|Using a prefetch service to pre-load pages to increase speed can cause significant content request traffic increases.|
+|DDOS|While Adobe makes attempts to automatically detect and filter out traffic from DDOS attacks, there is no guarantee that all possible DDOS attacks are detected.|
+|Traffic Blockers|Using a tracker blocker in a browser may opt out some requests from being tracked.|
+|Firewalls|Firewalls may block Analytics tracking. This scenario is more frequent with corporate firewalls.|
+
+See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
 
 ### Types of included content requests {#included-content-requests}
 
@@ -52,26 +72,6 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 | Exclude Commerce Integration Framework calls | Excluded | These are requests made to AEM that get forwarded to the Commerce Integration Framework&mdash;the URL starts with `/api/graphql`&mdash;to avoid double counting, they are not billable for Cloud Service.|
 | Exclude `manifest.json` | Excluded | Manifest is not an API call, it is here to provide information on how to install web sites on desktop or mobile phone. Adobe should not count JSON request to `/etc.clientlibs/*/manifest.json`|
 | Exclude `favicon.ico` | Excluded | While the returned content should not be HTML or JSON, we are observing that in some scenarios like SAML authentication flows, favicons can be returned as HTML therefore are explicitly excluded from the count.|
-
-## Variances of Cloud Service Content Requests {#content-requests-variances}
-
-Content Requests can have variances with an organization's Analytics reporting tools as summarized in the following table. In general, *do not* use analytics tools that gather data by way of client-side instrumentation to report on the number of content requests for a given site, simply because they often depend on user consent to be triggered, therefore missing out on a significant fraction of the traffic. Analytics tools gathering data server-side in log files, or CDN reports for customers adding their own CDN on top of AEM as a Cloud Service, will provide better counts. For reporting on Page Views and their associated performance, the Adobe RUM Data Service is the Adobe recommended option. 
-
-|Reason For Variance|Explanation|
-|---|---|
-|End user consent|Analytics tools relying on client-side instrumention often depend on user consent to be triggered. This could represent the majority of the traffic not being tracked. For customers who want to measure content requests on their own, it is recommended to rely on analytics tools gathering data server-side or CDN reports.|
-|Tagging|All pages or API calls that are tracked as Adobe Experience Manager (AEM) content requests may not be tagged with Analytics tracking.|
-|Tag Management Rules|Tag management rule settings may result in various data collection configurations on a page, resulting in some combination of discrepancies with content request tracking.|
-|Bots|Unknown bots that have not been pre-identified and removed by AEM may cause tracking discrepancies.|
-|Report Suites|Pages that are part of the same AEM instance and domain may send data to different Analytics report suites.|
-|Third-Party Monitoring and Security Tools|Monitoring and security scanning tools may generate content requests for AEM that are not tracked in Analytics reports.|
-|API Access|Programmatic access to pages or to Adobe Experience Manager APIs may generate content requests for AEM that are not tracked in Analytics reports.|
-|Prefetch Requests|Using a prefetch service to pre-load pages to increase speed can cause significant content request traffic increases.|
-|DDOS|While Adobe makes attempts to automatically detect and filter out traffic from DDOS attacks, there is no guarantee that all possible DDOS attacks are detected.|
-|Traffic Blockers|Using a tracker blocker in a browser may opt out some requests from being tracked.|
-|Firewalls|Firewalls may block Analytics tracking. This scenario is more frequent with corporate firewalls.|
-
-See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
 
 ## Client-side Collection {#cliendside-collection}
 
@@ -104,7 +104,7 @@ Real User Monitoring in Adobe Experience Manager is designed to preserve visitor
 
 As a site operator, this means no additional opt-in is required to enable monitoring through this feature.So, there will be no additional pop up for the end users to accept for enabling RUM monitoring. 
 
-### RUM Data is Sampled {#rum-data-is-sampled}
+### RUM data sampling {#rum-data-sampling}
 
 Traditional web analytics solutions try to collect data on every single visitor. Adobe Experience Manager's Real User Monitoring only captures information from a small fraction of page views. Real User Monitoring (RUM) is meant to be sampled and anonymized rather than a replacement for analytics. By default, pages will have a 1:100 sampling ratio. Site operators cannot configure this number to increase or decrease the sampling rate as of today. To estimate total traffic accurately,for every 100 page views, we gather detailed data from one, giving you a reliable approximation of overall traffic."
 
@@ -135,10 +135,10 @@ Real User Monitoring (RUM) is designed to prevent the collection of personally i
 
 ### How Real User Monitoring (RUM) Data is Being Used {#how-rum-data-is-being-used}
 
-Adobe uses RUM data for the following purposes:
+RUM data is beneficial for the following purposes:
 
 * To identify and fix performance bottlenecks for customer sites
-* To estimate the number of page views for customer sites
+* Streamlined, automatic traffic reporting that includes Page Views for customers using their own CDN, which means they do not have to share any traffic report with Adobe.
 * To understand how Adobe Experience Manager interacts with other scripts (such as analytics, targeting, or external libraries) on the same page, in order to increase compatibility.
 
 ### Limitations and Understanding Variance in Page Views and Performance Metrics {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
