@@ -34,7 +34,7 @@ To correct this, follow the steps for enabling and publishing your endpoint from
 
 ## Missing path in the GraphQL persisted query URL {#missing-path-query-url}
 
-If persisted queries return the `500` error code with the information `Suffix: '/' does not contain a path`, the GraphQL servlet is being called without a path suffix. 
+If persisted queries return the `400` or `500` error code with the information `Suffix: '/' does not contain a path`, the GraphQL servlet is being called without a path suffix. 
 
 The pattern should be `/graphql/execute.json/thePath`.
 
@@ -53,39 +53,3 @@ Keep in mind that direct `POST` GraphQL queries on the publish tier for producti
 The CDN might transform the `404` coming from the dispatcher into a `301`.
 
 This should not be the case by default, but a custom dispatcher configuration might cause this issue. See more under [Dispatcher - Endpoint configuration with AEM Headless](/help/headless/deployment/dispatcher.md).
-
-## GraphQL schema incorrectly constructed {#graphql-schema-incorrectly-contructed}
-
-<!-- CHECK: Same error as what? -->
-
-The GraphQL endpoint throws the same error when being called:
-
-```curl
-# To send an introspection query on the publish instance
-curl 'https://<publish url>/content/_cq_graphql/global/endpoint.json' \
-  -H 'accept: application/json' \
-  -H 'content-type: application/json' \
-  -H 'user-agent: newrelic' \
-  --data-binary '{"query":"{__schema{queryType{fields{name}}}}","variables":null}' \
-  --compressed
- 
-# To send a GET GraphQL query on the author instance. Basic authentication is required, credentials can be retrived following these [steps]({{ "howto/GetAdminPasswordForEnvironment" | relative_url }})
-curl 'https://author-p${PROGRAM_ID}-e${ENVIRONMENT_ID}.adobeaemcloud.com/content/_cq_graphql/global/endpoint.json'   \
-   -H 'accept: application/json' \
-   -H 'content-type: application/json' \
-   -u '<user>:<password>' \
-   --data-binary '{"query":"{__schema{queryType{fields{name}}}}","variables":null}' \
-   --compressed
-```
-
-<!-- CHECK: A lot of could/should/might - can it be improved? -->
-
-If the GraphQL schema is generated correctly, the response will be a JSON object. This object contains the names of the different GraphQL queries that can be executed on the instance, under `data__schema.queryType.fields`. For example, you should see a `adventureByPath` field when the instance contains an `Adventure` Content Fragment model.
-
-When a schema generation issue exists the `Introspection` query will still return a `200` code. However the response payload will only contain the `basic/scalar` types instead of the full schema.
-
-This case is rare and due to a glitch in the schema generation. Touching a Content Fragment model to retrigger the schema generation should solve the problem in such cases.
-
-<!-- CHECK: can the customer do this? -->
-
-If the problem only affects a single pod, then recycling the faulty pod will address the problem.
