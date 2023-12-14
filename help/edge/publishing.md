@@ -22,7 +22,7 @@ The flow of information when publishing is as follows. Once the author starts pu
 1. The content author publishes AEM content in the Universal Editor.
 1. A publish event is pushed to Adobe Pipeline Queue.
 1. The Edge Delivery Publish Service forwards the relevant events to Edge Delivery Admin API.
-1. Edge Delivery pulls and ingest semantic HTML from AEM Author.
+1. Edge Delivery pulls and ingests semantic HTML from AEM Author.
 1. AEM is updated with publish status.
 
 ## How to get started {#how-to-get-started}
