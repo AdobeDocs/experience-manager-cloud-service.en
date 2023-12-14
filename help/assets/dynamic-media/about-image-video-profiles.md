@@ -34,7 +34,7 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 
 You can reprocess assets in a folder that already has an existing Dynamic Media Image Profile or a Dynamic Media Video Profile that you later changed.
 
-For example, suppose you created a Dynamic Media Image Profile and assigned it to a folder. Any image assets you uploaded to the folder automatically had the Image Profile applied to the assets. However, later you decide to add a new smart crop ratio to the Image Profile. Now, instead of having to select and reupload the assets to the folder all over again, you simply run the *Scene7: Reprocess Assets* workflow.
+For example, suppose you created a Dynamic Media Image Profile and assigned it to a folder. Any image assets you uploaded to the folder automatically had the Image Profile applied to the assets. However, later you decide to add a new smart crop ratio to the Image Profile. Now, instead of having to select and reupload the assets to the folder all over again, you simply run the *Dynamic Media Reprocess* workflow.
 
 You can run the reprocess workflow on an asset for which processing failed the first time. Even if you have not edited an Image Profile or Video profile, or you have already applied an Image Profile or Video Profile, you can still run the reprocess workflow on a folder of assets anytime.
 
@@ -50,13 +50,13 @@ See [Adjust the batch size of the reprocess workflow](#adjusting-load).
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
-Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
+Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Dynamic Media Reprocess workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
 
 -->
 
 **To reprocess Dynamic Media assets in a folder:**
 
-1. In [!DNL Experience Manager], from the Assets page, navigate to an assets folder that has an Image Profile or a Video Profile assigned to it and for which you want to apply the **Scene7: Reprocess Asset** workflow.
+1. In [!DNL Experience Manager], from the Assets page, navigate to an assets folder that has an Image Profile or a Video Profile assigned to it and for which you want to apply the **Dynamic Media Reprocess** workflow.
 
     Folders that have an Image Profile or Video Profile assigned to it have the profile's name appear directly below the folder name in Card View. 
 
@@ -72,10 +72,10 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
     ![Screenshot of Assets in Experience Manager showing a selected folder of assets, the Timeline drop-down list highlighted, the Start Workflow button highlighted, and the carat icon to the right of the Comment field also highlighted](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
 1. Select **[!UICONTROL Start Workflow]**.
-1. From the **[!UICONTROL Start Workflow]** drop-down list, choose **[!UICONTROL Scene7: Reprocess Assets]**.
+1. From the **[!UICONTROL Start Workflow]** drop-down list, choose **[!UICONTROL Dynamic Media Reprocess]**.
 1. (Optional) In the **Enter title of workflow** text field, enter a name for the workflow. You can use the name to reference the workflow instance, if necessary.
 
-    ![Screenshot of the Timeline user interface with "Scene7: Reprocess Assets" selected from the Start Workflow drop-down list, and the Start button highlighted](/help/assets/dynamic-media/assets/reprocess-assets2.png).
+    ![Screenshot of the Timeline user interface with "Dynamic Media Reprocess" selected from the Start Workflow drop-down list, and the Start button highlighted](/help/assets/dynamic-media/assets/reprocess-assets2.png).
 
 1. Select **[!UICONTROL Start]**, then select **[!UICONTROL Confirm]**.
 
@@ -88,15 +88,15 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 **To optionally adjust the batch size of the reprocess workflow:**
 
 1. In [!DNL Experience Manager], select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models]**.
-1. On the Workflow Models page, in Card View or List View, select **[!UICONTROL Scene7: Reprocess Assets]**.
+1. On the Workflow Models page, in Card View or List View, select **[!UICONTROL Dynamic Media Reprocess]**.
 
-    ![Screenshot of the Workflow Models page with "Scene7: Reprocess Assets" workflow selected in the Card view of Experience Manager](/help/assets/dynamic-media/assets/reprocess-assets7.png).
+    ![Screenshot of the Workflow Models page with "Dynamic Media Reprocess" workflow selected in the Card view of Experience Manager](/help/assets/dynamic-media/assets/reprocess-assets7.png).
 
-1. In the toolbar, select **[!UICONTROL Edit]**. A new browser tab opens the Scene7: Reprocess Assets workflow model page.
-1. On the Scene7: Reprocess Assets workflow page, near the upper-right corner, select **[!UICONTROL Edit]** to "unlock" the workflow.
+1. In the toolbar, select **[!UICONTROL Edit]**. A new browser tab opens the Dynamic Media Reprocess workflow model page.
+1. On the Dynamic Media Reprocess workflow page, near the upper-right corner, select **[!UICONTROL Edit]** to "unlock" the workflow.
 1. In the workflow, select the Scene7 Batch Upload component to open the toolbar, then select **[!UICONTROL Configure]** in the toolbar.
 
-    ![Screenshot of the "Scene7 Batch Upload" component on the "Scene7: Reprocess Assets" page with the mouse pointer hovering over the "Configure" icon](/help/assets/dynamic-media/assets/reprocess-assets8.png).
+    ![Screenshot of the "Scene7 Batch Upload" component on the "Dynamic Media Reprocess" page with the mouse pointer hovering over the "Configure" icon](/help/assets/dynamic-media/assets/reprocess-assets8.png).
 
 1. On the **[!UICONTROL Batch Upload to Scene7&mdash;Step Properties]** dialog box, set the following:
     * In the **[!UICONTROL Title]** and **[!UICONTROL Description]** text fields, enter a new title and description for the job, if desired.
@@ -110,11 +110,11 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. In the upper-right corner of the **[!UICONTROL Batch Upload to Scene7 &ndash; Step Properties]** dialog box, select **[!UICONTROL Done]**. 
 
-1. In the upper-right corner of the Scene7: Reprocess Assets workflow model page, select **[!UICONTROL Sync]**. When you see **[!UICONTROL Synced]**, the workflow runtime model is successfully synchronized and ready to reprocess assets in a folder.
+1. In the upper-right corner of the Dynamic Media Reprocess workflow model page, select **[!UICONTROL Sync]**. When you see **[!UICONTROL Synced]**, the workflow runtime model is successfully synchronized and ready to reprocess assets in a folder.
 
     ![Screenshot of Assets in Experience Manager showing a selected folder of assets, the Timeline drop-down list highlighted, the Start Workflow button highlighted, and the carat icon to the right of the Comment field also highlighted](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
-1. Close the browser tab that shows the Scene7: Reprocess Assets workflow model.
+1. Close the browser tab that shows the Dynamic Media Reprocess workflow model.
  
 <!-- MAY BE NEEDED IN THE FUTURE
 
@@ -136,6 +136,6 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
-1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.
 
 -->
