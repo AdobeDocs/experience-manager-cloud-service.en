@@ -20,17 +20,21 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2023.11.0) is November 30, 2023. The next feature release (2023.12.0) is planned for December 14, 2023.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2023.12.0) is December 14, 2023. The next feature release (2024.1.0) is planned for January 25, 2023.
 
 ## Maintenance Release Notes {#maintenance}
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
+<!-- 
+
 ## Release Video {#release-video}
 
-Have a look at the November 2023 Release Overview video for a summary of the features added in the 2023.11.0 release:
+Have a look at the December 2023 Release Overview video for a summary of the features added in the 2023.12.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -41,12 +45,6 @@ Have a look at the November 2023 Release Overview video for a summary of the fea
 Real User Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. While this is beneficial for customers who use either Adobe-managed CDN or non-Adobe-managed CDN. Additionally, for customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
 
 If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com`, along with your domain name for the production, stage and dev environment from your email address associated with your Adobe ID. Adobe's product team will then enable the Real User Monitoring (RUM) Data Service for you.
-
-**[Find and Replace strings in Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: The Content Fragment Console provides users with an easy and intuitive way to replace a string appearing in multiple content fragments at once to help accelerate content velocity.
-
-![Find and Replace](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
-
-Interested in trying out the feature and sharing feedback? Send an email to **aemcs-headless-adopter@adobe.com** from your official email ID to learn more about the early adopter program. 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -123,9 +121,3 @@ You can find a complete list of Cloud Manager monthly releases [here](/help/impl
 ## Migration Tools {#migration-tools}
 
 You can find a complete list of Migration Tools releases [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
-
-## Known issues {#known-issues}
-
-* Unable to submit Adaptive Forms based on Core Components. The issue occurs for Adaptive Forms built using Core Components versions 2.0.38 – 2.0.60. 
-
-  To resolve the issue. you can move to Adaptive Form Core Components version 2.0.62 or later. To set a version of Adaptive Forms Core Components for your environment, [set versions of the core.forms.components.version, core.forms.components.af.version, and core.wcm.components.version component](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) dependencies in your Forms as a Cloud Service repository or AEM Archetype based project and [deploy the changes to your Forms as a Cloud Service environment](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). You can find the latest version of Adaptive Forms Core Components dependencies at [Adaptive Forms Core Components Git repository](https://github.com/adobe/aem-core-forms-components#system-requirements).
