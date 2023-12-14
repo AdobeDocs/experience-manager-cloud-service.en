@@ -22,7 +22,7 @@ The release date for Cloud Manager release 2023.12.0 in AEM as a Cloud Service i
 * [Cloud Manager custom permissions](/help/implementing/cloud-manager/custom-permissions.md) let you create custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.
   * This feature will be rolled out in a phased manner with completion expected with the February 2024 Cloud Manager release.
   * Please send an email to `Grp-CloudManager-custom-permissions@adobe.com` from the email address associated with your Adobe ID, if you wish to be enabled sooner.
-* Build containers now support NodeJs version 18 for [frontend pipelines.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+* Build containers now support Node.js version 18 for [frontend pipelines.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
 * For newly-created Cloud Manager programs, [the associated New Relic sub-account](/help/implementing/cloud-manager/user-access-new-relic.md) is not activated by default.
   * For existing programs where the New Relic sub-account has not been accessed for more than 90 days, it will be deactivated.
   * If you wish to use the New Relic sub-account, you will need to opt-in via Cloud Manager.
