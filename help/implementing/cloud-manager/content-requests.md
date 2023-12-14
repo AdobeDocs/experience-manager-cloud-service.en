@@ -75,7 +75,7 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 
 ## Client-side Collection {#cliendside-collection}
 
-## Real User Monitoring (RUM) for AEM as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
+### Real User Monitoring (RUM) for AEM as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
