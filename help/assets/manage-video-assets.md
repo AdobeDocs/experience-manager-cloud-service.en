@@ -67,7 +67,7 @@ Google periodically changes their user interface. As such, the steps to publish 
 
 **To configure Google Cloud settings:**
 
-1. [Create a Google account](https://accounts.google.com/lifecycle/flows/signup?flowEntry=SignUp&flowName=GlifWebSignIn&service=mail&dsh=S-1878016829%3A1702493284416645&theme=glif).
+1. Create a Google account.
 
    If you already have a Google account, you can skip to the next step.
 
