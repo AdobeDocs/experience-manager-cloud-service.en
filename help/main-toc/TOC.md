@@ -755,6 +755,45 @@ user-guide-title: AEM as a Cloud Service
   + [Publishing Content for Edge Delivery](/help/edge/publishing.md)
   + [Developing for Edge Delivery](/help/edge/developing.md)
   + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
+  + Building Edge Delivery Applications {#build}
+    + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
+    + [Anatomy of a Project](/help/edge/developer/anatomy-of-a-franklin-project.md)
+    + [Block Collection](/help/edge/developer/block-collection.md)
+    + [Spreadsheets](/help/edge/developer/spreadsheets.md)
+    + [Forms](/help/edge/developer/forms.md)
+    + [Indexing](/help/edge/developer/indexing.md)
+    + [Keeping it 100](/help/edge/developer/keeping-it-100.md)
+    + [Markup - Sections](/help/edge/developer/markup-sections-blocks.md)
+    + [Favicon](/help/edge/developer/favicon.md)
+    + [Custom Headers](/help/edge/docs/custom-headers.md)
+    + [Best Practices for Developers](/help/edge/docs/dev-collab-and-good-practices.md)
+  + Publishing Edge Delivery Applications {#publish}
+    + [Authoring](/help/edge/docs/authoring.md)
+    + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
+    + [Slack Bot](/help/edge/docs/slack.md)
+    + [Placeholders](/help/edge/docs/placeholders.md)
+    + [Sitemap](/help/edge/developer/sitemap.md)
+    + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
+  + Launching Edge Delivery Applications {#launch}
+    + [Go Live Checklist](/help/edge/docs/go-live-checklist.md)
+    + [Push Invalidation](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
+    + [Cloudflare Worker Setup](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
+    + [Akamai Setup](/help/edge/docs/byo-cdn-akamai-setup.md)
+    + [Fastly Setup](/help/edge/docs/byo-cdn-fastly-setup.md)
+    + [Redirects](/help/edge/docs/redirects.md)
+  + Resources for Edge Delivery {#resources}
+    + Sidekick {#sidekick}
+      + [Using Sidekick](/help/edge/docs/sidekick.md)
+      + [Installing Extension](/help/edge/docs/sidekick-extension.md)
+      + [Project Configurator](https://www.aem.live/tools/sidekick/)
+      + [Sidekick Library](/help/edge/docs/sidekick-library.md)
+    + [FAQ](/help/edge/docs/faq.md)
+    + [Admin API](https://www.aem.live/docs/admin.html)
+    + [status.hlx.live](https://status.hlx.live/history)
+    + Tools {#tools}
+      + [Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+      + [Github Bot](https://github.com/apps/aem-code-sync)
+      + [Audit Log](/help/edge/docs/auditlog.md)
 + Headless {#headless}
   + [What is a Headless CMS?](/help/headless/what-is-headless.md)
   + [Introduction to AEM Headless](/help/headless/introduction.md)
@@ -1047,7 +1086,7 @@ user-guide-title: AEM as a Cloud Service
    + [Self-Service Restore](/help/operations/restore.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
-  + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)
+  + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)  
 + Compliance {#compliance}
   + [Compliance in AEM as a Cloud Service](/help/compliance/home.md)
   + Data Privacy and Protection Readiness {#data-privacy}
