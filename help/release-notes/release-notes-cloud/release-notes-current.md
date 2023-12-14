@@ -48,11 +48,7 @@ If you are interested in testing this new feature and sharing your feedback, ple
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New Features in Assets View {#assets-view-features}
-
-* **Embedded Adobe Express editor in AEM Assets**: Users with access to Express now have integrated image editing and creation tools from Adobe Express and Adobe Firefly available directly within AEM Assets to improve content reuse and accelerate content velocity.
-
-  ![assign metadata form to a folder](/help/assets/assets/adobe-express-aem-assets.png)
+### New Features in Admin View {#admin-view-features}
 
 <!--
 
@@ -62,16 +58,6 @@ If you are interested in testing this new feature and sharing your feedback, ple
 
 -->
 
-
-* **Storage usage reports in Insights**: Administrators now have the ability to view the storage usage reports available as part of Insights.
-
-  ![storage usage insights](/help/assets/assets/storage-usage-insights.png)
-
-* **Search first homepage configuration**: Experience Manager Assets now enables you to configure the homepage experience for your organization. If you select search first as the homepage, you can configure the search bar alignment, background image, and logo for your organization.
-
-  ![search first configuration](/help/assets/assets/search-first-configuration.png)
-
-### New Features in  Prerelease for Admin View {#admin-view-features-prerelease}
 
 **Video Preview**: AEM Assets now generates preview renditions of all supported video formats by default, without the need to configure a processing profile.
 
