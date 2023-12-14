@@ -7,6 +7,12 @@ feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 40f63933-4f4e-4318-8d42-4b5c9b01f7cd
 ---
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service     | This article         |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en)                  |
+
 # Detect duplicate assets {#detect-duplicate-assets}
 
 If a DAM user uploads one or more assets that already exist in the repository, [!DNL Experience Manager] detects the duplication and notifies the user. Duplicate detection is disabled by default as it can have performance impact depending on size of repository and number of assets uploaded.
