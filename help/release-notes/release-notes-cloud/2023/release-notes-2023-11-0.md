@@ -43,7 +43,7 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in Assets View {#assets-view-features}
+### New Features in Assets View {#assets-view-features}
 
 * **Embedded Adobe Express editor in AEM Assets**: Users with access to Express now have integrated image editing and creation tools from Adobe Express and Adobe Firefly available directly within AEM Assets to improve content reuse and accelerate content velocity.
 
@@ -72,7 +72,7 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### New features in [!DNL Experience Manager Forms] {#forms-features}
+### New Features in [!DNL Experience Manager Forms] {#forms-features}
 
 * **[Checkbox component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: Adaptive Forms based on Core Components can now include a checkbox component. It allows users to make binary choices, selecting or deselecting a particular option. It typically appears as a small box that can be clicked or tapped to toggle between two states: checked and unchecked. The checkbox is a common form element used to present a yes/no or true/false choice. 
 
