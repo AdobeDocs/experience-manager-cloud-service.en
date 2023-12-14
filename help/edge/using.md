@@ -9,8 +9,6 @@ exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 
 With Edge Delivery Services, you can create rapid development environments where authors can update and publish content quickly, and new sites can be launched rapidly. To this end, you can work with multiple content sources on the same website and publishing will be seamless and streamlined regardless of you chosen source. As such, it takes only a couple of seconds to go from editing to seeing the content live on the internet.
 
-## Finding the Right Tool {#right-tool}
-
 Edge Delivery Services is decoupled from the content source and can ingest content from different content sources.
 
 ![Content sources for Edge Delivery](assets/content-sources.png)
