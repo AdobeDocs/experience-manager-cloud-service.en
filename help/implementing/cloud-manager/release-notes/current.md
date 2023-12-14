@@ -30,7 +30,6 @@ The release date for Cloud Manager release 2023.12.0 in AEM as a Cloud Service i
   * Support for Node 18 was added for frontend and full stack pipelines.
   * Java 8 minor version was updated to `jdk1.8.0_371`.
   * Java 11 minor version was updated to `jdk-11.0.20`.
-  * Support for Java 17 was added.
   * Maven was updated to version to 3.8.8
   * The build container base image was updated to Ubuntu 22.04.
 
