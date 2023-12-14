@@ -751,6 +751,10 @@ user-guide-title: AEM as a Cloud Service
 + Edge Delivery Services {#edge-delivery}
   + [AEM and Edge Delivery Services](/help/edge/overview.md)
   + [Using Edge Delivery](/help/edge/using.md)
+  + [Authoring Content for Edge Delivery](/help/edge/authoring.md)
+  + [Publishing Content for Edge Delivery](/help/edge/publishing.md)
+  + [Developing for Edge Delivery](/help/edge/developing.md)
+  + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
   + Building Edge Delivery Applications {#build}
     + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
     + [Anatomy of a Project](/help/edge/developer/anatomy-of-a-franklin-project.md)
@@ -790,10 +794,6 @@ user-guide-title: AEM as a Cloud Service
       + [Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
       + [Github Bot](https://github.com/apps/aem-code-sync)
       + [Audit Log](/help/edge/docs/auditlog.md)
-  + [Authoring Content for Edge Delivery](/help/edge/authoring.md)
-  + [Publishing Content for Edge Delivery](/help/edge/publishing.md)
-  + [Developing for Edge Delivery](/help/edge/developing.md)
-  + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
 + Headless {#headless}
   + [What is a Headless CMS?](/help/headless/what-is-headless.md)
   + [Introduction to AEM Headless](/help/headless/introduction.md)
