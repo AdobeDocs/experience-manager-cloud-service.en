@@ -38,7 +38,7 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Early adopter program {#sites-early-adopter}
+### Early Adopter Program {#sites-early-adopter}
 
 **You can leverage the [Real User Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** to enable client-side collection for AEM as a Cloud Service. 
 
@@ -48,7 +48,7 @@ If you are interested in testing this new feature and sharing your feedback, ple
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in Assets view {#assets-view-features}
+### New Features in Assets View {#assets-view-features}
 
 * **Embedded Adobe Express editor in AEM Assets**: Users with access to Express now have integrated image editing and creation tools from Adobe Express and Adobe Firefly available directly within AEM Assets to improve content reuse and accelerate content velocity.
 
@@ -71,13 +71,13 @@ If you are interested in testing this new feature and sharing your feedback, ple
 
   ![search first configuration](/help/assets/assets/search-first-configuration.png)
 
-### New features in  prerelease for Admin view {#admin-view-features-prerelease}
+### New Features in  Prerelease for Admin View {#admin-view-features-prerelease}
 
 **Video Preview**: AEM Assets now generates preview renditions of all supported video formats by default, without the need to configure a processing profile.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### New features in [!DNL Experience Manager Forms] {#forms-features}
+### New Features in [!DNL Experience Manager Forms] {#forms-features}
 
 * **[Connect an Adaptive Forms with Microsoft&reg; SharePoint List](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms provides an OOTB integration to submit forms data directly to SharePoint List, letting you use SharePoint's Lists capabilities. You can configure Microsoft SharePoint List as a datasource for a Form Data Model and use the **Submit using Form Data Model** submit action to connect an Adaptive Form with SharePoint List. 
 
@@ -87,7 +87,7 @@ If you are interested in testing this new feature and sharing your feedback, ple
 
 --> 
 
-### Early adopter program {#forms-early-adopter}
+### Early Adopter Program {#forms-early-adopter}
 
 * **[Submit an Adaptive Form to Adobe Workfront Fusion Scenario](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service offers an out-of-the-box options to effortlessly connect an Adaptive Form with Adobe Workfront. This simplifies the process of submitting an Adaptive Form to an Adobe Workfront scenario, allowing you trigger a Workfront Fusion scenario on submission of an Adaptive Form. 
 
@@ -101,7 +101,7 @@ If you are interested in testing this new feature and sharing your feedback, ple
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### CDN Configuration early adopter program {#cdn-config-early-adopter}
+### CDN Configuration Early Adopter Program {#cdn-config-early-adopter}
 
 In addition to the recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which includes the optionally licensable Web Application Firewall (WAF) rules, there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. We'd love to hear about your use cases, including:
 * 301/302 client-side redirects
