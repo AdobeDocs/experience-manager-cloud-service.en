@@ -8,7 +8,7 @@ feature: Edge Delivery Services
 
 With Edge Delivery Services, publishing content is seamless regardless of your content source:
 
-* Document-based content - Please see [Publish section](https://www.aem.live/docs/#publish) of the Edge Delivery Services documentation.
+* Document-based content - Please see [Publish section](/help/edge/docs/authoring.md) of the Edge Delivery Services documentation.
 * AEM content - Please see the details below.
 
 ## Publishing Flow from AEM {#publishing-flow}
@@ -22,7 +22,7 @@ The flow of information when publishing is as follows. Once the author starts pu
 1. The content author publishes AEM content in the Universal Editor.
 1. A publish event is pushed to Adobe Pipeline Queue.
 1. The Edge Delivery Publish Service forwards the relevant events to Edge Delivery Admin API.
-1. Edge Delivery pulls and ingest semantic HTML from AEM Author.
+1. Edge Delivery pulls and ingests semantic HTML from AEM Author.
 1. AEM is updated with publish status.
 
 ## How to get started {#how-to-get-started}

@@ -12,10 +12,10 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 >id="aemcloud_ctt_download"
 >title="Download"
 >abstract="The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
-The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via [Package Manager](/help/implementing/developing/tools/package-manager.md) on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version. For more details on the latest version, see [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package by way of [Package Manager](/help/implementing/developing/tools/package-manager.md) on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version. For more details on the latest version, see [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html).
 
 Only version 2.0.0 and higher is supported, and it is advisable to use the most recent version.
 
@@ -39,7 +39,7 @@ The source AEM instance may be running behind a firewall where it can only reach
 
 Understanding SSL/TLS connection problems can sometimes be difficult. To troubleshoot connection issues during an extraction process, you can enable SSL logging via the System Console of the source AEM environment by following these steps:
 
-1. Navigate to the Adobe Experience Manager Web Console on your source instance, by going to **Tools - Operations - Web Console** or directly to the URL at *https://serveraddress:serverport/system/console/configMgr*
+1. Navigate to the Adobe Experience Manager Web Console on your source instance, by going to **Tools > Operations > Web Console** or directly to the URL at *https://serveraddress:serverport/system/console/configMgr*
 1. Search for **Content Transfer Tool Extraction Service Configuration**
 1. Use the pencil icon button to edit its configuration values 
 1. Enable the **Enable ssl logging for extraction** setting, then press **Save**:
@@ -72,19 +72,19 @@ The following section applies to the new version of the Content Transfer Tool. F
 
 1. Log into Cloud Acceleration Manager (CAM) and click the CAM project that you had created previously to assess your readiness to move to AEM as a Cloud Service. If you haven't created a CAM project, refer to Creating and Managing a Project in CAM.
 
-1. Click the **Content Transfer** card. This will take you to the Migration Set List view.
+1. Click the **Content Transfer** card to open the Migration Set List view.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
-1. Create a Migration Set by clicking on **Create Migration Set**.
+1. Create a Migration Set by clicking **Create Migration Set**.
 
    >[!NOTE]
    >
-   >A maximum of twenty migration sets, including expired sets, can be created per project in Cloud Acceleration Manager.
+   >A maximum of 20 migration sets, including expired sets, can be created per project in Cloud Acceleration Manager.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   The following dialog box is presented. Notice that a migration set will expire after a prolonged period of inactivity. After warnings are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
+   The following dialog box is presented. Notice that a migration set will expire after a prolonged period of inactivity. After warnings are displayed on the project card and the migration job table rows for a time period, the migration set will expire and its data will no longer be available. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
@@ -108,11 +108,11 @@ The following section applies to the new version of the Content Transfer Tool. F
 >abstract="After creating a migration set, it must be populated with the content from the source instance that must be moved to the AEM as a Cloud Service environment. To do this, the Content Transfer Tool must be installed on the source instance."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="Extracting Content"
 
-To populate the migration set you created in the Cloud Acceleration Manager, you need to install the latest version of the Content Transfer Tool on your source Adobe Experience Manager (AEM) instance. Follow this section to learn how to populate the migration set.
+To populate the migration set you created in the Cloud Acceleration Manager, install the latest version of the Content Transfer Tool on your source Adobe Experience Manager (AEM) instance. To learn how to populate the migration set, follow this section.
 
 1. After installing the latest version of the Content Transfer Tool on your source Adobe Experience Manager instance, go to **Operations - Content Migration**
 
-1. Click **Create Migration Set**
+1. Click **Create Migration Set**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
@@ -120,7 +120,7 @@ To populate the migration set you created in the Cloud Acceleration Manager, you
 
    >[!NOTE]
    >
-   >Make sure that the extraction key is valid and is not close to its expiration. You can get this information in the **Create Migration Set** dialog after you paste the extraction key. If you get a connection error, see [Source Environment Connectivity](#source-environment-connectivity) for more information.
+   >Make sure that the extraction key is valid and is not near its expiration. You can get this information in the **Create Migration Set** dialog after you paste the extraction key. If you get a connection error, see [Source Environment Connectivity](#source-environment-connectivity) for more information.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 
@@ -196,4 +196,4 @@ Follow the steps below to run a size check:
 
 ## What's Next {#whats-next}
 
-Once you have learned how to create a migration set, you are now ready to learn about Extraction and Ingestion Processes in Content Transfer Tool. Before you learn these processes, you must review [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) to significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service.
+Once you have learned how to create a migration set, you are now ready to learn about Extraction and Ingestion Processes in Content Transfer Tool. Before you learn these processes, you must review [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) to significantly speed-up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service.
