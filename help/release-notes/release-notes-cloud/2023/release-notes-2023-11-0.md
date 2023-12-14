@@ -33,7 +33,7 @@ Have a look at the November 2023 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Early adopter program {#sites-early-adopter}
+### Early Adopter Program {#sites-early-adopter}
 
 **[Find and Replace strings in Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**: The Content Fragment Console provides users with an easy and intuitive way to replace a string appearing in multiple content fragments at once to help accelerate content velocity.
 
@@ -43,7 +43,7 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in Assets view {#assets-view-features}
+### New features in Assets View {#assets-view-features}
 
 * **Embedded Adobe Express editor in AEM Assets**: Users with access to Express now have integrated image editing and creation tools from Adobe Express and Adobe Firefly available directly within AEM Assets to improve content reuse and accelerate content velocity.
 
@@ -66,7 +66,7 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
   ![search first configuration](/help/assets/assets/search-first-configuration.png)
 
-### New features in  prerelease for Admin view {#admin-view-features-prerelease}
+### New Features in  Prerelease for Admin View {#admin-view-features-prerelease}
 
 **Video Preview**: AEM Assets now generates preview renditions of all supported video formats by default, without the need to configure a processing profile.
 
@@ -84,7 +84,7 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
 
 
-### New features in [!DNL Forms] prerelease {#prerelease-features-forms}
+### New Features in [!DNL Forms] Prerelease {#prerelease-features-forms}
 
 * **[Connect an Adaptive Forms with Microsoft&reg; SharePoint List](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms provides an OOTB integration to submit forms data directly to SharePoint List, enabling you to leverage SharePoint's Lists capabilities. You can configure Microsoft SharePoint List as a datasource for a Form Data Model and use the **Submit using Form Data Model** submit action to connect an Adaptive Form with SharePoint List. 
 
@@ -94,7 +94,7 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
 
 --> 
 
-### Early adopter program {#forms-early-adopter}
+### Early Adopter Program {#forms-early-adopter}
 
 * **Submit an Adaptive Form to Adobe Workfront Fusion Scenario**: Forms as a Cloud Service offers an out-of-the-box options to effortlessly connect an Adaptive Form with Adobe Workfront. This simplifies the process of submitting an Adaptive Form to an Adobe Workfront scenario, allowing you trigger a Workfront Fusion scenario on submission of an Adaptive Form. 
 
@@ -108,7 +108,7 @@ Interested in trying out the feature and sharing feedback? Send an email to **ae
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### WAF Traffic Filter Rules can now be licensed {#cdn-waf-license}
+### WAF Traffic Filter Rules Can Now Be Licensed {#cdn-waf-license}
 
 Traffic Filter Rules were released in October, and included a note that the special category of Web Application Firewall (WAF) rules would be available later this year to supplement the rules already available to Sites and Forms customers. As an update, the WAF-DDoS Protection offering can now be licensed.
 
@@ -116,7 +116,7 @@ Once licensed, these advanced WAF rules can be deployed to the CDN using the Clo
  
 Read about [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), including WAF. Speak to your AEM account team about licensing WAF-DDoS Protection or Enhanced Security.
 
-### CDN Configuration early adopter program {#cdn-config-early-adopter}
+### CDN Configuration Early Adopter Program {#cdn-config-early-adopter}
 
 In addition to the recently released [Traffic Filter Rules (including WAF)](/help/security/traffic-filter-rules-including-waf.md), there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. We'd love to hear about your use cases, including:
 * 301/302 client-side redirects
@@ -137,7 +137,7 @@ You can find a complete list of Cloud Manager monthly releases [here](/help/impl
 
 You can find a complete list of Migration Tools releases [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
 
-## Known issues {#known-issues}
+## Known Issues {#known-issues}
 
 * Unable to submit Adaptive Forms based on Core Components. The issue occurs for Adaptive Forms built using Core Components versions 2.0.38 – 2.0.60. 
 
