@@ -1,5 +1,5 @@
 ---
-title: Manage digital assets
+title: Detect duplicate assets for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Learn how to detect duplicate assets
 contentOwner: KK
 mini-toc-levels: 3
