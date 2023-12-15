@@ -153,9 +153,10 @@ A common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-Each node in AEM must have a unique uuid. This error indicates that a node that is being ingested has the same uuid as one that exists elsewhere at a different path on the destination instance.
-This situation can happen if a node is moved on the source between an extraction and a subsequent [Top-Up Extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-It can also happen if a node on the destination is moved between an ingestion and a subsequent top-up ingestion.
+Each node in AEM must have a unique uuid. This error indicates that a node that is being ingested has the same uuid as one that exists at a different path on the destination instance. This situation can happen for two reasons:
+ - A node is moved on the source between an extraction and a subsequent [Top-Up Extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
+   - _REMEMBER_: For Top-Up extractions, the node will still exist in the migration set, even if it no longer exists on the source.
+ - A node on the destination is moved between an ingestion and a subsequent top-up ingestion.
 
 This conflict must be resolved manually. Someone familiar with the content must decide which of the two nodes must be deleted, keeping in mind other content that references it. The solution may require that the top-up extraction is done again without the offending node. 
 
