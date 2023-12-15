@@ -146,6 +146,8 @@ Review this list of activities to ensure that you perform a smooth and successfu
     * The TTL is the amount of time a DNS record stays in a cache before asking the server for an update.
     * If you have a very high TTL, updates to your DNS record will take longer to propagate. 
 * Run performance and security tests that meet your business requirements and objectives.
+    * Perform tests on stage environment.  It has the same sizing as production. 
+    * Development environments do not have the same sizing as stage and production. 
 * Cut over and make sure that the actual go-live is performed without any new deployment or content update.
 * Create Admin Console user Notification Profiles. See [Notification Profiles](/help/journey-onboarding/notification-profiles.md)
 
