@@ -14,7 +14,7 @@ Cloud Manager builds and tests your code using a specialized build environment.
 
 * The build environment is Linux-based, derived from Ubuntu 22.04.
 * Apache Maven 3.8.8 is installed.
-  * Adobe recommends users update their Maven repositories to use HTTPS instead of HTTP.
+  * Adobe recommends users [update their Maven repositories to use HTTPS instead of HTTP.](#https-maven)
 * The Java versions installed are Oracle JDK 8u371 and Oracle JDK 11.0.20.
 * By default, the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_371` which contains Oracle JDK 8u371. See the [Alternate Maven Execution JDK Version](#alternate-maven-jdk-version) section for more details.
 * There are some additional system packages installed which are necessary.
