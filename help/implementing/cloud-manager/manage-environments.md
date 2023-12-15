@@ -12,9 +12,9 @@ Learn about the types of environments that you can create and how to create them
 
 A user with the requisite permissions can create the following environment types (within the bounds of what is available to the specific tenant).
 
-* **Production + Stage** - The production and staging environments are available as a pair and are used for production and testing purposes, respectively.
+* **Production + Stage** - The production and staging environments are available as a pair and are used for production and testing purposes, respectively. Conduct performance and security tests on stage environment. It has the same sizing as production.
 
-* **Development** - A development environment can be created for development and testing purposes and can be associated with non-production pipelines only.
+* **Development** - A development environment can be created for development and testing purposes and can be associated with non-production pipelines only.  Development environments do not have the same sizing as stage and production, and should not be used to conduct performance and security tests.
 
 * **Rapid Development** - A rapid development environment (RDE) lets a developer swiftly deploy and review changes, minimizing the amount of time required to test features that are proven to work on a local development environment. See [the rapid development environment documentation](/help/implementing/developing/introduction/rapid-development-environments.md) for details about how to use an RDE.
 
