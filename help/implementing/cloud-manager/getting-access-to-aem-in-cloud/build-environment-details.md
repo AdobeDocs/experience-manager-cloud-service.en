@@ -38,7 +38,7 @@ Cloud Manager builds and tests your code using a specialized build environment.
 
 ## HTTPS Maven Repositories {#https-maven}
 
-Cloud Manager [release 2023.10.0](help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) began a rolling update to the build environment (completing with release 2023.12.0), which included an update to Maven 3.8.8. A significant change introduced in Maven 3.8.1 was a security enhancement aimed at mitigating potential vulnerabilities. Specifically, Maven now disables all insecure `http://*` mirrors by default, as outlined in the [Maven release notes.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [release 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) began a rolling update to the build environment (completing with release 2023.12.0), which included an update to Maven 3.8.8. A significant change introduced in Maven 3.8.1 was a security enhancement aimed at mitigating potential vulnerabilities. Specifically, Maven now disables all insecure `http://*` mirrors by default, as outlined in the [Maven release notes.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
 
 As a result of this security enhancement, some users may face issues during the build step, particularly when downloading artifacts from Maven repositories that use insecure HTTP connections.
 
