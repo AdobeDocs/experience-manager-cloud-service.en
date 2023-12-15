@@ -32,7 +32,7 @@ The release date for Cloud Manager release 2023.12.0 in AEM as a Cloud Service i
   * Java 11 minor version was updated to `jdk-11.0.20`.
   * Maven was updated to version to 3.8.8
     * Maven now disables all insecure `http://*` mirrors by default.
-    * [Adobe recommends]((/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)) users update their Maven repositories to use HTTPS instead of HTTP.
+    * [Adobe recommends](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) users update their Maven repositories to use HTTPS instead of HTTP.
   * The build container base image was updated to Ubuntu 22.04.
 
 ## Early Adoption Program {#early-adoption}
