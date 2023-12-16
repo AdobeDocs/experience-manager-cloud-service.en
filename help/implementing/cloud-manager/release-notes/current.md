@@ -26,11 +26,11 @@ The release date for Cloud Manager release 2023.12.0 in AEM as a Cloud Service i
 * For newly-created Cloud Manager programs, [the associated New Relic sub-account](/help/implementing/cloud-manager/user-access-new-relic.md) is not activated by default.
   * For existing programs where the New Relic sub-account has not been accessed for more than 90 days, it will be deactivated.
   * If you wish to use the New Relic sub-account, you will need to opt-in via Cloud Manager.
-* The rollouts of minor versions for java 8 and 11 and updates to maven [announced and begun with the October release of Cloud Manager](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) have been completed.
-  * Support for Node 18 was added for frontend and full stack pipelines.
+* The rollouts of updates to the [build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) that were [announced and begun with the October release of Cloud Manager](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) have been completed.
+  * Support for Node 18 was added for [front end and full stack pipelines.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
   * Java 8 minor version was updated to `jdk1.8.0_371`.
   * Java 11 minor version was updated to `jdk-11.0.20`.
-  * Maven was updated to version to 3.8.8
+  * Maven was updated to version to 3.8.8.
     * Maven now disables all insecure `http://*` mirrors by default.
     * [Adobe recommends](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) users update their Maven repositories to use HTTPS instead of HTTP.
   * The build container base image was updated to Ubuntu 22.04.
