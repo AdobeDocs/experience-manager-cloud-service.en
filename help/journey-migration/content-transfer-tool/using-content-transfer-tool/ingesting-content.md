@@ -91,7 +91,7 @@ Begin by creating an Ingestion Job and ensure that **Wipe** is disabled during t
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Content Ingestion Troubleshooting"
->abstract="Refer to the ingestion logs and the documentation to find solutions to common reasons why an ingestion can fail and find the way to fix the problem. Once fixed the ingestion can be run again."
+>abstract="Refer to the ingestion logs and the documentation to find solutions to common reasons why an ingestion can fail and find the way to fix the problem. Once fixed, the ingestion can be run again."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Validating Content Transfers"
 
 ### CAM Unable to Retrieve the Migration Token {#cam-unable-to-retrieve-the-migration-token}
@@ -153,9 +153,11 @@ A common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-Each node in AEM must have a unique uuid. This error indicates that a node that is being ingested has the same uuid as one that exists elsewhere at a different path on the destination instance.
-This situation can happen if a node is moved on the source between an extraction and a subsequent [Top-Up Extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-It can also happen if a node on the destination is moved between an ingestion and a subsequent top-up ingestion.
+Each node in AEM must have a unique uuid. This error indicates that a node that is being ingested has the same uuid as one that exists at a different path on the destination instance. This situation can happen for two reasons:
+
+* A node is moved on the source between an extraction and a subsequent [Top-Up Extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
+  * _REMEMBER_: For Top-Up extractions, the node will still exist in the migration set, even if it no longer exists on the source.
+* A node on the destination is moved between an ingestion and a subsequent top-up ingestion.
 
 This conflict must be resolved manually. Someone familiar with the content must decide which of the two nodes must be deleted, keeping in mind other content that references it. The solution may require that the top-up extraction is done again without the offending node. 
 
@@ -165,7 +167,7 @@ Another common cause of a [Top-up Ingestion](/help/journey-migration/content-tra
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
-This can happen if a node on the destination is modified between an ingestion and a subsequent **Non-Wipe** ingestion such that a new version has been created. If the migration set was extracted with "include versions" enabled, a conflict may occur since the destination now has a more recent version that is being referenced by version history and other content. The ingestion process will be unable to delete the offending version node due to it being referenced.
+This can happen if a node on the destination is modified between an ingestion and a subsequent **Non-Wipe** ingestion such that a new version has been created. If the migration set was extracted with "include versions" enabled, a conflict may occur since the destination now has a more recent version that is being referenced by version history and other content. The ingestion process is unable to delete the offending version node due to it being referenced.
 
 The solution may require that the top-up extraction is done again without the offending node. Or, creating a small migration set of the offending node, but with "include versions" disabled. 
 
@@ -173,7 +175,7 @@ Best practices indicate that if a **Non-Wipe** ingestion must be run using a mig
 
 ### Ingestion Failure Due to Large Node Property Values {#ingestion-failure-due-to-large-node-property-values}
 
-Node property values stored in MongoDB cannot exceed 16 MB. If a node value exceeds the supported size, the ingestion fails and the log will contain a `BSONObjectTooLarge` error and specify which node exceeded the maximum. Note that this is a MongoDB restriction.
+Node property values stored in MongoDB cannot exceed 16 MB. If a node value exceeds the supported size, the ingestion fails and the log will contain a `BSONObjectTooLarge` error and specify which node exceeded the maximum. This is a MongoDB restriction.
 
 See the `Node property value in MongoDB` note in [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) for more information and a link to an Oak tool that could help find all the large nodes. Once all nodes with large sizes are remedied, run the extraction and ingestion again.
 
