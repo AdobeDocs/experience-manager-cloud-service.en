@@ -52,7 +52,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### What is new in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (Anonymous) via Adobe Analytics for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
+* **Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (Anonymous) by way of Adobe Analytics for Adaptive Forms to gather user insights. It helps make informed decisions based on data to improve user experience.
 
 ### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms-oct-2021}
 
@@ -73,7 +73,7 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 * The CIF add-on supports latest Commerce v2.4.3 with new GraphQL APIs and schemas
 
-* Authors can add links to product and catalog pages in text fields using the rich text editor (RTE). A CIF icon has been added to the RTE toolbar that will open up the pickers to quickly search and select the product or category without leaving the context.
+* Authors can add links to product and catalog pages in text fields using the rich text editor (RTE). A CIF icon has been added to the RTE toolbar that opens up the pickers to quickly search and select the product or category without leaving the context.
 
 * Existing pop-up shopping cart and checkout have been replaced with dedicated AEM shopping cart and checkout pages. The components on these pages are built using Adobe Commerce's extensible Peregrine components
 

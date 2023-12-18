@@ -1,6 +1,7 @@
 ---
 title: How to create an Adaptive Form template based on core component?
 description: Create Adaptive Form templates based on core component to define the basic structure and initial content using the Template Editor.
+feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 ---
@@ -40,13 +41,13 @@ Experience Manager provides a global folder to organize templates. However, it i
 
 After you have created a folder, open the folder and perform the following steps to create a template:
 
-1. Tap **[!UICONTROL Create]** inside the folder you have created.
-1. In the **[!UICONTROL Pick a Template Type]** section, select **[!UICONTROL Adaptive Form (Core Component) template]** and tap **[!UICONTROL Next]**.
+1. Select **[!UICONTROL Create]** inside the folder you have created.
+1. In the **[!UICONTROL Pick a Template Type]** section, select **[!UICONTROL Adaptive Form (Core Component) template]** and select **[!UICONTROL Next]**.
 
-1. In the **[!UICONTROL Template Details]** section, provide a **Template Title** and tap **[!UICONTROL Create]**.
+1. In the **[!UICONTROL Template Details]** section, provide a **Template Title** and select **[!UICONTROL Create]**.
    You can also provide a description.
 
-1. Tap **[!UICONTROL Done]** to return to the console, or tap **[!UICONTROL Open]** to open the template in the editor.
+1. Select **[!UICONTROL Done]** to return to the console, or select **[!UICONTROL Open]** to open the template in the editor.
 
 ## Template editor UI {#template-editor-ui}
 
@@ -113,7 +114,7 @@ For example, you add the header component in the template. When you select the c
 
  When the Initial Content option is selected, the Adaptive Form Container of the template opens like an Adaptive Form for editing. It allows you to create a predefined content that can be changed while creating Adaptive Forms associated with the template. Like authoring an Adaptive Form, you can specify initial settings, such as selecting a theme and Submit Actions.
 
-Form authors use it as a base to create a form. Content flow structure is specified in the Initial Content layer of the template. To switch to editing initial content of the form template, before Preview in the page toolbar, tap ![canvas-drop-down](assets/canvas-drop-down.png) **&gt;** **[!UICONTROL Initial Content]**.
+Form authors use it as a base to create a form. Content flow structure is specified in the Initial Content layer of the template. To switch to editing initial content of the form template, before Preview in the page toolbar, select ![canvas-drop-down](assets/canvas-drop-down.png) **&gt;** **[!UICONTROL Initial Content]**.
 
 ![Header and footer added in the Initial Content layer](assets/header-and-footer.png)
 
@@ -139,7 +140,7 @@ When you create a template, it is added as a draft. Enable the template to use i
 
 1. Navigate to **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Tools]** &gt; **[!UICONTROL Templates]**, and open the folder in which you have created the template.
 The template you have created is marked as Draft.
-1. Select the template and tap **[!UICONTROL Enable]** in the toolbar.
+1. Select the template and select **[!UICONTROL Enable]** in the toolbar.
    When you create an Adaptive Form, you can see the template listed when you are asked to choose a template.
 
 ## Importing or exporting a template {#importing-or-exporting-a-template}
@@ -154,7 +155,7 @@ A form works with its template. When you download an Adaptive Form created using
 
 Authors can associate a [!UICONTROL Form Data Model Schema] to an Adaptive Form template in the template editor. It allows authors to select a schema from the template editor. When you associate a schema to a template and a form author creates a form based on the template, the schema is pre-selected for the form. It helps forms authors regulate the use of schema and saves time for forms authors also. To select a form data model schema in template editor:
 
-1. Tap **[!UICONTROL Content Browser]** located on the left-hand side.
+1. Select **[!UICONTROL Content Browser]** located on the left-hand side.
 1. Go to the form container **[!UICONTROL Setting]**.
 1. Select **[!UICONTROL Data Model]**. 
 1. Choose your form data model through **[!UICONTROL Select Form Data Model]** and save the configuration.
@@ -179,7 +180,7 @@ Change the layer from **Structure** to **Initial Content**, and start adding con
 * You can drag-drop the panel component from the components browser in the sidebar.
 * You can add child panel of the `guideRootPanel` from the component toolbar.
 
-To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and tap ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, tap content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Tap ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and tap **[!UICONTROL Done]**. The tabbed template structure is applied.
+To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and select ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, select content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Select ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and select **[!UICONTROL Done]**. The tabbed template structure is applied.
 
 ### Adding content in tabs {#adding-content-in-tabs}
 
@@ -218,10 +219,10 @@ When you add at least one custom property group using the template policy, the *
 #### Select a custom group name in the edit dialog of a core component {#select-a-custom-group-name}
 
 1. Open an Adaptive Form in an edit mode.
-1. Tap the component for which the custom properties have been defined in the template editor and tap ![settings_icon](assets/configure-icon.svg) to open the edit dialog of the component.
+1. Select the component for which the custom properties have been defined in the template editor and select ![settings_icon](assets/configure-icon.svg) to open the edit dialog of the component.
 1. Select the **[!UICONTROL Advanced]** tab.
 1. Select the custom property group name from **[!UICONTROL Custom Property Select]** drop-down. All the defined custom group names are automatically populated in the drop-down list.
-1. Tap **[!UICONTROL Done]** to save the properties. 
+1. Select **[!UICONTROL Done]** to save the properties. 
 
 ![select custom property group name](/help/forms/assets/select-custom-properties-group-name.png)
  
@@ -272,9 +273,9 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 ## Best Practices {#best-practices}
 
-* Create templates using the components based on Core Components, for example Adaptive Form Text, Adaptive Form Container and more. To get information on Adaptive Forms Core Components, [click here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html).  
+* Create templates using the components based on Core Components, for example, Adaptive Form Text, Adaptive Form Container and more. To get information on Adaptive Forms Core Components, [click here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html).  
 * Limit the number of templates to match the fundamentally different form types available on the websites
-* Provide the necessary flexibility and configuration capabilities to your custom components used in an template.
+* Provide the necessary flexibility and configuration capabilities to your custom components used in a template.
 
 <!--
 ## See next

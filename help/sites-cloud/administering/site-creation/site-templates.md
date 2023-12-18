@@ -31,15 +31,15 @@ You can add multiple templates to AEM, which can then be used to [create sites](
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Tap or click **Create** at the top-right of the screen and from the drop-down menu select **Site from template**.
+1. Select **Create** at the top-right of the screen and from the drop-down menu select **Site from template**.
 
    ![Creating a site from a template](../assets/create-site-from-template.png)
 
-1. In the Create Site wizard, tap or click **Import** at the top of the left column.
+1. In the Create Site wizard, select **Import** at the top of the left column.
 
    ![Site creation wizard](../assets/site-creation-wizard.png)
 
-1. In the file browser, locate the template you wish to use and tap or click **Upload**.
+1. In the file browser, locate the template you want to use and select **Upload**.
 
 1. Once uploaded, it appears in the list of available templates. 
    
@@ -55,8 +55,8 @@ Site templates are simply packages with a logical structure that clearly reflect
 
 * `files`: Folder with the UI kit, XD file, and possibly other files
 * `previews`: Folder with screenshots of the site template
-* `site`: Content package of the content that is copied for each site created from this template such as page templates, pages, etc.
-* `theme`: Sources of the [site theme](site-themes.md) to modify how the site looks including CSS, JavaScript, etc.
+* `site`: Content package of the content that is copied for each site created from this template such as page templates, pages, and so on.
+* `theme`: Sources of the [site theme](site-themes.md) to modify how the site looks including CSS, JavaScript, and so on.
 
 ## Standard Site Template {#standard-site-template}
 

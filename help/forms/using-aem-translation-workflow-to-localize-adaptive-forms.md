@@ -18,11 +18,11 @@ This article explains the process to use AEM translation workflow with Adaptive 
 
 The machine translation service immediately translates your content in Adaptive Form and Document of Record. [!DNL AEM Forms] is pre-configured to use a trial version of [!DNL Microsoft Translator] for machine translation. Perform the following steps to enable machine translation for your Adaptive Forms and Document of Record:
 
-1. On the [!DNL AEM Forms] UI, select a form, and tap the **Add Dictionary** option.
+1. On the [!DNL AEM Forms] UI, select a form, and select the **Add Dictionary** option.
 1. In **Add Dictionary to Translation Project** screen, select the **Create a new translation project** or **Add to an existing translation project** option.
 1. In the **Project Title** field, specify the title. For example, `Government Reference Site - German locale.`
 1. In the **Target Languages** field, specify a locale (For example, `German(de)`), and click **Done**. You can specify multiple locales. The form is translated to all the locales specified in the **Target Languages** field.
-1. In the Dictionary Added dialog box, click **Open Projects**. In the Projects screen, open the newly-created project.
+1. In the Dictionary Added dialog box, click **Open Projects**. In the Projects screen, open the created project.
 1. Click the **ellipses** at the bottom of the **Translation Summary** tile. The Translation Summary screen opens.
 1. Click the **Edit** icon at the top of the **Translation Summary** screen. Open the **Translation** tab and select Machine Translation in the **Translation Method** screen. Select the appropriate **Translation Provider** and **Cloud Configuration**. Click the **Done** icon at the top of the screen.
 1. On the **Translation Job** tile, click the ![aem62forms_downarrow](assets/aem62forms_downarrow.png) icon, and click **Start**. The status of the tile changes to Draft. On completion of the translation, the status changes to **Ready for review**. Refresh the page after a few minutes and verify the status.
@@ -42,7 +42,7 @@ The machine translation service immediately translates your content in Adaptive 
    [Document of Record settings](generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Customize the branding information of the Document of Record](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) and ensure that the browser locale is set to the same language to which you have localized the Adaptive Form using machine language. The browser locale helps localize the branding information in the Document of Record.
-1. To view the localized Document of Record, tap Generate Preview. The Document of Record PDF is generated and opened in a new tab in your browser.
+1. To view the localized Document of Record, select Generate Preview. The Document of Record PDF is generated and opened in a new tab in your browser.
 
 <!-- ## Localizing an Adaptive Form and its Document of Record using Human Translation {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 

@@ -25,7 +25,7 @@ Before using this feature, it is important to follow these instructions to ensur
 
 1. Log into Adobe Admin Console (https://adminconsole.adobe.com/).
 1. Ensure the proper IMS Org ID is selected in the upper right corner.
-1. Click on the Products navigation option.
+1. Click the Products navigation option.
 1. Check that "Adobe Experience Manager as a Cloud Service" has been provisioned for the IMS Org.
 1. Check that "Adobe Analytics" has been provisioned for the IMS Org.
 1. Go to Cloud Manager (https://experience.adobe.com/cloud-manager).
@@ -38,15 +38,15 @@ The environment should now be ready for Experience Cloud Setup Automation.
 ## How to Setup
 
 1. Navigate to **Sites** and select the root of the site to integrate with Adobe Analytics.
-1. Expand the side rail menu and tap **Setup Analytics**.
+1. Expand the side rail menu and select **Setup Analytics**.
 
-    This is a new option in the side rail that will open a panel that will provide controls and status for Experience Cloud Setup Automation. 
-1. Tap the **Integrate Analytics** button.
+    This is a new option in the side rail that opens a panel that provides controls and status for Experience Cloud Setup Automation. 
+1. Select the **Integrate Analytics** button.
 1. In the resulting dialog, provide a name for the **Report Suite ID**.
 
-    This string is used to create a new [Report Suite ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en) in Adobe Analytics as the data store for the analytics data for the selected AEM site. The string provided is appended with environment and tier identifiers to ensure uniqueness.
+    This string is used to create a [Report Suite ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en) in Adobe Analytics as the data store for the analytics data for the selected AEM site. The string provided is appended with environment and tier identifiers to ensure uniqueness.
 
-1. Refresh the page and panel and tap **Check Integration Status** to check the status of the automation.
+1. Refresh the page and panel and select **Check Integration Status** to check the status of the automation.
 
     The automation setup occurs asynchronously. The **Check Integration Status** will show the current status of the integration.
 
@@ -69,7 +69,7 @@ Next, navigate to Adobe Analytics to view the data flowing in from events on the
 
 1. Navigate to Adobe Analytics in the same IMS Org as your AEM site.
 1. Create a new overview report for AEM Sites navigating to **Reports** > **Engagement** > **Adobe Experience Manager** > **Site Performance Overview**.
-1. Tap **Open Report**.
+1. Select **Open Report**.
 1. Select the **Report Suite ID** that matches the Report Suite name used in the previous exercise.
 1. View analytics data flow into the new template over time.
 

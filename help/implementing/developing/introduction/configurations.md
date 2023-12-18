@@ -62,8 +62,8 @@ The Configuration Browser allows an administrator to easily create, manage, and 
 
 It is simple to create a configuration in AEM using the Configuration Browser.
 
-1. Log into AEM as a Cloud Service and from the main menu select **Tools** -&gt; **General** -&gt; **Configuration Browser**.
-1. Tap or click **Create**.
+1. Log into AEM as a Cloud Service and from the main menu select **Tools** &gt; **General** &gt; **Configuration Browser**.
+1. Select **Create**.
 1. Provide a **Title** and a **Name** for your configuration.
 
    ![Create configuration](assets/configuration-create.png)
@@ -77,7 +77,7 @@ It is simple to create a configuration in AEM using the Configuration Browser.
    * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [Editable Templates](/help/sites-cloud/authoring/features/templates.md)
    * various Cloud Configurations
-1. Tap or click **Create**.
+1. Select **Create**.
 
 >[!TIP]
 >
@@ -87,9 +87,9 @@ It is simple to create a configuration in AEM using the Configuration Browser.
 
 If you think of configurations as workspaces, access rights can be set on those configurations to enforce who may and may not access those workspaces.
 
-1. Log into AEM as a Cloud Service and from the main menu select **Tools** -&gt; **General** -&gt; **Configuration Browser**.
+1. Log into AEM as a Cloud Service and from the main menu select **Tools** &gt; **General** &gt; **Configuration Browser**.
 1. Select the configuration that you want to edit, and then select **Properties** in the tool bar.
-1. Select any additional features that you wish to add to the configuration.
+1. Select any additional features that you want to add to the configuration.
 
    >[!NOTE]
    >
@@ -104,7 +104,7 @@ If you think of configurations as workspaces, access rights can be set on those 
 1. Check the access options that one or more selected users or roles should have and click **Add**.
    ![Add access rights to a configuration](assets/configuration-edit.png)
 1. Repeat the steps so you can select users or roles and assign additional access rights as necessary.
-1. Tap or click **Save &amp; Close** when finished.
+1. Select **Save &amp; Close** when finished.
 
 ## Configurations as a Developer {#configurations-developer}
 
@@ -190,9 +190,9 @@ To support this the configuration lookup, AEM has an inheritance and fallback me
 
 ### Using Configurations {#using-configurations}
 
-Configurations in AEM are based on Sling Context-Aware Configurations. The Sling bundles provide a service API that can be used to get context-aware configurations. Context-aware configurations are configurations that are related to a content resource or a resource tree as was [described in the previous example.](#developer-example)
+Configurations in AEM are based on Sling Context-Aware Configurations. The Sling bundles provide a service API that can be used to get context-aware configurations. Context-aware configurations are configurations that are related to a content resource or a resource tree as was [described in the previous example](#developer-example).
 
-For further details about Context-Aware Configurations, examples, and how to use them, [see the Sling documentation.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
+For more details about Context-Aware Configurations, examples, and how to use them, see the [Sling documentation.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 
 ### ConfMgr Web Console {#confmgr-web-console}
 

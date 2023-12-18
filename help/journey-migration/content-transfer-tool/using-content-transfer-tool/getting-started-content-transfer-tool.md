@@ -12,10 +12,10 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 >id="aemcloud_ctt_download"
 >title="Download"
 >abstract="The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via Package Manager on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
-The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package via [Package Manager](/help/implementing/developing/tools/package-manager.md) on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version. For more details on the latest version, see [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+The Content Transfer Tool can be downloaded as a zip file from the Software Distribution Portal. You can install the package by way of [Package Manager](/help/implementing/developing/tools/package-manager.md) on your source Adobe Experience Manager (AEM) instance. Make sure to download the latest version. For more details on the latest version, see [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html).
 
 Only version 2.0.0 and higher is supported, and it is advisable to use the most recent version.
 
@@ -28,7 +28,7 @@ Only version 2.0.0 and higher is supported, and it is advisable to use the most 
 >
 >A connection error can also occur if a migration set has been deleted from Cloud Acceleration Manager.
 
-The source AEM instance may be running behind a firewall where it can only reach certain hosts which have been added to an Allow List. To successfully run an extraction, the following endpoints will need to be accessible from the instance that is running AEM:
+The source AEM instance may be running behind a firewall where it can only reach certain hosts which have been added to an Allow List. To successfully run an extraction, the following endpoints need to be accessible from the instance that is running AEM:
 
 * The Azure blob storage service: `casstorageprod.blob.core.windows.net`
 
@@ -39,7 +39,7 @@ The source AEM instance may be running behind a firewall where it can only reach
 
 Understanding SSL/TLS connection problems can sometimes be difficult. To troubleshoot connection issues during an extraction process, you can enable SSL logging via the System Console of the source AEM environment by following these steps:
 
-1. Navigate to the Adobe Experience Manager Web Console on your source instance, by going to **Tools - Operations - Web Console** or directly to the URL at *https://serveraddress:serverport/system/console/configMgr*
+1. Navigate to the Adobe Experience Manager Web Console on your source instance, by going to **Tools > Operations > Web Console** or directly to the URL at *https://serveraddress:serverport/system/console/configMgr*
 1. Search for **Content Transfer Tool Extraction Service Configuration**
 1. Use the pencil icon button to edit its configuration values 
 1. Enable the **Enable ssl logging for extraction** setting, then press **Save**:
@@ -68,23 +68,23 @@ The following section applies to the new version of the Content Transfer Tool. F
 >abstract="Learn how to create and manage a migration set and how to copy the extraction key."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="Tutorial - using Content Transfer Tool"
 
-<!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
+<!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
-1. Log into Cloud Acceleration Manager (CAM) and click on the CAM project that you had created previously to assess your readiness to move to AEM as a Cloud Service. If you haven't created a CAM project, refer to Creating and Managing a Project in CAM.
+1. Log into Cloud Acceleration Manager (CAM) and click the CAM project that you had created previously to assess your readiness to move to AEM as a Cloud Service. If you haven't created a CAM project, refer to Creating and Managing a Project in CAM.
 
-1. Click on the **Content Transfer** card. This will take you to the Migration Set List view.
+1. Click the **Content Transfer** card to open the Migration Set List view.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
-1. Create a Migration Set by clicking on **Create Migration Set**.
+1. Create a Migration Set by clicking **Create Migration Set**.
 
    >[!NOTE]
    >
-   >A maximum of twenty migration sets, including expired sets, can be created per project in Cloud Acceleration Manager.
+   >A maximum of 20 migration sets, including expired sets, can be created per project in Cloud Acceleration Manager.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   The following dialog box is presented. Notice that a migration set will expire after a prolonged period of inactivity. After warnings are displayed on the project card and the migration job table rows for a period of time, the migration set will expire and its data will no longer be available. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
+   The following dialog box is presented. Notice that a migration set will expire after a prolonged period of inactivity. After warnings are displayed on the project card and the migration job table rows for a time period, the migration set will expire and its data will no longer be available. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
@@ -92,7 +92,7 @@ The following section applies to the new version of the Content Transfer Tool. F
    >
    >The name must follow the same conventions of an AEM node so cannot contain any of these characters: . / : [ ] | *
 
-1. You should now see your migration list in the list view. Click on the three dots symbol (**...**) to open the dropdown and click on **Copy Extraction key**. You will need this key during the Extraction phase. Copy this Extraction key.
+1. You should now see your migration list in the list view. Select the three dots symbol (**...**) to open the drop-down and select **Copy Extraction key**. You need this key during the Extraction phase. Copy this Extraction key.
 
    >[!NOTE]
    >
@@ -105,14 +105,14 @@ The following section applies to the new version of the Content Transfer Tool. F
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_populate_migrationset" 
 >title="Populate Migration Set"
->abstract="After creating a migration set it needs to be populated with the content from the source instance that needs to be moved to the AEM as a Cloud Service environment. To do this, the Content Transfer Tool needs to be installed on the source instance."
+>abstract="After creating a migration set, it must be populated with the content from the source instance that must be moved to the AEM as a Cloud Service environment. To do this, the Content Transfer Tool must be installed on the source instance."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="Extracting Content"
 
-To populate the migration set you created in the Cloud Acceleration Manager, you need to install the latest version of the Content Transfer Tool on your source Adobe Experience Manager (AEM) instance. Follow this section to learn how to populate the migration set.
+To populate the migration set you created in the Cloud Acceleration Manager, install the latest version of the Content Transfer Tool on your source Adobe Experience Manager (AEM) instance. To learn how to populate the migration set, follow this section.
 
 1. After installing the latest version of the Content Transfer Tool on your source Adobe Experience Manager instance, go to **Operations - Content Migration**
 
-1. Click on **Create Migration Set**
+1. Click **Create Migration Set**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
@@ -120,7 +120,7 @@ To populate the migration set you created in the Cloud Acceleration Manager, you
 
    >[!NOTE]
    >
-   >Make sure that the extraction key is valid and is not close to its expiration. You can get this information in the **Create Migration Set** dialog after you paste the extraction key. If you get a connection error, see [Source Environment Connectivity](#source-environment-connectivity) for more information.
+   >Make sure that the extraction key is valid and is not near its expiration. You can get this information in the **Create Migration Set** dialog after you paste the extraction key. If you get a connection error, see [Source Environment Connectivity](#source-environment-connectivity) for more information.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 
@@ -143,7 +143,7 @@ To populate the migration set you created in the Cloud Acceleration Manager, you
       >* `/home`
       >* `/etc` (some `/etc` paths are allowed to be selected in CTT)
 
-1. Click on **Save** after you populate all the fields in the **Create Migration Set** details screen.
+1. Click **Save** after you populate all the fields in the **Create Migration Set** details screen.
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
@@ -155,7 +155,7 @@ To populate the migration set you created in the Cloud Acceleration Manager, you
    * A *green cloud* indicates that you can complete the extraction process.
    * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
 
-1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
+1. Select a migration set and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
 
@@ -169,19 +169,19 @@ By running a size check on the migration set, you are able to:
 
 Follow the steps below to run a size check:
 
-1. Select a migration set and click on **Check Size**. 
+1. Select a migration set and click **Check Size**. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
-1. This will open up the **Check Size** dialog.  
+1. This opens up the **Check Size** dialog.  
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Click on **Check Size** to start the process. You will then return to the migration set list view, and you should see a message indicating that **Check Size** is running.
+1. Click **Check Size** to start the process. You will then return to the migration set list view, and you should see a message indicating that **Check Size** is running.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. After **Check Size** process is completed, the status changes to **FINISHED**. Select the same migration set and click on **Check Size** to view results. Below is an example of **Check Size** results with no warnings.
+1. After **Check Size** process is completed, the status changes to **FINISHED**. Select the same migration set and click **Check Size** to view results. Below is an example of **Check Size** results with no warnings.
  
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
    
@@ -196,4 +196,4 @@ Follow the steps below to run a size check:
 
 ## What's Next {#whats-next}
 
-Once you have learned how to create a migration set, you are now ready to learn about Extraction and Ingestion Processes in Content Transfer Tool. Before you learn these processes, you must review [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) to significantly speed up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service.
+Once you have learned how to create a migration set, you are now ready to learn about Extraction and Ingestion Processes in Content Transfer Tool. Before you learn these processes, you must review [Handling Large Content Repositories](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) to significantly speed-up the extraction and ingestion phases of the content transfer activity to move content to AEM as a Cloud Service.

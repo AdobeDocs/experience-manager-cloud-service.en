@@ -17,7 +17,7 @@ Cloud Manager makes it easy to retrieve your repository info by using the **Acce
 
    ![Access Repo Info button on Environments card](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Click on the **View Repo Info** button to open a dialog to view:
+1. Click the **View Repo Info** button to open a dialog to view:
 
    * The URL to the Cloud Manager git repository.
    * The git username.

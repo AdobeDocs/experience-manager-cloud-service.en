@@ -50,9 +50,11 @@ There are four types of [environment](/help/implementing/cloud-manager/manage-en
     * This is independent from the changes being initiated either by Adobe as part of a maintenance update, or by your code deployments. 
     * You can also conduct manual testing in the case of a code deployment. 
   * The content of the stage environment is usually kept in sync with the production content using the self-service content copy feature.
+  * Conduct performance and security tests on stage environment.  It has the same sizing as production.
 * Development environment:
   * A development environment allows your developers to implement, and test AEM applications under the same runtime conditions as the stage and production environments. 
   * The changes go through a deployment pipeline allowing for the same code quality and security gates as in production deployment pipelines.
+  * Development environments do not have the same sizing as stage and production, and should not be used to conduct performance and security tests. 
 * Rapid development environment (RDE):
   * An RDE environment allows for rapid development iterations when deploying new or existing code into the RDE instances, without going through a formal deployment pipeline as found on regular development environments.
 
@@ -129,7 +131,7 @@ There are other adjacent services:
   * Is responsible for exposing customer data such as licensing metrics (for example, Content Requests, Storage, Users) or usage reports (such as the number of uploads, downloads).
   * The customer data can be exposed via APIs, and within product user interfaces (such as the Cloud Manager).
 * The Real-User Metric (RUM) service:
-  * Is responsible for collecting key metrics from a customer experience (such as page views, core web vitals, conversion events), as well as responding to associated queries (for example, top page views for a given domain in the last 7 days).
+  * Is responsible for collecting key metrics from a customer experience (such as page views, core web vitals, conversion events), and responding to associated queries (for example, top page views for a given domain in the last 7 days).
 * The Assets Compute service:
   * Is responsible for processing uploaded images, videos and documents; for example, PDF and Adobe Photoshop files. Processing can use Adobe Sensei to extract image and video metadata (such as descriptive tags or primary color tones), then generate renditions (such as different sizes or formats), with access to APIs such as the Adobe Photoshop and Adobe Lightroom APIs.
 * The Identity Management Service (IMS):
@@ -170,7 +172,7 @@ The code and configuration for AEM projects is stored in a code repository, from
   * For storing server-side Java code and OSGI configurations for the AEM author and publish tiers.
 * AEM front end:
   * For storing client-side JS, CSS and HTML code for the AEM author and publish tiers. 
-    For further details on clientlibs, see [Using Client-Side Libraries on AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+    For more details on clientlibs, see [Using Client-Side Libraries on AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
 * AEM web tier:
   * Stores the dispatcher configuration files for the AEM publish tier.
 * AEM configuration:

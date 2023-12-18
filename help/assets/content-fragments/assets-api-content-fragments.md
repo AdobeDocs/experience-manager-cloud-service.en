@@ -24,6 +24,10 @@ Learn about support for Content Fragments in the Assets HTTP API, an important p
 >
 >The current implementation of the Assets HTTP API is based on the [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) architectural style.
 
+>[!NOTE]
+>
+>For the latest information about Experience Manager APIs, please also visit [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+
 The [Assets REST API](/help/assets/mac-api-assets.md) allows developers for Adobe Experience Manager as a Cloud Service to access content (stored in AEM) directly over the HTTP API, by way of CRUD (Create, Read, Update, Delete) operations.
 
 The API lets you operate Adobe Experience Manager as a Cloud Service as a headless CMS (Content Management System) by providing Content Services to a JavaScript front-end application. Or any other application that can execute HTTP requests and handle JSON responses.
@@ -251,13 +255,13 @@ Usage can differ depending on whether you are using an AEM Author or Publish env
 
 >[!NOTE]
 >
->For further details, see the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>See the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ## Limitations {#limitations}
 
 There are a few limitations:
 
-* **Content fragment models are currently not supported**: they cannot be read or created. To be able to create a new, or update an existing, content fragment, developers have to know the correct path to the content fragment model. Currently the only method to get an overview of these is through the administration UI.
+* **Content fragment models are currently not supported**: they cannot be read or created. To be able to create or update an existing content fragment, developers have to know the correct path to the content fragment model. Currently the only method to get an overview of these is through the administration UI.
 * **References are ignored**. Currently there are no checks on whether an existing content fragment is referenced. Therefore, for example, deleting a content fragment might result in issues on a page that contains a reference to the deleted Content Fragment.
 * **JSON data type** The REST API output of the *JSON data type* is *string-based output*.
 

@@ -43,7 +43,7 @@ After the credentials are created, they will appear under the **Technical Accoun
 
 ![View Credentials](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
 
-Users can later view the credentials using the View action. In addition, as described later in the article, users can edit the credentials for the same technical account. They accomplish this editing by creating a new private key or certificate, for cases when the certificate must be renewed or revoked.
+Users can later view the credentials using the View action. In addition, as described later in the article, users can edit the credentials for the same technical account. They accomplish this editing by creating a private key or certificate, for cases when the certificate must be renewed or revoked.
 
 Users with the AEM as a Cloud Service Environment Administrator role can later create credentials for additional technical accounts. This ability is useful when different APIs have differing access requirements. For example, read versus read-write.
 

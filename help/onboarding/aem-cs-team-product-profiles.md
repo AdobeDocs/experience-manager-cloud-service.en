@@ -18,9 +18,9 @@ AEM as a Cloud Service is a fully cloud-native offering that delivers AEM as a s
 
 Your AEM as a Cloud Service team members are added and assigned to one or more of the following product profiles via the Admin Console during onboarding.
 
-* **AEM Administrators**: An AEM administrator is typically assigned to developers, in particular developers who will need to have access to, for example, the development environments. The AEM administrator's product profile is used to grant administrator privileges in the associated AEM instance.
+* **AEM Administrators**: An AEM administrator is typically assigned to developers, in particular developers who need access to, for example, the development environments. The AEM administrator's product profile is used to grant administrator privileges in the associated AEM instance.
 
-* **AEM Users**: AEM users are the users in your organization who use AEM as a Cloud Service generally to create content. These users will need to access AEM to do their tasks. The AEM users product profile is typically assigned to an AEM content author who creates and reviews the content. This content can be of many types such as pages, assets, publications, and so on. The AEM users product profile shown below is assigned to these members.
+* **AEM Users**: AEM users are the users in your organization who use AEM as a Cloud Service generally to create content. These users need to access AEM to do their tasks. The AEM users product profile is typically assigned to an AEM content author who creates and reviews the content. This content can be of many types such as pages, assets, publications, and so on. The AEM users product profile shown below is assigned to these members.
 
 ![Product profiles](/help/onboarding/assets/admin-console-profiles.png)
 
@@ -36,7 +36,7 @@ Your AEM as a Cloud Service team members are added and assigned to one or more o
 
 >[!TIP]
 >
->* To learn more about about AEM product profiles, see [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md).
+>* To learn more about AEM product profiles, see [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md).
 >* For more information on the onboarding process, see [onboarding journey](/help/journey-onboarding/overview.md).
 
 ## Cloud Manager Product Profiles {#cloud-manager-product-profiles}
@@ -76,5 +76,5 @@ Your Cloud Manager team will include at least:
 
 >[!TIP]
 >
->* To learn more about about Cloud Manager product profiles, see [Assigning Team Members to Cloud Manager Product Profiles](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+>* To learn more about Cloud Manager product profiles, see [Assigning Team Members to Cloud Manager Product Profiles](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 >* For more information on the onboarding process, see [onboarding journey](/help/journey-onboarding/overview.md).

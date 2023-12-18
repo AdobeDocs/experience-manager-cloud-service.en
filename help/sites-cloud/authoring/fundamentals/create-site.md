@@ -1,6 +1,6 @@
 ---
 title: Creating a New Site
-description: Learn how administrators use AEM to create a new site using site templates to define the style and structure of your site.
+description: Learn how administrators use AEM to create a site using site templates to define the style and structure of your site.
 feature: Administering
 role: Admin
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
@@ -8,7 +8,7 @@ exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
 
 # Creating a New Site {#new-site}
 
-Learn how administrators use AEM create a new site using site templates to define the style and structure of your site.
+Learn how administrators use AEM create a site using site templates to define the style and structure of your site.
 
 {{edge-delivery-authoring}}
 

@@ -46,10 +46,10 @@ The Content Transformer is bundled with the [Content Transfer Tool](/help/journe
 
    ![image](/help/journey-migration/content-transformer/assets/ct-4.png)
 
-1. You can select all or specific issues and take actions such as move, remove, and rename to resolve them. Custom paths can also be added using **Add Paths** button on the top-right corner.
+1. You can select all or specific issues and move, remove, or rename to resolve them. Custom paths can also be added using **Add Paths** button on the top-right corner.
 
    >[!NOTE]
-   > When using the move operation, it is recommended to move all the paths to only one folder (for example under `/etc/packages/content-transformation/paths`), so when the backup packages are installed to bring the instance back to the original state, the folder (`/etc/packages/content-transformation/paths`) can be deleted using remove operation to reduce the repository size.
+   > When using the move operation, it is recommended to move all the paths to only one folder (for example, under `/etc/packages/content-transformation/paths`), so when the backup packages are installed to bring the instance back to the original state, the folder (`/etc/packages/content-transformation/paths`) can be deleted using remove operation to reduce the repository size.
 
    ![image](/help/journey-migration/content-transformer/assets/ct-5.png)
    ![image](/help/journey-migration/content-transformer/assets/ct-6.png)
@@ -57,7 +57,7 @@ The Content Transformer is bundled with the [Content Transfer Tool](/help/journe
    >[!NOTE]
    > Any operation that can change the source content (`move`/`remove`/`rename`) will by default create a backup package of the source paths under `/etc/packages/content-transformation` before the transformation. Although each operation dialog has an option to disable/enable backup package creation, it is strictly recommended to always have the enable package creation selected.
 
-1. An example of a backup package created for the move operation of the paths is shown below, click install to bring back the source paths. Note that the installation will only bring the source paths back to their original location and not delete the paths where they were moved during transformation. To delete the paths in the moved location, click **Add Paths** button to add the location (for example `/etc/packages/content-transformation/paths`), select the location and click **Remove**. 
+1. An example of a backup package created for the move operation of the paths is shown below, click install to bring back the source paths. The installation only brings the source paths back to their original location and not delete the paths where they were moved during transformation. To delete the paths in the moved location, click **Add Paths** button to add the location (for example, `/etc/packages/content-transformation/paths`), select the location and click **Remove**. 
 
    >[!CAUTION]
    > Do not delete `/etc/packages/content-transformation` as this is the location where the backup packages reside. Only when you are sure that you do not need these packages anymore, you can delete this location to reduce the repository size.

@@ -10,23 +10,23 @@ This document describes how to create and manage pages with Adobe Experience Man
 
 >[!NOTE]
 >
->Your account needs the appropriate access rights and permissions to take action on pages such as create, copy, move, edit, and delete.
+>Your account needs the appropriate access rights and permissions to act on pages such as create, copy, move, edit, and delete.
 >
 >If you encounter any problems we suggest you contact your system administrator.
 
 <!--
->Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to take action on pages such as create, copy, move, edit, and delete.
+>Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to act on pages such as create, copy, move, edit, and delete.
 -->
 
 >[!TIP]
 >
->There are a number of [keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) that you can use from the websites console that make organizing your pages more efficient.
+>There are several [keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) that you can use from the websites console that make organizing your pages more efficient.
 
 {{edge-delivery-authoring}}
 
 ## Organizing your Website {#organizing-your-website}
 
-As an author you will need to organize your website within AEM. This involves creating and naming your content pages so that:
+As an author, you need to organize your website within AEM. This involves creating and naming your content pages so that:
 
 * You can easily find them on the author environment
 * Visitors to your site can easily browse them on the publish environment
@@ -64,7 +64,7 @@ From any point, you can see the upward branch from breadcrumbs in the header bar
 
 ### Page Naming Conventions {#page-naming-conventions}
 
-When creating a new page there are two keys fields:
+When creating a page there are two keys fields:
 
 * **[Title](#title)**:
 
@@ -89,7 +89,7 @@ The page **Title** and **Name** can be created separately but are related:
 >
 >Also keep in mind that some browsers (for example, older versions of IE) can only accept URLs up to a certain length, so there is also technical reason to keep page names short.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and the JCR.
+When creating a page, AEM [validates the page name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and the JCR.
 
 The minimum allowed characters are:
 
@@ -107,7 +107,7 @@ Full details of all characters allowed can be found in [the naming conventions](
 
 #### Title {#title}
 
-If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and JCR.
+If you supply only a page **Title** when creating a page, AEM derives the page **Name** from this string and [validate the name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and JCR.
 
 A **Title** field containing invalid characters is accepted, but the name derived has the invalid characters substituted. For example:
 
@@ -118,7 +118,7 @@ A **Title** field containing invalid characters is accepted, but the name derive
 
 #### Name {#name}
 
-When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters, the field is highlighted with an explanatory message.
+When you supply a page **Name** when creating a page, AEM [validates the name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters, the field is highlighted with an explanatory message.
 
 ![Example of entering an invalid page name](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -179,7 +179,7 @@ Unless all pages have been created for you in advance, you must create a page be
 
 1. From the first stage of the wizard you can either:
 
-    * Select the template you want used to create the new page, then click/tap **Next** to proceed.
+    * Select the template you want used to create the new page, then select **Next** to proceed.
 
     * **Cancel** to abort the process.
 
@@ -187,7 +187,7 @@ Unless all pages have been created for you in advance, you must create a page be
 
 1. From the final stage of the wizard you can either:
 
-    * Use the three tabs to enter the [page properties](/help/sites-cloud/authoring/fundamentals/page-properties.md) you want assigned to the new page, then click/tap **Create** to actually create the page.
+    * Use the three tabs to enter the [page properties](/help/sites-cloud/authoring/fundamentals/page-properties.md) you want assigned to the new page, then select **Create** to actually create the page.
 
     * Use **Back** to return to template selection.
 
@@ -200,14 +200,14 @@ Unless all pages have been created for you in advance, you must create a page be
     * **Name**:
 
         * This is used to generate the URI. If not specified, the name is derived from the title.
-        * If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and JCR.
+        * If you supply a page **Name** when creating a page, AEM [validates the name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and JCR.
         * You **cannot submit invalid characters** in the **Name** field. When AEM detects invalid characters the field is highlighted and an explanatory message shown to indicate the characters that need removing/replacing.
 
    >[!TIP]
    >
    >See [Page Naming Conventions](#page-naming-conventions).
 
-   The minimum information required to create a new page is the **Title**.
+   The minimum information required to create a page is the **Title**.
 
    ![Providing page title](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
@@ -219,7 +219,7 @@ Unless all pages have been created for you in advance, you must create a page be
    >
    >If you create a page using a name that already exists at that location, the system will automatically generate a variation of the name by appending a number. For example, if `beach` already exists, a new page becomes `beach1`.
 
-1. If you return to the console you will see your new page:
+1. If you return to the console you can see your new page:
 
    ![Resulting new page](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
 
@@ -263,7 +263,7 @@ You can copy a page and all of its sub-pages to a new location:
    ![Copy](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Navigate to the location for the new copy of the page.
-1. Tap or click the **Paste** icon that became available.
+1. Select the **Paste** icon that became available.
 
    ![Paste](/help/sites-cloud/authoring/assets/paste.png)
 
@@ -273,7 +273,7 @@ You can copy a page and all of its sub-pages to a new location:
 
    ![Paste dialog](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. Tap or click the **Paste** button to confirm the paste transaction and create the new page(s).
+1. Select the **Paste** button to confirm the paste transaction and create the new page(s).
 
 >[!NOTE]
 >
@@ -303,11 +303,11 @@ AEM offers you the functionality to update any internal links that refer to the 
 
    ![Move button](/help/sites-cloud/authoring/assets/move.png)
 
-   This will open the move page wizard.
+   This opens the move page wizard.
 
 1. From the **Rename** stage of the wizard you can either:
 
-    * Specify the name you want the page to have after it is moved, then click/tap **Next** to proceed.
+    * Specify the name you want the page to have after it is moved, then select **Next** to proceed.
     * **Cancel** to abort the process.
 
    ![Move and rename page](/help/sites-cloud/authoring/assets/move-page-rename.png)
@@ -377,7 +377,7 @@ Page move actions are always processed asynchronously, allowing the user to cont
   ![Asynchronous page move](assets/asynchronous-page-move.png)
 -->
 
-The status of asynchronous jobs can be checked in the [**Async Jobs Status** dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** -&gt; **Tools** -&gt; **Operations** -&gt; **Jobs**
+The status of asynchronous jobs can be checked in the [**Async Jobs Status** dashboard](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** &gt; **Tools** &gt; **Operations** &gt; **Jobs**
 
 >[!NOTE]
 >

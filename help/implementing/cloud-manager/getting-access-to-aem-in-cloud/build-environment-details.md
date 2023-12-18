@@ -12,35 +12,41 @@ Learn about Cloud Manager's build environment and how it builds and tests your c
 
 Cloud Manager builds and tests your code using a specialized build environment.
 
-* The build environment is Linux-based, derived from Ubuntu 18.04.
-* With the [October 2023 release of Cloud Manager,](/help/implementing/cloud-manager/release-notes/current.md) Java and Maven versions are being updated on an ongoing basis.
-    * Apache Maven 3.6.0 or 3.8.8 is installed.
-    * The Java versions installed are Oracle JDK 8u202 and Oracle JDK 11.0.2. or Oracle JDK 8u371 and Oracle JDK 11.0.20.
-    * By default, the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_202` which contains Oracle JDK 8u202 or to `/usr/lib/jvm/jdk1.8.0_371` which contains Oracle JDK 8u371. See the [Alternate Maven Execution JDK Version](#alternate-maven-jdk-version) section for more details.
+* The build environment is Linux-based, derived from Ubuntu 22.04.
+* Apache Maven 3.8.8 is installed.
+  * Adobe recommends users [update their Maven repositories to use HTTPS instead of HTTP.](#https-maven)
+* The Java versions installed are Oracle JDK 8u371 and Oracle JDK 11.0.20.
+* By default, the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_371` which contains Oracle JDK 8u371. See the [Alternate Maven Execution JDK Version](#alternate-maven-jdk-version) section for more details.
 * There are some additional system packages installed which are necessary.
-
   * `bzip2`
   * `unzip`
   * `libpng`
   * `imagemagick`
   * `graphicsmagick`
-
 * Other packages may be installed at build time as described in the section [Installing Additional System Packages.](#installing-additional-system-packages)
 * Every build is done on a pristine environment; the build container does not keep any state between executions.
 * Maven is always run with the following three commands.
-
- * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
- * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
- * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
+  * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+  * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+  * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven is configured at a system level with a `settings.xml` file, which automatically includes the public Adobe artifact repository using a profile named `adobe-public`. (See [Adobe Public Maven Repository](https://repo1.maven.org/) for more details).
+* Node.js 18 is available for [front end and full stack pipelines.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
 
 >[!NOTE]
 >
 >Although Cloud Manager does not define a specific version of the `jacoco-maven-plugin`, the version used must be at least `0.7.5.201505241946`.
 
+## HTTPS Maven Repositories {#https-maven}
+
+Cloud Manager [release 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) began a rolling update to the build environment (completing with release 2023.12.0), which included an update to Maven 3.8.8. A significant change introduced in Maven 3.8.1 was a security enhancement aimed at mitigating potential vulnerabilities. Specifically, Maven now disables all insecure `http://*` mirrors by default, as outlined in the [Maven release notes.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+
+As a result of this security enhancement, some users may face issues during the build step, particularly when downloading artifacts from Maven repositories that use insecure HTTP connections.
+
+To ensure a smooth experience with the updated version, Adobe recommends that users update their Maven repositories to use HTTPS instead of HTTP. This adjustment aligns with the industry's growing shift towards secure communication protocols and helps maintain a secure and reliable build process.
+
 ### Using a Specific Java Version {#using-java-support}
 
-By default, projects are built by the Cloud Manager build process using the Oracle 8 JDK. Customers wishing to use an alternate JDK have two options.
+By default, projects are built by the Cloud Manager build process using the Oracle 8 JDK. Customers wanting to use an alternate JDK have two options.
 
 * [Use Maven Toolchains.](#maven-toolchains)
 * [Select an alternate JDK version for the entire Maven execution process.](#alternate-maven-jdk-version)
@@ -155,9 +161,9 @@ Variable names must observe the following conventions.
 * Variables may only contain alphanumeric characters and the underscore (`_`).
 * The names should be all upper-case.
 * There is a limit of 200 variables per pipeline.
-* Each name must be less than 100 characters.
+* Each name must be 100 characters or less.
 * Each `string` variable value must be less than 2048 characters.
-* Each `secretString` type variable value must be less than 500 characters.
+* Each `secretString` type variable value must be 500 characters or less.
 
 When used inside a Maven `pom.xml` file, it is typically helpful to map these variables to Maven properties using a syntax similar to this.
 
@@ -177,7 +183,7 @@ When used inside a Maven `pom.xml` file, it is typically helpful to map these va
 
 ## Installing Additional System Packages {#installing-additional-system-packages}
 
-Some builds require additional system packages to be installed to function fully. For example, a build may invoke a Python or Ruby script and will need to have an appropriate language interpreter installed. This can be done by calling the [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) in your `pom.xml` to invoke APT. This execution should generally be wrapped in a Cloud Manager-specific Maven profile. This example installs Python.
+Some builds require additional system packages to be installed to function fully. For example, a build may invoke a Python or Ruby script and must have an appropriate language interpreter installed. This can be done by calling the [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) in your `pom.xml` to invoke APT. This execution should generally be wrapped in a Cloud Manager-specific Maven profile. This example installs Python.
 
 ```xml
         <profile>
