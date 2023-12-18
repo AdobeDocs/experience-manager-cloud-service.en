@@ -7,20 +7,20 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 14538 {#release-14538}
+## Release 14697 {#release-14697}
 
-Summarized below are the continuous improvements for maintenance release 14538, which was publicly released on December 6, 2023. This maintenance release is an update from previous maintenance release 14227.
+Summarized below are the continuous improvements for maintenance release 14697, which was publicly released on December 18, 2023. It replaces release 14538 which had an issue. The previous maintenance release was release 14227.
 
-2023.12.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
+2023.12.0 Feature Activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-14538}
+### Enhancements {#enhancements-14697}
 
 * GRANITE-46723: User Sync - SAML Migration from default-sync to IDP-based sync.
 * OAK-10311: Replication - Optimize blob comparison to reduce replication time of large batch of assets in AEM.
 * OAK-10511: Replication - Reduce network round-trips to reduce replication time of large assets in AEM.
 * GRANITE-48334: Publishers - Collection script is missing for RUM.
 
-### Fixed Issues {#fixed-issues-14538}
+### Fixed Issues {#fixed-issues-14697}
 
 * CQ-4354867: ToggleCondition reference refers to non-existent field in InstanceActionServlet.
 * CQ-4349948: Localization of 'Profile Properties' strings in Edit User Settings under Tools → Security → Users.
@@ -34,11 +34,11 @@ Summarized below are the continuous improvements for maintenance release 14538, 
 * ASSETS-30811: Reference Updates for Blocktag Service bound.
 * GRANITE-46418: Update Sling events in AEM: GaugeSupport has infinite recursion in registerWithSuffix (SLING-11918).
 
-### Known Issues {#known-issues-14538}
+### Known Issues {#known-issues-14697}
 
 None.
 
-### Embedded Technologies {#embedded-tech-14538}
+### Embedded Technologies {#embedded-tech-14697}
 
 |Technology|Version|Link|
 |---|---|---|
