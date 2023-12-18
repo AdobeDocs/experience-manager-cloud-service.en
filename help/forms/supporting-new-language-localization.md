@@ -1,6 +1,7 @@
 ---
 title: How do I add support for new locales to an Adaptive Form based on Foundation Components?
 description: For Adaptive Forms, you can add locales for more languages apart from the one provided out of the box.
+feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 ---
 # Supporting new locales for Adaptive Forms localization {#supporting-new-locales-for-adaptive-forms-localization}
@@ -98,7 +99,7 @@ Perform this step only if the `<locale>` you are adding is not among `en`, `de`,
 1. Add the `<locale-name>` default locale values `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, if not present already.
 
 1. Add the `<locale>` to the values of the `languages` property of `/etc/languages`.
-1. Add the newly-created folders in the `filter.xml` under etc/META-INF/[folder hierarchy] as: 
+1. Add the created folders in the `filter.xml` under etc/META-INF/[folder hierarchy] as: 
 
     ```
     <filter root="/etc/clientlibs/[locale-name]"/>

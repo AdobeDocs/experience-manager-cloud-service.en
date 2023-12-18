@@ -51,7 +51,7 @@ Follow the [AEM Project Archetype](https://experienceleague.adobe.com/docs/exper
 ![AEM Commerce Project](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-Build and deploy the newly-created AEM Commerce project to the local AEM SDK by running the following command from the project's root directory.
+Build and deploy the created AEM Commerce project to the local AEM SDK by running the following command from the project's root directory.
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
@@ -210,10 +210,9 @@ To initialize the React-based Peregrine and CIF core components, create the requ
             baseUrl: storeConfig.storeRootUrl
         },
         eventsCollector: {
-            // Enable the Experience Platform Connector and define the org and datastream to use
-            aep: {
-                orgId: // TODO: add your orgId
-                datastreamId: // TODO: add your datastreamId
+            eventForwarding: {
+                commerce: true,
+                aep: false,
             }
         }
     };
@@ -263,7 +262,7 @@ To initialize the React-based Peregrine and CIF core components, create the requ
         useDataLayerEvents();
         
         useEffect(() => {
-            // implement a proper marketing opt-in, for demo purpose we hard-set the consent cookie
+            // implement a proper marketing opt-in, for demo purpose you hard-set the consent cookie
             if (document.cookie.indexOf('mg_dnt') < 0) {
                 document.cookie += '; mg_dnt=track';
             }
@@ -400,11 +399,11 @@ Complete the following steps to create a Datastream in the Experience Platform.
 
     ![AEP Create Datastreams](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1.  Name your Datastream using the __Name__ required field. Under the __Event Schema__ field, select the newly-created schema and click __Save__.
+1.  Name your Datastream using the __Name__ required field. Under the __Event Schema__ field, select the created schema and click __Save__.
 
     ![AEP Define Datastreams](../assets/aep-integration/AEP-Datastream-Define.png)
 
-1.  Open the newly-created Datastream, and click __Add Service__.
+1.  Open the created Datastream, and click __Add Service__.
 
     ![AEP Datastreams Add Service](../assets/aep-integration/AEP-Datastream-Add-Service.png)    
 
@@ -429,20 +428,18 @@ After completing the above Experience Platform setup, you should have `datastrea
 
 ## Trigger `addToCart` event and verify data collection {#event-trigger-verify}
 
-The above steps complete the AEM Commerce and Experience Platform setup. You can now trigger an `addToCart` event and verify data collection using the Experience Platform debugger and dataset __Metrics and graphs__ toggle in the product UI.
+The above steps complete the AEM Commerce and Experience Platform setup. You can now trigger an `addToCart` event and verify data collection using the [Snowplow Inspector](https://chromewebstore.google.com/detail/snowplow-inspector/maplkdomeamdlngconidoefjpogkmljm?pli=1) and dataset __Metrics and graphs__ toggle in the product UI.
 
 To trigger the event, you can use AEM author or the publish service from your local setup. For this example, use AEM author by logging in to your account.
 
 1.  From Sites page, select the __My Demo StoreFront > us > en__ page and click __Edit__ in top action bar.
 
-1.  From the top action bar, click __View as Published__, then click on any preferred category from the storefront's navigation.
+1.  From the top action bar, click __View as Published__, then click any preferred category from the storefront's navigation.
 
-1.  Click on any preferred product card in the __Product Page__, then select __color, size__ to enable the __Add to Cart__ button. 
+1.  Click any preferred product card in the __Product Page__, then select __color, size__ to enable the __Add to Cart__ button. 
 
 
-1.  Open the __Adobe Experience Platform Debugger__ extension from the browser's extension panel and select __Experience Platform Wed SDK__ in the left rail. 
-
-    ![AEP Debugger](../assets/aep-integration/AEP-Debugger.png)
+1.  Open the __Snowplow Inspector__ extension from the browser's extension panel and select __Experience Platform Wed SDK__ in the left rail. 
 
 
 1.  Return to the __Product Page__ and click __Add to Cart__ button. This sends data to the Experience Platform. The __Adobe Experience Platform Debugger__ extension shows the event details.
@@ -459,9 +456,9 @@ To trigger the event, you can use AEM author or the publish service from your lo
 
 ## Implementation Details {#implementation-details}
 
-The [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) is built on top of the [Experience Platform Connector for Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), which is part of the [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) project.
+The [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) is built on top of the [Data Connection for Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), which is part of the [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) project.
 
- The PWA Studio project lets you create Progressive Web Application (PWA) storefronts powered by Adobe Commerce or Magento Open Source. The project also contains a component library called [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) for adding logic to visual components. The [Peregrin library](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) also provides the custom React hooks that are used by [Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) to integrate with Experience Platform seamlessly. 
+ The PWA Studio project lets you create Progressive Web Application (PWA) storefronts powered by Adobe Commerce or Magento Open Source. The project also contains a component library called [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) for adding logic to visual components. The [Peregrin library](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) also provides the custom React hooks that are used by [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) to integrate with Experience Platform seamlessly. 
 
 
 ## Supported Events {#supported-events}
@@ -499,6 +496,6 @@ __Profile XDM Events:__
 For more information, see the following resources:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [Experience Platform connector overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
-- [Experience Platform Connector Events](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
+- [[!DNL Data Connection] overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+- [[!DNL Data Connection] Events](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
 - [Adobe Experience Platform overview](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

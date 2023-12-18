@@ -120,8 +120,8 @@ After prerequisites are in place, perform the following steps to integrate [!DNL
 
 1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL DocuSign]** and select a folder to host the configuration.
 
-1. On the configurations page, tap **[!UICONTROL Create]** to create [!DNL DocuSign] configuration in AEM Forms.
-1. In the **[!UICONTROL General]** tab of the **[!UICONTROL Create DocuSign Configuration]** page, specify a **[!UICONTROL Name]** for the configuration, and tap **[!UICONTROL Next]**. You can optionally specify a **[!UICONTROL Title]**.
+1. On the configurations page, select **[!UICONTROL Create]** to create [!DNL DocuSign] configuration in AEM Forms.
+1. In the **[!UICONTROL General]** tab of the **[!UICONTROL Create DocuSign Configuration]** page, specify a **[!UICONTROL Name]** for the configuration, and select **[!UICONTROL Next]**. You can optionally specify a **[!UICONTROL Title]**.
 
 1. Copy the URL in your current browser window to a notepad. The URL is required to configure [!DNL DocuSign] application with [!DNL AEM Forms] in a later step.
 
@@ -140,9 +140,9 @@ After prerequisites are in place, perform the following steps to integrate [!DNL
 
 1. Specify the **[!UICONTROL Client ID]** (DocuSign Integration Key) and **[!UICONTROL Client Secret]** (DocuSign Secret Key).
 
-1. Tap **[!UICONTROL Connect to DocuSign]**. When prompted for credentials, provide username and password of the account used while creating [!DNL DocuSign] application. When asked to confirm access for `your developer account`, click **[!UICONTROL Allow Access]**. If the credentials are correct, a success message appears.
+1. Select **[!UICONTROL Connect to DocuSign]**. When prompted for credentials, provide username and password of the account used while creating [!DNL DocuSign] application. When asked to confirm access for `your developer account`, click **[!UICONTROL Allow Access]**. If the credentials are correct, a success message appears.
 
-1. Tap **[!UICONTROL Create]** to create the [!DNL DocuSign] configuration.
+1. Select **[!UICONTROL Create]** to create the [!DNL DocuSign] configuration.
 
 1. Select the configuration and click **[!UICONTROL Publish]**, select the configuration, and click **[!UICONTROL Publish]**. It replicates the configuration to corresponding publish environments.
 
@@ -162,7 +162,7 @@ You can enable [!DNL DocuSign] for an existing Adaptive Form or create an [!DNL 
 To create a sign-enabled Adaptive Form:
 
 1. Navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Tap **[!UICONTROL Create]** and select **[!UICONTROL Adaptive Form]**. A list of templates appears. Select a template and tap **[!UICONTROL Next]**.
+1. Select **[!UICONTROL Create]** and select **[!UICONTROL Adaptive Form]**. A list of templates appears. Select a template and select **[!UICONTROL Next]**.
 1. In the **[!UICONTROL Basic]** tab:
 
    1. Specify the **[!UICONTROL Name]** and **[!UICONTROL Title]** for the Adaptive Form.
@@ -177,23 +177,23 @@ To create a sign-enabled Adaptive Form:
 
    - If you do not have a custom form template, select the **[!UICONTROL Generate Document of Record]** option. When you use the option, the document sent for signing displays all the fields of the Adaptive Form.
 
-1. Tap **[!UICONTROL Create.]** A sign-enabled Adaptive Form is created. You can add your [!DNL DocuSign] fields to the form and send it for signing.
-1. Open the adaptive form in edit mode. In the **[!UICONTROL Content]** tab, tap the **[!UICONTROL Form Container]** and tap ![Configure](assets/configure-icon.svg).
+1. Select **[!UICONTROL Create.]** A sign-enabled Adaptive Form is created. You can add your [!DNL DocuSign] fields to the form and send it for signing.
+1. Open the adaptive form in edit mode. In the **[!UICONTROL Content]** tab, select the **[!UICONTROL Form Container]** and select ![Configure](assets/configure-icon.svg).
 
-1. In the **[!UICONTROL Submission]** section, select **[!UICONTROL Submit with DocuSign electronic signatures]** from the **[!UICONTROL Submit Action]** dropdown list.
+1. In the **[!UICONTROL Submission]** section, select **[!UICONTROL Submit with DocuSign electronic signatures]** from the **[!UICONTROL Submit Action]** drop-down list.
 
-1. In the **[!UICONTROL Action Configuration]** section, tap **[!UICONTROL Add]** to add a recipient and specify the email address of the recipient. Tap **[!UICONTROL Add]** again to add more recipients.
+1. In the **[!UICONTROL Action Configuration]** section, select **[!UICONTROL Add]** to add a recipient and specify the email address of the recipient. Select **[!UICONTROL Add]** again to add more recipients.
 
 1. Specify the subject for the email message in the **[!UICONTROL Email Subject]** field. Select **Include Attachments** to include attachments in the email message.
 
-1. Tap ![Save](assets/save_icon.svg) to save the properties.
+1. Select ![Save](assets/save_icon.svg) to save the properties.
 
 #### Enable [!DNL DocuSign] for an Adaptive Form {#editafsign}
 
 To use [!DNL DocuSign] in an existing Adaptive Form:
 
 1. Navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Select the Adaptive Form and tap **[!UICONTROL Properties]**.
+1. Select the Adaptive Form and select **[!UICONTROL Properties]**.
 1. In the **[!UICONTROL Basic]** tab, select the [configuration container](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) created while integrating [!DNL DocuSign] with [!DNL AEM Forms].
 1. In the **[!UICONTROL Form Model]** tab, select one of the following options:
 
@@ -201,14 +201,14 @@ To use [!DNL DocuSign] in an existing Adaptive Form:
 
    - If you do not have a custom form template, select the **[!UICONTROL Generate Document of Record]** option. When you use the option, the document sent for signing displays all the fields of the Adaptive Form.
 
-1. Tap **[!UICONTROL Save & Close]**. The Adaptive Form is enabled for [!DNL DocuSign]. Now, you can add your [!DNL DocuSign] fields to the form and send it for signing.
+1. Select **[!UICONTROL Save & Close]**. The Adaptive Form is enabled for [!DNL DocuSign]. Now, you can add your [!DNL DocuSign] fields to the form and send it for signing.
 
-1. Open the adaptive form in edit mode. In the **[!UICONTROL Content]** tab, tap the **[!UICONTROL Form Container]** and tap ![Configure](assets/configure-icon.svg).
+1. Open the adaptive form in edit mode. In the **[!UICONTROL Content]** tab, select the **[!UICONTROL Form Container]** and select ![Configure](assets/configure-icon.svg).
 
-1. In the **[!UICONTROL Submission]** section, select **[!UICONTROL Submit with DocuSign electronic signatures]** from the **[!UICONTROL Submit Action]** dropdown list.
+1. In the **[!UICONTROL Submission]** section, select **[!UICONTROL Submit with DocuSign electronic signatures]** from the **[!UICONTROL Submit Action]** drop-down list.
 
-1. In the **[!UICONTROL Action Configuration]** section, tap **[!UICONTROL Add]** to add a recipient and specify the email address of the recipient. Tap **[!UICONTROL Add]** again to add more recipients.
+1. In the **[!UICONTROL Action Configuration]** section, select **[!UICONTROL Add]** to add a recipient and specify the email address of the recipient. Select **[!UICONTROL Add]** again to add more recipients.
 
 1. Specify the subject for the email message in the **[!UICONTROL Email Subject]** field. Select **Include Attachments** to include attachments in the email message.
 
-1. Tap ![Save](assets/save_icon.svg) to save the properties.
+1. Select ![Save](assets/save_icon.svg) to save the properties.

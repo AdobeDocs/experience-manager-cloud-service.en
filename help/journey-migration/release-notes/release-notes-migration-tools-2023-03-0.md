@@ -1,12 +1,12 @@
 ---
 title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.03.0
-description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.03.0
+description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.03.0
 feature: Release Information
 exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
 ---
 # Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.03.0 {#release-notes}
 
-This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.03.0.
+This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2023.03.0.
 
 ## Best Practices Analyzer {#bpa-release}
 
@@ -27,7 +27,7 @@ The Release Date for Best Practices Analyzer v2.1.40 is March 03, 2023.
 
 ### Release Date {#release-date-ctt}
 
-The Release Date for Content Transfer Tool v2.0.16 is March 08, 2022.
+The Release Date for Content Transfer Tool v2.0.16 is March 08, 2023.
 
 ### What's New {#what-is-new-ctt}
 

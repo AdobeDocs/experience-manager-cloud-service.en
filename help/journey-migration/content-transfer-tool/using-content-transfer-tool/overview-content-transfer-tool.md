@@ -1,6 +1,6 @@
 ---
 title: Overview to Content Transfer Tool
-description: Learn how to use the Content Transfer Tool in order to tranfer content from an on-premise AEM instance to AEM as a Cloud Service
+description: Learn how to use the Content Transfer Tool to tranfer content from an on-premise AEM instance to AEM as a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 ---
 # Overview {#overview-content-transfer-tool}

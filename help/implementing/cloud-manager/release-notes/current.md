@@ -1,13 +1,13 @@
 ---
-title: Release Notes for Cloud Manager 2023.10.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2023.10.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2023.12.0 in Adobe Experience Manager as a Cloud Service
+description: These are the release notes for Cloud Manager 2023.12.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 ---
 
-# Release Notes for Cloud Manager 2023.10.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release Notes for Cloud Manager 2023.12.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager release 2023.10.0 in AEM as a Cloud Service.
+This page documents the release notes for Cloud Manager release 2023.12.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -15,30 +15,43 @@ This page documents the release notes for Cloud Manager release 2023.10.0 in AEM
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager release 2023.10.0 in AEM as a Cloud Service is 5 October 2023. The next release is planned for 2 November 2023.
+The release date for Cloud Manager release 2023.12.0 in AEM as a Cloud Service is 14 December 2023. The next release is planned for 18 January 2024.
 
 ## What's New {#what-is-new}
 
-* Improvements to [indexing](/help/operations/indexing.md) have reduced pipeline duration when deploying new indexes.
-  * Improvements vary depending on content profile.
-* Automatic [updates for development environments](/help/implementing/cloud-manager/manage-environments.md#updating-environments) are enabled by default for new programs, saving you the time having to execute updates manually.
-  * This update will be rolled out in a phased manner.
-*  With the October 2023 release of Cloud Manager, Java versions are being updated via a phased roll-out.
-    * The minor versions for Java 8 and 11 and Maven have been updated and will be rolled out in a phased manner over the next 2 months. The new version has multiple security fixes and bugfixes. The new versions are:
-      * **Maven:** `3.8.8`
-      * **Java  8 version:** `/usr/lib/jvm/jdk1.8.0_371`
-      * **Java 11 version:** `/usr/lib/jvm/jdk-11.0.20`
-    * [See the OpenJDK advisory](https://openjdk.org/groups/vulnerability/advisories/) for details on the security and bugfixes in these JDK updates.
+* [Cloud Manager custom permissions](/help/implementing/cloud-manager/custom-permissions.md) let you create custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.
+  * This feature will be rolled out in a phased manner with completion expected with the February 2024 Cloud Manager release.
+  * Please send an email to `Grp-CloudManager-custom-permissions@adobe.com` from the email address associated with your Adobe ID, if you wish to be enabled sooner.
+* Build containers now support Node.js version 18 for [frontend pipelines.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+* For newly-created Cloud Manager programs, [the associated New Relic sub-account](/help/implementing/cloud-manager/user-access-new-relic.md) is not activated by default.
+  * For existing programs where the New Relic sub-account has not been accessed for more than 90 days, it will be deactivated.
+  * If you wish to use the New Relic sub-account, you will need to opt-in via Cloud Manager.
+* The rollouts of updates to the [build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) that were [announced and begun with the October release of Cloud Manager](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) have been completed.
+  * Support for Node 18 was added for [front end and full stack pipelines.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+  * Java 8 minor version was updated to `jdk1.8.0_371`.
+  * Java 11 minor version was updated to `jdk-11.0.20`.
+  * Maven was updated to version to 3.8.8.
+    * Maven now disables all insecure `http://*` mirrors by default.
+    * [Adobe recommends](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) users update their Maven repositories to use HTTPS instead of HTTP.
+  * The build container base image was updated to Ubuntu 22.04.
 
 ## Early Adoption Program {#early-adoption}
 
-Be a part of our early adoption program and have a chance to test some upcoming features.
+For a chance to test some upcoming features, be a part of Adobe's early adoption program.
 
-### Custom Permissions {#custom-permissions}
+### Client-Side Collection via Real User Monitoring (RUM) {#rum}
 
-[Cloud Manager custom permissions](/help/implementing/cloud-manager/custom-permissions.md) allows you to create new custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.
+You can leverage the [Real User Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) to enable client-side collection for AEM as a Cloud Service.
 
-if you are interested in testing this new feature and sharing your feedback, please send and email `Grp-CloudManager-custom-permissions@adobe.com` from your email address associated with your Adobe ID.
+Real User Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. This is beneficial for customers who use either Adobe-managed CDN or non-Adobe managed CDN. For customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
+
+If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com` from the email address associated with your Adobe ID. Please include the domain name for production, stage, and dev environments in your email.  Availability of the early adopter program of this feature is limited.
+
+### Bring your own GitHub {#byo-github}
+
+If you use GitHub to manage your repositories, [you can now validate code directly within your GitHub repositories through Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) This integration eliminates the need to consistently sync code with the Adobe repository and allows you to verify pull requests before merging them into the main branches.
+
+If you are interested in testing this new feature and sharing your feedback, send an email to `Grp-CloudManager_BYOG@adobe.com` from your email address associated with your Adobe ID.
 
 ### Self-Service Content Restore {#content-restore}
 
@@ -47,7 +60,7 @@ if you are interested in testing this new feature and sharing your feedback, ple
 * Point-in-time backup restoration for the previous 24 hours
 * Fixed time restorations for up to seven days
 
-If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-restorefrombackup-adopter@adobe.com` from your email associated with your Adobe ID. Please note:
+If you are interested in testing this new feature and sharing your feedback, send an email to `aemcs-restorefrombackup-adopter@adobe.com` from your email associated with your Adobe ID.
 
 * The early adopter program is limited to development environments only.
 * Availability of the early adopter program of this feature is limited.
@@ -57,18 +70,6 @@ If you are interested in testing this new feature and sharing your feedback, ple
 
 [The Cloud Manager Experience Audit dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md) includes a trended view of your page performance scores along with insights and recommendations to help you improve them. Experience Audit is included as a step in the Cloud Manager production pipeline.
 
-The dashboard leverages Google Lighthouse, an open-source, automated tool for improving the quality of your web apps. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more.
+The dashboard uses Google Lighthouse, an open-source, automated tool for improving the quality of your web apps. You can run it against any web page, public, or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more.
 
-Interested in test-driving the new dashboard? Please send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID and we can get you started.
-
-## Known Issues {#known-issues}
-
-There is a known bug preventing [config deployment pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) from being pushed to production.
-
-If the **Pause before deploying to Production** option is required for a config deployment pipeline, the following is the suggested workaround until the bug is resolved.
-
-1. Run the pipeline.
-1. Test the code in the staging environment.
-1. When deploying and approval becomes available, click on **Reject**.
-1. Edit the pipeline to disable the **Pause before deploying to Production** option.
-1. Run the pipeline again. Iit will run again on staging then on production.
+Interested in test-driving the new dashboard? To get started, send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID.

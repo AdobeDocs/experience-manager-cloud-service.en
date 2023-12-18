@@ -47,7 +47,7 @@ Basic Playback monitoring in an AEM Screens player allows us to:
 
 * Improve reactivity to blank screens or broken experiences in the field.
 
-* Decreases the risk of showing a broken experience to the end user.
+* Decreases the risk of showing a broken experience to the user.
 
 ### Understanding Properties {#understand-properties}
 

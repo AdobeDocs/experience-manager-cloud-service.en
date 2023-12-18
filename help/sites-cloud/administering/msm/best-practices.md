@@ -29,7 +29,7 @@ The additional benefits of using a blueprint configuration are that they:
 
 In the case that a blueprint configuration is not referenced, rollouts can only be initiated from the Live Copies themselves, essentially pulling content from source.
 
-When creating a new site with Live Copy, it is advantageous to create blueprint configurations to ensure the availability of the full MSM feature set.
+When creating a site with Live Copy, it is advantageous to create blueprint configurations to ensure the availability of the full MSM feature set.
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ Notice that AEM has two main approaches for creating Live Copies:
 
 The following are a few considerations to keep in mind when creating a site:
 
-* To create a new site, you need a [blueprint configuration](creating-live-copies.md#managing-blueprint-configurations).
+* To create a site, you need a [blueprint configuration](creating-live-copies.md#managing-blueprint-configurations).
 * To allow the selection of language paths to create in a new site, the corresponding language roots must exist in the blueprint (source).
 * Once a [new site has been created as a Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (using **Create**, then **Site**), the first two levels of this Live Copy are *shallow*. Children of the page do not belong to the live-relationship, but a roll-out will still descend if a live-relationship that matches the trigger is found.
 
@@ -107,13 +107,13 @@ When considering moving pages in a Live Copy, consider the following best practi
    * Do not add other actions to this configuration.
 1. Position the new configuration.
    * To fully roll out the page move while deleting respective pages at their old location in the Live Copy:
-     * Position the newly-created configuration before the standard rollout configuration. The standard rollout configuration will take care of deleting the pages in their old locations.
+     * Position the created configuration before the standard rollout configuration. The standard rollout configuration will take care of deleting the pages in their old locations.
      * To roll out the page move while keeping respective pages in their old locations in the Live Copies (essentially duplicating the content):
-       * Position the newly-created configuration after the standard rollout configuration. This will ensure no content is deleted in the Live Copy or deactivated from publish.
+       * Position the created configuration after the standard rollout configuration. This will ensure no content is deleted in the Live Copy or deactivated from publish.
 
 ## Customizing Rollouts {#customizing-rollouts}
 
-MSM rollout configurations are highly customizable. You should be aware that automating rollouts can have far reaching consequences. As a best practice, you should plan very carefully before engaging in the following activities:
+MSM rollout configurations are highly customizable. Automating rollouts can have far reaching consequences. As a best practice, you should plan very carefully before engaging in the following activities:
 
 * Automating rollouts such as with [onModify triggers](#onmodify)
 * Customizing [node types/properties](#node-types-properties)

@@ -438,7 +438,7 @@ The existing Quickview implementation normally represents a chain of inter-relat
 1. The back-end logic returns the corresponding Quick view data or content back to the front-end code.
 1. The front-end code loads the Quick view data or content.
 1. Optionally, the front-end code converts the loaded Quick view data into an HTML representation.
-1. The front-end code displays a modal dialog box or panel and renders the HTML content on the screen for the end user.
+1. The front-end code displays a modal dialog box or panel and renders the HTML content on the screen for the user.
 
 These calls do not represent independent public API calls which can be called by the web page logic from an arbitrary step. Instead, it is a chained call where every next step is hidden in the last phase (callback) of the previous step.
 

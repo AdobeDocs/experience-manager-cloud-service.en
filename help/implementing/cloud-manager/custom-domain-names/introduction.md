@@ -40,7 +40,7 @@ In one environment you can have both domains installed in the AEM-managed CDN an
 
 ## Workflow {#workflow}
 
-Adding a custom domain name requires interaction between the DNS service and Cloud Manager. Because of this there are a number of steps required to install, configure,and verify custom domain names. The following table gives an overview of the steps required, including what to do when common errors occur.
+Adding a custom domain name requires interaction between the DNS service and Cloud Manager. Because of this there are several steps required to install, configure,and verify custom domain names. The following table gives an overview of the steps required, including what to do when common errors occur.
 
 |Step|Description|Responsibility|Learn More|
 |--- |--- |--- |---|
@@ -60,7 +60,7 @@ Adding a custom domain name requires interaction between the DNS service and Clo
 
 ## Limitations {#limitations}
 
-There are a number of limitations to using custom domain names with AEMaaCS.
+There are several limitations to using custom domain names with AEMaaCS.
 
 * Custom domain names are supported in Cloud Manager for both publish and preview services for Sites programs. Custom domains for author services are not supported.
 * Each Cloud Manager environment can host up to a maximum of 500 custom domains per environment.
