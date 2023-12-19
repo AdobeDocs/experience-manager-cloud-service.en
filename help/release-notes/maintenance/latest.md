@@ -33,6 +33,7 @@ Summarized below are the continuous improvements for maintenance release 14697, 
 * ASSETS-31297: Prevent delete of copied asset from dynamic media.
 * ASSETS-30811: Reference Updates for Blocktag Service bound.
 * GRANITE-46418: Update Sling events in AEM: GaugeSupport has infinite recursion in registerWithSuffix (SLING-11918).
+* GRANITE-48937: Fix regression from Maintenance Release 14538 where Omnisearch doesn't work on aem/start.html page.
 
 ### Known Issues {#known-issues-14697}
 
