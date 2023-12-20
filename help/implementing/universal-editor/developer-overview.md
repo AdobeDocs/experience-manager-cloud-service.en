@@ -1,11 +1,11 @@
 ---
-title: Universal Editor Developer Overview
-description: If you are developer interested in how the Universal Editor works and how to use it in your project, this document give you an end-to-end introduction.
+title: Universal Editor AEM Developer Overview
+description: If you are an AEM developer interested in how the Universal Editor works and how to use it in your project, this document give you an end-to-end introduction.
 ---
 
 # Universal Editor Developer Overview {#developer-overview}
 
-If you are developer interested in how the Universal Editor works and how to use it in your project, this document give you an end-to-end introduction.
+If you are an AEM developer interested in how the Universal Editor works and how to use it in your project, this document give you an end-to-end introduction.
 
 ## Purpose {#purpose}
 
@@ -71,7 +71,7 @@ The X-Frame option `sameorigin` prevents rendering AEM pages within a frame. You
 1. Open the Configuration Manager.
 
    ```text
-   http://localhost:4502/system/console/configMgr
+   https://localhost:8443/system/console/configMgr
    ```
 
 1. Edit the OSGi configuration `org.apache.sling.engine.impl.SlingMainServlet`
@@ -102,7 +102,7 @@ The login token cookie is sent to AEM as a third-party domain. Therefore the sam
 1. Open the Configuration Manager.
 
    ```text
-   http://localhost:4502/system/console/configMgr
+   https://localhost:8443/system/console/configMgr
    ```
 
 1. Edit the OSGi configuration `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
@@ -131,7 +131,7 @@ You must add the necessary JavaScript library to the page component of the WKND 
 1. Open CRXDE Lite.
 
    ```text
-   http://localhost:4502/crx/de
+   https://localhost:8443/crx/de
    ```
 
 1. Under `/apps/wknd/components/page` edit the file `customheaderlibs.html`.
@@ -148,8 +148,151 @@ You must add the necessary JavaScript library to the page component of the WKND 
 
 The page now loads with the proper JavaScript library to allow the Universal Editor to connect to your page and the timeout error no longer appears in the console.
 
+>[!TIP]
+>
+>* The library can be loaded either in the header or the footer.
+>* The `universal-editor-embedded.js` library [is available on NPM](https://www.npmjs.com/package/@adobe/universal-editor-cors) and you can host it yourself if that is required or place it directly into your application.
 
+## Defining a Connection to Persist Changes {#connection}
 
+The WKND page now loads successfully in the Universal Editor and the JavaScript library loads to connect the editor to your app.
+
+However you will notice quickly that you can not interact with the page in the Universal Editor. The Universal Editor can not actually edit your page. For the Universal Editor to be able to edit your content, you need to define a connection so it knows where to write the content. In our case for local development, we need to write back to our local AEM development instance at `https://localhost:8443`.
+
+1. Open CRXDE Lite.
+
+   ```text
+   https://localhost:8443/crx/de
+   ```
+
+1. Under `/apps/wknd/components/page` edit the file `customheaderlibs.html`.
+
+   ![Editing the customheaderlibs.html file](assets/dev-instrument-app.png)
+
+1. Add the necessary connection metadata to the end of the file.
+
+   ```html
+   <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
+   ```
+
+1. Click **Save All** and then reload the Universal Editor.
+
+Now the Universal Editor can not only load your content successfully, but also knows where to persist any changes you make to the content in the Universal Editor. This is the first step in instrumenting your app to be editable with the Universal Editor.
+
+>[!TIP]
+>
+>* See the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md#connection) for more details on the connection metadata.
+>* See the document [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md#service) for more details on the structure of the Universal Editor.
+>* See the document [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md) if you want to connect to a self-hosted version of the Universal Editor.
+
+## Instrumenting Components {#instrumenting-components}
+
+However, you probably notice that you still can do very little with the Universal Editor. If you attempt to click on the teaser at the top of the WKND page in the Universal Editor, you can not actually select it (or anything else on the page).
+
+Your components must also be instrumented to be editable with the Universal Editor. To do this, we must edit the teaser component. Therefore we will need to overlay the Core Components since the Core Components are under `/libs` and `/libs` is immutable.
+
+1. Open CRXDE Lite.
+
+   ```text
+   https://localhost:8443/crx/de
+   ```
+
+1. Select the node `/libs/core/wcm/components` and click **Overlay Node** on the toolbar.
+
+1. With `/apps/` selected as the **Overlay Location** click **OK**.
+
+   ![Overlay the teaser](assets/dev-overlay-teaser.png)
+
+1. Select the `teaser` node under `/libs/core/wcm/components` and click **Copy** in the toolbar.
+
+1. Select the overlaid node at `/apps/core/wcm/components` and click **Paste** in the toolbar.
+
+1. Double-click the file `/apps/core/wcm/components/teaser/v2/teaser/teaser.html` to edit it.
+
+   ![Editing the teaser.html file](assets/dev-edit-teaser.png)
+
+1. At the end of the first `div` at line 26, add the instrumentation details for the component.
+
+   ```text
+   itemscope
+   itemid="urn:aem:${resource.path}"
+   itemtype="component"
+   data-editor-itemlabel="Teaser"
+   ```
+
+1. Click **Save All** in the toolbar and reload the Universal Editor.
+
+1. Click the teaser component at the top of the page and see that you can now select it.
+
+1. If you click the **Content tree** icon in the properties rail of the Universal Editor, you can see that the editor recognized all the teasers on the page now that you have instrumented it. The teaser you selected is the one highlighted.
+
+   ![Selecting the instrumented teaser component](assets/dev-select-teaser.png)
+
+>[!TIP]
+>
+>See the document [Using the Sling Resource Merger in Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/sling-resource-merger.md) for more details on overlaying nodes.
+
+## Instrument Subcomponents of the Teaser {#subcomponents}
+
+You can now select the teaser, but still not edit it. This is because the teaser is a composite of different components such as the image and title component. We must instrument these sub-components in order to edit them.
+
+1. Open CRXDE Lite.
+
+   ```text
+   https://localhost:8443/crx/de
+   ```
+
+1. Select the node `/apps/core/wcm/components/teaser/v2/teaser/` and double-click the `title.html` file.
+
+   ![Edit the title.html file](assets/dev-edit-title.png)
+
+1. Insert the following properties at the end of the `h2` tag (near line 17).
+
+   ```text
+   itemprop="jcr:title"
+   itemtype="text"
+   data-editor-itemlabel="Title"
+   ```
+
+1. Click **Save All** in the toolbar and reload the Universal Editor.
+
+1. Click the title of the same teaser component at the top of the page and see that you can now select it. The content tree also shows the title as part of the selected teaser component.
+
+   ![Select title within the teaser](assets/dev-select-title.png)
+
+You can now edit the title of the teaser component! These changes are then persisted to your local development instance of AEM.
+
+## What does it all mean? {#what-does-it-mean}
+
+Now that we can edit the title of the teaser, let's take a moment to review what we have accomplished and how.
+
+We have identified the teaser component to the Universal Editor by instrumenting it.
+* `itemscope` identifies it as an item for the Universal Editor.
+* `itemid` identifies the resource in AEM that is being edited.
+* `itemtype` defines that the items should be treated as a page component (as opposed to say, a container).
+* `data-editor-itemlabel` displays a user-friendly label in the UI for the selected teaser.
+
+We have also instrumented the title component within the teaser component.
+* `itemprop` is the JCR attribute which will be written.
+* `itemtype` is how the attribute should be edited. In this case, with the text editor since it is a title (as opposed to say, the rich text editor).
+
+## Persisting Changes using Authentication Headers {#auth-header}
+
+Now you can edit the title of the teaser in-line and changes are persisted in the browser.
+
+![Edited title of the teaser](assets/dev-edited-title.png)
+
+However, if you reload the browser, the previous title is reloaded. This is because the editor can't yet authenticate to your AEM instance.
+
+If you show the network tab of the browser developer tools and search for `udpate`, you can see that it is encountering a 500 error when you try to edit the title.
+
+![Error when trying to edit the title](assets/dev-edit-error.png)
+
+When using the Universal Editor to edit your production AEM content, the Universal Editor uses the same IMS token that you used to log on to the editor to authenticate to AEM to facilitate writing back to the JCR.
+
+When you are developing locally, you can't use the AEM identity provider, so you need to manually provide a way to authenticate by explicitly setting an authentication header.
+
+Basic YWRtaW46YWRtaW4=
 
 lax cookie
 uBlock origin
