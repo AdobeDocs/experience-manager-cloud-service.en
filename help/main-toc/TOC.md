@@ -772,8 +772,7 @@ user-guide-title: AEM as a Cloud Service
   + Publishing Edge Delivery Applications {#publish}
     + [Authoring](/help/edge/docs/authoring.md)
     + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
-    + [Slack Bot](/help/edge/docs/slack.md)
-    + [Placeholders](/help/edge/docs/placeholders.md)
+      + [Placeholders](/help/edge/docs/placeholders.md)
     + [Sitemap](/help/edge/developer/sitemap.md)
     + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
   + Launching Edge Delivery Applications {#launch}
@@ -791,7 +790,7 @@ user-guide-title: AEM as a Cloud Service
       + [Sidekick Library](/help/edge/docs/sidekick-library.md)
     + [FAQ](/help/edge/docs/faq.md)
     + [Admin API](https://www.aem.live/docs/admin.html)
-    + [status.hlx.live](https://status.hlx.live/history)
+    + [AEM Status](https://www.aemstatus.net)
     + Tools {#tools}
       + [Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
       + [Github Bot](https://github.com/apps/aem-code-sync)
