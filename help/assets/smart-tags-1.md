@@ -15,11 +15,11 @@ For an instance, the words saved in the dictionary in an alphabetical order are 
 
 In the background, the functionality uses the artificially intelligent framework of [Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) to automatically apply smart tags to uploaded assets, by default, along with the text related to business taxonomy.
 
-## Prerequisites and configuration
+## Prerequisites and configuration {#smart-tags-prereqs-config}
 
-Smart Tags is automatically provisioned for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+Smart Tags is automatically provisioned for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] and hence no configuration is required.
 
-## Smart Tags workflow
+## Smart Tags workflow {#smart-tags-workflow}
 
 [!DNL Adobe Sensei] powered smart tagging uses artificial intelligence models to analyze content and add tags to the assets. Thereby-reducing time for DAM users to deliver rich experiences to their customers. The Smart Tags are displayed in descending order of their [confidence score](#confidence-score) in asset [!UICONTROL Properties].
 
@@ -257,6 +257,14 @@ These models are not always perfect at identifying tags. The current version of 
 +++**What are the supported file formats for tagging an asset?**
   
   Refer to [Supported file formats](#supported-file-formats).
+
++++
+
++++
+
++++**In which language smart tags are generated?**
+  
+  Smart tags are generated in English language only. They can be translated to other languages by translating the whole asset including metadata.
 
 +++
 
