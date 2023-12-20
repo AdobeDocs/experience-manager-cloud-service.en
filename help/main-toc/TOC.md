@@ -772,7 +772,7 @@ user-guide-title: AEM as a Cloud Service
   + Publishing Edge Delivery Applications {#publish}
     + [Authoring](/help/edge/docs/authoring.md)
     + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
-      + [Placeholders](/help/edge/docs/placeholders.md)
+    + [Placeholders](/help/edge/docs/placeholders.md)
     + [Sitemap](/help/edge/developer/sitemap.md)
     + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
   + Launching Edge Delivery Applications {#launch}
