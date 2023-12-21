@@ -26,6 +26,7 @@ You will need the following available to you.
 * [Local development instance of AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 * [WKND demo site installed](https://github.com/adobe/aem-guides-wknd)
 * [Access to the Universal Editor](/help/implementing/universal-editor/getting-started.md#onboarding)
+* [A local Universal Editor service](/help/implementing/universal-editor/local-dev.md) running for development purposes
 * Your local development instance must be [configured with HTTPS for development purpose on `localhost`.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)
 
 Beyond general familiarity with web development, this document assumes basic familiarity with AEM development. If you are not experienced with AEM development, consider reviewing the WKND tutorial before continuing.
@@ -169,21 +170,27 @@ However you will notice quickly that you can not interact with the page in the U
 
    ![Editing the customheaderlibs.html file](assets/dev-instrument-app.png)
 
-1. Add the necessary connection metadata to the end of the file.
+1. Add the necessary metadata for the connection to your local AEM instance to the end of the file.
 
    ```html
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
 
+1. Add the necessary metadata for the connection to your local Universal Editor service to the end of the file.
+
+   ```html
+   <meta name="urn:adobe:aue:config:service" content="https://localhost:8000">
+   ```
+
 1. Click **Save All** and then reload the Universal Editor.
 
-Now the Universal Editor can not only load your content successfully, but also knows where to persist any changes you make to the content in the Universal Editor. This is the first step in instrumenting your app to be editable with the Universal Editor.
+Now the Universal Editor can not only load your content successfully from your local AEM development instance, but also knows where to persist any changes you make using your local Universal Editor service. This is the first step in instrumenting your app to be editable with the Universal Editor.
 
 >[!TIP]
 >
 >* See the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md#connection) for more details on the connection metadata.
 >* See the document [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md#service) for more details on the structure of the Universal Editor.
->* See the document [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md) if you want to connect to a self-hosted version of the Universal Editor.
+>* See the document [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md) for more details on how to connect to a self-hosted version of the Universal Editor.
 
 ## Instrumenting Components {#instrumenting-components}
 
@@ -284,7 +291,7 @@ Now you can edit the title of the teaser in-line and changes are persisted in th
 
 However, if you reload the browser, the previous title is reloaded. This is because the editor can't yet authenticate to your AEM instance.
 
-If you show the network tab of the browser developer tools and search for `udpate`, you can see that it is encountering a 500 error when you try to edit the title.
+If you show the network tab of the browser developer tools and search for `update`, you can see that it is encountering a 500 error when you try to edit the title.
 
 ![Error when trying to edit the title](assets/dev-edit-error.png)
 
@@ -292,9 +299,27 @@ When using the Universal Editor to edit your production AEM content, the Univers
 
 When you are developing locally, you can't use the AEM identity provider, so you need to manually provide a way to authenticate by explicitly setting an authentication header.
 
-Basic YWRtaW46YWRtaW4=
+1. In the Universal Editor interface, click the **Authentication Headers** icon in the toolbar.
+
+1. Copy in the necessary authentication header to authenticate to your local AEM instance and click **Save**.
+
+   ![Configuring authentication headers](assets/dev-authentication-headers.png)
+
+1. Reload the Universal Editor and now edit the title of the teaser.
+
+There are no longer any errors reported in the browser console and the changes are persisted back to your local AEM development instance.
+
+>[!TIP]
+>
+>There are many tools available online to generate the necessary authentication headers.
+>
+>The example `Basic YWRtaW46YWRtaW4=` is for the user/password combination of `admin` and `admin` as is common for local AEM development.
+
+
 
 lax cookie
 uBlock origin
 experience.adobe.com/#/@sitesinternal/aem/editor/
 
+18:58
+<meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
