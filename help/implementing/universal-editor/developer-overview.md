@@ -218,7 +218,7 @@ Your components must also be instrumented to be editable with the Universal Edit
 
    ![Editing the teaser.html file](assets/dev-edit-teaser.png)
 
-1. At the end of the first `div` at line 26, add the instrumentation details for the component.
+1. At the end of the first `div` at approximately line 26, add the instrumentation details for the component.
 
    ```text
    itemscope
@@ -229,7 +229,7 @@ Your components must also be instrumented to be editable with the Universal Edit
 
 1. Click **Save All** in the toolbar and reload the Universal Editor.
 
-1. Click the teaser component at the top of the page and see that you can now select it.
+1. In the Universal Editor, click the teaser component at the top of the page and see that you can now select it.
 
 1. If you click the **Content tree** icon in the properties rail of the Universal Editor, you can see that the editor recognized all the teasers on the page now that you have instrumented it. The teaser you selected is the one highlighted.
 
@@ -274,12 +274,14 @@ You can now edit the title of the teaser component! These changes are then persi
 Now that we can edit the title of the teaser, let's take a moment to review what we have accomplished and how.
 
 We have identified the teaser component to the Universal Editor by instrumenting it.
+
 * `itemscope` identifies it as an item for the Universal Editor.
 * `itemid` identifies the resource in AEM that is being edited.
 * `itemtype` defines that the items should be treated as a page component (as opposed to say, a container).
 * `data-editor-itemlabel` displays a user-friendly label in the UI for the selected teaser.
 
 We have also instrumented the title component within the teaser component.
+
 * `itemprop` is the JCR attribute which will be written.
 * `itemtype` is how the attribute should be edited. In this case, with the text editor since it is a title (as opposed to say, the rich text editor).
 
@@ -343,5 +345,125 @@ You can see the change persisted in the JCR.
 >
 >The basic authentication header example `Basic YWRtaW46YWRtaW4=` is for the user/password combination of `admin:admin` as is common for local AEM development.
 
+## Instrumenting the App for the Properties Rail {#properties-rail}
 
+So you now have an app that is instrumented to be editable using the Universal Editor.
+
+But there are cases when editing in-place is not sufficient. Text such as the title of the teaser can be edited where it is with keyboard input. However more complicated items need to be able to display and allow editing of structured data separate from how it is rendered in the browser. This is what the properties rail is for.
+
+Let's update our app to use the properties rail for editing. To do that we return to the header file of the page component of our app, where we already established the connections to our local AEM development instance and our local Universal Editor service. Here we must define the components that are editable and their data models.
+
+1. Open CRXDE Lite.
+
+   ```text
+   https://localhost:8443/crx/de
+   ```
+
+1. Under `/apps/wknd/components/page` edit the file `customheaderlibs.html`.
+
+   ![Editing the customheaderlibs.html file](assets/dev-instrument-properties-rail.png)
+
+1. Add the necessary script to map the fields to the end of the file.
+
+   ```html
+   <script type="application/vnd.adobe.aem.editor.component-definition+json">
+   {
+     "groups": [
+       {
+         "title": "General Components",
+         "id": "general",
+         "components": [
+           {
+             "title": "Teaser",
+             "id": "teaser",
+             "plugins": {
+               "aem": {
+                 "page": {
+                   "resourceType": "wknd/components/teaser"
+                 }
+               }
+             },
+             "model": {
+               "id": "teaser",
+               "fields": [
+                 {
+                   "component": "text-input",
+                   "name": "jcr:title",
+                   "label": "Title",
+                   "valueType": "string"
+                 },
+                 {
+                   "component": "text-area",
+                   "name": "jcr:description",
+                   "label": "Description",
+                   "valueType": "string"
+                 }
+               ]
+             }
+           }
+         ]
+       }
+     ]
+   }
+   </script>
+   ```
+
+1. Click **Save All** in the toolbar.
+
+## What does it all mean? {#what-does-it-mean-2}
+
+To be editable using the properties rail, the components must be assigned to `groups`, so each definition begins as a list of groups containing the components.
+
+* `title` is the name of the group.
+* `id` is the unique identifier of the group, in this case general components that compose the page content as opposed to advanced components for page layout, for example.
+
+Each group then has an array of `components`.
+
+* `title` is the name of the component.
+* `id` is the unique identifier of the component, in this case a teaser.
+
+Each component then has a plugin definition that defines how the component is mapped to AEM.
+
+* `aem` is the plugin that handles the editing. This can be thought of as the service that processes the component.
+* `page` defines what kind of component it is, in this case a standard page component.
+* `resourceType` is the mapping to the actual AEM component.
+
+Each component then must be mapped to a `model` to define the individual editable fields.
+
+* `id` is the unique identifier of the model, which must match the ID of the component.
+* `fields` is an array of the individual fields.
+* `component` is the type of input such as text or text area.
+* `name` is the field name in the JCR that the field is mapped to.
+* `label` is the description of the field that appears in the editor UI.
+* `valueType` is the type of data.
+
+## Instrumenting the Component for the Properties Rail {#properties-rail-component}
+
+We also need to define at the component level, which model the component will use.
+
+1. Open CRXDE Lite.
+
+   ```text
+   https://localhost:8443/crx/de
+   ```
+
+1. Double-click the file `/apps/core/wcm/components/teaser/v2/teaser/teaser.html` to edit it.
+
+   ![Editing the teaser.html file](assets/dev-edit-teaser.png)
+
+1. At the end of the first `div` at approximately line 32, after the `itemscope` properties you added previously, add the instrumentation details for the model the teaser component will use.
+
+   ```text
+   data-editor-itemmodel="teaser"
+   ```
+
+1. Click **Save All** in the toolbar and reload the Universal Editor.
+
+1. Click on the title of the teaser to edit it once more.
+
+1. Click on the properties rail to show the properties tab and see the fields that we just instrumented.
+
+   ![The instrumented properties rail](assets/dev-properties-rail-instrumented.png)
+
+You can now edit the title of the teaser either in-line as you had before, or in the properties rail. In both cases, the changes are persisted back to your local AEM development instance.
 
