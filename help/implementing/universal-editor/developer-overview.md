@@ -15,7 +15,7 @@ It does this by taking a standard example that most AEM developer's a familiar w
 
 >[!TIP]
 >
->This document takes extra steps to illustrate how the Universal Editor works and is intended to deepen the developer's understanding of the editor.
+>This document takes extra steps to illustrate how the Universal Editor works and is intended to deepen the developer's understanding of the editor. It therefore does not take the most direct route to instrumenting an app, but the most illustrative of the Universal Editor and how it works.
 >
 >If you want to get up-and-running as quickly as possible, please see the [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md) document.
 
@@ -309,17 +309,39 @@ When you are developing locally, you can't use the AEM identity provider, so you
 
 There are no longer any errors reported in the browser console and the changes are persisted back to your local AEM development instance.
 
+If you investigate the traffic in the browser developer tools and look for the `update` events, you can see the detail of the update.
+
+![Successfully editing the teaser title](assets/dev-edit-title-successfully.png)
+
+```json
+{
+  "op": "patch",
+  "connections": {
+    "aem": "aem:https://localhost:8443"
+  },
+  "path": {
+    "itemid": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
+    "itemtype": "text",
+    "itemprop": "jcr:title"
+  },
+  "value": "Tiny Toon Adventures"
+}
+```
+
+* `op` is the operation, which in this case is a patch of the existing content of the edited field.
+* `connections` is the connection to your local AEM instance
+* `path` is the exact node and properties that are updated in the JCR
+* `value` is the update that you made.
+
+You can see the change persisted in the JCR.
+
+![Update in the JCR](assets/dev-write-back-jcr.png)
+
 >[!TIP]
 >
->There are many tools available online to generate the necessary authentication headers.
+>There are many tools available online to generate the necessary authentication headers for your testing and development purposes.
 >
->The example `Basic YWRtaW46YWRtaW4=` is for the user/password combination of `admin` and `admin` as is common for local AEM development.
+>The basic authentication header example `Basic YWRtaW46YWRtaW4=` is for the user/password combination of `admin:admin` as is common for local AEM development.
 
 
 
-lax cookie
-uBlock origin
-experience.adobe.com/#/@sitesinternal/aem/editor/
-
-18:58
-<meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">

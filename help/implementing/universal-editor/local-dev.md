@@ -82,8 +82,8 @@ The Universal Editor knows which Universal Editor Service to use to edit a page 
 
 For a page to be edited using your local Universal Editor Service, the following meta tag must be set:
 
-```
-<meta name="urn:adobe:aem:editor:endpoint" content="https://localhost:8000">
+```html
+<meta name="urn:adobe:aue:config:service" content="https://localhost:8000">
 ```
 
 Once set, you should see every content update call go to `https://localhost:8000` instead of the default Universal Editor Service.
