@@ -1,11 +1,11 @@
 ---
-title: Universal Editor AEM Developer Overview
-description: If you are an AEM developer interested in how the Universal Editor works and how to use it in your project, this document give you an end-to-end introduction.
+title: Universal Editor Overview for AEM Developers
+description: If you are an AEM developer interested in how the Universal Editor works and how to use it in your project, this document gives you an end-to-end introduction by leading you through instrumenting the WKND project to work with the Universal Editor.
 ---
 
-# Universal Editor Developer Overview {#developer-overview}
+# Universal Editor Overview for AEM Developers {#developer-overview}
 
-If you are an AEM developer interested in how the Universal Editor works and how to use it in your project, this document give you an end-to-end introduction.
+If you are an AEM developer interested in how the Universal Editor works and how to use it in your project, this document gives you an end-to-end introduction by leading you through instrumenting the WKND project to work with the Universal Editor.
 
 ## Purpose {#purpose}
 
@@ -21,23 +21,21 @@ It does this by taking a standard example that most AEM developer's a familiar w
 
 ## Prerequisites {#prerequisites}
 
-You will need the following available to you.
+To follow along with this overview, you will need the following available.
 
-* [Local development instance of AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-* [WKND demo site installed](https://github.com/adobe/aem-guides-wknd)
+* [A local development instance of AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+  * Your local development instance must be [configured with HTTPS for development purpose on `localhost`.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)
+  * [The WKND demo site must be installed.](https://github.com/adobe/aem-guides-wknd)
 * [Access to the Universal Editor](/help/implementing/universal-editor/getting-started.md#onboarding)
 * [A local Universal Editor service](/help/implementing/universal-editor/local-dev.md) running for development purposes
-* Your local development instance must be [configured with HTTPS for development purpose on `localhost`.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)
 
 Beyond general familiarity with web development, this document assumes basic familiarity with AEM development. If you are not experienced with AEM development, consider reviewing the WKND tutorial before continuing.
 
 ## Start AEM and Sign In to the Universal Editor {#sign-in}
 
-If you haven't already, you must have your local AEM development instance running with WKND installed and HTTPS enabled as [detailed in the prerequisites.](#prerequisites)
+If you haven't already, you must have your local AEM development instance running with WKND installed and HTTPS enabled as [detailed in the prerequisites.](#prerequisites) This overview assumes your instance is running at `https://localhost:8443`.
 
-This document assumes your instance is running at `https://localhost:8443`.
-
-1. Open the main English language master page in the AEM editor.
+1. Open the main WKND English language master page in the AEM editor.
 
    ```text
    https://localhost:8443/editor.html/content/wknd/language-masters/en.html
@@ -63,11 +61,11 @@ This document assumes your instance is running at `https://localhost:8443`.
 
 ## Universal Editor Attempts to Load the Content {#sameorigin}
 
-The Universal Editor loads content to be edited in a frame. AEM's default settings for X-Frame options prevent this, which can clearly be seen in the browser as an error and detailed in the console output.
+The Universal Editor loads content to be edited in a frame. AEM's default settings for X-Frame options prevent this, which can clearly be seen in the browser as an error and detailed in the console output when trying to load your local copy of WKND.
 
 ![Browser error due to SAMEORIGIN option](assets/dev-sameorigin.png)
 
-The X-Frame option `sameorigin` prevents rendering AEM pages within a frame. You must remove tis header to allow the pages to be loaded in the Universal Editor.
+The X-Frame option `sameorigin` prevents rendering AEM pages within a frame. You must remove this header to allow the pages to be loaded in the Universal Editor.
 
 1. Open the Configuration Manager.
 
@@ -90,7 +88,7 @@ Now if you reload the Universal Editor, you will see that your AEM page loads.
 >* See the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md#sameorigin) for more details on this OSGi configuration.
 >* See the document [Configuring OSGi for Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) for details on OSGi in AEM.
 
-## Dealing with Same Site Cookies {#samesite-cookies}
+## Handling Same Site Cookies {#samesite-cookies}
 
 When the Universal Editor loads your page, it loads to the AEM sign-in page to ensure that you are authenticated to make changes.
 
@@ -98,7 +96,7 @@ However, you will not be able to successfully sign in. Showing the browser conso
 
 ![Input blocked](assets/dev-cross-origin.png)
 
-The login token cookie is sent to AEM as a third-party domain. Therefore the same-site cookie must be set explicitly to `None`.
+The login token cookie is sent to AEM as a third-party domain. Therefore the same-site cookies must be allowed in AEM.
 
 1. Open the Configuration Manager.
 
@@ -267,7 +265,7 @@ You can now select the teaser, but still not edit it. This is because the teaser
 
    ![Select title within the teaser](assets/dev-select-title.png)
 
-You can now edit the title of the teaser component! These changes are then persisted to your local development instance of AEM.
+You can now edit the title of the teaser component!
 
 ## What does it all mean? {#what-does-it-mean}
 
@@ -285,13 +283,13 @@ We have also instrumented the title component within the teaser component.
 * `itemprop` is the JCR attribute which will be written.
 * `itemtype` is how the attribute should be edited. In this case, with the text editor since it is a title (as opposed to say, the rich text editor).
 
-## Persisting Changes using Authentication Headers {#auth-header}
+## Defining Authentication Headers {#auth-header}
 
 Now you can edit the title of the teaser in-line and changes are persisted in the browser.
 
 ![Edited title of the teaser](assets/dev-edited-title.png)
 
-However, if you reload the browser, the previous title is reloaded. This is because the editor can't yet authenticate to your AEM instance.
+However, if you reload the browser, the previous title is reloaded. This is because although the Universal Editor knows how to connect to your AEM instance, it editor can't yet authenticate to your AEM instance to write back changes to the JCR.
 
 If you show the network tab of the browser developer tools and search for `update`, you can see that it is encountering a 500 error when you try to edit the title.
 
@@ -347,11 +345,11 @@ You can see the change persisted in the JCR.
 
 ## Instrumenting the App for the Properties Rail {#properties-rail}
 
-So you now have an app that is instrumented to be editable using the Universal Editor.
+You now have an app that is instrumented to be editable using the Universal Editor!
 
-But there are cases when editing in-place is not sufficient. Text such as the title of the teaser can be edited where it is with keyboard input. However more complicated items need to be able to display and allow editing of structured data separate from how it is rendered in the browser. This is what the properties rail is for.
+Editing is currently limited to in-line editing of the teaser's title. However, there are cases when editing in-place is not sufficient. Text such as the title of the teaser can be edited where it is with keyboard input. However more complicated items need to be able to display and allow editing of structured data separate from how it is rendered in the browser. This is what the properties rail is for.
 
-Let's update our app to use the properties rail for editing. To do that we return to the header file of the page component of our app, where we already established the connections to our local AEM development instance and our local Universal Editor service. Here we must define the components that are editable and their data models.
+Let's update our app to use the properties rail for editing. To do that we return to the header file of the page component of our app, where we already established the connections to our local AEM development instance and our local Universal Editor service. Here we must define the components that are editable in the app and their data models.
 
 1. Open CRXDE Lite.
 
@@ -467,7 +465,7 @@ We also need to define at the component level, which model the component will us
 
 You can now edit the title of the teaser either in-line as you had before, or in the properties rail. In both cases, the changes are persisted back to your local AEM development instance.
 
-## Add Additional Field to the Properties Rail {#add-fields}
+## Add Additional Fields to the Properties Rail {#add-fields}
 
 Using the basic structure of the data model for the component that we already implemented, we can add additional fields, following the same model.
 
@@ -525,11 +523,11 @@ When you start instrumenting your own app, keep in mind the basic steps we did t
 1. [We defined a connection to persist changes in the `customheaderlibs.html` file of the page component of the app.](#connection)
    * We defined a connection to the local AEM development instance.
    * We also defined a connection to the local Universal Editor service.
-* [We instrumented the teaser component.](#instrumenting-components)
-* [We instrumented the subcomponents of the teaser.](#subcomponents)
-* [We defined a custom authentication header so we could save changes using our local Universal Editor service.](#auth-header)
-* [We instrumented the app to use the properties rail.](#properties-rail)
-* [We instrumented the teaser component to use the properties rail.](#properties-rail-component)
+1. [We instrumented the teaser component.](#instrumenting-components)
+1. [We instrumented the subcomponents of the teaser.](#subcomponents)
+1. [We defined a custom authentication header so we could save changes using our local Universal Editor service.](#auth-header)
+1. [We instrumented the app to use the properties rail.](#properties-rail)
+1. [We instrumented the teaser component to use the properties rail.](#properties-rail-component)
 
 You can follow these same steps to instrument your own app for use with the Universal Editor. Any properties in the JCR can be exposed to the Universal Editor.
 
@@ -538,8 +536,7 @@ You can follow these same steps to instrument your own app for use with the Univ
 Have a look at the following documents for more information and details on the Universal Editor features.
 
 * If you want to get up-and-running as quickly as possible, please see the [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md) document.
-* See the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md#sameorigin) for more details on this OSGi configuration.
-* See the document [Configuring OSGi for Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) for details on OSGi in AEM.
+* See the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md#sameorigin) for more details on the necessary OSGi configurations.
 * See the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md#connection) for more details on the connection metadata.
 * See the document [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md#service) for more details on the structure of the Universal Editor.
 * See the document [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md) for more details on how to connect to a self-hosted version of the Universal Editor.
