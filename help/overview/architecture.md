@@ -50,9 +50,11 @@ There are four types of [environment](/help/implementing/cloud-manager/manage-en
     * This is independent from the changes being initiated either by Adobe as part of a maintenance update, or by your code deployments. 
     * You can also conduct manual testing in the case of a code deployment. 
   * The content of the stage environment is usually kept in sync with the production content using the self-service content copy feature.
+  * Conduct performance and security tests on stage environment.  It has the same sizing as production.
 * Development environment:
   * A development environment allows your developers to implement, and test AEM applications under the same runtime conditions as the stage and production environments. 
   * The changes go through a deployment pipeline allowing for the same code quality and security gates as in production deployment pipelines.
+  * Development environments do not have the same sizing as stage and production, and should not be used to conduct performance and security tests. 
 * Rapid development environment (RDE):
   * An RDE environment allows for rapid development iterations when deploying new or existing code into the RDE instances, without going through a formal deployment pipeline as found on regular development environments.
 
