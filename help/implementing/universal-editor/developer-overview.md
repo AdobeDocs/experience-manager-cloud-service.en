@@ -90,7 +90,7 @@ Now if you reload the Universal Editor, you will see that your AEM page loads.
 >* See the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md#sameorigin) for more details on this OSGi configuration.
 >* See the document [Configuring OSGi for Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) for details on OSGi in AEM.
 
-### com.day.crx.security.token.impl.impl.TokenAuthenticationHandler {#samesite-cookies}
+## Dealing with Same Site Cookies {#samesite-cookies}
 
 When the Universal Editor loads your page, it loads to the AEM sign-in page to ensure that you are authenticated to make changes.
 
@@ -467,3 +467,80 @@ We also need to define at the component level, which model the component will us
 
 You can now edit the title of the teaser either in-line as you had before, or in the properties rail. In both cases, the changes are persisted back to your local AEM development instance.
 
+## Add Additional Field to the Properties Rail {#add-fields}
+
+Using the basic structure of the data model for the component that we already implemented, we can add additional fields, following the same model.
+
+For example, we can add a field to adjust the styling of the component.
+
+1. Open CRXDE Lite.
+
+   ```text
+   https://localhost:8443/crx/de
+   ```
+
+1. Under `/apps/wknd/components/page` edit the file `customheaderlibs.html`.
+
+   ![Editing the customheaderlibs.html file](assets/dev-instrument-styles.png)
+
+1. Add an additional item to the `fields` array for the style field. Remember to add a comma after the last field before inserting the new one.
+
+   ```json
+   {
+      "component": "select",
+      "name": "cq:styleIds",
+      "label": "Style",
+      "valueType": "string",
+        "multi": true,
+      "options": [
+        {"name": "hero", "value":"1555543212672"},
+        {"name": "card", "value":"1605057868937"}
+      ]
+   }
+   ```
+
+1. Click **Save All** in the toolbar and reload the Universal Editor.
+
+1. Click on the title of the teaser to edit it once more.
+
+1. Click on the properties rail and see that there is a new field to adjust the style of the component.
+
+   ![The instrumented properties rail with the style field](assets/dev-style-instrumented.png)
+
+Any field in the JCR for the component can be exposed in the Universal Editor in this way.
+
+## Summary {#summary}
+
+Congratulations! Now you can instrument your own AEM apps to work with the Universal Editor.
+
+When you start instrumenting your own app, keep in mind the basic steps we did together in this example.
+
+1. [We set up our development environment.](#prerequisites)
+   * AEM running locally on HTTPS with WKND installed
+   * Universal Editor Service running locally on HTTPS
+1. We updated AEM's OSGi settings to allow its content to be loaded remotely.
+   * [`org.apache.sling.engine.impl.SlingMainServlet`](#sameorigin)
+   * [`com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`](#samesite-cookies)
+1. [We added the `universal-editor-embedded.js` library to the `customheaderlibs.html` file of the page component of the app.](#ue-connect-remote-frame)
+1. [We defined a connection to persist changes in the `customheaderlibs.html` file of the page component of the app.](#connection)
+   * We defined a connection to the local AEM development instance.
+   * We also defined a connection to the local Universal Editor service.
+* [We instrumented the teaser component.](#instrumenting-components)
+* [We instrumented the subcomponents of the teaser.](#subcomponents)
+* [We defined a custom authentication header so we could save changes using our local Universal Editor service.](#auth-header)
+* [We instrumented the app to use the properties rail.](#properties-rail)
+* [We instrumented the teaser component to use the properties rail.](#properties-rail-component)
+
+You can follow these same steps to instrument your own app for use with the Universal Editor. Any properties in the JCR can be exposed to the Universal Editor.
+
+## Additional Resources {#additional-resources}
+
+Have a look at the following documents for more information and details on the Universal Editor features.
+
+* If you want to get up-and-running as quickly as possible, please see the [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md) document.
+* See the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md#sameorigin) for more details on this OSGi configuration.
+* See the document [Configuring OSGi for Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) for details on OSGi in AEM.
+* See the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md#connection) for more details on the connection metadata.
+* See the document [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md#service) for more details on the structure of the Universal Editor.
+* See the document [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md) for more details on how to connect to a self-hosted version of the Universal Editor.
+* See the document [Using the Sling Resource Merger in Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/sling-resource-merger.md) for more details on overlaying nodes.
