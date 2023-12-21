@@ -1040,8 +1040,7 @@ To protect against potential problems there are default limitations imposed on y
 
 * The query cannot contain more than 1M (1024 * 1024) characters
 * The query cannot contain more than 15000 tokens 
-* The query cannot contain more than 200000 whitespace tokens 
-* The query depth cannot exceed 500
+* The query cannot contain more than 200000 whitespace tokens
 
 ## FAQs {#faqs}
 
