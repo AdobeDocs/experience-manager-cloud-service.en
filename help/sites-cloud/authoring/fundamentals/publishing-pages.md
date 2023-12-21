@@ -46,7 +46,7 @@ Depending on your location, you can publish:
 
 >[!NOTE]
 >
->If you want to preserve page order you have to publish the parent page together with any child pages.
+>If you want to preserve page order you have to publish the parent page when publishing any child pages.
 >
 >Page order is not guaranteed if only child pages are selected for publication (as the order information is held on the parent page).
 
