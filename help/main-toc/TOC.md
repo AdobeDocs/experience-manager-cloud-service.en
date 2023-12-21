@@ -772,7 +772,6 @@ user-guide-title: AEM as a Cloud Service
   + Publishing Edge Delivery Applications {#publish}
     + [Authoring](/help/edge/docs/authoring.md)
     + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
-    + [Slack Bot](/help/edge/docs/slack.md)
     + [Placeholders](/help/edge/docs/placeholders.md)
     + [Sitemap](/help/edge/developer/sitemap.md)
     + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
@@ -791,7 +790,7 @@ user-guide-title: AEM as a Cloud Service
       + [Sidekick Library](/help/edge/docs/sidekick-library.md)
     + [FAQ](/help/edge/docs/faq.md)
     + [Admin API](https://www.aem.live/docs/admin.html)
-    + [status.hlx.live](https://status.hlx.live/history)
+    + [AEM Status](https://www.aemstatus.net)
     + Tools {#tools}
       + [Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
       + [Github Bot](https://github.com/apps/aem-code-sync)
@@ -913,6 +912,7 @@ user-guide-title: AEM as a Cloud Service
     + [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md)
     + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)
     + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
+    + [Dynatrace OneAgent](/help/implementing/cloud-manager/dynatrace-oneagent.md)
     + [Notifications](/help/implementing/cloud-manager/notifications.md)
     + SSL Certificates {#manage-ssl-certificates}
       + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
