@@ -1103,6 +1103,7 @@ user-guide-title: AEM as a Cloud Service
   + [Authoring Content with the Universal Editor](/help/implementing/universal-editor/authoring.md)
   + [Publishing Content with the Universal Editor](/help/implementing/universal-editor/publishing.md)
   + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
+  + [Universal Editor Developer Overview](/help/implementing/universal-editor/developer-overview.md)
   + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
   + [Attributes and Types](/help/implementing/universal-editor/attributes-types.md)
   + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
