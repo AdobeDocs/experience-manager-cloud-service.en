@@ -21,7 +21,7 @@ It does this by taking a standard example that most AEM developer's are familiar
 
 ## Prerequisites {#prerequisites}
 
-To follow along with this overview, you will need the following available.
+To follow along with this overview, you need the following available.
 
 * [A local development instance of AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
   * Your local development instance must be [configured with HTTPS for development purpose on `localhost`.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)
@@ -33,15 +33,15 @@ Beyond general familiarity with web development, this document assumes basic fam
 
 ## Start AEM and Sign In to the Universal Editor {#sign-in}
 
-If you haven't already, you must have your local AEM development instance running with WKND installed and HTTPS enabled as [detailed in the prerequisites.](#prerequisites) This overview assumes your instance is running at `https://localhost:8443`.
+If you haven't already, you must have your local AEM development instance running with WKND installed and HTTPS enabled as [detailed in the prerequisites.](#prerequisites) This overview assumes that your instance is running at `https://localhost:8443`.
 
-1. Open the main WKND English language master page in the AEM editor.
+1. Open the main WKND English language master page in the AEM Editor.
 
    ```text
    https://localhost:8443/editor.html/content/wknd/language-masters/en.html
    ```
 
-1. In the **Page Information** menu of the editor, select **View as Published**. This opens the same page in a new tab with the AEM editor disabled.
+1. In the **Page Information** menu of the editor, select **View as Published**. This opens the same page in a new tab with the AEM Editor disabled.
 
    ```text
    https://localhost:8443/content/wknd/language-masters/en.html?wcmmode=disabled
@@ -55,7 +55,7 @@ If you haven't already, you must have your local AEM development instance runnin
    https://experience.adobe.com/#/aem/editor
    ```
 
-1. Paste the link you copied previously of the WKND content into the **Site URL** field of the Universal Editor and click **Open**.
+1. Paste the link that you copied previously of the WKND content into the **Site URL** field of the Universal Editor and click **Open**.
 
    ![Open the WKND page in the Universal Editor](assets/dev-ue-open.png)
 
@@ -81,7 +81,7 @@ The X-Frame option `sameorigin` prevents rendering AEM pages within a frame. You
 
 1. Save the changes.
 
-Now if you reload the Universal Editor, you will see that your AEM page loads.
+Now if you reload the Universal Editor, you see that your AEM page loads.
 
 >[!TIP]
 >
@@ -92,7 +92,7 @@ Now if you reload the Universal Editor, you will see that your AEM page loads.
 
 When the Universal Editor loads your page, it loads to the AEM sign-in page to ensure that you are authenticated to make changes.
 
-However, you will not be able to successfully sign in. Showing the browser console, you can see that the browser has blocked input on the frame
+However, you can not successfully sign in. Showing the browser console, you can see that the browser has blocked input on the frame
 
 ![Input blocked](assets/dev-cross-origin.png)
 
@@ -121,7 +121,7 @@ Now if you reload the Universal Editor, you can successfully sign in to AEM and 
 
 ## Universal Editor Connects to the Remote Frame {#ue-connect-remote-frame}
 
-With the page loaded in the Universal Editor and you signed into AEM, the Universal Editor will try to connect to the remote frame. This is done via a JavaScript library that must be loaded in the remote frame. If the JavaScript library is not present, the page will create a timeout error in the console.
+With the page loaded in the Universal Editor and you signed into AEM, the Universal Editor tries to connect to the remote frame. This is done via a JavaScript library that must be loaded in the remote frame. If the JavaScript library is not present, the page ultimately creates a timeout error in the console.
 
 ![Timeout error](assets/dev-timeout.png)
 
@@ -133,7 +133,7 @@ You must add the necessary JavaScript library to the page component of the WKND 
    https://localhost:8443/crx/de
    ```
 
-1. Under `/apps/wknd/components/page` edit the file `customheaderlibs.html`.
+1. Under `/apps/wknd/components/page`, edit the file `customheaderlibs.html`.
 
    ![Editing the customheaderlibs.html file](assets/dev-customheaderlibs.png)
 
@@ -156,7 +156,7 @@ The page now loads with the proper JavaScript library to allow the Universal Edi
 
 The WKND page now loads successfully in the Universal Editor and the JavaScript library loads to connect the editor to your app.
 
-However you will notice quickly that you can not interact with the page in the Universal Editor. The Universal Editor can not actually edit your page. For the Universal Editor to be able to edit your content, you need to define a connection so it knows where to write the content. For local development, you need to write back to your local AEM development instance at `https://localhost:8443`.
+However you likely quickly noticed that you can not interact with the page in the Universal Editor. The Universal Editor can not actually edit your page. For the Universal Editor to be able to edit your content, you need to define a connection so it knows where to write the content. For local development, you need to write back to your local AEM development instance at `https://localhost:8443`.
 
 1. Open CRXDE Lite.
 
@@ -164,7 +164,7 @@ However you will notice quickly that you can not interact with the page in the U
    https://localhost:8443/crx/de
    ```
 
-1. Under `/apps/wknd/components/page` edit the file `customheaderlibs.html`.
+1. Under `/apps/wknd/components/page`, edit the file `customheaderlibs.html`.
 
    ![Editing the customheaderlibs.html file](assets/dev-instrument-app.png)
 
@@ -192,9 +192,9 @@ Now the Universal Editor can not only load your content successfully from your l
 
 ## Instrumenting Components {#instrumenting-components}
 
-However, you probably notice that you still can do very little with the Universal Editor. If you attempt to click on the teaser at the top of the WKND page in the Universal Editor, you can not actually select it (or anything else on the page).
+However, you probably notice that you still can do little with the Universal Editor. If you attempt to click the teaser at the top of the WKND page in the Universal Editor, you can not actually select it (or anything else on the page).
 
-Your components must also be instrumented to be editable with the Universal Editor. To do this, you must edit the teaser component. Therefore you will need to overlay the Core Components since the Core Components are under `/libs`, which is immutable.
+Your components must also be instrumented to be editable with the Universal Editor. To do this, you must edit the teaser component. Therefore you need to overlay the Core Components since the Core Components are under `/libs`, which is immutable.
 
 1. Open CRXDE Lite.
 
@@ -204,7 +204,7 @@ Your components must also be instrumented to be editable with the Universal Edit
 
 1. Select the node `/libs/core/wcm/components` and click **Overlay Node** on the toolbar.
 
-1. With `/apps/` selected as the **Overlay Location** click **OK**.
+1. With `/apps/` selected as the **Overlay Location**, click **OK**.
 
    ![Overlay the teaser](assets/dev-overlay-teaser.png)
 
@@ -280,7 +280,7 @@ You have identified the teaser component to the Universal Editor by instrumentin
 
 You have also instrumented the title component within the teaser component.
 
-* `itemprop` is the JCR attribute which will be written.
+* `itemprop` is the JCR attribute which is written.
 * `itemtype` is how the attribute should be edited. In this case, with the text editor since it is a title (as opposed to say, the rich text editor).
 
 ## Defining Authentication Headers {#auth-header}
@@ -357,7 +357,7 @@ Now update your app to use the properties rail for editing. To do that you retur
    https://localhost:8443/crx/de
    ```
 
-1. Under `/apps/wknd/components/page` edit the file `customheaderlibs.html`.
+1. Under `/apps/wknd/components/page`, edit the file `customheaderlibs.html`.
 
    ![Editing the customheaderlibs.html file](assets/dev-instrument-properties-rail.png)
 
@@ -437,7 +437,7 @@ Each component then must be mapped to a `model` to define the individual editabl
 
 ## Instrumenting the Component for the Properties Rail {#properties-rail-component}
 
-You also need to define at the component level, which model the component will use.
+You also need to define at the component level, which model the component should use.
 
 1. Open CRXDE Lite.
 
@@ -457,9 +457,9 @@ You also need to define at the component level, which model the component will u
 
 1. Click **Save All** in the toolbar and reload the Universal Editor.
 
-1. Click on the title of the teaser to edit it once more.
+1. Click the title of the teaser to edit it once more.
 
-1. Click on the properties rail to show the properties tab and see the fields that you just instrumented.
+1. Click the properties rail to show the properties tab and see the fields that you just instrumented.
 
    ![The instrumented properties rail](assets/dev-properties-rail-instrumented.png)
 
@@ -477,7 +477,7 @@ For example, you can add a field to adjust the styling of the component.
    https://localhost:8443/crx/de
    ```
 
-1. Under `/apps/wknd/components/page` edit the file `customheaderlibs.html`.
+1. Under `/apps/wknd/components/page`, edit the file `customheaderlibs.html`.
 
    ![Editing the customheaderlibs.html file](assets/dev-instrument-styles.png)
 
@@ -499,9 +499,9 @@ For example, you can add a field to adjust the styling of the component.
 
 1. Click **Save All** in the toolbar and reload the Universal Editor.
 
-1. Click on the title of the teaser to edit it once more.
+1. Click the title of the teaser to edit it once more.
 
-1. Click on the properties rail and see that there is a new field to adjust the style of the component.
+1. Click the properties rail and see that there is a new field to adjust the style of the component.
 
    ![The instrumented properties rail with the style field](assets/dev-style-instrumented.png)
 
