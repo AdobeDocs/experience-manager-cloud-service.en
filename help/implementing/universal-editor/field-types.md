@@ -29,13 +29,13 @@ A boolean field stores a simple true/false value rendered as a checkbox.
    {
       "component": "boolean",
       "valueType": "boolean",
-      "name": "field4",
-      "label": "xyz",
-      "description": "xyz",
+      "name": "field1",
+      "label": "Boolean Field",
+      "description": "This is a boolean field.",
       "required": true,
       "placeholder": null,
       "validation": {
-        "customErrorMsg": "hehe"
+        "customErrorMsg": "This is an error."
       }
     }
   ]
@@ -54,15 +54,15 @@ Similar to a boolean, a checkbox group allows for the selection of multiple true
    {
       "component": "checkbox-group",
       "valueType": "string-array",
-      "name": "field9",
-      "label": "xyz",
-      "description": "xyz",
+      "name": "field1",
+      "label": "Checkbox Group",
+      "description": "This is a checkbox group.",
       "required": true,
       "placeholder": null,
       "options": [
-        { "name": "One", "value": "one" },
-        { "name": "Two", "value": "two" },
-        { "name": "Three", "value": "three" }
+        { "name": "First option", "value": "one" },
+        { "name": "Second option", "value": "two" },
+        { "name": "Third option", "value": "three" }
       ]
     }
   ]
@@ -81,43 +81,43 @@ A date time field allows the specification of a date or time or combination ther
       {
       "component": "date-time",
       "valueType": "date-time",
-      "name": "field5",
-      "label": "xyz",
-      "description": "xyz",
+      "name": "field1",
+      "label": "Date Time",
+      "description": "This is a date time field that stores both date and time.",
       "required": true,
       "placeholder": "YYYY-MM-DD HH:mm:ss",
       "displayFormat": null,
       "valueFormat": null,
       "validation": {
-        "customErrorMsg": "hehe"
+        "customErrorMsg": "Marty! You have to come back with me!"
       }
     },
     {
       "component": "date-time",
       "valueType": "date",
-      "name": "field6",
-      "label": "xyz",
-      "description": "xyz",
+      "name": "field2",
+      "label": "Another Date Time",
+      "description": "This is another date time field that only stores the date.",
       "required": true,
       "placeholder": "YYYY-MM-DD",
       "displayFormat": null,
       "valueFormat": null,
       "validation": {
-        "customErrorMsg": "hehe"
+        "customErrorMsg": "Back to the future!"
       }
     },
     {
       "component": "date-time",
       "valueType": "time",
-      "name": "field7",
-      "label": "xyz",
-      "description": "xyz",
+      "name": "field3",
+      "label": "Yet Another Date Time",
+      "description": "This is another date time field that only stores the time.",
       "required": true,
       "placeholder": "HH:mm:ss",
       "displayFormat": null,
       "valueFormat": null,
       "validation": {
-        "customErrorMsg": "hehe"
+        "customErrorMsg": "Great Scott!"
       }
     }
   ]
@@ -136,15 +136,15 @@ A number field allows for the input of a number.
    {
       "component": "number",
       "valueType": "number",
-      "name": "field8",
-      "label": "xyz",
-      "description": "xyz",
+      "name": "field1",
+      "label": "Number Field",
+      "description": "This is a number field.",
       "required": true,
       "placeholder": null,
       "validation": {
         "numberMin": null,
         "numberMax": null,
-        "customErrorMsg": "hehe"
+        "customErrorMsg": "Please don't do that."
       }
     }
   ]
@@ -163,15 +163,15 @@ A radio group allows for a mutually-exclusive selection from multiple options re
    {
       "component": "radio-group",
       "valueType": "string",
-      "name": "field10",
-      "label": "xyz",
-      "description": "xyz",
+      "name": "field1",
+      "label": "Radio Group",
+      "description": "This is a radio group.",
       "required": true,
       "placeholder": null,
       "options": [
-        { "name": "One", "value": "one" },
-        { "name": "Two", "value": "two" },
-        { "name": "Three", "value": "three" }
+        { "name": "Option One", "value": "one" },
+        { "name": "Option Two", "value": "two" },
+        { "name": "Option Three", "value": "three" }
       ]
     }
   ]
@@ -194,15 +194,15 @@ A select allows for selection of one or more predefined options in a drop-down m
    {
       "component": "select",
       "valueType": "string",
-      "name": "field9",
-      "label": "xyz",
-      "description": "xyz",
+      "name": "field1",
+      "label": "Select",
+      "description": "This is a select.",
       "required": true,
       "placeholder": null,
       "options": [
-        { "name": "One", "value": "one" },
-        { "name": "Two", "value": "two" },
-        { "name": "Three", "value": "three" }
+        { "name": "Option One", "value": "one" },
+        { "name": "Option Two", "value": "two" },
+        { "name": "Option Three", "value": "three" }
       ],
       "emptyOption": true
     }
@@ -222,9 +222,9 @@ A text area allows for multi-line text input.
    {
       "component": "text-area",
       "valueType": "string",
-      "name": "field3",
-      "label": "xyz",
-      "description": "xyz",
+      "name": "field1",
+      "label": "Text Area",
+      "description": "This is a text area.",
       "required": true,
       "multi": true,
       "placeholder": null,
@@ -247,8 +247,8 @@ A text input allows for a single line of text input.
       "component": "text-input",
       "valueType": "string",
       "name": "field1",
-      "label": "xyz",
-      "description": "xyz",
+      "label": "Text Input",
+      "description": "This is a text input.",
       "required": true,
       "multi": true,
       "placeholder": null
@@ -257,8 +257,8 @@ A text input allows for a single line of text input.
       "component": "text-input",
       "valueType": "string",
       "name": "field2",
-      "label": "xyz",
-      "description": "xyz",
+      "label": "Another Text Input",
+      "description": "This is a text input with validation.",
       "required": true,
       "multi": true,
       "placeholder": null,
@@ -266,7 +266,7 @@ A text input allows for a single line of text input.
         "minLength": 5,
         "maxLength": 10,
         "regExp": "^foo:.*",
-        "customErrorMsg": "hehe"
+        "customErrorMsg": "I'm sorry, Dave. I can't do that."
       }
     }
   ]
