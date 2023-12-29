@@ -12,8 +12,9 @@ Learn about Cloud Manager's build environment and how it builds and tests your c
 
 Cloud Manager builds and tests your code using a specialized build environment.
 
-* The build environment is Linux-based, derived from Ubuntu 18.04.
+* The build environment is Linux-based, derived from Ubuntu 22.04.
 * Apache Maven 3.8.8 is installed.
+  * Adobe recommends users [update their Maven repositories to use HTTPS instead of HTTP.](#https-maven)
 * The Java versions installed are Oracle JDK 8u371 and Oracle JDK 11.0.20.
 * By default, the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_371` which contains Oracle JDK 8u371. See the [Alternate Maven Execution JDK Version](#alternate-maven-jdk-version) section for more details.
 * There are some additional system packages installed which are necessary.
@@ -29,10 +30,19 @@ Cloud Manager builds and tests your code using a specialized build environment.
   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven is configured at a system level with a `settings.xml` file, which automatically includes the public Adobe artifact repository using a profile named `adobe-public`. (See [Adobe Public Maven Repository](https://repo1.maven.org/) for more details).
+* Node.js 18 is available for [front end and full stack pipelines.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
 
 >[!NOTE]
 >
 >Although Cloud Manager does not define a specific version of the `jacoco-maven-plugin`, the version used must be at least `0.7.5.201505241946`.
+
+## HTTPS Maven Repositories {#https-maven}
+
+Cloud Manager [release 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) began a rolling update to the build environment (completing with release 2023.12.0), which included an update to Maven 3.8.8. A significant change introduced in Maven 3.8.1 was a security enhancement aimed at mitigating potential vulnerabilities. Specifically, Maven now disables all insecure `http://*` mirrors by default, as outlined in the [Maven release notes.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+
+As a result of this security enhancement, some users may face issues during the build step, particularly when downloading artifacts from Maven repositories that use insecure HTTP connections.
+
+To ensure a smooth experience with the updated version, Adobe recommends that users update their Maven repositories to use HTTPS instead of HTTP. This adjustment aligns with the industry's growing shift towards secure communication protocols and helps maintain a secure and reliable build process.
 
 ### Using a Specific Java Version {#using-java-support}
 
