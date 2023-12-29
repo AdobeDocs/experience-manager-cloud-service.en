@@ -1,7 +1,7 @@
 ---
 title: How can we use Forms Designer to create Document of Record (DoR) templates and form fragments?
 description: Use [!DNL AEM Forms] designer to create Document of Record templates and form fragments.
-exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
+feature: Forms Designer
 ---
 # Use Adobe Experience Manager (AEM) Forms Designer {#install-designer}
 
