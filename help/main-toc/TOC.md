@@ -1108,3 +1108,4 @@ user-guide-title: AEM as a Cloud Service
   + [Attributes and Types](/help/implementing/universal-editor/attributes-types.md)
   + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
   + [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md)
+  + [Universal Editor Calls](/help/implementing/universal-editor/calls.md)
