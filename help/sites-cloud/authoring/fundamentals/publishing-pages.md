@@ -46,7 +46,7 @@ Depending on your location, you can publish:
 
 >[!NOTE]
 >
->If you want to preserve page order you have use [Manage Publication](#manage-publication) to publish the parent page together with any child pages - in a single action.
+>If you want to preserve page order you have to use [Manage Publication](#manage-publication) to publish the parent page together with any child pages - in a single action.
 >
 >Page order is not guaranteed:
 >* if only child pages are selected for publication (as the order information is held on the parent page)
@@ -122,7 +122,7 @@ To publish a page with Quick Publish:
 
 >[!NOTE]
 >
->If you want to preserve page order you have use **Manage Publication** to publish the parent page together with any child pages in a single action.
+>If you want to preserve page order you have to use **Manage Publication** to publish the parent page together with any child pages in a single action.
 >
 >Page order is not guaranteed:
 >* if only child pages are selected for publication (as the order information is held on the parent page)
