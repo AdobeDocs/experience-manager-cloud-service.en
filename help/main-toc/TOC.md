@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.11.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-11-0.md)
       + [Release Notes for 2023.10.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-10-0.md)
       + [Release Notes for 2023.9.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-9-0.md)
       + [Release Notes for 2023.8.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-8-0.md)
@@ -83,6 +84,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.11.0](/help/implementing/cloud-manager/release-notes/2023/2023-11-0.md)
       + [Release Notes for 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md)
       + [Release Notes for 2023.9.0](/help/implementing/cloud-manager/release-notes/2023/2023-9-0.md)
       + [Release Notes for 2023.8.0](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
@@ -749,8 +751,50 @@ user-guide-title: AEM as a Cloud Service
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
-  + [Getting Started with Edge Delivery](/help/edge/overview.md)
+  + [AEM and Edge Delivery Services](/help/edge/overview.md)
   + [Using Edge Delivery](/help/edge/using.md)
+  + [Authoring Content for Edge Delivery](/help/edge/authoring.md)
+  + [Publishing Content for Edge Delivery](/help/edge/publishing.md)
+  + [Developing for Edge Delivery](/help/edge/developing.md)
+  + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
+  + Building Edge Delivery Applications {#build}
+    + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
+    + [Anatomy of a Project](/help/edge/developer/anatomy-of-a-franklin-project.md)
+    + [Block Collection](/help/edge/developer/block-collection.md)
+    + [Spreadsheets](/help/edge/developer/spreadsheets.md)
+    + [Forms](/help/edge/developer/forms.md)
+    + [Indexing](/help/edge/developer/indexing.md)
+    + [Keeping it 100](/help/edge/developer/keeping-it-100.md)
+    + [Markup - Sections](/help/edge/developer/markup-sections-blocks.md)
+    + [Favicon](/help/edge/developer/favicon.md)
+    + [Custom Headers](/help/edge/docs/custom-headers.md)
+    + [Best Practices for Developers](/help/edge/docs/dev-collab-and-good-practices.md)
+  + Publishing Edge Delivery Applications {#publish}
+    + [Authoring](/help/edge/docs/authoring.md)
+    + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
+    + [Placeholders](/help/edge/docs/placeholders.md)
+    + [Sitemap](/help/edge/developer/sitemap.md)
+    + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
+  + Launching Edge Delivery Applications {#launch}
+    + [Go Live Checklist](/help/edge/docs/go-live-checklist.md)
+    + [Push Invalidation](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
+    + [Cloudflare Worker Setup](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
+    + [Akamai Setup](/help/edge/docs/byo-cdn-akamai-setup.md)
+    + [Fastly Setup](/help/edge/docs/byo-cdn-fastly-setup.md)
+    + [Redirects](/help/edge/docs/redirects.md)
+  + Resources for Edge Delivery {#resources}
+    + Sidekick {#sidekick}
+      + [Using Sidekick](/help/edge/docs/sidekick.md)
+      + [Installing Extension](/help/edge/docs/sidekick-extension.md)
+      + [Project Configurator](https://www.aem.live/tools/sidekick/)
+      + [Sidekick Library](/help/edge/docs/sidekick-library.md)
+    + [FAQ](/help/edge/docs/faq.md)
+    + [Admin API](https://www.aem.live/docs/admin.html)
+    + [AEM Status](https://www.aemstatus.net)
+    + Tools {#tools}
+      + [Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+      + [Github Bot](https://github.com/apps/aem-code-sync)
+      + [Audit Log](/help/edge/docs/auditlog.md)
 + Headless {#headless}
   + [What is a Headless CMS?](/help/headless/what-is-headless.md)
   + [Introduction to AEM Headless](/help/headless/introduction.md)
@@ -780,6 +824,7 @@ user-guide-title: AEM as a Cloud Service
     + [Optimizing GraphQL Queries](/help/headless/graphql-api/graphql-optimization.md)
     + [Updating your Content Fragments for optimized GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
     + [Sample GraphQL queries](/help/headless/graphql-api/sample-queries.md)
+    + [Troubleshoot GraphQL queries](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
   + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
   + Security {#security}
     + [Permissions](/help/headless/security/permissions.md)
@@ -867,6 +912,7 @@ user-guide-title: AEM as a Cloud Service
     + [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md)
     + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)
     + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
+    + [Dynatrace OneAgent](/help/implementing/cloud-manager/dynatrace-oneagent.md)
     + [Notifications](/help/implementing/cloud-manager/notifications.md)
     + SSL Certificates {#manage-ssl-certificates}
       + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
@@ -1042,7 +1088,7 @@ user-guide-title: AEM as a Cloud Service
    + [Self-Service Restore](/help/operations/restore.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
-  + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)
+  + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)  
 + Compliance {#compliance}
   + [Compliance in AEM as a Cloud Service](/help/compliance/home.md)
   + Data Privacy and Protection Readiness {#data-privacy}
@@ -1057,6 +1103,7 @@ user-guide-title: AEM as a Cloud Service
   + [Authoring Content with the Universal Editor](/help/implementing/universal-editor/authoring.md)
   + [Publishing Content with the Universal Editor](/help/implementing/universal-editor/publishing.md)
   + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
+  + [Universal Editor Developer Overview](/help/implementing/universal-editor/developer-overview.md)
   + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
   + [Attributes and Types](/help/implementing/universal-editor/attributes-types.md)
   + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)

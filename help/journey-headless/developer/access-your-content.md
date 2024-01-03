@@ -350,6 +350,7 @@ Now that you have learned how to access and query your headless content using th
 
 ## Additional Resources {#additional-resources}
 
+* [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [GraphQL.org](https://graphql.org)
   * [Schemas](https://graphql.org/learn/schema/)
   * [Variables](https://graphql.org/learn/queries/#variables)
