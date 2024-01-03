@@ -1,6 +1,7 @@
 ---
 title: How to add Footnote to an adaptive form?
 description: Use Rich Text editor (RTE) for footnotes in an Adaptive Form.
+feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 ---
 # Footnote Component {#footnotecomponent}
@@ -27,7 +28,7 @@ In Adaptive Forms, [!UICONTROL footnote] is used to display the information on h
 To add footnote in Adaptive Forms, perform the following steps:
 1. Open an Adaptive Form in **Edit** mode.
 1. From the component browser, drag-drop the **[!UICONTROL Text]** component onto the Adaptive Form. 
-1. Select the **[!UICONTROL Text]** component that you added and tap ![cmppr](assets/configure-icon.svg) to edit its properties.
+1. Select the **[!UICONTROL Text]** component that you added and select ![cmppr](assets/configure-icon.svg) to edit its properties.
 
     ![Footnote in Adaptive Forms](/help/forms/assets/footnote_rte.png)
 

@@ -16,7 +16,7 @@ The Release Date for Content Transfer Tool v3.0.6 is November 21, 2023.
 
 ### What's New {#what-is-new-ctt}
 
-* Cloud Acceleration Manager (CAM) has been updated to automatically start an ingestion once the extraction of a migration set has completed successfully.  The user no longer has to wait until the extraction is completed to manually kick-off an ingestion. For more details about content ingestions in CAM, please see [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#ingestion-process)
+* Cloud Acceleration Manager (CAM) has been updated to automatically start an ingestion once the extraction of a migration set has completed successfully. The user no longer has to wait until the extraction is completed to manually kick-off an ingestion. For more details about content ingestions in CAM, see [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#ingestion-process).
 
 ### Bug Fixes {#bug-fixes-ctt}
 

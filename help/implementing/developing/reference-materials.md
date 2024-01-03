@@ -21,6 +21,10 @@ The following APIs are core to AEM.
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
 --->
 
+>[!NOTE]
+>
+>For the latest information about Experience Manager APIs, please also visit [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+
 ## Additional Frameworks {#additional-apis}
 
 AEM relies on several additional open-source APIs.

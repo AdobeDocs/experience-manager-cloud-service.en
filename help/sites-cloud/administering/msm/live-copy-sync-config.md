@@ -89,7 +89,7 @@ The new rollout configuration is then available to you when configuring rollout 
 
 You can configure several OSGi services that support corresponding synchronization actions so that they do not affect specific node types and properties. For example, many properties and subnodes related to the internal functioning of AEM should not be included in a Live Copy. Only the content that is relevant to the user of the page should be copied.
 
-When working with AEM there are several methods of managing the configuration settings for such services. See [Configuring OSGi](/help/implementing/deploying/configuring-osgi.md) for more details and the recommended practices.
+When working with AEM, there are several methods of managing the configuration settings for such services. See [Configuring OSGi](/help/implementing/deploying/configuring-osgi.md) for more details and the recommended practices.
 
 The following table lists the synchronization actions for which you can specify the nodes to exclude. The table provides the names of the services to configure using the Web Console and the PID for configuring using a repository node.
 
@@ -128,7 +128,7 @@ For example, if you want the page **Title** to be included in the changes consid
 
 You can configure several OSGi services that support corresponding synchronization actions related to updating references.
 
-When working with AEM there are several methods of managing the configuration settings for such services. See [Configuring OSGi](/help/implementing/deploying/configuring-osgi.md) for more details and the recommended practices.
+When working with AEM, there are several methods of managing the configuration settings for such services. See [Configuring OSGi](/help/implementing/deploying/configuring-osgi.md) for more details and the recommended practices.
 
 The following table lists the synchronization actions for which you can specify the reference update. The table provides the names of the services to configure using the Web Console and the PID for configuring using a repository node.
 

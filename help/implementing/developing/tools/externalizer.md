@@ -93,7 +93,7 @@ This section shows a few examples of how the Externalizer service can be used.
 
 >[!NOTE]
 >
->No absolute links should be created in the context of HTML. Therefore this utility should not be used in such cases.
+>No absolute links should be created in the context of HTML. Therefore, do not use this utility in such cases.
 
 * **To externalize a path with the 'publish' domain:**
 

@@ -9,7 +9,7 @@ AEM provides options to customize the consoles (and the [page authoring function
 
 ## Clientlibs {#clientlibs}
 
-Clientlibs allow you to extend the default implementation to offer new functionality, while reusing standard functions, objects, and methods. When customizing with clientlibs, you can create your own clientlib under `/apps.` For example it can hold the code required for your custom component.
+Clientlibs allow you to extend the default implementation to offer new functionality, while reusing standard functions, objects, and methods. When customizing with clientlibs, you can create your own clientlib under `/apps.` For example, it can hold the code required for your custom component.
 
 See [Using Client-Side Libraries on AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 

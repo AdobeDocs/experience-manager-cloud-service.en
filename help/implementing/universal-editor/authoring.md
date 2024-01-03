@@ -226,7 +226,7 @@ Depending on the type of component you select, details can be displayed and modi
 
 ![Component details](assets/component-details.png)
 
-Note that not all components have details that can be shown and/or edited.
+Not all components have details that can be shown and/or edited.
 
 >[!TIP]
 >
@@ -294,7 +294,7 @@ Editing content is simple and intuitive. In [components mode](#component-mode), 
 
 >[!TIP]
 >
->Note that in components mode, tapping or clicking on content selects it for editing. If you want to navigate your content by following links, switch to [preview mode.](#preview-mode)
+>In components mode, tapping or clicking on content selects it for editing. If you want to navigate your content by following links, switch to [preview mode.](#preview-mode)
 
 Depending on the content you select, you may have different in-place editing options and you may additional information and options for the content in the [properties rail.](#properties-rail)
 
@@ -401,7 +401,7 @@ The components are reordered in both the content tree and in the editor
 
 When you are finished editing content, you often want to navigate it to see how it looks in the content of other pages. In [preview mode](#preview-mode) you can click links to navigate your content as a reader would. The content is rendered in the editor as it would be published.
 
-Note that in preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you want to select the content for editing, switch to [components mode.](#component-mode)
+In preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you want to select the content for editing, switch to [components mode.](#component-mode)
 
 ## Additional Resources {#additional-resources}
 

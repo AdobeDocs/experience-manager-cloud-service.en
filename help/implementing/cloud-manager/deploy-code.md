@@ -145,7 +145,7 @@ In such circumstances where a re-execution is possible, the production pipeline 
 
 ### Re-Execute API {#reexecute-API}
 
-In addition to being available in the UI, you can use [the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) to trigger re-executions as well as identify executions that were triggered as re-executions.
+In addition to being available in the UI, you can use [the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) to trigger re-executions and identify executions that were triggered as re-executions.
 
 #### Triggering a Re-Execution {#reexecute-deployment-api}
 
