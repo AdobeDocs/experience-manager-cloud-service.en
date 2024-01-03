@@ -28,7 +28,7 @@ To create a store candidate, you use the [`ContextHub.Utils.inheritance.inherit`
 * [`ContextHub.Store.JSONPStore`](contexthub-api.md#contexthub-store-jsonpstore)
 * [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)
 
-Note that each base store extends the [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) store.
+Each base store extends the [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) store.
 
 The following example creates the simplest extension of the `ContextHub.Store.PersistedStore` store candidate:
 

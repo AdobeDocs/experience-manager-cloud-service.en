@@ -113,7 +113,7 @@ When considering moving pages in a Live Copy, consider the following best practi
 
 ## Customizing Rollouts {#customizing-rollouts}
 
-MSM rollout configurations are highly customizable. You should be aware that automating rollouts can have far reaching consequences. As a best practice, you should plan very carefully before engaging in the following activities:
+MSM rollout configurations are highly customizable. Automating rollouts can have far reaching consequences. As a best practice, you should plan very carefully before engaging in the following activities:
 
 * Automating rollouts such as with [onModify triggers](#onmodify)
 * Customizing [node types/properties](#node-types-properties)

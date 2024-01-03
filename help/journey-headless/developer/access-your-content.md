@@ -236,7 +236,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Before starting with queries on your content you need to:
 
 * Enable your endpoint
-  * Use Tools -> General -> GraphQL
+  * Use Tools > General > GraphQL
   * [Enabling your GraphQL Endpoint](/help/headless/graphql-api/graphql-endpoint.md)
     * This will also enable the GraphiQL IDE.
   
@@ -263,7 +263,7 @@ The fragment models are used:
 
 The queries can be entered in the GraphiQL interface. You can access the query editor from either: 
 
-* **Tools** -> **General** -> **GraphQL Query Editor**
+* **Tools** > **General** > **GraphQL Query Editor**
 * directly; for example, `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
@@ -350,6 +350,7 @@ Now that you have learned how to access and query your headless content using th
 
 ## Additional Resources {#additional-resources}
 
+* [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [GraphQL.org](https://graphql.org)
   * [Schemas](https://graphql.org/learn/schema/)
   * [Variables](https://graphql.org/learn/queries/#variables)

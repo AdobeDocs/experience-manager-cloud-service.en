@@ -35,7 +35,7 @@ Within AEM the delivery is achieved using the selector `model` and `.json` exten
 
 You can alternatively deliver the contents of a structured content fragment by targeting it specifically.
 
-This is done using the entire path to the fragment (via the `jcr:content`); for example with a suffix such as.
+This is done using the entire path to the fragment (via the `jcr:content`); for example, with a suffix such as.
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 

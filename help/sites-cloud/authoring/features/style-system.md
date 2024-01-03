@@ -40,7 +40,7 @@ Using the Style System generally takes the following form.
 
 1. The AEM page author can then choose the designed styles in the page editor via the style menu of the component's toolbar.
 
-Note that only the last three steps are actually carried out in AEM. This means all development of the necessary CSS and JavaScript can be done without AEM.
+Only the last three steps are actually carried out in AEM. This means all development of the necessary CSS and JavaScript can be done without AEM.
 
 Actually implementing the styles only requires deployment on AEM and selection within the components of the desired templates.
 

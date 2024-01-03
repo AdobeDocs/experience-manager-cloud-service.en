@@ -77,7 +77,7 @@ Let us now configure transcription in this video profile. Navigate to the **[!UI
 
 Once the processing profile is configured for transcription of audio and video files, you can apply this processing profile to folders using one of the following methods:
 
-* Select a processing profile definition in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**, and use **[!UICONTROL Apply Profile to Folder(s)]** action. The content browser lets you navigate to a specific folder, select folder and confirm the application of the profile.
+* Select a processing profile definition in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**, and use **[!UICONTROL Apply Profile to Folders]** action. The content browser lets you navigate to a specific folder, select folder and confirm the application of the profile.
 * Select a folder in the Assets user interface and click **[!UICONTROL Properties]** action to open folder properties. Click the **[!UICONTROL Asset Processing]** tab, and select the appropriate processing profile for the folder from the **[!UICONTROL Processing Profile]** list. To save the changes, click **[!UICONTROL Save & Close]**.
 
    ![configure-transcription-service](assets/video-processing-profile3.png)

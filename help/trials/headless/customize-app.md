@@ -63,7 +63,7 @@ Now that you modified a headline in the app, try changing an image.
 
 1. Return to the browser tab of the Content Fragment editor from the preview.
 
-1. You need to return to the correct place in the Content Fragment editor. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Tap or Click **Mtn Biker in Canyon** in the breadcrumbs to return to that page.
+1. You need to return to the correct place in the Content Fragment editor. The breadcrumbs at the top-left of the editor show where you are in your content hierarchy. Select **Mtn Biker in Canyon** in the breadcrumbs to return to that page.
 
    ![Breadcrumbs](assets/do-not-localize/swap-image-2.png)
 

@@ -95,7 +95,7 @@ To edit a page:
 
    ![Selecting a page to edit](assets/sites-editor-select-page.png)
 
-1. Tap the **Edit** option in the toolbar.
+1. Select the **Edit** option in the toolbar.
 1. The sites editor opens with the selected page loaded for editing in a new browser tab.
 1. Mousing over or tapping content reveals selectors for individual components. Components are the drag-and-drop building blocks that make up the page.
 
