@@ -41,7 +41,7 @@ Using the Universal Editor, you have an agile way to edit your text in context a
 
    ![Editing text in the Universal Editor](assets/do-not-localize/ue-edit-text-2.png)
 
-1. Press the enter/return key or select outside of the text component and your changes are saved automatically.
+1. Select outside of the text component and your changes are saved automatically.
 
 The Universal Editor saves your changes automatically within the authoring environment. You still need to publish them for your readers to see, which we will do in a later step.
 
@@ -67,7 +67,7 @@ The image is replaced with the one you selected.
 
 The Universal Editor lets you interact with your content within its context, seeing the content as it is delivered to the devices of your users.
 
-1. By default the editor renders the desktop version of your content. Select the emulator button at the top-right of the editor to change the target device.
+1. By default the editor renders the desktop version of your content. Select the emulator button at the top-right of the Universal Editor toolbar to change the target device.
 
    ![The emulator menu item](assets/do-not-localize/ue-emulator-1.png)
 
@@ -83,7 +83,7 @@ You can also specify exact dimensions for the emulator and rotate the emulated d
 
 ## Previewing and Publishing {#preview}
 
-Because you need to select your content to select it in the editor, the editor does not allow you to follow links or interact with your content by tapping or clicking when it is in an edit mode. Using preview mode, you can follow the links within your content and experience it as your users would before publishing.
+Because you need to select your content to modify it in the editor, the editor does not allow you to follow links or interact with your content by tapping or clicking. Using preview mode, you can follow the links within your content and experience it as your users would before publishing.
 
 1. In the Universal Editor toolbar, select **Preview**.
 
