@@ -46,6 +46,12 @@ Depending on your location, you can publish:
 
 >[!NOTE]
 >
+>If you want to preserve page order you have to publish the parent page when publishing any child pages.
+>
+>Page order is not guaranteed if only child pages are selected for publication (as the order information is held on the parent page).
+
+>[!NOTE]
+>
 > For additional possibilities see **On Time** and **Off Time** in the [Basic tab of Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### Publishing from the Editor {#publishing-from-the-editor}
