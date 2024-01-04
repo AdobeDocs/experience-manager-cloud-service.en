@@ -52,31 +52,9 @@ To select and configure a Submit Action for your form:
 
 ## Send Email {#send-email}
 
-To send an email to one or more recipients upon successful submission of the form, you can utilize the **[!UICONTROL Send Email]** Submit Action. This action enables you to create an email that includes form data in a predefined format. For instance, consider the following template where customer name, shipping address, state name, and ZIP code are retrieved from the submitted form data:
+To send an email to one or more recipients upon successful submission of the form, you can use the **[!UICONTROL Send Email]** Submit Action.
 
-     ```
- 
-     Hi ${customer_Name},
- 
-     The following is set as your deafult shipping address:
-     ${customer_Name},
-     ${customer_Shipping_Address},
-     ${customer_State},
-     ${customer_ZIPCode}
- 
-     Regards,
-     WKND 
- 
-     ```
-
->[!NOTE]
->
-> * It is crucial for all form fields to have unique element names, even if they are placed on different panels within an Adaptive Form.
-> * When using AEM as a Cloud Service, outbound email requires encryption. By default, outbound email functionality is disabled. To activate it, submit a support ticket to [Request Access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). 
-
-Furthermore, the **[!UICONTROL Send Email]** Submit Action provides the option to include attachments and a Document of Record (DoR) with the email. 
-
-To enable the [!UICONTROL Attach Document of Record] option, refer to the documentation on [configure the Adaptive Form to generate a Document of Record (DoR)](generate-document-of-record-core-components.md). You can enable this option from the Adaptive Form properties.
+Refer to the [configure send email submit action](/help/forms/configure-submit-action-send-email.md) to learn how to set up an Adaptive Form to send an email upon successful submission.
 
 <!-- [!NOTE]
 >
@@ -433,7 +411,6 @@ After a successful configuration, use the [Invoke a Microsoft&reg; Power Automat
 You can configure an Adaptive Form to submit data to Workfront Fusion on submission. Workfront Fusion allows automation of processes so that user can concentrate on new tasks rather than repeating the same tasks again and again. It automates both simple and complex tasks, saving time and ensuring consistent process execution.
 
 The Adaptive Forms editor provides the **Invoke a WorkFront Fusion Scenario** submit action to send Adaptive Forms data or attachments to a Workfront Fusion scenario. To use the submit action for sending captured data to a Workfront Fusion scenario, refer to [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
-
 
 ## Use synchronous or asynchronous submission {#use-synchronous-or-asynchronous-submission}
 
