@@ -12,7 +12,7 @@ Learn how to get access to the Universal Editor and how to start instrumenting y
 >
 >If you would prefer to dive right into an example, you can review the [Universal Editor Sample App on GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
 
-{{#universal-editor-status}}
+{{universal-editor-status}}
 
 ## Onboarding Steps {#onboarding}
 

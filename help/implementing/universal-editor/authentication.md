@@ -8,7 +8,7 @@ exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 
 Learn how the Universal Editor authenticates.
 
-{{#universal-editor-status}}
+{{universal-editor-status}}
 
 ## Options {#options}
 

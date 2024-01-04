@@ -7,7 +7,7 @@ description: Learn about the different types of fields that the Universal Editor
 
 Learn about the different types of fields that the Universal Editor supports and what you can instrument for your own apps.
 
-{{#universal-editor-status}}
+{{universal-editor-status}}
 
 ## Overview {#overview}
 

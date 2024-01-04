@@ -8,7 +8,7 @@ exl-id: 02795a31-244a-42b4-8297-2649125d7777
 
 Learn about the data attributes and types that the Universal Editor requires.
 
-{{#universal-editor-status}}
+{{universal-editor-status}}
 
 ## Introduction {#introduction}
 

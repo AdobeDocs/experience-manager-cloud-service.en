@@ -8,7 +8,7 @@ exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 
 Learn how the Universal Editor supports editing on local AEM instances for development purposes.
 
-{{#universal-editor-status}}
+{{universal-editor-status}}
 
 ## Overview {#overview}
 
