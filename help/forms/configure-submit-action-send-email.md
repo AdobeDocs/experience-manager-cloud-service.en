@@ -1,11 +1,12 @@
 ---
-title: How to configure a Submit Action to send an email for an Adaptive Form?
-description: An Adaptive Form provides a Submit Action to send an email. 
-keywords: how to configure send an email submit action for an adpative form
+Title: How to send an email on submission of an Adaptive Form?
+Description: Explore the process to set up email notifications when submitting an Adaptive Form.
+keywords: how to configure send an email submit action for an adpative form, Email Submit Action, Adaptive Form Email, Form Submission Email, 
+Send Email Guide
 feature: Adaptive Forms, Core Components
 ---
 
-# Configure Send Email submit action
+# Configure the Send Email submit action for an Adaptive Form
 
 To send an email to one or more recipients upon successful submission of the form, you can use the **[!UICONTROL Send Email]** Submit Action. 
 
@@ -26,7 +27,11 @@ This action enables you to create an email that includes form data in a predefin
  
      ```
 
+AEM as a Cloud Service offers various submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
+
 ## Steps to configure send email submit action {#steps-to-configure-send-email-submit-action}
+
+To set up Adaptive Form send email configuration, perform the following steps:
 
 1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
 1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
@@ -34,12 +39,13 @@ This action enables you to create an email that includes form data in a predefin
 1. From the **[!UICONTROL Submit Action]** drop-down list, select **[!UICONTROL Send email]** .
 1. Configure the **[!UICONTROL Action Configuration]** for the **[!UICONTROL Send email]** option.
 
+    ![Action configuration of Send Email](/help/forms/assets/send-email-action-configuration.gif)
 
     1. Specify email id in the **[!UICONTROL From]** textbox.
     1. Add the email id of the recipient in the **[!UICONTROL To]** textbox. You can add multiple recipients by clicking the **[!UICONTROL Add]** button. 
-    1. [Optional] Add the recipents for CC and BCC by clicking the **[!UICONTROL Add]** button. 
-    1. Specify the proper and clear subject line in the **[!UICONTROL Subject]** textbox.
-    1. You can either provide the external template path or you can add your own emaol template in the **![!UICONTROL Email Template]** textbox.
+    1. [Optional] Add the recipient for CC and BCC by clicking the **[!UICONTROL Add]** button. 
+    1. Specify a clear subject line in the **[!UICONTROL Subject]** textbox.
+    1. You can either specify the path to the external email template using **[!UICONTROL External Template Path]** or add the custom email template for form submission in the **![!UICONTROL Email Template]** textbox. 
     1. [Optional] The **[!UICONTROL Send Email]** Submit Action provides the option to include attachments and a Document of Record (DoR) with the email. 
     To enable the [!UICONTROL Attach Document of Record] option, refer to the documentation on [configure the Adaptive Form to generate a Document of Record (DoR)](generate-document-of-record-core-components.md). You can enable this option from the Adaptive Form properties.
 
@@ -56,3 +62,9 @@ This action enables you to create an email that includes form data in a predefin
 
 1. If the form submission involves sensitive information, ensure that the email communication is secure.
 1. It is recommended to keep the email content clear and concise. Users should understand the purpose of the email and any actions they need to take.
+
+## Related Articles
+
+{{af-submit-action}}
+
+
