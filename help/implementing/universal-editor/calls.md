@@ -15,36 +15,41 @@ For the developer, however, understanding these calls and what they do can be va
 
 ![Example of a details call on the Network tab of the developer tools of the browser](assets/calls-network-tab.png)
 
-The following is a list of the types of calls that the Universal Editor makes to your app.
+* The **Payload** of the call contains details of what is being updated by the editor including identifying what to update and how to update it.
+* The **Response** includes details of what exactly was updated by the editor service. This is to facilitate updating the content in the editor. In certain cases, like a `move` call, the entire page must be updated.
+
+The following is a list of the types of calls that the Universal Editor makes to your app along with sample payloads and responses.
 
 ## Update {#update}
 
-An `update` call occurs when you edit content in your app using the Universal Editor to persist the changes.
+An `update` call occurs when you edit content in your app using the Universal Editor. The `update` persists the changes.
 
 Its payload includes details of what to write back to the JCR.
 
-itemid: The JCR path to be updated
-itemprop: The JCR property that is being updated
-itemtype: The JCR value type of the property being updated
-value: The update in the form of a JSON patch
+* `itemid`: The JCR path to be updated
+* `itemprop`: The JCR property that is being updated
+* `itemtype`: The JCR value type of the property being updated
+* `value`: The updated data
 
-Payload
+### Sample Payload {#update-payload}
+
 ```json
 {
   "op": "patch",
   "connections": {
-    "aem": "aem:https://localhost:8443"
+    "aem": "aem:https://author-pXXXX-eYYYYY.adobeaemcloud.com"
   },
   "path": {
     "itemid": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
     "itemtype": "text",
     "itemprop": "jcr:title"
   },
-  "value": "\nTiny Toon Adventures\n    "
+  "value": "Tiny Toon Adventures"
 }
 ```
 
-Preview
+### Sample Response {#update-response}
+
 ```json
 {
   "updates": [
@@ -61,18 +66,18 @@ Preview
 
 A `details` call occurs when loading your app in the Universal Editor to retrieve the app's content.
 
-Its payload includes the details of what the values represent so they can be rendered in the Universal Editor.
+Its payload includes the data to be rendered as well as details of what the data represent (the schema) so they can be rendered in the Universal Editor.
 
-For a component, the Universal Editor will only retrieve a `data` object, since the schema of the data is defined in the app.
+* For a component, the Universal Editor will only retrieve a `data` object, since the schema of the data is defined in the app.
+* For Content Fragments, the Universal Editor will also retrieve a `schema` object since the Content Fragment Model is defined in the JCR.
 
-For Content Fragments, the Universal Editor will also retrieve a `schema` object since the Content Fragment Model is defined in the JCR.
+### Sample Payload {#details-payload}
 
-Payload
 ```json
 {
   "op": "patch",
   "connections": {
-    "aem": "aem:https://localhost:8443"
+    "aem": "aem:https://author-pXXXX-eYYYYY.adobeaemcloud.com"
   },
   "path": {
     "itemid": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
@@ -82,7 +87,8 @@ Payload
 }
 ```
 
-Data
+### Sample Response {#details-response}
+
 ```json
 {
   "data": {
@@ -115,16 +121,19 @@ Data
 
 ## Add {#add}
 
-An `add` call occurs when you place new content in your app using the Universal Editor.
+An `add` call occurs when you place a new component in your app using the Universal Editor.
 
-Its payload includes a `path` object containing where the content should be added. It also includes a `content` object with additional objects for endpoint-specific details of the content to be stored [for each plugin.](/help/implementing/universal-editor/architecture.md) For example if your app is based on content from AEM and Magento, the payload would contain a data object for each system.
+Its payload includes a `path` object containing where the content should be added.
 
-Payload
+It also includes a `content` object with additional objects for endpoint-specific details of the content to be stored [for each plugin.](/help/implementing/universal-editor/architecture.md) For example if your app is based on content from AEM and Magento, the payload would contain a data object for each system.
+
+### Sample Payload {#add-payload}
+
 ```json
 {
   "op": "patch",
   "connections": {
-    "aemconnection": "aem:https://author-p7452-e12433.adobeaemcloud.com"
+    "aemconnection": "aem:https://author-pXXXX-eYYYYY.adobeaemcloud.com"
   },
   "path": {
     "container": {
@@ -147,7 +156,8 @@ Payload
 }
 ```
 
-Data
+### Sample Response {#add-response}
+
 ```json
 {
   "updates": [
@@ -165,12 +175,13 @@ A `move` call occurs when you move a component within your app using the Univers
 
 Its payload includes a `from` object defining where the component was and a `to` object defining where it was moved.
 
-Payload
+### Sample Payload {#move-payload}
+
 ```json
 {
   "op": "patch",
   "connections": {
-    "aemconnection": "aem:https://author-p7452-e12433.adobeaemcloud.com"
+    "aemconnection": "aem:https://author-pXXXX-eYYYYY.adobeaemcloud.com"
   },
   "from": {
     "container": {
@@ -199,7 +210,8 @@ Payload
 }
 ```
 
-Data
+### Sample Response {#move-response}
+
 ```json
 {
   "updates": [
@@ -217,12 +229,13 @@ A `remove` call occurs when you delete a component within your app using the Uni
 
 Its payload includes the path of the object that is removed.
 
-Payload
+### Sample Payload {#remove-payload}
+
 ```json
 {
   "op": "patch",
   "connections": {
-    "aemconnection": "aem:https://author-p7452-e12433.adobeaemcloud.com"
+    "aemconnection": "aem:https://author-pXXXX-eYYYYY.adobeaemcloud.com"
   },
   "path": {
     "component": {
@@ -239,7 +252,8 @@ Payload
 }
 ```
 
-Data
+### Sample Response {#remove-response}
+
 ```json
 {
   "updates": [
@@ -258,12 +272,13 @@ A `patch` call occurs when you update content in a dialog within your app. This 
 
 Its payload includes the path of the content on the page as well as the JSON patch of the change to be made.
 
-Payload
+### Sample Payload {#patch-payload}
+
 ```json
 {
   "op": "patch",
   "connections": {
-    "aemconnection": "aem:https://author-p7452-e12433.adobeaemcloud.com"
+    "aemconnection": "aem:https://author-pXXXX-eYYYYY.adobeaemcloud.com"
   },
   "path": {
     "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_1540979193",
@@ -280,7 +295,8 @@ Payload
 }
 ```
 
-Data
+### Sample Response {#patch-response}
+
 ```json
 {
   "updates": [
@@ -295,12 +311,15 @@ Data
 
 A `publish` call occurs when you click the **Publish** button in the Universal Editor to publish the content that you have edited.
 
-Payload
+The Universal Editor iterates over the content and generates a list of references that also must be published.
+
+### Sample Payload {#publish-payload}
+
 ```json
 {
   "op": "patch",
   "connections": {
-    "aemconnection": "aem:https://author-p7452-e12433.adobeaemcloud.com"
+    "aemconnection": "aem:https://author-pXXXX-eYYYYY.adobeaemcloud.com"
   },
   "references": [
     "urn:aemconnection:/content/dam/wknd-shared/en/magazine/arctic-surfing/aloha-spirits-in-northern-norway/jcr:content/data/master",
@@ -334,7 +353,8 @@ Payload
 }
 ```
 
-Data
+### Sample Response {#publish-response}
+
 ```json
 {
   "publishes": [
@@ -357,6 +377,3 @@ Data
   ]
 }
 ```
-
-
-The response of all objects includes a list of items that need to be updated in the editor. For a move, the whole page must be updated since the content was reordered.
