@@ -1,17 +1,17 @@
 ---
 title: Universal Editor Calls
-description: Learn about the different types of calls made by the Universal Editor to your app to help you when debugging.
+description: Learn about the different types of calls made to your app by the Universal Editor to help you when debugging.
 ---
 
 # Universal Editor Calls {#calls}
 
-Learn about the different types of calls made by the Universal Editor to your app to help you when debugging.
+Learn about the different types of calls made to your app by the Universal Editor to help you when debugging.
 
 ## Overview {#overview}
 
-The Universal Editor communicates with your instrumented app through a series of defined calls. This is transparent to and has no affect on the end user experience.
+The Universal Editor communicates with your instrumented app through a series of defined calls. This is transparent to and has no effect on the end user experience.
 
-For the developer, however, understanding these calls and what they do can be valuable when debugging your application when using the Universal Editor. If you have instrumented your app and it is not behaving as anticipated, it can be very helpful to open the **Network** tab of the developer tools in your browser and inspect the calls as you edit content in your app.
+For the developer, however, understanding these calls and what they do can be valuable when debugging your application when using the Universal Editor. If you have instrumented your app and it is not behaving as anticipated, it can be helpful to open the **Network** tab of the developer tools in your browser and inspect the calls as you edit content in your app.
 
 ![Example of a details call on the Network tab of the developer tools of the browser](assets/calls-network-tab.png)
 
@@ -68,8 +68,8 @@ A `details` call occurs when loading your app in the Universal Editor to retriev
 
 Its payload includes the data to be rendered as well as details of what the data represent (the schema) so they can be rendered in the Universal Editor.
 
-* For a component, the Universal Editor will only retrieve a `data` object, since the schema of the data is defined in the app.
-* For Content Fragments, the Universal Editor will also retrieve a `schema` object since the Content Fragment Model is defined in the JCR.
+* For a component, the Universal Editor only retrieves a `data` object, since the schema of the data is defined in the app.
+* For Content Fragments, the Universal Editor also retrieves a `schema` object since the Content Fragment Model is defined in the JCR.
 
 ### Sample Payload {#details-payload}
 
@@ -311,7 +311,7 @@ Its payload includes the path of the content on the page as well as the JSON pat
 
 A `publish` call occurs when you click the **Publish** button in the Universal Editor to publish the content that you have edited.
 
-The Universal Editor iterates over the content and generates a list of references that also must be published.
+The Universal Editor iterates over the content and generates a list of references that must also be published.
 
 ### Sample Payload {#publish-payload}
 
