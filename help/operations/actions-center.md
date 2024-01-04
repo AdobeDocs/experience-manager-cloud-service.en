@@ -63,8 +63,8 @@ AEM as a Cloud Service has several types of notifications, but only a subset app
 
 The following table lists the notification types currently supported in Actions Center. Notifications are currently limited to production environments.
 
-| Notification Type  | Related Product Profile  | Corrective Action |
-|---|---|---|
-| Blocked replication queue  | Incident  | Unblock queue by following instructions in the [Replication Documentation](/help/operations/replication.md#troubleshooting)  |
-| Expiring S2S certificate  | Proactive  | Learn how to refresh a credential in the [Generating Access Tokens for Server Side APIs documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)  |
-
+| Notification Type               | Related Product Profile | Corrective Action                                                                                                                                                                                                                                             |
+|---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Blocked replication queue       | Incident                | Unblock queue by following instructions in the [Replication Documentation](/help/operations/replication.md#troubleshooting)                                                                                                                                   |
+| Invalid persisted GraphQL query | Incident                | Fix the invalid GraphQL query by referencing the [Persisted GraphQL queries troubleshooting documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=en) |
+| Expiring S2S certificate        | Proactive               | Learn how to refresh a credential in the [Generating Access Tokens for Server Side APIs documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)                                       |
