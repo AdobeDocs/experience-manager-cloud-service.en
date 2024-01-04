@@ -8,6 +8,8 @@ exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 
 Learn how the Universal Editor authenticates.
 
+{{#universal-editor-status}}
+
 ## Options {#options}
 
 The Universal Editor uses Adobe's Identity Management System (IMS) authentication, which is provided via the Unified Shell.

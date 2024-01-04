@@ -12,6 +12,8 @@ Learn how to get access to the Universal Editor and how to start instrumenting y
 >
 >If you would prefer to dive right into an example, you can review the [Universal Editor Sample App on GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
 
+{{#universal-editor-status}}
+
 ## Onboarding Steps {#onboarding}
 
 Although the Universal Editor can edit content from any source, this document will use an AEM app as an example.

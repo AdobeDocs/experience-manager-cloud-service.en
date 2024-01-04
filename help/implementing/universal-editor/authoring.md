@@ -8,6 +8,8 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 
 Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
 
+{{#universal-editor-status}}
+
 ## Introduction {#introduction}
 
 The Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
@@ -17,10 +19,6 @@ To do this, the Universal Editor provides content authors with an intuitive UI t
 >[!TIP]
 >
 >For a more detailed introduction to the Universal Editor, see the document [Universal Editor Introduction.](introduction.md)
-
->[!NOTE]
->
->The Universal Editor is still in development. It currently cannot edit all content types.
 
 ## Prepare the App {#prepare-app}
 

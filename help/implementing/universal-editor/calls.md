@@ -7,6 +7,8 @@ description: Learn about the different types of calls made to your app by the Un
 
 Learn about the different types of calls made to your app by the Universal Editor to help you when debugging.
 
+{{#universal-editor-status}}
+
 ## Overview {#overview}
 
 The Universal Editor communicates with your instrumented app through a series of defined calls. This is transparent to and has no effect on the end user experience.
