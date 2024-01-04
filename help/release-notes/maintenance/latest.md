@@ -7,39 +7,25 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 14697 {#release-14697}
+## Release X {#release-X}
 
-Summarized below are the continuous improvements for maintenance release 14697, which was publicly released on December 18, 2023. It replaces release 14538 which had an issue. The previous maintenance release was release 14227.
+Summarized below are the continuous improvements for maintenance release X, which was publicly released on January 4, 2023. The previous maintenance release was release 14697.
 
-2023.12.0 Feature Activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
+2024.1.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-14697}
-
-* GRANITE-46723: User Sync - SAML Migration from default-sync to IDP-based sync.
-* OAK-10311: Replication - Optimize blob comparison to reduce replication time of large batch of assets in AEM.
-* OAK-10511: Replication - Reduce network round-trips to reduce replication time of large assets in AEM.
-* GRANITE-48334: Publishers - Collection script is missing for RUM.
-
-### Fixed Issues {#fixed-issues-14697}
-
-* CQ-4354867: ToggleCondition reference refers to non-existent field in InstanceActionServlet.
-* CQ-4349948: Localization of 'Profile Properties' strings in Edit User Settings under Tools → Security → Users.
-* GRANITE-44541: Localization of Error dialogs on adding Private Key File screen of Edit User > Keystore under Tools → Security → Users.
-* GRANITE-45341: Localization of success/failure strings for activate/deactivate user action  under Tools → Security → Users.
-* GRANITE-46650: Localization of error message "UserId/Password mismatch." string under Tools → Security → Users Create Dialog.
-* GRANITE-47764: Update to Sling Models API 1.5.0: Injection to a static variable in a Sling Model will cause compilation errors (SLING-11507).
-* GRANITE-48452: Sending empty clientlibs with status code 200.
-* GRANITE-48410: ResourceResolver is not closed.
-* ASSETS-31297: Prevent delete of copied asset from dynamic media.
-* ASSETS-30811: Reference Updates for Blocktag Service bound.
-* GRANITE-46418: Update Sling events in AEM: GaugeSupport has infinite recursion in registerWithSuffix (SLING-11918).
-* GRANITE-48937: Fix regression from Maintenance Release 14538 where Omnisearch doesn't work on aem/start.html page.
-
-### Known Issues {#known-issues-14697}
+### Enhancements {#enhancements-X}
 
 None.
 
-### Embedded Technologies {#embedded-tech-14697}
+### Fixed Issues {#fixed-issues-X}
+
+None.
+
+### Known Issues {#known-issues-X}
+
+None.
+
+### Embedded Technologies {#embedded-tech-X}
 
 |Technology|Version|Link|
 |---|---|---|
