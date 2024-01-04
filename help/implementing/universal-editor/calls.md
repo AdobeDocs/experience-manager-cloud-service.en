@@ -16,7 +16,7 @@ For the developer, however, understanding these calls and what they do can be va
 ![Example of a details call on the Network tab of the developer tools of the browser](assets/calls-network-tab.png)
 
 * The **Payload** of the call contains details of what is being updated by the editor including identifying what to update and how to update it.
-* The **Response** includes details of what exactly was updated by the editor service. This is to facilitate updating the content in the editor. In certain cases, like a `move` call, the entire page must be updated.
+* The **Response** includes details of what exactly was updated by the editor service. This is to facilitate refreshing the content in the editor. In certain cases, like a `move` call, the entire page must be refreshed.
 
 The following is a list of the types of calls that the Universal Editor makes to your app along with sample payloads and responses.
 
