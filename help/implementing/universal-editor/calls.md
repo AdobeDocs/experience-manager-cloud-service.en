@@ -119,11 +119,97 @@ An `add` call occurs when you place new content in your app using the Universal 
 
 Its payload includes a `path` object containing where the content should be added. It also includes a `content` object with additional objects for endpoint-specific details of the content to be stored [for each plugin.](/help/implementing/universal-editor/architecture.md) For example if your app is based on content from AEM and Magento, the payload would contain a data object for each system.
 
+Payload
+```json
+{
+  "op": "patch",
+  "connections": {
+    "aemconnection": "aem:https://author-p7452-e12433.adobeaemcloud.com"
+  },
+  "path": {
+    "container": {
+      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
+      "itemtype": "container",
+      "itemprop": ""
+    }
+  },
+  "content": {
+    "name": "text",
+    "aem": {
+      "page": {
+        "resourceType": "wknd/components/text",
+        "template": {
+          "text": "Default Text"
+        }
+      }
+    }
+  }
+}
+```
+
+Data
+```json
+{
+  "updates": [
+    {
+      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
+      "itemtype": "container"
+    }
+  ]
+}
+```
+
 ## Move {#move}
 
 A `move` call occurs when you move a component within your app using the Universal Editor.
 
 Its payload includes a `from` object defining where the component was and a `to` object defining where it was moved.
+
+Payload
+```json
+{
+  "op": "patch",
+  "connections": {
+    "aemconnection": "aem:https://author-p7452-e12433.adobeaemcloud.com"
+  },
+  "from": {
+    "container": {
+      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
+      "itemtype": "container",
+      "itemprop": ""
+    },
+    "component": {
+      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_1068508321",
+      "itemtype": "text",
+      "itemprop": "text"
+    }
+  },
+  "to": {
+    "container": {
+      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
+      "itemtype": "container",
+      "itemprop": ""
+    },
+    "before": {
+      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_2063168902",
+      "itemtype": "text",
+      "itemprop": "text"
+    }
+  }
+}
+```
+
+Data
+```json
+{
+  "updates": [
+    {
+      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
+      "itemtype": "container"
+    }
+  ]
+}
+```
 
 ## Remove {#remove}
 
@@ -131,14 +217,146 @@ A `remove` call occurs when you delete a component within your app using the Uni
 
 Its payload includes the path of the object that is removed.
 
+Payload
+```json
+{
+  "op": "patch",
+  "connections": {
+    "aemconnection": "aem:https://author-p7452-e12433.adobeaemcloud.com"
+  },
+  "path": {
+    "component": {
+      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_1068508321",
+      "itemtype": "text",
+      "itemprop": "text"
+    },
+    "container": {
+      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
+      "itemtype": "container",
+      "itemprop": ""
+    }
+  }
+}
+```
+
+Data
+```json
+{
+  "updates": [
+    {
+      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
+      "itemprop": "",
+      "itemtype": "container"
+    }
+  ]
+}
+```
+
 ## Patch {#patch}
 
 A `patch` call occurs when you update content in a dialog within your app. This updates the content within the page of the app as a JSON patch to the existing content.
 
 Its payload includes the path of the content on the page as well as the JSON patch of the change to be made.
 
+Payload
+```json
+{
+  "op": "patch",
+  "connections": {
+    "aemconnection": "aem:https://author-p7452-e12433.adobeaemcloud.com"
+  },
+  "path": {
+    "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_1540979193",
+    "itemtype": "text",
+    "itemprop": "text"
+  },
+  "patch": [
+    {
+      "op": "replace",
+      "path": "/text",
+      "value": "Still More WKND Adventures"
+    }
+  ]
+}
+```
+
+Data
+```json
+{
+  "updates": [
+    {
+      "itemid": "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_1540979193"
+    }
+  ]
+}
+```
+
 ## Publish {#publish}
 
 A `publish` call occurs when you click the **Publish** button in the Universal Editor to publish the content that you have edited.
+
+Payload
+```json
+{
+  "op": "patch",
+  "connections": {
+    "aemconnection": "aem:https://author-p7452-e12433.adobeaemcloud.com"
+  },
+  "references": [
+    "urn:aemconnection:/content/dam/wknd-shared/en/magazine/arctic-surfing/aloha-spirits-in-northern-norway/jcr:content/data/master",
+    "urn:aemconnection:/content/wknd/us/en/adventures/jcr:content/root/container/container/title",
+    "urn:aemconnection:/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp/jcr:content/data/master",
+    "urn:aemconnection:/content/dam/wknd-shared/en/adventures/climbing-new-zealand/climbing-new-zealand/jcr:content/data/master",
+    "urn:aemconnection:/content/dam/wknd-shared/en/adventures/cycling-southern-utah/cycling-southern-utah/jcr:content/data/master",
+    "urn:aemconnection:/content/dam/wknd-shared/en/adventures/cycling-tuscany/cycling-tuscany/jcr:content/data/master",
+    "urn:aemconnection:/content/dam/wknd-shared/en/adventures/downhill-skiing-wyoming/downhill-skiing-wyoming/jcr:content/data/master",
+    "urn:aemconnection:/content/dam/wknd-shared/en/adventures/napa-wine-tasting/napa-wine-tasting/jcr:content/data/master",
+    "urn:aemconnection:/content/dam/wknd-shared/en/adventures/riverside-camping-australia/riverside-camping-australia/jcr:content/data/master",
+    "urn:aemconnection:/content/dam/wknd-shared/en/adventures/ski-touring-mont-blanc/ski-touring-mont-blanc/jcr:content/data/master",
+    "urn:aemconnection:/content/dam/wknd-shared/en/adventures/surf-camp-in-costa-rica/surf-camp-costa-rica/jcr:content/data/master",
+    "urn:aemconnection:/content/dam/wknd-shared/en/adventures/tahoe-skiing/tahoe-skiing/jcr:content/data/master",
+    "urn:aemconnection:/content/dam/wknd-shared/en/adventures/west-coast-cycling/west-coast-cycling/jcr:content/data/master",
+    "urn:aemconnection:/content/dam/wknd-shared/en/adventures/yosemite-backpacking/yosemite-backpacking/jcr:content/data/master",
+    "urn:aemconnection:/content/wknd/us/en/newsletter/jcr:content/root/container/title",
+    "urn:aemconnection:/content/wknd/us/en/newsletter/jcr:content/root/container/text",
+    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/title",
+    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container",
+    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text",
+    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/image",
+    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/image_2123678383",
+    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_1668104604",
+    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/image_229050934",
+    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/image_275525847",
+    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_358189229",
+    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_2063168902",
+    "urn:aemconnection:/content/wknd/language-masters/en/universal-editor-container/jcr:content/root/container/text_1540979193"
+  ]
+}
+```
+
+Data
+```json
+{
+  "publishes": [
+    "/content/dam/wknd-shared/en/magazine/arctic-surfing/aloha-spirits-in-northern-norway",
+    "/content/wknd/us/en/adventures",
+    "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp",
+    "/content/dam/wknd-shared/en/adventures/climbing-new-zealand/climbing-new-zealand",
+    "/content/dam/wknd-shared/en/adventures/cycling-southern-utah/cycling-southern-utah",
+    "/content/dam/wknd-shared/en/adventures/cycling-tuscany/cycling-tuscany",
+    "/content/dam/wknd-shared/en/adventures/downhill-skiing-wyoming/downhill-skiing-wyoming",
+    "/content/dam/wknd-shared/en/adventures/napa-wine-tasting/napa-wine-tasting",
+    "/content/dam/wknd-shared/en/adventures/riverside-camping-australia/riverside-camping-australia",
+    "/content/dam/wknd-shared/en/adventures/ski-touring-mont-blanc/ski-touring-mont-blanc",
+    "/content/dam/wknd-shared/en/adventures/surf-camp-in-costa-rica/surf-camp-costa-rica",
+    "/content/dam/wknd-shared/en/adventures/tahoe-skiing/tahoe-skiing",
+    "/content/dam/wknd-shared/en/adventures/west-coast-cycling/west-coast-cycling",
+    "/content/dam/wknd-shared/en/adventures/yosemite-backpacking/yosemite-backpacking",
+    "/content/wknd/us/en/newsletter",
+    "/content/wknd/language-masters/en/universal-editor-container"
+  ]
+}
+```
+
 
 The response of all objects includes a list of items that need to be updated in the editor. For a move, the whole page must be updated since the content was reordered.
