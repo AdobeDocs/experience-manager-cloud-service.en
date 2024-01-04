@@ -7,6 +7,8 @@ description: Learn about the different types of fields that the Universal Editor
 
 Learn about the different types of fields that the Universal Editor supports and what you can instrument for your own apps.
 
+{{#universal-editor-status}}
+
 ## Overview {#overview}
 
 When adapting your own apps for use with the Universal Editor, you must instrument the components and define what data types they can manipulate in the editor. 
