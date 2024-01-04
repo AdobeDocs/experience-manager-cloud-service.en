@@ -8,7 +8,7 @@ exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 
 Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 
-{{#universal-editor-status}}
+{{universal-editor-status}}
 
 ## Architecture Building Blocks {#building-blocks}
 

@@ -7,7 +7,7 @@ description: If you are an AEM developer interested in how the Universal Editor 
 
 If you are an AEM developer interested in how the Universal Editor works and how to use it in your project, this document gives you an end-to-end introduction by leading you through instrumenting the WKND project to work with the Universal Editor.
 
-{{#universal-editor-status}}
+{{universal-editor-status}}
 
 ## Purpose {#purpose}
 

@@ -7,7 +7,7 @@ description: Learn about the different types of calls made to your app by the Un
 
 Learn about the different types of calls made to your app by the Universal Editor to help you when debugging.
 
-{{#universal-editor-status}}
+{{universal-editor-status}}
 
 ## Overview {#overview}
 

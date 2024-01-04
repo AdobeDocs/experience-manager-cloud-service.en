@@ -8,7 +8,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 
 Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
 
-{{#universal-editor-status}}
+{{universal-editor-status}}
 
 ## Introduction {#introduction}
 
