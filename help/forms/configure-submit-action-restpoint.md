@@ -19,8 +19,8 @@ Some of the advantages of configuring the **[!UICONTROL Submit to REST endpoint]
 * It provides flexibility in handling data submissions from Adaptive Forms, supporting dynamic and complex data structures.
 * It supports dynamic mapping of form fields to parameters in the REST endpoint URL, allowing for adaptable and customizable data submissions.
 
-## Steps to configure Submit to REST Endpoint  submit action
-{#steps-to-configure-submit to-restendpoint-submit-action}
+
+## Steps to configure Submit to REST Endpoint  submit action {#steps-to-configure-submit to-restendpoint-submit-action}
 
 To set up AEM Forms REST Endpoint Configuration, perform the following steps:
 
