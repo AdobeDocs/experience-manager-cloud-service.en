@@ -22,12 +22,12 @@ To complete this tutorial, you need the following:
 
 1. Local Development Environment
 
-The tutorial steps and screenshots are performed using **CRXDE Lite**. IDEs can also be used to complete the tutorial. More information on using an IDE to develop [with AEM can be found here.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en)
+The tutorial steps and screenshots are performed using **CRXDE Lite**. IDEs can also be used to complete the tutorial. More information on using an IDE to develop [with AEM can be found here.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
 
 
 ## Project Setup {#project-setup}
 
-A Screens project's source code is typically managed as a multi-module Maven project. To expedite the tutorial, a project was pre-generated using the [AEM Project Archetype 13](https://github.com/adobe/aem-project-archetype). More details on [creating a project with Maven AEM Project Archetype can be found here](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en).
+A Screens project's source code is typically managed as a multi-module Maven project. To expedite the tutorial, a project was pre-generated using the [AEM Project Archetype 13](https://github.com/adobe/aem-project-archetype). More details on [creating a project with Maven AEM Project Archetype can be found here](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html).
 
 1. Download and install the following packages using [CRX Package Manager](http://localhost:4502/crx/packmgr/index.jsp):
 
@@ -373,7 +373,7 @@ A third clientlibrary category: `cq.screens.components.edit` could be used to ad
 
 ## Create a Design Page {#design-page}
 
-AEM Screens uses [static Page Templates](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=en) and [Design configurations](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=en) for global changes. Design configurations are frequently used to configure allowed components for the Parsys on a channel. A best practice is to store these configurations in an app-specific way.
+AEM Screens uses [static Page Templates](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html) and [Design configurations](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html) for global changes. Design configurations are frequently used to configure allowed components for the Parsys on a channel. A best practice is to store these configurations in an app-specific way.
 
 A We.Retail Run Design page is created below that stores all configurations specific to the We.Retail Run project.
 

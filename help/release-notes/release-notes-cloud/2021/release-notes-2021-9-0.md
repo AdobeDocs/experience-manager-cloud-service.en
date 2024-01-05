@@ -62,7 +62,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Analytics for Adaptive Forms** &ndash; You can now capture and track end-user behavior by way of Adobe Analytics for Adaptive Forms to gather end-user insights. It helps make informed decisions based on data to improve the end-user experience.
 
-* **Easily connect Adobe Experience Manager (AEM) Forms with Microsoft&reg; Dynamics and Salesforce** &ndash; The service provides out-of-the-box data source configuration and data models for Microsoft&reg; Dynamics and Salesforce. This makes it [faster and easier for developers to configure Microsoft&reg; Dynamics and Salesforce as data sources for an adaptive form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
+* **Easily connect Adobe Experience Manager (AEM) Forms with Microsoft&reg; Dynamics and Salesforce** &ndash; The service provides out-of-the-box data source configuration and data models for Microsoft&reg; Dynamics and Salesforce. This makes it [faster and easier for developers to configure Microsoft&reg; Dynamics and Salesforce as data sources for an adaptive form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html).
 
 * **E-Sign an adaptive form using DocuSign** &ndash; You can use DocuSign to e-sign an adaptive form. The service provides a custom submit action to use DocuSign with an adaptive form. You can install the package available on Software Distribution to import the submit action.
 
