@@ -116,9 +116,13 @@ When a user submits a form based on a form data model, you can configure the for
 
 To configure the Form Data Model Submit Action, open Adaptive Form Container properties and select **[!UICONTROL Submit using Form Data Model]** from the Submit Action drop-down under the Submission accordion. Then, browse and select a data model object from the **[!UICONTROL Name of the data model object to submit]** drop-down. Save the properties.
 
-On form submission, data for the configured data model object is written to the respective data source.
+On form submission, data for the configured data model object is written to the respective data source. In addition, you can submit a form attachment using a Form Data Model and a Document of Record (DoR) to the data source. For information about form data model, see [[!DNL AEM Forms] Data Integration](data-integration.md).
 
 <!--![data-submission](assets/data-submission.png)-->
+
+> [!NOTE]
+>
+> AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
 
 You can also submit form attachments to a data source using binary data model object property. Do the following to submit attachments to a JDBC data source:
 

@@ -10,7 +10,9 @@ feature: Adaptive Forms, Core Components
 
 To send an email to one or more recipients upon successful submission of the form, you can use the **[!UICONTROL Send Email]** Submit Action. 
 
-This action enables you to create an email that includes form data in a predefined format. For instance, consider the following template where customer name, shipping address, state name, and ZIP code are retrieved from the submitted form data:
+AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
+
+The **[!UICONTROL Send Email]** Submit Action enables you to create an email that includes form data in a predefined format. For instance, consider the following template where customer name, shipping address, state name, and ZIP code are retrieved from the submitted form data:
 
      ```
  
@@ -27,7 +29,13 @@ This action enables you to create an email that includes form data in a predefin
  
      ```
 
-AEM as a Cloud Service offers various submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
+## Advantages
+
+Here are advantages of configuring an Adaptive Form with Send Email submit action:
+
+* It enables quick communication as form data is directly sent to designated email reciepients.
+* It helps in streamlining the workflow by directly integrating form submissions into email notifications.
+* It helps organizations customize the email content, thus making it suitable for specific communication needs.
 
 ## Steps to configure send email submit action {#steps-to-configure-send-email-submit-action}
 
@@ -36,7 +44,7 @@ To set up Adaptive Form send email configuration, perform the following steps:
 1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
 1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
 1. Click the  **[!UICONTROL Submission]** tab. 
-1. From the **[!UICONTROL Submit Action]** drop-down list, select **[!UICONTROL Send email]** .
+1. From the **[!UICONTROL Submit Action]** drop-down list, select **[!UICONTROL Send email]**.
 1. Configure the **[!UICONTROL Action Configuration]** for the **[!UICONTROL Send email]** option.
 
     ![Action configuration of Send Email](/help/forms/assets/send-email-action-configuration.gif)
@@ -52,16 +60,13 @@ To set up Adaptive Form send email configuration, perform the following steps:
 1. Click **[!UICONTROL Done]**
 
 
->[!NOTE]
->
-> * It is crucial for all form fields to have unique element names, even if they are placed on different panels within an Adaptive Form.
-> * When using AEM as a Cloud Service, outbound email requires encryption. By default, outbound email functionality is disabled. To activate it, submit a support ticket to [Request Access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). 
-
-
 ## Best Practices {#best-practices}
 
-1. If the form submission involves sensitive information, ensure that the email communication is secure.
-1. It is recommended to keep the email content clear and concise. Users should understand the purpose of the email and any actions they need to take.
+* If the form submission involves sensitive information, ensure that the email communication is secure.
+* It is recommended to keep the email content clear and concise. Users should understand the purpose of the email and any actions they need to take.
+* It is crucial for all form fields to have unique element names, even if they are placed on different panels within an Adaptive Form.
+* When using AEM as a Cloud Service, outbound email requires encryption. By default, outbound email functionality is disabled. To activate it, submit a support ticket to [Request Access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). 
+
 
 ## Related Articles
 
