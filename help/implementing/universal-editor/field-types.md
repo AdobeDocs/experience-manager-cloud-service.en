@@ -17,7 +17,7 @@ This document provides an overview of the field types available to you along wit
 
 >[!TIP]
 >
->If you are not familiar with how to instrument your app for the Universal Editor, please see the document [Universal Editor Overview for AEM Developers.](help/implementing/universal-editor/developer-overview.md)
+>If you are not familiar with how to instrument your app for the Universal Editor, please see the document [Universal Editor Overview for AEM Developers.](/help/implementing/universal-editor/developer-overview.md)
 
 ## Boolean {#boolean}
 
