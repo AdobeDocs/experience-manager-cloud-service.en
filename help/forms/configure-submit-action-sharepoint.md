@@ -7,12 +7,21 @@ feature: Adaptive Forms, Core Components
 
 # Configure SharePoint Storage for an Adaptive Form
 
-The **[!UICONTROL Submit to SharePoint]** submit action allows you to seamlessly connect your Adaptive Form with a Microsoft SharePoint storage. It sends the form data to the SharePoint storage of your choice after you submit the form. 
+The **[!UICONTROL Submit to SharePoint]** submit action allows you to seamlessly connect your Adaptive Form with a Microsoft® SharePoint storage. It sends the form data to the SharePoint storage of your choice after you submit the form. 
+
+AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
+
+## Advantages
+
+Advantages of submitting data from an Adaptive Form to the **[!UICONTROL Submit to SharePoint]** Submit Action are:
+
+* It facilitates the direct submission of form data to SharePoint, providing a centralized location for storing and managing information.
+* By applying the SharePoint's access control and permissions features, it ensures that only authorized individuals can view or modify the submitted data.
+
 Using **[!UICONTROL Submit to SharePoint]**, you can:
+
 * [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
 * [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list)
-
-AEM as a Cloud Service offers various submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
 
 ## Connect an Adaptive Form to SharePoint Document Library {#connect-af-sharepoint-doc-library}
 
@@ -25,8 +34,8 @@ To use the **[!UICONTROL Submit to SharePoint Document Library]** Submit Action 
 
 To connect AEM Forms to your Microsoft&reg; Sharepoint Document Library Storage:
 
-1. Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; SharePoint]**.   
-1. Once you select the **[!UICONTROL Microsoft&reg; SharePoint]**, you are redirected to **[!UICONTROL SharePoint Browser]**.
+1. Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft®&reg; SharePoint]**.   
+1. Once you select the **[!UICONTROL Microsoft®&reg; SharePoint]**, you are redirected to **[!UICONTROL SharePoint Browser]**.
 1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
 1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint Document Library]** from the drop-down list. The SharePoint configuration wizard appears. 
 
@@ -84,7 +93,7 @@ To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive F
 
 To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 
-1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; SharePoint]**.   
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft®&reg; SharePoint]**.   
 1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
 1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
 1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).

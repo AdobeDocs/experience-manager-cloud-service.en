@@ -13,6 +13,8 @@ exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 
 For example, using Workfront Fusion, you can create a scenario to gather data with Adaptive Form, process the data, and send the data to a data store for archival. Once a scenario is set up, Workfront Fusion automatically executes the tasks whenever a user fills out a form, updating the data store seamlessly.
 
+AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
+
 ## Advantages of using Adobe Workfront Fusion{#advatages-of-workfront-fusion}
 
 Some of the advantages of using Adobe Workfront Fusion with AEM Forms:
@@ -183,3 +185,7 @@ To configure submit action of existing Adaptive Form for Workfront Fusion:
 - A scenario can have multiple webhook links but at a time only one webhook link is active. It is recommended to delete the unlinked webhook, so that it does not appear in AEM Forms submit action drop-down list.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
+
+## Related Articles
+
+{{af-submit-action}}

@@ -38,7 +38,7 @@
 
 * [Send email](/help/forms/configure-submit-action-send-email.md)
 * [Submit to SharePoint](/help/forms/configure-submit-action-sharepoint.md)
-* [Submit using Form Data Model](/help/forms/using-form-data-model.md)
+* [Submit using Form Data Model](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
 * [Submit to OneDrive](/help/forms/configure-submit-action-onedrive)
