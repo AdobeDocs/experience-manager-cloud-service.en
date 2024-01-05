@@ -153,7 +153,7 @@ The Release Date for Best Practices Analyzer v2.1.2 is February 18, 2021.
 ### What is new in Code Refactoring Tools {#what-is-new-crt}
 
 * New version of AIO-CLI plugin released. Latest version of this plugin includes several bug fixes for the Repository Modernizer. 
-   See [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) to learn more about this plugin.
+   See [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) to learn more about this plugin.
 
 ### Bug Fixes {#bug-fixes-crt}
 

@@ -123,7 +123,7 @@ AEM Screens has some interesting constraints that are not necessarily true for t
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   Screens components require two different renderings depending on which [authoring mode](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=en#page-modes) is being used:
+   Screens components require two different renderings depending on which [authoring mode](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) is being used:
 
     1. **Production**: Preview or Publish mode (wcmmode=disabled)
     1. **Edit**: used for all other authoring modes, that is, edit, design, scaffolding, developer...

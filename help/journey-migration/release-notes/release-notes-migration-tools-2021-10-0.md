@@ -19,7 +19,7 @@ The Release Date for Cloud Acceleration Manager is October 25, 2021.
 
 ### What's New {#what-is-new-cam}
 
-Cloud Acceleration Manager now provides users with the ability to view historical BPA reports in a Trendline Report. With this Report, users can view the progress they are making in an easy to consume graphical representation. See [Using View Trendline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam) for more details.
+Cloud Acceleration Manager now provides users with the ability to view historical BPA reports in a Trendline Report. With this Report, users can view the progress they are making in an easy to consume graphical representation. See [Using View Trendline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#trendline-view-cam) for more details.
 
 ### Release Date {#release-date-october-cam}
 
@@ -27,7 +27,7 @@ The Release Date for Cloud Acceleration Manager is October 04, 2021.
  
 ### What is New {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager now provides users with the ability to view the BPA reports in a printable preview, allowing simple printing or printing to PDF for easy shareability. See Step 6 and 7 in [Using Best Practices Analysis Card](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+Cloud Acceleration Manager now provides users with the ability to view the BPA reports in a printable preview, allowing simple printing or printing to PDF for easy shareability. See Step 6 and 7 in [Using Best Practices Analysis Card](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
 
 
 ## Content Transfer Tool {#ctt-release}
