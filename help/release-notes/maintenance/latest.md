@@ -42,6 +42,24 @@ Summarized below are the continuous improvements for maintenance release 14813, 
 
 None.
 
+### Change notice
+
+**Action required**
+
+Upcoming changes will require the library `aem-cloud-testing-clients` used in your custom functional test to be updated to at least version **1.2.1**
+
+Make sure that your dependency in `it.tests/pom.xml` has been updated.
+
+```xml
+<dependency>
+<groupId>com.adobe.cq</groupId>
+<artifactId>aem-cloud-testing-clients</artifactId>
+<version>1.2.1</version>
+</dependency>
+```
+
+
+
 ### Embedded Technologies {#embedded-tech-14813}
 
 |Technology|Version|Link|
