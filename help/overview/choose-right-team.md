@@ -9,8 +9,8 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 >id="aemcloud_chooseteam"
 >title="Choose the  Right Team"
 >abstract="Putting the right people in the right jobs to help drive your Adobe Experience Manager deployment to success."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="Aligning KPIs"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="Assessing KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Aligning KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html" text="Assessing KPIs"
 
 Chances are that in your organization several departments own different aspects of the digital experience. Without governance, the stage is set for endless debate, infighting, and confusion.
 
