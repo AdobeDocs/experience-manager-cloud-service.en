@@ -1,6 +1,6 @@
 ---
 title: Managing Content Fragments
-description: Learn how to manage your AEM Content Fragments from the console and editor, as the basis of your headless content, or for page authoring.
+description: Learn how to manage your AEM Content Fragments from the console and editor, to create content as the basis of your headless content, or for page authoring.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
