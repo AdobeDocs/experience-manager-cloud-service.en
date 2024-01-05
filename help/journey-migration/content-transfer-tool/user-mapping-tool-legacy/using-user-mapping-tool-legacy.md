@@ -88,7 +88,7 @@ The User Mapping Tool is integrated into the Content Transfer Tool. You can down
 
    >[!IMPORTANT]
    >
-   >* After User Mapping is complete, you can navigate back to Content Migration page using the breadcrumb. The User Mapping card displays the status and timestamp. Click **Content Transfer** so you can create a migration Set to run extraction. See [Running the Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) for more details.
+   >* After User Mapping is complete, you can navigate back to Content Migration page using the breadcrumb. The User Mapping card displays the status and timestamp. Click **Content Transfer** so you can create a migration Set to run extraction. See [Running the Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) for more details.
 
 ### Resuming the User Mapping Process {#resume-user-mapping-process}
 

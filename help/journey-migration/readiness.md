@@ -83,12 +83,12 @@ The list of items in the below table is the subset of the changes most relevant 
   </tr>
   <tr>
     <td>Switch to Asynchronous Operations</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">Configuring Asynchronous Operations</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html#configuring-asynchronous-msm-operations">Configuring Asynchronous Operations</a></td>
     <td>To improve the overall performance of your environments, certain operations are run in async mode. The async jobs are queued and run when system resources are available.</td>
   </tr>
   <tr>
     <td>Token-based authentication and integration strategies</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#the-server-to-server-flow">Generating Access Tokens for Server-side APIs</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication">Token-based Authentication Tutorial</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow">Generating Access Tokens for Server-side APIs</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication">Token-based Authentication Tutorial</a></td>
     <td>It is common that systems external to AEM are trying to perform HTTP operations within AEM.<br>The recommended approach is to implement the strategies outlined here rather than relying on creating local usernames with passwords in AEM.</td>
   </tr>
   <tr>
@@ -103,13 +103,13 @@ The list of items in the below table is the subset of the changes most relevant 
   </tr>
   <tr>
     <td>Asset upload methods and supported workflow process steps in AEM as a Cloud Service</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html?lang=en#post-processing-workflows-steps">Upload API Comparisons and Supported WF Process Steps</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html#post-processing-workflows-steps">Upload API Comparisons and Supported WF Process Steps</a></td>
     <td>In AEM as a Cloud Service, either during upload or download of an asset the asset streams directly in or out of binary storage. <br>Not all workflow process steps are supported in AEMaaCS.</td>
   </tr>
   <tr>
     <td>Workflow Launchers</td>
     <td></td>
-    <td>Remove any Workflow Launchers that are triggering either out-of-the-box or custom DAM Update Asset Workflow from your code. <br>All the assets uploaded into AEM as a Cloud Service are going to be processed by the Asset Processing Service. For custom steps, see <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> Post Processing Workflows</a> on how to setup and configure post-processing workflows.</td>
+    <td>Remove any Workflow Launchers that are triggering either out-of-the-box or custom DAM Update Asset Workflow from your code. <br>All the assets uploaded into AEM as a Cloud Service are going to be processed by the Asset Processing Service. For custom steps, see <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows"> Post Processing Workflows</a> on how to setup and configure post-processing workflows.</td>
   </tr>
   <tr>
     <td>Custom Rendition Steps</td>
@@ -133,7 +133,7 @@ The list of items in the below table is the subset of the changes most relevant 
   </tr>
   <tr>
     <td>Dispatcher Configurations and Caching</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en">Dispatcher in the Cloud</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=en#other-content">Cache Management<br></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en">Dispatcher in the Cloud</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content">Cache Management<br></td>
     <td>The Dispatcher configurations must follow a specific structure.<br>The configurations must be managed as part of code and deployed through the Cloud Manager pipeline.</td>
   </tr>
   <tr>

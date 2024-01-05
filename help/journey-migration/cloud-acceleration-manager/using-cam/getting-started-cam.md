@@ -91,4 +91,4 @@ Follow the steps below to delete your project:
 
 ## What's Next {#whats-next}
 
-After you have learned how to log into Cloud Acceleration Manager and how to create a project, you are ready to review the next step in the [Readiness Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en).
+After you have learned how to log into Cloud Acceleration Manager and how to create a project, you are ready to review the next step in the [Readiness Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
