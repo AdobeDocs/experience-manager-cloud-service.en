@@ -21,9 +21,9 @@ The REST API provides access to the same features through HTTP with responses be
 
 ## Gem Session {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en) is a series of technical deep dives into Adobe Experience Manager delivered by Adobe experts.
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) is a series of technical deep dives into Adobe Experience Manager delivered by Adobe experts.
 
-You can [review the session dedicated to the query builder](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=en) for an overview and use of the tool.
+You can [review the session dedicated to the query builder](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) for an overview and use of the tool.
 
 ## Sample Queries {#sample-queries}
 
