@@ -120,7 +120,7 @@ On form submission, data for the configured data model object is written to the 
 
 <!--![data-submission](assets/data-submission.png)-->
 
-> [!NOTE]
+>[!NOTE]
 >
 > AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
 
