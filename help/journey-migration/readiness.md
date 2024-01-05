@@ -43,7 +43,7 @@ The list of items in the below table is the subset of the changes most relevant 
 <tbody>
   <tr>
     <td>Separate Mutable and Immutable Filters into corresponding packages</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=en">AEM as a Cloud Service Notable Changes</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEM Project Structure for AEM as a Cloud Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html">AEM as a Cloud Service Notable Changes</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEM Project Structure for AEM as a Cloud Service</a></td>
     <td>A single package that can be deployed into AEM as a Cloud Service can have sub packages, primarily to contain mutable and immutable content separated into their own packages.</td>
   </tr>
   <tr>
@@ -98,7 +98,7 @@ The list of items in the below table is the subset of the changes most relevant 
   </tr>
   <tr>
     <td>DAM Update Asset Workflow</td>
-    <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html?lang=en">Asset Compute Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html">Asset Compute Service</a></td>
     <td>The media processing steps that are part of DAM Update Asset workflow are now replaced by the Asset Compute Service</td>
   </tr>
   <tr>
@@ -113,17 +113,17 @@ The list of items in the below table is the subset of the changes most relevant 
   </tr>
   <tr>
     <td>Custom Rendition Steps</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en">Processing Profiles</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html">Processing Profiles</a></td>
     <td>Any custom rendition generation, image conversions, or video encodings must be offloaded to the Asset Processing Service by creating corresponding processing profiles.</td>
   </tr>
   <tr>
     <td>Content Search and Indexing</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=en">Content Search and Indexing Changes</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html">Content Search and Indexing Changes</a></td>
     <td>There are considerable changes to the underlying processing of indexes and when it is kicking in.<br>Completely understand and refactor the Oak Indexes before managing them in the code that you deploy.</td>
   </tr>
   <tr>
     <td>Not all maintenance tasks are configurable</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html?lang=en">AEM as a Cloud Service Maintenance Tasks</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html">AEM as a Cloud Service Maintenance Tasks</a></td>
     <td>You can configure only certain maintenance tasks with AEM as a Cloud Service.</td>
   </tr>
   <tr>
@@ -133,17 +133,17 @@ The list of items in the below table is the subset of the changes most relevant 
   </tr>
   <tr>
     <td>Dispatcher Configurations and Caching</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en">Dispatcher in the Cloud</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content">Cache Management<br></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html">Dispatcher in the Cloud</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content">Cache Management<br></td>
     <td>The Dispatcher configurations must follow a specific structure.<br>The configurations must be managed as part of code and deployed through the Cloud Manager pipeline.</td>
   </tr>
   <tr>
     <td>Back up and Restore</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html?lang=en">AEM as a Cloud Service Backup and Restore</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html">AEM as a Cloud Service Backup and Restore</a></td>
     <td></td>
   </tr>
   <tr>
     <td>Changes to Authentication</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">IMS Support for AEM as a Cloud Service</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html">IMS Support for AEM as a Cloud Service</td>
     <td>If you were previously using SAML 2.0 integration on both author and publish before moving to Cloud Service, the main change is that AEM as a Cloud Service Author only integrates with Adobe IMS. However, AEM as a Cloud Service Publish tier can still use SAML or other authentication integrations. AEM as a Cloud Service offers IMS authentication support only for Author, Admin, and Dev users. The IMS authentication does not offer support for external end users of customer sites like site visitors.</td>
   </tr>
 </tbody>
