@@ -10,7 +10,7 @@ exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html)                  |
 | AEM as a Cloud Service     | This article         |
 
 Learn about support for Content Fragments in the Assets HTTP API, an important piece of Adobe Experience Manager's (AEM) headless delivery feature.
