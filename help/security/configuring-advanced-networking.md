@@ -9,7 +9,7 @@ This article aims to introduce you to the different advanced networking features
 
 >[!INFO]
 >
->You can also find a series of articles designed to walk you through each of the advanced networking options at this [location](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en).
+>You can also find a series of articles designed to walk you through each of the advanced networking options at this [location](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html).
 
 ## Overview {#overview}
 
