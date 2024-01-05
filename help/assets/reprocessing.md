@@ -17,31 +17,31 @@ Reprocess assets in a folder if you experience either of the following two scena
 To reprocess assets in a folder:
 
 1. In [!DNL Experience Manager], from the Assets page, select the newly added assets or the assets that you want to reprocess. 
-    In case you select a folder:
+   In case you select a folder:
 
-    * The workflow considers all files in the selected folder, recursively.
-    * If there are one or more subfolders with assets in the main selected folder, the workflow reprocesses every asset in the folder hierarchy.
-    * As a best practice, avoid running this workflow on a folder hierarchy that has more than 1000 assets.
+   * The workflow considers all files in the selected folder, recursively.
+   * If there are one or more subfolders with assets in the main selected folder, the workflow reprocesses every asset in the folder hierarchy.
+   * As a best practice, avoid running this workflow on a folder hierarchy that has more than 1000 assets.
 
 1. Select **[!UICONTROL Reprocess Assets]**. Choose between the two options:
 
     ![Reprocessing Assets Options](assets/reprocessing-assets-options.png)
 
- * **[!UICONTROL Full Process]:** Select this option when you want to execute the overall process including default profile, custom profile, dynamic processing (if configured), and post processing workflows.
- * **[!UICONTROL Advanced]:** Select this option to choose advanced reprocessing.
+   * **[!UICONTROL Full Process]:** Select this option when you want to execute the overall process including default profile, custom profile, dynamic processing (if configured), and post processing workflows.
+   * **[!UICONTROL Advanced]:** Select this option to choose advanced reprocessing.
 
-    ![Advanced Reprocessing Assets Options](assets/reprocessing-assets-options-advanced.png)
+     ![Advanced Reprocessing Assets Options](assets/reprocessing-assets-options-advanced.png)
 
-Select among the following advanced options:
+     Select among the following advanced options:
 
-* **[!UICONTROL Default Preview Renditions]:** Choose this option when you want to reprocess the renditions that are previewed by default.
+     * **[!UICONTROL Default Preview Renditions]:** Choose this option when you want to reprocess the renditions that are previewed by default.
 
-* **[!UICONTROL Metadata]:** Choose this option when you want to extract metadata information and smart tags for the selected assets.
+     * **[!UICONTROL Metadata]:** Choose this option when you want to extract metadata information and smart tags for the selected assets.
 
-* **[!UICONTROL Processing Profiles]:** Choose this option when you want to reprocess a selected profile. You can choose **[!UICONTROL Full Process]** option to include the default processing and the custom profile assigned at the folder level. 
-<!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
+     * **[!UICONTROL Processing Profiles]:** Choose this option when you want to reprocess a selected profile. You can choose **[!UICONTROL Full Process]** option to include the default processing and the custom profile assigned at the folder level. 
+     <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-* **[!UICONTROL Post-processing Workflow]:** Choose this option where additional processing of assets is required that cannot be achieved using the processing profiles. Additional post-processing workflows can be added to the configuration. Post-processing lets you add completely customized processing on top of the configurable processing using asset microservices.
+     * **[!UICONTROL Post-processing Workflow]:** Choose this option where additional processing of assets is required that cannot be achieved using the processing profiles. Additional post-processing workflows can be added to the configuration. Post-processing lets you add completely customized processing on top of the configurable processing using asset microservices.
 
 See [use asset microservices and processing profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) to learn more about processing profiles and post-processing workflow.
 
