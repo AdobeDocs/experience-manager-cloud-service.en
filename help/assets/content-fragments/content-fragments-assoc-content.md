@@ -1,11 +1,17 @@
 ---
 title: Associated Content (Assets - Content Fragments)
-description: Understand how AEM's associated content feature provides the connection so that assets can be optionally used with the fragment.
+description: Understand how the associated content feature for AEM Content Fragments provides the connection so that assets can be optionally used with the fragment.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 ---
 # Associated Content{#associated-content}
 
-AEM's Associated content feature provides the connection so that assets can be optionally used with the fragment when it is added to a content page. This provides flexibility for your headless content delivery by [providing a range of assets to access when using the content fragment on a page,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) while also helping to reduce the time required to search for the appropriate asset.
+For Content Fragments of Adobe Experience Manager (AEM) as a Cloud Service, the associated content feature (available in the original editor) provides the connection so that assets can be optionally used with the fragment. This provides flexibility by [providing a range of assets to access when using the content fragment](/help/assets/content-fragments/content-fragments.md#using-associated-content), while also helping to reduce the time required to search for the appropriate asset. This feature can be used for both for your headless content delivery, and page authoring.
+
+>[!NOTE]
+>
+>Content Fragments are a Sites feature, but are stored as **Assets**. 
+>
+>There are two editors for authoring Content Fragments. This section covers the original editor, primarily accessed from the **Assets** console. 
 
 ## Adding Associated Content {#adding-associated-content}
 

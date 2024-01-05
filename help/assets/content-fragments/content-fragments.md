@@ -206,7 +206,7 @@ The content fragment assets are made up of the following parts (either directly 
 
     >[!NOTE]
     >
-    >Assets can also be added as [additional (in-between) content](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) when using a fragment on a page; using either Associated Content or assets from the Assets browser.
+    >Assets can also be added as additional (in-between) content when using a fragment on a page; using either [Associated Content](/help/assets/content-fragments/content-fragments-assoc-content.md) or assets from the Assets browser.
 
 * **Associated Content**
 
