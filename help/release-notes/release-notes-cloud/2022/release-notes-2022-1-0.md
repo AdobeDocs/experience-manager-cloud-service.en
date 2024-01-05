@@ -117,7 +117,7 @@ The Release Date for Content Transfer Tool v1.8.6 is February 03, 2022.
 
 ### What's New {#what-is-new-ctt}
 
-* Content Validation - Users can reliably determine if all the content that was extracted by the Content Transfer Tool was successfully ingested into the target instance. To use this feature, enable it in the `System Console` of the source AEM environment. See [Validating Content Transfers - Getting Started](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) for more details.
+* Content Validation - Users can reliably determine if all the content that was extracted by the Content Transfer Tool was successfully ingested into the target instance. To use this feature, enable it in the `System Console` of the source AEM environment. See [Validating Content Transfers - Getting Started](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started) for more details.
 
 ### Bug Fixes {#bug-fixes-ctt}
 
