@@ -65,7 +65,7 @@ First, look at the documentation detailing the basic tooling, and start refactor
 
 
 * During planning, it is a good idea to have a list of areas that must be refactored to be compatible with AEM as a Cloud Service. You can review [Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md) for more details on how to refactor and optimize code for Cloud Service.  
-* Read up on how to [Manage Configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=en#what-is-a-configuration) in AEM as a Cloud Service.
+* Read up on how to [Manage Configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) in AEM as a Cloud Service.
 * Learn how to set up a Local Development Environment by downloading the [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
 * Finally, familiarize yourself with the [AEM as a Cloud Service Java API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
