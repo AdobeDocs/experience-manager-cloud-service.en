@@ -127,4 +127,4 @@ All folder operations are accessible via the selection action bar in inventory v
 
 ## What's Next {#whats-next}
 
-Now, that you have learnt how to create and manage displays for your project, you should continue your Screens as a Cloud Service journey by next reviewing the document [Assigning Channel to a Display in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).
+Now, that you have learnt how to create and manage displays for your project, you should continue your Screens as a Cloud Service journey by next reviewing the document [Assigning Channel to a Display in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).

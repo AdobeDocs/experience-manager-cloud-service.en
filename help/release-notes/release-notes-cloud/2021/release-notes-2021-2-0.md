@@ -49,7 +49,7 @@ The following release (2021.3.0) will be on March 25, 2021.
 
 * Assets can be sourced using [!DNL Experience Manager Assets Brand Portal]. It helps to source assets from the agency users for new marketing campaigns, photoshoots, and projects.
 
-* [!DNL Experience Manager Assets] as a [!DNL Cloud Service] is entitled to have a pre-configured [!DNL Brand Portal] instance. The [!DNL Cloud Manager] user can activate [!DNL Brand Portal] on [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. See [activate Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en).
+* [!DNL Experience Manager Assets] as a [!DNL Cloud Service] is entitled to have a pre-configured [!DNL Brand Portal] instance. The [!DNL Cloud Manager] user can activate [!DNL Brand Portal] on [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. See [activate Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
 * Businesses can now source assets using [!DNL Brand Portal]. Asset sourcing feature uses [!DNL Brand Portal] to help customers engage with agency users to source assets for new marketing campaigns, photoshoots and projects. See [asset sourcing in [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
@@ -153,7 +153,7 @@ The Release Date for Best Practices Analyzer v2.1.2 is February 18, 2021.
 ### What is new in Code Refactoring Tools {#what-is-new-crt}
 
 * New version of AIO-CLI plugin released. Latest version of this plugin includes several bug fixes for the Repository Modernizer. 
-   See [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) to learn more about this plugin.
+   See [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) to learn more about this plugin.
 
 ### Bug Fixes {#bug-fixes-crt}
 

@@ -10,7 +10,13 @@
 
 ## WAF Config Limited Release {#waf-limited-release}
 
-[!BADGE WAF-DDOS protection will be available end of 2023.]{type=Caution tooltip="WAF-DDOS protection will be available end of 2023."}
+[!BADGE WAF-DDOS protection will be available by the end of 2023.]{type=Caution tooltip="WAF-DDOS protection will be available by the end of 2023."}
+
+## Universal Editor Status {#universal-editor-status}
+
+>[!NOTE]
+>
+>The Universal Editor is still in development and its capabilities are subject to change and may differ from what is detailed in this document.
 
 ## See Also {#see-also}
 
