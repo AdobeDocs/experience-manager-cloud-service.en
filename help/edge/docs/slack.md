@@ -2,6 +2,8 @@
 description: We are available on Slack on dedicated Slack channels and both the Adobe team and the Slack bot are available to answer your questions.
 title: Slack Bot
 feature: Edge Delivery Services
+hide: yes
+hidefromtoc: yes
 ---
 # Slack Bot
 

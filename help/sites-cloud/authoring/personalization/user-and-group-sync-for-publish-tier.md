@@ -88,7 +88,7 @@ There are various approaches to persisting data, depending on the nature of that
 User profile information can be written and read in two ways:
 
 * Server-side use with the `com.adobe.granite.security.user` Interface UserPropertiesManager interface, which will place data under the user's node in `/home/users`. Make sure that pages that are unique per user are not cached. 
-* Client-side using ContextHub, as described by [the documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=en#personalization).
+* Client-side using ContextHub, as described by [the documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization).
 
 ### Third-party data stores {#third-party-data-stores}
 
@@ -98,7 +98,7 @@ Real-time access to third-party services to retrieve profile attributes is possi
 
 ## Permissions (Closed User Groups) {#permissions-closed-user-groups}
 
-Publish-tier access policies, also called Closed User Groups (CUGs), are defined in the AEM author as [described here](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=en#applying-your-closed-user-group-to-content-pages). To restrict certain sections or pages of a website from some users, apply the CUGs as needed using the AEM author, as described here, and replicate them to the publish tier.
+Publish-tier access policies, also called Closed User Groups (CUGs), are defined in the AEM author as [described here](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). To restrict certain sections or pages of a website from some users, apply the CUGs as needed using the AEM author, as described here, and replicate them to the publish tier.
 
 * If users log in by authenticating with an identity provider (IdP) using SAML, the authentication handler will identify the user's group memberships (which should match the CUGs on the publish tier), and persist the association between the user and the group through a repository record
 * If login is accomplished without IdP integration, custom code can apply the same repository structure relationships.
