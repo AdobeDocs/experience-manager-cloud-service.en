@@ -243,6 +243,27 @@ Submit a support ticket if you want this behavior to be disabled.
 
 For environments created before October 2023, it is recommended to configure the Dispatcher configuration's `ignoreUrlParams` property as [documented here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
+There are two possibilities to ignore marketing parameters. (Where the first one is preferred to ignore cache busting via query parameters):
+
+1. Ignore all parameters and selectively allow parameters that are used. 
+In the following example only `page` and `product` parameters are not ignored and the requests will be forwarded to the publisher.
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "allow" }
+   /0002 { /glob "page" /type "deny" }
+   /0003 { /glob "product" /type "deny" }
+}
+```
+
+1. Allow all parameters except the marketing parameters. The file [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) defines a list of commonly used marketing parameters that will be ignored. Adobe will not update this file. It can be extended by users depending on their marketing providers.
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "deny" }
+   $include "../cache/marketing_query_parameters.any"
+}
+```
+
 
 ## Dispatcher Cache Invalidation {#disp}
 
