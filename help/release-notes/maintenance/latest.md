@@ -46,7 +46,7 @@ None.
 
 **Action required**
 
-Upcoming changes will require the library `aem-cloud-testing-clients` used in your custom functional test to be updated to at least version **1.2.1**
+Upcoming changes will require the library [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) used in your custom functional test to be updated to at least version **1.2.1**
 
 Make sure that your dependency in `it.tests/pom.xml` has been updated.
 
