@@ -10,7 +10,7 @@ exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html)                  |
 | AEM as a Cloud Service     | This article         |
 
 Learn about support for Content Fragments in the Assets HTTP API, an important piece of Adobe Experience Manager's (AEM) headless delivery feature.
@@ -147,8 +147,8 @@ If the Assets REST API is used within an environment without specific authentica
 >
 >For more information,  see:
 >
->* [CORS/AEM explained](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en)
->* [Video - Developing for CORS with AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=en)
+>* [CORS/AEM explained](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Video - Developing for CORS with AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 In environments with specific authentication requirements, OAuth is recommended.
@@ -352,4 +352,4 @@ See here for detailed API references:
 For more information, see:
 
 * [Assets HTTP API documentation](/help/assets/mac-api-assets.md)
-* [AEM Gem session: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=en)
+* [AEM Gem session: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)
