@@ -58,6 +58,8 @@ Make sure that your dependency in `it.tests/pom.xml` has been updated.
 </dependency>
 ```
 
+This change will be required after Feb 12 2024.
+
 Failing to update the dependency library will result in pipeline failures at the "Custom Functional Testing" step.
 
 ### Embedded Technologies {#embedded-tech-14813}
