@@ -42,15 +42,18 @@ The search displays similar results if you are working in the **[!UICONTROL Asse
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425489)
 
-## Search using Adobe Firefly
+## Search using [!UICONTROL Adobe Firefly]
 
-**Scenario 2: Search assets with integrated Adobe Firefly when you need a new reference asset which is not available in the folder. Search assets using the using the `black lamborghini car` as the kryword.**
+**Scenario 2: Use [!UICONTROL Adobe Firefly] to search for assets not available in the existing folder. Perform a search using the keyword `Bugatti Type 57` to find the desired assets**
 
-Searching for an asset which is not available in the folder.
+With the integration of [!UICONTROL Adobe Firefly] and Adobe Experience Manager Assets, you can efficiently search for assets not available in any of the assets folder. 
+When searching for `Bugatti Type 57`, no results are found. 
+![Firefly integration](assets/firefly-integration.jpg)
+In the search bar, enter the asset name, and click Generate. The sample assets are displayed on the screen. You can upload these assets to your preferred folder for easy access.
 
 ## Files and folders {#files-folders}
 
-**Scenario 2: Search for all files using the `classic car` keyword within the `automobile` folder.**
+**Scenario 3: Search for all files using the `classic car` keyword within the `automobile` folder.**
 
 Files and folders filter helps you narrow down your search. Use Files, Folders, or Files and Folders options available in the drop-down list based on your requirement. The option to choose among Files, Folders, or Files and Folders is accessible in the **[!UICONTROL Admin view]** only. In the **[!UICONTROL Assets view]**, go to [!UICONTROL Path] and browse the folder where you want to perform a search.
 
@@ -71,7 +74,7 @@ Select the folder from the path and navigate to the required folder if you want 
 
 ## Operators {#operators}
 
-**Scenario 3: Search for `Classic Car` or `Car` keywords using various operator combinations to narrow down your search.**
+**Scenario 4: Search for `Classic Car` or `Car` keywords using various operator combinations to narrow down your search.**
 
 To execute the above scenario in **[!UICONTROL Admin view]**, you can use a combination of various operators to enhance your search experience. The supported operators are:  
 
@@ -155,7 +158,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 ![Filter example 1](assets/filter-1.png)
 -->
 
-**Scenario 4: Search for unpublished PDF file type documents with the `classic car` keyword in it.**
+**Scenario 5: Search for unpublished PDF file type documents with the `classic car` keyword in it.**
 
 Execute the following steps in **[!UICONTROL Admin view]**:
 
@@ -172,7 +175,7 @@ Execute the following steps in **[!UICONTROL Assets view]**:
 1. Go to Filters. Under [!UICONTROL MIME Type], select [!UICONTROL PDF].
 1. Go to [!UICONTROL Asset Status], select [!UICONTROL All] to include all the published and unpublished assets.
 
-**Scenario 5: Search for all images except PNG**
+**Scenario 6: Search for all images except PNG**
 
 When you are unsure about the title or meta description of an asset, you can use various search filters to make your search more relevant. For example, to search assets in **[!UICONTROL Admin view]**, follow the steps below:
 
@@ -193,7 +196,7 @@ To search assets using the mentioned scenario in **[!UICONTROL Assets view]**, f
 
 AEM search allows you to craft complex search queries with less effort. Following are the various examples to help you create complex search queries:
 
-**Scenario 6: Search for all documents in the Experience Manager repository with `classic car` in their metadata. The content of the document must contain `classic car` keyword in it.**
+**Scenario 7: Search for all documents in the Experience Manager repository with `classic car` in their metadata. The content of the document must contain `classic car` keyword in it.**
 
 Adobe Experience Manager allows you to add multiple criteria to your search. You can use a combination of keywords, operator(s), and filter(s) to narrow down your search results. 
  
@@ -207,7 +210,7 @@ To perform a search for scenario 6:
 
 Scenario 6 is not possible to execute in **[!UICONTROL Assets view]** as it does not support the usage of Wildcards.
 
-**Scenario 7: Search for all documents in the Experience Manager repository in which the content of the document must include `car` but exclude `classic`. The same condition applies on metadata of an asset.**
+**Scenario 8: Search for all documents in the Experience Manager repository in which the content of the document must include `car` but exclude `classic`. The same condition applies on metadata of an asset.**
 
 To perform a search for scenario 7: 
 
@@ -235,7 +238,7 @@ When you are unsure about the title or meta description of an asset, you can use
 ![Search all images except jeep](assets/images-jeep.png)
 -->
 
-**Scenario 8: Search for metadata tags with metadata jeep**
+**Scenario 9: Search for metadata tags with metadata jeep**
 
 You can capture a specific criteria using various search filters. Tag is a keyword that is assigned to an asset to make it identifiable among a large number of assets. For example, in this scenario, search for assets with *jeep* tags in it. To do this, type `tags:jeep` in the search bar. Only assets that meet this criteria are listed in the search results.
 
@@ -245,7 +248,7 @@ The search displays similar results if you are working in the **[!UICONTROL Asse
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425490)  
 
-**Scenario 9: Find similar match for red color car**
+**Scenario 10: Find similar match for red color car**
 
 While performing your search on AEM, you can filter your results by showing similar assets to the selected ones. You can use the **Find Similar** option to narrow down your search to the exact or similar match of the searched Asset. This helps finding assets which have similar smart tags to the selected asset. For example, when you want to search for alike assets, execute the following steps:
 
@@ -268,7 +271,7 @@ Search facets in Adobe Experience Manager let you search for assets in multiple 
 to be added later
 -->
 
-**Scenario 10: Search specific assets based on their last modified or expiry date**
+**Scenario 11: Search specific assets based on their last modified or expiry date**
 
 Date constraints allow you to narrow down your custom search to a particular period, for example, using the time period search filters. To search for the above requirement, type `classic car` in the search bar. Select the date range in the [!UICONTROL Created Date] and [!UICONTROL Last Modified] date filters.
 
