@@ -19,17 +19,17 @@ AEM as a Cloud Service offers various out of the box submit actions for handling
 
 Some of the advantages of using Adobe Workfront Fusion with AEM Forms:
 
-- Sending data captured with Adaptive Forms to a Workfront Fusion scenario
-- Automating tasks which are less prone to errors.
-- Customizing requirements specific to an organization that are not directly included in Workfront.
-- Handling simple logics and straightforward decisions, for example, if/then statements.
+* Sending data captured with Adaptive Forms to a Workfront Fusion scenario
+* Automating tasks which are less prone to errors.
+* Customizing requirements specific to an organization that are not directly included in Workfront.
+* Handling simple logics and straightforward decisions, for example, if/then statements.
 
 ## Prerequisites to integrate AEM Forms with Adobe Workfront Fusion {#prerequisites}
 
 Prerequisites required to connect Workfront Fusion to AEM Forms are:
 
-- A valid [Workfront Fusion license](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-- An AEM user with right to access [Dev Console](https://my.cloudmanager.adobe.com/) to [retrieve the service credentials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+* A valid [Workfront Fusion license](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* An AEM user with right to access [Dev Console](https://my.cloudmanager.adobe.com/) to [retrieve the service credentials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## Integrate AEM Forms with Adobe Workfront Fusion
 
@@ -94,16 +94,16 @@ To add a connection:
     > Retain the `https://` in the **IMS endpoint** textbox while adding the `imsEndpoint` URL. 
 
 1. Specify the following values in the **[!UICONTROL Create a Connection]** dialog box:
-    - Specify **Client ID** with value of **clientId** from the service credentials in the Developer console.
-    - Specify **Client Secret** with value of **clientSecret** from the service credentials in the Developer console.
-    - Specify **Technical Account ID**  with value of **id** from the service credentials in the Developer console.
-    - Specify **Org ID**  with value of **org** from the service credentials in the Developer console.
-    - **Meta Scopes**  with value of **metascopes** from the service credentials in the Developer console.
-    - **Private Keys**  with value of **privateKey** from the service credentials in the Developer console.
+    * Specify **Client ID** with value of **clientId** from the service credentials in the Developer console.
+    * Specify **Client Secret** with value of **clientSecret** from the service credentials in the Developer console.
+    * Specify **Technical Account ID**  with value of **id** from the service credentials in the Developer console.
+    * Specify **Org ID**  with value of **org** from the service credentials in the Developer console.
+    * **Meta Scopes**  with value of **metascopes** from the service credentials in the Developer console.
+    * **Private Keys**  with value of **privateKey** from the service credentials in the Developer console.
 
     >[!NOTE]
     >
-    >- For **Private Key**, remove `\r\n` from its value. 
+    >* For **Private Key**, remove `\r\n` from its value. 
     >  For example, if the private key value is:
     >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`, then after removing the `\r\n` from the private key, the key would look like the following, with both the values appearing in a separate line: 
     >
@@ -111,7 +111,7 @@ To add a connection:
     >
     >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
     > 
-    >- You also have the option to retrieve a private key or certificate from the file by selecting the **Extract** button.
+    >* You also have the option to retrieve a private key or certificate from the file by selecting the **Extract** button.
 
 1. Click **Continue**.
 
@@ -138,8 +138,8 @@ Once you click the toggle button, the Workfront scenario starts appearing in the
 ### 2. Configure submit action of an Adaptive Form for Workfront Fusion
 
 You can configure the submit action for Workfont Fusion for:
-- [New Adaptive Forms](#new-af-submit-action)
-- [Existing Adaptive forms](#existing-af-submit-action)
+* [New Adaptive Forms](#new-af-submit-action)
+* [Existing Adaptive forms](#existing-af-submit-action)
 
 #### Configure submit action of new Adaptive Form for Workfront Fusion {#new-af-submit-action}
 
@@ -181,8 +181,8 @@ To configure submit action of existing Adaptive Form for Workfront Fusion:
 
 ## Best Practices {#best-practices}
 
-- It is recommended to choose your webhook name carefully, as there is no way to get the scenario name at the AEM instance. In case, you change the webhook name in future it is not reflected at the AEM Forms submit action drop-down list.
-- A scenario can have multiple webhook links but at a time only one webhook link is active. It is recommended to delete the unlinked webhook, so that it does not appear in AEM Forms submit action drop-down list.
+* It is recommended to choose your webhook name carefully, as there is no way to get the scenario name at the AEM instance. In case, you change the webhook name in future it is not reflected at the AEM Forms submit action drop-down list.
+* A scenario can have multiple webhook links but at a time only one webhook link is active. It is recommended to delete the unlinked webhook, so that it does not appear in AEM Forms submit action drop-down list.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
 
