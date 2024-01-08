@@ -42,6 +42,12 @@ The search displays similar results if you are working in the **[!UICONTROL Asse
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425489)
 
+## Search using Adobe Firefly
+
+**Scenario 2: Search assets with integrated Adobe Firefly when you need a new reference asset which is not available in the folder. Search assets using the using the `black lamborghini car` as the kryword.**
+
+Searching for an asset which is not available in the folder.
+
 ## Files and folders {#files-folders}
 
 **Scenario 2: Search for all files using the `classic car` keyword within the `automobile` folder.**
