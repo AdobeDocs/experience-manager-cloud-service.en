@@ -120,7 +120,7 @@ Review this list of activities to ensure that you perform a smooth and successfu
 * Perform the final content top-up.
 * Validate dispatcher configurations.
   * Use a local dispatcher validator that facilitates configuring, validating, and simulating the dispatcher locally
-    * [Set up the local dispatcher tools.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+    * [Set up the local dispatcher tools.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#prerequisites)
   * Review the virtual host configuration carefully.
     * The easiest (and default) solution is to include `ServerAlias *` in your virtual host file in the `/dispatcher/src/conf.d/available_vhostsfolder`.
       * This will permit the host aliases used by product functional tests, dispatcher cache invalidation, and clones to function.
