@@ -16,7 +16,7 @@ Summarized below are the continuous improvements for maintenance release 14813, 
 ### Enhancements {#enhancements-14813}
 
 * ASSETS-32101: Metadata for smart crop renditions should be updated in DB.
-* ASSETS-31297: Improve checks to prevent delete of copied asset from dynamic media.
+* ASSETS-31297: Improve checks to prevent deletion of copied assets from dynamic media.
 
 ### Fixed Issues {#fixed-issues-14813}
 
@@ -24,7 +24,7 @@ Summarized below are the continuous improvements for maintenance release 14813, 
 * ASSETS-32755: configure ordered queue for asset move events.
 * ASSETS-30756: asset move fails when folder name ends in 'html'.
 * ASSETS-32754: [Collab API] Tasks cannot be assigned to users who have not logged in previously in GenStudio and AEMCS.
-* ASSETS-29011: Smart crop visible for read only users.
+* ASSETS-29011: Smart crop visible for read-only users.
 * ASSETS-32311: Asset Delivery opt-in for VIP program.
 * ASSETS-30756: Add CM exclusion.
 * ASSETS-28767: Updated cq-dam-mac-sync version.
@@ -36,17 +36,17 @@ Summarized below are the continuous improvements for maintenance release 14813, 
 * ASSETS-26549: Assets / Nodes with "jcr:lastModifiedBy": "workflow-process-service" show as "external user" in list view.
 * ASSETS-31038: Add user mapping for eventrecorderhelper.
 * ASSETS-30068: New status COMPLETED_WITH_ERROR for bulk import AE.
-* ASSETS-31297: Prevent delete of copied asset from dynamic media.
+* ASSETS-31297: Prevent deletion of copied assets from dynamic media.
 
 ### Known Issues {#known-issues-14813}
 
 None.
 
-### Change notice
+### Change Notice {#change-notice-14813}
 
-**Action required**
+**Action Required**
 
-Upcoming changes will require the library [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) used in your custom functional test to be updated to at least version **1.2.1**
+Upcoming changes will require the library [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) used in your custom functional tests to be updated to at least version **1.2.1**
 
 Make sure that your dependency in `it.tests/pom.xml` has been updated.
 
@@ -58,7 +58,7 @@ Make sure that your dependency in `it.tests/pom.xml` has been updated.
 </dependency>
 ```
 
-This change will be required after Feb 12 2024.
+This change will be required after February 12, 2024.
 
 Failing to update the dependency library will result in pipeline failures at the "Custom Functional Testing" step.
 
