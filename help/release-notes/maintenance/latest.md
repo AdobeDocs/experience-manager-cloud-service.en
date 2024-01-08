@@ -52,13 +52,13 @@ Make sure that your dependency in `it.tests/pom.xml` has been updated.
 
 ```xml
 <dependency>
-<groupId>com.adobe.cq</groupId>
-<artifactId>aem-cloud-testing-clients</artifactId>
-<version>1.2.1</version>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.1</version>
 </dependency>
 ```
 
-
+Failing to update the dependency library will result in pipeline failures at the "Custom Functional Testing" step starting.
 
 ### Embedded Technologies {#embedded-tech-14813}
 
