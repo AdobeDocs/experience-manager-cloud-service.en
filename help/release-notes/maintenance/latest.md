@@ -58,7 +58,7 @@ Make sure that your dependency in `it.tests/pom.xml` has been updated.
 </dependency>
 ```
 
-Failing to update the dependency library will result in pipeline failures at the "Custom Functional Testing" step starting.
+Failing to update the dependency library will result in pipeline failures at the "Custom Functional Testing" step.
 
 ### Embedded Technologies {#embedded-tech-14813}
 
