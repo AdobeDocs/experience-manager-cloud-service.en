@@ -8,7 +8,7 @@ exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 This section describes how to create an environment for your program in Cloud Manager.
 
 >[!NOTE]
->See [Managing Environments in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) to learn how the user can create an environment.
+>See [Managing Environments in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) to learn how the user can create an environment.
 
 ## Objective {#objective}
 
