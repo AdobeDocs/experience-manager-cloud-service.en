@@ -604,8 +604,8 @@ user-guide-title: AEM as a Cloud Service
         + [Use machine translation or human translation to translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
         + [Configuring redirect page or thank you message](/help/forms/configure-redirect-page-or-thank-you-message.md)
         + [Create forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-      + Submit Action for an Adaptive Form 
-         + [Configure Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)
+      + Submit Action for an Adaptive Form {#submit-action-core-component} 
+        + [Configure Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)
           + [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
           + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
           + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
