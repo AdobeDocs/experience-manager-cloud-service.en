@@ -1,23 +1,23 @@
 ---
-title: Field Types for the Universal Editor
-description: Learn about the different types of fields that the Universal Editor supports and what you can instrument for your own apps.
+title: Field Types
+description: Learn about the different types of fields that the Universal Editor can edit in the components rail with examples of how you can instrument your own app.
 ---
 
-# Field Types for the Universal Editor {#field-types}
+# Field Types {#field-types}
 
-Learn about the different types of fields that the Universal Editor supports and what you can instrument for your own apps.
+Learn about the different types of fields that the Universal Editor can edit in the components rail with examples of how you can instrument your own app.
 
 {{universal-editor-status}}
 
 ## Overview {#overview}
 
-When adapting your own apps for use with the Universal Editor, you must instrument the components and define what data types they can manipulate in the editor. 
+When adapting your own apps for use with the Universal Editor, you must instrument the components and define what data types they can manipulate in the component rail of the editor.
 
-This document provides an overview of the field types available to you in the editor.
+This document provides an overview of the field types available to you along with example configurations.
 
 >[!TIP]
 >
->If you are not familiar with how to instrument your app for the Universal Editor, please see the document [Universal Editor Overview for AEM Developers.](help/implementing/universal-editor/developer-overview.md)
+>If you are not familiar with how to instrument your app for the Universal Editor, please see the document [Universal Editor Overview for AEM Developers.](/help/implementing/universal-editor/developer-overview.md)
 
 ## Boolean {#boolean}
 
