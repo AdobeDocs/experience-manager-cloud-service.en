@@ -120,8 +120,8 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >id="aemcloud_bpa_interpreting"
 >title="Interpreting the Best Practices Analyzer Report"
 >abstract="There are two options for viewing BPA report outputs: UI and CSV. When the Best Practices Analyzer tool is run in the AEM instance, the UI report is displayed as results in the tool window. The CSV format of the report includes information that is generated from the Pattern Detector output, sorted and organized by category type, sub-type, and importance level."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Reviewing Best Practices Analysis Report"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Understanding Best Practices Analyzer Report categories"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#analysis-report" text="Reviewing Best Practices Analysis Report"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html" text="Understanding Best Practices Analyzer Report categories"
 
 When the Best Practices Analyzer tool is run in the AEM instance, the report is displayed as results in the tool window. 
 

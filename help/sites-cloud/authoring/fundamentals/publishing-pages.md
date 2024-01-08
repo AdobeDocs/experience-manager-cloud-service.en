@@ -46,6 +46,14 @@ Depending on your location, you can publish:
 
 >[!NOTE]
 >
+>If you want to preserve page order you have to use [Manage Publication](#manage-publication) to publish the parent page together with any child pages - in a single action.
+>
+>Page order is not guaranteed:
+>* if only child pages are selected for publication (as the order information is held on the parent page)
+>* if the parent and child pages are published in separate actions 
+
+>[!NOTE]
+>
 > For additional possibilities see **On Time** and **Off Time** in the [Basic tab of Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### Publishing from the Editor {#publishing-from-the-editor}
@@ -111,6 +119,14 @@ To publish a page with Quick Publish:
 #### Manage Publication {#manage-publication}
 
 **Manage Publication** offers more options than **Quick Publish**, allowing for the inclusion of child pages, customization of the references, and starting any applicable workflows and offering the option to publish at a later date.
+
+>[!NOTE]
+>
+>If you want to preserve page order you have to use **Manage Publication** to publish the parent page together with any child pages in a single action.
+>
+>Page order is not guaranteed:
+>* if only child pages are selected for publication (as the order information is held on the parent page)
+>* if the parent and child pages are published in separate actions 
 
 To publish or unpublish a page using Manage Publication:
 
