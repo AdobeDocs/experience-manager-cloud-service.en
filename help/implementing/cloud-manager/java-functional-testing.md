@@ -114,9 +114,9 @@ Make sure that your dependency in `it.tests/pom.xml` has been updated.
 
 ```
 <dependency>
-<groupId>com.adobe.cq</groupId>
-<artifactId>aem-cloud-testing-clients</artifactId>
-<version>1.2.1</version>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.1</version>
 </dependency>
 ```
 
