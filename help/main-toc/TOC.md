@@ -772,10 +772,10 @@ user-guide-title: AEM as a Cloud Service
   + Publishing Edge Delivery Applications {#publish}
     + [Authoring](/help/edge/docs/authoring.md)
     + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
-    + [Slack Bot](/help/edge/docs/slack.md)
     + [Placeholders](/help/edge/docs/placeholders.md)
     + [Sitemap](/help/edge/developer/sitemap.md)
     + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
+    + [Slack Bot](/help/edge/docs/slack.md)
   + Launching Edge Delivery Applications {#launch}
     + [Go Live Checklist](/help/edge/docs/go-live-checklist.md)
     + [Push Invalidation](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
@@ -791,7 +791,7 @@ user-guide-title: AEM as a Cloud Service
       + [Sidekick Library](/help/edge/docs/sidekick-library.md)
     + [FAQ](/help/edge/docs/faq.md)
     + [Admin API](https://www.aem.live/docs/admin.html)
-    + [status.hlx.live](https://status.hlx.live/history)
+    + [AEM Status](https://www.aemstatus.net)
     + Tools {#tools}
       + [Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
       + [Github Bot](https://github.com/apps/aem-code-sync)
@@ -1101,10 +1101,15 @@ user-guide-title: AEM as a Cloud Service
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 + Universal Editor {#universal-editor}
   + [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md)
-  + [Authoring Content with the Universal Editor](/help/implementing/universal-editor/authoring.md)
-  + [Publishing Content with the Universal Editor](/help/implementing/universal-editor/publishing.md)
-  + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
   + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
-  + [Attributes and Types](/help/implementing/universal-editor/attributes-types.md)
-  + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
-  + [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md)
+  + Authoring {#developing}
+    + [Authoring Content with the Universal Editor](/help/implementing/universal-editor/authoring.md)
+    + [Publishing Content with the Universal Editor](/help/implementing/universal-editor/publishing.md)
+  + Developing {#developing}
+    + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
+    + [Universal Editor Developer Overview](/help/implementing/universal-editor/developer-overview.md)
+    + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
+    + [Field Types](/help/implementing/universal-editor/field-types.md)
+    + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
+    + [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md)
+    + [Universal Editor Calls](/help/implementing/universal-editor/calls.md)

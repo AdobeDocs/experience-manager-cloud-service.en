@@ -29,7 +29,7 @@ Versions earlier than 2.0.0 are not supported, and it is advised that you use th
 
 The following Guidelines and Best Practices apply to the new version of the Content Transfer Tool:
 
-* Run [Revision Cleanup](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) and [data store consistency checks](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=en) on the **source** repository so you can identify potential problems and reduce the size of the repository.
+* Run [Revision Cleanup](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) and [data store consistency checks](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) on the **source** repository so you can identify potential problems and reduce the size of the repository.
 
 * In the ingestion phase, Adobe recommends that you run the ingestion using the *wipe* mode enabled where the existing repository (author or publish) in the target Adobe Experience Manager (AEM) Cloud Service environment is deleted. Then, update with the migration set data. This mode is faster than the non-wipe mode,  where the migration set is applied on top of the current content.
 

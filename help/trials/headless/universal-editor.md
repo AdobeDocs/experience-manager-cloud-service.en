@@ -33,9 +33,7 @@ Editing in place and in context can often be advantageous over structured headle
 
 Using the Universal Editor, you have an agile way to edit your text in context and in place, allowing simple and intuitive content authoring.
 
-1. The editor should load by default in **Components** mode. If not, select the **Components** icon in the mode rail at the left side of the editor.
-
-1. Double select the title of the latest article to edit it.
+1. Double-click to select the title of the latest article to edit it.
 
    ![The Universal Editor](assets/do-not-localize/ue-component-mode.png)
 
@@ -43,7 +41,7 @@ Using the Universal Editor, you have an agile way to edit your text in context a
 
    ![Editing text in the Universal Editor](assets/do-not-localize/ue-edit-text-2.png)
 
-1. Press the enter/return key or select outside of the text component and your changes are saved automatically.
+1. Select outside of the text component and your changes are saved automatically.
 
 The Universal Editor saves your changes automatically within the authoring environment. You still need to publish them for your readers to see, which we will do in a later step.
 
@@ -51,7 +49,7 @@ The Universal Editor saves your changes automatically within the authoring envir
 
 You can also swap out images while still remaining in the context of your content by using the Universal Editor.
 
-1. Remaining in **Components** mode, select the image of the surfer to select it.
+1. Select the image of the surfer to select it.
 
 1. In the component rail, you can see the detail of the asset. Select the **Featured Image** thumbnail.
 
@@ -69,7 +67,7 @@ The image is replaced with the one you selected.
 
 The Universal Editor lets you interact with your content within its context, seeing the content as it is delivered to the devices of your users.
 
-1. By default the editor renders the desktop version of your content. Select the emulator button at the top-right of the editor to change the target device.
+1. By default the editor renders the desktop version of your content. Select the emulator button at the top-right of the Universal Editor toolbar to change the target device.
 
    ![The emulator menu item](assets/do-not-localize/ue-emulator-1.png)
 
@@ -85,9 +83,9 @@ You can also specify exact dimensions for the emulator and rotate the emulated d
 
 ## Previewing and Publishing {#preview}
 
-Because you need to select your content to select it in the editor, the editor does not allow you to follow links or interact with your content by tapping or clicking when it is in an edit mode. Using preview mode, you can follow the links within your content and experience it as your users would before publishing.
+Because you need to select your content to modify it in the editor, the editor does not allow you to follow links or interact with your content by tapping or clicking. Using preview mode, you can follow the links within your content and experience it as your users would before publishing.
 
-1. In the mode rail on the left side of the editor, select **Preview**.
+1. In the Universal Editor toolbar, select **Preview**.
 
 1. Now select the **Read More** link for the main article.
 
@@ -107,9 +105,11 @@ Your content is published.
 
 To accelerate your content authoring experience when structured editing of headless content is more advantageous than in-place editing, the Universal Editor gives you quick access to the Content Fragment editor as well.
 
-1. Scroll further down on the page to the **Adventures** section.
+1. Turn off preview mode by tapping the **Preview** button on the Universal Editor toolbar.
 
-1. In the mode rail on the left side of the editor, select **Components**. This lets you select page components in the editor.
+   ![Turn off preview mode](assets/do-not-localize/ue-toggle-off-preview.png)
+
+1. Scroll further down on the page to the **Adventures** section.
 
 1. Select one of the adventures such as **Bali Surf Camp** to select it.
 
