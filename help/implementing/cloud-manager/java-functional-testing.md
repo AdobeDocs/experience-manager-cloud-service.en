@@ -109,7 +109,7 @@ See [`aem-testing-clients` GitHub repo](https://github.com/adobe/aem-testing-cli
 
 * aem-cloud-testing-clients:
 
-Upcoming changes in the containerized infrastructure used to execute functional tests, will require the library `aem-cloud-testing-clients` used in your custom functional test to be updated to at least version **1.2.1**
+Upcoming changes in the containerized infrastructure used to execute functional tests, will require the library [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) used in your custom functional test to be updated to at least version **1.2.1**
 Make sure that your dependency in `it.tests/pom.xml` has been updated.
 
 ```
