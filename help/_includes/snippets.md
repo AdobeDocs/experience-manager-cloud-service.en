@@ -47,7 +47,7 @@
 * [Submit using Form Data Model](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
-* [Submit to OneDrive](/help/forms/configure-submit-action-onedrive)
+* [Submit to OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Invoke an AEM Workflow](/help/forms/configure-submit-action-workflow.md)
 * [Submit to Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
