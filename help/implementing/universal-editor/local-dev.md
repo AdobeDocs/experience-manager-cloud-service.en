@@ -8,7 +8,11 @@ exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 
 Learn how the Universal Editor supports editing on local AEM instances for development purposes.
 
-This document will explain how to run AEM in HTTPS alongside a local copy of the Universal Editor Service so you can develop locally on AEM using the Universal Editor.
+{{universal-editor-status}}
+
+## Overview {#overview}
+
+This document explains how to run AEM in HTTPS alongside a local copy of the Universal Editor Service so you can develop locally on AEM using the Universal Editor.
 
 ## Set Up AEM to Run on HTTPS {#aem-https}
 
@@ -82,8 +86,8 @@ The Universal Editor knows which Universal Editor Service to use to edit a page 
 
 For a page to be edited using your local Universal Editor Service, the following meta tag must be set:
 
-```
-<meta name="urn:adobe:aem:editor:endpoint" content="https://localhost:8000">
+```html
+<meta name="urn:adobe:aue:config:service" content="https://localhost:8000">
 ```
 
 Once set, you should see every content update call go to `https://localhost:8000` instead of the default Universal Editor Service.

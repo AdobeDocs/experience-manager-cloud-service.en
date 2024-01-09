@@ -19,7 +19,7 @@ In addition, some customers who were previously deployed with AEM 6.5 or earlier
 
 ## Building for the SDK {#building-for-the-sdk}
 
-The AEM as a Cloud Service SDK is used to build and deploy custom code. See the [AEM Project Archetype documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). At a high level, the following steps are performed:
+The AEM as a Cloud Service SDK is used to build and deploy custom code. See the [AEM Project Archetype documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html). At a high level, the following steps are performed:
 
 * **Compile code**. As expected, source code is compiled, generating the resulting content packages
 * **Build artifacts**. Artifacts are built during this process
