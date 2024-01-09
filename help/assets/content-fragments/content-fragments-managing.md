@@ -1,11 +1,11 @@
 ---
 title: Managing Content Fragments (Assets - Content Fragments)
-description: Learn how to use the Assets console to manage your AEM Content Fragments, the basis of your headless content.
+description: Learn how to use the Assets console to manage your AEM Content Fragments, as either the basis of your headless content or for page authoring.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 ---
 # Managing Content Fragments {#managing-content-fragments}
 
-Learn how to use the Assets console to manage your AEM Content Fragments, the basis of your headless content.
+Learn how to use the Assets console to manage your AEM Content Fragments, as either the basis of your headless content or for page authoring.
 
 After defining your [Content Fragment Models](#creating-a-content-model) you can use these to [create your Content Fragments](#creating-a-content-fragment).
 
