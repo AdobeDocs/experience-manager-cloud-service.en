@@ -26,11 +26,17 @@ To search assets,
 
 ## Search assets using Adobe Firefly
 
-With the integration of [!UICONTROL Adobe Firefly] and [!UICONTROL Adobe Experience Manager Assets], you can efficiently search for assets not available in any of the assets folder. <br> For instance, you can search an asset using the keyword `Bugatti Type 57`. When searching for `Bugatti Type 57`, no results are found. 
+If you're looking for an asset not available in any of the assets folder, use the [!UICONTROL Adobe Firefly] asset search feature within [!UICONTROL Adobe Experience Manager Assets]. The feature allows you to efficiently search assets that may not be stored in the designated folders.  <br> For instance, you can search an asset using the keyword `Bugatti Type 57`. When searching for `Bugatti Type 57`, no results are found. 
 
-In the search bar, enter the asset name, and click **[!UICONTROL Generate]**. The sample assets are displayed on the screen. You can upload these assets to your preferred folder for easy access.
+![Firefly integration](assets/firefly-integration.jpg)
+*Figure: No results found for Bugatti Type 57 in the asset folder.*
+
+In the search bar, enter the asset name, and click **[!UICONTROL Generate]**.
 
 ![Firefly integration](assets/bugatti-type-57.jpg)
+*Figure: Reference assets searched using Adobe Firefly asset search feature.*
+
+The sample assets are displayed on the screen. You can upload these assets to your preferred folder for easy access.
 
 ## Filter the search results {#refine-search-results}
 
