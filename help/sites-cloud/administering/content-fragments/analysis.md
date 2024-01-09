@@ -1,6 +1,6 @@
 ---
 title: Analyzing Content Fragments
-description: Understand the structure and content delivery of your Content Fragments. This provides about both headless delivery and page authoring.
+description: Understand the structure of your Content Fragments. This provides information relevant for both headless delivery and page authoring.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
@@ -13,7 +13,7 @@ Experience Manager (AEM) provides several methods of viewing and analyzing the s
 
 ## References {#references}
 
-The structure is built up using References:
+The multi-layered structure is built up using References:
 
 * [Data types for References are defined in the Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content)
 * When authoring you can:

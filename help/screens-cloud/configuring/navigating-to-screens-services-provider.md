@@ -50,4 +50,4 @@ Follow the steps below to set up Screens Services Provider:
 
 ## What's Next {#whats-next}
 
-After you have learned how to set up Screens Services Provider, navigate to [Using Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end#screens-content-provider) for more details.
+After you have learned how to set up Screens Services Provider, navigate to [Using Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) for more details.
