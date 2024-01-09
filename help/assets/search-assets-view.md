@@ -177,8 +177,6 @@ You can select the assets that display in the search results and do the followin
 
 * **Watch**: [Monitor the operations](manage-notifications-assets-view.md) performed on an asset.
 
-* **Show File Location**: Navigate to asset folder location.
-
 ## Configuring search first homepage {#configuring-search-first-homepage}
 
 Experience Manager Assets enables you to select the default landing page for your organization. When using Search First as the home page, you also have options to tailor the branding of the page by configuring the background and logo images to match your brand.
