@@ -37,7 +37,7 @@ Summarized below are the continuous improvements for maintenance release 14697, 
 
 ### Known Issues {#known-issues-14697}
 
-None.
+* GRANITE-49031: Regression resulting in `@JsonIgnore` annotation being ignored on transient fields.
 
 ### Embedded Technologies {#embedded-tech-14697}
 
