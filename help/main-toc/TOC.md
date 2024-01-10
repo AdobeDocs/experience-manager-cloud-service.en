@@ -159,8 +159,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
-  + [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md)
-  + [Deprecated APIs](/help/release-notes/deprecated-apis.md)
+  + [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md)
   + [Prerelease Channel](/help/release-notes/prerelease.md)
 + Security {#security}
   + [Security for AEM as a Cloud Service](/help/security/home.md)
