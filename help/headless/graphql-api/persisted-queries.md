@@ -4,7 +4,7 @@ description: Learn how to persist GraphQL queries in Adobe Experience Manager as
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 ---
-# Persisted GraphQL queries {#persisted-queries-caching}
+# Persisted GraphQL queries {#persisted-graphql-queries}
 
 Persisted queries are GraphQL queries that are created and stored on the Adobe Experience Manager (AEM) as a Cloud Service server. They can be requested with a GET request by client applications. The response of a GET request can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application. This differs from standard GraphQL queries, which are executed using POST requests where the response cannot easily be cached.
 
@@ -26,7 +26,7 @@ Persisted queries must always use the endpoint related to the [appropriate Sites
 
 >[!NOTE]
 >
->See [Enable Content Fragment Functionality in Configuration Browser](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
+>See [Enable Content Fragment Functionality in Configuration Browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) for more details.
 >
 >The **GraphQL Persisted Queries** need to be enabled, for the appropriate Sites configuration. 
 
@@ -251,7 +251,7 @@ This query can be persisted under a path `wknd/adventures-by-activity`. To call 
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-Note that `%3B` is the UTF-8 encoding for `;` and `%3D` is the encoding for `=`. The query variables and any special characters must be [encoded properly](#encoding-query-url) for the Persisted query to execute.
+The UTF-8 encoding `%3B` is for `;` and `%3D` is the encoding for `=`. The query variables and any special characters must be [encoded properly](#encoding-query-url) for the Persisted query to execute.
 
 ## Caching your persisted queries {#caching-persisted-queries}
 
@@ -390,7 +390,7 @@ The field `Respond with application/graphql-response+json` (`responseContentType
 
   >[!NOTE]
   >
-  >For further details see https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >See https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 
@@ -433,12 +433,12 @@ Persisted queries can be built into [AEM Packages](/help/implementing/developing
 To create a Package:
 
 1. Navigate to **Tools** > **Deployment** > **Packages**.
-1. Create a new package by tapping **Create Package**. This will open a dialog to define the Package.
+1. Create a new package by tapping **Create Package**. This opens a dialog to define the Package.
 1. In the Package Definition Dialog, under **General** enter a **Name** like "wknd-persistent-queries".
 1. Enter a version number like "1.0".
 1. Under **Filters** add a new **Filter**. Use the Path Finder to select the `persistentQueries` folder beneath the configuration. For example, for the `wknd` configuration, the full path is `/conf/wknd/settings/graphql/persistentQueries`.
-1. Tap **Save** to save the new Package definition and close the dialog.
-1. Tap the **Build** button in the newly-created Package definition.
+1. Select **Save** to save the new Package definition and close the dialog.
+1. Select the **Build** button in the created Package definition.
 
 After the package has been built you can: 
 

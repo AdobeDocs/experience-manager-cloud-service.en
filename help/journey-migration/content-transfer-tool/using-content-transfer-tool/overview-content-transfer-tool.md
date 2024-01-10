@@ -1,6 +1,6 @@
 ---
 title: Overview to Content Transfer Tool
-description: Learn how to use the Content Transfer Tool in order to tranfer content from an on-premise AEM instance to AEM as a Cloud Service
+description: Learn how to use the Content Transfer Tool to tranfer content from an on-premise AEM instance to AEM as a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 ---
 # Overview {#overview-content-transfer-tool}
@@ -41,7 +41,7 @@ There are two phases associated with content transfer:
  
 A migration set has the following attributes:
 
-* With the new version, you can create a maximum of five migration sets within a project created in Cloud Acceleration Manager.
+* With the new version, you can create a maximum of twenty migration sets within a project created in Cloud Acceleration Manager.
 * Each migration set should have a unique name. 
 
 The Content Transfer Tool has a feature that supports differential content top-up where it is possible to transfer only changes made since the previous content transfer activity. 

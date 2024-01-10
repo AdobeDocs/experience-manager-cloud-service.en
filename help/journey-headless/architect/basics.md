@@ -103,7 +103,7 @@ Two data types provide references to content outside a specific fragment:
 
 >[!NOTE]
 >
->You can also create ad hoc references by using links within Text blocks.
+>You can also create improvised references by using links within Text blocks.
 
 ## Levels of Structure (Nested Fragments) {#levels-of-structure-nested-fragments}
 
@@ -124,7 +124,7 @@ For example, you might have the following Content Fragment Models defined:
 * Person
 * Awards
 
-Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
+Seems pretty straightforward, but a Company has both a CEO and Employees....and these are all people, each defined as a Person.
 
 And a Person can have an Award (or maybe two).
 
@@ -143,12 +143,12 @@ Now that you have learned the basics, the next step is to [Learn about Creating 
 
 ## Additional Resources {#additional-resources}
 
-* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-  * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+  * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
 * [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
 
 * [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for authoring **Content Fragments** under the **Assets** console.
 
-* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)

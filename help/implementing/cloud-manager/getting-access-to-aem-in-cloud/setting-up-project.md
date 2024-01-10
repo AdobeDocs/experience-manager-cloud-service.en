@@ -104,7 +104,7 @@ And if you wanted to output a simple message only when the build is run outside 
 
 >[!NOTE]
 >
->Artifacts from a password-protected Maven repository should only be used very cautiously as code deployed through this mechanism is currently not run through all of the [code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) implemented in Cloud Manager's quality gates. Therefore it should only be used in rare cases and for code not tied to AEM. It is advised to also deploy the Java sources and the whole project source code alongside with the binary.
+>Artifacts from a password-protected Maven repository should be used cautiously because code deployed through this mechanism is currently not run through [code quality rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) implemented in Cloud Manager's quality gates. Therefore it should only be used in rare cases and for code not tied to AEM. It is advised to also deploy the Java sources and the whole project source code alongside with the binary.
 
 To use a password-protected Maven repository within Cloud Manager:
 
@@ -114,7 +114,7 @@ To use a password-protected Maven repository within Cloud Manager:
 When the Cloud Manager build process starts:
 
 * The `<servers>` element in this file is merged into the default `settings.xml` file provided by Cloud Manager.
-  * Server IDs starting with `adobe` and `cloud-manager` are considered reserved and should not be used by custom servers.
+  * Server IDs starting with `adobe` and `cloud-manager` are considered reserved. Do not use them on custom servers.
   * Server IDs not matching one of these prefixes or the default ID `central` will never be mirrored by Cloud Manager.
 * With this file in place, the server ID would be referenced from inside a `<repository>` and/or `<pluginRepository>` element inside the `pom.xml` file.
 * Generally, these `<repository>` and/or `<pluginRepository>` elements would be contained inside a [Cloud Manager-specific profile](#activating-maven-profiles-in-cloud-manager), although that is not strictly necessary.

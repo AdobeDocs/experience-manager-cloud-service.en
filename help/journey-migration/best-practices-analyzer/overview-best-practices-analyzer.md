@@ -8,9 +8,9 @@ exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
 >title="Best Practices Analyzer overview"
->abstract="The Best Practices Analyzer provides an assessment of your current AEM implementation by indicating areas that are not following AEM best practices. It also provides guidance on next steps to adopt AEM best practices. Additionally, it helps accelerate the processes of assessing readiness to move from an existing Adobe Experience Manager (AEM) deployment to AEM as a Cloud Service."
+>abstract="The Best Practices Analyzer provides an assessment of your current AEM implementation by indicating areas that are not following AEM best practices. It also provides guidance on next steps to adopt AEM best practices. Also, it helps accelerate the processes of assessing readiness to move from an existing Adobe Experience Manager (AEM) deployment to AEM as a Cloud Service."
 
-The Best Practices Analyzer provides an assessment of your current AEM implementation by indicating areas that are not following AEM best practices. It also provides guidance on next steps to adopt AEM best practices. Additionally, it helps accelerate the processes of assessing readiness to move from an existing Adobe Experience Manager (AEM) deployment to AEM as a Cloud Service.
+The Best Practices Analyzer provides an assessment of your current AEM implementation by indicating areas that are not following AEM best practices. It also provides guidance on next steps to adopt AEM best practices. Also, it helps accelerate the processes of assessing readiness to move from an existing Adobe Experience Manager (AEM) deployment to AEM as a Cloud Service.
  
 This tool generates a report that identifies areas of potential refactoring, which is the first step in the transition journey to AEM as a Cloud Service.
 

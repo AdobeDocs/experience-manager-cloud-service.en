@@ -26,12 +26,6 @@ Cloud Manager offers two types of pipelines:
 
 ![Types of pipelines](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
 
-## Video Overview {#video}
-
-For a quick overview of pipeline types, view this short video.
-
->[!VIDEO](https://video.tv.adobe.com/v/342363)
-
 ## Production Pipelines {#prod-pipeline}
 
 A production pipeline is a purpose-built pipeline that includes a series of orchestrated steps to deploy source code for production use. The steps include first building, packaging, testing, validating, and deploying into all staging environments. Therefore a production pipeline can only be added once a set of production and staging environments is created.
@@ -53,6 +47,7 @@ A non-production pipeline mainly serves to run code quality scans or to deploy s
 In addition to production and non-production, pipelines can be differentiated by the type of code they deploy.
 
 * **[Full Stack Pipelines](#full-stack-pipeline)** - Simultaneously deploy back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configurations
+* **[Config Pipelines](#config-deployment-pipeline)** - Configure and deploy traffic filter rules, including WAF rules, within minutes
 * **[Front-End Pipelines](#front-end)** - Deploy front-end code builds containing one or more client-side UI applications 
 * **[Web Tier Config Pipelines](#web-tier-config-pipelines)** - Deploys HTTPD/Dispatcher configurations
 
@@ -60,16 +55,18 @@ These are described in detail later in this document.
 
 ### Understanding CI-CD Pipelines in Cloud Manager {#understand-pipelines}
 
-The following table summarizes all of the pipelines available in Cloud Manager and their usages.
+The following table summarizes the pipelines available in Cloud Manager and their usages.
 
 |Pipeline Type|Deployment or Code Quality|Source Code|Purpose|Notes|
 |--- |--- |--- |---|---|
 |Production or Non-Production|Deployment|Full-Stack|Simultaneously deploys back-end and front-end code builds along with HTTPD/Dispatcher configurations|When front-end code must be deployed simultaneously with AEM server code.<br>When front-end pipelines or web tier config pipelines have not yet been adopted.|
 |Production or Non-Production|Deployment|Front-End|Deploys front-end code build containing one or more client-side UI application|Supports multiple, concurrent front-end pipelines<br>Much faster than full-stack deployments|
 |Production or Non-Production|Deployment|Web Tier Config|Deploys HTTPD/Dispatcher configurations|Deploys in minutes|
+|Production or Non-Production|Deployment|Config|Deploys traffic filtering rules|Deploys in minutes|
 |Non-Production|Code Quality|Full-Stack|Runs code quality scans on full-stack code without a deployment|Supports multiple pipelines|
 |Non-Production|Code Quality|Front-End|Runs code quality scans on front-end code without a deployment|Supports multiple pipelines|
 |Non-Production|Code Quality|Web Tier Config|Runs code quality scans on dispatcher configurations without a deployment|Supports multiple pipelines|
+|Non-Production|Code Quality|Config|Deploys traffic filtering rules||
 
 The following diagram illustrates Cloud Manager's pipeline configurations with traditional, single front-end repository, or independent front-end repository setups.
 
@@ -101,15 +98,31 @@ In addition, be aware of how the full-stack pipeline behaves if you choose to in
 
 Full-stack pipelines can be code quality pipelines or deployment.
 
+### Configuring Full-Stack Pipelines {#configure-full-stack}
+
+To learn how to configure full-stack pipelines, see the following documents:
+
+* [Adding a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+* [Adding a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
+
+## Config Pipelines {#config-deployment-pipeline}
+
+With a config pipeline you can configure and deploy traffic filter rules, including WAF rules, within minutes.
+
+See [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage the configurations in your repository so they are deployed properly.
+
+### Configuring Config Pipelines {#configure-config-deployment}
+
+To learn how to configure config pipelines, see the following documents:
+
+* [Adding a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
+* [Adding a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
+
 ## Front-End Pipelines {#front-end}
 
 Front-end code is any code that is served as a static files. It is separate from UI code served by AEM and may include site themes, customer-defined SPAs, SPAs, and other solutions. 
 
 Front-end pipelines help your teams streamline your design and development process by enabling accelerated deployment of front-end code asynchronous of back-end development. This dedicated pipeline deploys JavaScript and CSS to the AEM distribution layer as a theme, resulting in a new theme version which may be referenced from pages delivered by AEM.
-
->[!IMPORTANT]
->
->You must be on AEM version `2021.10.5933.20211012T154732Z ` or higher with AEM Sites enabled to use front-end pipelines.
 
 >[!NOTE]
 >
@@ -136,17 +149,9 @@ With front-end pipelines, more independence is given to front-end developers and
 
 See [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.
 
-### Configuring Full-Stack Pipelines {#configure-full-stack}
-
-To learn how to configure full-stack pipelines, see the following documents:
-
-* [Adding a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [Adding a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
-
-
 ## Web Tier Config Pipelines {#web-tier-config-pipelines}
 
-Web tier config pipelines enable exclusive deployment of HTTPD/Dispatcher configuration to the AEM runtime by decoupling it from other code changes. It a streamlined pipeline that provides users who wish to only deploy dispatcher configuration changes, an accelerated means to do so in only a few minutes.
+Web tier config pipelines enable exclusive deployment of HTTPD/Dispatcher configuration to the AEM runtime by decoupling it from other code changes. It a streamlined pipeline that provides users who want to only deploy dispatcher configuration changes, an accelerated means to do so in only a few minutes.
 
 >[!TIP]
 >
@@ -158,7 +163,7 @@ The following restrictions apply.
 * You must [opt in to the flexible mode of the dispatcher tools](/help/implementing/dispatcher/disp-overview.md#validation-debug) to use web-tier config pipelines.
 * A user must be logged with the **Deployment Manager** role to configure or run pipelines.
 * At any time, there can only be one web tier config pipeline per environment.
-* The usercannot configure a web tier config pipeline when its corresponding full-stack pipeline is running.
+* The user cannot configure a web tier config pipeline when its corresponding full-stack pipeline is running.
 * The web tier structure must adhere to the flexible mode structure, as defined in the document [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug).
 
 In addition, be aware of how the [full stack pipeline](#full-stack-pipeline) behaves when introducing a web tier pipeline.
@@ -169,9 +174,15 @@ In addition, be aware of how the [full stack pipeline](#full-stack-pipeline) beh
 
 Web tier config pipelines can be of the type code quality or deployment.
 
-### Configuring Web Tier Config Pipelines {#configure-web-tier-config-pipelines}
+### Configuring Web Tier Pipelines {#configure-web-tier}
 
-To learn how to configure web tier config pipelines, see the following documents:
+To learn how to configure web tier pipelines, see the following documents:
 
-* [Adding a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [Adding a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+* [Adding a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
+* [Adding a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
+
+## Video Overview of Pipeline Types {#video}
+
+For a quick overview of pipeline types, view this short video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/342363)

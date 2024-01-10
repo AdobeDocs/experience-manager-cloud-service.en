@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 ---
 # Components {#components}
 
-Components are the fundamental authoring building block of content pages in Adobe Experience Manager (AEM). Components such as images, text, titles, etc. can be easily dragged and dropped to build your content.
+Components are the fundamental authoring building block of content pages in Adobe Experience Manager (AEM). Components such as images, text, titles, and so on, can be easily dragged and dropped to build your content.
 
 AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors. They are available when [editing a page](/help/sites-cloud/authoring/fundamentals/editing-content.md) and are grouped by main functional area (called component group) to aid filtering.
 
@@ -37,7 +37,7 @@ The [Core Components](https://experienceleague.adobe.com/docs/experience-manager
 
 They are build using AEM best practices and are the foundation of the AEM authoring experience. Core Components can be easily extended by developers to meet specific project needs.
 
-Along with the WCM Core Components, you can also use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to [create or add forms to an AEM Sites Page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 
+Along with the WCM Core Components, you can also use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). These Core Components provide a standard and easier methods to [create or add forms to an AEM Sites Page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 
 
 ### Configuring Templates {#configuring-templates}
 

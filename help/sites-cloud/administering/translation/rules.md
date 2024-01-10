@@ -17,9 +17,9 @@ Translation rules identify the content to translate for pages, components, and a
 
 The translation rules described in this document apply to Content Fragments only if the **Enable Content Model Fields for Translation** option has not been activated at the [translation integration framework configuration level.](integration-framework.md#assets-configuration-properties)
 
-If the **Enable Content Model Fields for Translation** option is active, AEM will use the **Translatable** field on [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) to determine if the field is to be translated and automatically creates translation rules accordingly. This option supersedes any translation rules you may have created and requires no intervention or additional steps.
+If the **Enable Content Model Fields for Translation** option is active, AEM will use the **Translatable** field on [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) to determine if the field is to be translated and automatically creates translation rules accordingly. This option supersedes any translation rules you may have created and requires no intervention or additional steps.
 
-If you wish to use translation rules for translating your Content Fragments, the **Enable Content Model Fields for Translation** option on the translation integration framework configuration must be disabled and you need to follow the steps outlined below to create your rules.
+If you want to use translation rules for translating your Content Fragments, the **Enable Content Model Fields for Translation** option on the translation integration framework configuration must be disabled and you need to follow the steps outlined below to create your rules.
 
 ## Overview {#overview}
 
@@ -161,11 +161,11 @@ In the translation rules UI you can:
 
    ![Add translation context](../assets/add-translation-context.png)
 
-1. Use the path browser to select the required context and tap or click the **Confirm** button to save.
+1. Use the path browser to select the required context and select the **Confirm** button to save.
 
    ![Select context](../assets/select-context.png)
 
-1. Then you need to select your context and then click **Edit**. This will open the Translation Rules Editor.
+1. Then you need to select your context and then click **Edit**. This opens the Translation Rules Editor.
 
    ![Translation Rules Editor](../assets/translation-rules-editor.png)
 
@@ -208,7 +208,7 @@ In the UI, you can check/uncheck **Translate** in the **Properties** tab.
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** is used for properties that do not have text but language codes, for example `jcr:language`. The user is not translating text but the language locale from source to destination. Such properties are not sent for translation.
+**`updateDestinationLanguage`** is used for properties that do not have text but language codes, for example, `jcr:language`. The user is not translating text but the language locale from source to destination. Such properties are not sent for translation.
 
 In the UI, you can check/uncheck **Translate** in the **Properties** tab to modify this value, but for the specific properties that have language codes as value.
 

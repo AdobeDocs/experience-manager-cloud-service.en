@@ -17,8 +17,10 @@ The name "root" is never used in a query; it's implicit.
 
 * **`p.offset`** -  number indicating the start of the result page, that is, how many items to skip.
 * **`p.limit`** - number indicating the page size.
-* **`p.guessTotal`** - recommended: avoid calculating the full result total, which can be costly. Either a number indicating the maximum total to count up to (for example 1000, a number that gives users enough feedback on the rough size and exact numbers for smaller results). Or, `true` to count only up to the minimum necessary `p.offset` + `p.limit`.
+* **`p.guessTotal`** - recommended: avoid calculating the full result total, which can be costly. Either a number indicating the maximum total to count up to (for example, 1000, a number that gives users enough feedback on the rough size and exact numbers for smaller results). Or, `true` to count only up to the minimum necessary `p.offset` + `p.limit`.
 * **`p.excerpt`** - if set to `true`, include full text excerpt in the result.
+* **`p.indexTag`** - if set will include an index tag option in the query (see [Query Option Index Tag](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)).
+* **`p.facetStrategy`** - if set to `oak`, Query Builder will delegate facet extraction to Oak (see [Facets](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets)).
 * **`p.hits`** - (only for the JSON servlet) select the way the hits are written as JSON, with these standard ones (extensible by way of the ResultHitWriter service).
   * **`simple`** - minimal items like `path`, `title`, `lastmodified`, `excerpt` (if set).
   * **`full`** - sling JSON rendering of the node, with `jcr:path` indicating the path of the hit. By default, just lists the direct properties of the node, include a deeper tree with `p.nodedepth=N`, with 0 meaning the entire, infinite subtree. Add `p.acls=true` to include the JCR permissions of the current session on the given result item (mappings: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
@@ -68,7 +70,7 @@ This predicate allows sorting the results. If ordering by multiple properties is
 
 #### Properties {#properties-13}
 
-* **`orderby`** - either JCR property name indicated by a leading @, for example `@jcr:lastModified` or `@jcr:content/jcr:title`, or another predicate in the query, for example `2_property`, on which to sort
+* **`orderby`** - either JCR property name indicated by a leading @, for example, `@jcr:lastModified` or `@jcr:content/jcr:title`, or another predicate in the query, for example, `2_property`, on which to sort
 * **`sort`** - sort direction, either `desc` for descending or `asc` for ascending (default)
 * **`case`** - if set to `ignore`, it makes sorting case insensitive, meaning `a` comes before `B`; if empty or left out, sorting is case-sensitive, meaning `B` comes before `a`
 
@@ -84,7 +86,7 @@ This predicate supports facet extraction and provides buckets for each `true` or
 
 #### Properties {#properties}
 
-* **`boolproperty`** -  relative path to property, for example `myFeatureEnabled` or `jcr:content/myFeatureEnabled`
+* **`boolproperty`** -  relative path to property, for example, `myFeatureEnabled` or `jcr:content/myFeatureEnabled`
 * **`value`** - value to check property for, `true` or `false`
 
 ### contentfragment {#contentfragment}
@@ -127,10 +129,10 @@ It does not support filtering.
 
 #### Properties {#properties-3}
 
-* **`property`** - relative path to a `DATE` property, for example `jcr:lastModified`
-* **`lowerBound`** - lower date bound to check property for, for example `2014-10-01`
+* **`property`** - relative path to a `DATE` property, for example, `jcr:lastModified`
+* **`lowerBound`** - lower date bound to check property for, for example, `2014-10-01`
 * **`lowerOperation`** - `>` (newer) or `>=` (at or newer), applies to the `lowerBound`. The default is `>`
-* **`upperBound`** - upper bound to check property for, for example `2014-10-01T12:15:00`
+* **`upperBound`** - upper bound to check property for, for example, `2014-10-01T12:15:00`
 * **`upperOperation`** - `<` (older) or `<=` (at or older), applies to the `upperBound`. The default is `<`
 * **`timeZone`** - ID of timezone to use when it is not given as an ISO-8601 date string. The default is the default timezone of the system.
 
@@ -179,7 +181,7 @@ It supports facet extraction and provides buckets for each unique language code.
 
 #### Properties {#properties-8}
 
-* **`language`** - ISO language code, for example `de`
+* **`language`** - ISO language code, for example, `de`
 
 ### mainasset {#mainasset}
 
@@ -253,7 +255,7 @@ It supports facet extraction and provides buckets for each unique property value
 
 #### Properties {#properties-15}
 
-* **`property`** - relative path to property, for example `jcr:title`.
+* **`property`** - relative path to property, for example, `jcr:title`.
 * **`value`** - value to check property for; follows the JCR property type to string conversions.
 * **`N_value`** - use `1_value`, `2_value`, ... to check for multiple values (combined with `OR` by default, with `AND` if `and=true`).
 * **`and`** - set to `true` for combining multiple values (`N_value`) with `AND`
@@ -340,7 +342,7 @@ It supports facet extraction and provides buckets for each unique tag, using the
 
 #### Properties {#properties-21}
 
-* **`tag`** - tag title path to look for, for example `properties:orientation/landscape`
+* **`tag`** - tag title path to look for, for example, `properties:orientation/landscape`
 * **`N_value`** - use `1_value`, `2_value`, ... to check for multiple tags (combined with `OR` by default, with `AND` if `and=true`)
 * **`property`** - property (or relative path to property) to look at (default `cq:tags`)
 
@@ -352,7 +354,7 @@ It supports facet extraction and provides buckets for each unique tag, using the
 
 #### Properties {#properties-22}
 
-* **`tagid`** - tag ID to look for, for example `properties:orientation/landscape`
+* **`tagid`** - tag ID to look for, for example, `properties:orientation/landscape`
 * **`N_value`** - use `1_value`, `2_value`, ... to check for multiple tag IDs (combined with `OR` by default, with `AND` if `and=true`)
 * **`property`** - property (or relative path to property) to look at (default `cq:tags`)
 
@@ -377,4 +379,4 @@ It supports facet extraction and provides buckets for each unique type in the re
 
 #### Properties {#Properties-2}
 
-* **`type`** - node type or `mixin` name to search for, for example `cq:Page`
+* **`type`** - node type or `mixin` name to search for, for example, `cq:Page`

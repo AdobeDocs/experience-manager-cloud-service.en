@@ -21,9 +21,9 @@ The REST API provides access to the same features through HTTP with responses be
 
 ## Gem Session {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en) is a series of technical deep dives into Adobe Experience Manager delivered by Adobe experts.
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) is a series of technical deep dives into Adobe Experience Manager delivered by Adobe experts.
 
-You can [review the session dedicated to the query builder](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=en) for an overview and use of the tool.
+You can [review the session dedicated to the query builder](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) for an overview and use of the tool.
 
 ## Sample Queries {#sample-queries}
 
@@ -345,7 +345,7 @@ You can also check the [Javadoc for the `PredicateEvaluator` classes](https://de
 
 The prefix of the class name (for example, `similar` in [`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) is the *principal property* of the class. This property is also the name of the predicate to use in the query (in lower case).
 
-For such principal properties, you can shorten the query and use `similar=/content/en` instead of the fully-qualified variant `similar.similar=/content/en`. The fully-qualified form must be used for all non-principal properties of a class.
+For such principal properties, you can shorten the query and use `similar=/content/en` instead of the fully qualified variant `similar.similar=/content/en`. The fully qualified form must be used for all non-principal properties of a class.
 
 ## Example Query Builder API Usage {#example-query-builder-api-usage}
 

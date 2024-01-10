@@ -78,7 +78,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    The new password is saved when you select **[!UICONTROL Save]** in the upper-right corner of the **[!UICONTROL Create Dynamic Media Configuration]** page.
 
-   If you selected **[!UICONTROL Cancel]** in the **[!UICONTROL Change Password]** dialog box, you must still enter a new password when you save the newly-created Dynamic Media configuration.
+   If you selected **[!UICONTROL Cancel]** in the **[!UICONTROL Change Password]** dialog box, you must still enter a new password when you save the created Dynamic Media configuration.
   
    See also [Change the password to Dynamic Media](#change-dm-password).
 
@@ -256,7 +256,7 @@ To configure the default color properties for enabling color correction when req
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account using credentials provided during provisioning.
 1. Go to **[!UICONTROL Setup > Application Setup]**.
 1. Expand the **[!UICONTROL Publish Setup]** area and select **[!UICONTROL Image Server]**. Set **[!UICONTROL Publish Context]** to **[!UICONTROL Image Serving]** when setting defaults for publish instances.
-1. Scroll to the property that you must change, for example a property in the **[!UICONTROL Color Management Attributes]** area.
+1. Scroll to the property that you must change, for example, a property in the **[!UICONTROL Color Management Attributes]** area.
    You can set the following color correction properties:
 
    | Property | Description |
@@ -305,9 +305,9 @@ See [Upload assets](/help/assets/add-assets.md).
 1. Under the mimeTypes folder, select a MIME type.
 1. On the right side of the CRXDE Lite page, in the lower portion:
 
-   * Double-tap the **[!UICONTROL enabled]** field. By default all asset MIME types are enabled (set to **[!UICONTROL true]**), which means the assets are synced to Dynamic Media for processing. If you want to exclude this asset MIME type from being processed, change this setting to **[!UICONTROL false]**.
+   * Double-select the **[!UICONTROL enabled]** field. By default all asset MIME types are enabled (set to **[!UICONTROL true]**), which means the assets are synced to Dynamic Media for processing. If you want to exclude this asset MIME type from being processed, change this setting to **[!UICONTROL false]**.
 
-   * Double-tap **[!UICONTROL jobParam]** to open its associated text field. See [Supported MIME Types](/help/assets/file-format-support.md) for a list of permitted processing parameter values that you can use for a given MIME type.
+   * Double-select **[!UICONTROL jobParam]** to open its associated text field. See [Supported MIME Types](/help/assets/file-format-support.md) for a list of permitted processing parameter values that you can use for a given MIME type.
 
 1. Do one of the following:
    * Repeat steps 3-4 to edit more MIME types.
@@ -330,7 +330,7 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. On the page, scroll down to the name *Adobe CQ Scene7 Asset MIME type Service* as seen the following screenshot. To the right of the name, tap the **[!UICONTROL Edit the configuration values]** (pencil icon).
+1. On the page, scroll down to the name *Adobe CQ Scene7 Asset MIME type Service* as seen the following screenshot. To the right of the name, select the **[!UICONTROL Edit the configuration values]** (pencil icon).
 
    ![Edit the configuration values](assets/2019-08-02_16-44-56.png)
 
@@ -363,7 +363,7 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
    ![Editing a DWG file in CRXDE Lite](assets/crxdelite_cqdoc-14627.png)
 
-1. With the MIME type `image_vnd.dwg` still selected, from the **[!UICONTROL Properties]** tab, in the **[!UICONTROL enabled]** row, under the **[!UICONTROL Value]** column header, double-tap the value. The **[!UICONTROL Value]** drop-down list is opened.
+1. With the MIME type `image_vnd.dwg` still selected, from the **[!UICONTROL Properties]** tab, in the **[!UICONTROL enabled]** row, under the **[!UICONTROL Value]** column header, double-select the value. The **[!UICONTROL Value]** drop-down list is opened.
 1. Type `false` in the field (or select **[!UICONTROL false]** from the drop-down list).
 
    ![Editing mime types in CRXDE Lite](assets/2019-08-02_16-60-30.png)

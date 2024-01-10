@@ -41,7 +41,7 @@ At a high level, translation in AEM consists of four simple steps:
 1. Review and publish the translated content.
 
 
-Further in the journey you will learn the details about how AEM translates content step-by-step.
+Further in the journey you learn the details about how AEM translates content step-by-step.
 
 ## What's Next {#what-is-next}
 

@@ -28,7 +28,7 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
 
-* Content model data types can now be defined as translatable using a simple checkbox in the content model editor. Additionally, AEM translation rules and configurations are automatically updated.
+* Content model data types can now be defined as translatable using a simple checkbox in the content model editor. Also, AEM translation rules and configurations are automatically updated.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -38,7 +38,7 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 * You can now use the [!DNL Experience Manager Assets] user interface to:
 
-  * Configure the [detection of duplicate assets](/help/assets/manage-digital-assets.md#detect-duplicate-assets) in a repository.
+  * Configure the [detection of duplicate assets](/help/assets/detect-duplicate-assets.md) in a repository.
 
   * Configure [adding digital watermarks](/help/assets/watermark-assets.md) to images.
 
@@ -73,7 +73,7 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 ### What is New {#what-is-new-cif}
 
 * Improved SEO for multi-store scenarios: URL formats for PDP / PLP can now be configured on a store level via the CIF Cloud Config properties
-* Product picker supports staged products via new filter option in the UI.  This enables content practitioners to prepare product content management for upcoming product launches
+* Product picker supports staged products by way of a new filter option in the UI.  This enables content practitioners to prepare product content management for upcoming product launches
 * Simplified CIF configuration management and error handling by using CIF Cloud Config name instead of config proxy url
 * Manual category selection for Product list and Carousel components. This allows content practitioners to use these components on content pages, outside of the catalog experience
 
@@ -85,7 +85,7 @@ Have a look at the [March 2022 Release Overview](https://video.tv.adobe.com/v/34
 
 ### What is New {#what-is-new-foundation}
 
-* For more efficient and effective troubleshooting of custom features in Cloud environments, we've released a new developer tool – [the Repository Browser](/help/implementing/developing/tools/repository-browser.md). It's a lightweight, read-only, HTML browser that you can launch from the Developer Console. Get visibility into the content repository on the publisher, author, and preview tiers—and in all environments, including production, stage, and dev. Browse the content structure, view properties, and preview and download binaries.
+* For more efficient and effective troubleshooting of custom features in Cloud environments, we've released a new developer tool – [the Repository Browser](/help/implementing/developing/tools/repository-browser.md). It is a lightweight, read-only, HTML browser that you can launch from the Developer Console. Get visibility into the content repository on the publisher, author, and preview tiers—and in all environments, including production, stage, and dev. Browse the content structure, view properties, and preview and download binaries.
 
   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
@@ -107,7 +107,7 @@ The Release Date for Content Transfer Tool v1.9.0 is February 28, 2022.
 
 ### What's New {#what-is-new-ctt}
 
-* Check Size Guardrails - The Content Transfer Tool Check Size feature helps reduce failed content transfers.  With the Check Size feature, users can 1) determine whether they have sufficient disk space in the `crx-quickstart` subdirectory before extraction, and 2) estimate the migration set size and verify if it's supported. If one or both these checks are violated, users will see warnings in the CTT UI. With this guardrail, you can avoid content transfer failures and proactively discuss migration options with Adobe Customer Care. See [Determining migration set size and disk space](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) for more details.
+* Check Size Guardrails - The Content Transfer Tool Check Size feature helps reduce failed content transfers.  With the Check Size feature, users can 1) determine whether they have sufficient disk space in the `crx-quickstart` subdirectory before extraction, and 2) estimate the migration set size and verify if it's supported. If one or both of these checks are violated, users see warnings in the CTT UI. With this guardrail, you can avoid content transfer failures and proactively discuss migration options with Adobe Customer Care. See [Determining migration set size and disk space](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) for more details.
 
 ## Best Practices Analyzer {#bpa-release}
 

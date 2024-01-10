@@ -1,6 +1,6 @@
 ---
 title: Getting started with AEM Commerce as a Cloud Service
-description: Learn how to deploy a AEM commerce project, using Adobe Cloud Manager, a CI/CD pipeline and the Venia reference storefront.
+description: Learn how to deploy an Adobe Experience Manager (AEM) commerce project, using Adobe Cloud Manager, a CI/CD pipeline, and the Venia reference storefront.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
 version: Cloud Service
@@ -11,7 +11,7 @@ exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 ---
 # Getting started with AEM Commerce as a Cloud Service {#start}
 
-To get started with AEM Commerce as a Cloud Service, your Experience Manager Cloud Service must be provisioned with the Commerce Integration Framework (CIF) add-on. The CIF add-on is an extra module on top of [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
+To get started with Adobe Experience Manager (AEM) Commerce as a Cloud Service, your Experience Manager Cloud Service must be provisioned with the Commerce Integration Framework (CIF) add-on. The CIF add-on is an extra module on top of [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
 
 ## Onboarding {#onboarding}
 
@@ -22,7 +22,7 @@ The onboarding for AEM Commerce as a Cloud Service is a two-step process:
 
 The first onboarding step is done by Adobe. For more details on pricing and provisioning, you must reach out to your sales representative.
 
-After you are provisioned with the CIF add-on, it is applied to any existing Cloud Manager programs. In case, you do not have a Cloud Manager Program, you must create one. For more details, see [Set up your Program](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
+After you are provisioned with the CIF add-on, it is applied to any existing Cloud Manager programs. In case you do not have a Cloud Manager Program, you must create one. For more details, see [Set up your Program](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
 
 The second step is self-service for each AEM as a Cloud Service environment. There are some additional configurations that you must do after the initial provisioning of the CIF add-on.
 
@@ -37,7 +37,7 @@ This environment variable is used in two places:
 
 A different  GraphQL endpoint URL can be used for each AEM as a Cloud Service environment. That way projects can connect AEM staging environments with commerce staging systems and AEM production environment to a commerce production system. That GraphQL endpoint must be publicly available, private VPN or local connections are not supported. Optionally, an authentication header can be provided to use additional CIF features that require authentication.
 
-Optionally, and only for Adobe Commerce Enterprise / Cloud, the CIF add-on supports the use of staged catalog data for AEM authors. This data requires that you configure an authorization header. This header is only available and used on AEM author instances for security reasons. AEM publish instances cannot show staged data.
+Optionally, and only for Adobe Commerce Enterprise / Cloud, the CIF add-on supports the use of staged catalog data for AEM authors. This data requires that you configure an authorization header. This header is only available and used on AEM Author instances for security reasons. AEM Publish instances cannot show staged data.
 
 There are two options to configure the endpoint:
 
@@ -101,7 +101,7 @@ The CIF add-on and the [CIF Core Components](https://github.com/adobe/aem-core-c
 
 This configuration can be adjusted for the project by way of the CIF Cloud Service config following these steps:
 
-1. In AEM go to Tools -> Cloud Services -> CIF Configuration.
+1. In AEM go to Tools > Cloud Services > CIF Configuration.
 
 2. Select the commerce configuration that you want to change.
 

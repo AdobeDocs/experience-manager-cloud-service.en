@@ -55,7 +55,7 @@ This all means that it can be used as a:
 
 So content modeling (also known as data modeling) is another technical term - why should it interest you as an author?
 
-For the headless applications to be able to access your content, and do something with it, your content really needs to have a predefined structure. It would be possible to have your content as free-form, but it would make life *very* complicated for the applications.
+For the headless applications to be able to access your content, and do something with it, your content really must have a predefined structure. It would be possible to have your content as free-form, but it would make life *very* complicated for the applications.
 
 Basically the process of defining the structure for your content to adhere to involves designing a model - and this is called data modeling. 
 
@@ -71,10 +71,16 @@ Now that you have learned the concepts and terminology, the next step is to [Lea
 
 ## Additional Resources {#additional-resources}
 
+* [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
+
+* [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+
 * AEM Headless Developer Journey
   * [Learn About CMS Headless Development](/help/journey-headless/developer/learn-about.md)
   * [Learn how to Model Your Content](/help/journey-headless/developer/model-your-content.md)
 
-* AEM Headless Content Architect Journey
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 
-* AEM Headless Content Translation Journey
+* [AEM Headless Content Architect Journey](/help/journey-headless/architect/overview.md)
+
+* [AEM Headless Content Translation Journey](/help/journey-headless/translation/overview.md)

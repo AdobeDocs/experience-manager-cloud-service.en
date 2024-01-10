@@ -33,7 +33,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * Publishing of assets to [!DNL Dynamic Media] is simplified and made more robust by making it an integral part of overall asset processing pipeline using asset microservices and improving the batch publishing backend.
 
-* Workflow steps that are not compatible with a Cloud Service deployment are now marked with a warning in the [!UICONTROL workflow model] editor. Additionally, when executing the existing workflows on Cloud Service environment, the incompatible workflow steps are skipped.
+* Workflow steps that are not compatible with a Cloud Service deployment are now marked with a warning in the [!UICONTROL workflow model] editor. Also, when executing the existing workflows on Cloud Service environment, the incompatible workflow steps are skipped.
 
 * Workflow models created by customers that are deployed to `/conf/global` in the Git project associated with the environment in [!DNL Cloud Manager] are automatically deployed to `/var` and thus available in [!DNL Experience Manager]. The product workflow models under `/libs` that were changed by customer are not automatically deployed to `/var`.
 
@@ -99,7 +99,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 * Certain failures in the code quality process could result in the log file not being generated correctly.
 
-* When creating a new program, the suggested name would sometimes return a duplicate of an existing program name.
+* When creating a program, the suggested name would sometimes return a duplicate of an existing program name.
 
 * Some large pipeline step logs could not be consistently downloaded through the user interface.
 

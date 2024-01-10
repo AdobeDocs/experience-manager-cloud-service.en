@@ -25,7 +25,7 @@ Before the GraphQL APIs can be used, a GraphQL endpoint must be created.
 1. Select **Create**.
 1. The **Create new GraphQL Endpoint** dialog box opens. Here you can specify:
    * **Name**: name of the endpoint; you can enter any text.
-   * **Use GraphQL schema provided by**: use the dropdown to select the required configuration.
+   * **Use GraphQL schema provided by**: use the drop-down list to select the required configuration.
 1. Confirm with **Create**.
 1. In the console, a **Path** is displayed based on the configuration created earlier. This path is used to run GraphQL queries.
 
@@ -45,7 +45,7 @@ GraphiQL is an IDE, included in your AEM environment; it is accessible/visible a
 
    You can access the query editor from either: 
 
-   * **Tools** -> **General** -> **GraphQL Query Editor**
+   * **Tools** > **General** > **GraphQL Query Editor**
    * directly; for example, `http://localhost:4502/aem/graphiql.html`
 
 1. The GraphiQL IDE is an in-browser query editor for GraphQL. You can use it to build queries to retrieve Content Fragments to deliver them headlessly as JSON.
@@ -90,6 +90,6 @@ GraphQL can avoid iterative API requests and over-delivery, and instead allows f
 
 That's it! You now have a basic understanding of headless content management in AEM. There are many more resources where you can dive deeper for a comprehensive understanding of the features available.
 
-* **[Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)** - For details about creating and managing Content Fragments
+* **[Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)** - For details about creating and managing Content Fragments
 * **[Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)** - For details on accessing AEM content directly over the HTTP API, via CRUD operations (Create, Read, Update, Delete)
 * **[GraphQL API](/help/headless/graphql-api/content-fragments.md)** - For details on how to deliver Content Fragments headlessly

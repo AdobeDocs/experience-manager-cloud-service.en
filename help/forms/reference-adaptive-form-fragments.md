@@ -1,8 +1,6 @@
 ---
-title: Reference Adaptive Form Fragments
-seo-title: Reference Adaptive Form Fragments
-description: AEM Forms provides Adaptive Form Fragments that you can use as assets to create a form quickly. 
-seo-description: AEM Forms provides Adaptive Form Fragments that you can use as assets to create a form quickly. 
+title: What are Reference Adaptive Form Fragments?
+description: AEM Forms provides Adaptive Form Fragments that you can use as assets to create forms quickly.  
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -13,7 +11,7 @@ docset: aem65
 
 # Reference Adaptive Form Fragments {#reference-adaptive-form-fragments}
 
-Adaptive Form Fragment is a group of fields, or a panel containing a group of fields that you can use when you create a form. It lets you create a form easily and quickly. You can drag-drop an Adaptive Form Fragment into a form using the assets browser in sidebar, and you can edit it in the form editor.
+Adaptive Form Fragment is a group of fields, or a panel containing a group of fields that you can use when you create a form. It lets you create a form easily and quickly. You can drag-drop an Adaptive Form Fragment into a form using the assets browser in the sidebar, and you can edit it in the form editor.
 
 For Adaptive Forms authors, reference fragments are provided in the [!DNL AEM Forms] package [[!DNL AEM FORMS] REFERENCE FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). It includes the following fragments:
 
@@ -34,7 +32,7 @@ When you install the package, a Reference Fragments folder containing reference 
 
 ## Address {#address}
 
-Includes fields to specify mailing address. The available fields are street address, ZIP code, city, state, and country. It also includes a preconfigured web service that populates the city and state for a specified US zip code.
+Includes fields to specify a mailing address. The available fields are street address, ZIP code, city, state, and country. It also includes a preconfigured web service that populates the city and state for a specified US zip code.
 
 ![Address fragment](assets/address.png)
 
@@ -44,7 +42,7 @@ Includes fields to specify mailing address. The available fields are street addr
 
 ## Contact Information {#contact-information}
 
-Includes fields to capture phone number and email address.
+Includes fields to capture a phone number and email address.
 
 ![Contact information fragment](assets/contact-info.png)
 

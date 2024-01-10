@@ -1,10 +1,12 @@
 ---
-title: Use Form-centric AEM workflows to automate business processes
+title: Which workflow steps are available for on AEM Forms Cloud Service to create a workflow or for business process automation (BPM)?
 description: Forms-centric workflows allow you to rapidly build Adaptive Forms-based workflows. You can use Adobe Sign to e-sign documents, create forms-based business processes, retrieve and send data to multiple data sources, and send email notifications
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
+keywords: Use AEM workflows, using assign task steps, convert to PDF/A step, Generate document of recored step, use workflows, Sign document step, Genertae printed output step, Generate non interactive PDF output
 ---
-# Use Forms-centric AEM Workflows - Step Reference to automate business processes{#forms-centric-workflow-on-osgi-step-reference}
+
+# Use Forms-centric AEM Workflows - Step Reference to automate business processes {#forms-centric-workflow-on-osgi-step-reference}
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -15,7 +17,7 @@ You use workflow models . A model helps you define and execute a series of steps
 
 ## Forms-centric steps {#forms-workflow-steps}
 
-Forms-centric workflow steps perform AEM Forms-specific operations in an AEM Workflow. These steps allow you to rapidly build Adaptive Forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal and across- the-firewall business processes. You can also use Forms Workflow steps to:
+Forms-centric workflow steps perform AEM Forms-specific operations in an AEM Workflow. These steps allow you to rapidly build an Adaptive Forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal and across- the-firewall business processes. You can also use Forms Workflow steps to:
 
 * Create business processes, post-submission workflows, and backend workflows to manage enrollment processes.
 
@@ -31,25 +33,24 @@ Forms-centric workflow steps perform AEM Forms-specific operations in an AEM Wor
 
 >[!NOTE]
 >
->If the workflow model is marked for an external storage, then for all the Forms workflow steps, you can select only the variable option to store or retrieve data files and attachments.
+>If the workflow model is marked for an external storage, then for all the Forms Workflow steps, you can select only the variable option to store or retrieve data files and attachments.
  
-
 ## Assign task step {#assign-task-step}
 
 The assign task step creates a work item and assigns it to a user or group. Along with assigning the task, the component also specifies the Adaptive Form or non-interactive PDF for the task. The Adaptive Form is required to accept input from users and non-interactive PDF or a read-only Adaptive Form is used for review only workflows.
 
 You can also use the component to control the behavior of the task. For example, creating an automatic Document of Record, assigning the task to a specific user or group, specifying the path of the submitted data, specifying the path of data to be pre-populated, and specifying default actions. The Assign Task step has the following properties:
 
-* **[!UICONTROL Title]**: Title of the task. The title is displayed in AEM Inbox.
+* **[!UICONTROL Title]**: Title of the task. The title is displayed in the AEM Inbox.
 * **[!UICONTROL Description]**: Explanation of the operations being performed in the task. This information is useful for other process developers when you are working in a shared development environment.  
 
-* **[!UICONTROL Thumbnail Path]**: Path of the task thumbnail. If no path is specified, for an Adaptive Form default thumbnail is displayed and for Document of Record, a default icon is displayed.
+* **[!UICONTROL Thumbnail Path]**: Path of the task thumbnail. If no path is specified, for an Adaptive Form a default thumbnail is displayed and for Document of Record, a default icon is displayed.
 * **[!UICONTROL Workflow Stage]**: A workflow can have multiple stages. These stages are displayed in the AEM Inbox. You can define these stages in the properties of the model (Sidekick &gt; Page &gt; Page Properties &gt; Stages).
 * **[!UICONTROL Priority]**: Selected priority is displayed in the AEM Inbox. The available options are High, Medium, and Low. The default value is Medium.
 * **[!UICONTROL Due Date]**: Specify the number of days or hours after which the task is marked overdue. If you select **[!UICONTROL Off]**, then the task is never marked overdue. You can also specify a time-out handler to perform specific tasks after the task is overdue.
 
-* **[!UICONTROL Days]**: The number of days before which the task is to be completed. The number of days are counted after the task is assigned to a user. If a task is not complete and crosses the number of days specifies in the Days field, then, if selected, a timeout handler is triggered after the due date.
-* **[!UICONTROL Hours]**: The number of hours before which the task is to be completed. The number of hours are counted after the task is assigned to a user. If a task is not complete and crosses the number of hours specifies in the Hours field, then, if selected, a timeout handler is triggered after the due hours.
+* **[!UICONTROL Days]**: The number of days before which the task is to be completed. The number of days are counted after the task is assigned to a user. If a task is not complete and crosses the number of days specified in the Days field, then if it is selected, a timeout handler is triggered after the due date.
+* **[!UICONTROL Hours]**: The number of hours before which the task is to be completed. The number of hours are counted after the task is assigned to a user. If a task is not complete and crosses the number of hours specifies in the Hours field, then if it is selected, a timeout handler is triggered after the due hours.
 * **[!UICONTROL Time-out after Due Date]**: Select this option to enable the Timeout Handler selection field.
 * **[!UICONTROL Timeout Handler]**: Select the script to be executed when the assign task step crosses the due date. Scripts placed in the CRX-repository at [apps]/fd/dashboard/scripts/timeoutHandler are available for selection. The specified path does not exist in crx-repository. An administrator creates the path before using it.
 * **[!UICONTROL Highlight the action and comment from the last task in Task Details]**: Select this option to display the last action that was taken and comment received on the task details section of a task.
@@ -101,7 +102,7 @@ You can also use the component to control the behavior of the task. For example,
 
     * **[!UICONTROL Save output data file using]**: Save the data file (.json, .xml, .doc, or form data model). The data file contains information submitted through the associated form. You can save the output data file using a path that is relative to the payload or store it in a variable of Document, XML, or JSON data type. For example, [Payload_Directory]/Workflow/data, where data is a file.
     * **[!UICONTROL Save attachments using]**: Save the form attachments provide in a task. You can save the attachments using a path that is relative to the payload or store it in a variable of array list of Document data type.
-    * **[!UICONTROL Save Document of Record using]**: Path to save a Document of Record file. For example, [Payload_Directory]/DocumentofRecord/credit-card.pdf. You can save the Document of Record using a path that is relative to the payload or store it in a variable of Document data type. If you select **[!UICONTROL Relative to Payload]** option, The Document of Record is not generated if the path field is left empty. This option is available only if you select Adaptive Form from the Type drop-down list.
+    * **[!UICONTROL Save Document of Record using]**: Path to save a Document of Record file. For example, [Payload_Directory]/DocumentofRecord/credit-card.pdf. You can save the Document of Record using a path that is relative to the payload or store it in a variable of Document data type. If you select the **[!UICONTROL Relative to Payload]** option, The Document of Record is not generated if the path field is left empty. This option is available only if you select Adaptive Form from the Type drop-down list.
     
     <!-- 
     
@@ -120,34 +121,34 @@ You can also use the component to control the behavior of the task. For example,
 
 * **[!UICONTROL Arguments]**: The field is available when a script other than the RandomParticipantChoose script is selected in the Participant Chooser field. The field lets you provide a list of a comma-separated argument for the script selected in the Participant Chooser field.  
 
-* **[!UICONTROL User or Group]**: The task is assigned to selected user or group. The option is available when the **[!UICONTROL To a specific user or group option]** is selected in the **[!UICONTROL Assign options]** field. The field lists all the users and groups of the [!DNL workflow-users] group.  
-  The **[!UICONTROL User or Group]** drop-down menu lists the users and groups that the logged-in user has access to. The username display depends on if you have access permissions on the **[!UICONTROL users]** node in crx-repository for that particular user. 
+* **[!UICONTROL User or Group]**: The task is assigned to a selected user or group. The option is available when the **[!UICONTROL To a specific user or group option]** is selected in the **[!UICONTROL Assign options]** field. The field lists all the users and groups of the [!DNL workflow-users] group.  
+  The **[!UICONTROL User or Group]** drop-down menu lists the users and groups that the logged-in user has access to. The username display depends on if you have access permissions on the **[!UICONTROL users]** node in the crx-repository for that particular user. 
 
 * **[!UICONTROL Send Notification Email]**: Select this option to send email notifications to the assignee. These notifications are sent when a task is assigned to a user or a group. You can use the **[!UICONTROL Recipient Email Address]** option to specify the mechanism to retrieve the email address.
 
-* **[!UICONTROL Recipient Email Address]**: You can store email address in a variable, use a literal to specify a permanent email address, or use default email address of the assignee specified in the profile of the assignee. You can use the literal or a variable to specify email address of a group. The variable option is helpful in dynamically retrieving and using an email address. The **[!UICONTROL Use default email address of the assignee]** option is only for a single assignee. In this case, email address stored in assignees user profile is used.
+* **[!UICONTROL Recipient Email Address]**: You can store an email address in a variable, use a literal to specify a permanent email address, or use the default email address of the assignee specified in the profile of the assignee. You can use the literal or a variable to specify the email address of a group. The variable option is helpful in dynamically retrieving and using an email address. The **[!UICONTROL Use default email address of the assignee]** option is only for a single assignee. In this case, the email address stored in the assignees user profile is used.
 
-* **[!UICONTROL HTML Email Template]**: Select email template for the notification email. To edit a template, modify the file located at /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in crx-repository.
+* **[!UICONTROL HTML Email Template]**: Select the email template for the notification email. To edit a template, modify the file located at /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in crx-repository.
 * **[!UICONTROL Allow Delegation To]**: AEM Inbox provides an option to the logged in user to delegate the assigned workflow to another user. You are allowed to delegate within the same group or to the workflow user of another group. If the task is assigned to a single user and the **[!UICONTROL allow delegation to members of the assignee group]** option is selected, then it is not possible to delegate the task to another user or group.
-* **[!UICONTROL Share Settings]**: AEM Inbox provides options to share a single or all the tasks in the inbox with another users:
+* **[!UICONTROL Share Settings]**: AEM Inbox provides options to share a single or all the tasks in the inbox with another user:
     * When the **[!UICONTROL Allow assignee to share explicitly in inbox]** option is selected, the user can select the task in AEM Inbox and share it with another AEM user. 
-    * When the **[!UICONTROL Allow assignee to share via inbox sharing]** option is selected and users share their Inbox items or allows other users to access their Inbox items, only tasks with previously mentioned option enabled are shared with other users.
+    * When the **[!UICONTROL Allow assignee to share via inbox sharing]** option is selected and users share their Inbox items or allows other users to access their Inbox items, only tasks with the previously mentioned option enabled are shared with other users.
     * When the **[!UICONTROL Allow assignee to delegate using 'Out of Office' settings]** is selected. The assignee can enable the option to delegate the task to other users along with other Out of Office options. Any new tasks assigned to the out-of-office user are automatically delegated (assigned) to the users mentioned in out-of-office settings.
     
-     It allows other users to pick assignees tasks while is out of office and unable to work on assigned tasks. 
+     It allows other users to pick assignees tasks while is out of the office and unable to work on assigned tasks. 
 
 * **[!UICONTROL Actions]** &gt; **[!UICONTROL Default Actions]**: Out of the box, Submit, Save, and Reset actions are available. All the default actions are enabled, by default. 
-* **[!UICONTROL Route Variable]**: Name of the route variable. The route variable captures custom actions that a user selects in AEM Inbox.
-* **[!UICONTROL Routes]**: A task can branch to different routes. When selected in AEM Inbox, the route returns a value and the workflow branches based on the selected route. You can either store routes in a variable of array of String data type or select **[!UICONTROL Literal]** to add routes manually.
+* **[!UICONTROL Route Variable]**: Name of the route variable. The route variable captures custom actions that a user selects in the AEM Inbox.
+* **[!UICONTROL Routes]**: A task can branch to different routes. When selected in AEM Inbox, the route returns a value and the workflow branches based on the selected route. You can either store routes in a variable of array of String data types or select **[!UICONTROL Literal]** to add routes manually.
 
-* **[!UICONTROL Route Title]**: Specify the title for the route. It is displayed in AEM Inbox.
-* **[!UICONTROL Coral Icon]**: Specify HTML attribute of a coral icon. Adobe CorelUI library provides a vast set of touch-first icons. You can choose and use an icon for the route. It is displayed along with the title in AEM Inbox. If you store the routes in a variable, the routes use a default 'Tags' coral icon.
-* **[!UICONTROL Allow assignee to add comment]**: Select this option to enable comments for the task. An assignee can add the comments from within AEM Inbox at the time of task submission.
+* **[!UICONTROL Route Title]**: Specify the title for the route. It is displayed in the AEM Inbox.
+* **[!UICONTROL Coral Icon]**: Specify an HTML attribute of a coral icon. Adobe CorelUI library provides a vast set of touch-first icons. You can choose and use an icon for the route. It is displayed along with the title in the AEM Inbox. If you store the routes in a variable, the routes use a default 'Tags' coral icon.
+* **[!UICONTROL Allow assignee to add comment]**: Select this option to enable comments for the task. An assignee can add the comments from within the AEM Inbox at the time of task submission.
 * **[!UICONTROL Save comment in variable]**: Save the comment in a variable of String data type. This option displays only if you select the **[!UICONTROL Allow assignee to add comment]** checkbox.
 
-* **[!UICONTROL Allow assignee to add attachments to the task]**: Select this option to enable attachments for the task. An assignee can add the attachments from within AEM Inbox at the time of task submission. You can also limit the maximum size **[!UICONTROL (Maximum File Size)]** of an attachment. The default size is 2 MB. 
+* **[!UICONTROL Allow assignee to add attachments to the task]**: Select this option to enable attachments for the task. An assignee can add the attachments from within the AEM Inbox at the time of task submission. You can also limit the maximum size **[!UICONTROL (Maximum File Size)]** of an attachment. The default size is 2 MB. 
 
-* **[!UICONTROL Save output task attachments using]**: Specify the location of attachment folder. You can save output task attachments using a path relative to payload or in a variable of array of document data type. This option displays only if you select the **[!UICONTROL Allow assignee to add attachments to the task]** checkbox and select **[!UICONTROL Adaptive Form]**, **[!UICONTROL Read-only Adaptive Form]**, or **[!UICONTROL Non-interactive PDF document]** from the **[!UICONTROL Type]** drop-down list in the **[!UICONTROL Form/Document]** tab.
+* **[!UICONTROL Save output task attachments using]**: Specify the location of the attachment folder. You can save output task attachments using a path relative to the payload or in a variable of an array of document data types. This option displays only if you select the **[!UICONTROL Allow assignee to add attachments to the task]** checkbox and select **[!UICONTROL Adaptive Form]**, **[!UICONTROL Read-only Adaptive Form]**, or **[!UICONTROL Non-interactive PDF document]** from the **[!UICONTROL Type]** drop-down list in the **[!UICONTROL Form/Document]** tab.
 
 * **[!UICONTROL Use custom metadata]**: Select this option to enable the custom metadata field. Custom metadata is used in email templates.
 * **[!UICONTROL Custom Metadata]**: Select a custom metadata for the email templates. The custom metadata is available in crx-repository at apps/fd/dashboard/scripts/metadataScripts. The specified path does not exist in crx-repository. An administrator creates the path before using it. You can also use a service for the custom metadata. You can also extend the `WorkitemUserMetadataService` interface to provide custom metadata.
@@ -163,9 +164,9 @@ You can also use the component to control the behavior of the task. For example,
 
 PDF/A is an archival format for long-term preservation of the document's content, by embedding the fonts and uncompressing the file. As a result, a PDF/A document is typically larger than a standard PDF document. You can use the ***Convert to PDF/A*** step in an AEM Workflow to convert your PDF documents to PDF/A format. 
 
-The convert to PDF/A step has following properties:
+The convert to PDF/A step has the following properties:
 
-**[!UICONTROL Input Document]**: The input document can be relative to the payload, have an absolute path, can be provided as payload or stored in a variable of Document data type.
+**[!UICONTROL Input Document]**: The input document can be relative to the payload, have an absolute path, can be provided as a payload or stored in a variable of Document data type.
 
 **[!UICONTROL Conversion Options]**: Using this property, the settings for converting PDF documents to PDF/A documents are specified. Various options available under this tab are:
 * **[!UICONTROL Compliance]**: Specifies the standard to which the output PDF/A document must comply. It supports different PDF standards such as PDF/A-1b, PDF/A-2b, or PDF/A-3b.
@@ -173,14 +174,14 @@ The convert to PDF/A step has following properties:
 * **[!UICONTROL Color Space]**: Specifies the predefined color space as S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED or SWOP, that can be used for output PDF/A files. 
 * **[!UICONTROL Optional Content]**: Allow specific graphic objects and/or annotations to be visible in output PDF/A document, only when a specified set of criteria is met.
 
-**[!UICONTROL Output Documents]**: Specifies the location to save the output file. The output file can be saved at a location relative to payload, overwrites the payload, if the payload is a file, or in a variable of Document data type. 
+**[!UICONTROL Output Documents]**: Specifies the location to save the output file. The output file can be saved at a location relative to the payload, overwrites the payload, if the payload is a file, or in a variable of Document data type. 
 
 
 ## Send Email Step {#send-email-step}
 
-Use the email step to send an email, for example an email with a Document of Record, link of an Adaptive Form <!-- , link of an interactive communication-->, or with an attached PDF document. Send Email step supports [HTML email](https://en.wikipedia.org/wiki/HTML_email). HTML emails are responsive and adapt to the recipients' email client and screen size. You can use an HTML email template to define appearance, color-scheme, and behavior of the email.
+Use the email step to send an email, for example, an email with a Document of Record, link of an Adaptive Form <!-- , link of an interactive communication-->, or with an attached PDF document. Send Email step supports [HTML email](https://en.wikipedia.org/wiki/HTML_email). HTML emails are responsive and adapt to the recipients' email client and screen size. You can use an HTML email template to define the appearance, color-scheme, and behavior of the email.
 
-The email step uses Day CQ Mail Service to send emails. Before using the email step, ensure that the email service is configured. Email support only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) to enable ports for sending emails and to enable SMTP protocol for your environment. The restriction helps improve security of the platform.
+The email step uses Day CQ Mail Service to send emails. Before using the email step, ensure that the email service is configured. Email support only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) to enable ports to send emails and  enable SMTP protocol for your environment. The restriction helps improve the security of the platform.
 
 The email step has the following properties:
 
@@ -235,20 +236,20 @@ You can associate multiple Adaptive Forms with a workflow. As a result, you can 
 
 If you specify the path of a folder, for example, attachments, all the files directly available in the folder are attached to Document of Record. If any files are available in the folders directly available in the specified attachment path, the files are included in Document of Record as attachments. If there are any folders in directly available folders, those folders are skipped.
 
-**[!UICONTROL Save Generated Document of Record using below options]**: Specify the location to keep a Document of Record file. You can choose to overwrite the payload folder, place Document of Record at a location within the payload directory, or store the Document of Record in a variable of Document data type.
+**[!UICONTROL Save Generated Document of Record using below options]**: Specify the location to keep a Document of Record file. You can choose to overwrite the payload folder, place the Document of Record at a location within the payload directory, or store the Document of Record in a variable of Document data type.
 
 **[!UICONTROL Locale]**: Specify the language of the Document of Record. Select **[!UICONTROL Literal]** to select the locale from a drop-down list or select **[!UICONTROL Variable]** to retrieve the locale from the value stored in a variable of string data type. Define the locale code while storing the value for the locale in a variable. For example, specify **en_US** for English and **fr_FR** for French.
 
 ## Invoke DDX step {#invokeddx}
 
-Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX defines a set of operations, which can be applied on one or more input documents to generate one or more output documents. A single DDX can be used with a range of source documents. You can use the ***Invoke DDX step*** in an AEM Workflow to perform various operations, like Assembling Disassembling documents, Creating, and modifying Acrobat and XFA Forms, and other described in [DDX Reference documentation](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).                    
+Document Description XML (DDX) is a declarative markup language whose elements represent building blocks of documents. These building blocks include PDF and XDP documents, and other elements such as comments, bookmarks, and styled text. DDX defines a set of operations, which can be applied on one or more input documents to generate one or more output documents. A single DDX can be used with a range of source documents. You can use the ***Invoke DDX step*** in an AEM Workflow to perform various operations, like Assembling Disassembling documents, Creating, and modifying Acrobat and XFA Forms, and others described in the [DDX Reference documentation](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).                    
 
 Invoke DDX step has the following properties: 
 
 **[!UICONTROL Input Documents]**: Used to set properties of an input document. Various options available under this tab are:
 * **[!UICONTROL Specify DDX Using]**: Specifies the input document relative to the payload, have an absolute path, can be provided as payload, or stored in a variable of Document data type.
 * **[!UICONTROL Create Map from Payload]**: Add all the documents under the payload folder to Input Document's Map for the invoke API in Assembler. The node name for each document is used as a key in the map.
-* **[!UICONTROL Input Document's Map]**: Option is used to add multiple entries using **[!UICONTROL ADD]** button. Each entry represents the document's key in the map and the document's source.
+* **[!UICONTROL Input Document's Map]**: Option is used to add multiple entries using the **[!UICONTROL ADD]** button. Each entry represents the document's key in the map and the document's source.
 
 **[!UICONTROL Environment Options]**: This option is used to set processing settings for invoke API. Various options available under this tab are:
 * **[!UICONTROL Validate Only]**: Checks the validity of the input DDX document.
@@ -324,12 +325,12 @@ To explain inputs for fields of the step, the following database table and JSON 
 
 The Invoke Form Data Model Service step has the below listed fields to facilitate Form Data Model operations:
 
-* **[!UICONTROL Title]**: Title of the step. It helps identify the step in the workflow editor.
+* **[!UICONTROL Title]**: Title of the step. It helps identify the steps in the workflow editor.
 * **[!UICONTROL Description]**: Explanation useful for other process developers when you are working in a shared development environment.  
 
 * **[!UICONTROL Form Data Model Path]**: Browse and select a Form Data Model present on the server.  
 
-* **[!UICONTROL Errors and Validations]**: The option lets you capture error messages and specify validation options for data retrieved and sent to data sources. With these changes, you can ensure data passed to Invoke Form Data Model Service step adheres to the data constraints defined by data source. For more details, see [Automated validation of input data](work-with-form-data-model.md#automated-validation-of-input-data)
+* **[!UICONTROL Errors and Validations]**: The option lets you capture error messages and specify validation options for data retrieved and sent to data sources. With these changes, you can ensure data passed to the Invoke Form Data Model Service step adheres to the data constraints defined by the data source. For more details, see [Automated validation of input data](work-with-form-data-model.md#automated-validation-of-input-data)
 
 * **[!UICONTROL Validation level]**: There are three categories of validations: Basic, Full, and OFF:
 
@@ -352,27 +353,29 @@ The Invoke Form Data Model Service step has the below listed fields to facilitat
   * **[!UICONTROL Variable]**: Use the option to retrieve the value stored in a variable.
   * **[!UICONTROL Retrieve from Workflow Metadata]**: Use the option when the value to use is saved in a workflow metadata property. For example, emailAddress.
 
-  * **[!UICONTROL Relative to Payload]**: Use the option to retrieve the file attachment saved at a path relative to payload. Select the option and specify either the folder name which includes the file attachment or specify the file attachment name in the text box.
+  * **[!UICONTROL Relative to Payload]**: Use the option to retrieve the file attachment saved at a path relative to the payload. Select the option and specify either the folder name which includes the file attachment or specify the file attachment name in the text box.
   
     For example, if the Relative to Payload folder in the CRX repository includes a file attachment at the `attachment\attachment-folder` location, specify `attachment\attachment-folder` in the text box after selecting the **[!UICONTROL Relative to Payload]** option.
 
-  * **[!UICONTROL JSON Dot Notation]**: Use the option when the value to use is in a JSON file. For example, insurance.customerDetails.emailAddress. The JSON Dot Notation option is available only if Map input fields from input JSON option are selected.
-  * **[!UICONTROL Map input fields from input JSON]**: Specify path of a JSON file to obtain input value of some service arguments from the JSON file. Path of the JSON file can be relative to the payload, an absolute path, or you can select an input JSON document using a variable of JSON or Form Data Model type.
+  * **[!UICONTROL JSON Dot Notation]**: Use the option when the value to use is in a JSON file. For example, insurance.customerDetails.emailAddress. The JSON Dot Notation option is available only if Map input fields from the input JSON option are selected.
+  * **[!UICONTROL Map input fields from input JSON]**: Specify the path of a JSON file to obtain the input value of some service arguments from the JSON file. The path of the JSON file can be relative to the payload, an absolute path, or you can select an input JSON document using a variable of JSON or Form Data Model type.
 
-* **[!UICONTROL Input for services]** &gt; **[!UICONTROL Provide input data using variable or a JSON file]**: Select the option to obtain values for all the arguments from a JSON file saved at an absolute path, at a path relative to payload, or in a variable.
-* **[!UICONTROL Select Input JSON document using]**: The JSON file containing values for all the service arguments. Path of the JSON file can be **[!UICONTROL relative to the payload]** or an **[!UICONTROL absolute path]**. You can also retrieve the input JSON document using a variable of JSON or Form Data Model data type.
+* **[!UICONTROL Input for services]** &gt; **[!UICONTROL Provide input data using variable or a JSON file]**: Select the option to obtain values for all the arguments from a JSON file saved at an absolute path, at a path relative to the payload, or in a variable.
+* **[!UICONTROL Select Input JSON document using]**: The JSON file containing values for all the service arguments. The path of the JSON file can be **[!UICONTROL relative to the payload]** or an **[!UICONTROL absolute path]**. You can also retrieve the input JSON document using a variable of JSON or Form Data Model data type.
 
 * **[!UICONTROL JSON Dot Notation]**: Leave the field blank to use all the objects of the specified JSON file as input for service arguments. To read a specific JSON object from the specified JSON file as input for service arguments, specify dot notation for the JSON object, for example, If you have a JSON similar to the one listed at the start of the section, specify insurance.customerDetails to provide all the details of a customer as input to the service.
-* **[!UICONTROL Output of service]** &gt; **[!UICONTROL Map and write output values to variable or metadata]**: Select the option to save the output values as properties of the workflow instance metadata node in crx-repository. Specify the name of the metadata property and select the corresponding service output attribute to be mapped with metadata property, for example, map the phone_number returned by output service with the phone_number property of workflow metadata. Similarly, you can store the output in a variable of Long data type. When you select a property for the **[!UICONTROL Service output attribute to be mapped]** option, only variables capable of storing data of the selected property are populated for the **[!UICONTROL Save the output to]** option.
+* **[!UICONTROL Output of service]** &gt; **[!UICONTROL Map and write output values to variable or metadata]**: Select the option to save the output values as properties of the workflow instance metadata node in crx-repository. Specify the name of the metadata property and select the corresponding service output attribute to be mapped with the metadata property, for example, map the phone_number returned by output service with the phone_number property of workflow metadata. Similarly, you can store the output in a variable of Long data type. When you select a property for the **[!UICONTROL Service output attribute to be mapped]** option, only variables capable of storing data of the selected property are populated for the **[!UICONTROL Save the output to]** option.
 
-* **[!UICONTROL Output of service]** &gt; **[!UICONTROL Save output to variable or a JSON file]**: Select the option to save the output values in a JSON file at an absolute path, at a path relative to payload, or in a variable . 
+* **[!UICONTROL Output of service]** &gt; **[!UICONTROL Save output to variable or a JSON file]**: Select the option to save the output values in a JSON file at an absolute path, at a path relative to the payload, or in a variable . 
 * **[!UICONTROL Save Output JSON document using below options]**: Save the output JSON file. The path of the output JSON file can be relative to the payload or an absolute path. You can also save the output JSON file using a variable of JSON or Form Data Model data type.
+
+
 
 ## Sign Document step {#sign-document-step}
 
-The Sign Document step enables you to use [!DNL Adobe Sign] to sign documents. When you use [!DNL Adobe Sign] Workflow step to Sign an Adaptive Form, the form can be passed across signers one after another or can be sent to all the signers simultaneously, depending on the configuration of workflow step. [!DNL Adobe Sign] enabled Adaptive Forms are submitted to Experience Manager Forms Server only after all the signers complete the signing process.
+The Sign Document step enables you to use [!DNL Adobe Sign] to sign documents. When you use the [!DNL Adobe Sign] Workflow step to Sign an Adaptive Form, the form can be passed across recipients one after another or can be sent to all the recipients simultaneously, depending on the configuration of the workflow step. [!DNL Adobe Sign] enabled Adaptive Forms are submitted to Experience Manager Forms Server, only after all the recipients complete the signing process.
 
-By default, the [!DNL Adobe Sign] Scheduler services checks (polls) signer response after every 24 hours. You can [change the default interval for your environment](adobe-sign-integration-adaptive-forms.md##configure-adobe-sign-scheduler-to-sync-the-signing-status).
+By default, the [!DNL Adobe Sign] Scheduler service checks (polls) recipient response after every 24 hours. You can [change the default interval for your environment](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status). 
 
  The Sign Document step has the following properties:
 
@@ -380,17 +383,29 @@ By default, the [!DNL Adobe Sign] Scheduler services checks (polls) signer respo
 
 * **[!UICONTROL Locale]**: Specify the language for the email and verification options. You can either store the locale in a variable of String data type or select **[!UICONTROL Literal]** to choose the locale from the list of available options. You must define the locale code while storing the value for the locale in a variable. For example, specify **[!UICONTROL en_US]** for English and **[!UICONTROL fr_FR]** for French.
 
-* **[!UICONTROL Adobe Sign Cloud Configuration]**: Choose an [!DNL Adobe Sign] Cloud Configuration. If you have not configured [!DNL Adobe Sign] for [!DNL AEM Forms], see [Integrate Adobe Sign with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md). 
+* **[!UICONTROL Adobe Sign Cloud Configuration]**: Choose an [!DNL Adobe Sign] Cloud Configuration. If you have not configured [!DNL Adobe Sign] for [!DNL AEM Forms], see [Integrate Adobe Sign with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-* **[!UICONTROL Select Document to be signed using]**: You can choose a document from a location relative to the payload, use payload as the document, specify an absolute path of the document, or retrieve the document stored in a variable of Document data type.
-* **[!UICONTROL Days Until Deadline]**: A document is marked due (passed deadline) after there is no activity on the task for the number of days specifies in the **[!UICONTROL Days Until Deadline]** field. The number of days are counted after the documented is assigned to a user for signing.
-* **[!UICONTROL Reminder Email Frequency]**: You can send a reminder email at daily or weekly interval. The week is counted from the day the documented is assigned to a user for signing.
-* **[!UICONTROL Signature Process]**: You can choose to sign a document in a sequential or a parallel order. In sequential order, one signer receives the document at a time for signing. After the first signer completes signing the document, then the document is sent to the second signer, and so on. In parallel order, multiple signers can sign a document at a time.  
+* **[!UICONTROL Select Document to be signed using]**: You can choose a document from a location relative to the payload, use the payload as the document, specify an absolute path of the document, or retrieve the document stored in a variable of Document data type.
+* **[!UICONTROL Days Until Deadline]**: A document is marked due (passed deadline) after there is no activity on the task for the number of days specifies in the **[!UICONTROL Days Until Deadline]** field. The number of days are counted after the documentation is assigned to a user for signing.
+* **[!UICONTROL Reminder Email Frequency]**: You can send a reminder email at a daily or weekly interval. The week is counted from the day the documentation is assigned to a user for signing.
+* **[!UICONTROL Signature Process]**: You can choose to sign a document in a sequential or a parallel order. In sequential order, one signer receives the document at a time for signing. After the first signer completes signing the document, the document is sent to the second signer, and so on. In parallel order, multiple signers can sign a document at a time.
 * **[!UICONTROL Redirection URL]**: Specify a redirection URL. After the document is signed, you can redirect the assignee to a URL. Usually, this URL contains a thank you message or further instructions.
 * **[!UICONTROL Workflow Stage]**: A workflow can have multiple stages. These stages are displayed in the AEM Inbox. You can define these stages in the properties of the model ( **[!UICONTROL Sidekick]** &gt; **[!UICONTROL Page]** &gt; **[!UICONTROL Page Properties]** &gt; **[!UICONTROL Stages]**).
-* **[!UICONTROL Select Signers]**: Specify the method to choose signers for the document. You can dynamically assign the workflow to a user or a group or manually add details of a signer.
-* **[!UICONTROL Script or service to select signers]**: The option is available only if the Dynamically option is selected in the Select Signers field. You can specify an ECMAScript or a service to choose signers and verification options for a document.  
-* **[!UICONTROL Signer Details]**:  The option is available only if the Manually option is selected in the Select Signers field. Specify email address and choose an optional verification mechanism. Before selecting a 2-step verification mechanism, ensure that the corresponding verification option is enabled for the configured [!DNL Adobe Sign] account. You can use a variable of String data type to define values for Email, Country Code, and Phone Number fields. The Country Code and Phone Number fields display only if you select Phone Verification from the 2-step verification drop-down list.
+* **[!UICONTROL Select Recipients]**: Specify the method to choose recipients for the document. You can dynamically assign the workflow to a user or a group or manually add details of a recipient. When you select Manually in the drop-down list, you add recipient details such as Email, Role, and Authentication method.
+
+    >[!NOTE]
+    >
+    >* In the Role section, you can specify the recipient role as Signer, Approver, Acceptor, Certified Recipient, Form Filler, and Delegator.
+    >* If you select Delegator in the Role option, the Delegator can assign the sign task to another recipient.
+    >* If you have configured an authentication method for [!DNL Adobe Sign], based on your configuration you select an authentication method such as Phone based authentication, Social Identity based authentication, Knowledge based authentication, Government Identity based authentication.
+  
+* **[!UICONTROL Script or service to select recipients]**: The option is available only if you select the Dynamically option in the Select Recipients field. You can specify an ECMAScript or a service to choose signers and verification options for a document.
+* **[!UICONTROL Recipient Details]**:  The option is available only if the Manually option is selected in the Select Recipients field. Specify an email address and choose an optional verification mechanism. Before selecting a 2-step verification mechanism, ensure that the corresponding verification option is enabled for the configured [!DNL Adobe Sign] account. You can use a variable of String data type to define values for Email, Country Code, and Phone Number fields. The Country Code and Phone Number fields are display only if you select Phone Verification from the 2-step verification drop-down list.
+* **[!UICONTROL Signed Document]**: You can save the status of the Signed Document to Variable. To add an electronic signature audit trail for greater security and legality to your Signed Document, you can Include Audit Report. You can save the Signed Document using the Variable or Payload folder.
+
+    >[!NOTE]
+    >
+    > The Audit Report is appended to the last page of the signed document.
 
 <!--
 ## Document Services steps {#document-services-steps}
@@ -490,15 +505,15 @@ Send a document directly to a printer. It supports the following printing access
 
 ## Generate Printed Output Step {#generatePrintedOutput}
 
-The step generates a PCL, PostScript, ZPL, IPL, TPCL, or DPL output given a form design and data file. The data file is merged with the form design and formatted for printing. The output generated by this step can be sent directly to a printer or saved as file. It is recommended that you use this step when you want to use form designs or data from an application. If your form designs are on the network, local file system, or HTTP location, use the generatePrintedOutput operation.
+The step generates a PCL, PostScript, ZPL, IPL, TPCL, or DPL output given a form design and data file. The data file is merged with the form design and formatted for printing. The output generated by this step can be sent directly to a printer or saved as a file. It is recommended that you use this step when you want to use form designs or data from an application. If your form designs are on the network, local file system, or HTTP location, use the generatePrintedOutput operation.
 
-For example, your application requires that you merge a form design with a data file. The data contains hundreds of records. In addition, it requires the output is sent to a printer that supports ZPL. The form design and your input data are in an application. Use the generatePrintedOutput operation to merge each record with a form design and send the output to a printer that supports ZPL.
+For example, your application requires that you merge a form design with a data file. The data contains hundreds of records. In addition, it requires that the output is sent to a printer that supports ZPL. The form design and your input data are in an application. Use the generatePrintedOutput operation to merge each record with a form design and send the output to a printer that supports ZPL.
 
 The Generate Printed Output step has the following properties:
 
 **[!UICONTROL Input properties]**
 
-* **[!UICONTROL Select template file using]**: Specify the path of the template file. You can select the template file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it. Moreover, you can also accept payload as the input data file.
+* **[!UICONTROL Select template file using]**: Specify the path of the template file. You can select the template file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it. Moreover, you can also accept the payload as the input data file.
 
 * **[!UICONTROL Select data document using]**: Specify the path of an input data file. You can select the input data file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it.
 
@@ -526,13 +541,13 @@ The Generate Printed Output step has the following properties:
 
 * **[!UICONTROL Select Content Root location using]**: Content root is a string value that specifies the URI, absolute reference, or location in the repository to retrieve relative assets used by the form design. For example, if the form design references an image relatively, such as `../myImage.gif`, `myImage.gif` must be at `repository://`. The default value is `repository://`, which points to the root level of the repository.
 
-  When you pick an asset from your application, the Content Root URI path must have the correct structure. For example, if a form is picked from an application named SampleApp, and is placed at `SampleApp/1.0/forms/Test.xdp`, the Content Root URI must be specified as `repository://administrator@password/Applications/SampleApp/1.0/forms/`, or `repository:/Applications/SampleApp/1.0/forms/` (when authority is null). When the Content Root URI is specified this way, the paths of all of the referenced assets in the form are resolved against this URI.
+  When you pick an asset from your application, the Content Root URI path must have the correct structure. For example, if a form is picked from an application named SampleApp, and is placed at `SampleApp/1.0/forms/Test.xdp`, the Content Root URI must be specified as `repository://administrator@password/Applications/SampleApp/1.0/forms/`, or `repository:/Applications/SampleApp/1.0/forms/` (when authority is null). When the Content Root URI is specified this way, the paths of all referenced assets in the form are resolved against this URI.
 
 * **[!UICONTROL Select XCI file using]**: XCI files are used to describe fonts and other properties that are used for form design elements. You can keep an XCI file relative to the payload, at an absolute path, or using a variable of Document data type.
 
 * **[!UICONTROL Locale]**: Specifies the language used for generating the PDF document. If you provide a literal value, select a language from the list or select one of these values:
   * **[!UICONTROL To use server default]**:
-    (Default) Use the Locale setting configured on the [!DNL AEM Forms] Server. The Locale setting is configured using Administration Console. (See [Designer Help](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf).)
+    (Default) Use the Locale setting configured on the [!DNL AEM Forms] Server. The Locale setting is configured using the Administration Console. (See [Designer Help](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf).)
 
   * **[!UICONTROL To use custom value]**:
     Type the Locale code in the literal box or select a string variable containing the locale code. For a complete list of supported locale codes, see https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.
@@ -554,7 +569,7 @@ The Generate Printed Output step has the following properties:
 
 * **Template File**: Specifies the location of the XDP template. It is a mandatory field.
 
-* **Data Document**: Specifies the location of the data xml that needs to be merged with the template.
+* **Data Document**: Specifies the location of the data xml that must be merged with the template.
 
 ### Output document {#output-document}
 
@@ -568,3 +583,17 @@ The Generate Printed Output step has the following properties:
 * **Linearized PDF**: Specifies whether to optimize the generated PDF for web viewing.
 * **Tagged PDF**: Specifies whether to make the generated PDF accessible.
 * **XCI document**: Specifies the path to the XCI file.
+
+## See Also {#see-also}
+
+* [Variables in Forms-centric AEM Workflows](/help/forms/variable-in-aem-workflows.md)
+* [Configure Out of Office setting](/help/forms/configure-out-of-office-settings.md)
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Forms-centric workflow on OSGi](/help/forms/aem-forms-workflow.md)
+>* [Use AEM translation workflow to localize Adaptive Forms and Document of Record](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
+
+-->

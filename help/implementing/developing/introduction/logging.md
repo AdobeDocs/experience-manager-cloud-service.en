@@ -11,7 +11,7 @@ AEM as a Cloud Service logging settings and log levels are managed in configurat
 
 * AEM logging, which performs logging at the AEM application level
 * Apache HTTPD Web Server/Dispatcher logging, which performs logging of the web server and Dispatcher on the Publish tier.
-* CDN logging, which as its name indicates, performs logging at the CDN. This feature is currently available to early adopters; to join the early adopter program, email **aemcs-cdnlogs-adopter@adobe.com**, including the name of your organization and context about your interest in the feature.
+* CDN logging, which as its name indicates, performs logging at the CDN. This feature is being gradually rolled out to customers in early September.
 
 ## AEM Logging {#aem-logging}
 
@@ -184,14 +184,14 @@ The following are examples of the recommended logging configurations (using the 
 
 AEM as a Cloud Service's HTTP request logging provides insight into the HTTP requests made to AEM and their HTTP responses in time order. This log is helpful to understand the HTTP Requests made to AEM and the order they are processed and responded to.
 
-The key to understanding this log is mapping the HTTP request and response pairs by their IDs, denoted by the numeric value in the brackets. Note that often requests and their corresponding responses have other HTTP requests and responses interjected between them in the log.
+The key to understanding this log is mapping the HTTP request and response pairs by their IDs, denoted by the numeric value in the brackets. Often requests and their corresponding responses have other HTTP requests and responses interjected between them in the log.
 
 **Example Log**
 
 ```
-29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:21 +0000 [137] > POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
-29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:22 +0000 [139] > GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
 29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
@@ -273,13 +273,13 @@ AEM as a Cloud Service provides three logs for the Apache Web Servers and dispat
 * Apache HTTPD Web Server Error log
 * Dispatcher log
 
-Note that these logs are only available for the Publish tier.
+These logs are only available for the Publish tier.
 
 This set of logs provides insights into HTTP requests to the AEM as a Cloud Service Publish tier prior to those requests reaching the AEM application. This is important to understand as, ideally, most HTTP requests to the Publish tier servers are served by content that is cached by the Apache HTTPD Web Server and AEM Dispatcher, and never reach the AEM application itself. Thus there are no log statements for these requests in AEM's Java, Request or Access logs.
 
 ### Apache HTTPD Web Server Access Log {#apache-httpd-web-server-access-log}
 
-The Apache HTTP Web Server access log provides statements for each HTTP request that reaches the Publish tier's Web server/Dispatcher. Note that requests that are served from an upstream CDN are not reflected in these logs.
+The Apache HTTP Web Server access log provides statements for each HTTP request that reaches the Publish tier's Web server/Dispatcher. Requests that are served from an upstream CDN are not reflected in these logs.
 
 See information about the error log format in the [official apache documentation](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -391,7 +391,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 The mod_rewrite log levels are defined by the variable REWRITE_LOG_LEVEL in the file `conf.d/variables/global.var`.
 
-It can be set to error, warn, info, debug and trace1 - trace8, with a default value of warn. To debug your RewriteRules, it is recommended to raise the log level to trace2.
+It can be set to error, warn, info, debug and trace1 - trace8, with a default value of warn. To debug your RewriteRules, it is recommended to raise the log level to trace2. It's recommended to debug rewrite rules using the [Dispatcher SDK](../../dispatcher/validation-debug.md). The maximal log level for AEM as a Cloud Service is `debug`. Thus it is currently not effectively possible to debug rewrite rules in the cloud.
 
 See the [mod_rewrite module documentation](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) for more information.
 
@@ -496,12 +496,9 @@ Define DISP_LOG_LEVEL debug
 
 ## CDN Log {#cdn-log}
 
- >[!NOTE]
- >
- >This feature is not yet generally available. To join the ongoing early adopter program, email **aemcs-cdnlogs-adopter@adobe.com**, including the name of your organization and context about your interest in the feature.
- >
+AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization. The CDN log format cannot be customized and there is no concept of setting it to different modes such as info, warn, or error.
 
- AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization. The CDN log format cannot be customized and there is no concept of setting it to different modes such as info, warn, or error.
+The Splunk forwarding feature does not yet support CDN logs.
 
  **Example**
 
@@ -520,7 +517,8 @@ Define DISP_LOG_LEVEL debug
  "cache": "PASS",
  "status": 200,
  "res_age": 0,
- "pop": "PAR"
+ "pop": "PAR",
+ "rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
  }
  ```
 
@@ -544,12 +542,25 @@ Define DISP_LOG_LEVEL debug
  | *status*  | The HTTP status code as an integer value.  |
  | *res_age*  | The amount of time (in seconds) a response has been cached (in all nodes).  |
  | *pop*  | Datacenter of the CDN cache server.  |
+ | *rules*  | The names of any matching [traffic filter rules](/help/security/traffic-filter-rules-including-waf.md) and WAF flags, also indicating if the match resulted in a block. Empty if no rules matched.  |
+ 
 
 ## How to Access Logs {#how-to-access-logs}
 
 ### Cloud Environments {#cloud-environments}
 
 AEM as a Cloud Service logs for cloud services can be accessed either by downloading through the Cloud Manager interface or by tailing logs at the command line using the using the Adobe I/O command line interface. For more information, see the [Cloud Manager logging documentation](/help/implementing/cloud-manager/manage-logs.md).
+
+### Logs for Additional Publish Regions {#logs-for-additional-publish-regions}
+
+If Additional Publish Regions are enabled for a particular environment, logs for each region will be available to download from Cloud Manager, as mentioned above.
+
+The AEM logs and the dispatcher logs for the Additional Publish Regions will specify the region in the first 3 letters after the environment id, as exemplified by **nld2** in the sample below, which refers to an additional AEM publish instance located in the Netherlands:
+
+```
+cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
+
+```
 
 ### Local SDK {#local-sdk}
 
@@ -595,6 +606,8 @@ Customers who have Splunk accounts may request via customer support ticket that 
 
 The network bandwidth associated with logs sent to Splunk are considered part of the customer's Network I/O usage.
 
+Splunk forwarding does not yet support CDN logs.
+
 ### Enabling Splunk Forwarding {#enabling-splunk-forwarding}
 
 In the support request, customers should indicate:
@@ -625,7 +638,7 @@ Below you will find a sample customer support request:
 Program 123, Production Env
 
 * Splunk HEC endpoint address: `splunk-hec-ext.acme.com`
-* Splunk index: acme_123prod (customer can choose whatever naming convention it wishes)
+* Splunk index: acme_123prod (customer can choose whatever naming convention it wantes)
 * Splunk port: 443
 * Splunk HEC token: ABC123
 

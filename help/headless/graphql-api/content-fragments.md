@@ -24,6 +24,10 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 >* [AEM Commerce consumes data from a Commerce platform via GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications.
 
+>[!NOTE]
+>
+>For the latest information about Experience Manager APIs, please also visit [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+
 ## The GraphQL API {#graphql-api}
 
 GraphQL is:
@@ -41,7 +45,7 @@ GraphQL is:
   See [GraphQL Foundation](https://foundation.graphql.org/).
 
 <!--
-"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
+"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world the tools they need to understand and adopt GraphQL.*". 
 -->
 
 For  information about the GraphQL API, see the following sections (amongst many other resources):
@@ -109,7 +113,7 @@ The [Persisted Queries](/help/headless/graphql-api/persisted-queries.md) are the
 
 GraphQL queries using POST requests are not recommended as they are not cached, so on a default instance the Dispatcher is configured to block such queries.
 
-While GraphQL also supports GET requests, these can hit limits (for example the length of the URL) that can be avoided using Persisted Queries.
+While GraphQL also supports GET requests, these can hit limits (for example, the length of the URL) that can be avoided using Persisted Queries.
 
 See [Enable caching of persisted queries](/help/headless/deployment/dispatcher-caching.md) for further details.
 
@@ -150,15 +154,15 @@ The permissions are those required for accessing Assets.
 
 GraphQL queries are executed with the permission of the AEM user of the underlying request. If the user does not have read access to some fragments (stored as Assets), they will not become part of the result set. 
 
-Also, the user needs to have access to a GraphQL endpoint to be able to execute GraphQL queries. 
+Also, the user must have access to a GraphQL endpoint to be able to execute GraphQL queries. 
 
 ## Schema Generation {#schema-generation}
 
 GraphQL is a strongly-typed API, which means that data must be clearly structured and organized by type.
 
-The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client needs to fetch the [Schema](#schema-generation), which contains all the types necessary for a query. 
+The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client must fetch the [Schema](#schema-generation), which contains all the types necessary for a query. 
 
-For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) and their data types.
+For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) and their data types.
 
 >[!CAUTION]
 >
@@ -229,9 +233,9 @@ Within the schema there are individual fields, of two basic categories:
 
   A selection of [Data Types](#Data-types) are used to create fields based on how you configure your Content Fragment Model. The field names are taken from the **Property Name** field of the **Data Type** tab.
   
-  * There is also the **Render As** setting to take into consideration, as users can configure certain data types. For example, a single line text field can be configured to contain multiple single line texts by choosing `multifield` from the dropdown.
+  * There is also the **Render As** setting to take into consideration, as users can configure certain data types. For example, a single line text field can be configured to contain multiple single line texts by choosing `multifield` from the drop-down list.
 
-* GraphQL for AEM also generates a number of [helper fields](#helper-fields).
+* GraphQL for AEM also generates several [helper fields](#helper-fields).
 
 ### Data Types {#data-types}
 
@@ -239,7 +243,7 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 
 | Content Fragment Model - Data Type | GraphQL Type | Description |
 |--- |--- |--- |
-| Single line Text | `String`, `[String]` | Used for simple strings such as author names, location names, etc. |
+| Single line Text | `String`, `[String]` | Used for simple strings such as author names, location names, and so on. |
 | Multi line Text | `String`, `[String]` | Used for outputting text such as the body of an article |
 | Number | `Float`, `[Float]` | Used to display floating point number and regular numbers |
 | Boolean | `Boolean` | Used to display checkboxes → simple true/false statements |
@@ -253,7 +257,7 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 
 ### Helper Fields {#helper-fields}
 
-In addition to the data types for user generated fields, GraphQL for AEM also generates a number of *helper* fields to help identify a Content Fragment, or to provide additional information about a Content Fragment.
+In addition to the data types for user generated fields, GraphQL for AEM also generates several *helper* fields to help identify a Content Fragment, or to provide additional information about a Content Fragment.
 
 These [helper fields](#helper-fields) are marked with a preceding `_` to distinguish between what has been defined by the user and what has been auto-generated.
 
@@ -359,7 +363,7 @@ The `_variations` field has been implemented to simplify querying the variations
 
 >[!NOTE]
 >
->Note that the `_variations` field does not contain a `master` variation, as technically the original data (referenced as *Master* in the UI) is not considered an explicit variation.
+>The `_variations` field does not contain a `master` variation, as technically the original data (referenced as *Master* in the UI) is not considered an explicit variation.
 
 See [Sample Query - All Cities with a Named Variation](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation).
 
@@ -493,11 +497,11 @@ The following operators can be used to compare fields to a certain value:
 | `AFTER` | `Calendar`, `Date`, `Time` | ... the point in time denoted by the value is after the point in time denoted by the content of the field |
 | `AT_OR_AFTER` | `Calendar`, `Date`, `Time` | ... the point in time denoted by the value is after or at the same point in time denoted by the content of the field |
 
-Some types also allow to specify additional options that modify how an expression is evaluated:
+Some types also let you specify additional options that modify how an expression is evaluated:
 
 | Option | Type(s) | Description |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | Ignores the case of a string, e.g. a value of `time` will match `TIME`, `time`, `tImE`, ... |
+| `_ignoreCase` | `String` | Ignores the case of a string, for example, a value of `time` matches `TIME`, `time`, `tImE`, ... |
 | `_sensitiveness` | `Float` | Allows a certain margin for `float` values to be considered the same (to work around technical limitations due to the internal representation of `float` values; should be avoided, as this option might have a negative impact on performance |
 
 Expressions can be combined to a set with the help of a logical operator (`_logOp`):
@@ -509,11 +513,11 @@ Each field can be filtered by its own set of expressions. The expression sets of
 
 A filter definition (passed as the `filter` argument to a query) contains:
 
-* A sub-definition for each field (the field can be accessed through its name, e.g. there's a `lastName` field in the filter for the `lastName` field in the Data (field) Type)
+* A sub-definition for each field (the field can be accessed through its name, for example, there's a `lastName` field in the filter for the `lastName` field in the Data (field) Type)
 * Each sub-definition contains the `_expressions` array, providing the expression set, and the `_logOp` field that defines the logical operator the expressions should be combined with
 * Each expression is defined by the value (`value` field) and the operator (`_operator` field) the content of a field should be compared to
 
-Note that you can omit `_logOp` if you want to combine items with `AND` and `_operator` if you want to check for equality, as these are the default values.
+You can omit `_logOp` if you want to combine items with `AND` and `_operator` if you want to check for equality, as these are the default values.
 
 The following example demonstrates a full query that filters all persons that have a `lastName` of `Provo` or containing `sjö`, independent of the case:
 
@@ -565,8 +569,8 @@ This feature lets you sort the query results according to a specified field.
 The sorting criteria:
 
 * is a comma separated list of values representing the field path
-  * the first field in the list will define the primary sort order, the second field is used if two values of the primary sort criterion are equal, the third one if the first two criteria are equal, etc.
-  * dotted notation, that is, field1.subfield.subfield etc...
+  * the first field in the list will define the primary sort order, the second field is used if two values of the primary sort criterion are equal, the third one if the first two criteria are equal, and so on.
+  * dotted notation, that is, field1.subfield.subfield and so on...
 * with an optional order direction
   * ASC (ascending) or DESC (descending); as default ASC is applied
   * the direction can be specified per field; this means that you can sort one field in ascending order, another one in descending order (name, firstName DESC)
@@ -908,7 +912,7 @@ The following limitations exist:
 The basic operation of queries with GraphQL for AEM adhere to the standard GraphQL specification. For GraphQL queries with AEM there are a few extensions:
 
 * If you require a single result:
-  * use the model name; eg city
+  * use the model name; for example, city
 
 * If you expect a list of results:
   * add `List` to the model name; for example,  `cityList`
@@ -1029,6 +1033,14 @@ To access the GraphQL endpoint from an external website you need to configure th
 ## Authentication {#authentication}
 
 See [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/headless/security/authentication.md).
+
+## Limitations {#limitations}
+
+To protect against potential problems there are default limitations imposed on your queries:
+
+* The query cannot contain more than 1M (1024 * 1024) characters
+* The query cannot contain more than 15000 tokens 
+* The query cannot contain more than 200000 whitespace tokens
 
 ## FAQs {#faqs}
 

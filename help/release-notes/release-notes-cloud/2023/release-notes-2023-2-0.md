@@ -1,8 +1,8 @@
 ---
 title: Release Notes for 2023.2.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2023.2.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
 ---
-
 # 2023.2.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 The following section outlines the feature release notes for the 2023.2.0 version of [!DNL Experience Manager] as a Cloud Service.
@@ -39,7 +39,7 @@ Have a look at the February 2023 Release Overview video for a summary of the fea
 ### New features in [!DNL Assets] {#assets-features}
 
 * New protocol (DASH - Dynamic Adaptive Streaming over HTTP) support launched for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled):
-   * Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos
+   * Adaptive streaming (DASH/HLS) ensures better user viewing experience for videos
    * DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry
    * Available in NA, to be enabled via support ticket, coming soon in APAC, EMEA
 
@@ -49,7 +49,7 @@ Have a look at the February 2023 Release Overview video for a summary of the fea
 
 ### New features available in [!DNL Forms] {#new-features-available-in-channel}
 
-* **[Use data capture core components to build Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [Use Adaptive Forms editor](/help/forms/creating-adaptive-form-core-components.md) to create forms based on standardized data capture components (Core Components). These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrolment experiences.
+* **[Use data capture core components to build Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)**: [Use Adaptive Forms editor](/help/forms/creating-adaptive-form-core-components.md) to create forms based on standardized data capture components (Core Components). These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrolment experiences.
 
 *   **[Frontend pipeline support for styling core component based Adaptive Forms](/help/forms/using-themes-in-core-components.md)**: Utilize standardized BEM-based themes for Core Components-based Adaptive Forms by deploying them with Frontend Deployment pipeline to enhance the look and feel of your forms and align with your organization's brand approved design guidelines.
 

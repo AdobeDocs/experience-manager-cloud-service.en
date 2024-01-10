@@ -13,6 +13,7 @@ This page provides a complete list of all Adobe AEM Cloud Services support resou
 * [Notable Changes to AEM Sites as a Cloud Service](sites-cloud-changes.md)
 * [Authoring quick start guide](authoring/getting-started/quick-start.md)
 * [Publishing Pages](authoring/fundamentals/publishing-pages.md)
+* [Authoring with Edge Delivery Services](/help/edge/overview.md)
 * [Authoring Responsive Layout](authoring/features/responsive-layout.md)
 * [Authoring Templates](authoring/features/templates.md)
 * [Using Experience Fragments](authoring/fundamentals/experience-fragments.md)
@@ -39,7 +40,7 @@ This page provides a complete list of all Adobe AEM Cloud Services support resou
 
 ## Other Experience Manager Resources {#other-resources}
 
-* [Recent Documentation Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en) 
+* [Recent Documentation Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) 
 * [Dispatcher Documentation](/help/implementing/dispatcher/overview.md)
 * [HTL Documentation](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Core Components Documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)

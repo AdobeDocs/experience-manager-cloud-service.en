@@ -1,6 +1,7 @@
 ---
-title: Create and use themes to stylize an Adaptive Form
-description: You can use themes to stylize and provide a visual identity to an Adaptive Form. You can share a theme across any number of Adaptive Forms.
+title: How can we create and use themes to style an adaptive form?
+description: Use Adaptive Form themes to style and provide a visual identity to an Adaptive Form. You can share a theme across any number of Adaptive Forms.
+feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 ---
 # Creating and using themes {#creating-and-using-themes}
@@ -358,7 +359,7 @@ When you select a component in the Canvas, you see the component toolbar on top 
 * **[!UICONTROL Numeric Box Widget]**: Lets you select the component to customize its look in sidebar.
 * **[!UICONTROL Field Widget]**: Lets you select the generic component for styling. In this example, all text input components (text box/numeric box/numeric stepper/date input) are selected for styling.
 
-* ![field-level](assets/select_parent_icon.svg): Lets you select the parent component for styling. If you select numeric box and tap this icon, field component is selected. If you select field component and tap this icon, panel is selected. If you keep tapping this icon for selection, you end up selecting the layout for styling.
+* ![field-level](assets/select_parent_icon.svg): Lets you select the parent component for styling. If you select numeric box and select this icon, field component is selected. If you select field component and select this icon, panel is selected. If you keep tapping this icon for selection, you end up selecting the layout for styling.
 
 >[!NOTE]
 >
@@ -584,7 +585,7 @@ To copy a theme, perform the following steps:
 
 1. In authoring instance, navigate to **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Themes]**.
 1. Open the Theme Library folder.
-1. In the Theme Library folder, hover pointer over the corresponding out-of-the-box theme and tap **[!UICONTROL Copy]**.
+1. In the Theme Library folder, hover pointer over the corresponding out-of-the-box theme and select **[!UICONTROL Copy]**.
 1. Paste the copied theme outside the Theme Library folder.
 1. Customize the copied theme.
 
@@ -647,7 +648,7 @@ You can see the generated CSS using the following options:
 
     * **Theme Editor:**
 
-      The Theme Editor lets you create themes to style your form <!-- or interactive communication -->. You can specify styling of components in a theme, that enable consistency in look and feel among multiple forms <!-- or interactive communications --> you develop. Specifying styling information in a theme, and then applying the theme to a form is recommended.
+      The Theme Editor lets you create themes to style your form <!-- or interactive communication -->. You can specify styling of components in a theme, that enable consistency in look and feel among multiple forms you develop. Specifying styling information in a theme, and then applying the theme to a form is recommended.
 
     * **Inline styling:**
 
@@ -665,3 +666,8 @@ You can see the generated CSS using the following options:
 
   Use theme editor if you want to style header and footer using styling options such as font style, background, and transparency.
   If you want to provide information such as a logo image, company name in header, and copyright information in the footer, use the form editor options.
+
+
+## See Also {#see-also}
+
+{{see-also}}

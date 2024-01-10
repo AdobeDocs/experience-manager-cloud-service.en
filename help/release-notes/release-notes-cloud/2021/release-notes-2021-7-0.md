@@ -9,7 +9,7 @@ The following section outlines the general Release Notes for the current (latest
 
 >[!NOTE]
 >
->From here, you can navigate to release notes of previous versions; for example, for those in 2020, 2021 and so on.
+>From here, you can navigate to release notes of previous versions; for example, for those in 2020 and 2021.
 
 >[!NOTE]
 >
@@ -28,8 +28,8 @@ Have a look at the [July 2021 Release Overview](https://video.tv.adobe.com/v/335
 
 ### What's New {#what-is-new-foundation}
 
-* More flexible dispatcher configuration: Projects can be more easily organized. For example, you can now include multiple rewrite rule files that reflect your site structure. [Learn about](/help/implementing/dispatcher/disp-overview.md#validation-debug) this flexible mode, including how to structure your dispatcher configuration so you can take advantage of it.
-* The tree replication UI under the replication agent's "Distribute" tab should be considered deprecated and is planned to be removed after September 30. [Learn about](/help/operations/replication.md#tree-activation) alternative replication strategies.
+* More flexible Dispatcher configuration: Projects can be more easily organized. For example, you can now include multiple rewrite rule files that reflect your site structure. [Learn about](/help/implementing/dispatcher/disp-overview.md#validation-debug) this flexible mode, including how to structure your Dispatcher configuration so you can take advantage of it.
+* The tree replication UI under the replication agent's "Distribute" tab should be considered deprecated and was removed after September 30, 2021. [Learn about](/help/operations/replication.md#tree-activation) alternative replication strategies.
 * Bundle `org.apache.sling.datasource-1.0.4.jar` for Sling datasource support has been removed, as it has outdated functionality and is not in use by customers.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -38,11 +38,11 @@ Have a look at the [July 2021 Release Overview](https://video.tv.adobe.com/v/335
 
 * Content Automation functionality lets [!DNL Experience Manager Assets] use the [!DNL Adobe Creative Cloud] APIs to automate asset production at scale. It improves content velocity by dramatically decreasing the time taken and iterations required to create variations of the same asset. The functionality does not require any programming and works from within the DAM. See [generate variations of assets using Creative Cloud integration](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] includes the [!DNL Document Cloud] PDF Viewer to preview PDF documents natively. This feature lets users preview multi-page PDF files without any file processing or conversion. This feature improves the parity with [!DNL Experience Manager] 6.5. The controls available in the viewer include zoom, navigate to pages, undock controls, and to view in full screen. Users case also preview and jump to pages and bookmarks. Comments on the file itself are supported. Commenting and annotations on content within the PDF file will be added in a future release.
+* [!DNL Experience Manager Assets] includes the [!DNL Document Cloud] PDF Viewer to preview PDF documents natively. This feature lets users preview multi-page PDF files without any file processing or conversion. This feature improves the parity with [!DNL Experience Manager] 6.5. The controls available in the viewer include zoom, navigate to pages, undock controls, and to view in full screen. Users can also preview and jump to pages and bookmarks. Comments on the file itself are supported. Commenting and annotations on content within the PDF file are planned for a future release.
 
   ![Preview PDF files in [!DNL Experience Manager] using PDF Viewer](/help/assets/assets/preview-pdf-file-viewer.png)
 
-* The Linkshare download functionality uses asynchronous downloads that boost the download speed. See [Download assets shared using link sharing](/help/assets/download-assets-from-aem.md#link-share-download).
+* The Link share download functionality uses asynchronous downloads that boost the download speed. For more information, see [Download assets shared using link sharing](/help/assets/download-assets-from-aem.md#link-share-download).
 
    ![Download inbox](/help/assets/assets/download-inbox.png)
 
@@ -67,7 +67,7 @@ Have a look at the [July 2021 Release Overview](https://video.tv.adobe.com/v/335
   ![Add metadata schema from folder properties](/help/assets/assets/metadata-schema-folder-properties.png)
 -->
 
-* When you share digital assets as a link, users can copy the URL to clipboard. The enhancement lets you share assets in a faster and more convenient way.
+* When you share digital assets as a link, users can copy the URL to the clipboard. The enhancement lets you share assets in a faster and more convenient way.
 
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
@@ -77,8 +77,8 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
 
 ### What is new in [!DNL Forms] {#what-is-new-forms}
 
-* You can now use Automated Forms Conversion service to [convert PDF Forms in French, German, and Spanish language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to adaptive forms.
-* Added a separate panel to template editor to display errors related to adaptive form components. It helps consolidate all adaptive form errors at one location and reduce resolution time.
+* You can now use the Automated Forms Conversion service to [convert PDF Forms in French, German, and Spanish language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to adaptive forms.
+* Added a separate panel to the template editor to display errors related to adaptive form components. It helps consolidate all adaptive form errors at one location and reduce resolution time.
 
 ### New features available in [!DNL Forms] prerelease channel {#beta-features-forms}
 
@@ -89,9 +89,9 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
 
 * **Variable Data Externalizer**: You can save data of AEM Workflow variables on an external storage system managed by your organization.
 
-* **Acroform-based Document of Record**: You can also [use Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) as a template for Document of Record besides XFA-based form template.
+* **Acroform-based Document of Record**: You can also [use Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) as a template for Document of Record besides XFA-based form template.
 
-* **Microsoft Azure data store connector**: You can now [connect Form Data Model to Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). It lets you retrieve and store adaptive form data to Microsoft Azure Storage as a BLOB.  
+* **Microsoft&reg; Azure data store connector**: You can now [connect Form Data Model to Microsoft&reg; Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). It lets you retrieve and store adaptive form data to Microsoft&reg; Azure Storage as a BLOB.  
 
 ## CIF Add-on {#cloud-services-cif}
 
@@ -108,9 +108,9 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
 
 ### Bug Fixes {#bug-fixes-screens}
 
-* Content Provider settings are now validated during create or update.
+* Content Provider settings are now validated during creation or update.
 
-* All displays views have folders column.
+* All display views have folders column.
 
 * You can expand Screens Content Structure.
 
@@ -118,21 +118,21 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
 
 * Updated Help link to match the new screens cloud documentation.
 
-* Un-assign playlists and disallow removing playlist(s) with player(s) assigned, now works.
+* Unassign playlists and disallow removing playlists with players assigned, now works.
 
-* Player now re-downloads Assets when "ALL" Cache is cleared.
+* The player now redownloads Assets when "ALL" Cache is cleared.
 
-* Repeat Scheduling now works, if the *End Time* is set for following day.
+* Repeat Scheduling now works, if the *End Time* is set for the following day.
 
 * `Back&Forward` now works in Screens as  a Cloud Service UI.
 
-* Tags with same name but different namespaces could not be created earlier.
+* Tags with the same name but different namespaces could not be created earlier.
 
 ## XML Documentation for Experience Manager as a Cloud Service {#xml-documentation}
  
 ### What is New {#what-is-new-xml-documentation}
  
-XML Documentation for Experience Manager as a Cloud Service is generally available. It allows Experience Manager as a Cloud Service customers to procure XML Documentation addon to import, create, manage, and deliver technical content across multiple channels including Experience Manager Sites.
+XML Documentation for Experience Manager as a Cloud Service is generally available. It allows customers of Experience Manager as a Cloud Service to procure an XML Documentation add-on to import, create, manage, and deliver technical content across multiple channels including Experience Manager Sites.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -145,35 +145,35 @@ The next release is planned for August 12, 2021.
 
 ### What's New {#what-is-new-cm-july}
 
-* Customers are now able to use Azul 8 and 11 JDKs for their Cloud Manager build processes and can either select to use one of these JDKs for toolchains-compatible Maven plugins *or* the entire Maven process execution.
+* Customers can now use Azul 8 and 11 JDKs for their Cloud Manager build processes and can either select to use one of these JDKs for toolchains-compatible Maven plugins *or* the entire Maven process execution.
 
-* The outbound egress IP will now be logged in the build step log file. 
+* The outbound egress IP is now logged in the build step log file. 
 
-* Stage and Production environments running old versions of AEM will now report a status of **Update Available**. 
+* Stage and Production environments running old versions of AEM now reports a status of **Update Available**. 
 
 * The maximum SSL certificates supported has increased to 20 per program.
 
 * The maximum number of domains that can be configured has increased to 500 per environment.
 
-* The **Manage Git** buttons has been retitled to **Access Git Info** and the dialog has been visually refreshed.
+* The **Manage Git** button has been retitled to **Access Git Info** and the dialog box has been visually refreshed.
 
 * The version of the AEM Project Archetype used by Cloud Manager has been updated to version 28.
 
 ### Bug Fixes {#bug-fixes-cm-july}
 
-* In some situations, Preview was not an available option when binding an IP Allow List to an environment.
+* In some situations, Preview was not an available option when binding an IP allowlist to an environment.
 
 * Manually navigating to the execution details page for a non-existing execution did not show an error, just an endless loading screen.
 
-* The error message shown when the maximum number of SSL certificates was reached was not helpful.
+* The error message shown when the maximum number was reached of SSL certificates was not helpful.
 
 * In some circumstances, there could be a discrepancy in the release version shown in the pipeline card on the **Overview** page.
 
-* Add program wizard incorrectly stated that name cannot be changed after creation. 
+* Add program wizard incorrectly stated that the name cannot be changed after creation. 
 
 ### Known Issues {#known-issues-cm-july}
 
-Customers switching to use the Azul JDKs should be aware that not all existing applications will compile without error on Azul JDK. It is highly recommended to test locally before switching.
+Customers switching to use the Azul JDKs should know that not all existing applications compile without error on the Azul JDK. Adobe recommends that you test locally before switching.
 
 ## Cloud Acceleration Manager {#cam}
 
@@ -183,8 +183,8 @@ The Release Date for Cloud Acceleration Manager is July 15, 2021.
  
 ### What is New {#what-is-new-cam}
 
-Cloud Acceleration Manager is a cloud-based application designed to guide your IT teams throughout the transition journey starting from planning to going live on Cloud Service. Set up your teams for a successful migration with Adobe-recommended best practices, tips, documentation, and tools to help at every phase of the journey to AEM as Cloud Service. Learn more [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+Cloud Acceleration Manager is a cloud-based application designed to guide your IT teams throughout the transition journey starting from planning to going live on Cloud Service. Set up your team for a successful migration with Adobe-recommended best practices, tips, documentation, and tools to help at every phase of the journey to AEM as Cloud Service. Learn more [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html).
 
 >[!NOTE]
 >
-> Check this [Cloud Acceleration Manager demo video](https://video.tv.adobe.com/v/335547).
+> Check out this [Cloud Acceleration Manager demo video](https://video.tv.adobe.com/v/335547).

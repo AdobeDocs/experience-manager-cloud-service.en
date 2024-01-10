@@ -16,7 +16,7 @@ A sandbox program is one of the two types of programs available in AEM Cloud Ser
 
 ## Auto-Creation {#auto-creation}
 
-Sandbox programs feature auto-creation. Whenever you create a new sandbox program Cloud Manager automatically:
+Sandbox programs feature auto-creation. Whenever you create a sandbox program, Cloud Manager automatically:
 
 * Adds AEM Sites and AEM Assets as solutions in your program.
 * Sets up a project git repository with a sample project based on the [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)

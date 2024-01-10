@@ -46,7 +46,7 @@ You want to drive a consistent experience and manage personalized campaigns acro
 
 Instead, you should consider how content on different surfaces is related based on organizing principle such as brand and product hierarchies, categories of goods or surfaces, or steps in the customer journey. For example, if you have a set of surfaces that support a specific brand of cars you manufacture, you may want to start with a content model for general information that would be true for the entire car and then have more - specific elements such as content needed when the car is starting up to when there are service issues. Such a model will enforce inheritance of general car brand content while allow for shifts based on specific context needed. It also helps with future management of updates to this content as you can enforce control based on roles such as the overall marketer or product manager for the entire car brand vs an author who is responsible for the "starting car" experience.
 
-Once you have the content model and clear view on the various clients the content needs to be surfaced to, you need to ensure the GraphQL/APIs associated with accessing various of the content model are published to all the clients who need this content. There are different options of how to access certain content. You can request for a specific piece of content that is static which enables caching of the content and higher performance. You can also request content that is dynamically generated which will require more processing. Ensure that clients are leveraging the APIs that are most efficient for their business need.
+After you have the content model and a clear view on the various clients the content must be surfaced to, you need to ensure the GraphQL/APIs associated with accessing various of the content model are published to all the clients who need this content. There are different options of how to access certain content. You can request for a specific piece of content that is static which enables caching of the content and higher performance. You can also request content that is dynamically generated which will require more processing. Ensure that clients are using the APIs that are most efficient for their business need.
 
 ## Understanding Your Environments {#understanding-environments}
 
@@ -62,9 +62,9 @@ During the development stage, it is recommended you work with a development and 
 
 ### Cooperation of Developers and Content Authors {#cooperation}
 
-Developers need an AEM development environment set up with the populated content models. The developer develops the client that will consume content from AEM headless as the content authors are still creating the content. That is why the API definitions are really important. By leveraging the AEM SDK, the developer can create a test hook so client and unit tests can be created to make sure the client is able to properly render the content.
+Developers need an AEM development environment set up with the populated content models. The developer develops the client that will consume content from AEM headless as the content authors are still creating the content. That is why the API definitions are really important. By using the AEM SDK, the developer can create a test hook so client and unit tests can be created to make sure the client is able to properly render the content.
 
-Content authors create content based on the content models that have been defined on the staging environment. Using the content fragment authoring tool, the author would create a new content fragment or edit an existing content fragment. Before publishing it, the author can preview how it will look in the client by working with the developer to push the content model onto development or set up a developer environment just for authors to preview how it would look in the client.
+Content authors create content based on the content models that have been defined on the staging environment. Using the content fragment authoring tool, the author would create a content fragment or edit an existing content fragment. Before publishing it, the author can preview how it will look in the client by working with the developer to push the content model onto development or set up a developer environment just for authors to preview how it would look in the client.
 
 ## Setup {#setup}
 
@@ -88,7 +88,7 @@ This is an overview of what is needed to implement your first headless app using
 
 ## Best Practices {#best-practices}
 
-A headless project is not only successful because of the technology implemented, but also due to good planning and project governance. The following are a number of best practices for both content authors and developers to keep in mind as you plan your project.
+A headless project is not only successful because of the technology implemented, but also due to good planning and project governance. The following are several best practices for both content authors and developers to keep in mind as you plan your project.
 
 ### Organizing Your Content {#organizing-content}
 
@@ -98,14 +98,14 @@ A headless project is not only successful because of the technology implemented,
 * If you have access restrictions try to align your content model with the access requirements.
 * When you have access requirements, they should drive your content hierarchy. Group content together which is edited by the same group of people.
 * Group similar content into a folder.
-  * It's more likely a content author will copy and paste exiting content to create new content. Therefore having this done in the same folder makes it more efficient.
+  * It is more likely a content author will copy and paste exiting content to create new content. Therefore having this done in the same folder makes it more efficient.
   * AEM permits allowed models to be set per folder so the **Create new** button will only show the models that are supported in that location.
-* In-line Content Fragment editor creation of new Content Fragments can be simplified if the root folder is set in the model. Then the practitioner does not have to choose a location, but just needs to provide a name and can start edit the new reference.
+* In-line Content Fragment editor creation of new Content Fragments can be simplified if the root folder is set in the model. Then the practitioner does not have to choose a location, but just provide a name and can start edit the new reference.
 
 ### Authoring Content {#authoring}
 
-* For channel-specific versions of your content, consider using content fragment variations. Variations are synchronized against the content master to streamline content change management.
-* Invite other content producers to review content and give feedback with annotations and comments, which are available within the content fragment editor and globally across fragments in content fragments Admin Console.
+* For channel-specific versions of your content, consider using content fragment variations. Variations are synchronized against the main content to streamline content change management.
+* Invite other content producers to review content and give feedback.
 * Keep things moving with as few mandatory elements as possible. Mandatory elements can block the workflow.
 
 ### Authoring Global Content {#localization}
@@ -138,11 +138,12 @@ While it is recommended that you move on to the next part of the headless develo
 
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
 * [Headless Development for AEM Sites as a Cloud Service](/help/headless/introduction.md) - A quick introduction to orient the AEM Headless developer with the necessary features
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use these hands-on tutorials to explore how to use the various options for delivering content to headless endpoints with AEM and chose what's right for you.
 * [Headless Content Management Using GraphQL APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - Follow this course for an overview of the GraphQL API implemented in AEM. Authentication via AdobeID is required.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) -  This GitHub project includes example applications that highlight AEM's GraphQL APIs.
 * [Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - A complete overview of AEM's architecture
 * [Headless Setup](/help/headless/introduction.md#getting-started) - A quick introduction to AEM's headless features for users already knowledgeable of AEM.
-* [Create Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - Technical documentation on Content Fragment Models
-* [Create Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Technical documentation on Content Fragments
+* [Create Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - Technical documentation on Content Fragment Models
+* [Create Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - Technical documentation on Content Fragments
 * [Query content with GraphQL](/help/headless/graphql-api/content-fragments.md) - Technical documentation on the GraphQL API

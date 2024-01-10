@@ -1,11 +1,11 @@
 ---
 title: Managing Content Fragments (Assets - Content Fragments)
-description: Learn how to use the Assets console to manage your AEM Content Fragments, the basis of your headless content.
+description: Learn how to use the Assets console to manage your AEM Content Fragments, as either the basis of your headless content or for page authoring.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 ---
 # Managing Content Fragments {#managing-content-fragments}
 
-Learn how to use the Assets console to manage your AEM Content Fragments, the basis of your headless content.
+Learn how to use the Assets console to manage your AEM Content Fragments, as either the basis of your headless content or for page authoring.
 
 After defining your [Content Fragment Models](#creating-a-content-model) you can use these to [create your Content Fragments](#creating-a-content-fragment).
 
@@ -28,7 +28,11 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 
 >[!NOTE]
 >
->Content Fragments are stored as **Assets**. They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** console, though they can still be managed from the **Assets** console. This section covers management from the **Assets** console.
+>Content Fragments are a Sites feature, but are stored as **Assets**. 
+>
+>They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** console, though they can still be managed from the **Assets** console. This section covers management from the **Assets** console.
+>
+>There are two editors for authoring Content Fragments. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console). Both editors have a toggle switch in the top toolbar to provide quick access to the other editor.
 
 ## Creating Content Fragments {#creating-content-fragments}
 
@@ -44,7 +48,7 @@ The method of creating a content fragment is:
 1. Select **Create**, then **Content Fragment** to open the wizard.
 1. The first step of the wizard requires you to specify the basis of the new fragment.
 
-      * [Model](/help/assets/content-fragments/content-fragments-models.md) - used to create a fragment that requires structured content; for example the **Adventure** model
+      * [Model](/help/assets/content-fragments/content-fragments-models.md) - used to create a fragment that requires structured content; for example, the **Adventure** model
 
         * All available models are displayed.
 
@@ -131,7 +135,7 @@ To open your fragment for editing:
    * Clicking/tapping on the fragment or fragment link (this is dependent on the console view).
    * Selecting the fragment, then **Edit** from the toolbar.
 
-1. The fragment editor will open. Make your changes as required:
+1. The fragment editor opens. Make your changes as required:
 
    ![Fragment editor](assets/cfm-managing-03.png)
 
@@ -139,7 +143,7 @@ To open your fragment for editing:
 
    >[!NOTE]
    >
-   >**Save & close** is available via the **Save** dropdown.
+   >**Save & close** is available by way of the **Save** drop-down list.
 
    >[!NOTE]
    >
@@ -175,7 +179,7 @@ Some features in the top toolbar are available from multiple modes:
 
 * Underneath the fragment name you can see the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) used for creating the current fragment:
 
-  * The name is also a link that will open the model editor.
+  * The name is also a link that opens the model editor.
 
 * See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
 
@@ -184,6 +188,12 @@ Some features in the top toolbar are available from multiple modes:
   * **Published**: green
   * **Modified**: orange
   * **Deactivated**: red
+
+* A button enables you to **Try New Editor**, by directly opening the *new* [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md) that is accessible via the [Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+
+  >[!WARNING]
+  >
+  >The new editor opens in the same tab. It is not recommended to have both editors open at the same time.
 
 * **Save** provides access to the **Save & close** option.
   
@@ -303,7 +313,7 @@ For example:
 
 The **Compare to Current** action is available from the [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) after you have selected a specific version.
 
-This will open:
+This opens:
 
 * the **Current** (latest) version (left)
 

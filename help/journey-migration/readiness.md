@@ -43,7 +43,7 @@ The list of items in the below table is the subset of the changes most relevant 
 <tbody>
   <tr>
     <td>Separate Mutable and Immutable Filters into corresponding packages</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=en">AEM as a Cloud Service Notable Changes</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEM Project Structure for AEM as a Cloud Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html">AEM as a Cloud Service Notable Changes</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEM Project Structure for AEM as a Cloud Service</a></td>
     <td>A single package that can be deployed into AEM as a Cloud Service can have sub packages, primarily to contain mutable and immutable content separated into their own packages.</td>
   </tr>
   <tr>
@@ -74,7 +74,7 @@ The list of items in the below table is the subset of the changes most relevant 
   <tr>
     <td>Built in CDN and Get your own CDN</td>
     <td></td>
-    <td>AEM as a Cloud Service includes the CDN for all environments which is optimized for most use cases.<br>If you wish to set up your own CDN, you must submit a request to Adobe Support for it to be approved.<br>If it is approved, the CDN points to Fastly and not to AEM instances in any environments.</td>
+    <td>AEM as a Cloud Service includes the CDN for all environments which is optimized for most use cases.<br>If you want to set up your own CDN, you must submit a request to Adobe Support for it to be approved.<br>If it is approved, the CDN points to Fastly and not to AEM instances in any environments.</td>
   </tr>
   <tr>
     <td>Long Running Jobs</td>
@@ -83,12 +83,12 @@ The list of items in the below table is the subset of the changes most relevant 
   </tr>
   <tr>
     <td>Switch to Asynchronous Operations</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">Configuring Asynchronous Operations</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html#configuring-asynchronous-msm-operations">Configuring Asynchronous Operations</a></td>
     <td>To improve the overall performance of your environments, certain operations are run in async mode. The async jobs are queued and run when system resources are available.</td>
   </tr>
   <tr>
     <td>Token-based authentication and integration strategies</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#the-server-to-server-flow">Generating Access Tokens for Server-side APIs</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication">Token-based Authentication Tutorial</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow">Generating Access Tokens for Server-side APIs</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication">Token-based Authentication Tutorial</a></td>
     <td>It is common that systems external to AEM are trying to perform HTTP operations within AEM.<br>The recommended approach is to implement the strategies outlined here rather than relying on creating local usernames with passwords in AEM.</td>
   </tr>
   <tr>
@@ -98,32 +98,32 @@ The list of items in the below table is the subset of the changes most relevant 
   </tr>
   <tr>
     <td>DAM Update Asset Workflow</td>
-    <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html?lang=en">Asset Compute Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html">Asset Compute Service</a></td>
     <td>The media processing steps that are part of DAM Update Asset workflow are now replaced by the Asset Compute Service</td>
   </tr>
   <tr>
     <td>Asset upload methods and supported workflow process steps in AEM as a Cloud Service</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html?lang=en#post-processing-workflows-steps">Upload API Comparisons and Supported WF Process Steps</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html#post-processing-workflows-steps">Upload API Comparisons and Supported WF Process Steps</a></td>
     <td>In AEM as a Cloud Service, either during upload or download of an asset the asset streams directly in or out of binary storage. <br>Not all workflow process steps are supported in AEMaaCS.</td>
   </tr>
   <tr>
     <td>Workflow Launchers</td>
     <td></td>
-    <td>Remove any Workflow Launchers that are triggering either out-of-the-box or custom DAM Update Asset Workflow from your code. <br>All the assets uploaded into AEM as a Cloud Service are going to be processed by the Asset Processing Service. For custom steps, see <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> Post Processing Workflows</a> on how to setup and configure post-processing workflows.</td>
+    <td>Remove any Workflow Launchers that are triggering either out-of-the-box or custom DAM Update Asset Workflow from your code. <br>All the assets uploaded into AEM as a Cloud Service are going to be processed by the Asset Processing Service. For custom steps, see <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows"> Post Processing Workflows</a> on how to setup and configure post-processing workflows.</td>
   </tr>
   <tr>
     <td>Custom Rendition Steps</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en">Processing Profiles</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html">Processing Profiles</a></td>
     <td>Any custom rendition generation, image conversions, or video encodings must be offloaded to the Asset Processing Service by creating corresponding processing profiles.</td>
   </tr>
   <tr>
     <td>Content Search and Indexing</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=en">Content Search and Indexing Changes</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html">Content Search and Indexing Changes</a></td>
     <td>There are considerable changes to the underlying processing of indexes and when it is kicking in.<br>Completely understand and refactor the Oak Indexes before managing them in the code that you deploy.</td>
   </tr>
   <tr>
     <td>Not all maintenance tasks are configurable</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html?lang=en">AEM as a Cloud Service Maintenance Tasks</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html">AEM as a Cloud Service Maintenance Tasks</a></td>
     <td>You can configure only certain maintenance tasks with AEM as a Cloud Service.</td>
   </tr>
   <tr>
@@ -133,17 +133,17 @@ The list of items in the below table is the subset of the changes most relevant 
   </tr>
   <tr>
     <td>Dispatcher Configurations and Caching</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en">Dispatcher in the Cloud</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=en#other-content">Cache Management<br></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html">Dispatcher in the Cloud</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content">Cache Management<br></td>
     <td>The Dispatcher configurations must follow a specific structure.<br>The configurations must be managed as part of code and deployed through the Cloud Manager pipeline.</td>
   </tr>
   <tr>
     <td>Back up and Restore</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html?lang=en">AEM as a Cloud Service Backup and Restore</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html">AEM as a Cloud Service Backup and Restore</a></td>
     <td></td>
   </tr>
   <tr>
     <td>Changes to Authentication</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">IMS Support for AEM as a Cloud Service</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html">IMS Support for AEM as a Cloud Service</td>
     <td>If you were previously using SAML 2.0 integration on both author and publish before moving to Cloud Service, the main change is that AEM as a Cloud Service Author only integrates with Adobe IMS. However, AEM as a Cloud Service Publish tier can still use SAML or other authentication integrations. AEM as a Cloud Service offers IMS authentication support only for Author, Admin, and Dev users. The IMS authentication does not offer support for external end users of customer sites like site visitors.</td>
   </tr>
 </tbody>
