@@ -37,6 +37,7 @@ Summarized below are the continuous improvements for maintenance release 14813, 
 * ASSETS-31038: Add user mapping for eventrecorderhelper.
 * ASSETS-30068: New status COMPLETED_WITH_ERROR for bulk import AE.
 * ASSETS-31297: Prevent deletion of copied assets from dynamic media.
+* GRANITE-49031: Regression resulting in `@JsonIgnore` annotation being ignored on transient fields.
 
 ### Known Issues {#known-issues-14813}
 
