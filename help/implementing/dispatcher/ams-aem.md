@@ -10,7 +10,7 @@ exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
 
 The Apache and Dispatcher configuration in AEM as a Cloud Service is quite similar to the AMS one. The main differences are:
 
-* In AEM as a Cloud Service, some Apache directives may not be used (for example `Listen` or `LogLevel`)
+* In AEM as a Cloud Service, some Apache directives may not be used (for example, `Listen` or `LogLevel`)
 * In AEM as a Cloud Service, only some pieces of the Dispatcher configuration can be put in include files and their naming is important. For example, filter rules that you want to reuse across different hosts must be put in a file called `filters/filters.any`. See the reference page for more information.
 * In AEM as a Cloud Service there is extra validation to disallow filter rules written using `/glob` to prevent security issues. Because `deny *` is used rather than `allow *` (which cannot be used), customers benefit from running the Dispatcher locally and doing trial and error, looking at the logs to know exactly what paths the Dispatcher filters are blocking in order for those can be added.
 
@@ -97,7 +97,7 @@ Run the Dispatcher validator in your directory, with the `httpd` subcommand:
 $ validator httpd .
 ```
 
-If you see errors about missing include files, check whether you correctly renamed those
+If you see errors that are about missing include files, check whether you correctly renamed those
 files.
 
 If you see Apache directives that are not allowlisted, remove them.
@@ -110,7 +110,7 @@ linked to can be removed as well.
 
 ### Rename farm files
 
-All farms in `conf.d/enabled_farms` must be renamed to match the pattern `*.farm`, so for example, a 
+All farms in `conf.dispatcher.d/enabled_farms` must be renamed to match the pattern `*.farm`, so for example, a 
 farm file called `customerX_farm.any` should be renamed `customerX.farm`. 
 
 ### Check cache
@@ -253,7 +253,7 @@ Run the AEM as a Cloud Service Dispatcher validator in your directory, with the 
 $ validator dispatcher .
 ```
 
-If you see errors about missing include files, check whether you correctly renamed those
+If you see errors that are about missing include files, check whether you correctly renamed those
 files.
 
 If you see errors concerning undefined variable `PUBLISH_DOCROOT`, rename it to `DOCROOT`.

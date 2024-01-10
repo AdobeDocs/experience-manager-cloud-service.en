@@ -7,7 +7,7 @@ exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 
 The Components Console lets you browse through all components defined for your instance and view key information for each component.
 
-It can be accessed from **Tools -&gt;** **General -&gt;** **Components**. Because there is no tree structure for components, only list view is available.
+It can be accessed from **Tools &gt;** **General &gt;** **Components**. Because there is no tree structure for components, only list view is available.
 
 ![The Components Console](/help/sites-cloud/authoring/assets/components-console.png)
 
@@ -23,7 +23,7 @@ With the **Content Only** icon (top left) you can open the **Search** panel to s
 
 ### Component Details {#component-details}
 
-To view details about a specific component tap/click on the required resource. Three tabs provide:
+To view details about a specific component select the required resource. Three tabs provide:
 
 * **Properties**
 

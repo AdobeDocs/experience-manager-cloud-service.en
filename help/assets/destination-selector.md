@@ -3,8 +3,8 @@ title: Destination Selector for AEM as a Cloud Service
 description: Use the AEM Destination Selector to show and select assets that you can use as a copy of the original asset.
 contentOwner: Adobe
 role: Admin,User
+exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 ---
-
 # Micro-Frontend Destination Selector {#Overview}
 
 Micro-Frontend Destination Selector provides a user interface within your application that easily integrates with the [!DNL Experience Manager Assets as a Cloud Service] repository. You can search or browse to the appropriate folder within the [!DNL Experience Manager Assets as a Cloud Service] repository and upload assets from your application.
@@ -19,7 +19,7 @@ Destination Selector provides many benefits, such as:
 * Easy to maintain as updates to the Destination Selector package are automatically deployed to the Destination Selector available for your application. There are no updates required within your application to load the latest modifications.
 * Ease of customization as there are properties available that control the Destination Selector display within your application.
 * Full-text search to quickly navigate to folders to upload assets from your application.
-*   Ability to create folders, sort folders in ascending or descending order, and view them in List, Grid, Gallery, or Waterfall view.
+* Ability to create folders, sort folders in ascending or descending order, and view them in List, Grid, Gallery, or Waterfall view.
 
 The scope of this article is to demonstrate how to use Destination Selector with an [!DNL Adobe] application under Unified Shell or when you already have an imsToken generated for authentication. These workflows are referred to as non-SUSI flow in this article.
 
@@ -209,7 +209,7 @@ You can define the Destination Selector [properties](#destination-selector-prope
 
 ### Example 1: Create a folder in Destination Selector
 
-Destination Selector lets you create a new folder to upload, move, or copy assets at the particular location.
+Destination Selector lets you create a folder to upload, move, or copy assets at the particular location.
 
    ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -256,9 +256,9 @@ Destination Selector also lets you view data of repository of your choice availa
 
 It is an example of the `optionsFormSetup` property. You can use this to confirm the selection, it is passed on the `onConfirm` event. 
 
-### Create a new folder {#create-new-folder}
+### Create a folder {#create-new-folder}
 
-It lets you create a new folder in the destination folder of your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+It lets you create a folder in the destination folder of your [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ### Types of view {#types-of-view}
 
@@ -271,7 +271,7 @@ Destination Selector lets you view the asset in four different views:
 
 ### Info {#info}
 
-The information or info icon lets you view metadata of the selected asset. It includes various details such as dimensions, size, description, path, date modified, and date created. The metadata information is provided while uploading or copying or creating a new asset.
+The information or info icon lets you view metadata of the selected asset. It includes various details such as dimensions, size, description, path, date modified, and date created. The metadata information is provided while uploading or copying or creating an asset.
 
 ### Select folder {#select-folder}
 

@@ -27,7 +27,7 @@ Clicking on the parent category will take the author back to the product level.
 
 ![Teaser component without selection](../assets/authoring/teaser_component_without_selection.png)
 
-The configuration dialog of this component requires a product. CIF uses the SKU as the product identifier. Authors can either enter the sku by hand or click on the folder icon to open the product picker. After selecting and closing the picker, the component dialog shows the name of the selected product
+The configuration dialog of this component requires a product. CIF uses the SKU as the product identifier. Authors can either enter the sku by hand or click the folder icon to open the product picker. After selecting and closing the picker, the component dialog shows the name of the selected product
 
 ![Teaser component with selection](../assets/authoring/teaser_component_with_selection.png)
 
@@ -41,7 +41,7 @@ This picker offers browsing through the catalog structure to find the category.
 
 ![Carousel component without selection](../assets/authoring/carousel_component_without_selection.png)
 
-The configuration dialog of this component requires 1 : n categories. CIF uses the UID / ID as the category identifier. Authors can either enter the UID by hand or click on the folder icon to open the category picker. After selecting and closing the picker, the component dialog shows the name of the selected category.
+The configuration dialog of this component requires 1 : n categories. CIF uses the UID / ID as the category identifier. Authors can either enter the UID by hand or click the folder icon to open the category picker. After selecting and closing the picker, the component dialog shows the name of the selected category.
 
 ![Carousel component with selection](../assets/authoring/carousel_component_with_selection.png)
 
@@ -71,7 +71,7 @@ This creates a placeholder link that gets replaced with a real link when the pag
 
 ### Accessing Associated Product Content {#associated-content}
 
-If the Universal Editor recognizes 1:n products on a page, the side panel will automatically show the tab "Associated Commerce Content". This tab allows authors to quickly access AEM content that was tagged with the product (See [enrich product data with associated AEM content](./enrich-product-associated-content.md) for more information). This tab offers dropdowns to filter for content type and specific products if multiple products are on the page. Using the content works exactly like using content from the "Assets" tab.
+If the Universal Editor recognizes 1:n products on a page, the side panel will automatically show the tab "Associated Commerce Content". This tab allows authors to quickly access AEM content that was tagged with the product (See [enrich product data with associated AEM content](./enrich-product-associated-content.md) for more information). This tab offers drop-down lists to filter for content type and specific products if multiple products are on the page. Using the content works exactly like using content from the "Assets" tab.
 
 ![Product data side panel](../assets/authoring/associated-commerce-content-tab.png)
 

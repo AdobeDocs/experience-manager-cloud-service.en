@@ -12,10 +12,14 @@ Learn how to create user profiles in the Admin Console to manage receipt of impo
 
 ## Overview {#overview}
 
-From time-to-time, Adobe needs to contact users regarding their AEM as a Cloud Service environments. In addition to in-product notifications, Adobe also occasionally uses email for notifications. There are two types of such email notification:
+From time-to-time, Adobe contacts users regarding their AEM as a Cloud Service environments. In addition to in-product notifications, Adobe also occasionally uses email for notifications. There are two types of such email notification:
 
 * **Incident Notification** - These notifications are sent during an incident or when Adobe has identified a potential availability issue with your AEM as a Cloud Service environment.
 * **Proactive Notification** - These notifications are sent when an Adobe support team member wants to provide guidance on a potential optimization or recommendation that can benefit your AEM as a Cloud Service environment.
+
+>[!NOTE]
+>
+>Assigning groups to proactive notification is not supported. You need to assign users to the product profiles directly instead.
 
 For the correct users to receive these notifications, you need to configure and assign user profiles as described in this document.
 
@@ -28,7 +32,7 @@ Because user profiles are created and maintained in the Admin Console, before cr
 
 ## Create New Cloud Manager Product Profiles {#create-profiles}
 
-To properly set up receipt of notifications you will need to create two user profiles. These steps must only be done once.
+To properly set up receipt of notifications, create two user profiles. These steps are only done one time.
 
 1. Log in to Admin Console at [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
 
@@ -42,7 +46,7 @@ To properly set up receipt of notifications you will need to create two user pro
 
      ![List of instances in the Admin Console](assets/cloud_manager_instance.png)
 
-1. You will see the list of all configured Cloud Manager product profiles.
+1. You can see the list of all configured Cloud Manager product profiles.
 
     ![Product profiles in the Admin Console](assets/cloud_manager_profiles.png)
 
@@ -138,4 +142,4 @@ The invited user will now receive the notifications. Repeat these steps for the 
 
 The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
-* [Actions Center](/help/operations/actions-center.md) - Leverage the Actions Center to conveniently take action on incidents and other important information.
+* [Actions Center](/help/operations/actions-center.md) - Leverage the Actions Center to conveniently act on incidents and other important information.

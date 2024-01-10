@@ -25,7 +25,7 @@ Once you have [configured your production Pipeline](/help/implementing/cloud-man
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program for which you want to deploy code.
+1. Click the program for which you want to deploy code.
 
 1. Click **Deploy** from the call-to-action on the **Overview** screen to start the deployment process.
 
@@ -122,7 +122,7 @@ All Cloud Service deployments follow a rolling process to ensure zero downtime. 
 
 ## Re-Executing a Production Deployment {#reexecute-deployment}
 
-In rare cases, production deployment steps may fail for transient reasons. In such cases, re-execution of the production deployment step is supported so long as the production deployment step has completed, regardless of the type of completion (e.g. cancelled or unsuccessful). Re-execution creates a new execution using the same pipeline consisting of three steps.
+In rare cases, production deployment steps may fail for transient reasons. In such cases, re-execution of the production deployment step is supported so long as the production deployment step has completed, regardless of the type of completion (for example, cancelled or unsuccessful). Re-execution creates a new execution using the same pipeline consisting of three steps.
 
 1. The validate step - This is essentially the same validation that occurs during a normal pipeline execution.
 1. The build step - In the context of a re-execution, the build step copies artifacts and does not actually execute a new build process.
@@ -145,7 +145,7 @@ In such circumstances where a re-execution is possible, the production pipeline 
 
 ### Re-Execute API {#reexecute-API}
 
-In addition to being available in the UI, you can use [the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) to trigger re-executions as well as identify executions that were triggered as re-executions.
+In addition to being available in the UI, you can use [the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) to trigger re-executions and identify executions that were triggered as re-executions.
 
 #### Triggering a Re-Execution {#reexecute-deployment-api}
 

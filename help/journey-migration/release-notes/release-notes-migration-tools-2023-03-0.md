@@ -1,11 +1,12 @@
 ---
 title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.03.0
-description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.03.0
+description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.03.0
 feature: Release Information
+exl-id: cdc57cca-e10a-4b0d-b803-910ccc9350a6
 ---
 # Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.03.0 {#release-notes}
 
-This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.03.0.
+This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2023.03.0.
 
 ## Best Practices Analyzer {#bpa-release}
 
@@ -26,12 +27,12 @@ The Release Date for Best Practices Analyzer v2.1.40 is March 03, 2023.
 
 ### Release Date {#release-date-ctt}
 
-The Release Date for Content Transfer Tool v2.0.16 is March 08, 2022.
+The Release Date for Content Transfer Tool v2.0.16 is March 08, 2023.
 
 ### What's New {#what-is-new-ctt}
 
-* User mapping has been streamlined and integrated into the content extraction step. No setup is needed and by default user mapping is done automatically when the user initiates content extraction. The user has the option to disable user mapping if needed. Learn more [here.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=en#user-mapping-detail)
-* The precopy step using [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) has been integrated with the Content Transfer Tool to speed up content extractions significantly. Precopy is automatically configured and installed when this version of the CTT is installed. By default, when extraction is initiated, precopy will run automatically for migration sets larger than 200 GB. User has the option to disable it if needed. Learn more [here.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)
+* User mapping has been streamlined and integrated into the content extraction step. No setup is needed and by default user mapping is done automatically when the user initiates content extraction. The user has the option to disable user mapping if needed. Learn more [here.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html#user-mapping-detail)
+* The precopy step using [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) has been integrated with the Content Transfer Tool to speed up content extractions significantly. Precopy is automatically configured and installed when this version of the CTT is installed. By default, when extraction is initiated, precopy will run automatically for migration sets larger than 200 GB. User has the option to disable it if needed. Learn more [here.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)
 * CTT can now be used on Windows servers.
 
 ### Bug Fixes {#bug-fixes-ctt}

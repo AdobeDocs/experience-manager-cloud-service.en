@@ -3,9 +3,12 @@ title: Authoring Environment and Tools
 description: The authoring environment of AEM provides various mechanisms for organizing and editing your content
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 ---
+
 # Authoring Environment and Tools {#authoring-the-environment-and-tools}
 
 The authoring environment of AEM provides various mechanisms for organizing and editing your content. The tools provided are accessed from the various consoles and page editors.
+
+{{edge-delivery-authoring}}
 
 ## Managing your Site {#managing-your-site}
 
@@ -64,7 +67,7 @@ The actual appearance and handling is dependent on the device type you are using
 
   The component browser is opened at the left side of the window.
 
-  To add a component to your page click on the required component and drag it to the required location.
+  To add a component to your page, click the required component and drag it to the required location.
 
   ![Component Browser on desktop](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
@@ -81,7 +84,7 @@ The actual appearance and handling is dependent on the device type you are using
   * Filter components by name.
   * Limit the display to a specific group using the drop-down selection.
 
-  For a more detailed description of the component, you can click or tap the information icon next to the component in the **Components** browser (if available). For example, for the **Content Fragment**:
+  For a more detailed description of the component, you can select the information icon next to the component in the **Components** browser (if available). For example, for the **Content Fragment**:
 
   ![Component Browser information](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -111,7 +114,7 @@ To add an asset to your page, select and drag to the required location. This can
 
 * An existing component of the appropriate type.
   * For example, you can drag an asset of type image onto an Image component.
-* A [placeholder](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) in the paragraph system to create a new component of the appropriate type.
+* A [placeholder](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) in the paragraph system to create a component of the appropriate type.
   * For example, you can drag an asset of type image onto the paragraph system to create an Image component.
 
 >[!NOTE]
@@ -140,7 +143,7 @@ The actual appearance and handling is dependent on the device type you are using
 
   The assets browser is opened at the left side of the window.
 
-  To add an asset to your page click on the required asset and drag it to the required component or location.
+  To add an asset to your page, click the required asset and drag it to the required component or location.
 
   ![Assets Browser on desktop](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
@@ -154,13 +157,13 @@ If you need to quickly make a change to an asset, you can start the [asset edito
 
 ## Content Tree {#content-tree}
 
-The **Content Tree** gives an overview of all of the components on the page in a hierarchy so you can see at a glance how the page is composed.
+The **Content Tree** gives an overview of all the components on the page in a hierarchy so you can see at a glance how the page is composed.
 
 The Content Tree is a tab within the side panel (together with the components and assets browser). To open (or close) the side panel use the icon at the top left of the toolbar:
 
 ![Content Tree button](/help/sites-cloud/authoring/assets/content-tree-button.png)
 
-When you open the side panel it will slide open (from the left side). Select the **Content Tree** tab if necessary. When open you can see a tree view representation of your page or template, so that it's easier to understand how its content is structured hierarchically. Additionally on a complex page, it makes it easier to jump between components of the page.
+When you open the side panel it will slide open (from the left side). Select the **Content Tree** tab if necessary. When open you can see a tree view representation of your page or template, so that it's easier to understand how its content is structured hierarchically. Also, on a complex page, it makes it easier to jump between components of the page.
 
 ![Content Tree](/help/sites-cloud/authoring/assets/content-tree-editor.png)
 
@@ -180,7 +183,7 @@ Clicking on the component will highlight the component in the page editor. The a
 
   The components of a basic page will have the usual options.
   
-  If the component you click in the tree is editable a wrench icon will appear to the right of the name. Clicking on this icon will directly start the edit dialogue for the component.
+  If the component you click in the tree is editable a wrench icon will appear to the right of the name. Clicking on this icon starts the edit dialog box for the component.
 
   ![Content Tree edit button](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
@@ -215,7 +218,10 @@ Open the required console, then navigate to the required resource and open **Ref
 
 Select the appropriate reference type for more information. In certain situations further actions are available when you select a specific reference, including:
 
-* **Incoming Links**, provides a list of pages that reference the page, together with direct access to **Edit** one of those pages when you select a specific link
+* **Incoming Links**, provides a list of pages that reference the page, together with direct access to **Edit** one of those pages when you select a specific link.
+
+  * This can only show static links, not dynamically generated links; for example, from the List component.
+
 * Instances of borrowed and lent content using the **Reference** component, from here you can navigate to the referencing/referenced page
 * [Launches](/help/sites-cloud/authoring/launches/overview.md), provides access to related launches
 * [Live Copies](/help/sites-cloud/administering/msm/overview.md) displays the paths of all live copies that are based on the selected resource.
@@ -276,7 +282,7 @@ You can access these using the icons in the top right corner. The actual icon wi
 >* Depending on the characteristics of the page, some modes my not be available.
 >* Access to some modes require the appropriate permissions/privileges.
 >* Developer mode is not available on mobile devices due to space restrictions.
->* There is a [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) to toggle between **Preview** and the currently selected mode (for example, **Edit**, **Layout**, etc).
+>* There is a [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) to toggle between **Preview** and the currently selected mode (for example, **Edit**, **Layout**, and so on).
 >
 
 ## Path Selection {#path-selection}
@@ -303,10 +309,10 @@ The path browser is organized like the [column view](/help/sites-cloud/authoring
 
 ![Path Browser](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Once a resource is selected, the **Select** button at the upper-right of the dialogue becomes active. Click or tap to confirm the selection or **Cancel** to abort.
+* Once a resource is selected, the **Select** button at the upper-right of the dialog box becomes active. Select to confirm the selection or **Cancel** to abort.
 * If the context allows for the selection of multiple resources, selecting a resource also activates the **Select** button, but also adds a count of the number of selected resources to the upper-right of the window. Click the **X** next to the number to deselect all.
 * When you navigate through the tree, your location is reflected in the breadcrumbs at the top of the dialog. These breadcrumbs can also be used to quickly jump within the resource hierarchy.
-* At any time you can use the search field at the top of the dialogue. Click the **X** in the search field to clear the search.
+* At any time you can use the search field at the top of the dialog box. Click the **X** in the search field to clear the search.
 * To narrow your search, you can reveal the filter options and filter your results based on a certain path.
 
   ![Filters option](/help/sites-cloud/authoring/assets/filters-option.png)

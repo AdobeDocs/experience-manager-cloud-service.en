@@ -16,7 +16,7 @@ Follow these steps to create a production program.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on **Add Program** from the top-right corner of the screen.
+1. Click **Add Program** from the top-right corner of the screen.
 
    ![Cloud manager landing page](assets/log-in.png) 
 
@@ -24,14 +24,17 @@ Follow these steps to create a production program.
 
    ![Creating program wizard](assets/create-production-program.png)
 
-1. Optionally, you can add an image to the program by dragging and dropping an image file to the **Add a program image** target or clicking it to select an image from a file browser. Tap or click **Continue**.
+1. Optionally, you can add an image to the program by dragging and dropping an image file to the **Add a program image** target or clicking it to select an image from a file browser. Select **Continue**.
 
-1. If you have enhanced security entitlements, the **Enhanced Security** tab will provide the option to **Enable Enhanced Security** for your production program. If required, check the option to enable enhanced security and tap or click **Continue**.
+1. If you have the necessary entitlements, the **Security** tab will be shown and provide the option to activate **HIPAA** and/or **WAF-DDOS Protection** for your production program. If necessary for the program you are creating, check the applicable option(s) and then select **Continue**.
 
-   * Enhanced security cannot be enabled or disabled after program creation.
-   * [Learn more](https://www.adobe.com/go/hipaa-ready) about Adobe's HIPAA ready solution implementation.
+   * HIPAA cannot be enabled or disabled after program creation.
+      * [Learn more](https://www.adobe.com/go/hipaa-ready) about Adobe's HIPAA ready solution implementation.
+   * Once activated, WAF-DDOS protection can then be configured by setting up a [non-production pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   
+   {{waf-limited-release}}
 
-   ![Enhanced Security option](assets/create-production-program-enhanced.png)
+   ![Security options](assets/create-production-program-security.png)
 
 1. On the **Solutions &amp; Add-ons** tab, select the solutions to include in the program.
 
@@ -40,7 +43,7 @@ Follow these steps to create a production program.
 
    ![Select solutions](assets/setup-prod-select.png)
 
-1. Click on the chevron before the solution names to reveal optional add-ons such as selecting the **Commerce** add-on option under **Sites**.
+1. Click the chevron before the solution names to reveal optional add-ons such as selecting the **Commerce** add-on option under **Sites**.
 
    ![Select add-ons](assets/setup-prod-commerce.png)
 
@@ -59,9 +62,9 @@ Your program is created by Cloud Manager and is displayed and selectable on the 
 
 ![Cloud manager overview](assets/navigate-cm.png)
 
-## Access Your Program {#acessing}
+## Access Your Program {#accessing}
 
-1. Once you see your program card on the landing page, select the ellipsis button to view the menu options available to you.
+1. When you see your program card on the landing page, select the ellipsis button to view the menu options available to you.
 
    ![Program overview](assets/program-overview.png)
 
@@ -71,7 +74,7 @@ Your program is created by Cloud Manager and is displayed and selectable on the 
 
    ![Program overview](assets/set-up-prod5.png)
 
-If at any time you need to switch to another program or return to the overview page to create another program, click on your program name in the top-left of the screen to reveal the **Navigate to** option.
+If at any time you need to switch to another program or return to the overview page to create another program, click your program name in the top-left of the screen to reveal the **Navigate to** option.
 
 ![Navigate to](assets/create-program-a1.png)
 

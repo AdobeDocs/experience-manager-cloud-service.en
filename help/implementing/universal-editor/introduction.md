@@ -1,12 +1,14 @@
 ---
-title: Universal Visual Editor Introduction
-description: Learn how the Universal Visual Editor (a.k.a. Universal Editor) enables what-you-see-is-what-you-get (WYSIWYG) editing of any headless and headful experience. Understand how it can help content authors deliver exceptional experiences, increase their content velocity, and how provides a state-of-the-art developer experience.
+title: Universal Editor Introduction
+description: Learn how the Universal Editor enables what-you-see-is-what-you-get (WYSIWYG) editing of any headless and headful experience. Understand how it can help content authors deliver exceptional experiences, increase their content velocity, and how provides a state-of-the-art developer experience.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 ---
 
-# Universal Visual Editor Introduction {#introduction}
+# Universal Editor Introduction {#introduction}
 
-Learn how the Universal Visual Editor (a.k.a. Universal Editor) enables what-you-see-is-what-you-get (WYSIWYG) editing of any headless and headful experience. Understand how it can help content authors deliver exceptional experiences, increase their content velocity, and how provides a state-of-the-art developer experience.
+Learn how the Universal Editor enables what-you-see-is-what-you-get (WYSIWYG) editing of any headless and headful experience. Understand how it can help content authors deliver exceptional experiences, increase their content velocity, and how provides a state-of-the-art developer experience.
+
+{{universal-editor-status}}
 
 ## Background {#background}
 
@@ -28,8 +30,8 @@ Users often think that a headless implementation limits the authors to editing a
 
 The requirements for an implementation to use the Universal Editor is straight-forward and supports the following:
 
-* **Any Architecture** - Server-side rendering, edge-side rendering, client-side rendering, etc.
-* **Any Framework** - Vanilla AEM, or any third-party framework like React, Next.js, Angular, etc.
+* **Any Architecture** - Server-side rendering, edge-side rendering, client-side rendering, and so on.
+* **Any Framework** - Vanilla AEM, or any third-party framework like React, Next.js, Angular, and so on.
 * **Any Hosting** - Can be hosted locally to AEM, or on a remote domain
 
 ### Any Content {#any-content}
@@ -44,7 +46,7 @@ A content author should have the same powerful editing experience formerly offer
 
 For a content author, content is not just about the information contained, but how it is rendered and received. Content comes with additional meta-data and instrumentation rules, which the Universal Editor can understand and edit including:
 
-* **Applying Layout &amp; Style** - By using a style system, the marketing practitioner and content author can apply different styles to their content and create different layouts for the content such as columns, carousels, tabs, accordions, etc.
+* **Applying Layout &amp; Style** - By using a style system, the marketing practitioner and content author can apply different styles to their content and create different layouts for the content such as columns, carousels, tabs, accordions, and so on.
 
 ## Value {#value}
 
@@ -56,9 +58,9 @@ By decoupling the content editing experience from any particular content deliver
 * **Increase Content Velocity** - To streamline the management workflow of practitioners, the Universal Editor allows editing content within the preview to guide practitioners by showing only the options that are relevant to that context and makes the workflow independent from the content sources.
 * **State-of-the-art Developer Experience** - To support real-world heterogeneous application landscape, the Universal Editor is completely fully decoupled and technology-agnostic, allowing developers to use their preferred technology stack to implement the experience.
 
-## Universal Visual Editor and the Content Fragment Editor {#universal-editor-content-fragment-editor}
+## Universal Editor and the Content Fragment Editor {#universal-editor-content-fragment-editor}
 
-At first glance, it might seem like the Universal Visual Editor and the Content Fragment Editor provide similar editing capabilities. However, these editors offer very different capabilities and they accomplish different jobs of the marketing practitioner.
+At first glance, it might seem like the Universal Editor and the Content Fragment Editor provide similar editing capabilities. However, these editors offer very different capabilities and they accomplish different jobs of the marketing practitioner.
 
 ### Content Fragment Editor {#content-fragment-editor} 
 
@@ -66,7 +68,7 @@ A marketing practitioner wants to create content without having to care about it
 
 * The underlying job to accomplish is to scale the content strategy.
 
-### Universal Visual Editor {#universal-editor}
+### Universal Editor {#universal-editor}
 
 A marketing practitioner wants to create content that is tailored to the layout of a given context to deliver an exceptional experience.
 
@@ -83,7 +85,7 @@ Speak with your Adobe contact for details on the upcoming features planned for t
 To learn more about the Universal Editor, see these documents.
 
 * [Authoring Content with the Universal Editor](authoring.md) - Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
-* [Publishing Content with the Universal Editor](publishing.md) - Learn how the Universal Visual Editor publishes content and how your apps can handle the published content.
+* [Publishing Content with the Universal Editor](publishing.md) - Learn how the Universal Editor publishes content and how your apps can handle the published content.
 * [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.

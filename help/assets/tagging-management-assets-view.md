@@ -1,6 +1,7 @@
 ---
 title: How to manage tags in Assets view?
 description: Learn how to manage tags in Assets view. Tags help you categorize assets that can be browsed and searched more efficiently.
+exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 ---
 # Manage tags in Assets view {#view-assets-and-details}
 
@@ -8,11 +9,11 @@ description: Learn how to manage tags in Assets view. Tags help you categorize a
 >[!CONTEXTUALHELP]
 >id="assets_taxonomy_management"
 >title="Manage Tags"
->abstract="Tags help you categorize assets that can be browsed and searched more efficiently. Administrators have the ability to use the hierarchical tagging structure, which facilitates applying relevant metadata, categorizing assets, supporting search, reusing tags, improving discoverability, and so on."
+>abstract="Tags help you categorize assets that can be browsed and searched more efficiently. Administrators can use the hierarchical tagging structure, which facilitates applying relevant metadata, categorizing assets, supporting search, reusing tags, improving discoverability, and so on."
 
 Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows.
 
-Flat lists of controlled vocabularies can become unmanageable over time. Administrators have the ability to use the hierarchical tagging structure, which facilitates applying relevant metadata, categorizing assets, supporting search, reusing tags, improving discoverability, and so on.
+Flat lists of controlled vocabularies can become unmanageable over time. Administrators can use the hierarchical tagging structure, which facilitates applying relevant metadata, categorizing assets, supporting search, reusing tags, improving discoverability, and so on.
 
 You can create a namespace at the root-level and create a hierarchical structure of subtags within the namespace. For example, you can create an `Activities` namespace at the root-level and have `Cycling`, `Hiking`, and `Running` tags within the namespace. You can have further subtags `Clothing` and `Shoes` within `Running`.
 

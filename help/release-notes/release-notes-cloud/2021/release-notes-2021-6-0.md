@@ -96,7 +96,7 @@ The next release is planned for July 15, 2021.
 * The view settings are enhanced to let users choose a default view and a default sorting parameter.
 * The Linkshare download functionality uses asynchronous downloads that boosts the download speed.
 * Users can search and filter the folders based on property predicates.
-* [!DNL Experience Manager Assets] embeds the the PDF Viewer powered by [!DNL Adobe Document Cloud] to preview the supported documents. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] embeds the PDF Viewer powered by [!DNL Adobe Document Cloud] to preview the supported documents. This feature lets users preview PDF and other multi-page files without any complex processing. This improves the feature parity with [!DNL Experience Manager] 6.5.
 
 ### Bugs fixed in [!DNL Assets] {#bugs-fixed-assets}
 
@@ -147,7 +147,7 @@ The Release Date for AEM Screens as a Cloud Service is June 24, 2021.
 ### What's New {#what-is-new-screens-june}
 
 >[!NOTE]
->See [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) Guide for foundational knowledge required for successfully installing, configuring, and running Screens as a Cloud Service and link out to detailed concepts technical documentation.
+>See [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) Guide for foundational knowledge required for successfully installing, configuring, and running Screens as a Cloud Service and link out to detailed concepts technical documentation.
 
 * Bulk Device Registration Management means that provisioning massive amounts of player devices is faster and more efficient.
 
@@ -176,7 +176,7 @@ The Release Date for Content Transfer Tool v1.5.4 is June 28, 2021.
 
 ### What's New {#what-is-new-ctt-latest}
 
-* Support for an optional [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) step added to use with CTT. The pre-copy step can be used to significantly speed up the extraction and ingestion phases of the content transfer activity when the source AEM instance is configured to use an Amazon S3 or Azure Blob Storage data store.
+* Support for an optional [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) step added to use with CTT. The pre-copy step can be used to significantly speed up the extraction and ingestion phases of the content transfer activity when the source AEM instance is configured to use an Amazon S3 or Azure Blob Storage data store.
 
 * Guardrail added to CTT to prevent users from stopping an ingestion and potentially corrupting data once it has reached the critical point during the ingestion phase.
 

@@ -14,7 +14,7 @@ Adobe places a great emphasis on the monitoring, availability, and performance o
 
 This document describes the how to manage access to the New Relic One application performance monitoring (APM) features enabled on your AEM as a Cloud Service environments to help support performance and allow you to get the most out of AEM as a Cloud Service.
 
-When a new production program is created, the New Relic One sub-account associated with your AEM as a Cloud Service Program is automatically created. 
+When a new production program is created, the New Relic One sub-account associated with your AEM as a Cloud Service Program is automatically created. [This sub-account must be activated](#activate-sub-account) in order to begin ingesting data.
 
 ## Features {#transaction-monitoring}
 
@@ -28,6 +28,28 @@ New Relic One APM for AEM as a Cloud Service has many features.
 
 * Exposure of AEM as a Cloud Service JMX Mbeans and health checks directly within New Relic Insights metrics, allowing for deep inspection of application stack performance and health metrics.
 
+## Activate Your New Relic One Sub-Account {#activate-sub-account}
+
+For a newly-created program, a New Relic One sub-account is created for you. However you must activate it in order for it to ingest data. This is not automatically done. Follow these steps to activate your sub-account.
+
+>[!NOTE]
+>
+>A user in **Business Owner** or **Deployment Manager** role must be logged in to manage New Relic One sub-account.
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+
+1. Click the program for which you want to manage your New Relic One users.
+
+1. At the bottom of the **Environments** card on the program overview page, click the ellipsis button and select **Activate New Relic**.
+
+   ![Manage users](assets/newrelic-activate-sub-account.png)
+
+   * You can also access the **Manage users** option via the ellipsis button at the top of the **Environments** screen of your program.
+
+1. [Run a pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) for the same environment to successful completion in order to complete the sub-account activation.
+
+When the sub-account is deactivated, there is no data ingestion. 
+
 ## Manage New Relic One Users {#manage-users}
 
 Follow these steps to define the users of your New Relic One sub-account associated with your AEM as a Cloud Service Program.
@@ -38,7 +60,7 @@ Follow these steps to define the users of your New Relic One sub-account associa
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program for which you want to manage your New Relic One users.
+1. Click the program for which you want to manage your New Relic One users.
 
 1. At the bottom of the **Environments** card on the program overview page, click the ellipsis button and select **Manage users**.
 
@@ -46,7 +68,7 @@ Follow these steps to define the users of your New Relic One sub-account associa
 
    * You can also access the **Manage users** option via the ellipsis button at the top of the **Environments** screen of your program.
 
-1. In the **Manage New Relic users** dialog, enter the first and last name of the user you wish to add, and click the **Add** button. Repeat this step for all users you wish to add.
+1. In the **Manage New Relic users** dialog, enter the first and last name of the user you want to add, and click the **Add** button. Repeat this step for all users you want to add.
 
    ![Add users](assets/newrelic-add-users.png)
 
@@ -60,7 +82,7 @@ Once the users are defined, New Relic sends a confirmation email to each user to
 >
 >If you are managing the New Relic One users, you must also add yourself as a user to also have access. Being the **Business Owner** or **Deployment Manager** does not suffice to have access to New Relic One. You must create yourself as a user as well.
 
-## Activate Your New Relic One User Account {#activate-account}
+## Activate Your New Relic One User Account {#activate-user-account}
 
 Once a New Relic One user account is created as described in the preview section [Manage New Relic One Users](#manage-users), New Relic sends those users a confirmation email to the provided address. To use those accounts, users must first activate their accounts with New Relic by resetting their passwords.
 
@@ -88,7 +110,7 @@ To access New Relic One via Cloud Manager:
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program for which you want to access New Relic One.
+1. Click the program for which you want to access New Relic One.
 
 1. At the bottom of the **Environments** card on the program overview page, click the ellipsis button and select **Open New Relic**.
 
@@ -112,9 +134,9 @@ If you do not verify your email address, New Relic attempts to log you in with t
 
 For more help, open a support ticket by way of the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
-## Troubleshooting New Relic One Access {#troubleshooting}
+## Troubleshooting New Relic One User Access {#troubleshooting}
 
-If you were added as a New Relic One user as described in the the section [Manage New Relic One Users](#manage-users) andcannot locate the original account confirmation email follow these steps.
+If you were added as a New Relic One user as described in the section [Manage New Relic One Users](#manage-users) and cannot locate the original account confirmation email follow these steps.
 
 1. Navigate to New Relic's login page at [`login.newrelic.com/login`](https://login.newrelic.com/login).
 
@@ -144,7 +166,13 @@ The following limitations apply to adding users to New Relic One:
 * Users added to New Relic are of the type **Restricted**, see [the New Relic documentation for details.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service only offers the New Relic One APM solution and does not provide support for alerting, logging, or API integrations.
 
-For more help or additional guidance on New Relic One offerings for your AEM as a Cloud Service Program, open a support ticket via the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+>[!NOTE]
+>
+>If no activity is detected in your New Relic One sub-account for 90 days or more, the APM agent will be stopped.
+>
+>Follow the same steps in the [Activate Your New Relic One Sub-Account](#activate-sub-account) section of this document to re-activate your New Relic One sub-account.
+
+For more help or additional guidance on New Relic One offerings for your AEM as a Cloud Service Program, open a support ticket via the [AEM Support Portal.](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)
 
 ## Frequently Asked Questions About New Relic One {#faqs}
 
@@ -166,7 +194,7 @@ Note:
 
 ### Does Adobe send alert notifications from New Relic One? {#alerting-new-relic}
 
-Adobe provides New Relic One access for observability purposes only, and do not utilize it for customer alerting or internal operational alerting. Notifications for any incidents would be sent using [user notification profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/notification-profiles.html).
+Adobe provides New Relic One access for observability purposes only and does not utilize it for customer alerting or internal operational alerting. Notifications for any incidents are sent using [user notification profiles.](/help/journey-onboarding/notification-profiles.md)
 
 ### Who can access the New Relic One cloud service data? {#access-new-relic-cloud}
 
@@ -187,3 +215,7 @@ While Adobe support will monitor the AEM as a Cloud Service application using Ne
 >[!NOTE]
 >
 >To view both data sets within New Relic One, a user must have the right permissions and use the same login methodology for both accounts (Adobe New Relic One and the customer-managed New Relic accounts).
+
+### The APM agent for my New Relic One account is stopped. What happened? {#deactivated}
+
+[APM agents are stopped](#limitations) if no activity is detected for 90 days or more. Follow the same steps in the [Activate Your New Relic One Sub-Account](#activate-sub-account) section of this document to re-activate your New Relic One sub-account.

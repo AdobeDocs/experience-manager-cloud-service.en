@@ -1,6 +1,6 @@
 ---
-title: Considerations known issues, and best practices
-description: Communications best practices, known issues, and limitations
+title: What are considerations, known issues, and best practices in AEM Forms?
+description: Considerations known issues and best practices for AEM Forms Communication APIs.
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 ---
 # Considerations known issues, and best practices {#best-practices-known-issues-and-limitations}
@@ -75,13 +75,13 @@ A form design that is used with the Communications APIs can contain scripts that
 
 ### Font mapping {#font-mapping}
 
-To design a form that uses printer-resident fonts, choose a typeface name in Designer that matches the fonts that are available on the printer. A list of fonts that are supported for PCL or PostScript are located in the corresponding device profiles (XDC files). Alternatively, font mapping can be created to map nonprinter-resident fonts to printer-resident fonts of a different typeface name. For example, in a PostScript scenario, references to the Arial® font can be mapped to the printer-resident Helvetica® typeface.
+To design a form that uses printer-resident fonts, choose a typeface name in Designer that matches the fonts that are available on the printer. A list of fonts that are supported for PCL or PostScript are located in the corresponding device profiles (XDC files). Alternatively, font mapping can be created to map nonprinter-resident fonts to printer-resident fonts of a different typeface name. For example, in a PostScript scenario, references to the Arial&reg; font can be mapped to the printer-resident Helvetica&reg; typeface.
 
-If a font is installed on a client computer, it is available in the drop-down list in Designer. If the font is not installed, it is necessary to specify the font name manually. The “Permanently replace unavailable fonts” option in Designer can be off. Otherwise, when the XDP file is saved in Designer, the substitution font name is written to the XDP file. It means that the printer-resident font is not used.
+If a font is installed on a client computer, it is available in the drop-down list in Designer. If the font is not installed, it is necessary to specify the font name manually. The "Permanently replace unavailable fonts" option in Designer can be off. Otherwise, when the XDP file is saved in Designer, the substitution font name is written to the XDP file. It means that the printer-resident font is not used.
 
-Two types of OpenType® fonts exist. One type is a TrueType OpenType® font that PCL supports. The other is CFF OpenType®. PDF and PostScript output supports embedded Type-1, TrueType, and OpenType® fonts. PCL output supports embedded TrueType fonts.
+Two types of OpenType&reg; fonts exist. One type is a TrueType OpenType&reg; font that PCL supports. The other is CFF OpenType&reg;. PDF and PostScript output supports embedded Type-1, TrueType, and OpenType&reg; fonts. PCL output supports embedded TrueType fonts.
 
-Type-1 and OpenType® fonts are not embedded in PCL output. Content that is formatted with Type-1 and OpenType® fonts is rasterized and generated as a bitmap image that can be large and slower to generate.
+Type-1 and OpenType&reg; fonts are not embedded in PCL output. Content that is formatted with Type-1 and OpenType&reg; fonts is rasterized and generated as a bitmap image that can be large and slower to generate.
 
 Downloaded or embedded fonts are automatically substituted when generating PostScript, PCL, or PDF output. It means that only the subset of the font glyphs that are required to properly render the generated document is included in the generated output.
 
@@ -168,7 +168,7 @@ The following table specifies XCI options.
 
 ## Best Practices
 
-* Adobe recommends to host data files blob container store in the cloud region used by AEM Cloud Service.
+* Adobe recommends that you host data files blob container store in the cloud region used by AEM Cloud Service.
 
 ## Frequently asked questions {#faq}
 
@@ -199,4 +199,12 @@ In comparison to on-premise environment,  the Cloud Service provides additional 
 **Where is data hosted?** -->
 
 **Can I run multiple batch operations simultaneously?**
-Yes, you can run multiple batch operations simuntabously. Always use different source and destination folders for every operation to avoid any conflicts.
+Yes, you can run multiple batch operations simultaneously. Always use different source and destination folders for every operation to avoid any conflicts.
+
+>[!MORELIKETHIS]
+>
+>* [Introduction to AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+

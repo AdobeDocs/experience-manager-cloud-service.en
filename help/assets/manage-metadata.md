@@ -129,7 +129,7 @@ Enterprise Manager Assets lets you edit the metadata of multiple assets simultan
 
 1. Navigate to the location of the assets that you want to edit.
 1. Select the assets for which you want to edit common properties.
-1. From the toolbar, tap/click **[!UICONTROL Properties]** to open the [!UICONTROL Properties] page for the selected assets.
+1. From the toolbar, select **[!UICONTROL Properties]** to open the [!UICONTROL Properties] page for the selected assets.
 
    >[!NOTE]
    >
@@ -143,8 +143,8 @@ Enterprise Manager Assets lets you edit the metadata of multiple assets simultan
    >* In the [!UICONTROL Properties] page, you can remove assets from the asset list by canceling the selection. The asset list has all the assets selected by default. The metadata for assets that you remove from the list is not updated.
    >* At the top of assets list, select the check box near **[!UICONTROL Title]** to toggle between selecting the assets and clearing the list.
 
-1. To select a different metadata schema for the assets, tap/click **[!UICONTROL Settings]** from the toolbar, and select the desired schema. Save the changes.
-1. To append the new metadata with the existing metadata in fields that contain multiple values, select **[!UICONTROL Append mode]**. If you do not select this option, the new metadata replaces the existing metadata in the fields. Tap/click **[!UICONTROL Submit]**.
+1. To select a different metadata schema for the assets, select **[!UICONTROL Settings]** from the toolbar, and select the desired schema. Save the changes.
+1. To append the new metadata with the existing metadata in fields that contain multiple values, select **[!UICONTROL Append mode]**. If you do not select this option, the new metadata replaces the existing metadata in the fields. Select **[!UICONTROL Submit]**.
 
    >[!CAUTION]
    >

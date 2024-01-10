@@ -9,7 +9,7 @@ This article aims to introduce you to the different advanced networking features
 
 >[!INFO]
 >
->You can also find a series of articles designed to walk you through each of the advanced networking options at this [location](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en).
+>You can also find a series of articles designed to walk you through each of the advanced networking options at this [location](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html).
 
 ## Overview {#overview}
 
@@ -49,7 +49,7 @@ Once called, it typically takes approximately 15 minutes for the networking infr
 If the program-scoped flexible port egress configuration is ready, the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint must be invoked per environment to enable networking at the environment level and to optionally declare any port forwarding rules. Parameters are configurable per environment to offer flexibility.
 
 Port forwarding rules should be declared for any destination ports other than 80/443, but only if not using http or https protocol,
-by specifying the set of destination hosts (names or IP, and with ports). For each destination host, customers must map the intended destination port to a port from 30000 through 30999.
+by specifying the set of destination hosts (names or IP, and with ports). The client connection using port 80/443 over http/https must still use proxy settings in their connection to have the properties of advanced networking applied to the connection. For each destination host, customers must map the intended destination port to a port from 30000 through 30999.
 
 The API should respond in just a few seconds, indicating a status of updating and after about 10 minutes, the endpoint's `GET` method should indicate that advanced networking is enabled.
 
@@ -190,7 +190,7 @@ Without the dedicated IP address feature enabled, traffic coming out of AEM as a
 
 Configuring dedicated egress IP address is identical to [flexible port egress](#configuring-flexible-port-egress-provision).
 
-The main difference is that traffic will always egress from a dedicated, unique IP. To find that IP, use a DNS resolver to identify the IP address associated with `p{PROGRAM_ID}.external.adobeaemcloud.com`. The IP address is not expected to change, but if it needs to change in the future, advanced notification is provided.
+The main difference is that traffic will always egress from a dedicated, unique IP. To find that IP, use a DNS resolver to identify the IP address associated with `p{PROGRAM_ID}.external.adobeaemcloud.com`. The IP address is not expected to change, but if it must change in the future, advanced notification is provided.
 
 In addition to the routing rules supported by flexible port egress in the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint, dedicated egress IP address supports a `nonProxyHosts` parameter. This lets you declare a set of hosts that should route through a shared IPs address range rather than the dedicated IP, which may be useful since traffic egressing through shared IPs may be further optimized. The `nonProxyHost` URLs may follow the patterns of `example.com` or `*.example.com`, where the wildcard is only supported at the start of the domain.
 
@@ -331,7 +331,7 @@ To validate that traffic is indeed outgoing on the expected dedicated IP address
 ## Legacy Dedicated Egress Address Customers {#legacy-dedicated-egress-address-customers}
 
 If you have been provisioned with a dedicated egress IP before 2021.09.30, your dedicated egress IP feature only supports HTTP and HTTPS ports.
-This includes HTTP/1.1, and HTTP/2 when encrypted. Additionally, one dedicated egress endpoint can talk to any target only over HTTP/HTTPS on ports 80/443 respectively.
+This includes HTTP/1.1, and HTTP/2 when encrypted. Also, one dedicated egress endpoint can talk to any target only over HTTP/HTTPS on ports 80/443 respectively.
 
 ## Virtual Private Network (VPN) {#vpn}
 
@@ -361,13 +361,13 @@ Port forwarding rules should be declared for any non-http/s protocol TCP traffic
 
 The API should respond in just a few seconds, indicating a status of `updating` and after about 10 minutes, a call to the Cloud Manager's environment GET endpoint would show a status of `ready`, indicating that the update to the environment has been applied.
 
-Note that even if there is no environment traffic routing rules (hosts or bypasses), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` must still be called, just with an empty payload.
+Even if there is no environment traffic routing rules (hosts or bypasses), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` must still be called, just with an empty payload.
 
 ### Updating the VPN {#updating-the-vpn}
 
 The program-level VPN configuration can be updated by invoking the `PUT /api/program/<program_id>/network/<network_id>` endpoint.
 
-Note that the address space cannot be changed after the initial VPN provisioning. If this is necessary, contact customer support. In addition, the `kind` parameter (`flexiblePortEgress`, `dedicatedEgressIP` or `VPN`) cannot be modified. Contact customer support for assistance, describing what has already been created and the reason for the change.
+The address space cannot be changed after the initial VPN provisioning. If this is necessary, contact customer support. In addition, the `kind` parameter (`flexiblePortEgress`, `dedicatedEgressIP` or `VPN`) cannot be modified. Contact customer support for assistance, describing what has already been created and the reason for the change.
 
 The per-environment routing rules can be updated by again invoking the `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` endpoint, making sure to include the full set of configuration parameter, rather than a subset. Environment updates typically take 5-10 minutes to be applied.
 
@@ -539,7 +539,7 @@ If downtime would cause significant business impact, contact customer support fo
 
 ## Advanced Networking Configuration for Additional Publish Regions {#advanced-networking-configuration-for-additional-publish-regions}
 
-When an additional region is added to an environment which already has advanced networking configured, traffic from the additional publish region that matches the advanced networking rules will by default route through the primary region. However, if the primary region becomes unavailable, the advanced networking traffic is dropped if advanced networking hasn't been enabled in the additional region. If you wish to optimize latency and increase availability in case one of the regions undergoes an outage, it is necessary to enable advanced networking for the additional publish region(s). Two different scenarios are described in the following sections.
+When an additional region is added to an environment which already has advanced networking configured, traffic from the additional publish region that matches the advanced networking rules will by default route through the primary region. However, if the primary region becomes unavailable, the advanced networking traffic is dropped if advanced networking hasn't been enabled in the additional region. If you want to optimize latency and increase availability in case one of the regions undergoes an outage, it is necessary to enable advanced networking for the additional publish region(s). Two different scenarios are described in the following sections.
 
 >[!NOTE]
 >
@@ -551,9 +551,9 @@ When an additional region is added to an environment which already has advanced 
 
 If an advanced networking configuration is already enabled in the primary region, follow these steps:
 
-1. If you have locked down your infrastructure such that the dedicated AEM IP address is allow listed, it is recommended to temporarily disable any deny rules in that infrastructure. If this is not done, there is a short period where requests from the new region's IP addresses are denied by your own infrastructure. Note that this is not necessary if you have locked down your infrastructure by way of a FullyQualified Domain Name (FQDN), (`p1234.external.adobeaemcloud.com`, for example), because all AEM regions egress advanced networking traffic from the same FQDN
+1. If you have locked down your infrastructure such that the dedicated AEM IP address is allow listed, it is recommended to temporarily disable any deny rules in that infrastructure. If this is not done, there is a short period where requests from the new region's IP addresses are denied by your own infrastructure. This is not necessary if you have locked down your infrastructure by way of a FullyQualified Domain Name (FQDN), (`p1234.external.adobeaemcloud.com`, for example), because all AEM regions egress advanced networking traffic from the same FQDN
 1. Create the program-scoped networking infrastructure for the secondary region through a POST call to the Cloud Manager Create Network Infrastructure API, as described in advanced networking documentation. The only difference in the payload's JSON configuration relative to primary region is the region property
-1. If your infrastructure needs to be locked down by IP to allow AEM traffic, add the IPs that match `p1234.external.adobeaemcloud.com`. There should be one per region. 
+1. If your infrastructure must be locked down by IP to allow AEM traffic, add the IPs that match `p1234.external.adobeaemcloud.com`. There should be one per region. 
 
 #### Advanced networking not yet configured in any region {#not-yet-configured}
 
@@ -561,7 +561,7 @@ The procedure is mostly similar to the previous instructions. However, if the pr
 
 1. Create networking infrastructure for all regions through POST call to the [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). The only difference in the payload's JSON configuration relative to primary region is the region property.
 1. For the staging environment, enable and configure the environment scoped advanced networking by running `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. For more information, see the API documentation [here](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
-1. If necessary, lock down external infrastructure, preferably by FQDN (for example `p1234.external.adobeaemcloud.com`). You can otherwise do it by IP address
+1. If necessary, lock down external infrastructure, preferably by FQDN (for example, `p1234.external.adobeaemcloud.com`). You can otherwise do it by IP address
 1. If the staging environment works as expected, enable and configure the environment-scoped advanced networking configuration for production. 
 
 #### VPN {#vpn-regions}

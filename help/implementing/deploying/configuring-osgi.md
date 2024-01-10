@@ -73,9 +73,9 @@ AEM as a Cloud Service runmodes are well defined based on the environment type a
 OSGi configuration values specified by runmode can be verified by:
 
 1. Opening the AEM as a Cloud Services environment's [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
-1. Selecting the service tier(s) to inspect, using the __Pod__ dropdown
+1. Selecting the service tier(s) to inspect, using the __Pod__ drop-down list
 1. Selecting the __Status__ tab
-1. Selecting __Configurations__ from the __Status Dump__ dropdown
+1. Selecting __Configurations__ from the __Status Dump__ drop-down list
 1. Selecting the __Get Status__ button
 
 The resulting view displays all OSGi component configurations for the selected tier(s) with their applicable OSGi configuration values. These values can be cross-referenced with the OSGi configuration values in the AEM project's source code under `/apps/example/osgiconfig/config.<runmode(s)>`.
@@ -151,7 +151,7 @@ Whenever defining an OSGi configuration value, start with inline values, and onl
 Only use environment-specific configurations (`$[env:ENV_VAR_NAME]`) for non-secret configuration values when the values vary for the preview tier or vary across development environments. This includes local development instances and any Adobe Experience Manager as a Cloud Service development environments. Other than for setting unique values for the preview tier, avoid using non-secret environment-specific configurations for Adobe Experience Manager as a Cloud Service Stage or Production environments.
 
 * Only use non-secret environment-specific configurations for configuration values that differ between publish and preview tier, or for values that differ between development environments, including local development instances.
-* Aside from the scenario when the preview tier needs to vary from the publish tier, use the standard inline values in the OSGi configurations for Stage and Production non-secret values. In relation, it is not recommended to use environment-specific configurations to facilitate making configuration changes at runtime to Stage and Production environments; these changes should be introduced via source code management.
+* Aside from the scenario when the preview tier must vary from the publish tier, use the standard inline values in the OSGi configurations for Stage and Production non-secret values. In relation, it is not recommended to use environment-specific configurations to facilitate making configuration changes at runtime to Stage and Production environments; these changes should be introduced via source code management.
 
 ### When to use secret environment-specific configuration values {#when-to-use-secret-environment-specific-configuration-values}
 
@@ -170,7 +170,7 @@ JSON formatted OSGi configuration files can be written by hand directly in the A
 1. In your IDE, open the `ui.apps` project, locate or create the config folder (`/apps/.../config.<runmode>`) which targets the runmodes the new OSGi configuration need to effect
 1. In this config folder, create a `<PID>.cfg.json` file. The PID is the Persistent Identity of the OSGi component. It is usually the full class name of the OSGi component implementation. For example:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-   Note that OSGi configuration factory file names use the `<factoryPID>-<name>.cfg.json` naming convention
+   OSGi configuration factory file names use the `<factoryPID>-<name>.cfg.json` naming convention
 1. Open the new `.cfg.json` file, and define the key/value combinations for the OSGi property and value pairs, following the [JSON OSGi configuration format](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Save your changes to the new `.cfg.json` file
 1. Add and commit your new OSGi configuration file to Git
@@ -185,14 +185,14 @@ The AEM SDK Quickstart Jar's AEM Web Console can be used configure OSGi componen
 
 1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user
 1. Navigate to **OSGi** &gt; **Configuration**
-1. To configure, locate the OSGi component and tap its title to edit
+1. To configure, locate the OSGi component and select its title to edit
    ![OSGi Configuration](./assets/configuring-osgi/configuration.png)
 1. Edit the OSGi configuration property values via the Web UI as needed
 1. Record the Persistent Identity (PID) to safe place. This is used later to generate the OSGi configuration JSON
-1. Tap Save
+1. Select Save
 1. Navigate to OSGi > OSGi Installer Configuration Printer
 1. Paste in the PID copied in Step 5, ensure Serialization Format is set to "OSGi Configurator JSON" 
-1. Tap Print
+1. Select Print
 1. The OSGi Configuration in JSON format will display in the Serialized Configuration Properties section
    ![OSGi Installer Configuration Printer](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. In your IDE, open the `ui.apps` project, locate or create the config folder (`/apps/.../config.<runmode>`) which targets the runmodes the new OSGi configuration need to effect.
@@ -588,7 +588,7 @@ Up to 200 variables per environment can be declared.
 
 Because the secret and environment-specific configuration values live outside of Git, and therefore, are not part of the formal Adobe Experience Manager as a Cloud Service deployment mechanisms, the customer should manage, govern, and integrate into the Adobe Experience Manager as a Cloud Service deployment process.
 
-As mentioned above, calling the API deploys the new variables and values to Cloud environments, similar to a typical customer code deployment pipeline. The author and publish services are restarted and reference the new values, typically taking a few minutes. Note that the quality gates and tests that are executed by Cloud Manager during a regular code deployment are not performed during this process.
+As mentioned above, calling the API deploys the new variables and values to Cloud environments, similar to a typical customer code deployment pipeline. The author and publish services are restarted and reference the new values, typically taking a few minutes. The quality gates and tests that are run by Cloud Manager during a regular code deployment are not performed during this process.
 
 Typically, customers would call the API to set environment variables before deploying code that relies on them in Cloud Manager. In some situations, one might want to modify an existing variable after code has already been deployed. 
 

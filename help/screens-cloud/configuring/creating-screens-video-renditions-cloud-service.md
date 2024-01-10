@@ -19,11 +19,11 @@ Follow the steps below to create video renditions in Screens as a Cloud Service 
 1. Navigate to your channel in Screens Content Provider.
 
    >[!NOTE]
-   >See [Using Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) for  more details.
+   >See [Using Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) for  more details.
 
 1. Click the Tools section from the left navigation bar and click **Assets** and then click **Processing Profiles**.
 
-    ![Click on Processing Profiles](/help/screens-cloud/assets/configure/screens-cp-3.png)
+    ![Click Processing Profiles](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. Click **Create** to create a processing profile.
 

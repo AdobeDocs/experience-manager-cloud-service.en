@@ -37,7 +37,7 @@ This method is useful, for example, when your business logic requires fine-tunin
    ```
 
    >[!NOTE]
-   >The Surrogate-Control header applies to the Adobe managed CDN. If using a [customer-managed CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), a different header may be required depending on your CDN provider.
+   >The Surrogate-Control header applies to the Adobe managed CDN. If using a [customer-managed CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN), a different header may be required depending on your CDN provider.
 
    Exercise caution when setting either global cache control headers or similar cache headers that match a wide regex so they are not applied to content that you must keep private. Consider using multiple directives to ensure rules are applied in a fine-grained manner. With that said, AEM as a Cloud Service removes the cache header if it detects that it has been applied to what it detects to be uncacheable by Dispatcher, as described in Dispatcher documentation. To force AEM to always apply the caching headers, one can add the **`always`** option as follows:
 
@@ -85,7 +85,7 @@ This method is useful, for example, when your business logic requires fine-tunin
 
 ### Images and any content large enough to be stored in blob storage {#images}
 
-The default behavior for programs created after mid-May 2022 (specifically, for program ids that are higher than 65000) is to cache by default, while also respecting the request's authentication context. Older programs (program ids equal or lower than 65000) do not cache blob content by default.
+The default behavior for programs created after mid-May 2022 (specifically, for program ids that are higher than 65000) is to cache by default,while also respecting the request's authentication context. Older programs (program ids equal or lower than 65000) do not cache blob content by default.
 
 In both cases, the caching headers can be overridden on a finer grained level at the Apache/Dispatcher layer by using the Apache `mod_headers` directives, for example:
 
@@ -98,6 +98,35 @@ In both cases, the caching headers can be overridden on a finer grained level at
    ```
 
 When modifying the caching headers at the Dispatcher layer, be cautious not to cache too widely. See the discussion in the HTML/text section [above](#html-text). Also, make sure that assets that are meant to be kept private (rather than cached) are not part of the `LocationMatch` directive filters.
+
+JCR resources (bigger than 16KB) that are stored in blob store are typically served as 302 redirects by AEM. These redirects are intercepted and followed by CDN and the content is delivered directly from the blob store. Only a limited set of headers can be customised on these responses. For example, to customise `Content-Disposition` you should use the dispatcher directives as follows:
+
+```
+<LocationMatch "\.(?i:pdf)$">
+  ForceType application/pdf
+  Header set Content-Disposition inline
+  </LocationMatch>
+
+```
+
+The list of headers that can be be customised on blob responses are:
+
+```
+content-security-policy
+x-frame-options
+x-xss-protection
+x-content-type-options
+x-robots-tag
+access-control-allow-origin
+content-disposition
+permissions-policy
+referrer-policy
+x-vhost
+content-disposition
+cache-control
+vary
+
+```
 
 #### New default caching behavior {#new-caching-behavior}
 
@@ -202,16 +231,39 @@ When a HEAD request is received at the Adobe CDN for a resource that is **not** 
 
 ### Marketing campaign parameters {#marketing-parameters}
 
-Website URLs frequently include marketing campaign parameters that are used to track a campaign's success. To use the Dispatcher cache effectively, it is recommended that you configure the Dispatcher configuration's `ignoreUrlParams` property as [documented here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+Website URLs frequently include marketing campaign parameters that are used to track a campaign's success. 
 
-The `ignoreUrlParams` section must be uncommented and should reference the file `conf.dispatcher.d/cache/marketing_query_parameters.any`. The file can be modified by uncommenting the lines corresponding to the parameters that are relevant to your marketing channels. You may add other parameters as well.
+For environments created in October 2023 or later, to better cache requests, the CDN will remove common marketing related query parameters, specifically those matching the following regex pattern:
+ 
+```
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
+```
+ 
+Submit a support ticket if you want this behavior to be disabled.
+
+For environments created before October 2023, it is recommended to configure the Dispatcher configuration's `ignoreUrlParams` property as [documented here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+
+There are two possibilities to ignore marketing parameters. (Where the first one is preferred to ignore cache busting via query parameters):
+
+1. Ignore all parameters and selectively allow parameters that are used. 
+In the following example only `page` and `product` parameters are not ignored and the requests will be forwarded to the publisher.
 
 ```
 /ignoreUrlParams {
-{{ /0001 { /glob "*" /type "deny" }}}
-{{ $include "../cache/marketing_query_parameters.any"}}
+   /0001 { /glob "*" /type "allow" }
+   /0002 { /glob "page" /type "deny" }
+   /0003 { /glob "product" /type "deny" }
 }
 ```
+
+1. Allow all parameters except the marketing parameters. The file [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) defines a list of commonly used marketing parameters that will be ignored. Adobe will not update this file. It can be extended by users depending on their marketing providers.
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "deny" }
+   $include "../cache/marketing_query_parameters.any"
+}
+```
+
 
 ## Dispatcher Cache Invalidation {#disp}
 

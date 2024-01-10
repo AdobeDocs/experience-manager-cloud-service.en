@@ -3,6 +3,7 @@ title: Basic Handling
 description: Get comfortable with navigating AEM and its basic usage
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 ---
+
 # Basic Handling {#basic-handling}
 
 This document is designed to give an overview of basic handling when using the AEM author environment. It uses the **Sites** console as a basis.
@@ -12,9 +13,11 @@ This document is designed to give an overview of basic handling when using the A
 >* Some functionality is not available in all consoles and additional functionality may be available in some consoles. Specific information about the individual consoles and their related functionality are covered in more detail on other pages.
 >* Keyboard shortcuts are available throughout AEM. In particular when [using consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) and [editing pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
+{{edge-delivery-authoring}}
+
 ## A Touch-Enabled UI {#a-touch-enabled-ui}
 
-AEM's user interface is enabled for touch. A touch-enabled interface lets you use touch to interact with the software through gestures such as tap, touch-and-hold, and swipe. Because the AEM UI is touch-enabled, you can use the touch gestures on your touch devices such as your mobile phone or tablet. However mouse actions on a traditional desktop device are also available, giving you flexibility in how you choose to author your content.
+AEM's user interface is enabled for touch. A touch-enabled interface lets you use touch to interact with the software through gestures such as select, touch-and-hold, and swipe. Because the AEM UI is touch-enabled, you can use the touch gestures on your touch devices such as your mobile phone or tablet. However mouse actions on a traditional desktop device are also available, giving you flexibility in how you choose to author your content.
 
 ## First Steps {#first-steps}
 
@@ -22,21 +25,21 @@ Immediately after logging in you arrive on the [Navigation panel](#navigation-pa
 
 ![Navigation panel](/help/sites-cloud/authoring/assets/navigation.png)
 
-To get a good understanding of the basic use of AEM, this document is based on the **Sites** console. Click or tap on **Sites** to get started.
+To get a good understanding of the basic use of AEM, this document is based on the **Sites** console. Select on **Sites** to get started.
 
 ## Product Navigation {#product-navigation}
 
-Whenever a user first accesses a console, a product navigation tutorial is started. Take a minute to click or tap through to get a good overview of the basic handling of AEM.
+Whenever a user first accesses a console, a product navigation tutorial is started. Take a minute to select through to get a good overview of the basic handling of AEM.
 
 ![Navigation tutorial](/help/sites-cloud/authoring/assets/tutorial.png)
 
-Click or tap **Next** to advance to the next page of the overview. Click or tap **Close** or click or tap outside of the overview dialog to close.
+Select **Next** to advance to the next page of the overview. Select **Close** or select outside of the overview dialog to close.
 
 The overview will restart the next time you access a console unless you either view all slides or check the option **Don't show this again**.
 
 ## Global Navigation {#global-navigation}
 
-You can navigate between the consoles using the global navigation panel. This is triggered as a full-screen drop-down when you click or tap the Adobe Experience Manager link at the top-left of the screen.
+You can navigate between the consoles using the global navigation panel. This is triggered as a full-screen drop-down when you select the Adobe Experience Manager link at the top-left of the screen.
 
 You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
 
@@ -66,11 +69,11 @@ From Navigation the consoles available are:
 |Experience Fragments|An [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences.|
 |Assets|The Assets console lets you import and manage [digital assets such as images, videos, documents, and audio files](/help/assets/overview.md). These assets can then be used by any site running on the same AEM instance. You can also create and manage [Content Fragments](/help/assets/content-fragments/content-fragments.md) from the Assets console.|
 |Personalization|This console provides a framework of tools for [authoring targeted content and presenting personalized experiences](/help/sites-cloud/authoring/personalization/overview.md).|
-|Content Fragments|[Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) allow you to design, create, curate and publish page-independent content. They allow you to prepare structured content ready for use in multiple locations/over multiple channels, and ideal for both page authoring and headless delivery.|
+|Content Fragments|[Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) allow you to design, create, curate and publish page-independent content. They allow you to prepare structured content ready for use in multiple locations/over multiple channels, and ideal for both page authoring and headless delivery.|
 
 ## Tools Panel {#tools-panel}
 
-In the Tools panel has a side panel containing a range of categories, that group together similar Tools consoles. The Tools consoles provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+In the Tools panel has a side panel containing a range of categories, that group together similar Tools consoles. The Tools consoles provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![Tools panel](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -124,7 +127,7 @@ The header is always present at the top of the screen. While most options in the
 
   Situated in the middle of the rail, and always showing the description of the currently selected item, the breadcrumbs allow you to navigate within a specific console. In the **Sites** console, you can navigate through the levels of your website.
 
-  Simply click on the breadcrumb text to display a drop-down listing the levels of the hierarchy of the currently selected item. Click on an entry to jump to that location.
+  Simply click the breadcrumb text to display a drop-down listing the levels of the hierarchy of the currently selected item. Click an entry to jump to that location.
 
   ![Example of breadcrumbs expanded](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
@@ -162,7 +165,7 @@ There are various help resources available:
 
 * **Console Toolbar**
 
-  Depending on your location the **Help** icon will open the appropriate resources:
+  Depending on your location, the **Help** icon opens the appropriate resources:
 
   ![Help icon](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -222,7 +225,7 @@ Due to the space restrictions in some windows, the toolbar can quickly become lo
 
 In [Card View](#card-view) certain actions are available as quick action icons and being on the toolbar. Quick action icons are available for a single item at a time and eliminate the need for you to preselect.
 
-The quick actions are visible when you mouseover (desktop device) a resource card. The quick actions available can depend on the console and context. For example, here are the quick actions for a page in the **Sites** console:
+The quick actions are visible when you mouse over (desktop device) a resource card. The quick actions available can depend on the console and context. For example, here are the quick actions for a page in the **Sites** console:
 
 ![Additional options](/help/sites-cloud/authoring/assets/quick-actions.png)
 
@@ -246,9 +249,9 @@ Selecting a specific resource is dependent on a combination of the view and the 
 
 |View|Select Touch|Select Desktop|Deselect Touch|Deselect Desktop|
 |---|---|---|---|---|
-|Column|Tap the thumbnail|Click the thumbnail|Tap the thumbnail|Click the thumbnail|
-|Card|Tap and hold the card|Mouse over then use the check mark quick action|Tap the card|Click the card|
-|List|Tap the thumbnail|Click the thumbnail|Tap the thumbnail|Click the thumbnail|
+|Column|Select the thumbnail|Click the thumbnail|Select the thumbnail|Click the thumbnail|
+|Card|Select and hold the card|Mouse over then use the check mark quick action|Select the card|Click the card|
+|List|Select the thumbnail|Click the thumbnail|Select the thumbnail|Click the thumbnail|
 
 #### Select All {#select-all}
 
@@ -295,7 +298,7 @@ Selecting a resource in the leftmost column will display the child resources in 
 
   * The resource name and chevron are highlighted when tapped or clicked.
   * The children of the clicked/tapped resource are displayed in the column to the right of the clicked/tapped resource.
-  * If you tap or click on a resource name that has no children, its details are displayed in the final column.
+  * If you select a resource name that has no children, its details are displayed in the final column.
 
 * Tapping or clicking on the thumbnail selects the resource.
 
@@ -322,7 +325,7 @@ Selecting a resource in the leftmost column will display the child resources in 
   * The page title
   * Important dates (such as last edited, last published)
   * If the page is locked, hidden or part of a livecopy
-  * If appropriate, when you are required to take action as part of a workflow
+  * If appropriate, when you are required to act as part of a workflow
     * Markers that indicate required actions may be related to entries in your [Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 * [Quick actions](#quick-actions) are also available in this view such as selection and common actions such as edit.
@@ -343,12 +346,12 @@ Selecting a resource in the leftmost column will display the child resources in 
 
   * When all items in the list are selected, this checkbox appears checked.
 
-    * Click or tap the checkbox to deselect all.
+    * Select the checkbox to deselect all.
 
   * When only some items are selected, it appears with a minus sign.
 
-    * Click or tap the checkbox to select all.
-    * Click or tap the checkbox again to deselect all.
+    * Select the checkbox to select all.
+    * Select the checkbox again to deselect all.
 
 * Select the columns to be shown using **View Settings** option located under the Views button. The following columns are available for display:
 
@@ -357,7 +360,7 @@ Selecting a resource in the leftmost column will display the child resources in 
   * **Published** - Publication status
   * **Preview** - Preview status
   * **Template** - Template on which the page is based
-  * **Workflow** - Workflow currently applied to the page. More information is available when you mouseover, or open Timeline.
+  * **Workflow** - Workflow currently applied to the page. More information is available when you mouse over, or open Timeline.
   * **Page analytics**
   * **Unique visitors**
   * **Time on page**
@@ -374,7 +377,7 @@ Selecting a resource in the leftmost column will display the child resources in 
 
   ![Column order](/help/sites-cloud/authoring/assets/column-order.png)
 
-  Click or tap on the vertical selection bar and drag the item to a new position in the list.
+  Select the vertical selection bar and drag the item to a new position in the list.
 
   ![Order list](/help/sites-cloud/authoring/assets/order-list.png)
 
@@ -462,10 +465,10 @@ See the document [Using the Site Rail to Manage Your Site Theme](/help/sites-clo
 
 >[!TIP]
 >
->An end-to-end description of the process of creating a new site from a template and customizing its theme can be found in the [Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md).
+>An end-to-end description of the process of creating a site from a template and customizing its theme can be found in the [Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md).
 
 ### Filter {#filter}
 
-This will open a panel similar to [search](/help/sites-cloud/authoring/getting-started/search.md) with the appropriate location filters already set, allowing you to further filter the content you wish to view.
+This opens a panel similar to [search](/help/sites-cloud/authoring/getting-started/search.md) with the appropriate location filters already set, allowing you to further filter the content you want to view.
 
 ![Filter example](/help/sites-cloud/authoring/assets/filter.png)

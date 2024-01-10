@@ -1,6 +1,5 @@
 ---
 title: Forms-centric workflows on OSGi | Handling user data
-seo-title: Forms-centric workflows on OSGi | Handling user data
 description: Forms-centric workflows on OSGi | Handling user data
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
@@ -69,7 +68,7 @@ You can access and delete user data from a workflow instance in the repository. 
 However, you cannot identify or the results may be ambiguous when identifying workflows associated with an initiator in the following scenarios:
 
 * **Workflow triggered through a watched folder**: A workflow instance cannot be identified using its initiator if the workflow is triggered by a watched folder. In this case, the user information is encoded in the stored data.
-* **Workflow initiated from publish AEM instance**: All workflow instances are created using a service user when Adaptive Forms, interactive communications, or letters are submitted from AEM publish instance. In these cases, the user name of the logged-in user is not captured in the workflow instance data.
+* **Workflow initiated from publish AEM instance**: All workflow instances are created using a service user when Adaptive Forms or letters are submitted from AEM publish instance. In these cases, the user name of the logged-in user is not captured in the workflow instance data.
 
 ### Access user data {#access}
 
@@ -132,7 +131,7 @@ You must be an AEM administrator to delete user data from workflow instances by 
 
     1. Go to `https://'[server]:[port]'/aem/start.html` and log in with administrator credentials.
     1. Navigate to **[!UICONTROL Tools > Workflow> Instances]**.
-    1. Select relevant workflow instances for the user and tap **[!UICONTROL Terminate]** to terminate running instances.
+    1. Select relevant workflow instances for the user and select **[!UICONTROL Terminate]** to terminate running instances.
 
        For more information about working with workflow instances, see [Administering Workflow Instances](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html#authoring).
 
@@ -154,3 +153,6 @@ You can also use APIs to access and remove nodes and properties. See the followi
 * [Removing Nodes and Properties](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [API reference](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
 
+>[!MORELIKETHIS]
+>
+>* [Use AEM Forms workflow for business process automation](/help/forms/aem-forms-workflow.md)
