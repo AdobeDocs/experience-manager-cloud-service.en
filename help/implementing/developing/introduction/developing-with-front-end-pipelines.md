@@ -22,7 +22,7 @@ The content of the `dist` folder is what is ultimately deployed to AEM as a Clou
 
 ### Node Versions {#node-versions}
 
-By default the front-end pipeline uses Node 14, but 12 and 16 are also available.
+By default the front-end pipeline uses Node 14, but 12, 16 and 18 are also available.
 
 You can use the `NODE_VERSION` environment variable to set the desired version.
 
