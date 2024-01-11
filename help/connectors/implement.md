@@ -1,8 +1,9 @@
 ---
 title: Implementing an AEM Connector
-description: Learn how to build, test, and implement an AEM connector. Also, you learn about common integration patterns.
+description: Learn about Connectors, what they can do, and how to implement these valuable tools in Experience Manager.
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 ---
+
 Implementing an AEM Connector
 =============================
 
