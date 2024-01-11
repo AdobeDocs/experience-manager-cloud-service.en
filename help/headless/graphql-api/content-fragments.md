@@ -909,7 +909,45 @@ The following limitations exist:
 
 ## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
 
-GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media asset.
+GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset.
+
+The solution in GraphQL means you can:
+
+* use `_dmS7Url` on the `ImageRef` reference
+
+>[!NOTE]
+>
+>For this you need to have a Dynamic Media Cloud Configuration. 
+>
+>This adds the `dam:scene7File` and `dam:scene7Domain` attributes on the asset's metadata when it is created.
+
+### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
+
+The following is a sample query:
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      _path
+      title
+      teamMembers {
+        profilePicture {
+          __typename
+          ... on ImageRef{
+            _dynamicUrl
+            _authorUrl
+            _publishUrl
+            height
+            width
+            _dmS7Url
+          }
+        }
+      }
+    }
+  }
+} 
+```
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
@@ -983,19 +1021,23 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
       * See [Sample Query - All Cities with a Named Variation](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
-  * For [image delivery](#image-delivery):
+  * For [web-optimized image delivery](#web-optimized-image-delivery-in-graphql-queries):
 
     * `_dynamicUrl`: on the `ImageRef` reference
 
     * `_assetTransform`: on the list header where your filters are defined
 
     * See:
-    
-      * [Sample Query for Image Delivery with full parameters](#image-delivery-full-parameters)
 
-      * [Sample Query for Image Delivery with a single specified parameter](#image-delivery-single-specified-parameter)
+      * [Sample Query for Image Delivery with full parameters](#web-optimized-image-delivery-full-parameters)
 
-  * `_tags` : to reveal the IDs of Content Fragments or Variations that contain tags; this is an array of `cq:tags` identifiers. 
+      * [Sample Query for Image Delivery with a single specified parameter](#web-optimized-image-delivery-single-query-variable)
+
+  * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
+
+    * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
+
+  * `_tags`: to reveal the IDs of Content Fragments or Variations that contain tags; this is an array of `cq:tags` identifiers. 
 
     * See [Sample Query - Names of All Cities Tagged as City Breaks](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
     * See [Sample Query for Content Fragment Variations of a given Model that have a specific tag attached](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
