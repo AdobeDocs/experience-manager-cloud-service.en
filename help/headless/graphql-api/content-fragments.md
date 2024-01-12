@@ -896,7 +896,7 @@ For example, to directly execute the previous samples (saved as persisted querie
     >
     >The trailing `;`is mandatory to cleanly terminate the list of parameters.
 
-### Limitations of Image Delivery {#image-delivery-limitations}
+### Limitations of web-optimized image delivery {#web-optimized-image-delivery-limitations}
 
 The following limitations exist:
 
@@ -917,7 +917,7 @@ The solution in GraphQL means you can:
 
 >[!NOTE]
 >
->For this you need to have a Dynamic Media Cloud Configuration. 
+>For this you need to have a [Dynamic Media Cloud Configuration](/help/assets/dynamic-media/config-dm.md). 
 >
 >This adds the `dam:scene7File` and `dam:scene7Domain` attributes on the asset's metadata when it is created.
 
@@ -1029,9 +1029,9 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
     * See:
 
-      * [Sample Query for Image Delivery with full parameters](#web-optimized-image-delivery-full-parameters)
+      * [Sample Query for web-optimized image delivery with full parameters](#web-optimized-image-delivery-full-parameters)
 
-      * [Sample Query for Image Delivery with a single specified parameter](#web-optimized-image-delivery-single-query-variable)
+      * [Sample Query for web-optimized image delivery with a single specified parameter](#web-optimized-image-delivery-single-query-variable)
 
   * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
 
