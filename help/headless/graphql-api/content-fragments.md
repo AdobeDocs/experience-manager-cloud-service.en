@@ -709,7 +709,7 @@ query {
 
 Web-optimized image delivery lets you use a Graphql query to:
 
-* Request a URL to an AEM Asset image
+* Request a URL to a DAM asset image (referenced by a **Content Reference**)
 
 * Pass parameters with the query, so that a specific rendition of the image is automatically generated and returned
   
@@ -732,6 +732,14 @@ The solution in GraphQL means you can:
 * use `_dynamicUrl` on the `ImageRef` reference
 
 * add `_assetTransform` to the list header where your filters are defined
+
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>* `_dynamicUrl` : a DAM asset
+>* `_dmS7Url` : a Dynamic Media asset
+> 
+>If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
 
 ### Structure of the Transformation Request {#structure-transformation-request}
 
@@ -909,7 +917,7 @@ The following limitations exist:
 
 ## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
 
-GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset.
+GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
 
 The solution in GraphQL means you can:
 
@@ -920,6 +928,15 @@ The solution in GraphQL means you can:
 >For this you need to have a [Dynamic Media Cloud Configuration](/help/assets/dynamic-media/config-dm.md). 
 >
 >This adds the `dam:scene7File` and `dam:scene7Domain` attributes on the asset's metadata when it is created.
+
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>
+>* `_dmS7Url` : a Dynamic Media asset
+>* `_dynamicUrl` : a DAM asset
+> 
+>If the image referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
 
 ### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
 
