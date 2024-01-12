@@ -116,7 +116,7 @@ To remove custom filters:
 
 ## Search assets using [!DNL Adobe Firefly] {#search-firefly}
 
-You can search for an asset that is not available in any of the asset folders by utilizing the [!DNL Adobe Firefly] asset search feature within [!DNL Experience Manager Assets]. This allows you to efficiently generate assets in real-time that may not be stored in the asset folders.
+You can search for an asset that is not available in any of the asset folders by utilizing the [!DNL Adobe Firefly] asset search feature within [!DNL Experience Manager Assets]. This allows you to efficiently generate assets in real-time that are not stored in the asset folders.
 
 ### Before you begin
 
