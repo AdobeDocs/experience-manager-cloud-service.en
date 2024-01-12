@@ -1,11 +1,12 @@
 ---
 title: Introduction to Assets as a [!DNL Cloud Service]
-description: Learn what's new and the benefits of Experience Manager Assets as a [!DNL Cloud Service]. A cloud-native, PaaS solution for businesses.
+description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 ---
+
 # Introducing Assets as a [!DNL Cloud Service] {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
