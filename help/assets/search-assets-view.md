@@ -24,20 +24,6 @@ To search assets,
 
   * Start working with a recently viewed asset, by searching for it directly. Click in the search box and select a recently viewed asset from the suggestions. 
 
-## Search assets using Adobe Firefly
-
-If you're looking for an asset not available in any of the assets folder, use the [!UICONTROL Adobe Firefly] asset search feature within [!UICONTROL Adobe Experience Manager Assets]. It allows you to efficiently search assets that may not be stored in the designated folders. This feature is currently accessible to the Express-entitled users only. <br> For instance, you can search an asset using the keyword `Bugatti Type 57`. When searching for `Bugatti Type 57`, no results are found. 
-
-![Firefly integration](assets/firefly-integration.jpg)
-*Figure: No results found for Bugatti Type 57 in the asset folder.*
-
-In the search bar, enter the asset name, and click **[!UICONTROL Generate]**.
-
-![Firefly integration](assets/bugatti-type-57.jpg)
-*Figure: Reference assets searched using Adobe Firefly asset search feature.*
-
-The sample assets are displayed on the screen. You can upload these assets to your preferred folder for easy access.
-
 ## Filter the search results {#refine-search-results}
 
 You can filter the search results based on the following parameters.
@@ -128,6 +114,38 @@ To remove custom filters:
 
 1. Click **[!UICONTROL Confirm]** to remove the filters from the user interface. 
 
+## Search assets using [!DNL Adobe Firefly] {#search-firefly}
+
+You can search for an asset that is not available in any of the asset folders by utilizing the [!DNL Adobe Firefly] asset search feature within [!DNL Experience Manager Assets]. This allows you to efficiently generate assets in real-time that may not be stored in the asset folders.
+
+### Before you begin
+
+You must have an active [!DNL Adobe Express] subscription.
+
+### Generate assets
+
+To generate new assets using [!DNL Adobe Firefly]:
+
+1. Navigate to the [!DNL AEM Assets] workspace.
+1. Enter the asset name in the search bar at the top of the page.<br>
+For instance, you can search an asset using the keyword `Bugatti Type 57`. When searching for the asset, no results are found because the asset is not present in any of the asset folders.
+1. Type the asset name in the search bar in the middle of the page and click **[!UICONTROL Generate]**.
+ ![Firefly integration](assets/firefly-integration.jpg)
+ *Figure: No results found for Bugatti Type 57 in the asset folder.*
+The new assets are successfully generated.
+ ![Firefly integration](assets/bugatti-type-57.jpg)
+ *Figure: Reference assets searched using [!DNL Adobe Firefly] asset search feature.* <br>
+You can upload these assets to your preferred folder for easy access.
+
+### Upload assets
+
+To upload the generated asset to the assets repository:
+
+1. Click **[!UICONTROL Upload]**.
+1. Select the asset folder to which you need to upload the asset and click **[!UICONTROL Select Folder]**.
+ ![Upload asset](assets/upload-asset-firefly.jpg)
+ *Figure: Select the folder to upload asset.*
+
 ## Saved searches {#saved-search}
 
 Search functionality is quite easy to use in [!DNL Assets view]. From within the search box, you can just type a keyword and press return to see the results, or you can quickly search again for your recently searched keywords in a single click.
@@ -163,7 +181,7 @@ You can select the assets that display in the search results and do the followin
 
 * **Pin to Quick Access**: [Pin an asset](my-workspace-assets-view.md) for faster access when you need it later. All pinned items display in the **Quick access** section of My Workspace.
 
-* **Open in Adobe Express**: Edit an image in the integrated Adobe Express from the Adobe Experience Manager Assets screen.
+* **Open in Adobe Express**: Edit an image in the integrated Adobe Express from the Experience Manager Assets screen.
 
 * **Edit**: Edit the image using Adobe Express. 
 
