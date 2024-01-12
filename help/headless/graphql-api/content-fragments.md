@@ -941,6 +941,7 @@ The solution in GraphQL means you can:
 ### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
 
 The following is a sample query:
+* for multiple Content Fragments of type `team` and `person`
 
 ```graphql
 query allTeams {
@@ -949,15 +950,13 @@ query allTeams {
       _path
       title
       teamMembers {
+        fullName
         profilePicture {
           __typename
           ... on ImageRef{
-            _dynamicUrl
-            _authorUrl
-            _publishUrl
+            _dmS7Url
             height
             width
-            _dmS7Url
           }
         }
       }
