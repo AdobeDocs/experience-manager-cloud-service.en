@@ -131,7 +131,7 @@ To generate new assets using [!DNL Adobe Firefly]:
 For instance, you can search an asset using the keyword `Bugatti Type 57`. When searching for the asset, no results are found because the asset is not present in any of the asset folders.
 1. Type the asset name in the search bar in the middle of the page and click **[!UICONTROL Generate]**.
  ![Firefly integration](assets/firefly-integration.jpg)
- *Figure: No results found for Bugatti Type 57 in the asset folder.*
+ *Figure: No results found for Bugatti Type 57 in the asset folder.* <br>
 The new assets are successfully generated.
  ![Firefly integration](assets/bugatti-type-57.jpg)
  *Figure: Reference assets searched using [!DNL Adobe Firefly] asset search feature.* <br>
