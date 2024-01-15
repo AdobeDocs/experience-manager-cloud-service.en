@@ -2,6 +2,8 @@
 title: What are the differences between AEM 6.5 Forms and AEM Cloud Services?
 description: Compare AEM 6.5 Forms and AEM Cloud Services and learn the most prominent changes before upgrading or migrating to Cloud Service.  
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
+role: Admin, Developer, User
+feature: Adaptive Forms
 contentOwner: khsingh
 ---
 # Notable changes for existing Adobe Experience Manager 6.5 Forms users  {#notable-changes-for-existing-AEM-Forms-users}
