@@ -1,7 +1,8 @@
 ---
 title: How do I set up an [!DNL AEM Forms] as a cloud service environment?
 description: Learn to set up and configure an [!DNL AEM Forms] as a Cloud Service environment.
-exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
+role: Admin, Developer, User
+feature: Adaptive Forms
 ---
 # Onboard to [!DNL AEM Forms] as a Cloud Service {#overview}
 
