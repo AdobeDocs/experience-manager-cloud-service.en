@@ -3,7 +3,6 @@ title: How to integrate Adobe Acrobat Sign with AEM Forms?
 description: Learn how to configure Adobe Acrobat Sign for [!DNL AEM Forms] as a Cloud Service?
 feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
-feature: Adaptive Forms
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 ---
