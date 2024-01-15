@@ -3,7 +3,7 @@ title: Viewing and understanding Adaptive Forms analytics reports
 description: Adaptive Forms seamlessly integrate with Adobe Analytics to capture and track performance metrics for your published forms and documents.
 keywords: Viewing and understanding Adaptive Forms analytics reports, Adobe analytics report, Forms Analytics report
 topic-tags: develop
-feature: Adaptive Forms, Adobe Analytics Integration
+feature: Adaptive Forms
 role: Admin, User
 level: Intermediate
 exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
