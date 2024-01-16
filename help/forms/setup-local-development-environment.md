@@ -1,7 +1,8 @@
 ---
 title: How do I set up a local development environment for AEM Forms?
 description: Set up a local development environment for Adobe Experience Manager Forms as a Cloud Service
-exl-id: 12877a77-094f-492a-af58-cffafecf79ae
+role: Admin, Developer, User
+feature: Adaptive Forms
 ---
 # Set up local development environment for AEM Forms {#overview}
 
