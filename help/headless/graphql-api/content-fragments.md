@@ -729,9 +729,9 @@ This lets you dynamically create image renditions for JSON delivery, which avoid
 
 The solution in GraphQL means you can:
 
-* use `_dynamicUrl` on the `ImageRef` reference
+* Request a URL: use `_dynamicUrl` on the `ImageRef` reference
 
-* add `_assetTransform` to the list header where your filters are defined
+* Pass parameters: add `_assetTransform` to the list header where your filters are defined
 
 <!-- 
 >[!NOTE]
@@ -1041,17 +1041,26 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
       * See [Sample Query - All Cities with a Named Variation](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
-  * For [web-optimized image delivery](#web-optimized-image-delivery-in-graphql-queries):
+  * For image delivery:
 
-    * `_dynamicUrl`: on the `ImageRef` reference
+    * `_authorURL`: the full URL to the image asset on AEM Author 
+    * `_publishURL`: the full URL to the image asset on AEM Publish 
+ 
+    * For [web-optimized image delivery](#web-optimized-image-delivery-in-graphql-queries) (of DAM assets):
 
-    * `_assetTransform`: on the list header where your filters are defined
+      * `_dynamicUrl`: the full URL to the web-optimized DAM asset on the `ImageRef` reference
 
-    * See:
+        >[!NOTE]
+        >
+        >`_dynamicUrl` is the preferred URL to use for web-optimized DAM assets and should replace the use of `_path`, `_authorUrl`, and `_publishUrl` whenever possible.
 
-      * [Sample Query for web-optimized image delivery with full parameters](#web-optimized-image-delivery-full-parameters)
+      * `_assetTransform`: to pass parameters on the list header where your filters are defined
 
-      * [Sample Query for web-optimized image delivery with a single specified parameter](#web-optimized-image-delivery-single-query-variable)
+      * See:
+
+        * [Sample Query for web-optimized image delivery with full parameters](#web-optimized-image-delivery-full-parameters)
+
+        * [Sample Query for web-optimized image delivery with a single specified parameter](#web-optimized-image-delivery-single-query-variable)
 
   * `_tags`: to reveal the IDs of Content Fragments or Variations that contain tags; this is an array of `cq:tags` identifiers. 
 
@@ -1087,9 +1096,9 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
 <!-- between dynamicURL and tags -->
 <!--
-  * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
+    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
 
-    * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
+      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
 -->
 
 ## Querying the GraphQL endpoint from an External Website {#query-graphql-endpoint-from-external-website}
