@@ -3,8 +3,8 @@ title: How to enable Adaptive Forms Core Components on AEM Forms as a Cloud Serv
 description: Learn how to enable Adaptive Forms Core Components on AEM Forms as a Cloud Service.
 contentOwner: Khushwant Singh
 docset: CloudService
-role: Admin
-exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
+role: Admin, Developer, User
+feature: Adaptive Forms, Core Components
 ---
 # Enable Adaptive Forms Core Components {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
