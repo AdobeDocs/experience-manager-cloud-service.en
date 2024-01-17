@@ -64,7 +64,7 @@ See [this article](/help/implementing/deploying/osgi-configuration-api.md) for a
 
 Below is an extensive list of deprecated AEM APIs and their expected removal date. Customers are expected to remove the APIs by the target removal date from their code. Any usage of the API past the removal date will generate errors in the local SDK/Development Environment and the Cloud Manager build process.
 
-+++
++++Expand to see the list of deprecated APIs.
 <table style="table-layout:auto">
   <tr>
     <th>Package/Class</th>
