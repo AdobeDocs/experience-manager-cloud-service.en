@@ -16,7 +16,7 @@ Follow these steps to create a production program.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click **Add Program** from the top-right corner of the screen.
+1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, tap or click **Add Program** in the top-right corner of the screen.
 
    ![Cloud manager landing page](assets/log-in.png) 
 
@@ -32,8 +32,6 @@ Follow these steps to create a production program.
       * [Learn more](https://www.adobe.com/go/hipaa-ready) about Adobe's HIPAA ready solution implementation.
    * Once activated, WAF-DDOS protection can then be configured by setting up a [non-production pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
    
-   {{waf-limited-release}}
-
    ![Security options](assets/create-production-program-security.png)
 
 1. On the **Solutions &amp; Add-ons** tab, select the solutions to include in the program.
@@ -54,7 +52,7 @@ Follow these steps to create a production program.
    ![Define planned go-live date](assets/setup-go-live.png)
 
    * This date can be edited at any time.
-   * This date is for informational use only and triggers the Go Live widget on the program overview page to provide in-product links to AEM as a Cloud Service best practice documentation in a timely manner to align with your journey culminating in a successful and smooth Go Live experience.
+   * This date is for informational use only and triggers the Go Live widget on the [**Program Overview** page](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) to provide in-product links to AEM as a Cloud Service best practice documentation in a timely manner to align with your journey culminating in a successful and smooth Go Live experience.
 
 1. Click **Create**.
 
