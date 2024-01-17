@@ -729,10 +729,11 @@ This lets you dynamically create image renditions for JSON delivery, which avoid
 
 The solution in GraphQL means you can:
 
-* use `_dynamicUrl` on the `ImageRef` reference
+* Request a URL: use `_dynamicUrl` on the `ImageRef` reference
 
-* add `_assetTransform` to the list header where your filters are defined
+* Pass parameters: add `_assetTransform` to the list header where your filters are defined
 
+<!-- 
 >[!NOTE]
 >
 >A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
@@ -740,6 +741,7 @@ The solution in GraphQL means you can:
 >* `_dmS7Url` : a Dynamic Media asset
 > 
 >If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
+--> 
 
 ### Structure of the Transformation Request {#structure-transformation-request}
 
@@ -915,6 +917,7 @@ The following limitations exist:
   * No caching on author
   * Caching on publish - max-age of 10 minutes (cannot be changed by client)
 
+<!--
 ## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
 
 GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
@@ -964,6 +967,7 @@ query allTeams {
   }
 } 
 ```
+-->
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
@@ -1037,21 +1041,26 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
       * See [Sample Query - All Cities with a Named Variation](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
-  * For [web-optimized image delivery](#web-optimized-image-delivery-in-graphql-queries):
+  * For image delivery:
 
-    * `_dynamicUrl`: on the `ImageRef` reference
+    * `_authorURL`: the full URL to the image asset on AEM Author 
+    * `_publishURL`: the full URL to the image asset on AEM Publish 
+ 
+    * For [web-optimized image delivery](#web-optimized-image-delivery-in-graphql-queries) (of DAM assets):
 
-    * `_assetTransform`: on the list header where your filters are defined
+      * `_dynamicUrl`: the full URL to the web-optimized DAM asset on the `ImageRef` reference
 
-    * See:
+        >[!NOTE]
+        >
+        >`_dynamicUrl` is the preferred URL to use for web-optimized DAM assets and should replace the use of `_path`, `_authorUrl`, and `_publishUrl` whenever possible.
 
-      * [Sample Query for web-optimized image delivery with full parameters](#web-optimized-image-delivery-full-parameters)
+      * `_assetTransform`: to pass parameters on the list header where your filters are defined
 
-      * [Sample Query for web-optimized image delivery with a single specified parameter](#web-optimized-image-delivery-single-query-variable)
+      * See:
 
-  * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
+        * [Sample Query for web-optimized image delivery with full parameters](#web-optimized-image-delivery-full-parameters)
 
-    * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
+        * [Sample Query for web-optimized image delivery with a single specified parameter](#web-optimized-image-delivery-single-query-variable)
 
   * `_tags`: to reveal the IDs of Content Fragments or Variations that contain tags; this is an array of `cq:tags` identifiers. 
 
@@ -1084,6 +1093,13 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 * Fallback when querying nested fragments:
 
   * If a given variation does not exist in a nested fragment, then the **Master** variation would be returned.
+
+<!-- between dynamicURL and tags -->
+<!--
+    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
+
+      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
+-->
 
 ## Querying the GraphQL endpoint from an External Website {#query-graphql-endpoint-from-external-website}
 
