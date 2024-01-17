@@ -872,7 +872,7 @@ user-guide-title: AEM as a Cloud Service
       + [Creating Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
       + [Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
       + [Creating Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-      + [Editing Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+      + [Managing and Editing Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
       + [Hibernating Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
     + Creating an AEM Application Project {#create-application-project}
       + [Project Creation Wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
@@ -929,6 +929,7 @@ user-guide-title: AEM as a Cloud Service
       + [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
     + [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md)
     + [Understanding Cloud Service Content Requests](/help/implementing/cloud-manager/content-requests.md)
+    + [CDN Performance Dashboard](/help/implementing/cloud-manager/cdn-performance.md)
     + [Cloud Manager FAQs](/help/implementing/cloud-manager/faqs.md)
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
