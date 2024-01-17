@@ -27,18 +27,15 @@ You must be a member of the **Business Owner** role to edit programs or delete s
 
 ![My Programs page](/help/implementing/cloud-manager/assets/my-programs.png)
 
-### Statistics {#statistics}
+### Call-to-Action {#cta}
 
-At the top of the page are statics of your activities over the past 90 days including:
+At the top of the page is a call-to-action relevant to the status of your organization. For example, if you have successfully set up your programs, statistics of your activities over the past 90 days might show, including:
 
 * Number of [deployments](/help/implementing/cloud-manager/deploy-code.md)
 * Number of [code quality issues](/help/implementing/cloud-manager/code-quality-testing.md) identified
 * Number of builds
 
-Additionally, you have access to the Experience Audit Chatbot, where you can use natural language to ask questions about the [experience audit.](/help/implementing/cloud-manager/experience-audit-testing.md) Please note while using:
-
-* **Be mindful regarding sensitive info** - Adobe may use the chat history to further improve this feature in future.
-* **Answers might not be accurate** - Make sure to check the answers for any potential mistakes.
+Or if you are just beginning the setup of your org, there might be tips on next steps or documentation resources.
 
 ### Programs Tab {#programs-tab}
 
