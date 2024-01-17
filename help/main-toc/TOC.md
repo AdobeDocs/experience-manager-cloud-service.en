@@ -10,7 +10,6 @@ user-guide-title: AEM as a Cloud Service
 
 # Experience Manager as a Cloud Service Help {#content}
 
-+ [AEMaaCS Home](/help/overview/home.md)
 + Overview {#overview}
   + [Introduction to AEM as a Cloud Service](/help/overview/introduction.md)
   + [What is New and What is Different](/help/overview/what-is-new-and-different.md)
@@ -162,9 +161,8 @@ user-guide-title: AEM as a Cloud Service
   + [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md)
   + [Prerelease Channel](/help/release-notes/prerelease.md)
 + Security {#security}
-  + [Security for AEM as a Cloud Service](/help/security/home.md)
-  + [Configuring Advanced Networking for AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
   + [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
+  + [Configuring Advanced Networking for AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support.md)
   + [Same Site Cookie Support for AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
@@ -254,7 +252,6 @@ user-guide-title: AEM as a Cloud Service
     + [AEM Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
     + [AEM Modernization Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
-  + [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
   + [Notable Changes to AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
   + Authoring {#authoring}
     + Getting Started {#getting-started}
@@ -389,7 +386,6 @@ user-guide-title: AEM as a Cloud Service
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
     + [Integrating with Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
-  + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
   + [Overview and what's new](/help/assets/overview.md)
   + [Notable Changes to [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
   + [[!DNL Assets] architecture](/help/assets/architecture.md)
@@ -653,6 +649,8 @@ user-guide-title: AEM as a Cloud Service
         + [Create an accessible Adaptive Form](/help/forms/creating-accessible-adaptive-forms.md)
       + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
       + [Create and manage reviews](/help/forms/create-reviews-forms.md)
+    + [Adaptive forms keywords](/help/forms/adaptive-forms-keywords.md)
+    + [Previewing a form](/help/forms/previewing-forms.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Use Forms-centric steps in a workflow + step reference](/help/forms/aem-forms-workflow-step-reference.md)
     + [Use variables in a Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
@@ -674,7 +672,6 @@ user-guide-title: AEM as a Cloud Service
     + [Installation and configuration](/help/forms/troubleshooting-installation-and-configuration.md)
     + [Dispatcher and CDN caching](/help/forms/troubleshooting-caching-performance.md)
 + Screens {#screens-as-cloud-service}
-  + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
   + Overview to Screens as a Cloud Service {#overview}
     + [Introduction](/help/screens-cloud/introduction/introduction.md)
     + [Understanding Role Definitions](/help/screens-cloud/introduction/personas-screens-cloud.md)
@@ -711,9 +708,8 @@ user-guide-title: AEM as a Cloud Service
     + [Developing a Custom Component for Screens as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
   + [Screens as a Cloud Service FAQs](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
-  + [AEM Content and Commerce](/help/commerce-cloud/home.md)
-  + [Notable Changes to AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/changes.md)
   + [Introduction and overview](/help/commerce-cloud/introduction.md)
+  + [Notable Changes to AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/changes.md)
   + Commerce Journeys {#journeys}
     + Content Author Journey {#author}
       + [AEM Content and Commerce Content Author Journey](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
@@ -1072,7 +1068,6 @@ user-guide-title: AEM as a Cloud Service
     + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
     + [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
 + Connectors {#connectors}
-  + [Implementing Connectors for AEM as a Cloud Service](/help/connectors/home.md)
   + [Implementing an AEM Connector](/help/connectors/implement.md)
   + [Submitting an AEM Connector](/help/connectors/submit.md)
   + [Maintaining an AEM Connector](/help/connectors/maintain.md)
