@@ -66,7 +66,15 @@ Once you have selected a program from the **[My Programs](#my-programs)** page, 
 
 ![Program Overview page](/help/implementing/cloud-manager/assets/program-overview.png)
 
-The information banner at the top will give you the status of your last deployment with links for details and starting a new deployment.
+Tap or click the program name at the top-left corner of the page to quickly switch to another program or back to the **[My Programs](#my-programs)** page. You can also [edit the selected program](#editing) or [add a program.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+
+![Program switcher](/help/implementing/cloud-manager/assets/program-switcher.png)
+
+The information banner at the top will give you helpful information depending on the status of your program. For a new program you may see next steps offered as well as a reminder of a go-live date, [set during program creation.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+
+![Info banner for a new program](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
+
+For a live program, the status of your last deployment with links for details and starting a new deployment.
 
 ![Info banner](/help/implementing/cloud-manager/assets/info-banner.png)
 
