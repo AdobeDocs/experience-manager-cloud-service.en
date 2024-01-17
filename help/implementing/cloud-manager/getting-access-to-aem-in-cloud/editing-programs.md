@@ -60,6 +60,23 @@ Use the sorting options to better find the program you need.
 
 The **License** tab gives you quick access to the [License Dashboard.](/help/implementing/cloud-manager/license-dashboard.md)
 
+## Program Overview {#program-overview}
+
+Once you have selected a program from the **[My Programs](#my-programs)** page, Cloud Manager opens the **Program Overview** page for the selected program.
+
+![Program Overview page](/help/implementing/cloud-manager/assets/program-overview.png)
+
+The information banner at the top will give you the status of your last deployment with links for details and starting a new deployment.
+
+![Info banner](/help/implementing/cloud-manager/assets/info-banner.png)
+
+**Environments** and **Pipelines** cards give a quick overview of both within the selected program.
+
+![Cards](/help/implementing/cloud-manager/assets/environments-pipelines.png)
+
+The **Performance** card gives an overview of the **[CDN Dashboard.](/help/implementing/cloud-manager/cdn-performance.md)**
+
+![Performance card](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 
 ## Editing a Program {#editing}
 
