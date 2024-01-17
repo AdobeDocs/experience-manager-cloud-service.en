@@ -125,8 +125,6 @@ The **Performance** card gives an overview of the **[CDN Dashboard.](/help/imple
       * [Learn more](https://www.adobe.com/go/hipaa-ready) about Adobe's HIPAA ready solution implementation.
    * Once activated, WAF-DDOS protection can then be configured by setting up a [non-production pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
    
-   {{waf-limited-release}}
-
 1. Click **Update** to save your changes to the program.
 
 Anytime a program is edited, including adding or removing a solution or add-on, those changes take effect following the next deployment.
