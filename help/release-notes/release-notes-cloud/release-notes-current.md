@@ -98,6 +98,12 @@ You can now can easily find content by selecting an image and viewing similar im
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
+### Default version and audit-log purging soon for new environments {#default-purging}
+
+Purging is currently disabled for all environments. In the next few weeks, *new environments* will have version and audit-log purging enabled by default, and are configurable via Cloud Manager Configuration Pipeline. Release notes will be updated at that time, specifying the integer value of the first environment that will have that behavio.
+
+*Existing environments* will not be purged by default. In the future, their version and audit-log purge values will be configurable as well.
+
 ### RDE Support for Front-End Code using Site Themes and Site Templates: Early Adopter Program {#rde-frontend-early-adopter}
 
 [Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md). With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
