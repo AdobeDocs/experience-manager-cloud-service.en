@@ -14,7 +14,7 @@ Traffic filter rules can be used to block or allow requests at the CDN layer, wh
 
 Most of these traffic filter rules are available to all AEM as a Cloud Service Sites and Forms customers. They mainly operate on request properties and request headers, including IP, hostname, path, and user agent.
 
-A subcategory of traffic filter rules require either an Enhanced Security license or WAF-DDoS Protection license, and will be available later this year. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
+A subcategory of traffic filter rules require either an Enhanced Security license or WAF-DDoS Protection license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
 
 Traffic filter rules can be deployed via Cloud Manager configuration pipelines to dev, stage, and production environment types in production (non-sandbox) programs. Support for RDEs will come in the future.
 
