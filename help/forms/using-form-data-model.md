@@ -1,8 +1,8 @@
 ---
 title: How can we create Form Data Model for an Adaptive Form?
 description: Learn to create Adaptive Forms and Fragments based on a form data model(FDM). Generate and edit sample data for data model objects in the FDM.
-feature: Form Data Model
-role: User
+feature: Adaptive Forms, Form Data Model
+role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
 ---
