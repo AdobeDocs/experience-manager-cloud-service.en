@@ -1,11 +1,14 @@
 ---
-title: Editing Programs
+title: Managing and Editing Programs
 description: Learn how to edit your production and sandbox programs to adjust their options after you have created them.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 ---
-# Editing Programs {#editing-programs}
 
-Users with the requisite permissions can edit [production programs created in your organization](creating-production-programs.md) and [sandbox programs created in your organization.](creating-sandbox-programs.md) By editing a program, you can:
+# Managing and Editing Programs {#editing-programs}
+
+The **My Programs** page provides an overview of all programs to which you have access. When selecting an individual program, the **Program Overview** page provides details of the program at a glance. 
+
+From the **Program Overview**, users with the requisite permissions can edit [production programs created in your organization](creating-production-programs.md) and [sandbox programs created in your organization.](creating-sandbox-programs.md) By editing a program, you can:
 
 * Add Sites solution to an existing program with Assets and conversely.
 * Remove Sites or Assets from an existing program with both Sites and Assets.
@@ -14,13 +17,55 @@ Users with the requisite permissions can edit [production programs created in yo
 
 ## Permissions {#permissions}
 
-You must be a member of the **Business Owner** role to edit programs or delete sandbox programs.
+You must be a member of the **Business Owner** role to edit programs or delete sandbox programs as well as to access the License Dashboard.
+
+## My Programs {#my-programs}
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+
+1. The **My Programs** page shows a list of all programs to which you have access as tiles.
+
+![My Programs page](/help/implementing/cloud-manager/assets/my-programs.png)
+
+### Statistics {#statistics}
+
+At the top of the page are statics of your activities over the past 90 days including:
+
+* Number of [deployments](/help/implementing/cloud-manager/deploy-code.md)
+* Number of [code quality issues](/help/implementing/cloud-manager/code-quality-testing.md) identified
+* Number of builds
+
+Additionally, you have access to the Experience Audit Chatbot, where you can use natural language to ask questions about the [experience audit.](/help/implementing/cloud-manager/experience-audit-testing.md) Please note while using:
+
+* **Be mindful regarding sensitive info** - Adobe may use the chat history to further improve this feature in future.
+* **Answers might not be accurate** - Make sure to check the answers for any potential mistakes.
+
+### Programs Tab {#programs-tab}
+
+The **Programs** tab lists cards representing each program to which you have access. Tap or click on a card to access the **Program Overview** page of the program for details about the program.
+
+Use the sorting options to better find the program you need.
+
+![Sorting options](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
+
+* Sort by
+  * Date Created (default)
+  * Program Name
+  * Status
+* Ascending (default) / Descending
+* Grid View (default)
+* List View
+
+### License Tab {#license-tab}
+
+The **License** tab gives you quick access to the [License Dashboard.](/help/implementing/cloud-manager/license-dashboard.md)
+
 
 ## Editing a Program {#editing}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click the program that you want to edit to show its details.
+1. On the **[My Programs](#my-programs)** page, click the program that you want to edit to show its details.
 
 1. Click your program's name in the upper-left of the page and select **Edit program**.
 
@@ -73,9 +118,9 @@ To delete a sandbox program, do the following.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click the program that you want to edit to show its details.
+1. On the **[My Programs](#my-programs)** page, click the program that you want to edit to show its details.
 
-1. Click your program's name in the uppper-left of the page and select **Delete Program**.
+1. Click your program's name in the upper-left of the page and select **Delete Program**.
 
    ![Delete program option](assets/delete-sandbox1.png)
 
