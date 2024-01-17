@@ -67,13 +67,13 @@ Tap or click the program name at the top-left corner of the page to quickly swit
 
 ![Program switcher](/help/implementing/cloud-manager/assets/program-switcher.png)
 
-The information banner at the top will give you helpful information depending on the status of your program. For a new program you may see next steps offered as well as a reminder of a go-live date, [set during program creation.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+The call-to-action at the top will give you helpful information depending on the status of your program. For a new program you may see next steps offered as well as a reminder of a go-live date, [set during program creation.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
 
-![Info banner for a new program](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
+![Call-to-action for a new program](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
 For a live program, the status of your last deployment with links for details and starting a new deployment.
 
-![Info banner](/help/implementing/cloud-manager/assets/info-banner.png)
+![Call-to-action](/help/implementing/cloud-manager/assets/info-banner.png)
 
 **Environments** and **Pipelines** cards give a quick overview of both within the selected program.
 
