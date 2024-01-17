@@ -49,6 +49,10 @@ Tap or click the chevron next to any recommendation in the list to view details 
 
 The cache hit ratio is a measurement of how many content requests a cache can fill successfully, compared to how many requests it receives. The higher a cache-hit ratio, the better performing a CDN is.
 
+>[!TIP]
+>
+>Adobe recommends that users aim for a cache hit ratio of 99%. 
+
 ```text
 Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 ```
