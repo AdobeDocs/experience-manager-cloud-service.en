@@ -69,7 +69,7 @@ These rules are validated during the Cloud Manager build process. Additional rul
 
 Additional information about OSGI configuration can be found at [this location](/help/implementing/deploying/configuring-osgi.md).
 
-+++OSGi Configurations that cannot be modified.
++++OSGi configurations that cannot be modified.
   * **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
   * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
   * **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
@@ -77,7 +77,7 @@ Additional information about OSGI configuration can be found at [this location](
   * **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Announcement Date: 8/25/2021, Enforcement Date: 11/26/2021)
 +++
 
-+++OSGi Configurations subject to build validation rules.
++++OSGi configurations subject to build validation rules.
   * **`org.apache.felix.eventadmin.impl.EventAdmin`** (Announcement Date: 4/30/2021, Enforcement Date: 7/31/2021)
   * `org.apache.felix.eventadmin.ThreadPoolSize` 
     * Type: integer
