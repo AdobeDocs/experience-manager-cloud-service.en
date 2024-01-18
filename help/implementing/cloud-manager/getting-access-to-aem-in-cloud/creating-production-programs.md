@@ -29,6 +29,7 @@ Follow these steps to create a production program. Note that depending on your o
 1. On the **Solutions &amp; Add-ons** tab, select the solutions to include in the program.
 
    * If you are not sure if you need one or more programs for the various solutions you have available, select the one most of interest to you. You can activate additional solutions by [editing the program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) later. See the [Introduction to Production Programs document](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more program setup recommendations.
+   * At least one solution is required for program creation.
    * If you selected the **[Enable Enhanced Security](#security)** option, you are allowed to select only as many solutions for which HIPAA entitlements are available.
 
    ![Select solutions](assets/setup-prod-select.png)
@@ -67,7 +68,7 @@ Adobe HIPAA Compliant and Web Application Firewall (WAF) facilitates cloud-based
    * **HIPAA** - This option enables Adobe's HIPPA-ready solution implementation.
      * [Learn more](https://www.adobe.com/go/hipaa-ready) about Adobe's HIPAA ready solution implementation.
      * HIPAA cannot be enabled or disabled after program creation.
-   * WAF-DDOS Protection - This option enables the web application firewall via rules to protect your application.
+   * **WAF-DDOS Protection** - This option enables the web application firewall via rules to protect your application.
      * Once activated, WAF-DDOS protection can then be configured by setting up a [non-production pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
      * See the document [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage traffic filter rules in your repository so they are deployed properly.
    

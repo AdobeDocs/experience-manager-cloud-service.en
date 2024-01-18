@@ -93,38 +93,21 @@ The **Performance** card gives an overview of the **[CDN Dashboard.](/help/imple
 
    ![Edit program option](assets/edit-program-overview.png)
 
-1. The **Edit Program** page opens. On the **General** tab, edit the program name and description.
-
-   * At least one solution must be selected for a program.
+1. The **Edit Program** page opens to the **General** tab.
 
    ![General tab](assets/edit-program-prod1.png)
 
-1. On the **Solutions &amp; Add-ons** tab, modify the solutions for the program.
+1. The options available for editing the program are the same as those when creating the program.
+   * Please see the documents [Creating Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) and [Creating Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) for details on the individual options. 
+   * [Additional options](//help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) may be available for your production program depending on the entitlements of your organization.
 
-   ![Select solutions](assets/edit-prg.png)
-
-1. Click the chevron before the solution name to reveal optional add-ons such as selecting the **Commerce** add-on option under **Sites**.
-
-   ![Edit add-ons](assets/edit-program-add-on.png)
-
-1. On the **Go live settings** tab, modify the planned go-live date for the program.
-
-   ![Edit go-live settings](assets/edit-program-go-live.png)
-
-   * This date is for informational use only. It triggers the Go Live widget on the program overview page. In turn, it provides in-product links to Adobe Experience Manager (AEM) as a Cloud Service best practice documentation to align with your journey, culminating in a successful Go Live experience.
-   * This tab is not available for sandbox programs.
-
-1. If the required entitlements are available for the program, the **Security** tab will show where you can modify the security options for the program.
-
-   ![Edit security settings](assets/edit-program-security.png)
-
-   * HIPAA cannot be enabled or disabled after [program creation.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-      * [Learn more](https://www.adobe.com/go/hipaa-ready) about Adobe's HIPAA ready solution implementation.
-   * Once activated, WAF-DDOS protection can then be configured by setting up a [non-production pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-   
 1. Click **Update** to save your changes to the program.
 
-Anytime a program is edited, including adding or removing a solution or add-on, those changes take effect following the next deployment.
+The changes to the program are saved.
+
+>[!NOTE]
+>
+>Anytime a program is edited, including adding or removing a solution or add-on, those changes take effect following the next deployment.
 
 ## Deleting Sandbox Programs {#delete-sandbox-program}
 
