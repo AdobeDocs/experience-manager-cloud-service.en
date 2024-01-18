@@ -76,17 +76,15 @@ You can [customize the default Submit Actions](custom-submit-action-form.md). Ad
 To send an email to one or more recipients upon successful submission of the form, you can use the **[!UICONTROL Send Email]** Submit Action. 
 
 Refer to [configure the send email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md) to learn how to set up an Adaptive Form to send an email upon successful submission.
-
-<!-- [!NOTE]
+[!NOTE]
 >
 >Send PDF via Email Submit Action is applicable only to Adaptive Forms that use XFA template as form model. 
 
 >[!NOTE]
 >
 >Ensure that the [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder
->exists. The directory is required to temporarily store attachments. If the directory does not exist, create it. -->
+>exists. The directory is required to temporarily store attachments. If the directory does not exist, create it.
 
-<!--
 
 >[!CAUTION]
 >
@@ -154,23 +152,16 @@ The **Send PDF via Email** Submit Action sends an email with a PDF containing fo
 >[!NOTE]
 >
 >This Submit Action is available for XFA-based Adaptive Forms and XSD-based adaption forms that have the Document of Record template. 
-
--->
-
-<!-- ## Invoke a forms workflow {#invoke-a-forms-workflow}
+## Invoke a forms workflow {#invoke-a-forms-workflow}
 
 The **Submit to Forms workflow** submit option sends a data xml and file attachments (if any) to an existing Adobe LiveCycle or [!DNL AEM Forms] on JEE process.
 
-For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
-
-<!--
+For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). 
 ## Forms Portal Submit Action {#forms-portal-submit-action}
 
 The **Forms Portal Submit Action** option makes form data available through an [!DNL AEM Forms] portal.
 
-For more information about the Forms Portal and Submit Action, see [Drafts and submissions component](draft-submission-component.md). -->
-
-<!--
+For more information about the Forms Portal and Submit Action, see [Drafts and submissions component](draft-submission-component.md). 
 
 ## Use synchronous or asynchronous submission {#use-synchronous-or-asynchronous-submission}
 
