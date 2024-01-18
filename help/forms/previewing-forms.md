@@ -1,9 +1,9 @@
 ---
 title: How to preview an adaptive form?
-description: Users can preview forms before publishing or activating, to ensure it meets the expectations. Preview options may vary across the supported form types.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+description: Users can preview form before publishing or activating, to ensure it meets the expectations. Preview options may vary across the supported form types.
 topic-tags: author
-discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
+role: Admin, Developer, User
+feature: Adaptive Forms
 ---
 
 # Previewing a form {#previewing-a-form}
@@ -22,10 +22,10 @@ The following table lists the preview options available for different types of s
    <td><strong>Asset type</strong><br /> </td>
    <td><strong>Available preview options</strong><br /> </td>
   </tr>
-  <tr>
+  <!--<tr>
    <td>Document</td>
    <td>PDF preview</td>
-  </tr>
+  </tr>-->
   <tr>
    <td>PDF Form</td>
    <td>PDF preview and Preview with Data<br /> </td>
@@ -34,16 +34,16 @@ The following table lists the preview options available for different types of s
    <td>Adaptive Form</td>
    <td>HTML preview and HTML preview with Data</td>
   </tr>
-  <tr>
+  <!--<tr>
    <td>Form Template</td>
    <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
-  </tr>
+  </tr>-->
  </tbody>
 </table>
 
 ## Previewing a form {#previewing-a-form-1}
 
-1. Select an asset you want to preview, and click Preview ![aem6forms_preview](assets/aem6forms_preview.png) in the actions toolbar.
+1. Select an asset that you want to preview, and click Preview ![aem6forms_preview](assets/aem6forms_preview.png) in the actions toolbar.
 
    >[!NOTE]
    >
@@ -55,7 +55,7 @@ The following table lists the preview options available for different types of s
 
     * Preview as HTML
     * Preview with Data
-    * Preview as PDF (available for form templates)
+    <!--* Preview as PDF (available for form templates)-->
 
 ## Preview with Data {#preview-with-data}
 

@@ -16,8 +16,6 @@ exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html)                  |
 | AEM as a Cloud Service     | This article         |
 
-
-
 A Submit Action lets you choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. Forms as a Cloud Service, for Adaptive Forms based on Core Components, offers an array of pre-built Submit Actions. These out-of-the-box submit actions empower you to: 
 
 * Effortlessly send form data via email.
