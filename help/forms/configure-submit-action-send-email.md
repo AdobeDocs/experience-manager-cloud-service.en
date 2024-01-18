@@ -1,20 +1,16 @@
 ---
 Title: How to send an email on submission of an Adaptive Form?
 Description: Explore the process to set up email notifications when submitting an Adaptive Form.
-keywords: how to configure send an email submit action for an adpative form, Email Submit Action, Adaptive Form Email, Form Submission Email, Send Email Guide
+keywords: how to send an email for an adpative form, Email Submit Action, Adaptive Form Email, Form Submission Email, Send Email Guide
 feature: Adaptive Forms, Core Components
 ---
 
 # Configure the Send Email submit action for an Adaptive Form
 
-To send an email to one or more recipients upon successful submission of the form, you can use the **[!UICONTROL Send Email]** Submit Action. 
+The **[!UICONTROL Send Email]** Submit Action enables you to create an email. To send an email to one or more recipients upon successful submission of the form, you can utilize the Send Email Submit Action. This action enables you to create an email that includes form data in a predefined format. For instance, consider the following template where customer name, shipping address, state name, and ZIP code are retrieved from the submitted form data:
 
-AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
-
-The **[!UICONTROL Send Email]** Submit Action enables you to create an email that includes form data in a predefined format. For instance, consider the following template where customer name, shipping address, state name, and ZIP code are retrieved from the submitted form data:
 
      ```
- 
      Hi ${customer_Name},
  
      The following is set as your deafult shipping address:
@@ -28,6 +24,13 @@ The **[!UICONTROL Send Email]** Submit Action enables you to create an email tha
  
      ```
 
+> [!NOTE]
+>
+> * It is crucial for all form fields to have unique element names, even if they are placed on different panels within an Adaptive Form.
+> * When using AEM as a Cloud Service, outbound email requires encryption. By default, outbound email functionality is disabled. To activate it, submit a support ticket to Request Access.
+
+AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md) article.
+
 ## Advantages
 
 Here are advantages of configuring an Adaptive Form with Send Email submit action:
@@ -36,7 +39,7 @@ Here are advantages of configuring an Adaptive Form with Send Email submit actio
 * It helps in streamlining the workflow by directly integrating form submissions into email notifications.
 * It helps organizations customize the email content, thus making it suitable for specific communication needs.
 
-## Steps to configure send email submit action {#steps-to-configure-send-email-submit-action}
+## Configure send email submit action {#steps-to-configure-send-email-submit-action}
 
 To set up Adaptive Form send email configuration, perform the following steps:
 
@@ -48,20 +51,40 @@ To set up Adaptive Form send email configuration, perform the following steps:
 
     ![Action configuration of Send Email](/help/forms/assets/send-email-action-configuration.gif)
 
-    1. Specify email id in the **[!UICONTROL From]** textbox.
+    1. Specify sender's email id in the **[!UICONTROL From]** textbox.
     1. Add the email id of the recipient in the **[!UICONTROL To]** textbox. You can add multiple recipients by clicking the **[!UICONTROL Add]** button. 
     1. [Optional] Add the recipient for CC and BCC by clicking the **[!UICONTROL Add]** button. 
-    1. Specify a clear subject line in the **[!UICONTROL Subject]** textbox.
-    1. You can either specify the path to the external email template using **[!UICONTROL External Template Path]** or add the custom email template for form submission in the **![!UICONTROL Email Template]** textbox. 
-    1. [Optional] The **[!UICONTROL Send Email]** Submit Action provides the option to include attachments and a Document of Record (DoR) with the email. 
-    To enable the [!UICONTROL Attach Document of Record] option, refer to the documentation on [configure the Adaptive Form to generate a Document of Record (DoR)](generate-document-of-record-core-components.md). You can enable this option from the Adaptive Form properties.
+    1. Specify a subject line in the **[!UICONTROL Subject]** textbox.
+    1. You can either provide an external email template or create your own custom email template.
+    To specify the path to the external email template, use **[!UICONTROL External Template Path]** and click **[!UICONTROL Choose]**. 
+    Or add a custom email template for the form submission in the **[!UICONTROL Email Template]** textbox.
+    
+        ```
+        Sample Email Template for Job Application:
+        
+        From: [Recipient's Email ID]
+        To: [Sender's Email ID]
+        Subject: Application for [Job Title] - [Your Full Name]
+        Dear [Hiring Manager's Name],
+        I hope this email finds you well. I am writing to express my interest in the [Job Title] position, as advertised on your company's [where you found the job posting].
 
-1. Click **[!UICONTROL Done]**
+        Enclosed, please find my resume for your review. I would welcome the opportunity to further discuss how my experiences and skills make me a suitable candidate for this role.
+        I look forward to the possibility of an interview.
+        Best regards,
+
+        [Your Full Name]
+        [Your Contact Information]
+        [LinkedIn Profile or any relevant links]
+        ```
+
+    1. [Optional] The **[!UICONTROL Send Email]** Submit Action provides the option to include attachments and a [Document of Record (DoR)](generate-document-of-record-core-components.md) with the email. 
+    
+
+1. Click **[!UICONTROL Done]**.
 
 
 ## Best Practices {#best-practices}
 
-* If the form submission involves sensitive information, ensure that the email communication is secure.
 * It is recommended to keep the email content clear and concise. Users should understand the purpose of the email and any actions they need to take.
 * It is crucial for all form fields to have unique element names, even if they are placed on different panels within an Adaptive Form.
 * When using AEM as a Cloud Service, outbound email requires encryption. By default, outbound email functionality is disabled. To activate it, submit a support ticket to [Request Access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). 

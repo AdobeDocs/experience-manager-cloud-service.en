@@ -17,7 +17,7 @@ Here are some of the advantages of seamless integration of AEM Forms and Microso
 * Cross-device accessibility of OneDrive ensures that stored form data is readily available on different platforms. Users can access the submitted data, attachments, and documents from desktops, laptops, tablets, and mobile devices, enhancing accessibility and flexibility.
 * OneDrive integration with AEM forms provides a reliable and scalable solution for efficient data storage. All Adaptive Form submissions, such as files, attachments, and Document of Record, can be conveniently saved in OneDrive, ensuring organized and accessible data.
 
-## Steps to connect OneDrive to an Adaptive
+## Connect OneDrive to an Adaptive
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
@@ -30,8 +30,8 @@ Configuring OneDrive for AEM Forms submission, perform the following steps:
 
 To connect AEM Forms to your Microsoft&reg; OneDrive Storage:
 
-1. Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft®&reg; OneDrive]**.   
-1. Once you select the **[!UICONTROL Microsoft®&reg; OneDrive]**, you are redirected to **[!UICONTROL OneDrive Browser]**.
+1. Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; OneDrive]**.   
+1. Once you select the **[!UICONTROL Microsoft&reg; OneDrive]**, you are redirected to **[!UICONTROL OneDrive Browser]**.
 1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
 1. Click **[!UICONTROL Create]**. The OneDrive configuration wizard appears. 
 

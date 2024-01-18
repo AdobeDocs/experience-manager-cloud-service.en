@@ -1,7 +1,7 @@
 ---
 Title: How to connect AEM Adaptive Forms with Azure Blob Storage?
 Description: Learn how to create an Azure Blob Storage Configuration in AEM Forms and use it within your Adaptive Forms for efficient data storage.
-keywords: Azure Blob Storage integration with AEM Forms, Submitting data to Azure Storage from Adaptive Forms, Creating Azure Storage Configuration in AEM Forms, Using Azure Blob Storage in Adaptive Forms Submit Action
+keywords: Azure Blob Storage integration with AEM Forms, Submitting data to Azure Storage, Creating Azure Storage Configuration in AEM Forms, Using Azure Blob Storage in Adaptive Forms Submit Action
 feature: Adaptive Forms, Core Components
 ---
 
@@ -9,7 +9,7 @@ feature: Adaptive Forms, Core Components
 
 The **[!UICONTROL Submit to Azure Blob Storage]**  Submit Action connects an Adaptive Form with a Microsoft&reg; Azure portal. You can submit the form data, files, attachments, or Document of Record to the connected Azure Storage containers. 
 
-AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
+AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md) article.
 
 ## Advantages
 
@@ -18,7 +18,7 @@ Some of the advantages of Azure Blob Storage integration with AEM Forms are:
 * It helps in streamlining the process of submitting Adaptive Form data, files, attachments, and Document of Record to Azure Storage containers.
 * It uses Azure Blob Storage for centralized and organized storage of Adaptive Form submissions.
 
-## Steps to connect AEM Forms with Microsoft® Azure Blob Storage
+## Connect AEM Forms with Microsoft® Azure Blob Storage
 
 To use Azure Blob Storage in Adaptive Forms Submit Action: 
 
@@ -64,7 +64,6 @@ Folder structure to save data is `/configuration_container/form_name/year/month/
 
 ## Best Practices
 
-* It is recommended to ensure the confidentiality and security of the Azure Storage by using proper access keys and secure configurations.
 * Implement proper access controls and permissions to manage the users who can submit data or access the stored data in Azure Storage.
 
 ## Related Articles

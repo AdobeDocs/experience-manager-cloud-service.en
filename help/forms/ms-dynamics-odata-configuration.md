@@ -30,6 +30,9 @@ exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 
 <!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service (OData Service) is available with all run modes. For more information on configuring run modes for an [!DNL Experience Manager] instance, see [Run Modes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes).
 
+AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
+
+
 ## Prerequisites {#prerequisites}
 
 Before you begin to set up and configure [!DNL Microsoft Dynamics], ensure that you have:
@@ -64,7 +67,7 @@ Do the following to set the Reply URL for registered [!DNL Microsoft Dynamics] a
 
 >[!NOTE]
 >
->Use this procedure only while integrating [!DNL Experience Manager Forms] with on-premises [!DNL Microsoft Dynamics] server.
+> Use this procedure only while integrating [!DNL Experience Manager Forms] with on-premises [!DNL Microsoft Dynamics] server.
 
 1. Configure [!DNL Microsoft Dynamics] on-premises instance for IFD as described in [Configure IFD for [!DNL Microsoft Dynamics]](https://technet.microsoft.com/en-us/library/dn609803.aspx).
 1. Run the following commands using Windows PowerShell to configure claim settings on IFD-enabled [!DNL Microsoft Dynamics]:

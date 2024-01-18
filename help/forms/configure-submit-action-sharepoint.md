@@ -1,7 +1,7 @@
 ---
 Title: How to send data to a SharePoint storage on submission of an Adaptive Form?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list or Document library when you submit the form.
-keywords: How to configure SharePoint storage for an adpative form, Submit to SharePoint, Create a SharePoint Document Library Configuration, Use the Submit to SharePoint submit action in an Adaptive Form, Connect an Adaptive Form to Microsoft&reg; SharePoint List.  
+keywords: How to configure SharePoint list for an adpative form?, How to configure SharePoint document library for an adpative form, Submit to SharePoint, Create a SharePoint Document Library Configuration, Use the Submit to SharePoint submit action in an Adaptive Form, Connect an Adaptive Form to Microsoft&reg; SharePoint List.  
 feature: Adaptive Forms, Core Components
 ---
 
@@ -133,8 +133,8 @@ When you submit the form, the data is saved in the specified Microsoft&reg; Shar
 
 ## Best Practices
 
-* It is recommended to secure the SharePoint configurations by providing appropriate access controls and permissions. Ensure that only authorized individuals have access to sensitive information.
 * In case your Adaptive Form submissions include attachments or files, a SharePoint Document Library is suitable, as it provides a structured way to store and organize documents. If your form data is more tabular or structured, a SharePoint List is a suitable choice, as it stores and manages structured data with columns and rows.
+* It is recommended to secure the SharePoint configurations by providing appropriate access controls and permissions. Ensure that only authorized individuals have access to sensitive information.
 
 ## Related Articles
 
