@@ -8,10 +8,6 @@
 
 [!BADGE For authoring AEM content for Edge Delivery Services, click here.]{type=Positive url="/help/edge/overview.md" tooltip="Authoring AEM content for Edge Delivery Services"}
 
-## WAF Config Limited Release {#waf-limited-release}
-
-[!BADGE WAF-DDOS protection will be available by the end of 2023.]{type=Caution tooltip="WAF-DDOS protection will be available by the end of 2023."}
-
 ## Universal Editor Status {#universal-editor-status}
 
 >[!NOTE]
