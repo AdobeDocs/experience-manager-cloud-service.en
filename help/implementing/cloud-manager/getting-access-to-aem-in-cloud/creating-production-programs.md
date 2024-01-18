@@ -90,7 +90,7 @@ AEM Sites offers a standard 99.9% service level agreement (SLA). The **99.99% Se
 >
 >* Both 99.99% SLA and additional publish region entitlements must be available to the organization at the time of applying 99.99% SLA to the program.
 >* In order to apply 99.99% SLA to the program, Cloud Manager will check to ensure that an unconsumed [additional publish region](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) entitlement is also available and can be applied to the program.
->* In order for the 99.99% SLA and reporting to be activated, the [production/stage environment](//help/implementing/cloud-manager/manage-environments.md#adding-environments) must have been created and at least one additional publish region must have been applied on the production/stage environment.
+>* In order for the 99.99% SLA and reporting to be activated, the [production/stage environment](/help/implementing/cloud-manager/manage-environments.md#adding-environments) must have been created and at least one additional publish region must have been applied on the production/stage environment.
 >* At least one additional publish region must remain in your 99.99% SLA program. Users are disallowed from deleting the last additional publish region from your 99.99% SLA program.
 >* 99.99% SLA is supported for production programs that have the Sites solution enabled.
 

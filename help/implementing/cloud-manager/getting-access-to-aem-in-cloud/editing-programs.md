@@ -99,7 +99,7 @@ The **Performance** card gives an overview of the **[CDN Dashboard.](/help/imple
 
 1. The options available for editing the program are the same as those when creating the program.
    * Please see the documents [Creating Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) and [Creating Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) for details on the individual options. 
-   * [Additional options](//help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) may be available for your production program depending on the entitlements of your organization.
+   * [Additional options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) may be available for your production program depending on the entitlements of your organization.
 
 1. Click **Update** to save your changes to the program.
 
