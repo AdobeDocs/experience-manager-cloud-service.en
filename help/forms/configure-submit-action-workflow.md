@@ -17,7 +17,7 @@ AEM as a Cloud Service offers various out of the box submit actions for handling
 
 ## Advantages
 
-Here are some of the advantages of integrating AEM workflow with Adaptive Forms:
+Some of the advantages of integrating AEM workflow with Adaptive Forms are:
 
 * AEM Workflow integration allows for the automation of complex business processes involving form submissions.
 *  AEM Workflow supports conditional logic, thus allowing dynamic decisions based on form data or external factors.
