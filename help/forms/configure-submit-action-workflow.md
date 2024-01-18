@@ -30,7 +30,7 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 * **[!UICONTROL Processing Server Password]**: Workflow user's password
 
-## Steps to integrate AEM Workflow with Adaptive Forms {#steps-to-integrate-workflow-with-af}
+## Integrate AEM Workflow with Adaptive Forms {#steps-to-integrate-workflow-with-af}
 
 To set up automated process with [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) for an Adaptive Form, perform the following steps:
 

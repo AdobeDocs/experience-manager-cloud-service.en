@@ -16,6 +16,10 @@ You can use OAuth 2.0 client credentials to integrate AEM Forms with the Salesfo
 ![Workflow while setting communication between AEM Forms and Salesforce application](/help/forms/assets/salesforce-workflow.png)
 
 AEM Forms exchanges the client credentials (consumer key and consumer secret), defined in the Salesforce connected application, to obtain an access token.
+
+AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md) article.
+
+## Advantages
  
 There are multiple benefits of using OAuth 2.0 client credentials for authentication over Authorization Code Flow authentication:
 
@@ -62,5 +66,7 @@ To connect Adaptive Form to  Salesforce application using OAuth 2.0 client crede
 1. If the connection succeeds, click the **[!UICONTROL Create]** button.
 
 Now, you can [create the Form Data Model](/help/forms/create-form-data-models.md) to send Adaptive Form to Salesforce Application.
+
+For more information about creating and using Form Data Model in business workflows, see [Data Integration](data-integration.md).
 
 

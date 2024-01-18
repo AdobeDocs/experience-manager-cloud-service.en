@@ -26,7 +26,7 @@ A Submit Action lets you choose the destination of data captured via an Adaptive
 * Seamlessly send the data to a configured data source using the Form Data Model.
 * Conveniently submit the data to a REST endpoint.
 
-You can also [extend the default Submit Actions](custom-submit-action-form.md) to create a Submit Action of your own. 
+You can [extend the default Submit Actions](custom-submit-action-form.md). You can also customize the Submit Actions for organizational-specific requirements.
 
 ## Select and configure a Submit Action for an Adaptive Form {#select-and-configure-submit-action}
 
@@ -39,18 +39,24 @@ To select and configure a Submit Action for your form:
 
     ![Click the Wrench icon to open Adaptive Form Container dialog box to configure a submit action](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. Select and configure a **[!UICONTROL Submit action]**, based on your requirements. For detailed information about the selected Submit Action, see:
+1. Select and configure a **[!UICONTROL Submit action]**, based on your requirements. 
 
-     * [Send email](#send-email)
-     * [Submit to SharePoint](#submit-to-sharedrive)
-     * [Submit using Form Data Model](#submit-using-form-data-model)
-     * [Submit to Azure Blob Storage](#azure-blob-storage)
-     * [Submit to REST endpoint](#submit-to-rest-endpoint)
-     * [Submit to OneDrive](#submit-to-onedrive)
-     * [Invoke an AEM Workflow](#invoke-an-aem-workflow)
-     * [Submit to Power Automate](#microsoft-power-automate)
-     * [Submit to Workfront Fusion](#workfront-fusion)
+For detailed information about the following Submit Actions, see:
 
+* [Send email](/help/forms/configure-submit-action-send-email.md)
+* [Submit to Microsoft® SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Submit using Form Data Model](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+* [Submit to Microsoft® Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
+* [Submit to Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
+* [Invoke an AEM Workflow](/help/forms/configure-submit-action-workflow.md)
+* [Submit to Microsoft® Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+* [Submit to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [Submit to Salesforce using OAuth 2.0 client credential flow](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Submit to Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+    
+
+<!--
 ## Send Email {#send-email}
 
 To send an email to one or more recipients upon successful submission of the form, you can use the **[!UICONTROL Send Email]** Submit Action. 
@@ -75,8 +81,6 @@ Refer to [configure the send email submit action for an Adaptive Form](/help/for
 >[!CAUTION]
 >
 >If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
-
--->
 
 ## Submit to Microsoft® SharePoint {#submit-to-sharedrive}
 
@@ -129,13 +133,15 @@ You can configure an Adaptive Form to submit data to Workfront Fusion on submiss
 
 The Adaptive Forms editor provides the **Invoke a WorkFront Fusion Scenario** submit action to send Adaptive Forms data or attachments to a Workfront Fusion scenario. To use the submit action for sending captured data to a Workfront Fusion scenario, refer to [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
 
-<!-- ## Send PDF via Email {#send-pdf-via-email}
+## Send PDF via Email {#send-pdf-via-email}
 
 The **Send PDF via Email** Submit Action sends an email with a PDF containing form data, to one or more recipients on successful submission of the form.
 
 >[!NOTE]
 >
->This Submit Action is available for XFA-based Adaptive Forms and XSD-based adaption forms that have the Document of Record template. -->
+>This Submit Action is available for XFA-based Adaptive Forms and XSD-based adaption forms that have the Document of Record template. 
+
+-->
 
 <!-- ## Invoke a forms workflow {#invoke-a-forms-workflow}
 
