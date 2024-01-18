@@ -1,11 +1,11 @@
 ---
 Title: How to send data to a SharePoint storage on submission of an Adaptive Form?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list or Document library when you submit the form.
-keywords: How to configure SharePoint list for an adpative form?, How to configure SharePoint document library for an adpative form, Submit to SharePoint, Create a SharePoint Document Library Configuration, Use the Submit to SharePoint submit action in an Adaptive Form, Connect an Adaptive Form to Microsoft&reg; SharePoint List.  
+keywords: How to connect SharePoint list for an adpative form?, How to connnect SharePoint document library for an adpative form, Submit to SharePoint, Create a SharePoint Document Library Configuration, Use the Submit to SharePoint submit action in an Adaptive Form, Connect an Adaptive Form to Microsoft&reg; SharePoint List.  
 feature: Adaptive Forms, Core Components
 ---
 
-# Configure SharePoint Storage for an Adaptive Form
+# Connect an Adaptive Form to Microsoft® SharePoint
 
 The **[!UICONTROL Submit to SharePoint]** submit action allows you to seamlessly connect your Adaptive Form with a Microsoft® SharePoint storage. It sends the form data to the SharePoint storage of your choice after you submit the form. 
 
@@ -13,7 +13,7 @@ AEM as a Cloud Service offers various out of the box submit actions for handling
 
 ## Advantages
 
-Advantages of submitting data from an Adaptive Form to the **[!UICONTROL Submit to SharePoint]** Submit Action are:
+Some of the advantages of submitting data from an Adaptive Form to the SharePoint storage are:
 
 * It facilitates the direct submission of form data to SharePoint, providing a centralized location for storing and managing information.
 * By applying the SharePoint's access control and permissions features, it ensures that only authorized individuals can view or modify the submitted data.
@@ -32,14 +32,14 @@ To use the **[!UICONTROL Submit to SharePoint Document Library]** Submit Action 
 
 ### Create a SharePoint Document Library configuration {#create-sharepoint-configuration}
 
-To connect AEM Forms to your Microsoft&reg; Sharepoint Document Library Storage:
+To connect AEM Forms to your Microsoft&reg; Sharepoint Document Library storage:
 
-1. Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft®&reg; SharePoint]**.   
-1. Once you select the **[!UICONTROL Microsoft®&reg; SharePoint]**, you are redirected to **[!UICONTROL SharePoint Browser]**.
+1. Go to your **AEM Forms Author** instance > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; SharePoint]**.   
+1. Once you select the **[!UICONTROL Microsoft&reg; SharePoint]**, you are redirected to **[!UICONTROL SharePoint Browser]**.
 1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
 1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint Document Library]** from the drop-down list. The SharePoint configuration wizard appears. 
 
- ![Sharepoint configuration](/help/forms/assets/sharepoint_configuration.png)
+    ![Sharepoint configuration](/help/forms/assets/sharepoint_configuration.png)
 1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
     * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
     * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
@@ -93,7 +93,7 @@ To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive F
 
 To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 
-1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft®&reg; SharePoint]**.   
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; SharePoint]**.   
 1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
 1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
 1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
@@ -118,7 +118,7 @@ You can use the created SharePoint List configuration in an Adaptive Form, to sa
 1. [Create a Form Data Model using Microsoft&reg; SharePoint List configuration](/help/forms/create-form-data-models.md)
 1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
-1. [Configure Submit action using a Form Data Model](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [Configure Submit action using a Form Data Model](/help/forms/using-form-data-model.md)
 
 When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
 
@@ -129,12 +129,6 @@ When you submit the form, the data is saved in the specified Microsoft&reg; Shar
 > * metadata column
 > * person column
 > * external data column
-
-
-## Best Practices
-
-* In case your Adaptive Form submissions include attachments or files, a SharePoint Document Library is suitable, as it provides a structured way to store and organize documents. If your form data is more tabular or structured, a SharePoint List is a suitable choice, as it stores and manages structured data with columns and rows.
-* It is recommended to secure the SharePoint configurations by providing appropriate access controls and permissions. Ensure that only authorized individuals have access to sensitive information.
 
 ## Related Articles
 

@@ -62,10 +62,6 @@ You can use the created Azure Storage container configuration in an Adaptive For
 When you submit the form, the data is saved in the specified Azure Storage container configuration. 
 Folder structure to save data is `/configuration_container/form_name/year/month/date/submission_id/data`. 
 
-## Best Practices
-
-* Implement proper access controls and permissions to manage the users who can submit data or access the stored data in Azure Storage.
-
 ## Related Articles
 
 {{af-submit-action}}

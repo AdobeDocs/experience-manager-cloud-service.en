@@ -13,7 +13,7 @@ AEM as a Cloud Service offers various out of the box submit actions for handling
 
 ## Advantages
 
-Here are some of the advantages of seamless integration of AEM Forms and Microsoft® OneDrive:
+some of the advantages of seamless integration of AEM Forms and Microsoft® OneDrive are:
 * Cross-device accessibility of OneDrive ensures that stored form data is readily available on different platforms. Users can access the submitted data, attachments, and documents from desktops, laptops, tablets, and mobile devices, enhancing accessibility and flexibility.
 * OneDrive integration with AEM forms provides a reliable and scalable solution for efficient data storage. All Adaptive Form submissions, such as files, attachments, and Document of Record, can be conveniently saved in OneDrive, ensuring organized and accessible data.
 
@@ -75,10 +75,6 @@ You can use the created OneDrive storage configuration in an Adaptive Form, to s
 
 When you submit the form, the data is saved in the specified Microsoft&reg; OneDrive Storage. 
 Folder structure to save data is `/folder_name/form_name/year/month/date/submission_id/data`. 
-
-## Best Practices
-
-* It is recommended to define access permissions to maintain data security. Ensure that only authorized individuals or groups have access to specific folders or documents within OneDrive.
 
 ## Related Articles
 

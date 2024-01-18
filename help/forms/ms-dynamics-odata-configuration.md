@@ -155,14 +155,16 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-After configuring MS Dynamics OData Cloud Ser Form Data Model ce) cloud service, you can use the service while creating form data models. For more information, see [Create form data model](create-form-data-models.md).
+After configuring MS Dynamics OData cloud service, you can use the service while creating form data models. For more information, see [Create form data model](create-form-data-models.md).
 
-Next, you can create an Adaptive Form based o Form Data Model odel and use it in various Adaptive Form use cases, such as:
+Next, you can create an Adaptive Form based Form Data Model and use it in various Adaptive Form use cases, such as:
 
 * Prefill Adaptive Form by querying information from [!DNL Microsoft Dynamics] entities and services
 * Invoke [!DNL Microsoft Dynamics] server operations defined in a Form Data Model using Adaptive Form rules
 * Write submitted form data to [!DNL Microsoft Dynamics] entities
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
+
+You can [configure the Form Data Model Submit Action](/help/forms/using-form-data-model.md) for an Adaptive Form to send data to Microsoft Dynamics OData.
 
 For more information about creating and using Form Data Model in business workflows, see [Data Integration](data-integration.md).

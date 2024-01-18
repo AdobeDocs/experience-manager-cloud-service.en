@@ -15,7 +15,7 @@ exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html)                  |
 | AEM as a Cloud Service     | This article         |
-| Applies to     | ✅ Adaptive Form Core Components, ❎ [Adaptive Form Foundation Components](/help/forms/configuring-submit-actions.md)          |
+
 
 
 A Submit Action lets you choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. Forms as a Cloud Service, for Adaptive Forms based on Core Components, offers an array of pre-built Submit Actions. These out-of-the-box submit actions empower you to: 
@@ -27,6 +27,13 @@ A Submit Action lets you choose the destination of data captured via an Adaptive
 * Conveniently submit the data to a REST endpoint.
 
 You can [extend the default Submit Actions](custom-submit-action-form.md). You can also customize the Submit Actions for organizational-specific requirements.
+
+To define a Submit action for an Adaptive, use the Configure Dialog of an **Adaptive Form Container** component. The configure dialog of a **Adaptive Form Container** component includes:
+* Basic Tab
+* Form Data Model Tab
+* Submission Tab
+
+You can define the Form Container properties using the Configure Dialog. To learn more about the Configure Dialog of a Form Container component, [click here.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)
 
 ## Select and configure a Submit Action for an Adaptive Form {#select-and-configure-submit-action}
 
@@ -41,19 +48,28 @@ To select and configure a Submit Action for your form:
 
 1. Select and configure a **[!UICONTROL Submit action]**, based on your requirements. 
 
+You can also configure different actions for an Adaptive Form submissions.
+* **Redirect URL/Path** - This option allows user to configure a page for each form, to which the form users are redirected after submitting an Adaptive Form. 
+* **Show Message** - This option allows users to add a message that is displayed when the Adaptive Form is successfully submitted. The predefined text is included in the dialog box and it can be modified by the user. 
+
 For detailed information about the following Submit Actions, see:
 
 * [Send email](/help/forms/configure-submit-action-send-email.md)
-* [Submit to Microsoft® SharePoint](/help/forms/configure-submit-action-sharepoint.md)
-* [Submit using Form Data Model](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
-* [Submit to Microsoft® Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [Invoke a Power Automate flow](/help/forms/forms-microsoft-power-automate-integration.md)
+* [Submit to SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Invoke a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [Submit using Form Data Model](/help/forms/using-form-data-model.md)
+* [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
-* [Submit to Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
+* [Submit to OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Invoke an AEM Workflow](/help/forms/configure-submit-action-workflow.md)
-* [Submit to Microsoft® Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-* [Submit to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Submit to Salesforce using OAuth 2.0 client credential flow](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [Submit to Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+
+You can also submit an Adaptive Form to other storage configurations:
+
+* [Connect Adaptive Form to Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Connect an Adaptive Form to Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+
+You can [customize the default Submit Actions](custom-submit-action-form.md). Additionally, you can customize the Submit Actions to align with specific organizational requirements.
     
 
 <!--
@@ -156,6 +172,8 @@ The **Forms Portal Submit Action** option makes form data available through an [
 
 For more information about the Forms Portal and Submit Action, see [Drafts and submissions component](draft-submission-component.md). -->
 
+<!--
+
 ## Use synchronous or asynchronous submission {#use-synchronous-or-asynchronous-submission}
 
 A Submit Action can use synchronous or asynchronous submission.
@@ -193,16 +211,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 >[!NOTE]
 >
 >Server-side validation validates the form model. You are recommended to create a separate client library for validations and not mix it with other things like HTML styling and DOM manipulation in the same client library.
-
-### Supporting Custom functions in Validation Expressions {#supporting-custom-functions-in-validation-expressions-br}
-
-At times, if there are **complex validation rules**, the exact validation script reside in custom functions and author calls these custom functions from field validation expression. To make this custom function library known and available while performing server-side validations, the form author can configure the name of AEM client library under the **[!UICONTROL Basic]** tab of Adaptive Form Container properties as shown below.
-
-![Supporting Custom functions in Validation Expressions](assets/clientlib-cat.png)
-
-Supporting Custom functions in Validation Expressions
-
-Author can configure customJavaScript library per Adaptive Form. In the library, only keep the reusable functions, which have dependency on jquery and underscore.js third-party libraries.
+-->
 
 ## Error handling on Submit Action {#error-handling-on-submit-action}
 

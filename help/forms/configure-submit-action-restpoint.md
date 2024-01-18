@@ -5,7 +5,7 @@ keywords: AEM Forms REST Endpoint, Submit to REST Endpoint, Post Data to REST UR
 feature: Adaptive Forms, Core Components
 ---
 
-# Configure Submit to REST Endpoint submit action for Adaptive Forms
+# Configure an Adaptive Form for REST Endpoint submit action
 
 Use the **[!UICONTROL Submit to REST Endpoint]** action to post the submitted data to a REST URL. The URL can be of an internal (the server on which the form is rendered) or an external server.
 
@@ -22,14 +22,12 @@ Some of the advantages of configuring the **[!UICONTROL Submit to REST endpoint]
 
 ## Configure Submit to REST Endpoint  submit action {#steps-to-configure-submit-to-restendpoint-submit-action}
 
-To set up AEM Forms REST Endpoint Configuration, perform the following steps:
+To configure submit action:
 
 1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
 1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
 1. Click the  **[!UICONTROL Submission]** tab. 
 1. From the **[!UICONTROL Submit Action]** drop-down list, select **[!UICONTROL Submit to Rest endpoint]**.
-1. Configure the **[!UICONTROL Action Configuration]** for the **[!UICONTROL Submit to Rest endpoint]** option.
-
     ![Action configuration of Submit to Rest endpoint](/help/forms/assets/submit-action-restendpoint.png)
 
     To post data to an internal server, provide path of the resource. The data is posted the path of the resource. For example, `/content/restEndPoint`. For such post requests, the authentication information of the submit request is used.
