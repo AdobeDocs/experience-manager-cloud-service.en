@@ -57,11 +57,13 @@ To subscribe to the events, follow these steps:
 1. Go to the Project Linked Folders tab in the cloud services.
 1. Linked folder parent path: Select a folder in the DAM where you want to create the linked folders. If left empty, it will default to /content/dam. Make sure that the Workfront Tools metadata schema and Workfront Linked Folder folder metadata schema have been applied to the selected folder.
 1. Linked folder structure: Enter comma-separated values. Each value should be `DE:<some-project-custom-form-field>`, Portfolio, Program, Year, Name, or some "Literal String Value" (this last one with quotation marks). It is currently set to Portfolio,Program,Year,DE:Project Type,Name.
+1. Configure permissions: Add `jcr:all permissions` permissions to `/conf/workfront-tools/settings/cloudconfigs` for `wf-workfront-users` group.
 1. Build linked folder title in Workfront using the folder structure names checkbox should be checked if the title of the folder in Workfront should include all folders in the structure. Otherwise, it is the title of the last folder.
 1. Sub-folders multifield lets you specify a list of folders that should be created as a child folder of the linked folder.
 1. Project status: Select the status for which the project must be set to create the linked folder.
 1. Create a linked folder in projects with portfolio: List of Portfolios that the project must belong to so you can create the linked folder. Leave this list empty to create the linked folder for all project portfolio.
 1. Create a linked folder in projects with custom form field: Custom form field and its corresponding value that the project has to have so you can create the linked folder. This configuration is ignored if left empty. Select `CUSTOM FORMS: Create DAM Linked Folder` for the field and input `Yes` for the value.
+1. Configure permission: Configure these permissions, `jcr:all permissions for /conf/workfront-tools/settings/cloudconfigs` for the `wf-workfront-users group`.
 1. Click Enable automatic creation of linked folders. If you go back to the Event Subscriptions tab, you see there is now one create event.
 
 ![linked folder configuration](/help/assets/assets/wf-linked-folder-config.png)

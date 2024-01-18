@@ -2,6 +2,7 @@
 title: How to embed adaptive form to an external web page?
 description: Learn to embed an Adaptive Forms to a website.
 topic-tags: author
+role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 00b8cd79-bf2d-4001-b2d6-1b020c868008
 ---
