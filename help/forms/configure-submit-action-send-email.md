@@ -57,7 +57,7 @@ To configure the Submit Action:
 
 * It is recommended to keep the email content clear and concise. Users should understand the purpose of the email and any actions they need to take.
 * It is recommended for all form fields to have unique element names, even if they are placed on different panels within an Adaptive Form.
-* When using AEM as a Cloud Service, outbound email requires encryption. By default, outbound email functionality is disabled. To activate it, submit a support ticket to [request cccess](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). 
+* When using AEM as a Cloud Service, outbound email requires encryption. By default, outbound email functionality is disabled. To activate it, submit a support ticket to [request access](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). 
 
 
 ## Related Articles
