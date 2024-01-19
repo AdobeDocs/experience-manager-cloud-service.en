@@ -20,7 +20,9 @@ When adding a custom domain name, the domain will be served using the most speci
 
 Follow these steps to add a custom domain name from the **Domain Settings** page. These steps are based on Fastly. If you use a different CDN, you must configure your domain with the CDN you have chosen to use.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+
+1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
 
 1. Navigate to the **Environments** screen from the **Overview** page.
 
