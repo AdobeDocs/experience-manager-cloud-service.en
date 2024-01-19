@@ -606,7 +606,7 @@ Customers who have Splunk accounts may request via customer support ticket that 
 
 The network bandwidth associated with logs sent to Splunk are considered part of the customer's Network I/O usage.
 
-Splunk forwarding does not yet support CDN logs.
+CDN logs will be forwarded to Splunk for new support ticket requests; customers who already have Splunk forwarding enabled will be able to add CDN logs in the future.
 
 ### Enabling Splunk Forwarding {#enabling-splunk-forwarding}
 
