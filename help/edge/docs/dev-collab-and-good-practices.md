@@ -2,6 +2,7 @@
 description: Working with a large number of development teams across many projects and organizations we found that it is useful to collect some of our insights. Some of those are related to AEM, but the majority are related to general purpose frontend development or are just general guidelines on how to collaborate in a team of developers.
 title: Development Collaboration and Good Practices
 feature: Edge Delivery Services
+exl-id: e7f9b0f7-d22f-44ec-b8b7-85daa34de2a0
 ---
 # Development Collaboration and Good Practices
 
