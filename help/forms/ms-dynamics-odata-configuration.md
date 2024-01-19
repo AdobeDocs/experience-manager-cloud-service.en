@@ -168,3 +168,7 @@ Next, you can create an Adaptive Form based Form Data Model and use it in variou
 You can [configure the Form Data Model Submit Action](/help/forms/using-form-data-model.md) for an Adaptive Form to send data to Microsoft Dynamics OData.
 
 For more information about creating and using Form Data Model in business workflows, see [Data Integration](data-integration.md).
+
+## Related Articles
+
+{{af-submit-action}}
