@@ -2,8 +2,8 @@
 title: Authoring Content for Edge Delivery Services
 description: Learn how content authoring works with Edge Delivery Services and how to author AEM content with Edge Delivery Services.
 feature: Edge Delivery Services
+exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 ---
-
 # Authoring Content for Edge Delivery Services {#authoring-edge}
 
 With Edge Delivery Services, authoring is easy, fast, and flexible. You have two options to author content for Edge Delivery Services:

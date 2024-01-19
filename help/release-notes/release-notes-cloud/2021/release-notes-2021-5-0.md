@@ -25,7 +25,7 @@ The following release (2021.6.0) will be on June 28, 2021.
 
 * [Prerelease Channel](/help/release-notes/prerelease.md): Preview upcoming features for a full month before they go live in production!
 
-* [API Deprecation](/help/release-notes/deprecated-apis.md): a list of the latest deprecated APIs for AEM as a Cloud Service is available. 
+* [API Deprecation](/help/release-notes/deprecated-removed-features.md): a list of the latest deprecated APIs for AEM as a Cloud Service is available. 
 
 * [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html):  Update your maven projects to the latest version, which includes a deprecated Java API check and other improvements. 
 
