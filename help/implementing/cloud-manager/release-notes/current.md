@@ -63,5 +63,5 @@ Interested in test-driving the new dashboard? To get started, send an email to `
 
 ## Bug Fixes {#bug-fixes}
 
-* If a configuration pipeline is set up such that the configuration is larger than 300 kB, an NPE is now thrown and the pipeline ends with a `FAILED` status code describing that  the configuration is too large.
+* An error was corrected where configuration pipelines would fail at the build step with an unclear error message if the location of the configuration files was not set properly. The error message is now clear and indicates that the user should check that the location of the configuration files is correct.
 * When a build step finishes with status `FAILED` due to a `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, it is now properly described as an error due to merge conflicts with the destination branch.
