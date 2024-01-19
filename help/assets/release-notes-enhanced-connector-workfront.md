@@ -15,21 +15,21 @@ The release date for the latest version 1.9.16 of [!DNL Workfront for Experience
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fixes:
 
-* The `project ID` is not stored in the [!DNL Workfront] configuration in [!DNL CRX DE], resulting in an error when only read permission is added.
+* The [!DNL Workfront] configuration in [!DNL CRX DE] currently does not store the `project ID`, causing errors when applying read-only permission. Learn more about how to [configure permissions](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
 
-* EWC query performance fails at scale due to `readLimits`, as EWC properties are never indexed, leading to expensive `IndexTraversals`.
+* No public documentation on how to add custom property to the out of the box index definition. Learn more about [adding custom property](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
 
 * Deleting connection configurations on the enhanced connector significantly affects event subscriptions and other saved configurations, causing them to point to an old URL.
 
 * Installing the forms add-on package does not install the **[!UICONTROL Toggle Router]**, leading to the failure of the [!DNL WFEC AMS environment Toggle] feature.
 
-* Enabling event subscriptions on EWC setup results in repeated API call failures with `HTTP 400` error. Logging reveals a call to Workfront requesting Page 0, which does not exist.
+* Enabling event subscriptions on EWC setup results in repeated API call failures with `HTTP 400` error when setting up [!DNL Workfront] enhanced connector for the 1st time.
 
 * Deleting comments on linked folder assets at Workfront fails to find the linked folder path on AEM.
 
-* A subset of assets sent to AEM, specifically in  [!DNL AEMaaCS], ends up with a binary size of 4 Bytes.
+* Insufficient support for large file assets in AEM results in a 4-byte size issue.
 
-* EWC `wfReferenceNumber` queries are aborted by the query engine `readLimit` as the property is not indexed.
+* No request time processing for critical flows in linked folder, document update, and note update.
 
 >[!NOTE]
 >
