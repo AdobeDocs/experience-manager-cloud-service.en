@@ -5,6 +5,7 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
+exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 ---
 # Enable Adaptive Forms Core Components {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
