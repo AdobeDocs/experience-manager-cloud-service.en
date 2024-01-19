@@ -15,9 +15,9 @@ The release date for the latest version 1.9.16 of [!DNL Workfront for Experience
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fixes:
 
-* The project ID is not stored in the Workfront configuration in [!DNL CRX DE], resulting in an error when only read permission is added.
+* The `project ID` is not stored in the [!DNL Workfront] configuration in [!DNL CRX DE], resulting in an error when only read permission is added.
 
-* EWC query performance fails at scale due to `readLimits`, as EWC properties are never indexed, leading to expensive IndexTraversals.
+* EWC query performance fails at scale due to `readLimits`, as EWC properties are never indexed, leading to expensive `IndexTraversals`.
 
 * Deleting connection configurations on the enhanced connector significantly affects event subscriptions and other saved configurations, causing them to point to an old URL.
 
@@ -27,7 +27,7 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 * Deleting comments on linked folder assets at Workfront fails to find the linked folder path on AEM.
 
-* A subset of assets sent to AEM, specifically in AEMaaCS, ends up with a binary size of 4 Bytes.
+* A subset of assets sent to AEM, specifically in  [!DNL AEMaaCS], ends up with a binary size of 4 Bytes.
 
 * EWC `wfReferenceNumber` queries are aborted by the query engine `readLimit` as the property is not indexed.
 
