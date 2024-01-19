@@ -1,8 +1,8 @@
 ---
 title: CDN Performance Dashboard
 description: Understand how Cloud Manager evaluates content delivery network (CDN) performance and what you can learn from the dashboard.
+exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 ---
-
 # CDN Performance Dashboard {#cdn-performance}
 
 Understand how Cloud Manager evaluates content delivery network (CDN) performance and what you can learn from the dashboard.
