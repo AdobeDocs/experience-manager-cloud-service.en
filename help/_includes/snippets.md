@@ -47,3 +47,5 @@
 * [Invoke an AEM Workflow](/help/forms/configure-submit-action-workflow.md)
 * [Submit to Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [Connect Adaptive Form to Salesforce application](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Connect an Adaptive Form to Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
