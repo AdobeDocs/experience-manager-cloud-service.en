@@ -31,6 +31,7 @@ To follow along with this overview, you need the following available.
   * [The WKND demo site must be installed.](https://github.com/adobe/aem-guides-wknd)
 * [Access to the Universal Editor](/help/implementing/universal-editor/getting-started.md#onboarding)
 * [A local Universal Editor service](/help/implementing/universal-editor/local-dev.md) running for development purposes
+  * Make sure to direct your browser to [accept the local services self-signed certificate.](/help/implementing/universal-editor/local-dev.md#editing)
 
 Beyond general familiarity with web development, this document assumes basic familiarity with AEM development. If you are not experienced with AEM development, consider reviewing [the WKND tutorial before continuing.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
