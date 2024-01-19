@@ -2,8 +2,8 @@
 title: Developing for Edge Delivery Services
 description: Learn how to develop blocks and customize your AEM project to work with Edge Delivery Services.
 feature: Edge Delivery Services
+exl-id: c356c03c-af43-43a1-a14e-45f94ccb3970
 ---
-
 # Developing for Edge Delivery Services {#developing-edge}
 
 Edge Delivery Services is based around the concept of blocks. AEM comes with a comprehensive library of predefined blocks, which can be extended to meet your project needs. Code for Edge Delivery Services projects is managed in GitHub.

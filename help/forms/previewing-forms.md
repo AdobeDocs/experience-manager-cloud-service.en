@@ -4,8 +4,8 @@ description: Users can preview form before publishing or activating, to ensure i
 topic-tags: author
 role: Admin, Developer, User
 feature: Adaptive Forms
+exl-id: 72235277-6c34-4341-9a10-02afa753e7f5
 ---
-
 # Previewing a form {#previewing-a-form}
 
 ## Overview {#overview}
@@ -63,4 +63,3 @@ When you select **Preview with Data**, you can see how the form looks with real 
 
 1. Select an asset, click Preview ![aem6forms_preview](assets/aem6forms_preview.png), and select **Preview with Data**.
 1. In the Preview Form dialog, provide FormData as an XML file. Click Preview to render the form with the merged data from XML.
-
