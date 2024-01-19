@@ -9,14 +9,27 @@ The following section outlines the general Release Notes for [!DNL Workfront for
 
 ## Release Date {#release-date}
 
-The release date for the latest version 1.9.15 of [!DNL Workfront for Experience Manager enhanced connector] is November 17, 2023.
+The release date for the latest version 1.9.16 of [!DNL Workfront for Experience Manager enhanced connector] is January 19, 2024.
 
 ## Release highlights {#release-highlights}
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fixes:
 
-* While viewing the list of AEM folders, the dialog takes more than a minute to load.
-* Authorized [!DNL Workfront] users are consistently receiving authentication failure error logs.
+* The project ID is not stored in the Workfront configuration in [!DNL CRX DE], resulting in an error when only read permission is added.
+
+* EWC query performance fails at scale due to `readLimits`, as EWC properties are never indexed, leading to expensive IndexTraversals.
+
+* Deleting connection configurations on the enhanced connector significantly affects event subscriptions and other saved configurations, causing them to point to an old URL.
+
+* Installing the forms add-on package does not install the **[!UICONTROL Toggle Router]**, leading to the failure of the [!DNL WFEC AMS environment Toggle] feature.
+
+* Enabling event subscriptions on EWC setup results in repeated API call failures with `HTTP 400` error. Logging reveals a call to Workfront requesting Page 0, which does not exist.
+
+* Deleting comments on linked folder assets at Workfront fails to find the linked folder path on AEM.
+
+* A subset of assets sent to AEM, specifically in AEMaaCS, ends up with a binary size of 4 Bytes.
+
+* EWC `wfReferenceNumber` queries are aborted by the query engine `readLimit` as the property is not indexed.
 
 >[!NOTE]
 >
@@ -34,6 +47,11 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** drop-down list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** drop-down list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** drop-down list and the **[!UICONTROL Document Actions]** drop-down list available in the new Workfront experience.
 
 ## Previous releases {#previous-releases}
+
+### November 2023 release {#november-2023-release}
+
+* While viewing the list of AEM folders, the dialog takes more than a minute to load.
+* Authorized [!DNL Workfront] users are consistently receiving authentication failure error logs.
 
 ### October 2023 release {#october-2023-release}
 
