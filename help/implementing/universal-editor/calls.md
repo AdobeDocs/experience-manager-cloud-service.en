@@ -1,8 +1,8 @@
 ---
 title: Universal Editor Calls
 description: Learn about the different types of calls made to your app by the Universal Editor to help you when debugging.
+exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 ---
-
 # Universal Editor Calls {#calls}
 
 Learn about the different types of calls made to your app by the Universal Editor to help you when debugging.
