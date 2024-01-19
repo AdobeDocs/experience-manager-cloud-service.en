@@ -15,7 +15,12 @@ This page documents the release notes for Cloud Manager release 2024.1.0 in AEM 
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager release 2024.1.0 in AEM as a Cloud Service is 18 January 2024.
+The release date for Cloud Manager release 2024.1.0 in AEM as a Cloud Service is 18 January 2024. The next release is planned for 16 February 2024.
+
+## What's New {#what-is-new}
+
+* Cloud Manager now validates the expiration dates not only for the main [certificate,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) but for intermediate certificates as well.
+* CDN [logs](/help/implementing/cloud-manager/manage-logs.md) are now returned in a compressed format.
 
 ## Early Adoption Program {#early-adoption}
 
@@ -55,3 +60,8 @@ If you are interested in testing this new feature and sharing your feedback, sen
 The dashboard uses Google Lighthouse, an open-source, automated tool for improving the quality of your web apps. You can run it against any web page, public, or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more.
 
 Interested in test-driving the new dashboard? To get started, send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID.
+
+## Bug Fixes {#bug-fixes}
+
+* If customer uses a code which produces a larger than 300 kb, a NPE is thrown and pipeline ends with a FAILED status code describing that it is too large.
+* When a build step finishes with status `FAILED` due to a `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, it is now properly described as an error due to merge conflicts with the destination branch.
