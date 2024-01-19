@@ -36,5 +36,16 @@
 * [Send Adaptive Form data to AEM Workflow](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Use Forms Portal to list AEM Adaptive Forms on an AEM website](/help/forms/configure-forms-portal.md)
 
+## Adaptive Form Submit Actions {#af-submit-action}
 
-
+* [Send email](/help/forms/configure-submit-action-send-email.md)
+* [Submit to SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Submit using Form Data Model](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+* [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
+* [Submit to OneDrive](/help/forms/configure-submit-action-onedrive.md)
+* [Invoke an AEM Workflow](/help/forms/configure-submit-action-workflow.md)
+* [Submit to Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+* [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [Connect Adaptive Form to Salesforce application](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Connect an Adaptive Form to Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)

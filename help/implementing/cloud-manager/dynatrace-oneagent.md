@@ -1,8 +1,8 @@
 ---
 title: Dynatrace OneAgent
 description: Learn how to use Dynatrace's OneAgent with AEM as a Cloud Service
+exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 ---
-
 # Dynatrace OneAgent {#dynatrace-oneagent}
 
 Adobe provides the ability to use Dynatrace's OneAgent to monitor AEM as a Cloud Service as a part of an enterprise deployment, identify the cause of any potential issues, and take action to remediate them as needed. <!-- When GA, add: Read this [Dynatrace article](https://www.dynatrace.com/hub/detail/adobe-experience-manager/) about AEM monitoring to learn more. -->
@@ -21,5 +21,3 @@ The details required for connectivity requests are described below:
 | Dynatrace API access token  | The API access token of your Dynatrace environment. Please consult Dynatrace documentation for how to create this.<br><br>This should be considered a secret so use appropriate security practices. For example, password protect it in a website such as **zerobin.net**, which the customer support ticket can reference, along with the password.<br><br>Note: This is only required for Dynatrace Managed.  |
 | Dynatrace ActiveGate Port | Your Dynatrace ActiveGate port that OneAgent should connect to.<br><br>Note: This is only required for Dynatrace Managed.  |
 | AEM Environment ID(s)  | The AEM environment id(s) for Dynatrace to monitor. |
-
-
