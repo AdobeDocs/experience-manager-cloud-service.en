@@ -3,6 +3,8 @@ title: Integration of Adobe Workfront Fusion with AEM Forms Submission
 description: Adobe Workfront Fusion allows you to focus on new tasks rather than focusing on repetitive tasks. You can connect Adobe Workfront Fusion to an Adaptive Form using Form Submission.
 keywords: Submit an Adaptive Form to Adobe Workfront Fusion, Integration of Adobe Workfront Fusion with AEM Forms Submission, Adobe Workfront Fusion with AEM Forms, Workfront Fusion with AEM Forms, Connect Workfront Fusion to AEM Forms, AEM Forms and Workfront Fusion, How to connect Workfront Fusion with AEM Forms?, Connect Workfront Fusion to a Form
 topic-tags: author, developer
+feature: Adaptive Forms
+role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 ---
 # Submit an Adaptive Form to Adobe Workfront Fusion
@@ -13,21 +15,23 @@ exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 
 For example, using Workfront Fusion, you can create a scenario to gather data with Adaptive Form, process the data, and send the data to a data store for archival. Once a scenario is set up, Workfront Fusion automatically executes the tasks whenever a user fills out a form, updating the data store seamlessly.
 
+AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
+
 ## Advantages of using Adobe Workfront Fusion{#advatages-of-workfront-fusion}
 
 Some of the advantages of using Adobe Workfront Fusion with AEM Forms:
 
-- Sending data captured with Adaptive Forms to a Workfront Fusion scenario
-- Automating tasks which are less prone to errors.
-- Customizing requirements specific to an organization that are not directly included in Workfront.
-- Handling simple logics and straightforward decisions, for example, if/then statements.
+* Sending data captured with Adaptive Forms to a Workfront Fusion scenario
+* Automating tasks which are less prone to errors.
+* Customizing requirements specific to an organization that are not directly included in Workfront.
+* Handling simple logics and straightforward decisions, for example, if/then statements.
 
 ## Prerequisites to integrate AEM Forms with Adobe Workfront Fusion {#prerequisites}
 
 Prerequisites required to connect Workfront Fusion to AEM Forms are:
 
-- A valid [Workfront Fusion license](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-- An AEM user with right to access [Dev Console](https://my.cloudmanager.adobe.com/) to [retrieve the service credentials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+* A valid [Workfront Fusion license](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* An AEM user with right to access [Dev Console](https://my.cloudmanager.adobe.com/) to [retrieve the service credentials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## Integrate AEM Forms with Adobe Workfront Fusion
 
@@ -92,16 +96,16 @@ To add a connection:
     > Retain the `https://` in the **IMS endpoint** textbox while adding the `imsEndpoint` URL. 
 
 1. Specify the following values in the **[!UICONTROL Create a Connection]** dialog box:
-    - Specify **Client ID** with value of **clientId** from the service credentials in the Developer console.
-    - Specify **Client Secret** with value of **clientSecret** from the service credentials in the Developer console.
-    - Specify **Technical Account ID**  with value of **id** from the service credentials in the Developer console.
-    - Specify **Org ID**  with value of **org** from the service credentials in the Developer console.
-    - **Meta Scopes**  with value of **metascopes** from the service credentials in the Developer console.
-    - **Private Keys**  with value of **privateKey** from the service credentials in the Developer console.
+    * Specify **Client ID** with value of **clientId** from the service credentials in the Developer console.
+    * Specify **Client Secret** with value of **clientSecret** from the service credentials in the Developer console.
+    * Specify **Technical Account ID**  with value of **id** from the service credentials in the Developer console.
+    * Specify **Org ID**  with value of **org** from the service credentials in the Developer console.
+    * **Meta Scopes**  with value of **metascopes** from the service credentials in the Developer console.
+    * **Private Keys**  with value of **privateKey** from the service credentials in the Developer console.
 
     >[!NOTE]
     >
-    >- For **Private Key**, remove `\r\n` from its value. 
+    >* For **Private Key**, remove `\r\n` from its value. 
     >  For example, if the private key value is:
     >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`, then after removing the `\r\n` from the private key, the key would look like the following, with both the values appearing in a separate line: 
     >
@@ -109,7 +113,7 @@ To add a connection:
     >
     >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
     > 
-    >- You also have the option to retrieve a private key or certificate from the file by selecting the **Extract** button.
+    >* You also have the option to retrieve a private key or certificate from the file by selecting the **Extract** button.
 
 1. Click **Continue**.
 
@@ -136,8 +140,8 @@ Once you click the toggle button, the Workfront scenario starts appearing in the
 ### 2. Configure submit action of an Adaptive Form for Workfront Fusion
 
 You can configure the submit action for Workfont Fusion for:
-- [New Adaptive Forms](#new-af-submit-action)
-- [Existing Adaptive forms](#existing-af-submit-action)
+* [New Adaptive Forms](#new-af-submit-action)
+* [Existing Adaptive forms](#existing-af-submit-action)
 
 #### Configure submit action of new Adaptive Form for Workfront Fusion {#new-af-submit-action}
 
@@ -179,7 +183,11 @@ To configure submit action of existing Adaptive Form for Workfront Fusion:
 
 ## Best Practices {#best-practices}
 
-- It is recommended to choose your webhook name carefully, as there is no way to get the scenario name at the AEM instance. In case, you change the webhook name in future it is not reflected at the AEM Forms submit action drop-down list.
-- A scenario can have multiple webhook links but at a time only one webhook link is active. It is recommended to delete the unlinked webhook, so that it does not appear in AEM Forms submit action drop-down list.
+* It is recommended to choose your webhook name carefully, as there is no way to get the scenario name at the AEM instance. In case, you change the webhook name in future it is not reflected at the AEM Forms submit action drop-down list.
+* A scenario can have multiple webhook links but at a time only one webhook link is active. It is recommended to delete the unlinked webhook, so that it does not appear in AEM Forms submit action drop-down list.
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
+
+## Related Articles
+
+{{af-submit-action}}

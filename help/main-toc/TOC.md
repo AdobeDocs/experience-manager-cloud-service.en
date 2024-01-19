@@ -83,6 +83,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.12.0](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)
       + [Release Notes for 2023.11.0](/help/implementing/cloud-manager/release-notes/2023/2023-11-0.md)
       + [Release Notes for 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md)
       + [Release Notes for 2023.9.0](/help/implementing/cloud-manager/release-notes/2023/2023-9-0.md)
@@ -158,8 +159,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
-  + [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md)
-  + [Deprecated APIs](/help/release-notes/deprecated-apis.md)
+  + [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md)
   + [Prerelease Channel](/help/release-notes/prerelease.md)
 + Security {#security}
   + [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
@@ -603,6 +603,12 @@ user-guide-title: AEM as a Cloud Service
         + [Configuring redirect page or thank you message](/help/forms/configure-redirect-page-or-thank-you-message.md)
         + [Create forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md)
         + [Configure Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)
+        + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+        + [Submit an Adaptive Form to Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
+        + [Configure SharePoint Storage for an Adaptive Form](/help/forms/configure-submit-action-sharepoint.md)
+        + [Integrate AEM Adaptive Form with AEM Workflow](/help/forms/configure-submit-action-workflow.md)
+        + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
+        + [Configure the Send Email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md)
         + [Use Google reCAPTCHA in an Adaptive Form ](/help/forms/captcha-adaptive-forms-core-components.md)
         + [Add custom error handler in an Adaptive Form](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
         + [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md)
@@ -650,6 +656,8 @@ user-guide-title: AEM as a Cloud Service
         + [Create an accessible Adaptive Form](/help/forms/creating-accessible-adaptive-forms.md)
       + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
       + [Create and manage reviews](/help/forms/create-reviews-forms.md)
+    + [Adaptive forms keywords](/help/forms/adaptive-forms-keywords.md)
+    + [Previewing a form](/help/forms/previewing-forms.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Use Forms-centric steps in a workflow + step reference](/help/forms/aem-forms-workflow-step-reference.md)
     + [Use variables in a Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
@@ -871,7 +879,7 @@ user-guide-title: AEM as a Cloud Service
       + [Creating Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
       + [Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
       + [Creating Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-      + [Editing Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+      + [Managing and Editing Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
       + [Hibernating Environments](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
     + Creating an AEM Application Project {#create-application-project}
       + [Project Creation Wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
@@ -928,6 +936,7 @@ user-guide-title: AEM as a Cloud Service
       + [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
     + [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md)
     + [Understanding Cloud Service Content Requests](/help/implementing/cloud-manager/content-requests.md)
+    + [CDN Performance Dashboard](/help/implementing/cloud-manager/cdn-performance.md)
     + [Cloud Manager FAQs](/help/implementing/cloud-manager/faqs.md)
   + Developing for AEM as a Cloud Service {#developing}
     + [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
@@ -1051,7 +1060,6 @@ user-guide-title: AEM as a Cloud Service
     + [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
     + [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)
     + [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md)
-    + [OSGi Configuration API](/help/implementing/deploying/osgi-configuration-api.md)
     + [Resource Mapping](/help/implementing/deploying/resource-mapping.md)
   + Author Tier {#author-tier}
     + [Accessing the Author Tier](/help/implementing/author-tier/accessing-the-author-tier.md)
