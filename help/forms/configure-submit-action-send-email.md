@@ -47,7 +47,7 @@ To configure the Submit Action:
 1. Add the email id of the recipient in the **[!UICONTROL To]** textbox. You can add multiple recipients by clicking the **[!UICONTROL Add]** button. 
 1. [Optional] Add the recipient for CC and BCC by clicking the **[!UICONTROL Add]** button. 
 1. Specify a subject line in the **[!UICONTROL Subject]** textbox.
-1. Add an email template for configure send email submit action.
+1. Add an email template to configure send email submit action.
     * You can specify the path to the external email template saved in your AEM assets by using the **[!UICONTROL External Template Path]** option.
     * You can also add a custom email template for the form submission in the **[!UICONTROL Email Template]** textbox.
 1. [Optional] The **[!UICONTROL Send Email]** Submit Action provides the option to include attachments and a [Document of Record (DoR)](generate-document-of-record-core-components.md) with the email. 
