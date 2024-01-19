@@ -1,7 +1,7 @@
 ---
 title: How do I configure [!DNL Microsoft Dynamics] OData for AEM Forms?
 description: Learn to create Form Data Model based on the entities, attributes, and services defined in [!DNL Microsoft Dynamics] service.
-feature: Form Data Model
+feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
@@ -29,6 +29,9 @@ exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
 <!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service (OData Service) is available with all run modes. For more information on configuring run modes for an [!DNL Experience Manager] instance, see [Run Modes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes).
+
+AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
+
 
 ## Prerequisites {#prerequisites}
 
@@ -64,7 +67,7 @@ Do the following to set the Reply URL for registered [!DNL Microsoft Dynamics] a
 
 >[!NOTE]
 >
->Use this procedure only while integrating [!DNL Experience Manager Forms] with on-premises [!DNL Microsoft Dynamics] server.
+> Use this procedure only while integrating [!DNL Experience Manager Forms] with on-premises [!DNL Microsoft Dynamics] server.
 
 1. Configure [!DNL Microsoft Dynamics] on-premises instance for IFD as described in [Configure IFD for [!DNL Microsoft Dynamics]](https://technet.microsoft.com/en-us/library/dn609803.aspx).
 1. Run the following commands using Windows PowerShell to configure claim settings on IFD-enabled [!DNL Microsoft Dynamics]:
@@ -152,14 +155,16 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-After configuring MS Dynamics OData Cloud Ser Form Data Model ce) cloud service, you can use the service while creating form data models. For more information, see [Create form data model](create-form-data-models.md).
+After configuring MS Dynamics OData cloud service, you can use the service while creating form data models. For more information, see [Create form data model](create-form-data-models.md).
 
-Next, you can create an Adaptive Form based o Form Data Model odel and use it in various Adaptive Form use cases, such as:
+Next, you can create an Adaptive Form based Form Data Model and use it in various Adaptive Form use cases, such as:
 
 * Prefill Adaptive Form by querying information from [!DNL Microsoft Dynamics] entities and services
 * Invoke [!DNL Microsoft Dynamics] server operations defined in a Form Data Model using Adaptive Form rules
 * Write submitted form data to [!DNL Microsoft Dynamics] entities
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
+
+You can [configure the Form Data Model Submit Action](/help/forms/using-form-data-model.md) for an Adaptive Form to send data to Microsoft Dynamics OData.
 
 For more information about creating and using Form Data Model in business workflows, see [Data Integration](data-integration.md).
