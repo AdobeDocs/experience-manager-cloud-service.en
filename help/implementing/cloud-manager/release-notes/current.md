@@ -63,5 +63,5 @@ Interested in test-driving the new dashboard? To get started, send an email to `
 
 ## Bug Fixes {#bug-fixes}
 
-* If code produces a response larger than 300 kB, an NPE is now thrown and the pipeline ends with a `FAILED` status code describing that it is too large.
+* If a configuration pipeline is set up such that the configuration is larger than 300 kB, an NPE is now thrown and the pipeline ends with a `FAILED` status code describing that  the configuration is too large.
 * When a build step finishes with status `FAILED` due to a `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, it is now properly described as an error due to merge conflicts with the destination branch.
