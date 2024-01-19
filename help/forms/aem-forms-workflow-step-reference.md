@@ -4,6 +4,8 @@ description: Forms-centric workflows allow you to rapidly build Adaptive Forms-b
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Use AEM workflows, using assign task steps, convert to PDF/A step, Generate document of recored step, use workflows, Sign document step, Genertae printed output step, Generate non interactive PDF output
+feature: Adaptive Forms, Workflow
+role: Admin, User
 ---
 
 # Use Forms-centric AEM Workflows - Step Reference to automate business processes {#forms-centric-workflow-on-osgi-step-reference}
