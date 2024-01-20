@@ -70,4 +70,8 @@ After configuring the Salesforce application, you can use the configuration whil
 
 For more information about creating and using Form Data Model in business workflows, see [Data Integration](data-integration.md).
 
+## Related Articles
+
+{{af-submit-action}}
+
 

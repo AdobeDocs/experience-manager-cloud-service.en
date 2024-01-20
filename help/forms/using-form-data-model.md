@@ -177,3 +177,8 @@ The added configuration is saved under the **[!UICONTROL Adaptive Form-Level Whi
 >1. [Create a configuration file](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
 >1. Set properties of getContentPathPattern and getFormDataModelPathPattern.
 >1. Deploy the project. 
+
+## Related Articles
+
+{{af-submit-action}}
+
