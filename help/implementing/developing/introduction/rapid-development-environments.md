@@ -305,34 +305,19 @@ The analyser found the following errors for publish :
 
 The above code sample illustrates the behavior if a bundle does not resolve. In which case, it is "staged" and is only installed if its requirements (missing imports, in this case) are satisfied through the installation of other code. 
 
-<u>Deploying a Frontend package</u>
+<u>Deploying front-end code bsed on site themes and site templates</u>
 
 >[!NOTE]
 >
->This feature is in early-access mode. You can follow the steps to try it out. We're happy to get your feedback (aemcs-rde-support@adobe.com).
+>This feature is not yet GA, but can be used by early adopters. Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
 
-RDEs also support to deploy frontend packages as you can do with other environments using the [Cloud Manager Frontend Pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html).
+RDEs support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md). With RDEs, this is done using a command line directive to deploy front-end packages, rather than the Cloud Manager [Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) used for other environment types.
 
-Enable the early-access mode for deploying frontend packages via
-
-`aio config set -l -j aem-rde.experimental-features '["aem:rde:install#type=frontend"]'`
-
-Once you have run the previous command, you can double check now that you can see the new frontend install type
-
-```
-aio aem:rde:install --help
-...
-USAGE
-...
-  -t, --type=<option>    the type to deploy
-                         <options: osgi-bundle|osgi-config|content-package|content-file|content-xml|dispatcher-config|frontend>
-```
-
-Build your frontend package using npm as you usually do
+As usual, build your front-end package using npm: 
 
 `npm run build`
 
-It should generate a `dist/` folder. Therefore, your frontend package folder should look like:
+It should generate a `dist/` folder, so your front-end package folder should contain a `package.json` file and `dist` folder:
 
 ```
 ls ./path-to-frontend-pkg-folder/
@@ -340,7 +325,7 @@ ls ./path-to-frontend-pkg-folder/
 dist
 package.json
 ```
-Now, you're ready to deploy the frontend package to your RDE by pointing to the folder which contains the `package.json` file and `dist` folder
+Now you are ready to deploy the front-end package to the RDE by pointing to the front-end package folder:
 
 ```
 aio aem:rde:install -t frontend ./path-to-frontend-pkg-folder/
@@ -351,11 +336,9 @@ Logs:
 > with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
 ```
 
-or by zipping the `dist` and `package.json` contents
+Alternatively, you can zip the `package.json` file and `dist` folder and deploy that zip file:
 
 `zip -r frontend-pkg.zip ./path-to-frontend-pkg-folder/dist ./path-to-frontend-pkg-folder/package.json`
-
-and deploying that zip file as a frontend package
 
 ```
 aio aem:rde:install -t frontend frontend-pkg.zip
@@ -366,9 +349,9 @@ Logs:
 > with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
 ```
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Notice the naming of the files you need to ship as a frontend package must follow the name conventions:
+>The naming of the files in the front-end package must adhere to the following naming conventions:
 > * "dist" folder, for the npm build output package folder
 > * "package.json" file, for the npm dependencies package
 
@@ -533,8 +516,9 @@ For these reasons, it is recommended that after validating code on an RDE enviro
 Also note the following considerations: 
 
 * RDEs do not include a preview tier
-* RDEs do not currently support viewing and debugging front-end code deployed using the Cloud Manager Front-End Pipeline.
 * RDEs do not currently support the prerelease channel.
+* While RDE support for viewing and debugging front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md) deployed is not yet GA-ready, it can be used by early adopters. Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
+
 
 
 ## How many RDEs do I need? {#how-many-rds-do-i-need}
