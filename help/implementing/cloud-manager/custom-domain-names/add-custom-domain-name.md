@@ -57,7 +57,7 @@ See [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom
 
 >[!TIP]
 >
->Review the following article about the need to [Add a CNAME or A Record next](/help/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.md) to avoid doubling effort when adding DNS-records to your custom-domain. The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS Server.
+>Review the following article about the need to [Add a CNAME or A Record next](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) to avoid doubling effort when adding DNS-records to your custom-domain. The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS Server.
 
 >[!TIP]
 >
