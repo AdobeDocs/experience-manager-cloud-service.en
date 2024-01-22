@@ -55,11 +55,11 @@ If you are interested in testing this new feature and sharing your feedback, ple
 The Extension Manager in AEM Sites enables developers and practitioners to access, manage, and customize UI extensions built to enhance the functionality of AEM Sites.
 With the Extension Manager, you can:
 
-- Enable or disable extensions on a per-instance basis;
-- Configure extension parameters;
-- Preview extensions and generate a shareable preview link;
-- Discover UI extensibility features via interactive demos;
-- Access Adobe’s experimental features through first-party extensions.
+* Enable or disable extensions on a per-instance basis;
+* Configure extension parameters;
+* Preview extensions and generate a shareable preview link;
+* Discover UI extensibility features via interactive demos;
+* Access Adobe’s experimental features through first-party extensions.
 
 We are actively seeking feedback and new use cases for UI extensions. If you would like to connect, please send an email to `uix@adobe.com`.
 
