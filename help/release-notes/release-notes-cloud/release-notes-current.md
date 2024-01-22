@@ -94,11 +94,9 @@ You can now can easily find content by selecting an image and viewing similar im
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Default version and audit-log purging soon for new environments {#default-purging}
+### Option for 99.99% publish-tier SLA {#higher-sla}
 
-Purging is currently disabled for all environments. In the next few weeks, *new environments* will have version and audit-log purging enabled by default, and are configurable via Cloud Manager Configuration Pipeline. Release notes will be updated at that time, specifying the integer value of the first environment that will have that behavio.
-
-*Existing environments* will not be purged by default. In the future, their version and audit-log purge values will be configurable as well.
+There is now an option for AEM Sites customers to license a contractual 99.99% SLA on the production environment publish tier. Customers with a 99.99% SLA have at least [one additional publish region](/help/operations/additional-publish-regions.md) enabled, which increases availability. Learn more about this feature. 
 
 ### RDE Support for Front-End Code using Site Themes and Site Templates: Early Adopter Program {#rde-frontend-early-adopter}
 
