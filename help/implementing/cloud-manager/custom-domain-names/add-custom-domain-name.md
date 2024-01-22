@@ -3,6 +3,7 @@ title: Adding a Custom Domain Name
 description: Learn how to add a custom domain name using Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 ---
+
 # Adding a Custom Domain Name {#adding-cdn}
 
 You can add a custom domain name from two locations in Cloud Manager:
@@ -54,17 +55,21 @@ CDN deployment requires a valid SSL certificate and successful TXT verification.
 
 See [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to learn more about various statuses and how to address potential issues.
 
+>[!TIP]
+>
+>Review the following article about the need to [Add a CNAME or A Record next](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) to avoid doubling effort when adding DNS-records to your custom-domain. The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS Server.
+
+>[!TIP]
+>
+>See [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) to learn more about TXT records.
+
 >[!NOTE]
 >
 >DNS verification can take a few hours to process because of DNS propagation delays.
 >
 >Cloud Manager will verify ownership and update the status which can be seen in the Domain Settings Table. See [Checking Custom Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more details.
 
->[!TIP]
->
->See [Adding a TXT Record](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) to learn more about TXT records.
-
-## Adding a Custom Domain Name from Environments page {#adding-cdn-environments}
+## Adding a Custom Domain Name from the Environments Page {#adding-cdn-environments}
 
 Follow these steps to add a custom domain name from the **Environments** page.
 
