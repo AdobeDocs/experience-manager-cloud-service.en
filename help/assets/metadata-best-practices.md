@@ -18,7 +18,6 @@ To make your business stand out and engage more customers, utilizing high-qualit
 Learn how to use metadata in the Digital Asset Management (DAM) system to effectively [manage metadata of your digital assets](manage-metadata.md).
 
 ## Types of metadata 
-<!-- (Query for Anuj) -->
 
 Based on the various aspects of data, metadata is categorized as Technical metadata, Informational metadata, and Administrative metadata.
 
