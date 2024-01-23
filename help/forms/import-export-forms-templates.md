@@ -4,6 +4,7 @@ description: Learn to migrate Adaptive Forms, PDF forms, themes, and other suppo
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 ---
 # Import or Export Adaptive Forms and AEM Forms assets {#importing-and-exporting-assets-to-aem-forms}
 
