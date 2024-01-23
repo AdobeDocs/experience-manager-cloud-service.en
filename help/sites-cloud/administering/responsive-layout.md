@@ -139,7 +139,7 @@ The following two examples illustrate the definition:
 
 AEM uses LESS to generate parts of the necessary CSS, these need to be included for your projects.
 
-You will also must create a [client library](/help/implementing/developing/introduction/clientlibs.md) to provide additional configuration and function calls. The following LESS extract is an example of the minimum that you must add to your project:
+You must create a [client library](/help/implementing/developing/introduction/clientlibs.md) to provide additional configuration and function calls. The following LESS extract is an example of the minimum that you must add to your project:
 
 ```java
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
