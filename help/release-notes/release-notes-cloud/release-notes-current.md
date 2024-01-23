@@ -50,7 +50,7 @@ If you are interested in testing this new feature and sharing your feedback, ple
 
 **Explore the new [Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/)** to personalize your AEM setup by configuring UI extensions.
 
-![Extension Manager in AEM Sites](/help/assets//sites/extension-manager/homepage.png)
+![Extension Manager in AEM Sites](/help/assets/sites/extension-manager/homepage.png)
 
 The Extension Manager in AEM Sites enables developers and practitioners to access, manage, and customize UI extensions built to enhance the functionality of AEM Sites.
 With the Extension Manager, you can:
