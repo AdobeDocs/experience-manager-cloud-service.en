@@ -5,9 +5,9 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 ---
 # Adding Page Annotations {#adding-page-annotations}
 
-Creating content for your digital experience often requires discussion and feedback prior to publication. To aid this feedback process, AEM allows you to add annotations to your content.
+Creating content for your digital experience often requires discussion and feedback prior to publication. To aid this feedback process, AEM lets you add annotations to your content.
 
-An annotation places a simple sketch or note (think real-world sticky-note) on the page. The annotation allows you to leave comments or questions for other authors and reviewers.
+An annotation places a simple sketch or note (think real-world sticky-note) on the page. The annotation lets you leave comments or questions for other authors and reviewers.
 
 >[!TIP]
 >
@@ -37,21 +37,21 @@ Annotations are only visible in Annotate mode.
 
    ![Annotation examples](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. Click or tap on the annotation to open the annotation dialog and view its details.
+1. Select the annotation to open the annotation dialog and view its details.
 
    ![Annotation details](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-1. To exit Annotate mode, and return to the mode previously used, tap/click the x button at the right of the top toolbar.
+1. To exit Annotate mode, and return to the mode previously used, select the x button at the right of the top toolbar.
 
 ## Adding and Editing Annotations {#annotating-a-component}
 
-In addition to viewing the annotations, Annotate mode allows you to create, edit, move, or delete annotations on your content
+In addition to viewing the annotations, Annotate mode lets you create, edit, move, or delete annotations on your content
 
 1. [Start Annotate mode](#annotate-mode) on the page.
 
-1. Click or tap the Add Annotation icon (plus symbol at the left of the toolbar) to start adding annotations.
+1. Select the Add Annotation icon (plus symbol at the left of the toolbar) to start adding annotations.
 
-1. Click or tap the required component (components that can be annotated are highlighted with a blue border) to add the annotation and open the dialog:
+1. Select the required component (components that can be annotated are highlighted with a blue border) to add the annotation and open the dialog:
 
    ![Adding an Annotation](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -74,16 +74,16 @@ In addition to viewing the annotations, Annotate mode allows you to create, edit
 
 1. After you have finished editing a specific annotation, you can:
 
-    * Click or tap the text marker to open the annotation. Once open you can view the full text, make changes, or [delete the annotation.](#deleting-annotations)
+    * Select the text marker to open the annotation. Once open you can view the full text, make changes, or [delete the annotation.](#deleting-annotations)
     * Reposition the text marker.
-    * Click or tap on a sketch line to select that sketch and drag it to the desired position.
+    * Select a sketch line to select that sketch and drag it to the desired position.
     * Move or copy a component
         * Any related annotations and their sketches will also be moved or copied but their position in relation to the paragraph will remain the same.
 
 
 >[!NOTE]
 >
->Annotations can not be added to a page that has been locked by another user.
+>Annotations cannot be added to a page that has been locked by another user.
 
 >[!NOTE]
 >
@@ -95,9 +95,9 @@ Annotations and their associated sketches can be deleted.
 
 1. [Start Annotate mode](#annotate-mode) on the page.
 
-1. Click/tap the text marker to open the annotation.
+1. Select the text marker to open the annotation.
 
-1. Click or tap the Delete icon.
+1. Select the Delete icon.
 
    ![Delete annotation](/help/sites-cloud/authoring/assets/annotation-delete.png)
 
@@ -113,7 +113,7 @@ You can delete only specific sketches instead of the entire annotation with all 
 
 1. [Start Annotate mode](#annotate-mode) on the page.
 
-1. Click or tap the sketch. AEM highlights it with a darker blue box.
+1. Select the sketch. AEM highlights it with a darker blue box.
 
    ![Select sketch for deletion](/help/sites-cloud/authoring/assets/annotation-sketch-delete.png)
 

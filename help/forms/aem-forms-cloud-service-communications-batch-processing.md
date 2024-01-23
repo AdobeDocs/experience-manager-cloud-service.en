@@ -1,11 +1,13 @@
 ---
-title: Experience Manager [!DNL Forms] as a Cloud Service Communications batch processing
+title: Effortless Bulk PDF Creation - Master the Art with Batch Processing – Your Self-Help Guide to Generating Millions of PDF Documents!
 description: How to create brand-oriented and personalized communications?
+feature: Adaptive Forms, APIs
+role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
 ---
-# Use batch processing 
+# AEM Forms as a Cloud Service Communications Batch Processing
 
-Communications allows you to create, assemble, and deliver brand-oriented and personalized communications such as business correspondences, documents, statements, claim processing letters, benefit notices, claim processing letters, monthly bills, and welcome kits. You can use Communications APIs to combine a template (XFA or PDF) with customer data to generate documents in PDF, PS, PCL, DPL, IPL, and ZPL formats.
+Communications lets you create, assemble, and deliver brand-oriented and personalized communications such as business correspondences, documents, statements, claim processing letters, benefit notices, monthly bills, and welcome kits. You can use Communications APIs to combine a template (XFA or PDF) with customer data to generate documents in PDF, PS, PCL, DPL, IPL, and ZPL formats.
 
 Communications provide APIs for on-demand and scheduled document generation. You can use synchronous APIs for on-demand and batch APIs (asynchronous APIs) for scheduled document generation:
 
@@ -156,7 +158,7 @@ The response of the status request contains the status section. It provides deta
 
 On completion of job, the generated documents are stored to the `success` folder at the destination location specified in the Batch Data Store configuration. If there are any errors, the service creates a `failure` folder. It provides information about the type and reason of errors. 
 
-Let's understand with the help of an example: Assume there is an input data file `record1.xml` and two output types: `PDF` and `PCL`. Then the destination location contains two sub-folders `pdf` and `pcl`, one for each of the output types. Lets assume PDF generation succeeded, then the `pdf` sub-folder contains the `success` sub-folder which in turn contains the actual generated PDF document `record1.pdf`. Lets assume PCL generation failed, then the `pcl` sub-folder contains a `failure` sub-folder which in turn contains an error file `record1.error.txt` which contains details of the error. Additionally, the destination location  contains a temporary folder called `__tmp__` which holds certain files required during batch execution. This folder can be deleted when there are no active batch runs referencing the destination folder.
+Let's understand with the help of an example: Assume there is an input data file `record1.xml` and two output types: `PDF` and `PCL`. Then the destination location contains two sub-folders `pdf` and `pcl`, one for each of the output types. Lets assume PDF generation succeeded, then the `pdf` sub-folder contains the `success` sub-folder which in turn contains the actual generated PDF document `record1.pdf`. Lets assume PCL generation failed, then the `pcl` sub-folder contains a `failure` sub-folder which in turn contains an error file `record1.error.txt` which contains details of the error. Also, the destination location  contains a temporary folder called `__tmp__` which holds certain files required during batch execution. This folder can be deleted when there are no active batch runs referencing the destination folder.
 
 >[!NOTE]
 >
@@ -165,3 +167,10 @@ Let's understand with the help of an example: Assume there is an input data file
 ## API reference documentation
 
 The API reference documentation provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is available in the .yaml format. You can download the [Batch APIs](assets/batch-api.yaml) file and upload it to Postman to check functionality of APIs.
+
+>[!MORELIKETHIS]
+>
+>* [Introduction to AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

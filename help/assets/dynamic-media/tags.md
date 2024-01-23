@@ -46,7 +46,7 @@ The integration takes advantage of two separate and independent types of Dynamic
 
 ### About tracking using Adobe Analytics  {#about-tracking-using-adobe-analytics}
 
-Adobe Analytics lets you track actions that are performed by the end user when they interact with Dynamic Media Viewers on your website. Adobe Analytics also lets you track viewer-specific data. For example, you can track and record view load events along with the asset name, any zoom actions that occurred, and video play actions.
+Adobe Analytics lets you track actions that are performed by the user when they interact with Dynamic Media Viewers on your website. Adobe Analytics also lets you track viewer-specific data. For example, you can track and record view load events along with the asset name, any zoom actions that occurred, and video play actions.
 
 In Experience Platform Tags, the concepts of *Data Elements* and *Rules* work together to enable Adobe Analytics tracking.
 
@@ -215,9 +215,9 @@ The exact value returned by the Data Element depends on the context. If the Data
     * Uses the key press event from the Core Experience Platform Tags extension as a trigger.
     * Sends the value of **[!UICONTROL ZoomScale]** Data Element to Adobe Analytics.
 
-Now, assume the end user loads the web page with the two viewers. In *viewer1*, they zoom in to 50% scale; then, in *viewer2*, they zoom in to 25% scale. In *viewer1*, they pan image around, and finally press a key on the keyboard.
+Now, assume the user loads the web page with the two viewers. In *viewer1*, they zoom in to 50% scale; then, in *viewer2*, they zoom in to 25% scale. In *viewer1*, they pan image around, and finally press a key on the keyboard.
 
-The end user's activity results in the following two tracking calls being made to Adobe Analytics:
+The user's activity results in the following two tracking calls being made to Adobe Analytics:
 
 * The first call occurs because **[!UICONTROL TrackPan]** Rule is triggered when the user pans in *viewer1*. That call sends 50% as a value of **[!UICONTROL ZoomScale]** Data Element because the Data Element knows that the Rule is triggered by *viewer1* and fetches the corresponding scale value;
 * The second call occurs because **[!UICONTROL TrackKey]** Rule is triggered when the user pressed a key on the keyboard. That call sends 25% as a value of **[!UICONTROL ZoomScale]** Data Element because the Rule was not triggered by the viewer. As such, the Data Element returns the most up-to-date value.
@@ -500,7 +500,7 @@ After you configure Experience Platform Tags, the following is set up for the in
 
 A property in Experience Platform Tags is a named configuration that keeps all your settings together. A library of the configuration settings is generated and published to different environment levels (development, staging, and production).
 
-See also [Configure a tap property](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
+See also [Configure a select property](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
 
 **To create a property in Experience Platform Tags:**
 
@@ -513,7 +513,7 @@ See also [Configure a tap property](https://experienceleague.adobe.com/docs/plat
 
 1. Select **[!UICONTROL Save]**.
 
-   Select the newly created property then proceed to *Installation and setup of extensions*.
+   Select the created property, then proceed to *Installation and setup of extensions*.
 
 ### Install and setup of extensions {#installing-and-setup-of-extensions}
 

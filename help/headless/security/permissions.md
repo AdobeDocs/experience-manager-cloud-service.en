@@ -16,7 +16,7 @@ The Author service is where internal users create, manage, and publish content. 
 
 As a best practice, permissions should be set on Groups in AEM. Also known as local groups, these groups can be managed within the AEM author environment. 
 
-The easiest way to manage group membership is to use Adobe Identity Management System (IMS) groups and assign [IMS groups to local AEM groups](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en#managing-permissions-in-aem). 
+The easiest way to manage group membership is to use Adobe Identity Management System (IMS) groups and assign [IMS groups to local AEM groups](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem). 
 
 ![Admin console permission flow](assets/admin-console-aem-group-permissions.png)
 
@@ -48,7 +48,7 @@ It is best not to modify permissions of an out of the box group directly. Instea
 
 For more granular permissions use the **Permissions** console in AEM and update the path from `/content/dam` to a more specific path, that is, `/content/dam/mycontentfragments`.
 
-It may be desirable to give this group of users permissions to create and edit content fragments but not delete. To review and assign permissions for edit, but not delete see [Content Fragments - Delete Considerations](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
+It may be desirable to give this group of users permissions to create and edit content fragments but not delete. To review and assign permissions for edit, but not delete see [Content Fragments - Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 ### Model editors
 
@@ -58,7 +58,7 @@ The ability to modify **Content Fragment Models** should be left to administrato
 >
 >Modifications to Content Fragment Models alter the underlying GraphQL API that headless applications rely on.
 
-If you wish you to create a group that manages Content Fragment Models but not full administrator access, you can create a group with the following access control entries:
+If you want you to create a group that manages Content Fragment Models but not full administrator access, you can create a group with the following access control entries:
 
 | Path | Permission | Privileges|
 |-----| -------------| ---------|

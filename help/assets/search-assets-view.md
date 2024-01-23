@@ -1,6 +1,6 @@
 ---
-title: Search and discover assets in [!DNL Assets view]
-description: Search and discover assets in [!DNL Assets view].
+title: Learn how to search and discover assets in [!DNL Assets view]?
+description: Learn how to search and discover assets in AEM Assets view. The powerful search functionality lets you quickly discover the appropriate asset and help you improve your content velocity.
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
 ---
@@ -114,10 +114,41 @@ To remove custom filters:
 
 1. Click **[!UICONTROL Confirm]** to remove the filters from the user interface. 
 
+## Search assets using [!DNL Adobe Firefly] {#search-firefly}
+
+You can search for an asset that is not available in any of the asset folders by utilizing the [!DNL Adobe Firefly] asset search feature within [!DNL Experience Manager Assets]. This allows you to efficiently generate assets in real-time that are not stored in the asset folders.
+
+### Before you begin
+
+You must have an active [!DNL Adobe Express] subscription.
+
+### Generate assets
+
+To generate new assets using [!DNL Adobe Firefly]:
+
+1. Navigate to the [!DNL AEM Assets] workspace.
+1. Enter the asset name in the search bar at the top of the page.<br>
+For instance, you can search an asset using the keyword `Bugatti Type 57`. When searching for the asset, no results are found because the asset is not present in any of the asset folders.
+1. Type the asset name in the search bar in the middle of the page and click **[!UICONTROL Generate]**.
+ ![Firefly integration](assets/firefly-integration.jpg)
+ *Figure: No results found for Bugatti Type 57 in the asset folder.* <br>
+The new assets are successfully generated.
+ ![Firefly integration](assets/bugatti-type-57.jpg)
+ *Figure: Reference assets searched using [!DNL Adobe Firefly] asset search feature.* <br>
+You can upload these assets to your preferred folder for easy access.
+
+### Upload assets
+
+To upload the generated asset to the assets repository:
+
+1. Click **[!UICONTROL Upload]**.
+1. Select the asset folder to which you need to upload the asset and click **[!UICONTROL Select Folder]**.
+ ![Upload asset](assets/upload-asset-firefly.jpg)
+ *Figure: Select the folder to upload asset.*
 
 ## Saved searches {#saved-search}
 
-Search functionality is quite easy to use in [!DNL Assets view]. From within the search box, you can not only just type a keyword and press return to see the results, you can also quickly search again for your recently searched keywords in a single click.
+Search functionality is quite easy to use in [!DNL Assets view]. From within the search box, you can just type a keyword and press return to see the results, or you can quickly search again for your recently searched keywords in a single click.
 
 You can also filter the search results based on specific criteria around metadata and type of assets. For frequently used filters, to improve the search experience, [!DNL Assets view] lets you save the search parameters. You can then select the saved search to search and apply the filter with just a single click as well.
 
@@ -135,6 +166,73 @@ What about temporarily hiding an asset (suspending search on it) from the search
 
 When userA is searching and userB add an asset that matches search results, will the asset display in search as soon as userA refreshes the page? Assuming indexing is near real-time. May not be so for bulk uploads.
 -->
+
+## Work with Search results {#work-with-search-results}
+
+You can select the assets that display in the search results and do the following actions:
+
+* **Find Similar Image**: Find similar image asset in the Assets UI based on the metadata and smart tags.
+
+* **Details**: View and edit asset properties.
+
+* **Download**: Download an asset.
+
+* **Add to Collection**: Add the selected asset to a collection.
+
+* **Pin to Quick Access**: [Pin an asset](my-workspace-assets-view.md) for faster access when you need it later. All pinned items display in the **Quick access** section of My Workspace.
+
+* **Open in Adobe Express**: Edit an image in the integrated Adobe Express from the Experience Manager Assets screen.
+
+* **Edit**: Edit the image using Adobe Express. 
+
+* **Share Link**: [Share links](share-links-for-assets-view.md) for an asset with other users so that they can access and download it.
+
+* **Delete**: Delete an asset.
+
+* **Copy**: Copy an asset to a different folder location.
+
+* **Move**: Move an asset to a different folder location.
+
+* **Rename**: Rename an asset.
+
+* **Copy to Libraries**: Add an asset to Library.
+
+* **Assign Tasks**: Assign tasks to users for an asset.
+
+* **Watch**: [Monitor the operations](manage-notifications-assets-view.md) performed on an asset.
+
+## Configuring search first homepage {#configuring-search-first-homepage}
+
+Experience Manager Assets enables you to select the default landing page for your organization. When using Search First as the home page, you also have options to tailor the branding of the page by configuring the background and logo images to match your brand.
+
+To configure the search first homepage, execute the steps below:
+
+1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
+1. Select **[!UICONTROL Search first]**. It further opens search first related configuration. You can set [alignment](#setting-alignment-search-bar) or [set background and logo image](#setting-background-image-and-logo) of your homepage.
+
+### Setting alignment of search bar {#setting-alignment-search-bar}
+
+[!DNL Assets view] allows you to change alignment of the search bar. You can make search bar appear either at the center or at the top. Select the appropriate alignment and click **[!UICONTROL Save]**.
+
+   ![Search first homepage alignment](assets/search-first-alignment.png)
+
+### Setting background and logo image of homepage {#setting-background-image-and-logo}
+
+You can add brand logo and background image to your search first homepage. Execute the following steps:
+
+1. Navigate to **[!UICONTROL Background and Logo image]** section under **[!UICONTROL Homepage]**.
+1. Click **[!UICONTROL Replace]** to browse images from existing assets repository.
+1. Click **[!UICONTROL Save]**. [Preview](#preview-configured-homepage) the changes to review the modifications.
+
+### Preview configured homepage {#preview-configured-homepage}
+
+You can preview to check the layout and formatting of the search first homepage. Using **[!UICONTROL Preview]**, you can fix the layout or make modifications as per the requirement. To preview the configured homepage, execute the steps below:
+
+1. Click **[!UICONTROL General Settings]** and select **[!UICONTROL Search first]**.
+1. Navigate to **[!UICONTROL Customize search first homepage]** and click **[!UICONTROL Preview]**. Toggle through **[!UICONTROL Dark theme]** button to preview homepage in dark or light theme.
+1. Click **[!UICONTROL Close]** to close the preview screen.
+
+   ![Search first homepage preview](assets/search-first-preview.gif)
 
 ## Next Steps {#next-steps}
 

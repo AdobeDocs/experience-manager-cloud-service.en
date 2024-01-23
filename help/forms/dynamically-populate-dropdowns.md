@@ -1,15 +1,10 @@
 ---
-title: Dynamically populating drop-down lists
-seo-title: Dynamically populating drop-down lists
-description: Procedure to dynamically populate drop-down lists based on some logic
-seo-description: Procedure to dynamically populate drop-down lists based on some logic
+title: How to dynamically populate drop-down lists?
+description: Learn to create a cascading list box or dynamically populate drop-down lists.
 uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
-docset: aem65
-
 ---
 
 # Dynamically populating drop-down lists {#dynamically-populating-drop-down-lists}
@@ -38,7 +33,7 @@ Consider a scenario where you want to populate the **State** drop-down list base
    @Properties({
            @Property(name = "sling.servlet.resourceTypes", value = "/apps/populatedropdown"),
            @Property(name = "sling.servlet.methods", value = {"GET", "POST"}),
-           @Property(name = "service.description", value = "Populate states dropdown based on country value")
+           @Property(name = "service.description", value = "Populate states drop-down based on country value")
    })
    public class DropDownPopulator extends SlingAllMethodsServlet {
        private Logger logger = LoggerFactory.getLogger(DropDownPopulator.class);
@@ -145,7 +140,7 @@ Consider a scenario where you want to populate the **State** drop-down list base
 
    ![Create a drop-down node](assets/dropdown-node.png)
 
-1. Package the content node and embed the .jar file at a particular location (for example /apps/myfolder/demo/install/). Deploy the same file on the server.
+1. Package the content node and embed the .jar file at a particular location (for example, /apps/myfolder/demo/install/). Deploy the same file on the server.
 1. Create an Adaptive Form and add two drop-down lists, Country and State to it. The Country list can include the names of countries. The State list can dynamically populate the names of states for the country you select in the first list.
 
    Add the names of countries to display in Country list. In the State list, add a script to populate it based on the name of the country in the Country list.
@@ -171,3 +166,8 @@ Consider a scenario where you want to populate the **State** drop-down list base
 The Content package that contains a sample Adaptive Form (demo/AFdemo) with the above code implemented.
 
 [Get File](assets/dropdown-demo-content-1.0.1-snapshot.zip)
+
+
+>[!MORELIKETHIS]
+>
+>* [Prefill Adaptive Form fields](/help/forms/prepopulate-adaptive-form-fields.md)

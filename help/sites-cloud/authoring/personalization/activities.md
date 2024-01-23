@@ -52,14 +52,14 @@ Create a brand for which you want to manage marketing activities.
 
 When you create a brand using the Activities console, it also appears in the [Offers console](/help/sites-cloud/authoring/personalization/offers.md) where you can create offers for the experiences of your activities.
 
-1. In the Navigation console, click or tap **Personalization**. Click or tap **Activities**.
+1. In the Navigation console, select **Personalization**. Select **Activities**.
 
    ![Navigating to activities](/help/sites-cloud/authoring/assets/activities-navigation.png)
 
-1. In the Activities console, click or tap **Create **then** Create Brand**.
-1. Select the brand template and click or tap **Next**.
+1. In the Activities console, select **Create **then** Create Brand**.
+1. Select the brand template and select **Next**.
 1. Type a title for the brand as you want it to appear in the Activities and Offers consoles. Optionally, type or select one or more tags to associate with the brand.
-1. Click or tap **Create**. Your brand appears in the Activities console.
+1. Select **Create**. Your brand appears in the Activities console.
 
 ## Adding/Editing an Activity Using the Activities Console {#adding-editing-an-activity-using-the-activities-console}
 
@@ -88,32 +88,32 @@ Add an activity or edit an existing activity to focus your marketing efforts on 
 
 To add an activity:
 
-1. Click or tap the brand for which you are creating the activity, and then click or tap **Create** then **Create Activity**. If editing, select the activity in the Master Area screen and clicking or tapping **Edit Activity**.
-1. Provide the following information and then click or tap **Next**:
+1. Select the brand for which you are creating the activity, and then select **Create** then **Create Activity**. If editing, select the activity in the Master Area screen and clicking or tapping **Edit Activity**.
+1. Provide the following information and then select **Next**:
     * A name for the activity.
     * The targeting engine to use. ContextHub (AEM) is selected by default. If you need to use Adobe Target, create the activity in the targeted content editor.
     * If you selected Adobe Target as the targeting engine, select/edit the cloud configuration to use to connect to Adobe Target. (Be careful that you do not select a framework that you created for your cloud configuration.)
     * (Optional) The objective or a description of the activity.
     * Select the Activity Type.
-1. Add one or more experiences to the activity. Click or tap **Add Experience**.
+1. Add one or more experiences to the activity. Select **Add Experience**.
 1. If you are using AEM targeting or Adobe Target experience targeting:
-    1. Click or tap **Select Audience** and select the segment that your experience targets.
-    1. Click or tap **Add Experience**, type a name, and click or tap **OK**.
-    1. Click or tap **Next**.
+    1. Select **Select Audience** and select the segment that your experience targets.
+    1. Select **Add Experience**, type a name, and select **OK**.
+    1. Select **Next**.
    If you are using Adobe Target A/B Testing:
-    1. Click or tap the pencil in the audiences box to select an audience.
-    1. Click or tap **Add Experience**, type a name, and click or tap **OK**.
+    1. Select the pencil in the audiences box to select an audience.
+    1. Select **Add Experience**, type a name, and select **OK**.
     1. Enter the percentage of traffic that displays each experience.
-    1. Click or tap **Next**.
+    1. Select **Next**.
 1. To specify when the activity starts, use the **Start** drop-down menu to select one of the following values:
     * **When Activated:** The activity starts when the page that contains the targeted content is activated.
-    * **Specified Date & Time:** A specific time. When you select this option, click or tap the calendar icon, select a date, and specify the time to start the activity.
+    * **Specified Date & Time:** A specific time. When you select this option, select the calendar icon, select a date, and specify the time to start the activity.
 1. To specify when the activity ends, use the End drop-down menu to select one of the following values:
     * **When Deactivated**: The activity ends when the page that contains the targeted content is deactivated.
-    * **Specified Date & Time**: A specific time. When you select this option, click or tap the calendar icon, select a date, and specify the time to end the activity.
+    * **Specified Date & Time**: A specific time. When you select this option, select the calendar icon, select a date, and specify the time to end the activity.
 1. To specify a priority for the activity, use the slider to select either **Low**, **Normal**, or **High**.
-1. If you are using Adobe Target as your targeting engine, select what you would like to measure with this activity. See [Configuring the Activity and Setting Goals](/help/sites-cloud/authoring/personalization/targeted-content.md) for more information on the success metrics available. You must select at least one goal.
-1. Click or tap **Save**.
+1. If you are using Adobe Target as your targeting engine, select what you would like to measure with this activity. See [Configuring the Activity and Setting Goals](/help/sites-cloud/authoring/personalization/targeted-content.md) for more information on the success metrics available. Select at least one goal.
+1. Select **Save**.
 
    >[!NOTE]
    >
@@ -129,12 +129,12 @@ You need to publish activities to make them available. Conversely, you may want 
 
 To publish or unpublish activities:
 
-1. Click or tap the brand and then the area that contains the activity you want to publish or unpublish.
-1. Tap or click the icon next to the activity or activities you want to publish or unpublish.
+1. Select the brand and then the area that contains the activity you want to publish or unpublish.
+1. Select the icon next to the activity or activities you want to publish or unpublish.
 
    ![Publishing from activities console](/help/sites-cloud/authoring/assets/activities-console.png)
 
-1. To publish, tap or click **Publish**. To unpublish, tap or click **Unpublish**. Your activity or activities are published or unpublished and their status changes in the Activities console (may require a refresh).
+1. To publish, select **Publish**. To unpublish, select **Unpublish**. Your activity or activities are published or unpublished and their status changes in the Activities console (may require a refresh).
 
 ## Activities on Author and Publish instances {#activities-on-author-and-publish-instances}
 
@@ -149,13 +149,13 @@ You can see the performance of any Adobe Target activity (XT or A/B). If you are
 
 To view activity performance and convert winning experiences:
 
-1. In **Personalization**, click or tap **Activities** to navigate to the **Activities** console.
-1. Click or tap the brand for which you want to see activities.
-1. Select the activity and click or tap **View Properties** and click the **Reports** tab and select the activity that you want to view performance for/convert winning experiences for. Performance data is displayed.
+1. In **Personalization**, select **Activities** to navigate to the **Activities** console.
+1. Select the brand for which you want to see activities.
+1. Select the activity and select **View Properties** and click the **Reports** tab and select the activity that you want to view performance for/convert winning experiences for. Performance data is displayed.
 
    ![Checking activity performance](/help/sites-cloud/authoring/assets/activities-performance.png)
 
-1. Click or tap the **Push winner** link to push that experience as the default experience.
+1. Select the **Push winner** link to push that experience as the default experience.
 
    Converting the winner does the following:
 
@@ -166,7 +166,7 @@ To view activity performance and convert winning experiences:
 
    A winning experience is the experience that generates more Lift in the reports, which is based on the conversion rate.
 
-1. Click or tap **Yes** to confirm that you want to convert the winner, disabling the current experience and replacing it with the content of the winning experience.
+1. Select **Yes** to confirm that you want to convert the winner, disabling the current experience and replacing it with the content of the winning experience.
 
 ## Synchronizing Activities with Adobe Target {#synchronizing-activities-with-adobe-target}
 
@@ -207,7 +207,7 @@ To avoid synchronization problems, always use unique names for activities. If an
 
 >[!NOTE]
 >
->When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId` to each campaign. When you delete the campaign in Adobe Target, `thirdPartyId` is not deleted. You cannot re-use the `thirdPartyId` for campaigns of different types (AB, XT) and it cannot be manually removed. To avoid this issue, name each campaign a unique name; campaign names can therefore not be re-used in different campaign types.
+>When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId` to each campaign. When you delete the campaign in Adobe Target, `thirdPartyId` is not deleted. You cannot re-use the `thirdPartyId` for campaigns of different types (AB, XT) and it cannot be manually removed. To avoid this issue, name each campaign a unique name; campaign names cannot be re-used in different campaign types.
 >
 >If you use the same name in the same campaign type, you will overwrite the existing campaign.
 >

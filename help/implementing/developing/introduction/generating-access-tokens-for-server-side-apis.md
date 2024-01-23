@@ -13,7 +13,7 @@ The server-to-server flow is described below, along with a simplified flow for d
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## The Server-to-server Flow {#the-server-to-server-flow}
 
@@ -43,7 +43,7 @@ After the credentials are created, they will appear under the **Technical Accoun
 
 ![View Credentials](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
 
-Users can later view the credentials using the View action. In addition, as described later in the article, users can edit the credentials for the same technical account. They accomplish this editing by creating a new private key or certificate, for cases when the certificate must be renewed or revoked.
+Users can later view the credentials using the View action. In addition, as described later in the article, users can edit the credentials for the same technical account. They accomplish this editing by creating a private key or certificate, for cases when the certificate must be renewed or revoked.
 
 Users with the AEM as a Cloud Service Environment Administrator role can later create credentials for additional technical accounts. This ability is useful when different APIs have differing access requirements. For example, read versus read-write.
 

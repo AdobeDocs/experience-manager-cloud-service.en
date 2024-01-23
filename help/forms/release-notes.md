@@ -1,6 +1,6 @@
 ---
-title: "[!DNL AEM Forms] as a Cloud Service release notes"
-description: "[!DNL AEM Forms] as a Cloud Service release notes"
+title: AEM Forms as a Cloud Service release notes
+description: Know about new features, beta releases, pre-release information and more for AEM Forms as a Cloud Service.
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 ---
 
@@ -25,7 +25,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service receives improvemen
 
 ### What is new in [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-- **Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (Anonymous) via Adobe Analytics for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
+- **Analytics for Adaptive Forms**: You can now capture and track behavior of both logged-in and not logged-in (Anonymous) via Adobe Analytics for Adaptive Forms to gather user insights. It helps make informed decisions based on data to improve user experience.
 
 ### New features available in [!DNL Forms] prerelease channel {#prerelease-features-forms-oct-2021}
 
@@ -33,7 +33,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service receives improvemen
 
 ### Beta features of [!DNL Forms]  {#sep-what-is-new-forms-oct-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](aem-forms-cloud-service-communications.md) help you combine a template and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous and batch modes. The APIs enables you to create applications that let you:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](aem-forms-cloud-service-communications.md) help you combine a template and XML data to generate print documents in various formats. The service lets you generate documents in synchronous and batch modes. The APIs enables you to create applications that let you:
 
   - Generate documents by populating template files (PDF and XDP) with XML data.
   - Generate output forms in various formats, including non-interactive PDF print streams.
@@ -46,7 +46,7 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 - **Use Adobe Sign roles in an Adaptive Form**: Adobe Sign for business and enterprise service levels have the option to expand the roles for Agreement recipients, beyond just the Signer, to better match their workflow requirements. You can now [enable each recipient of agreement to configure their role in an Adaptive Form](working-with-adobe-sign.md#addsignerstoanadaptiveform), with Signer being the default role.
 
-- **Analytics for Adaptive Forms**: You can now capture and [track end user behavior via Adobe Analytics](integrate-aem-forms-with-adobe-analytics.md) for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
+- **Analytics for Adaptive Forms**: You can now capture and [track user behavior by way of Adobe Analytics](integrate-aem-forms-with-adobe-analytics.md) for Adaptive Forms to gather user insights. It helps make informed decisions based on data to improve user experience.
 
 - **Easily connect AEM Forms with Microsoft Dynamics and Salesforce**: The service provides out of the box data source configuration and data models for Microsoft Dynamics and Salesforce, making it [faster and easier for developers to configure Microsoft Dynamics and Salesforce as data sources for an adaptive form](configure-msdynamics-salesforce.md).
 
@@ -55,9 +55,9 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 ### Beta features of [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
 - **Unified Storage Connector:** Use Unified Storage Connector to externalize in-process data in customer-managed repositories. For example, you can store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) in a customer-managed repository.
-  <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
+  <!--* Enable Forms Portal's save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](aem-forms-cloud-service-communications.md) help you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](aem-forms-cloud-service-communications.md) help you combine XDP templates and XML data to generate print documents in various formats. The service lets you generate documents in synchronous mode. The APIs enables you to create applications that let you:
   - Generate documents by populating template files with XML data.
   - Generate output forms in various formats, including non-interactive PDF print streams.
   - Generate print PDF files from an XFA form PDF and Adobe Acrobat Form.
@@ -84,7 +84,7 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
   * Enable searching of forms based on a various criteria, such as form properties, metadata, and tags.
 
-  * Lists drafts and submissions related to Adaptive Form created by end user.
+  * Lists drafts and submissions related to Adaptive Form created by user.
 
   -->
 
@@ -98,16 +98,16 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 - **Acroform-based Document of Record**: AEM Forms as a Cloud Service supports using [Adobe Acrobat Form PDF (Acroform PDF)](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) as a template for Document of Record besides XFA-based form template.
 
-- **Microsoft Azure data store connector**: You can now [connect Form Data Model to Microsoft Azure Storage](configure-azure-storage.md). It allows you to retrieve and store adaptive form data to Microsoft Azure Storage as a BLOB.
+- **Microsoft Azure data store connector**: You can now [connect Form Data Model to Microsoft Azure Storage](configure-azure-storage.md). It lets you retrieve and store adaptive form data to Microsoft Azure Storage as a BLOB.
 
 ### Beta feature of [!DNL Forms] {#aug-what-is-new-forms-prerelease}
 
 - **Unified Storage Connector:** Use Unified Storage Connector to externalize in-process data in customer-managed repositories. For example, you can
 
-  - Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.
+  - Enable Forms Portal's save and resume functionality and store adaptive forms drafts in a customer-managed data repository.
   - Store in-process AEM Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) in a customer-managed repository.
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](aem-forms-cloud-service-communications.md) help you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](aem-forms-cloud-service-communications.md) help you combine XDP templates and XML data to generate print documents in various formats. The service lets you generate documents in synchronous mode. The APIs enables you to create applications that let you:
   - Generate documents by populating template files with XML data.
   - Generate output forms in various formats, including non-interactive PDF print streams.
   - Generate print PDF files from an XFA form PDF and Adobe Acrobat Form.
@@ -118,7 +118,7 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 - **Use Adobe Sign roles in an Adaptive Form**: Adobe Sign for business and enterprise service levels have the option to expand the roles for Agreement recipients, beyond just the Signer, to better match their workflow requirements. You can now [enable each recipient of agreement to configure their role in an Adaptive Form](working-with-adobe-sign.md#addsignerstoanadaptiveform), with Signer being the default role.
 
-- **Analytics for Adaptive Forms**: You can now capture and track end user behavior via Adobe Analytics for Adaptive Forms to gather end user insights. It helps make informed decisions based on data to improve end user experience.
+- **Analytics for Adaptive Forms**: You can now capture and track user behavior by way of Adobe Analytics for Adaptive Forms to gather user insights. It helps make informed decisions based on data to improve user experience.
 
 - **Easily connect AEM Forms with Microsoft Dynamics and Salesforce**: The service provides out of the box data source configuration and data models for Microsoft Dynamics and Salesforce, making it [faster and easier for developers to configure Microsoft Dynamics and Salesforce as data sources for an adaptive form](configure-msdynamics-salesforce.md).
 
@@ -133,13 +133,13 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 - **Acroform-based Document of Record**: You can also [use Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) as a template for Document of Record besides XFA-based form template.
 
-- **Microsoft Azure data store connector**: You can now [connect Form Data Model to Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). It allows you to retrieve and store adaptive form data to Microsoft Azure Storage as a BLOB.
+- **Microsoft Azure data store connector**: You can now [connect Form Data Model to Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). It lets you retrieve and store adaptive form data to Microsoft Azure Storage as a BLOB.
 
 - **Variable Data Externalizer**: You can save data of AEM Workflow variables on an external storage system managed by your organization.
 
 ### Beta feature of [!DNL Forms] {#july-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](aem-forms-cloud-service-communications.md) help you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [Communication APIs](aem-forms-cloud-service-communications.md) help you combine XDP templates and XML data to generate print documents in various formats. The service lets you generate documents in synchronous mode. The APIs enables you to create applications that let you:
   - Generate documents by populating template files with XML data.
   - Generate output forms in various formats, including non-interactive PDF print streams.
   - Generate print PDF files from an XFA form PDF and Adobe Acrobat Form.
@@ -155,7 +155,7 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 ### Beta feature of [!DNL Forms] {#june-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: Communication APIs helps you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous mode. The APIs enables you to create applications that let you:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: Communication APIs helps you combine XDP templates and XML data to generate print documents in various formats. The service lets you generate documents in synchronous mode. The APIs enables you to create applications that let you:
 
   - Generate final form documents by populating template files with XML data.
   - Generate output forms in various formats, including non-interactive PDF print streams.
@@ -181,7 +181,7 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 
 ### Upcoming beta feature of [!DNL Forms] {#may-what-is-new-forms-prerelease}
 
-Output as a Cloud service: Output service helps you combine XDP templates and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous and asynchronous batch mode. Output service enables you to create applications that let you:
+Output as a Cloud service: Output service helps you combine XDP templates and XML data to generate print documents in various formats. The service lets you generate documents in synchronous and asynchronous batch mode. Output service enables you to create applications that let you:
 
 - Generate final form documents by populating template files with XML data.
 - Generate output forms in various formats, including non-interactive PDF print streams.
@@ -201,9 +201,9 @@ You can write to formscsbeta@adobe.com to sign up for the beta program.
 
 - **Use Government ID identity authentication method in Adobe Sign enabled Adaptive Forms**
 
-  Powered by advanced machine learning algorithms, Adobe Sign’s Government ID process empowers companies across the globe with the ability to secure a high-quality authentication of their recipient's identity. Now, you can use Government ID identity authentication method in Adobe Sign enabled Adaptive Forms.
+  Powered by advanced machine learning algorithms, Adobe Sign's Government ID process empowers companies across the globe with the ability to secure a high-quality authentication of their recipient's identity. Now, you can use Government ID identity authentication method in Adobe Sign enabled Adaptive Forms.
 
-  Government ID is a premium identity authentication method that instructs the recipient to [upload the image of a government-issued identity document (driver’s license, national ID, passport)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html), and then evaluates that document to ensure it's authentic.
+  Government ID is a premium identity authentication method that instructs the recipient to [upload the image of a government-issued identity document (driver's license, national ID, passport)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html), and then evaluates that document to ensure it's authentic.
 
 - **Support to use in-form signing experience for asynchronous adaptive form submissions**
 
@@ -215,7 +215,7 @@ You can write to formscsbeta@adobe.com to sign up for the beta program.
 
 - **Support to use the literal option to set value for a JSON type variable**
 
-  You can use literal option to set value for a JSON type variable in the set variable step of an AEM Workflow. The literal option allows you to specify a JSON in the form of a string.
+  You can use literal option to set value for a JSON type variable in the set variable step of an AEM Workflow. The literal option lets you specify a JSON in the form of a string.
 
 - **Use local development environment to create Document of Record (DoR)**
 

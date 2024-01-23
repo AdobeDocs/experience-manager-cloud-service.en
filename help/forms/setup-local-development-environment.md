@@ -1,9 +1,11 @@
 ---
-title: Set up a local development environment for Adobe Experience Manager Forms as a Cloud Service
+title: How do I set up a local development environment for AEM Forms?
 description: Set up a local development environment for Adobe Experience Manager Forms as a Cloud Service
+role: Admin, Developer, User
+feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 ---
-# Set up a local development environment and initial development project {#overview}
+# Set up local development environment for AEM Forms {#overview}
 
 When you set up and configure an [!DNL  Adobe Experience Manager Forms] as a [!DNL  Cloud Service] environment, you set up development, staging, and production environments on cloud. In addition, you can also set up and configure a local development environment.
 
@@ -82,8 +84,8 @@ To download latest version of Adobe Experience Manager as a Cloud Service SDK, E
 
 1. Navigate to the **[!UICONTROL AEM as a Cloud Service]** tab.
 1. Sort by published date in descending order.
-1. Click on the latest Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms feature archive (AEM Forms add-on), forms reference assets, or Forms Designer.
-1. Review and accept the EULA. Tap the **[!UICONTROL Download]** button.
+1. Click the latest Adobe Experience Manager as a Cloud Service SDK, Experience Manager Forms feature archive (AEM Forms add-on), forms reference assets, or Forms Designer.
+1. Review and accept the EULA. Select the **[!UICONTROL Download]** button.
 
 ## Set up development tools for AEM Projects {#setup-development-tools-for-AEM-projects}
 
@@ -262,6 +264,10 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
     * Use the `includeFormscommunications=y` option to include Forms Core Components and dependencies required to include Customer Communications functionality.
 
+        >[!WARNING]
+        >
+        >* When creating an Archetype project with version 45, the [AEM Archetype Project Folder]/pom.xml initially sets the forms core components version to 2.0.64. Prior to building or deploying the Archetype project, update the forms core components version to 2.0.62.
+
 1. Deploy the project to your local development environment. You can use the following command to deploy to your local development environment
 
     `mvn -PautoInstallPackage clean install`
@@ -278,7 +284,7 @@ Perform the following steps to configure local Dispatcher and then add Forms-spe
 
 ### Set up local Dispatcher {#setup-local-dispatcher}
 
-The [!DNL Experience Manager] as a Cloud Service SDK includes the recommended Dispatcher Tools version, that facilitates configuring, validating, and simulating Dispatcher locally. Dispatcher Tools are Docker-based and provide command-line tools to transpile Apache HTTP Web Server and Dispatcher configuration files into a compatible format and deploy them to Dispatcher running in the Docker container.
+The [!DNL Experience Manager] as a Cloud Service SDK includes the recommended Dispatcher Tools version that facilitates configuring, validating, and simulating Dispatcher locally. Dispatcher Tools are Docker-based and provide command-line tools to transpile Apache HTTP Web Server and Dispatcher configuration files into a compatible format and deploy them to Dispatcher running in the Docker container.
 
 Caching on Dispatcher allows [!DNL AEM Forms] to prefill Adaptive Forms at a client. It improves rendering speed of prefilled forms.
 
@@ -290,7 +296,7 @@ Perform the following steps to configure Dispatcher cache for Experience Manager
 
 1. Open your AEM Project and navigate to `\src\conf.dispatcher.d\available_farms`
 1. Create a copy of the `default.farm` file. For example, `forms.farm`.
-1. Open the newly created `forms.farm` file for editing and replace the following code:
+1. Open the created `forms.farm` file for editing and replace the following code:
 
     ```json
     #/ignoreUrlParams {
@@ -327,7 +333,7 @@ Your local development environment is ready.
 
 ## Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment
 
-Enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service, allows you to start creating, publishing, and delivering Core Components based Adaptive Forms and Headless Forms using your AEM Forms Cloud Service instances to multiple channels. You require Adaptive Forms Core Components enabled environment to use Headless Adaptive Forms.
+Enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service, lets you start creating, publishing, and delivering Core Components based Adaptive Forms and Headless Forms using your AEM Forms Cloud Service instances to multiple channels. You require Adaptive Forms Core Components enabled environment to use Headless Adaptive Forms.
 
 For instructions, see [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
 

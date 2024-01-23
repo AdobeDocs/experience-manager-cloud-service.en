@@ -1,13 +1,12 @@
 ---
-title: Creating and managing reviews of Adaptive Forms embedded or created in Sites page
-seo-title:  Review is a mechanism that allows reviewer to perform different tasks for adaptive forms using Assign Task step
-description: Review is a mechanism that allows reviewer to perform different tasks for adaptive forms using Assign Task step
+title: How to send an adaptive form for review? How to manage reviews for an aem adaptive form?
+description: Review is a mechanism that allows reviewer to perform different tasks for adaptive forms using Assign Task step.
 feature: Adaptive Forms
 hide: yes
 hidefromtoc: yes
 ---
 
-# Review step for Forms in Site's page {#review-step-forms-aem-sites-page}
+# Create and manage reviews for an Adaptive Form {#review-step-forms-aem-sites-page}
 
 Using the [Assign step](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step) of the AEM workflow, the reviewer reviews the submitted form and performs action on it. To review the submitted form using the Assign task step, follow these steps:
 
@@ -20,7 +19,7 @@ Using the [Assign step](https://experienceleague.adobe.com/docs/experience-manag
 1. Open your author instance in edit mode.
 1. Go to **[!UICONTROL Tools]** >  **[!UICONTROL Workflow]** >  **[!UICONTROL Models]** > **[!UICONTROL Create]** > **[!UICONTROL Create Model]**
 1. Specify the Title of workflow and add the **[Assign task]** step
-1. Tap ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Assign Task]** dialog opens.
+1. Select ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Assign Task]** dialog opens.
 1. Open [!UICONTROL Form and Document] tab and open [!UICONTROL Pre-populated] drop-down and specify:
 
    * Select input data file using
@@ -39,7 +38,7 @@ Using the [Assign step](https://experienceleague.adobe.com/docs/experience-manag
 Now, configure the Submit action of an Adaptive Form Container component on Site's page :
 
 1. Go to Site's page.
-1. Tap ![settings_icon](assets/settings_icon.png) of an Adaptive Form container. The **[!UICONTROL Adaptive Form Container]** dialog opens.
+1. Select ![settings_icon](assets/settings_icon.png) of an Adaptive Form container. The **[!UICONTROL Adaptive Form Container]** dialog opens.
 1. Open the **[!UICONTROL Submission]** tab and specify **[!UICONTROL Submit Action]** to [Invoke an AEM workflow](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
 
 1. Click [Done] to save the settings.

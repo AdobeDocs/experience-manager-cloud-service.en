@@ -12,18 +12,18 @@ Learn about the types of environments that you can create and how to create them
 
 A user with the requisite permissions can create the following environment types (within the bounds of what is available to the specific tenant).
 
-* **Production + Stage** - The production and staging environments are available as a pair and are used for production and testing purposes, respectively.
+* **Production + Stage** - The production and staging environments are available as a pair and are used for production and testing purposes, respectively. Conduct performance and security tests on stage environment. It has the same sizing as production.
 
-* **Development** - A development environment can be created for development and testing purposes and can be associated with non-production pipelines only.
+* **Development** - A development environment can be created for development and testing purposes and can be associated with non-production pipelines only.  Development environments do not have the same sizing as stage and production, and should not be used to conduct performance and security tests.
 
 * **Rapid Development** - A rapid development environment (RDE) lets a developer swiftly deploy and review changes, minimizing the amount of time required to test features that are proven to work on a local development environment. See [the rapid development environment documentation](/help/implementing/developing/introduction/rapid-development-environments.md) for details about how to use an RDE.
 
 The capabilities of individual environments depend upon the solutions enabled in the [program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) of the environment.
 
-* [Sites](/help/sites-cloud/home.md)
-* [Assets](/help/assets/home.md)
+* [Sites](/help/overview/introduction.md)
+* [Assets](/help/assets/overview.md)
 * [Forms](/help/forms/home.md)
-* [Screens](/help/screens-cloud/home.md)
+* [Screens](/help/screens-cloud/introduction/introduction.md)
 
 >[!NOTE]
 >
@@ -31,11 +31,13 @@ The capabilities of individual environments depend upon the solutions enabled in
 
 ## Adding an Environment {#adding-environments}
 
+To add or edit an environment, a user must be a member of the **Business Owner** role.
+
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click the program for which you want to add an environment.
+1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, tap or click the program for which you want to add an environment.
 
-1. From the **Program Overview** page, click **Add Environment** on the **Environments** card to add an environment.
+1. From the **[Program Overview](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview)** page, click **Add Environment** on the **Environments** card to add an environment.
 
    ![Environments card](assets/no-environments.png)
 
@@ -79,9 +81,9 @@ When you add an environment, you can elect to configure additional regions in ad
 1. Select the option **Add additional publish regions** and a new **Additional publish regions** option drop-down appears.
 1. In the **Additional publish regions** drop-down, select an extra region.
 1. The region selected is added below the drop-down to indicate its selection.
-   * Tap or click the `X` next to the selected region so you can de-select it.
+   * Select the `X` next to the selected region so you can de-select it.
 1. Select another region from the **Additional publish regions** drop-down to add another region.
-1. Tap or click **Save** when you are ready to create your environment.
+1. Select **Save** when you are ready to create your environment.
 
 ![Selecting multiple regions](assets/select-multiple-regions.png)
 
@@ -107,7 +109,7 @@ You can also remove additional publish regions. However you can only add or only
 
    ![Edit environment](assets/edit-environment.png)
 
-1. Tap or click **Save** to save the changes.
+1. Select **Save** to save the changes.
 
 Changes made to the production environment apply to both production and staging environments. Changes to multiple publish regions can only be edited in the production environment.
 
@@ -181,7 +183,7 @@ Alternatively you can access the same information from the **Environments** tab.
 
 1. On the **Overview** page, select the **Environments** tab.
 
-1. On the **Environments** tab, select the environment you wish to query in the left navigation panel.
+1. On the **Environments** tab, select the environment you want to query in the left navigation panel.
 
 1. Once an environment is selected:
    
@@ -192,12 +194,12 @@ Alternatively you can access the same information from the **Environments** tab.
  
 If there are any issues reported with additional publish regions:
 
-1. Please be patient. Cloud Manager will continuously try to recover the region and it may become available at any time.
-1. If the problem persists after a number of hours, you can remove the additional publish region and re-add it (either the same region or another region) to trigger a complete deployment.
+1. Be patient. Cloud Manager continuously tries to recover the region and it may become available at any time.
+1. If the problem persists after several hours, you can remove the additional publish region and re-add it (either the same region or another region) to trigger a complete deployment.
 
 How long you wait for the system to recover on its own before taking additional action depends on the impact the failure of that region has to your systems.
 
-Please note that in any case, [traffic will always be routed to the other closest region that’s online.](/help/operations/additional-publish-regions.md) If you continue to see issues, please reach out to Adobe Customer Care.
+In any case, [traffic is always routed to the other closest region that is online.](/help/operations/additional-publish-regions.md) If you continue to see issues, contact Adobe Customer Care.
 
 ## Updating Environments {#updating-dev-environment}
 
@@ -228,7 +230,7 @@ This option is also available by clicking the **Environments** tab of the progra
 
 ![Update option from Environments tab](assets/environ-update3.png)
 
-A user with the **Deployment Manager** role can use this option to update the pipeline associated with this environment to the latest AEM version.
+A user with the **Deployment Manager** or **Business Owner** role can use this option to update the pipeline associated with this environment to the latest AEM version.
 
 Once the pipeline version is updated to the latest publicly available AEM version, the user is prompted to run the associated pipeline to deploy the latest version to the environment.
 
@@ -242,7 +244,7 @@ The **Update** option's behavior varies depending on the configuration and curre
 
 ## Deleting Development Environments {#deleting-environment}
 
-User with the requisite permission is able to delete a development environment. 
+A user with the **Deployment Manager** or **Business Owner** role is able to delete a development environment. 
 
 From the **Overview** screen of the program on the **Environments** card, click the ellipsis button of the development environment you want to delete.
 
@@ -281,7 +283,7 @@ This option is also available from the **Environment** tab of the **Overview** w
 
 ## Login Locally {#login-locally}
 
-Select **Local Login** from the ellipsis menu of the environment in the **Environments** card so you can log on locally to Adobe Experience Manager. 
+Select **Local Login** from the ellipsis menu of the environment in the **Environments** card to log on locally to Adobe Experience Manager. 
 
 ![Login locally](assets/environ-login-locally.png)
 
@@ -294,6 +296,8 @@ Also, you can log on locally from the **Environments** tab of the **Overview** p
 Custom domain names are supported in Cloud Manager for Sites programs for both publish and preview services. Each Cloud Manager environment can host up to a maximum of 250 custom domains.
 
 To configure custom domain names, navigate to the **Environments** tab and click an environment to view environment details.
+
+A user must have the **Business Owner** or **Deployment Manager** role to add a custom domain name in Cloud Manager
 
 ![Environment details](assets/domain-names.png)
 
@@ -323,7 +327,7 @@ The IP allowlist must exist in Cloud Manager to apply it to an environment. To l
 **To apply an IP allowlist:**
 
    1. Navigate to the specific environment from the **Environments** tab of the program **Overview** screen and navigate to the **IP Allow Lists** table.
-   1. Use the input fields at the top of the IP allowlist table so you can select the IP allowlist and the author or publish service you wish to apply it to. 
+   1. Use the input fields at the top of the IP allowlist table so you can select the IP allowlist and the author or publish service you want to apply it to. 
    1. Click **Apply** and confirm your submission.
 
 ### Unapplying an IP allowlist {#unapply-ip-allow-list}

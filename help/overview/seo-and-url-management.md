@@ -188,7 +188,7 @@ You may want to display localized page names to users of translated content. For
 
 The challenge with localizing the name of the page is that many of the localization tools available on the AEM platform rely on having the page names match across locales to keep the content synchronized.
 
-The `sling:alias` property allows you to have our cake and eat it too. `sling:alias` can be added as a property to any resource to allow for an alias name for the resource. In the previous example, you would have:
+The `sling:alias` property lets you have our cake and eat it too. `sling:alias` can be added as a property to any resource to allow for an alias name for the resource. In the previous example, you would have:
 
 * A page in the JCR at:
   `…/es/home`
@@ -430,7 +430,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
         }
         String location = externalizer.externalize(resource);
         Url url = sitemap.addUrl(location + ".html");
-        // add any additional content to the Url like lastmod, change frequency, etc
+        // add any additional content to the Url like lastmod, change frequency, and so on
     }
 
     @Override
@@ -461,7 +461,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 
 ```
 
-Furthermore, the functionality implemented for XML sitemaps can be used in different use cases as well, for example to add the canonical link or the language alternates to a page's head. See the [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface for more information. 
+Furthermore, the functionality implemented for XML sitemaps can be used in different use cases as well, for example, to add the canonical link or the language alternates to a page's head. See the [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface for more information. 
 
 ### Creating 301 redirects for legacy URLs {#creating-redirects-for-legacy-urls}
 

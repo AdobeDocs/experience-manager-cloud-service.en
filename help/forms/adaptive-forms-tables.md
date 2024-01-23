@@ -1,10 +1,8 @@
 ---
-title: Tables in adaptive forms
-seo-title: Tables in adaptive forms
-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
-seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
+title: How to add tables to an adaptive form?
+description: Use the table component to add tables to an Adaptive Form. Along with helping with the responsive layout, the table component allows adding XDP table elements.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
 ---
 # Tables in Adaptive Form {#tables-in-adaptive-forms}
@@ -67,13 +65,13 @@ To add, delete, or move the row, click any cell of the row. open the content bro
 
 ![add-delete-move-row-column](assets/add-delete-move-row.png)
 
-Double click on the row to configure properties of a row, such as Name, Bind Reference, Repeat Settings, CSS Class.
+Double-click the row to configure properties of a row, such as Name, Bind Reference, Repeat Settings, CSS Class.
 ![add-delete-move-row-column](assets/row-properties-image.png)
 
 
 #### Add or delete a column
 
-To add or delete a column, click on the text cell in the header section, a toolbar opens with the options to add or delete a column:
+To add or delete a column, click the text cell in the header section, a toolbar opens with the options to add or delete a column:
 
 ![add-delete-move-row-column](assets/add-delet-column.png)
 
@@ -85,7 +83,7 @@ To add or delete a column, click on the text cell in the header section, a toolb
 
 You can add a description of the table to explain how the information is organized that screen readers can interpret and read out. To add the description:
 
-1. Select the table and tap ![cmppr](assets/cmppr.png) to see its properties in the sidebar.
+1. Select the table and select ![cmppr](assets/cmppr.png) to see its properties in the sidebar.
 1. Specify summary in the Accessibility tab.
 1. Click **Done**.
 
@@ -103,9 +101,9 @@ To apply sorting on table columns, the table column cells must contain any of th
 
 To enable sorting:
 
-1. Select the table and tap ![configure_icon](assets/configure_icon.png) (Configure). You can also select the table using the **Content** browser in the sidekick of the Interactive Communication.
+1. Select the table and select ![configure_icon](assets/configure_icon.png) (Configure). You can also select the table using the **Content** browser in the sidekick of the Interactive Communication.
 1. Select **Enable Sorting**.
-1. Tap ![done_icon](assets/done_icon.png) to save the table properties. The sorting icons, up and down arrows, in columns headers represent that the sorting has been enabled.
+1. Select ![done_icon](assets/done_icon.png) to save the table properties. The sorting icons, up and down arrows, in columns headers represent that the sorting has been enabled.
 
    ![Enable sorting](assets/enable_sorting_new.png)
 
@@ -124,7 +122,7 @@ To enable sorting:
 
 Execute the following steps to set column width for a table:
 
-1. In the **[!UICONTROL Content]** tab, tap the **[!UICONTROL Table]** component and tap the Configure (![Configure](assets/configure-icon.svg))icon.
+1. In the **[!UICONTROL Content]** tab, select the **[!UICONTROL Table]** component and select the Configure (![Configure](assets/configure-icon.svg))icon.
 
 1.Enter the comma-separated list of values in the **[!UICONTROL Column Width]** field to specify the proportionate width of each column in the table. For example, for a table that includes 3 columns, specifying 2,4,6 as the value in the **[!UICONTROL Column Width]** field results in setting the width of columns as 2/12 for first column, 4/12 for second column, and 6/12 for third column. 2/12 as the width for the first column refers to one-sixth of the table width. Similarly, 4/12 sets the second column width as one-third of the table width and 6/12 sets the third column width as half of the table width.
 
@@ -132,9 +130,9 @@ Execute the following steps to set column width for a table:
 
 You can define the style for a table by using the Style mode in the page toolbar. Perform the following steps to switch to style mode and edit the table styling
 
-1. In the page toolbar, before Preview, tap ![canvas-drop-down](assets/canvas-drop-down.png) &gt; **Style**.
+1. In the page toolbar, before Preview, select ![canvas-drop-down](assets/canvas-drop-down.png) &gt; **Style**.
 
-1. In the sidebar select table and tap the edit button ![edit-button](assets/edit-button.png).
+1. In the sidebar select table and select the edit button ![edit-button](assets/edit-button.png).
    You can see the styling properties in the sidebar.
 
 ![Styling properties of a table](assets/style-table.png)
@@ -147,11 +145,11 @@ You can define the style for a table by using the Style mode in the page toolbar
 
 Tables provide out-of-the box support for dynamically adding or deleting rows at runtime.
 
-1. Select a table row and tap ![cmppr](assets/cmppr.png).
+1. Select a table row and select ![cmppr](assets/cmppr.png).
 1. In the Repeat settings tab, specify the minimum and maximum counts to limit the number of rows in the table.
 1. Click **Done**.
 
-At runtime or preview, you will see **+** and ![Delete Button](/help/forms/assets/Smock_Delete.svg) buttons to add or delete a row.
+At runtime or preview, you see **+** and ![Delete Button](/help/forms/assets/Smock_Delete.svg) buttons to add or delete a row.
 
 ![add-delete-rows-dynamically](assets/add-delete-layout.png)
 
@@ -316,7 +314,7 @@ In addition, you can drag-drop a group of XSD complex type elements to create a 
 
 >[!NOTE]
 >
->The number of elements in a XDP table component, a subform, or an XSD complex type cannot exceed the number of cells in a row. For example, you cannot drop four elements on a row that has only three cells. It will result in an error.
+>The number of elements in an XDP table component, a subform, or an XSD complex type cannot exceed the number of cells in a row. For example, you cannot drop four elements on a row that has only three cells. It will result in an error.
 >
 >If the number of elements is less than the number of cells in a row, the new row first adds cells based on the elements, and then the default cells are added to fill in the remaining cells in the row. For example, if you drop a group of three elements in a row that has four cells, the first three cells are based on the elements you dropped and the remaining one cell is the default table cell.
 
@@ -325,4 +323,9 @@ In addition, you can drag-drop a group of XSD complex type elements to create a 
 * If you move rows up and down while authoring an XSD-based table, some data loss from table rows is seen in the data XML generated on submitting the form.
 * Each body cell in a default table has a predefined element name associated with it. If you add another table in the adaptive form, the default body cells in the new table will have the same element name as in the first table. In such scenario, the data generated on submitting the form will include data in the default body cells of only one of the tables. Therefore, ensure that you rename the element names for default body cells to keep them unique across tables and avoid data loss.
 
-  Note that this is applicable only to the default body cells. If you add more rows or columns to a table will autogenerate unique element names for non-default body cells.
+  Applicable only to the default body cells. If you add more rows or columns to a table will autogenerate unique element names for non-default body cells.
+
+## See Also {#see-also}
+
+{{see-also}}
+

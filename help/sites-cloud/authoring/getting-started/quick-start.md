@@ -3,6 +3,7 @@ title: Quick Start Guide to Authoring Pages
 description: A quick, high-level guide to get you started authoring page content
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 ---
+
 # Quick Start Guide to Authoring Pages {#quick-guide-to-authoring-pages}
 
 This document is intended as a high-level quick start guide for the key page authoring actions in AEM. This document:
@@ -14,6 +15,8 @@ For full details about authoring with AEM see:
 
 * [Concepts of Authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
 * [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+
+{{edge-delivery-authoring}}
 
 ## A Few Quick Hints {#a-few-quick-hints}
 
@@ -42,7 +45,7 @@ Before beginning the quick start guide, here is a small collection of general ti
 
 >[!NOTE]
 >
->There are a number of keyboard shortcuts that can make the authoring experience easier.
+>There are several keyboard shortcuts that can make the authoring experience easier.
 >
 >* [Keyboard Shortcuts When Editing Pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [Keyboard Shortcuts for Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)  
@@ -57,7 +60,7 @@ There are various aspects to finding a page; you can navigate and/or search:
 
    ![View selection drop-down](/help/sites-cloud/authoring/assets/views.png)
 
-1. Navigate up the tree using [the breadcrumb in the header](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), which allows you to return to the selected location:
+1. Navigate up the tree using [the breadcrumb in the header](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), which lets you return to the selected location:
 
    ![Breadcrumb dropdown](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
@@ -67,7 +70,7 @@ There are various aspects to finding a page; you can navigate and/or search:
 
 ### Creating a New Page {#creating-a-new-page}
 
-To [create a new page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
+To [create a page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
 1. [Navigate to the location](#finding-your-page) where you want to create the new page.
 1. Use the **Create** icon and then select **Page** from the list:
@@ -78,23 +81,23 @@ To [create a new page](/help/sites-cloud/authoring/fundamentals/organizing-pages
 
 ### Selecting Your Page for Further Action {#selecting-your-page-for-further-action}
 
-You can select a page so that you can take action on it. Selecting a page will automatically update the toolbar so that the actions relevant to that resource are shown.
+You can select a page so that you can act on it. Selecting a page will automatically update the toolbar so that the actions relevant to that resource are shown.
 
 How to select a page depends on which view you are using in the console:
 
 1. Column View:
 
-    * Tap/click on the thumbnail for the required resource - the thumbnail is overlaid with a tick to show that it has been selected.
+    * Select the thumbnail for the required resource - the thumbnail is overlaid with a tick to show that it has been selected.
 
 1. List View:
 
-    * Tap/click on the thumbnail for the required resource - the thumbnail is overlaid with a tick to show that it has been selected.
+    * Select the thumbnail for the required resource - the thumbnail is overlaid with a tick to show that it has been selected.
 
 1. Card View:
 
     * Enter selection mode by [selecting the required resource](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources). How you do this depends on your device:
 
-        * On a mobile device: tap-and-hold the card
+        * On a mobile device: select-and-hold the card
         * On a desktop device: use the [quick action](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) represented by the tick icon:
 
     * The card is overlaid with a tick to show that the page has been selected.
@@ -105,7 +108,7 @@ How to select a page depends on which view you are using in the console:
 
 [Quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) are available:
 
-1. [Navigate to the page](#finding-your-page) you want to take action on.
+1. [Navigate to the page](#finding-your-page) you want to act on.
 1. Hover your mouse pointer over the card that represents your required resource. The quick actions are shown:
 
    ![Card actions](/help/sites-cloud/authoring/assets/card-actions.png)
@@ -138,32 +141,32 @@ To edit your page:
 
     * [Edit the content of an existing component](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) on the page:
 
-        * Open the component toolbar with either tap or click. Use the **Edit** (pencil) icon to open the dialog.
-        * Open the in place editor for the component with either tap-and-hold or a double-slow-click. The available actions are shown (for some components, it is a limited selection).
+        * Open the component toolbar with either select. Use the **Edit** (pencil) icon to open the dialog.
+        * Open the in place editor for the component with either select-and-hold or a double-slow-click. The available actions are shown (for some components, it is a limited selection).
         * To see all actions available enter full-screen mode using:
 
           ![Full screen button](/help/sites-cloud/authoring/assets/full-screen.png)
 
     * [Configure the properties of an existing component](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
-        * Open the component toolbar with either tap or click. Use the **Configure** (wrench) icon to open the dialog.
+        * Open the component toolbar with either select. Use the **Configure** (wrench) icon to open the dialog.
 
     * [Move a component](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) either:
 
         * Drag the required component to its new location.
-        * Open the component toolbar with either tap or click. Use the **Cut** then **Paste** icons where required.
+        * Open the component toolbar with either select. Use the **Cut** then **Paste** icons where required.
 
     * [Copy (and Paste)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) a component:
 
-        * Open the component toolbar with either tap or click. Use the **Copy** then **Paste** icons as required.
+        * Open the component toolbar with either select. Use the **Copy** then **Paste** icons as required.
 
    >[!NOTE]
    >
-   >You can **Paste** components to either the same page, or a different page. If pasting to a different page that was already open before the cut/copy operation, then that page will need a page refresh.
+   >You can **Paste** components to either the same page, or a different page. If pasting to a different page that was already open before the cut/copy operation, then that page needs a page refresh.
 
     * [Delete](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) a component:
 
-        * Open the component toolbar with either tap or click, then use the **Delete** icon.
+        * Open the component toolbar with either select, then use the **Delete** icon.
 
     * [Add annotations](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) to the page:
 
@@ -249,7 +252,7 @@ These actions can all be triggered by:
 
     * [Move](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
-        * The wizard will open to collect the information needed to move the page. Follow the on-screen instructions.
+        * The wizard opens to collect the information needed to move the page. Follow the on-screen instructions.
 
     * [Delete](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
@@ -283,7 +286,7 @@ For example, the lock icon looks like this:
 
    ![References view](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. Tap/click on the required type of reference to show more details and (when appropriate) take further actions.
+1. Select the required type of reference to show more details and (when appropriate) take further actions.
 
 ### Creating a Version of Your Page {#creating-a-version-of-your-page}
 
@@ -293,7 +296,7 @@ To create a [version](/help/sites-cloud/authoring/features/page-versions.md) of 
 
    ![Timeline view option](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Tap/click on the ellipsis at the bottom right of the Timeline column to reveal extra buttons, including **Save as Version**.
+1. Select the ellipsis at the bottom right of the Timeline column to reveal extra buttons, including **Save as Version**.
 
    ![Timeline view](/help/sites-cloud/authoring/assets/timeline-view.png)
 
@@ -309,7 +312,7 @@ The same basic mechanism is used when restoring and/or comparing versions of you
 
    If a version of your page has already been saved, it is listed in the Timeline.
 
-1. Tap/click on the version you want to restore - this will reveal additional action buttons:
+1. Select the version you want to restore - this will reveal additional action buttons:
 
     * **Revert to this Version**
 

@@ -7,7 +7,7 @@ exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 
 ## Getting Started {#getting-started}
 
-Users have the ability to reliably determine if all of the content that was extracted by the Content Transfer Tool was successfully ingested into the target instance. This validation feature works by comparing a digest of the paths of all nodes that were involved during extraction, with a digest of the paths of all nodes that were involved during ingestion. If there are any node paths included in the extraction digest that are missing from the ingestion digest, the validation is considered to have failed, and additional manual validation may be necessary.
+Users can reliably determine if all the content that was extracted by the Content Transfer Tool was successfully ingested into the target instance. This validation feature works by comparing a digest of the paths of all nodes that were involved during extraction, with a digest of the paths of all nodes that were involved during ingestion. If there are any node paths included in the extraction digest that are missing from the ingestion digest, the validation is considered to have failed, and additional manual validation may be necessary.
 
 >[!INFO]
 >
@@ -95,7 +95,7 @@ Migration validation took 33 minutes
 
 This is an example of a validation that has succeeded, since there were no entries missing from the ingestion digest that were present in the extraction digest.
 
-To compare, here is how a validation report would look if validation had failed:
+To compare, here is how a validation report would look if validation had failed (or if a top-up migration was performed):
 
 ```
 Beginning publish migration validation. Migration job id=[ac217e5a-a08d-4e81-cbd6-f39f88b174ce]
@@ -121,7 +121,7 @@ Migration validation took 0 minutes
 
 The above failure example was achieved by running an ingestion, and then re-running the same ingestion again with Wipe disabled, such that no nodes were involved during ingestion — everything was already present on the target.
 
-In addition to being included in the ingestion log, the validation report can also be accessed from the **Ingestion Jobs** user interface in Cloud Acceleration Manager. To do so, click on the three dots (**...**)  then click on **Validation report** in the drop-down to view the validation report. 
+In addition to being included in the ingestion log, the validation report can also be accessed from the **Ingestion Jobs** user interface in Cloud Acceleration Manager. To do so, click the three dots (**...**)  then click **Validation report** in the drop-down to view the validation report. 
 
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
@@ -132,11 +132,11 @@ See [User Mapping and Principal Migration](/help/journey-migration/content-trans
 
 After the extraction and ingestion are successfully completed, a summary and report of the principal migration is available. This information can be used to validate which users and groups were migrated successfully, and, perhaps, to determine why some were not.
 
-To view this information, go to Cloud Acceleration Manager. Click on your project card and click on the Content Transfer card. Navigate to **Ingestion Jobs** and locate the ingestion that you want to verify. Click on the three dots (**...**) for that ingestion, then click on **View principal summary** in the drop-down.
+To view this information, go to Cloud Acceleration Manager. Click your project card and click the Content Transfer card. Navigate to **Ingestion Jobs** and locate the ingestion that you want to verify. Click the three dots (**...**) for that ingestion, then click **View principal summary** in the drop-down.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-You will see a dialog with the summary information. Use the help icons to read a more full description. Click the **Download report** button to download the full comma-separated (CSV) report.
+You see a dialog with the summary information. Use the help icons to read a more full description. Click the **Download report** button to download the full comma-separated (CSV) report.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
@@ -157,3 +157,7 @@ To verify, choose a path from the validation report and check if it is present o
 Some paths from the extraction and ingestion digests are excluded purposefully to keep the size of these files manageable, with the goal of being able to calculate the migration validation result within two hours of the ingestion completing.
 
 The paths we currently exclude from the digests include: `cqdam.text.txt` renditions, nodes within `/home`, and nodes within `/jcr:system`.
+
+### Closed User Groups are not functioning {#validating-cugs}
+
+See [Migrating Closed User Groups](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) for extra considerations when using a Closed User Group (CUG) policy.

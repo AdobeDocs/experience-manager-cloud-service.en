@@ -1,6 +1,7 @@
 ---
-title: Footnotes Support
-description: RTE support for footnotes.
+title: How to add Footnote to an adaptive form?
+description: Use Rich Text editor (RTE) for footnotes in an Adaptive Form.
+feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 ---
 # Footnote Component {#footnotecomponent}
@@ -9,7 +10,7 @@ exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 
 **[!UICONTROL Footnote]** is the extra bit of information or notes which appear at the end of the page. [!UICONTROL Footnote] comprises the notes that are indicated in your text with numbers as a superscript.
 
-Footnotes are numbered sequentially in the order they appear on the page. Each footnote has a unique number as a superscript which corresponds to the number which is placed at the bottom of the page. Next to the number appears the supplementary information as a footnote description.
+Footnotes are numbered sequentially in the order that they appear on the page. Each footnote has a unique number as a superscript which corresponds to the number which is placed at the bottom of the page. Next to the number appears the supplementary information as a footnote description.
 
 ![Footnote Description](/help/forms/assets/footnote_description.png)
 
@@ -27,7 +28,7 @@ In Adaptive Forms, [!UICONTROL footnote] is used to display the information on h
 To add footnote in Adaptive Forms, perform the following steps:
 1. Open an Adaptive Form in **Edit** mode.
 1. From the component browser, drag-drop the **[!UICONTROL Text]** component onto the Adaptive Form. 
-1. Select the **[!UICONTROL Text]** component you added and tap ![cmppr](assets/configure-icon.svg) to edit its properties.
+1. Select the **[!UICONTROL Text]** component that you added and select ![cmppr](assets/configure-icon.svg) to edit its properties.
 
     ![Footnote in Adaptive Forms](/help/forms/assets/footnote_rte.png)
 
@@ -49,3 +50,8 @@ To add footnote in Adaptive Forms, perform the following steps:
 1. Save the properties.
 
 At runtime, number appears on the text as a superscript and its corresponding description appears in the **[!UICONTROL Footnote]** component at the position where [!UICONTROL Footnote Placeholder] is placed on the Adaptive Form. You can directly navigate to the footnote description by clicking its corresponding number on the [!UICONTROL Footnote].
+
+
+## See Also {#see-also}
+
+{{see-also}}

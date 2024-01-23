@@ -1,13 +1,10 @@
 ---
 title: Introduction to authoring Adaptive Forms
-seo-title: Introduction to authoring Adaptive Forms
 description: AEM Forms provide easy-to-use yet powerful interface for authoring Adaptive Forms. It provides a host of components and tools that you can use to build forms.
-seo-description: AEM Forms provide easy-to-use yet powerful interface for authoring Adaptive Forms. It provides a host of components and tools that you can use to build forms.
-uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
+feature: Adaptive Forms, Foundation Components
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 ---
@@ -50,7 +47,7 @@ The touch-optimized UI for authoring Adaptive Forms is intuitive, and provides:
 * Standard form components
 * Integrated repository for assets
 
-When you create a new or edit an existing Adaptive Form, you use the following UI elements:
+When you create or edit an existing Adaptive Form, you use the following UI elements:
 
 * [Sidebar](#sidebar)
 * [Page toolbar](#page-toolbar)
@@ -63,7 +60,7 @@ When you create a new or edit an existing Adaptive Form, you use the following U
 
 ### Sidebar {#sidebar}
 
-The Sidebar allows you to
+The Sidebar lets you
 
 * Search, view, and use assets in your AEM Digital Asset Management (DAM) repository.
 * See form content such as panels, components, fields, and layout.
@@ -88,13 +85,13 @@ The sidebar comprises the following browsers:
 
   * **Data Model Objects**
       Lets you see the form model hierarchy.
-      It allows you to drag and drop form-model elements on the Adaptive Form. The added elements automatically get converted into form components while retaining their original properties. You can see data model objects when your form uses XML schema, JSON schema, or XDP template.
+      It lets you drag and drop form-model elements on the Adaptive Form. The added elements automatically get converted into form components while retaining their original properties. You can see data model objects when your form uses XML schema, JSON schema, or XDP template.
 
 * **Properties browser**
 
   Lets you edit the properties of a component. Properties change according to a component. To see properties of the Adaptive Form container:
 
-  Select a component, then tap ![field-level](assets/Smock_SelectContainer_18_N.svg) &gt; **[!UICONTROL Adaptive Form Container]**, and then tap ![properties](assets/Smock_Wrench_18_N.svg).
+  Select a component, then select ![field-level](assets/Smock_SelectContainer_18_N.svg) &gt; **[!UICONTROL Adaptive Form Container]**, and then select ![properties](assets/Smock_Wrench_18_N.svg).
 
 * **Assets browser**
 
@@ -172,7 +169,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>Image</td>
-   <td>Allows you to insert an image.</td>
+   <td>Lets you insert an image.</td>
   </tr>
   <tr>
    <td>Image Choice</td>
@@ -228,7 +225,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>Text</td>
-   <td>Allows you to specify static text.</td>
+   <td>Lets you specify static text.</td>
   </tr>
   <tr>
    <td>Submit Button</td>
@@ -305,7 +302,7 @@ The page toolbar on the top provides options that let you preview the form, chan
 
 When you select a component, you see a toolbar that lets you work it. You get options to cut, paste, move, and specify properties of the components. Your options are:
 
-A.**Configure**: When you tap **[!UICONTROL Configure]**, component properties are visible in the sidebar. Configuring these properties let you customize the data capturing experience. You can change the element name of the component, specify the label text in the Title field of the component. Element name lets you capture values users enter using the component. In the component properties, you specify the behavior of the component, and manage user input. Configure properties in the sidebar to capture user data and use it for further processing. Properties for Adaptive Form container let you specify Client libraries, Layouts, Themes, Document of Record settings, save settings, submission settings, and metadata settings.
+A.**Configure**: When you select **[!UICONTROL Configure]**, component properties are visible in the sidebar. Configuring these properties let you customize the data capturing experience. You can change the element name of the component, specify the label text in the Title field of the component. Element name lets you capture values users enter using the component. In the component properties, you specify the behavior of the component, and manage user input. Configure properties in the sidebar to capture user data and use it for further processing. Properties for Adaptive Form container let you specify Client libraries, Layouts, Themes, Document of Record settings, save settings, submission settings, and metadata settings.
 
 B.**Copy**: You can use the copy option to copy a component and paste it in other places in the form. When you paste a component, the pasted component gets a new element name but retains the properties of the copied component.
 
@@ -323,7 +320,7 @@ H. **Group**: Lets you select multiple components if you want to cut, copy, or p
 
 I. **Parent**: Lets you select the parent of a component. For example, a text field lies within a sub-section, which resides in a section. The section resides in the guide root panel, and the Adaptive Form container is the parent of a guide root panel. For a component, you can see all the options with the hierarchy sorted bottoms-up.
 
-For example, if you tap **[!UICONTROL Parent]** for a text box, you can see:
+For example, if you select **[!UICONTROL Parent]** for a text box, you can see:
 
 * Sub-section
 * Section
@@ -358,3 +355,7 @@ The content structure typically contains the following primary components:
 * **toolbar:** An Adaptive Form container has an associated global toolbar, which is global to the form. This toolbar can be added using the **[!UICONTROL Add Toolbar]** action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
 
 * **assets:** This node contains additional information used for form authoring. For example, form model details, localization details, and so on.
+
+## See Also {#see-also}
+
+{{see-also}}

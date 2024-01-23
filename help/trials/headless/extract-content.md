@@ -64,7 +64,7 @@ You have just validated a list query for a full list of all Content Fragments. T
 
 ## Query for a Specific Piece of Sample Content {#bypath-query}
 
-Running a byPath query allows you to retrieve content for a specific Content Fragment. Product detail pages and pages that focus on a specific set of content typically require this type of query.
+Running a byPath query lets you retrieve content for a specific Content Fragment. Product detail pages and pages that focus on a specific set of content typically require this type of query.
 
 1. Copy the following code snippet for a byPath query of the preloaded **AEM Demo Assets** endpoint.
 
@@ -113,9 +113,9 @@ Now that you have run the two primary types of queries, you are ready to query y
 
 1. Define the items that the query should contain for the Content Fragment model you selected. Again, type open bracket `{`, then press Ctrl+Space or Option+Space for an auto-complete list. Select `items` from the options.
 
-1. Tap or click the **Prettify** button to automatically format your code so that it is easier to read.
+1. Select the **Prettify** button to automatically format your code so that it is easier to read.
 
-1. Once complete, tap or click the **Play** button at the top left of the editor to run the query. The editor auto-complete the `items`, which are briefly highlighted in yellow, and the query runs.
+1. Once complete, select the **Play** button at the top left of the editor to run the query. The editor auto-complete the `items`, which are briefly highlighted in yellow, and the query runs.
 
 1. The results are displayed in the right panel, next to the query editor.
 
@@ -157,7 +157,7 @@ You will create a persisted query that includes data you would like to consume f
 
    >[!NOTE]
    >
-   >If you did not use the same field descriptions as described in the previous modules, you will need to update the field names in this query.
+   >If you did not use the same field descriptions as described in the previous modules, update the field names in this query.
    >
    >Use the GraphQL autocomplete (Ctrl+Space or Option+Space) feature as described previously to help identify the available properties.
 
@@ -171,13 +171,13 @@ You will create a persisted query that includes data you would like to consume f
 
 1. In the **Query name** pop-up, give your query the name `adventure-list`.
 
-1. Tap or click **Save As**.
+1. Select **Save As**.
 
    ![Persist query](assets/do-not-localize/persist-query.png)
 
 1. The query is persisted as confirmed by a banner message at the bottom of the screen. The query also now appears in the left panel of persisted queries in the window.
 
-1. In order for the persisted query to be available publicly, it will need to be published, much like how your Content Fragments need to be published. Click the **Publish** button at the top right of the query editor to publish the query.
+1. For the persisted query to be available publicly, it must be published, much like how your Content Fragments need to be published. Click **Publish** at the top right of the query editor to publish the query.
 
 1. The publication is confirmed by a banner notification.
 

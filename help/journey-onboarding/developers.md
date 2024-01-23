@@ -8,7 +8,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 
 # Developer and Deployment Manager Tasks {#developer-deployment-manager}
 
-In this optional part of the [onboarding journey,](overview.md) you will learn how developers and deployment managers can access git to develop applications and use pipelines to deploy them.
+In this optional part of the [onboarding journey,](overview.md) you learn how developers and deployment managers can access git to develop applications and use pipelines to deploy them.
 
 ## The Story So Far {#story-so-far}
 
@@ -58,7 +58,7 @@ You can access and manage your git repositories using self-service git account m
 
    ![Access Repo Info button on Environments card](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Click on the **View Repo Info** button to open a dialog to view:
+1. Click the **View Repo Info** button to open a dialog to view:
 
    * The URL to the Cloud Manager git repository.
    * The git username.
@@ -76,7 +76,7 @@ Follow these steps to create your first non-production deployment pipeline.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Access the **Pipelines** card from the Cloud Manager home screen. Click on **+Add** and select **Add Non-Production Pipeline**. 
+1. Access the **Pipelines** card from the Cloud Manager home screen. Click **+Add** and select **Add Non-Production Pipeline**. 
 
    ![Add non-production pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
@@ -113,7 +113,7 @@ Now that developers have added their custom code to the git repositories and you
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click on the ellipsis button next to the pipeline you created in the previous section and select **Run** from the menu.
+1. Navigate to the **Pipelines** card from the **Program Overview** page and click the ellipsis button next to the pipeline you created in the previous section and select **Run** from the menu.
 
 1. The pipeline run begins and is indicated by the **Status** column. 
 
@@ -144,6 +144,6 @@ The following are additional, optional resources if you would like to go beyond 
 * [Using git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Learn how to use Cloud Manager's git repositories and how to integrate your own on-premise customer-managed git repository with Cloud Manager.
 * [Local Development Environment Set up](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) - This tutorial walks you through setting up a local development environment for Adobe Experience Manager (AEM) using the AEM as a Cloud Service SDK. 
 * [Getting Started with AEM Sites - WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - This multi-part tutorial is designed for developers new to Adobe Experience Manager (AEM). This tutorial walks through the implementation of an AEM site for a fictitious lifestyle brand the WKND. The tutorial covers fundamental topics like project setup, Core Components, Editable Templates, Client-side libraries, and component development with Adobe Experience Manager Sites.
-* [Getting Started with SPAs in AEM Using React](/help/implementing/developing/hybrid/getting-started-react.md) - This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the React framework.
-* [Getting Started with SPAs in AEM Using Angular](/help/implementing/developing/hybrid/getting-started-angular.md) - This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the Angular framework.
+* [Getting Started with SPAs in AEM Using React](/help/implementing/developing/hybrid/getting-started-react.md) - This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the React framework.
+* [Getting Started with SPAs in AEM Using Angular](/help/implementing/developing/hybrid/getting-started-angular.md) - This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the Angular framework.
 * [Headless Developer Journey](/help/journey-headless/developer/overview.md) - Start here for a guided course for developing headless applications with AEM.

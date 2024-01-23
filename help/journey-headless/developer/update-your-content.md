@@ -35,7 +35,7 @@ In the previous stage of the Headless Journey, you learned about using the AEM G
 
 So why is another API needed?
 
-The Assets HTTP API does allow you to **Read** your content, but it also allows you to **Create**, **Update** and **Delete** content - actions that are not possible with the GraphQL API.
+The Assets HTTP API does allow you to **Read** your content, but it also lets you **Create**, **Update** and **Delete** content - actions that are not possible with the GraphQL API.
 
 The Assets REST API is available on each out-of-the-box install of a recent Adobe Experience Manager as a Cloud Service version.
 
@@ -48,7 +48,7 @@ The Assets HTTP API encompasses the:
 
 The current implementation of the Assets HTTP API is based on the **REST** architectural style and enables you to access content (stored in AEM) via **CRUD** operations (Create, Read, Update, Delete).
 
-With these operation the API allows you to operate Adobe Experience Manager as a Cloud Service as a headless CMS (Content Management System) by providing Content Services to a JavaScript front end application. Or any other application that can execute HTTP requests and handle JSON responses. For example, Single Page Applications (SPA), framework-based or custom, require content provided over an API, often in JSON format.
+With these operations the API lets you operate Adobe Experience Manager as a Cloud Service as a headless CMS (Content Management System) by providing Content Services to a JavaScript front end application. Or any other application that can execute HTTP requests and handle JSON responses. For example, Single Page Applications (SPA), framework-based or custom, require content provided over an API, often in JSON format.
 
 <!--
 >[!NOTE]
@@ -100,7 +100,7 @@ This means that subsequent (`write`) requests cannot be combined into a single t
 
 ### Security {#security}
 
-If the Assets REST API is used within an environment without specific authentication requirements, AEM's CORS filter needs to be configured correctly.
+If the Assets REST API is used within an environment without specific authentication requirements, AEM's CORS filter must be configured correctly.
 
 >[!NOTE]
 >
@@ -157,7 +157,7 @@ The response will contain paging information as part of the `properties` section
 
 Folders act as containers for assets and other folders. They reflect the structure of the AEM content repository.
 
-The Assets REST API exposes access to the properties of a folder; for example its name, title, etc. Assets are exposed as child entities of folders, and sub-folders.
+The Assets REST API exposes access to the properties of a folder; for example, its name, title, and so on Assets are exposed as child entities of folders, and sub-folders.
 
 >[!NOTE]
 >
@@ -190,9 +190,9 @@ Content fragments:
 
 ### Content Models and Content Fragments {#content-models-and-content-fragments}
 
-Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, etc. are part of the definition.
+Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore, the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, and so on, are part of the definition.
 
-To create a new content fragment, the (internal repository) path of the model has to be provided.
+To create a content fragment, the (internal repository) path of the model has to be provided.
 
 ### Associated Content {#associated-content}
 
@@ -248,7 +248,7 @@ Usage can differ depending on whether you are using an AEM author or publish env
 
 >[!NOTE]
 >
->For further details, see the API Reference. In particular, [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>See the API Reference [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ### Read/Delivery {#read-delivery}
 
@@ -287,11 +287,11 @@ This can simply be the title or description of a content fragment, or a single e
 
 ### Delete {#delete}
 
-Usage is via:
+Usage is by way of:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-For further details of using the AEM Assets REST API, you can reference:
+For more details about using the AEM Assets REST API, see the following:
 
 * Adobe Experience Manager Assets HTTP API (Additional Resources)
 * Content Fragments Support in AEM Assets HTTP API (Additional Resources)
@@ -315,11 +315,15 @@ You should continue your AEM headless journey by next reviewing the document [Ho
 
 ## Additional Resources {#additional-resources}
 
+* [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
   * [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
 * [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
-* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
 * [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM explained](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [Video - Developing for CORS with AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+* [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) 

@@ -8,7 +8,7 @@ exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 ---
 # Interactive images{#interactive-images}
 
-You can easily make static images rich, engaging experiences for customers by dragging and dropping "shoppable" hotspots onto an image. Shoppable hotspots combine additional information about a product or service with a direct, point-of-sale "Add to cart" or "Buy" capability. Customers can tap these hotspots that link directly to the product or service, add it to a shopping cart, or be linked to a web page. Direct experiences such as these increase customer engagement and conversions on your web site.
+You can easily make static images rich, engaging experiences for customers by dragging and dropping "shoppable" hotspots onto an image. Shoppable hotspots combine additional information about a product or service with a direct, point-of-sale "Add to cart" or "Buy" capability. Customers can select these hotspots that link directly to the product or service, add it to a shopping cart, or be linked to a web page. Direct experiences such as these increase customer engagement and conversions on your web site.
 
 The following is a shoppable banner with a Quickview pop-up window. A user activates the Quickview by tapping the circle or "hotspot" on the model.
 
@@ -173,20 +173,20 @@ After you save the viewer preset, it is automatically activated (turned on) on t
 **To create an Interactive Image viewer preset:**
 
 1. In the left rail, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
-1. Near the upper-right corner of the page, tap **[!UICONTROL Create]**.
+1. Near the upper-right corner of the page, select **[!UICONTROL Create]**.
 1. In the New Viewer Preset dialog box, type a name to describe the interactive banner viewer preset.
 
    This title appears in the Viewer Preset list page after you save.
 
 1. In the Rich Media Type pull-down menu, select **[!UICONTROL Interactive Image]**.
 1. Select **[!UICONTROL Create]**.
-1. On the Edit Viewer Preset page, tap the **[!UICONTROL Appearance]** tab.
+1. On the Edit Viewer Preset page, select the **[!UICONTROL Appearance]** tab.
 1. Do one of the following:
 
-    * To upload your own hotspot image that you want to use on images, tap the Asset Picker icon. In the Select Content page, navigate to the hotspot image you want to use and select it. Select the Check Mark icon in the upper-right corner.
-    * To select a predefined hotspot image, tap the Hotspot Gallery icon. On the hotspot gallery palette, tap the hotspot image you want to use.
+    * To upload your own hotspot image that you want to use on images, select the Asset Picker icon. In the Select Content page, navigate to the hotspot image you want to use and select it. Select the Check Mark icon in the upper-right corner.
+    * To select a predefined hotspot image, select the Hotspot Gallery icon. On the hotspot gallery palette, select the hotspot image you want to use.
 
-1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**.
+1. Near the upper-right corner of the page, select **[!UICONTROL Save]**.
 
    Be sure you publish the new viewer preset.
 
@@ -241,35 +241,35 @@ See [(Optional) Preview interactive images](#optional-previewing-interactive-ima
 1. In the Assets view, navigate to the image banner that you want to make interactive.
 1. Do one of the following:
 
-    * Hover on the image, then tap **[!UICONTROL Select]** (checkmark icon). On the toolbar, tap **[!UICONTROL Edit]**.
+    * Hover on the image, then select **[!UICONTROL Select]** (checkmark icon). On the toolbar, select **[!UICONTROL Edit]**.
 
-    * Hover on the image, then tap **[!UICONTROL More actions]** (three dots icon) **[!UICONTROL > Edit]**.
+    * Hover on the image, then select **[!UICONTROL More actions]** (three dots icon) **[!UICONTROL > Edit]**.
 
-    * To open it in the Detail View page, tap the image. In the toolbar, tap **[!UICONTROL Edit]**.
+    * To open it in the Detail View page, select the image. In the toolbar, select **[!UICONTROL Edit]**.
 
-1. Near the upper-left corner of the page, tap **[!UICONTROL Add Hotspot]** (finger tap icon) to open the Hotspot management page.
-1. Near the upper-left corner of the page, tap **[!UICONTROL Hotspot]**.
+1. Near the upper-left corner of the page, select **[!UICONTROL Add Hotspot]** (finger select icon) to open the Hotspot management page.
+1. Near the upper-left corner of the page, select **[!UICONTROL Hotspot]**.
 
-   1. Near the upper-left corner of the Hotspot Management page, tap **[!UICONTROL Hotspot]**.
-   1. On the image, tap a location where you want the hotspot to appear. If necessary, drag the hotspot to adjust its location. Or, use the keyboard arrow keys to control the position of a selected hot spot.
+   1. Near the upper-left corner of the Hotspot Management page, select **[!UICONTROL Hotspot]**.
+   1. On the image, select a location where you want the hotspot to appear. If necessary, drag the hotspot to adjust its location. Or, use the keyboard arrow keys to control the position of a selected hot spot.
    1. Add more hotspots as necessary by repeating steps a and b.
-   1. (Optional) To delete a hotspot, select it on the image, then tap **[!UICONTROL Delete]** (trash icon) under the **[!UICONTROL Hotspots]** heading.
+   1. (Optional) To delete a hotspot, select it on the image, then select **[!UICONTROL Delete]** (trash icon) under the **[!UICONTROL Hotspots]** heading.
 
 1. In the Name text field, type the name of the hotspot. This name also appears in the Selected Hotspot drop-down list.
 1. Do one of the following:
 
     * Select **[!UICONTROL Quickview]**.
 
-        * If you are an Experience Manager Sites or eCommerce customer, select the Product Picker icon (magnifying glass) to open the Select Product page. Select the product you want to use, then tap **Select** in the upper-right corner of the page. You are returned to the Hotspot management page.
+        * If you are an Experience Manager Sites or eCommerce customer, select the Product Picker icon (magnifying glass) to open the Select Product page. Select the product you want to use, then select **Select** in the upper-right corner of the page. You are returned to the Hotspot management page.
         * If you are *not* an Experience Manager Sites or eCommerce customer
 
             * See [Identifying hotspot variables](#optional-identifying-hotspot-variables); you must define these variables.
             * Then, manually enter the SKU value. In the SKU Value text field, type the product's SKU. The entered SKU value automatically populates the variable portion of the Quickview template. It ensures that the system knows to associate the tapped hotspot with a particular SKU's Quickview.
-            * (Optional) If there are other variables within the Quickview that are used to further identify a product, tap **[!UICONTROL Add Generic Variable]**. In the text field, specify an extra variable. For example, `category=Mens` is an added variable.
+            * (Optional) If there are other variables within the Quickview that are used to further identify a product, select **[!UICONTROL Add Generic Variable]**. In the text field, specify an extra variable. For example, `category=Mens` is an added variable.
 
     * Select **[!UICONTROL Hyperlink]**.
 
-        * If you are an Experience Manager Sites customer, tap the Site Selector icon (folder). Navigate to a URL. The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
+        * If you are an Experience Manager Sites customer, select the Site Selector icon (folder). Navigate to a URL. The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
         * If you are a standalone customer, in the HREF text field, specify the full URL path to a linked web page.
 
    Be sure you specify whether to open the link in a new browser tab (recommended default) or the same tab.
@@ -278,7 +278,7 @@ See [(Optional) Preview interactive images](#optional-previewing-interactive-ima
 
     * Select **[!UICONTROL Experience Fragment]**.
 
-        * If you are an Experience Manager Sites customer, select the Search icon (magnifying glass) to open the Experience Fragment page. Select the Experience Fragment you want to use. Then tap **[!UICONTROL Select]** in the upper-right corner of the page. You are returned to the Hotspot management page.
+        * If you are an Experience Manager Sites customer, select the Search icon (magnifying glass) to open the Experience Fragment page. Select the Experience Fragment you want to use. Then select **[!UICONTROL Select]** in the upper-right corner of the page. You are returned to the Hotspot management page.
           See [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
         * Specify the width and height of the Experience Fragment as you want it to appear on the banner.
@@ -311,10 +311,10 @@ See [Add Dynamic Media Assets to Pages](/help/assets/dynamic-media/adding-dynami
 
 **To preview interactive images:**
 
-1. In the Assets view, navigate to an existing interactive image that you have created and tap to open it in Preview.
-1. Near the upper-left corner of the Preview page, in the Content drop-down list, tap **[!UICONTROL Viewers]**.
-1. In the Viewers list, tap **[!UICONTROL Shoppable_Banner]** or the name of the interactive image viewer preset you have created.
-1. To test the associated actions of hotspots, tap hotspots on the image.
+1. In the Assets view, navigate to an existing interactive image that you have created and select to open it in Preview.
+1. Near the upper-left corner of the Preview page, in the Content drop-down list, select **[!UICONTROL Viewers]**.
+1. In the Viewers list, select **[!UICONTROL Shoppable_Banner]** or the name of the interactive image viewer preset you have created.
+1. To test the associated actions of hotspots, select hotspots on the image.
 
 ## Publish interactive image assets {#publishing-interactive-image-assets}
 
@@ -372,7 +372,7 @@ The existing Quickview implementation normally represents a chain of inter-relat
 1. The backend logic returns the corresponding Quickview data or content back to the front-end code.
 1. The front-end code loads the Quickview data or content.
 1. Optionally, the front-end code converts the loaded Quickview data into an HTML representation.
-1. The front-end code displays a modal dialog box or panel and renders the HTML content on the screen for the end user.
+1. The front-end code displays a modal dialog box or panel and renders the HTML content on the screen for the user.
 
 These calls do not necessarily represent independent public API calls that are called by the web page logic from an arbitrary step. Instead, it is a chained call where every next step is hidden in the last phase (callback) of the previous step.
 
@@ -399,7 +399,7 @@ The embed code returned by Experience Manager Assets has a ready-to-use event ha
              s7interactiveimageviewer.setHandlers({
                 "quickViewActivate": function(inData) {
                     var sku=inData.sku; //SKU for product ID
-                    //To pass other parameter from the hotspot, you will need to add custom parameter during the hotspot setup as parameterName=value
+                    //To pass other parameter from the hotspot, add custom parameter during the hotspot setup as parameterName=value
                     loadQuickView(sku); //Replace this call with your Quickview plugin
                     //See your Quickviewer plugin for the Quickview call
                  },

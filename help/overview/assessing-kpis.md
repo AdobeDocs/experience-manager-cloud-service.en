@@ -1,6 +1,6 @@
 ---
 title: Accessing KPIs
-description: Accessing KPIs
+description: Learn how to access your KPIs and define the reporting process 
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 ---
 # Are you measuring the things that matter most?{#measuring-the-things-that-matter-most}
@@ -9,8 +9,8 @@ exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 >id="aemcloud_assesskpis"
 >title="Assessing KPIs"
 >abstract="Before you begin your Adobe Experience Manager launch, everyone who has a stake in the project should know what your top three KPIs are and why they matter."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="Aligning KPIs"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Choosing the Right Team"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="Aligning KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="Choosing the Right Team"
 
 Before you begin your Adobe Experience Manager launch, everyone who has a stake in the project should know what your top three KPIs are and why they matter.
 
@@ -19,7 +19,7 @@ Before you begin your Adobe Experience Manager launch, everyone who has a stake 
 
 In a 2018 study, IDC analyzed the business value several large companies saw when using Adobe Experience Manager. On average, the organizations using Experience Manager Sites had improved the productivity of their digital experience teams by 23%, decreased the time required to make minor editorial changes by 64%, and increased site visits per month by 10%. The companies using Experience Manager Assets increased the productivity of their digital assets teams by 19%, shortened the creation time for new assets by 47%, and reduced the time to launch for marketing campaigns by 20%.
 
-To realize the same dramatic gains, your organization needs to have clear goals for your Experience Manager implementation. And you need to have KPIs that help everyone stay focused on those goals.
+To realize the same dramatic gains, your organization must have clear goals for your Experience Manager implementation. And you need to have KPIs that help everyone stay focused on those goals.
 
 ## Accessing KPIs 
 

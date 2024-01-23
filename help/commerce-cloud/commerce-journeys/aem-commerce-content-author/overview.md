@@ -19,7 +19,7 @@ This guide leads you through the most important AEM Content and Commerce authori
 
 ## AEM Documentation Journeys {#documentation-journeys}
 
-[A Documentation Journey](/help/journey-documentation/documentation-journeys.md) ties together many different and perhaps complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
+[A Documentation Journey](/help/journey-documentation/documentation-journeys.md) ties together many different, complicated topics and features by providing a narrative that helps the reader, who can be new to AEM, understand and solve a business problem from beginning to end, while assuming minimal prior topic or AEM knowledge.
 
 Documentation Journeys are designed around best practices principles, informed by Adobe's latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
 
@@ -29,13 +29,13 @@ If you want to know how Adobe recommends how to solve sites business cases with 
 
 This journey is designed for the AEM Commerce content author. This journey lays out the requirements, steps, and approach to get started and manage catalog pages, templates and full product experiences.
 
-Information in this journey can of course be useful to other personas, but some information is superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
+Information in this journey can be useful to other personas, but some information is superfluous to certain roles. Stay tuned for forthcoming journeys covering additional roles.
 
 ## The Journey {#the-journey}
 
 You will explore many topics in this journey. The following articles give you foundational knowledge and link out to detailed technical documentation.
 
-Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to AEM Content and Commerce, we recommend that you start at the beginning and progress sequentially.
+Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to AEM Content and Commerce, Adobe recommends that you start at the beginning and progress sequentially.
 
 |#|Article|Description|
 |---|---|---|

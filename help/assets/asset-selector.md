@@ -1,11 +1,16 @@
 ---
 title: Asset Selector for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Use Asset selector to search, find, and retrieve assets' metadata and renditions within your application.
-contentOwner: Adobe
+contentOwner: KK
 role: Admin,User
-exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
+exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
 ---
 # Micro-Frontend Asset Selector {#Overview}
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-selector.html?lang=en)                  |
+| AEM as a Cloud Service     | This article         |
 
 Micro-Frontend Asset Selector provides a user interface that easily integrates with the [!DNL Experience Manager Assets as a Cloud Service] repository so that you can browse or search digital assets available in the repository and use them in your application authoring experience.
 
@@ -15,9 +20,9 @@ The Micro-Frontend user interface is made available in your application experien
 
 Asset Selector provides many benefits, such as:
 
-*   Ease of integration with any of the Adobe or non-Adobe applications using Vanilla JavaScript library.
-*   Easy to maintain as updates to the Assets Selector package are automatically deployed to the Asset Selector available for your application. There are no updates required within your application to load the latest modifications.
-*   Ease of customization as there are properties available that control the Asset Selector display within your application.
+* Ease of integration with any of the Adobe or non-Adobe applications using Vanilla JavaScript library.
+* Easy to maintain as updates to the Assets Selector package are automatically deployed to the Asset Selector available for your application. There are no updates required within your application to load the latest modifications.
+* Ease of customization as there are properties available that control the Asset Selector display within your application.
 
 * Full-text search, out-of-the-box, and customized filters to quickly navigate to assets for use within the authoring experience.
 
@@ -38,9 +43,10 @@ Perform the following tasks to integrate and use Asset Selector with your [!DNL 
 You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository and select assets from within the application. 
 
 The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. You need to edit an `index.html` or any appropriate file within your application to -
-*   Define the authentication details
-*   Access the Assets as a Cloud Service repository
-*   Configure the Asset Selector display properties
+
+* Define the authentication details
+* Access the Assets as a Cloud Service repository
+* Configure the Asset Selector display properties
 
 <!--
 Asset Selector supports authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID`. Authentication using these IMS properties is referred to as SUSI (Sign Up Sign In) flow in this article.
@@ -55,8 +61,8 @@ Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository 
 
 You can perform authentication without defining some of the IMS properties, if:
 
-*   You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
-*   You already have an IMS token generated for authentication.
+* You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
+* You already have an IMS token generated for authentication.
 
 ## Prerequisites {#prerequisites}
 
@@ -67,9 +73,10 @@ You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken
 -->
 
 Define the prerequisites in the `index.html` file or a similar file within your application implementation to define the authentication details to access the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository. The prerequisites include:
-*   imsOrg
-*   imsToken
-*   apikey
+
+* imsOrg
+* imsToken
+* apikey
 <!--
 The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
 
@@ -99,25 +106,28 @@ Assets Selectors is available via both ESM CDN (For example, [esm.sh](https://es
 In browsers using **UMD version** (recommended):
 
 ```
-<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
 
 <script>
   const { renderAssetSelector } = PureJSSelectors;
 </script>
+
 ```
 
 In browsers with `import maps` support using **ESM CDN version**:
 
 ```
 <script type="module">
-  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 </script>
+
 ```
 
 In Deno/Webpack Module Federation using **ESM CDN version**:
 
 ```
-import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
+
 ```
 
 ### Selected Asset Type {#selected-asset-type}
@@ -367,7 +377,7 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 | *i18nSymbols*            | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No       |                 | If the OOTB translations are insufficient for your application's needs, you can expose an interface through which you can pass your own custom localized values through the `i18nSymbols` prop. Passing a value through this interface overrides the default translations provided and instead use your own.  To perform the override, you must pass a valid [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) object to the key of `i18nSymbols` that you want to override. |
 | *intl* | Object | No  | | Asset Selector provides default, OOTB translations. You can select the translation language by providing a valid locale string through the `intl.locale` prop. For example: `intl={{ locale: "es-es" }}` </br></br> The locale strings supported follow the [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) for the representation of names of languages standards. </br></br> List of supported locales: English - 'en-us' (default) Spanish - 'es-es' German - 'de-de' French - 'fr-fr' Italian - 'it-it' Japanese - 'ja-jp' Korean - 'ko-kr' Portuguese - 'pt-br' Chinese (Traditional) - 'zh-cn' Chinese (Taiwan) - 'zh-tw' |
 | *repositoryId* | string | No | ''| Repository from where the Asset Selector loads the content. |
-| *additionalAemSolutions* | `Array<string>` | No | [ ] | It allows you to add a list of additional AEM repositories. If no information is provided in this property, then only media library or AEM Assets repositories are considered.|
+| *additionalAemSolutions* | `Array<string>` | No | [ ] | It lets you add a list of additional AEM repositories. If no information is provided in this property, then only media library or AEM Assets repositories are considered.|
 | *hideTreeNav*| boolean | No |  | Specifies whether to show or hide assets tree navigation sidebar. It is used in modal view only and hence there is no effect of this property in rail view. |
 | *onDrop* | Function | No | | The property allows the drop functionality of an asset. |
 | *dropOptions* | `{allowList?: Object}` | No | | Configures drop options using 'allowList'.  |
@@ -405,7 +415,7 @@ Use various properties to define metadata of an asset that you want to view usin
 
 ### Example 3: Custom filter property in rail view
 
-In addition to the faceted search, Assets Selector allows you to customize various attributes to refine your search from [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application. You need to add the following code to add customized search filters in your application. In the example below, the `Type Filter` search that filters the asset type among Images, Documents, or Videos or the filter type that you have added for the search.
+In addition to the faceted search, Assets Selector lets you customize various attributes to refine your search from [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application. You need to add the following code to add customized search filters in your application. In the example below, the `Type Filter` search that filters the asset type among Images, Documents, or Videos or the filter type that you have added for the search.
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
@@ -488,14 +498,14 @@ Once the Asset Selector is set up and you are authenticated to use Asset Selecto
 
    ![using-asset-selector](assets/using-asset-selector.png)
 
-*   **A**: [Hide/Show panel](#hide-show-panel)
-*   **B**: [Repository switcher](#repository-switcher)
-*   **C**: [Assets](#repository)
-*   **D**: [Filters](#filters)
-*   **E**: [Search bar](#search-bar)
-*   **F**: [Sorting](#sorting)
-*   **G**: [Sorting in ascending or descending order](#sorting)
-*   **H**: [View](#types-of-view)
+* **A**: [Hide/Show panel](#hide-show-panel)
+* **B**: [Repository switcher](#repository-switcher)
+* **C**: [Assets](#repository)
+* **D**: [Filters](#filters)
+* **E**: [Search bar](#search-bar)
+* **F**: [Sorting](#sorting)
+* **G**: [Sorting in ascending or descending order](#sorting)
+* **H**: [View](#types-of-view)
 
 ### Hide/Show panel {#hide-show-panel}
 
@@ -503,7 +513,7 @@ To hide folders in the left navigation, click **[!UICONTROL Hide folders]** icon
 
 ### Repository switcher {#repository-switcher}
 
-Asset Selector also allows you to switch repositories for asset selection. You can select the repository of your choice from the drop-down available in the left panel. The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. It is based on the environments from the selected IMS org that is accessed by the logged in user. Consumers can pass a preferred `repositoryID` and in that case the Asset Selector stops rendering the repo switcher and render assets from the given repository only.
+Asset Selector also lets you switch repositories for asset selection. You can select the repository of your choice from the drop-down available in the left panel. The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. It is based on the environments from the selected IMS org that is accessed by the logged in user. Consumers can pass a preferred `repositoryID` and in that case the Asset Selector stops rendering the repo switcher and render assets from the given repository only.
 <!--
 It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
 -->
@@ -516,15 +526,15 @@ It is a collection of assets folders that you can use to perform operations.
 
 Asset Selector also provides out-of-the-box filter options to refine your search results. The following filters are available:
 
-*   `File type`: includes folder, file, images, documents, or video
-*   `MIME type`: includes JPG, GIF, PPTX, PNG, MP4, DOCX, TIFF, PDF, XLSX
-*   `Image Size`: includes minimum/maximum width, minimum/maximum height of image
+* `File type`: includes folder, file, images, documents, or video
+* `MIME type`: includes JPG, GIF, PPTX, PNG, MP4, DOCX, TIFF, PDF, XLSX
+* `Image Size`: includes minimum/maximum width, minimum/maximum height of image
 
    ![rail-view-example](assets/filters-asset-selector.png) 
 
 ### Custom search
 
-Apart from the full-text search, Asset Selector allows you to search assets within files using customized search. You can use custom search filters in both Modal view and Rail view modes.
+Apart from the full-text search, Asset Selector lets you search assets within files using customized search. You can use custom search filters in both Modal view and Rail view modes.
 
 ![custom-search](assets/custom-search.png)
 
@@ -532,7 +542,7 @@ You can also create default search filter to save the fields that you frequently
 
 ### Search bar {#search-bar}
 
-Asset Selector allows you to perform full text search of assets within the selected repository. For example, if you type the keyword `wave` in the search bar, all the assets with the `wave` keyword mentioned in any of the metadata properties are displayed.
+Asset Selector lets you perform full text search of assets within the selected repository. For example, if you type the keyword `wave` in the search bar, all the assets with the `wave` keyword mentioned in any of the metadata properties are displayed.
 
 ### Sorting {#sorting}
 
@@ -540,12 +550,12 @@ You can sort assets in Asset Selector by name, dimensions, or size of an asset. 
 
 ### Types of view {#types-of-view}
 
-Asset Selector allows you to view the asset in four different views:
+Asset Selector lets you view the asset in four different views:
 
-*   **![list view](assets/do-not-localize/list-view.png) [!UICONTROL List View]**: The list view displays scrollable files and folders in a single column.
-*   **![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL Grid View]**: The grid view displays scrollable files and folders in a grid of rows and columns.
-*  **![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL Gallery View]**: The gallery view displays files or folders in a center-locked horizontal list.
-*   **![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall View]**: The waterfall view displays files or folders in the form of a Bridge.
+* **![list view](assets/do-not-localize/list-view.png) [!UICONTROL List View]**: The list view displays scrollable files and folders in a single column.
+* **![grid view](assets/do-not-localize/grid-view.png) [!UICONTROL Grid View]**: The grid view displays scrollable files and folders in a grid of rows and columns.
+* **![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL Gallery View]**: The gallery view displays files or folders in a center-locked horizontal list.
+* **![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall View]**: The waterfall view displays files or folders in the form of a Bridge.
 
 <!--
 ### Modes to view Asset Selector
@@ -565,7 +575,7 @@ Asset Selector supports two types of out of the box views:
 ### Application Integration
 
 Asset Selector is flexible and can be integrated within your existing [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application. It is accessible and localized to add, search, and select assets in your application. With Asset Selector you can:
-*   **Configure** You can configure the files/folders that you want to show at the upfront. The assets that are chosen to view can be of any supported formats, for example, JPEG. It allows you to control the display of various text or symbols as per your choice.
+*   **Configure** You can configure the files/folders that you want to show at the upfront. The assets that are chosen to view can be of any supported formats, for example, JPEG. It lets you control the display of various text or symbols as per your choice.
 *   **Perfect fit** Asset selector easily fits in your existing [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application and choose the way you want to view. The mode of view can be inline, rail, or modal view.
 *   **Accessible** With Asset Selector, you can reach the desired asset in an easy manner.
 *   **Localize** Assets can be availed for the various locales available as per Adobe's localization standards.
@@ -590,15 +600,15 @@ You can make default multi-selection of assets by specifying the assets to the c
 ### Action buttons
 
 When you customize your application with Asset Selector based on ReactJS, you are provided with the following action buttons to perform various actions:
-*   **Open in media library** Allows you to open the asset in media library.
-*   **Upload** Allows you to upload an asset directly.
+*   **Open in media library** Lets you open the asset in media library.
+*   **Upload** Lets you upload an asset directly.
 *   **Download** Downloads the asset in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 -->
 <!--
 
 ### Status of an asset
 
-Asset Selector allows you to know the status of your uploaded assets. The status can be `Approved`, `Rejected`, or `Expired` of the asset. 
+Asset Selector lets you know the status of your uploaded assets. The status can be `Approved`, `Rejected`, or `Expired` of the asset. 
 -->
 <!--
 

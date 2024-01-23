@@ -1,6 +1,6 @@
 ---
 title: Getting Started with SPAs in AEM Using Angular
-description: This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the Angular framework.
+description: This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the Angular framework.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 ---
 # Getting Started with SPAs in AEM Using Angular {#getting-started-with-spas-in-aem-using-angular}
@@ -234,7 +234,7 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-The central idea of SPAs in AEM is the idea of mapping SPA components to AEM components and updating the component when the content is modified (and vice versa). See the document [SPA Editor Overview](editor-overview.md) for an summary of this communication model.
+The central idea of SPAs in AEM is the idea of mapping SPA components to AEM components and updating the component when the content is modified (and conversely). See the document [SPA Editor Overview](editor-overview.md) for an summary of this communication model.
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 
@@ -261,7 +261,7 @@ Finally the image can be rendered in `image.component.html`.
 
 It is regularly necessary for components within a single-page application to share information. There are several recommended ways of doing this, listed as follows in increasing order of complexity.
 
-* **Option 1:** Centralize the logic and broadcast to the necessary components for example by using a util class as a pure object-oriented solution.
+* **Option 1:** Centralize the logic and broadcast to the necessary components for example, by using a util class as a pure object-oriented solution.
 * **Option 2:** Share component states by using a state library such as NgRx.
 * **Option 3:** Leverage the object hierarchy by customizing and extending the container component.
 
@@ -271,4 +271,4 @@ It is regularly necessary for components within a single-page application to sha
 * [SPA Editor Overview](editor-overview.md) goes into more depth into the communication model between AEM and the SPA.
 * [WKND SPA Project](wknd-tutorial.md) is a step-by step tutorial implementing a simple SPA project in AEM.
 * [Dynamic Model to Component Mapping for SPAs](model-to-component-mapping.md) explains the dynamic model to component mapping and how it works within SPAs in AEM.
-* [SPA Blueprint](blueprint.md) offers a deep dive into how the SPA SDK for AEM works in case you wish to implement SPAs in AEM for a framework other than React or Angular or simply would like a deeper understanding.
+* [SPA Blueprint](blueprint.md) offers a deep dive into how the SPA SDK for AEM works in case you want to implement SPAs in AEM for a framework other than React or Angular or simply would like a deeper understanding.

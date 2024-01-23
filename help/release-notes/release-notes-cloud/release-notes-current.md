@@ -20,110 +20,96 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2023.7.0) is July 27, 2023. The next feature release (2023.8.0) is planned for August 31, 2023.
-
-## Release Video {#release-video}
-
-Have a look at the July 2023 Release Overview video for a summary of the features added in the 2023.7.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3422016/?quality=12)
-
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### New features in [!DNL Experience Manager Sites] {#sites-features}
-
-* MSM for Content Fragments. AEM Multisite Manager is now available for Content Fragments, allowing to create Content Fragment Live Copies for bulk content distribution. Granular inheritance controls are available down to Content Fragment Element and Variation level. 
-
-### New features in [!DNL Experience Manager Sites] prerelease {#prerelease-sites}
-
-* The [Content Fragment Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en) now allows users to view tags and search by tags applied as metadata to Content Fragments. Users will no longer have to switch to the Assets UI for this capability, reducing context switching and improving efficiency. 
-
-![Tagging in Content Fragment Console](/help/assets/content-fragments-console-tags.png)
-
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
-
-### New features in Assets view {#assets-view-features}
-
-<!--
-
-**Assign metadata form to a folder**
-
-You can now assign metadata form to a specific folder within your Assets Essentials deployment. All assets in the folder, including assets in the sub-folders, then display properties defined in the assigned metadata form.
-
-![assign metadata form to a folder](/help/release-notes/assets/assign-to-folder.png)
-
--->
-
-**Improved artificial intelligence framework for image Smart Tags**
-
-Experience Manager Assets now uses an improved artificial intelligence framework for image Smart Tags. This content intelligence results in better relevancy and precision of Smart Tags available to all image assets on ingestion.
-
-**Configure display of columns for Assets List view**
-
-Assets Essentials now provides the ability to select the columns that display in the Assets List view, such as Status, Format, Dimensions, Size, and so on.
-
-![Configure columns](/help/release-notes/assets/configure-columns.png)
-
-**Sort search results based on relevance**
-
-Assets Essentials now sorts the search results based on Relevance, by default. You can sort the searched assets in increasing or decreasing order of `Name`, `Relevance`, `Size`, `Modified`, and `Created`.
-
-
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
-
-### New features available in [!DNL Forms] {#new-features-available-in-forms-channel}
-
-* [**Out of the box themes**](/help/forms/using-themes-in-core-components.md) **and templates**: Kickstart your form creation process with our ready-to-use OOTB themes and templates, tailored to empower both seasoned professionals and new forms authors. Seamlessly built using Adaptive Forms Core Components, these meticulously curated themes and templates allow you to start creating forms swiftly for common use cases. 
-
-     ![Out of the box templates](/help/forms/assets/form-templates-ootb.png)
-
-* **React Components for Headless Forms**: You can now preview and customize   Headless Adaptive Form renditions with the React components provided out of the box. These components leverage BEM classes from Adaptive Forms Core Components for styling, making it effortless for you to customize their appearance according to your specific requirements.
-
-* [**Create Adaptive Forms with repeatable sections**](/help/forms/create-forms-repeatable-sections.md): You can now make [Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Wizard](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Panel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), and [Horizontal Tabs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) components based Adaptive Form repeatable for multiple data record capture.  These repeatable sections allow you to provide multiple data entries easily. It is useful when the required instances of data are unknown in advance. A form filler can easily add or remove sections, making forms adaptable to different data entry scenarios and simplifying collection of multiple occurrences of the same data record.
-
-
-### Pre-release features available in [!DNL Forms] {#pre-release-features-available-in-forms-channel}
-
-* [**Google reCAPTCHA enterprise support**](/help/forms/captcha-adaptive-forms.md): Use Google reCAPTCHA Enterprise in an Adaptive Form to provide enhanced protection against fraudulent activity and spam, providing a safer user experience. With advanced risk analysis and seamless integration, genuine users can easily submit forms while bots are effectively blocked.
-
-    >[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
-
-### Headless Adaptive Forms early adopter program {#forms-early-adopter}
-
-Use [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) to enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. Headless adaptive forms help you: 
-
-* build high-quality multi-channel forms in the programming language of your choice 
-* natively integrate forms to your desktop and mobile apps, websites, and chat applications 
-* reuse your proprietary UI components with forms applications 
-* use the power of Adobe Experience Manager Forms 
-
-You can send an email to `aem-forms-headless@adobe.com` from your official email ID to join the early adopter program. 
-
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### Actions Center {#actions-center}
-
-Subscribe to email notifications that alert you when critical incidents happen requiring immediate action, and also with personalized recommendations to optimize your site. [Actions Center](/help/operations/actions-center.md) serves as a hub where you can review these alerts, such as blocked replication queues or expiring credentials, and mark them as resolved.
-
-![Actions Center screenshot](/help/assets/assets/actions-center.png)
-
-### CDN and WAF Rules early adopter program {#waf-early-adopter}
-
-Filter traffic at the CDN based on:
-* request headers and properties (e.g., IP address)
-* traffic patterns known to be associated with malicious traffic
-
-Interested in trying out the feature and sharing feedback? Send an email to **aemcs-waf-adopter@adobe.com** from your official email ID to learn more about the early adopter program. Space is limited.
-
-Learn more about the feature in the article [here](/help/security/cdn-and-waf-rules.md).
-
-### Other Foundation changes {#other-foundation-changes}
-
-* During the week of August 7th, AEM will return error code 429 instead of error code 503 when requests to AEM instances exceed a healthy level. [Learn more](/help/implementing/developing/introduction/development-guidelines.md).
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2023.12.0) is December 14, 2023. The next feature release (2024.1.0) is planned for January 25, 2023.
 
 ## Maintenance Release Notes {#maintenance}
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
+
+<!-- 
+
+## Release Video {#release-video}
+
+Have a look at the December 2023 Release Overview video for a summary of the features added in the 2023.12.0 release:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
+
+-->
+
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Early Adopter Program {#sites-early-adopter}
+
+**You can leverage the [Real User Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** to enable client-side collection for AEM as a Cloud Service. 
+
+Real User Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. While this is beneficial for customers who use either Adobe-managed CDN or non-Adobe-managed CDN. Additionally, for customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
+
+If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com`, along with your domain name for the production, stage and dev environment from your email address associated with your Adobe ID. Adobe's product team will then enable the Real User Monitoring (RUM) Data Service for you.
+
+
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+### New Features in Assets View {#assets-view-features}
+
+**Create GenAI images with Adobe Firefly**
+
+Create new images based on search queries with an integration of Adobe Firefly text-to-image feature (requires Adobe Firefly license).
+
+ ![Assets Firefly integration](/help/assets/assets/assets-firefly-integration.png)
+
+**Find Similar Images**
+
+You can now can easily find content by selecting an image and viewing similar images in the Experience Manager Assets repository.
+
+<!--
+
+* **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
+
+  ![storage usage insights](/help/assets/assets/block-tags.png)
+
+
+**Video Preview**: AEM Assets now generates preview renditions of all supported video formats by default, without the need to configure a processing profile.
+
+-->
+
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### New Features in [!DNL Experience Manager Forms] {#forms-features}
+
+* **[Connect an Adaptive Forms with Microsoft&reg; SharePoint List](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: AEM Forms provides an OOTB integration to submit forms data directly to SharePoint List, letting you use SharePoint's Lists capabilities. You can configure Microsoft SharePoint List as a datasource for a Form Data Model and use the **Submit using Form Data Model** submit action to connect an Adaptive Form with SharePoint List. 
+
+<!-- 
+
+* **Configure a shard for Adobe Sign for AEM Forms**: Adobe distributes Acrobat Sign API around the globe in many deployment units called "shards." Each shard serves a customer's account, such as NA1, NA2, NA3, EU1, JP1, AU1, IN1, and others. The shard names correspond to geographic locations. You can now use more than one shard while using Adobe Sign integration with AEM Forms. 
+
+--> 
+
+### Early Adopter Program {#forms-early-adopter}
+
+* **[Submit an Adaptive Form to Adobe Workfront Fusion Scenario](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service offers an out-of-the-box options to effortlessly connect an Adaptive Form with Adobe Workfront. This simplifies the process of submitting an Adaptive Form to an Adobe Workfront scenario, allowing you trigger a Workfront Fusion scenario on submission of an Adaptive Form. 
+
+* **[Right to left languages support](/help/forms/supporting-new-language-localization-core-components.md)**: Adaptive Forms built on Core Components can now be presented in a Right-to-Left (RTL) language like Arabic, Persian, and Urdu. The RTL languages are spoken by over 2 billion people globally. Using a form in RTL language allows you to extend the reach of your adaptive forms to cater to these diverse audiences and select into RTL markets. In certain regions, it's also a legal mandate to provide forms in the local language. By accommodating local languages, you not only open doors to a broader audience but also ensure compliance with relevant laws and regulations. 
+
+  ![Right to left language support](/help/forms/assets/right-to-left-language-support.png)
+
+* **[Protect your documents with DocAssurance APIs (Part of Communication APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: The DocAssurance APIs empower you to safeguard sensitive information by signing and encrypting the documents. Through encryption, the contents of a document are transformed into an unreadable format, ensuring that only authorized users can gain access. This fortified layer of protection not only shields valuable data from unauthorized eyes but also provides peace of mind. The Signature APIs let your organization protect the security and privacy of Adobe PDF documents that it distributes and receives. This service uses digital signatures and certification to ensure that only intended recipients can alter documents. 
+
+     You can write to `aem-forms-early-adopter-program@adobe.com` from your official email id to join the early adopter program and request access to the capability.
+     
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### CDN Configuration Early Adopter Program {#cdn-config-early-adopter}
+
+In addition to the recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which includes the optionally licensable Web Application Firewall (WAF) rules, there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. We'd love to hear about your use cases, including:
+* 301/302 client-side redirects
+* proxying requests at the edge to arbitrary origins
+* URL transformations
+* setting or modifying request or response headers
+* custom error pages when the CDN can't reach AEM
+* authentication by username/password
+* any other useful CDN configurations
+
+Send an email to **aemcs-cdn-config-adopter@adobe.com** from your official email ID with your feedback.
 
 ## Cloud Manager {#cloud-manager}
 

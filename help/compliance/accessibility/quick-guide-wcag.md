@@ -21,7 +21,7 @@ WCAG 2.1 consists of a set of technology independent guidelines and success crit
 
 For example, describing an image (or any other non-text content) by using the `alt` attribute in HTML greatly benefits people who are blind or partially sighted. The textual description in the `alt` attribute can either be converted into speech output or transmitted to electronic refreshable braille displays.
 
-Additionally, WCAG 2.1 can result in advantages for other beneficiaries, including people who may be considered *situationally disabled*. People who, because of circumstances such as browsing technology, network connection speed or browsing environment, may experience barriers similar to people with disabilities.
+Also, WCAG 2.1 can result in advantages for other beneficiaries, including people who may be considered *situationally disabled*. People who, because of circumstances such as browsing technology, network connection speed or browsing environment, may experience barriers similar to people with disabilities.
 
 Using Adobe Experience Manager, content authors and/or website owners can create web content that meets relevant WCAG 2.1 Level A and Level AA success criteria.
 
@@ -62,7 +62,7 @@ To elaborate:
 * Guidelines are numbered 1.1 to 4.1, where the first number corresponds to the parent principle.
 * Each guideline consists of one or more **success criteria**.
 * Success criteria are written as statements, which are either `True` or `False` for any given web page.
-* Success sriteria may include either/or choices, or may include exceptions; situations where the success criteria need not be met.
+* Success criteria may include either/or choices, or may include exceptions; situations where the success criteria does not need to be met.
 * Success criteria are numbered according to the parent guideline and principle, from 1.1.1 to 4.1.1. They also have a short name summarizing the intent of the criterion, for easier reference. For example, success criterion [1.1.1 is Non-text Content](https://www.w3.org/TR/WCAG/#non-text-content).
 * Success criteria include a list of related **techniques** (described in more detail below).
 

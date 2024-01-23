@@ -10,19 +10,21 @@ Learn how to add your own IP allowlist using Cloud Manager.
 
 A user in the **Business Owner** or **Deployment Manager** role can follow these steps to add an IP allowlist.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Navigate to **Environments** screen from the **Overview** page.
+1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
 
-1. Navigate to **IP Allow Lists** page from the **Environments** screen.
+1. From the **Overview** page, navigate to the **Environments** screen.
+
+1. From the **Environments** screen, navigate to the **IP Allow Lists** page.
 
    ![IP allow lists option in the side panel](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
-1. Click **Add IP Allow List** to open the **Add IP Allow List** dialog box.
+1. Click **Add IP Allow List**.
 
    ![The Add IP Allow List dialog box](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
 
-1. Enter a name that you would like to use to reference the allowlist in the **IP Allow List name** field.
+1. In the **Add IP Allow List** dialog box, enter a name that you want to use to reference the allowlist in the **IP Allow List name** field.
 
    * This name is informational only and should be descriptive to help you identify the list.
 
@@ -30,6 +32,6 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 
    * Multiple blocks can be separated by a comma or a tab.
 
-1. Click **Save** to confirm your submission.
+1. Click **Save**.
 
 After saving, the newly created IP allowlist appears as a row in the table in the **IP Allow Lists** page.

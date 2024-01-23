@@ -1,7 +1,8 @@
 ---
-title: Translate a Core Components based Adaptive Form
-description: Use machine translation or human translation to translate a Core Components based Adaptive Form
-feature: Adaptive Forms
+title: How can we translate a Core Components based Adaptive Form?
+description: Learn to create a Form Data Model in AEM Forms, test the model with sample data and services, and configure various option for a model.
+feature: Adaptive Forms, Core Components
+exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 ---
 # Use machine translation or human translation to translate a Core Components based Adaptive Form {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
@@ -11,14 +12,14 @@ Localized forms help you serve a wider audience across geographies. Adobe Experi
 
 The machine translation service immediately translates your content in Adaptive Form and [Document of Record](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service is pre-configured to use a trial version of Microsoft Translator for machine translation. Perform the following steps to enable machine translation for your Adaptive Forms and Document of Record:
 
-1. On the AEM Forms UI, select a form, and tap the **[!UICONTROL Add Dictionary]** option.
+1. On the AEM Forms UI, select a form, and select the **[!UICONTROL Add Dictionary]** option.
 1. In the Add Dictionary to Translation Project screen, for the **[!UICONTROL Project]** option 
 
    * To create a translation project, select the **[!UICONTROL Create a new translation project]** option and in the **Project Title** field, specify the title. For example, `Government Reference Site - German locale.`
    * To add a new dictionary to an existing translation project, select the **[!UICONTROL Add to an existing translation project]** option and select an **[!UICONTROL Existing translation project]**. 
 1. In the **Target Languages** field, specify a locale (For example, `German(de)`). You can specify multiple locales. The form is translated to all the locales specified in the **Target Languages** field. Click **Done**.
 1. In the Dictionary Added dialog box, click **Open Projects**. 
-1. In the Projects screen, click the newly created project. For example, click the **Government Reference Site - German locale** tile.
+1. In the Projects screen, click the created project. For example, click the **Government Reference Site - German locale** tile.
 1. On the **Translation Job** tile, click the ![aem62forms_downarrow](assets/aem62forms_downarrow.png) icon, and click **Start**. The status of the tile changes to Draft. On completion of the translation, the status changes to **Approved**. Refresh the page after a few minutes and verify the status.
 
       ![Start Translation](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
@@ -42,7 +43,7 @@ The machine translation service immediately translates your content in Adaptive 
    [Document of Record settings](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Customize the branding information of the document of record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) and ensure that the browser locale is set to the same language to which you have localized the Adaptive Form using machine language. The browser locale helps localize the branding information in the document of record.
-1. To view the localized document of record, tap Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
+1. To view the localized document of record, select Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
 
 -->
 
@@ -54,14 +55,14 @@ For translation, a dictionary containing files in XLIFF format is shared with th
 
 Perform the following steps to localize a form and its document of record using Human Translators:
 
-1. On the AEM Forms UI, select a form, and tap the **[!UICONTROL Add Dictionary]** option.
+1. On the AEM Forms UI, select a form, and select the **[!UICONTROL Add Dictionary]** option.
 1. In the Add Dictionary to Translation Project screen, for the **[!UICONTROL Project]** option 
 
    * To create a translation project, select the **[!UICONTROL Create a new translation project]** option and in the **Project Title** field, specify the title. For example, `Government Reference Site - German locale.`
    * To add a new dictionary to an existing translation project, select the **[!UICONTROL Add to an existing translation project]** option and select an **[!UICONTROL Existing translation project]**. 
 1. In the **Target Languages** field, specify a locale (For example, `German(de)`). You can specify multiple locales. The form is translated to all the locales specified in the **Target Languages** field. Click **Done**.
 1. In the Dictionary Added dialog box, click **Open Projects**. 
-1. In the Projects screen, click the newly created project. For example, click the **Government Reference Site - German locale** tile. 
+1. In the Projects screen, click the created project. For example, click the **Government Reference Site - German locale** tile. 
 1. At the bottom of the **Summary** tile, click the **ellipses**. The Translation Project Properties screen opens.
 1. Open the **[!UICONTROL Advanced]** tab  at the top of the **Translation Project Properties** screen. For the **[!UICONTROL Translation field]**, select **[!UICONTROL Human Translation]**. Click **Save & Close** at the top of the screen.
 1. On the **Translation Job** tile, click the ![aem62forms_downarrow](assets/aem62forms_downarrow.png) icon, and click **Export**. On the Export dialog, click the Download Exported File option. It downloads a .zip file. 
@@ -76,3 +77,7 @@ Perform the following steps to localize a form and its document of record using 
    ![Import translation file](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. To preview the localized form, on the AEM Forms UI, select the localized form. Click **[!UICONTROL Preview]** >**[!UICONTROL Preview as HTML]**. Reopen the form after adding the `afAcceptLang=<locale code>` to the URL off the form. For example, add `afAcceptLang=de`to open German version of the form.
+
+## See Also {#see-also}
+
+{{see-also}}

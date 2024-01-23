@@ -5,11 +5,11 @@ exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 ---
 # Updating your Content Fragments for optimized GraphQL Filtering {#updating-content-fragments-for-optimized-graphql-filtering}
 
-To optimize the performance of your GraphQL filters you need to run a procedure to update your Content Fragments.
+To optimize the performance of your GraphQL filters, run a procedure to update your Content Fragments.
 
 >[!NOTE]
 >
->After updating your Content Fragments you can follow the recommendations for [Optimizing GraphQL Queries](/help/headless/graphql-api/graphql-optimization.md).
+>After updating your Content Fragments, you can follow the recommendations for [Optimizing GraphQL Queries](/help/headless/graphql-api/graphql-optimization.md).
 
 
 ## Prerequisites {#prerequisites}
@@ -20,11 +20,9 @@ There are prerequisites for this task:
 
 1. Ensure that the user performing the task has the required permissions:
 
-   * at minimum the `Deployment Manager` role in Cloud Manager is required.
+   * at a minimum, the `Deployment Manager` role in Cloud Manager is required.
 
 ## Updating your Content Fragments {#updating-content-fragments}
-
-To run the procedure use the following steps:
 
 1. Enable the update by setting the following variables for your instance using the Cloud Manager UI:
 
@@ -63,7 +61,7 @@ To run the procedure use the following steps:
       <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Enforce (!=0) re-migration of Content Fragments.<br>Setting this flag to 0 will do an incremental migration of CFs. This means, if the job is terminated due to any reason, then next run of the job will start migration from the pont where it got terminated. Note that, the very first migration is recommended to be enforced (value=1). </td>
+      <td>Enforce (!=0) remigration of Content Fragments.<br>Setting this flag to 0 does an incremental migration of CFs. This means, if the job is terminated for any reason, then the next run of the job starts migration from the point where it got terminated. The first migration is recommended for enforcement (value=1). </td>
      </tr>
      <tr>
       <td>3</td>
@@ -73,7 +71,7 @@ To run the procedure use the following steps:
       <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Size of the batch for saving number of Content Fragments after migration.<br>This is relevant to how many CFs are saved to repository in one batch, and can be used to optimize number of writes to repository. </td>
+      <td>Size of the batch for saving the number of Content Fragments after migration.<br>This is relevant to how many CFs are saved to the repository in one batch, and can be used to optimize the number of writes to the repository. </td>
      </tr>
      <tr>
       <td>4</td>
@@ -93,7 +91,7 @@ To run the procedure use the following steps:
       <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Interval (seconds) to process remaining Content Fragments up till next Limit<br>This interval is also considered as both a wait-time before starting the job, and a delay between processing of each subsequent CF_MIGRATION_LIMIT number of CFs.<br>(*)</td>
+      <td>Interval (seconds) to process the remaining Content Fragments up until the next Limit<br>This interval is also considered as both a wait-time before starting the job, and a delay between processing of each subsequent CF_MIGRATION_LIMIT number of CFs.<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -112,9 +110,9 @@ To run the procedure use the following steps:
    >* Approximate time required to complete the migration = 60 + (20,000/1000 * 60) = 1260 Sec = 21 Minutes
    >  The additional "60" seconds added at the start is due to the initial delay when starting the job.
    >
-   >You should also be aware that this is only the *minimum* time required to complete the job, and does not include the I/O time. The actual time taken could be significantly more than this estimation.  
+   >This is only the *minimum* time required to complete the job, and does not include the I/O time. The actual time taken could be more than this estimation.  
 
-1. Monitor the progress, and completion of the update.
+1. Monitor the progress and completion of the update.
 
    To do this, monitor the logs on author and golden-publish from:
    
@@ -140,7 +138,7 @@ To run the procedure use the following steps:
        23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
        ```
 
-   Customers, who enabled access to the environment logs using Splunk, can use the example query below to monitor the upgrade process. For details about enabling Splunk logging, see [Debugging Production and Stage](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) page.
+   Customers, who enabled access to the environment logs using Splunk, can use the example query below to monitor the upgrade process. For details about enabling Splunk logging, see [Debugging Production and Stage](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage).
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
@@ -214,13 +212,13 @@ To run the procedure use the following steps:
 
    >[!NOTE]
    >
-   >This is particularly important for the publish tier, as the content update is only done on golden-publish, and when recycling of pods, all normal publish pods are based on the golden-publish.
+   >This is important for the publish tier, as the content update is only done on golden-publish, and when recycling of pods, all normal publish pods are based on the golden-publish.
 
 1. Verify completion of the update procedure.
 
    You can verify the successful completion of the update using the repository browser in the Cloud Manager developer console to check the content fragment data.
 
-   * Before the first complete migration, the `cfGlobalVersion` property will not exist. 
+   * Before the first complete migration, the `cfGlobalVersion` property does not exist. 
      Therefore, the presence of this property, on the JCR node `/content/dam` with a value of `1`, confirms the completion of the migration.
 
    * You can also check the following properties on the individual Content Fragments:
@@ -230,14 +228,14 @@ To run the procedure use the following steps:
 
      >[!NOTE]
      >
-     >The procedure will update Content Fragments on author and publish instances. 
+     >The procedure updates Content Fragments on Author and Publish instances. 
      >
-     >Therefore, it is recommended to perform the verification via repository browser for *at least* one author *and* one publish instance.
+     >Therefore, Adobe recommends that you perform the verification by way of the repository browser for *at least* one Author *and* one Publish instance.
 
 ## Limitations {#limitations}
 
 Be aware of the following limitations:
 
-* Optimization of the performance of GraphQL filters will only be possible after a complete update of all your Content Fragments (indicated by the presence of the `cfGlobalVersion` property for the JCR node `/content/dam`)
+* Optimization of the performance of GraphQL filters is only possible after a complete update of all your Content Fragments (indicated by the presence of the `cfGlobalVersion` property for the JCR node `/content/dam`)
 
-* If Content Fragments are imported from a content package (using `crx/de`) after the update procedure is run, then those Content Fragments will not be considered in the GraphQL query results, until the update procedure is executed again.
+* If Content Fragments are imported from a content package (using `crx/de`) after the update procedure is run, then those Content Fragments are not considered in the GraphQL query results until the update procedure is run again.

@@ -3,6 +3,7 @@ title: Editing Page Content
 description: Once your page is created you can edit the content to make the updates you require
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 ---
+
 # Editing Page Content{#editing-page-content}
 
 Once your page is created (either new or as part of a launch or live copy) you can edit the content to make the updates you require.
@@ -25,6 +26,8 @@ Content is added using [components](/help/sites-cloud/authoring/features/compone
 >[!TIP]
 >
 >When in **Edit** mode, links in your content are visible, but **not accessible**. Use [Preview mode](#previewing-pages) if you want to navigate using the links in your content.
+
+{{edge-delivery-authoring}}
 
 ## Page Toolbar {#page-toolbar}
 
@@ -66,7 +69,7 @@ The toolbar offers access to numerous options. Depending on your current context
 
 * **Mode Selector**
 
-  Displays the current [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) and allows you to select another mode such as edit, layout, timewarp, or targeting.
+  Displays the current [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) and lets you select another mode such as edit, layout, timewarp, or targeting.
 
   ![Mode Selector button](/help/sites-cloud/authoring/assets/mode-selector.png)
 
@@ -78,7 +81,7 @@ The toolbar offers access to numerous options. Depending on your current context
 
 * **Annotate**
 
-  Allows you to add [annotations](/help/sites-cloud/authoring/fundamentals/annotations.md) to the page when reviewing a page. After the first annotation, the icon will switch to a number indicating the number of annotations on the page.
+  Lets you add [annotations](/help/sites-cloud/authoring/fundamentals/annotations.md) to the page when reviewing a page. After the first annotation, the icon will switch to a number indicating the number of annotations on the page.
 
   ![Annotation button](/help/sites-cloud/authoring/assets/annotations.png)
 
@@ -142,9 +145,9 @@ You can add a new component by using the **Drag components here** box of the par
 
       ![Insert a component](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-    * If you are on a desktop device you can double-click on the **Drag components here** box.
+    * If you are on a desktop device you can double-click the **Drag components here** box.
 
-    * The **Insert New Component** dialog will open to allow you to select your required component:
+    * The **Insert New Component** dialog open to let you select your required component:
 
       ![Insert New Component dialog](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -152,7 +155,7 @@ You can add a new component by using the **Drag components here** box of the par
 
 ### Inserting a Component using the Assets Browser {#inserting-a-component-using-the-assets-browser}
 
-You can also add a new component to the page by dragging an asset from the [assets browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). This will automatically create a new component of the appropriate type (and containing the asset).
+You can also add a new component to the page by dragging an asset from the [assets browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). This automatically creates a component of the appropriate type (and containing the asset).
 
 This behavior can be configured for your installation. See Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance for further details. <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
@@ -164,7 +167,7 @@ To create a component by dragging one of the above asset types:
 
    A component, appropriate for the asset type, is created at the required location - it contains the selected asset.
 
-1. [Edit](#edit-content) the component if required.
+1. [Edit](#edit-content) the component if necessary.
 
 >[!NOTE]
 >
@@ -176,7 +179,7 @@ If when browsing the assets you find that you need to make a quick change to an 
 
 ## Component Toolbar {#component-toolbar}
 
-Selecting a component will open the toolbar. This provides access to various actions that can be performed on the component.
+Selecting a component opens the toolbar. This provides access to various actions that can be performed on the component.
 
 The actual actions available to the user are shown as appropriate and not all actions may be described here.
 
@@ -234,25 +237,25 @@ The actual actions available to the user are shown as appropriate and not all ac
 
 * **Group**
 
-  This allows you to select multiple components at once. The same can be achieved on a desktop device by a **Control+Click** or **Command+Click**.
+  This lets you select multiple components at once. The same can be achieved on a desktop device by a **Control+Click** or **Command+Click**.
 
   ![Group button](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
 * **Parent**
 
-  This allows you to select the parent component of the selected component.
+  This lets you select the parent component of the selected component.
 
   ![Parent button](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **Layout**
 
-  This allows you to modify the [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) of the selected component. This only applies to the selected component and does not activate the [Layout mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) for the entire page.
+  This lets you modify the [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) of the selected component. This only applies to the selected component and does not activate the [Layout mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) for the entire page.
 
   ![Layout button](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **Convert to an experience fragment variation**
 
-  This allows you to create a new [experience fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) from the selected component or add it to an existing experience fragment.
+  This lets you create an [experience fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) from the selected component or add it to an existing experience fragment.
 
   ![Convert to Experience Fragment button](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
@@ -313,7 +316,7 @@ For example, the **Text** component:
 
 To move a paragraph component:
 
-1. Select the paragraph to be moved with either tap-and-hold or click-and-hold.
+1. Select the paragraph to be moved with either select-and-hold or click-and-hold.
 1. Drag the paragraph to the new location. AEM indicates where the paragraph can be deposited. Drop it in your desired location.
 
    ![Moving a component](/help/sites-cloud/authoring/assets/editing-moving-component.png)
@@ -332,7 +335,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-cloud/aut
 
    ![The component toolbar of a page component](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Click or tap the **Layout** action to adjust the layout of the component.
+   Select the **Layout** action to adjust the layout of the component.
 
    ![The Layout button of the component toolbar](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
@@ -352,7 +355,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-cloud/aut
 
 >[!TIP]
 >
->The Layout action is limited in scope to the selected component. For example, if you are editing the layout of one component and then click on another component, the standard edit toolbar (not the layout toolbar) displays for the newly selected component and the resizing handles and the emulator toolbar disappear.
+>The Layout action is limited in scope to the selected component. For example, if you are editing the layout of one component and then click another component, the standard edit toolbar (not the layout toolbar) displays for the newly selected component and the resizing handles and the emulator toolbar disappear.
 >
 >If you need to edit the overall layout of the page, affecting multiple components, switch to the [layout mode](/help/sites-cloud/authoring/features/responsive-layout.md).
 
@@ -424,7 +427,7 @@ There are two options for previewing a page:
 When editing content you can preview the page using the preview [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes). This mode:
 
 * Hides various edit mechanisms to give you a quick view of how the page will appear on publish.
-* Allows you to use links to navigate.
+* Lets you use links to navigate.
 * Does **not** refresh the page content.
 
 When authoring, the preview mode is available using the icon at the top right of the page editor:
@@ -486,7 +489,7 @@ The Page Information menu lists **Unlock** as an option and the Lock icon in the
 >
 >Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
 >
->Pages can not be unlocked by impersonating the user who locked the page.
+>Pages cannot be unlocked by impersonating the user who locked the page.
 -->
 
 <!--

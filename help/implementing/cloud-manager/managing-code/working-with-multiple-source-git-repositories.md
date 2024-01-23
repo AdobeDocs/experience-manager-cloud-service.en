@@ -9,11 +9,11 @@ Learn how to manage multiple git repositories when working with Cloud Manager.
 
 ## Syncing Customer-managed Git Repositories {#syncing-customer-managed-git-repositories}
 
-Instead of directly working with Cloud Manager's git repository, [customers can work with their own git repository](integrating-with-git.md) or multiple own git repositories. In these cases an automated synchronization process should be set up to ensure that Cloud Manager's git repository is always kept up-to-date.
+Instead of directly working with Cloud Manager's git repository, [customers can work with their own git repository](integrating-with-git.md) or multiple own git repositories. In these cases, an automated synchronization process should be set up to ensure that Cloud Manager's git repository is always kept up-to-date.
 
-Depending on where the customer's git repository is hosted, a GitHub action or a continuous integration solution like Jenkins could be used to set up the automation. With an automation in place, every push to a customer owned git repository can be automatically forwarded to Cloud Manager's git repository.
+Depending on where the customer's git repository is hosted, a GitHub action or a continuous integration solution like Jenkins could be used to set up the automation. With an automation in place, every push to a customer-owned git repository can be automatically forwarded to Cloud Manager's git repository.
 
-While such an automation for a single customer-owned git repository is straight forward, configuring this for multiple repositories requires an initial setup. The contents from multiple git repositories need to be mapped to different directories within the single Cloud Manager git repository.  Cloud Manager's git repository needs to be provisioned with a root Maven `pom.xml`, listing the different sub projects in the modules section.
+While such an automation for a single customer-owned git repository is straight forward, configuring this for multiple repositories requires an initial setup. The contents from multiple git repositories must be mapped to different directories within the single Cloud Manager git repository. Cloud Manager's git repository must be provisioned with a root Maven `pom.xml`, listing the different subprojects in the modules section.
 
 The following is a sample `pom.xml` file for two customer-owned git repositories.
 
@@ -39,27 +39,27 @@ The following is a sample `pom.xml` file for two customer-owned git repositories
 </project>
 ```
 
-Such a root `pom.xml` is pushed to a branch in Cloud Manager's git repository. Then the two projects need to be setup to automatically forward changes to Cloud Manager's git repository. 
+Such a root `pom.xml` is pushed to a branch in Cloud Manager's git repository. Then the two projects must be set up to automatically forward changes to Cloud Manager's git repository. 
 
 A possible solution would be the following.
 
 1. A GitHub action can be triggered by a push to a branch in project A.
-1. The action will checkout project A and the Cloud Manager git repository and copy all contents from project A to the directory `project-a` in Cloud Manager's git repository.
-1. Then the action will commit-push the change.
+1. The action checks out project A and the Cloud Manager git repository and copies all contents from project A to the directory `project-a` in Cloud Manager's git repository.
+1. Then the action commits-pushes the change.
 
-For example, a change on the main branch in project A is automatically pushed to the main branch in Cloud Manager's git repository. Of course, there could be a mapping between branches like a push to a branch named `dev` in project A is pushed to a branch named `development` in Cloud Manager's git repository. Similar steps are required for project B.
+For example, a change on the main branch in project A is automatically pushed to the main branch in Cloud Manager's git repository. There could be a mapping between branches like a push to a branch named `dev` in project A is pushed to a branch named `development` in Cloud Manager's git repository. Similar steps are required for project B.
 
-Depending on the branching strategy and workflows, the syncing can be configured for different branches. If the used git repository does not provide a concept similar to GitHub actions, an integration via Jenkins (or similar) is possible as well. In this case, a webhook triggers a Jenkins job which does the work.
+Depending on the branching strategy and workflows, the syncing can be configured for different branches. If the used git repository does not provide a concept similar to GitHub actions, an integration by way of Jenkins (or similar) is possible as well. In this case, a webhook triggers a Jenkins job which does the work.
 
-Follow these steps to add a new, third source or repository.
+Follow these steps so you can add a new, third source or repository.
 
-1. Add a new GitHub action to the new repository which pushes changes from that repository to Cloud Manager's git repository.
+1. Add a GitHub action to the new repository which pushes changes from that repository to Cloud Manager's git repository.
 1. Perform that action at least once to ensure that project code is in Cloud Manager's git repository.
 1. Add a reference to the new directory in the root Maven `pom.xml` in the Cloud Manager git repository.
 
 ## Sample GitHub Action {#sample-github-action}
 
-This is a sample GitHub action triggered by a push to the main branch and then pushing into a sub directory of Cloud Manager's git repository. The GitHub actions needs to be provided with two secrets, `MAIN_USER` and `MAIN_PASSWORD`, to be able to connect and push to Cloud Manager's git repository.
+This is a sample GitHub action triggered by a push to the main branch and then pushing into a subdirectory of Cloud Manager's git repository. The GitHub actions must be provided with two secrets, `MAIN_USER` and `MAIN_PASSWORD`, to be able to connect and push to Cloud Manager's git repository.
 
 ```java
 name: SYNC
@@ -116,11 +116,11 @@ jobs:
           git -C ${MAIN_BRANCH} push
 ```
 
-Using a GitHub action is very flexible. Any mapping between branches of the git repositories can be performed and any mapping of the separate git projects into the directory layout of the main project.
+Using a GitHub action is flexible. Any mapping between branches of the git repositories can be performed and any mapping of the separate git projects into the directory layout of the main project.
 
 >[!NOTE]
 >
->The sample script uses `git add` to update the repository. This assumes that removals are included. Depending on the default configuration of git, this may need to be replaced with `git add --all`.
+>The sample script uses `git add` to update the repository. This assumes that removals are included. Depending on the default configuration of git, this must be replaced with `git add --all`.
 
 ## Sample Jenkins Job {#sample-jenkins-job}
 
@@ -129,9 +129,9 @@ This is a sample script that can be used in a Jenkins job or similar and has the
 1. It gets triggered by a change in a git repository.
 1. The Jenkins job checks out the latest state of that project or branch.
 1. The job then triggers this script.
-1. This script in turn checks out Cloud Manager's git repository and commits the project code to a sub directory.
+1. This script in turn checks out Cloud Manager's git repository and commits the project code to a subdirectory.
 
-The Jenkins job needs to be provided with two secrets, `MAIN_USER` and `MAIN_PASSWORD`, to be able to connect and push to Cloud Manager's git repository.
+The Jenkins job must be provided with two secrets, `MAIN_USER` and `MAIN_PASSWORD`, to be able to connect and push to Cloud Manager's git repository.
 
 ```java
 # Username/email used to commit to Cloud Manager's Git repository
@@ -185,8 +185,8 @@ git commit -F ../commit.txt
 git push
 ```
 
-Using a Jenkins job is very flexible. Any mapping between branches of the git repositories can be performed and any mapping of the separate git projects into the directory layout of the main project.
+Using a Jenkins job is flexible. Any mapping between branches of the git repositories can be performed and any mapping of the separate git projects into the directory layout of the main project.
 
 >[!NOTE]
 >
->The sample script uses `git add` to update the repository. This assumes that removals are included. Depending on the default configuration of git, this may need to be replaced with `git add --all`.
+>The sample script uses `git add` to update the repository. This assumes that removals are included. Depending on the default configuration of git, this must be replaced with `git add --all`.

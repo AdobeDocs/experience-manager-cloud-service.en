@@ -128,7 +128,7 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 
    ![crop](assets/crop.png)
 
-1. Select **[!UICONTROL Save]**. The newly created profile appears in the list of available profiles.
+1. Select **[!UICONTROL Save]**. The created profile appears in the list of available profiles.
 
 ## Edit or delete Dynamic Media Image Profiles {#editing-or-deleting-image-profiles}
 
@@ -172,7 +172,7 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 #### Apply Dynamic Media Image Profiles to folders from Properties {#applying-image-profiles-to-folders-from-properties}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Assets]**.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Assets]**.
 1. Navigate to a *folder* (not an asset) to which you want to apply an image profile.
 1. Depending on the view you are in, do one of the following:
    * In Card View, hover the pointer on the folder, then select the check mark to select it.

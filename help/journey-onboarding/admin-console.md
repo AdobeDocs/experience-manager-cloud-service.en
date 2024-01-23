@@ -5,7 +5,7 @@ exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 ---
 # Accessing the Admin Console {#accessing-admin-console}
 
-In this part of the [onboarding journey,](overview.md) you will learn about the preparation necessary before you can log into the system for the first time.
+In this part of the [onboarding journey,](overview.md) you learn about the preparation necessary before you can log into the system for the first time.
 
 ## Objective {#objective}
 
@@ -20,11 +20,11 @@ As a system administrator you are responsible for managing users within your org
 
 ## The Admin Console {#admin-console}
 
-The Adobe Admin Console is a central place to administer and manage your Adobe product licenses and users. The Admin Console allows you to create and manage users in a single location instead of within your various individual solutions.
+The Adobe Admin Console is a central place to administer and manage your Adobe product licenses and users. The Admin Console lets you create and manage users in a single location instead of within your various individual solutions.
 
 ## Adobe ID {#adobe-id}
 
-To sign into the Admin Console, you will need an Adobe ID. And Adobe ID is an account tied to a specific email address that is required to login and access AEM as a Cloud Service or any of your Adobe solutions. By using your Adobe ID you keep all your Adobe plans and products associated with a single account.
+To sign into the Admin Console, you need an Adobe ID. And Adobe ID is an account tied to a specific email address that is required to login and access AEM as a Cloud Service or any of your Adobe solutions. By using your Adobe ID you keep all your Adobe plans and products associated with a single account.
 
 When you, as system administrator, set up your team in the Admin Console, you specify the email address that is used as the Adobe ID.
 
@@ -34,7 +34,7 @@ There are three types of Adobe IDs:
 
 * **Enterprise ID**: Organizations usually want to increase control of the users accounts. Only system administrators can create enterprise IDs and the organization owns these accounts with Adobe serving only as the host.
 
-* **Federated ID**: With federated IDs the organization takes full ownership and control of the accounts. To do this your organization needs to integrate the Adobe Experience Cloud with your SAML2 single sign-on (SSO) system. This allows users to authenticate against their organization's SSO system rather than an account hosted by Adobe.
+* **Federated ID**: With federated IDs the organization takes full ownership and control of the accounts. To do this your organization must integrate the Adobe Experience Cloud with your SAML2 single sign-on (SSO) system. This allows users to authenticate against their organization's SSO system rather than an account hosted by Adobe.
 
 As system administrator, you may decide to onboard yourself and your team onto AEM as a Cloud Service using personal IDs before enterprise or federated IDs are set up. Once enterprise or federated IDs are set up, members can be transitioned to using those IDs.
 
@@ -44,11 +44,11 @@ Before you can use the Admin Console to administer users within your team, you n
 
 1. As a system administrator, you will receive multiple emails from Adobe as part of the onboarding process. Look for the welcome email that provides the information about the organization name to which you have been granted access.
 
-1. Click on the **Get started** link in your welcome email to navigate to Admin Console. If you can not find the email, open a browser directly to Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. Click the **Get started** link in your welcome email to navigate to Admin Console. If you cannot find the email, open a browser directly to Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
    ![Welcome email](/help/journey-onboarding/assets/get-started-email.png)
 
-1. Login using your Adobe ID. Upon successful login, you will see the **Overview** page of the Adobe Admin Console. 
+1. Login using your Adobe ID. Upon successful login, you see the **Overview** page of the Adobe Admin Console. 
 
    ![The Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
@@ -60,7 +60,7 @@ Before you can use the Admin Console to administer users within your team, you n
 
     ![Review administrators](/help/journey-onboarding/assets/get-started2.png)
 
-1. Once you click on **Administrators** from the **Users** card, you can search by entering your Adobe ID email, username, first, or last name.
+1. After you click **Administrators** from the **Users** card, you can search by entering your Adobe ID email, username, first, or last name.
 
    ![Search users](/help/journey-onboarding/assets/get-started3.png)
 
@@ -76,7 +76,7 @@ AEM as a Cloud Service comes pre-configured with Adobe Identity Management Syste
 
 By using IMS, AEM as a Cloud Service consolidates the login experience between AEM and the rest of the Adobe Experience Cloud. Organizations with multiple Adobe products especially benefit by creating role-based groups in the Admin Console and then assigning access to multiple products including AEM as a Cloud Service via IMS.
 
-You will learn more about product profiles and assigning users in the next part of this onboarding journey.
+You learn more about product profiles and assigning users in the next part of this onboarding journey.
 
 ## Contacting Adobe Support {#support}
 
@@ -84,7 +84,7 @@ If you have any issues, Adobe support can be accessed via the Admin Console. The
 
 ![Support tab](/help/journey-onboarding/assets/support-menu.png)
 
-The tab allows you to create and manage cases, chat directly with Adobe customer support representatives, and schedule sessions with experts. System administrators and support administrators must sign in to access support cases and expert session options.
+The tab lets you create and manage cases, chat directly with Adobe customer support representatives, and schedule sessions with experts. System administrators and support administrators must sign in to access support cases and expert session options.
 
 ## What's Next {#whats-next}
 

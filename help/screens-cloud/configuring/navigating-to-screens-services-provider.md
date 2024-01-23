@@ -33,6 +33,9 @@ Follow the steps below to set up Screens Services Provider:
    * **Publish Url** - AEM publish URL (for example, `https://publish-p12345-e12345.adobeaemcloud.com`)
    * **Author Url** - AEM author URL (for example, `https://author-p12345-e12345.adobeaemcloud.com`)
    
+   >[!NOTE]
+   >Ensure you create and publish at least one AEM Screen Channel before configuring the AEM under Screens Service Provider. To create a channel, navigate to /screens.html on your content provider.
+   
     ![image](/help/screens-cloud/assets/configure/configure-screens4.png)
 
 4.  Click **Save** to connect to Screens content provider
@@ -41,10 +44,10 @@ Follow the steps below to set up Screens Services Provider:
 
    ![image](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-6. Screens Content Provider opens in another tab that allows you to create your content.
+6. Screens Content Provider opens in another tab that lets you create your content.
 
    ![image](/help/screens-cloud/assets/configure/configure-screens2.png)
 
 ## What's Next {#whats-next}
 
-After you have learned how to set up Screens Services Provider, navigate to [Using Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end#screens-content-provider) for more details.
+After you have learned how to set up Screens Services Provider, navigate to [Using Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) for more details.
