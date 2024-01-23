@@ -52,3 +52,7 @@ SLA reporting gives you insight into the performance of your AEM production envi
 
 * The reported SLA will be the one which existed at the start of the month, even if SLA changed during that month.
 * If there was no SLA at the start of the month because the program did not exist then, the SLA that existed at the date the program was created applies. 
+
+## Preview Environments {#preview}
+
+The preview environment is intended as a tool for content authors to verify the content's final experience before publishing. Because of this, preview environments are not designed with high-availability and do not have an associated SLA.
