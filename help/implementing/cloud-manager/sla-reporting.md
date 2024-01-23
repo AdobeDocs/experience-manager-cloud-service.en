@@ -45,3 +45,10 @@ The **Event Analysis** section under the graph shows the set of incidents which 
 Each of the incidents has a time range, a cause, and a set of comments.
 
 ![Event Analysis example](assets/sla-reporting-c.png)
+
+## Refresh Interval {#refresh}
+
+SLA reporting gives you insight into the performance of your AEM production environment and is up-to-date, but not instantaneous. SLA report generation happens monthly and it is generated for new programs that are marked as Production previous month. It is not instant. Because of this delay, please keep the following in mind as you review your SLA report:
+
+* The reported SLA will be the one which existed at the start of the month, even if SLA changed during that month.
+* If there was no SLA at the start of the month because the program did not exist then, the SLA that existed at the date the program was created applies. 
