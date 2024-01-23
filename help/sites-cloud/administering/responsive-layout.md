@@ -41,7 +41,7 @@ The [Project Archetype](https://experienceleague.adobe.com/docs/experience-manag
 
 ### Configure Breakpoints {#configure-breakpoints}
 
-Breakpoints are vital to responsive design and define how and when content is adjusted to the target device.
+Breakpoints are vital to responsive design and define how and when content is adjusted to the target device. However, be cautious since each breakpoint you introduce will generate additional work for your authors to accommodate the content. Many times, two breakpoints can be sufficient, including the default breakpoint which is always there. Adobe recommends not to create more than three breakpoints including the default, i.e. not  more than two nodes below `cq:responsive/breakpoint`.
 
 * Breakpoints have a title and a width:
   * The title describes the generic device grouping, with orientation if necessary.
