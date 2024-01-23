@@ -29,7 +29,7 @@ With these responsive grid mechanisms you can:
 
 >[!NOTE]
 >
->In an out-of-the-box installation, responsive layout has been configured for the [WKND reference site.](/help/implementing/developing/introduction/develop-wknd-tutorial.md) You must still [activate the Layout Container component](#enable-the-layout-container-component-for-page) for other pages.
+>When creating a site from the [Project Archetype](#addlink) or from the [Standard Site Template](#addlink), the responsive layout is generally configured. Otherwise, you must [activate the Layout Container component](#enable-the-layout-container-component-for-page) for your pages.
 
 ## Enabling the Emulator {#enabling-emulator}
 
