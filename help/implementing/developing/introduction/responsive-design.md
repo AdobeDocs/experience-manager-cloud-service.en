@@ -91,7 +91,7 @@ The JSP script generates the following HTML code that references the style sheet
 
 ## Previewing for Specific Devices {#previewing-for-specific-devices}
 
-The emulator allows you to see previews of your pages in different viewport sizes so you can test the behavior of your responsive design. When editing a page in the Sites Console, you can tap or click the **Emulator** icon to reveal the emulator.
+The emulator allows you to preview your pages in different viewport sizes so you can test the behavior of your responsive design. When editing a page in the Sites Console, you can tap or click the **Emulator** icon to reveal the emulator.
 
 ![The emulator icon in the toolbar](assets/emulator-icon.png)
 
