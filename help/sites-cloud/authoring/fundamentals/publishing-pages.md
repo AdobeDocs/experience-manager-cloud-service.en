@@ -46,6 +46,14 @@ Depending on your location, you can publish:
 
 >[!NOTE]
 >
+>If you want to preserve page order you have to use [Manage Publication](#manage-publication) to publish the parent page together with any child pages - in a single action.
+>
+>Page order is not guaranteed:
+>* if only child pages are selected for publication (as the order information is held on the parent page)
+>* if the parent and child pages are published in separate actions 
+
+>[!NOTE]
+>
 > For additional possibilities see **On Time** and **Off Time** in the [Basic tab of Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### Publishing from the Editor {#publishing-from-the-editor}
@@ -60,7 +68,7 @@ If you are editing a page, it can be published directly from the editor.
 
    * The page is published directly if there are no references to be published.
    * If the page has references that need publishing, these are listed in the **Publish** wizard, where you can either:
-     * Specify which of the assets/tags/etc. you want to publish together with the page, then use **Publish** to complete the process.
+     * Specify which of the assets, or tags, and so on, that you want to publish together with the page, then use **Publish** to complete the process.
      * Use **Cancel** to abort the action.
 
    ![Publishing references with the page](/help/sites-cloud/authoring/assets/publishing-references.png)
@@ -79,7 +87,7 @@ If you are editing a page, it can be published directly from the editor.
 
 >[!NOTE]
 >
->Pages accessed by [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) in the editor can not be published. Publish options in the editor are only available for pages accessed via their actual paths.
+>Pages accessed by [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) in the editor cannot be published. Publish options in the editor are only available for pages accessed via their actual paths.
 
 ### Publishing from the Console {#publishing-from-the-console}
 
@@ -94,7 +102,7 @@ In the sites console there are two options for publishing:
 
 To publish a page with Quick Publish:
 
-1. Select the page or pages in the sites console and click on the **Quick Publish** button.
+1. Select the page or pages in the sites console and click the **Quick Publish** button.
 
    ![Selecting pages for publication](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -112,13 +120,21 @@ To publish a page with Quick Publish:
 
 **Manage Publication** offers more options than **Quick Publish**, allowing for the inclusion of child pages, customization of the references, and starting any applicable workflows and offering the option to publish at a later date.
 
+>[!NOTE]
+>
+>If you want to preserve page order you have to use **Manage Publication** to publish the parent page together with any child pages in a single action.
+>
+>Page order is not guaranteed:
+>* if only child pages are selected for publication (as the order information is held on the parent page)
+>* if the parent and child pages are published in separate actions 
+
 To publish or unpublish a page using Manage Publication:
 
-1. Select the page or pages in the sites console and click on the **Manage Publication** button.
+1. Select the page or pages in the sites console and click the **Manage Publication** button.
 
    ![Selecting pages for publication](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. The **Manage Publication** wizard starts. The first step, **Options**, allows you to:
+1. The **Manage Publication** wizard starts. The first step, **Options**, lets you:
 
    * **Action**
 
@@ -218,17 +234,17 @@ In a [manner similar to publishing](#publishing-pages), one or more pages can be
 
 ### Unpublishing from the Editor {#unpublishing-from-the-editor}
 
-When editing a page, if you wish to unpublish that page, select **Unpublish Page** in the **Page Information** menu, much as you would [publish the page](#publishing-from-the-editor).
+When editing a page, if you want to unpublish that page, select **Unpublish Page** in the **Page Information** menu, much as you would [publish the page](#publishing-from-the-editor).
 
 >[!NOTE]
 >
->Pages accessed by [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) in the editor can not be unpublished. Publish options in the editor are only available for pages accessed via their actual paths.
+>Pages accessed by [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) in the editor cannot be unpublished. Publish options in the editor are only available for pages accessed via their actual paths.
 
 ### Unpublishing from the Console {#unpublishing-from-the-console}
 
 Just as you [use the Manage Publication option to publish](#manage-publication), you can also use it to unpublish.
 
-1. Select the page or pages in the sites console and click on the **Manage Publication** button.
+1. Select the page or pages in the sites console and click the **Manage Publication** button.
 1. The **Manage Publication** wizard starts. In the first step, **Options**, select to **Unpublish** instead of the default option of **Publish**.
 
    ![Unpublishing - Options](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
@@ -252,7 +268,7 @@ When you have entered or updated a considerable number of content pages - all of
 
 You can use the [Manage Publication](#manage-publication) option on the sites console to do this.
 
-1. In the sites console, select the root page of the tree you wish to publish or unpublish and select **Manage Publication**.
+1. In the sites console, select the root page of the tree you want to publish or unpublish and select **Manage Publication**.
 1. The **Manage Publication** wizard starts. Choose to publish or unpublish and when it should occur and select **Next** to continue.
 1. In the **Scope** step, select the root page and select **Include Children**.
 

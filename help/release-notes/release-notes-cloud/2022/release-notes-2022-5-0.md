@@ -31,7 +31,7 @@ Have a look at the May 2022 Release Overview video for a summary of the features
 ### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
 
 * Various GraphQL functionalities
-* A [new console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) optimized for Headless use of Content Fragments
+* A [new console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) optimized for Headless use of Content Fragments
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -62,9 +62,9 @@ Experience Manager Assets uses Adobe Sensei AI capabilities to now [distinguish 
 
 * Quick access to product cockpit: Easily access full detailed product information with one-click in Sites Editor
 
-    ![Enable wishlist](/help/assets/CIF/enable-wishlist.png)
+<!-- Image was not found during PR validation despite correct path   ![Enable wantlist](/help/assets/CIF/enable-wishlist.png) -->
 
-* Support for additional marketing commerce components:  Components can be configured to show an add-to-cart and add-to-wishlist call-to-action
+* Support for additional marketing commerce components:  Components can be configured to show an add-to-cart and add-to-wantlist call-to-action
 
     ![Sites editor shortcut to product cockpit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 

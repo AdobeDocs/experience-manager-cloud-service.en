@@ -39,7 +39,7 @@ Have a look at the August 2022 Release Overview video for a summary of the featu
 
 ### New features available in [!DNL Sites] prerelease channel {#prerelease-features-sites}
 
-* The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) provides users with an option to display the total number of language copies associated with a content fragment. A 1-click access has been provided to view all the language copies as well. Users are also able to filter the table view by the locale of their interest. 
+* The [Content Fragment Console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) provides users with an option to display the total number of language copies associated with a content fragment. A 1-click access has been provided to view all the language copies as well. Users are also able to filter the table view by the locale of their interest. 
 
 ![Content Fragments Languages](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -57,11 +57,11 @@ Have a look at the August 2022 Release Overview video for a summary of the featu
 
 * [Adaptive Forms wizard](/help/forms/creating-adaptive-form.md): AEM Forms provides business user friendly wizard to quickly author Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an adaptive form. This release brings following improvements to the wizard:
 
-  * Select or deselect fields: The wizard allows you to create an Adaptive Form based on JSON and Form Data Model schemas. You can now select subset of fields within a schema to include in an Adaptive Form. The selected fields are converted to corresponding Adaptive Form data capture components to quickly create the desired adaptive forms.
+  * Select or deselect fields: The wizard lets you create an Adaptive Form based on JSON and Form Data Model schemas. You can now select subset of fields within a schema to include in an Adaptive Form. The selected fields are converted to corresponding Adaptive Form data capture components to quickly create the desired adaptive forms.
 
   * Use Static Templates: Customers with existing investments in legacy static templates can continue their journey of cloud adoption by using static templates in wizard to author adaptive forms. This provides additional time to customers to migrate old static templates to modern editable templates.
 
-* [Remove hidden fields from a Document of Record (DoR) while server-side processing](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): You can generate the document of record PDF for end users containing only those fields which were visible to them during data capture experience. Upon form submission, the server validates which fields were hidden to the end user based on submitted data and excludes from document of record for consistency.
+* [Remove hidden fields from a Document of Record (DoR) while server-side processing](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): You can generate the document of record PDF for end users containing only those fields which were visible to them during data capture experience. Upon form submission, the server validates which fields were hidden to the user based on submitted data and excludes from document of record for consistency.
 
 ## CIF Add-on {#cloud-services-cif}
 

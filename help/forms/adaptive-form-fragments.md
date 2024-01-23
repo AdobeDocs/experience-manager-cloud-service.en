@@ -1,21 +1,24 @@
 ---
-title: Adaptive Form Fragments
-seo-title: Adaptive Form Fragments
-description: Adaptive Forms provides a mechanism to create a form segment, such as a panel or a group of fields, as use it in any Adaptive Form. You can also save an existing panel as fragment.
-seo-description: Adaptive Forms provides a mechanism to create a form segment, such as a panel or a group of fields, as use it in any Adaptive Form. You can also save an existing panel as fragment.
+title: How to create and use Adaptive Form Fragments?
+description: Form fragment is a modular and reusable component of a form. Learn to build form fragments and reuse them across forms for efficient form assembly.
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-
+exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
 ---
+# Create and use Adaptive Forms Fragments in an Adaptive Form  {#adaptive-form-fragments}
 
-# Adaptive Form Fragments{#adaptive-form-fragments}
 
-While every form is designed for a specific purpose, there are some common segments in most forms, such as to provide personal details like name and address, family details, income details, and so on. Form developers are required to create these common segments every time a new form is created.
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en)                  |
+| AEM as a Cloud Service     | This article        |
 
-Adaptive Forms provides a convenient mechanism to create form segment like a panel or a group of fields only once and reuse them across Adaptive Forms. These reusable and standalone segments are called Adaptive Form Fragments.
+While every form is designed for a specific purpose, there are some common segments in most forms, such as to provide personal details like name and address, family details, income details, and so on. Form developers are required to create these common segments every time a new form is created. Adaptive Forms provides a convenient mechanism to create form segment like a panel or a group of fields only once and reuse them across Adaptive Forms. These reusable and standalone segments are called Adaptive Form Fragments.
+
 
 ## Create a fragment {#create-a-fragment}
 
@@ -34,6 +37,11 @@ You can create an Adaptive Form Fragment from scratch or save a panel in an exis
 1. Click to open the **Form Model** tab, and from the **Select From** drop-down menu, select one of the following models for the fragment:
 
     * **None**: Specifies to create the fragment from scratch without using any form model.
+
+      >[!NOTE]
+      >
+      > In Adaptive Forms, you can use single form fragment (based on Core Components) multiple times in a form. It supports both none-based and schema-based form fragments.
+
     * **Form Template**: Specifies to create the fragment using an XDP template uploaded to [!DNL AEM Forms]. Select the appropriate XDP template as the form model for the fragment.
 
    ![Creating an Adaptive Form using form template as model](assets/form-template-model.png)
@@ -56,20 +64,21 @@ You can create an Adaptive Form Fragment from scratch or save a panel in an exis
 
 In edit mode, you can drag-and-drop any Adaptive Form component from the AEM sidekick onto the fragment. <!-- For information about Adaptive Form components, see Introduction to authoring Adaptive Forms. -->
 
-In addition, if you selected an XML schema or XDP form template as the form model for your fragment, a new tab displaying the form-model hierarchy appears in the content finder. It allows you to drag-and-drop form-model elements onto the fragment. The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD.
+In addition, if you selected an XML schema or XDP form template as the form model for your fragment, a new tab displaying the form-model hierarchy appears in the content finder. It lets you drag-and-drop form-model elements onto the fragment. The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD.
 
 ### Save panel as a fragment {#save-panel-as-a-fragment}
 
 1. Open an Adaptive Form that contains the panel you want to save as Adaptive Form Fragment.
 1. In the panel toolbar, click **[!UICONTROL Save as Fragment]**. The Save As Fragment dialog opens.
 
-   >[!NOTE]
-   >
-   >If the panel you are saving as fragment contains child panel, the resulting fragment will include them.
+      >[!NOTE]
+      >
+      >If the panel you are saving as fragment contains child panel, the resulting fragment will include them.
 
 1. In the Fragment Creation dialog, specify the following information:
 
     * **Name**: Name of the fragment. The default value is the element name of the panel. It is a mandatory field.
+    
       >[!NOTE]
       >
       >Ensure that you specify a unique name for the fragment. If there already exists another fragment with the same name, the fragment fails to create.  
@@ -84,7 +93,7 @@ In addition, if you selected an XML schema or XDP form template as the form mode
 
     * **Form Model**: Depending on the form model for the Adaptive Form, this field displays the **XML Schema**, **Form Template**, or **None**. It is a non-editable field.
 
-    * **Fragment Model Root**: Appears only in XSD-based Adaptive Forms. It specifies the root for the fragment model. You can choose **/** or the XSD complex type from the drop-down. Note that you can reuse the fragment in another Adaptive Form only if you select the complex type as the fragment model root.
+    * **Fragment Model Root**: Appears only in XSD-based Adaptive Forms. It specifies the root for the fragment model. You can choose **/** or the XSD complex type from the drop-down. You can reuse the fragment in another Adaptive Form only if you select the complex type as the fragment model root.
       If you choose **/** as the fragment model root, the complete XSD tree from the root is visible in the Adaptive Form Data Model tab. For a complex type fragment model root, only the descendants of the selected complex type are visible in the Adaptive Form Data Model tab.
 
     * **XSD Ref**: Appears only in XSD-based Adaptive Forms. It displays the location of the XML schema.
@@ -150,6 +159,16 @@ You can create nested Adaptive Form Fragments, which means you can drag-drop a f
 ### Change fragments {#change-fragments}
 
 You can replace or change an Adaptive Form Fragment by another fragment by using the **Select Fragment asset** property in the Edit component dialog for an Adaptive Form Fragment panel.
+
+### Using a form fragment multiple times in an Adaptive Form {#using-form-fragment-mutiple-times-in-af}
+
+You can use a schema-based form fragment multiple times in an Adaptive Form to save data uniquely for each form fragment fields. For example, you can use an address form fragment to collect address details for permanent, communication, and present living addresses in a loan application form. 
+
+![using multiple fragment in adaptive form](/help/forms/assets/using-multiple-fragment-af.gif)
+
+  >[!NOTE]
+  >
+  > If you use none-based form fragments multiple times in an Adaptive form, data synchronization issue between the fields of the fragments occurs. You can use a [core component based form fragment](/help/forms/adaptive-form-fragments-core-components.md) that is not tied to any form data model, multiple times in a form without experiencing data synchronization issues. 
 
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 
@@ -220,14 +239,14 @@ To localize an Adaptive Form that contains Adaptive Form Fragments, you need to 
 
 >[!NOTE]
 >
->The localization keys in the fragment won’t appear in the XLIFF file for an Adaptive Form.
+>The localization keys in the fragment won't appear in the XLIFF file for an Adaptive Form.
 
 ## Key points to remember when working with fragments {#key-points-to-remember-when-working-with-fragments}
 
 * Ensure that the fragment name is unique. The fragment fails to create if there is an existing fragment with the same name.
 * In an XDP-based Adaptive Form, if you save a panel as fragment that includes another XDP fragment, the resulting fragment is automatically bound to the child XDP fragment. In case of an XSD-based Adaptive Form, the resulting fragment is bound to the schema root.
 * When you create an Adaptive Form Fragment, a fragment node gets created, which is similar to the guideContainer node for an Adaptive Form, in CRXDe Lite.
-* A fragment in an Adaptive Form that uses a different Form Data Model is not supported. For example, an XDP-based fragment is not supported in an XSD-based Adaptive Form and vice-versa.
+* A fragment in an Adaptive Form that uses a different Form Data Model is not supported. For example, an XDP-based fragment is not supported in an XSD-based Adaptive Form and conversely.
 * Adaptive Form Fragments are available for use through the Adaptive Form Fragments tab in AEM content finder.
 * Any expression, script, or style in a stand-alone Adaptive Form Fragment is retained when it is inserted by reference or embedded in an Adaptive Form.
 * You cannot edit an Adaptive Form Fragment, which is inserted by reference, from within an Adaptive Form. To edit, you either edit the stand-alone Adaptive Form Fragment or embed the fragment in the Adaptive Form.
@@ -237,6 +256,12 @@ To localize an Adaptive Form that contains Adaptive Form Fragments, you need to 
 * (**Mac only**) To ensure that the form fragments functionality works perfectly in all the scenarios, add the following entry to the /private/etc/hosts file:
   `127.0.0.1 <Host machine>` **Host machine**: The Apple Mac machine on which [!DNL AEM Forms] is deployed.
 
+<!--
 ## Reference Fragments {#reference-fragments}
 
 Reference Adaptive Form Fragments that you can use to create your form are available. For more information, see [Reference Fragments](reference-adaptive-form-fragments.md).
+-->
+
+>[!MORELIKETHIS]
+>
+>* [Adaptive Form fragments in Core Components](/help/forms/adaptive-form-fragments-core-components.md)

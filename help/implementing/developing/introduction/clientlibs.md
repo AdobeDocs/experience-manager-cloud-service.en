@@ -23,13 +23,13 @@ Clientlibs are the built-in solution for delivering CSS and JavaScript from AEM.
 
 ## What Are Client-Side Libraries {#what-are-clientlibs}
 
-Sites require JavaScript and CSS and static resources such as icons and web fonts to be processed client-side. A clientlib is AEM's mechanism to reference (by category if required) and serving such resources.
+Sites require JavaScript and CSS and static resources such as icons and web fonts to be processed client-side. A clientlib is AEM's mechanism to reference (by category if necessary) and serving such resources.
 
 AEM collects the site's CSS and JavaScript into a single file, in a central location, to ensure that only one copy of any resource is included in the HTML output. This maximizes the efficiency of delivery and allows such resources to be maintained centrally in the repository via proxy, keeping access secure.
 
 ## Front-End Development for AEM as a Cloud Service {#fed-for-aemaacs}
 
-All JavaScript, CSS, and other front-end assets should be maintained in the [ui.frontend module of the AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) The flexibility of the archetype allows you to use your modern web tools of choice to create and manage these resources.
+All JavaScript, CSS, and other front-end assets should be maintained in the [ui.frontend module of the AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) The flexibility of the archetype lets you use your modern web tools of choice to create and manage these resources.
 
 The archetype can then compile the resources into single CSS and JS files, embedding them automatically into a `cq:clientLibraryFolder` in the repository.
 
@@ -58,7 +58,7 @@ If the client library folder contains one or more source files that, at runtime,
 Client library folders contain the following items:
 
 * The JS and/or CSS source files
-* Static resources that support CSS styles, such as icons, web fonts, etc.
+* Static resources that support CSS styles, such as icons, web fonts, and so on.
 * One `js.txt` file and/or one `css.txt` file which identify the source files to merge in the generated JS and/or CSS files
 
 ![Clientlib architecture](assets/clientlib-architecture.drawio.png)
@@ -82,7 +82,7 @@ In order for the client libraries under `/apps` to be accessible, a proxy servel
    * Type: Boolean
    * Value: `true`
 1. If you need to manage static resources, create a subfolder named `resources` below the client library folder.
-   * If you store static resources anywhere other than under the folder `resources`, they can not be referenced on a publish instance.
+   * If you store static resources anywhere other than under the folder `resources`, theycannot be referenced on a publish instance.
 1. Add source files to the library folder.
    * This is typically done by the front-end build process of the [AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)
    * You can organize source files in subfolders if desired.
@@ -106,7 +106,7 @@ Once your client library folder is [configured as required,](#creating-clientlib
 * You have a clientlib in `/apps/myproject/clientlibs/foo`
 * You have a static image in `/apps/myprojects/clientlibs/foo/resources/icon.png`
 
-The `allowProxy` property allows you to request:
+The `allowProxy` property lets you request:
 
 * The clientlib via `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * The static image via `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
@@ -164,7 +164,7 @@ The `dumplibs` component includes a test selector that displays the source code 
 
 ## Additional Client Library Folder Features {#additional-features}
 
-There are a number of other features that are supported by client library folders in AEM. However, these are not required on AEM as a Cloud Service and as such their use is discouraged. They are listed here for completeness.
+There are several other features that are supported by client library folders in AEM. However, these are not required on AEM as a Cloud Service and as such their use is discouraged. They are listed here for completeness.
 
 >[!WARNING]
 >
@@ -333,7 +333,7 @@ languageOut (defaults to "ECMASCRIPT5")
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
-For further details on GCC options, see the [GCC documentation](https://developers.google.com/closure/compiler/docs/compilation_levels).
+For more details on GCC options, see [GCC documentation](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
 #### Set System Default Minifier {#set-system-default-minifier}
 

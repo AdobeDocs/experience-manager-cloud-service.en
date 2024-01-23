@@ -77,7 +77,7 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 * When a selection is made in the Properties page to update metadata, the interface is slow to respond when there are many options provided by the schema. (CQ-4318538)
 
-* While updating and saving metadata value in a single-line text field, the values in the dropdown menu get deleted, even if edits are disabled on the dropdown menu. (CQ-4317077)
+* While updating and saving metadata value in a single-line text field, the values in the drop-down list menu get deleted, even if edits are disabled on the drop-down list menu. (CQ-4317077)
 
 * You can use ellipsis as an annotation to review assets. When a small ellipse is used, the ellipse overlaps with the number of the annotation in the print version. (CQ-4316792)
 
@@ -103,7 +103,7 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 * **Support to use the literal option to set value for a JSON type variable**
 
-  You can use literal option to set value for a JSON type variable in the set variable step of an AEM Workflow. The literal option allows you to specify a JSON in the form of a string.
+  You can use literal option to set value for a JSON type variable in the set variable step of an AEM Workflow. The literal option lets you specify a JSON in the form of a string.
 
 * **Use local development environment to create Document of Record (DoR)**
 

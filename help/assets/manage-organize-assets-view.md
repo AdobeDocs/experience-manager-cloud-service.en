@@ -82,7 +82,7 @@ You can also create versions from the versions timeline. Select the latest versi
 
 **Permissions required:**  `Can Edit`, `Owner`, or administrator permissions on an asset.
 
-Assets view allows you to set status on assets available in the repository. Set an asset status to better govern and manage downstream consumption of digital assets.
+Assets view lets you set status on assets available in the repository. Set an asset status to better govern and manage downstream consumption of digital assets.
 
 You can set the following status on assets:
 
@@ -98,14 +98,14 @@ To set asset status:
 
 1. Select the asset, and click **[!UICONTROL Details]** in the toolbar.
 
-1. In the **[!UICONTROL Basic]** tab, select the asset status from the **[!UICONTROL Status]** dropdown list. The possible values include Approved, Rejected, and No Status (default).
+1. In the **[!UICONTROL Basic]** tab, select the asset status from the **[!UICONTROL Status]** drop-down list. The possible values include Approved, Rejected, and No Status (default).
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
 
 ### Set asset expiration date {#set-asset-expiration-date}
 
-Assets view also allows you to set expiration date on assets available in the repository. You can then [filter the search results](search-assets-view.md#refine-search-results) based on an `Expired` asset status. In addition, you can specify an expiration date range for assets to further filter your search results.
+Assets view also lets you set expiration date on assets available in the repository. You can then [filter the search results](search-assets-view.md#refine-search-results) based on an `Expired` asset status. In addition, you can specify an expiration date range for assets to further filter your search results.
 
 To set asset expiration date:
 

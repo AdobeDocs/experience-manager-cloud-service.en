@@ -89,7 +89,7 @@ You can provide some, all, or none of these three icons to your authors in the R
 
 To configure RTE to display the required icons, follow these steps.
 
-1. Navigate to your component, say for example `/apps/<myProject>/components/text`.
+1. Navigate to your component, say for example, `/apps/<myProject>/components/text`.
 1. Navigate to the node `rtePlugins/edit`. See [activate a plug-in](#activateplugin) if the node does not exist.
 1. Create the `features` property on the `edit` node and add one or more of the features. Save all changes.
 
@@ -222,12 +222,12 @@ This is done by enabling the styles plug-in.
 
 Then, specify the location(s) of the style sheet(s) you want to reference:
 
-1. Navigate to the root node of your text component, for example `/apps/<myProject>/components/text`.
+1. Navigate to the root node of your text component, for example, `/apps/<myProject>/components/text`.
 1. Add the property `externalStyleSheets` to the parent node of `<rtePlugins-node>`:
 
     * **Name** `externalStyleSheets`
     * **Type** `String[]` (multi-string; click **Multi** in CRXDE)
-    * **Value(s)** The path and filename of every style sheet you want to include. Use repository paths.
+    * **Values** The path and filename of every style sheet you want to include. Use repository paths.
 
    >[!NOTE]
    >
@@ -323,7 +323,7 @@ Any text authored in RTE is placed within a block tag, the default being `<p>`. 
 
 >[!NOTE]
 >
->If a block tag, for example an `<hr>` tag, can't be assigned to a paragraph, it is not a valid use case for a `paraformat` plug-in.
+>If a block tag, for example, an `<hr>` tag, can't be assigned to a paragraph, it is not a valid use case for a `paraformat` plug-in.
 
 When the Paragraph Formats plug-in is enabled for the first time, no default Paragraph Formats are available. The pop-up list is empty. To provide the authors with paragraph formats, do the following:
 
@@ -349,7 +349,7 @@ To enable the `paraformat` plug-in, follow these steps:
 
 >[!CAUTION]
 >
->When configuring the paragraph formats of the RTE, do not remove the paragraph tag &lt;p&gt; as a formatting option. If the `<p>` tag is removed, then the content author can not select the [!UICONTROL Paragraph formats] option even if there are additional formats configured.
+>When configuring the paragraph formats of the RTE, do not remove the paragraph tag &lt;p&gt; as a formatting option. If the `<p>` tag is removed, then the content authorcannot select the [!UICONTROL Paragraph formats] option even if there are additional formats configured.
 
 ### Specify the available Paragraph Formats {#paraformatsindropdown}
 
@@ -370,7 +370,7 @@ Paragraph formats are made available for selection by:
 
     * **Name** `tag`
     * **Type** `String`
-    * **Value** The block tag for the format; for example: p, h1, h2, etc.
+    * **Value** The block tag for the format; for example: p, h1, h2, and so on.
 
       You do not need to enter the delimiting angle-brackets.
 
@@ -396,7 +396,7 @@ You can configure the RTE to make your selection of characters available; either
 
 >[!CAUTION]
 >
->Adding your special characters overrides the default selection. If required, redefine these characters in your selection.
+>Adding your special characters overrides the default selection. If necessary, redefine these characters in your selection.
 
 ### Define a single character {#definesinglechar}
 
@@ -564,7 +564,7 @@ A standard Experience Manager installation includes the dictionaries for:
 >
 >The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, along with the appropriate ReadMe files. Do not modify the files.
 
-To add more dictionaries, if required, follow these steps.
+To add more dictionaries, if necessary, follow these steps.
 
 1. Navigate to the page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 1. Select the required language and download the ZIP file with the spelling definitions. Extract the contents of the archive on your file system.
@@ -580,9 +580,9 @@ To add more dictionaries, if required, follow these steps.
 >
 >The RTE spell checker is available on-demand. It does not run automatically as you start typing text.
 >
->To run the spell checker, tap/click the Spellchecker button from the toolbar. RTE checks the spelling of words and highlights mis-spelled words.
+>To run the spell checker, select the Spellchecker button from the toolbar. RTE checks the spelling of words and highlights mis-spelled words.
 >
->If you incorporate any change that the spell checker suggests, the state of the text changes and mis-spelled words are no longer highlighted. To run the spell checker, tap/click Spellchecker button again.
+>If you incorporate any change that the spell checker suggests, the state of the text changes and mis-spelled words are no longer highlighted. To run the spell checker, select Spellchecker button again.
 
 ## Configure the history size for undo and redo actions {#undohistory}
 

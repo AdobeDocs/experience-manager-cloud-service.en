@@ -1,12 +1,8 @@
 ---
-title: Changing Page Zero content in Designer
-seo-title: Changing Page Zero content in Designer
-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
-seo-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
-uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
+title: How to change Page Zero content in Designer?
+description: Change the message displayed on Page Zero of an XFA PDF for non-Adobe PDF viewers.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
 
 ---
@@ -17,7 +13,7 @@ Page Zero content is displayed by default when a non-Adobe PDF viewer, such as t
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-[!DNL AEM Forms] version of Designer allows you to change the message that is displayed on Page Zero. To change the Page Zero message, perform the following steps:
+[!DNL AEM Forms] version of Designer lets you change the message that is displayed on Page Zero. To change the Page Zero message, perform the following steps:
 
 1. Ensure that you have the [!DNL AEM Forms] version of Designer installed. You can check the version from the About screen of designer.
 
@@ -41,4 +37,9 @@ Page Zero content is displayed by default when a non-Adobe PDF viewer, such as t
 
 >[!NOTE]
 >
->The custom property you just created may not appear properly in the Form Properties dialog when you reopen the form. However, it works fine and the form displays the updated Page Zero message.
+>The custom property you created may not appear properly in the Form Properties dialog when you reopen the form. However, it works fine and the form displays the updated Page Zero message.
+
+>[!MORELIKETHIS]
+>
+>* [Download and install Forms Designer to create Document of Record templates](/help/forms/installing-configuring-designer.md)
+>* [Use Forms Designer to create Document of Record (DoR) templates and form fragments?](/help/forms/use-forms-designer.md)

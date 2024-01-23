@@ -1,11 +1,11 @@
 ---
 title: How to Configure a Redirect Page or Thank you message?
 description: Learn how users can be displayed a thank you message or redirected to a webpage that form authors can configure while creating the form.
-feature: Adaptive Forms
+feature: Adaptive Forms, Core Components
 role: User
 level: Intermediate
+exl-id: 27decf88-a2ab-4b52-b6ae-babb1d3abdaa
 ---
-
 # Configuring redirect page {#configuring-redirect-page}
 
 On submission of a [Core Components based Adaptive Form](creating-adaptive-form-core-components.md), you can redirect the user to another webpage or show a message. To configure the redirect page or thank you message: 
@@ -26,3 +26,11 @@ Form authors can configure a page for each form, to which the form users are red
 **Related**
 
 * [Configuring redirect page (Foundation Forms)](configuring-redirect-page.md)
+
+>[!MORELIKETHIS]
+>
+>* [Configure a Redirect Page](/help/forms/configuring-redirect-page.md)
+
+## See Also {#see-also}
+
+{{see-also}}

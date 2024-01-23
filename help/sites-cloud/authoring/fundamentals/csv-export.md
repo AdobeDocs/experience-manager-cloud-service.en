@@ -15,7 +15,7 @@ exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 >
 >The download feature and default destination of your browser is used.
 
-The **Create CSV Export** wizard allows you to select:
+The **Create CSV Export** wizard lets you select:
 
 * Properties to export
   * Metadata
@@ -40,7 +40,7 @@ The resulting `export.csv` file can be opened in Excel or any other compatible a
 
 To create a CSV export:
 
-1. Open the **Sites** console, navigate to the required location if required.
+1. Open the **Sites** console, navigate to the required location if necessary.
    * The create **CSV Report** option is available when browsing the **Sites** console (in List view)
    * It is an option of the **Create** drop-down menu:
 

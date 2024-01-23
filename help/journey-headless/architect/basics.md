@@ -61,7 +61,7 @@ Within a model:
 1. **Data Types** allow you to define the individual attributes.
    For example, define the field holding a teacher's name as **Text** and their years of service as **Number**.
 1. The data types **Content Reference** and **Fragment Reference** allow you to create relationships to other content within AEM.
-1. The **Fragment Reference** data type allows you to realize multiple levels of structure by nesting your Content Fragments (according to the model type). This is vital for your content modeling.
+1. The **Fragment Reference** data type lets you realize multiple levels of structure by nesting your Content Fragments (according to the model type). This is vital for your content modeling.
 
 For example:
 
@@ -103,11 +103,11 @@ Two data types provide references to content outside a specific fragment:
 
 >[!NOTE]
 >
->You can also create ad hoc references by using links within Text blocks.
+>You can also create improvised references by using links within Text blocks.
 
 ## Levels of Structure (Nested Fragments) {#levels-of-structure-nested-fragments}
 
-For content modeling the **Fragment Reference** data type allows you to create multiple levels of structure and relationships.
+For content modeling the **Fragment Reference** data type lets you create multiple levels of structure and relationships.
 
 With this reference you can *connect* various Content Fragment Models to represent interrelationships. This allows the headless application to follow the connections and access the content as necessary.
 
@@ -124,7 +124,7 @@ For example, you might have the following Content Fragment Models defined:
 * Person
 * Awards
 
-Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
+Seems pretty straightforward, but a Company has both a CEO and Employees....and these are all people, each defined as a Person.
 
 And a Person can have an Award (or maybe two).
 
@@ -143,12 +143,12 @@ Now that you have learned the basics, the next step is to [Learn about Creating 
 
 ## Additional Resources {#additional-resources}
 
-* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-  * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+  * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
 * [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
 
 * [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for authoring **Content Fragments** under the **Assets** console.
 
-* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)

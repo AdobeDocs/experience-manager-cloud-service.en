@@ -27,8 +27,8 @@ You can create a ContextHub segment either in the Audiences console or during th
 
 To create a ContextHub segment in the Audiences console:
 
-1. In the Navigation console, click or tap **Personalization**. Click or tap **Audiences**.
-1. Tap or click **Create ContextHub Segment**.
+1. In the Navigation console, select **Personalization**. Select **Audiences**.
+1. Select **Create ContextHub Segment**.
 
    ![Creating a segment](/help/sites-cloud/authoring/assets/audiences-create-segment.png)
 
@@ -36,7 +36,7 @@ To create a ContextHub segment in the Audiences console:
 
    >[!NOTE]
    >
-   >You can sort the modified list by tapping or clicking **Modified** to sort by descending order to see any newly created audiences.
+   >You can sort the modified list by tapping or clicking **Modified** to sort by descending order to see any created audiences.
 
 For further detail about creating segments using ContextHub, see the Configuring Segmentation with ContextHub documentation. <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 
@@ -54,20 +54,20 @@ When you use more than one rule, these rules are combined by the Boolean operato
 
 To create an Adobe Target audience:
 
-1. In the Navigation console, click or tap **Personalization**. Click or tap **Audiences**.
+1. In the Navigation console, select **Personalization**. Select **Audiences**.
 
    ![Navigating to audiences](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. In the Audiences console, tap or click **Create** and then **Create Target Audience**.
+1. In the Audiences console, select **Create** and then **Create Target Audience**.
 
    ![Creating a Target audience](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
-1. In the **Adobe Target Configuration** dialog box, select the target configuration and tap or click **OK**.
-1. In the Rule#1 area, tap or click the attribute type and enter any attribute information in the fields that are available. When finished, select the check mark to the right of the attribute to save it. See [Attributes and their options](#attributes-and-their-options) for information on all the attributes.
+1. In the **Adobe Target Configuration** dialog box, select the target configuration and select **OK**.
+1. In the Rule#1 area, select the attribute type and enter any attribute information in the fields that are available. When finished, select the check mark to the right of the attribute to save it. See [Attributes and their options](#attributes-and-their-options) for information on all the attributes.
 1. Click **Add Rule** to add another rule. Enter as many rules as needed. Rules are combined with the boolean operator AND, which means that the audience must meet all the requirements of each rule to be eligible for an activity.
-1. Tap or click **Next**.
-1. Enter a name for the audience and tap or click **Save**.
-1. Tap or click **Save**. Your audience is listed in the Audience list.
+1. Select **Next**.
+1. Enter a name for the audience and select **Save**.
+1. Select **Save**. Your audience is listed in the Audience list.
 
 ### Attributes and their Options {#attributes-and-their-options}
 
@@ -91,6 +91,6 @@ You can create targeting rules for each of the following attributes:
 
 You can edit any ContextHub audience from the Audiences console. You can also edit Adobe Target audiences, but only those that were created in AEM:
 
-1. In the Navigation console, click or tap **Personalization**. Click or tap **Audiences**.
-1. Tap or click the icon next to the ContextHub segment you want to edit, and tap or click **Edit**.
+1. In the Navigation console, select **Personalization**. Select **Audiences**.
+1. Select the icon next to the ContextHub segment you want to edit, and select **Edit**.
 1. Make any edits in the segment editor. See the ContextHub documentation for more information. <!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->

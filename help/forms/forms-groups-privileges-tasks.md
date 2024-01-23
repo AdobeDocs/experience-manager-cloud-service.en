@@ -1,6 +1,8 @@
 ---
-title: In-built [!DNL AEM Forms] as a Cloud Service  Groups 
-description: List of out of the box user groups and permissions assigned to each group 
+title: What user groups are available out of the box in AEM Forms as a Cloud Service?
+description: List of out of the box user groups and permissions assigned to each group
+role: Admin, Developer, User
+feature: Adaptive Forms
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 ---
 # Groups and permissions {#aem-forms-on-osgi-groups-and-privileges}
@@ -108,5 +110,10 @@ Once you setup [!DNL AEM Forms] as a Cloud Service, the groups listed in the bel
 * [Create a standalone Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
 * [Add an Adaptive Form to AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
+<!--
 
+>[!MORELIKETHIS]
+>
+>* [Use AEM Forms workflow for business process automation](/help/forms/aem-forms-workflow.md)
 
+-->

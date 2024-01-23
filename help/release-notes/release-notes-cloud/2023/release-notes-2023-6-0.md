@@ -1,8 +1,8 @@
 ---
 title: Release Notes for 2023.6.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2023.6.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
 ---
-
 # 2023.6.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 The following section outlines the feature release notes for the 2023.6.0 version of [!DNL Experience Manager] as a Cloud Service.
@@ -31,12 +31,12 @@ Have a look at the June 2023 Release Overview video for a summary of the feature
 
 ### New features in [!DNL Experience Manager Sites] {#sites-features}
 
-* Content Fragments and their references can now be published to the [AEM Preview Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) using the [Content Fragment Console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md), allowing users to preview the final experience on a decoupled preview application before going live.
+* Content Fragments and their references can now be published to the [AEM Preview Service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) using the [Content Fragment Console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console), allowing users to preview the final experience on a decoupled preview application before going live.
 
 ![Preview in Content Fragment Console](/help/assets/content-fragments-console-preview.png)
 
-* Images can now be dynamically optimized for web-delivery in headless scenarios using AEM GraphQL. [Query variables](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) can be defined in GraphQL queries to allow decoupled client applications request accordingly optimized images from AEM. 
-* Tags on [Content Fragment Variations](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) can now be output to JSON using the AEM GraphQL conent delivery API. 
+* Images can now be dynamically optimized for web-delivery in headless scenarios using AEM GraphQL. [Query variables](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables) can be defined in GraphQL queries to allow decoupled client applications request accordingly optimized images from AEM. 
+* Tags on [Content Fragment Variations](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html) can now be output to JSON using the AEM GraphQL conent delivery API. 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -68,7 +68,7 @@ A new improved user experience for [creating link shares](/help/assets/share-ass
 
 **Dynamic Media: Updated Smart Crop-related fields in Image profile**  
 
-The user interface for some Smart Crop-related fields in an Image Profile are now updated to reflect the current guidelines for defining a Smart Crop. See [Crop options](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options).
+The user interface for some Smart Crop-related fields in an Image Profile are now updated to reflect the current guidelines for defining a Smart Crop. See [Crop options](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
 
 ### New features in Assets view {#assets-view-features}
 

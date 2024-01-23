@@ -25,7 +25,7 @@ Follow these steps to manually hibernate your sandbox program environments.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program you wish to hibernate to show its details.
+1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, tap or click the program you want to hibernate to show its details.
 
 1. On the **Environments** card, click the ellipsis button and select **Developer Console**. 
 
@@ -41,11 +41,11 @@ Follow these steps to manually hibernate your sandbox program environments.
 
    ![Confirm hibernation](assets/hibernate-2.png)
 
-When the hibernation is successful, you will see the hibernation process complete notification for your environment in the **Developer Console** screen.
+When the hibernation is successful, you see the hibernation process complete notification for your environment in the **Developer Console** screen.
 
 ![Hibernation confirmation](assets/hibernate-4.png)
 
-In the Developer Console you can also click the **Environments** link in the breadcrumbs above the **Pod** dropdown for a list of environments to hibernate.
+In the Developer Console you can also click the **Environments** link in the breadcrumbs above the **Pod** drop-down list for a list of environments to hibernate.
 
 ![List of environments to hibernate](assets/hibernate-1b.png)
 
@@ -59,13 +59,13 @@ You can manually hibernate your Sandbox Program from the Developer Console.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click on the program you wish to hibernate to show its details.
+1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, tap or click the program you want to de-hibernate to show its details.
 
 1. On the **Environments** card, click the ellipsis button and select **Developer Console**. 
 
    * See [Accessing Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) for additional details about the Developer Console.
 
-1. Click on **De-hibernate**.
+1. Click **De-hibernate**.
 
     ![De-hibernate button](assets/de-hibernation-img1.png)
     
@@ -82,7 +82,7 @@ You can manually hibernate your Sandbox Program from the Developer Console.
    ![De-hibernation complete](assets/de-hibernation-img4.png)
 
 
-In the Developer Console you can also click the **Environments** link in the breadcrumbs above the **Pod** dropdown for a list of environments to de-hibernate.
+In the Developer Console you can also click the **Environments** link in the breadcrumbs above the **Pod** drop-down list for a list of environments to de-hibernate.
  
 ![List of hibernated pods](assets/de-hibernate-1b.png)
 

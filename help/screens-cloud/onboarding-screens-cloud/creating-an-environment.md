@@ -8,7 +8,7 @@ exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 This section describes how to create an environment for your program in Cloud Manager.
 
 >[!NOTE]
->See [Managing Environments in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) to learn how the user can create an environment.
+>See [Managing Environments in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) to learn how the user can create an environment.
 
 ## Objective {#objective}
 
@@ -16,22 +16,22 @@ The following section describes how to create an environment for your program in
 
 ## Steps to create an Environment for your Screens Project in Cloud Manager {#steps-branch-creation}
 
-Once the project creation is successfully complete, you will see the call-to-action card update in Cloud Manager’s Overview page. 
+After the project creation is successfully completed, you can see the call-to-action card update in Cloud Manager's Overview page. 
 
-1. Navigate to Cloud Manager and select the icon to get to Cloud Manager's **Overview** page.
+1. Navigate to Cloud Manager and select the icon so you can get to Cloud Manager's **Overview** page.
  
-1. Click on **Add Environment** from the Cloud Manager's **Overview** page.
+1. Click **Add Environment** from the Cloud Manager's **Overview** page.
 
    ![image](/help/screens-cloud/assets/onboarding/add-environ1.png)
  
-1. Select the environment details from the **Add environment** dialog box and click on **Save**.
+1. Select the environment details from the **Add environment** dialog box and click **Save**.
 
    ![image](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
-1. Once adding an environment step is complete, the call-to-action card updates, as shown in the figure below.
+1. After adding an environment is complete, the call-to-action card updates, as shown in the figure below.
 
    ![image](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
 ## What's Next {#whats-next}
 
-Once you have learnt how to setup an environment for your program in Cloud Manager, you are now ready to move on to the next step in Onboarding process and that is, [Running the Pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
+After you have learned how to set up an environment for your program in Cloud Manager, you are ready to move on. The next step in the Onboarding process is [Running the Pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).

@@ -23,14 +23,14 @@ Ever since the rise of easy-to-use, large-scale content management systems (CMSe
 
 ![The classic full-stack CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-In a full-stack CMS, all of the functionality for manipulating content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
+In a full-stack CMS, the functionality for manipulating content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
 
 * There is one system to maintain.
 * Content is managed centrally.
 * All services of the system are integrated.
 * Content authoring is seamless.
 
-So if new channel needs to be added or support for new types of experiences is required, one (or more) new components can be inserted into the stack and there is only one place to make changes.
+So, if new channel must be added or support for new types of experiences is required, one (or more) new components can be inserted into the stack and there is only one place to make changes.
 
 ![Adding a new channel to the stack](/help/journey-headless/developer/assets/adding-channel.png)
 
@@ -44,15 +44,15 @@ When we talk about a headless CMS, the CMS manages the content and continues to 
 
 ![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-The consuming services, be they AR experiences, a webshop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
+The consuming services, be they AR experiences, a webshop, mobile experiences, progressive web apps (PWAs), and so on, take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
 
 Omitting the head simplifies the CMS by removing complexity. Doing this also shifts the responsibility of rendering the content to the services that actually need the content and are often better suited to such rendering.
 
 ## Content Modeling {#content-modeling}
 
-Content Modeling (also known as data modeling) is your specialty, so what needs to be considered when modeling for headless?
+Content Modeling (also known as data modeling) is your specialty, so what must be considered when modeling for headless?
 
-For the headless applications to be able to access your content, and do something with it, the content really needs to have a predefined structure. It would be possible to have your content as free-form, but it would make life *very* complicated for the applications.
+For the headless applications to be able to access your content, and do something with it, the content really must have a predefined structure. It would be possible to have your content as free-form, but it would make life *very* complicated for the applications.
 
 For AEM you, as a Content Architect, will perform the content modeling to design a range of **Content Fragment Models**. These define the structure used when your content authors create the **Content Fragments** that hold the content.
 
@@ -60,7 +60,7 @@ For AEM you, as a Content Architect, will perform the content modeling to design
 
 This is more of a development detail - but it might interest you, just to complete the story.
 
-After you have created the Content Fragment Models, and your authors have used them to generate the content, the headless applications will need to access this content. 
+After you have created the Content Fragment Models, and your authors have used them to generate the content, the headless applications need to access this content. 
 
 Adobe Experience Manager (AEM) as a Cloud Service, can selectively access your Content Fragments using the AEM GraphQL API, to return only the content that is needed. Using the API a developer can formulate queries that select specific content.This selection process is based on *your* Content Fragment Models. 
 
@@ -75,3 +75,9 @@ Now that you have learned the concepts and terminology, the next step is to [Lea
 * AEM Headless Developer Journey
   * [Learn About CMS Headless Development](/help/journey-headless/developer/learn-about.md)
   * [Learn how to Model Your Content](/help/journey-headless/developer/model-your-content.md)
+
+* [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
+
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+
+* [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

@@ -153,7 +153,7 @@ Create and apply the additional, custom processing profiles to specific folders 
 
 Apply processing profiles to folders using one of the following methods:
 
-* Administrators can select a processing profile definition in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**, and use **[!UICONTROL Apply Profile to Folder(s)]** action. It opens a content browser that allow you to navigate to specific folders, select them and confirm the application of the profile.
+* Administrators can select a processing profile definition in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**, and use **[!UICONTROL Apply Profile to Folders]** action. It opens a content browser that allow you to navigate to specific folders, select them and confirm the application of the profile.
 * Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click the **[!UICONTROL Asset Processing]** tab, and in the [!UICONTROL Processing Profile] list, select the appropriate processing profile for that folder. To save the changes, click **[!UICONTROL Save & Close]**.
   ![Apply processing profile to a folder from the Asset Properties tab](assets/folder-properties-processing-profile.png)
 
@@ -188,7 +188,7 @@ Post-processing workflows, or [Auto-start workflow](https://experienceleague.ado
 To add a post-processing workflow configuration to [!DNL Experience Manager], follow these steps:
 
 * Create one or more workflow models. These custom models are referred to as *post-processing workflow models* in this documentation. Those are regular [!DNL Experience Manager] workflow models.
-* Add the required workflow steps to these models. Review the steps from the default workflow and add all of the required default steps to the custom workflow. The steps are executed on the assets based on a workflow model configuration. For example, if you want smart tagging to happen automatically upon asset upload, add the step to your custom post-processing workflow model.
+* Add the required workflow steps to these models. Review the steps from the default workflow and add all required default steps to the custom workflow. The steps are run on the assets based on a workflow model configuration. For example, if you want smart tagging to happen automatically upon asset upload, add the step to your custom post-processing workflow model.
 * Add [!UICONTROL DAM Update Asset Workflow Completed Process] step at the end. Adding this step ensures that Experience Manager knows when the processing ends and the asset can be marked as processed, that is *New* is displayed on the asset.
 * Create a configuration for the Custom Workflow Runner Service that allows to configure execution of a post-processing workflow model either by a path (folder location) or by a regular expression.
 
@@ -240,7 +240,7 @@ When post-processing is not needed, create and use an "empty" Workflow Model in 
     * Title: Disable Auto-start Workflow
     * Name: disable-auto-start-workflow
 1. Select __Done__ to create the Workflow Model
-1. __Select__ and __Edit__ the newly created Workflow Model
+1. __Select__ and __Edit__ the created Workflow Model
 1. In the Workflow Model editor, select __Step 1__ from the model definition and delete it
 1. Open the __Side Panel__, and select __Steps__
 1. Drag the __DAM Update Asset Workflow Completed__ step into the model definition

@@ -1,11 +1,9 @@
 ---
-title: Add or create an Adaptive Form (Core Components) in AEM Sites page
-seo-title: How to add or create an Adaptive Form (Core Components) to an AEM Sites page?
-description: You can use Adaptive Form (Core Components) in an AEM Sites page to fill and submit a form without leaving the AEM Sites pages.
+title: How to add or create an Adaptive Form Core Components in AEM Sites page?
+description: Use Adaptive Form Core Components in an AEM Sites page to fill and submit a form without leaving the AEM Sites pages.
 feature: Adaptive Forms
 hide: yes
 hidefromtoc: yes
-exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
 ---
 # Create or add an Adaptive Form using AEM Sites Editor {#add-an-adaptive-form-to-aem-sites-page}
 
@@ -13,9 +11,9 @@ You can seamlessly author or embed Adaptive Forms in an AEM Sites page to allow 
  
 You can choose one the following methods to create or add an Adaptive Form to an AEM Sites page:
 
-* **Create an Adaptive Form using Adaptive Forms Container component**: The [Adaptive Form Container](#af-container-component) component  allows you to build digital enrollment experiences by utilizing Adaptive Forms components directly within the AEM Sites editor. This integration provides a seamless experience to AEM Sites authors who want to create and manage forms within their AEM Sites pages.
+* **Create an Adaptive Form using Adaptive Forms Container component**: The [Adaptive Form Container](#af-container-component) component lets you build digital enrollment experiences by utilizing Adaptive Forms components directly within the AEM Sites editor. This integration provides a seamless experience to AEM Sites authors who want to create and manage forms within their AEM Sites pages.
  
-* **Add an existing Adaptive Form**: The [Adaptive Forms - Embed(v2)](#embed-existing-af) component allows you to easily add a pre-existing Adaptive Form into a page within AEM Sites. This feature enhances the adaptability and reusability of Adaptive Forms. This integration provides a convenient way for customers to reuse Adaptive Forms they have already created. 
+* **Add an existing Adaptive Form**: The [Adaptive Forms - Embed(v2)](#embed-existing-af) component lets you easily add a pre-existing Adaptive Form into a page within AEM Sites. This feature enhances the adaptability and reusability of Adaptive Forms. This integration provides a convenient way for customers to reuse Adaptive Forms they have already created. 
 
 * **Use Adaptive Forms Wizard to create a form**: Use the [Adaptive Forms - Embed(v2)](#embed-new-af) component to create an Adaptive Form from within the AEM Sites editor using Form Creation wizard. The form is saved as an external entity. You can reuse this form in other Sites pages and standalone forms also. 
 
@@ -111,7 +109,7 @@ In the [!UICONTROL Edit Adaptive Forms Container] dialog, you can specify the fo
 
     >[!NOTE]
     >
-    > After configuring the Form data model, you can not change the associated Form Model. However, it is possible to modify the schema associated with the Form data model. 
+    > After configuring the Form data model, you cannot change the associated Form Model. However, it is possible to modify the schema associated with the Form data model. 
 
 * **Submission Tab**
    
@@ -134,7 +132,7 @@ In the [!UICONTROL Edit Adaptive Forms Container] dialog, you can specify the fo
 
 ## Embed an Adaptive Form  {#aem-container-component}
 
-Using **[!UICONTROL Adaptive Forms - Embed (V2)]** component, you can either embed new Adaptive Form or embed an existing Adaptive Form in the Site's page. The [!UICONTROL Adaptive Forms - Embed(v2)] component allows you to:
+Using **[!UICONTROL Adaptive Forms - Embed (V2)]** component, you can either embed new Adaptive Form or embed an existing Adaptive Form in the Site's page. The [!UICONTROL Adaptive Forms - Embed(v2)] component lets you:
 
 * [Add an existing Adaptive Form](#embed-new-af)
 
@@ -199,7 +197,7 @@ Using **[!UICONTROL Adaptive Forms - Embed (V2)]** component, you can either emb
 
 1. Open the AEM Sites page in edit mode.
 1. From the Component browser panel, drag-drop the [!UICONTROL Adaptive Forms - Embed] component on the page. 
-1. Tap the [!UICONTROL Adaptive Forms - Embed] component in the sites page and tap ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
+1. Select the [!UICONTROL Adaptive Forms - Embed] component in the sites page and select ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
 1. Browse and select the Adaptive Form to embed in the [!UICONTROL Asset Path]. 
 1. Save the settings. The Adaptive Form  is now embedded in the page.
 
@@ -249,7 +247,7 @@ Consider the following scenarios for publishing added Adaptive Forms using the *
 To modify any configuration or property of an Adaptive Form, do one of the following:
 
 * Open the original form in an Adaptive Form  in respective editor and modify them.
-* Tap the Adaptive Form  from within the site page in edit mode and then tap **[!UICONTROL Edit in a new window]**. The original form opens in edit mode that you can modify.
+* Select the Adaptive Form  from within the site page in edit mode and then select **[!UICONTROL Edit in a new window]**. The original form opens in edit mode that you can modify.
 
 ## Change Layout of an Adaptive Form added to an AEM Sites page {#change-layout-af-aem-sites-page} 
 
@@ -263,3 +261,8 @@ AEM sites page maintains a reference to the Adaptive Form. When you translate an
 
 * Header and footer in the original form are not included in the embedded form.
 * User drafts and submissions of embedded forms are supported and visible in Drafts and Submitted Forms tabs on the Forms Portal.
+
+>[!MORELIKETHIS]
+>
+>* [Embed adaptive form based on core components to an external web page](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+>* [Embed adaptive form in external web page](/help/forms/embed-adaptive-form-external-web-page.md)

@@ -1,31 +1,23 @@
 ---
-title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.07.0
-description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2022.07.0
+title: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.11.0
+description: Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.11.0
 feature: Release Information
-exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
+exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
 ---
-# Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.07.0 {#release-notes}
+# Release Notes for Migration Tools in AEM as a Cloud Service Release 2023.11.0 {#release-notes}
 
-This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2022.07.0.
+This page outlines the Release Notes for Migration Tools in AEM as a Cloud Service 2023.11.0.
 
-## Best Practices Analyzer {#bpa-release}
+## Content Transfer Tool {#ctt-release}
 
-### Release Date {#release-date-bpa}
+### Release Date {#release-date-ctt}
 
-The Release Date for Best Practices Analyzer v2.1.42 is July 06, 2023.
+The Release Date for Content Transfer Tool v3.0.6 is November 21, 2023.
 
-### What's New {#what-is-new-bpa}
+### What's New {#what-is-new-ctt}
 
-* Multiple best practices patterns were added to this release of the Best Practices Analyzer. These include:
-  * Identifying minimum maintenance task configuration
-  * Detecting long-running/heavy queries
-  * Detecting high number of author workflows in running or stale state
-  * Detecting OSGI Apache sling job configuration
-  * Detecting custom Guava-caches
+* Cloud Acceleration Manager (CAM) has been updated to automatically start an ingestion once the extraction of a migration set has completed successfully. The user no longer has to wait until the extraction is completed to manually kick-off an ingestion. For more details about content ingestions in CAM, see [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#ingestion-process).
 
-### Bug Fixes {#bug-fixes-bpa}
+### Bug Fixes {#bug-fixes-ctt}
 
-* BPA was improved to prevent out of memory report generation failures for reports with high number of findings.
-* BPA was improved to detect escape characters in paths to prevent content ingestion failures when migration content to AEM as a Cloud Service.
-
-
+* Users were not able to generate a validation report in CAM. This has been fixed.

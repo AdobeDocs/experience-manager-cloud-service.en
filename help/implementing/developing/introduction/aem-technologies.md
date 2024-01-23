@@ -241,7 +241,7 @@ Uses the Sling API package, `org.apache.sling.*`, and tag libraries.
 
 A final consideration is the need to reference existing elements within the scripts.
 
-More complex scripts (aggregating scripts) access multiple resources (for example navigation, sidebar, footer, elements of a list), and do so by including the *resource*.
+More complex scripts (aggregating scripts) access multiple resources (for example, navigation, sidebar, footer, elements of a list), and do so by including the *resource*.
 
 In this case, you can use the `sling:include("/<path>/<resource>")` command. It effectively includes the definition of the referenced resource.
 

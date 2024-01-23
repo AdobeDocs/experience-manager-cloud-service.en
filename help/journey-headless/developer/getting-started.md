@@ -76,10 +76,10 @@ Content fragments contain structured content and can be delivered in JSON format
 
 To modify your content headlessly, AEM offers two robust APIs.
 
-* The GraphQL API allows you to create requests to access and deliver Content Fragments.
-* The Assets REST API allows you to create and modify Content Fragments (and other assets).
+* The GraphQL API lets you create requests to access and deliver Content Fragments.
+* The Assets REST API lets you create and modify Content Fragments (and other assets).
 
-You will learn about these APIs and how to use them in a later part of the AEM headless journey. Or see [additional resources](#additional-resources) section below for additional documentation.
+You learn about these APIs and how to use them in a later part of the AEM headless journey. Or, see [additional resources](#additional-resources) section below for more documentation.
 
 ## Headless Integration Levels {#integration-levels}
 
@@ -111,13 +111,13 @@ This level of integration builds on level two by enabling most content in the ex
 
 ### You do not yet have an external consumer of the headless content such as a single page application (SPA). {#do-not-have-a-spa}
 
-If your goal is to create a new SPA that headlessly consumes content from AEM, you can use features such as Content Fragments to manage your headless content, and also build a SPA with AEM's SPA Editor framework.
+If your goal is to create a SPA that headlessly consumes content from AEM, you can use features such as Content Fragments to manage your headless content, and also build a SPA with AEM's SPA Editor framework.
 
 Using the SPA Editor, the SPA not only consumes content from AEM, but is also fully editable within AEM by your content authors giving you both the flexibility of headless delivery and in-context editing within AEM.
 
 ## Requirements and Prerequisites {#requirements-prerequisites}
 
-There are a number of requirements before you begin your headless AEM project.
+There are several requirements before you begin your headless AEM project.
 
 ### Knowledge {#knowledge}
 
@@ -137,7 +137,7 @@ For any successful project, it is important to clearly define not only the requi
 
 ### Scope {#scope}
 
-It is important to have a clearly defined scope for the project. Scope informs acceptance criteria and allows you to establish a definition of done.
+It is important to have a clearly defined scope for the project. Scope informs acceptance criteria and lets you establish a definition of done.
 
 The first question you must ask is "What am I trying to achieve with AEM Headless?" The answer should in general be that you have or will have in the future an experience application that you have built with your own development tools not with AEM. This experience application could be a mobile app, a web site, or any other end-user customer facing experience application. The goal for using AEM Headless is to feed your experience application with content that is created, stored, and managed in AEM with state-of-the-art APIs that would call AEM Headless to fetch content or even fully CRUD content directly from your experience application. If this is not what you are looking to do, you probably want to [go back to the AEM documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) and find the section that better suits what you want to accomplish.
 
@@ -160,7 +160,7 @@ The administrator should be the user who sets up AEM and prepares the runtime en
 
 #### Content Author {#content-author}
 
-Content authors create and manage the content that is delivered headlessly by AEM. Content authors use AEM features such as Content Fragments and the Assets Console to manage their content.
+Content authors create and manage the content that is delivered headlessly by AEM. Content authors use AEM features such as Content Fragment editor and various consoles to manage their content.
 
 Content authors should keep in mind the following best practices.
 
@@ -175,7 +175,7 @@ Create a plan on what content translation you need.
 
 Be clear about your content update workflow. What is the approval process that the system must support? Might AEM workflows be used to automate this process?
 
-Note that your [content hierarchy](#content-hierarchy) can be used to make translation easier.
+Your [content hierarchy](#content-hierarchy) can be used to make translation easier.
 
 See the [additional resources](#additional-resources) section for additional documentation on AEM workflows and translation tools including links to the AEM Headless Translation Journey.
 
@@ -253,7 +253,7 @@ To understand traffic and traffic patterns start with gathering what you know fr
 
 #### Update Frequency {#update-frequency}
 
-Often different sections of experiences have different frequencies of content updates. Understanding this is important to be able to fine tune CDN and cache configurations. This is also important input for the [Content Architects](#content-architects) as they design models to represent your content. Consider:
+Often different sections of experiences have different frequencies of content updates. Understanding this is important to be able to fine-tune CDN and cache configurations. This is also important input for the [Content Architects](#content-architects) as they design models to represent your content. Consider:
 
 * Must some types of content expire after a certain period?
 * Are there elements that are user-specific and thus can't be cached?
@@ -267,7 +267,7 @@ Now that you have completed this part of the AEM Headless Developer Journey, you
 * Be aware of AEM's headless integration levels.
 * Be able to define your project in terms of scope.
 
-You should continue your AEM headless journey by next reviewing the document [Path to Your First Experience Using AEM Headless](path-to-first-experience.md) where you will learn how to set up the necessary tools and how to begin thinking about modeling your data in AEM.
+You should continue your AEM headless journey by next reviewing the document [Path to Your First Experience Using AEM Headless](path-to-first-experience.md) where you learn how to set up the necessary tools and how to begin thinking about modeling your data in AEM.
 
 ## Additional Resources {#additional-resources}
 
@@ -275,6 +275,8 @@ While it is recommended that you move on to the next part of the headless develo
 
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
 * [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Understand AEM as a Cloud Service's structure
+* An [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
+* The [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use these hands-on tutorials to explore how to use the various options for delivering content to headless endpoints with AEM and chose what's right for you.
 * [Headless Content Management Using GraphQL APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - Follow this course for an overview of the GraphQL API implemented in AEM. Authentication via AdobeID is required.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) -  This GitHub project includes example applications that highlight AEM's GraphQL APIs.
@@ -283,8 +285,8 @@ While it is recommended that you move on to the next part of the headless develo
 * [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md) - Technical documentation of page naming restrictions in AEM
 * [Multi Site Manager and Translation](/help/sites-cloud/administering/msm-and-translation.md) - Technical documentation on AEM's powerful translation features
 * [AEM workflows](/help/sites-cloud/authoring/workflows/overview.md) - Technical documentation on how to automate workflows in AEM
-* [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Technical documentation for Content Fragments.
-* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - Technical documentation for Content Fragment Models.
+* [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) - Technical documentation for Content Fragments.
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) - Technical documentation for Content Fragment Models.
 * [GraphQL Technical Documentation](https://graphql.org) - The GraphQL definition (external link)
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) - Technical documentation that explains how to create requests to access and deliver Content Fragments
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - Technical documentation that explains how to create and modify Content Fragments (and other assets)

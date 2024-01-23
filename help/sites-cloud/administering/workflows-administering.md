@@ -1,9 +1,9 @@
 ---
 title: Administering Workflow Instances
-description: Learn how to Administer Workflow Instances
+description: Learn how to Administer Workflow Instances using the workflow console
 feature: Administering
 role: Admin
-
+exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 ---
 # Administering Workflow Instances {#administering-workflow-instances}
 
@@ -41,7 +41,7 @@ A range of consoles are available for administering your workflows. Use the [glo
 
    >[!NOTE]
    >
-   > To maintain workflow instance healthy, follow best practices at [regular purging of workflow instances](#regular-purging-of-workflow-instances) or [workflow best practices](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=en).
+   > To maintain workflow instance healthy, follow best practices at [regular purging of workflow instances](#regular-purging-of-workflow-instances) or [workflow best practices](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## Search Workflow Instances {#search-workflow-instances}
 
@@ -259,6 +259,4 @@ public interface UserMetaDataPersistenceProvider {
    String put(UserMetaDataPersistenceContext userMetaDataPersistenceContext, MetaDataMap metaDataMap) throws WorkflowException;
  
 } 
-``` 
-
-
+```

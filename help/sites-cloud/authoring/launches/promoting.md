@@ -46,7 +46,7 @@ You can promote launches from either the **Sites** console or the **Launches** c
      1. Select the required launch page using [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md).
      1. The **Promote** action is available in the toolbar.
    * The **Launches** console:
-     1. Select your launch (tap/click on the thumbnail).
+     1. Select your launch (select the thumbnail).
      1. Select **Promote**.
 1. In the first step you can specify:
     * **Target**
@@ -74,7 +74,7 @@ You can promote launches from either the **Sites** console or the **Launches** c
 
 ## Promoting Launch Pages when Editing {#promoting-launch-pages-when-editing}
 
-When you are editing a launch page, the **Promote Launch** action is also available from **Page Information**. This will open the wizard to collect the information needed.
+When you are editing a launch page, the **Promote Launch** action is also available from **Page Information**. This opens the wizard to collect the information needed.
 
 ![Promote launch from site info](/help/sites-cloud/authoring/assets/launches-promote-page-info.png)
 

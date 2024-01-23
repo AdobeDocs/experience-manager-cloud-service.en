@@ -51,14 +51,14 @@ You can trigger a tree replication by choosing **Tools - Workflow - Models** and
 
 Do not invoke the original model. Instead, make sure to first copy the model and invoke that copy.
 
-Like all workflows, it can also be invoked via API. For more information, see [Interacting with Workflows Programmatically](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=en#extending-aem).
+Like all workflows, it can also be invoked via API. For more information, see [Interacting with Workflows Programmatically](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
 Alternatively, you can create a Workflow Model that uses the `Publish Content Tree` process step:
 
 1. From the AEM as a Cloud Service homepage, go to **Tools - Workflow - Models**.
 1. In the Workflow Models page, press **Create** in the upper right corner of the screen.
 1. Add a title and a name to your model. For more information, see [Creating Workflow Models](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
-1. Select the newly created model from the list, and press **Edit**
+1. Select the created model from the list, and press **Edit**
 1. In the following window, drag and drop the Process Step to the current model flow:
    
    ![Process Step](/help/operations/assets/processstep.png)
@@ -83,7 +83,7 @@ Alternatively, you can create a Workflow Model that uses the `Publish Content Tr
 
 * `includeChildren` (boolean value, default: `false`). The value `false` means that only the path is published; `true` means that children are published too.
 * `replicateAsParticipant` (boolean value, default: `false`). If configured as `true`, the replication is using the `userid` of the principal which performed the participant step.
-* `enableVersion` (boolean value, default: `true`). This parameter determines if a new version is created upon replication.
+* `enableVersion` (boolean value, default: `false`). This parameter determines if a new version is created upon replication.
 * `agentId` (string value, default means only agents for publish are used). It is recommended to be explicit about the agentId; for example, setting it the value: publish. Setting the agent to `preview` publishes to the preview service.
 * `filters` (string value, default means that all paths are activated). Available values are: 
   * `onlyActivated` - only activate pages that have (already) been activated. Acts as a form of reactivation.

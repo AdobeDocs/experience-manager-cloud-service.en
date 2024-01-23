@@ -1,18 +1,18 @@
 ---
-title: How to Add Information from User Data to Form Submission Metadata?
+title: How to update metadata of a submitted form?
 description: Learn how to add information to metadata of a submitted form with user provided data. Dig deeper on how to view the updated form submission metadata in the CRX repository.
 feature: Adaptive Forms
 role: User
 level: Intermediate
 ---
 
-# Adding information from user data to form submission metadata {#adding-information-from-user-data-to-form-submission-metadata}
+# Add information from user data to form submission metadata {#adding-information-from-user-data-to-form-submission-metadata}
 
 You can use values entered in an element of your form to compute metadata fields of a draft or a form submission. Metadata lets you filter content based on user data. For example, a user enters John Doe in the name field of your form. You can use this information to compute metadata that can categorize this submission under the initials JD.
 
 To compute metadata fields with user entered values, add elements of your form in the metadata. When a user enters a value in that element, a script uses the value to compute information. This information is added in the metadata. When you add an element as a metadata field, you provide a key for it. The key is added as a field in the metadata, and the computed information is logged against it.
 
-For example, a health insurance firm publishes a form. In this form, a field captures age of the end users. The customer wants to check all the submissions in a particular age range after a number of users submit the form. Instead of going through all the data that gets complicated with increasing number of forms, additional metadata helps the customer. The form author can configure which properties/data filled by the end user is stored at the top level so that search is easiest. Additional metadata is user filled information stored at the top level of the metadata node, as author configured it.
+For example, a health insurance firm publishes a form. In this form, a field captures age of the end users. The customer wants to check all the submissions in a particular age range after several users submit the form. Instead of going through all the data that gets complicated with increasing number of forms, additional metadata helps the customer. The form author can configure which properties/data filled by the user is stored at the top level so that search is easiest. Additional metadata is user filled information stored at the top level of the metadata node, as author configured it.
 
 Consider another example of a form that captures email id and phone number. When a user visits this form anonymously and abandons the form, the author can configure the form to auto-save email id and phone number. This form is auto-saved, and the phone number and email id is stored in the metadata node of draft. A use-case of this configuration is lead management dashboard.
 
@@ -21,8 +21,8 @@ Consider another example of a form that captures email id and phone number. When
 Perform the following steps to add an element in the metadata:
 
 1. Open your Adaptive Form in edit mode.  
-   To open your form in edit mode, in the forms manager, select your form and tap **[!UICONTROL Open]**.
-1. In the edit mode, select a component, tap ![field-level](assets/select_parent_icon.svg) &gt; **[!DNL Adaptive Form Container]**, and then tap ![cmppr](assets/configure-icon.svg).
+   To open your form in edit mode, in the forms manager, select your form and select **[!UICONTROL Open]**.
+1. In the edit mode, select a component, select ![field-level](assets/select_parent_icon.svg) &gt; **[!DNL Adaptive Form Container]**, and then select ![cmppr](assets/configure-icon.svg).
 1. In the sidebar, click **[!DNL Metadata]**.
 1. In the Metadata section, click **[!DNL Add]**.
 1. Use the Value field of the Metadata tab to add scripts. The scripts you add collect data from elements on the form and compute values that are fed to the metadata.

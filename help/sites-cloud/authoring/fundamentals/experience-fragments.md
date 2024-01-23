@@ -31,7 +31,7 @@ You can use Experience Fragments:
   Without Experience Fragments, the author would need to copy and paste that fragment. Creating and maintaining these copy/paste experiences is time-consuming and prone to user errors. 
   Experience Fragments eliminate the need for copy/paste.
 * To support the headless CMS use-case. 
-  Authors want to use AEM only for authoring but not for delivering to the customer. A third-party system/touchpoint would consume that experience and then deliver to the end user.
+  Authors want to use AEM only for authoring but not for delivering to the customer. A third-party system/touchpoint would consume that experience and then deliver to the user.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Experience Fragments should be used:
   * Embedding content in third-party touchpoints.
 * If you have an Experience with different variations or renditions.
   * Channel or context-specific variations.
-  * Experiences that make sense to group; for example a campaign with different experiences across channels.
+  * Experiences that make sense to group; for example, a campaign with different experiences across channels.
 * When you use Omnichannel Commerce.
   * Making touchpoints transactional.
 
@@ -73,7 +73,7 @@ It is recommended to:
 
 * [configure the allowed templates on these folders](#configure-allowed-templates-folder).
 
-Creating folders allows you to:
+Creating folders lets you:
 
 * create a meaningful structure for your Experience Fragments; for example, according to classification
 
@@ -226,7 +226,7 @@ You can create variations of your Experience Fragment, depending on your needs:
 
    ![Creating an Experience Fragment variation](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. **Create** allows you to create:
+1. **Create** lets you create:
 
     * **Variation**
     * **Variation as live-copy**.
@@ -273,7 +273,7 @@ You can select one or more components to create a building block for recycling w
 
 ### Creating a Building Block {#creating-a-building-block}
 
-To create a new Building Block:
+To create a Building Block:
 
 1. In the Experience Fragment editor, select the components you want to re-use:
 
@@ -350,14 +350,17 @@ To personalize your fragment:
    >The **ContextHub Path** selected in the **Personalization** tab must be either:
    >
    >* the same path as the one configured for the page where the fragment is rendered
-   >Or:
+   >
+   >  Or:
+   >
    >* a path that contains a subset of the stores defined in the ContextHub configured for the page
    >
-   >&nbsp;
    >The **Segments Path** selected in the **Personalization** tab must be either:
    >
    >* the same path as the one configured for the page where the fragment is rendered
-   >Or
+   >
+   >  Or
+   >
    >* a path that contains a subset of the segments configured for the page
 
 ### Defining Targeting for your Experience Fragment {#defining-targeting-experience-fragment}

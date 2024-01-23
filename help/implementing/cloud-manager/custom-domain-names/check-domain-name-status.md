@@ -8,11 +8,13 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 
 You can determine status of your custom domain name within Cloud Manager.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+
+1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
 
 1. Navigate to the **Environments** screen from the **Overview** page.
 
-1. Click on **Domain Settings** in the left navigation panel.
+1. Click **Domain Settings** in the left navigation panel.
 
 1. Click the **Status** icon for the domain name.
 
@@ -54,7 +56,7 @@ The following are some common domain name errors and their typical resolutions.
 
 #### Error Cause {#cause}
 
-Fastly locks a domain to the initial account that registered it and no other account can register a subdomain without asking for permission. Furthermore, Fastly only allows you to assign an apex domain and associated subdomains to one Fastly service and account. If you have an existing Fastly account that links the same apex and subdomains used for your AEM Cloud Service domains you will see this error.
+Fastly locks a domain to the initial account that registered it and no other account can register a subdomain without asking for permission. Furthermore, Fastly only lets you assign an apex domain and associated subdomains to one Fastly service and account. If you have an existing Fastly account that links the same apex and subdomains used for your AEM Cloud Service domains you see this error.
 
 #### Error Resolution {#resolution}
 
@@ -76,7 +78,7 @@ The error is fixed as follows:
 
 ## Pre-Existing CDN Configurations for Custom Domain Names {#pre-existing-cdn}
 
-If you have a pre-existing CDN configuration for your custom domain names, there is an informative message on the the **Custom Domain Names** and **Environment** pages, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
+If you have a pre-existing CDN configuration for your custom domain names, there is an informative message on the **Custom Domain Names** and **Environment** pages, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
 
 The message disappears once all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
 

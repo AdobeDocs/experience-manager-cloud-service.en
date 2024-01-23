@@ -1,9 +1,10 @@
 ---
 title: Introduction and overview
-description: Introduction and overview of content and commerce. Experience Manager Commerce Integration Framework (CIF) is Adobe's recommended pattern to integrate and extend commerce services from Adobe Commerce and other third-party commerce solutions with the Experience Cloud.
+description: Understand how to use and administer Experience Manager Content and Commerce as a Cloud Service.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 ---
+
 # Content and Commerce {#content-commerce}
 
 With Adobe Experience Manager content and commerce, brands can scale and innovate faster to differentiate commerce experiences and capture accelerating online spend. AEM Content and Commerce combines the immersive, omnichannel, and personalized experiences in Experience Manager with any number of commerce solutions to bring differentiated experiences to all parts of the shopping journey, reducing time to value and driving higher conversion.
@@ -25,7 +26,7 @@ Brands can integrate Experience Manager with Adobe Commerce, part of Adobe Exper
 As these projects have to deal with the complexity of integrating a commerce solution. A commerce solution can be anything from a commercial solution such as the Adobe Commerce Cloud to a set of custom commerce services. The integration is highly dependent on the use-cases and ecosystem. It usually touches various places and comes in many different flavors:
 
 * Integration of a complex and dynamic ecosystem (example product catalogs)
-* Business needs to manage product content with its own lifecycle in an efficient and omnichannel way
+* Business must manage product content with its own lifecycle in an efficient and omnichannel way
 * Building complex and personalized shopping journeys for various heads
 * Ability to quickly adapt and innovate on the back- and front-end
 * Running a scalable and stable E2E infrastructure that is built for peak performance (Flash sale, Black Friday, ...). This includes unified search and cache management.

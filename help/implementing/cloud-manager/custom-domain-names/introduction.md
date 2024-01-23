@@ -1,6 +1,6 @@
 ---
 title: Introduction to Custom Domain Names
-description: Cloud Manager's UI allows you to add a custom domain to identify your site with a unique, branded name in a self-service manner.
+description: Cloud Manager's UI lets you add a custom domain to identify your site with a unique, branded name in a self-service manner.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 ---
 
@@ -9,15 +9,15 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
 >title="Manage Custom Domain Names"
->abstract="Cloud Manager's UI allows you to add a custom domain to identify your site with a unique, branded name in a self-service manner."
+>abstract="Cloud Manager's UI lets you add a custom domain to identify your site with a unique, branded name in a self-service manner."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html" text="Adding a Custom Domain Name"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html" text="View & Update Custom Domain Name"
 
-Cloud Manager's UI allows you to add a custom domain to identify your site with a unique, branded name in a self-service manner. Adobe Experience Manager as a Cloud Service is provisioned with a default domain name, ending in `*.adobeaemcloud.com`. This default domain name remains, even after you associate custom domain names to your website.
+Cloud Manager's UI lets you add a custom domain to identify your site with a unique, branded name in a self-service manner. Adobe Experience Manager as a Cloud Service is provisioned with a default domain name, ending in `*.adobeaemcloud.com`. This default domain name remains, even after you associate custom domain names to your website.
 
 ## What are Custom Domain Names? {#what-are-custom-domain-names}
 
-Each website has a unique, machine-readable, numerical address associated with it such as `184.33.123.64`. The Domain Name System (DNS) is what allows you to have custom, branded domains attached to websites by translating numerical addresses into memorable addresses such as `wknd.com`.
+Each website has a unique, machine-readable, numerical address associated with it such as `184.33.123.64`. The Domain Name System (DNS) is what lets you have custom, branded domains attached to websites by translating numerical addresses into memorable addresses such as `wknd.com`.
 
 It is good practices to have a domain name for your site that is memorable for your customers and reflects your brand.
 
@@ -29,7 +29,7 @@ You can buy a domain name from a domain name registrar, a company or organizatio
 
 ## Custom Domain Names and BYO CDNs {#byo-cdn}
 
-AEM as a Cloud Service offers a built-in content delivery network (CDN) service, but also allows you to bring-your-own (BYO) CDN to use with AEM. Custom domains can be installed either in the AEM-managed CDN or a CDN you manage.
+AEM as a Cloud Service offers a built-in content delivery network (CDN) service, but also lets you bring-your-own (BYO) CDN to use with AEM. Custom domains can be installed either in the AEM-managed CDN or a CDN you manage.
 
 * Custom domain names (and certificates) that are installed in the AEM-managed CDN are managed via Cloud Manager.
 * Custom domain names (and certificates) that are installed in your own CDN are managed in that specific CDN. 
@@ -40,7 +40,7 @@ In one environment you can have both domains installed in the AEM-managed CDN an
 
 ## Workflow {#workflow}
 
-Adding a custom domain name requires interaction between the DNS service and Cloud Manager. Because of this there are a number of steps required to install, configure,and verify custom domain names. The following table gives an overview of the steps required, including what to do when common errors occur.
+Adding a custom domain name requires interaction between the DNS service and Cloud Manager. Because of this there are several steps required to install, configure,and verify custom domain names. The following table gives an overview of the steps required, including what to do when common errors occur.
 
 |Step|Description|Responsibility|Learn More|
 |--- |--- |--- |---|
@@ -60,12 +60,12 @@ Adding a custom domain name requires interaction between the DNS service and Clo
 
 ## Limitations {#limitations}
 
-There are a number of limitations to using custom domain names with AEMaaCS.
+There are several limitations to using custom domain names with AEMaaCS.
 
 * Custom domain names are supported in Cloud Manager for both publish and preview services for Sites programs. Custom domains for author services are not supported.
 * Each Cloud Manager environment can host up to a maximum of 500 custom domains per environment.
-* Domain names can not be added to environments while there is a current running pipeline attached to those environments.
-* The same domain name can not be used on more than one environment.
+* Domain namescannot be added to environments while there is a current running pipeline attached to those environments.
+* The same domain namecannot be used on more than one environment.
 * Only one domain name can be added at a time.
 * AEM as a Cloud Service does not support wildcard domains such as `*.example.com`.
 * Before adding a custom domain name, a valid SSL certificate that contains the custom domain name (wildcard certificates are valid) must be installed for your program. See [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) to learn more.

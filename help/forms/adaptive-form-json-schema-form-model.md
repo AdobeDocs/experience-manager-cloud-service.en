@@ -1,7 +1,7 @@
 ---
-title: Design JSON Schema for an Adaptive Form
-description: Learn how to create Adaptive Forms using JSON schema as form model. You can use existing JSON schemas to create Adaptive Forms. Dig deeper with a sample of a JSON schema, pre-configure fields in JSON schema definition, limit acceptable values for an Adaptive Form component, and learn non-supported constructs.
-feature: Adaptive Forms
+title: How to design JSON Schema for an Adaptive Form?
+description: Learn to create a JSON schema for an Adaptive Form and create an Adaptive Form based on the schema to produce schema complaint data.
+feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
@@ -734,7 +734,7 @@ To enable all JSON schema-based Adaptive Forms to generate schema-compliant data
 
 1. Go to Experience Manager web console at `https://server:host/system/console/configMgr`.
 1. Locate **[!UICONTROL Adaptive Form and Interactice Communication Web Channel Configuration]**. 
-1. Tap to open the configuration in edit mode.
+1. Select to open the configuration in edit mode.
 1. Select the **[!UICONTROL Generate Schema Compliant Data]** checkbox.
 1. Save the settings.
 
@@ -766,3 +766,15 @@ You have two options:
 **What should be the extension of the JSON schema file?**
 
 The extension of JSON Schema file must be .schema.json. For example, &lt;filename&gt;.schema.json.
+
+## See Also {#see-also}
+
+{{see-also}}
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Design XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
+
+-->

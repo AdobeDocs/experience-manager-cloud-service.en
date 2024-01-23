@@ -24,12 +24,13 @@ The status of your SSL certificates can be understood at a glance from the SSL c
 
 When a certificate expires any domains that are in use with the expired certificate will no longer work. Updating your certificates through the following steps ensures that your domain continues to work as desired.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization
+1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
 1. Navigate to **Environments** screen from the **Overview** page.
 1. Navigate to the **SSL Certificates** screen from the **Environments** screen.
-1. You will see a table with a row for each SSL certificate that has been successfully installed in your program. Click on the ellipsis button at the far right in the row of the certificate you wish to update and select **View &amp; Update**.
+1. You can see a table with a row for each SSL certificate that has been successfully installed in your program. Click the ellipsis button at the far right in the row of the certificate you want to update and select **View &amp; Update**.
 1. The certificate details are displayed and can be updated.
-1. Run the pipeline in order to deploy the updated certificate.
+1. Run the pipeline to deploy the updated certificate.
 
 >[!NOTE]
 >
@@ -41,7 +42,7 @@ An SSL certificate can be replaced by following the same steps as described in t
 
 ## Deleting an SSL Certificate {#deleting-an-ssl-certificate}
 
-Removing certificates from Cloud Manager is a permanent action that can not be undone. As a best practice, Adobe recommends to save SSL files locally before deleting them in Cloud Manager.
+Removing certificates from Cloud Manager is a permanent action thatcannot be undone. As a best practice, Adobe recommends to save SSL files locally before deleting them in Cloud Manager.
 
 Cloud Manager will not allow you to delete an SSL certificate that has one or more domains associated with it. All associated domains must be deleted before deleting the SSL certificate. See [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more.
 
@@ -50,9 +51,9 @@ Follow these steps to delete an SSL certificate.
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 1. Navigate to **Environments** screen from the **Overview** page.
 1. Navigate to the **SSL Certificates** screen from the **Environments** screen.
-1. You will see a table with a row for each SSL certificate that has been successfully installed in your program. Click on the ellipsis button at the far right in the row of the certificate you wish to delete and select **Delete**.
+1. You can see a table with a row for each SSL certificate that has been successfully installed in your program. Click the ellipsis at the far right in the row of the certificate you want to delete and select **Delete**.
 1. Confirm the deletion in the **Delete SSL Certificate** dialog.
-1. Run the pipeline in order to undeploy the deleted certificate.
+1. Run the pipeline to undeploy the deleted certificate.
 
 >[!NOTE]
 >
@@ -60,7 +61,7 @@ Follow these steps to delete an SSL certificate.
 
 ## Pre-Existing CDN Configurations {#pre-existing-cdn}
 
-If you have a pre-existing CDN configuration for your SSL certificate, there is an informative message on the the **SSL Certificates** page, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
+If you have a pre-existing CDN configuration for your SSL certificate, there is an informative message on the **SSL Certificates** page, encouraging you to add these configurations via the UI so they are visible and configurable in Cloud Manager.
 
 The message disappears once all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
 

@@ -21,7 +21,7 @@ Ever since the rise of easy-to-use, large-scale content management systems (CMSe
 
 ![The classic full-stack CMS](assets/full-stack.png)
 
-In a full-stack CMS, all of the functionality for manipulating your content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
+In a full-stack CMS, the functionality for manipulating your content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
 
 * You have one system to maintain.
 * Content is managed centrally.
@@ -50,19 +50,19 @@ Users expect engagement no matter what the platform or touch point, requiring ag
 
 The head of any system is generally the output renderer of that system, typically in the form of a GUI or other graphical output.
 
-A headless server for example is likely sitting in a rack in a server room somewhere and has no monitor attached. To access it you have to remotely connect into it. In this case, the monitor is the head as it takes care of rendering the output of the server. You as the consumer of the service, provide your own head (the monitor) when you connect remotely to it.
+A headless server for example, is likely sitting in a rack in a server room somewhere and has no monitor attached. To access it you have to remotely connect into it. In this case, the monitor is the head as it takes care of rendering the output of the server. You as the consumer of the service, provide your own head (the monitor) when you connect remotely to it.
 
 When we talk about a headless CMS, the CMS manages the content and continues to deliver it to consumers. However, by only delivering the **content** in a standardized fashion, a headless CMS omits the final output rendering, leaving the **presentation** of the content to the consuming service.
 
 ![Headless CMS](assets/headless-cms.png)
 
-The consuming services, be they AR experiences, a webshop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
+The consuming services, be they AR experiences, a webshop, mobile experiences, progressive web apps (PWAs), and so on, take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
 
 Omitting the head simplifies the CMS by removing complexity. Doing this also shifts the responsibility of rendering the content to the services that actually need the content and are often better suited to such rendering.
 
 ## Decoupling {#decoupling}
 
-Headless delivery is possible by exposing a set of robust and flexible application programming interfaces (APIs) that all of your experiences can tap into. The API serves as a common language between the services, binding them together at the content level through standardized content delivery, but allowing them the flexibility to implement their own solutions.
+Headless delivery is possible by exposing a set of robust and flexible application programming interfaces (APIs) that all of your experiences can select into. The API serves as a common language between the services, binding them together at the content level through standardized content delivery, but allowing them the flexibility to implement their own solutions.
 
 Headless is an example of decoupling your content from its presentation. Or in a more generic sense, decoupling the front end from the back end of your service stack. In a headless setup, the presentation system (the head) is decoupled from the content management (the tail). The two only interact through API calls.
 
@@ -70,7 +70,7 @@ This decoupling means that each consuming service (the front end) can build its 
 
 ## Technological Underpinnings {#technology}
 
-A headless approach allows you to build a technology stack that can easily and quickly adapt to future digital experience demands.
+A headless approach lets you build a technology stack that can easily and quickly adapt to future digital experience demands.
 
 APIs for CMSes in the past were usually REST-based. Representational state transfer (REST) provides resources as text in a stateless fashion. This allows the resources to be read and modified with a predefined set of operations. REST allowed for great interoperability between services on the web by ensuring stateless representation of the content.
 
@@ -90,7 +90,7 @@ Headless opens up a world of flexibility for delivering your digital experiences
 
 Having many different channels can mean that they each have their own presentation systems. Even though they all consume the same content through the same APIs, the experience can be different because of the different presentations. Concern and care must be given to ensuring the consistency of the customer experience.
 
-By implementing careful design systems, sharing pattern libraries, and leveraging reusable design components and established, open client-side frameworks, consistent experiences can be ensured, but this must be planned.
+By implementing careful design systems, sharing pattern libraries, and using reusable design components and established, open client-side frameworks, consistent experiences can be ensured, but this must be planned.
 
 ## The Future is Headless and the Future is Now {#future}
 
@@ -100,7 +100,7 @@ It is impossible to predict the future, but headless gives you the agility to re
 
 ## AEM and Headless {#aem-and-headless}
 
-As you continue through this developer journey, you will learn how AEM supports headless delivery along side its full-stack delivery capabilities.
+As you continue through this developer journey, you learn how AEM supports headless delivery along side its full-stack delivery capabilities.
 
 As an industry leader in digital experience management, Adobe realizes that the ideal solution to real-world challenges that experience creators face is rarely a binary choice. This is why AEM not only supports both models, but also uniquely allows the seamless hybrid combination of the two, blending the advantages of headless and full stack, to help you best serve the consumers of your content, wherever they are.
 
@@ -114,11 +114,13 @@ Thanks for getting started on your AEM headless journey! Now that you read this 
 * Understand why and when headless is required.
 * Know at a high-level how headless concepts are used and how they interrelate.
 
-Build on this knowledge and continue your AEM headless journey by next reviewing the document [Getting Started with AEM Headless as a Cloud Service](getting-started.md) where you will learn how to set up the necessary tools and how to begin thinking about how AEM approaches headless content delivery and its prerequisites.
+Build on this knowledge and continue your AEM headless journey by next reviewing the document [Getting Started with AEM Headless as a Cloud Service](getting-started.md) where you learn how to set up the necessary tools and how to begin thinking about how AEM approaches headless content delivery and its prerequisites.
 
 ## Additional Resources {#additional-resources}
 
 While it is recommended that you move on to the next part of the headless development journey by reviewing the document [Getting Started with AEM Headless as a Cloud Service,](getting-started.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
 * [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Understand AEM as a Cloud Service's structure
+* An [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
+* The [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use these hands-on tutorials to explore how to use the various options for delivering content to headless endpoints with AEM and chose what's right for you.

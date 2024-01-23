@@ -12,10 +12,12 @@ When applying an IP allow list, all IP ranges included in the list's definition 
 
 A user in the **Business Owner** or **Deployment Manager** role can follow these steps to apply an IP allow list.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+
+1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
 1. Navigate to the **Environments** screen from the **Overview** page.
 1. Navigate to the specific environment details page on the **Environments** screen and navigate to the **IP Allow List** table.
-1. Use the input fields at the top of the table so you can select the IP allow list and the author or publish service to which you wish to apply it.
+1. Use the input fields at the top of the table so you can select the IP allow list and the author or publish service to which you want to apply it.
    * The IP Allow List must exist in Cloud Manager to apply it.
 1. Click **Apply** and confirm your submission.
 
@@ -26,6 +28,6 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 1. Navigate to the **Environments** screen from the **Overview** page.
 1. Navigate to the specific environment details page on the **Environments** screen and navigate to the **IP Allow List** table.
-1. Identify the row of the IP allow list you wish to unapply.
+1. Identify the row of the IP allow list you want to unapply.
 1. Select the ellipsis button at the far right end of the row.
 1. Select the **Unapply** option and confirm your submission.

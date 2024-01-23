@@ -11,7 +11,7 @@ Components can be adapted to generate JSON export of their content based on a mo
 
 The JSON Export is based on [Sling Models](https://sling.apache.org/documentation/bundles/models.html), and on the [Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) framework (which itself relies on [Jackson annotations](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
-This means that the component must have a Sling Model if it needs to export JSON. Therefore you will need to follow these two steps to enable JSON export on any component.
+This means that the component must have a Sling Model if it must export JSON. Therefore, follow these two steps to enable JSON export on any component.
 
 * [Define a Sling Model for the component](#define-a-sling-model-for-the-component)
 * [Annotate the Sling Model interface](#annotate-the-sling-model-interface)
@@ -60,7 +60,7 @@ To be taken into account by the JSON Exporter framework, the Model interface sho
 
 The corresponding Sling Model interface (`MyComponent`) would be then annotated using [Jackson annotations](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) to define how it should be exported (serialized).
 
-The Model interface needs to be properly annotated to define which methods should be serialized. By default, all methods that respect the usual naming convention for getters are serialized and will derive their JSON property names naturally from the getter names. This can be prevented or overridden using `@JsonIgnore` or `@JsonProperty` to rename the JSON property.
+The Model interface must be properly annotated to define which methods should be serialized. By default, all methods that respect the usual naming convention for getters are serialized and will derive their JSON property names naturally from the getter names. This can be prevented or overridden using `@JsonIgnore` or `@JsonProperty` to rename the JSON property.
 
 ## Example {#example}
 
@@ -70,9 +70,7 @@ For an example, see the Sling Model implementation of the Image Core Component a
 
 ## Related Documentation {#related-documentation}
 
-For further details see:
-
-* [Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
+* [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 * [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [Content Fragment component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

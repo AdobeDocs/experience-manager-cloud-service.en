@@ -1,6 +1,8 @@
 ---
 title: How to configure Azure storage?
 description: Learn how to integrate forms with Azure storage server.
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
 ---
 # Configure [!DNL Azure] storage {#configure-azure-storage}
@@ -11,7 +13,7 @@ exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
 [[!DNL Experience Manager Forms] Data Integration](data-integration.md) provides an [!DNL Azure] storage configuration to integrate forms with [!DNL Azure] storage services. The Form Data Model can be used to create Adaptive Forms that interact with [!DNL Azure] server to enable business workflows. For example:
 
 * Write data into [!DNL Azure] on Adaptive Form submission.
-* Write data in [!DNL Azure] through custom entities defined in Form Data Model and vice versa.
+* Write data in [!DNL Azure] through custom entities defined in Form Data Model and conversely.
 * Query [!DNL Azure] server for data and prepopulate Adaptive Forms.
 * Read data from [!DNL Azure] server.
 
@@ -20,10 +22,10 @@ exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
 Before executing these steps, ensure that you have an [!DNL Azure] storage account and an access key to authorize the access to the [!DNL Azure] storage account.
 
 1. Navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Azure Storage]**.
-1. Select a folder to create the configuration and tap **[!UICONTROL Create]**.
+1. Select a folder to create the configuration and select **[!UICONTROL Create]**.
 1. Specify a title for the configuration in the **[!UICONTROL Title]** field.
 1. Specify the name of the [!DNL Azure] storage account in the **[!UICONTROL Azure Storage Account]** field.
-1. Specify the key to access Azure storage account in the **[!UICONTROL Azure Access Key]** field and tap **[!UICONTROL Save]**.
+1. Specify the key to access Azure storage account in the **[!UICONTROL Azure Access Key]** field and select **[!UICONTROL Save]**.
 
 ## Create Form Data Model {#create-azure-form-data-model}
 
@@ -35,13 +37,13 @@ After creating the Form Data Model and data model objects, you can add [!DNL Azu
 
 To add [!DNL Azure] services:
 
-1. In the Edit mode, select the services from the **[!UICONTROL Services]** section in the left pane and tap **[!UICONTROL Add Selected]**. The selected services display in the **[!UICONTROL Services]** tab of the Form Data Model.
+1. In the Edit mode, select the services from the **[!UICONTROL Services]** section in the left pane and select **[!UICONTROL Add Selected]**. The selected services display in the **[!UICONTROL Services]** tab of the Form Data Model.
 
    ![Add Selected Services](assets/select-services.png)
 
 1. In the **[!UICONTROL Services]** tab, select the service and **[!UICONTROL Edit Properties]**. Based on the service, define the input or output model objects for the service.
 
-1. Tap **[!UICONTROL Save]** to save the form data model.
+1. Select **[!UICONTROL Save]** to save the form data model.
 
    The following table describes the available [!DNL Azure] services:
 
@@ -86,12 +88,22 @@ To add [!DNL Azure] services:
 
 To define a data model object property as a search key:
 
-1. In the **[!UICONTROL Model]** tab, select the data model object property and tap **[!UICONTROL Edit Properties]**.
+1. In the **[!UICONTROL Model]** tab, select the data model object property and select **[!UICONTROL Edit Properties]**.
 1. Switch the **[!UICONTROL Search Key]** toggle option to the ON state. This option is available only for primary data types.
-1. Tap **[!UICONTROL Done]** and then tap **[!UICONTROL Save]** to save the Form Data Model.
+1. Select **[!UICONTROL Done]** and then select **[!UICONTROL Save]** to save the Form Data Model.
 
 After defining data model object properties as search keys, the hash values are stored in Azure index tags and Base64 encoded values are stored in the Azure metadata.
 
 >[!NOTE]
 >
 >Only 10 search keys are allowed per Azure entity since Azure only allows 10 tags per Blob and properties value marked as search keys are stored in Azure index tags after hashing. 
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+>  [Add Forms Portal to an AEM Sites page](/help/forms/configure-forms-portal.md)
+
+-->

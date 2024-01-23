@@ -3,6 +3,7 @@ title: AEM as a Cloud Service Team and Product Profiles
 description: Learn how AEM as a Cloud Service team and product profiles can grant and limit access to your licensed Adobe solutions.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 ---
+
 # AEM as a Cloud Service Team and Product Profiles {#product-profiles}
 
 Learn how AEM as a Cloud Service team and product profiles can grant and limit access to your licensed Adobe solutions.
@@ -17,9 +18,9 @@ AEM as a Cloud Service is a fully cloud-native offering that delivers AEM as a s
 
 Your AEM as a Cloud Service team members are added and assigned to one or more of the following product profiles via the Admin Console during onboarding.
 
-* **AEM Administrators**: An AEM administrator is typically assigned to developers, in particular developers who will need to have access to, for example, the development environments. The AEM administrator's product profile is used to grant administrator privileges in the associated AEM instance.
+* **AEM Administrators**: An AEM administrator is typically assigned to developers, in particular developers who need access to, for example, the development environments. The AEM administrator's product profile is used to grant administrator privileges in the associated AEM instance.
 
-* **AEM Users**: AEM users are the users in your organization who use AEM as a Cloud Service generally to create content. These users will need to access AEM to do their tasks. The AEM users product profile is typically assigned to an AEM content author who creates and reviews the content. This content can be of many types such as pages, assets, publications, and so on. The AEM users product profile shown below is assigned to these members.
+* **AEM Users**: AEM users are the users in your organization who use AEM as a Cloud Service generally to create content. These users need to access AEM to do their tasks. The AEM users product profile is typically assigned to an AEM content author who creates and reviews the content. This content can be of many types such as pages, assets, publications, and so on. The AEM users product profile shown below is assigned to these members.
 
 ![Product profiles](/help/onboarding/assets/admin-console-profiles.png)
 
@@ -35,7 +36,7 @@ Your AEM as a Cloud Service team members are added and assigned to one or more o
 
 >[!TIP]
 >
->* To learn more about about AEM product profiles, see [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md).
+>* To learn more about AEM product profiles, see [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md).
 >* For more information on the onboarding process, see [onboarding journey](/help/journey-onboarding/overview.md).
 
 ## Cloud Manager Product Profiles {#cloud-manager-product-profiles}
@@ -48,10 +49,18 @@ Cloud Manager has pre-configured product profiles which can be thought of as rol
 
 Each of the product profiles have specific permissions associated with them.
 
-* **Business Owner** - In this role you have the permission to add a new program or edit a program, add or update an environment, deploy code to AEM environment, or execute code quality checks.
-* **Deployment Manager** - In this role, you have the permission to add or update an environment, run any pipeline, and deploy code to AEM environment, or execute code quality checks.
-* **Developer** - In this role, you have the permission to generate personal access tokens to access git.
-* **Program Manager** - In this role, you have the permission to schedule pipelines, override the 3-tier quality gates, and provide production approval.
+* **Business Owner**
+  * In this role you have the permission to add a new program or edit a program, add or update an environment, deploy code to AEM environment, or execute code quality checks.
+  * This user is responsible for defining KPIs, approving production deployments, and overriding important 3-tier failures when necessary.
+* **Deployment Manager**
+  * In this role, you have the permission to add or update an environment, run any pipeline, and deploy code to AEM environment, or execute code quality checks.
+  * This user manages deployment operations and uses Cloud Manager to execute staging/production deployments, edit CI/CD pipelines, approve important 3-tier failures when necessary, and can access the git repository.
+* **Developer**
+  * In this role, you have the permission to generate personal access tokens to access git.
+  * This user develops and tests custom application code and primarily uses Cloud Manager to view deployment status and can access the git repository for code commits.
+* **Program Manager**
+  * In this role, you have the permission to schedule pipelines, override the 3-tier quality gates, and provide production approval.
+  * This user uses Cloud Manager to perform team setup, review status, view KPIs, and can approve important 3-tier failures when necessary.
 
 A user can be assigned to multiple product profiles. For example, assigning both **Business Owner** and **Deployment Manage**r roles to a user gives them the sum of these permissions. 
 
@@ -67,5 +76,5 @@ Your Cloud Manager team will include at least:
 
 >[!TIP]
 >
->* To learn more about about Cloud Manager product profiles, see [Assigning Team Members to Cloud Manager Product Profiles](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+>* To learn more about Cloud Manager product profiles, see [Assigning Team Members to Cloud Manager Product Profiles](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 >* For more information on the onboarding process, see [onboarding journey](/help/journey-onboarding/overview.md).

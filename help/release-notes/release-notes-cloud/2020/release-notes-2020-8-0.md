@@ -70,7 +70,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 ### What's New {#what-is-new-cloud-manager}
 
-* Content Audit is a feature enabled on Cloud Manager Sites Production Pipelines. The Production Pipeline configuration for programs with Sites now includes a third tab named **Content Audit**. Whenever a production pipeline is run, a new Content Audit step is included in the pipeline after custom functional testing which evaluates the site against a number of dimensions including performance, SEO (Search Engine Optimization), accessibility, best practices and PWA (Progressive Web App).
+* Content Audit is a feature enabled on Cloud Manager Sites Production Pipelines. The Production Pipeline configuration for programs with Sites now includes a third tab named **Content Audit**. Whenever a production pipeline is run, a new Content Audit step is included in the pipeline after custom functional testing which evaluates the site against several dimensions including performance, SEO (Search Engine Optimization), accessibility, best practices and PWA (Progressive Web App).
 
 
   >[!NOTE]
@@ -78,7 +78,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
    See [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 
-* Newly created environments in Assets programs will now be automatically configured with Smart Content Services.
+* Newlycreated environments in Assets programs will now be automatically configured with Smart Content Services.
 
 * Hibernated environments can be de-hibernated from the Cloud Manager's **Overview** page.
 

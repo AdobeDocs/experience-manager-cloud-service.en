@@ -22,13 +22,13 @@ You can publish or unpublish assets at the asset or folder level, using either *
 
 ## Publish assets using Quick Publish {#quick-publish}
 
-Quick publish allows you to immediately publish content to the selected destination. From the [!DNL Experience Manager Assets] console, navigate to the parent folder and select all the assets or folders that you want to publish. Click **[!UICONTROL Quick Publish]** option from the toolbar and select destination from the dropdown list where you want to publish the assets.
+Quick publish lets you immediately publish content to the selected destination. From the [!DNL Experience Manager Assets] console, navigate to the parent folder and select all the assets or folders that you want to publish. Click **[!UICONTROL Quick Publish]** option from the toolbar and select destination from the drop-down list where you want to publish the assets.
 
 ![Quick Publish](assets/quick-publish-to-aem.png)
 
 ## Publish assets using Manage Publication {#manage-publication}
 
-Manage publication allows you to publish or unpublish content to and from the selected destination, [add content](#add-content) to the publishing list from across the DAM repository, [include folder settings](#include-folder-settings) to publish content of the selected folders and apply filters, and [schedule publishing](#publish-assets-later) to a later date or time. 
+Manage publication lets you publish or unpublish content to and from the selected destination, [add content](#add-content) to the publishing list from across the DAM repository, [include folder settings](#include-folder-settings) to publish content of the selected folders and apply filters, and [schedule publishing](#publish-assets-later) to a later date or time. 
 
 From the [!DNL Experience Manager Assets] console, navigate to the parent folder and select all the assets or folders that you want to publish. Click **[!UICONTROL Manage Publication]** option from the toolbar. If you do not have [!DNL Dynamic Media] and [!DNL Brand Portal] configured in your [!DNL Experience Manager Assets] instance, you can publish assets and folders only to [!DNL Experience Manager Assets].
 
@@ -55,7 +55,7 @@ To continue, click **[!UICONTROL Next]**. Based on the selection, the **[!UICONT
 
 ### Add Content {#add-content}
 
-Publishing to [!DNL Experience Manager Assets] allows you to further add more content (assets and folders) to the publishing list. You can add more assets or folders to the list across the dam-repositories. Click **[!UICONTROL Add Content]** button to add more content. 
+Publishing to [!DNL Experience Manager Assets] lets you further add more content (assets and folders) to the publishing list. You can add more assets or folders to the list across the dam-repositories. Click **[!UICONTROL Add Content]** button to add more content. 
 
 You can add multiple assets from a folder or add multiple folders at a time. But you cannot add assets from multiple folders at a time. 
 
@@ -90,7 +90,7 @@ After applying the filters, click **[!UICONTROL OK]**, and then click **[!UICONT
 
 In the above Illustration, you can see different values for the **[!UICONTROL Publish Target]** attribute. Let us recollect the fact that you have opted for publishing to [!DNL Experience Manager Assets] (`Destination: Publish`). Then, why is it showing that only a folder and an asset are published to `AEM`, and the other two assets are published to both `AEM` and `Dynamic Media`?
 
-Here, you must understand the role of folder properties. A folder’s **[!UICONTROL Dynamic Media Publishing mode]** property plays an important role in publication. To view a folder’s properties, select a folder and click **[!UICONTROL Properties]** from the toolbar. For an asset, see the properties of its parent folder. 
+Here, you must understand the role of folder properties. A folder's **[!UICONTROL Dynamic Media Publishing mode]** property plays an important role in publication. To view a folder's properties, select a folder and click **[!UICONTROL Properties]** from the toolbar. For an asset, see the properties of its parent folder. 
 
 The following table explains how the publication occurs depending on the defined **[!UICONTROL Destination]** and **[!UICONTROL Dynamic Media Publish mode]**:
 
@@ -127,7 +127,6 @@ Let us now change the **[!UICONTROL Destination]** in the above use case to **[!
 >If you have customized the [!DNL Manage Publication] wizard, your customization continues to work with the existing functionalities.
 >
 >However, you can remove the existing customization to use the new [!DNL Manager Publication] features. 
-
 
 ## Publish assets later {#publish-assets-later}
 
@@ -173,9 +172,10 @@ You can publish assets, folders, and collections to the [!DNL Experience Manager
 
 ## Request Publication {#request-publication}
 
-The `Request Publication` option helps in authenticating workflow of Assets before getting them published on [!DNL AEM] Assets environment. [!DNL AEM] provides different level of permissions to various users. You can be a *contributor* who is uploading assets but cannot publish them until the uploads are verified. Additionally, being an *Admin* you can manage to read and write workflows of the Assets. 
+The `Request Publication` option helps in authenticating workflow of Assets before getting them published on [!DNL AEM] Assets environment. [!DNL AEM] provides different level of permissions to various users. You can be a *contributor* who is uploading assets but cannot publish them until the uploads are verified. Also, being an *Admin* you can manage to read and write workflows of the Assets. 
 
 Request publication option is available to the following users:
+
 * **Contributor:** If you are a user who can contribute to [!DNL AEM] Assets, then you have limited access to the [!DNL AEM] Assets workflow. `Manage publication` button is hidden for you. As a contributor, you can only contribute by adding Assets but you cannot publish them or have read access to the workflow.
 
 * **Workflow User:** This user cannot publish assets but has read access to the workflow. Being a workflow user, you can: 
