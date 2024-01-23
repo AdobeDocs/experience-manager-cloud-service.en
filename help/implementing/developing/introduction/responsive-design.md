@@ -115,7 +115,7 @@ Device group nodes are in the `/etc/mobile/groups` folder.
 
 Responsive pages will dynamically adapt to the device on which they are rendered, offering a better experience for the user. However it is also important that assets are optimized to the breakpoint and device to minimize page load time.
 
-[The Core Component Image Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) features adaptive image selection and responsive behavior with lazy loading.
+[The Core Component Image Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) features like adaptive image selection.
 
 * By default, the Image Component uses the [Adaptive Image Servlet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) to deliver the proper rendition.
 * [Web-Optimized Image Delivery](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) is also available, which delivers image assets from the DAM in WebP format and can reduce the download size of an image by about 25% on average.
