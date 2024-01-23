@@ -38,14 +38,6 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Early Adopter Program {#sites-early-adopter}
-
-**You can leverage the [Real User Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** to enable client-side collection for AEM as a Cloud Service. 
-
-Real User Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. While this is beneficial for customers who use either Adobe-managed CDN or non-Adobe-managed CDN. Additionally, for customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
-
-If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com`, along with your domain name for the production, stage and dev environment from your email address associated with your Adobe ID. Adobe's product team will then enable the Real User Monitoring (RUM) Data Service for you.
-
 ### Extension Manager in AEM Sites {#sites-extension-manager}
 
 **Explore the new [Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/)** to personalize your AEM setup by configuring UI extensions.
@@ -62,31 +54,6 @@ With the Extension Manager, you can:
 * Access Adobe’s experimental features through first-party extensions.
 
 We are actively seeking feedback and new use cases for UI extensions. If you would like to connect, please send an email to `uix@adobe.com`.
-
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
-
-### New Features in Assets View {#assets-view-features}
-
-**Create GenAI images with Adobe Firefly**
-
-Create new images based on search queries with an integration of Adobe Firefly text-to-image feature (requires Adobe Firefly license).
-
- ![Assets Firefly integration](/help/assets/assets/assets-firefly-integration.png)
-
-**Find Similar Images**
-
-You can now can easily find content by selecting an image and viewing similar images in the Experience Manager Assets repository.
-
-<!--
-
-* **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
-
-  ![storage usage insights](/help/assets/assets/block-tags.png)
-
-
-**Video Preview**: AEM Assets now generates preview renditions of all supported video formats by default, without the need to configure a processing profile.
-
--->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -121,20 +88,6 @@ Dynatrace OneAgent customers may monitor their AEM usage. [Read how](/help/imple
 ### RDE Support for Front-End Code using Site Themes and Site Templates: Early Adopter Program {#rde-frontend-early-adopter}
 
 [Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md). With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
-
-
-### CDN Configuration: Early Adopter Program {#cdn-config-early-adopter}
-
-In addition to the recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which includes the optionally licensable Web Application Firewall (WAF) rules, there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. We'd love to hear about your use cases, including:
-* 301/302 client-side redirects
-* proxying requests at the edge to arbitrary origins
-* URL transformations
-* setting or modifying request or response headers
-* custom error pages when the CDN can't reach AEM
-* authentication by username/password
-* any other useful CDN configurations
-
-Send an email to **aemcs-cdn-config-adopter@adobe.com** from your official email ID with your feedback.
 
 ## Cloud Manager {#cloud-manager}
 
