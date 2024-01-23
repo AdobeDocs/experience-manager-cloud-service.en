@@ -96,7 +96,7 @@ You can now can easily find content by selecting an image and viewing similar im
 
 ### Option for 99.99% publish-tier SLA {#higher-sla}
 
-There is now an option for AEM Sites customers to license a contractual 99.99% SLA on the production environment publish tier. Customers with a 99.99% SLA have at least [one additional publish region](/help/operations/additional-publish-regions.md) enabled, which increases availability. Learn more about this feature. 
+There is now an option for AEM Sites customers to license a contractual 99.99% SLA on the production environment publish tier. Customers with a 99.99% SLA have at least [one additional publish region](/help/operations/additional-publish-regions.md) enabled, which increases availability. [Learn more](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) about this feature, including how to enable it in Cloud Manager, once licensed. 
 
 ### Support for Dynatrace OneAgent {#dynatrace}
 
