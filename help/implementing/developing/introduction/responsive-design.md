@@ -113,7 +113,7 @@ Device group nodes are in the `/etc/mobile/groups` folder.
 
 ## Responsive Images {#responsive-images}
 
-Responsive pages will dynamically adapt to the device on which they are rendered, offering a better experience for the user. However it is also important that assets that are appropriate to the device are also delivered and thus minimizing page load time.
+Responsive pages will dynamically adapt to the device on which they are rendered, offering a better experience for the user. However it is also important that assets are optimized to the breakpoint and device to minimize page load time.
 
 [The Core Component Image Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) features adaptive image selection and responsive behavior with lazy loading.
 
