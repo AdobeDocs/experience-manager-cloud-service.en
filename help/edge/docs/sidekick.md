@@ -1,7 +1,8 @@
 ---
-description: "\u200B\u200BThe AEM sidekick provides content authors with a toolbar offering context-aware options so that they can edit, preview, and publish their content directly from the pages of your website."
+description: ​​The AEM sidekick provides content authors with a toolbar offering context-aware options so that they can edit, preview, and publish their content directly from the pages of your website.
 title: Using the AEM Sidekick
 feature: Edge Delivery Services
+exl-id: 9a833adc-0b69-4f58-94d3-7a25cf774703
 ---
 # Using the AEM Sidekick
 
