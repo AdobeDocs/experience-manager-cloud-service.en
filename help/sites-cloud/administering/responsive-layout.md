@@ -33,7 +33,7 @@ With these responsive grid mechanisms you can:
 
 ## Enabling the Emulator {#enabling-emulator}
 
-The WKND sample site and the Core Components are already enabled to use the emulator. If you have developed your own content not based on the Core Components and archetype, please see the document [Responsive Design](/help/implementing/developing/introduction/responsive-design.md) for details on how to develop your components while leveraging these features.
+The [Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) and the [Standard Site Template](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) are already enabled to use the emulator. If you have developed your own content not based on the Core Components or archetype, please see the document [Responsive Design](/help/implementing/developing/introduction/responsive-design.md) for details on how to develop your components while leveraging these features.
 
 ## Activate Layout Mode for your Site {#activate-layout-mode-for-your-site}
 
