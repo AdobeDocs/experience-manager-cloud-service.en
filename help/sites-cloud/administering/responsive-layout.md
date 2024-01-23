@@ -45,7 +45,7 @@ Breakpoints are vital to responsive design and define how and when content is ad
 
 * Breakpoints have a title and a width:
   * The title describes the generic device grouping, with orientation if necessary.
-    * For example, `phone`, `tablet`, `tabletlandscape`
+    * For example, `phone`, `tablet`
   * The width defines the maximum width in pixels for that generic device grouping.
     * For example, if the breakpoint phone has a width of 768 then that it the maximum width of the layout used for a phone device.
 * Breakpoints can be defined:
