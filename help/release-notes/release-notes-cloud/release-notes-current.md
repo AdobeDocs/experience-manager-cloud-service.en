@@ -46,6 +46,22 @@ Real User Monitoring (RUM) Data Service offers a more precise reflection of user
 
 If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com`, along with your domain name for the production, stage and dev environment from your email address associated with your Adobe ID. Adobe's product team will then enable the Real User Monitoring (RUM) Data Service for you.
 
+### Extension Manager in AEM Sites {#sites-extension-manager}
+
+**Explore the new [Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/)** to personalize your AEM setup by configuring UI extensions.
+
+![Extension Manager in AEM Sites](/help/assets//sites/extension-manager/homepage.png)
+
+The Extension Manager in AEM Sites enables developers and practitioners to access, manage, and customize UI extensions built to enhance the functionality of AEM Sites.
+With the Extension Manager, you can:
+
+* Enable or disable extensions on a per-instance basis;
+* Configure extension parameters;
+* Preview extensions and generate a shareable preview link;
+* Discover UI extensibility features via interactive demos;
+* Access Adobe’s experimental features through first-party extensions.
+
+We are actively seeking feedback and new use cases for UI extensions. If you would like to connect, please send an email to `uix@adobe.com`.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
