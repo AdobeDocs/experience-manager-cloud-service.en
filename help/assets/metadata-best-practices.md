@@ -64,13 +64,13 @@ Your metadata strategy may include defining the following:
 
 * **Objectives:** Clearly describe the objectives and expected results of the metadata. Identify what you aim to achieve by adding the metadata.
 
-* **Purpose:** Define why you are capturing metadata. Specify the value it adds to your processes, systems, or organization.
+* **Purpose:** Define why you are capturing metadata. Specify the value that it adds to your processes, systems, or organization.
 
-* **Accessibility plan:** Create a plan to make the metadata easily accessible and discoverable. Explain who will use it, and the tools or methods to use. 
+* **Accessibility plan:** Create a plan to make the metadata easily accessible and discoverable. Explain who is going to use it, and the tools or methods to use. 
 
-* **Metadata properties:** Identify and define each metadata property carefully. Ensure each property has a clear reason for being included, connecting to the objectives and purpose.
+* **Metadata properties:** Identify and define each metadata property carefully. Ensure that each property has a clear reason for being included, connecting to the objectives and purpose.
 
-Thoughtfully plan the strategy to ensure consistent results throughout the repository. Learn more about [metadata schemas](metadata-schemas.md).
+To ensure consistent results throughout the repository, thoughtfully plan the strategy. Learn more about [metadata schemas](metadata-schemas.md).
 
 ### Create a metadata governance plan
 
@@ -117,7 +117,7 @@ You can consider the following best practices to optimize your metadata searchab
 
    1. Go to **[!UICONTROL Assets]** > **[!UICONTROL File]** > **[!UICONTROL [Asset folder]]**.
    1. Select the asset for which you want to update the metadata, and then click **[!UICONTROL Properties]**.
-   1. Navigate to the **[!UICONTROL Advanced]** tab, and then click **[!UICONTROL Add]** under the **[!UICONTROL Elevate for search keywords]**. <br>You must use the default metadata schema in order to elevate your search keywords. 
+   1. Navigate to the **[!UICONTROL Advanced]** tab, and then click **[!UICONTROL Add]** under the **[!UICONTROL Elevate for search keywords]**. <br>You must use the default metadata schema to elevate the search keywords. 
    1. Enter the keyword for which you want to boost the search, and then click **[!UICONTROL Add]**.<br>
    You can add multiple keywords and arrange them as per your priority.
    1. Click **[!UICONTROL Save & Close]**.<br>
@@ -145,7 +145,7 @@ Try the following best practices to simplify the metadata:
 
 * **Eliminate unnecessary default properties:** Simplify the metadata form by eliminating default out-of-the-box properties irrelevant to your use case. Remove rarely used default properties for a cleaner interface and experience.
 
-* **Periodically review and update metadata:** Regularly update metadata and adapt to changing needs and technologies to ensure users provide valuable information over time.
+* **Periodically review and update metadata:** Regularly update metadata and adapt to changing needs and technologies to ensure that users provide valuable information over time.
 
 ### Analyze content journey
 
