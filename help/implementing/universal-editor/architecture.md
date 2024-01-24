@@ -8,6 +8,8 @@ exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 
 Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 
+{{universal-editor-status}}
+
 ## Architecture Building Blocks {#building-blocks}
 
 The Universal Editor is made up of four essential building blocks that interact to allow content authors to edit any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.

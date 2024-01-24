@@ -25,7 +25,7 @@ Once you have [configured your production Pipeline](/help/implementing/cloud-man
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click the program for which you want to deploy code.
+1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, tap or click the program for which you want to deploy code.
 
 1. Click **Deploy** from the call-to-action on the **Overview** screen to start the deployment process.
 
@@ -145,7 +145,7 @@ In such circumstances where a re-execution is possible, the production pipeline 
 
 ### Re-Execute API {#reexecute-API}
 
-In addition to being available in the UI, you can use [the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) to trigger re-executions as well as identify executions that were triggered as re-executions.
+In addition to being available in the UI, you can use [the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) to trigger re-executions and identify executions that were triggered as re-executions.
 
 #### Triggering a Re-Execution {#reexecute-deployment-api}
 

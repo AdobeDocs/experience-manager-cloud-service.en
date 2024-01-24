@@ -83,7 +83,7 @@ The template can be previewed with any category / product. Open **Page Informati
 
 ![create template ](assets/create-template-picker.png)
 
-Now we have to assign this template to the specific category. Open properties in the **Page Information** menu and switch to the commerce tab. Click the folder icon to select the **Shop The Look** category from the category picker. It is possible to assign multiple categories to a template and also including sub-categories by enabling the checkbox.
+Now you have to assign this template to the specific category. Open properties in the **Page Information** menu and switch to the commerce tab. Click the folder icon to select the **Shop The Look** category from the category picker. It is possible to assign multiple categories to a template and also including sub-categories by enabling the checkbox.
 
 ![create template associate](assets/create-template-associate.png)
 

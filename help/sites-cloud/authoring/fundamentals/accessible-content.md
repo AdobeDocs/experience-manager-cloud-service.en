@@ -279,7 +279,7 @@ Follow the guidance provided for [Audio Description or Media Alternative (Prerec
 
 ### Adaptable (1.3) {#adaptable}
 
-[Guideline 1.3 Adaptable: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.](https://www.w3.org/TR/WCAG/#adaptable)
+[Guideline 1.3 Adaptable: Create content that can be presented in different ways (for example, simpler layout) without losing information or structure.](https://www.w3.org/TR/WCAG/#adaptable)
 
 This guideline covers the requirements necessary to support people who:
 
@@ -301,7 +301,7 @@ This success criterion exists to make sure that such structural information is p
 
 #### How to Meet - Info and Relationships (1.3.1) {#how-to-meet-info-and-relationships}
 
-AEM makes it easy to construct semantically meaningful web content using the appropriate HTML elements. Open your page content in the RTE (a Text component), and use the **Paraformat** menu (paragraph symbol) to specify the appropriate structural element (for example paragraph, heading, and so on).
+AEM makes it easy to construct semantically meaningful web content using the appropriate HTML elements. Open your page content in the RTE (a Text component), and use the **Paraformat** menu (paragraph symbol) to specify the appropriate structural element (for example, paragraph, heading, and so on).
 
 You can make sure that your web pages are given the appropriate structure by using the following elements where applicable:
 
@@ -436,7 +436,7 @@ Similarly, information that requires distinguishing between different sounds (fo
 
 Make sure that any information that relies on visual characteristics of page content is also presented in an alternative format.
 
-* Do not rely on visual position to give information. For example, if you want to refer users to a menu on the right-hand side of the page for access to further information, do not refer to *the menu on the right*; instead, name the menu (for example via a heading) and refer to that name in text.
+* Do not rely on visual position to give information. For example, if you want to refer users to a menu on the right-hand side of the page for access to further information, do not refer to *the menu on the right*; instead, name the menu (for example, via a heading) and refer to that name in text.
 * Do not rely on text styling (for example, bold or italicized text) as the only way to convey information.
 
 >[!NOTE]
@@ -1204,7 +1204,7 @@ The positioning of labels is also important as it helps them to locate appropria
 * All other form components (for example, text boxes, combo boxes):
   Labels are positioned either immediately above or immediately to the left of the field.
 
-In simple forms with limited functionality, appropriately labelling a `Submit` button can act as a label for the adjacent field (for example `Search`). This is useful in situations when finding space for the label text might be difficult.
+In simple forms with limited functionality, appropriately labelling a `Submit` button can act as a label for the adjacent field (for example, `Search`). This is useful in situations when finding space for the label text might be difficult.
 
 #### More Information - Labels or Instructions (3.3.2) {#more-information-labels-or-instructions}
 

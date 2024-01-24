@@ -96,7 +96,7 @@ The actual appearance and handling is dependent on the device type you are using
 
 ## Assets Browser {#assets-browser}
 
-The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.
+The assets browser shows all [assets](/help/assets/overview.md) that are available for direct use on your current page.
 
 The assets browser is a tab within the side panel along with the [components browser](#components-browser) and [content tree](#content-tree). To open or close the side panel use the icon at the top left of the toolbar:
 
@@ -220,7 +220,7 @@ Select the appropriate reference type for more information. In certain situation
 
 * **Incoming Links**, provides a list of pages that reference the page, together with direct access to **Edit** one of those pages when you select a specific link.
 
-  * This can only show static links, not dynamically generated links; for example from the List component.
+  * This can only show static links, not dynamically generated links; for example, from the List component.
 
 * Instances of borrowed and lent content using the **Reference** component, from here you can navigate to the referencing/referenced page
 * [Launches](/help/sites-cloud/authoring/launches/overview.md), provides access to related launches

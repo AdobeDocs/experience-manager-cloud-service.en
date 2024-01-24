@@ -37,5 +37,5 @@ The Release Date for Content Transfer Tool v1.7.10 is December 08, 2021.
 
 ### What's New {#what-is-new-ctt}
 
-* Toggle added to the ingestion phase in the Content Transfer Tool to allow users to disable [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) during ingestion. For optimal ingestion speeds, pre-copy during ingestion should be disabled for small migration sets or if only a few blobs were added since the last ingestion. 
+* Toggle added to the ingestion phase in the Content Transfer Tool to allow users to disable [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) during ingestion. For optimal ingestion speeds, pre-copy during ingestion should be disabled for small migration sets or if only a few blobs were added since the last ingestion. 
 * User Mapping updated to use improved User Management API that allows it to get 2000 users at a time, significantly improving the performance.

@@ -1,6 +1,7 @@
 ---
 title: How can we create and use themes in Adaptive Forms?
 description: You can use themes to style and provide a visual identity to an Adaptive Form using core components. You can share a theme across any number of Adaptive Forms.
+feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 ---
 # Themes in Adaptive Forms {#themes-for-af-using-core-components}
@@ -161,7 +162,7 @@ Similarly, you can use the `variable.scss` file to set font family and type, the
 
 ##### Set component level styles {#component-based-customization}
 
-You can also change font, color, size, and other CSS properties of a specific Adaptive Form core component. For example button, checkbox, container, footer, and more. You can style button or checkbox by editing the CSS file of the specific component to align it with your organization's style. To customize a style of a component:
+You can also change font, color, size, and other CSS properties of a specific Adaptive Form core component. For example, button, checkbox, container, footer, and more. You can style button or checkbox by editing the CSS file of the specific component to align it with your organization's style. To customize a style of a component:
 
 1. Open the file `<your-theme-sources>/src/components/<component>/<component.scss>` for editing. For example, to change the font color of the button component, open the `<your-theme-sources>/src/components/button/button.scss`, file .
 1. Change the value of any as per your requirements. For example, to change the color of the button component on mouse hover to `green`, change the value of the `color: $white` property in the `cmp-adaptiveform-button__widget:hover` class to hex code `#12B453` or any other shade of `green`. The final code looks like the following:
@@ -376,7 +377,7 @@ Steps to apply a theme to an Adaptive Form are:
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 

@@ -3,13 +3,10 @@ title: Custom Permissions
 description: Learn how you can use custom permissions to create custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Managers users.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
 ---
+
 # Custom Permissions {#custom-permissions}
 
 Learn how you can use custom permissions to create custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Managers users.
-
->[!NOTE]
->
->This feature is only available to [the early adopter program.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 
 ## Introduction {#introduction}
 
@@ -34,7 +31,7 @@ To create and use your own custom permissions, it requires three steps:
 1. [Assign custom permissions to the product profile.](#assign-permissions)
 1. [Assign users to the product profile.](#assign-users)
 
-This section details these steps. You may find it useful to refer to the [Terms](#terms) and [Configurable Permissions](#configurable-permissions) sections as you create your own custom permissions.
+This section details these steps. You may find it useful to see [Terms](#terms) and [Configurable Permissions](#configurable-permissions) sections as you create your own custom permissions.
 
 >[!NOTE]
 >

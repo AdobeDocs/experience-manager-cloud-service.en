@@ -36,7 +36,7 @@ Follow the steps below to navigate to Cloud Acceleration Manager (CAM):
 >id="aemcloud_cam_gettingstarted"
 >title="Getting Started with Cloud Acceleration Manager"
 >abstract="Create your project and kickstart your journey to AEM as a Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=en" text="Benefits of using Cloud Acceleration Manager"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html" text="Benefits of using Cloud Acceleration Manager"
 
 The landing page of the Cloud Acceleration Manager (CAM) lets you create and edit multiple projects.
 
@@ -91,4 +91,4 @@ Follow the steps below to delete your project:
 
 ## What's Next {#whats-next}
 
-After you have learned how to log into Cloud Acceleration Manager and how to create a project, you are ready to review the next step in the [Readiness Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en).
+After you have learned how to log into Cloud Acceleration Manager and how to create a project, you are ready to review the next step in the [Readiness Phase](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).

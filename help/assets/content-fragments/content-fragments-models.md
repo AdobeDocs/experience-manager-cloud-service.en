@@ -1,6 +1,6 @@
 ---
 title: Content Fragment Models (Assets - Content Fragments)
-description: Learn how Content Fragment Models serve as a foundation for your headless content in AEM and how to create Content Fragments with structured content.
+description: Learn how Content Fragment Models serve as a foundation for your headless content in AEM, allowing you to create Content Fragments with structured content.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 ---
 # Content Fragment Models {#content-fragment-models}
@@ -144,7 +144,7 @@ Many properties are self-explanatory, for certain properties additional details 
   >If models created in earlier versions of AEM contain illegal characters, remove or update those characters.
 
 * **Render As**
-  The various options for realizing/rendering the field in a fragment. Often this property lets you  define whether the author sees a single instance of the field, or is allowed to create multiple instances.
+  The various options for realizing/rendering the field in a fragment. Often this property lets you define whether the author sees a single instance of the field, or is allowed to create multiple instances. When **Multiple Field** is used you can define the minimum and maximum number of items - see [Validation](#validation) for further details. 
 
 * **Field Label**
   Entering a **Field Label** will autogenerate a **Property Name**, which can then be manually updated if necessary.
@@ -206,6 +206,17 @@ Various data types now include the possibility to define validation requirements
   * Only images within a predefined range of width and/or height (in pixels) can be referenced. 
 * **Fragment Reference**
   * Test for a specific content fragment model.
+* **Min Number of Items** / **Max Number of Items**
+
+  Fields that have been defined as a **Multiple Field** (set with **Render As**) have the options:
+
+  * **Min Number of Items**
+  * **Max Number of Items**
+
+  These are validated:
+  
+  * The max value is validated in the [original Content Fragment Editor](/help/assets/content-fragments/content-fragments-variations.md).
+  * Both are validated in the [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Using References to form Nested Content {#using-references-to-form-nested-content}
 

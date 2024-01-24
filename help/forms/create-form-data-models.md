@@ -1,7 +1,7 @@
 ---
 title: How to create Form Data Model?
 description: Learn to create a form data model (FDM), and send or retrieve data to a datasource using an Adaptive Form or an AEM Workflow.
-feature: Form Data Model
+feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
@@ -31,17 +31,17 @@ exl-id: b17b7441-912c-44c7-a835-809f014a8c86
 Ensure that you have configured the data sources you intend to use in the Form Data Model as described in [Configure data sources](configure-data-sources.md). Do the following to create a Form Data Model based on configured data sources:
 
 1. In [!DNL Experience Manager] author instance, navigate to **[!UICONTROL Forms > Data Integrations]**.
-1. Tap **[!UICONTROL Create > Form Data Model]**.
+1. Select **[!UICONTROL Create > Form Data Model]**.
 1. In the Create Form Data Model dialog:
 
     * Specify a name for the form data model.
     * (**Optional**) Specify title, description, and tags for the form data model.
-    * (**Optional and applicable only if data sources are configured**) Tap the tick icon next to the **[!UICONTROL Data Source Configuration]** field and select the configuration node where cloud services for the data sources you want to use reside. It restricts the list of data sources available for selection on the next page to the ones available in the selected configuration node. However, any [!DNL Experience Manager] user profile data sources are listed by default. If you do not select a configuration node, data sources from all configuration nodes are listed.
+    * (**Optional and applicable only if data sources are configured**) Select the tick icon next to the **[!UICONTROL Data Source Configuration]** field and select the configuration node where cloud services for the data sources you want to use reside. It restricts the list of data sources available for selection on the next page to the ones available in the selected configuration node. However, any [!DNL Experience Manager] user profile data sources are listed by default. If you do not select a configuration node, data sources from all configuration nodes are listed.
 
-1. Tap **[!UICONTROL Next]**.
+1. Select **[!UICONTROL Next]**.
 
 1. (**Applicable only if data sources are configured**) The **[!UICONTROL Select Datasource]** screen lists available data sources, if any. Select data sources you want to use in the form data model.
-1. Tap **[!UICONTROL Create]** and on the confirmation dialog, tap **[!UICONTROL Open]** to open the Form Data Model editor.
+1. Select **[!UICONTROL Create]** and on the confirmation dialog, select **[!UICONTROL Open]** to open the Form Data Model editor.
 
     Let us review the different components of the Form Data Model editor UI.
 
@@ -65,21 +65,21 @@ For more information about Form Data Model editor and how you can work with it t
 
 Do the following to add or update data sources to an existing form data model.
 
-1. Go to **[!UICONTROL Forms > Data Integrations]**, select the Form Data Model in which you want to add or update data sources, and tap **[!UICONTROL Properties]**.
+1. Go to **[!UICONTROL Forms > Data Integrations]**, select the Form Data Model in which you want to add or update data sources, and select **[!UICONTROL Properties]**.
 1. In the Form Data Model properties, go to the **[!UICONTROL Update Source]** tab.
 
    In the **[!UICONTROL Update Source]** tab:
 
-    * Tap the browse icon in the **[!UICONTROL Context-Aware Configuration]** field and select a configuration node where cloud configuration for the data source you want to add resides. If you do not select a node, cloud configurations residing only in the `global` node are listed when you tap **[!UICONTROL Add Sources]**.
+    * Select the browse icon in the **[!UICONTROL Context-Aware Configuration]** field and select a configuration node where cloud configuration for the data source you want to add resides. If you do not select a node, cloud configurations residing only in the `global` node are listed when you select **[!UICONTROL Add Sources]**.
   
-    * To add a new data source, tap **[!UICONTROL Add Sources]** and select the data sources to add to the form data model. All data sources configured in `global` and the selected configuration node, if any, are displayed.
+    * To add a new data source, select **[!UICONTROL Add Sources]** and select the data sources to add to the form data model. All data sources configured in `global` and the selected configuration node, if any, are displayed.
   
-    * To replace an existing data source with another data source of the same type, tap the **[!UICONTROL Edit]** icon for the data source and select from the list of available data sources.
-    * To delete an existing data source, tap the **[!UICONTROL Delete]** icon for the data source. The Delete icon is disabled if a data model object in the data source is added in the form data model.
+    * To replace an existing data source with another data source of the same type, select the **[!UICONTROL Edit]** icon for the data source and select from the list of available data sources.
+    * To delete an existing data source, select the **[!UICONTROL Delete]** icon for the data source. The Delete icon is disabled if a data model object in the data source is added in the form data model.
 
       ![fdm-properties](assets/fdm-properties.png)
 
-1. Tap **[!UICONTROL Save & Close]** to save the updates.
+1. Select **[!UICONTROL Save & Close]** to save the updates.
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ Do the following to add or update data sources to an existing form data model.
 
 [!UICONTROL Form Data Model] utilizes [Sling context-aware configurations](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) to support different data source parameters to connect with data sources for different [!DNL Experience Manager] run modes.
 
-When [!UICONTROL Form Data Model] uses cloud configurations to store parameters, which when checked-in and deployed through source control (Cloud-Manager GIT repository) creates cloud configuration with same parameters for all the run modes (Development, Stage, and Production). However, for use cases where there is a need to have different data sets for test and production environments, then we use data source parameters (for example data source URL) for different [!DNL Experience Manager] run modes.
+When [!UICONTROL Form Data Model] uses cloud configurations to store parameters, which when checked-in and deployed through source control (Cloud-Manager GIT repository) creates cloud configuration with same parameters for all the run modes (Development, Stage, and Production). However, for use cases where there is a need to have different data sets for test and production environments, then we use data source parameters (for example, data source URL) for different [!DNL Experience Manager] run modes.
 
 To achieve this you need to create an OSGi configuration that contains data source parameters-value pairs. This overrides the same pair from [!UICONTROL Form Data Model] cloud configuration at run time. As the OSGi configurations support these run modes by default, you can override a data source parameter to different values based on run mode.
 

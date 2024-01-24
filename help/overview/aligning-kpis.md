@@ -9,8 +9,8 @@ exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 >id="aemcloud_alignkpis"
 >title="Aligning KPIs"
 >abstract="In a digital world, you can measure almost everything. Choosing the right KPIs for your Adobe Experience Manager implementation helps your team focus on what matters most."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=en" text="Assessing KPIs"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=en" text="Choosing the Right Team"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html" text="Assessing KPIs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html" text="Choosing the Right Team"
 
 In a digital world, you can measure almost everything. Choosing three KPIs for your Adobe Experience Manager implementation helps your team focus on what matters most.
 

@@ -183,7 +183,7 @@ The Release Date for Cloud Acceleration Manager is July 15, 2021.
  
 ### What is New {#what-is-new-cam}
 
-Cloud Acceleration Manager is a cloud-based application designed to guide your IT teams throughout the transition journey starting from planning to going live on Cloud Service. Set up your team for a successful migration with Adobe-recommended best practices, tips, documentation, and tools to help at every phase of the journey to AEM as Cloud Service. Learn more [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+Cloud Acceleration Manager is a cloud-based application designed to guide your IT teams throughout the transition journey starting from planning to going live on Cloud Service. Set up your team for a successful migration with Adobe-recommended best practices, tips, documentation, and tools to help at every phase of the journey to AEM as Cloud Service. Learn more [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html).
 
 >[!NOTE]
 >

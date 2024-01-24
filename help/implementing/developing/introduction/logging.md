@@ -184,14 +184,14 @@ The following are examples of the recommended logging configurations (using the 
 
 AEM as a Cloud Service's HTTP request logging provides insight into the HTTP requests made to AEM and their HTTP responses in time order. This log is helpful to understand the HTTP Requests made to AEM and the order they are processed and responded to.
 
-The key to understanding this log is mapping the HTTP request and response pairs by their IDs, denoted by the numeric value in the brackets. Note that often requests and their corresponding responses have other HTTP requests and responses interjected between them in the log.
+The key to understanding this log is mapping the HTTP request and response pairs by their IDs, denoted by the numeric value in the brackets. Often requests and their corresponding responses have other HTTP requests and responses interjected between them in the log.
 
 **Example Log**
 
 ```
-29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:21 +0000 [137] > POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
-29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:22 +0000 [139] > GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
 29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
@@ -279,7 +279,7 @@ This set of logs provides insights into HTTP requests to the AEM as a Cloud Serv
 
 ### Apache HTTPD Web Server Access Log {#apache-httpd-web-server-access-log}
 
-The Apache HTTP Web Server access log provides statements for each HTTP request that reaches the Publish tier's Web server/Dispatcher. Note that requests that are served from an upstream CDN are not reflected in these logs.
+The Apache HTTP Web Server access log provides statements for each HTTP request that reaches the Publish tier's Web server/Dispatcher. Requests that are served from an upstream CDN are not reflected in these logs.
 
 See information about the error log format in the [official apache documentation](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -391,7 +391,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 The mod_rewrite log levels are defined by the variable REWRITE_LOG_LEVEL in the file `conf.d/variables/global.var`.
 
-It can be set to error, warn, info, debug and trace1 - trace8, with a default value of warn. To debug your RewriteRules, it is recommended to raise the log level to trace2.
+It can be set to error, warn, info, debug and trace1 - trace8, with a default value of warn. To debug your RewriteRules, it is recommended to raise the log level to trace2. It's recommended to debug rewrite rules using the [Dispatcher SDK](../../dispatcher/validation-debug.md). The maximal log level for AEM as a Cloud Service is `debug`. Thus it is currently not effectively possible to debug rewrite rules in the cloud.
 
 See the [mod_rewrite module documentation](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) for more information.
 
@@ -606,7 +606,7 @@ Customers who have Splunk accounts may request via customer support ticket that 
 
 The network bandwidth associated with logs sent to Splunk are considered part of the customer's Network I/O usage.
 
-Note that Splunk forwarding does not yet support CDN logs.
+CDN logs will be forwarded to Splunk for new support ticket requests; customers who already have Splunk forwarding enabled will be able to add CDN logs in the future.
 
 ### Enabling Splunk Forwarding {#enabling-splunk-forwarding}
 

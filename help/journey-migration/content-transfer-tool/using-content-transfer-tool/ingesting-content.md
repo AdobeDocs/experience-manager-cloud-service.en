@@ -29,7 +29,7 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
      * Migration Sets will expire after a prolonged period of inactivity, so it is expected that the ingestion occurs relatively soon after the extraction has been performed. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
    
    >[!TIP]
-   > If the extraction is currently running, the dialog will indicate it. Once extraction has completed successfully, the ingestion will start automatically. If the extraction fails or is stopped, the ingestion job will be rescinded.
+   > If the extraction is running, the dialog will indicate it. Once extraction has completed successfully, the ingestion starts automatically. If the extraction fails or is stopped, the ingestion job will be rescinded.
 
    * **Destination:** Select the destination environment. This environment is where the content of the migration set is ingested.
      * Ingestions do not support a Rapid Development Environment (RDE) destination, and they do not appear as a possible destination choice, even if the user has access to it.
@@ -39,17 +39,17 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
      * If the source was `Author`, it is recommended to ingest it into the `Author` tier on the target. Similarly, if source was `Publish`, the target should be `Publish` as well.
 
    >[!NOTE]
-   > If the target tier is `Author`, the author instance is shut down during the length of the ingestion and becomes unavailable to users (for example, authors or anyone performing maintenance). The reason is to protect the system, and prevent any changes which could either be lost or cause an ingestion conflict. Ensure that your team is aware of this fact. Also note that the environment appears hibernated during the author ingestion.
+   > If the target tier is `Author`, the author instance is shut down during the length of the ingestion and becomes unavailable to users (for example, authors or anyone performing maintenance). The reason is to protect the system, and prevents any changes which could either be lost or cause an ingestion conflict. Ensure that your team is aware of this fact. Also note that the environment appears hibernated during the author ingestion.
 
    * **Wipe:** Choose the `Wipe` value
      * The **Wipe** option sets the destination's starting point of the ingestion. If **Wipe** is enabled, the destination including all its content is reset to the version of AEM that is specified in Cloud Manager. If not enabled, the destination maintains its current content as the starting point.
-     * Note that this option does **NOT** affect how the ingestion of content will be performed. Ingestion always uses a content replacement strategy and _not_ a content merge strategy so, in both **Wipe** and **Non-Wipe** cases, the ingestion of a migration set will overwrite contents in the same path on the destination. For instance, if the migration set contains `/content/page1` and the destination already contains `/content/page1/product1`, the ingestion will remove the entire `page1` path and its subpages, including `product1`, and replace it with the content in the migration set. This means careful planning must be done when performing a **Non-Wipe** ingestion to a destination that contains any content that should be maintained. 
+     * This option does **NOT** affect how the ingestion of content will be performed. Ingestion always uses a content replacement strategy and _not_ a content merge strategy so, in both **Wipe** and **Non-Wipe** cases, the ingestion of a migration set will overwrite contents in the same path on the destination. For instance, if the migration set contains `/content/page1` and the destination already contains `/content/page1/product1`, the ingestion removes the entire `page1` path and its subpages, including `product1`, and replace it with the content in the migration set. This means careful planning must be done when performing a **Non-Wipe** ingestion to a destination that contains any content that should be maintained. 
 
    >[!IMPORTANT]
    > If the setting **Wipe** is enabled for the ingestion, it resets the entire existing repository including the user permissions on the target Cloud Service instance. This resetting is true also for an admin user added to the **administrators** group and that user must be added to the administrators group again to start an ingestion.
 
    * **Pre-Copy:** Choose the `Pre-copy` value
-     * You can run the optional pre-copy step to significantly speed up the ingestion. See [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details.
+     * You can run the optional pre-copy step to significantly speed-up the ingestion. See [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details.
      * If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run `Author` ingestion first alone. Doing so speeds up the `Publish` ingestion when it is run later.
 
    >[!IMPORTANT]
@@ -72,7 +72,7 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Top Up Ingestion"
->abstract="Use the top-up feature to move modified content since the previous content transfer activity. Upon completion of Ingestion, check the logs for any error/warnings. Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe Customer Care."
+>abstract="Use the top-up feature to move content modified since the previous content transfer activity. Upon completion of Ingestion, check the logs for any errors or warnings. Any errors should be addressed immediately either by dealing with the issues reported or by contacting Adobe Customer Care."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Viewing Logs"
 
 The Content Transfer Tool has a feature that allows the extraction of differential content by performing a *top-up* of the migration set. This allows the migration set to be modified to include only the content that has changed since the previous extraction without having to extract all the content again.
@@ -87,6 +87,12 @@ Begin by creating an Ingestion Job and ensure that **Wipe** is disabled during t
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
 ## Troubleshooting {#troubleshooting}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion_troubleshooting"
+>title="Content Ingestion Troubleshooting"
+>abstract="Refer to the ingestion logs and the documentation to find solutions to common reasons why an ingestion can fail and find the way to fix the problem. Once fixed, the ingestion can be run again."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="Validating Content Transfers"
 
 ### CAM Unable to Retrieve the Migration Token {#cam-unable-to-retrieve-the-migration-token}
 
@@ -120,14 +126,14 @@ This message indicates that the Cloud Acceleration Manager was unable to reach t
 
 * AEM as a Cloud Service maintains the environment state, and occasionally must restart the migration service for various normal reasons. If that service is restarting, it cannot be reached, but is available eventually.
 * It is possible that another process is being run on the instance. For example, if [AEM Version Updates](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) is applying an update, the system may be busy and the migration service regularly unavailable. Once that process is done, the start of the ingestion can be attempted again. 
-* If an [IP Allowlist has been applied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) through Cloud Manager, it blocks Cloud Acceleration Manager from reaching the migration service. An IP address cannot be added for ingestions because its address is dynamic. Currently, the only solution is to disable the IP allow list while the ingestion is running.
-* There may be other reasons that need investigation. If the ingestion still continues to fail, contact Adobe Customer Care.
+* If an [IP Allowlist has been applied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) through Cloud Manager, it blocks Cloud Acceleration Manager from reaching the migration service. An IP address cannot be added for ingestions because its address is dynamic. Currently, the only solution is to disable the IP allowlist during the ingestion and indexing process.
+* There may be other reasons that need investigation. If the ingestion or indexing continues to fail, contact Adobe Customer Care.
 
-### AEM Version Updates and Ingestions
+### AEM Version Updates and Ingestions {#aem-version-updates-and-ingestions}
 
 [AEM Version Updates](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) are automatically applied to environments to keep them up to date with the most recent AEM as a Cloud Service version. If the update is triggered when an ingestion is performed, it can cause unpredictable results including the corruption of the environment.
 
-If the "AEM Version Updates" is onboarded on the destination program, the ingestion process will attempt to disable its queue before it starts. When the ingestion is complete the version updater state will be returned to how it was before the ingestion(s) started.
+If the "AEM Version Updates" is onboarded on the destination program, the ingestion process attempts to disable its queue before it starts. When the ingestion is complete, the version updater state is returned to how it was before the ingestions started.
 
 >[!NOTE]
 >
@@ -137,37 +143,45 @@ If "AEM Version Updates" is active (that is, updates are running or are queued t
 
 >[!NOTE]
 >
-> "AEM Version Updates" is run in the environment's pipeline and will wait until the pipeline is clear. If updates are queued for longer than expected, ensure a custom workflow does not have the pipeline unintentionally locked. 
+> "AEM Version Updates" is run in the environment's pipeline and waits until the pipeline is clear. If updates are queued for longer than expected, ensure that a custom workflow does not have the pipeline unintentionally locked. 
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Top-up Ingestion Failure Due to Uniqueness Constraint Violation
+### Top-up Ingestion Failure Due to Uniqueness Constraint Violation {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 A common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a conflict in node ids. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-Each node in AEM must have a unique uuid. This error indicates that a node that is being ingested has the same uuid as one that exists elsewhere at a different path on the destination instance.
-This situation can happen if a node is moved on the source between an extraction and a subsequent [Top-Up Extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-It can also happen if a node on the destination is moved between an ingestion and a subsequent top-up ingestion.
+Each node in AEM must have a unique uuid. This error indicates that a node that is being ingested has the same uuid as one that exists at a different path on the destination instance. This situation can happen for two reasons:
+
+* A node is moved on the source between an extraction and a subsequent [Top-Up Extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
+  * _REMEMBER_: For Top-Up extractions, the node will still exist in the migration set, even if it no longer exists on the source.
+* A node on the destination is moved between an ingestion and a subsequent top-up ingestion.
 
 This conflict must be resolved manually. Someone familiar with the content must decide which of the two nodes must be deleted, keeping in mind other content that references it. The solution may require that the top-up extraction is done again without the offending node. 
 
-### Top-up Ingestion Failure Due to Unable to Delete Referenced Node
+### Top-up Ingestion Failure Due to Unable to Delete Referenced Node {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 Another common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a version conflict for a particular node on the destination instance. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
-This can happen if a node on the destination is modified between an ingestion and a subsequent **Non-Wipe** ingestion such that a new version has been created. If the migration set was extracted with "include versions" enabled, a conflict may occur since the destination now has a more recent version that is being referenced by version history and other content. The ingestion process will be unable to delete the offending version node due to it being referenced.
+This can happen if a node on the destination is modified between an ingestion and a subsequent **Non-Wipe** ingestion such that a new version has been created. If the migration set was extracted with "include versions" enabled, a conflict may occur since the destination now has a more recent version that is being referenced by version history and other content. The ingestion process is unable to delete the offending version node due to it being referenced.
 
 The solution may require that the top-up extraction is done again without the offending node. Or, creating a small migration set of the offending node, but with "include versions" disabled. 
 
-Best practices indicate that if a **Non-Wipe** ingestion must be run using a migration set that includes versions (that is, extracted with "include versions"=true), it is crucial that content on the destination is modified as little as possible, until the migration journey is complete. Otherwise, these conflicts can occur.
+Best practices indicate that if a **Non-Wipe** ingestion must be run using a migration set that includes versions, it is crucial that content on the destination is modified as little as possible, until the migration journey is complete. Otherwise, these conflicts can occur.
 
-### Ingestion Rescinded
+### Ingestion Failure Due to Large Node Property Values {#ingestion-failure-due-to-large-node-property-values}
 
-An ingestion that was created with a running extraction as its source migration set will wait patiently until that extraction succeeds, and at that point will start normally. If the extraction fails or is stopped, the ingestion and its indexing job will not begin but will be rescinded. In this case, check the extraction to determine why it failed, remedy the problem and start extracting again. Once the fixed extraction is running, a new ingestion can be scheduled. 
+Node property values stored in MongoDB cannot exceed 16 MB. If a node value exceeds the supported size, the ingestion fails and the log will contain a `BSONObjectTooLarge` error and specify which node exceeded the maximum. This is a MongoDB restriction.
+
+See the `Node property value in MongoDB` note in [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) for more information and a link to an Oak tool that could help find all the large nodes. Once all nodes with large sizes are remedied, run the extraction and ingestion again.
+
+### Ingestion Rescinded {#ingestion-rescinded}
+
+An ingestion that was created with a running extraction as its source migration set waits patiently until that extraction succeeds, and at that point starts normally. If the extraction fails or is stopped, the ingestion and its indexing job will not begin but is rescinded. In this case, check the extraction to determine why it failed, remedy the problem and start extracting again. Once the fixed extraction is running, a new ingestion can be scheduled. 
 
 ## What's Next {#whats-next}
 

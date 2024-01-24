@@ -1,6 +1,6 @@
 ---
 title: Managing Content Fragments
-description: Learn how to manage your AEM Content Fragments from the console and editor, as the basis of your headless content, or for page authoring.
+description: Learn how to manage your AEM Content Fragments from the console and editor, to create content as the basis of your headless content, or for page authoring.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
@@ -137,10 +137,7 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 * **[Move](/help/assets/manage-digital-assets.md)**
 * **[Rename](/help/assets/manage-digital-assets.md)**
 * **[Delete](#deleting-a-fragment)**
-
-<!--
 * **[Replace](#find-and-replace)**
--->
 
 >[!NOTE]
 >
@@ -220,10 +217,10 @@ To create a content fragment:
 
 1. The **New Content Fragment** dialog opens, from here you can specify the:
 
-   * **Location** - this will be auto-completed with the current location, but you can select a different location if necessary
-   * **Content Fragment Model** - select the model to be used as a basis of the fragment from the drop down list
+   * **Location** - Auto-completed with the current location, but you can select a different location if necessary.
+   * **Content Fragment Model** - Select the model to be used as a basis of the fragment from the drop-down list.
    * **Title**
-   * **Name** - this will be auto-completed based on the **Title**, but you can edit it if necessary
+   * **Name** - Auto-completed based on the **Title**, but you can edit it, if necessary.
    * **Description** 
 
    ![New Content Fragment dialog](assets/cf-managing-new-cf-dialog.png)
@@ -368,13 +365,22 @@ When the relevant dialog opens you can select the appropriate service:
 >
 >If the fragment is already referenced from another fragment, or from a page, you will then see a warning message and be required to confirm that you want to proceed.
 
-<!--
 ## Find and Replace {#find-and-replace}
 
-The **Replace** option is available to find, and replace, specified text in your selected Content Fragment:
+The **Replace** action is available (in the top toolbar) to find, and replace, specified text in your selected Content Fragments. 
 
-![Unpublish dialog](assets/cf-managing-find-replace.png)
--->
+![Find and Replace](assets/cf-managing-find-replace.png)
+
+Before replacement, validation criteria are checked and you are informed of any conflicts, allowing you to change the replacement string or only replace the validated instances.
+
+>[!NOTE]
+>
+>The find and replace action can only be performed on a maximum of 20 selected Content Fragments (at a time). 
+>
+>If you select more than 20 Content Fragments, you will see the message **Unable to find and replace**.
+
+![Confirm Replace](assets/cf-managing-confirm-replace.png)
+
 
 ## Deleting a Fragment {#deleting-a-fragment}
 

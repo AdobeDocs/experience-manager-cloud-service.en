@@ -4,6 +4,8 @@ description: Forms-centric workflows allow you to rapidly build Adaptive Forms-b
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Use AEM workflows, using assign task steps, convert to PDF/A step, Generate document of recored step, use workflows, Sign document step, Genertae printed output step, Generate non interactive PDF output
+feature: Adaptive Forms, Workflow
+role: Admin, User
 ---
 
 # Use Forms-centric AEM Workflows - Step Reference to automate business processes {#forms-centric-workflow-on-osgi-step-reference}
@@ -179,7 +181,7 @@ The convert to PDF/A step has the following properties:
 
 ## Send Email Step {#send-email-step}
 
-Use the email step to send an email, for example an email with a Document of Record, link of an Adaptive Form <!-- , link of an interactive communication-->, or with an attached PDF document. Send Email step supports [HTML email](https://en.wikipedia.org/wiki/HTML_email). HTML emails are responsive and adapt to the recipients' email client and screen size. You can use an HTML email template to define the appearance, color-scheme, and behavior of the email.
+Use the email step to send an email, for example, an email with a Document of Record, link of an Adaptive Form <!-- , link of an interactive communication-->, or with an attached PDF document. Send Email step supports [HTML email](https://en.wikipedia.org/wiki/HTML_email). HTML emails are responsive and adapt to the recipients' email client and screen size. You can use an HTML email template to define the appearance, color-scheme, and behavior of the email.
 
 The email step uses Day CQ Mail Service to send emails. Before using the email step, ensure that the email service is configured. Email support only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) to enable ports to send emails and  enable SMTP protocol for your environment. The restriction helps improve the security of the platform.
 
