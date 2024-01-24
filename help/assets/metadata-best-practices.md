@@ -2,8 +2,8 @@
 title: Metadata management and best practices
 description: Learn about metadata best practices to effectively manage your digital assets.
 role: User, Admin
-hide: yes
-hidefromtoc: yes
+# hide: yes
+# hidefromtoc: yes
 ---
 
 <!-- Keywords to focus on:
@@ -43,7 +43,6 @@ For example, when managing a video in Experience Manager Assets, we can include 
 * **Description**: A detailed overview of the video content.
 
 Users searching for marketing-related content can easily find and understand the significance of the above video.
-
 
 ### Administrative metadata
 
@@ -118,25 +117,19 @@ Here are some of the best practices to follow:
 
 ### Assess and improve metadata searchability
 
-<!-- (Query for Anuj) -->
-
 Assess your metadata strategy to improve metadata searchability. Simplify workflows and enhance search capabilities for efficient reuse. Avoid dealing with metadata that lacks a clear purpose.<br>
 You can consider the following best practices to optimize your metadata searchability:
 
-* **Keyword optimization:** Improve metadata searchability by optimizing keywords associated with assets. You can improve the relevance of keywords for particular assets in the Assets Manager by following these steps:
+* **Keyword optimization:** Improve metadata searchability by optimizing keywords associated with assets. You can improve the relevance of keywords for particular assets in the [!UICONTROL Assets Manager] by following these steps:
 
    1. Go to **[!UICONTROL Assets]** > **[!UICONTROL File]** > **[!UICONTROL [Asset folder]]**.
    1. Select the asset for which you want to update the metadata, and then click **[!UICONTROL Properties]**.
-   1. Navigate to the **[!UICONTROL Advanced]** tab, and then click **[!UICONTROL Add]** under the **[!UICONTROL Elevate for search keywords]**.
+   1. Navigate to the **[!UICONTROL Advanced]** tab, and then click **[!UICONTROL Add]** under the **[!UICONTROL Elevate for search keywords]**. <br>You must use the default metadata schema in order to elevate your search keywords. 
    1. Enter the keyword for which you want to boost the search, and then click **[!UICONTROL Add]**.<br>
    You can add multiple keywords and arrange them as per your priority.
    1. Click **[!UICONTROL Save & Close]**.<br>
    Search the asset using the keywords you added. The asset appears among the top search results.
    
-   > [!NOTE]
-   > 
-   >The above steps works only if you're using default metadata schema.
-
    Learn how to [boost search in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
 * **Custom metadata fields:** Customize your metadata fields to capture additional information about assets. For example, add specific fields for project details, copyright information, or any other relevant data that enhances search capabilities. Learn [how to edit or add custom metadata](meta-edit.md) in Experience Manager Assets.
