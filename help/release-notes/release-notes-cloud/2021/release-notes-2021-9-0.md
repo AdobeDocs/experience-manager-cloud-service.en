@@ -62,7 +62,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Analytics for Adaptive Forms** &ndash; You can now capture and track end-user behavior by way of Adobe Analytics for Adaptive Forms to gather end-user insights. It helps make informed decisions based on data to improve the end-user experience.
 
-* **Easily connect Adobe Experience Manager (AEM) Forms with Microsoft&reg; Dynamics and Salesforce** &ndash; The service provides out-of-the-box data source configuration and data models for Microsoft&reg; Dynamics and Salesforce. This makes it [faster and easier for developers to configure Microsoft&reg; Dynamics and Salesforce as data sources for an adaptive form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
+* **Easily connect Adobe Experience Manager (AEM) Forms with Microsoft&reg; Dynamics and Salesforce** &ndash; The service provides out-of-the-box data source configuration and data models for Microsoft&reg; Dynamics and Salesforce. This makes it [faster and easier for developers to configure Microsoft&reg; Dynamics and Salesforce as data sources for an adaptive form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html).
 
 * **E-Sign an adaptive form using DocuSign** &ndash; You can use DocuSign to e-sign an adaptive form. The service provides a custom submit action to use DocuSign with an adaptive form. You can install the package available on Software Distribution to import the submit action.
 
@@ -106,7 +106,7 @@ You can write to [!DNL formscsbeta@adobe.com] to sign up for the beta program.
 ### What is New {#what-is-new-screens}
 
 * Screens as a Cloud Service now supports basic playback monitoring. The player now reports various playback metrics with each ping (defaults to 30 seconds). Based on the metrics, it can detect various edge cases (stuck experience, blank screen, scheduling problem, and so on). This feature lets the team remotely monitor if a player is properly playing content. It improves reactivity to blank screens or broken experiences in the field, and decreases the risk of showing a broken experience to the user.
-   See [Basic Playback Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) for more details.
+   See [Basic Playback Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html#playback-monitoring) for more details.
 
 * Thumbnail Support for videos in now supported in Screens as a Cloud Service. A content author can define a thumbnail for videos so that the image is used as a placeholder and properly test content playback and targeting, while the actual video is being finalized by the appropriate team. The image can also be used in case the playback of the video fails.
    See [Thumbnail Support for Videos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) for more details.
@@ -176,7 +176,7 @@ The Release Date for Cloud Acceleration Manager is October 04, 2021.
  
 ### What is New {#what-is-new-cam}
 
-* Cloud Acceleration Manager now provides users with the ability to view the BPA reports in a printable preview, allowing simple printing or printing to PDF for easy shareability. See Step 6 and 7 in [Using the Best Practices Analysis Card](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+* Cloud Acceleration Manager now provides users with the ability to view the BPA reports in a printable preview, allowing simple printing or printing to PDF for easy shareability. See Step 6 and 7 in [Using the Best Practices Analysis Card](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
 
 ## Content Transfer Tool {#content-transfer-tool}
 
@@ -186,7 +186,7 @@ The Release Date for Content Transfer Tool v1.6.0 is October 04, 2021.
 
 ### What's New {#what-is-new-ctt}
 
-* Improved User Mapping with a simplified User Experience, including the following features listed below. For more details, see [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en#using-user-mapping-tool).
+* Improved User Mapping with a simplified User Experience, including the following features listed below. For more details, see [Using User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html#using-user-mapping-tool).
   * Test connection to the User Management API before running the User Mapping
   * Gracefully skip errors and continue with the User Mapping activity
   * User Mapping no longer fails if the Access Token expires (after 24 hours). User Mapping can be rerun from where it last stopped.

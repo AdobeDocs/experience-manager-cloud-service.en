@@ -1,20 +1,27 @@
 ---
 title: How to integrate an Adaptive Form with Microsoft® Power Automate?
 description: Integrate an Adaptive Form with Microsoft® Power Automate.
-hide: yes
-hidefromtoc: yes
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
+keywords: connect AEM formns to power automate, Power automate automation AEM Forms, Integrate power automate to Adaptive Forms, send data from Adaptive Forms to Power Automate
 ---
+
 # Connect an Adaptive Form with Microsoft&reg; Power Automate {#connect-adaptive-form-with-power-automate}
 
-You can configure an Adaptive Form to run a Microsoft&reg; Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft&reg; Power Automate to build business logics around captured data and automate customer workflows. Here are a few examples of what you can do after integrating an Adaptive Form with Microsoft&reg; Power Automate: 
+You can configure an Adaptive Form to run a Microsoft&reg; Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft&reg; Power Automate to build business logics around captured data and automate customer workflows. 
+
+Adaptive Forms editor provides the **Invoke a Microsoft&reg; Power Automate flow** submit action to send adaptive forms data, attachments, and Document Of Record are sent to Power Automate Cloud Flow. 
+
+AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
+
+
+## Advantages
+
+Here are a few examples of what you can do after integrating an Adaptive Form with Microsoft&reg; Power Automate: 
 
 * Use Adaptive Forms data in a Power Automate business processes
 * Use Power Automate to send captured data to more than 500 data sources or any publicly available API  
 * Perform complex calculations on captured data
 * Save Adaptive Forms data to storage systems at a predefined schedule
-
-Adaptive Forms editor provides the **Invoke a Microsoft&reg; Power Automate flow** submit action to send adaptive forms data, attachments, and Document Of Record are sent to Power Automate Cloud Flow. To use the Submit action to send captured data to Microsoft&reg; Power Automate, [Connect your Forms as a Cloud Service instance with Microsoft&reg; Power Automate](forms-microsoft-power-automate-integration.md#connect-forms-server-with-power-automate)  
 
 ## Prerequisites
 
@@ -24,7 +31,6 @@ The following are required to connect an Adaptive Form with Microsoft&reg; Power
 * Microsoft&reg; [Power Automate flow](https://docs.microsoft.com/en-us/power-automate/create-flow-solution) with the `When an HTTP request is received` trigger to accept Adaptive Form submit data.
 * An Experience Manager user with [Forms Author](/help/forms/forms-groups-privileges-tasks.md) and [Forms Admin](/help/forms/forms-groups-privileges-tasks.md) privileges
 * Account used to connect to Microsoft&reg; Power Automate is owner of the Power Automate flow configured to receive data from Adaptive Form
-
 
 ## Connect your Forms as a Cloud Service instance with Microsoft&reg; Power Automate {#connect-forms-server-with-power-automate}
 
@@ -74,15 +80,15 @@ Perform the following actions to connect your Forms as a Cloud Service instance 
 1. On AEM Forms author instance, navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL General]** &gt; **[!UICONTROL Configuration Browser]**.
 1. On the **[!UICONTROL Configuration Browser]** page, select **[!UICONTROL Create]**.
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a **[!UICONTROL Title]** for the configuration, enable **[!UICONTROL Cloud Configurations]**, and select **[!UICONTROL Create]**. It creates a configuration container to store  Cloud Services. Ensure that the folder name does not contain any space.
-1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Microsoft&reg; Power Automate Dataverse]** and open the configuration container you created in the previous step.
+1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Microsoft®&reg; Power Automate Dataverse]** and open the configuration container you created in the previous step.
 
 
    >[!NOTE]
    >
    >When you create an Adaptive Form, specify the container name in the **[!UICONTROL Configuration Container]** field.  
 
-1. On the configuration page, select **[!UICONTROL Create]** to create [!DNL Microsoft&reg;&reg; Power Automate Flow Service] configuration in AEM Forms.
-1. On the **[!UICONTROL Configure Dataverse Service for Microsoft&reg;&reg; Power Automate]** page, Specify the **[!UICONTROL Client ID]** (also referred to as Application ID), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]** and **[!UICONTROL Dynamic Environment URL]**. Use the Client ID, Client Secret, OAuth URL, and Dynamic Environment URL of [Microsoft&reg; Azure Active Directory Application](#ms-power-automate-application) you created in the previous section. Use Endpoints option in Microsoft&reg; Azure Active Directory application UI to find OAuth URL
+1. On the configuration page, select **[!UICONTROL Create]** to create [!DNL Microsoft®&reg;&reg; Power Automate Flow Service] configuration in AEM Forms.
+1. On the **[!UICONTROL Configure Dataverse Service for Microsoft®&reg;&reg; Power Automate]** page, Specify the **[!UICONTROL Client ID]** (also referred to as Application ID), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]** and **[!UICONTROL Dynamic Environment URL]**. Use the Client ID, Client Secret, OAuth URL, and Dynamic Environment URL of [Microsoft&reg; Azure Active Directory Application](#ms-power-automate-application) you created in the previous section. Use Endpoints option in Microsoft&reg; Azure Active Directory application UI to find OAuth URL
 
      ![Use Endpoints option in Microsoft Power Automate application UI to find OAuth URL](assets/endpoints.png)
 
@@ -90,20 +96,20 @@ Perform the following actions to connect your Forms as a Cloud Service instance 
 
 ### Create Microsoft&reg; Power Automate Flow Service Cloud Configuration {#create-microsoft-power-automate-flow-cloud-configuration}
 
-1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Microsoft&reg;&reg; Power Automate Flow Service]** and open the configuration container you created in the previous section.
+1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Microsoft® Power Automate Flow Service]** and open the configuration container you created in the previous section.
 
 
    >[!NOTE]
    >
    >When you create an Adaptive Form, specify the container name in the **[!UICONTROL Configuration Container]** field.  
 
-1. On the configuration page, select **[!UICONTROL Create]** to create [!DNL Microsoft&reg;&reg; Power Automate Flow Service] configuration in AEM Forms.
-1. On the **[!UICONTROL Configure Dataverse for Microsoft&reg;&reg; Power Automate]** page, Specify the **[!UICONTROL Client ID]** (also referred to as Application ID), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]** and **[!UICONTROL Dynamic Environment URL]**. Use the Client ID, Client Secret, OAuth URL, and Dynamics Environment ID. Use Endpoints option in Microsoft&reg; Azure Active Directory application UI to find OAuth URL. Open the [My flows](https://us.flow.microsoft.com) link and select My Flows use the ID listed in URL as Dynamics Environment ID.
+1. On the configuration page, select **[!UICONTROL Create]** to create [!DNL Microsoft&reg; Power Automate Flow Service] configuration in AEM Forms.
+1. On the **[!UICONTROL Configure Dataverse for Microsoft® Power Automate]** page, Specify the **[!UICONTROL Client ID]** (also referred to as Application ID), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]** and **[!UICONTROL Dynamic Environment URL]**. Use the Client ID, Client Secret, OAuth URL, and Dynamics Environment ID. Use Endpoints option in Microsoft&reg; Azure Active Directory application UI to find OAuth URL. Open the [My flows](https://us.flow.microsoft.com) link and select My Flows use the ID listed in URL as Dynamics Environment ID.
 1. Select **[!UICONTROL Connect]**. If asked, log in to your Microsoft&reg; Azure Account. Select **[!UICONTROL Save]**.
 
 ### Publish both the Microsoft&reg; Power Automate Dataverse and Microsoft&reg; Power Automate Flow Service Cloud Configurations {#publish-microsoft-power-automate-dataverse-cloud-configuration}
 
-1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Microsoft&reg;&reg; Power Automate Dataverse]** and open the configuration container you created in the previous [Create Microsoft&reg; Power Automate Dataverse Cloud Configuration](#microsoft-power-automate-dataverse-cloud-configuration) section.
+1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Microsoft® Power Automate Dataverse]** and open the configuration container you created in the previous [Create Microsoft&reg; Power Automate Dataverse Cloud Configuration](#microsoft-power-automate-dataverse-cloud-configuration) section.
 1. Select the `dataverse` configuration and select **[!UICONTROL Publish]**. 
 1. On the Publish page, select **[!UICONTROL All Configurations]** and select **[!UICONTROL Publish]**. Publish both Power Automate Dataverse and Power Automate Flow Service Cloud Configurations.
 
@@ -186,13 +192,19 @@ After you [Connect your Forms as a Cloud Service instance with Microsoft&reg; Po
 
 ```
 
+<!--
 ## See also
 
 * [Create an Adaptive Form](creating-adaptive-form-core-components.md)
 * [Configure a Submit Action](configure-submit-actions-core-components.md)
 * [Adobe Experience Manager Connector for Microsoft&reg; Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
-* [Connect Adaptive Form to Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [Connect Adaptive Form to Microsoft® Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+-->
 
+
+## Related Articles
+
+{{af-submit-action}}
 
 <!--
 

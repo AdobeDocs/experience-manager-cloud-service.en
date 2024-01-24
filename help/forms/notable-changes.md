@@ -2,6 +2,8 @@
 title: What are the differences between AEM 6.5 Forms and AEM Cloud Services?
 description: Compare AEM 6.5 Forms and AEM Cloud Services and learn the most prominent changes before upgrading or migrating to Cloud Service.  
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
+role: Admin, Developer, User
+feature: Adaptive Forms
 contentOwner: khsingh
 ---
 # Notable changes for existing Adobe Experience Manager 6.5 Forms users  {#notable-changes-for-existing-AEM-Forms-users}
@@ -46,7 +48,9 @@ Adobe Experience Manager Forms as a Cloud Service brings some notable changes to
 
     The [migration utility](/help/forms/migrate-to-forms-as-a-cloud-service.md) helps you migrate your forms that have custom rules (created in the code editor). The utility converts such rules into custom functions supported on Forms as a Cloud Service. You can use the reusable functions with Rule editor to continue obtaining results obtained with rule scripts. The `onSubmitError` or `onSubmitSuccess` functions are now available as actions in the Rule Editor.  
 
-* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server. 
+<!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
+
+* **Prefill Service:** Prefill service fetches data from the server and merges to prefill your Adaptive Forms on the client side. This feature helps improve the time required to fill an Adaptive Form. You can always configure the [prefill service](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) to run the merge action on the Adobe Experience Manager Forms Server.
 
 *   **Submit actions:** The **Email** submit action provide options to send attachments and attach Document of Record (DoR) with email. You can use it in place of the **Email as PDF** action available in AEM 6.5 Forms.
 
