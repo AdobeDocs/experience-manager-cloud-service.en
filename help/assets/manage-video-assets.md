@@ -37,7 +37,7 @@ Learn more about [uploading assets](manage-digital-assets.md#uploading-assets) i
 
 You can preview the MP4 renditions in the [!DNL Assets] user interface. To preview a video asset, follow these steps:
 
-1. Upload a video asset of a supported format to [!DNL Experience Manager Assets]. Learn more about the [supported video formats](file-format-support.md). <br>Once uploaded, the video asset is processed, and a preview rendition is generated.
+1. Upload a video asset of a supported format to [!DNL Experience Manager Assets]. Learn more about the [supported video formats](file-format-support.md#video-formats). <br>Once uploaded, the video asset is processed, and a preview rendition is generated.
 1. Click the asset, and select ![details option](assets/do-not-localize/details_icon.svg) **[!UICONTROL Details]**  from the top toolbar. The video asset opens in the video viewer.
 1. Click the ![play option](assets/do-not-localize/play.png) icon on the video thumbnail. <br>You can play, pause, control the volume, and zoom the video to full screen.
 
