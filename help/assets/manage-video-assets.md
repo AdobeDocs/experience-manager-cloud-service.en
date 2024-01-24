@@ -19,7 +19,8 @@ Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager 
 
 ## Upload and preview video assets {#upload-and-preview-video-assets}
 
-You can upload video assets of supported format to [!DNL Experience Manager Assets]. It generates previews for video assets with the extension MP4.
+You can upload and preview video assets of supported format to [!DNL Experience Manager Assets]. 
+<!-- It generates previews for video assets with the extension MP4. -->
 
 ### Upload video assets
 
@@ -34,12 +35,11 @@ Learn more about [uploading assets](manage-digital-assets.md#uploading-assets) i
 
 ### Preview video assets
 
-You can preview the MP$ renditions in the [!DNL Assets] user interface. To preview a video asset, follow these steps:
+You can preview the MP4 renditions in the [!DNL Assets] user interface. To preview a video asset, follow these steps:
 
-1. Upload a video asset of a supported format into AEM Assets. Learn what are the [supported video formats](file-format-support.md).
-1. Once uploaded, video asset is processed and a preview rendition is generated
-1. Click the video asset, and select **[!UICONTROL Details]** from the top toolbar. The video opens in the video viewer.
-1. Click the ![play option](assets/do-not-localize/play.png) icon on the thumbnail. You can play, pause, control the volume, and zoom the video to full screen.
+1. Upload a video asset of a supported format into [!DNL Experience Manager Assets]. Learn more about the [supported video formats](file-format-support.md). <br>Once uploaded, the video asset is processed, and a preview rendition is generated.
+1. Click the asset, and select ![details option](assets/do-not-localize/details_icon.svg) **[!UICONTROL Details]**  from the top toolbar. The video asset opens in the video viewer.
+1. Click the ![play option](assets/do-not-localize/play.png) icon on the video thumbnail. <br>You can play, pause, control the volume, and zoom the video to full screen.
 
 ### Limitations of video preview
 
