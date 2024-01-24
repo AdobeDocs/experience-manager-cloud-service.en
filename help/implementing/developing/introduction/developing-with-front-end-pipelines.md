@@ -22,7 +22,7 @@ The resulting content of the `dist` folder is what is ultimately deployed by Clo
 
 ### Node Versions {#node-versions}
 
-By default the front-end pipeline uses Node 14, but 12, 16 and 18 are also available.
+Please see the document [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for the Node.js versions available as well as the default version.
 
 You can use the `NODE_VERSION` environment variable to set the desired version.
 
