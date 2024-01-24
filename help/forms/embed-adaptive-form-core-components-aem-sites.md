@@ -197,7 +197,7 @@ Using **[!UICONTROL Adaptive Forms - Embed (V2)]** component, you can either emb
 
 1. Open the AEM Sites page in edit mode.
 1. From the Component browser panel, drag-drop the [!UICONTROL Adaptive Forms - Embed] component on the page. 
-1. Tap the [!UICONTROL Adaptive Forms - Embed] component in the sites page and tap ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
+1. Select the [!UICONTROL Adaptive Forms - Embed] component in the sites page and select ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
 1. Browse and select the Adaptive Form to embed in the [!UICONTROL Asset Path]. 
 1. Save the settings. The Adaptive Form  is now embedded in the page.
 
@@ -247,7 +247,7 @@ Consider the following scenarios for publishing added Adaptive Forms using the *
 To modify any configuration or property of an Adaptive Form, do one of the following:
 
 * Open the original form in an Adaptive Form  in respective editor and modify them.
-* Tap the Adaptive Form  from within the site page in edit mode and then tap **[!UICONTROL Edit in a new window]**. The original form opens in edit mode that you can modify.
+* Select the Adaptive Form  from within the site page in edit mode and then select **[!UICONTROL Edit in a new window]**. The original form opens in edit mode that you can modify.
 
 ## Change Layout of an Adaptive Form added to an AEM Sites page {#change-layout-af-aem-sites-page} 
 

@@ -16,4 +16,4 @@ The Release Date for Best Practices Analyzer v2.1.44 is August 24, 2023.
 
 ### Bug Fixes {#bug-fixes-bpa}
 
-* *    Content Transformer was unable to retrieve BPA findings. This has been fixed.
+* Content Transformer was unable to retrieve BPA findings. This has been fixed.

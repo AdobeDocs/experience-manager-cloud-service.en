@@ -138,7 +138,7 @@ See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
 
     * Near the upper-left corner of the Spin Set Editor page, select **[!UICONTROL Add Asset]**.
 
-    * Near the middle of the Spin Set Editor page, select **[!UICONTROL Tap to open Asset Selector]**.
+    * Near the middle of the Spin Set Editor page, select **[!UICONTROL Select to open Asset Selector]**.
 
    Select assets that you want to include in your Spin Set. Selected assets have a checkmark icon over them. When you are finished, near the upper-right corner of the page, select **[!UICONTROL Select]**.
 

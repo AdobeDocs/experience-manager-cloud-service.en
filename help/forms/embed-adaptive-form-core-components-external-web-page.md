@@ -3,7 +3,8 @@ title: How can we embed adaptive form in external web page?
 description: Learn how to embed an adaptive form in an external web page
 contentOwner: Khushwant Singh
 docset: CloudService
-role: Developer
+role: Admin, Developer, User
+feature: Adaptive Forms, Core Components
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
 ---
 # Embed adaptive form based on core components to an external web page {#embed-adaptive-form-in-external-web-page}

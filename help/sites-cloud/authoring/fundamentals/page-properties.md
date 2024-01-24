@@ -317,12 +317,12 @@ Once you have entered Bulk Editing you can:
     * If you reduce the page selection to one page, then all properties are visible.
   * Common properties with a common value
     * Only properties with a common value are shown in View mode.
-    * When the field is multi-value (for example Tags), values will only be shown when *all* are common. If only some are common, they will only be shown when editing.
+    * When the field is multi-value (for example, Tags), values will only be shown when *all* are common. If only some are common, they will only be shown when editing.
     * When no properties with a common value exist, a message is displayed.
 
 * **Edit**
 
   * You can update the values in the fields available.
     * The new values are applied to all selected pages when you select **Done**.
-    * When the field is multi-value (for example Tags), you can either append a new value or remove a common value.
+    * When the field is multi-value (for example, Tags), you can either append a new value or remove a common value.
   * Fields that are common, but have different values across the various pages are indicated with a special value such as the text `<Mixed Entries>`.

@@ -38,7 +38,7 @@ To search and filter your resources:
 1. If necessary, you can remove the location filter (select **X** on the filter you want removed) to search across all consoles/resource types.
 1. The results are shown, grouped according to console and related resource type.
 
-   You can either select a specific resource (for further action), or drill down by selecting the required resource type; for example **View All Sites**:
+   You can either select a specific resource (for further action), or drill down by selecting the required resource type; for example, **View All Sites**:
 
    ![Search results](/help/sites-cloud/authoring/assets/search-results.png)
 
@@ -53,7 +53,7 @@ To search and filter your resources:
     * Saved Searches
     * Search Directory
     * Tags
-    * Search Criteria, for example Modified Dates, Publish Status, LiveCopy Status
+    * Search Criteria, for example, Modified Dates, Publish Status, LiveCopy Status
 
    >[!NOTE]
    >

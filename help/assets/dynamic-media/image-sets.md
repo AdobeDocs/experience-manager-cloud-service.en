@@ -142,7 +142,7 @@ See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
 **To create Image Sets:**
 
 1. In Adobe Experience Manager, select the Experience Manager logo to access the global navigation console.
-1. Tap **[!UICONTROL Navigation]** > **[!UICONTROL Assets]**. Navigate to where you want to create an image set, then go to **[!UICONTROL Create]** > **[!UICONTROL Image Set]** to open the Image Set Editor page.
+1. Select **[!UICONTROL Navigation]** > **[!UICONTROL Assets]**. Navigate to where you want to create an image set, then go to **[!UICONTROL Create]** > **[!UICONTROL Image Set]** to open the Image Set Editor page.
 
    You can also create the set from inside a folder that contains your assets.
 
@@ -158,7 +158,7 @@ See also [Dynamic Media limitations](/help/assets/dynamic-media/limitations.md).
 
     * Near the middle of the Image Set Editor page, select **[!UICONTROL Tap to open Asset Selector]**.
 
-   Tap to select assets that you want to include in your Image Set. Selected assets have a check mark icon over them. When you finish, near the upper-right corner of the page, select **[!UICONTROL Select]**.
+   Select to select assets that you want to include in your Image Set. Selected assets have a check mark icon over them. When you finish, near the upper-right corner of the page, select **[!UICONTROL Select]**.
 
    With the Asset Selector, you can search for assets by typing in a keyword and selecting **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then select the **[!UICONTROL Filter]** icon in the toolbar. Change the view by selecting the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
 
@@ -230,7 +230,7 @@ You can perform various editing tasks on Image Sets such as the following:
 
     * Hover over an Image Set asset, then select **[!UICONTROL Edit]** (pencil icon).
     * Hover over an Image Set asset, select **[!UICONTROL Select]** (check mark icon), then select **[!UICONTROL Edit]** in the toolbar.
-    * Tap on an Image Set asset, then select **[!UICONTROL Edit]** (pencil icon) in the toolbar.
+    * Select on an Image Set asset, then select **[!UICONTROL Edit]** (pencil icon) in the toolbar.
 
 1. To edit the images in the Image Set, do any of the following:
 
@@ -249,7 +249,7 @@ You can perform various editing tasks on Image Sets such as the following:
    >
    >You can edit the images in an Image Set. Navigate to the set and select **[!UICONTROL Set Members]** in the left rail. To open the editing window, select the Pencil icon on an asset.
 
-1. Tap **[!UICONTROL Save]** when you are done editing.
+1. Select **[!UICONTROL Save]** when you are done editing.
 
 ## Preview Image Sets {#previewing-image-sets}
 

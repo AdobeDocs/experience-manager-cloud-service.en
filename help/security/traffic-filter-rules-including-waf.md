@@ -14,7 +14,7 @@ Traffic filter rules can be used to block or allow requests at the CDN layer, wh
 
 Most of these traffic filter rules are available to all AEM as a Cloud Service Sites and Forms customers. They mainly operate on request properties and request headers, including IP, hostname, path, and user agent.
 
-A subcategory of traffic filter rules require either an Enhanced Security license or WAF-DDoS Protection license, and will be available later this year. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
+A subcategory of traffic filter rules require either an Enhanced Security license or WAF-DDoS Protection license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
 
 Traffic filter rules can be deployed via Cloud Manager configuration pipelines to dev, stage, and production environment types in production (non-sandbox) programs. Support for RDEs will come in the future.
 
@@ -27,7 +27,7 @@ This article is organized into the following sections:
 * **Traffic protection overview:** Learn how you are protected from malicious traffic.
 * **Suggested process for configuring rules:** Read about a high level methodology for protecting your website.
 * **Setup:** Discover how to setup, configure, and deploy traffic filter rules, including the advanced WAF rules.
-* **Rules syntax:** Read about how to declare traffic filter rules in the `cdn.yaml` configuration file. This includes both the traffic filter rules available to all Sites and Forms customers, as well as the subcategory of WAF rules for those who license that capability.
+* **Rules syntax:** Read about how to declare traffic filter rules in the `cdn.yaml` configuration file. This includes both the traffic filter rules available to all Sites and Forms customers, and the subcategory of WAF rules for those who license that capability.
 * **Rules examples:** See examples of declared rules to get you on your way.
 * **Rate limit rules:** Learn how to use rate limiting rules to protect your site from high volume attacks.
 * **CDN logs:** See what declared rules and WAF Flags match your traffic.
@@ -48,7 +48,7 @@ By default, Adobe takes measures to prevent performance degradation due to burst
 
 Customers may take proactive measures to mitigate application layer attacks (layer 7) by configuring rules at various layers of the content delivery flow.
 
-For example, at the Apache layer, customers may configure either the [dispatcher module](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter) or [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en) to limit access to certain content.
+For example, at the Apache layer, customers may configure either the [dispatcher module](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-access-to-content-filter) or [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html) to limit access to certain content.
 
 And as this article describes, traffic filter rules rules may be deployed to the Adobe Managed CDN, using Cloud Manager's configuration pipeline. In addition to traffic filter rules based on properties like IP address, path, and headers, or rules based on setting rate limits, customers may also license a powerful subcategory of traffic filter rules called WAF rules.
 
@@ -73,7 +73,7 @@ The following is a high-level recommended end-to-end process for coming up with 
         cdn.yaml
    ```
 
-1. `cdn.yaml` should contain metadata as well as a list of traffic filters rules and WAF rules.
+1. `cdn.yaml` should contain metadata and a list of traffic filters rules and WAF rules.
 
    ```
    kind: "CDN"
@@ -143,7 +143,7 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-The format of the traffic filter rules in the `cdn.yaml` file is described below. See some [other examples](#examples) in a later section, as well as a separate section on [Rate Limit Rules](#rate-limit-rules).
+The format of the traffic filter rules in the `cdn.yaml` file is described below. See some [other examples](#examples) in a later section, and a separate section on [Rate Limit Rules](#rate-limit-rules).
 
 
 | **Property**   | **Most traffic filter rules**  | **WAF traffic filter rules**  | **Type**  | **Default value**  | **Description**  |
@@ -410,9 +410,9 @@ Rate limits are calculated per CDN POP. As an example, assume that POPs in Montr
 | **Property**  | **Type**  | **Default**  | **MEANING**  |
 |---|---|---|---|
 |  limit |  integer from 10 to 10000     |  required |  Request rate (per CDN POP) in requests per second for which the rule is triggered. |
-|  window | integer enum: 1, 10 or 60  | 10  | Sampling window in seconds for which request rate is calculated. The accuracy of counters will depend on the size of the window (bigger window bigger accuracy). For example one can expect 50% accuracy for the 1 second window and 90% accuracy for the 60 second window. |
+|  window | integer enum: 1, 10 or 60  | 10  | Sampling window in seconds for which request rate is calculated. The accuracy of counters will depend on the size of the window (bigger window bigger accuracy). For example, one can expect 50% accuracy for the 1 second window and 90% accuracy for the 60 second window. |
 |  penalty | integer from 60 to 3600  | 300 (5 minutes) | A period in seconds for which matching requests are blocked (rounded to the nearest minute).  |
-|  groupBy | array[Getter] | none | rate limiter counter will be aggregated by a set of request properties (for example clientIp).  |
+|  groupBy | array[Getter] | none | rate limiter counter will be aggregated by a set of request properties (for example, clientIp).  |
 
 
 ### Examples {#ratelimiting-examples}
@@ -465,7 +465,7 @@ data:
 
 AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization, and configuring traffic filter rules. CDN logs appear in the Cloud Manager **Download Logs** dialog, when selecting the Author or Publish service.
 
-Note that CDN logs may delayed up to 5 minutes.
+CDN logs may be delayed up to five minutes.
 
 The `rules` property describes what traffic filter rules are matched, and has the following pattern:
 

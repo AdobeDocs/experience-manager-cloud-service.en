@@ -65,7 +65,7 @@ As application changes due to the deployment pattern are enabled by a switch, th
 
 For customers with existing code bases, it is critical to go through the repository restructuring exercise described in AEM documentation to ensure that content formerly under the /etc is moved to the right location.
 
-Some additional restrictions apply for these code packages, for example [install hooks](https://jackrabbit.apache.org/filevault/installhooks.html) are not supported.
+Some additional restrictions apply for these code packages, for example, [install hooks](https://jackrabbit.apache.org/filevault/installhooks.html) are not supported.
 
 ## OSGI Configuration {#osgi-configuration}
 
@@ -128,7 +128,7 @@ For the following cases, it is preferable to take the approach of hand coding ex
   >
   >Definition of ACLs requires the node structures to be already present. Thus, preceding create path statements might be necessary.
 
-* Add path (for example for root folder structures)
+* Add path (for example, for root folder structures)
 * Add CNDs (nodetype definitions)
 
 Repoinit is preferable for these supported content modification use cases due to the following benefits:
@@ -169,7 +169,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Package Manager - Migrating Mutable Content Packages"
 >abstract="Explore usage of Package Manager for use cases where a content package should be installed as 'one off'. The installation includes importing specific content from production on to staging to debug a production issue, transferring small content package from on-premise environment to AEM Cloud environments, and more."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en" text="Content Transfer Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html" text="Content Transfer Tool"
 
 There are use cases where a content package should be installed as a "one off". For example, importing specific content from production on to staging to debug a production issue. For these scenarios, [Package Manager](/help/implementing/developing/tools/package-manager.md) can be used in environments on AEM as a Cloud Service.
 
@@ -289,7 +289,7 @@ In existing AEM solutions, customers have the option of running instances with a
 
 AEM as a Cloud Service on the other hand is more opinionated about which run modes are available and how OSGI bundles and OSGI configuration can be mapped to them:
 
-* OSGI configuration run modes must reference RDE, development, stage, production for the environment or author, publish for the service. A combination of `<service>.<environment_type>` is being supported, whereas these environments have to be used in this particular order (for example `author.dev` or `publish.prod`). The OSGI tokens should be referenced directly from code rather than using the `getRunModes` method, which no longer includes the `environment_type` at runtime. For more information, see [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+* OSGI configuration run modes must reference RDE, development, stage, production for the environment or author, publish for the service. A combination of `<service>.<environment_type>` is being supported, whereas these environments have to be used in this particular order (for example, `author.dev` or `publish.prod`). The OSGI tokens should be referenced directly from code rather than using the `getRunModes` method, which no longer includes the `environment_type` at runtime. For more information, see [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * OSGI bundles run modes are limited to the service (author, publish). Per-run mode OSGI bundles should be installed in the content package under either `install.author` or `install.publish`.
 
 AEM as a Cloud Service does not allow using run modes to install content for specific environments or services. If a development environment must be seeded with data or HTML that is not in the staging or production environments, Package Manager can be used.
