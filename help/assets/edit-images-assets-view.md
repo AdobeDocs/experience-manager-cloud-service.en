@@ -32,10 +32,10 @@ Resizing an image to a specific size is a popular use case. [!DNL Assets view] l
 3. Select the appropriate social media platform from the **[!UICONTROL Resize for]** drop-down list and select the image size from the options that display. 
 4. Scale the image, if required, using the **[!UICONTROL Image Scale]** field.
 5. Click **[!UICONTROL Apply]** to apply your changes.
-   ![Image editing with Adobe Express](/help/using/assets/adobe-express-resize-image.png)
+   ![Image editing with Adobe Express](assets/adobe-express-resize-image.png)
 
    Your edited image is available for download. You can either save the edited asset as a new version of the same asset or save it as a new asset.
-   ![Save image with Adobe Express](/help/using/assets/adobe-express-resize-save.png)
+   ![Save image with Adobe Express](assets/adobe-express-resize-save.png)
 
 ### Remove background {#remove-background-using-express}
 
@@ -44,7 +44,7 @@ You can remove background from an image in a few simple steps as mentioned below
 1. Select an image from your [!DNL Experience Manager] Assets repository and click **Edit**.
 2. Click **[!UICONTROL Remove Background]** from the quick actions available in the left pane. Experience Manager Assets displays the image with no background.
 3. Click **[!UICONTROL Apply]** to apply your changes.
-![Save image with Adobe Express](/help/using/assets/adobe-express-remove-background.png)
+![Save image with Adobe Express](assets/adobe-express-remove-background.png)
 
 ### Crop image {#crop-image-using-express}
 
@@ -54,7 +54,7 @@ Transforming an image into a perfect size is easy using embedded [!DNL Adobe Exp
 2. Click **[!UICONTROL Crop Image]** from the quick actions available in the left pane.
 3. Drag the handles on the corners of the image to create your desired crop.
 4. Click **[!UICONTROL Apply]**.
-   ![Save image with Adobe Express](/help/using/assets/adobe-express-crop-image.png)
+   ![Save image with Adobe Express](assets/adobe-express-crop-image.png)
    The cropped image is available for download. You can either save the edited asset as a new version of the same asset or save it as a new asset.
 
 ### Convert JPEG to PNG {#convert-jpeg-to-png-using-express}
