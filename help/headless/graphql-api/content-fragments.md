@@ -24,6 +24,10 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 >* [AEM Commerce consumes data from a Commerce platform via GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications.
 
+>[!NOTE]
+>
+>For the latest information about Experience Manager APIs, please also visit [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+
 ## The GraphQL API {#graphql-api}
 
 GraphQL is:
@@ -1036,8 +1040,7 @@ To protect against potential problems there are default limitations imposed on y
 
 * The query cannot contain more than 1M (1024 * 1024) characters
 * The query cannot contain more than 15000 tokens 
-* The query cannot contain more than 200000 whitespace tokens 
-* The query depth cannot exceed 500
+* The query cannot contain more than 200000 whitespace tokens
 
 ## FAQs {#faqs}
 

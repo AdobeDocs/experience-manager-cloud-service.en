@@ -4,7 +4,7 @@ description: AEM Forms provides out-of-the-box success and error handlers for a 
 keywords: Add a custom error handler, add a default error handler, add a error handler in form, use rule editor's invoke service to add a custom error handler, configure rule editor to add a custom error handler , add custom error handler using rule editor
 contentOwner: Ruchita Srivastav
 content-type: reference
-feature: Adaptive Forms
+feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 ---
 # Error Handlers for Adaptive Form based on Core Components {#error-handlers-in-adaptive-form}
@@ -245,14 +245,11 @@ Let's add the following code to the JavaScript file to display the response and 
             console.log("response:"+JSON.stringify(response));
             console.log("headers:"+JSON.stringify(headers));
             alert("CustomErrorHandler - Enter valid PetId.")
-            globals.invoke('defaultErrorHandler',response, headers)
+            globals.invoke('defaultErrorHandler',response, headers) 
             console.log("Custom Error Handler processing end...");
         }
     ```
-
-   To call the default error handler from your custom error handler, the following line of the sample code is used:
-        `globals.invoke('defaultErrorHandler',response, headers) `
-
+    
     >[!NOTE]
     >
     > In the `.content.xml` file, add `categories = [custom-errorhandler-name]`. For example, in this case, [custom-errorhandler-name] is provided as `customfunctionsdemoV2`.

@@ -114,6 +114,37 @@ To remove custom filters:
 
 1. Click **[!UICONTROL Confirm]** to remove the filters from the user interface. 
 
+## Search assets using [!DNL Adobe Firefly] {#search-firefly}
+
+You can search for an asset that is not available in any of the asset folders by utilizing the [!DNL Adobe Firefly] asset search feature within [!DNL Experience Manager Assets]. This allows you to efficiently generate assets in real-time that are not stored in the asset folders.
+
+### Before you begin
+
+You must have an active [!DNL Adobe Express] subscription.
+
+### Generate assets
+
+To generate new assets using [!DNL Adobe Firefly]:
+
+1. Navigate to the [!DNL AEM Assets] workspace.
+1. Enter the asset name in the search bar at the top of the page.<br>
+For instance, you can search an asset using the keyword `Bugatti Type 57`. When searching for the asset, no results are found because the asset is not present in any of the asset folders.
+1. Type the asset name in the search bar in the middle of the page and click **[!UICONTROL Generate]**.
+ ![Firefly integration](assets/firefly-integration.jpg)
+ *Figure: No results found for Bugatti Type 57 in the asset folder.* <br>
+The new assets are successfully generated.
+ ![Firefly integration](assets/bugatti-type-57.jpg)
+ *Figure: Reference assets searched using [!DNL Adobe Firefly] asset search feature.* <br>
+You can upload these assets to your preferred folder for easy access.
+
+### Upload assets
+
+To upload the generated asset to the assets repository:
+
+1. Click **[!UICONTROL Upload]**.
+1. Select the asset folder to which you need to upload the asset and click **[!UICONTROL Select Folder]**.
+ ![Upload asset](assets/upload-asset-firefly.jpg)
+ *Figure: Select the folder to upload asset.*
 
 ## Saved searches {#saved-search}
 
@@ -140,11 +171,21 @@ When userA is searching and userB add an asset that matches search results, will
 
 You can select the assets that display in the search results and do the following actions:
 
+* **Find Similar Image**: Find similar image asset in the Assets UI based on the metadata and smart tags.
+
 * **Details**: View and edit asset properties.
+
+* **Download**: Download an asset.
 
 * **Add to Collection**: Add the selected asset to a collection.
 
-* **Download**: Download an asset.
+* **Pin to Quick Access**: [Pin an asset](my-workspace-assets-view.md) for faster access when you need it later. All pinned items display in the **Quick access** section of My Workspace.
+
+* **Open in Adobe Express**: Edit an image in the integrated Adobe Express from the Experience Manager Assets screen.
+
+* **Edit**: Edit the image using Adobe Express. 
+
+* **Share Link**: [Share links](share-links-for-assets-view.md) for an asset with other users so that they can access and download it.
 
 * **Delete**: Delete an asset.
 
@@ -154,15 +195,11 @@ You can select the assets that display in the search results and do the followin
 
 * **Rename**: Rename an asset.
 
+* **Copy to Libraries**: Add an asset to Library.
+
 * **Assign Tasks**: Assign tasks to users for an asset.
 
-* **Share Link**: [Share links](share-links-for-assets-view.md) for an asset with other users so that they can access and download it.
-
 * **Watch**: [Monitor the operations](manage-notifications-assets-view.md) performed on an asset.
-
-* **Show File Location**: Navigate to asset folder location.
-
-* **Pin to Quick Access**: [Pin an asset](my-workspace-assets-view.md) for faster access when you need it later. All pinned items display in the **Quick access** section of My Workspace.
 
 ## Configuring search first homepage {#configuring-search-first-homepage}
 

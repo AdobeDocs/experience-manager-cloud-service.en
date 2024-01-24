@@ -8,6 +8,8 @@ exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 
 Learn how the Universal Editor enables what-you-see-is-what-you-get (WYSIWYG) editing of any headless and headful experience. Understand how it can help content authors deliver exceptional experiences, increase their content velocity, and how provides a state-of-the-art developer experience.
 
+{{universal-editor-status}}
+
 ## Background {#background}
 
 The most powerful tool to the AEM content author has been the page editor. The page editor offers an intuitive, visual, in-context WYSIWYG authoring experience that requires minimal training and shows authors exactly how the content will appear.

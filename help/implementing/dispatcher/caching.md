@@ -37,7 +37,7 @@ This method is useful, for example, when your business logic requires fine-tunin
    ```
 
    >[!NOTE]
-   >The Surrogate-Control header applies to the Adobe managed CDN. If using a [customer-managed CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), a different header may be required depending on your CDN provider.
+   >The Surrogate-Control header applies to the Adobe managed CDN. If using a [customer-managed CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN), a different header may be required depending on your CDN provider.
 
    Exercise caution when setting either global cache control headers or similar cache headers that match a wide regex so they are not applied to content that you must keep private. Consider using multiple directives to ensure rules are applied in a fine-grained manner. With that said, AEM as a Cloud Service removes the cache header if it detects that it has been applied to what it detects to be uncacheable by Dispatcher, as described in Dispatcher documentation. To force AEM to always apply the caching headers, one can add the **`always`** option as follows:
 
@@ -225,6 +225,10 @@ Now, images in blob storage that are marked private cannot be cached at the Disp
       </LocationMatch>
       ```
 
+### Analyzing CDN Cache Hit Ratio {#analyze-chr}
+
+See the [cache hit ratio analysis tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) for information about downloading CDN logs and analyzing your site's cache hite ratio, using a dashboard.
+
 ### HEAD request behavior {#request-behavior}
 
 When a HEAD request is received at the Adobe CDN for a resource that is **not** cached, the request is transformed and received by the Dispatcher and/or AEM instance as a GET request. If the response is cacheable, then subsequent HEAD requests are served from the CDN. If the response is not cacheable, then subsequent HEAD requests are passed to the Dispatcher, or AEM instance, or both, for a time that depends on the `Cache-Control` TTL.
@@ -241,7 +245,28 @@ For environments created in October 2023 or later, to better cache requests, the
  
 Submit a support ticket if you want this behavior to be disabled.
 
-For environments created before October 2023, it is recommended to configure the Dispatcher configuration's `ignoreUrlParams` property as [documented here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+For environments created before October 2023, it is recommended to configure the Dispatcher configuration's `ignoreUrlParams` property as [documented here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+
+There are two possibilities to ignore marketing parameters. (Where the first one is preferred to ignore cache busting via query parameters):
+
+1. Ignore all parameters and selectively allow parameters that are used. 
+In the following example only `page` and `product` parameters are not ignored and the requests will be forwarded to the publisher.
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "allow" }
+   /0002 { /glob "page" /type "deny" }
+   /0003 { /glob "product" /type "deny" }
+}
+```
+
+1. Allow all parameters except the marketing parameters. The file [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) defines a list of commonly used marketing parameters that will be ignored. Adobe will not update this file. It can be extended by users depending on their marketing providers.
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "deny" }
+   $include "../cache/marketing_query_parameters.any"
+}
+```
 
 
 ## Dispatcher Cache Invalidation {#disp}

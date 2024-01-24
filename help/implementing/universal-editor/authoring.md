@@ -8,6 +8,8 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 
 Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
 
+{{universal-editor-status}}
+
 ## Introduction {#introduction}
 
 The Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
@@ -17,10 +19,6 @@ To do this, the Universal Editor provides content authors with an intuitive UI t
 >[!TIP]
 >
 >For a more detailed introduction to the Universal Editor, see the document [Universal Editor Introduction.](introduction.md)
-
->[!NOTE]
->
->The Universal Editor is still in development. It currently cannot edit all content types.
 
 ## Prepare the App {#prepare-app}
 
@@ -38,11 +36,10 @@ After you are signed in, enter the URL of the page you want to edit in the [loca
 
 ## Understand The UI {#ui}
 
-The UI is divided into five main areas.
+The UI is divided into these main areas.
 
 * [The Experience Cloud header](#experience-cloud-header)
-* [The Universal Editor header](#universal-editor-header)
-* [The mode rail](#mode-rail)
+* [The Universal Editor toolbar](#universal-editor-toolbar)
 * [The editor](#editor)
 * [The properties rail](#properties-rail)
 
@@ -90,11 +87,11 @@ Select the icon representing your user to access your user settings. If you do n
 
 ![User properties](assets/user-properties.png)
 
-### The Universal Editor Header {#universal-editor-header}
+### The Universal Editor Toolbar {#universal-editor-toolbar}
 
-The Universal Editor header is always present at the top of the screen just below [the Experience Cloud header.](#experience-cloud-header) It gives you quick access to navigate to another page to edit and to publish the current page.
+The Universal Editor toolbar is always present at the top of the screen just below [the Experience Cloud header.](#experience-cloud-header) It gives you quick access to navigate to another page to edit and to publish the current page.
 
-![The Universal Editor header](assets/universal-editor-header.png)
+![The Universal Editor toolbar](assets/universal-editor-toolbar.png)
 
 #### The Home Button {#home-button}
 
@@ -126,7 +123,7 @@ The location bar shows you the address of the page you are editing. Select to en
 
 #### Authentication Header Settings {#authentication-settings}
 
-Select the authentication header settings icon if you need to set an authentication secret.
+Select the authentication header settings icon if you need to [set a custom authentication header for local development purposes.](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
 ![Authentication heder settings button](assets/authentication-header-settings.png)
 
@@ -148,6 +145,16 @@ You can also chose to emulate a mobile device and within the Universal Editor:
 * Define the width and height
 * Change the orientation
 
+#### Preview Mode {#preview-mode}
+
+In preview mode, the page rendered in the editor as it would be seen on your published service. This allows the content author to navigate the content by clicking links, and so on.
+
+![Preview mode](assets/preview-mode.png)
+
+>[!TIP]
+>
+>Use the hot key `P` to toggle to and from preview mode.
+
 #### Open App Preview {#open-app-preview}
 
 Select the open app preview icon to open the page you are currently editing in its own browser tab, free of the editor to preview your content.
@@ -168,47 +175,13 @@ Select the publish button so you can publish the changes to the content live for
 >
 >See the document [Publishing Content with the Universal Editor](publishing.md) for more information on publishing with the Universal Editor.
 
-### The Mode Rail {#rail}
-
-The mode rail is just below the home button and is always present along the left side of the editor. It allows easy switching the editor between different usage modes.
-
-![The mode rail](assets/mode-rail.png)
-
-#### Preview Mode {#preview-mode}
-
-In preview mode, the page rendered in the editor as it would be seen on your published service. This allows the content author to navigate the content by clicking links, and so on.
-
-![Preview mode](assets/preview-mode.png)
-
->[!TIP]
->
->Use the hot key `P` to switch to preview mode.
-
-#### Components Mode {#component-mode}
-
-In components mode, the content author can select components to edit them including:
-
-* [Editing plain text](#editing-content) in place.
-* [Editing rich text](#editing-rich-text) in place with additional formatting options displayed in the properties rail.
-* [Editing media content](#editing-media)
-* [Editing Content Fragments](#edit-content-fragment)
-
-![Components mode](assets/component-mode.png)
-
-When you select a component, the details of its content are displayed in the [properties rail.](#properties-rail) Depending on the content type, you can edit either in-place or in the properties rail.
-
->[!TIP]
->
->Use the hot key `C` to switch to components mode.
-
 ### The Editor {#editor}
 
 The editor occupies most of the window and is where the page specified in [the location bar](#location-bar) is rendered.
 
-* If the editor is in [components mode,](#component-mode) the content will be editable, but you cannot follow links.
-* If the editor is in [preview mode,](#preview-mode) the content will be navigable and you can follow links, but you cannot edit the content.
-
 ![Editor](assets/editor.png)
+
+If the editor is in [preview mode,](#preview-mode) the content will be navigable and you can follow links, but you cannot edit the content.
 
 ### Properties Rail {#properties-rail}
 
@@ -248,7 +221,7 @@ When selecting an item in the content tree, the editor scrolls to that content a
 
 ##### Edit {#edit}
 
-When in [components mode,](#component-mode) the edit options for the selected component appear in the properties rail. In the properties rail you can edit the selected component. If the selected component is a Content Fragment, you can also select the edit button.
+When editing, the options for the selected component appear in the properties rail, where you can edit the selected component. If the selected component is a Content Fragment, you can also select the edit button.
 
 ![Edit icon](assets/edit.png)
 
@@ -288,19 +261,19 @@ Tapping or clicking the delete button [deletes the component.](#deleting-compone
 
 ## Editing Content {#editing-content}
 
-Editing content is simple and intuitive. In [components mode](#component-mode), as you mouse over content in the editor, editable content is highlighted with a blue box.
+Editing content is simple and intuitive. As you mouse over content in the editor, editable content is highlighted with a blue box.
 
 ![Editable content is highlighted by a blue box](assets/editable-content.png)
 
 >[!TIP]
 >
->In components mode, tapping or clicking on content selects it for editing. If you want to navigate your content by following links, switch to [preview mode.](#preview-mode)
+>By default, tapping or clicking on content selects it for editing. If you want to navigate your content by following links, switch to [preview mode.](#preview-mode)
 
 Depending on the content you select, you may have different in-place editing options and you may additional information and options for the content in the [properties rail.](#properties-rail)
 
 ### Editing Plain Text {#edit-plain-text}
 
-If you are in [components mode](#component-mode) and select a plain text component, you can edit the text in place by double-clicking or double-tapping the component.
+You can edit the text in place by double-clicking or double-tapping the component.
 
 ![Editing content](assets/editing-content.png)
 
@@ -314,7 +287,7 @@ Also, details on your text are available in the properties rail. Changes are aut
 
 ### Editing Rich Text {#edit-rich-text}
 
-If you are in [components mode](#component-mode) and select a rich text component, you can edit the text in place by double-clicking or double-tapping the component.
+You can edit the text in place by double-clicking or double-tapping the component.
 
 Press enter/return or select outside of the text box to save your changes.
 
@@ -324,25 +297,20 @@ Also, formatting options and details on your text are available in the propertie
 
 ### Editing Media {#edit-media}
 
-If you are in [components mode](#component-mode) and you select an image, you can view its details in the properties rail.
+You can view its details in the properties rail.
 
 ![Editing media](assets/ue-edit-media.png)
 
-Select the **Replace** button below the preview of the selected image in the properties rail to replace the image with another from your library of assets.
-
+1. Tap or click the preview of the selected image in the properties rail.
 1. The [asset selector](/help/assets/asset-selector.md#using-asset-selector) window opens to allow you to select an asset.
 1. Select to select a new asset.
 1. Select **Select** to return to the properties rail where the asset was replaced.
 
 Changes are saved to your content automatically.
 
->[!TIP]
->
->Use the hot key `R` to open the asset selector to replace the selected image.
-
 ### Editing Content Fragments {#edit-content-fragment}
 
-If you are in [components mode](#component-mode) and you select a [Content Fragment,](/help/sites-cloud/administering/content-fragments/overview.md) you can edit its details in the properties rail.
+If you select a [Content Fragment,](/help/sites-cloud/administering/content-fragments/overview.md) you can edit its details in the properties rail.
 
 ![Editing a Content Fragment](assets/ue-edit-cf.png)
 
@@ -401,7 +369,7 @@ The components are reordered in both the content tree and in the editor
 
 When you are finished editing content, you often want to navigate it to see how it looks in the content of other pages. In [preview mode](#preview-mode) you can click links to navigate your content as a reader would. The content is rendered in the editor as it would be published.
 
-In preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you want to select the content for editing, switch to [components mode.](#component-mode)
+In preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you want to select the content for editing, toggle out of [preview mode.](#preview-mode)
 
 ## Additional Resources {#additional-resources}
 

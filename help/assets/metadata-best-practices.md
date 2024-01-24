@@ -2,8 +2,6 @@
 title: Metadata management and best practices
 description: Learn about metadata best practices to effectively manage your digital assets.
 role: User, Admin
-hide: no
-hidefromtoc: no
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 ---
 <!-- Keywords to focus on:
@@ -90,8 +88,6 @@ The governance strategy may include:
 
 Determine where the information comes from and examine the details of the metadata strategy, including the properties and their sources. It can scale depending on the complexity of the strategy. In larger enterprises, there's a master metadata management system overseeing multiple systems in the master stack.
 
-<br>
-
 >[!NOTE]
 >
 >Learn how to [manage metadata of your digital assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
@@ -99,7 +95,9 @@ Determine where the information comes from and examine the details of the metada
 ### Be consistent with the metadata strategy
 
 A consistent metadata strategy ensures effective organization and retrieval of digital assets. Adopt a strategic approach to capture and implement metadata values, allowing the flexibility for evolution without unnecessary changes. <br>
+
 In enterprise-wide metadata management, consistency is important when naming and referencing assets. For example, when managing multiple assets simultaneously, "consider adding metadata in bulk. <br>
+
 Here are some of the best practices to follow:
 
    * **Avoid duplicate values:** If you have a collection of images from a marketing campaign, use consistent names and avoid duplicates.<br>
@@ -108,8 +106,8 @@ Here are some of the best practices to follow:
    * **Use controlled vocabularies effectively:** Implement controlled vocabularies by employing standardized terms for tags. Learn how to implement [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md) effectively.  <br>
    For example, consistently use terms such as *product_launch* or *event_promotion* when tagging images with themes to maintain systematic sequence.
 
-   * **Maintain accuracy and completeness:** To keep metadata consistent, accuracy, completeness, and alignment across various sources are crucial.<br>
-   For instance, when adding metadata to a PDF document, verify that details like author names and keywords are accurate and complete.
+* **Maintain accuracy and completeness:** To keep metadata consistent, accuracy, completeness, and alignment across various sources are crucial.
+  For instance, when adding metadata to a PDF document, verify that details like author names and keywords are accurate and complete.
 
 #### Video: Add bulk metadata to assets
 
@@ -117,7 +115,8 @@ Here are some of the best practices to follow:
 
 ### Assess and improve metadata searchability
 
-Assess your metadata strategy to improve metadata searchability. Simplify workflows and enhance search capabilities for efficient reuse. Avoid dealing with metadata that lacks a clear purpose.<br>
+Assess your metadata strategy to improve metadata searchability. Simplify workflows and enhance search capabilities for efficient reuse. Avoid dealing with metadata that lacks a clear purpose.
+
 You can consider the following best practices to optimize your metadata searchability:
 
 * **Keyword optimization:** Improve metadata searchability by optimizing keywords associated with assets. You can improve the relevance of keywords for particular assets in the [!UICONTROL Assets Manager] by following these steps:
@@ -127,7 +126,7 @@ You can consider the following best practices to optimize your metadata searchab
    1. Navigate to the **[!UICONTROL Advanced]** tab, and then click **[!UICONTROL Add]** under the **[!UICONTROL Elevate for search keywords]**. <br>You must use the default metadata schema to elevate the search keywords. 
    1. Enter the keyword for which you want to boost the search, and then click **[!UICONTROL Add]**.<br>
    You can add multiple keywords and arrange them as per your priority.
-   1. Click **[!UICONTROL Save & Close]**.<br>
+   1. Click **[!UICONTROL Save & Close]**.
    Search the asset using the keywords you added. The asset appears among the top search results.
    
    Learn how to [boost search in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
@@ -145,7 +144,7 @@ You can consider the following best practices to optimize your metadata searchab
 
 ### Keep metadata simple and easy to understand
 
-Simplify metadata for better governance and user adoption. Keep it straightforward and easy to understand, encouraging users to add essential information. <br>
+Simplify metadata for better governance and user adoption. Keep it straightforward and easy to understand, encouraging users to add essential information. 
 Try the following best practices to simplify the metadata:
 
 * **Optimize property options:** Focus on highlighting essential properties without burdening the users with too many metadata fields to fill in. For instance, when adding metadata for an image, include only key fields like title, description, and tags for effective categorization.
