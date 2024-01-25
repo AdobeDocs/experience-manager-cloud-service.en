@@ -24,7 +24,7 @@ You can add a fragment multiple times to a document and use data binding propert
 
 >[!NOTE]
 >
-> You can easily customize your fragment experience for users with the [Configure dialog and Design dialog of Form Fragment component]().
+> You can easily customize your fragment experience for users with the [Configure dialog and Design dialog of Form Fragment component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
 
 ## Create a form fragment {#create-a-fragment}
 
