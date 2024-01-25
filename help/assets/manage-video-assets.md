@@ -41,7 +41,7 @@ You can preview the MP4 renditions in the [!DNL Assets] user interface. To previ
 1. Click the asset, and select ![details option](assets/do-not-localize/details_icon.svg) **[!UICONTROL Details]**  from the top toolbar. The video asset opens in the video viewer.
 1. Click the ![play option](assets/do-not-localize/play.png) icon on the video thumbnail. <br>You can play, pause, control the volume, and zoom the video to full screen.
 
-For existing video assets in [!DNL Experience Manager Assets], you need to **[!UICONTROL Reprocess]** the assets in [!DNL Experience Manager] to enable the video preview feature. Learn how to [reprocess digital assets](n) in [!DNL Experience Manager].
+For existing video assets in [!DNL Experience Manager Assets], you need to **[!UICONTROL Reprocess]** the assets in [!DNL Experience Manager] to enable the video preview feature. Learn how to [reprocess digital assets](reprocessing.md) in [!DNL Experience Manager].
 
 ### Limitations of video preview
 
