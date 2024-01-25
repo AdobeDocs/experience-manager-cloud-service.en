@@ -96,7 +96,7 @@ Assets Essentials now enables you to define blocklist that comprises words that 
 
 ### Support for Dynatrace {#dynatrace}
 
-Dynatrace customers may monitor their AEM usage. [Read how](/help/implementing/cloud-manager/dynatrace-oneagent.md) to request connectivity with your Dynatrace environment for application performance monitoring.
+Dynatrace customers may monitor their AEM usage. [Read how](/help/implementing/cloud-manager/dynatrace.md) to request connectivity with your Dynatrace environment for application performance monitoring.
 
 ### RDE Support for Front-End Code using Site Themes and Site Templates: Early Adopter Program {#rde-frontend-early-adopter}
 
