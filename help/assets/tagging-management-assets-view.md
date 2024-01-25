@@ -82,6 +82,7 @@ To create a standard tag, click `Create Tag` at the root-level. Specify title, n
 >
 >If you delete `Standard Tags` namespace using Assets as a Cloud Service, the tags created at the root-level do not display in the list of available tags. 
 -->
+
 ## Moving Tags {#moving-tags}
 
 In case you store your tags under the wrong hierarchy or your taxonomy changes over the time, you can move the selected tags to maintain data integrity. The following conditions must be considered while moving tags:
