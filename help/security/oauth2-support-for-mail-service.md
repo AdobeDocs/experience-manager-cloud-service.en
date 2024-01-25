@@ -3,6 +3,7 @@ title: OAuth2 Support for the Mail Service
 description: Oauth2 Support for the Mail Service in Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 ---
+
 # OAuth2 Support for the Mail Service {#oauth2-support-for-the-mail-service}
 
 AEM as a Cloud Service offers OAuth2 support for its integrated Mail Service to allow organizations to adhere to secure email requirements.
@@ -23,10 +24,12 @@ For more information on the AEM as a Cloud Service Mail Service, see [Sending Em
 1. Go to the created app, and select **API Permissions**.
 1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**.
 1. Select the below permissions for your app, then click **Add Permission**:
+
+   >[!NOTE]
+   >
+   >Permissions configuration may evolve over time. Work with Microsoft if these do not work as expected.
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
@@ -128,16 +131,18 @@ Before proceeding to configure OAuth on the AEM side, make sure to validate both
    
 1. Fill in the `authUrl`, `tokenUrl`, and `refreshURL` by constructing them as described in the previous section.
 1. Add the following Scopes to the configuration:
+
+   >[!NOTE]
+   >
+   >Scopes may evolve over time. Work with Microsoft if these do not work as expected.
+
    * `https://outlook.office.com/SMTP.Send`
-   * `https://graph.microsoft.com/Mail.Read`
-   * `https://graph.microsoft.com/Mail.Send`
-   * `https://graph.microsoft.com/User.Read`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
 1. Create an OSGI property file `called com.day.cq.mailer.DefaultMailService.cfg.json`
-under `/apps/<my-project>/osgiconfig/config` with the syntax below. The `smtp.host` and `smtp.port` values reflects advanced networking configuration, as described in the [Email Service tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
+under `/apps/<my-project>/osgiconfig/config` with the syntax below. The `smtp.host` and `smtp.port` values reflects advanced networking configuration, as described in the [Email Service tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html).
    
    ```
    {
@@ -155,7 +160,7 @@ under `/apps/<my-project>/osgiconfig/config` with the syntax below. The `smtp.ho
    ```
 
 1. For outlook, the `smtp.host` configuration value is `smtp.office365.com`
-1. At runtime, pass in the `refreshToken values` and `clientSecret` secrets using the Cloud Manager variables API as described [here](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api). The values for the variables `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  and `SECRET_SMTP_OAUTH_CLIENT_SECRET` should be defined.
+1. At runtime, pass in the `refreshToken values` and `clientSecret` secrets using the Cloud Manager variables API as described [here](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) or by using [Cloud Manager to add variables.](/help/implementing/cloud-manager/environment-variables.md) The values for the variables `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  and `SECRET_SMTP_OAUTH_CLIENT_SECRET` should be defined.
    
 ### Troubleshooting {#troubleshooting}
 

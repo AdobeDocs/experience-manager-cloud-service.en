@@ -15,7 +15,7 @@ exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
 
 All digital assets, metadata, and content of Microsoft&reg; Office and PDF documents are extracted and made searchable. Search allows sophisticated filtering on assets and completely respects the proper permissions. Metadata is covered in detail in Metadata in Digital Asset Management.
 
-[!DNL Experience Manager Assets] supports multiple ways of organizing content. You can organize them in a hierarchical manner using folders or you can organize them in an unordered, ad-hoc manner, for example tags. Users can edit tags in the DAM Asset Editor where subassets, renditions, and metadata are displayed.
+[!DNL Experience Manager Assets] supports multiple ways of organizing content. You can organize them in a hierarchical manner using folders or you can organize them in an unordered, ad-hoc manner, for example, tags. Users can edit tags in the DAM Asset Editor where subassets, renditions, and metadata are displayed.
 
 <!-- Commenting to pull down the existing content before applying changes wrt CQDOC-15930
 ## Create folders {#create-folders}

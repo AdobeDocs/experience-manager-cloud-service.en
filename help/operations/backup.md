@@ -16,7 +16,7 @@ If a customer's deployment, meaning the deployed application code is either brok
 
 >[!CAUTION]
 >
->This feature should be used only when there are serious issues with either code or content. The recent data between the time of the restored backup and the present is lost. Staging is also restored to the old version.
+>This feature should be used only when there are serious issues with either code or content. The recent data between the time of the restored backup and the present is lost. Staging is also restored to the old version. Should recent data be kept, it needs to be exported through a content package prior to restore, and reinstalled on restored repository.
 
 ## How to Use {#how-to-use}
 

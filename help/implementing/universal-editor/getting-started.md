@@ -12,6 +12,8 @@ Learn how to get access to the Universal Editor and how to start instrumenting y
 >
 >If you would prefer to dive right into an example, you can review the [Universal Editor Sample App on GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
 
+{{universal-editor-status}}
+
 ## Onboarding Steps {#onboarding}
 
 Although the Universal Editor can edit content from any source, this document will use an AEM app as an example.
@@ -27,7 +29,7 @@ This document will guide you through these steps.
 
 ## Request Access to the Universal Editor {#request-access}
 
-You first need to request access to the Universal Editor. See [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), sign in, and validate if you have access to the Universal Editor.
+You first need to request access to the Universal Editor. Open [`https://experience.adobe.com/#/aem/editor``](https://experience.adobe.com/#/aem/editor), sign in, and validate if you have access to the Universal Editor.
 
 In case you do not have access, it can be requested via a form linked on the same page.
 
@@ -51,7 +53,7 @@ import "@adobe/universal-editor-cors";
 
 ### Alternative for Non-React Apps {#alternative}
 
-If you are not implementing a React app and/or require server-side rendering an alternative method is to include the following to the document body.
+If you are not implementing a React app and/or require server-side rendering, an alternative method is to include the following to the document body.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -116,10 +118,10 @@ Connections which are used in the app are stored as `<meta>` tags in the page's 
 
 The identifier `urn:adobe:aue:system` represents the connection for the Adobe Universal Editor.
 
-`itemid`s will use the `urn` prefix to shorten the identifier.
+`data-aue-resource`s will use the `urn` prefix to shorten the identifier.
 
 ```html
-itemid="urn:<referenceName>:<resource>"
+data-aue-resource="urn:<referenceName>:<resource>"
 ```
 
 * `<referenceName>` - This is the named reference mentioned in the `<meta>` tag. E.g. `aemconnection`

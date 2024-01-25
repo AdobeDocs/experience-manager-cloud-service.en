@@ -1,8 +1,8 @@
 ---
 title: How can we create Form Data Model for an Adaptive Form?
 description: Learn to create Adaptive Forms and Fragments based on a form data model(FDM). Generate and edit sample data for data model objects in the FDM.
-feature: Form Data Model
-role: User
+feature: Adaptive Forms, Form Data Model
+role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
 ---
@@ -40,7 +40,7 @@ You can create [Adaptive Forms](creating-adaptive-form.md) and Adaptive Form Fra
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Tap to expand **[!UICONTROL Select Form Data Model]**. All available form data models are listed.
+1. Select to expand **[!UICONTROL Select Form Data Model]**. All available form data models are listed.
 
    Select a from data model.
 
@@ -87,14 +87,14 @@ Form Data Model editor lets you generate and edit sample data for data model obj
 <!--To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
-1. Select an interactive communication and tap **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
-1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and tap **[!UICONTROL Preview]**.
+1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
+1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and select **[!UICONTROL Preview]**.
 
 The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-To preview an Adaptive Form with sample data, open the Adaptive Form in author mode and tap **[!UICONTROL Preview]**.
+To preview an Adaptive Form with sample data, open the Adaptive Form in author mode and select **[!UICONTROL Preview]**.
 
 ## Prefill using Form Data Model service {#prefill}
 
@@ -114,20 +114,34 @@ Edit Properties dialog for an interactive communication-->
 
 When a user submits a form based on a form data model, you can configure the form to write submitted data for a data model object to its data sources. To achieve this use case, [!DNL Experience Manager Forms] provide [Form Data Model Submit Action](configuring-submit-actions.md), available out-of-the-box only for Adaptive Forms based on a form data model. It writes submitted data for a data model object in its data source.
 
-To configure the Form Data Model Submit Action, open Adaptive Form Container properties and select **[!UICONTROL Submit using Form Data Model]** from the Submit Action drop-down under the Submission accordion. Then, browse and select a data model object from the **[!UICONTROL Name of the data model object to submit]** drop-down. Save the properties.
+To configure the Form Data Model Submit Action:
 
-On form submission, data for the configured data model object is written to the respective data source.
+1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
+1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
+1. Click the  **[!UICONTROL Submission]** tab. 
+1. From the **[!UICONTROL Submit Action]** drop-down list, select **[!UICONTROL Submit using Form Data Model]**.
+
+    ![Action configuration](/help/forms/assets/configure-submit-action-invoke-fdm.png)
+
+1. Specify the **[!UICONTROL Data model to submit]**.
+1. Click **[!UICONTROL Done]** 
+
+On form submission, data for the configured data model object is written to the respective data source. In addition, you can submit a form attachment using a Form Data Model and a Document of Record (DoR) to the data source. For information about form data model, see [[!DNL AEM Forms] Data Integration](data-integration.md).
 
 <!--![data-submission](assets/data-submission.png)-->
+
+>[!NOTE]
+>
+> AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
 
 You can also submit form attachments to a data source using binary data model object property. Do the following to submit attachments to a JDBC data source:
 
 1. Add a data model object that includes a binary property to the form data model.
 1. In the Adaptive Form, drag-drop the **[!UICONTROL File Attachment]** component from the Components browser onto the Adaptive Form.
-1. Tap to select the added component and tap ![settings_icon](assets/configure-icon.svg) to open the Properties browser for the component.
-1. In the Bind Reference field, tap ![foldersearch_18](assets/folder-search-icon.svg) and navigate to select the binary property you added in the form data model. Configure other properties, as appropriate.
+1. Select to select the added component and select ![settings_icon](assets/configure-icon.svg) to open the Properties browser for the component.
+1. In the Bind Reference field, select ![foldersearch_18](assets/folder-search-icon.svg) and navigate to select the binary property you added in the form data model. Configure other properties, as appropriate.
 
-   Tap ![check-button](assets/save_icon.svg) to save the properties. The attachment field is now bound to the binary property of the form data model.
+   Select ![check-button](assets/save_icon.svg) to save the properties. The attachment field is now bound to the binary property of the form data model.
 
 1. In the Submission section of the Adaptive Form Container properties, enable **[!UICONTROL Submit Form Attachments]**. It submits the attachment in the binary property field to the data source on form submission.
 
@@ -163,3 +177,8 @@ The added configuration is saved under the **[!UICONTROL Adaptive Form-Level Whi
 >1. [Create a configuration file](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
 >1. Set properties of getContentPathPattern and getFormDataModelPathPattern.
 >1. Deploy the project. 
+
+## Related Articles
+
+{{af-submit-action}}
+

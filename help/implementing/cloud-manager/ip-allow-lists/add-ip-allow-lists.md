@@ -10,7 +10,9 @@ Learn how to add your own IP allowlist using Cloud Manager.
 
 A user in the **Business Owner** or **Deployment Manager** role can follow these steps to add an IP allowlist.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+
+1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
 
 1. From the **Overview** page, navigate to the **Environments** screen.
 

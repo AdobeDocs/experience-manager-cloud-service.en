@@ -80,7 +80,7 @@ When performing the production migration you should avoid running the Content Tr
 
 **Optimizing the load on your AEM source while performing the content migration**
 
-Remember, the load on the AEM source is greater during the extraction phase. You should be aware that:
+Remember, the load on the AEM source is greater during the extraction phase. Be aware of the following:
 
 * The Content Transfer Tool is an external Java process that uses a JVM Heap of 4 GB
 * The non-AzCopy version downloads binaries, stores them on a temporary space on the source AEM author, consuming disk I/O, then uploads into the Azure container which consumes network bandwidth
@@ -120,7 +120,7 @@ Review this list of activities to ensure that you perform a smooth and successfu
 * Perform the final content top-up.
 * Validate dispatcher configurations.
   * Use a local dispatcher validator that facilitates configuring, validating, and simulating the dispatcher locally
-    * [Set up the local dispatcher tools.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+    * [Set up the local dispatcher tools.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#prerequisites)
   * Review the virtual host configuration carefully.
     * The easiest (and default) solution is to include `ServerAlias *` in your virtual host file in the `/dispatcher/src/conf.d/available_vhostsfolder`.
       * This will permit the host aliases used by product functional tests, dispatcher cache invalidation, and clones to function.
@@ -146,6 +146,8 @@ Review this list of activities to ensure that you perform a smooth and successfu
     * The TTL is the amount of time a DNS record stays in a cache before asking the server for an update.
     * If you have a very high TTL, updates to your DNS record will take longer to propagate. 
 * Run performance and security tests that meet your business requirements and objectives.
+    * Perform tests on stage environment.  It has the same sizing as production. 
+    * Development environments do not have the same sizing as stage and production. 
 * Cut over and make sure that the actual go-live is performed without any new deployment or content update.
 * Create Admin Console user Notification Profiles. See [Notification Profiles](/help/journey-onboarding/notification-profiles.md)
 

@@ -4,11 +4,11 @@ description: Form fragment is a modular and reusable component of a form. Learn 
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-
+exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
 ---
-
 # Create and use Adaptive Forms Fragments in an Adaptive Form  {#adaptive-form-fragments}
 
 
@@ -93,7 +93,7 @@ In addition, if you selected an XML schema or XDP form template as the form mode
 
     * **Form Model**: Depending on the form model for the Adaptive Form, this field displays the **XML Schema**, **Form Template**, or **None**. It is a non-editable field.
 
-    * **Fragment Model Root**: Appears only in XSD-based Adaptive Forms. It specifies the root for the fragment model. You can choose **/** or the XSD complex type from the drop-down. Note that you can reuse the fragment in another Adaptive Form only if you select the complex type as the fragment model root.
+    * **Fragment Model Root**: Appears only in XSD-based Adaptive Forms. It specifies the root for the fragment model. You can choose **/** or the XSD complex type from the drop-down. You can reuse the fragment in another Adaptive Form only if you select the complex type as the fragment model root.
       If you choose **/** as the fragment model root, the complete XSD tree from the root is visible in the Adaptive Form Data Model tab. For a complex type fragment model root, only the descendants of the selected complex type are visible in the Adaptive Form Data Model tab.
 
     * **XSD Ref**: Appears only in XSD-based Adaptive Forms. It displays the location of the XML schema.
@@ -168,7 +168,7 @@ You can use a schema-based form fragment multiple times in an Adaptive Form to s
 
   >[!NOTE]
   >
-  > If you use none-based form fragments multiple times in an Adaptive form, data synchronization issue between the fields of the fragments occurs. You can use a single [form fragment (based on core components)](/help/forms/adaptive-form-fragments-core-components.md) that is not tied to any form data model, multiple times in a form without experiencing data synchronization issues. 
+  > If you use none-based form fragments multiple times in an Adaptive form, data synchronization issue between the fields of the fragments occurs. You can use a [core component based form fragment](/help/forms/adaptive-form-fragments-core-components.md) that is not tied to any form data model, multiple times in a form without experiencing data synchronization issues. 
 
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 
@@ -246,7 +246,7 @@ To localize an Adaptive Form that contains Adaptive Form Fragments, you need to 
 * Ensure that the fragment name is unique. The fragment fails to create if there is an existing fragment with the same name.
 * In an XDP-based Adaptive Form, if you save a panel as fragment that includes another XDP fragment, the resulting fragment is automatically bound to the child XDP fragment. In case of an XSD-based Adaptive Form, the resulting fragment is bound to the schema root.
 * When you create an Adaptive Form Fragment, a fragment node gets created, which is similar to the guideContainer node for an Adaptive Form, in CRXDe Lite.
-* A fragment in an Adaptive Form that uses a different Form Data Model is not supported. For example, an XDP-based fragment is not supported in an XSD-based Adaptive Form and vice-versa.
+* A fragment in an Adaptive Form that uses a different Form Data Model is not supported. For example, an XDP-based fragment is not supported in an XSD-based Adaptive Form and conversely.
 * Adaptive Form Fragments are available for use through the Adaptive Form Fragments tab in AEM content finder.
 * Any expression, script, or style in a stand-alone Adaptive Form Fragment is retained when it is inserted by reference or embedded in an Adaptive Form.
 * You cannot edit an Adaptive Form Fragment, which is inserted by reference, from within an Adaptive Form. To edit, you either edit the stand-alone Adaptive Form Fragment or embed the fragment in the Adaptive Form.

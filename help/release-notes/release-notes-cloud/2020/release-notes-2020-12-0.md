@@ -58,7 +58,7 @@ The Release Date for Cloud Manager in Adobe Experience Manager (AEM) as a Cloud 
 
 ### What is new in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* New version of AIO-CLI plugin released. The latest version of this plug-in includes bug fixes for the AEM Dispatcher Converter and the Repository Modernizer and also supports a new utility - Index Converter. See [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html?lang=en#benefits) where you can learn more about this plug-in. 
+* New version of AIO-CLI plugin released. The latest version of this plug-in includes bug fixes for the AEM Dispatcher Converter and the Repository Modernizer and also supports a new utility - Index Converter. See [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) where you can learn more about this plug-in. 
 
 * Index Converter is a utility that can be used to transform a customer's Custom Oak Index Definitions to AEM as a CLoud Service compatible Oak Index Definitions. See [Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) for more details.
 

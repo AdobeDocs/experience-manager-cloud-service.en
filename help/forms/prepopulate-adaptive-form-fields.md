@@ -2,6 +2,7 @@
 title: How to prefill Adaptive Form fields?
 description: Use existing data to prefill fields of an Adaptive Form, Users can prefill basic information in a form by logging in with their social profiles.
 topic-tags: develop
+feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 ---
 # Prefill Adaptive Form fields{#prefill-adaptive-form-fields}

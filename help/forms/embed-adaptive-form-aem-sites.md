@@ -2,6 +2,7 @@
 title: How to add an Adaptive Form to an AEM Sites page?
 description: Seamlessly embed Adaptive Forms in an AEM Sites page or a web page hosted outside AEM.
 feature: Adaptive Forms
+role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
 ---
@@ -45,7 +46,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 You can take full advantage of this feature by using the following options:
 
-* **[Create an Adaptive Form using approved templates and embed it to an AEM Sites page](#embed-form-using-adaptive-form-wizzard-aem-sites):** You can leverage pre-approved templates to quickly create and embed Adaptive Forms that align with your organization's branding guidelines and design standards.  
+* **[Create an Adaptive Form using approved templates and embed it to an AEM Sites page](#embed-form-using-adaptive-form-wizzard-aem-sites):** You can use pre-approved templates to quickly create and embed Adaptive Forms that align with your organization's branding guidelines and design standards.  
 
 * **[Embed existing forms to an AEM Sites page](#embed-an-adaptive-form-in-sites-editor):** You can easily integrate forms that you have already created into your websites, enabling visitors to interact with them directly.  
 
@@ -195,7 +196,7 @@ To embed an existing Adaptive Form in a Sites page:
 
 1. Open the AEM Sites page in edit mode.
 1. Drag-and-drop the **[!UICONTROL Adaptive Forms - Embed(v2)]** component from the Component Browser to the Sites page. 
-1. Tap the **[!UICONTROL Adaptive Forms - Embed]** component in the Sites page and tap ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** dialog opens.
+1. Select the **[!UICONTROL Adaptive Forms - Embed]** component in the Sites page and select ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** dialog opens.
 1. Browse and select the Adaptive Form to embed in the **[!UICONTROL Asset Path]**.
 1. Save the settings. The Adaptive Form is now embedded in the page.
 
@@ -209,7 +210,7 @@ You can also extend the accessibility of your forms by embedding them to AEM Exp
 
 1. Open an Experience Fragment in edit mode.
 1. Drag-and-drop the **[!UICONTROL Adaptive Forms - Embed(v2)]** component from the Component Browser to the Experience Fragment. 
-1. Tap the **[!UICONTROL Adaptive Forms - Embed]** component in the Experience Fragment and tap ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** dialog opens.
+1. Select the **[!UICONTROL Adaptive Forms - Embed]** component in the Experience Fragment and select ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed(v2)]** dialog opens.
 1. Browse and select the Adaptive Form to embed in the **[!UICONTROL Asset Path]**.
 1. Save the settings. The Adaptive Form is now embedded to the Experience Fragment. 
 
@@ -305,9 +306,9 @@ To embed an Adaptive Form using the **[!UICONTROL Adaptive Forms - Embed]** comp
    >
    >Multiple Adaptive Forms - Embed components on a page are not supported.
 
-1. To create and embed a new form, on the component toolbar, tap the **Create Form** icon. A window to create the form opens. 
+1. To create and embed a new form, on the component toolbar, select the **Create Form** icon. A window to create the form opens. 
 
-1. Tap the embedded Adaptive Forms - Embed component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
+1. Select the embedded Adaptive Forms - Embed component in the sites page, and then select ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
 1. In the Edit Adaptive Forms - Embed dialog, specify the following.
 
     **Asset Type:** Select the type of asset to embed. 
@@ -351,7 +352,7 @@ Let's consider the following scenarios for publishing an embedded Adaptive Form 
 To modify any configuration or property of the embedded Adaptive Form, do one of the following.
 
 * Open the original form in an Adaptive Form  in respective editor and modify them.
-* Tap the Adaptive Form  from within the site page in edit mode and then tap **[!UICONTROL Edit in a new window]**. The original form opens in edit mode that you can modify.
+* Select the Adaptive Form  from within the site page in edit mode and then select **[!UICONTROL Edit in a new window]**. The original form opens in edit mode that you can modify.
 
 >[!NOTE]
 >

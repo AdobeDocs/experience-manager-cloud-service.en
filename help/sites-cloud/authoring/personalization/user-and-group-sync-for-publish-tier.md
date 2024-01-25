@@ -88,7 +88,7 @@ There are various approaches to persisting data, depending on the nature of that
 User profile information can be written and read in two ways:
 
 * Server-side use with the `com.adobe.granite.security.user` Interface UserPropertiesManager interface, which will place data under the user's node in `/home/users`. Make sure that pages that are unique per user are not cached. 
-* Client-side using ContextHub, as described by [the documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=en#personalization).
+* Client-side using ContextHub, as described by [the documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization).
 
 ### Third-party data stores {#third-party-data-stores}
 
@@ -98,7 +98,7 @@ Real-time access to third-party services to retrieve profile attributes is possi
 
 ## Permissions (Closed User Groups) {#permissions-closed-user-groups}
 
-Publish-tier access policies, also called Closed User Groups (CUGs), are defined in the AEM author as [described here](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=en#applying-your-closed-user-group-to-content-pages). To restrict certain sections or pages of a website from some users, apply the CUGs as needed using the AEM author, as described here, and replicate them to the publish tier.
+Publish-tier access policies, also called Closed User Groups (CUGs), are defined in the AEM author as [described here](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). To restrict certain sections or pages of a website from some users, apply the CUGs as needed using the AEM author, as described here, and replicate them to the publish tier.
 
 * If users log in by authenticating with an identity provider (IdP) using SAML, the authentication handler will identify the user's group memberships (which should match the CUGs on the publish tier), and persist the association between the user and the group through a repository record
 * If login is accomplished without IdP integration, custom code can apply the same repository structure relationships.
@@ -107,7 +107,7 @@ Independent of login, custom code can also persist and manage a user's group mem
 
 ## Data Synchronization {#data-synchronization}
 
-Website end users have an expectation of a consistent experience on every web page request or even when they log in using a different browser, even if unbeknownst to them, they are brought to different server nodes of the publish tier infrastructure. AEM as a Cloud Service accomplishes this by quickly synchronizing the `/home` folder hierarchy (user profile information, group membership, etc) across all the nodes of the publish tier.
+Website end users have an expectation of a consistent experience on every web page request or even when they log in using a different browser, even if unbeknownst to them, they are brought to different server nodes of the publish tier infrastructure. AEM as a Cloud Service accomplishes this by quickly synchronizing the `/home` folder hierarchy (user profile information, group membership, and so on) across all the nodes of the publish tier.
 
 Unlike other AEM solutions, user and group membership synchronization in AEM as a Cloud Service does not use a point-to-point messaging approach, instead implementing a publish-subscribe approach that does not require customer configuration.
 

@@ -32,7 +32,7 @@ Follow the steps below to use thumbnail in videos:
 1. Navigate to an existing Screens channel or create a channel.
 
    >[!NOTE]
-   >To learn how to create a channel and add content to a channel, see [Creating and Managing a Channel in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
+   >To learn how to create a channel and add content to a channel, see [Creating and Managing a Channel in Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
 
 1. Select the channel. On the action bar, click **Edit** to open the editor.
 
