@@ -915,7 +915,7 @@ user-guide-title: AEM as a Cloud Service
     + [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md)
     + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)
     + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
-    + [Dynatrace OneAgent](/help/implementing/cloud-manager/dynatrace.md)
+    + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
     + [Notifications](/help/implementing/cloud-manager/notifications.md)
     + SSL Certificates {#manage-ssl-certificates}
       + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
