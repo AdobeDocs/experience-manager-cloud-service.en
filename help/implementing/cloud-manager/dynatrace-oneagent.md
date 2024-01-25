@@ -21,13 +21,18 @@ The details required for connectivity requests are described below:
 
 | **Field**  | **Description**  |
 |---|---|
-| Dynatrace Environment URL  | Your Dynatrace environment URL.<br><br>For Dynatrace SaaS customers, the format is `https://<you-environment-id>.live.dynatrace.com`.<br><br>For Dynatrace Managed customers, the format is `https://<your-managed-url>/e/<environmentId>`  |
-| Dynatrace Environment ID  | Your Dynatrace environment ID. Please see Get Dynatrace environment information for how to get this. |
-| Dynatrace Environment Token  | Your Dynatrace environment token. Please see Get Dynatrace environment information for how to get this.<br><br>This should be considered a secret, so use appropriate security practices. For example, password protect it in a website such as **zerobin.net**, which the customer support ticket can reference, along with the password.  |
-| Dynatrace API access token  | The API access token of your Dynatrace environment.  Please see Create a Dynatrace API access token for how to create this.<br><br>This should be considered a secret so use appropriate security practices. For example, password protect it in a website such as **zerobin.net**, which the customer support ticket can reference, along with the password.<br><br>Note: This is only required for Dynatrace Managed.  |
+| Dynatrace Environment URL  | Your Dynatrace environment URL.<br><br>For Dynatrace SaaS customers, the format is `https://<your-environment-id>.live.dynatrace.com`.<br><br>For Dynatrace Managed customers, the format is `https://<your-managed-url>/e/<environmentId>`  |
+| Dynatrace Environment ID  | Your Dynatrace environment ID. Please see [Get Dynatrace environment information](#get-dynatrace-env-info) for how to get this. |
+| Dynatrace Environment Token  | Your Dynatrace environment token. Please see [Get Dynatrace environment information](#get-dynatrace-env-info) for how to get this.<br><br>This should be considered a secret, so use appropriate security practices. For example, password protect it in a website such as **zerobin.net**, which the customer support ticket can reference, along with the password.  |
+| Dynatrace API access token  | The API access token of your Dynatrace environment.  Please see [Create a Dynatrace API access token](#create-dynatrace-access-token) for how to create this.<br><br>This should be considered a secret so use appropriate security practices. For example, password protect it in a website such as **zerobin.net**, which the customer support ticket can reference, along with the password.<br><br>Note: This is only required for Dynatrace Managed.  |
 | Dynatrace ActiveGate Port | Your Dynatrace ActiveGate port that the AEM integration should connect to.<br><br>Note: This is only required for Dynatrace Managed.  |
-| Dynatrace ActiveGate Network Zone | Your Dynatrace ActiveGate network zone to route AEM monitoring data efficiently across data centers and network regions.<br><br>Note: A Dynatrace ActiveGate network zone is optional.  |
-| AEM Environment ID(s)  | The AEM environment id(s) for Dynatrace to monitor. |
+| Dynatrace ActiveGate Network Zone | Your [Dynatrace ActiveGate network zone](https://docs.dynatrace.com/docs/manage/network-zones) to route AEM monitoring data efficiently across data centers and network regions.<br><br>Note: A Dynatrace ActiveGate network zone is optional.  |
+| AEM Environment ID(s)  | The AEM environment ID(s) for Dynatrace to monitor. |
+
+>[!NOTE]
+>
+>Once Dynatrace is integrated, data will no longer flow to other APM tools such as New Relic, if it was previously enabled.
+
 
 ## Create a Dynatrace API access token {#create-dynatrace-access-token}
 
@@ -44,15 +49,14 @@ The details required for connectivity requests are described below:
 
 ## Get Dynatrace environment information {#get-dynatrace-env-info}
 
-1. Execute the following API request to your Dynatrace environment:
+1. Execute the following API request to your Dynatrace environment:  
 
-```
-curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"
-```
-Replace \<environmentUrl\> with your Dynatrace environment URL and with your created API access token.
+`curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"`
 
-1. Copy the \<environmentUrl\> and \<environmenToken\> from the response payload and store them in a secured place.
-  
+   Replace \<environmentUrl\> with your Dynatrace environment URL and \<accessToken\> with your created API access token.  
+
+2. Copy the \<environmentId\> and \<environmentToken\> from the response payload and store them in a secured place.
+      
 ```
 {
    "tenantUUID": "<environmentId>",
@@ -63,3 +67,5 @@ Replace \<environmentUrl\> with your Dynatrace environment URL and with your cre
    "formattedCommunicationEndpoints": "<endpoints>" 
 }
 ```
+
+
