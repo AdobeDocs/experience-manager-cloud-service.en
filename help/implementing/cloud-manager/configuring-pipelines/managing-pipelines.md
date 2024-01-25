@@ -33,11 +33,13 @@ At the bottom of the list of pipelines, you have general options.
 
 The **Pipelines** window shows a complete list of all pipelines for the selected program. This is useful as it presents more comprehensive information than what is available in the [Pipeline Card.](#pipeline-card)
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+
+1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
 
 1. From the **Program Overview** page, select the **Pipelines** tab to switch to the **Pipelines** window.
 
-1. Here you can see a list of all pipelines for the program as well as start and stop pipeline execution as you would in the **Pipelines Card**.
+1. Here you can see a list of all pipelines for the program and start and stop pipeline execution as you would in the **Pipelines Card**.
 
 If a pipeline is executing, hovering over its **Status** column will reveal details about the execution.
 

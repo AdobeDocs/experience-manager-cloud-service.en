@@ -1,7 +1,7 @@
 ---
 title: How to Create a Custom Submit Action for an Adaptive Form?
 description: Learn how to create a custom Submit Action for an Adaptive Forms to delay submission and process data before submitting it to a rest endpoint, saving to a data store, and perform other custom functions.
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5

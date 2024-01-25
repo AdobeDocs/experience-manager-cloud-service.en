@@ -1,6 +1,6 @@
 ---
 title: Content Fragment Models
-description: Learn how Content Fragment Models serve as a foundation for your Content Fragments in AEM. These fragments allow you to create structured content for use in headless delivery, or page authoring.
+description: Learn how Content Fragment Models serve as a foundation for your Content Fragments in AEM, allowing you to create structured content for use in headless delivery, or page authoring.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
@@ -193,7 +193,8 @@ Many properties are self-explanatory, for certain properties additional details 
   >If models created in earlier versions of AEM contain illegal characters, remove or update those characters.
 
 * **Render As**
-  The various options for realizing/rendering the field in a fragment. Often this lets you define whether the author sees a single instance of the field, or is allowed to create multiple instances.
+
+  The various options for realizing/rendering the field in a fragment. Often this allows you to define whether the author will see a single instance of the field, or will be allowed to create multiple instances. When **Multiple Field** is used you can define the minimum and maximum number of items - see [Validation](#validation) for further details. 
 
 * **Field Label**
   Entering a **Field Label** autogenerates a **Property Name**, which can then be manually updated if necessary.
@@ -251,7 +252,15 @@ Various data types now include the possibility to define validation requirements
   * Only images within a predefined range of width and/or height (in pixels) can be referenced. 
 * **Fragment Reference**
   * Test for a specific Content Fragment model.
+* **Min Number of Items** / **Max Number of Items**
 
+  Fields that have been defined as a **Multiple Field** (set with **Render As**) have the options:
+
+  * **Min Number of Items**
+  * **Max Number of Items**
+
+  These are validated in the [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
+  
 ## Using References to form Nested Content {#using-references-to-form-nested-content}
 
 Content Fragments can form nested content, using either of the following data types:

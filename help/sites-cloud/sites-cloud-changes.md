@@ -1,6 +1,6 @@
 ---
 title: Notable Changes to AEM Sites in AEM Cloud Service
-description: Learn more about notable changes to AEM Sites in AEM Cloud Service
+description: Understand how to author with, and administer, AEM Sites as a Cloud Service as well as about notable changes to AEM Sites in AEM Cloud Service.
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 ---
 
@@ -35,7 +35,7 @@ The initiator of such actions can check their status in a new UI at `/mnt/overla
 
 >[!NOTE]
 >
->There is no change required by the user of the system to make use of this new feature. It is noted here simply as a change in behavior from previous on-premise versions of AEM.
+>There is no change required by the user of the system to use this new feature. It is noted here simply as a change in behavior from previous on-premise versions of AEM.
 
 ## New Reference Site and Tutorial {#new-reference-site-and-tutorial}
 

@@ -1,16 +1,16 @@
 ---
-title: Adobe Experience Manager as a Cloud Service Content Fragments Support in Assets HTTP API
+title: Adobe Experience Manager as a Cloud Service Content Fragments Support in the Assets HTTP API
 description: Learn about support for Content Fragments in the Assets HTTP API, an important piece of Adobe Experience Manager's headless delivery feature.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 ---
-# Content Fragments Support in AEM Assets HTTP API {#content-fragments-support-in-aem-assets-http-api}
+# Content Fragments Support in the AEM Assets HTTP API {#content-fragments-support-in-aem-assets-http-api}
 
 ## Overview {#overview}
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html)                  |
 | AEM as a Cloud Service     | This article         |
 
 Learn about support for Content Fragments in the Assets HTTP API, an important piece of Adobe Experience Manager's (AEM) headless delivery feature.
@@ -23,6 +23,10 @@ Learn about support for Content Fragments in the Assets HTTP API, an important p
 >* including support for Content Fragments
 >
 >The current implementation of the Assets HTTP API is based on the [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) architectural style.
+
+>[!NOTE]
+>
+>For the latest information about Experience Manager APIs, please also visit [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 The [Assets REST API](/help/assets/mac-api-assets.md) allows developers for Adobe Experience Manager as a Cloud Service to access content (stored in AEM) directly over the HTTP API, by way of CRUD (Create, Read, Update, Delete) operations.
 
@@ -143,8 +147,8 @@ If the Assets REST API is used within an environment without specific authentica
 >
 >For more information,  see:
 >
->* [CORS/AEM explained](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en)
->* [Video - Developing for CORS with AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=en)
+>* [CORS/AEM explained](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Video - Developing for CORS with AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 In environments with specific authentication requirements, OAuth is recommended.
@@ -348,4 +352,4 @@ See here for detailed API references:
 For more information, see:
 
 * [Assets HTTP API documentation](/help/assets/mac-api-assets.md)
-* [AEM Gem session: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=en)
+* [AEM Gem session: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)

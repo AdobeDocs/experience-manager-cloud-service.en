@@ -68,7 +68,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.1.0 is January
 
 ### What is new in [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* New version of AIO-CLI plugin released. Latest version of this plugin includes bug fixes for the AEM Dispatcher Converter and the Repository Modernizer and also supports a new utility - Index Converter. See [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) to learn more about this plugin. 
+* New version of AIO-CLI plugin released. Latest version of this plugin includes bug fixes for the AEM Dispatcher Converter and the Repository Modernizer and also supports a new utility - Index Converter. See [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) to learn more about this plugin. 
 
 * Index Converter is a utility that can be used to transform a customer's Custom OAK Index Definitions to AEM as a CLoud Service compatible OAK Index Definitions. See [Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) for more details.
 
@@ -82,7 +82,7 @@ The Release Date for Cloud Manager in AEM as a Cloud Service 2021.1.0 is January
 
 ### What is New {#what-is-new-foundation}
 
-* Server-to-server authenticated API calls - Generate the appropriate access tokens to make authenticated server-to-server API calls between your external applications and AEM as a Cloud Service environments. Learn more by reading [the documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) or by consulting the [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
+* Server-to-server authenticated API calls - Generate the appropriate access tokens to make authenticated server-to-server API calls between your external applications and AEM as a Cloud Service environments. Learn more by reading [the documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) or by consulting the [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication).
 
 ### SDK Build Analyzers {#sdk-build-analyzers}
 
@@ -93,7 +93,7 @@ Two new analyzers have been added for this release:
 * repoinit analyzer
 * bundle-nativecode
 
-For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing).
+For more information, see the documentation [here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing).
 
 ## Cloud Transition Tools {#code-transition-tools}
 

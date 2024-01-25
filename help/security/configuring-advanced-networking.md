@@ -9,7 +9,7 @@ This article aims to introduce you to the different advanced networking features
 
 >[!INFO]
 >
->You can also find a series of articles designed to walk you through each of the advanced networking options at this [location](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en).
+>You can also find a series of articles designed to walk you through each of the advanced networking options at this [location](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html).
 
 ## Overview {#overview}
 
@@ -360,7 +360,7 @@ Port forwarding rules should be declared for any non-http/s protocol TCP traffic
 
 The API should respond in just a few seconds, indicating a status of `updating` and after about 10 minutes, a call to the Cloud Manager's environment GET endpoint would show a status of `ready`, indicating that the update to the environment has been applied.
 
-Note that even if there is no environment traffic routing rules (hosts or bypasses), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` must still be called, just with an empty payload.
+Even if there is no environment traffic routing rules (hosts or bypasses), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` must still be called, just with an empty payload.
 
 ### Updating the VPN {#updating-the-vpn}
 
@@ -550,7 +550,7 @@ When an additional region is added to an environment which already has advanced 
 
 If an advanced networking configuration is already enabled in the primary region, follow these steps:
 
-1. If you have locked down your infrastructure such that the dedicated AEM IP address is allow listed, it is recommended to temporarily disable any deny rules in that infrastructure. If this is not done, there is a short period where requests from the new region's IP addresses are denied by your own infrastructure. Note that this is not necessary if you have locked down your infrastructure by way of a FullyQualified Domain Name (FQDN), (`p1234.external.adobeaemcloud.com`, for example), because all AEM regions egress advanced networking traffic from the same FQDN
+1. If you have locked down your infrastructure such that the dedicated AEM IP address is allow listed, it is recommended to temporarily disable any deny rules in that infrastructure. If this is not done, there is a short period where requests from the new region's IP addresses are denied by your own infrastructure. This is not necessary if you have locked down your infrastructure by way of a FullyQualified Domain Name (FQDN), (`p1234.external.adobeaemcloud.com`, for example), because all AEM regions egress advanced networking traffic from the same FQDN
 1. Create the program-scoped networking infrastructure for the secondary region through a POST call to the Cloud Manager Create Network Infrastructure API, as described in advanced networking documentation. The only difference in the payload's JSON configuration relative to primary region is the region property
 1. If your infrastructure must be locked down by IP to allow AEM traffic, add the IPs that match `p1234.external.adobeaemcloud.com`. There should be one per region. 
 
@@ -560,7 +560,7 @@ The procedure is mostly similar to the previous instructions. However, if the pr
 
 1. Create networking infrastructure for all regions through POST call to the [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). The only difference in the payload's JSON configuration relative to primary region is the region property.
 1. For the staging environment, enable and configure the environment scoped advanced networking by running `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. For more information, see the API documentation [here](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
-1. If necessary, lock down external infrastructure, preferably by FQDN (for example `p1234.external.adobeaemcloud.com`). You can otherwise do it by IP address
+1. If necessary, lock down external infrastructure, preferably by FQDN (for example, `p1234.external.adobeaemcloud.com`). You can otherwise do it by IP address
 1. If the staging environment works as expected, enable and configure the environment-scoped advanced networking configuration for production. 
 
 #### VPN {#vpn-regions}

@@ -5,7 +5,7 @@ exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
 ---
 # Content Fragment Structure Tree {#content-fragment-structure-tree}
 
-Use the Structure Tree feature of the Content Fragment Editor in AEM to better understand your headless content.
+Use the Structure Tree feature of the Content Fragment Editor in AEM to better understand your content, particularly for headless delivery.
 
 >[!NOTE]
 >

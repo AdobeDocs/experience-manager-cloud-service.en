@@ -1,7 +1,7 @@
 ---
 title: How can we translate a Core Components based Adaptive Form?
 description: Learn to create a Form Data Model in AEM Forms, test the model with sample data and services, and configure various option for a model.
-feature: Adaptive Forms
+feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 ---
 # Use machine translation or human translation to translate a Core Components based Adaptive Form {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
@@ -12,7 +12,7 @@ Localized forms help you serve a wider audience across geographies. Adobe Experi
 
 The machine translation service immediately translates your content in Adaptive Form and [Document of Record](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service is pre-configured to use a trial version of Microsoft Translator for machine translation. Perform the following steps to enable machine translation for your Adaptive Forms and Document of Record:
 
-1. On the AEM Forms UI, select a form, and tap the **[!UICONTROL Add Dictionary]** option.
+1. On the AEM Forms UI, select a form, and select the **[!UICONTROL Add Dictionary]** option.
 1. In the Add Dictionary to Translation Project screen, for the **[!UICONTROL Project]** option 
 
    * To create a translation project, select the **[!UICONTROL Create a new translation project]** option and in the **Project Title** field, specify the title. For example, `Government Reference Site - German locale.`
@@ -43,7 +43,7 @@ The machine translation service immediately translates your content in Adaptive 
    [Document of Record settings](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Customize the branding information of the document of record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) and ensure that the browser locale is set to the same language to which you have localized the Adaptive Form using machine language. The browser locale helps localize the branding information in the document of record.
-1. To view the localized document of record, tap Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
+1. To view the localized document of record, select Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
 
 -->
 
@@ -55,7 +55,7 @@ For translation, a dictionary containing files in XLIFF format is shared with th
 
 Perform the following steps to localize a form and its document of record using Human Translators:
 
-1. On the AEM Forms UI, select a form, and tap the **[!UICONTROL Add Dictionary]** option.
+1. On the AEM Forms UI, select a form, and select the **[!UICONTROL Add Dictionary]** option.
 1. In the Add Dictionary to Translation Project screen, for the **[!UICONTROL Project]** option 
 
    * To create a translation project, select the **[!UICONTROL Create a new translation project]** option and in the **Project Title** field, specify the title. For example, `Government Reference Site - German locale.`

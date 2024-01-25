@@ -1,11 +1,11 @@
 ---
 title: Variations - Authoring Fragment Content (Assets - Content Fragments)
-description: Understand how variations can make your headless content in AEM even more flexible by allowing you to author content for the fragment, then create variations of that content according to purpose.
+description: Understand how Content Fragment variations allow you to author content for the fragment, then create variations of that content according to purpose, therefore increasing the flexibility. 
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 ---
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 
-[Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of AEM's content fragments. The reason is because they let you create and edit copies of the master content for use on specific channels and scenarios, making headless content delivery even more flexible.
+[Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of Content Fragments in Adobe Expoerience Manager (AEM) as a Cloud Service. This is because they let you create and edit copies of the **Master** content for use on specific channels and scenarios. IN particular this makes headless content delivery even more flexible.
 
 >[!NOTE]
 >
@@ -70,6 +70,10 @@ You can:
   >**Tags** can also be added (to the **Master** variation) as part of the [Metadata](/help/assets/content-fragments/content-fragments-metadata.md)
 
 * [Create and manage variations](#managing-variations) of the **Master** content.
+
+>[!NOTE]
+>
+>Depending on definitions in the underlying model, fields can be subject to certain types of [Validation](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ### Full Screen Editor {#full-screen-editor}
 
