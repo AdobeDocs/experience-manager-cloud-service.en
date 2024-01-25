@@ -4,7 +4,7 @@ description: Adaptive Forms seamlessly integrate with Adobe Analytics to capture
 keywords: Viewing and understanding Adaptive Forms analytics reports, Adobe analytics report, Forms Analytics report
 topic-tags: develop
 feature: Adaptive Forms
-role: User
+role: Admin, User
 level: Intermediate
 exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
 ---
