@@ -1,8 +1,9 @@
 ---
 title: AEM as a Cloud Service Security Overview
-description: Read an in-depth overview of security in AEM as a Cloud Service
+description: Learn about important security topics regarding Experience Manager as a Cloud Service.
 exl-id: 19b123de-5db5-4fa8-81ec-e5438fed3f7f
 ---
+
 # Security Overview for AEM as a Cloud Service {#cloud-service-security-overview}
 
 ## Introduction {#introduction}

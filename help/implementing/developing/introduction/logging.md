@@ -391,7 +391,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 The mod_rewrite log levels are defined by the variable REWRITE_LOG_LEVEL in the file `conf.d/variables/global.var`.
 
-It can be set to error, warn, info, debug and trace1 - trace8, with a default value of warn. To debug your RewriteRules, it is recommended to raise the log level to trace2.
+It can be set to error, warn, info, debug and trace1 - trace8, with a default value of warn. To debug your RewriteRules, it is recommended to raise the log level to trace2. It's recommended to debug rewrite rules using the [Dispatcher SDK](../../dispatcher/validation-debug.md). The maximal log level for AEM as a Cloud Service is `debug`. Thus it is currently not effectively possible to debug rewrite rules in the cloud.
 
 See the [mod_rewrite module documentation](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) for more information.
 
@@ -606,7 +606,7 @@ Customers who have Splunk accounts may request via customer support ticket that 
 
 The network bandwidth associated with logs sent to Splunk are considered part of the customer's Network I/O usage.
 
-Splunk forwarding does not yet support CDN logs.
+CDN logs will be forwarded to Splunk for new support ticket requests; customers who already have Splunk forwarding enabled will be able to add CDN logs in the future.
 
 ### Enabling Splunk Forwarding {#enabling-splunk-forwarding}
 
