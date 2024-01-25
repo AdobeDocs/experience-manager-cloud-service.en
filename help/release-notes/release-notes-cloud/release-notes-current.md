@@ -51,9 +51,26 @@ With the Extension Manager, you can:
 * Configure extension parameters;
 * Preview extensions and generate a shareable preview link;
 * Discover UI extensibility features via interactive demos;
-* Access Adobe’s experimental features through first-party extensions.
+* Access Adobe's experimental features through first-party extensions.
 
 We are actively seeking feedback and new use cases for UI extensions. If you would like to connect, please send an email to `uix@adobe.com`.
+
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+### Admin view prerelease features {#admin-view-prerelease}
+
+**Preview renditions for all supported video types**
+
+Experience Manager Assets now generates preview renditions of all supported video types by default without requiring a processing profile configuration
+
+### Assets view {#assets-view-features}
+
+**Smart tags blocklist** 
+
+Assets Essentials now enables you to define blocklist that comprises words that should not be added as Smart Tags to assets when they are uploaded to the repository. This capability helps you to maintain brand compliance and reduces effort to moderate Smart Tags.
+
+  ![Smart Tags blocklist](/help/assets/assets/block-tags.png)
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
