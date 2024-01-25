@@ -55,7 +55,7 @@ The details required for connectivity requests are described below:
 
    Replace \<environmentUrl\> with your Dynatrace environment URL and \<accessToken\> with your created API access token.  
 
-2. Copy the \<environmentId\> and \<environmentToken\> from the response payload and store them in a secured place.
+1. Copy the \<environmentId\> and \<environmentToken\> from the response payload and store them in a secured place.
       
 ```
 {
