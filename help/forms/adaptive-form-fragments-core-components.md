@@ -22,6 +22,10 @@ Form fragments seamlessly integrate into multiple forms, streamlining the creati
 
 You can add a fragment multiple times to a document and use data binding properties of its components to tie it to different data sources or schema. For example, you can use the same address fragment for permanent, communication, and billing address and connect it to different fields of a data sources or schema. 
 
+>[!NOTE]
+>
+> You can easily customize your fragment experience for users with the [Configure dialog and Design dialog of Form Fragment component]().
+
 ## Create a form fragment {#create-a-fragment}
 
 You can create an Adaptive Form fragment from scratch or save a panel in an existing Adaptive Form as fragment. To create a form fragment: 
