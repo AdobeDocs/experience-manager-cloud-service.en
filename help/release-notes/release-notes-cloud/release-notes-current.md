@@ -77,13 +77,9 @@ We are actively seeking feedback and new use cases for UI extensions. If you wou
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Option for 99.99% publish-tier SLA {#higher-sla}
+### Support for Dynatrace {#dynatrace}
 
-There is now an option for AEM Sites customers to license a contractual 99.99% SLA on the production environment publish tier. Customers with a 99.99% SLA have at least one [additional publish region](/help/operations/additional-publish-regions.md) enabled, which increases availability. [Learn more](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) about this feature, including how to enable it in Cloud Manager, once licensed. 
-
-### Support for Dynatrace OneAgent {#dynatrace}
-
-Dynatrace OneAgent customers may monitor their AEM usage. [Read how](/help/implementing/cloud-manager/dynatrace-oneagent.md) to request connectivity with your Dynatrace environment.
+Dynatrace customers may monitor their AEM usage. [Read how](/help/implementing/cloud-manager/dynatrace-oneagent.md) to request connectivity with your Dynatrace environment for application performance monitoring.
 
 ### RDE Support for Front-End Code using Site Themes and Site Templates: Early Adopter Program {#rde-frontend-early-adopter}
 
