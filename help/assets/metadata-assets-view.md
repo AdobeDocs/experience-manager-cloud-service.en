@@ -141,11 +141,11 @@ To assign a metadata form to a folder:
 
 3. Select the folder and click **[!UICONTROL Assign]**.
 
-   ![assign metadata form to a folder](/help/using/assets/assign-to-folder.png)
+   ![assign metadata form to a folder](assets/assign-to-folder.png)
 
    You can also navigate to the folder details page and select a metadata form from the folder properties available in the right pane to assign the metadata form to the folder.
 
-   ![Metadata form from folder properties](/help/using/assets/metadata-from-folder-props.png)
+   ![Metadata form from folder properties](assets/metadata-from-folder-props.png)
 
 ## Next Steps {#next-steps}
 
