@@ -8,7 +8,7 @@ exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
 
 [!DNL Assets view] provides user-friendly editing options that are powered by [!DNL Adobe Express] and [!DNL Adobe Photoshop Express]. The editing actions that are available using [!DNL Adobe Express] are Resize image, Remove background, Crop image, and Convert JPEG into PNG or vice versa.
 
-After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. Additionaly, versioning is available for the PNG file types only, which means when you try to remove background from a JPG file type, JPG is auto converted to PNG. To edit an image, [open its preview](/help/using/navigate-view.md#preview-assets) and click **[!UICONTROL Edit Image]**.
+After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. Additionaly, versioning is available for the PNG file types only, which means when you try to remove background from a JPG file type, JPG is auto converted to PNG. To edit an image, [open its preview](/help/using/navigate-assets-view.md) and click **[!UICONTROL Edit Image]**.
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ To edit images using [!DNL Adobe Express] embedded editor, follow the steps belo
 ## Edit images using [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
 
 <!--
-After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](/help/using/navigate-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
+After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](/help/using/navigate-assets-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
 
 ![Options to edit an image](assets/edit-image2.png)
 
@@ -180,4 +180,4 @@ TBD: Insert a video of the available social media options.
 >[!MORELIKETHIS]
 >
 >* [Quick actions in Adobe Express](https://helpx.adobe.com/in/express/using/resize-image.html)
->* [View version history of an asset](/help/using/navigate-view.md)
+>* [View version history of an asset](/help/using/navigate-assets-view.md)
