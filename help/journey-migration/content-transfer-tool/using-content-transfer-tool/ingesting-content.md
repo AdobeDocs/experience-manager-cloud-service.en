@@ -32,7 +32,7 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
    > If the extraction is running, the dialog will indicate it. Once extraction has completed successfully, the ingestion starts automatically. If the extraction fails or is stopped, the ingestion job will be rescinded.
 
    * **Destination:** Select the destination environment. This environment is where the content of the migration set is ingested.
-     * Ingestions do not support a Rapid Development Environment (RDE) destination, and they do not appear as a possible destination choice, even if the user has access to it.
+     * Ingestions do not support destinations of type Rapid Development Environment (RDE) or Preview, and they do not appear as a possible destination choice, even if the user has access to it.
      * While a migration set can be ingested into multiple destinations simultaneously, a destination can be the target of only one running or waiting ingestion at a time.
 
    * **Tier:** Select the tier. (Author/Publish).
