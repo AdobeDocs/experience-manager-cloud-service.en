@@ -20,40 +20,17 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.1.0) is January 25, 2024. The next feature release (2024.2.0) is planned for February 29, 2024.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.2.0) is February 29, 2024. The next feature release (2024.3.0) is planned for March 28, 2024.
 
 ## Maintenance Release Notes {#maintenance}
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
-<!-- 
-
 ## Release Video {#release-video}
 
-Have a look at the December 2023 Release Overview video for a summary of the features added in the 2023.12.0 release:
+Have a look at the February 2024 Release Overview video for a summary of the features added in the 2024.2.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
-
--->
-
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Extension Manager in AEM Sites {#sites-extension-manager}
-
-**Explore the new [Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/)** to personalize your AEM setup by configuring UI extensions.
-
-![Extension Manager in AEM Sites](/help/assets/sites/extension-manager/homepage.png)
-
-The Extension Manager in AEM Sites enables developers and practitioners to access, manage, and customize UI extensions built to enhance the functionality of AEM Sites.
-With the Extension Manager, you can:
-
-* Enable or disable extensions on a per-instance basis;
-* Configure extension parameters;
-* Preview extensions and generate a shareable preview link;
-* Discover UI extensibility features via interactive demos;
-* Access Adobe's experimental features through first-party extensions.
-
-We are actively seeking feedback and new use cases for UI extensions. If you would like to connect, please send an email to `uix@adobe.com`.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -92,16 +69,6 @@ Assets Essentials now enables you to define blocklist that comprises words that 
 
      You can write to `aem-forms-early-adopter-program@adobe.com` from your official email id to join the early adopter program and request access to the capability.
      
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### Support for Dynatrace {#dynatrace}
-
-Dynatrace customers may monitor their AEM usage. [Read how](/help/implementing/cloud-manager/dynatrace.md) to request connectivity with your Dynatrace environment for application performance monitoring. Note that New Relic APM, which is available to all customers, will stop collecting data if Dynatrace is enabled.
-
-### RDE Support for Front-End Code using Site Themes and Site Templates: Early Adopter Program {#rde-frontend-early-adopter}
-
-[Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
-
 ## Cloud Manager {#cloud-manager}
 
 You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes/current.md).
