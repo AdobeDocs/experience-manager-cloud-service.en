@@ -1,29 +1,29 @@
 ---
 title: Developer Getting Started Guide for AEM Edge Delivery Services
-description: This guide will get you up-and-running with a new or existing Adobe Experience Manager site and Edge Delivery Services using the Universal Editor.
+description: This guide will get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor.
 feature: Edge Delivery Services
 ---
 
 # Developer Getting Started Guide for AEM and Edge Delivery Services {#edge-dev-getting-started}
 
-This guide will get you up-and-running with a new or existing Adobe Experience Manager site and Edge Delivery Services using the Universal Editor.
+This guide will get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor.
 
 ## Prerequisites {#prerequisites}
 
 Before beginning this guide, you should already be familiar with the basics of and have access to Edge Delivery Services including:
 
-* You completed the [Edge Delivery Service tutorial.](/help/edge/developer/tutorial.md)
+* You have completed the [Edge Delivery Service tutorial.](/help/edge/developer/tutorial.md)
 * You have access to an [AEM Cloud Service sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-* To use the Universal Editor, you need to have it [enabled on the same sandbox environment.](/help/implementing/universal-editor/getting-started.md)
+* You have [enabled the Universal Editor on the same sandbox environment.](/help/implementing/universal-editor/getting-started.md)
 
 ## Pick the Right Editor {#editor-choice}
 
-AEM offers two different editors and the choice of which to use depends on your situation.
+AEM offers two different content editors and the choice of which to use depends on your situation.
 
 * **Universal Editor** - This should be the default choice for new sites.
-* **AEM Page Editor** - This should be picked for an existing AEM Sites migration to Edge Delivery Services.
+* **AEM Page Editor** - This should be chosen for an existing AEM Sites migration to Edge Delivery Services.
 
-This guide focuses on AEM projects on Edge Delivery Services using the Universal Editor. See the document [Developing for Edge Delivery Services](/help/edge/developing.md) for more details on choosing the right editor and migration of existing AEM sites to Edge Delivery Services.
+This guide focuses on AEM projects on Edge Delivery Services using the Universal Editor. See the document [Developing for Edge Delivery Services](/help/edge/developing.md) for more details on choosing the right editor and the migration of existing AEM sites to Edge Delivery Services.
 
 ## Getting Started with AEM and Edge Delivery Services {#getting-started}
 
@@ -33,15 +33,13 @@ Once you have fulfilled [the prerequisites](#prerequisites) and have made [the c
 
 First you will need to create a new project on GitHub, based on the Adobe template.
 
-1. Navigate to [`https://github.com/adobe-rnd/aem-boilerplate-xwalk`](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
-
-1. Click on **Use this template** and select **Create a new repository**.
+1. Navigate to [`https://github.com/adobe-rnd/aem-boilerplate-xwalk`](https://github.com/adobe-rnd/aem-boilerplate-xwalk) and Click on **Use this template** and select **Create a new repository**.
 
    * You will need to be signed in to GitHub to see this option.
 
    ![Copy repository project](assets/edge-dev-getting-started/use-template-project.png)
 
-1. Be default, the repository will be assigned to you. Change this as necessary as well as provide a repository name and description and click **Create repository**.
+1. By default, the repository will be assigned to you. Change this as necessary as well as provide a repository name and description and click **Create repository**.
 
    * The repository should be **Public**.
 
@@ -51,11 +49,11 @@ First you will need to create a new project on GitHub, based on the Adobe templa
 
    ![Code Sync](assets/edge-dev-getting-started/configure-code-sync.png)
 
-1. Click **Configure** for the org where you created your new repo in the previous step.
+1. Click **Configure** for the org where you created your new repository in the previous step.
 
    ![Choosing the org for code sync](assets/edge-dev-getting-started/code-sync-org.png)
 
-1. On the AEM Code Sync GitHub page under **Repository access**, select **Only select repositories** and the repository that you created in the previous step and then click **Save**.
+1. On the AEM Code Sync GitHub page under **Repository access**, select **Only select repositories**, select the repository that you created in the previous step, and then click **Save**.
 
    ![Granting AEM Code Sync access](assets/edge-dev-getting-started/grant-code-sync-acces.png)
 
@@ -67,13 +65,14 @@ First you will need to create a new project on GitHub, based on the Adobe templa
 
    ![fstab.yaml](assets/edge-dev-getting-started/fstab.png)
 
-1. Edit the `fstab.yaml` file to update the mountpoint of your project. Replace the default google.com URL with the URL of your AEM as a Cloud Service authoring instance and then click **Commit changes...**.
+1. Edit the `fstab.yaml` file to update the mount point of your project. Replace the default Google Docs URL with the URL of your AEM as a Cloud Service authoring instance and then click **Commit changes...**.
 
    * `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
+   * Changing the mount point tells Edge Delivery Services where to find the content of the site.
    
    ![Updating fstab](assets/edge-dev-getting-started/fstab-update.png)
 
-1. Add a commit message as desired and then click **Commit changes**, committing them to the `main` branch.
+1. Add a commit message as desired and then click **Commit changes**, committing them directly to the `main` branch.
 
    ![Committing changes](assets/edge-dev-getting-started/commit-fstab-changes.png)
 
@@ -84,10 +83,11 @@ First you will need to create a new project on GitHub, based on the Adobe templa
 1. Replace the default mappings with `/content/<site-name>/:/` and click **Commit changes...**.
 
    * Provide your own `<site-name>`. You will need it in a later step.
+   * The mappings tells Edge Delivery Services how to map the content in your AEM repository to the site URL.
 
    ![Updating paths.yaml](assets/edge-dev-getting-started/paths-update.png)
 
-1. Add a commit message as desired and then click **Commit changes**, committing them to the `main` branch.
+1. Add a commit message as desired and then click **Commit changes**, committing them directly to the `main` branch.
 
    ![Committing changes](assets/edge-dev-getting-started/commit-fstab-changes.png)
 
@@ -151,4 +151,3 @@ Once you are finished editing your new site using the Universal Editor, you can 
 1. See your content published.
 
    ![Published content](assets/edge-dev-getting-started/published-site.png)
-
