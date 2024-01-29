@@ -99,8 +99,6 @@ This property must be set in the `org.apache.sling.engine.impl.SlingMainServlet`
 
 The Universal Editor service requires a [uniform resource name (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) to identify and utilize the correct backend system for the content in the app being edited. Therefore, a URN schema is required to map content back to content resources.
 
-The instrumentation attributes added to the page consist mostly of [HTML Microdata,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) an industry-standard that can also be used to make HTML more semantic, make HTML documents indexable, and so on.
-
 ### Creating Connections {#connections}
 
 Connections which are used in the app are stored as `<meta>` tags in the page's `<head>`.
