@@ -94,7 +94,9 @@ RUM Data Service is beneficial for all customers whether utilising Adobe's, or t
 
 In particular, for Adobe CDN users, it accurately tracks user interactions for a direct comparison of client-side Page Views with server-side CDN logs.
 
-For customers employing their own CDN they can benefit from simplified traffic reporting, as Adobe now directly integrates these Page Views, eliminating the need for separate reports. Additionally, all customers gain deep insights into page performance, ensuring both groups can optimise their digital experiences effectively.
+For customers employing their own CDN they can benefit from simplified traffic reporting, as Adobe now directly integrates these Page Views, eliminating the need for separate reports. 
+
+Additionally, all customers gain deep insights into page performance, ensuring both groups can optimise their digital experiences effectively.
 
 ### Understand how the Real User Monitoring (RUM) Data Service Works {#understand-how-the-rum-data-service-works}
 
