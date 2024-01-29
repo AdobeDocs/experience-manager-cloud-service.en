@@ -1,12 +1,12 @@
 ---
-title: Developer Getting Started Guide for AEM Edge Delivery Services
-description: This guide will get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor.
+title: Developer Getting Started Guide for AEM Authoring with Edge Delivery Services
+description: This guide will get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor for content authoring
 feature: Edge Delivery Services
 ---
 
-# Developer Getting Started Guide for AEM and Edge Delivery Services {#edge-dev-getting-started}
+# AEM Authoring with Edge Delivery Services {#edge-dev-getting-started}
 
-This guide will get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor.
+This guide will get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor for content authoring.
 
 ## Prerequisites {#prerequisites}
 
@@ -25,7 +25,7 @@ AEM offers two different content editors and the choice of which to use depends 
 
 This guide focuses on AEM projects on Edge Delivery Services using the Universal Editor. See the document [Developing for Edge Delivery Services](/help/edge/developing.md) for more details on choosing the right editor and the migration of existing AEM sites to Edge Delivery Services.
 
-## Getting Started with AEM and Edge Delivery Services {#getting-started}
+## Getting Started with AEM Authoring nd Edge Delivery Services {#getting-started}
 
 Once you have fulfilled [the prerequisites](#prerequisites) and have made [the choice to use the Universal Editor,](#editor-choice) you can get started on your own project.
 
