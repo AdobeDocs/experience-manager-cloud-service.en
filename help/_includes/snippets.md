@@ -52,4 +52,4 @@
 
 ## AEM Authoring with Edge Delivery Services Early Access {#aem-authoring-edge-early-access}
 
-[!BADGE EARLY-ACCESS TECHNOLOGY - Ask us about this feature from the AEM Sites labs on your Slack channel!]{type=Positive url="/help/edge/docs/slack.md" tooltip="AEM authoring with Edge Delivery Services is an early-access technology."}
+[!BADGE EARLY-ACCESS TECHNOLOGY - Ask us about this feature from the AEM Sites labs on your Slack channel!]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEM authoring with Edge Delivery Services is an early-access technology."}
