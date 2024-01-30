@@ -29,7 +29,7 @@ This document will guide you through these steps.
 
 ## Request Access to the Universal Editor {#request-access}
 
-You first need to request access to the Universal Editor. See [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), sign in, and validate if you have access to the Universal Editor.
+You first need to request access to the Universal Editor. Open [`https://experience.adobe.com/#/aem/editor``](https://experience.adobe.com/#/aem/editor), sign in, and validate if you have access to the Universal Editor.
 
 In case you do not have access, it can be requested via a form linked on the same page.
 
@@ -53,7 +53,7 @@ import "@adobe/universal-editor-cors";
 
 ### Alternative for Non-React Apps {#alternative}
 
-If you are not implementing a React app and/or require server-side rendering an alternative method is to include the following to the document body.
+If you are not implementing a React app and/or require server-side rendering, an alternative method is to include the following to the document body.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -99,8 +99,6 @@ This property must be set in the `org.apache.sling.engine.impl.SlingMainServlet`
 
 The Universal Editor service requires a [uniform resource name (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) to identify and utilize the correct backend system for the content in the app being edited. Therefore, a URN schema is required to map content back to content resources.
 
-The instrumentation attributes added to the page consist mostly of [HTML Microdata,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) an industry-standard that can also be used to make HTML more semantic, make HTML documents indexable, and so on.
-
 ### Creating Connections {#connections}
 
 Connections which are used in the app are stored as `<meta>` tags in the page's `<head>`.
@@ -118,10 +116,10 @@ Connections which are used in the app are stored as `<meta>` tags in the page's 
 
 The identifier `urn:adobe:aue:system` represents the connection for the Adobe Universal Editor.
 
-`itemid`s will use the `urn` prefix to shorten the identifier.
+`data-aue-resource`s will use the `urn` prefix to shorten the identifier.
 
 ```html
-itemid="urn:<referenceName>:<resource>"
+data-aue-resource="urn:<referenceName>:<resource>"
 ```
 
 * `<referenceName>` - This is the named reference mentioned in the `<meta>` tag. E.g. `aemconnection`
@@ -143,19 +141,19 @@ itemid="urn:<referenceName>:<resource>"
 </head>
 <body>
         <aside>
-          <ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="container">
-            <li itemscope itemid="urn:aemconnection/content/example/listitem" itemtype="component">
-              <p itemprop="name" itemtype="text">Jane Doe</p>
-              <p itemprop="title" itemtype="text">Journalist</p>
-              <img itemprop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" itemtype="image" alt="avatar"/>
+          <ul data-aue-resource="urn:aemconnection:/content/example/list" data-aue-type="container">
+            <li data-aue-resource="urn:aemconnection/content/example/listitem" data-aue-type="component">
+              <p data-aue-prop="name" data-aue-type="text">Jane Doe</p>
+              <p data-aue-prop="title" data-aue-type="text">Journalist</p>
+              <img data-aue-prop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" data-aue-type="image" alt="avatar"/>
             </li>
 
 ...
 
-            <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="component">
-              <p itemprop="name" itemtype="text">John Smith</p>
-              <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
-              <img itemprop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" itemtype="image" alt="avatar"/>
+            <li data-aue-resource="urn:fcsconnection:/documents/mytext" data-aue-type="component">
+              <p data-aue-prop="name" data-aue-type="text">John Smith</p>
+              <p data-aue-resource="urn:aemconnection/content/example/another-source" data-aue-prop="title" data-aue-type="text">Photographer</p>
+              <img data-aue-prop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" data-aue-type="image" alt="avatar"/>
             </li>
           </ul>
         </aside>

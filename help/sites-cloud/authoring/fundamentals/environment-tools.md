@@ -96,7 +96,7 @@ The actual appearance and handling is dependent on the device type you are using
 
 ## Assets Browser {#assets-browser}
 
-The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.
+The assets browser shows all [assets](/help/assets/overview.md) that are available for direct use on your current page.
 
 The assets browser is a tab within the side panel along with the [components browser](#components-browser) and [content tree](#content-tree). To open or close the side panel use the icon at the top left of the toolbar:
 

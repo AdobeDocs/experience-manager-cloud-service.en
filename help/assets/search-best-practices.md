@@ -8,7 +8,7 @@ exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 
 [!DNL Adobe Experience Manager Assets] provides robust asset search methods that help you achieve higher content velocity. Sometimes, finding the right asset can be arduous and time-consuming. Therefore, search assets capability in [!DNL Adobe Experience Manager Assets] is central to the usage of a digital asset management system - be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators.
 
-This help document contains best practices of AEM search with the help of various scenarios to assist AEM users to perform basic to advanced level search.
+This help document contains AEM search best practices with the help of various scenarios to assist AEM users to perform basic to advanced level search.
 
 ## Access Experience Manager Search {#access-experience-manager-search}
 
@@ -252,7 +252,11 @@ Select the asset > navigate to the ellipsis at the top right > select [!UICONTRO
 
 1. Notice the search bar. The thumbnail of the selected asset appears on the search bar indicating your search requirement. As a result, it returns assets with similar smart tags.
 
-**[!UICONTROL Assets view]** does not support the [!UICONTROL Find Similar] option.
+Execute the following steps in **[!UICONTROL Assets view]**:
+
+1. Search the asset as per your requirement.
+1. Select the image > navigate to [!UICONTROL Find Similar Image] option at navbar on the top.
+It takes you to the collection of assets with similar color and metadata.
 
 ## Custom search facets {#custom-search-facets}
 
@@ -412,11 +416,6 @@ The newly added assets are not indexed.
             <li> Content fragment model
             </ul> 
         </td>
-        <td> Not supported </td>
-    </tr>
-     <tr>
-        <td> Find Similar </td>
-        <td> Supported </td>
         <td> Not supported </td>
     </tr>
 </table>

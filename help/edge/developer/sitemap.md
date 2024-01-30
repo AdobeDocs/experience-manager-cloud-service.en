@@ -2,6 +2,7 @@
 description: Create automatically generated sitemap files to be referenced from your `robots.txt`. This helps with SEO and the discovery of new content.
 title: Sitemaps
 feature: Edge Delivery Services
+exl-id: cdc12747-6003-4744-819e-d17e010901e7
 ---
 # Sitemaps
 
