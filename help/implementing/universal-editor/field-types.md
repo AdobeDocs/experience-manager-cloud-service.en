@@ -48,20 +48,20 @@ To use the model definition with a component, the `data-aue-model` attribute can
 Once a model is created, it can be referenced as an external file.
 
 ```html
-    <script type="application/vnd.adobe.aue.model+json" src="<url-of-model-definition>"></script>
+<script type="application/vnd.adobe.aue.model+json" src="<url-of-model-definition>"></script>
 ```
 
 Alternatively you can also define the model inline.
 
 ```html
-    <script type="application/vnd.adobe.aue.model+json">
-      { ... model definition ... }
-    </script>
+<script type="application/vnd.adobe.aue.model+json">
+  { ... model definition ... }
+</script>
 ```
 
 ## Fields {#fields}
 
-The field object has the following type definition.
+A field object has the following type definition.
 
 |Configuration|Value Type|Description|Required|
 |---|---|---|---|
@@ -91,19 +91,17 @@ An AEM tag component type enables an AEM tag picker, which can be used to attach
 ##### Sample {#sample-aem-tag}
 
 ```json
-[
-  {
-    "id": "aem-tag-picker",
-    "fields": [
-      {
-        "component": "aem-tag",
-        "label": "AEM Tag Picker",
-        "name": "cq:tags",
-        "valueType": "string"
-      }
-    ]
-  }
-]
+{
+  "id": "aem-tag-picker",
+  "fields": [
+    {
+      "component": "aem-tag",
+      "label": "AEM Tag Picker",
+      "name": "cq:tags",
+      "valueType": "string"
+    }
+  ]
+}
 ```
 
 ##### Screenshot {#screenshot-aem-tag}
@@ -117,20 +115,18 @@ An AEM content component type type enables an AEM content picker, which can be u
 ##### Sample {#sample-aem-content}
 
 ```json
-[
-  {
-    "id": "aem-content-picker",
-    "fields": [
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "value": "",
-        "label": "AEM Content Picker",
-        "valueType": "string"
-      }
-    ]
-  }
-]
+{
+  "id": "aem-content-picker",
+  "fields": [
+    {
+      "component": "aem-content",
+      "name": "reference",
+      "value": "",
+      "label": "AEM Content Picker",
+      "valueType": "string"
+    }
+  ]
+}
 ```
 
 ##### Screenshot {#screenshot-aem-content}
@@ -149,16 +145,33 @@ A boolean component type stores a simple true/false value rendered as a toggle. 
 
 ```json
 {
-    "id": "boolean",
-    "fields": [
-      {
-        "component": "boolean",
-        "label": "Boolean",
-        "name": "boolean",
-        "valueType": "boolean"
+  "id": "boolean",
+  "fields": [
+    {
+      "component": "boolean",
+      "label": "Boolean",
+      "name": "boolean",
+      "valueType": "boolean"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-boolean",
+  "fields": [
+    {
+      "component": "boolean",
+      "label": "Boolean",
+      "name": "boolean",
+      "valueType": "boolean",
+      "validation": {
+        "customErrorMsg": "Think, McFly. Think!"
       }
-    ]
-  }
+    }
+  ]
+}
 ```
 
 ##### Screenshot {#screenshot-boolean}
@@ -173,20 +186,19 @@ Similar to a boolean, a checkbox group component type allows for the selection o
 
 ```json
 {
-    "id": "checkbox-group",
-    "fields": [
-      {
-        "component": "checkbox-group",
-        "label": "Checkbox Group",
-        "name": "checkbox",
-        "valueType": "string[]",
-        "value": [],
-        "options": [
-          { "name": "Option 1", "value": "option1" },
-          { "name": "Option 2", "value": "option2" }
-        ]
-      }
-    ]
+  "id": "checkbox-group",
+  "fields": [
+    {
+      "component": "checkbox-group",
+      "label": "Checkbox Group",
+      "name": "checkbox",
+      "valueType": "string[]",
+      "options": [
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+    }
+  ]
 }
 ```
 
@@ -206,31 +218,31 @@ A container component type allows the grouping of components. It offers an addit
 
 ```json
  {
-    "id": "container",
-    "fields": [
-      {
-        "component": "container",
-        "label": "Container",
-        "name": "container",
-        "valueType": "string",
-        "collapsible": true,
-        "fields": [
-          {
-            "component": "text-input",
-            "label": "Simple Text 1",
-            "name": "text",
-            "valueType": "string"
-          },
-          {
-            "component": "text-input",
-            "label": "Simple Text 2",
-            "name": "text2",
-            "valueType": "string"
-          }
-        ]
-      }
-    ]
-  }
+  "id": "container",
+  "fields": [
+    {
+      "component": "container",
+      "label": "Container",
+      "name": "container",
+      "valueType": "string",
+      "collapsible": true,
+      "fields": [
+        {
+          "component": "text-input",
+          "label": "Simple Text 1",
+          "name": "text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "label": "Simple Text 2",
+          "name": "text2",
+          "valueType": "string"
+        }
+      ]
+    }
+  ]
+}
 ```
 
 ##### Screenshot {#screenshot-container}
@@ -256,16 +268,66 @@ It also offers an additional validation type.
 
 ```json
 {
-    "id": "date-time",
-    "fields": [
-      {
-        "component": "date-time",
-        "label": "Date & Time",
-        "name": "date",
-        "valueType": "date"
+  "id": "date-time",
+  "fields": [
+    {
+      "component": "date-time",
+      "label": "Date & Time",
+      "name": "date",
+      "valueType": "date"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-date-time",
+  "fields": [
+    {
+      "component": "date-time",
+       "valueType": "date-time",
+      "name": "field1",
+      "label": "Date Time",
+      "description": "This is a date time field that stores both date and time.",
+      "required": true,
+      "placeholder": "YYYY-MM-DD HH:mm:ss",
+      "displayFormat": null,
+      "valueFormat": null,
+      "validation": {
+        "customErrorMsg": "Marty! You have to come back with me!"
       }
-    ]
-  }
+    },
+    {
+      "component": "date-time",
+      "valueType": "date",
+      "name": "field2",
+      "label": "Another Date Time",
+      "description": "This is another date time field that only stores the date.",
+      "required": true,
+      "placeholder": "YYYY-MM-DD",
+      "displayFormat": null,
+      "valueFormat": null,
+      "validation": {
+        "customErrorMsg": "Back to the future!"
+      }
+    },
+    {
+      "component": "date-time",
+      "valueType": "time",
+      "name": "field3",
+      "label": "Yet Another Date Time",
+      "description": "This is another date time field that only stores the time.",
+      "required": true,
+      "placeholder": "HH:mm:ss",
+      "displayFormat": null,
+      "valueFormat": null,
+      "validation": {
+        "customErrorMsg": "Great Scott!"
+      }
+    }
+  ]
+}
 ```
 
 ##### Screenshot {#screenshot-date-time}
@@ -280,69 +342,53 @@ A multiselect component type presents multiple items for selection in a drop-dow
 
 ```json
 {
-    "id": "multiselect",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "multiselect",
-        "label": "Multi Select",
-        "valueType": "string",
-        "options": [
-          { "name": "Option 1", "value": "option1" },
-          { "name": "Option 2", "value": "option2" }
-        ]
-      }
-    ]
+  "id": "multiselect",
+  "fields": [
+    {
+      "component": "multiselect",
+      "name": "multiselect",
+      "label": "Multi Select",
+      "valueType": "string",
+      "options": [
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+    }
+  ]
 }
 ```
 
 ```json
- {
-    "id": "multiselect-group",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "property",
-        "label": "Multiselect field",
-        "valueType": "string",
-        "required": true,
-        "maxSize": 2,
-        "options": [
-          {
-            "name": "Theme",
-            "children": [
-              {
-                "name": "Light",
-                "value": "light"
-              },
-              {
-                "name": "Dark",
-                "value": "dark"
-              }
-            ]
-          },
-          {
-            "name": "Type",
-            "children": [
-              {
-                "name": "Alpha",
-                "value": "alpha"
-              },
-              {
-                "name": "Beta",
-                "value": "beta"
-              },
-
-              {
-                "name": "Gamma",
-                "value": "gamma"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+{
+  "id": "multiselect-grouped",
+  "fields": [
+    {
+      "component": "multiselect",
+      "name": "property",
+      "label": "Multiselect field",
+      "valueType": "string",
+      "required": true,
+      "maxSize": 2,
+      "options": [
+        {
+          "name": "Theme",
+          "children": [
+            { "name": "Light", "value": "light" },
+            { "name": "Dark",  "value": "dark" }
+          ]
+        },
+        {
+          "name": "Type",
+          "children": [
+            { "name": "Alpha", "value": "alpha" },
+            { "name": "Beta", "value": "beta" },
+            { "name": "Gamma", "value": "gamma" }
+          ]
+        }
+      ]
+    }
+  ]
+}
 ```
 
 ##### Screenshots {#screenshot-multiselect}
@@ -364,16 +410,38 @@ A number component type allows for the input of a number. It offers additional v
 
 ```json
 {
-    "id": "number",
-    "fields": [
-      {
-        "component": "number",
-        "name": "number",
-        "label": "Number",
-        "valueType": "number",
-        "value": 0
+  "id": "number",
+  "fields": [
+    {
+      "component": "number",
+      "name": "number",
+      "label": "Number",
+      "valueType": "number",
+      "value": 0
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-number",
+  "fields": [
+   {
+      "component": "number",
+      "valueType": "number",
+      "name": "field1",
+      "label": "Number Field",
+      "description": "This is a number field.",
+      "required": true,
+      "placeholder": null,
+      "validation": {
+        "numberMin": 0,
+        "numberMax": 88,
+        "customErrorMsg": "You also need 1.21 gigawatts."
       }
-    ]
+    }
+  ]
 }
 ```
 
@@ -389,19 +457,19 @@ A radio group component type allows for a mutually-exclusive selection from mult
 
 ```json
 {
-    "id": "radio-group",
-    "fields": [
-      {
-        "component": "radio-group",
-        "label": "Radio Group",
-        "name": "radio",
-        "valueType": "string",
-        "options": [
-          { "name": "Option 1", "value": "option1" },
-          { "name": "Option 2", "value": "option2" }
-        ]
-      }
-    ]
+  "id": "radio-group",
+  "fields": [
+    {
+      "component": "radio-group",
+      "label": "Radio Group",
+      "name": "radio",
+      "valueType": "string",
+      "options": [
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+    }
+  ]
 }
 ```
 
@@ -417,15 +485,15 @@ A reference component type allows for a reference to another data object from th
 
 ```json
 {
-    "id": "reference",
-    "fields": [
-      {
-        "component": "reference",
-        "label": "Reference",
-        "name": "reference",
-        "valueType": "string"
-      }
-    ]
+  "id": "reference",
+  "fields": [
+    {
+      "component": "reference",
+      "label": "Reference",
+      "name": "reference",
+      "valueType": "string"
+    }
+  ]
 }
 ```
 
@@ -441,19 +509,19 @@ A select component type allows for selection of a single option from a list of p
 
 ```json
 {
-    "id": "select",
-    "fields": [
-      {
-        "component": "select",
-        "label": "Select",
-        "name": "select",
-        "valueType": "string",
-        "options": [
-          { "name": "Option 1", "value": "option1" },
-          { "name": "Option 2", "value": "option2" }
-        ]
-      }
-    ]
+  "id": "select",
+  "fields": [
+    {
+      "component": "select",
+      "label": "Select",
+      "name": "select",
+      "valueType": "string",
+      "options": [
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+    }
+  ]
 }
 ```
 
@@ -473,32 +541,32 @@ If you wish to have items that appear above all tabs, they must be defined befor
 
 ```json
 {
-    "id": "tab",
-    "fields": [
-      {
-        "component": "tab",
-        "label": "Tab 1",
-        "name": "tap1"
-      },
-      {
-        "component": "text-input",
-        "label": "Text 1",
-        "name": "text1",
-        "valueType": "string"
-      },
-      {
-        "component": "tab",
-        "label": "Tab 2",
-        "name": "tap2"
-      },
-      {
-        "component": "text-input",
-        "label": "Text 2",
-        "name": "text2",
-        "valueType": "string"
-      }
-    ]
-  }
+  "id": "tab",
+  "fields": [
+    {
+      "component": "tab",
+      "label": "Tab 1",
+      "name": "tab1"
+    },
+    {
+      "component": "text-input",
+      "label": "Text 1",
+      "name": "text1",
+      "valueType": "string"
+    },
+    {
+      "component": "tab",
+      "label": "Tab 2",
+      "name": "tab2"
+    },
+    {
+      "component": "text-input",
+      "label": "Text 2",
+      "name": "text2",
+      "valueType": "string"
+    }
+  ]
+}
 ```
 
 ##### Screenshot {#screenshot-tab}
@@ -518,15 +586,33 @@ A text area allows for multi-line, rich text input. It offers additional validat
 
 ```json
 {
-    "id": "richtext",
-    "fields": [
-      {
-        "component": "text-area",
-        "name": "rte",
-        "label": "Rich Text",
-        "valueType": "string"
+  "id": "richtext",
+  "fields": [
+    {
+      "component": "text-area",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-richtext",
+  "fields": [
+    {
+      "component": "text-area",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string",
+      "validation": {
+        "maxSize": 1000,
+        "customErrorMsg": "That's about as funny as a screen door on a battleship."
       }
-    ]
+    }
+  ]
 }
 ```
 
@@ -549,16 +635,38 @@ A text input allows for a single line of text input.  It includes additional val
 
 ```json
 {
-    "id": "simpletext",
-    "fields": [
-      {
-        "component": "text-input",
-        "name": "text",
-        "label": "Simple Text",
-        "valueType": "string"
+  "id": "simpletext",
+  "fields": [
+    {
+      "component": "text-input",
+      "name": "text",
+      "label": "Simple Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another simpletext",
+  "fields": [
+    {
+      "component": "text-input",
+      "name": "text",
+      "label": "Simple Text",
+      "valueType": "string",
+      "description": "This is a text input with validation.",
+      "required": true,
+      "validation": {
+        "minLength": 1955,
+        "maxLength": 1985,
+        "regExp": "^foo:.*",
+        "customErrorMsg": "Why don't you make like a tree and get outta here?"
       }
-    ]
- }
+    }
+  ]
+}
 ```
 
 ##### Screenshot {#screenshot-text-input}
