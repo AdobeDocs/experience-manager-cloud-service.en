@@ -245,14 +245,11 @@ Let's add the following code to the JavaScript file to display the response and 
             console.log("response:"+JSON.stringify(response));
             console.log("headers:"+JSON.stringify(headers));
             alert("CustomErrorHandler - Enter valid PetId.")
-            globals.invoke('defaultErrorHandler',response, headers)
+            globals.invoke('defaultErrorHandler',response, headers) 
             console.log("Custom Error Handler processing end...");
         }
     ```
-
-   To call the default error handler from your custom error handler, the following line of the sample code is used:
-        `globals.invoke('defaultErrorHandler',response, headers) `
-
+    
     >[!NOTE]
     >
     > In the `.content.xml` file, add `categories = [custom-errorhandler-name]`. For example, in this case, [custom-errorhandler-name] is provided as `customfunctionsdemoV2`.
