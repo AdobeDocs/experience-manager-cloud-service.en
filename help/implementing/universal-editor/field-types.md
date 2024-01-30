@@ -1,10 +1,10 @@
 ---
-title: Model Definitions and Field Types
+title: Model Definitions, Fields, and Component Types
 description: Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 ---
 
-# Model Definitions and Field Types {#field-types}
+# Model Definitions, Fields, and Component Types {#field-types}
 
 Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 
