@@ -1,20 +1,20 @@
 ---
 title: Model Definitions and Field Types
-description: Learn about the different types of fields that the Universal Editor can edit in the components rail with examples of how you can instrument your own app by creating a model definition and linking to the component.
+description: Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 ---
 
 # Model Definitions and Field Types {#field-types}
 
-Learn about the different types of fields that the Universal Editor can edit in the components rail with examples of how you can instrument your own app by creating a model definition and linking to the component.
+Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 
 {{universal-editor-status}}
 
 ## Overview {#overview}
 
-When adapting your own apps for use with the Universal Editor, you must instrument the components and define what data types they can manipulate in the component rail of the editor. You do this by creating a model and linking to that from the component.
+When adapting your own apps for use with the Universal Editor, you must instrument the components and define what fields and component types they can manipulate in the properties rail of the editor. You do this by creating a model and linking to that from the component.
 
-This document provides an overview of a model definition and the field types available to you along with example configurations.
+This document provides an overview of a model definition and of fields and the component types available to you along with example configurations.
 
 >[!TIP]
 >
@@ -30,10 +30,12 @@ The model definition is a JSON structure, starting with an array of models.
 [
   {
     "id": "model-id",        // must be unique
-    "fields": []             // array of fields which shall be rendered in the Properties Rail
+    "fields": []             // array of fields which shall be rendered in the properties rail
   }
 ]
 ```
+
+See the **[Fields](#fields)** section of this document for more information about how to define your `fields` array.
 
 To use the model definition with a component, the `data-aue-model` attribute can be used.
 
@@ -61,7 +63,7 @@ Alternatively you can also define the model inline.
 
 The field object has the following type definition.
 
-|Configuration|Type|Description|Required|
+|Configuration|Value Type|Description|Required|
 |---|---|---|---|
 |`component`|`ComponentType`|Renderer of the component|Yes|
 |`name`|`string`|Property where the data shall be persisted|Yes|
@@ -75,16 +77,16 @@ The field object has the following type definition.
 |`hidden`|`boolean`|Is the field hidden by default|No|
 |`condition`|`RulesLogic`|Rule to show or hide the field|No|
 |`multi`|`boolean`|Is the field a multi field|No|
-|`validation`|`ValidationType`|Validation rule for the field|No|
+|`validation`|`ValidationType`|Validation rule or rules for the field|No|
 |`raw`|`unknown`|Raw data which can be used by the component|No|
 
 ### Component Types {#component-types}
 
-The following are the component types that are possible to use for defining fields.
+The following are the component types that are possible to use for rendering fields.
 
 #### AEM Tag {#aem-tag}
 
-An AEM tag component type enables and AEM tag picker which can be used to attach tags to the component.
+An AEM tag component type enables an AEM tag picker, which can be used to attach tags to the component.
 
 ##### Sample {#sample-aem-tag}
 
@@ -137,7 +139,11 @@ An AEM content component type type enables an AEM content picker, which can be u
 
 #### Boolean {#boolean}
 
-A boolean component type stores a simple true/false value rendered as a toggle.
+A boolean component type stores a simple true/false value rendered as a toggle. It offers an additional validation type.
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`customErrorMsg`|`string`|Message that will display if the value entered isn't a boolean value|No|
 
 ##### Sample {#sample-boolean}
 
@@ -190,9 +196,9 @@ Similar to a boolean, a checkbox group component type allows for the selection o
 
 #### Container {#container}
 
-A container component type allows the grouping of components. It includes an additional configuration.
+A container component type allows the grouping of components. It offers an additional configuration.
 
-|Configuration|Value|Description|Required|
+|Configuration|Value Type|Description|Required|
 |---|---|---|---|
 |`collapsible`|`boolean`|Is the container collapsible|No|
 
@@ -233,12 +239,18 @@ A container component type allows the grouping of components. It includes an add
 
 #### Date Time {#date-time}
 
-A date time component type allows the specification of a date or time or combination thereof. It includes additional configurations.
+A date time component type allows the specification of a date, time, or combination thereof. It offers additional configurations.
 
-|Configuration|Type|Description|Required|
+|Configuration|Value Type|Description|Required|
 |---|---|---|---|
 |`displayFormat`|`string`|Format with which to display the date string|Yes|
 |`valueFormat`|`string`|Format in which to store the date string|Yes|
+
+It also offers an additional validation type.
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`customErrorMsg`|`string`|Message that will display if `valueFormat` isn't met|No|
 
 ##### Sample {#sample-date-time}
 
@@ -340,12 +352,13 @@ A multiselect component type presents multiple items for selection in a drop-dow
 
 #### Number {#number}
 
-A number component type allows for the input of a number. It includes additional configurations.
+A number component type allows for the input of a number. It offers additional validation types.
 
-|Configuration|Type|Description|Required|
+|Validation Type|Value Type|Description|Required|
 |---|---|---|---|
 |`numberMin`|`number`|Minimum number allowed|No|
 |`numberMax`|`number`|Maximum number allowed|No|
+|`customErrorMsg`|`string`|Message that will display if `numberMin` or `numberMax` isn't met|No|
 
 ##### Sample {#sample-number}
 
@@ -392,7 +405,7 @@ A radio group component type allows for a mutually-exclusive selection from mult
 }
 ```
 
-##### Screenshot {#screenshot-number}
+##### Screenshot {#screenshot-radio-group}
 
 ![Screenshot of radio group component type](assets/component-types/radio.png)
 
@@ -494,7 +507,12 @@ If you wish to have items that appear above all tabs, they must be defined befor
 
 #### Text Area {#text-area}
 
-A text area allows for multi-line, rich text input.
+A text area allows for multi-line, rich text input. It offers additional validation types.
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`maxSize`|`number`|Maximum number characters allowed|No|
+|`customErrorMsg`|`string`|Message that will display if `maxSize` is exceeded|No|
 
 ##### Sample {#sample-text-area}
 
@@ -512,19 +530,20 @@ A text area allows for multi-line, rich text input.
 }
 ```
 
-##### Sample {#sample-text-area}
+##### Screenshot {#screenshot-text-area}
 
 ![Screenshot of text area component type](assets/component-types/richtext.png)
 
 #### Text Input {#text-input}
 
-A text input allows for a single line of text input.  It includes additional configurations.
+A text input allows for a single line of text input.  It includes additional validation types.
 
-|Configuration|Type|Description|Required|
+|Validation Type|Value Type|Description|Required|
 |---|---|---|---|
 |`minLength`|`number`|Minimum number of characters allowed|No|
 |`maxLength`|`number`|Maximum number of characters allowed|No|
 |`regExp`|`string`|Regular expression which the input text must match|No|
+|`customErrorMsg`|`string`|Message that will display if `minLength`, `maxLength`, and/or `regExp` is/are violated|No|
 
 ##### Sample {#sample-text-input}
 
