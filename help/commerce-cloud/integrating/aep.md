@@ -12,6 +12,7 @@ kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
 ---
+
 # AEM-CIF core components and Adobe Experience Platform integration {#aem-cif-aep-integration}
 
 The [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) core components provide seamless integration with [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) to forward storefront events and their data from client-side interactions such as __add to cart__.
@@ -211,7 +212,7 @@ To initialize the React-based Peregrine and CIF core components, create the requ
         },
         eventsCollector: {
             eventForwarding: {
-                commerce: true,
+                acds: true,
                 aep: false,
             }
         }
@@ -221,7 +222,7 @@ To initialize the React-based Peregrine and CIF core components, create the requ
 
     >[!IMPORTANT]
     >
-    >While you might already be familiar with the [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) file from __AEM Guides - CIF Venia Project__, there are a few changes you need to make to this file. First, review any __TODO__ comments. Then, inside the `eventsCollector` property, find the `eventsCollector > aed` object and update the `orgId` and `datastreamId` properties to the correct values. [Learn more](./aep.md#add-aep-values-to-aem).
+    >While you might already be familiar with the [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) file from __AEM Guides - CIF Venia Project__, there are a few changes you need to make to this file. First, review any __TODO__ comments. Then, inside the `eventsCollector` property, find the `eventsCollector > aep` object and update the `orgId` and `datastreamId` properties to the correct values. [Learn more](./aep.md#add-aep-values-to-aem).
 
 1.  Create an `App.js` file with the following content. This file resembles a typical React application-starting point file and contains React and custom hooks and React Context usage to facilitate the Experience Platform integration. 
 
