@@ -8,6 +8,8 @@ feature: Edge Delivery Services
 
 This guide will get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor for content authoring.
 
+{{aem-authoring-edge-early-access}}
+
 ## Prerequisites {#prerequisites}
 
 Before beginning this guide, you should already be familiar with the basics of and have access to Edge Delivery Services including:

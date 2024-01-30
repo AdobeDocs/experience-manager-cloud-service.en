@@ -49,3 +49,7 @@
 * [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connect Adaptive Form to Salesforce application](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Connect an Adaptive Form to Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+
+## AEM Authoring with Edge Delivery Services Early Access {#aem-authoring-edge-early-access}
+
+[!BADGE EARLY-ACCESS TECHNOLOGY - Ask us about this feature from the AEM Sites labs on your Slack channel!]{type=Positive url="/help/edge/docs/slack.md" tooltip="AEM authoring with Edge Delivery Services is an early-access technology."}
