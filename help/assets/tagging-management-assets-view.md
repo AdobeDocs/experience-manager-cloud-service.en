@@ -39,7 +39,7 @@ To be able to apply tags to assets, you must first create a namespace and then c
 
 Additional capabilities beyond what is mentioned in this article including merging, renaming, localizing, and publishing tags are available in the Admin view. 
 
-## Creating a Namespace {#creating-a-namespace}
+## Create a Namespace {#create-a-namespace}
 
 A Namespace is a container for tags that can exist only at the root-level. You can start setting up the hierarchical structure of tags by first defining a logical name for the Namespace. If you do not add a tag to any of the existing Namespaces, the tag moves to Standard Tags automatically. 
 
@@ -51,22 +51,15 @@ Execute the following steps to create a Namespace:
 
     ![Tagging Management](assets/tags-hierarchy.png)
 
-    <!--
-    >[!NOTE]
-    >
-    >You can use `Name` as a primary key if you are using any other metadata management tool is the source of truth for taxonomy values, you can use the name as a primary key.
-    >
-    -->
-
 1. Click `Save`.
 
-## Adding Tags to a Namespace {#adding-tags-to-namespace}
+## Add Tags to a Namespace {#add-tags-to-namespace}
 
 Execute the following steps to add tags to a Namespace:
 
-1. Go to `Taxonomy Management`.
+1. Go to **[!UICONTROL Taxonomy Management]**.
 1. Select the Namespace and click `Create` to create the tag at the top level under the Namespace. If you need to create a subtag under a tag that exists in a Namespace, select the tag and then click `Create`. 
-![Hierarchy of Tags](assets/hierarchy-of-tags.png)
+  ![Hierarchy of Tags](assets/hierarchy-of-tags.png)
 
     In this example, the image on the left represents the tag directly under the Namespace `automobile-four-wheeler` displayed in the `Path` field. The image on the right is an example of subtags added within a tag, as there are more tag names, `jeep` and `jeep-meridian`, displayed in the `Path` field in addition to the Namespace.
 1. Specify the title, name, and description for the tag and click `Save`.
@@ -78,7 +71,7 @@ Execute the following steps to add tags to a Namespace:
     >* By default, the tool copies the text that you type in the Title field, removes the blank spaces or special characters (. & / \ : * ? [ ] | " %), and stores it as the Name. 
     >* You can update the `Title` field later but the `Name` field is read-only.
 
-## Adding Tags to Standard Tags {#adding-tags-to-standard-tags}
+## Add Tags to Standard Tags {#add-tags-to-standard-tags}
 
 Unstructured Tags or the tags that do no have any hierarchy are stored under `Standard Tags` namespace. Moreover, when you want to add additional descriptive terms without affecting governed taxonomy, you can store that value under `Standard Tags`. You can move these values under structured namespaces over time. Furthermore, you can use the `Standard Tags` namespace as a free form entry for keywords.
 
@@ -88,9 +81,9 @@ To create a standard tag, click `Create Tag` at the root-level. Specify title, n
 
 >[!NOTE]
 >
->If you delete `Standard Tags` namespace using Admin view, the tags created at the root-level do not display in the list of available tags. 
+>If you delete `Standard Tags` namespace using Assets as a Cloud Service, the tags created at the root-level do not display in the list of available tags. 
 
-## Moving Tags {#moving-tags}
+## Move Tags {#move-tags}
 
 In case you store your tags under the wrong hierarchy or your taxonomy changes over the time, you can move the selected tags to maintain data integrity. The following conditions must be considered while moving tags:
 
@@ -104,16 +97,16 @@ Perform the following steps to move tags from one location to another:
 1. On the Move dialog, select the new destination tag or Namespace using the `Select Tag` section.
 1. Click `Save`. The tag displays at its new location.
 
-## Editing Tags {#editing-tags}
+## Edit Tags {#edit-tags}
 
 To edit the title of the tag, select the tag and click `Edit`. Specify the new title and click `Save`.
 
 >[!NOTE]
 >
 >* The `Name` of a tag cannot be updated. The root path for a tag is also based on the name of the tag. The path remains the same even if you update the `Title` field. 
->* Additional operations such as merge, localize, and publish are available in the Admin view.
+>* Additional operations such as merge, localize, and publish are available in Assets as a Cloud Service.
 
-## Deleting Tags {#deleting-tags}
+## Delete Tags {#delete-tags}
 
 You can delete multiple Namespaces or tags simultaneously. The delete operation cannot be undone. 
 
@@ -128,16 +121,16 @@ Perform the following steps to delete tags:
 >* Deleting a tag also deletes all its references from assets.
 >* You cannot delete Standard Tags that exist at the root level.
 
-## Adding Tags component to the Metadata form {#adding-tags-to-metadata-form}
+## Add Tags component to the Metadata form {#add-tags-to-metadata-form}
 
-The tags component gets added to the `default` metadata form automatically. You can design a [Metadata form](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms) either by using a template or from scratch. If you are not using an existing Metadata form template, then you can modify your Metadata form  and add the tags component. The metadata property mapping is filled in automatically and cannot be modified at this time. Users in the Admin view can update the mapping to store tag values using custom namespaces and expose only subsets of hierarchies using root paths.
+The tags component gets added to the `default` metadata form automatically. You can design a [Metadata form](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms) either by using a template or from scratch. If you are not using an existing Metadata form template, then you can modify your Metadata form  and add the tags component. The metadata property mapping is filled in automatically and cannot be modified at this time. [!DNL Assets as a Cloud Service] users can update the mapping to store tag values using custom namespaces and expose only subsets of hierarchies using root paths.
 
 Watch this quick video to see how to add the Tags component to your metadata form:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420452)
 
 
-### Adding Tags to Assets {#adding-tags-to-assets}
+### Add Tags to Assets {#add-tags-to-assets}
 
 1. Go to Asset details page and navigate to the `Tags` section of Metadata form.
 1. Select the tag picker icon which is next to the Tags field or start typing in a tag name to see suggested results. 
@@ -145,32 +138,63 @@ Watch this quick video to see how to add the Tags component to your metadata for
     ![Tagging-assets](assets/adding-tags-to-assets.png)
 
 1. Select one or more tags. The subtag is selected automatically along with the parent tag or namespace.
-Tags modified in the Assets view are applied in the Admin view as well.
+Tags modified in the Assets Essentials are applied in Assets as a Cloud Service as well.
 
-## Limitations {#limitations}
+## Add tags to blocklist {#blocklist-essentials}
 
-The following advanced taxonomy capabilities are unavailable in Assets view at this time and are only accessible through Admin view: 
-
-* **Localization:** Any localization must occur in the Admin view.
-* **Root Path:** Root paths are not configurable. All namespaces stored in Taxonomy Management are exposed on the Tags property in the Assets view. 
-* **Standard Tags:** The Standard tags applied in the Admin view are visible in the Assets view. You cannot add new standard tags in the Assets view on the Asset Details page. The existing values that are stored in Standard Tags are applied on the Assets Details page.
-* **Custom Namespaces:** Tags cannot be mapped to custom namespaces.
-* **Viewing references:** Admins may see the tag usage in the Assets view. This refers to all assets that are actively using a tag. However, admins cannot see individual assets using the tag in references.
-
+[!DNL Assets view] enables you to configure a blocklist that includes words that should not be added as Smart Tags to assets when they are uploaded to the repository. This capability helps you to maintain brand compliance and reduces effort to moderate Smart Tags.
 <!--
-*   Overview
-*   Benefits
-*   Prerequisites and Permissions
-*   Configuration
-*   Managing Tags
-    *   Creating a Namespace
-    *   Adding Tags to a Namespace
-    *   Adding Tags to Standard Tags
-    *   Moving Tags
-    *   Editing Tags
-    *   Deleting Tags
-*   Applying Tags
-    *   Adding Tags to the Metadata form
-    *   Adding Tags to Assets
-*   Limitations
+### Block smart tags for single asset {#block-smart-tags-for-single-asset}
+![block smart tags](assets/block-smart-tags.png)
 -->
+
+### Block smart tags for all assets {#block-smart-tags-for-all-assets}
+
+[!DNL Assets view] allows an admin to block smart tags for the existing and the newly added assets. To block tags, execute the following steps:
+
+1. Navigate to **[!UICONTROL Blocked Tags]** under **[!UICONTROL Settings]**.
+1. Click **[!UICONTROL Add blocked tag]**.
+1. Type the tags in the textbox that you need to block and click **[!UICONTROL Enter]**.
+1. Once you are done with adding tags, click **[!UICONTROL Add]**. The entered tags get listed in the blocked tags list.
+
+   >[!NOTE]
+   >
+   >You can add a maximum of 25 tags to the list at once. Repeat the steps to add more tags to the blocklist.
+
+You can also block smart tags for a single asset. Navigate to the details of an asset. Under **[!UICONTROL Tags]** tab, remove the unwanted smart tags and click **[!UICONTROL Save]**. The tags are listed in the blocklist for the selected asset.
+
+### Actions performed on blocklist {#blocklist-actions}
+
+* **Remove tags:** You can also remove the tags from blocklist. To do this, select one or more tags that you want to remove. Click **[!UICONTROL Remove]**. You can remove a maximum of 25 tags from the list at once.
+* **Select all:** Select the checkbox adjacent to **Tag Name** to select all the tags in the blocklist.
+* **Sorting:** You can sort the blocklist in either ascending or descending order. To do this, click arrow adjacent to **Tag Name**.
+
+   ![block tags](assets/blocklist.gif)
+
+  >[!NOTE]
+  >
+  >Do not use special characters while adding a tag in the blocklist. Characters such as a-z, A-Z, 0-9, and - can be used.
+
+### Export blocklist{#export-blocklist}
+
+Assets view allows you to export the listed blocked tags into CSV format. To export blocklist, execute the steps below:
+
+1. Click **[!UICONTROL Export as CSV]**.
+1. Choose the appropriate location to save the CSV file. You can also rename the file as per the requirement.
+1. Click **[!UICONTROL Save]**. The exported list in CSV format gets downloaded at the selected location.
+
+### Import blocklist{#import-blocklist}
+
+Assets view provides the ability to import blocked tags from a data source (CSV). To import blocklist, execute the steps below:
+
+1. Click **[!UICONTROL Import as CSV]**.
+1. Choose the CSV file from your device. Click **[!UICONTROL select a file]** to navigate to the file from your device. Alternatively, you can drag and drop the CSV file from your device.
+1. Click **[!UICONTROL Upload]**. The tags from the CSV file are listed in the blocked tags list.
+
+    ![Import blocked tags list](assets/import-blocked-tags.png)
+
+In case you want to download a blocked tags template, follow the steps below: 
+
+1. Click **[!UICONTROL Download Template]**. 
+1. Choose the appropriate location to save the CSV file. You can also rename the file as per the requirement. 
+1. Click **[!UICONTROL Save]**. Block tags template in CSV format are downloaded at the selected location.
