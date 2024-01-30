@@ -95,6 +95,11 @@ First you will need to create a new project on GitHub, based on the Adobe templa
 
 Now that you have a GitHub project, you must create a new AEM site that the project can use.
 
+>[!NOTE]
+>
+>To edit your site using the Universal Editor, you must use a Chromium-based browser.
+
+
 1. Sign in to your AEM as a Cloud Service authoring instance and navigate to the Sites console and tap or click **Create** -> **Site from template**.
 
    ![Create a new site from the console](assets/edge-dev-getting-started/create-site-console.png)
