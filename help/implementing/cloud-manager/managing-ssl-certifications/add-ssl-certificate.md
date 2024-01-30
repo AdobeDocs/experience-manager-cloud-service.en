@@ -19,7 +19,9 @@ Review the section **Certificate Requirements** of the document [Introduction to
 
 Follow these steps to add a certificate using Cloud Manager.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization 
+
+1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
 
 1. Navigate to **Environments** screen from the **Overview** page.
 

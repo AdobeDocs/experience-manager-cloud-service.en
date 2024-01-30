@@ -83,7 +83,7 @@ Alternatively, you can create a Workflow Model that uses the `Publish Content Tr
 
 * `includeChildren` (boolean value, default: `false`). The value `false` means that only the path is published; `true` means that children are published too.
 * `replicateAsParticipant` (boolean value, default: `false`). If configured as `true`, the replication is using the `userid` of the principal which performed the participant step.
-* `enableVersion` (boolean value, default: `true`). This parameter determines if a new version is created upon replication.
+* `enableVersion` (boolean value, default: `false`). This parameter determines if a new version is created upon replication.
 * `agentId` (string value, default means only agents for publish are used). It is recommended to be explicit about the agentId; for example, setting it the value: publish. Setting the agent to `preview` publishes to the preview service.
 * `filters` (string value, default means that all paths are activated). Available values are: 
   * `onlyActivated` - only activate pages that have (already) been activated. Acts as a form of reactivation.
