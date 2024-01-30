@@ -99,8 +99,6 @@ This property must be set in the `org.apache.sling.engine.impl.SlingMainServlet`
 
 The Universal Editor service requires a [uniform resource name (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) to identify and utilize the correct backend system for the content in the app being edited. Therefore, a URN schema is required to map content back to content resources.
 
-The instrumentation attributes added to the page consist mostly of [HTML Microdata,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) an industry-standard that can also be used to make HTML more semantic, make HTML documents indexable, and so on.
-
 ### Creating Connections {#connections}
 
 Connections which are used in the app are stored as `<meta>` tags in the page's `<head>`.
@@ -143,19 +141,19 @@ data-aue-resource="urn:<referenceName>:<resource>"
 </head>
 <body>
         <aside>
-          <ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="container">
-            <li itemscope itemid="urn:aemconnection/content/example/listitem" itemtype="component">
-              <p itemprop="name" itemtype="text">Jane Doe</p>
-              <p itemprop="title" itemtype="text">Journalist</p>
-              <img itemprop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" itemtype="image" alt="avatar"/>
+          <ul data-aue-resource="urn:aemconnection:/content/example/list" data-aue-type="container">
+            <li data-aue-resource="urn:aemconnection/content/example/listitem" data-aue-type="component">
+              <p data-aue-prop="name" data-aue-type="text">Jane Doe</p>
+              <p data-aue-prop="title" data-aue-type="text">Journalist</p>
+              <img data-aue-prop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" data-aue-type="image" alt="avatar"/>
             </li>
 
 ...
 
-            <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="component">
-              <p itemprop="name" itemtype="text">John Smith</p>
-              <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
-              <img itemprop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" itemtype="image" alt="avatar"/>
+            <li data-aue-resource="urn:fcsconnection:/documents/mytext" data-aue-type="component">
+              <p data-aue-prop="name" data-aue-type="text">John Smith</p>
+              <p data-aue-resource="urn:aemconnection/content/example/another-source" data-aue-prop="title" data-aue-type="text">Photographer</p>
+              <img data-aue-prop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" data-aue-type="image" alt="avatar"/>
             </li>
           </ul>
         </aside>
