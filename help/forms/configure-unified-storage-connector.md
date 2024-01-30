@@ -1,6 +1,8 @@
 ---
 title: How to configure Unified Storage Connector (USC) for AEM Forms?
 description: Learn how to manage Unified Storage Connector (USC) for AEM Forms. Use the Unified Storage Connector (USC) to connect AEM Forms to external data storages.
+role: Admin, Developer, User
+feature: Adaptive Forms, Workflow
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
 ---
 # Manage Unified Storage Connector (USC) for AEM Forms {#manage-unified-storage-connector}

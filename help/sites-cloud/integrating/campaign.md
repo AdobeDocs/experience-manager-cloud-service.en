@@ -8,7 +8,7 @@ exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
 
 # Integrating AEM as a Cloud Service with Adobe Campaign {#integrating-campaign}
 
-Lean about AEM as a Cloud Service's support for integrations with Adobe Campaign.
+Learn about AEM as a Cloud Service's support for integrations with Adobe Campaign.
 
 >[!NOTE]
 >

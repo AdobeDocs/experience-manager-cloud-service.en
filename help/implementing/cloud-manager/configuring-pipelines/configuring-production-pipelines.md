@@ -29,7 +29,9 @@ Once you have set up your program and have at least one environment using the [!
 >
 >Before you configure a front-end pipeline, see the [AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) for an end-to-end guide though the easy-to-use AEM Quick Site Creation tool. This journey will help you streamline the front-end development of your AEM Site, allowing you to quickly customize your site with no AEM back-end knowledge.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization
+
+1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
 
 1. Navigate to the **Pipelines** card from the **Program Overview** page and click **Add** to select **Add Production Pipeline**. 
 
@@ -115,18 +117,17 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
 
 A targeted deployment deploys code only for selected parts of your AEM application. In such a deployment you can choose to **Include** one of the following types of code:
 
-* **[Config](#config)** - Configure settings on your AEM environment, maintenance tasks, CDN rules, and more.
+* **Config** - Configure settings for traffic filter rules on your AEM environment.
   * See the document [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage the configurations in your repository so they are deployed properly.
-* **[Front End Code](#front-end-code)** - Configure JavaScript and CSS for the front end of your AEM application.
+  * When running a targeted deployment pipeline, [WAF configurations](/help/security/traffic-filter-rules-including-waf.md) will be deployed, provided they are saved to environment, repository, and branch you defined in the pipeline.
+  * At any time, there can only be one config pipeline per environment. 
+* **Front End Code** - Configure JavaScript and CSS for the front end of your AEM application.
   * With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
   * See the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.
-* **[Web Tier Config](#web-tier-config)** - Configure dispatcher properties to store, process, and delivery web pages to the client.
-
->[!NOTE]
->
->* If a web-tier code pipeline exists for the selected environment, this selection is disabled.
->* If you have an existing full-stack pipeline deploying to an environment, creating a web tier config pipeline for the same environment will case the existing web tier configuration in the full-stack pipeline to be ignored.
-> * At any time, there can only be one config pipeline per environment. 
+* **Web Tier Config** - Configure dispatcher properties to store, process, and delivery web pages to the client.
+  * See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) for more details.
+  * If a web-tier code pipeline exists for the selected environment, this selection is disabled.
+  * If you have an existing full-stack pipeline deploying to an environment, creating a web tier config pipeline for the same environment will case the existing web tier configuration in the full-stack pipeline to be ignored.
 
 The steps to complete the creation of your production, targeted deployment pipeline are the same once you choose a deployment type.
 
@@ -157,8 +158,6 @@ The steps to complete the creation of your production, targeted deployment pipel
 1. Click **Save**.
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
-
-When running a targeted deployment pipeline, configurations [such as WAF configurations](/help/security/traffic-filter-rules-including-waf.md) will be deployed, provided they are saved to environment, repository, and branch you defined in the pipeline.
 
 ## Skip Dispatcher Packages {#skip-dispatcher-packages}
 

@@ -1,6 +1,7 @@
 ---
 title: Field Types
 description: Learn about the different types of fields that the Universal Editor can edit in the components rail with examples of how you can instrument your own app.
+exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 ---
 
 # Field Types {#field-types}

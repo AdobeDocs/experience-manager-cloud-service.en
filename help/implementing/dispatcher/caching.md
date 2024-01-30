@@ -225,6 +225,10 @@ Now, images in blob storage that are marked private cannot be cached at the Disp
       </LocationMatch>
       ```
 
+### Analyzing CDN Cache Hit Ratio {#analyze-chr}
+
+See the [cache hit ratio analysis tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) for information about downloading CDN logs and analyzing your site's cache hite ratio, using a dashboard.
+
 ### HEAD request behavior {#request-behavior}
 
 When a HEAD request is received at the Adobe CDN for a resource that is **not** cached, the request is transformed and received by the Dispatcher and/or AEM instance as a GET request. If the response is cacheable, then subsequent HEAD requests are served from the CDN. If the response is not cacheable, then subsequent HEAD requests are passed to the Dispatcher, or AEM instance, or both, for a time that depends on the `Cache-Control` TTL.
