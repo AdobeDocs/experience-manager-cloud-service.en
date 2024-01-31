@@ -39,7 +39,7 @@ Have a look at the January 2024 Release Overview video for a summary of the feat
 
 ![Extension Manager in AEM Sites](/help/assets/sites/extension-manager/homepage.png)
 
-The Extension Manager in AEM Sites enables developers and practitioners to access, manage, and customize UI extensions built to enhance the functionality of AEM Sites.
+The Extension Manager in AEM Sites enables developers and practitioners to access, manage, and customize [UI extensions](https://developer.adobe.com/uix/docs/) built with [Adobe App Builder](https://developer.adobe.com/app-builder/) to enhance the functionality of AEM Sites.
 With the Extension Manager, you can:
 
 * Enable or disable extensions on a per-instance basis;
