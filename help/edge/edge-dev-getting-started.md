@@ -43,8 +43,6 @@ First you will need to create a new project on GitHub, based on the Adobe templa
 
 1. By default, the repository will be assigned to you. Change this as necessary as well as provide a repository name and description and click **Create repository**.
 
-   * The repository should be **Public**.
-
    ![Creating the repository](assets/edge-dev-getting-started/create-repo.png)
 
 1. In a new tab in the same browser, navigate to [`https://github.com/apps/aem-code-sync`](https://github.com/apps/aem-code-sync) and click **Configure**.
