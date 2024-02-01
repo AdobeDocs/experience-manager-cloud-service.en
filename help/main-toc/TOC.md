@@ -26,6 +26,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.12.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-12-0.md)
       + [Release Notes for 2023.11.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-11-0.md)
       + [Release Notes for 2023.10.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-10-0.md)
       + [Release Notes for 2023.9.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-9-0.md)
@@ -397,6 +398,7 @@ user-guide-title: AEM as a Cloud Service
     + [Micro-Frontend Asset Selector](/help/assets/asset-selector.md)
     + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
     + [Share assets](/help/assets/share-assets.md)
+    + [Repreocessing assets](/help/assets/reprocessing.md)
     + [Monitor activities and DAM tasks](/help/assets/assets-activity-history.md)
     + [Get started using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
     + [Add and upload assets](/help/assets/add-assets.md)
@@ -759,6 +761,7 @@ user-guide-title: AEM as a Cloud Service
   + [Publishing Content for Edge Delivery](/help/edge/publishing.md)
   + [Developing for Edge Delivery](/help/edge/developing.md)
   + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
+  + [Developer Getting Started Guide](/help/edge/edge-dev-getting-started.md)
   + Building Edge Delivery Applications {#build}
     + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
     + [Anatomy of a Project](/help/edge/developer/anatomy-of-a-franklin-project.md)
@@ -915,7 +918,7 @@ user-guide-title: AEM as a Cloud Service
     + [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md)
     + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)
     + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
-    + [Dynatrace OneAgent](/help/implementing/cloud-manager/dynatrace-oneagent.md)
+    + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
     + [Notifications](/help/implementing/cloud-manager/notifications.md)
     + SSL Certificates {#manage-ssl-certificates}
       + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
@@ -1111,7 +1114,7 @@ user-guide-title: AEM as a Cloud Service
     + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
     + [Universal Editor Developer Overview](/help/implementing/universal-editor/developer-overview.md)
     + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
-    + [Field Types](/help/implementing/universal-editor/field-types.md)
+    + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
     + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
     + [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md)
     + [Universal Editor Calls](/help/implementing/universal-editor/calls.md)

@@ -37,6 +37,8 @@ Further reading in the Edge Delivery Services documentation:
 
 Edge Delivery Services are part of Adobe Experience Manager and as such Edge Delivery Services and AEM sites can co-exist on the same domain. This is a common use case for larger websites. On top of that, content from Edge Delivery Services can easily be consumed in your AEM Sites pages and conversely.
 
+Please see the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) to learn how to start your own project to author with AEM and Edge Delivery Services.
+
 You can also use Edge Delivery Services with Adobe Target, Analytics, and Launch.
 
 ## Getting Access to Edge Delivery Services {#getting-access}
