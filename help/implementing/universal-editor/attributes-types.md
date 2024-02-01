@@ -32,7 +32,7 @@ In order for an app to be editable by the Universal Editor, it must be properly 
 
 ## Item Types {#item-types}
 
-|`itemtype`|Description|`itemid`|`itemprop`|`data-editor-itemfilter`|`data-editor-itemlabel`|`data-editor-itemmodel`|`data-editor-behvior`|
+|`data-aue-type`|Description|`data-aue-resource`|`data-aue-prop`|`data-aue-filter`|`data-aue-label`|`data-aue-model`|`data-aue-behavior`|
 |---|---|---|---|---|---|---|---|
 |`text`|Text is editable within the HTML tags, but only in simple text format, no rich text formatting available, this is commonly used on title components, for example|Optional|Required|n/a|Optional|n/a|Optional|
 |`richtext`|Text is editable with full rich text capabilities. RTE is shown in the right panel|Optional|Required|n/a|Optional|n/a|Optional|
