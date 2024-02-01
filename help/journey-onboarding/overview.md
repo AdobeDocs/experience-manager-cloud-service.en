@@ -2,6 +2,7 @@
 title: AEM as a Cloud Service Onboarding Journey Introduction
 description: Start here for an overview of the guided journey through the onboarding process to AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
+recommendations: noDisplay
 ---
 
 # Onboarding Journey {#onboarding-journey}
@@ -92,11 +93,8 @@ Documentation Journeys are designed around best practices principles, informed b
 
 If you want to know what Adobe recommends on how to get your team onboarded onto your new AEM as a Cloud Service application, start here!
 
-<!-- ERROR: Not Found (HTTP error 404)
 ## Additional Resources {#additional-resources}
 
 The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
-* [AEM Champion Tips and Tricks - Cloud Manager Onboarding Playbook](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/onboarding-playbook.md) - Watch this video to learn Cloud Manager onboarding tips and trick from an AEM champion. -->
-
-
+* [Onboarding to AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html) - This brief video gives an overview of the Cloud Service onboarding process for AEM.
