@@ -674,6 +674,9 @@ user-guide-title: AEM as a Cloud Service
     + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
+  + Transaction Reports {#using-communications}
+    + [Transaction Reports Billable APIs](/help/forms/transaction-reports-billable-apis.md)
+    + [Record a transaction for custom implementations](/help/forms/record-transaction-custom-implementation.md)
   + Developer API Reference {#aem-forms-developer-api-reference}
     + [Adaptive Forms API reference](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
     + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1049,7 +1052,6 @@ user-guide-title: AEM as a Cloud Service
     + [Extending Experience Fragments](/help/implementing/developing/extending/experience-fragments.md)
     + [Customizing and Extending Content Fragments](/help/implementing/developing/extending/content-fragments-customizing.md)
     + [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-    + [Customizing the Content Fragment Console](/help/implementing/developing/extending/content-fragment-console-customizing.md)
     + [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
     + Manage Search Forms {#manage-search-forms}
       + [Configuring Search Forms](/help/implementing/developing/extending/search-forms.md)
