@@ -15,7 +15,7 @@ The release date for the latest version 1.9.17 of [!DNL Workfront for Experience
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fixes:
 
-* Catching a `NumberFormatException` leaves `toggleStatus` false, mistakenly disabling EWC dialogs for certain Launch Darkly allow-listed clients.
+* Catching a `NumberFormatException` leaves `toggleStatus` false, disabling EWC dialogs for certain Launch Darkly allow-listed clients.
 
 * Closing the `resourceResolver` without explicitly closing the underlying session causes session leaks in AEM instances. It is crucial to explicitely close the session, as auto-closing the Resource Resolver does not implicitly close the session.
 
