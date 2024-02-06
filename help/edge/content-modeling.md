@@ -11,9 +11,9 @@ Learn how content modeling works for AEM authoring with Edge Delivery Services p
 
 ## Prerequisites {#prerequisites}
 
-Projects using AEM Authoring with Edge Delivery Services inherit the majority of mechanics of any other Edge Delivery Services project, independent of the content source or [authoring method.](/help/edge/authoring.md)
+Projects using AEM authoring with Edge Delivery Services inherit the majority of the mechanics of any other Edge Delivery Services project, independent of the content source or [authoring method.](/help/edge/authoring.md)
 
-Before you begin modeling you content for your project, make sure you first read the following documentation.
+Before you begin modeling content for your project, make sure you first read the following documentation.
 
 * [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
 * [Markup, Sections, Blocks, and Auto Blocking](/help/edge/developer/markup-sections-blocks.md)
@@ -25,9 +25,9 @@ It is essential to understand those concepts in order to come up with a compelli
 
 **Default content** is content an author intuitively would put on a page without adding any additional semantics. This includes text, headings, links, and images. Such content is self-explanatory in its function and purpose.
 
-In AEM this content is implemented as components with very simple, pre-defined models, which include everything that can serialized in Markdown and HTML. 
+In AEM, this content is implemented as components with very simple, pre-defined models, which include everything that can serialized in Markdown and HTML. 
 
-* **Text**: Rich text (including list elements, strong, or italic text)
+* **Text**: Rich text (including list elements and strong or italic text)
 * **Title**: Text, type (h1-h6)
 * **Image**: Source, description
 * **Button**: Text, title, url, type (default, primary, secondary)
@@ -38,11 +38,11 @@ The model of these components is part of the [Boilerplate for AEM Authoring with
 
 Blocks are used to create richer content with specific styles and functionality. In contrast to default content, blocks do require additional semantics. Blocks can be likened to [components in the AEM page editor.](/help/implementing/developing/components/overview.md)
 
-Blocks are essentially pieces of content decorated by Javascript and styled with a stylesheet.
+Blocks are essentially pieces of content decorated by JavaScript and styled with a stylesheet.
 
 ### Block Model Definition {#model-definition}
 
-When using AEM Authoring with Edge Delivery Services, the content of blocks must be modelled explicitly in order to provide the author the interface to create content. Essentially you need to create a model so the authoring UI knows what options to present to the author based on the block. 
+When using AEM authoring with Edge Delivery Services, the content of blocks must be modelled explicitly in order to provide the author the interface to create content. Essentially you need to create a model so the authoring UI knows what options to present to the author based on the block. 
 
 The [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json) file defines the model of blocks. The fields defined in the component model are persisted as properties in AEM and rendered as cells in the table that makes up a block.
 
@@ -75,7 +75,7 @@ The [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk
 }
 ```
 
-Note that not every block must have a model. Some blocks are simply containers for a list of children, where each child has its own model.
+Note that not every block must have a model. Some blocks are simply [containers](#container) for a list of children, where each child has its own model.
 
 It is also necessary to define which blocks exist and can be added to a page using the Universal Editor. The [`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) file lists the components as they are made available by the Universal Editor.
 
@@ -97,20 +97,20 @@ It is also necessary to define which blocks exist and can be added to a page usi
 }
 ```
 
-It is possible to use one model for many blocks. For example some blocks may share a model that defines a text and image.
+It is possible to use one model for many blocks. For example, some blocks may share a model that defines a text and image.
 
-For each block the developer:
+For each block, the developer:
 
 * Must use the `core/franklin/components/block/v1/block` resource type, the generic implementation of the block logic in AEM.
 * Must define the block name, which will be rendered in the block's table header.
-* Can define a model ID. 
-* Can define a filter ID.
+* Can define a [model ID.](/help/implementing/universal-editor/field-types.md#model-structure)
+* Can define a [filter ID.](/help/implementing/universal-editor/customizing.md#filtering-components)
 
 All this information is stored in AEM when a block added to a page.
 
 >[!WARNING]
 >
->While possible, it is not necessary to implement custom AEM components. The components for Edge Delivery Services provided by AEM are sufficient and implement certain guard rails to ease development.
+>While possible, it is not necessary to implement custom AEM components. The components for Edge Delivery Services provided by AEM are sufficient and offer certain guard rails to ease development.
 >
 >For this reason, Adobe does not recommend using custom AEM resource types.
 
@@ -155,7 +155,7 @@ In the following example, the image is defined first in the model and the text s
 </div>
 ```
 
-You may notice that some types of values allow inferring semantics in the markup, and properties are combined into in single cells. This will be explained in detail later.
+You may notice that some types of values allow inferring semantics in the markup, and properties are combined into in single cells. This behavior is described in the section [Type Inference.](#type-inference)
 
 #### Key-Value Block {#key-value}
 
@@ -163,7 +163,7 @@ In many cases, it it recommended to decorate the rendered semantic markup, add C
 
 In other cases however, the block is read as a key-value pair-like configuration.
 
-An example of this is the [section metadata.](/help/edge/developer/markup-sections-blocks.md#sections) In this use case, the block can be configured to render as key-value pair table instead. See more details about the sections and section metadata further in this document.
+An example of this is the [section metadata.](/help/edge/developer/markup-sections-blocks.md#sections) In this use case, the block can be configured to render as key-value pair table. Please see the section [Sections and Section Metadata](#sections-metadata) for more information.
 
 ##### Data {#data-key-value}
 
@@ -201,7 +201,7 @@ An example of this is the [section metadata.](/help/edge/developer/markup-sectio
 
 Both of the previous structures have a single dimension: the list of properties. Container blocks allow adding children (usually of the same type or model) and hence are two-dimensional. These blocks still support their own properties rendered as rows with a single column first. But they also allow adding children, for which each item is rendered as row and each property as column within that row.
 
-In the following example, a block accepts a list of linked icons as children, where each linked icon has an image and a link. Notice the filter ID set in the data of the block in order to reference the filter configuration.
+In the following example, a block accepts a list of linked icons as children, where each linked icon has an image and a link. Notice the [filter ID](/help/implementing/universal-editor/customizing.md#filtering-components) set in the data of the block in order to reference the filter configuration.
 
 ##### Data {#data-container}
 
@@ -262,9 +262,9 @@ In the following example, a block accepts a list of linked icons as children, wh
 
 With the [mechanics of block structure explained,](#block-structure) it is possible to create a content model that maps content persisted in AEM one-to-one to the delivery tier. 
 
-Early in every project, a content model must be carefully considered for every block. It must be agnostic to the content source and authoring experience in order to allow authors to switch or combine them while reusing block implementations and styles. More details about that as general guidance can be found in [David's Model (take 2).](https://www.aem.live/docs/davidsmodel) More specifically the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.
+Early in every project, a content model must be carefully considered for every block. It must be agnostic to the content source and authoring experience in order to allow authors to switch or combine them while reusing block implementations and styles. More details and general guidance can be found in [David's Model (take 2).](https://www.aem.live/docs/davidsmodel) More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.
 
-For AEM authoring with Edge Delivery Services, this raises the question how we can serve a compelling semantic content model when the information is authored with forms composed of multiple fields instead of editing semantic markup in-context like rich text.
+For AEM authoring with Edge Delivery Services, this raises the question how to serve a compelling semantic content model when the information is authored with forms composed of multiple fields instead of editing semantic markup in-context like rich text.
 
 To solve this problem, there are three methods that facilitate creating a compelling content model:
 
@@ -420,9 +420,9 @@ The same way a developer can define and model multiple [blocks,](#blocks) they c
 
 The content model of Edge Delivery Services deliberately allows only a single level of nesting, which is any default content or block contained by a section. This means in order to have more complex visual components that can contain other components, they have to be modelled as sections and combined together using auto-blocking client side. Typical examples of this are tabs and collapsible sections like accordions.
 
-A section can be defined in the same way as a block, but with the resource type of `core/franklin/components/block/v1/block`. They can have a name and a [filter ID](/help/implementing/universal-editor/customizing.md#filtering-components) which are used by the [Universal Editor](/help/implementing/universal-editor/introduction.md) only, as well as a [model ID,](/help/implementing/universal-editor/field-types.md#model-structure) which is used to render the section metadata. The model is in this way the model of the section metadata block, which will automatically be appended to a section as key-value block if it is not empty.
+A section can be defined in the same way as a block, but with the resource type of `core/franklin/components/block/v1/block`. Sections can have a name and a [filter ID,](/help/implementing/universal-editor/customizing.md#filtering-components) which are used by the [Universal Editor](/help/implementing/universal-editor/introduction.md) only, as well as a [model ID,](/help/implementing/universal-editor/field-types.md#model-structure) which is used to render the section metadata. The model is in this way the model of the section metadata block, which will automatically be appended to a section as key-value block if it is not empty.
 
-The model ID and filter ID of the default section is `section`. It can be used to alter the behavior of the default section. The following example adds some styles and and a background image to the section metadata model.
+The [model ID](/help/implementing/universal-editor/field-types.md#model-structure) and [filter ID](/help/implementing/universal-editor/customizing.md#filtering-components) of the default section is `section`. It can be used to alter the behavior of the default section. The following example adds some styles and and a background image to the section metadata model.
 
 ```json
 {
