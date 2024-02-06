@@ -672,6 +672,9 @@ user-guide-title: AEM as a Cloud Service
     + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
+  + Transaction Reports {#using-communications}
+    + [Transaction Reports Billable APIs](/help/forms/transaction-reports-billable-apis.md)
+    + [Record a transaction for custom implementations](/help/forms/record-transaction-custom-implementation.md)
   + Developer API Reference {#aem-forms-developer-api-reference}
     + [Adaptive Forms API reference](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
     + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -761,6 +764,7 @@ user-guide-title: AEM as a Cloud Service
   + [Publishing Content for Edge Delivery](/help/edge/publishing.md)
   + [Developing for Edge Delivery](/help/edge/developing.md)
   + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
+  + [Developer Getting Started Guide](/help/edge/edge-dev-getting-started.md)
   + Building Edge Delivery Applications {#build}
     + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
     + [Anatomy of a Project](/help/edge/developer/anatomy-of-a-franklin-project.md)
@@ -1046,7 +1050,6 @@ user-guide-title: AEM as a Cloud Service
     + [Extending Experience Fragments](/help/implementing/developing/extending/experience-fragments.md)
     + [Customizing and Extending Content Fragments](/help/implementing/developing/extending/content-fragments-customizing.md)
     + [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-    + [Customizing the Content Fragment Console](/help/implementing/developing/extending/content-fragment-console-customizing.md)
     + [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
     + Manage Search Forms {#manage-search-forms}
       + [Configuring Search Forms](/help/implementing/developing/extending/search-forms.md)
@@ -1113,7 +1116,7 @@ user-guide-title: AEM as a Cloud Service
     + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
     + [Universal Editor Developer Overview](/help/implementing/universal-editor/developer-overview.md)
     + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
-    + [Field Types](/help/implementing/universal-editor/field-types.md)
+    + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
     + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
     + [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md)
     + [Universal Editor Calls](/help/implementing/universal-editor/calls.md)

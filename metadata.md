@@ -7,6 +7,7 @@ type: Documentation
 solution: Experience Manager
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 cloud: Experience Cloud
+recommendations: noDisplay
 ---
 
 # Metadata for internal use
