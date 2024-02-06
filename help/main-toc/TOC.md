@@ -760,11 +760,12 @@ user-guide-title: AEM as a Cloud Service
 + Edge Delivery Services {#edge-delivery}
   + [AEM and Edge Delivery Services](/help/edge/overview.md)
   + [Using Edge Delivery](/help/edge/using.md)
+  + [Developer Getting Started Guide](/help/edge/edge-dev-getting-started.md)
   + [Authoring Content for Edge Delivery](/help/edge/authoring.md)
   + [Publishing Content for Edge Delivery](/help/edge/publishing.md)
   + [Developing for Edge Delivery](/help/edge/developing.md)
+  + [Content Modeling](/help/edge/content-modeling.md)
   + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
-  + [Developer Getting Started Guide](/help/edge/edge-dev-getting-started.md)
   + Building Edge Delivery Applications {#build}
     + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
     + [Anatomy of a Project](/help/edge/developer/anatomy-of-a-franklin-project.md)
