@@ -17,6 +17,10 @@ Learn about support for Content Fragments in the Assets HTTP API, an important p
 
 >[!NOTE]
 >
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
+
+>[!NOTE]
+>
 >The [Assets HTTP API](/help/assets/mac-api-assets.md) encompasses the:
 >
 >* Assets REST API
