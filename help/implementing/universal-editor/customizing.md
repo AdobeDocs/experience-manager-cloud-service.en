@@ -1,12 +1,12 @@
 ---
-title: Customizing the UI
-description: Learn about the different extension points that allow you to customize the UI of the Universal Editor to support the needs of your content authors.
+title: Customizing the Universal Editor Authoring Experience
+description: Learn about the different extension points and other features that allow you to customize the UI of the Universal Editor to support the needs of your content authors.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 ---
 
-# Customizing the UI {#customizing-ui}
+# Customizing the Universal Editor Authoring Experience {#customizing-ue}
 
-Learn about the different extension points that allow you to customize the UI of the Universal Editor to support the needs of your content authors.
+Learn about the different extension points and other features that allow you to customize the authoring experience of the Universal Editor to support the needs of your content authors.
 
 ## Disabling Publishing {#disable-publish}
 
