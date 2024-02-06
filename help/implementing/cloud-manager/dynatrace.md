@@ -39,9 +39,9 @@ The details required for connectivity requests are described below:
 1. Login to your Dynatrace environment.
 1. In the [!DNL Dynatrace] menu, go to [!DNL Manage] > [!DNL Access tokens].
 1. Select [!DNL Generate new token].
-1. Define a token name.
+1. Define a [!DNL token name].
  
-1. Optional: Set an expiration date. Please make sure to generate a new token before it expires.
+1. Optional: Set an [!DNL expiration date]. Please make sure to generate a new token before it expires.
 1. Set the [!DNL token scope] to [!DNL PaaS integration - Installer download]
 1. Select [!DNL Generate token].
 1. Copy the generated access token and store it in a secure place.
