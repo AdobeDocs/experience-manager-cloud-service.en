@@ -258,3 +258,276 @@ In the following example, a block accepts a list of linked icons as children, wh
 </div>
 ```
 
+### Creating Semantic Content Models for Blocks {#creating-content-models}
+
+With the [mechanics of block structure explained,](#block-structure) it is possible to create a content model that maps content persisted in AEM one-to-one to the delivery tier. 
+
+Early in every project, a content model must be carefully considered for every block. It must be agnostic to the content source and authoring experience in order to allow authors to switch or combine them while reusing block implementations and styles. More details about that as general guidance can be found in [David's Model (take 2).](https://www.aem.live/docs/davidsmodel) More specifically the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.
+
+For AEM authoring with Edge Delivery Services, this raises the question how we can serve a compelling semantic content model when the information is authored with forms composed of multiple fields instead of editing semantic markup in-context like rich text.
+
+To solve this problem, there are three methods that facilitate creating a compelling content model:
+
+* [Type Inference](#type-inference)
+* [Field Collapse](#field-collapse)
+* [Element Grouping](#element-grouping)
+
+>[!NOTE]
+>
+>Block implementations can deconstruct the content and replace the block with a client-side-rendered DOM. While this is possible and intuitive for a developer, it is not the best practice for Edge Deliver Services.
+
+#### Type Inference {#type-inference}
+
+For some values we can infer the semantic meaning from the values itself. Such values include:
+
+* **Images** - If a reference to a resource in AEM is an asset with a MIME type starting with `image/`,  the reference is rendered as `<picture><img src="${reference}"></picture>`.
+* **Links** - If a reference exists in AEM and is not an image, or if the value starts with `https?://`  or `#`,  the reference is rendered as `<a href="${reference}">${reference}</a>` .
+* **Rich Text** - If a trimmed value starts with a paragraph (`p`, `ul`, `ol`, `h1`-`h6`, etc.), the value is rendered as rich text.
+* **Class Names** - The `classes` property is treated as block options and rendered in the table header for [simple blocks,](#simple) or as value list for items in a [container block.](#container)
+* **Value Lists** - If a value is a multi-value property and the first value is none of the previous, all values are concatenated as comma-separated list.
+
+Everything else will be rendered as plain text.
+
+#### Field Collapse {#field-collapse}
+
+Field collapse is the mechanism to combine multiple field values into a single semantic element based on a naming convention using the suffixes `Title`, `Type`, `Alt`, and `Text` (all case sensitive). Any property ending with any of those suffixes will not be considered a value, but rather as an attribute of another property.
+
+##### Images {#image-collapse}
+
+###### Data {#data-image}
+
+```json
+{
+  "image": "/content/dam/red-car.png",
+  "imageAlt: "A red card on a road"
+}
+```
+
+###### Markup {#markup-image}
+
+```html
+<picture>
+  <img src="/content/dam/red-car.png" alt="A red car on a road">
+</picture>
+```
+
+##### Links &amp; Buttons {#links-buttons-collapse}
+
+###### Data {#data-links-buttons}
+
+```json
+{
+  "link": "https://www.adobe.com",
+  "linkTitle": "Navigate to adobe.com",
+  "linkText": "adobe.com",
+  "linkType": "primary"
+}
+```
+
+###### Markup {#markup-links-buttons}
+
+No `linkType`, or `linkType=default`
+
+```html
+<a href="https://www.adobe.com" title="Navigate to adobe.com">adobe.com</a>
+```
+
+`linkType=primary`
+
+```html
+<strong>
+  <a href="https://www.adobe.com" title="Navigate to adobe.com">adobe.com</a>
+</strong>
+```
+
+`linkType=secondary`
+
+```html
+<em>
+  <a href="https://www.adobe.com" title="Navigate to adobe.com">adobe.com</a>
+</em>
+```
+
+##### Headings {#headings-collapse}
+
+###### Data {#data-headings}
+
+```json
+{
+  "heading": "Getting started",
+  "headingType": "h2"
+}
+```
+
+###### Markup {#markup-headings}
+
+```html
+<h2>Getting started</h2>
+```
+
+#### Element Grouping {#element-grouping}
+
+While [field collapse](#field-collapse) is about combining multiple properties into a single semantic element, element grouping is about concatenating multiple semantic elements into a single cell. This is particularly helpful for use cases where the author should be restricted in the type and number of elements that they can create.
+
+For example, the author should only create a subtitle, title, and a single paragraph description combined with a maximum of two call-to-action buttons. Grouping these elements together yields a semantic markup that can be styled without further action.
+
+##### Data {#data-grouping}
+
+```json
+{
+  "name": "teaser",
+  "model": "teaser",
+  "image": "/content/dam/teaser-background.png",
+  "imageAlt": "A group of people sitting on a stage",
+  "teaserText_subtitle": "Adobe Experience Cloud"
+  "teaserText_title": "Meet the Experts"
+  "teaserText_titleType": "h2"
+  "teaserText_description": "<p>Join us in this ask me everything session...</p>"
+  "teaserText_cta1": "https://link.to/more-details",
+  "teaserText_cta1Text": "More Details"
+  "teaserText_cta2": "https://link.to/sign-up",
+  "teaserText_cta2Text": "RSVP",
+  "teaserText_cta2Type": "primary"
+}
+```
+
+##### Markup {#markup-grouping}
+
+```html
+<div class="teaser">
+  <div>
+    <div>
+      <picture>
+        <img src="/content/dam/teaser-background.png" alt="A group of people sitting on a stage">
+      </picture>
+    </div>
+  </div>
+  <div>
+    <div>
+      <p>Adobe Experience Cloud</p>
+      <h2>Meet the Experts</h2>
+      <p>Join us in this ask me everything session ...</p>
+      <p><a href="https://link.to/more-details">More Details</a></p>
+      <p><strong><a href="https://link.to/sign-up">RSVP</a></strong></p>
+    </div>
+  </div>
+</div>
+```
+
+## Sections and Section Metadata {#sections-metadata}
+
+The same way a developer can define and model multiple [blocks,](#blocks) they can define different sections.
+
+The content model of Edge Delivery Services deliberately allows only a single level of nesting, which is any default content or block contained by a section. This means in order to have more complex visual components that can contain other components, they have to be modelled as sections and combined together using auto-blocking client side. Typical examples of this are tabs and collapsible sections like accordions.
+
+A section can be defined in the same way as a block, but with the resource type of `core/franklin/components/block/v1/block`. They can have a name and a [filter ID](/help/implementing/universal-editor/customizing.md#filtering-components) which are used by the [Universal Editor](/help/implementing/universal-editor/introduction.md) only, as well as a [model ID,](/help/implementing/universal-editor/field-types.md#model-structure) which is used to render the section metadata. The model is in this way the model of the section metadata block, which will automatically be appended to a section as key-value block if it is not empty.
+
+The model ID and filter ID of the default section is `section`. It can be used to alter the behavior of the default section. The following example adds some styles and and a background image to the section metadata model.
+
+```json
+{
+  "id": "section",
+  "fields": [
+    {
+      "component": "multiselect",
+      "name": "style",
+      "value": "",
+      "label": "Style",
+      "valueType": "string",
+      "options": [
+        {
+          "name": "Fade in Background",
+          "value": "fade-in"
+        },
+        {
+          "name": "Highlight",
+          "value": "highlight"
+        }
+      ]
+    },
+    {
+      "component": "reference",
+      "valueType": "string",
+      "name": "background",
+      "label": "Image",
+      "multi": false
+    }
+  ]
+}
+```
+
+The following example defines a tab section, which can be used to create a tabs block by combining consecutive sections with a tab title data attribute into a tabs block during auto-blocking.
+
+```json
+{
+  "title": "Tab",
+  "id": "tab",
+  "plugins": {
+    "xwalk": {
+      "page": {
+        "resourceType": "core/franklin/components/section/v1/section",
+        "template": {
+          "name": "Tab",
+          "model": "tab",
+          "filter": "section"
+        }
+      }
+    }
+  }
+}
+```
+
+## Page Metadata {#page-metadata}
+
+Documents can have a page [metadata block,](/help/edge/authoring.md#metadata--seo) which is used to define which `<meta>` elements are rendered in the `<head>` of a page. The page properties of pages in AEM as a Cloud Service map to those that are available out-of-the-box for Edge Delivery Services, like `title`, `description`, `keywords`, etc.
+
+Before further exploring how to define your own metadata, please review the following documents to understand the concept of page metadata first.
+
+* [Metadata](https://www.aem.live/developer/block-collection/metadata)
+* [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
+
+It is also possible to define additional page metadata in two ways.
+
+### Metadata Spreadsheets {#metadata-spreadsheets}
+
+It is possible to define metadata on a per path or per path pattern basis in a table-like way in AEM as a Cloud Service. There is an authoring UI for table-like data available that is similar to Excel or Google Sheets.
+
+To create such table, create a page and use the Metadata template in the Sites console.
+
+>[!NOTE]
+>
+>When editing the metadata spreadsheet, make sure to switch to **Preview** mode since authoring occurs on the page itself, not within the editor.
+
+In the spreadsheet's page properties, define the metadata fields you need along with the URL. Then add metadata per page path or page path pattern, where the URL field relates to the mapped, public paths and not the content path in AEM.
+
+Make sure spreadsheet is added to your path mapping as well before you publishing it.
+
+```text
+mappings:
+  - /content/site/:/
+  - /content/site/metadata:/metadata.json
+```
+
+### Page Properties {#page-properties}
+
+It is also possible to define a component model for page metadata, which will be made available to the author as a tab of the AEM Sites page properties dialog.
+
+To do so, create a component model with the ID `page-metadata`.
+
+```json
+{
+  "id": "page-metadata",
+  "fields": [
+    {
+      "component": "text-input",
+      "name": "theme",
+      "label": "Theme"
+    }
+  ]
+}
+```
+
+There are a few field names that have a special meaning and will be skipped when serving the authoring dialog UI:
+
+* **`cq:tags`** - By default, `cq:tags` are not added to the metadata. Adding them to the `page-metadata` model will add the tag IDs as a comma-separated list as a `tags` meta tag to the head.
+* **`cq:lastModified`** - `cq:lastModified` will add its data as `last-modified` to the head.
