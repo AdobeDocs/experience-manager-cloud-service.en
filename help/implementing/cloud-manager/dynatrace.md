@@ -21,13 +21,13 @@ The details required for connectivity requests are described below:
 
 | **Field**  | **Description**  |
 |---|---|
-| Dynatrace Environment URL  | Your Dynatrace environment URL.<br><br>For Dynatrace SaaS customers, the format is `https://<your-environment-id>.live.dynatrace.com`.<br><br>For Dynatrace Managed customers, the format is `https://<your-managed-url>/e/<environmentId>`  |
-| Dynatrace Environment ID  | Your Dynatrace environment ID. Please see [Get Dynatrace environment information](#get-dynatrace-env-info) for how to get this. |
-| Dynatrace Environment Token  | Your Dynatrace environment token. Please see [Get Dynatrace environment information](#get-dynatrace-env-info) for how to get this.<br><br>This should be considered a secret, so use appropriate security practices. For example, password protect it in a website such as **zerobin.net**, which the customer support ticket can reference, along with the password.  |
-| Dynatrace API access token  | The API access token of your Dynatrace environment.  Please see [Create a Dynatrace API access token](#create-dynatrace-access-token) for how to create this.<br><br>This should be considered a secret so use appropriate security practices. For example, password protect it in a website such as **zerobin.net**, which the customer support ticket can reference, along with the password.<br><br>Note: This is only required for Dynatrace Managed.  |
-| Dynatrace ActiveGate Port | Your Dynatrace ActiveGate port that the AEM integration should connect to.<br><br>Note: This is only required for Dynatrace Managed.  |
-| Dynatrace ActiveGate Network Zone | Your [Dynatrace ActiveGate network zone](https://docs.dynatrace.com/docs/manage/network-zones) to route AEM monitoring data efficiently across data centers and network regions.<br><br>Note: A Dynatrace ActiveGate network zone is optional.  |
-| AEM Environment ID(s)  | The AEM environment ID(s) for Dynatrace to monitor. |
+| [!DNL Dynatrace Environment URL]  | Your Dynatrace environment URL.<br><br>For Dynatrace SaaS customers, the format is `https://<your-environment-id>.live.dynatrace.com`.<br><br>For Dynatrace Managed customers, the format is `https://<your-managed-url>/e/<environmentId>`  |
+| [!DNL Dynatrace Environment ID]  | Your Dynatrace environment ID. Please see [Get Dynatrace environment information](#get-dynatrace-env-info) for how to get this. |
+| [!DNL Dynatrace Environment Token]  | Your Dynatrace environment token. Please see [Get Dynatrace environment information](#get-dynatrace-env-info) for how to get this.<br><br>This should be considered a secret, so use appropriate security practices. For example, password protect it in a website such as **zerobin.net**, which the customer support ticket can reference, along with the password.  |
+| [!DNL Dynatrace API access token]  | The API access token of your Dynatrace environment.  Please see [Create a Dynatrace API access token](#create-dynatrace-access-token) for how to create this.<br><br>This should be considered a secret so use appropriate security practices. For example, password protect it in a website such as **zerobin.net**, which the customer support ticket can reference, along with the password.<br><br>Note: This is only required for Dynatrace Managed.  |
+| [!DNL Dynatrace ActiveGate Port] | Your Dynatrace ActiveGate port that the AEM integration should connect to.<br><br>Note: This is only required for Dynatrace Managed.  |
+| [!DNL Dynatrace ActiveGate Network Zone] | Your [Dynatrace ActiveGate network zone](https://docs.dynatrace.com/docs/manage/network-zones) to route AEM monitoring data efficiently across data centers and network regions.<br><br>Note: A Dynatrace ActiveGate network zone is optional.  |
+| [!DNL AEM Environment ID(s)]  | The AEM environment ID(s) for Dynatrace to monitor. |
 
 >[!NOTE]
 >
@@ -37,13 +37,13 @@ The details required for connectivity requests are described below:
 ## Create a Dynatrace API access token {#create-dynatrace-access-token}
 
 1. Login to your Dynatrace environment.
-1. In the Dynatrace menu, go to Manage > Access tokens.
-1. Select Generate new token.
+1. In the [!DNL Dynatrace] menu, go to [!DNL Manage] > [!DNL Access tokens].
+1. Select [!DNL Generate new token].
 1. Define a token name.
  
 1. Optional: Set an expiration date. Please make sure to generate a new token before it expires.
-1. Set the token scope to PaaS integration - Installer download
-1. Select Generate token.
+1. Set the [!DNL token scope] to [!DNL PaaS integration - Installer download]
+1. Select [!DNL Generate token].
 1. Copy the generated access token and store it in a secure place.
 
 
