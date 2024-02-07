@@ -17,6 +17,7 @@ For example, using Workfront Fusion, you can create a scenario to gather data wi
 
 AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
 
+
 ## Advantages of using Adobe Workfront Fusion{#advatages-of-workfront-fusion}
 
 Some of the advantages of using Adobe Workfront Fusion with AEM Forms:
