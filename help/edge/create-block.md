@@ -22,11 +22,21 @@ This guide necessarily requires existing knowledge of AEM authoring with Edge De
 
 This guide builds on the work done in the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) guide.
 
-## Add a New Block to Your Project {#add-block}
+## Adding a New Block to Your Project {#add-block}
 
 You will build a block to render a memorable quote on your page.
 
 To simplify this example, all changes are made to the `main` branch of the project repository. Of course for your actual project, [you should follow development best practices](https://www.aem.live/docs/dev-collab-and-good-practices) by developing on a different branch and reviewing all changes via pull request before merging to `main`.
+
+Adobe recommends that you develop blocks in a three-phased approach:
+
+1. Create the definition and model for the block, review it, and bring it to production.
+1. Create content with the new block.
+1. Implement the decoration and styles for the new block.
+
+The following quote block example follows this approach.
+
+### Create Block Definition and Model {#create-block-model}
 
 1. Clone the GitHub project locally that you created in the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) guide and open it in an editor of your choice.
 
@@ -58,7 +68,7 @@ To simplify this example, all changes are made to the `main` branch of the proje
 
    ![Editing the component-definitions.json file to define the quote block](assets/create-block/component-definitions.png)
 
-1. Edit the `component-models.json`file at the root of the project and add the following model definition for your new quote block and save the file.
+1. Edit the `component-models.json`file at the root of the project and add the following [model definition](/help/implementing/universal-editor/field-types.md#model-structure) for your new quote block and save the file.
 
    ```json
    {
@@ -84,7 +94,7 @@ To simplify this example, all changes are made to the `main` branch of the proje
 
    ![Editing the component-models.json file to define the model of the quote block](assets/create-block/component-models.png)
 
-1. Edit the `component-filters.json` file at the root of the project and add the quote block to the filter definition and save the file.
+1. Edit the `component-filters.json` file at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/customizing.md#filtering-components) and save the file.
 
    ```json
    {
@@ -106,13 +116,13 @@ To simplify this example, all changes are made to the `main` branch of the proje
 
 1. Using git, commit these changes to your `main` branch.
 
-   * Committing to `main` is for illustrative purposes only. [Follow best practices](https://www.aem.live/docs/dev-collab-and-good-practices) and use a PR for actual project work.
+   * Committing to `main` is for illustrative purposes only. [Follow best practices](https://www.aem.live/docs/dev-collab-and-good-practices) and use a pull request for actual project work.
 
-## Add Block to Your Page {#add-block}
+### Create Content with the Block {#create-content}
 
 Now that your basic quote block is defined and committed to the sample project, you can add a quote block to an existing page.
 
-1. In a browser, sign into AEM as a Cloud Service. Using the Sites console, navigate to the site that you created in the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) guide and select a page.
+1. In a browser, sign into AEM as a Cloud Service. [Using the Sites console,](/help/sites-cloud/authoring/getting-started/basic-handling.md) navigate to the site that you created in the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) guide and select a page.
 
    * In this case, `index` is used for illustrative purposes.
 
@@ -143,7 +153,7 @@ Now that your basic quote block is defined and committed to the sample project, 
 
    ![The published quote](assets/create-block/quote-published.png)
 
-## Style the Block {#style-block}
+### Style the Block {#style-block}
 
 Now that we have a working quote block we can apply styling to it.
 
@@ -207,21 +217,19 @@ Now that we have a working quote block we can apply styling to it.
 
 1. Using git, commit these changes to your `main` branch.
 
-   * Committing to `main` is for illustrative purposes only. [Follow best practices](https://www.aem.live/docs/dev-collab-and-good-practices) and use a PR for actual project work.
+   * Committing to `main` is for illustrative purposes only. [Follow best practices](https://www.aem.live/docs/dev-collab-and-good-practices) and use a pull request for actual project work.
 
-## Viewing Your Styled Block {#styled-block}
+1. Return to your browser tab of the Universal Editor where you were editing the page of your project and reload the page to view your styled block.
 
-Your quote block is complete! Now you can view it fully styled.
-
-1. Return to your browser tab of the Universal Editor where you were editing the page of your project and reload the page.
-
-1. See the now styled quote block on the page and tap or click the **Publish** button on the Universal Editor toolbar to publish.
+1. See the now styled quote block on the page.
 
    ![The styled quote block in the Universal Editor](assets/create-block/quote-styled.png)
 
 1. Verify that the changes were pushed to production by navigating to the published page. The link will be similar to `https://<branch>--<repo>--<owner>.hlx.page`
 
    ![The published and styled quote block](assets/create-block/quote-styled-published.png)
+
+Congratulations! You now have a fully working and styled quote block. You can use this example as a basis for designing your own project-specific blocks.
 
 ## Using Other Working Branches {#other-branches}
 
@@ -230,8 +238,3 @@ This guide had you commit directly to the `main` branch for simplicity's sake. F
 When you are not developing on the `main` branch, you can append `?ref=<branch>` in the Universal Editor location bar to load the page from your branch. `<branch>` is the branch name as it would be used for your project's preview or live URLs, e.g. `https://<branch>--<repo>--<owner>.hlx.page`.
 
 Be aware that publishing content with a new model is currently only supported when the model is merged to the `main` branch.
-
-Adobe recommends that you develop blocks in a two-phased approach as illustrated in the previous example:
-
-1. Create the definition and model, review it, and bring it to production.
-1. Create content, preview it, and implement the decoration and styles.
