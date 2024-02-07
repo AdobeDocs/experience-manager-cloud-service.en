@@ -106,7 +106,7 @@ For each block, the developer:
 * Can define a [model ID.](/help/implementing/universal-editor/field-types.md#model-structure)
 * Can define a [filter ID.](/help/implementing/universal-editor/customizing.md#filtering-components)
 
-All this information is stored in AEM when a block added to a page.
+All this information is stored in AEM when a block is added to a page.
 
 >[!WARNING]
 >
@@ -209,7 +209,7 @@ In the following example, a block accepts a list of linked icons as children, wh
 {
   "name": "Our Partners",
   "model": "text-only",
-  "filter:" "our-partners",
+  "filter": "our-partners",
   "text": "<p>Our community of partners is ...</p>",
   "item_0": {
     "model": "linked-icon",
@@ -274,7 +274,7 @@ To solve this problem, there are three methods that facilitate creating a compel
 
 >[!NOTE]
 >
->Block implementations can deconstruct the content and replace the block with a client-side-rendered DOM. While this is possible and intuitive for a developer, it is not the best practice for Edge Deliver Services.
+>Block implementations can deconstruct the content and replace the block with a client-side-rendered DOM. While this is possible and intuitive for a developer, it is not the best practice for Edge Delivery Services.
 
 #### Type Inference {#type-inference}
 
@@ -420,7 +420,7 @@ The same way a developer can define and model multiple [blocks,](#blocks) they c
 
 The content model of Edge Delivery Services deliberately allows only a single level of nesting, which is any default content or block contained by a section. This means in order to have more complex visual components that can contain other components, they have to be modelled as sections and combined together using auto-blocking client side. Typical examples of this are tabs and collapsible sections like accordions.
 
-A section can be defined in the same way as a block, but with the resource type of `core/franklin/components/block/v1/block`. Sections can have a name and a [filter ID,](/help/implementing/universal-editor/customizing.md#filtering-components) which are used by the [Universal Editor](/help/implementing/universal-editor/introduction.md) only, as well as a [model ID,](/help/implementing/universal-editor/field-types.md#model-structure) which is used to render the section metadata. The model is in this way the model of the section metadata block, which will automatically be appended to a section as key-value block if it is not empty.
+A section can be defined in the same way as a block, but with the resource type of `core/franklin/components/section/v1/section`. Sections can have a name and a [filter ID,](/help/implementing/universal-editor/customizing.md#filtering-components) which are used by the [Universal Editor](/help/implementing/universal-editor/introduction.md) only, as well as a [model ID,](/help/implementing/universal-editor/field-types.md#model-structure) which is used to render the section metadata. The model is in this way the model of the section metadata block, which will automatically be appended to a section as key-value block if it is not empty.
 
 The [model ID](/help/implementing/universal-editor/field-types.md#model-structure) and [filter ID](/help/implementing/universal-editor/customizing.md#filtering-components) of the default section is `section`. It can be used to alter the behavior of the default section. The following example adds some styles and and a background image to the section metadata model.
 
