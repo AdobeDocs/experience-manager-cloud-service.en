@@ -75,7 +75,7 @@ A field object has the following type definition.
 |`required`|`boolean`|Is the field required|No|
 |`readOnly`|`boolean`|Is the field read only|No|
 |`hidden`|`boolean`|Is the field hidden by default|No|
-|`condition`|`RulesLogic`|Rule to show or hide the field|No|
+|`condition`|`RulesLogic`|Rule to show or hide the field based on a [condition](/help/implementing/universal-editor/customizing.md#conditionally-hide)|No|
 |`multi`|`boolean`|Is the field a multi field|No|
 |`validation`|`ValidationType`|Validation rule or rules for the field|No|
 |`raw`|`unknown`|Raw data which can be used by the component|No|
