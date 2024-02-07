@@ -374,7 +374,7 @@ The default OSGi configuration for publish instances:
 
 By default the `PersistedQueryServlet` sends a `200` response when it executes a query, regardless of the actual result.
 
-You can [configure the OSGi settings](/help/implementing/deploying/configuring-osgi.md) for the **Persisted Query Service Configuration** to control which status code is returned by the `/execute.json/persisted-query` endpoint, when there is an error in the persisted query.
+You can [configure the OSGi settings](/help/implementing/deploying/configuring-osgi.md) for the **Persisted Query Service Configuration** to control whether more detailed status codes are returned by the `/execute.json/persisted-query` endpoint, when there is an error in the persisted query.
 
 >[!NOTE]
 >
@@ -383,26 +383,21 @@ You can [configure the OSGi settings](/help/implementing/deploying/configuring-o
 The field `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) can be defined as required:
 
 * `false` (default value):
-  It does not matter whether the persisted query is successful or not. The `/execute.json/persisted-query` returns the status code `200` and the `Content-Type` header returned is `application/json`.
+  It does not matter whether the persisted query is successful or not. The `Content-Type` header returned is `application/json`, and the `/execute.json/persisted-query` *always* returns the status code `200`.
 
 * `true`:
-  The endpoint will return the appropriate [response code](#response-codes-for-persisted-queries) when there is any form of error upon running the persisted query. 
-  Also, the returned `Content-Type` is `application/graphql-response+json`.
+  The returned `Content-Type` is `application/graphql-response+json`, and the endpoint will return the appropriate response code when there is any form of error upon running the persisted query: 
+
+  | Code | Message | Description |
+  |--- |--- |--- |
+  | 200 | | Successful response |
+  | 400 | | There are issues with the persisted query URL.<br>For example:<br>- a configuration name is not specified<br>- the configuration name contains `/`<br>- the suffix is not specified for the persisted query<br>- etc. |
+  | 404 | | The Graphql endpoint is not defined. |
+  | 500 | | |
 
   >[!NOTE]
   >
-  >See https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
-
-### Response codes for Persisted Queries {#response-codes-for-persisted-queries}
-
-When [the OSGi **Persisted Query Service Configuration** is configured](#configuring-query-response-code), the appropriate response code will be returned:
-
-| Code | Message | Description |
-|--- |--- |--- |
-| 200 | | Successful response |
-| 400 | | There are issues with the persisted query URL.<br>For example:<br>- a configuration name is not specified<br>- configuration name contains `/`<br>- the suffix is not specified for the persisted query<br>- etc. |
-| 404 | | The graphql endpoint is not defined. |
-| 500 | | |
+  >See also https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 
