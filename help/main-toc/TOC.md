@@ -836,7 +836,7 @@ user-guide-title: AEM as a Cloud Service
     + [Updating your Content Fragments for optimized GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
     + [Sample GraphQL queries](/help/headless/graphql-api/sample-queries.md)
     + [Troubleshoot GraphQL queries](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-  + [Content Fragments OpenAPIs](/help/headless/content-fragment-openapis.md)
+  + [Content Fragments and Models OpenAPIs](/help/headless/content-fragment-openapis.md)
   + [Content Fragments support in Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
   + Security {#security}
     + [Permissions](/help/headless/security/permissions.md)
