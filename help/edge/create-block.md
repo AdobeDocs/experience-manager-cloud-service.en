@@ -1,17 +1,17 @@
 ---
 title: Creating Blocks Instrumented for use with the Universal Editor
-description: Learn how to create new blocks instrumented for use with the Universal Editor in AEM authoring with Edge Delivery Services projects.
+description: Learn how to create blocks instrumented for use with the Universal Editor in AEM authoring with Edge Delivery Services projects.
 ---
 
 # Creating Blocks Instrumented for use with the Universal Editor {#create-block}
 
-Learn how to create new blocks instrumented for use with the Universal Editor in AEM authoring with Edge Delivery Services projects.
+Learn how to create blocks instrumented for use with the Universal Editor in AEM authoring with Edge Delivery Services projects.
 
 {{aem-authoring-edge-early-access}}
 
 ## Prerequisites {#prerequisites}
 
-This guide provides step-by-step instructions for how to create new blocks instrumented for the Universal Editor in AEM authoring with Edge Delivery Services projects. It covers adding components, loading component definitions in the Universal Editor, publishing pages, implementing block decoration and styles, bringing the changes to production, and verifying them. Upon completing this guide you can create and deploy a new block for your own project.
+This guide provides step-by-step instructions for how to create blocks instrumented for the Universal Editor in AEM authoring with Edge Delivery Services projects. It covers adding components, loading component definitions in the Universal Editor, publishing pages, implementing block decoration and styles, bringing the changes to production, and verifying them. Upon completing this guide, you can create and deploy a new block for your own project.
 
 This guide necessarily requires existing knowledge of AEM authoring with Edge Delivery Services projects as well as the Universal Editor. Before beginning this guide, you should already have access to Edge Delivery Services and be familiar with its basics including:
 
@@ -24,7 +24,7 @@ This guide builds on the work done in the [Developer Getting Started Guide for A
 
 ## Adding a New Block to Your Project {#add-block}
 
-You will build a block to render a memorable quote on your page.
+In this guide, you will build a block to render a memorable quote on your page.
 
 To simplify this example, all changes are made to the `main` branch of the project repository. Of course for your actual project, [you should follow development best practices](https://www.aem.live/docs/dev-collab-and-good-practices) by developing on a different branch and reviewing all changes via pull request before merging to `main`.
 
@@ -128,14 +128,14 @@ Now that your basic quote block is defined and committed to the sample project, 
 
    ![Selecting the index page in the Sites console](assets/create-block/sites-console.png)
 
-1. Tap or click **Edit** in the toolbar of the console and the Universal Editor will open.
+1. Tap or click **Edit** in the toolbar of the console and the Universal Editor opens.
 
    * In order to load the page, you may need to tap or click **Sign in with Adobe** to authenticate to AEM in the Universal Editor.
 
 1. In the Universal Editor, select a section. In the properties rail, tap or click the **Add** icon and then select your new **Quote** block from the menu.
 
    * The **Add** icon is a plus symbol.
-   * You know that you have selected a section if the blue outline of the selected object has a tab labelled **Section**.
+   * You know that you have selected a section if the blue outline of the selected object has a tab labeled **Section**.
    * In this example, tapping or clicking slightly above the **Lorem Ipsum** heading selects a section containing the heading and lorem ipsum text.
 
    ![Select a section in the Universal Editor](assets/create-block/add-quote-block.png)
@@ -143,7 +143,7 @@ Now that your basic quote block is defined and committed to the sample project, 
 1. The page is reloaded and the quote block is added to the bottom of the selected section with the default content specified in the `component-definitions.json` file.
 
    * The quote block can be selected and edited as any other block either in-place or in the properties rail.
-   * Styling will be applied in a further step.
+   * Styling is be applied in a further step.
 
    ![The page with the new quote block in the selected section](assets/create-block/quote-added.png)
 
@@ -155,7 +155,7 @@ Now that your basic quote block is defined and committed to the sample project, 
 
 ### Style the Block {#style-block}
 
-Now that we have a working quote block we can apply styling to it.
+Now that you have a working quote block you can apply styling to it.
 
 1. Return to the editor for your project.
 
@@ -233,8 +233,8 @@ Congratulations! You now have a fully working and styled quote block. You can us
 
 ## Using Other Working Branches {#other-branches}
 
-This guide had you commit directly to the `main` branch for simplicity's sake. For experimentation in a sample repository, this is usually not an issue. For actual project work [you should follow development best practices](https://www.aem.live/docs/dev-collab-and-good-practices) by developing on a different branch and reviewing all changes via pull request before merging to `main`.
+This guide had you commit directly to the `main` branch for simplicity's sake. For experimentation in a sample repository, this is usually not an issue. For actual project work, [you should follow development best practices](https://www.aem.live/docs/dev-collab-and-good-practices) by developing on a different branch and reviewing all changes via pull request before merging to `main`.
 
 When you are not developing on the `main` branch, you can append `?ref=<branch>` in the Universal Editor location bar to load the page from your branch. `<branch>` is the branch name as it would be used for your project's preview or live URLs, e.g. `https://<branch>--<repo>--<owner>.hlx.page`.
 
-Be aware that publishing content with a new model is currently only supported when the model is merged to the `main` branch.
+Publishing content with a new model is only supported when the model is merged to the `main` branch.
