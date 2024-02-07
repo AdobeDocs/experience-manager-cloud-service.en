@@ -15,7 +15,7 @@ The release date for the latest version 1.9.17 of [!DNL Workfront for Experience
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fixes:
 
-* Enable toggle feature to allow AEM Cloud customers to configure and set up a connector.
+* Enable toggle feature to allow AEM Cloud customers to configure and set up a connector
 
 * Closing the `resourceResolver` without explicitly closing the underlying session causes session leaks in AEM instances. It is crucial to explicitely close the session, as auto-closing the Resource Resolver does not implicitly close the session.
 
