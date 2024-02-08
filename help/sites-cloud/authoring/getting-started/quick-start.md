@@ -1,10 +1,41 @@
 ---
 title: Quick Start Guide to Authoring Pages
-description: A quick, high-level guide to get you started authoring page content
+description: Start here for a quick, high-level guide to get you started authoring page content using the Sites console.
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 ---
 
 # Quick Start Guide to Authoring Pages {#quick-guide-to-authoring-pages}
+
+Start here for a quick, high-level guide to get you started authoring page content using the **Sites** console.
+
+## It all starts in the Sites console. {#sites-console}
+
+Whether you want to create new content or view and manage your existing content, the central overview for you is the **Sites** console.
+
+When you first sign in to AEM, you arrive at the Global Navigation screen. Simply tap or click **Sites** to open the **Sites** console.
+
+![Global Navigation](assets/getting-started-global-navigation.png)
+
+To access the Global Navigation from any other location in AEM, tap or click the **Adobe Experience Manager** link at the top-left of any AEM screen, which opens a drop-down overlay of the Global Navigation.
+
+Once in the Sites console, your content is simple to navigate, presented in a column view.
+
+![Column view of the Sites console]()
+
+## Views {#views}
+
+## Navigating Content {#navigating}
+
+## Searching Content {#search}
+
+## Creating Content {#create}
+
+## Edit Content {#edit}
+
+## Organizing Content {#organize}
+
+## Additional Resources {#additional-resources}
+
 
 This document is intended as a high-level quick start guide for the key page authoring actions in AEM. This document:
 
