@@ -13,13 +13,15 @@ The Multi Site Manager (MSM) enables you to use the same content in multiple loc
   * When you change the source content, the source and Live Copies are synchronized.
   * You can make adjustments only to the content of the Live Copies by disconnecting the live relationship for individual sub pages and/or components.
 
+For a detailed overview of MSM concepts see [Reusing Content: Multi Site Manager and Live Copy](/help/sites-cloud/administering/msm/overview.md)
+
 >[!NOTE]
 >
 >[Multi Site Manager (MSM)](/help/sites-cloud/administering/msm/overview.md) functionality in Adobe Experience Manager enables users to reuse content that is authored once and then reused across multiple web-locations. 
 >
 >[MSM for Assets](/help/assets/reuse-assets-using-msm.md) provides comparable functionality for Assets. 
 >
->As Content Fragments are a Sites feature, stored as Assets the functionality is also available for Content Fragments.
+>As Content Fragments are a Sites feature, stored as Assets, MSM functionality is also available for Content Fragments.
 
 Using MSM for Content Fragments you can:
 
@@ -35,13 +37,19 @@ MSM for Content Fragments is primarily based on MSM for Assets. combined with fu
 >
 >MSM functionality is *not* available when using the **Content Fragments** console.
 
-<!--updated first 3 links for MSM/Assets 
-The following details: 
+See the following documentation for details about the usage of MSM for Content Fragments (based on MSM for Assets):
 
-* [Creating and Synchronizing Live Copies](/help/sites-cloud/administering/msm/overview.md#creating-live-copies.md)
-* [Live Copy Overview Console](/help/sites-cloud/administering/msm/overview.md#live-copy-overview.md)
-* [Configuring Live Copy Synchronization](/help/sites-cloud/administering/msm/overview.md#live-copy-sync-config.md)
-* [MSM Rollout Conflicts](/help/sites-cloud/administering/msm/overview.md#rollout-conflicts.md)
-* [MSM Best Practices](/help/sites-cloud/administering/msm/overview.md#best-practices.md)
--->
+* How to use [MSM for Assets (and Content Fragments)](/help/assets/reuse-assets-using-msm.md) 
 
+* [Create a Live Copy](/help/assets/reuse-assets-using-msm.md)
+
+  >[!CAUTION]
+  >
+  >If you want to use MSM to create copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md).
+
+* [View properties and status of source and Live Copy](/help/assets/reuse-assets-using-msm.md#properties)
+* [Propagate modifications from source to Live Copy](/help/assets/reuse-assets-using-msm.md#rollout-sync)
+* Cancel, and reinstate, inheritance for fields and variations in the [Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+* [Suspend and resume the relationship](/help/assets/reuse-assets-using-msm.md#suspend-resume)
+* [Remove the live relationship](/help/assets/reuse-assets-using-msm.md#detach)
+* [Compare MSM for Assets and Sites](/help/assets/reuse-assets-using-msm.md#comparison)
