@@ -25,44 +25,42 @@ Billing APIs does not account for the number of pages, the length of a document 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
 >title="Form Submissions Tracker"
->abstract="Effortlessly track form submissions with a consolidated view for total counts or dive into instance-specific details. Use the intuitive bar graph to identify trends, compare instances, and make informed decisions at a glance."
+>abstract="Effortlessly monitor form submissions on your AEM Forms Publish instance with our intuitive tracking dashboard. The graph provides data specific to the current instance, allowing you to swiftly analyze trends and make informed decisions. For submissions data of other instances, simply access the dashboard of the respective instance."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_conversions_graph_en"
 >title="Form Conversions Tracker"
->abstract="Keep tabs on form conversions effortlessly through a summary of total counts or explore details for each AEM Forms instance. The easy-to-read bar graph helps spot trends, compare instances, and make quick, informed decisions."
+>abstract="Stay informed about form conversions with a summary of the total count of conversions. The graph provides data specific to the current AEM Forms Publish instance, allowing you to swiftly analyze trends and make informed decisions. To view conversion data of other instances, access the respective instance's dashboard."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="Average Duration for Form Generation"
->abstract="The graph illustrates the average time taken to create a form. Each bar on the graph represents a specific form and the height of the bar indicates the average duration taken for form creation during that time frame. Analyzing this graph helps users understand the efficiency and speed of form creation over different periods or within different contexts, allowing for insights into potential improvements."
+>abstract="The graph illustrates the average time taken to create a form. Each bar on the graph represents a specific form and the height of the bar indicates the average duration taken for form creation during that time frame. Analyzing this graph helps users understand the efficiency and speed of form creation over different periods or within different contexts, allowing for insights into potential improvements. The graph provides data specific to the current AEM Forms Author instance. To view data of other instances, access the respective instance's dashboard."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="Average Duration for Form Creation"
->abstract="The graph displays the average time taken to create and publish a form, measured from the initial day the form was opened for editing. Each bar corresponds to a specific time frame for a form, with the bar height indicating the average time taken from the start of form development to its finalization and publication."
+>abstract="The graph displays the average time taken to create and publish a form, measured from the initial day the form was opened for editing. Each bar corresponds to a specific time frame for a form, with the bar height indicating the average time taken from the start of form development to its finalization and publication. The graph provides data specific to the current AEM Forms Author instance. To view data of other instances, access the respective instance's dashboard."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="New Forms Tracker"
->abstract="The graph provides information on the number or frequency of newly created forms during specific time periods. Each bar on the graph represents a distinct unit of measurement, such as days, weeks, or months. The height of each bar indicates the quantity or frequency of new forms created during that particular interval."
+>abstract="The graph provides information on the number or frequency of newly created forms during specific time periods. Each bar on the graph represents a distinct unit of measurement, such as days, weeks, or months. The height of each bar indicates the quantity or frequency of new forms created during that particular interval. The graph provides data specific to the current AEM Forms Author instance. To view data of other instances, access the respective instance's dashboard."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="Published Forms Tracker"
->abstract="The graph provides information about the number or frequency of forms that have been successfully published during specific time periods. This allows you to understand the trends, patterns, or variations in the publication of forms over time, aiding in monitoring productivity, identifying peak publishing periods, or evaluating the success of changes in the form publication process."
+>abstract="The graph provides information about the number or frequency of forms that have been successfully published during specific time periods. This allows you to understand the trends, patterns, or variations in the publication of forms over time, aiding in monitoring productivity, identifying peak publishing periods, or evaluating the success of changes in the form publication process. The graph provides data specific to the current AEM Forms Publish instance. To view conversion data of other instances, access the respective instance's dashboard."
 
-<!-- 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
->title="Form Fragments Tracker"
->abstract="This graph helps you see how many form fragments people use in their forms. It gives you a sense of how popular or common these reusable parts are in form building."
+>title="Published Forms Tracker"
+>abstract="This graph helps you see how many form fragments people use in their forms. It gives you a sense of how popular or common these reusable parts are in form building. The graph provides data specific to the current AEM Forms Publish instance. To view conversion data of other instances, access the respective instance's dashboard."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
->title="Average Duration for Form Fragments Creation"
->abstract= "The graph displays the average time taken to create a form fragment, measured from the initial day the form fragment was opened for editing. Each bar corresponds to a specific time frame for a form fragment, with the bar height indicating the average time taken from the start of form fragment development to its finalization and publication."
-
+>title="Published Forms Tracker"
+>abstract="The graph displays the average time taken to create a form fragment, measured from the initial day the form fragment was opened for editing. Each bar corresponds to a specific time frame for a form fragment, with the bar height indicating the average time taken from the start of form fragment development to its finalization and publication. The graph provides data specific to the current AEM Forms Publish instance. To view conversion data of other instances, access the respective instance's dashboard."
 
 <!-- 
 
