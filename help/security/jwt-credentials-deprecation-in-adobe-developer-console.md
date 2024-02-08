@@ -24,7 +24,7 @@ AEM customers use the AEM Author UI to configure integrations with other Adobe s
 
 ![Integrating AEM with other solutions](/help/security/assets/jwt-deprecation.png)
 
-As an example, here are [the instructions](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html?lang=en#prerequisites) for configuring the integration with Adobe Target. The API key in the "Completing the IMS Configuration in AEM" section should be migrated to the OAuth Server-to-Server credential type, once with the new credential, once AEM supports OAuth Server-to-Server credentials.
+As an example, here are [the instructions](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html?lang=en#prerequisites) for configuring the integration with Adobe Target. The API key in the "Completing the IMS Configuration in AEM" section should be migrated to the OAuth Server-to-Server credential type, once AEM supports those credentials.
 
 ## Cloud Manager APIs {#cloud-manager-apis}
 
