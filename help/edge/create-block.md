@@ -68,7 +68,9 @@ The following quote block example follows this approach.
 
    ![Editing the component-definitions.json file to define the quote block](assets/create-block/component-definitions.png)
 
-1. Edit the `component-models.json`file at the root of the project and add the following [model definition](/help/implementing/universal-editor/field-types.md#model-structure) for your new quote block and save the file.
+1. Edit the `component-models.json` file at the root of the project and add the following [model definition](/help/implementing/universal-editor/field-types.md#model-structure) for your new quote block and save the file.
+
+   * Please see the document [Content Modeling for AEM authoring with Edge Delivery Services Projects](/help/edge/content-modeling.md) for more information about what is important to consider when creating content models.
 
    ```json
    {
@@ -94,7 +96,7 @@ The following quote block example follows this approach.
 
    ![Editing the component-models.json file to define the model of the quote block](assets/create-block/component-models.png)
 
-1. Edit the `component-filters.json` file at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/customizing.md#filtering-components) and save the file.
+1. Edit the `component-filters.json` file at the root of the project and add the quote block to the [filter definition](/help/implementing/universal-editor/customizing.md#filtering-components) to allow the block to be added to any section and save the file.
 
    ```json
    {
