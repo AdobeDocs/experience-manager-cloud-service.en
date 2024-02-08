@@ -11,7 +11,7 @@ This article provides some additional context for AEM as a Cloud Service and AEM
 
 AEM features do not currently support OAuth Server-to-Server credentials. Support will come by early April 2024 through an AEM release for AEM as a Cloud Service, and a small, dedicated Service Pack for AEM 6.5. You may have received an email instructing you to migrate your credentials, but rest assured that you can and should hold off on the migration until AEM supports the new credential type.
 
-The sections below list of the scenarios where customers must replace their Service Account (JWT) credentials with OAuth Server-to-Server credentials, once AEM supports them. [Read how](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) to replace the credentials.
+The sections below list of the scenarios where customers must (or must not) replace their Service Account (JWT) credentials with OAuth Server-to-Server credentials, **once AEM supports them**. [Read how](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) to replace the credentials.
 
 >[!NOTE]
 >
@@ -29,3 +29,10 @@ As an example, here are [the instructions](https://docs.mktossl.com/docs/experie
 ## Cloud Manager APIs {#cloud-manager-apis}
 
 Customers create Adobe Developer Console projects so they can invoke [Cloud Manager APIs](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). The credentials in the Adobe Developer project should be migrated to the OAuth Server-to-Server credential type, once AEM and Cloud Manager support it. 
+
+## Auto-generated projects {#autogen-projects}
+
+When Cloud Manager provisions AEM as a Cloud Service environments, it auto-generates an Adobe Developer Console project with JWT credentials. This project is marked as read-only, as illustrated in the screenshot below. Customers cannot and should not attempt to migrate these projects to OAuth Server-to-Server credentials; instead, Adobe will migrate these projects on its own, before the credentials are not usable.
+
+![Auto-generated projects](/help/security/assets/jwt-deprecation-autogen-projects.png)
+
