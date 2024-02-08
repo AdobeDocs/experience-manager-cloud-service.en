@@ -388,12 +388,12 @@ The field `Respond with application/graphql-response+json` (`responseContentType
 * `true`:
   The returned `Content-Type` is `application/graphql-response+json`, and the endpoint will return the appropriate response code when there is any form of error upon running the persisted query: 
 
-  | Code | Message | Description |
-  |--- |--- |--- |
-  | 200 | | Successful response |
-  | 400 | | There are issues with the persisted query URL.<br>For example:<br>- a configuration name is not specified<br>- the configuration name contains `/`<br>- the suffix is not specified for the persisted query<br>- etc. |
-  | 404 | | The Graphql endpoint is not defined. |
-  | 500 | | |
+  | Code | Description |
+  |--- |--- |
+  | 200 | Successful response |
+  | 400 | Indicates that there are missing headers, or an issue with the persisted query path. For example, configuration name not specified, suffix is not specified, and others.<br>See [Troubleshooting - GraphQL endpoint not configured](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
+  | 404 | The requested resource cannot be found. For example, the Graphql endpoint is not available on the server.<br>See [Troubleshooting - Missing path in the GraphQL persisted query URL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 500 | Internal server error. For example, validation errors, persistence error, and others. |
 
   >[!NOTE]
   >
