@@ -37,6 +37,8 @@ MSM for Content Fragments is primarily based on MSM for Assets. combined with fu
 >
 >MSM functionality is *not* available when using the **Content Fragments** console.
 
+## How To {#how-to}
+
 See the following documentation for details about the usage of MSM for Content Fragments (based on MSM for Assets):
 
 * How to use [MSM for Assets (and Content Fragments)](/help/assets/reuse-assets-using-msm.md) 
@@ -53,3 +55,7 @@ See the following documentation for details about the usage of MSM for Content F
 * [Suspend and resume the relationship](/help/assets/reuse-assets-using-msm.md#suspend-resume)
 * [Remove the live relationship](/help/assets/reuse-assets-using-msm.md#detach)
 * [Compare MSM for Assets and Sites](/help/assets/reuse-assets-using-msm.md#comparison)
+
+## Limitations {#limitations}
+
+* On-modify triggers, and the associated rollout configuration, does not exist for Content Fragments.
