@@ -170,6 +170,7 @@ user-guide-title: AEM as a Cloud Service
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
   + [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md)
   + [AEM as a Cloud Service Security Considerations](/help/security/security-considerations.md)
+  + [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Onboarding {#onboarding}
   + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
   + Onboarding Journey {#journey}
@@ -606,7 +607,7 @@ user-guide-title: AEM as a Cloud Service
         + [Create forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md)
         + [Configure Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)
         + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-        + [Submit an Adaptive Form to Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
+        + [Submit an Adaptive Form to Microsoft&reg; OneDrive](/help/forms/configure-submit-action-onedrive.md)
         + [Configure SharePoint Storage for an Adaptive Form](/help/forms/configure-submit-action-sharepoint.md)
         + [Integrate AEM Adaptive Form with AEM Workflow](/help/forms/configure-submit-action-workflow.md)
         + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
