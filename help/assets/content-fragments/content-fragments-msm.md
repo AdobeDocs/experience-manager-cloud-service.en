@@ -13,7 +13,7 @@ The Multi Site Manager (MSM) enables you to use the same content in multiple loc
   * When you change the source content, the source and Live Copies are synchronized.
   * You can make adjustments only to the content of the Live Copies by disconnecting the live relationship for individual sub pages and/or components.
 
-For a detailed overview of MSM concepts see [Reusing Content: Multi Site Manager and Live Copy](/help/sites-cloud/administering/msm/overview.md)
+For a detailed overview of MSM concepts see [Reusing Content: Multi Site Manager and Live Copy](/help/sites-cloud/administering/msm/overview.md).
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Using MSM for Content Fragments you can:
 * Keep multiple copies synchronized by updating the source copy once, then pushing the changes to the (live) copies.
 * Make local changes by temporarily, or permanently, suspending the link between parent and child fragments.
 
-MSM for Content Fragments is primarily based on MSM for Assets. combined with functionality within the Content Fragment Editor allowing you to break, and reinstate inheritance at the field level.
+MSM for Content Fragments is based on MSM for Assets. combined with functionality within the Content Fragment Editor, allowing you to break, and reinstate inheritance at the field level.
 
 >[!CAUTION]
 >
@@ -56,8 +56,8 @@ See the following documentation for details about the usage of MSM for Content F
   * [metadata of related assets](/help/assets/content-fragments/content-fragments-variations.md#canceling-reenabling-inheritance-individual-items)
 * [Suspend and resume the relationship](/help/assets/reuse-assets-using-msm.md#suspend-resume)
 * [Remove the live relationship](/help/assets/reuse-assets-using-msm.md#detach)
-* [Compare MSM for Assets (including Content Fragments) and Sites](/help/assets/reuse-assets-using-msm.md#comparison)
+* [Compare MSM for Assets (including Content Fragments) with MSM for Sites](/help/assets/reuse-assets-using-msm.md#comparison)
 
 ## Limitations {#limitations}
 
-* On-modify triggers, and the associated rollout configuration, does not exist for Content Fragments.
+* On-modify triggers, and the associated rollout configuration, do not exist for Content Fragments.
