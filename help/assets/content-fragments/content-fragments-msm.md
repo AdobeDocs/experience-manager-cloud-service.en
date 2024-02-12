@@ -51,10 +51,12 @@ See the following documentation for details about the usage of MSM for Content F
 
 * [View properties and status of source and Live Copy](/help/assets/reuse-assets-using-msm.md#properties)
 * [Propagate modifications from source to Live Copy](/help/assets/reuse-assets-using-msm.md#rollout-sync)
-* Cancel, and reinstate, inheritance for fields and variations in the [Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+* Cancel, and reinstate, inheritance for:
+  * fields and variations in the [Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+  * [metadata of related assets](/help/assets/content-fragments/content-fragments-variations.md#canceling-reenabling-inheritance-individual-items)
 * [Suspend and resume the relationship](/help/assets/reuse-assets-using-msm.md#suspend-resume)
 * [Remove the live relationship](/help/assets/reuse-assets-using-msm.md#detach)
-* [Compare MSM for Assets and Sites](/help/assets/reuse-assets-using-msm.md#comparison)
+* [Compare MSM for Assets (including Content Fragments) and Sites](/help/assets/reuse-assets-using-msm.md#comparison)
 
 ## Limitations {#limitations}
 
