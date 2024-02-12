@@ -20,13 +20,13 @@ To access the Global Navigation from any other location in AEM, tap or click the
 
 Once in the **Sites** console, your content is simple to navigate and is presented in a column view by default.
 
-![The Sites console](assets/sites-console.png)
+![The Sites console](assets/getting-started-sites-console.png)
 
 ## Views {#views}
 
 By default the **Sites** console opens in **Column** view. Each hierarchy level is displayed as a column, which lends itself well to web-based hierarchically-organized content.
 
-![Columns view](assets/column-view.png)
+![Columns view](assets/getting-started-column-view.png)
 
 Tap or click an entry in a column to either select it or open the next level down in the hierarchy. A selected item is indicated with a tick.
 
@@ -41,17 +41,17 @@ Use the view switcher at the top-left of the screen to switch between views. Thi
 
 **Column View** presents you content as a series of cascading columns. Selecting an item in the current column either shows its details in the next column to the right if it is a document, or it shows the contents of the next hierarchy level if it is a folder.
 
-![Columns view in detail](assets/column-detail.png)
+![Columns view in detail](assets/getting-started-column-detail.png)
 
 In this way, you can traverse up and down your content structure.
 
 To be able to quickly jump between levels, you can use the breadcrumbs at the top of the page.
 
-![Breadcrumbs](assets/breadcrumbs.png)
+![Breadcrumbs](assets/getting-started-breadcrumbs.png)
 
 At any time you can also use the search icon at the top-right of the screen to locate particular content.
 
-![Search](assets/search.png)
+![Search](assets/getting-started-search.png)
 
 Search appears as a drop-down overlay over the entire console. Enter your search terms to find your content.
 
@@ -69,7 +69,7 @@ Depending on what you select to create, the appropriate wizard will start to gui
 
 To edit a page, tap or click to select the page in the **Sites** console. Then in the toolbar that appears, tap or click the **Edit** icon.
 
-![Selecting content to edit](assets/edit.png)
+![Selecting content to edit](assets/getting-started-edit.png)
 
 This will open the page in the editor appropriate to the content.
 
@@ -79,13 +79,13 @@ If you wish to simply update the properties of a page such as tags or its name, 
 
 To move or copy a page, select the page in the console and then in the toolbar tap or click **Move** or **Copy**. This starts a wizard to guide you through the steps of moving or copying, defining the name and location of resulting page.
 
-![Move page wizard](assets/move-page.png)
+![Move page wizard](assets/getting-started-move-page.png)
 
 ## Publishing Content {#publishing}
 
 When you are finished making the changes that you wanted to your content by using the **Sites** console, you can publish the content. Select the content you want to publish and tap or click the **Quick Publish** icon in the toolbar.
 
-![Quick publish](assets/quick-publish.png)
+![Quick publish](assets/getting-started-quick-publish.png)
 
 Confirm the publication with another tap or click on **Publish** in the dialog.
 
