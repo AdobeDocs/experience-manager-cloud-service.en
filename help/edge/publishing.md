@@ -19,7 +19,7 @@ The flow of information when publishing is as follows. Once the author starts pu
 
 >[!NOTE]
 >
->Currenlty only publications triggered from the authoring UI or workflows are supported with up to 5000 publications per day. Any integrations that created bulk-publication work loads are not yet supported. 
+>Up to a maximum of 5000 paths published from the authoring UI or by workflows are permitted per day. Integrations that create bulk-publication work loads are not supported.
 
 ![The flow of information when publishing from AEM to Edge Delivery Services](assets/publishing-flow.png)
 
