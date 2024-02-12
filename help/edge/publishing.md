@@ -17,6 +17,10 @@ When using the Universal Editor to author AEM content, publishing is as simple a
 
 The flow of information when publishing is as follows. Once the author starts publication, this flow is automatic and is illustrated here for information purposes.
 
+>[!NOTE]
+>
+>Currenlty only publications triggered from the authoring UI or workflows are supported with up to 5000 publications per day. Any integrations that created bulk-publication work loads are not yet supported. 
+
 ![The flow of information when publishing from AEM to Edge Delivery Services](assets/publishing-flow.png)
 
 1. The content author publishes AEM content in the Universal Editor.
