@@ -205,7 +205,6 @@ You can schedule or stop an ongoing bulk import using the bulk import status dia
 
 You can also view the assets that have been imported in the target folder by clicking **[!UICONTROL View Assets]**.
 
-
 ## Delete a bulk import configuration {#delete-bulk-import-configuration}
 
 Click ![More icon](assets/do-not-localize/more-icon.svg) corresponding to the configuration name existing in **[!UICONTROL Executed Imports]**, **[!UICONTROL Scheduled Imports]**, or **[!UICONTROL Saved Imports]** tabs and click **[!UICONTROL Delete]** to delete the Bulk Import configuration.
