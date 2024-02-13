@@ -61,6 +61,7 @@ You can create a custom function with or without jsdoc comments.
 ```
 
 * **Arrow function with mandatory jsdoc comment**
+
 Some of the examples to create Arrow functions are:
 ```javascript
     /**
@@ -79,6 +80,7 @@ Some of the examples to create Arrow functions are:
     testFunction2 = a => a + 100;
 ```
 * **Function expression with mandatory jsdoc comment**
+
 Create custom functions in the following formats to list them in the rule editor of an Adaptive Form. For example:
 
 ```javascript
