@@ -59,6 +59,7 @@ You can create a custom function with or without jsdoc comments.
             // code to be executed
         }
 ```
+<!--
 
 * **Arrow function with mandatory jsdoc comment**
 
@@ -76,7 +77,6 @@ Some of the examples to create Arrow functions are:
     };
 ```
 
-<!-- 
     * @param {string=} b another parameter description
       /** */
     testFunction1=(a) => (return a)
