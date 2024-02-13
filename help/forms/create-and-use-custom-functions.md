@@ -146,7 +146,9 @@ You can add custom functions by adding client library. To create a client librar
     >[!NOTE]
     >
     >* If the JavaScript file containing code for custom functions has an error, then the custom functions are not listed in the rule editor of an Adaptive Form. You can also check the `error.log` file for the error.
-    >* AEM Adaptive Form supports the caching of custom functions. If the JavaScript is modified, the caching becomes invalidated, and it is parsed. You can see a message as `Fetched following custom functions list from cache` in the `error.log` file.  
+    
+    <!-- 
+    >* AEM Adaptive Form supports the caching of custom functions. If the JavaScript is modified, the caching becomes invalidated, and it is parsed. You can see a message as `Fetched following custom functions list from cache` in the `error.log` file.  -->
 
 1. Save the `function.js` file.
 1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` folder.
