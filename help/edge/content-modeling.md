@@ -521,6 +521,8 @@ Element grouping uses a naming convention, where the group name is separated fro
 +-------------------------------------------------+
 ```
 
+>[!ENDTABS]
+
 ## Sections and Section Metadata {#sections-metadata}
 
 The same way a developer can define and model multiple [blocks,](#blocks) they can define different sections.
