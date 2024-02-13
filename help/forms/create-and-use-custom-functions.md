@@ -221,7 +221,7 @@ In the rule editor of an Adaptive Form, the parameters are displayed as `require
 
   -->
 
-  ## See Also {#see-also}
+## See Also {#see-also}
 
 {{see-also}}
 
