@@ -75,7 +75,7 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 
 ## Client-side Collection {#cliendside-collection}
 
-### Real User Monitoring (RUM) for AEM as a Cloud Service {#real-user-monitoring-for-aem-as-a-cloud-service}
+### Real User Monitoring Service for AEM as a Cloud Service {#real-user-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
@@ -88,7 +88,7 @@ Real User Monitoring (RUM) is a type of performance monitoring technology that c
 
 Real User Monitoring (RUM) provides deep insight into key performance metrics right from the initiation of the URL until the request is served back to the browser all of which helps the developers enhance the application to make it easy to use for the end users. 
 
-### Who Can Benefit from RUM Data Monitoring Service? {#who-can-benefit-from-rum-data-monitoring-service}
+### Who Can Benefit from Real User Monitoring Service? {#who-can-benefit-from-rum-service}
 
 RUM Data Service is beneficial for all customers whether utilising Adobe's, or their own CDN. It offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement by reflecting the number of Page Views on the client-side. 
 
@@ -98,17 +98,17 @@ For customers employing their own CDN they can benefit from simplified traffic r
 
 Additionally, all customers gain deep insights into page performance, to optimise their digital experiences effectively.
 
-### Understand how the Real User Monitoring (RUM) Data Service Works {#understand-how-the-rum-data-service-works}
+### Understand how the Real User Monitoring Service Works {#understand-how-the-rum-service-works}
 
 Adobe Experience Manager uses Real User Monitoring (RUM) to help customers and Adobe understand, how visitors are interacting with Adobe Experience Manager-powered sites, to diagnose performance issues, and to measure the effectiveness of experiments. RUM preserves the privacy of visitors through sampling - only a small portion of all page views will be monitored - and judicious exclusion of all personally identifiable information (PII). 
 
-### Real User Monitoring (RUM) and Privacy {#rum-and-privacy}
+### Real User Monitoring Service and Privacy {#rum-service-and-privacy}
 
 Real User Monitoring in Adobe Experience Manager is designed to preserve visitor privacy and minimize data collection. As a visitor, this means that no personal information will be collected by the site you are visiting or made available to Adobe. 
 
 As a site operator, this means no additional opt-in is required to enable monitoring through this feature.So, there will be no additional pop up for the end users to accept for enabling RUM monitoring. 
 
-### RUM data sampling {#rum-data-sampling}
+### Real User Monitoring Service Data Sampling {#rum-service-data-sampling}
 
 Traditional web analytics solutions try to collect data on every single visitor. Adobe Experience Manager's Real User Monitoring only captures information from a small fraction of page views. Real User Monitoring (RUM) is meant to be sampled and anonymized rather than a replacement for analytics. By default, pages will have a 1:100 sampling ratio. Site operators cannot configure this number to increase or decrease the sampling rate as of today. To estimate total traffic accurately,for every 100 page views, we gather detailed data from one, giving you a reliable approximation of overall traffic."
 
@@ -130,14 +130,14 @@ Real User Monitoring (RUM) is designed to prevent the collection of personally i
 * The target, or link to an external page or resource that the user interacts with for the checkpoint mentioned above. For example: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
 * The Core Web Vitals (CWV) performance metrics, the Largest Contentful Paint (LCP), First Input Delay (FID), and Cumulative Layout Shift (CLS) that describe the visitor's quality of experience.
 
-### How to Set Up the Real User Monitoring (RUM) Data Service {#how-to-set-up-them-rum-data-service}
+### How to Set Up the Real User Monitoring Service {#how-to-set-up-the-rum-service}
 
 * If you wish to be a part of our Early Adopter program, please send an email to `aemcs-rum-adopter@adobe.com`, along with your domain name for the production, stage and dev environment from your email address associated with your Adobe ID. Adobe's product team will then enable the Real User Monitoring (RUM) Data Service for you.
 * Once this is completed, Adobe's product team will create a Customer collaboration Channel.
 * Adobe's Product team will reach out to you to provide you with the domain key and data dashboard URL where you can view the Page Views and [The Core Web Vitals(CWV)](https://web.dev/vitals/) metrics collected by the client-side Real User Monitoring (RUM) collection.
 * You will then be guided on how to use the domain key to access the data dashboard url and view the metrics.
 
-### How Real User Monitoring (RUM) Data is Being Used {#how-rum-data-is-being-used}
+### How Real User Monitoring Service Data is Being Used {#how-rum-service-data-is-being-used}
 
 RUM data is beneficial for the following purposes:
 
