@@ -1,6 +1,6 @@
 ---
 title: Create and add custom functions in an Adaptive Form
-description: AEM Forms support custom functions which allows users to create and use their own functions within the rule editor. 
+description: AEM Forms support custom functions which allow users to create and use their own functions within the rule editor. 
 keywords: Add a custom function, use a custom function, create a custom function, use custom function in rule editor.
 contentOwner: Ruchita Srivastav
 content-type: reference
@@ -38,9 +38,9 @@ In the above example, when the user tries to submit the form, the custom functio
 
 ### Uses of custom functions {#uses-of-custom-function}
 
-Some of the adavantages of using custom functions in Adaptive Forms are:
+Advantages of using custom functions in Adaptive Forms are:
 
-* **Manipulation of data**: Custom functions manipulates and process data entered into the forms fields.
+* **Manipulation of data**: Custom functions manipulate and process data entered into the forms fields.
 * **Validation of data**: Custom functions enable you to perform custom checks on form inputs and provide specified error messages.
 * **Dynamic behavior**: Custom functions allow you to control the dynamic behavior of your forms based on specific conditions. For example, you can show/hide fields, modify field values, or adjust form logic dynamically.
 * **Integration**: You can use custom functions to integrate with external APIs or services. It helps in fetching data from external sources, sending data to external Rest endpoints, or performing custom actions based on external events.
@@ -85,7 +85,7 @@ Some of the examples to create Arrow functions are:
 
 * **Function expression with mandatory jsdoc comment**
 
-Create custom functions in the following formats to list them in the rule editor of an Adaptive Form. For example:
+To list custom functions in the rule editor of an Adaptive Form, create custom functions in the following format:
 
 ```javascript
     /**
@@ -113,7 +113,7 @@ The functions that are not supported in the custom function list are:
 
 >[!NOTE]
 >
-> You can check the `error.log` file in case of any errors such as custom functions are not listing in the rule editor. 
+> You can check the `error.log` file for any errors, such as custom functions not getting listed in the rule editor.
 
 <!--The `error.log` file also displays the methods and parameters that are not supported for custom functions. -->
 
@@ -131,13 +131,13 @@ Steps to create custom functions are:
 You can add custom functions by adding client library. To create a client library, perform the following steps:
 
 1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
-1. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
-1. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `es6clientlibs`.
-1. Add a property `categories`with string type value as `es6customfunctions` to the `es6clientlibs` folder.
+1. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`.
+1. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder`. For example, create a client library folder as `es6clientlibs`.
+1. Add a property `categories` with string type value. For example, assign the value `es6customfunctions` to the `categories` property for the `es6clientlibs` folder.
 
    >[!NOTE]
    >
-   >`es6customfunctions`is an example category. You can choose any name for the category.
+   > You can choose any name for `client library folder` and `categories` property.
 
 1. Create a folder named `js`.
 1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` folder.
@@ -145,7 +145,7 @@ You can add custom functions by adding client library. To create a client librar
 
     >[!NOTE]
     >
-    >* If the JavaScript file containing code for custom functions has an error, then the custom functions are not listed in the rule editor of an Adaptive Form. You can also check the `error.log` file for the error.
+    > If the JavaScript file containing code for custom functions has an error, then the custom functions are not listed in the rule editor of an Adaptive Form. You can also check the `error.log` file for the error.
     
     <!-- 
     >* AEM Adaptive Form supports the caching of custom functions. If the JavaScript is modified, the caching becomes invalidated, and it is parsed. You can see a message as `Fetched following custom functions list from cache` in the `error.log` file.  -->
@@ -175,18 +175,22 @@ Once the pipeline is executed successfully, the custom function added in client 
 
 ### Add client library in an Adaptive Form{#use-custom-function}
 
-After you have added your client library, use it in your Adaptive Form. It lets you use your [custom function as a rule in your form](/help/forms/rule-editor.md#custom-functions). To add the client library in your Adaptive Form, perform the following steps:
+Once you have deployed your client library to your Forms CS environment, use its capabilities in your Adaptive Form. To add the client library in your Adaptive Form
 
-1. Open your form in edit mode.
-   To open a form in edit mode, select a form and select **[!UICONTROL Open]**.
-1. In the edit mode, select a component, then select ![field-level](assets/select_parent_icon.svg) &gt; **[!UICONTROL Adaptive Form Container]**, and then select ![cmppr](assets/configure-icon.svg).
-1. In the sidebar, under Name of Client Library, add your client library. ( `es6customfunctions` in the example.)
+1. Open your form in edit mode. To open a form in edit mode, select a form and select **[!UICONTROL Edit]**.
+1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
+1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens.  
+1. Open the **[!UICONTROL Basic]** tab and select the name of the **[!UICONTROL client library category]** from the drop-down list (in this case, select `es6customfunctions`).
 
    ![Adding the custom function client library](/help/forms/assets/clientlib-custom-function.png)
 
-Create a rule to use custom function in the rule editor. 
+1. Click **[!UICONTROL Done]** .
+
+Now, you can create a rule to use custom functions in the rule editor. 
 
 <!--
+
+Create a rule to use custom function in the rule editor. 
 
 ### Support for the optional parameters in custom functions{#support-for-optional-parameter}
 
