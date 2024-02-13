@@ -18,15 +18,7 @@ When you log into [!DNL Assets view], you see the following interface.
 
 ![[!DNL Assets view] user interface](assets/assets-view-interface.png)
 
-&nbsp;&nbsp;&nbsp; *A: Left sidebar to browse repository and provides access to a few other options*
-&nbsp;&nbsp;&nbsp; *B: Display or collapse the left sidebar to increase asset-viewing area*
-&nbsp;&nbsp;&nbsp; *C: Filter search results*
-&nbsp;&nbsp;&nbsp; *D: Select all contents of the selected folder*
-&nbsp;&nbsp;&nbsp; *E: Options to sort assets*
-&nbsp;&nbsp;&nbsp; *F: Search box*
-&nbsp;&nbsp;&nbsp; *G: Upload or drag and drop files using `Add Assets` button*
-&nbsp;&nbsp;&nbsp; *H: Create a new folder*
-&nbsp;&nbsp;&nbsp; *I: Switch between different views*
+**A**: Left sidebar to browse repository and provides access to a few other options **B**: Display or collapse the left sidebar to increase asset-viewing area **C**: Filter search results **D**: Select all contents of the selected folder **E**: Options to sort assets **F**: Search box **G**: Upload or drag and drop files using `Add Assets` button **H**: Create a new folder **I**: Switch between different views
 
 <!-- TBD: Need an embedded video here with narration. It has to be hosted on MPC to be embeddable. -->
 
@@ -76,23 +68,7 @@ To preview an asset, select it and click [!UICONTROL Details] ![details icon](as
 
 ![Preview an asset](assets/preview-asset-2.png)
 
-*A: Return to the current folder or current search result in the repository*
-*B: Name and format for the file you are previewing*
-*C: Assign tasks*
-*D: Download asset*
-*E: Preview asset and see metadata information*
-*D: Advanced metadata*
-*E: Keywords and smart tags*
-*F: Comment and annotate*
-*G: View tasks related to the selected Asset*
-*H: View and manage versions*
-*I: View renditions of the image*
-*J: Edit image*
-*K: Basic metadata*
-*L: Advanced metadata*
-*M: Keywords and smart tags*
-*N: Preview more closely. Zoom, full screen, and other options*
-*O: Proceed to previous or next asset in the current folder without going back to the folder*
+**A**: Return to the current folder or current search result in the repository **B**: Name and format for the file you are previewing **C**: Assign tasks **D**: Advanced metadata **E**: Keywords and smart tags **F**: Comment and annotate **G**: View tasks related to the selected Asset **H**: View and manage versions **I**: View renditions of the image **J**: Edit image **K**: Basic metadata **L**: Advanced metadata **M**: Keywords and smart tags **N**: Preview more closely. Zoom, full screen, and other options **O**: Proceed to previous or next asset in the current folder without going back to the folder
 
 You can also preview videos.
 
