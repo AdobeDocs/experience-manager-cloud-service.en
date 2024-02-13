@@ -103,16 +103,19 @@ For each block, the developer:
 
 * Must use the `core/franklin/components/block/v1/block` resource type, the generic implementation of the block logic in AEM.
 * Must define the block name, which will be rendered in the block's table header.
+  * The block name is used to fetch the right style and script to decorate the block.
 * Can define a [model ID.](/help/implementing/universal-editor/field-types.md#model-structure)
+  * The model ID is a reference to the component's model, which defines the fields available to the author in the properties rail.
 * Can define a [filter ID.](/help/implementing/universal-editor/customizing.md#filtering-components)
+  * The filter ID is a reference to the component's filter, which allows to change the authoring behavior, for example by limiting which children can be added to the block or section, or which RTE features are enabled.
 
-All this information is stored in AEM when a block is added to a page.
+All this information is stored in AEM when a block is added to a page. If either the resource type or block name are missing, the block will not render on the page.
 
 >[!WARNING]
 >
->While possible, it is not necessary to implement custom AEM components. The components for Edge Delivery Services provided by AEM are sufficient and offer certain guard rails to ease development.
+>While possible, it is not necessary or recommended to implement custom AEM components. The components for Edge Delivery Services provided by AEM are sufficient and offer certain guard rails to ease development.
 >
->For this reason, Adobe does not recommend using custom AEM resource types.
+>The components provided by AEM render a markup that can be consumed by [helix-html2md](https://github.com/adobe/helix-html2md) when publishing to Edge Delivery Services and by [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) when loading a page in the Universal Editor. The markup is the stable contract between AEM and the other parts of the system, and does not allow for customizations. For this reason, projects must not change the components and must not use custom components.
 
 ### Block Structure {#block-structure}
 
@@ -369,7 +372,9 @@ No `linkType`, or `linkType=default`
 
 While [field collapse](#field-collapse) is about combining multiple properties into a single semantic element, element grouping is about concatenating multiple semantic elements into a single cell. This is particularly helpful for use cases where the author should be restricted in the type and number of elements that they can create.
 
-For example, the author should only create a subtitle, title, and a single paragraph description combined with a maximum of two call-to-action buttons. Grouping these elements together yields a semantic markup that can be styled without further action.
+For example, a teaser component may allow the author to only create a subtitle, title, and a single paragraph description combined with a maximum of two call-to-action buttons. Grouping these elements together yields a semantic markup that can be styled without further action.
+
+Element grouping uses a naming convention, where the group name is separated from each property in the group by an underscore. Field collapse of the properties in a group works as previously described.
 
 ##### Data {#data-grouping}
 
@@ -494,18 +499,17 @@ It is possible to define metadata on a per path or per path pattern basis in a t
 
 To create such table, create a page and use the Metadata template in the Sites console.
 
->[!NOTE]
->
->When editing the metadata spreadsheet, make sure to switch to **Preview** mode since authoring occurs on the page itself, not within the editor.
-
-In the spreadsheet's page properties, define the metadata fields you need along with the URL. Then add metadata per page path or page path pattern, where the URL field relates to the mapped, public paths and not the content path in AEM.
+In the spreadsheet's page properties, define the metadata fields you need along with the URL. Then add metadata per page path or page path pattern.
 
 Make sure spreadsheet is added to your path mapping as well before you publishing it.
 
-```text
-mappings:
-  - /content/site/:/
-  - /content/site/metadata:/metadata.json
+```json
+{
+  "mappings": [
+    "/content/site/:/",
+    "/content/site/metadata:/metadata.json"
+  ]
+}
 ```
 
 ### Page Properties {#page-properties}
