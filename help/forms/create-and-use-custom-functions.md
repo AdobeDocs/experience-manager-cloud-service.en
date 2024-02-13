@@ -12,7 +12,7 @@ feature: Adaptive Forms, Core Components
 ## Introduction
 
 AEM Forms support custom functions, allowing users to define JavaScript functions for implementing complex business rules. These custom functions extend the capabilities of forms by facilitating manipulation and processing of entered data to meet specified requirements. They also enable dynamic alteration of form behavior based on predefined criteria. 
-In Adaptive Forms, you can use custom functions within the rule editor of an Adaptive Form to create specific validation rules for form fields.
+In Adaptive Forms, you can use custom functions within the [rule editor of an Adaptive Form](/help/forms/rule-editor.md#custom-functions) to create specific validation rules for form fields.
 
 Let us understand use of custom function where users enter the email address, and you want to ensure that the entered email address follows a specific format (it contains an "@" symbol and a domain name). Create a custom function as "ValidateEmail" which takes the email address as input and returns true if it is valid and false otherwise.
 
@@ -68,7 +68,7 @@ Some of the examples to create Arrow functions are:
     * test function
     * @name testFunction test function
     * @param {string} a some parameter description
-    * @param {string=} b another parameter description
+    * @param {string} b another parameter description
     * @return {string}
     */
     testFunction = (a, b) => {
@@ -77,6 +77,7 @@ Some of the examples to create Arrow functions are:
 ```
 
 <!-- 
+    * @param {string=} b another parameter description
       /** */
     testFunction1=(a) => (return a)
     /** */
@@ -102,7 +103,6 @@ Create custom functions in the following formats to list them in the rule editor
 
 <!--
 * @param {string=} input2 another parameter description
-
 The functions that are not supported in the custom function list are:
 * Generator functions
 * Async/Await functions 
@@ -169,11 +169,11 @@ You can add custom functions by adding client library. To create a client librar
 
 1. [Run the pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)
 
-Once the pipeline is executed successfully, the custom function added in client library becomes available in your Adaptive Form rule editor. 
+Once the pipeline is executed successfully, the custom function added in client library becomes available in your [Adaptive Form rule editor](/help/forms/rule-editor.md). 
 
 ### Add client library in an Adaptive Form{#use-custom-function}
 
-After you have added your client library, use it in your Adaptive Form. It lets you use your custom function as a rule in your form. To add the client library in your Adaptive Form, perform the following steps:
+After you have added your client library, use it in your Adaptive Form. It lets you use your [custom function as a rule in your form](/help/forms/rule-editor.md#custom-functions). To add the client library in your Adaptive Form, perform the following steps:
 
 1. Open your form in edit mode.
    To open a form in edit mode, select a form and select **[!UICONTROL Open]**.
@@ -182,7 +182,7 @@ After you have added your client library, use it in your Adaptive Form. It lets 
 
    ![Adding the custom function client library](/help/forms/assets/clientlib-custom-function.png)
 
-Create a rule to use custom function in the rule editor. You can also invoke a form data model from rule editor using custom functions.
+Create a rule to use custom function in the rule editor. 
 
 <!--
 
@@ -220,6 +220,10 @@ In the rule editor of an Adaptive Form, the parameters are displayed as `require
   needs to be discussed
 
   -->
+
+  ## See Also {#see-also}
+
+{{see-also}}
 
 
 
