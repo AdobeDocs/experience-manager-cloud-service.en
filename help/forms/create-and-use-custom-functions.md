@@ -74,11 +74,14 @@ Some of the examples to create Arrow functions are:
     testFunction = (a, b) => {
     return a + b;
     };
-    /** */
+```
+
+<!-- 
+      /** */
     testFunction1=(a) => (return a)
     /** */
-    testFunction2 = a => a + 100;
-```
+    testFunction2 = a => a + 100;-->
+
 * **Function expression with mandatory jsdoc comment**
 
 Create custom functions in the following formats to list them in the rule editor of an Adaptive Form. For example:
@@ -88,7 +91,7 @@ Create custom functions in the following formats to list them in the rule editor
     * test function
     * @name testFunction test function
     * @param {string} input1 parameter description
-    * @param {string=} input2 another parameter description
+    * @param {string} input2 another parameter description
     * @return {string}
     */
     testFunction = function(input1,input2)
@@ -98,6 +101,8 @@ Create custom functions in the following formats to list them in the rule editor
 ```
 
 <!--
+* @param {string=} input2 another parameter description
+
 The functions that are not supported in the custom function list are:
 * Generator functions
 * Async/Await functions 
@@ -177,7 +182,7 @@ After you have added your client library, use it in your Adaptive Form. It lets 
 
    ![Adding the custom function client library](/help/forms/assets/clientlib-custom-function.png)
 
-Create a rule to use custom function in the rule editor. To invoke a form data model from rule editor using custom functions, [see here](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services). 
+Create a rule to use custom function in the rule editor. You can also invoke a form data model from rule editor using custom functions.
 
 <!--
 
