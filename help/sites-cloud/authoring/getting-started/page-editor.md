@@ -136,3 +136,25 @@ The editor is where you make changes directly to your page content. The page is 
 Now that you understand the page editor, you are ready to edit your content.
 
 Please see the document [Editing Content with the AEM Page Editor](help/sites-cloud/authoring/getting-started/edit-content.md) for more information.
+
+## Status Notification {#status-notification}
+
+If a page is part of a [workflow](/help/sites-cloud/authoring/workflows/overview.md) or multiple workflows, this information is shown in a notification bar below the toolbar when editing the page.
+
+![Workflow notification](/help/sites-cloud/authoring/assets/editing-workflow-notification.png)
+
+>[!NOTE]
+>
+>The status bar is only visible to user accounts with appropriate privileges.
+
+The notification lists the workflow that is running against the page. If the user is involved in the current workflow step, options to [affect the workflow status](/help/sites-cloud/authoring/workflows/participating.md) and get more information about the workflow are also available such as:
+
+* **Complete** - Opens the **Complete Work Item** dialog
+* **Delegate** - Opens the **Complete Work Item** dialog
+* **View details** - Opens the **Details** window of the workflow
+
+Completing and delegating workflow steps via the notification bar works as it does when [participating in workflows](/help/sites-cloud/authoring/workflows/participating.md) from the Notification inbox.
+
+If the page is subject to multiple workflows, the number of workflows is displayed at the right end of the notification along with arrow buttons to allow you to scroll through the workflows.
+
+![Multiple workflow notifications](/help/sites-cloud/authoring/assets/editing-workflow-notification-multiple.png)
