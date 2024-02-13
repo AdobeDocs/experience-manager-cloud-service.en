@@ -127,7 +127,9 @@ In the simplest form, a block renders each property in a single row/column in th
 
 In the following example, the image is defined first in the model and the text second. They are thus rendered with the image first and text second.
 
-##### Data {#data-simple}
+>[!BEGINTABS]
+
+>[!TAB Data]
 
 ```json
 {
@@ -139,7 +141,7 @@ In the following example, the image is defined first in the model and the text s
 }
 ```
 
-##### Markup {#markup-simple}
+>[!TAB Markup]
 
 ```html
 <div class="hero">
@@ -158,6 +160,20 @@ In the following example, the image is defined first in the model and the text s
 </div>
 ```
 
+>[!TAB Table]
+
+```text
++---------------------------------------------+
+| Hero                                        |
++=============================================+
+| ![Helix - a shape like a corkscrew][image0] |
++---------------------------------------------+
+| # Welcome to AEM                            |
++---------------------------------------------+
+```
+
+>[!ENDTABS]
+
 You may notice that some types of values allow inferring semantics in the markup, and properties are combined into in single cells. This behavior is described in the section [Type Inference.](#type-inference)
 
 #### Key-Value Block {#key-value}
@@ -168,7 +184,9 @@ In other cases however, the block is read as a key-value pair-like configuration
 
 An example of this is the [section metadata.](/help/edge/developer/markup-sections-blocks.md#sections) In this use case, the block can be configured to render as key-value pair table. Please see the section [Sections and Section Metadata](#sections-metadata) for more information.
 
-##### Data {#data-key-value}
+>[!BEGINTABS]
+
+>[!TAB Data]
 
 ```json
 {
@@ -181,7 +199,7 @@ An example of this is the [section metadata.](/help/edge/developer/markup-sectio
 }
 ```
 
-##### Markup {#markup-key-value}
+>[!TAB Markup]
 
 ```html
 <div class="featured-articles">
@@ -200,13 +218,31 @@ An example of this is the [section metadata.](/help/edge/developer/markup-sectio
 </div>
 ```
 
+>[!TAB Table]
+
+```text
++-----------------------------------------------------------------------+
+| Featured Articles                                                     |
++=======================================================================+
+| source   | [/content/site/articles.json](/content/site/articles.json) |
++-----------------------------------------------------------------------+
+| keywords | Developer,Courses                                          |
++-----------------------------------------------------------------------+
+| limit    | 4                                                          |
++-----------------------------------------------------------------------+
+```
+
+>[!ENDTABS]
+
 #### Container Blocks {#container}
 
 Both of the previous structures have a single dimension: the list of properties. Container blocks allow adding children (usually of the same type or model) and hence are two-dimensional. These blocks still support their own properties rendered as rows with a single column first. But they also allow adding children, for which each item is rendered as row and each property as column within that row.
 
 In the following example, a block accepts a list of linked icons as children, where each linked icon has an image and a link. Notice the [filter ID](/help/implementing/universal-editor/customizing.md#filtering-components) set in the data of the block in order to reference the filter configuration.
 
-##### Data {#data-container}
+>[!BEGINTABS]
+
+>[!TAB Data]
 
 ```json
 {
@@ -229,7 +265,7 @@ In the following example, a block accepts a list of linked icons as children, wh
 }
 ```
 
-##### Markup {#markup-container}
+>[!TAB Markup]
 
 ```html
 <div class="our-partners">
@@ -260,6 +296,22 @@ In the following example, a block accepts a list of linked icons as children, wh
   </div>
 </div>
 ```
+
+>[!TAB Table]
+
+```text
++------------------------------------------------------------ +
+| Our Partners                                                |
++=============================================================+
+| Our community of partners is ...                            |
++-------------------------------------------------------------+
+| ![Icon of Foo][image0] | [https://foo.com](https://foo.com) |
++-------------------------------------------------------------+
+| ![Icon of Bar][image1] | [https://bar.com](https://bar.com) |
++-------------------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ### Creating Semantic Content Models for Blocks {#creating-content-models}
 
@@ -297,7 +349,9 @@ Field collapse is the mechanism to combine multiple field values into a single s
 
 ##### Images {#image-collapse}
 
-###### Data {#data-image}
+>[!BEGINTABS]
+
+>[!TAB Data]
 
 ```json
 {
@@ -306,7 +360,7 @@ Field collapse is the mechanism to combine multiple field values into a single s
 }
 ```
 
-###### Markup {#markup-image}
+>[!TAB Markup]
 
 ```html
 <picture>
@@ -314,9 +368,19 @@ Field collapse is the mechanism to combine multiple field values into a single s
 </picture>
 ```
 
+>[!TAB Table]
+
+```text
+![A red car on a road][image0]
+```
+
+>[!ENDTABS]
+
 ##### Links &amp; Buttons {#links-buttons-collapse}
 
-###### Data {#data-links-buttons}
+>[!BEGINTABS]
+
+>[!TAB Data]
 
 ```json
 {
@@ -327,7 +391,7 @@ Field collapse is the mechanism to combine multiple field values into a single s
 }
 ```
 
-###### Markup {#markup-links-buttons}
+>[!TAB Markup]
 
 No `linkType`, or `linkType=default`
 
@@ -351,9 +415,21 @@ No `linkType`, or `linkType=default`
 </em>
 ```
 
+>[!TAB Table]
+
+```text
+[adobe.com](https://www.adobe.com "Navigate to adobe.com")
+**[adobe.com](https://www.adobe.com "Navigate to adobe.com")**
+_[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
+```
+
+>[!ENDTABS]
+
 ##### Headings {#headings-collapse}
 
-###### Data {#data-headings}
+>[!BEGINTABS]
+
+>[!TAB Data]
 
 ```json
 {
@@ -362,11 +438,19 @@ No `linkType`, or `linkType=default`
 }
 ```
 
-###### Markup {#markup-headings}
+>[!TAB Markup]
 
 ```html
 <h2>Getting started</h2>
 ```
+
+>[!TAB Table]
+
+```text
+## Getting started
+```
+
+>[!ENDTABS]
 
 #### Element Grouping {#element-grouping}
 
@@ -376,7 +460,9 @@ For example, a teaser component may allow the author to only create a subtitle, 
 
 Element grouping uses a naming convention, where the group name is separated from each property in the group by an underscore. Field collapse of the properties in a group works as previously described.
 
-##### Data {#data-grouping}
+>[!BEGINTABS]
+
+>[!TAB Data]
 
 ```json
 {
@@ -396,7 +482,7 @@ Element grouping uses a naming convention, where the group name is separated fro
 }
 ```
 
-##### Markup {#markup-grouping}
+>[!TAB Markup]
 
 ```html
 <div class="teaser">
@@ -417,6 +503,22 @@ Element grouping uses a naming convention, where the group name is separated fro
     </div>
   </div>
 </div>
+```
+
+>[!TAB Table]
+
+```text
++-------------------------------------------------+
+| Teaser                                          |
++=================================================+
+| ![A group of people sitting on a stage][image0] |
++-------------------------------------------------+
+| Adobe Experience Cloud                          |
+| ## Welcome to AEM                               |
+| Join us in this ask me everything session ...   |
+| [More Details](https://link.to/more-details)    |
+| [RSVP](https://link.to/sign-up)                 |
++-------------------------------------------------+
 ```
 
 ## Sections and Section Metadata {#sections-metadata}
