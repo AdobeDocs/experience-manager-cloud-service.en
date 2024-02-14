@@ -144,7 +144,7 @@ You must add the necessary JavaScript library to the page component of the WKND 
 1. Add the JavaScript library to the end of the file.
 
    ```html
-   <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js"></script>
+   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
    ```
 
 1. Click **Save All** and then reload the Universal Editor.
@@ -177,6 +177,8 @@ However you likely noticed that you can not interact with the page in the Univer
    ```html
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
+
+   * The latest version of the library is always recommended. If you need a prior version, please see the document [Getting Started with the Universal Editor in AEM.](/help/implementing/universal-editor/getting-started.md#alternative)
 
 1. Add the necessary metadata for the connection to your local Universal Editor service to the end of the file.
 
