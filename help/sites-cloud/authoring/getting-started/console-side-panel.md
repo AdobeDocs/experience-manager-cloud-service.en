@@ -7,6 +7,68 @@ description: Learn how to use the side panel in the AEM sites console to better 
 
 Learn how to use the side panel in the AEM sites console to better understand and navigate your content.
 
+## Orientation {#orientation}
+
+The side panel is by default closed when you enter the Sites console. In this way the screen is dedicated entirely to your content.
+
+Tap or click the **Side Panel** icon in the sites console toolbar to activate the side panel and choose your view of the content.
+
+* [Content Only](#content-only)
+* [Content Tree](#content-tree)
+* [Timeline](#timeline)
+* [References](#references)
+* [Filter](#filter)
+
+## Content Only {#content-only}
+
+This view of the side panel is effectively turning it off, i.e. to show only the content of your site.
+
+Use the grave accent/backtick `´` keyboard shortcut to switch to the content only view of the side panel.
+
+## Content Tree {#content-tree}
+
+This view of the side panel displays your content in a tree hierarchy. The content tree can be used to quickly navigate the site hierarchy within the side panel and view much information about the pages in the current folder.
+
+![The content tree view of the side panel](assets/console-side-panel-content-tree.png)
+
+A right-pointing chevron next to an item in the tree indicates a node that can be expanded to reveal its children. Tap or click the chevron to reveal the children.
+
+The console displays the content of the currently-select item in the content tree.
+
+Using the content tree side panel in conjunction with a list view or cards view, users can easily see the hierarchical structure of the project and navigate easily across the content structure with the content tree side-panel, and view detailed page information in the list view.
+
+Use the `Alt+1` keyboard shortcut to switch to the content tree view of the side panel.
+
+>[!TIP]
+>
+>Once an entry in the hierarchy view is selected, arrow keys can be used to quickly navigate the hierarchy.
+>
+>See [keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) for more information.
+
+## Timeline {#timeline}
+
+The timeline can be used to view and/or initiate events that have occurred on the selected resource.
+
+![Comment field](/help/sites-cloud/authoring/assets/comments.png)
+
+The timeline column lets you view various events related to a selected item selectable as types from a drop-down list:
+
+* Comments
+* [Annotations](/help/sites-cloud/authoring/fundamentals/annotations.md)
+* [Activities](/help/sites-cloud/authoring/personalization/activities.md)
+* [Launches](/help/sites-cloud/authoring/launches/overview.md)
+* [Versions](/help/sites-cloud/authoring/features/page-versions.md)
+* [Workflows](/help/sites-cloud/authoring/workflows/overview.md)
+  * Note that no information will be shown for transient workflows as no history information is saved for these.<!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
+* Show All
+
+In addition you can add/view comments about the selected item by using the **Comment** box shown at the bottom of the list of events. Typing a comment followed by `Return` will register the comment. It is shown when **Comments** or **Show All** is selected.
+
+Tn the Sites console you can also access additional features via the elipsis button next to the **Comment** field.
+
+* [Save a version](/help/sites-cloud/authoring/features/page-versions.md)
+* [Start a workflow](/help/sites-cloud/authoring/workflows/applying.md)
+
 ### Accessing Page References {#accessing-page-references}
 
 [Quick access to references](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) to/from a page are available in the References Rail.
