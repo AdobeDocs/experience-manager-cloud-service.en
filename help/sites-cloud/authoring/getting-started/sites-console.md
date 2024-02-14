@@ -19,3 +19,6 @@ For example, the lock icon looks like this:
 
 ![Lock button](/help/sites-cloud/authoring/assets/lock.png)
 
+## Templates
+
+You can easily see which template the page is based on when selecting the page in either [Column view](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) or [List view](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view).
