@@ -13,10 +13,10 @@ Learn about Cloud Manager's build environment and how it builds and tests your c
 Cloud Manager builds and tests your code using a specialized build environment.
 
 * The build environment is Linux-based, derived from Ubuntu 22.04.
-* Apache Maven 3.8.8 is installed.
+* Apache Maven 3.9.4 is installed.
   * Adobe recommends users [update their Maven repositories to use HTTPS instead of HTTP.](#https-maven)
-* The Java versions installed are Oracle JDK 8u371 and Oracle JDK 11.0.20.
-* By default, the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_371` which contains Oracle JDK 8u371. See the [Alternate Maven Execution JDK Version](#alternate-maven-jdk-version) section for more details.
+* The Java versions installed are Oracle JDK 8u401 and Oracle JDK 11.0.22.
+* By default, the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_401` which contains Oracle JDK 8u401. See the [Alternate Maven Execution JDK Version](#alternate-maven-jdk-version) section for more details.
 * There are some additional system packages installed which are necessary.
   * `bzip2`
   * `unzip`
@@ -114,7 +114,7 @@ This table refers to the product version numbers. Java build numbers or installa
 
 It is also possible to select Java 8 or Java 11 as the JDK for the entire Maven execution. Unlike the toolchains options, this changes the JDK used for all plugins unless the toolchains configuration is also  set in which case the toolchains configuration is still applied for toolchains-aware Maven plugins. As a result, checking and enforcing the Java version using the [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) will work.
 
-To do this, create a file named `.cloudmanager/java-version` in the git repository branch used by the pipeline. This file can have either the content 11 or 8. Any other value is ignored. If 11 is specified, Oracle 11 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-11.0.2`. If 8 is specified, Oracle 8 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_202`.
+To do this, create a file named `.cloudmanager/java-version` in the git repository branch used by the pipeline. This file can have either the content 11 or 8. Any other value is ignored. If 11 is specified, Oracle 11 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-11.0.22`. If 8 is specified, Oracle 8 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_401`.
 
 ## Environment Variables {#environment-variables}
 
