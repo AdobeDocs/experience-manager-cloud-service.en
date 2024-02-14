@@ -41,7 +41,7 @@ Summarized below are the continuous improvements for maintenance release 14813, 
 
 ### Known Issues {#known-issues-14813}
 
-* GRANITE-49031: Regression resulting in `@JsonIgnore` annotation being ignored on transient fields.
+None.
 
 ### Change Notice {#change-notice-14813}
 
