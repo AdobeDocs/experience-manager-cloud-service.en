@@ -345,6 +345,7 @@ Most VPN devices with IPSec technology are supported. Consult the list of device
 
 * Support is limited to a single VPN connection
 * The Splunk forwarding capability is not possible over a VPN connection.
+* DNS Resolvers must be listed in the Gateway Address space to resolve private hostnames.
 
 ### Creation {#vpn-creation}
 

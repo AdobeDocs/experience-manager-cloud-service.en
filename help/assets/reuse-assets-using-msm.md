@@ -242,8 +242,8 @@ To see the statuses and information related to a synchronize action, see [Inform
 You can cancel the Live Copy inheritance for a:
 
 * metadata field
-* Content Fragment variation
-* Content Fragment data field
+* [Content Fragment variation](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+* [Content Fragment data field](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
 
 This will mean that the item is no longer synchronized with the source component. You can enable inheritance at a later point if necessary.
 

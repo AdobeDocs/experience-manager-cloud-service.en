@@ -615,6 +615,7 @@ user-guide-title: AEM as a Cloud Service
         + [Use Google reCAPTCHA in an Adaptive Form ](/help/forms/captcha-adaptive-forms-core-components.md)
         + [Add custom error handler in an Adaptive Form](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
         + [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md)
+        + [Create and use custom functions](/help/forms/create-and-use-custom-functions.md)
     + Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -673,6 +674,9 @@ user-guide-title: AEM as a Cloud Service
     + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
+  + Transaction Reports {#using-communications}
+    + [Transaction Reports Billable APIs](/help/forms/transaction-reports-billable-apis.md)
+    + [Record a transaction for custom implementations](/help/forms/record-transaction-custom-implementation.md)
   + Developer API Reference {#aem-forms-developer-api-reference}
     + [Adaptive Forms API reference](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
     + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -758,9 +762,12 @@ user-guide-title: AEM as a Cloud Service
 + Edge Delivery Services {#edge-delivery}
   + [AEM and Edge Delivery Services](/help/edge/overview.md)
   + [Using Edge Delivery](/help/edge/using.md)
+  + [Developer Getting Started Guide](/help/edge/edge-dev-getting-started.md)
   + [Authoring Content for Edge Delivery](/help/edge/authoring.md)
   + [Publishing Content for Edge Delivery](/help/edge/publishing.md)
   + [Developing for Edge Delivery](/help/edge/developing.md)
+  + [Content Modeling](/help/edge/content-modeling.md)
+  + [Creating Blocks](/help/edge/create-block.md)
   + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
   + Building Edge Delivery Applications {#build}
     + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
@@ -1047,7 +1054,6 @@ user-guide-title: AEM as a Cloud Service
     + [Extending Experience Fragments](/help/implementing/developing/extending/experience-fragments.md)
     + [Customizing and Extending Content Fragments](/help/implementing/developing/extending/content-fragments-customizing.md)
     + [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-    + [Customizing the Content Fragment Console](/help/implementing/developing/extending/content-fragment-console-customizing.md)
     + [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
     + Manage Search Forms {#manage-search-forms}
       + [Configuring Search Forms](/help/implementing/developing/extending/search-forms.md)
@@ -1114,8 +1120,8 @@ user-guide-title: AEM as a Cloud Service
     + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
     + [Universal Editor Developer Overview](/help/implementing/universal-editor/developer-overview.md)
     + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
-    + [Field Types](/help/implementing/universal-editor/field-types.md)
+    + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
     + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
     + [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md)
     + [Universal Editor Calls](/help/implementing/universal-editor/calls.md)
-    + [Customizing the UI](/help/implementing/universal-editor/customizing.md)
+    + [Customizing the Universal Editor](/help/implementing/universal-editor/customizing.md)
