@@ -158,3 +158,81 @@ Completing and delegating workflow steps via the notification bar works as it do
 If the page is subject to multiple workflows, the number of workflows is displayed at the right end of the notification along with arrow buttons to allow you to scroll through the workflows.
 
 ![Multiple workflow notifications](/help/sites-cloud/authoring/assets/editing-workflow-notification-multiple.png)
+
+## Live Copy Status {#live-copy-status}
+
+The [Live Copy Status page mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) gives you a quick overview of the live copy status and which components are/are not inherited:
+
+* Green border: Inherited
+* Pink border: Inheritance has been cancelled
+
+For example:
+
+![Example of live copy status being displayed](/help/sites-cloud/authoring/assets/editing-live-copy-status.png)
+
+## Previewing Pages {#previewing-pages}
+
+There are two options for previewing a page:
+
+* [Preview Mode](#preview-mode) - a quick, in-place preview
+* [View as Published](#view-as-published) - a full preview that opens the page in a new tab
+
+>[!TIP]
+>
+>* Links in the content are visible, but not accessible in Edit mode.
+>* Use either of the preview options if you want to navigate using your links.
+>* Use the [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` to switch between preview and the last selected mode.
+
+>[!NOTE]
+>
+>The WCM Mode cookie is set for both preview options.
+
+### Preview Mode {#preview-mode}
+
+When editing content you can preview the page using the preview [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes). This mode:
+
+* Hides various edit mechanisms to give you a quick view of how the page will appear on publish.
+* Lets you use links to navigate.
+* Does **not** refresh the page content.
+
+When authoring, the preview mode is available using the icon at the top right of the page editor:
+
+![Preview button](/help/sites-cloud/authoring/assets/preview.png)
+
+### View as Published {#view-as-published}
+
+The **View as Published** option is available from the [Page Information](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) menu. This opens the page in a new tab, refreshes the content and shows the page exactly as it will appear in the publish environment.
+
+## Locking and Unlocking a Page {#locking-unlocking}
+
+AEM lets you lock a page so that no one else can edit the contents. Locking is useful when you are making numerous edits to one specific page, or when you need to freeze a page for a short while.
+
+1. Select the **Page Information** icon to open the menu.
+1. Select the **Lock Page** option.
+
+Once locked, a lock symbol is shown in the toolbar of the page editor.
+
+![Example of a locked page](/help/sites-cloud/authoring/assets/editing-locked-page.png)
+
+Unlocking a page is very similar to [locking the page](#locking-a-page). Once the page is locked, the lock options are replaced by unlock actions.
+
+>[!CAUTION]
+>
+>* Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked (by customers) using the user who was impersonated.
+>* Pages cannot be unlocked by impersonating the user who locked the page.
+>* If the user who locked the page is not available to unlock the page, contact Customer Support to evaluate options to remove the lock. 
+
+## Undoing and Redoing Page Edits {#undoing-and-redoing-page-edits}
+
+The following icons allow you to undo or redo an action. These are shown in the toolbar when appropriate:
+
+![The Undo and Redo buttons](/help/sites-cloud/authoring/assets/redo.png)
+
+>[!TIP]
+>
+>* The [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z` is also available to undo page edit actions.
+>* The keyboard shortcut `Ctrl-Y` is also available to redo page edit actions.
+
+>[!NOTE]
+>
+>Please see the document [Undo and Redo Limitations](/help/sites-cloud/authoring/getting-started/undo-redo.md) for the full details of what is possible when undoing and redoing page edits.
