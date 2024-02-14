@@ -911,6 +911,7 @@ user-guide-title: AEM as a Cloud Service
       + [Configuring a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
       + [Configuring a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
       + [Managing Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+      + [Pipeline Variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
     + [Deploying Your Code](/help/implementing/cloud-manager/deploy-code.md)
     + Understanding your Test Results {#test-results}
       + [Overview](/help/implementing/cloud-manager/overview-test-results.md)

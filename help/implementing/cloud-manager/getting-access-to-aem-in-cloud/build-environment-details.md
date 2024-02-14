@@ -139,46 +139,9 @@ To support this, Cloud Manager adds these standard environment variables to the 
 
 ### Pipeline Variables {#pipeline-variables}
 
-Your build process may depend upon specific configuration variables which would be inappropriate to place in the git repository or you may need to vary them between pipeline executions using the same branch. 
+Your build process may depend upon specific configuration variables which would be inappropriate to place in the git repository or you may need to vary them between pipeline executions using the same branch.
 
-Cloud Manager allows for these variables to be configured through the Cloud Manager API or Cloud Manager CLI on a per-pipeline basis. Variables may be stored as either plain text or encrypted at rest. In either case, variables are made available inside the build environment as an environment variable which can then be referenced from inside the `pom.xml` file or other build scripts. 
-
-This CLI command sets a variable.
-
-```shell
-$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test
-```
-
-This command lists variables.
-
-```shell
-$ aio cloudmanager:list-pipeline-variables PIPELINEID
-```
-
-Variable names must observe the following conventions.
-
-* Variables may only contain alphanumeric characters and the underscore (`_`).
-* The names should be all upper-case.
-* There is a limit of 200 variables per pipeline.
-* Each name must be 100 characters or less.
-* Each `string` variable value must be less than 2048 characters.
-* Each `secretString` type variable value must be 500 characters or less.
-
-When used inside a Maven `pom.xml` file, it is typically helpful to map these variables to Maven properties using a syntax similar to this.
-
-```xml
-        <profile>
-            <id>cmBuild</id>
-            <activation>
-                <property>
-                    <name>env.CM_BUILD</name>
-                </property>
-            </activation>
-            <properties>
-                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
-            </properties>
-        </profile>
-```
+Please see the document [Configuring Pipeline Variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) for more information
 
 ## Installing Additional System Packages {#installing-additional-system-packages}
 
