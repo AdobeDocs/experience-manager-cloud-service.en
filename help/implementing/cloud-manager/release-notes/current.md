@@ -20,6 +20,7 @@ The release date for Cloud Manager release 2024.2.0 in AEM as a Cloud Service is
 ## What's New {#what-is-new}
 
 * Cloud Manager now supports self-service management of [pipeline variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) via the Cloud Manager UI.
+* [The preview service](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice) will now be enabled for environments created before the preview service feature was rolled out.
 
 ## Early Adoption Program {#early-adoption}
 
@@ -61,3 +62,5 @@ The dashboard uses Google Lighthouse, an open-source, automated tool for improvi
 Interested in test-driving the new dashboard? To get started, send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID.
 
 ## Bug Fixes {#bug-fixes}
+
+* The JDK of the build containers has been updated to a version that solves [JDK-8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
