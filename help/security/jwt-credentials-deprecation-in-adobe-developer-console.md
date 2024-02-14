@@ -20,6 +20,8 @@ The sections below list of the scenarios where customers must (or must not) repl
 
 ## Integrating AEM with Other Adobe Solutions {#integrating-aem-with-other-adobe-solutions}
 
+Action: Wait to migrate until after mid-April 2024, when AEM supports it.
+
 AEM customers use the AEM Author UI to configure integrations with other Adobe solutions, including Adobe Target. 
 
 ![Integrating AEM with other solutions](/help/security/assets/jwt-deprecation.png)
@@ -28,9 +30,13 @@ As an example, here are [the instructions](https://docs.mktossl.com/docs/experie
 
 ## Cloud Manager APIs {#cloud-manager-apis}
 
+Action: Wait to migrate until after mid-April 2024, when AEM supports it.
+
 Customers create Adobe Developer Console projects so they can invoke [Cloud Manager APIs](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). The credentials in the Adobe Developer project should be migrated to the OAuth Server-to-Server credential type, once AEM and Cloud Manager support it. 
 
 ## Auto-generated projects {#autogen-projects}
+
+Action: No need to migrate.
 
 When Cloud Manager provisions AEM as a Cloud Service environments, it auto-generates an Adobe Developer Console project with JWT credentials. This project is marked as read-only, as illustrated in the screenshot below. Customers cannot and should not attempt to migrate these projects to OAuth Server-to-Server credentials; instead, Adobe will migrate these projects on its own, before the credentials are not usable.
 
