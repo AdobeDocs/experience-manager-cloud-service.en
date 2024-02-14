@@ -19,7 +19,7 @@ The release date for Cloud Manager release 2024.2.0 in AEM as a Cloud Service is
 
 ## What's New {#what-is-new}
 
-
+* Cloud Manager now supports self-service management of [pipeline variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) via the Cloud Manager UI.
 
 ## Early Adoption Program {#early-adoption}
 
@@ -61,6 +61,3 @@ The dashboard uses Google Lighthouse, an open-source, automated tool for improvi
 Interested in test-driving the new dashboard? To get started, send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID.
 
 ## Bug Fixes {#bug-fixes}
-
-* An error was corrected where configuration pipelines would fail at the build step with an unclear error message if the location of the configuration files was not set properly. The error message is now clear and indicates that the user should check that the location of the configuration files is correct.
-* When a build step finishes with status `FAILED` due to a `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, it is now properly described as an error due to merge conflicts with the destination branch.
