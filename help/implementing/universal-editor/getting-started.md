@@ -56,8 +56,15 @@ import "@adobe/universal-editor-cors";
 If you are not implementing a React app and/or require server-side rendering, an alternative method is to include the following to the document body.
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
+<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
 ```
+
+The latest version is always recommended, but previous versions of the service can be referenced in case of breaking changes.
+
+* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - The very latest UE CORS lib
+* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - The latest UE CORS lib under version 2.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - The latest UE CORS lib under version 2.1.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`- The exact UE CORS lib  version 2.1.1
 
 ## Add the Necessary OSGi Configurations {#osgi-configurations}
 
