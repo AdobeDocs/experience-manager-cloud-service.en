@@ -17,7 +17,13 @@ Tap or click the **Side Panel** icon in the sites console toolbar to activate th
 * [Content Tree](#content-tree)
 * [Timeline](#timeline)
 * [References](#references)
+* [Site](#site)
 * [Filter](#filter)
+* [Setup Analytics](#setup-analytics)
+
+![Side panel views of the Sites console](assets/sites-console-side-panel-views.png)
+
+The current view selected is indicated by a blue checkmark in the drop-down and the icon is updated with the name of the selected view.
 
 ## Content Only {#content-only}
 
@@ -47,9 +53,9 @@ Use the `Alt+1` keyboard shortcut to switch to the content tree view of the side
 
 ## Timeline {#timeline}
 
-The timeline can be used to view and/or initiate events that have occurred on the selected resource.
+The timeline can be used to view events that have affected the selected resource. You can also use it to start certain events such as workflows or versions.
 
-![Comment field](/help/sites-cloud/authoring/assets/comments.png)
+![Timeline details](/help/sites-cloud/authoring/assets/timeline-detail.png)
 
 The timeline column lets you view various events related to a selected item selectable as types from a drop-down list:
 
@@ -64,10 +70,12 @@ The timeline column lets you view various events related to a selected item sele
 
 In addition you can add/view comments about the selected item by using the **Comment** box shown at the bottom of the list of events. Typing a comment followed by `Return` will register the comment. It is shown when **Comments** or **Show All** is selected.
 
-Tn the Sites console you can also access additional features via the elipsis button next to the **Comment** field.
+In the Sites console you can also access additional features via the ellipsis button next to the **Comment** field.
 
 * [Save a version](/help/sites-cloud/authoring/features/page-versions.md)
 * [Start a workflow](/help/sites-cloud/authoring/workflows/applying.md)
+
+![Sites console comment field](assets/sites-console-comment-ellipsis.png)
 
 ### Accessing Page References {#accessing-page-references}
 
@@ -75,47 +83,11 @@ Tn the Sites console you can also access additional features via the elipsis but
 
 1. Select **References** using the toolbar icon (either before or after [selecting your page](#selecting-your-page-for-further-action)):
 
-   ![References view option](/help/sites-cloud/authoring/assets/references.png)
-
-   A list of reference types is shown:
+1. A list of reference types is shown:
 
    ![References view](/help/sites-cloud/authoring/assets/references-list.png)
 
 1. Select the required type of reference to show more details and (when appropriate) take further actions.
-
-### Creating a Version of Your Page {#creating-a-version-of-your-page}
-
-To create a [version](/help/sites-cloud/authoring/features/page-versions.md) of your page:
-
-1. To open the Timeline rail, select **[Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** using the toolbar icon (either before or after [selecting your page](#selecting-your-page-for-further-action)):
-
-   ![Timeline view option](/help/sites-cloud/authoring/assets/timeline.png)
-
-1. Select the ellipsis at the bottom right of the Timeline column to reveal extra buttons, including **Save as Version**.
-
-   ![Timeline view](/help/sites-cloud/authoring/assets/timeline-view.png)
-
-1. Select **Save as Version**, then **Create**.
-
-### Restoring/Comparing a Version of Your Page {#restoring-comparing-a-version-of-your-page}
-
-The same basic mechanism is used when restoring and/or comparing versions of your page:
-
-1. Select **[Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** using the toolbar icon (either before or after [selecting your page](#selecting-your-page-for-further-action)):
-
-   ![Timeline view option](/help/sites-cloud/authoring/assets/timeline.png)
-
-   If a version of your page has already been saved, it is listed in the Timeline.
-
-1. Select the version you want to restore - this will reveal additional action buttons:
-
-    * **Revert to this Version**
-
-        * The version is restored.
-
-    * **Show Differences**
-
-        * The page is opened with differences (between the two versions) highlighted.
 
 ## References {#references}
 
@@ -128,9 +100,7 @@ The same basic mechanism is used when restoring and/or comparing versions of you
 * Incoming Links
 * Use of the reference component: borrowed and lent content
 
-Open the required console, then navigate to the required resource and open **References** using:
-
-![References option](/help/sites-cloud/authoring/assets/references.png)
+Open the Sites console, then navigate to the required resource and open **References** in the side panel.
 
 [Select your required resource](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) to show a list of references types relevant to that resource:
 
@@ -148,14 +118,32 @@ Select the appropriate reference type for more information. In certain situation
 * [Blueprint](/help/sites-cloud/administering/msm/best-practices.md), provides details and various actions
 * [Languages Copies](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel), provides details and various actions
 
-## Events - Timeline {#events-timeline}
+## Site {#site}
 
-For appropriate resources (for example, pages from the **Sites** console, or assets from the **Assets** console) the [timeline can be used to show the recent activity on any selected items](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
+**Site** shows details of sites [created using a site template](/help/sites-cloud/administering/site-creation/create-site.md).
 
-Open the required console, then navigate to the required resource and open **Timeline**, using:
+![Site rail](../assets/site-rail.png)
 
-![Timeline option](/help/sites-cloud/authoring/assets/timeline.png)
+See the document [Using the Site Rail to Manage Your Site Theme](/help/sites-cloud/administering/site-creation/site-rail.md) for more details on how you can use the rail to manage the [theme of your site](/help/sites-cloud/administering/site-creation/site-themes.md).
 
-[Select your required resource](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), then either **Show All** or **Activities** to list any recent actions on the selected resources:
+If you have not yet set up the front-end pipeline to enable theme-based site creation, the side panel will offer that option.
 
-![Timeline details](/help/sites-cloud/authoring/assets/timeline-detail.png)
+![Option to enable front-end pipeline in side panel](assets/sites-console-side-panel-site.png)
+
+>[!TIP]
+>
+>An end-to-end description of the process of creating a site from a template and customizing its theme can be found in the [Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md).
+
+## Filter {#filter}
+
+This opens a panel similar to [search](/help/sites-cloud/authoring/getting-started/search.md) with the appropriate location filters already set, allowing you to further filter the content you want to view.
+
+![Filter example](/help/sites-cloud/authoring/assets/filter.png)
+
+Unlike other views of the side panel, to switch to another view either tap or click the `X` in the search field.
+
+## Setup Analytics {#setup-analytics}
+
+This view allows you to quickly set up Adobe Analytics for a selected site.
+
+![Setup Analytics](assets/sites-console-side-panel-setup-analytics.png)
