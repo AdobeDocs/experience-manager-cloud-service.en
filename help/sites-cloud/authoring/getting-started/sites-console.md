@@ -223,15 +223,6 @@ Due to the space restrictions in some windows, the toolbar can quickly become lo
 >
 >The individual icons available are documented in relation to the appropriate console/feature/scenario.
 
-* Keyboard navigation 
-
-  You can navigate a website using only the keyboard. This uses the standard browser functionality of the **TAB** key (or **OPT+TAB**) to move you between elements on the page that are focusable .
-
-  In the **Sites** console there is the added option to **Skip to main content**. This becomes visible as you tab through the header options, and speeds your navigation by allowing you to skip the standard elements in the (product) toolbar and taking you directly to the main content.
-
-  ![Skip to main content](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
-
-
 ## Locking and Unlocking a Page {#locking-unlocking}
 
 AEM lets you lock a page so that no one else can edit the contents. Locking is useful when you are making numerous edits to one specific page or when you need to freeze a page for a short while.
