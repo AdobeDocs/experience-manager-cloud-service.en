@@ -116,6 +116,7 @@ Summarized below are the continuous improvements for maintenance release 14813, 
 * GRANITE-48834: GRANITE-48830 GRANITE-48834 GRANITE-48813 upgrade .auth.ims .auth.oauth.
 * GRANITE-49031: Regression resulting in `@JsonIgnore` annotation being ignored on transient fields.
 * GRANITE-50157: safer redirects to inbox task URLs.
+* SCRNS-3961: 
 * SITES-15030: SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
 * SITES-15868: SITES-15030 SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
 * SITES-16079: SITES-15030 SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
@@ -126,6 +127,7 @@ Summarized below are the continuous improvements for maintenance release 14813, 
 * SITES-17768: GraphQL to output Dynamic Media URL for assets referenced in Content Fragments.
 * SITES-18021: update cq-content-sync to 5.14.2.
 * SKYOPS-66622: FORMS-11755,FORMS-12151,SKYOPS-69977 - Update to FACT tool version 0.5.180.
+* SKYOPS-68495: dispatcher image version 2.0.199 (#530).
 * SKYOPS-69977: SKYOPS-66622,FORMS-11755,FORMS-12151,SKYOPS-69977 - Update to FACT tool version 0.5.180.
 
 
@@ -157,7 +159,7 @@ Failing to update the dependency library will result in pipeline failures at the
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM OAK |1.58-T20231123092841-619e1bd|[Oak API 1.58.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.58.0/index.html)| 
+|AEM OAK |1.60-T20240131102219-0cde853|[Oak API 1.60.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.60.0/index.html)| 
 |AEM SLING API |Version 2.27.2 |[Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL|Version 1.4.20-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |AEM Core Components|Version 2.23.4|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
