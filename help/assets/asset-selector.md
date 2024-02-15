@@ -5,6 +5,7 @@ contentOwner: KK
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
 ---
+
 # Micro-Frontend Asset Selector {#Overview}
 
 Micro-Frontend Asset Selector provides a user interface that easily integrates with the [!DNL Experience Manager Assets] repository so that you can browse or search digital assets available in the repository and use them in your application authoring experience.
@@ -228,12 +229,12 @@ The following table describes some of the important properties of the Selected A
 | *tiff:imageLength* | number | The height of an asset. |
 | *computedMetadata* | `Record<string, any>` | An object which represents a bucket for all the asset's metadata of all kinds (repository, application, or embedded metadata). |
 | *_links* | `Record<string, any>` | Hypermedia links for the associated asset. Includes links for resources such as metadata and renditions. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition* | `Array<Object>`| Array of objects containing information about renditions of the asset. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].href* | string | The URI to the rendition.|
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].type* | string | The MIME type of the rendition.|
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size'* | number | The size of the rendition in bytes.|
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].width* | number | The rendition's width. |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].height* | number | The rendition's height. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>`| Array of objects containing information about renditions of the asset. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].href>* | string | The URI to the rendition.|
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].type>* | string | The MIME type of the rendition.|
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>'* | number | The size of the rendition in bytes.|
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].width>* | number | The rendition's width. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | number | The rendition's height. |
 
 For a complete list of properties and detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
@@ -396,3 +397,27 @@ Asset Selector lets you know the status of your uploaded assets. The status can 
 
 The integration of Asset Selector with [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] allows localized content appear in your application.
 -->
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
+This content appears in the iOS tab.
+
+>[!TAB Android]
+
+This content appears in the Android tab.
+
+>[!TAB Windows]
+
+This content appears in the Windows tab.
+
+>[!TAB MacOS]
+
+This content appears in the MacOS tab.
+
+>[!TAB Linux]
+
+This content appears in the Linux tab.
+
+>[!ENDTABS]
