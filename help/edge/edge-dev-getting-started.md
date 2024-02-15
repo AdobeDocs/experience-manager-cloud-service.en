@@ -156,3 +156,9 @@ Once you are finished editing your new site using the Universal Editor, you can 
 1. See your content published.
 
    ![Published content](assets/edge-dev-getting-started/published-site.png)
+
+## Next Steps {#next-steps}
+
+Now that you have a working AEM wuthoring with Edge Delivery Services project, you can begin creating and styling your own blocks.
+
+Please see the guide [Creating Blocks Instrumented for use with the Universal Editor](/help/edge/create-block.md) for more information.
