@@ -7,18 +7,18 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 14813 {#release-14813}
+## Release 14813 {#release-14945}
 
 Summarized below are the continuous improvements for maintenance release 14813, which was publicly released on January 11, 2023. The previous maintenance release was release 14697.
 
 2024.1.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-14813}
+### Enhancements {#enhancements-14945}
 
 * ASSETS-32101: Metadata for smart crop renditions should be updated in DB.
 * ASSETS-31297: Improve checks to prevent deletion of copied assets from dynamic media.
 
-### Fixed Issues {#fixed-issues-14813}
+### Fixed Issues {#fixed-issues-14945}
 
 * ASSETS-15977: Remove v1 search events * ASSETS-15977 Remove v1 events * ASSETS-15977 Remove pipeline producer.
 * ASSETS-18088: batik library security updates.
@@ -116,7 +116,7 @@ Summarized below are the continuous improvements for maintenance release 14813, 
 * GRANITE-48834: GRANITE-48830 GRANITE-48834 GRANITE-48813 upgrade .auth.ims .auth.oauth.
 * GRANITE-49031: Regression resulting in `@JsonIgnore` annotation being ignored on transient fields.
 * GRANITE-50157: safer redirects to inbox task URLs.
-* SCRNS-3961: 
+* SCRNS-3961: Jquery animation used in Fade transition leads to black screen.
 * SITES-15030: SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
 * SITES-15868: SITES-15030 SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
 * SITES-16079: SITES-15030 SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
@@ -131,11 +131,11 @@ Summarized below are the continuous improvements for maintenance release 14813, 
 * SKYOPS-69977: SKYOPS-66622,FORMS-11755,FORMS-12151,SKYOPS-69977 - Update to FACT tool version 0.5.180.
 
 
-### Known Issues {#known-issues-14813}
+### Known Issues {#known-issues-14945}
 
 None.
 
-### Change Notice {#change-notice-14813}
+### Change Notice {#change-notice-14945}
 
 **Action Required**
 
