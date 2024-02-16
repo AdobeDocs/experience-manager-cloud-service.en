@@ -79,7 +79,7 @@ This is the title of the page, rendered in capital letters as information.
 
 #### Mode Selector {#mode-selector}
 
-Displays the current [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) and lets you select another mode such as edit, layout, timewarp, or targeting.
+Displays the current [mode](/help/sites-cloud/authoring/getting-started/page-editor.md#mode-selector) and lets you select another mode such as edit, layout, timewarp, or targeting.
 
 ![Mode Selector button](/help/sites-cloud/authoring/assets/mode-selector.png)
 
@@ -161,7 +161,7 @@ If the page is subject to multiple workflows, the number of workflows is display
 
 ## Live Copy Status {#live-copy-status}
 
-The [Live Copy Status page mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) gives you a quick overview of the live copy status and which components are/are not inherited:
+The [Live Copy Status page mode](/help/sites-cloud/authoring/getting-started/page-editor.md#mode-selector) gives you a quick overview of the live copy status and which components are/are not inherited:
 
 * Green border: Inherited
 * Pink border: Inheritance has been cancelled
@@ -189,7 +189,7 @@ There are two options for previewing a page:
 
 ### Preview Mode {#preview-mode}
 
-When editing content you can preview the page using the preview [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes). This mode:
+When editing content you can preview the page using the preview [mode.](/help/sites-cloud/authoring/getting-started/page-editor.md#mode-selector) This mode:
 
 * Hides various edit mechanisms to give you a quick view of how the page will appear on publish.
 * Lets you use links to navigate.
@@ -201,7 +201,7 @@ When authoring, the preview mode is available using the icon at the top right of
 
 ### View as Published {#view-as-published}
 
-The **View as Published** option is available from the [Page Information](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) menu. This opens the page in a new tab, refreshes the content and shows the page exactly as it will appear in the publish environment.
+The **View as Published** option is available from the [Page Information](/help/sites-cloud/authoring/getting-started/page-editor.md#page-information) menu. This opens the page in a new tab, refreshes the content and shows the page exactly as it will appear in the publish environment.
 
 ## Locking and Unlocking a Page {#locking-unlocking}
 

@@ -159,7 +159,7 @@ Components are the elements provided by AEM so that you can add specific types o
 * Carousel
 * And many more
 
-Once you have created and opened a page you can [add content using the components](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component), which are available from the [component browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
+Once you have created and opened a page you can [add content using the components](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component), which are available from the [component browser](/help/sites-cloud/authoring/getting-started/editor-side-panel.md#components-browser).
 
 >[!TIP]
 >

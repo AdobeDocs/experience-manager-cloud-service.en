@@ -7,7 +7,7 @@ exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 ---
 # Developer Mode {#developer-mode}
 
-When editing pages in AEM, several [modes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) are available, including Developer mode. Developer mode opens a side panel with several tabs that provide a developer with technical information about the current page.
+When editing pages in AEM, several [modes](/help/sites-cloud/authoring/getting-started/sites-console.md#page-modes) are available, including Developer mode. Developer mode opens a side panel with several tabs that provide a developer with technical information about the current page.
 
 There are two tabs:
 
@@ -35,7 +35,7 @@ Developer mode is implemented as a side panel to the page editor. To open the pa
 
 The panel is divided into two tabs:
 
-* **[Components](#components)** - This shows a component tree, similar to the [content tree](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) for authors
+* **[Components](#components)** - This shows a component tree, similar to the [content tree](/help/sites-cloud/authoring/getting-started/editor-side-panel.md#content-tree) for authors
 * **[Errors](#errors)** - When problems occur, details are shown for each component.
 
 ### Components Tab {#components}

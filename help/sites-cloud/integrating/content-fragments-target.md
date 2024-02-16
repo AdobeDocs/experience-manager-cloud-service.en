@@ -354,7 +354,7 @@ To export a Content Fragment from AEM to Target (after specifying the Cloud Conf
 
 >[!NOTE]
 >
->Alternatively, you can perform the export from the page editor, using comparable commands in the [Page Information](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) menu.
+>Alternatively, you can perform the export from the page editor, using comparable commands in the [Page Information](/help/sites-cloud/authoring/getting-started/page-editor.md#page-information) menu.
 
 ## Using your Content Fragments in Adobe Target {#using-your-content-fragments-in-adobe-target}
 

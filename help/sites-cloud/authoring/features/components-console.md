@@ -13,7 +13,7 @@ It can be accessed from **Tools &gt;** **General &gt;** **Components**. Because 
 
 >[!NOTE]
 >
->The Components Console shows all components in the system. The [Component Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) shows components that are available to authors and hides any component groups that begin with a period ( `.`).
+>The Components Console shows all components in the system. The [Component Browser](/help/sites-cloud/authoring/getting-started/editor-side-panel.md#components-browser) shows components that are available to authors and hides any component groups that begin with a period ( `.`).
 
 ## Search {#search-field}
 

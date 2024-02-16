@@ -42,10 +42,10 @@ The component placeholder is an indicator to show where a component is positione
 
 ### Adding a Component from the Components Browser {#adding-a-component-from-the-components-browser}
 
-You can add a new component by using the [component browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). The [component placeholder](#component-placeholder) shows you where the component is positioned:
+You can add a new component by using the [component browser](help/sites-cloud/authoring/getting-started/editor-side-panel.md#components-browser). The [component placeholder](#component-placeholder) shows you where the component is positioned:
 
-1. Make sure that your page is in [**Edit** mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
-1. Open the [component browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
+1. Make sure that your page is in [**Edit** mode.](/help/sites-cloud/authoring/getting-started/page-editor.md#mode-selector)
+1. Open the [component browser.](/help/sites-cloud/authoring/getting-started/editor-side-panel.md#components-browser)
 1. Drag the required component to the [required position](#component-placeholder).
 1. [Edit](#edit-content) the component.
 
@@ -57,7 +57,7 @@ You can add a new component by using the [component browser](/help/sites-cloud/a
 
 You can add a new component by using the **Drag components here** placeholder of the paragraph system:
 
-1. Make sure that your page is in [**Edit** mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
+1. Make sure that your page is in [**Edit** mode.](/help/sites-cloud/authoring/getting-started/page-editor.md#mode-selector)
 1. There are two ways to select and add a new component from the paragraph system:
 
     * Select the **Insert Component** option (+) from either the toolbar of an existing component or the **Drag components here** box.
@@ -74,14 +74,14 @@ You can add a new component by using the **Drag components here** placeholder of
 
 ## Adding an Asset {#adding-asset}
 
-You can also add a new component to the page by dragging an asset from the [assets browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser). This automatically creates a component of the appropriate type (and containing the asset).
+You can also add a new component to the page by dragging an asset from the [assets browser](/help/sites-cloud/authoring/getting-started/editor-side-panel.md#assets-browser). This automatically creates a component of the appropriate type (and containing the asset).
 
 This behavior can be configured for your installation. Please see the document [Components Reference Guide](/help/implementing/developing/components/reference.md#component-placeholders) for further details.
 
 To create a component by dragging one of the above asset types:
 
-1. Make sure that your page is in [**Edit** mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
-1. Open the [asset browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
+1. Make sure that your page is in [**Edit** mode.](/help/sites-cloud/authoring/getting-started/page-editor.md#mode-selector)
+1. Open the [asset browser](/help/sites-cloud/authoring/getting-started/editor-side-panel.md#assets-browser).
 1. Drag the required asset to the required position. The [component placeholder](#component-placeholder) shows you where the component is positioned.
 
    * A component, appropriate for the asset type, is created at the required location - it contains the selected asset.
@@ -168,7 +168,7 @@ The actual actions available to the user are shown as appropriate and not all ac
 
 * **Layout**
 
-  This lets you modify the [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) of the selected component. This only applies to the selected component and does not activate the [Layout mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) for the entire page.
+  This lets you modify the [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) of the selected component. This only applies to the selected component and does not activate the [Layout mode](/help/sites-cloud/authoring/getting-started/page-editor.md#mode-selector) for the entire page.
 
   ![Layout button](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

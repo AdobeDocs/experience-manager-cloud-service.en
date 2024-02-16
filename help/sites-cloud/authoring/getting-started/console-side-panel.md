@@ -79,7 +79,7 @@ In the Sites console you can also access additional features via the ellipsis bu
 
 ### Accessing Page References {#accessing-page-references}
 
-[Quick access to references](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) to/from a page are available in the References Rail.
+[Quick access to references](/help/sites-cloud/authoring/getting-started/console-side-panel.md#references) to/from a page are available in the References Rail.
 
 1. Select **References** using the toolbar icon (either before or after [selecting your page](#selecting-your-page-for-further-action)):
 

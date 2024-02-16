@@ -124,8 +124,8 @@ This lets you add extra content [in-between (that is, in-between content)](/help
 
 For in-between content you can:
 
-* Add components from the [Components browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
-* Add assets from the [Assets browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
+* Add components from the [Components browser.](/help/sites-cloud/authoring/getting-started/editor-side-panel.md#components-browser)
+* Add assets from the [Assets browser.](/help/sites-cloud/authoring/getting-started/editor-side-panel.md#assets-browser)
 * Use [Associated Content](#using-associated-content) as a source for in-between content.
 
 >[!CAUTION]

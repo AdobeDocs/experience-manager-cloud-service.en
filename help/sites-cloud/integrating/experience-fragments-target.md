@@ -346,7 +346,7 @@ To export an experience fragment from AEM to Target (after specifying the Cloud 
 
 >[!NOTE]
 >
->Alternatively, you can perform the export from the page editor, using comparable commands in the [Page Information](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) menu.
+>Alternatively, you can perform the export from the page editor, using comparable commands in the [Page Information](/help/sites-cloud/authoring/getting-started/page-editor.md#page-information) menu.
 
 ## Using your Experience Fragments in Adobe Target {#using-your-experience-fragments-in-adobe-target}
 

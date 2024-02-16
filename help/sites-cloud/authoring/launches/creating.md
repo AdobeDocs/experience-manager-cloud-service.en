@@ -7,7 +7,7 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 
 Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page:
 
-* The title appears in the [References](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) rail, from where authors can access them to work on them.
+* The title appears in the [References](/help/sites-cloud/authoring/getting-started/console-side-panel.md#references) rail, from where authors can access them to work on them.
 * The child pages of the source page are included in the launch by default. You can use only the source page if desired.
 * By default, [Live Copy](/help/sites-cloud/administering/msm/overview.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.
 

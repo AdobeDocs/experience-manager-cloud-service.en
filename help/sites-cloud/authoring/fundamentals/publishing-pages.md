@@ -162,7 +162,7 @@ To publish or unpublish a page using Manage Publication:
 
    You can use the **Add Content** button to add additional pages to the list of pages to be published in case you neglected to select one before starting the Manage Publication wizard.
 
-   Selecting the **Add Content** button starts the [path browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) to allow content selection.
+   Selecting the **Add Content** button starts the [path browser](/help/sites-cloud/authoring/fundamentals/path-selection.md) to allow content selection.
 
    Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
 
@@ -305,6 +305,6 @@ You can determine the publication status of a page:
 
   ![Publication status in timeline view](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
 
-* In the [Page Information menu](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) when editing a page
+* In the [Page Information menu](/help/sites-cloud/authoring/getting-started/page-editor.md#page-information) when editing a page
 
   ![Publication status in Page Information menu](/help/sites-cloud/authoring/assets/publishing-status-page-information.png)

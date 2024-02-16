@@ -137,7 +137,7 @@ There are various help resources available:
 
   Navigate this overview as you would the [product navigation overview](#product-navigation) when first accessing any console.
 
-  From the [**Page Information** menu you can select **Help**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) to show this again at any time.
+  From the [**Page Information** menu you can select **Help**](#accessing-help) to show this again at any time.
 
 * **Tools Console**
 
