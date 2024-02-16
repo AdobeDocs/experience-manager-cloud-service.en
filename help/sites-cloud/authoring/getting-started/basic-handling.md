@@ -6,24 +6,23 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 
 # Basic Handling {#basic-handling}
 
-This document is designed to give an overview of basic handling when using the AEM author environment. It uses the **Sites** console as a basis.
+This document is designed to give an overview of basic handling when using the AEM author environment.
 
->[!NOTE]
+>[!TIP]
 >
->* Some functionality is not available in all consoles and additional functionality may be available in some consoles. Specific information about the individual consoles and their related functionality are covered in more detail on other pages.
->* Keyboard shortcuts are available throughout AEM. In particular when [using consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) and [editing pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+>Keyboard shortcuts are available throughout AEM. In particular when [using the sites console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) and [the page editor](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 {{edge-delivery-authoring}}
 
 ## A Touch-Enabled UI {#a-touch-enabled-ui}
 
-AEM's user interface is enabled for touch. A touch-enabled interface lets you use touch to interact with the software through gestures such as select, touch-and-hold, and swipe. Because the AEM UI is touch-enabled, you can use the touch gestures on your touch devices such as your mobile phone or tablet. However mouse actions on a traditional desktop device are also available, giving you flexibility in how you choose to author your content.
+AEM's user interface is enabled for touch. A touch-enabled interface lets you use touch to interact with the software through gestures such as tap, tap-and-hold, and swipe. Because the AEM UI is touch-enabled, you can use the touch gestures on your touch devices such as your mobile phone or tablet. However mouse actions on a traditional desktop device are also available, giving you flexibility in how you choose to author your content.
 
 ## First Steps {#first-steps}
 
 Immediately after logging in you arrive on the [Navigation panel](#navigation-panel). Selecting one of the options opens the respective console.
 
-![Navigation panel](/help/sites-cloud/authoring/assets/navigation.png)
+![Navigation panel](assets/basic-handling-navigation.png)
 
 To get a good understanding of the basic use of AEM, this document is based on the **Sites** console. Select on **Sites** to get started.
 
@@ -31,7 +30,7 @@ To get a good understanding of the basic use of AEM, this document is based on t
 
 Whenever a user first accesses a console, a product navigation tutorial is started. Take a minute to select through to get a good overview of the basic handling of AEM.
 
-![Navigation tutorial](/help/sites-cloud/authoring/assets/tutorial.png)
+![Navigation tutorial](assets/basic-navigation-console-tutorial.png)
 
 Select **Next** to advance to the next page of the overview. Select **Close** or select outside of the overview dialog to close.
 
@@ -39,11 +38,11 @@ The overview will restart the next time you access a console unless you either v
 
 ## Global Navigation {#global-navigation}
 
-You can navigate between the consoles using the global navigation panel. This is triggered as a full-screen drop-down when you select the Adobe Experience Manager link at the top-left of the screen.
+You can navigate between the consoles using the global navigation panel. This is triggered as a full-screen drop-down when you select the **Adobe Experience Manager** link at the top-left of the screen.
 
 You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
 
-![Navigation panel top bar](/help/sites-cloud/authoring/assets/navigation-bar.png)
+![Navigation panel top bar](assets/basic-handling-navigation-bar.png)
 
 Global navigation has two panels, represented by icons at the left-margin of the screen:
 
@@ -54,9 +53,9 @@ The options available on these panels are described below.
 
 ### Navigation Panel {#navigation-panel}
 
-The Navigation panel:
+The **Navigation** panel:
 
-![Navigation panel](/help/sites-cloud/authoring/assets/navigation.png)
+![Navigation panel](assets/basic-handling-navigation.png)
 
 The title of the browser tab will update to reflect your location as you navigate through the consoles and content.
 
@@ -73,9 +72,9 @@ From Navigation the consoles available are:
 
 ## Tools Panel {#tools-panel}
 
-In the Tools panel has a side panel containing a range of categories, that group together similar Tools consoles. The Tools consoles provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+In the **Tools** panel has a side panel containing a range of categories, that group together similar consoles. The **Tools** consoles provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
-![Tools panel](/help/sites-cloud/authoring/assets/tools-panel.png)
+![Tools panel](assets/basic-handling-tools.png)
 
 ## The Header {#the-header}
 
@@ -83,19 +82,15 @@ The header is always present at the top of the screen. While most options in the
 
 ![Navigation header](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
-* [Global Navigation](#global-navigation)
-
-  Select the **Adobe Experience Manager** link to navigate between consoles.
+* [Global Navigation](#global-navigation) - Select the **Adobe Experience Manager** link to navigate between consoles.
 
   ![Global navigation](/help/sites-cloud/authoring/assets/global-navigation.png)
 
-* [Search](/help/sites-cloud/authoring/getting-started/search.md)
+* [Search](/help/sites-cloud/authoring/getting-started/search.md) - You can also use the [shortcut key](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
 
   ![Search icon](/help/sites-cloud/authoring/assets/search-icon.png)
 
-  You can also use the [shortcut key](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
-
-* [Solutions](https://www.adobe.com/experience-cloud.html)
+* [Solutions](https://www.adobe.com/experience-cloud.html) - Select this to access your other Adobe solutions.
 
   ![Solutions button](/help/sites-cloud/authoring/assets/solutions.png)
 
@@ -103,54 +98,43 @@ The header is always present at the top of the screen. While most options in the
 
   ![Help button](/help/sites-cloud/authoring/assets/help.png)
 
-* [Notifications](/help/sites-cloud/authoring/getting-started/inbox.md)
+* [Notifications](/help/sites-cloud/authoring/getting-started/inbox.md) -   This icon is badged with the number of currently assigned incomplete notifications.
 
   ![Notifications button](/help/sites-cloud/authoring/assets/notifications.png)
-
-  This icon is badged with the number of currently assigned incomplete notifications.
   
-* [User Properties](/help/sites-cloud/authoring/getting-started/account-environment.md)
+* [User Properties](/help/sites-cloud/authoring/getting-started/account-environment.md) - Select this to change your user settings.
 
   ![User Properties button](/help/sites-cloud/authoring/assets/user-properties.png)
 
 ## Accessing Help {#accessing-help}
 
-There are various help resources available:
+There are a number of help resources available and a few ways to access it.
 
-* **Console Toolbar**
+* **Toolbar** - Depending on your location, the **Help** icon opens the appropriate resources:
 
-  Depending on your location, the **Help** icon opens the appropriate resources:
+  ![Help icon](assets/basic-handling-help.png)
 
-  ![Help icon](/help/sites-cloud/authoring/assets/help-console.png)
+* **Console** - The first time you navigate the system, [a series of slides introduce AEM navigation](#product-navigation).
 
-* **Navigation**
+  ![Tutorial](assets/basic-handling-console-tutorial.png)
 
-  The first time you navigate the system, [a series of slides introduce AEM navigation](#product-navigation).
+* **Page Editor** - The first time you edit a page a series of slides introduce the page editor.
 
-  ![Tutorial](/help/sites-cloud/authoring/assets/tutorial.png)
+  ![Editor tutorial](assets/basic-handling-editor-tutorial.png)
 
-* **Page Editor**
+  * Navigate this overview as you would the [product navigation overview](#product-navigation) when first accessing any console.
+  * From the [**Page Information** menu you can select **Help**](#accessing-help) to show this again at any time.
 
-  The first time you edit a page a series of slides introduce the page editor.
-
-  ![Editor tutorial](/help/sites-cloud/authoring/assets/editor-tutorial.png)
-
-  Navigate this overview as you would the [product navigation overview](#product-navigation) when first accessing any console.
-
-  From the [**Page Information** menu you can select **Help**](#accessing-help) to show this again at any time.
-
-* **Tools Console**
-
-  From the **Tools** console you can also access the external **Resources**:
+* **Tools Console** - From the **Tools** console you can also access the external **Resources**:
 
   * **Documentation** - View the Web Experience Management documentation
   * **Developer Resources** - Developer resources and downloads
 
-  >[!NOTE]
-  >
-  >You can access an overview of shortcut keys available at any time using the hotkey `?` (question mark) when in a console.
-  >
-  >For an overview of all keyboard shortcuts see the following documentation:
-  >
-  >* [Keyboard shortcuts for editing pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-  >* [Keyboard shortcuts for consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+>[!TIP]
+>
+>You can access an overview of shortcut keys available at any time using the hotkey `?` (question mark) when in a console.
+>
+>For an overview of all keyboard shortcuts see the following documentation:
+>
+>* [Keyboard shortcuts for editing pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
+>* [Keyboard shortcuts for consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
