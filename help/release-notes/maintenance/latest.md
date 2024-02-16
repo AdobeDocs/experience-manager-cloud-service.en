@@ -20,50 +20,27 @@ Summarized below are the continuous improvements for maintenance release 14813, 
 
 ### Fixed Issues {#fixed-issues-14945}
 
-* ASSETS-15977: Remove v1 search events * ASSETS-15977 Remove v1 events * ASSETS-15977 Remove pipeline producer.
-* ASSETS-18088: batik library security updates.
+Note: generated from prod-14697..d412fc5c0f
+* ASSETS-15977: Remove deprecated v1 search events and pipeline producer.
+* ASSETS-18088: Upgrade batik library dependencies to 1.17.
 * ASSETS-21965: Metadata writeback workflow must only launch on asset metadata changes.
-* ASSETS-23489: create repository-insights-agent as directCountsPrincipal.
-* ASSETS-23815: add subject detection support.
-* ASSETS-24739: Disable Frame.io Custom Action Endpoint on Publish.
-* ASSETS-26368: Update to cq-dam-processor-nui 1.1.814 for ASSETS-26368.
-* ASSETS-26413: XSS in collectionsettings.js * ASSETS-26413 - content model updates.
-* ASSETS-26430: XSS in collection.js * ASSETS-26430 - content model exclusions.
-* ASSETS-26431: XSS in columnpreview.js * ASSETS-26431 - content model updates.
-* ASSETS-26489: Update to cq-dam-content 2.6.1606. Issues fixed: ASSETS-34088, ASSETS-33300, ASSETS-33296, ASSETS-31274, ASSETS-26489.
-* ASSETS-26492: XSS in childasset.jsp * ASSETS-28963 [VULN-25903] & ASSETS-26492 SECURITY * Upgrading cq-dam-content version to fix ASSETS-28963 [VULN-25903] & ASSETS-26492.
+* ASSETS-26368: Scheduled Bulk Import Jobs Not Removed if Job Config does not Exist.
 * ASSETS-26549: Assets / Nodes with "jcr:lastModifiedBy": "workflow-process-service" show as "external user" in list view.
-* ASSETS-26842: Update to cq-dam-content 2.6.1572. Issue fixed: ASSETS-26842.
-* ASSETS-27066: Update to cq-dam-content 2.6.1556, cq-dam-download 1.0.132. Issues fixed: ASSETS-27066, ASSETS-31280.
-* ASSETS-27290: ASSETS-29453 update cq-dam-content version.
-* ASSETS-27529: [VULN-25622] Stored XSS in /libs/dam/gui/coral/components/commons/assetselector/test/clientlibs/test/js/demo.js * ASSETS-27529 and ASSETS-31324 updated XSS securities in DAM content.
-* ASSETS-28284: ASSETS-29037.
-* ASSETS-28708: ASSETS-31657 Support new Content Hub service code in granite.auth.ims bundle ASSETS-28708 Instrument exchangeTokenByIMSOrg with trace level timings Update to released granite.auth.ims bundle 1.4.42.
-* ASSETS-28767: Updated cq-dam-mac-sync version.
-* ASSETS-28894: XSS in reportlist.js * ASSETS-28894 - update granite.ui.content to 0.8.1376.
-* ASSETS-28963: [VULN-25903] & ASSETS-26492 SECURITY * Upgrading cq-dam-content version to fix ASSETS-28963 [VULN-25903] & ASSETS-26492.
-* ASSETS-29011: Smart crop visible for read only users.
-* ASSETS-29037: ASSETS-28284 ASSETS-29037 * ASSETS-29037 isolate /var/dam/subjects cq:tags permission * ASSETS-29037 remove rep:write for content-authors on /var/dam/subjects/persons * ASSETS-29037 remove jcr:read for contributor on /var/dam/subjects/persons * ASSETS-29037 restore group perms on /var/dam/subjects * ASSETS-29037 upgrade it/platform serverside-security test-module to 6.6.136.
-* ASSETS-29141: Update to cq-dam-api 6.1.170, cq-dam-core 5.15.68, cq-dam-processor-nui 1.1.808, cq-dam-processor-api 1.1.86, cq-dam-eventing 1.0.36. Issue fixed: ASSETS-29141.
-* ASSETS-29348: Update to cq-dam-core 5.15.64, cq-dam-processor-dm 1.0.54. Issues fixed: ASSETS-31256, ASSETS-29348.
-* ASSETS-29453: ASSETS-27290 ASSETS-29453 update cq-dam-content version.
-* ASSETS-29454: [VULN-26006] Update cq-dam-content version SECURITY * ASSETS-29454 Updated sidecar version.
-* ASSETS-29738: Updating commons.mime for more up to date mime-type support.
-* ASSETS-30068: New status COMPLETED_WITH_ERROR for bulk import AE.
-* ASSETS-30171: Updated dam-eventing version for ASSETS-30171.
-* ASSETS-30261: Update to cq-dam-eventing 1.0.32. Issue fixed: ASSETS-30261.
-* ASSETS-30354: XSS in publishwizard wizard.js.
-* ASSETS-30405: XSS [VULN-26170].
-* ASSETS-30406: vulnerability fix for video preset editor.
-* ASSETS-30410: Update sidecar version.
-* ASSETS-30538: Updated dam-core version 5.15.72 for ASSETS-30538.
-* ASSETS-30591: add ide-support-open-any-class profile.
-* ASSETS-30626: Updated asset-delivery bundle version.
-* ASSETS-30756: asset move fails when folder name ends in 'html'.
-* ASSETS-30810: Sanitize tags before rendering legacy youtube config.
+* ASSETS-26842: Update "Firefly" text to read "App Builder" in Processing Profile.
+* ASSETS-28708: Very slow response for some IMS token requests.
+* ASSETS-28767: Inconsistent publish state on assets if folder containing large no. of assets published.
+* ASSETS-29011: Smart crop is visible for read-only users.
+* ASSETS-29348: AssetMoveEventHandler can consume too much memory.
+* ASSETS-29738: Asset Upload Restriction fails with NullPointerException for woff files.
+* ASSETS-30068: Bulk Import Asset Essentials to include status COMPLETED_WITH_ERROR for "job completed, but with error".
+* ASSETS-30261: Incorrect imsUserId sent to Pipeline for asset events.
+* ASSETS-30538: View Page option is Missing after Moving a PDF file.
+* ASSETS-30626: Failure to create delivery request reported for assets with empty assetId.
+* ASSETS-30756: Move Asset Wizard action fails when folder name ends in 'html'.
 * ASSETS-30987: Update eventing bundle for ASSETS-30987.
-* ASSETS-31015: 
-* ASSETS-31038: Add user mapping for eventrecorderhelper.
+* ASSETS-31015: Unable to upload Assets with .msg filename extension.  
+* ASSETS-31038: Tasks events that are received by the notification service are not being processed.
+* --- RESUME EDITING HERE ---
 * ASSETS-31097: added exclusions for ui-wcm-commons changes. * ASSETS-31097 update ui-wcm-commons artifact. * ASSETS-31097 updated exclusions. * ASSETS-31097 updated exclusions. * ASSETS-31097 updated exclusions.
 * ASSETS-31256: Update to cq-dam-core 5.15.64, cq-dam-processor-dm 1.0.54. Issues fixed: ASSETS-31256, ASSETS-29348.
 * ASSETS-31260: Resolve select issues with schema forms.
