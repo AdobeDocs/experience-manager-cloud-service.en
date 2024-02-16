@@ -1,6 +1,6 @@
 ---
 title: JWT Credentials Deprecation in Adobe Developer Console
-description: Learn about the impact of JWT credentials deprecation in Adobe Developer Console
+description: Learn about the impact of JWT credentials deprecation in Adobe Developer Console on AEM
 ---
 
 # JWT Credentials Deprecation in Adobe Developer Console {#jwt-credentials-deprecation-in-adobe-developer-console}
@@ -9,7 +9,7 @@ Adobe Developer Console is the place to generate credentials enabling access to 
 
 This article provides some additional context for AEM as a Cloud Service and AEM 6.5 customers, regarding Adobe's expectations.
 
-AEM features do not currently support OAuth Server-to-Server credentials. Support will come by early April 2024 through an AEM release for AEM as a Cloud Service, and a small, dedicated Service Pack for AEM 6.5. You may have received an email instructing you to migrate your credentials, but rest assured that you can and should hold off on the migration until AEM supports the new credential type.
+AEM features do not currently support OAuth Server-to-Server credentials. Support will come by early April 2024 through an AEM release for AEM as a Cloud Service, and a special bundle to install for AEM 6.5 (Service Pack 21 and higher will include it). You may have received an email instructing you to migrate your credentials, but rest assured that you can and should hold off on the migration until AEM supports the new credential type.
 
 The sections below list of the scenarios where customers must (or must not) replace their Service Account (JWT) credentials with OAuth Server-to-Server credentials, **once AEM supports them**. [Read how](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) to replace the credentials.
 
@@ -22,11 +22,11 @@ The sections below list of the scenarios where customers must (or must not) repl
 
 Action: Wait to migrate until after mid-April 2024, when AEM supports it.
 
-AEM customers use the AEM Author UI to configure integrations with other Adobe solutions, including Adobe Target. 
+AEM customers use the AEM Author UI to configure integrations with all other Adobe solutions. For example, Adobe Target, Adobe Analytics, Adobe Launch, AFCS, and many more.
 
 ![Integrating AEM with other solutions](/help/security/assets/jwt-deprecation.png)
 
-As an example, here are [the instructions](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html?lang=en#prerequisites) for configuring the integration with Adobe Target. The API key in the "Completing the IMS Configuration in AEM" section should be migrated to the OAuth Server-to-Server credential type, once AEM supports those credentials.
+As an example, here are [the instructions](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html?lang=en#prerequisites) for configuring the integration with Adobe Target. The API key in the "Completing the IMS Configuration in AEM" section should be migrated to the OAuth Server-to-Server credential type, once AEM supports those credentials. [Those instructions](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html?lang=en#prerequisites) will be updated will revised to help you apply the new S2S OAuth credentials.
 
 ## Cloud Manager APIs {#cloud-manager-apis}
 
