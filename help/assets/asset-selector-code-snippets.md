@@ -115,7 +115,7 @@ assetSelectorProps.infoPopoverMap = infoPopoverMap;
 ```
 // object `imsProps` to be defined as below 
 let imsProps = {
-imsClientId: <IMS Client Id>, // please refer Appendix Item (6) for IMS client creation
+imsClientId: <IMS Client Id>,
 imsScope: "openid",
 redirectUrl: window.location.href,
 modalMode: true,
