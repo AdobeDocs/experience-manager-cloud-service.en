@@ -46,13 +46,13 @@ You can use Forms as a Cloud Service to create an adaptive form (Digital Enrollm
 1. Log in to Cloud Manager and open your AEM Forms as a Cloud Service Instance.
 1. Open the Edit Program option, go to the Solutions & Add-ons tab:
 
-    * If you have production environment, select **[!UICONTROL Forms - Communications]** option to enable Forms - Digital Enrollment and Forms - Communications Add-On.
+    * If you have a production environment, select **[!UICONTROL Forms - Communications]** option to enable Forms - Digital Enrollment and Forms - Communications Add-On.
 
       ![Communications](assets/communications.png)  
 
     <!-- If you have already enabled the **[!UICONTROL Forms - Digital Enrollment]** option, then select the **[!UICONTROL Forms - Communications Add-On]** option. ![Addon](assets/add-on.png) -->
 
-    * If you have staging environment, select **[!UICONTROL Forms]** to enable Forms - Digital Enrollment and Forms - Communications Add-On.
+    * If you have a sandbox environment, select **[!UICONTROL Forms]** to enable Forms - Digital Enrollment and Forms - Communications Add-On.
 
         ![Form-Digital Enrollment selection](assets/forms-digital-enrollment1.png)
 
