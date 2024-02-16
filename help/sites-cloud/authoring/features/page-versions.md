@@ -201,7 +201,7 @@ To use this feature:
 
 ### Using Timewarp {#using-timewarp}
 
-Timewarp is a [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) of the page editor. To start it, simply switch it as you would any other mode.
+Timewarp is a [mode](/help/sites-cloud/authoring/getting-started/page-editor.md#page-modes) of the page editor. To start it, simply switch it as you would any other mode.
 
 1. Start the editor for the page where you want to start Timewarp and then select **Timewarp** in the mode selection.
 

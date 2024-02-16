@@ -110,7 +110,7 @@ You can specify details:
 
 1. In the **Scope** step you can select:
 
-    * **Add Content** to open the [path browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) and select additional resources; when in the browser, select **Select** to add the content to the workflow instance.
+    * **Add Content** to open the [path browser](/help/sites-cloud/authoring/fundamentals/path-selection.md) and select additional resources; when in the browser, select **Select** to add the content to the workflow instance.
 
     * An existing resource to see additional actions:
 

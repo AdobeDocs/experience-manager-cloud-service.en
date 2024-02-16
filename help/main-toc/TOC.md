@@ -266,7 +266,6 @@ user-guide-title: AEM as a Cloud Service
       + [Keyboard Shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
     + [Headless Content Author Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
     + Authoring Fundamentals {#fundamentals}
-      + [Environment and Tools](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
       + [Adding Page Annotations](/help/sites-cloud/authoring/fundamentals/annotations.md)
       + [Creating a New Site](/help/sites-cloud/authoring/fundamentals/create-site.md)
       + [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
