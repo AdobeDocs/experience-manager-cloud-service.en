@@ -23,7 +23,8 @@ The release date for Cloud Manager release 2024.2.0 in AEM as a Cloud Service is
 * [The preview service](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice) will now be enabled for environments created before the preview service feature was rolled out.
 * [Cloud Manager custom permissions](/help/implementing/cloud-manager/custom-permissions.md) let you create custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.
   * This feature began rolling out in a phased manner with the [December 2023 release](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md) and will be complete on 20 February 2024.
-* For all new environments, the environment product profile names will be a more user-friendly format based on a combination of profile description, environment type, number, and program number.
+* For all new environments, the [environment product profile](/help/onboarding/aem-cs-team-product-profiles.md) names will be a more user-friendly format based on a combination of profile description, environment type, number, and program number.
+* [The build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) has been updated to Maven version 3.9.4 and JDK versions jdk-11.0.22 and jdk1.8.0_401.
 
 ## Early Adoption Program {#early-adoption}
 
