@@ -6,7 +6,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 
 # Creating and Organizing Pages {#creating-and-organizing-pages}
 
-This document describes how to create and manage pages with Adobe Experience Manager Cloud Service so that you can then [create content](/help/sites-cloud/authoring/fundamentals/editing-content.md) on those pages.
+This document describes how to create and manage pages with Adobe Experience Manager Cloud Service so that you can then [create content](/help/sites-cloud/authoring/getting-started/edit-content.md) on those pages.
 
 >[!NOTE]
 >
@@ -159,7 +159,7 @@ Components are the elements provided by AEM so that you can add specific types o
 * Carousel
 * And many more
 
-Once you have created and opened a page you can [add content using the components](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component), which are available from the [component browser](/help/sites-cloud/authoring/getting-started/editor-side-panel.md#components-browser).
+Once you have created and opened a page you can [add content using the components](help/sites-cloud/authoring/getting-started/edit-content.md#inserting-a-component), which are available from the [component browser](/help/sites-cloud/authoring/getting-started/editor-side-panel.md#components-browser).
 
 >[!TIP]
 >
@@ -242,7 +242,7 @@ After creating a page, or navigating to an existing page (in the console), you c
 
    ![Edit button](/help/sites-cloud/authoring/assets/edit.png)
 
-1. The page is opened and you can [edit the page](/help/sites-cloud/authoring/fundamentals/editing-content.md) as required.
+1. The page is opened and you can [edit the page](/help/sites-cloud/authoring/getting-started/edit-content.md) as required.
 
 >[!NOTE]
 >
@@ -413,7 +413,7 @@ The status of asynchronous jobs can be checked in the [**Async Jobs Status** das
 
 ### Locking a Page {#locking-a-page}
 
-You can [lock/unlock a page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) from either a console or when editing an individual page. Information about whether a page is locked is also shown in both locations.
+You can [lock/unlock a page](/help/sites-cloud/authoring/getting-started/edit-content.md#locking-a-page) from either a console or when editing an individual page. Information about whether a page is locked is also shown in both locations.
 
 ![Lock button](/help/sites-cloud/authoring/assets/lock.png)
 ![Unlock button](/help/sites-cloud/authoring/assets/unlock.png)

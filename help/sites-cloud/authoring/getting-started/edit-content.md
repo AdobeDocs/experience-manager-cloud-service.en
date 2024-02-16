@@ -136,7 +136,7 @@ The actual actions available to the user are shown as appropriate and not all ac
 
 * **Insert component**
 
-  This opens the dialog to [add a new component](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  This opens the dialog to [add a new component.](#adding-a-component-from-the-paragraph-system)
 
   ![Insert button](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
 
@@ -168,7 +168,7 @@ The actual actions available to the user are shown as appropriate and not all ac
 
 * **Layout**
 
-  This lets you modify the [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) of the selected component. This only applies to the selected component and does not activate the [Layout mode](/help/sites-cloud/authoring/getting-started/page-editor.md#mode-selector) for the entire page.
+  This lets you modify the [layout](#editing-component-layout) of the selected component. This only applies to the selected component and does not activate the [Layout mode](/help/sites-cloud/authoring/getting-started/page-editor.md#mode-selector) for the entire page.
 
   ![Layout button](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

@@ -201,7 +201,7 @@ The Experience Fragment Editor offers you similar capabilities to the normal pag
 
 >[!NOTE]
 >
->See [Editing Page Content](/help/sites-cloud/authoring/fundamentals/editing-content.md) for more information on how to use the page editor.
+>See [Editing Page Content](/help/sites-cloud/authoring/getting-started/edit-content.md) for more information on how to use the page editor.
 
 The following example procedure illustrates how to create a teaser for a product:
 
