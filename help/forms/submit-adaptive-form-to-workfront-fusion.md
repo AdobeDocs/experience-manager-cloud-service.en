@@ -15,28 +15,25 @@ exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 
 For example, using Workfront Fusion, you can create a scenario to gather data with Adaptive Form, process the data, and send the data to a data store for archival. Once a scenario is set up, Workfront Fusion automatically executes the tasks whenever a user fills out a form, updating the data store seamlessly.
 
-AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
+AEM Forms as a Cloud Service provides an OOTB connector to connect and submit an Adaptive Form to Adobe Workfront Fusion. Submitting a form to Adobe Workfront Fusion can offer several advantages:
+* It enabled seamless transfer of form submissions data to Workfront Fusion workflows.
+* It helps automate various tasks triggered by form submissions. This can include initiating projects, assigning tasks to specific team members, sending notifications, and updating project statuses—all without manual intervention.
+* All form submissions captured within Workfront Fusion, provide a single source of truth for project-related information
 
 
-## Advantages of using Adobe Workfront Fusion{#advatages-of-workfront-fusion}
+<!--  AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.-->
 
-Some of the advantages of using Adobe Workfront Fusion with AEM Forms:
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
-* Sending data captured with Adaptive Forms to a Workfront Fusion scenario
-* Automating tasks which are less prone to errors.
-* Customizing requirements specific to an organization that are not directly included in Workfront.
-* Handling simple logics and straightforward decisions, for example, if/then statements.
 
 ## Prerequisites to integrate AEM Forms with Adobe Workfront Fusion {#prerequisites}
 
-Prerequisites required to connect Workfront Fusion to AEM Forms are:
+To establish a connection between Workfront Fusion and AEM Forms, the following are necessary:
 
-* A valid [Workfront Fusion license](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* A valid [ Worfront and Workfront Fusion license](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * An AEM user with right to access [Dev Console](https://my.cloudmanager.adobe.com/) to [retrieve the service credentials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## Integrate AEM Forms with Adobe Workfront Fusion
-
->[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 To connect [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) to a form, perform the following steps:
 
