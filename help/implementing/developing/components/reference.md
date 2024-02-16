@@ -193,7 +193,7 @@ Child nodes of particular interest include:
 
 ### Dialogs {#dialogs}
 
-Dialogs are a key element of your component as they provide an interface for authors to configure the component on a content page and provide input for that component. See the [authoring documentation](/help/sites-cloud/authoring/fundamentals/editing-content.md) for details on how content authors interact with components.
+Dialogs are a key element of your component as they provide an interface for authors to configure the component on a content page and provide input for that component. See the [authoring documentation](/help/sites-cloud/authoring/getting-started/edit-content.md) for details on how content authors interact with components.
 
 Depending on the complexity of the component your dialog may need one or more tabs.
 

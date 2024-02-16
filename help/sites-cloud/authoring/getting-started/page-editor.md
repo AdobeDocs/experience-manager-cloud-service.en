@@ -48,11 +48,11 @@ Page Information opens a menu that also provides details about the last edit and
 * [Open Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md)
 * [Rollout Page](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [Start Workflow](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
-* [Lock Page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
+* [Lock Page](/help/sites-cloud/authoring/getting-started/page-editor.md#locking-unlocking)
 * [Publish Page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
 * [Unpublish Page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)
 * [Edit Template](/help/sites-cloud/authoring/features/templates.md)
-* [View as Published](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
+* [View as Published](/help/sites-cloud/authoring/getting-started/page-editor.md#view-as-published)
 * [View in Admin](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 * [Help](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
 * [Promote Launch](/help/sites-cloud/authoring/launches/promoting.md) (only if the page is a launch)
@@ -85,13 +85,13 @@ Displays the current [mode](/help/sites-cloud/authoring/getting-started/page-edi
 
 There are various modes when editing a page allowing for different actions:
 
-* [Edit](/help/sites-cloud/authoring/fundamentals/editing-content.md) - the mode to use when editing the page content.
+* [Edit](/help/sites-cloud/authoring/getting-started/edit-content.md) - the mode to use when editing the page content.
 * [Layout](/help/sites-cloud/authoring/features/responsive-layout.md) - lets you create and edit your responsive layout dependent on device (if the page is based on a layout container)
 * [Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md) - increase content relevance through targeting and measuring across all channels.
 * [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - lets you view a pages state at a particular point in time.
-* [Live Copy Status](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) - allows a quick overview of the live copy status and which components are/are not inherited.
+* [Live Copy Status](/help/sites-cloud/authoring/getting-started/page-editor.md#live-copy-status) - allows a quick overview of the live copy status and which components are/are not inherited.
 * [Developer Mode](/help/implementing/developing/tools/developer-mode.md)
-* [Preview](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - used to view the page as it is shown on the publish environment; or to navigate using links in the content.
+* [Preview](/help/sites-cloud/authoring/getting-started/page-editor.md#previewing-pages) - used to view the page as it is shown on the publish environment; or to navigate using links in the content.
 * [Annotate](/help/sites-cloud/authoring/fundamentals/annotations.md) - used to add or view annotations on the page.
 
 >[!NOTE]

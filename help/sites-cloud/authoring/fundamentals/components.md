@@ -7,7 +7,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 
 Components are the fundamental authoring building block of content pages in Adobe Experience Manager (AEM). Components such as images, text, titles, and so on, can be easily dragged and dropped to build your content.
 
-AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors. They are available when [editing a page](/help/sites-cloud/authoring/fundamentals/editing-content.md) and are grouped by main functional area (called component group) to aid filtering.
+AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors. They are available when [editing a page](/help/sites-cloud/authoring/getting-started/edit-content.md) and are grouped by main functional area (called component group) to aid filtering.
 
 >[!NOTE]
 >
@@ -17,15 +17,15 @@ AEM comes with a variety of out-of-the-box components that provide comprehensive
 
 ## General Usage {#general-usage}
 
-The components are available on the **Components** tab of the side panel of the page editor when [editing a page](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+The components are available on the **Components** tab of the side panel of the page editor when [editing a page.](/help/sites-cloud/authoring/getting-started/edit-content.md)
 
 You can select a component and drag it to the required location on your page. You can then edit it using:
 
 * [Configure Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-* [Edit Content](/help/sites-cloud/authoring/fundamentals/editing-content.md)
-* [Edit Content - Full Screen Mode](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
+* [Edit Content](/help/sites-cloud/authoring/getting-started/edit-content.md)
+* [Edit Content - Full Screen Mode](/help/sites-cloud/authoring/getting-started/edit-content.md#edit-content-full-screen-mode)
 
-For more information about adding components to a page, see [Editing Page Content](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+For more information about adding components to a page, see [Editing Page Content.](/help/sites-cloud/authoring/getting-started/edit-content.md)
 
 ## Overview of All Components {#overview-of-all-components}
 

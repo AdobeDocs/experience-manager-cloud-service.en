@@ -86,12 +86,12 @@ To add an asset to your page, select and drag to the required location. This can
 
 * An existing component of the appropriate type.
   * For example, you can drag an asset of type image onto an Image component.
-* A [placeholder](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) in the paragraph system to create a component of the appropriate type.
+* A [placeholder](/help/sites-cloud/authoring/getting-started/edit-content.md#component-placeholder) in the paragraph system to create a component of the appropriate type.
   * For example, you can drag an asset of type image onto the paragraph system to create an Image component.
 
 >[!NOTE]
 >
->Dragging and dropping of assets is available for specific assets and component types. See [Inserting a Component using the Assets Browser](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-using-the-assets-browser) for more details.
+>Dragging and dropping of assets is available for specific assets and component types. See [Inserting a Component using the Assets Browser](/help/sites-cloud/authoring/getting-started/edit-content.md#adding-a-component-from) for more details.
 
 From the top toolbar of the assets browser you can filter the assets by:
 
