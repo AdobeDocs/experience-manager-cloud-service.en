@@ -218,7 +218,7 @@ Asset Selector also provides out-of-the-box filter options to refine your search
 
 Apart from the full-text search, Asset Selector lets you search assets within files using customized search. You can use custom search filters in both Modal view and Rail view modes.
 
-![custom-search](assets/custom-search.png)
+![custom-search](assets/custom-search1.png)
 
 You can also create default search filter to save the fields that you frequently search for and use them later. To create custom search for your assets, you can use `filterSchema` property.
 
