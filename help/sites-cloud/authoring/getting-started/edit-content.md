@@ -1,53 +1,54 @@
 ---
 title: Editing Page Content with the AEM Page Editor
-description: The AEM Page Editor is a powerful tool for authoring your content.
+description: The AEM page editor is a powerful tool for authoring your content.
 ---
 
 # Editing Page Content with the AEM Page Editor {#edit-content}
 
-The AEM Page Editor is a powerful tool for authoring the content of a page. Learn how to use it to drag-and-drop content and edit content in-place.
+The AEM page editor is a powerful tool for authoring the content of a page. Learn how to use it to drag-and-drop content and edit content in-place.
 
 ## Overview {#overview}
 
 There are three basic actions you can take in the page editor to edit your content:
 
-1. Adding new components by dragging and dropping them onto the page.
-1. Adding new assets by dragging and dropping them onto the page.
-1. Editing components in-place that already exist on the page.
+1. [Adding new components](#adding-components) by dragging and dropping them onto the page.
+1. [Adding new assets](#adding-asset) by dragging and dropping them onto the page.
+1. [Editing components in-place](#edit-in-place) that already exist on the page.
 
 The AEM page editor provides an intuitive UI for performing these tasks in addition to giving access to more advanced features.
 
 In addition, the editor allows you to organize the existing content on you page by allowing you to 
 
-* Move components
-* Edit component layout
-* Edit component inheritance
-
+* [Move components](#moving-components)
+* [Edit component layout](#editing-component-layout)
+* [Edit component inheritance](#inherited-components)
 
 ## Adding Components {#adding-components}
 
-You can drag-and-drop new components onto your page by selecting them from the component browser in the side panel and dropping them in a component placeholder.
+You can drag-and-drop new components onto your page by selecting them from the [component browser in the side panel](/help/sites-cloud/authoring/getting-started/editor-side-panel.md#components-browser) and dropping them in a component placeholder.
 
 ### Component Placeholder {#component-placeholder}
 
-The component placeholder is an indicator to show where a component is positioned when you drop it - above the component you are currently hovering over.
+The component placeholder is an indicator to show where a component will be positioned when you drop it. It has two appearances.
 
-* When adding a new component to the page (dragging from the component browser):
+* When adding a new component to the page (dragging from the component browser), it will appear as a gray box with details of the component you are placing.
 
-  ![Placeholder when adding a new component to a page](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
+  ![Placeholder when adding a new component to a page](assets/edit-content-component-placeholder.png)
 
-* When moving an existing component:
+* When [moving an existing component,](#movging-components) it will appear as a blue square.
 
-  ![Placeholder when moving an existing component on a page](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
+  ![Placeholder when moving an existing component on a page](assets/edit-content-move-placeholder.png)
+
+In both cases, the target selected will appear as a blue outline below the component you are dragging. The target if where the component will be placed when you release it.
 
 ### Adding a Component from the Components Browser {#adding-a-component-from-the-components-browser}
 
-You can add a new component by using the [component browser](help/sites-cloud/authoring/getting-started/editor-side-panel.md#components-browser). The [component placeholder](#component-placeholder) shows you where the component is positioned:
+You can add a new component by using the [component browser](help/sites-cloud/authoring/getting-started/editor-side-panel.md#components-browser). The [component placeholder](#component-placeholder) shows you where you are positioning the component.
 
-1. Make sure that your page is in [**Edit** mode.](/help/sites-cloud/authoring/getting-started/page-editor.md#mode-selector)
+1. Make sure that the page editor is in [**Edit** mode.](/help/sites-cloud/authoring/getting-started/page-editor.md#mode-selector)
 1. Open the [component browser.](/help/sites-cloud/authoring/getting-started/editor-side-panel.md#components-browser)
-1. Drag the required component to the [required position](#component-placeholder).
-1. [Edit](#edit-content) the component.
+1. Drag the required component to the [required position](#component-placeholder) and release.
+1. [Edit](#edit-content) the newly-placed component.
 
 >[!NOTE]
 >
@@ -57,24 +58,27 @@ You can add a new component by using the [component browser](help/sites-cloud/au
 
 You can add a new component by using the **Drag components here** placeholder of the paragraph system:
 
-1. Make sure that your page is in [**Edit** mode.](/help/sites-cloud/authoring/getting-started/page-editor.md#mode-selector)
+1. Make sure that the page editor is in [**Edit** mode.](/help/sites-cloud/authoring/getting-started/page-editor.md#mode-selector)
 1. There are two ways to select and add a new component from the paragraph system:
 
     * Select the **Insert Component** option (+) from either the toolbar of an existing component or the **Drag components here** box.
 
-      ![Insert a component](/help/sites-cloud/authoring/assets/editing-insert-component.png)
+      ![Insert a component](assets/edit-content-drag-components-here.png)
 
     * If you are on a desktop device you can double-click the **Drag components here** box.
 
-    * The **Insert New Component** dialog open to let you select your required component:
+1. The **Insert New Component** dialog open to let you select your required component. Tap or click the component you wish to add.
 
-      ![Insert New Component dialog](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
+   * Use the search filters to find your component.
+   * Use the information icon next to component names to find out more about the component.
 
-1. The selected component is added to the bottom of the page. [Edit](#edit-content) the component as required.
+    ![Insert New Component dialog](assets/edit-content-insert-component.png)
+
+1. The selected component is added to the target that you had selected. [Edit](#edit-content) the component as required.
 
 ## Adding an Asset {#adding-asset}
 
-You can also add a new component to the page by dragging an asset from the [assets browser](/help/sites-cloud/authoring/getting-started/editor-side-panel.md#assets-browser). This automatically creates a component of the appropriate type (and containing the asset).
+You can also add a new component to the page by dragging an asset from the [assets browser.](/help/sites-cloud/authoring/getting-started/editor-side-panel.md#assets-browser) This automatically creates a component of the appropriate type (and containing the asset).
 
 This behavior can be configured for your installation. Please see the document [Components Reference Guide](/help/implementing/developing/components/reference.md#component-placeholders) for further details.
 
@@ -82,10 +86,8 @@ To create a component by dragging one of the above asset types:
 
 1. Make sure that your page is in [**Edit** mode.](/help/sites-cloud/authoring/getting-started/page-editor.md#mode-selector)
 1. Open the [asset browser](/help/sites-cloud/authoring/getting-started/editor-side-panel.md#assets-browser).
-1. Drag the required asset to the required position. The [component placeholder](#component-placeholder) shows you where the component is positioned.
-
-   * A component, appropriate for the asset type, is created at the required location - it contains the selected asset.
-
+1. Drag the required asset to the required position. The [component placeholder](#component-placeholder) shows you where the component is positioned and a target will show were it will be inserted.
+1. Release the asset onto the target. A component, appropriate for the asset type, is created at the required location containing the selected asset.
 1. [Edit](#edit-content) the component if necessary.
 
 >[!NOTE]
@@ -94,121 +96,78 @@ To create a component by dragging one of the above asset types:
 
 If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the browser by clicking the edit icon next to the asset's name.
 
-![Asset edit button](/help/sites-cloud/authoring/assets/asset-edit-button.png)
-
 ## Editing Components In-Place {#edit-in-place}
 
 Selecting a component opens the component toolbar. This provides access to various actions that can be performed on the component.
 
-The actual actions available to the user are shown as appropriate and not all actions may be described here.
+![Component Toolbar](assets/edit-content-component-toolbar.png)
 
-![Component Toolbar](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
+The actions available in the component toolbar are appropriate for the selected component. You may see more or less depending on your selected component and they may or may not be described here.
 
-* **Edit**
+* **Edit** allows you to modify the content of the component, often in-place. Its behavior depends on the component.
 
-  [Dependent on the component type](/help/sites-cloud/authoring/fundamentals/components.md), this lets you [edit the content of the component](#edit-content). Often a toolbar is provided.
+  ![Edit button](assets/edit-content-edit.png)
 
-  ![Edit button](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
+* **Configure** allows you to change some parameters of the component not directly related to its content, normally in a dialog. Its behavior depends on the component.
 
-* **Configure**
+  ![Configure button](assets/edit-content-configure.png)
 
-  [Dependent on the component type](/help/sites-cloud/authoring/fundamentals/components.md), this lets you edit and configure the properties of the component. Often a dialog is opened.
+* **Copy** copies the component to the clipboard to paste elsewhere. The original component remains unchanged.
 
-  ![Configure button](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
+  ![Copy button](assets/edit-content-copy.png)
 
-* **Copy**
+* **Cut** copies the component to the clipboard. The original component is removed.
 
-  This will copy the component to the clipboard. After the paste action, the original component will remain.
+  ![Cut button](assets/edit-content-cut.png)
 
-  ![Copy button](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
+* **Delete** deletes the component from the page with your confirmation.
 
-* **Cut**
+  ![Delete button](assets/edit-content-delete.png)
 
-  This will copy the component to the clipboard. After the paste action, the original component is removed.
+* **Insert component** opens the dialog to [add a new component.](#adding-a-component-from-the-paragraph-system)
 
-  ![Cut button](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
+  ![Insert button](assets/edit-content-insert-component.png)
 
-* **Delete**
-
-  This will delete the component from the page with your confirmation.
-
-  ![Delete button](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
-
-* **Insert component**
-
-  This opens the dialog to [add a new component.](#adding-a-component-from-the-paragraph-system)
-
-  ![Insert button](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
-
-* **Paste**
-
-  This will paste the component from the clipboard to the page. Whether the original remains, depends on whether you used copy or cut.
+* **Paste** pastes the component from the clipboard to the page. Whether the original remains, depends on whether you used **Copy** or **Cut**.
 
   * You can paste to the same page or to a different page.
+  * If you paste to a different page that was already open before the cut/copy operation, you must refresh the page to see the pasted content.
   * The pasted item is pasted above the item where you select the paste action.
   * The Pate action will only be shown if there is content on the clipboard.
 
-  ![Paste button](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
+  ![Paste button](assets/edit-content-paste.png)
 
-  >[!NOTE]
-  >
-  >If you paste to a different page that was already open before the cut/copy operation, you must refresh the page to see the pasted content.
+* **Group** lets you select multiple components at once. The same can be achieved on a desktop device by a **Control+Click** or **Command+Click**.
 
-* **Group**
+  ![Group button](assets/edit-content-group.png)
 
-  This lets you select multiple components at once. The same can be achieved on a desktop device by a **Control+Click** or **Command+Click**.
+* **Parent** selects the parent component of the selected component.
 
-  ![Group button](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
+  ![Parent button](assets/edit-content-parent.png)
 
-* **Parent**
+* **Layout** lets you modify the [layout](#editing-component-layout) of the selected component. 
 
-  This lets you select the parent component of the selected component.
+  * This only applies to the selected component and does not activate the [Layout mode](/help/sites-cloud/authoring/getting-started/page-editor.md#mode-selector) for the entire page.
 
-  ![Parent button](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
+  ![Layout button](assets/edit-content-layout.png)
 
-* **Layout**
+* **Convert to an experience fragment variation** lets you create an [experience fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) from the selected component or add it to an existing experience fragment.
 
-  This lets you modify the [layout](#editing-component-layout) of the selected component. This only applies to the selected component and does not activate the [Layout mode](/help/sites-cloud/authoring/getting-started/page-editor.md#mode-selector) for the entire page.
-
-  ![Layout button](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
-
-* **Convert to an experience fragment variation**
-
-  This lets you create an [experience fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) from the selected component or add it to an existing experience fragment.
-
-  ![Convert to Experience Fragment button](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
+  ![Convert to Experience Fragment button](assets/edit-content-convert.png)
 
 ### Component Edit Dialog {#component-edit-dialog}
 
-Some components offer additional configuration options beyond what is available in-place. You can open a component's edit dialog the [Edit (pencil) icon of the component toolbar](#component-toolbar) to access additional configuration options.
+Some components offer additional editing options beyond what is available in-place. You can open a component's edit dialog the [Edit (pencil) icon of the component toolbar](#component-toolbar) to access additional configuration options.
 
 The exact edit options will depend on the component. For some components [some actions will only be available in full screen mode](#edit-content-full-screen-mode). For example:
 
 * Text component
 
-  ![Toolbar of the text component](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
+  ![Toolbar of the text component](assets/edit-content-text-component.png)
 
 * Image component
 
-  ![Toolbar of the image component](/help/sites-cloud/authoring/assets/editing-image-component-toolbar.png)
-
-  >[!NOTE]
-  >
-  >Editing does not work on an empty image component.
-  >
-  >You must drag or upload an image to the component before you can start to edit it.
-
-* Image component - full screen
-
-  [Entering full screen mode](#edit-content-full-screen-mode) for the image component allows for more space to edit the image and showing extra editing options such as **Launch Map** and **Reset Zoom**. In addition, full screen allows for crop presets to be selected.
-
-  ![Image Component's full screen mode](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
-
-* Components constructed from more than one basic component first ask you to confirm which set of edit options you want:
-
-### Drag and Drop Assets into Component {#drag-and-drop-assets-into-component}
-
-For specific component types (such as images) you can drag-and-drop assets from the asset browser directly into the component to update the content.
+  ![Toolbar of the image component](assets/edit-content-image-component.png)
 
 ### Edit Components in Full-Screen Mode {#edit-content-full-screen-mode}
 
@@ -216,28 +175,26 @@ Many components offer a full-screen mode for editing that can be accessed with t
 
 ![Full Screen button](/help/sites-cloud/authoring/assets/editing-full-screen.png)
 
-For example, the **Text** component:
+Full screen editing allows displaying more editing options than the in-place editor such as for the image component.
 
-![Text component in full screen](/help/sites-cloud/authoring/assets/editing-text-full-screen.png)
+![Image component in full screen](assets/edit-content-image-component-full-screen.png)
 
 Use the **Minimize** button to exist full-screen mode.
 
 ![Minimize button](assets/edit-content-minimize.png)
 
->[!NOTE]
->
->For some components, the full screen mode will have more options available than the basic in-place editor.
-
 ## Moving Components {#moving-components}
 
-To move a paragraph component:
+To move a component:
 
-1. Select the paragraph to be moved with either select-and-hold or click-and-hold.
-1. Drag the paragraph to the new location. AEM indicates where the paragraph can be deposited. Drop it in your desired location.
+1. Select the component to be moved with either tap-and-hold or click-and-hold.
+1. Drag the component to the new location.
+   
+   * The page editor indicates the position of the component with a [placeholder](#component-placeholder) and where the paragraph can be dropped with a target.
 
-   ![Moving a component](/help/sites-cloud/authoring/assets/editing-moving-component.png)
+   ![Moving a component](assets/edit-content-move-placeholder.png)
 
-1. Your paragraph is moved.
+1. Drop it in the desired location.
 
 >[!TIP]
 >
@@ -247,27 +204,23 @@ To move a paragraph component:
 
 Instead of repeatedly switching from edit to [layout mode](/help/sites-cloud/authoring/features/responsive-layout.md) to adjust a component, you can select the **Layout** action for a component to change that component's layout and save time by not having to leave the edit mode.
 
-1. When in **Edit** mode of the sites console, selecting a component reveals the component's toolbar.
+1. When in **Edit** mode of the sites console, select a component to reveal the component's toolbar.
 
-   ![The component toolbar of a page component](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
+1. Select the **Layout** action to adjust the layout of the component.
 
-   Select the **Layout** action to adjust the layout of the component.
+   ![The Layout button of the component toolbar](assets/edit-content-layout.png)
 
-   ![The Layout button of the component toolbar](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
-
-1. Once the Layout action is selected:
+1. Once the Layout action is selected, you can modify the layout of the component as you would in [layout mode.](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)
 
     * The resizing handles for the component display.
     * The emulator toolbar is shown at the top of the screen.
     * Layout actions instead of the standard edit actions show on the component toolbar.
 
-   ![A component in layout mode](/help/sites-cloud/authoring/assets/editing-layout-mode.png)
+   ![A component in layout mode](assets/edit-content-layout-mode.png)
 
-   You can now modify the layout of the component as you would in [layout mode](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
+1. After making the necessary layout changes, tap or click the **Close** button in the component action menu to stop modifying the layout of the component and the component's toolbar returns to its normal edit state.
 
-1. After making the necessary layout changes, click the **Close** button in the component action menu to stop modifying the layout of the component. The component's toolbar returns to its normal edit state.
-
-   ![The component toolbar of a page component](/help/sites-cloud/authoring/assets/editing-layout-exit.png)
+   ![The component toolbar of a page component](assets/edit-content-layout-close.png)
 
 >[!TIP]
 >
@@ -277,25 +230,21 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-cloud/aut
 
 ## Editing Component Inheritance {#inherited-components}
 
-Inheritance is the mechanism where content can be automatically pushed from one component to another. Inherited components can be the product of various scenarios, including:
+Inheritance is the mechanism where content can be linked such that changing one automatically changes the other. Inherited components can be the product of various scenarios, including:
 
 * [Multi site management](/help/sites-cloud/administering/msm/overview.md)
-* [Launches](/help/sites-cloud/authoring/launches/overview.md) (when based on live copy).
+* [Launches](/help/sites-cloud/authoring/launches/overview.md)
 
-You can cancel (then re-enable) the inheritance. Depending on the component, this can be available from the component toolbar, if the component is on a page that is part of a live copy or launch (based on a live copy).
+You can cancel and re-enable the inheritance. Depending on the component, these options are available from the component toolbar, if the component is part of a live copy or launch.
 
-![A component toolbar showing inheritance relationship](/help/sites-cloud/authoring/assets/editing-component-toolbar-inheritance.png)
+* **Cancel Inheritance**
 
-For example:
+  ![Cancel Inheritance button](assets/edit-content-cancel-inheritance.png)
 
-* Cancel Inheritance
+* **Re-enable Inheritance** if inheritance is already cancelled
 
-  ![Cancel Inheritance button](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
+  ![Re-Enable Inheritance button](assets/edit-content-re-enable-inheritance.png)
 
-* Re-enable Inheritance (if inheritance is already cancelled)
+* **Rollout** is also available in the blueprint or Live Copy source
 
-  ![Re-Enable Inheritance button](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
-
-* Rollout action is also available in the blueprint or Live Copy source
-
-  ![Rollout button](/help/sites-cloud/authoring/assets/editing-rollout.png)
+  ![Rollout button](assets/edit-content-rollout.png)
