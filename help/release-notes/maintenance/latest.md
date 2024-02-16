@@ -61,75 +61,83 @@ Note: generated from prod-14697..d412fc5c0f
 <!-- * ASSETS-30591: add ide-support-open-any-class profile. -->
 * ASSETS-30626: Failure to create delivery request reported for assets with empty assetId.
 * ASSETS-30756: Move Asset Wizard action fails when folder name ends in 'html'.
+* ASSETS-30810: Sanitize tags before rendering legacy youtube config.
 <!-- * ASSETS-30987: Update eventing bundle for ASSETS-30987. -->
-* ASSETS-31015: Unable to upload Assets with .msg filename extension.  
+* ASSETS-31015: Unable to upload Assets with .msg filename extension.
 * ASSETS-31038: Tasks events that are received by the notification service are not being processed.
-* --- RESUME EDITING HERE ---
-* ASSETS-31097: added exclusions for ui-wcm-commons changes. * ASSETS-31097 update ui-wcm-commons artifact. * ASSETS-31097 updated exclusions. * ASSETS-31097 updated exclusions. * ASSETS-31097 updated exclusions.
-* ASSETS-31256: Update to cq-dam-core 5.15.64, cq-dam-processor-dm 1.0.54. Issues fixed: ASSETS-31256, ASSETS-29348.
-* ASSETS-31260: Resolve select issues with schema forms.
-* ASSETS-31274: Update to cq-dam-content 2.6.1606. Issues fixed: ASSETS-34088, ASSETS-33300, ASSETS-33296, ASSETS-31274, ASSETS-26489.
-* ASSETS-31280: Update to cq-dam-content 2.6.1556, cq-dam-download 1.0.132. Issues fixed: ASSETS-27066, ASSETS-31280.
-* ASSETS-31301: Add exclusions.
-* ASSETS-31324: ASSETS-27529 and ASSETS-31324 updated XSS securities in DAM content.
-* ASSETS-31330: Update dynamic media packages.
-* ASSETS-31405: handle long running IDS SOAP post.
-* ASSETS-31570: Unified shell - asset details "Save & Close", "Cancel" buttons need to be pressed more than once to work * ASSETS-31570 upgrade cq-dam-content content-model-sidecar.
-* ASSETS-31657: Update to released granite.auth.ims bundle 1.4.42.
-* ASSETS-31673: Update to cq-dam-processor-nui 1.1.810 for ASSETS-31673.
-* ASSETS-31715: Update to cq-dam-processor-nui 1.1.816. Issue fixed: ASSETS-31715.
-* ASSETS-31817: Updating to latest R-API and Bundle Injection Adapters.
-* ASSETS-31945: [VULN-26683] Cloud Services XSS - /libs/dam/gui/components/admin/processingprofiles/clientlibs/processingprofiles/editprofile.js.
-* ASSETS-31981: update granite async version.
-* ASSETS-32108: fix regressions in Assets View Settings.
-* ASSETS-32230: Update RAPI bundle to 366.
-* ASSETS-32311: Asset Delivery opt-in for VIP program.
-* ASSETS-32382: ASSETS-32455, ASSETS-32382: Changes in connected assets artifacts to remove non test usage of Guava 15.
-* ASSETS-32455: ASSETS-32382: Changes in connected assets artifacts to remove non test usage of Guava 15.
-* ASSETS-32544: additional logging for metadata export.
-* ASSETS-32679: Add cache-killer to rendition URLs when previewing content.
-* ASSETS-32754: [Collab API] Tasks cannot be assigned to users who have not logged in previously in GenStudio and AEMCS.
-* ASSETS-32755: configure ordered queue for asset move events.
-* ASSETS-32782: Update to cq-dam-repository-insights-agent 1.0.10. Issue fixed: ASSETS-32782.
-* ASSETS-32879: Update to cq-dam-api 6.1.172, cq-dam-core 5.15.74, cq-dam-processor-nui 1.1.818. Issue fixed: ASSETS-32879.
-* ASSETS-32899: collection search optimisations.
-* ASSETS-32902: Adding a hydration endpoint.
-* ASSETS-33003: ASSETS-33003 - [QSBRM] Automated Release.
-* ASSETS-33098: update foundation to fix behaviour of tags in omnisearch.
-* ASSETS-33246: Roll out damAssetLucene-10.
-* ASSETS-33296: Update to cq-dam-content 2.6.1606. Issues fixed: ASSETS-34088, ASSETS-33300, ASSETS-33296, ASSETS-31274, ASSETS-26489.
-* ASSETS-33299: VULN-26916 Update unified-shell-integration-content to v 1.0.96.
-* ASSETS-33300: Update to cq-dam-content 2.6.1606. Issues fixed: ASSETS-34088, ASSETS-33300, ASSETS-33296, ASSETS-31274, ASSETS-26489.
-* ASSETS-33454: more robust handling of approval audit events.
-* ASSETS-34088: Update to cq-dam-content 2.6.1606. Issues fixed: ASSETS-34088, ASSETS-33300, ASSETS-33296, ASSETS-31274, ASSETS-26489.
-* CQ-4354181: html injection in move and mergetag * CQ-4354181 html injection in move and mergetag.
-* CQ-4355555: latest AEM and Granite translations.
-* DXML-13276: include com.adobe.granite.repository:1.8.108 for DXML index.
-* FORMS-11755: SKYOPS-66622,FORMS-11755,FORMS-12151,SKYOPS-69977 - Update to FACT tool version 0.5.180.
-* FORMS-12151: SKYOPS-66622,FORMS-11755,FORMS-12151,SKYOPS-69977 - Update to FACT tool version 0.5.180.
-* GRANITE-36205: Update internal oak release version to latest.
-* GRANITE-45379: override oak.fastQuerySize property for system principals * GRANITE-45379 keep oak.version in sync.
-* GRANITE-48110: upgrade quickstart-maven-plugin.
-* GRANITE-48143: 
-* GRANITE-48199: remove com.adobe.granite.toggle.impl.dev from ethos feature.
-* GRANITE-48813: GRANITE-48830 GRANITE-48834 GRANITE-48813 upgrade .auth.ims .auth.oauth.
-* GRANITE-48830: GRANITE-48834 GRANITE-48813 upgrade .auth.ims .auth.oauth * GRANITE-48830 AEM to IMS integration in stage has become too unstable - update to granite.auth.ims bundle version 1.4.50 which has the max ttl fix in it * GRANITE-48830 AEM to IMS integration in stage has become too unstable - update to granite.auth.ims bundle version 1.4.52 which has the max ttl fix in it.
-* GRANITE-48834: GRANITE-48830 GRANITE-48834 GRANITE-48813 upgrade .auth.ims .auth.oauth.
-* GRANITE-49031: Regression resulting in `@JsonIgnore` annotation being ignored on transient fields.
-* GRANITE-50157: safer redirects to inbox task URLs.
-* SCRNS-3961: Jquery animation used in Fade transition leads to black screen.
-* SITES-15030: SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
-* SITES-15868: SITES-15030 SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
-* SITES-16079: SITES-15030 SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
-* SITES-16118: SITES-15030 SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
-* SITES-16121: SITES-15030 SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
-* SITES-16207: SITES-15030 SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
-* SITES-17361: Re-embed Jsoup in the sites-headless bundle.
-* SITES-17768: GraphQL to output Dynamic Media URL for assets referenced in Content Fragments.
-* SITES-18021: update cq-content-sync to 5.14.2.
-* SKYOPS-66622: FORMS-11755,FORMS-12151,SKYOPS-69977 - Update to FACT tool version 0.5.180.
-* SKYOPS-68495: dispatcher image version 2.0.199 (#530).
-* SKYOPS-69977: SKYOPS-66622,FORMS-11755,FORMS-12151,SKYOPS-69977 - Update to FACT tool version 0.5.180.
+* ASSETS-31097: ***-*** added exclusions for ui-wcm-commons changes. * ASSETS-31097 update ui-wcm-commons artifact. * ASSETS-31097 updated exclusions. * ASSETS-31097 updated exclusions. * ASSETS-31097 updated exclusions.
+* ASSETS-31256: ***-*** Update to cq-dam-core 5.15.64, cq-dam-processor-dm 1.0.54. Issues fixed: ASSETS-31256, ASSETS-29348.
+* ASSETS-31260: ***-*** Resolve select issues with schema forms.
+* ASSETS-31274: ***-*** Update to cq-dam-content 2.6.1606. Issues fixed: ASSETS-34088, ASSETS-33300, ASSETS-33296, ASSETS-31274, ASSETS-26489.
+* ASSETS-31280: ***-*** Update to cq-dam-content 2.6.1556, cq-dam-download 1.0.132. Issues fixed: ASSETS-27066, ASSETS-31280.
+* ASSETS-31297: ***-*** Prevent delete of copied asset from dynamic media * ASSETS-31297 Improve checks to prevent delete of copied asset from dynamic media.
+* ASSETS-31301: ***-*** Add exclusions.
+* ASSETS-31324: ***-*** ASSETS-27529 and ASSETS-31324 updated XSS securities in DAM content.
+* ASSETS-31330: ***-*** Update dynamic media packages.
+* ASSETS-31405: ***-*** handle long running IDS SOAP post.
+* ASSETS-31570: ***-*** Unified shell - asset details "Save & Close", "Cancel" buttons need to be pressed more than once to work * ASSETS-31570 upgrade cq-dam-content content-model-sidecar.
+* ASSETS-31657: ***-*** Support new Content Hub service code in granite.auth.ims bundle ASSETS-28708 Instrument exchangeTokenByIMSOrg with trace level timings Update to released granite.auth.ims bundle 1.4.42.
+* ASSETS-31673: ***-*** Update to cq-dam-processor-nui 1.1.810 for ASSETS-31673.
+* ASSETS-31715: ***-*** Update to cq-dam-processor-nui 1.1.816. Issue fixed: ASSETS-31715.
+* ASSETS-31817: ***-*** Updating to latest R-API and Bundle Injection Adapters.
+* ASSETS-31945: ***-*** [VULN-26683] Cloud Services XSS - /libs/dam/gui/components/admin/processingprofiles/clientlibs/processingprofiles/editprofile.js.
+* ASSETS-31981: ***-*** update granite async version.
+* ASSETS-32101: ***-*** Metadata for smart crop renditions should be updated in DB.
+* ASSETS-32108: ***-*** fix regressions in Assets View Settings.
+* ASSETS-32230: ***-*** Update RAPI bundle to 366.
+* ASSETS-32311: ***-*** Asset Delivery opt-in for VIP program.
+* ASSETS-32382: ***-*** ASSETS-32455, ASSETS-32382: Changes in connected assets artifacts to remove non test usage of Guava 15.
+* ASSETS-32455: ***-*** ASSETS-32382: Changes in connected assets artifacts to remove non test usage of Guava 15.
+* ASSETS-32509: ***-*** Allowing the Content Hub Client ID.
+* ASSETS-32544: ***-*** additional logging for metadata export.
+* ASSETS-32679: ***-*** Add cache-killer to rendition URLs when previewing content.
+* ASSETS-32754: ***-*** [Collab API] Tasks cannot be assigned to users who have not logged in previously in GenStudio and AEMCS - do not verify existence of user when creating a task for content hub or aemcs * ASSETS-32754 [Collab API] Tasks cannot be assigned to users who have not logged in previously in GenStudio and AEMCS - do not verify existence of user when creating a task for content hub or aemcs.
+* ASSETS-32755: ***-*** configure ordered queue for asset move events. * ASSETS-32755 configure ordered queue for asset move events.
+* ASSETS-32782: ***-*** Update to cq-dam-repository-insights-agent 1.0.10. Issue fixed: ASSETS-32782.
+* ASSETS-32879: ***-*** Update to cq-dam-api 6.1.172, cq-dam-core 5.15.74, cq-dam-processor-nui 1.1.818. Issue fixed: ASSETS-32879.
+* ASSETS-32899: ***-*** collection search optimisations.
+* ASSETS-32902: ***-*** Adding a hydration endpoint.
+* ASSETS-33003: ***-*** ASSETS-33003 - [QSBRM] Automated Release.
+* ASSETS-33098: ***-*** update foundation to fix behaviour of tags in omnisearch.
+* ASSETS-33246: ***-*** Roll out damAssetLucene-10.
+* ASSETS-33296: ***-*** Update to cq-dam-content 2.6.1606. Issues fixed: ASSETS-34088, ASSETS-33300, ASSETS-33296, ASSETS-31274, ASSETS-26489.
+* ASSETS-33299: ***-*** VULN-26916 Update unified-shell-integration-content to v 1.0.96.
+* ASSETS-33300: ***-*** Update to cq-dam-content 2.6.1606. Issues fixed: ASSETS-34088, ASSETS-33300, ASSETS-33296, ASSETS-31274, ASSETS-26489.
+* ASSETS-33454: ***-*** more robust handling of approval audit events.
+* ASSETS-34088: ***-*** Update to cq-dam-content 2.6.1606. Issues fixed: ASSETS-34088, ASSETS-33300, ASSETS-33296, ASSETS-31274, ASSETS-26489.
+* CQ-4354181: ***-*** html injection in move and mergetag * CQ-4354181 html injection in move and mergetag.
+* CQ-4355555: ***-*** latest AEM and Granite translations.
+* DXML-13276: ***-*** include com.adobe.granite.repository:1.8.108 for DXML index.
+* FORMS-11755: ***-*** SKYOPS-66622,FORMS-11755,FORMS-12151,SKYOPS-69977 - Update to FACT tool version 0.5.180.
+* FORMS-12151: ***-*** SKYOPS-66622,FORMS-11755,FORMS-12151,SKYOPS-69977 - Update to FACT tool version 0.5.180.
+* GRANITE-36205: ***-*** Update internal oak release version to latest.
+* GRANITE-45379: ***-*** override oak.fastQuerySize property for system principals * GRANITE-45379 keep oak.version in sync.
+* GRANITE-48110: ***-*** upgrade quickstart-maven-plugin.
+* GRANITE-48143: ***-*** 
+* GRANITE-48199: ***-*** remove com.adobe.granite.toggle.impl.dev from ethos feature.
+* GRANITE-48813: ***-*** GRANITE-48830 GRANITE-48834 GRANITE-48813 upgrade .auth.ims .auth.oauth.
+* GRANITE-48830: ***-*** GRANITE-48834 GRANITE-48813 upgrade .auth.ims .auth.oauth * GRANITE-48830 AEM to IMS integration in stage has become too unstable - update to granite.auth.ims bundle version 1.4.50 which has the max ttl fix in it * GRANITE-48830 AEM to IMS integration in stage has become too unstable - update to granite.auth.ims bundle version 1.4.52 which has the max ttl fix in it.
+* GRANITE-48834: ***-*** GRANITE-48830 GRANITE-48834 GRANITE-48813 upgrade .auth.ims .auth.oauth.
+* GRANITE-49031: ***-*** Update to jackson 2.16.1 [INTERNAL] * GRANITE-49031 : Update to jackson 2.16.1 [INTERNAL].
+* GRANITE-50157: ***-*** safer redirects to inbox task URLs.
+* SITES-15030: ***-*** SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
+* SITES-15868: ***-*** SITES-15030 SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
+* SITES-16079: ***-*** SITES-15030 SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
+* SITES-16118: ***-*** SITES-15030 SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
+* SITES-16121: ***-*** SITES-15030 SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
+* SITES-16207: ***-*** SITES-15030 SITES-16121, SITES-16207, SITES-15868, SITES-16118, SITES-16079.
+* SITES-17361: ***-*** Re-embed Jsoup in the sites-headless bundle.
+* SITES-17768: ***-*** GraphQL to output Dynamic Media URL for assets referenced in Content Fragments.
+* SITES-18021: ***-*** update cq-content-sync to 5.14.2.
+* SKYOPS-66622: ***-*** FORMS-11755,FORMS-12151,SKYOPS-69977 - Update to FACT tool version 0.5.180.
+* SKYOPS-69977: ***-*** SKYOPS-66622,FORMS-11755,FORMS-12151,SKYOPS-69977 - Update to FACT tool version 0.5.180.
+* VULN-25622: ***-*** ASSETS-27529 [VULN-25622] Stored XSS in /libs/dam/gui/coral/components/commons/assetselector/test/clientlibs/test/js/demo.js.
+* VULN-25903: ***-*** ASSETS-28963 [VULN-25903] & ASSETS-26492 SECURITY * Upgrading cq-dam-content version to fix ASSETS-28963 [VULN-25903] & ASSETS-26492.
+* VULN-26006: ***-*** ASSETS-29454: [VULN-26006] Update cq-dam-content version SECURITY.
+* VULN-26170: ***-*** ASSETS-30405: XSS [VULN-26170].
+* VULN-26683: ***-*** ASSETS-31945 [VULN-26683] Cloud Services XSS - /libs/dam/gui/components/admin/processingprofiles/clientlibs/processingprofiles/editprofile.js.
+* VULN-26916: ***-*** ASSETS-33299 VULN-26916 Update unified-shell-integration-content to v 1.0.96.
+
 
 
 ### Known Issues {#known-issues-14945}
