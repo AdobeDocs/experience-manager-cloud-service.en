@@ -152,24 +152,18 @@ The **[!UICONTROL Set Property]** rule type lets you set the value of a property
 * enabled (Boolean)
 * readOnly (Boolean)
 * required (Boolean)
-* screenReaderText
-* dorExclusion (Boolean)
-* chartType (String)
-* title (String)
-* enabled (Boolean)
-* mandatory (Boolean)
-* validationsDisabled (Boolean)
-* validateExpMessage (String)
-* value (Number, String, Date)
-* items (List)
+* screenReaderText (String)
 * valid (Boolean)
 * errorMessage (String)
+* default (Number, String, Date)
+* enumNames (String[])
+* chartType (String)
 
-For example, it enables you to define rules to add check boxes dynamically to the Adaptive Form. You can use custom function, a form object, or an object property to define a rule.
+For example, it enables you to define rules to hide the label of the textbox when a button is clicked. You can use custom function, a form object, object property, or an service output to define a rule.
 
 ![Set Property](assets/set_property_rule_new.png)
 
-To define a rule based on a custom function, select **[!UICONTROL Function Output]** from the drop-down list, and drag-and-drop a custom function from the **[!UICONTROL Functions]** tab. If the condition action is met, the number of checkboxes defined in the custom function are added to the Adaptive Form.
+To define a rule based on a custom function, select **[!UICONTROL Function Output]** from the drop-down list, and drag-and-drop a custom function from the **[!UICONTROL Functions]** tab. If the condition action is met, t.
 
 To define a rule based on a form object, select **[!UICONTROL Form Object]** from the drop-down list, and drag-and-drop a form object from the **[!UICONTROL Form Objects]** tab. If the condition action is met, the number of checkboxes defined in the form object are added to the Adaptive Form.
 
