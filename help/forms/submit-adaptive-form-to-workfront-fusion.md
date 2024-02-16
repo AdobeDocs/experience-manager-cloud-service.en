@@ -29,7 +29,7 @@ AEM Forms as a Cloud Service provides an OOTB connector to connect and submit an
 
 To establish a connection between Workfront Fusion and AEM Forms, the following are necessary:
 
-* A valid [ Worfront and Workfront Fusion license](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* A valid [ Workfront and Workfront Fusion license](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
 * An AEM user with right to access [Dev Console](https://my.cloudmanager.adobe.com/) to [retrieve the service credentials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## Integrate AEM Forms with Adobe Workfront Fusion
@@ -129,7 +129,7 @@ To add a connection:
 
 ### 2. Configure submit action of an Adaptive Form for Workfront Fusion
 
-You can configure the submit action for Workfont Fusion for:
+You can configure the submit action for Workfront Fusion for:
 * [New Adaptive Forms](#new-af-submit-action)
 * [Existing Adaptive forms](#existing-af-submit-action)
 
