@@ -36,6 +36,8 @@ Prerequisites required to connect Workfront Fusion to AEM Forms are:
 
 ## Integrate AEM Forms with Adobe Workfront Fusion
 
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
+
 To connect [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) to a form, perform the following steps:
 
 ### 1. Create a Workfront Scenario {#workflow-scenario}
@@ -123,16 +125,7 @@ To add a connection:
 1. Select the created connection **[!UICONTROL Connection]** from the drop-down list.
 1. Click **[!UICONTROL Save]**.
 1. Click **[!UICONTROL OK]** and save the changes for the scenario.
-
-#### 1.3 Activate the Workfront scenario {#activate-scenario}
-
-To activate the scenario:
-
-1. Click **[!UICONTROL Scenarios]** ![Share icon](/help/forms/assets/Smock_ShareAndroid_18_N.svg) in the left panel. 
-1. Click the **[!UICONTROL Inactive Scenario]** tab.
-1. Click the **ON/OFF** toggle button for your AEM Forms scenario.
-
-Once you click the toggle button, the Workfront scenario starts appearing in the **[!UICONTROL Active Scenario]** tab.
+1. To activate the scenario, click the ON/OFF toggle button in the scenario editor.
 
 >[!NOTE]
 >
