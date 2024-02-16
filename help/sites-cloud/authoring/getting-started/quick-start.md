@@ -8,15 +8,19 @@ exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 
 Start here for a quick, high-level guide to get you started authoring content using the **Sites** console.
 
+>[!TIP]
+>
+>This quick start guide focuses on Sites authoring, however most concepts are broadly applicable to other consoles.
+
 ## It all starts in the Sites console. {#sites-console}
 
 Whether you want to create new content or view and manage your existing content, the central overview for you is the **Sites** console.
 
-When you first sign in to AEM, you arrive at the Global Navigation screen. Simply tap or click **Sites** to open the **Sites** console.
+When you first sign in to AEM, you arrive at the global navigation screen. Simply tap or click **Sites** to open the **Sites** console.
 
 ![Global Navigation](assets/getting-started-global-navigation.png)
 
-To access the Global Navigation from any other location in AEM, tap or click the **Adobe Experience Manager** link at the top-left of any AEM screen, which opens a drop-down overlay of the Global Navigation.
+To access the global navigation from any other location in AEM, tap or click the **Adobe Experience Manager** link at the top-left of any AEM screen, which opens a drop-down overlay of the global navigation.
 
 Once in the **Sites** console, your content is simple to navigate and is presented in a column view by default.
 
@@ -45,7 +49,7 @@ Use the view switcher at the top-left of the screen to switch between views. Thi
 
 In this way, you can traverse up and down your content structure.
 
-To be able to quickly jump between levels, you can use the breadcrumbs at the top of the page.
+To quickly jump between levels, you can use the breadcrumbs at the top of the page.
 
 ![Breadcrumbs](assets/getting-started-breadcrumbs.png)
 
@@ -91,9 +95,12 @@ Confirm the publication with another tap or click on **Publish** in the dialog.
 
 ## Additional Resources {#additional-resources}
 
-This is just a brief introduction to the power of the Sites console and as such does not cover every topic or every option.
+This is just a brief introduction to the power of authoring Sites content and as such does not cover every topic or every option.
 
 Here are some more resources that go into depth about all the features of the console as well as discuss topics about content authoring in general.
 
 * [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md)
 * [Concepts of Authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Sites Console](help/sites-cloud/authoring/getting-started/sites-console.md)
+* [Page Editor](help/sites-cloud/authoring/getting-started/page-editor.md)
+* [Publishing Pages](help/sites-cloud/authoring/fundamentals/publishing-pages.md)
