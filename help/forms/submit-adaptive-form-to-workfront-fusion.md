@@ -45,7 +45,7 @@ To create a Workfront scenario:
 1. Select **[!UICONTROL New scenario]** in the upper-left corner on the page and type a proper name for the scenario.
 1. Click the question mark and make sure you add first module as **[!UICONTROL AEM Forms]**.
 
-      ![Add a AEM Forms module](/help/forms/assets/workfront-aemforms.png)
+    ![Add a AEM Forms module](/help/forms/assets/workfront-aemforms.png)
 
     The **[!UICONTROL Watch for Form Events]** dialog box appears.
 
