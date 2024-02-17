@@ -163,7 +163,7 @@ This change will be required after March 21, 2024.
 
 Failing to update the dependency library will result in pipeline failures at the "Custom Functional Testing" step.
 
-### Embedded Technologies {#embedded-tech-14813}
+### Embedded Technologies {#embedded-tech-14945}
 
 |Technology|Version|Link|
 |---|---|---|
