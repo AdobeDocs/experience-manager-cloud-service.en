@@ -62,6 +62,12 @@ Use the following prerequisites if you are integrating Asset Selector with a non
 * imsOrg
 * apikey
 
+Use the following prerequisites if you are integrating Asset Selector with a new Dynamic Media API:
+
+* Dynamic Media application
+* New Dynamic Media API setup
+* Assets in an `Approved` state (Refer [How to approve bulk assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/bulk-approval.html?lang=en))
+
 ## Installation {#installation}
 
 Asset Selector is available via both ESM CDN (For example, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) and [UMD](https://github.com/umdjs/umd) version.
@@ -120,7 +126,7 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 | *selectedAssets* | Array `<Object>` | No       |                 | Specify selected Assets when the Asset Selector is rendered. An array of objects is required that contains an id property of the assets. For example, `[{id: 'urn:234}, {id: 'urn:555'}]` An asset must be available in the current directory. If you need to use a different directory, provide a value for the `path` property as well. |
 | *acvConfig* | Object | No | | Asset Collection View property that contains object containing custom configuration to override defaults. |
 | *i18nSymbols*            | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No       |                 | If the OOTB translations are insufficient for your application's needs, you can expose an interface through which you can pass your own custom localized values through the `i18nSymbols` prop. Passing a value through this interface overrides the default translations provided and instead use your own.  To perform the override, you must pass a valid [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) object to the key of `i18nSymbols` that you want to override. |
-| *intl* | Object | No  | | Asset Selector provides default, OOTB translations. You can select the translation language by providing a valid locale string through the `intl.locale` prop. For example: `intl={{ locale: "es-es" }}` </br></br> The locale strings supported follow the [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) for the representation of names of languages standards. </br></br> List of supported locales: English - 'en-us' (default) Spanish - 'es-es' German - 'de-de' French - 'fr-fr' Italian - 'it-it' Japanese - 'ja-jp' Korean - 'ko-kr' Portuguese - 'pt-br' Chinese (Traditional) - 'zh-cn' Chinese (Taiwan) - 'zh-tw' |
+| *intl* | Object | No  | | Asset Selector provides default OOTB translations. You can select the translation language by providing a valid locale string through the `intl.locale` prop. For example: `intl={{ locale: "es-es" }}` </br></br> The locale strings supported follow the [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) for the representation of names of languages standards. </br></br> List of supported locales: English - 'en-us' (default) Spanish - 'es-es' German - 'de-de' French - 'fr-fr' Italian - 'it-it' Japanese - 'ja-jp' Korean - 'ko-kr' Portuguese - 'pt-br' Chinese (Traditional) - 'zh-cn' Chinese (Taiwan) - 'zh-tw' |
 | *repositoryId* | string | No | ''| Repository from where the Asset Selector loads the content. |
 | *additionalAemSolutions* | `Array<string>` | No | [ ] | It lets you add a list of additional AEM repositories. If no information is provided in this property, then only media library or AEM Assets repositories are considered.|
 | *hideTreeNav*| boolean | No |  | Specifies whether to show or hide assets tree navigation sidebar. It is used in modal view only and hence there is no effect of this property in rail view. |
@@ -133,7 +139,7 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 | *onFilterSubmit* | Function | No | | Invoked with filter items as user changes different filter criteria. |
 | *selectionType* | string | No | single | Configuration for `single` or `multiple` selection of assets at a time. |
 | *dragOptions.allowList* | boolean | No | | The property is used to allow or deny the dragging of assets that are not selectable. |
-| *aemTierType* | string | No | | It allows you to select whether you want to show assets from delivery tier, author tier, or both. |
+| *aemTierType* | string | No | | It allows you to select whether you want to show assets from delivery tier, author tier, or both. Note: The use of `aemTierType` property is restricted in New Dynamic Media API application.|
 
 ## Examples to use Asset Selector properties {#usage-examples}
 
@@ -173,6 +179,492 @@ In addition to the faceted search, Assets Selector lets you customize various at
 
 Assets display panel shows the out of the box metadata that can be displayed in the info of the asset. In addition to this, [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application allows configuration of the asset selector by adding custom metadata that is shown in info panel of the asset.
 -->
+
+>[!BEGINTABS]
+
+<!--Integration with an Adobe application content starts here-->
+
+>[!TAB Integration with an Adobe application]
+
+## Integrate Asset Selector with an [!DNL Adobe] application {#adobe-app-integration-vanilla}
+
+The following example demonstrates the usage of Asset Selector when running an [!DNL Adobe] application under Unified Shell or when you already have `imsToken` generated for authentication.
+
+Include the Asset Selector package in your code using the `script` tag, as shown in _lines 6&ndash;15_ of the example below. Once the script is loaded, the `PureJSSelectors` global variable is available for use. Define the Asset Selector [properties](#asset-selector-properties) as shown in _lines 16&ndash;23_. The `imsOrg` and `imsToken` properties are both required for authentication in Adobe application. The `handleSelection` property is used to handle the selected assets. To render the Asset Selector, call the `renderAssetSelector` function as mentioned in _line 17_. The Asset Selector is displayed in the `<div>` container element, as shown in _lines 21 and 22_.
+
+By following these steps, you can use Asset Selector with your [!DNL Adobe] application.
+
+```html {line-numbers="true"}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asset Selector</title>
+    <script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+    <script>
+        // get the container element in which we want to render the AssetSelector component
+        const container = document.getElementById('asset-selector-container');
+        // imsOrg and imsToken are required for authentication in Adobe application
+        const assetSelectorProps = {
+            imsOrg: 'example-ims@AdobeOrg',
+            imsToken: "example-imsToken",
+            apiKey: "example-apiKey-associated-with-imsOrg",
+            handleSelection: (assets: SelectedAssetType[]) => {},
+        };
+        // Call the `renderAssetSelector` available in PureJSSelectors globals to render AssetSelector
+        PureJSSelectors.renderAssetSelector(container, assetSelectorProps);
+    </script>
+</head>
+
+<body>
+    <div id="asset-selector-container" style="height: calc(100vh - 80px); width: calc(100vw - 60px); margin: -20px;">
+    </div>
+</body>
+
+</html>
+```
+
+For detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+
++++ImsAuthProps
+The `ImsAuthProps` properties define the authentication information and flow that the Asset Selector uses to obtain an `imsToken`. By setting these properties, you can control how the authentication flow should behave and register listeners for various authentication events.
+
+| Property Name | Description|
+|---|---|
+| `imsClientId`| A string value representing the IMS client ID used for authentication purposes. This value is provided by Adobe and is specific to your Adobe AEM CS organization.|
+| `imsScope`| Describes the scopes used in authentication. The scopes determine the level of access that the application has to your organization resources. Multiple scopes can be separated by commas.|
+| `redirectUrl` | Represents the URL where the user is redirected after authentication. This value is typically set to the current URL of the application. If a `redirectUrl` is not supplied, `ImsAuthService` uses the redirectUrl used to register the `imsClientId`|
+| `modalMode`| A boolean indicating whether the authentication flow should be displayed in a modal (pop-up) or not. If set to `true`, the authentication flow is displayed in a pop-up. If set to `false`, the authentication flow is displayed in a full page reload. _Note:_ for better UX, you can dynamically control this value if the user has browser pop-up disabled. |
+| `onImsServiceInitialized`| A callback function that is called when the Adobe IMS authentication service is initialized. This function takes one parameter, `service`, which is an object representing the Adobe IMS service. See [`ImsAuthService`](#imsauthservice-ims-auth-service) for more details.|
+| `onAccessTokenReceived`| A callback function that is called when an `imsToken` is received from the Adobe IMS authentication service. This function takes one parameter, `imsToken`, which is a string representing the access token. |
+| `onAccessTokenExpired`| A callback function that is called when an access token has expired. This function is typically used to trigger a new authentication flow to obtain a new access token. |
+| `onErrorReceived`| A callback function that is called when an error occurs during authentication. This function takes two parameters: the error type and error message. The error type is a string representing the type of error and the error message is a string representing the error message. |
+
++++
+
++++ImsAuthService
+`ImsAuthService` class handles the authentication flow for the Asset Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Assets repository. ImsAuthService uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the convenient [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) function to register the _ImsAuthService_ instance with the Asset Selector. The following functions are available on the `ImsAuthService` class. However, if you are using the _registerAssetsSelectorsAuthService_ function, you do not need to call these functions directly.
+
+| Function Name | Description |
+|---|---|
+| `isSignedInUser` | Determines whether the user is currently signed in to the service and returns a boolean value accordingly.|
+| `getImsToken`    | Retrieves the authentication `imsToken` for the currently signed-in user, which can be used to authenticate requests to other services such as generating asset _rendition.|
+| `signIn`| Initiates the sign-in process for the user. This function uses the `ImsAuthProps` to show authentication in either a pop-up or a full page reload |
+| `signOut`| Signs the user out of the service, invalidating their authentication token and requiring them to sign in again to access protected resources. Invoking this function will reload the current page.|
+| `refreshToken`| Refreshes the authentication token for the currently signed-in user, preventing it from expiring and ensuring uninterrupted access to protected resources. Returns a new authentication token that can be used for subsequent requests. |
+
++++
+
++++IMS token validation
+
+```
+<script>
+    const apiToken="<valid IMS token>";
+    function handleSelection(selection) {
+    console.log("Selected asset: ", selection);
+    };
+    function renderAssetSelectorInline() {
+    console.log("initializing Asset Selector");
+    const props = {
+    "repositoryId": "delivery-p64502-e544757.adobeaemcloud.com",
+    "apiKey": "ngdm_test_client",
+    "imsOrg": "<IMS org>",
+    "imsToken": apiToken,
+    handleSelection,
+    hideTreeNav: true
+    }
+    const container = document.getElementById('asset-selector-container');
+    PureJSSelectors.renderAssetSelector(container, props);
+    }
+    $(document).ready(function() {
+    renderAssetSelectorInline();
+    });
+</script>
+```
+
++++
+
++++Register callbacks to IMS service
+
+```
+// object `imsProps` to be defined as below 
+let imsProps = {
+imsClientId: <IMS Client Id>,
+imsScope: "openid",
+redirectUrl: window.location.href,
+modalMode: true,
+adobeImsOptions: {
+modalSettings: {
+allowOrigin: window.location.origin,
+},
+useLocalStorage: true,
+},
+onImsServiceInitialized: (service) => {
+console.log("onImsServiceInitialized", service);
+},
+onAccessTokenReceived: (token) => {
+console.log("onAccessTokenReceived", token);
+},
+onAccessTokenExpired: () => {
+console.log("onAccessTokenError");
+// re-trigger sign-in flow
+},
+onErrorReceived: (type, msg) => {
+console.log("onErrorReceived", type, msg);
+},
+}
+```
+
++++
+
+<!--Integration with non-Adobe application content starts here-->
+
+>[!TAB Integration with a non-Adobe application]
+
+## Integrate Asset Selector with a [!DNL non-Adobe] application {#adobe-non-app-integration}
+
+Asset Selector supports authentication to the [!DNL Experience Manager Assets] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID` when you are integrating it with a non-Adobe application.
+
+You can perform authentication without defining some of the IMS properties, if:
+
+* You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
+* You already have an IMS token generated for authentication.
+
++++Configure Asset Selector for a non-Adobe application
+To configure Asset Selector for a non-Adobe application, you must first log a support ticket for provisioning followed by the integration steps.
++++
+
++++Logging a support ticket
+Steps to log a support ticket via the Admin Console:
+
+1. Add **Asset Selector with AEM Assets** in the title of the ticket.
+
+1. In the description, provide the following details:
+
+    * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] URL (Program ID and Environment ID).
+    * Domain names where the non-Adobe web application is hosted.
++++
+
++++Integration steps
+Use this example `index.html` file for authentication while integrating Asset Selector with a non-Adobe application.
+
+Access the Asset Selector package using the `Script` Tag, as shown in *line 9* to *line 11* of the example `index.html` file.
+
+*Line 14* to *line 38* of the example describes the IMS flow properties, such as `imsClientId`, `imsScope`, and `redirectURL`. The function requires that you define at least one of the `imsClientId` and `imsScope` properties. If you do not define a value for `redirectURL`, the registered redirect URL for the client ID is used.
+
+As you do not have an `imsToken` generated, use the `registerAssetsSelectorsAuthService` and `renderAssetSelectorWithAuthFlow` functions, as shown in line 40 to line 50 of the example `index.html` file. Use the `registerAssetsSelectorsAuthService` function before `renderAssetSelectorWithAuthFlow` to register the `imsToken` with the Asset Selector. [!DNL Adobe] recommends calling `registerAssetsSelectorsAuthService` when you instantiate the component.
+
+Define the authentication and other Assets as a Cloud Service access-related properties in the `const props` section, as shown in *line 54* to *line 60* of the example `index.html` file.
+
+The `PureJSSelectors` global variable, mentioned in *line 65*, is used to render the Asset Selector in the web browser.
+
+Asset Selector is rendered on the `<div>` container element, as mentioned in *line 74* to *line 81*. The example uses a dialog to display the Asset Selector.
+
+```html {line-numbers="true"}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>Asset Selectors</title>
+    <link rel="stylesheet" href="index.css">
+    <script id="asset-selector"
+        src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/asset-selectors.js"></script>
+    <script>
+
+        const imsProps = {
+            imsClientId: "<obtained from IMS team>",
+            imsScope: "openid, <other scopes>",
+            redirectUrl: window.location.href,
+            modalMode: true, // false to open in a full page reload flow
+            onImsServiceInitialized: (service) => {
+                // invoked when the ims service is initialized and is ready
+                console.log("onImsServiceInitialized", service);
+            },
+            onAccessTokenReceived: (token) => {
+                console.log("onAccessTokenReceived", token);
+            },
+            onAccessTokenExpired: () => {
+                console.log("onAccessTokenError");
+                // re-trigger sign-in flow
+            },
+            onErrorReceived: (type, msg) => {
+                console.log("onErrorReceived", type, msg);
+            },
+        }
+
+        function load() {
+            const registeredTokenService = PureJSSelectors.registerAssetsSelectorsAuthService(imsProps);
+            imsInstance = registeredTokenService;
+        };
+
+        // initialize the IMS flow before attempting to render the asset selector
+        load();
+        
+
+        //function that will render the asset selector
+            const otherProps = {
+            // any other props supported by asset selector
+            }
+            const assetSelectorProps = {
+                "imsOrg": "imsorg",
+                ...otherProps
+            }
+             // container element on which you want to render the AssetSelector/DestinationSelector component
+            const container = document.getElementById('asset-selector');
+
+            /// Use the PureJSSelectors in globals to render the AssetSelector/DestinationSelector component
+            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () => {
+                const assetSelectorDialog = document.getElementById('asset-selector-dialog');
+                assetSelectorDialog.showModal();
+            });
+        }
+    </script>
+
+</head>
+<body class="asset-selectors">
+    <div>
+        <button onclick="renderAssetSelectorWithAuthFlowFlow()">Asset Selector - Select Assets with Ims Flow</button>
+    </div>
+        <dialog id="asset-selector-dialog">
+            <div id="asset-selector" style="height: calc(100vh - 80px); width: calc(100vw - 60px); margin: -20px;">
+            </div>
+        </dialog>
+    </div>
+</body>
+
+</html>
+
+```
+
++++
+
+<!--Integration with Polaris application content starts here-->
+
+>[!TAB Integration with New Dynamic Media API]
+
+The `rootPath` and `path` properties are restricted in the New Dynamic Media API. Instead, you can configure the `aemTierType` property. Following is the syntax of configuration:
+
+```
+aemTierType:[
+    0: "author" 
+    1: "delivery"
+]
+```
+
+You can choose either of the two or both tier types to filter the [!DNL Experience Manager] repositories. For example, if both `["author","delivery"]` are used, then the repository switcher displays options for both author and delivery if the New Dynamic Media API is enabled and accessible on the environment. Additionally, if `["delivery"]` is used, the repository switcher displays only delivery-related assets.
+
+
+>[!ENDTABS]
+
+## Functional setup code snippets{#code-snippets}
+
+### Customize filter panel {#customize-filter-panel}
+
+You can add the following code snippet in `assetSelectorProps` object to customize the filter panel:
+
+```
+filterSchema: [
+    {
+    header: 'File Type',
+    groupKey: 'TopGroup',
+    fields: [
+    {
+    element: 'checkbox',
+    name: 'type',
+    options: [
+    {
+    label: 'Images',
+    value: '<comma separated mimetypes, without space, that denote all images, for e.g., image/>',
+    },
+    {
+    label: 'Videos',
+    value: '<comma separated mimetypes, without space, that denote all videos for e.g., video/,model/vnd.mts,application/mxf>'
+    }
+    ]
+    }
+    ]
+    },
+    {
+    fields: [
+    {
+    element: 'checkbox',
+    name: 'type',
+    options: [
+    { label: 'JPG', value: 'image/jpeg' },
+    { label: 'PNG', value: 'image/png' },
+    { label: 'TIFF', value: 'image/tiff' },
+    { label: 'GIF', value: 'image/gif' },
+    { label: 'MP4', value: 'video/mp4' }
+    ],
+    columns: 3,
+    },
+    ],
+    header: 'Mime Types',
+    groupKey: 'MimeTypeGroup',
+    }},
+    {
+    fields: [
+    {
+    element: 'checkbox',
+    name: 'property=metadata.application.xcm:keywords.value',
+    options: [
+    { label: 'Fruits', value: 'fruits' },
+    { label: 'Vegetables', value: 'vegetables'}
+    ],
+    columns: 3,
+    },
+    ],
+    header: 'Food Category',
+    groupKey: 'FoodCategoryGroup',
+    }
+],
+```
+
+### Customize information in modal view {#customize-info-in-modal-view}
+
+You can customize the details view of an asset when you click the ![info icon](assets/info-icon.svg) icon. Execute the code below:
+
+```
+// Create an object infoPopoverMap and set the property `infoPopoverMap` with it in assetSelectorProps
+const infoPopoverMap = (map) => {
+// for e.g., to remove `path` from the info popover view
+let defaultPopoverData = PureJSSelectors.getDefaultInfoPopoverData(map);
+return defaultPopoverData.filter((i) => i.label !== 'Path'
+};
+assetSelectorProps.infoPopoverMap = infoPopoverMap;
+```
+
+### Enable or disable drag and drop mode {#enable-disable-drag-and-drop}
+
+Add the following properties to `assetSelectorProp` to enable drag and drop mode. To disable drag and drop, replace the `true` parameter with `false`.
+
+```
+rail: true,
+acvConfig: {
+dragOptions: {
+allowList: {
+'*': true,
+},
+},
+selectionType: 'multiple'
+}
+
+// the drop handler to be implemented
+function drop(e) {
+e.preventDefault();
+// following helps you get the selected assets – an array of objects.
+const data = JSON.parse(e.dataTransfer.getData('collectionviewdata'));
+}
+```
+
+### Selection of Assets {#selection-of-assets}
+
+Selected Asset Type is an array of objects that contains the asset information when using the `handleSelection`, `handleAssetSelection`, and `onDrop` functions.
+
+Execute the following steps to configure the selection of single or multiple assets:
+
+```
+acvConfig: {
+selectionType: 'multiple' // 'single' for single selection
+}
+// the `handleSelection` callback, always gets you the array of selected assets
+```
+
+**Schema Syntax**
+
+```
+interface SelectedAsset {
+    'repo:id': string;
+    'repo:name': string;
+    'repo:path': string;
+    'repo:size': number;
+    'repo:createdBy': string;
+    'repo:createDate': string;
+    'repo:modifiedBy': string; 
+    'repo:modifyDate': string; 
+    'dc:format': string; 
+    'tiff:imageWidth': number;
+    'tiff:imageLength': number;
+    'repo:state': string;
+    computedMetadata: Record<string, any>;
+    _links: {
+        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
+            href: string;
+            type: string;
+            'repo:size': number;
+            width: number;
+            height: number;
+            [others: string]: any;
+        }>;
+    };
+}
+```
+
+The following table describes some of the important properties of the Selected Asset object.
+
+| Property | Type | Description |
+|---|---|---|
+| *repo:repositoryId* | string | Unique identifier for the repository where the asset is stored. |
+| *repo:id*| string | Unique identifier for the asset. |
+| *repo:assetClass* | string | The classification of the asset (For example, image, or video, document). |
+| *repo:name*| string | The name of the asset, including the file extension. |
+| *repo:size*| number| The size of the asset in bytes.|
+| *repo:path*| string | The location of the asset within the repository. |
+| *repo:ancestors*| `Array<string>`| An array of ancestor items for the asset in the repository. |
+| *repo:state*| string | Current state of the asset in the repository (For example, active, deleted, and so on). |
+| *repo:createdBy*| string | The user or system that created the asset. |
+| *repo:createDate* | string | The date and time when the asset was created. |
+| *repo:modifiedBy* | string | The user or system that last modified the asset. |
+| *repo:modifyDate* | string| The date and time when the asset was last modified. |
+| *dc:format*| string | The format of the asset, such as the file type (For example, JPEG, PNG, and so on).|
+| *tiff:imageWidth* | number| The width of an asset.|
+| *tiff:imageLength* | number | The height of an asset. |
+| *computedMetadata* | `Record<string, any>` | An object which represents a bucket for all the asset's metadata of all kinds (repository, application, or embedded metadata). |
+| *_links* | `Record<string, any>` | Hypermedia links for the associated asset. Includes links for resources such as metadata and renditions. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>`| Array of objects containing information about renditions of the asset. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].href>* | string | The URI to the rendition.|
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].type>* | string | The MIME type of the rendition.|
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>'* | number | The size of the rendition in bytes.|
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].width>* | number | The rendition's width. |
+| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | number | The rendition's height. |
+
+For a complete list of properties and detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+
+## Handling selection of Assets using Object Schema {#handling-selection}
+
+The `handleSelection` property is used to handle single or multiple selections of Assets in Assets Selector. The example below states the syntax of usage of `handleSelection`. 
+
+![handle-selection](assets/handling-selection.png)
+
+## Disabling selection of Assets {#disable-selection}
+
+Disable selection is used to hide or disable the assets or folders from being selectable. It hides the select checkbox from the card or asset which refrains it from getting selected. To use this feature, you can declare the position of an asset or folder that you want to disable in an array. For example, if you want to disable the selection of a folder appearing at first position, you can add the following code:
+    `disableSelection: [0]:folder`
+
+You can provide the array with a list of mime types (such as image, folder, file, or other mime types for example, image/jpeg) that you want to disable. The mime types that you declare are mapped into `data-card-type` and `data-card-mimetype` attributes of an asset. 
+
+Additionally, Assets with disabled selection are draggable. To disable drag and drop of a particular asset type, you can use `dragOptions.allowList` property. 
+
+The syntax of disable selection is as follows:
+
+```
+(args)=> {
+    return(
+        <ASDialogWrapper
+            {...args}
+            disableSelection={args.disableSelection}
+            handleAssetSelection={action('handleAssetSelection')}
+            handleSelection={action('handleSelection')}
+            selectionType={args.selectionType}
+        />
+    );
+}
+```
+
+>[!NOTE]
+>
+> In case of an asset, the select checkbox is hidden, whereas, in case of a folder, the folder is unselectable but the navigation of the mentioned folder still appears.
 
 ## Using Asset Selector {#using-asset-selector}
 
