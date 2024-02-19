@@ -12,7 +12,7 @@ feature: Adaptive Forms, Core Components
 ## Introduction
 
 AEM Forms support custom functions, allowing users to define JavaScript functions for implementing complex business rules. These custom functions extend the capabilities of forms by facilitating manipulation and processing of entered data to meet specified requirements. They also enable dynamic alteration of form behavior based on predefined criteria. 
-In Adaptive Forms, you can use custom functions within the [rule editor of an Adaptive Form](/help/forms/rule-editor.md#custom-functions) to create specific validation rules for form fields.
+In Adaptive Forms, you can use custom functions within the [rule editor of an Adaptive Form](/help/forms/rule-editor-core-components.md) to create specific validation rules for form fields.
 
 Let us understand use of custom function where users enter the email address, and you want to ensure that the entered email address follows a specific format (it contains an "@" symbol and a domain name). Create a custom function as "ValidateEmail" which takes the email address as input and returns true if it is valid and false otherwise.
 
@@ -171,7 +171,7 @@ You can add custom functions by adding client library. To create a client librar
 
 1. [Run the pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)
 
-Once the pipeline is executed successfully, the custom function added in client library becomes available in your [Adaptive Form rule editor](/help/forms/rule-editor.md). 
+Once the pipeline is executed successfully, the custom function added in client library becomes available in your [Adaptive Form rule editor](/help/forms/rule-editor-core-components.md). 
 
 ### Add client library in an Adaptive Form{#use-custom-function}
 
