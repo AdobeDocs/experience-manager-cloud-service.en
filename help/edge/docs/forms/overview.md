@@ -8,14 +8,18 @@ hidefromtoc: yes
 
 # AEM Forms Edge Delivery Service {#aem-forms-edge-delivery-service-overview}
 
-AEM Forms Edge Delivery Service is a composable set of services offered by Adobe that allows you to create and deliver high-impact, fast-performing web forms. It is part of Adobe Experience Manager (AEM) and works in conjunction with AEM Forms to provide a streamlined and efficient way to build and deploy forms.
+AEM Forms Edge Delivery Service is a composable service offered by Adobe that allows you to create and deliver high-impact, fast-performing web forms. This composable service seamlessly integrates with Adobe Experience Manager (AEM) to empower you to design, build, and deploy high-impact, lightning-fast web forms with an intuitive and efficient workflow.
 
-You can use AEM Forms Edge Delivery Service to:
+The service, allows you to:
 
-* Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
-* Create forms using familiar tools like Microsoft Excel or Google Sheets instead of the traditional authoring environments.
-* Submit forms directly to your Microsoft Excel or Google Sheets and use their ecosystem to easily process submitted data. You can also submit these forms to any datasource or Rest endpoint.
-* Build forms with perfect Lighthouse scores, leading to better search engine ranking and user engagement.
+* **Craft visually stunning forms**: Ditch the bland, cookie-cutter designs and captivate users with dynamic, modern forms that reflect your brand identity. Leverage pre-built components or create your own custom components to bring your vision to life quickly and easily.
+
+* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
+
+* **Simplify authoring and submissions**: Create forms using familiar tools like Microsoft Excel or Google Sheets instead of the traditional authoring environments. Submit forms directly to your Microsoft Excel or Google Sheets and use their ecosystem to easily process submitted data.
+
+![Sample Form](/help/edge/assets/checkout-form.png)
+
 
 
 ## Key Features
