@@ -609,7 +609,7 @@ user-guide-title: AEM as a Cloud Service
         + [Configure Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)
         + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
         + [Submit an Adaptive Form to Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
-        + [Configure SharePoint Storage for an Adaptive Form](/help/forms/configure-submit-action-sharepoint.md)
+        + [Connect an Adaptive Form to Microsoft® SharePoint](/help/forms/configure-submit-action-sharepoint.md)
         + [Integrate AEM Adaptive Form with AEM Workflow](/help/forms/configure-submit-action-workflow.md)
         + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
         + [Configure the Send Email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md)
