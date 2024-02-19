@@ -34,11 +34,17 @@ To establish a connection between Workfront Fusion and AEM Forms, the following 
 
 ## Integrate AEM Forms with Adobe Workfront Fusion
 
-To connect [Workfront fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) to a form, perform the following steps:
-
 ### 1. Create a Workfront Scenario {#workflow-scenario}
 
-To create a Workfront scenario:
+To create a Workfront scenario, perform the following steps:
+
+1. [Create a scenario](#create-scenario)
+1. [Add a web hook to a scenario](#add-webhook)
+1. [Add a connection to a web hook](#add-connection)
+
+#### Create a scenario {#create-scenario}
+
+To create a scenario:
 1. Sign into your [Workfront Fusion account](https://app-qa.workfrontfusion.com/).
 1. Click **[!UICONTROL Scenarios]** ![Share icon](/help/forms/assets/Smock_ShareAndroid_18_N.svg) in the left panel. 
  1. Click **[!UICONTROL Create a new scenario]** in the upper-right corner of the page. A page to create new scenario appears on-screen.
@@ -55,7 +61,7 @@ To create a Workfront scenario:
 
 1. Select the **[!UICONTROL Watch for Form Events]** dialog box and a window to add a webhook appears.
 
-#### 1.1 Add a webhook {#add-webhook}
+#### Add a webhook {#add-webhook}
 
 ![Add a webhook](/help/forms/assets/workfront-add-webhook.png)
 
@@ -70,7 +76,7 @@ To add a webhook:
 
 1. Click **[!UICONTROL Add]** to add new connection. The **[!UICONTROL Create a Connection]** dialog box appears.
 
-#### 1.2 Add a connection to a webhook {#add-connection}
+#### Add a connection to a webhook {#add-connection}
 
 ![Add a connection](/help/forms/assets/workfront-add-connection.png)
 
