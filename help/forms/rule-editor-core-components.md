@@ -590,10 +590,6 @@ Supported `jsdoc` tags:
   `funcName` is the name of the function (no spaces allowed).
   `<Function Name>` is the display name of the function.
 
-* **Member**
-  Syntax: `@memberof namespace`
-  Attaches a namespace to the function.
-
 * **Parameter**
   Syntax: `@param {type} name <Parameter Description>`
   Alternatively, you can use: `@argument` `{type} name <Parameter Description>` **or** `@arg` `{type}` `name <Parameter Description>`.
@@ -604,11 +600,25 @@ Supported `jsdoc` tags:
     1. number
     1. boolean
     1. scope
+    1. string[]
+    1. number[]
+    1. boolean[]
+    1. date
+    1. date[]
+    1. array
+    1. object
 
-   Scope refers fields of an Adaptive Form. When a form uses lazy loading, you can use `scope` to access its fields. You can access fields either when the fields are loaded or if the fields are marked global.
+   `scope` refers to a special globals object which is provided by forms runtime. It must be the last parameter and is not be visible to the user in the rule editor. You can use scope to access readable form and field proxy object to read properties, event which triggered the rule and a set of functions to manipulate the form.
 
-  All parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case-sensitive. Spaces are not allowed in the parameter `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+   `object` type is used to pass readable field object in parameter to a custom function instead of passing the value.
 
+   All parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case-sensitive. Spaces are not allowed in the parameter `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+
+* **Optional Parameter**
+Syntax: `@param {type=} name <Parameter `
+Alternatively, you can use: `@param {type} [name] <Parameter Description>`
+By default all parameters are mandatory. You can mark a parameter optional by adding `=` in type of the parameter or by putting param name in square brackets.
+   
 * **Return Type**
   Syntax: `@return {type}`
   Alternatively, you can use `@returns {type}`.
@@ -618,37 +628,15 @@ Supported `jsdoc` tags:
     1. string
     1. number
     1. boolean
+    1. string[]
+    1. number[]
+    1. boolean[]
+    1. date
+    1. date[]
+    1. array
+    1. object
 
   All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case-sensitive.
-
-  * **This**
-   Syntax: `@this currentComponent`
-
-   Use @this to refer to the Adaptive Form component on which the rule is written. 
-  
-   The following example is based on the field value. In the following example, the rule hides a field in the form. The `this` portion of `this.value` refers to underlying Adaptive Form component, on which the rule is written.
-
-   ```
-      /**
-      * @function myTestFunction
-      * @this currentComponent
-      * @param {scope} scope in which code inside function is run.
-      */
-      myTestFunction = function (scope) {
-         if(this.value == "O"){
-               scope.age.visible = true;
-         } else {
-            scope.age.visible = false;
-         }
-      }
-
-   ```
-
-   >[!NOTE]
-   >
-   >Comments before custom function are used for summary. Summary can extend to multiple lines until a tag is encountered. Limit the size to a single for a concise description in the rule builder.
-
-
 
 <!--
 **Adding a custom function**
