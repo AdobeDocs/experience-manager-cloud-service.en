@@ -246,11 +246,10 @@ Use the following prerequisites if you are integrating Asset Selector with a non
 
 Asset Selector supports authentication to the [!DNL Experience Manager Assets] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID` when you are integrating it with a non-Adobe application.
 
-+++Configure Asset Selector for a non-Adobe application
++++**Configure Asset Selector for a non-Adobe application**
 To configure Asset Selector for a non-Adobe application, you must first log a support ticket for provisioning followed by the integration steps.
-+++
 
-+++**Logging a support ticket**
+**Logging a support ticket**
 Steps to log a support ticket via the Admin Console:
 
 1. Add **Asset Selector with AEM Assets** in the title of the ticket.
