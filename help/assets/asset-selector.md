@@ -38,36 +38,6 @@ When Asset Selector is integrated with an [!DNL Adobe] application, you are take
 You need a web browser, unified shell, and an app container to access Asset Selector with a non-Adobe (or third party) application. Once these are provided, you are taken to the Asset Selector environment where you can login using your IMS credentials.
 -->
 
-## Prerequisites {#prerequisites}
-
-<!--
-If your application requires user based authentication, out-of-the-box Asset Selector also supports a flow for authentication to the [!DNL Experience Manager Assets] repository using Identity Management System (IMS.)
-
-You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken` automatically. You can use SUSI (Sign Up Sign In) flow and IMS properties. Also, you can obtain your own imsToken and pass it to Asset Selector by integrating within [!DNL Adobe] application on Unified Shell or if you already have an imsToken obtained via other methods (for example, using technical account). Accessing [!DNL Experience Manager Assets] repository without defining IMS properties (For example, `imsScope` and `imsClientID`) is referred to as a non-SUSI flow.
--->
-
-Define the prerequisites in the `index.html` file or a similar file within your application implementation to define the authentication details to access the [!DNL Experience Manager Assets] repository.
-
-Use the following prerequisites if you are integrating Asset Selector with an [!DNL Adobe] application:
-
-* imsOrg
-* imsToken
-* apikey
-
-Use the following prerequisites if you are integrating Asset Selector with a non-Adobe application:
-
-* imsClientId
-* imsScope
-* redirectUrl
-* imsOrg
-* apikey
-
-Use the following prerequisites if you are integrating Asset Selector with a new Dynamic Media API:
-
-* Dynamic Media application
-* New Dynamic Media API setup
-* Assets in an `Approved` state (Refer [How to approve bulk assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/bulk-approval.html?lang=en))
-
 ## Installation {#installation}
 
 Asset Selector is available via both ESM CDN (For example, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) and [UMD](https://github.com/umdjs/umd) version.
@@ -109,76 +79,10 @@ The integration is done by importing the Asset Selector package and connecting t
 * Access the Assets as a Cloud Service repository
 * Configure the Asset Selector display properties
 
-## Asset Selector properties {#asset-selector-properties}
+You can perform authentication without defining some of the IMS properties, if:
 
-You can use the Asset Selector properties to customize the way the Asset Selector is rendered. The following table lists the properties that you can use to customize and use the Asset Selector.
-
-| Property | Type | Required | Default |Description |
-|---|---|---|---|---|
-| *rail*| boolean | No | false | If marked `true`, Asset Selector is rendered in a left rail view. If it is marked `false`, the Asset Selector is rendered in modal view. |
-| *imsOrg*| string | Yes | | Adobe Identity Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The `imsOrg` key is required to authenticate whether the organization you are accessing is under Adobe IMS or not. |
-| *imsToken* | string | No | | IMS bearer token used for authentication. `imsToken` is required if you are using an [!DNL Adobe] application for the integration. |
-| *apiKey* | string | No | | API key used for accessing the AEM Discovery service. `apiKey` is required if you are using an [!DNL Adobe] application integration.|
-| *rootPath* | string | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
-| *path* | string | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
-| *filterSchema* | array | No | | Model that is used to configure filter properties. This is useful when you want to limit certain filter options in Asset Selector.|
-| *filterFormProps*| Object | No | | Specify the filter properties that you need to use to refine your search. For example, MIME type JPG, PNG, GIF. |
-| *selectedAssets* | Array `<Object>` | No       |                 | Specify selected Assets when the Asset Selector is rendered. An array of objects is required that contains an id property of the assets. For example, `[{id: 'urn:234}, {id: 'urn:555'}]` An asset must be available in the current directory. If you need to use a different directory, provide a value for the `path` property as well. |
-| *acvConfig* | Object | No | | Asset Collection View property that contains object containing custom configuration to override defaults. |
-| *i18nSymbols*            | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No       |                 | If the OOTB translations are insufficient for your application's needs, you can expose an interface through which you can pass your own custom localized values through the `i18nSymbols` prop. Passing a value through this interface overrides the default translations provided and instead use your own.  To perform the override, you must pass a valid [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) object to the key of `i18nSymbols` that you want to override. |
-| *intl* | Object | No  | | Asset Selector provides default OOTB translations. You can select the translation language by providing a valid locale string through the `intl.locale` prop. For example: `intl={{ locale: "es-es" }}` </br></br> The locale strings supported follow the [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) for the representation of names of languages standards. </br></br> List of supported locales: English - 'en-us' (default) Spanish - 'es-es' German - 'de-de' French - 'fr-fr' Italian - 'it-it' Japanese - 'ja-jp' Korean - 'ko-kr' Portuguese - 'pt-br' Chinese (Traditional) - 'zh-cn' Chinese (Taiwan) - 'zh-tw' |
-| *repositoryId* | string | No | ''| Repository from where the Asset Selector loads the content. |
-| *additionalAemSolutions* | `Array<string>` | No | [ ] | It lets you add a list of additional AEM repositories. If no information is provided in this property, then only media library or AEM Assets repositories are considered.|
-| *hideTreeNav*| boolean | No |  | Specifies whether to show or hide assets tree navigation sidebar. It is used in modal view only and hence there is no effect of this property in rail view. |
-| *onDrop* | Function | No | | The property allows the drop functionality of an asset. |
-| *dropOptions* | `{allowList?: Object}` | No | | Configures drop options using 'allowList'.  |
-| *colorScheme* | string | No | | Configure theme (`light` or `dark`) for the Asset Selector. |
-| *handleSelection* | Function | No | | Invoked with array of Asset items when assets are selected and the `Select` button on the modal is clicked. This function is only invoked in modal view. For rail view, use the `handleAssetSelection` or `onDrop` functions. Example: <pre>handleSelection=(assets: Asset[])=> {...}</pre> See [Selected Asset Type](#selected-asset-type) for details.|
-| *handleAssetSelection*| Function | No | | Invoked with array of items as the assets are being selected or unselected. This is useful when you want to listen for assets as user selects them. Example: <pre>handleSelection=(assets: Asset[])=> {...}</pre> See [Selected Asset Type](#selected-asset-type) for details. |
-| *onClose* | Function | No | | Invoked when `Close` button in modal view is pressed. This is only called in `modal` view and disregarded in `rail` view. |
-| *onFilterSubmit* | Function | No | | Invoked with filter items as user changes different filter criteria. |
-| *selectionType* | string | No | single | Configuration for `single` or `multiple` selection of assets at a time. |
-| *dragOptions.allowList* | boolean | No | | The property is used to allow or deny the dragging of assets that are not selectable. |
-| *aemTierType* | string | No | | It allows you to select whether you want to show assets from delivery tier, author tier, or both. Note: The use of `aemTierType` property is restricted in New Dynamic Media API application.|
-
-## Examples to use Asset Selector properties {#usage-examples}
-
-You can define the Asset Selector [properties](#asset-selector-properties) in the `index.html` file to customize the Asset Selector display within your application.
-
-### Example 1: Asset Selector in rail view
-
-   ![rail-view-example](assets/rail-view-example-vanilla.png)
-
-If the value of the AssetSelector `rail` is set to `false` or is not mentioned in the properties, Asset Selector displays in the Modal view by default.
-
-<!--
-### Example 2: Use selectedAssets property in addition to the path property
-
-Use the `path` property to define the folder name that displays automatically when the Asset Selector is rendered. In addition, use the `selectedAssets` property to define the IDs for the assets that you need to select within the folder. Moreover, when you want to display assets that are pre-defined within the folder, you can use selectedAssets property.
-
-   ![selected-assets-example](assets/selected-assets-example-vanilla.png)
--->
-
-### Example 2: Metadata popover
-
-Use various properties to define metadata of an asset that you want to view using an info icon. The info popover provides the collection of information about asset or the folder including title, dimensions, date of modification, location, and description of an asset. In the example below, various properties are used to display metadata of an asset, for example, `repo:path` property specifies the location of an asset. <!--`repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the asset or folder is rendered.-->
-    
-   ![metadata-popover-example](assets/metadata-popover.png)
-
-### Example 3: Custom filter property in rail view
-
-In addition to the faceted search, Assets Selector lets you customize various attributes to refine your search from [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application. You need to add the following code to add customized search filters in your application. In the example below, the `Type Filter` search that filters the asset type among Images, Documents, or Videos or the filter type that you have added for the search.
-
-![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
-
-<!--
-
-## Customization after integrating Asset Selector 
-
-### Custom metadata
-
-Assets display panel shows the out of the box metadata that can be displayed in the info of the asset. In addition to this, [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application allows configuration of the asset selector by adding custom metadata that is shown in info panel of the asset.
--->
+* You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
+* You already have an IMS token generated for authentication.
 
 ## Integrate Asset Selector with various applications {#asset-selector-integration-with-apps}
 
@@ -193,6 +97,14 @@ You can integrate Asset Selector with various applications such as:
 <!--Integration with an Adobe application content starts here-->
 
 >[!TAB **Integration with an Adobe application**]
+
+### Prerequisites{#prereqs-adobe-app}
+
+Use the following prerequisites if you are integrating Asset Selector with an [!DNL Adobe] application:
+
+* imsOrg
+* imsToken
+* apikey
 
 ### Integrate Asset Selector with an [!DNL Adobe] application {#adobe-app-integration-vanilla}
 
@@ -328,14 +240,19 @@ console.log("onErrorReceived", type, msg);
 
 >[!TAB **Integration with a non-Adobe application**]
 
-### Integrate Asset Selector with a [!DNL non-Adobe] application {#adobe-non-app-integration}
+<!--### Integrate Asset Selector with a [!DNL non-Adobe] application {#adobe-non-app-integration}-->
+
+### Prerequisites {#prereqs-non-adobe-app} 
+
+Use the following prerequisites if you are integrating Asset Selector with a non-Adobe application:
+
+* imsClientId
+* imsScope
+* redirectUrl
+* imsOrg
+* apikey
 
 Asset Selector supports authentication to the [!DNL Experience Manager Assets] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID` when you are integrating it with a non-Adobe application.
-
-You can perform authentication without defining some of the IMS properties, if:
-
-* You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
-* You already have an IMS token generated for authentication.
 
 +++Configure Asset Selector for a non-Adobe application
 To configure Asset Selector for a non-Adobe application, you must first log a support ticket for provisioning followed by the integration steps.
@@ -459,18 +376,22 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 >[!TAB **Integration with New Dynamic Media API**]
 
+### Prerequisites {#prereqs-polaris}
+
+Use the following prerequisites if you are integrating Asset Selector with a new Dynamic Media API:
+
+* To access new Dynamic Media APIs, you must have licences for:
+    * AEM Assets as a Cloud Service
+    * AEM Dynamic Media
+* [Approved assets](#approved-assets.md)
+
 ### Integrate Asset Selector with New Dynamic Media API {#adobe-app-integration-polaris}
 
 The `rootPath` and `path` properties are restricted in the New Dynamic Media API. Instead, you can configure the `aemTierType` property. Following is the syntax of configuration:
 
 ```
-aemTierType:[
-    0: "author" 
-    1: "delivery"
-]
+aemTierType:[1: "delivery"]
 ```
-
-You can choose either of the two or both tier types to filter the [!DNL Experience Manager] repositories. For example, if both `["author","delivery"]` are used, then the repository switcher displays options for both author and delivery if the New Dynamic Media API is enabled and accessible on the environment. Additionally, if `["delivery"]` is used, the repository switcher displays only delivery-related assets.
 
 +++**New Dynamic Media API user interface**
 
@@ -495,7 +416,80 @@ Asset Selector allows you to configure filters based upon your required customiz
 
 >[!ENDTABS]
 
+## Asset Selector properties {#asset-selector-properties}
+
+You can use the Asset Selector properties to customize the way the Asset Selector is rendered. The following table lists the properties that you can use to customize and use the Asset Selector.
+
+| Property | Type | Required | Default |Description |
+|---|---|---|---|---|
+| *rail*| boolean | No | false | If marked `true`, Asset Selector is rendered in a left rail view. If it is marked `false`, the Asset Selector is rendered in modal view. |
+| *imsOrg*| string | Yes | | Adobe Identity Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The `imsOrg` key is required to authenticate whether the organization you are accessing is under Adobe IMS or not. |
+| *imsToken* | string | No | | IMS bearer token used for authentication. `imsToken` is required if you are using an [!DNL Adobe] application for the integration. |
+| *apiKey* | string | No | | API key used for accessing the AEM Discovery service. `apiKey` is required if you are using an [!DNL Adobe] application integration.|
+| *rootPath* | string | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
+| *path* | string | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
+| *filterSchema* | array | No | | Model that is used to configure filter properties. This is useful when you want to limit certain filter options in Asset Selector.|
+| *filterFormProps*| Object | No | | Specify the filter properties that you need to use to refine your search. For example, MIME type JPG, PNG, GIF. |
+| *selectedAssets* | Array `<Object>` | No       |                 | Specify selected Assets when the Asset Selector is rendered. An array of objects is required that contains an id property of the assets. For example, `[{id: 'urn:234}, {id: 'urn:555'}]` An asset must be available in the current directory. If you need to use a different directory, provide a value for the `path` property as well. |
+| *acvConfig* | Object | No | | Asset Collection View property that contains object containing custom configuration to override defaults. |
+| *i18nSymbols*            | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No       |                 | If the OOTB translations are insufficient for your application's needs, you can expose an interface through which you can pass your own custom localized values through the `i18nSymbols` prop. Passing a value through this interface overrides the default translations provided and instead use your own.  To perform the override, you must pass a valid [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) object to the key of `i18nSymbols` that you want to override. |
+| *intl* | Object | No  | | Asset Selector provides default OOTB translations. You can select the translation language by providing a valid locale string through the `intl.locale` prop. For example: `intl={{ locale: "es-es" }}` </br></br> The locale strings supported follow the [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) for the representation of names of languages standards. </br></br> List of supported locales: English - 'en-us' (default) Spanish - 'es-es' German - 'de-de' French - 'fr-fr' Italian - 'it-it' Japanese - 'ja-jp' Korean - 'ko-kr' Portuguese - 'pt-br' Chinese (Traditional) - 'zh-cn' Chinese (Taiwan) - 'zh-tw' |
+| *repositoryId* | string | No | ''| Repository from where the Asset Selector loads the content. |
+| *additionalAemSolutions* | `Array<string>` | No | [ ] | It lets you add a list of additional AEM repositories. If no information is provided in this property, then only media library or AEM Assets repositories are considered.|
+| *hideTreeNav*| boolean | No |  | Specifies whether to show or hide assets tree navigation sidebar. It is used in modal view only and hence there is no effect of this property in rail view. |
+| *onDrop* | Function | No | | The property allows the drop functionality of an asset. |
+| *dropOptions* | `{allowList?: Object}` | No | | Configures drop options using 'allowList'.  |
+| *colorScheme* | string | No | | Configure theme (`light` or `dark`) for the Asset Selector. |
+| *handleSelection* | Function | No | | Invoked with array of Asset items when assets are selected and the `Select` button on the modal is clicked. This function is only invoked in modal view. For rail view, use the `handleAssetSelection` or `onDrop` functions. Example: <pre>handleSelection=(assets: Asset[])=> {...}</pre> See [Selected Asset Type](#selected-asset-type) for details.|
+| *handleAssetSelection*| Function | No | | Invoked with array of items as the assets are being selected or unselected. This is useful when you want to listen for assets as user selects them. Example: <pre>handleSelection=(assets: Asset[])=> {...}</pre> See [Selected Asset Type](#selected-asset-type) for details. |
+| *onClose* | Function | No | | Invoked when `Close` button in modal view is pressed. This is only called in `modal` view and disregarded in `rail` view. |
+| *onFilterSubmit* | Function | No | | Invoked with filter items as user changes different filter criteria. |
+| *selectionType* | string | No | single | Configuration for `single` or `multiple` selection of assets at a time. |
+| *dragOptions.allowList* | boolean | No | | The property is used to allow or deny the dragging of assets that are not selectable. |
+| *aemTierType* | string | No | | It allows you to select whether you want to show assets from delivery tier, author tier, or both. Note: The use of `aemTierType` property is restricted in New Dynamic Media API application. Syntax of `aemTierType` property: `aemTierType:[0: "author" 1: "delivery"` For example, if both `["author","delivery"]` are used, then the repository switcher displays options for both author and delivery if the New Dynamic Media API is enabled and accessible on the environment. Additionally, if `["delivery"]` is used, the repository switcher displays only delivery-related assets. |
+
+## Examples to use Asset Selector properties {#usage-examples}
+
+You can define the Asset Selector [properties](#asset-selector-properties) in the `index.html` file to customize the Asset Selector display within your application.
+
+### Example 1: Asset Selector in rail view
+
+   ![rail-view-example](assets/rail-view-example-vanilla.png)
+
+If the value of the AssetSelector `rail` is set to `false` or is not mentioned in the properties, Asset Selector displays in the Modal view by default.
+
+<!--
+### Example 2: Use selectedAssets property in addition to the path property
+
+Use the `path` property to define the folder name that displays automatically when the Asset Selector is rendered. In addition, use the `selectedAssets` property to define the IDs for the assets that you need to select within the folder. Moreover, when you want to display assets that are pre-defined within the folder, you can use selectedAssets property.
+
+   ![selected-assets-example](assets/selected-assets-example-vanilla.png)
+-->
+
+### Example 2: Metadata popover
+
+Use various properties to define metadata of an asset that you want to view using an info icon. The info popover provides the collection of information about asset or the folder including title, dimensions, date of modification, location, and description of an asset. In the example below, various properties are used to display metadata of an asset, for example, `repo:path` property specifies the location of an asset. <!--`repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the asset or folder is rendered.-->
+    
+   ![metadata-popover-example](assets/metadata-popover.png)
+
+### Example 3: Custom filter property in rail view
+
+In addition to the faceted search, Assets Selector lets you customize various attributes to refine your search from [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application. You need to add the following code to add customized search filters in your application. In the example below, the `Type Filter` search that filters the asset type among Images, Documents, or Videos or the filter type that you have added for the search.
+
+![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
+
+<!--
+
+## Customization after integrating Asset Selector 
+
+### Custom metadata
+
+Assets display panel shows the out of the box metadata that can be displayed in the info of the asset. In addition to this, [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application allows configuration of the asset selector by adding custom metadata that is shown in info panel of the asset.
+-->
+
 ## Functional setup code snippets{#code-snippets}
+
+Define the prerequisites in the `index.html` file or a similar file within your application implementation to define the authentication details to access the [!DNL Experience Manager Assets] repository. Once done, you can add code snippets as per your requirement.
 
 ### Customize filter panel {#customize-filter-panel}
 
