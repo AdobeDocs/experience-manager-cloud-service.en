@@ -18,10 +18,6 @@ The service, allows you to:
 
 * **Simplify authoring and submissions**: Create forms using familiar tools like Microsoft Excel or Google Sheets instead of the traditional authoring environments. Submit forms directly to your Microsoft Excel or Google Sheets and use their ecosystem to easily process submitted data.
 
-![Sample Form](/help/edge/assets/checkout-form.png)
-
-
-
 ## Key Features
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 20px;">
@@ -73,3 +69,30 @@ The service, allows you to:
     </div>
     
 </div>
+
+## Sample Forms
+
+<div>
+
+  <style>
+    @keyframes carousel-animation {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-200%);
+      }
+    }
+  </style>
+
+<div style="width: 400px; overflow: hidden; position: relative; margin: 0 auto;">
+    <div style="display: flex; animation: carousel-animation 6s infinite;">
+      <img src="/help/edge/assets/checkout-form.png" alt="Image 1" style="width: 100%; object-fit: cover;">
+      <img src="/help/edge/assets/shipto.png" alt="Image 2" style="width: 100%; object-fit: cover;">
+      <img src="/help/edge/assets/checkout_payment_method.png" alt="Image 3" style="width: 100%; object-fit: cover;">
+    </div>
+  </div>
+
+</div>
+
+
