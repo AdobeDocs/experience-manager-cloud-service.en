@@ -88,7 +88,7 @@ You can integrate Asset Selector with various applications such as:
 
 <!--Integration with an Adobe application content starts here-->
 
->[!TAB **Integration with an Adobe application**]
+>[!TAB Integration with an Adobe application]
 
 ### Prerequisites{#prereqs-adobe-app}
 
@@ -230,7 +230,7 @@ console.log("onErrorReceived", type, msg);
 
 <!--Integration with non-Adobe application content starts here-->
 
->[!TAB **Integration with a non-Adobe application**]
+>[!TAB Integration with a non-Adobe application]
 
 <!--### Integrate Asset Selector with a [!DNL non-Adobe] application {#adobe-non-app-integration}-->
 
@@ -365,7 +365,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 <!--Integration with Polaris application content starts here-->
 
->[!TAB **Integration with New Dynamic Media API**]
+>[!TAB Integration with New Dynamic Media API]
 
 ### Prerequisites {#prereqs-polaris}
 
