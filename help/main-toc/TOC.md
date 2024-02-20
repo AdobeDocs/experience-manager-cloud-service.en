@@ -810,6 +810,7 @@ user-guide-title: AEM as a Cloud Service
       + [Add repeatable sections to a form](/help/edge/docs/forms/repeatable-forms.md)
       + [Apply reCAPTCHA to a form](/help/edge/docs/forms/recaptacha-forms.md)
       + [Create Custom Components](/help/edge/docs/forms/custom-components-forms.md)
+      + [Add thank you page](/help/edge/docs/forms/thank-you-page-form.md)
   + Resources for Edge Delivery {#resources}
     + Sidekick {#sidekick}
       + [Using Sidekick](/help/edge/docs/sidekick.md)

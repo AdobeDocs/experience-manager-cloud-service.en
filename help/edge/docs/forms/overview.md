@@ -20,6 +20,8 @@ The service, allows you to:
 
 ## Build forms with AEM Forms Edge Delivery Service 
 
+</br>
+
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 5px;">
     <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
        <a href="/help/edge/docs/forms/create-forms.md"> <img src="/help/edge/assets/smock_devices_18_n.svg"alt="Create a form using eds forms" style="width: 75px, Height: 50px; border-radius: 5px;"> 
@@ -69,5 +71,7 @@ The service, allows you to:
     </div>
     
 </div>
+
+
 
 
