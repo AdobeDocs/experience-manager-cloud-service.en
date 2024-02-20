@@ -101,7 +101,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ## Integrate Asset Selector using Vanilla JS {#integration-using-vanilla-js}
 
-You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] repository and select assets from within the application. 
+You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] repository and select assets from within the application. See [Asset Selector Integration with various applications](#asset-selector-integration-with-apps)
 
 The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. You need to edit an `index.html` or any appropriate file within your application to:
 
@@ -180,13 +180,21 @@ In addition to the faceted search, Assets Selector lets you customize various at
 Assets display panel shows the out of the box metadata that can be displayed in the info of the asset. In addition to this, [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application allows configuration of the asset selector by adding custom metadata that is shown in info panel of the asset.
 -->
 
+## Integrate Asset Selector with various applications {#asset-selector-integration-with-apps}
+
+You can integrate Asset Selector with various applications such as:
+
+* [Integrate Asset Selector with an [!DNL Adobe] application](#adobe-app-integration-vanilla)
+* [Integrate Asset Selector with a non-Adobe application](#adobe-non-app-integration)
+* [Integrate Asset Selector with New Dynamic Media API](#adobe-app-integration-polaris)
+
 >[!BEGINTABS]
 
 <!--Integration with an Adobe application content starts here-->
 
->[!TAB Integration with an Adobe application]
+>[!TAB **Integration with an Adobe application**]
 
-## Integrate Asset Selector with an [!DNL Adobe] application {#adobe-app-integration-vanilla}
+### Integrate Asset Selector with an [!DNL Adobe] application {#adobe-app-integration-vanilla}
 
 The following example demonstrates the usage of Asset Selector when running an [!DNL Adobe] application under Unified Shell or when you already have `imsToken` generated for authentication.
 
@@ -225,7 +233,7 @@ By following these steps, you can use Asset Selector with your [!DNL Adobe] appl
 
 For detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
-+++ImsAuthProps
++++**ImsAuthProps**
 The `ImsAuthProps` properties define the authentication information and flow that the Asset Selector uses to obtain an `imsToken`. By setting these properties, you can control how the authentication flow should behave and register listeners for various authentication events.
 
 | Property Name | Description|
@@ -241,7 +249,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 +++
 
-+++ImsAuthService
++++**ImsAuthService**
 `ImsAuthService` class handles the authentication flow for the Asset Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] Assets repository. ImsAuthService uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the convenient [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) function to register the _ImsAuthService_ instance with the Asset Selector. The following functions are available on the `ImsAuthService` class. However, if you are using the _registerAssetsSelectorsAuthService_ function, you do not need to call these functions directly.
 
 | Function Name | Description |
@@ -254,7 +262,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 +++
 
-+++IMS token validation
++++**IMS token validation**
 
 ```
 <script>
@@ -283,7 +291,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 +++
 
-+++Register callbacks to IMS service
++++**Register callbacks to IMS service**
 
 ```
 // object `imsProps` to be defined as below 
@@ -318,9 +326,9 @@ console.log("onErrorReceived", type, msg);
 
 <!--Integration with non-Adobe application content starts here-->
 
->[!TAB Integration with a non-Adobe application]
+>[!TAB **Integration with a non-Adobe application**]
 
-## Integrate Asset Selector with a [!DNL non-Adobe] application {#adobe-non-app-integration}
+### Integrate Asset Selector with a [!DNL non-Adobe] application {#adobe-non-app-integration}
 
 Asset Selector supports authentication to the [!DNL Experience Manager Assets] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID` when you are integrating it with a non-Adobe application.
 
@@ -333,7 +341,7 @@ You can perform authentication without defining some of the IMS properties, if:
 To configure Asset Selector for a non-Adobe application, you must first log a support ticket for provisioning followed by the integration steps.
 +++
 
-+++Logging a support ticket
++++**Logging a support ticket**
 Steps to log a support ticket via the Admin Console:
 
 1. Add **Asset Selector with AEM Assets** in the title of the ticket.
@@ -344,7 +352,7 @@ Steps to log a support ticket via the Admin Console:
     * Domain names where the non-Adobe web application is hosted.
 +++
 
-+++Integration steps
++++**Integration steps**
 Use this example `index.html` file for authentication while integrating Asset Selector with a non-Adobe application.
 
 Access the Asset Selector package using the `Script` Tag, as shown in *line 9* to *line 11* of the example `index.html` file.
@@ -439,9 +447,19 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 +++
 
++++**Unable to access delivery repository**
+
+>[!TIP]
+>
+>If you have integrated Asset Selector using Sign up Sign In workflow but still unable to access the delivery repository, ensure that browser cookies are cleaned up. Otherwise, you end up getting `invalid_credentials All session cookies are empty` error in the console.
+
++++
+
 <!--Integration with Polaris application content starts here-->
 
->[!TAB Integration with New Dynamic Media API]
+>[!TAB **Integration with New Dynamic Media API**]
+
+### Integrate Asset Selector with New Dynamic Media API {#adobe-app-integration-polaris}
 
 The `rootPath` and `path` properties are restricted in the New Dynamic Media API. Instead, you can configure the `aemTierType` property. Following is the syntax of configuration:
 
@@ -454,6 +472,26 @@ aemTierType:[
 
 You can choose either of the two or both tier types to filter the [!DNL Experience Manager] repositories. For example, if both `["author","delivery"]` are used, then the repository switcher displays options for both author and delivery if the New Dynamic Media API is enabled and accessible on the environment. Additionally, if `["delivery"]` is used, the repository switcher displays only delivery-related assets.
 
++++**New Dynamic Media API user interface**
+
+The New Dynamic Media API allows you to view approved assets.
+
+![New Dynamic Media API UI](assets/polaris-ui.png)
+
+* **A**: [Hide/Show panel](#hide-show-panel)
+* **B**: [Assets](#repository)
+* **C**: [Sorting](#sorting)
+* **D**: [Filters](#filters)
+* **E**: [Search bar](#search-bar)
+* **F**: [Sorting in ascending or descending order](#sorting)
+* **G**: [Cancel Selection](#cancel-selection)
+* **H**: [Select single or multiple assets](#select-assets)
+
++++
+
++++**Configure custom filters**
+Asset Selector allows you to configure filters based upon your required customization. You can configure properties that are defined at `jcr:content/metadata/` are exposed under `metadata.embedded.<propertyname>`. You need to define mapping under `filterSchema`property. For example, a property on asset `jcr:content/metadata/pmi:market` available as `metadata.embedded.pmi:market for filter configuration`
++++
 
 >[!ENDTABS]
 
@@ -687,7 +725,7 @@ To hide folders in the left navigation, click **[!UICONTROL Hide folders]** icon
 
 ### Repository switcher {#repository-switcher}
 
-Asset Selector also lets you switch repositories for asset selection. You can select the repository of your choice from the drop-down available in the left panel. The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. It is based on the environments from the selected IMS org that is accessed by the logged in user. Consumers can pass a preferred `repositoryID` and in that case the Asset Selector stops rendering the repo switcher and render assets from the given repository only.
+Asset Selector also lets you switch repositories for asset selection. You can select the repository of your choice from the drop-down available in the left panel. The repository options available in the drop-down list are based on the `repositoryId` property defined in the `index.html` file. It is based on the environment from the selected IMS org that is accessed by the logged in user. Consumers can pass a preferred `repositoryID` and in that case the Asset Selector stops rendering the repo switcher and render assets from the given repository only.
 <!--
 It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
 -->
@@ -789,4 +827,26 @@ Asset Selector lets you know the status of your uploaded assets. The status can 
 ### Localization
 
 The integration of Asset Selector with [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] allows localized content appear in your application.
+-->
+
+
+
+<!--Best Practice-->
+<!--
++++**Control default selection of the filter**
+You can make the selection of filter default by implementing the following code snippet:
+
+```
+"defaultValue": [
+    "image/*",
+    "application/*"
+],
+
+{
+    "label": "Documents",
+    "value": "application/*"
+}
+```
+
++++
 -->
