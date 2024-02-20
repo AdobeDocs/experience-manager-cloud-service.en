@@ -31,12 +31,12 @@ The service, allows you to:
     <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
         <a href="/help/edge/docs/forms/validate-forms.md"> <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Add validations to form fields" style="width: 75px, Height: 50px; border-radius: 5px;"> 
         <h2 style="margin-top: 10px;">Apply field validations</h2> </a>
-        <p>Reduce errors and frustration by checking form inputs for proper formatting in real time.</p>
+        <p>Reduce errors and frustration by checking form inputs for proper formatting.</p>
     </div>
     <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
         <a href="/help/edge/docs/forms/form-fragments.md">  <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Use Form Fragments in an EDS Form" style="width: 75px, Height: 50px; border-radius: 5px;"> 
         <h2 style="margin-top: 10px;">Create form fragments</h2> </a>
-        <p>Reuse preconfigured fragments across multiple touchpoints for quicker authoring and improved consistency.</p>
+        <p>Reuse preconfigured fragments across multiple forms.</p>
     </div>
     <!-- Add more cards as needed -->
     <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
@@ -47,7 +47,7 @@ The service, allows you to:
     <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
         <a href="/help/edge/docs/forms/style-theme-forms.md">  <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Apply styles or themes to an eds form" style="width: 75px, Height: 50px; border-radius: 5px;"> 
         <h2 style="margin-top: 10px;">Customize a theme</h2> </a>
-        <p>Create a consistent brand image by having the same theme applied across all devices. </p>
+        <p>Create a consistent brand image by applying same theme across forms. </p>
     </div>
     <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  <img src="/help/edge/assets/smock_addto_18_n.svg" alt="Add repeatable sections to an EDS Form" style="width: 75px, Height: 50px; border-radius: 5px;"> 
@@ -56,7 +56,7 @@ The service, allows you to:
     </div>
    <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
          <a href="/help/edge/docs/forms/custom-components-forms.md"> <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="Create custom forms components using standard JavaScript and CSS" style="width: 75px, Height: 50px; border-radius: 5px;">  
-        <h2 style="margin-top: 10px;">Create a custom component</h2> </a>
+        <h2 style="margin-top: 10px;">Create custom components</h2> </a>
         <p>Use standard JavaScript and CSS to create components and themes.</p>
     </div>
     <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
@@ -67,11 +67,7 @@ The service, allows you to:
         <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
         <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Submit form" style="width: 75px, Height: 50px; border-radius: 5px;"> 
         <h2 style="margin-top: 10px;">Submit form to spreadsheet</h2> </a>
-        <p>Submit forms directly to your Microsoft Excel or Google Sheets and use their ecosystem to easily process submitted data.</p>
+        <p>Submit forms directly to your Microsoft Excel or Google Sheets.</p>
     </div>
     
 </div>
-
-
-
-
