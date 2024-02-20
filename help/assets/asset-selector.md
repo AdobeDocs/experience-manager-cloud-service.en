@@ -23,19 +23,11 @@ Asset Selector provides many benefits, such as:
 * Ability to switch repositories within an IMS organization for asset selection.
 * Ability to sort assets by name, dimensions, and size and view them in List, Grid, Gallery, or  Waterfall view.
 
-Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
+<!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
 1. [Install Asset Selector](#installation)
 2. [Integrate Asset Selector using Vanilla JS](#integration-using-vanilla-js)
 3. [Use Asset Selector](#using-asset-selector)
-
-<!--
-Once the Asset Selector is integrated with [!DNL Adobe] or non-Adobe application, you can login using various means:
-**Login flow for [!DNL Adobe] application:**
-When Asset Selector is integrated with an [!DNL Adobe] application, you are taken directly to the Asset Selector environment where you can login using your IMS credentials.
-
-**Login flow for non-Adobe application:**
-You need a web browser, unified shell, and an app container to access Asset Selector with a non-Adobe (or third party) application. Once these are provided, you are taken to the Asset Selector environment where you can login using your IMS credentials.
 -->
 
 ## Installation {#installation}
