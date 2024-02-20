@@ -6,14 +6,16 @@ hide: yes
 hidefromtoc: yes
 ---
 
-# Create a form
+# Create a form on AEM Forms Edge Delivery Service
 
-In today's digital age, creating user-friendly forms is essential for any organization. AEM Forms Edge Delivery's lets you create forms using familiar tools like Word or Google Docs. These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft Sharepoint to easily process submitted data or to initiate an existing business workflow.
+In today's digital age, creating user-friendly forms is essential for any organization. AEM Forms Edge Delivery's lets you create forms using familiar tools like Word or Google Docs. 
+
+These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft Sharepoint to easily process submitted data or to initiate an existing business workflow.
 
 ## Prerequisites
 
 * You have a Github account. 
-* You have access to Google Sheets or Microsoft Excel and Microsoft SharePoint.
+* You have access to Google Sheets or Microsoft SharePoint.
 * You understand the basics of Git, HTML, CSS, and JavaScript.
 * You have Node and NPM installed for local development.
 
@@ -132,7 +134,7 @@ Till now, you have enabled the form block for your EDS project and prepared the 
 
     ![error on form submission](/help/edge/assets/form-error.png)
 
-   Next, [prepare your sheet to accept data](/help/edge/docs/forms/submit-forms.md). You can submit the data to sheet post preparing it to accept data. 
+   [Prepare your sheet to accept data](/help/edge/docs/forms/submit-forms.md). You can submit the data to sheet post preparing it to accept data. 
 
 
 ## See more
