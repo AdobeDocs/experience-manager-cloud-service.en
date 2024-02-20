@@ -18,7 +18,7 @@ Some of the advantages of seamless integration of AEM Forms and Microsoft® OneD
 * Cross-device accessibility of OneDrive ensures that stored form data is readily available on different platforms. Users can access the submitted data, attachments, and documents from desktops, laptops, tablets, and mobile devices, enhancing accessibility and flexibility.
 * OneDrive integration with AEM forms provides a reliable and scalable solution for efficient data storage. All Adaptive Form submissions, such as files, attachments, and Document of Record, can be conveniently saved in OneDrive, ensuring organized and accessible data.
 
-## Connect OneDrive to an Adaptive
+## Connect OneDrive to an Adaptive Form
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
