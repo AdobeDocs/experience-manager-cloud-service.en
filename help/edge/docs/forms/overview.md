@@ -83,8 +83,7 @@ AEM Forms Edge Delivery Service helps you:
       </a>
       <p>Effortlessly create and add repeatable sections to a form.</p>
   </div>
-</div>
-<!-- Repeat the same structure for other cards -->
+
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
   <div class="card-container">
@@ -110,6 +109,9 @@ AEM Forms Edge Delivery Service helps you:
   </div>
 </div>
 </div>
+
+</div>
+<!-- Repeat the same structure for other cards -->
 
 </br>
 
