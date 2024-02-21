@@ -5,11 +5,11 @@ description: Learn how to use the Sites console to manage and organize your AEM 
 
 # The Sites Console {#sites-console}
 
-Learn how to use the Sites console to manage and organize your AEM pages.
+Learn how to use the **Sites** console to manage and organize your AEM pages.
 
 ## Orientation {#sites-console}
 
-The Sites console allows you to view your page hierarchy. 
+The **Sites** console allows you to view your page hierarchy. 
 
 ![Column view of the Sites console with an item selected](assets/sites-console-column-view-selected.png)
 
@@ -30,22 +30,24 @@ The console toolbar is always present on the console and helps you orient yourse
 
 The side panel selector allow you to show additional information about the selected item in the console.
 
-![Side panel selector button](/help/sites-cloud/authoring/assets/rail-selector.png)
+![Side panel selector button](assets/sites-console-side-panel-button.png)
 
 The options presented depend on your current console. For example, in **Sites** you can select content only (the default), the timeline, references, or filter side panel.
 
-![Example of side panel selector](/help/sites-cloud/authoring/assets/rail-selector-example.png)
+![Example of side panel selector](assets/sites-console-side-panel-selector.png)
+
+For more information about the side panel, please see the document [Sites Console Side Panel.](/help/sites-cloud/authoring/getting-started/console-side-panel.md)
 
 ### Breadcrumbs {#breadcrumbs}
 
 Situated in the middle of the rail, and always showing the description of the currently selected item, the breadcrumbs allow you to navigate through the levels of your website.
 
-![Breadcrumbs in navigation bar](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
+![Breadcrumbs in navigation bar](assets/sites-console-breadcrumbs-navigation.png)
 
 
-Click the breadcrumb text to display a drop-down listing the levels of the hierarchy of the currently selected item. Click an entry to jump to that location.
+Tap or click the breadcrumb text to display a drop-down listing the levels of the hierarchy of the currently selected item. Tap or click an entry to jump to that location.
 
-![Example of breadcrumbs expanded](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
+![Example of breadcrumbs expanded](assets/sites-console-breadcrumbs-example.png)
 
 ### Select All {#select-all}
 
@@ -60,19 +62,19 @@ You can deselect all items and exit selection mode by:
 * Clicking or tapping the **X** next to the count.
 * Using the **escape** key.
 
-![Deselect all](/help/sites-cloud/authoring/assets/deselect-all.png)
+![Deselect all](assets/sites-console-deselect-all.png)
 
 ### Create Button {#create-button}
 
 The **Create** button allows you to add new pages to your site as well as create additional Sites objects such as Live Copies or Launches.
 
-![Create button](/help/sites-cloud/authoring/assets/create.png)
+![Create button](assets/sites-console-create.png)
 
 Once clicked, the options displayed are appropriate to the console/context.
 
 ## Views and Selecting Pages {#views}
 
-The Sites console offers three different views of your content hierarchy. You can view, navigate through, and select (for further action) your resources with any of the available views.
+The **Sites** console offers three different views of your content hierarchy. You can view, navigate through, and select (for further action) your resources with any of the available views.
 
 * [Column View](#column-view)
 * [Card View](#card-view)
@@ -82,11 +84,11 @@ The **View** icon at the far right of the AEM toolbar indicates the current view
 
 Tapping or clicking it allows you to select a different view.
 
-![Views button](/help/sites-cloud/authoring/assets/views-button.png)
+![Views button](assets/sites-console-views-button.png)
 
 You can switch between column view, card view, and list view. In the list view it also shows the view settings.
 
-![Views](/help/sites-cloud/authoring/assets/view.png)
+![Views](assets/sites-console-view.png)
 
 >[!NOTE]
 >
@@ -112,7 +114,7 @@ Selecting a specific resource is dependent on a combination of the view and the 
 
 1. For example, in card view:
 
-   ![Card view select](/help/sites-cloud/authoring/assets/card-view-select.png)
+   ![Card view select](assets/sites-console-card-view-select.png)
 
 1. Once you have selected a resource the top header is covered by the [actions toolbar](#actions-toolbar) that provides access to actions currently applicable to the selected resource.
 
@@ -122,7 +124,7 @@ Selecting a specific resource is dependent on a combination of the view and the 
 
 The column view allows for visual navigation of a content tree through a series of cascading columns. This view lets you visualize and traverse the tree structure of your website.
 
-![Column view](/help/sites-cloud/authoring/assets/column-view.png)
+![Column view](assets/sites-console-column-view.png)
 
 Selecting a resource in the leftmost column will display the child resources in a column to the right. Selecting a resource in the right column will then display the child resources in another column to the right and so on.
 
@@ -151,7 +153,7 @@ Selecting a resource in the leftmost column will display the child resources in 
 
 In card view, each item at the current level in the hierarchy is displayed as a large card.
 
-![Card view](/help/sites-cloud/authoring/assets/card-view.png)
+![Card view](assets/sites-console-card-view.png)
 
 * Cards provide information such as:
 
@@ -163,7 +165,7 @@ In card view, each item at the current level in the hierarchy is displayed as a 
 
 Card view also offers [quick actions](#quick-actions) for the items such as selection and common actions such as edit.
 
-![Quick actions](/help/sites-cloud/authoring/assets/quick-actions.png)
+![Quick actions](assets/sites-console-quick-actions.png)
 
 You can navigate down the tree by tapping/clicking on cards (taking care to avoid tapping the quick actions) or up again by using the [breadcrumbs in the header](#the-header).
 
@@ -171,7 +173,7 @@ You can navigate down the tree by tapping/clicking on cards (taking care to avoi
 
 List view provides information for each resource at the current level in a list.
 
-![List view](/help/sites-cloud/authoring/assets/list-view.png)
+![List view](assets/sites-console-list-view.png)
 
 * You can navigate down through the tree by tapping/clicking on the resource name and back up by using the [breadcrumbs in the header](#the-header).
 * To easily select all items in the list, use the [**Select All** checkbox in the toolbar.](#select-all)
@@ -190,17 +192,17 @@ List view provides information for each resource at the current level in a list.
   * **Unique Visitors**
   * **Time on Page**
 
-![Select columns](/help/sites-cloud/authoring/assets/select-columns.png)
+![Configure columns](assets/sites-console-select-columns.png)
 
 By default the **Name** column is shown, which makes up part of the URL for the page. In some cases the author might need to access pages that are in a different language and seeing the name of the page (which is usually unchanging) can be of great help if the author does not know the language of the page.
 
 * Change the order of items using the dotted vertical bar at the far right of each item in the list.
 
-![Column order](/help/sites-cloud/authoring/assets/column-order.png)
+![Column order](assets/sites-console-column-order.png)
 
 Select the vertical selection bar and drag the item to a new position in the list.
 
-![Order list](/help/sites-cloud/authoring/assets/order-list.png)
+![Order list](assets/sites-console-order-list.png)
 
 >[!NOTE]
 >
@@ -210,14 +212,14 @@ Select the vertical selection bar and drag the item to a new position in the lis
 
 Whenever a resource is selected, various actions are indicated by icons with explanatory text in the toolbar. These actions are dependent on:
 
-* The current context
-* Whether you are in [selection mode](#viewing-and-selecting-resources)
+* The current context.
+* Whether you are in [selection mode.](#viewing-and-selecting-resources)
 
 The action available in the toolbar change to reflect the actions you can take on the specific items selected and how you [select a resource](#viewing-and-selecting-resources) depends on the view.
 
 Due to the space restrictions in some windows, the toolbar can quickly become longer than the space available. When this happens additional options appears. Clicking or tapping on the ellipsis (the three dots or **...**) opens a drop-down selector holding all remaining actions.
 
-![Additional options](/help/sites-cloud/authoring/assets/additional-options.png)
+![Additional options](assets/sites-console-additional-options.png)
 
 >[!NOTE]
 >
@@ -230,15 +232,13 @@ AEM lets you lock a page so that no one else can edit the contents. Locking is u
 1. Select the page with [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Select the lock icon.
 
-   ![Lock button](/help/sites-cloud/authoring/assets/lock.png)
+   ![Lock button](assets/sites-console-lock.png)
 
 Once locked, the lock icon in the console toolbar is updated to an unlock icon.
 
 Unlocking a page is very similar to locking the page. Once the page is locked, the lock options are replaced by unlock actions.
 
-The Page Information menu lists **Unlock** as an option and the Lock icon in the sites console is replaced by an **Unlock** icon.
-
-![Unlock button](/help/sites-cloud/authoring/assets/unlock.png)
+![Unlock button](assets/sites-console-unlock.png)
 
 >[!CAUTION]
 >
