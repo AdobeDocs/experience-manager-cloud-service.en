@@ -83,6 +83,8 @@ user-guide-title: AEM as a Cloud Service
       + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
+    + 2024 {#2024}
+      + [Release Notes for 2024.1.0](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
     + 2023 {#2023}
       + [Release Notes for 2023.12.0](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)
       + [Release Notes for 2023.11.0](/help/implementing/cloud-manager/release-notes/2023/2023-11-0.md)
@@ -606,8 +608,8 @@ user-guide-title: AEM as a Cloud Service
         + [Create forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md)
         + [Configure Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)
         + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-        + [Submit an Adaptive Form to Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
-        + [Configure SharePoint Storage for an Adaptive Form](/help/forms/configure-submit-action-sharepoint.md)
+        + [Submit an Adaptive Form to Microsoft&reg; OneDrive](/help/forms/configure-submit-action-onedrive.md)
+        + [Connect an Adaptive Form to Microsoft&reg; SharePoint](/help/forms/configure-submit-action-sharepoint.md)
         + [Integrate AEM Adaptive Form with AEM Workflow](/help/forms/configure-submit-action-workflow.md)
         + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
         + [Configure the Send Email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md)
@@ -795,6 +797,21 @@ user-guide-title: AEM as a Cloud Service
     + [Akamai Setup](/help/edge/docs/byo-cdn-akamai-setup.md)
     + [Fastly Setup](/help/edge/docs/byo-cdn-fastly-setup.md)
     + [Redirects](/help/edge/docs/redirects.md)
+  + Building Edge Delivery Forms {#build-forms}
+    + [Overview](/help/edge/docs/forms/overview.md)
+    + Getting Started {#getting-started-eds-forms}
+      + [Create and preview a form](/help/edge/docs/forms/create-forms.md)
+      + [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
+      + [Publish a form to sites page](/help/edge/docs/forms/publish-eds-forms.md)
+      + [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
+      + [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
+    + Advanced features {#advanced-features-eds-forms}
+      + [Create and add form fragments to a form](/help/edge/docs/forms/form-fragments.md)
+      + [Translate a form](/help/edge/docs/forms/translate-forms.md)
+      + [Add repeatable sections to a form](/help/edge/docs/forms/repeatable-forms.md)
+      + [Apply reCAPTCHA to a form](/help/edge/docs/forms/recaptacha-forms.md)
+      + [Create Custom Components](/help/edge/docs/forms/custom-components-forms.md)
+      + [Add thank you page](/help/edge/docs/forms/thank-you-page-form.md)
   + Resources for Edge Delivery {#resources}
     + Sidekick {#sidekick}
       + [Using Sidekick](/help/edge/docs/sidekick.md)
@@ -910,6 +927,7 @@ user-guide-title: AEM as a Cloud Service
       + [Configuring a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
       + [Configuring a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
       + [Managing Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+      + [Pipeline Variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
     + [Deploying Your Code](/help/implementing/cloud-manager/deploy-code.md)
     + Understanding your Test Results {#test-results}
       + [Overview](/help/implementing/cloud-manager/overview-test-results.md)
