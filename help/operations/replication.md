@@ -25,11 +25,11 @@ Adobe Experience Manager as a Cloud Service uses the [Sling Content Distribution
 
 This feature lets you publish the selected pages immediately, without the additional options possible through the Manage Publication approach.
 
-For more information, see [Manage Publication](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
+For more information, see [Manage Publication](/help/sites-cloud/authoring/console/publishing-pages.md#manage-publication).
 
 ### On and Off Times - Trigger Configuration {#on-and-off-times-trigger-configuration}
 
-The additional possibilities of **On Time** and **Off Time** are available from the [Basic tab of Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
+The additional possibilities of **On Time** and **Off Time** are available from the [Basic tab of Page Properties](/help/sites-cloud/authoring/console/page-properties.md#basic).
 
 To realize the automatic replication for this feature, enable **Auto Replicate** in the [OSGi configuration](/help/implementing/deploying/configuring-osgi.md) **On Off Trigger Configuration**: 
 
@@ -41,7 +41,7 @@ Manage Publication offers more options than Quick Publish, allowing for the incl
 
 Including a folder's children for the "publish later" option invokes the Publish Content Tree workflow, described in this article.
 
-You can find more detailed information on Manage Publication on the [Publishing Fundamentals documentation](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
+You can find more detailed information on Manage Publication on the [Publishing Fundamentals documentation](/help/sites-cloud/authoring/console/publishing-pages.md#manage-publication).
 
 ### Publish Content Tree Workflow {#publish-content-tree-workflow}
 

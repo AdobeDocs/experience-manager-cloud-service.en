@@ -163,7 +163,7 @@ A user with requisite permissions must complete the following steps before shari
 
 After access to preview service is unlocked, the lock icon in front of the preview service name is no longer displayed.
 
-Once activated, you can publish content to the preview service by using the Manage Publication UI inside AEM. See [Previewing Content](/help/sites-cloud/authoring/fundamentals/previewing-content.md) for more details.
+Once activated, you can publish content to the preview service by using the Manage Publication UI inside AEM. See [Previewing Content](/help/sites-cloud/authoring/console/previewing-content.md) for more details.
 
 >[!NOTE]
 >

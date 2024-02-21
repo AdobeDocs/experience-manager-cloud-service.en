@@ -438,11 +438,11 @@ To compare language copies to the language master:
    ![Compare language copies](../assets/language-copy-compare.png)
 
 1. The two pages (launch and source) are opened side-by-side.
-   * For full information about using this feature see [Page Diff](/help/sites-cloud/authoring/features/page-diff.md).
+   * For full information about using this feature see [Page Diff](/help/sites-cloud/authoring/console/page-diff.md).
 
 ## Moving or Renaming a Source Page {#move-source}
 
-If an already translated source page must be [renamed or moved](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), translating the page again after the move create a language copy based on the new page name/location. The old language copy based on the previous name/location will still be there.
+If an already translated source page must be [renamed or moved](/help/sites-cloud/authoring/console/organizing-pages.md#moving-or-renaming-a-page), translating the page again after the move create a language copy based on the new page name/location. The old language copy based on the previous name/location will still be there.
 
 The best practice in this scenario is to follow this procedure:
 

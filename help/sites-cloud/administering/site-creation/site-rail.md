@@ -12,7 +12,7 @@ Learn the powerful features of the Site panel to help you easily customize and m
 
 ## Overview {#overview}
 
-The Site panel lets you manage the theme and template resources of your site. [Like other panels](/help/sites-cloud/authoring/getting-started/console-side-panel.md) such as the Content Tree, References, or Timeline panels, the Site panel is displayed as the leftmost panel in the sites console, displaying information about the selected item. Unlike other panels, the Site panel only applies to Site roots.
+The Site panel lets you manage the theme and template resources of your site. [Like other panels](/help/sites-cloud/authoring/console/console-side-panel.md) such as the Content Tree, References, or Timeline panels, the Site panel is displayed as the leftmost panel in the sites console, displaying information about the selected item. Unlike other panels, the Site panel only applies to Site roots.
 
 The Site panel is used to manage theme and template related information for your site including:
 
