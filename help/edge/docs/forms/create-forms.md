@@ -26,7 +26,8 @@ These forms submit data directly to a Microsoft Excel or Google Sheets file, ena
 
 ![Getting Started with Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
 
-## Add the Form block to your Edge Delivery Service (EDS) project {#add-forms-block-to-an-eds-project}
+
+## Step 1: Add the Form block to your Edge Delivery Service (EDS) project {#add-forms-block-to-an-eds-project}
 
 AEM Forms Edge Delivery includes a Form block to help you easily create forms to capture and store captured data. To include the Form block to your Edge Delivery Service project:  
 
@@ -86,7 +87,7 @@ AEM Forms Edge Delivery includes a Form block to help you easily create forms to
     > * If you encounter an error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", open the `[EDS Project]/blocks/forms/form.js` file. In the import statement, replace the `franklin-lib.js` file with the `aem.js` file.
     > * If you encounter any linting errors, feel free to disregard them. To bypass the linting checks, open the `[EDS Project]\package.json` file and update the "lint" script from `"lint": "npm run lint:js && npm run lint:css"` to `"lint": "echo 'skipping linting for now'"`. Save the file and commit it to your GitHub project.
 
-## Create a form using Microsoft Excel or Google Sheet {#create-a-form-for-an-eds-project}
+## Step 2: Create a form using Microsoft Excel or Google Sheet
 
 Instead of complex processes, you can easily create a form using a spreadsheet. You can start by adding the rows and column headers to a spreadsheet, where each row defines a form field and each column header defines the properties of the corresponding form fields.
 
@@ -130,7 +131,7 @@ To create a form:
 
      
 
-## Preview the form using your Edge Delivery Service (EDS) page {#add-a-form-to-your-eds-page}
+## Step 3: Preview the form using your Edge Delivery Service (EDS) page
 
 Till now, you have enabled the form block for your EDS project and prepared the structure of the form. Now, to preview the form:
 
@@ -160,6 +161,7 @@ Till now, you have enabled the form block for your EDS project and prepared the 
 
     ![error on form submission](/help/edge/assets/form-error.png)
 
+## Next step
 
    The next step is to [prepare your spreadsheet to accept data](/help/edge/docs/forms/submit-forms.md). 
 
