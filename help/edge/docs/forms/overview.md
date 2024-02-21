@@ -40,22 +40,22 @@ AEM Forms Edge Delivery Service helps you:
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
-            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Create a form using eds forms" style="width: 50px; height: 35px; border-radius: 5px;"> </b>
-            <b style="margin-top: 5px;">Create a form</b>
+            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Create a form using eds forms" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Create a form</b>
         </a>
         <p>Create forms that load and render quickly and automatically reflows on mobile devices.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/validate-forms.md">
-            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Add validations to form fields" style="width: 50px; height: 35px; border-radius: 5px;"> </b>
-            <b style="margin-top: 5px;">Apply field validations</b>
+            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Add validations to form fields" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Apply field validations</b>
         </a>
         <p>Reduce errors and frustration by checking form inputs for proper formatting.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/form-fragments.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Use Form Fragments in an EDS Form" style="width: 50px; height: 35px; border-radius: 5px;"> </b>
-            <b style="margin-top: 5px;">Create form fragments</b>
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Use Form Fragments in an EDS Form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Create form fragments</b>
         </a>
         <p>Reuse preconfigured fragments across multiple forms.</p>
     </div>
@@ -64,22 +64,22 @@ AEM Forms Edge Delivery Service helps you:
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
   <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
-          <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Translate an EDS Form" style="width: 50px; height: 35px; border-radius: 5px;"> </b>
-          <b style="margin-top: 5px;">Translate a form</b>
+          <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Translate an EDS Form" style="border-radius: 5px;"> </b>
+          <br><b style="margin-top: 5px;">Translate a form</b>
       </a>
       <p>Extend the reach of your forms while keeping costs in check.</p>
   </div>
   <div class="card-container">
       <a href="/help/edge/docs/forms/style-theme-forms.md">
-          <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Apply styles or themes to an eds form" style="width: 50px; height: 35px; border-radius: 5px;"> </b>
-          <b style="margin-top: 5px;">Customize a theme</b>
+          <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Apply styles or themes to an eds form" style="border-radius: 5px;"> </b>
+          <br><b style="margin-top: 5px;">Customize a theme</b>
       </a>
       <p>Create a consistent brand image by applying same theme across forms.</p>
   </div>
   <div class="card-container">
     <a href="/help/edge/docs/forms/repeatable-forms.md">  
-      <img src="/help/edge/assets/smock_addto_18_n.svg" alt="Add repeatable sections to an EDS Form" alt="Use Form Fragments in an EDS Form" style="width: 50px; height: 35px; border-radius: 5px;"> </b>
-          <b style="margin-top: 5px;">Add repeatable sections</b>
+      <img src="/help/edge/assets/smock_addto_18_n.svg" alt="Add repeatable sections to an EDS Form" alt="Use Form Fragments in an EDS Form" style="border-radius: 5px;"> </b>
+          <br><b style="margin-top: 5px;">Add repeatable sections</b>
       </a>
       <p>Effortlessly create and add repeatable sections to a form.</p>
   </div>
@@ -89,22 +89,22 @@ AEM Forms Edge Delivery Service helps you:
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
   <div class="card-container">
     <a href="/help/edge/docs/forms/custom-components-forms.md"> 
-      <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="Create custom forms components using standard JavaScript and CSS"  style="width: 50px; height: 35px; border-radius: 5px;"> </b>
-          <b style="margin-top: 5px;">Create custom components</b>
+      <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="Create custom forms components using standard JavaScript and CSS"  style="border-radius: 5px;"> </b>
+          <br><b style="margin-top: 5px;">Create custom components</b>
       </a>
       <p>set standard JavaScript and CSS to create components and themes.</p>
   </div>
   <div class="card-container">
     <a href="/help/edge/docs/forms/recaptacha-forms.md">  
-      <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="Use reCAPTCHA in an EDS Form" style="width: 50px; height: 35px; border-radius: 5px;"> </b>
-          <b style="margin-top: 5px;">Use reCAPTCHA</b>
+      <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="Use reCAPTCHA in an EDS Form" style="border-radius: 5px;"> </b>
+          <br><b style="margin-top: 5px;">Use reCAPTCHA</b>
       </a>
       <p>Use OOTB reCAPTCHA integration for robust spam and bot protection.</p>
   </div>
   <div class="card-container">
     <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
-      <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Submit form" alt="Use Form Fragments in an EDS Form" style="width: 50px; height: 35px; border-radius: 5px;"> </b>
-          <b style="margin-top: 5px;">Submit form to spreadsheet</b>
+      <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Submit form" alt="Use Form Fragments in an EDS Form" style="border-radius: 5px;"> </b>
+          <br><b style="margin-top: 5px;">Submit form to spreadsheet</b>
       </a>
       <p>Submit forms directly to your Microsoft Excel or Google Sheets.</p>
   </div>
