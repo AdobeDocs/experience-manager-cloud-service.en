@@ -9,11 +9,11 @@ Learn how to use the side panel in the AEM sites editor to add components and as
 
 ## Side Panel Modes {#modes}
 
-The side panel is always accessible in the page editor by tapping or clicking its icon.
+The side panel is always accessible in the page editor by tapping or clicking the **Toggle Side Panel** icon in the toolbar of the page editor.
 
-![Side Panel toggle](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+![Side Panel toggle](assets/editor-side-panel-side-panel-toggle.png)
 
-The side panel gives you access to three important tabs:
+When you open the side panel it will slide open from the left side and you can then select from three important tabs:
 
 * [The components browser](#components-browser) to add new content to your page
 * [The assets browser](#assets-browser) to add new assets to your page
@@ -25,62 +25,88 @@ The side panel gives you access to three important tabs:
 
 The components browser shows all components that are available for use on your current page. These can be dragged to the appropriate location, then edited to add your content.
 
-Open the components browser to browse through all the components available for your page. When you open the side panel it will slide open from the left side and select the **Components** tab.
+Tap or click the **Components** tab in the side panel to access the **Components** browser.
 
-![Components browser icon in the side panel](assets/side-panel-components-browser.png)
+![Components browser icon in the side panel](assets/editor-side-panel-components-browser.png)
 
-The actual appearance and handling is dependent on the device type you are using:
+The actual appearance and handling is dependent on the device type you are using.
 
-* **Mobile device (for example, iPad)**
+### Mobile Device {#mobile-device-components-browser}
 
-  The component browser completely covers the page being edited.
+When opening the component browser on a mobile device, it completely covers the page being edited.
 
-  To add a component to your page touch-and-hold the required component and move it towards the right - the component browser will close to show the page again - where you can position the component.
+To add a component to your page, select and drag the component and move it towards the right. The component browser will close to show the page again, where you can position the component.
 
-  ![Component Browser on mobile](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
-
-* **Desktop device**
-
-  The component browser is opened at the left side of the window.
-
-  To add a component to your page, click the required component and drag it to the required location.
-
-  ![Component Browser on desktop](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
-
-  Components are represented by
-
-  * Component name
-  * Component group (in gray)
-  * Icon or abbreviation
-    * Standard components' icons are monochrome.
-    * Abbreviations are always the first two characters of the component name.
-
-  From the top toolbar in the **Components** browser you can:
-
-  * Filter components by name.
-  * Limit the display to a specific group using the drop-down selection.
-
-  For a more detailed description of the component, you can select the information icon next to the component in the **Components** browser (if available). For example, for the **Content Fragment**:
-
-  ![Component Browser information](/help/sites-cloud/authoring/assets/component-browser-information.png)
-
-  For even more information about the components available to you see the [Component Console](/help/sites-cloud/authoring/features/components-console.md).
+![Component Browser on mobile](assets/editor-side-panel-mobile-device.png)
 
 >[!NOTE]
 >
->A mobile device is detected when the width is less than 1024px. This can also be the case for a small desktop window.
+>A mobile device is detected when the width is less than 1024px.
+
+### Desktop Device {#desktop-device-components-browser}
+
+When opening the component browser on a desktop device, it appears at the left side of the window.
+
+To add a component to your page, click the required component and drag it to the required location.
+
+![Component Browser on desktop](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
+
+### Using the Components Browser {#using-component-browser}
+
+Components in the **Components** browser are represented by:
+
+* Component name
+* Component group (in gray)
+* Icon or abbreviation
+  * Standard components' icons are monochrome.
+  * Abbreviations are always the first two characters of the component name.
+
+From the top toolbar in the **Components** browser you can:
+
+* Filter components by name.
+* Limit the display to a specific group using the drop-down selection.
+
+For a more detailed description of the component, you can select the information icon next to the component in the **Components** browser (if available). For example, for the **Content Fragment**:
+
+![Component Browser information](assets/editor-side-panel-component-description.png)
+
+For more detailed information about the components available to you see the [Component Console.](/help/sites-cloud/authoring/features/components-console.md)
 
 ## Assets Browser {#assets-browser}
 
-The assets browser shows all [assets](/help/assets/overview.md) that are available for direct use on your current page.
+The **Assets** browser shows all [assets](/help/assets/overview.md) that are available for use on your current page.
 
-Open the asset browser to browse through all the assets available for your page. When you open the side, panel it will slide open from the left side when you can then tap or click the **Assets** tab.
+Tap or click the **Assets** tab on the side panel to browse through the assets.
 
-![Assets Browser button](/help/sites-cloud/authoring/assets/assets-browser-button.png)
+![Assets Browser button](assets/editor-side-panel-assets-browser-tab.png)
 
 Infinite scrolling is used to expand the list of assets as needed as you scroll.
 
-![Assets Browser](/help/sites-cloud/authoring/assets/assets-browser.png)
+![Assets Browser](assets/editor-side-panel-assets-browser.png)
+
+The actual appearance and handling is dependent on the device type you are using:
+
+### Mobile Device {#mobile-device-assets-browser}
+
+When opening the assets browser on a mobile device, it completely covers the page being edited.
+
+To add an asset to your page select and drag the required asset, then move it towards the right. The assets browser will close to show the page again, where you can add the asset to the required component.
+
+![Assets Browser on mobile](assets/editor-side-panel-assets-browser-mobile.png)
+
+>[!NOTE]
+>
+>A mobile device is detected when the width is less than 1024px.
+
+### Desktop Device {#desktop-device-assets-browser}
+
+When opening the assets browser on a desktop device, it opens at the left side of the window.
+
+To add an asset to your page, select the required asset and drag it to the required component or location.
+
+![Assets Browser on desktop](assets/editor-side-panel-assets-browser-desktop.png)
+
+### Using the Assets Browser {#using-assets-browser}
 
 To add an asset to your page, select and drag to the required location. This can be:
 
@@ -101,70 +127,50 @@ From the top toolbar of the assets browser you can filter the assets by:
 * Asset characteristics such as orientation and style
   * Available only for certain asset types
 
-The actual appearance and handling is dependent on the device type you are using:
-
-* **Mobile Device**
-
-  The assets browser completely covers the page being edited.
-
-  To add an asset to your page touch-and-hold the required asset, then move it towards the right - the assets browser will close to show the page again, where you can add the asset to the required component.
-
-  ![Assets Browser on mobile](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
-
-* **Desktop Device**
-
-  The assets browser is opened at the left side of the window.
-
-  To add an asset to your page, click the required asset and drag it to the required component or location.
-
-  ![Assets Browser on desktop](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
-
->[!NOTE]
->
->A mobile device is detected when the width is less than 1024px; that is, also on a small desktop window.
-
 If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.
 
-![Asset edit button](/help/sites-cloud/authoring/assets/asset-edit-button.png)
+![Asset edit button](assets/editor-side-panel-asset-edit-button.png)
 
 ## Content Tree {#content-tree}
 
 The **Content Tree** gives an overview of all the components on the page in a hierarchy so you can see at a glance how the page is composed.
 
-Open the side panel it will slide open from the left side and then tap or click the **Content Tree** tab.
+>[!NOTE]
+>
+>The Content Tree is not available if you are editing a page on a mobile device (if the browser width is less than 1024px).
 
-![Content Tree button](/help/sites-cloud/authoring/assets/content-tree-button.png)
+Tap or click the **Content Tree** tab to access the content tree.
+
+![Content Tree button](assets/editor-side-panel-content-tree-tab.png)
 
 When open you can see a tree view representation of your page or template, so that it's easier to understand how its content is structured hierarchically. Also, on a complex page, it makes it easier to jump between components of the page.
 
-![Content Tree](/help/sites-cloud/authoring/assets/content-tree-editor.png)
+![Content Tree](assets/editor-side-panel-content-tree.png)
 
-A page can easily be composed of many of the same type of components, so the content (component) tree displays descriptive text (in gray) after the name of the component type (in black). The descriptive text comes from common properties of the component such as title or text.
+A page can easily be composed of many of the same type of components, so the content tree displays descriptive text (in gray) after the name of the component type (in black). The descriptive text comes from common properties of the component such as title or text.
 
 Component types are shown in the user language, whereas the component description text comes from the page language.
 
 Clicking the chevron next to a component will collapse or expand that level.
 
-![Content Tree chevron expansion](/help/sites-cloud/authoring/assets/content-tree-chevron.png)
+![Content Tree chevron expansion](assets/editor-side-panel-content-tree-chevron.png)
 
-Clicking on the component will highlight the component in the page editor. The actions available will depend on the page state:
+Clicking on the component will highlight the component in the page editor. The actions available will depend on the page state. For example:
 
-* For example, a basic page:
-  
-  ![Content Tree highlighted](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
+## A Basic Page {#basic-page}
 
-  The components of a basic page will have the usual options.
-  
-  If the component you click in the tree is editable a wrench icon will appear to the right of the name. Clicking on this icon starts the edit dialog box for the component.
+The components of a basic page will have the usual options.
 
-  ![Content Tree edit button](/help/sites-cloud/authoring/assets/content-tree-edit.png)
+![Content Tree highlighted](assets/editor-side-panel-content-tree-highlighted.png)
 
-* A page that is part of a [livecopy](/help/sites-cloud/administering/msm/overview.md), where components are inherited from another page.
+If the component you click in the tree is editable a wrench icon will appear to the right of the name. Clicking on this icon starts the edit dialog box for the component.
 
->[!NOTE]
->
->The Content Tree is not available if you are editing a page on a mobile device (if the browser width is less than 1024px).
+![Content Tree edit button](assets/editor-side-panel-content-tree-edit.png)
 
-## Fragments - Associated Content Browser {#fragments-associated-content-browser}
+### A Live Copy {#live-copy}
 
-If your page contains Content Fragments then you will also have access to the [browser for Associated Content](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content).
+A page that is part of a [livecopy](/help/sites-cloud/administering/msm/overview.md), where components are inherited from another page, will have different options.
+
+## Associated Content Browser {#associated-content-browser}
+
+If your page contains Content Fragments, you also have access to the [browser for Associated Content.](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)
