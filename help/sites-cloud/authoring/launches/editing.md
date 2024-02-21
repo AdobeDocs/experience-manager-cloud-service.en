@@ -50,7 +50,7 @@ To track the changes you have made, you can view the launch in **References** an
 
 1. The two pages (launch and source) are opened side-by-side.
 
-   For full information about using this feature see [Page Diff](/help/sites-cloud/authoring/features/page-diff.md).
+   For full information about using this feature see [Page Diff](/help/sites-cloud/authoring/console/page-diff.md).
 
 ## Changing the Source Pages Used {#changing-the-source-pages-used}
 
