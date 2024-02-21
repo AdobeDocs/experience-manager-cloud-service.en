@@ -18,7 +18,7 @@ AEM Forms Edge Delivery Service helps you:
 
 * **Simplify authoring and submissions**: Create forms using familiar tools like Microsoft Excel or Google Sheets instead of the traditional authoring environments. Submit forms directly to your Microsoft Excel or Google Sheets and use their ecosystem to easily process submitted data.
 
-## Get started with AEM Forms Edge Delivery Service 
+## Start with the basics 
 
 <div>
 

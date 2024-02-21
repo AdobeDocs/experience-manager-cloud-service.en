@@ -798,19 +798,19 @@ user-guide-title: AEM as a Cloud Service
     + [Redirects](/help/edge/docs/redirects.md)
   + Building Edge Delivery Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
-    + Getting Started {#getting-started-eds-forms}
+    + Get Started {#getting-started-eds-forms}
       + [Create and preview a form](/help/edge/docs/forms/create-forms.md)
       + [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
       + [Publish a form to sites page](/help/edge/docs/forms/publish-eds-forms.md)
       + [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
       + [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
-    + Advanced features {#advanced-features-eds-forms}
-      + [Create and add form fragments to a form](/help/edge/docs/forms/form-fragments.md)
-      + [Translate a form](/help/edge/docs/forms/translate-forms.md)
-      + [Add repeatable sections to a form](/help/edge/docs/forms/repeatable-forms.md)
-      + [Apply reCAPTCHA to a form](/help/edge/docs/forms/recaptacha-forms.md)
-      + [Create Custom Components](/help/edge/docs/forms/custom-components-forms.md)
-      + [Add thank you page](/help/edge/docs/forms/thank-you-page-form.md)
+    + Capabilities {#advanced-features-eds-forms}
+      + [Form fragments](/help/edge/docs/forms/form-fragments.md)
+      + [Repeatable sections](/help/edge/docs/forms/repeatable-forms.md)
+      + [Translation](/help/edge/docs/forms/translate-forms.md)
+      + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+      + [Thank you page](/help/edge/docs/forms/thank-you-page-form.md)
+      + [Custom Components](/help/edge/docs/forms/custom-components-forms.md)
   + Resources for Edge Delivery {#resources}
     + Sidekick {#sidekick}
       + [Using Sidekick](/help/edge/docs/sidekick.md)
