@@ -258,7 +258,7 @@ user-guide-title: AEM as a Cloud Service
   + Authoring {#authoring}
     + Getting Started {#getting-started}
       + [Quick Start Guide to Authoring Pages](/help/sites-cloud/authoring/getting-started/quick-start.md)
-      + [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
+      + [Authoring and Publishing](/help/sites-cloud/authoring/getting-started/author-publish.md)
       + [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md)
       + [Search](/help/sites-cloud/authoring/getting-started/search.md)
       + [Configuring your account environment](/help/sites-cloud/authoring/getting-started/account-environment.md)
