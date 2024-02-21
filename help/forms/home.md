@@ -21,7 +21,6 @@ The service is always current, always available, and always learning. Organizati
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] is a customer-centric solution to support every step of the customer journey: 
 
-
 ## Digitize and streamline enrollment and onboarding experience 
 
 You can use the service to create and roll out interactive and engaging digital forms. For example, take an organization that is looking to digitize its customer enrollment journey. They have multiple data sources with existing customer data. They are looking to pre-populate forms, add e-sign their forms, and archive filled forms as PDF files. Besides, the organization has multiple print forms (PDF forms), they are also looking to convert their print forms to digital forms.
