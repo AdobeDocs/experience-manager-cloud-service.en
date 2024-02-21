@@ -4,8 +4,8 @@ description: Learn the powerful features of the Site panel to help you easily cu
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-
 ---
+
 # Using the Site panel to Manage Your Site Theme {#site-panel}
 
 Learn the powerful features of the Site panel to help you easily customize and manage your site theme.
