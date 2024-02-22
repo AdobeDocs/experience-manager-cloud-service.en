@@ -22,7 +22,7 @@ Through a simple configuration, a content author can now enable progressive web 
 
 [Progressive web apps (PWAs)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) enable immersive app-like experiences for AEM sites by allowing them to be stored locally on a user's machine and be accessible offline. A user could browse a site while on-the-go even if losing an internet connection. PWAs allow a seamless experience even if the network is lost or unstable.
 
-Instead of requiring any recoding of the site, a content author is able to configure PWA properties as an additional tab in the [page properties](/help/sites-cloud/authoring/console/page-properties.md) of a site.
+Instead of requiring any recoding of the site, a content author is able to configure PWA properties as an additional tab in the [page properties](/help/sites-cloud/authoring/sites-console/page-properties.md) of a site.
 
 * When saved or published, this configuration triggers an event handler that writes out the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and a [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) that enable PWA features on the site.
 * Sling mappings are also maintained to ensure that service worker is served from the root of the application to enable proxying content allowing offline capabilities within the app.
@@ -97,7 +97,7 @@ With [the prerequisites](#prerequisites) met, it is easy for a content author to
 
 1. Log into AEM.
 1. From the main menu, select **Navigation** &gt; **Sites**.
-1. Select your sites project and select [**Properties**](/help/sites-cloud/authoring/console/page-properties.md) or use the hotkey `p`.
+1. Select your sites project and select [**Properties**](/help/sites-cloud/authoring/sites-console/page-properties.md) or use the hotkey `p`.
 1. Select the **Progressive Web App** tab and configure the applicable properties. At a minimum, you want to:
    1. Select the option **Enable PWA**.
    1. Define the **Startup URL**.

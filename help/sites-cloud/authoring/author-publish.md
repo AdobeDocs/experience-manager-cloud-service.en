@@ -51,13 +51,13 @@ Please see the document [Quick Start Guide to Authoring](/help/sites-cloud/autho
 
 AEM also offers a preview service that lets developers and content authors preview a website's final experience before it reaches the publish environment and is available publicly.
 
-Please see the document [Previewing Content](/help/sites-cloud/authoring/console/previewing-content.md) for further details.
+Please see the document [Previewing Content](/help/sites-cloud/authoring/sites-console/previewing-content.md) for further details.
 
 ## Publish Environment {#publish-environment}
 
 When ready, your site's content is published to the publish environment of the publish tier. Here the website's pages are made available to the intended audience in accordance with the look-and-feel of your content template.
 
-Please see the document [Publishing Pages](/help/sites-cloud/authoring/console/publishing-pages.md) for more information about publishing and unpublishing pages.
+Please see the document [Publishing Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md) for more information about publishing and unpublishing pages.
 
 ## Dispatcher {#dispatcher}
 

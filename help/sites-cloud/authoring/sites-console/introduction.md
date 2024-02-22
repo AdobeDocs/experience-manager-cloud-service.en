@@ -36,7 +36,7 @@ The options presented depend on your current console. For example, in **Sites** 
 
 ![Example of side panel selector](assets/sites-console-side-panel-selector.png)
 
-For more information about the side panel, please see the document [Sites Console Side Panel.](/help/sites-cloud/authoring/console/console-side-panel.md)
+For more information about the side panel, please see the document [Sites Console Side Panel.](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
 
 ### Breadcrumbs {#breadcrumbs}
 

@@ -281,7 +281,7 @@ While it is recommended that you move on to the next part of the headless develo
 * [Headless Content Management Using GraphQL APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - Follow this course for an overview of the GraphQL API implemented in AEM. Authentication via AdobeID is required.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) -  This GitHub project includes example applications that highlight AEM's GraphQL APIs.
 * [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md) - Technical documentation for the authoring environment of AEM including details on the author-publish setup
-* [Publishing Pages](/help/sites-cloud/authoring/console/publishing-pages.md) - Technical documentation for publishing content on AEM
+* [Publishing Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - Technical documentation for publishing content on AEM
 * [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md) - Technical documentation of page naming restrictions in AEM
 * [Multi Site Manager and Translation](/help/sites-cloud/administering/msm-and-translation.md) - Technical documentation on AEM's powerful translation features
 * [AEM workflows](/help/sites-cloud/authoring/workflows/overview.md) - Technical documentation on how to automate workflows in AEM

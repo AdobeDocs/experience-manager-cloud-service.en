@@ -171,7 +171,7 @@ Assets can be used with a content fragment in several ways; each with its own ad
   * Has some flexibility for positioning.
   * Does not provide the concept of being approved for a specific fragment.
   
-  See [Assets Browser](/help/sites-cloud/authoring/editor/editor-site-panel.md#assets-browser) for more information.
+  See [Assets Browser](/help/sites-cloud/authoring/page-editor/editor-site-panel.md#assets-browser) for more information.
 
 ### Constituent Parts of a Content Fragment {#constituent-parts-of-a-content-fragment}
 

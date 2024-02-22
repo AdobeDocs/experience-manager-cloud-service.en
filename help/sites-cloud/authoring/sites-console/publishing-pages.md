@@ -54,7 +54,7 @@ Depending on your location, you can publish:
 
 >[!NOTE]
 >
-> For additional possibilities see **On Time** and **Off Time** in the [Basic tab of Page Properties](/help/sites-cloud/authoring/console/page-properties.md#basic)
+> For additional possibilities see **On Time** and **Off Time** in the [Basic tab of Page Properties](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
 ### Publishing from the Editor {#publishing-from-the-editor}
 
@@ -87,7 +87,7 @@ If you are editing a page, it can be published directly from the editor.
 
 >[!NOTE]
 >
->Pages accessed by [aliases](/help/sites-cloud/authoring/console/page-properties.md#advanced) in the editor cannot be published. Publish options in the editor are only available for pages accessed via their actual paths.
+>Pages accessed by [aliases](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) in the editor cannot be published. Publish options in the editor are only available for pages accessed via their actual paths.
 
 ### Publishing from the Console {#publishing-from-the-console}
 
@@ -225,7 +225,7 @@ To publish or unpublish a page using Manage Publication:
 
 ## Unpublishing Pages {#unpublishing-pages}
 
-Unpublishing a page will remove it from your publish, or [preview](/help/sites-cloud/authoring/console/previewing-content.md), environment so that it is no longer available to your readers.
+Unpublishing a page will remove it from your publish, or [preview](/help/sites-cloud/authoring/sites-console/previewing-content.md), environment so that it is no longer available to your readers.
 
 In a [manner similar to publishing](#publishing-pages), one or more pages can be unpublished from the desired destination:
 
@@ -238,7 +238,7 @@ When editing a page, if you want to unpublish that page, select **Unpublish Page
 
 >[!NOTE]
 >
->Pages accessed by [aliases](/help/sites-cloud/authoring/console/page-properties.md#advanced) in the editor cannot be unpublished. Publish options in the editor are only available for pages accessed via their actual paths.
+>Pages accessed by [aliases](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) in the editor cannot be unpublished. Publish options in the editor are only available for pages accessed via their actual paths.
 
 ### Unpublishing from the Console {#unpublishing-from-the-console}
 
@@ -256,7 +256,7 @@ Just as you [use the Manage Publication option to publish](#manage-publication),
    >If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) to terminate the corresponding workflow.
 
    >[!NOTE]
-   >If you have a [Preview](/help/sites-cloud/authoring/console/previewing-content.md) environment you can select the **Destination** during Manage Publication.
+   >If you have a [Preview](/help/sites-cloud/authoring/sites-console/previewing-content.md) environment you can select the **Destination** during Manage Publication.
 
 1. To complete the un-publication, continue through the wizard as you would to [publish the page](#manage-publication).
 
@@ -305,6 +305,6 @@ You can determine the publication status of a page:
 
   ![Publication status in timeline view](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
 
-* In the [Page Information menu](/help/sites-cloud/authoring/editor/page-editor.md#page-information) when editing a page
+* In the [Page Information menu](/help/sites-cloud/authoring/page-editor/introduction.md#page-information) when editing a page
 
   ![Publication status in Page Information menu](/help/sites-cloud/authoring/assets/publishing-status-page-information.png)

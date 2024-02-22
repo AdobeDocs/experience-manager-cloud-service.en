@@ -45,7 +45,7 @@ Content may also be published to preview by using a [publish content tree workfl
 
 ## Unpublishing Content from Preview {#unpublishing-content-from-preview}
 
-Unpublishing content from your **Preview** environment is basically the same process as [unpublishing pages](/help/sites-cloud/authoring/console/publishing-pages.md#unpublishing-pages) from the **Publish** environment. 
+Unpublishing content from your **Preview** environment is basically the same process as [unpublishing pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages) from the **Publish** environment. 
 
 The only difference is that you can select the **Destination** to be **Preview**.
 

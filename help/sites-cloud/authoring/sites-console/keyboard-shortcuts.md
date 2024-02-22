@@ -74,7 +74,7 @@ You can deactivate keyboard shortcuts in two locations:
 
 ## Keyboard Shortcuts for the Page Editor {#keyboard-shortcuts-for-the-page-editor}
 
-Various keyboard shortcuts are available throughout AEM. Some apply to the use of consoles, others to [page editing](/help/sites-cloud/authoring/editor/keyboard-shortcuts.md).
+Various keyboard shortcuts are available throughout AEM. Some apply to the use of consoles, others to [page editing](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
 
 ## Keyboard Shortcuts for the Content Fragments Console {#keyboard-shortcuts-for-the-content-fragments-console}
 

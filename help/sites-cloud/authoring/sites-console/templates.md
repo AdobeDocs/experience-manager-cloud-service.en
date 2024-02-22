@@ -72,7 +72,7 @@ When creating an editable template you:
   * [Structure](#editing-a-template-structure-template-author) - Predefined content that cannot be changed on pages created with the template.
   * [Initial Content](#editing-a-template-initial-content-author) - Predefined content that can be changed on pages created with the template.
   * [Layout](#editing-a-template-layout-template-author) - For a range of devices.
-  * [Styles](/help/sites-cloud/authoring/editor/style-system.md) - Define the styles to be used with the template and its components.
+  * [Styles](/help/sites-cloud/authoring/page-editor/style-system.md) - Define the styles to be used with the template and its components.
 * [Enable the template](#enabling-a-template-template-author) for use when creating a page
 * [Allow the template](#allowing-a-template-author) for the required page or branch of your website
 * [Publish the template](#publishing-a-template-template-author) to make it available on the publish environment
@@ -178,7 +178,7 @@ A template can be enabled or disabled to make it available or unavailable in the
 
 1. In the **Templates Console**, select the template.
 1. Select **Enable** or **Disable** from the toolbar, and again in the confirmation dialog.
-1. You can now use your template when [creating a page](/help/sites-cloud/authoring/console/organizing-pages.md#creating-a-new-page), though you will probably want to [edit the template](#editing-templates-template-authors) according to your requirements.
+1. You can now use your template when [creating a page](/help/sites-cloud/authoring/sites-console/organizing-pages.md#creating-a-new-page), though you will probably want to [edit the template](#editing-templates-template-authors) according to your requirements.
 
 >[!NOTE]
 >
@@ -188,7 +188,7 @@ A template can be enabled or disabled to make it available or unavailable in the
 
 A template can be made available or unavailable for certain page branches.
 
-1. Open the [Page Properties](/help/sites-cloud/authoring/console/page-properties.md) for the root page of the branch where you want the template to be available.
+1. Open the [Page Properties](/help/sites-cloud/authoring/sites-console/page-properties.md) for the root page of the branch where you want the template to be available.
 1. Open the **Advanced** tab.
 1. Under **Template Settings** use **Add field** to specify the path(s) to your template(s).
 
@@ -264,7 +264,7 @@ When a component has been unlocked you can define the [initial content](#editing
 
 #### Layout {#template-layout}
 
-With the [layout](#editing-a-template-layout-template-author) you can predefine the template layout for the required device formats. **Layout** mode for template authoring has the same functionality as the [**Layout** mode for page authoring](/help/sites-cloud/authoring/console/responsive-layout.md#defining-layouts-layout-mode).
+With the [layout](#editing-a-template-layout-template-author) you can predefine the template layout for the required device formats. **Layout** mode for template authoring has the same functionality as the [**Layout** mode for page authoring](/help/sites-cloud/authoring/sites-console/responsive-layout.md#defining-layouts-layout-mode).
 
 #### Page Policies {#template-page-policies}
 
@@ -274,7 +274,7 @@ With the [layout](#editing-a-template-layout-template-author) you can predefine 
 
 The [Style System](/help/sites-cloud/authoring/editorß/style-system.md) allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
 
-See the [Style System documentation](/help/sites-cloud/authoring/editor/style-system.md) for more information.
+See the [Style System documentation](/help/sites-cloud/authoring/page-editor/style-system.md) for more information.
 
 ### Editing a Template - Structure - Template Author {#editing-a-template-structure-template-author}
 
@@ -313,7 +313,7 @@ Once added, each component is marked with:
 
 >[!NOTE]
 >
->Although not identical, adding components and assets to a template has many similarities to similar actions when [page authoring](/help/sites-cloud/authoring/editor/edit-content.mdd).
+>Although not identical, adding components and assets to a template has many similarities to similar actions when [page authoring](/help/sites-cloud/authoring/page-editor/edit-content.mdd).
 
 #### Component Actions {#component-actions}
 
@@ -530,7 +530,7 @@ Although all content created in **Structure** mode is visible in **Initial Conte
 
 ### Editing a Template - Layout - Template Author {#editing-a-template-layout-template-author}
 
-You can define the template layout for a range of devices. [Responsive layout](/help/sites-cloud/authoring/console/responsive-layout.md) for templates operates as it does for page authoring.
+You can define the template layout for a range of devices. [Responsive layout](/help/sites-cloud/authoring/sites-console/responsive-layout.md) for templates operates as it does for page authoring.
 
 >[!NOTE]
 >
@@ -605,7 +605,7 @@ Using page properties, you can define the required client-side libraries by usin
 
 ### Editing a Template - Initial Page Properties - Author {#editing-a-template-initial-page-properties-author}
 
-Using the **Initial Page Properties** option, you can define the initial [page properties](/help/sites-cloud/authoring/console/page-properties.md) to be used when creating resultant pages.
+Using the **Initial Page Properties** option, you can define the initial [page properties](/help/sites-cloud/authoring/sites-console/page-properties.md) to be used when creating resultant pages.
 
 1. From the template editor, select **Page Information** from the toolbar, then **Initial Page Properties** to open the dialog.
 

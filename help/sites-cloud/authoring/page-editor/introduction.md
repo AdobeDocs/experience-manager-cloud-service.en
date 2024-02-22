@@ -31,7 +31,7 @@ The page toolbar offers access to context-appropriate functionality, dependent o
 
 #### Side Panel {#side-panel}
 
-This opens/closes the [side panel,](help/sites-cloud/authoring/editor/editor-site-panel.md) which holds the Asset Browser, Component Browser, and Content Tree.
+This opens/closes the [side panel,](help/sites-cloud/authoring/page-editor/editor-site-panel.md) which holds the Asset Browser, Component Browser, and Content Tree.
 
 ![Side Panel toggle](assets/page-editor-side-panel-toggle.png)
 
@@ -43,14 +43,14 @@ This provides access to detailed page information including page details and act
 
 **Page Information** opens a drop-down menu that provides details about the last edit and the last publication of the selected page. Additional actions are available depending on the characteristics of the page, its site, and your instance.
 
-* [Open Properties](/help/sites-cloud/authoring/console/page-properties.md)
+* [Open Properties](/help/sites-cloud/authoring/sites-console/page-properties.md)
 * [Rollout Page](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [Start Workflow](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
-* [Lock Page](/help/sites-cloud/authoring/editor/page-editor.md#locking-unlocking)
-* [Publish Page](/help/sites-cloud/authoring/console/publishing-pages.md#publishing-pages-1)
-* [Unpublish Page](/help/sites-cloud/authoring/console/publishing-pages.md#unpublishing-pages)
-* [Edit Template](/help/sites-cloud/authoring/console/templates.md)
-* [View as Published](/help/sites-cloud/authoring/editor/page-editor.md#view-as-published)
+* [Lock Page](/help/sites-cloud/authoring/page-editor/introduction.md#locking-unlocking)
+* [Publish Page](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-pages-1)
+* [Unpublish Page](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages)
+* [Edit Template](/help/sites-cloud/authoring/sites-console/templates.md)
+* [View as Published](/help/sites-cloud/authoring/page-editor/introduction.md#view-as-published)
 * [View in Admin](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 * [Help](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
 * [Promote Launch](/help/sites-cloud/authoring/launches/promoting.md) (only if the page is a launch)
@@ -59,7 +59,7 @@ In addition, **Page Information** can provide access to analytics and recommenda
 
 #### Emulator {#emulator}
 
-This toggles the [emulator toolbar](/help/sites-cloud/authoring/console/responsive-layout.md#selecting-a-device-to-emulate), which is used to emulate the look-and-feel of the page on another device. This is automatically enabled in layout mode.
+This toggles the [emulator toolbar](/help/sites-cloud/authoring/sites-console/responsive-layout.md#selecting-a-device-to-emulate), which is used to emulate the look-and-feel of the page on another device. This is automatically enabled in layout mode.
 
 ![Emulator button](assets/page-editor-emulator.png)
 
@@ -77,20 +77,20 @@ This is the title of the page, rendered in capital letters as information.
 
 #### Mode Selector {#mode-selector}
 
-The mode selector displays the current [mode](/help/sites-cloud/authoring/editor/page-editor.md#mode-selector) and lets you select another mode such as edit, layout, timewarp, or targeting.
+The mode selector displays the current [mode](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) and lets you select another mode such as edit, layout, timewarp, or targeting.
 
 ![Mode Selector button](assets/page-editor-mode-selector.png)
 
 There are various modes when editing a page allowing for different actions:
 
-* [Edit](/help/sites-cloud/authoring/editor/edit-content.md) - The mode to use when editing the page content
-* [Layout](/help/sites-cloud/authoring/console/responsive-layout.md) - Lets you create and edit your responsive layout dependent on device (if the page is based on a layout container)
+* [Edit](/help/sites-cloud/authoring/page-editor/edit-content.md) - The mode to use when editing the page content
+* [Layout](/help/sites-cloud/authoring/sites-console/responsive-layout.md) - Lets you create and edit your responsive layout dependent on device (if the page is based on a layout container)
 * [Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md) - Improves content relevance through targeting and measuring across all channels
-* [Timewarp](/help/sites-cloud/authoring/console/page-versions.md#timewarp) - View a pages state at a particular point in time
-* [Live Copy Status](/help/sites-cloud/authoring/editor/page-editor.md#live-copy-status) - Allows a quick overview of the live copy status and which components are/are not inherited
+* [Timewarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) - View a pages state at a particular point in time
+* [Live Copy Status](/help/sites-cloud/authoring/page-editor/introduction.md#live-copy-status) - Allows a quick overview of the live copy status and which components are/are not inherited
 * [Developer Mode](/help/implementing/developing/tools/developer-mode.md)
-* [Preview](/help/sites-cloud/authoring/editor/page-editor.md#previewing-pages) - View the page as it is shown on the publish environment; or to navigate using links in the content
-* [Annotate](/help/sites-cloud/authoring/editor/annotations.md) - Add or view annotations on the page
+* [Preview](/help/sites-cloud/authoring/page-editor/introduction.md#previewing-pages) - View the page as it is shown on the publish environment; or to navigate using links in the content
+* [Annotate](/help/sites-cloud/authoring/page-editor/annotations.md) - Add or view annotations on the page
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ The **Preview** button enables [preview mode.](#preview-mode), displaying the pa
 
 #### Annotate {#annotate}
 
-**Annotate** mode lets you add [annotations](/help/sites-cloud/authoring/editor/annotations.md) to the page when reviewing a page. After the first annotation, the icon will switch to a number indicating the number of annotations on the page.
+**Annotate** mode lets you add [annotations](/help/sites-cloud/authoring/page-editor/annotations.md) to the page when reviewing a page. After the first annotation, the icon will switch to a number indicating the number of annotations on the page.
 
 ![Annotation button](assets/page-editor-annotations.png)
 
@@ -121,7 +121,7 @@ The side panel provides you access to three different tabs.
 
 ![The side panel of the page editor](assets/page-editor-side-panel.png)
 
-Please see the document [Page Editor Side Panel](/help/sites-cloud/authoring/editor/editor-site-panel.md) for more information.
+Please see the document [Page Editor Side Panel](/help/sites-cloud/authoring/page-editor/editor-site-panel.md) for more information.
 
 ### Editor {#editor}
 
@@ -133,7 +133,7 @@ The editor is where you make changes directly to your page content. The page is 
 
 Now that you understand the page editor, you are ready to edit your content.
 
-Please see the document [Editing Content with the AEM Page Editor](help/sites-cloud/authoring/editor/edit-content.md) for more information.
+Please see the document [Editing Content with the AEM Page Editor](help/sites-cloud/authoring/page-editor/edit-content.md) for more information.
 
 ## Status Notification {#status-notification}
 
@@ -233,4 +233,4 @@ The following icons allow you to undo or redo an action. These are shown in the 
 
 >[!NOTE]
 >
->Please see the document [Undo and Redo Limitations](/help/sites-cloud/authoring/editor/undo-redo.md) for the full details of what is possible when undoing and redoing page edits.
+>Please see the document [Undo and Redo Limitations](/help/sites-cloud/authoring/page-editor/undo-redo.md) for the full details of what is possible when undoing and redoing page edits.

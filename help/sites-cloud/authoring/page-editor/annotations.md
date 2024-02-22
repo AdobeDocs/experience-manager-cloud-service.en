@@ -13,7 +13,7 @@ An annotation places a simple sketch or note (think real-world sticky-note) on t
 >
 >Don't forget that [comments](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) are also available for providing feedback on a page.
 
-A special [mode](/help/sites-cloud/authoring/editor/page-editor.md#mode-selector) is used for creating and viewing annotations.
+A special [mode](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) is used for creating and viewing annotations.
 
 >[!TIP]
 >

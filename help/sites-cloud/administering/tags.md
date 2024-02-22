@@ -10,7 +10,7 @@ Tags are an intuitive method of classifying your content. They can be thought of
 In Adobe Experience Manager (AEM), a tag can be a property of:
 
 * A content node for a page
-  * See the document [Using Tags](/help/sites-cloud/authoring/console/tags.md) for more information.
+  * See the document [Using Tags](/help/sites-cloud/authoring/sites-console/tags.md) for more information.
 * A metadata node for an asset 
   * See the document [Managing Metadata for Digital Assets](/help/assets/manage-metadata.md) for more information.
 
