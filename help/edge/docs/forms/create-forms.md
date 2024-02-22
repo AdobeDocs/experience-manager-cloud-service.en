@@ -22,52 +22,21 @@ These forms submit data directly to a Microsoft Excel or Google Sheets file, ena
 ## Before you start
 
 * Set up and clone your Edge Delivery Service (EDS) project. See [developer tutorial](https://www.aem.live/developer/tutorial) for details. 
-* Clone the [Forms Block repository](https://github.com/adobe/afb). It includes the Form block which is necessary to render the form.
+* Clone the [Forms Block repository](https://github.com/adobe/afb).
 
-![Getting Started with Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
-
-
-## Step 1: Add the Form block to your Edge Delivery Service (EDS) project {#add-forms-block-to-an-eds-project}
-
-AEM Forms Edge Delivery includes a Form block to help you easily create forms to capture and store captured data. To include the Form block to your Edge Delivery Service project:  
-
-1. Navigate to the `blocks` folder in your Edge Delivery Service (EDS) project folder on your local development environment. 
+    ![Getting Started with Edge Delivery Forms](/help/edge/assets/getting-started-with-eds-forms.png)
 
 
-    ```Shell 
-
-    cd [EDS Project folder]/blocks
-
-    ```
-
-1. Create a folder named `form` under the `blocks` directory. For example, under the directory for the EDS project named `Portal`, create a folder named `form`. 
-
-    ```Shell 
-
-    mkdir form
-
-    ```
+## Create a form
 
 
-1. Add the [Forms Block](https://github.com/adobe/afb/tree/main/blocks/form) files to the 'form' folder. 
++++ Step 1: Add the Form block to your Edge Delivery Service (EDS) project.
 
-    ```shell
+AEM Forms Edge Delivery includes a Form block to help you easily create forms to capture and store captured data. To include the Form block to your Edge Delivery Service project: 
 
-    cp -R <source:path of the form block> <destination: path of the form folder created in the previous step>
+1. Navigate to `[cloned Forms Block repository folder]`/blocks/.
 
-    ```
-
-    **For example,**
-
-
-    ```shell
-
-    cp -R ../../afb/blocks/form ../../fantastic-computing-machine/blocks 
-
-
-    ```
-
-    
+1. Copy the `forms` folder to `[Cloned EDS Project repository folder]\blocks` folder. 
 
 1. Check in the 'form' folder and underlying files to your Edge Delivery Service project on GitHub. 
 
@@ -84,10 +53,13 @@ AEM Forms Edge Delivery includes a Form block to help you easily create forms to
 
     >[!NOTE] 
     >
-    > * If you encounter an error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", open the `[EDS Project]/blocks/forms/form.js` file. In the import statement, replace the `franklin-lib.js` file with the `aem.js` file.
+    > * If you encounter an error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", open the `[EDS Project]/blocks/forms/form.js` file. In the import statement, replace the `lib-franklin.js` file with the `aem.js` file.
     > * If you encounter any linting errors, feel free to disregard them. To bypass the linting checks, open the `[EDS Project]\package.json` file and update the "lint" script from `"lint": "npm run lint:js && npm run lint:css"` to `"lint": "echo 'skipping linting for now'"`. Save the file and commit it to your GitHub project.
 
-## Step 2: Create a form using Microsoft Excel or Google Sheet
++++
+
++++ Step 2: Create a form using Microsoft Excel or Google Sheet
+
 
 Instead of complex processes, you can easily create a form using a spreadsheet. You can start by adding the rows and column headers to a spreadsheet, where each row defines a form field and each column header defines the properties of the corresponding form fields.
 
@@ -129,15 +101,16 @@ To create a form:
 
     ```
 
-     
++++
 
-## Step 3: Preview the form using your Edge Delivery Service (EDS) page
++++ Step 3: Preview the form using your Edge Delivery Service (EDS) page
+
 
 Till now, you have enabled the form block for your EDS project and prepared the structure of the form. Now, to preview the form:
 
-1. Go to your AEM Edge Delivery project directory on Microsoft SharePoint or Google Drive.
+1. Go to your Microsoft SharePoint or Google Drive account and open your AEM Edge Delivery project directory.
 
-1. Create or open a doc file to host the form. For example, open the index file.
+1. Open a doc file to embed the form to it. For example, open the index file. You can also create a new file. 
 
 1. Navigate to the desired location within the document where you want to add the form.
 
@@ -160,6 +133,9 @@ Till now, you have enabled the form block for your EDS project and prepared the 
     Now, fill the form and click the submit button, you experience an error, similar to the following, because the spreadsheet is not set to accept the data yet. 
 
     ![error on form submission](/help/edge/assets/form-error.png)
+
++++
+
 
 ## Next step
 
