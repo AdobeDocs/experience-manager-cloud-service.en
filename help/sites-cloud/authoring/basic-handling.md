@@ -30,7 +30,7 @@ To get a good understanding of the basic use of AEM, this document is based on t
 
 Whenever a user first accesses a console, a product navigation tutorial is started. Take a minute to select through to get a good overview of the basic handling of AEM.
 
-![Navigation tutorial](assets/basic-navigation-console-tutorial.png)
+![Navigation tutorial](assets/tutorial.png)
 
 Select **Next** to advance to the next page of the overview. Select **Close** or select outside of the overview dialog to close.
 
