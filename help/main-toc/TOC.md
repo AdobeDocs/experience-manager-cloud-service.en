@@ -264,7 +264,7 @@ user-guide-title: AEM as a Cloud Service
     + [Authoring Methods](/help/sites-cloud/authoring/authoring-methods.md)
     + [Search](/help/sites-cloud/authoring/search.md)
     + [Configuring your account environment](/help/sites-cloud/authoring/account-environment.md)
-    + [Your Inbox](/help/sites-cloud/authoring//help/sites-cloud/authoring/inbox.md)
+    + [Your Inbox](/help/sites-cloud/authoring/inbox.md)
     + [Components Console](/help/sites-cloud/authoring/components-console.md)
     + [Path Selection](/help/sites-cloud/authoring/path-selection.md)
     + [Troubleshooting](/help/sites-cloud/authoring/troubleshooting.md)
