@@ -8,65 +8,72 @@ hidefromtoc: yes
 
 # Enable your form to send data 
 
-After you create and preview the form, enable the corresponding sheet to accept data. To begin accepting data, set up your spreadsheet to include the headers that match to the data you intend to collect. All the headers added to the 'shared-default' sheet should also be present in the 'incoming' sheet under a table. 
+Once you've [created and previewed the form](/help/edge/docs/forms/create-forms.md), it's time to enable the corresponding spreadsheet to start receiving data. 
 
-The following example displays fields for a "contact-us" form:
+>[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
-![Fields for a contact-us form](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+To enable the spreadsheet: 
 
-
-Once this setup is complete, your form becomes ready to accept submissions. You can employ one of the following methods to enable your spreadsheet to accept data:
-
-* [Manually configure a spreadsheet to accept data](#manually-configure-a-spreadsheet-to-receive-data)
-
-* [Use Admin APIs to enable a spreadsheet to accept data](#use-admin-apis-to-enable-a-spreadsheet-to-receive-data-use-admin-apis-to-enable-a-spreadsheet-to-recieve-data)
-
-## Manually configure a spreadsheet to accept data
-
-To manually configure a spreadsheet to accept data: 
-
-
-1. Open the workbook that you have created and change the name of the default sheet to "incoming". 
+1. Open the spreadsheet that has your form and add a sheet to it and change the name of the sheet to `incoming`. 
 
     >[!WARNING] 
     >
-    > If the "incoming" sheet doesn't exist, AEM won't send any data to this workbook.
+    > If the `incoming` sheet doesn't exist, AEM doesn't send any data to this workbook.
 
-1. Prepare the sheet by adding headers that match the data you're putting in. The following example displays fields for a "contact-us" form:
+1. In the `incoming` sheet, mirror all the column headers to `Name` column (form field  names) in the `shared-default` sheet. 
+
+    The following example displays headers for a "contact-us" form:
 
     ![Fields for a contact-us form](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Preview the sheet in the sidekick.
+1. Use sidekick to preview the sheet.
 
     >[!NOTE] 
     >
-    >Even if you have previewed the sheet before, you must preview it again after creating the "incoming" sheet for the first time.
+    >Even if you have previewed the sheet before, you must preview it again after creating the `incoming` sheet for the first time.
 
 
-## Use Admin APIs to enable a spreadsheet to accept data
+Once the field names are added to the `incoming` sheet, your form becomes ready to accept submissions. You can preview the form and submit data to the sheet using it. 
 
-You can initiate a POST request to the form route within the AEM Admin service. Upon receiving the POST body data, the admin service analyzes it and autonomously generates the essential headers, tables, and sheets needed for data ingestion, optimizing the functionality of the forms service.
+You also observe the following changes in your spreadsheet: 
+
+A sheet named "Slack" is added to your Excel Workbook or Google Sheet. In this sheet, you can configure automatic notifications for a designated Slack channel whenever new data is ingested into your spreadsheet. At present, AEM supports notifications exclusively to the AEM Engineering Slack organization and the Adobe Enterprise Support organization.
+
+1. To set up Slack notifications enter the "teamId" of the Slack workspace and the "channel name" or "ID". You can also ask the slack-bot (with the debug command) for the "teamId" and the "channel ID". Using the "channel ID" instead of the "channel name" is preferable, as it survives channel renames.
+
+    >[!NOTE] 
+    >
+    > Older forms didn't have the "teamId" column. The "teamId" was included in the channel column, separated by a "#" or "/".
+
+1. Enter any title that you want and under fields enter the names of the fields you want to see in the Slack notification. Each heading should be separated by a comma (For example name, email).
+
+    >[!WARNING] 
+    >
+    >  Never should the "shared-default" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
+
+
+## (Optional) Use Admin APIs to enable a spreadsheet to accept data
+
+You can also send a POST request to the form to enable it to accept data and configure headers for the `incoming` sheet. Upon receiving the POST request, the service analyzes the body of request and autonomously generates the essential headers and sheets needed for data ingestion.
 
 To use Admin APIs to enable a spreadsheet to accept data: 
 
 
-1. Open the workbook that you have created and change the name of the default sheet to "incoming". 
+1. Open the workbook that you have created and change the name of the default sheet to `incoming`. 
 
     >[!WARNING] 
     >
-    > If the "incoming" sheet doesn't exist, AEM won't send any data to this workbook.
+    > If the `incoming` sheet doesn't exist, AEM won't send any data to this workbook.
 
 1. Preview the sheet in the sidekick.
 
     >[!NOTE] 
     >
-    >Even if you have previewed the sheet before, you must preview it again after creating the "incoming" sheet for the first time.
+    >Even if you have previewed the sheet before, you must preview it again after creating the `incoming` sheet for the first time.
 
-1. Prepare the sheet by adding headers that match the data you're putting in. 
+1. Send the POST request to generate the appropriate headers in the `incoming` sheet, and add the `shared-default` sheets to your spread sheet, if it does not exisit already.
 
-    You can do this by sending a POST request to the form route in the AEM Admin service. The admin service examines the data in the POST body and generate the appropriate headers, tables, and sheets needed to ingest data effectively and make the most of the Forms service.
-
-    To understand how to format the POST request for setting up your sheet, refer to the [Admin API documentation](https://www.hlx.live/docs/admin.html#tag/form). Also, look at the example provided below: 
+    To understand how to format the POST request for setting up your sheet, refer to the [Admin API documentation](https://www.hlx.live/docs/admin.html#tag/form). You can look at the example provided below: 
 
     **Request** 
     
@@ -135,27 +142,26 @@ To use Admin APIs to enable a spreadsheet to accept data:
 
     ```
 
-    The previously mentioned POST request provides sample data, including both form fields and their respective sample values. This data is used by the Admin service to set up the form.
+    The above mentioned POST request provides sample data, including both form fields and their respective sample values. This data is used by the Admin service to set up the form.
 
-    Upon submitting the POST request to the admin service, you observe the following changes in your workbook: 
+    Your form is now enabled to accept data. You also observe the following changes in your spreadsheet: 
 
-* A new sheet named "shared-default" is added to your Excel Workbook or Google Sheet. The data present in the "shared-default" sheet is retrieved upon making a GET request to the sheet. This sheet serves as an optimal location to use spreadsheet formulas to summarize the incoming data, making it conducive for consumption in other contexts.
+A sheet named "Slack" is added to your Excel Workbook or Google Sheet. In this sheet, you can configure automatic notifications for a designated Slack channel whenever new data is ingested into your spreadsheet. At present, AEM supports notifications exclusively to the AEM Engineering Slack organization and the Adobe Enterprise Support organization.
 
-    Never should the "shared-default" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
+1. To set up Slack notifications enter the "teamId" of the Slack workspace and the "channel name" or "ID". You can also ask the slack-bot (with the debug command) for the "teamId" and the "channel ID". Using the "channel ID" instead of the "channel name" is preferable, as it survives channel renames.
 
-* A sheet named "Slack" is added to your Excel Workbook or Google Sheet. In this sheet, you can configure automatic notifications for a designated Slack channel whenever new data is ingested into your spreadsheet. At present, AEM supports notifications exclusively to the AEM Engineering Slack organization and the Adobe Enterprise Support organization.
+    >[!NOTE] 
+    >
+    > Older forms didn't have the "teamId" column. The "teamId" was included in the channel column, separated by a "#" or "/".
 
-    1. To set up Slack notifications enter the "teamId" of the Slack workspace and the "channel name" or "ID". You can also ask the slack-bot (with the debug command) for the "teamId" and the "channel ID". Using the "channel ID" instead of the "channel name" is preferable, as it survives channel renames.
+1. Enter any title that you want and under fields enter the names of the fields you want to see in the Slack notification. Each heading should be separated by a comma (For example name, email).
 
-        >[!NOTE] 
-        >
-        > Older forms didn't have the "teamId" column. The "teamId" was included in the channel column, separated by a "#" or "/".
-
-    1. Enter any title that you want and under fields enter the names of the fields you want to see in the Slack notification. Each heading should be separated by a comma (For example name, email).
 
 The sheet is now set up to receive data, you can [preview the form using forms block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
 
-
+ >[!WARNING] 
+ >
+ >  Never should the "shared-default" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
 
 ## Send data to your sheet {#send-data-to-your-sheet}
 
@@ -285,7 +291,7 @@ There are a few different ways that you can format the form data in the POST bod
 
     ```
 
-Next, you can customize the thanak you message, [configure a thank you page](/help/edge/docs/forms/thank-you-page-form.md), or [set redirects](/help/edge/docs/forms/thank-you-page-form.md).
+Next, you can customize the thank you message, [configure a thank you page](/help/edge/docs/forms/thank-you-page-form.md), or [set redirects](/help/edge/docs/forms/thank-you-page-form.md).
 
 ## See more
 
