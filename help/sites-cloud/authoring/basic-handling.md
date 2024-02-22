@@ -10,7 +10,7 @@ This document is designed to give an overview of basic handling when using the A
 
 >[!TIP]
 >
->Keyboard shortcuts are available throughout AEM. In particular when [using the sites console](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) and [the page editor](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
+>Keyboard shortcuts are available throughout AEM. In particular when [using the sites console](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) and [the page editor](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
 
 {{edge-delivery-authoring}}
 
@@ -86,7 +86,7 @@ The header is always present at the top of the screen. While most options in the
 
   ![Global navigation](/help/sites-cloud/authoring/assets/global-navigation.png)
 
-* [Search](/help/sites-cloud/authoring/getting-started/search.md) - You can also use the [shortcut key](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
+* [Search](/help/sites-cloud/authoring/search.md) - You can also use the [shortcut key](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
 
   ![Search icon](/help/sites-cloud/authoring/assets/search-icon.png)
 
@@ -98,11 +98,11 @@ The header is always present at the top of the screen. While most options in the
 
   ![Help button](/help/sites-cloud/authoring/assets/help.png)
 
-* [Notifications](/help/sites-cloud/authoring/getting-started/inbox.md) -   This icon is badged with the number of currently assigned incomplete notifications.
+* [Notifications](/help/sites-cloud/authoring/getting-started//help/sites-cloud/authoring/inbox.md) -   This icon is badged with the number of currently assigned incomplete notifications.
 
   ![Notifications button](/help/sites-cloud/authoring/assets/notifications.png)
   
-* [User Properties](/help/sites-cloud/authoring/getting-started/account-environment.md) - Select this to change your user settings.
+* [User Properties](/help/sites-cloud/authoring/account-environment.md) - Select this to change your user settings.
 
   ![User Properties button](/help/sites-cloud/authoring/assets/user-properties.png)
 
@@ -137,4 +137,4 @@ There are a number of help resources available and a few ways to access it.
 >For an overview of all keyboard shortcuts see the following documentation:
 >
 >* [Keyboard shortcuts for editing pages](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
->* [Keyboard shortcuts for consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+>* [Keyboard shortcuts for consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)

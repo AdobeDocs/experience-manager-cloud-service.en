@@ -251,4 +251,4 @@ In addition, it offers the ability to create page-related actions.
 
 ## Templates
 
-You can easily see which template the page is based on when selecting the page in either [Column view](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) or [List view](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view).
+You can easily see which template the page is based on when selecting the page in either [Column view](/help/sites-cloud/authoring/basic-handling.md#column-view) or [List view](/help/sites-cloud/authoring/basic-handling.md#list-view).

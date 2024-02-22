@@ -29,7 +29,7 @@ For more information about adding components to a page, see [Editing Page Conten
 
 ## Overview of All Components {#overview-of-all-components}
 
-The [Components Console](/help/sites-cloud/authoring/features/components-console.md) gives an overview of the component groups and components that are provided by your AEM installation. You can view key information about the individual components and their usage.
+The [Components Console](/help/sites-cloud/authoring/components-console.md) gives an overview of the component groups and components that are provided by your AEM installation. You can view key information about the individual components and their usage.
 
 ## Core Components {#core-components}
 

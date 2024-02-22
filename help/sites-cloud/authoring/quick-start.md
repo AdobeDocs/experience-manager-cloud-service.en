@@ -99,8 +99,8 @@ This is just a brief introduction to the power of authoring Sites content and as
 
 Here are some more resources that go into depth about all the features of the console as well as discuss topics about content authoring in general.
 
-* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+* [Basic Handling](/help/sites-cloud/authoring/basic-handling.md)
 * [Concepts of Authoring](/help/sites-cloud/authoring/getting-started/concepts.md)
-* [Sites Console](help/sites-cloud/authoring/sites-console/introduction.md)
-* [Page Editor](help/sites-cloud/authoring/page-editor/introduction.md)
-* [Publishing Pages](help/sites-cloud/authoring/sites-console/publishing-pages.md)
+* [Sites Console](/help/sites-cloud/authoring/sites-console/introduction.md)
+* [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)
+* [Publishing Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md)

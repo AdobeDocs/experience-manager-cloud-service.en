@@ -27,7 +27,7 @@ You can create a version of your resource from:
 ### Creating a New Version - Timeline {#creating-a-new-version-timeline}
 
 1. Navigate to show the page for which you want to create a version.
-1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. Select the page in [selection mode](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** rail.
 1. Select the ellipsis by the comment field to reveal the options:
 
@@ -45,7 +45,7 @@ You can create a version of your resource from:
 ### Creating a New Version - Create with a Selected Resource {#creating-a-new-version-create-with-a-selected-resource}
 
 1. Navigate to show the page for which you want to create a version.
-1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. Select the page in [selection mode](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Select the **Create** option from the toolbar.
 1. The same dialog box opens. You can enter a **Label** and a **Comment**, if necessary.
 1. Confirm the new version with **Create**.
@@ -56,11 +56,11 @@ The timeline is opened with the information updated to indicate the new version.
 
 Once you have created a version of your page, there are various methods of reinstating a prior version:
 
-* the **Revert to this Version** option from the [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) rail
+* the **Revert to this Version** option from the [Timeline](/help/sites-cloud/authoring/basic-handling.md#timeline) rail
 
   Reinstate a prior version of a selected page.
 
-* the **Restore** options from the top [actions toolbar](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+* the **Restore** options from the top [actions toolbar](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar)
 
   * **Restore Version**
 
@@ -87,7 +87,7 @@ Once you have created a version of your page, there are various methods of reins
 To **Revert** the selected page to a previous version:
 
 1. Navigate to show the page that you want to revert to a previous version.
-1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. Select the page in [selection mode](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** column and select either **Show All** or **Versions**. The page versions for the selected page are listed.
 1. Select the version that you want to revert to. The possible options are shown:
 
@@ -99,9 +99,9 @@ To **Revert** the selected page to a previous version:
 
 This method can be used to restore versions of specified pages within the current folder. It can also include restoring pages that have been previously deleted:
 
-1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+1. Navigate to, and [select](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources), the required folder.
 
-1. Select **Restore**, then **Restore Version** from the top [actions toolbar](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar).
+1. Select **Restore**, then **Restore Version** from the top [actions toolbar](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar).
 
    >[!NOTE]
    >
@@ -134,9 +134,9 @@ This method can be used to restore versions of specified pages within the curren
 
 This method can be used to restore a version of a tree as at a specified date and time. It can include pages that have been previously deleted:
 
-1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+1. Navigate to, and [select](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources), the required folder.
 
-1. Select **Restore**, then **Restore Tree** from the top [actions toolbar](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar). The latest version of the tree is shown:
+1. Select **Restore**, then **Restore Tree** from the top [actions toolbar](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar). The latest version of the tree is shown:
 
    ![Restore Tree](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
@@ -155,7 +155,7 @@ This method can be used to restore a version of a tree as at a specified date an
 You can preview a specific version:
 
 1. Navigate to show the page that you want to compare.
-1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. Select the page in [selection mode](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** column and select either **Show All** or **Versions**.
 1. The page versions are listed. Select the version that you want to preview:
 
@@ -167,14 +167,14 @@ You can preview a specific version:
    >
    >If a page has been moved, you can no longer perform a preview on any versions made before the move.
    >
-   >If you experience problems with a preview, check the [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) for the page to see whether the page has been moved.
+   >If you experience problems with a preview, check the [Timeline](/help/sites-cloud/authoring/basic-handling.md#timeline) for the page to see whether the page has been moved.
   
 ## Comparing a Version with Current Page {#comparing-a-version-with-current-page}
 
 To compare a previous version with the current page:
 
 1. Navigate to show the page that you want to compare.
-1. Select the page in [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. Select the page in [selection mode](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** column and select either **Show All** or **Versions**.
 1. The page versions are listed. Select the version that you want to compare:
 

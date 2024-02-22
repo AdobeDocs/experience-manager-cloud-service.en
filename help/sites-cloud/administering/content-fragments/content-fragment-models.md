@@ -495,7 +495,7 @@ If you try to unpublish a model that is currently used by one or more fragments,
 
 ![Content Fragment Model error message when unpublishing a model that is in use](assets/cf-cfmodels-unpublish-error.png)
 
-The message suggests that you check the [References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) panel to investigate further:
+The message suggests that you check the [References](/help/sites-cloud/authoring/basic-handling.md#references) panel to investigate further:
 
 ![Content Fragment Model in References](assets/cf-cfmodels-references.png)
 

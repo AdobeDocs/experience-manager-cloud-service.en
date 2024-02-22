@@ -42,7 +42,7 @@ You can create a launch from either the Sites or Launches console:
 
    >[!NOTE]
    >
-   >In the **Sites** console you can also use [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) to select a page before selecting **Create**.
+   >In the **Sites** console you can also use [selection mode](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) to select a page before selecting **Create**.
    >
    >This will use the selected page as the initial source page.
 

@@ -33,7 +33,7 @@ From any of the consoles the current number of items in your inbox is shown in t
 
 >[!NOTE]
 >
->Certain actions will also be shown in the [card view of the appropriate resource](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
+>Certain actions will also be shown in the [card view of the appropriate resource](/help/sites-cloud/authoring/basic-handling.md#card-view).
 
 ## Opening the Inbox {#opening-the-inbox}
 
@@ -50,7 +50,7 @@ To open the AEM notification inbox:
 
 >[!NOTE]
 >
->The Inbox operates as a console, so use [Global Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) or [Search](/help/sites-cloud/authoring/getting-started/search.md) to navigate to another location when you are finished.
+>The Inbox operates as a console, so use [Global Navigation](/help/sites-cloud/authoring/basic-handling.md#global-navigation) or [Search](/help/sites-cloud/authoring/search.md) to navigate to another location when you are finished.
 
 ### Inbox - List View {#inbox-list-view}
 

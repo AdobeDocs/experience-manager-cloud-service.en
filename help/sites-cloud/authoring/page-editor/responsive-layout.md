@@ -22,7 +22,7 @@ AEM realizes responsive layout for your pages using a combination of mechanisms:
 
 * [**Layout Container**](#adding-a-layout-container-and-its-content-edit-mode) component
 
-  This component is available in the [component browser](/help/sites-cloud/authoring/page-editor/editor-site-panel.md#components-browser) and provides a grid-paragraph system to allow you to add and position components within a responsive grid. It can also be set as the default paragraph system on your page.
+  This component is available in the [component browser](/help/sites-cloud/authoring/page-editor/editor-side-pane.md#components-browser) and provides a grid-paragraph system to allow you to add and position components within a responsive grid. It can also be set as the default paragraph system on your page.
 
 * [**Layout Mode**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
 
@@ -130,7 +130,7 @@ A **Layout Container** is a paragraph system that:
 >
 >If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page.](/help/sites-cloud/administering/responsive-layout.md)
 
-1. The **Layout Container** is available as a standard component in the [Components Browser](/help/sites-cloud/authoring/page-editor/editor-site-panel.md#components-browser). From here you can drag it to the required location on the page after which you can see the **Drag Components here** placeholder.
+1. The **Layout Container** is available as a standard component in the [Components Browser](/help/sites-cloud/authoring/page-editor/editor-side-pane.md#components-browser). From here you can drag it to the required location on the page after which you can see the **Drag Components here** placeholder.
 1. You can then add components to the layout container. These components will hold the actual content:
 
    ![Layout container](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)

@@ -17,8 +17,8 @@ The following shortcuts are available for the Sites, Assets, Users, Groups, Proj
 |Console - Column View|`Shift-Up/Down Arrow`|Move up/down, and select, a list of pages at the same level|
 ||`Esc`|Move up a list of pages at the same level|
 |Consoles|`?`|Keyboard shortcut help|
-||`/`|Invoke [search](/help/sites-cloud/authoring/getting-started/search.md)|
-||`Alt+`&lt;`Number`&gt;|Toggle which [rail selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) option to view|
+||`/`|Invoke [search](/help/sites-cloud/authoring/search.md)|
+||`Alt+`&lt;`Number`&gt;|Toggle which [rail selector](/help/sites-cloud/authoring/basic-handling.md#rail-selector) option to view|
 ||``` ` ```|Hide rail|
 ||`e`|Edit|
 ||`p`|Properties|
@@ -65,8 +65,8 @@ For users that do not use keyboard shortcuts or have certain accessibility requi
 
 You can deactivate keyboard shortcuts in two locations:
 
-* [My Preferences](/help/sites-cloud/authoring/getting-started/account-environment.md#my-preferences)
-* The [help menu](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
+* [My Preferences](/help/sites-cloud/authoring/account-environment.md#my-preferences)
+* The [help menu](/help/sites-cloud/authoring/basic-handling.md#accessing-help)
 
 >[!NOTE]
 >

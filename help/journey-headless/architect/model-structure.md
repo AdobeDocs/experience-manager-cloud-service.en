@@ -104,7 +104,7 @@ Now that you have learned the basics, the next step is to start creating your ow
 
 * [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for navigating to, and taking action on, **Content Fragment Models** under the **General** console.
+* [Basic Handling](/help/sites-cloud/authoring/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for navigating to, and taking action on, **Content Fragment Models** under the **General** console.
 
 * [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
  

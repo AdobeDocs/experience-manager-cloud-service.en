@@ -88,7 +88,7 @@ The method of creating a content fragment is:
 In the **Assets** console a range of actions are available for your content fragments, either:
 
 * From the toolbar; after selection of your fragment all appropriate actions are available.
-* As [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); a subset of actions available for the individual fragment cards.
+* As [quick actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions); a subset of actions available for the individual fragment cards.
 
 ![Actions in toolbar](assets/cfm-managing-02.png)
 

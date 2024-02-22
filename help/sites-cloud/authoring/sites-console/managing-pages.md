@@ -13,7 +13,7 @@ Learn how to manage the pages of your website in AEM including moving, copying, 
 
 >[!TIP]
 >
->There are several [keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) that you can use from the websites console that make organizing your pages more efficient.
+>There are several [keyboard shortcuts](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) that you can use from the websites console that make organizing your pages more efficient.
 
 ## Access Privileges {#access-privileges}
 
@@ -25,12 +25,12 @@ If you encounter any problems we suggest you contact your system administrator.
 
 After [creating a page](/help/sites-cloud/authoring/sites-console/creating-pages.md) or navigating to an existing page using [the **Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) you can open it for editing.
 
-1. Open [the **Sites** console.](help/sites-cloud/authoring/sites-console/introduction.md)
+1. Open [the **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Navigate to find the page that you want to edit.
 1. Select your page by using either:
 
-    * [Quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
-    * [Selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) and the toolbar
+    * [Quick actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
+    * [Selection mode](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) and the toolbar
 
 1. Tap or click the **Edit** icon.
 
@@ -42,12 +42,12 @@ After [creating a page](/help/sites-cloud/authoring/sites-console/creating-pages
 
 You can copy a page and all of its sub-pages to a new location:
 
-1. Open [the **Sites** console.](help/sites-cloud/authoring/sites-console/introduction.md)
+1. Open [the **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Navigate to find the page that you want to copy.
 1. Select your page using either:
 
-    * [Quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
-    * [Selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) and the toolbar
+    * [Quick actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
+    * [Selection mode](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) and the toolbar
 
 1. Tap or click the **Copy** page icon.
 
@@ -84,12 +84,12 @@ The procedure to move or rename a page is basically the same and both actions ar
 
 AEM offers you the functionality to update any internal links that refer to the page being renamed/moved. This can be done on a page-by-page basis to provide full flexibility.
 
-1. Open [the **Sites** console.](help/sites-cloud/authoring/sites-console/introduction.md)
+1. Open [the **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Navigate to find the page that you want to move.
 1. Select your page using either:
 
-    * [Quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
-    * [Selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) and the toolbar
+    * [Quick actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
+    * [Selection mode](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) and the toolbar
 
 1. Tap or click the **Move** page icon to open the move page wizard.
 
@@ -110,7 +110,7 @@ AEM offers you the functionality to update any internal links that refer to the 
 
 1. From the **Select Destination** step of the wizard you can either:
 
-    * Use the [column view](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) to navigate to the new location for the page:
+    * Use the [column view](/help/sites-cloud/authoring/basic-handling.md#column-view) to navigate to the new location for the page:
 
         * Select the destination it by clicking the destination's thumbnail.
         * Click **Next** to continue.
@@ -170,9 +170,9 @@ The status of asynchronous jobs can be checked in the [**Async Jobs Status** das
 
 ### Deleting a Page {#deleting-a-page}
 
-1. Open [the **Sites** console.](help/sites-cloud/authoring/sites-console/introduction.md)
+1. Open [the **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Navigate to the page you want to delete.
-1. Use [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) to select the required page, then use **Delete** from the toolbar:
+1. Use [selection mode](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) to select the required page, then use **Delete** from the toolbar:
 
    ![Delete button](/help/sites-cloud/authoring/assets/delete.png)
 
@@ -202,7 +202,7 @@ You can [lock/unlock a page](/help/sites-cloud/authoring/page-editor/edit-conten
 
 You can create folders to help organize your files and pages.
 
-1. Open [the **Sites** console.](help/sites-cloud/authoring/sites-console/introduction.md)
+1. Open [the **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Navigate to the required location.
 1. To open the option list, select **Create** from the toolbar
 1. Select **Folder** to open the dialog. Here you can enter the **Name** and **Title**:

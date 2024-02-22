@@ -205,7 +205,7 @@ The Experience Fragment Editor offers you similar capabilities to the normal pag
 
 The following example procedure illustrates how to create a teaser for a product:
 
-1. Drag and drop the required component from the [Components Browser](/help/sites-cloud/authoring/page-editor/editor-site-panel.md#components-browser).
+1. Drag and drop the required component from the [Components Browser](/help/sites-cloud/authoring/page-editor/editor-side-pane.md#components-browser).
 
 1. Depending on the component:
    * Add any content and/or assets as required. 
