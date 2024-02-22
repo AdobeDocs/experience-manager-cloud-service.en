@@ -47,7 +47,7 @@ Depending on your project, the Layout Container might be used as the default par
 
 >[!NOTE]
 >
->Use of the above mechanisms is enabled by configuration on the template. See Configuring Responsive Layout for further information. <!-- Use of the above mechanisms is enabled by configuration on the template. See [Configuring Responsive Layout](/help/sites-administering/configuring-responsive-layout.md) for further information.-->
+>Use of the above mechanisms is enabled by configuration on the template. Please see the document [Configuring Responsive Layout](/help/sites-cloud/administering/responsive-layout.md) for further information.
 
 ## Layout Definitions, Device Emulation, and Breakpoints {#layout-definitions-device-emulation-and-breakpoints}
 

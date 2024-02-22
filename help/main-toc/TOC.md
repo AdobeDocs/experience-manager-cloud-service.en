@@ -258,7 +258,7 @@ user-guide-title: AEM as a Cloud Service
 + Sites {#sites}
   + [Notable Changes to AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
   + Authoring {#authoring}
-    + [Quick Start Guide to Authoring Pages](/help/sites-cloud/authoring/getting-started/quick-start.md)
+    + [Quick Start Guide to Authoring Pages](/help/sites-cloud/authoring/quick-start.md)
     + [Basic Handling](/help/sites-cloud/authoring/basic-handling.md)
     + [Authoring and Publishing](/help/sites-cloud/authoring/author-publish.md)
     + [Authoring Methods](/help/sites-cloud/authoring/authoring-methods.md)
@@ -297,6 +297,7 @@ user-guide-title: AEM as a Cloud Service
       + [Creating Accessible Content (WCAG 2.1 Conformance)](/help/sites-cloud/authoring/page-editor/accessible-content.md)
       + [Keyboard Shortcuts](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
       + [Style System](/help/sites-cloud/authoring/page-editor/style-system.md)
+      + [Undo Redo Limitations](/help/sites-cloud/authoring/page-editor/undo-redo.md)
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
       + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)
