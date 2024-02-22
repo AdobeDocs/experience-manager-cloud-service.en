@@ -18,7 +18,7 @@ The RTE concepts and steps required to configure it are listed below.
 
 ## Understand the user interface available to authors {#understand-rte-ui}
 
-The RTE interface offers a [responsive design](/help/sites-cloud/authoring/sites-console/responsive-layout.md) for authoring environment. The interface is designed for use on touch and desktop devices.
+The RTE interface offers a [responsive design](/help/sites-cloud/authoring/page-editor/responsive-layout.md) for authoring environment. The interface is designed for use on touch and desktop devices.
 
 ![Rich Text Editor toolbar](assets/rte-toolbar-full-screen-mode.png)
 

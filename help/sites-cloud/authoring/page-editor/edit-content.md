@@ -202,7 +202,7 @@ To move a component:
 
 ## Editing Component Layout {#editing-component-layout}
 
-Instead of repeatedly switching from edit to [layout mode](/help/sites-cloud/authoring/sites-console/responsive-layout.md) to adjust a component, you can select the **Layout** action for a component to change that component's layout and save time by not having to leave the edit mode.
+Instead of repeatedly switching from edit to [layout mode](/help/sites-cloud/authoring/page-editor/responsive-layout.md) to adjust a component, you can select the **Layout** action for a component to change that component's layout and save time by not having to leave the edit mode.
 
 1. When in **Edit** mode of the sites console, select a component to reveal the component's toolbar.
 
@@ -210,7 +210,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-cloud/aut
 
    ![The Layout button of the component toolbar](assets/edit-content-layout.png)
 
-1. Once the Layout action is selected, you can modify the layout of the component as you would in [layout mode.](/help/sites-cloud/authoring/sites-console/responsive-layout.md#defining-layouts-layout-mode)
+1. Once the Layout action is selected, you can modify the layout of the component as you would in [layout mode.](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)
 
     * The resizing handles for the component display.
     * The emulator toolbar is shown at the top of the screen.
@@ -226,7 +226,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-cloud/aut
 >
 >The Layout action is limited in scope to the selected component. For example, if you are editing the layout of one component and then click another component, the standard edit toolbar (not the layout toolbar) displays for the newly selected component and the resizing handles and the emulator toolbar disappear.
 >
->If you need to edit the overall layout of the page, affecting multiple components, switch to the [layout mode](/help/sites-cloud/authoring/sites-console/responsive-layout.md).
+>If you need to edit the overall layout of the page, affecting multiple components, switch to the [layout mode](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
 
 ## Editing Component Inheritance {#inherited-components}
 

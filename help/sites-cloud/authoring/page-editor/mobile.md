@@ -5,7 +5,7 @@ exl-id: fabd4468-3304-402f-9522-342da3bbae94
 ---
 # Authoring a Page for Mobile Devices {#authoring-a-page-for-mobile-devices}
 
-Adobe Experience Manager pages are based on a responsive layout. [Responsive layout](/help/sites-cloud/authoring/sites-console/responsive-layout.md) adapts your content to fit the target device automatically, eliminating the need to author content for specific devices.
+Adobe Experience Manager pages are based on a responsive layout. [Responsive layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) adapts your content to fit the target device automatically, eliminating the need to author content for specific devices.
 
 When authoring a mobile page, the page is displayed in a way that emulates the mobile device. When authoring the page, you can switch between several emulators to see what the end-user sees when accessing the page.
 
@@ -30,7 +30,7 @@ Use the following procedure to author a mobile page:
    ![Emulator icon](/help/sites-cloud/authoring/assets/emulator.png)
 
 1. Drag and drop components from the component browser or asset browser on to the page.
-1. [Modify the responsive layout](/help/sites-cloud/authoring/sites-console/responsive-layout.md) of the page and its components based on the selected device.
+1. [Modify the responsive layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) of the page and its components based on the selected device.
 
 The page will look similar to the following:
 
