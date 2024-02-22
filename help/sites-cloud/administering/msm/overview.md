@@ -138,7 +138,7 @@ MSM is directly accessible in the UI using various options from the appropriate 
 
 >[!NOTE]
 >
->MSM can be used with both pages and [Experience Fragments](/help/sites-authoring/experience-fragments.md) as these fragments are part of an experience (page).
+>MSM can be used with both pages and [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) as these fragments are part of an experience (page).
 
 >[!NOTE]
 >
