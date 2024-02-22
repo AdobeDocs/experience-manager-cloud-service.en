@@ -15,7 +15,7 @@ Together these aim to help you locate your content quickly and easily from:
 
 * [Search and Filter](/help/sites-cloud/authoring/search.md#search-and-filter)
 * [Rail Selector](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
-* the [Assets Browser](/help/sites-cloud/authoring/page-editor/editor-side-pane.md#assets-browser) (when editing pages)
+* the [Assets Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) (when editing pages)
 
 >[!NOTE]
 >

@@ -129,7 +129,7 @@ AEM comes with several templates provided out-of-the-box. The templates availabl
 * Carousel
 * And many more
 
-Once you have created and opened a page you can [add content using the components](/help/sites-cloud/authoring/page-editor/edit-content.md#inserting-a-component), which are available from the [component browser](/help/sites-cloud/authoring/page-editor/editor-side-pane.md#components-browser).
+Once you have created and opened a page you can [add content using the components](/help/sites-cloud/authoring/page-editor/edit-content.md#inserting-a-component), which are available from the [component browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser).
 
 >[!TIP]
 >

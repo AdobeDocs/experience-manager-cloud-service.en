@@ -313,7 +313,7 @@ Once added, each component is marked with:
 
 >[!NOTE]
 >
->Although not identical, adding components and assets to a template has many similarities to similar actions when [page authoring](/help/sites-cloud/authoring/page-editor/edit-content.mdd).
+>Although not identical, adding components and assets to a template has many similarities to similar actions when [page authoring.](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 #### Component Actions {#component-actions}
 

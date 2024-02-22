@@ -261,7 +261,7 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
 
 ## Additional Resources {#additional-resources}
 
-* [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Authoring Concepts](/help/sites-cloud/authoring/author-publish.md)
 
 * [Basic Handling](/help/sites-cloud/authoring/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for authoring **Content Fragments** under the **Assets** console.
 
