@@ -190,7 +190,7 @@ The translation memory updates can be intercepted and sent to a custom destinati
 
 A property can be selected in the list view of the sites console that shows if a page has been translated, is in translation, or has not yet been translated.
 
-1. In the site console, switch to [list view](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. In the site console, switch to [list view](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Select, **View Settings** in the view drop-down.
 1. In the dialog, check the **Translated** property and select **Update**.
 
@@ -431,7 +431,7 @@ When content is translated for an existing language copy, review the translation
 To compare language copies to the language master:
 
 1. In the sites console, navigate to the language copy you want to compare.
-1. Open the [References rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#references).
+1. Open the [References rail](/help/sites-cloud/authoring/basic-handling.md#references).
 1. Under the **Copies** heading select **Language Copies.**
 1. Select your specific language copy and then you can either click **Compare to Master** or **Compare to Previous** if applicable.
 

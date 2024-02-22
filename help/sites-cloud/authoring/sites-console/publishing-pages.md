@@ -162,7 +162,7 @@ To publish or unpublish a page using Manage Publication:
 
    You can use the **Add Content** button to add additional pages to the list of pages to be published in case you neglected to select one before starting the Manage Publication wizard.
 
-   Selecting the **Add Content** button starts the [path browser](/help/sites-cloud/authoring/fundamentals/path-selection.md) to allow content selection.
+   Selecting the **Add Content** button starts the [path browser](/help/sites-cloud/authoring/path-selection.md) to allow content selection.
 
    Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
 
@@ -295,13 +295,13 @@ You can use the [Manage Publication](#manage-publication) option on the sites co
 
 You can determine the publication status of a page:
 
-* In the [resource overview information on the sites console](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+* In the [resource overview information on the sites console](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 
   ![Publication status in card view](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 
-  The publication status is shown in [card](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view), [column](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view), and [list](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) views in the sites console.
+  The publication status is shown in [card](/help/sites-cloud/authoring/basic-handling.md#card-view), [column](/help/sites-cloud/authoring/basic-handling.md#column-view), and [list](/help/sites-cloud/authoring/basic-handling.md#list-view) views in the sites console.
 
-* In the [timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
+* In the [timeline](/help/sites-cloud/authoring/basic-handling.md#timeline)
 
   ![Publication status in timeline view](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
 

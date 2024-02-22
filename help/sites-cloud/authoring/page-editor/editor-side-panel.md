@@ -70,7 +70,7 @@ For a more detailed description of the component, you can select the information
 
 ![Component Browser information](assets/editor-side-panel-component-description.png)
 
-For more detailed information about the components available to you see the [Component Console.](/help/sites-cloud/authoring/features/components-console.md)
+For more detailed information about the components available to you see the [Component Console.](/help/sites-cloud/authoring/components-console.md)
 
 ## Assets Browser {#assets-browser}
 

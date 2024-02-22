@@ -7,7 +7,7 @@ exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 
 Adobe Experience Manager (AEM) provides you with the capability to configure your account and certain aspects of the Author environment.
 
-Using the [User](#user-settings) option in the [header](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) and the associated [My Preferences](#my-preferences) dialog, you can modify your user options such as.
+Using the [User](#user-settings) option in the [header](/help/sites-cloud/authoring/basic-handling.md#the-header) and the associated [My Preferences](#my-preferences) dialog, you can modify your user options such as.
 
 Begin by accessing the [User](#user-settings) option in the header.
 
@@ -77,7 +77,7 @@ Each user can set their own preferred properties.
   AEM supports various keyboard shortcuts that make authoring more efficient.
 
   * [Keyboard shortcuts for editing pages](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
-  * [Keyboard shortcuts for consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+  * [Keyboard shortcuts for consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
 
   This option enables keyboard shortcuts. By default they are enabled, but can be disabled, for example,  if a user has certain accessibility requirements.
 

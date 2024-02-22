@@ -272,9 +272,9 @@ With the [layout](#editing-a-template-layout-template-author) you can predefine 
 
 #### Styles {#template-styles}
 
-The [Style System](/help/sites-cloud/authoring/editorß/style-system.md) allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
+The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
 
-See the [Style System documentation](/help/sites-cloud/authoring/page-editor/style-system.md) for more information.
+Please see the [Style System documentation](/help/sites-cloud/authoring/page-editor/style-system.md) for more information.
 
 ### Editing a Template - Structure - Template Author {#editing-a-template-structure-template-author}
 

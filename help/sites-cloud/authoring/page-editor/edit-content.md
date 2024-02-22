@@ -25,7 +25,7 @@ In addition, the editor allows you to organize the existing content on you page 
 
 ## Adding Components {#adding-components}
 
-You can drag-and-drop new components onto your page by selecting them from the [component browser in the side panel](/help/sites-cloud/authoring/page-editor/editor-site-panel.md#components-browser) and dropping them in a component placeholder.
+You can drag-and-drop new components onto your page by selecting them from the [component browser in the side panel](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) and dropping them in a component placeholder.
 
 ### Component Placeholder {#component-placeholder}
 
@@ -43,10 +43,10 @@ In both cases, the target selected will appear as a blue outline below the compo
 
 ### Adding a Component from the Components Browser {#adding-a-component-from-the-components-browser}
 
-You can add a new component by using the [component browser](help/sites-cloud/authoring/page-editor/editor-site-panel.md#components-browser). The [component placeholder](#component-placeholder) shows you where you are positioning the component.
+You can add a new component by using the [component browser](help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). The [component placeholder](#component-placeholder) shows you where you are positioning the component.
 
 1. Make sure that the page editor is in [**Edit** mode.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
-1. Open the [component browser.](/help/sites-cloud/authoring/page-editor/editor-site-panel.md#components-browser)
+1. Open the [component browser.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
 1. Drag the required component to the [required position](#component-placeholder) and release.
 1. [Edit](#edit-content) the newly-placed component.
 
@@ -78,14 +78,14 @@ You can add a new component by using the **Drag components here** placeholder of
 
 ## Adding an Asset {#adding-asset}
 
-You can also add a new component to the page by dragging an asset from the [assets browser.](/help/sites-cloud/authoring/page-editor/editor-site-panel.md#assets-browser) This automatically creates a component of the appropriate type (and containing the asset).
+You can also add a new component to the page by dragging an asset from the [assets browser.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) This automatically creates a component of the appropriate type (and containing the asset).
 
 This behavior can be configured for your installation. Please see the document [Components Reference Guide](/help/implementing/developing/components/reference.md#component-placeholders) for further details.
 
 To create a component by dragging one of the above asset types:
 
 1. Make sure that your page is in [**Edit** mode.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
-1. Open the [asset browser](/help/sites-cloud/authoring/page-editor/editor-site-panel.md#assets-browser).
+1. Open the [asset browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser).
 1. Drag the required asset to the required position. The [component placeholder](#component-placeholder) shows you where the component is positioned and a target will show were it will be inserted.
 1. Release the asset onto the target. A component, appropriate for the asset type, is created at the required location containing the selected asset.
 1. [Edit](#edit-content) the component if necessary.

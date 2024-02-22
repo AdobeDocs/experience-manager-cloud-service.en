@@ -15,7 +15,7 @@ For example, you can:
 
 * Redo actions as long as you have not made a page edit since you used undo.
 * Undo a maximum of 20 edit actions (default setting).
-* Also use [Keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) for undo and redo.
+* Also use [Keyboard shortcuts](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) for undo and redo.
 
 You can use undo and redo for the following types of page changes:
 

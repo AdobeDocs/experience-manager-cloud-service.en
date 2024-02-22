@@ -23,7 +23,7 @@ Alternatively you can start typing in the path field and AEM will offer matching
 
 ## Path Browser {#path-browser}
 
-The path browser is organized like the [column view](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) of the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) allowing for more detailed selection of resources.
+The path browser is organized like the [column view](/help/sites-cloud/authoring/basic-handling.md#column-view) of the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) allowing for more detailed selection of resources.
 
 ![Path Browser](/help/sites-cloud/authoring/assets/path-browser.png)
 

@@ -21,7 +21,7 @@ If you encounter any problems we suggest you contact your system administrator.
 
 Unless all pages have been created for you in advance, you must create a page before you can start creating content:
 
-1. Open [the **Sites** console.](help/sites-cloud/authoring/sites-console/introduction.md)
+1. Open [the **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Navigate to the location where you want to create the new page.
 1. Open the drop-down selector using **Create** in the toolbar, then select **Page** from the list:
 

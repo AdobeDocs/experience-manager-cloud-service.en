@@ -84,7 +84,7 @@ There are some situations in which the page diff may not detect a difference as 
 * When diffing versions and launches, the diff does not take into account dynamic components such as breadcrumbs, menus, product lists or logos (components that rely on the site structure to render their content).
 * For versions, the diff does not recreate the access control policy and live copy relationships.
 * If a page is moved, you can no longer perform a diff with any versions made before the move.
-  * If you experience problems with a diff, check the [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) for the page to see whether the page has been moved.
+  * If you experience problems with a diff, check the [Timeline](/help/sites-cloud/authoring/basic-handling.md#timeline) for the page to see whether the page has been moved.
 
 >[!NOTE]
 >

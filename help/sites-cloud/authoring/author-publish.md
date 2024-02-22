@@ -45,7 +45,7 @@ Also, there are administrative tasks that help you manage your content:
 
 AEM is also administered from the author environment.
 
-Please see the document [Quick Start Guide to Authoring](/help/sites-cloud/authoring/getting-started/quick-start.md) for an overview of the authoring process.
+Please see the document [Quick Start Guide to Authoring](/help/sites-cloud/authoring/quick-start.md) for an overview of the authoring process.
 
 ## Previewing Content {#previewing-content}
 

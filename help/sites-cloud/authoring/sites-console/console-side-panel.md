@@ -49,7 +49,7 @@ Using the content tree side panel in conjunction with a list view or cards view,
 >
 >* Use the `Alt+1` keyboard shortcut to switch to the content tree view of the side panel.
 >* Once an entry in the hierarchy view is selected, arrow keys can be used to quickly navigate the hierarchy.
->* See [keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) for more information.
+>* See [keyboard shortcuts](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) for more information.
 
 ## Timeline {#timeline}
 
@@ -80,7 +80,7 @@ In the **Sites** console you can also access additional features via the ellipsi
 >[!TIP]
 >
 >* Use the `Alt+2` keyboard shortcut to switch to the timeline view of the side panel.
->* See [keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) for more information.
+>* See [keyboard shortcuts](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) for more information.
 
 ## References {#references}
 
@@ -115,7 +115,7 @@ If you have not yet set up the front-end pipeline to enable theme-based site cre
 
 ## Filter {#filter}
 
-The **Filter** panel is similar to the [search feature](/help/sites-cloud/authoring/getting-started/search.md) with the appropriate location filters already set, allowing you to further filter the content you want to view.
+The **Filter** panel is similar to the [search feature](/help/sites-cloud/authoring/search.md) with the appropriate location filters already set, allowing you to further filter the content you want to view.
 
 ![Filter example](assets/console-side-panel-filter.png)
 

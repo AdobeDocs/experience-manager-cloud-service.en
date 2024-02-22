@@ -97,7 +97,7 @@ The definition of a component can be broken down as follows:
 * **Root Node**:
   * `<mycomponent> (cq:Component)` - Hierarchy node of the component.
 * **Vital Properties**:
-  * `jcr:title` - Component title; for example, used as a label when the component is listed in the [Components Browser](/help/sites-cloud/authoring/page-editor/editor-site-panel.md#components-browser) and [Components Console](/help/sites-cloud/authoring/features/components-console.md)
+  * `jcr:title` - Component title; for example, used as a label when the component is listed in the [Components Browser](/help/sites-cloud/authoring/page-editor/editor-side-pane.md#components-browser) and [Components Console](/help/sites-cloud/authoring/components-console.md)
   * `jcr:description` - Description for the component; used as mouse-over hint in the Components Browser and Components Console
   * See the section [Component Icon](#component-icon) for details
 * **Vital Child Nodes**:
@@ -135,7 +135,7 @@ If none of the above properties (`cq:icon`, `abbreviation`, `cq:icon.png` or `cq
 
 To cancel the inheritance of icons from super components, setting an empty `abbreviation` property on the component will revert to the default behavior.
 
-The [Component Console](/help/sites-cloud/authoring/features/components-console.md#component-details) displays how the icon for a particular component is defined.
+The [Component Console](/help/sites-cloud/authoring/components-console.md#component-details) displays how the icon for a particular component is defined.
 
 #### SVG Icon Example {#svg-icon-example}
 
@@ -160,7 +160,7 @@ A component is a node of type `cq:Component` and has the following properties an
 |Name|Type|Description|
 |---|---|---|
 |`.`|`cq:Component`|This represents the current component. A component is of node type `cq:Component`.|
-|`componentGroup`|`String`|This represents the group under which the component can be selected in the [Components Browser](/help/sites-cloud/authoring/page-editor/editor-site-panel.md#components-browser). A value beginning with `.` is used for components that are not available for selection from the UI such as base components from which other components inherit.|
+|`componentGroup`|`String`|This represents the group under which the component can be selected in the [Components Browser](/help/sites-cloud/authoring/page-editor/editor-side-pane.md#components-browser). A value beginning with `.` is used for components that are not available for selection from the UI such as base components from which other components inherit.|
 |`cq:isContainer`|`Boolean`|This indicates whether the component is a container component and therefore can contain other components such as a paragraph system.|
 |`cq:dialog`|`nt:unstructured`|This is the definition of the edit dialog for the component.|
 |`cq:design_dialog`|`nt:unstructured`|This is the definition of the design dialog for the component.|
@@ -463,7 +463,7 @@ All you need to do is place a `README.md` file in the component structure.
 
 ![README.md in component structure](assets/components-documentation.png)
 
-This markdown will then be displayed in the [Component Console](/help/sites-cloud/authoring/features/components-console.md).
+This markdown will then be displayed in the [Component Console](/help/sites-cloud/authoring/components-console.md).
 
 ![README.md visible in the Components Console](assets/components-documentation-console.png)
 

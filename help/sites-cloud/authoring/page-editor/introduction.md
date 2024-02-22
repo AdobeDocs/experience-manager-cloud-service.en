@@ -21,7 +21,7 @@ The AEM page editor is composed primarily of three sections:
 
 ![The layout of the page editor](assets/page-editor-layout.png)
 
-Content is added using [components](/help/sites-cloud/authoring/features/components-console.md) (appropriate to the content type) that can be dragged onto the page. These can then be edited in place, moved, or deleted.
+Content is added using [components](/help/sites-cloud/authoring/components-console.md) (appropriate to the content type) that can be dragged onto the page. These can then be edited in place, moved, or deleted.
 
 ### Toolbar {#page-toolbar}
 
@@ -31,7 +31,7 @@ The page toolbar offers access to context-appropriate functionality, dependent o
 
 #### Side Panel {#side-panel-button}
 
-This opens/closes the [side panel,](help/sites-cloud/authoring/page-editor/editor-site-panel.md) which holds the Asset Browser, Component Browser, and Content Tree.
+This opens/closes the [side panel,](help/sites-cloud/authoring/page-editor/editor-side-pane.md) which holds the Asset Browser, Component Browser, and Content Tree.
 
 ![Side Panel toggle](assets/page-editor-side-panel-toggle.png)
 
@@ -51,8 +51,8 @@ This provides access to detailed page information including page details and act
 * [Unpublish Page](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages)
 * [Edit Template](/help/sites-cloud/authoring/sites-console/templates.md)
 * [View as Published](/help/sites-cloud/authoring/page-editor/introduction.md#view-as-published)
-* [View in Admin](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
-* [Help](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
+* [View in Admin](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
+* [Help](/help/sites-cloud/authoring/basic-handling.md#accessing-help)
 * [Promote Launch](/help/sites-cloud/authoring/launches/promoting.md) (only if the page is a launch)
 
 In addition, **Page Information** can provide access to analytics and recommendations, when appropriate.
@@ -97,7 +97,7 @@ There are various modes when editing a page allowing for different actions:
 >* Depending on the characteristics of the page, some modes may not be available.
 >* Access to some modes require the appropriate permissions/privileges.
 >* Developer mode is not available on mobile devices due to space restrictions.
->* There is a [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) to toggle between **Preview** and the currently selected mode (for example, **Edit**, **Layout**, and so on).
+>* There is a [keyboard shortcut](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) to toggle between **Preview** and the currently selected mode (for example, **Edit**, **Layout**, and so on).
 
 #### Preview {#preview}
 
@@ -121,7 +121,7 @@ The side panel provides you access to three different tabs.
 
 ![The side panel of the page editor](assets/page-editor-side-panel.png)
 
-Please see the document [Page Editor Side Panel](/help/sites-cloud/authoring/page-editor/editor-site-panel.md) for more information.
+Please see the document [Page Editor Side Panel](/help/sites-cloud/authoring/page-editor/editor-side-pane.md) for more information.
 
 ### Editor {#editor}
 
@@ -179,7 +179,7 @@ There are two options for previewing a page:
 >
 >* Links in the content are visible, but not accessible in **Edit** mode.
 >* Use either of the preview options if you want to navigate using your links.
->* Use the [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` to switch between preview and the last selected mode.
+>* Use the [keyboard shortcut](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `Ctrl-Shift-M` to switch between preview and the last selected mode.
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ The following icons allow you to undo or redo an action. These are shown in the 
 
 >[!TIP]
 >
->* The [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z` is also available to undo page edit actions.
+>* The [keyboard shortcut](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `Ctrl-Z` is also available to undo page edit actions.
 >* The keyboard shortcut `Ctrl-Y` is also available to redo page edit actions.
 
 >[!NOTE]

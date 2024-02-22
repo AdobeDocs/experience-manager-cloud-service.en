@@ -47,7 +47,7 @@ The following steps are available to an administrator on a local development ins
 
 To create a blueprint configuration:
 
-1. [Navigate](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) to the **Tools** menu, then select the **Sites** menu.
+1. [Navigate](/help/sites-cloud/authoring/basic-handling.md#global-navigation) to the **Tools** menu, then select the **Sites** menu.
 1. Select **Blueprints** to open the **Blueprint Configurations** console:
 
    ![Blueprint configurations](../assets/blueprint-configurations.png)
@@ -66,7 +66,7 @@ To create a blueprint configuration:
 
 You can edit or delete an existing blueprint configuration:
 
-1. [Navigate](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) to the **Tools** menu, then select the **Sites** menu.
+1. [Navigate](/help/sites-cloud/authoring/basic-handling.md#global-navigation) to the **Tools** menu, then select the **Sites** menu.
 1. Select **Blueprints** to open the **Blueprint Configurations** console:
 
    ![Blueprint configurations](../assets/blueprint-configurations.png)
@@ -243,7 +243,7 @@ Rollouts are processed as asynchronous jobs and can be checked on the [***Async 
 
 #### Roll Out a Blueprint from the Reference Rail {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. In the **Sites** console, select the page in the live copy and open the **[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** panel (from the toolbar).
+1. In the **Sites** console, select the page in the live copy and open the **[References](/help/sites-cloud/authoring/basic-handling.md#references)** panel (from the toolbar).
 1. Select the **Blueprint** option from the list, to show the blueprints associated with this page.
 1. Select the required blueprint from the list.
 1. Select **Rollout**.
@@ -569,8 +569,8 @@ The [**Reset** action is also available from the Live Copy Overview](live-copy-o
 
 To track the changes you have made, you can view the blueprint page in **References** and compare it with its Live Copy page:
 
-1. In the **Sites** console, [navigate to a blueprint or Live Copy page and select it](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Open the **[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** panel and depending on context select either:
+1. In the **Sites** console, [navigate to a blueprint or Live Copy page and select it](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Open the **[References](/help/sites-cloud/authoring/basic-handling.md#references)** panel and depending on context select either:
 
     * **Blueprint**
     * **Live Copies**
