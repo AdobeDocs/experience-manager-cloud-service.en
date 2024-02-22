@@ -255,7 +255,7 @@ Through a simple configuration, a content author can now enable progressive web 
 ## Editing Page Properties {#editing-page-properties-1}
 
 * From the **Sites** console:
-  * [Creating a new page](/help/sites-cloud/authoring/sites-console/organizing-pages.md#creating-a-new-page) (a subset of the properties)
+  * [Creating a new page](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) (a subset of the properties)
   * Clicking or tapping **Properties**
     * For a single page
     * For multiple pages (only a subset of the properties are available for editing en masse)

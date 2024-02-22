@@ -130,6 +130,6 @@ If the number of assets/folders or references to be moved exceeds the threshold 
 
 >[!MORELIKETHIS]
 >
->* [Creating and Organizing Pages](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>* [Managing Pages](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 >* [Import and export asset metadata in bulk](/help/assets/metadata-import-export.md).
 >* [Use Connected Assets to share DAM assets from remote deployments](/help/assets/use-assets-across-connected-assets-instances.md).

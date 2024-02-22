@@ -442,7 +442,7 @@ To compare language copies to the language master:
 
 ## Moving or Renaming a Source Page {#move-source}
 
-If an already translated source page must be [renamed or moved](/help/sites-cloud/authoring/sites-console/organizing-pages.md#moving-or-renaming-a-page), translating the page again after the move create a language copy based on the new page name/location. The old language copy based on the previous name/location will still be there.
+If an already translated source page must be [renamed or moved](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), translating the page again after the move create a language copy based on the new page name/location. The old language copy based on the previous name/location will still be there.
 
 The best practice in this scenario is to follow this procedure:
 

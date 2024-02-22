@@ -228,13 +228,13 @@ The actions toolbar only appears when a resource is selected in the console. The
 * [Create](#create-action) - Create new content or content-related actions
 * [Edit](/help/sites-cloud/authoring/page-editor/introduction.md) - Edit the page
 * [Properties](/help/sites-cloud/authoring/sites-console/page-properties.md) - Opens the page properties window
-* [Lock](/help/sites-cloud/authoring/sites-console/organizing-pages.md#locking-a-page) - Lock a page to prevent others from changing it
-* [Copy](/help/sites-cloud/authoring/sites-console/organizing-pages.md#copying-and-pasting-a-page) - Copy a page
-* [Move](/help/sites-cloud/authoring/sites-console/organizing-pages.md#moving-or-renaming-a-page) - Move or rename a page
+* [Lock](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Lock a page to prevent others from changing it
+* [Copy](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Copy a page
+* [Move](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Move or rename a page
 * [Quick Publish](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publish a page or pages immediately
 * [Manage Publication](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Schedule a page or pages for publication
 * [Restore](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Restore a version of a page or page tree
-* [Delete](/help/sites-cloud/authoring/sites-console/organizing-pages.md#deleting-a-page) - Delete a page or pages
+* [Delete](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Delete a page or pages
 
 Due to the space restrictions in some windows, the toolbar can quickly become longer than the space available. When this happens additional options appears. Clicking or tapping on the ellipsis (the three dots or **...**) opens a drop-down selector holding all remaining actions.
 

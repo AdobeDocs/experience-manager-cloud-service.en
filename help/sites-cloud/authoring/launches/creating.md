@@ -108,7 +108,7 @@ Selecting this will:
 >
 >As a different template is used, the new page is empty. Due to the different page structure no content is copied over.
 >
->This mechanism can be used to change the template of an [existing page](/help/sites-cloud/authoring/sites-console/organizing-pages.md#creating-a-new-page) - though the loss of content must be considered.
+>This mechanism can be used to change the template of an [existing page](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) - though the loss of content must be considered.
 
 ### Creating a Nested Launch {#creating-a-nested-launch}
 
