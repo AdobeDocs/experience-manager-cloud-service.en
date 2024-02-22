@@ -347,6 +347,7 @@ user-guide-title: AEM as a Cloud Service
       + [Enable Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
       + [Using the Site Rail](/help/sites-cloud/administering/site-creation/site-rail.md)
       + [Site Templates](/help/sites-cloud/administering/site-creation/site-templates.md)
+      + [Responsive Layout](/help/sites-cloud/administering/responsive-layout.md)
       + [Site Themes](/help/sites-cloud/administering/site-creation/site-themes.md)
       + AEM Quick Site Creation Journey {#quick-site}
         + [Understand AEM Quick Site Creation](/help/journey-sites/quick-site/overview.md)
