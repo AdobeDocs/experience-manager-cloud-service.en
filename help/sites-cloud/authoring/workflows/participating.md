@@ -76,7 +76,7 @@ Use the following procedure to complete the work item:
 
 Use the following procedure to complete the work item:
 
-1. Open the [page for editing](/help/sites-cloud/authoring/sites-console/organizing-pages.md#opening-a-page-for-editing).
+1. Open the [page for editing](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Select **Complete** from the status bar at the top.
 1. The **Complete Work Item** dialog opens. Select the **Next Step** from the drop-down selector and add a **Comment** if necessary.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
@@ -135,7 +135,7 @@ Use the following procedure to delegate a work item:
 
 Use the following procedure to delegate a work item:
 
-1. Open the [page for editing](/help/sites-cloud/authoring/sites-console/organizing-pages.md#opening-a-page-for-editing).
+1. Open the [page for editing](/help/sites-cloud/authoring/sites-console/manaing-pages.md#opening-a-page-for-editing).
 1. Select **Delegate** from the status bar at the top.
 1. The dialog opens. Specify the **User** from the drop-down selector (this can also be a group) and add a **Comment** if necessary.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
@@ -185,7 +185,7 @@ Use the following procedure to step back:
 
 Use the following procedure to step back:
 
-1. Open the [page for editing](/help/sites-cloud/authoring/sites-console/organizing-pages.md#opening-a-page-for-editing).
+1. Open the [page for editing](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Select **Step Back** from the status bar at the top.
 1. Specify the **Previous Step** and add a **Comment** if necessary.
 1. Use **OK** to complete the step (or the **Cancel** to abort the action).
@@ -246,7 +246,7 @@ To open a workflow item and view the details:
 
 To open a workflow item and view the details:
 
-1. Open the [page for editing](/help/sites-cloud/authoring/sites-console/organizing-pages.md#opening-a-page-for-editing).
+1. Open the [page for editing](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing).
 1. Select **View Details** from the status bar to open the information tabs.
 1. If necessary, select the appropriate action, supply any details and confirm with **OK** (or **Cancel**).
 1. Use **Save** or **Cancel** to exit.

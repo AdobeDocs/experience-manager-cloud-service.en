@@ -33,7 +33,7 @@ Fields must be specifically configured if any change is required. This is done u
 
 You can also configure the fields available by configuring the dialog of your page component and applying the appropriate node properties.
 
-For example, by default the [**Create Page** wizard](/help/sites-cloud/authoring/sites-console/organizing-pages.md#creating-a-new-page) shows the fields grouped under **More Titles and Description**. To hide these you configure:
+For example, by default the [**Create Page** wizard](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) shows the fields grouped under **More Titles and Description**. To hide these you configure:
 
 1. Create your page component under `/apps`.
 1. Create an override (using *dialog diff* provided by the [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md)) for the `basic` section of your page component; for example:

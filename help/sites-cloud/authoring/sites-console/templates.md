@@ -178,7 +178,7 @@ A template can be enabled or disabled to make it available or unavailable in the
 
 1. In the **Templates Console**, select the template.
 1. Select **Enable** or **Disable** from the toolbar, and again in the confirmation dialog.
-1. You can now use your template when [creating a page](/help/sites-cloud/authoring/sites-console/organizing-pages.md#creating-a-new-page), though you will probably want to [edit the template](#editing-templates-template-authors) according to your requirements.
+1. You can now use your template when [creating a page](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page), though you will probably want to [edit the template](#editing-templates-template-authors) according to your requirements.
 
 >[!NOTE]
 >
