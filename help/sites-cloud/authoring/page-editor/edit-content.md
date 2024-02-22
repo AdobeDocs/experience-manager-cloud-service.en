@@ -43,7 +43,7 @@ In both cases, the target selected will appear as a blue outline below the compo
 
 ### Adding a Component from the Components Browser {#adding-a-component-from-the-components-browser}
 
-You can add a new component by using the [component browser](help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). The [component placeholder](#component-placeholder) shows you where you are positioning the component.
+You can add a new component by using the [component browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). The [component placeholder](#component-placeholder) shows you where you are positioning the component.
 
 1. Make sure that the page editor is in [**Edit** mode.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
 1. Open the [component browser.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)

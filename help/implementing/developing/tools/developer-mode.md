@@ -35,7 +35,7 @@ Developer mode is implemented as a side panel to the page editor. To open the pa
 
 The panel is divided into two tabs:
 
-* **[Components](#components)** - This shows a component tree, similar to the [content tree](/help/sites-cloud/authoring/page-editor/editor-side-pane.md#content-tree) for authors
+* **[Components](#components)** - This shows a component tree, similar to the [content tree](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#content-tree) for authors
 * **[Errors](#errors)** - When problems occur, details are shown for each component.
 
 ### Components Tab {#components}

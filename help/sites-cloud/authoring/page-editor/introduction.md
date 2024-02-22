@@ -31,7 +31,7 @@ The page toolbar offers access to context-appropriate functionality, dependent o
 
 #### Side Panel {#side-panel-button}
 
-This opens/closes the [side panel,](help/sites-cloud/authoring/page-editor/editor-side-pane.md) which holds the Asset Browser, Component Browser, and Content Tree.
+This opens/closes the [side panel,](help/sites-cloud/authoring/page-editor/editor-side-panel.md) which holds the Asset Browser, Component Browser, and Content Tree.
 
 ![Side Panel toggle](assets/page-editor-side-panel-toggle.png)
 
@@ -121,7 +121,7 @@ The side panel provides you access to three different tabs.
 
 ![The side panel of the page editor](assets/page-editor-side-panel.png)
 
-Please see the document [Page Editor Side Panel](/help/sites-cloud/authoring/page-editor/editor-side-pane.md) for more information.
+Please see the document [Page Editor Side Panel](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) for more information.
 
 ### Editor {#editor}
 
@@ -133,7 +133,7 @@ The editor is where you make changes directly to your page content. The page is 
 
 Now that you understand the page editor, you are ready to edit your content.
 
-Please see the document [Editing Content with the AEM Page Editor](help/sites-cloud/authoring/page-editor/edit-content.md) for more information.
+Please see the document [Editing Content with the AEM Page Editor](/help/sites-cloud/authoring/page-editor/edit-content.md) for more information.
 
 ## Status Notification {#status-notification}
 

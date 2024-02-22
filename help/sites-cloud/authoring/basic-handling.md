@@ -98,7 +98,7 @@ The header is always present at the top of the screen. While most options in the
 
   ![Help button](/help/sites-cloud/authoring/assets/help.png)
 
-* [Notifications](/help/sites-cloud/authoring/getting-started//help/sites-cloud/authoring/inbox.md) -   This icon is badged with the number of currently assigned incomplete notifications.
+* [Notifications](/help/sites-cloud/authoring/inbox.md) -   This icon is badged with the number of currently assigned incomplete notifications.
 
   ![Notifications button](/help/sites-cloud/authoring/assets/notifications.png)
   
