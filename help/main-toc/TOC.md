@@ -1001,6 +1001,7 @@ user-guide-title: AEM as a Cloud Service
       + [Page Diff](/help/implementing/developing/introduction/page-diff.md)
       + [Editor Limitations](/help/implementing/developing/introduction/editor-limitations.md)
       + [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md)
+      + [Responsive Design](/help/implementing/developing/introduction/responsive-design.md)
       + Components and Templates {#components-templates}
         + [Components Overview](/help/implementing/developing/components/overview.md)
         + [Templates](/help/implementing/developing/components/templates.md)
