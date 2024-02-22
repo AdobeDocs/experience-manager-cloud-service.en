@@ -85,7 +85,7 @@ Creating folders lets you:
 
   >[!NOTE]
   >
-  >You can use the [template editor](/help/sites-cloud/authoring/console/templates.md) to create your own template. 
+  >You can use the [template editor](/help/sites-cloud/authoring/sites-console/templates.md) to create your own template. 
 
 The WKND project structures some Experience Fragments according to `Contributors`. The structure used also illustrates how other features, such as Multi Site Management (including language copies), can be used. 
 
@@ -99,7 +99,7 @@ See:
 
 To create and configure a folder for your Experience Fragments it is recommended to:
 
-1. [Create a folder](/help/sites-cloud/authoring/console/organizing-pages.md#creating-a-new-folder).
+1. [Create a folder](/help/sites-cloud/authoring/sites-console/organizing-pages.md#creating-a-new-folder).
 
 1. [Configure the allowed Experience Fragment templates for that folder](#configure-allowed-templates-folder).
 
@@ -201,11 +201,11 @@ The Experience Fragment Editor offers you similar capabilities to the normal pag
 
 >[!NOTE]
 >
->See [Editing Page Content](/help/sites-cloud/authoring/editor/edit-content.md) for more information on how to use the page editor.
+>See [Editing Page Content](/help/sites-cloud/authoring/page-editor/edit-content.md) for more information on how to use the page editor.
 
 The following example procedure illustrates how to create a teaser for a product:
 
-1. Drag and drop the required component from the [Components Browser](/help/sites-cloud/authoring/editor/editor-site-panel.md#components-browser).
+1. Drag and drop the required component from the [Components Browser](/help/sites-cloud/authoring/page-editor/editor-site-panel.md#components-browser).
 
 1. Depending on the component:
    * Add any content and/or assets as required. 
@@ -390,7 +390,7 @@ Details of your fragment can be seen:
    >
    >These tabs are shown when you open **Properties** from the Experience Fragments console.
    >
-   >If you **Open Properties** when editing an Experience Fragment, the appropriate [Page Properties](/help/sites-cloud/authoring/console/page-properties.md) are shown.
+   >If you **Open Properties** when editing an Experience Fragment, the appropriate [Page Properties](/help/sites-cloud/authoring/sites-console/page-properties.md) are shown.
 
    ![Experience Fragment properties](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -424,9 +424,9 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 ## Publishing Experience Fragments {#publishing-experience-fragments}
 
-Publishing your Experience Fragment is basically the same as [publishing a page](/help/sites-cloud/authoring/console/publishing-pages.md) (though from the Experience Fragments console or editor). 
+Publishing your Experience Fragment is basically the same as [publishing a page](/help/sites-cloud/authoring/sites-console/publishing-pages.md) (though from the Experience Fragments console or editor). 
 
-Alternatively you can also [publish to Preview](/help/sites-cloud/authoring/console/previewing-content.md) (again from the Experience Fragments console or editor).
+Alternatively you can also [publish to Preview](/help/sites-cloud/authoring/sites-console/previewing-content.md) (again from the Experience Fragments console or editor).
 
 ## Exporting Experience Fragments {#exporting-experience-fragments}
 

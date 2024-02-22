@@ -60,10 +60,10 @@ The timeline can be used to view events that have affected the selected resource
 The **Timeline** side panel lets you view various events related to a selected item selectable as types from a drop-down list:
 
 * Comments
-* [Annotations](/help/sites-cloud/authoring/editor/annotations.md)
+* [Annotations](/help/sites-cloud/authoring/page-editor/annotations.md)
 * [Activities](/help/sites-cloud/authoring/personalization/activities.md)
 * [Launches](/help/sites-cloud/authoring/launches/overview.md)
-* [Versions](/help/sites-cloud/authoring/console/page-versions.md)
+* [Versions](/help/sites-cloud/authoring/sites-console/page-versions.md)
 * [Workflows](/help/sites-cloud/authoring/workflows/overview.md)
   * Note that no information will be shown for transient workflows as no history information is saved for these.<!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
 * Show All
@@ -72,7 +72,7 @@ In addition you can add/view comments about the selected item by using the **Com
 
 In the **Sites** console you can also access additional features via the ellipsis button next to the **Comment** field.
 
-* [Save a version](/help/sites-cloud/authoring/console/page-versions.md)
+* [Save a version](/help/sites-cloud/authoring/sites-console/page-versions.md)
 * [Start a workflow](/help/sites-cloud/authoring/workflows/applying.md)
 
 ![Sites console comment field](assets/sites-console-comment-ellipsis.png)

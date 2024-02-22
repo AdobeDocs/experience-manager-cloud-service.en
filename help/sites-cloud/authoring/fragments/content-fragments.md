@@ -75,8 +75,8 @@ The content fragments enable:
    >
    >For more information about further editing functionality see also:
    >
-   >* [Responsive Layout](/help/sites-cloud/authoring/console/responsive-layout.md)
-   >* [Editing Page Content](/help/sites-cloud/authoring/editor/edit-content.md)
+   >* [Responsive Layout](/help/sites-cloud/authoring/sites-console/responsive-layout.md)
+   >* [Editing Page Content](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 ### Selecting the Element or Variation {#selecting-the-element-or-variation}
 
@@ -124,8 +124,8 @@ This lets you add extra content [in-between (that is, in-between content)](/help
 
 For in-between content you can:
 
-* Add components from the [Components browser.](/help/sites-cloud/authoring/editor/editor-site-panel.md#components-browser)
-* Add assets from the [Assets browser.](/help/sites-cloud/authoring/editor/editor-site-panel.md#assets-browser)
+* Add components from the [Components browser.](/help/sites-cloud/authoring/page-editor/editor-site-panel.md#components-browser)
+* Add assets from the [Assets browser.](/help/sites-cloud/authoring/page-editor/editor-site-panel.md#assets-browser)
 * Use [Associated Content](#using-associated-content) as a source for in-between content.
 
 >[!CAUTION]

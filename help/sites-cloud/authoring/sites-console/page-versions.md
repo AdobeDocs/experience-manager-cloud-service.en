@@ -180,7 +180,7 @@ To compare a previous version with the current page:
 
    ![Compare versions](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Select **Compare to Current**. The [page diff](/help/sites-cloud/authoring/console/page-diff.md) opens and displays the differences.
+1. Select **Compare to Current**. The [page diff](/help/sites-cloud/authoring/sites-console/page-diff.md) opens and displays the differences.
 
 ## Timewarp {#timewarp}
 
@@ -201,7 +201,7 @@ To use this feature:
 
 ### Using Timewarp {#using-timewarp}
 
-Timewarp is a [mode](/help/sites-cloud/authoring/editor/page-editor.md#page-modes) of the page editor. To start it, simply switch it as you would any other mode.
+Timewarp is a [mode](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes) of the page editor. To start it, simply switch it as you would any other mode.
 
 1. Start the editor for the page where you want to start Timewarp and then select **Timewarp** in the mode selection.
 

@@ -6,7 +6,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 
 # Creating and Organizing Pages {#creating-and-organizing-pages}
 
-This document describes how to create and manage pages with Adobe Experience Manager Cloud Service so that you can then [create content](/help/sites-cloud/authoring/editor/edit-content.md) on those pages.
+This document describes how to create and manage pages with Adobe Experience Manager Cloud Service so that you can then [create content](/help/sites-cloud/authoring/page-editor/edit-content.md) on those pages.
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ AEM comes with several templates provided out-of-the-box. The templates availabl
 
 >[!TIP]
 >
->If configured on your instance, [template authors can create templates with the Template Editor](/help/sites-cloud/authoring/console/templates.md).
+>If configured on your instance, [template authors can create templates with the Template Editor](/help/sites-cloud/authoring/sites-console/templates.md).
 
 ### Components {#components}
 
@@ -159,7 +159,7 @@ Components are the elements provided by AEM so that you can add specific types o
 * Carousel
 * And many more
 
-Once you have created and opened a page you can [add content using the components](help/sites-cloud/authoring/editor/edit-content.md#inserting-a-component), which are available from the [component browser](/help/sites-cloud/authoring/editor/editor-site-panel.md#components-browser).
+Once you have created and opened a page you can [add content using the components](help/sites-cloud/authoring/page-editor/edit-content.md#inserting-a-component), which are available from the [component browser](/help/sites-cloud/authoring/page-editor/editor-site-panel.md#components-browser).
 
 >[!TIP]
 >
@@ -187,7 +187,7 @@ Unless all pages have been created for you in advance, you must create a page be
 
 1. From the final stage of the wizard you can either:
 
-    * Use the three tabs to enter the [page properties](/help/sites-cloud/authoring/console/page-properties.md) you want assigned to the new page, then select **Create** to actually create the page.
+    * Use the three tabs to enter the [page properties](/help/sites-cloud/authoring/sites-console/page-properties.md) you want assigned to the new page, then select **Create** to actually create the page.
 
     * Use **Back** to return to template selection.
 
@@ -242,7 +242,7 @@ After creating a page, or navigating to an existing page (in the console), you c
 
    ![Edit button](/help/sites-cloud/authoring/assets/edit.png)
 
-1. The page is opened and you can [edit the page](/help/sites-cloud/authoring/editor/edit-content.md) as required.
+1. The page is opened and you can [edit the page](/help/sites-cloud/authoring/page-editor/edit-content.md) as required.
 
 >[!NOTE]
 >
@@ -399,7 +399,7 @@ The status of asynchronous jobs can be checked in the [**Async Jobs Status** das
    ![Delete dialog](/help/sites-cloud/authoring/assets/delete-page.png)
 
     * **Do you want to archive pages before deletion?** - If checked, versions of the pages selected for deletion are created on deletion.
-      * [Versions can be restored at a later date](/help/sites-cloud/authoring/console/page-versions.md).
+      * [Versions can be restored at a later date](/help/sites-cloud/authoring/sites-console/page-versions.md).
       * Pages deleted without previous versions cannot be restored.
     * **Cancel** to abort the action
     * **Delete** to confirm the action:
@@ -413,7 +413,7 @@ The status of asynchronous jobs can be checked in the [**Async Jobs Status** das
 
 ### Locking a Page {#locking-a-page}
 
-You can [lock/unlock a page](/help/sites-cloud/authoring/editor/edit-content.md#locking-a-page) from either a console or when editing an individual page. Information about whether a page is locked is also shown in both locations.
+You can [lock/unlock a page](/help/sites-cloud/authoring/page-editor/edit-content.md#locking-a-page) from either a console or when editing an individual page. Information about whether a page is locked is also shown in both locations.
 
 ![Lock button](/help/sites-cloud/authoring/assets/lock.png)
 ![Unlock button](/help/sites-cloud/authoring/assets/unlock.png)

@@ -24,7 +24,7 @@ The properties are distributed across several tabs.
       * The new tag will then be shown with a small star on the right indicating that it is a new tag.
     * With the drop-down functionality you can select from existing tags.
     * An x appears when you mouse-over a tag entry in the selection box, which can be used to remove that tag for this page.
-    * For more information about tags, see [Using Tags](/help/sites-cloud/authoring/console/tags.md).
+    * For more information about tags, see [Using Tags](/help/sites-cloud/authoring/sites-console/tags.md).
   * **Hide in Navigation** - Indicates whether the page is shown or hidden in the page navigation of the resulting site.
 
 * **Branding**
@@ -60,7 +60,7 @@ The properties are distributed across several tabs.
 
   * **On Time** - The date and time at which the published page is made visible (rendered) on the publish environment. The page must be published, either manually or by pre-configured auto-replication.
 
-    * If already [published (manually)](/help/sites-cloud/authoring/console/publishing-pages.md) this page is kept dormant (hidden) until rendering at the specified time.
+    * If already [published (manually)](/help/sites-cloud/authoring/sites-console/publishing-pages.md) this page is kept dormant (hidden) until rendering at the specified time.
     * If not published, and configured for auto-replication, the page is automatically published, then rendered, at the specified time.
     * If not published, and not configured for auto-replication, the page is not automatically published, so a 404 is seen when an attempt to access the page is made.
   
@@ -98,7 +98,7 @@ The properties are distributed across several tabs.
   * **Alias** - Specifies an alias to be used with this page
     * For example, if you define an alias of `private` for the page `/content/wknd/us/en/magazine/members-only`, then this page can also be accessed via `/content/wknd/us/en/magazine/private`
     * Creating an alias sets the `sling:alias` property on the page node, which only impacts the resource, not the repository path.
-    * Pages accessed by aliases in the editor cannot be published. [Publish options](/help/sites-cloud/authoring/console/publishing-pages.md) in the editor are only available for pages accessed via their actual paths. 
+    * Pages accessed by aliases in the editor cannot be published. [Publish options](/help/sites-cloud/authoring/sites-console/publishing-pages.md) in the editor are only available for pages accessed via their actual paths. 
     * See [Localized page names under SEO and URL Management Best Practices](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuration**
@@ -109,7 +109,7 @@ The properties are distributed across several tabs.
 
 * **Template Settings**
 
-  * **Allowed Templates** - [Defines the list of templates that are available](/help/sites-cloud/authoring/console/templates.md#enabling-and-allowing-a-template-template-author) within this sub-branch
+  * **Allowed Templates** - [Defines the list of templates that are available](/help/sites-cloud/authoring/sites-console/templates.md#enabling-and-allowing-a-template-template-author) within this sub-branch
 
 * **Authentication Requirement**
 
@@ -231,7 +231,7 @@ Through a simple configuration, a content author can now enable progressive web 
 
 >[!NOTE]
 >
->See [Enabling Progressive Web App Features](/help/sites-cloud/authoring/console/enable-pwa.md).
+>See [Enabling Progressive Web App Features](/help/sites-cloud/authoring/sites-console/enable-pwa.md).
 
 * **Configure installable experience**
 
@@ -255,7 +255,7 @@ Through a simple configuration, a content author can now enable progressive web 
 ## Editing Page Properties {#editing-page-properties-1}
 
 * From the **Sites** console:
-  * [Creating a new page](/help/sites-cloud/authoring/console/organizing-pages.md#creating-a-new-page) (a subset of the properties)
+  * [Creating a new page](/help/sites-cloud/authoring/sites-console/organizing-pages.md#creating-a-new-page) (a subset of the properties)
   * Clicking or tapping **Properties**
     * For a single page
     * For multiple pages (only a subset of the properties are available for editing en masse)

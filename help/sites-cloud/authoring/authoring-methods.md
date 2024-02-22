@@ -29,7 +29,7 @@ This is the classic editor for authoring content in AEM, tried and trusted for t
 
 The AEM page editor presents an integrated environment for authoring your content using a what-you-see-is-what-you-get (WYSIWYG) interface. Drag-and-drop predefined components to build your page and edit content in-place.
 
-To learn more about the AEM page editor, please see the document [The AEM Page Editor.](/help/sites-cloud/authoring/editor/page-editor.md)
+To learn more about the AEM page editor, please see the document [The AEM Page Editor.](/help/sites-cloud/authoring/page-editor/introduction.md)
 
 ## AEM Content Fragment Editor {#cf-editor}
 

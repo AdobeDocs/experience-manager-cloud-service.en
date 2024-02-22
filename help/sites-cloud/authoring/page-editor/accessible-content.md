@@ -973,7 +973,7 @@ To meet this success criterion, the default language of a web page can be identi
 * Whereas a page to be rendered in Spanish should adopt the following standard:
   `<html lang = "es">`
 
-In AEM, the default language of your page is set when creating the page, but may also be changed when editing [Page Properties](/help/sites-cloud/authoring/console/page-properties.md).
+In AEM, the default language of your page is set when creating the page, but may also be changed when editing [Page Properties](/help/sites-cloud/authoring/sites-console/page-properties.md).
 
 >[!NOTE]
 >

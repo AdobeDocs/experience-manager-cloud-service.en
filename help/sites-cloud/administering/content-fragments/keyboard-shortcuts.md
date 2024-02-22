@@ -9,7 +9,7 @@ exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
 
 A selection of keyboard shortcuts are available for use in the Content Fragments console.
 
-Various keyboard shortcuts are available throughout AEM. Some apply when [editing pages](/help/sites-cloud/authoring/editor/keyboard-shortcuts.md), others to the [general use of consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Various keyboard shortcuts are available throughout AEM. Some apply when [editing pages](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), others to the [general use of consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Various keyboard shortcuts are available throughout AEM. Some apply when [editin
 |Select one, or more, Content Fragments|`u`|Open the unpublish now dialog|
 |Any open dialog|`esc`|Dialog is dismissed|
 
-Various keyboard shortcuts are also available for desktop users. Some apply when [editing pages](/help/sites-cloud/authoring/editor/keyboard-shortcuts.md), others to the general [use of consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Various keyboard shortcuts are also available for desktop users. Some apply when [editing pages](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), others to the general [use of consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 >[!NOTE]
 >

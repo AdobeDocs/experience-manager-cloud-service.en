@@ -76,7 +76,7 @@ Each user can set their own preferred properties.
 
   AEM supports various keyboard shortcuts that make authoring more efficient.
 
-  * [Keyboard shortcuts for editing pages](/help/sites-cloud/authoring/editor/keyboard-shortcuts.md)
+  * [Keyboard shortcuts for editing pages](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
   * [Keyboard shortcuts for consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
   This option enables keyboard shortcuts. By default they are enabled, but can be disabled, for example,  if a user has certain accessibility requirements.

@@ -5,7 +5,7 @@ exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
 ---
 # Components Overview {#components-overview}
 
-This page provides an overview of Adobe Experience Manager (AEM) components such as those [used for page authoring](/help/sites-cloud/authoring/editor/components.md).
+This page provides an overview of Adobe Experience Manager (AEM) components such as those [used for page authoring](/help/sites-cloud/authoring/page-editor/components.md).
 
 ## What are Components? {#what-are-components}
 

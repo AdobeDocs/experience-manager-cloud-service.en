@@ -15,9 +15,9 @@ Various keyboard shortcuts are available throughout AEM. Some apply when editing
 
 |Location|Shortcut|Description|
 |---|---|---|
-|Any edit window mode|`Ctrl-Shift-m`|Toggle between **Preview** and the currently selected [mode](/help/sites-cloud/authoring/editor/page-editor.md#mode-selector) (for example, **Edit**, **Layout**, and so on)*|
-|**Edit** mode|`Ctrl-z`|[Undo last change](/help/sites-cloud/authoring/editor/edit-content.md)|
-||`Ctrl-y`|[Redo last change](/help/sites-cloud/authoring/editor/edit-content.md#undoing-and-redoing-page-edits)|
+|Any edit window mode|`Ctrl-Shift-m`|Toggle between **Preview** and the currently selected [mode](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) (for example, **Edit**, **Layout**, and so on)*|
+|**Edit** mode|`Ctrl-z`|[Undo last change](/help/sites-cloud/authoring/page-editor/edit-content.md)|
+||`Ctrl-y`|[Redo last change](/help/sites-cloud/authoring/page-editor/edit-content.md#undoing-and-redoing-page-edits)|
 ||`Ctrl-Click`|Select multiple paragraphs|
 ||`Ctrl-c`|Copy selected paragraphs|
 ||`Ctrl-x`|Cut selected paragraphs, (cut paragraphs do not disappear in the user interface until it is pasted)|
