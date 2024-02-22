@@ -8,15 +8,25 @@ hidefromtoc: yes
 
 # AEM Forms Edge Delivery Service {#aem-forms-edge-delivery-service-overview}
 
-AEM Forms Edge Delivery Service is a composable service offered by Adobe that allows you to create and deliver high-impact, fast-performing web forms. This composable service seamlessly integrates with Adobe Experience Manager (AEM) to empower you to design, build, and deploy high-impact, lightning-fast web forms with an intuitive and efficient workflow.
-
-AEM Forms Edge Delivery Service helps you:
+AEM Forms Edge Delivery Service is a composable service offered by Adobe that allows you to create and deliver high-impact, fast-performing web forms. You can use the service to:
 
 * **Craft visually stunning forms**: Ditch the bland, cookie-cutter designs and captivate users with dynamic, modern forms that reflect your brand identity. Leverage pre-built components or create your own custom components to bring your vision to life quickly and easily.
 
 * **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
 
 * **Simplify authoring and submissions**: Create forms using familiar tools like Microsoft Excel or Google Sheets instead of the traditional authoring environments. Submit forms directly to your Microsoft Excel or Google Sheets and use their ecosystem to easily process submitted data.
+
+
+This composable service is decoupled from content source and offers the flexibility in content creation by allowing users to use their preferred authoring tools. 
+
+![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+
+Content creators can leverage tools they are comfortable with, such as Microsoft Excel or Google Sheets (Document based authoring), JSON Editors, or AEM Forms Adaptive Forms editor for WYSIWYG editing (AEM Forms projects), to design and create their forms.
+
+>[!NOTE]
+>
+>
+> WYSIWYG editing feature and Cross Walk ares available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
 
 ## Start with the basics 
 
@@ -41,7 +51,7 @@ AEM Forms Edge Delivery Service helps you:
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
             <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Create a form using eds forms" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Create a form</b>
+            <br><b style="margin-top: 5px;">Create a form using Google Sheets or Microsoft Excel</b>
         </a>
         <p>Create forms that load and render quickly and automatically reflows on mobile devices.</p>
     </div>
