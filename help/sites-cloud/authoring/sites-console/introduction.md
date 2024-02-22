@@ -70,7 +70,16 @@ The **Create** button allows you to add new pages to your site as well as create
 
 ![Create button](assets/sites-console-create.png)
 
-Once clicked, the options displayed are appropriate to the console/context.
+Once clicked, the options displayed are appropriate to the console/context. The most common are:
+
+* [Page](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+* [Site](/help/sites-cloud/administering/site-creation/create-site.md)
+* [Live Copy](/help/sites-cloud/administering/msm/overview.md)
+* [Launch](/help/sites-cloud/authoring/launches/overview.md)
+* [Language Copy](/help/sites-cloud/administering/translation/overview.md)
+* [CSV Report](/help/sites-cloud/authoring/sites-console/csv-export.md)
+
+See the links to these features for details on how they function.
 
 ## Views and Selecting Pages {#views}
 
@@ -210,41 +219,35 @@ Select the vertical selection bar and drag the item to a new position in the lis
 
 ## Actions Toolbar {#actions-toolbar}
 
-Whenever a resource is selected, various actions are indicated by icons with explanatory text in the toolbar. These actions are dependent on:
+Whenever a resource is selected, you can carry out various actions on the selected item. These actions are displayed in the actions toolbar.
 
-* The current context.
-* Whether you are in [selection mode.](#viewing-and-selecting-resources)
+![Actions toolbar](assets/introduction-actions-toolbar.png)
 
-The action available in the toolbar change to reflect the actions you can take on the specific items selected and how you [select a resource](#viewing-and-selecting-resources) depends on the view.
+The actions toolbar only appears when a resource is selected in the console. The action available in the actions toolbar change to reflect the actions you can take on the specific items selected. The most common actions are:
+
+* [Create](#create-action) - Create new content or content-related actions
+* [Edit](/help/sites-cloud/authoring/page-editor/introduction.md) - Edit the page
+* [Properties](/help/sites-cloud/authoring/sites-console/page-properties.md) - Opens the page properties window
+* [Lock](/help/sites-cloud/authoring/sites-console/organizing-pages.md#locking-a-page) - Lock a page to prevent others from changing it
+* [Copy](/help/sites-cloud/authoring/sites-console/organizing-pages.md#copying-and-pasting-a-page) - Copy a page
+* [Move](/help/sites-cloud/authoring/sites-console/organizing-pages.md#moving-or-renaming-a-page) - Move or rename a page
+* [Quick Publish](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publish a page or pages immediately
+* [Manage Publication](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Schedule a page or pages for publication
+* [Restore](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Restore a version of a page or page tree
+* [Delete](/help/sites-cloud/authoring/sites-console/organizing-pages.md#deleting-a-page) - Delete a page or pages
 
 Due to the space restrictions in some windows, the toolbar can quickly become longer than the space available. When this happens additional options appears. Clicking or tapping on the ellipsis (the three dots or **...**) opens a drop-down selector holding all remaining actions.
 
 ![Additional options](assets/sites-console-additional-options.png)
 
->[!NOTE]
->
->The individual icons available are documented in relation to the appropriate console/feature/scenario.
+### Create Action {#create-action}
 
-## Locking and Unlocking a Page {#locking-unlocking}
+The create action offers similar options to the create toolbar button for creating new pages and similar items.
 
-AEM lets you lock a page so that no one else can edit the contents. Locking is useful when you are making numerous edits to one specific page or when you need to freeze a page for a short while.
+In addition, it offers the ability to create page-related actions.
 
-1. Select the page with [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Select the lock icon.
-
-   ![Lock button](assets/sites-console-lock.png)
-
-Once locked, the lock icon in the console toolbar is updated to an unlock icon.
-
-Unlocking a page is very similar to locking the page. Once the page is locked, the lock options are replaced by unlock actions.
-
-![Unlock button](assets/sites-console-unlock.png)
-
->[!CAUTION]
->
->* Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked (by customers) using the user who was impersonated.
->* Pages cannot be unlocked by impersonating the user who locked the page.
->* If the user who locked the page is not available to unlock the page, contact Customer Support to evaluate options to remove the lock. 
+* [Workflow](/help/sites-cloud/authoring/workflows/overview.md) - Apply a workflow to a page
+* [Version](/help/sites-cloud/authoring/sites-console/page-versions.md) - Create a version of a page
 
 ## Templates
 
