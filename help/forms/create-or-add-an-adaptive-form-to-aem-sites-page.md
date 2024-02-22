@@ -255,7 +255,7 @@ On submission of a form, you can redirect the user to another webpage or a messa
 
 * [Create style or themes for your forms](using-themes-in-core-components.md)
 * [Add dynamic behavior to forms using the rule editor](rule-editor.md)
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/sites-console/responsive-layout.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 
 -->
 
@@ -263,6 +263,6 @@ On submission of a form, you can redirect the user to another webpage or a messa
 
 {{see-also}}
 * [Add dynamic behavior to forms using the rule editor](rule-editor.md)
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/sites-console/responsive-layout.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 
 

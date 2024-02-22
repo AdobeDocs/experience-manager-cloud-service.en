@@ -264,7 +264,7 @@ When a component has been unlocked you can define the [initial content](#editing
 
 #### Layout {#template-layout}
 
-With the [layout](#editing-a-template-layout-template-author) you can predefine the template layout for the required device formats. **Layout** mode for template authoring has the same functionality as the [**Layout** mode for page authoring](/help/sites-cloud/authoring/sites-console/responsive-layout.md#defining-layouts-layout-mode).
+With the [layout](#editing-a-template-layout-template-author) you can predefine the template layout for the required device formats. **Layout** mode for template authoring has the same functionality as the [**Layout** mode for page authoring](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode).
 
 #### Page Policies {#template-page-policies}
 
@@ -530,7 +530,7 @@ Although all content created in **Structure** mode is visible in **Initial Conte
 
 ### Editing a Template - Layout - Template Author {#editing-a-template-layout-template-author}
 
-You can define the template layout for a range of devices. [Responsive layout](/help/sites-cloud/authoring/sites-console/responsive-layout.md) for templates operates as it does for page authoring.
+You can define the template layout for a range of devices. [Responsive layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) for templates operates as it does for page authoring.
 
 >[!NOTE]
 >

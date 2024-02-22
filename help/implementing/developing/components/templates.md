@@ -447,7 +447,7 @@ Defines the initial content that a new page will have upon creation:
 
 ### Layout {#layout}
 
-When [editing a template you can define the layout](/help/sites-cloud/authoring/sites-console/templates.md), this uses [standard responsive layout](/help/sites-cloud/authoring/sites-console/responsive-layout.md).
+When [editing a template you can define the layout](/help/sites-cloud/authoring/sites-console/templates.md), this uses [standard responsive layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
 
 <!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
 

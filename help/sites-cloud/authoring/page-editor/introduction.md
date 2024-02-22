@@ -59,7 +59,7 @@ In addition, **Page Information** can provide access to analytics and recommenda
 
 #### Emulator {#emulator}
 
-This toggles the [emulator toolbar](/help/sites-cloud/authoring/sites-console/responsive-layout.md#selecting-a-device-to-emulate), which is used to emulate the look-and-feel of the page on another device. This is automatically enabled in layout mode.
+This toggles the [emulator toolbar](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate), which is used to emulate the look-and-feel of the page on another device. This is automatically enabled in layout mode.
 
 ![Emulator button](assets/page-editor-emulator.png)
 
@@ -84,7 +84,7 @@ The mode selector displays the current [mode](/help/sites-cloud/authoring/page-e
 There are various modes when editing a page allowing for different actions:
 
 * [Edit](/help/sites-cloud/authoring/page-editor/edit-content.md) - The mode to use when editing the page content
-* [Layout](/help/sites-cloud/authoring/sites-console/responsive-layout.md) - Lets you create and edit your responsive layout dependent on device (if the page is based on a layout container)
+* [Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) - Lets you create and edit your responsive layout dependent on device (if the page is based on a layout container)
 * [Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md) - Improves content relevance through targeting and measuring across all channels
 * [Timewarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) - View a pages state at a particular point in time
 * [Live Copy Status](/help/sites-cloud/authoring/page-editor/introduction.md#live-copy-status) - Allows a quick overview of the live copy status and which components are/are not inherited

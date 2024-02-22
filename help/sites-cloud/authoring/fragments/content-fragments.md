@@ -75,7 +75,7 @@ The content fragments enable:
    >
    >For more information about further editing functionality see also:
    >
-   >* [Responsive Layout](/help/sites-cloud/authoring/sites-console/responsive-layout.md)
+   >* [Responsive Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
    >* [Editing Page Content](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 ### Selecting the Element or Variation {#selecting-the-element-or-variation}
