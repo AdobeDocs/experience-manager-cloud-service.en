@@ -29,7 +29,7 @@ The page toolbar offers access to context-appropriate functionality, dependent o
 
 ![Page editor toolbar](assets/page-editor-toolbar.png)
 
-#### Side Panel {#side-panel}
+#### Side Panel {#side-panel-button}
 
 This opens/closes the [side panel,](help/sites-cloud/authoring/page-editor/editor-site-panel.md) which holds the Asset Browser, Component Browser, and Content Tree.
 

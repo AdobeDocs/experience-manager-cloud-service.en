@@ -7,7 +7,7 @@ description: Learn how to use the Sites console to manage and organize your AEM 
 
 Learn how to use the **Sites** console to manage and organize your AEM pages.
 
-## Orientation {#sites-console}
+## Orientation {#orientation}
 
 The **Sites** console allows you to view your page hierarchy. 
 
