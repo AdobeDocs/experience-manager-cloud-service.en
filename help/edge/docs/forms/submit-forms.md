@@ -1,12 +1,12 @@
 ---
-title: From Spreadsheets to Forms -  Mastering Form Block Field Validations
-description: Craft powerful forms faster using spreadsheets & Form Block Fields! This guide helps you build custom validations for EDS Forms Block fields. 
+title: Prepare your spreadsheet to accept data
+description: Craft powerful forms faster using spreadsheets & Form Block Fields! 
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
 ---
 
-# Enable your form to send data 
+# Prepare your spreadsheet to accept data 
 
 Once you've [created and previewed the form](/help/edge/docs/forms/create-forms.md), it's time to enable the corresponding spreadsheet to start receiving data. 
 
@@ -14,15 +14,15 @@ Once you've [created and previewed the form](/help/edge/docs/forms/create-forms.
 
 To enable the spreadsheet: 
 
-1. Open the spreadsheet that has your form and add a sheet to it and change the name of the sheet to `incoming`. 
+1. Open the spreadsheet that has your form and append a new sheet, renaming it to `incoming`.
 
     >[!WARNING] 
     >
-    > If the `incoming` sheet doesn't exist, AEM doesn't send any data to this workbook.
+    > If the `incoming` sheet is not present, AEM does not send any data to the spreadsheet.
 
-1. In the `incoming` sheet, mirror all the column headers to `Name` column (form field  names) in the `shared-default` sheet. 
+1. Mirror the form field names, values of the `Name` column in the`shared-default` sheet, to the headers in the `incoming` sheet. 
 
-    The following example displays headers for a "contact-us" form:
+    Each value in the `Name` column of the `shared-default` sheet, excluding the submit button, serve as a header in the `incoming` sheet. For instance, consider the following image illustrating headers for a "contact-us" form:
 
     ![Fields for a contact-us form](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
@@ -71,9 +71,9 @@ To use Admin APIs to enable a spreadsheet to accept data:
     >
     >Even if you have previewed the sheet before, you must preview it again after creating the `incoming` sheet for the first time.
 
-1. Send the POST request to generate the appropriate headers in the `incoming` sheet, and add the `shared-default` sheets to your spread sheet, if it does not exisit already.
+1. Send the POST request to generate the appropriate headers in the `incoming` sheet, and add the `shared-default` sheets to your spread sheet, if it does not exist already.
 
-    To understand how to format the POST request for setting up your sheet, refer to the [Admin API documentation](https://www.hlx.live/docs/admin.html#tag/form). You can look at the example provided below: 
+    To understand how to format the POST request for setting up your sheet, refer to the [Admin API documentation](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). You can look at the example provided below: 
 
     **Request** 
     
