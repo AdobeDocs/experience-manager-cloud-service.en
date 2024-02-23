@@ -17,8 +17,8 @@ These forms submit data directly to a Microsoft Excel or Google Sheets file, ena
 
 Before you start, ensure that you have completed the following steps:
 
-* Set up and clone your Edge Delivery Service (EDS) project. See [developer tutorial](https://www.aem.live/developer/tutorial) for details. The local folder of your Edge Delivery Service (EDS) project is reffered as `[EDS Project repository]` in this document. 
-* Clone the [Forms Block repository](https://github.com/adobe/afb). It contains the code to render the form on an EDS webpage. The local folder of your Forms Block repository is reffered as `[Forms Block repository]` in this document. 
+* Set up and clone your Edge Delivery Service (EDS) project. See [developer tutorial](https://www.aem.live/developer/tutorial) for details. In this document, the local folder of your Edge Delivery Service (EDS) project is referred as `[EDS Project repository]` . 
+* Clone the [Forms Block repository](https://github.com/adobe/afb). It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Forms Block repository]` in this document. 
 * Ensure that you have access to Google Sheets or Microsoft SharePoint.
 
 
@@ -36,7 +36,7 @@ AEM Forms Edge Delivery includes a Form block to help you easily create forms to
 
 1. Check in the `form` folder and underlying files to your Edge Delivery Service project on GitHub. 
 
-    The Form block is added to your EDS project repository on Github. Ensure that the Github build does not fails:
+    The Form block is added to your EDS project repository on GitHub. Ensure that the GitHub build does not fail:
 
     * If you encounter an error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", open the `[EDS Project]/blocks/forms/form.js` file. In the import statement, replace the `lib-franklin.js` file with the `aem.js` file.
     
