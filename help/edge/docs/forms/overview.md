@@ -21,12 +21,12 @@ This composable service is decoupled from content source and offers the flexibil
 
 ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-Content creators can leverage tools they are comfortable with, such as Microsoft Excel or Google Sheets (Document based authoring), JSON Editors, or AEM Forms Adaptive Forms editor for WYSIWYG editing (AEM Forms projects), to design and create their forms.
+Content creators can leverage tools they are comfortable with, such as Microsoft Excel or Google Sheets (Document based authoring), JSON files (Headless authoring), or AEM Forms Adaptive Forms editor (WYSIWYG authoring), to design and create their forms.
 
 >[!NOTE]
 >
 >
-> WYSIWYG editing feature and Cross Walk ares available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
+> WYSIWYG authoring capability is available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
 
 ## Start with the basics 
 
@@ -61,13 +61,12 @@ Content creators can leverage tools they are comfortable with, such as Microsoft
             <br><b style="margin-top: 5px;">Apply field validations</b>
         </a>
         <p>Reduce errors and frustration by checking form inputs for proper formatting.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/form-fragments.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Use Form Fragments in an EDS Form" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Create form fragments</b>
+    </div>    <div class="card-container">
+        <a href="/help/edge/docs/forms/style-theme-forms.md">
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Apply styles or themes to an eds form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Customize a theme</b>
         </a>
-        <p>Reuse preconfigured fragments across multiple forms.</p>
+        <p>Create a consistent brand image by applying the same theme across forms.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
@@ -77,11 +76,11 @@ Content creators can leverage tools they are comfortable with, such as Microsoft
         <p>Extend the reach of your forms while keeping costs in check.</p>
     </div>
     <div class="card-container">
-        <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Apply styles or themes to an eds form" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Customize a theme</b>
+        <a href="/help/edge/docs/forms/form-fragments.md">
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Use Form Fragments in an EDS Form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Create form fragments</b>
         </a>
-        <p>Create a consistent brand image by applying the same theme across forms.</p>
+        <p>Reuse preconfigured fragments across multiple forms.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  
