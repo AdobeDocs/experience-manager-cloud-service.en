@@ -241,7 +241,7 @@ If you are using [!DNL Experience Manager] as your WCM, use this publishing meth
 
 See also [Publish Dynamic Media assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-See also [Publish pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
+See also [Publish pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
 **To publish static Dynamic Media 3D assets:**
 
