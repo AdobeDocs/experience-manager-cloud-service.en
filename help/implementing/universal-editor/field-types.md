@@ -269,6 +269,41 @@ A container component type allows the grouping of components. It offers an addit
 
 ![Screenshot of container component type](assets/component-types/container.png)
 
+#### Content Fragment {#content-fragment}
+
+The AEM Content Fragment picker can be used to select a content fragment and its variations (if required). It offers an additional configuration.
+
+|Configuration|Value Type|Description|Required|
+|---|---|---|---|
+|`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
+
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
+
+```json
+[
+  {
+    "id": "aem-content-fragment",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "picker",
+        "label": "Content Fragment Picker",
+        "valueType": "string",
+        "variationName": "contentFragmentVariation"
+      }
+    ]
+  }
+]
+```
+
+>[!TAB Screenshot]
+
+![Screenshot of Content Fragment picker](assets/component-types/aem-content-fragment.png)
+
+>[!ENDTABS]
+
 #### Date Time {#date-time}
 
 A date time component type allows the specification of a date, time, or combination thereof. It offers additional configurations.
@@ -359,6 +394,42 @@ It also offers an additional validation type.
 ![Screenshot of date time component type](assets/component-types/date-time.png)
 
 >[!ENDTABS]
+
+#### Experience Fragment {#experience-fragment}
+
+The AEM Experience Fragment picker can be used to select an Experience Fragment and its variations (if required). It offers an additional configuration.
+
+|Configuration|Value Type|Description|Required|
+|---|---|---|---|
+|`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
+
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
+
+```json
+[
+  {
+    "id": "aem-experience-fragment",
+    "fields": [
+      {
+        "component": "aem-experience-fragment",
+        "name": "picker",
+        "label": "Experience Fragment Picker",
+        "valueType": "string",
+        "variationName": "experienceFragmentVariation"
+      }
+    ]
+  }
+]
+```
+
+>[!TAB Screenshot]
+
+![Screenshot of Experience Fragment picker](assets/component-types/aem-experience-fragment.png)
+
+>[!ENDTABS]
+
 
 #### Multiselect {#multiselect}
 
