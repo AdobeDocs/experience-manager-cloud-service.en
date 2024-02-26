@@ -11,13 +11,13 @@ Learn about the different events that the Universal Editor sends that you can us
 
 Applications can have different requirements for page or component updates. Therefore, the Universal Editor sends defined events to remote applications. In case the remote application has no custom event listener for the sent event, a [fallback event listener](#fallback-listeners) provided by the `universal-editor-cors` package is executed.
 
-All events are invoked on the affected DOM element of the remote page. Events will bubble up to the `BODY` element where the default event listener provided by the `universal-editor-cors` package is registered. There are events for the content and events for the UI.
+All events are invoked on the affected DOM element of the remote page. Events bubble up to the `BODY` element where the default event listener provided by the `universal-editor-cors` package is registered. There are events for the content and events for the UI.
 
 All events follow a naming convention.
 
 * `aue:<content-or-ui>-<event-name>`
 
-For example `aue:content-update` and `aue:ui-select`
+For example, `aue:content-update` and `aue:ui-select`
 
 Events include the request's and response's payload and are triggered once the corresponding call is successful. For further details about calls and examples of their payloads, please see the document [Universal Editor Calls.](/help/implementing/universal-editor/calls.md)
 
@@ -172,7 +172,7 @@ Response Payload
 
 ### aue:ui-publish {#ui-publish}
 
-The `aue:ui-publish` event is triggered when content is published (with invocation an the `BODY` level).
+The `aue:ui-publish` event is triggered when content is published (with invocation at the `BODY` level).
 
 The payload is a list of item IDs and their publication status.
 
