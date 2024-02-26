@@ -232,8 +232,6 @@ Folder structure to save data is `/folder_name/form_name/year/month/date/submiss
 
 ### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive Form:
