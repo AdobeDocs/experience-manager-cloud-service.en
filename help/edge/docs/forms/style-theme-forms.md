@@ -83,7 +83,7 @@ All form fields, except for dropdowns, radio groups, and checkbox groups, has th
 * Input: The `input` element defines the type of data to be entered. For example, text, number, email.
 * Description (Optional): The `div` with class `field-description` provides additional information or instructions for the user.
 
-**Example**
+**Example of HTML Stucture**
 
 ```HTML
 
@@ -98,7 +98,7 @@ All form fields, except for dropdowns, radio groups, and checkbox groups, has th
 
 ```
 
-#### CSS Selector for General Components
+**CSS Selector for General Components**
 
 ```CSS
 
@@ -124,7 +124,7 @@ All form fields, except for dropdowns, radio groups, and checkbox groups, has th
 * `.form-{Type}-wrapper`: Targets the outer `div` element based on the field type. For example, `.form-text-wrapper` targets all text input fields.
 * `.form-{Name}`: Further selects the element based on the specific field name. For example, `.form-first-name` targets the "First Name" text field.
 
-**Example:**
+**Example CSS selectors for General Components**
 
 ```CSS
 
@@ -167,7 +167,7 @@ For dropdown menus, the `select` element is used instead of an `input` element:
 
 ```
 
-**Example**
+**Example HTML Structure**
 
 ```HTML
 
@@ -183,7 +183,7 @@ For dropdown menus, the `select` element is used instead of an `input` element:
 
 ```
 
-#### CSS selectors for drop-down component
+#### Example CSS selectors for drop-down component
 
 ```CSS
 
@@ -282,111 +282,108 @@ Similar to dropdown components, radio and checkbox groups have their own HTML st
 
 ```
 
-#### CSS selectors for radio and checkbox groups
+**Example CSS selectors for radio and checkbox groups**
 
-**Targeting the Outer Wrapper**
-
-
-```CSS
-
-   /* Targets all radio group wrappers */
-.form-radio-group-wrapper {
-  margin-bottom: 20px; /* Adds space between radio groups */
-}
-
-/* Targets all checkbox group wrappers */
-.form-checkbox-group-wrapper {
-  margin-bottom: 20px; /* Adds space between checkbox groups */
-}
+* Targeting the Outer Wrapper: These selectors target the outermost containers of both radio and checkbox groups, allowing you to apply general styles to the entire group structure. This is useful for setting spacing, alignment, or other layout-related properties.
 
 
-```
-
-These selectors target the outermost containers of both radio and checkbox groups, allowing you to apply general styles to the entire group structure. This is useful for setting spacing, alignment, or other layout-related properties.
-
-**Targeting Group Labels**
-
-```CSS
-
-.form-radio-group-wrapper .field-label,
-.form-checkbox-group-wrapper .field-label {
- font-weight: bold; /* Makes the group label bold */
-}
-
-
-```
-
-This selector targets the `.field-label` element within both radio and checkbox group wrappers. This allows you to style the labels specifically for these groups, potentially making them stand out more.
-
-**Targeting Individual Inputs and Labels**
-
-```CSS
-
-/* Styling radio buttons */
-.form-radio-group-wrapper input[type="radio"] {
-  margin-right: 5px; /* Adds space between the input and its label */
-} 
-
-/* Styling radio button labels */
-.form-radio-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-
-/* Styling checkboxes */
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  margin-right: 5px;  /* Adds space between the input and its label */ 
-}
-
-/* Styling checkbox labels */
-.form-checkbox-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
+   ```CSS
+   
+      /* Targets all radio group wrappers */
+   .form-radio-group-wrapper {
+     margin-bottom: 20px; /* Adds space between radio groups */
+   }
+   
+   /* Targets all checkbox group wrappers */
+   .form-checkbox-group-wrapper {
+     margin-bottom: 20px; /* Adds space between checkbox groups */
+   }
+   
+   
+   ```
 
 
-```
+* Targeting Group Labels: This selector targets the `.field-label` element within both radio and checkbox group wrappers. This allows you to style the labels specifically for these groups, potentially making them stand out more.
 
-These selectors provide more granular control over individual radio buttons, checkboxes, and their associated labels. You can use these to adjust sizing, spacing, or apply more distinct visual styles.
+   ```CSS
+
+   .form-radio-group-wrapper .field-label,
+   .form-checkbox-group-wrapper .field-label {
+    font-weight: bold; /* Makes the group label bold */
+   }
 
 
-**Customizing the Appearance of Radio Buttons and Checkboxes**
-
-```CSS
-
-/* Hide the default radio button or checkbox */
-.form-radio-group-wrapper input[type="radio"],
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  opacity: 0; 
-  position: absolute; 
-}
-
-/* Create a custom radio button */
-.form-radio-group-wrapper input[type="radio"] + label::before { 
-  content: "";
-  display: inline-block;
-  width: 16px; 
-  height: 16px; 
-  border: 2px solid #ccc; 
-  border-radius: 50%;
-  margin-right: 5px;
-}
-
-.form-radio-group-wrapper input[type="radio"]:checked + label::before {
-  background-color: #007bff; 
-}
-
-/* Create a custom checkbox */
-/* Similar styling as above, with adjustments for a square shape */
+   ```
 
 
 
-```
+* Targeting Individual Inputs and Labels: These selectors provide more granular control over individual radio buttons, checkboxes, and their associated labels. You can use these to adjust sizing, spacing, or apply more distinct visual styles.
 
-This technique hides the default input and uses  :before and :after pseudo-elements to create custom visuals that change appearance based on the 'checked' state.
+   ```CSS
+
+   /* Styling radio buttons */
+   .form-radio-group-wrapper input[type="radio"] {
+     margin-right: 5px; /* Adds space between the input and its   label */
+   } 
+
+   /* Styling radio button labels */
+   .form-radio-group-wrapper label {
+     font-size: 15px; /* Changes the label font size */
+   }
+
+   /* Styling checkboxes */
+   .form-checkbox-group-wrapper input[type="checkbox"] {
+     margin-right: 5px;  /* Adds space between the input and its  label */ 
+   }
+
+   /* Styling checkbox labels */
+   .form-checkbox-group-wrapper label {
+     font-size: 15px; /* Changes the label font size */
+   }
 
 
-## Styling Fields
+   ```
 
-In addition to the general styling techniques covered earlier, you can also style form fields based on their specific type or individual names. This allows for more granular control and customization of your form's appearance.
+
+
+
+* Customizing the Appearance of Radio Buttons and Checkboxes: This technique hides the default input and uses  :before and :after pseudo-elements to create custom visuals that change appearance based on the 'checked' state.
+
+   ```CSS
+
+   /* Hide the default radio button or checkbox */
+   .form-radio-group-wrapper input[type="radio"],
+   .form-checkbox-group-wrapper input[type="checkbox"] {
+     opacity: 0; 
+     position: absolute; 
+   }
+
+   /* Create a custom radio button */
+   .form-radio-group-wrapper input[type="radio"] + label::before { 
+     content: "";
+     display: inline-block;
+     width: 16px; 
+     height: 16px; 
+     border: 2px solid #ccc; 
+     border-radius: 50%;
+     margin-right: 5px;
+   }
+
+   .form-radio-group-wrapper input[type="radio"]:checked +  label::before {
+     background-color: #007bff; 
+   }
+
+   /* Create a custom checkbox */
+   /* Similar styling as above, with adjustments for a square shape  */
+
+
+
+   ```
+
+
+## Styling components
+
+You can also style form fields based on their specific type or individual names. This allows for more granular control and customization of your form's appearance.
 
 ### Styling Based on Field Type
 
@@ -421,7 +418,7 @@ You can use CSS selectors to target specific field types and apply styles consis
 * The `data-required` attribute indicates whether the field is required or optional.
 * Each field has a corresponding label, input element, and potential additional elements like placeholders and descriptions.
 
-For example:
+**Example CSS Selectors**
 
 ```CSS
 
@@ -439,7 +436,7 @@ For example:
 
 ```
 
-### Styling Specific Field Types
+### Styling Based on Field name
 
 You can also target individual fields by name to apply unique styles. 
 
@@ -455,7 +452,7 @@ You can also target individual fields by name to apply unique styles.
 
 ```
 
-**CSS Selector**
+**Example CSS Selector**
 
 ```CSS
 
@@ -466,6 +463,6 @@ You can also target individual fields by name to apply unique styles.
 
 ```
 
-* Selector: This CSS targets all input elements that are located within an element that has the class `form-otp`. Your HTML structure follows conventions of the Form Block, this implies there's a container marked with the class "form-otp" holds the field with the name "otp".
+This CSS targets all input elements that are located within an element that has the class `form-otp`. Your form's HTML structure follows conventions of the Form Block, this implies there's a container marked with the class "form-otp" holds the field with the name "otp".
 
-* Property and Value: The code applies `letter-spacing: 2px`. This CSS property controls the spacing between individual letters within the text content of the input field.
+
