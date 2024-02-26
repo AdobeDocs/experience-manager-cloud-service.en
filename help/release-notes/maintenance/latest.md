@@ -7,18 +7,18 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 14813 {#release-14813}
+## Release 15262 {#release-15262}
 
-Summarized below are the continuous improvements for maintenance release 14813, which was publicly released on January 11, 2023. The previous maintenance release was release 14697.
+Summarized below are the continuous improvements for maintenance release 15262, which was publicly released on February 28, 2023. The previous maintenance release was release 14697.
 
 2024.1.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-14813}
+### Enhancements {#enhancements-15262}
 
 * ASSETS-32101: Metadata for smart crop renditions should be updated in DB.
 * ASSETS-31297: Improve checks to prevent deletion of copied assets from dynamic media.
 
-### Fixed Issues {#fixed-issues-14813}
+### Fixed Issues {#fixed-issues-15262}
 
 * ASSETS-32679: Add cache-killer to rendition URLs when previewing content.
 * ASSETS-32755: configure ordered queue for asset move events.
@@ -39,11 +39,11 @@ Summarized below are the continuous improvements for maintenance release 14813, 
 * ASSETS-31297: Prevent deletion of copied assets from dynamic media.
 * GRANITE-49031: Regression resulting in `@JsonIgnore` annotation being ignored on transient fields.
 
-### Known Issues {#known-issues-14813}
+### Known Issues {#known-issues-15262}
 
 None.
 
-### Change Notice {#change-notice-14813}
+### Change Notice {#change-notice-15262}
 
 **Action Required**
 
@@ -59,11 +59,11 @@ Make sure that your dependency in `it.tests/pom.xml` has been updated.
 </dependency>
 ```
 
-This change will be required after March 21, 2024.
+This change will be required after April 6, 2024.
 
 Failing to update the dependency library will result in pipeline failures at the "Custom Functional Testing" step.
 
-### Embedded Technologies {#embedded-tech-14813}
+### Embedded Technologies {#embedded-tech-15262}
 
 |Technology|Version|Link|
 |---|---|---|
