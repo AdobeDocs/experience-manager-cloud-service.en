@@ -42,15 +42,15 @@ See [Changing Live Copy Content](/help/sites-cloud/administering/msm/creating-li
 
 To track the changes you have made, you can view the launch in **References** and compare the launch page with its source page:
 
-1. In the **Sites** console, [navigate to the source pages of your launch and select one](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Open the **[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** panel and select **Launches**.
+1. In the **Sites** console, [navigate to the source pages of your launch and select one](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Open the **[References](/help/sites-cloud/authoring/basic-handling.md#references)** panel and select **Launches**.
 1. Select your specific launch then **Compare to Source**:
 
    ![Comparing launch to source](/help/sites-cloud/authoring/assets/launches-compare.png)
 
 1. The two pages (launch and source) are opened side-by-side.
 
-   For full information about using this feature see [Page Diff](/help/sites-cloud/authoring/features/page-diff.md).
+   For full information about using this feature see [Page Diff](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Changing the Source Pages Used {#changing-the-source-pages-used}
 

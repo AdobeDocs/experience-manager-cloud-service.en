@@ -54,7 +54,7 @@ To add new pages to your launch:
 
 1. [Navigate to the required location in your launch](#navigate-structure-of-launch).
 
-1. Select **Create** to [create a page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) as usual.
+1. Select **Create** to [create a page](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) as usual.
 
 ## Remove Pages from Your Launch {#remove-pages-from-launch}
 
@@ -62,4 +62,4 @@ To remove pages from your launch:
 
 1. [Navigate to the required location in your launch](#navigate-structure-of-launch).
 
-1. Select **Delete** to [delete a page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page) as usual.
+1. Select **Delete** to [delete a page](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) as usual.

@@ -1,0 +1,37 @@
+---
+title: From Spreadsheets to Forms - Mastering Form Block Field Properties
+description: Craft powerful forms faster using spreadsheets & Form Block Field Properties! This guide lists all the properties supported by EDS Forms Block. 
+feature: Edge Delivery Services
+hide: yes
+hidefromtoc: yes
+---
+
+# Form Block Field Properties
+
+Each form field is represented as a dedicated row in the spreadsheet, analogous to fields in a database table. The column headers act as labels for the various properties supported by the form field block.
+
+Think of your form as a table in a spreadsheet, where each line represents a different question or piece of information you want to collect. The table headings tell you what kind of answers you can expect for each section.
+
+The below table lists all the properties that are supported by the Form Block.
+
+**Master Your Forms with These Form Block Field Properties:**
+
+This table details all the properties you can use to customize your Form Block fields:
+
+| Property | Description | Example |
+|---|---|---|
+| **Type** | [HTML input type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) (text, email, number, etc.), [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), [select](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select), [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) | `text`, `email`, `radio`, `select` |
+| **Name** | This defines the unique identifier for submitted data (e.g., 'email' for an email address field).  Choose a clear and unique name for each field, as the name serves as internal field identifier used for data mapping during submission. | `user_name`, `email_address` |
+| **Label** | User-friendly field label | `"Full Name"`, `"Choose your country"` |
+| **Value** | Default value displayed | `"John Doe"`, `"United States"` |
+| **Placeholder** | Hint text within the field | `"Enter your email address"` |
+| **Description** | Help text for users | `"Please enter a valid email address"` |
+| **Visible** | Show/hide the field initially | `true`, `false` |
+| **Mandatory** | Require a value from the user | `true`, `false` |
+| **Min/Max** | Set minimum/maximum values (number, date, text length) | `18` (age), `2025-12-31` (date) |
+| **Accept** | Allowed file types for file upload | `"image/jpeg,image/png"` |
+| **Multiple** | Allow multiple file selections | `true`, `false` |
+| **Options** | Comma-separated list for dropdown menus | `"Option 1, Option 2, Option 3"` |
+| **Checked** | Default-selected radio button/checkbox | `true`, `false` |
+| **Fieldset** | Group fields together | Fieldset name (e.g., `"Personal Information"`) |
+
