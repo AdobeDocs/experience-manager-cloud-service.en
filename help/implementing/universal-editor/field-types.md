@@ -271,7 +271,7 @@ A container component type allows the grouping of components. It offers an addit
 
 #### Content Fragment {#content-fragment}
 
-The AEM Content Fragment picker can be used to select a content fragment and its variations (if required). It offers an additional configuration.
+The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) and its variations (if required). It offers an additional configuration.
 
 |Configuration|Value Type|Description|Required|
 |---|---|---|---|
@@ -397,7 +397,7 @@ It also offers an additional validation type.
 
 #### Experience Fragment {#experience-fragment}
 
-The AEM Experience Fragment picker can be used to select an Experience Fragment and its variations (if required). It offers an additional configuration.
+The Experience Fragment picker can be used to select an [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) and its variations (if required). It offers an additional configuration.
 
 |Configuration|Value Type|Description|Required|
 |---|---|---|---|
