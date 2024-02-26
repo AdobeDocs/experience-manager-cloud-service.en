@@ -36,7 +36,9 @@ Its payload includes details of what to write back to the JCR.
 * `type`: The JCR value type of the property being updated
 * `value`: The updated data
 
-### Sample Payload {#update-payload}
+>[!BEGINTABS]
+
+>[!TAB Sample Payload]
 
 ```json
 {
@@ -56,7 +58,7 @@ Its payload includes details of what to write back to the JCR.
 }
 ```
 
-### Sample Response {#update-response}
+>[!TAB Sample Response]
 
 ```json
 {
@@ -70,6 +72,8 @@ Its payload includes details of what to write back to the JCR.
 }
 ```
 
+>[!ENDTABS]
+
 ## Details {#details}
 
 A `details` call occurs when loading your app in the Universal Editor to retrieve the app's content.
@@ -79,7 +83,9 @@ Its payload includes the data to be rendered as well as details of what the data
 * For a component, the Universal Editor only retrieves a `data` object, since the schema of the data is defined in the app.
 * For Content Fragments, the Universal Editor also retrieves a `schema` object since the Content Fragment Model is defined in the JCR.
 
-### Sample Payload {#details-payload}
+>[!BEGINTABS]
+
+>[!TAB Sample Payload]
 
 ```json
 {
@@ -98,7 +104,7 @@ Its payload includes the data to be rendered as well as details of what the data
 }
 ```
 
-### Sample Response {#details-response}
+>[!TAB Sample Response]
 
 ```json
 {
@@ -130,6 +136,8 @@ Its payload includes the data to be rendered as well as details of what the data
 }
 ```
 
+>[!ENDTABS]
+
 ## Add {#add}
 
 An `add` call occurs when you place a new component in your app using the Universal Editor.
@@ -138,7 +146,9 @@ Its payload includes a `path` object containing where the content should be adde
 
 It also includes a `content` object with additional objects for endpoint-specific details of the content to be stored [for each plugin.](/help/implementing/universal-editor/architecture.md) For example if your app is based on content from AEM and Magento, the payload would contain a data object for each system.
 
-### Sample Payload {#add-payload}
+>[!BEGINTABS]
+
+>[!TAB Sample Payload]
 
 ```json
 {
@@ -170,7 +180,7 @@ It also includes a `content` object with additional objects for endpoint-specifi
 }
 ```
 
-### Sample Response {#add-response}
+>[!TAB Sample Response]
 
 ```json
 {
@@ -184,13 +194,17 @@ It also includes a `content` object with additional objects for endpoint-specifi
 }
 ```
 
+>[!ENDTABS]
+
 ## Move {#move}
 
 A `move` call occurs when you move a component within your app using the Universal Editor.
 
 Its payload includes a `from` object defining where the component was and a `to` object defining where it was moved.
 
-### Sample Payload {#move-payload}
+>[!BEGINTABS]
+
+>[!TAB Sample Payload]
 
 ```json
 {
@@ -223,7 +237,7 @@ Its payload includes a `from` object defining where the component was and a `to`
 }
 ```
 
-### Sample Response {#move-response}
+>[!TAB Sample Response]
 
 ```json
 {
@@ -236,13 +250,17 @@ Its payload includes a `from` object defining where the component was and a `to`
 }
 ```
 
+>[!ENDTABS]
+
 ## Remove {#remove}
 
 A `remove` call occurs when you delete a component within your app using the Universal Editor.
 
 Its payload includes the path of the object that is removed.
 
-### Sample Payload {#remove-payload}
+>[!BEGINTABS]
+
+>[!TAB Sample Payload]
 
 ```json
 {
@@ -268,7 +286,7 @@ Its payload includes the path of the object that is removed.
 }
 ```
 
-### Sample Response {#remove-response}
+>[!TAB Sample Response]
 
 ```json
 {
@@ -282,13 +300,17 @@ Its payload includes the path of the object that is removed.
 }
 ```
 
+>[!ENDTABS]
+
 ## Publish {#publish}
 
 A `publish` call occurs when you click the **Publish** button in the Universal Editor to publish the content that you have edited.
 
 The Universal Editor iterates over the content and generates a list of references that must also be published.
 
-### Sample Payload {#publish-payload}
+>[!BEGINTABS]
+
+>[!TAB Sample Payload]
 
 ```json
 {
@@ -328,7 +350,7 @@ The Universal Editor iterates over the content and generates a list of reference
 }
 ```
 
-### Sample Response {#publish-response}
+>[!TAB Sample Response]
 
 ```json
 {
@@ -351,6 +373,8 @@ The Universal Editor iterates over the content and generates a list of reference
   ]
 }
 ```
+
+>[!ENDTABS]
 
 ## Additional Resources {#additional-resources}
 
