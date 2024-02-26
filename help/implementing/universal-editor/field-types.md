@@ -88,7 +88,9 @@ The following are the component types that are possible to use for rendering fie
 
 An AEM tag component type enables an AEM tag picker, which can be used to attach tags to the component.
 
-##### Sample {#sample-aem-tag}
+>[!BEGINTABS]
+
+>[!TAB Sample]
 
 ```json
 {
@@ -104,15 +106,19 @@ An AEM tag component type enables an AEM tag picker, which can be used to attach
 }
 ```
 
-##### Screenshot {#screenshot-aem-tag}
+>[!TAB Screenshot]
 
 ![Screenshot of AEM tag component type](assets/component-types/aem-tag-picker.png)
+
+>[!ENDTABS]
 
 #### AEM Content {#aem-content}
 
 An AEM content component type type enables an AEM content picker, which can be used to set content references.
 
-##### Sample {#sample-aem-content}
+>[!BEGINTABS]
+
+>[!TAB Sample]
 
 ```json
 {
@@ -129,9 +135,11 @@ An AEM content component type type enables an AEM content picker, which can be u
 }
 ```
 
-##### Screenshot {#screenshot-aem-content}
+>[!TAB Screenshot]
 
 ![Screenshot of AEM content component type](assets/component-types/aem-content-picker.png)
+
+>[!ENDTABS]
 
 #### Boolean {#boolean}
 
@@ -141,7 +149,9 @@ A boolean component type stores a simple true/false value rendered as a toggle. 
 |---|---|---|---|
 |`customErrorMsg`|`string`|Message that will display if the value entered isn't a boolean value|No|
 
-##### Sample {#sample-boolean}
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
 
 ```json
 {
@@ -156,6 +166,8 @@ A boolean component type stores a simple true/false value rendered as a toggle. 
   ]
 }
 ```
+
+>[!TAB Sample 2]
 
 ```json
 {
@@ -174,15 +186,19 @@ A boolean component type stores a simple true/false value rendered as a toggle. 
 }
 ```
 
-##### Screenshot {#screenshot-boolean}
+>[!TAB Screenshot]
 
 ![Screenshot of boolean component type](assets/component-types/boolean.png)
+
+>[!ENDTABS]
 
 #### Checkbox Group {#checkbox-group}
 
 Similar to a boolean, a checkbox group component type allows for the selection of multiple true/false items, rendered as multiple checkboxes.
 
-##### Sample {#sample-checkbox-group}
+>[!BEGINTABS]
+
+>[!TAB Sample]
 
 ```json
 {
@@ -202,9 +218,11 @@ Similar to a boolean, a checkbox group component type allows for the selection o
 }
 ```
 
-#### Screenshot {#screenshot-checkbox-group}
+>[!TAB Screenshot]
 
 ![Screenshot of checkbox group component type](assets/component-types/checkbox-group.png)
+
+>[!ENDTABS]
 
 #### Container {#container}
 
@@ -214,7 +232,9 @@ A container component type allows the grouping of components. It offers an addit
 |---|---|---|---|
 |`collapsible`|`boolean`|Is the container collapsible|No|
 
-##### Sample {#sample-container}
+>[!BEGINTABS]
+
+>[!TAB Sample]
 
 ```json
  {
@@ -245,9 +265,44 @@ A container component type allows the grouping of components. It offers an addit
 }
 ```
 
-##### Screenshot {#screenshot-container}
+>[!TAB Screenshot]
 
 ![Screenshot of container component type](assets/component-types/container.png)
+
+#### Content Fragment {#content-fragment}
+
+The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) and its variations (if required). It offers an additional configuration.
+
+|Configuration|Value Type|Description|Required|
+|---|---|---|---|
+|`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
+
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
+
+```json
+[
+  {
+    "id": "aem-content-fragment",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "picker",
+        "label": "Content Fragment Picker",
+        "valueType": "string",
+        "variationName": "contentFragmentVariation"
+      }
+    ]
+  }
+]
+```
+
+>[!TAB Screenshot]
+
+![Screenshot of Content Fragment picker](assets/component-types/aem-content-fragment.png)
+
+>[!ENDTABS]
 
 #### Date Time {#date-time}
 
@@ -264,7 +319,9 @@ It also offers an additional validation type.
 |---|---|---|---|
 |`customErrorMsg`|`string`|Message that will display if `valueFormat` isn't met|No|
 
-##### Sample {#sample-date-time}
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
 
 ```json
 {
@@ -279,6 +336,8 @@ It also offers an additional validation type.
   ]
 }
 ```
+
+>[!TAB Sample 2]
 
 ```json
 {
@@ -330,15 +389,55 @@ It also offers an additional validation type.
 }
 ```
 
-##### Screenshot {#screenshot-date-time}
+>[!TAB Screenshot]
 
 ![Screenshot of date time component type](assets/component-types/date-time.png)
+
+>[!ENDTABS]
+
+#### Experience Fragment {#experience-fragment}
+
+The Experience Fragment picker can be used to select an [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) and its variations (if required). It offers an additional configuration.
+
+|Configuration|Value Type|Description|Required|
+|---|---|---|---|
+|`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
+
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
+
+```json
+[
+  {
+    "id": "aem-experience-fragment",
+    "fields": [
+      {
+        "component": "aem-experience-fragment",
+        "name": "picker",
+        "label": "Experience Fragment Picker",
+        "valueType": "string",
+        "variationName": "experienceFragmentVariation"
+      }
+    ]
+  }
+]
+```
+
+>[!TAB Screenshot]
+
+![Screenshot of Experience Fragment picker](assets/component-types/aem-experience-fragment.png)
+
+>[!ENDTABS]
+
 
 #### Multiselect {#multiselect}
 
 A multiselect component type presents multiple items for selection in a drop-down including the ability to group the selectable elements.
 
-##### Samples {#sample-multiselect}
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
 
 ```json
 {
@@ -357,6 +456,8 @@ A multiselect component type presents multiple items for selection in a drop-dow
   ]
 }
 ```
+
+>[!TAB Sample 2]
 
 ```json
 {
@@ -391,10 +492,12 @@ A multiselect component type presents multiple items for selection in a drop-dow
 }
 ```
 
-##### Screenshots {#screenshot-multiselect}
+>[!TAB Screenshots]
 
 ![Screenshot of multiselect component type](assets/component-types/multiselect.png)
 ![Screenshot of multiselect component type with grouping](assets/component-types/multiselect-group.png)
+
+>[!ENDTABS]
 
 #### Number {#number}
 
@@ -406,7 +509,9 @@ A number component type allows for the input of a number. It offers additional v
 |`numberMax`|`number`|Maximum number allowed|No|
 |`customErrorMsg`|`string`|Message that will display if `numberMin` or `numberMax` isn't met|No|
 
-##### Sample {#sample-number}
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
 
 ```json
 {
@@ -422,6 +527,8 @@ A number component type allows for the input of a number. It offers additional v
   ]
 }
 ```
+
+>[!TAB Sample 2]
 
 ```json
 {
@@ -445,15 +552,19 @@ A number component type allows for the input of a number. It offers additional v
 }
 ```
 
-##### Screenshot {#screenshot-number}
+>[!TAB Screenshot]
 
 ![Screenshot of number component type](assets/component-types/number.png)
+
+>[!ENDTABS]
 
 #### Radio Group {#radio-group}
 
 A radio group component type allows for a mutually-exclusive selection from multiple options rendered as a group similar to a checkbox group.
 
-##### Sample {#sample-radio-group}
+>[!BEGINTABS]
+
+>[!TAB Sample]
 
 ```json
 {
@@ -473,15 +584,19 @@ A radio group component type allows for a mutually-exclusive selection from mult
 }
 ```
 
-##### Screenshot {#screenshot-radio-group}
+>[!TAB Screenshot]
 
 ![Screenshot of radio group component type](assets/component-types/radio.png)
+
+>[!ENDTABS]
 
 #### Reference {#reference}
 
 A reference component type allows for a reference to another data object from the current object.
 
-##### Sample {#sample-reference}
+>[!BEGINTABS]
+
+>[!TAB Sample]
 
 ```json
 {
@@ -497,15 +612,19 @@ A reference component type allows for a reference to another data object from th
 }
 ```
 
-##### Screenshot {#screenshot-reference}
+>[!TAB Screenshot]
 
 ![Screenshot of reference component type](assets/component-types/reference.png)
+
+>[!ENDTABS]
 
 #### Select {#select}
 
 A select component type allows for selection of a single option from a list of predefined options in a drop-down menu.
 
-##### Sample {#sample-select}
+>[!BEGINTABS]
+
+>[!TAB Sample]
 
 ```json
 {
@@ -525,9 +644,11 @@ A select component type allows for selection of a single option from a list of p
 }
 ```
 
-##### Screenshot {#screenshot-select}
+>[!TAB Screenshot]
 
 ![Screenshot of select component type](assets/component-types/select.png)
+
+>[!ENDTABS]
 
 #### Tab {#tab}
 
@@ -537,7 +658,9 @@ A `tab` definition can be thought of as a separator in the array of `fields`. Ev
 
 If you wish to have items that appear above all tabs, they must be defined before any tabs.
 
-##### Sample {#sample-tab}
+>[!BEGINTABS]
+
+>[!TAB Sample]
 
 ```json
 {
@@ -569,9 +692,11 @@ If you wish to have items that appear above all tabs, they must be defined befor
 }
 ```
 
-##### Screenshot {#screenshot-tab}
+>[!TAB Screenshot]
 
 ![Screenshot of tab component type](assets/component-types/tab.png)
+
+>[!ENDTABS]
 
 #### Text Area {#text-area}
 
@@ -582,7 +707,9 @@ A text area allows for multi-line, rich text input. It offers additional validat
 |`maxSize`|`number`|Maximum number characters allowed|No|
 |`customErrorMsg`|`string`|Message that will display if `maxSize` is exceeded|No|
 
-##### Sample {#sample-text-area}
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
 
 ```json
 {
@@ -597,6 +724,8 @@ A text area allows for multi-line, rich text input. It offers additional validat
   ]
 }
 ```
+
+>[!TAB Sample 2]
 
 ```json
 {
@@ -616,9 +745,11 @@ A text area allows for multi-line, rich text input. It offers additional validat
 }
 ```
 
-##### Screenshot {#screenshot-text-area}
+>[!TAB Screenshot]
 
 ![Screenshot of text area component type](assets/component-types/richtext.png)
+
+>[!ENDTABS]
 
 #### Text Input {#text-input}
 
@@ -631,7 +762,9 @@ A text input allows for a single line of text input.  It includes additional val
 |`regExp`|`string`|Regular expression which the input text must match|No|
 |`customErrorMsg`|`string`|Message that will display if `minLength`, `maxLength`, and/or `regExp` is/are violated|No|
 
-##### Sample {#sample-text-input}
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
 
 ```json
 {
@@ -646,6 +779,8 @@ A text input allows for a single line of text input.  It includes additional val
   ]
 }
 ```
+
+>[!TAB Sample 2]
 
 ```json
 {
@@ -669,6 +804,8 @@ A text input allows for a single line of text input.  It includes additional val
 }
 ```
 
-##### Screenshot {#screenshot-text-input}
+>[!TAB Screenshot]
 
 ![Screenshot of text input component type](assets/component-types/simpletext.png)
+
+>[!ENDTABS]
