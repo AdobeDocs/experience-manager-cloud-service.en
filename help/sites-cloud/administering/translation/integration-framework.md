@@ -63,7 +63,7 @@ After you configure a translation integration framework, you can [associate it w
 
 A single configuration of the framework controls how page content and assets are translated. To create a translation configuration:
 
-1. In the [global navigation menu,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) select **Tools &gt; Cloud Services &amp; Translation Cloud Services**.
+1. In the [global navigation menu,](/help/sites-cloud/authoring/basic-handling.md#global-navigation) select **Tools &gt; Cloud Services &amp; Translation Cloud Services**.
 1. Navigate to where you want to create the configuration in your content structure. This is often based on a particular site or can be global.
 1. Provide the following information in the fields and then select **Create**.:
    1. Select **Configuration Type** in the drop-down.
