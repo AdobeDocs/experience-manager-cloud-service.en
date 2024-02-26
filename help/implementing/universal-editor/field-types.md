@@ -84,6 +84,23 @@ A field object has the following type definition.
 
 The following are the component types that are possible to use for rendering fields.
 
+|Description|Component Type|
+|---|---|
+|[AEM Tag](#aem-tag)|`aem-tag`|
+|[AEM Content](#aem-content)|`aem-content`|
+|[Boolean](#boolean)|`boolean`|
+|[Checkbox Group](#checkbox-group)|`checkbox-group`|
+|[Container](#container)|`container`|
+|[Date Time](#date-time)|`date-time`|
+|[Multiselect](#multiselect)|`multiselect`|
+|[Number](#number)|`number`|
+|[Radio Group](#radio-group)|`radio-group`|
+|[Reference](#reference)|`reference`|
+|[Rich Text](#rich-text)|`rich-text`|
+|[Select](#select)|`select`|
+|[Tab](#tab)|`tab`|
+|[Text](#text)|`text`|
+
 #### AEM Tag {#aem-tag}
 
 An AEM tag component type enables an AEM tag picker, which can be used to attach tags to the component.
@@ -618,6 +635,59 @@ A reference component type allows for a reference to another data object from th
 
 >[!ENDTABS]
 
+#### Rich Text {#rich-text}
+
+Rich text allows for multi-line, rich text input. It offers additional validation types.
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`maxSize`|`number`|Maximum number characters allowed|No|
+|`customErrorMsg`|`string`|Message that will display if `maxSize` is exceeded|No|
+
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
+
+```json
+{
+  "id": "richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB Sample 2]
+
+```json
+{
+  "id": "another-richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string",
+      "validation": {
+        "maxSize": 1000,
+        "customErrorMsg": "That's about as funny as a screen door on a battleship."
+      }
+    }
+  ]
+}
+```
+
+>[!TAB Screenshot]
+
+![Screenshot of text area component type](assets/component-types/richtext.png)
+
+>[!ENDTABS]
+
 #### Select {#select}
 
 A select component type allows for selection of a single option from a list of predefined options in a drop-down menu.
@@ -698,62 +768,9 @@ If you wish to have items that appear above all tabs, they must be defined befor
 
 >[!ENDTABS]
 
-#### Text Area {#text-area}
+#### Text {#text}
 
-A text area allows for multi-line, rich text input. It offers additional validation types.
-
-|Validation Type|Value Type|Description|Required|
-|---|---|---|---|
-|`maxSize`|`number`|Maximum number characters allowed|No|
-|`customErrorMsg`|`string`|Message that will display if `maxSize` is exceeded|No|
-
->[!BEGINTABS]
-
->[!TAB Sample 1]
-
-```json
-{
-  "id": "richtext",
-  "fields": [
-    {
-      "component": "text-area",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB Sample 2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "text-area",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
-    }
-  ]
-}
-```
-
->[!TAB Screenshot]
-
-![Screenshot of text area component type](assets/component-types/richtext.png)
-
->[!ENDTABS]
-
-#### Text Input {#text-input}
-
-A text input allows for a single line of text input.  It includes additional validation types.
+Text allows for a single line of text input.  It includes additional validation types.
 
 |Validation Type|Value Type|Description|Required|
 |---|---|---|---|
@@ -771,7 +788,7 @@ A text input allows for a single line of text input.  It includes additional val
   "id": "simpletext",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "text",
       "label": "Simple Text",
       "valueType": "string"
@@ -787,7 +804,7 @@ A text input allows for a single line of text input.  It includes additional val
   "id": "another simpletext",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "text",
       "label": "Simple Text",
       "valueType": "string",
@@ -806,6 +823,6 @@ A text input allows for a single line of text input.  It includes additional val
 
 >[!TAB Screenshot]
 
-![Screenshot of text input component type](assets/component-types/simpletext.png)
+![Screenshot of text component type](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
