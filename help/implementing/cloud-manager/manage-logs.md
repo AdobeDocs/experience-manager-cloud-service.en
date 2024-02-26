@@ -38,8 +38,6 @@ You can also access your logs from the **Environments** page.
 
 ![Logs from the Environments screen](assets/download-logs.png)
 
-
-
 ## Logs Via API {#logs-through-api}
 
 In addition to downloading logs through the UI, logs are available through the API and the command-line interface. 
@@ -80,6 +78,10 @@ Environment Id Service    Name
 ```
 
 ### Additional Resources {#resources}
+
+>[!TIP]
+>
+>Check out [this video resource](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) to learn more about debugging AEM as a Cloud Service.
 
 See the following additional resources to learn more about the Cloud Manager API and Adobe I/O CLI:
 

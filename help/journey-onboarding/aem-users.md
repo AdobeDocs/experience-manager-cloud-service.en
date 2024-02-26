@@ -77,5 +77,5 @@ If you are interested in how developers and deployment managers create and manag
 
 The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
-[Quick Start Guide to Authoring Pages](/help/sites-cloud/authoring/getting-started/quick-start.md) - Start here for a quick overview of authoring fundamentals in AEM.
+[Quick Start Guide to Authoring Pages](/help/sites-cloud/authoring/quick-start.md) - Start here for a quick overview of authoring fundamentals in AEM.
 [Headless Authoring Journey](/help/journey-headless/author/overview.md) - If you want to author headless content, follow this guided introduction.
