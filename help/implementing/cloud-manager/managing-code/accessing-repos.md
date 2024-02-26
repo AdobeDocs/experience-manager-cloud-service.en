@@ -3,6 +3,7 @@ title: Accessing Repositories
 description: Learn how to access and manage your git repository using the self-service git account management from Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 ---
+
 # Accessing Repositories {#accessing-repos}
 
 Learn how to access and manage your git repository using the self-service git account management from Cloud Manager.
@@ -34,3 +35,9 @@ The **Access Repo Info** option is also available on the **Non-Production** pipe
 >[!NOTE]
 >
 >The **Access Repo Info** option is visible to users with **Developer** or **Deployment Manager** roles.
+
+## Revoke Personal Access Token {#revoke-pat}
+
+You can revoke a personal access token (PAT) at any time. To do so, create a support ticket for this request.
+
+The ticket will be treated with high priority and should be revoked within one day.
