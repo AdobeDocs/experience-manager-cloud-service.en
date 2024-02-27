@@ -8,7 +8,7 @@ role: User, Developer, Architect
 
 By default, the [Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) of Adobe Experience Manager as a Cloud Service presents your [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md). 
 
-However, you can also view, and manage, **Assets** in this **Content Fragments Console**.
+However, you can also view, and manage, all other sorts of **Assets** in this **Content Fragments Console**.
 
 >[!NOTE]
 >
