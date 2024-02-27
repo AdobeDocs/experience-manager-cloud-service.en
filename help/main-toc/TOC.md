@@ -299,8 +299,8 @@ user-guide-title: AEM as a Cloud Service
       + [Style System](/help/sites-cloud/authoring/page-editor/style-system.md)
       + [Undo Redo Limitations](/help/sites-cloud/authoring/page-editor/undo-redo.md)
     + Universal Editor {#universal-editor}
-      + [Authoring Content with the Universal Editor](/help/implementing/universal-editor/authoring.md)
-      + [Publishing Content with the Universal Editor](/help/implementing/universal-editor/publishing.md)
+      + [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
+      + [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
       + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)
