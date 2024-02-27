@@ -14,19 +14,14 @@ AEM Forms Edge Delivery Service is a composable service offered by Adobe that al
 
 * **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
 
-* **Simplify authoring and submissions**: Create forms using familiar tools like Microsoft Excel or Google Sheets instead of the traditional authoring environments. Submit forms directly to your Microsoft Excel or Google Sheets and use their ecosystem to easily process submitted data.
+* **Simplify authoring and submissions**: Leverage authoring tools that you are comfortable with, such as Microsoft Excel or Google Sheets (Document-based authoring), JSON files (Headless authoring), or Adaptive Forms editor (WYSIWYG authoring), to design and create their forms. The service is decoupled from content source and offers the flexibility in content creation by allowing you to use your preferred authoring tools. 
 
-
-This composable service is decoupled from content source and offers the flexibility in content creation by allowing users to use their preferred authoring tools. 
-
-![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-
-Content creators can leverage tools they are comfortable with, such as Microsoft Excel or Google Sheets (Document based authoring), JSON files (Headless authoring), or AEM Forms Adaptive Forms editor (WYSIWYG authoring), to design and create their forms.
-
->[!NOTE]
->
->
-> WYSIWYG authoring capability is available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
+    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+ 
+     >[!NOTE]
+     >
+     >
+     > WYSIWYG authoring capability is available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
 
 ## Start with the basics 
 
