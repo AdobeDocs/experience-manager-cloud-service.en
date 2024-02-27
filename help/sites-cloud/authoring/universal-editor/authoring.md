@@ -28,11 +28,26 @@ To author content for an app using the Universal Editor, the app must be instrum
 >
 >See [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of how to configure an AEM app to work with the Universal Editor.
 
-## Sign In {#sign-in}
+## Accessing the Universal Editor {#accessing}
 
-After the app is instrumented to work with the Universal Editor, sign into the Universal Editor. You need an Adobe ID to sign in and [have access to the Universal Editor.](getting-started.md#request-access)
+Once the app is instrumented to work with the Universal Editor, the Universal Editor can be access both inside of AEM as a Cloud Service and directly without accessing AEM.
 
-After you are signed in, enter the URL of the page you want to edit in the [location bar.](#location-bar) so you can start editing content such as [text content](#text-mode) or [media content.](#media-mode)
+### Accessing within AEM as a Cloud Service {#accessing-aem}
+
+1. Sign into your AEM as a Cloud Service authoring instance.
+1. Use the [**Sites** console](/help/sites-cloud/authoring/sites-console/introduction.md) to navigate to the page created for use with the Universal Editor that you wish to edit.
+1. Edit the page.
+1. The Universal Editor opens to edit the selected page.
+
+>[!NOTE]
+>
+>When editing a page in the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) the console will open the editor appropriate to the page's [template:](/help/sites-cloud/authoring/sites-console/templates.md) either the Universal Editor described in this document, or the [page editor.](/help/sites-cloud/authoring/page-editor/introduction.md)
+
+### Accessing Directly {#accessing-directly}
+
+1. Sign into the Universal Editor. You need an Adobe ID to sign in and [have access to the Universal Editor.](getting-started.md#request-access)
+
+1. After you are signed in, enter the URL of the page you want to edit in the [location bar.](#location-bar) so you can start editing content such as [text content](#text-mode) or [media content.](#media-mode)
 
 ## Understand The UI {#ui}
 

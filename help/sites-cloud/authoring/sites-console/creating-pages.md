@@ -61,18 +61,22 @@ Unless all pages have been created for you in advance, you must create a page be
 
    ![Providing page title](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
-1. Use **Create** to complete the process and create your new page. The confirmation dialog will ask whether you want to **Open** the page immediately or return to the console (**Done**):
+1. Tap or click **Create** to complete the process and create your new page. The confirmation dialog will ask whether you want to **Open** the page immediately or return to the console (**Done**). Select one to end the page creation process.
 
    ![Page creation success](/help/sites-cloud/authoring/assets/organizing-create-page-success.png)
 
-   >[!NOTE]
-   >
-   >If you create a page using a name that already exists at that location, the system will automatically generate a variation of the name by appending a number. For example, if `beach` already exists, a new page becomes `beach1`.
+   * If you choose **Open**, the **Sites** console will open the appropriate editor based on the template of the new page, either:
+     * [The Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)
+     * [The Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-1. If you return to the console you can see your new page:
+If you return to the console you can see your new page:
 
-   ![Resulting new page](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
+![Resulting new page](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
+
+>[!NOTE]
+>
+>If you create a page using a name that already exists at the same location, AEM will create the page with a variation of the name specified by appending a number. For example, if `beach` already exists, the new page becomes `beach1`.
 
 >[!CAUTION]
 >
->Once a page has been created its template cannot be changed - unless you [create a launch with a new template](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), though this will lose any existing content.
+>Once a page has been created, its template cannot be changed unless you [create a launch with a new template](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), though this will lose any existing content.
