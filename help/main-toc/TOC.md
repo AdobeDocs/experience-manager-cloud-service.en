@@ -298,6 +298,9 @@ user-guide-title: AEM as a Cloud Service
       + [Keyboard Shortcuts](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
       + [Style System](/help/sites-cloud/authoring/page-editor/style-system.md)
       + [Undo Redo Limitations](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+    + Universal Editor {#universal-editor}
+      + [Authoring Content with the Universal Editor](/help/implementing/universal-editor/authoring.md)
+      + [Publishing Content with the Universal Editor](/help/implementing/universal-editor/publishing.md)
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
       + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -1021,6 +1024,18 @@ user-guide-title: AEM as a Cloud Service
         + [Implementing a Custom Predicate Evaluator](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [Custom Error Pages](/help/implementing/developing/introduction/custom-error-page.md)
       + [AEM Node Types](/help/implementing/developing/introduction/node-types.md)
+    + Universal Editor {#universal-editor}
+      + [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md)
+      + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
+      + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
+      + [Universal Editor Developer Overview](/help/implementing/universal-editor/developer-overview.md)
+      + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
+      + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
+      + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
+      + [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md)
+      + [Universal Editor Calls](/help/implementing/universal-editor/calls.md)
+      + [Customizing the Universal Editor](/help/implementing/universal-editor/customizing.md)
+      + [Events](/help/implementing/universal-editor/events.md)
     + [Headless Experience Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
     + Hybrid and SPA Development {#hybrid}
       + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1137,19 +1152,3 @@ user-guide-title: AEM as a Cloud Service
   + Accessibility {#accessibility}
     + [AEM as a Cloud Service and the Web Accessibility Guidelines](/help/compliance/accessibility/web-accessibility.md)
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
-+ Universal Editor {#universal-editor}
-  + [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md)
-  + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
-  + Authoring {#developing}
-    + [Authoring Content with the Universal Editor](/help/implementing/universal-editor/authoring.md)
-    + [Publishing Content with the Universal Editor](/help/implementing/universal-editor/publishing.md)
-  + Developing {#developing}
-    + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
-    + [Universal Editor Developer Overview](/help/implementing/universal-editor/developer-overview.md)
-    + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
-    + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
-    + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
-    + [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md)
-    + [Universal Editor Calls](/help/implementing/universal-editor/calls.md)
-    + [Customizing the Universal Editor](/help/implementing/universal-editor/customizing.md)
-    + [Events](/help/implementing/universal-editor/events.md)
