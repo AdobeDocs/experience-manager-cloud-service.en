@@ -172,6 +172,7 @@ user-guide-title: AEM as a Cloud Service
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
   + [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md)
   + [AEM as a Cloud Service Security Considerations](/help/security/security-considerations.md)
+  + [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Onboarding {#onboarding}
   + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
   + Onboarding Journey {#journey}
