@@ -43,7 +43,7 @@ To learn more about the AEM Content Fragment editor, please see the documents [M
 
 >[!NOTE]
 >
->The *new* editor highlighted in this section is only available in the online Adobe Experience Manager (AEM) as a Cloud Service.
+>The *new* editor highlighted in this section is not available when developing locally for AEM as a Cloud Service.
 >
 >The [*original* Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md) is also available.
 
