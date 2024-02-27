@@ -1034,8 +1034,8 @@ user-guide-title: AEM as a Cloud Service
       + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
       + [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md)
       + [Universal Editor Calls](/help/implementing/universal-editor/calls.md)
-      + [Customizing the Universal Editor](/help/implementing/universal-editor/customizing.md)
       + [Events](/help/implementing/universal-editor/events.md)
+      + [Customizing the Universal Editor](/help/implementing/universal-editor/customizing.md)
     + [Headless Experience Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
     + Hybrid and SPA Development {#hybrid}
       + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
