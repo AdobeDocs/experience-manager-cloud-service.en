@@ -80,7 +80,7 @@ Here you can see that there are three main areas:
   * Here you can hide, or reveal, the folder tree
   * You can select a specific branch of the tree
   * This can be resized to show nested folders
-  * You can select between viewing Content Fragments or [Assets](help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+  * You can select between viewing Content Fragments or [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 * The main/right panel - from here you can:
   * See the list of all Content Fragments in the selected branch of the tree:
     * Content Fragments from the selected folder, and all child folders will be shown:
