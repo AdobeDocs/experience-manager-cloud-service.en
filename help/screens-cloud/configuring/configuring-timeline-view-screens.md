@@ -78,7 +78,7 @@ To Revert the selected page to a previous version:
 
 ![Add a Comment](/help/screens-cloud/assets/configure/screens-timeline7.jpg)
 
-6. Select Revert to this Version. The selected version is restored and the information in the timeline updated
+1. Select Revert to this Version. The selected version is restored and the information in the timeline updated
 
 #### Preview a version {#previewversion}
 
@@ -91,7 +91,7 @@ You can preview a specific version:
 
 ![Preview Version](/help/screens-cloud/assets/configure/screens-timeline8.jpg)
 
-6. Select Preview. The channel is shown in a new tab.
+1. Select Preview. The channel is shown in a new tab.
 
 #### Compare a version with current version {#compareversion}
 
@@ -104,7 +104,7 @@ You can compare a specific version with current version:
 
 ![Compare Version](/help/screens-cloud/assets/configure/screens-timeline9.jpg)
 
-6. Select Compare to Current. The popup opens to display the differences
+1. Select Compare to Current. The popup opens to display the differences
 
 ### Start a Workflow {#workflowstart}
 
@@ -115,6 +115,7 @@ When you apply the workflow, you specify the following information:
 * The workflow payload
 
 #### Starting the workflow
+
 1. Navigate to the channel for which you want to add a comment
 1. Select the channel
 1. Open the Timeline column
@@ -122,21 +123,21 @@ When you apply the workflow, you specify the following information:
 
 ![Start Workflow](/help/screens-cloud/assets/configure/screens-timeline10.jpg)
 
-5. Select Start Workflow
-6. The Create Workflow wizard will open to specify the workflow details
-7. Select Workflow model from the dropdown list and enter the Workflow title
+1. Select Start Workflow
+1. The Create Workflow wizard will open to specify the workflow details
+1. Select Workflow model from the dropdown list and enter the Workflow title
 
 ![Start Workflow](/help/screens-cloud/assets/configure/screens-timeline11.jpg)
 
-8. Proceed further by clicking Next
-9. In the scope step, you can
+1. Proceed further by clicking Next
+1. In the scope step, you can
 * Add Content to add additional resources to the workflow
 * Include children to specify that children of that resource will be included in the workflow
 * Remove Selection to remove that resource from the workflow
 
 ![Start Workflow](/help/screens-cloud/assets/configure/screens-timeline12.jpg)
 
-10. Use Create to close the wizard and create the workflow instance
-11. You may need to perform some additional actions to complete the workflow depending on the workflow model selected
+1. Use Create to close the wizard and create the workflow instance
+1. You may need to perform some additional actions to complete the workflow depending on the workflow model selected
 
 ![Start Workflow](/help/screens-cloud/assets/configure/screens-timeline13.jpg)
