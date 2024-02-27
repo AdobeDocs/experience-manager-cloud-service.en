@@ -37,9 +37,15 @@ The AEM Content Fragment editor is the editor of choice for creating headless co
 
 ![The AEM Content Fragment Editor](assets/authoring-methods-cf-editor.png)
 
-The AEM Content Fragment editor presents and clear interface to creating and managing structured content, ideal for headless delivery.
+The AEM Content Fragment editor presents a clear interface for creating and managing structured content, ideal for headless delivery.
 
-To learn more about the AEM Content Fragment editor, please see the document [Managing Content Fragments.](/help/assets/content-fragments/content-fragments-managing.md)
+To learn more about the AEM Content Fragment editor, please see the documents [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md) and [Authoring Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md).
+
+>[!NOTE]
+>
+>The *new* editor highlighted in this section is only available in the online Adobe Experience Manager (AEM) as a Cloud Service.
+>
+>The [*original* Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md) is also available.
 
 ## Universal Editor {#universal-editor}
 
