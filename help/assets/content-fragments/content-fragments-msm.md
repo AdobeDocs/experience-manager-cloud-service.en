@@ -1,14 +1,14 @@
 ---
-title: Reuse Content Fragments using MSM
-description: MSM enables you to use the same, or similar, Content Fragment content in multiple locations, while synchronizing with the source content.
+title: Reuse Content Fragments using MSM and Live Copies
+description: Learn about using the Live Copy functionality of MSM to use the same, or similar, Content Fragment content in multiple locations, while synchronizing with the source content.
 ---
 # Reuse Content Fragments using MSM {#reuse-content-fragments-using-msm}
 
-The Multi Site Manager (MSM) enables you to use the same content in multiple locations. MSM uses its Live Copy functionality to achieve this.
+The Live Copy functionality of Multi Site Manager (MSM) enables you to use the same content in multiple locations, while synchronizing with the source content.
 
-* With MSM you can:
+* With MSM Live Copies you can:
   * Create content once and then
-  * Reuse this content in other areas (via Live Copies) of the same or other sites.
+  * Reuse this content in other areas of the same or other sites.
 * MSM then maintains the live relationships between your source content and its Live Copies so that:
   * When you change the source content, the source and Live Copies are synchronized.
   * You can make adjustments only to the content of the Live Copies by disconnecting the live relationship for individual sub pages and/or components.
@@ -33,7 +33,7 @@ MSM for Content Fragments is based on MSM for Assets. combined with functionalit
 
 >[!CAUTION]
 >
->MSM for Content Fragments is only available when using Content Fragments via the **Assets** console. 
+>MSM for Content Fragments is only available when using Content Fragments via the **Assets** console as it is based on MSM for Assets. 
 >
 >MSM functionality is *not* available when using the **Content Fragments** console.
 
