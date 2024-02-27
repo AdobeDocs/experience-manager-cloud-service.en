@@ -59,7 +59,7 @@ To learn more about the Universal Editor, please see the document [Authoring Con
 
 ## Document-Based Authoring {#document-based}
 
-If you use Edge Delivery services, you can choose to author your content as conventional documents such as Microsoft Word or Google Docs entirely outside of AEM console.
+If you use Edge Delivery services, you can choose to author your content as conventional documents such as Microsoft Word or Google Docs entirely outside of the [AEM **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![Editing document-based content](assets/authoring-methods-document.jpg)
 
