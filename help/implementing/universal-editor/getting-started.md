@@ -194,7 +194,7 @@ If you only want to have certain extensions enabled for a page, you can set this
 
 Your app is now instrumented to use the Universal Editor!
 
-See [Authoring Content with the Universal Editor](authoring.md) to learn how easy and intuitive it is for content authors to create content using the Universal Editor.
+See [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) to learn how easy and intuitive it is for content authors to create content using the Universal Editor.
 
 ## Additional Resources {#additional-resources}
 

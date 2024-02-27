@@ -120,7 +120,7 @@ On the start page you can enter the URL of the site you want to edit with the Un
 
 >[!NOTE]
 >
->Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor.](getting-started.md)
+>Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor.](/help/implementing/universal-editor/getting-started.md)
 
 #### Location Bar {#location-bar}
 
