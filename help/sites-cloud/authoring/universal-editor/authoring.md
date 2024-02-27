@@ -18,7 +18,7 @@ To do this, the Universal Editor provides content authors with an intuitive UI t
 
 >[!TIP]
 >
->For a more detailed introduction to the Universal Editor, see the document [Universal Editor Introduction.](introduction.md)
+>For a more detailed introduction to the Universal Editor, see the document [Universal Editor Introduction.](/help/implementing/universal-editor/introduction.md)
 
 ## Prepare the App {#prepare-app}
 
@@ -26,7 +26,7 @@ To author content for an app using the Universal Editor, the app must be instrum
 
 >[!TIP]
 >
->See [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of how to configure an AEM app to work with the Universal Editor.
+>See [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md) for an example of how to configure an AEM app to work with the Universal Editor.
 
 ## Accessing the Universal Editor {#accessing}
 
@@ -45,7 +45,7 @@ Once the app is instrumented to work with the Universal Editor, the Universal Ed
 
 ### Accessing Directly {#accessing-directly}
 
-1. Sign into the Universal Editor. You need an Adobe ID to sign in and [have access to the Universal Editor.](getting-started.md#request-access)
+1. Sign into the Universal Editor. You need an Adobe ID to sign in and [have access to the Universal Editor.](/help/implementing/universal-editor/getting-started.md#request-access)
 
 1. After you are signed in, enter the URL of the page you want to edit in the [location bar.](#location-bar) so you can start editing content such as [text content](#text-mode) or [media content.](#media-mode)
 
@@ -134,7 +134,7 @@ The location bar shows you the address of the page you are editing. Select to en
 
 >[!NOTE]
 >
->Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor.](getting-started.md)
+>Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor.](/help/implementing/universal-editor/getting-started.md)
 
 #### Authentication Header Settings {#authentication-settings}
 
