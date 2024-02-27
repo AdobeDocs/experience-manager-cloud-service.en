@@ -12,13 +12,15 @@ In today's digital age, creating user-friendly forms is essential for any organi
 
 These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft Sharepoint to easily process submitted data or to initiate an existing business workflow.
 
+AEM Forms Edge Delivery provides a Form block to help you easily create forms to capture and store captured data. You can include the Form block in your AEM EDS project to start creating a form. Let's start: 
+
 
 ## Prerequisites
 
 Before you start, ensure that you have completed the following steps:
 
-* Set up and clone your Edge Delivery Service (EDS) project. See [developer tutorial](https://www.aem.live/developer/tutorial) for details. In this document, the local folder of your Edge Delivery Service (EDS) project is referred as `[EDS Project repository]` . 
-* Clone the [Forms Block repository](https://github.com/adobe/afb). It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Forms Block repository]` in this document. 
+* Set up Edge Delivery Service (EDS) Github project using AEM boilerplate and clone the corresponding Github repository on your local machine. See [developer tutorial](https://www.aem.live/developer/tutorial) for details. In this document, the local folder of your Edge Delivery Service (EDS) project is referred as `[EDS Project repository]` . 
+* Clone the [Forms Block repository](https://github.com/adobe/afb) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Forms Block repository]`. 
 * Ensure that you have access to Google Sheets or Microsoft SharePoint.
 
 
@@ -26,13 +28,11 @@ Before you start, ensure that you have completed the following steps:
 
 +++ Step 1: Add the Form block to your Edge Delivery Service (EDS) project.
 
-AEM Forms Edge Delivery includes a Form block to help you easily create forms to capture and store captured data. To include the Form block to your Edge Delivery Service project: 
+The `Form block` includes the capability to add a form to an EDS Site. The block is not included in the a project created using AEM boilerplate. To include the Form block to your Edge Delivery Service project: 
 
-1. Navigate to `[Forms Block repository]/blocks` and copy the `forms` folder.
+1. Navigate to the `[Forms Block repository]/blocks` folder on your local machine and copy the `form` folder.
 
-1. Navigate to `[EDS Project repository]/blocks/` and paste the `forms` folder. 
-
-    >[!VIDEO](https://video.tv.adobe.com/v/3427487?quality=12&learn=on)  
+1. Navigate to the `[EDS Project repository]/blocks/` folder on your local machine and paste the `form` folder. 
 
 1. Check in the `form` folder and underlying files to your Edge Delivery Service project on GitHub. 
 
