@@ -9,35 +9,79 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 15262 {#release-15262}
 
-Summarized below are the continuous improvements for maintenance release 15262, which was publicly released on February 28, 2023. The previous maintenance release was release 14697.
+Summarized below are the continuous improvements for maintenance release 15262, which was publicly released on February 28, 2024. The previous maintenance release was release 14697.
 
 2024.3.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
 ### Enhancements {#enhancements-15262}
 
-* ASSETS-32101: Metadata for smart crop renditions should be updated in DB.
+* ASSETS-30632: Added a separate Brand Portal publish status column in list view.
+* ASSETS-30934: Added support for `Iptc4xmpCore:AltTextAccessibility` and `Iptc4xmpCore:ExtDescrAccessibility` properties to Asset Metadata Editor.
 * ASSETS-31297: Improve checks to prevent deletion of copied assets from dynamic media.
+* ASSETS-33246: Release index definition `damAssetLucene-10`.
+* ASSETS-33590: Add support for webm renditions for videos in processing profiles.
+* GRANITE-36205: Update oak version to 1.60-T20240131102219-0cde853.
+* SITES-19326: Update links in Assets UI to open CF in new CF Editor.
 
 ### Fixed Issues {#fixed-issues-15262}
 
-* ASSETS-32679: Add cache-killer to rendition URLs when previewing content.
-* ASSETS-32755: configure ordered queue for asset move events.
-* ASSETS-30756: asset move fails when folder name ends in 'html'.
-* ASSETS-32754: [Collab API] Tasks cannot be assigned to users who have not logged in previously in GenStudio and AEMCS.
-* ASSETS-29011: Smart crop visible for read-only users.
-* ASSETS-32311: Asset Delivery opt-in for VIP program.
-* ASSETS-30756: Add CM exclusion.
-* ASSETS-28767: Updated cq-dam-mac-sync version.
-* ASSETS-31330:  Update dynamic media packages.
-* ASSETS-31657: Support new Content Hub service code in granite.auth.ims bundle.
-* ASSETS-32509: Allowing the Content Hub Client ID.
-* ASSETS-32230: Update RAPI bundle to 366.
-* ASSETS-31260: Resolve select issues with schema forms.
+* ASSETS-15977: Remove deprecated v1 search events and pipeline producer.
+* ASSETS-18088: Upgrade batik library dependencies to 1.17.
+* ASSETS-21965: Metadata writeback workflow must only launch on asset metadata changes.
+* ASSETS-26368: Scheduled Bulk Import Jobs Not Removed if Job Config does not Exist.
 * ASSETS-26549: Assets / Nodes with "jcr:lastModifiedBy": "workflow-process-service" show as "external user" in list view.
-* ASSETS-31038: Add user mapping for eventrecorderhelper.
-* ASSETS-30068: New status COMPLETED_WITH_ERROR for bulk import AE.
-* ASSETS-31297: Prevent deletion of copied assets from dynamic media.
-* GRANITE-49031: Regression resulting in `@JsonIgnore` annotation being ignored on transient fields.
+* ASSETS-26842: Update "Firefly" text to read "App Builder" in Processing Profile.
+* ASSETS-28708: Very slow response for some IMS token requests.
+* ASSETS-28767: Inconsistent publish state on assets if folder containing large no. of assets published.
+* ASSETS-29011: Smart crop is visible for read-only users.
+* ASSETS-29348: AssetMoveEventHandler can consume too much memory.
+* ASSETS-29738: Asset Upload Restriction fails with NullPointerException for woff files.
+* ASSETS-30068: Bulk Import Asset Essentials to include status COMPLETED_WITH_ERROR for "job completed, but with error".
+* ASSETS-30261: Incorrect imsUserId sent to Pipeline for asset events.
+* ASSETS-30538: View Page option is Missing after Moving a PDF file.
+* ASSETS-30626: Failure to create delivery request reported for assets with empty assetId.
+* ASSETS-30756: Move Asset Wizard action fails when folder name ends in 'html'.
+* ASSETS-30810: Sanitize tags before rendering legacy youtube config.
+* ASSETS-31015: Unable to upload Assets with .msg filename extension.
+* ASSETS-31038: Tasks events that are received by the notification service are not being processed.
+* ASSETS-31097: Disable Async Copy for WCM Content to avoid traversal query warnings.
+* ASSETS-31256: Assets / Nodes with "jcr:lastModifiedBy": "workflow-process-service" show as "external user" in list view.
+* ASSETS-31260: Asset Metadata Form Dropdown field is not working correctly when the dropdown JSON has a big list.
+* ASSETS-31280: Make assets download in a flattened structure when added to a collection.
+* ASSETS-31301: `dynamicmedia_sly.js` cannot be correctly instantiated by the Use API.
+* ASSETS-31330: ko_KR: Unlocalized strings in Subtitles and Audio tracks.
+* ASSETS-31405: InDesign server processing fails for large InDesign layouts.
+* ASSETS-31570: Unified Shell - asset details "Save & Close", "Cancel" buttons need to be pressed more than once to work.
+* ASSETS-31673: Bulk import failed for large Dropbox files.
+* ASSETS-32108: AEM Assets Not Saving User-Defined Card Size in View Settings.
+* ASSETS-32230: Upgrade minimum runtime version of com.adobe.aem.repoapi bundle.
+* ASSETS-32321: Post-Processing workflow and ImageProfile resolution fails if ancestor folder is missing 'jcr:content' subnode.
+* ASSETS-32544: Metadata export job fails intermittently.
+* ASSETS-32679: Caching issues with asset (PDF) previews.
+* ASSETS-32754: Tasks cannot be assigned to users who have not logged in previously.
+* ASSETS-32755: Configure com/adobe/cq/dam/assetmove job topic to use an ordered queue.
+* ASSETS-32899: Searching inside Collections is extremely slow.
+* ASSETS-33098: AEM Assets search facets "Tags predicate" does not work as expected.
+* ASSETS-33454: Review Task activity and comments not appearing in Timeline.
+* ASSETS-34088: PDF preview is not working on AEM Assets.
+* ASSETS-34155: Dynamic Media - Updated AEM Viewers / 2024.1.0. 
+* ASSETS-34684: Handle multivalue dc:title in content tree.
+* ASSETS-34789: Fix normalization issues in filename conflict check.
+* DXML-13276: AEM Guides - integrate indexes in GraniteContent and remove them from the library.
+* GRANITE-47995: Deletion operations can fail due to conflicts with "cq:isDelivered" property.
+* GRANITE-48079: Enable POST requests for OAuth online token validation.
+* GRANITE-48143: Upgrade org.apache.sling.resourcemerger to 1.4.4 .
+* GRANITE-49031: Update to Jackson 2.16.1.
+* SCRNS-3961: Screens - Sequence channel: Jquery animation used in Fade transition leads to black screen.
+* SITES-15868: Improve the performance for listing fragments.
+* SITES-16079: `/fragments/{id}/references` started to return duplicates.
+* SITES-16118: If a fragment is patched and a fragment field is missing from the model, an exception is thrown.
+* SITES-16121: Retrieval of a model date field throws exception.
+* SITES-16207: The POST /adobe/sites/cf/models operation returns two different OK status codes.
+* SITES-17361: Re-embed Jsoup in the sites-headless bundle.
+* SITES-17768: GraphQL to output Dynamic Media URL for assets referenced in Content Fragments.
+* SKYOPS-66622: Author deployment crash looping after running a buildTransform enabled pipeline.
+* SKYOPS-69977: Adaptive Image Servlet does not load image after latest update.
 
 ### Known Issues {#known-issues-15262}
 
