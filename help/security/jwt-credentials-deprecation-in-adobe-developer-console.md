@@ -41,7 +41,7 @@ Customers create Adobe Developer Console projects so they can invoke [Cloud Mana
 
 ## Auto-generated projects {#autogen-projects}
 
-**Action**: No need to migrate.
+**Action**: Do not migrate since Adobe will migrate on your behalf.
 
 **Relevant AEM versions**: Only AEM as a Cloud Service.
 
