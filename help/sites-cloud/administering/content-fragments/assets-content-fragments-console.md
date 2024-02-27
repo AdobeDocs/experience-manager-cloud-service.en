@@ -30,11 +30,11 @@ From the **Assets** view of the Content Fragments console you can:
 
 ![Content Fragments console - browse Asset](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
 
-* [Navigate the structure and browse your Assets](/help/assets/navigate-assets-view.md)
+* Navigate the structure and browse your Assets; [similar to the functionality in the Assets console](/help/assets/navigate-assets-view.md)
 * [Create a folder](/help/assets/manage-digital-assets.md#creating-folders)
 * [Upload Assets](/help/assets/add-delete-assets-view.md)
 
-You can also take actions on a selected Asset:
+You can also take actions on one, or more, selected Assets:
 
 ![Content Fragments console - actions for selected Asset](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-actions.png)
 
