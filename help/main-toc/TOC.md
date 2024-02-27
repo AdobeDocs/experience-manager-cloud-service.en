@@ -1155,3 +1155,4 @@ user-guide-title: AEM as a Cloud Service
     + [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md)
     + [Universal Editor Calls](/help/implementing/universal-editor/calls.md)
     + [Customizing the Universal Editor](/help/implementing/universal-editor/customizing.md)
+    + [Events](/help/implementing/universal-editor/events.md)
