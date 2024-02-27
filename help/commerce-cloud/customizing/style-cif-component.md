@@ -176,7 +176,7 @@ Next, make a small change to the Teaser style to see how the `ui.frontend` modul
 
     **clientlib-cif** - An empty client library that simply embeds the necessary dependencies from [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components). The category is `venia.cif`.
 
-    **clientlib-grid** - Includes the CSS to enable AEM's Responsive Grid feature. Using the AEM grid enables [Layout Mode](/help/sites-cloud/authoring/features/responsive-layout.md) in the AEM Editor and gives content authors the ability to resize components. The category is `venia.grid` and is embedded in the `venia.base` library.
+    **clientlib-grid** - Includes the CSS to enable AEM's Responsive Grid feature. Using the AEM grid enables [Layout Mode](/help/sites-cloud/authoring/page-editor/responsive-layout.md) in the AEM Editor and gives content authors the ability to resize components. The category is `venia.grid` and is embedded in the `venia.base` library.
 
 1. Inspect the files `customheaderlibs.html` and `customfooterlibs.html` beneath `ui.apps/src/main/content/jcr_root/apps/venia/components/page`:
 
@@ -467,7 +467,7 @@ You finished styling your first AEM CIF Core Component and you used a webpack de
 
 ## Bonus Challenge {#bonus-challenge}
 
-Use the [AEM Style system](/help/sites-cloud/authoring/features/style-system.md) to create two styles that can be toggled on or off by a content author. [Developing with the Style System](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html) includes detailed steps and information on how to accomplish this task.
+Use the [AEM Style system](/help/sites-cloud/authoring/page-editor/style-system.md) to create two styles that can be toggled on or off by a content author. [Developing with the Style System](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html) includes detailed steps and information on how to accomplish this task.
 
 ![Bonus Challenge - style System](../assets/style-cif-component/bonus-challenge.png)
 
