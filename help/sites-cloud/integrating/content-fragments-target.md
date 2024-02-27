@@ -10,7 +10,7 @@ exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 >* The AEM Content Fragments are exported into the default workspace of Adobe Target.
 >* AEM must be integrated with Adobe Target according to the instructions under [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-You can export [Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md), created in Adobe Experience Manager as a Cloud Service (AEM), to Adobe Target (Target). They can then be used as offers in Target activities, to test and personalize experiences at scale.
+You can export [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md), created in Adobe Experience Manager as a Cloud Service (AEM), to Adobe Target (Target). They can then be used as offers in Target activities, to test and personalize experiences at scale.
 
 There is the option available for exporting a content fragment to Adobe Target:
 
@@ -280,7 +280,7 @@ After you create a Target framework in AEM, associate your web pages with the fr
 When you associate a page with the framework, the child pages inherit the association.
 
 1. In the **Sites** console, navigate to the site that you want to configure.
-1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
+1. Using either [quick actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
 1. Select **Edit**.
 1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
@@ -294,7 +294,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
 1. Select **Done**.
-1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
+1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md).)
 
    >[!NOTE]
    >
@@ -346,7 +346,7 @@ To export a Content Fragment from AEM to Target (after specifying the Cloud Conf
 
    >[!NOTE]
    >
-   >[Various details](/help/sites-cloud/authoring/fundamentals/content-fragments.md#details-of-your-content-fragment) of the export can be seen in **List View** of the console and **Properties**.
+   >[Various details](/help/sites-cloud/authoring/fragments/content-fragments.md#details-of-your-content-fragment) of the export can be seen in **List View** of the console and **Properties**.
 
    >[!NOTE]
    >
@@ -354,7 +354,7 @@ To export a Content Fragment from AEM to Target (after specifying the Cloud Conf
 
 >[!NOTE]
 >
->Alternatively, you can perform the export from the page editor, using comparable commands in the [Page Information](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) menu.
+>Alternatively, you can perform the export from the page editor, using comparable commands in the [Page Information](/help/sites-cloud/authoring/page-editor/introduction.md#page-information) menu.
 
 ## Using your Content Fragments in Adobe Target {#using-your-content-fragments-in-adobe-target}
 

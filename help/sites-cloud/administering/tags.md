@@ -10,7 +10,7 @@ Tags are an intuitive method of classifying your content. They can be thought of
 In Adobe Experience Manager (AEM), a tag can be a property of:
 
 * A content node for a page
-  * See the document [Using Tags](/help/sites-cloud/authoring/features/tags.md) for more information.
+  * See the document [Using Tags](/help/sites-cloud/authoring/sites-console/tags.md) for more information.
 * A metadata node for an asset 
   * See the document [Managing Metadata for Digital Assets](/help/assets/manage-metadata.md) for more information.
 
@@ -177,7 +177,7 @@ You can view more details about the tag including who last published it and when
 
    ![Viewing tag properties](assets/tag-properties.png)
 
-For more details on selecting viewing modes and the rail, see [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+For more details on selecting viewing modes and the rail, see [Basic Handling](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Editing Tags {#editing-tags}
 
@@ -239,7 +239,7 @@ It can be useful to see to which content a particular tag is applied. You can do
 
 Hover the mouse or select a referencing content in the list to reveal the full path of the content.
 
-For more details on selecting viewing modes and the rail, see [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+For more details on selecting viewing modes and the rail, see [Basic Handling](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### Moving Tags {#moving-tags}
 

@@ -7,7 +7,7 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 
 Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page:
 
-* The title appears in the [References](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) rail, from where authors can access them to work on them.
+* The title appears in the [References](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references) rail, from where authors can access them to work on them.
 * The child pages of the source page are included in the launch by default. You can use only the source page if desired.
 * By default, [Live Copy](/help/sites-cloud/administering/msm/overview.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.
 
@@ -42,7 +42,7 @@ You can create a launch from either the Sites or Launches console:
 
    >[!NOTE]
    >
-   >In the **Sites** console you can also use [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) to select a page before selecting **Create**.
+   >In the **Sites** console you can also use [selection mode](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) to select a page before selecting **Create**.
    >
    >This will use the selected page as the initial source page.
 
@@ -108,7 +108,7 @@ Selecting this will:
 >
 >As a different template is used, the new page is empty. Due to the different page structure no content is copied over.
 >
->This mechanism can be used to change the template of an [existing page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) - though the loss of content must be considered.
+>This mechanism can be used to change the template of an [existing page](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) - though the loss of content must be considered.
 
 ### Creating a Nested Launch {#creating-a-nested-launch}
 
