@@ -717,7 +717,7 @@ user-guide-title: AEM as a Cloud Service
     + [Using Screens Content Provider](/help/screens-cloud/configuring/using-screens-content-provider.md)
     + [Creating Screens Video Renditions](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
     + [Configuring Dispatcher for Screens as a Cloud Service](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
-    + [Configuring Timeline Views for Screens as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
+    + [Configuring Timeline Views for Screens as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md) 
   + Creating Content {#create-content}
     + [Creating and Managing a Project in Screens Content Provider](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
     + [Creating and Managing a Channel in Screens Content Provider](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
