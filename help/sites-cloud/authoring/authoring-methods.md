@@ -55,7 +55,7 @@ The Universal Editor is a modern UI that allows you to author AEM content in a c
 
 The Universal Editor is accessed through the Sites console within AEM, but offers the power and content-agnostic flexibility to author not only your AEM content, but also properly-instrumented external content.
 
-To learn more about the Universal Editor, please see the document [Authoring Content with the Universal Editor.](/help/implementing/universal-editor/authoring.md)
+To learn more about the Universal Editor, please see the document [Authoring Content with the Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 ## Document-Based Authoring {#document-based}
 
