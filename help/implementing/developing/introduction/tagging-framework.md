@@ -7,7 +7,7 @@ exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 
 Tagging allows content to be categorized and organized. Tags can be classified by a namespace and a taxonomy. For detailed information about using tags:
 
-* See [Using Tags](/help/sites-cloud/authoring/features/tags.md) for information about tagging content as a content author.
+* See [Using Tags](/help/sites-cloud/authoring/sites-console/tags.md) for information about tagging content as a content author.
 * See Administering Tags for an administrator?s perspective about creating and managing tags, and to which content tags have been applied.
 
 This article focuses on the underlying framework which supports tagging in AEM and how to use it as a developer.
