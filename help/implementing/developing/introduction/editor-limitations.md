@@ -13,9 +13,9 @@ An author may encounter the following functional limitations when using the edit
 
 ### Links Not Active {#links-not-active}
 
-When [editing a page](/help/sites-cloud/authoring/fundamentals/editing-content.md), links are not active.
+When [editing a page](/help/sites-cloud/authoring/page-editor/edit-content.md), links are not active.
 
-* [Switch to **Preview** mode](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) to navigate using the links in your content.
+* [Switch to **Preview** mode](/help/sites-cloud/authoring/page-editor/introduction.md#preview-mode) to navigate using the links in your content.
 
 ### Structure Pages {#structure-pages}
 

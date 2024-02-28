@@ -23,7 +23,7 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 >
 >Content fragments can be used:
 >
->* when authoring pages; see [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* when authoring pages; see [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md).
 >* for [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 >[!NOTE]
@@ -88,7 +88,7 @@ The method of creating a content fragment is:
 In the **Assets** console a range of actions are available for your content fragments, either:
 
 * From the toolbar; after selection of your fragment all appropriate actions are available.
-* As [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions); a subset of actions available for the individual fragment cards.
+* As [quick actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions); a subset of actions available for the individual fragment cards.
 
 ![Actions in toolbar](assets/cfm-managing-02.png)
 
@@ -365,7 +365,7 @@ This can be accessed:
 * After creation; using [actions available in the Assets console](#actions-for-a-content-fragment-assets-console).
 * From the [Content Fragment Editor](#toolbar-actions-in-the-content-fragment-editor).
 
-In addition, when you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment is listed in the page references.
+In addition, when you [publish a page that uses the fragment](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing); the fragment is listed in the page references.
 
 >[!CAUTION]
 >
