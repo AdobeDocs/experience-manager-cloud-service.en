@@ -225,16 +225,18 @@ Whenever a resource is selected, you can carry out various actions on the select
 
 The actions toolbar only appears when a resource is selected in the console. The action available in the actions toolbar change to reflect the actions you can take on the specific items selected. The most common actions are:
 
-* [Create](#create-action) - Create new content or content-related actions
-* [Edit](/help/sites-cloud/authoring/page-editor/introduction.md) - Edit the page
-* [Properties](/help/sites-cloud/authoring/sites-console/page-properties.md) - Opens the page properties window
-* [Lock](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Lock a page to prevent others from changing it
-* [Copy](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Copy a page
-* [Move](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Move or rename a page
-* [Quick Publish](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publish a page or pages immediately
-* [Manage Publication](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Schedule a page or pages for publication
-* [Restore](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Restore a version of a page or page tree
-* [Delete](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Delete a page or pages
+* [**Create**](#create-action) - Create new content or content-related actions
+* **Edit** - Depending on how the selected page was created, the **Edit** action will open the appropriate editor.
+  * [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md) - For pages created with the AEM Page Editor
+  * [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - For pages created with the Universal Editor
+* [**Properties**](/help/sites-cloud/authoring/sites-console/page-properties.md) - Opens the page properties window
+* [**Lock**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Lock a page to prevent others from changing it
+* [**Copy**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Copy a page
+* [**Move**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Move or rename a page
+* [**Quick Publish**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publish a page or pages immediately
+* [**Manage Publication**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Schedule a page or pages for publication
+* [**Restore**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Restore a version of a page or page tree
+* [**Delete**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Delete a page or pages
 
 Due to the space restrictions in some windows, the toolbar can quickly become longer than the space available. When this happens additional options appears. Clicking or tapping on the ellipsis (the three dots or **...**) opens a drop-down selector holding all remaining actions.
 
@@ -242,13 +244,13 @@ Due to the space restrictions in some windows, the toolbar can quickly become lo
 
 ### Create Action {#create-action}
 
-The create action offers similar options to the create toolbar button for creating new pages and similar items.
+The create action offers similar options to the [**Create** toolbar button](#create-button) for creating new pages and similar items.
 
 In addition, it offers the ability to create page-related actions.
 
-* [Workflow](/help/sites-cloud/authoring/workflows/overview.md) - Apply a workflow to a page
-* [Version](/help/sites-cloud/authoring/sites-console/page-versions.md) - Create a version of a page
+* [**Workflow**](/help/sites-cloud/authoring/workflows/overview.md) - Apply a workflow to a page
+* [**Version**](/help/sites-cloud/authoring/sites-console/page-versions.md) - Create a version of a page
 
 ## Templates
 
-You can easily see which template the page is based on when selecting the page in either [Column view](/help/sites-cloud/authoring/basic-handling.md#column-view) or [List view](/help/sites-cloud/authoring/basic-handling.md#list-view).
+You can easily see which template the page is based on when selecting the page in either [**Column view**](/help/sites-cloud/authoring/basic-handling.md#column-view) or [**List view**](/help/sites-cloud/authoring/basic-handling.md#list-view).
