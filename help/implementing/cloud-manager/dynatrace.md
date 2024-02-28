@@ -22,8 +22,8 @@ The details required for connectivity requests are described below:
 | **Field**  | **Description**  |
 |---|---|
 | [!DNL Dynatrace Environment URL]  | Your Dynatrace environment URL.<br><br>For Dynatrace SaaS customers, the format is `https://<your-environment-id>.live.dynatrace.com`.<br><br>For Dynatrace Managed customers, the format is `https://<your-managed-url>/e/<environmentId>`  |
-| [!DNL Dynatrace Environment ID]  | Your Dynatrace environment ID. Please see [Get Dynatrace environment information](#get-dynatrace-env-info) for how to get this. |
-| [!DNL Dynatrace Environment Token]  | Your Dynatrace environment token. Please see [Get Dynatrace environment information](#get-dynatrace-env-info) for how to get this.<br><br>This should be considered a secret, so use appropriate security practices. For example, password protect it in a website such as **zerobin.net**, which the customer support ticket can reference, along with the password.  |
+| [!DNL Dynatrace Environment ID]  | Your Dynatrace environment ID. Please see [How do I get my Dynatrace Connection Details?](#how-do-i-get-my-dynatrace-connection-details) for how to get this. |
+| [!DNL Dynatrace Environment Token]  | Your Dynatrace environment token. Please see [How do I get my Dynatrace Connection Details?](#how-do-i-get-my-dynatrace-connection-details) for how to get this.<br><br>This should be considered a secret, so use appropriate security practices. For example, password protect it in a website such as **zerobin.net**, which the customer support ticket can reference, along with the password.  |
 | [!DNL Dynatrace API access token]  | The API access token of your Dynatrace environment.  Please see [Create a Dynatrace API access token](#create-dynatrace-access-token) for how to create this.<br><br>This should be considered a secret so use appropriate security practices. For example, password protect it in a website such as **zerobin.net**, which the customer support ticket can reference, along with the password.<br><br>Note: This is only required for Dynatrace Managed.  |
 | [!DNL Dynatrace ActiveGate Port] | Your Dynatrace ActiveGate port that the AEM integration should connect to.<br><br>Note: This is only required for Dynatrace Managed.  |
 | [!DNL Dynatrace ActiveGate Network Zone] | Your [Dynatrace ActiveGate network zone](https://docs.dynatrace.com/docs/manage/network-zones) to route AEM monitoring data efficiently across data centers and network regions.<br><br>Note: A Dynatrace ActiveGate network zone is optional.  |
@@ -46,7 +46,7 @@ The Adobe deployment specifications per AEM environment are:
 
 To learn more about Dynatrace licensing, see the [Dynatrace Platform Subscription](https://docs.dynatrace.com/docs/shortlink/dynatrace-platform-subscription).
 
-### How Do I get my Dynatrace Connection Details? {#how-do-i-get-my-dynatrace-connection-details}
+### How do I get my Dynatrace Connection Details? {#how-do-i-get-my-dynatrace-connection-details}
 
 1. Execute the following API request to your Dynatrace environment:  
 
@@ -64,7 +64,7 @@ To learn more about Dynatrace licensing, see the [Dynatrace Platform Subscriptio
 }
 ```
 
-## Create a Dynatrace API access token {#create-dynatrace-access-token}
+### Create a Dynatrace API access token {#create-dynatrace-access-token}
 
 1. Login to your Dynatrace environment.
 1. Go to **[!DNL Access tokens]** and select **[!DNL Generate new token]**.
