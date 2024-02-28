@@ -21,7 +21,8 @@ Before you start, ensure that you have completed the following steps:
 
 * Set up Edge Delivery Service (EDS) Github project using AEM boilerplate and clone the corresponding Github repository on your local machine. See [developer tutorial](https://www.aem.live/developer/tutorial) for details. In this document, the local folder of your Edge Delivery Service (EDS) project is referred as `[EDS Project repository]` . 
 * Clone the [Forms Block repository](https://github.com/adobe/afb) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Forms Block repository]`. 
-* Ensure that you have access to Google Sheets or Microsoft SharePoint.
+* Ensure that you have access to Google Sheets or Microsoft SharePoint. To setup Microsoft SharePoint as your content source, see [How to use Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
+
 
 
 ## Create a form
