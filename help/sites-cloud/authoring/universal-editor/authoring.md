@@ -18,7 +18,7 @@ To do this, the Universal Editor provides content authors with an intuitive UI t
 
 >[!TIP]
 >
->For a more detailed introduction to the Universal Editor, see the document [Universal Editor Introduction.](introduction.md)
+>For a more detailed introduction to the Universal Editor, see the document [Universal Editor Introduction.](/help/implementing/universal-editor/introduction.md)
 
 ## Prepare the App {#prepare-app}
 
@@ -26,13 +26,28 @@ To author content for an app using the Universal Editor, the app must be instrum
 
 >[!TIP]
 >
->See [Getting Started with the Universal Editor in AEM](getting-started.md) for an example of how to configure an AEM app to work with the Universal Editor.
+>See [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md) for an example of how to configure an AEM app to work with the Universal Editor.
 
-## Sign In {#sign-in}
+## Accessing the Universal Editor {#accessing}
 
-After the app is instrumented to work with the Universal Editor, sign into the Universal Editor. You need an Adobe ID to sign in and [have access to the Universal Editor.](getting-started.md#request-access)
+Once the app is instrumented to work with the Universal Editor, the Universal Editor can be access both inside of AEM as a Cloud Service and directly without accessing AEM.
 
-After you are signed in, enter the URL of the page you want to edit in the [location bar.](#location-bar) so you can start editing content such as [text content](#text-mode) or [media content.](#media-mode)
+### Accessing within AEM as a Cloud Service {#accessing-aem}
+
+1. Sign into your AEM as a Cloud Service authoring instance.
+1. Use the [**Sites** console](/help/sites-cloud/authoring/sites-console/introduction.md) to navigate to the page created for use with the Universal Editor that you wish to edit.
+1. Edit the page.
+1. The Universal Editor opens to edit the selected page.
+
+>[!NOTE]
+>
+>When editing a page in the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) the console will open the editor appropriate to the page's [template:](/help/sites-cloud/authoring/sites-console/templates.md) either the Universal Editor described in this document, or the [page editor.](/help/sites-cloud/authoring/page-editor/introduction.md)
+
+### Accessing Directly {#accessing-directly}
+
+1. Sign into the Universal Editor. You need an Adobe ID to sign in and [have access to the Universal Editor.](/help/implementing/universal-editor/getting-started.md#request-access)
+
+1. After you are signed in, enter the URL of the page you want to edit in the [location bar.](#location-bar) so you can start editing content such as [text content](#text-mode) or [media content.](#media-mode)
 
 ## Understand The UI {#ui}
 
@@ -105,7 +120,7 @@ On the start page you can enter the URL of the site you want to edit with the Un
 
 >[!NOTE]
 >
->Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor.](getting-started.md)
+>Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor.](/help/implementing/universal-editor/getting-started.md)
 
 #### Location Bar {#location-bar}
 
@@ -119,7 +134,7 @@ The location bar shows you the address of the page you are editing. Select to en
 
 >[!NOTE]
 >
->Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor.](getting-started.md)
+>Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor.](/help/implementing/universal-editor/getting-started.md)
 
 #### Authentication Header Settings {#authentication-settings}
 
@@ -376,11 +391,14 @@ In preview mode, tapping or clicking on content reacts as it would to a reader o
 
 ## Additional Resources {#additional-resources}
 
-To learn more about the Universal Editor, see these documents.
+To learn how to publish content with the universal editor, please see this document.
 
-* [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
 * [Publishing Content with the Universal Editor](publishing.md) - Learn how the Universal Editor publishes content and how your apps can handle the published content.
-* [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
-* [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
-* [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
-* [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.
+
+To learn more about the technical details of the Universal Editor, please see these developer documents.
+
+* [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
+* [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
+* [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
+* [Attributes and Types](/help/implementing/universal-editor/attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
+* [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md) - Learn how the Universal Editor authenticates.

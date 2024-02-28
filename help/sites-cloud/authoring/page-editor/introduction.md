@@ -5,7 +5,11 @@ description: The AEM page editor is a powerful tool for authoring your content.
 
 # The AEM Page Editor {#editing-page-content}
 
-Once your page is created in the **Sites** console, you can edit the content of the page using the AEM page editor, a powerful tool for authoring your content.
+Once your page is created in the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) you can edit the content of the page using the AEM page editor, a powerful tool for authoring your content.
+
+>[!NOTE]
+>
+>When editing a page in the [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) the console will open the editor appropriate to the page's [template:](/help/sites-cloud/authoring/sites-console/templates.md) either the page editor described in this document, or the [Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >
