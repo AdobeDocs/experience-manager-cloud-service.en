@@ -1,8 +1,12 @@
 ---
-description: This tutorial includes all information related to components of EDS. .
-title: Form Components supported in Form block - Developer Tutorial
+title: AEM Forms Edge Delivery Service Form Components
+description: AEM Forms Edge Delivery Service built for peak performance, empowering you to envision the future of streamlined data collection and user engagement. The article lists all the forms components available out of the box for EDD forms. 
 feature: Edge Delivery Services
+hide: yes
+hidefromtoc: yes
 ---
+
+
 
 # HTML Components supported in Form Block Edge Delivery
 
