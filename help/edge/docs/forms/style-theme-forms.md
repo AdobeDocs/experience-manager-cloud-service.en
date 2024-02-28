@@ -262,7 +262,7 @@ Similar to dropdown components, radio and checkbox groups have their own HTML st
 ```
 
 
-#### Radio Group HTML Structure 
+#### Checkbox Group HTML Structure 
 
 ```HTML
 
