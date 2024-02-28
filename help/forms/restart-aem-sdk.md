@@ -9,7 +9,9 @@ feature: Adaptive Forms
 
 If you restart the AEM SDK by stopping the Java™ processes, may lead to inconsistencies in the AEM development environment an error occurs as:
 
+`javax.jcr.RepositoryException: Applying repoinit operation failed despite retry; set loglevel to DEBUG to see all exceptions. Last exception message was: Failed to set ACL (javax.jcr.ValueFormatException: Invalid type: 0) AclLine ALLOW {principals=[forms-xfa-writers], privileges=[jcr:modifyProperties]} restrictions=[rep:glob=[*/jcr:content/*], rep:itemNames=[xfaForm], fd:condition=[xfaForm, 1]]`
 
+![Restart-aem-sdk-error](/help/forms/assets/restart-sdk-error.png)
 
 ## Solution
 
