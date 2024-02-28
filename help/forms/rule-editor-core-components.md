@@ -216,11 +216,7 @@ Following example selects the value of `Question2` as `True` and sets the value 
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
-Example of Set Value rule using Form Data Model service
-
-<--
-In addition, you can use Set Value of rule to populate all values in a drop-down list component from the output of a Form Data Model service. However, ensure that the output argument you choose is of an array type. All values returned in an array become available in the specified drop-down list.
--->
+Example of Set Value rule using Form Data Model service.
 
 ### [!UICONTROL Show] {#show}
 
@@ -619,6 +615,10 @@ Syntax: `@param {type=} name <Parameter Description>`
 Alternatively, you can use: `@param {type} [name] <Parameter Description>`
 By default all parameters are mandatory. You can mark a parameter optional by adding `=` in type of the parameter or by putting param name in square brackets.
    
+   For example, let us add an optional parameter as Salary:
+   `@param {type=} Salary`
+   `@param {type} [Salary]`
+
 * **Return Type**
   Syntax: `@return {type}`
   Alternatively, you can use `@returns {type}`.
