@@ -22,6 +22,12 @@ Summarized below are the continuous improvements for maintenance release 15262, 
 * ASSETS-33590: Add support for webm renditions for videos in processing profiles.
 * GRANITE-36205: Update oak version to 1.60-T20240131102219-0cde853.
 * SITES-19326: Update links in Assets UI to open CF in new CF Editor.
+* GUIDES-12945: AI-powered Smart Suggestions to add content references while authoring content
+* GUIDES-12706: Revamped version history feature in the Web Editor
+* GUIDES-14948: Improved user experience in the Translation panel
+* GUIDES-8782: Improved search logic in the Insert Element dialog box
+* GUIDES-14681: Ability to publish multiple output presets with dynamic baselines 
+* For complete list of enhancements in AEM Guides, please refer  : [Whats new in AEM Guides 2024.2.0](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/whats-new-2024-2-0.html?lang=en#release-info)
 
 ### Fixed Issues {#fixed-issues-15262}
 
@@ -82,6 +88,12 @@ Summarized below are the continuous improvements for maintenance release 15262, 
 * SITES-17768: GraphQL to output Dynamic Media URL for assets referenced in Content Fragments.
 * SKYOPS-66622: Author deployment crash looping after running a buildTransform enabled pipeline.
 * SKYOPS-69977: Adaptive Image Servlet does not load image after latest update.
+* GUIDES-15045: Spell check in the Editor does not allow the selection of suggestions.
+* GUIDES-14968: The global navigation button is not working, and the dashboard fails to load.
+* GUIDES-14943: In Native PDF publishing, custom attributes within condition presets are not working for Native PDF publishing.
+* GUIDES-15085: In Native PDF publishing, key references are not getting resolved for December 2023 release  of Adobe Experience Manager Guides.
+* GUIDES-13486: **Baseline Filter** files are not working with File Name in the Web Editor.
+* For complete list of AEM Guides fixed issues, please refer : [AEM Guides Fixed issues 2024.2.0](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/fixed-issues-2024-2-0.html?lang=en#release-info)
 
 ### Known Issues {#known-issues-15262}
 
