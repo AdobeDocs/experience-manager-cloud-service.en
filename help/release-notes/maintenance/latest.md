@@ -27,7 +27,7 @@ Summarized below are the continuous improvements for maintenance release 15262, 
 * GUIDES-14948: Improved user experience in the Translation panel
 * GUIDES-8782: Improved search logic in the Insert Element dialog box
 * GUIDES-14681: Ability to publish multiple output presets with dynamic baselines 
-* For complete list of enhancements in AEM Guides, please refer  : [Whats new in AEM Guides 2024.2.0](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/whats-new-2024-2-0.html?lang=en#release-info)
+* For complete list of enhancements in AEM Guides, please refer  : [What's new in AEM Guides 2024.2.0](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/whats-new-2024-2-0.html?lang=en#release-info)
 
 ### Fixed Issues {#fixed-issues-15262}
 
