@@ -7,7 +7,7 @@ exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 
 Within Adobe Experience Manager as a Cloud Service a content fragment extends a standard asset; see:
 
-* [Creating and Managing Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) and [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md) for further information about content fragments.
+* [Creating and Managing Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) and [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md) for further information about content fragments.
 
 * [Managing Assets](/help/assets/manage-digital-assets.md) for further information about standard assets.
 
@@ -92,7 +92,7 @@ To integrate with Assets core:
 >
 >The [Content Fragment component is part of Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html). See [Developing Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) for more details.
 
-Content fragments can be referenced from AEM pages, just as any other asset type. AEM provides the **[Content Fragment core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)** - a [component that lets you include content fragments on your pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend this **[Content Fragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** core component.
+Content fragments can be referenced from AEM pages, just as any other asset type. AEM provides the **[Content Fragment core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)** - a [component that lets you include content fragments on your pages](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend this **[Content Fragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** core component.
 
 * The component uses the `fragmentPath` property to reference the actual content fragment. The `fragmentPath` property is handled in the same manner as similar properties of other asset types; for example, when the content fragment is moved to another location.
 
