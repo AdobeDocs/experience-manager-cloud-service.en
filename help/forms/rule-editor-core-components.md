@@ -41,7 +41,7 @@ The Show, Hide, Enable, Disable, Set Value Of, and Validate rule types in rule e
 
 >[!NOTE]
 >
->The available rule types, including conditions and actions that you define in rule editor, also depend on the type of form object on which you are creating a rule. The rule editor displays only valid rule types and options for writing condition and action statements for a particular form object type. For example, you do not see Validate, Set Value Of, Enable, and Disable rule types for a panel object.
+>The available rule types, including conditions and actions that you define in rule editor, also depend on the type of form object on which you are creating a rule. The rule editor displays only valid rule types and options for writing condition and action statements for a particular form object type. For example, you do not see Validate and Set Value Of types for a panel object.
 
 For more information about rule types available in the rule editor, see [Available rule types in rule editor](rule-editor.md#p-available-rule-types-in-rule-editor-p).
 
@@ -218,9 +218,9 @@ Following example selects the value of `Question2` as `True` and sets the value 
 
 Example of Set Value rule using Form Data Model service
 
->[!NOTE]
->
->In addition, you can use Set Value of rule to populate all values in a drop-down list component from the output of a Form Data Model service. However, ensure that the output argument you choose is of an array type. All values returned in an array become available in the specified drop-down list.
+<--
+In addition, you can use Set Value of rule to populate all values in a drop-down list component from the output of a Form Data Model service. However, ensure that the output argument you choose is of an array type. All values returned in an array become available in the specified drop-down list.
+-->
 
 ### [!UICONTROL Show] {#show}
 
@@ -612,10 +612,10 @@ Supported `jsdoc` tags:
 
    `object` type is used to pass readable field object in parameter to a custom function instead of passing the value.
 
-   All parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case-sensitive. Spaces are not allowed in the parameter `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+   All parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case-sensitive. Spaces are not allowed in the parameter name.  Parameter description can have multiple words.
 
 * **Optional Parameter**
-Syntax: `@param {type=} name <Parameter `
+Syntax: `@param {type=} name <Parameter Description>` 
 Alternatively, you can use: `@param {type} [name] <Parameter Description>`
 By default all parameters are mandatory. You can mark a parameter optional by adding `=` in type of the parameter or by putting param name in square brackets.
    
@@ -626,15 +626,15 @@ By default all parameters are mandatory. You can mark a parameter optional by ad
   {type} represents the return type of the function. Allowed return types are:
 
     1. string
-    1. number
-    1. boolean
-    1. string[]
-    1. number[]
-    1. boolean[]
-    1. date
-    1. date[]
-    1. array
-    1. object
+    2. number
+    3. boolean
+    4. string[]
+    5. number[]
+    6. boolean[]
+    7. date
+    8. date[]
+    9. array
+    10. object
 
   All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case-sensitive.
 
