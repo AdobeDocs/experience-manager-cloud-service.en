@@ -124,7 +124,7 @@ The following quote block example follows this approach.
 
 Now that your basic quote block is defined and committed to the sample project, you can add a quote block to an existing page.
 
-1. In a browser, sign into AEM as a Cloud Service. [Using the Sites console,](/help/sites-cloud/authoring/getting-started/basic-handling.md) navigate to the site that you created in the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) guide and select a page.
+1. In a browser, sign into AEM as a Cloud Service. [Using the Sites console,](/help/sites-cloud/authoring/basic-handling.md) navigate to the site that you created in the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) guide and select a page.
 
    * In this case, `index` is used for illustrative purposes.
 

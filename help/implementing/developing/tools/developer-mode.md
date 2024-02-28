@@ -7,7 +7,7 @@ exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 ---
 # Developer Mode {#developer-mode}
 
-When editing pages in AEM, several [modes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) are available, including Developer mode. Developer mode opens a side panel with several tabs that provide a developer with technical information about the current page.
+When editing pages in AEM, several [modes](/help/sites-cloud/authoring/sites-console/introduction.md#page-modes) are available, including Developer mode. Developer mode opens a side panel with several tabs that provide a developer with technical information about the current page.
 
 There are two tabs:
 
@@ -35,7 +35,7 @@ Developer mode is implemented as a side panel to the page editor. To open the pa
 
 The panel is divided into two tabs:
 
-* **[Components](#components)** - This shows a component tree, similar to the [content tree](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) for authors
+* **[Components](#components)** - This shows a component tree, similar to the [content tree](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#content-tree) for authors
 * **[Errors](#errors)** - When problems occur, details are shown for each component.
 
 ### Components Tab {#components}
@@ -49,7 +49,7 @@ This shows a component tree that:
 * Lets you expand the tree and select specific components within the tree. Selection provides access to component details; such as:
   * Repository path
   * Links to scripts (accessed in CRXDE Lite)
-  * Component detail as seen in the [Components Console](/help/sites-cloud/authoring/features/components-console.md)
+  * Component detail as seen in the [Components Console](/help/sites-cloud/authoring/components-console.md)
 * Components selected in the tree are indicated by a blue border in the editor.
 
 This components tab helps to:
@@ -70,7 +70,7 @@ Each component entry may have the following options:
 
 * **Edit Script:** A link that opens the component script in CRXDE Lite.
 
-* **View Component Details:** Opens the details of the component within the [Components Console](/help/sites-cloud/authoring/features/components-console.md).
+* **View Component Details:** Opens the details of the component within the [Components Console](/help/sites-cloud/authoring/components-console.md).
 
 Expanding a component entry by tapping or clicking the chevron can also show:
 

@@ -86,7 +86,7 @@ AEM provides a **References** rail that shows a list of language roots that have
 
 ![Language roots](../assets/language-roots.png)
 
-Use the following procedure view the language copies for a page using the [rail selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+Use the following procedure view the language copies for a page using the [rail selector](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 1. On the sites console, select a page of the site and then select **References**.
 
