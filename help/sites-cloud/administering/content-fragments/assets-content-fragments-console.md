@@ -33,6 +33,7 @@ From the **Assets** view of the Content Fragments console you can:
 * Navigate the structure and browse your Assets; [similar to the functionality in the Assets console](/help/assets/navigate-assets-view.md)
 * [Create a folder](/help/assets/manage-digital-assets.md#creating-folders)
 * [Upload Assets](/help/assets/add-delete-assets-view.md)
+* Configure the view type (List, Grid, Gallery, Waterfall); and when appropriate the columns visible
 
 You can also take actions on one, or more, selected Assets:
 
