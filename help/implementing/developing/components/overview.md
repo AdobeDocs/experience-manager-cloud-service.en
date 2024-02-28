@@ -5,7 +5,7 @@ exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
 ---
 # Components Overview {#components-overview}
 
-This page provides an overview of Adobe Experience Manager (AEM) components such as those [used for page authoring](/help/sites-cloud/authoring/fundamentals/components.md).
+This page provides an overview of Adobe Experience Manager (AEM) components such as those [used for page authoring](/help/sites-cloud/authoring/page-editor/components.md).
 
 ## What are Components? {#what-are-components}
 
@@ -42,7 +42,7 @@ The Core Components are provided with AEM as a Cloud Service and the [WKND Tutor
 
 ### Viewing Available Components {#viewing-available-components}
 
-For an overview of all available components in your AEM instance, use the [Components Console](/help/sites-cloud/authoring/features/components-console.md).
+For an overview of all available components in your AEM instance, use the [Components Console](/help/sites-cloud/authoring/components-console.md).
 
 Alternatively, you can also use CRXDE Lite to get a list of all the components available in the repository.
 

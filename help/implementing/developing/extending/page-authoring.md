@@ -30,7 +30,7 @@ For more information on overlays, see [Overlays for Adobe Experience Manager as 
 
 ## Add New Layer (Mode) {#add-new-layer-mode}
 
-When you are editing a page, there are various [modes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) available. These modes are implemented using [layers](/help/implementing/developing/introduction/ui-structure.md#layer). These allow access to differing types of functionality for the same page content. Standard AEM modes include Edit, Layout, Developer, Timewarp, Live Copy Status, and Targeting.
+When you are editing a page, there are various [modes](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes) available. These modes are implemented using [layers](/help/implementing/developing/introduction/ui-structure.md#layer). These allow access to differing types of functionality for the same page content. Standard AEM modes include Edit, Layout, Developer, Timewarp, Live Copy Status, and Targeting.
 
 ### Layer Example: Live Copy Status {#layer-example-live-copy-status}
 

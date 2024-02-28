@@ -9,11 +9,11 @@ exl-id: 03c08616-2203-4b90-bed6-4836266e2507
 
 Content creation is an iterative process. Authoring with efficiency requires being able to see what has changed from one iteration to another. Viewing one page version and then the other is inefficient and prone to error. An author wants to be able to compare the current page to a previous version side-by-side with the differences highlighted.
 
-The page diff allows a user to compare the current page to launches, previous versions, and so on. For details of this user feature, see [Page Diff](/help/sites-cloud/authoring/features/page-diff.md).
+The page diff allows a user to compare the current page to launches, previous versions, and so on. For details of this user feature, see [Page Diff](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Operation Details {#operation-details}
 
-When comparing versions of a page, the previous version that the user wants to compare is recreated by AEM in the background to facilitate the diff. This previous version is necessary to render the content [for side-by-side comparison](/help/sites-cloud/authoring/features/page-diff.md).
+When comparing versions of a page, the previous version that the user wants to compare is recreated by AEM in the background to facilitate the diff. This previous version is necessary to render the content [for side-by-side comparison](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 This recreation operation is done by AEM internally and is transparent to the user and requires no intervention. However, an administrator viewing the repository, for example, in CRXDE Lite, would see these recreated versions within the content structure.
 
