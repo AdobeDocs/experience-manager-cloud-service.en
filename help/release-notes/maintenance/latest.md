@@ -93,7 +93,7 @@ Summarized below are the continuous improvements for maintenance release 15262, 
 * GUIDES-14943: In Native PDF publishing, custom attributes within condition presets are not working for Native PDF publishing.
 * GUIDES-15085: In Native PDF publishing, key references are not getting resolved for December 2023 release  of Adobe Experience Manager Guides.
 * GUIDES-13486: **Baseline Filter** files are not working with File Name in the Web Editor.
-* For complete list of issues fixed in AEM Guides, please refer : [AEM Guides Fixed issues](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/fixed-issues-2024-2-0.html?lang=en#release-info)
+* For complete list of issues fixed in AEM Guides, please refer : [AEM Guides fixed issues](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/fixed-issues-2024-2-0.html?lang=en#release-info)
 
 ### Known Issues {#known-issues-15262}
 
