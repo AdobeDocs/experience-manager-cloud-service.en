@@ -5,7 +5,7 @@ exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 ---
 # Configuring Search Forms {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service comes with a powerful [Search](/help/sites-cloud/authoring/getting-started/search.md) mechanism. 
+Adobe Experience Manager as a Cloud Service comes with a powerful [Search](/help/sites-cloud/authoring/search.md) mechanism. 
 
 In combination with this there are a also set of predefined options to help you to filter your content. These hold predefined facets such as **Modified Date**, **Publish Status**, or **Livecopy Status** to help you quickly drill down to the resources you need.
 
@@ -13,9 +13,9 @@ In combination with this there are a also set of predefined options to help you 
 
 Together these aim to help you locate your content quickly and easily from:
 
-* [Search and Filter](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
-* [Rail Selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* the [Assets Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (when editing pages)
+* [Search and Filter](/help/sites-cloud/authoring/search.md#search-and-filter)
+* [Rail Selector](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
+* the [Assets Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) (when editing pages)
 
 >[!NOTE]
 >
