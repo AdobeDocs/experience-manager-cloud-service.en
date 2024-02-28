@@ -135,7 +135,7 @@ Now that you have a GitHub project, you must create a new AEM site that the proj
 
    ![Universal Editor](assets/edge-dev-getting-started/universal-editor.png)
 
-You can now edit your site using the Universal Editor. See the [Universal Editor documentation](/help/implementing/universal-editor/authoring.md) for more information.
+You can now edit your site using the Universal Editor. See the [Universal Editor documentation](/help/sites-cloud/authoring/universal-editor/authoring.md) for more information.
 
 ### Publishing Your New Site {#publishing}
 

@@ -174,6 +174,7 @@ user-guide-title: AEM as a Cloud Service
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
   + [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md)
   + [AEM as a Cloud Service Security Considerations](/help/security/security-considerations.md)
+  + [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Onboarding {#onboarding}
   + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
   + Onboarding Journey {#journey}
@@ -300,6 +301,9 @@ user-guide-title: AEM as a Cloud Service
       + [Keyboard Shortcuts](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
       + [Style System](/help/sites-cloud/authoring/page-editor/style-system.md)
       + [Undo Redo Limitations](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+    + Universal Editor {#universal-editor}
+      + [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
+      + [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
     + Fragments {#fragments}
       + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
       + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -698,6 +702,7 @@ user-guide-title: AEM as a Cloud Service
   + Troubleshooting {#troubleshooting-aem-forms-cloud-service}
     + [Installation and configuration](/help/forms/troubleshooting-installation-and-configuration.md)
     + [Dispatcher and CDN caching](/help/forms/troubleshooting-caching-performance.md)
+    + [Restarting AEM SDK](/help/forms/restart-aem-sdk.md)
 + Screens {#screens-as-cloud-service}
   + Overview to Screens as a Cloud Service {#overview}
     + [Introduction](/help/screens-cloud/introduction/introduction.md)
@@ -716,6 +721,7 @@ user-guide-title: AEM as a Cloud Service
     + [Using Screens Content Provider](/help/screens-cloud/configuring/using-screens-content-provider.md)
     + [Creating Screens Video Renditions](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
     + [Configuring Dispatcher for Screens as a Cloud Service](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
+    + [Configuring Timeline Views for Screens as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md) 
   + Creating Content {#create-content}
     + [Creating and Managing a Project in Screens Content Provider](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
     + [Creating and Managing a Channel in Screens Content Provider](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
@@ -1024,6 +1030,18 @@ user-guide-title: AEM as a Cloud Service
         + [Implementing a Custom Predicate Evaluator](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [Custom Error Pages](/help/implementing/developing/introduction/custom-error-page.md)
       + [AEM Node Types](/help/implementing/developing/introduction/node-types.md)
+    + Universal Editor {#universal-editor}
+      + [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md)
+      + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
+      + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
+      + [Universal Editor Developer Overview](/help/implementing/universal-editor/developer-overview.md)
+      + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
+      + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
+      + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
+      + [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md)
+      + [Universal Editor Calls](/help/implementing/universal-editor/calls.md)
+      + [Events](/help/implementing/universal-editor/events.md)
+      + [Customizing the Universal Editor](/help/implementing/universal-editor/customizing.md)
     + [Headless Experience Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
     + Hybrid and SPA Development {#hybrid}
       + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1140,19 +1158,3 @@ user-guide-title: AEM as a Cloud Service
   + Accessibility {#accessibility}
     + [AEM as a Cloud Service and the Web Accessibility Guidelines](/help/compliance/accessibility/web-accessibility.md)
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
-+ Universal Editor {#universal-editor}
-  + [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md)
-  + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
-  + Authoring {#developing}
-    + [Authoring Content with the Universal Editor](/help/implementing/universal-editor/authoring.md)
-    + [Publishing Content with the Universal Editor](/help/implementing/universal-editor/publishing.md)
-  + Developing {#developing}
-    + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
-    + [Universal Editor Developer Overview](/help/implementing/universal-editor/developer-overview.md)
-    + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
-    + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
-    + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
-    + [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md)
-    + [Universal Editor Calls](/help/implementing/universal-editor/calls.md)
-    + [Customizing the Universal Editor](/help/implementing/universal-editor/customizing.md)
-    + [Events](/help/implementing/universal-editor/events.md)
