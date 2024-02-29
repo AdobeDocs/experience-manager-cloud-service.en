@@ -30,6 +30,8 @@ To do this, you need to set up AEM to run on HTTPS. For development purposes you
 
 ## Install the Universal Editor Service {#install-ue-service}
 
+The Universal Editor Service is not an entire copy of the Universal Editor, but only a subset of its features to ensure that calls from your local AEM environment are not routed over the internet, but from a defined endpoint you control.
+
 [NodeJS version 16](https://nodejs.org/en/download/releases) is required to run a local copy of the Universal Editor Service.
 
 The Universal Editor Service is distributed by AEM Engineering directly. Contact your engineer in the VIP program for a local copy.
