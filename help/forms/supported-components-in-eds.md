@@ -1,5 +1,5 @@
 ---
-title: AEM Forms Edge Delivery Service 
+title: AEM Forms Edge Delivery Service Form Components
 description: AEM Forms Edge Delivery Service built for peak performance, empowering you to envision the future of streamlined data collection and user engagement. The article lists all the forms components available out of the box for EDD forms. 
 feature: Edge Delivery Services
 hide: yes
@@ -8,58 +8,12 @@ hidefromtoc: yes
 
 
 
-# Form Components
+# HTML Components supported in Form Block Edge Delivery
 
-The Form Block helps you to easily create forms to capture and store captured data. It supports components based on all the HTML5 [input-types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) such as text, email, number, date, and many more. It also supports [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea), [select](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select), and [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) elements, and includes input validation features that are native to HTML5. 
+AEM Forms Edge Delivery includes a Form block. The Form Block helps you to easily create forms to capture and store captured data. 
 
-The Form Block generates a uniform HTML structure for all field types and containers (panels) ensuring the consistency. This consistent structure makes it easier to [style a form](/help/edge/docs/forms/style-theme-forms.md).
+The Form block supports HTML-5 components such as text, email, number, date, and many more. It also supports text area, select, and fieldset elements, and includes input validation features that are native to HTML-5. The Form Block creates uniform HTML structure for all field types and containers ensuring the consistency. You also [style the field types](https://adobe-rnd.github.io/form-block/customization/styling_form) using the `form.css` file. 
 
-
-## Components properties
-
-The following properties are supported for form components of the Form Block:
-
-<table>
- <tbody>
-  <tr>
-   <td><b>Property</b> </td>
-   <td><b>Form Components (Input type)</b> </td>
-   <td><b>Details</b></td>
-  </tr>
-  <tr>
-   <td>Name</td>
-   <td>All components</td>
-   <td> A string specifying a name for the component. The component's data is submitted against this name.
-   </td>
-  </tr>
-  <tr>
-   <td>Label</td>
-   <td>All components</td>
-   <td> The label serves as caption of the field.
-   </td>
-  </tr>
-  <tr>
-   <td>Value</td>
-   <td>All components</td>
-   <td> The initial value of the control. For radio and checkbox components this is the value/data which is submitted when they are selected. The value attribute is always optional, though should be considered mandatory for checkbox and radio.
-   </td>
-  </tr>
-    <tr>
-   <td>Placeholder</td>
-   <td>Text, Search, URL, Tel, Email, Password, and Number</td>
-   <td> The placeholder attribute provides a brief hint to the user as to what kind of information is expected in the field.
-   </td>
-  </tr>
-      <tr>
-   <td>Placeholder</td>
-   <td>Text, Search, URL, Tel, Email, Password, and Number</td>
-   <td> The placeholder attribute provides a brief hint to the user as to what kind of information is expected in the field.
-   </td>
-  </tr>
-  </tbody>
-</table>
-
-<!-- 
 ## Supported HTML 5 input types in Form Block
 
 The Form Block supports a range of HTML 5 input types, and it also seamlessly renders forms created with AEM core components.
