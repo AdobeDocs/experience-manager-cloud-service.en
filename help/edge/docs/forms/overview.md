@@ -9,26 +9,28 @@ hidefromtoc: yes
 # AEM Forms Edge Delivery Service {#aem-forms-edge-delivery-service-overview}
 
 
-<div>
-<style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
-    <main class="content">
-      <section class="content-section">
-        <p style="line-height: 1.5;">AEM Forms Edge Delivery Service is a composable service offered by Adobe that allows you to create and deliver high-impact, fast-performing web forms. You can use the service to:</p>
-        </section> <section class="content-section">
-        <h2 style="font-size: 20px; margin-bottom: 10px;">Captivate users with stunning forms</h2>
-        <img src="/help/edge/assets/enrollment-form.png" alt="Enrollment Form" style="float: left; margin: 0 20px 20px 0; width: 150px;">
-        <p style="line-height: 1.5;">Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life.</p>
-        </section> <section class="content-section">
-        <h2 style="font-size: 20px; margin-bottom: 10px;">Build forms with perfect lighthouse score</h2>
-        <img src="/help/edge/assets/lighthouse-forms.png" alt="perfect lighthouse score for your forms" style="float: right; margin: 20px 0 0 20px; width: 150px;">
-        <p style="line-height: 1.5;"> Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.</p>
-        </section>
-        <section class="content-section">
-        <h2 style="font-size: 20px; margin-bottom: 10px;">Create digital enrollment experiences with tools of your choice</h2>
-        <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="Enrollment Form" style="float: left; margin: 0 20px 20px 0; width: 150px;">
-        <p style="line-height: 1.5;">Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.</p>
-        </section>
-</div>
+ <div style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+        <main class="content">
+            <section class="content-section">
+                <p style="line-height: 1.5;">AEM Forms Edge Delivery Service is a composable service offered by Adobe that allows you to create and deliver high-impact, fast-performing web forms. You can use the service to:</p>
+            </section>
+            <section class="content-section"></br>
+                <h2 style="font-size: 20px; margin-bottom: 10px;">Captivate users with stunning forms</h2>
+                <img src="/help/edge/assets/enrollment-form.png" alt="Enrollment Form" style="float: left; margin: 0 20px 20px 0; width: 30%;">
+                <p style="line-height: 1.5;">Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life.</p>
+            </section>
+            <section class="content-section"></br>
+                <h2 style="font-size: 20px; margin-bottom: 10px;">Build forms with perfect lighthouse score</h2>
+                <img src="/help/edge/assets/lighthouse-forms.png" alt="perfect lighthouse score for your forms" style="float: right; margin: 20px 0 0 20px; width: 30%;">
+                <p style="line-height: 1.5;"> Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.</p>
+            </section>
+            <section class="content-section"></br>
+                <h2 style="font-size: 20px; margin-bottom: 10px;">Create digital enrollment experiences with tools of your choice</h2>
+                <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="Enrollment Form" style="float: left; margin: 0 20px 20px 0; width: 30%;">
+                <p style="line-height: 1.5;">Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.</p>
+            </section>
+        </main>
+    </div>
 
 
 <!-- >
@@ -106,19 +108,19 @@ Build complex and engaging forms with ease using a library of pre-built componen
         </a>
         <p>Reduce errors and frustration by checking form inputs for proper formatting.</p>
     </div> 
+            <div class="card-container">
+        <a href="/help/edge/docs/forms/rules-forms.md">
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Use rules to add dynamic behaviour to a form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Use rules to add dynamic behaviour to a form</b>
+        </a>
+        <p>Reuse preconfigured fragments across multiple forms.</p>
+    </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
             <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Translate an EDS Form" style="border-radius: 5px;"> </b>
             <br><b style="margin-top: 5px;">Translate a form</b>
         </a>
         <p>Extend the reach of your forms while keeping costs in check.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/form-fragments.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Use Form Fragments in an EDS Form" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Create form fragments</b>
-        </a>
-        <p>Reuse preconfigured fragments across multiple forms.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  
@@ -141,6 +143,7 @@ Build complex and engaging forms with ease using a library of pre-built componen
         </a>
         <p>Use OOTB reCAPTCHA integration for robust spam and bot protection.</p>
     </div>
+
 
 </div>
 

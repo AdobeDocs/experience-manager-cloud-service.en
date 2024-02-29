@@ -51,8 +51,8 @@ The following properties are supported for form components of the Form Block:
    </td>
   </tr>
       <tr>
-   <td>Placeholder</td>
-   <td>Text, Search, URL, Tel, Email, Password, and Number</td>
+   <td>Description</td>
+   <td>Applicable for all the fields</td>
    <td> The placeholder attribute provides a brief hint to the user as to what kind of information is expected in the field.
    </td>
   </tr>
