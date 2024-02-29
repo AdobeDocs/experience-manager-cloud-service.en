@@ -839,7 +839,7 @@ user-guide-title: AEM as a Cloud Service
     + [Admin API](https://www.aem.live/docs/admin.html)
     + [AEM Status](https://www.aemstatus.net)
     + Tools {#tools}
-      + [Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+      + [AEM Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
       + [Github Bot](https://github.com/apps/aem-code-sync)
       + [Audit Log](/help/edge/docs/auditlog.md)
 + Headless {#headless}
