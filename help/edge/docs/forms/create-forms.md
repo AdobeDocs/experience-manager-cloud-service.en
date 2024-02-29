@@ -1,12 +1,12 @@
 ---
-title: Getting Started with AEM Forms Edge Delivery Service
+title: Getting Started with AEM Forms Edge Delivery Service. Create a form. 
 description: Craft perfect forms, fast! ⚡ AEM Forms Edge Delivery doc-based authoring = blazing speed & SEO-friendly forms for happier users & search engines.
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
 ---
 
-# Create a form on AEM Forms Edge Delivery Service
+# Create a form for a Edge Delivery Service (EDS) Site
 
 In today's digital age, creating user-friendly forms is essential for any organization. AEM Forms Edge Delivery's lets you create forms using familiar tools like Word or Google Docs. 
 
@@ -19,9 +19,9 @@ AEM Forms Edge Delivery provides a Form block to help you easily create forms to
 
 Before you start, ensure that you have completed the following steps:
 
-* Set up Edge Delivery Service (EDS) Github project using AEM boilerplate and clone the corresponding Github repository on your local machine. See [developer tutorial](https://www.aem.live/developer/tutorial) for details. In this document, the local folder of your Edge Delivery Service (EDS) project is referred as `[EDS Project repository]` . 
+* Set up Edge Delivery Service (EDS) GitHub project using AEM boilerplate and clone the corresponding GitHub repository on your local machine. See [developer tutorial](https://www.aem.live/developer/tutorial) for details. In this document, the local folder of your Edge Delivery Service (EDS) project is referred as `[EDS Project repository]` . 
 * Clone the [Forms Block repository](https://github.com/adobe/afb) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Forms Block repository]`. 
-* Ensure that you have access to Google Sheets or Microsoft SharePoint. To setup Microsoft SharePoint as your content source, see [How to use Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
+* Ensure that you have access to Google Sheets or Microsoft SharePoint. To set up Microsoft SharePoint as your content source, see [How to use Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
@@ -29,65 +29,78 @@ Before you start, ensure that you have completed the following steps:
 
 +++ Step 1: Add the Form block to your Edge Delivery Service (EDS) project.
 
-The `Form block` includes the capability to add a form to an EDS Site. The block is not included in the a project created using AEM boilerplate. To include the Form block to your Edge Delivery Service project: 
+The Form block empowers users to create forms for an Edge Delivery Service Site. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Service project). To seamlessly integrate the Form block into your Edge Delivery Service project:
 
-1. Navigate to the `[Forms Block repository]/blocks` folder on your local machine and copy the `form` folder.
+1. **Locate the Form Block Repository:** Access the [Forms Block repository]/blocks folder on your local machine and copy the `form` folder.
+1. **Paste the Form Block into your EDS Project:**
+Navigate to the [EDS Project repository]/blocks/ folder on your local machine and paste the form folder.
+1. **Commit Changes to GitHub:** Check in the form folder and its underlying files to your Edge Delivery Service project on GitHub.
 
-1. Navigate to the `[EDS Project repository]/blocks/` folder on your local machine and paste the `form` folder. 
+After completing these steps, the Form block is successfully integrated into your Edge Delivery Service(EDS) project repository on GitHub. 
+ 
 
-1. Check in the `form` folder and underlying files to your Edge Delivery Service project on GitHub. 
+**Troubleshooting GitHub build issues**
 
-    The Form block is added to your EDS project repository on GitHub. Ensure that the GitHub build does not fail:
+Ensure a smooth GitHub build process by addressing potential issues:
 
-    * If you encounter an error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", open the `[EDS Project]/blocks/forms/form.js` file. In the import statement, replace the `lib-franklin.js` file with the `aem.js` file.
+* **Resolve Module Path Error:**
+    If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
+
+* **Handle Linting Errors:**
+    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project.
+
     
-    * If you encounter any linting errors, feel free to disregard them. To bypass the linting checks, open the `[EDS Project]\package.json` file and update the "lint" script from `"lint": "npm run lint:js && npm run lint:css"` to `"lint": "echo 'skipping linting for now'"`. Save the file and commit it to your GitHub project.
-
-You can now create a form and add it to your site. 
 
 +++
 
 +++ Step 2: Author a form using Microsoft Excel or Google Sheet.
 
-Instead of complex processes, you can easily create a form using a spreadsheet. You can start by adding the rows and column headers to a spreadsheet, where each row defines a form field and each column header defines the properties of the corresponding form fields.
+Instead of navigating through complex processes, crafting a form can be effortlessly achieved using a spreadsheet. You can start by adding the rows and column headers to a spreadsheet, where each row represents a form field, while each column header defines the properties of the corresponding field.
 
-For example, in the following spreadsheet, rows define the fields for a `contact us` form and column header defines properties of the corresponding fields. 
+For instance, consider the following spreadsheet where rows outline fields for a `enquiry` form and column headers define their properties:
 
-![contact us spreadsheet](/help/edge/assets/contact-us-form-spreadsheet.png)
+![Enquiry spreadsheet](/help/edge/assets/enquiry-form-spreadsheet.png)
 
-To create a form: 
+To proceed with form creation:
 
-1. Open your AEM Edge Delivery project folder on Microsoft SharePoint or Google Drive.  
+1. Access your AEM Edge Delivery project folder on Microsoft SharePoint or Google Drive. 
 
-1. Create a Microsoft Excel Workbook or Google Sheet anywhere under your AEM Edge Delivery project directory. For example, create a spreadsheet named `contact-us` on AEM Edge Delivery project directory on Google Drive. 
+1. Create a Microsoft Excel Workbook or Google Sheet anywhere within your AEM Edge Delivery project directory. For example, create a spreadsheet named `enquiry` on AEM Edge Delivery project directory on Google Drive. 
 
-1. Make sure that the sheet is shared with AEM user (for example `helix@adobe.com`) [configured for your project](https://www.aem.live/docs/setup-customer-sharepoint) and user has editing permissions for the sheet. 
+1. Ensure that the sheet is shared with the appropriate AEM user (for example `helix@adobe.com`) [as per the configurations specified for your project](https://www.aem.live/docs/setup-customer-sharepoint). Grant the user editing permission for the sheet. 
 
-1. Open the spreadsheet that you have created and change the name of the default sheet to "shared-default". 
+1. Open the created spreadsheet and rename the default sheet to "shared-default". 
 
     ![rename default sheet to "shared-default"](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. To add the fields of the form, add the rows and column headers to the `shared-default` sheet, where each row defines a form field and each column header defines the [properties](/help/edge/docs/forms/eds-form-field-properties)) of the corresponding form fields. 
+1. To add the form fields, insert rows and column headers into the 'shared-default' sheet. Each row should represent a form field, with column headers defining the corresponding field [properties](/help/edge/docs/forms/eds-form-field-properties).
 
-    To start quickly, you can copy the contents of the [contact us spreadsheet](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link) to your spreadsheet.
+    For a swift start, consider copying the contents of the [Enquiry spreadsheet](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) into your spreadsheet. After copying the content, save your spreadsheet. 
 
     >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
-1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview and publish the sheet. 
 
-    ![Use AEM Sidekick to preview and publish the sheet](/help/edge/assets/preview-form.png)
+1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the sheet. 
 
-    On previewing and publishing, the browser opens new tabs that display the sheet's contents in JSON format. Make sure to take note of the live URL, as it is necessary for rendering the form later on.
+    ![Use AEM Sidekick to preview the sheet](/help/edge/assets/preview-form.png)
 
-    The format of the URL is:
+    Upon previewing and publishing, new browser tabs display the sheet's contents in JSON format. Ensure to capture the preview URL, as this is required for rendering the form in next section. The URL format is as follows:
+
 
     ```JSON
 
-    https://<branch>--<repository>--<owner>.hlx.live/<form>.json
-
-    For example, https://main--portal--wkndforms.hlx.live/contact-us.json
-
+        https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+       
     ```
+
+    * `<branch>` refers to the branch of your GitHub repository. 
+    * `<repository>` denotes your GitHub repository. 
+    * `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
+
+    For example, if your project's repository is named "portal", it's located under the account "wkndforms", and you're using the "main" branch, the URL look like the following:
+
+    `https://main--portal--wkndforms.hlx.page/enquiry.json`
+
 
 +++
 
@@ -96,30 +109,30 @@ To create a form:
 
 Till now, you have added the form block to your EDS project and prepared the structure of the form. Now, to preview the form:
 
-1. Go to your Microsoft SharePoint or Google Drive account and open your AEM Edge Delivery project directory.
+1. **Access Your Project Directory:** Open your Microsoft SharePoint or Google Drive account and navigate to your AEM Edge Delivery project directory..
 
-1. Open a doc file to embed the form to it. For example, open the index file. You can also create a new doc file. 
+1. **Embed the Form into a Document:** Open a document file (For example, index file) to embed the form. Alternatively, you can create a new document.
 
-1. Navigate to the desired location within the document where you want to add the form.
+1. **Navigate to the Desired Location:** Move to the desired location within the document where you intend to add the form.
 
-1. Add a block named 'Form' to the file, similar to the one displayed below. 
+1. **Add the Form Block:** Insert a block named 'Form' into the file, as illustrated below:
 
-    ![](/help/edge/assets/form-block-in-sites-page-example.png)
+    | Form  |
+    |---|
+    | [https://main--portal--wkndforms.hlx.live/enquiry.json ](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
 
-    In the second row, include the URL you recorded in the preceding section as a hyperlink. Use the preview URL (.page URL) for developmental or testing purposes, or the publish URL (.live) for production.
-
-    >[!IMPORTANT]
-    >
-    >
-    > Ensure that the URL is hyperlinked rather than presented as plain text.
-
-
-1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the page. The page now displays the form. 
-
-    For example, here is the form based on the [contact us spreadsheet](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link): 
+    This block serves as a placeholder where the form is embedded. In the second row of the block, add the preview URL of your `<form>.json` file as a hyperlink. 
+    
+     >[!IMPORTANT]
+     >
+     >
+     > Ensure that the URL is formatted as a hyperlink rather than being displayed as plain text.
 
 
-    ![A sample EDS form](/help/edge/assets/eds-form.png)
+1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview the document. The page now displays the form. For example, here is the form based on the [enquiry spreadsheet](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0): 
+
+
+    [![A sample EDS form](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
 
     Now, fill the form and click the submit button, you experience an error, similar to the following, because the spreadsheet is not set to accept the data yet. 
 
