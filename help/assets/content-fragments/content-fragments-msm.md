@@ -18,10 +18,6 @@ For a detailed overview of MSM concepts see [Reusing Content: Multi Site Manager
 >[!NOTE]
 >
 >[Multi Site Manager (MSM)](/help/sites-cloud/administering/msm/overview.md) functionality in Adobe Experience Manager enables users to reuse content that is authored once and then reused across multiple web-locations. 
->
->[MSM for Assets](/help/assets/reuse-assets-using-msm.md) provides comparable functionality for Assets. 
->
->As Content Fragments are a Sites feature, stored as Assets, MSM functionality is also available for Content Fragments.
 
 Using MSM for Content Fragments you can:
 
@@ -29,19 +25,19 @@ Using MSM for Content Fragments you can:
 * Keep multiple copies synchronized by updating the source copy once, then pushing the changes to the (live) copies.
 * Make local changes by temporarily, or permanently, suspending the link between parent and child fragments.
 
-MSM for Content Fragments is based on MSM for Assets. combined with functionality within the Content Fragment Editor, allowing you to break, and reinstate inheritance at the field level.
+MSM for Content Fragments, combined with functionality within the Content Fragment Editor, allows you to break, and reinstate inheritance at the field level.
 
 >[!CAUTION]
 >
->MSM for Content Fragments is only available when using Content Fragments via the **Assets** console as it is based on MSM for Assets. 
+>MSM for Content Fragments is only available when using Content Fragments via the **Assets** console. 
 >
 >MSM functionality is *not* available when using the **Content Fragments** console.
 
 ## How To {#how-to}
 
-See the following documentation for details about the usage of MSM for Content Fragments (based on MSM for Assets):
+See the following documentation for details about the usage of MSM for Content Fragments (also applicable to Assets):
 
-* How to use [MSM for Assets (and Content Fragments)](/help/assets/reuse-assets-using-msm.md) 
+* How to use [MSM for Content Fragments (and Assets)](/help/assets/reuse-assets-using-msm.md) 
 
 * [Create a Live Copy](/help/assets/reuse-assets-using-msm.md)
 
@@ -56,7 +52,7 @@ See the following documentation for details about the usage of MSM for Content F
   * [metadata of related assets](/help/assets/content-fragments/content-fragments-variations.md#canceling-reenabling-inheritance-individual-items)
 * [Suspend and resume the relationship](/help/assets/reuse-assets-using-msm.md#suspend-resume)
 * [Remove the live relationship](/help/assets/reuse-assets-using-msm.md#detach)
-* [Compare MSM for Assets (including Content Fragments) with MSM for Sites](/help/assets/reuse-assets-using-msm.md#comparison)
+* [Compare MSM for Content Fragments (and Assets) with MSM for Sites](/help/assets/reuse-assets-using-msm.md#comparison)
 
 ## Limitations {#limitations}
 
