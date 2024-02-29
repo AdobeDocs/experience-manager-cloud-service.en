@@ -10,8 +10,6 @@ hidefromtoc: yes
 
 Streamline form creation and drive higher completion rates with Adobe's AEM Forms Edge Delivery Service. This powerful, composable service empowers you to build enterprise-grade forms with exceptional performance and visual appeal. AEM prioritizes both the user experience and your business goals, ensuring lightning-fast loading times and increased form completions.
 
-![EDS Forms Key features](/help/edge/assets/eds-forms-key-features.png){width="70%"}
-
 You can use the service to:
 
 * **Captivate users with stunning forms**: Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life.
@@ -20,6 +18,7 @@ You can use the service to:
 
 * **Build forms with perfect Lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
 
+    <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms Key features" style = "width=`80%`; align=`center`; border: 1px solid;padding: 15px;">
 
 <!-- >
 * **Captivate users with stunning forms**: 
