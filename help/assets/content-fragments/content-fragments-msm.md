@@ -4,7 +4,7 @@ description: Learn about using the Live Copy functionality of MSM to use the sam
 ---
 # Reuse Content Fragments using MSM {#reuse-content-fragments-using-msm}
 
-The Live Copy functionality of Multi Site Manager (MSM) enables you to use the same content in multiple locations, while synchronizing with the source content.
+Multi Site Manager (MSM), and the Live Copy functionality, enables you to use the same content in multiple locations, while synchronizing with the source content.
 
 * With MSM Live Copies you can:
   * Create content once and then
