@@ -8,20 +8,55 @@ hidefromtoc: yes
 
 # AEM Forms Edge Delivery Service {#aem-forms-edge-delivery-service-overview}
 
-AEM Forms Edge Delivery Service is a composable service offered by Adobe that allows you to create and deliver high-impact, fast-performing web forms. You can use the service to:
 
-* **Craft visually stunning forms**: Ditch the bland, cookie-cutter designs and captivate users with dynamic, modern forms that reflect your brand identity. Leverage pre-built components or create your own custom components to bring your vision to life quickly and easily.
+<div>
+<style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+    <main class="content">
+      <section class="content-section">
+        <p style="line-height: 1.5;">AEM Forms Edge Delivery Service is a composable service offered by Adobe that allows you to create and deliver high-impact, fast-performing web forms. You can use the service to:</p>
+        </section> <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">Captivate users with stunning forms</h2>
+        <img src="/help/edge/assets/enrollment-form.png" alt="Enrollment Form" style="float: left; margin: 0 20px 20px 0; width: 150px;">
+        <p style="line-height: 1.5;">Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life.</p>
+        </section> <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">Build forms with perfect lighthouse score</h2>
+        <img src="/help/edge/assets/lighthouse-forms.png" alt="perfect lighthouse score for your forms" style="float: right; margin: 20px 0 0 20px; width: 150px;">
+        <p style="line-height: 1.5;"> Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.</p>
+        </section>
+        <section class="content-section">
+        <h2 style="font-size: 20px; margin-bottom: 10px;">Create digital enrollment experiences with tools of your choice</h2>
+        <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="Enrollment Form" style="float: left; margin: 0 20px 20px 0; width: 150px;">
+        <p style="line-height: 1.5;">Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.</p>
+        </section>
+</div>
+
+
+<!-- >
+* **Captivate users with stunning forms**: 
+Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life. 
+
+    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
 
 * **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
 
-* **Simplify authoring and submissions**: Leverage authoring tools that you are comfortable with, such as Microsoft Excel or Google Sheets (Document-based authoring), JSON files (Headless authoring), or Adaptive Forms editor (WYSIWYG authoring), to design and create their forms. The service is decoupled from content source and offers the flexibility in content creation by allowing you to use your preferred authoring tools. 
+    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
+
+* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
 
     ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
- 
-     >[!NOTE]
-     >
-     >
-     > WYSIWYG authoring capability is available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
+    
+<!--
+* **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
+
+* **Use Integrated services:** Use integrated services to streamline and empowers your users with a one-stop shop for managing their digital enrollment journeys. Use e-signatures, automated workflows, document of record (DoR), and seamless data integration, simplify the entire digital enrollment process, accelerate approvals, and optimizes your business workflows. 
+
+    
+>[!NOTE]
+    >
+    >
+    > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
+
+    -->
 
 ## Start with the basics 
 
@@ -51,18 +86,26 @@ AEM Forms Edge Delivery Service is a composable service offered by Adobe that al
         <p>Create forms that load and render quickly and automatically reflows on mobile devices.</p>
     </div>
     <div class="card-container">
-        <a href="/help/edge/docs/forms/validate-forms.md">
-            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Add validations to form fields" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Apply field validations</b>
+        <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
+            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Submit form" alt="Use Form Fragments in an EDS Form" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Submit form to spreadsheet</b>
         </a>
-        <p>Reduce errors and frustration by checking form inputs for proper formatting.</p>
-    </div>    <div class="card-container">
+        <p>Submit forms directly to your Microsoft Excel or Google Sheets.</p>
+    </div>
+     <div class="card-container">
         <a href="/help/edge/docs/forms/style-theme-forms.md">
             <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Apply styles or themes to an eds form" style="border-radius: 5px;"> </b>
             <br><b style="margin-top: 5px;">Customize a theme</b>
         </a>
         <p>Create a consistent brand image by applying the same theme across forms.</p>
     </div>
+      <div class="card-container">
+        <a href="/help/edge/docs/forms/validate-forms.md">
+            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Add validations to form fields" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">Apply field validations</b>
+        </a>
+        <p>Reduce errors and frustration by checking form inputs for proper formatting.</p>
+    </div> 
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
             <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Translate an EDS Form" style="border-radius: 5px;"> </b>
@@ -98,13 +141,7 @@ AEM Forms Edge Delivery Service is a composable service offered by Adobe that al
         </a>
         <p>Use OOTB reCAPTCHA integration for robust spam and bot protection.</p>
     </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
-            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Submit form" alt="Use Form Fragments in an EDS Form" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Submit form to spreadsheet</b>
-        </a>
-        <p>Submit forms directly to your Microsoft Excel or Google Sheets.</p>
-    </div>
+
 </div>
 
 
