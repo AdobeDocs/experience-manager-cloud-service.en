@@ -1,6 +1,6 @@
 ---
-title: Configure thank you page for EDS Forms
-description: Learn how to configure thank you pages and redirection for EDS Forms to optimize user experience and streamline user journeys.
+title: Configure thank you page or redirect form after submission
+description: Learn how to configure thank you pages and redirection for Forms Block to optimize user experience and streamline user journeys.
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
@@ -17,7 +17,7 @@ After a user submits a form, it's crucial to provide a seamless experience throu
 In the Adaptive Forms block, the default behavior is to display a thank you page. However, you have the flexibility to tailor this experience to meet your specific needs. Options include:
 
 * [Configuring the thank you page and message to align with your brand and communication goals](#configuring-the-thank-you-page-and-message) 
-* [Redirecting users to another page post-submission](#redirect-users-to-another-page-post-submission), enhancing their journey further
+* [Redirecting users to another page post-submission for further action](#redirect-users-to-another-page-post-submission)
 
 ## Configuring the thank you page and message
 
@@ -37,10 +37,10 @@ The default behavior of Adaptive Forms block is to display the "thankyou" page o
 
 By default, the Adaptive Forms block redirects the users to the "thankyou" page. To redirect users to a page other than the default "thankyou" page, you have two options: 
 
-* either replace the existing "thankyou" page with a different page, or 
-* redirect the "thankyou" page to another page of your choice.
+* [Replace the "thankyou" page with a different page](#replace-the-existing-thankyou-page) 
+* [Use website redirects for "thankyou" page redirection](#use-website-redirects-for-thankyou-page-redirection) 
 
-### Replace the existing "thankyou" page
+### Replace the "thankyou" page
 
 1. Open the "[EDS Project]/blocks/form/form.js" file for editing.
 1. Change the `thankyou` page in the following line to page of your choice:
@@ -69,9 +69,15 @@ By default, the Adaptive Forms block redirects the users to the "thankyou" page.
 1. Ensure that the page exists in your EDS project folder and publish it.
 
 
-### Use website redirects
+### Use website redirects for "thankyou" page redirection
 
-Configure a website redirect to direct the "thankyou" page to a different page. Refer to the [Redirects documentation](https://www.aem.live/docs/redirects) for detailed instructions.
+Redirecting a user to another page after form submission can enhance user experience by providing relevant information, confirming actions, and guiding users towards desired outcomes. For example, 
+
+* after a user completes a purchase form, they are redirected to a payment page to complete the transaction securely. 
+* upon submitting a registration form for an event or webinar, users are redirected to a confirmation page displaying event details, such as date, time, and location.
+
+To redirect the "thankyou" page to a different page, use the [website redirects](https://www.aem.live/docs/redirects) spreadsheet. 
+
 
 ## See more
 
