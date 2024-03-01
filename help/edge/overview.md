@@ -1,11 +1,11 @@
 ---
-title: AEM and Edge Delivery Services
+title: Getting Started with AEM and Edge Delivery Services
 description: Understand how AEM as a Cloud Service can benefit from the performance and perfect Lighthouse scores offered by Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 ---
 
-# AEM and Edge Delivery Services {#aem-edge}
+# Getting Started with AEM and Edge Delivery Services {#aem-edge}
 
 With Edge Delivery Services, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering high-impact experiences that are fast to author and develop. It is a composable set of services that enables a rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. As such, with Edge Delivery Services you can improve conversion, reduce costs, and provide extreme content velocity.
 
