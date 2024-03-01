@@ -6,7 +6,7 @@ hide: yes
 hidefromtoc: yes
 ---
 
-# Create a form for a Edge Delivery Service (EDS) Site
+# Create a form for a Edge Delivery Service (EDS) site
 
 In today's digital age, creating user-friendly forms is essential for any organization. AEM Forms Edge Delivery's lets you create forms using familiar tools like Word or Google Docs. 
 
@@ -73,7 +73,7 @@ To proceed with form creation:
 
     ![rename default sheet to "shared-default"](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. To add the form fields, insert rows and column headers into the 'shared-default' sheet. Each row should represent a form field, with column headers defining the corresponding field [properties](/help/edge/docs/forms/eds-form-field-properties).
+1. To add the form fields, insert rows and column headers into the 'shared-default' sheet. Each row should represent a [form field](/help/edge/docs/forms/form-components.md), with column headers defining the corresponding field [properties](/help/edge/docs/forms/eds-form-field-properties).
 
     For a swift start, consider copying the contents of the [Enquiry spreadsheet](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) into your spreadsheet. After copying the content, save your spreadsheet. 
 
@@ -149,6 +149,7 @@ Till now, you have added the form block to your EDS project and prepared the str
 
 ## See more
 
+* [Form Components](/help/edge/docs/forms/form-components.md)
 * [Form Field Properties](/help/edge/docs/forms/eds-form-field-properties)
 * [Create and preview a form](/help/edge/docs/forms/create-forms.md)
 * [Enable form to send data](/help/edge/docs/forms/submit-forms.md)

@@ -6,33 +6,36 @@ hide: yes
 hidefromtoc: yes
 ---
 
-# AEM Forms Edge Delivery Service {#aem-forms-edge-delivery-service-overview}
+# AEM Forms Edge Delivery Service 
 
+Streamline form creation and drive higher completion rates with Adobe's AEM Forms Edge Delivery Service. This powerful, composable service empowers you to build enterprise-grade forms with exceptional performance and visual appeal. AEM prioritizes both the user experience and your business goals, ensuring lightning-fast loading times and increased form completions.
 
- <div style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
-        <main class="content">
-            <section class="content-section">
-                <p style="line-height: 1.5;">AEM Forms Edge Delivery Service is a composable service offered by Adobe that allows you to create and deliver high-impact, fast-performing web forms. You can use the service to:</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">Captivate users with stunning forms</h2>
-                <img src="/help/edge/assets/enrollment-form.png" alt="Enrollment Form" style="float: left; margin: 0 20px 20px 0; width: 30%;">
-                <p style="line-height: 1.5;">Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life.</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">Build forms with perfect lighthouse score</h2>
-                <img src="/help/edge/assets/lighthouse-forms.png" alt="perfect lighthouse score for your forms" style="float: right; margin: 20px 0 0 20px; width: 30%;">
-                <p style="line-height: 1.5;"> Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">Create digital enrollment experiences with tools of your choice</h2>
-                <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="Enrollment Form" style="float: left; margin: 0 20px 20px 0; width: 30%;">
-                <p style="line-height: 1.5;">Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.</p>
-            </section>
-        </main>
+You can use the service to:
+
+* **Captivate users with stunning forms**: Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life.
+
+* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both document-based authoring (Microsoft 365 and Google Workspace) and AEM authoring (AEM Editors). As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or Adaptive Forms Editor.
+
+* **Build forms with perfect Lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
+
+    <div>
+    <style>
+    .image-container {
+    width: 80%;
+    text-align: center; 
+    }
+    .image-container img {
+        width: 70%; /* Set image width to 70% of the container */
+        border: .5px solid; /* Maintain the border style */
+        padding: 15px; /* Maintain the padding */
+    }
+</style>
+    <div class="image-container">
+    <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms Key features">
     </div>
 
 
+</div>
 <!-- >
 * **Captivate users with stunning forms**: 
 Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life. 
@@ -60,7 +63,7 @@ Build complex and engaging forms with ease using a library of pre-built componen
 
     -->
 
-## Start with the basics 
+## Start creating forms
 
 <div>
 
