@@ -480,7 +480,7 @@ user-guide-title: AEM as a Cloud Service
     + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
     + [Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
     + [Preview - JSON Representation](/help/assets/content-fragments/content-fragments-json-preview.md)
-    + [Reuse Content Fragments using MSM for Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)    
+    + [Reuse Content Fragments using MSM (for Assets)](/help/assets/content-fragments/content-fragments-msm.md)
   + Dynamic Media {#dynamicmedia}
     + Dynamic Media Journey: The Basics {#dm-journey}
       + [Part I: What is Dynamic Media - Use cases - How an asset flows through the system](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -821,6 +821,7 @@ user-guide-title: AEM as a Cloud Service
       + [Publish a form to sites page](/help/edge/docs/forms/publish-eds-forms.md)
       + [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
       + [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
+      + [Use rules to add dynamic behaviour to a form](/help/edge/docs/forms/rules-forms.md)
     + Capabilities {#advanced-features-eds-forms}
       + [Form fragments](/help/edge/docs/forms/form-fragments.md)
       + [Repeatable sections](/help/edge/docs/forms/repeatable-forms.md)
@@ -828,6 +829,8 @@ user-guide-title: AEM as a Cloud Service
       + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
       + [Thank you page](/help/edge/docs/forms/thank-you-page-form.md)
       + [Custom Components](/help/edge/docs/forms/custom-components-forms.md)
+    + References {#forms-references}
+      + [List of form block components](/help/edge/docs/forms/form-components.md)
   + Resources for Edge Delivery {#resources}
     + Sidekick {#sidekick}
       + [Using Sidekick](/help/edge/docs/sidekick.md)
@@ -838,7 +841,7 @@ user-guide-title: AEM as a Cloud Service
     + [Admin API](https://www.aem.live/docs/admin.html)
     + [AEM Status](https://www.aemstatus.net)
     + Tools {#tools}
-      + [Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+      + [AEM Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
       + [Github Bot](https://github.com/apps/aem-code-sync)
       + [Audit Log](/help/edge/docs/auditlog.md)
 + Headless {#headless}
