@@ -6,30 +6,41 @@ hide: yes
 hidefromtoc: yes
 ---
 
-# Configuring Thank You Pages and Redirection in Adaptive Forms Blocks
+# Show the thank you page or redirect form after submission
 
-Thank you pages and redirection are vital aspects of user experience enhancement, providing users with confirmation, clear communication, and smooth navigation after form submission.
+After a user submits a form, it's crucial to provide a seamless experience through either a thank you page or a redirect. These elements not only confirm successful submission but also enhance user satisfaction and guide them further in their journey.
 
-## Configuring Thank You Pages
+* **Thank You Page**: A thank you page is a cornerstone of user experience, offering reassurance and conveying important information while reinforcing brand identity. It serves as a direct acknowledgment of the user's action, fostering a sense of completion and satisfaction.
 
-Thank you pages serve as a reassuring acknowledgment to users and enable organizations to communicate essential information while reinforcing brand identity. Follow these steps to configure a thank you page for EDS Forms:
+* **Redirect**: A redirect plays a pivotal role in steering users towards relevant destinations, optimizing engagement, and ultimately boosting conversion rates. By seamlessly guiding users to the next step in their journey, a redirect ensures a smooth navigation experience. For example, redirecting user to payments page after collecting initial details. 
+
+In the Adaptive Forms block, the default behavior is to display a thank you page. However, you have the flexibility to tailor this experience to meet your specific needs. Options include:
+
+* [Configuring the thank you page and message to align with your brand and communication goals](#configuring-the-thank-you-page-and-message) 
+* [Redirecting users to another page post-submission](#redirect-users-to-another-page-post-submission), enhancing their journey further
+
+## Configuring the thank you page and message
+
+The default behavior of Adaptive Forms block is to display the "thankyou" page on submission. Follow these steps to configure the "thankyou" page for your Adaptive Forms block:
 
 1. Access your AEM Edge Delivery project folder on Microsoft SharePoint or Google Workspace.
 1. Create a Microsoft Word or Google Docs file named "thankyou" within your project directory.
-1. Add your thank you message to the "thankyou" file.
+1. Add your thank you message to the "thankyou" file. </br>
+   
     ![Example thank you page](/help/edge/assets/sample-thankyou-page.png) 
-1. Utilize AEM Sidekick to preview and publish the "thankyou" file.
 
-## Redirecting Users After Submission
+1. Use AEM Sidekick to preview and publish the "thankyou" file.
 
-Redirection facilitates seamless user journeys by guiding users to relevant destinations, optimizing engagement, and increasing conversion rates. 
+ Your Adaptive Forms block displays the "thankyou" page on form submission. 
+
+## Redirect users to another page post-submission
 
 By default, the Adaptive Forms block redirects the users to the "thankyou" page. To redirect users to a page other than the default "thankyou" page, you have two options: 
 
-* either replace the existing "thank you" page with a different page, or 
+* either replace the existing "thankyou" page with a different page, or 
 * redirect the "thankyou" page to another page of your choice.
 
-### Replace the Existing "thankyou" Page
+### Replace the existing "thankyou" page
 
 1. Open the "[EDS Project]/blocks/form/form.js" file for editing.
 1. Change the `thankyou` page in the following line to page of your choice:
@@ -58,8 +69,16 @@ By default, the Adaptive Forms block redirects the users to the "thankyou" page.
 1. Ensure that the page exists in your EDS project folder and publish it.
 
 
-### Use Website Redirects
+### Use website redirects
 
 Configure a website redirect to direct the "thankyou" page to a different page. Refer to the [Redirects documentation](https://www.aem.live/docs/redirects) for detailed instructions.
 
+## See more
 
+* [Form Components](/help/edge/docs/forms/form-components.md)
+* [Form Field Properties](/help/edge/docs/forms/eds-form-field-properties)
+* [Create and preview a form](/help/edge/docs/forms/create-forms.md)
+* [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
+* [Publish a form to sites page](/help/edge/docs/forms/publish-eds-forms.md)
+* [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
+* [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
