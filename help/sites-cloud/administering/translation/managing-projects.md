@@ -442,7 +442,7 @@ To compare language copies to the language master:
 
 ## Moving or Renaming a Source Page {#move-source}
 
-If an already translated source page needs to be [renamed or moved](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), translating the page again after the move creates a language copy based on the new page name/location. The old language copy based on the previous name/location is still there. To prevent this, you can use the update language copy functionality after the move:
+If an already translated source page needs to be [renamed or moved](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), translating the page again after the move creates a language copy based on the new page name/location. The old language copy based on the previous name/location is still there. To prevent this, you can use the update language copy functionality after the move:
 
 1. Move a page which has a language copy.
 1. Select the language copy root.
@@ -453,7 +453,7 @@ If an already translated source page needs to be [renamed or moved](/help/sites-
 
    ![updating-language-copies](../assets/translation-move-to.png)
    
-1. Click **Update**. A [Launch](/help/sites-authoring/launches-promoting.md) will be created.
+1. Click **Update**. A [Launch](/help/sites-cloud/authoring/launches/promoting.md) will be created.
 1. Navigate to the required language root and select it.
 1. Using the **References** panel, select **Launches**.
 
