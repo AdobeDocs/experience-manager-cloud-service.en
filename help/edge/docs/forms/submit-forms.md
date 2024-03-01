@@ -10,7 +10,10 @@ hidefromtoc: yes
 
 Once you've [created and previewed the form](/help/edge/docs/forms/create-forms.md), it's time to enable the corresponding spreadsheet to start receiving data. 
 
+<!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
+
+-->
 
 To enable the spreadsheet: 
 
