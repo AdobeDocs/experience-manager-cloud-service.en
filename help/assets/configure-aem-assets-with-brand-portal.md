@@ -289,7 +289,7 @@ Perform the following steps to generate the service account credentials and JWT 
    >[!NOTE]
    >
    >* You can view the credentials and perform actions such as generate JWT tokens, copy credential details, retrieve client secret, and so on.
-   >* Once the API is configured, you are redirected to the API overview page. From the left navigation under Credentials, click the Service Account (JWT) option.
+   >* Currently, Adobe only support the Adobe Developer Console's Service Account (JWT) credential type. For now, it is suggested to not use the `OAuth Server-to-Server` credential type.
 
 1. From the **[!UICONTROL Client Credentials]** tab, copy the **[!UICONTROL client ID]**. 
 
