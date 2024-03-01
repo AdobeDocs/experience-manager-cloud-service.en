@@ -28,9 +28,9 @@ The Venia brand recently started manufacturing some products using sustainable m
 
 ## Prerequisites {#prerequisites}
 
-A local development environment is required to complete this tutorial. This environment includes a running instance of AEM that is configured and connected to an Adobe Commerce instance. Review the requirements and steps for [setting up a local development with AEM as a Cloud Service SDK](../develop.md). To follow the tutorial completely, you need permissions to add [Attributes to a Product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
+A local development environment is required to complete this tutorial. This environment includes a running instance of AEM that is configured and connected to an Adobe Commerce instance. Review the requirements and steps for [setting up a local development with AEM as a Cloud Service SDK](../develop.md). To follow the tutorial completely, you need permission to add [Attributes to a Product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
 
-You also need GraphQL IDE such as [GraphiQL](https://github.com/graphql/graphiql) or a browser extension to run the code samples and tutorials. If you install a browser extension, make sure it can set request headers. On Google Chrome, [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) is one extension that can do the job.
+You also need GraphQL IDE such as [GraphiQL](https://github.com/graphql/graphiql) or a browser extension to run the code samples and tutorials. If you install a browser extension, make sure it can set request headers. On Google Chrome, _Altair GraphQL Client_ is one extension that can do the job.
 
 ## Clone the Venia Project {#clone-venia-project}
 
@@ -133,7 +133,7 @@ The products and product data displayed in AEM are stored in Adobe Commerce. Nex
 
 Before jumping into AEM code, it is useful to explore the [GraphQL Overview](https://devdocs.magento.com/guides/v2.4/graphql/) using a GraphQL IDE. The Adobe Commerce integration with AEM is primarily done via a series of GraphQL queries. Understanding and modifying the GraphQL queries is one of the key ways in which the CIF Core Components can be extended.
 
-Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been added to the product attribute set. Screenshots in this tutorial are using the [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
+Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been added to the product attribute set. Screenshots in this tutorial are using the _Altair GraphQL Client_ Google Chrome extension.
 
 1. Open the GraphQL IDE and enter the URL `http://<commerce-server>/graphql` in the URL bar of your IDE or extension.
 2. Add the following [products query](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) where `YOUR_SKU` is the **SKU** of the product used in the previous exercise:
@@ -180,7 +180,7 @@ Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been add
 
 ## Update the Sling Model for the Product Teaser {#updating-sling-model-product-teaser}
 
-Next, you extend the business logic of the Product Teaser by implementing a Sling Model. [Sling Models](https://sling.apache.org/documentation/bundles/models.html), are annotation driven "POJOs" (Plain Old Java&trade; Objects) that implement business logic that is needed by the component. Sling Models are used with the HTL scripts as part of the component. Follow the [delegation pattern for Sling Models](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) so you can extend parts of the existing Product Teaser model.
+Next, you extend the business logic of the Product Teaser by implementing a Sling Model. [Sling Models](https://sling.apache.org/documentation/bundles/models.html) are annotation driven "POJOs" (Plain Old Java&trade; Objects) that implement business logic that is needed by the component. Sling Models are used with the HTL scripts as part of the component. Follow the [delegation pattern for Sling Models](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) so you can extend parts of the existing Product Teaser model.
 
 Sling Models are implemented as Java&trade; and can be found in the **core** module of the generated project.
 

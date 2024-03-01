@@ -1,14 +1,18 @@
 ---
-description: This tutorial includes all information related to components of EDS. .
-title: Form Components supported in Form block - Developer Tutorial
+title: AEM Forms Edge Delivery Service Form Components
+description: AEM Forms Edge Delivery Service built for peak performance, empowering you to envision the future of streamlined data collection and user engagement. The article lists all the forms components available out of the box for EDD forms. 
 feature: Edge Delivery Services
+hide: yes
+hidefromtoc: yes
 ---
+
+
 
 # HTML Components supported in Form Block Edge Delivery
 
 AEM Forms Edge Delivery includes a Form block. The Form Block helps you to easily create forms to capture and store captured data. 
 
-The Form block supports HTML-5 components such as text, email, number, date, and many more. It also supports text area, select, and fieldset elements, and includes input validation features that are native to HTML-5. The Form Block creates uniform HTML structure for all field types and containers ensuring the consistency. You also [style the field types](https://adobe-rnd.github.io/form-block/customization/styling_form) using the `form.css` file. 
+The Form block supports OOTB HTML-5 components such as text, email, number, date, and many more. It also supports text area, select, and fieldset elements, and includes input validation features that are native to HTML-5. The Form Block creates uniform HTML structure for all field types and containers ensuring the consistency. You also [style the field types](https://adobe-rnd.github.io/form-block/customization/styling_form) using the `form.css` file. 
 
 ## Supported HTML 5 input types in Form Block
 
