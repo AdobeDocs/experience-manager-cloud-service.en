@@ -8,7 +8,7 @@ Multi Site Manager (MSM), and the Live Copy functionality, enables you to use th
 
 * With MSM Live Copies you can:
   * Create content once and then
-  * Reuse this content in other areas of the same or other sites.
+  * Reuse this content in other areas of the same or other sites, or applications.
 * MSM then maintains the live relationships between your source content and its Live Copies so that:
   * When you change the source content, the source and Live Copies are synchronized.
   * You can make adjustments only to the content of the Live Copies by disconnecting the live relationship for individual sub pages and/or components.
@@ -21,9 +21,9 @@ For a detailed overview of MSM concepts see [Reusing Content: Multi Site Manager
 
 Using MSM for Content Fragments you can:
 
-* Create Content Fragments once and then make (linked) copies of these fragments to reuse in other areas.
+* Create Content Fragments once and then make (linked) copies of these fragments to reuse in other areas of the site or application.
 * Keep multiple copies synchronized by updating the source copy once, then pushing the changes to the (live) copies.
-* Make local changes by temporarily, or permanently, suspending the link between parent and child fragments.
+* Make local changes by temporarily, or permanently, suspending the link between parent and child fragments; either completely, or for their variations or fields.
 
 MSM for Content Fragments, combined with functionality within the Content Fragment Editor, allows you to break, and reinstate inheritance at the field level.
 
