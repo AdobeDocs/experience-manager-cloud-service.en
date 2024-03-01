@@ -18,8 +18,24 @@ You can use the service to:
 
 * **Build forms with perfect Lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
 
-    <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms Key features" style = "width=`80%`; align=`center`; border: 1px solid;padding: 15px;">
+    <div>
+    <style>
+    .image-container {
+    width: 80%;
+    text-align: center; 
+    }
+    .image-container img {
+        width: 70%; /* Set image width to 70% of the container */
+        border: .5px solid; /* Maintain the border style */
+        padding: 15px; /* Maintain the padding */
+    }
+</style>
+    <div class="image-container">
+    <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms Key features">
+    </div>
 
+
+</div>
 <!-- >
 * **Captivate users with stunning forms**: 
 Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life. 
