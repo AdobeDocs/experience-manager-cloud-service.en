@@ -820,12 +820,12 @@ user-guide-title: AEM as a Cloud Service
       + [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
       + [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
       + [Use rules to add dynamic behaviour to a form](/help/edge/docs/forms/rules-forms.md)
+      + [Thank you page](/help/edge/docs/forms/thank-you-page-form.md)
     + Capabilities {#advanced-features-eds-forms}
       + [Form fragments](/help/edge/docs/forms/form-fragments.md)
       + [Repeatable sections](/help/edge/docs/forms/repeatable-forms.md)
       + [Translation](/help/edge/docs/forms/translate-forms.md)
       + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
-      + [Thank you page](/help/edge/docs/forms/thank-you-page-form.md)
       + [Custom Components](/help/edge/docs/forms/custom-components-forms.md)
     + References {#forms-references}
       + [List of form block components](/help/edge/docs/forms/form-components.md)
