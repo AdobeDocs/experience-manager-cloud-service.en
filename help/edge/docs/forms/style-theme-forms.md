@@ -8,11 +8,11 @@ hidefromtoc: yes
 
 # Styling Form Fields 
 
-Forms are crucial for user interaction on websites, allowing them to input data. This guide covers the fundamentals of styling various form fields within the [Form Block](/help/edge/docs/forms/create-forms.md), helping you create visually appealing and user-friendly forms.
+Forms are crucial for user interaction on websites, allowing them to input data. This guide covers the fundamentals of styling various form fields within the [Adaptive Form block](/help/edge/docs/forms/create-forms.md), helping you create visually appealing and user-friendly forms.
 
 ## Understanding Form Field Types
 
-Before diving into styling, let's review the common form field types supported by the Form Block:
+Before diving into styling, let's review the common form field types supported by the Adaptive Form block:
 
 * Input Fields: These include text inputs, email inputs, password inputs, and more.
 * Checkbox Groups: Used for selecting multiple options.
@@ -29,7 +29,7 @@ Understanding fundamental CSS concepts is crucial before styling specific form f
 * Box Model: The CSS box model describes the structure of HTML elements as a content area surrounded by padding, borders, and margins.
 * Flexbox/Grid: CSS Flexbox and Grid layouts are powerful tools for creating responsive and flexible designs.
 
-## Styling a Form for Form Block
+## Styling a form for Adaptive Form Block
 
 The Form Block offers a standardized HTML structure, simplifying the process of selecting and styling form components:
 
