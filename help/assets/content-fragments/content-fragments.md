@@ -109,16 +109,6 @@ Together with the JSON export capabilities of AEM core components, this structur
 >
 >AEM also supports the translation of fragment content. See [Translating Assets](/help/assets/translate-assets.md) for further information.
 
-## Reusing Content Fragments with MSM for Assets {#reusing-content-fragments-with-msm-assets}
-
-When accessed through the **Assets** console, you can use MSM and create Live Copies for your fragments.
-
-For more details, see [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md). This enables [inheritance](/help/assets/content-fragments/content-fragments-variations.md#inheritance) for both variations and individual fields of your fragments.
-
->[!CAUTION]
->
->If you want to use MSM (which creates copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md).
-
 ## Content Type {#content-type}
 
 Content fragments are:
@@ -292,6 +282,21 @@ To use your Content Fragments for page authoring, you also need:
   * Responsible for layout and delivery of a fragment; that is, channels.
   * Fragments need one or more dedicated components to define the layout and deliver some or all elements/variations and associated content.
   * Dragging a fragment onto a page in authoring automatically associates the required component.
+
+## Reusing Content Fragments with MSM (for Assets) {#reusing-content-fragments-with-msm-assets}
+
+When accessed through the **Assets** console, you can use MSM and create Live Copies for your fragments.
+
+For more details, see:
+
+* [Reuse Content Fragments using MSM (for Assets)](/help/assets/content-fragments/content-fragments-msm.md)
+* [Reuse assets using MSM for Assets](/help/assets/reuse-assets-using-msm.md).
+
+These enable [inheritance](/help/assets/content-fragments/content-fragments-variations.md#inheritance) for both variations and individual fields of your fragments.
+
+>[!CAUTION]
+>
+>If you want to use MSM (which creates copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md).
 
 ## Example Usage {#example-usage}
 
