@@ -6,37 +6,37 @@ hide: yes
 hidefromtoc: yes
 ---
 
-# Create a form for a Edge Delivery Service (EDS) site
+# Create a form using Adaptive Form Block
 
 In today's digital age, creating user-friendly forms is essential for any organization. AEM Forms Edge Delivery's lets you create forms using familiar tools like Word or Google Docs. 
 
 These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft Sharepoint to easily process submitted data or to initiate an existing business workflow.
 
-AEM Forms Edge Delivery provides a Form block to help you easily create forms to capture and store captured data. You can include the Form block in your AEM EDS project to start creating a form. Let's start: 
+AEM Forms Edge Delivery provides a block, known as Adaptive Form Block, to help you easily create forms to capture and store captured data. You can include the Adaptive Form Block in your AEM EDS project to start creating a form. Let's start: 
 
 
 ## Prerequisites
 
 Before you start, ensure that you have completed the following steps:
 
-* Set up Edge Delivery Service (EDS) GitHub project using AEM boilerplate and clone the corresponding GitHub repository on your local machine. See [developer tutorial](https://www.aem.live/developer/tutorial) for details. In this document, the local folder of your Edge Delivery Service (EDS) project is referred as `[EDS Project repository]` . 
-* Clone the [Forms Block repository](https://github.com/adobe/afb) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Forms Block repository]`. 
+* Set up Edge Delivery Service (EDS) GitHub project using AEM boilerplate and clone the corresponding GitHub repository on your local machine. See [developer tutorial](https://www.aem.live/developer/tutorial) for details. In this document, the local folder of your Edge Delivery Service (EDS) project is referred as `[EDS Project repository]` .  
 * Ensure that you have access to Google Sheets or Microsoft SharePoint. To set up Microsoft SharePoint as your content source, see [How to use Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## Create a form
 
-+++ Step 1: Add the Form block to your Edge Delivery Service (EDS) project.
++++ Step 1: Add the Adaptive Form block to your Edge Delivery Service (EDS) project.
 
-The Form block empowers users to create forms for an Edge Delivery Service Site. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Service project). To seamlessly integrate the Form block into your Edge Delivery Service project:
+The Adaptive  empowers users to create forms for an Edge Delivery Service Site. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Service project). To seamlessly integrate the Adaptive Form block into your Edge Delivery Service project:
 
-1. **Locate the Form Block Repository:** Access the [Forms Block repository]/blocks folder on your local machine and copy the `form` folder.
-1. **Paste the Form Block into your EDS Project:**
+1. **Clone the Adaptive Form block repository**: Clone the [Adaptive Form block repository](https://github.com/adobe/afb) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Form block repository]`.
+1. **Locate the Adaptive Form block Repository:** Access the [Adaptive Form block repository]/blocks folder on your local machine and copy the `form` folder. 
+1. **Paste the Adaptive Form block into your EDS Project:**
 Navigate to the [EDS Project repository]/blocks/ folder on your local machine and paste the form folder.
 1. **Commit Changes to GitHub:** Check in the form folder and its underlying files to your Edge Delivery Service project on GitHub.
 
-After completing these steps, the Form block is successfully integrated into your Edge Delivery Service(EDS) project repository on GitHub. 
+After completing these steps, the Adaptive Form block is successfully added to your Edge Delivery Service(EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
  
 
 **Troubleshooting GitHub build issues**
@@ -84,7 +84,7 @@ To proceed with form creation:
 
     ![Use AEM Sidekick to preview the sheet](/help/edge/assets/preview-form.png)
 
-    Upon previewing and publishing, new browser tabs display the sheet's contents in JSON format. Ensure to capture the preview URL, as this is required for rendering the form in next section. The URL format is as follows:
+    Upon previewing, new browser tabs display the sheet's contents in JSON format. Ensure to capture the preview URL, as this is required for rendering the form in next the section. The URL format is as follows:
 
 
     ```JSON
@@ -107,15 +107,15 @@ To proceed with form creation:
 +++ Step 3: Preview the form using your Edge Delivery Service (EDS) page.
 
 
-Till now, you have added the form block to your EDS project and prepared the structure of the form. Now, to preview the form:
+Till now, you have added the Adaptive Form block to your EDS project and prepared the structure of the form. Now, to preview the form:
 
-1. **Access Your Project Directory:** Open your Microsoft SharePoint or Google Drive account and navigate to your AEM Edge Delivery project directory..
+1. **Access Your Project Directory:** Open your Microsoft SharePoint or Google Drive account and navigate to your AEM Edge Delivery project directory.
 
 1. **Embed the Form into a Document:** Open a document file (For example, index file) to embed the form. Alternatively, you can create a new document.
 
 1. **Navigate to the Desired Location:** Move to the desired location within the document where you intend to add the form.
 
-1. **Add the Form Block:** Insert a block named 'Form' into the file, as illustrated below:
+1. **Add the Adaptive Form Block:** Insert a block named 'Form' into the file, as illustrated below:
 
     | Form  |
     |---|
