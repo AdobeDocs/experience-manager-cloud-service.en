@@ -1120,9 +1120,9 @@ To protect against potential problems there are default limitations imposed on y
 * The query cannot contain more than 15000 tokens 
 * The query cannot contain more than 200000 whitespace tokens
 
-You also need to aware of limitations imposed by GraphQL-Java:
+You also need to aware of:
 
-* GraphQL-Java will return an field conflict error when your GraphQL query contains fields with the same name in two (or more) models:
+* A field conflict error will be returned when your GraphQL query contains fields with the same name in two (or more) models:
 
   * So where:
 
