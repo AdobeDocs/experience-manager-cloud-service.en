@@ -1132,6 +1132,10 @@ You also need to aware of:
 
     * These two models have fields having a common name; that means the same name occurs in both models.
 
+    and
+
+    * Those fields are of different data types.
+
   * For example:
 
     * When two (or more) fragments with different models (for example, `M1`, `M2`) are used as possible references (Content Reference or Fragment Reference) from another fragment; for example, `Fragment1` `MultiField/List`
