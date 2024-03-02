@@ -12,7 +12,7 @@ In today's digital age, creating user-friendly forms is essential for any organi
 
 These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft Sharepoint to easily process submitted data or to initiate an existing business workflow.
 
-![Document-based authoring ecosystem](/help/edge/assets/document-based-authoring.png)
+![Document-based authoring ecosystem](/help/edge/assets/document-based-authoring-workflow.png)
 
 AEM Forms Edge Delivery provides a block, known as Adaptive Form Block, to help you easily create forms to capture and store captured data. You can include the Adaptive Form Block in your AEM EDS project to start creating a form. Let's start: 
 
@@ -28,17 +28,17 @@ Before you start, ensure that you have completed the following steps:
 
 ## Create a form
 
-+++ Step 1: Add the Adaptive Form block to your Edge Delivery Service (EDS) project.
++++ Step 1: Add the Adaptive Form Block to your Edge Delivery Service (EDS) project.
 
-The Adaptive  empowers users to create forms for an Edge Delivery Service Site. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Service project). To seamlessly integrate the Adaptive Form block into your Edge Delivery Service project:
+The Adaptive  empowers users to create forms for an Edge Delivery Service Site. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Service project). To seamlessly integrate the Adaptive Form Block into your Edge Delivery Service project:
 
-1. **Clone the Adaptive Form block repository**: Clone the [Adaptive Form block repository](https://github.com/adobe/afb) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Form block repository]`.
-1. **Locate the Adaptive Form block Repository:** Access the [Adaptive Form block repository]/blocks folder on your local machine and copy the `form` folder. 
-1. **Paste the Adaptive Form block into your EDS Project:**
+1. **Clone the Adaptive Form Block repository**: Clone the [Adaptive Form Block repository](https://github.com/adobe/afb) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Form Block repository]`.
+1. **Locate the Adaptive Form Block Repository:** Access the [Adaptive Form Block repository]/blocks folder on your local machine and copy the `form` folder. 
+1. **Paste the Adaptive Form Block into your EDS Project:**
 Navigate to the [EDS Project repository]/blocks/ folder on your local machine and paste the form folder.
 1. **Commit Changes to GitHub:** Check in the form folder and its underlying files to your Edge Delivery Service project on GitHub.
 
-After completing these steps, the Adaptive Form block is successfully added to your Edge Delivery Service(EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
+After completing these steps, the Adaptive Form Block is successfully added to your Edge Delivery Service(EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
  
 
 **Troubleshooting GitHub build issues**
@@ -109,7 +109,7 @@ To proceed with form creation:
 +++ Step 3: Preview the form using your Edge Delivery Service (EDS) page.
 
 
-Till now, you have added the Adaptive Form block to your EDS project and prepared the structure of the form. Now, to preview the form:
+Till now, you have added the Adaptive Form Block to your EDS project and prepared the structure of the form. Now, to preview the form:
 
 1. **Access Your Project Directory:** Open your Microsoft SharePoint or Google Drive account and navigate to your AEM Edge Delivery project directory.
 
