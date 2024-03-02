@@ -6,12 +6,13 @@ hide: yes
 hidefromtoc: yes
 ---
 
-# Form Components
+# A Developer's Guide to Form Components and Properties: AEM Forms Edge Delivery Service
 
 AEM Forms Edge Delivery Service allows you to create user-friendly and interactive forms using various components. These components cater to different types of data collection and can be easily customized to fit your specific needs. 
 
-The Adaptive Form Block generates a [uniform HTML structure](/help/edge/docs/forms/style-theme-forms.md) for all field types and containers (panels) ensuring the consistency. This consistent structure makes it easier to [style a form](/help/edge/docs/forms/style-theme-forms.md).
+![A sample spreadsheet with some components and properties](/help/edge/assets/sample-form-in-spreadsheet.png)
 
+The Adaptive Form Block generates a [uniform HTML structure](/help/edge/docs/forms/style-theme-forms.md) for all field types and containers (panels) ensuring the consistency. This consistent structure makes it easier to [style a form](/help/edge/docs/forms/style-theme-forms.md).
 
 ## Available components
 
@@ -32,6 +33,8 @@ Here's an overview of the available components:
 - Panels/Containers: To group related form elements together for better organization. It is a combination of the [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) and [legend](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend). 
 
 
+
+
 ## Components properties
 
 Each form component comes with various properties that allow you to control its behavior and appearance. Here the properties supported by Adaptive Form Block components:
@@ -39,7 +42,7 @@ Each form component comes with various properties that allow you to control its 
 
 | Property     | Applicable Components        | Details                                                              |
 |--------------|------------------------------|----------------------------------------------------------------------|
-| Type         | All                          | Specifies the type of the component. This property determines the behavior and appearance of the input field. For example, for text inputs, the type may be "text," "email" for email inputs, "password" for password inputs. Adaptive Form block supports all valid HTML5 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">input types</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> as type.|
+| Type         | All                          | Specifies the type of the component. This property determines the behavior and appearance of the input field. For example, for text inputs, the type may be "text," "email" for email inputs, "password" for password inputs. Adaptive Form block supports  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">all valid HTML5 input types</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> as type.|
 | Name         | All                          | Identifies the component for form submission. The name attribute is used when the form data is submitted to the server, associating the user input with a specific field. |
 | Label        | All                          | Provides contextual information to users. The label is the text displayed next to the component, giving users guidance on what information to input. |
 | Value        | Text, Password, Email, Number, Range, Date and its variants (datetime-local, month, week, time), Checkbox, Radio, Hidden, Submit, Button               | Specifies the initial value of the component. For text inputs, textarea, and select elements, this is the default text or option displayed. For radio and checkbox components, this is the value/data submitted when they are selected. The value attribute is optional but should be considered mandatory for checkbox and radio inputs. |
@@ -186,4 +189,12 @@ Here is the table which outlines how core components correspond to their HTML-5 
    <td> A two-state toggle that allows user to select between two states such as enabling or disabling a feature, setting, or functionality.</td>
   </tr>
  </tbody>
-</table>
+</table> -->
+
+## See more
+
+- [Create and preview a form](/help/edge/docs/forms/create-forms.md)
+- [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
+- [Publish a form to sites page](/help/edge/docs/forms/publish-eds-forms.md)
+- [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
+- [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)

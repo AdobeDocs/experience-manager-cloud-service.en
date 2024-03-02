@@ -25,7 +25,7 @@ You can use the service to:
     text-align: center; 
     }
     .image-container img {
-        width: 70%; /* Set image width to 70% of the container */
+        width: 100%; /* Set image width to 100% of the container */
         border: .5px solid; /* Maintain the border style */
         padding: 15px; /* Maintain the padding */
     }
@@ -36,9 +36,8 @@ You can use the service to:
 
 
 </div>
-<!-- >
-* **Captivate users with stunning forms**: 
-Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life. 
+
+<!--
 
     ![Enrollment forms](/help/edge/assets/enrollment-form.png)
 
@@ -56,7 +55,7 @@ Build complex and engaging forms with ease using a library of pre-built componen
 * **Use Integrated services:** Use integrated services to streamline and empowers your users with a one-stop shop for managing their digital enrollment journeys. Use e-signatures, automated workflows, document of record (DoR), and seamless data integration, simplify the entire digital enrollment process, accelerate approvals, and optimizes your business workflows. 
 
     
->[!NOTE]
+    >[!NOTE]
     >
     >
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
@@ -77,6 +76,9 @@ Build complex and engaging forms with ease using a library of pre-built componen
 
 * **Styling Forms**: Each form field has a fixed HTML structure that can be further decorated using custom CSS or JavaScript files. Selectors for targeting fields in CSS/JS are provided based on type and name.
 
+## Workflow
+
+![Document-based authoring ecosystem](/help/edge/assets/document-based-authoring-workflow.png)
 
 ## Start creating forms
 

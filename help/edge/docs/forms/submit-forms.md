@@ -8,7 +8,10 @@ hidefromtoc: yes
 
 # Prepare your spreadsheet to accept data 
 
+![Document-based authoring ecosystem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+
 Once you've [created and previewed the form](/help/edge/docs/forms/create-forms.md), it's time to enable the corresponding spreadsheet to start receiving data. 
+
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -37,6 +40,7 @@ To enable the spreadsheet:
 
 
 Once the field names are added to the `incoming` sheet, your form becomes ready to accept submissions. You can preview the form and submit data to the sheet using it. 
+
 
 You also observe the following changes in your spreadsheet: 
 
