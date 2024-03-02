@@ -1,6 +1,6 @@
 ---
 title: Prepare your spreadsheet to accept data
-description: Craft powerful forms faster using spreadsheets & Form Block Fields! 
+description: Craft powerful forms faster using spreadsheets & Adaptive Form Block Fields! 
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
@@ -160,7 +160,7 @@ A sheet named "Slack" is added to your Excel Workbook or Google Sheet. In this s
 1. Enter any title that you want and under fields enter the names of the fields you want to see in the Slack notification. Each heading should be separated by a comma (For example name, email).
 
 
-The sheet is now set up to receive data, you can [preview the form using Adaptive Form block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
+The sheet is now set up to receive data, you can [preview the form using Adaptive Form Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
 
  >[!WARNING] 
  >
@@ -168,7 +168,7 @@ The sheet is now set up to receive data, you can [preview the form using Adaptiv
 
 ## Send data to your sheet {#send-data-to-your-sheet}
 
-After the sheet is set to receive data, you can [preview the form using Adaptive Form block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use Admin APIs](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
+After the sheet is set to receive data, you can [preview the form using Adaptive Form Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use Admin APIs](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
 
 ### Use Admin APIs to send data to your sheet
 

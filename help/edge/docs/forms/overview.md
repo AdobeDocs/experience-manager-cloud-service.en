@@ -63,6 +63,21 @@ Build complex and engaging forms with ease using a library of pre-built componen
 
     -->
 
+## Key capabilities
+
+* **HTML5-based Form Field components**: AEM Forms Edge Delivery Service allows you to create user-friendly and interactive forms using form fields based on valid HTML5 [input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  components. These components cater to different types of data collection and can be easily customized to fit your specific needs.  
+
+* **Accessibility**: The fields in the form block are accessible. Each label is linked with its respective input element, and IDs are auto-generated for linking. Descriptions associated with fields are linked via the aria-describedby attribute. Keyboard navigation using the standard Tab/Shift + Tab keys is supported.
+
+* **Form Rules**: Create logic that adjusts field visibility, validation, and behavior based on user input or predefined conditions. Rules offer a flexible and intuitive way to add intelligence to your forms, ensuring they adapt seamlessly based on user inputs.
+
+* **File Uploads**: Enhance your forms with seamless file attachment capabilities. Whether you need to gather documents, images, or other files from your users, the Adaptive Form Block empowers you to integrate file upload functionality effortlessly. With custom handling options available, you can tailor the file upload process to suit your specific requirements.
+
+* **Form Validation**: Before submission, the form is validated, and invalid fields are appropriately marked with error messages displayed to the user. Various patterns are available for displaying these errors.
+
+* **Styling Forms**: Each form field has a fixed HTML structure that can be further decorated using custom CSS or JavaScript files. Selectors for targeting fields in CSS/JS are provided based on type and name.
+
+
 ## Start creating forms
 
 <div>

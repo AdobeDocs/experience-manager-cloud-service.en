@@ -1,22 +1,22 @@
 ---
-title: From Spreadsheets to Forms - Mastering Adaptive Form block Field Properties
-description: Craft powerful forms faster using spreadsheets & Form Block Field Properties! This guide lists all the properties supported by EDS Forms Block. 
+title: From Spreadsheets to Forms - Mastering Adaptive Form Block Field Properties
+description: Craft powerful forms faster using spreadsheets & Adaptive Form Block Field Properties! This guide lists all the properties supported by EDS Forms Block. 
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
 ---
 
-# Adaptive Form block Field Properties
+# Adaptive Form Block Field Properties
 
 Each form field is represented as a dedicated row in the spreadsheet, analogous to fields in a database table. The column headers act as labels for the various properties supported by the form field block.
 
 Think of your form as a table in a spreadsheet, where each line represents a different question or piece of information you want to collect. The table headings tell you what kind of answers you can expect for each section.
 
-The below table lists all the properties that are supported by the Form Block.
+The below table lists all the properties that are supported by the Adaptive Form Block.
 
-**Master Your Forms with These Form Block Field Properties:**
+**Master Your Forms with These Adaptive Form Block Field Properties:**
 
-This table details all the properties you can use to customize your Form Block fields:
+This table details all the properties you can use to customize your Adaptive Form Block fields:
 
 | Property | Description | Example |
 |---|---|---|
