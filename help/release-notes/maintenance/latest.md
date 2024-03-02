@@ -61,7 +61,6 @@ Summarized below are the continuous improvements for maintenance release 15262, 
 * ASSETS-31673: Bulk import failed for large Dropbox files.
 * ASSETS-32108: AEM Assets Not Saving User-Defined Card Size in View Settings.
 * ASSETS-32230: Upgrade minimum runtime version of com.adobe.aem.repoapi bundle.
-* ASSETS-32321: Post-Processing workflow and ImageProfile resolution fails if ancestor folder is missing 'jcr:content' subnode.
 * ASSETS-32544: Metadata export job fails intermittently.
 * ASSETS-32679: Caching issues with asset (PDF) previews.
 * ASSETS-32754: Tasks cannot be assigned to users who have not logged in previously.
