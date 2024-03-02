@@ -12,7 +12,7 @@ In today's digital age, creating user-friendly forms is essential for any organi
 
 These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft Sharepoint to easily process submitted data or to initiate an existing business workflow.
 
-![Document-based authoring ecosystem](/help/edge/assets/document-based-authoring-workflow.png)
+![Document-based authoring ecosystem](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 AEM Forms Edge Delivery provides a block, known as Adaptive Form Block, to help you easily create forms to capture and store captured data. You can include the Adaptive Form Block in your AEM EDS project to start creating a form. Let's start: 
 
