@@ -75,7 +75,7 @@ To proceed with form creation:
 
     ![rename default sheet to "shared-default"](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. To add the form fields, insert rows and column headers into the 'shared-default' sheet. Each row should represent a [form field](/help/edge/docs/forms/form-components.md), with column headers defining the corresponding field [properties](/help/edge/docs/forms/eds-form-field-properties).
+1. To add the form fields, insert rows and column headers into the 'shared-default' sheet. Each row should represent a [form field](/help/edge/docs/forms/form-components.md#available-components), with column headers defining the corresponding field [properties](/help/edge/docs/forms/form-components.md#components-properties).
 
     For a swift start, consider copying the contents of the [Enquiry spreadsheet](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) into your spreadsheet. After copying the content, save your spreadsheet. 
 
@@ -155,6 +155,6 @@ Till now, you have added the Adaptive Form Block to your EDS project and prepare
 * [Form Field Properties](/help/edge/docs/forms/eds-form-field-properties)
 * [Create and preview a form](/help/edge/docs/forms/create-forms.md)
 * [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
-* [Publish a form to sites page](/help/edge/docs/forms/publish-eds-forms.md)
+* [Publish a form to sites page](/help/edge/docs/forms/publish-forms.md)
 * [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
 * [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)

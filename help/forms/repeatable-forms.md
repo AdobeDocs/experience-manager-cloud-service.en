@@ -14,7 +14,7 @@ For example, consider a form used to collect information from users applying for
 
 ## Prerequisites
 
-Set up Edge Delivery Service (EDS) Github project using AEM boilerplate and clone the corresponding Github repository on your local machine. See [developer tutorial](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html) for details. 
+Set up Edge Delivery Service (EDS) GitHub project using AEM boilerplate and clone the corresponding GitHub repository on your local machine. See [developer tutorial](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html) for details. 
 
 ## Repeatable sections in Edge Delivery
 
@@ -50,7 +50,7 @@ To add repeatable sections in Edge Delivery:
 1. Open or create new document file in a Microsft SharePoint Site to embed the Excel sheet  in it using a `Form Block`. For example, open the `index` file and add a `Form Block`.
 2. Open the command prompt, navigate to your AEM Edge Delivery project directory on your local machine, and execute the command as `aem up`.
 
-The form is accessible at `https://localhost:3000`, where clicking the `Add` button adds new repeatable section for entering co-applicant details. You can also delete the the repeatable section by clicking the `Delete` button. 
+The form is accessible at `https://localhost:3000`, where clicking the `Add` button adds new repeatable section for entering co-applicant details. You can also delete the repeatable section by clicking the `Delete` button. 
 
 >[!NOTE]
 >
