@@ -21,13 +21,10 @@ You can use the service to:
     <div>
     <style>
     .image-container {
-    width: 80%;
     text-align: center; 
     }
     .image-container img {
-        width: 100%; /* Set image width to 100% of the container */
-        border: .5px solid; /* Maintain the border style */
-        padding: 15px; /* Maintain the padding */
+        width: 100%; /* Set image width to 100% of the container 
     }
 </style>
     <div class="image-container">
@@ -36,6 +33,8 @@ You can use the service to:
 
 
 </div>
+
+<!--
 
 <!--
 
@@ -56,25 +55,33 @@ You can use the service to:
 
     
     >[!NOTE]
+    >[!NOTE]
     >
     >
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
 
     -->
 
-## Key capabilities
+## Key Features
 
-* **HTML5-based Form Field components**: AEM Forms Edge Delivery Service allows you to create user-friendly and interactive forms using form fields based on valid HTML5 [input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  components. These components cater to different types of data collection and can be easily customized to fit your specific needs.  
+* **HTML5-based Form Field components**: AEM Forms Edge Delivery Service allows you to create user-friendly and interactive forms using form components based on HTML5 [input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  elements. These components cater to different types of data collection and can be easily customized to fit your specific needs.  
 
 * **Accessibility**: The fields in the form block are accessible. Each label is linked with its respective input element, and IDs are auto-generated for linking. Descriptions associated with fields are linked via the aria-describedby attribute. Keyboard navigation using the standard Tab/Shift + Tab keys is supported.
 
-* **Form Rules**: Create logic that adjusts field visibility, validation, and behavior based on user input or predefined conditions. Rules offer a flexible and intuitive way to add intelligence to your forms, ensuring they adapt seamlessly based on user inputs.
+* **Styling**: Each form field has a fixed HTML structure that can be easily decorated using custom CSS or JavaScript files. Selectors for targeting fields in CSS and JS are provided based on type and name. You can easily create new selectors due to the standradized structure. 
 
-* **File Uploads**: Enhance your forms with seamless file attachment capabilities. Whether you need to gather documents, images, or other files from your users, the Adaptive Form Block empowers you to integrate file upload functionality effortlessly. With custom handling options available, you can tailor the file upload process to suit your specific requirements.
+* **Rules**: Easily create logic that adjusts field visibility, validation, and behavior based on user input or predefined conditions. Rules offer a flexible and intuitive way to add intelligence to your forms, ensuring they adapt seamlessly based on user inputs.
 
-* **Form Validation**: Before submission, the form is validated, and invalid fields are appropriately marked with error messages displayed to the user. Various patterns are available for displaying these errors.
+* **Validations**: Before submission, the form is validated, and invalid fields are appropriately marked with error messages displayed to the user. Various patterns are available for displaying these errors.
 
-* **Styling Forms**: Each form field has a fixed HTML structure that can be further decorated using custom CSS or JavaScript files. Selectors for targeting fields in CSS/JS are provided based on type and name.
+There are some advanced features which are available on request:  
+
+* **File Uploads**: You can add file attachment capabilities to your forms. Whether you need to gather documents, images, or other files from your users, file upload functionality serves you effortlessly. With custom handling options available, you can tailor the file upload process to suit your specific requirements.
+
+* **reCAPTCHA**: Benefit from seamless integration of Google reCAPTCHA into your forms with our out-of-the-box (OOTB) support. Safeguard your forms against fraudulent activities, spam, and abuse, while maintaining a smooth and uninterrupted user experience. 
+
+* **Send email notification on form submission**: Eliminate the hassle of manual follow-ups and ensure timely communication with our built-in email automation for form submissions. This integrated solution lets you effortlessly notify relevant parties, including sending form data, whenever someone fills out a form on your website. No need for complex configurations or additional tools – it's ready to use out of the box.
+
 
 ## Workflow
 

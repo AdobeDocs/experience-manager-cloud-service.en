@@ -12,6 +12,7 @@ hidefromtoc: yes
 
 Once you've [created and previewed the form](/help/edge/docs/forms/create-forms.md), it's time to enable the corresponding spreadsheet to start receiving data. 
 
+![Document-based authoring ecosystem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -40,6 +41,7 @@ To enable the spreadsheet:
 
 
 Once the field names are added to the `incoming` sheet, your form becomes ready to accept submissions. You can preview the form and submit data to the sheet using it. 
+
 
 
 You also observe the following changes in your spreadsheet: 
@@ -304,6 +306,6 @@ Next, you can customize the thank you message, [configure a thank you page](/hel
 
 * [Create and preview a form](/help/edge/docs/forms/create-forms.md)
 * [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
-* [Publish a form to sites page](/help/edge/docs/forms/publish-eds-forms.md)
+* [Publish a form to sites page](/help/edge/docs/forms/publish-forms.md)
 * [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
 * [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)

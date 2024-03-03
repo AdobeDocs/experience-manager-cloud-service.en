@@ -816,7 +816,7 @@ user-guide-title: AEM as a Cloud Service
     + Get Started {#getting-started-eds-forms}
       + [Create and preview a form](/help/edge/docs/forms/create-forms.md)
       + [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
-      + [Publish a form to sites page](/help/edge/docs/forms/publish-eds-forms.md)
+      + [Publish a form to sites page](/help/edge/docs/forms/publish-forms.md)
       + [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
       + [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
       + [Use rules to add dynamic behaviour to a form](/help/edge/docs/forms/rules-forms.md)

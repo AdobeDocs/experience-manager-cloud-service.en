@@ -6,9 +6,10 @@ hide: yes
 hidefromtoc: yes
 ---
 
-# A Developer's Guide to Form Components and Properties: AEM Forms Edge Delivery Service
+# Form Components and Properties: AEM Forms Edge Delivery Service
 
 AEM Forms Edge Delivery Service allows you to create user-friendly and interactive forms using various components. These components cater to different types of data collection and can be easily customized to fit your specific needs. 
+
 
 ![A sample spreadsheet with some components and properties](/help/edge/assets/sample-form-in-spreadsheet.png)
 
@@ -35,6 +36,8 @@ Here's an overview of the available components:
 
 
 
+
+
 ## Components properties
 
 Each form component comes with various properties that allow you to control its behavior and appearance. Here the properties supported by Adaptive Form Block components:
@@ -42,6 +45,7 @@ Each form component comes with various properties that allow you to control its 
 
 | Property     | Applicable Components        | Details                                                              |
 |--------------|------------------------------|----------------------------------------------------------------------|
+| Type         | All                          | Specifies the type of the component. This property determines the behavior and appearance of the input field. For example, for text inputs, the type may be "text," "email" for email inputs, "password" for password inputs. Adaptive Form block supports  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">all valid HTML5 input types</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> as type.|
 | Type         | All                          | Specifies the type of the component. This property determines the behavior and appearance of the input field. For example, for text inputs, the type may be "text," "email" for email inputs, "password" for password inputs. Adaptive Form block supports  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">all valid HTML5 input types</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> as type.|
 | Name         | All                          | Identifies the component for form submission. The name attribute is used when the form data is submitted to the server, associating the user input with a specific field. |
 | Label        | All                          | Provides contextual information to users. The label is the text displayed next to the component, giving users guidance on what information to input. |
@@ -195,6 +199,6 @@ Here is the table which outlines how core components correspond to their HTML-5 
 
 - [Create and preview a form](/help/edge/docs/forms/create-forms.md)
 - [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
-- [Publish a form to sites page](/help/edge/docs/forms/publish-eds-forms.md)
+- [Publish a form to sites page](/help/edge/docs/forms/publish-forms.md)
 - [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
 - [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
