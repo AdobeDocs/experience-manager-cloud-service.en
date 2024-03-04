@@ -26,8 +26,8 @@ You can open the Live Copy Overview from the:
 
 The **Live Copy Overview** can be opened from the **References** side panel of the **Sites** console:
 
-1. In the **Sites** console, [navigate to your blueprint page and select it](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Open the **[References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** rail and select **Live Copies**.
+1. In the **Sites** console, [navigate to your blueprint page and select it](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Open the **[References](/help/sites-cloud/authoring/basic-handling.md#references)** rail and select **Live Copies**.
 
    ![Live Copy from references rail](../assets/live-copy-references.png)
 
