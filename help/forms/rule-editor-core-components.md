@@ -1,21 +1,11 @@
 ---
-title: How to use the rule editor to add rules to form fields to add dynamic behavior and build complex logic to an adaptive form?
+title: How to use the rule editor to add rules to form fields to add dynamic behavior and build complex logic to an adaptive form based on core components?
 description: Adaptive Forms rule editor allows you to add dynamic behavior and build complex logic into forms without coding or scripting.
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 ---
-# Add rules to an Adaptive Form {#adaptive-forms-rule-editor}
-
-<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
-
-| Version | Article link |
-| -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html)                  |
-| AEM as a Cloud Service     | This article         |
-
-## Overview {#overview}
+# Add rules to an Adaptive Form (Core Components) {#adaptive-forms-rule-editor}
 
 The rule editor feature empowers forms business users and developers to write rules on Adaptive Form objects. These rules define actions to trigger on form objects based on preset conditions, user inputs, and user actions on the form. It helps further streamline the form filling experience ensuring accuracy and speed.
 
@@ -51,7 +41,7 @@ The Show, Hide, Enable, Disable, Set Value Of, and Validate rule types in rule e
 
 >[!NOTE]
 >
->The available rule types, including conditions and actions that you define in rule editor, also depend on the type of form object on which you are creating a rule. The rule editor displays only valid rule types and options for writing condition and action statements for a particular form object type. For example, you do not see Validate, Set Value Of, Enable, and Disable rule types for a panel object.
+>The available rule types, including conditions and actions that you define in rule editor, also depend on the type of form object on which you are creating a rule. The rule editor displays only valid rule types and options for writing condition and action statements for a particular form object type. For example, you do not see Validate and Set Value Of types for a panel object.
 
 For more information about rule types available in the rule editor, see [Available rule types in rule editor](rule-editor.md#p-available-rule-types-in-rule-editor-p).
 
@@ -82,15 +72,18 @@ The rule editor provides the following logical operators and events using which 
 * **Starts With**
 * **Ends With**
 * **Contains**
+* **Does not contain**
 * **Is Empty**
 * **Is Not Empty**
 * **Has Selected:** Returns true when the user selects a particular option for a checkbox, drop-down, radio button.
 * **Is Initialized (event):** Returns true when a form object renders in the browser.
 * **Is Changed (event):** Returns true when the user changes the entered value or selected option for a form object.
+
+<!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
 * **Step Completion(event):** Returns true when a step of a rule completes.
 * **Successful Submission(event):** Returns true on successful submission of data to a form data model.
-* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model.
+* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
 
 ## Available rule types in rule editor {#available-rule-types-in-rule-editor}
 
@@ -114,17 +107,24 @@ Action 2 on Object B;
 AND
 Action 3 on Object C;
 
+`Else, do the following:`
+
+Action 2 on Object C;
 _
 
 When you have a multi-value component, such as radio buttons or list, while creating a rule for that component the options are automatically retrieved and made available to the rule creator. You need not type the option values again.
 
 For example, a list has four options: Red, Blue, Green, and Yellow. While creating the rule, the options (radio buttons) are automatically retrieved and made available to the rule creator as following:
 
-![Multi value displays options](assets/multivaluefcdisplaysoptions1.png)
+![Multi value displays options](assets/multivaluefcdisplaysoptions.png)
 
-While writing a When rule, you can trigger the Clear Value Of action. Clear Value Of action clears the value of the specified object. Having Clear Value of as an option in the When statement lets you create complex conditions with multiple fields.
+While writing a When rule, you can trigger the Clear Value Of action. Clear Value Of action clears the value of the specified object. Having Clear Value of as an option in the When statement lets you create complex conditions with multiple fields. You can add the Else statement to add further conditions
 
-![Clear value of](assets/clearvalueof1.png)
+![Clear value of](assets/clearvalueof.png)
+
+>[!NOTE]
+>
+> When rule type only supports single-level then-else statements.
 
 **[!UICONTROL Hide]** Hides the specified object.
 
@@ -146,49 +146,53 @@ For more information about configuring services in form data model, see [[!DNL E
 
 The **[!UICONTROL Set Property]** rule type lets you set the value of a property of the specified object based on a condition action. You can set property to one of the following:
 * visible (Boolean)
-* dorExclusion (Boolean)
-* chartType (String)
-* title (String)
+* label.value (String)
+* label.visible (Boolean)
+* description (String)
 * enabled (Boolean)
-* mandatory (Boolean)
-* validationsDisabled (Boolean)
-* validateExpMessage (String)
-* value (Number, String, Date)
-* items (List)
+* readOnly (Boolean)
+* required (Boolean)
+* screenReaderText (String)
 * valid (Boolean)
 * errorMessage (String)
+* default (Number, String, Date)
+* enumNames (String[])
+* chartType (String)
 
-For example, it enables you to define rules to add check boxes dynamically to the Adaptive Form. You can use custom function, a form object, or an object property to define a rule.
+For example, it enables you to define rules to show textbox when a button is clicked. You can use custom function, a form object, object property, or an service output to define a rule.
 
-![Set Property](assets/set_property_rule_new1.png)
+![Set Property](assets/set_property_rule_new.png)
 
-To define a rule based on a custom function, select **[!UICONTROL Function Output]** from the drop-down list, and drag-and-drop a custom function from the **[!UICONTROL Functions]** tab. If the condition action is met, the number of checkboxes defined in the custom function are added to the Adaptive Form.
+To define a rule based on a custom function, select **[!UICONTROL Function Output]** from the drop-down list, and drag-and-drop a custom function from the **[!UICONTROL Functions]** tab. If the condition action is met, the text input box gets visible.
 
-To define a rule based on a form object, select **[!UICONTROL Form Object]** from the drop-down list, and drag-and-drop a form object from the **[!UICONTROL Form Objects]** tab. If the condition action is met, the number of checkboxes defined in the form object are added to the Adaptive Form.
+To define a rule based on a form object, select **[!UICONTROL Form Object]** from the drop-down list, and drag-and-drop a form object from the **[!UICONTROL Form Objects]** tab. If the condition action is met, the text input box gets visible in the Adaptive Form.
 
-A Set Property rule based on an object property lets you add the number of checkboxes in an Adaptive Form based on another object property that is included in the Adaptive Form.
+A Set Property rule based on an object property lets you to make the text input box visible in an Adaptive Form based on another object property that is included in the Adaptive Form.
 
-The following figure depicts an example of dynamically adding checkboxes based on the number of drop-down lists in the Adaptive Form:
+The following figure depicts an example of dynamically enabling the checkbox based on the hiding or showing of textbox in an Adaptive Form:
 
-![Object Property](assets/object_property_set_property_new1.png)
+![Object Property](assets/object_property_set_property_new.png)
 
 **[!UICONTROL Clear Value Of]** Clears the value of the specified object.
 
 **[!UICONTROL Set Focus]** Sets focus on the specified object.
 
-**[!UICONTROL Save Form]** Saves the form.
+**[!UICONTROL Submit Form]** Submits the form.
 
-**[!UICONTROL Submit Forms]** Submits the form.
+**[!UICONTROL Reset]** Resets the form or specified object.
 
-**[!UICONTROL Reset Form]** Resets the form.
-
-**[!UICONTROL Validate Form]** Validates the form.
+**[!UICONTROL Validate]** Validates the form or specified object.
 
 **[!UICONTROL Add Instance]** Adds an instance of the specified repeatable panel or table row.
 
 **[!UICONTROL Remove Instance]** Removes an instance of the specified repeatable panel or table row.
 
+**[!UICONTROL Function Output]** Defines a rule based on  predefined functions or custom functions.
+
 **[!UICONTROL Navigate to]** Navigates to other <!--Interactive Communications,--> Adaptive Forms, other assets such as images or document fragments, or an external URL. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+
+**[!UICONTROL Dispatch Event]** Triggers the specific actions or behaviors based on predefined conditions or events.
+
 
 ### [!UICONTROL Set Value of] {#set-value-of}
 
@@ -202,21 +206,17 @@ Set value of Object A to:
 (object property X of Object C) OR
 (value from a function) OR
 (value from a mathematical expression) OR
-(output value of a data model service or web service);
+(output value of a data model service);
 
 When (optional):
 
 (Condition 1 AND Condition 2 AND Condition 3) is TRUE;
 
-The following example takes the value in `dependentid` field as input and sets the value of the `Relation` field to the output of the `Relation` argument of the `getDependent` Form Data Model service.
+Following example selects the value of `Question2` as `True` and sets the value of `Result` as `correct`.
 
-![Set-value-web-service](assets/set-value-web-service1.png)
+![Set-value-web-service](assets/set-value-web-service.png)
 
-Example of Set Value rule using Form Data Model service
-
->[!NOTE]
->
->In addition, you can use Set Value of rule to populate all values in a drop-down list component from the output of a Form Data Model service or a web service. However, ensure that the output argument you choose is of an array type. All values returned in an array become available in the specified drop-down list.
+Example of Set Value rule using Form Data Model service.
 
 ### [!UICONTROL Show] {#show}
 
@@ -300,6 +300,7 @@ A typical Validate rule is structured as follows:
 
 ![Script-validation](assets/script-validation.png)
 
+<!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}
 
 The **[!UICONTROL Set Options Of]** rule type enables you to define rules to add check boxes dynamically to the Adaptive Form. You can use a Form Data Model or a custom function to define the rule.
@@ -317,7 +318,7 @@ To define a rule based on a form data model:
 1. Select a data model object property from the **[!UICONTROL Display Value]** drop-down list. The number of checkboxes in the Adaptive Form is derived from the number of instances defined for that property in the database.
 1. Select a data model object property from the **[!UICONTROL Save Value]** drop-down list.
 
-![FDM set options](assets/fdm_set_options_new.png)
+![FDM set options](assets/fdm_set_options_new.png) -->
 
 ## Understanding the rule editor user interface {#understanding-the-rule-editor-user-interface}
 
@@ -328,19 +329,19 @@ To launch the rule editor user interface:
 1. Open an Adaptive Form in authoring mode.
 1. Select the form object for which you want to write a rule, and in Component Toolbar select ![edit-rules](assets/edit-rules-icon.svg). The rule editor user interface appears.
 
-   ![create-rules](assets/create-rules1.png)
+   ![create-rules](assets/create-rules.png)
 
    Any existing rules on the selected form objects are listed in this view. For information about managing existing rules, see [Manage rules](rule-editor.md#p-manage-rules-p).
 
 1. Select **[!UICONTROL Create]** to write a new rule. The visual editor of the rule editor user interface opens by default when you launch the rule editor the first time.
 
-   ![Rule Editor UI](assets/rule-editor-ui1.png)
+   ![Rule Editor UI](assets/rule-editor-ui.png)
 
 Let's look at each component of the rule editor UI in detail.
 
 ### A. Component-rule display {#a-component-rule-display}
 
-Displays the title of the Adaptive Form object through which you launched the rule editor and the rule type currently selected. In the above example, the rule editor is launched from an Adaptive Form object titled Salary and the rule type selected is When.
+Displays the title of the Adaptive Form object through which you launched the rule editor and the rule type currently selected. In the above example, the rule editor is launched from an Adaptive Form object titled Question 1 and the rule type selected is When.
 
 ### B. Form objects and functions {#b-form-objects-and-functions-br}
 
@@ -350,9 +351,11 @@ The Form Objects tab shows a hierarchical view of all objects contained in the A
 
 The form objects that have one or more valid rules applied are marked with a Green dot. If any of the rules applied to a form object are invalid, the form object is marked with a Yellow dot.
 
-The Functions tab includes a set of built-in functions, such as Sum Of, Min Of, Max Of, Average Of, Number Of, and Validate Form. You can use these functions to compute values in repeatable panels and table rows and use them in action and condition statements when writing rules. You can, however, create [custom functions](#custom-functions) too.
+The Functions tab includes a set of built-in functions, such as Sum Of, Min Of, Max Of, Average Of, Number Of, and Validate Form. You can use these functions to compute values in repeatable panels and table rows and use them in action and condition statements when writing rules. You can, however, create custom functions too.
 
-![The Functions tab](assets/functions1.png)
+Some of the list of functions are displayed in the figure:
+
+![The Functions tab](assets/functions.png)
 
 >[!NOTE]
 >
@@ -391,7 +394,7 @@ The **[!UICONTROL Cancel]** button discards any changes you made to a rule and c
 
 ## Write rules {#write-rules}
 
-You can write rules using the visual rule editor <!-- or the code editor>. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule.
+You can write rules using the visual rule editor <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 Let's first look at how to write rules using visual editor.
 
@@ -412,7 +415,7 @@ To write rules, perform the following steps:
 
    Open the loan application form in authoring mode. Select the **[!UICONTROL Marital Status]** component and select ![edit-rules](assets/edit-rules-icon.svg). Next, select **[!UICONTROL Create]** to launch the rule editor.
 
-   ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
+   ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1-cc.png)
 
    When you launch the rule editor, the When rule is selected by default. Also, the form object (in this case, Marital Status) from where you launched the rule editor is specified in the When statement.
 
@@ -420,41 +423,56 @@ To write rules, perform the following steps:
 
 1. Select **[!UICONTROL Select State]** drop-down and select **[!UICONTROL is equal to]**. The **[!UICONTROL Enter a String]** field appears.
 
-   ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
+   ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
-   In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
+  <!--  In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
 
-   ![Radio button values from rule editor](assets/radio-button-values.png)
+   ![Radio button values from rule editor](assets/radio-button-values.png)-->
 
-1. In the **[!UICONTROL Enter a String]** field in the rule, specify **0**.
+1. In the **[!UICONTROL Enter a String]** field in the rule, select **Married** from drop-down menu.
 
-   ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4.png)
+   ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
    You have defined the condition as `When Marital Status is equal to Married`. Next, define the action to perform if this condition is True.
 
 1. In the Then statement, select **[!UICONTROL Show]** from the **[!UICONTROL Select Action]** drop-down.
 
-   ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
+   ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5-cc.png)
 
 1. Drag-drop the **[!UICONTROL Spouse Salary]** field from the Form Objects tab on the **[!UICONTROL Drop object or select here]** field. Alternatively, select the **[!UICONTROL Drop object or select here]** field and select the **[!UICONTROL Spouse Salary]** field from the pop-up menu, which lists all form objects in the form.
 
-   ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
+   ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
+
+   Next, define the action to perform if this condition is False. 
+1. Click **[!UICONTROL Add Else Section]** to add another condition for the **[!UICONTROL Spouse Salary]** field, in case you select Marital Status as single. 
+
+   ![when-else](assets/when-else.png)
+
+
+1. In the Else statement, select **[!UICONTROL Hide]** from the **[!UICONTROL Select Action]** drop-down.
+    ![when-else](assets/when-else-1.png)
+
+1. Drag-drop the **[!UICONTROL Spouse Salary]** field from the Form Objects tab on the **[!UICONTROL Drop object or select here]** field. Alternatively, select the **[!UICONTROL Drop object or select here]** field and select the **[!UICONTROL Spouse Salary]** field from the pop-up menu, which lists all form objects in the form.
+     ![when-else](assets/when-else-2.png)
 
    The rule appears as follows in the rule editor.
 
-   ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7.png)
+   ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7-cc.png)
+
+
 
 1. Select **[!UICONTROL Done]** to save the rule.
 
+<!--
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8.png)
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png) -->
 
    >[!NOTE]
    >
-   >Alternatively, you can write one Show rule on the Spouse Salary field, instead of two When rules on the Marital Status field, to implement the same behavior.
+   > Alternatively, you can write a Show rule on the Spouse Salary field, instead of a When rules on the Marital Status field, to implement the same behavior.
 
-   ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9.png)
+   ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
 
 1. Next, write a rule to compute the loan eligibility amount, which is 50% of the total salary, and display it in the Loan Eligibility field. To achieve this outcome, create **[!UICONTROL Set value Of]** rules on Loan Eligibility field.
 
@@ -462,11 +480,11 @@ To write rules, perform the following steps:
 
 1. Select **[!UICONTROL Set Value Of]** rule from the rule drop-down.
 
-   ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
+   ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10-cc.png)
 
 1. Select **[!UICONTROL Select Option]** and select **[!UICONTROL Mathematical Expression]**. A field to write mathematical expression opens.
 
-   ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
+   ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11-cc.png)
 
 1. In the expression field:
 
@@ -480,11 +498,11 @@ To write rules, perform the following steps:
 
 1. Next, select in the highlighted area around the expression field and select **[!UICONTROL Extend Expression]**.
 
-   ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
+   ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
    In the extended expression field, select **[!UICONTROL divided by]** from the **[!UICONTROL Select Operator]** field and **[!UICONTROL Number]** from the **[!UICONTROL Select Option]** field. Then, specify **[!UICONTROL 2]** in the number field.
 
-   ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14.png)
+   ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
 
    >[!NOTE]
    >
@@ -494,7 +512,7 @@ To write rules, perform the following steps:
 
 1. Select **[!UICONTROL Add Condition]** to add a When statement.
 
-   ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
+   ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
    In the When statement:
 
@@ -504,21 +522,22 @@ To write rules, perform the following steps:
 
     * Select String in the other **[!UICONTROL Drop object or select here]** field and specify **[!UICONTROL Married]** in the **[!UICONTROL Enter a String]** field.
 
-   The rule finally appears as follows in the rule editor.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
+   The rule finally appears as follows in the rule editor.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16-cc.png)
 
 1. Select **[!UICONTROL Done]**. It saves the rule.
 
 1. Repeat steps 7 through 14 to define another rule to compute the loan eligibility if the marital Status is Single. The rule appears as follows in the rule editor.
 
-   ![write-rules-visual-editor-17](assets/write-rules-visual-editor-17.png)
+   ![write-rules-visual-editor-17](assets/write-rules-visual-editor-17-cc.png)
 
->[!NOTE]
->
->Alternatively, you can use the Set Value Of rule to compute the loan eligibility in the When rule that you created to show-hide the Spouse Salary field. The resultant combined rule when Marital Status is Single appears as follows in the rule editor.
->
->Similarly, you can write a combined rule to control visibility of the Spouse Salary field and compute loan eligibility when the Marital Status is Married.
+Alternatively, you can use the Set Value Of rule to compute the loan eligibility in the When rule that you created to show-hide the Spouse Salary field. The resultant combined rule when Marital Status is Single appears as follows in the rule editor.
 
-![write-rules-visual-editor-18](assets/write-rules-visual-editor-18.png)
+![write-rules-visual-editor-18](assets/write-rules-visual-editor-18-cc.png)
+
+You can write a combined rule to control visibility of the Spouse Salary field and compute loan eligibility when the Marital Status is Married using the Else condition.
+
+![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
+
 
 <!-- ### Using code editor {#using-code-editor}
 
@@ -543,6 +562,8 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Custom functions in rule editor {#custom-functions}
 
+You can also use custom functions in your rule editor. For instructions on creating custom functions, refer to the article [Custom Functions in Adaptive Forms](/help/forms/create-and-use-custom-functions.md).
+
 Apart from the out-of-the-box functions like *Sum of* that are listed under Functions Output, you can write custom functions that you frequently need. Ensure that the function you write is accompanied by the `jsdoc` above it.
 
 Accompanying `jsdoc` is required:
@@ -565,10 +586,6 @@ Supported `jsdoc` tags:
   `funcName` is the name of the function (no spaces allowed).
   `<Function Name>` is the display name of the function.
 
-* **Member**
-  Syntax: `@memberof namespace`
-  Attaches a namespace to the function.
-
 * **Parameter**
   Syntax: `@param {type} name <Parameter Description>`
   Alternatively, you can use: `@argument` `{type} name <Parameter Description>` **or** `@arg` `{type}` `name <Parameter Description>`.
@@ -579,10 +596,28 @@ Supported `jsdoc` tags:
     1. number
     1. boolean
     1. scope
+    1. string[]
+    1. number[]
+    1. boolean[]
+    1. date
+    1. date[]
+    1. array
+    1. object
 
-   Scope refers fields of an Adaptive Form. When a form uses lazy loading, you can use `scope` to access its fields. You can access fields either when the fields are loaded or if the fields are marked global.
+   `scope` refers to a special globals object which is provided by forms runtime. It must be the last parameter and is not be visible to the user in the rule editor. You can use scope to access readable form and field proxy object to read properties, event which triggered the rule and a set of functions to manipulate the form.
 
-  All parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case-sensitive. Spaces are not allowed in the parameter `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+   `object` type is used to pass readable field object in parameter to a custom function instead of passing the value.
+
+   All parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case-sensitive. Spaces are not allowed in the parameter name.  Parameter description can have multiple words.
+
+* **Optional Parameter**
+Syntax: `@param {type=} name <Parameter Description>` 
+Alternatively, you can use: `@param {type} [name] <Parameter Description>`
+By default all parameters are mandatory. You can mark a parameter optional by adding `=` in type of the parameter or by putting param name in square brackets.
+   
+   For example, let us declare `Input1` as optional parameter:
+    * `@param {type=} Input1`
+    * `@param {type} [Input1]`
 
 * **Return Type**
   Syntax: `@return {type}`
@@ -591,38 +626,19 @@ Supported `jsdoc` tags:
   {type} represents the return type of the function. Allowed return types are:
 
     1. string
-    1. number
-    1. boolean
+    2. number
+    3. boolean
+    4. string[]
+    5. number[]
+    6. boolean[]
+    7. date
+    8. date[]
+    9. array
+    10. object
 
   All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case-sensitive.
 
-  * **This**
-   Syntax: `@this currentComponent`
-
-   Use @this to refer to the Adaptive Form component on which the rule is written. 
-  
-   The following example is based on the field value. In the following example, the rule hides a field in the form. The `this` portion of `this.value` refers to underlying Adaptive Form component, on which the rule is written.
-
-   ```
-      /**
-      * @function myTestFunction
-      * @this currentComponent
-      * @param {scope} scope in which code inside function is run.
-      */
-      myTestFunction = function (scope) {
-         if(this.value == "O"){
-               scope.age.visible = true;
-         } else {
-            scope.age.visible = false;
-         }
-      }
-
-   ```
-
-   >[!NOTE]
-   >
-   >Comments before custom function are used for summary. Summary can extend to multiple lines until a tag is encountered. Limit the size to a single for a concise description in the rule builder.
-
+<!--
 **Adding a custom function**
 
 For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
@@ -718,12 +734,13 @@ var c = {
 >[!NOTE]
 >
 >Ensure that you use `jsdoc` for every custom function. Although `jsdoc`comments are encouraged, include an empty `jsdoc`comment to mark your function as custom function. It enables default handling of your custom function.
+-->
 
 ## Manage rules {#manage-rules}
 
 Any existing rules on a form object are listed when you select the object and select ![edit-rules1](assets/edit-rules-icon.svg). You can view the title and a preview the rule summary. Furthermore, the UI lets you expand and view the complete rule summary, change the order of rules, edit rules, and delete rules.
 
-![List-rules](assets/list-rules.png)
+![List-rules](assets/list-rules-cc.png)
 
 You can perform the following actions on rules:
 
@@ -738,7 +755,7 @@ You can perform the following actions on rules:
 
 * **Enable/Disable**: When you must suspend usage of a rule temporarily, you can select one or more rules and select **[!UICONTROL Disable]** in the Actions toolbar to disable them. If a rule is disabled, it does not execute at the runtime. To enable a rule that is disabled, you can select it and select Enable in the actions toolbar. The status column of the rule displays whether the rule is enabled or disabled.
 
-![Disable rule](assets/disablerule.png)
+![Disable rule](assets/disablerule-cc.png)
 
 ## Copy-paste rules {#copy-paste-rules}
 
