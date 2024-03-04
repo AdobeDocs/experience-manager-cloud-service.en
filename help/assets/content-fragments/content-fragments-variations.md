@@ -396,7 +396,7 @@ They are added as a reference in your current location in your fragment.
 
 ## Inheritance {#inheritance}
 
-Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/assets/content-fragments/content-fragments-msm.md).
 
 You can cancel (then re-enable) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
 
