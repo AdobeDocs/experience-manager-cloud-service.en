@@ -615,9 +615,9 @@ Syntax: `@param {type=} name <Parameter Description>`
 Alternatively, you can use: `@param {type} [name] <Parameter Description>`
 By default all parameters are mandatory. You can mark a parameter optional by adding `=` in type of the parameter or by putting param name in square brackets.
    
-   For example, let us add an optional parameter as Salary:
-   * `@param {type=} Salary`
-   * `@param {type} [Salary]`
+   For example, let us declare `Input1` as optional parameter:
+    * `@param {type=} Input1`
+    * `@param {type} [Input1]`
 
 * **Return Type**
   Syntax: `@return {type}`
