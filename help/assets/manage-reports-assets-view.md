@@ -1,7 +1,6 @@
 ---
 title: Manage reports in Assets view
 description: Access the data in the reports section of Assets view to assess product and feature usage and derive insights on key success metrics.
-exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
 ---
 # Manage reports {#manage-reports}
 
