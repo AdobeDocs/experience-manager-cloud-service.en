@@ -89,9 +89,9 @@ Supported `jsdoc` tags:
 Syntax: `@param {type=} name <Parameter Description>` 
 Alternatively, you can use: `@param {type} [name] <Parameter Description>`
 By default all parameters are mandatory. You can mark a parameter optional by adding `=` in type of the parameter or by putting param name in square brackets.
-For example, let us add an optional parameter as Salary:
-    * `@param {type=} Salary`
-    * `@param {type} [Salary]`
+For example, let us declare `Input1` as optional parameter:
+    * `@param {type=} Input1`
+    * `@param {type} [Input1]`
    
 * **Return Type**
   Syntax: `@return {type}`
@@ -199,15 +199,15 @@ You can add custom functions by adding client library. To create a client librar
 
 1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 1. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`.
-1. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder`. For example, create a client library folder as `es6clientlibs`.
-1. Add a property `categories` with string type value. For example, assign the value `es6customfunctions` to the `categories` property for the `es6clientlibs` folder.
+1. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder`. For example, create a client library folder as `customclientlibs`.
+1. Add a property `categories` with string type value. For example, assign the value `customfunctionscategory` to the `categories` property for the `customclientlibs` folder.
 
    >[!NOTE]
    >
    > You can choose any name for `client library folder` and `categories` property.
 
 1. Create a folder named `js`.
-1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` folder.
+1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` folder.
 1. Add a JavaScript file, for example, `function.js`. The file comprises the code for custom function.
 
     >[!NOTE]
@@ -218,7 +218,7 @@ You can add custom functions by adding client library. To create a client librar
     >* AEM Adaptive Form supports the caching of custom functions. If the JavaScript is modified, the caching becomes invalidated, and it is parsed. You can see a message as `Fetched following custom functions list from cache` in the `error.log` file.  -->
 
 1. Save the `function.js` file.
-1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` folder.
+1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` folder.
 1. Add a text file as `js.txt`. The file contains:
   
     ```javascript
@@ -247,7 +247,7 @@ Once you have deployed your client library to your Forms CS environment, use its
 1. Open your form in edit mode. To open a form in edit mode, select a form and select **[!UICONTROL Edit]**.
 1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
 1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens.  
-1. Open the **[!UICONTROL Basic]** tab and select the name of the **[!UICONTROL client library category]** from the drop-down list (in this case, select `es6customfunctions`).
+1. Open the **[!UICONTROL Basic]** tab and select the name of the **[!UICONTROL client library category]** from the drop-down list (in this case, select `customfunctionscategory`).
 
    ![Adding the custom function client library](/help/forms/assets/clientlib-custom-function.png)
 
