@@ -5,7 +5,7 @@ exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
 ---
 # Customizing Views of Page Properties{#customizing-views-of-page-properties}
 
-Every page has a set of [properties](/help/sites-cloud/authoring/fundamentals/page-properties.md) that can be viewed and edited by users. Some are required when creating the page (create view), others can be viewed and edited (edit view) at a later stage. These page properties are defined and made available by the dialog (`cq:dialog`) of the appropriate page component.
+Every page has a set of [properties](/help/sites-cloud/authoring/sites-console/page-properties.md) that can be viewed and edited by users. Some are required when creating the page (create view), others can be viewed and edited (edit view) at a later stage. These page properties are defined and made available by the dialog (`cq:dialog`) of the appropriate page component.
 
 The default state for every page property is:
 
@@ -33,7 +33,7 @@ Fields must be specifically configured if any change is required. This is done u
 
 You can also configure the fields available by configuring the dialog of your page component and applying the appropriate node properties.
 
-For example, by default the [**Create Page** wizard](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) shows the fields grouped under **More Titles and Description**. To hide these you configure:
+For example, by default the [**Create Page** wizard](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) shows the fields grouped under **More Titles and Description**. To hide these you configure:
 
 1. Create your page component under `/apps`.
 1. Create an override (using *dialog diff* provided by the [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md)) for the `basic` section of your page component; for example:
