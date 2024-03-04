@@ -26,7 +26,7 @@ Creating or expanding a global web presence can be a complex process, but with g
 
 * When designing your site structure, start by examining your content and determine where and in which language content is authored. This location should be the top level of your site.
 * The best practice is a **language-based structure** with no more than 3 levels between the top-level authoring and country sites.
-* Use a language/country site naming convention that follows **[W3C standards](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**.
+* Use a language/country site naming convention that follows **[W3C standards](/help/sites-cloud/authoring/page-editor/accessible-content.md)**.
 * Determine how content is distributed by regions and countries. Consider which countries share languages. It is recommended to create language masters, a layer of un-activated pages, where translated content can be reviewed and modified then pushed or pulled to a country site sharing that language.
 * There are two approaches to creating language masters: using language copies, and using MSM/live copies.
   * The language copy approach is the one used by AEM's out-of-the-box translation integration framework, and therefore it's the easiest way to get started. The framework provides a user interface that makes it initially easy to propagate and translate content changes from the main language (for example, English) master to language masters. However, as the project grows, workflow automation becomes increasingly necessary to manage the translation of the increased number of pages and/or languages.

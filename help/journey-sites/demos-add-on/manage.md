@@ -99,7 +99,7 @@ You are now ready to explore the capabilities of AEM using your own demo sites. 
 
 * [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - If you would like more details on Cloud Manager's features, you may want to directly consult the in-depth technical docs.
 * [Create Site](/help/sites-cloud/administering/site-creation/create-site.md) - Learn how to use AEM to create a site using site templates to define the style and structure of your site.
-* [AEM's page naming conventions](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - See this page to understand the conventions for organizing AEM pages.
-* [AEM Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Explore this document if you are new to AEM to understand basic concepts such as navigation and console organization.
+* [AEM's page naming conventions](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices). - See this page to understand the conventions for organizing AEM pages.
+* [AEM Basic Handling](/help/sites-cloud/authoring/basic-handling.md) - Explore this document if you are new to AEM to understand basic concepts such as navigation and console organization.
 * [AEM as a Cloud Service technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - If you already have a firm understanding of AEM, you may want to directly consult the in-depth technical docs.
 * [Site Templates](/help/sites-cloud/administering/site-creation/site-templates.md) - If you would like to know more about the structure of site templates and how they are used to create sites, refer to this document.

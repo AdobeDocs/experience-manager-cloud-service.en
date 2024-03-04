@@ -261,21 +261,21 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
 
 ## Additional Resources {#additional-resources}
 
-* [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Authoring Concepts](/help/sites-cloud/authoring/author-publish.md)
 
-* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for authoring **Content Fragments** under the **Assets** console.
+* [Basic Handling](/help/sites-cloud/authoring/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for authoring **Content Fragments** under the **Assets** console.
 
-  * [Navigation Panel](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
+  * [Navigation Panel](/help/sites-cloud/authoring/basic-handling.md#navigation-panel)
 
-  * [The Header](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)
+  * [The Header](/help/sites-cloud/authoring/basic-handling.md#the-header)
   
-  * [Action Toolbar](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+  * [Action Toolbar](/help/sites-cloud/authoring/basic-handling.md#actions-toolbar)
 
-  * [Quick Actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+  * [Quick Actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
   
-  * [Viewing and Selecting Resources](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+  * [Viewing and Selecting Resources](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
   
-  * [Rail Selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+  * [Rail Selector](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
 
 * [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
  

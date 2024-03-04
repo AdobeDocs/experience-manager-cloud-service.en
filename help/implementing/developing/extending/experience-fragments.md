@@ -7,7 +7,7 @@ exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 
 ## The Basics {#the-basics}
 
-An [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is a group of one or more components including content and layout that can be referenced within pages.
+An [Experience Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) is a group of one or more components including content and layout that can be referenced within pages.
 
 An Experience Fragment Master, or Variant, or both, uses:
 
@@ -83,7 +83,7 @@ To create an Experience Fragment template that is detected by the **Create Exper
       `experience-fragments`
       This pattern allows users to create experience fragments in /content/experience-fragments as the `cq:allowedTemplates` property of this folder includes all the templates that have names beginning with `experience-fragment`. Customers can update this property to include their own naming scheme or template locations.
 
-1. [Allowed templates](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) can be configured in the Experience Fragments console.
+1. [Allowed templates](/help/sites-cloud/authoring/fragments/content-fragments.md#configure-allowed-templates-folder) can be configured in the Experience Fragments console.
    
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
