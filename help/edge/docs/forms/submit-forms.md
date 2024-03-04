@@ -1,6 +1,6 @@
 ---
 title: Prepare your spreadsheet to accept data
-description: Craft powerful forms faster using spreadsheets & Form Block Fields! 
+description: Craft powerful forms faster using spreadsheets & Adaptive Form Block Fields! 
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
@@ -8,7 +8,11 @@ hidefromtoc: yes
 
 # Prepare your spreadsheet to accept data 
 
+![Document-based authoring ecosystem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+
 Once you've [created and previewed the form](/help/edge/docs/forms/create-forms.md), it's time to enable the corresponding spreadsheet to start receiving data. 
+
+![Document-based authoring ecosystem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -37,6 +41,8 @@ To enable the spreadsheet:
 
 
 Once the field names are added to the `incoming` sheet, your form becomes ready to accept submissions. You can preview the form and submit data to the sheet using it. 
+
+
 
 You also observe the following changes in your spreadsheet: 
 
@@ -160,7 +166,7 @@ A sheet named "Slack" is added to your Excel Workbook or Google Sheet. In this s
 1. Enter any title that you want and under fields enter the names of the fields you want to see in the Slack notification. Each heading should be separated by a comma (For example name, email).
 
 
-The sheet is now set up to receive data, you can [preview the form using forms block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
+The sheet is now set up to receive data, you can [preview the form using Adaptive Form Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
 
  >[!WARNING] 
  >
@@ -168,7 +174,7 @@ The sheet is now set up to receive data, you can [preview the form using forms b
 
 ## Send data to your sheet {#send-data-to-your-sheet}
 
-After the sheet is set to receive data, you can [preview the form using forms block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use Admin APIs](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
+After the sheet is set to receive data, you can [preview the form using Adaptive Form Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use Admin APIs](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
 
 ### Use Admin APIs to send data to your sheet
 
@@ -300,6 +306,6 @@ Next, you can customize the thank you message, [configure a thank you page](/hel
 
 * [Create and preview a form](/help/edge/docs/forms/create-forms.md)
 * [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
-* [Publish a form to sites page](/help/edge/docs/forms/publish-eds-forms.md)
+* [Publish a form to sites page](/help/edge/docs/forms/publish-forms.md)
 * [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
 * [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
