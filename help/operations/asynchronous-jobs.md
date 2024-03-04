@@ -25,7 +25,7 @@ You can view the status of asynchronous jobs from the **[!UICONTROL Background O
 
 ## Monitor the Status of Asynchronous Operations {#monitor-the-status-of-asynchronous-operations}
 
-Whenever AEM processes an operation asynchronously, you receive a notification in your [inbox](/help/sites-cloud/authoring/getting-started/inbox.md) and via email (if enabled).
+Whenever AEM processes an operation asynchronously, you receive a notification in your [inbox](/help/sites-cloud/authoring/inbox.md) and via email (if enabled).
 
 To view the status of the asynchronous operations in detail, navigate to the **[!UICONTROL Background Operations]** page.
 
@@ -130,6 +130,6 @@ If the number of assets/folders or references to be moved exceeds the threshold 
 
 >[!MORELIKETHIS]
 >
->* [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
+>* [Managing Pages](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 >* [Import and export asset metadata in bulk](/help/assets/metadata-import-export.md).
 >* [Use Connected Assets to share DAM assets from remote deployments](/help/assets/use-assets-across-connected-assets-instances.md).
