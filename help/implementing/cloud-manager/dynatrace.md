@@ -50,22 +50,22 @@ To learn more about Dynatrace licensing, see the [Dynatrace Platform Subscriptio
 
 1. Execute the following API request to your Dynatrace environment:  
 
-```
-curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"
-```
+   ```
+   curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"
+   ```
 
 
    Replace `<environmentUrl>` with your Dynatrace environment URL and `<accessToken>` with your created API access token.  
 
-2. Copy the `<environmentId>` and `<environmentToken>` from the response payload and store them in a secured place.
+1. Copy the `<environmentId>` and `<environmentToken>` from the response payload and store them in a secured place.
       
-```
-{
-   "tenantUUID": "<environmentId>",
-   "tenantToken": "<environmentToken>",
-   "communicationEndpoints": [...]
-}
-```
+   ```
+   {
+      "tenantUUID": "<environmentId>",
+      "tenantToken": "<environmentToken>",
+      "communicationEndpoints": [...]
+   }
+   ```
 
 ### Create a Dynatrace API access token {#create-dynatrace-access-token}
 
