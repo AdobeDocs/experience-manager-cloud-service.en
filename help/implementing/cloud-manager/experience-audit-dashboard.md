@@ -128,11 +128,11 @@ When moving the mouse over the chart, a tooltip displays the values for the Goog
 
 ![Trend details](assets/experience-audit-trend-details.png)
 
-If you tap or click on the chart at a point in time, a popover opens with detail of that scan. Tap or click the **open experience audit scan** to load that scan results into the **[Experience audit scan results](#results)** section.
+If you tap or click on the chart at a point in time, a popover opens with detail of that scan. Tap or click the **open experience audit scan** to load that scan results into the **[Experience audit scan results](#scan-results)** section.
 
 ![Select different scan](assets/experience-audit-open-scan.png)
 
-#### Experience Audit Scan Results {#results}
+#### Experience Audit Scan Results {#scan-results}
 
 The **Experience audit scan results** section gives recommendations on how to improve your score and details of all the pages scanned. It is divided into two sections:
 
