@@ -223,15 +223,15 @@ The document formats supported for asset management features are as follows.
 | Format | Upload (Input format) | Create image preset (Output format) | Preview dynamic rendition | Deliver dynamic rendition | Download dynamic rendition | Set types that support this format |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | AVIF | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |  |
-| BMP | &#10003; | &minus;| &minus; | &minus; | &minus; | [Image](/help/assets/image-sets.md), [Mixed Media](/help/assets/mixed-media-sets.md), and [Spin](/help/assets/spin-sets.md) |
+| BMP | &#10003; | &minus;| &minus; | &minus; | &minus; | [Image](/help/assets/dynamic-media/image-sets.md), [Mixed Media](/help/assets/dynamic-media/mixed-media-sets.md), and [Spin](/help/assets/dynamic-media/spin-sets.md) |
 | [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript&reg;-eps-and-pdf-file-formats-adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &minus; |
 | GIF | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &minus; |
 | HEIC | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |  |
-| JPEG | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | [Image](/help/assets/image-sets.md), [Mixed Media](/help/assets/mixed-media-sets.md), and [Spin](/help/assets/spin-sets.md) |
+| JPEG | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | [Image](/help/assets/dynamic-media/image-sets.md), [Mixed Media](/help/assets/dynamic-media/mixed-media-sets.md), and [Spin](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | &#10003; | &minus; | &minus; | &minus; | &minus; | &minus; |
-| PNG | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | [Image](/help/assets/image-sets.md), [Mixed Media](/help/assets/mixed-media-sets.md), and [Spin](/help/assets/spin-sets.md) |
+| PNG | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | [Image](/help/assets/dynamic-media/image-sets.md), [Mixed Media](/help/assets/dynamic-media/mixed-media-sets.md), and [Spin](/help/assets/dynamic-media/spin-sets.md) |
 | PSD &Dagger; | &#10003;| &minus; | &minus; | &minus; | &minus; | &minus; |
-| TIFF | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | [Image](/help/assets/image-sets.md), [Mixed Media](/help/assets/mixed-media-sets.md), and [Spin](/help/assets/spin-sets.md) |
+| TIFF | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | [Image](/help/assets/dynamic-media/image-sets.md), [Mixed Media](/help/assets/dynamic-media/mixed-media-sets.md), and [Spin](/help/assets/dynamic-media/spin-sets.md) |
 | WEBP | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |  | 
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
