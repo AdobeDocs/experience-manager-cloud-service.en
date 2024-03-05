@@ -14,7 +14,7 @@ Maintenance Tasks are processes that run on a schedule to optimize the repositor
 
 ## Configuring maintenance tasks {#maintenance-tasks-configuring}
 
-In previous versions of AEM, you could configure maintenance tasks by using the Maintenance Card (Tools > Operations > Maintenance). For AEM as a Cloud Service, the Maintenance Card is no longer available so configurations should be committed to source control and deployed by using the Cloud Manager. Adobe manages those maintenance tasks which have settings that are not configurable by customers (for example, Datastore Garbage Collection, Audit Log Purge, Version Purge). Other maintenance tasks can be configured by customers, as described in the table below.
+In previous versions of AEM, you could configure maintenance tasks by using the Maintenance Card (Tools > Operations > Maintenance). For AEM as a Cloud Service, the Maintenance Card is no longer available so configurations should be committed to source control and deployed by using the Cloud Manager. Adobe manages those maintenance tasks which have settings that are not configurable by customers (for example, Datastore Garbage Collection). Other maintenance tasks can be configured by customers, as described in the table below.
 
 >[!CAUTION]
 >
