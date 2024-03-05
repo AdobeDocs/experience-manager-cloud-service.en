@@ -1,12 +1,12 @@
 ---
 title: Using Spreadsheets to Manage Mappings
-description: Learn how to use spreadsheets to manage mappings for various values such as metadata and redirects for your AEM with Edge Delivery Services project.
+description: Learn how to use spreadsheets to manage mappings for various values such as metadata and redirects for your AEM with Edge Delivery Services site.
 feature: Edge Delivery Services
 ---
 
 # Using Spreadsheets to Manage Mappings {#mappings}
 
-Learn how to use spreadsheets to manage mappings for various values such as metadata and redirects for your AEM with Edge Delivery Services project.
+Learn how to use spreadsheets to manage mappings for various values such as metadata and redirects for your AEM with Edge Delivery Services site.
 
 {{aem-authoring-edge-early-access}}
 
@@ -91,3 +91,50 @@ The redirects spreadsheet is now publicly-accessible.
 
 In order for AEM to be able to consume the data in your spreadsheet, you additionally need to update the `paths.json` file of your project.
 
+1. Open the root of your project in GitHub.
+
+1. Tap or click the `paths.json` file to open its details and then the **Edit** icon.
+
+   ![paths.json file](assets/mappings/mappings-paths-json.png)
+
+1. Add a line to map your new spreadsheet spreadsheet to a `redirects.json` resource.
+
+   ```json
+   {
+     "mappings": [
+      "/content/<site-name>/:/",
+      "/content/<site-name>/redirects:/redirects.json"
+     ]
+   }
+   ```
+
+1. Click **Commit changes...** to save the changes to `main`.
+
+   * Either commit to `main` or create a pull request as per your process.
+
+Once the changes to `paths.json` are merged, the redirects are live for your site.
+
+## Other Spreadsheet Types {#other}
+
+Now that you know how to create a redirects spreadsheet, you can create any other standard spreadsheet type:
+
+* Placeholders
+* Metadata
+* Configurations
+* Headers
+
+Simply follow the same steps in the sections [Create Spreadsheet](#spreadsheet) and [Update paths.json](#paths-json) and choose the appropriate template and update the `paths.json` file appropriately.
+
+Additionally, you can [create your own spreadsheet](#own-spreadsheet) with arbitrary columns for your own use.
+
+## Creating Your Own Spreadsheet {#own-spreadsheet}
+
+1. Follow the same steps in the section [Create Spreadsheet.](#spreadsheet)
+1. When selecting the template, choose **Spreadsheet**.
+1. In the **Properties** tab of the wizard, you can add your own columns.
+   ![Add your own columns](assets/mappings/mappings-own-spreadsheet.png)
+   * In the **Columns** section, tap or click **Add** to add a new column.
+   * Provide a name for the column.
+   * Remove or reorganize the columns using the **Delete** and drag handle icons.
+1. Create the spreadsheet and publish as per the instructions for the redirects spreadsheet.
+1. Add a mapping to the `paths.json` file as per the instructions for the redirects spreadsheet.
