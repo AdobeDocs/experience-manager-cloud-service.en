@@ -12,7 +12,7 @@ feature: Adaptive Forms, Core Components
 ## Introduction
 
 AEM Forms support custom functions, allowing users to define JavaScript functions for implementing complex business rules. These custom functions extend the capabilities of forms by facilitating manipulation and processing of entered data to meet specified requirements. They also enable dynamic alteration of form behavior based on predefined criteria. 
-In Adaptive Forms, you can use custom functions within the [rule editor of an Adaptive Form](/help/forms/rule-editor.md#custom-functions) to create specific validation rules for form fields.
+In Adaptive Forms, you can use custom functions within the [rule editor of an Adaptive Form](/help/forms/rule-editor-core-components.md) to create specific validation rules for form fields.
 
 Let us understand use of custom function where users enter the email address, and you want to ensure that the entered email address follows a specific format (it contains an "@" symbol and a domain name). Create a custom function as "ValidateEmail" which takes the email address as input and returns true if it is valid and false otherwise.
 
@@ -44,6 +44,73 @@ Advantages of using custom functions in Adaptive Forms are:
 * **Validation of data**: Custom functions enable you to perform custom checks on form inputs and provide specified error messages.
 * **Dynamic behavior**: Custom functions allow you to control the dynamic behavior of your forms based on specific conditions. For example, you can show/hide fields, modify field values, or adjust form logic dynamically.
 * **Integration**: You can use custom functions to integrate with external APIs or services. It helps in fetching data from external sources, sending data to external Rest endpoints, or performing custom actions based on external events.
+
+## Supported JS annotations
+
+Ensure that the custom function you write is accompanied by the `jsdoc` above it.
+
+Supported `jsdoc` tags:
+
+* **Private**
+  Syntax: `@private`
+  A private function is not included as a custom function.
+
+* **Name**
+  Syntax: `@name funcName <Function Name>`
+  Alternatively `,` you can use: `@function funcName <Function Name>` **or** `@func` `funcName <Function Name>`.
+  `funcName` is the name of the function (no spaces allowed).
+  `<Function Name>` is the display name of the function.
+
+* **Parameter**
+  Syntax: `@param {type} name <Parameter Description>`
+  Alternatively, you can use: `@argument` `{type} name <Parameter Description>` **or** `@arg` `{type}` `name <Parameter Description>`.
+  Shows parameters used by the function. A function can have multiple parameter tags, one tag for each parameter in the order of occurrence.
+  `{type}` represents parameter type. Allowed parameter types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. scope
+    5. string[]
+    6. number[]
+    7. boolean[]
+    8. date
+    9. date[]
+    10. array
+    11. object
+
+   `scope` refers to a special globals object which is provided by forms runtime. It must be the last parameter and is not be visible to the user in the rule editor. You can use scope to access readable form and field proxy object to read properties, event which triggered the rule and a set of functions to manipulate the form.
+
+   `object` type is used to pass readable field object in parameter to a custom function instead of passing the value.
+
+   All parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case-sensitive. Spaces are not allowed in the parameter name.  Parameter description can have multiple words.
+
+* **Optional Parameter**
+Syntax: `@param {type=} name <Parameter Description>` 
+Alternatively, you can use: `@param {type} [name] <Parameter Description>`
+By default all parameters are mandatory. You can mark a parameter optional by adding `=` in type of the parameter or by putting param name in square brackets.
+For example, let us declare `Input1` as optional parameter:
+    * `@param {type=} Input1`
+    * `@param {type} [Input1]`
+   
+* **Return Type**
+  Syntax: `@return {type}`
+  Alternatively, you can use `@returns {type}`.
+  Adds information about the function, such as its objective.
+  {type} represents the return type of the function. Allowed return types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. string[]
+    5. number[]
+    6. boolean[]
+    7. date
+    8. date[]
+    9. array
+    10. object
+
+All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case-sensitive.
 
 ## Considerations while creating custom functions {#considerations}
 
@@ -132,15 +199,15 @@ You can add custom functions by adding client library. To create a client librar
 
 1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 1. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`.
-1. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder`. For example, create a client library folder as `es6clientlibs`.
-1. Add a property `categories` with string type value. For example, assign the value `es6customfunctions` to the `categories` property for the `es6clientlibs` folder.
+1. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder`. For example, create a client library folder as `customclientlibs`.
+1. Add a property `categories` with string type value. For example, assign the value `customfunctionscategory` to the `categories` property for the `customclientlibs` folder.
 
    >[!NOTE]
    >
    > You can choose any name for `client library folder` and `categories` property.
 
 1. Create a folder named `js`.
-1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` folder.
+1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` folder.
 1. Add a JavaScript file, for example, `function.js`. The file comprises the code for custom function.
 
     >[!NOTE]
@@ -151,7 +218,7 @@ You can add custom functions by adding client library. To create a client librar
     >* AEM Adaptive Form supports the caching of custom functions. If the JavaScript is modified, the caching becomes invalidated, and it is parsed. You can see a message as `Fetched following custom functions list from cache` in the `error.log` file.  -->
 
 1. Save the `function.js` file.
-1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` folder.
+1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` folder.
 1. Add a text file as `js.txt`. The file contains:
   
     ```javascript
@@ -171,7 +238,7 @@ You can add custom functions by adding client library. To create a client librar
 
 1. [Run the pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)
 
-Once the pipeline is executed successfully, the custom function added in client library becomes available in your [Adaptive Form rule editor](/help/forms/rule-editor.md). 
+Once the pipeline is executed successfully, the custom function added in client library becomes available in your [Adaptive Form rule editor](/help/forms/rule-editor-core-components.md). 
 
 ### Add client library in an Adaptive Form{#use-custom-function}
 
@@ -180,7 +247,7 @@ Once you have deployed your client library to your Forms CS environment, use its
 1. Open your form in edit mode. To open a form in edit mode, select a form and select **[!UICONTROL Edit]**.
 1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
 1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens.  
-1. Open the **[!UICONTROL Basic]** tab and select the name of the **[!UICONTROL client library category]** from the drop-down list (in this case, select `es6customfunctions`).
+1. Open the **[!UICONTROL Basic]** tab and select the name of the **[!UICONTROL client library category]** from the drop-down list (in this case, select `customfunctionscategory`).
 
    ![Adding the custom function client library](/help/forms/assets/clientlib-custom-function.png)
 
