@@ -83,9 +83,36 @@ There are some advanced features which are available on request:
 * **Send email notification on form submission**: Eliminate the hassle of manual follow-ups and ensure timely communication with our built-in email automation for form submissions. This integrated solution lets you effortlessly notify relevant parties, including sending form data, whenever someone fills out a form on your website. No need for complex configurations or additional tools – it's ready to use out of the box.
 
 
-## Workflow
+## Available Forms Blocks
 
-![Document-based authoring ecosystem](/help/edge/assets/document-based-authoring-workflow.png)
+AEM Forms Edge Delivery Service offers two types of forms blocks to cater to different needs:
+
+* **Basic Forms Block**: This is a versatile option suitable for creating simple forms with essential functionalities. It allows you to integrate various input types like text fields, dropdown menus, and radio buttons, enabling you to collect user data effectively.
+
+* **Adaptive Forms Block**: This advanced block unlocks additional capabilities beyond the Basic Forms Block, empowering you to build more complex and interactive forms. Here's a breakdown of its key features:
+
+    * Rules: Define logic-based actions within your forms. You can use rules to conditionally show or hide form sections, pre-populate fields based on user input, and perform various validations to ensure data integrity.
+    
+    * Server-side extensibility: Extend the functionalities of your forms by integrating them with server-side logic. This allows you to perform complex calculations, interact with external systems, and automate specific tasks based on user actions within the form.
+
+    * Cross Walk: Streamline workflows and data management: Leverage the power of AEM to:
+    
+         * Design user-friendly forms using AEM editors.
+        
+         * Generate a "Document of Record" for secure and tamper-proof archiving of submitted data.
+         
+         * Facilitate e-signing with Adobe Sign for a smooth and secure signing experience.
+        
+         * Automate business processes through AEM workflows, triggering actions based on form submissions.
+         
+         * Effortlessly integrate with various data sources, enabling seamless data flow and exchange.
+
+    Using the Adaptive Forms Block requires an additional license.
+
+### Choosing the right Forms Block
+
+The selection between the Basic and Adaptive Forms Blocks depends on your specific requirements. If you need a straightforward solution for collecting basic user information, the Basic Forms Block is a perfect fit. However, if your forms require intricate logic, data manipulation, integration with external systems, or streamlined workflows using AEM features, and **you have the necessary license**, the Adaptive Forms Block provides the necessary power and flexibility to achieve your goals.
+
 
 ## Start creating forms
 
