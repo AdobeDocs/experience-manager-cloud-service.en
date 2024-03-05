@@ -30,3 +30,64 @@ This document uses the example of redirects to illustrate how to create such spr
 >
 >For more information on how spreadsheets work with Edge Delivery Services, please see the document [Spreadsheets and JSON.](/help/edge/developer/spreadsheets.md)
 
+## Prerequisites {#prerequisites}
+
+In order to create mappings using spreadsheets in your AEM with Edge Delivery Services project, you need to have created your site using the latest site template.
+
+Please see the document [ Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) for more information.
+
+## Creating a Spreadsheet {#spreadsheet}
+
+In this example, you will create a spreadsheet to manage redirects for your AEM with Edge Delivery Services project. The same steps apply to any spreadsheet you wish to create.
+
+1. Sign in to your AEM as a Cloud Service authoring instance, go to the Sites console, and navigate to the root of your site which requires a spreadsheet. Tap or click **Create** -> **Page**.
+
+   ![Create page](assets/mappings/mappings-create-page.png)
+
+1. On the **Template** tab of the create site wizard, tap or click the **Redirects** template to select it and then tap or click **Next**.
+
+   ![Select template](assets/mappings/mappings-create-page-teamplate-redirects.png)
+
+1. The **Properties** tab of the wizard presents the default values for the redirects spreadsheet. Tap or click **Create**.
+
+   * **Title** - Leave this value as-is unless you have explicit need to change it.
+   * **Columns** - The minimum columns needed for redirects are prepopulated.
+     * **source** - The page to be redirected
+     * **destination** - The page to redirect to
+
+   ![Properties of the spreadsheet](assets/mappings/mappings-create-page-properties-redirects.png)
+
+1. In the **Success** dialog, tap or click **Open**.
+
+   ![Success dialog](assets/mappings/mappings-success.png)
+
+1. A new tab opens with the spreadsheet loaded into an editor with the predefined **source** and **destination** columns. Tap or click the empty row of the **source** column to define your redirects. Changes are saved automatically as you edit the spreadsheet.
+
+   ![Edit spreadsheet](assets/mappings/mappings-edit-redirects.png)
+
+   * The **source** is relative to the domain of your website, so it only contains the relative path.
+   * The **destination** can be either a fully qualified URL if you are redirecting to a different website, or it can be a relative path if you are redirecting within your own website.
+   * Use the tab-key to move focus to the next cell.
+   * The editor will add new rows to the spreadsheet as necessary.
+   * Use the **Delete** icon at the end of each row and the drag handles at the beginning of each row to delete or move a row, respectively.
+
+1. When you are finished defining your redirects, close the tab and return to the **Sites** console.
+
+1. Tap or click to select the redirects spreadsheet that you created in the console and then tap or click **Quick Publish** in the actions bar to publish the spreadsheet.
+
+   ![Select the spreadsheet in the Sites console](assets/mappings/mappings-select-publish.png)
+
+1. In the **Quick Publish** dialog, tap or click **Publish**.
+
+   ![Confirm publish](assets/mappings/mappings-quick-publish.png)
+
+1. A banner confirms the publication.
+
+   ![Banner confirmation of publication](assets/mappings/mappings-publish-banner.png)
+
+The redirects spreadsheet is now publicly-accessible.
+
+## Update paths.json {#paths-json}
+
+In order for AEM to be able to consume the data in your spreadsheet, you additionally need to update the `paths.json` file of your project.
+
