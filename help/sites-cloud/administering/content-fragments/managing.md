@@ -26,7 +26,7 @@ After defining your [Content Fragment Models](#creating-a-content-model) you can
 >Content fragments can be used:
 >
 >* for [Headless Content Delivery using Content Fragments with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
->* when authoring pages; see [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* when authoring pages; see [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -339,7 +339,7 @@ After publication the fragment status will be updated and visible in the editor 
 
 >[!NOTE]
 >
->In addition, when you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment will be listed in the page references.
+>In addition, when you [publish a page that uses the fragment](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing); the fragment will be listed in the page references.
 
 ## Unpublishing a Fragment {#unpublishing-a-fragment}
 

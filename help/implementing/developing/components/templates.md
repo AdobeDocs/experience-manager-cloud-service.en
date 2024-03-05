@@ -7,7 +7,7 @@ exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 
 When creating a page you need to select a template. The page template is used as the base for the new page. The template defines the structure of the resultant page, any initial content and the components that can be used (design properties). This has several advantages:
 
-* Page Templates allow specialized authors to [create and edit templates](/help/sites-cloud/authoring/features/templates.md).
+* Page Templates allow specialized authors to [create and edit templates](/help/sites-cloud/authoring/sites-console/templates.md).
   * Such specialized authors are called **template authors**
   * Template authors must be members of the `template-authors` group.
 * Page Templates retain a dynamic connection to any pages created from them. This ensures that any changes to the template are reflected in the pages themselves.
@@ -24,7 +24,7 @@ This document:
 
 >[!NOTE]
 >
->This document assumes that you are already familiar with creating and editing templates. See the authoring document [Creating Page Templates](/help/sites-cloud/authoring/features/templates.md), which details the capabilities of editable templates as exposed to the template author.
+>This document assumes that you are already familiar with creating and editing templates. See the authoring document [Creating Page Templates](/help/sites-cloud/authoring/sites-console/templates.md), which details the capabilities of editable templates as exposed to the template author.
 
 >[!TIP]
 >
@@ -32,7 +32,7 @@ This document:
 
 ## Creating a New Template {#creating-a-new-template}
 
-Creating Page Templates is primarily done with the [template console and template editor](/help/sites-cloud/authoring/features/templates.md) by a template author. This section gives an overview of this process and follows with a description of what occurs at a technical level.
+Creating Page Templates is primarily done with the [template console and template editor](/help/sites-cloud/authoring/sites-console/templates.md) by a template author. This section gives an overview of this process and follows with a description of what occurs at a technical level.
 
 When creating an editable template you:
 
@@ -52,7 +52,7 @@ When creating an editable template you:
     * If you want page authors to be able to add and remove components, add a paragraph system to the template.
     * Components can be unlocked and locked again to allow you to define initial content.
 
-   For details on how a template author defines the structure, see [Creating Page Templates](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
+   For details on how a template author defines the structure, see [Creating Page Templates](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author).
 
    For technical details of the structure, see [Structure](#structure) in this document.
 
@@ -64,7 +64,7 @@ When creating an editable template you:
 
     * These are applicable to the template (and pages created with the template).
 
-   For details on how a template author defines policies, see [Creating Page Templates](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
+   For details on how a template author defines policies, see [Creating Page Templates](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author).
 
    For technical details of policies, see [Content Policies](#content-policies) in this document.
 
@@ -73,7 +73,7 @@ When creating an editable template you:
     * Initial Content defines content that will appear when a page is first created based on the template.
     * Initial content can then be edited by page authors.
 
-   For details on how a template author defines the structure, see [Creating Page Templates](/help/sites-cloud/authoring/features/templates.md#editing-a-template-initial-content-author).
+   For details on how a template author defines the structure, see [Creating Page Templates](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-initial-content-author).
 
    For technical details on initial content, see [Initial Content](#initial-content) in this document.
 
@@ -82,7 +82,7 @@ When creating an editable template you:
     * You can define the template layout for a range of devices.
     * Responsive layout for templates operates as it does for page authoring.
 
-   For details on how a template author defines the template layout, see [Creating Page Templates](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author).
+   For details on how a template author defines the template layout, see [Creating Page Templates](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-layout-template-author).
 
    For technical details on template layout, see [Layout](#layout) in this document.
 
@@ -91,7 +91,7 @@ When creating an editable template you:
     * A template can be enabled or disabled to make it available or unavailable to page authors.
     * A template can be made available or unavailable for certain page branches.
 
-   For details on how a template author enables a template, see [Creating Page Templates](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author).
+   For details on how a template author enables a template, see [Creating Page Templates](/help/sites-cloud/authoring/sites-console/templates.md#enabling-and-allowing-a-template-template-author).
 
    For technical details on enabling a template, see [Enabling and Allowing a Template for Us](#enabling-and-allowing-a-template-for-use)e in this document
 
@@ -100,7 +100,7 @@ When creating an editable template you:
     * When using a template to create a page there is no visible difference and no indication between static and editable templates.
     * For the page author, the process is transparent.
 
-   For details on how a page author uses templates to create a page, see [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
+   For details on how a page author uses templates to create a page, see [Creating and Organizing Pages](/help/sites-cloud/authoring/sites-console/organizing-pages.md#templates).
 
    For technical details on creating pages with editable templates, see [Resultant Content Pages](#resultant-content-pages) in this document.
 
@@ -349,7 +349,7 @@ When creating an editable template, the value is copied from the template type t
 
 If you have created a template that can serve as the basis of other templates, you can copy this template as a template type.
 
-1. Create a template as you would any Page Template [as documented here](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author), which will serve as the basis of your template type.
+1. Create a template as you would any Page Template [as documented here](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author), which will serve as the basis of your template type.
 1. Using CRXDE Lite, copy the created template from the `templates` node to the `template-types` node under the [template folder](#template-folders).
 1. Delete the template from the `templates` node under the [template folder](#template-folders).
 1. In the copy of the template that is under the `template-types` node, delete all `cq:template` and `cq:templateType` properties from all `jcr:content` nodes.
@@ -447,7 +447,7 @@ Defines the initial content that a new page will have upon creation:
 
 ### Layout {#layout}
 
-When [editing a template you can define the layout](/help/sites-cloud/authoring/features/templates.md), this uses [standard responsive layout](/help/sites-cloud/authoring/features/responsive-layout.md).
+When [editing a template you can define the layout](/help/sites-cloud/authoring/sites-console/templates.md), this uses [standard responsive layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
 
 <!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
 
@@ -478,7 +478,7 @@ Page policies allow you to define the [content policy](#content-policies) for th
 
    Before a template can be used it must be enabled by either:
 
-    * [Enabling the template](/help/sites-cloud/authoring/features/templates.md) from the **Templates** console.
+    * [Enabling the template](/help/sites-cloud/authoring/sites-console/templates.md) from the **Templates** console.
 
     * Setting the status property on the `jcr:content` node.
 
@@ -493,7 +493,7 @@ Page policies allow you to define the [content policy](#content-policies) for th
 
 1. **Allowed Templates**
 
-    * [Define the Allowed Template path(s) on the **Page Properties**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) of the appropriate page or root page of a sub-branch.
+    * [Define the Allowed Template path(s) on the **Page Properties**](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) of the appropriate page or root page of a sub-branch.
     * Set the property:
       `cq:allowedTemplates`
       On the `jcr:content` node of the required branch.
