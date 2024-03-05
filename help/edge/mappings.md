@@ -12,23 +12,22 @@ Learn how to use spreadsheets to manage mappings for various values such as meta
 
 ## Use Cases {#use-cases}
 
-In any AEM with Edge Delivery Services project, there is a need to maintain lists of value mappings. These can be lists of many different values such as metadata and redirects. Edge Deliver Services allows you to maintain such lists using an intuitive tool: the spreadsheet. AEM translates these spreadsheets (Microsoft Excel workbooks and Google Sheets) into JSON files that can easily be consumed by your website or web application. This enables many uses for content that is table-oriented or structured.
+For any AEM with Edge Delivery Services site, there is a need to maintain lists of value mappings. These can be lists of many different values such as metadata and redirects. Edge Deliver Services allows you to maintain such lists using an intuitive tool: the spreadsheet. AEM translates these spreadsheets into JSON files that can easily be consumed by your website or web application. This enables many uses for content that is table-oriented or structured.
 
-You can use AEM as a Cloud Service to create spreadsheets to manage key-value mappings of any kind. Common use cases include:
+Common use cases include:
 
 * [Placeholders](/help/edge/docs/placeholders.md)
 * [Metadata](/help/edge/docs/bulk-metadata.md)
-* Configurations
 * [Headers](/help/edge/docs/custom-headers.md)
 * [Redirects](/help/edge/docs/redirects.md)
 
-In addition, you can create spreadsheets of any structure to store mappings for your own purposes.
+In addition, you can [create your spreadsheets](#own-spreadsheet) of any structure to store mappings for your own purposes.
 
 This document uses the example of redirects to illustrate how to create such spreadsheets. See the previously-linked topics in the Edge Delivery Services documentation for details of each use case.
 
 >[!TIP]
 >
->For more information on how spreadsheets work with Edge Delivery Services, please see the document [Spreadsheets and JSON.](/help/edge/developer/spreadsheets.md)
+>For more information on how spreadsheets in general work with Edge Delivery Services, please see the document [Spreadsheets and JSON.](/help/edge/developer/spreadsheets.md)
 
 ## Prerequisites {#prerequisites}
 
@@ -38,19 +37,19 @@ Please see the document [ Developer Getting Started Guide for AEM Authoring with
 
 ## Creating a Spreadsheet {#spreadsheet}
 
-In this example, you will create a spreadsheet to manage redirects for your AEM with Edge Delivery Services project. The same steps apply to any spreadsheet you wish to create.
+In this example, you will create a spreadsheet to manage redirects for your AEM with Edge Delivery Services site. The same steps apply to [other spreadsheet types](#other) you wish to create.
 
-1. Sign in to your AEM as a Cloud Service authoring instance, go to the Sites console, and navigate to the root of your site which requires a spreadsheet. Tap or click **Create** -> **Page**.
+1. Sign in to your AEM as a Cloud Service authoring instance, go to the **Sites** console, and navigate to the root of the site which requires a spreadsheet. Tap or click **Create** -> **Page**.
 
    ![Create page](assets/mappings/mappings-create-page.png)
 
-1. On the **Template** tab of the create site wizard, tap or click the **Redirects** template to select it and then tap or click **Next**.
+1. On the **Template** tab of the create page wizard, tap or click the **Redirects** template to select it and then tap or click **Next**.
 
    ![Select template](assets/mappings/mappings-create-page-teamplate-redirects.png)
 
 1. The **Properties** tab of the wizard presents the default values for the redirects spreadsheet. Tap or click **Create**.
 
-   * **Title** - Leave this value as-is unless you have explicit need to change it.
+   * **Title** - Leave this value as-is.
    * **Columns** - The minimum columns needed for redirects are prepopulated.
      * **source** - The page to be redirected
      * **destination** - The page to redirect to
@@ -85,7 +84,7 @@ In this example, you will create a spreadsheet to manage redirects for your AEM 
 
    ![Banner confirmation of publication](assets/mappings/mappings-publish-banner.png)
 
-The redirects spreadsheet is now publicly-accessible.
+The redirects spreadsheet is now published and publicly-accessible.
 
 ## Update paths.json {#paths-json}
 
@@ -120,7 +119,6 @@ Now that you know how to create a redirects spreadsheet, you can create any othe
 
 * Placeholders
 * Metadata
-* Configurations
 * Headers
 
 Simply follow the same steps in the sections [Create Spreadsheet](#spreadsheet) and [Update paths.json](#paths-json) and choose the appropriate template and update the `paths.json` file appropriately.
@@ -130,11 +128,17 @@ Additionally, you can [create your own spreadsheet](#own-spreadsheet) with arbit
 ## Creating Your Own Spreadsheet {#own-spreadsheet}
 
 1. Follow the same steps in the section [Create Spreadsheet.](#spreadsheet)
+
 1. When selecting the template, choose **Spreadsheet**.
+
 1. In the **Properties** tab of the wizard, you can add your own columns.
+
    ![Add your own columns](assets/mappings/mappings-own-spreadsheet.png)
+
    * In the **Columns** section, tap or click **Add** to add a new column.
    * Provide a name for the column.
-   * Remove or reorganize the columns using the **Delete** and drag handle icons.
+   * Remove or reorganize the columns using the **Delete** and drag handle icons, respectively.
+
 1. Create the spreadsheet and publish as per the instructions for the redirects spreadsheet.
+
 1. Add a mapping to the `paths.json` file as per the instructions for the redirects spreadsheet.
