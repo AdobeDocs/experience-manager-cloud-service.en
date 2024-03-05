@@ -37,7 +37,7 @@ Please see the document [ Developer Getting Started Guide for AEM Authoring with
 
 ## Creating a Spreadsheet {#spreadsheet}
 
-In this example, you will create a spreadsheet to manage redirects for your AEM with Edge Delivery Services site. The same steps apply to [other spreadsheet types](#other) you wish to create.
+In this example, you will create a spreadsheet to manage redirects for your AEM with Edge Delivery Services site. The same steps apply to [other spreadsheet types](#other) that you wish to create.
 
 1. Sign in to your AEM as a Cloud Service authoring instance, go to the **Sites** console, and navigate to the root of the site which requires a spreadsheet. Tap or click **Create** -> **Page**.
 
@@ -60,15 +60,15 @@ In this example, you will create a spreadsheet to manage redirects for your AEM 
 
    ![Success dialog](assets/mappings/mappings-success.png)
 
-1. A new tab opens with the spreadsheet loaded into an editor with the predefined **source** and **destination** columns. Tap or click the empty row of the **source** column to define your redirects. Changes are saved automatically as you edit the spreadsheet.
+1. A new tab opens with the spreadsheet loaded into an editor with the predefined **source** and **destination** columns. To define your redirects, tap or click the empty row of the **source** column. Changes are saved automatically as you edit the spreadsheet.
 
    ![Edit spreadsheet](assets/mappings/mappings-edit-redirects.png)
 
    * The **source** is relative to the domain of your website, so it only contains the relative path.
    * The **destination** can be either a fully qualified URL if you are redirecting to a different website, or it can be a relative path if you are redirecting within your own website.
    * Use the tab-key to move focus to the next cell.
-   * The editor will add new rows to the spreadsheet as necessary.
-   * Use the **Delete** icon at the end of each row and the drag handles at the beginning of each row to delete or move a row, respectively.
+   * The editor adds new rows to the spreadsheet as necessary.
+   * To delete or move a row, use the **Delete** icon at the end of each row and the drag handles at the beginning of each row, respectively.
 
 1. When you are finished defining your redirects, close the tab and return to the **Sites** console.
 
@@ -96,7 +96,7 @@ In order for AEM to be able to consume the data in your spreadsheet, you additio
 
    ![paths.json file](assets/mappings/mappings-paths-json.png)
 
-1. Add a line to map your new spreadsheet spreadsheet to a `redirects.json` resource.
+1. Add a line to map your new spreadsheet to a `redirects.json` resource.
 
    ```json
    {
