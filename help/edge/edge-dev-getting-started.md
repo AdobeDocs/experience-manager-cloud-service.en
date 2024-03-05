@@ -27,7 +27,7 @@ AEM offers two different content editors and the choice of which to use depends 
 
 This guide focuses on AEM projects on Edge Delivery Services using the Universal Editor. See the document [Developing for Edge Delivery Services](/help/edge/developing.md) for more details on choosing the right editor and the migration of existing AEM sites to Edge Delivery Services.
 
-## Getting Started with AEM Authoring nd Edge Delivery Services {#getting-started}
+## Getting Started with AEM Authoring and Edge Delivery Services {#getting-started}
 
 Once you have fulfilled [the prerequisites](#prerequisites) and have made [the choice to use the Universal Editor,](#editor-choice) you can get started on your own project.
 
