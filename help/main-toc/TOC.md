@@ -26,6 +26,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2023 {#2023}
+      + [Release Notes for 2023.12.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-12-0.md)
       + [Release Notes for 2023.11.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-11-0.md)
       + [Release Notes for 2023.10.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-10-0.md)
       + [Release Notes for 2023.9.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-9-0.md)
@@ -71,17 +72,20 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2023 {#2023}
-      + [Maintenance Release Notes for 2023.11.0](/help/release-notes/maintenance/2023/2023.11.0.md) 
-      + [Maintenance Release Notes for 2023.10.0](/help/release-notes/maintenance/2023/2023.10.0.md) 
-      + [Maintenance Release Notes for 2023.9.0](/help/release-notes/maintenance/2023/2023.9.0.md) 
-      + [Maintenance Release Notes for 2023.8.0](/help/release-notes/maintenance/2023/2023.8.0.md) 
-      + [Maintenance Release Notes for 2023.7.0](/help/release-notes/maintenance/2023/2023.7.0.md) 
-      + [Maintenance Release Notes for 2023.6.0](/help/release-notes/maintenance/2023/2023.6.0.md)
-      + [Maintenance Release Notes for 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
-      + [Maintenance Release Notes for 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
-      + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
+      + [Maintenance Release Notes for 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md) 
+      + [Maintenance Release Notes for 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md) 
+      + [Maintenance Release Notes for 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md) 
+      + [Maintenance Release Notes for 2023.9.0](/help/release-notes/maintenance/2023/2023-9-0.md) 
+      + [Maintenance Release Notes for 2023.8.0](/help/release-notes/maintenance/2023/2023-8-0.md) 
+      + [Maintenance Release Notes for 2023.7.0](/help/release-notes/maintenance/2023/2023-7-0.md) 
+      + [Maintenance Release Notes for 2023.6.0](/help/release-notes/maintenance/2023/2023-6-0.md)
+      + [Maintenance Release Notes for 2023.4.0](/help/release-notes/maintenance/2023/2023-4-0.md)
+      + [Maintenance Release Notes for 2023.2.0](/help/release-notes/maintenance/2023/2023-2-0.md)
+      + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
+    + 2024 {#2024}
+      + [Release Notes for 2024.1.0](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
     + 2023 {#2023}
       + [Release Notes for 2023.12.0](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)
       + [Release Notes for 2023.11.0](/help/implementing/cloud-manager/release-notes/2023/2023-11-0.md)
@@ -169,6 +173,7 @@ user-guide-title: AEM as a Cloud Service
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
   + [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md)
   + [AEM as a Cloud Service Security Considerations](/help/security/security-considerations.md)
+  + [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Onboarding {#onboarding}
   + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
   + Onboarding Journey {#journey}
@@ -255,42 +260,53 @@ user-guide-title: AEM as a Cloud Service
 + Sites {#sites}
   + [Notable Changes to AEM Sites in AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
   + Authoring {#authoring}
-    + Getting Started {#getting-started}
-      + [Quick Start Guide to Authoring Pages](/help/sites-cloud/authoring/getting-started/quick-start.md)
-      + [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
-      + [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md)
-      + [Search](/help/sites-cloud/authoring/getting-started/search.md)
-      + [Configuring your account environment](/help/sites-cloud/authoring/getting-started/account-environment.md)
-      + [Your Inbox](/help/sites-cloud/authoring/getting-started/inbox.md)
-      + [Keyboard Shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-    + [Headless Content Author Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
-    + Authoring Fundamentals {#fundamentals}
-      + [Environment and Tools](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
-      + [Adding Page Annotations](/help/sites-cloud/authoring/fundamentals/annotations.md)
-      + [Creating a New Site](/help/sites-cloud/authoring/fundamentals/create-site.md)
-      + [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
-      + [Editing Page Content](/help/sites-cloud/authoring/fundamentals/editing-content.md)
-      + [The Rich Text Editor](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
-      + [Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-      + [Previewing Content](/help/sites-cloud/authoring/fundamentals/previewing-content.md)
-      + [Publishing Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
-      + [Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-      + [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)
-      + [Export to CSV](/help/sites-cloud/authoring/fundamentals/csv-export.md)
-      + [Components](/help/sites-cloud/authoring/fundamentals/components.md)
-      + [Authoring for Mobile Devices](/help/sites-cloud/authoring/fundamentals/mobile.md)
-      + [Creating Accessible Content (WCAG 2.1 Conformance)](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
-      + [Troubleshooting](/help/sites-cloud/authoring/fundamentals/troubleshooting.md)
-      + [Keyboard Shortcuts](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-    + Authoring Features {#features}
-      + [Page Templates](/help/sites-cloud/authoring/features/templates.md)
-      + [Style System](/help/sites-cloud/authoring/features/style-system.md)
-      + [Page Versions](/help/sites-cloud/authoring/features/page-versions.md)
-      + [Page Diff](/help/sites-cloud/authoring/features/page-diff.md)
-      + [Components Console](/help/sites-cloud/authoring/features/components-console.md)
-      + [Responsive Layout](/help/sites-cloud/authoring/features/responsive-layout.md)
-      + [Using Tags](/help/sites-cloud/authoring/features/tags.md)
-      + [Enabling Progressive Web App Features](/help/sites-cloud/authoring/features/enable-pwa.md)
+    + [Quick Start Guide to Authoring Pages](/help/sites-cloud/authoring/quick-start.md)
+    + [Basic Handling](/help/sites-cloud/authoring/basic-handling.md)
+    + [Authoring and Publishing](/help/sites-cloud/authoring/author-publish.md)
+    + [Authoring Methods](/help/sites-cloud/authoring/authoring-methods.md)
+    + [Search](/help/sites-cloud/authoring/search.md)
+    + [Configuring your account environment](/help/sites-cloud/authoring/account-environment.md)
+    + [Your Inbox](/help/sites-cloud/authoring/inbox.md)
+    + [Components Console](/help/sites-cloud/authoring/components-console.md)
+    + [Path Selection](/help/sites-cloud/authoring/path-selection.md)
+    + [Troubleshooting](/help/sites-cloud/authoring/troubleshooting.md)
+    + Sites Console {#sites-console}
+      + [The Sites Console](/help/sites-cloud/authoring/sites-console/introduction.md)
+      + [Console Side Panel](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+      + [Creating a New Site](/help/sites-cloud/authoring/sites-console/create-site.md)
+      + [Organizing Pages](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+      + [Creating Pages](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+      + [Managing Pages](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+      + [Page Properties](/help/sites-cloud/authoring/sites-console/page-properties.md)
+      + [Previewing Pages](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+      + [Publishing Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
+      + [Page Templates](/help/sites-cloud/authoring/sites-console/templates.md)
+      + [Page Versions](/help/sites-cloud/authoring/sites-console/page-versions.md)
+      + [Page Diff](/help/sites-cloud/authoring/sites-console/page-diff.md)
+      + [Using Tags](/help/sites-cloud/authoring/sites-console/tags.md)
+      + [Enabling Progressive Web App Features](/help/sites-cloud/authoring/sites-console/enable-pwa.md)
+      + [Keyboard Shortcuts](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
+      + [Export to CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
+    + Page Editor {#page-editor}
+      + [The Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)
+      + [Editor Side Panel](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
+      + [Editing Pages](/help/sites-cloud/authoring/page-editor/edit-content.md)
+      + [Adding Page Annotations](/help/sites-cloud/authoring/page-editor/annotations.md)
+      + [The Rich Text Editor](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
+      + [Responsive Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+      + [Components](/help/sites-cloud/authoring/page-editor/components.md)
+      + [Authoring for Mobile Devices](/help/sites-cloud/authoring/page-editor/mobile.md)
+      + [Creating Accessible Content (WCAG 2.1 Conformance)](/help/sites-cloud/authoring/page-editor/accessible-content.md)
+      + [Keyboard Shortcuts](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
+      + [Style System](/help/sites-cloud/authoring/page-editor/style-system.md)
+      + [Undo Redo Limitations](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+    + Universal Editor {#universal-editor}
+      + [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
+      + [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
+    + Fragments {#fragments}
+      + [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
+      + [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md)
+      + [Headless Content Author Journey](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
     + Projects {#projects}
       + [Working with Projects](/help/sites-cloud/authoring/projects/overview.md)
       + [Managing Projects](/help/sites-cloud/authoring/projects/managing.md)
@@ -336,6 +352,7 @@ user-guide-title: AEM as a Cloud Service
       + [Enable Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
       + [Using the Site Rail](/help/sites-cloud/administering/site-creation/site-rail.md)
       + [Site Templates](/help/sites-cloud/administering/site-creation/site-templates.md)
+      + [Responsive Layout](/help/sites-cloud/administering/responsive-layout.md)
       + [Site Themes](/help/sites-cloud/administering/site-creation/site-themes.md)
       + AEM Quick Site Creation Journey {#quick-site}
         + [Understand AEM Quick Site Creation](/help/journey-sites/quick-site/overview.md)
@@ -397,6 +414,7 @@ user-guide-title: AEM as a Cloud Service
     + [Micro-Frontend Asset Selector](/help/assets/asset-selector.md)
     + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
     + [Share assets](/help/assets/share-assets.md)
+    + [Repreocessing assets](/help/assets/reprocessing.md)
     + [Monitor activities and DAM tasks](/help/assets/assets-activity-history.md)
     + [Get started using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
     + [Add and upload assets](/help/assets/add-assets.md)
@@ -461,7 +479,7 @@ user-guide-title: AEM as a Cloud Service
     + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
     + [Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
     + [Preview - JSON Representation](/help/assets/content-fragments/content-fragments-json-preview.md)
-    + [Reuse Content Fragments using MSM for Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)    
+    + [Reuse Content Fragments using MSM (for Assets)](/help/assets/content-fragments/content-fragments-msm.md)
   + Dynamic Media {#dynamicmedia}
     + Dynamic Media Journey: The Basics {#dm-journey}
       + [Part I: What is Dynamic Media - Use cases - How an asset flows through the system](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -604,14 +622,16 @@ user-guide-title: AEM as a Cloud Service
         + [Create forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md)
         + [Configure Submit Action for an Adaptive Form](/help/forms/configure-submit-actions-core-components.md)
         + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-        + [Submit an Adaptive Form to Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
-        + [Configure SharePoint Storage for an Adaptive Form](/help/forms/configure-submit-action-sharepoint.md)
+        + [Submit an Adaptive Form to Microsoft&reg; OneDrive](/help/forms/configure-submit-action-onedrive.md)
+        + [Connect an Adaptive Form to Microsoft&reg; SharePoint](/help/forms/configure-submit-action-sharepoint.md)
         + [Integrate AEM Adaptive Form with AEM Workflow](/help/forms/configure-submit-action-workflow.md)
         + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
         + [Configure the Send Email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md)
         + [Use Google reCAPTCHA in an Adaptive Form ](/help/forms/captcha-adaptive-forms-core-components.md)
         + [Add custom error handler in an Adaptive Form](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
         + [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md)
+        + [Create and use custom functions](/help/forms/create-and-use-custom-functions.md)
+        +  [Add rules to an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components.md)
     + Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -669,7 +689,11 @@ user-guide-title: AEM as a Cloud Service
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
+    + [List of supported fonts in PDF documents](/help/forms/supported-out-of-the-box-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
+  + Transaction Reports {#using-communications}
+    + [Transaction Reports Billable APIs](/help/forms/transaction-reports-billable-apis.md)
+    + [Record a transaction for custom implementations](/help/forms/record-transaction-custom-implementation.md)
   + Developer API Reference {#aem-forms-developer-api-reference}
     + [Adaptive Forms API reference](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
     + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -678,6 +702,7 @@ user-guide-title: AEM as a Cloud Service
   + Troubleshooting {#troubleshooting-aem-forms-cloud-service}
     + [Installation and configuration](/help/forms/troubleshooting-installation-and-configuration.md)
     + [Dispatcher and CDN caching](/help/forms/troubleshooting-caching-performance.md)
+    + [Restarting AEM SDK](/help/forms/restart-aem-sdk.md)
 + Screens {#screens-as-cloud-service}
   + Overview to Screens as a Cloud Service {#overview}
     + [Introduction](/help/screens-cloud/introduction/introduction.md)
@@ -696,6 +721,7 @@ user-guide-title: AEM as a Cloud Service
     + [Using Screens Content Provider](/help/screens-cloud/configuring/using-screens-content-provider.md)
     + [Creating Screens Video Renditions](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
     + [Configuring Dispatcher for Screens as a Cloud Service](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
+    + [Configuring Timeline Views for Screens as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md) 
   + Creating Content {#create-content}
     + [Creating and Managing a Project in Screens Content Provider](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
     + [Creating and Managing a Channel in Screens Content Provider](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
@@ -752,12 +778,15 @@ user-guide-title: AEM as a Cloud Service
   + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
-+ Edge Delivery Services {#edge-delivery}
-  + [AEM and Edge Delivery Services](/help/edge/overview.md)
++ AEM with Edge Delivery Services {#edge-delivery}
+  + [Getting started with Edge Delivery Services](/help/edge/overview.md)
   + [Using Edge Delivery](/help/edge/using.md)
+  + [Developer Getting Started Guide](/help/edge/edge-dev-getting-started.md)
   + [Authoring Content for Edge Delivery](/help/edge/authoring.md)
   + [Publishing Content for Edge Delivery](/help/edge/publishing.md)
   + [Developing for Edge Delivery](/help/edge/developing.md)
+  + [Content Modeling](/help/edge/content-modeling.md)
+  + [Creating Blocks](/help/edge/create-block.md)
   + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
   + Building Edge Delivery Applications {#build}
     + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
@@ -785,6 +814,24 @@ user-guide-title: AEM as a Cloud Service
     + [Akamai Setup](/help/edge/docs/byo-cdn-akamai-setup.md)
     + [Fastly Setup](/help/edge/docs/byo-cdn-fastly-setup.md)
     + [Redirects](/help/edge/docs/redirects.md)
+  + Building Edge Delivery Forms {#build-forms}
+    + [Overview](/help/edge/docs/forms/overview.md)
+    + Get Started {#getting-started-eds-forms}
+      + [Create and preview a form](/help/edge/docs/forms/create-forms.md)
+      + [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
+      + [Publish a form to sites page](/help/edge/docs/forms/publish-forms.md)
+      + [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
+      + [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
+      + [Use rules to add dynamic behaviour to a form](/help/edge/docs/forms/rules-forms.md)
+      + [Thank you page](/help/edge/docs/forms/thank-you-page-form.md)
+    + Capabilities {#advanced-features-eds-forms}
+      + [Form fragments](/help/edge/docs/forms/form-fragments.md)
+      + [Repeatable sections](/help/edge/docs/forms/repeatable-forms.md)
+      + [Translation](/help/edge/docs/forms/translate-forms.md)
+      + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+      + [Custom Components](/help/edge/docs/forms/custom-components-forms.md)
+    + References {#forms-references}
+      + [List of form block components](/help/edge/docs/forms/form-components.md)
   + Resources for Edge Delivery {#resources}
     + Sidekick {#sidekick}
       + [Using Sidekick](/help/edge/docs/sidekick.md)
@@ -795,7 +842,7 @@ user-guide-title: AEM as a Cloud Service
     + [Admin API](https://www.aem.live/docs/admin.html)
     + [AEM Status](https://www.aemstatus.net)
     + Tools {#tools}
-      + [Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+      + [AEM Sidekick Chrome Extension](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
       + [Github Bot](https://github.com/apps/aem-code-sync)
       + [Audit Log](/help/edge/docs/auditlog.md)
 + Headless {#headless}
@@ -900,6 +947,7 @@ user-guide-title: AEM as a Cloud Service
       + [Configuring a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
       + [Configuring a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
       + [Managing Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+      + [Pipeline Variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
     + [Deploying Your Code](/help/implementing/cloud-manager/deploy-code.md)
     + Understanding your Test Results {#test-results}
       + [Overview](/help/implementing/cloud-manager/overview-test-results.md)
@@ -915,7 +963,7 @@ user-guide-title: AEM as a Cloud Service
     + [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md)
     + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)
     + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
-    + [Dynatrace OneAgent](/help/implementing/cloud-manager/dynatrace-oneagent.md)
+    + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
     + [Notifications](/help/implementing/cloud-manager/notifications.md)
     + SSL Certificates {#manage-ssl-certificates}
       + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
@@ -965,6 +1013,7 @@ user-guide-title: AEM as a Cloud Service
       + [Page Diff](/help/implementing/developing/introduction/page-diff.md)
       + [Editor Limitations](/help/implementing/developing/introduction/editor-limitations.md)
       + [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md)
+      + [Responsive Design](/help/implementing/developing/introduction/responsive-design.md)
       + Components and Templates {#components-templates}
         + [Components Overview](/help/implementing/developing/components/overview.md)
         + [Templates](/help/implementing/developing/components/templates.md)
@@ -984,6 +1033,18 @@ user-guide-title: AEM as a Cloud Service
         + [Implementing a Custom Predicate Evaluator](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [Custom Error Pages](/help/implementing/developing/introduction/custom-error-page.md)
       + [AEM Node Types](/help/implementing/developing/introduction/node-types.md)
+    + Universal Editor {#universal-editor}
+      + [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md)
+      + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
+      + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
+      + [Universal Editor Developer Overview](/help/implementing/universal-editor/developer-overview.md)
+      + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
+      + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
+      + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
+      + [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md)
+      + [Universal Editor Calls](/help/implementing/universal-editor/calls.md)
+      + [Events](/help/implementing/universal-editor/events.md)
+      + [Customizing the Universal Editor](/help/implementing/universal-editor/customizing.md)
     + [Headless Experience Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
     + Hybrid and SPA Development {#hybrid}
       + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1044,7 +1105,6 @@ user-guide-title: AEM as a Cloud Service
     + [Extending Experience Fragments](/help/implementing/developing/extending/experience-fragments.md)
     + [Customizing and Extending Content Fragments](/help/implementing/developing/extending/content-fragments-customizing.md)
     + [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-    + [Customizing the Content Fragment Console](/help/implementing/developing/extending/content-fragment-console-customizing.md)
     + [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
     + Manage Search Forms {#manage-search-forms}
       + [Configuring Search Forms](/help/implementing/developing/extending/search-forms.md)
@@ -1101,18 +1161,3 @@ user-guide-title: AEM as a Cloud Service
   + Accessibility {#accessibility}
     + [AEM as a Cloud Service and the Web Accessibility Guidelines](/help/compliance/accessibility/web-accessibility.md)
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
-+ Universal Editor {#universal-editor}
-  + [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md)
-  + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
-  + Authoring {#developing}
-    + [Authoring Content with the Universal Editor](/help/implementing/universal-editor/authoring.md)
-    + [Publishing Content with the Universal Editor](/help/implementing/universal-editor/publishing.md)
-  + Developing {#developing}
-    + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
-    + [Universal Editor Developer Overview](/help/implementing/universal-editor/developer-overview.md)
-    + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
-    + [Field Types](/help/implementing/universal-editor/field-types.md)
-    + [Universal Editor Authentication](/help/implementing/universal-editor/authentication.md)
-    + [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md)
-    + [Universal Editor Calls](/help/implementing/universal-editor/calls.md)
-    + [Customizing the UI](/help/implementing/universal-editor/customizing.md)

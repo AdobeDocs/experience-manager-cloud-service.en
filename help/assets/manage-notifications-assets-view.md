@@ -1,7 +1,6 @@
 ---
 title: Manage notifications
 description: Monitor the operations performed on the assets or folders available in the repository using the Assets view notifications.
-exl-id: 5c0039a2-caa2-4b55-b963-0e7e9e542c47
 ---
 # Watch assets, folders, and collections {#watch-assets-folders}
 
