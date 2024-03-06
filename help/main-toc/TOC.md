@@ -72,6 +72,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2023 {#2023}
+      + [Maintenance Release Notes for 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md) 
       + [Maintenance Release Notes for 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md) 
       + [Maintenance Release Notes for 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md) 
       + [Maintenance Release Notes for 2023.9.0](/help/release-notes/maintenance/2023/2023-9-0.md) 
@@ -688,6 +689,7 @@ user-guide-title: AEM as a Cloud Service
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
+    + [List of supported fonts in PDF documents](/help/forms/supported-out-of-the-box-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
   + Transaction Reports {#using-communications}
     + [Transaction Reports Billable APIs](/help/forms/transaction-reports-billable-apis.md)
