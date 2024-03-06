@@ -1,18 +1,18 @@
 ---
-title: Using Spreadsheets to Manage Mappings
-description: Learn how to use spreadsheets to manage mappings for various values such as metadata and redirects for your AEM with Edge Delivery Services site.
+title: Using Spreadsheets to Manage Tabular Data
+description: Learn how to use spreadsheets to manage tabular data for various values such as metadata and redirects for your AEM with Edge Delivery Services site.
 feature: Edge Delivery Services
 ---
 
-# Using Spreadsheets to Manage Mappings {#mappings}
+# Using Spreadsheets to Manage Tabular Data {#tabular-data}
 
-Learn how to use spreadsheets to manage mappings for various values such as metadata and redirects for your AEM with Edge Delivery Services site.
+Learn how to use spreadsheets to manage tabular data for various values such as metadata and redirects for your AEM with Edge Delivery Services site.
 
 {{aem-authoring-edge-early-access}}
 
 ## Use Cases {#use-cases}
 
-For any AEM with Edge Delivery Services site, there is a need to maintain lists of value mappings. These can be lists of many different values such as metadata and redirects. Edge Deliver Services allows you to maintain such lists using an intuitive tool: the spreadsheet. AEM translates these spreadsheets into JSON files that can easily be consumed by your website or web application. This enables many uses for content that is table-oriented or structured.
+For any AEM with Edge Delivery Services site, there is a need to maintain lists of tabular data such as for key-value mappings. These can be lists of many different values such as metadata and redirects. Edge Deliver Services allows you to maintain such tabular lists using an intuitive tool: the spreadsheet. AEM translates these spreadsheets into JSON files that can easily be consumed by your website or web application.
 
 Common use cases include:
 
@@ -20,6 +20,7 @@ Common use cases include:
 * [Metadata](/help/edge/docs/bulk-metadata.md)
 * [Headers](/help/edge/docs/custom-headers.md)
 * [Redirects](/help/edge/docs/redirects.md)
+* [Configurations](/help/edge/docs/setup-byo-cdn-push-invalidation.md) such as for CND setups
 
 In addition, you can [create your spreadsheets](#own-spreadsheet) of any structure to store mappings for your own purposes.
 
@@ -28,6 +29,10 @@ This document uses the example of redirects to illustrate how to create such spr
 >[!TIP]
 >
 >For more information on how spreadsheets in general work with Edge Delivery Services, please see the document [Spreadsheets and JSON.](/help/edge/developer/spreadsheets.md)
+
+>[!TIP]
+>
+>Spreadsheets should only be used to maintain tabular data. For storing structured data, [check out AEM's headless features.](/help/headless/introduction.md)
 
 ## Prerequisites {#prerequisites}
 
@@ -120,6 +125,7 @@ Now that you know how to create a redirects spreadsheet, you can create any othe
 * Placeholders
 * Metadata
 * Headers
+* Configuration
 
 Simply follow the same steps in the sections [Create Spreadsheet](#spreadsheet) and [Update paths.json](#paths-json) and choose the appropriate template and update the `paths.json` file appropriately.
 
