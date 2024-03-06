@@ -56,8 +56,15 @@ import "@adobe/universal-editor-cors";
 If you are not implementing a React app and/or require server-side rendering, an alternative method is to include the following to the document body.
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
+<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
 ```
+
+The latest version is always recommended, but previous versions of the service can be referenced in case of breaking changes.
+
+* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - The very latest UE CORS lib
+* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - The latest UE CORS lib under version 2.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - The latest UE CORS lib under version 2.1.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`- The exact UE CORS lib  version 2.1.1
 
 ## Add the Necessary OSGi Configurations {#osgi-configurations}
 
@@ -187,15 +194,15 @@ If you only want to have certain extensions enabled for a page, you can set this
 
 Your app is now instrumented to use the Universal Editor!
 
-See [Authoring Content with the Universal Editor](authoring.md) to learn how easy and intuitive it is for content authors to create content using the Universal Editor.
+See [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) to learn how easy and intuitive it is for content authors to create content using the Universal Editor.
 
 ## Additional Resources {#additional-resources}
 
 To learn more about the Universal Editor, see these documents.
 
 * [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
-* [Authoring Content with the Universal Editor](authoring.md) - Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
-* [Publishing Content with the Universal Editor](publishing.md) - Learn how the Universal Editor publishes content and how your apps can handle the published content.
+* [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
+* [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md) - Learn how the Universal Editor publishes content and how your apps can handle the published content.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
 * [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.
