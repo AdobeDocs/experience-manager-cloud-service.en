@@ -14,9 +14,11 @@ Summarized below are the continuous improvements for maintenance release X, whic
 2024.3.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
 ### Enhancements {#enhancements-X}
+
 None.
 
 ### Fixed Issues {#fixed-issues-X}
+
 None.
 
 ### Known Issues {#known-issues-X}
