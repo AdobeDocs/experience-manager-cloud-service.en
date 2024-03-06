@@ -72,5 +72,5 @@ Your page can contain either a single content fragment or multiple components of
 
 * [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [Authoring with Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [Content Fragment component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

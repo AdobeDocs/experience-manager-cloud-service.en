@@ -1,7 +1,6 @@
 ---
 title: How to share links to assets?
 description: Generate a link and share assets with others who do not have access to the [!DNL Assets view] application.
-exl-id: 6e05b06c-7436-40e3-acee-c8b1ed218f9e
 ---
 # Share links to assets {#share-links-assets}
 

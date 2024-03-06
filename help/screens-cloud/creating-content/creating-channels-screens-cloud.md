@@ -14,7 +14,7 @@ This document helps you understand creating and managing channels for your AEM S
 
 * understand how to create channels to Screens Content Provider
 * manage and edit content in your channels
-* activation schedule for your channels
+* manage assignment and activation schedule for your channels in [Screens Service Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
 
 ## Steps to Create a New Sequence Channel in Screens as a Cloud Service {#create-new-channel}
 
@@ -87,6 +87,8 @@ The following templates are available while using the **Create** channel wizard:
 
 This capability lets you define a default activation schedule for a channel, and use it by default for every assignment for a display. This provides a method so that the cumbersome schedule definition does not need to be repeated.
 
+1. Navigate to Screens Services Provider from [here](https://experience.adobe.com/screens).
+
 ### Create default assignment details for a channel {#create-default}
 
 1. Navigate to the details page for the channel you want to configure.
@@ -113,7 +115,7 @@ This tile displays the following information:
 Channels having default assignment details can be assigned to displays the same way regular channels are, with the added option to use the default assignment details instead of manually defining custom ones each time.
 
 1. Navigate to the display details page you want to assign the channel to and click the **Assign channel**.
-alternatively, select the desired display in the inventory view and click the **Assign channel**.
+alternatively, select the desired display in the [inventory](https://experience.adobe.com/screens/displays) view and click the **Assign channel**.
 1. The channel assignment dialog opens.
 
    ![image](/help/screens-cloud/assets/display/Assignments4.png)
