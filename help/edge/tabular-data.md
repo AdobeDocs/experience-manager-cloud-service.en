@@ -46,11 +46,11 @@ In this example, you will create a spreadsheet to manage redirects for your AEM 
 
 1. Sign in to your AEM as a Cloud Service authoring instance, go to the **Sites** console, and navigate to the root of the site which requires a spreadsheet. Tap or click **Create** -> **Page**.
 
-   ![Create page](assets/mappings/mappings-create-page.png)
+   ![Create page](assets/tabular-data/tabular-data-create-page.png)
 
 1. On the **Template** tab of the create page wizard, tap or click the **Redirects** template to select it and then tap or click **Next**.
 
-   ![Select template](assets/mappings/mappings-create-page-teamplate-redirects.png)
+   ![Select template](assets/tabular-data/tabular-data-create-page-teamplate-redirects.png)
 
 1. The **Properties** tab of the wizard presents the default values for the redirects spreadsheet. Tap or click **Create**.
 
@@ -59,15 +59,15 @@ In this example, you will create a spreadsheet to manage redirects for your AEM 
      * **source** - The page to be redirected
      * **destination** - The page to redirect to
 
-   ![Properties of the spreadsheet](assets/mappings/mappings-create-page-properties-redirects.png)
+   ![Properties of the spreadsheet](assets/tabular-data/tabular-data-create-page-properties-redirects.png)
 
 1. In the **Success** dialog, tap or click **Open**.
 
-   ![Success dialog](assets/mappings/mappings-success.png)
+   ![Success dialog](assets/tabular-data/tabular-data-success.png)
 
 1. A new tab opens with the spreadsheet loaded into an editor with the predefined **source** and **destination** columns. To define your redirects, tap or click the empty row of the **source** column. Changes are saved automatically as you edit the spreadsheet.
 
-   ![Edit spreadsheet](assets/mappings/mappings-edit-redirects.png)
+   ![Edit spreadsheet](assets/tabular-data/tabular-data-edit-redirects.png)
 
    * The **source** is relative to the domain of your website, so it only contains the relative path.
    * The **destination** can be either a fully qualified URL if you are redirecting to a different website, or it can be a relative path if you are redirecting within your own website.
@@ -79,15 +79,15 @@ In this example, you will create a spreadsheet to manage redirects for your AEM 
 
 1. Tap or click to select the redirects spreadsheet that you created in the console and then tap or click **Quick Publish** in the actions bar to publish the spreadsheet.
 
-   ![Select the spreadsheet in the Sites console](assets/mappings/mappings-select-publish.png)
+   ![Select the spreadsheet in the Sites console](assets/tabular-data/tabular-data-select-publish.png)
 
 1. In the **Quick Publish** dialog, tap or click **Publish**.
 
-   ![Confirm publish](assets/mappings/mappings-quick-publish.png)
+   ![Confirm publish](assets/tabular-data/tabular-data-quick-publish.png)
 
 1. A banner confirms the publication.
 
-   ![Banner confirmation of publication](assets/mappings/mappings-publish-banner.png)
+   ![Banner confirmation of publication](assets/tabular-data/tabular-data-publish-banner.png)
 
 The redirects spreadsheet is now published and publicly-accessible.
 
@@ -99,7 +99,7 @@ In order for AEM to be able to consume the data in your spreadsheet, you additio
 
 1. Tap or click the `paths.json` file to open its details and then the **Edit** icon.
 
-   ![paths.json file](assets/mappings/mappings-paths-json.png)
+   ![paths.json file](assets/tabular-data/tabular-data-paths-json.png)
 
 1. Add a line to map your new spreadsheet to a `redirects.json` resource.
 
@@ -139,7 +139,7 @@ Additionally, you can [create your own spreadsheet](#own-spreadsheet) with arbit
 
 1. In the **Properties** tab of the wizard, you can add your own columns.
 
-   ![Add your own columns](assets/mappings/mappings-own-spreadsheet.png)
+   ![Add your own columns](assets/tabular-data/tabular-data-own-spreadsheet.png)
 
    * In the **Columns** section, tap or click **Add** to add a new column.
    * Provide a name for the column.
