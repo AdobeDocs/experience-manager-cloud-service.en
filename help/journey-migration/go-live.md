@@ -152,7 +152,7 @@ Review this list of activities to ensure that you perform a smooth and successfu
 * Create Admin Console user Notification Profiles. See [Notification Profiles](/help/journey-onboarding/notification-profiles.md)
 * Consider configuring Traffic Filter Rules to control what traffic should not be allowed on your website.
   * Rate limit traffic filter rules can be an effective tool against DDoS attacks. A special category of traffic filter rules, called WAF rules, require a separate license.
-  * See documentation for some [suggested starter rules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#recommended-starter-rules).
+  * See documentation for some [suggested starter rules](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
  
 You can always reference the list in case you need to recalibrate your tasks while performing the migration.
 
