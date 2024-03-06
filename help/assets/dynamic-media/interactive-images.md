@@ -212,7 +212,7 @@ You can add hotspots to an image banner using the editor on the Hotspot Manageme
 
 When you add hotspots, you can define them as a Quickview pop-up display, as a hyperlink, or an Experience Fragment.
 
-See [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+See [Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -279,7 +279,7 @@ See [(Optional) Preview interactive images](#optional-previewing-interactive-ima
     * Select **[!UICONTROL Experience Fragment]**.
 
         * If you are an Experience Manager Sites customer, select the Search icon (magnifying glass) to open the Experience Fragment page. Select the Experience Fragment you want to use. Then select **[!UICONTROL Select]** in the upper-right corner of the page. You are returned to the Hotspot management page.
-          See [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+          See [Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
         * Specify the width and height of the Experience Fragment as you want it to appear on the banner.
 

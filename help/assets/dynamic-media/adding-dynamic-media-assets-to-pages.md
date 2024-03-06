@@ -143,7 +143,7 @@ You can edit the following Dynamic Media Settings by selecting the **[!UICONTROL
 
 * **[!UICONTROL Viewer modifiers]** - Viewer modifiers take the form of name=value pair with a & delimiter and let you change viewers as outlined in the Viewers Reference Guide. An example of a viewer modifier is `posterimage=img.jpg&caption=text.vtt,1` which sets a different image for the video thumbnail and associates a closed caption/subtitle file with the video.
 
-* **[!UICONTROL Image preset]** - Select an existing image preset from the drop-down list. If the image preset you are looking for is not visible, you must make it visible. See Managing Image Presets. You cannot select a viewer preset if you are using an image preset and conversely.
+* **[!UICONTROL Image preset]** - Select an existing image preset from the drop-down list. If the image preset you are looking for is not visible, you must make it visible. See [Manage Image Presets](/help/assets/dynamic-media/managing-image-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
 
   This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
@@ -303,7 +303,7 @@ You can edit the following **[!UICONTROL General]** settings by selecting **[!UI
 Panoramic Media component is for those assets that are spherical panoramic images. Such images provide a 360° viewing experience of a room, property, location, or landscape. For an image to qualify as a spherical panorama, it must have either one OR both of the following:
 
 * An aspect ratio of 2:1.
-* Tagged with the keywords `equirectangular` or (`spherical` + `panorama`) or (`spherical` + `panoramic`). See [Using Tags](/help/sites-cloud/authoring/features/tags.md).
+* Tagged with the keywords `equirectangular` or (`spherical` + `panorama`) or (`spherical` + `panoramic`). See [Using Tags](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the **[!UICONTROL Panoramic Media]** WCM component.
 

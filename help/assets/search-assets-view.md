@@ -2,7 +2,6 @@
 title: Learn how to search and discover assets in [!DNL Assets view]?
 description: Learn how to search and discover assets in AEM Assets view. The powerful search functionality lets you quickly discover the appropriate asset and help you improve your content velocity.
 role: User
-exl-id: be9597a3-056c-436c-a09e-15a03567c85a
 ---
 # Search assets in [!DNL Assets view] {#search-assets}
 
