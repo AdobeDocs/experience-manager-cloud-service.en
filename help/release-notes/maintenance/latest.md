@@ -7,43 +7,122 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 14697 {#release-14697}
+## Release 15262 {#release-15262}
 
-Summarized below are the continuous improvements for maintenance release 14697, which was publicly released on December 18, 2023. It replaces release 14538 which had an issue. The previous maintenance release was release 14227.
+Summarized below are the continuous improvements for maintenance release 15262, which was publicly released on March 6, 2024. The previous maintenance release was release 14697.
 
-2023.12.0 Feature Activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
+2024.3.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-14697}
+### Enhancements {#enhancements-15262}
 
-* GRANITE-46723: User Sync - SAML Migration from default-sync to IDP-based sync.
-* OAK-10311: Replication - Optimize blob comparison to reduce replication time of large batch of assets in AEM.
-* OAK-10511: Replication - Reduce network round-trips to reduce replication time of large assets in AEM.
-* GRANITE-48334: Publishers - Collection script is missing for RUM.
+* ASSETS-30632: Added a separate Brand Portal publish status column in list view.
+* ASSETS-30934: Added support for `Iptc4xmpCore:AltTextAccessibility` and `Iptc4xmpCore:ExtDescrAccessibility` properties to Asset Metadata Editor.
+* ASSETS-31297: Improve checks to prevent deletion of copied assets from dynamic media.
+* ASSETS-33246: Release index definition `damAssetLucene-10`.
+* ASSETS-33590: Add support for webm renditions for videos in processing profiles.
+* GRANITE-36205: Update oak version to 1.60-T20240131102219-0cde853.
+* SITES-19326: Update links in Assets UI to open CF in new CF Editor.
+* GUIDES-12945: AI-powered Smart Suggestions to add content references while authoring content
+* GUIDES-12706: Revamped version history feature in the Web Editor
+* GUIDES-14948: Improved user experience in the Translation panel
+* GUIDES-8782: Improved search logic in the Insert Element dialog box
+* GUIDES-14681: Ability to publish multiple output presets with dynamic baselines 
+* For complete list of enhancements in AEM Guides, please refer  : [What's new in AEM Guides](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/whats-new-2024-2-0.html?lang=en#release-info)
 
-### Fixed Issues {#fixed-issues-14697}
+### Fixed Issues {#fixed-issues-15262}
 
-* CQ-4354867: ToggleCondition reference refers to non-existent field in InstanceActionServlet.
-* CQ-4349948: Localization of 'Profile Properties' strings in Edit User Settings under Tools → Security → Users.
-* GRANITE-44541: Localization of Error dialogs on adding Private Key File screen of Edit User > Keystore under Tools → Security → Users.
-* GRANITE-45341: Localization of success/failure strings for activate/deactivate user action  under Tools → Security → Users.
-* GRANITE-46650: Localization of error message "UserId/Password mismatch." string under Tools → Security → Users Create Dialog.
-* GRANITE-47764: Update to Sling Models API 1.5.0: Injection to a static variable in a Sling Model will cause compilation errors (SLING-11507).
-* GRANITE-48452: Sending empty clientlibs with status code 200.
-* GRANITE-48410: ResourceResolver is not closed.
-* ASSETS-31297: Prevent delete of copied asset from dynamic media.
-* ASSETS-30811: Reference Updates for Blocktag Service bound.
-* GRANITE-46418: Update Sling events in AEM: GaugeSupport has infinite recursion in registerWithSuffix (SLING-11918).
-* GRANITE-48937: Fix regression from Maintenance Release 14538 where Omnisearch doesn't work on aem/start.html page.
+* ASSETS-15977: Remove deprecated v1 search events and pipeline producer.
+* ASSETS-18088: Upgrade batik library dependencies to 1.17.
+* ASSETS-21965: Metadata writeback workflow must only launch on asset metadata changes.
+* ASSETS-26368: Scheduled Bulk Import Jobs Not Removed if Job Config does not Exist.
+* ASSETS-26549: Assets / Nodes with "jcr:lastModifiedBy": "workflow-process-service" show as "external user" in list view.
+* ASSETS-26842: Update "Firefly" text to read "App Builder" in Processing Profile.
+* ASSETS-28708: Very slow response for some IMS token requests.
+* ASSETS-28767: Inconsistent publish state on assets if folder containing large no. of assets published.
+* ASSETS-29011: Smart crop is visible for read-only users.
+* ASSETS-29348: AssetMoveEventHandler can consume too much memory.
+* ASSETS-29738: Asset Upload Restriction fails with NullPointerException for woff files.
+* ASSETS-30068: Bulk Import Asset Essentials to include status COMPLETED_WITH_ERROR for "job completed, but with error".
+* ASSETS-30261: Incorrect imsUserId sent to Pipeline for asset events.
+* ASSETS-30538: View Page option is Missing after Moving a PDF file.
+* ASSETS-30626: Failure to create delivery request reported for assets with empty assetId.
+* ASSETS-30756: Move Asset Wizard action fails when folder name ends in 'html'.
+* ASSETS-30810: Sanitize tags before rendering legacy youtube config.
+* ASSETS-31015: Unable to upload Assets with .msg filename extension.
+* ASSETS-31038: Tasks events that are received by the notification service are not being processed.
+* ASSETS-31097: Disable Async Copy for WCM Content to avoid traversal query warnings.
+* ASSETS-31256: Assets / Nodes with "jcr:lastModifiedBy": "workflow-process-service" show as "external user" in list view.
+* ASSETS-31260: Asset Metadata Form Dropdown field is not working correctly when the dropdown JSON has a big list.
+* ASSETS-31280: Make assets download in a flattened structure when added to a collection.
+* ASSETS-31301: `dynamicmedia_sly.js` cannot be correctly instantiated by the Use API.
+* ASSETS-31330: ko_KR: Unlocalized strings in Subtitles and Audio tracks.
+* ASSETS-31405: InDesign server processing fails for large InDesign layouts.
+* ASSETS-31570: Unified Shell - asset details "Save & Close", "Cancel" buttons need to be pressed more than once to work.
+* ASSETS-31673: Bulk import failed for large Dropbox files.
+* ASSETS-32108: AEM Assets Not Saving User-Defined Card Size in View Settings.
+* ASSETS-32230: Upgrade minimum runtime version of com.adobe.aem.repoapi bundle.
+* ASSETS-32544: Metadata export job fails intermittently.
+* ASSETS-32679: Caching issues with asset (PDF) previews.
+* ASSETS-32754: Tasks cannot be assigned to users who have not logged in previously.
+* ASSETS-32755: Configure com/adobe/cq/dam/assetmove job topic to use an ordered queue.
+* ASSETS-32899: Searching inside Collections is extremely slow.
+* ASSETS-33098: AEM Assets search facets "Tags predicate" does not work as expected.
+* ASSETS-33454: Review Task activity and comments not appearing in Timeline.
+* ASSETS-34088: PDF preview is not working on AEM Assets.
+* ASSETS-34155: Dynamic Media - Updated AEM Viewers / 2024.1.0. 
+* ASSETS-34684: Handle multivalue dc:title in content tree.
+* ASSETS-34789: Fix normalization issues in filename conflict check.
+* DXML-13276: AEM Guides - integrate indexes in GraniteContent and remove them from the library.
+* GRANITE-47995: Deletion operations can fail due to conflicts with "cq:isDelivered" property.
+* GRANITE-48079: Enable POST requests for OAuth online token validation.
+* GRANITE-48143: Upgrade org.apache.sling.resourcemerger to 1.4.4 .
+* GRANITE-49031: Update to Jackson 2.16.1.
+* SCRNS-3961: Screens - Sequence channel: Jquery animation used in Fade transition leads to black screen.
+* SITES-15868: Improve the performance for listing fragments.
+* SITES-16079: `/fragments/{id}/references` started to return duplicates.
+* SITES-16118: If a fragment is patched and a fragment field is missing from the model, an exception is thrown.
+* SITES-16121: Retrieval of a model date field throws exception.
+* SITES-16207: The POST /adobe/sites/cf/models operation returns two different OK status codes.
+* SITES-17361: Re-embed Jsoup in the sites-headless bundle.
+* SITES-17768: GraphQL to output Dynamic Media URL for assets referenced in Content Fragments.
+* SKYOPS-66622: Author deployment crash looping after running a buildTransform enabled pipeline.
+* SKYOPS-69977: Adaptive Image Servlet does not load image after latest update.
+* GUIDES-15045: Spell check in the Editor does not allow the selection of suggestions.
+* GUIDES-14968: The global navigation button is not working, and the dashboard fails to load.
+* GUIDES-14943: In Native PDF publishing, custom attributes within condition presets are not working for Native PDF publishing.
+* GUIDES-15085: In Native PDF publishing, key references are not getting resolved for December 2023 release  of Adobe Experience Manager Guides.
+* GUIDES-13486: **Baseline Filter** files are not working with File Name in the Web Editor.
+* For complete list of issues fixed in AEM Guides, please refer : [AEM Guides fixed issues](https://experienceleague.adobe.com/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2402-release/fixed-issues-2024-2-0.html?lang=en#release-info)
 
-### Known Issues {#known-issues-14697}
+### Known Issues {#known-issues-15262}
 
-* GRANITE-49031: Regression resulting in `@JsonIgnore` annotation being ignored on transient fields.
+None.
 
-### Embedded Technologies {#embedded-tech-14697}
+### Change Notice {#change-notice-15262}
+
+**Action Required**
+
+Upcoming changes will require the library [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) used in your custom functional tests to be updated to at least version **1.2.1**
+
+Make sure that your dependency in `it.tests/pom.xml` has been updated.
+
+```xml
+<dependency>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.1</version>
+</dependency>
+```
+
+This change will be required after April 6, 2024.
+
+Failing to update the dependency library will result in pipeline failures at the "Custom Functional Testing" step.
+
+### Embedded Technologies {#embedded-tech-15262}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM OAK |1.58-T20231123092841-619e1bd|[Oak API 1.58.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.58.0/index.html)| 
+|AEM OAK |1.60-T20240131102219-0cde853|[Oak API 1.60.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.60.0/index.html)| 
 |AEM SLING API |Version 2.27.2 |[Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL|Version 1.4.20-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |AEM Core Components|Version 2.23.4|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
