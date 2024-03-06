@@ -13,7 +13,7 @@ The release date for the latest version 1.9.18 of [!DNL Workfront for Experience
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fix:
 
-* Processing multi-asset uploads from WorkFront encounters issues.
+* Processing multi-asset uploads from Workfront encounters issues.
 
 >[!NOTE]
 >
