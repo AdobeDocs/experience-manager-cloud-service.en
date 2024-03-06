@@ -3,6 +3,7 @@ title: Accessing Repositories
 description: Learn how to access and manage your git repository using the self-service git account management from Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 ---
+
 # Accessing Repositories {#accessing-repos}
 
 Learn how to access and manage your git repository using the self-service git account management from Cloud Manager.
@@ -34,3 +35,9 @@ The **Access Repo Info** option is also available on the **Non-Production** pipe
 >[!NOTE]
 >
 >The **Access Repo Info** option is visible to users with **Developer** or **Deployment Manager** roles.
+
+## Revoking an Access Password {#revoke-password}
+
+You can revoke an access password at any time. To do so, please [create a support ticket for this request.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support)
+
+The ticket will be treated with high priority and should be revoked within one day.

@@ -2,7 +2,6 @@
 title: Upload assets to the repository
 description: Upload assets to [!DNL Assets view], view upload statuses, and resolve upload issues.
 role: User
-exl-id: a85a4455-4456-48af-aee9-f05300677605
 ---
 # Upload assets {#add-assets}
 

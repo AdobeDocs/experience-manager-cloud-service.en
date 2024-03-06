@@ -12,9 +12,9 @@ Learn how to use Cloud Manager to check the status of your SSL certificates and 
 
 The status of your SSL certificates can be understood at a glance from the SSL certificate page.
 
-* **Green** - This status indicates that your certificate is valid for at least 60 days from the current date.
+* **Green** - This status indicates that your certificate is valid for at least 14 days from the current date.
 
-* **Orange** - This status indicates that your certificate is due to expire in less than 60 days.
+* **Orange** - This status indicates that your certificate is due to expire in less than 14 days.
   * It is time to ensure you have a plan to renew your certificate and replace it by way of the Cloud Manager user interface to avoid possible site access or outages.
   * Cloud Manager will send regular notifications in the UI to alert you of an impending certificate expiration.
 
