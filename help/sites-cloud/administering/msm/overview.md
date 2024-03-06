@@ -126,7 +126,7 @@ MSM is directly accessible in the UI using various options from the appropriate 
 
 * **References** (**Sites**)
 
-  * The [References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) rail provides information about **Live Copies** together with access to appropriate actions.
+  * The [References](/help/sites-cloud/authoring/basic-handling.md#references) rail provides information about **Live Copies** together with access to appropriate actions.
 
 * **Live Copy Overview** (**Sites**)
 

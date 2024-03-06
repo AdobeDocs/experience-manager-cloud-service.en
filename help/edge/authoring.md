@@ -23,9 +23,9 @@ When using Edge Delivery Services with AEM as a Cloud Service, the most fundamen
 
 ![How AEM authoring works with Edge Delivery Services](assets/how-aem-edge-works.png)
 
-1. [The AEM authoring environment](/help/sites-cloud/authoring/getting-started/quick-start.md) is used for content management such as creating new pages, Experience Fragments, Content Fragments, etc.
+1. [The AEM authoring environment](/help/sites-cloud/authoring/quick-start.md) is used for content management such as creating new pages, Experience Fragments, Content Fragments, etc.
    * All features of AEM are available such as workflows, MSM, translation, Launches, etc.
-1. [The Universal Editor](/help/implementing/universal-editor/authoring.md) is used to author the content managed in AEM.
+1. [The Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) is used to author the content managed in AEM.
    * The Universal Editor offers a new and modern UI for content authoring.
    * For authoring, AEM renders the HTML but includes the scripts, styles, icons and other resources from Edge Delivery Services.
    * Although the Universal Editor is used, all changes are persisted to AEM.
@@ -46,7 +46,9 @@ Details of the blocks can then be configured in the Properties rail.
 
 ![Configuring block properties](assets/block-properties.png)
 
-For details on how to author using the Universal Editor, please see the document [Authoring Content with the Universal Editor.](/help/implementing/universal-editor/authoring.md)
+For details on how to author using the Universal Editor, please see the document [Authoring Content with the Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+
+Please see the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) to learn how to start your own project to author with AEM and Edge Delivery Services.
 
 ## How to get started {#how-to-get-started}
 

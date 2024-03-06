@@ -54,6 +54,10 @@ Edge Delivery enables you to create fast, engaging websites where authors can up
 
 Integrate AEM Assets with document-based authoring for Edge Delivery Services to enable website authors to use images available in AEM Assets repositories while authoring documents in Microsoft Word or Google Docs. For more information, see [Integrate AEM Assets with document-based authoring](/help/edge/using.md#integrate-assets-edge).
 
+## Integration with Adobe Journey Optimizer {#integration-with-ajo}
+
+[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) simplifies journey management for customers to provide omnichannel campaigns with intelligent decisioning and insights. When designing messages using Journey Optimizer, you can access Assets as a Cloud Service repository directly from within the Journey Optimizer interface. Users get access to assets, using the embedded user interface of Experience Manager Assets. For more information, see [Create and manage assets with Experience Manager Assets](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html).
+
 ## New Assets capabilities {#whats-new-assets}
 
 The significant new capabilities are:
