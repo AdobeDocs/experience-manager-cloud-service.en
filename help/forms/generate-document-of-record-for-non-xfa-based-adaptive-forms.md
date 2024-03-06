@@ -384,7 +384,7 @@ To localize the branding information that you enter in the Document of Record ta
    </proto>
    ```
 
-2. To save the branding changes, select **[!UICONTROL Done]**.
+1. To save the branding changes, select **[!UICONTROL Done]**.
 
 ## Document of Record Support in Adaptive Form Editor {#dor-support-in-adaptiveform}
 
