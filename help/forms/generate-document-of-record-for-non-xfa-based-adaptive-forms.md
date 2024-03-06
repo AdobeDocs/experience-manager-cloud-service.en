@@ -339,13 +339,18 @@ To localize the branding information that you enter in the Document of Record ta
         * **Template**:  If you choose to select a custom template, browse a select an XDP on your [!DNL AEM Forms] server. If you want to use a template that is not already on your [!DNL AEM Forms] server, you should first upload the XDP to your [!DNL AEM Forms] server.
          * **Accent Color**: The color in which header text and separator lines are rendered in the document or record PDF.
          * **Font Family**: Font family of the text in the Document of Record PDF.
+
+            >[!NOTE]
+            >
+            > AEM Forms offers a variety of built-in fonts that seamlessly integrate with PDF files. To see the list of supported fonts, [click here](/help/forms/supported-out-of-the-box-fonts.md).
+
          * **Include form objects that are not bound to data model**: Setting the property includes unbound fields from Schema based Adaptive Form in Document of Record. 
          * **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.
          * **Hide description of panels**: Setting the property excludes description of the panel/table from Document of Record. Applicable for panel and table.
 
          ![Basic Properties](/help/forms/assets/basicpropertiesdor.png)
 
-    1. **Form Field Properties**: 
+    2. **Form Field Properties**: 
         * **For Check Box and Radio Button components, show only the selected values**: Setting the property displays only selected values of check box and radio button in [!UICONTROL Document of Record].
         * **Separator for multiple value(s)**: You can choose any separator such as comma or line break to display multiple values.
         * **Options Alignment**: You can select the desired alignment (Horizontal, Vertical, Same as adaptive Form) to set the alignment for the fields such as check box or radio button to be displayed on [!UICONTROL Document of Record]. By default, the vertical alignment is set for the fields in [!UICONTROL Document of Record]. Setting the properties from the [!UICONTROL Form Field Properties] of DoR overwrites the properties set in the [!UICONTROL Item Alignment] for the fields on an Adaptive Form. In case, you select [!UICONTROL Same as Aaptive form] option, the alignment as configured in an Adaptive Form author instance is used for [!UICONTROL Document of Record] fields.  
@@ -353,7 +358,7 @@ To localize the branding information that you enter in the Document of Record ta
         
         ![Form Field Properties](/help/forms/assets/formfieldpropertiesdor.png)
 
-    1. **Master Page Properties**:
+    3. **Master Page Properties**:
         * **Logo Image**: You can either choose to use the logo image from the Adaptive Form, choose one from DAM, or upload one from your computer.
         * **Form Title**: Title of the DoR.
         * **Header Text**: Text that appears at the header section of the Document of Record.
@@ -470,6 +475,11 @@ An XCI file helps you set various properties of a document. Forms as a Cloud Ser
 |config/present/pdf/pdfa/conformance|Specifies the conformance level with the PDF/A specification.|
 |config/present/pdf/version|Specifies the version of PDF document to generate|
 |config/present/pdf/version/map|Specifies the fall back fonts for the document|
+
+>[!NOTE]
+>
+> AEM Forms offers a variety of built-in fonts that seamlessly integrate with PDF files. To see the list of supported fonts, [click here](/help/forms/supported-out-of-the-box-fonts.md).
+
 
 ### Use a custom XCI file in your Forms as a Cloud Service environment
 
