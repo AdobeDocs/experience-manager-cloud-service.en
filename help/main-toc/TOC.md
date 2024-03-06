@@ -688,6 +688,7 @@ user-guide-title: AEM as a Cloud Service
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
+    + [List of supported fonts in PDF documents](/help/forms/supported-out-of-the-box-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
   + Transaction Reports {#using-communications}
     + [Transaction Reports Billable APIs](/help/forms/transaction-reports-billable-apis.md)
