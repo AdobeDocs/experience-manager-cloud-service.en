@@ -7,13 +7,38 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 
 The following section outlines the general Release Notes for [!DNL Workfront for Experience Manager enhanced connector].
 
-## Release Date {#release-date}
-
-The release date for the latest version 1.9.16 of [!DNL Workfront for Experience Manager enhanced connector] is January 19, 2024.
+The release date for the latest version 1.9.18 of [!DNL Workfront for Experience Manager enhanced connector] is March 8, 2024.
 
 ## Release highlights {#release-highlights}
 
-The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fixes:
+The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fix:
+
+* Processing multi-asset uploads from WorkFront encounters issues.
+
+>[!NOTE]
+>
+>AEM 6.4 has reached the end of extended support. See our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/?lang=en).
+
+
+>[!IMPORTANT]
+>
+>Adobe recommends you [upgrade to the latest 1.9.18 version](/help/assets/workfront-connector-install.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+
+## Known Issues {#known-issues}
+
+* While configuring project linked folders with AEM 6.4, Experience Manager do not save the values for **[!UICONTROL sub-folders]** and **[!UICONTROL Create linked folder in projects with portfolio]** fields. The value for the **[!UICONTROL sub-folders]** field updates to **[!UICONTROL undefined]** and the value for the **[!UICONTROL Create linked folder in projects with portfolio]** field updates to **[!UICONTROL Default Portfolio]** automatically after saving the configuration.
+
+* When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** drop-down list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** drop-down list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** drop-down list and the **[!UICONTROL Document Actions]** drop-down list available in the new Workfront experience.
+
+## Previous releases {#previous-releases}
+
+### February 2024 release {#february-2023-release}
+
+* Enable toggle feature to allow AEM Cloud customers to configure and set up a connector.
+
+* Closing the `resourceResolver` without explicitly closing the underlying session causes session leaks in AEM instances. It is crucial to explicitely close the session, as auto-closing the Resource Resolver does not implicitly close the session.
+
+### January 2024 release {#january-2023-release}
 
 * The [!DNL Workfront] configuration in [!DNL CRX DE] currently does not store the `project ID`, causing errors when applying read-only permission. Learn more about how to [configure permissions](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
 
@@ -30,23 +55,6 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * Insufficient support for large file assets in AEM results in a 4-byte size issue.
 
 * No request time processing for critical flows in linked folder, document update, and note update.
-
->[!NOTE]
->
->AEM 6.4 has reached the end of extended support. See our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/?lang=en).
-
-
->[!IMPORTANT]
->
->Adobe recommends you [upgrade to the latest 1.9.16 version](/help/assets/workfront-connector-install.md) of the [!DNL Workfront for Experience Manager enhanced connector].
-
-## Known Issues {#known-issues}
-
-* While configuring project linked folders with AEM 6.4, Experience Manager do not save the values for **[!UICONTROL sub-folders]** and **[!UICONTROL Create linked folder in projects with portfolio]** fields. The value for the **[!UICONTROL sub-folders]** field updates to **[!UICONTROL undefined]** and the value for the **[!UICONTROL Create linked folder in projects with portfolio]** field updates to **[!UICONTROL Default Portfolio]** automatically after saving the configuration.
-
-* When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** drop-down list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** drop-down list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** drop-down list and the **[!UICONTROL Document Actions]** drop-down list available in the new Workfront experience.
-
-## Previous releases {#previous-releases}
 
 ### November 2023 release {#november-2023-release}
 
