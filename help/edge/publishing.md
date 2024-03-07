@@ -25,9 +25,13 @@ The flow of information when publishing is as follows. Once the author starts pu
 
 1. The content author publishes AEM content in the Universal Editor.
 1. A publish event is pushed to Adobe Pipeline Queue.
-1. The Edge Delivery Publish Service forwards the relevant events to Edge Delivery Admin API.
+1. The Edge Delivery Services Publish Service forwards the relevant events to Edge Delivery Services Admin API.
 1. Edge Delivery pulls and ingests semantic HTML from AEM Author.
 1. AEM is updated with publish status.
+
+>[!NOTE]
+>
+>Per default, the Edge Delivery Services Admin API is not protected and can be used to publish or unpublish documents without authentication. In order to configure authentication for the admin API as documented in [Configuring Authentication for Authors](https://www.aem.live/docs/authentication-setup-authoring), your project needs to be provisioned with an API_KEY, that grants access to the Publish Service. Please reach out to us on Slack for that setup.
 
 ## How to get started {#how-to-get-started}
 
