@@ -1,11 +1,11 @@
 ---
 title: AEM Forms Edge Delivery Service Overview
-description: AEM Forms Edge Delivery Service built for peak performance, empowering you to envision the future of streamlined data collection and user engagement. 
+description: AEM Forms Edge Delivery Service built for peak performance, empowering you to envision the future of streamlined data collection and user engagement.
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
+exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 ---
-
 # AEM Forms Edge Delivery Service 
 
 Streamline form creation and drive higher completion rates with Adobe's AEM Forms Edge Delivery Service. This powerful, composable service empowers you to build enterprise-grade forms with exceptional performance and visual appeal. AEM prioritizes both the user experience and your business goals, ensuring lightning-fast loading times and increased form completions.
@@ -203,12 +203,3 @@ The selection between the Basic and Adaptive Forms Blocks depends on your specif
 
 
 </br>
-
-
-
-
-
-
-
-
-

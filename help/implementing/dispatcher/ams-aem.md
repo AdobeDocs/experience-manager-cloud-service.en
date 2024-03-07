@@ -13,6 +13,7 @@ The Apache and Dispatcher configuration in AEM as a Cloud Service is quite simil
 * In AEM as a Cloud Service, some Apache directives may not be used (for example, `Listen` or `LogLevel`)
 * In AEM as a Cloud Service, only some pieces of the Dispatcher configuration can be put in include files and their naming is important. For example, filter rules that you want to reuse across different hosts must be put in a file called `filters/filters.any`. See the reference page for more information.
 * In AEM as a Cloud Service there is extra validation to disallow filter rules written using `/glob` to prevent security issues. Because `deny *` is used rather than `allow *` (which cannot be used), customers benefit from running the Dispatcher locally and doing trial and error, looking at the logs to know exactly what paths the Dispatcher filters are blocking in order for those can be added.
+* In AEM as a Cloud Service it is currently highly recommended to [opt in to use the flexible source mode of dispatcher config](/help/implementing/dispatcher/disp-overview.md#validation-debug) e.g. to use web-tier config pipelines or have better flexibility on number and stucture of configuration files.
 
 ## Guidelines for migrating dispatcher configuration from AMS to AEM as a Cloud Service
 
