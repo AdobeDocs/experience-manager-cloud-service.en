@@ -1,11 +1,11 @@
 ---
 title: Prepare your spreadsheet to accept data
-description: Craft powerful forms faster using spreadsheets & Adaptive Form Block Fields! 
+description: Craft powerful forms faster using spreadsheets & Adaptive Form Block Fields!
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
+exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 ---
-
 # Prepare your spreadsheet to accept data 
 
 ![Document-based authoring ecosystem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)

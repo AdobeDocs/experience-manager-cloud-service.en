@@ -1,11 +1,11 @@
 ---
 title: From Spreadsheets to Forms -  Mastering Adaptive Form Block Field Validations
-description: Craft powerful forms faster using spreadsheets & Adaptive Form Block Fields! This guide helps you build custom validations for EDS Forms Block fields. 
+description: Craft powerful forms faster using spreadsheets & Adaptive Form Block Fields! This guide helps you build custom validations for EDS Forms Block fields.
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
+exl-id: 16e1d42a-42d0-4335-ba81-feedea7ed7d7
 ---
-
 # Add validations to form fields
 
 Adaptive Form Block has a built-in validations features. These validations are automatically applied in modern browsers based on the chosen field type and the additional properties you provide.

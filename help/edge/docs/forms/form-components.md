@@ -4,8 +4,8 @@ description: This document provides an overview of the form components and their
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
+exl-id: 7d087d41-9313-482a-a905-8955b0999781
 ---
-
 # Form Components and Properties: AEM Forms Edge Delivery Service
 
 AEM Forms Edge Delivery Service allows you to create user-friendly and interactive forms using various components. These components cater to different types of data collection and can be easily customized to fit your specific needs. 
