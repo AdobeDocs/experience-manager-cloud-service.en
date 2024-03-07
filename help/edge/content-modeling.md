@@ -345,7 +345,7 @@ Everything else will be rendered as plain text.
 
 #### Field Collapse {#field-collapse}
 
-Field collapse is the mechanism to combine multiple field values into a single semantic element based on a naming convention using the suffixes `Title`, `Type`, `Alt`, and `Text` (all case sensitive). Any property ending with any of those suffixes will not be considered a value, but rather as an attribute of another property.
+Field collapse is the mechanism to combine multiple field values into a single semantic element based on a naming convention using the suffixes `Title`, `Type`, `MimeType`, `Alt`, and `Text` (all case sensitive). Any property ending with any of those suffixes will not be considered a value, but rather as an attribute of another property.
 
 ##### Images {#image-collapse}
 
