@@ -4,8 +4,8 @@ description: Customize theme and style for an AEM Forms Edge Delivery Service Fo
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
+exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 ---
-
 # Styling Form Fields 
 
 Forms are crucial for user interaction on websites, allowing them to input data. This guide covers the fundamentals of styling various form fields within the [Adaptive Form Block](/help/edge/docs/forms/create-forms.md), helping you create visually appealing and user-friendly forms.
@@ -464,5 +464,3 @@ You can also target individual fields by name to apply unique styles.
 ```
 
 This CSS targets all input elements that are located within an element that has the class `form-otp`. Your form's HTML structure follows conventions of the Adaptive Form Block, this implies there's a container marked with the class "form-otp" holds the field with the name "otp".
-
-

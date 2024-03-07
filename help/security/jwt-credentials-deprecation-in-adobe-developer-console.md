@@ -1,8 +1,8 @@
 ---
 title: JWT Credentials Deprecation in Adobe Developer Console
 description: Learn about the impact of JWT credentials deprecation in Adobe Developer Console on AEM
+exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 ---
-
 # JWT Credentials Deprecation in Adobe Developer Console {#jwt-credentials-deprecation-in-adobe-developer-console}
 
 >[!NOTE]
@@ -51,4 +51,3 @@ Customers create Adobe Developer Console projects so they can invoke [Cloud Mana
 When Cloud Manager provisions AEM as a Cloud Service environments, it auto-generates an Adobe Developer Console project with JWT credentials. This project is marked as read-only, as illustrated in the screenshot below. Customers cannot and should not attempt to migrate these projects to OAuth Server-to-Server credentials; instead, Adobe will migrate these projects on its own, before the credentials are no longer usable.
 
 ![Auto-generated projects](/help/security/assets/jwt-deprecation-autogen-projects.png)
-

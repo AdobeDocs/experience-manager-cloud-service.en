@@ -2,8 +2,8 @@
 title: Methods to Author Content in AEM
 description: Learn the different ways you can author content in AEM and how they differ.
 feature: Authoring
+exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 ---
-
 # Methods to Author Content in AEM {#authoring-methods}
 
 Learn the different ways you can author content in AEM, how they differ, and when you might use one over the other.
