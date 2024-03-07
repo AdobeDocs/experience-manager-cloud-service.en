@@ -96,7 +96,7 @@ Summarized below are the continuous improvements for maintenance release 15262, 
 
 ### Known Issues {#known-issues-15262}
 
-`UnsupportedClassVersionError` in CM pipeline Build step after upgrading `aem-sdk-api` version to `2024.2.15262.20240224T002940Z-231200`
+#### `UnsupportedClassVersionError` in CM pipeline Build step after upgrading `aem-sdk-api` version to `2024.2.15262.20240224T002940Z-231200`
 
 The new version of `org.apache.sling.commons.mime` included in the product is compiled with a Java 11 target, which is not compatible with the Cloud Manager Build environment default JDK version 1.8, and requires that Maven be executed using JDK 11.
 
