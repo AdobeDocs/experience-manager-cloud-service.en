@@ -4,8 +4,8 @@ description: Learn how to configure thank you pages and redirection for Forms Bl
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
+exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
 ---
-
 # Show the thank you page or redirect form after submission
 
 After a user submits a form, it's crucial to provide a seamless experience through either a thank you page or a redirect. These elements not only confirm successful submission but also enhance user satisfaction and guide them further in their journey.

@@ -3,8 +3,8 @@ title: Adobe supports out of the box fonts for Document of Record and PDFs
 description: Adobe supports out of the box fonts for Document of Record and PDFs
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
+exl-id: 67b07bf6-a45c-4a74-8b24-cb2e26c55bc9
 ---
-
 # Supported fonts for Interactive Communications and Document of Record
 
 AEM Forms offers various built-in fonts that can be seamlessly used within Document of Record and PDF files.
