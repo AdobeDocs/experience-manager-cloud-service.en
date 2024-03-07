@@ -1,12 +1,12 @@
 ---
 title: Create and add custom functions in an Adaptive Form
-description: AEM Forms support custom functions which allow users to create and use their own functions within the rule editor. 
+description: AEM Forms support custom functions which allow users to create and use their own functions within the rule editor.
 keywords: Add a custom function, use a custom function, create a custom function, use custom function in rule editor.
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
+exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 ---
-
 # Custom functions in Adaptive Forms (Core Components)
 
 ## Introduction
@@ -297,8 +297,3 @@ In the rule editor of an Adaptive Form, the parameters are displayed as `require
 ## See Also {#see-also}
 
 {{see-also}}
-
-
-
-  
-

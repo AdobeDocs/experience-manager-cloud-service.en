@@ -1,11 +1,11 @@
 ---
-title: Getting Started with AEM Forms Edge Delivery Service. Create a form. 
+title: Getting Started with AEM Forms Edge Delivery Service. Create a form.
 description: Craft perfect forms, fast! ⚡ AEM Forms Edge Delivery doc-based authoring = blazing speed & SEO-friendly forms for happier users & search engines.
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
+exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 ---
-
 # Create a form using Adaptive Form Block
 
 In today's digital age, creating user-friendly forms is essential for any organization. AEM Forms Edge Delivery's lets you create forms using familiar tools like Word or Google Docs. 

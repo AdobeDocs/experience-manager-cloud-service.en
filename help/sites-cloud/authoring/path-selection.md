@@ -1,8 +1,8 @@
 ---
 title: Path Selection with the Path Browser
 description: Learn how to use the path browser to select resources in AEM.
+exl-id: 8eb52793-b709-4e66-832d-533ef06bc0e1
 ---
-
 # Path Selection {#path-selection}
 
 Often when authoring it is necessary to select another resource such as when defining a link to another page or selecting an image. To easily select a path, [path fields](#path-fields) offer auto-complete and the [path browser](#path-browser) allows for more robust selection.
