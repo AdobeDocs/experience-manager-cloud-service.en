@@ -8,7 +8,7 @@ exl-id: 7d087d41-9313-482a-a905-8955b0999781
 ---
 # Form Components and Properties: AEM Forms Edge Delivery Service
 
-AEM Forms Edge Delivery Service allows you to create user-friendly and interactive forms using various components. These components cater to different types of data collection and can be easily customized to fit your specific needs. 
+AEM Forms Edge Delivery Servicesallows you to create user-friendly and interactive forms using various components. These components cater to different types of data collection and can be easily customized to fit your specific needs. 
 
 
 ![A sample spreadsheet with some components and properties](/help/edge/assets/sample-form-in-spreadsheet.png)

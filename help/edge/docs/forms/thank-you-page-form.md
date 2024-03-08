@@ -62,9 +62,9 @@ By default, the Adaptive Forms block redirects the users to the "thankyou" page.
     
     >[!NOTE]
     >
-    > Ensure that a page with the same name exists in your Edge Delivery Service project folder on either Microsoft SharePoint or Google Workspace. If the page does not exist, proceed to create and publish it.  
+    > Ensure that a page with the same name exists in your Edge Delivery Services project folder on either Microsoft SharePoint or Google Workspace. If the page does not exist, proceed to create and publish it.  
 
-1. Proceed to check in the updated 'form.js' folder and its underlying files to your Edge Delivery Service project on GitHub. This update ensures that the form now redirects to the updated page as specified.
+1. Proceed to check in the updated 'form.js' folder and its underlying files to your Edge Delivery Services project on GitHub. This update ensures that the form now redirects to the updated page as specified.
 
 1. Ensure that the page exists in your EDS project folder and publish it.
 
