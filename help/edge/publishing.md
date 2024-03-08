@@ -4,6 +4,7 @@ description: Learn how content publishing works with Edge Delivery Services and 
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 ---
+
 # Publishing Content for Edge Delivery Services {#publishing-edge}
 
 With Edge Delivery Services, publishing content is seamless regardless of your content source:
@@ -24,14 +25,14 @@ The flow of information when publishing is as follows. Once the author starts pu
 ![The flow of information when publishing from AEM to Edge Delivery Services](assets/publishing-flow.png)
 
 1. The content author publishes AEM content in the Universal Editor.
-1. A publish event is pushed to Adobe Pipeline Queue.
-1. The Edge Delivery Services Publish Service forwards the relevant events to Edge Delivery Services Admin API.
-1. Edge Delivery pulls and ingests semantic HTML from AEM Author.
+1. A publish event is pushed to Adobe pipeline queue.
+1. The Edge Delivery Services publish service forwards the relevant events to Edge Delivery Services admin API.
+1. Edge Delivery pulls and ingests semantic HTML from AEM author.
 1. AEM is updated with publish status.
 
 >[!NOTE]
 >
->Per default, the Edge Delivery Services Admin API is not protected and can be used to publish or unpublish documents without authentication. In order to configure authentication for the admin API as documented in [Configuring Authentication for Authors](https://www.aem.live/docs/authentication-setup-authoring), your project needs to be provisioned with an API_KEY, that grants access to the Publish Service. Please reach out to us on Slack for that setup.
+>By default, the Edge Delivery Services admin API is not protected and can be used to publish or unpublish documents without authentication. In order to configure authentication for the admin API as documented in [Configuring Authentication for Authors](https://www.aem.live/docs/authentication-setup-authoring), your project must be provisioned with an API_KEY, which grants access to the publish service. [Please reach out to the Adobe team on Slack](/help/edge/docs/slack.md) for guidance.
 
 ## How to get started {#how-to-get-started}
 
