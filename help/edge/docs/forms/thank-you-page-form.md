@@ -14,14 +14,14 @@ After a user submits a form, it's crucial to provide a seamless experience throu
 
 * **Redirect**: A redirect plays a pivotal role in steering users towards relevant destinations, optimizing engagement, and ultimately boosting conversion rates. By seamlessly guiding users to the next step in their journey, a redirect ensures a smooth navigation experience. For example, redirecting user to payments page after collecting initial details. 
 
-In the Adaptive Forms block, the default behavior is to display a thank you page. However, you have the flexibility to tailor this experience to meet your specific needs. Options include:
+In the Adaptive Forms Block, the default behavior is to display a thank you page. However, you have the flexibility to tailor this experience to meet your specific needs. Options include:
 
 * [Configuring the thank you page and message to align with your brand and communication goals](#configuring-the-thank-you-page-and-message) 
 * [Redirecting users to another page post-submission for further action](#redirect-users-to-another-page-post-submission)
 
 ## Configuring the thank you page and message
 
-The default behavior of Adaptive Forms block is to display the "thankyou" page on submission. Follow these steps to configure the "thankyou" page for your Adaptive Forms block:
+The default behavior of Adaptive Forms Block is to display the "thankyou" page on submission. Follow these steps to configure the "thankyou" page for your Adaptive Forms Block:
 
 1. Access your AEM Edge Delivery project folder on Microsoft SharePoint or Google Workspace.
 1. Create a Microsoft Word or Google Docs file named "thankyou" within your project directory.
@@ -31,11 +31,11 @@ The default behavior of Adaptive Forms block is to display the "thankyou" page o
 
 1. Use AEM Sidekick to preview and publish the "thankyou" file.
 
- Your Adaptive Forms block displays the "thankyou" page on form submission. 
+ Your Adaptive Forms Block displays the "thankyou" page on form submission. 
 
 ## Redirect users to another page post-submission
 
-By default, the Adaptive Forms block redirects the users to the "thankyou" page. To redirect users to a page other than the default "thankyou" page, you have two options: 
+By default, the Adaptive Forms Block redirects the users to the "thankyou" page. To redirect users to a page other than the default "thankyou" page, you have two options: 
 
 * [Replace the "thankyou" page with a different page](#replace-the-existing-thankyou-page) 
 * [Use website redirects for "thankyou" page redirection](#use-website-redirects-for-thankyou-page-redirection) 

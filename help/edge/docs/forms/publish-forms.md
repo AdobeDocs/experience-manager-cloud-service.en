@@ -14,7 +14,7 @@ Once you are ready to share your form with your customers for data collection or
 
 ## Pre-requisites
 
-* The [Adaptive Form Block is enabled for your EDS project on GitHub](/help/edge/docs/forms/create-forms.md).
+* The [Adaptive Forms Block is enabled for your EDS project on GitHub](/help/edge/docs/forms/create-forms.md).
 * Your form is full tested and ready to use. 
 * Your [spreadsheet is configured](/help/edge/docs/forms/submit-forms.md) to accept data.
 

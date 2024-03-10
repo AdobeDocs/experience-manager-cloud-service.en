@@ -12,12 +12,12 @@ In today's digital age, creating user-friendly forms is essential for any organi
 
 These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft Sharepoint to easily process submitted data or to initiate an existing business workflow.
 
-AEM Forms provide a block, known as Adaptive Form Block, to help you easily create forms to capture and store captured data. 
+AEM Forms provide a block, known as Adaptive Forms Block, to help you easily create forms to capture and store captured data. You can create a new AEM project pre-equipped with Adaptive Forms Block or add the Adaptive Forms Block to an existing AEM project. 
 
 This AEM Forms tutorial guides you through creating, previewing, and publishing your own custom form with a new Adobe Experience Manager (AEM) Forms project. You will also learn to add Adaptive Forms Block to an existing AEM project.  
 
-* **[Create a new AEM project pre-equipped with Adaptive Forms block](#create-a-new-eds-project-pre-equipped-with-adaptive-forms-block)**  
-* **[Add Adaptive Forms Block to an Existing AEM  project](#add-adaptive-forms-block-to-an-existing-eds-project)** 
+* **[Create a new AEM project pre-equipped with Adaptive Forms Block](#create-a-new-eds-project-pre-equipped-with-adaptive-forms-block)**  
+* **[Add Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-an-existing-eds-project)** 
 
 
 
@@ -31,20 +31,21 @@ This AEM Forms tutorial guides you through creating, previewing, and publishing 
 **Heads up!** This tutorial uses macOS, Chrome, and Visual Studio Code. While the steps can be adapted for other setups, the screenshots and specific UI elements might differ based on your chosen operating system, browser, and code editor.
 
 
-## Create a new AEM project pre-equipped with Adaptive Forms block
+## Create a new AEM project pre-equipped with Adaptive Forms Block
 
-The AEM Forms Boilerplate template gets you started quickly with an AEM project pre-configured with the Adaptive Form Block. It's the quickest and easiest way to follow AEM best practices and jump right into building your forms.
+The AEM Forms Boilerplate template gets you started quickly with an AEM project pre-configured with the Adaptive Forms Block. It's the quickest and easiest way to follow AEM best practices and jump right into building your forms.
 
 ### Get started with the AEM Forms boilerplate repository template
 
-1. Login to your Github account.
-1. Go to [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms). 
+1. Create a Github repository for your AEM Project. To create repository:  
+    1. Go to [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms). 
 
-    ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
-1. Click **Use this template** and select the **Create a new repository** option, and select where you want to create this repository.
-    ![Create new repository using AEM Forms Boilerplate](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+        ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
+    1. Click the **Use this template** option and select the **Create a new repository** option. The create a new repository screen opens.  
+
+        ![Create new repository using AEM Forms Boilerplate](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
     
-    Adobe recommends that the repository is set to public. On the Create a new repository screen, select the **public** option. 
+    1. On the create a new repository screen, select the **owner**, and specify **Repository name** . Adobe recommends that the repository is set to **Public**. So, select the **public** option, and click **Create Repository**. 
 
     ![Set the repository to public](/help/edge/assets/create-a-new-repo-keep-it-public.png)
 
@@ -55,35 +56,43 @@ The AEM Forms Boilerplate template gets you started quickly with an AEM project 
 
     ![Set the repository to public](/help/edge/assets/install-aem-code-sync-app-for-your-repo.png)
     
-         >[!NOTE]
-         >
-         >
-         > If you are using Github Enterprise with IP filtering, you can add the following IP to the allow list: 3.227.118.73
+    >[!NOTE]
+    >
+    >
+    > If you are using Github Enterprise with IP filtering, you can add the following IP to the allow list: 3.227.118.73
 
-    Congratulations! You have a new website running on `https://<branch>--<repo>--<owner>.hlx.page/`. In the example above that's [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
+    Congratulations! You have a new website running on `https://<branch>--<repo>--<owner>.hlx.page/`. 
 
     * `<branch>` refers to the branch of your GitHub repository. 
     * `<repository>` denotes your GitHub repository. 
     * `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
 
+    For example, if the branch name is `main`, repository is `wefinance`, and owner is `wkndforms`, the website would be up and running at [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
 
-### Link your own content source using Google Drive
 
-Your forked Boilerplate repository from GitHub points to some [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs. 
+
+### Link your own content source
+
+Your newly created Github repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
 ![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)
 
-To link your own content, 
+To copy the sample content to your own content folder and point youur Github repository to your own content folder:  
 
 1. Create a new folder specifically for your AEM content in Google Drive or Microsoft SharePoint. This document uses a folder created on Microsoft SharePoint.
 
 1. Share the folder with the Adobe Experience Manager user (helix@adobe.com).
 
-    ![Use Manage Access option to share folder with AEM User](/help/edge/assets/share-folder-with-aem-user.png)
+    ![Use Manage Access option to share folder with AEM User - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
+
+    ![Use Manage Access option to share folder with AEM User - Google Drive](/help/edge/assets/share-google-drive-folder.png)
+
 
     Ensure that you have provided editing rights on the folder to the Adobe Experience Manager user. 
 
-    ![Share folder with AEM User, provide editing rights](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+    ![Share folder with AEM User, provide editing rights-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+
+    ![Share folder with AEM User, provide editing rights- Google Drive](/help/edge/assets/add-aem-user-google-folder.png)
 
 1. Copy the [example content stored in the Google Drive folder](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_) to your folder. To copy:
 
@@ -102,7 +111,6 @@ To link your own content,
 
 1. Now that you have your content folder set up, it's time to link it to your project on GitHub that you created using AEM Forms Boilerplate earlier. To connect: 
 
-    1. Login to your Github Account.
     1. Go to the GitHub repository that you created eariler using AEM Forms Boilerplate.
     1. Open the `fstab.yaml` for editing.
     1. Replace the existing reference with the path to the folder you shared with the AEM user (helix@adobe.com).
@@ -130,17 +138,15 @@ To link your own content,
  
 
       
-    1. Commit the updated 'fsatb.yaml file, once you've updated the reference and everything looks good. This will save your work and connect your  content folder to your website.
+    1. Commit the updated `fsatb.yaml` file, once you've updated the reference and everything looks good. If you encounter any build issues, see [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues). 
+    
+    
 
         ![Commit updated fsatab.yaml file](/help/edge/assets/commit-updated-fstab-yaml.png)
 
+        This connects your content folder to your website. After updating the reference, you might experience "404 Not Found" errors initially. This is because your content is not been previewed yet. The next section explains how to start authoring and previewing your content.
 
-        >[!NOTE]
-        >
-        >
-        >After updating the reference, you might experience "404 Not Found" errors initially. This is because your content is not been previewed yet. The next section explains how to start authoring and previewing your content.
-    
-
+        ![Commit updated fsatab.yaml file](/help/edge/assets/aem-forms-project-folder-error.png)
 
 ### Preview and publish your content
 
@@ -173,9 +179,9 @@ To preview unpublished content:
     Upon previewing the files, new browser tabs display the documents. To preview the sample form go to the following URL:
     
 
-    ```JSON
+    ```HTML
 
-        https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
+    https://<branch>--<repository>--<owner>.hlx.live
        
     ```
 
@@ -190,7 +196,34 @@ To preview unpublished content:
     
     
 
-    [https://main--wefinance--wkndforms.hlx.page/enquiry](https://main--wefinance--wkndforms.hlx.page/enquiry).  
+    [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).  
+
+### Update your form
+
+1. Go to your Microsoft SharePoint or Google Drive folder.
+
+1. Open the `enquiry.xlsx` for editing.
+
+    ![Enquiry form](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+
+1. Change the label of the submit button to `Let's Chat`.
+
+    ![Enquiry form](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+
+1. Use AEM Sidekick to preview and publish the `enquiry.xlsx` file.
+
+    ![Enquiry form](/help/edge/assets/enquiry-form-preview-publish.png)
+
+1. To preview the enquiry form go to the following URL:
+    
+
+    ```HTML
+
+    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+       
+    ```
+
+    The label of the submit button is updated. Now, fill the form and click the submit button, you experience an error, similar to the following, because the spreadsheet is not [set to accept the data yet](/help/edge/docs/forms/submit-forms.md). 
 
 
 ### Start developing styling and functionality
@@ -238,9 +271,9 @@ Congratulations! You've successfully set up your local development environment a
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-If you have an existing AEM Project, you can integrate the Adaptive Form Block into your current project to get started on form creation. To Integrate:
+If you have an existing AEM Project, you can integrate the Adaptive Forms Block into your current project to get started on form creation. To Integrate:
 
-1. Clone the Adaptive Form Block repository: https://github.com/adobe-rnd/aem-boilerplate-forms to your computer. 
+1. Clone the Adaptive Forms Block repository: https://github.com/adobe-rnd/aem-boilerplate-forms to your computer. 
 
 1. Inside the downloaded folder, find the `blocks/form` folder. Copy this folder. Now, navigate to your AEM project's local `blocks` folder and paste the copied form folder here.
 
@@ -250,7 +283,7 @@ If you have an existing AEM Project, you can integrate the Adaptive Form Block i
 That's it! The Adaptive Forms Block is now part of your AEM project. You can start creating and adding forms to your AEM pages.
 
 
-### Troubleshooting GitHub build issues 
+## Troubleshooting GitHub build issues 
 
 Ensure a smooth GitHub build process by addressing potential issues:
 
@@ -259,6 +292,14 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 * **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project.
+
+
+## See also
+
+* [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Submit forms directly to your Microsoft Excel or Google Sheets](/help/edge/docs/forms/submit-forms.md)
+* [Change look of your forms](/help/edge/docs/forms/style-theme-forms.md)
+
 
 
 

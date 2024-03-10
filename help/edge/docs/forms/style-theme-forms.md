@@ -8,11 +8,11 @@ exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 ---
 # Styling Form Fields 
 
-Forms are crucial for user interaction on websites, allowing them to input data. This guide covers the fundamentals of styling various form fields within the [Adaptive Form Block](/help/edge/docs/forms/create-forms.md), helping you create visually appealing and user-friendly forms.
+Forms are crucial for user interaction on websites, allowing them to input data. This guide covers the fundamentals of styling various form fields within the [Adaptive Forms Block](/help/edge/docs/forms/create-forms.md), helping you create visually appealing and user-friendly forms.
 
 ## Understanding Form Field Types
 
-Before diving into styling, let's review the common form field types supported by the Adaptive Form Block:
+Before diving into styling, let's review the common form field types supported by the Adaptive Forms Block:
 
 * Input Fields: These include text inputs, email inputs, password inputs, and more.
 * Checkbox Groups: Used for selecting multiple options.
@@ -29,11 +29,11 @@ Understanding fundamental CSS concepts is crucial before styling specific form f
 * Box Model: The CSS box model describes the structure of HTML elements as a content area surrounded by padding, borders, and margins.
 * Flexbox/Grid: CSS Flexbox and Grid layouts are powerful tools for creating responsive and flexible designs.
 
-## Styling a form for Adaptive Form Block
+## Styling a form for Adaptive Forms Block
 
-The Adaptive Form Block offers a standardized HTML structure, simplifying the process of selecting and styling form components:
+The Adaptive Forms Block offers a standardized HTML structure, simplifying the process of selecting and styling form components:
 
-* **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. For instructions on adding the Adaptive Form Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).
+* **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms. For instructions on adding the Adaptive Forms Block to your project, refer to [create a form](/help/edge/docs/forms/create-forms.md).
 
 * **Customization**: Use the default `forms.css` as a base and customize it to modify the look and feel of your form components, making it visually appealing and user-friendly. The file's structure encourages organization and maintains styles for forms, promoting consistent designs across your website.
 
@@ -54,7 +54,7 @@ The Adaptive Form Block offers a standardized HTML structure, simplifying the pr
 
 ## Components Structure
 
-The Adaptive Form Block offers a consistent HTML structure for various form elements, ensuring easier styling and management. You can manipulate the components using CSS for styling purposes.
+The Adaptive Forms Block offers a consistent HTML structure for various form elements, ensuring easier styling and management. You can manipulate the components using CSS for styling purposes.
 
 ### General Components (except dropdowns, radio groups, and checkbox groups):
 
@@ -908,5 +908,5 @@ You can also target individual fields by name to apply unique styles.
 
 ```
 
-This CSS targets all input elements that are located within an element that has the class `field-otp`. Your form's HTML structure follows conventions of the Adaptive Form Block, this implies there's a container marked with the class "field-otp" holds the field with the name "otp".
+This CSS targets all input elements that are located within an element that has the class `field-otp`. Your form's HTML structure follows conventions of the Adaptive Forms Block, this implies there's a container marked with the class "field-otp" holds the field with the name "otp".
 

@@ -31,7 +31,7 @@ For example, you can use content directly from Microsoft Excel or Google Sheets.
 
 Edge Delivery Services uses GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write forms in either Google Sheets or Microsoft Excel and the components of your forms can be developed by using CSS and JavaScript in GitHub. When you are ready, you can use the Sidekick browser extension to preview and publish content updates.
 
-AEM Forms Edge Delivery Services provides a forms block, known as [Adaptive Forms block](/help/edge/docs/forms/create-forms.md) to add a form to your Edge Delivery Services site.  
+AEM Forms Edge Delivery Services provides a forms block, known as [Adaptive Forms Block](/help/edge/docs/forms/create-forms.md) to add a form to your Edge Delivery Services site.  
 
 ### Key Features of AEM Forms Edge Delivery Services 
 
@@ -53,11 +53,11 @@ Document-based authoring is a versatile option suitable for creating simple form
 
 * **Basic Rules**: Easily create logic that adjusts field visibility, validation, and behavior based on user input or predefined conditions. Rules offer a flexible and intuitive way to add intelligence to your forms, ensuring they adapt seamlessly based on user inputs.
 
-* **Validations**: Before submission, the form is validated, and invalid fields are appropriately marked with error messages displayed to the user. Adaptive Forms block support all the HTML form validation, supported by modern browsers, and provide additional validation mechanism like validation script, file size, file type, overall file size, and more. 
+* **Validations**: Before submission, the form is validated, and invalid fields are appropriately marked with error messages displayed to the user. Adaptive Forms Block support all the HTML form validation, supported by modern browsers, and provide additional validation mechanism like validation script, file size, file type, overall file size, and more. 
 
 * **File Uploads**: You can add file attachment capabilities to your forms. Whether you need to gather documents, images, or other files from your users, file upload functionality serves you effortlessly. With custom handling options available, you can tailor the file upload process to suit your specific requirements.
 
-* **reCAPTCHA**: Benefit from seamless integration of Google reCAPTCHA into your forms with our out-of-the-box (OOTB) support. Safeguard your forms against fraudulent activities, spam, and abuse, while maintaining a smooth and uninterrupted user experience. Adaptive Forms block supports reCaptcha V3 and reCaptcha Enterprise. 
+* **reCAPTCHA**: Benefit from seamless integration of Google reCAPTCHA into your forms with our out-of-the-box (OOTB) support. Safeguard your forms against fraudulent activities, spam, and abuse, while maintaining a smooth and uninterrupted user experience. Adaptive Forms Block supports reCaptcha V3 and reCaptcha Enterprise. 
 
 * **Send email notification on form submission**: Eliminate the hassle of manual follow-ups and ensure timely communication with our built-in email automation for form submissions. This integrated solution lets you effortlessly notify relevant parties, including sending form data, whenever someone fills out a form on your website. No need for complex configurations or additional tools – it's ready to use out of the box.
 
@@ -113,7 +113,7 @@ AEM Authoring unlocks additional capabilities beyond the document-based authorin
 * [Getting started - developer tutorial](/help/edge/docs/forms/tutorial.md)
 * [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Submit forms directly to your Microsoft Excel or Google Sheets](/help/edge/docs/forms/submit-forms.md)
-* [Enhance the look of your forms: a guide to styling](/help/edge/docs/forms/style-theme-forms.md)
+* [Change look of your forms](/help/edge/docs/forms/style-theme-forms.md)
 
 
 <!-- 
