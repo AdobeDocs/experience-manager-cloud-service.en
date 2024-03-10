@@ -14,15 +14,30 @@ You can use the service to:
 
 * **Build exceptional enrollment experiences**: Build enrollment experiences that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates. 
 
-* **Create enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both **document-based authoring** (Microsoft SharePoint or Google Drive) and **AEM authoring** (AEM Editors). As such, you can work with multiple content sources on the same form and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or Adaptive Forms Editor.
+* **Create enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both **document-based authoring** (Microsoft SharePoint or Google Drive) and **AEM authoring** (Adaptive Forms Editor). As such, you can work with multiple content sources on the same form and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or Adaptive Forms Editor.
 
 * **Use developer friendly toolset:** AEM Forms use plain HTML, modern CSS, and vanilla JavaScript to create exceptional experiences without the usual overhead. Any developer with basic knowledge of HTML, CSS & JS should be able to build their own components and no need to learning any specific language or framework. No need of any pipeline or wait, check-in your code into Github and your changes are live. Additionally, there is no need of any pipeline or wait, check-in your code into Github and your changes are live.
 
 
-## Creating a digital enrollment experience
+## AEM Forms Edge Delivery Services Overview {#edge-overview}
 
-AEM Forms offers both **document-based authoring** (Microsoft SharePoint or Google Drive) and **AEM authoring** (AEM Editors). You can use the [Adaptive Forms block](/help/edge/docs/forms/create-forms.md) to add a form to your Edge Delivery Services site.  
+The following diagram illustrates how you can edit content in Microsoft Excel or Google Sheets (document-based editing) and publish to Edge Delivery Services. It also shows the AEM publishing method using the Adaptive Forms Editor.
 
+![Edge Delivery Architecture](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
+
+Edge Delivery services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. As mentioned previously, you can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) with [AEM authoring](/help/implementing/universal-editor/introduction.md) as well as [document-based authoring](https://www.aem.live/docs/authoring)
+
+For example, you can use content directly from Microsoft Excel or Google Sheets. This means that content from those sources can become forms on your website. The new content is added instantly without a rebuild process.
+
+Edge Delivery Services uses GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write forms in either Google Sheets or Microsoft Excel and the components of your forms can be developed by using CSS and JavaScript in GitHub. When you are ready, you can use the Sidekick browser extension to preview and publish content updates.
+
+AEM Forms Edge Delivery Services provides a forms block, known as [Adaptive Forms block](/help/edge/docs/forms/create-forms.md) to add a form to your Edge Delivery Services site.  
+
+### Key Features of AEM Forms Edge Delivery Services 
+
+Document based authoring a basic set of features and AEM authoring unlocks additional capabilities beyond the document-based authoring, empowering you to build more complex and interactive forms. The following table highlights key features for both:
+
+<!-- 
 
 >[!BEGINTABS]
 
@@ -64,10 +79,44 @@ AEM Authoring unlocks additional capabilities beyond the document-based authorin
 
 
 
+## Start creating forms
+
+-->
+
+|                                           | Document-based authoring | AEM Authoring (Adaptive Forms Editor) |
+| ----------------------------------------- | ------------------------ | ------------------------------------ |
+| **Form Functionality**                       |                          |                                      |
+| Accessible components                     | &#10003;                 | &#10003;                             |
+| Standardized HTML structure               | &#10003;                 | &#10003;                             |
+| Rules and Validations                     | &#10003;                 | &#10003;                             |
+| File Attachments (File Upload)            | &#10003;                 | &#10003;                             |
+| Google reCAPTCHA                          | &#10003;                 | &#10003;                             |
+| Custom components                         | &#10003;                 | &#10003;                             |
+| Submit to email                           | &#10003;                 | &#10003;                             |
+| **Advanced Features**                        |                          |                                      |
+| Advanced Rules with visual rule editor    |                          | &#10003;                             |
+| Server-side extensibility                 |                          | &#10003;                             |
+| Multiple Submit Actions                   |                          | &#10003;                             |
+| **Form Design and Management**               |                          |                                      |
+| Adaptive Forms editor for WYSIWYG editing |                          | &#10003;                             |
+| **Integrations**                              |                          |                                      |
+| Document of Record                        |                          | &#10003;                             |
+| Integration with Adobe Sign               |                          | &#10003;                             |
+| Inegration with Adobe Analytics           |                          | &#10003;                             |
+| Integration with Marketo                  |                          | &#10003;                             |
+| Integration with multiple data sources    |                          | &#10003;                             |
+| Multiple Submit Actions                   |                          | &#10003;                             |
 
 
+## Start creating forms
+
+* [Getting started - developer tutorial](/help/edge/docs/forms/tutorial.md)
+* [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Submit forms directly to your Microsoft Excel or Google Sheets](/help/edge/docs/forms/submit-forms.md)
+* [Enhance the look of your forms: a guide to styling](/help/edge/docs/forms/style-theme-forms.md)
 
 
+<!-- 
 
 ## Start creating forms
 
@@ -158,3 +207,6 @@ AEM Authoring unlocks additional capabilities beyond the document-based authorin
 
 
 </br>
+
+
+--> 

@@ -21,12 +21,15 @@ AEM Forms Edge Delivery provides a block, known as Adaptive Form Block, to help 
 
 Before you start, ensure that you have completed the following steps:
 
-* Set up Edge Delivery Services (EDS) GitHub project using AEM boilerplate and clone the corresponding GitHub repository on your local machine. See [developer tutorial](https://www.aem.live/developer/tutorial) for details. In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]` .  
+* Set up an [AEM project using AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) or [add adaptive forms block to your exisiting AEM Project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) and clone the corresponding GitHub repository on your local machine. 
+In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]` .  
 * Ensure that you have access to Google Sheets or Microsoft SharePoint. To set up Microsoft SharePoint as your content source, see [How to use Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## Create a form
+
+<!-- 
 
 +++ Step 1: Add the Adaptive Form Block to your Edge Delivery Services (EDS) project.
 
@@ -55,7 +58,9 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 +++
 
-+++ Step 2: Author a form using Microsoft Excel or Google Sheet.
+-->
+
++++ Step 1: Author a form using Microsoft Excel or Google Sheet.
 
 Instead of navigating through complex processes, crafting a form can be effortlessly achieved using a spreadsheet. You can define the rows and columns that will make up the form structure. Each row represents an individual [form field](/help/edge/docs/forms/form-components.md#available-components) and the column headers define the corresponding [field properties](/help/edge/docs/forms/form-components.md#components-properties).  
 
@@ -106,7 +111,7 @@ To proceed with form creation:
 
 +++
 
-+++ Step 3: Preview the form using your Edge Delivery Services (EDS) page.
++++ Step 2: Preview the form using your Edge Delivery Services (EDS) page.
 
 
 Till now, you have added the Adaptive Form Block to your EDS project and prepared the structure of the form. Now, to preview the form:
@@ -146,7 +151,6 @@ Till now, you have added the Adaptive Form Block to your EDS project and prepare
 ## Next step
 
 [Prepare your spreadsheet](/help/edge/docs/forms/submit-forms.md) to begin accepting data upon form submission.
-
 
 
 
