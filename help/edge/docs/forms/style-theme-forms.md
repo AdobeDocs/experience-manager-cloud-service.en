@@ -64,19 +64,19 @@ All form fields, except for dropdowns, radio groups, and checkbox groups, has th
 
 ```HTML
 
-<div class="form-{Type}-wrapper form-{Name} field-wrapper" data-required={Required}>
-  <label for="{FieldId}" class="field-label">Field Label</label>
-  <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
-  <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - Description of the field.
-  </div>
+<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
+   <label for="{FieldId}" class="field-label">First Name</label>
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   <div class="field-description" aria-live="polite" id="{FieldId}-description">
+    Hint - First name should be minimum 3 characters and a maximum of 10 characters.
+   </div>
 </div>
 
 ```
 
-* Classes: The div element has several classes for targeting specific elements and styling. You require the `form-{Type}-wrapper` or `form-{Name}` classes to develop a CSS selector to style a form field:
-   * {Type}: Identifies the component by field type. For example, text (form-text-wrapper), number (form-number-wrapper), date (form-date-wrapper).
-   * {Name}: Identifies the component by name. The name of the field can have only alphanumeric characters, the multiple consecutive dashes in the name are replaced with a single dash `(-)`, and starting and ending dashes in a field name are removed. For example, first-name (form-first-name field-wrapper).
+* Classes: The div element has several classes for targeting specific elements and styling. You require the `{Type}-wrapper` or `field-{Name}` classes to develop a CSS selector to style a form field:
+   * {Type}: Identifies the component by field type. For example, text (text-wrapper), number (number-wrapper), date (date-wrapper).
+   * {Name}: Identifies the component by name. The name of the field can have only alphanumeric characters, the multiple consecutive dashes in the name are replaced with a single dash `(-)`, and starting and ending dashes in a field name are removed. For example, first-name (field-first-name field-wrapper).
    * {FieldId}: It is unique identifier for the field, automatically generated.
    * {Required}: It is a boolean indicating if the field is required.
 * Label: The `label` element provides a descriptive text for the field and associates it with the input element using the `for` attribute.
@@ -137,7 +137,7 @@ All form fields, except for dropdowns, radio groups, and checkbox groups, has th
 
 /*Target all text input fields */
 
-.form-text-wrapper input {
+text-wrapper input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
@@ -145,7 +145,7 @@ All form fields, except for dropdowns, radio groups, and checkbox groups, has th
 
 /*Target all fields with name first-name*/
 
-.form-first-name input {
+first-name input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
@@ -249,46 +249,126 @@ For dropdown menus, the `select` element is used instead of an `input` element:
    * Background Color: A consistent background color is set for visual harmony.
    * Arrow Customization: Optional styles hide the default dropdown arrow and create a custom arrow using a Unicode character and positioning.
 
-### Radio and Checkbox Groups
+### Radio Groups
 
-Similar to dropdown components, radio and checkbox groups have their own HTML structure and CSS considerations:
+Similar to dropdown components, radio groups have their own HTML structure and CSS structure:
 
 #### Radio Group HTML Structure 
 
 ```HTML
 
-<div class="form-checkbox-group-wrapper form-{Name} field-wrapper" data-required={required}>
-  <label class="field-label">{Label Text}</label>
-  <div class="checkbox-group">
-    <input type="checkbox" id="{FieldId}-1" name="{Name}" value="{Value1}">
-    <label for="{FieldId}-1">{Option 1 Text}</label>
-    <input type="checkbox" id="{FieldId}-2" name="{Name}" value="{Value2}">
-    <label for="{FieldId}-2">{Option 2 Text}</label>
-    </div>
-  <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - Select multiple options (if applicable).
-  </div>
-</div>
+<fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
+   <legend for="{FieldId}" class="field-label">....</legend>
+   <% for each radio in Group %>
+   <div class="radio-wrapper field-{Name}">
+      <input type="radio" value="" id="{UniqueId}" data-field-type="radio-group" name="{FieldId}">
+      <label for="{UniqueId}" class="field-label">...</label>
+   </div>
+   <% end for %>
+</fieldset>
 
 ```
 
+#### HTML Structure Example
+
+```HTML
+
+<fieldset class="radio-group-wrapper field-color field-wrapper" id="color_preference" name="color_preference" data-required="true">
+  <legend for="color_preference" class="field-label">Favorite Color:</legend>
+  <% for each radio in Group %>
+    <div class="radio-wrapper field-color">
+      <input type="radio" value="red" id="color_red" data-field-type="radio-group" name="color_preference">
+      <label for="color_red" class="field-label">Red</label>
+    </div>
+    <div class="radio-wrapper field-color">
+      <input type="radio" value="green" id="color_green" data-field-type="radio-group" name="color_preference">
+      <label for="color_green" class="field-label">Green</label>
+    </div>
+    <div class="radio-wrapper field-color">
+      <input type="radio" value="blue" id="color_blue" data-field-type="radio-group" name="color_preference">
+      <label for="color_blue" class="field-label">Blue</label>
+    </div>
+  <% end for %>
+</fieldset>
+
+
+```
+
+#### Example CSS selectors for drop-down component
+
+* Targeting the Fieldset
+
+```CSS
+
+  .radio-group-wrapper {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+```
+
+This selector targets any fieldset with the class radio-group-wrapper. This would be useful for applying general styles to the entire radio group.
+
+* Targeting Radio Button Labels
+
+```CSS
+
+.radio-wrapper label {
+    font-weight: normal;
+    margin-right: 10px;
+  }
+
+
+```
+
+* Target all radio button labels within a specific fieldset based on its name
+
+```CSS
+
+.field-color .radio-wrapper label {
+  /* Your styles here */
+}
+
+
+```
+
+### Checkbox Groups
 
 #### Checkbox Group HTML Structure 
 
 ```HTML
 
-<div class="form-checkbox-group-wrapper form-{Name} field-wrapper" data-required={required}>
-  <label class="field-label">{Label Text}</label>
-  <div class="checkbox-group">
-    <input type="checkbox" id="{FieldId}-1" name="{Name}" value="{Value1}">
-    <label for="{FieldId}-1">{Option 1 Text}</label>
-    <input type="checkbox" id="{FieldId}-2" name="{Name}" value="{Value2}">
-    <label for="{FieldId}-2">{Option 2 Text}</label>
-    </div>
-  <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - Select multiple options (if applicable).
+<fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
+   <legend for="{FieldId}" class="field-label">....</legend>
+   <% for each radio in Group %>
+   <div class="radio-wrapper field-{Name}">
+      <input type="checkbox" value="" id="{UniqueId}" data-field-type="checkbox-group" name="{FieldId}">
+      <label for="{UniqueId}" class="field-label">...</label>
+   </div>
+   <% end for %>
+</fieldset>
+
+```
+
+#### HTML Structure Example
+
+```HTML
+
+<fieldset class="checkbox-group-wrapper field-topping field-wrapper" id="topping_preference" name="topping_preference" data-required="false">
+  <legend for="topping_preference" class="field-label">Pizza Toppings:</legend>
+  <div class="checkbox-wrapper field-topping">
+    <input type="checkbox" value="pepperoni" id="topping_pepperoni" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_pepperoni" class="field-label">Pepperoni</label>
   </div>
-</div>
+  <div class="checkbox-wrapper field-topping">
+    <input type="checkbox" value="mushrooms" id="topping_mushrooms" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_mushrooms" class="field-label">Mushrooms</label>
+  </div>
+  <div class="checkbox-wrapper field-topping">
+    <input type="checkbox" value="onions" id="topping_onions" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_onions" class="field-label">Onions</label>
+  </div>
+</fieldset>
 
 
 ```
