@@ -37,7 +37,7 @@ The AEM Forms Boilerplate template gets you started quickly with an AEM project 
 
 ### Get started with the AEM Forms boilerplate repository template
 
-1. Create a Github repository for your AEM Project. To create repository:  
+1. Create a GitHub repository for your AEM Project. To create repository:  
     1. Go to [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms). 
 
         ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
@@ -59,7 +59,7 @@ The AEM Forms Boilerplate template gets you started quickly with an AEM project 
     >[!NOTE]
     >
     >
-    > If you are using Github Enterprise with IP filtering, you can add the following IP to the allow list: 3.227.118.73
+    > If you are using GitHub Enterprise with IP filtering, you can add the following IP to the allowlist: 3.227.118.73
 
     Congratulations! You have a new website running on `https://<branch>--<repo>--<owner>.hlx.page/`. 
 
@@ -73,11 +73,11 @@ The AEM Forms Boilerplate template gets you started quickly with an AEM project 
 
 ### Link your own content source
 
-Your newly created Github repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
+Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
 ![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)
 
-To copy the sample content to your own content folder and point youur Github repository to your own content folder:  
+To copy the sample content to your own content folder and point youur GitHub repository to your own content folder:  
 
 1. Create a new folder specifically for your AEM content in Google Drive or Microsoft SharePoint. This document uses a folder created on Microsoft SharePoint.
 
@@ -100,7 +100,7 @@ To copy the sample content to your own content folder and point youur Github rep
 
         ![Download Sample Content](/help/edge/assets/download-sample-content.png)
 
-        The `index`, `nav`, and `footer` files  define the basic layout of your pages and rarely change throughout a project. They also have a specific structure that's different from most other content files. By examining these files, you'll get a feel for how content is organized in AEM projects.
+        The `index`, `nav`, and `footer` files  define the basic layout of your pages and rarely change throughout a project. They also have a specific structure that's different from most other content files. By examining these files, you'll get a feel for how content is organized in AEM Projects.
         
 
     1. Upload these files to Microsoft SharePoint or Google Drive folder. 
@@ -113,7 +113,7 @@ To copy the sample content to your own content folder and point youur Github rep
 
     1. Go to the GitHub repository that you created eariler using AEM Forms Boilerplate.
     1. Open the `fstab.yaml` for editing.
-    1. Replace the existing reference with the path to the folder you shared with the AEM user (helix@adobe.com).
+    1. Replace the existing reference with the path to the folder that you shared with the AEM user (helix@adobe.com).
 
         ![Sample Content on Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -162,21 +162,21 @@ To preview unpublished content:
 
     ![Pin AEM Sidekick](/help/edge/assets/pin-aem-sidekick.png)
 
-1. To setup the Sidekick Chrome extension, go to your previously shared Google Drive or Microsoft SharePoint folder and right-click the extension icon in the browser toolbar and select `Add this project`. 
+1. To set up the Sidekick Chrome extension, go to your previously shared Google Drive or Microsoft SharePoint folder and right-click the extension icon in the browser toolbar and select `Add this project`. 
 
     ![AEM Sidekick - Add a project](/help/edge/assets/aem-sidekick-add-a-project.png)
 
-    As soon as the extension is installed and your project is added, you are ready to preview and publish your content from your Google Drive.
+    When the extension is installed and your project is added, you are ready to preview and publish your content from your Google Drive.
 
 1. Select all the documents in the Microsoft SharePoint or Google Drive folder. You can choose multiple documents by holding down the Ctrl key (Windows/Linux) or Cmd key (Mac) while clicking.
 
     ![Select all the files](/help/edge/assets/select-all-files.png)
 
-1. Click on the AEM Sidekick icon pinned to your Chrome extension bar. A toolbar appears on your screen. You can choose to preview or publish your content.
+1. Click the AEM Sidekick icon pinned to your Chrome extension bar. A toolbar appears on your screen. You can choose to preview or publish your content.
     
     If you copied over `index`, `nav`, `footer` and `enquiry` files, all these are separate documents with their own preview and publish cycles, so make sure you preview (and publish) all of them.
 
-    Upon previewing the files, new browser tabs display the documents. To preview the sample form go to the following URL:
+    Upon previewing the files, new browser tabs display the documents. To preview the sample form, go to the following URL:
     
 
     ```HTML
@@ -204,7 +204,7 @@ The sample content includes an "enquiry" sheet that serves as a template for the
 
 ![Enquiry form](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-Let's start with updating a field lable. Open the 'enquiry' sheet for editing, change the label of submit button to `Let's Chat`, and use sidekick to publish it. 
+Let's start with updating a field label. Open the 'enquiry' sheet for editing, change the label of submit button to `Let's Chat`, and use sidekick to publish it. 
 
  ![Enquiry form](/help/edge/assets/enquiry-form-preview-publish.png)
 
@@ -236,7 +236,7 @@ To be up and running with a local AEM development environment in no time:
 
     ```
 
-1. Clone your Github project: Clone your project repository from GitHub using the following command, replacing <owner> with the repository owner and <repo> with the repository name:
+1. Clone your GitHub project: Clone your project repository from GitHub using the following command, replacing <owner> with the repository owner and <repo> with the repository name:
 
     ```
 
@@ -288,7 +288,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
     If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
 * **Handle Linting Errors:**
-    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project.
+    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from `"lint": "npm run lint:js && npm run lint:css"` to `"lint": "echo 'skipping linting for now'"`. Save the file and commit the changes to your GitHub project.
 
 
 ## See also
@@ -296,9 +296,4 @@ Ensure a smooth GitHub build process by addressing potential issues:
 * [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Submit forms directly to your Microsoft Excel or Google Sheets](/help/edge/docs/forms/submit-forms.md)
 * [Change look of your forms](/help/edge/docs/forms/style-theme-forms.md)
-
-
-
-
-
 
