@@ -25,7 +25,7 @@ The following diagram illustrates how you can edit content in Microsoft Excel or
 
 ![Edge Delivery Architecture](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-Edge Delivery services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. As mentioned previously, you can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) with [AEM authoring](/help/implementing/universal-editor/introduction.md) as well as [document-based authoring](https://www.aem.live/docs/authoring)
+Edge Delivery services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. You can use both AEM content management with [AEM authoring](/help/forms/creating-adaptive-form-core-components.md) as well as [document-based authoring](/help/edge/docs/forms/create-forms.md)
 
 For example, you can use content directly from Microsoft Excel or Google Sheets. This means that content from those sources can become forms on your website. The new content is added instantly without a rebuild process.
 
