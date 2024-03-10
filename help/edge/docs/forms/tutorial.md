@@ -198,33 +198,30 @@ To preview unpublished content:
 
     [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).  
 
-### Update your form
+### Create a form
 
-1. Go to your Microsoft SharePoint or Google Drive folder.
+The sample content includes an "enquiry" sheet that serves as a template for the "enquiry" form. Each row of the sheet represents a [form field](/help/edge/docs/forms/form-components.md#available-components), and the column headers define the [field properties](/help/edge/docs/forms/form-components.md#available-components). This sample form gives you a head start on building your form. 
 
-1. Open the `enquiry.xlsx` for editing.
+![Enquiry form](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-    ![Enquiry form](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+Let's start with updating a field lable. Open the 'enquiry' sheet for editing, change the label of submit button to `Let's Chat`, and use sidekick to publish it. 
 
-1. Change the label of the submit button to `Let's Chat`.
+ ![Enquiry form](/help/edge/assets/enquiry-form-preview-publish.png)
 
-    ![Enquiry form](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
-
-1. Use AEM Sidekick to preview and publish the `enquiry.xlsx` file.
-
-    ![Enquiry form](/help/edge/assets/enquiry-form-preview-publish.png)
-
-1. To preview the enquiry form go to the following URL:
+To preview the updated enquiry form go to the following URL:
     
 
-    ```HTML
+```HTML
 
     https://<branch>--<repository>--<owner>.hlx.page/enquiry
        
-    ```
+``` 
 
-    The label of the submit button is updated. Now, fill the form and click the submit button, you experience an error, similar to the following, because the spreadsheet is not [set to accept the data yet](/help/edge/docs/forms/submit-forms.md). 
+The label of the submit button is updated to `Let's Chat`. 
 
+![Enquiry form](/help/edge/assets/updated-form.png)
+
+For detailed information about creating and publishing a new form, head over to the [create a form](/help/edge/docs/forms/create-forms.md) guide.
 
 ### Start developing styling and functionality
 
