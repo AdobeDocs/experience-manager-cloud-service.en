@@ -1,8 +1,8 @@
 ---
 title: Release Notes for 2023.12.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2023.12.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: b36add58-a2ba-4299-94be-e0026e9c553c
 ---
-
 # 2023.12.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 The following section outlines the feature release notes for the 2023.12.0 version of [!DNL Experience Manager] as a Cloud Service.

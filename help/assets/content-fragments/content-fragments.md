@@ -5,7 +5,7 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 ---
 # Working with Content Fragments {#working-with-content-fragments}
 
-With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments lets you design, create, curate, and [publish page-independent content](/help/sites-cloud/authoring/fragments/content-fragments.md). They allow you to prepare content ready for use in multiple locations/over multiple channels, ideal for headless delivery. They can also be used together with [Multi-Site Management to enable you to reuse your content](#reusing-content-fragments-with-msm-assets).
+With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments lets you design, create, curate, and [publish page-independent content](/help/sites-cloud/authoring/fragments/content-fragments.md). They allow you to prepare content ready for use in multiple locations/over multiple channels, ideal for headless delivery. They can also be used together with [Multi-Site Management to enable you to reuse your content](#reusing-content-fragments-with-msm).
 
 Content fragments contain structured content:
 
@@ -44,7 +44,7 @@ This and the following pages cover the tasks for creating, configuring, maintain
 * [Using Associated Content](/help/assets/content-fragments/content-fragments-assoc-content.md) - adding associated content
 * [Metadata - Fragment Properties](/help/assets/content-fragments/content-fragments-metadata.md) - viewing and editing the fragment properties
 * Use [Content Fragments, together with GraphQL, so you can deliver content](/help/assets/content-fragments/content-fragments-graphql.md) for use in your applications. To help with this, you can preview [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md).
-* [Reuse Content Fragments using MSM for Assets](#reusing-content-fragments-with-msm-assets)
+* [Reuse Content Fragments using MSM](#reusing-content-fragments-with-msm)
 
 >[!NOTE]
 >
@@ -282,13 +282,13 @@ To use your Content Fragments for page authoring, you also need:
   * Fragments need one or more dedicated components to define the layout and deliver some or all elements/variations and associated content.
   * Dragging a fragment onto a page in authoring automatically associates the required component.
 
-## Reusing Content Fragments with MSM (for Assets) {#reusing-content-fragments-with-msm-assets}
+## Reusing Content Fragments with MSM {#reusing-content-fragments-with-msm}
 
 When accessed through the **Assets** console, you can use MSM and create Live Copies for your fragments.
 
 For more details, see:
 
-* [Reuse Content Fragments using MSM (for Assets)](/help/assets/content-fragments/content-fragments-msm.md)
+* [Reuse Content Fragments using MSM](/help/assets/content-fragments/content-fragments-msm.md)
 * [Reuse assets using MSM for Assets](/help/assets/reuse-assets-using-msm.md).
 
 These enable [inheritance](/help/assets/content-fragments/content-fragments-variations.md#inheritance) for both variations and individual fields of your fragments.

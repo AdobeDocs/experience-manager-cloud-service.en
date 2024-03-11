@@ -31,7 +31,7 @@ Custom registration code can be written that takes, minimally, the user's userna
 
 1. Display a custom AEM component that collects registration info
 1. Upon submission, a properly provisioned service user is used to
-   1. Verify that an existing user does not already exist, using one of the UserManager API's `findAuthorizables()` methods
+   1. Verify that an existing user does not already exist, using one of the UserManager API's `findAuthorizables ()` methods
    1. Create a user record using one of the UserManager API's `createUser()` methods
    1. Persist any profile data captured using the Authorizable interface's `setProperty()` methods
 1. Optional flows, such as requiring the user to validate their email.

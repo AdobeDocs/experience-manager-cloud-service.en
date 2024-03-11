@@ -81,7 +81,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 SonarQube will then raise a blocker vulnerability. But after reviewing the code, you recognize that this is not a vulnerability and can annotate the code with the appropriate rule ID.
 
 ```java
-@SuppressWarnings("squid:S2068")
+@SuppressWarnings ("squid:S2068")
 @Property(label = "Service Password")
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
