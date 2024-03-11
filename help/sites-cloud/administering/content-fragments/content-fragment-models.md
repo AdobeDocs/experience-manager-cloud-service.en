@@ -38,6 +38,12 @@ To use Content Fragment Models you:
 
 1. Use **Create** to save the empty model. A message indicates the success of the action, you can select **Open** to immediately edit the model, or **Done** to return to the console.
 
+>[!CAUTION]
+>
+>If you will be querying against multiple referenced fragments, then it is not recommended that the various fragment models have field names with the same name, but different types.
+>
+>For further details see [AEM GraphQL API for use with Content Fragments - Limitations](/help/headless/graphql-api/content-fragments.md#limitations)
+
 ### Content Fragment Model - Properties {#content-fragment-model-properties}
 
 These properties are defined when you create a model, and can be edited later with the **Properties** option for the Content Fragment Model:
@@ -286,6 +292,12 @@ Content Fragments can form nested content, using either of the following data ty
 >
 >* Fragment References in GraphQL 
 >  If you create a deep query that returns multiple Content Fragments referenced by each other, it returns null on the first occurrence.
+
+>[!CAUTION]
+>
+>If you will be querying against multiple referenced fragments, then it is not recommended that the various fragment models have field names with the same name, but different types.
+>
+>For further details see [AEM GraphQL API for use with Content Fragments - Limitations](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Content Reference {#content-reference}
 

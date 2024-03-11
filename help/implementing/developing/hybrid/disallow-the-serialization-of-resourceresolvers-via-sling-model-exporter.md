@@ -1,8 +1,8 @@
 ---
 title: Disallow the Serialization of ResourceResolvers via Sling Model Exporter
 description: Disallow the Serialization of ResourceResolvers via Sling Model Exporter
+exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 ---
-
 # Disallow the Serialization of ResourceResolvers via Sling Model Exporter {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
 
 The Sling Model Exporter feature allows to serialize Sling Models objects into a JSON format. This feature is widely used as it enables SPAs (single page applications) to easily access data from AEM. On the implementation side the Jacson Databind library is used to serialize these objects.
@@ -44,6 +44,3 @@ Adobe requests all their customers to check their application logs and code base
 It is assumed that in most cases these required changes are straight forward, as the `ResourceResolver` objects are not required in the JSON output at all, as the information contained there is normally not required by frontend applications. That means, in most cases it should be sufficient to exclude the `ResourceResolver` object from being considered by Jackson (see the [rules](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)).
 
 In case a Sling Model is affected by this problem but not changed, the epxlicit disabling of serizalization of the `ResourceResolver` object (as executed by Adobe as the 2nd step) will enforce a change in the JSON output.
-
-
-

@@ -74,6 +74,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2023 {#2023}
+      + [Maintenance Release Notes for 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md) 
       + [Maintenance Release Notes for 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md) 
       + [Maintenance Release Notes for 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md) 
       + [Maintenance Release Notes for 2023.9.0](/help/release-notes/maintenance/2023/2023-9-0.md) 
@@ -415,7 +416,7 @@ user-guide-title: AEM as a Cloud Service
     + [Micro-Frontend Asset Selector](/help/assets/asset-selector.md)
     + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
     + [Share assets](/help/assets/share-assets.md)
-    + [Repreocessing assets](/help/assets/reprocessing.md)
+    + [Reprocessing assets](/help/assets/reprocessing.md)
     + [Monitor activities and DAM tasks](/help/assets/assets-activity-history.md)
     + [Get started using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
     + [Add and upload assets](/help/assets/add-assets.md)
@@ -632,6 +633,7 @@ user-guide-title: AEM as a Cloud Service
         + [Add custom error handler in an Adaptive Form](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
         + [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md)
         + [Create and use custom functions](/help/forms/create-and-use-custom-functions.md)
+        +  [Add rules to an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components.md)
     + Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -689,6 +691,7 @@ user-guide-title: AEM as a Cloud Service
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
+    + [List of supported fonts in PDF documents](/help/forms/supported-out-of-the-box-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
   + Transaction Reports {#using-communications}
     + [Transaction Reports Billable APIs](/help/forms/transaction-reports-billable-apis.md)
@@ -777,8 +780,8 @@ user-guide-title: AEM as a Cloud Service
   + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
-+ Edge Delivery Services {#edge-delivery}
-  + [AEM and Edge Delivery Services](/help/edge/overview.md)
++ AEM with Edge Delivery Services {#edge-delivery}
+  + [Getting started with Edge Delivery Services](/help/edge/overview.md)
   + [Using Edge Delivery](/help/edge/using.md)
   + [Developer Getting Started Guide](/help/edge/edge-dev-getting-started.md)
   + [Authoring Content for Edge Delivery](/help/edge/authoring.md)
@@ -816,18 +819,19 @@ user-guide-title: AEM as a Cloud Service
   + Building Edge Delivery Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
     + Get Started {#getting-started-eds-forms}
+      + [Getting Started](/help/edge/docs/forms/tutorial.md)
       + [Create and preview a form](/help/edge/docs/forms/create-forms.md)
       + [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
-      + [Publish a form to sites page](/help/edge/docs/forms/publish-eds-forms.md)
+      + [Publish a form to sites page](/help/edge/docs/forms/publish-forms.md)
       + [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
       + [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
       + [Use rules to add dynamic behaviour to a form](/help/edge/docs/forms/rules-forms.md)
+      + [Thank you page](/help/edge/docs/forms/thank-you-page-form.md)
     + Capabilities {#advanced-features-eds-forms}
       + [Form fragments](/help/edge/docs/forms/form-fragments.md)
       + [Repeatable sections](/help/edge/docs/forms/repeatable-forms.md)
       + [Translation](/help/edge/docs/forms/translate-forms.md)
       + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
-      + [Thank you page](/help/edge/docs/forms/thank-you-page-form.md)
       + [Custom Components](/help/edge/docs/forms/custom-components-forms.md)
     + References {#forms-references}
       + [List of form block components](/help/edge/docs/forms/form-components.md)
