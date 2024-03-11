@@ -1,7 +1,7 @@
 ---
 title: Manage collections
 description: A collection is a set of assets within Experience Manager Assets view. Use collections to share assets between users.
-exl-id: 33c889f5-c989-4772-9591-db62f50e5c80
+exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 ---
 # Manage collections {#manage-collections}
 
