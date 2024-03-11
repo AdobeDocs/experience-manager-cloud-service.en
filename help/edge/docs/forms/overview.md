@@ -21,21 +21,20 @@ These services enable you to:
 
 ## AEM Forms Edge Delivery Services Overview {#edge-overview}
 
-The following diagram illustrates how you can edit forms in Microsoft Excel or Google Sheets (Document-based Authoring ) and publish to Edge Delivery Services. It also shows the AEM publishing method using the Adaptive Forms Editor (AEM Authoring).
+AEM Forms Edge Delivery services is a composable set of services that allows for a high degree of flexibility in how you author forms on your website. You can use both AEM content management with [AEM authoring](/help/forms/creating-adaptive-form-core-components.md) as well as [Document-based Authoring ](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services also provide a forms block, known as [Adaptive Forms Block](/help/edge/docs/forms/create-forms.md) to add a form to your Edge Delivery Services site. 
+
+For example, you author forms directly in Microsoft Excel or Google Sheets and these spreadsheets are transformed into forms for your website. Any new form or form content, such as a new form field, is instantly available on your website without requiring a rebuild process.
+
+The following diagram illustrates how you can edit forms in Microsoft Excel or Google Sheets (Document-based Authoring) and publish to Edge Delivery Services. It also shows the AEM publishing method using the Adaptive Forms Editor (AEM Authoring).
 
 ![Edge Delivery Architecture](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-AEM Forms Edge Delivery services is a composable set of services that allows for a high degree of flexibility in how you author forms on your website. You can use both AEM content management with [AEM authoring](/help/forms/creating-adaptive-form-core-components.md) as well as [Document-based Authoring ](/help/edge/docs/forms/create-forms.md).
-
-For example, you author forms directly in Microsoft Excel or Google Sheets and these spreadsheets are transformed into forms for your website. Any new form or form content, such as a new form field, is instantly available on your website without requiring a rebuild process.
 
 AEM Forms Edge Delivery Services uses GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write forms in either [Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md) and the components of your forms can be developed by using CSS and JavaScript in GitHub. 
 
 When you are ready, you can use the [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), a chrome browser extension, to preview and publish content updates.
 
 ![Install AEM SideKick](/help/edge/assets/install-aem-sidekick.png)
-
-AEM Forms Edge Delivery Services provides a forms block, known as [Adaptive Forms Block](/help/edge/docs/forms/create-forms.md) to add a form to your Edge Delivery Services site.  
 
 The choice between the [Document-based Authoring ](#document-based-authoring-features) and [AEM authoring](#aem-authoring-features) depends on your specific requirements. 
 

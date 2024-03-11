@@ -79,12 +79,6 @@ Redirecting a user to another page after form submission can enhance user experi
 To redirect the "thankyou" page to a different page, use the [website redirects](https://www.aem.live/docs/redirects) spreadsheet. 
 
 
-## See more
+## See also
 
-* [Form Components](/help/edge/docs/forms/form-components.md)
-* [Form Field Properties](/help/edge/docs/forms/eds-form-field-properties)
-* [Create and preview a form](/help/edge/docs/forms/create-forms.md)
-* [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
-* [Publish a form to sites page](/help/edge/docs/forms/publish-forms.md)
-* [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
-* [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}
