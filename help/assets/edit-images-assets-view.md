@@ -2,6 +2,7 @@
 title: Edit images
 description: Edit images using [!DNL Adobe Photoshop Express] powered options and save updated images as versions.
 role: User
+exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 ---
 # Edit images in [!DNL Assets view] {#edit-images}
 
