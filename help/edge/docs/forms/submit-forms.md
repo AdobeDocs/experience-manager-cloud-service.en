@@ -300,3 +300,6 @@ There are a few different ways that you can format the form data in the POST bod
 
 Next, you can customize the thank you message, [configure a thank you page](/help/edge/docs/forms/thank-you-page-form.md), or [set redirects](/help/edge/docs/forms/thank-you-page-form.md).
 
+## See also
+
+{{see-more-forms-eds}}

@@ -54,7 +54,7 @@
 
 [!BADGE EARLY-ACCESS TECHNOLOGY - Ask us about this feature from the AEM Sites labs on your Slack channel!]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEM authoring with Edge Delivery Services is an early-access technology."}
 
-## See more {#see-more-forms-eds}
+## See also {#see-more-forms-eds}
 
 * [Get started with AEM Forms Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
 * [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)

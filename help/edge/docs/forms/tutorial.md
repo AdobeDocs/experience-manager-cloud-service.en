@@ -10,7 +10,7 @@ hidefromtoc: yes
 
 In today's digital age, creating user-friendly forms is essential for any organization. AEM Forms Edge Delivery Services (EDS) lets you create forms using familiar tools like Google Docs and Microsoft Office. 
 
-These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft Sharepoint to easily process submitted data or to initiate an existing business workflow.
+These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft SharePoint to easily process submitted data or to initiate an existing business workflow.
 
 AEM Forms provide a block, known as Adaptive Forms Block, to help you easily create forms to capture and store captured data. You can create a new AEM project pre-configured with Adaptive Forms Block or add the Adaptive Forms Block to an existing AEM project. 
 
@@ -122,7 +122,7 @@ To copy the sample content to your own content folder and point youur GitHub rep
 
         ```HTML
 
-        https://<tenant>.sharepoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+        https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
 
         ```
 
@@ -130,11 +130,11 @@ To copy the sample content to your own content folder and point youur GitHub rep
 
         ```HTML
 
-        https://adobe.sharepoint.com/sites/wkndforms/Shared%20Documents/wefinance
+        https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
 
         ```
 
-        For more information on managing files with within Microsoft SharePoint, refer to [How to use Adobe Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).  
+        For more information on managing files with within Microsoft SharePoint, refer to [How to use Adobe SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).  
  
 
       
@@ -306,7 +306,5 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 ## See also
 
-* [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Submit forms directly to your Microsoft Excel or Google Sheets](/help/edge/docs/forms/submit-forms.md)
-* [Change look of your forms](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}
 
