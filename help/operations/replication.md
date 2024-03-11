@@ -140,7 +140,7 @@ Resource enResource = resourceResolver.getResource("/content/we-retail/en");
 Resource deResource = resourceResolver.getResource("/content/we-retail/de");
 ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
 // if you need to get the status for more more than 1 resource at once, this approach is more performant
-Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
+Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus (enResource,deResource);
 ```
 
 **Replication with Specific Agents**
@@ -156,11 +156,11 @@ private static final String PREVIEW_AGENT = "preview";
 
 ReplicationStatus beforeStatus = enResource.adaptTo(ReplicationStatus.class); // beforeStatus.isActivated == false
 
-ReplicationOptions options = new ReplicationOptions();
+ReplicationOptions options = new ReplicationOptions ();
 options.setFilter(new AgentFilter() {
   @Override
   public boolean isIncluded (Agent agent) {
-    return agent.getId().equals(PREVIEW_AGENT);
+    return agent.getId().equals (PREVIEW_AGENT);
   }
 });
 // will replicate only to preview

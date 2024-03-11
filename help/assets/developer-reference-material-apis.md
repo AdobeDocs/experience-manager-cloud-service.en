@@ -209,7 +209,7 @@ function debug() {
 }
 
 # Function to check if a file exists
-function file_exists() {
+function file_exists () {
     [ -e "$1" ]
 }
 
