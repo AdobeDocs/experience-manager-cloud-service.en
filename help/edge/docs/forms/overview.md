@@ -1,118 +1,122 @@
 ---
-title: AEM Forms Edge Delivery Service Overview
-description: AEM Forms Edge Delivery Service built for peak performance, empowering you to envision the future of streamlined data collection and user engagement. 
+title: AEM Forms Edge Delivery Services Overview
+description: AEM Forms Edge Delivery Services built for peak performance, empowering you to envision the future of streamlined data collection and user engagement.
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
+exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 ---
+# AEM Forms Edge Delivery Services 
 
-# AEM Forms Edge Delivery Service 
-
-Streamline form creation and drive higher completion rates with Adobe's AEM Forms Edge Delivery Service. This powerful, composable service empowers you to build enterprise-grade forms with exceptional performance and visual appeal. AEM prioritizes both the user experience and your business goals, ensuring lightning-fast loading times and increased form completions.
+Streamline form creation and drive higher completion rates with Adobe's AEM Forms Edge Delivery Services. These powerful, composable service empowers you to build enterprise-grade forms with exceptional performance and visual appeal. AEM prioritizes both the user experience and your business goals, ensuring lightning-fast loading times and increased form conversions.
 
 You can use the service to:
 
-* **Captivate users with stunning forms**: Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life.
+* **Build exceptional enrollment experiences**: Build enrollment experiences that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates. 
 
-* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both document-based authoring (Microsoft 365 and Google Workspace) and AEM authoring (AEM Editors). As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or Adaptive Forms Editor.
+* **Create enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both **document-based authoring** (Microsoft SharePoint or Google Drive) and **AEM authoring** (Adaptive Forms Editor). As such, you can work with multiple content sources on the same form and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or Adaptive Forms Editor.
 
-* **Build forms with perfect Lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
-
-    <div>
-    <style>
-    .image-container {
-    text-align: center; 
-    }
-    .image-container img {
-        width: 100%; /* Set image width to 100% of the container 
-    }
-</style>
-    <div class="image-container">
-    <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms Key features">
-    </div>
+* **Use developer friendly toolset:** AEM Forms use plain HTML, modern CSS, and vanilla JavaScript to create exceptional experiences without the usual overhead. Any developer with basic knowledge of HTML, CSS & JS should be able to build their own components and no need to learning any specific language or framework. No need of any pipeline or wait, check-in your code into Github and your changes are live. Additionally, there is no need of any pipeline or wait, check-in your code into Github and your changes are live.
 
 
-</div>
+## AEM Forms Edge Delivery Services Overview {#edge-overview}
 
-<!--
+The following diagram illustrates how you can edit content in Microsoft Excel or Google Sheets (document-based editing) and publish to Edge Delivery Services. It also shows the AEM publishing method using the Adaptive Forms Editor.
 
-<!--
+![Edge Delivery Architecture](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
+Edge Delivery services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. You can use both AEM content management with [AEM authoring](/help/forms/creating-adaptive-form-core-components.md) as well as [document-based authoring](/help/edge/docs/forms/create-forms.md)
 
-* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
+For example, you can use content directly from Microsoft Excel or Google Sheets. This means that content from those sources can become forms on your website. The new content is added instantly without a rebuild process.
 
-    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
+Edge Delivery Services uses GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write forms in either Google Sheets or Microsoft Excel and the components of your forms can be developed by using CSS and JavaScript in GitHub. When you are ready, you can use the Sidekick browser extension to preview and publish content updates.
 
-* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
+AEM Forms Edge Delivery Services provides a forms block, known as [Adaptive Forms Block](/help/edge/docs/forms/create-forms.md) to add a form to your Edge Delivery Services site.  
 
-    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-    
-<!--
-* **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
+### Key Features of AEM Forms Edge Delivery Services 
 
-* **Use Integrated services:** Use integrated services to streamline and empowers your users with a one-stop shop for managing their digital enrollment journeys. Use e-signatures, automated workflows, document of record (DoR), and seamless data integration, simplify the entire digital enrollment process, accelerate approvals, and optimizes your business workflows. 
+Document based authoring a basic set of features and AEM authoring unlocks additional capabilities beyond the document-based authoring, empowering you to build more complex and interactive forms. The following table highlights key features for both:
 
-    
-    >[!NOTE]
-    >[!NOTE]
-    >
-    >
-    > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
+<!-- 
 
-    -->
+>[!BEGINTABS]
 
-## Key Features
+>[!TAB Document-based authoring]
 
-* **HTML5-based Form Field components**: AEM Forms Edge Delivery Service allows you to create user-friendly and interactive forms using form components based on HTML5 [input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  elements. These components cater to different types of data collection and can be easily customized to fit your specific needs.  
+Document-based authoring is a versatile option suitable for creating simple forms with essential functionalities. It allows you to integrate various input types like text fields, dropdown menus, and radio buttons, enabling you to collect user data effectively. It offers a basic version of rules to add dynamic behaviour to forms. Key features of Document-based authoring are: 
+
+* **[HTML5-based Form Field components](/help/edge/docs/forms/form-components.md)**: AEM Forms Edge Delivery Services allow you to create user-friendly and interactive forms using form components based on HTML5 [input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  elements. These components cater to different types of data collection and can be easily customized to fit your specific needs.  
 
 * **Accessibility**: The fields in the form block are accessible. Each label is linked with its respective input element, and IDs are auto-generated for linking. Descriptions associated with fields are linked via the aria-describedby attribute. Keyboard navigation using the standard Tab/Shift + Tab keys is supported.
 
-* **Styling**: Each form field has a fixed HTML structure that can be easily decorated using custom CSS or JavaScript files. Selectors for targeting fields in CSS and JS are provided based on type and name. You can easily create new selectors due to the standradized structure. 
+* **[Styling](/help/edge/docs/forms/style-theme-forms.md)**: Each form field has a fixed HTML structure that can be easily decorated using custom CSS or JavaScript files. Selectors for targeting fields in CSS and JS are provided based on type and name. You can easily create new selectors due to the standradized structure and style your form. 
 
-* **Rules**: Easily create logic that adjusts field visibility, validation, and behavior based on user input or predefined conditions. Rules offer a flexible and intuitive way to add intelligence to your forms, ensuring they adapt seamlessly based on user inputs.
+* **Basic Rules**: Easily create logic that adjusts field visibility, validation, and behavior based on user input or predefined conditions. Rules offer a flexible and intuitive way to add intelligence to your forms, ensuring they adapt seamlessly based on user inputs.
 
-* **Validations**: Before submission, the form is validated, and invalid fields are appropriately marked with error messages displayed to the user. Various patterns are available for displaying these errors.
-
-There are some advanced features which are available on request:  
+* **Validations**: Before submission, the form is validated, and invalid fields are appropriately marked with error messages displayed to the user. Adaptive Forms Block support all the HTML form validation, supported by modern browsers, and provide additional validation mechanism like validation script, file size, file type, overall file size, and more. 
 
 * **File Uploads**: You can add file attachment capabilities to your forms. Whether you need to gather documents, images, or other files from your users, file upload functionality serves you effortlessly. With custom handling options available, you can tailor the file upload process to suit your specific requirements.
 
-* **reCAPTCHA**: Benefit from seamless integration of Google reCAPTCHA into your forms with our out-of-the-box (OOTB) support. Safeguard your forms against fraudulent activities, spam, and abuse, while maintaining a smooth and uninterrupted user experience. 
+* **reCAPTCHA**: Benefit from seamless integration of Google reCAPTCHA into your forms with our out-of-the-box (OOTB) support. Safeguard your forms against fraudulent activities, spam, and abuse, while maintaining a smooth and uninterrupted user experience. Adaptive Forms Block supports reCaptcha V3 and reCaptcha Enterprise. 
 
 * **Send email notification on form submission**: Eliminate the hassle of manual follow-ups and ensure timely communication with our built-in email automation for form submissions. This integrated solution lets you effortlessly notify relevant parties, including sending form data, whenever someone fills out a form on your website. No need for complex configurations or additional tools – it's ready to use out of the box.
 
+>[!TAB AEM Authoring]
 
-## Available Forms Blocks
+AEM Authoring unlocks additional capabilities beyond the document-based authoring, empowering you to build more complex and interactive forms. In additon to the features of Document-based authoring, AEM authoring offers the following additional features:  
 
-AEM Forms Edge Delivery Service offers two types of forms blocks to cater to different needs:
+* Advanced Rules: Define logic-based actions within your forms. You can use rules to conditionally show or hide form sections, pre-populate fields based on user input, and perform various validations to ensure data integrity.
 
-* **Basic Forms Block**: This is a versatile option suitable for creating simple forms with essential functionalities. It allows you to integrate various input types like text fields, dropdown menus, and radio buttons, enabling you to collect user data effectively.
+* Server-side extensibility: Extend the functionalities of your forms by integrating them with server-side logic. This allows you to perform complex calculations, interact with external systems, and automate specific tasks based on user actions within the form.
+* Streamline workflows and data management: Leverage the power of AEM to:
+    * Design user-friendly forms using AEM editors.
+    * Generate a "Document of Record" for secure and tamper-proof archiving of submitted data.
+    * Facilitate e-signing with Adobe Sign for a smooth and secure signing experience.
+    * Automate business processes through AEM workflows, triggering actions based on form submissions.
+    * Effortlessly integrate with various data sources, enabling seamless data flow and exchange.
 
-* **Adaptive Forms Block**: This advanced block unlocks additional capabilities beyond the Basic Forms Block, empowering you to build more complex and interactive forms. Here's a breakdown of its key features:
+>[!ENDTABS]
 
-    * Rules: Define logic-based actions within your forms. You can use rules to conditionally show or hide form sections, pre-populate fields based on user input, and perform various validations to ensure data integrity.
-    
-    * Server-side extensibility: Extend the functionalities of your forms by integrating them with server-side logic. This allows you to perform complex calculations, interact with external systems, and automate specific tasks based on user actions within the form.
 
-    * Cross Walk: Streamline workflows and data management: Leverage the power of AEM to:
-    
-         * Design user-friendly forms using AEM editors.
-        
-         * Generate a "Document of Record" for secure and tamper-proof archiving of submitted data.
-         
-         * Facilitate e-signing with Adobe Sign for a smooth and secure signing experience.
-        
-         * Automate business processes through AEM workflows, triggering actions based on form submissions.
-         
-         * Effortlessly integrate with various data sources, enabling seamless data flow and exchange.
 
-    Using the Adaptive Forms Block requires an additional license.
+## Start creating forms
 
-### Choosing the right Forms Block
+-->
 
-The selection between the Basic and Adaptive Forms Blocks depends on your specific requirements. If you need a straightforward solution for collecting basic user information, the Basic Forms Block is a perfect fit. However, if your forms require intricate logic, data manipulation, integration with external systems, or streamlined workflows using AEM features, and **you have the necessary license**, the Adaptive Forms Block provides the necessary power and flexibility to achieve your goals.
+|                                           | Document-based authoring | AEM Authoring (Adaptive Forms Editor) |
+| ----------------------------------------- | ------------------------ | ------------------------------------ |
+| **Form Functionality**                       |                          |                                      |
+| Accessible components                     | &#10003;                 | &#10003;                             |
+| Standardized HTML structure               | &#10003;                 | &#10003;                             |
+| Rules and Validations                     | &#10003;                 | &#10003;                             |
+| File Attachments (File Upload)            | &#10003;                 | &#10003;                             |
+| Google reCAPTCHA                          | &#10003;                 | &#10003;                             |
+| Custom components                         | &#10003;                 | &#10003;                             |
+| Submit to email                           | &#10003;                 | &#10003;                             |
+| **Advanced Features**                        |                          |                                      |
+| Advanced Rules with visual rule editor    |                          | &#10003;                             |
+| Server-side extensibility                 |                          | &#10003;                             |
+| Multiple Submit Actions                   |                          | &#10003;                             |
+| **Form Design and Management**               |                          |                                      |
+| Adaptive Forms editor for WYSIWYG editing |                          | &#10003;                             |
+| **Integrations**                              |                          |                                      |
+| Document of Record                        |                          | &#10003;                             |
+| Integration with Adobe Sign               |                          | &#10003;                             |
+| Inegration with Adobe Analytics           |                          | &#10003;                             |
+| Integration with Marketo                  |                          | &#10003;                             |
+| Integration with multiple data sources    |                          | &#10003;                             |
+| Multiple Submit Actions                   |                          | &#10003;                             |
 
+
+## Start creating forms
+
+* [Getting started - developer tutorial](/help/edge/docs/forms/tutorial.md)
+* [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Submit forms directly to your Microsoft Excel or Google Sheets](/help/edge/docs/forms/submit-forms.md)
+* [Change look of your forms](/help/edge/docs/forms/style-theme-forms.md)
+
+
+<!-- 
 
 ## Start creating forms
 
@@ -205,10 +209,4 @@ The selection between the Basic and Adaptive Forms Blocks depends on your specif
 </br>
 
 
-
-
-
-
-
-
-
+--> 
