@@ -36,6 +36,13 @@ Edge Delivery Services uses GitHub so customers can manage and deploy code direc
 
 AEM Forms Edge Delivery Services provides a forms block, known as [Adaptive Forms Block](/help/edge/docs/forms/create-forms.md) to add a form to your Edge Delivery Services site.  
 
+The choice between the [document-based authoring](#document-based-authoring-features) and [AEM authoring](#aem-authoring-features) depends on your specific requirements. 
+
+For simple forms that just collect basic information like names and emails (think contact us forms, lead generation forms, or service request forms), and where you only need the data to go to a spreadsheet, the [Document-based Authoring](/help/edge/docs/forms/create-forms.md) is a perfect fit. You can build these forms like you would a document in Google Docs. 
+
+If your forms get more complex, like requiring multiple panels, complex rules and business logic, data manipulation, integration with external systems, or streamlined workflows using AEM features, then [AEM Authoring](/help/forms/creating-adaptive-form-core-components.md) is a better option. 
+
+
 ### Key Features of Document-based Authoring and AEM Authoring
 
 Document-based Authoring offers a basic set of features and AEM Authoring unlocks additional capabilities beyond the document-based authoring, empowering you to build more complex and interactive forms. The key features of both Document-based Authoring and AEM Authoring are:
@@ -113,6 +120,13 @@ AEM Authoring (using the Adaptive Forms Editor) provides a WYSIWYG interface for
 * Ability to configure multiple submit actions for handling form submissions, including submitting data to Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, many more data sources.
 
 In essence, AEM Authoring builds upon the foundation of Document-based Authoring, providing a more advanced toolkit for creating and managing complex forms. 
+
+### Authoring Workflow
+
+![Document-based authoring](/help/edge/assets/document-based-authoring-workflow.png)
+
+![AEM authoring](/help/edge/assets/aem-authoring-workflow.png)
+
 
 ## Start creating forms
 
