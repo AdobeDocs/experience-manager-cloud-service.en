@@ -100,7 +100,7 @@ To copy the sample content to your own content folder and point youur GitHub rep
 
         ![Download Sample Content](/help/edge/assets/download-sample-content.png)
 
-        The `index`, `nav`, and `footer` files  define the basic layout of your pages and rarely change throughout a project. They also have a specific structure that's different from most other content files. By examining these files, you'll get a feel for how content is organized in AEM Projects.
+        The `nav` and `footer` files  define the basic layout of your pages and rarely change throughout a project. They also have a specific structure that's different from most other content files. By examining these files, you'll get a feel for how content is organized in AEM Projects.
         
 
     1. Upload these files to Microsoft SharePoint or Google Drive folder. 
@@ -146,7 +146,7 @@ To copy the sample content to your own content folder and point youur GitHub rep
 
         This connects your content folder to your website. After updating the reference, you might experience "404 Not Found" errors initially. This is because your content is not been previewed yet. The next section explains how to start authoring and previewing your content.
 
-        ![Commit updated fsatab.yaml file](/help/edge/assets/aem-forms-project-folder-error.png)
+
 
 ### Preview and publish your content
 
@@ -204,9 +204,22 @@ The sample content includes an "enquiry" sheet that serves as a template for the
 
 ![Enquiry form](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-Let's start with updating a field label. Open the 'enquiry' sheet for editing, change the label of submit button to `Let's Chat`, and use sidekick to publish it. 
+Let's start with updating a field label. Open the 'enquiry' sheet for editing, change the label of submit button to `Let's Chat` and use AEM Sidekick to preview and publish the file. 
 
  ![Enquiry form](/help/edge/assets/enquiry-form-preview-publish.png)
+
+ When you preview or publish the file, a JSON version of the file appears in a new tab. Copy the preview (.hlx.page) or publish (.hlx.live) URL of the file. 
+
+ ![JSON of the form spreadsheet](/help/edge/assets//preview-and-publish-enquiry-form.png)
+
+ Open the `enquiry` file, and replace the URL in the form block with URL of file copied in the previous step. Ensure that the URL is a hyper link. 
+
+ ![Enquiry file with the .json URL of URL of spreadsheet](/help/edge/assets/enquiry-doc-to-embed-form.png)
+
+ Use AEM Sidekick to preview and publish the enquiry document. 
+
+![Enquiry file with the .json URL of URL of spreadsheet](/help/edge/assets/preview-and-publish-enquiry-document.png)
+
 
 To preview the updated enquiry form go to the following URL:
     
