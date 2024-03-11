@@ -131,6 +131,12 @@ Simply follow the same steps in the sections [Create Spreadsheet](#spreadsheet) 
 
 Additionally, you can [create your own spreadsheet](#own-spreadsheet) with arbitrary columns for your own use.
 
+>[!NOTE]
+>
+>You do not need to create a spreadsheet to manage indexing for AEM as a Cloud Service with Edge Delivery Services projects.
+>
+>If you wish to create your own indices, [please follow this documentation](https://www.aem.live/developer/indexing#setting-up-more-index-configurations) to create your own `helix-query.yaml` file.
+
 ## Creating Your Own Spreadsheet {#own-spreadsheet}
 
 1. Follow the same steps in the section [Create Spreadsheet.](#spreadsheet)
