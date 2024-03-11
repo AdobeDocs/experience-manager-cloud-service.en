@@ -1,8 +1,8 @@
 ---
 title: Content Modeling for AEM authoring with Edge Delivery Services Projects
 description: Learn how content modeling works for AEM authoring with Edge Delivery Services projects and how to model your own content.
+exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 ---
-
 # Content Modeling for AEM authoring with Edge Delivery Services Projects {#content-modeling}
 
 Learn how content modeling works for AEM authoring with Edge Delivery Services projects and how to model your own content.
