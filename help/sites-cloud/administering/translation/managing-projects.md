@@ -442,14 +442,26 @@ To compare language copies to the language master:
 
 ## Moving or Renaming a Source Page {#move-source}
 
-If an already translated source page must be [renamed or moved](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), translating the page again after the move create a language copy based on the new page name/location. The old language copy based on the previous name/location will still be there.
+If an already translated source page needs to be [renamed or moved](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), translating the page again after the move creates a language copy based on the new page name/location. The old language copy based on the previous name/location is still there. To prevent this, you can use the update language copy functionality after the move:
 
-The best practice in this scenario is to follow this procedure:
+1. Move a page which has a language copy.
+1. Select the language copy root.
+1. Open the **References** panel.
+1. Select **Languages Copies**.
+1. Select the target languages you want to update.
+1. Select **Update language copies**.
 
-1. Unpublish the language copies associated with the source page you want to move.
-1. Delete them.
-1. Create new language copies from the newly moved source page.
-1. Publish the created language copies. 
+   ![updating-language-copies](../assets/translation-move-to.png)
+   
+1. Click **Update**. A [Launch](/help/sites-cloud/authoring/launches/promoting.md) will be created.
+1. Navigate to the required language root and select it.
+1. Using the **References** panel, select **Launches**.
+
+   ![promote-launch-translation](../assets/promote-launch-translation.png)
+   
+1. Click on the Launch that was created and click **Promote launch**.
+
+Now the source page was moved, and the associated language copy.
 
 ## Importing and Exporting Translation Jobs {#import-export}
 
