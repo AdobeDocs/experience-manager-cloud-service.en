@@ -79,12 +79,12 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
    The handler is loaded into the viewer using `setHandlers`:
 
-   `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
+   `*viewerInstance*.setHandlers ({ *handler 1*, *handler 2*}, ...`
 
    **Using the sample embed code example from above, you have the following code:**
 
    ```xml {.line-numbers}
-   s7interactiveimageviewer.setHandlers({
+   s7interactiveimageviewer.setHandlers ({
        quickViewActivate": function(inData) {
            var sku=inData.sku;
            var genericVariable1=inData.genericVariable1;
@@ -94,7 +94,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
    })
    ```
 
-   Learn more about `setHandlers()` method at the following:
+   Learn more about `setHandlers ()` method at the following:
 
     * Interactive Image viewer - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
     * Interactive Video viewer - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
@@ -230,7 +230,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 1. Your entire setHandlers code is similar to the following (Interactive Video viewer was used):
 
    ```xml {.line-numbers}
-   s7interactivevideoviewer.setHandlers({
+   s7interactivevideoviewer.setHandlers ({
        "quickViewActivate": function(inData) {
            var sku=inData.sku;
            loadQuickView(sku);

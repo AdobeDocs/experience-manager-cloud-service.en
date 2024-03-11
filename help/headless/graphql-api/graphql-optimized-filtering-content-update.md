@@ -51,7 +51,7 @@ There are prerequisites for this task:
       <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Enables(!=0) or disables(0) triggering of Content Fragment migration job. </td>
+      <td>Enables (!=0) or disables (0) triggering of Content Fragment migration job. </td>
      </tr>
      <tr>
       <td>2</td>
@@ -205,7 +205,7 @@ There are prerequisites for this task:
       <td>All </td>
       <td> </td>
       <td>Variable </td>
-      <td>Disables(0) (or Enables(!=0)) triggering of Content Fragment migration job. </td>
+      <td>Disables (0) (or Enables (!=0)) triggering of Content Fragment migration job. </td>
      </tr>
     </tbody>
    </table>

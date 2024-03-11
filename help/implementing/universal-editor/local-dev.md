@@ -34,9 +34,9 @@ The Universal Editor Service is not an entire copy of the Universal Editor, but 
 
 [NodeJS version 16](https://nodejs.org/en/download/releases) is required to run a local copy of the Universal Editor Service.
 
-The Universal Editor Service is distributed by AEM Engineering directly. Contact your engineer in the VIP program for a local copy.
+The Universal Editor Service is available via Software Distribution. Please see the [Software Distribution documentation](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) for details on how to access it.
 
-Engineering will provide you with a `universal-editor-service.cjs` file. Save this to your local development environment.
+Save the `universal-editor-service.cjs` file from Software Distribution to your local development environment.
 
 ## Create a Certificate to Run the Universal Editor Service with HTTPS {#ue-https}
 
