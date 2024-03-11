@@ -10,7 +10,7 @@ exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 
 Once you are ready to share your form with your customers for data collection or submission, you can simply publish it, making the form readily available for your customers to use.
 
-![Document-based authoring ecosystem](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
+![Document-based Authoring  ecosystem](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
 
 ## Pre-requisites
 

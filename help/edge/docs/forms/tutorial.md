@@ -12,11 +12,11 @@ In today's digital age, creating user-friendly forms is essential for any organi
 
 These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft Sharepoint to easily process submitted data or to initiate an existing business workflow.
 
-AEM Forms provide a block, known as Adaptive Forms Block, to help you easily create forms to capture and store captured data. You can create a new AEM project pre-equipped with Adaptive Forms Block or add the Adaptive Forms Block to an existing AEM project. 
+AEM Forms provide a block, known as Adaptive Forms Block, to help you easily create forms to capture and store captured data. You can create a new AEM project pre-configured with Adaptive Forms Block or add the Adaptive Forms Block to an existing AEM project. 
 
 This AEM Forms tutorial guides you through creating, previewing, and publishing your own custom form with a new Adobe Experience Manager (AEM) Forms project. You will also learn to add Adaptive Forms Block to an existing AEM project.  
 
-* **[Create a new AEM project pre-equipped with Adaptive Forms Block](#create-a-new-eds-project-pre-equipped-with-adaptive-forms-block)**  
+* **[Create a new AEM project pre-configured with Adaptive Forms Block](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**  
 * **[Add Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-an-existing-eds-project)** 
 
 
@@ -31,7 +31,7 @@ This AEM Forms tutorial guides you through creating, previewing, and publishing 
 **Heads up!** This tutorial uses macOS, Chrome, and Visual Studio Code. While the steps can be adapted for other setups, the screenshots and specific UI elements might differ based on your chosen operating system, browser, and code editor.
 
 
-## Create a new AEM project pre-equipped with Adaptive Forms Block
+## Create a new AEM project pre-configured with Adaptive Forms Block
 
 The AEM Forms Boilerplate template gets you started quickly with an AEM project pre-configured with the Adaptive Forms Block. It's the quickest and easiest way to follow AEM best practices and jump right into building your forms.
 

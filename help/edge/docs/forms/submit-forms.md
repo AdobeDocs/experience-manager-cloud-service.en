@@ -11,7 +11,7 @@ exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 
 Once you've [created and previewed the form](/help/edge/docs/forms/create-forms.md), it's time to enable the corresponding spreadsheet to start receiving data. 
 
-![Document-based authoring ecosystem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+![Document-based Authoring  ecosystem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)

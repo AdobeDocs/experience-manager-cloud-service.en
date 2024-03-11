@@ -8,7 +8,7 @@ hidefromtoc: yes
 
 # Create a form using document based authoring for AEM Forms Edge Delivery Service
 
-In today's digital age, creating user-friendly forms is essential for any organization. AEM Forms Edge Delivery's document-based authoring lets you create forms using familiar tools like Word or Google Docs.These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft Sharepoint to easily process submitted data or to initiate an existing business workflow.
+In today's digital age, creating user-friendly forms is essential for any organization. AEM Forms Edge Delivery's Document-based Authoring  lets you create forms using familiar tools like Word or Google Docs.These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft Sharepoint to easily process submitted data or to initiate an existing business workflow.
 
 This guide walks you through:
 
