@@ -246,7 +246,7 @@ To initialize the React-based Peregrine and CIF core components, create the requ
     import { enhancer, reducers } from '@magento/peregrine/lib/store';
     
     const storage = new BrowserPersistence();
-    const store = createStore(combineReducers(reducers), enhancer);
+    const store = createStore(combineReducers (reducers), enhancer);
     
     storage.setItem('store_view_code', config.storeView);
     
@@ -260,7 +260,7 @@ To initialize the React-based Peregrine and CIF core components, create the requ
         // listen for add-to-cart events and enable forwarding to the magento storefront events sdk
         useAddToCartEvent(({ mse }));
         // enable CIF specific event forwarding to the Adobe Client Data Layer
-        useDataLayerEvents();
+        useDataLayerEvents ();
         
         useEffect(() => {
             // implement a proper marketing opt-in, for demo purpose you hard-set the consent cookie
