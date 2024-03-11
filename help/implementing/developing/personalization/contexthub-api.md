@@ -62,7 +62,7 @@ The ContextHub object provides access to all stores.
 
 ### Functions (ContextHub) {#functions-contexthub}
 
-#### getAllStores() {#getallstores}
+#### getAllStores () {#getallstores}
 
 Returns all registered ContextHub stores.
 
@@ -77,7 +77,7 @@ An object that contains all ContextHub stores. Each store is an object that uses
 The following example retrieves all stores and then retrieves the geolocation store:
 
 ```javascript
-var allStores = ContextHub.getAllStores();
+var allStores = ContextHub.getAllStores ();
 var geoloc = allStores.geolocation
 ```
 
@@ -121,7 +121,7 @@ Provides access to ContextHub segments.
 
 ### Functions (ContextHub.SegmentEngine.SegmentManager) {#functions-contexthub-segmentengine-segmentmanager}
 
-#### getResolvedSegments() {#getresolvedsegments}
+#### getResolvedSegments () {#getresolvedsegments}
 
 Returns the segments that are resolved in the current context. This function has no parameters.
 
@@ -149,7 +149,7 @@ A `ContextHub.Utils.Persistence` object. For information about the default value
 
 ### Functions (ContextHub.Store.Core) {#functions-contexthub-store-core}
 
-#### addAllItems(tree, options) {#addallitems-tree-options}
+#### addAllItems (tree, options) {#addallitems-tree-options}
 
 Merges a data object or an array with the store data. Each key/value pair in the object or array is added to the store (via the `setItem` function):
 
@@ -187,7 +187,7 @@ A `boolean` value:
 * A value of `true` indicates that the reference was added.
 * A value of `false` indicates that no reference was added.
 
-#### announceReadiness() {#announcereadiness}
+#### announceReadiness () {#announcereadiness}
 
 Triggers the `ready` event for this store. This function has no parameters and returns no value.
 
@@ -207,7 +207,7 @@ Returns the value that is associated with a key.
 
 An Object that represents the value for the key.
 
-#### getKeys(includeInternals) {#getkeys-includeinternals}
+#### getKeys (includeInternals) {#getkeys-includeinternals}
 
 Retrieves the keys from the store. Optionally you can retrieve the keys that are used internally by the ContextHub framework.
 
@@ -219,7 +219,7 @@ Retrieves the keys from the store. Optionally you can retrieve the keys that are
 
 An array of key names ( `string` values).
 
-#### getReferences() {#getreferences}
+#### getReferences () {#getreferences}
 
 Retrieves the references from the store.
 
@@ -395,7 +395,7 @@ Returns the raw response that is cached since the last call to the JSONP service
 
 An object that represents the raw response.
 
-#### getServiceDetails() {#getservicedetails}
+#### getServiceDetails () {#getservicedetails}
 
 Retrieves the service object for this ContextHub.Store.JSONPStore object. The service object contains the information required to create the service URL.
 
@@ -515,7 +515,7 @@ A utility class for interacting with cookies.
 
 ### Functions (ContextHub.Utils.Cookie) {#functions-contexthub-utils-cookie}
 
-#### exists(key) {#exists-key}
+#### exists (key) {#exists-key}
 
 Determines whether a cookie exists.
 
@@ -530,12 +530,12 @@ A `boolean` value of true indicates that the cookie exists.
 ##### Example {#example-exists}
 
 ```javascript
-if (ContextHub.Utils.Cookie.exists("name")) {
+if (ContextHub.Utils.Cookie.exists ("name")) {
    // conditionally-executed code
 }
 ```
 
-#### getAllItems(filter) {#getallitems-filter}
+#### getAllItems (filter) {#getallitems-filter}
 
 Returns all cookies that have keys that match a filter.
 
@@ -554,7 +554,7 @@ An object of cookies. Object properties are cookie keys and key values are cooki
 ##### Example {#example-getallitems}
 
 ```javascript
-ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getAllItems ([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### getItem(key) {#getitem-key-1}
@@ -575,7 +575,7 @@ The cookie value, or `null` if no cookie was found for the key.
 ContextHub.Utils.Cookie.getItem("name");
 ```
 
-#### getKeys(filter) {#getkeys-filter}
+#### getKeys (filter) {#getkeys-filter}
 
 Returns an array of the keys of existing cookies that match a filter.
 
@@ -594,7 +594,7 @@ An array of strings where each string is the key of a cookie that matches the fi
 ##### Example {#example-getkeys-1}
 
 ```javascript
-ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getKeys ([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### removeItem(key, options) {#removeitem-key-options-1}
@@ -823,7 +823,7 @@ This class facilitates the manipulation of data objects that to be stored or are
 
 ### Functions (ContextHub.Utils.JSON.tree) {#functions-contexthub-utils-json-tree}
 
-#### addAllItems() {#addallitems}
+#### addAllItems () {#addallitems}
 
 Creates a copy of a data object and adds to it the data tree from a second object. The function returns the copy and does not modify either of the original objects. When the data trees of the two objects contain identical keys, the value of the second object overwrites the value of the first object.
 
@@ -905,7 +905,7 @@ Object {
 }
 ```
 
-#### getKeys() {#getkeys}
+#### getKeys () {#getkeys}
 
 Retrieves all keys from the data tree of an object. Optionally, you can retrieve only the keys of the children of a specific key. You can also optionally specify a sort order of the retrieved keys.
 
@@ -940,7 +940,7 @@ myObject {
 }
 ```
 
-The `ContextHub.Utils.JSON.tree.getKeys(myObject);` script returns the following array:
+The `ContextHub.Utils.JSON.tree.getKeys (myObject);` script returns the following array:
 
 ```javascript
 ["/location", "/location/city", "/location/country", "/location/latitude", "/location/longitude", "/location/weather", "/location/weather/humidity", "/location/weather/precipitation", "/location/weather/temperature", "/location/weather/wind"]
@@ -1066,7 +1066,7 @@ Enables you to register store candidates and obtain registered store candidates.
 
 ### Functions (ContextHub.Utils.storeCandidates) {#functions-contexthub-utils-storecandidates}
 
-#### getRegisteredCandidates(storeType) {#getregisteredcandidates-storetype}
+#### getRegisteredCandidates (storeType) {#getregisteredcandidates-storetype}
 
 Returns the store types that are registered as store candidates. Either retrieve the registered candidates of a specific store type or of all store types.
 
@@ -1078,7 +1078,7 @@ Returns the store types that are registered as store candidates. Either retrieve
 
 An object of store types. The object properties are the store type names, and the property values are an array of registered store candidates.
 
-#### getStoreFromCandidates(storeType) {#getstorefromcandidates-storetype}
+#### getStoreFromCandidates (storeType) {#getstorefromcandidates-storetype}
 
 Returns a store type from the registered candidates. If more than one store type of the same name is registered, the function returns the store type with the highest priority.
 
@@ -1090,7 +1090,7 @@ Returns a store type from the registered candidates. If more than one store type
 
 An object that represents the registered store candidate. If the requested store Type is not registered, an error is thrown.
 
-#### getSupportedStoreTypes() {#getsupportedstoretypes}
+#### getSupportedStoreTypes () {#getsupportedstoretypes}
 
 Returns the names of the store types that are registered as store candidates. This function requires no parameters.
 
