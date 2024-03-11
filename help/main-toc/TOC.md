@@ -787,6 +787,7 @@ user-guide-title: AEM as a Cloud Service
   + [Developing for Edge Delivery](/help/edge/developing.md)
   + [Content Modeling](/help/edge/content-modeling.md)
   + [Creating Blocks](/help/edge/create-block.md)
+  + [Tabular Data and Spreadheets](/help/edge/tabular-data.md)
   + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
   + Building Edge Delivery Applications {#build}
     + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
