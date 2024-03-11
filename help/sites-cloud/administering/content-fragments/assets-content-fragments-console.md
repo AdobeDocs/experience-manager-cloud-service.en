@@ -39,10 +39,12 @@ You can also take actions on one, or more, selected Assets:
 
 ![Content Fragments console - actions for selected Asset](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-actions.png)
 
-* [Details](/help/assets/manage-digital-assets.md#editing-properties)
-* [Download](/help/assets/download-assets-from-aem.md)
-* [Share Link](/help/assets/share-assets.md)
-* [Delete](/help/assets/manage-digital-assets.md#delete-assets)
-* [Copy](/help/assets/manage-digital-assets.md#copying-assets)
-* [Move](/help/assets/manage-digital-assets.md#moving-or-renaming-assets)
-* [Rename](/help/assets/manage-digital-assets.md#moving-or-renaming-assets)
+See [Manage Assets](/help/assets/manage-organize-assets-view.md) for further details on:
+
+* Details 
+* Download
+* Share Link
+* Delete
+* Copy 
+* Move
+* Rename 
