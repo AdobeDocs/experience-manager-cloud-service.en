@@ -22,8 +22,8 @@ These forms submit data directly to a Microsoft Excel or Google Sheets file, ena
 Before you start, ensure that you have completed the following steps:
 
 * Set up an [AEM project using AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) or [added Adaptive Forms Block to your exisiting AEM Project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) and clone the corresponding GitHub repository on your local machine. 
-In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]` .  
-* Ensure that you have access to Google Sheets or Microsoft SharePoint. To set up Microsoft SharePoint as your content source, see [How to use Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
+In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  
+* Ensure that you have access to Google Sheets or Microsoft SharePoint. To set up Microsoft SharePoint as your content source, see [How to use Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
@@ -74,6 +74,8 @@ To proceed with form creation:
 
 1. Create a Microsoft Excel Workbook or Google Sheet anywhere within your AEM Edge Delivery project directory. For example, create a spreadsheet named `enquiry` on AEM Edge Delivery project directory on Google Drive. 
 
+    ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+
 1. Ensure that the sheet is shared with the appropriate AEM user (for example `helix@adobe.com`) [as per the configurations specified for your project](https://www.aem.live/docs/setup-customer-sharepoint). Grant the user editing permission for the sheet. 
 
 1. Open the created spreadsheet and rename the default sheet to "shared-default". 
@@ -81,6 +83,7 @@ To proceed with form creation:
     ![rename default sheet to "shared-default"](/help/edge/assets/rename-sheet-to-shared-default.png)
 
 1. To add the form fields, insert rows and column headers into the 'shared-default' sheet. Each row should represent a [form field](/help/edge/docs/forms/form-components.md#available-components), with column headers defining the corresponding field [properties](/help/edge/docs/forms/form-components.md#components-properties).
+
 
     For a swift start, consider copying the contents of the [Enquiry spreadsheet](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) into your spreadsheet. After copying the content, save your spreadsheet. 
 
@@ -114,19 +117,24 @@ To proceed with form creation:
 +++ Step 2: Preview the form using your Edge Delivery Services (EDS) page.
 
 
-Till now, you have added the Adaptive Forms Block to your EDS project and prepared the structure of the form. Now, to preview the form:
+Till now, you have prepared the structure of the form. Now, to preview the form:
 
-1. **Access Your Project Directory:** Open your Microsoft SharePoint or Google Drive account and navigate to your AEM Edge Delivery project directory.
+1. Open your Microsoft SharePoint or Google Drive account and navigate to your AEM Edge Delivery project directory.
 
-1. **Embed the Form into a Document:** Open a document file (For example, index file) to embed the form. Alternatively, you can create a new document.
 
-1. **Navigate to the Desired Location:** Move to the desired location within the document where you intend to add the form.
 
-1. **Add the Adaptive Forms Block:** To create a form block to render the form. Select Insert > Table, and create a one column, two row table. Name the table "Form" and paste the preview URL in the second row. Make sure the URL is formatted as a hyperlink, not plain text, as illustrated below:
+1. Open a document file (For example, index file) to embed the form. Alternatively, you can create a new document.
+
+1. Move to the desired location within the document where you intend to add the form.
+
+1. To create a form block to render the form. Select Insert > Table, and create a one column, two row table. Name the table "Form" and paste the preview URL in the second row. Make sure the URL is formatted as a hyperlink, not plain text, as illustrated below:
 
     | Form  |
     |---|
-    | [https://main--portal--wkndforms.hlx.live/enquiry.json ](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
+    | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
+
+
+    ![Add Adaptive Forms Block to your webpage](/help/edge/assets/add-adaptive-forms-block.png)
 
     This block serves as a placeholder where the form is embedded. In the second row of the block, add the preview URL of your `<form>.json` file as a hyperlink. 
     
