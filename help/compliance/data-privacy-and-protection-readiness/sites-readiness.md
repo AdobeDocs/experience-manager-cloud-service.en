@@ -217,10 +217,10 @@ To clear the ContextHub persistence:
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
 
   // following call asks all currently loaded stores to clear their data
-  ContextHub.cleanAllStores();
+  ContextHub.cleanAllStores ();
 
   // following call asks all currently loaded stores to set back default values (provided in their configs)
-  ContextHub.resetAllStores();
+  ContextHub.resetAllStores ();
 
   ```
 
