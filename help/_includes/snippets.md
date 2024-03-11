@@ -48,8 +48,17 @@
 * [Submit to Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connect Adaptive Form to Salesforce application](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [Connect an Adaptive Form to Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## AEM Authoring with Edge Delivery Services Early Access {#aem-authoring-edge-early-access}
 
 [!BADGE EARLY-ACCESS TECHNOLOGY - Ask us about this feature from the AEM Sites labs on your Slack channel!]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEM authoring with Edge Delivery Services is an early-access technology."}
+
+## See also {#see-also-forms-eds}
+
+* [Form Components](/help/edge/docs/forms/form-components.md)
+* [Create and preview a form](/help/edge/docs/forms/create-forms.md)
+* [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
+* [Publish a form to sites page](/help/edge/docs/forms/publish-forms.md)
+* [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
+* [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
