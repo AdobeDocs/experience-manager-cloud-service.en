@@ -2,8 +2,8 @@
 title: Developer Getting Started Guide for AEM Authoring with Edge Delivery Services
 description: This guide will get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor for content authoring
 feature: Edge Delivery Services
+exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 ---
-
 # AEM Authoring with Edge Delivery Services {#edge-dev-getting-started}
 
 This guide will get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor for content authoring.
@@ -14,7 +14,7 @@ This guide will get you up-and-running with a new Adobe Experience Manager site 
 
 Before beginning this guide, you should already be familiar with the basics of and have access to Edge Delivery Services including:
 
-* You have completed the [Edge Delivery Service tutorial.](/help/edge/developer/tutorial.md)
+* You have completed the [Edge Delivery Servicestutorial.](/help/edge/developer/tutorial.md)
 * You have access to an [AEM Cloud Service sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * You have [enabled the Universal Editor on the same sandbox environment.](/help/implementing/universal-editor/getting-started.md)
 
