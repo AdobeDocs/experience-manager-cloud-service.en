@@ -398,10 +398,10 @@ To enable the CIF component, files must be edited and created.
         `${dataServicesStorefrontInstanceContext.store_url}catalogsearch/result`
       );
       // initialize store event after live-search
-      this._initMetrics();
+      this._initMetrics ();
     }
 
-    async _initMetrics() {
+    async _initMetrics () {
       //  Magento Store event
 
       // wait until script is magentoStorefrontEvents is found

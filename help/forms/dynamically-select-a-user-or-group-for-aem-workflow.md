@@ -70,7 +70,7 @@ The following sample ECMAScript dynamically selects an assignee for the [!DNL Ad
 >On using ECMAScript for [!DNL Adobe Sign], the script must be located in crx-repository at /apps/fd/workflow/scripts/adobesign/, and should have a function named getAdobeSignRecipients to return a list of the users.
 
 ```javascript
-function getAdobeSignRecipients() {
+function getAdobeSignRecipients () {
 
     var recipientSetInfos = new Packages.java.util.ArrayList();
 
@@ -93,10 +93,10 @@ function getAdobeSignRecipients() {
     email = "example@example.com";
     
     recipientInfo.setEmail(email);
-    recipientInfo.setSecurityOptions(securityOptions);
+    recipientInfo.setSecurityOptions (securityOptions);
     
     recipientInfoList.add(recipientInfo);
-    recipientInfoSet.setMemberInfos(recipientInfoList);
+    recipientInfoSet.setMemberInfos (recipientInfoList);
     recipientSetInfos.add(recipientInfoSet);
 
     return recipientSetInfos;
@@ -275,7 +275,7 @@ import org.apache.felix.scr.annotations.Service;
 
 @Component(metatype = false)
 public class DummyRecipientChoser implements RecipientInfoSpecifier {
-    public List<RecipientSetInfo> getAdobeSignRecipients(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
+    public List<RecipientSetInfo> getAdobeSignRecipients (WorkItem workItem, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
 
         List<RecipientSetInfo> recipientSetInfos = new ArrayList<RecipientSetInfo>();
 
@@ -299,11 +299,11 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
                 email = "example@example.com";
 
                 recipientInfo1.setEmail(email);
-                recipientInfo1.setSecurityOptions(securityOptions);
+                recipientInfo1.setSecurityOptions (securityOptions);
 
                 recipientInfoList.add(recipientInfo1);  //Add member
 
-                recipientInfoSet1.setMemberInfos(recipientInfoList);
+                recipientInfoSet1.setMemberInfos (recipientInfoList);
 
                 //Second Recipient
 
@@ -324,11 +324,11 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
                 RecipientInfo recipientInfo2  = new RecipientInfo();
                 recipientInfo2.setEmail(email);
-                recipientInfo2.setSecurityOptions(securityOptions);
+                recipientInfo2.setSecurityOptions (securityOptions);
 
                 recipientInfoList2.add(recipientInfo2);  //Add member
 
-                recipientInfoSet2.setMemberInfos(recipientInfoList2);
+                recipientInfoSet2.setMemberInfos (recipientInfoList2);
 
                 //*********************************
 
