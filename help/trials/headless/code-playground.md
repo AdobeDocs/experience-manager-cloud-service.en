@@ -58,7 +58,7 @@ On line 6, your publish host details were read from the `publishHost` query para
 You configure the AEM Headless Client on line 12:
 
 ```javascript
-const aemHeadlessClient = new AdobeAemHeadlessClientJs({
+const aemHeadlessClient = new AdobeAemHeadlessClientJs ({
   // Use a proxy to avoid CORS issues
   serviceURL: 'https://102588-505tanocelot.adobeioruntime.net/api/v1/web/aem/proxy',
   headers: {
