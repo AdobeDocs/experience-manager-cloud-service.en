@@ -10,11 +10,11 @@ exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 
 Once you are ready to share your form with your customers for data collection or submission, you can simply publish it, making the form readily available for your customers to use.
 
-![Document-based authoring ecosystem](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
+![Document-based Authoring  ecosystem](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
 
 ## Pre-requisites
 
-* The [Adaptive Form Block is enabled for your EDS project on GitHub](/help/edge/docs/forms/create-forms.md).
+* The [Adaptive Forms Block is enabled for your EDS project on GitHub](/help/edge/docs/forms/create-forms.md).
 * Your form is full tested and ready to use. 
 * Your [spreadsheet is configured](/help/edge/docs/forms/submit-forms.md) to accept data.
 
@@ -112,10 +112,6 @@ If you encounter an error resembling the following message, it indicates that th
 +++
 
 
-## See more
+## See also
 
-* [Create and preview a form](/help/edge/docs/forms/create-forms.md)
-* [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
-* [Publish a form to sites page](/help/edge/docs/forms/publish-forms.md)
-* [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
-* [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}
