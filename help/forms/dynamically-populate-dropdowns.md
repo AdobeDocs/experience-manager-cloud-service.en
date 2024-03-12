@@ -30,7 +30,7 @@ Consider a scenario where you want to populate the **State** drop-down list base
    ```java
    @Component(metatype = false)
    @Service(value = Servlet.class)
-   @Properties ({
+   @Properties({
            @Property(name = "sling.servlet.resourceTypes", value = "/apps/populatedropdown"),
            @Property(name = "sling.servlet.methods", value = {"GET", "POST"}),
            @Property(name = "service.description", value = "Populate states drop-down based on country value")

@@ -259,7 +259,7 @@ if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
         String formPath = slingRequest.getResource().getPath();
         String captchaData = slingRequest.getParameter(GuideConstants.GUIDE_CAPTCHA_DATA);
         if (!apiProvider.validateCAPTCHA(formPath, captchaData).isCaptchaValid()){
-            response.setStatus (400);
+            response.setStatus(400);
             return;
         }
     }

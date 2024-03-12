@@ -73,16 +73,20 @@ AEM Authoring provides a WYSIWYG interface (Adaptive Forms Editor) for building 
 
 In essence, [AEM Authoring](/help/forms/creating-adaptive-form-core-components.md) builds upon the foundation of [Document-based Authoring](/help/edge/docs/forms/create-forms.md), providing a more advanced toolkit for creating and managing complex forms. 
 
+>[!NOTE]
+>
+>
+> The AEM Authoring capability is available under the early-adopter program. If you are interested, send a quick email from your work address to aem-forms-ea@adobe.com to request access to the capability.
+
 ### AEM Forms Edge Delivery Services: Authoring. Publishing and Submission of Forms  
 
 The following diagrams illustrate the process of creating, publishing, and submitting forms using Document-based Authoring and AEM Authoring.
 
-
-
-
 ![Document-based Authoring ](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![AEM Authoring](/help/edge/assets/aem-authoring-workflow.png)
+
+
 
 
 ## Start creating forms
@@ -95,6 +99,17 @@ The following diagrams illustrate the process of creating, publishing, and submi
 * [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
 * [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 * [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
