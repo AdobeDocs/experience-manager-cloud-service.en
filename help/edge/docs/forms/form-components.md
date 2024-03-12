@@ -58,3 +58,6 @@ Each form component comes with various properties that allow you to control its 
 | Checked      | Checkbox, Radio              | Determines if the field is selected by default. The checked attribute is a boolean property used with checkbox and radio inputs. When set to true, it indicates that the field is selected by default when the form loads. |
 | Fieldset     | All                          | Groups fields to create visually distinct sections within a form. The fieldset element groups related fields within a form, visually separating them to improve organization and user experience. </br> To organize a set of fields within a fieldset, simply use the `fieldset` property and specify its name attribute. In the example below, we demonstrate how radio buttons are encapsulated within a single fieldset for better organization. ![Fieldset example](/help/edge/assets/fieldset-example.png) |
 
+## See also
+
+{{see-more-forms-eds}}

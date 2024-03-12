@@ -78,7 +78,7 @@ In essence, [AEM Authoring](/help/forms/creating-adaptive-form-core-components.m
 >
 > The AEM Authoring capability is available under the early-adopter program. If you are interested, send a quick email from your work address to aem-forms-ea@adobe.com to request access to the capability.
 
-### AEM Forms Edge Delivery Services: Authoring. Publishing and Submission of Forms  
+### AEM Forms Edge Delivery Services: Authoring, Publishing, and Submission of Forms  
 
 The following diagrams illustrate the process of creating, publishing, and submitting forms using Document-based Authoring and AEM Authoring.
 
