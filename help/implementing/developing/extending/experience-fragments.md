@@ -248,7 +248,7 @@ For example:
 ```java
 @Override
 public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
-    return experienceFragment.getPath().equals ("/content/experience-fragment/master");
+    return experienceFragment.getPath().equals("/content/experience-fragment/master");
 }
 ```
 

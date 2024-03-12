@@ -472,7 +472,7 @@ The following `LiveActionFactory` class implements a `LiveAction` that logs mess
       return null;
      }
      @Deprecated
-     public String[] getPropertiesNames () {
+     public String[] getPropertiesNames() {
       return null;
      }
      @Deprecated
