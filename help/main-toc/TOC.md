@@ -414,7 +414,7 @@ user-guide-title: AEM as a Cloud Service
     + [Micro-Frontend Asset Selector](/help/assets/asset-selector.md)
     + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
     + [Share assets](/help/assets/share-assets.md)
-    + [Repreocessing assets](/help/assets/reprocessing.md)
+    + [Reprocessing assets](/help/assets/reprocessing.md)
     + [Monitor activities and DAM tasks](/help/assets/assets-activity-history.md)
     + [Get started using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
     + [Add and upload assets](/help/assets/add-assets.md)
@@ -787,6 +787,7 @@ user-guide-title: AEM as a Cloud Service
   + [Developing for Edge Delivery](/help/edge/developing.md)
   + [Content Modeling](/help/edge/content-modeling.md)
   + [Creating Blocks](/help/edge/create-block.md)
+  + [Tabular Data and Spreadheets](/help/edge/tabular-data.md)
   + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
   + Building Edge Delivery Applications {#build}
     + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
@@ -817,6 +818,7 @@ user-guide-title: AEM as a Cloud Service
   + Building Edge Delivery Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
     + Get Started {#getting-started-eds-forms}
+      + [Getting Started](/help/edge/docs/forms/tutorial.md)
       + [Create and preview a form](/help/edge/docs/forms/create-forms.md)
       + [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
       + [Publish a form to sites page](/help/edge/docs/forms/publish-forms.md)

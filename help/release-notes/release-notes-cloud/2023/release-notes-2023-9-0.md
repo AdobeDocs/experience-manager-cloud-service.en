@@ -50,7 +50,7 @@ You can now assign metadata form to a specific folder within your deployment. Al
 
 ### New features in Admin view {#admin-view-features}
 
-* **Integrate AEM Assets as a Cloud Service with document-based authoring for Edge Delivery Services**: Integrate AEM Assets with document-based authoring for Edge Delivery Services to enable website authors to [use images available in AEM Assets repositories while authoring documents in Microsoft Word or Google Docs](/help/edge/using.md#integrate-assets-edge).
+* **Integrate AEM Assets as a Cloud Service with Document-based Authoring  for Edge Delivery Services**: Integrate AEM Assets with Document-based Authoring  for Edge Delivery Services to enable website authors to [use images available in AEM Assets repositories while authoring documents in Microsoft Word or Google Docs](/help/edge/using.md#integrate-assets-edge).
 
 * **Extract ZIP archives**: Ability to select ZIP archives that are managed in Experience Manager and [extracting the files directly into Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) without downloading them.
 
