@@ -1,12 +1,12 @@
 ---
-title: Configure thank you page or redirect form after submission
+title: Show a custom thank you message after form submission
 description: Learn how to configure thank you pages and redirection for Forms Block to optimize user experience and streamline user journeys.
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
 ---
-# Show the thank you page or redirect form after submission
+# Show a custom thank you message after form submission
 
 After a user submits a form, it's crucial to provide a seamless experience through a thank you message. This not only confirms successful submission but also enhance user satisfaction and guide them further in their journey.
 
