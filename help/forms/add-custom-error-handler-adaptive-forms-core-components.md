@@ -240,14 +240,14 @@ Let's add the following code to the JavaScript file to display the response and 
         * @errorHandler
         */
         function customErrorHandler(response, headers, globals)
-        {
-            console.log("Custom Error Handler processing start...");
-            console.log("response:"+JSON.stringify(response));
-            console.log("headers:"+JSON.stringify(headers));
-            alert("CustomErrorHandler - Enter valid PetId.")
-            globals.invoke('defaultErrorHandler',response, headers) 
-            console.log("Custom Error Handler processing end...");
-        }
+    {
+        console.log("Custom Error Handler processing start...");
+        console.log("response:"+JSON.stringify(response));
+        console.log("headers:"+JSON.stringify(headers));
+        alert("CustomErrorHandler - Enter valid PetId.")
+        console.log("Custom Error Handler processing end...");
+        return true; // true - call default error handler, false - don't call default error handler.
+    }
     ```
     
     >[!NOTE]
