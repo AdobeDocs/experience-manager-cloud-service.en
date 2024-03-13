@@ -249,22 +249,23 @@ Let's add the following code to the JavaScript file to display the response and 
         return true; // true - call default error handler, false - don't call default error handler.
     }
     ```
-    
+    In the code above, `return true` invokes the default error handler automatically. To prevent the default error handler from being called by default, include `return false`.
+
     >[!NOTE]
     >
     > In the `.content.xml` file, add `categories = [custom-errorhandler-name]`. For example, in this case, [custom-errorhandler-name] is provided as `customfunctionsdemoV2`.
 
 
 1. Save the `function.js` file.
-1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
-1. Add a text file as `js.txt`. The file contains:
+2. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
+3. Add a text file as `js.txt`. The file contains:
   
     ```javascript
         #base=js
         functions.js
     ```
 
-1. Save the `js.txt` file.    
+4. Save the `js.txt` file.    
 The created folder structure looks like:
 
     ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) 
