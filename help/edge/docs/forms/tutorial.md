@@ -12,12 +12,9 @@ In today's digital age, creating user-friendly forms is essential for any organi
 
 These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft SharePoint to easily process submitted data or to initiate an existing business workflow.
 
-AEM Forms provide a block, known as Adaptive Forms Block, to help you easily create forms to capture and store captured data. You can create a new AEM project pre-configured with Adaptive Forms Block or add the Adaptive Forms Block to an existing AEM project. 
+AEM Forms provide a block, known as Adaptive Forms Block, to help you easily create forms to capture and store captured data. You can [create a new AEM project pre-configured with Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project). 
 
-This AEM Forms tutorial guides you through creating, previewing, and publishing your own custom form with a new Adobe Experience Manager (AEM) Forms project. You will also learn to add Adaptive Forms Block to an existing AEM project.  
-
-* **[Create a new AEM project pre-configured with Adaptive Forms Block](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**  
-* **[Add Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-an-existing-eds-project)** 
+This AEM Forms tutorial guides you through creating, previewing, and publishing your own custom form with a new Adobe Experience Manager (AEM) Forms project.
 
 
 
@@ -73,11 +70,11 @@ The AEM Forms Boilerplate template gets you started quickly with an AEM project 
 
 ### Link your own content source
 
-Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
+Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
 ![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)
 
-To copy the sample content to your own content folder and point youur GitHub repository to your own content folder:  
+To copy the sample content to your own content folder and point your GitHub repository to your own content folder:  
 
 1. Create a new folder specifically for your AEM content in Google Drive or Microsoft SharePoint. This document uses a folder created on Microsoft SharePoint.
 
@@ -122,7 +119,7 @@ To copy the sample content to your own content folder and point youur GitHub rep
 
         ```HTML
 
-        https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+        https://<tenant>.SharePoint.com/sites/<sp-site>/Shared%20Documents/<folder-name>
 
         ```
 
@@ -154,7 +151,7 @@ After completing the last step, your new content source isn't empty, but it won'
 
 To preview unpublished content: 
 
-1. Install the Chrome extension called [ AEM Sidekick](https://chrome.google.com/webstore/detail/helix-sidekick-beta/ccfggkjabjahcjoljmgmklhpaccedipo). 
+1. Install the Chrome extension called [AEM Sidekick](https://chrome.google.com/webstore/detail/helix-sidekick-beta/ccfggkjabjahcjoljmgmklhpaccedipo). 
 
     ![Install AEM SideKick](/help/edge/assets/install-aem-sidekick.png)
 
@@ -193,8 +190,6 @@ To preview unpublished content:
     `https://<branch>--<repo>--<owner>.hlx.page/enquiry` URL. 
 
     For example, if your project's repository is named "wefinance", it's located under the account owner "wkndforms", and you're using the "main" branch, the URL is: 
-    
-    
 
     [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).  
 
@@ -281,9 +276,16 @@ Congratulations! You've successfully set up your local development environment a
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-If you have an existing AEM Project, you can integrate the Adaptive Forms Block into your current project to get started on form creation. To Integrate:
+If you have an existing AEM Project, you can integrate the Adaptive Forms Block into your current project to get started on form creation. 
 
-1. Clone the Adaptive Forms Block repository: https://github.com/adobe-rnd/aem-boilerplate-forms to your computer. 
+>[!NOTE]
+>
+>
+> This step applies to projects built with the [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). If you created your AEM project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
+
+To Integrate:
+
+1. Clone the Adaptive Forms Block repository: [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) to your computer. 
 
 1. Inside the downloaded folder, find the `blocks/form` folder. Copy this folder. Now, navigate to your AEM project's local `blocks` folder and paste the copied form folder here.
 
