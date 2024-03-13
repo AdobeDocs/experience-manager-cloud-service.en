@@ -99,6 +99,7 @@ Summarized below are the continuous improvements for maintenance release 15262, 
 * ASSETS-35923: `UnsupportedClassVersionError` in CM pipeline Build step after upgrading `aem-sdk-api` version to `2024.2.15262.20240224T002940Z-231200`. **Requires customer action to Set CM Java Version to 11**, see [Build Environment / Setting the Maven JDK Version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
 * ASSETS-35860: Incorrect Time Zone Conversion in AEM Assets Column View.
 * SCRNS-4171: Windows Screens go blank and stop working when upgrading to 15262 and publishing a channel.
+* GRANITE-50774: GraniteContent should use deterministic order of property-values at init time.
 
 ### Change Notice {#change-notice-15262}
 
