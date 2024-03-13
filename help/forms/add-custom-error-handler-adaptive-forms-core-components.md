@@ -258,7 +258,7 @@ Let's add the following code to the JavaScript file to display the response and 
 
 1. Save the `function.js` file.
 1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
-3. Add a text file as `js.txt`. The file contains:
+1. Add a text file as `js.txt`. The file contains:
   
     ```javascript
         #base=js
