@@ -15,6 +15,8 @@ These forms submit data directly to a Microsoft Excel or Google Sheets file, ena
 ![Document-based Authoring  ecosystem](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 
+![VIDEO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
+
 
 
 ## Prerequisites

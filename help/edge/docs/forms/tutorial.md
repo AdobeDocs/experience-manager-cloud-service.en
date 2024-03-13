@@ -119,7 +119,7 @@ To copy the sample content to your own content folder and point your GitHub repo
 
         ```HTML
 
-        https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+        https://<tenant>.SharePoint.com/sites/<sp-site>/Shared%20Documents/<folder-name>
 
         ```
 
@@ -278,7 +278,7 @@ Congratulations! You've successfully set up your local development environment a
 
 If you have an existing AEM Project, you can integrate the Adaptive Forms Block into your current project to get started on form creation. 
 
->![NOTE]
+>[!NOTE]
 >
 >
 > This step applies to projects built with the [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). If you created your AEM project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
