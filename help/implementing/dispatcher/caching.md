@@ -435,7 +435,7 @@ public class InvalidatedHandler implements EventHandler {
 
         String distributionType = (String) event.getProperty(DISTRIBUTION_TYPE);
 
-        if (INVALIDATE.name().equals (distributionType)) {
+        if (INVALIDATE.name().equals(distributionType)) {
             boolean isLeader = discoveryService.getTopology().getLocalInstance().isLeader();
             // process the OSGi event on the leader author instance
             if (isLeader) {
@@ -474,11 +474,11 @@ The flush agent can typically be triggered by custom code based on OSGi events o
 
 ```
 String[] paths = …
-ReplicationOptions options = new ReplicationOptions ();
-options.setSynchronous (true);
+ReplicationOptions options = new ReplicationOptions();
+options.setSynchronous(true);
 options.setFilter( new AgentFilter {
   public boolean isIncluded (Agent agent) {
-   return agent.getId().equals ("flush");
+   return agent.getId().equals("flush");
   }
 });
 
