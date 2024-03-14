@@ -227,12 +227,13 @@ AEM Forms as a Cloud Services provides a docker-based SDK environment for easier
 
     * Linux&reg; or Apple macOS 
     
-    ```Shell
+        ```Shell
 
-        export AEM_HOME=[local AEM Author installation]
-        ./sdk.sh start
+        % export AEM_HOME=[local AEM Author installation]
+        % ./sdk.sh start
     
-    ```
+        ```
+
 
     >[!NOTE]
     >
