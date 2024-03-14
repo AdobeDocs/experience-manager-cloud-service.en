@@ -2,11 +2,9 @@
 title: Prepare your spreadsheet to accept data
 description: Craft powerful forms faster using spreadsheets & Adaptive Forms Block Fields!
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 ---
-# Prepare your spreadsheet to accept data 
+# Set up your Google Sheets or Microsoft Excel files to start accepting data
 
 
 Once you've [created and previewed the form](/help/edge/docs/forms/create-forms.md), it's time to enable the corresponding spreadsheet to start receiving data. You can manually enable the spreadsheet to accept data or use Admin APIs to enable a spreadsheet to accept data.
