@@ -36,10 +36,13 @@ To enable the caching of persisted queries, define the Dispatcher variable `CACH
 >
 >When Dispatcher caching is enabled for persisted queries by using `Define CACHE_GRAPHQL_PERSISTED_QUERIES` an `ETag` header is added to the response by the Dispatcher.
 >
->By default the `ETag` header is configured with the following directive:
+>To enable `Etag` header computation on the cached persisted queries, the following configuration has to be added to the Dispatcher virtual host configuration (if it does not already exist):
 >
->```
->FileETag MTime Size 
+>```xml
+><Directory />
+>  ...
+>  FileETag Digest
+></Directory> 
 >```
 >
 >However, this setting can cause issues when used on the persisted query responses, because it does not account for small changes in the response.
