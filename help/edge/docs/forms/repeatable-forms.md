@@ -2,17 +2,13 @@
 title: Add repeatable sections to a form
 description: Add repeatable sections to an EDS form
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
 ---
-# Add repeatable sections to a Form
+# Add repeatable sections to a form
 
 Adaptive Forms Block provides the capability to add or make a section or a component of a form repeatable. This allows users to enter information multiple times for the same type of data, making it easier to collect information like work experience or educational background.
 
 For example, consider a form used to collect information about a person's work experience. You may have a repeatable section for capturing details of each previous job. The repeatable section would typically contain fields such as company name, job title, dates of employment, and job responsibilities. The user can add multiple instances of the repeatable section to enter information about each job they have held.
-
-
 
 By the end of this article, you learn to:
 
