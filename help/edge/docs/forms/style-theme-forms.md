@@ -4,19 +4,20 @@ description: Customize theme and style for an AEM Forms Edge Delivery ServicesFo
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 ---
-# Styling Form Fields 
+
+# Customize the look of your forms
 
 Forms are crucial for user interaction on websites, allowing them to input data. You can use Cascading Style Sheets (CSS) to style fields of a form, enhancing the visual presentation of your forms, and improving the user experience. 
 
-The Adaptive Forms Block produces a consistent structure for all form fields. The consistent structure makes it easier to develop CSS selectors to select and style form fields based on field type and field names. 
+The Adaptive Forms Block produces a consistent structure for all form fields. The consistent structure makes it easier to develop CSS Selectors to select and style form fields based on field type and field names. 
 
-This document outlines the HTML Structure for various form components, helps you build an understanding of how to create CSS selectors for various form fields to style form fields of an Adaptive Forms Block. 
+This document outlines the HTML Structure for various form components, helps you build an understanding of how to create CSS Selectors for various form fields to style form fields of an Adaptive Forms Block. 
 
 By the end of the article:
 
 * You build an understanding of the structure of the default CSS file included with Adaptive Forms Block. 
 * You build an understanding the HTML structure of form components provided by the Adaptive Forms Block, including general components and specific components like dropdowns, radio groups, and checkbox groups.
-* You learn how to style form fields based on field type and field names using CSS selectors, allowing for consistent or unique styling based on requirements.
+* You learn how to style form fields based on field type and field names using CSS Selectors, allowing for consistent or unique styling based on requirements.
 
 
 ## Understanding Form Field Types
@@ -33,7 +34,7 @@ Before diving into styling, let's review the common form [field types](/help/edg
 
 Understanding [fundamental CSS concepts](https://www.w3schools.com/css/css_intro.asp) is crucial before styling specific form fields:
 
-* [Selectors](https://www.w3schools.com/css/css_selectors.asp): CSS selectors allow you to target specific HTML elements for styling. You can use element selectors, class selectors, or ID selectors.
+* [Selectors](https://www.w3schools.com/css/css_selectors.asp): CSS Selectors allow you to target specific HTML elements for styling. You can use element selectors, class selectors, or ID selectors.
 * [Properties](https://www.w3schools.com/css/css_syntax.asp): CSS properties define the visual appearance of elements. Common properties for styling form fields include color, background-color, border, padding, margin, and more.
 * [Box Model](https://www.w3schools.com/css/css_boxmodel.asp): The CSS box model describes the structure of HTML elements as a content area surrounded by padding, borders, and margins.
 * Flexbox/Grid: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) and [Grid layouts](https://www.w3schools.com/css/css_grid.asp) are powerful tools for creating responsive and flexible designs.
@@ -83,7 +84,7 @@ All form fields, except for dropdowns, radio groups, and checkbox groups, has th
 
 ```
 
-* Classes: The div element has several classes for targeting specific elements and styling. You require the `{Type}-wrapper` or `field-{Name}` classes to develop a CSS selector to style a form field:
+* Classes: The div element has several classes for targeting specific elements and styling. You require the `{Type}-wrapper` or `field-{Name}` classes to develop a CSS Selector to style a form field:
    * {Type}: Identifies the component by field type. For example, text (text-wrapper), number (number-wrapper), date (date-wrapper).
    * {Name}: Identifies the component by name. The name of the field can have only alphanumeric characters, the multiple consecutive dashes in the name are replaced with a single dash `(-)`, and starting and ending dashes in a field name are removed. For example, first-name (field-first-name field-wrapper).
    * {FieldId}: It is unique identifier for the field, automatically generated.
@@ -142,7 +143,7 @@ All form fields, except for dropdowns, radio groups, and checkbox groups, has th
   
   
   
-  **Example CSS selectors for General Components**
+  **Example CSS Selectors for General Components**
   
   ```CSS
   
@@ -207,9 +208,9 @@ For dropdown menus, the `select` element is used instead of an `input` element:
 
 +++ 
 
-+++ CSS selectors for drop-down component
++++ CSS Selectors for dropdown component
 
-The following CSS lists some example CSS selectors for drop-down components.
+The following CSS lists some example CSS Selectors for dropdown components.
 
 ```CSS
 
@@ -271,7 +272,7 @@ The following CSS lists some example CSS selectors for drop-down components.
 
 Similar to dropdown components, radio groups have their own HTML structure and CSS structure:
 
-+++ Radio Group HTML Structure 
++++ HTML Structure of Radio Group 
 
 ```HTML
 
@@ -314,7 +315,7 @@ Similar to dropdown components, radio groups have their own HTML structure and C
 
 +++
 
-+++ CSS selectors for drop-down component
++++ CSS Selectors for Radio Groups
 
 * Targeting the Fieldset
 
@@ -356,7 +357,7 @@ This selector targets any fieldset with the class radio-group-wrapper. This woul
 
 ### Checkbox Groups
 
-+++ Checkbox Group HTML Structure 
++++ HTML Structure of Checkbox Group 
 
 ```HTML
 
@@ -397,7 +398,7 @@ This selector targets any fieldset with the class radio-group-wrapper. This woul
 
 +++
 
-+++ Example CSS selectors for radio and checkbox groups**
++++ CSS Selectors for checkbox groups
 
 * Targeting the Outer Wrapper: These selectors target the outermost containers of both radio and checkbox groups, allowing you to apply general styles to the entire group structure. This is useful for setting spacing, alignment, or other layout-related properties.
 
@@ -868,9 +869,10 @@ You can style form fields based on their specific type (`{Type}-wrapper`) or ind
 
 ### Styling Based on Field Type
 
-You can use CSS selectors to target specific field types and apply styles consistently. 
+You can use CSS Selectors to target specific field types and apply styles consistently. 
 
-**HTML Structure**
++++ HTML Structure
+
 ```HTML
 
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -913,8 +915,10 @@ You can use CSS selectors to target specific field types and apply styles consis
 * Each field has a corresponding label, input element, and potential additional elements like placeholders and descriptions.
 
 
++++ 
 
-**Example CSS Selectors**
+
++++ Example CSS Selectors
 
 ```CSS
 
@@ -932,13 +936,13 @@ You can use CSS selectors to target specific field types and apply styles consis
 
 ```
 
-
++++
 
 ### Styling Based on Field name
 
 You can also target individual fields by name to apply unique styles. 
 
-**HTML Structure**
++++ HTML Structure
 
 ```HTML
 
@@ -967,7 +971,9 @@ You can also target individual fields by name to apply unique styles.
 
 ```
 
-**Example CSS Selector**
++++ 
+
++++ Example CSS Selector
 
 ```CSS
 
@@ -978,7 +984,11 @@ You can also target individual fields by name to apply unique styles.
 
 ```
 
+
+
 This CSS targets all input elements that are located within an element that has the class `field-otp`. Your form's HTML structure follows conventions of the Adaptive Forms Block, this implies there's a container marked with the class "field-otp" holds the field with the name "otp".
+
++++ 
 
 ## See also
 
