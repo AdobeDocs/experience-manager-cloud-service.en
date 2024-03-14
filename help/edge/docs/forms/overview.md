@@ -26,7 +26,7 @@ For example, you author forms directly in Microsoft Excel or Google Sheets and t
 
 The following diagram illustrates how you can edit forms in Microsoft Excel or Google Sheets (Document-based Authoring) and publish to Edge Delivery Services. It also shows the AEM publishing method using the Adaptive Forms Editor (AEM Authoring).
 
-![Edge Delivery Architecture](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
+![Publish to Edge Delivery Services and AEM](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
 AEM Forms Edge Delivery Services uses GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write forms in either [Google Sheets](/help/edge/docs/forms/create-forms.md) or [Microsoft Excel](/help/edge/docs/forms/create-forms.md) and the components of your forms can be developed by using CSS and JavaScript in a GitHub repository.
 
