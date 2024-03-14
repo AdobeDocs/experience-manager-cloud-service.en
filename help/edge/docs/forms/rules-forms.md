@@ -6,5 +6,15 @@ hide: yes
 hidefromtoc: yes
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 ---
-# Use rules to add dynamic behaviour to a form
+# Use rules in Adaptive Form Block to add dynamic behaviour to a form
+
+One of the significant advantages of authoring forms in a spreadsheet is the ability to use the functions to create rules which can be used for conditional display fields and automated value calculations based on user inputs. In this tutorial, we'll enhance our basic form created using the Authoring Form article to demonstrate two key functionalities:
+
+In this tutorial, we'll extend our basic form created using the Authoring Form article to showcase two essential functionalities:
+
+Visibility Expression: Show the Email field only when the user selects the subscribe checkbox.
+
+Value Expression: Automatically calculate the estimated amount for the trip based on the specified number of days (start and end date) and room budget.
+
+
 
