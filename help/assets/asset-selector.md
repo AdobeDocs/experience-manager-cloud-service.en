@@ -77,7 +77,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ## Integrate Asset Selector using Vanilla JS {#integration-using-vanilla-js}
 
-You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] repository and select assets from within the application. See [Asset Selector Integration with various applications](#asset-selector-integration-with-apps)
+You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] repository and select assets from within the application. See [Asset Selector Integration with various applications](#asset-selector-integration-with-apps).
 
 The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. Edit an `index.html` or any appropriate file within your application to:
 
@@ -418,7 +418,7 @@ You can define the Asset Selector [properties](#asset-selector-properties) in th
 
    ![rail-view-example](assets/rail-view-example-vanilla.png)
 
-If the value of the AssetSelector `rail` is set to `false` or is not mentioned in the properties, Asset Selector displays in the Modal view by default. The `acvConfig` property is used to enable rail view of asset viewer. [Visit enable or disable drag and drop](#enable-disable-drag-and-drop) to understand the usage of `acvConfig` property.
+If the value of the AssetSelector `rail` is set to `false` or is not mentioned in the properties, Asset Selector displays in the Modal view by default. The `acvConfig` property is used to enable rail view of asset viewer. Visit [enable or disable drag and drop](#enable-disable-drag-and-drop) to understand the usage of `acvConfig` property.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
