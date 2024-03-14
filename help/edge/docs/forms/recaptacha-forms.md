@@ -36,7 +36,7 @@ After configuring the Google reCAPTCHA secret and site keys, proceed to modify t
     >
     > The project configuration file is a spreadsheet located at `/.helix/config`. In case the file does not exist, create it with the same name.
 
-2. Open the `config` file and add the following key and value pairs:
+1. Open the `config` file and add the following key and value pairs:
 
     * **captcha.secret**: Google reCAPTCHA secret key value
     * **captcha.type**: reCAPTCHA v2
@@ -49,9 +49,9 @@ After configuring the Google reCAPTCHA secret and site keys, proceed to modify t
     >
     >  You can retrieve the reCAPTCHA keys from the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
 
-3.  Make sure to preview and publish the `config` file using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
+1.  Make sure to preview and publish the `config` file using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
 
- ## Add reCAPTCHA site key in the form definition{#add-site-key}
+## Add reCAPTCHA site key in the form definition{#add-site-key}
 
 In the form definition, users are required to insert a row in a spreadsheet to incorporate new field as CAPTCHA, along with its corresponding value. To add new field as CAPTCHA in a spreadsheet:
 
@@ -69,7 +69,7 @@ In the form definition, users are required to insert a row in a spreadsheet to i
     >
     >  You can retrieve the reCAPTCHA keys from the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
 
-2. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview and publish the sheet. 
+1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview and publish the sheet. 
 You can refer to the [spreadsheet](/help/forms/assets/recaptcha-enquiry.xlsx) that includes the form definition for an enquiry form.
 
 After adding new row in the form definition, a reCAPTCHA badge appears at the bottom-right corner of the form. This ensures that the form is now protected from fraudulent activities, spam, and misuse.
