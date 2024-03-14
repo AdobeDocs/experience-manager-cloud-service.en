@@ -475,7 +475,7 @@ public class MyCustomHandler extends AbstractResourceHandler {
   */
  @Nonnull
  @Override
- public String[] getSupportedResourceTypes () {
+ public String[] getSupportedResourceTypes() {
      return new String[] { … };
  }
 

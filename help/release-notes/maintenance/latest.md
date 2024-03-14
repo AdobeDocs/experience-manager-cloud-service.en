@@ -15,11 +15,7 @@ Summarized below are the continuous improvements for maintenance release X, whic
 
 ### Enhancements {#enhancements-X}
 
-#### `UnsupportedClassVersionError` in CM pipeline Build step after upgrading `aem-sdk-api` version to `2024.2.15262.20240224T002940Z-231200`
-
-The new version of the aem-sdk-api contains classes compiled with a Java 11 target, which is not compatible with the Cloud Manager Build environment default JDK version 1.8. This update requires that Maven is executed using JDK 11.
-
-Customers are advised to add a `.cloudmanager/java-version` file to the root of their git repo with the contents: `11`. [Build Environment / Setting the Maven JDK Version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
+None.
 
 ### Fixed Issues {#fixed-issues-X}
 
