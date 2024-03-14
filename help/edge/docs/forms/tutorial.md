@@ -2,8 +2,6 @@
 title: Getting Started with AEM Forms Edge Delivery Services - Developer Tutorial 
 description: This tutorial helps get you up-and-running with a new Adobe Experience Manager Forms (AEM) project. In ten to twenty minutes, you will have created your own forms.s
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
 ---
 
 # Getting Started - Developer Tutorial 
