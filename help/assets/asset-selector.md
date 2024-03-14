@@ -30,6 +30,20 @@ Asset Selector provides many benefits, such as:
 3. [Use Asset Selector](#using-asset-selector)
 -->
 
+<!--
+## Setting up Asset Selector {#asset-selector-setup}
+
+![Asset Selector set up](assets/asset-selector-prereqs.png)
+-->
+
+## Prerequisites{#prereqs}
+
+You must ensure the following communication methods:
+
+* The application is running on HTTPS.
+* The URL of the application in the IMS client's allowed list of redirect URLs.
+* The IMS login flow is configured and rendered using a popup on the web browser. Therefore, popups should be enabled or allowed on the target browser.
+
 ## Installation {#installation}
 
 Asset Selector is available via both ESM CDN (For example, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) and [UMD](https://github.com/umdjs/umd) version.
@@ -65,7 +79,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 You can integrate any [!DNL Adobe] or non-Adobe application with [!DNL Experience Manager Assets] repository and select assets from within the application. See [Asset Selector Integration with various applications](#asset-selector-integration-with-apps)
 
-The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. You need to edit an `index.html` or any appropriate file within your application to:
+The integration is done by importing the Asset Selector package and connecting to the Assets as a Cloud Service using the Vanilla JavaScript library. Edit an `index.html` or any appropriate file within your application to:
 
 * Define the authentication details
 * Access the Assets as a Cloud Service repository
@@ -82,7 +96,6 @@ You can integrate Asset Selector with various applications such as:
 
 * [Integrate Asset Selector with an [!DNL Adobe] application](#adobe-app-integration-vanilla)
 * [Integrate Asset Selector with a non-Adobe application](#adobe-non-app-integration)
-* [Integrate Asset Selector with New Dynamic Media API](#adobe-app-integration-polaris)
 
 >[!BEGINTABS]
 
@@ -94,6 +107,7 @@ You can integrate Asset Selector with various applications such as:
 
 Use the following prerequisites if you are integrating Asset Selector with an [!DNL Adobe] application:
 
+* [Communication methods](#prereqs)
 * imsOrg
 * imsToken
 * apikey
@@ -238,6 +252,7 @@ console.log("onErrorReceived", type, msg);
 
 Use the following prerequisites if you are integrating Asset Selector with a non-Adobe application:
 
+* [Communication methods](#prereqs)
 * imsClientId
 * imsScope
 * redirectUrl
@@ -361,50 +376,6 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 >
 >If you have integrated Asset Selector using Sign up Sign In workflow but still unable to access the delivery repository, ensure that browser cookies are cleaned up. Otherwise, you end up getting `invalid_credentials All session cookies are empty` error in the console.
 
-+++
-
-<!--Integration with Polaris application content starts here-->
-
->[!TAB Integration with New Dynamic Media API]
-
-### Prerequisites {#prereqs-polaris}
-
-Use the following prerequisites if you are integrating Asset Selector with a new Dynamic Media API:
-
-* To access new Dynamic Media APIs, you must have licences for:
-    * AEM Assets as a Cloud Service
-    * AEM Dynamic Media
-* [Approved assets](#approved-assets.md)
-
-### Integrate Asset Selector with New Dynamic Media API {#adobe-app-integration-polaris}
-
-The `rootPath` and `path` properties are restricted in the New Dynamic Media API. Instead, you can configure the `aemTierType` property. Following is the syntax of configuration:
-
-```
-aemTierType:[1: "delivery"]
-```
-
-+++**New Dynamic Media API user interface**
-
-The New Dynamic Media API allows you to view approved assets.
-
-![New Dynamic Media API UI](assets/polaris-ui.png)
-
-* **A**: [Hide/Show panel](#hide-show-panel)
-* **B**: [Assets](#repository)
-* **C**: [Sorting](#sorting)
-* **D**: [Filters](#filters)
-* **E**: [Search bar](#search-bar)
-* **F**: [Sorting in ascending or descending order](#sorting)
-* **G**: [Cancel Selection](#cancel-selection)
-* **H**: [Select single or multiple assets](#select-assets)
-
-+++
-
-+++**Configure custom filters**
-Asset Selector allows you to configure filters based upon your required customization. You can configure properties that are defined at `jcr:content/metadata/` are exposed under `metadata.embedded.<propertyname>`. You need to define mapping under `filterSchema`property. For example, a property on asset `jcr:content/metadata/pmi:market` available as `metadata.embedded.pmi:market for filter configuration`
-+++
-
 >[!ENDTABS]
 
 ## Asset Selector properties {#asset-selector-properties}
@@ -422,8 +393,8 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 | *filterSchema* | array | No | | Model that is used to configure filter properties. This is useful when you want to limit certain filter options in Asset Selector.|
 | *filterFormProps*| Object | No | | Specify the filter properties that you need to use to refine your search. For example, MIME type JPG, PNG, GIF. |
 | *selectedAssets* | Array `<Object>` | No       |                 | Specify selected Assets when the Asset Selector is rendered. An array of objects is required that contains an id property of the assets. For example, `[{id: 'urn:234}, {id: 'urn:555'}]` An asset must be available in the current directory. If you need to use a different directory, provide a value for the `path` property as well. |
-| *acvConfig* | Object | No | | Asset Collection View property that contains object containing custom configuration to override defaults. |
-| *i18nSymbols*            | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No       |                 | If the OOTB translations are insufficient for your application's needs, you can expose an interface through which you can pass your own custom localized values through the `i18nSymbols` prop. Passing a value through this interface overrides the default translations provided and instead use your own.  To perform the override, you must pass a valid [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) object to the key of `i18nSymbols` that you want to override. |
+| *acvConfig* | Object | No | | Asset Collection View property that contains object containing custom configuration to override defaults. Also, this property is used with `rail` property to enable rail view of assets viewer.|
+| *i18nSymbols*            | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No       |                 | If the OOTB translations are insufficient for your application's needs, you can expose an interface through which you can pass your own custom-localized values through the `i18nSymbols` prop. Passing a value through this interface overrides the default translations provided and instead use your own. To perform the override, you must pass a valid [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) object to the key of `i18nSymbols` that you want to override. |
 | *intl* | Object | No  | | Asset Selector provides default OOTB translations. You can select the translation language by providing a valid locale string through the `intl.locale` prop. For example: `intl={{ locale: "es-es" }}` </br></br> The locale strings supported follow the [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) for the representation of names of languages standards. </br></br> List of supported locales: English - 'en-us' (default) Spanish - 'es-es' German - 'de-de' French - 'fr-fr' Italian - 'it-it' Japanese - 'ja-jp' Korean - 'ko-kr' Portuguese - 'pt-br' Chinese (Traditional) - 'zh-cn' Chinese (Taiwan) - 'zh-tw' |
 | *repositoryId* | string | No | ''| Repository from where the Asset Selector loads the content. |
 | *additionalAemSolutions* | `Array<string>` | No | [ ] | It lets you add a list of additional AEM repositories. If no information is provided in this property, then only media library or AEM Assets repositories are considered.|
@@ -437,7 +408,7 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 | *onFilterSubmit* | Function | No | | Invoked with filter items as user changes different filter criteria. |
 | *selectionType* | string | No | single | Configuration for `single` or `multiple` selection of assets at a time. |
 | *dragOptions.allowList* | boolean | No | | The property is used to allow or deny the dragging of assets that are not selectable. |
-| *aemTierType* | string | No | | It allows you to select whether you want to show assets from delivery tier, author tier, or both. Note: The use of `aemTierType` property is restricted in New Dynamic Media API application. Syntax of `aemTierType` property: `aemTierType:[0: "author" 1: "delivery"` For example, if both `["author","delivery"]` are used, then the repository switcher displays options for both author and delivery if the New Dynamic Media API is enabled and accessible on the environment. Additionally, if `["delivery"]` is used, the repository switcher displays only delivery-related assets. |
+| *aemTierType* | string | No | | It allows you to select whether you want to show assets from delivery tier, author tier, or both. <br><br> Syntax: `aemTierType:[0: "author" 1: "delivery"` <br><br> For example, if both `["author","delivery"]` are used, then the repository switcher displays options for both author and delivery. |
 
 ## Examples to use Asset Selector properties {#usage-examples}
 
@@ -465,7 +436,7 @@ Use various properties to define metadata of an asset that you want to view usin
 
 ### Example 3: Custom filter property in rail view
 
-In addition to the faceted search, Assets Selector lets you customize various attributes to refine your search from [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application. You need to add the following code to add customized search filters in your application. In the example below, the `Type Filter` search that filters the asset type among Images, Documents, or Videos or the filter type that you have added for the search.
+In addition to the faceted search, Assets Selector lets you customize various attributes to refine your search from [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application. Add the following code to add customized search filters in your application. In the example below, the `Type Filter` search that filters the asset type among Images, Documents, or Videos or the filter type that you have added for the search.
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
