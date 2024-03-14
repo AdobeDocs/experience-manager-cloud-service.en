@@ -9,7 +9,7 @@ exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 # Prepare your spreadsheet to accept data 
 
 
-Once you've [created and previewed the form](/help/edge/docs/forms/create-forms.md), it's time to enable the corresponding spreadsheet to start receiving data. 
+Once you've [created and previewed the form](/help/edge/docs/forms/create-forms.md), it's time to enable the corresponding spreadsheet to start receiving data. You can manually enable the spreadsheet to accept data or use Admin APIs to enable a spreadsheet to accept data.
 
 ![Document-based Authoring  ecosystem](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -18,7 +18,10 @@ Once you've [created and previewed the form](/help/edge/docs/forms/create-forms.
 
 -->
 
-To enable the spreadsheet: 
+
+## Manually enable the spreadsheet to accept data
+
+To enable the spreadsheet to accept data
 
 1. Open the spreadsheet that has your form and append a new sheet, renaming it to `incoming`.
 
@@ -55,8 +58,7 @@ Once sheet is  set up to receive data, you can [preview the form using Adaptive 
  >
  >  Never should the "shared-default" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
 
-
-## (Optional) Use Admin APIs to enable a spreadsheet to accept data
+### Use Admin APIs to enable a spreadsheet to accept data
 
 You can also send a POST request to the form to enable it to accept data and configure headers for the `incoming` sheet. Upon receiving the POST request, the service analyzes the body of request and autonomously generates the essential headers and sheets needed for data ingestion.
 
@@ -151,7 +153,6 @@ To use Admin APIs to enable a spreadsheet to accept data:
     Your form is now enabled to accept data. You also observe the following changes in your spreadsheet: 
 
 ## Automatic Changes to sheet once it is enabled to accept data. 
-
 
 Once the sheet is set to recieve data, you observe the following changes in your spreadsheet: 
 
@@ -298,7 +299,7 @@ There are a few different ways that you can format the form data in the POST bod
 
     ```
 
-Next, you can customize the thank you message, [configure a thank you page](/help/edge/docs/forms/thank-you-page-form.md), or [set redirects](/help/edge/docs/forms/thank-you-page-form.md).
+Next, you can [customize the thank you message](/help/edge/docs/forms/thank-you-page-form.md).
 
 ## See also
 

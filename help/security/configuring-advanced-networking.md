@@ -83,7 +83,7 @@ String url = "www.example.com:8443"
 String proxyHost = System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel");
 int proxyPort = Integer.parseInt(System.getenv().getOrDefault("AEM_HTTPS_PROXY_PORT", "3128"));
 HttpClient client = HttpClient.newBuilder()
-      .proxy(ProxySelector.of(new InetSocketAddress (proxyHost, proxyPort)))
+      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
       .build();
  
 HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
@@ -305,7 +305,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 Some libraries require explicit configuration to use standard Java system properties for proxy configurations.
 
 An example using Apache HttpClient, that requires explicit calls to
-[`HttpClientBuilder.useSystemProperties ()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) or use
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) or use
 [`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
 
 ```java
@@ -313,7 +313,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
   String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
   URL finalUrl = endpointUri.resolve(relativeUri).toURL();
 
-  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties ().build();
+  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
   HttpGet request = new HttpGet(finalUrl.toURI());
   request.setHeader("Accept", "application/json");
   request.setHeader("X-API-KEY", apiKey);
