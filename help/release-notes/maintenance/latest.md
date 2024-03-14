@@ -96,15 +96,22 @@ Summarized below are the continuous improvements for maintenance release 15262, 
 
 ### Known Issues {#known-issues-15262}
 
-#### `UnsupportedClassVersionError` in CM pipeline Build step after upgrading `aem-sdk-api` version to `2024.2.15262.20240224T002940Z-231200`
+* ASSETS-35923: `UnsupportedClassVersionError` in CM pipeline Build step after upgrading `aem-sdk-api` version to `2024.2.15262.20240224T002940Z-231200`. **Requires customer action to Set CM Java Version to 11**, see [Build Environment / Setting the Maven JDK Version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
+* ASSETS-35860: Incorrect Time Zone Conversion in AEM Assets Column View.
+* SCRNS-4171: Windows Screens go blank and stop working when upgrading to 15262 and publishing a channel.
+* GRANITE-50774: GraniteContent should use deterministic order of property-values at init time.
+
+### Change Notice {#change-notice-15262}
+
+**Actions Required**
+
+#### Set CM Java Version to 11 {#set-java-version-11}
 
 The new version of the aem-sdk-api contains classes compiled with a Java 11 target, which is not compatible with the Cloud Manager Build environment default JDK version 1.8. This update requires that Maven is executed using JDK 11.
 
 Customers are advised to add a `.cloudmanager/java-version` file to the root of their git repo with the contents: `11`. [Build Environment / Setting the Maven JDK Version](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
 
-### Change Notice {#change-notice-15262}
-
-**Action Required**
+#### Update aem-cloud-testing-clients to 1.2.1 {#update-aem-cloud-testing-clients}
 
 Upcoming changes will require the library [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) used in your custom functional tests to be updated to at least version **1.2.1**
 
