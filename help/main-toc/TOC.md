@@ -85,6 +85,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.2.0](/help/implementing/cloud-manager/release-notes/2024/2024-2-0.md)
       + [Release Notes for 2024.1.0](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
     + 2023 {#2023}
       + [Release Notes for 2023.12.0](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)
@@ -825,7 +826,7 @@ user-guide-title: AEM as a Cloud Service
       + [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
       + [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
       + [Use rules to add dynamic behaviour to a form](/help/edge/docs/forms/rules-forms.md)
-      + [Thank you page](/help/edge/docs/forms/thank-you-page-form.md)
+      + [Show a custom thank you message after form submission](/help/edge/docs/forms/thank-you-page-form.md)
     + Capabilities {#advanced-features-eds-forms}
       + [Form fragments](/help/edge/docs/forms/form-fragments.md)
       + [Repeatable sections](/help/edge/docs/forms/repeatable-forms.md)

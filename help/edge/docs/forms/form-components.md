@@ -2,8 +2,6 @@
 title: Form Components and Properties
 description: This document provides an overview of the form components and their properties available in AEM Forms Edge Delivery Service.
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 ---
 # Form Components and Properties: AEM Forms Edge Delivery Service
