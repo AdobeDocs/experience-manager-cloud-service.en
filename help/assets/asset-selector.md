@@ -418,7 +418,7 @@ You can define the Asset Selector [properties](#asset-selector-properties) in th
 
    ![rail-view-example](assets/rail-view-example-vanilla.png)
 
-If the value of the AssetSelector `rail` is set to `false` or is not mentioned in the properties, Asset Selector displays in the Modal view by default.
+If the value of the AssetSelector `rail` is set to `false` or is not mentioned in the properties, Asset Selector displays in the Modal view by default. The `acvConfig` property is used to enable rail view of asset viewer. [Visit enable or disable drag and drop](#enable-disable-drag-and-drop) to understand the usage of `acvConfig` property.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -522,7 +522,7 @@ You can customize the details view of an asset when you click the ![info icon](a
 ```
 // Create an object infoPopoverMap and set the property `infoPopoverMap` with it in assetSelectorProps
 const infoPopoverMap = (map) => {
-// for e.g., to remove `path` from the info popover view
+// for example, to skip `path` from the info popover view
 let defaultPopoverData = PureJSSelectors.getDefaultInfoPopoverData(map);
 return defaultPopoverData.filter((i) => i.label !== 'Path'
 };
