@@ -3,8 +3,8 @@ Title: How to connect AEM Adaptive Forms with Azure Blob Storage?
 Description: Learn how to create an Azure Blob Storage Configuration in AEM Forms and use it within your Adaptive Forms for efficient data storage.
 keywords: Azure Blob Storage integration with AEM Forms, Submitting data to Azure Storage, Creating Azure Storage Configuration in AEM Forms, Using Azure Blob Storage in Adaptive Forms Submit Action
 feature: Adaptive Forms, Core Components
+exl-id: 0c9f8f85-c4e9-4c79-bd0b-abdcac99a2d4
 ---
-
 # Submit an Adaptive Form to Azure Blob Storage 
 
 The **[!UICONTROL Submit to Azure Blob Storage]**  Submit Action connects an Adaptive Form with a Microsoft&reg; Azure portal. You can submit the form data, files, attachments, or Document of Record to the connected Azure Storage containers. 

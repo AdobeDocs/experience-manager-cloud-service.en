@@ -143,7 +143,7 @@ You can edit the following Dynamic Media Settings by selecting the **[!UICONTROL
 
 * **[!UICONTROL Viewer modifiers]** - Viewer modifiers take the form of name=value pair with a & delimiter and let you change viewers as outlined in the Viewers Reference Guide. An example of a viewer modifier is `posterimage=img.jpg&caption=text.vtt,1` which sets a different image for the video thumbnail and associates a closed caption/subtitle file with the video.
 
-* **[!UICONTROL Image preset]** - Select an existing image preset from the drop-down list. If the image preset you are looking for is not visible, you must make it visible. See Managing Image Presets. You cannot select a viewer preset if you are using an image preset and conversely.
+* **[!UICONTROL Image preset]** - Select an existing image preset from the drop-down list. If the image preset you are looking for is not visible, you must make it visible. See [Manage Image Presets](/help/assets/dynamic-media/managing-image-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
 
   This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
