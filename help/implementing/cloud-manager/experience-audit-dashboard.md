@@ -26,7 +26,7 @@ Experience Audit in Cloud Manager ensures that the user's experience on the site
 
 The audit results are informational and allow the deployment manager to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that was introduced with the current deployment.
 
-Experience Audit is powered by [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/), an open source tool from Google and is enabled in all Cloud Manager production pipelines.
+Experience Audit is powered by [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/), an open source tool from Google, and is enabled in all Cloud Manager production pipelines.
 
 ## Availability {#availability}
 
@@ -34,14 +34,21 @@ Experience Audit is available for Cloud Manager:
 
 * Sites production pipelines, by default
 * Development full-stack pipelines, optionally
+* Front-end pipelines, optionally
 
-See the [Configuration section](#configuration) for more information.
+See the [Configuration section](#configuration) for more information on how to configure the audit for the optional environments.
+
+Audits are run as part of the pipeline. Audits can also be [run on-demand](#on-demand) outside of pipelines.
 
 ## Configuration {#configuration}
 
-Experience Audit is available by default for production pipelines and can be enabled for development pipelines. In both cases, you need to define which content paths are evaluated during pipeline execution.
+Experience Audit is available by default for production pipelines. It can be be optionally enabled for development full-stack and front-end pipelines. In all cases, you need to define which content paths are evaluated during pipeline execution.
 
-1. Follow the directions to add a new [production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) or a new [non-production pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) Or you can [edit an existing pipeline.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+1. Depending on the type of pipeline you wish to configure, follow the directions to:
+
+   * Add a new [production pipeline,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) if you wish to define the paths to be evaluated by the audit.
+   * Add a new [non-production pipeline,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) if you wish to enable the audit on a front-end or development full-stack pipeline.
+   * Or you can [edit an existing pipeline,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) and update the existing options.
 
 1. If you are adding or editing a non-production pipeline for which you want to use Experience Audit, you must select the **Experience Audit** checkbox on the **Source Code** tab.
 
@@ -81,11 +88,14 @@ From this summary view in the **Stage Testing** phase of the pipeline, you have 
 * **[View slowest pages](#view-slowest-pages)**
 * **[View full report](#view-full-report)**
 
+In addition to the summary presented in the details of a pipeline run, you can also directly access the full results of the audit by using the **Reports** tab of the Cloud Manager dashboard to access [the full report](#view-full-report) directly.
+
 >[!TIP]
 >
 >The following sections describe how to view the results of the Experience Audit.
 >
->* If you would like details on how the audit, please see the section [Experience Audit Evaluation Details.](#details)
+>* If you would like details on how the audit works, please see the section [Experience Audit Evaluation Details.](#details)
+>* If you would like to know how to run an experience audit on demand, please see the section [On-Demand Audit Reports.](#on-demand)
 >* If you experience issues with the audit, please see the section [Experience Audit Encounters Issues.](#issues)
 >* For general performance tips, please see the section [General Performance Tips.](#performance-tips)
 
@@ -169,9 +179,29 @@ The **Raw reports** tab gives you scores for every audit of the page. Tap or cli
 
 ![Raw report](assets/experience-audit-raw-reports.png)
 
->[!TIP]
+This opens a new tab in your browser, pointing to `https://googlechrome.github.io/lighthouse/viewer/` with a signed URL of the Lighthouse raw JavaScript Object Notation (JSON) report for the selected page, which opens automatically for your detailed inspection
+
+![Viewing raw report](assets/experience-audit-view-raw-report.png)
+
+## On-Demand Audit Reports {#on-demand}
+
+In addition to being run during pipeline execution, Experience Audit reports can also be generated on-demand. This is a good solution to quickly scan your pages, without having to run a pipeline.
+
+To run an on-demand scan, navigate to the  **Reports** tab to see the complete audit report and then tap or click the **Run scan** button. 
+
+![On-demand scanning](assets/experience-audit-on-demand.png)
+
+On-demand scans trigger an Experience Audit for the latest 25 [configured pages](#configuration) and typically finish in a few minutes.
+
+Upon completion, the scores chart will be automatically updated, and you can inspect the results exactly as for a pipeline execution scan.
+
+You can filter the scores chart based on the trigger type by using the **Trigger** selector. 
+
+![Trigger filter](assets/experience-audit-on-demand-trigger.png)
+
+>[!NOTE]
 >
->The site [`https://googlechrome.github.io/lighthouse/viewer/`](https://googlechrome.github.io/lighthouse/viewer/) can be used to render the downloaded raw JSON report for the selected page.
+>An on-demand scan can be started only if the environment is not deleted and there are no other pending scans on the same environment.
 
 ## Experience Audit Encounters Issues {#issues}
 
@@ -214,7 +244,7 @@ These can be improved by:
 
 The following details provide additional information on how the Experience Audit evaluates your site. They are not necessary for general usage of the feature and are provided here for completeness.
 
-* Although the [configured Experience Audit page paths](#configuration) show the `.com` domain of the publisher, the audit scans the origin (`.net` equivalent domain), to ensure issues introduced during development are detected.
+* Although the [configured Experience Audit page paths](#configuration) show the `.com` domain of the publisher, the audit scans the origin (`.net`) domain, to ensure issues introduced during development are detected.
   * The `.com` domain uses a CDN and could yield better scores or contain cached results.
 * In production full-stack pipelines, the staging environment is scanned.
   * To ensure the audit provides relevant details during auditing, the staging environment's content should be as close as possible to the production environment.
@@ -223,3 +253,4 @@ The following details provide additional information on how the Experience Audit
   * Experience Audit estimates the potential gain by processing the raw report for each page and correlating the wasted bytes or milliseconds with an insight that has a weighted impact on the performance score.
   * The audit provides this information (as well as the affected pages) to help decide which recommendation to pursue.
   * For more details, please see the [General Performance Tips section](#performance-tips)
+* Given that a frontend pipeline could deploy to an existing environment (or there could be multiple frontend pipelines targeting the same environment), and the scan results are aggregated at an environment level, the scores, trends, and recommendations are displayed in the same selected environment, regardless of the pipeline execution that triggered the scan.
