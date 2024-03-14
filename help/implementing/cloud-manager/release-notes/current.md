@@ -19,12 +19,8 @@ The release date for Cloud Manager release 2024.3.0 in AEM as a Cloud Service is
 
 ## What's New {#what-is-new}
 
-* Cloud Manager now supports self-service management of [pipeline variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) via the Cloud Manager UI.
-* [The preview service](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice) will now be enabled for environments created before the preview service feature was rolled out.
-* [Cloud Manager custom permissions](/help/implementing/cloud-manager/custom-permissions.md) let you create custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.
-  * This feature began rolling out in a phased manner with the [December 2023 release](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md) and will be complete on 20 February 2024.
-* For all new environments, the [environment product profile](/help/onboarding/aem-cs-team-product-profiles.md) names will be a more user-friendly format based on a combination of profile description, environment type, number, and program number.
-* [The build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) has been updated to Maven version 3.9.4 and JDK versions jdk-11.0.22 and jdk1.8.0_401.
+* [You can now create advanced networking infrastructure](/help/security/configuring-advanced-networking.md) in your Cloud Manager program and configure it your environments in a self-service manner using the Cloud Manager UI.
+* [The pipeline execution step details](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) will include what the current step of deployment is and what is expected to follow.
 
 ## Early Adoption Program {#early-adoption}
 
@@ -67,4 +63,4 @@ Interested in test-driving the new dashboard? To get started, send an email to `
 
 ## Bug Fixes {#bug-fixes}
 
-* The JDK of the build containers has been updated to a version that solves [JDK-8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
+* A bug was fixed when a user defines the `COMMERCE_ENDPOINT` variable with a trailing space then the dispatcher fails to  load.
