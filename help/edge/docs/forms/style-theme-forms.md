@@ -2,8 +2,6 @@
 title: Customize theme and style for an AEM Forms Edge Delivery ServicesForm
 description: Customize theme and style for an AEM Forms Edge Delivery ServicesForm
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 ---
 # Styling Form Fields 

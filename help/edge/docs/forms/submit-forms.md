@@ -2,8 +2,6 @@
 title: Prepare your spreadsheet to accept data
 description: Craft powerful forms faster using spreadsheets & Adaptive Forms Block Fields!
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 ---
 # Prepare your spreadsheet to accept data 
