@@ -374,7 +374,7 @@ if (data) {
         }
 
         if (errorData) {
-            Object.keys(errorData).forEach(function(key) {
+            Object.keys (errorData).forEach(function(key) {
                 var som_key = som_map[key];
                 if (som_key) {
                     var error = {};

@@ -1,8 +1,8 @@
 ---
 title: Managing Pages
 description: Learn how to manage the pages of your website in AEM including moving, copying, and deleting.
+exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
 ---
-
 # Managing Pages {#managing-pages}
 
 Learn how to manage the pages of your website in AEM including moving, copying, and deleting.
@@ -36,7 +36,9 @@ After [creating a page](/help/sites-cloud/authoring/sites-console/creating-pages
 
    ![Edit button](/help/sites-cloud/authoring/assets/edit.png)
 
-1. The page is opened and you can [edit the page](/help/sites-cloud/authoring/page-editor/edit-content.md) as required.
+1. The page is opened and you can edit the page as required. Depending on how the selected page was created, the **Edit** action will open the appropriate editor.
+   * [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md) - For pages created with the AEM Page Editor
+   * [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - For pages created with the Universal Editor
 
 ## Copying and Pasting a Page {#copying-and-pasting-a-page}
 

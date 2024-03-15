@@ -48,8 +48,19 @@
 * [Submit to Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connect Adaptive Form to Salesforce application](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [Connect an Adaptive Form to Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## AEM Authoring with Edge Delivery Services Early Access {#aem-authoring-edge-early-access}
 
 [!BADGE EARLY-ACCESS TECHNOLOGY - Ask us about this feature from the AEM Sites labs on your Slack channel!]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEM authoring with Edge Delivery Services is an early-access technology."}
+
+## See also {#see-more-forms-eds}
+
+* [Get started with AEM Forms Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
+* [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
+* [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
+* [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
+* [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
+* [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
+* [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)

@@ -33,8 +33,9 @@ You may encounter different terms related to publishing as you work with Adobe E
 
 Depending on your location, you can publish:
 
-* [From the page editor](#publishing-from-the-editor)
-* [From the sites console](#publishing-from-the-console)
+* [From the page editor](#publishing-from-the-page-editor)
+* [From the **Sites** console](#publishing-from-the-sites-console)
+* [From the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 >[!NOTE]
 >
@@ -56,9 +57,9 @@ Depending on your location, you can publish:
 >
 > For additional possibilities see **On Time** and **Off Time** in the [Basic tab of Page Properties](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
-### Publishing from the Editor {#publishing-from-the-editor}
+### Publishing from the Page Editor {#publishing-from-the-page-editor}
 
-If you are editing a page, it can be published directly from the editor.
+If you are editing a page in the [page editor,](/help/sites-cloud/authoring/page-editor/introduction.md) it can be published directly from the editor.
 
 1. Select the **Page Information** icon to open the menu and then the **Publish Page** option.
 
@@ -83,15 +84,15 @@ If you are editing a page, it can be published directly from the editor.
 
 >[!NOTE]
 >
->Publishing from the editor is a shallow publish, that is, only the selected page/pages is/are published and any child page(s) is/are not.
+>Publishing from the page editor is a shallow publish, that is, only the selected page/pages is/are published and any child page(s) is/are not.
 
 >[!NOTE]
 >
 >Pages accessed by [aliases](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) in the editor cannot be published. Publish options in the editor are only available for pages accessed via their actual paths.
 
-### Publishing from the Console {#publishing-from-the-console}
+### Publishing from the Site Console {#publishing-from-the-sites-console}
 
-In the sites console there are two options for publishing:
+In the **Sites** console there are two options for publishing:
 
 * [Quick Publish](#quick-publish)
 * [Manage Publication](#manage-publication)

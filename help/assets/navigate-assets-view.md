@@ -1,8 +1,8 @@
 ---
-title: "[!DNL Assets view] user interface"
+title: '[!DNL Assets view] user interface'
 description: Understand user interface of and navigation in [!DNL Assets view].
 role: User
-exl-id: 534a8084-88f7-410e-b872-719e47e62b10
+exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 ---
 # Navigate to files and folders and view assets {#view-assets-and-details}
 
