@@ -103,6 +103,18 @@ Dynatrace customers may monitor their AEM usage. [Read how](/help/implementing/c
 
 [Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
 
+### CDN Configuration Early Adopter Program {#cdn-config-early-adopter}
+
+In addition to the recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which includes the optionally licensable Web Application Firewall (WAF) rules, there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. We'd love to hear about your use cases, including:
+* 301/302 client-side redirects
+* proxying requests at the edge to arbitrary origins
+* URL transformations
+* setting or modifying request or response headers
+* custom error pages when the CDN can't reach AEM
+* any other useful CDN configurations
+
+Send an email to **aemcs-cdn-config-adopter@adobe.com** from your official email ID with your feedback.
+
 ## Cloud Manager {#cloud-manager}
 
 You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes/current.md).
