@@ -281,7 +281,7 @@ Some rule examples follow. See the [rate limit section](#rules-with-rate-limits)
 
 **Example 1**
 
-This rule blocks requests coming from IP 192.168.1.1:
+This rule blocks requests coming from **IP 192.168.1.1**:
 
 ```
 kind: "CDN"
