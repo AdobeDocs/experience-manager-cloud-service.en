@@ -44,6 +44,13 @@ You must ensure the following communication methods:
 * The URL of the application in the IMS client's allowed list of redirect URLs.
 * The IMS login flow is configured and rendered using a popup on the web browser. Therefore, popups should be enabled or allowed on the target browser.
 
+>[!IMPORTANT]
+>
+> This repository is intended to serve as a supplemental documentation describing the available APIs and usage examples for integrating Asset Selector. Before attempting to install or use the Asset Selector, ensure that your organization has been provisioned the access to Asset Selector as part of the Experience Manager Assets as a Cloud Service profile. If you have not been provisioned, you cannot integrate or use these components. To request provisioning, your program admin should raise a support ticket marked as P2 from Admin Console and include the following information:
+>
+>* Domain names where the integrating application is hosted.
+>* After provisioning, your organization will be provided with `imsClientId`, `imsScope`, and a `redirectUrl` corresponding to the environment that you request that are essential for the configuration of Asset Selector. Without those valid properties, you cannot run the installation steps.
+
 ## Installation {#installation}
 
 Asset Selector is available via both ESM CDN (For example, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) and [UMD](https://github.com/umdjs/umd) version.
@@ -149,7 +156,7 @@ By following these steps, you can use Asset Selector with your [!DNL Adobe] appl
 </html>
 ```
 
-For detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+<!--For detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).-->
 
 +++**ImsAuthProps**
 The `ImsAuthProps` properties define the authentication information and flow that the Asset Selector uses to obtain an `imsToken`. By setting these properties, you can control how the authentication flow should behave and register listeners for various authentication events.
