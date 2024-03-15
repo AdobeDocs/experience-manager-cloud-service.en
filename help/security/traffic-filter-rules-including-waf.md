@@ -229,9 +229,9 @@ Actions are prioritized according to their types in the following table, which i
 
 | **Name**  | **Allowed Properties**  | **Meaning**  |
 |---|---|---|
-|  **allow** | `wafFlags` (optional)  | if wafFlags is not present, stops further rule processing and proceeds to serving response. If wafFlags is present, it disables specified WAF protections and proceeds to further rule processing. |
-|  **block** | `status, wafFlags` (optional and mutually exclusive)  | if wafFlags is not present, returns HTTP error bypassing all other properties, error code is defined by status property or defaults to 406. If wafFlags is present, it enables specified WAF protections and proceeds to further rule processing. |
-| **log**  | `wafFlags` (optional)  | logs the fact that the rule was triggered, otherwise does not affect the processing. wafFlags has no effect |
+|  **allow** | `wafFlags` (optional), `alert` (optional, not yet released)  | if wafFlags is not present, stops further rule processing and proceeds to serving response. If wafFlags is present, it disables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5 minute window. This feature is not yet released; see the [Traffic Filter Rules Alerts](#traffic-filter-rules-alerts) section for information on how to join the early adopter program. |
+|  **block** | `status, wafFlags` (optional and mutually exclusive), `alert` (optional, not yet released)  | if wafFlags is not present, returns HTTP error bypassing all other properties, error code is defined by status property or defaults to 406. If wafFlags is present, it enables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5 minute window. This feature is not yet released; see the [Traffic Filter Rules Alerts](#traffic-filter-rules-alerts) section for information on how to join the early adopter program. |
+| **log**  | `wafFlags` (optional), `alert` (optional, not yet released)  | logs the fact that the rule was triggered, otherwise does not affect the processing. wafFlags has no effect. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5 minute window. This feature is not yet released; see the [Traffic Filter Rules Alerts](#traffic-filter-rules-alerts) section for information on how to join the early adopter program. |
 
 ### WAF Flags List {#waf-flags-list}
 
@@ -460,6 +460,34 @@ data:
         action:
           type: block
         rateLimit: { limit: 100, window: 60, penalty: 60 }
+```
+
+## Traffic Filter Rules Alerts {#traffic-filter-rules-alerts}
+
+>[!Note]
+>
+> This feature is not yet released. To gain access through the early adopter program, email **aemcs-waf-adopter@adobe.com**.
+
+A rule can be configured to send an Actions Center notification if it is triggered 10 times within a 5 minute window, thereby alerting you when certain traffic patterns are occuring so you can take any necessary measures. Learn more about [Actions Center](/help/operations/actions-center.md), including how to setup the required Notification Profiles to receive emails.
+
+![Actions Center Notification](/help/operations/assets/traffic-filter-rules-actions-center-alert.png)
+
+
+The alert property (currently prefixed with *experimental* since the feature is not yet released) can be applied to the action node for all action types (allow, block, log).
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action:
+          type: block
+          experimental_alert: true
 ```
 
 ## CDN Logs {#cdn-logs}
