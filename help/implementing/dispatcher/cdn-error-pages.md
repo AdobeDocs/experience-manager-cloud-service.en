@@ -15,7 +15,7 @@ In the unlikely event that the [Adobe-managed CDN](/help/implementing/dispatcher
 
 Before you can override the default error page you need to create the following:
 
-1) First, create this folder and file structure the top-level folder in your project in Git:
+1. First, create this folder and file structure the top-level folder in your project in Git:
 
 ```
 config/
@@ -23,9 +23,7 @@ config/
 
 ```
 
-2) 
-
-The `cdn.yaml` configuration file should contain metadata and the error page references, as described below.
+2. The `cdn.yaml` configuration file should contain metadata and the error page references, as described below.
 
 ### Configuration {#configuration}
 
@@ -85,7 +83,7 @@ For testing purposes, call the dedicated endpoint with the supported error code,
 
 ```
 curl
- 
+
 "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 ```
