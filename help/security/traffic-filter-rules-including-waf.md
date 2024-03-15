@@ -470,7 +470,7 @@ data:
 
 A rule can be configured to send an Actions Center notification if it is triggered 10 times within a 5 minute window, thereby alerting you when certain traffic patterns are occuring so you can take any necessary measures. Learn more about [Actions Center](/help/operations/actions-center.md), including how to setup the required Notification Profiles to receive emails.
 
-![Actions Center Notification](/help/operations/assets/traffic-filter-rules-actions-center-alert.png)
+![Actions Center Notification](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
 
 
 The alert property (currently prefixed with *experimental* since the feature is not yet released) can be applied to the action node for all action types (allow, block, log).
