@@ -15,7 +15,7 @@ For example, consider an enquiry form that collects data such as start and end t
 By the end of this article, you learn to:
 
 * [Configure the secret key in project configuration file](#configure-secret-key)
-* [Add site key in the form definition](#add-site-key)
+* [Add site key to your form](#add-site-key)
 
 
 ## Pre-requisite
