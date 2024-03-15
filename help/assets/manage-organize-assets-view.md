@@ -3,7 +3,7 @@ title: Manage your digital assets
 description: Move, delete, copy, rename, update, and version your assets in [!DNL Assets view].
 role: User,Leader
 contentOwner: AG
-exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
+exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 ---
 # Manage assets {#manage-assets}
 

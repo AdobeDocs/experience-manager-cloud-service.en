@@ -1,18 +1,18 @@
 ---
-title: AEM and Edge Delivery Services
+title: Getting Started with AEM and Edge Delivery Services
 description: Understand how AEM as a Cloud Service can benefit from the performance and perfect Lighthouse scores offered by Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 ---
 
-# AEM and Edge Delivery Services {#aem-edge}
+# Getting Started with AEM and Edge Delivery Services {#aem-edge}
 
 With Edge Delivery Services, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering high-impact experiences that are fast to author and develop. It is a composable set of services that enables a rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. As such, with Edge Delivery Services you can improve conversion, reduce costs, and provide extreme content velocity.
 
 By using Edge Delivery Services, you can:
 
 * Create fast sites with a perfect Lighthouse Score and continuously monitor your site performance through real user monitoring (RUM).
-* Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website.
+* Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and Document-based Authoring . As such, you can work with multiple content sources on the same website.
 * Use a built-in experimentation framework that allows quick test creation, execution without performance impact and fast release to production of a test winner.
 
 ## Edge Delivery Services Overview {#edge-overview}
@@ -21,7 +21,7 @@ The following diagram illustrates how you can edit content in Microsoft Word (do
 
 ![Edge Delivery Architecture](assets/AEM-with-EDS-publishing-simple2.png)
 
-Edge Delivery services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. As mentioned previously,you can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) with [Universal Editor authoring](/help/implementing/universal-editor/introduction.md) as well as [document-based authoring.](https://www.aem.live/docs/authoring)
+Edge Delivery services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. As mentioned previously,you can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) with [Universal Editor authoring](/help/implementing/universal-editor/introduction.md) as well as [Document-based Authoring .](https://www.aem.live/docs/authoring)
 
 For example, you can use content directly from Microsoft Word or Google Docs. This means that documents from those sources can become pages on your website. Furthermore, headings, lists, images, font elements can all be transferred from the initial source into the website. The new content is added instantly without a rebuild process.
 
@@ -57,7 +57,7 @@ Adobe provides three channels to help you with Edge Delivery Services:
 
 ### Access Community Resources {#community-resource}
 
-Adobe is committed to empowering you with the best community engagement & support for Edge Delivery Services and Document-based Authoring.
+Adobe is committed to empowering you with the best community engagement & support for Edge Delivery Services and Document-based Authoring .
 
 * Participate in [Experience League Community](https://adobe.ly/3Q6kTKl) to ask questions, share feedback, initiate discussions, seek assistance from Adobe experts and AEM Advisors/Champs, and connect with like-minded individuals in real-time.
 * Join our [Discord channel,](https://discord.gg/aem-live) a more casual platform for real-time interactions and quick idea exchanges.
