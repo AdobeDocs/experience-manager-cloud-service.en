@@ -214,10 +214,26 @@ AEM Forms as a Cloud Services provides a docker-based SDK environment for easier
 
 1. Open command prompt and navigate to the `aem-forms-addon-native-<version>` folder.
 
-1. Ensure that your local AEM Author instance is up and running. Run the following command to start the SDK:
+1. Ensure that your local AEM Author instance is up and running. Run the following commands to start the SDK:
 
-    * (on Microsoft&reg; Windows) `sdk.bat start`
-    * (on Linux&reg; or Apple macOS) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
+    * On Microsoft&reg; Windows
+        
+        ```shell
+        
+        sdk.bat start
+        
+        ```
+
+
+    * Linux&reg; or Apple macOS 
+    
+        ```Shell
+
+        % export AEM_HOME=[local AEM Author installation]
+        % ./sdk.sh start
+    
+        ```
+
 
     >[!NOTE]
     >
