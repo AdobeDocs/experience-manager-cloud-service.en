@@ -183,6 +183,12 @@ See the `Node property value in MongoDB` note in [Prerequisites for Content Tran
 
 An ingestion that was created with a running extraction as its source migration set waits patiently until that extraction succeeds, and at that point starts normally. If the extraction fails or is stopped, the ingestion and its indexing job will not begin but is rescinded. In this case, check the extraction to determine why it failed, remedy the problem and start extracting again. Once the fixed extraction is running, a new ingestion can be scheduled. 
 
+### Deleted Asset not present after re-running ingestion
+
+When an asset is deleted from the Touch UI, the node data is deleted, but the asset blob with the image is not immediately deleted. It is marked for deletion so that it no longer appears in the UI; however, it remains in the datastore until garbage collection occurs and the blob is removed. 
+
+In the scenario where a previously migrated asset is deleted, and the ingestion is rerun, but the blob has not been removed by garbage collection, ingesting the same migration set will not restore the deleted asset. When the ingestion checks on the cloud environment for the asset, there is no node data; therefore, the ingestion will copy the node data to the cloud environment. However, when it checks the blob store, it sees that the blob is present and skips copying the blob over. That is why the metadata is present post-ingestion when you look at the asset from the Touch UI, but the image is not. Please remember that migration sets and content ingestion were not designed to handle this case. They aim to add new content to the cloud environment and not restore previously migrated content.
+
 ## What's Next {#whats-next}
 
 When the ingestion has succeeded, AEM indexing will start automatically. See [Indexing after Migrating Content](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) for more information.
