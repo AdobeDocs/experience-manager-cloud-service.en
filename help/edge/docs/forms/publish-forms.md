@@ -2,11 +2,9 @@
 title: Publish an AEM Forms Edge Delivery Services Form
 description: Publish an AEM Forms Edge Delivery Services Form
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 ---
-# Publish your form
+# Publish your form and start collecting data
 
 Once you are ready to share your form with your customers for data collection or submission, you can simply publish it, making the form readily available for your customers to use.
 
