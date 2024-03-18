@@ -2,17 +2,13 @@
 title: Add repeatable sections to a form
 description: Add repeatable sections to an EDS form
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
 ---
-# Add repeatable sections to a Form
+# Add repeatable sections to a form
 
 Adaptive Forms Block provides the capability to add or make a section or a component of a form repeatable. This allows users to enter information multiple times for the same type of data, making it easier to collect information like work experience or educational background.
 
 For example, consider a form used to collect information about a person's work experience. You may have a repeatable section for capturing details of each previous job. The repeatable section would typically contain fields such as company name, job title, dates of employment, and job responsibilities. The user can add multiple instances of the repeatable section to enter information about each job they have held.
-
-
 
 By the end of this article, you learn to:
 
@@ -81,7 +77,7 @@ The [Adaptive Forms Block is enabled](/help/edge/docs/forms/create-forms.md) for
 
 Let's take an example of a loan application form. The form enables users to submit personal information. You can include co-applicant details using repeatable sections, with the option to add a minimum and maximum of three co-applicant sections.
 
-"_You can use a Microsoft Excel file on your SharePoint Site or Google Sheet file on Google Drive to develop a form. Examples in this document are based on a [Microsoft Excel file on your SharePoint Site](https://www.aem.live/docs/setup-customer-sharepoint)._" 
+"_You can use a Microsoft Excel file on your SharePoint Site or Google Sheet file on Google Drive to develop a form. Examples in this document are based on a [Microsoft Excel file on your SharePoint Site](https://www.aem.live/docs/setup-customer-SharePoint)._" 
 
 
 To add repeatable sections in Edge Delivery:
@@ -118,11 +114,6 @@ The form is accessible at `https://localhost:3000`, where clicking the `Add` but
 -->
 
 
-## See more
+## See also
 
-* [Create and preview a form](/help/edge/docs/forms/create-forms.md)
-* [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
-* [Publish a form to sites page](/help/edge/docs/forms/publish-forms.md)
-* [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
-* [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
-* [Form Components and their properties](/help/edge/docs/forms/form-components.md)
+{{see-more-forms-eds}}
