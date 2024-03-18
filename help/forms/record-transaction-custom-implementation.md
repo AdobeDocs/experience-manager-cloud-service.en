@@ -4,6 +4,7 @@ description: Use the TransactionRecorder API to record actions which are not acc
 feature: Adaptive Forms, Foundation Components
 hide: yes
 hidefromtoc: yes
+exl-id: cb584f78-30af-4a58-be99-843352e8249c
 ---
 # Record a transaction for custom implementations {#record-a-transaction-for-custom-implementations}
 
@@ -84,4 +85,3 @@ $.ajax({
 ## Related Articles {#related-articles}
 
 * [Transaction Reports Billable APIs](/help/forms/transaction-reports-billable-apis.md)
-
