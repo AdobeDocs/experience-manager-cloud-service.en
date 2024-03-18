@@ -72,6 +72,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2023 {#2023}
+      + [Maintenance Release Notes for 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md) 
       + [Maintenance Release Notes for 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md) 
       + [Maintenance Release Notes for 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md) 
       + [Maintenance Release Notes for 2023.9.0](/help/release-notes/maintenance/2023/2023-9-0.md) 
@@ -84,6 +85,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.2.0](/help/implementing/cloud-manager/release-notes/2024/2024-2-0.md)
       + [Release Notes for 2024.1.0](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
     + 2023 {#2023}
       + [Release Notes for 2023.12.0](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)
@@ -413,7 +415,7 @@ user-guide-title: AEM as a Cloud Service
     + [Micro-Frontend Asset Selector](/help/assets/asset-selector.md)
     + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
     + [Share assets](/help/assets/share-assets.md)
-    + [Repreocessing assets](/help/assets/reprocessing.md)
+    + [Reprocessing assets](/help/assets/reprocessing.md)
     + [Monitor activities and DAM tasks](/help/assets/assets-activity-history.md)
     + [Get started using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
     + [Add and upload assets](/help/assets/add-assets.md)
@@ -786,6 +788,7 @@ user-guide-title: AEM as a Cloud Service
   + [Developing for Edge Delivery](/help/edge/developing.md)
   + [Content Modeling](/help/edge/content-modeling.md)
   + [Creating Blocks](/help/edge/create-block.md)
+  + [Tabular Data and Spreadheets](/help/edge/tabular-data.md)
   + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
   + Building Edge Delivery Applications {#build}
     + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
@@ -816,21 +819,22 @@ user-guide-title: AEM as a Cloud Service
   + Building Edge Delivery Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
     + Get Started {#getting-started-eds-forms}
-      + [Create and preview a form](/help/edge/docs/forms/create-forms.md)
-      + [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
-      + [Publish a form to sites page](/help/edge/docs/forms/publish-forms.md)
+      + [Getting Started](/help/edge/docs/forms/tutorial.md)
+      + [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+      + [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
+      + [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
       + [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
-      + [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
+      + [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
       + [Use rules to add dynamic behaviour to a form](/help/edge/docs/forms/rules-forms.md)
-      + [Thank you page](/help/edge/docs/forms/thank-you-page-form.md)
+      + [Show a custom thank you message after form submission](/help/edge/docs/forms/thank-you-page-form.md)
     + Capabilities {#advanced-features-eds-forms}
       + [Form fragments](/help/edge/docs/forms/form-fragments.md)
-      + [Repeatable sections](/help/edge/docs/forms/repeatable-forms.md)
+      + [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
       + [Translation](/help/edge/docs/forms/translate-forms.md)
       + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
       + [Custom Components](/help/edge/docs/forms/custom-components-forms.md)
     + References {#forms-references}
-      + [List of form block components](/help/edge/docs/forms/form-components.md)
+      + [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
   + Resources for Edge Delivery {#resources}
     + Sidekick {#sidekick}
       + [Using Sidekick](/help/edge/docs/sidekick.md)
@@ -964,6 +968,7 @@ user-guide-title: AEM as a Cloud Service
     + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
     + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
     + [Notifications](/help/implementing/cloud-manager/notifications.md)
+    + [Advanced Networking](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
     + SSL Certificates {#manage-ssl-certificates}
       + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
       + [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
