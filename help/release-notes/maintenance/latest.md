@@ -9,7 +9,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 15541 {#release-15541}
 
-Summarized below are the continuous improvements for maintenance release 15541, which was publicly released on March 18, 2024. The previous maintenance release was release 15262.
+Summarized below are the continuous improvements for maintenance release 15541, which was publicly released on March 19, 2024. The previous maintenance release was release 15262.
 
 2024.3.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
@@ -19,7 +19,7 @@ None.
 
 ### Fixed Issues {#fixed-issues-15541}
 
-GRANITE-50774: GraniteContent should use deterministic order of property-values at init time.
+* GRANITE-50774: GraniteContent should use deterministic order of property-values at init time.
 
 ### Known Issues {#known-issues-15541}
 
