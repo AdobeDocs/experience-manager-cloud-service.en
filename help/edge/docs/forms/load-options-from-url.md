@@ -1,0 +1,77 @@
+---
+title: Load Dropdown List Options from URL 
+description: The dropdown list options are included in a distinct spreadsheet and then imported into the primary spreadsheet via the provided URL.
+feature: Edge Delivery Services
+hide: yes
+hidefromtoc: yes
+---
+
+# Load dropdown list options from URL 
+
+In Edge Delivery Services forms, users have the option to select a value from a predefined set of options. Form authors use the `select` element, which provides a list of choices. 
+For example, the `enquiry` form features a drop-down menu for selecting countries, offering users a range of predefined countries to choose from. You can see this list comprises a long list of countries separated by commas.
+
+![Drop-down options](/help/forms/assets/drop-down-options.png)
+
+Managing long lists of options for dropdown menus can be cumbersome when directly adding them into the spreadsheet containing the form's definition. Creating a separate spreadsheet to store these dropdown options can simplify and streamline the process. This sheet acts as a centralized repository for all dropdown options, arranged in a structured format. Each option is listed in its own row, facilitating easier management and updates.
+
+Let us explore improving the form authoring process by loading the options list from another spreadsheet via a URL. 
+
+By the end of this article, you learn to:
+
+* [Define options in a separate spreadsheet ](#define-options)
+* [Add URL to load drop-down list options](#add-url)
+
+## Define options in a separate spreadsheet {#define-options}
+
+Create a spreadsheet with two columns:`Option` and `Value`, to define the options in different spreadsheet:
+
+1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive folder. 
+1. Create new spreadsheet in your AEM Project folder in Microsoft SharePoint Site or within your Google Drive folder and add the following:
+   
+    * **Option**: Represents the display values of options in the drop-down menu.
+    * **Value**: Represents the submitted value when a user selects the option.
+
+    >[!NOTE]
+    >
+    > If the value and option for an drop-down option are same, the spreadsheet can contain only the **Option** column.
+
+   Let's create a separate spreadsheet, [country-options](/help/forms/assets/country-options.xlsx) for the options displayed in the `Destination` drop-down list in the `enquiry` form.
+
+    Refer to the illustration below, depicting the `country-options` spreadsheet:
+
+   ![Drop-down for country](/help/forms/assets/drop-down-country-options.png)
+
+1. Share the `country-options` sheet with the Adobe Experience Manager user (helix@adobe.com).
+1.  Preview and publish the `country-options` sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
+  
+Refer to the URL which showcases the `country-options` spreadsheet:
+   https://main--aem-forms-eds-repo--ruchitas123.hlx.live/country-options.json
+
+## Add URL to load drop-down list options{#add-url}
+
+The `Options` property of a `select` field accepts a URL. The URL returns a JSON array used as an options for the `Destination` drop-down list. To add the URL to load drop-down list options:
+
+1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive and open your spreadsheet. You can also create new spreadsheet for a form.
+1. Copy the URL of `country-options` spreadsheet and paste it in the `Options` column for the `Destination` field.
+
+     ![Enquiry spreadsheet](/help/forms/assets/drop-down-enquiry.png)
+
+2. Preview and publish the sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+
+
+   ![Drop-down for country](/help/forms/assets/load-dropdown-options-form.png)
+
+You can refer to the [enquiry spreadsheet](/help/forms/assets/drop-down-enquiry.xlsx) to add the URL to load drop-down list options.
+
+After integrating the URL into the form definition to load drop-down list options, the options for the `Destination` drop-down start appearing from the URL.
+
+Refer to the URL below, which displays the `enquiry` form displaying the options saved in the separate spreadsheet:
+
+https://main--aem-forms-eds-repo--ruchitas123.hlx.live/
+
+## See also
+
+{{see-more-forms-eds}}
+
+   

@@ -6,11 +6,15 @@ hide: yes
 hidefromtoc: yes
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 ---
+
 # Use reCAPTCHA with AEM Forms Edge Delivery Services
 
-reCAPTCHA is a popular tool used to protect websites from fraudulent activities, spam, and misuse. In Edge Delivery Services, the Adaptive Forms Block provides the capability to add Google reCAPTCHA to distinguish between humans and bots. This feature allows users to protect their website from spam and misuse. Edge Delivery Services only support the **Challenge (v2): Invisible reCAPTCHA badge** for the Adaptive Form Block.
-
+reCAPTCHA is a popular tool used to protect websites from fraudulent activities, spam, and misuse. In Edge Delivery Services, the Adaptive Forms Block provides the capability to add Google reCAPTCHA to distinguish between humans and bots. This feature allows users to protect their website from spam and misuse. 
 For example, consider an enquiry form that collects data such as start and end trip dates, room budget, estimated trip cost, and traveler information. In such cases, there is a risk of malicious users exploiting the form for purposes like sending phishing emails or flooding it with irrelevant or harmful content using spambots. Integrating reCAPTCHA offers added security by verifying that submissions are from genuine users, effectively minimizing spam entries.
+
+Edge Delivery Services only support the **Challenge (v2): Invisible reCAPTCHA badge** for the Adaptive Form Block.
+
+![Recaptcha V2](/help/forms/assets/recaptcha-v2-invisible.png)
 
 By the end of this article, you learn to:
 
@@ -27,13 +31,13 @@ Register your domain with [Google reCAPTCHA and obtain credentials](https://www.
 The Site Secret for domain registered with Google reCAPTCHA is added to project the configuration file (`.helix/config`) in your AEM Project folder at Microsoft SharePoint or Google Drive. To add the Site Secret to the config file:
 
 1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive. 
-2. Create the `.helix/config.xlsx` file in your AEM Project folder in Microsoft SharePoint Site or the `.helix/config` file in AEM Project folder within your Google Drive. 
+1. Create the `.helix/config.xlsx` file in your AEM Project folder in Microsoft SharePoint Site or the `.helix/config` file in AEM Project folder within your Google Drive. 
 
     >[!NOTE]
     >
     > The [project configuration file](https://www.aem.live/docs/configuration) is a spreadsheet located at `/.helix/config`. If the file does not exist, create it.
 
-3. Open the `config` file and add the following key and value pairs:
+1. Open the `config` file and add the following key and value pairs:
 
     * **captcha.secret**: Google reCAPTCHA secret key value
     * **captcha.type**: reCAPTCHA v2
@@ -46,14 +50,14 @@ The Site Secret for domain registered with Google reCAPTCHA is added to project 
     >
     >  You can retrieve the reCAPTCHA keys from the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
 
-4.  Preview and publish the `config` file using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
+1.  Preview and publish the `config` file using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
 
 ## Add reCAPTCHA site key to your form {#add-site-key}
 
 The Site Key for domain registered with Google reCAPTCHA is added to the spreadsheet of the form that is to be protected. To add the Site key to a form:
 
 1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive and open your spreadsheet. You can also create new spreadsheet for a form.
-2. Insert a row into the spreadsheet to add new field as CAPTCHA, including the following details:
+1. Insert a row into the spreadsheet to add new field as CAPTCHA, including the following details:
     * **type**: captcha
     * **value**: Google reCAPTCHA site key value
   
@@ -61,12 +65,11 @@ The Site Key for domain registered with Google reCAPTCHA is added to the spreads
   
    ![Recaptcha spreadsheet](/help/forms/assets/recaptcha-spreadsheet.png)
 
-   
     >[!NOTE]
     >
     >  You can retrieve the reCAPTCHA keys from the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
 
-3. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview and publish the sheet. 
+1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview and publish the sheet. 
 You can refer to the [spreadsheet](/help/forms/assets/recaptcha-enquiry.xlsx) that includes the form definition for an enquiry form.
 
 After adding new row in the form definition, a reCAPTCHA badge appears at the bottom-right corner of the form. This ensures that the form is now protected from fraudulent activities, spam, and misuse.
@@ -74,7 +77,7 @@ After adding new row in the form definition, a reCAPTCHA badge appears at the bo
 ![recaptcha-form](/help/forms/assets/recaptcha-form.png)
 
 Refer to the URL below, which showcases the live form with the reCAPTCHA badge:
-https://main--wefinance--wkndforms.hlx.live/enquiry 
+https://main--wefinance--wkndforms.hlx.live/enquiry
 
 ## Enable reCAPTCHA for all the forms
 
@@ -91,4 +94,8 @@ To apply Google reCAPTCHA to all the forms in an AEM Project that use Adaptive F
 >  You can retrieve the reCAPTCHA keys from the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
 
 The reCAPTCHA badge starts appearing for all the forms. 
+
+## See also
+
+{{see-more-forms-eds}}
 
