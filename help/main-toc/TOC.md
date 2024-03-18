@@ -85,6 +85,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.2.0](/help/implementing/cloud-manager/release-notes/2024/2024-2-0.md)
       + [Release Notes for 2024.1.0](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
     + 2023 {#2023}
       + [Release Notes for 2023.12.0](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)
@@ -819,21 +820,21 @@ user-guide-title: AEM as a Cloud Service
     + [Overview](/help/edge/docs/forms/overview.md)
     + Get Started {#getting-started-eds-forms}
       + [Getting Started](/help/edge/docs/forms/tutorial.md)
-      + [Create and preview a form](/help/edge/docs/forms/create-forms.md)
-      + [Enable form to send data](/help/edge/docs/forms/submit-forms.md)
-      + [Publish a form to sites page](/help/edge/docs/forms/publish-forms.md)
+      + [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+      + [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
+      + [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
       + [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
-      + [Change themes and style of form](/help/edge/docs/forms/style-theme-forms.md)
+      + [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
       + [Use rules to add dynamic behaviour to a form](/help/edge/docs/forms/rules-forms.md)
-      + [Thank you page](/help/edge/docs/forms/thank-you-page-form.md)
+      + [Show a custom thank you message after form submission](/help/edge/docs/forms/thank-you-page-form.md)
     + Capabilities {#advanced-features-eds-forms}
       + [Form fragments](/help/edge/docs/forms/form-fragments.md)
-      + [Repeatable sections](/help/edge/docs/forms/repeatable-forms.md)
+      + [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
       + [Translation](/help/edge/docs/forms/translate-forms.md)
       + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
       + [Custom Components](/help/edge/docs/forms/custom-components-forms.md)
     + References {#forms-references}
-      + [List of form block components](/help/edge/docs/forms/form-components.md)
+      + [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
   + Resources for Edge Delivery {#resources}
     + Sidekick {#sidekick}
       + [Using Sidekick](/help/edge/docs/sidekick.md)
@@ -967,6 +968,7 @@ user-guide-title: AEM as a Cloud Service
     + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
     + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
     + [Notifications](/help/implementing/cloud-manager/notifications.md)
+    + [Advanced Networking](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
     + SSL Certificates {#manage-ssl-certificates}
       + [Introduction](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
       + [Adding an SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)

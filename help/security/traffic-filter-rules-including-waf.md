@@ -281,7 +281,7 @@ Some rule examples follow. See the [rate limit section](#rules-with-rate-limits)
 
 **Example 1**
 
-This rule blocks requests coming from IP 192.168.1.1:
+This rule blocks requests coming from **IP 192.168.1.1**:
 
 ```
 kind: "CDN"
@@ -420,7 +420,7 @@ Rate limits are calculated per CDN POP. As an example, assume that POPs in Montr
 
 **Example 1**
 
-This rule blocks a client for 5m when it exceeds 100 req/sec (per CDN POP) in the last 60 sec:
+This rule blocks a client for 5m when it exceeds an average of 60 req/sec (per CDN POP) in the last 10 sec:
 
 ```
 kind: "CDN"
@@ -445,7 +445,7 @@ data:
 
 **Example 2**
 
-Block requests for 60s on path /critical/resource when it exceeds 100 req/sec (per CDN POP) in the last 60 sec:
+Block requests on path /critical/resource for 60s when it exceeds an average of 100 req/sec (per CDN POP) in the last 60 sec:
 
 ```
 kind: "CDN"
