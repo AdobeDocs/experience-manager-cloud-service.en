@@ -27,14 +27,14 @@ By the end of this article, you learn to:
 Create a spreadsheet with two columns:`Option` and `Value`, to define the options in different spreadsheet:
 
 1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive folder. 
-1. Create new spreadsheet in your AEM Project folder in Microsoft SharePoint Site or within your Google Drive folder and add the following:
+1. Create new spreadsheet in your AEM Project folder in Microsoft® SharePoint Site or within your Google Drive folder and add the following:
    
     * **Option**: Represents the display values of options in the drop-down menu.
     * **Value**: Represents the submitted value when a user selects the option.
 
     >[!NOTE]
     >
-    > If the value and option for an drop-down option are same, the spreadsheet can contain only the **Option** column.
+    > If the value and option for a drop-down option are same, the spreadsheet can contain only the **Option** column.
 
    Let's create a separate spreadsheet, [country-options](/help/forms/assets/country-options.xlsx) for the options displayed in the `Destination` drop-down list in the `enquiry` form.
 
@@ -50,7 +50,7 @@ Refer to the URL which showcases the `country-options` spreadsheet:
 
 ## Add URL to load drop-down list options{#add-url}
 
-The `Options` property of a `select` field accepts a URL. The URL returns a JSON array used as an options for the `Destination` drop-down list. To add the URL to load drop-down list options:
+The `Options` property of a `select` field accepts a URL. The URL returns a JSON array used as options for the `Destination` drop-down list. To add the URL to load drop-down list options:
 
 1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive and open your spreadsheet. You can also create new spreadsheet for a form.
 1. Copy the URL of `country-options` spreadsheet and paste it in the `Options` column for the `Destination` field.
