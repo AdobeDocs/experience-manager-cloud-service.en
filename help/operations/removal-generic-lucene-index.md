@@ -11,7 +11,7 @@ Adobe intends to remove the "generic Lucene" index (`/oak:index/lucene-*`) from 
 
 In AEM, full text queries are those using the following functions:
 
-* `jcr:contains ()` in JCR XPATH
+* `jcr:contains()` in JCR XPATH
 * `CONTAINS` in JCR-SQL2
 
 Such queries cannot return results without using an index. Unlike a query containing only path or property restrictions, a query containing a full text restriction for which no index can be found (and thus a traversal is performed) will always return zero results.
@@ -21,7 +21,7 @@ The generic Lucene index (`/oak:index/lucene-*`) has existed since AEM 6.0 / Oak
 In AEM 6.5 the generic Lucene index was marked as deprecated, indicating that it would be removed in future versions. Since then, a WARN has been logged when the index has been used as illustrated by the following log snippet:
 
 ```text
-org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains (*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains (.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Change the query or the index definitions.
+org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains(.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Change the query or the index definitions.
 ```
 
 In recent AEM versions, the generic Lucene index has been used to support a very small number of features. These are being reworked to use other indexes or otherwise modified to remove the dependency on this index.
@@ -29,7 +29,7 @@ In recent AEM versions, the generic Lucene index has been used to support a very
 For example, reference lookup queries, such as in the following example, should now use the index at `/oak:index/pathreference`, which indexes only `String` property values which match a regular expression that looks for JCR paths. 
 
 ```text
-//*[jcr:contains (., '"/content/dam/mysite"')]
+//*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
 To support larger customer data volumes, Adobe no longer creates the generic Lucene index on new AEM as a Cloud Service environments. Also, Adobe removes the index from existing repositories. [See the timeline](#timeline) at the end of this document for more details.
@@ -43,7 +43,7 @@ Customer applications which use queries which still depend on this index should 
 The generic Lucene index is currently used as a fallback if no other full text index can service a query. When this deprecated index is used, a message similar to the following is logged at the WARN level:
 
 ```text
-org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains (*, 'test') /* xpath: //*[jcr:contains (.,"test")] */ fullText="test", path=*). Change the query or the index definitions.
+org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Change the query or the index definitions.
 ```
 
 In some circumstances, Oak might attempt to use another full text index (such as `/oak:index/pathreference`) to support the full text query, but if the query string does not match the regular expression on the index definition, a message is logged at WARN level and the query will likely not return results.
@@ -55,7 +55,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak
 Once the generic Lucene index has been removed, a message as shown below is logged at WARN level if a full text query is not able to locate any suitable index definition:
 
 ```text
-org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains (*, 'test') /* xpath: //*[jcr:contains (.,"test")] */ fullText="test", path=*); no results are returned
+org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results are returned
 ```
 
 >[!IMPORTANT]
@@ -79,8 +79,8 @@ The most common source of queries using the generic Lucene index on a publish in
 In the simplest cases these might be queries with no node type specified thus implying `nt:base` or `nt:base` specified explicitly, such as:
 
 ```text
-/jcr:root/content/mysite//*[jcr:contains (., 'search term')]
-/jcr:root/content/mysite//element(*, nt:base)[jcr:contains (., 'search term')]
+/jcr:root/content/mysite//*[jcr:contains(., 'search term')]
+/jcr:root/content/mysite//element(*, nt:base)[jcr:contains(., 'search term')]
 ```
 
 >[!IMPORTANT]
@@ -92,13 +92,13 @@ In the simplest cases these might be queries with no node type specified thus im
 For example, the queries can be modified to return results matching pages or any of the aggregates beneath the `cq:Page node`. The query could thus become:
 
 ```text
-/jcr:root/content/mysite//element(*, cq:Page)[jcr:contains (., 'search term')]
+/jcr:root/content/mysite//element(*, cq:Page)[jcr:contains(., 'search term')]
 ```
 
 In other cases, a query might specify a node type but contain a full text restriction that cannot be handled by another full text index, such as:
 
 ```text
-/jcr:root/content/dam//element(*, dam:Asset)[jcr:contains (jcr:content/metadata/@cq:tags, 'NewsTopics:cateogries/domestic'))]
+/jcr:root/content/dam//element(*, dam:Asset)[jcr:contains(jcr:content/metadata/@cq:tags, 'NewsTopics:cateogries/domestic'))]
 ```
 
 In this case the query has the `dam:Asset` node type, but contains a full text restriction on the relative `jcr:content/metadata/@cq:tags` property.
@@ -130,7 +130,7 @@ The node types against which to search can be specified using the `nodeTypes` pr
 At present, if no `nodeTypes` property is present, the underlying search query will use the `nt:base` node type, and thus is likely to use the generic Lucene index, typically logging WARN messages similar to the following.
 
 ```text
-20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains (*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains (., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Change the query or the index definitions.
+20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains(., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Change the query or the index definitions.
 ```
 
 Prior to removal of the generic Lucene index, the `pathfield` component will be updated so that the search box is hidden for components using the default picker, which do not provide a `nodeTypes` property.
