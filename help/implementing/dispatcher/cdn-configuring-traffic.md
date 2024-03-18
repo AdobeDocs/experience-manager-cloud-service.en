@@ -30,9 +30,9 @@ Functionally, the various features mentioned above should be evaluated in the fo
 
 ## Setup {#initial-setup}
 
-Before you can configure traffic at the CDN you need to create the following:
+Before you can configure traffic at the CDN you need to do the following:
 
-1. First, create this folder and file structure in the top-level folder of your Git project:
+* First, create this folder and file structure in the top-level folder of your Git project:
 
 ```
 
@@ -40,7 +40,7 @@ config/
      cdn.yaml
 ```
 
-2. The `cdn.yaml` configuration file should contain both metadata and the rules described in examples below.
+* Secondly, the `cdn.yaml` configuration file should contain both metadata and the rules described in examples below.
 
 ### Request Transformations {#request-transformations}
 

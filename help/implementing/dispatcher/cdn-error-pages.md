@@ -13,9 +13,9 @@ In the unlikely event that the [Adobe-managed CDN](/help/implementing/dispatcher
 
 ## Setup {#setup}
 
-Before you can override the default error page you need to create the following:
+Before you can override the default error page you need to do the following:
 
-1. First, create this folder and file structure in the top-level folder of your Git project:
+* First, create this folder and file structure in the top-level folder of your Git project:
 
 ```
 config/
@@ -23,7 +23,7 @@ config/
 
 ```
 
-2. The `cdn.yaml` configuration file should contain metadata and the error page references, as described below.
+* Secondly, the `cdn.yaml` configuration file should contain metadata and the error page references, as described below.
 
 ### Configuration {#configuration}
 
