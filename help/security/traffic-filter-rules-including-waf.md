@@ -464,9 +464,9 @@ data:
 
 ## Traffic Filter Rules Alerts {#traffic-filter-rules-alerts}
 
->[!Note]
+>[!NOTE]
 >
-> This feature is not yet released. To gain access through the early adopter program, email **aemcs-waf-adopter@adobe.com**.
+>This feature is not yet released. To gain access through the early adopter program, email **aemcs-waf-adopter@adobe.com**.
 
 A rule can be configured to send an Actions Center notification if it is triggered 10 times within a 5 minute window, thereby alerting you when certain traffic patterns are occuring so you can take any necessary measures. Learn more about [Actions Center](/help/operations/actions-center.md), including how to setup the required Notification Profiles to receive emails.
 
