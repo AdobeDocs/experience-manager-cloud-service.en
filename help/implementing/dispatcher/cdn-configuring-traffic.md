@@ -9,9 +9,9 @@ feature: Dispatcher
 >[!NOTE]
 >This feature is not yet generally available. To join the early-adopter program, email [aemcs-cdn-config-adopter@adobe.com](aemcs-cdn-config-adopter@adobe.com) and describe your use case.
 
-AEM as a Cloud Service offers a collection of features configurable at the [Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) that modify the nature of either incoming requests or outgoing responses. The following rules, described in detail in this page, can be declared to achieve the following behavior:
+AEM as a Cloud Service offers a collection of features configurable at the [Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) layer that modify the nature of either incoming requests or outgoing responses. The following rules, described in detail in this page, can be declared to achieve the following behavior:
 
-* [Request transformations](#request-transformations) - modify aspects of incoming requests, including headers, paths, and parameters.
+* [Request transformations](#request-transformations) - modify aspects of incoming requests, including headers, paths and parameters.
 * [Response transformations](#response-transformations) - modify headers that are on the way back to the client (for example, a web browser).
 * [Client-side redirectors](#client-side-redirectors) - trigger a browser redirect.
 * [Origin selectors](#origin-selectors) - proxy to a different origin backend.
@@ -20,7 +20,7 @@ Also configurable at the CDN are Traffic Filter Rules (including WAF), which con
 
 Additionally, if the CDN cannot contact its origin, you can write a rule that references a self-hosted custom error page (which is then rendered). Learn more about this by reading the [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md) article.
 
-All these rules, which are declared in a configuration file in source control, are deployed by using [Cloud Manager's Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Be aware that the cumulative size of the configuration file cannot exceed 100KB.
+All these rules, declared in a configuration file in source control, are deployed by using [Cloud Manager's Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Be aware that the cumulative size of the configuration file cannot exceed 100KB.
 
 ## Order of Evaluation {#order-of-evaluation}
 
@@ -32,7 +32,7 @@ Functionally, the various features mentioned above should be evaluated in the fo
 
 Before you can configure traffic at the CDN you need to create the following:
 
-1. First, create this folder and file structure in the top-level folder of your project in Git:
+1. First, create this folder and file structure in the top-level folder of your Git project:
 
 ```
 
@@ -44,9 +44,9 @@ config/
 
 ### Request Transformations {#request-transformations}
 
-Request transformation rules allow you to modify incoming requests. The rules support setting, unsetting, and altering paths, query parameters, and headers (including cookies) based on various matching conditions, including regular expressions. You can also set variables, which can be referenced later in the evaluation sequence.
+Request transformation rules allow you to modify incoming requests. The rules support setting, unsetting, and altering paths, query parameters, and headers (including cookies) based on various matching conditions, including regular expressions. You can also set variables, which can then be referenced later in the evaluation sequence.
 
-Use cases are varied, and include url rewrites for application simplification or mapping legacy URLs.
+Use cases are varied and include URL rewrites for application simplification or mapping legacy URLs.
 
 As mentioned earlier, there is a size limit to the configuration file so organizations with larger requirements should define rules in the `apache/dispatcher` layer.
 
@@ -292,7 +292,7 @@ Explained in the table below are some the actions you can set.
 
 ### Origin Selectors {#origin-selectors}
 
-You can leverage the AEM CDN to route traffic to different backends, including non-Adobe applications, possibly on a per-path or subdomain basis.
+You can leverage the AEM CDN to route traffic to different backends, including non-Adobe applications (perhaps on a per-path or subdomain basis).
 
 Configuration example:
 
@@ -333,12 +333,12 @@ Explained in the table below are some the actions you can set.
 
 ### Origins {#origins}
 
-Connections to origins are SSL only, and use port 443.
+Connections to origins are SSL only and use port 443.
 
 | Property          | Meaning                    |
 |------------------|--------------------------------------|
 | **name** |Name which can be referenced by "action.originName".|
-| **domain** |Domain name used to connect to the custom backend, it is also used for SSL SNI and validation.|
+| **domain** |Domain name used to connect to the custom backend. It is also used for SSL SNI and validation.|
 | **ip** (optional, supported iv4 and ipv6) |If provided, it is used to connect to the backend instead of "domain". Still "domain" is used for SSL SNI and validation.|
 | **forwardHost** (optional, default is false) |If set to true, then "Host" header from the client request will be passed to the backend, otherwise the "domain" value will be passed in the "Host" header.|
 | **forwardCookie** (optional, default is false) |If set to true then the "Cookie" header from the client request will be passed to backend, otherwise the Cookie header is removed.|
