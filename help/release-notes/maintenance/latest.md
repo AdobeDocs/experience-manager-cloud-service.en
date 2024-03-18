@@ -7,25 +7,53 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#release-X}
+## Release 15541 {#release-15541}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on March X, 2024. The previous maintenance release was release 15262.
+Summarized below are the continuous improvements for maintenance release 15541, which was publicly released on March 18, 2024. The previous maintenance release was release 15262.
 
 2024.3.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-X}
+### Enhancements {#enhancements-15541}
 
 None.
 
-### Fixed Issues {#fixed-issues-X}
+### Fixed Issues {#fixed-issues-15541}
+
+GRANITE-50774: GraniteContent should use deterministic order of property-values at init time.
+
+### Known Issues {#known-issues-15541}
 
 None.
 
-### Known Issues {#known-issues-X}
+### Change Notice {#change-notice-15541}
 
-None.
+**Actions Required**
 
-### Embedded Technologies {#embedded-tech-X}
+#### Set CM Java Version to 11 {#set-java-version-11}
+
+The new version of the aem-sdk-api contains classes compiled with a Java 11 target, which is not compatible with the Cloud Manager Build environment default JDK version 1.8. This update requires that Maven is executed using JDK 11.
+
+Customers are advised to add a `.cloudmanager/java-version` file to the root of their git repo with the contents: `11`. See [Build Environment / Setting the Maven JDK Version](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version).
+
+#### Update aem-cloud-testing-clients to 1.2.1 {#update-aem-cloud-testing-clients}
+
+Upcoming changes will require the library [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) used in your custom functional tests to be updated to at least version **1.2.1**
+
+Make sure that your dependency in `it.tests/pom.xml` has been updated.
+
+```xml
+<dependency>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.1</version>
+</dependency>
+```
+
+This change will be required after April 6, 2024.
+
+Failing to update the dependency library will result in pipeline failures at the "Custom Functional Testing" step.
+
+### Embedded Technologies {#embedded-tech-15541}
 
 |Technology|Version|Link|
 |---|---|---|
