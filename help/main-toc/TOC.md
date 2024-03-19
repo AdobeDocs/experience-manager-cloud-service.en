@@ -1138,6 +1138,8 @@ user-guide-title: AEM as a Cloud Service
     + [Migrating the Dispatcher configuration from AMS to AEM as a Cloud Service](/help/implementing/dispatcher/ams-aem.md)
     + [Validating and Debugging using Dispatcher Tools Legacy](/help/implementing/dispatcher/validation-debug-legacy.md)
     + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
+    + [Configuring Traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+    + [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md)
     + [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
 + Connectors {#connectors}
   + [Implementing an AEM Connector](/help/connectors/implement.md)
