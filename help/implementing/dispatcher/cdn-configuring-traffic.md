@@ -290,7 +290,7 @@ Explained in the table below are some the actions you can set.
 | **set** |reqHeader, value|Sets a specified header to a given value in the response.|
 | **unset** |respHeader|Removes a specified header from the response.|
 
-### Origin Selectors {#origin-selectors}
+## Origin Selectors {#origin-selectors}
 
 You can leverage the AEM CDN to route traffic to different backends, including non-Adobe applications (perhaps on a per-path or subdomain basis).
 
