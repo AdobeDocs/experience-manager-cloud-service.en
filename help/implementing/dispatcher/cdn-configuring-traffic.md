@@ -234,7 +234,7 @@ data:
 
 ```
 
-### Response Transformations {#response-transformations}
+## Response Transformations {#response-transformations}
 
 Response transformation rules allow you to set and unset headers of the CDN's outgoing responses. Also, see the example above for referencing a variable previously set in a request transformation rule.
 
