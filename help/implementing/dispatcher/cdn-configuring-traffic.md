@@ -345,7 +345,7 @@ Connections to origins are SSL only and use port 443.
 | **forwardAuthorization** (optional, default is false) |If set to true then the "Authorization" header from the client request will be passed to the backend, otherwise the Authorization header is removed.|
 | **timeout** (optional, in seconds, default is 60) |Number of seconds the CDN should wait for a backend server to deliver the first byte of an HTTP response body. This value is also used as a between bytes timeout to the backend server.|
 
-### Client-side Redirectors {#client-side-redirectors}
+## Client-side Redirectors {#client-side-redirectors}
 
 You can use client side redirect rules for 301,302 and similar client side redirects. If a rule matches, the CDN responds with a status line that includes the status code and message (for example, HTTP/1.1 301 Moved Permanently), as well as the location header set.
 
