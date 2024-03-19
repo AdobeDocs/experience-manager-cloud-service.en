@@ -7,7 +7,7 @@ feature: Dispatcher
 # Configuring Traffic at the CDN {#cdn-configuring-cloud}
 
 >[!NOTE]
->This feature is not yet generally available. To join the early-adopter program, email [aemcs-cdn-config-adopter@adobe.com](aemcs-cdn-config-adopter@adobe.com) and describe your use case.
+>This feature is not yet generally available. To join the early-adopter program, email **aemcs-cdn-config-adopter@adobe.com** and describe your use case.
 
 AEM as a Cloud Service offers a collection of features configurable at the [Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) layer that modify the nature of either incoming requests or outgoing responses. The following rules, described in detail in this page, can be declared to achieve the following behavior:
 
