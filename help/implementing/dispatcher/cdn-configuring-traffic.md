@@ -1,7 +1,7 @@
 ---
 title: Configuring Traffic at the CDN 
 description: Learn how to configure CDN traffic by declaring rules and filters in a configuration file and deploying them to the CDN by using the Cloud Manager Configuration Pipeline.
-feature: Dispatcher
+feature: CDN
 ---
 
 # Configuring Traffic at the CDN {#cdn-configuring-cloud}
