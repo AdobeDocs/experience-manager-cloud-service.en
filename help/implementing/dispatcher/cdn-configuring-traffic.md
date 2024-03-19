@@ -324,7 +324,7 @@ data:
 
 **Actions**
 
-Explained in the table below are some the actions you can set.
+Explained in the table below is the one available action.
 
 | Name      | Properties               | Meaning     |
 |-----------|--------------------------|-------------|
