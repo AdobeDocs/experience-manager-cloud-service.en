@@ -24,7 +24,7 @@ All these rules, declared in a configuration file in source control, are deploye
 
 ## Order of Evaluation {#order-of-evaluation}
 
-Functionally, the various features mentioned are evaluated in the following sequence:
+Functionally, the various features mentioned previously are evaluated in the following sequence:
 
 ![image](/help/implementing/dispatcher/assets/order.png)
 
@@ -324,7 +324,7 @@ data:
 
 **Actions**
 
-Explained in the table below is the one available action.
+Explained in the table below is the available action.
 
 | Name      | Properties               | Meaning     |
 |-----------|--------------------------|-------------|
