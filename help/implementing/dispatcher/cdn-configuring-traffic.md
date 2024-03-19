@@ -42,7 +42,7 @@ config/
 
 * Secondly, the `cdn.yaml` configuration file should contain both metadata and the rules described in examples below.
 
-### Request Transformations {#request-transformations}
+## Request Transformations {#request-transformations}
 
 Request transformation rules allow you to modify incoming requests. The rules support setting, unsetting, and altering paths, query parameters, and headers (including cookies) based on various matching conditions, including regular expressions. You can also set variables, which can then be referenced later in the evaluation sequence.
 
