@@ -347,7 +347,7 @@ Connections to origins are SSL only and use port 443.
 
 ## Client-side Redirectors {#client-side-redirectors}
 
-You can use client side redirect rules for 301,302 and similar client side redirects. If a rule matches, the CDN responds with a status line that includes the status code and message (for example, HTTP/1.1 301 Moved Permanently), as well as the location header set.
+You can use client side redirect rules for 301, 302 and similar client side redirects. If a rule matches, the CDN responds with a status line that includes the status code and message (for example, HTTP/1.1 301 Moved Permanently), as well as the location header set.
 
 Both absolute and relative locations with fixed values are allowed.
 
