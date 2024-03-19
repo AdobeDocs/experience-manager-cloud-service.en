@@ -84,7 +84,7 @@ For testing purposes, call the dedicated endpoint with the supported error code,
 ```
 curl
 
-"https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
+curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 ```
 
