@@ -331,7 +331,7 @@ Explained in the table below are some the actions you can set.
 |**selectOrigin** |originName|Name of one of the defined origins.|
 |     |useCache (optional, default is true)|Flag whether to use caching for requests matching this rule.|
 
-### Origins {#origins}
+**Origins**
 
 Connections to origins are SSL only and use port 443.
 
