@@ -34,6 +34,14 @@ See [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/in
 >
 >Only requests from the allowed IPs are served by AEM's managed CDN. If you point your own CDN to the AEM-managed CDN, then make sure the IPs of your CDN are included in the allowlist.
 
+### Configuring Traffic at the CDN {#cdn-configuring-cloud}
+
+Rules to configure CDN traffic and filters can be declared in a configuration file and deployed to the CDN, by using the [Cloud Manager's Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). For more details, see [Configuring Traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) and [Traffic Filter rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md).
+
+### Configuring CDN Error Pages {#cdn-error-pages}
+
+A CDN error page can be configured to override the default, unbranded page that is served to the browser in the rare event that AEM cannot be reached. For more details, see [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md).
+
 ## Customer CDN points to AEM-managed CDN {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
