@@ -182,7 +182,7 @@ data:
 
 **Actions**
 
-Explained in the table below are some the actions you can set.
+Explained in the table below are the available actions.
 
 | Name      | Properties               | Meaning     |
 |-----------|--------------------------|-------------|
