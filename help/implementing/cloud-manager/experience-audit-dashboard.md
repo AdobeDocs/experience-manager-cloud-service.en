@@ -34,7 +34,7 @@ Experience Audit is available for Cloud Manager:
 
 * Sites production pipelines, by default
 * Development full-stack pipelines, optionally
-* Front-end pipelines, optionally
+* Development front-end pipelines, optionally
 
 See the [Configuration section](#configuration) for more information on how to configure the audit for the optional environments.
 

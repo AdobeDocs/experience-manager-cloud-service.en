@@ -122,7 +122,7 @@ Make sure that your dependency in `it.tests/pom.xml` has been updated.
 
 >[!NOTE]
 >
->This change will be required after April 6, 2024. 
+>This change needs to be performed before April 6, 2024. 
 >Failing to update the dependency library will result in pipeline failures at the "Custom Functional Testing" step.
 
 ### Local Test Execution {#local-test-execution}
