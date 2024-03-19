@@ -27,7 +27,7 @@ By the end of this article, you learn to:
 Create a spreadsheet with two columns:`Option` and `Value`, to define the options in different spreadsheet:
 
 1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive folder. 
-1. Create new spreadsheet in your AEM Project folder in Microsoft® SharePoint Site or within your Google Drive folder and add the following:
+2. Create new sheet in your AEM Project folder in Microsoft® SharePoint Site or within your Google Drive folder and add the following:
    
     * **Option**: Represents the display values of options in the drop-down menu.
     * **Value**: Represents the submitted value when a user selects the option.
@@ -36,24 +36,27 @@ Create a spreadsheet with two columns:`Option` and `Value`, to define the option
     >
     > If the value and option for a drop-down option are same, the spreadsheet can contain only the **Option** column.
 
-   Let's create a separate spreadsheet, [country-options](/help/forms/assets/country-options.xlsx) for the options displayed in the `Destination` drop-down list in the `enquiry` form.
+   Let's create a separate sheet, [shared-country](/help/forms/assets/country-options.xlsx) for the options displayed in the `Destination` drop-down list in the `enquiry` form.
 
-    Refer to the illustration below, depicting the `country-options` spreadsheet:
+    Refer to the illustration below, depicting the `shared-country` spreadsheet:
 
    ![Drop-down for country](/help/forms/assets/drop-down-country-options.png)
 
-1. Share the `country-options` sheet with the Adobe Experience Manager user (helix@adobe.com).
-1.  Preview and publish the `country-options` sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
+1.  Preview and publish the `shared-country` sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
   
-Refer to the URL which showcases the `country-options` spreadsheet:
-   https://main--aem-forms-eds-repo--ruchitas123.hlx.live/country-options.json
+Refer to the URL which showcases the `shared-country` sheet:
+   https://main--portal--wkndforms.hlx.live/enquiry.json?sheet=country 
+
+>[!NOTE]
+>
+> `?sheet=country` is a query parameter appended to the URL. This parameter indicates the JSON filtered based on the `shared-country` sheet. It redirects to the JSON file containing information related to different countries.
 
 ## Add URL to load drop-down list options{#add-url}
 
 The `Options` property of a `select` field accepts a URL. The URL returns a JSON array used as options for the `Destination` drop-down list. To add the URL to load drop-down list options:
 
 1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive and open your spreadsheet. You can also create new spreadsheet for a form.
-1. Copy the URL of `country-options` spreadsheet and paste it in the `Options` column for the `Destination` field.
+1. Copy the URL of `shared-country` sheet and paste it in the `Options` column for the `Destination` field.
 
      ![Enquiry spreadsheet](/help/forms/assets/drop-down-enquiry.png)
 
@@ -68,7 +71,7 @@ After integrating the URL into the form definition to load drop-down list option
 
 Refer to the URL below, which displays the `enquiry` form displaying the options saved in the separate spreadsheet:
 
-https://main--aem-forms-eds-repo--ruchitas123.hlx.live/
+https://main--portal--wkndforms.hlx.live/enquiry 
 
 ## See also
 
