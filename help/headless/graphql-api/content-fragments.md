@@ -919,6 +919,10 @@ The following limitations exist:
 
 GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
 
+>[!CAUTION]
+>
+>Only *image* assets from Dynamic Media can be referenced.
+
 The solution in GraphQL means you can:
 
 * use `_dmS7Url` on the `ImageRef` reference
