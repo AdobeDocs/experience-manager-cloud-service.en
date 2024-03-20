@@ -48,11 +48,11 @@ DAM librarians, developers, and super-users may continue to use the Admin view o
 
 For information on how to access the Assets view and some of the simplifications that it offers over Admin view, see [Introduction to Assets view](/help/assets/assets-view-introduction.md).
 
-## Integration with document-based authoring for Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
+## Integration with Document-based Authoring  for Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
 
 Edge Delivery enables you to create fast, engaging websites where authors can update and publish content quickly, and new sites can be launched rapidly. 
 
-Integrate AEM Assets with document-based authoring for Edge Delivery Services to enable website authors to use images available in AEM Assets repositories while authoring documents in Microsoft Word or Google Docs. For more information, see [Integrate AEM Assets with document-based authoring](/help/edge/using.md#integrate-assets-edge).
+Integrate AEM Assets with Document-based Authoring  for Edge Delivery Services to enable website authors to use images available in AEM Assets repositories while authoring documents in Microsoft Word or Google Docs. For more information, see [Integrate AEM Assets with Document-based Authoring ](/help/edge/using.md#integrate-assets-edge).
 
 ## Integration with Adobe Journey Optimizer {#integration-with-ajo}
 

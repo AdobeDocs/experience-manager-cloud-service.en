@@ -8,14 +8,14 @@ exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 
 With Edge Delivery Services, authoring is easy, fast, and flexible. You have two options to author content for Edge Delivery Services:
 
-* [Document-based authoring](#document-based) - Such as Microsoft Word or Google Docs
+* [Document-based Authoring ](#document-based) - Such as Microsoft Word or Google Docs
 * [Universal Editor](#universal-editor) - A modern UI for authoring content within AEM
 
-## Document-Based Authoring {#document-based}
+## Document-based Authoring  {#document-based}
 
-In the case of document-based authoring, you can work with a variety of sources such as Microsoft Word and Google Docs. Documents from these sources become pages on your website. Headings, lists, images, font elements, videos can all be transferred from the initial source into your website. You can add metadata for SEO purposes or use blocks to work with structured content and add functionality.
+In the case of Document-based Authoring , you can work with a variety of sources such as Microsoft Word and Google Docs. Documents from these sources become pages on your website. Headings, lists, images, font elements, videos can all be transferred from the initial source into your website. You can add metadata for SEO purposes or use blocks to work with structured content and add functionality.
 
-For further details on document-based authoring, please refer to [this document in the Edge Delivery Services documentation.](/help/edge/docs/authoring.md)
+For further details on Document-based Authoring , please refer to [this document in the Edge Delivery Services documentation.](/help/edge/docs/authoring.md)
 
 ## Universal Editor Authoring {#universal-editor}
 
