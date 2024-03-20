@@ -140,7 +140,7 @@ Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been add
 
    ```json
      {
-       products (
+       products(
        filter: { sku: { eq: "YOUR_SKU" } }
        ) {
            items {
@@ -307,7 +307,7 @@ Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-
        Integer ecoFriendlyValue;
        try {
            ecoFriendlyValue = productRetriever.fetchProduct().getAsInteger(ECO_FRIENDLY_ATTRIBUTE);
-           if(ecoFriendlyValue != null && ecoFriendlyValue.equals (Integer.valueOf(1))) {
+           if(ecoFriendlyValue != null && ecoFriendlyValue.equals(Integer.valueOf(1))) {
                LOGGER.info("*** Product is Eco Friendly**");
                return true;
            }

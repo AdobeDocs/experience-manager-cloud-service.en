@@ -74,10 +74,10 @@ Resource node = tag.adaptTo(Resource.class);
 
 ```java
 // Getting the tags of a Resource:
-Tag[] tags = tagManager.getTags (resource);
+Tag[] tags = tagManager.getTags(resource);
 
 // Setting tags to a Resource:
-tagManager.setTags (resource, tags);
+tagManager.setTags(resource, tags);
 ```
 
 ### Searching for Tags {#searching-for-tags}
@@ -138,8 +138,8 @@ The server-side API has localized `title`-related methods:
 
 * [`com.day.cq.tagging.Tag`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/Tag.html)
   * `getLocalizedTitle(Locale locale)`
-  * `getLocalizedTitlePaths ()`
-  * `getLocalizedTitles ()`
+  * `getLocalizedTitlePaths()`
+  * `getLocalizedTitles()`
   * `getTitle(Locale locale)`
   * `getTitlePath(Locale locale)`
 * [`com.day.cq.tagging.TagManager`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/TagManager.html)

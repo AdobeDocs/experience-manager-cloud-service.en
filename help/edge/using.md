@@ -17,13 +17,13 @@ Ingesting from multiple content sources offers maximum flexibility to the user. 
 
 There are cases where the content source is predefined or otherwise not flexible (e.g. the project can not use Sharepoint or Google Drive). But in many cases, the tool is not preordained and choice of tool is not black and white.
 
-Adobe's guiding principle is simplicity. Start with document-based authoring and add complexity when needed. If a tool change is needed, AEM's Edge Delivery Services integration covers content migration.
+Adobe's guiding principle is simplicity. Start with Document-based Authoring  and add complexity when needed. If a tool change is needed, AEM's Edge Delivery Services integration covers content migration.
 
 ![Content source flexibility](assets/content-source-flexiblity.png)
 
 ## Authoring {#authoring-edge}
 
-With Edge Delivery Services, authoring is easy, fast, and flexible. You can choose to author using document-based authoring or authoring in AEM with the Universal Editor.
+With Edge Delivery Services, authoring is easy, fast, and flexible. You can choose to author using Document-based Authoring  or authoring in AEM with the Universal Editor.
 
 Please see the document [Authoring Content for Edge Delivery Services](authoring.md) for more information.
 
