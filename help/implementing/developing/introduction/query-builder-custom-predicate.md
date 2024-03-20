@@ -210,7 +210,7 @@ public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
     static final String PREDICATE_SINCE_OP = " >= ";
     static final String PREDICATE_ACTION = "action";
 
-    Logger log = LoggerFactory.getLogger(getClass ());
+    Logger log = LoggerFactory.getLogger(getClass());
 
     /**
      * Returns a XPath expression filtering by replication metadata.
