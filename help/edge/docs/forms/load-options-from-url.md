@@ -42,7 +42,7 @@ Create a spreadsheet with two columns:`Option` and `Value`, to define the option
 
    ![Drop-down for country](/help/forms/assets/drop-down-country-options.png)
 
-1.  Preview and publish the `shared-country` sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
+1. Preview and publish the `shared-country` sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
   
 Refer to the URL which showcases the `shared-country` sheet:
    https://main--portal--wkndforms.hlx.live/enquiry.json?sheet=country 
@@ -60,7 +60,7 @@ The `Options` property of a `select` field accepts a URL. The URL returns a JSON
 
      ![Enquiry spreadsheet](/help/forms/assets/drop-down-enquiry.png)
 
-2. Preview and publish the sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Preview and publish the sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
 
    ![Drop-down for country](/help/forms/assets/load-dropdown-options-form.png)
