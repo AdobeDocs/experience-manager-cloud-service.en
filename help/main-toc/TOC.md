@@ -73,6 +73,8 @@ user-guide-title: AEM as a Cloud Service
       + [Release Notes for 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
+    + 2024 {#2024}
+      + [Maintenance Release Notes for 2024.3.0](/help/release-notes/maintenance/2024/2024-3-0.md) 
     + 2023 {#2023}
       + [Maintenance Release Notes for 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md) 
       + [Maintenance Release Notes for 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md) 
@@ -1140,6 +1142,8 @@ user-guide-title: AEM as a Cloud Service
     + [Migrating the Dispatcher configuration from AMS to AEM as a Cloud Service](/help/implementing/dispatcher/ams-aem.md)
     + [Validating and Debugging using Dispatcher Tools Legacy](/help/implementing/dispatcher/validation-debug-legacy.md)
     + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
+    + [Configuring Traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+    + [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md)
     + [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
 + Connectors {#connectors}
   + [Implementing an AEM Connector](/help/connectors/implement.md)
