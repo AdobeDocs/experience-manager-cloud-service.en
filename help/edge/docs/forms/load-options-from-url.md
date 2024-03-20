@@ -27,7 +27,7 @@ By the end of this article, you learn to:
 Create a spreadsheet with two columns:`Option` and `Value`, to define the options in different spreadsheet:
 
 1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive folder. 
-2. Create new sheet in your AEM Project folder in Microsoft® SharePoint Site or within your Google Drive folder and add the following:
+1. Create new sheet in your AEM Project folder in Microsoft® SharePoint Site or within your Google Drive folder and add the following:
    
     * **Option**: Represents the display values of options in the drop-down menu.
     * **Value**: Represents the submitted value when a user selects the option.
@@ -41,10 +41,9 @@ Create a spreadsheet with two columns:`Option` and `Value`, to define the option
     Refer to the illustration below, depicting the `shared-country` spreadsheet:
 
    ![Drop-down for country](/help/forms/assets/drop-down-country-options.png)
-
 1. Preview and publish the `shared-country` sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
   
-Refer to the URL which showcases the `shared-country` sheet:
+   Refer to the URL which showcases the `shared-country` sheet:
    https://main--portal--wkndforms.hlx.live/enquiry.json?sheet=country 
 
 >[!NOTE]
