@@ -396,7 +396,7 @@ The embed code returned by Experience Manager Assets has a ready-to-use event ha
                 "asset" : "/content/dam/mac/aodmarketingna/shoppable-banner/shoppable-banner.jpg" }
         })
         /* // Example of interactive image event for Quickview.
-             s7interactiveimageviewer.setHandlers ({
+             s7interactiveimageviewer.setHandlers({
                 "quickViewActivate": function(inData) {
                     var sku=inData.sku; //SKU for product ID
                     //To pass other parameter from the hotspot, add custom parameter during the hotspot setup as parameterName=value
@@ -420,7 +420,7 @@ Using the previous Quickview URL examples, you can see in the following examples
  <tbody>
   <tr>
    <td><p>Single SKU, found in the query string</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers ({
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
       },
@@ -428,7 +428,7 @@ Using the previous Quickview URL examples, you can see in the following examples
   </tr>
   <tr>
    <td><p>Single SKU, found in the URL path</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers ({
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
       },
@@ -436,7 +436,7 @@ Using the previous Quickview URL examples, you can see in the following examples
   </tr>
   <tr>
    <td><p>SKU and category ID in the query string</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers ({
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
       },
@@ -478,7 +478,7 @@ The following is the complete source code:
    "config" : "/etc/dam/presets/viewer/Shoppable_Media",
    "asset" : "/content/dam/mac/aodmarketingna/shoppable-banner/shoppable-banner.jpg" }
  })
-   s7interactiveimageviewer.setHandlers ({
+   s7interactiveimageviewer.setHandlers({
    "quickViewActivate": function(inData) {
      var sku=inData.sku;
      var categoryId=inData.categoryId;

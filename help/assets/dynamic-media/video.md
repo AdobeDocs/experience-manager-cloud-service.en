@@ -1232,7 +1232,7 @@ public class ManifestServlet extends HttpServlet {
     private void error(String errorMessage, HttpServletResponse response) throws IOException { 
         ManifestUrl errorManifest = new ManifestUrl(null); 
         errorManifest.setErrorMessage(errorMessage); 
-        response.setStatus (HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
+        response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
         objectMapper.writeValue(response.getWriter(), errorManifest); 
     } 
 } 
@@ -1277,7 +1277,7 @@ public abstract class VideoResponse {
 ```java
 public final class Constants { 
 
-     private Constants () { 
+     private Constants() { 
      } 
 
      public static final String VIDEO_API_PREFIX = "/dynamicmedia/video"; 
@@ -1339,7 +1339,7 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
   */ 
  public static String getRealContextPath(HttpServletRequest req) { 
      final String path = req.getContextPath(); 
-     if (path.equals (CONTEXT_PATH)) { 
+     if (path.equals(CONTEXT_PATH)) { 
          return ""; 
      } 
      return path.substring(CONTEXT_PATH.length()); 
