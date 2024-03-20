@@ -22,7 +22,7 @@ By the end of the article, you learn to:
 The `GOOGLETRANSLATE` function in Google sheets translates forms by tapping into built-in translation tool, changing text from one language to another directly within a spreadsheet. To translate forms within Google Drive:
 
 1. Go to your AEM Project folder on Google Drive and open your spreadsheet. You can also create new spreadsheet for a form.
-1. 
+1. Add a sheet to your spreadsheet as 
 
 ## Translate forms within SharePoint Site{#translate-form-sharepoint}
 
