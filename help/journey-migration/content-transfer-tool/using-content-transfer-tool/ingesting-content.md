@@ -149,6 +149,12 @@ If "AEM Version Updates" is active (that is, updates are running or are queued t
 
 ### Top-up Ingestion Failure Due to Uniqueness Constraint Violation {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_uuid"
+>title="Uniqueness Constraint Violation"
+>abstract="A common cause of a non-wipe ingestion failure is a conflict in node ids. Only one of the conflicting nodes can exist."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Top-up Ingestion"
+
 A common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a conflict in node ids. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
@@ -163,6 +169,12 @@ This conflict must be resolved manually. Someone familiar with the content must 
 
 ### Top-up Ingestion Failure Due to Unable to Delete Referenced Node {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
+>title="Unable to Delete Referenced Node"
+>abstract="A common cause of a non-wipe ingestion failure is a version conflict for a particular node on the destination instance. The versions of the node must be remedied."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Top-up Ingestion"
+
 Another common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a version conflict for a particular node on the destination instance. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e0976a8
@@ -174,6 +186,12 @@ The solution may require that the top-up extraction is done again without the of
 Best practices indicate that if a **Non-Wipe** ingestion must be run using a migration set that includes versions, it is crucial that content on the destination is modified as little as possible, until the migration journey is complete. Otherwise, these conflicts can occur.
 
 ### Ingestion Failure Due to Large Node Property Values {#ingestion-failure-due-to-large-node-property-values}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_referenced_bson"
+>title="Large Node Property"
+>abstract="A common cause of an ingestion failure is exceeding the maximum size of node property values. Follow the documentation, including those related to the BPA report, to remedy this situation."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="Migration Prerequisites"
 
 Node property values stored in MongoDB cannot exceed 16 MB. If a node value exceeds the supported size, the ingestion fails and the log will contain a `BSONObjectTooLarge` error and specify which node exceeded the maximum. This is a MongoDB restriction.
 
