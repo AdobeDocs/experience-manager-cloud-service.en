@@ -100,9 +100,9 @@ To apply Google reCAPTCHA to all the forms on your Site that use Adaptive Forms 
     >
     >  You can retrieve the reCAPTCHA keys from the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
 
-1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview and publish the sheet. 
+1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview and publish the site. 
 
-The reCAPTCHA badge starts appearing for all the forms. 
+The reCAPTCHA badge starts appearing for all the forms on your Site. 
 
 ## See also
 
