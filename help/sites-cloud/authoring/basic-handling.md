@@ -30,7 +30,7 @@ To get a good understanding of the basic use of AEM, this document is based on t
 
 Whenever a user first accesses a console, a product navigation tutorial is started. Take a minute to select through to get a good overview of the basic handling of AEM.
 
-![Navigation tutorial](assets/tutorial.png)
+![Navigation tutorial](assets/basic-handling-tutorial.png)
 
 Select **Next** to advance to the next page of the overview. Select **Close** or select outside of the overview dialog to close.
 
@@ -42,7 +42,7 @@ You can navigate between the consoles using the global navigation panel. This is
 
 You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
 
-![Navigation panel top bar](assets/basic-handling-navigation-bar.png)
+![Navigation panel top bar](assets/basic-handling-navigation-options.png)
 
 Global navigation has two panels, represented by icons at the left-margin of the screen:
 
@@ -80,31 +80,37 @@ In the **Tools** panel has a side panel containing a range of categories, that g
 
 The header is always present at the top of the screen. While most options in the header remain the same no matter where you are in the system, some are context-specific.
 
-![Navigation header](/help/sites-cloud/authoring/assets/navigation-bar.png)
+![Navigation header](/help/sites-cloud/authoring/assets/basic-handling-navigation-bar.png)
 
 * [Global Navigation](#global-navigation) - Select the **Adobe Experience Manager** link to navigate between consoles.
 
-  ![Global navigation](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![Global navigation](/help/sites-cloud/authoring/assets/basic-handling-global-navigation.png)
 
-* [Search](/help/sites-cloud/authoring/search.md) - You can also use the [shortcut key](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
+* Feedback 
 
-  ![Search icon](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![Feedback button](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
+
+* Your IMS organization - select to change if required.
 
 * [Solutions](https://www.adobe.com/experience-cloud.html) - Select this to access your other Adobe solutions.
 
-  ![Solutions button](/help/sites-cloud/authoring/assets/solutions.png)
+  ![Solutions button](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
+
+* [Search](/help/sites-cloud/authoring/search.md) - You can also use the [shortcut key](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
+
+  ![Search icon](/help/sites-cloud/authoring/assets/basic-handling-search-icon.png)
 
 * [Help](#accessing-help)
 
-  ![Help button](/help/sites-cloud/authoring/assets/help.png)
+  ![Help button](/help/sites-cloud/authoring/assets/basic-handling-help-icon.png)
 
 * [Notifications](/help/sites-cloud/authoring/inbox.md) -   This icon is badged with the number of currently assigned incomplete notifications.
 
-  ![Notifications button](/help/sites-cloud/authoring/assets/notifications.png)
+  ![Notifications button](/help/sites-cloud/authoring/assets/basic-handling-notifications.png)
   
 * [User Properties](/help/sites-cloud/authoring/account-environment.md) - Select this to change your user settings.
 
-  ![User Properties button](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![User Properties button](/help/sites-cloud/authoring/assets/basic-handling-user-properties.png)
 
 ## Accessing Help {#accessing-help}
 

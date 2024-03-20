@@ -621,7 +621,7 @@ The embed code returned by Experience Manager already has a ready-to-use event h
    "asset" : "/content/dam/marketing/shoppable-video/john-lewis/shoppable-video-john-lewis-2014.mp4" }
  })
  /* // Example of interactive video event for quickview.
-   s7interactivevideoviewer.setHandlers ({
+   s7interactivevideoviewer.setHandlers({
    "quickViewActivate": function(inData) {
      var sku=inData.sku; //SKU for product ID
     //To pass other parameter from the hotspot, you need to add custom parameter during the hotspot setup as parameterName=value
@@ -652,7 +652,7 @@ The process of constructing the Quickview URL is opposite to the process of iden
   <tbody>
   <tr>
     <td><p>Single SKU, found in the query string</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers ({
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
       },
@@ -660,7 +660,7 @@ The process of constructing the Quickview URL is opposite to the process of iden
   </tr>
   <tr>
     <td>Single SKU, found in the URL path</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers ({
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
       },
@@ -668,7 +668,7 @@ The process of constructing the Quickview URL is opposite to the process of iden
   </tr>
   <tr>
     <td><p>SKU and category ID in the query string</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers ({
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
       },
@@ -744,7 +744,7 @@ The complete source code is as follows:
    "asset" : "/content/dam/marketing/shoppable-video/john-lewis/shoppable-video-john-lewis-2014.mp4" }
  })
  // Example of interactive video event for quickview.
-   s7interactivevideoviewer.setHandlers ({
+   s7interactivevideoviewer.setHandlers({
    "quickViewActivate": function(inData) {
      var sku=inData.sku; //SKU for product ID
      var categoryId=inData.categoryId; //categoryId
