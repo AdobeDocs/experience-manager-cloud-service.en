@@ -188,7 +188,7 @@ Best practices indicate that if a **Non-Wipe** ingestion must be run using a mig
 ### Ingestion Failure Due to Large Node Property Values {#ingestion-failure-due-to-large-node-property-values}
 
 >[!CONTEXTUALHELP]
->id="aemcloud_cam_ingestion_troubleshooting_referenced_bson"
+>id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="Large Node Property"
 >abstract="A common cause of an ingestion failure is exceeding the maximum size of node property values. Follow the documentation, including those related to the BPA report, to remedy this situation."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="Migration Prerequisites"
@@ -198,6 +198,11 @@ Node property values stored in MongoDB cannot exceed 16 MB. If a node value exce
 See the `Node property value in MongoDB` note in [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) for more information and a link to an Oak tool that could help find all the large nodes. Once all nodes with large sizes are remedied, run the extraction and ingestion again.
 
 ### Ingestion Rescinded {#ingestion-rescinded}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_rescinded"
+>title="Ingestion Rescinded"
+>abstract="The extraction that the ingestion was waiting for did not finish successfully. The ingestion was rescinded because it could not be executed."
 
 An ingestion that was created with a running extraction as its source migration set waits patiently until that extraction succeeds, and at that point starts normally. If the extraction fails or is stopped, the ingestion and its indexing job will not begin but is rescinded. In this case, check the extraction to determine why it failed, remedy the problem and start extracting again. Once the fixed extraction is running, a new ingestion can be scheduled. 
 
