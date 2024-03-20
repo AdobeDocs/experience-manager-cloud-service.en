@@ -430,7 +430,7 @@ If no value is set for the `ValidationOptions`flag, **BASIC** validation is perf
 The following is an example of setting the validation flag to **FULL**:
 
 ```java
-operationOptions.setValidationOptions (ValidationOptions.FULL);
+operationOptions.setValidationOptions(ValidationOptions.FULL);
 ```
 
 >[!NOTE]
