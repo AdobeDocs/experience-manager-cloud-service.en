@@ -75,25 +75,9 @@ In this example, you will create a spreadsheet to manage redirects for your AEM 
    * The editor adds new rows to the spreadsheet as necessary.
    * To delete or move a row, use the **Delete** icon at the end of each row and the drag handles at the beginning of each row, respectively.
 
-1. When you are finished defining your redirects, close the tab and return to the **Sites** console.
+## Publishing a Spreadsheet paths.json {#paths-json}
 
-1. Tap or click to select the redirects spreadsheet that you created in the console and then tap or click **Quick Publish** in the actions bar to publish the spreadsheet.
-
-   ![Select the spreadsheet in the Sites console](assets/tabular-data/tabular-data-select-publish.png)
-
-1. In the **Quick Publish** dialog, tap or click **Publish**.
-
-   ![Confirm publish](assets/tabular-data/tabular-data-quick-publish.png)
-
-1. A banner confirms the publication.
-
-   ![Banner confirmation of publication](assets/tabular-data/tabular-data-publish-banner.png)
-
-The redirects spreadsheet is now published and publicly-accessible.
-
-## Update paths.json {#paths-json}
-
-In order for AEM to be able to consume the data in your spreadsheet, you additionally need to update the `paths.json` file of your project.
+In order for AEM to be able to publish the data in your spreadsheet, you additionally need to update the `paths.json` file of your project.
 
 1. Open the root of your project in GitHub.
 
@@ -116,7 +100,21 @@ In order for AEM to be able to consume the data in your spreadsheet, you additio
 
    * Either commit to `main` or create a pull request as per your process.
 
-Once the changes to `paths.json` are merged, the redirects are live for your site.
+1. When you are finished defining your redirects and you updated the path mapping, return to the **Sites** console.
+
+1. Tap or click to select the redirects spreadsheet that you created in the console and then tap or click **Quick Publish** in the actions bar to publish the spreadsheet.
+
+   ![Select the spreadsheet in the Sites console](assets/tabular-data/tabular-data-select-publish.png)
+
+1. In the **Quick Publish** dialog, tap or click **Publish**.
+
+   ![Confirm publish](assets/tabular-data/tabular-data-quick-publish.png)
+
+1. A banner confirms the publication.
+
+   ![Banner confirmation of publication](assets/tabular-data/tabular-data-publish-banner.png)
+
+The redirects spreadsheet is now published and publicly-accessible.
 
 ## Other Spreadsheet Types {#other}
 
@@ -128,6 +126,12 @@ Now that you know how to create a redirects spreadsheet, you can create any othe
 * Configuration
 
 Simply follow the same steps in the sections [Create Spreadsheet](#spreadsheet) and [Update paths.json](#paths-json) and choose the appropriate template and update the `paths.json` file appropriately.
+
+For [Configuration](https://www.aem.live/docs/configuration), [Headers](https://www.aem.live/docs/custom-headers) and [Metadata](https://www.aem.live/docs/bulk-metadata) make sure to add a mapping to publish them to their default locations:
+
+* Configuration: `/.helix/config.json`
+* Headers: `/.helix/headers.json`
+* Metadata: `/metadata.json`
 
 Additionally, you can [create your own spreadsheet](#own-spreadsheet) with arbitrary columns for your own use.
 
