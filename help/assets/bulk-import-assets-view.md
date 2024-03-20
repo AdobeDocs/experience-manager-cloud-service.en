@@ -37,7 +37,7 @@ Before importing assets from your Dropbox account to AEM Assets, create and conf
 
 Execute the following steps:
 
-1. Login to your [Dropbox account](https://www.dropbox.com/developers) and click **[!UICONTROL Create apps]**.
+1. Sign in to your [Dropbox account](https://www.dropbox.com/developers) and click **[!UICONTROL Create apps]**. <br>If you're using an Enterprise Dropbox account, you need to have access to the Content Admin role.
 
 1. In the **[!UICONTROL Choose an API]** section, select the only available radio button.
 
@@ -49,11 +49,7 @@ Execute the following steps:
 
 1. Specify a name for your application and click **[!UICONTROL Create app]**.
 
-1. In the **[!UICONTROL Settings]** tab of your application, add the following to the **[!UICONTROL Redirect URIs]** section:
-
-   * https://exc-unifiedcontent.experience.adobe.net
-
-   * https://exc-unifiedcontent.experience-stage.adobe.net (valid only for Stage environments)
+1. In the **[!UICONTROL Settings]** tab of your application, add https://experience.adobe.com to the **[!UICONTROL Redirect URIs]** section.
 
 1. Copy the values for the **[!UICONTROL App key]** and **[!UICONTROL App secret]** fields. The values are required while configuring the bulk import tool in AEM Assets.
 
@@ -75,19 +71,16 @@ Before importing assets from your OneDrive account to AEM Assets, create and con
 
 ### Create an application
 
-1. Login to your [OneDrive account](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) and click **[!UICONTROL New registration]**.
+1. Sign in to your [OneDrive account](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) and click **[!UICONTROL New registration]**.
 
 1. Specify a name for the application, select **[!UICONTROL Accounts in this organizational directory only (Adobe only - Single tenant)]** from **[!UICONTROL Supported account types]**.
 
 1. Execute the following steps to add redirect URIs:
-    1. In the **[!UICONTROL Select a platform]** dropdown menu, select **[!UICONTROL Web]**.
-    1. Add the following to the **[!UICONTROL Redirect URIs]** section:
 
-         * https://exc-unifiedcontent.experience.adobe.net
-
-         * https://exc-unifiedcontent.experience-stage.adobe.net (valid only for Stage environments)
-
-      <!-- Add the first URI and click **[!UICONTROL Configure]** to add it. You can add more by clicking **[!UICONTROL Add URI]** option available in the **[!UICONTROL Web]** section on the **[!UICONTROL Authentication]** page. -->
+   1. In the **[!UICONTROL Select a platform]** dropdown menu, select **[!UICONTROL Web]**.
+   
+   1. Add https://experience.adobe.com to the **[!UICONTROL Redirect URIs]** section.
+   <!-- Add the first URI and click **[!UICONTROL Configure]** to add it. You can add more by clicking **[!UICONTROL Add URI]** option available in the **[!UICONTROL Web]** section on the **[!UICONTROL Authentication]** page. -->
 
 1. Click **[!UICONTROL Register]**. The application is created successfully.
 
@@ -212,3 +205,7 @@ Click ![More icon](assets/do-not-localize/more-icon.svg) corresponding to the co
 ## Navigate to assets after performing bulk import {#view-assets-after-bulk-import}
 
 To view the Assets target location where the assets are imported after running the Bulk Import job, click ![More icon](assets/do-not-localize/more-icon.svg) corresponding to the configuration name, and then click **[!UICONTROL View Assets]**. 
+
+## Video: Bulk import assets using Assets View
+
+[VIDEO]
