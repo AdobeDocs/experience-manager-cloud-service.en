@@ -73,6 +73,7 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 ## Frequently asked questions {#faq}
 
 **Q**: How can I type input in the specified localized language in a form?
+
 **A**: To input text in a specific localized language, adjust the keyboard settings on your device. Refer to the following links for instructions on how to do it:
 
   * [Set up your Mac to take input in another language](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
@@ -81,6 +82,7 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 
 **Q**: How can I retrieve a list of locales used in the `GOOGLETRANSLATE` function?
+
 **A**: Yoy can refer to [official documentation of Google](https://cloud.google.com/translate/docs/languages) for a comprehensive list of locales used in the GOOGLETRANSLATE.
 
 ## See also
