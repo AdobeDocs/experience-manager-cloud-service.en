@@ -9,7 +9,7 @@ exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 
 # Translate and localize an AEM Forms Edge Delivery ServicesForm
 
-In Edge Delivery systems, form translation involves converting form content from one language to another with a focus on accuracy, clarity, and consistency. Translated or localized forms enable broader audience reach across different geographical locations, thereby enhancing user experience and facilitating better communication across diverse language preferences. 
+In Edge Delivery Services, form translation involves converting form content from one language to another with a focus on accuracy, clarity, and consistency. Translated or localized forms enable broader audience reach across different geographical locations, thus enhancing user experience and facilitating better communication across diverse language preferences. 
 
 
 By the end of the article, you learn to:
@@ -19,11 +19,11 @@ By the end of the article, you learn to:
 
 ## Translate forms within Google Drive {#translate-form-google-drive}
 
-The `GOOGLETRANSLATE` function in Google sheets translates forms by tapping into built-in translation tool, changing text from one language to another directly within a Google sheet. To translate forms within Google Drive:
+The `GOOGLETRANSLATE` function at Google sheets translates forms by tapping into built-in translation tool, changing text from one language to another directly within a Google sheet. To translate forms within Google Drive:
 
 1. Go to your AEM Project folder on Google Drive and open your Google sheet. You can also create new sheet for a form.
 1. Add new sheet to your existing Google sheet. 
-1. Rename the existing sheet (`shared-default`) to `shared-en` and create a new sheet named `shared-default`. The `shared-default` sheet contains the content for localization to a specific language.
+1. Rename the existing sheet (`shared-default`) to `shared-en` and create a sheet named `shared-default`. The `shared-default` sheet contains the content for localization to a specific language.
 1. Add the  localized content in `shared-default` using the `GOOGLETRANSLATE` function. 
    You can use a formula to translate the content of cell D2 from the `shared-en` sheet into French within the `shared-default` sheet. Here is the formula to use:
    `=GOOGLETRANSLATE('shared-en'!D2,"en","fr")`
@@ -45,7 +45,7 @@ To translate the forms on the Microsoft® SharePoint site, you need to manually 
 
 1. Go to your AEM Project folder on Microsoft® SharePoint and open your spreadsheet. You can also create new spreadsheet for a form.
 1. Add new sheet to your existing Google spreadsheet. 
-1. Rename the existing sheet (`shared-default`) to `shared-en` and create a new sheet named `shared-default`. The `shared-default` sheet contains the content for localization to a specific language.
+1. Rename the existing sheet (`shared-default`) to `shared-en` and create a sheet named `shared-default`. The `shared-default` sheet contains the content for localization to a specific language.
 1. Add the  localized content in `shared-default` manually. 
     
       ![Enquiry Translate spreadsheet](/help/forms/assets/translate-enquiry-sp-spreadsheet.png)
