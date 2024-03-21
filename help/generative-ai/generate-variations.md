@@ -105,6 +105,4 @@ When you open Generate Variations (and expand the left panel) you see:
 
 ## Further Reading {#further-reading}
 
-## Release Notes {#release-notes
-
-}
+## Release Notes {#release-notes}
