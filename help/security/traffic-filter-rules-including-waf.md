@@ -20,6 +20,10 @@ Traffic filter rules can be deployed via Cloud Manager configuration pipelines t
 
 [Follow through a tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) to quickly build concrete expertise on this feature.
 
+>[!NOTE]
+>Interested in other options to configure traffic at the CDN, including modifing the request/response, declaring redirects, and proxying to a non-AEM origin? [Learn how and try it out](/help/implementing/dispatcher/cdn-configuring-traffic.md) by joining the early adopter program.
+
+
 ## How This Article is Organized {#how-organized}
 
 This article is organized into the following sections:
