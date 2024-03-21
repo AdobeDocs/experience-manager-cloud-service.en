@@ -70,6 +70,19 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
     ![Error message](/help/forms/assets/translate-calender-display.png)
 
 
+## Frequently asked questions {#faq}
+
+**Q**: How can I type input in the specified localized language in a form?
+**A**: To input text in a specific localized language, adjust the keyboard settings on your device. Refer to the following links for instructions on how to do it:
+
+  * [Set up your Mac to take input in another language](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
+  * [Set up your Windows to take input in another language](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
+  * [Set up your Android or iPhones/iPads to take input in another language](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid)
+
+
+**Q**: How can I retrieve a list of locales used in the `GOOGLETRANSLATE` function?
+**A**: Yoy can refer to [official documentation of Google](https://cloud.google.com/translate/docs/languages) for a comprehensive list of locales used in the GOOGLETRANSLATE.
+
 ## See also
 
 {{see-more-forms-eds}}
