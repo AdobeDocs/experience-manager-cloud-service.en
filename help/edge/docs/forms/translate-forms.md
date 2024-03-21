@@ -83,7 +83,7 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 **Q**: How can I retrieve a list of locales used in the `GOOGLETRANSLATE` function?
 
-**A**: Yoy can refer to [official documentation of Google](https://cloud.google.com/translate/docs/languages) for a comprehensive list of locales used in the GOOGLETRANSLATE.
+**A**: You can refer to [official documentation of Google](https://cloud.google.com/translate/docs/languages) for a comprehensive list of locales used in the GOOGLETRANSLATE.
 
 ## See also
 
