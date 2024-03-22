@@ -17,6 +17,10 @@ Learn about support for Content Fragments in the Assets HTTP API, an important p
 
 >[!NOTE]
 >
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
+
+>[!NOTE]
+>
 >The [Assets HTTP API](/help/assets/mac-api-assets.md) encompasses the:
 >
 >* Assets REST API
@@ -85,6 +89,10 @@ The HTTP method determines the operation to be executed:
 >The request body and/or URL parameters can be used to configure some of these operations; for example, define that a folder or an asset should be created by a **POST** request.
 
 The exact format of supported requests is defined in the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) documentation. 
+
+>[!NOTE]
+>
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
 ### Transactional Behavior {#transactional-behavior}
 
@@ -161,6 +169,10 @@ For more information about features available through the API see:
 
 * The [Assets REST API](/help/assets/mac-api-assets.md)  
 * [Entity Types](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types), where the features specific to each supported type (as relevant to Content Fragments) are explained 
+
+>[!NOTE]
+>
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
 ### Paging {#paging}
 
@@ -256,6 +268,8 @@ Usage can differ depending on whether you are using an AEM Author or Publish env
 >[!NOTE]
 >
 >See the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
 ## Limitations {#limitations}
 
@@ -346,6 +360,8 @@ See here for detailed API references:
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
   * [Available Features](/help/assets/mac-api-assets.md#available-features)
+
+* The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
 ## Additional Resources {#additional-resources}
 

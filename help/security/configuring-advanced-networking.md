@@ -47,7 +47,7 @@ When configuring advanced networking features, the following restrictions apply.
 Using advanced networking features requires two steps:
 
 1. Configuration of the advanced networking option, whether [flexible port egress,](#flexible-port-egress) [dedicated egress IP address,](#dedicated-egress-ip-address) or [VPN,](#vpn) must first be done at the program level. 
-1. To be used, the advanced networking option must then be enabled at the environment level.
+1. To be used, the advanced networking option must then be [enabled at the environment level.](#enabling)
 
 Both steps can be done either using the Cloud Manager UI or the Cloud Manager API.
 
@@ -206,7 +206,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## Dedicated Egress IP Address {#dedicated-egress-ip-address}
 
-A dedicated IP address can enhance security when integrating with SaaS vendors (like a CRM vendor) or other integrations outside of AEM as a Cloud Service that offer an allowlist of IP addresses. By adding the dedicated IP address to the allowlist, it ensures that only traffic from the customer's AEM Cloud Service is permitted to flow into the external service. This is in addition to traffic from any other IPs allowed.
+A dedicated IP address can enhance security when integrating with SaaS vendors (like a CRM vendor) or other integrations outside of AEM as a Cloud Service that offer an allowlist of IP addresses. By adding the dedicated IP address to the allowlist, it ensures that only traffic from the your AEM Cloud Service is permitted to flow into the external service. This is in addition to traffic from any other IPs allowed.
 
 The same dedicated IP is applied to all programs in your Adobe Organization and for all environments in each of your programs. It applies to both author and publish services.
 
@@ -419,7 +419,7 @@ Most VPN devices with IPSec technology are supported. Consult the information in
 1. In the **Add network infrastructure** wizard that starts, select **Virtual private network** and provide the necessary information before tapping or clicking **Continue**.
 
    * **Region** - This is the region in which infrastructure should be created.
-   * **Address Space** - The address space can only be one /26 CIDR (64 IP addresses) or larger IP range in the customer space.
+   * **Address Space** - The address space can only be one /26 CIDR (64 IP addresses) or larger IP range in the your own space.
      * This value can't be changed later.
    * **DNS Information** - This is a list of remote DNS resolvers.
      * Press `Enter` after inputting a DNS server address to add another.
@@ -456,7 +456,7 @@ A new record appears below the **Network Infrastructure** heading in the side pa
 
 ### API Configuration {#configuring-vpn-api}
 
-Once per program, the POST `/program/<programId>/networkInfrastructures` endpoint is invoked, passing in a payload of configuration information including: the value of **vpn** for the `kind` parameter, region, address space (list of CIDRs - note that this cannot be modified later), DNS resolvers (for resolving names in the customer's network), and VPN connection information such as gateway configuration, shared VPN key, and the IP Security policy. The endpoint responds with the `network_id`, and other information including the status. 
+Once per program, the POST `/program/<programId>/networkInfrastructures` endpoint is invoked, passing in a payload of configuration information including: the value of **vpn** for the `kind` parameter, region, address space (list of CIDRs - note that this cannot be modified later), DNS resolvers (for resolving names in your network), and VPN connection information such as gateway configuration, shared VPN key, and the IP Security policy. The endpoint responds with the `network_id`, and other information including the status. 
 
 Once called, it will typically take between 45 and 60 minutes for the networking infrastructure to be provisioned. The API's GET method can be called to return the current status, which will eventually flip from `creating` to `ready`. Consult the API documentation for all states.
 
@@ -576,12 +576,12 @@ The diagram below provides a visual representation of a set of domains and assoc
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>N/A</td>
-    <td>The IP of the VPN gateway on the AEM side. A customer's network engineering team can use this to allow only VPN connections to their VPN gateway from a specific IP address. </td>
+    <td>The IP of the VPN gateway on the AEM side. Your network engineering team can use this to allow only VPN connections to your VPN gateway from a specific IP address. </td>
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
-    <td>The IP of traffic coming from the AEM side of the VPN to the customer side. This can be allowlisted in the customer's configuration to ensure that connections can only be made from AEM.</td>
-    <td>If customer wants to allow VPN access to AEM, they should configure CNAME DNS entries to map their custom domain and/or <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> and/or <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> to this.</td>
+    <td>The IP of traffic coming from the AEM side of the VPN to your side. This can be allowlisted in your configuration to ensure that connections can only be made from AEM.</td>
+    <td>If you want to allow VPN access to AEM, you should configure CNAME DNS entries to map your custom domain and/or <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> and/or <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> to this.</td>
   </tr>
 </tbody>
 </table>
@@ -608,9 +608,9 @@ Once you have configured an advanced networking option for a program, whether [f
 When you enable an advanced networking configuration for an environment, you have the ability to enable optional port forwarding and non proxy hosts. Parameters are configurable per environment to offer flexibility.
 
 * **Port Forwarding** - Port forwarding rules should be declared for any destination ports other than 80/443, but only if not using http or https protocol.
-  * Port forwarding rules are defined by specifying the set of destination hosts (names or IP, and ports). 
+  * Port forwarding rules are defined by specifying the set of destination hosts (names or IP and ports). 
   * The client connection using port 80/443 over http/https must still use proxy settings in their connection to have the properties of advanced networking applied to the connection.
-  * For each destination host, customers must map the intended destination port to a port from 30000 through 30999.
+  * For each destination host, you must map the intended destination port to a port from 30000 through 30999.
   * Port forwarding rules are available for all advanced networking types.
  
 * **Non Proxy Hosts** - Non proxy hosts let you declare a set of hosts that should route through a shared IPs address range rather than the dedicated IP.
@@ -642,7 +642,7 @@ When you enable an advanced networking configuration for an environment, you hav
 
    ![Adding non-proxy hosts](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
 
-1. On the **Port forwards** tab, you can optionally define port forwarding rules for any destination ports othe than 80/443 if not using HTTP or HTTPS. Provide a **Name**, **Port Orig**, and **Port Dest** and tap or click **Add**.
+1. On the **Port forwards** tab, you can optionally define port forwarding rules for any destination ports other than 80/443 if not using HTTP or HTTPS. Provide a **Name**, **Port Orig**, and **Port Dest** and tap or click **Add**.
 
    * The rule is added to the list of rules on the tab.
    * Repeat this step to add multiple rules.
