@@ -13,7 +13,7 @@ AEM Assets integrates natively with Adobe Express, which allows you to directly 
 
 ## Prerequisites {#prerequisites}
 
-Entitlements to access Adobe Express and atleast one environment within AEM Assets. The environment can be any of the repositories within Assets as a Cloud Service or Assets Essentials.
+Entitlements to access Adobe Express and at least one environment within AEM Assets. The environment can be any of the repositories within Assets as a Cloud Service or Assets Essentials.
 
 
 ## Use AEM Assets in Adobe Express editor {#use-aem-assets-in-express}
@@ -26,9 +26,7 @@ Perform the following steps to start using AEM Assets in Adobe Express editor:
 
 1. Click **[!UICONTROL Assets]** available in the left navigation pane. Adobe Express  displays the list of repositories that you are entitled to access along with the list of assets and folders available at the root-level.
 
-1. Select the repository and use the search bar to search assets that you need to use in the canvas. You can filter assets using various available filters, such as, file type, MIME type, and dimensions.
-
-1. Click the asset to include it in the canvas.
+1. Browse or search assets in your repository to drag & drop onto the canvas. You can filter assets using various available filters, such as, file type, MIME type, and dimensions.
 
    ![Include assets from Assets add-on](assets/adobe-express-native-integration.png)
 
@@ -48,7 +46,7 @@ After incorporating appropriate modifications in the Express canvas, you can sav
 
    ![Save assets in AEM](assets/adobe-express-upload.png)
 
-1. Define the name for your upload using the **[!UICONTROL Project or campaign name]** field. You can use an existing name or create a new one. Adobe Express provides you with more options as you type the name. You can define multiple Project or Campaign names for your upload. While you are typing a name, either click anywhere else within the dialog box or press the `,` (Comma) key to register the name.
+1. Optional: You can add campaign metadata for your upload using the **[!UICONTROL Project or campaign name]** field. You can use an existing name or create a new one. You can define multiple Project or Campaign names for your upload. While you are typing a name, either click anywhere else within the dialog box or press the `,` (Comma) key to register the name.
 
    As a best practice, Adobe recommends specifying values in the rest of the fields as well as it creates an enhanced search experience for your uploaded assets.
 1. Similarly, define values for the **[!UICONTROL Keywords]** and **[!UICONTROL Channels]** fields.
@@ -60,4 +58,4 @@ After incorporating appropriate modifications in the Express canvas, you can sav
 
 ## Limitations {#limitations}
 
-* Known issue
+There is a known bug experienced by some users with access to more than one Assets repository when saving a document with assets from multiple repositories.
