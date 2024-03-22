@@ -1,13 +1,13 @@
 ---
-title: Release Notes for Cloud Manager 2024.1.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2024.1.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2024.3.0 in Adobe Experience Manager as a Cloud Service
+description: These are the release notes for Cloud Manager 2024.3.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 ---
 
-# Release Notes for Cloud Manager 2024.1.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release Notes for Cloud Manager 2024.3.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager release 2024.1.0 in AEM as a Cloud Service.
+This page documents the release notes for Cloud Manager release 2024.3.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -15,12 +15,12 @@ This page documents the release notes for Cloud Manager release 2024.1.0 in AEM 
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager release 2024.1.0 in AEM as a Cloud Service is 18 January 2024. The next release is planned for 16 February 2024.
+The release date for Cloud Manager release 2024.3.0 in AEM as a Cloud Service is 14 March 2024. The next release is planned for 11 April 2024.
 
 ## What's New {#what-is-new}
 
-* Cloud Manager now validates the expiration dates not only for the main [certificate,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) but for intermediate certificates as well.
-* CDN [logs](/help/implementing/cloud-manager/manage-logs.md) are now returned in a compressed format.
+* [You can now create advanced networking infrastructure](/help/security/configuring-advanced-networking.md) in your Cloud Manager program and configure it your environments in a self-service manner using the Cloud Manager UI.
+* [The pipeline execution step details](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) will include what the current step of deployment is and what is expected to follow.
 
 ## Early Adoption Program {#early-adoption}
 
@@ -36,7 +36,7 @@ If you are interested in testing this new feature and sharing your feedback, ple
 
 ### Bring your own GitHub {#byo-github}
 
-If you use GitHub to manage your repositories, [you can now validate code directly within your GitHub repositories through Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) This integration eliminates the need to consistently sync code with the Adobe repository and allows you to verify pull requests before merging them into the main branches.
+If you use GitHub to manage your repositories, [you can now validate code directly within your GitHub repositories through Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) This integration eliminates the need to consistently sync code with the Adobe repository and allows you to verify pull requests before merging them into the main branches. This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available.
 
 If you are interested in testing this new feature and sharing your feedback, send an email to `Grp-CloudManager_BYOG@adobe.com` from your email address associated with your Adobe ID.
 
@@ -63,5 +63,4 @@ Interested in test-driving the new dashboard? To get started, send an email to `
 
 ## Bug Fixes {#bug-fixes}
 
-* An error was corrected where configuration pipelines would fail at the build step with an unclear error message if the location of the configuration files was not set properly. The error message is now clear and indicates that the user should check that the location of the configuration files is correct.
-* When a build step finishes with status `FAILED` due to a `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, it is now properly described as an error due to merge conflicts with the destination branch.
+* A bug was fixed when a user defines the `COMMERCE_ENDPOINT` variable with a trailing space then the dispatcher fails to  load.

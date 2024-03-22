@@ -58,7 +58,7 @@ You can:
 
 * Assign **Tags** to the current variation; the tags can be added, updated, and removed.
 
-  * [Tags](/help/sites-cloud/authoring/features/tags.md) are powerful when organizing your fragments as they can be used for content classification and taxonomy. Tags can be used for finding content (by tags) and applying bulk operations. 
+  * [Tags](/help/sites-cloud/authoring/sites-console/tags.md) are powerful when organizing your fragments as they can be used for content classification and taxonomy. Tags can be used for finding content (by tags) and applying bulk operations. 
 
     * Searches for a tag return the fragment, with the tag variation highlighted. 
     * Variation tags can also be used to group variations for a specific Content Delivery Network (CDN) profile (for CDN caching), instead of using the variation name. 
@@ -326,13 +326,13 @@ Annotations:
 
 To ease the process of authoring content fragments, you can add [Assets](/help/assets/manage-digital-assets.md) (images) directly to the fragment.
 
-They are added to the paragraph sequence of the fragment without any formatting; formatting can be done when the [fragment is used/referenced on a page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+They are added to the paragraph sequence of the fragment without any formatting; formatting can be done when the [fragment is used/referenced on a page](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!CAUTION]
 >
 >These assets cannot be moved or deleted on a referencing page, this must be done in the fragment editor.
 >
->However, formatting of the asset (for example, size) must be done in the [page editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
+>However, formatting of the asset (for example, size) must be done in the [page editor](/help/sites-cloud/authoring/fragments/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
 
 >[!NOTE]
 >
@@ -370,7 +370,7 @@ They are added as a reference in your current location in your fragment.
 >
 >These assets cannot be moved or deleted on a referencing page, this must be done in the fragment editor.
 >
->However, formatting of the asset (for example, size) must be done in the [page editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
+>However, formatting of the asset (for example, size) must be done in the [page editor](/help/sites-cloud/authoring/fragments/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
 
 >[!NOTE]
 >
@@ -396,7 +396,7 @@ They are added as a reference in your current location in your fragment.
 
 ## Inheritance {#inheritance}
 
-Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/assets/content-fragments/content-fragments-msm.md).
 
 You can cancel (then re-enable) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
 

@@ -7,43 +7,58 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 14697 {#release-14697}
+## Release 15575 {#release-15575}
 
-Summarized below are the continuous improvements for maintenance release 14697, which was publicly released on December 18, 2023. It replaces release 14538 which had an issue. The previous maintenance release was release 14227.
+Summarized below are the continuous improvements for maintenance release 15575, which was publicly released on March 19, 2024. The previous maintenance release was release 15262.
 
-2023.12.0 Feature Activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
+2024.3.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-14697}
+### Enhancements {#enhancements-15575}
 
-* GRANITE-46723: User Sync - SAML Migration from default-sync to IDP-based sync.
-* OAK-10311: Replication - Optimize blob comparison to reduce replication time of large batch of assets in AEM.
-* OAK-10511: Replication - Reduce network round-trips to reduce replication time of large assets in AEM.
-* GRANITE-48334: Publishers - Collection script is missing for RUM.
+None.
 
-### Fixed Issues {#fixed-issues-14697}
+### Fixed Issues {#fixed-issues-15575}
 
-* CQ-4354867: ToggleCondition reference refers to non-existent field in InstanceActionServlet.
-* CQ-4349948: Localization of 'Profile Properties' strings in Edit User Settings under Tools → Security → Users.
-* GRANITE-44541: Localization of Error dialogs on adding Private Key File screen of Edit User > Keystore under Tools → Security → Users.
-* GRANITE-45341: Localization of success/failure strings for activate/deactivate user action  under Tools → Security → Users.
-* GRANITE-46650: Localization of error message "UserId/Password mismatch." string under Tools → Security → Users Create Dialog.
-* GRANITE-47764: Update to Sling Models API 1.5.0: Injection to a static variable in a Sling Model will cause compilation errors (SLING-11507).
-* GRANITE-48452: Sending empty clientlibs with status code 200.
-* GRANITE-48410: ResourceResolver is not closed.
-* ASSETS-31297: Prevent delete of copied asset from dynamic media.
-* ASSETS-30811: Reference Updates for Blocktag Service bound.
-* GRANITE-46418: Update Sling events in AEM: GaugeSupport has infinite recursion in registerWithSuffix (SLING-11918).
-* GRANITE-48937: Fix regression from Maintenance Release 14538 where Omnisearch doesn't work on aem/start.html page.
+* ASSETS-36358: Upload Report cannot be rendered.
+* GRANITE-50774: GraniteContent should use deterministic order of property-values at init time.
 
-### Known Issues {#known-issues-14697}
+### Known Issues {#known-issues-15575}
 
-* GRANITE-49031: Regression resulting in `@JsonIgnore` annotation being ignored on transient fields.
+None.
 
-### Embedded Technologies {#embedded-tech-14697}
+### Change Notice {#change-notice-15575}
+
+**Actions Required**
+
+#### Set CM Java Version to 11 {#set-java-version-11}
+
+The new version of the aem-sdk-api contains classes compiled with a Java 11 target, which is not compatible with the Cloud Manager Build environment default JDK version 1.8. This update requires that Maven is executed using JDK 11.
+
+Customers are advised to add a `.cloudmanager/java-version` file to the root of their git repo with the contents: `11`. See [Build Environment / Setting the Maven JDK Version](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version).
+
+#### Update aem-cloud-testing-clients to 1.2.1 {#update-aem-cloud-testing-clients}
+
+Upcoming changes will require the library [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) used in your custom functional tests to be updated to at least version **1.2.1**
+
+Make sure that your dependency in `it.tests/pom.xml` has been updated.
+
+```xml
+<dependency>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.1</version>
+</dependency>
+```
+
+This change needs to be performed before April 6, 2024.
+
+Failing to update the dependency library will result in pipeline failures at the "Custom Functional Testing" step.
+
+### Embedded Technologies {#embedded-tech-15575}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM OAK |1.58-T20231123092841-619e1bd|[Oak API 1.58.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.58.0/index.html)| 
+|AEM OAK |1.60-T20240131102219-0cde853|[Oak API 1.60.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.60.0/index.html)| 
 |AEM SLING API |Version 2.27.2 |[Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL|Version 1.4.20-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |AEM Core Components|Version 2.23.4|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|

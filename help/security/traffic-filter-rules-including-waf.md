@@ -20,6 +20,10 @@ Traffic filter rules can be deployed via Cloud Manager configuration pipelines t
 
 [Follow through a tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) to quickly build concrete expertise on this feature.
 
+>[!NOTE]
+>Interested in other options to configure traffic at the CDN, including modifing the request/response, declaring redirects, and proxying to a non-AEM origin? [Learn how and try it out](/help/implementing/dispatcher/cdn-configuring-traffic.md) by joining the early adopter program.
+
+
 ## How This Article is Organized {#how-organized}
 
 This article is organized into the following sections:
@@ -229,9 +233,9 @@ Actions are prioritized according to their types in the following table, which i
 
 | **Name**  | **Allowed Properties**  | **Meaning**  |
 |---|---|---|
-|  **allow** | `wafFlags` (optional)  | if wafFlags is not present, stops further rule processing and proceeds to serving response. If wafFlags is present, it disables specified WAF protections and proceeds to further rule processing. |
-|  **block** | `status, wafFlags` (optional and mutually exclusive)  | if wafFlags is not present, returns HTTP error bypassing all other properties, error code is defined by status property or defaults to 406. If wafFlags is present, it enables specified WAF protections and proceeds to further rule processing. |
-| **log**  | `wafFlags` (optional)  | logs the fact that the rule was triggered, otherwise does not affect the processing. wafFlags has no effect |
+|  **allow** | `wafFlags` (optional), `alert` (optional, not yet released)  | if wafFlags is not present, stops further rule processing and proceeds to serving response. If wafFlags is present, it disables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5 minute window. This feature is not yet released; see the [Traffic Filter Rules Alerts](#traffic-filter-rules-alerts) section for information on how to join the early adopter program. |
+|  **block** | `status, wafFlags` (optional and mutually exclusive), `alert` (optional, not yet released)  | if wafFlags is not present, returns HTTP error bypassing all other properties, error code is defined by status property or defaults to 406. If wafFlags is present, it enables specified WAF protections and proceeds to further rule processing. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5 minute window. This feature is not yet released; see the [Traffic Filter Rules Alerts](#traffic-filter-rules-alerts) section for information on how to join the early adopter program. |
+| **log**  | `wafFlags` (optional), `alert` (optional, not yet released)  | logs the fact that the rule was triggered, otherwise does not affect the processing. wafFlags has no effect. <br>If alert is specified, an Actions Center notification is sent if the rule is triggered 10 times in a 5 minute window. This feature is not yet released; see the [Traffic Filter Rules Alerts](#traffic-filter-rules-alerts) section for information on how to join the early adopter program. |
 
 ### WAF Flags List {#waf-flags-list}
 
@@ -247,6 +251,7 @@ The `wafFlags` property, which can be used in the licensable WAF traffic filter 
 | USERAGENT  |  Attack tooling |  Attack Tooling is the use of automated software to identify security vulnerabilities or to attempt to exploit a discovered vulnerability. |
 | LOG4J-JNDI  | Log4J JNDI  |  Log4J JNDI attacks attempt to exploit the [Log4Shell vulnerability](https://en.wikipedia.org/wiki/Log4Shell) present in Log4J versions earlier than 2.16.0 |
 | BHH  | Bad Hop Headers | Bad Hop Headers indicate an HTTP smuggling attempt through either a malformed Transfer-Encoding (TE) or Content-Length (CL) header, or a well-formed TE and CL header  |
+| CODEINJECTION | Code Injection | Code Injection is the attempt to gain control or damage a target system through arbitrary application code commands by means of user input. |
 | ABNORMALPATH  | Abnormal Path  | Abnormal Path indicates that the original path differs from the normalized path (for example, `/foo/./bar` is normalized to `/foo/bar`)  |
 | DOUBLEENCODING  | Double Encoding  |  Double Encoding checks for the evasion technique of double encoding html characters |
 | NOTUTF8  | Invalid Encoding  | Invalid Encoding can cause the server to translate malicious characters from a request into a response, causing either a denial of service or XSS  |
@@ -280,7 +285,7 @@ Some rule examples follow. See the [rate limit section](#rules-with-rate-limits)
 
 **Example 1**
 
-This rule blocks requests coming from IP 192.168.1.1:
+This rule blocks requests coming from **IP 192.168.1.1**:
 
 ```
 kind: "CDN"
@@ -419,7 +424,7 @@ Rate limits are calculated per CDN POP. As an example, assume that POPs in Montr
 
 **Example 1**
 
-This rule blocks a client for 5m when it exceeds 100 req/sec (per CDN POP) in the last 60 sec:
+This rule blocks a client for 5m when it exceeds an average of 60 req/sec (per CDN POP) in the last 10 sec:
 
 ```
 kind: "CDN"
@@ -444,7 +449,7 @@ data:
 
 **Example 2**
 
-Block requests for 60s on path /critical/resource when it exceeds 100 req/sec (per CDN POP) in the last 60 sec:
+Block requests on path /critical/resource for 60s when it exceeds an average of 100 req/sec (per CDN POP) in the last 60 sec:
 
 ```
 kind: "CDN"
@@ -459,6 +464,34 @@ data:
         action:
           type: block
         rateLimit: { limit: 100, window: 60, penalty: 60 }
+```
+
+## Traffic Filter Rules Alerts {#traffic-filter-rules-alerts}
+
+>[!NOTE]
+>
+>This feature is not yet released. To gain access through the early adopter program, email **aemcs-waf-adopter@adobe.com**.
+
+A rule can be configured to send an Actions Center notification if it is triggered 10 times within a 5 minute window, thereby alerting you when certain traffic patterns are occuring so you can take any necessary measures. Learn more about [Actions Center](/help/operations/actions-center.md), including how to setup the required Notification Profiles to receive emails.
+
+![Actions Center Notification](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
+
+
+The alert property (currently prefixed with *experimental* since the feature is not yet released) can be applied to the action node for all action types (allow, block, log).
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action:
+          type: block
+          experimental_alert: true
 ```
 
 ## CDN Logs {#cdn-logs}

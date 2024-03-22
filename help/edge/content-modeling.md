@@ -1,8 +1,8 @@
 ---
 title: Content Modeling for AEM authoring with Edge Delivery Services Projects
 description: Learn how content modeling works for AEM authoring with Edge Delivery Services projects and how to model your own content.
+exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 ---
-
 # Content Modeling for AEM authoring with Edge Delivery Services Projects {#content-modeling}
 
 Learn how content modeling works for AEM authoring with Edge Delivery Services projects and how to model your own content.
@@ -103,16 +103,19 @@ For each block, the developer:
 
 * Must use the `core/franklin/components/block/v1/block` resource type, the generic implementation of the block logic in AEM.
 * Must define the block name, which will be rendered in the block's table header.
+  * The block name is used to fetch the right style and script to decorate the block.
 * Can define a [model ID.](/help/implementing/universal-editor/field-types.md#model-structure)
+  * The model ID is a reference to the component's model, which defines the fields available to the author in the properties rail.
 * Can define a [filter ID.](/help/implementing/universal-editor/customizing.md#filtering-components)
+  * The filter ID is a reference to the component's filter, which allows to change the authoring behavior, for example by limiting which children can be added to the block or section, or which RTE features are enabled.
 
-All this information is stored in AEM when a block is added to a page.
+All this information is stored in AEM when a block is added to a page. If either the resource type or block name are missing, the block will not render on the page.
 
 >[!WARNING]
 >
->While possible, it is not necessary to implement custom AEM components. The components for Edge Delivery Services provided by AEM are sufficient and offer certain guard rails to ease development.
+>While possible, it is not necessary or recommended to implement custom AEM components. The components for Edge Delivery Services provided by AEM are sufficient and offer certain guard rails to ease development.
 >
->For this reason, Adobe does not recommend using custom AEM resource types.
+>The components provided by AEM render a markup that can be consumed by [helix-html2md](https://github.com/adobe/helix-html2md) when publishing to Edge Delivery Services and by [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) when loading a page in the Universal Editor. The markup is the stable contract between AEM and the other parts of the system, and does not allow for customizations. For this reason, projects must not change the components and must not use custom components.
 
 ### Block Structure {#block-structure}
 
@@ -124,7 +127,9 @@ In the simplest form, a block renders each property in a single row/column in th
 
 In the following example, the image is defined first in the model and the text second. They are thus rendered with the image first and text second.
 
-##### Data {#data-simple}
+>[!BEGINTABS]
+
+>[!TAB Data]
 
 ```json
 {
@@ -136,7 +141,7 @@ In the following example, the image is defined first in the model and the text s
 }
 ```
 
-##### Markup {#markup-simple}
+>[!TAB Markup]
 
 ```html
 <div class="hero">
@@ -155,6 +160,20 @@ In the following example, the image is defined first in the model and the text s
 </div>
 ```
 
+>[!TAB Table]
+
+```text
++---------------------------------------------+
+| Hero                                        |
++=============================================+
+| ![Helix - a shape like a corkscrew][image0] |
++---------------------------------------------+
+| # Welcome to AEM                            |
++---------------------------------------------+
+```
+
+>[!ENDTABS]
+
 You may notice that some types of values allow inferring semantics in the markup, and properties are combined into in single cells. This behavior is described in the section [Type Inference.](#type-inference)
 
 #### Key-Value Block {#key-value}
@@ -165,7 +184,9 @@ In other cases however, the block is read as a key-value pair-like configuration
 
 An example of this is the [section metadata.](/help/edge/developer/markup-sections-blocks.md#sections) In this use case, the block can be configured to render as key-value pair table. Please see the section [Sections and Section Metadata](#sections-metadata) for more information.
 
-##### Data {#data-key-value}
+>[!BEGINTABS]
+
+>[!TAB Data]
 
 ```json
 {
@@ -178,7 +199,7 @@ An example of this is the [section metadata.](/help/edge/developer/markup-sectio
 }
 ```
 
-##### Markup {#markup-key-value}
+>[!TAB Markup]
 
 ```html
 <div class="featured-articles">
@@ -197,13 +218,31 @@ An example of this is the [section metadata.](/help/edge/developer/markup-sectio
 </div>
 ```
 
+>[!TAB Table]
+
+```text
++-----------------------------------------------------------------------+
+| Featured Articles                                                     |
++=======================================================================+
+| source   | [/content/site/articles.json](/content/site/articles.json) |
++-----------------------------------------------------------------------+
+| keywords | Developer,Courses                                          |
++-----------------------------------------------------------------------+
+| limit    | 4                                                          |
++-----------------------------------------------------------------------+
+```
+
+>[!ENDTABS]
+
 #### Container Blocks {#container}
 
 Both of the previous structures have a single dimension: the list of properties. Container blocks allow adding children (usually of the same type or model) and hence are two-dimensional. These blocks still support their own properties rendered as rows with a single column first. But they also allow adding children, for which each item is rendered as row and each property as column within that row.
 
 In the following example, a block accepts a list of linked icons as children, where each linked icon has an image and a link. Notice the [filter ID](/help/implementing/universal-editor/customizing.md#filtering-components) set in the data of the block in order to reference the filter configuration.
 
-##### Data {#data-container}
+>[!BEGINTABS]
+
+>[!TAB Data]
 
 ```json
 {
@@ -226,7 +265,7 @@ In the following example, a block accepts a list of linked icons as children, wh
 }
 ```
 
-##### Markup {#markup-container}
+>[!TAB Markup]
 
 ```html
 <div class="our-partners">
@@ -257,6 +296,22 @@ In the following example, a block accepts a list of linked icons as children, wh
   </div>
 </div>
 ```
+
+>[!TAB Table]
+
+```text
++------------------------------------------------------------ +
+| Our Partners                                                |
++=============================================================+
+| Our community of partners is ...                            |
++-------------------------------------------------------------+
+| ![Icon of Foo][image0] | [https://foo.com](https://foo.com) |
++-------------------------------------------------------------+
+| ![Icon of Bar][image1] | [https://bar.com](https://bar.com) |
++-------------------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ### Creating Semantic Content Models for Blocks {#creating-content-models}
 
@@ -290,11 +345,13 @@ Everything else will be rendered as plain text.
 
 #### Field Collapse {#field-collapse}
 
-Field collapse is the mechanism to combine multiple field values into a single semantic element based on a naming convention using the suffixes `Title`, `Type`, `Alt`, and `Text` (all case sensitive). Any property ending with any of those suffixes will not be considered a value, but rather as an attribute of another property.
+Field collapse is the mechanism to combine multiple field values into a single semantic element based on a naming convention using the suffixes `Title`, `Type`, `MimeType`, `Alt`, and `Text` (all case sensitive). Any property ending with any of those suffixes will not be considered a value, but rather as an attribute of another property.
 
 ##### Images {#image-collapse}
 
-###### Data {#data-image}
+>[!BEGINTABS]
+
+>[!TAB Data]
 
 ```json
 {
@@ -303,7 +360,7 @@ Field collapse is the mechanism to combine multiple field values into a single s
 }
 ```
 
-###### Markup {#markup-image}
+>[!TAB Markup]
 
 ```html
 <picture>
@@ -311,9 +368,19 @@ Field collapse is the mechanism to combine multiple field values into a single s
 </picture>
 ```
 
+>[!TAB Table]
+
+```text
+![A red car on a road][image0]
+```
+
+>[!ENDTABS]
+
 ##### Links &amp; Buttons {#links-buttons-collapse}
 
-###### Data {#data-links-buttons}
+>[!BEGINTABS]
+
+>[!TAB Data]
 
 ```json
 {
@@ -324,7 +391,7 @@ Field collapse is the mechanism to combine multiple field values into a single s
 }
 ```
 
-###### Markup {#markup-links-buttons}
+>[!TAB Markup]
 
 No `linkType`, or `linkType=default`
 
@@ -348,9 +415,21 @@ No `linkType`, or `linkType=default`
 </em>
 ```
 
+>[!TAB Table]
+
+```text
+[adobe.com](https://www.adobe.com "Navigate to adobe.com")
+**[adobe.com](https://www.adobe.com "Navigate to adobe.com")**
+_[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
+```
+
+>[!ENDTABS]
+
 ##### Headings {#headings-collapse}
 
-###### Data {#data-headings}
+>[!BEGINTABS]
+
+>[!TAB Data]
 
 ```json
 {
@@ -359,19 +438,31 @@ No `linkType`, or `linkType=default`
 }
 ```
 
-###### Markup {#markup-headings}
+>[!TAB Markup]
 
 ```html
 <h2>Getting started</h2>
 ```
 
+>[!TAB Table]
+
+```text
+## Getting started
+```
+
+>[!ENDTABS]
+
 #### Element Grouping {#element-grouping}
 
 While [field collapse](#field-collapse) is about combining multiple properties into a single semantic element, element grouping is about concatenating multiple semantic elements into a single cell. This is particularly helpful for use cases where the author should be restricted in the type and number of elements that they can create.
 
-For example, the author should only create a subtitle, title, and a single paragraph description combined with a maximum of two call-to-action buttons. Grouping these elements together yields a semantic markup that can be styled without further action.
+For example, a teaser component may allow the author to only create a subtitle, title, and a single paragraph description combined with a maximum of two call-to-action buttons. Grouping these elements together yields a semantic markup that can be styled without further action.
 
-##### Data {#data-grouping}
+Element grouping uses a naming convention, where the group name is separated from each property in the group by an underscore. Field collapse of the properties in a group works as previously described.
+
+>[!BEGINTABS]
+
+>[!TAB Data]
 
 ```json
 {
@@ -391,7 +482,7 @@ For example, the author should only create a subtitle, title, and a single parag
 }
 ```
 
-##### Markup {#markup-grouping}
+>[!TAB Markup]
 
 ```html
 <div class="teaser">
@@ -413,6 +504,24 @@ For example, the author should only create a subtitle, title, and a single parag
   </div>
 </div>
 ```
+
+>[!TAB Table]
+
+```text
++-------------------------------------------------+
+| Teaser                                          |
++=================================================+
+| ![A group of people sitting on a stage][image0] |
++-------------------------------------------------+
+| Adobe Experience Cloud                          |
+| ## Welcome to AEM                               |
+| Join us in this ask me everything session ...   |
+| [More Details](https://link.to/more-details)    |
+| [RSVP](https://link.to/sign-up)                 |
++-------------------------------------------------+
+```
+
+>[!ENDTABS]
 
 ## Sections and Section Metadata {#sections-metadata}
 
@@ -494,23 +603,28 @@ It is possible to define metadata on a per path or per path pattern basis in a t
 
 To create such table, create a page and use the Metadata template in the Sites console.
 
->[!NOTE]
->
->When editing the metadata spreadsheet, make sure to switch to **Preview** mode since authoring occurs on the page itself, not within the editor.
-
-In the spreadsheet's page properties, define the metadata fields you need along with the URL. Then add metadata per page path or page path pattern, where the URL field relates to the mapped, public paths and not the content path in AEM.
+In the spreadsheet's page properties, define the metadata fields you need along with the URL. Then add metadata per page path or page path pattern.
 
 Make sure spreadsheet is added to your path mapping as well before you publishing it.
 
-```text
-mappings:
-  - /content/site/:/
-  - /content/site/metadata:/metadata.json
+```json
+{
+  "mappings": [
+    "/content/site/:/",
+    "/content/site/metadata:/metadata.json"
+  ]
+}
 ```
 
 ### Page Properties {#page-properties}
 
-It is also possible to define a component model for page metadata, which will be made available to the author as a tab of the AEM Sites page properties dialog.
+Many of the default page properties available in AEM are mapped to the respective page metadata in a document. That includes for example `title`, `description`, `robots`, `canonical url` or `keywords`. Some AEM-specific properties are available as well:
+
+* `cq:lastModified` as `modified-time` in ISO8601 format
+* The time the document was last published as `published-time` in ISO8601 format
+* `cq:tags` as `cq-tags` as comma separted list of the tag IDs.  
+
+It is also possible to define a component model for custom page metadata, which will be made available to the author as a tab of the AEM Sites page properties dialog.
 
 To do so, create a component model with the ID `page-metadata`.
 
@@ -519,15 +633,10 @@ To do so, create a component model with the ID `page-metadata`.
   "id": "page-metadata",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "theme",
       "label": "Theme"
     }
   ]
 }
 ```
-
-There are a few field names that have a special meaning and will be skipped when serving the authoring dialog UI:
-
-* **`cq:tags`** - By default, `cq:tags` are not added to the metadata. Adding them to the `page-metadata` model will add the tag IDs as a comma-separated list as a `tags` meta tag to the head.
-* **`cq:lastModified`** - `cq:lastModified` will add its data as `last-modified` to the head.

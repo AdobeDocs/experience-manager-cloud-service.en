@@ -1,8 +1,8 @@
 ---
 title: Creating Blocks Instrumented for use with the Universal Editor
 description: Learn how to create blocks instrumented for use with the Universal Editor in AEM authoring with Edge Delivery Services projects.
+exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 ---
-
 # Creating Blocks Instrumented for use with the Universal Editor {#create-block}
 
 Learn how to create blocks instrumented for use with the Universal Editor in AEM authoring with Edge Delivery Services projects.
@@ -15,7 +15,7 @@ This guide provides step-by-step instructions for how to create blocks instrumen
 
 This guide necessarily requires existing knowledge of AEM authoring with Edge Delivery Services projects as well as the Universal Editor. Before beginning this guide, you should already have access to Edge Delivery Services and be familiar with its basics including:
 
-* You have completed the [Edge Delivery Service tutorial.](/help/edge/developer/tutorial.md)
+You have completed the [Edge Delivery Service tutorial.](/help/edge/developer/tutorial.md)
 * You have access to an [AEM Cloud Service sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * You have [enabled the Universal Editor on the same sandbox environment.](/help/implementing/universal-editor/getting-started.md)
 * You have completed the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) guide.
@@ -124,7 +124,7 @@ The following quote block example follows this approach.
 
 Now that your basic quote block is defined and committed to the sample project, you can add a quote block to an existing page.
 
-1. In a browser, sign into AEM as a Cloud Service. [Using the Sites console,](/help/sites-cloud/authoring/getting-started/basic-handling.md) navigate to the site that you created in the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) guide and select a page.
+1. In a browser, sign into AEM as a Cloud Service. [Using the Sites console,](/help/sites-cloud/authoring/basic-handling.md) navigate to the site that you created in the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) guide and select a page.
 
    * In this case, `index` is used for illustrative purposes.
 

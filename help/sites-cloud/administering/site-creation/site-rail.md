@@ -1,19 +1,20 @@
 ---
-title: Using the Site Rail to Manage Your Site Theme
-description: Learn the powerful features of the Site rail to help you easily customize and manage your site theme.
+title: Using the Site Panel to Manage Your Site Theme
+description: Learn the powerful features of the Site panel to help you easily customize and manage your site theme.
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 ---
-# Using the Site Rail to Manage Your Site Theme {#site-rail}
 
-Learn the powerful features of the Site rail to help you easily customize and manage your site theme.
+# Using the Site panel to Manage Your Site Theme {#site-panel}
+
+Learn the powerful features of the Site panel to help you easily customize and manage your site theme.
 
 ## Overview {#overview}
 
-The Site rail lets you manage the theme and template resources of your site. [Like other rails](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) such as the Content Tree, References, or Timeline rails, the Site rail is displayed as the leftmost panel in the sites console, displaying information about the selected item. Unlike other rails, the Site rail only applies to Site roots.
+The Site panel lets you manage the theme and template resources of your site. [Like other panels](/help/sites-cloud/authoring/sites-console/console-side-panel.md) such as the Content Tree, References, or Timeline panels, the Site panel is displayed as the leftmost panel in the sites console, displaying information about the selected item. Unlike other panels, the Site panel only applies to Site roots.
 
-The Site rail is used to manage theme and template related information for your site including:
+The Site panel is used to manage theme and template related information for your site including:
 
 * [Downloading theme sources](#downloading-theme-sources)
 * [Downloading template resources such as wireframes](#downloading-template-resources)
@@ -26,9 +27,9 @@ The Site rail is used to manage theme and template related information for your 
 
 ## Downloading Theme Sources {#downloading-theme-sources}
 
-When you create a site in AEM based on a [site template,](site-templates.md) you can download your [site theme](site-themes.md) using the Site rail.
+When you create a site in AEM based on a [site template,](site-templates.md) you can download your [site theme](site-themes.md) using the Site panel.
 
-With the Site rail showing in the sites console, select the root of your site to reveal theme information about the site.
+With the Site panel showing in the sites console, select the root of your site to reveal theme information about the site.
 
 ![Download theme sources](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
@@ -38,7 +39,7 @@ Select **Download Theme Sources** to download a local copy of the site theme as 
 
 [Site templates](site-templates.md) can contain information in addition to your site content structure and [site theme.](site-themes.md) Site templates can contain wireframe designs or other site-related files for example.
 
-If your site is based on a site template, with the Site rail showing in the sites console, select the root of your site to reveal theme information about the site, including additional site resources.
+If your site is based on a site template, with the Site panel showing in the sites console, select the root of your site to reveal theme information about the site, including additional site resources.
 
 ![Download theme sources](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
@@ -46,11 +47,11 @@ Select the button or buttons below the heading **Download additional template re
 
 ## Viewing and Changing Theme Versions {#them-versions}
 
-If your site is based on a site template, it is possible that its theme has already been customized by your front-end developer. Using the Site rail, you can view which version of the site theme is currently deployed and switch to previous versions.
+If your site is based on a site template, it is possible that its theme has already been customized by your front-end developer. Using the Site panel, you can view which version of the site theme is currently deployed and switch to previous versions.
 
-With the Site rail showing in the sites console, select the root of your site to reveal theme information about the site.
+With the Site panel showing in the sites console, select the root of your site to reveal theme information about the site.
 
-![Site versions in the rail](/help/sites-cloud/administering/assets/theme-versions.png)
+![Site versions in the panel](/help/sites-cloud/administering/assets/theme-versions.png)
 
 The current version of the theme is displayed with its commit hash along with timestamp of its last update.
 
@@ -70,9 +71,9 @@ You can use the **Select Version** button to update to the new theme version.
 
 If your site was not created using a site template, it is not possible to use the front-end pipeline to customize and deploy its theme.
 
-However you can enable the front-end pipeline for your site using the Site rail.
+However you can enable the front-end pipeline for your site using the Site panel.
 
-With the Site rail showing in the sites console, select the root of your site to reveal theme information about the site and then select **Enable Front End Pipeline**.
+With the Site panel showing in the sites console, select the root of your site to reveal theme information about the site and then select **Enable Front End Pipeline**.
 
 ![Enabling front-end pipeline](/help/sites-cloud/administering/assets/enable-fep.png)
 
