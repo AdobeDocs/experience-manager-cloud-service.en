@@ -105,7 +105,7 @@ Dynatrace customers may monitor their AEM usage. [Read how](/help/implementing/c
 
 ### CDN Configuration Early Adopter Program {#cdn-config-early-adopter}
 
-In addition to the recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which includes the optionally licensable Web Application Firewall (WAF) rules, there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. Join the early adopter program by emailing **aemcs-cdn-config-adopter@adobe.com** to gain access to:
+In addition to the recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which includes the optionally licensable Web Application Firewall (WAF) rules, there's an opportunity to use the Configuration Pipeline to declare and deploy [other types of CDN configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md). Join the early adopter program by emailing **aemcs-cdn-config-adopter@adobe.com** to gain access to:
 * 301/302 client-side redirects
 * proxying requests at the edge to arbitrary origins
 * URL transformations
@@ -119,4 +119,3 @@ You can find a complete list of Cloud Manager monthly releases [here](/help/impl
 ## Migration Tools {#migration-tools}
 
 You can find a complete list of Migration Tools releases [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
-
