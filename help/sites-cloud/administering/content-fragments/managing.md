@@ -66,6 +66,8 @@ For detailed further information see:
 
 Selecting **Content Fragments** opens the console in a new tab. 
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Content Fragments console - Overview](assets/cf-managing-console-overview.png)
 
 Here you can see that there are three main areas:
@@ -78,6 +80,7 @@ Here you can see that there are three main areas:
   * Here you can hide, or reveal, the folder tree
   * You can select a specific branch of the tree
   * This can be resized to show nested folders
+  * You can select between viewing Content Fragments or [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 * The main/right panel - from here you can:
   * See the list of all Content Fragments in the selected branch of the tree:
     * Content Fragments from the selected folder, and all child folders will be shown:
@@ -126,6 +129,8 @@ Certain actions are available from the console - without selecting a specific Co
 #### Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
 
 Selecting a specific fragment opens a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
+
+<!-- CQDOC-21349: screenshot -->
 
 ![Content Fragments console - toolbar for a selected fragment](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -367,6 +372,8 @@ When the relevant dialog opens you can select the appropriate service:
 
 ## Find and Replace {#find-and-replace}
 
+<!-- CQDOC-21349: screenshot -->
+
 The **Replace** action is available (in the top toolbar) to find, and replace, specified text in your selected Content Fragments. 
 
 ![Find and Replace](assets/cf-managing-find-replace.png)
@@ -379,8 +386,9 @@ Before replacement, validation criteria are checked and you are informed of any 
 >
 >If you select more than 20 Content Fragments, you will see the message **Unable to find and replace**.
 
-![Confirm Replace](assets/cf-managing-confirm-replace.png)
+<!-- CQDOC-21349: screenshot -->
 
+![Confirm Replace](assets/cf-managing-confirm-replace.png)
 
 ## Deleting a Fragment {#deleting-a-fragment}
 
@@ -445,6 +453,8 @@ The Filter panel offers:
 
  Once selected, the **Filtering by** options are shown (under the Search box). They can be deselected from there. For example:
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Content Fragments console - Filtering](assets/cf-managing-console-filter.png)
 
 ### Fast Filtering {#fast-filtering}
@@ -467,9 +477,13 @@ Once selected, this will be shown as a filter predicate, and the list will be fi
 
 The search box supports full-text search. Entering your search terms in the search box:
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Content Fragments console - Searching](assets/cf-managing-console-search-specification.png)
 
 Will provide the selected results:
+
+<!-- CQDOC-21349: screenshot -->
 
 ![Content Fragments console - Search Results](assets/cf-managing-console-search-results.png)
 
