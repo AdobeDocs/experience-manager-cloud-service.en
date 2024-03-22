@@ -154,7 +154,7 @@ To schedule the publishing the asset folders to a later date or time:
 
 2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.
 
-![generated report status](assets/report-status.JPG)
+   ![generated report status](assets/report-status.JPG)
 
 ### Unpublish folders from Brand Portal {#unpublish-folders-from-brand-portal}
 
