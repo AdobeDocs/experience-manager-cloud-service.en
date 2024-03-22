@@ -114,8 +114,7 @@ You can publish or unpublish asset folders immediately, or schedule to a later d
    A message appears stating that the folder has been queued up for publishing to Brand Portal. Login to your Brand Portal interface to see the published folder.
 
 1. **Publish folders later**
-
-   To schedule the publishing the asset folders to a later date or time:
+To schedule the publishing the asset folders to a later date or time:
 
     1. Select the folders that you want to schedule for publishing, select **[!UICONTROL Manage Publication]** from the tool bar at the top.
     1. From **[!UICONTROL Action]**, select **[!UICONTROL Publish to Brand Portal]**.
@@ -125,7 +124,8 @@ You can publish or unpublish asset folders immediately, or schedule to a later d
     1. Select an **[!UICONTROL Activation date]** and specify time. Click **[!UICONTROL Next]**.
 
        <!--![publishlaterbp](assets/publishlaterbp.png)-->
-         [publish later folder](assets/publish-later-folder.png)
+      
+      ![publish later folder](assets/publish-later-folder.png)
 
     1. Confirm your selection in **[!UICONTROL Scope]**. Click **[!UICONTROL Next]**.
 
