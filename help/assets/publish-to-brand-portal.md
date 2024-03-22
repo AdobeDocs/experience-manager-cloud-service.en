@@ -1,7 +1,7 @@
 ---
 title: Publish assets, folders, and collections to Brand Portal
 description: Publish assets, folders, and collections to Brand Portal.
-contentOwner: Vishabh Gupta
+contentOwner: Adobe
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
@@ -69,7 +69,9 @@ To schedule publishing the assets to Brand Portal to a later date or time:
 
    Select **[!UICONTROL Later]** from **[!UICONTROL Scheduling]**.
 
-    ![publishlaterbp-1](assets/publishlaterbp-1.png)
+    <!--![publishlaterbp-1](assets/publishlaterbp-1.png)-->
+
+   ![publish later](assets/publish-later.png)
 
 1. Select an **[!UICONTROL Activation date]** and specify time. Click **[!UICONTROL Next]**.
 
@@ -77,7 +79,9 @@ To schedule publishing the assets to Brand Portal to a later date or time:
 
 1. Specify a **[!UICONTROL Workflow title]** in **[!UICONTROL Workflows]**. Click **[!UICONTROL Publish Later]**.
 
-    ![publishworkflow](assets/publishworkflow.png)
+    <!--![publishworkflow](assets/publishworkflow.png)-->
+    
+    ![publish workflow](assets/publish-workflow.png)
 
 Login to the Brand Portal interface to see the published assets (depending on your scheduled date or time).
 
@@ -86,13 +90,17 @@ Login to the Brand Portal interface to see the published assets (depending on yo
 >[!NOTE]
 >
 > * The existing users part of DAM-Users group have read access on path "/conf/global/settings/cloudconfigs/mediaportal"
->* The new users (or non-admin users) require the following rights to publish on brand portal.
+> * The new users (or non-admin users) require the following rights to publish on brand portal.
 > Paths:
 > "/conf/global/settings/cloudconfigs/mediaportal" : jcr:read 
 >/libs : jcr:read 
 >/conf : jcr:read
 >/content : jcr:read, crx:replicate 
 >/content/dam/ : jcr:read,modify, crx:replicate 
+
+On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.
+
+![generated report status](assets/report-status.JPG)
 
 ## Publish folders to Brand Portal {#publish-folders-to-brand-portal}
 
