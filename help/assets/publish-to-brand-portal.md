@@ -83,25 +83,6 @@ To schedule publishing the assets to Brand Portal to a later date or time:
     
     ![publish workflow](assets/publish-workflow.png)
 
-Login to the Brand Portal interface to see the published assets (depending on your scheduled date or time).
-
-   ![bp_landingpage](assets/bp_landingpage.png)
-
->[!NOTE]
->
-> * The existing users part of DAM-Users group have read access on path "/conf/global/settings/cloudconfigs/mediaportal"
-> * The new users (or non-admin users) require the following rights to publish on brand portal.
-> Paths:
-> "/conf/global/settings/cloudconfigs/mediaportal" : jcr:read 
->/libs : jcr:read 
->/conf : jcr:read
->/content : jcr:read, crx:replicate 
->/content/dam/ : jcr:read,modify, crx:replicate 
-
-On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.
-
-![generated report status](assets/report-status.JPG)
-
 ## Publish folders to Brand Portal {#publish-folders-to-brand-portal}
 
 You can publish or unpublish asset folders immediately, or schedule to a later date or time.
@@ -143,13 +124,37 @@ You can publish or unpublish asset folders immediately, or schedule to a later d
 
     1. Select an **[!UICONTROL Activation date]** and specify time. Click **[!UICONTROL Next]**.
 
-       ![publishlaterbp](assets/publishlaterbp.png)
-    
+       <!--![publishlaterbp](assets/publishlaterbp.png)-->
+         [publish later folder](assets/publish-later-folder.png)
+
     1. Confirm your selection in **[!UICONTROL Scope]**. Click **[!UICONTROL Next]**.
 
     1. Specify a Workflow title under **[!UICONTROL Workflows]**. Click **[!UICONTROL Publish Later]**.
 
-       ![manageschedulepub](assets/manageschedulepub.png)
+       <!--![manageschedulepub](assets/manageschedulepub.png)-->
+         
+      ![publish workflow](assets/publish-workflow.png)
+
+### View published file or folder to Brand Portal {#view-published-file-folder}
+
+1. Login to the Brand Portal interface to see the published assets (depending on your scheduled date or time).
+
+   ![bp_landingpage](assets/bp_landingpage.png)
+
+   >[!NOTE]
+   >
+   > * The existing users part of DAM-Users group have read access on path "/conf/global/settings/cloudconfigs/mediaportal"
+   > * The new users (or non-admin users) require the following rights to publish on brand portal.
+   > Paths:
+   > `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+   >`/libs : jcr:read` 
+   >`/conf : jcr:read`
+   >`/content : jcr:read, crx:replicate`
+   >`/content/dam/ : jcr:read,modify, crx:replicate` 
+
+2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.
+
+![generated report status](assets/report-status.JPG)
 
 ### Unpublish folders from Brand Portal {#unpublish-folders-from-brand-portal}
 
