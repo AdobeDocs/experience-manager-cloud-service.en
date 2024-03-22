@@ -292,3 +292,4 @@ While it is recommended that you move on to the next part of the headless develo
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - Technical documentation that explains how to create and modify Content Fragments (and other assets)
 * [Persisted Queries](/help/headless/graphql-api/persisted-queries.md) - Technical documentation on persisted queries in AEM
 * [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) - A complete discussion of the headless integration levels available in AEM
+* The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
