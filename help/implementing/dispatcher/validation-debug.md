@@ -554,6 +554,25 @@ INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apach
 
 ```
 
+### Injecting custom environment variables {#environment-variables}
+
+Custom environment variables can be used with the dispatcher SDK by setting them in a separate file and referencing it in the `ENV_FILE` environment variable before starting the local dispatcher.
+
+An file with custom environment variables would look like this:
+
+```
+COMMERCE_ENDPOINT=commerce-host
+AEM_HTTP_PROXY_HOST=host.docker.internal
+AEM_HTTP_PROXY_PORT=8000
+```
+
+And it can be used in the local dispatcher SDK with the following commands:
+
+```
+export ENV_FILE=custom.env
+./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080
+```
+
 ## Different Dispatcher configurations per environment {#different-dispatcher-configurations-per-environment}
 
 Currently, the same Dispatcher configuration is applied to all environment on AEM as a Cloud Service. The runtime has an environment variable `ENVIRONMENT_TYPE` that contains the current run mode (development, stage, or production) and a "define". The "define" can be `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE`, or `ENVIRONMENT_PROD`. In the Apache configuration, the variable can be used directly in an expression. Alternatively, the "define" can be used to build logic:
