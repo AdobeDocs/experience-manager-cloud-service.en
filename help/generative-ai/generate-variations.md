@@ -334,7 +334,7 @@ Selecting an **Adobe Target** audience in the prompt allows for the generation o
 
 1. Select **Adobe Target**.
 1. Then select the required **Target Audience**, from the list provided.
-   
+
    >[!NOTE]
    >
    >To use an **Adobe Target** audience the description field must be filled in. If not, the audience will show in the drop down list as unavailable. To add a description go to Target and [add an audience description](https://experienceleague.adobe.com/docs/target-learn/tutorials/audiences/create-audiences).
@@ -379,7 +379,8 @@ For example, to add an audience from a file on Google Drive:
    >[!NOTE]
    >
    >Ensure that the double quotation marks (“) are kept on both ends of the URL.
-    For example:
+
+   For example:
 
    ![Generate Variations - add audience CSV file](assets/generate-variations-audiences-csv-save.png)
 
