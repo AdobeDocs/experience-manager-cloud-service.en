@@ -7,9 +7,9 @@ exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 
 AEM Assets integrates natively with Adobe Express, which allows you to directly access the assets stored in AEM Assets from within the Adobe Express user interface. You can place content managed in AEM Assets in the Express canvas and then save new or edited content in an AEM Assets repository. The integration provides the following key benefits:
 
-* Increased content reuse by editing and saving new assets in AEM
+* Increased content reuse by editing and saving new assets in AEM.
 
-* Reduced overall time and effort  to create new assets or create new versions of existing assets
+* Reduced overall time and effort  to create new assets or create new versions of existing assets.
 
 ## Prerequisites {#prerequisites}
 
@@ -37,11 +37,27 @@ Perform the following steps to start using AEM Assets in Adobe Express editor:
 
 After incorporating appropriate modifications in the Express canvas, you can save it in AEM Assets repository. 
 
-1. Click **[!UICONTROL Save]** to open the **[!UICONTROL Upload]** dialog. 
+1. Click **[!UICONTROL Share]** to open the **[!UICONTROL Share]** dialog.
+
+   ![Save assets in AEM](assets/adobe-express-share.png)
+
+1. Select **[!UICONTROL AEM Assets]** from the **[!UICONTROL Storage]** section available in the right pane. Adobe Express displays the upload dialog.
 1. Specify a name and format for the asset. You can save the contents of the canvas in PNG or JPEG format types.
 
-1. Click the folder icon adjacent to the **[!UICONTROL Location]** field, navigate to the location where you need to save the asset, and click **[!UICONTROL Select]**. The name of the folder displays in the **[!UICONTROL Location]** field. 
+1. Click the folder icon adjacent to the **[!UICONTROL Location]** field, navigate to the location where you need to save the asset, and click **[!UICONTROL Select]**. The name of the folder displays in the **[!UICONTROL Location]** field.
+
+   ![Save assets in AEM](assets/adobe-express-upload.png)
+
+1. Define the name for your upload using the **[!UICONTROL Project or campaign name]** field. You can use an existing name or create a new one. Adobe Express provides you with more options as you type the name. You can define multiple Project or Campaign names for your upload. While you are typing a name, either click anywhere else within the dialog box or press the `,` (Comma) key to register the name.
+
+   As a best practice, Adobe recommends specifying values in the rest of the fields as well as it creates an enhanced search experience for your uploaded assets.
+1. Similarly, define values for the **[!UICONTROL Keywords]** and **[!UICONTROL Channels]** fields.
 
 1. Click **[!UICONTROL Upload]** to upload the asset to AEM Assets.
 
-   ![Save assets in AEM](assets/aem-assets-add-on-save.png)
+   
+
+
+## Limitations {#limitations}
+
+* Known issue
