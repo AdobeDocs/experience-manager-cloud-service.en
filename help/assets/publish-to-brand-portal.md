@@ -83,6 +83,17 @@ To schedule publishing the assets to Brand Portal to a later date or time:
     
     ![publish workflow](assets/publish-workflow.png)
 
+>[!NOTE]
+>
+> * The existing users part of DAM-Users group have read access on path "/conf/global/settings/cloudconfigs/mediaportal"
+> * The new users (or non-admin users) require the following rights to publish on brand portal.
+> Paths:
+> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>`/libs : jcr:read` 
+>`/conf : jcr:read`
+>`/content : jcr:read, crx:replicate`
+>`/content/dam/ : jcr:read,modify, crx:replicate`
+
 ## Publish folders to Brand Portal {#publish-folders-to-brand-portal}
 
 You can publish or unpublish asset folders immediately, or schedule to a later date or time.
@@ -139,20 +150,11 @@ To schedule the publishing the asset folders to a later date or time:
 
 1. Login to the Brand Portal interface to see the published assets (depending on your scheduled date or time).
 
-   ![bp_landingpage](assets/bp_landingpage.png)
+   ![bp_landingpage](assets/bp_landingpage.png) 
 
-   >[!NOTE]
-   >
-   > * The existing users part of DAM-Users group have read access on path "/conf/global/settings/cloudconfigs/mediaportal"
-   > * The new users (or non-admin users) require the following rights to publish on brand portal.
-   > Paths:
-   > `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
-   >`/libs : jcr:read` 
-   >`/conf : jcr:read`
-   >`/content : jcr:read, crx:replicate`
-   >`/content/dam/ : jcr:read,modify, crx:replicate` 
+1. Switch to List view ![List view](assets/list-view.svg) to see the current publish status of the asset.
 
-2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
    ![generated report status](assets/report-status.JPG)
 
