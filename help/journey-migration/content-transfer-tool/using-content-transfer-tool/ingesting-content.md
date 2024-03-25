@@ -149,6 +149,12 @@ If "AEM Version Updates" is active (that is, updates are running or are queued t
 
 ### Top-up Ingestion Failure Due to Uniqueness Constraint Violation {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_uuid"
+>title="Uniqueness Constraint Violation"
+>abstract="A common cause of a non-wipe ingestion failure is a conflict in node ids. Only one of the conflicting nodes can exist."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Top-up Ingestion"
+
 A common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a conflict in node ids. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
@@ -163,6 +169,12 @@ This conflict must be resolved manually. Someone familiar with the content must 
 
 ### Top-up Ingestion Failure Due to Unable to Delete Referenced Node {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
+>title="Unable to Delete Referenced Node"
+>abstract="A common cause of a non-wipe ingestion failure is a version conflict for a particular node on the destination instance. The versions of the node must be remedied."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Top-up Ingestion"
+
 Another common cause of a [Top-up Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure is a version conflict for a particular node on the destination instance. To identify this error, download the ingestion log using the Cloud Acceleration Manager UI and look for an entry like the following:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: Unable to delete referenced node: 8a2289f4-b904-4bd0-8410-15e41e0976a8
@@ -175,13 +187,32 @@ Best practices indicate that if a **Non-Wipe** ingestion must be run using a mig
 
 ### Ingestion Failure Due to Large Node Property Values {#ingestion-failure-due-to-large-node-property-values}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_bson"
+>title="Large Node Property"
+>abstract="A common cause of an ingestion failure is exceeding the maximum size of node property values. Follow the documentation, including those related to the BPA report, to remedy this situation."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="Migration Prerequisites"
+
 Node property values stored in MongoDB cannot exceed 16 MB. If a node value exceeds the supported size, the ingestion fails and the log will contain a `BSONObjectTooLarge` error and specify which node exceeded the maximum. This is a MongoDB restriction.
 
 See the `Node property value in MongoDB` note in [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) for more information and a link to an Oak tool that could help find all the large nodes. Once all nodes with large sizes are remedied, run the extraction and ingestion again.
 
 ### Ingestion Rescinded {#ingestion-rescinded}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_rescinded"
+>title="Ingestion Rescinded"
+>abstract="The extraction that the ingestion was waiting for did not finish successfully. The ingestion was rescinded because it could not be executed."
+
 An ingestion that was created with a running extraction as its source migration set waits patiently until that extraction succeeds, and at that point starts normally. If the extraction fails or is stopped, the ingestion and its indexing job will not begin but is rescinded. In this case, check the extraction to determine why it failed, remedy the problem and start extracting again. Once the fixed extraction is running, a new ingestion can be scheduled. 
+
+### Deleted Asset not present after re-running ingestion
+
+In general, modifying the cloud environment data in between ingestions is not recommended. 
+
+When an asset is deleted from the Cloud Service destination using the Assets Touch UI, the node data is deleted, but the asset blob with the image is not immediately deleted. It is marked for deletion so that it no longer appears in the UI; however, it remains in the datastore until garbage collection occurs and the blob is removed.
+
+In the scenario where a previously migrated asset is deleted, and the next ingestion is run before the garbage collector has completed deleting the asset, ingesting the same migration set will not restore the deleted asset. When the ingestion checks on the cloud environment for the asset, there is no node data; therefore, the ingestion will copy the node data to the cloud environment. However, when it checks the blob store, it sees that the blob is present and skips copying the blob over. That is why the metadata is present post-ingestion when you look at the asset from the Touch UI, but the image is not. Please remember that migration sets and content ingestion were not designed to handle this case. They aim to add new content to the cloud environment and not restore previously migrated content.
 
 ## What's Next {#whats-next}
 
