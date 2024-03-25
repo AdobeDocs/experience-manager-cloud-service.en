@@ -7,11 +7,11 @@ description: Learn about the Generate Variations app, accessible from directly w
 
 If you are looking for a way to optimize your digital channels and accelerate content creation, you can use Generate Variations. Generate Variations uses generative Artificial Intelligence (AI) to create content variations based on prompts; these prompts are either provided by Adobe or created, and managed, by users. After creating variations, you can also measure their success using the [Experimentation](https://www.aem.live/docs/experimentation) functionality of [Edge Delivery Services](/help/edge/overview.md).
 
-You can access Generate Variations from:
+You can [access Generate Variations](#access-generate-variations) from:
 
-* within Adobe Experience Manager as a Cloud Service
-* the Sidekick of Edge Delivery Services
-* directly
+* [within Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
+* [the Sidekick of AEM Edge Delivery Services](#access-aem-sidekick)
+* [directly](#access-direct)
 
 You can then:
 
@@ -458,61 +458,55 @@ Image generation usage is handled through Adobe Express entitlements and [genera
 
 ## Access Generate Variations {#access-generate-variations}
 
-### Direct Access {#access-direct}
-
-You can access Generate Variations directly from:
-
-[`https://experience.adobe.com/#/aem/generate-variations/`](https://experience.adobe.com/#/aem/generate-variations/)
-
->[!NOTE]
->
->If you encounter an error, refer to [Give Users Access to Experience Manager as a Cloud Service](#give-users-access-to-aemaacs).
-
 ### Access from AEM as a Cloud Service {#access-aemaacs}
 
-There is access to Generate Variations from the [Navigation Panel](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) of AEM as a Cloud Service:
+Generate Variations can be accessed from the [Navigation Panel](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) of AEM as a Cloud Service:
 
 ![Navigation panel](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
 
 ### Access from the AEM Sidekick {#access-aem-sidekick}
 
-#### Include Generate Variations in the AEM Sidekick {#include-generate-variations-in-aem-sidekick}
+Some configuration is needed before you can access Generate Variations from the Sidekick (of Edge Delivery Services).
 
-Please see the document [Installing the AEM Sidekick](https://www.aem.live/docs/sidekick-extension) for how to install and configure the Sidekick.
+1. Please see the document [Installing the AEM Sidekick](https://www.aem.live/docs/sidekick-extension) for how to install and configure the Sidekick.
 
-To use the Generate Variations in the Sidekick include the following configuration in your Edge Delivery Services projects under:
+1. To use the Generate Variations in the Sidekick (of Edge Delivery Services) include the following configuration in your Edge Delivery Services projects under:
 
-* `tools/sidekick/config.json` 
+   * `tools/sidekick/config.json` 
 
-This needs to be merged into your existing configuration and then deployed.
+   This needs to be merged into your existing configuration and then deployed.
 
-For example:
+   For example:
 
-```prompt
-{
-  // ...
-  "plugins": [
-    // ...
-    {
-      "id": "generate-variations",
-      "title": "Generate Variations",
-      "url": "https://experience.adobe.com/aem/generate-variations",
-      "passConfig": true,
-      "environments": ["preview","live", "edit"],
-      "includePaths": ["**.docx**"]
-    }
-    // ...
-  ]
-}
-```
+   ```prompt
+   {
+     // ...
+     "plugins": [
+       // ...
+       {
+         "id": "generate-variations",
+         "title": "Generate Variations",
+         "url": "https://experience.adobe.com/aem/generate-variations",
+         "passConfig": true,
+         "environments": ["preview","live", "edit"],
+         "includePaths": ["**.docx**"]
+       }
+       // ...
+     ]
+   }
+   ```
 
-You then need to [Give Users Access to Experience Manager as a Cloud Service](#give-users-access-to-aemaacs).
+1. You may then need to [Give Users Access to Experience Manager as a Cloud Service](#give-users-access-to-aemaacs).
 
-#### Access Generate Variations from the AEM Sidekick {#access-generate-variations-from-aem-sidekick}
+1. You can then access the feature, by selecting **Generate Variations** from the toolbar of the Sidekick:
 
-To access the feature, select **Generate Variations** from the toolbar of the Sidekick.
+   ![Generate Variations - access from AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
 
-![Generate Variations - access from AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
+### Direct Access {#access-direct}
+
+You can also access Generate Variations directly from:
+
+[`https://experience.adobe.com/#/aem/generate-variations/`](https://experience.adobe.com/#/aem/generate-variations/)
 
 >[!NOTE]
 >
