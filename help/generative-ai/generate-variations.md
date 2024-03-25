@@ -386,6 +386,8 @@ For example, to add an audience from a file on Google Drive:
 
 ## FAQs {#faqs}
 
+### Formatted Output {#formatted-outpu}
+
 **The generated response isn't giving me the formatted output that I need. How do I modify the format? ex: I need a title and a sub-title but, the response is just title**
 
 1. Open the actual prompt in edit mode.
@@ -401,6 +403,8 @@ For example, to add an audience from a file on Google Drive:
    Example: "The title text must not exceed 10 words or 50 characters, including spaces."
 1. Save the prompt for future use.
 
+### Length of Response {#length-of-response}
+
 **The generated response is too long or too short. How do I change the length?**
 
 1. Open the actual prompt in edit mode.
@@ -410,6 +414,8 @@ For example, to add an audience from a file on Google Drive:
 1. Modify the requirements to fit your needs.
 1. Save the prompt for future use.
 
+### Improve responses {#improve-responses}
+
 **The responses I'm getting aren't exactly what I'm looking for. What can I do to improve them?**
 
 1. Try changing the Temperature under Advanced settings.
@@ -417,9 +423,13 @@ For example, to add an audience from a file on Google Drive:
    1. A lower temperature is more deterministic and adheres to what is in the prompt.
 1. Open the actual prompt in edit mode and review prompt. Pay special attention to the requirements section that describes the tone of voice and other important criteria.
 
+### Comments in a prompt {#comments-in-prompt}
+
 **How can I use comments in a prompt?**
 
 Comments in a prompt are used to include notes, explanations, or instructions that are not meant to be part of the actual output. These comments are encapsulated within a specific syntax: they start and end with double curly braces and begin with a hash (for example, `{{# Comment Here }}`). Comments help clarify the prompt structure or intent without affecting the generated response.
+
+### Find a shared prompt {#find-a-shared-prompt}
 
 **What can I do if I cannot find a prompt template that someone has shared?**
 
@@ -429,6 +439,8 @@ In this situation there are various details to check:
    For example https://experience.adobe.com/#/aem/generate-variations
 1. Ensure the selected IMS organization is correct.
 1. Confirm the prompt was saved as Shared.
+
+### Custom prompts in v2.0.0 {#custom-prompts-v200}
 
 **In v.2.0.0 my custom prompts have disappeared - what can I do?**
 
@@ -443,6 +455,72 @@ One generation of a copy variant is equal to one generative action. Customers wi
 See [Adobe Experience Manager: Cloud Service | Product Description](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) for further details about base entitlements, and reach out to your account team if you would like to purchase more generative actions.
 
 Image generation usage is handled through Adobe Express entitlements and [generative credits](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+
+## Access Generate Variations {#access-generate-variations}
+
+### Direct Access {#access-direct}
+
+You can access Generate Variations directly from:
+
+[`https://experience.adobe.com/#/aem/generate-variations/`](https://experience.adobe.com/#/aem/generate-variations/)
+
+>[!NOTE]
+>
+>If you encounter an error, refer to [Give Users Access to Experience Manager as a Cloud Service](#give-users-access-to-aemaacs).
+
+### Access from AEM as a Cloud Service {#access-aemaacs}
+
+There is access to Generate Variations from the [Navigation Panel](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) of AEM as a Cloud Service:
+
+![Navigation panel](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
+
+### Access from the AEM Sidekick {#access-aem-sidekick}
+
+#### Include Generate Variations in the AEM Sidekick {#include-generate-variations-in-aem-sidekick}
+
+Please see the document [Installing the AEM Sidekick](https://www.aem.live/docs/sidekick-extension) for how to install and configure the Sidekick.
+
+To use the Generate Variations in the Sidekick include the following configuration in your Edge Delivery Services projects under:
+
+* `tools/sidekick/config.json` 
+
+This needs to be merged into your existing configuration and then deployed.
+
+For example:
+
+```prompt
+{
+  // ...
+  "plugins": [
+    // ...
+    {
+      "id": "generate-variations",
+      "title": "Generate Variations",
+      "url": "https://experience.adobe.com/aem/generate-variations",
+      "passConfig": true,
+      "environments": ["preview","live", "edit"],
+      "includePaths": ["**.docx**"]
+    }
+    // ...
+  ]
+}
+```
+
+You then need to [Give Users Access to Experience Manager as a Cloud Service](#give-users-access-to-aemaacs).
+
+#### Access Generate Variations from the AEM Sidekick {#access-generate-variations-from-aem-sidekick}
+
+To access the feature, select **Generate Variations** from the toolbar of the Sidekick.
+
+![Generate Variations - access from AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
+
+>[!NOTE]
+>
+>If you encounter an error, refer to [Give Users Access to Experience Manager as a Cloud Service](#give-users-access-to-aemaacs).
+
+## Give Users Access to Experience Manager as a Cloud Service {#give-users-access-to-aemaacs}
+
+Those who need access to Generate Variations need to be entitled to an Experience Manager as a Cloud Service environment. This should be done by assigning their account to the respective product profile. See [Assigning AEM Product Profiles for further details](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 
 ## Further Reading {#further-reading}
 
