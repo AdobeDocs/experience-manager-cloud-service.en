@@ -1,9 +1,9 @@
 ---
-title: Getting Started with AEM Forms Edge Delivery Services - Developer Tutorial 
+title: Getting Started with AEM Forms Edge Delivery Services - Developer Tutorial
 description: This tutorial helps get you up-and-running with a new Adobe Experience Manager Forms (AEM) project. In ten to twenty minutes, you will have created your own forms.s
 feature: Edge Delivery Services
+exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 ---
-
 # Getting Started - Developer Tutorial 
 
 In today's digital age, creating user-friendly forms is essential for any organization. AEM Forms Edge Delivery Services (EDS) lets you create forms using familiar tools like Google Docs and Microsoft Office. 
@@ -307,4 +307,3 @@ Ensure a smooth GitHub build process by addressing potential issues:
 ## See also
 
 {{see-more-forms-eds}}
-
