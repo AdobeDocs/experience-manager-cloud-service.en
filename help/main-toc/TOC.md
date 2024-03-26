@@ -566,7 +566,7 @@ user-guide-title: AEM as a Cloud Service
     + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Integration with Adobe Express {#integration-adobe-express}
-      + [AEM Assets add-on for Adobe Express](/help/assets/addon-adobe-express.md)    
+      + [Native integration with Adobe Express](/help/assets/native-integration-adobe-express.md)    
 
   + Integration with Creative Cloud {#integration-creative-cloud}
       + [Connect AEM Assets to Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)  
