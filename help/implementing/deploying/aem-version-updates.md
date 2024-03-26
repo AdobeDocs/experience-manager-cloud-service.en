@@ -28,7 +28,7 @@ A Cloud Manager UI notification will be sent whenever a Non-Intrusive Maintenanc
 
 >[!NOTE]
 >
-> Note: The automatic updates for development environments are progressively enabled in 2023 for all customers. If your development environments are not automatically updated, you can use manual updates to keep them in sync with your stage and production environments.
+> Note: Non-Intrusive Maintenance Updates will be progressively enabled for all customers in 2024.
 
 
 ## Type of Updates {#update-types}
