@@ -22,8 +22,10 @@ Before your instances are automatically updated, a new AEM Maintenance release i
 
 Non-Intrusive Maintenance Updates are automatic updates that are applied without involving the customer pipelines. 
 Through NIMU, the customer can use the pipeline at any moment, even if an AEM version update is scheduled or in progress and Maintenance Updates will no longer appear in the Customer pipeline execution history, making it easier to follow the history of code deployments.
-The current AEM version can still be checked, as before, using the Cloud Manager UI.
-The same quality gates that are used in the pipeline are used by Non-Intrusive Maintenance Updates, including the customer written tests.
+
+#### Update Activities
+
+The current AEM version can still be checked for each environment, as before, using the Cloud Manager UI Environments panel.The same quality gates that are used in the pipeline are used by Non-Intrusive Maintenance Updates, including the customer written tests.
 A Cloud Manager UI notification will be sent whenever a Non-Intrusive Maintenance Update is applied to the environments of your program. You can configure it to be also sent to your email.
 
 >[!NOTE]
