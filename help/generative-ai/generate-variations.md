@@ -496,7 +496,7 @@ Some configuration is needed before you can access Generate Variations from the 
    }
    ```
 
-1. You may then need to [Give Users Access to Experience Manager as a Cloud Service](#give-users-access-to-aemaacs).
+1. You may then need to ensure that users have [Access to Experience Manager as a Cloud Service with Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
 
 1. You can then access the feature, by selecting **Generate Variations** from the toolbar of the Sidekick:
 
@@ -510,11 +510,17 @@ You can also access Generate Variations directly from:
 
 >[!NOTE]
 >
->If you encounter an error, refer to [Give Users Access to Experience Manager as a Cloud Service](#give-users-access-to-aemaacs).
+>If you encounter an error, refer to [Access to Experience Manager as a Cloud Service with Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
 
-## Give Users Access to Experience Manager as a Cloud Service {#give-users-access-to-aemaacs}
+## Access to Experience Manager as a Cloud Service with Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
 
-Those who need access to Generate Variations need to be entitled to an Experience Manager as a Cloud Service environment. This should be done by assigning their account to the respective product profile. See [Assigning AEM Product Profiles for further details](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+Users who need access to Generate Variations must be entitled to an Experience Manager as a Cloud Service environment with Edge Delivery Services. 
+
+>[!NOTE]
+>
+>If a customer is contracted on the version of AEM Sites as a Cloud Service that does not include Edge Delivery Services, they will need to sign a new contract in order to get access. Customers should reach out to their Account Team to discuss how they can move to AEM Sites as a Cloud Service with Edge Delivery Services.
+
+To grant access to specific users, assign their user account to the respective product profile. See [Assigning AEM Product Profiles for further details](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 
 ## Further Reading {#further-reading}
 
