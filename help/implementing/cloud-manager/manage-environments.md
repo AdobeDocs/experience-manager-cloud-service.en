@@ -222,7 +222,10 @@ The process of updating is therefore a two-step process:
 
 ### Updating Your Environments {#updating-your-environments}
 
-The **Update** option is available from the **Environments** card for environments in sandbox programs by clicking the ellipsis button of the environment.
+>[!NOTE]
+> As of 2024, development instances and some sandbox programs are already automatically updated so there is no need to manage updates for them manually. As a result of this transition, the option to Update environment manually for development instances might not be available to _some_ of your programs.
+
+The **Update** option is available from the **Environments** card for some development environments and environments in sandbox programs by clicking the ellipsis button of the environment.
 
 ![Update option from Environments card](assets/environ-update2.png)
 
