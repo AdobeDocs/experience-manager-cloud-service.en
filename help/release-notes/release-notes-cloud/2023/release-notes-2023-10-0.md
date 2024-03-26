@@ -35,7 +35,7 @@ Have a look at the October 2023 Release Overview video for a summary of the feat
 
 ### New features {#assets-features}
 
-**AEM Assets add-on for Adobe Express**: Experience Manager Assets now provides an [add-on for Adobe Express](/help/assets/addon-adobe-express.md). The add-on allows you to directly access the assets stored in Experience Manager Assets from within the Adobe Express user interface. You can place content managed in AEM Assets in the Express canvas and then save new or edited content in an AEM Assets repository. The add-on provides the following key benefits:
+**AEM Assets add-on for Adobe Express**: Experience Manager Assets now provides an add-on for Adobe Express. The add-on allows you to directly access the assets stored in Experience Manager Assets from within the Adobe Express user interface. You can place content managed in AEM Assets in the Express canvas and then save new or edited content in an AEM Assets repository. The add-on provides the following key benefits:
 
 * Increased content reuse by editing and saving new assets in AEM
 
