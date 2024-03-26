@@ -203,9 +203,9 @@ In any case, [traffic is always routed to the other closest region that is onlin
 
 ## Updating Environments {#updating-dev-environment}
 
-As a cloud-native service, updates of your staging and production environments within production programs are automatically managed by Adobe. 
+As a cloud-native service, updates of your development, staging and production environments within production programs are automatically managed by Adobe. 
 
-However, updates to development environments and to environments in sandbox programs are managed within the programs. When such an environment is not running the latest publicly available AEM version, the status on the **Environments** card on the **Overview** screen of the program shows **Update Available**.
+However, updates to environments in sandbox programs are managed within the programs. When such an environment is not running the latest publicly available AEM version, the status on the **Environments** card on the **Overview** screen of the program shows **Update Available**.
 
 ![Environment update status](assets/environ-update.png)
 
@@ -222,7 +222,7 @@ The process of updating is therefore a two-step process:
 
 ### Updating Your Environments {#updating-your-environments}
 
-The **Update** option is available from the **Environments** card for development environments and environments in sandbox programs by clicking the ellipsis button of the environment.
+The **Update** option is available from the **Environments** card for environments in sandbox programs by clicking the ellipsis button of the environment.
 
 ![Update option from Environments card](assets/environ-update2.png)
 
