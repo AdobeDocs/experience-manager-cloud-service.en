@@ -24,7 +24,7 @@ https://data.aem.live/?ext=forms
 
 To log in to your real-time user monitoring dashboard for Edge Delivery Services Forms, enter the following:
 * **URL**: The URL is specific to user site or domain. The users have the option to filter the site or domain to view the dashboard as per their requirements.
-* **Domain Key**: The user manually generates the domain key. For assistance or inquiries, please refer to the [Generate RUM Domain Key](https://aemcs-workspace.adobe.com/rum/generate-domain-key) documentation.
+* **Domain Key**: The user manually generates the domain key. For assistance or inquiries, refer to the [Generate RUM Domain Key](https://aemcs-workspace.adobe.com/rum/generate-domain-key) documentation.
 
 ### Real time user monitoring dashboard for Edge Delivery Services Forms
 
