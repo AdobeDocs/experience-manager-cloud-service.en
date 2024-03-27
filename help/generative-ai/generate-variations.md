@@ -1,6 +1,6 @@
 ---
 title: Generate Variations
-description: Learn about the Generate Variations app, accessible from the Sidekick of Edge Delivery Service or directly
+description: Learn about the Generate Variations app, accessible from the Sidekick of Edge Delivery Services or directly
 ---
 
 # Generate Variations {#generate-variations}
