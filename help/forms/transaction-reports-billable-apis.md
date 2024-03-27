@@ -4,6 +4,7 @@ description: List of all the APIs that are accounted as transactions
 feature: Adaptive Forms, Foundation Components
 hide: yes
 hidefromtoc: yes
+exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
 ---
 # Transaction Reports Billable APIs {#transaction-reports-billable-apis}
 
