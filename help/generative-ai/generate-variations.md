@@ -1,6 +1,6 @@
 ---
 title: Generate Variations
-description: Learn about the Generate Variations app, accessible from directly within AEM as a Cloud Service, from the Sidekick of Edge Delivery Service or directly
+description: Learn about the Generate Variations app, accessible from the Sidekick of Edge Delivery Service or directly
 ---
 
 # Generate Variations {#generate-variations}
