@@ -1,8 +1,8 @@
 ---
 title: Content Modeling for AEM authoring with Edge Delivery Services Projects
 description: Learn how content modeling works for AEM authoring with Edge Delivery Services projects and how to model your own content.
+exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 ---
-
 # Content Modeling for AEM authoring with Edge Delivery Services Projects {#content-modeling}
 
 Learn how content modeling works for AEM authoring with Edge Delivery Services projects and how to model your own content.
@@ -345,7 +345,7 @@ Everything else will be rendered as plain text.
 
 #### Field Collapse {#field-collapse}
 
-Field collapse is the mechanism to combine multiple field values into a single semantic element based on a naming convention using the suffixes `Title`, `Type`, `Alt`, and `Text` (all case sensitive). Any property ending with any of those suffixes will not be considered a value, but rather as an attribute of another property.
+Field collapse is the mechanism to combine multiple field values into a single semantic element based on a naming convention using the suffixes `Title`, `Type`, `MimeType`, `Alt`, and `Text` (all case sensitive). Any property ending with any of those suffixes will not be considered a value, but rather as an attribute of another property.
 
 ##### Images {#image-collapse}
 
@@ -618,7 +618,13 @@ Make sure spreadsheet is added to your path mapping as well before you publishin
 
 ### Page Properties {#page-properties}
 
-It is also possible to define a component model for page metadata, which will be made available to the author as a tab of the AEM Sites page properties dialog.
+Many of the default page properties available in AEM are mapped to the respective page metadata in a document. That includes for example `title`, `description`, `robots`, `canonical url` or `keywords`. Some AEM-specific properties are available as well:
+
+* `cq:lastModified` as `modified-time` in ISO8601 format
+* The time the document was last published as `published-time` in ISO8601 format
+* `cq:tags` as `cq-tags` as comma separted list of the tag IDs.  
+
+It is also possible to define a component model for custom page metadata, which will be made available to the author as a tab of the AEM Sites page properties dialog.
 
 To do so, create a component model with the ID `page-metadata`.
 
@@ -627,15 +633,10 @@ To do so, create a component model with the ID `page-metadata`.
   "id": "page-metadata",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "theme",
       "label": "Theme"
     }
   ]
 }
 ```
-
-There are a few field names that have a special meaning and will be skipped when serving the authoring dialog UI:
-
-* **`cq:tags`** - By default, `cq:tags` are not added to the metadata. Adding them to the `page-metadata` model will add the tag IDs as a comma-separated list as a `tags` meta tag to the head.
-* **`cq:lastModified`** - `cq:lastModified` will add its data as `last-modified` to the head.
