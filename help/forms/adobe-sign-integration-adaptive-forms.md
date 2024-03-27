@@ -60,6 +60,10 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 
 1. Copy the URL present in your current browser window to a notepad and remove the part `/ui#/aem` from the URL. The modified URL is then required to configure [!DNL Adobe Acrobat Sign] application with [!DNL AEM Forms], in a later step. Select **[!UICONTROL Next]**.
 
+   * When you connect Adobe Sign and find an error as shown in the image below, It may be due to a change in the URL. To resolve this, set up properties for an existing configured [!DNL Adobe Acrobat Sign] application with [!DNL AEM Forms], this causes the URL to change, Now use this URL to connect the Adobe Sign application.
+
+       ![Configuration error](/help/forms/assets/config_error_sign.png)
+
 1.  In the **[!UICONTROL Settings]** tab,
       * the **[!UICONTROL OAuth URL]** field contains the default URL which includes the Adobe Sign database shard. The format of the URL is:
 
@@ -205,7 +209,7 @@ The representative generates and shares credentials with you. In the next sectio
    
       >[!NOTE]
       >
-      > * After logging in your Adobe Sign account,navigate to **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** to access information related to Adobe Sign oAuth URL and Access Token URL.
+      > * After logging in your Adobe Sign account, navigate to **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API Information]** > **[!UICONTROL REST API Methods Documentation]** > **[!UICONTROL OAuth Access Token]** to access information related to Adobe Sign oAuth URL and Access Token URL.
  
 1.  Use the credentials shared by  Adobe Acrobat Sign for Government Solution representative ([Adobe Professional Services team member]) in the previous section as [**[!UICONTROL Client ID]** and **[!UICONTROL Client Secret]**].  
 
