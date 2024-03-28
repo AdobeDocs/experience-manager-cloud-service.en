@@ -15,10 +15,6 @@ You can [access Generate Variations](#access-generate-variations) from:
 
 * [the Sidekick of AEM Edge Delivery Services](#access-aem-sidekick)
 
-<!--
-* [directly](#access-direct)
--->
-
 You can then:
 
 * [Get started](#get-started) using a prompt template that Adobe has created for a specific use case.
@@ -509,18 +505,6 @@ Some configuration is needed before you can access Generate Variations from the 
 1. You can then access the feature, by selecting **Generate Variations** from the toolbar of the Sidekick:
 
    ![Generate Variations - access from AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
-
-<!--
-### Direct Access {#access-direct}
-
-You can also access Generate Variations directly from:
-
-[`https://experience.adobe.com/#/aem/generate-variations/`](https://experience.adobe.com/#/aem/generate-variations/)
-
->[!NOTE]
->
->If you encounter an error, refer to [Access to Experience Manager as a Cloud Service with Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
--->
 
 ## Access to Experience Manager as a Cloud Service with Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
 
