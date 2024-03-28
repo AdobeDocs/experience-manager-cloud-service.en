@@ -25,7 +25,7 @@ You can then:
 * Define the [audience](#audiences) segments to use in the prompt when [generating personalized audience-specific content](#generate-copy).
 * Preview the output alongside the prompt, before making amendments and refining the results if necessary.
 * Use [Adobe Express to generate images](#generate-image) based on the copy variations; this uses the Generative AI capabilities of Firefly.
-* Select content that you want to use in an experiment or use on your website.
+* Select content that you want to use on your website, or in an experiment.
 
 ## Legal and Usage Note {#legal-usage-note}
 
@@ -51,11 +51,11 @@ When you open Generate Variations (and expand the left panel) you see:
 * Left Navigation
   * To the left of **Generate Variations**, there is the option (sandwich menu) to expand, or hide the left navigation panel.
   * **Prompt Templates**:
-    * Shows links to the various Prompts; these can include:
-      * Those provided by Adobe to help you generate content; flagged with the Adobe icon.
-      * Those created by yourself.
-      * Those created within your IMS organization; flagged with an icon showing multiple heads.
-    * This includes the [New prompt](#create-prompt) link for creating your own prompt.
+    * Shows links to the various Prompts; these can include prompts:
+      * Provided by Adobe to help you generate content; flagged with the Adobe icon.
+      * Created by yourself.
+      * Created within your IMS organization; flagged with an icon showing multiple heads.
+    * Includes the [New prompt](#create-prompt) link for creating your own prompt.
     * You can **Delete** prompts created by yourself, or within your IMS organization. This is done using the menu accessed with the ellipse on the appropriate card.
   * [Favorites](#favorites): Shows results from previous generations that you have flagged as Favorites.
   * [Recents](#recents): Provides links to prompts, and their inputs, that you have used recently.
@@ -64,7 +64,7 @@ When you open Generate Variations (and expand the left panel) you see:
 
 ## Get Started {#get-started}
 
-The interface guides you through the process of generating content. After opening the interface the first step is to select the prompt you want to use.
+The interface guides you through the process of generating content. After opening the interface, the first step is to select the prompt you want to use.
 
 ### Select Prompt {#select-prompt}
 
@@ -73,7 +73,7 @@ From the main panel, you can select:
 * a Prompt Template supplied by Adobe to start generating content, 
 * the [New prompt](#create-prompt) to create your own prompt,
 * a template that you have created for your use only,
-* a template that you, or someone in your organization has created.
+* a template that you, or someone in your organization, has created.
 
 To differentiate:
 
@@ -87,31 +87,31 @@ To differentiate:
 
 Each prompt needs you to supply certain information so that it is able to get appropriate content back from generative AI.
 
-The input fields guide you through what information is needed. To help, certain fields have default values that you can use or modify as needed, and descriptions explaining what is required.
+The input fields guide you through what information is needed. To help, certain fields have default values that you can use, or modify as needed, and descriptions explaining the requirements.
 
-There are several key input fields that are common to multiple prompts:
+There are several key input fields that are common to multiple prompts (certain fields are not always available):
 
 * **Count of**/**Number of**
-  * If the prompt you have selected has such an input field, you can select how many content variations you want to be created in one generation.
-  * Depending on the prompt, this might have one of various labels, for example Count, Number of Variations, Number of Ideas, and others.
+  * You can select how many content variations you want to be created in one generation.
+  * Depending on the prompt, this might have one of various labels; for example Count, Number of Variations, Number of Ideas, and others.
 * **Audience Source**/**Target Audience**
   * Helps to generate personalized content to a specific audience.
-  * Adobe provides default audiences; or you can specify additional audiences, see Audiences.
+  * Adobe provides default audiences; or you can specify additional audiences; see [Audiences](#audiences).
 * **Additional Context**
-  * Insert relevant content to help Generative AI craft a better response based on the input. Example: if you are creating a web banner for a particular page or product you may want to include information about the page / product.
+  * Insert relevant content to help Generative AI craft a better response based on the input. For example, if you are creating a web banner for a particular page or product you may want to include information about the page / product.
 * **Temperature**
   Use to modify the temperature of Adobe Generative AI:
   * A higher temperature strays from the prompt and leads to more variation, randomness, and creativity.
   * A lower temperature is more deterministic and stays closer to what is in the prompt.
-  * As default, the Temperature is set to 1. You can experiment with different temperatures if the generated results are not to your liking.
+  * As default, the temperature is set to 1. You can experiment with different temperatures if the generated results are not to your liking.
 * **Edit Prompt**
-    The underlying [prompt can be edited](#edit-the-prompt) to refine the generated results.
+  * The underlying [prompt can be edited](#edit-the-prompt) to refine the generated results.
 
 ### Generate Copy {#generate-copy}
 
 After you fill out the input fields, and/or modify the prompt, you are ready to generate content and review the responses.
 
-Select **Generate** to see responses generated by generative AI The generated content variations are shown under the prompt that generated them. 
+Select **Generate** to see responses generated by generative AI. The generated content variations are shown under the prompt that generated them. 
 
 ![Generate Variations - generate copy](assets/generate-variations-generate-content.png)
 
@@ -119,19 +119,17 @@ Select **Generate** to see responses generated by generative AI The generated co
 >
 >Most Adobe prompt templates include an **AI Rationale** in the variation response. This provides transparency as to why generative AI generated that particular variation.
 
-<!-- CHECK: have removed link to authoring your content -->
-
 When you select a single variation, the following actions are available:
 
-* Favorite
+* **Favorite**
   * Flag as a **Favorite** for future use (will show in [Favorites](#favorites)).
 * Thumbs Up/Thumbs Down
   * Use the thumbs up / down indicators to notify Adobe of the quality of responses.
-* Copy
-  * Copy to the clipboard for use in an [Experiment](https://www.aem.live/docs/experimentation) or when authoring content on your website.
-* Remove
+* **Copy**
+  * Copy to the clipboard for use when authoring content on your website, or in an [Experiment](https://www.aem.live/docs/experimentation).
+* **Remove**
 
-If you need to refine the inputs or prompt, you can make adjustments and select **Generate** again to get a set of new responses. The new prompt and response will show below the initial prompt and response; you can scroll up and down to view the various sets of content.
+If you need to refine the inputs or prompt, you can make adjustments and select **Generate** again to get a set of new responses. The new prompt and response are shown below the initial prompt and response; you can scroll up and down to view the various sets of content.
 
 Above each set of variations is the prompt that created them, along with a **Re-use** option. If you ever need to re-run a prompt with its inputs, select **Re-use** to reload them in **Inputs**.
 
@@ -155,7 +153,7 @@ You can make further changes:
 
 You can also use **Explore More** for further possibilities.
 
-When complete select the desired image and **Save**. Adobe Express will close and the image is returned, and saved with the variation.
+When complete, select the desired image and **Save** to close Adobe Express. The image is returned, and saved with the variation.
 
 ![Generate Variations - express image saved](assets/generate-variations-express-image-saved.png)
 
@@ -172,29 +170,27 @@ Here you can mouse-over the image to show action items for:
 
 ### Use Content {#use-content}
 
-To use the content generated with generative AI you must copy the content to the clipboard for use elsewhere.
+To use the content generated with generative AI, you must copy the content to the clipboard for use elsewhere.
 
 This is done using the copy icons:
 
 * For text: Use the copy icon visible on the variations panel
 * For the image: mouse-over the image to see the copy icon
 
-<!-- CHECK: have removed link to authoring your content -->
-
-Once copied to the clipboard, you can paste the information for use in the document based authoring workflows. You can then either run an [experiment](https://www.aem.live/docs/experimentation) or for use when authoring content for your website.
+Once copied to the clipboard, you can paste the information for use when authoring content for your website. You can also run an [experiment](https://www.aem.live/docs/experimentation).
 
 ## Favorites {#favorites}
 
 After reviewing the content you can save selected variations as favorites.
 
-Once saved they are shown under **Favorites** in the left navigation. Favorites are persisted (until you **Delete** them - or clear the browser cache).
+Once saved they are shown under **Favorites** in the left navigation. Favorites are persisted (until you **Delete** them, or clear the browser cache).
 
-* Favorites and variations can be copy/pasted to the clipboard for use in your website content through document authoring in Word or Google Docs
+* Favorites and variations can be copy/pasted to the clipboard for use in your website content.
 * Favorites can be **Removed**.
 
 ## Recents {#recents}
 
-This section provides links to your recent activity. A **Recent** entry is added after you select **Generate**. It has the name of the prompt and a time stamp. If you select a link it loads the prompt, populate the input fields as appropriate, and show generated variations.
+This section provides links to your recent activity. A **Recent** entry is added after you select **Generate**. It has the name of the prompt and a timestamp. If you select a link, it loads the prompt, populates the input fields as appropriate, and shows generated variations.
 
 ## Edit the Prompt {#edit-the-prompt}
 
@@ -219,7 +215,8 @@ When creating or editing a prompt, you may want to add input fields. Input field
   For example, `{{tone_of_voice}}`.
   
   >[!NOTE]
-  >Do not include any spaces between the double curly brackets.
+  >
+  >Spaces are not allowed between the double curly brackets.
 
 * It is also defined under `METADATA`, with the following parameters:
   * `label`
@@ -229,7 +226,7 @@ When creating or editing a prompt, you may want to add input fields. Input field
 
 #### Example: Add new text field - Tone of Voice {#example-add-new-text-field-tone-of-voice}
 
-To add a new text field titled **Tone of Voice** use the following syntax in your prompt:
+To add a new text field titled **Tone of Voice**, use the following syntax in your prompt:
 
 ```prompt
 {{@tone_of_voice, 
@@ -246,9 +243,7 @@ To add a new text field titled **Tone of Voice** use the following syntax in you
 
 To create an input field Page Type providing a dropdown selection:
 
-<!-- CHECK - CORS link -->
-
-1. Create a spreadsheet named pagetype.xls in the top-level directory of your folder structure.
+1. Create a spreadsheet named `pagetype.xls` in the top-level directory of your folder structure.
 1. Edit the spreadsheet:
 
    1. Create two columns: **Key** and **Value**.
@@ -264,8 +259,6 @@ To create an input field Page Type providing a dropdown selection:
      spreadsheet=pagetype
    }}
    ```
-
-1. If using Google Drive, add the file name to CORS.
 
 ## Create a prompt {#create-prompt}
 
@@ -283,14 +276,14 @@ If you would like to preserve formatting both in the UI, and when copied and pas
 
 The following image shows the advantages of doing so:
 
-* in the first example the Title and Description are combined
+* in the first example the `Title` and `Description` are combined
 * while in the second example they are formatted separately: this has been done by including the JSON request in the prompt.
 
 ![Generate Variations - prompt with Title and Description formatted separately](assets/generate-variations-prompt-formatted.png)
 
 ## Save Prompt {#save-prompt}
 
-After editing or creating prompts you may want to save them for future use; for either your IMS organization or yourself alone. The saved prompt will appear as a **Prompt Template** card.
+After editing or creating prompts, you may want to save them for future use; for either your IMS organization or yourself alone. The saved prompt will appear as a **Prompt Template** card.
 
 When you have edited the prompt, the **Save** option is available at the bottom of the Inputs section, to the left of **Generate**.
 
@@ -300,7 +293,7 @@ When selected, the **Save Prompt** dialog opens:
 
 1. Add a unique **Prompt Name**; used to identify the prompt within **Prompt Templates**.
    1. A new, and unique, name creates a new prompt template.
-   1. An existing name overwrites that prompt, a message is shown.
+   1. An existing name overwrites that prompt; a message is shown.
 1. Optionally add a description.
 1. Activate, or deactivate, the option **Shared across organization**, depending on whether the prompt should be private to you, or made available across your IMS organization. This status is shown in the [resulting card shown in the Prompt Templates](#select-prompt).
 1. **Save** the prompt; or **Cancel** the action.
@@ -317,7 +310,12 @@ When selected, the **Save Prompt** dialog opens:
 
 To generate personalized content the generative AI must have an understanding of the audience. Adobe provides a number of default audiences, or you can add your own.
 
-When adding an audience, you should describe the audience in natural language. For example, to create a “Student” audience you might say “The audience consists of students, typically individuals who are pursuing education at various academic levels, such as primary, secondary, or tertiary education. They are engaged in learning and acquiring knowledge in diverse subjects, seeking academic growth, and preparing for future careers or personal development.”
+When adding an audience, you should describe the audience in natural language. For example:
+
+* to create an audience:
+  * `Student`  
+* you might say:
+  * `The audience consists of students, typically individuals who are pursuing education at various academic levels, such as primary, secondary, or tertiary education. They are engaged in learning and acquiring knowledge in diverse subjects, seeking academic growth, and preparing for future careers or personal development.`
 
 Two Audience Sources are supported:
 
@@ -374,7 +372,7 @@ For example, to add an audience from a file on Google Drive:
 1. Publish the file:
    1. File -> Share -> publish to web -> CSV
 1. Copy the URL to the published file.
-1. Go to the Generate Variations App.
+1. Go to Generate Variations.
 1. Open the Prompt Editor.
 1. Find **Adobe Target** audience in the metadata and replace the URL.
 
@@ -452,11 +450,19 @@ See the [release notes for v2.0.0 for instructions on how to retrieve them](#rel
 
 ## Generative Action Usage {#generative-action-usage}
 
-One generation of a copy variant is equal to one generative action. Customers have a certain number of generative actions that come with their AEM license. Once the base entitlement is consumed, customers have the ability to purchase additional actions.
+Usage managment depends on the action taken:
 
-See [Adobe Experience Manager: Cloud Service | Product Description](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) for further details about base entitlements, and reach out to your account team if you would like to purchase more generative actions.
+* Generate Variations
 
-Image generation usage is handled through Adobe Express entitlements and [generative credits](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+  One generation of a copy variant is equal to one generative action. As a customer, you have a certain number of generative actions that come with your AEM license. Once the base entitlement is consumed, you have the ability to purchase additional actions.
+
+  >[!NOTE]
+  >
+  >See [Adobe Experience Manager: Cloud Service | Product Description](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) for further details about base entitlements, and reach out to your account team if you would like to purchase more generative actions.
+
+* Adobe Express
+
+  Image generation usage is handled through Adobe Express entitlements and [generative credits](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
 
 ## Access Generate Variations {#access-generate-variations}
 
