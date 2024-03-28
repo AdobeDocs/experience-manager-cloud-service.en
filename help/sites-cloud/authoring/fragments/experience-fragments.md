@@ -232,6 +232,10 @@ You can create variations of your Experience Fragment, depending on your needs:
     * **Variation**
     * **Variation as live-copy**.
 
+      >[!NOTE]
+      >
+      >Creating an initial Variation as Live Copy will inherit the title by using the Blueprint as the Master Variation.
+
 1. Define the required properties:
 
     * **Template**
