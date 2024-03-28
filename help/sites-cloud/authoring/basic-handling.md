@@ -77,7 +77,7 @@ From Navigation the consoles available are:
 
 ## Tools Panel {#tools-panel}
 
-In the **Tools** panel has a side panel containing a range of categories, that group together similar consoles. The **Tools** consoles provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. 
+The **Tools** panel has a side panel containing a range of categories, that group together similar consoles. The **Tools** consoles provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. 
 
 ![Tools panel](assets/basic-handling-tools.png)
 
