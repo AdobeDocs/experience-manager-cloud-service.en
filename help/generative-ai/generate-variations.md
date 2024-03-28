@@ -14,7 +14,10 @@ You can [access Generate Variations](#access-generate-variations) from:
 -->
 
 * [the Sidekick of AEM Edge Delivery Services](#access-aem-sidekick)
+
+<!--
 * [directly](#access-direct)
+-->
 
 You can then:
 
@@ -507,6 +510,7 @@ Some configuration is needed before you can access Generate Variations from the 
 
    ![Generate Variations - access from AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
 
+<!--
 ### Direct Access {#access-direct}
 
 You can also access Generate Variations directly from:
@@ -516,6 +520,7 @@ You can also access Generate Variations directly from:
 >[!NOTE]
 >
 >If you encounter an error, refer to [Access to Experience Manager as a Cloud Service with Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
+-->
 
 ## Access to Experience Manager as a Cloud Service with Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
 
