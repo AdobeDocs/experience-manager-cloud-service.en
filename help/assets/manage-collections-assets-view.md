@@ -42,6 +42,8 @@ You can perform the following tasks to manage and use collections:
 
 * [Delete a collection](#delete-collection)
 
+* [Manage permissions to a private collection](#manage-permissions-to-a-private-collection)
+
 ## Create a collection {#create-collection}
 
 To create a collection:
@@ -179,6 +181,12 @@ To delete a collection:
 1. Select the collection that you need to delete.
 
 1. Click **[!UICONTROL Delete]**.
+
+## Manage permissions to a private collectio{#manage-permissions-to-a-private-collection}
+
+You can allow administrators to manage the access levels for collections available in the repository. You can also delegate permission management priviliges to user groups. You can assign permissions such as view, edit,etc. to the user groups or users. Adobe does not recommend to assign permissions to users.
+
+For more information visit [manage permissions](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions#manage-permissions-on-folders).
 
 ## Next Steps {#next-steps}
 
