@@ -1,12 +1,12 @@
 ---
-title: Apply image presets and renditions in Dynamic Media
+title: Download image presets and renditions in Dynamic Media
 description: Dynamic Media Image Presets and Smart Crop features promote efficient image management using dynamic image renditions.
 ---
-# Configure Dynamic Media image presets and renditions{#dynamic-media-renditions}
+# Download Dynamic Media image presets and renditions{#dynamic-media-renditions}
 
-Efficient brand management is crucial for organizations operating in diverse markets. However, it can be difficult to ensure brand integrity while managing images and their apt utilization. 
+Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. AEM facilitates easy creation and management of these renditions, enhancing user experience. You can create thumbnails, optimize images for web or mobile, add watermarks, download image presets or smart crops and do much more.
 
-Dynamic Media image presets and Smart Crop renditions in the new Assets view effectively tackle these challenges. They promote systematic image management that aligns with brand standards, maximizing brand cohesion. This simplifies the process of quickly locating and using dynamic image renditions as needed without any admin access.
+Dynamic Media image presets and Smart Crop renditions promote systematic image management that aligns with brand standards, maximizing brand cohesion. This simplifies the process of quickly locating and using dynamic image renditions as needed without any admin access.
 
 ## Before you begin
 
@@ -33,3 +33,6 @@ To view and download dynamic renditions of images in [!DNL Experience Manager As
 1. Click the ![download icon](assets/download-new-icon.png) icon next to the rendition you need to download. <br> Alternatively, you can select the image rendition, and click **[!UICONTROL Download Rendition]** option at the bottom.
 
 Learn more about [applying image presets](/help/assets/dynamic-media/image-presets.md) and [Smart Crop renditions](/help/assets/dynamic-media/managing-image-presets.md) in Dynamic Media.
+
+<!--Efficient brand management is crucial for organizations operating in diverse markets. However, it can be difficult to ensure brand integrity while managing images and their apt utilization. 
+Dynamic Media image presets and Smart Crop renditions in the new Assets view effectively tackle these challenges. They promote systematic image management that aligns with brand standards, maximizing brand cohesion. This simplifies the process of quickly locating and using dynamic image renditions as needed without any admin access.-->
