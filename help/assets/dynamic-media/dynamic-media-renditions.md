@@ -18,7 +18,8 @@ Dynamic Media image presets and Smart Crop renditions promote systematic image m
 
 ## View and download dynamic renditions
 
-To view and download dynamic renditions of images in [!DNL Experience Manager Assets], follow these steps:
+Image presets are applied to all images by default, while smart crop is based on the image profile assigned to a folder.
+<br>To view and download dynamic renditions of images in [!DNL Experience Manager Assets], follow these steps:
 
 1. Go to **AEM Assets** > **[!UICONTROL Assets Management]** > **[!UICONTROL Assets]**.
 
@@ -35,4 +36,5 @@ To view and download dynamic renditions of images in [!DNL Experience Manager As
 Learn more about [applying image presets](/help/assets/dynamic-media/image-presets.md) and [Smart Crop renditions](/help/assets/dynamic-media/managing-image-presets.md) in Dynamic Media.
 
 <!--Efficient brand management is crucial for organizations operating in diverse markets. However, it can be difficult to ensure brand integrity while managing images and their apt utilization. 
-Dynamic Media image presets and Smart Crop renditions in the new Assets view effectively tackle these challenges. They promote systematic image management that aligns with brand standards, maximizing brand cohesion. This simplifies the process of quickly locating and using dynamic image renditions as needed without any admin access.-->
+Dynamic Media image presets and Smart Crop renditions in the new Assets view effectively tackle these challenges. They promote systematic image management that aligns with brand standards, maximizing brand cohesion. This simplifies the process of quickly locating and using dynamic image renditions as needed without any admin access.
+The existing images have dynamic renditions by default.-->
