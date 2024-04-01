@@ -96,6 +96,14 @@ In addition to the recently released [Traffic Filter Rules](/help/security/traff
 
 [Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
 
+### Enhanced logging for RDEs {#rde-logging-early-adopter}
+
+While debugging code in a [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md), developers can now configure and stream logs more efficiently, using the command line, and without modifying OSGI properties in version control. Features include:
+* declare log levels on a per package or class level
+* customize the log output format
+* stream multiple logs in parallel 
+
+Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
 
 ## Cloud Manager {#cloud-manager}
 
