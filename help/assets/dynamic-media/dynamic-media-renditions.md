@@ -29,7 +29,7 @@ To view and download dynamic renditions of images in [!DNL Experience Manager As
 
 1. In the right menu, click **[!UICONTROL Renditions]**. <br> The **[!UICONTROL Renditions]** panel opens with the available **[!UICONTROL Dynamic]** and **[!UICONTROL Smart Crop]** renditions.
 
-    ![dynamic renditions](assets\preset_smart_crop.png)
+    ![dynamic renditions](assets/preset_smart_crop.png)
 
 1. Click the ![download icon](assets/download-new-icon.png) icon next to the rendition you need to download. <br> Alternatively, you can select the image rendition, and click **[!UICONTROL Download Rendition]** option at the bottom.
 
