@@ -10,9 +10,11 @@ Dynamic Media image presets and Smart Crop renditions promote systematic image m
 
 ## Before you begin
 
-* You must have a Dynamic Media license.
+To view and manage dynamic renditions, you must have:
 
-* You must have set up: 
+* A Dynamic Media license.
+
+* Set up: 
     * [Smart Crop Image Profiles](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles) 
     * [Image presets](/help/assets/dynamic-media/managing-image-presets.md)
 
