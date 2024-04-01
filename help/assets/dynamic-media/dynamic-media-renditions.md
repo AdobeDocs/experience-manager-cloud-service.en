@@ -1,10 +1,10 @@
 ---
-title: Download image presets and renditions in Dynamic Media
-description: Dynamic Media Image Presets and Smart Crop features promote efficient image management using dynamic image renditions.
+title: View and manage renditions in Experience Manager Assets
+description: Learn how Dynamic Media simplifies effective image management with dynamic image renditions.
 ---
 # View and manage renditions in Experience Manager Assets{#dynamic-media-renditions}
 
-Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. AEM facilitates easy creation and management of these renditions, enhancing user experience. You can create thumbnails, optimize images for web or mobile, add watermarks, download image preset or smart crop renditions and do much more.
+Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. AEM facilitates easy creation and management of these renditions, enhancing user experience. You can create thumbnails, optimize images for web or mobile, add watermarks, download image preset or smart crop renditions, and do much more.
 
 Dynamic Media image presets and Smart Crop renditions promote systematic image management that aligns with brand standards, maximizing brand cohesion. This simplifies the process of quickly locating and using dynamic image renditions as needed without any admin access.
 
@@ -18,8 +18,7 @@ Dynamic Media image presets and Smart Crop renditions promote systematic image m
 
 ## View and download dynamic renditions
 
-Experience Manager Assets lets you download dynamic renditions of digital assets. While dynamic renditions allow you to effectively manage your asset redntions, you can also view and download static renditions of digital assets in a few steps.
-
+Dynamic Media lets users effectively manage dynamic renditions, while also enabling users to easily view and download static renditions of digital assets within Experience Manager Assets. <br>
 To view and download dynamic renditions of images in [!DNL Experience Manager Assets], follow these steps:
 
 1. Go to **AEM Assets** > **[!UICONTROL Assets Management]** > **[!UICONTROL Assets]**.
@@ -35,8 +34,3 @@ To view and download dynamic renditions of images in [!DNL Experience Manager As
 1. Click the ![download icon](assets/download-new-icon.png) icon next to the rendition you need to download. <br> Alternatively, you can select the image rendition, and click **[!UICONTROL Download Rendition]** option at the bottom.
 
 Learn more about [applying image presets](/help/assets/dynamic-media/image-presets.md) and [Smart Crop renditions](/help/assets/dynamic-media/managing-image-presets.md) in Dynamic Media.
-
-<!--Efficient brand management is crucial for organizations operating in diverse markets. However, it can be difficult to ensure brand integrity while managing images and their apt utilization. 
-Dynamic Media image presets and Smart Crop renditions in the new Assets view effectively tackle these challenges. They promote systematic image management that aligns with brand standards, maximizing brand cohesion. This simplifies the process of quickly locating and using dynamic image renditions as needed without any admin access.
-The existing images have dynamic renditions by default.
-Image presets are applied to all images by default, while smart crop is based on the image profile assigned to a folder.-->
