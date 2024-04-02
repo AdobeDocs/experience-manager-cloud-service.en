@@ -12,9 +12,11 @@ Dynamic Media image presets, and Smart Crop renditions promote systematic image 
 
 * You must be a licensed Dynamic Media user.
 
-* Use Admin view to set up:  
+* Use [!UICONTROL Admin view] to set up: 
     * [Smart Crop Image Profiles](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles) 
     * [Image presets](/help/assets/dynamic-media/managing-image-presets.md)
+
+    You can [switch the view](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction#access-assets-view) later to preview dynamic renditions in the Assets view.
 
 ## View and download dynamic renditions {#view-download-renditions}
 
