@@ -93,9 +93,9 @@ In addition to the recently released [Traffic Filter Rules](/help/security/traff
 * setting or modifying request or response headers
 * custom error pages when the CDN can't reach AEM
 
-#### Apache/Dispatcher runtime ingestion of rewrite maps (Early Adopter Program) {apache-rewritemaps-early-adopter}
+#### Apache/Dispatcher Runtime Ingestion of Rewrite Maps to Support Business User Redirects (Early Adopter Program) {apache-rewritemaps-early-adopter}
 
-Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a specific location in the publish repository, and load it, without requiring a web tier pipeline execution. This opens up opportunities for a business user to declare redirects using a UI, such as that offered by ACS Commons Redirect Map Manager. If this sounds useful for your business needs, please reach out to **aemcs-rde-support@adobe.com** for more information.
+Similar to AEM 6.5, Apache/Dispatcher can be configured to ingest rewrite maps placed in a specific location in the publish repository, and load it, without requiring a web tier pipeline execution. This opens up opportunities for a business user to upload [plain text maps](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html#txt), or declare redirects using a UI, such as that offered by ACS Commons Redirect Map Manager. If this sounds useful for your business needs, please reach out to **aemcs-cdn-config-adopter@adobe.com** for more information.
 
 #### RDE Support for Front-End Code using Site Themes and Site Templates (Early Adopter Program) {#rde-frontend-early-adopter}
 
@@ -104,7 +104,7 @@ Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a speci
 #### Enhanced logging for RDEs (Early Adopter Program) {#rde-logging-early-adopter}
 
 While debugging code in a [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md), developers can now configure and stream logs more efficiently, using the command line, and without modifying OSGI properties in version control. Features include:
-* declare log levels on a per package or class level
+* declare diferent log levels on a per package or class level
 * customize the log output format
 * stream multiple logs in parallel 
 
