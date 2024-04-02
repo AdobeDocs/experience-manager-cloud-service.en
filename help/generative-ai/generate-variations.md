@@ -9,10 +9,7 @@ If you are looking for a way to optimize your digital channels and accelerate co
 
 You can [access Generate Variations](#access-generate-variations) from:
 
-<!-- 
 * [within Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
--->
-
 * [the Sidekick of AEM Edge Delivery Services](#access-aem-sidekick)
 
 You can then:
