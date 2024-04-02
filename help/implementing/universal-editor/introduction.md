@@ -72,12 +72,6 @@ A marketing practitioner wants to create content that is tailored to the layout 
 
 * The underlying job to accomplish is to convincingly connect with the readers.
 
-## Road Map {#road-map}
-
-It is important to note that the Universal Editor is a work in progress and some of the capabilities laid out in this document are a vision of the final editor and not necessarily representative of its current capabilities.
-
-Speak with your Adobe contact for details on the upcoming features planned for the Universal Editor.
-
 ## Additional Resources {#additional-resources}
 
 To learn more about the Universal Editor, see these documents.
