@@ -124,7 +124,7 @@ Now, you can [use add Adobe Acrobat Sign fields to an Adaptive Form](working-wit
 
 #### Frequently asked question {#resolve-config-error} 
 
-**Q:** How to resolve an error when you find an error while connecting [!DNL Adobe Acrobat Sign] with [!DNL AEM Forms]?
+**Q:** How to resolve when you find an error while connecting [!DNL Adobe Acrobat Sign] with [!DNL AEM Forms]?
 
 **Ans:** When you connect Adobe Sign and find an error as shown in the image below. To resolve, follow the steps given below:
 
