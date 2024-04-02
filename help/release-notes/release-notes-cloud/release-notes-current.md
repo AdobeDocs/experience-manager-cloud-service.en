@@ -93,6 +93,10 @@ In addition to the recently released [Traffic Filter Rules](/help/security/traff
 * setting or modifying request or response headers
 * custom error pages when the CDN can't reach AEM
 
+#### Apache/Dispatcher runtime ingestion of rewrite maps (Early Adopter Program) {apache-rewritemaps-early-adopter}
+
+Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a specific location in the publish repository, and load it, without requiring a web tier pipeline execution. This opens up opportunities for a business user to declare redirects using a UI, such as that offered by ACS Commons Redirect Map Manager. If this sounds useful for your business needs, please reach out to **aemcs-rde-support@adobe.com** for more information.
+
 #### RDE Support for Front-End Code using Site Themes and Site Templates (Early Adopter Program) {#rde-frontend-early-adopter}
 
 [Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
