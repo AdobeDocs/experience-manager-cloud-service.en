@@ -20,7 +20,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.3.0) is April 4, 2024. The next feature release (2024.4.0) is planned for April 25, 2024.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.3.0) is April 11, 2024. The next feature release (2024.4.0) is planned for April 25, 2024.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -76,14 +76,15 @@ Real User Monitoring (RUM) Data Service offers a more precise reflection of user
    
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
+### Early Adopter Programs {#foundation-early-adopter}
 
-### Traffic Filter Rules Alerts Early Adopter Program {#traffic-filter-rules-alerts-early-adopter}
+#### Traffic Filter Rules Alerts (Early Adopter Program) {#traffic-filter-rules-alerts-early-adopter}
 
 The recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which includes the optionally licensable Web Application Firewall (WAF) rules, lets you configure what traffic should be allowed or denied. 
 
 Now you can email **aemcs-cdn-config-adopter@adobe.com** to join the early adopter program so you can be alerted whenever your traffic filter rules are triggered. Actions Center email notifications will keep you informed when certain traffic conditions occur so you can take appropriate measures. 
 
-### CDN Configuration Early Adopter Program {#cdn-config-early-adopter}
+#### CDN Configuration (Early Adopter Program) {#cdn-config-early-adopter}
 
 In addition to the recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which includes the optionally licensable Web Application Firewall (WAF) rules, there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md) and join the early adopter program by emailing **aemcs-cdn-config-adopter@adobe.com** to gain access to:
 * 301/302 client-side redirects
@@ -92,10 +93,18 @@ In addition to the recently released [Traffic Filter Rules](/help/security/traff
 * setting or modifying request or response headers
 * custom error pages when the CDN can't reach AEM
 
-### RDE Support for Front-End Code using Site Themes and Site Templates: Early Adopter Program {#rde-frontend-early-adopter}
+#### RDE Support for Front-End Code using Site Themes and Site Templates (Early Adopter Program) {#rde-frontend-early-adopter}
 
 [Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
 
+#### Enhanced logging for RDEs (Early Adopter Program) {#rde-logging-early-adopter}
+
+While debugging code in a [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md), developers can now configure and stream logs more efficiently, using the command line, and without modifying OSGI properties in version control. Features include:
+* declare log levels on a per package or class level
+* customize the log output format
+* stream multiple logs in parallel 
+
+Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
 
 ## Cloud Manager {#cloud-manager}
 
