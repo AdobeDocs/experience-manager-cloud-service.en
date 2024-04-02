@@ -8,12 +8,6 @@
 
 [!BADGE For authoring AEM content for Edge Delivery Services, click here.]{type=Positive url="/help/edge/overview.md" tooltip="Authoring AEM content for Edge Delivery Services"}
 
-## Universal Editor Status {#universal-editor-status}
-
->[!NOTE]
->
->The Universal Editor is still in development and its capabilities are subject to change and may differ from what is detailed in this document.
-
 ## See Also {#see-also}
 
 * [Create an AEM Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
