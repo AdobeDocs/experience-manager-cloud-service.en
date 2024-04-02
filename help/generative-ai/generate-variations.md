@@ -466,13 +466,11 @@ Usage managment depends on the action taken:
 
 ## Access Generate Variations {#access-generate-variations}
 
-<!--
 ### Access from AEM as a Cloud Service {#access-aemaacs}
 
 Generate Variations can be accessed from the [Navigation Panel](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) of AEM as a Cloud Service:
 
 ![Navigation panel](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
---> 
 
 ### Access from the AEM Sidekick {#access-aem-sidekick}
 
