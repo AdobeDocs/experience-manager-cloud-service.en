@@ -10,7 +10,7 @@ Dynamic Media image presets, and Smart Crop renditions promote systematic image 
 
 ## Static and custom renditions
 
-Experience Manager Assets lets users effectively manage dynamic renditions, while also enabling users to easily view and download static renditions of digital assets.
+Experience Manager Assets lets users easily view and download static renditions of digital assets.
 
 ## Before you begin
 
@@ -41,5 +41,3 @@ To view and download dynamic renditions of images in [!DNL Experience Manager As
 >[!NOTE]
 >
 >Dynamic renditions is visible only if the assets are uploaded from the Admin view.
-
-<!-- Learn more about [applying image presets](/help/assets/dynamic-media/image-presets.md) and [Smart Crop renditions](/help/assets/dynamic-media/managing-image-presets.md) in Dynamic Media. -->
