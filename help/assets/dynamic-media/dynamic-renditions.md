@@ -2,7 +2,7 @@
 title: View and manage renditions in Experience Manager Assets
 description: Learn how Dynamic Media simplifies effective image management with dynamic image renditions.
 ---
-# View and manage renditions in Experience Manager Assets{#dynamic-media-renditions}
+# View and manage renditions in Experience Manager Assets{#dynamic-renditions}
 
 Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. AEM facilitates easy creation and management of these renditions, enhancing user experience. You can create thumbnails, optimize images for web or mobile, add watermarks, download image preset or smart crop renditions, and do much more.
 
@@ -10,15 +10,13 @@ Dynamic Media image presets, and Smart Crop renditions promote systematic image 
 
 ## Before you begin
 
-To view and manage dynamic renditions, you must have:
+* You must be a licensed Dynamic Media user.
 
-* A Dynamic Media license.
-
-* Set up: 
+* Use Admin view to set up:  
     * [Smart Crop Image Profiles](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles) 
     * [Image presets](/help/assets/dynamic-media/managing-image-presets.md)
 
-## View and download dynamic renditions
+## View and download dynamic renditions {#view-download-renditions}
 
 Experience Manager Assets lets users effectively manage dynamic renditions, while also enabling users to easily view and download static renditions of digital assets.<br>
 To view and download dynamic renditions of images in [!DNL Experience Manager Assets], follow these steps:
