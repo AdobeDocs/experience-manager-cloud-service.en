@@ -1,6 +1,6 @@
 ---
 title: View and manage renditions in Experience Manager Assets
-description: Learn how Dynamic Media simplifies effective image management with dynamic image renditions.
+description: Learn how Experience Manager Assets simplifies effective image management with dynamic image renditions.
 ---
 # View and manage renditions in Experience Manager Assets{#dynamic-renditions}
 
