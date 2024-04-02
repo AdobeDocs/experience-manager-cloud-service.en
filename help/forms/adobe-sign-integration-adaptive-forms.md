@@ -60,10 +60,6 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 
 1. Copy the URL present in your current browser window to a notepad and remove the part `/ui#/aem` from the URL. The modified URL is then required to configure [!DNL Adobe Acrobat Sign] application with [!DNL AEM Forms], in a later step. Select **[!UICONTROL Next]**.
 
-   * When you connect Adobe Sign and find an error as shown in the image below, It may be due to a change in the URL. To resolve this, set up properties for an existing configured [!DNL Adobe Acrobat Sign] application with [!DNL AEM Forms], this causes the URL to change, Now use this URL to connect the Adobe Sign application.
-
-       ![Configuration error](/help/forms/assets/config_error_sign.png)
-
 1.  In the **[!UICONTROL Settings]** tab,
       * the **[!UICONTROL OAuth URL]** field contains the default URL which includes the Adobe Sign database shard. The format of the URL is:
 
@@ -125,6 +121,19 @@ Now, you can [use add Adobe Acrobat Sign fields to an Adaptive Form](working-wit
 >[!NOTE]
 >
 > To configure the Adobe Sign sandbox, you can follow the same configuration steps as explained in [Adobe Sign](#adobe-sign).
+
+#### Frequently asked question {#resolve-config-error} 
+
+**Q:** How to resolve an error when you find an error while connecting [!DNL Adobe Acrobat Sign] with [!DNL AEM Forms]?
+
+**Ans:** When you connect Adobe Sign and find an error as shown in the image below. To resolve, follow the steps given below:
+
+![Configuration error](/help/forms/assets/config_error_sign.png)
+
+1. Copy the URL present in your current browser window to a notepad and remove the part `/ui#/aem` from the URL.
+1. Open a browser window and sign in to your [!DNL Adobe Acrobat Sign] developer account.
+1. Select the application configured for [!DNL AEM Forms], and select **[!UICONTROL Configure OAuth for Application]**.
+1. In the **[!UICONTROL Redirect URL]** box, add the URL copied in a previous step and click **[!UICONTROL Save]**.
 
 ## Connect AEM Forms with Adobe Acrobat Sign Solutions for Government {#adobe-acrobat-sign-for-government}
 
