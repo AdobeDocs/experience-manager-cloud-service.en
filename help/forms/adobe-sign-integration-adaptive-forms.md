@@ -122,11 +122,9 @@ Now, you can [use add Adobe Acrobat Sign fields to an Adaptive Form](working-wit
 >
 > To configure the Adobe Sign sandbox, you can follow the same configuration steps as explained in [Adobe Sign](#adobe-sign).
 
-#### Frequently asked question {#resolve-config-error} 
+#### Troubleshooting {#resolve-config-error}
 
-**Q:** How to resolve when you find an error while connecting [!DNL Adobe Acrobat Sign] with [!DNL AEM Forms]?
-
-**Ans:** When you connect Adobe Sign and find an error as shown in the image below. To resolve, follow the steps given below:
+When you connect [!DNL Adobe Acrobat Sign] with [!DNL AEM Forms] and find an error `Unable to authorize access because the client configuration is invalid: invalid_request` as shown in the image below. You resolve this by following the steps given below:
 
 ![Configuration error](/help/forms/assets/config_error_sign.png)
 
