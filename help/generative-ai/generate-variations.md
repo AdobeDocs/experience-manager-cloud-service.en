@@ -1,8 +1,8 @@
 ---
 title: Generate Variations
 description: Learn about Generate Variations, accessible from the Sidekick of Edge Delivery Services
+exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 ---
-
 # Generate Variations {#generate-variations}
 
 If you are looking for a way to optimize your digital channels and accelerate content creation, you can use Generate Variations. Generate Variations uses generative Artificial Intelligence (AI) to create content variations based on prompts; these prompts are either provided by Adobe or created, and managed, by users. After creating variations, you can use the content on your website, and also measure their success using the [Experimentation](https://www.aem.live/docs/experimentation) functionality of [Edge Delivery Services](/help/edge/overview.md).
