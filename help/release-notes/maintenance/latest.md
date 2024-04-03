@@ -46,6 +46,7 @@ Summarized below are the continuous improvements for maintenance release X, whic
 * CQ-4344966 - WCM - Translation - Create Basic Framework for Structural update of sites and Update existing one for assets.
 * CQ-4347312 - WCM - Translation - Create workflow to associate "cq:translationsourcejcruuid" in existing source and language copies.
 * CQ-4354509 - WCM - Translation - Publish Translation Job Events [OSGi EventAdmin]
+* SITES-16318 - Crosswalk - AEM-based authoring with Edge Delivery Services
 
 ### Fixed Issues {#fixed-issues-15738}
 
