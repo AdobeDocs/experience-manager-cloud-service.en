@@ -7,18 +7,18 @@ description: Learn how AEM Assets and Dynamic Media simplify effective image man
 Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. AEM facilitates easy creation and management of these renditions, enhancing user experience. You can create thumbnails, optimize images for web or mobile, add watermarks, download dynamic renditions or smart crop renditions, and do much more.
 
 Dynamic Media image presets, and Smart Crop renditions promote systematic image management that aligns with brand standards, maximizing brand cohesion. This simplifies the process of quickly locating and using dynamic image renditions as needed without any admin access.
+<br>Renditions are classified into two categories- Static and Dynamic.
 
 ## Static renditions {#static-renditions}
 
-Static renditions are pre-generated versions of digital assets, usually created during asset ingestion or modification. These renditions are optimized for specific purposes and platforms, such as web thumbnails, mobile-friendly formats for responsive design, or high-resolution versions for printing, ensuring efficient and consistent experience.
-
+Static renditions are pre-generated versions of digital assets, usually created during asset ingestion or modification. These renditions are optimized for specific purposes and platforms, such as web thumbnails, mobile-friendly formats for responsive design, or high-resolution versions for printing, ensuring an efficient and consistent experience.
 
 ## Dynamic renditions {#dynamic-renditions}
 
 Dynamic renditions are customized versions of assets created in real-time to meet specific needs, such as resizing images based on device resolution or cropping to fit different aspect ratios.
 These renditions enable organizations to deliver personalized and optimized experiences to diverse audience needs. You can view and download dynamic renditions in [!DNL Experience Manager Assets].
 
-## Before you begin
+### Before you begin
 
 * You must be a licensed AEM Dynamic Media user.
 
@@ -28,7 +28,7 @@ These renditions enable organizations to deliver personalized and optimized expe
 
     You can [switch the view](/help/assets/assets-view-introduction.md#how-to-access-assets-view) later to preview dynamic renditions in the Assets view.
 
-## View and download Dynamic renditions {#view-download-renditions}
+### View and download Dynamic renditions {#view-download-renditions}
 
 To view and download dynamic renditions of images in [!DNL Experience Manager Assets], follow these steps:
 
@@ -46,8 +46,4 @@ To view and download dynamic renditions of images in [!DNL Experience Manager As
 
 >[!NOTE]
 >
->Dynamic rendition is visible only if the assets are uploaded from the Admin view.
-
-
-<!-- Dynamic renditions provide flexibility, allowing content creators to deliver tailored experiences that cater to various audience preferences and device specifications within the AEM platform. -->
-<!-- Dynamic renditions are customized versions of assets created in real-time to meet specific requirements or user interfaces. Examples of dynamic renditions include resizing images based on device resolution, cropping to fit different aspect ratios, or applying filters or effects dynamically based on user preferences. -->
+>Dynamic renditions are visible only if the assets are uploaded from the Admin view.
