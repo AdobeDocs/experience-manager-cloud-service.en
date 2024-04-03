@@ -37,6 +37,8 @@ Summarized below are the continuous improvements for maintenance release X, whic
 * SITES-19326 - Content Fragments - Fragment Editor - Update links in Assets UI to open CF in new CF Editor
 * SITES-10515 - Content Fragments - GraphQL API - GraphQL - AbstractFetcher Performance Issue Loading Referenced Content Fragments
 * SITES-17364 - Content Fragments - GraphQL API - Return Full Name for the Modified by  and Published by properties
+* SITES-19165 - Content Fragments - GraphQL API - Allow global models to be used, referenced and queryable in all GraphQL endpoints
+* SITES-17768 - Content Fragments - GraphQL API - Expose Dynamic Media URL for images via _dmUrl
 * SITES-11057 - Core Backend - Avoid loading all versions when opening Timeline > Versions
 * SKYOPS-63033 - HTTPD - Trim white spaces of dispatcher environment variables
 * SKYOPS-65518 - HTTPD - Fail the validator if there are illegal file names in dispatcher folder
@@ -72,7 +74,7 @@ Summarized below are the continuous improvements for maintenance release X, whic
 * CQ-4343815 - Campaign - Targeting - Default variant of a teaser have empty url 
 * CQ-4355889 - Campaign - Targeting - Create Audience request fails with IMS Config.
 * SITES-12460 - Campaign Integration - Campaign / AEM Cloud Service Integration broken
-* SITES-11571 - Content Fragments - GraphQL API - PersistedQueryServlet should send proper error codes
+* SITES-11571 - Content Fragments - GraphQL API - PersistedQueryServlet should send 400s on malformed URLs
 * SITES-19946 - Content Fragments - GraphQL API - Models are not scanned anymore at startup
 * SITES-1605 - Core Backend - DeletePageCommand throws NPE in case of null source-path
 * SITES-5429 - Core Backend - ChildrenListServlet itemResourceType allows direct execution of code
@@ -92,6 +94,7 @@ Summarized below are the continuous improvements for maintenance release X, whic
 * SITES-17767 - Content Fragments - Admin - Support allowed cf-models also for folders without a jcr:content node
 * SITES-17683 - Content Fragments - Core Backend - Content Fragments are not serializable with Jackson exporter
 * SITES-18797 - Content Fragments - Core Backend - GraphQL Results Duplicated After Index Customisation
+* SITES-18076 - Content Fragments - Core Backend - Multi-value text has incorrect @TypeHint
 * SITES-17856 - Content Fragments - Models & Model Editor - CF Models not shown if config is not a folder
 * SITES-17071 - Core Backend - Specific page does not display version in timeline
 * SITES-17285 - Core Components - Inline Image Crop is different on Author and Publish in AEMaCS 
@@ -126,7 +129,7 @@ Summarized below are the continuous improvements for maintenance release X, whic
 
 ### Known Issues {#known-issues-15738}
 
-None.
+* SITES-17934 - Content Fragments - Preview fails due to DoS protection for large tree of fragments. See [KB](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945)
 
 ### Deprecated Features and APIs {#deprecated-15738}
 
