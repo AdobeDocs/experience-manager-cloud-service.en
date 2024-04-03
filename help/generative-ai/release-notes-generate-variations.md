@@ -26,7 +26,7 @@ The current releaase is version 2.0.0.
 
 ## Known Issues {#known-issues}
 
-For issues with custom prompts when moving from an earlier version see [Custom prompts in v2.0.0](#custom-prompts-v200)
+* For issues with custom prompts when moving from an earlier version see [Custom prompts in v2.0.0](/help/generative-ai/generate-variations.md#custom-prompts-v200)
 
 ## Previous Releases {#previous-releases}
 
