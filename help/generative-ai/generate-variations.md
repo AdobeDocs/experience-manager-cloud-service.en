@@ -1,6 +1,6 @@
 ---
 title: Generate Variations
-description: Learn about Generate Variations, accessible from the Sidekick of Edge Delivery Services
+description: Learn about Generate Variations, accessible from AEM as a Cloud Service and the Sidekick of Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 ---
 # Generate Variations {#generate-variations}
@@ -389,7 +389,7 @@ For example, to add an audience from a file on Google Drive:
 
 ## Generative Action Usage {#generative-action-usage}
 
-Usage managment depends on the action taken:
+Usage management depends on the action taken:
 
 * Generate Variations
 
@@ -405,6 +405,7 @@ Usage managment depends on the action taken:
 
 ## Access Generate Variations {#access-generate-variations}
 
+After fulfiling the prerequisites you can access Generate Variations from 
 ### Access Prerequisites {#access-prerequisites}
 
 To use Generate Variations you must ensure that the prerequisites are fulfilled:
@@ -548,54 +549,4 @@ To retrieve them:
 
 ## Release History {#release-history}
 
-* **2.0.0 (GA)** 
-
-  * Introduced universal persistent storage for Prompt Templates.
-  * New functionality for Audiences
-    * Audiences can be read directly from Adobe Target
-    * Updated methods of adding CSV files
-  * Dialog with options for Save Prompt
-  * When generating images, the prompt in Adobe Express is pre-populated
-  * Prompt cards (on home page) show extra information, and can be deleted
-
-  >[!NOTE]
-  >
-  >For issues with custom prompts when moving from an earlier version see [Custom prompts in v2.0.0](#custom-prompts-v200)
-
-* Previous releases
-
-  * Integration with Adobe Express
-  * Internal improvements
-  * Initial development
-
-<!-->
-#### 2.0.0 - How to retrieve custom prompt templates {#release-notes-2-0-0-retrieve-prompt-templates}
-
-Moving to the v2.0.0 release causes custom prompt templates to break - so they will be unavailable. To retrieve them:
-
-1. Go to the prompt-template folder in Sharepoint.
-1. Copy the prompt.
-1. Open the Generate Variations application.
-1. Select the New Prompt card.
-1. Paste the prompt.
-1. Verify that the prompt works.
-1. Save the prompt.
-
-### 1.0.5 {#release-notes-1-0-5}
-
-* Integration with Adobe Express
-* Move Edit prompt to side rail
-
-### 1.0.4 {#release-notes-1-0-4}
-
-* Internal improvements
-
-### 1.0.3 {#release-notes-1-0-3}
-
-* Expand, or hide the left navigation panel
-* Small improvements
-
-### 1.0.0 - 1.0.2 {#release-notes-1-0-0-1-0-2}
-
-* Internal improvements
--->
+For details of the current, and previous, releases see the [Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)  
