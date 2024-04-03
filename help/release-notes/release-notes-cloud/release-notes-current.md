@@ -129,7 +129,7 @@ In addition to the recently released [Traffic Filter Rules](/help/security/traff
 * setting or modifying request or response headers
 * custom error pages when the CDN can't reach AEM
 
-#### Apache/Dispatcher runtime ingestion of rewrite maps (Early Adopter Program) {apache-rewritemaps-early-adopter}
+#### Apache/Dispatcher runtime ingestion of rewrite maps (Early Adopter Program) {#apache-rewritemaps-early-adopter}
 
 Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a specific location in the publish repository, and load it, without requiring a web tier pipeline execution. This opens up opportunities for a business user to declare redirects using a UI, such as that offered by ACS Commons Redirect Map Manager. If this sounds useful for your business needs, please reach out to **<aemcs-rde-support@adobe.com>** for more information.
 
