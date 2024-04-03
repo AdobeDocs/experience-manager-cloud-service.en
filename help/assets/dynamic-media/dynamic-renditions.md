@@ -12,7 +12,7 @@ Dynamic Media image presets, and Smart Crop renditions promote systematic image 
 ## Static renditions {#static-renditions}
 
 Static renditions are pre-generated versions of digital assets, usually created during asset ingestion or modification. These renditions are optimized for specific purposes and platforms, such as web thumbnails, mobile-friendly formats for responsive design, or high-resolution versions for printing, ensuring an efficient and consistent experience.
-Learn how you can [view and download](#view-download-renditions) static renditions in [!DNL Experience Manager Assets].
+Learn how you can [view and download](#view-and-download-dynamic-renditions) static renditions in [!DNL Experience Manager Assets].
 
 ## Dynamic renditions {#dynamic-renditions}
 
