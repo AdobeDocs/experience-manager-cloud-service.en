@@ -7,11 +7,12 @@ description: Learn how AEM Assets and Dynamic Media simplify effective image man
 Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. AEM facilitates easy creation and management of these renditions, enhancing user experience. You can create thumbnails, optimize images for web or mobile, add watermarks, download dynamic renditions or smart crop renditions, and do much more.
 
 Dynamic Media image presets, and Smart Crop renditions promote systematic image management that aligns with brand standards, maximizing brand cohesion. This simplifies the process of quickly locating and using dynamic image renditions as needed without any admin access.
-<br>Renditions are classified into two categories- Static and Dynamic.
+<br>Renditions are classified as static and dynamic, each type presenting unique features and capabilities that are discussed further in detail.
 
 ## Static renditions {#static-renditions}
 
 Static renditions are pre-generated versions of digital assets, usually created during asset ingestion or modification. These renditions are optimized for specific purposes and platforms, such as web thumbnails, mobile-friendly formats for responsive design, or high-resolution versions for printing, ensuring an efficient and consistent experience.
+Learn how you can [view and download](#view-download-renditions) static renditions in [!DNL Experience Manager Assets].
 
 ## Dynamic renditions {#dynamic-renditions}
 
