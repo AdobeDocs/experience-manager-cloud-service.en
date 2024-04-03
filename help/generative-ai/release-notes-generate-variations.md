@@ -6,7 +6,7 @@ description: Release Notes for Generate Variations, accessible from AEM as a Clo
 
 This page documents the release notes for Generate Variations, accessible from AEM as a Cloud Service and the Sidekick of Edge Delivery Services.
 
-[!NOTE]
+>[!NOTE]
 >
 >See [this page](/help/release-notes/release-notes-cloud/release-notes-current.md) for the current release notes for Adobe Experience Manager as a Cloud Service.
 
