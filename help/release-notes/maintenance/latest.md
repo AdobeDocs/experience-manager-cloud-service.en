@@ -38,7 +38,7 @@ Summarized below are the continuous improvements for maintenance release X, whic
 * SITES-10515 - Content Fragments - GraphQL API - GraphQL - AbstractFetcher Performance Issue Loading Referenced Content Fragments
 * SITES-17364 - Content Fragments - GraphQL API - Return Full Name for the Modified by  and Published by properties
 * SITES-19165 - Content Fragments - GraphQL API - Allow global models to be used, referenced and queryable in all GraphQL endpoints
-* SITES-17768 - Content Fragments - GraphQL API - Expose Dynamic Media URL for images via _dmUrl
+* SITES-17768 - Content Fragments - GraphQL API - Expose Dynamic Media URL for images via _dmS7Url
 * SITES-11057 - Core Backend - Avoid loading all versions when opening Timeline > Versions
 * SKYOPS-63033 - HTTPD - Trim white spaces of dispatcher environment variables
 * SKYOPS-65518 - HTTPD - Fail the validator if there are illegal file names in dispatcher folder
