@@ -546,19 +546,29 @@ To retrieve them:
 1. Verify that the prompt works.
 1. Save the prompt.
 
-<!--
-## Release Notes {#release-notes}
+## Release History {#release-history}
 
-### 2.0.0  {#release-notes-2-0-0}
+* **2.0.0 (GA)** 
 
-* Introduced universal persistent storage for Prompt Templates.
-* New functionality for Audiences
-  * Audiences can be read directly from Adobe Target
-  * Updated methods of adding CSV files
-* Dialog with options for Save Prompt
-* When generating images, the prompt in Adobe Express is pre-populated
-* Prompt cards (on home page) show extra information, and can be deleted
+  * Introduced universal persistent storage for Prompt Templates.
+  * New functionality for Audiences
+    * Audiences can be read directly from Adobe Target
+    * Updated methods of adding CSV files
+  * Dialog with options for Save Prompt
+  * When generating images, the prompt in Adobe Express is pre-populated
+  * Prompt cards (on home page) show extra information, and can be deleted
 
+  >[!NOTE]
+  >
+  >For issues with custom prompts when moving from an earlier version see [Custom prompts in v2.0.0](#custom-prompts-v200)
+
+* Previous releases
+
+  * Integration with Adobe Express
+  * Internal improvements
+  * Initial development
+
+<!-->
 #### 2.0.0 - How to retrieve custom prompt templates {#release-notes-2-0-0-retrieve-prompt-templates}
 
 Moving to the v2.0.0 release causes custom prompt templates to break - so they will be unavailable. To retrieve them:
