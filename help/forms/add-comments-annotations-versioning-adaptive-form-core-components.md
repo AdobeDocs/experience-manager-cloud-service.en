@@ -4,6 +4,7 @@ description: Use adaptive form core components to add comments, annotations, and
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 hidefromtoc: yes
+exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
 ---
 # Versioning, reviewing and commenting on an Adaptive Form
 
@@ -79,14 +80,3 @@ In many cases, form group users are required to add annotations to a form for re
 1. To see all your added annotations to a form, select your form, and you will see the annotations added on the left panel, as shown in the image.
 
    ![See added annotations](see-annotations.png)
-
-
-
-
-
-
-
-
-
-
-
