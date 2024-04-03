@@ -12,6 +12,10 @@ You can [access Generate Variations](#access-generate-variations) from:
 * [within Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
 * [the Sidekick of AEM Edge Delivery Services](#access-aem-sidekick)
 
+>[!NOTE]
+>
+>In all cases, to use Generate Variations you must ensure that the [access prerequisites](#access-prerequisites) are fulfilled.
+
 You can then:
 
 * [Get started](#get-started) using a prompt template that Adobe has created for a specific use case.
@@ -236,6 +240,7 @@ To add a new text field titled **Tone of Voice**, use the following syntax in yo
 
 ![Generate Variations - prompt edited with tone of voice](assets/generate-variations-prompt-edited.png)
 
+<!--
 #### Example: Add new dropdown field - Page Type {#example-add-new-dropdown-field-page-type}
 
 To create an input field Page Type providing a dropdown selection:
@@ -256,6 +261,7 @@ To create an input field Page Type providing a dropdown selection:
      spreadsheet=pagetype
    }}
    ```
+-->
 
 ## Create a prompt {#create-prompt}
 
@@ -381,6 +387,93 @@ For example, to add an audience from a file on Google Drive:
 
    ![Generate Variations - add audience CSV file](assets/generate-variations-audiences-csv-save.png)
 
+## Generative Action Usage {#generative-action-usage}
+
+Usage managment depends on the action taken:
+
+* Generate Variations
+
+  One generation of a copy variant is equal to one generative action. As a customer, you have a certain number of generative actions that come with your AEM license. Once the base entitlement is consumed, you have the ability to purchase additional actions.
+
+  >[!NOTE]
+  >
+  >See [Adobe Experience Manager: Cloud Service | Product Description](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) for further details about base entitlements, and reach out to your account team if you would like to purchase more generative actions.
+
+* Adobe Express
+
+  Image generation usage is handled through Adobe Express entitlements and [generative credits](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+
+## Access Generate Variations {#access-generate-variations}
+
+### Access Prerequisites {#access-prerequisites}
+
+To use Generate Variations you must ensure that the prerequisites are fulfilled:
+
+* [Access to Experience Manager as a Cloud Service with Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services)
+
+#### Access to Experience Manager as a Cloud Service with Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
+
+Users who need access to Generate Variations must be entitled to an Experience Manager as a Cloud Service environment with Edge Delivery Services. 
+
+>[!NOTE]
+>
+>If your contract for AEM Sites as a Cloud Service does not include Edge Delivery Services, you will need to sign a new contract to get access. 
+>
+>You should reach out to your Account Team to discuss how you can move to AEM Sites as a Cloud Service with Edge Delivery Services.
+
+To grant access to specific users, assign their user account to the respective product profile. See [Assigning AEM Product Profiles for further details](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+
+### Access from AEM as a Cloud Service {#access-aemaacs}
+
+Generate Variations can be accessed from the [Navigation Panel](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) of AEM as a Cloud Service:
+
+![Navigation panel](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
+
+### Access from the AEM Sidekick {#access-aem-sidekick}
+
+Some configuration is needed before you can access Generate Variations from the Sidekick (of Edge Delivery Services).
+
+1. See the document [Installing the AEM Sidekick](https://www.aem.live/docs/sidekick-extension) for how to install and configure the Sidekick.
+
+1. To use the Generate Variations in the Sidekick (of Edge Delivery Services), include the following configuration in your Edge Delivery Services projects under:
+
+   * `tools/sidekick/config.json` 
+
+   This must be merged into your existing configuration and then deployed.
+
+   For example:
+
+   ```prompt
+   {
+     // ...
+     "plugins": [
+       // ...
+       {
+         "id": "generate-variations",
+         "title": "Generate Variations",
+         "url": "https://experience.adobe.com/aem/generate-variations",
+         "passConfig": true,
+         "environments": ["preview","live", "edit"],
+         "includePaths": ["**.docx**"]
+       }
+       // ...
+     ]
+   }
+   ```
+
+1. You may then need to ensure that users have [Access to Experience Manager as a Cloud Service with Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
+
+1. You can then access the feature, by selecting **Generate Variations** from the toolbar of the Sidekick:
+
+   ![Generate Variations - access from AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
+
+## Further Information {#further-information}
+
+For further information you can also read:
+
+* [GenAI Generate Variations on GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
+* [Edge Delivery Services Experimentation](https://www.aem.live/docs/experimentation)
+
 ## FAQs {#faqs}
 
 ### Formatted Output {#formatted-outpu}
@@ -443,89 +536,17 @@ In this situation there are various details to check:
 
 Moving to the v2.0.0 release will cause custom prompt templates to break - so they will be unavailable.
 
-See the [release notes for v2.0.0 for instructions on how to retrieve them](#release-notes-2-0-0-retrieve-prompt-templates).
+To retrieve them:
 
-## Generative Action Usage {#generative-action-usage}
+1. Go to the prompt-template folder in Sharepoint.
+1. Copy the prompt.
+1. Open the Generate Variations application.
+1. Select the New Prompt card.
+1. Paste the prompt.
+1. Verify that the prompt works.
+1. Save the prompt.
 
-Usage managment depends on the action taken:
-
-* Generate Variations
-
-  One generation of a copy variant is equal to one generative action. As a customer, you have a certain number of generative actions that come with your AEM license. Once the base entitlement is consumed, you have the ability to purchase additional actions.
-
-  >[!NOTE]
-  >
-  >See [Adobe Experience Manager: Cloud Service | Product Description](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) for further details about base entitlements, and reach out to your account team if you would like to purchase more generative actions.
-
-* Adobe Express
-
-  Image generation usage is handled through Adobe Express entitlements and [generative credits](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
-
-## Access Generate Variations {#access-generate-variations}
-
-### Access from AEM as a Cloud Service {#access-aemaacs}
-
-Generate Variations can be accessed from the [Navigation Panel](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) of AEM as a Cloud Service:
-
-![Navigation panel](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
-
-### Access from the AEM Sidekick {#access-aem-sidekick}
-
-Some configuration is needed before you can access Generate Variations from the Sidekick (of Edge Delivery Services).
-
-1. See the document [Installing the AEM Sidekick](https://www.aem.live/docs/sidekick-extension) for how to install and configure the Sidekick.
-
-1. To use the Generate Variations in the Sidekick (of Edge Delivery Services), include the following configuration in your Edge Delivery Services projects under:
-
-   * `tools/sidekick/config.json` 
-
-   This must be merged into your existing configuration and then deployed.
-
-   For example:
-
-   ```prompt
-   {
-     // ...
-     "plugins": [
-       // ...
-       {
-         "id": "generate-variations",
-         "title": "Generate Variations",
-         "url": "https://experience.adobe.com/aem/generate-variations",
-         "passConfig": true,
-         "environments": ["preview","live", "edit"],
-         "includePaths": ["**.docx**"]
-       }
-       // ...
-     ]
-   }
-   ```
-
-1. You may then need to ensure that users have [Access to Experience Manager as a Cloud Service with Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
-
-1. You can then access the feature, by selecting **Generate Variations** from the toolbar of the Sidekick:
-
-   ![Generate Variations - access from AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
-
-## Access to Experience Manager as a Cloud Service with Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
-
-Users who need access to Generate Variations must be entitled to an Experience Manager as a Cloud Service environment with Edge Delivery Services. 
-
->[!NOTE]
->
->If your contract for AEM Sites as a Cloud Service does not include Edge Delivery Services, you will need to sign a new contract to get access. 
->
->You should reach out to your Account Team to discuss how you can move to AEM Sites as a Cloud Service with Edge Delivery Services.
-
-To grant access to specific users, assign their user account to the respective product profile. See [Assigning AEM Product Profiles for further details](/help/journey-onboarding/assign-profiles-cloud-manager.md).
-
-## Further Reading {#further-reading}
-
-Read also:
-
-* [GenAI Generate Variations on GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
-* [Edge Delivery Services Experimentation](https://www.aem.live/docs/experimentation)
-
+<!--
 ## Release Notes {#release-notes}
 
 ### 2.0.0  {#release-notes-2-0-0}
@@ -567,3 +588,4 @@ Moving to the v2.0.0 release causes custom prompt templates to break - so they w
 ### 1.0.0 - 1.0.2 {#release-notes-1-0-0-1-0-2}
 
 * Internal improvements
+-->
