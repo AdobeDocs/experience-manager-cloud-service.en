@@ -44,7 +44,7 @@ To view dynamic renditions of images in [!DNL Experience Manager Assets], follow
     <!-- ![dynamic renditions](assets/preset_smart_crop.png) -->
     ![dynamic renditions](assets/preset_smart_crop_view.png)
 
-1. Click the rendition you need to view. The respective rendition is displayed.
+1. Click the rendition you need to view.
 
 <!-- 1. Click the ![download icon](assets/download-new-icon.png) icon next to the rendition you need to download. <br> Alternatively, you can select the image rendition, and click **[!UICONTROL Download Rendition]** option at the bottom. -->
 
