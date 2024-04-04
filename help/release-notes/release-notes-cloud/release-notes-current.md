@@ -97,6 +97,29 @@ These services enable you to:
 
 * **Create multiple versions of an Adaptive Form**: You can now easily manage variations of existing forms. This simplifies version control, enables targeted content delivery for different audiences, and facilitates A/B testing for form optimization, all within a single, streamlined workflow.
 
+* **Accessibility Enhancements for Scribble Signature Component**: This update brings significant accessibility improvements to the Scribble Signature component:
+
+  **Improved Keyboard Navigation:**
+  * Pressing the Tab key allows users to navigate through all interactive elements within the signature dialog box.
+  * Signing with a brush or keyboard and pressing Enter closes the dialog.
+  * Focus remains on the signature control after signing and clicking "OK".
+  
+  **Clear Signature Functionality:**
+  
+  * A clear cross icon for erasing the signature is accessible via the Tab key.
+  * The "Clear Signature Confirmation" dialog is also accessible through Tab navigation.
+
+  **Enhanced Labels and Controls:**
+  * The label for the keyboard signature button is now clearer, using "aria-label" to announce functionality (e.g., "aria-label='Sign using Keyboard'").
+  * Improved contrast ensures all controls within the scribble signature are easily distinguishable.
+  * The OK/check mark button now visually indicates when it's inactive.
+
+  **Signature Feedback for Screen Readers:**
+  * When a signature is typed, screen reader users can hear the text used to create the signature.
+
+This update ensures a more inclusive experience for users with disabilities by improving navigation, clarity, and feedback for the Scribble Signature component.
+
+
 
 ### Early Adopter Program {#forms-early-adopter}
 
