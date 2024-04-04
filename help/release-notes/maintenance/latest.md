@@ -50,28 +50,6 @@ Summarized below are the continuous improvements for maintenance release X, whic
 * CQ-4354509 - WCM - Translation - Publish Translation Job Events [OSGi EventAdmin]
 * SITES-16318 - Crosswalk - AEM-based authoring with Edge Delivery Services
 * FORMS-9889: The user can add the POST URL and Cloud configuration while configuring the Submit action for Submit to REST Endpoint.
-* In the rule editor, users can:
-
-    * FORMS-12160: Validate a field, panel, or form in the `Then` section of the `When` condition.
-    * FORMS-12570: Reset a field, panel, or form in the `Then` section of the `When` condition. 
-    * FORMS-11541: Use field objects and global objects in the rule editor through the custom functions. 
-    * FORMS-11714: Define parameters as optional in the custom function. By default, parameters declared in custom functions are mandatory. 
-    * FORMS-11756: Use caching for custom functions to improve the response time when retrieving the custom function list in the rule editor. 
-    * FORMS-12053: Add an 'else' statement in the 'When' condition to implement nested conditions. 
-    * FORMS-11269: Use modern ES10 JavaScript features such as let and arrow functions in the custom function. 
-
-* FORMS-9014: The following accesibility releated improvements are done to the scribble Signature component:
-    * On pressing the Tab key cursor moves within the signature dialog box.
-    * On signing using a brush or keyboard, pressing the Enter key closes the dialog box.
-    * When the user signs and moves out of the scribble signature component after clicking the OK button, the focus remains on the signature control.
-    * A cross icon to clear the signature is accessible through the tab key.
-    * Clear Signature Confirmation" dialog is accessible through the tab key.
-    * The label for the keyboard sign button is updated to aria-label="keyboard sign" or aria-label="sign using the keyboard".
-    * Contrast improved for the controls within the scribble signature.
-    * The OK/check mark button improved to convey the inactive state.
-    * The signature control is enhanced to be inside the `fieldset` element.
-    * When a signature is typed, users can listen to the text used to create the signature.
-
 
 ### Fixed Issues {#fixed-issues-15738}
 
