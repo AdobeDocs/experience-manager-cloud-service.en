@@ -30,7 +30,7 @@ The `GOOGLETRANSLATE` function at Google sheets translates forms by tapping into
 
     ![Enquiry Translate spreadsheet](/help/forms/assets/translate-enquiry-spreadsheet.png)
 
-3. Preview and publish the sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
+1. Preview and publish the sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
 
 You can refer to the [spreadsheet](/help/forms/assets/enquirytranslate.xlsx) containing the form definition for an `enquiry` form translated from English to French language.
 
