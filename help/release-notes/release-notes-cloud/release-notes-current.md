@@ -32,6 +32,12 @@ Have a look at the March 2024 Release Overview video for a summary of the featur
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### New features in [!DNL Experience Manager Sites] {#sites-features}
+
+* For Corey
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Admin view prerelease features {#admin-view-prerelease}
