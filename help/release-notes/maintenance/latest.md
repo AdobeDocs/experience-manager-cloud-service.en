@@ -115,7 +115,7 @@ Summarized below are the continuous improvements for maintenance release 15738, 
 * SITES-17211 - Experience Fragments - Experience Fragments component path picker dialog which shows experience fragments that are deleted
 * SITES-17894 - Launches - Promotion of nested launches reverts launch content to a version from its ancestor
 * SITES-16042 - MSM - Live Copies - Annotations are displaying incorrectly in the Livecopy after rollouts
-* SITES-16691 - MSM - Live Copies - When the customer selects 'rollout' or 'rollout to' from the 'rollout' icon on a component, the 'continue' button is greyed out.
+* SITES-16691 - MSM - Live Copies - When the customer selects 'rollout' or 'rollout to' from the 'rollout' icon on a component, the 'continue' button is grayed out.
 * SITES-16733 - MSM - Live Copies - Blueprint index page cannot be rolled out when rep:policy applied to node
 * SITES-17155 - MSM - Live Copies - Headers & Footers are translated back to English when LiveCopy is renamed
 * SITES-17492 - MSM - Live Copies - AEM Page Live Copy Layout Inconsistencies
@@ -124,12 +124,12 @@ Summarized below are the continuous improvements for maintenance release 15738, 
 * SITES-19790 - MSM - Live Copies - Incorrect preview information after the LiveCopy Creation
 * SITES-20086 - MSM - Live Copies - MSM rollout for CF in Assets will roll out all live copies even if one live copy is selected to be rolled out
 * SITES-20088 - MSM - Live Copies - Blank Page Issue Post XF Rollout in Properties - AEM as a Cloud Service
-* SITES-16854 - Page Editor - Drop targert overlay covers parsys in components with "Select panel" feature
+* SITES-16854 - Page Editor - Drop target overlay covers parsys in components with "Select panel" feature
 * CQ-4355563 - Projects - The path parameter is wrong. Populating "?appId=aemshell" for project inbox search script
 * SITES-16876 - Quick Site - Theme Deployment - CSS and JS missing on preview pages 2
 * SITES-18418 - Sites Admin UI - Show/hide functionality for pathfield widget does not work properly when field is required
 * SITES-19534 - Sites Admin UI - Unable to Open Effective Permissions Dialog Post AEM 6.5.19 Upgrade
-* SITES-19203 - Template Editor - Editable Template policies Text Missaligned and Styles overlap delete button
+* SITES-19203 - Template Editor - Editable Template policies Text Misaligned and Styles overlap delete button
 * CQ-4354881 - WCM - Translation - Content fragments path is set to source (en-us) when content fragments are translated as part of a page
 * CQ-4355289 - WCM - Translation - Only the first 40 elements are displayed in Translation Cloud Services
 * CQ-4355866 - WCM - Translation - Translation workflow throwing error for existing pages
@@ -155,13 +155,13 @@ Summarized below are the continuous improvements for maintenance release 15738, 
 * FORMS-12445: Wrong values are captured in the Form Data Model after the order of the Radio Button options is changed and the form is published.
 * FORMS-12947: When a user adds a new language to an existing dictionary, it fails to merge or add
 * FORMS-11363: When a user submits a form via Workspace, a display issue occurs in the tables while it is rendered
-* FORMS-11756: When a user adds the ES6 JavaScript features such as `let` and `const` in custom functions, the rule editor fails to open. This mainatenance release brings support for ES10 
+* FORMS-11756: When a user adds the ES6 JavaScript features such as `let` and `const` in custom functions, the rule editor fails to open. This maintenance release brings support for ES10 
 * FORMS-13164: If the user generates a PDF, unexpected blank lines are added to it after submission
 * FORMS-13789: When user tries to generate multiple PDFs, the Output batch API fails
 * FORMS-11483: When a user converts PDF to PDF/A-2B or PDF/A-3B, it fails to convert and shows a validation error
 * FORMS-10501: When a user invokes HSM, the documents are certified but it does not enable LTV
-* FORMS-11546: When a form author uses repeated panels in an Adaptive Form, the ARIA attribute is missing from the HTML tags. This improves accesibility of repeated panels of Adaptive Form
-* FORMS-11826: Due to matching labels Arial&reg; labelledby and Arial&reg; label, the screen readers are not able to distinguish between these two. To resolve the issue – the label "aria-labelledby" is replaced with "aria-describedby" for the form fields. (F). This improves accesibility of Adaptive Forms
+* FORMS-11546: When a form author uses repeated panels in an Adaptive Form, the ARIA attribute is missing from the HTML tags. This improves accessibility of repeated panels of Adaptive Form
+* FORMS-11826: Due to matching labels Arial&reg; labelledby and Arial&reg; label, the screen readers are not able to distinguish between these two. To resolve the issue – the label "aria-labelledby" is replaced with "aria-describedby" for the form fields. (F). This improves accessibility of Adaptive Forms
 * FORMS-12626, FORMS-13094: Users are unable to access the toolbar using the keyboard to save or edit content on the form editor page. This accessibility issue was fixed
 * FORMS-13102: During the form authoring process, the icons available on the Forms and Documents page lack descriptive features for differently abled individuals. This accessibility issue was fixed
 
