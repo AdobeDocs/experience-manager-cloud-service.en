@@ -7,9 +7,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#release-15738}
+## Release 15738 {#release-15738}
 
-Summarized below are the continuous improvements for maintenance release 15738, which was publicly released on April 5, 2024. The previous maintenance release was release 15575.
+Summarized below are the continuous improvements for maintenance release 15738, which was publicly released on April 4, 2024. The previous maintenance release was release 15575.
 
 2024.3.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
@@ -45,11 +45,11 @@ Summarized below are the continuous improvements for maintenance release 15738, 
 * SITES-19626 - Launches - Merge DAM-CFM lastUpdate fields into main
 * SITES-19251 - Quick Site - Creation Wizard - Support sites admin ui side rail when theme reference not equals site name
 * SITES-15430 - Universal Editor - Universal Editor under AEM Domain
-* CQ-4344966 - WCM - Translation - Create Basic Framework for Structural update of sites and Update existing one for assets.
-* CQ-4347312 - WCM - Translation - Create workflow to associate "cq:translationsourcejcruuid" in existing source and language copies.
+* CQ-4344966 - WCM - Translation - Create Basic Framework for Structural update of sites and Update existing one for assets
+* CQ-4347312 - WCM - Translation - Create workflow to associate "cq:translationsourcejcruuid" in existing source and language copies
 * CQ-4354509 - WCM - Translation - Publish Translation Job Events [OSGi EventAdmin]
 * SITES-16318 - Crosswalk - AEM-based authoring with Edge Delivery Services
-* FORMS-9889: The user can add the POST URL and Cloud configuration while configuring the Submit action for Submit to REST Endpoint.
+* FORMS-9889: The user can add the POST URL and Cloud configuration while configuring the Submit action for Submit to REST Endpoint
 * In the rule editor, users can:
     * FORMS-12160: Validate a field, panel, or form in the Then section of the When condition.
     * FORMS-12570: Reset a field, panel, or form in the Then section of the When condition.
@@ -102,7 +102,7 @@ Summarized below are the continuous improvements for maintenance release 15738, 
 * ASSETS-31097 - Assets Cloud - Logs filled up with index Traversed warnings for /bin/numberofentitiesinfolders.json 
 * ASSETS-35860 - Assets Cloud - Incorrect Time Zone Conversion in AEM Assets Column View
 * SITES-15260 - Classic UI (Legacy) - Bulkedit adds EMPTY properties on page if sheet import is used
-* SITES-16834 - Classic UI (Legacy) - Text missing after editing text using Bulk Editor when text has comma's in it.
+* SITES-16834 - Classic UI (Legacy) - Text missing after editing text using Bulk Editor when text has comma's in it
 * SITES-17767 - Content Fragments - Admin - Support allowed cf-models also for folders without a jcr:content node
 * SITES-17683 - Content Fragments - Core Backend - Content Fragments are not serializable with Jackson exporter
 * SITES-18797 - Content Fragments - Core Backend - GraphQL Results Duplicated After Index Customisation
@@ -119,7 +119,7 @@ Summarized below are the continuous improvements for maintenance release 15738, 
 * SITES-16733 - MSM - Live Copies - Blueprint index page cannot be rolled out when rep:policy applied to node
 * SITES-17155 - MSM - Live Copies - Headers & Footers are translated back to English when LiveCopy is renamed
 * SITES-17492 - MSM - Live Copies - AEM Page Live Copy Layout Inconsistencies
-* SITES-19316 - MSM - Live Copies - Reference link to experience fragment does not update in language copy.
+* SITES-19316 - MSM - Live Copies - Reference link to experience fragment does not update in language copy
 * SITES-19347 - MSM - Live Copies - Prod Author slowness and service outage messages - pods restarting frequently - health alerts
 * SITES-19790 - MSM - Live Copies - Incorrect preview information after the LiveCopy Creation
 * SITES-20086 - MSM - Live Copies - MSM rollout for CF in Assets will roll out all live copies even if one live copy is selected to be rolled out
@@ -139,31 +139,31 @@ Summarized below are the continuous improvements for maintenance release 15738, 
 * SITES-17393 - Workflow Extensions - Publish content tree fails when using workflow launchers for cq:Tag
 * SITES-17759 - Workflow Extensions - Tree-Activation-Workflow for tags not working in AEMaaCS
 * FORMS-12411: On Android devices, the `Maximum Number of Characters Validation` option is not working for the Adaptive Form Textbox component. 
-* FORMS-13377: When a user tries to add the custom font and run the pipeline to configure it, it fails with the 'ContainersNotReady' error. 
-* FORMS-13267: When a user adds an Adaptive Form Dropdown component, the ID for the Dropdown fails to generate.
-* FORMS-13544: When a user adds an Adaptive Form Container component with a wizard layout, it does not work properly during form authoring.
-* FORMS-13091, FORMS-13414: If user tries to configure a custom domain URL in the Azure Blob storage, it fails.
-* FORMS-13595: When a user tries to save the form in a different location, the user is unable to see the "Select Folder" and "Cancel" buttons if the browser resolution is set to 100%. However, the option is visible  when resolution is set to 75%.
-* FORMS-10952: When a user adds an Adaptive Form Dropdown component to an Adaptive Form and uses the 'Set Options' property based on various custom rules, the 'Set Options' property functions only for the last rule.
+* FORMS-13377: When a user tries to add the custom font and run the pipeline to configure it, it fails with the 'ContainersNotReady' error
+* FORMS-13267: When a user adds an Adaptive Form Dropdown component, the ID for the Dropdown fails to generate
+* FORMS-13544: When a user adds an Adaptive Form Container component with a wizard layout, it does not work properly during form authoring
+* FORMS-13091, FORMS-13414: If user tries to configure a custom domain URL in the Azure Blob storage, it fails
+* FORMS-13595: When a user tries to save the form in a different location, the user is unable to see the "Select Folder" and "Cancel" buttons if the browser resolution is set to 100%. However, the option is visible  when resolution is set to 75%
+* FORMS-10952: When a user adds an Adaptive Form Dropdown component to an Adaptive Form and uses the 'Set Options' property based on various custom rules, the 'Set Options' property functions only for the last rule
 * FORMS-11471: The lazy loading of a fragment fails when the 'emitter.json' call fails due to a network interruption.
 * FORMS-11786: When a user switches between months in the calendar widget, the date picker component shows an extra row.
-* FORMS-12093, FORMS-12093: When a user ticks the Adaptive Form Checkbox to submit a form, the incorrect value with an extra  `\` is stored in the textbox.
-* FORMS-11993: When a user clicks an image using the "Take a photo" in the Attachment component on an iOS device, all images are added to the folder with the same name.
-* FORMS-12555: When a user tries to integrate AEM Forms to a mailing platform with an AEM published URL, AEM Forms does not add method=post while rendering the page. This issue occurs even though POST is set in the submit action with the URL. It causes the mailing platform to not recognize this as a form.
-* FORMS-12938: The HTML5 forms are not functioning or loading properly in the Microsoft Edge browser with IE compatibility mode.
-* FORMS-12032: When a user submits a form, the path for the submit action path is not pointing correctly.
+* FORMS-12093, FORMS-12093: When a user ticks the Adaptive Form Checkbox to submit a form, the incorrect value with an extra  `\` is stored in the textbox
+* FORMS-11993: When a user clicks an image using the "Take a photo" in the Attachment component on an iOS device, all images are added to the folder with the same name
+* FORMS-12555: When a user tries to integrate AEM Forms to a mailing platform with an AEM published URL, AEM Forms does not add method=post while rendering the page. This issue occurs even though POST is set in the submit action with the URL. It causes the mailing platform to not recognize this as a form
+* FORMS-12938: The HTML5 forms are not functioning or loading properly in the Microsoft Edge browser with IE compatibility mode
+* FORMS-12032: When a user submits a form, the path for the submit action path is not pointing correctly
 * FORMS-12445: Wrong values are captured in the Form Data Model after the order of the Radio Button options is changed and the form is published.
-* FORMS-12947: When a user adds a new language to an existing dictionary, it fails to merge or add.
-* FORMS-11363: When a user submits a form via Workspace, a display issue occurs in the tables while it is rendered.
-* FORMS-11756: When a user adds the ES6 JavaScript features such as `let` and `const` in custom functions, the rule editor fails to open. This mainatenance release brings support for ES10.  
-* FORMS-13164: If the user generates a PDF, unexpected blank lines are added to it after submission.
-* FORMS-13789: When user tries to generate multiple PDFs, the Output batch API fails. 
-* FORMS-11483: When a user converts PDF to PDF/A-2B or PDF/A-3B, it fails to convert and shows a validation error. 
-* FORMS-10501: When a user invokes HSM, the documents are certified but it does not enable LTV. 
-* FORMS-11546: When a form author uses repeated panels in an Adaptive Form, the ARIA attribute is missing from the HTML tags. This improves accesibility of repeated panels of Adaptive Form. 
-* FORMS-11826: Due to matching labels Arial&reg; labelledby and Arial&reg; label, the screen readers are not able to distinguish between these two. To resolve the issue – the label "aria-labelledby" is replaced with "aria-describedby" for the form fields. (F). This improves accesibility of Adaptive Forms. 
-* FORMS-12626, FORMS-13094: Users are unable to access the toolbar using the keyboard to save or edit content on the form editor page. This accessibility issue was fixed. 
-* FORMS-13102: During the form authoring process, the icons available on the Forms and Documents page lack descriptive features for differently abled individuals. This accessibility issue was fixed. 
+* FORMS-12947: When a user adds a new language to an existing dictionary, it fails to merge or add
+* FORMS-11363: When a user submits a form via Workspace, a display issue occurs in the tables while it is rendered
+* FORMS-11756: When a user adds the ES6 JavaScript features such as `let` and `const` in custom functions, the rule editor fails to open. This mainatenance release brings support for ES10 
+* FORMS-13164: If the user generates a PDF, unexpected blank lines are added to it after submission
+* FORMS-13789: When user tries to generate multiple PDFs, the Output batch API fails
+* FORMS-11483: When a user converts PDF to PDF/A-2B or PDF/A-3B, it fails to convert and shows a validation error
+* FORMS-10501: When a user invokes HSM, the documents are certified but it does not enable LTV
+* FORMS-11546: When a form author uses repeated panels in an Adaptive Form, the ARIA attribute is missing from the HTML tags. This improves accesibility of repeated panels of Adaptive Form
+* FORMS-11826: Due to matching labels Arial&reg; labelledby and Arial&reg; label, the screen readers are not able to distinguish between these two. To resolve the issue – the label "aria-labelledby" is replaced with "aria-describedby" for the form fields. (F). This improves accesibility of Adaptive Forms
+* FORMS-12626, FORMS-13094: Users are unable to access the toolbar using the keyboard to save or edit content on the form editor page. This accessibility issue was fixed
+* FORMS-13102: During the form authoring process, the icons available on the Forms and Documents page lack descriptive features for differently abled individuals. This accessibility issue was fixed
 
 ### Known Issues {#known-issues-15738}
 
@@ -171,9 +171,11 @@ Summarized below are the continuous improvements for maintenance release 15738, 
 
 ### Deprecated Features and APIs {#deprecated-15738}
 
+* [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+
 Have a look at [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) to know what has been deprecated or removed in AEM as a Cloud Service.
 
-### Change Notice {#change-notice-X}
+### Change Notice {#change-notice-15738}
 
 **Actions Required**
 
