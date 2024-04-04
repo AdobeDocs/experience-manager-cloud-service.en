@@ -7,13 +7,13 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 15738 {#release-15738}
+## Release 15787 {#release-15787}
 
-Summarized below are the continuous improvements for maintenance release 15738, which was publicly released on April 4, 2024. The previous maintenance release was release 15575.
+Summarized below are the continuous improvements for maintenance release 15787, which was publicly released on April 4, 2024. The previous maintenance release was release 15575.
 
 2024.3.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-15738}
+### Enhancements {#enhancements-15787}
 
 * SITES-19059 - Content Fragments - OpenAPI - Allow defaultValue for enum fields
 * SITES-20013 - Content Fragments - OpenAPI - WCMScriptHelper should abort rendering when no ServletResolver is present
@@ -62,7 +62,7 @@ Summarized below are the continuous improvements for maintenance release 15738, 
 * FORMS-9014: Various accessibility related improvements to the scribble Signature component
 
 
-### Fixed Issues {#fixed-issues-15738}
+### Fixed Issues {#fixed-issues-15787}
 
 * Various accessibility and internationalization issues fixed
 * SITES-16966 - AEM: Unlocalized "Not Versioned!" string in Sites > Restore > Restore Tree
@@ -165,17 +165,17 @@ Summarized below are the continuous improvements for maintenance release 15738, 
 * FORMS-12626, FORMS-13094: Users are unable to access the toolbar using the keyboard to save or edit content on the form editor page. This accessibility issue was fixed
 * FORMS-13102: During the form authoring process, the icons available on the Forms and Documents page lack descriptive features for differently abled individuals. This accessibility issue was fixed
 
-### Known Issues {#known-issues-15738}
+### Known Issues {#known-issues-15787}
 
 * SITES-17934 - Content Fragments - Preview fails due to DoS protection for large tree of fragments. See [KB](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945)
 
-### Deprecated Features and APIs {#deprecated-15738}
+### Deprecated Features and APIs {#deprecated-15787}
 
 * [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
 Have a look at [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) to know what has been deprecated or removed in AEM as a Cloud Service.
 
-### Change Notice {#change-notice-15738}
+### Change Notice {#change-notice-15787}
 
 **Actions Required**
 
@@ -186,7 +186,7 @@ The new version of the aem-sdk-api contains classes compiled with a Java 11 targ
 Customers are advised to add a `.cloudmanager/java-version` file to the root of their git repo with the contents: `11`. See [Build Environment / Setting the Maven JDK Version](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version).
 
 
-### Embedded Technologies {#embedded-tech-15738}
+### Embedded Technologies {#embedded-tech-15787}
 
 |Technology|Version|Link|
 |---|---|---|
