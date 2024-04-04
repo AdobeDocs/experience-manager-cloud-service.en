@@ -1,7 +1,7 @@
 ---
 title: Publish assets, folders, and collections to Brand Portal
 description: Publish assets, folders, and collections to Brand Portal.
-contentOwner: Vishabh Gupta
+contentOwner: Adobe
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
@@ -10,7 +10,7 @@ exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/brand-portal-publish-folder.html?lang=en)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets)                  |
 | AEM as a Cloud Service     | This article         |
 
 As an Adobe Experience Manager (AEM) Assets administrator, you can publish assets, folders, and collections to the AEM Assets Brand Portal instance. Also, you can schedule the publish workflow of an asset or folder to a later date or time. Once published, the Brand Portal users can access and further distribute the assets, folders, and collections to other users. 
@@ -69,7 +69,9 @@ To schedule publishing the assets to Brand Portal to a later date or time:
 
    Select **[!UICONTROL Later]** from **[!UICONTROL Scheduling]**.
 
-    ![publishlaterbp-1](assets/publishlaterbp-1.png)
+    <!--![publishlaterbp-1](assets/publishlaterbp-1.png)-->
+
+   ![publish later](assets/publish-later.png)
 
 1. Select an **[!UICONTROL Activation date]** and specify time. Click **[!UICONTROL Next]**.
 
@@ -77,22 +79,20 @@ To schedule publishing the assets to Brand Portal to a later date or time:
 
 1. Specify a **[!UICONTROL Workflow title]** in **[!UICONTROL Workflows]**. Click **[!UICONTROL Publish Later]**.
 
-    ![publishworkflow](assets/publishworkflow.png)
-
-Login to the Brand Portal interface to see the published assets (depending on your scheduled date or time).
-
-   ![bp_landingpage](assets/bp_landingpage.png)
+    <!--![publishworkflow](assets/publishworkflow.png)-->
+    
+    ![publish workflow](assets/publish-workflow.png)
 
 >[!NOTE]
 >
 > * The existing users part of DAM-Users group have read access on path "/conf/global/settings/cloudconfigs/mediaportal"
->* The new users (or non-admin users) require the following rights to publish on brand portal.
+> * The new users (or non-admin users) require the following rights to publish on brand portal.
 > Paths:
-> "/conf/global/settings/cloudconfigs/mediaportal" : jcr:read 
->/libs : jcr:read 
->/conf : jcr:read
->/content : jcr:read, crx:replicate 
->/content/dam/ : jcr:read,modify, crx:replicate 
+> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>`/libs : jcr:read` 
+>`/conf : jcr:read`
+>`/content : jcr:read, crx:replicate`
+>`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## Publish folders to Brand Portal {#publish-folders-to-brand-portal}
 
@@ -125,8 +125,7 @@ You can publish or unpublish asset folders immediately, or schedule to a later d
    A message appears stating that the folder has been queued up for publishing to Brand Portal. Login to your Brand Portal interface to see the published folder.
 
 1. **Publish folders later**
-
-   To schedule the publishing the asset folders to a later date or time:
+To schedule the publishing the asset folders to a later date or time:
 
     1. Select the folders that you want to schedule for publishing, select **[!UICONTROL Manage Publication]** from the tool bar at the top.
     1. From **[!UICONTROL Action]**, select **[!UICONTROL Publish to Brand Portal]**.
@@ -135,13 +134,29 @@ You can publish or unpublish asset folders immediately, or schedule to a later d
 
     1. Select an **[!UICONTROL Activation date]** and specify time. Click **[!UICONTROL Next]**.
 
-       ![publishlaterbp](assets/publishlaterbp.png)
-    
+       <!--![publishlaterbp](assets/publishlaterbp.png)-->
+      
+      ![publish later folder](assets/publish-later-folder.png)
+
     1. Confirm your selection in **[!UICONTROL Scope]**. Click **[!UICONTROL Next]**.
 
     1. Specify a Workflow title under **[!UICONTROL Workflows]**. Click **[!UICONTROL Publish Later]**.
 
-       ![manageschedulepub](assets/manageschedulepub.png)
+       <!--![manageschedulepub](assets/manageschedulepub.png)-->
+         
+      ![publish workflow](assets/publish-workflow.png)
+
+### View published file or folder to Brand Portal {#view-published-file-folder}
+
+1. Login to the Brand Portal interface to see the published assets (depending on your scheduled date or time).
+
+   ![bp_landingpage](assets/bp_landingpage.png) 
+
+1. Switch to List view ![List view](assets/list-view.svg) to see the current publish status of the asset.
+
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+
+   ![generated report status](assets/report-status.JPG)
 
 ### Unpublish folders from Brand Portal {#unpublish-folders-from-brand-portal}
 
