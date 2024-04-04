@@ -274,6 +274,8 @@ When using variables in your queries there are a few best practices that should 
     >[!NOTE]
     >
     >This option is only recommended for when the `DispatcherNoCanonURL` solution cannot be implemented for any reason.
+* `CACHE_GRAPHQL_PERSISTED_QUERIES`
+  When `CACHE_GRAPHQL_PERSISTED_QUERIES` is enabled for the Dispatcher, then the `;` character cannot be used in the value of a variable.
 
 ## Caching your persisted queries {#caching-persisted-queries}
 
