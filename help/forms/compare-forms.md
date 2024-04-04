@@ -4,6 +4,7 @@ description: Compare two distinct forms based on the fields, content, and form c
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 hidefromtoc: yes
+exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
 ---
 ## Compare Adaptive Forms {#compare-two-forms}
 
