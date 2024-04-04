@@ -4,7 +4,7 @@ description: Learn how AEM Assets and Dynamic Media simplify effective image man
 ---
 # View and manage renditions in Experience Manager Assets{#renditions}
 
-Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. AEM facilitates easy creation and management of these renditions, enhancing user experience. You can create thumbnails, optimize images for web or mobile, add watermarks, download dynamic renditions or smart crop renditions, and do much more.
+Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. AEM facilitates easy creation and management of these renditions, enhancing user experience. You can create thumbnails, optimize images for web or mobile, add watermarks, view dynamic renditions or smart crop renditions, and do much more.
 
 Dynamic Media image presets, and Smart Crop renditions promote systematic image management that aligns with brand standards, maximizing brand cohesion. This simplifies the process of quickly locating and using dynamic image renditions as needed without any admin access.
 <br>Renditions are classified as static and dynamic, each type presenting unique features and capabilities that are discussed further in detail.
@@ -12,12 +12,12 @@ Dynamic Media image presets, and Smart Crop renditions promote systematic image 
 ## Static renditions {#static-renditions}
 
 Static renditions are pre-generated versions of digital assets, usually created during asset ingestion or modification. These renditions are optimized for specific purposes and platforms, such as web thumbnails, mobile-friendly formats for responsive design, or high-resolution versions for printing, ensuring an efficient and consistent experience.
-Learn how you can [view and download](#view-and-download-dynamic-renditions) static renditions in [!DNL Experience Manager Assets].
+Learn [how to view](#view-dynamic-renditions) static renditions in [!DNL Experience Manager Assets].
 
 ## Dynamic renditions {#dynamic-renditions}
 
 Dynamic renditions are customized versions of assets created in real-time to meet specific needs, such as resizing images based on device resolution or cropping to fit different aspect ratios.
-These renditions enable organizations to deliver personalized and optimized experiences to diverse audience needs. You can view and download dynamic renditions in [!DNL Experience Manager Assets].
+These renditions enable organizations to deliver personalized and optimized experiences to diverse audience needs. You can view dynamic renditions in [!DNL Experience Manager Assets].
 
 ### Before you begin
 
@@ -29,21 +29,24 @@ These renditions enable organizations to deliver personalized and optimized expe
 
     You can [switch the view](/help/assets/assets-view-introduction.md#how-to-access-assets-view) later to preview dynamic renditions in the Assets view.
 
-### View and download Dynamic renditions {#view-download-renditions}
+### View Dynamic renditions {#view-renditions}
 
-To view and download dynamic renditions of images in [!DNL Experience Manager Assets], follow these steps:
+To view dynamic renditions of images in [!DNL Experience Manager Assets], follow these steps:
 
 1. Go to **AEM Assets** > **[!UICONTROL Assets Management]** > **[!UICONTROL Assets]**.
 
 1. Navigate to the applicable asset folder.
 
-1. Click the image you need to view or download and click **[!UICONTROL Details]**.
+1. Click the image you need to view and click **[!UICONTROL Details]**.
 
 1. In the right menu, click **[!UICONTROL Renditions]**. <br> The **[!UICONTROL Renditions]** panel opens with the available **[!UICONTROL Dynamic]** and **[!UICONTROL Smart Crop]** renditions.
 
-    ![dynamic renditions](assets/preset_smart_crop.png)
+    <!-- ![dynamic renditions](assets/preset_smart_crop.png) -->
+    ![dynamic renditions](assets/preset_smart_crop_view.png)
 
-1. Click the ![download icon](assets/download-new-icon.png) icon next to the rendition you need to download. <br> Alternatively, you can select the image rendition, and click **[!UICONTROL Download Rendition]** option at the bottom.
+1. Click on the rendition you need to view. The respective rendition is displayed.
+
+<!-- 1. Click the ![download icon](assets/download-new-icon.png) icon next to the rendition you need to download. <br> Alternatively, you can select the image rendition, and click **[!UICONTROL Download Rendition]** option at the bottom. -->
 
 >[!NOTE]
 >
