@@ -9,7 +9,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release X {#release-15738}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on April 3, 2024. The previous maintenance release was release 15575.
+Summarized below are the continuous improvements for maintenance release 15738, which was publicly released on April 5, 2024. The previous maintenance release was release 15575.
 
 2024.3.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
@@ -159,8 +159,6 @@ Summarized below are the continuous improvements for maintenance release X, whic
 * SITES-17934 - Content Fragments - Preview fails due to DoS protection for large tree of fragments. See [KB](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945)
 
 ### Deprecated Features and APIs {#deprecated-15738}
-
-JWT.
 
 Have a look at [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) to know what has been deprecated or removed in AEM as a Cloud Service.
 
