@@ -257,6 +257,8 @@ The UTF-8 encoding `%3B` is for `;` and `%3D` is the encoding for `=`. The query
 
 When using variables in your queries there are a few best practices that should be followed:
 
+* Encoding
+  As a general approach, it is always recommended to encode all special characters; for example, `;`, `=`, `?`, `&`, among others.
 * Semicolon
   Persisted queries that use multiple variables (that are separated by semicolons) need to have:
   * the semicolons encoded (`%3B`), 
