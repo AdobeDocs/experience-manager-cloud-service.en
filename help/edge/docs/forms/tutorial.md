@@ -14,8 +14,6 @@ AEM Forms provide a block, known as Adaptive Forms Block, to help you easily cre
 
 This AEM Forms tutorial guides you through creating, previewing, and publishing your own custom form with a new Adobe Experience Manager (AEM) Forms project.
 
-
-
 ## Prerequisites
 
 * You have a GitHub account, and understand Git basics.
@@ -129,8 +127,7 @@ To copy the sample content to your own content folder and point your GitHub repo
 
         ```
 
-        For more information on managing files with within Microsoft SharePoint, refer to [How to use Adobe SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).  
- 
+        For more information on managing files with Microsoft SharePoint, see [How to use Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).  
 
       
     1. Commit the updated `fsatb.yaml` file, once you've updated the reference and everything looks good. If you encounter any build issues, see [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues). 
