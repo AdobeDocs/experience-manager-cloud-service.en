@@ -137,7 +137,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
@@ -325,7 +328,7 @@ data:
 
 **Example 3**
 
-This rule blocks requests that contain the query parameter `foo`, but allows every request coming from IP 192.168.1.1:
+This rule blocks requests on publish that contain the query parameter `foo`, but allows every request coming from IP 192.168.1.1:
 
 ```
 kind: "CDN"
@@ -336,7 +339,10 @@ data:
   trafficFilters:
     rules:
       - name: "block-request-that-contains-query-parameter-foo"
-        when: { queryParam: url-param, equals: foo }
+        when:
+          allOf:
+            - { queryParam: url-param, equals: foo }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "allow-all-requests-from-ip"
@@ -347,7 +353,7 @@ data:
 
 **Example 4**
 
-This rule blocks requests to path `/block-me`, and blocks every request that matches a `SQLI` or `XSS` pattern. This example includes a WAF traffic filter rules, which references the `SQLI` and `XSS` [WAF Flags](#waf-flags-list), and thus requires a separate license.
+This rule blocks requests to path `/block-me` on publish, and blocks every request that matches a `SQLI` or `XSS` pattern. This example includes a WAF traffic filter rules, which references the `SQLI` and `XSS` [WAF Flags](#waf-flags-list), and thus requires a separate license.
 
 ```
 kind: "CDN"
@@ -358,7 +364,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
@@ -464,7 +473,10 @@ data:
   trafficFilters:
     rules:
       - name: rate-limit-example
-        when: { reqProperty: path, equals: /critical/resource }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /critical/resource }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
         rateLimit: { limit: 100, window: 60, penalty: 60, count: all }
@@ -492,7 +504,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
           experimental_alert: true
@@ -632,8 +647,8 @@ data:
     #  Block client for 5m when it exceeds 100 req/sec on a time window of 1sec
     - name: limit-requests-client-ip
       when:
-        reqProperty: path
-        like: '*'
+        reqProperty: tier
+        equals: 'publish'
       rateLimit:
         limit: 100
         window: 1
