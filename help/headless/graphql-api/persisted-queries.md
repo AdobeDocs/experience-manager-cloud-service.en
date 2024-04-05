@@ -260,9 +260,9 @@ When using variables in your queries there are a few best practices that should 
 * Encoding
   As a general approach, it is always recommended to encode all special characters; for example, `;`, `=`, `?`, `&`, among others.
 * Semicolon
-  Persisted queries that use multiple variables (that are separated by semicolons) need to have:
-  * the semicolons encoded (`%3B`), 
-  * a trailing semicolon added to the end of the query
+  Persisted queries that use multiple variables (that are separated by semicolons) need to have either:
+  * the semicolons encoded (`%3B`); and encoding the URL will also achieve this
+  * or a trailing semicolon added to the end of the query
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
   When `CACHE_GRAPHQL_PERSISTED_QUERIES` is enabled for the Dispatcher, then parameters that contain the `/` or `\` characters in their value, are encoded twice at the Dispatcher level. 
   To avoid this situation:
