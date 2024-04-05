@@ -259,23 +259,29 @@ When using variables in your queries there are a few best practices that should 
 
 * Encoding
   As a general approach, it is always recommended to encode all special characters; for example, `;`, `=`, `?`, `&`, among others.
+
 * Semicolon
   Persisted queries that use multiple variables (that are separated by semicolons) need to have either:
-  * the semicolons encoded (`%3B`); and encoding the URL will also achieve this
+  * the semicolons encoded (`%3B`); encoding the URL will also achieve this
   * or a trailing semicolon added to the end of the query
+
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
   When `CACHE_GRAPHQL_PERSISTED_QUERIES` is enabled for the Dispatcher, then parameters that contain the `/` or `\` characters in their value, are encoded twice at the Dispatcher level. 
   To avoid this situation:
+
   * Enable `DispatcherNoCanonURL` on the Dispatcher.
     This will instruct the Dispatcher to forward the original URL to AEM, so preventing duplicated encodings. 
     However this setting currently only works on the `vhost` level, so if you already have Dispatcher configurations to rewrite URLs (e.g. when using shortened URLs) you might need a separate `vhost` for persisted query URLs.
+
   * Send `/` or `\` characters unencoded.
     When calling the persisted query URL ensure that all `/` or `\` characters remain unencoded in the value of persisted query variables.
     >[!NOTE]
     >
     >This option is only recommended for when the `DispatcherNoCanonURL` solution cannot be implemented for any reason.
+
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
-  When `CACHE_GRAPHQL_PERSISTED_QUERIES` is enabled for the Dispatcher, then the `;` character cannot be used in the value of a variable.
+
+   When `CACHE_GRAPHQL_PERSISTED_QUERIES` is enabled for the Dispatcher, then the `;` character cannot be used in the value of a variable.
 
 ## Caching your persisted queries {#caching-persisted-queries}
 
