@@ -158,9 +158,13 @@ In addition to the recently released [Traffic Filter Rules](/help/security/traff
 * setting or modifying request or response headers
 * custom error pages when the CDN can't reach AEM
 
-#### Apache/Dispatcher runtime ingestion of rewrite maps (Early Adopter Program) {#apache-rewritemaps-early-adopter}
+#### Apache/Dispatcher Runtime Ingestion of Rewrite Maps (Early Adopter Program) {#apache-rewritemaps-early-adopter}
 
-Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a specific location in the publish repository, and load it, without requiring a web tier pipeline execution. This opens up opportunities for a business user to declare redirects using a UI, such as that offered by ACS Commons Redirect Map Manager. If this sounds useful for your business needs, please reach out to **<aemcs-rde-support@adobe.com>** for more information.
+Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a specific location in the publish repository, and load it, without requiring a web tier pipeline execution. This opens up opportunities for a business user to declare redirects using a UI, such as that offered by ACS Commons Redirect Map Manager. If this sounds useful for your business needs, please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.
+
+#### Edge Side Includes (ESI) for Loading Dynamic Content (Early Adopter Program) {#esi-early-adopter}
+
+The Adobe Managed CDN now supports Edge Side Includes (ESI), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs. Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.
 
 #### RDE Support for Front-End Code using Site Themes and Site Templates (Early Adopter Program) {#rde-frontend-early-adopter}
 
