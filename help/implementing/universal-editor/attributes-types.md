@@ -26,7 +26,7 @@ In order for an app to be editable by the Universal Editor, it must be properly 
 |`data-aue-filter`|Defines which references can be used|
 |`data-aue-label`|Defines a custom label for a selectable item which is displayed in the editor <br>In case `data-aue-model` is set, the label is retrieved by way of the model|
 |`data-aue-model`|Defines a model which is used for form-based editing in the properties rail|
-|`data-aue-behavior`|Defines the [behavior of an instrumentation,](#behaviors) for example, stand alone text or image can also mimic a component to make it moveable or deletable|
+|`data-aue-behavior`|Defines the [behavior of an instrumentation](#behaviors), for example, stand alone text or image can also mimic a component to make it moveable or deletable|
 
 ## Item Types {#item-types}
 
@@ -61,4 +61,3 @@ To learn more about the Universal Editor, see these documents.
 * [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.
-
