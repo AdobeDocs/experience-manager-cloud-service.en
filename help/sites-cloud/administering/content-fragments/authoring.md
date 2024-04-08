@@ -394,7 +394,7 @@ To revert to a specific version:
 
 1. Select **Revert**.
 
-![Content Fragment Editor - Version History Revert](assets/cf-authoring-version-history-compare.png)
+![Content Fragment Editor - Version History Revert](assets/cf-authoring-version-history-revert_updated.png)
 
 ## View the Language Copies {#view-language-copies}
 
