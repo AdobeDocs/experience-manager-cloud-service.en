@@ -171,18 +171,18 @@ Now you can email **<aemcs-cdn-config-adopter@adobe.com>** to join the early ado
 In addition to the recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which includes the optionally licensable Web Application Firewall (WAF) rules, there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>** to gain access to:
 
 * 301/302 client-side redirects
-* proxying requests at the edge to arbitrary origins
+* proxying requests at the edge to arbitrary origins (e.g., non-AEM applications)
 * URL transformations
 * setting or modifying request or response headers
 * custom error pages when the CDN can't reach AEM
 
 #### Apache/Dispatcher Runtime Ingestion of Rewrite Maps (Early Adopter Program) {#apache-rewritemaps-early-adopter}
 
-Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a specific location in the publish repository, and load it, without requiring a web tier pipeline execution. This opens up opportunities for a business user to declare redirects using a UI, such as that offered by ACS Commons Redirect Map Manager. If this sounds useful for your business needs, please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.
+Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a specific location in the publish repository, and load them, without requiring a web tier pipeline execution. This opens up opportunities for a business user to declare redirects using a UI, such as that offered by ACS Commons Redirect Map Manager. Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.
 
 #### Edge Side Includes (ESI) for Loading Dynamic Content (Early Adopter Program) {#esi-early-adopter}
 
-The Adobe Managed CDN now supports Edge Side Includes (ESI), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs. Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.
+The Adobe Managed CDN now supports Edge Side Includes (ESI), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs). Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.
 
 #### RDE Support for Front-End Code using Site Themes and Site Templates (Early Adopter Program) {#rde-frontend-early-adopter}
 
