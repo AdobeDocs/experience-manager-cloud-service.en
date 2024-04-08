@@ -797,7 +797,6 @@ user-guide-title: AEM as a Cloud Service
   + Building Edge Delivery Applications {#build}
     + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
     + [Anatomy of a Project](/help/edge/developer/anatomy-of-a-franklin-project.md)
-    + [Block Collection](/help/edge/developer/block-collection.md)
     + [Spreadsheets](/help/edge/developer/spreadsheets.md)
     + [Forms](/help/edge/developer/forms.md)
     + [Indexing](/help/edge/developer/indexing.md)
@@ -1173,3 +1172,9 @@ user-guide-title: AEM as a Cloud Service
   + Accessibility {#accessibility}
     + [AEM as a Cloud Service and the Web Accessibility Guidelines](/help/compliance/accessibility/web-accessibility.md)
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
+
+
+<!--
+Temporarily remove:
+    + [Block Collection](/help/edge/developer/block-collection.md)
+-->
