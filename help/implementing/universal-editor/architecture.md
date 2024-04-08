@@ -8,8 +8,6 @@ exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 
 Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 
-{{universal-editor-status}}
-
 ## Architecture Building Blocks {#building-blocks}
 
 The Universal Editor is made up of four essential building blocks that interact to allow content authors to edit any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
@@ -80,3 +78,4 @@ To learn more about the Universal Editor, see these documents.
 * [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 * [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
 * [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.
+
