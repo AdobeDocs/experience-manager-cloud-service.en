@@ -36,8 +36,25 @@ Have a look at the March 2024 Release Overview video for a summary of the featur
 
 ### New features in [!DNL Experience Manager Sites] {#sites-features}
 
+**Content Management OpenAPIs for Content Fragments and Models**
+Developers can now programmatically interact with Content Fragments and Content Fragment models and perform CruD operations on them using Content Management OpenAPIs. For more information, see [API documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+
+**Multisite Management support for Experience Fragments**
+Multisite Management support has been extended for folder structures that store experience fragments, allowing users to rollout a complete content structure with experience fragments.
+
+
+
 ### Early Adopter Programs
+
+**Generate Variations**
 Leverage GenAI through AEM's new feature, [generate variations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations), accessible now in Cloud Service. Generate variations helps you generate and scale content creation through the use of generative AI. Reach out to your Adobe account team for consideration in the program.
+
+**Asset browsing in Content Fragment Console**
+Content authors can now browse, view, and take actions on images, and other assets without having to leave the Content Fragment Console. 
+
+ ![Asset Browsing](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
+
+Interested in trying out the feature and sharing feedback? Send an email to aemcs-headless-adopter@adobe.com from your official email ID to learn more about the early adopter program.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
