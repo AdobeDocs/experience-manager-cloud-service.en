@@ -445,7 +445,7 @@ The Filter panel offers:
 
  Once selected, the **Filtering by** options are shown (under the Search box). They can be deselected from there. For example:
 
-![Content Fragments console - Filtering](assets/cf-managing-console-filter.png)
+![Content Fragments console - Filtering](assets/cf-managing-console-filter-updated.png)
 
 ### Fast Filtering {#fast-filtering}
 
