@@ -37,7 +37,7 @@ Have a look at the March 2024 Release Overview video for a summary of the featur
 ### New features in [!DNL Experience Manager Sites] {#sites-features}
 
 ### Early Adopter Programs
-Leverage GenAI through AEM's new feature, [!generate variations] (https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations), accessible now in Cloud Service. Generate variations helps you generate and scale content creation through the use of generative AI. Reach out to your Adobe account team for consideration in the program.
+Leverage GenAI through AEM's new feature, [generate variations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations), accessible now in Cloud Service. Generate variations helps you generate and scale content creation through the use of generative AI. Reach out to your Adobe account team for consideration in the program.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
