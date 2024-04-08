@@ -42,7 +42,7 @@ There are two types of AEM version updates:
   * They are mostly for maintenance purposes, including the latest bug-fixes and security updates.
   * It has minimal impact because changes are applied regularly.
 
-* [**New Feature Updates**](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [**AEM Feature Activation**](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
    * They are released on a predictable, monthly schedule.
 
