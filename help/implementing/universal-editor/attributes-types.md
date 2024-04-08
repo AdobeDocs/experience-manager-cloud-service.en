@@ -61,3 +61,4 @@ To learn more about the Universal Editor, see these documents.
 * [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.
+
