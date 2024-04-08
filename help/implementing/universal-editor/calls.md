@@ -377,3 +377,4 @@ The Universal Editor iterates over the content and generates a list of reference
 ## Additional Resources {#additional-resources}
 
 * [Universal Editor Events](/help/implementing/universal-editor/events.md)
+
