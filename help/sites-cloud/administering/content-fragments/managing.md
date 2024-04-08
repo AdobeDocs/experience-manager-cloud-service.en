@@ -439,6 +439,7 @@ The Filter panel offers:
 
 * a selection of predicates; 
   * including content fragment models, localization, tags, status fields, among others
+  * excluding content fragments stored in sub-folders
   * one, or more, predicates can be selected and combined to create the filter
 * the opportunity to **Save** your configuration
 * the option to retrieve a saved search filter for reuse
