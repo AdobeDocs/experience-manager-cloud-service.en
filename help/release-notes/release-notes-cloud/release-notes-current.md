@@ -42,6 +42,8 @@ Developers can now programmatically interact with Content Fragments and Content 
 **Multisite Management support for Experience Fragments**
 Multisite Management support has been extended for folder structures that store experience fragments, allowing users to rollout a complete content structure with experience fragments.
 
+**Compare Content Fragment Versions**
+The new Content Fragment Editor now allows content authors to view differences between the current version of a content fragment and a previous version. 
 
 
 ### Early Adopter Programs
