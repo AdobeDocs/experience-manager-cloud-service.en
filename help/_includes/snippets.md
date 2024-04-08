@@ -8,12 +8,6 @@
 
 [!BADGE For authoring AEM content for Edge Delivery Services, click here.]{type=Positive url="/help/edge/overview.md" tooltip="Authoring AEM content for Edge Delivery Services"}
 
-## Universal Editor Status {#universal-editor-status}
-
->[!NOTE]
->
->The Universal Editor is still in development and its capabilities are subject to change and may differ from what is detailed in this document.
-
 ## See Also {#see-also}
 
 * [Create an AEM Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
@@ -64,3 +58,4 @@
 * [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
 * [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 * [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
+

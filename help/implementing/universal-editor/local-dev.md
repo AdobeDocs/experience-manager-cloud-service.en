@@ -8,8 +8,6 @@ exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 
 Learn how the Universal Editor supports editing on local AEM instances for development purposes.
 
-{{universal-editor-status}}
-
 ## Overview {#overview}
 
 The Universal Editor Service is what binds the Universal Editor and the backend system. To be able to develop locally for the Universal Editor, you must run a local copy of the Universal Editor Service. This is because:
@@ -115,3 +113,4 @@ With the [Universal Editor Service running locally](#running-ue) and your [conte
 1. Open your browser to `https://localhost:8000/corslib/LATEST`.
 1. Direct your browser to accept [your self-signed certificate.](#ue-https)
 1. Once the self-signed certificate is trusted, you can edit the page using your local Universal Editor Service.
+
