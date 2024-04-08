@@ -448,6 +448,8 @@ The Filter panel offers:
 
 ![Content Fragments console - Filtering](assets/cf-managing-console-filter-updated.png)
 
+![Content Fragments console - excluding sub-folder items](assets/cf-managing-console-filter-exclude-sub-folder.png)
+
 ### Fast Filtering {#fast-filtering}
 
 You can also select a predicate by clicking on a specific column value in the list. You can select one, or more, values to combine predicates. 
