@@ -8,8 +8,6 @@ exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 
 Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 
-{{universal-editor-status}}
-
 ## Overview {#overview}
 
 When adapting your own apps for use with the Universal Editor, you must instrument the components and define what fields and component types they can manipulate in the properties rail of the editor. You do this by creating a model and linking to that from the component.
@@ -826,3 +824,4 @@ Text allows for a single line of text input.  It includes additional validation 
 ![Screenshot of text component type](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
+

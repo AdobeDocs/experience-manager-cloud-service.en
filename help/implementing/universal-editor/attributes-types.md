@@ -8,8 +8,6 @@ exl-id: 02795a31-244a-42b4-8297-2649125d7777
 
 Learn about the data attributes and item types that the Universal Editor requires.
 
-{{universal-editor-status}}
-
 ## Introduction {#introduction}
 
 In order for an app to be editable by the Universal Editor, it must be properly instrumented. This includes including the proper metadata so the editor can edit the content of the app. This document details the attributes and item types of those metadata.
@@ -63,3 +61,4 @@ To learn more about the Universal Editor, see these documents.
 * [Getting Started with the Universal Editor in AEM](getting-started.md) - Learn how to get access to the Universal Editor and how to start instrumenting your first AEM app to use it.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.
+
