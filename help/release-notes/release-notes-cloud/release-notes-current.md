@@ -82,7 +82,7 @@ Experience Manager Assets now generates preview renditions of all supported vide
 
 **Manage permissions for collections** 
 
-Assets Essentials allows the administrators to manage the access levels for private collections available in the repository. As an administrator, you can create user groups and assign permissions to those groups to manage access levels. You can also delegate the permission management privileges to user groups.
+Assets Essentials allows the administrators to manage access levels for private collections available in the repository. As an administrator, you can create user groups and assign permissions to those groups to manage access levels. You can also delegate the permission management privileges to user groups.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
