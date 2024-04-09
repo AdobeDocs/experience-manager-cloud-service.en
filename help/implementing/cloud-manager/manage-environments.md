@@ -243,7 +243,7 @@ The **Update** option's behavior varies depending on the configuration and curre
 
 * If the pipeline has already been updated, the **Update** option prompts the user to execute the pipeline.
 * If the pipeline is already being updated, the **Update** option informs the user that an update is already running.
-* If an appropriate pipeline does not exits, the **Update** option prompts the user to create one.
+* If an appropriate pipeline does not exist, the **Update** option prompts the user to create one.
 
 ## Deleting Development Environments {#deleting-environment}
 
