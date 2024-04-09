@@ -36,6 +36,13 @@ Have a look at the March 2024 Release Overview video for a summary of the featur
 
 ### New features in [!DNL Experience Manager Sites] {#sites-features}
 
+**AEM Authoring for Edge Delivery Services**
+AEM Sites can now be used as a content source for Edge Delivery Services. Authors manage their websites in AEM using the new Universal Editor with in-context wysiwyg authoring. This enables companies to build fast high performance webpages with Edge Delivery Services while leveraging AEM's powerful capabilites for content management.
+
+For more information, see the [documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) and watch the [How to get started AEM GEM webinar](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
+
+
+
 **Content Management OpenAPIs for Content Fragments and Models**
 Developers can now programmatically interact with Content Fragments and Content Fragment models and perform CruD operations on them using Content Management OpenAPIs. For more information, see [API documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 
