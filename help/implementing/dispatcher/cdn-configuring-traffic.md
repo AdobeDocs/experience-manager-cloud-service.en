@@ -42,6 +42,16 @@ config/
 
 * Secondly, the `cdn.yaml` configuration file should contain both metadata and the rules described in examples below.
 
+## Syntax {#configuration-syntax}
+
+The rule types in the sections below share a common syntax.
+
+A rule is referenced by a name, a conditional "when clause", and actions.
+
+The when clause determines whether a rule will be evaluated, based on properties including domain, path, query strings, headers, and cookies. The syntax is the same across rule types; for details, see the [Condition Structure section](help/security/traffic-filter-rules-including-waf.md#condition-structure) in the Traffic Filter Rules article.
+
+The details of the actions node differ per rule type, and are outlined in the individual sections below.
+
 ## Request Transformations {#request-transformations}
 
 Request transformation rules allow you to modify incoming requests. The rules support setting, unsetting, and altering paths, query parameters, and headers (including cookies) based on various matching conditions, including regular expressions. You can also set variables, which can then be referenced later in the evaluation sequence.
