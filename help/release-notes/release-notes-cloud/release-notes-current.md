@@ -39,6 +39,8 @@ Have a look at the March 2024 Release Overview video for a summary of the featur
 **AEM Authoring for Edge Delivery Services**
 AEM Sites can now be used as a content source for Edge Delivery Services. Authors manage their websites in AEM using the new Universal Editor with in-context wysiwyg authoring. This enables companies to build fast high performance webpages with Edge Delivery Services while leveraging AEM's powerful capabilites for content management.
 
+  ![AEM Authoring](/help/edge/assets/universal_editor_edge_delivery_services.png)
+  
 For more information, see the [documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) and watch the [How to get started AEM GEM webinar](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
 
 
