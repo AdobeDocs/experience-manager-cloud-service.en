@@ -68,19 +68,23 @@ Interested in trying out the feature and sharing feedback? Send an email to aemc
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Admin view prerelease features {#admin-view-prerelease}
+### New features in Admin view {#admin-view}
+
+**Native integration with Adobe Express**
+
+AEM Assets integrates natively with Adobe Express, which allows you to directly access the assets stored in AEM Assets from within the Adobe Express user interface. You can place content managed in AEM Assets in the Express canvas and then save new or edited content in an AEM Assets repository.
+
+![Include assets from Assets add-on](/help/assets/assets/adobe-express-native-integration.png)
 
 **Preview renditions for all supported video types**
 
-Experience Manager Assets now generates preview renditions of all supported video types by default without requiring a processing profile configuration
+Experience Manager Assets now generates preview renditions of all supported video types by default without requiring a processing profile configuration.
 
-### Assets view {#assets-view-features}
+### New features in Assets view {#assets-view}
 
-**Smart tags blocklist** 
+**Manage permissions for collections** 
 
-Assets Essentials now enables you to define blocklist that comprises words that should not be added as Smart Tags to assets when they are uploaded to the repository. This capability helps you to maintain brand compliance and reduces effort to moderate Smart Tags.
-
-  ![Smart Tags blocklist](/help/assets/assets/block-tags.png)
+Assets Essentials allows the administrators to manage the access levels for private collections available in the repository. As an administrator, you can create user groups and assign permissions to those groups to manage access levels. You can also delegate the permission management privileges to user groups.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
