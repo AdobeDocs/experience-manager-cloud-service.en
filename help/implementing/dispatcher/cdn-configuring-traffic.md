@@ -67,7 +67,7 @@ Configuration example:
 kind: "CDN"
 version: "1"
 metadata:
-  envTypes: ["prod", "dev"]
+  envTypes: ["dev", "stage", "prod"]
 data:  
   experimental_requestTransformations:
     removeMarketingParams: true
@@ -80,7 +80,7 @@ data:
           - type: set
             reqHeader: x-some-header
             value: some value
- 
+            
       - name: unset-header-rule
         when:
           reqProperty: path
@@ -88,24 +88,7 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
- 
-      - name: set-query-param-rule
-        when:
-          reqProperty: path
-          equals: /set-query-param
-        actions:
-          - type: set
-            queryParam: someParam
-            value: someValue
- 
-      - name: unset-query-param-rule
-        when:
-          reqProperty: path
-          equals: /unset-query-param
-        actions:
-          - type: unset
-            queryParam: someParam
- 
+            
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -113,7 +96,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
- 
+            
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -121,61 +104,7 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
- 
-      - name: set-req-cookie-rule
-        when:
-          reqProperty: path
-          equals: /set-req-cookie
-        actions:
-          - type: set
-            reqCookie: someParam
-            value: someValue
- 
-      - name: unset-req-cookie-rule
-        when:
-          reqProperty: path
-          equals: /unset-req-cookie
-        actions:
-          - type: unset
-            reqCookie: someParam
- 
-      - name: set-variable-rule
-        when:
-          reqProperty: path
-          equals: /set-variable
-        actions:
-          - type: set
-            var: some_var_name
-            value: some value
- 
-      - name: unset-variable-rule
-        when:
-          reqProperty: path
-          equals: /unset-variable
-        actions:
-          - type: unset
-            var: some_var_name
- 
-      - name: replace-segment
-        when:
-          reqProperty: path
-          like: /replace-segment/*
-        actions:
-          - type: replace
-            reqProperty: path
-            match: /replace-segment/
-            value: /segment-was-replaced/
- 
-      - name: replace-extension
-        when:
-          reqProperty: path
-          like: /replace-extension/*.html
-        actions:
-          - type: replace
-            reqProperty: path
-            match: \.html
-            value: ''
- 
+            
       - name: multi-action
         when:
           reqProperty: path
@@ -196,28 +125,15 @@ Explained in the table below are the available actions.
 
 | Name      | Properties               | Meaning     |
 |-----------|--------------------------|-------------|
-| **set** |reqProperty, value|Sets a specified reqProperty to a given value. Currently only the "path" property is supported. |
-|     |reqHeader, value|Sets a specified header to a given value.|
-|     |queryParam, value|Sets a specified query parameter to a given value.|
-|     |reqCookie, value|Sets a specified cookie to a given value.|
-|     |var, value|Sets a specified reqProperty to a given value.|
-| **unset** |reqProperty|Removes a specified header. Currently only the "path" property is supported. |
-|         |reqHeader|Removes a specified header.|
-|         |queryParam|Removes a specified query parameter.|
-|         |reqCookie|Removes a specified cookie.|
+| **set** |(reqProperty or reqHeader or queryParam or reqCookie), value|Sets a specified request parameter (only "path" property supported), or request header, query parameter, or cookie, to a given value. |
+|     |var, value|Sets a specified request property to a given value.|
+| **unset** |reqProperty|Removes a specified request parameter (only "path" property supported), or request header, query parameter, or cookie, to a given value.|
 |         |var|Removes a specified variable.|
 |         |queryParamMatch|Removes all query parameters that match a specified regular expression.|
-| **transform** |op:replace, reqProperty, match, replacement  | Replaces part of the request property with a new value. Currently only the "path" property is supported.|
-|               |op:replace, reqHeader  match, replacement  | Replaces part of the request header with a new value. Currently only the "path" property is supported.|
-|               |op:replace, queryParam, match, replacement  | Replaces part of the queryParam with a new value. Currently only the "path" property is supported.|
-|               |op:replace, reqCookie, match, replacement  | Replaces part of the reqCookie with a new value. Currently only the "path" property is supported.|
-|              |op:tolower, reqProperty  | Sets the request property to its lowercase value. Currently only the "path" property is supported. |
-|              |op:tolower, reqHeader  | Sets the request header to its lowercase value. |
-|              |op:tolower, queryParam  | Sets the query param  to its lowercase value. |
-|              |op:tolower, reqCookie  | Sets the request cookie to its lowercase value. |
+| **transform** |op:replace, (reqProperty or reqHeader or queryParam or reqCookie), match, replacement  | Replaces part of the request parameter (only "path" property supported), or request header, query parameter, or cookie with a new value. |
+|              |op:tolower, (reqProperty or reqHeader or queryParam or reqCookie) | Sets the request parameter (only "path" property supported), or request header, query parameter, or cookie to its lowercase value. |
 
-
-Actions can be chained together. For exampkle:
+Actions can be chained together. For example:
 
 ```
 actions:
@@ -230,7 +146,6 @@ actions:
       reqProperty: path
       op: tolower
 ```
-
 
 ### Variables {#variables}
 
