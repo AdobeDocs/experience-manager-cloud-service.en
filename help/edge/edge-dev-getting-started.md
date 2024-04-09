@@ -76,20 +76,20 @@ First you will need to create a new project on GitHub, based on the Adobe templa
 
    ![Committing changes](assets/edge-dev-getting-started/commit-fstab-changes.png)
 
-1. Return to the root of your repository and click on `paths.yaml` and then the **Edit this file** icon.
+1. Return to the root of your repository and click on `paths.json` and then the **Edit this file** icon.
 
-   ![paths.yaml](assets/edge-dev-getting-started/paths.png)
+   ![paths.json](assets/edge-dev-getting-started/paths.png)
 
-1. Replace the default mappings with `/content/<site-name>/:/` and click **Commit changes...**.
+1. The default mapping will use the name of the repository. Update the default mapping as required for your project with `/content/<site-name>/:/` and click **Commit changes...**.
 
    * Provide your own `<site-name>`. You will need it in a later step.
    * The mappings tells Edge Delivery Services how to map the content in your AEM repository to the site URL.
 
-   ![Updating paths.yaml](assets/edge-dev-getting-started/paths-update.png)
+   ![Updating paths.json](assets/edge-dev-getting-started/paths-update.png)
 
 1. Add a commit message as desired and then click **Commit changes**, committing them directly to the `main` branch.
 
-   ![Committing changes](assets/edge-dev-getting-started/commit-fstab-changes.png)
+   ![Committing changes](assets/edge-dev-getting-started/commit-paths-changes.png)
 
 ### Create and Edit a New AEM Site {#create-aem-site}
 
