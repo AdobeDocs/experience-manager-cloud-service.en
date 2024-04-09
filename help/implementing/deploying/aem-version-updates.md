@@ -25,7 +25,7 @@ Through NIMU, the customer can use the pipeline at any moment, even if an AEM ve
 
 #### Update Activities
 
-The current AEM version can still be checked for each environment, as before, using the Cloud Manager UI Environments panel.The same quality gates that are used in the pipeline are used by Non-Intrusive Maintenance Updates, including the customer written tests.
+The current AEM version can still be checked for each environment, as before, using the Cloud Manager UI Environments panel. The same quality gates that are used in the pipeline are used by Non-Intrusive Maintenance Updates, including the customer written tests.
 A Cloud Manager UI notification will be sent whenever a Non-Intrusive Maintenance Update is applied to the environments of your program. You can configure it to be also sent to your email.
 
 >[!NOTE]
