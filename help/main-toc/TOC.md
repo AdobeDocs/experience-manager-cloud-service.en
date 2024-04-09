@@ -794,6 +794,13 @@ user-guide-title: AEM as a Cloud Service
     + [Creating Blocks](/help/edge/create-block.md)
     + [Tabular Data and Spreadheets](/help/edge/tabular-data.md)
     + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
+  + Document-Based Authoring with Edge Delivery {#document-authoring}
+    + [Authoring](/help/edge/docs/authoring.md)
+    + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
+    + [Placeholders](/help/edge/docs/placeholders.md)
+    + [Sitemap](/help/edge/developer/sitemap.md)
+    + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
+    + [Slack Bot](/help/edge/docs/slack.md)
   + Building Edge Delivery Applications {#build}
     + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
     + [Anatomy of a Project](/help/edge/developer/anatomy-of-a-franklin-project.md)
@@ -805,13 +812,6 @@ user-guide-title: AEM as a Cloud Service
     + [Favicon](/help/edge/developer/favicon.md)
     + [Custom Headers](/help/edge/docs/custom-headers.md)
     + [Best Practices for Developers](/help/edge/docs/dev-collab-and-good-practices.md)
-  + Publishing Edge Delivery Applications {#publish}
-    + [Authoring](/help/edge/docs/authoring.md)
-    + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
-    + [Placeholders](/help/edge/docs/placeholders.md)
-    + [Sitemap](/help/edge/developer/sitemap.md)
-    + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
-    + [Slack Bot](/help/edge/docs/slack.md)
   + Launching Edge Delivery Applications {#launch}
     + [Go Live Checklist](/help/edge/docs/go-live-checklist.md)
     + [Push Invalidation](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
