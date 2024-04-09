@@ -44,7 +44,7 @@ Follow the steps below to navigate to the Readiness Phase:
 
    1. Follow the instructions in the [Using Best Practices Analyzer page](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) to install and run the BPA tool, using the key in the next step to automatically upload the report to CAM.
 
-1. Click **Get upload key**, so you can get the key used to configure your system to upload BPA reports directly to CAM.
+1. Click **Get upload key**, so you can get the key used to configure your system to automatically upload BPA reports directly to CAM.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
    
