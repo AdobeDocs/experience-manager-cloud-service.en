@@ -45,8 +45,7 @@ Multisite Management support has been extended for folder structures that store 
 **Compare Content Fragment Versions**
 The new Content Fragment Editor now allows content authors to compare and view differences between the current version of a content fragment and a previous version. 
 
-
-### Early Adopter Programs
+### Early Adopter Program {#sites-early-adopter}
 
 **Generate Variations**
 Leverage GenAI through AEM's new feature, [generate variations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations), accessible now in Cloud Service. Generate variations helps you generate and scale content creation through the use of generative AI. Reach out to your Adobe account team for consideration in the program.
