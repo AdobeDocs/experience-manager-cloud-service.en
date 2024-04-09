@@ -196,16 +196,41 @@ Explained in the table below are the available actions.
 
 | Name      | Properties               | Meaning     |
 |-----------|--------------------------|-------------|
-| **set** |reqHeader, value|Sets a specified header to a given value.|
+| **set** |reqProperty, value|Sets a specified reqProperty to a given value. Currently only the "path" property is supported. |
+|     |reqHeader, value|Sets a specified header to a given value.|
 |     |queryParam, value|Sets a specified query parameter to a given value.|
 |     |reqCookie, value|Sets a specified cookie to a given value.|
-|     |var, value|Sets a specified variable to a given value.|
-| **unset** |reqHeader|Removes a specified header.|
+|     |var, value|Sets a specified reqProperty to a given value.|
+| **unset** |reqProperty|Removes a specified header. Currently only the "path" property is supported. |
+|         |reqHeader|Removes a specified header.|
 |         |queryParam|Removes a specified query parameter.|
 |         |reqCookie|Removes a specified cookie.|
 |         |var|Removes a specified variable.|
 |         |queryParamMatch|Removes all query parameters that match a specified regular expression.|
-| **replace** |reqProperty, match, value|Replaces part of the request property with a new value. Currently only the "path" property is supported.|
+| **transform** |op:replace, reqProperty, match, replacement  | Replaces part of the request property with a new value. Currently only the "path" property is supported.|
+|               |op:replace, reqHeader  match, replacement  | Replaces part of the request header with a new value. Currently only the "path" property is supported.|
+|               |op:replace, queryParam, match, replacement  | Replaces part of the queryParam with a new value. Currently only the "path" property is supported.|
+|               |op:replace, reqCookie, match, replacement  | Replaces part of the reqCookie with a new value. Currently only the "path" property is supported.|
+|              |op:tolower, reqProperty  | Sets the request property to its lowercase value. Currently only the "path" property is supported. |
+|              |op:tolower, reqHeader  | Sets the request header to its lowercase value. |
+|              |op:tolower, queryParam  | Sets the query param  to its lowercase value. |
+|              |op:tolower, reqCookie  | Sets the request cookie to its lowercase value. |
+
+
+Actions can be chained together. For exampkle:
+
+```
+actions:
+    - type: transform
+      reqProperty: path
+      op: replace
+      match: \.html$
+      replacement: ""
+    - type: transform
+      reqProperty: path
+      op: tolower
+```
+
 
 ### Variables {#variables}
 
