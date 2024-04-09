@@ -49,11 +49,24 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
    > If the setting **Wipe** is enabled for the ingestion, it resets the entire existing repository including the user permissions on the target Cloud Service instance. This resetting is true also for an admin user added to the **administrators** group and that user must be added to the administrators group again to start an ingestion.
 
    * **Pre-Copy:** Choose the `Pre-copy` value
-     * You can run the optional pre-copy step to significantly speed-up the ingestion. See [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details.
+     * You can run the optional pre-copy step to significantly speed up the ingestion. See [Ingesting with AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) for more details.
      * If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run `Author` ingestion first alone. Doing so speeds up the `Publish` ingestion when it is run later.
 
    >[!IMPORTANT]
    > You can initiate an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you are unable to start an ingestion, see [Unable to Start Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) for more details.
+
+1. Once the ingestion choices have been selected, an estimate of the duration of the ingestion will be shown. This estimate is based on many ingestions that have been run.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion_estimate"
+>title="Ingestion Duration Estimate"
+>abstract="An approximation of the duration of a particular ingestion can be calculated to provide a general sense as to how long it will take. Limitations to its accuracy do exist."
+
+   * This estimate is only calculated and shown if the 'Check Size' values of the extraction were collected and are available.
+   * This value is an estimate and, although intelligently calculated, should not be considered exact. Various factors can change the actual duration.
+   * While the ingestion is running, this value will also be available in the durations dialog, accessed through the "**View durations**" action of the ingestion.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
 1. Click **Ingest**.
 
