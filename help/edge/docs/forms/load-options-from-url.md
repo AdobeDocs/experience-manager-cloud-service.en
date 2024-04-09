@@ -1,11 +1,11 @@
 ---
-title: Load Dropdown List Options from URL 
+title: Load Dropdown List Options from URL
 description: The dropdown list options are included in a distinct spreadsheet and then imported into the primary spreadsheet via the provided URL.
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
+exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 ---
-
 # Load dropdown list options from URL 
 
 In Edge Delivery Services forms, users have the option to select a value from a predefined set of options. Form authors use the `select` element, which provides a list of choices. 
@@ -75,5 +75,3 @@ https://main--wefinance--wkndforms.hlx.live/enquiry-form
 ## See also
 
 {{see-more-forms-eds}}
-
-   
