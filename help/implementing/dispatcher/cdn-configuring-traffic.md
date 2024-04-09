@@ -122,11 +122,11 @@ data:
           reqProperty: path
           like: /mypath
         actions:
-      - type: transform
-        reqProperty: path
-        op: replace
-        match: \.html$
-        replacement: ""
+          - type: transform
+           reqProperty: path
+           op: replace
+           match: \.html$
+           replacement: ""
 
 ```
 
