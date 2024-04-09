@@ -36,8 +36,8 @@ You can refer to the [spreadsheet](/help/forms/assets/enquirytranslate.xlsx) con
 
 ![Enquiry Translated Form](/help/forms/assets/translate-form-french.png)
 
-Refer to the URL below, where you can view the form with its French language translation:
-https://main--portal--wkndforms.hlx.live/enquirytranslate 
+<!--Refer to the URL below, where you can view the form with its French language translation:
+https://main--portal--wkndforms.hlx.live/enquirytranslate -->
 
 ## Translate forms within SharePoint Site{#translate-form-sharepoint}
 
@@ -56,8 +56,8 @@ Refer to the [spreadsheet](/help/forms/assets/enquirytranslate.xlsx) containing 
 
 ![Enquiry Translated Form](/help/forms/assets/translate-form-french.png)
 
-Refer to the URL below, where you can view the form with its French language translation:
-https://main--wefinance--wkndforms.hlx.live/enquirytranslate
+<!--Refer to the URL below, where you can view the form with its French language translation:
+https://main--wefinance--wkndforms.hlx.live/enquirytranslate -->
 
 ## Known issues {#known-issues}
 
