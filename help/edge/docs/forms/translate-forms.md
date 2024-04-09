@@ -21,43 +21,43 @@ By the end of the article, you learn to:
 
 The `GOOGLETRANSLATE` function at Google sheets translates forms by tapping into built-in translation tool, changing text from one language to another directly within a Google sheet. To translate forms within Google Drive:
 
-1. Go to your AEM Project folder on Google Drive and open your Google sheet. You can also create new sheet for a form.
-1. Rename the existing sheet (`shared-default`) to `shared-en`.
-1. Add a sheet named `shared-default`. The `shared-default` sheet contains the content for localization to a specific language.
-1. Add the  localized content in the `shared-default` sheet using the `GOOGLETRANSLATE` function. 
+1. Go to your AEM Project folder on Google Drive and open your Google sheet. 
+2. Rename the existing sheet (`shared-default`) to `shared-en`.
+3. Add a sheet named `shared-default`. The `shared-default` sheet contains the content for localization to a specific language.
+4. Add the  localized content in the `shared-default` sheet using the `GOOGLETRANSLATE` function. 
    You can use a formula to translate the content of cell D2 from the `shared-en` sheet into French within the `shared-default` sheet. Here is the formula to use:
    `=GOOGLETRANSLATE('shared-en'!D2,"en","fr")`
 
     ![Enquiry Translate spreadsheet](/help/forms/assets/translate-enquiry-spreadsheet.png)
 
-1. Preview and publish the sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
+5. Preview and publish the sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
 
 You can refer to the [spreadsheet](/help/forms/assets/enquirytranslate.xlsx) containing the form definition for an `enquiry` form translated from English to French language.
 
 ![Enquiry Translated Form](/help/forms/assets/translate-form-french.png)
 
-<!--Refer to the URL below, where you can view the form with its French language translation:
-https://main--portal--wkndforms.hlx.live/enquirytranslate -->
+Refer to the URL below, where you can view the form with its French language translation:
+https://main--portal--wkndforms.hlx.live/enquirytranslate
 
 ## Translate forms within SharePoint Site{#translate-form-sharepoint}
 
 To translate the forms on the Microsoft® SharePoint site, you need to manually change the labels of the fields using any translation service. To translate the forms within SharePoint Site:
 
-1. Go to your AEM Project folder on Microsoft® SharePoint and open your spreadsheet. You can also create new spreadsheet for a form.
-1. Rename the existing sheet (`shared-default`) to `shared-en`.
-1. Add a sheet named `shared-default`. The `shared-default` sheet contains the content for localization to a specific language.
-1. Add the  localized content in the `shared-default` sheet manually. 
+1. Go to your AEM Project folder on Microsoft® SharePoint and open your spreadsheet. 
+2. Rename the existing sheet (`shared-default`) to `shared-en`.
+3. Add a sheet named `shared-default`. The `shared-default` sheet contains the content for localization to a specific language.
+4. Add the  localized content in the `shared-default` sheet manually. 
     
       ![Enquiry Translate spreadsheet](/help/forms/assets/translate-enquiry-sp-spreadsheet.png)
 
-1. Preview and publish the sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
+5. Preview and publish the sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
 
-Refer to the [spreadsheet](/help/forms/assets/enquirytranslate.xlsx) containing the form definition for an `enquiry` form translated from English to French language.
+Refer to the [spreadsheet](/help/forms/assets/enquirytranslate-sp.xlsx) containing the form definition for an `enquiry` form translated from English to French language.
 
 ![Enquiry Translated Form](/help/forms/assets/translate-form-french.png)
 
-<!--Refer to the URL below, where you can view the form with its French language translation:
-https://main--wefinance--wkndforms.hlx.live/enquirytranslate -->
+Refer to the URL below, where you can view the form with its French language translation:
+https://main--wefinance--wkndforms.hlx.live/enquirytranslate 
 
 ## Known issues {#known-issues}
 

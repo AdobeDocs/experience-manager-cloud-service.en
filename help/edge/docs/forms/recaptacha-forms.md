@@ -2,8 +2,6 @@
 title: Use reCAPTCHA with AEM Forms Edge Delivery Services
 description: Use Google reCAPTCHA in an EDS Form
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 ---
 
@@ -12,10 +10,13 @@ exl-id: ac104e23-f175-435f-8414-19847efa5825
 reCAPTCHA is a popular tool used to protect websites from fraudulent activities, spam, and misuse. In Edge Delivery Services, the Adaptive Forms Block provides the capability to add Google reCAPTCHA to distinguish between humans and bots. This feature allows users to protect their website from spam and misuse. 
 For example, consider an enquiry form that collects data such as start and end trip dates, room budget, estimated trip cost, and traveler information. In such cases, there is a risk of malicious users exploiting the form for purposes like sending phishing emails or flooding it with irrelevant or harmful content using spambots. Integrating reCAPTCHA offers added security by verifying that submissions are from genuine users, effectively minimizing spam entries.
 
-Edge Delivery Services only support the **Challenge (v2): Invisible reCAPTCHA badge** for the Adaptive Form Block.
+Edge Delivery Services only support the **Score based(v3)-reCAPTCHA** for the Adaptive Form Block.
 
 ![Recaptcha V2](/help/forms/assets/recaptcha-v2-invisible.png)
 
+The **reCAPTCHA** feature is under the pre-release program. To request access to the **reCAPTCHA** feature for AEM Forms Edge Delivery Services, send an email from your work address to mailto:aem-forms-ea@adobe.com.
+
+<!--
 By the end of this article, you learn to:
   * [Enable Google reCAPTCHA's for a single form](#enable-google-recaptchas-for-a-single-form)
   * [Enable reCAPTCHA for all the forms on your Site](#enable-recaptcha-for-all-the-forms)
@@ -103,6 +104,7 @@ To apply Google reCAPTCHA to all the forms on your Site that use Adaptive Forms 
 1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview and publish the site. 
 
 The reCAPTCHA badge starts appearing for all the forms on your Site. 
+-->
 
 ## See also
 
