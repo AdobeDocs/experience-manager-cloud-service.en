@@ -1,11 +1,11 @@
 ---
-title: Using Edge Delivery Services
+title: Using Edge Delivery Services with AEM
 description: Learn how AEM as a Cloud Service can be used with Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 ---
 
-# Using Edge Delivery Services {#usingedge}
+# Using Edge Delivery Services with AEM {#usingedge}
 
 With Edge Delivery Services, you can create rapid development environments where authors can update and publish content quickly, and new sites can be launched rapidly. To this end, you can work with multiple content sources on the same website and publishing will be seamless and streamlined regardless of you chosen source. As such, it takes only a couple of seconds to go from editing to seeing the content live on the internet.
 
