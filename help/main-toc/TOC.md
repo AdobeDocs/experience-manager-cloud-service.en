@@ -71,6 +71,8 @@ user-guide-title: AEM as a Cloud Service
       + [Release Notes for 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
+    + 2024 {#2024}
+      + [Maintenance Release Notes for 2024.3.0](/help/release-notes/maintenance/2024/2024-3-0.md) 
     + 2023 {#2023}
       + [Maintenance Release Notes for 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md) 
       + [Maintenance Release Notes for 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md) 
@@ -564,7 +566,7 @@ user-guide-title: AEM as a Cloud Service
     + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + Integration with Adobe Express {#integration-adobe-express}
-      + [AEM Assets add-on for Adobe Express](/help/assets/addon-adobe-express.md)    
+      + [Native integration with Adobe Express](/help/assets/native-integration-adobe-express.md)    
 
   + Integration with Creative Cloud {#integration-creative-cloud}
       + [Connect AEM Assets to Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)  
@@ -633,6 +635,8 @@ user-guide-title: AEM as a Cloud Service
         + [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md)
         + [Create and use custom functions](/help/forms/create-and-use-custom-functions.md)
         +  [Add rules to an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components.md)
+        +  [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+        +  [Compare Adaptive Forms](/help/forms/compare-forms.md)  
     + Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -793,7 +797,6 @@ user-guide-title: AEM as a Cloud Service
   + Building Edge Delivery Applications {#build}
     + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
     + [Anatomy of a Project](/help/edge/developer/anatomy-of-a-franklin-project.md)
-    + [Block Collection](/help/edge/developer/block-collection.md)
     + [Spreadsheets](/help/edge/developer/spreadsheets.md)
     + [Forms](/help/edge/developer/forms.md)
     + [Indexing](/help/edge/developer/indexing.md)
@@ -824,6 +827,7 @@ user-guide-title: AEM as a Cloud Service
       + [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
       + [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
       + [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
+      + [Load options from URL to a form](/help/edge/docs/forms/load-options-from-url.md)
       + [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
       + [Use rules to add dynamic behaviour to a form](/help/edge/docs/forms/rules-forms.md)
       + [Show a custom thank you message after form submission](/help/edge/docs/forms/thank-you-page-form.md)
@@ -833,6 +837,7 @@ user-guide-title: AEM as a Cloud Service
       + [Translation](/help/edge/docs/forms/translate-forms.md)
       + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
       + [Custom Components](/help/edge/docs/forms/custom-components-forms.md)
+      + [Real time user monitoring for forms](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
     + References {#forms-references}
       + [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
   + Resources for Edge Delivery {#resources}
@@ -920,6 +925,8 @@ user-guide-title: AEM as a Cloud Service
       + [Authoring Basics for Headless with AEM](/help/journey-headless/author/basics.md)
       + [Learn about using references in Content Fragments](/help/journey-headless/author/references.md)
       + [Learn about defining Metadata and Tagging for Content Fragments](/help/journey-headless/author/metadata-tagging.md)
++ Generative AI {#generative-ai}
+  + [Generate Variations](/help/generative-ai/generate-variations.md)
 + Implementing {#implementing}
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
   + Using Cloud Manager {#using-cloud-manager}
@@ -1138,6 +1145,8 @@ user-guide-title: AEM as a Cloud Service
     + [Migrating the Dispatcher configuration from AMS to AEM as a Cloud Service](/help/implementing/dispatcher/ams-aem.md)
     + [Validating and Debugging using Dispatcher Tools Legacy](/help/implementing/dispatcher/validation-debug-legacy.md)
     + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
+    + [Configuring Traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+    + [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md)
     + [Caching in AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
 + Connectors {#connectors}
   + [Implementing an AEM Connector](/help/connectors/implement.md)
@@ -1165,3 +1174,9 @@ user-guide-title: AEM as a Cloud Service
   + Accessibility {#accessibility}
     + [AEM as a Cloud Service and the Web Accessibility Guidelines](/help/compliance/accessibility/web-accessibility.md)
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
+
+
+<!--
+Temporarily remove:
+    + [Block Collection](/help/edge/developer/block-collection.md)
+-->
