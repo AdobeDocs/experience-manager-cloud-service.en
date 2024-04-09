@@ -68,9 +68,9 @@ You can refer to the [enquiry spreadsheet](/help/forms/assets/drop-down-enquiry.
 
 After integrating the URL into the form definition to load drop-down list options, the options for the `Destination` drop-down start appearing from the URL.
 
-Refer to the URL below, which displays the `enquiry` form displaying the options saved in the separate spreadsheet:
+<!-- Refer to the URL below, which displays the `enquiry` form displaying the options saved in the separate spreadsheet:
 
-https://main--portal--wkndforms.hlx.live/enquiry 
+https://main--portal--wkndforms.hlx.live/enquiry  -->
 
 ## See also
 
