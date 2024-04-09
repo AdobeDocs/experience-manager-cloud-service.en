@@ -2,6 +2,8 @@
 title: Real time user monitoring for Edge Delivery Services Forms
 description: Real-time user monitoring for Edge Delivery Services Forms involves the ongoing tracking and analysis of user interactions with forms. 
 feature: Edge Delivery Services
+hide: yes
+hidefromtoc: yes
 ---
 # Real time user monitoring for Edge Delivery Services Forms
 

@@ -13,7 +13,7 @@ For example, the `enquiry` form features a drop-down menu for selecting countrie
 
 ![Drop-down options](/help/forms/assets/drop-down-options.png)
 
-Managing long lists of options for dropdown menus can be cumbersome when directly adding them into the spreadsheet containing the form's definition. Creating a separate spreadsheet to store these dropdown options can simplify and streamline the process. This sheet acts as a centralized repository for all dropdown options, arranged in a structured format. Each option is listed in its own row, facilitating easier management and updates.
+Managing long lists of options for dropdown menus can be cumbersome when directly adding them into the sheet containing the form's definition. Creating a separate sheet to store these dropdown options can simplify and streamline the process. This sheet acts as a centralized repository for all dropdown options, arranged in a structured format. Each option is listed in its own row, facilitating easier management and updates.
 
 Let us explore improving the form authoring process by loading the options list from another spreadsheet via a URL. 
 
@@ -22,12 +22,12 @@ By the end of this article, you learn to:
 * [Define options in a separate spreadsheet ](#define-options)
 * [Add URL to load drop-down list options](#add-url)
 
-## Define options in a separate spreadsheet {#define-options}
+## Define options in a separate sheet {#define-options}
 
-Create a spreadsheet with two columns:`Option` and `Value`, to define the options in different spreadsheet:
+Create a sheet with two columns:`Option` and `Value`, to define the options:
 
 1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive folder. 
-1. Create new sheet in your AEM Project folder in Microsoft® SharePoint Site or within your Google Drive folder and add the following:
+2. Add a sheet named `shared-country` in Microsoft® SharePoint Site or within your Google Drive folder and add the following:
    
     * **Option**: Represents the display values of options in the drop-down menu.
     * **Value**: Represents the submitted value when a user selects the option.
@@ -36,15 +36,15 @@ Create a spreadsheet with two columns:`Option` and `Value`, to define the option
     >
     > If the value and option for a drop-down option are same, the spreadsheet can contain only the **Option** column.
 
-   Let's create a separate sheet, [shared-country](/help/forms/assets/country-options.xlsx) for the options displayed in the `Destination` drop-down list in the `enquiry` form.
+   Let's add new sheet, [shared-country](/help/forms/assets/enquiry-options.xlsx) for the options displayed in the `Destination` drop-down list in the `enquiry` form.
 
     Refer to the illustration below, depicting the `shared-country` spreadsheet:
 
    ![Drop-down for country](/help/forms/assets/drop-down-country-options.png)
-1. Preview and publish the `shared-country` sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
+3. Preview and publish the `shared-country` sheet using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
   
    Refer to the URL which showcases the `shared-country` sheet:
-   https://main--portal--wkndforms.hlx.live/enquiry.json?sheet=country 
+   https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country  
 
 >[!NOTE]
 >
@@ -64,13 +64,13 @@ The `Options` property of a `select` field accepts a URL. The URL returns a JSON
 
    ![Drop-down for country](/help/forms/assets/load-dropdown-options-form.png)
 
-You can refer to the [enquiry spreadsheet](/help/forms/assets/drop-down-enquiry.xlsx) to add the URL to load drop-down list options.
+You can refer to the [enquiry spreadsheet](/help/forms/assets/enquiry-options.xlsx) to add the URL to load drop-down list options.
 
 After integrating the URL into the form definition to load drop-down list options, the options for the `Destination` drop-down start appearing from the URL.
 
-<!-- Refer to the URL below, which displays the `enquiry` form displaying the options saved in the separate spreadsheet:
+Refer to the URL below, which displays the `enquiry` form displaying the options saved in the separate sheet:
 
-https://main--portal--wkndforms.hlx.live/enquiry  -->
+https://main--wefinance--wkndforms.hlx.live/enquiry-form 
 
 ## See also
 
