@@ -1,9 +1,10 @@
 ---
 title: Real time user monitoring for Edge Delivery Services Forms
-description: Real-time user monitoring for Edge Delivery Services Forms involves the ongoing tracking and analysis of user interactions with forms. 
+description: Real-time user monitoring for Edge Delivery Services Forms involves the ongoing tracking and analysis of user interactions with forms.
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
+exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 ---
 # Real time user monitoring for Edge Delivery Services Forms
 
@@ -57,4 +58,3 @@ You can assess visitor interactions with Adobe Experience Manager-driven sites u
     * **Good**: If the duration between user actions is 200 milliseconds (ms) or less.
     * **Okay**: If the duration is more than 200 ms but 500 ms or less.
     * **Bad**: If the duration exceeds 500 ms.
-
