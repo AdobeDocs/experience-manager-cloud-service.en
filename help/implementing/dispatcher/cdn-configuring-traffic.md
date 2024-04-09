@@ -116,6 +116,17 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
+            
+      - name: replace-html
+        when:
+          reqProperty: path
+          like: /mypath
+        actions:
+      - type: transform
+        reqProperty: path
+        op: replace
+        match: \.html$
+        replacement: ""
 
 ```
 
