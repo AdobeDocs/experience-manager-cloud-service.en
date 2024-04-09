@@ -41,9 +41,7 @@ AEM Sites can now be used as a content source for Edge Delivery Services. Author
 
   ![AEM Authoring](/help/edge/assets/universal_editor_edge_delivery_services.png)
   
-For more information, see the [documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) and watch the [AEM Gems - Getting started with AEM Authoring and Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
-
-
+For more information, see the [documentation](/help/edge/overview.md) and watch the [AEM Gems - Getting started with AEM Authoring and Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
 
 **Content Management OpenAPIs for Content Fragments and Models**
 Developers can now programmatically interact with Content Fragments and Content Fragment models and perform CruD operations on them using Content Management OpenAPIs. For more information, see [API documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
