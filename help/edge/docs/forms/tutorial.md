@@ -1,9 +1,9 @@
 ---
-title: Getting Started with AEM Forms Edge Delivery Services - Developer Tutorial 
+title: Getting Started with AEM Forms Edge Delivery Services - Developer Tutorial
 description: This tutorial helps get you up-and-running with a new Adobe Experience Manager Forms (AEM) project. In ten to twenty minutes, you will have created your own forms.s
 feature: Edge Delivery Services
+exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 ---
-
 # Getting Started - Developer Tutorial 
 
 In today's digital age, creating user-friendly forms is essential for any organization. AEM Forms Edge Delivery Services (EDS) lets you create forms using familiar tools like Google Docs and Microsoft Office. 
@@ -13,8 +13,6 @@ These forms submit data directly to a Microsoft Excel or Google Sheets file, ena
 AEM Forms provide a block, known as Adaptive Forms Block, to help you easily create forms to capture and store captured data. You can [create a new AEM project pre-configured with Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project). 
 
 This AEM Forms tutorial guides you through creating, previewing, and publishing your own custom form with a new Adobe Experience Manager (AEM) Forms project.
-
-
 
 ## Prerequisites
 
@@ -129,8 +127,7 @@ To copy the sample content to your own content folder and point your GitHub repo
 
         ```
 
-        For more information on managing files with within Microsoft SharePoint, refer to [How to use Adobe SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).  
- 
+        For more information on managing files with Microsoft SharePoint, see [How to use Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).  
 
       
     1. Commit the updated `fsatb.yaml` file, once you've updated the reference and everything looks good. If you encounter any build issues, see [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues). 
@@ -307,4 +304,3 @@ Ensure a smooth GitHub build process by addressing potential issues:
 ## See also
 
 {{see-more-forms-eds}}
-

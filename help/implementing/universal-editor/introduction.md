@@ -6,11 +6,7 @@ exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 
 # Universal Editor Introduction {#introduction}
 
-Learn how the Universal Editor enables what-you-see-is-what-you-get (WYSIWYG) editing of any headless and headful experience. Understand how it can help content authors deliver exceptional experiences, increase their content velocity, and how provides a state-of-the-art developer experience.
-
 The Universal Editor is a versatile visual editor that is part of Adobe Experience Manager Sites. It enables authors to do what-you-see-is-what-you-get (WYSIWYG) editing of any headless or headful experience. Understand how it can help content authors deliver exceptional experiences and how it offers unparalleled freedom for developers.
-
-{{universal-editor-status}}
 
 ## Background {#background}
 
@@ -78,12 +74,6 @@ A marketing practitioner wants to create content that is tailored to the layout 
 
 * The underlying job to accomplish is to convincingly connect with the readers.
 
-## Road Map {#road-map}
-
-It is important to note that the Universal Editor is a work in progress and some of the capabilities laid out in this document are a vision of the final editor and not necessarily representative of its current capabilities.
-
-Speak with your Adobe contact for details on the upcoming features planned for the Universal Editor.
-
 ## Additional Resources {#additional-resources}
 
 To learn more about the Universal Editor, see these documents.
@@ -94,3 +84,4 @@ To learn more about the Universal Editor, see these documents.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
 * [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.
+
