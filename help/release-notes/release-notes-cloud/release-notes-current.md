@@ -92,7 +92,7 @@ Assets Essentials now enables you to define blocklist that comprises words that 
 These services enable you to:
 
   * Work with multiple content sources on the same forms site and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or Adaptive Forms Editor.
-  * Deliver Digital Enrolment experiences that load and render quickly and continuously monitor your forms performance through real user monitoring (RUM).
+  * Deliver Digital Enrollment experiences that load and render quickly and continuously monitor your forms performance through real user monitoring (RUM).
   * Use plain HTML, modern CSS, and vanilla JavaScript to create exceptional experiences, avoiding the steep learning curve of a specific framework.
 
 
@@ -111,7 +111,7 @@ These services enable you to:
 
   * Implement powerful "when-then-else" logic for conditional execution.
   * Leverage modern JavaScript features like let and arrow functions (ES10 support).
-  * Validate or reset not only fields, but also entire panels and forms, expanding control over user interactions..
+  * Validate or reset not only fields, but also entire panels and forms, expanding control over user interactions.
 
   These advancements provide a more intuitive and powerful experience for crafting rules and custom functions within the visual rule editor.
 
@@ -130,7 +130,7 @@ These services enable you to:
   * The "Clear Signature Confirmation" dialog is also accessible through Tab navigation.
 
   **Enhanced Labels and Controls:**
-  * The label for the keyboard signature button is now clearer, using "aria-label" to announce functionality (e.g., "aria-label='Sign using Keyboard'").
+  * The label for the keyboard signature button is now clearer, using "aria-label" to announce functionality (such as "aria-label='Sign using Keyboard'").
   * Improved contrast ensures all controls within the scribble signature are easily distinguishable.
   * The OK/check mark button now visually indicates when it's inactive.
 
@@ -143,11 +143,11 @@ This update ensures a more inclusive experience for users with disabilities by i
 
 ### Early Adopter Program {#forms-early-adopter}
 
-* **[Submit an Adaptive Form to Adobe Workfront Fusion Scenario](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service offers an out-of-the-box options to effortlessly connect an Adaptive Form with Adobe Workfront. This simplifies the process of submitting an Adaptive Form to an Adobe Workfront scenario, allowing you trigger a Workfront Fusion scenario on submission of an Adaptive Form. 
+* **[Submit an Adaptive Form to Adobe Workfront Fusion Scenario](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service offers an out-of-the-box option to effortlessly connect an Adaptive Form with Adobe Workfront. This simplifies the process of submitting an Adaptive Form to an Adobe Workfront scenario, allowing you trigger a Workfront Fusion scenario on submission of an Adaptive Form. 
 
     <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Using the Adobe Workfront Fusion Connector, you can design workflows that are triggered automatically upon submission of an Adaptive Form. For instance, envision a scenario where a workflow is initiated to assign a specific individual the task of reviewing submitted data, allowing approval or rejection of an application based on the information captured through the adaptive form. This streamlined integration enhances efficiency and brings a new level of automation to your workflow processes.| 
 
-* **Reader Extension Service**: AEM Forms Communication APIs has brought Reader Extension Service to allows you to add functionalities like form filling and commenting to regular PDFs, making them interactive for users with the free Adobe Reader. 
+* **Reader Extension Service**: AEM Forms Communication APIs has brought Reader Extension Service to allow you to add functionalities like form filling and commenting to regular PDFs, making them interactive for users with the free Adobe Reader. 
 
 * [Right to left languages support](/help/forms/supporting-new-language-localization-core-components.md): Adaptive Forms built on Core Components can now be presented in a Right-to-Left (RTL) language like Arabic, Persian, and Urdu. The RTL languages are spoken by over 2 billion people globally. Using a form in RTL language allows you to extend the reach of your adaptive forms to cater to these diverse audiences and select into RTL markets. In certain regions, it's also a legal mandate to provide forms in the local language. By accommodating local languages, you not only open doors to a broader audience but also ensure compliance with relevant laws and regulations.
 
@@ -156,7 +156,6 @@ This update ensures a more inclusive experience for users with disabilities by i
 * **[Protect your documents with DocAssurance APIs (Part of Communication APIs)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: The DocAssurance APIs empower you to safeguard sensitive information by signing and encrypting the documents. Through encryption, the contents of a document are transformed into an unreadable format, ensuring that only authorized users can gain access. This fortified layer of protection not only shields valuable data from unauthorized eyes but also provides peace of mind. The Signature APIs let your organization protect the security and privacy of Adobe PDF documents that it distributes and receives. This service uses digital signatures and certification to ensure that only intended recipients can alter documents. 
 
      You can write to `aem-forms-ea@adobe.com` from your official email id to join the early adopter program and request access to the capability.
-
    
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -164,16 +163,16 @@ This update ensures a more inclusive experience for users with disabilities by i
 
 #### Traffic Filter Rules Alerts (Early Adopter Program) {#traffic-filter-rules-alerts-early-adopter}
 
-The recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which includes the optionally licensable Web Application Firewall (WAF) rules, lets you configure what traffic should be allowed or denied. 
+The recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which include the optionally licensable Web Application Firewall (WAF) rules, lets you configure what traffic should be allowed or denied. 
 
 Now you can email **<aemcs-cdn-config-adopter@adobe.com>** to join the early adopter program so you can be alerted whenever your traffic filter rules are triggered. Actions Center email notifications will keep you informed when certain traffic conditions occur so you can take appropriate measures. 
 
 #### CDN Configuration (Early Adopter Program) {#cdn-config-early-adopter}
 
-In addition to the recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which includes the optionally licensable Web Application Firewall (WAF) rules, there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>** to gain access to:
+In addition to the recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which include the optionally licensable Web Application Firewall (WAF) rules, there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>** to gain access to:
 
 * 301/302 client-side redirects
-* proxying requests at the edge to arbitrary origins (e.g., non-AEM applications)
+* proxying requests at the edge to arbitrary origins (such as non-AEM applications)
 * URL transformations
 * setting or modifying request or response headers
 * custom error pages when the CDN can't reach AEM
