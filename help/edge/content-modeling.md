@@ -17,7 +17,7 @@ Before you begin modeling content for your project, make sure you first read the
 
 * [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
 * [Markup, Sections, Blocks, and Auto Blocking](/help/edge/developer/markup-sections-blocks.md)
-<!--* [Block Collection](/help/edge/developer/block-collection.md)-->
+* [Block Collection](/help/edge/developer/block-collection.md)
 
 It is essential to understand those concepts in order to come up with a compelling content model that works in a content source-agnostic way. This document provides details about the mechanics implemented specifically for AEM authoring.
 
@@ -317,7 +317,7 @@ In the following example, a block accepts a list of linked icons as children, wh
 
 With the [mechanics of block structure explained,](#block-structure) it is possible to create a content model that maps content persisted in AEM one-to-one to the delivery tier. 
 
-Early in every project, a content model must be carefully considered for every block. It must be agnostic to the content source and authoring experience in order to allow authors to switch or combine them while reusing block implementations and styles. More details and general guidance can be found in [David's Model (take 2).](https://www.aem.live/docs/davidsmodel) <!--More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.-->
+Early in every project, a content model must be carefully considered for every block. It must be agnostic to the content source and authoring experience in order to allow authors to switch or combine them while reusing block implementations and styles. More details and general guidance can be found in [David's Model (take 2).](https://www.aem.live/docs/davidsmodel) More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.
 
 For AEM authoring with Edge Delivery Services, this raises the question how to serve a compelling semantic content model when the information is authored with forms composed of multiple fields instead of editing semantic markup in-context like rich text.
 
