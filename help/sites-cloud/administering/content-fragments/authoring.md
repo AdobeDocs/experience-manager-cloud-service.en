@@ -367,7 +367,7 @@ In the **Version history** tab of the right panel, details of the current, and p
 
 ### Compare Version {#compare-version}
 
-You can compare a previous version of the content fragment to its current version.
+For a content fragment you can compare a previous version against the current version.
 
 To compare a previous version to the current:
 
@@ -377,10 +377,12 @@ To compare a previous version to the current:
 
 ![Content Fragment Editor - Version History Compare](assets/cf-authoring-version-history-compare.png)
 
-This opens up a full-screen view and displays differences between the current version of the content and the selected previous version of the content fragment. You can use the drop-down to see the differences in the Main content and/or in the Variation content. Differences are indicated by color:
+This opens up a view that displays differences between the current version of the content, and the selected previous version of the content fragment. From the **Variations with changes** drop-down, you can select to see differences from the Main content and/or content from a Variation. 
 
-* green indicates content added (to the current version)
-* red indicates content removed (from the current version)
+Differences are indicated by color:
+
+* Green: indicates content added (to the current version)
+* Red: indicates content removed (from the current version)
 
 ![Content Fragment Editor - Version History Compare Versions](assets/cf-authoring-version-history-compare-versions.png)
 
@@ -394,7 +396,7 @@ To revert to a specific version:
 
 1. Select **Revert**.
 
-![Content Fragment Editor - Version History Revert](assets/cf-authoring-version-history-revert_updated.png)
+![Content Fragment Editor - Version History Revert](assets/cf-authoring-version-history-revert.png)
 
 ## View the Language Copies {#view-language-copies}
 
