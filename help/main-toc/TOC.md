@@ -786,7 +786,7 @@ user-guide-title: AEM as a Cloud Service
 + AEM with Edge Delivery Services {#edge-delivery}
   + [AEM and Edge Delivery Services Overview](/help/edge/overview.md)
   + [Using Edge Delivery Services with AEM](/help/edge/using.md)
-  + AEM-Based Authoring with Edge Delivery Services {#aem-authoring}
+  + AEM-Based Authoring {#aem-authoring}
     + [Authoring Content for Edge Delivery](/help/edge/authoring.md)
     + [Publishing Content for Edge Delivery](/help/edge/publishing.md)
     + [Developer Getting Started Guide](/help/edge/edge-dev-getting-started.md)
@@ -794,14 +794,14 @@ user-guide-title: AEM as a Cloud Service
     + [Creating Blocks](/help/edge/create-block.md)
     + [Tabular Data and Spreadheets](/help/edge/tabular-data.md)
     + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
-  + Document-Based Authoring with Edge Delivery {#document-authoring}
+  + Document-Based Authoring {#document-authoring}
     + [Authoring](/help/edge/docs/authoring.md)
     + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
     + [Placeholders](/help/edge/docs/placeholders.md)
     + [Sitemap](/help/edge/developer/sitemap.md)
     + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
     + [Slack Bot](/help/edge/docs/slack.md)
-  + Building Edge Delivery Applications {#build}
+  + Building Applications {#build}
     + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
     + [Anatomy of a Project](/help/edge/developer/anatomy-of-a-franklin-project.md)
     + [Block Collection](/help/edge/developer/block-collection.md)
@@ -813,14 +813,14 @@ user-guide-title: AEM as a Cloud Service
     + [Favicon](/help/edge/developer/favicon.md)
     + [Custom Headers](/help/edge/docs/custom-headers.md)
     + [Best Practices for Developers](/help/edge/docs/dev-collab-and-good-practices.md)
-  + Launching Edge Delivery Applications {#launch}
+  + Launching Applications {#launch}
     + [Go Live Checklist](/help/edge/docs/go-live-checklist.md)
     + [Push Invalidation](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
     + [Cloudflare Worker Setup](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
     + [Akamai Setup](/help/edge/docs/byo-cdn-akamai-setup.md)
     + [Fastly Setup](/help/edge/docs/byo-cdn-fastly-setup.md)
     + [Redirects](/help/edge/docs/redirects.md)
-  + Building Edge Delivery Forms {#build-forms}
+  + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
     + Get Started {#getting-started-eds-forms}
       + [Getting Started](/help/edge/docs/forms/tutorial.md)
@@ -841,7 +841,7 @@ user-guide-title: AEM as a Cloud Service
       + [Real time user monitoring for forms](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
     + References {#forms-references}
       + [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
-  + Resources for Edge Delivery {#resources}
+  + Edge Delivery Resources {#resources}
     + Sidekick {#sidekick}
       + [Using Sidekick](/help/edge/docs/sidekick.md)
       + [Installing Extension](/help/edge/docs/sidekick-extension.md)
