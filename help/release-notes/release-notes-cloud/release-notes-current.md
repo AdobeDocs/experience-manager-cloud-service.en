@@ -125,7 +125,9 @@ These services enable you to:
 
   These advancements provide a more intuitive and powerful experience for crafting rules and custom functions within the visual rule editor.
 
-* **Create multiple versions of an Adaptive Form**: You can now easily manage variations of existing forms. This simplifies version control, enables targeted content delivery for different audiences, and facilitates A/B testing for form optimization, all within a single, streamlined workflow.
+* **Create multiple versions of an Adaptive Form**: You can now easily manage variations of existing forms. This simplifies version control and facilitates comparison for form optimization, all within a single, streamlined workflow.
+
+* **Compare Adaptive Form**: You can now easily compare two forms to dentify differences between two forms. It facilitates smooth collaboration by enabling team members to compare revisions and discuss changes efficiently.
 
 * **Accessibility Enhancements for Scribble Signature Component**: This update brings significant accessibility improvements to the Scribble Signature component:
 
