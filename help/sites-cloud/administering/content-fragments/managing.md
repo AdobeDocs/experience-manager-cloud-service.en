@@ -439,16 +439,20 @@ The Filter panel offers:
 
 * a selection of predicates; 
   * including content fragment models, localization, tags, status fields, among others
-  * excluding content fragments stored in sub-folders
   * one, or more, predicates can be selected and combined to create the filter
+* **Exclude sub-folder items**, giving you the option of excluding content fragments stored in sub-folders
 * the opportunity to **Save** your configuration
 * the option to retrieve a saved search filter for reuse
 
  Once selected, the **Filtering by** options are shown (under the Search box). They can be deselected from there. For example:
 
-![Content Fragments console - Filtering](assets/cf-managing-console-filter-updated.png)
+* with sub-folder items
 
-![Content Fragments console - excluding sub-folder items](assets/cf-managing-console-filter-exclude-sub-folder.png)
+  ![Content Fragments console - Filtering](assets/cf-managing-console-filter.png)
+
+* excluding sub-folder items
+
+  ![Content Fragments console - excluding sub-folder items](assets/cf-managing-console-filter-exclude-sub-folder.png)
 
 ### Fast Filtering {#fast-filtering}
 
