@@ -43,6 +43,13 @@ AEM Sites can now be used as a content source for Edge Delivery Services. Author
   
 For more information, see the [documentation](/help/edge/overview.md) and watch the [AEM Gems - Getting started with AEM Authoring and Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
 
+**Universal Editor for Headless Implementations**
+The [Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) enables also decoupled web applications to harness the same intuitive in-context WYSIWYG authoring previously exclusive to traditional sites. Content creators can now visually compose layouts using Content Fragments with the same ease as components within pages.
+
+What sets the Universal Editor apart is its adaptability to diverse web architectures, accommodating both server- and client-side rendering, remaining framework-agnostic, and eliminating the necessity for AEM hosting. Integrating existing web applications with the Universal Editor for content editing is straightforward, primarily requiring developers to incorporate specific data attributes into their markup.
+
+With that, the Universal Editor ensures a consistent editing experience, regardless of content structure or underlying technology stack.
+
 **Content Management OpenAPIs for Content Fragments and Models**
 Developers can now programmatically interact with Content Fragments and Content Fragment models and perform CruD operations on them using Content Management OpenAPIs. For more information, see [API documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 
