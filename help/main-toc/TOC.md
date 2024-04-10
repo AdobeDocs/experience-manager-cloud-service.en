@@ -804,6 +804,7 @@ user-guide-title: AEM as a Cloud Service
   + Building Edge Delivery Applications {#build}
     + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
     + [Anatomy of a Project](/help/edge/developer/anatomy-of-a-franklin-project.md)
+    + [Block Collection](/help/edge/developer/block-collection.md)
     + [Spreadsheets](/help/edge/developer/spreadsheets.md)
     + [Forms](/help/edge/developer/forms.md)
     + [Indexing](/help/edge/developer/indexing.md)
@@ -1160,8 +1161,8 @@ user-guide-title: AEM as a Cloud Service
   + [Additional Publish Regions](/help/operations/additional-publish-regions.md)
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
-   + [Backup and Restore](/help/operations/backup.md)
-   + [Self-Service Restore](/help/operations/restore.md)
+  + [Backup and Restore](/help/operations/backup.md)
+  + [Self-Service Restore](/help/operations/restore.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
   + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)  
@@ -1174,9 +1175,3 @@ user-guide-title: AEM as a Cloud Service
   + Accessibility {#accessibility}
     + [AEM as a Cloud Service and the Web Accessibility Guidelines](/help/compliance/accessibility/web-accessibility.md)
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
-
-
-<!--
-Temporarily remove:
-    + [Block Collection](/help/edge/developer/block-collection.md)
--->
