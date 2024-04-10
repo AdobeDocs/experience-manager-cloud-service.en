@@ -70,7 +70,7 @@ Create and register the renderer class in a self-executing anonymous function. T
 ```javascript
 ;(function() {
 
-    var SurferinfoRenderer = new Class ({
+    var SurferinfoRenderer = new Class({
         extend: ContextHub.UI.BaseModuleRenderer,
 
         defaultConfig: {

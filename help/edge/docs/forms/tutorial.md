@@ -1,25 +1,18 @@
 ---
-title: Getting Started with AEM Forms Edge Delivery Services - Developer Tutorial 
+title: Getting Started with AEM Forms Edge Delivery Services - Developer Tutorial
 description: This tutorial helps get you up-and-running with a new Adobe Experience Manager Forms (AEM) project. In ten to twenty minutes, you will have created your own forms.s
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
+exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 ---
-
 # Getting Started - Developer Tutorial 
 
 In today's digital age, creating user-friendly forms is essential for any organization. AEM Forms Edge Delivery Services (EDS) lets you create forms using familiar tools like Google Docs and Microsoft Office. 
 
-These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft Sharepoint to easily process submitted data or to initiate an existing business workflow.
+These forms submit data directly to a Microsoft Excel or Google Sheets file, enabling you to use vibrant ecosystem and robust APIs of Google Sheets, Microsoft Excel, and Microsoft SharePoint to easily process submitted data or to initiate an existing business workflow.
 
-AEM Forms provide a block, known as Adaptive Forms Block, to help you easily create forms to capture and store captured data. You can create a new AEM project pre-equipped with Adaptive Forms Block or add the Adaptive Forms Block to an existing AEM project. 
+AEM Forms provide a block, known as Adaptive Forms Block, to help you easily create forms to capture and store captured data. You can [create a new AEM project pre-configured with Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project). 
 
-This AEM Forms tutorial guides you through creating, previewing, and publishing your own custom form with a new Adobe Experience Manager (AEM) Forms project. You will also learn to add Adaptive Forms Block to an existing AEM project.  
-
-* **[Create a new AEM project pre-equipped with Adaptive Forms Block](#create-a-new-eds-project-pre-equipped-with-adaptive-forms-block)**  
-* **[Add Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-an-existing-eds-project)** 
-
-
+This AEM Forms tutorial guides you through creating, previewing, and publishing your own custom form with a new Adobe Experience Manager (AEM) Forms project.
 
 ## Prerequisites
 
@@ -31,7 +24,7 @@ This AEM Forms tutorial guides you through creating, previewing, and publishing 
 **Heads up!** This tutorial uses macOS, Chrome, and Visual Studio Code. While the steps can be adapted for other setups, the screenshots and specific UI elements might differ based on your chosen operating system, browser, and code editor.
 
 
-## Create a new AEM project pre-equipped with Adaptive Forms Block
+## Create a new AEM project pre-configured with Adaptive Forms Block
 
 The AEM Forms Boilerplate template gets you started quickly with an AEM project pre-configured with the Adaptive Forms Block. It's the quickest and easiest way to follow AEM best practices and jump right into building your forms.
 
@@ -73,11 +66,11 @@ The AEM Forms Boilerplate template gets you started quickly with an AEM project 
 
 ### Link your own content source
 
-Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
+Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
 ![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)
 
-To copy the sample content to your own content folder and point youur GitHub repository to your own content folder:  
+To copy the sample content to your own content folder and point your GitHub repository to your own content folder:  
 
 1. Create a new folder specifically for your AEM content in Google Drive or Microsoft SharePoint. This document uses a folder created on Microsoft SharePoint.
 
@@ -100,7 +93,7 @@ To copy the sample content to your own content folder and point youur GitHub rep
 
         ![Download Sample Content](/help/edge/assets/download-sample-content.png)
 
-        The `index`, `nav`, and `footer` files  define the basic layout of your pages and rarely change throughout a project. They also have a specific structure that's different from most other content files. By examining these files, you'll get a feel for how content is organized in AEM Projects.
+        The `nav` and `footer` files  define the basic layout of your pages and rarely change throughout a project. They also have a specific structure that's different from most other content files. By examining these files, you'll get a feel for how content is organized in AEM Projects.
         
 
     1. Upload these files to Microsoft SharePoint or Google Drive folder. 
@@ -122,7 +115,7 @@ To copy the sample content to your own content folder and point youur GitHub rep
 
         ```HTML
 
-        https://<tenant>.sharepoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+        https://<tenant>.SharePoint.com/sites/<sp-site>/Shared%20Documents/<folder-name>
 
         ```
 
@@ -130,12 +123,11 @@ To copy the sample content to your own content folder and point youur GitHub rep
 
         ```HTML
 
-        https://adobe.sharepoint.com/sites/wkndforms/Shared%20Documents/wefinance
+        https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
 
         ```
 
-        For more information on managing files with within Microsoft SharePoint, refer to [How to use Adobe Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).  
- 
+        For more information on managing files with Microsoft SharePoint, see [How to use Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).  
 
       
     1. Commit the updated `fsatb.yaml` file, once you've updated the reference and everything looks good. If you encounter any build issues, see [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues). 
@@ -146,7 +138,7 @@ To copy the sample content to your own content folder and point youur GitHub rep
 
         This connects your content folder to your website. After updating the reference, you might experience "404 Not Found" errors initially. This is because your content is not been previewed yet. The next section explains how to start authoring and previewing your content.
 
-        ![Commit updated fsatab.yaml file](/help/edge/assets/aem-forms-project-folder-error.png)
+
 
 ### Preview and publish your content
 
@@ -154,7 +146,7 @@ After completing the last step, your new content source isn't empty, but it won'
 
 To preview unpublished content: 
 
-1. Install the Chrome extension called [ AEM Sidekick](https://chrome.google.com/webstore/detail/helix-sidekick-beta/ccfggkjabjahcjoljmgmklhpaccedipo). 
+1. Install the Chrome extension called [AEM Sidekick](https://chrome.google.com/webstore/detail/helix-sidekick-beta/ccfggkjabjahcjoljmgmklhpaccedipo). 
 
     ![Install AEM SideKick](/help/edge/assets/install-aem-sidekick.png)
 
@@ -193,8 +185,6 @@ To preview unpublished content:
     `https://<branch>--<repo>--<owner>.hlx.page/enquiry` URL. 
 
     For example, if your project's repository is named "wefinance", it's located under the account owner "wkndforms", and you're using the "main" branch, the URL is: 
-    
-    
 
     [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).  
 
@@ -204,9 +194,22 @@ The sample content includes an "enquiry" sheet that serves as a template for the
 
 ![Enquiry form](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-Let's start with updating a field label. Open the 'enquiry' sheet for editing, change the label of submit button to `Let's Chat`, and use sidekick to publish it. 
+Let's start with updating a field label. Open the 'enquiry' sheet for editing, change the label of submit button to `Let's Chat` and use AEM Sidekick to preview and publish the file. 
 
  ![Enquiry form](/help/edge/assets/enquiry-form-preview-publish.png)
+
+ When you preview or publish the file, a JSON version of the file appears in a new tab. Copy the preview (.hlx.page) or publish (.hlx.live) URL of the file. 
+
+ ![JSON of the form spreadsheet](/help/edge/assets//preview-and-publish-enquiry-form.png)
+
+ Open the `enquiry` file, and replace the URL in the form block with URL of file copied in the previous step. Ensure that the URL is a hyper link. 
+
+ ![Enquiry file with the .json URL of URL of spreadsheet](/help/edge/assets/enquiry-doc-to-embed-form.png)
+
+ Use AEM Sidekick to preview and publish the enquiry document. 
+
+![Enquiry file with the .json URL of URL of spreadsheet](/help/edge/assets/preview-and-publish-enquiry-document.png)
+
 
 To preview the updated enquiry form go to the following URL:
     
@@ -268,9 +271,16 @@ Congratulations! You've successfully set up your local development environment a
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-If you have an existing AEM Project, you can integrate the Adaptive Forms Block into your current project to get started on form creation. To Integrate:
+If you have an existing AEM Project, you can integrate the Adaptive Forms Block into your current project to get started on form creation. 
 
-1. Clone the Adaptive Forms Block repository: https://github.com/adobe-rnd/aem-boilerplate-forms to your computer. 
+>[!NOTE]
+>
+>
+> This step applies to projects built with the [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). If you created your AEM project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
+
+To Integrate:
+
+1. Clone the Adaptive Forms Block repository: [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) to your computer. 
 
 1. Inside the downloaded folder, find the `blocks/form` folder. Copy this folder. Now, navigate to your AEM project's local `blocks` folder and paste the copied form folder here.
 
@@ -293,7 +303,4 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 ## See also
 
-* [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Submit forms directly to your Microsoft Excel or Google Sheets](/help/edge/docs/forms/submit-forms.md)
-* [Change look of your forms](/help/edge/docs/forms/style-theme-forms.md)
-
+{{see-more-forms-eds}}
