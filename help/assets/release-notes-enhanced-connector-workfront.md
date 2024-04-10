@@ -7,14 +7,13 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 
 The following section outlines the general Release Notes for [!DNL Workfront for Experience Manager enhanced connector].
 
-The release date for the latest version 1.9.18 of [!DNL Workfront for Experience Manager enhanced connector] is March 8, 2024.
+The release date for the latest version 1.9.19 of [!DNL Workfront for Experience Manager enhanced connector] is April 12, 2024.
 
 ## Release highlights {#release-highlights}
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fix:
 
-* Processing multi-asset uploads from Workfront encounters issues.
-* Not adding closing quotes when using Workfront to search for folders in Experience Manager results in `SERVER_ERROR`.
+
 
 >[!NOTE]
 >
@@ -32,6 +31,11 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** drop-down list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** drop-down list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** drop-down list and the **[!UICONTROL Document Actions]** drop-down list available in the new Workfront experience.
 
 ## Previous releases {#previous-releases}
+
+### March 2024 release {#march-2023-release}
+
+* Processing multi-asset uploads from Workfront encounters issues.
+* Not adding closing quotes when using Workfront to search for folders in Experience Manager results in `SERVER_ERROR`.
 
 ### February 2024 release {#february-2023-release}
 
