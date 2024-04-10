@@ -41,7 +41,7 @@ following the `cfg.json` OSGi configuration format.
 
 >[!NOTE]
 >
->The OSGi configs are not stored under /apps like typical AEM instances in Cloud they are stored in an external location. Check in Cloud Manager [Developer Console](/help/cloud-service/debugging/cloud-service/developer-console#configurations) to view the OSGi configs.
+>The OSGi configs are not stored under /apps like typical AEM instances in Cloud they are stored in an external location. Check in Cloud Manager [Developer Console](/help/cloud-service/debugging/cloud-service/developer-console.md#configurations) to view the OSGi configs.
 
 ## Runmode Resolution {#runmode-resolution}
 
