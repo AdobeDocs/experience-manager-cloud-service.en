@@ -19,7 +19,7 @@ None.
 
 ### Fixed Issues {#fixed-issues-15860}
 
-* To add
+* Fixes regression for displaying Launches console when a launch refers toa deleted/moved page
 
 ### Known Issues {#known-issues-15860}
 
