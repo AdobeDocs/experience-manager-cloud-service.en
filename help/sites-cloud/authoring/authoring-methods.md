@@ -47,9 +47,9 @@ If you use Edge Delivery services, you can choose to author your content as conv
 
 ![Editing document-based content](assets/authoring-methods-document.jpg)
 
-With Document-based Authoring , authors can use the tools they already know and still benefit from the speed and performance of AEM's Edge Delivery Services to publish their content. Document-based Authoring  requires no use of the AEM console.
+With document-based authoring, authors can use the tools they already know and still benefit from the speed and performance of AEM's Edge Delivery Services to publish their content. Document-based authoring requires no use of the AEM console.
 
-To learn more about Document-based Authoring , please see the document [Authoring Content for Edge Delivery Services.](/help/edge/authoring.md)
+To learn more about document-based authoring, please see the document [Authoring and Publishing Content.](/help/edge/docs/authoring.md)
 
 ## AEM Content Fragment Editor {#cf-editor}
 

@@ -3,6 +3,7 @@ title: Content Modeling for AEM authoring with Edge Delivery Services Projects
 description: Learn how content modeling works for AEM authoring with Edge Delivery Services projects and how to model your own content.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 ---
+
 # Content Modeling for AEM authoring with Edge Delivery Services Projects {#content-modeling}
 
 Learn how content modeling works for AEM authoring with Edge Delivery Services projects and how to model your own content.
@@ -11,7 +12,7 @@ Learn how content modeling works for AEM authoring with Edge Delivery Services p
 
 ## Prerequisites {#prerequisites}
 
-Projects using AEM authoring with Edge Delivery Services inherit the majority of the mechanics of any other Edge Delivery Services project, independent of the content source or [authoring method.](/help/edge/authoring.md)
+Projects using AEM authoring with Edge Delivery Services inherit the majority of the mechanics of any other Edge Delivery Services project, independent of the content source or [authoring method.](/help/edge/aem-authoring/authoring.md)
 
 Before you begin modeling content for your project, make sure you first read the following documentation.
 
@@ -588,7 +589,7 @@ The following example defines a tab section, which can be used to create a tabs 
 
 ## Page Metadata {#page-metadata}
 
-Documents can have a page [metadata block,](/help/edge/authoring.md#metadata--seo) which is used to define which `<meta>` elements are rendered in the `<head>` of a page. The page properties of pages in AEM as a Cloud Service map to those that are available out-of-the-box for Edge Delivery Services, like `title`, `description`, `keywords`, etc.
+Documents can have a page [metadata block,](https://www.aem.live/developer/block-collection/metadata) which is used to define which `<meta>` elements are rendered in the `<head>` of a page. The page properties of pages in AEM as a Cloud Service map to those that are available out-of-the-box for Edge Delivery Services, like `title`, `description`, `keywords`, etc.
 
 Before further exploring how to define your own metadata, please review the following documents to understand the concept of page metadata first.
 
