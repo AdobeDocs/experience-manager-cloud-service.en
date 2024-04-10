@@ -37,6 +37,7 @@ Have a look at the March 2024 Release Overview video for a summary of the featur
 ### New features in [!DNL Experience Manager Sites] {#sites-features}
 
 **AEM Authoring for Edge Delivery Services**
+
 AEM Sites can now be used as a content source for Edge Delivery Services. Authors manage their websites in AEM using the new Universal Editor with in-context wysiwyg authoring. This enables companies to build fast high performance webpages with Edge Delivery Services while leveraging AEM's powerful capabilites for content management.
 
   ![AEM Authoring](/help/edge/assets/universal_editor_edge_delivery_services.png)
@@ -44,6 +45,7 @@ AEM Sites can now be used as a content source for Edge Delivery Services. Author
 For more information, see the [documentation](/help/edge/overview.md) and watch the [AEM Gems - Getting started with AEM Authoring and Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
 
 **Universal Editor for Headless Implementations**
+
 The [Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) enables also decoupled web applications to harness the same intuitive in-context WYSIWYG authoring previously exclusive to traditional sites. Content creators can now visually compose layouts using Content Fragments with the same ease as components within pages.
 
 What sets the Universal Editor apart is its adaptability to diverse web architectures, accommodating both server- and client-side rendering, remaining framework-agnostic, and eliminating the necessity for AEM hosting. Integrating existing web applications with the Universal Editor for content editing is straightforward, primarily requiring developers to incorporate specific data attributes into their markup.
@@ -51,20 +53,25 @@ What sets the Universal Editor apart is its adaptability to diverse web architec
 With that, the Universal Editor ensures a consistent editing experience, regardless of content structure or underlying technology stack.
 
 **Content Management OpenAPIs for Content Fragments and Models**
+
 Developers can now programmatically interact with Content Fragments and Content Fragment models and perform CruD operations on them using Content Management OpenAPIs. For more information, see [API documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 
 **Multisite Management support for Experience Fragments**
+
 Multisite Management support has been extended for folder structures that store experience fragments, allowing users to rollout a complete content structure with experience fragments.
 
 **Compare Content Fragment Versions**
+
 The new Content Fragment Editor now allows content authors to compare and view differences between the current version of a content fragment and a previous version. 
 
 ### Early Adopter Program {#sites-early-adopter}
 
 **Generate Variations**
+
 Leverage GenAI through AEM's new feature, [generate variations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations), accessible now in Cloud Service. Generate variations helps you generate and scale content creation through the use of generative AI. Reach out to your Adobe account team for consideration in the program.
 
 **Asset browsing in Content Fragment Console**
+
 Content authors can now browse, view, and take actions on images, and other assets without having to leave the Content Fragment Console. 
 
  ![Asset Browsing](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
