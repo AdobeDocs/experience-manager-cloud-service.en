@@ -48,7 +48,7 @@ Details of the blocks can then be configured in the Properties rail.
 
 For details on how to author using the Universal Editor, please see the document [Authoring Content with the Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-Please see the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) to learn how to start your own project to author with AEM and Edge Delivery Services.
+Please see the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) to learn how to start your own project to author with AEM and Edge Delivery Services.
 
 ## How to get started {#how-to-get-started}
 

@@ -25,7 +25,7 @@ AEM offers two different content editors and the choice of which to use depends 
 * **Universal Editor** - This should be the default choice for new sites.
 * **AEM Page Editor** - This should be chosen for an existing AEM Sites migration to Edge Delivery Services.
 
-This guide focuses on AEM projects on Edge Delivery Services using the Universal Editor. See the document [Developing for Edge Delivery Services](/help/edge/developing.md) for more details on choosing the right editor and the migration of existing AEM sites to Edge Delivery Services.
+This guide focuses on AEM projects on Edge Delivery Services using the Universal Editor. See the document [Using Edge Delivery Services with AEM](/help/edge/using.md) for more details on choosing the right editor and the migration of existing AEM sites to Edge Delivery Services.
 
 ## Core Concepts when Developing for Edge Delivery Services {#core-concepts}
 
@@ -187,4 +187,4 @@ Once you are finished editing your new site using the Universal Editor, you can 
 
 Now that you have a working AEM wuthoring with Edge Delivery Services project, you can begin creating and styling your own blocks.
 
-Please see the guide [Creating Blocks Instrumented for use with the Universal Editor](/help/edge/create-block.md) for more information.
+Please see the guide [Creating Blocks Instrumented for use with the Universal Editor](/help/edge/aem-authoring/create-block.md) for more information.

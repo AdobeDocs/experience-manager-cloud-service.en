@@ -18,9 +18,9 @@ This guide necessarily requires existing knowledge of AEM authoring with Edge De
 You have completed the [Edge Delivery Service tutorial.](/help/edge/developer/tutorial.md)
 * You have access to an [AEM Cloud Service sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
 * You have [enabled the Universal Editor on the same sandbox environment.](/help/implementing/universal-editor/getting-started.md)
-* You have completed the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) guide.
+* You have completed the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) guide.
 
-This guide builds on the work done in the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) guide.
+This guide builds on the work done in the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) guide.
 
 ## Adding a New Block to Your Project {#add-block}
 
@@ -38,7 +38,7 @@ The following quote block example follows this approach.
 
 ### Create Block Definition and Model {#create-block-model}
 
-1. Clone the GitHub project locally that you created in the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) guide and open it in an editor of your choice.
+1. Clone the GitHub project locally that you created in the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) guide and open it in an editor of your choice.
 
    * Microsoft Code is used here for illustrative purposes.
 
@@ -70,7 +70,7 @@ The following quote block example follows this approach.
 
 1. Edit the `component-models.json` file at the root of the project and add the following [model definition](/help/implementing/universal-editor/field-types.md#model-structure) for your new quote block and save the file.
 
-   * Please see the document [Content Modeling for AEM authoring with Edge Delivery Services Projects](/help/edge/content-modeling.md) for more information about what is important to consider when creating content models.
+   * Please see the document [Content Modeling for AEM authoring with Edge Delivery Services Projects](/help/edge/aem-authoring/content-modeling.md) for more information about what is important to consider when creating content models.
 
    ```json
    {
@@ -124,7 +124,7 @@ The following quote block example follows this approach.
 
 Now that your basic quote block is defined and committed to the sample project, you can add a quote block to an existing page.
 
-1. In a browser, sign into AEM as a Cloud Service. [Using the Sites console,](/help/sites-cloud/authoring/basic-handling.md) navigate to the site that you created in the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) guide and select a page.
+1. In a browser, sign into AEM as a Cloud Service. [Using the Sites console,](/help/sites-cloud/authoring/basic-handling.md) navigate to the site that you created in the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) guide and select a page.
 
    * In this case, `index` is used for illustrative purposes.
 

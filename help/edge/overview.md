@@ -17,15 +17,15 @@ By using Edge Delivery Services, you can:
 
 ## Edge Delivery Services {#edge-delivery-services}
 
-Edge Delivery services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. You can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) with [Universal Editor authoring](/help/implementing/universal-editor/introduction.md) as well as [Document-based Authoring .](https://www.aem.live/docs/authoring)
+Edge Delivery services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. You can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) and AEM-based authroing using the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) as well as [document-based authoring.](https://www.aem.live/docs/authoring)
 
-The following diagram illustrates how you can edit content in Microsoft Word (document-based editing) and publish to Edge Delivery Services. It also shows the AEM publishing method using the Universal Editor.
+The following diagram illustrates how you can edit content in Microsoft Word (document-based authoring) and publish to Edge Delivery Services. It also shows the AEM-based editing using the Universal Editor.
 
 ![Edge Delivery Architecture](assets/AEM-with-EDS-publishing-simple2.png)
 
 You can use content directly from Microsoft Word or Google Docs such that those sources become pages on your website. Furthermore, headings, lists, images, font elements can all be transferred from the initial source into the website. The new content is added instantly without a rebuild process.
 
-Edge Delivery Services uses GitHub so you can manage and deploy code directly from your GitHub repository. For example, you can write content in either Google Docs or Microsoft Word and the functionality of your site can be developed by using CSS and JavaScript in GitHub. When you are ready, you can use the Sidekick browser extension to preview and publish content updates.
+Edge Delivery Services uses GitHub so you can manage and deploy code directly from your GitHub repository. For example, you write content in either Google Docs or Microsoft Word and the functionality of your site can be developed by using CSS and JavaScript in GitHub. When you are ready, you use the Sidekick browser extension to preview and publish content updates.
 
 Further reading in the Edge Delivery Services documentation:
 
@@ -37,13 +37,13 @@ Further reading in the Edge Delivery Services documentation:
 
 Edge Delivery Services are part of Adobe Experience Manager and as such Edge Delivery Services and AEM sites can co-exist on the same domain, which is a common use case for larger websites. Additionally, content from Edge Delivery Services can easily be consumed by your AEM Sites pages and vice-versa.
 
-Please see the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) to learn how to start your own project to author with AEM and Edge Delivery Services.
+Please see the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) to learn how to start your own project to author with AEM and Edge Delivery Services.
 
 You can also use Edge Delivery Services with [Adobe Target,](https://www.aem.live/developer/target-integration) [Real User Monitoring (RUM)](https://www.aem.live/developer/rum) to diagnose usage and performance of your sites, and [Launch.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
 ## Getting Started with Edge Delivery Services {#getting-started}
 
-It is easy to get started using Edge Delivery Services. Get started by following the [Getting Started - Developer Tutorial.](https://www.aem.live/developer/tutorial)
+It is easy to get started using Edge Delivery Services by following the [Getting Started - Developer Tutorial.](https://www.aem.live/developer/tutorial)
 
 ## Getting Help from Adobe {#getting-help}
 
@@ -70,11 +70,11 @@ You can engage with Adobe product teams via your provisioned product collaborati
 
 ### Logging a Support Ticket {#support-ticket}
 
-If a product issue needs additional investigation and troubleshooting and must meet response SLTs, you can submit a support ticket following this process via the Admin Console:
+If a product issue needs additional investigation and troubleshooting and must meet response SLTs, you can submit a support ticket following this process using the Admin Console:
 
-1. [Following the standard support process,](https://experienceleague.adobe.com/?support-tab=home#support) create a ticket.
+1. [Following the standard support process,](https://experienceleague.adobe.com/?support-tab=home#support) and create a ticket.
 1. Add **Edge Delivery** in the title of the ticket.
-1. In the description, provide the following details:
+1. In the description, provide the following details in addition to the problem description:
 
     * URL of the live website. For example: `www.mydomain.com`.
     * URL of the origin website (`.hlx` URL).
