@@ -13,16 +13,15 @@ The release date for the latest version 1.9.19 of [!DNL Workfront for Experience
 
 The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fix:
 
-
+* The lack of closure in HTTP clients is causing out-of-memory issues.
 
 >[!NOTE]
 >
 >AEM 6.4 has reached the end of extended support. See our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/?lang=en).
 
-
 >[!IMPORTANT]
 >
->Adobe recommends you [upgrade to the latest 1.9.18 version](/help/assets/workfront-connector-install.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recommends you [upgrade to the latest 1.9.19 version](/help/assets/workfront-connector-install.md) of the [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Known Issues {#known-issues}
 
