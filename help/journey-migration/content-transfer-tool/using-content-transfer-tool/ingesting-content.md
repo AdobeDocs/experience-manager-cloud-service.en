@@ -55,7 +55,7 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
    >[!IMPORTANT]
    > You can initiate an ingestion to the destination environment only if you belong to the local **AEM administrators** group on the destination Cloud Service author service. If you are unable to start an ingestion, see [Unable to Start Ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) for more details.
 
-1. Once the ingestion choices have been selected, an estimate of the duration of the ingestion will be shown. This estimate is based on many ingestions that have been run.
+1. Once ingestion choices have been selected, an estimate of its duration will be shown. This is a best-effort estimate based on historical data of similar ingestions.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_estimate"
