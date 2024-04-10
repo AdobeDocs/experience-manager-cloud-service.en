@@ -132,7 +132,7 @@ data:
 
 **Actions**
 
-Explained in the table below are the available actions.
+Explained in the table below are the available actions. 
 
 | Name      | Properties               | Meaning     |
 |-----------|--------------------------|-------------|
