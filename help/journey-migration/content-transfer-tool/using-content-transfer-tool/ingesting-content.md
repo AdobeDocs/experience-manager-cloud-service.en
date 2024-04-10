@@ -57,14 +57,14 @@ Follow the steps below to ingest your migration set using the Cloud Acceleration
 
 1. Once ingestion choices have been selected, an estimate of its duration will be shown. This is a best-effort estimate based on historical data of similar ingestions.
 
+   * This estimate is only calculated and shown if the 'Check Size' values of the extraction were collected and are available.
+   * This value is an estimate and, although intelligently calculated, should not be considered exact. Various factors can change the actual duration.
+   * While the ingestion is running, this value will also be available in the durations dialog, accessed through the "**View durations**" action of the ingestion.
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_estimate"
 >title="Ingestion Duration Estimate"
 >abstract="An approximate duration of a particular ingestion can be displayed to provide a general sense as to how long it will take. Limitations to its accuracy do exist."
-
- * This estimate is only calculated and shown if the 'Check Size' values of the extraction were collected and are available.
- * This value is an estimate and, although intelligently calculated, should not be considered exact. Various factors can change the actual duration.
- * While the ingestion is running, this value will also be available in the durations dialog, accessed through the "**View durations**" action of the ingestion.
 
    ![image](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
