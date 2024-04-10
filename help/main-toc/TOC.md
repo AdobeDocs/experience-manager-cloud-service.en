@@ -791,7 +791,7 @@ user-guide-title: AEM as a Cloud Service
     + [Publishing Content for Edge Delivery](/help/edge/aem-authoring/publishing.md)
     + [Developer Getting Started Guide](/help/edge/aem-authoring/edge-dev-getting-started.md)
     + [Creating Blocks](/help/edge/aem-authoring/create-block.md)
-    + [Content Modeling](/help/aem-authoring/edge/aem-authoring/content-modeling.md)
+    + [Content Modeling](/help/edge/aem-authoring/content-modeling.md)
     + [Tabular Data and Spreadheets](/help/edge/aem-authoring/tabular-data.md)
     + [Existing Projects and Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
   + Document-Based Authoring {#document-authoring}
