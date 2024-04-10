@@ -46,11 +46,11 @@ For more information, see the [documentation](/help/edge/overview.md) and watch 
 
 **Universal Editor for Headless Implementations**
 
-The [Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) enables also decoupled web applications to harness the same intuitive in-context WYSIWYG authoring previously exclusive to traditional sites. Content creators can now visually compose layouts using Content Fragments with the same ease as components within pages.
+The Universal Editor enables also decoupled web applications to harness the same intuitive in-context WYSIWYG authoring previously exclusive to traditional sites. Content creators can now visually compose layouts using Content Fragments with the same ease as components within pages.
 
 What sets the Universal Editor apart is its adaptability to diverse web architectures, accommodating both server- and client-side rendering, remaining framework-agnostic, and eliminating the necessity for AEM hosting. Integrating existing web applications with the Universal Editor for content editing is straightforward, primarily requiring developers to incorporate specific data attributes into their markup.
 
-With that, the Universal Editor ensures a consistent editing experience, regardless of content structure or underlying technology stack.
+With that, the Universal Editor ensures a consistent editing experience, regardless of content structure or underlying technology stack. For more information, see the [documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 **Content Management OpenAPIs for Content Fragments and Models**
 
