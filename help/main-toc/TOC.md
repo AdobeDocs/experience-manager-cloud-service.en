@@ -87,6 +87,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.3.0](/help/implementing/cloud-manager/release-notes/2024/2024-3-0.md)
       + [Release Notes for 2024.2.0](/help/implementing/cloud-manager/release-notes/2024/2024-2-0.md)
       + [Release Notes for 2024.1.0](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
     + 2023 {#2023}
@@ -828,6 +829,7 @@ user-guide-title: AEM as a Cloud Service
       + [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
       + [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
       + [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
+      + [Load options from URL to a form](/help/edge/docs/forms/load-options-from-url.md)
       + [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
       + [Use rules to add dynamic behaviour to a form](/help/edge/docs/forms/rules-forms.md)
       + [Show a custom thank you message after form submission](/help/edge/docs/forms/thank-you-page-form.md)
@@ -837,6 +839,7 @@ user-guide-title: AEM as a Cloud Service
       + [Translation](/help/edge/docs/forms/translate-forms.md)
       + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
       + [Custom Components](/help/edge/docs/forms/custom-components-forms.md)
+      + [Real time user monitoring for forms](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
     + References {#forms-references}
       + [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
   + Resources for Edge Delivery {#resources}
@@ -1159,8 +1162,8 @@ user-guide-title: AEM as a Cloud Service
   + [Additional Publish Regions](/help/operations/additional-publish-regions.md)
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
-   + [Backup and Restore](/help/operations/backup.md)
-   + [Self-Service Restore](/help/operations/restore.md)
+  + [Backup and Restore](/help/operations/backup.md)
+  + [Self-Service Restore](/help/operations/restore.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
   + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)  

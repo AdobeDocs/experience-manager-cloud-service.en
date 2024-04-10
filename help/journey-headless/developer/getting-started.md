@@ -89,7 +89,7 @@ To ensure your understanding of headless concepts, this AEM Headless Developer J
 
 However you should be aware of the additional hybrid possibilities open to you once you understand AEM's headless features. These cases are laid out below for your awareness. At the end of the journey, you are introduced to these concepts in more detail in case such flexibility is required for your project.
 
-### You already have an external consume of headless content such as a singe page application (SPA). {#already-have-a-spa}
+### You already have an external consume of headless content such as a single page application (SPA). {#already-have-a-spa}
 
 Let us assume that your basic requirement is at a minimum to deliver content from AEM to an existing, external service.
 
