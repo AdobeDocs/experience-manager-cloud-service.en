@@ -446,13 +446,7 @@ The Filter panel offers:
 
  Once selected, the **Filtering by** options are shown (under the Search box). They can be deselected from there. For example:
 
-* with sub-folder items
-
-  ![Content Fragments console - Filtering](assets/cf-managing-console-filter.png)
-
-* excluding sub-folder items
-
-  ![Content Fragments console - excluding sub-folder items](assets/cf-managing-console-filter-exclude-sub-folder.png)
+![Content Fragments console - Filtering](assets/cf-managing-console-filter.png)
 
 ### Fast Filtering {#fast-filtering}
 
