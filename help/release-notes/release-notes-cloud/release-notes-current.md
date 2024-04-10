@@ -50,7 +50,7 @@ The Universal Editor enables also decoupled web applications to harness the same
 
 What sets the Universal Editor apart is its adaptability to diverse web architectures, accommodating both server- and client-side rendering, remaining framework-agnostic, and eliminating the necessity for AEM hosting. Integrating existing web applications with the Universal Editor for content editing is straightforward, primarily requiring developers to incorporate specific data attributes into their markup.
 
-With that, the Universal Editor ensures a consistent editing experience, regardless of content structure or underlying technology stack. For more information, see the [documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+With that, the Universal Editor ensures a consistent editing experience, regardless of content structure or underlying technology stack. For more information, see the [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md).
 
 **Content Management OpenAPIs for Content Fragments and Models**
 
@@ -68,7 +68,7 @@ The new Content Fragment Editor now allows content authors to compare and view d
 
 **Generate Variations**
 
-Leverage GenAI through AEM's new feature, [generate variations](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations), accessible now in Cloud Service. Generate variations helps you generate and scale content creation through the use of generative AI. Reach out to your Adobe account team for consideration in the program.
+Leverage GenAI through AEM's new feature, [generate variations](/help/generative-ai/generate-variations.md), accessible now in Cloud Service. Generate variations helps you generate and scale content creation through the use of generative AI. Reach out to your Adobe account team for consideration in the program.
 
 **Asset browsing in Content Fragment Console**
 
