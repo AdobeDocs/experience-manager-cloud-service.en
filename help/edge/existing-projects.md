@@ -21,7 +21,7 @@ The AEM Page Editor only works with [AEM components](/help/implementing/developi
 
 In phase one, you can continue to use your existing AEM site structure, components, and authoring tools. The website rendering will be rebuilt by using blocks using JavaScript and CSS and it will be delivered via Edge Delivery Services.
 
-<!--Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.-->
+Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.
 
 A converter on App Builder will be required to convert the AEM rendered HTML output and send it to Edge Delivery Services.
 
