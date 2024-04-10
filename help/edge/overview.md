@@ -41,36 +41,36 @@ Please see the [Developer Getting Started Guide for AEM Authoring with Edge Deli
 
 You can also use Edge Delivery Services with [Adobe Target,](https://www.aem.live/developer/target-integration) [Real User Monitoring (RUM)](https://www.aem.live/developer/rum) to diagnose usage and performance of your sites, and [Launch.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
-## Getting Access to Edge Delivery Services {#getting-access}
+## Getting Started with Edge Delivery Services {#getting-started}
 
 It is easy to get started using Edge Delivery Services. Get started by following the [Getting Started - Developer Tutorial.](https://www.aem.live/developer/tutorial)
 
-## Getting Help from Adobe {#adobe-gethelp}
-
-You can engage with Adobe product teams via your provisioned product collaboration channel (see below for access details) to answer questions on product use or best practices. There are no Service Level Targets (SLTs) associated with the conversations via the product collaboration channel. If a product issue needs additional investigation and troubleshooting, and must meet response SLTs, you can submit a support ticket following the [support process.](https://experienceleague.adobe.com/?support-tab=home#support)
+## Getting Help from Adobe {#getting-help}
 
 Adobe provides three channels to help you with Edge Delivery Services:
 
-* Engage with community resources for general inquiries
-* Access your Product Collaboration Channel for specific questions
-* Log a support ticket to solve major and critical issues
+* Engage with [community resources](#community-resources) for general inquiries.
+* Access your [product collaboration channel](#collaboration-channel) for specific questions.
+* [Log a support ticket](#support-ticket) to solve major and critical issues.
 
-### Access Community Resources {#community-resource}
+### Access Community Resources {#community-resources}
 
-Adobe is committed to empowering you with the best community engagement & support for Edge Delivery Services and Document-based Authoring .
+Adobe is committed to empowering you with the best community engagement and support for Edge Delivery Services, AEM-based, and document-based authoring.
 
 * Participate in [Experience League Community](https://adobe.ly/3Q6kTKl) to ask questions, share feedback, initiate discussions, seek assistance from Adobe experts and AEM Advisors/Champs, and connect with like-minded individuals in real-time.
 * Join our [Discord channel,](https://discord.gg/aem-live) a more casual platform for real-time interactions and quick idea exchanges.
 
-### How to Access Your Product Collaboration Channel {#collab-channel}
+### How to Access Your Product Collaboration Channel {#collaboration-channel}
 
-Given the value of direct communication channel with customers, all AEM customers at launch will establish a Slack channel for speed, critical updates, and scaled reporting on experience quality. You receive an invitation from Adobe to join a Slack channel specific to your organization.
+Given the value of direct communication channel with users, all AEM projects at launch will establish a Slack channel for speed, critical updates, and scaled reporting on experience quality. You will receive an invitation from Adobe to join a Slack channel specific to your organization.
 
-For more information, see [Using the Slack Bot](https://www.aem.live/docs/slack) document for more details.
+For more information, see the document [Using the Slack Bot](https://www.aem.live/docs/slack) for more details.
+
+You can engage with Adobe product teams via your provisioned product collaboration channel to answer questions on product use or best practices. There are no service level targets (SLTs) associated with the conversations via the product collaboration channel. 
 
 ### Logging a Support Ticket {#support-ticket}
 
-Steps to log a support ticket via the Admin Console:
+If a product issue needs additional investigation and troubleshooting and must meet response SLTs, you can submit a support ticket following this process via the Admin Console:
 
 1. [Following the standard support process,](https://experienceleague.adobe.com/?support-tab=home#support) create a ticket.
 1. Add **Edge Delivery** in the title of the ticket.
@@ -81,4 +81,4 @@ Steps to log a support ticket via the Admin Console:
 
 ## What's Next {#whats-next}
 
-Get started by reviewing [Using Edge Delivery Services](/help/edge/using.md).
+Get started by reviewing [Using Edge Delivery Services.](/help/edge/using.md)
