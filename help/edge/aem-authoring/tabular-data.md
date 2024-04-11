@@ -157,3 +157,4 @@ Additionally, you can [create your own spreadsheet](#own-spreadsheet) with arbit
 1. Create the spreadsheet and publish as per the instructions for the redirects spreadsheet.
 
 1. Add a mapping to the `paths.json` file as per the instructions for the redirects spreadsheet.
+
