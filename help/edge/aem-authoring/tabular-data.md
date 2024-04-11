@@ -9,8 +9,6 @@ exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 
 Learn how to use spreadsheets to manage tabular data for various values such as metadata and redirects for your AEM with Edge Delivery Services site.
 
-{{aem-authoring-edge-early-access}}
-
 ## Use Cases {#use-cases}
 
 For any AEM with Edge Delivery Services site, there is a need to maintain lists of tabular data such as for key-value mappings. These can be lists of many different values such as metadata and redirects. Edge Deliver Services allows you to maintain such tabular lists using an intuitive tool: the spreadsheet. AEM translates these spreadsheets into JSON files that can easily be consumed by your website or web application.

@@ -8,8 +8,6 @@ exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 
 Learn how content modeling works for AEM authoring with Edge Delivery Services projects and how to model your own content.
 
-{{aem-authoring-edge-early-access}}
-
 ## Prerequisites {#prerequisites}
 
 Projects using AEM authoring with Edge Delivery Services inherit the majority of the mechanics of any other Edge Delivery Services project, independent of the content source or [authoring method.](/help/edge/aem-authoring/authoring.md)

@@ -8,8 +8,6 @@ exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 
 Learn how to create blocks instrumented for use with the Universal Editor in AEM authoring with Edge Delivery Services projects.
 
-{{aem-authoring-edge-early-access}}
-
 ## Prerequisites {#prerequisites}
 
 This guide provides step-by-step instructions for how to create blocks instrumented for the Universal Editor in AEM authoring with Edge Delivery Services projects. It covers adding components, loading component definitions in the Universal Editor, publishing pages, implementing block decoration and styles, bringing the changes to production, and verifying them. Upon completing this guide, you can create and deploy a new block for your own project.
