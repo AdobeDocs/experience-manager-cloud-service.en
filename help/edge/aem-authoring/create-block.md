@@ -244,7 +244,7 @@ Publishing content with a new model is only supported when the model is merged t
 
 Now that you know how to create blocks, it is essential to understand how to model content in a semantic way to achieve a lean developer experience.
 
-Please see the document [Content Modeling for AEM authoring with Edge Delivery Services Projects](/help/edge/aem-authoring/content-modeling.md) to Learn how content modeling works for AEM authoring with Edge Delivery Services projects.
+Please see the document [Content Modeling for AEM authoring with Edge Delivery Services Projects](/help/edge/aem-authoring/content-modeling.md) to learn how content modeling works for AEM authoring with Edge Delivery Services projects.
 
 >[!TIP]
 >
