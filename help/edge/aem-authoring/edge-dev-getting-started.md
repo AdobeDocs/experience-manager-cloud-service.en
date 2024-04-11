@@ -1,14 +1,13 @@
 ---
 title: Developer Getting Started Guide for AEM Authoring with Edge Delivery Services
-description: This guide will get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor for content authoring
+description: This guide will get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor for content authoring.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 ---
-# AEM Authoring with Edge Delivery Services {#edge-dev-getting-started}
+
+# Developer Getting Started Guide for AEM Authoring with Edge Delivery Services {#edge-dev-getting-started}
 
 This guide will get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor for content authoring.
-
-{{aem-authoring-edge-early-access}}
 
 ## Prerequisites {#prerequisites}
 
@@ -25,7 +24,33 @@ AEM offers two different content editors and the choice of which to use depends 
 * **Universal Editor** - This should be the default choice for new sites.
 * **AEM Page Editor** - This should be chosen for an existing AEM Sites migration to Edge Delivery Services.
 
-This guide focuses on AEM projects on Edge Delivery Services using the Universal Editor. See the document [Developing for Edge Delivery Services](/help/edge/developing.md) for more details on choosing the right editor and the migration of existing AEM sites to Edge Delivery Services.
+This guide focuses on AEM projects on Edge Delivery Services using the Universal Editor. See the document [Using Edge Delivery Services with AEM](/help/edge/using.md) for more details on choosing the right editor and the migration of existing AEM sites to Edge Delivery Services.
+
+## Core Concepts when Developing for Edge Delivery Services {#core-concepts}
+
+Edge Delivery Services is based around the concept of blocks. AEM comes with a comprehensive library of predefined blocks, which can be extended to meet your project needs. Code for Edge Delivery Services projects is managed in GitHub.
+
+### Blocks {#blocks}
+
+Blocks are the most fundamental part of a page delivered by Edge Delivery Services. A block encapsulates styling and code that drives a logical component of a content page.
+
+AEM provides standard blocks as part of the product within the project boilerplate. Such blocks include heading, text, images, links, lists, etc.
+
+>[!TIP]
+>
+>Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.
+
+### Edge Delivery Services and GitHub {#github-edge}
+
+Edge Delivery leverages GitHub so you can manage and deploy code directly from your GitHub repository.
+
+Your authors can create content using either Document-based Authoring  or content in AEM with the Universal Editor. Developers can customize the functionality of your site by using CSS and JavaScript in GitHub regardless of how the authors create their content.
+
+Websites are automatically created for each of your branches from content preview to production. Every resource that you put into your GitHub repository is available on your website without a build process.
+
+>[!TIP]
+>
+>Please see the [Build section](/help/edge/developer/block-collection.md) of the Edge Delivery Services documentation for more details on blocks and how to develop for Edge Delivery services.
 
 ## Getting Started with AEM Authoring and Edge Delivery Services {#getting-started}
 
@@ -76,20 +101,20 @@ First you will need to create a new project on GitHub, based on the Adobe templa
 
    ![Committing changes](assets/edge-dev-getting-started/commit-fstab-changes.png)
 
-1. Return to the root of your repository and click on `paths.yaml` and then the **Edit this file** icon.
+1. Return to the root of your repository and click on `paths.json` and then the **Edit this file** icon.
 
-   ![paths.yaml](assets/edge-dev-getting-started/paths.png)
+   ![paths.json](assets/edge-dev-getting-started/paths.png)
 
-1. Replace the default mappings with `/content/<site-name>/:/` and click **Commit changes...**.
+1. The default mapping will use the name of the repository. Update the default mapping as required for your project with `/content/<site-name>/:/` and click **Commit changes...**.
 
    * Provide your own `<site-name>`. You will need it in a later step.
    * The mappings tells Edge Delivery Services how to map the content in your AEM repository to the site URL.
 
-   ![Updating paths.yaml](assets/edge-dev-getting-started/paths-update.png)
+   ![Updating paths.json](assets/edge-dev-getting-started/paths-update.png)
 
 1. Add a commit message as desired and then click **Commit changes**, committing them directly to the `main` branch.
 
-   ![Committing changes](assets/edge-dev-getting-started/commit-fstab-changes.png)
+   ![Committing changes](assets/edge-dev-getting-started/commit-paths-changes.png)
 
 ### Create and Edit a New AEM Site {#create-aem-site}
 
@@ -159,6 +184,10 @@ Once you are finished editing your new site using the Universal Editor, you can 
 
 ## Next Steps {#next-steps}
 
-Now that you have a working AEM wuthoring with Edge Delivery Services project, you can begin creating and styling your own blocks.
+Now that you have a working AEM authoring with Edge Delivery Services project, you can begin creating and styling your own blocks.
 
-Please see the guide [Creating Blocks Instrumented for use with the Universal Editor](/help/edge/create-block.md) for more information.
+Please see the guide [Creating Blocks Instrumented for use with the Universal Editor](/help/edge/aem-authoring/create-block.md) for more information.
+
+>[!TIP]
+>
+>For an end-to-end walkthrough of creating a new Edge Delivery Services project that is enabled for AEM authoring with AEM as a Cloud Service as a content source, please view [this AEM GEMs webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
