@@ -1,11 +1,11 @@
 ---
-title: AEM and Edge Delivery Services Overview
+title: Edge Delivery Services Overview
 description: Understand how AEM as a Cloud Service can benefit from the performance and perfect Lighthouse scores offered by Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 ---
 
-# AEM and Edge Delivery Services Overview {#overview}
+# Edge Delivery Services Overview {#edge-delivery-services}
 
 With Edge Delivery Services, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering high-impact experiences that are fast to author and develop. It is a composable set of services that enables a rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. As such, with Edge Delivery Services you can improve conversion, reduce costs, and provide extreme content velocity.
 
@@ -15,9 +15,9 @@ By using Edge Delivery Services, you can:
 * Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and Document-based Authoring . As such, you can work with multiple content sources on the same website.
 * Use a built-in experimentation framework that allows quick test creation, execution without performance impact and fast release to production of a test winner.
 
-## Edge Delivery Services {#edge-delivery-services}
+## Overview {#overview}
 
-Edge Delivery services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. You can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) and AEM-based authroing using the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) as well as [document-based authoring.](https://www.aem.live/docs/authoring)
+Edge Delivery Services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. You can use both [AEM content management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) and AEM-based authroing using the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) as well as [document-based authoring.](https://www.aem.live/docs/authoring)
 
 The following diagram illustrates how you can edit content in Microsoft Word (document-based authoring) and publish to Edge Delivery Services. It also shows the AEM-based editing using the Universal Editor.
 

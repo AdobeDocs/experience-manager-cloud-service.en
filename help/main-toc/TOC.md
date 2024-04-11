@@ -784,8 +784,8 @@ user-guide-title: AEM as a Cloud Service
   + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
-+ AEM with Edge Delivery Services {#edge-delivery}
-  + [AEM and Edge Delivery Services Overview](/help/edge/overview.md)
++ Edge Delivery Services {#edge-delivery}
+  + [Edge Delivery Services Overview](/help/edge/overview.md)
   + [Using Edge Delivery Services with AEM](/help/edge/using.md)
   + AEM-Based Authoring {#aem-authoring}
     + [Authoring Content for Edge Delivery](/help/edge/aem-authoring/authoring.md)
