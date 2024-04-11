@@ -191,3 +191,4 @@ Please see the guide [Creating Blocks Instrumented for use with the Universal Ed
 >[!TIP]
 >
 >For an end-to-end walkthrough of creating a new Edge Delivery Services project that is enabled for AEM authoring with AEM as a Cloud Service as a content source, please view [this AEM GEMs webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+
