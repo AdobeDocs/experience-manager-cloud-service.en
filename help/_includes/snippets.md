@@ -44,10 +44,6 @@
 * [Connect Adaptive Form to Salesforce application](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
-## AEM Authoring with Edge Delivery Services Early Access {#aem-authoring-edge-early-access}
-
-[!BADGE EARLY-ACCESS TECHNOLOGY - Ask us about this feature from the AEM Sites labs on your Slack channel!]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEM authoring with Edge Delivery Services is an early-access technology."}
-
 ## See also {#see-more-forms-eds}
 
 * [Get started with AEM Forms Edge Delivery Services](/help/edge/docs/forms/tutorial.md)

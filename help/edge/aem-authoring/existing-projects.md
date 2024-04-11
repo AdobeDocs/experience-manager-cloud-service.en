@@ -4,6 +4,7 @@ description: Learn how to leverage the benefits of Edge Delivery Services on you
 feature: Edge Delivery Services
 exl-id: f54aac3a-1d0c-4be0-9aa6-616217e0e458
 ---
+
 # Using Edge Delivery Services with Existing AEM Projects {#existing-projects}
 
 You needn't wait for a new AEM project to benefit from Edge Delivery Services. Edge Delivery Services can be integrated into your existing AEM project so you can leverage its performance gains immediately.
@@ -32,7 +33,3 @@ Phase two completes the process by eliminating the technology overlap: AEM Core 
 ## Phase 2 - Switch to Universal Editor {#switch-ue}
 
 In this phase, the AEM Page Editor is replaced with the Universal Editor. Because the Universal Editor can directly work with blocks, the AEM Core Components and converter will no longer be needed.
-
-## How to get started {#how-to-get-started}
-
-Please contact your Adobe representative to get access to this feature.

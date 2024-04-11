@@ -4,11 +4,10 @@ description: Learn how to use spreadsheets to manage tabular data for various va
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 ---
+
 # Using Spreadsheets to Manage Tabular Data {#tabular-data}
 
 Learn how to use spreadsheets to manage tabular data for various values such as metadata and redirects for your AEM with Edge Delivery Services site.
-
-{{aem-authoring-edge-early-access}}
 
 ## Use Cases {#use-cases}
 
@@ -38,7 +37,7 @@ This document uses the example of redirects to illustrate how to create such spr
 
 In order to create mappings using spreadsheets in your AEM with Edge Delivery Services project, you need to have created your site using the latest site template.
 
-Please see the document [ Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) for more information.
+Please see the document [ Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) for more information.
 
 ## Creating a Spreadsheet {#spreadsheet}
 
