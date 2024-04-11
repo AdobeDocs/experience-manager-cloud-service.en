@@ -3,15 +3,14 @@ title: Content Modeling for AEM authoring with Edge Delivery Services Projects
 description: Learn how content modeling works for AEM authoring with Edge Delivery Services projects and how to model your own content.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 ---
+
 # Content Modeling for AEM authoring with Edge Delivery Services Projects {#content-modeling}
 
 Learn how content modeling works for AEM authoring with Edge Delivery Services projects and how to model your own content.
 
-{{aem-authoring-edge-early-access}}
-
 ## Prerequisites {#prerequisites}
 
-Projects using AEM authoring with Edge Delivery Services inherit the majority of the mechanics of any other Edge Delivery Services project, independent of the content source or [authoring method.](/help/edge/authoring.md)
+Projects using AEM authoring with Edge Delivery Services inherit the majority of the mechanics of any other Edge Delivery Services project, independent of the content source or [authoring method.](/help/edge/aem-authoring/authoring.md)
 
 Before you begin modeling content for your project, make sure you first read the following documentation.
 
@@ -588,7 +587,7 @@ The following example defines a tab section, which can be used to create a tabs 
 
 ## Page Metadata {#page-metadata}
 
-Documents can have a page [metadata block,](/help/edge/authoring.md#metadata--seo) which is used to define which `<meta>` elements are rendered in the `<head>` of a page. The page properties of pages in AEM as a Cloud Service map to those that are available out-of-the-box for Edge Delivery Services, like `title`, `description`, `keywords`, etc.
+Documents can have a page [metadata block,](https://www.aem.live/developer/block-collection/metadata) which is used to define which `<meta>` elements are rendered in the `<head>` of a page. The page properties of pages in AEM as a Cloud Service map to those that are available out-of-the-box for Edge Delivery Services, like `title`, `description`, `keywords`, etc.
 
 Before further exploring how to define your own metadata, please review the following documents to understand the concept of page metadata first.
 
@@ -622,7 +621,7 @@ Many of the default page properties available in AEM are mapped to the respectiv
 
 * `cq:lastModified` as `modified-time` in ISO8601 format
 * The time the document was last published as `published-time` in ISO8601 format
-* `cq:tags` as `cq-tags` as comma separted list of the tag IDs.  
+* `cq:tags` as `cq-tags` as a comma-separated list of the tag IDs. 
 
 It is also possible to define a component model for custom page metadata, which will be made available to the author as a tab of the AEM Sites page properties dialog.
 
@@ -640,3 +639,15 @@ To do so, create a component model with the ID `page-metadata`.
   ]
 }
 ```
+
+## Next Steps {#next-steps}
+
+Now that you know how to model content, you can create blocks for your own Edge Delivery Services with AEM authoring project.
+
+See the document [Creating Blocks Instrumented for use with the Universal Editor](/help/edge/aem-authoring/create-block.md) to learn how to create blocks instrumented for use with the Universal Editor in AEM authoring with Edge Delivery Services projects.
+
+If you are already familiar with creating blocks, please see the document [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) to get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor for content authoring.
+
+>[!TIP]
+>
+>For an end-to-end walkthrough of creating a new Edge Delivery Services project that is enabled for AEM authoring with AEM as a Cloud Service as a content source, please view [this AEM GEMs webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
