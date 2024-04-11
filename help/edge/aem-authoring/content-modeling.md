@@ -644,7 +644,7 @@ To do so, create a component model with the ID `page-metadata`.
 
 Now that you know how to model content, you can create blocks for your own Edge Delivery Services with AEM authoring project.
 
-See the document [Creating Blocks Instrumented for use with the Universal Editor](help/edge/aem-authoring/create-block.md) to learn how to create blocks instrumented for use with the Universal Editor in AEM authoring with Edge Delivery Services projects.
+See the document [Creating Blocks Instrumented for use with the Universal Editor](/help/edge/aem-authoring/create-block.md) to learn how to create blocks instrumented for use with the Universal Editor in AEM authoring with Edge Delivery Services projects.
 
 If you are already familiar with creating blocks, please see the document [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) to get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor for content authoring.
 
