@@ -621,7 +621,7 @@ Many of the default page properties available in AEM are mapped to the respectiv
 
 * `cq:lastModified` as `modified-time` in ISO8601 format
 * The time the document was last published as `published-time` in ISO8601 format
-* `cq:tags` as `cq-tags` as comma separted list of the tag IDs.  
+* `cq:tags` as `cq-tags` as a comma-separated list of the tag IDs. 
 
 It is also possible to define a component model for custom page metadata, which will be made available to the author as a tab of the AEM Sites page properties dialog.
 
