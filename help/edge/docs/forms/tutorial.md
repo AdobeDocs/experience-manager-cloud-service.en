@@ -262,6 +262,7 @@ Ready to showcase your creation? Use Git to commit and push your changes. This u
 
 Preview: `https://<branch>--<repo>--<owner>.hlx.page/`
 Production: `https://<branch>--<repo>--<owner>.hlx.live/`
+
 Congratulations! You've successfully set up your local development environment and deployed your changes.
 
 
