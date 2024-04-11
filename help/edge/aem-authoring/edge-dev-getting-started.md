@@ -1,6 +1,6 @@
 ---
 title: Developer Getting Started Guide for AEM Authoring with Edge Delivery Services
-description: This guide will get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor for content authoring
+description: This guide will get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor for content authoring.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 ---
@@ -186,6 +186,10 @@ Once you are finished editing your new site using the Universal Editor, you can 
 
 ## Next Steps {#next-steps}
 
-Now that you have a working AEM wuthoring with Edge Delivery Services project, you can begin creating and styling your own blocks.
+Now that you have a working AEM authoring with Edge Delivery Services project, you can begin creating and styling your own blocks.
 
 Please see the guide [Creating Blocks Instrumented for use with the Universal Editor](/help/edge/aem-authoring/create-block.md) for more information.
+
+>[!TIP]
+>
+>For an end-to-end walkthrough of creating a new Edge Delivery Services project that is enabled for AEM authoring with AEM as a Cloud Service as a content source, please view [this AEM GEMs webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)

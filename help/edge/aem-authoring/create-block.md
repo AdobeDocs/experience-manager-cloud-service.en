@@ -241,3 +241,13 @@ This guide had you commit directly to the `main` branch for simplicity's sake. F
 When you are not developing on the `main` branch, you can append `?ref=<branch>` in the Universal Editor location bar to load the page from your branch. `<branch>` is the branch name as it would be used for your project's preview or live URLs, e.g. `https://<branch>--<repo>--<owner>.hlx.page`.
 
 Publishing content with a new model is only supported when the model is merged to the `main` branch.
+
+## Next Steps {#next-steps}
+
+Now that you know how to create blocks, it is essential to understand how to model content in a semantic way to achieve a lean developer experience.
+
+Please see the document [Content Modeling for AEM authoring with Edge Delivery Services Projects](/help/edge/aem-authoring/content-modeling.md) to Learn how content modeling works for AEM authoring with Edge Delivery Services projects.
+
+>[!TIP]
+>
+>For an end-to-end walkthrough of creating a new Edge Delivery Services project that is enabled for AEM authoring with AEM as a Cloud Service as a content source, please view [this AEM GEMs webinar.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
