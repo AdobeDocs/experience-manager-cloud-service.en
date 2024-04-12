@@ -1,6 +1,7 @@
 ---
 title: Content Fragments and Content Fragment Models OpenAPIs
 description: Learn about the Content Fragments and Content Fragment Models OpenAPIs.
+exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
 ---
 # Content Fragments and Content Fragment Models OpenAPIs {#content-fragments-and-content-fragment-models-openapis}
 
