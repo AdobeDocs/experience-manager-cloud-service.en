@@ -26,11 +26,13 @@ The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] cu
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
-## Release Video {#release-video}
+<!-- ## Release Video {#release-video}
 
 Have a look at the March 2024 Release Overview video for a summary of the features added in the 2024.3.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -165,8 +167,6 @@ These services enable you to:
 
 This update ensures a more inclusive experience for users with disabilities by improving navigation, clarity, and feedback for the Scribble Signature component.
 
-
-
 ### Early Adopter Program {#forms-early-adopter}
 
 * **[Submit an Adaptive Form to Adobe Workfront Fusion Scenario](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: Forms as a Cloud Service offers an out-of-the-box option to effortlessly connect an Adaptive Form with Adobe Workfront. This simplifies the process of submitting an Adaptive Form to an Adobe Workfront scenario, allowing you trigger a Workfront Fusion scenario on submission of an Adaptive Form. 
@@ -235,3 +235,4 @@ You can find a complete list of Cloud Manager monthly releases [here](/help/impl
 ## Migration Tools {#migration-tools}
 
 You can find a complete list of Migration Tools releases [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+
