@@ -32,6 +32,7 @@ You can use Experience Fragments:
   Experience Fragments eliminate the need for copy/paste.
 * To support the headless CMS use-case. 
   Authors want to use AEM only for authoring but not for delivering to the customer. A third-party system/touchpoint would consume that experience and then deliver to the user.
+* With [Multi Site Management (MSM)](/help/sites-cloud/administering/msm/overview.md); as an Experience Fragment is part of a page. This applies to both the individual fragments and the folders they reside in.
 
 >[!NOTE]
 >
@@ -230,6 +231,10 @@ You can create variations of your Experience Fragment, depending on your needs:
 
     * **Variation**
     * **Variation as live-copy**.
+
+      >[!NOTE]
+      >
+      >Creating an initial Variation as Live Copy will inherit the title by using the Live Copy Source as the Master Variation.
 
 1. Define the required properties:
 
