@@ -404,7 +404,7 @@ The default OSGi configuration for publish instances:
 
 By default the `PersistedQueryServlet` sends a `200` response when it executes a query, regardless of the actual result.
 
-You can [configure the OSGi settings](/help/implementing/deploying/configuring-osgi.md) for the **Persisted Query Service Configuration** to control which status code is returned by the `/execute.json/persisted-query` endpoint, when there is an error in the persisted query.
+You can [configure the OSGi settings](/help/implementing/deploying/configuring-osgi.md) for the **Persisted Query Service Configuration** to control whether more detailed status codes are returned by the `/execute.json/persisted-query` endpoint, when there is an error in the persisted query.
 
 >[!NOTE]
 >
@@ -413,14 +413,21 @@ You can [configure the OSGi settings](/help/implementing/deploying/configuring-o
 The field `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) can be defined as required:
 
 * `false` (default value):
-  It does not matter whether the persisted query is successful or not. The `/execute.json/persisted-query` returns the status code `200` and the `Content-Type` header returned is `application/json`.
+  It does not matter whether the persisted query is successful or not. The `Content-Type` header returned is `application/json`, and the `/execute.json/persisted-query` *always* returns the status code `200`.
 
 * `true`:
-  The endpoint will return `400` or `500` as appropriate when there is any form of error upon running the persisted query. Also, the returned `Content-Type` is `application/graphql-response+json`.
+  The returned `Content-Type` is `application/graphql-response+json`, and the endpoint will return the appropriate response code when there is any form of error upon running the persisted query: 
+
+  | Code | Description |
+  |--- |--- |
+  | 200 | Successful response |
+  | 400 | Indicates that there are missing headers, or an issue with the persisted query path. For example, configuration name not specified, suffix is not specified, and others.<br>See [Troubleshooting - GraphQL endpoint not configured](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
+  | 404 | The requested resource cannot be found. For example, the Graphql endpoint is not available on the server.<br>See [Troubleshooting - Missing path in the GraphQL persisted query URL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 500 | Internal server error. For example, validation errors, persistence error, and others. |
 
   >[!NOTE]
   >
-  >See https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >See also https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 
