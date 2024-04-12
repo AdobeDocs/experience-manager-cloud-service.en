@@ -35,10 +35,10 @@ You need Administrator privileges to [configure settings for sharing assets as a
    * **Include Originals:** 
 
       * Select `Select Include Originals` to select the `Include Originals` option by default in the link share dialog. 
-      * Specify the behavior by choosing the appropriate option to make the `Include Originals` option editable, read-only, or hidden.
+      * Select how the `Include Originals` option is presented to you on the Link Share dialog. [!UICONTROL Editable] allows the user to change the settings defined here in the Initial Settings. With `Read-only` the setting is displayed but cannot be modified. `Hidden` hides the setting and uses the value configured here in the Initial settings.
    * **Include Renditions:** 
       * Select `Select Include Renditions` option to select the `Include Renditions` option by default in the link share dialog.   
-      * Select the behavior by choosing the appropriate option to make the `Include Renditions` option editable, read-only, or hidden.
+      * Select how the `Include Renditions` option is presented to you on the Link Share dialog. [!UICONTROL Editable] allows the user to change the settings defined here in the Initial Settings. With `Read-only` the setting is displayed but cannot be modified. `Hidden` hides the setting and uses the value configured here in the Initial settings.
 
 1. Specify the default validity period for the link in the `Validity Period` field in the `Expiration date` section.
 
@@ -47,7 +47,7 @@ You need Administrator privileges to [configure settings for sharing assets as a
 
 For Email Configuration related settings, visit [Email Service Documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
 
-   ![Configure Email Service](config-email-service.png)
+   ![Configure Email Service](/help/assets/assets/config-email-service.png)
 
 ## Share assets as a link {#sharelink}
 
