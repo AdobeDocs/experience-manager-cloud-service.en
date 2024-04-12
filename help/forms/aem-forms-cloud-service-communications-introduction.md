@@ -180,10 +180,63 @@ You can accomplish these tasks using the Encryption APIs:
 
 * Encrypt a PDF document with a password. 
 * Remove password-based encryption from a PDF document.
+* Retrieve the type of security applied to a PDF document.
 * Return the security type applied to a PDF document. 
 
 Both Signature APIs and Encryption APIs are [Synchronous APIs](#types-of-communications-apis-types). 
 
+### Reader Extension Service
+
+<span class="preview"> The Reader Extension Service capability is under Early Adopter Program. You can write to `aem-forms-ea@adobe.com` from your official email id to join the early adopter program and request access to the capability. </span>
+  
+The Reader Extensions Service enables your organization to easily share interactive PDF documents by extending the functionality of Adobe Reader with additional usage rights. The Reader Extensions service works with Adobe Reader. The service adds usage rights to a PDF document. This action activates features that are not usually available when a PDF document is opened using Adobe Reader, such as adding comments to a document, filling forms, and saving the document.
+
+
+When PDF documents have the appropriate usage rights added, recipients can do the following activities from within Adobe Reader:
+
+* Complete PDF documents and forms online or offline, allowing recipients to save copies locally for their records and still keep added information intact.
+* Save PDF documents to a local hard drive to retain the original document and any additional comments, data, or attachments.
+* Attach files and media clips to PDF documents.
+* Sign, certify, and authenticate PDF documents by applying digital signatures using industry-standard public key infrastructure (PKI) technologies.
+* Submit completed or annotated PDF documents electronically.
+* Use PDF documents and forms as an intuitive development front end to internal databases and web services.
+* Share PDF documents with others so that reviewers can add comments by using intuitive markup tools. These tools include electronic sticky notes, stamps, highlights, and text strikethrough. The same functions are available in Acrobat.
+* Support barcoded forms decoding.
+
+These special usage rights capabilities are automatically activated when a rights-enabled PDF document is opened within Adobe Reader. When the user is finished working with a rights-enabled document, those functions are again disabled in Adobe Reader. They remain disabled until the user receives another rights-enabled PDF document.
+
+The various usage rights capabilities with Reader Extension Services are:
+
+  * **Barcodes Decoding**: To decode barcodes within the PDF document.
+
+  * **Comments**: To comment offline on the PDF document.
+
+  * **Comments Online**: To comment online on the PDF document.
+
+  * **Digital Signature**: To add digital signatures to a PDF document.
+
+  * **Dynamic Form Fields**: To add form fields to a PDF document.
+
+  * **Dynamic Form Pages**: To add form pages to a PDF document.
+
+  * **Embedded Files**: To embed files within a PDF document.
+
+  * **Form Data Import**: To import form data to a PDF document.
+
+  * **Form Data Export**: To import form data to a PDF document.
+
+  * **Form Fill In**: To fill form fields within a PDF document.
+
+  * **Online Forms**: To access a web service or database from a PDF document.
+
+  * **Submit Standalone**: To submit form data offline from a PDF document.
+
+**Other capabilities in Reader Extension Services**
+
+* **Message**: The message displayed within Adobe Acrobat Reader on opening a PDF document with one or more usage rights applied.
+* **Unlock Password**: The password required for opening an encrypted PDF document. Typically, this is the document open password but if the PDF document is additionally protected by a permissions password, either may be used to open it.
+
+The [API reference documentation](https://adobe-aem-document-experimental.redoc.ly/) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to postman to check functionality of APIs.
 
 ## Types of communications APIs {#types}
 

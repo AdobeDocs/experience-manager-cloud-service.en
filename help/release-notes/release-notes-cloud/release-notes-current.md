@@ -128,22 +128,22 @@ These services enable you to:
 
   You can now streamline custom function interactions by: 
 
-  * Leveraging new annotations to provide clearer function definitions. 
-  * Using caching mechanisms for custom functions, leading to faster form performance.
-  * Seamlessly working with global objects within custom functions.
-  * Defining and utilizing optional parameters within custom functions.
+  * [Leveraging new annotations to provide clearer function definitions](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function). 
+  * [Using caching mechanisms for custom functions, leading to faster form performance](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
+  * [Seamlessly working with global objects within custom functions](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+  * [Defining and utilizing optional parameters within custom functions](/help/forms/create-and-use-custom-functions.md#parameter).
 
   This update also brings the following enhancements to rule editor functionality. You can: 
 
-  * Implement powerful "when-then-else" logic for conditional execution.
+  * Implement powerful ["when-then-else"](/help/forms/rule-editor-core-components.md#when) logic for conditional execution.
   * Leverage modern JavaScript features like let and arrow functions (ES10 support).
   * Validate or reset not only fields, but also entire panels and forms, expanding control over user interactions.
 
   These advancements provide a more intuitive and powerful experience for crafting rules and custom functions within the visual rule editor.
 
-* **Create multiple versions of an Adaptive Form**: You can now easily manage variations of existing forms. This simplifies version control and facilitates comparison for form optimization, all within a single, streamlined workflow.
+* **[Create multiple versions of an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**: You can now easily manage variations of existing forms. This simplifies version control and facilitates comparison for form optimization, all within a single, streamlined workflow.
 
-* **Compare Adaptive Form**: You can now easily compare two forms to dentify differences between two forms. It facilitates smooth collaboration by enabling team members to compare revisions and discuss changes efficiently.
+* **[Compare Adaptive Form](/help/forms/compare-forms.md)**: You can now easily compare two forms to dentify differences between two forms. It facilitates smooth collaboration by enabling team members to compare revisions and discuss changes efficiently.
 
 * **Accessibility Enhancements for Scribble Signature Component**: This update brings significant accessibility improvements to the Scribble Signature component:
 
@@ -173,7 +173,7 @@ This update ensures a more inclusive experience for users with disabilities by i
 
     <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Using the Adobe Workfront Fusion Connector, you can design workflows that are triggered automatically upon submission of an Adaptive Form. For instance, envision a scenario where a workflow is initiated to assign a specific individual the task of reviewing submitted data, allowing approval or rejection of an application based on the information captured through the adaptive form. This streamlined integration enhances efficiency and brings a new level of automation to your workflow processes.| 
 
-* **Reader Extension Service**: AEM Forms Communication APIs has brought Reader Extension Service to allow you to add functionalities like form filling and commenting to regular PDFs, making them interactive for users with the free Adobe Reader. 
+* **[Reader Extension Service](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**: AEM Forms Communication APIs has brought Reader Extension Service to allow you to add functionalities like form filling and commenting to regular PDFs, making them interactive for users with the free Adobe Reader. 
 
 * [Right to left languages support](/help/forms/supporting-new-language-localization-core-components.md): Adaptive Forms built on Core Components can now be presented in a Right-to-Left (RTL) language like Arabic, Persian, and Urdu. The RTL languages are spoken by over 2 billion people globally. Using a form in RTL language allows you to extend the reach of your adaptive forms to cater to these diverse audiences and select into RTL markets. In certain regions, it's also a legal mandate to provide forms in the local language. By accommodating local languages, you not only open doors to a broader audience but also ensure compliance with relevant laws and regulations.
 
