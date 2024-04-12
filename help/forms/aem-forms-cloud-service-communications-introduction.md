@@ -165,21 +165,22 @@ The DocAssurance service includes the Signature and Encyption APIs:
 
 ### Signature APIs 
 
-The Signature APIs let your organization protect the security and privacy of Adobe PDF documents that it distributes and receives. This service uses digital signatures and certification to ensure that only intended recipients can alter documents. Because security features are applied to the document itself, the document remains secure and controlled for its entire life cycle. A document remains secure beyond the firewall, when it is downloaded offline, and when it is submitted back to your organization. You can accomplish the following tasks using the Signature APIs:
+The Signature APIs let your organization protect the security and privacy of Adobe PDF documents that it distributes and receives. <!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> The security features are applied to the document itself, the document remains secure and controlled for its entire life cycle. The document remains secure beyond the firewall, when it is downloaded offline, and when it is submitted back to your organization. You can accomplish the following tasks using the Signature APIs:
 
-* Add a signature field to a PDF document. 
+* Add a visible signature field to a PDF document. 
+* Add an invisible signature field to a PDF document. 
 * Sign the specified signature field in a PDF document. 
 * Certify a PDF document
 
 ### Encryption APIs
 
-The Encryption APIs let you encrypt and decrypt documents. When a document is encrypted, its contents become unreadable. An authorized user can decrypt the document to obtain access to the contents. If a PDF document is encrypted with a password, the user must specify the open password before the document can be viewed in Adobe Reader or Adobe Acrobat. Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.
+The Encryption APIs let you encrypt and decrypt documents. When a document is encrypted, its contents become unreadable. An authorized user can decrypt the document to obtain access to the contents. If a PDF document is encrypted with a password, the user must specify the open password before the document can be viewed in Adobe Reader or Adobe Acrobat. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
 
 You can accomplish these tasks using the Encryption APIs:
 
 * Encrypt a PDF document with a password. 
 * Remove password-based encryption from a PDF document.
-* Retrieve the type of security applied to a PDF document. 
+* Return the security type applied to a PDF document. 
 
 Both Signature APIs and Encryption APIs are [Synchronous APIs](#types-of-communications-apis-types). 
 
