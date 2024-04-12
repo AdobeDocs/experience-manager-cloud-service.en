@@ -15,6 +15,10 @@ Learn how to use the GraphQL API for headless delivery of Content Fragment conte
    * To use the API, [define and enable endpoints in AEM](/help/headless/graphql-api/graphql-endpoint.md), and if necessary, the [GraphiQL interface installed](/help/headless/graphql-api/graphiql-ide.md).
 * [The Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) lets you create and modify Content Fragments (and other assets).
 
+>[!NOTE]
+>
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
+
 The remainder of this guide focuses on GraphQL access and Content Fragment delivery.
 
 ## Enable GraphQL Endpoint {#enable-graphql-endpoint}
@@ -93,3 +97,7 @@ That's it! You now have a basic understanding of headless content management in 
 * **[Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md)** - For details about creating and managing Content Fragments
 * **[Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)** - For details on accessing AEM content directly over the HTTP API, via CRUD operations (Create, Read, Update, Delete)
 * **[GraphQL API](/help/headless/graphql-api/content-fragments.md)** - For details on how to deliver Content Fragments headlessly
+
+>[!NOTE]
+>
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.

@@ -34,6 +34,3 @@ The flow of information when publishing is as follows. Once the author starts pu
 >
 >By default, the Edge Delivery Services admin API is not protected and can be used to publish or unpublish documents without authentication. In order to configure authentication for the admin API as documented in [Configuring Authentication for Authors](https://www.aem.live/docs/authentication-setup-authoring), your project must be provisioned with an API_KEY, which grants access to the publish service. [Please reach out to the Adobe team on Slack](/help/edge/docs/slack.md) for guidance.
 
-## How to get started {#how-to-get-started}
-
-Please contact your Adobe representative to get access to this feature.

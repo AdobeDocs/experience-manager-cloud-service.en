@@ -29,6 +29,9 @@
 * [Send Adaptive Form data to a REST endpoint](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Send Adaptive Form data to AEM Workflow](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Use Forms Portal to list AEM Adaptive Forms on an AEM website](/help/forms/configure-forms-portal.md)
+* [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+* [Compare Adaptive Forms](/help/forms/compare-forms.md)
+
 
 ## Adaptive Form Submit Actions {#af-submit-action}
 
@@ -43,10 +46,6 @@
 * [Submit to Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Connect Adaptive Form to Salesforce application](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
-
-## AEM Authoring with Edge Delivery Services Early Access {#aem-authoring-edge-early-access}
-
-[!BADGE EARLY-ACCESS TECHNOLOGY - Ask us about this feature from the AEM Sites labs on your Slack channel!]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEM authoring with Edge Delivery Services is an early-access technology."}
 
 ## See also {#see-more-forms-eds}
 
