@@ -207,33 +207,34 @@ These special usage rights capabilities are automatically activated when a right
 
 The various usage rights capabilities with Reader Extension Services are:
 
-* **Barcodes Decoding**: To decode barcodes within the PDF document.
+  * **Barcodes Decoding**: To decode barcodes within the PDF document.
 
-* **Comments**: To comment offline on the PDF document.
+  * **Comments**: To comment offline on the PDF document.
 
-* **Comments Online**: To comment online on the PDF document.
+  * **Comments Online**: To comment online on the PDF document.
 
-* **Digital Signature**: To add digital signatures to a PDF document.
+  * **Digital Signature**: To add digital signatures to a PDF document.
 
-* **Dynamic Form Fields**: To add form fields to a PDF document.
+  * **Dynamic Form Fields**: To add form fields to a PDF document.
 
-* **Dynamic Form Pages**: To add form pages to a PDF document.
+  * **Dynamic Form Pages**: To add form pages to a PDF document.
 
-* **Embedded Files**: To embed files within a PDF document.
+  * **Embedded Files**: To embed files within a PDF document.
 
-* **Form Data Import**: To import form data to a PDF document.
+  * **Form Data Import**: To import form data to a PDF document.
 
-* **Form Data Export**: To import form data to a PDF document.
+  * **Form Data Export**: To import form data to a PDF document.
 
-* **Form Fill In**: To fill form fields within a PDF document.
+  * **Form Fill In**: To fill form fields within a PDF document.
 
-* **Online Forms**: To access a web service or database from a PDF document.
+  * **Online Forms**: To access a web service or database from a PDF document.
 
-* **Submit Standalone**: To submit form data offline from a PDF document.
+  * **Submit Standalone**: To submit form data offline from a PDF document.
 
-* **Apply Rights Options**: The message displayed within Adobe Acrobat Reader on opening a PDF document with one or more usage rights applied.
-    * **Message**: The message displayed within Adobe Acrobat Reader on opening a PDF document with one or more usage rights applied.
-    * **Unlock Password**: The password required for opening an encrypted PDF document. Typically, this is the document open password but if the PDF document is additionally protected by a permissions password, either may be used to open it.
+**Other capabilities in Reader Extension Services**
+
+* **Message**: The message displayed within Adobe Acrobat Reader on opening a PDF document with one or more usage rights applied.
+* **Unlock Password**: The password required for opening an encrypted PDF document. Typically, this is the document open password but if the PDF document is additionally protected by a permissions password, either may be used to open it.
 
 The [API reference documentation](https://adobe-aem-document-experimental.redoc.ly/) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to postman to check functionality of APIs.
 
