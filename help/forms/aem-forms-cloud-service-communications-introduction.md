@@ -185,6 +185,8 @@ Both Signature APIs and Encryption APIs are [Synchronous APIs](#types-of-communi
 
 ### Reader Extension Service
 
+<span class="preview"> The Reader Extension Service capability is under Early Adopter Program. You can write to `aem-forms-ea@adobe.com` from your official email id to join the early adopter program and request access to the capability. </span>
+  
 The Reader Extensions Service enables your organization to easily share interactive PDF documents by extending the functionality of Adobe Reader with additional usage rights. The Reader Extensions service works with Adobe Reader 7.0 or later. The service adds usage rights to a PDF document. This action activates features that are not usually available when a PDF document is opened using Adobe Reader, such as adding comments to a document, filling forms, and saving the document.
 
 >[!NOTE]
