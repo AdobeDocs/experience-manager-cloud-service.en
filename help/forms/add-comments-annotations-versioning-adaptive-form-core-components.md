@@ -4,7 +4,6 @@ description: Use adaptive form core components to add comments, annotations, and
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 hidefromtoc: yes
-exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
 ---
 # Versioning, reviewing and commenting on an Adaptive Form
 
@@ -28,11 +27,11 @@ Adaptive form versioning helps add versions to a form. Form authors can easily c
 To create version of a form, follow the steps given below:
 
 1. Create a form or you use an existing form.
-1. On AEM UI, Navigate to the **[!UICONTROL Form]**>>**[!UICONTROL Forms & Documents]** and select your **Form**.
+1. On AEM UI, navigate to the **[!UICONTROL Form]**>>**[!UICONTROL Forms & Documents]** and select your **Form**.
 1. On the selection dropdown on the left panel, select **[!UICONTROL Versions]**.
         ![Select a form](select-a-form.png)
 1. Click the **three dots** located on the lower panel on the left, click **[!UICONTROL Save as Version]**.
-1. Now provide a label to the form version, and you can provide information about the form through the comment.
+1. Now, provide a label to the form version, and you can provide information about the form through the comment.
      ![Create a form version](create-a-form-version.png)
 
 ### Update a form version {#update-a-form-version}
@@ -72,11 +71,15 @@ In many cases, form group users are required to add annotations to a form for re
 1. Click the **add icon** located on the upper right rail as given in the image.
         ![Annotation](annotation.png)
 
-1. Click the **add icon** located on the upper left rail as given in the image to add notation.
+1. Click the **add icon** located on the upper left rail as given in the image to add the annotation.
         ![Add annotation](add-annotation.png)
 
-1. Now you can add comments, draw sketches with multiple colors, to form components.
+1. Now, you can add comments, draw sketches with multiple colors to form components.
 
-1. To see all your added annotations to a form, select your form, and you will see the annotations added on the left panel, as shown in the image.
+1. To see all your added annotations to a form, select your form, and you see the annotations added on the left panel, as shown in the image.
 
    ![See added annotations](see-annotations.png)
+
+## See Also {#see-also}
+
+{{see-also}}
