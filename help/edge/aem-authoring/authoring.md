@@ -4,18 +4,13 @@ description: Learn how content authoring works with Edge Delivery Services and h
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 ---
+
 # Authoring Content for Edge Delivery Services {#authoring-edge}
 
 With Edge Delivery Services, authoring is easy, fast, and flexible. You have two options to author content for Edge Delivery Services:
 
-* [Document-based Authoring ](#document-based) - Such as Microsoft Word or Google Docs
 * [Universal Editor](#universal-editor) - A modern UI for authoring content within AEM
-
-## Document-based Authoring  {#document-based}
-
-In the case of Document-based Authoring , you can work with a variety of sources such as Microsoft Word and Google Docs. Documents from these sources become pages on your website. Headings, lists, images, font elements, videos can all be transferred from the initial source into your website. You can add metadata for SEO purposes or use blocks to work with structured content and add functionality.
-
-For further details on Document-based Authoring , please refer to [this document in the Edge Delivery Services documentation.](/help/edge/docs/authoring.md)
+* [Document-Based Authoring ](#document-based) - Such as Microsoft Word or Google Docs
 
 ## Universal Editor Authoring {#universal-editor}
 
@@ -48,8 +43,11 @@ Details of the blocks can then be configured in the Properties rail.
 
 For details on how to author using the Universal Editor, please see the document [Authoring Content with the Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-Please see the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/edge-dev-getting-started.md) to learn how to start your own project to author with AEM and Edge Delivery Services.
+Please see the [Developer Getting Started Guide for AEM Authoring with Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) to learn how to start your own project to author with AEM and Edge Delivery Services.
 
-## How to get started {#how-to-get-started}
+## Document-Based Authoring  {#document-based}
 
-Please contact your Adobe representative to get access to this feature.
+When using document-based authoring, you can work with a variety of sources such as Microsoft Word and Google Docs documents. Documents from these sources become pages on your website. Headings, lists, images, font elements, videos can all be transferred from the initial source into your website. You can add metadata for SEO purposes or use blocks to work with structured content and add functionality.
+
+For further details on document-based authoring, please refer to [this document in the Edge Delivery Services documentation.](/help/edge/docs/authoring.md)
+
