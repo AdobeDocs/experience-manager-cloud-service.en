@@ -185,7 +185,7 @@ Both Signature APIs and Encryption APIs are [Synchronous APIs](#types-of-communi
 
 ### Reader Extension Service
 
-The Reader Extensions service enables your organization to easily share interactive PDF documents by extending the functionality of Adobe Reader with additional usage rights. The Reader Extensions service works with Adobe Reader 7.0 or later. The service adds usage rights to a PDF document. This action activates features that are not usually available when a PDF document is opened using Adobe Reader, such as adding comments to a document, filling forms, and saving the document.
+The Reader Extensions Service enables your organization to easily share interactive PDF documents by extending the functionality of Adobe Reader with additional usage rights. The Reader Extensions service works with Adobe Reader 7.0 or later. The service adds usage rights to a PDF document. This action activates features that are not usually available when a PDF document is opened using Adobe Reader, such as adding comments to a document, filling forms, and saving the document.
 
 >[!NOTE]
 >Third-party users do not require additional software or plug-ins to work with rights-enabled documents.
@@ -233,6 +233,7 @@ The various usage rights capabilities with Reader Extension Services are:
     * **Message**: The message displayed within Adobe Acrobat Reader on opening a PDF document with one or more usage rights applied.
     * **Unlock Password**: The password required for opening an encrypted PDF document. Typically, this is the document open password but if the PDF document is additionally protected by a permissions password, either may be used to open it.
 
+The [API reference documentation](https://adobe-aem-document-experimental.redoc.ly/) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to postman to check functionality of APIs.
 
 ## Types of communications APIs {#types}
 
