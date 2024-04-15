@@ -2,9 +2,9 @@
 title: What are Forms as a Cloud Service Communication APIs?
 description: Use communication APIs to Sign, Certify, or protect your documents, to automate PDF generation processes, and to convert PDF document to another format.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 ---
 # Introduction to AEM Forms as a Cloud Service Communications {#frequently-asked-questions}
 
@@ -187,10 +187,12 @@ Both Signature APIs and Encryption APIs are [Synchronous APIs](#types-of-communi
 
 ### Reader Extension Service
 
-<span class="preview"> The Reader Extension Service capability is under Early Adopter Program. You can write to `aem-forms-ea@adobe.com` from your official email id to join the early adopter program and request access to the capability. </span>
+<span class="preview"> The Reader Extension Service capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
   
-The Reader Extensions Service enables your organization to easily share interactive PDF documents by extending the functionality of Adobe Reader with additional usage rights. The Reader Extensions service works with Adobe Reader. The service adds usage rights to a PDF document. This action activates features that are not usually available when a PDF document is opened using Adobe Reader, such as adding comments to a document, filling forms, and saving the document.
+The Reader Extensions Service enables your organization to easily share interactive PDF documents by extending the functionality of Adobe Reader with additional usage rights. The Reader Extensions service works with Adobe Reader 7.0 or later. The service adds usage rights to a PDF document. This action activates features that are not usually available when a PDF document is opened using Adobe Reader, such as adding comments to a document, filling forms, and saving the document.
 
+>[!NOTE]
+>Third-party users do not require additional software or plug-ins to work with rights-enabled documents.
 
 When PDF documents have the appropriate usage rights added, recipients can do the following activities from within Adobe Reader:
 
@@ -236,7 +238,7 @@ The various usage rights capabilities with Reader Extension Services are:
 * **Message**: The message displayed within Adobe Acrobat Reader on opening a PDF document with one or more usage rights applied.
 * **Unlock Password**: The password required for opening an encrypted PDF document. Typically, this is the document open password but if the PDF document is additionally protected by a permissions password, either may be used to open it.
 
-The [API reference documentation](https://adobe-aem-document-experimental.redoc.ly/) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to postman to check functionality of APIs.
+The [API reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to postman to check functionality of APIs.
 
 ## Types of communications APIs {#types}
 
