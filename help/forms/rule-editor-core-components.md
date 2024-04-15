@@ -6,6 +6,13 @@ role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
 ---
+
+<span class="preview"> This article contains content for some pre-release features. These pre-release features are accessible only through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). The features under the pre-release program are: 
+* Support for implementing nested conditions with When-then-else functionality
+* Validate or reset panels and forms, including fields 
+* Support for modern JavaScript features such as let and arrow functions (ES10 support) within custom functions. 
+</span>
+
 # Add rules to an Adaptive Form (Core Components) {#adaptive-forms-rule-editor}
 
 The rule editor feature empowers forms business users and developers to write rules on Adaptive Form objects. These rules define actions to trigger on form objects based on preset conditions, user inputs, and user actions on the form. It helps further streamline the form filling experience ensuring accuracy and speed.
@@ -563,17 +570,18 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Custom functions in rule editor {#custom-functions}
 
-You can also use custom functions in your rule editor. For instructions on creating custom functions, refer to the article [Custom Functions in Adaptive Forms](/help/forms/create-and-use-custom-functions.md).
+Apart from the out-of-the-box functions like *Sum of* that are listed under **Functions Output**, you can also use custom functions in your rule editor. Rule editor supports JavaScript ECMAScript 2019 syntax for scripts and custom functions. For instructions on creating custom functions, refer to the article [Custom Functions in Adaptive Forms](/help/forms/create-and-use-custom-functions.md).
 
-Apart from the out-of-the-box functions like *Sum of* that are listed under Functions Output, you can write custom functions that you frequently need. Ensure that the function you write is accompanied by the `jsdoc` above it.
+<!--
+
+Ensure that the function you write is accompanied by the `jsdoc` above it. Adaptive Form supports the various [JavaScript annotations for custom functions](/help/forms/create-and-use-custom-functions.md#js-annotations).
+
+For more information, see [jsdoc.app](https://jsdoc.app/).
 
 Accompanying `jsdoc` is required:
 
 * If you want custom configuration and description
 * Because there are multiple ways to declare a function in `JavaScript,` and comments let you keep a track of the functions.
-
-Rule editor supports JavaScript ES2015 syntax for scripts and custom functions.
-For more information, see [jsdoc.app](https://jsdoc.app/).
 
 Supported `jsdoc` tags:
 
@@ -594,16 +602,16 @@ Supported `jsdoc` tags:
   `{type}` represents parameter type. Allowed parameter types are:
 
     1. string
-    1. number
-    1. boolean
-    1. scope
-    1. string[]
-    1. number[]
-    1. boolean[]
-    1. date
-    1. date[]
-    1. array
-    1. object
+    2. number
+    3. boolean
+    4. scope
+    5. string[]
+    6. number[]
+    7. boolean[]
+    8. date
+    9. date[]
+    10. array
+    11. object
 
    `scope` refers to a special globals object which is provided by forms runtime. It must be the last parameter and is not be visible to the user in the rule editor. You can use scope to access readable form and field proxy object to read properties, event which triggered the rule and a set of functions to manipulate the form.
 
@@ -639,7 +647,6 @@ By default all parameters are mandatory. You can mark a parameter optional by ad
 
   All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case-sensitive.
 
-<!--
 **Adding a custom function**
 
 For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
@@ -647,7 +654,7 @@ For example, you want to add a custom function which calculates area of a square
 To create a client library and add it in the CRX repository, perform the following steps:
 
 1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
-1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
+2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >
