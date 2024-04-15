@@ -44,8 +44,7 @@ JavaScript annotations are used to provide metadata for JavaScript code. It incl
   * `@func [functionName] <Function Name>`.
   `functionName` is the name of the function. Spaces are not allowed.
   `<Function Name>` is the display name of the function in the rule editor of an Adaptive Form.
-    If the function name is identical to the name of the function itself, you can omit `[functionName]` from the syntax. <!-- For example,  in the `calculateAge` custom function, the name is defined as:
-`* @name calculateAge` -->
+    If the function name is identical to the name of the function itself, you can omit `[functionName]` from the syntax. 
 
 #### Parameter
 
