@@ -184,11 +184,11 @@ You can accomplish these tasks using the Encryption APIs:
 
 Both Signature APIs and Encryption APIs are [Synchronous APIs](#types-of-communications-apis-types). 
 
-### Reader Extension Service
+### Usage Rights APIs
 
-<span class="preview"> The Reader Extension Service capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+<span class="preview"> The Usage Rights capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
   
-The Reader Extensions Service enables your organization to easily share interactive PDF documents by extending the functionality of Adobe Reader with additional usage rights. The Reader Extensions service works with Adobe Reader 7.0 or later. The service adds usage rights to a PDF document. This action activates features that are not usually available when a PDF document is opened using Adobe Reader, such as adding comments to a document, filling forms, and saving the document.
+The Usage Rights capability enables your organization to easily share interactive PDF documents by extending the functionality of Adobe Reader with additional usage rights. The service works with Adobe Reader 7.0 or later and adds usage rights to a PDF document. This action activates features that are not usually available when a PDF document is opened using Adobe Reader, such as adding comments to a document, filling forms, and saving the document.
 
 >[!NOTE]
 >Third-party users do not require additional software or plug-ins to work with rights-enabled documents.
@@ -202,11 +202,13 @@ When PDF documents have the appropriate usage rights added, recipients can do th
 * Submit completed or annotated PDF documents electronically.
 * Use PDF documents and forms as an intuitive development front end to internal databases and web services.
 * Share PDF documents with others so that reviewers can add comments by using intuitive markup tools. These tools include electronic sticky notes, stamps, highlights, and text strikethrough. The same functions are available in Acrobat.
-* Support barcoded forms decoding.
+* Support Barcoded Forms decoding.
 
 These special usage rights capabilities are automatically activated when a rights-enabled PDF document is opened within Adobe Reader. When the user is finished working with a rights-enabled document, those functions are again disabled in Adobe Reader. They remain disabled until the user receives another rights-enabled PDF document.
 
-The various usage rights capabilities with Reader Extension Services are:
+#### Enable or disable usage rights
+
+The various usage rights capabilities for extending PDF Reader services are:
 
   * **Barcodes Decoding**: To decode barcodes within the PDF document.
 
@@ -232,7 +234,11 @@ The various usage rights capabilities with Reader Extension Services are:
 
   * **Submit Standalone**: To submit form data offline from a PDF document.
 
-**Other capabilities in Reader Extension Services**
+#### Extract usage rights
+
+It helps to retrieve the usage rights enabled or disabled to a PDF document for Adobe Acrobat Reader extensibility.
+
+#### Other capabilities
 
 * **Message**: The message displayed within Adobe Acrobat Reader on opening a PDF document with one or more usage rights applied.
 * **Unlock Password**: The password required for opening an encrypted PDF document. Typically, this is the document open password but if the PDF document is additionally protected by a permissions password, either may be used to open it.
