@@ -36,8 +36,10 @@ Custom functions are essentially client libraries that are added in the JavaScri
 
 JavaScript annotations are used to provide metadata for JavaScript code. It includes comments that start with specific symbols for example, /** and @. The annotations provide important information about functions, variables, and other elements in the code. Adaptive Form supports the following JavaScript annotations for custom functions:
 
-* **Name**
+#### Name
+
   The name is used to identify the custom function in the rule editor of an Adaptive form. Following syntaxes are used to name a custom function:
+
   * `@name [functionName] <Function Name>`
   * `@function [functionName] <Function Name>`
   * `@func [functionName] <Function Name>`.
@@ -46,8 +48,10 @@ JavaScript annotations are used to provide metadata for JavaScript code. It incl
     If the function name is identical to the name of the function itself, you can omit `[functionName]` from the syntax. <!-- For example,  in the `calculateAge` custom function, the name is defined as:
 `* @name calculateAge` -->
 
-* **Parameter**
+#### Parameter
+
  The parameter is a list of arguments used by custom functions. A function can support multiple parameters. The following syntaxes are used to define a parameter in a custom function:
+
    * `@param {type} name <Parameter Description>`
    * `@argument` `{type} name <Parameter Description>` 
    * `@arg` `{type}` `name <Parameter Description>`.
@@ -71,13 +75,15 @@ JavaScript annotations are used to provide metadata for JavaScript code. It incl
     By default, all parameters are mandatory. You can define a parameter as optional by either adding `=` after the parameter type or enclosing the parameter name in  `[]`. Parameters defined as optional in JavaScript annotations are displayed as optional in the rule editor. 
     To define a variable as an optional parameter, you can use the any of the following syntaxes:
   
-  * `@param {type=} Input1`
+    * `@param {type=} Input1`
+
     In the above line of code, `Input1` is an optional parameter without any default value. To declare optional parameter with default value:
     `@param {string=<value>} input1`
         
     `input1` as an optional parameter with the default value set to `value`. 
 
-  * `@param {type} [Input1]`
+    * `@param {type} [Input1]`
+
     In the above line of code, `Input1` is an optional parameter without any default value. To declare optional parameter with default value:
     `@param {array} [input1=<value>]`
         `input1` is an optional parameter of array type with the default value set to `value`. 
@@ -106,16 +112,18 @@ JavaScript annotations are used to provide metadata for JavaScript code. It incl
 
     The following illustration displays using the `OptionalParameterFunction` csutom function in the rule editor:
 
-    ![Optional or required parameters](/help/forms/assets/optional-default-params.png) 
+     <!-- ![Optional or required parameters ](/help/forms/assets/optional-default-params.png) -->
 
     You can save the rule without specifying a value for required parameters, but the rule is not executed and displays a warning message as:
 
-    ![incomplete rule warning message](/help/forms/assets/incomplete-rule.png) 
+    <!-- ![incomplete rule warning](/help/forms/assets/incomplete-rule.png)  -->
   
     When user leaves the optional parameter empty, then the "Undefined" value is passed to the custom function for the optional parameter.
     
-* **Return Type**
+#### Return Type
+
   The return type specifies the type of value that the custom function returns after execution. The following syntaxes are used to define a return type in a custom function:
+
   * `@return {type}`
   * `@returns {type}`
     `{type}` represents the return type of the function. The allowed return types are:
@@ -132,7 +140,8 @@ JavaScript annotations are used to provide metadata for JavaScript code. It incl
 
     The return type is not case-sensitive.
 
-* **Private**
+#### Private
+
   The custom function, declared as private, does not appear in the list of custom functions in the rule editor of an Adaptive form. By default, custom functions are public. The syntax to declare custom function as private is `@private`.
 
  To learn more about how to define optional parameters in JSDocs, [click here](https://jsdoc.app/tags-param).
@@ -388,7 +397,7 @@ Add the following code in the custom function as explained in the [create-custom
 
 ```javascript
     
-	/**
+    /**
     * enablePanel
     * @name enablePanel
     * @param {object} field1

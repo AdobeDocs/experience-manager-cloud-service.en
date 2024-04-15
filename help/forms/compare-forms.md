@@ -16,6 +16,11 @@ When form authors need to compare two distinct forms based on the fields, conten
 
    ![Compare adaptive forms](compare-two-forms.png)
 
-1. On clicking users can see two forms in the preview mode as shown in the image.
+1. On clicking, you see two forms in the preview mode. It selects the first form as the base form to compare with the second form, and compares the content between the two forms, which are similar and differentiated. The differentiated content of the first form is marked as green as shown in the image.
 
    ![Compared forms](compared-forms.png)
+
+## See Also {#see-also}
+
+{{see-also}}
+
