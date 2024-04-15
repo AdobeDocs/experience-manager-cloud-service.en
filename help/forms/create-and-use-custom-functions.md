@@ -118,7 +118,10 @@ The following illustration displays using the `OptionalParameterFunction` csutom
 You can save the rule without specifying a value for required parameters, but the rule is not executed and displays a warning message as:
 
 ![incomplete rule warning](/help/forms/assets/incomplete-rule.png)
+
 When user leaves the optional parameter empty, then the "Undefined" value is passed to the custom function for the optional parameter.
+
+To learn more about how to define optional parameters in JSDocs, [click here](https://jsdoc.app/tags-param).
     
 #### Return Type
 
@@ -144,7 +147,6 @@ When user leaves the optional parameter empty, then the "Undefined" value is pas
 
   The custom function, declared as private, does not appear in the list of custom functions in the rule editor of an Adaptive form. By default, custom functions are public. The syntax to declare custom function as private is `@private`.
 
- To learn more about how to define optional parameters in JSDocs, [click here](https://jsdoc.app/tags-param).
 
 ## Guidelines while creating custom functions {#considerations}
 
@@ -184,6 +186,8 @@ You can create a custom function with an arrow function syntax:
     
 ```
 
+If the user does not add any JavaScript annotations to the custom function, the custom function is not listed in the rule editor of an Adaptive Form.
+
 * **Function expression with mandatory JavaScript annotations or comment**
 
 To list custom functions in the rule editor of an Adaptive Form, create custom functions in the following format:
@@ -201,6 +205,8 @@ To list custom functions in the rule editor of an Adaptive Form, create custom f
             // code to be executed
         }
 ```
+
+If the user does not add any JavaScript annotations to the custom function, the custom function is not listed in the rule editor of an Adaptive Form.
 
 ## Create a custom function {#create-custom-function}
 
@@ -557,7 +563,7 @@ The following line of code:
 `globals.functions.submitForm(globals.functions.exportData(), false);` is used to submit the form data after manipulation. 
 * The first argument is the data to be submitted. 
 * The second argument represents whether the form is to be validated before submission. It is `optional` and set as `true` by default. 
-* The third argument is the `contentType` of the submission, which is also `optional` with the default value as `multipart/form-data`.
+* The third argument is the `contentType` of the submission, which is also optional with the default value as `multipart/form-data`. The values can be `application/json` and `application/x-www-form-urlencoded`.
   
 Add the following code in the custom function as explained in the [create-custom-function ](#create-custom-function) section, to submit the manipulated data at the server:
 
