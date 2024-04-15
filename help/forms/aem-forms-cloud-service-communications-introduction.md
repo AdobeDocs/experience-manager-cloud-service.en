@@ -1,7 +1,7 @@
 ---
 title: What are Forms as a Cloud Service Communication APIs?
 description: Use communication APIs to Sign, Certify, or protect your documents, to automate PDF generation processes, and to convert PDF document to another format.
-Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
+Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
 ---
