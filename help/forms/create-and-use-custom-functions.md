@@ -575,7 +575,6 @@ Add the following code in the custom function as explained in the [create-custom
     * @param {object} field
     * @param {scope} globals 
     */
-
     function submitData(globals)
     {
     
