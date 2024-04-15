@@ -23,7 +23,7 @@ Use [!DNL Assets view] to accomplish the following asset management tasks. When 
 * ![copy icon](assets/do-not-localize/copy-icon.png) Copy the selected file or folder.
 * ![move icon](assets/do-not-localize/move-icon.png) Move the selected asset or folder to a different location in the repository hierarchy.
 * ![rename icon](assets/do-not-localize/rename-icon.png) Rename the selected asset or folder. Use a unique name otherwise renaming fails with a warning. You can try again with a new name. 
-Additionally, you can click the title of an asset or a folder to rename it. Mention the new text in the **Rename Asset** textbox and click **Save**. This capability is available in Grid, Gallery, Waterfall and List views.
+Additionally, you can click the title of an asset or a folder to rename it. Mention the new text in the **Rename Asset** textbox and click **Save**. This capability is available in Grid, Gallery, Waterfall and List views. <!--in-place rename-->
 * ![assign task icon](assets/do-not-localize/review-delegate-icon.png) Assign tasks to other users to collaborate on an asset.
 
 You can view the same options on assets thumbnails.
