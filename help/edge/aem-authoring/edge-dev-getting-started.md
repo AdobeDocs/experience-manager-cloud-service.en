@@ -124,7 +124,7 @@ Now that you have a GitHub project, you must create a new AEM site that the proj
 >
 >To edit your site using the Universal Editor, you must use a Chromium-based browser.
 
-1. Request the latest AEM Authoring with Edge Delivery Services site template from Adobe Engineering via your [project Slack channel.](/help/edge/docs/slack.md)
+1. Download the latest AEM Authoring with Edge Delivery Services site template from GitHub at [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
 1. Sign in to your AEM as a Cloud Service authoring instance and navigate to the Sites console and tap or click **Create** -> **Site from template**.
 
@@ -134,7 +134,9 @@ Now that you have a GitHub project, you must create a new AEM site that the proj
 
    ![Importing templates](assets/edge-dev-getting-started/site-templates.png)
 
-1. Upload the AEM Authoring with Edge Delivery Services site template provided to you by Adobe Engineering.
+1. Upload the AEM Authoring with Edge Delivery Services site template that you downloaded from GitHub.
+
+   * The template must only be uploaded once. Once uploaded it can be reused to create additional sites.
 
 1. Once the template is imported, it appears in the wizard. Tap or click to select it and then tap or click **Next**.
 
