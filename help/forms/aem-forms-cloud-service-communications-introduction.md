@@ -4,6 +4,7 @@ description: Use communication APIs to Sign, Certify, or protect your documents,
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 ---
 # Introduction to AEM Forms as a Cloud Service Communications {#frequently-asked-questions}
 
