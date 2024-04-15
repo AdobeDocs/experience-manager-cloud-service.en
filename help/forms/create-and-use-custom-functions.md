@@ -150,7 +150,7 @@ To learn more about how to define optional parameters in JSDocs, [click here](ht
 
 To list the custom functions in the rule editor, you can use any one of the following formats:
 
-### **Function statement with or without jsdoc comments**
+### Function statement with or without jsdoc comments
 
 You can create a custom function with or without jsdoc comments. 
 
@@ -162,7 +162,7 @@ You can create a custom function with or without jsdoc comments.
 ```
 If the user does not add any JavaScript annotations to the custom function, it is listed in the rule editor by its function name. However, it is recommended to include JavaScript annotations for improved readability of the custom functions.
 
-### **Arrow function with mandatory JavaScript annotations or comment**
+### Arrow function with mandatory JavaScript annotations or comment
 
 You can create a custom function with an arrow function syntax:
 
@@ -186,7 +186,7 @@ You can create a custom function with an arrow function syntax:
 
 If the user does not add any JavaScript annotations to the custom function, the custom function is not listed in the rule editor of an Adaptive Form.
 
-### **Function expression with mandatory JavaScript annotations or comment**
+### Function expression with mandatory JavaScript annotations or comment
 
 To list custom functions in the rule editor of an Adaptive Form, create custom functions in the following format:
 
