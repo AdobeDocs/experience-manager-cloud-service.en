@@ -8,8 +8,6 @@ exl-id: 02795a31-244a-42b4-8297-2649125d7777
 
 Learn about the data attributes and item types that the Universal Editor requires.
 
-{{universal-editor-status}}
-
 ## Introduction {#introduction}
 
 In order for an app to be editable by the Universal Editor, it must be properly instrumented. This includes including the proper metadata so the editor can edit the content of the app. This document details the attributes and item types of those metadata.
@@ -28,7 +26,7 @@ In order for an app to be editable by the Universal Editor, it must be properly 
 |`data-aue-filter`|Defines which references can be used|
 |`data-aue-label`|Defines a custom label for a selectable item which is displayed in the editor <br>In case `data-aue-model` is set, the label is retrieved by way of the model|
 |`data-aue-model`|Defines a model which is used for form-based editing in the properties rail|
-|`data-aue-behavior`|Defines the [behavior of an instrumentation,](#behaviors) for example, stand alone text or image can also mimic a component to make it moveable or deletable|
+|`data-aue-behavior`|Defines the [behavior of an instrumentation](#behaviors), for example, stand alone text or image can also mimic a component to make it moveable or deletable|
 
 ## Item Types {#item-types}
 

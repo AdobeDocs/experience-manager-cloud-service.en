@@ -8,12 +8,6 @@
 
 [!BADGE For authoring AEM content for Edge Delivery Services, click here.]{type=Positive url="/help/edge/overview.md" tooltip="Authoring AEM content for Edge Delivery Services"}
 
-## Universal Editor Status {#universal-editor-status}
-
->[!NOTE]
->
->The Universal Editor is still in development and its capabilities are subject to change and may differ from what is detailed in this document.
-
 ## See Also {#see-also}
 
 * [Create an AEM Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
@@ -35,6 +29,9 @@
 * [Send Adaptive Form data to a REST endpoint](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Send Adaptive Form data to AEM Workflow](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Use Forms Portal to list AEM Adaptive Forms on an AEM website](/help/forms/configure-forms-portal.md)
+* [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+* [Compare Adaptive Forms](/help/forms/compare-forms.md)
+
 
 ## Adaptive Form Submit Actions {#af-submit-action}
 
@@ -50,10 +47,6 @@
 * [Connect Adaptive Form to Salesforce application](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
-## AEM Authoring with Edge Delivery Services Early Access {#aem-authoring-edge-early-access}
-
-[!BADGE EARLY-ACCESS TECHNOLOGY - Ask us about this feature from the AEM Sites labs on your Slack channel!]{type=Informative url="/help/edge/docs/slack.md" tooltip="AEM authoring with Edge Delivery Services is an early-access technology."}
-
 ## See also {#see-more-forms-eds}
 
 * [Get started with AEM Forms Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
@@ -64,3 +57,4 @@
 * [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
 * [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 * [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
+
