@@ -190,7 +190,7 @@ You can allow administrators to manage [access levels](https://experienceleague.
 >
 >Adobe does not recommend to assign permissions to users.
 
-For information on how to assign the available permissions to user groups, see [Add permissions to user groups](/help/using/manage-permissions.md#add-permissions).
+For information on how to assign the available permissions to user groups, see [Add permissions to user groups](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 For more information on the end-to-end workflow, see [manage permissions](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
