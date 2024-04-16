@@ -7,19 +7,43 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#release-X}
+## Release 2024.04.15897 {#release-15897}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on April X, 2024. The previous maintenance release was release 15860.
+Summarised below are the continuous improvements for maintenance release X, which was publicly released on April X, 2024. The previous maintenance release was release 15897.
 
 2024.4.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-X}
+### Enhancements {#enhancements-15}
 
-None.
+1. GRANITE-39892: Update distribution for queue size limit and publish ready
+2. GRANITE-48777: Update QS to com.adobe.granite.security.user-0.4.84 done
+3. GRANITE-49421: Added properties for the segment service principal
+4. GRANITE-49855: Write a feature model analyser that fails the Quickstart build in case of new commons.json usage
+5. GRANITE-47995: Allow to switch writing of cq:isDelivered
+6. GRANITE-36205: Update the internal oak release version to the latest
+7. GRANITE-50156 Bind AEMCS affinity to IMS User ID for Universal Editor
+8. GRANITE-50556: Upgrade crosswalk bundle to v0.1.18
+9. GRANITE-50728: Update FileVault to 3.7.3-T20240308111857-81fa88f1
+10. GRANITE-50957: Update QS to com.adobe.granite.repository to 1.8.114
+11. GRANITE-50158: Add support for OAuth Server to Server Credential flow in  YAML loader
+12. GRANITE-51327: Update Oak to the latest public release (1.62.0)
+13. SKYOPS-68091 Update Java 11 runtime images to version 3.0.0
+14. SKYOPS-70421: Upgrade the org.apache.sling.servlet-helpers bundle
+15. SKYOPS-73483: Allow logging token on AEM.
 
-### Fixed Issues {#fixed-issues-X}
 
-None.
+### Fixed Issues {#fixed-issues-10}
+
+1. GRANITE-46901: Add metrics to messaging client
+2. GRANITE-48793: Update QS to com.adobe.granite.crx-explorer-1.1.28
+3. GRANITE-48937: Omniseaarch doesn't work on aem/start.html page
+4. GRANITE-49638: Fix wrong content type configuration for the RUM transformer factory
+5. GRANITE-50141: IMSProviderImpl is spamming the log
+6. SITES-20949: ComponentsIT.testEmbed failing after Youtube added referrerpolicy="strict-origin-when-cross-origin".
+7. SITES-21233: Core Components update - Fix Accordion for GS1 US after upgrade to 15860
+8. SKYOPS-74819: Broken backwards compatibility for duplicate keys in Apache Commons
+9. SKYOPS-67087: Clientlib aggregation not working in certain cases
+10. CQ-4355415: AEM Notifications links is not working in 6.5 SP18.
 
 ### Known Issues {#known-issues-X}
 
