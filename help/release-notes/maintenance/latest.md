@@ -7,42 +7,31 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 15860 {#release-15860}
+## Release X {#release-X}
 
-Summarized below are the continuous improvements for maintenance release 15860, which was publicly released on April 10, 2024. The previous maintenance release was release 15787.
+Summarized below are the continuous improvements for maintenance release X, which was publicly released on April X, 2024. The previous maintenance release was release 15860.
 
-2024.3.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
+2024.4.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-15860}
-
-None.
-
-### Fixed Issues {#fixed-issues-15860}
-
-* Fixes regression for displaying Launches console when a launch refers to a deleted or moved page.
-
-### Known Issues {#known-issues-15860}
+### Enhancements {#enhancements-X}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-15860}
+### Fixed Issues {#fixed-issues-X}
+
+None.
+
+### Known Issues {#known-issues-X}
+
+None.
+
+### Deprecated Features and APIs {#deprecated-X}
 
 * [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
 Have a look at [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) to know what has been deprecated or removed in AEM as a Cloud Service.
 
-### Change Notice {#change-notice-15860}
-
-**Actions Required**
-
-#### Set CM Java Version to 11 {#set-java-version-11}
-
-The new version of the aem-sdk-api contains classes compiled with a Java 11 target, which is not compatible with the Cloud Manager Build environment default JDK version 1.8. This update requires that Maven is executed using JDK 11.
-
-Customers are advised to add a `.cloudmanager/java-version` file to the root of their git repo with the contents: `11`. See [Build Environment / Setting the Maven JDK Version](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version).
-
-
-### Embedded Technologies {#embedded-tech-15860}
+### Embedded Technologies {#embedded-tech-X}
 
 |Technology|Version|Link|
 |---|---|---|
