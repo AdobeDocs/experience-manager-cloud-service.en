@@ -22,7 +22,8 @@ Use [!DNL Assets view] to accomplish the following asset management tasks. When 
 * ![checkout icon](assets/do-not-localize/checkout-icon.png) Checkout the selected asset.
 * ![copy icon](assets/do-not-localize/copy-icon.png) Copy the selected file or folder.
 * ![move icon](assets/do-not-localize/move-icon.png) Move the selected asset or folder to a different location in the repository hierarchy.
-* ![rename icon](assets/do-not-localize/rename-icon.png) Rename the selected asset or folder. Use a unique name otherwise renaming fails with a warning. You can try again with a new name.
+* ![rename icon](assets/do-not-localize/rename-icon.png) Rename the selected asset or folder. Use a unique name otherwise renaming fails with a warning. You can try again with a new name. 
+Additionally, you can click the title of an asset or a folder to rename it. Mention the new text in the **Rename Asset** textbox and click **Save**. This capability is available in Grid, Gallery, Waterfall and List views. <!--in-place rename-->
 * ![assign task icon](assets/do-not-localize/review-delegate-icon.png) Assign tasks to other users to collaborate on an asset.
 
 You can view the same options on assets thumbnails.
@@ -142,3 +143,4 @@ To add Expiration Date metadata field to the form,  drag **[!UICONTROL Date]** c
 * Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
 
 * Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)
+
