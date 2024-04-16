@@ -9,7 +9,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 15897 {#release-15897}
 
-Summarized below are the continuous improvements for maintenance release 15897, which was publicly released on April 16, 2024. The previous maintenance release was release 15860.
+Summarized below are the continuous improvements for maintenance release 15897, which was publicly released on April 17, 2024. The previous maintenance release was release 15860.
 
 2024.4.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
