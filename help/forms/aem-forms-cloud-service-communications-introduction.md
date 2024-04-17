@@ -191,9 +191,6 @@ Both Signature APIs and Encryption APIs are [Synchronous APIs](#types-of-communi
   
 The Usage Rights capability enables your organization to easily share interactive PDF documents by extending the functionality of Adobe Reader with additional usage rights. The service works with Adobe Reader 7.0 or later and adds usage rights to a PDF document. This action activates features that are not usually available when a PDF document is opened using Adobe Reader, such as adding comments to a document, filling forms, and saving the document.
 
->[!NOTE]
->Third-party users do not require additional software or plug-ins to work with rights-enabled documents.
-
 When PDF documents have the appropriate usage rights added, recipients can do the following activities from within Adobe Reader:
 
 * Complete PDF documents and forms online or offline, allowing recipients to save copies locally for their records and still keep added information intact.
