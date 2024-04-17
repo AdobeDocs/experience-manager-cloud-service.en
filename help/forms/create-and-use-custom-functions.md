@@ -17,6 +17,11 @@ Ensure that the [core component is set to version 3.0.8](https://github.com/adob
 
 # Custom functions in Adaptive Forms (Core Components)
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions)                  |
+| AEM as a Cloud Service     | This article         |
+
 ## Introduction
 
 AEM Forms supports custom functions, allowing users to define JavaScript functions for implementing complex business rules. These custom functions extend the capabilities of forms by facilitating manipulation and processing of entered data to meet specified requirements. They also enable dynamic alteration of form behavior based on predefined criteria. 
@@ -24,7 +29,6 @@ AEM Forms supports custom functions, allowing users to define JavaScript functio
 ### Uses of custom functions {#uses-of-custom-function}
 
 Advantages of using custom functions in Adaptive Forms are:
-
 * **Processing of data**: Custom functions help process data entered into the forms fields.
 * **Validation of data**: Custom functions enable you to perform custom checks on form inputs and provide specified error messages.
 * **Dynamic behavior**: Custom functions allow you to control the dynamic behavior of your forms based on specific conditions. For example, you can show/hide fields, modify field values, or adjust form logic dynamically.
@@ -36,18 +40,21 @@ Custom functions are essentially client libraries that are added in the JavaScri
 
 JavaScript annotations are used to provide metadata for JavaScript code. It includes comments that start with specific symbols for example, /** and @. The annotations provide important information about functions, variables, and other elements in the code. Adaptive Form supports the following JavaScript annotations for custom functions:
 
-* **Name**
+#### Name
+
   The name is used to identify the custom function in the rule editor of an Adaptive form. Following syntaxes are used to name a custom function:
+
   * `@name [functionName] <Function Name>`
   * `@function [functionName] <Function Name>`
   * `@func [functionName] <Function Name>`.
   `functionName` is the name of the function. Spaces are not allowed.
   `<Function Name>` is the display name of the function in the rule editor of an Adaptive Form.
-    If the function name is identical to the name of the function itself, you can omit `[functionName]` from the syntax. <!-- For example,  in the `calculateAge` custom function, the name is defined as:
-`* @name calculateAge` -->
+    If the function name is identical to the name of the function itself, you can omit `[functionName]` from the syntax. 
 
-* **Parameter**
+#### Parameter
+
  The parameter is a list of arguments used by custom functions. A function can support multiple parameters. The following syntaxes are used to define a parameter in a custom function:
+
    * `@param {type} name <Parameter Description>`
    * `@argument` `{type} name <Parameter Description>` 
    * `@arg` `{type}` `name <Parameter Description>`.
@@ -62,32 +69,35 @@ JavaScript annotations are used to provide metadata for JavaScript code. It incl
       * date[]: Represents an array of date values.
       * array: Represents a generic array containing values of various types.
       * object: Represents form object passed to a custom function instead of passing its value directly.
-      * scope: Represents global object used by custom functions at the runtime. It is declared as the last parameter in JavaScript annotations and is not visible in the rule editor of an Adaptive Form. The scope parameter accesses the object of the form or component to trigger the rule or event required for form processing.
+      * scope: Represents the globals object, which contains read-only variables such as form instances, target field instances, and methods for performing form modifications within custom functions. It is declared as the last parameter in JavaScript annotations and is not visible in the rule editor of an Adaptive Form. The scope parameter accesses the object of the form or component to trigger the rule or event required for form processing. For further information on the Globals object and how to use it, [click here](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
     
-    The parameter type is not case-sensitive and spaces are not allowed in the parameter name.
+The parameter type is not case-sensitive and spaces are not allowed in the parameter name.
  
-    `<Parameter Description>` contains details about the purpose of the parameter. It can have multiple words.
+`<Parameter Description>` contains details about the purpose of the parameter. It can have multiple words.
+
+**Optional Parameters**
+By default, all parameters are mandatory. You can define a parameter as optional by either adding `=` after the parameter type or enclosing the parameter name in  `[]`. Parameters defined as optional in JavaScript annotations are displayed as optional in the rule editor. 
+To define a variable as an optional parameter, you can use the any of the following syntaxes:
   
-    By default, all parameters are mandatory. You can define a parameter as optional by either adding `=` after the parameter type or enclosing the parameter name in  `[]`. Parameters defined as optional in JavaScript annotations are displayed as optional in the rule editor. 
-    To define a variable as an optional parameter, you can use the any of the following syntaxes:
-  
-  * `@param {type=} Input1`
-    In the above line of code, `Input1` is an optional parameter without any default value. To declare optional parameter with default value:
-    `@param {string=<value>} input1`
+* `@param {type=} Input1`
+
+In the above line of code, `Input1` is an optional parameter without any default value. To declare optional parameter with default value:
+`@param {string=<value>} input1`
         
-    `input1` as an optional parameter with the default value set to `value`. 
+`input1` as an optional parameter with the default value set to `value`. 
 
-  * `@param {type} [Input1]`
-    In the above line of code, `Input1` is an optional parameter without any default value. To declare optional parameter with default value:
-    `@param {array} [input1=<value>]`
-        `input1` is an optional parameter of array type with the default value set to `value`. 
-       Ensure that the parameter type is enclosed in curly brackets {} and the parameter name is enclosed in square brackets []. 
+* `@param {type} [Input1]`
 
-    Consider the following code snippet, where input2 is defined as an optional parameter:
+In the above line of code, `Input1` is an optional parameter without any default value. To declare optional parameter with default value:
+`@param {array} [input1=<value>]`
+    `input1` is an optional parameter of array type with the default value set to `value`. 
+    Ensure that the parameter type is enclosed in curly brackets {} and the parameter name is enclosed in square brackets []. 
 
-    ```javascript
+Consider the following code snippet, where input2 is defined as an optional parameter:
 
-         /**
+```javascript
+
+        /**
          * optional parameter function
          * @name OptionalParameterFunction
          * @param {string} input1 
@@ -102,20 +112,24 @@ JavaScript annotations are used to provide metadata for JavaScript code. It incl
         }
         return result;
         }
-    ```
+```
 
-    The following illustration displays using the `OptionalParameterFunction` csutom function in the rule editor:
+The following illustration displays using the `OptionalParameterFunction` csutom function in the rule editor:
 
-    ![Optional or required parameters](/help/forms/assets/optional-default-params.png) 
+![Optional or required parameters ](/help/forms/assets/optional-default-params.png) 
 
-    You can save the rule without specifying a value for required parameters, but the rule is not executed and displays a warning message as:
+You can save the rule without specifying a value for required parameters, but the rule is not executed and displays a warning message as:
 
-    ![incomplete rule warning message](/help/forms/assets/incomplete-rule.png) 
-  
-    When user leaves the optional parameter empty, then the "Undefined" value is passed to the custom function for the optional parameter.
+![incomplete rule warning](/help/forms/assets/incomplete-rule.png)
+
+When user leaves the optional parameter empty, then the "Undefined" value is passed to the custom function for the optional parameter.
+
+To learn more about how to define optional parameters in JSDocs, [click here](https://jsdoc.app/tags-param).
     
-* **Return Type**
+#### Return Type
+
   The return type specifies the type of value that the custom function returns after execution. The following syntaxes are used to define a return type in a custom function:
+
   * `@return {type}`
   * `@returns {type}`
     `{type}` represents the return type of the function. The allowed return types are:
@@ -132,16 +146,16 @@ JavaScript annotations are used to provide metadata for JavaScript code. It incl
 
     The return type is not case-sensitive.
 
-* **Private**
+#### Private
+
   The custom function, declared as private, does not appear in the list of custom functions in the rule editor of an Adaptive form. By default, custom functions are public. The syntax to declare custom function as private is `@private`.
 
- To learn more about how to define optional parameters in JSDocs, [click here](https://jsdoc.app/tags-param).
 
 ## Guidelines while creating custom functions {#considerations}
 
 To list the custom functions in the rule editor, you can use any one of the following formats:
 
-* **Function statement with or without jsdoc comments**
+### Function statement with or without jsdoc comments
 
 You can create a custom function with or without jsdoc comments. 
 
@@ -153,7 +167,7 @@ You can create a custom function with or without jsdoc comments.
 ```
 If the user does not add any JavaScript annotations to the custom function, it is listed in the rule editor by its function name. However, it is recommended to include JavaScript annotations for improved readability of the custom functions.
 
-* **Arrow function with mandatory JavaScript annotations or comment**
+### Arrow function with mandatory JavaScript annotations or comment
 
 You can create a custom function with an arrow function syntax:
 
@@ -175,7 +189,9 @@ You can create a custom function with an arrow function syntax:
     
 ```
 
-* **Function expression with mandatory JavaScript annotations or comment**
+If the user does not add any JavaScript annotations to the custom function, the custom function is not listed in the rule editor of an Adaptive Form.
+
+### Function expression with mandatory JavaScript annotations or comment
 
 To list custom functions in the rule editor of an Adaptive Form, create custom functions in the following format:
 
@@ -192,6 +208,8 @@ To list custom functions in the rule editor of an Adaptive Form, create custom f
             // code to be executed
         }
 ```
+
+If the user does not add any JavaScript annotations to the custom function, the custom function is not listed in the rule editor of an Adaptive Form.
 
 ## Create a custom function {#create-custom-function}
 
@@ -353,34 +371,37 @@ You can use custom functions to add personalized features to forms. These functi
 
 ### Field and Global scope objects in custom functions {#support-field-and-global-objects}
 
-Field objects refers to the individual components or elements within a form, such as text fields, checkboxes. Global scope objects refer to the global variables or settings that are accessible across the entire form. Let us look at the following code snippet:
+Field objects refers to the individual components or elements within a form, such as text fields, checkboxes. The Globals object contains read-only variables such as form instance, target field instance and methods to do form modifications within custom functions. 
+
+>[!NOTE]
+>
+> The `param {scope} globals` has to be the last parameter and it is not displayed in the rule editor of an Adaptive Form.
+
+<!-- Let us look at the following code snippet:
 
 ```JavaScript
+   
     /**
     * updateDateTime
     * @name updateDateTime
     * @param {object} field
-    * @param {scope} globals 
+    * @param {scope} globals
     */
     function updateDateTime(field, globals) {
     // Accessing the Date object from the global scope
     var currentDate = new Date();
     // Formatting the date and time
     var formattedDateTime = currentDate.toLocaleString();
-    // Updating the field value with the formatted date and time
-    field.value = formattedDateTime;
+    // Updating the field value with the formatted date and time using setProperty.
+    globals.functions.setProperty(field, {value: formattedDateTime});
     }
 ```
 
->[!NOTE]
->
-> The `param {scope} globals` has to be the last parameter and it is not displayed in the rule editor of an Adaptive Form.
-
-In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The date and time objects are accessed using the global scope. The field represents the textbox object where the formatted date and time value is displayed within the form.
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
 Let's learn how custom functions use field and global objects with the help of a `Contact Us` form using different usecases.
 
- ![Contact Us Form](/help/forms/assets/contact-us-form.png)
+![Contact Us Form](/help/forms/assets/contact-us-form.png)
 
 #### **Use Case**: Show a panel using the `SetProperty` rule
 
@@ -388,7 +409,7 @@ Add the following code in the custom function as explained in the [create-custom
 
 ```javascript
     
-	/**
+    /**
     * enablePanel
     * @name enablePanel
     * @param {object} field1
@@ -407,7 +428,8 @@ Add the following code in the custom function as explained in the [create-custom
 
 >[!NOTE]
 >
-> You can configure the field properties using the available properties located in `[form-path]/jcr:content/guideContainer.model.json`.
+> * You can configure the field properties using the available properties located in `[form-path]/jcr:content/guideContainer.model.json`.
+> * Modifications made to the form using the `setProperty` method of the Globals object are asynchronous in nature and are not reflected during the execution of the custom function.
 
 In this example, validation of the `personaldetails` panel occurs upon clicking the button. If no errors are detected in the panel, another panel, the `feedback` panel, becomes visible upon button click.
 
@@ -544,7 +566,7 @@ The following line of code:
 `globals.functions.submitForm(globals.functions.exportData(), false);` is used to submit the form data after manipulation. 
 * The first argument is the data to be submitted. 
 * The second argument represents whether the form is to be validated before submission. It is `optional` and set as `true` by default. 
-* The third argument is the `contentType` of the submission, which is also `optional` with the default value as `multipart/form-data`.
+* The third argument is the `contentType` of the submission, which is also optional with the default value as `multipart/form-data`. The other values can be `application/json` and `application/x-www-form-urlencoded`.
   
 Add the following code in the custom function as explained in the [create-custom-function ](#create-custom-function) section, to submit the manipulated data at the server:
 
@@ -556,7 +578,6 @@ Add the following code in the custom function as explained in the [create-custom
     * @param {object} field
     * @param {scope} globals 
     */
-
     function submitData(globals)
     {
     
