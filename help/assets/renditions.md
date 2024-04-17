@@ -33,7 +33,7 @@ These renditions enable organizations to deliver personalized and optimized expe
 
 To view or download dynamic renditions of images in [!DNL Experience Manager Assets], follow these steps:
 
-1. Go to **AEM Assets** > **[!UICONTROL Assets Management]** > **[!UICONTROL Assets]**.
+1. Go to **[!UICONTROL Assets Management]** > **[!UICONTROL Assets]**.
 
 1. Navigate to the applicable asset folder.
 
@@ -46,7 +46,9 @@ To view or download dynamic renditions of images in [!DNL Experience Manager Ass
 
 1. Click the rendition you need to view or download.
 
-1. Click the ![download icon](assets/do-not-localize/download-icon.png) icon next to the rendition you need to download. <br> Alternatively, you can select the image rendition, and click **[!UICONTROL Download Rendition]** option at the bottom.
+1. Click the ![download icon](assets/do-not-localize/download-icon.png) icon next to the dynamic rendition you need to download. <br> Alternatively, you can select the image rendition, and click **[!UICONTROL Download Rendition]** option at the bottom. 
+
+   You can click the ![download icon](assets/do-not-localize/download-icon.png) icon available at the top of **[!UICONTROL Smart Crop]** renditions section to download all available Smart Crop renditions for that asset.
 
 >[!NOTE]
 >
