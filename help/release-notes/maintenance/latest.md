@@ -46,7 +46,7 @@ Summarized below are the continuous improvements for maintenance release 15897, 
 
 ### Known Issues {#known-issues-15897}
 
-* SITES-21239: Remove ContentFragmentSearchService circular dependency.
+None.
 
 ### Deprecated Features and APIs {#deprecated-15897}
 
