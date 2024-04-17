@@ -39,7 +39,7 @@ Summarized below are the continuous improvements for maintenance release 15939, 
 * GRANITE-49638: Fix wrong content type configuration for the RUM transformer factory.
 * GRANITE-50141: IMSProviderImpl is spamming the log.
 * SITES-20949: ComponentsIT.testEmbed failing after Youtube added referrerpolicy="strict-origin-when-cross-origin".
-* SITES-21233: Core Components update - Fix Accordion for GS1 US after upgrade to 15860.
+* SITES-21233: Core Components update - Fix Accordion after upgrade to 15860.
 * SKYOPS-74819: Broken backwards compatibility for duplicate keys in Apache Commons.
 * SKYOPS-67087: Clientlib aggregation not working in certain cases.
 * CQ-4355415: AEM Notifications links is not working in 6.5 SP18.
