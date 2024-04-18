@@ -147,6 +147,20 @@ To assign a metadata form to a folder:
 
    ![Metadata form from folder properties](assets/metadata-from-folder-props.png)
 
+### Remove metadata form from folders {#remove-metadata-form-folder}
+
+After assigning a metadata form to one or multiple folders, Experience Manager Assets also enables you to remove metadata form from the selected folders.
+
+To remove a metadata form from a folder:
+
+1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]** and select a metadata form.
+
+1. Click **[!UICONTROL Remove from Folder(s)]**. The list of assigned folders for the metadata form display.
+
+1. Select the folder and click **[!UICONTROL Remove]**. You can also select multiple folders from the list.
+
+You can also navigate to the folder details page and select **[!UICONTROL System mapped Metadata Form]** from the **[!UICONTROL Metadata Forms]** field to remove the assigned metadata form from a folder.
+
 ## Next Steps {#next-steps}
 
 * [Watch a video to manage metadata forms in Assets view](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
