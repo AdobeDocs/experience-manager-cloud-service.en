@@ -59,6 +59,7 @@ JavaScript annotations are used to provide metadata for JavaScript code. It incl
    * `@argument` `{type} name <Parameter Description>` 
    * `@arg` `{type}` `name <Parameter Description>`.
     `{type}` represents the parameter type.  The allowed parameter types are:
+    
       * string: Represents a single string value.
       * number: Represents a single numeric value.
       * boolean: Represents a single boolean value (true or false).
