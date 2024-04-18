@@ -160,23 +160,23 @@ Real User Monitoring (RUM) Data Service offers a more precise reflection of user
 
 ### CDN Configuration {#cdn-config}
 
-Configure CDN traffic using these new features:
+Get more value out of the Adobe CDN through additional configuration options.
 
-* [Request transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)
-* [Response transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations)
+* [Request transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) - modify aspects of incoming requests, including paths, query parameters, and HTTP headers before they are routed to AEM.
+* [Response transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) - change HTTP headers of the outgoing responses before they are served to the browser.
 * [Origin selectors](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - route traffic to non-AEM applications.
 
-Configuring 301/302 redirects in git will soon be supported, as well; see the early adopter program below. 
+Once these rules are declared in source control (git), you can deploy them to the CDN using the Cloud Manager Configuration Pipeline. 
 
-### Customize CDN error pages {#cdn-error-pages}
+### Custom CDN error pages {#cdn-error-pages}
 
-In the unlikely event that the CDN cannot route traffic to the AEM origin, a [custom error page](/help/implementing/dispatcher/cdn-error-pages.md) can be declared, replacing the generic version.
+In the unlikely event that the CDN cannot route traffic to the AEM origin, a custom error page can be declared, replacing the generic version. [Learn more](/help/implementing/dispatcher/cdn-error-pages.md) about how to serve branded error pages.
 
 ### Early Adopter Programs {#foundation-early-adopter}
 
 #### Client-side redirects (Early Adopter Program) {#traffic-filter-rules-alerts-early-adopter}
 
-Configure 301/302 client-side redirects. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**.
+Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**.
 
 #### Traffic Filter Rules Alerts (Early Adopter Program) {#traffic-filter-rules-alerts-early-adopter}
 
