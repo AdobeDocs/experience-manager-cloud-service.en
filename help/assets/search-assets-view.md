@@ -244,11 +244,11 @@ To access Contextual Search in Experience Manager Assets:
 
 1. Click **[!UICONTROL Search]** in the left pane.
 
-   ![Contextual Search](/help/using/assets/access-contextual-search.png)
+   ![Contextual Search](assets/access-contextual-search.png)
 
 1. Define the text prompt in the Search text box and click **[!UICONTROL Contextual Search]**.
 
-   ![Contextual Search text prompt](/help/using/assets/contextual-search-text-prompt.png)
+   ![Contextual Search text prompt](assets/contextual-search-text-prompt.png)
 
    [!DNL Experience Manager Assets] displays the search results.
 
@@ -283,7 +283,7 @@ Contextual Search supports the following filters out-of-the-box. Base your text 
 
 [!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
 
-![Contextual Search Example 1](/help/using/assets/contextual-search-example1.png)
+![Contextual Search Example 1](assets/contextual-search-example1.png)
 
 **Example 2**
 
@@ -291,7 +291,7 @@ Contextual Search supports the following filters out-of-the-box. Base your text 
 
 [!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
 
-![Contextual Search Example 2](/help/using/assets/contextual-search-example2.png)
+![Contextual Search Example 2](assets/contextual-search-example2.png)
 
 **Example 3**
 
@@ -299,7 +299,7 @@ Contextual Search supports the following filters out-of-the-box. Base your text 
 
 [!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
 
-![Contextual Search Example 3](/help/using/assets/contextual-search-example3.png)
+![Contextual Search Example 3](assets/contextual-search-example3.png)
 
 The following video illustrates the end-to-end process from accessing the Contextual Search User Interface to defining text prompts, and viewing the search results.
 
@@ -317,7 +317,7 @@ Administrators also have the option to disable Contextual Search for users in yo
 
 If you need to provide feedback on the Contextual Search feature, click ![Contextual Search icon](assets/do-not-localize/contextual-search-icon.png)  and click the Feedback icon. Select the feedback type, specify the subject and description, and click **[!UICONTROL Submit]**.
 
-![Contextual Search feedback](/help/using/assets/contextual-search-feedback.png)
+![Contextual Search feedback](assets/contextual-search-feedback.png)
 
 ## Next Steps {#next-steps}
 
