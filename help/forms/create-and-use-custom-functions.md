@@ -17,6 +17,11 @@ Ensure that the [core component is set to version 3.0.8](https://github.com/adob
 
 # Custom functions in Adaptive Forms (Core Components)
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions)                  |
+| AEM as a Cloud Service     | This article         |
+
 ## Introduction
 
 AEM Forms supports custom functions, allowing users to define JavaScript functions for implementing complex business rules. These custom functions extend the capabilities of forms by facilitating manipulation and processing of entered data to meet specified requirements. They also enable dynamic alteration of form behavior based on predefined criteria. 
@@ -54,6 +59,7 @@ JavaScript annotations are used to provide metadata for JavaScript code. It incl
    * `@argument` `{type} name <Parameter Description>` 
    * `@arg` `{type}` `name <Parameter Description>`.
     `{type}` represents the parameter type.  The allowed parameter types are:
+    
       * string: Represents a single string value.
       * number: Represents a single numeric value.
       * boolean: Represents a single boolean value (true or false).
