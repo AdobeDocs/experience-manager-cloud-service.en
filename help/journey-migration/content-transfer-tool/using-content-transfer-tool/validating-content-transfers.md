@@ -130,9 +130,9 @@ In addition to being included in the ingestion log, the validation report can al
 
 ## How to Validate the Principal Migration {#how-to-validate-principal-migration}
 
-See [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) to read the principal migrations details and why it is necessary.
+See [Group Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) to read the principal migrations details and why it is necessary.
 
-After the extraction and ingestion are successfully completed, a summary and report of the principal migration is available. This information can be used to validate which users and groups were migrated successfully, and, perhaps, to determine why some were not.
+After the extraction and ingestion are successfully completed, a summary and report of the principal migration is available. This information can be used to validate which groups were migrated successfully, and, perhaps, to determine why some were not.
 
 To view this information, go to Cloud Acceleration Manager. Click your project card and click the Content Transfer card. Navigate to **Ingestion Jobs** and locate the ingestion that you want to verify. Click the three dots (**...**) for that ingestion, then click **View principal summary** in the drop-down.
 
@@ -142,9 +142,6 @@ You see a dialog with the summary information. Use the help icons to read a more
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
->[!NOTE]
->
->If user mapping is disabled, another variant of this dialog box is shown. It will indicate that user mapping was disabled, and will not show the 3 fields giving user mapping values.
 
 ## Troubleshooting {#troubleshooting}
 
