@@ -92,6 +92,12 @@ AEM Assets integrates natively with Adobe Express, which allows you to directly 
 
 Experience Manager Assets now generates preview renditions of all supported video types by default without requiring a processing profile configuration.
 
+**Link share configuration**
+
+A new improved user experience for [creating link shares](/help/assets/share-assets.md) along with a brand new set of configurations that let administrators customize the default behavior of this capability for your users.
+
+![Configure Email Service](/help/assets/assets/config-email-service.png)
+
 ### New features in Assets view {#assets-view}
 
 **Manage permissions for collections** 
