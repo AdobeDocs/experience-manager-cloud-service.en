@@ -1,9 +1,9 @@
 ---
-title: Load Dropdown List Options from URL 
+title: Load Dropdown List Options from URL
 description: The dropdown list options are included in a distinct spreadsheet and then imported into the primary spreadsheet via the provided URL.
 feature: Edge Delivery Services
+exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 ---
-
 # Load dropdown list options from URL 
 
 Forms often include dropdown menus for users to select from predefined options. These options are typically defined within the form itself, but managing long lists can be cumbersome. This guide outlines how to improve form authoring by loading dropdown options from a separate spreadsheet via a URL.
@@ -82,5 +82,3 @@ https://main--wefinance--wkndforms.hlx.live/enquiry-form
 ## See also
 
 {{see-more-forms-eds}}
-
-   
