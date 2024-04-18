@@ -14,7 +14,7 @@ As part of the Adobe Experience Cloud, Adobe Target lets you increase content re
 
 Adobe Launch is necessary for managing client-side properties for both Analytics and Target in AEM pages (JS libraries/tags). That said, the integration with Launch is needed for "Experience Targeting". 
 
-For the export of Experience Fragments and/or Content Fragments to Target, you only need the [Adobe Target Configuration and IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+For the export of Experience Fragments and/or Content Fragments to Target, you need the [Adobe Target Configuration](#create-configuration), including the [IMS Integration](#ims-configuration).
 
 >[!NOTE]
 >
@@ -32,7 +32,13 @@ For the export of Experience Fragments and/or Content Fragments to Target, you o
 
 ### IMS Configuration {#ims-configuration}
 
-An IMS configuration for both Launch and Target is necessary to properly integrate Target with AEM and Launch. While the IMS configuration for Launch is preconfigured in AEM as a Cloud Service, the Target IMS configuration must be created (after Target is provisioned). See [IMS Configuration for use when Integrating with Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) and the video [Integrating Experience Platform Launch and AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) to learn how to create the Target IMS configuration.
+An IMS configuration for both Launch and Target is necessary to properly integrate Target with AEM and Launch. While the IMS configuration for Launch is preconfigured in AEM as a Cloud Service, the Target IMS configuration must be created (after Target is provisioned). See [Setting Up IMS Integrations for AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) and the video [Integrating Experience Platform Launch and AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) to learn how to create the Target IMS configuration.
+
+>[!NOTE]
+>
+>[IMS integrations are now configured with S2S OAut](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md). 
+>
+>[Previous configurations](/help/sites-cloud/integrating/integration-adobe-target-ims.md) were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md). 
 
 ### Adobe Target Tenant ID and Adobe Target Client Code {#tenant-client}
 
