@@ -16,24 +16,24 @@ role: Admin
 >title="Guidelines and Best Practices"
 >abstract="Review guidelines and best practices to use the Content Transfer tool including revision cleanup tasks, Disk space considerations and more."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html" text="Important Considerations for using Content Transfer Tool"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.md#important-considerations" text="Important Considerations when Mapping and Migrating Users" 
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/group-migration.md#important-considerations" text="Important Considerations when Migrating Groups" 
 
 -->
 
-A new version of the Content Transfer Tool is available which integrates the content transfer process with Cloud Acceleration Manager. It is highly recommended to switch over to this new version to use all the benefits it provides:
+The Content Transfer Tool integrates the content transfer process with Cloud Acceleration Manager. It is required recommended to this version to gain all the benefits it provides:
 
 * Self-service way to extract a migration set once and ingest it into multiple environments in parallel
 * Improved user experience by way of better loading states, guardrails, and error handling 
 * Ingestion logs are persisted and are always available for troubleshooting
 
-To start using the new version, uninstall older versions of the Content Transfer Tool. This is needed because the new version comes with a major architectural change. With version 2.x, you create migration sets and rerun extraction and ingestion on the sets.
+To start using the newest version, uninstall older versions of the Content Transfer Tool. With version 2.0 and later, you create migration sets and rerun extraction and ingestion on the sets.
 Versions earlier than 2.0.0 are not supported, and it is advised that you use the most recent version.
 
 The following Guidelines and Best Practices apply to the new version of the Content Transfer Tool:
 
 * Run [Revision Cleanup](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) and [data store consistency checks](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) on the **source** repository so you can identify potential problems and reduce the size of the repository.
 
-* In the ingestion phase, Adobe recommends that you run the ingestion using the *wipe* mode enabled where the existing repository (author or publish) in the target Adobe Experience Manager (AEM) Cloud Service environment is deleted. Then, update with the migration set data. This mode is faster than the non-wipe mode,  where the migration set is applied on top of the current content.
+* In the ingestion phase, Adobe recommends that you run the ingestion using the *wipe* mode enabled where the existing repository (Author or Publish) in the target Adobe Experience Manager (AEM) Cloud Service environment is deleted. Then, update with the migration set data. This mode is faster than the non-wipe mode,  where the migration set is applied on top of the current content.
 
 * After the content transfer activity is completed, the correct project structure is required in the Cloud Service environment to ensure that the content renders successfully in the Cloud Service environment.
 
@@ -69,13 +69,13 @@ Follow the section below to understand the important considerations while runnin
 
 * The extraction key is valid for 14 days from the time that it was created or renewed. It can be renewed at any time. If the extraction key has expired, you cannot perform an extraction.
 
-* The Content Transfer Tool (CTT) does not perform any kind of content analysis before transferring content from the source instance to the target instance. For example, CTT does not differentiate between published and unpublished content while ingesting content into a Publish environment. Whatever content is specified in the migration set is ingested into the chosen target instance. User can ingest a migration set into an Author instance or Publish instance or both. Adobe recommends that while moving content to a Production instance, CTT be installed on the source Author instance to move content to the target Author instance. And, similarly, install CTT on the source Publish instance to move content to the target Publish instance. See [Running the Content Transfer Tool on a Publish instance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) for more details.
+* The Content Transfer Tool (CTT) does not perform any kind of content analysis before transferring content from the source instance to the target instance. For example, CTT does not differentiate between published and unpublished content while ingesting content into a Publish environment. Whatever content is specified in the migration set is ingested into the chosen target instance. A user can ingest a migration set into an Author instance or Publish instance or both. Adobe recommends that while moving content to a Production instance, CTT be installed on the source Author instance to move content to the target Author instance. And, similarly, install CTT on the source Publish instance to move content to the target Publish instance. See [Running the Content Transfer Tool on a Publish instance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) for more details.
 
-* The Users and Groups transferred by the Content Transfer Tool are only those that are required by the content to satisfy permissions. The _Extraction_ process copies the entire `/home` into the migration set, and it does User Mapping by adding a field made from each user's email address. For more information, see [User Mapping and Principal Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). The _Ingestion_ process copies all users and groups referenced in the migrated content ACLs. See [Migrating Closed User Groups](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) for extra considerations for groups used in a Closed User Group (CUG) policy.
+* The groups transferred by the Content Transfer Tool are only those groups that are required by the content to satisfy permissions. The _Extraction_ process copies the entire `/home/groups` into the migration set. For more information, see [Group Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md). The _Ingestion_ process copies all groups referenced in the migrated content ACLs. See [Migrating Closed User Groups](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) for extra considerations for groups used in a Closed User Group (CUG) policy.
 
 * During the extraction phase, the Content Transfer Tool is executed on an active AEM source instance.
 
-* The *Ingestion Phase* for the author scales down the whole author deployment. It means that the author AEM is unavailable during the whole ingestion process. Also ensure that no Cloud Manager pipelines are executed while you are running the *Ingestion* phase. 
+* The *Ingestion Phase* for the Author scales down the whole Author deployment. It means that the Author AEM is unavailable during the whole ingestion process. Also ensure that no Cloud Manager pipelines are executed while you are running the *Ingestion* phase. 
 
 * When using `Amazon S3` or `Azure` as the data store on the source AEM system, the data store should be configured so that the blobs stored cannot be deleted (garbage collected). This ensures integrity of index data and failure to configure this way may result in failed extractions due to lack of integrity of this index data.
 
