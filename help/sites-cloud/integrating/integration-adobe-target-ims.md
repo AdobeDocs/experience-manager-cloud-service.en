@@ -7,6 +7,14 @@ exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
 
 The integration of AEM with Adobe Target via the Target Standard API requires the configuration of Adobe IMS (Identity Management System). The configuration is realized with the Adobe Developer Console.
 
+>[!CAUTION]
+>
+>The configuration described on this page can no longer be used for new or updated integrations.
+>
+>[IMS integrations are now configured with S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md). 
+>
+>Previous configurations, as described on this page, were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+
 >[!NOTE]
 >
 >Support for the Adobe Target Standard API is new in AEMaaCS. The Target Standard API uses IMS authentication.
