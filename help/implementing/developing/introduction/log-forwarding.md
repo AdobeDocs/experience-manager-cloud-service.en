@@ -1,6 +1,8 @@
 ---
 title: Log Forwarding for AEM as a Cloud Service
 description: Learn about forwarding logs to Splunk and other logging vendors in AEM as a Cloud Service
+hide: yes
+hidefromtoc: yex
 ---
 
 # Log Forwarding {#log-forwarding}
