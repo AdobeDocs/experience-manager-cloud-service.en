@@ -425,7 +425,7 @@ You can define the Asset Selector [properties](#asset-selector-properties) in th
 
    ![rail-view-example](assets/rail-view-example-vanilla.png)
 
-If the value of the AssetSelector `rail` is set to `false` or is not mentioned in the properties, Asset Selector displays in the Modal view by default. The `acvConfig` property is used to enable rail view of asset viewer. Visit [enable or disable drag and drop](#enable-disable-drag-and-drop) to understand the usage of `acvConfig` property.
+If the value of the AssetSelector `rail` is set to `false` or is not mentioned in the properties, Asset Selector displays in the Modal view by default. The `acvConfig` property allows for some in-depth configurations, like the Drag and Drop. Visit [enable or disable drag and drop](#enable-disable-drag-and-drop) to understand the usage of `acvConfig` property.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
