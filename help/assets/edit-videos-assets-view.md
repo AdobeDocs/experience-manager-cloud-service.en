@@ -5,9 +5,9 @@ role: User
 ---
 # Edit videos in [!DNL Assets Essentials] {#edit-videos}
 
-Transforming a video into a perfect size is easy using embedded [!DNL Adobe Express] quick actions. Quick actions in [!DNL Assets Essentials] powered by [!DNL Adobe Express] provides user-friendly video editing options including crop video, resize video, trim video, and convert video to GIF.
+Creating variations of video content is easy for Assets users with the embedded [!DNL Adobe Express] quick actions for video. Quick actions in [!DNL Assets Essentials] powered by [!DNL Adobe Express] provides user-friendly video editing options including crop video, resize video, trim video, and convert video to GIF.
 
-After editing a video, you can save the new video as a new version. Versioning helps you to revert to the original asset later, if needed. To edit a video, go to the details of the video and click **[!UICONTROL Edit Video]**. Alternatively, select the asset and click details then click ![scissors](assets/do-not-localize/cut.svg) icon available in the right pane.
+To edit a video, go to the details of the video and click [!UICONTROL Edit Video]. Alternatively, select the asset and click details then click ![scissors](assets/do-not-localize/cut.svg) icon available in the right pane. After editing a video, you can save the new video as a new version or as a new asset.
 
 Know more about the [preview interface](navigate-assets-view.md).
 
@@ -32,9 +32,9 @@ You can eliminate unwanted parts from the video using embedded [!DNL Adobe Expre
    
     The cropped video is available for download. You can either save the edited asset as a new version of the same asset or save it as a new asset. ![Save video with Adobe Express](assets/adobe-express-save-video.png)
 
-### Resize video {#resize-video-using-express}
+### Resize video {#resize-video-using-express} 
 
-Resizing a video to a specific size is a popular use case. [!DNL Assets Essentials] lets you quickly resize video to fit the common dimensions by providing pre-calculated new resolutions for specific sizes. To resize the video using [!DNL Assets Essentials], follow the steps below: 
+Final video content in the DAM often needs to be resized for distribution to specific channels. [!DNL Assets Essentials] lets you easily resize video to fit the dimensions required by common social channels and you can also resize to custom resolutions. To resize the video using [!DNL Assets Essentials], execute the steps below:
 
 1. Select a video and click **[!UICONTROL Edit]**.
 2. Click **[!UICONTROL Resize Video]** from the quick actions available in the left pane.
@@ -48,7 +48,7 @@ Your resized video is available for download. You can either save the edited ass
 
 ### Trim video {#trim-video-using-express}
 
-A quick video trimmer in [!DNL Assets Essentials] powered by [!DNL Adobe Express] allows you to trim video effortlessly. Perform the steps below:
+If you need to use a clip of a larger video, you can use the **[!UICONTROL Trim Video]** function to select and trim a section of the video. Perform the steps below:
 
 1. Select a video and click **[!UICONTROL Edit]**.
 2. Click **[!UICONTROL Trim Video]** from the quick actions available in the left pane.
@@ -76,13 +76,13 @@ Your video is available in GIF format for download. You can either save the edit
 
 ## Limitations {#limitations-video-adobe-express}
 
-* Only MP4 video type is supported.
+* Only videos in the MP4 format are supported for editing.
 
-* Maximum file size supported: 200 MB
+* The maximum source file size supported is 200 MB.
 
-* The minimum and maximum dimensions of the video are 46 pixels and 3840 pixels respectively.
+* Supported videos are larger than 46 pixels and smaller than 3840 pixels on any side.
 
-* The supported web browsers are Google Chrome, Firefox, Safari, and Edge.
+* The supported Web browsers are Google Chrome, Firefox, Safari, and Edge.
 
 * The functionality cannot be opened in an incognito mode of a web browser.
 
