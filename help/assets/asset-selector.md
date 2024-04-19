@@ -221,28 +221,28 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 ```
 // object `imsProps` to be defined as below 
 let imsProps = {
-imsClientId: <IMS Client Id>,
-imsScope: "openid",
-redirectUrl: window.location.href,
-modalMode: true,
-adobeImsOptions: {
-modalSettings: {
-allowOrigin: window.location.origin,
+    imsClientId: <IMS Client Id>,
+        imsScope: "openid",
+        redirectUrl: window.location.href,
+        modalMode: true,
+        adobeImsOptions: {
+            modalSettings: {
+            allowOrigin: window.location.origin,
 },
-useLocalStorage: true,
+        useLocalStorage: true,
 },
 onImsServiceInitialized: (service) => {
-console.log("onImsServiceInitialized", service);
+            console.log("onImsServiceInitialized", service);
 },
 onAccessTokenReceived: (token) => {
-console.log("onAccessTokenReceived", token);
+            console.log("onAccessTokenReceived", token);
 },
 onAccessTokenExpired: () => {
-console.log("onAccessTokenError");
+            console.log("onAccessTokenError");
 // re-trigger sign-in flow
 },
 onErrorReceived: (type, msg) => {
-console.log("onErrorReceived", type, msg);
+            console.log("onErrorReceived", type, msg);
 },
 }
 ```
