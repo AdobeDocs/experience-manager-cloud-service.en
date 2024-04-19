@@ -41,7 +41,7 @@ Asset Selector provides many benefits, such as:
 You must ensure the following communication methods:
 
 * The application is running on HTTPS.
-* The URL of the application in the IMS client's allowed list of redirect URLs.
+* The URL of the application is in the IMS client's allowed list of redirect URLs.
 * The IMS login flow is configured and rendered using a popup on the web browser. Therefore, popups should be enabled or allowed on the target browser.
 
 >[!IMPORTANT]
