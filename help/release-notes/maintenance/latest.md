@@ -15,11 +15,12 @@ Summarized below are the continuous improvements for maintenance release 15977, 
 
 ### Enhancements {#enhancements-15977}
 
-None.
+* GRANITE-51335: Optimize AEM health check to increase instance stability.
 
 ### Fixed Issues {#fixed-issues-15977}
 
-None.
+* CQ-4357226: Fix regression in the IMS Configurations support for OAuth credentials.
+* GRANITE-51335: Ratelimit upgrade to 5.0.4 Fixed Felix Health Check registrations.
 
 ### Known Issues {#known-issues-15977}
 
