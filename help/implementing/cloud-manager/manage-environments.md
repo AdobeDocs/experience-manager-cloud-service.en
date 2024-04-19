@@ -203,9 +203,9 @@ In any case, [traffic is always routed to the other closest region that is onlin
 
 ## Updating Environments {#updating-dev-environment}
 
-As a cloud-native service, updates of your staging and production environments within production programs are automatically managed by Adobe. 
+As a cloud-native service, updates of your development, staging and production environments within production programs are automatically managed by Adobe. 
 
-However, updates to development environments and to environments in sandbox programs are managed within the programs. When such an environment is not running the latest publicly available AEM version, the status on the **Environments** card on the **Overview** screen of the program shows **Update Available**.
+However, updates to environments in sandbox programs are managed within the programs. When such an environment is not running the latest publicly available AEM version, the status on the **Environments** card on the **Overview** screen of the program shows **Update Available**.
 
 ![Environment update status](assets/environ-update.png)
 
@@ -222,7 +222,10 @@ The process of updating is therefore a two-step process:
 
 ### Updating Your Environments {#updating-your-environments}
 
-The **Update** option is available from the **Environments** card for development environments and environments in sandbox programs by clicking the ellipsis button of the environment.
+>[!NOTE]
+> As of 2024, development instances and some sandbox programs are already automatically updated so there is no need to manage updates for them manually. As a result of this transition, the option to Update environment manually for development instances might not be available to _some_ of your programs.
+
+The **Update** option is available from the **Environments** card for some development environments and environments in sandbox programs by clicking the ellipsis button of the environment.
 
 ![Update option from Environments card](assets/environ-update2.png)
 
@@ -240,7 +243,7 @@ The **Update** option's behavior varies depending on the configuration and curre
 
 * If the pipeline has already been updated, the **Update** option prompts the user to execute the pipeline.
 * If the pipeline is already being updated, the **Update** option informs the user that an update is already running.
-* If an appropriate pipeline does not exits, the **Update** option prompts the user to create one.
+* If an appropriate pipeline does not exist, the **Update** option prompts the user to create one.
 
 ## Deleting Development Environments {#deleting-environment}
 
