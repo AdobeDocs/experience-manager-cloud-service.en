@@ -1,6 +1,6 @@
 ---
 title: Experience Fragments
-description: Use Adobe Experience Manager as a Cloud Service Experience Fragments to make your experiences reusable and flexible.
+description: Use Experience Fragments in Adobe Experience Manager as a Cloud Service to make your experiences reusable and flexible.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 ---
 # Experience Fragments {#experience-fragments}
