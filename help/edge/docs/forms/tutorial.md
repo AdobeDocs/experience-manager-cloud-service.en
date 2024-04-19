@@ -192,7 +192,7 @@ To preview unpublished content:
 
 The sample content includes an "enquiry" sheet that serves as a template for the "enquiry" form. Each row of the sheet represents a [form field](/help/edge/docs/forms/form-components.md#available-components), and the column headers define the [field properties](/help/edge/docs/forms/form-components.md#available-components). This sample form gives you a head start on building your form. 
 
-![Enquiry form](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+![Enquiry form](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
 Let's start with updating a field label. Open the 'enquiry' sheet for editing, change the label of submit button to `Let's Chat` and use AEM Sidekick to preview and publish the file. 
 
@@ -262,6 +262,7 @@ Ready to showcase your creation? Use Git to commit and push your changes. This u
 
 Preview: `https://<branch>--<repo>--<owner>.hlx.page/`
 Production: `https://<branch>--<repo>--<owner>.hlx.live/`
+
 Congratulations! You've successfully set up your local development environment and deployed your changes.
 
 
