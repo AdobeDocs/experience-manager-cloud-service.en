@@ -2,6 +2,7 @@
 title: Edit videos
 description: Edit videos using [!DNL Adobe Express] powered options and save updated videos as versions.
 role: User
+exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 ---
 # Edit videos in [!DNL Assets Essentials] {#edit-videos}
 
