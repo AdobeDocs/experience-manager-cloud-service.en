@@ -63,6 +63,8 @@ Adobe recommends configuring the rewriter using an overlay. See [Overlays in AEM
 >[!CAUTION]
 >
 >***Only*** editable templates are supported for Experience Fragments.
+>
+>Experience Fragments can only be used on pages that are based on editable templates.
 
 <!-- >***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
 -->

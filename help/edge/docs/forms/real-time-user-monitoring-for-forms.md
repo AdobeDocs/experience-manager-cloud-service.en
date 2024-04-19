@@ -2,10 +2,9 @@
 title: Real time user monitoring for Edge Delivery Services Forms
 description: Real-time user monitoring for Edge Delivery Services Forms involves the ongoing tracking and analysis of user interactions with forms.
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 ---
+
 # Real time user monitoring for Edge Delivery Services Forms
 
 Adobe Experience Manager uses Real User Monitoring (RUM) to understand visitor interactions with Adobe Experience Manager-driven sites. It helps in diagnosing the performance challenges, and gauging experiment effectiveness. Real User Monitoring maintains the visitor privacy by using the sampling techniques, ensuring that no personal information is collected by the sites you are visiting. It is not permitted to add personal data to the RUM data collection. Real User Monitoring in Adobe Experience Manager is designed to preserve visitor privacy and minimize data collection.
