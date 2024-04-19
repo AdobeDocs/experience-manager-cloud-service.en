@@ -11,7 +11,7 @@ Metadata means data or description about the data. For example, your images as a
 
 Metadata helps you further categorize assets and is helpful as the amount of digital information grows. It is possible to manage a few hundred files based on just the filenames, thumbnails, and memory. However, this approach is not scalable. It falls short when the number of people involved and the number of managed assets increase.
 
-With the addition of metadata, the value of a digital asset grows, because the asset becomes,
+With the addition of metadata, the value of a digital asset grows, because the asset becomes:
 
 * More accessible - systems and users can find it easily.
 * Easier to manage - you can find assets with the same set of properties easier and apply changes to them.
