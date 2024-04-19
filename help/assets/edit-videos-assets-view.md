@@ -9,8 +9,6 @@ Transforming a video into a perfect size is easy using embedded [!DNL Adobe Expr
 
 After editing a video, you can save the new video as a new version. Versioning helps you to revert to the original asset later, if needed. To edit a video, go to the details of the video and click **[!UICONTROL Edit Video]**. Alternatively, select the asset and click details then click ![scissors](assets/do-not-localize/cut.svg) icon available in the right pane.
 
-Know more about the [preview interface](navigate-assets-view.md).
-
 ## Prerequisites {#prerequisites}
 
 Entitlements to access [!DNL Adobe Express] and at least one environment within AEM Assets. The environment can be any of the repositories within [!DNL Assets as a Cloud Service] or [!DNL Assets Essentials].
