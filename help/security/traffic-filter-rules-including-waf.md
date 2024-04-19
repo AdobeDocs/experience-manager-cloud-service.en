@@ -691,7 +691,7 @@ data:
           - reqProperty: path
             matches: "^/bin/.*"
       action:
-        type: log
+        type: allow
         wafFlags:
           - CMDEXE
 ```
