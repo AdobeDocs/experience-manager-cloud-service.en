@@ -2,8 +2,6 @@
 title: Use rules to add dynamic behavior to a form
 description: AEM Forms Edge Delivery Services built for peak performance, empowering you to envision the future of streamlined data collection and user engagement. Use rules to add dynamic behavior to your forms. 
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 ---
 # Use rules to add dynamic behavior to your forms
