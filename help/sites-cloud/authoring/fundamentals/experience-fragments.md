@@ -1,6 +1,6 @@
 ---
 title: Experience Fragments
-description: Use Experience Fragments in Adobe Experience Manager as a Cloud Service to make your experiences reusable and flexible.
+description: Use Adobe Experience Manager as a Cloud Service Experience Fragments to make your experiences reusable and flexible.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 ---
 # Experience Fragments {#experience-fragments}
@@ -15,7 +15,7 @@ Within Adobe Experience Manager as a Cloud Service, an Experience Fragment:
 An Experience Fragment:
 
 * Is a part of an experience (page).
-* Can be used across multiple pages (that are based on editable templates).
+* Can be used across multiple pages.
 * Is based on a template (editable only) to define structure and components.
 * This template is used to create the *root page* of the Experience Fragment. 
 * Is made up of one or more components, with layout, in a paragraph system.
@@ -32,11 +32,10 @@ You can use Experience Fragments:
   Experience Fragments eliminate the need for copy/paste.
 * To support the headless CMS use-case. 
   Authors want to use AEM only for authoring but not for delivering to the customer. A third-party system/touchpoint would consume that experience and then deliver to the user.
-* With [Multi Site Management (MSM)](/help/sites-cloud/administering/msm/overview.md); as an Experience Fragment is part of a page. This applies to both the individual fragments and the folders they reside in.
 
 >[!NOTE]
 >
->**[Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)** and **Experience Fragments** are different features within AEM:
+>**[Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** and **Experience Fragments** are different features within AEM:
 >* **Content Fragments** are editorial content, with definition and structure, but without additional visual design and/or layout. They can be used to access structured data, including texts, numbers, and dates, amongst others. 
 >* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
@@ -86,7 +85,7 @@ Creating folders lets you:
 
   >[!NOTE]
   >
-  >You can use the [template editor](/help/sites-cloud/authoring/sites-console/templates.md) to create your own template. 
+  >You can use the [template editor](/help/sites-cloud/authoring/features/templates.md) to create your own template. 
 
 The WKND project structures some Experience Fragments according to `Contributors`. The structure used also illustrates how other features, such as Multi Site Management (including language copies), can be used. 
 
@@ -100,7 +99,7 @@ See:
 
 To create and configure a folder for your Experience Fragments it is recommended to:
 
-1. [Create a folder](/help/sites-cloud/authoring/sites-console/managing-pages.md#creating-a-new-folder).
+1. [Create a folder](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-folder).
 
 1. [Configure the allowed Experience Fragment templates for that folder](#configure-allowed-templates-folder).
 
@@ -202,11 +201,11 @@ The Experience Fragment Editor offers you similar capabilities to the normal pag
 
 >[!NOTE]
 >
->See [Editing Page Content](/help/sites-cloud/authoring/page-editor/edit-content.md) for more information on how to use the page editor.
+>See [Editing Page Content](/help/sites-cloud/authoring/fundamentals/editing-content.md) for more information on how to use the page editor.
 
 The following example procedure illustrates how to create a teaser for a product:
 
-1. Drag and drop the required component from the [Components Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser).
+1. Drag and drop the required component from the [Components Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 
 1. Depending on the component:
    * Add any content and/or assets as required. 
@@ -232,10 +231,6 @@ You can create variations of your Experience Fragment, depending on your needs:
     * **Variation**
     * **Variation as live-copy**.
 
-      >[!NOTE]
-      >
-      >Creating an initial Variation as Live Copy will inherit the title by using the Live Copy Source as the Master Variation.
-
 1. Define the required properties:
 
     * **Template**
@@ -256,10 +251,6 @@ You can create variations of your Experience Fragment, depending on your needs:
 You can now use your Experience Fragment when authoring your pages:
 
 1. Open any page for editing.
-
-   >[!NOTE]
-   >
-   >The page must be based on an editable template.
 
 1. Create an instance of the Experience Fragment component, within the page paragraph system:
 
@@ -399,7 +390,7 @@ Details of your fragment can be seen:
    >
    >These tabs are shown when you open **Properties** from the Experience Fragments console.
    >
-   >If you **Open Properties** when editing an Experience Fragment, the appropriate [Page Properties](/help/sites-cloud/authoring/sites-console/page-properties.md) are shown.
+   >If you **Open Properties** when editing an Experience Fragment, the appropriate [Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md) are shown.
 
    ![Experience Fragment properties](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -433,9 +424,9 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 ## Publishing Experience Fragments {#publishing-experience-fragments}
 
-Publishing your Experience Fragment is basically the same as [publishing a page](/help/sites-cloud/authoring/sites-console/publishing-pages.md) (though from the Experience Fragments console or editor). 
+Publishing your Experience Fragment is basically the same as [publishing a page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (though from the Experience Fragments console or editor). 
 
-Alternatively you can also [publish to Preview](/help/sites-cloud/authoring/sites-console/previewing-content.md) (again from the Experience Fragments console or editor).
+Alternatively you can also [publish to Preview](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (again from the Experience Fragments console or editor).
 
 ## Exporting Experience Fragments {#exporting-experience-fragments}
 
