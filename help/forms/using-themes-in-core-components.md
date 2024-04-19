@@ -122,7 +122,7 @@ To clone a theme, perform the following instructions:
 1. Run the following command:
 
    ```
-         code .
+      code .
    ```
 
       ![Open the theme folder in a plain text editor](/help/forms/assets/aem-forms-theme-folder-in-vs-code.png)
