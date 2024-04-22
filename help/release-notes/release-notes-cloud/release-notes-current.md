@@ -34,8 +34,6 @@ Have a look at the April 2024 Release Overview video for a summary of the featur
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### New features in [!DNL Experience Manager Sites] {#sites-features}
-
 ### Early Adopter Program {#sites-early-adopter}
 
 **Generate Variations**
