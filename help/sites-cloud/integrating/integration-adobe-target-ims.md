@@ -2,6 +2,9 @@
 title: IMS Configuration for use when Integrating with Adobe Target
 description: Learn about IMS Configuration for use when Integrating with Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
+hide: yes
+hidefromtoc: yes
+index: no
 ---
 # IMS Configuration for use when Integrating with Adobe Target{#ims-configuration-for-integration-with-adobe-target}
 
