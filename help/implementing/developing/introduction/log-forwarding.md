@@ -88,3 +88,59 @@ orig_time: 16.07.2020 08:35:32.346
 pod_name: aemloggingall-aem-author-77797d55d4-74zvt
 splunk_customer: true
 ```
+
+## Setup {#setup}
+
+1. Create the following folder and file structure the top-level folder in your project in Git:
+
+   ```
+   config/
+        LogForwarding.yaml
+   ```
+
+2. A default configuration is supported in the `LogForwarding.yaml` file, which allows to extend the vendor specific configuration to a finer-grained version later:
+
+   ```
+      kind: "LogForwarding"
+   version: "1"
+   metadata:
+     ...
+      data:
+     splunk:
+       default:
+         enabled: false # Always present?
+         host: "example.com"
+         port: 8888 # Optional
+         index: "AEMaaCS"
+         token: "${{SPLUNK_TOKEN}}"
+       cdn:
+         index: "cdn_logs"
+         additionalLogFields:
+         - resp_body_size
+         - resp_surrogate_key
+
+  ```
+
+## Logging Destination Configurations {#logging-destination-configurations}
+
+Specific parameters will differ by destination (or vendor), but in general, involve specifying a url and a set of credentials.
+
+At this time, there is a single declaration for all logs, declared under the default node.
+
+Vendors that are currently supported include:
+
+* Azure Blob
+* Data Dog
+* Elastic Search
+* Splunk
+* Sumo Logic
+
+>[!NOTE]
+>
+> The tokens represent Cloud Manager [environment variables](/help/implementing/cloud-manager/environment-variables.md).
+
+
+## Forwarding Logs Over a Dedicated Egress {#forwarding-logs-over-a-dedicated-egress}
+
+If you have organizational requirements to lock down traffic to your logging vendor, you can configure [advanced networking](/help/security/configuring-advanced-networking.md) and configure the yaml's host and port accordingly. 
+
