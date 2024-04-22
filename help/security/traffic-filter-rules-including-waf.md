@@ -18,7 +18,7 @@ A subcategory of traffic filter rules require either an Enhanced Security licens
 
 Traffic filter rules can be deployed via Cloud Manager configuration pipelines to dev, stage, and production environment types in production (non-sandbox) programs. Support for RDEs will come in the future.
 
-[Follow through a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) to quickly build concrete expertise on this feature.
+[Follow through a tutorial](#tutorial) to quickly build concrete expertise on this feature.
 
 >[!NOTE]
 >Interested in other options to configure traffic at the CDN, including modifing the request/response, declaring redirects, and proxying to a non-AEM origin? [Learn how and try it out](/help/implementing/dispatcher/cdn-configuring-traffic.md) by joining the early adopter program.
@@ -410,6 +410,8 @@ Rate limit rules cannot reference WAF flags. They are available to all Sites and
 
 Rate limits are calculated per CDN POP. As an example, assume that POPs in Montreal, Miami, and Dublin experience traffic rates of 80, 90, and 120 request per second respectively, and that the rate limit rule is set to a limit of 100. In that case, only the traffic to Dublin would be rate limited.
 
+Rate limits are evaluated based on either traffic hitting the edge, traffic hitting the edge, or the number of errors.
+
 ### rateLimit Structure {#ratelimit-structure}
 
 | **Property**  | **Type**  | **Default**  | **MEANING**  |
@@ -417,6 +419,7 @@ Rate limits are calculated per CDN POP. As an example, assume that POPs in Montr
 |  limit |  integer from 10 to 10000     |  required |  Request rate (per CDN POP) in requests per second for which the rule is triggered. |
 |  window | integer enum: 1, 10 or 60  | 10  | Sampling window in seconds for which request rate is calculated. The accuracy of counters will depend on the size of the window (bigger window bigger accuracy). For example, one can expect 50% accuracy for the 1 second window and 90% accuracy for the 60 second window. |
 |  penalty | integer from 60 to 3600  | 300 (5 minutes) | A period in seconds for which matching requests are blocked (rounded to the nearest minute).  |
+|  count | all, fetch, error | all | evaluate based on edge traffic (all), origin traffic (fetch), or the number of errors. |
 |  groupBy | array[Getter] | none | rate limiter counter will be aggregated by a set of request properties (for example, clientIp).  |
 
 
@@ -442,6 +445,7 @@ data:
         limit: 60
         window: 10
         penalty: 300
+        count: all
         groupBy:
           - reqProperty: clientIp
       action: block
@@ -463,7 +467,7 @@ data:
         when: { reqProperty: path, equals: /critical/resource }
         action:
           type: block
-        rateLimit: { limit: 100, window: 60, penalty: 60 }
+        rateLimit: { limit: 100, window: 60, penalty: 60, count: all }
 ```
 
 ## Traffic Filter Rules Alerts {#traffic-filter-rules-alerts}
@@ -611,7 +615,7 @@ Adobe provides a mechanism to download dashboard tooling onto your computer to i
 
 Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github repository.
 
-[See the tutorial](#tutorial) for concrete instructions on how to use the dashboard tooling.
+[Tutorials](#tutorial) are available for concrete instructions on how to use the dashboard tooling.
 
 ## Recommended starter rules {#recommended-starter-rules}
 
@@ -696,9 +700,13 @@ data:
           - CMDEXE
 ```
 
-## Tutorial {#tutorial}
+## Tutorials {#tutorial}
 
-[Work through a tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) to gain practical knowledge and experience around traffic filter rules.
+Two tutorials are available.
+
+### Protecting websites with traffic filter rules (including WAF rules) 
+
+[Work through a tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) to gain general, practical knowledge and experience around traffic filter rules, including WAF rules.
 
 The tutorial walks you through:
 
@@ -707,3 +715,16 @@ The tutorial walks you through:
 * Declaring traffic filter rules, including WAF rules
 * Analyzing results with dashboard tooling
 * Best practices
+
+### Blocking DoS and DDoS attacks using traffic filter rules
+
+[Deep-dive on how to block](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Denial of Service (DoS) and Distributed Denial of Service (DDoS) attacks using rate limit traffic filter rules and other strategies.
+
+The tutorial walks you through:
+
+* understanding protection
+* receiving alerts when rate limits are exceeded
+* analyzing traffic patterns using dashboard tooling to configure thresholds for rate limit traffic filter rules
+
+
+
