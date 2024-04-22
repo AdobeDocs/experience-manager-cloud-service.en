@@ -15,7 +15,7 @@ If a parent page /parent-pages/page.html includes parent-pages-containing-esi-ta
 
 ## Apache Configuration {#esi-apache}
 
-Pages with ESI tags should declare the following properties in apache configuration:
+Pages with ESI tags should declare the following properties in the apache configuration:
 
 ```
 <LocationMatch "/parent-pages/*">
