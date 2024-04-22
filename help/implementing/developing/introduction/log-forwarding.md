@@ -118,8 +118,8 @@ splunk_customer: true
          additionalLogFields:
          - resp_body_size
          - resp_surrogate_key
-
-  ```
+   
+   ```
 
 ## Logging Destination Configurations {#logging-destination-configurations}
 
