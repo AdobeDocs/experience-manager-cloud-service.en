@@ -183,3 +183,23 @@ Code sample 3 (monthly)
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
+
+## Version Purge and Audit Log Purge Maintenance Tasks {#purge-tasks}
+
+Purging versions and the audit log reduces the size of the repository, and in some scenarios can improve performance.
+
+### Defaults {#defaults}
+
+Version purging and audit log purging are on by default, with different default values for environments with an id > TBD versus those with ids lower than that. See the Version Purge and Audit Log Purge sections for details.
+
+### Overriding defaults with configuration {#override-defaults}
+
+The default purge values can be overridden by declaring a configuration file and deploying it, as described in the steps below. If declaring a configuration file, version purge and audit log rules must both be declared.
+
+Note:
+
+once you deploy the version purge node in the configuration file, you must keep it declared and must not remove it. The configuration pipeline will fail if you attempt to do so. The rationale for this behavior is to remove ambiguity over whether the default purge values would take effect once you remove the declaration. 
+
+Similarly, once you deploy the audit log purge node in the configuration file, you must keep it declared and must not remove it.
+
+
