@@ -49,7 +49,7 @@ See [Setting Up IMS Integrations for AEM as a Cloud Service](/help/security/sett
 >
 >[IMS integrations are now configured with S2S OAut](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md). 
 >
->[Previous configurations](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md). 
+>Previous configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md). 
 
 ### Adding a configuration to a site {#add-configuration}
 
