@@ -7,11 +7,9 @@ description: Learn about the Universal Editor with hands-on experience by using 
 
 Learn about the Universal Editor with hands-on experience by using the SecurBank App, designed to showcase the power, flexibility, and usability of the Universal Editor to accelerate content creation.
 
-## Introduction {#introduction}
-
 ## Prerequisites {#prerequisites}
 
-* You must be assigned to the AEM Administrator and Developer [product profiles](/help/journey-onboarding/assign-profiles-aem.md) to install the SecurBank app.
+* You must be assigned to the **AEM Administrator** [product profile](/help/journey-onboarding/assign-profiles-aem.md) to install the SecurBank app.
 * You must have [Node.js](https://nodejs.org) version 20 or higher installed for local development.
 
 ## Installing SecurBank {#installation}
@@ -29,19 +27,19 @@ Learn about the Universal Editor with hands-on experience by using the SecurBank
 
 1. Using the credentials in the **Repository Info** dialog, clone the repository on your local machine.
 
-1. Local the folder of the local clone, open it and delete all content except for the hidden/dot files.
+1. Locate the folder of the local clone, open it and delete all content except for the hidden/dot files.
 
 1. Retrieve the latest SecurBank AEM project code from GitHub at [`https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank`](https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank) by clicking **Code** and then **Download ZIP** in the dropdown.
 
-1. Decompress the contents of the zip file on your local file system and move it to the repository folder.
+1. Decompress the contents of the zip file on your local file system and move it to the now empty folder of the local clone of the sandbox program.
 
-1. Using the terminal, switch to the folder of the git project commit all the content and push it to git.
+1. Using the terminal, switch to the folder of the cloned project and commit all the content and push it to git.
 
    1. `git add --all`
    1. `git commit -m "Adding SecurBank app code"`
    1. `git push`
 
-1. Return to your sandbox program in Cloud Manager and return to the **Overview** tab and run the full-stack non-production pipeline.
+1. Return to the **Overview** tab of your sandbox program in Cloud Manager and run the full-stack non-production pipeline.
 
    * Uncheck all options for the pipeline run.
    * For more information about running pipelines, please see the document [Managing Pipelines.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
@@ -50,15 +48,15 @@ Learn about the Universal Editor with hands-on experience by using the SecurBank
 
 1. In the Developer Console select the **Integrations** tab then the **Local Token** tab and tap or click **Get Local Development Token**.
 
-1. A JSON file is produced with the access token. Copy it to a secure location for use in a future step. You can close the Developer Console and return to Cloud Manager.
+1. A JSON file is produced with the access token. Copy only the token itself (the remaining JSON is not necessary) to a secure location for use in a future step before closing the Developer Console and returning to Cloud Manager.
 
-1. Back in Cloud Manager, on the **Overview** tab, right-click the URL of the environment and save this in a secure location for use in a future step.
+1. Back in Cloud Manager, on the **Overview** tab, right-click the URL of the environment to copy it and save it in a secure location for use in a future step.
 
 1. Retrieve the latest SecurBank app code from GitHub at [`https://github.com/Adobe-Marketing-Cloud/summit-2024-l425/tree/ue-z-final-with-events`](https://github.com/Adobe-Marketing-Cloud/summit-2024-l425/tree/ue-z-final-with-events) by clicking **Code** and then **Download ZIP** in the dropdown.
 
 1. Decompress the contents of the zip file on your local file system.
 
-1. Start your preferred code editor and open the hidden file in the SecurBank app project at `summit-2024-l425-ue-z-final-with-events/react-app/.env`.
+1. Start your preferred code editor and open the hidden environment file in the SecurBank app project at `summit-2024-l425-ue-z-final-with-events/react-app/.env`.
 
 1. Make the following changes to the `.env` file and save the changes.
 
