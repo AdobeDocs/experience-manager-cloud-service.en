@@ -411,9 +411,6 @@ user-guide-title: AEM as a Cloud Service
     + [Exporting Content Fragments to Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
     + [Integrating with Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-    + [JWT Credentials Deprecation in Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)
-    + [JWT Credentials used when Integrating with Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
-    + [JWT Credentials used when Integrating with Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
 + Assets {#assets}
   + [Overview and what's new](/help/assets/overview.md)
   + [Notable Changes to [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
