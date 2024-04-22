@@ -14,7 +14,7 @@ exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 
 [!DNL Assets view] provides effective search, that just works by default. The search is comprehensive as it is full-text search. The powerful search functionality lets you quickly discover the appropriate asset and help you improve your content velocity. [!DNL Assets view] provides full-text search and even searches through the metadata such as smart tags, title, date created, and copyright.
 
-To search assets, 
+To search assets:
 
 * Click in the search box at the top of the page. By default, it searches within the folder that you are currently browsing. Do one of the following:
 
