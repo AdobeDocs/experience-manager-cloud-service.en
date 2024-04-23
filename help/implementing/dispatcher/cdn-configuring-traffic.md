@@ -29,15 +29,21 @@ Functionally, the various features mentioned previously are evaluated in the fol
 
 Before you can configure traffic at the CDN you need to do the following:
 
-* First, create this folder and file structure in the top-level folder of your Git project:
+* Create this folder and file structure in the top-level folder of your Git project:
 
 ```
-
 config/
      cdn.yaml
 ```
 
-* Secondly, the `cdn.yaml` configuration file should contain both metadata and the rules described in examples below.
+* The `cdn.yaml` configuration file should contain both metadata and the rules described in examples below. The `kind` parameter should be set to `CDN` and the version should be set to the schema version, which is currently `1`.
+
+* Create a targeted deployment config pipeline in Cloud Manager. See [configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). 
+
+**Notes**
+
+* RDEs do not currently support the configuration pipeline.
+* You can use `yq` to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
 
 ## Syntax {#configuration-syntax}
 
