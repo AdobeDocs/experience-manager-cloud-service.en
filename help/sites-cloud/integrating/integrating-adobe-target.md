@@ -40,6 +40,13 @@ The integration of AEM with Adobe Target via the Target Standard API requires th
 >
 >Previous configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md). 
 
+>[!NOTE]
+>
+>When configuring the project, the product profiles displayed with depend on whether you have:
+>
+>* Adobe Target Standard - only **Default Workspace** is available
+>* Adobe Target Premium - all available workspaces are listed, as shown below
+
 ### Adobe Target Tenant ID and Adobe Target Client Code {#tenant-client}
 
 When configuring the Adobe Target Tenant ID and Adobe Target Client Code fields, be aware of the following:
