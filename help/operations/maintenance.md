@@ -202,4 +202,124 @@ once you deploy the version purge node in the configuration file, you must keep 
 
 Similarly, once you deploy the audit log purge node in the configuration file, you must keep it declared and must not remove it.
 
+1- create the following folder and file structure the top-level folder in your project in Git
+
+config/
+      mt/
+       mt.yaml
+
+2 - Declare the properties in **TBD.yaml**, which include:
+
+* a "kind" property with value "MT"
+* a "version" property (currently we are at version 1.0)
+* an optional "metadata" object with a property envTypes, with a comma separated list of the environment types (dev, stage, prod) for which this configuration is valid. If not metadata object is declared, the configuration is valid for all environment types.
+* a data object with both versionPurge and auditLogPurge objects.
+* See the definitions and syntax of the versionPurge and auditLogPurge objects below.
+
+See the definitions and syntax of the versionPurge and auditLogPurge objects below.
+
+Here's an example configuration:
+
+```
+
+kind: "MaintenanceTasks"
+version: "1.0"
+metadata:
+  envTypes: ["dev"]
+data:
+  versionPurge:
+    maximumVersions: 15
+    maximumAgeDays: 20
+    paths: ["/content"]
+    minimumVersions: 1
+    retainLabelledVersions: false
+  auditLogPurge:
+    rules:
+      - replication:
+          maximumAgeDays: 15
+          types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
+      - pages:
+          maximumAgeDays: 15
+          types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
+      - dam:
+          maximumAgeDays: 15
+          types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+
+```
+
+In order for the configuration to be valid:
+
+must include at least one of versionPurge and auditLogPurge objects
+all properties must be defined. There are no inherited defaults.
+the types (integers, strings, booleans, etc) in the property table below must be respected
+Note: You can use yq to validate locally the YAML formatting of your configuration file (for example, yq cdn.yaml).
+
+3- Configure non-production and production configuration pipelines. 
+
+RDEs do not support purging. For other environment types, create a targeted deployment config pipeline in Cloud Manager.
+
+See [configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+
+### Version Purge {#version-purge}
+
+Environments with an id > TBD have the following defaults:
+
+Versions older than 30 days are removed
+The most recent 5 versions in the last 30 days are kept
+Irrespective of the rules above, the most recent version (in addition to the current file) is preserved.
+Environments with an id <= TBD will have the following defaults:
+
+Versions older than 7 years days are removed
+All versions in the last 7 years are kept
+After 7 years, versions other than the most recent version (in addition to the current file) will be removed.
+
+| Properties | default for envs>xyz  | default for envs<=xyz  | required   | type    | Values   |
+|-----------|--------------------------|-------------|-----------|---------------------|-------------|
+| paths | ["/content"] | ["/content"] | Yes | array of strings | Specifies under which paths to purge versions when new versions are created.  Customers must declare this property, but the only allowable value is "/content". |
+| retainLabelledVersions | true ?? | true ?? | Yes | boolean | **TBD** |
+| maximumAgeDays | 30 | 2557 (7 years + 2 leap days) | Yes | integer | Any version older than the configured value is removed. If the value is less than 1, purging is not performed based on the age of the version. |
+| maximumVersions | 5 | 0 (no limit) | Yes | integer | any version older than the n-th newest version is removed. If the value is 0, purging is not performed based on the number of versions.|
+| minimumVersions | 1 | 1 | Yes | integer | The minimum number of versions that are kept regardless of the age. If the value is set to a value less than 1, no minimum number of versions is retained. |
+
+**Property interactions**
+
+Example:
+
+maximumAgeDays = 30
+maximumVersions = 10
+minimumVersions = 2
+If there are 11 versions on day 23, the oldest version will be purged the next time the purge maintenance task runs, since maximumVersions = 10.
+
+If there are 5 versions on day 31, only 3 will be purged due to minimumVersions=2.
+
+Example:
+
+maximumAgeDays = 30
+maximumVersions = 0
+minimumVersions = 0 (or any other positive integer)
+No versions newer than 30 days would ever be purged since maximumVersions = 0.
+
+### Audit Log Purge {#audit-purge}
+
+Environments with an id > TBD have the following defaults
+
+Replication, DAM, and page audit logs older than 7 days are removed
+all possible events are logged
+Environments with an id <= TBD will have the following defaults:
+
+Replication, DAM, and page audit logs older than 7 years are removed
+all possible events are logged
+Note: It is recommended that customers who have regulatory requirements to produce uneditable audit logs, integrate with specialized, external services.
+
+| Properties | default for envs>xyz  | default for envs<=xyz  | required   | type    | Values   |
+|-----------|--------------------------|-------------|-----------|---------------------|-------------|
+| rules | - | - | Yes | object | one or more of the following nodes: replication, pages, dam.Each of these nodes defines rules, with the properties below. All properties must be declared|
+| maximumAgeDays | 7 days| for all, 2557 (7 years + 2 leap days) | Yes | integer | For either replication, pages, or dam: the number of days of audit logs to keep. Audit logs older than the configured value are purged. |
+| types | all values | all values | Yes | Array of enumeration | for replication, the enumerated values are: Activate, Deactivate, Delete, Test, Reverse, Internal Poll for pages, the enumerated values are: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, Page Restored, PageValid, PageInvalid for dam, the enumerated values are ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, "RENDITION_UPDATED", ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED |
+
+
+
+
+
+
 
