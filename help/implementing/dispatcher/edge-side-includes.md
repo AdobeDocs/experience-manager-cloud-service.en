@@ -16,7 +16,7 @@ The ESI syntax is as follows: if a parent page `/parent-pages/page.html` include
 
 ## Apache Configuration {#esi-apache}
 
-Pages with ESI tags should declare the following properties in the apache configuration:
+If you have pages with ESI tags you should declare the following properties in the apache configuration:
 
 ```
 <LocationMatch "/parent-pages/*">
