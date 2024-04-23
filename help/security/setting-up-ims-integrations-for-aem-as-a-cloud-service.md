@@ -23,7 +23,7 @@ The integrations use an IMS integration, configured with S2S OAuth.
     >
     >Previously, configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
-## Credentials in the Developer Console {#credentials in-the-developer-console}
+## Credentials in the Developer Console {#credentials-in-the-developer-console}
 
 As the first step you need to configure the OAuth credentials in the Adobe Developer Console:
 
@@ -72,4 +72,4 @@ To migrate an existing Adobe IMS Integration based on JWT credentials:
    ![Complete OAuth details](assets/ims-migrate-jwt-complete-oauth-details.png)
 
 1. Use **Save & Close** to persist your updates. 
-   When you return to the console the **JWT Credentials (deprecated)** warning will be gone-
+   When you return to the console the **JWT Credentials (deprecated)** warning will be gone.
