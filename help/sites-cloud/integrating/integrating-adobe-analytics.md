@@ -41,7 +41,7 @@ The fields present in the configuration window are as follows :
 
 ### Adobe Analytics with IMS authentication {#configuration-parameters-ims}
 
-An IMS configuration is required to properly integrate Adobe Analytics with AEM as a Cloud Service. 
+The integration of Adobe Experience Manager as a Cloud Service (AEMaaCS) with Adobe Analytics via the Analytics Standard API requires the configuration of Adobe IMS (Identity Management System).
 
 See [Setting Up IMS Integrations for AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) to learn how to create the IMS configuration.
 
