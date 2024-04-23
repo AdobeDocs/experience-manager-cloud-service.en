@@ -7,32 +7,31 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 15977 {#release-15977}
+## Release X {#release-X}
 
-Summarized below are the continuous improvements for maintenance release 15977, which was publicly released on April 19, 2024. The previous maintenance release was release 15939.
+Summarized below are the continuous improvements for maintenance release X, which was publicly released on April 24, 2024. The previous maintenance release was release 15977.
 
 2024.4.0 Feature Activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
 
-### Enhancements {#enhancements-15977}
-
-* GRANITE-51335: Optimize AEM health check to increase instance stability.
-
-### Fixed Issues {#fixed-issues-15977}
-
-* CQ-4357226: Fix regression in the IMS Configurations support for OAuth credentials.
-* GRANITE-51335: Ratelimit upgrade to 5.0.4 Fixed Felix Health Check registrations.
-
-### Known Issues {#known-issues-15977}
+### Enhancements {#enhancements-X}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-15977}
+### Fixed Issues {#fixed-issues-X}
+
+None.
+
+### Known Issues {#known-issues-X}
+
+None.
+
+### Deprecated Features and APIs {#deprecated-X}
 
 * [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
 Have a look at [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) to know what has been deprecated or removed in AEM as a Cloud Service.
 
-### Embedded Technologies {#embedded-tech-15977}
+### Embedded Technologies {#embedded-tech-X}
 
 |Technology|Version|Link|
 |---|---|---|
