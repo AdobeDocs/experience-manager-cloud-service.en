@@ -25,7 +25,23 @@ The integrations use an IMS integration, configured with S2S OAuth.
 
 ## Credentials in the Developer Console {#credentials-in-the-developer-console}
 
-As the first step you need to configure the OAuth credentials in the Adobe Developer Console:
+As the first step you need to configure the OAuth credentials in the Adobe Developer Console. 
+
+For details on how to do this, see the Developer Console documentation, depending on your requirements:
+
+* Overview:
+
+  * [Server to Server authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
+
+* Creating a new OAuth credential:
+
+  * [OAuth Server-to-Server credential implementation guide](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+
+* Migrating an existing JWT credential:
+
+  * [Migrating from Service Account (JWT) credential to OAuth Server-to-Server credential](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+
+For example:
 
 ![OAuth Credential in the Developer Console](assets/ims-configuration-developer-console.png)
 
