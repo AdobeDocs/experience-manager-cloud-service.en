@@ -37,7 +37,7 @@ For details on how to do this, see the Developer Console documentation, dependin
 
   * [OAuth Server-to-Server credential implementation guide](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
 
-* Migrating an existing JWT credential:
+* Migrating an existing JWT credential to an OAuth credential:
 
   * [Migrating from Service Account (JWT) credential to OAuth Server-to-Server credential](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
 
