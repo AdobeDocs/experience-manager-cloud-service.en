@@ -6,21 +6,18 @@ exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 ---
 # Configuring Traffic at the CDN {#cdn-configuring-cloud}
 
->[!NOTE]
->This feature is not yet generally available. To join the early-adopter program, email `aemcs-cdn-config-adopter@adobe.com` and describe your use case.
-
 AEM as a Cloud Service offers a collection of features configurable at the [Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) layer that modify the nature of either incoming requests or outgoing responses. The following rules, described in detail in this page, can be declared to achieve the following behavior:
 
 * [Request transformations](#request-transformations) - modify aspects of incoming requests, including headers, paths and parameters.
 * [Response transformations](#response-transformations) - modify headers that are on the way back to the client (for example, a web browser).
-* [Client-side redirectors](#client-side-redirectors) - trigger a browser redirect.
+* [Client-side redirectors](#client-side-redirectors) - trigger a browser redirect. This feature is not yet GA, but available to early adopters.
 * [Origin selectors](#origin-selectors) - proxy to a different origin backend.
 
 Also configurable at the CDN are Traffic Filter Rules (including WAF), which control what traffic is allowed or denied by the CDN. This feature is already released and you can learn more about it in the [Traffic Filter Rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md) page.
 
 Additionally, if the CDN cannot contact its origin, you can write a rule that references a self-hosted custom error page (which is then rendered). Learn more about this by reading the [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md) article.
 
-All these rules, declared in a configuration file in source control, are deployed by using [Cloud Manager's Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Be aware that the cumulative size of the configuration file cannot exceed 100KB.
+All these rules, declared in a configuration file in source control, are deployed by using [Cloud Manager's Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
 
 ## Order of Evaluation {#order-of-evaluation}
 
@@ -308,9 +305,14 @@ Connections to origins are SSL only and use port 443.
 
 ## Client-side Redirectors {#client-side-redirectors}
 
+>[!NOTE]
+>This feature is not yet generally available. To join the early-adopter program, email `aemcs-cdn-config-adopter@adobe.com` and describe your use case.
+
 You can use client side redirect rules for 301, 302 and similar client side redirects. If a rule matches, the CDN responds with a status line that includes the status code and message (for example, HTTP/1.1 301 Moved Permanently), as well as the location header set.
 
 Both absolute and relative locations with fixed values are allowed.
+
+Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
 
 Configuration example:
 
