@@ -198,7 +198,7 @@ The default purge values can be overridden by declaring a configuration file and
 
 >[!NOTE]
 > Once you deploy the version purge node in the configuration file, you must keep it declared and not remove it. The configuration pipeline will fail if you attempt to do so. The rationale for this behavior is to remove the ambiguity over whether the default purge values would take effect once you remove the declaration.
-Similarly, once you deploy the audit log purge node in the configuration file, you must keep it declared and must not remove it.
+>Similarly, once you deploy the audit log purge node in the configuration file, you must keep it declared and must not remove it.
 
 1 - create the following folder and file structure in the top-level folder of your project in Git:
 
