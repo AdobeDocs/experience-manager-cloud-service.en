@@ -66,7 +66,7 @@ version: "1"
 metadata:
   envTypes: ["dev", "stage", "prod"]
 data:  
-  experimental_requestTransformations:
+  requestTransformations:
     removeMarketingParams: true
     rules:
       - name: set-header-rule
@@ -168,7 +168,7 @@ version: "1"
 metadata:
   envTypes: ["prod", "dev"]
 data:   
-  experimental_requestTransformations:
+  requestTransformations:
     rules:
       - name: set-variable-rule
         when:
@@ -179,7 +179,7 @@ data:
             var: some_var_name
             value: some_value
  
-  experimental_responseTransformations:
+  responseTransformations:
     rules:
       - name: set-response-header-while-variable
         when:
@@ -205,7 +205,7 @@ version: "1"
 metadata:
   envTypes: ["prod", "dev"]
 data:
-  experimental_responseTransformations:
+  responseTransformations:
     rules:
       - name: set-response-header-rule
         when:
@@ -261,7 +261,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_originSelectors:
+  originSelectors:
     rules:
       - name: example-com
         when: { reqProperty: path, like: /proxy-me* }
