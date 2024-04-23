@@ -7,17 +7,49 @@ description: Learn how to set up IMS integrations for AEM as a Cloud Service
 
 Adobe Experience Manager (AEM) as a Cloud Service can be integrated with many other Adobe solutions. For example, Adobe Target, Adobe Analytics, and others. 
 
-The integrations use an IMS integration:
+The integrations use an IMS integration, configured with S2S OAuth.
 
-* [IMS integrations are now configured with S2S OAuth](#configuration-with-the-developer-console) 
-* Previously, configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-  * These [JWT configurations can be migrated to OAuth](#migrating-old-JWT-configuration-to-oauth)
+* Once you have created:
 
-## Configuration with the Developer Console {#configuration-with-the-developer-console}
+  * [Credentials in the Developer Console](#credentials-in-the-developer-console) 
 
-## Migrating an old JWT configuration to OAuth {#migrating-old-JWT-configuration-to-oauth}
+* Then you can:
 
-To migrate an old JWT configuration; in this example, a Launch IMS Configuration:
+  * Create a (new) [OAuth configuration](#creating-oauth-configuration)
+
+  * [Migrate an existing JWT configurations to OAuth](#migrating-existing-JWT-configuration-to-oauth)
+
+    >[!NOTE]
+    >
+    >Previously, configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+
+## Credentials in the Developer Console {#credentials in-the-developer-console}
+
+As the first step you need to configure the OAuth credentials in the Adobe Developer Console:
+
+![OAuth Credential in the Developer Console](assets/ims-configuration-developer-console.png)
+
+## Creating an OAuth configuration {#creating-oauth-configuration}
+
+To create a new Adobe IMS Integration using OAuth:
+
+1. In AEM, navigate to **Tools**, **Security**, **Adobe IMS Integration**.
+
+1. Select **Create**.
+
+1. Complete the configuration based on details from the Developer Console:
+
+   ![Create OAuth Configuration](assets/ims-create-oauth-configuration.png)
+
+1. **Save** your changes.
+
+## Migrating an existing JWT configuration to OAuth {#migrating-existing-JWT-configuration-to-oauth}
+
+To migrate an existing Adobe IMS Integration based on JWT credentials:
+
+>[!NOTE]
+>
+>This example shows a Launch IMS Configuration.
 
 1. In AEM, navigate to **Tools**, **Security**, **Adobe IMS Integration**.
 
