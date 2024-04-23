@@ -32,7 +32,7 @@ For the export of Experience Fragments and/or Content Fragments to Target, you n
 
 ### IMS Configuration {#ims-configuration}
 
-An IMS configuration for both Launch and Target is necessary to properly integrate Target with AEM and Launch. While the IMS configuration for Launch is preconfigured in AEM as a Cloud Service, the Target IMS configuration must be created (after Target is provisioned). See [Setting Up IMS Integrations for AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) and the video [Integrating Experience Platform Launch and AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) to learn how to create the Target IMS configuration.
+The integration of AEM with Adobe Target via the Target Standard API requires the configuration of Adobe IMS (Identity Management System). The Target IMS configuration must be created (after Target is provisioned). See [Setting Up IMS Integrations for AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) and the video [Integrating Experience Platform Launch and AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) to learn how to create the Target IMS configuration.
 
 >[!NOTE]
 >
