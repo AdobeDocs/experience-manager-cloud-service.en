@@ -35,8 +35,6 @@ See [Setting Up IMS Integrations for AEM as a Cloud Service](/help/security/sett
 * create configurations with OAuth credentials 
 * migrate configurations, that were created with JWT credentials, to use OAuth credentials
 
-![Integrating AEM with other solutions](/help/security/assets/jwt-deprecation.png)
-
 ## Cloud Manager APIs {#cloud-manager-apis}
 
 **Action**: These can be migrated as AEM supports OAuth credentials.
