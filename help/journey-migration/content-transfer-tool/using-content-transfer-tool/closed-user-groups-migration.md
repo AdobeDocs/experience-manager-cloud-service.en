@@ -7,6 +7,7 @@ exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 feature: Migration
 role: Admin
 ---
+
 # Migrating Closed User Groups {#migrating-closed-user-groups}
 
 >[!CONTEXTUALHELP]
