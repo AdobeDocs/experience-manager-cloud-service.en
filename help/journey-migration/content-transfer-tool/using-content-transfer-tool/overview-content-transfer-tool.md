@@ -5,6 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
 ---
+
 # Overview {#overview-content-transfer-tool}
 
 >[!CONTEXTUALHELP] 
@@ -69,7 +70,6 @@ All migration sets will eventually expire after a prolonged period of inactivity
 The expiry of a migration set can be monitored on the Migration Set row. A helpful visual indicator that a migration set is approaching its expiry date also added the project's card.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
-
 
 ## What's Next {#whats-next}
 
