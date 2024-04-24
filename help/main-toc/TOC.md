@@ -707,8 +707,8 @@ user-guide-title: AEM as a Cloud Service
     + [List of supported fonts in PDF documents](/help/forms/supported-out-of-the-box-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
   + Transaction Reports {#using-communications}
-    + [Transaction Reports Billable APIs](/help/forms/transaction-reports-billable-apis.md)
-    + [Record a transaction for custom implementations](/help/forms/record-transaction-custom-implementation.md)
+    + [Transaction Reports Billable APIs ](/help/forms/transaction-reports-billable-apis.md)
+    + [Record a transaction for a custom implementation](/help/forms/record-transaction-custom-implementation.md)
   + Developer API Reference {#aem-forms-developer-api-reference}
     + [Adaptive Forms API reference](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
     + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
