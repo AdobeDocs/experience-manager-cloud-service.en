@@ -243,6 +243,28 @@ It helps to retrieve the usage rights enabled or disabled to a PDF document for 
 
 The [API reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to postman to check functionality of APIs.
 
+### Convert PDF to XDP {#convert-pdf-to-xdp}
+
+<span class="preview"> The Usage Rights capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+Converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary.
+
+The [API reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) provides detailed information about all the parameters, authentication methods, and the services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to postman to check functionality of APIs.
+
+### Extract PDF properties
+
+<span class="preview"> The Document Extraction capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+Document Extraction service provides you the capability to get the properties of a PDF document such as its Usage Rights and metadata.
+
+The [API reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) provides detailed information about all the parameters, authentication methods, and the services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to postman to check functionality of APIs.
+
+### XMP Utilities or Document Transformation Service {#XMP-utilities}
+
+<span class="preview"> The XMP Utilities Service capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+PDF documents contain metadata, which is information about the document (as distinguished from the contents of the document, such as text and graphics). The Adobe Extensible Metadata Platform (XMP) is a standard for handling document metadata. The XMP Utilities service can retrieve and save XMP metadata from PDF documents and import XMP metadata into PDF documents.
+
 ## Types of communications APIs {#types}
 
 Communications provide HTTP APIs for on-demand and batch document generation:
