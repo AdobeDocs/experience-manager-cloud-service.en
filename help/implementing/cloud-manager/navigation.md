@@ -7,6 +7,11 @@ description: Learn how the Cloud Manager UI is organized and how to navigate to 
 
 Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.
 
+The Cloud manage UI is primarily composed of two graphical interfaces:
+
+* [The My Programs console](#my-programs) where you can view and manage all of your programs.
+* [The Program Overview window](#program-overview) where you can see the detail of and manage an individual program.
+
 ## My Programs Console {#my-programs}
 
 When you log into Cloud Manager at at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization, you arrive at the **My Programs** console.
@@ -18,8 +23,12 @@ The My Programs console provides an overview of all programs to which you have a
 1. [Toolbars](#toolbars-my-programs-toolbars) for organization selection, alerts, and account settings
 1. [Chat AEM](#chat-aem) to guide you in your next steps and answer questions
 1. [Statistics and call-to-action](#statistics) for an overview of your recent activity
-1. [Programs and License](#programs-license) to understand your current license status and manage your programs
-1. [Quick Links](#quick-links) to easily access related resources
+1. [Programs and license](#programs-license) to understand your current license status and manage your programs
+1. [Quick links](#quick-links) to easily access related resources
+
+>[!TIP]
+>
+>Please see the document [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) for details on programs.
 
 ### Toolbars {#my-programs-toolbars}
 
@@ -33,7 +42,7 @@ The first is the Cloud Manager header, which is persistent as you navigate Cloud
 
 1. The Cloud Manager button will take you back to the My Programs console of Cloud Manager no matter where you are in Cloud Manager.
 1. Tap or click the Feedback button to provide feedback to Adobe about Cloud Manager.
-1. The organization selector displays the organization you are currently signed into. Tap or click to switch to another organization if your Adobe ID is associated with multiple.
+1. The organization selector displays the organization you are currently signed into (in this example, Foundation Internal). Tap or click to switch to another organization if your Adobe ID is associated with multiple.
 1. Tapping or clicking the solutions switcher lets you quickly jump to other Experience Cloud solutions.
 1. The help icon provides quick access to learning and support resources.
 1. The notifications icon is badged with the number of currently assigned incomplete [notifications.](/help/implementing/cloud-manager/notifications.md)
@@ -45,7 +54,7 @@ The program toolbar provides links to switch between Cloud Manager programs and 
 
 ![Program toolbar](assets/program-toolbar.png)
 
-1. The program selector opens up into a dropdown where you can quickly select other programs or create a new program
+1. The program selector opens up into a dropdown where you can quickly select other programs or take context-appropriate actions such as creating a new program
 1. The getting started link gives you access to the [onboarding documentation journey](/help/journey-onboarding/overview.md) to get you up-and-running with Cloud Manager.
 1. The action button offers context-appropriate actions such as creating a new program.
 
@@ -83,6 +92,53 @@ Use the sorting options to better find the program you need.
 * Grid View (default)
 * List View
 
+Every program is represented by a card (or row in a table), providing an overview of the program and quick links to take action.
+
+![Program card](assets/program-card.png)
+
+* Program image (if configured)
+* Program name
+* Service type: **Experience Manager Cloud** for AEM as a * Cloud Service programs or [**Experience Manager** for AMS programs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+* [Program type](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md): Sandbox or production
+* Status
+* Configured solutions
+* Creation date
+
+Depending on the options chosen when creating the program, a production program might be badged to show additional features.
+
+* [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
+
+  ![HIPAA badge](assets/hipaa.png)
+
+* [WAF-DDOS protection](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
+
+  ![WAF-DDOS badge](assets/waf-ddos-protection.png)
+
+* [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
+
+  ![99.99% SLA badge](assets/9999-sla.png)
+
+The information icon also gives quick access to additional information about the program (useful in list view).
+
+![Information](assets/information-list-view.png)
+
+The ellipsis icon gives you access additional actions you can take on the program.
+
+![Ellipsis button for programs](assets/program-ellipsis.png)
+
+* Navigate to a particular [environment](/help/implementing/cloud-manager/manage-environments.md) of the program
+* Open the [program overview](#program-overview)
+* [Edit the program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
+* [Delete a sandbox program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+
+>[!TIP]
+>
+>For more information about programs and creating and managing programs, please see the following documents.
+>
+>* [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+>* [Creating Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+>* [Creating Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+
 #### License Tab {#license-tab}
 
 The **License** tab gives you quick access to the [License Dashboard.](/help/implementing/cloud-manager/license-dashboard.md)
@@ -91,7 +147,7 @@ The **License** tab gives you quick access to the [License Dashboard.](/help/imp
 
 The quick links section give you access to commonly-used, related resources.
 
-## Program Overview {#program-overview}
+## Program Overview Window {#program-overview}
 
 Once you select a program in the My Programs console, you are taken to the Program Overview.
 
@@ -121,11 +177,9 @@ Tap or click the hamburger menu icon to hide the tabs.
 
 #### Program Toolbar {#program-toolbar-2}
 
-The program toolbar still gives you access to quickly switch to other programs, but additionally gives access to edit the program.
+The program toolbar still gives you access to quickly switch to other programs, but additionally gives access to context-appropriate actions such as adding and editing the program.
 
 ![Program toolbar](assets/cloud-manager-program-toolbar.png)
-
-Please see the document [Managing and Editing Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) for details.
 
 Additionally, the toolbar always provides which tab you are on if you have chosen to hidden the tabs using the hamburger menu.
 
@@ -134,16 +188,16 @@ Additionally, the toolbar always provides which tab you are on if you have chose
 Each program has a lot of options and data associated with it. These data are gathered into tabs to make navigating the program simpler. The tabs give you access to:
 
 * Overview - The program overview as described in the current document
-* Activity - 
-* Pipelines
-* Repositories
-* Reports
-* Environments
-* Content Sets
-* Copy Content Activity
-* Learning Paths
+* [Activity](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - The history of pipeline runs of the program
+* [Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - All pipelines configured for the program
+* [Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) - All repositories configured for the program
+* [Reports](/help/implementing/cloud-manager/sla-reporting.md) - Metrics such as SLA data
+* [Environments](/help/implementing/cloud-manager/manage-environments.md) - All environments configured for the program
+* [Content Sets](/help/implementing/developing/tools/content-copy.md) - Sets of content created for copy purposes
+* [Copy Content Activity](/help/implementing/developing/tools/content-copy.md) - Content copy activities
+* Learning Paths - Additional learning resources about Cloud Manager
 
-By default, when you open a program you arrive on the Overview tab. The current tab is highlighted. Select another tab to show its details.
+By default, when you open a program you arrive on the **Overview** tab. The current tab is highlighted. Select another tab to show its details.
 
 Use the hamburger menu in the [Cloud Manager header](#cloud-manager-header-2) to hide the tabs.
 
@@ -181,3 +235,4 @@ The **Performance** card gives an overview of the **[CDN Dashboard.](/help/imple
 
 ### Useful Resources {#useful-resources}
 
+The **Useful Resources** section provides links to additional learning resources for Cloud Manager.
