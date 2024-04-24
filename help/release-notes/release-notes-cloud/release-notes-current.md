@@ -50,29 +50,35 @@ Interested in trying out the feature and sharing feedback? Send an email to aemc
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in Admin view {#admin-view}
+### New features in Assets view {#assets-view-new-features}
 
-**Native integration with Adobe Express**
 
-AEM Assets integrates natively with Adobe Express, which allows you to directly access the assets stored in AEM Assets from within the Adobe Express user interface. You can place content managed in AEM Assets in the Express canvas and then save new or edited content in an AEM Assets repository.
+**Contextual Search**
 
-![Include assets from Assets add-on](/help/assets/assets/adobe-express-native-integration.png)
+You can now also [search assets available in the repository by defining text prompts](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets automatically transforms those text prompts to search filters and displays the search results. You can view and modify automatic filters using the Filters Pane to further narrow down the search results.
 
-**Preview renditions for all supported video types**
+![Contextual Search](/help/assets/assets/contextual-search-text-prompt1.png)
 
-Experience Manager Assets now generates preview renditions of all supported video types by default without requiring a processing profile configuration.
+**Express video quick actions**
 
-**Link share configuration**
+Experience Manager Assets now includes [easy and intuitive video editing tools powered by Adobe Express](/help/assets/edit-videos-assets-view.md) to increase content re-use and accelerate content velocity. The editing options include trimming, cropping, resizing a video, and also converting an MP4 to a GIF file.
 
-A new improved user experience for [creating link shares](/help/assets/share-assets.md) along with a brand new set of configurations that let administrators customize the default behavior of this capability for your users.
+![crop video with Adobe Express](/help/assets/assets/adobe-express-crop-video.png)
 
-![Configure Email Service](/help/assets/assets/config-email-service.png)
+**Dynamic renditions**
 
-### New features in Assets view {#assets-view}
+You can now [view and download dynamic renditions (including smart crops)](/help/assets/renditions.md) in Experience Manager Assets. Dynamic renditions are customized versions of image assets created in real-time to meet specific needs, such as resizing images based on device resolution or cropping to fit different aspect ratios. These renditions enable organizations to deliver personalized and optimized experiences to diverse audience needs.
 
-**Manage permissions for collections** 
+![Dynamic renditions](/help/assets/assets/preset_smart_crop.png)
 
-Assets Essentials allows the administrators to manage access levels for private collections available in the repository. As an administrator, you can create user groups and assign permissions to those groups to manage access levels. You can also delegate the permission management privileges to user groups.
+**In-place rename for assets and folders**
+
+Experience Manager Assets now offers a simplified user experience by providing [ability to rename an asset or a folder via single click](/help/assets/manage-organize-assets-view.md).
+
+**Assign or remove metadata form to multiple folders**
+
+You can now [assign or remove metadata form to multiple folders](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
+
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
