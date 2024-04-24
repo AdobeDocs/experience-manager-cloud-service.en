@@ -189,7 +189,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 +++
 
-+++**IMS token validation**
++++**Validation with provided IMS token**
 
 ```
 <script>
@@ -418,6 +418,11 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 | *selectionType* | string | No | single | Configuration for `single` or `multiple` selection of assets at a time. |
 | *dragOptions.allowList* | boolean | No | | The property is used to allow or deny the dragging of assets that are not selectable. |
 | *aemTierType* | string | No | | It allows you to select whether you want to show assets from delivery tier, author tier, or both. <br><br> Syntax: `aemTierType:[0: "author" 1: "delivery"` <br><br> For example, if both `["author","delivery"]` are used, then the repository switcher displays options for both author and delivery. |
+| *handleNavigateToAsset* | Function | No | | It is a Callback function to handle selection of an asset. |
+| *noWrap* | boolean | No | | The *noWrap* property helps rendering Asset Selector in the side rail panel. If this property is not mentioned, it renders the *Dialog view* by default. | 
+| *dialogSize* | small, medium, large, fullscreen, or fullscreen takeover | String | Optional | You can control the layout by specifying its size using the given options. |
+| *colorScheme* | light or dark | No | | This property is used to set the theme of an Asset Selector application. You can choose between light or dark theme. |
+| *filterRepoList* | Function | No |  | You can use `filterRepoList` callback function that calls Experience Manager repository and returns a filtered list of repositories. |
 
 ## Examples to use Asset Selector properties {#usage-examples}
 
