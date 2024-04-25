@@ -18,7 +18,7 @@ A subcategory of traffic filter rules require either an Enhanced Security licens
 
 Traffic filter rules can be deployed via Cloud Manager configuration pipelines to dev, stage, and production environment types in production (non-sandbox) programs. Support for RDEs will come in the future.
 
-[Follow through a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) to quickly build concrete expertise on this feature.
+[Follow through a tutorial](#tutorial) to quickly build concrete expertise on this feature.
 
 >[!NOTE]
 >Interested in other options to configure traffic at the CDN, including modifing the request/response, declaring redirects, and proxying to a non-AEM origin? [Learn how and try it out](/help/implementing/dispatcher/cdn-configuring-traffic.md) by joining the early adopter program.
@@ -137,7 +137,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
@@ -246,6 +249,7 @@ The `wafFlags` property, which can be used in the licensable WAF traffic filter 
 | SQLI  | SQL Injection  | SQL Injection is the attempt to gain access to an application or obtain privileged information by executing arbitrary database queries.  |
 | BACKDOOR  |  Backdoor | A backdoor signal is a request which attempts to determine if a common backdoor file is present on the system.  |
 | CMDEXE  | Command Execution  | Command Execution is the attempt to gain control or damage a target system through arbitrary system commands by means of user input.  |
+| CMDEXE-NO-BIN  | Command Execution except on `/bin/`  | Provide same level of protection as `CMDEXE` while disabling false-positive on `/bin` due to AEM architecture.  |
 | XSS  |  Cross Site Scripting | Cross-Site Scripting is the attempt to hijack a user's account or web-browsing session through malicious JavaScript code.  |
 | TRAVERSAL  | Directory Traversal  | Directory Traversal is the attempt to navigate privileged folders throughout a system in hopes of obtaining sensitive information.  |
 | USERAGENT  |  Attack tooling |  Attack Tooling is the use of automated software to identify security vulnerabilities or to attempt to exploit a discovered vulnerability. |
@@ -325,7 +329,7 @@ data:
 
 **Example 3**
 
-This rule blocks requests that contain the query parameter `foo`, but allows every request coming from IP 192.168.1.1:
+This rule blocks requests on publish that contain the query parameter `foo`, but allows every request coming from IP 192.168.1.1:
 
 ```
 kind: "CDN"
@@ -336,7 +340,10 @@ data:
   trafficFilters:
     rules:
       - name: "block-request-that-contains-query-parameter-foo"
-        when: { queryParam: url-param, equals: foo }
+        when:
+          allOf:
+            - { queryParam: url-param, equals: foo }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "allow-all-requests-from-ip"
@@ -347,7 +354,7 @@ data:
 
 **Example 4**
 
-This rule blocks requests to path `/block-me`, and blocks every request that matches a `SQLI` or `XSS` pattern. This example includes a WAF traffic filter rules, which references the `SQLI` and `XSS` [WAF Flags](#waf-flags-list), and thus requires a separate license.
+This rule blocks requests to path `/block-me` on publish, and blocks every request that matches a `SQLI` or `XSS` pattern. This example includes a WAF traffic filter rules, which references the `SQLI` and `XSS` [WAF Flags](#waf-flags-list), and thus requires a separate license.
 
 ```
 kind: "CDN"
@@ -358,7 +365,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
@@ -410,6 +420,8 @@ Rate limit rules cannot reference WAF flags. They are available to all Sites and
 
 Rate limits are calculated per CDN POP. As an example, assume that POPs in Montreal, Miami, and Dublin experience traffic rates of 80, 90, and 120 request per second respectively, and that the rate limit rule is set to a limit of 100. In that case, only the traffic to Dublin would be rate limited.
 
+Rate limits are evaluated based on either traffic hitting the edge, traffic hitting the origin, or the number of errors.
+
 ### rateLimit Structure {#ratelimit-structure}
 
 | **Property**  | **Type**  | **Default**  | **MEANING**  |
@@ -417,6 +429,7 @@ Rate limits are calculated per CDN POP. As an example, assume that POPs in Montr
 |  limit |  integer from 10 to 10000     |  required |  Request rate (per CDN POP) in requests per second for which the rule is triggered. |
 |  window | integer enum: 1, 10 or 60  | 10  | Sampling window in seconds for which request rate is calculated. The accuracy of counters will depend on the size of the window (bigger window bigger accuracy). For example, one can expect 50% accuracy for the 1 second window and 90% accuracy for the 60 second window. |
 |  penalty | integer from 60 to 3600  | 300 (5 minutes) | A period in seconds for which matching requests are blocked (rounded to the nearest minute).  |
+|  count | all, fetches, errors | all | evaluate based on edge traffic (all), origin traffic (fetches), or the number of errors (errors). |
 |  groupBy | array[Getter] | none | rate limiter counter will be aggregated by a set of request properties (for example, clientIp).  |
 
 
@@ -442,6 +455,7 @@ data:
         limit: 60
         window: 10
         penalty: 300
+        count: all
         groupBy:
           - reqProperty: clientIp
       action: block
@@ -449,7 +463,7 @@ data:
 
 **Example 2**
 
-Block requests on path /critical/resource for 60s when it exceeds an average of 100 req/sec (per CDN POP) in the last 60 sec:
+Block requests on path /critical/resource for 60s when it exceeds an average of 100 requests to origin per seconds (per CDN POP) on a time window of 10 sec:
 
 ```
 kind: "CDN"
@@ -460,10 +474,13 @@ data:
   trafficFilters:
     rules:
       - name: rate-limit-example
-        when: { reqProperty: path, equals: /critical/resource }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /critical/resource }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
-        rateLimit: { limit: 100, window: 60, penalty: 60 }
+        rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
 
 ## Traffic Filter Rules Alerts {#traffic-filter-rules-alerts}
@@ -488,7 +505,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
           experimental_alert: true
@@ -611,7 +631,7 @@ Adobe provides a mechanism to download dashboard tooling onto your computer to i
 
 Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github repository.
 
-[See the tutorial](#tutorial) for concrete instructions on how to use the dashboard tooling.
+[Tutorials](#tutorial) are available for concrete instructions on how to use the dashboard tooling.
 
 ## Recommended starter rules {#recommended-starter-rules}
 
@@ -625,14 +645,28 @@ metadata:
 data:
   trafficFilters:
     rules:
-    #  Block client for 5m when it exceeds 100 req/sec on a time window of 1sec
-    - name: limit-requests-client-ip
+    #  Block client for 5m when it exceeds an average of 100 req/sec to origin on a time window of 10sec
+    - name: limit-origin-requests-client-ip
       when:
-        reqProperty: path
-        like: '*'
+        reqProperty: tier
+        equals: 'publish'
       rateLimit:
         limit: 100
-        window: 1
+        window: 10
+        count: fetches
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: log
+    #  Block client for 5m when it exceeds an average of 500 req/sec on a time window of 10sec
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: tier
+        equals: 'publish'
+      rateLimit:
+        limit: 500
+        window: 10
+        count: all
         penalty: 300
         groupBy:
           - reqProperty: clientIp
@@ -641,7 +675,7 @@ data:
     - name: block-ofac-countries
       when:
         allOf:
-          - { reqProperty: tier, equals: publish }
+          - { reqProperty: tier, in: ["author", "publish"] }
           - reqProperty: clientCountry
             in:
               - SY
@@ -661,44 +695,32 @@ data:
     - name: block-waf-flags-globally
       when:
         reqProperty: tier
-        matches: "author|publish"
+        in: ["author", "publish"]
       action:
         type: log
         wafFlags:
+          - TRAVERSAL
+          - CMDEXE-NO-BIN
+          - XSS
+          - LOG4J-JNDI
+          - BACKDOOR
+          - USERAGENT
+          - SQLI
           - SANS
           - TORNODE
           - NOUA
           - SCANNER
-          - USERAGENT
           - PRIVATEFILE
-          - ABNORMALPATH
-          - TRAVERSAL
           - NULLBYTE
-          - BACKDOOR
-          - LOG4J-JNDI
-          - SQLI
-          - XSS
-          - CODEINJECTION
-          - CMDEXE
-          - NO-CONTENT-TYPE
-          - UTF8
-    # Disable protection against CMDEXE on /bin (only works if WAF is licensed enabled for your environment)
-    - name: allow-cdmexe-on-root-bin
-      when:
-        allOf:
-          - reqProperty: tier
-            matches: "author|publish"
-          - reqProperty: path
-            matches: "^/bin/.*"
-      action:
-        type: allow
-        wafFlags:
-          - CMDEXE
 ```
 
-## Tutorial {#tutorial}
+## Tutorials {#tutorial}
 
-[Work through a tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) to gain practical knowledge and experience around traffic filter rules.
+Two tutorials are available.
+
+### Protecting websites with traffic filter rules (including WAF rules)
+
+[Work through a tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) to gain general, practical knowledge and experience around traffic filter rules, including WAF rules.
 
 The tutorial walks you through:
 
@@ -707,3 +729,16 @@ The tutorial walks you through:
 * Declaring traffic filter rules, including WAF rules
 * Analyzing results with dashboard tooling
 * Best practices
+
+### Blocking DoS and DDoS attacks using traffic filter rules
+
+[Deep-dive on how to block](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Denial of Service (DoS) and Distributed Denial of Service (DDoS) attacks using rate limit traffic filter rules and other strategies.
+
+The tutorial walks you through:
+
+* understanding protection
+* receiving alerts when rate limits are exceeded
+* analyzing traffic patterns using dashboard tooling to configure thresholds for rate limit traffic filter rules
+
+
+
