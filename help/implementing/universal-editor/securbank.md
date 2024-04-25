@@ -127,3 +127,5 @@ With everything set up both in Cloud Manager and locally, you can run the SecurB
 Congratulations! You should now see the SecurBank app successfully running in your browser.
 
 If the content does not yet appear, make sure that the **Deploy to Dev** pipeline that you ran completed successfully.
+
+![SecurBank app in the browser](assets/securbank.png)
