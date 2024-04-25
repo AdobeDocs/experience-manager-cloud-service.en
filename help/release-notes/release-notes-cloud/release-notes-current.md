@@ -170,13 +170,13 @@ Real User Monitoring (RUM) Data Service offers a more precise reflection of user
 
 ### CDN Configuration {#cdn-config}
 
-Get more value out of the Adobe CDN through additional configuration options.
+Configure traffic at the Adobe CDN in the following ways:
 
 * [Request transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) - modify aspects of incoming requests, including paths, query parameters, and HTTP headers before they are routed to AEM.
 * [Response transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) - change HTTP headers of the outgoing responses before they are served to the browser.
-* [Origin selectors](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - route traffic to non-AEM applications.
+* [Origin selectors](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - route traffic through the CDN to off-AEM sites and applications.
 
-Once these rules are declared in source control (git), you can deploy them to the CDN using the Cloud Manager Configuration Pipeline. 
+Once these rules are declared in source control (git), you can deploy them to the CDN using the Cloud Manager Configuration Pipeline. Also see the client-side redirects feature in the early adopter section below.
 
 ### Custom CDN error pages {#cdn-error-pages}
 
