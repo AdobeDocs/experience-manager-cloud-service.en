@@ -270,7 +270,7 @@ Now, you have an enhanced experience while filtering files. The revamped functio
 
 Enjoy benefits such as quicker access to relevant files and a more intuitive user interface, making your search experience smoother and more efficient. 
 
-![quick search filter ](../assets/guides/repository-filter-search-quick.png) {width="300" align="left"}
+![quick search filter ](../assets/guides/repository-filter-search-quick.png) 
 
 *Use the quick filters to search for DITA and Non-DITA files.*
 
