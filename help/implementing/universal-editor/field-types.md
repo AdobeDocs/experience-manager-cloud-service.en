@@ -824,3 +824,4 @@ Text allows for a single line of text input.  It includes additional validation 
 ![Screenshot of text component type](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
+

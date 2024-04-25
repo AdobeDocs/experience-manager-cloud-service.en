@@ -9,7 +9,7 @@ exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 >
 >AEM 6.5 customers should reference [this article](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console) for more information.
 
-Adobe customers use [Adobe Developer Console](https://developer.adobe.com/console) to generate credentials that enable access to various APIs. Customers select from various credential types ranging from OAuth Server-to-Server to Single-Page App. One of those credential types, Service Account (JWT) credentials, has been deprecated in favor of the OAuth Server-to-Server credentials. New Service Account (JWT) credentials cannot be created on or after May 1, 2024, and existing JWT credentials will not work on or after Jan 1, 2025. You can [read about the deprecation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
+Adobe customers use [Adobe Developer Console](https://developer.adobe.com/console) to generate credentials that enable access to various APIs. Customers select from various credential types ranging from OAuth Server-to-Server to Single-Page App. One of those credential types, Service Account (JWT) credentials, has been deprecated in favor of the OAuth Server-to-Server credentials. New Service Account (JWT) credentials cannot be created on or after June 3, 2024, and existing JWT credentials will not work on or after Jan 27, 2025. You can [read about the deprecation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
 This article provides some additional context about how AEM as a Cloud Service should handle the deprecation.
 
@@ -24,7 +24,7 @@ The sections below list the scenarios where customers must (or sometimes must no
 
 ## Integrating AEM with Other Adobe Solutions {#integrating-aem-with-other-adobe-solutions}
 
-**Action**: Wait to migrate until after mid-April 2024, when AEM supports it.
+**Action**: Wait to migrate until after late April 2024, when AEM supports it (this article will be updated at that time)
 
 **Relevant AEM versions**: AEM as a Cloud Service
 
@@ -36,7 +36,7 @@ As an example, here are [the instructions](https://docs.mktossl.com/docs/experie
 
 ## Cloud Manager APIs {#cloud-manager-apis}
 
-**Action**: Wait to migrate until after mid-April 2024, when AEM supports it.
+**Action**: Wait to migrate until after late April 2024, when AEM supports it (this article will be updated at that time).
 
 **Relevant AEM versions**: AEM as a Cloud Service
 

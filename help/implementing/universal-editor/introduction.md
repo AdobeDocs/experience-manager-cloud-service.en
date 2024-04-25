@@ -6,13 +6,15 @@ exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 
 # Universal Editor Introduction {#introduction}
 
-Learn how the Universal Editor enables what-you-see-is-what-you-get (WYSIWYG) editing of any headless and headful experience. Understand how it can help content authors deliver exceptional experiences, increase their content velocity, and how provides a state-of-the-art developer experience.
+The Universal Editor is a versatile visual editor that is part of Adobe Experience Manager Sites. It enables authors to do what-you-see-is-what-you-get (WYSIWYG) editing of any headless or headful experience. Understand how it can help content authors deliver exceptional experiences and how it offers unparalleled freedom for developers.
 
 ## Background {#background}
 
-The most powerful tool to the AEM content author has been the page editor. The page editor offers an intuitive, visual, in-context WYSIWYG authoring experience that requires minimal training and shows authors exactly how the content will appear.
+The Universal Editor provides an efficient and intuitive in-context authoring experience that requires minimal training. With it, authors can manage their content directly in the context the web experience, exactly how it will appear to the visitors. Being a true editor as a service and overall more flexible, it intends to eventually supersede the Page Editor.
 
-However the page editor can only edit AEM page content, structure, and the components contained therein. Content today, however, is rarely sourced from one location. The Universal Editor offers the same in-place editing experience as the page editor but for any aspect of any content in any implementation.
+Authors benefit from the Universal Editor’s flexibility as it is supports same consistent visual editing for all forms of AEM content: in-place editing and layout composition is possible likewise for both content fragments and page components. The two forms of content can even be edited when showing up side by side in a web experience, without authors having to switch context. This is a tremendous improvement compared to previous editors in AEM only supported one type of content.
+
+Developers benefit from Universal Editor’s versatility as it also supports true decoupling of the implementation. It allows developers to utilize virtually any framework or architecture of their choice, without imposing any SDK or technology constraints. This flexibility even makes it easy to instrument existing web apps for the universal editor without having to re-architecture them.
 
 ## Truly Universal {#universal}
 
@@ -82,3 +84,4 @@ To learn more about the Universal Editor, see these documents.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
 * [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.
+
