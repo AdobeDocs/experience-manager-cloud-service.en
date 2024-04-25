@@ -137,7 +137,7 @@ You can use the document manipulation APIs to convert a PDF document to a PDF/A-
 
 ## Document utilities
 
-Document utilities synchronous APIs helps you convert documents between PDF and XDP file formats, and query information about a PDF document. For example, you can determine whether a PDF document contains comments or attachments. 
+Document utilities synchronous APIs helps you convert documents between PDF and XDP file formats, and query information about a PDF document. For example, you can determine whether a PDF document contains comments or attachments.
 
 ### Retrieve PDF document properties
 
@@ -185,7 +185,13 @@ You can accomplish these tasks using the Encryption APIs:
 
 Both Signature APIs and Encryption APIs are [Synchronous APIs](#types-of-communications-apis-types). 
 
-### Usage Rights APIs
+
+## Document Utilities {#doc-utility}
+
+Document utilities with synchronous APIs help you convert documents between PDF and XDP file formats. Apply usage rights to a document and extract the enabled usage rights from a document. Query information about a PDF document, for example, determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities. Details of all these APIs are given below:
+
+
+### Usage Rights
 
 <span class="preview"> The Usage Rights capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
   
@@ -245,7 +251,7 @@ The [API reference documentation](https://developer.adobe.com/experience-cloud/e
 
 ### Convert PDF to XDP {#convert-pdf-to-xdp}
 
-<span class="preview"> The Usage Rights capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+<span class="preview"> The Convert PDF to XDP capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
 Converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary.
 
@@ -255,9 +261,9 @@ The [API reference documentation](https://developer.adobe.com/experience-cloud/e
 
 <span class="preview"> The Document Extraction capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
-Document Extraction service provides you the capability to get the properties of a PDF document such as its Usage Rights and metadata.
+Document Extraction service provides you with the capability to get the properties of a PDF document such as its usage rights and metadata.
 
-The [API reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) provides detailed information about all the parameters, authentication methods, and the services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to postman to check functionality of APIs.
+The [API reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) provides detailed information about all the parameters, authentication methods, and the services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to Postman to check functionality of APIs.
 
 ### XMP Utilities or Document Transformation Service {#XMP-utilities}
 
