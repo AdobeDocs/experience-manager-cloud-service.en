@@ -26,11 +26,13 @@ The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] cu
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
-## Release Video {#release-video}
+<-- ## Release Video {#release-video}
 
 Have a look at the April 2024 Release Overview video for a summary of the features added in the 2024.4.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -88,19 +90,6 @@ You can now [assign or remove metadata form to multiple folders](/help/assets/me
 * **Configure a shard for Adobe Sign for AEM Forms**: Adobe distributes Acrobat Sign API around the globe in many deployment units called "shards." Each shard serves a customer's account, such as NA1, NA2, NA3, EU1, JP1, AU1, IN1, and others. The shard names correspond to geographic locations. You can now use more than one shard while using Adobe Sign integration with AEM Forms. 
 
 --> 
-
-### New features for AEM Forms {#forms-new-features}
-
-* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: AEM Forms Edge Delivery Services is a composable set of services that enables a rapid development environment where authors can update, publish, and launch new forms rapidly. These services deliver exceptional and high impact forms experiences that drive engagement and conversions. These forms experiences are easy to author and develop. 
-
-  ![EDS Forms Features](/help/edge/assets/eds-forms-features.png)
-
-These services enable you to:
-
-  * Work with multiple content sources on the same forms site and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or Adaptive Forms Editor.
-  * Deliver Digital Enrollment experiences that load and render quickly and continuously monitor your forms performance through real user monitoring (RUM).
-  * Use plain HTML, modern CSS, and vanilla JavaScript to create exceptional experiences, avoiding the steep learning curve of a specific framework.
-
 
 ### New features in Prerelease for AEM Forms {#forms-pre-release}
 
