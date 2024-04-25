@@ -25,6 +25,8 @@ user-guide-title: AEM as a Cloud Service
   + [Release Information](/help/release-notes/home.md)
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
+    + 2024 {#2024}
+      + [Release Notes for 2024.1.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
     + 2023 {#2023}
       + [Release Notes for 2023.12.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-12-0.md)
       + [Release Notes for 2023.11.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-11-0.md)
@@ -72,6 +74,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2024 {#2024}
+      + [Maintenance Release Notes for 2024.4.0](/help/release-notes/maintenance/2024/2024-4-0.md)
       + [Maintenance Release Notes for 2024.3.0](/help/release-notes/maintenance/2024/2024-3-0.md) 
     + 2023 {#2023}
       + [Maintenance Release Notes for 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md) 
@@ -87,6 +90,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.3.0](/help/implementing/cloud-manager/release-notes/2024/2024-3-0.md)
       + [Release Notes for 2024.2.0](/help/implementing/cloud-manager/release-notes/2024/2024-2-0.md)
       + [Release Notes for 2024.1.0](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
     + 2023 {#2023}
@@ -164,6 +168,8 @@ user-guide-title: AEM as a Cloud Service
       + [Release Notes for 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
   + Release Notes for Workfront for Experience Manager enhanced connector{#workfront}
     + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
+  + Release Notes for Generate Variations {#generate-variations}
+    + [Current Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)  
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
   + [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md)
@@ -349,6 +355,7 @@ user-guide-title: AEM as a Cloud Service
       + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
       + [Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
       + [Analyzing Structure](/help/sites-cloud/administering/content-fragments/analysis.md)
+      + [Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
       + [Keyboard Shortcuts](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
     + Site Creation {#site-creation}
       + [Creating a New Site](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -548,6 +555,8 @@ user-guide-title: AEM as a Cloud Service
     + [Search and discover assets](/help/assets/search-assets-view.md)
     + [Asset management tasks](/help/assets/manage-organize-assets-view.md)
     + [Edit images](/help/assets/edit-images-assets-view.md)
+    + [Edit videos](/help/assets/edit-videos-assets-view.md)
+    + [View and manage renditions](/help/assets/renditions.md)
     + [Manage asset metadata](/help/assets/metadata-assets-view.md)
     + [Share assets](/help/assets/share-links-for-assets-view.md)
     + [Manage collections](/help/assets/manage-collections-assets-view.md)
@@ -697,8 +706,8 @@ user-guide-title: AEM as a Cloud Service
     + [List of supported fonts in PDF documents](/help/forms/supported-out-of-the-box-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
   + Transaction Reports {#using-communications}
-    + [Transaction Reports Billable APIs](/help/forms/transaction-reports-billable-apis.md)
-    + [Record a transaction for custom implementations](/help/forms/record-transaction-custom-implementation.md)
+    + [Transaction Reports Billable APIs ](/help/forms/transaction-reports-billable-apis.md)
+    + [Record a transaction for a custom implementation](/help/forms/record-transaction-custom-implementation.md)
   + Developer API Reference {#aem-forms-developer-api-reference}
     + [Adaptive Forms API reference](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
     + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -783,18 +792,25 @@ user-guide-title: AEM as a Cloud Service
   + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
-+ AEM with Edge Delivery Services {#edge-delivery}
-  + [Getting started with Edge Delivery Services](/help/edge/overview.md)
-  + [Using Edge Delivery](/help/edge/using.md)
-  + [Developer Getting Started Guide](/help/edge/edge-dev-getting-started.md)
-  + [Authoring Content for Edge Delivery](/help/edge/authoring.md)
-  + [Publishing Content for Edge Delivery](/help/edge/publishing.md)
-  + [Developing for Edge Delivery](/help/edge/developing.md)
-  + [Content Modeling](/help/edge/content-modeling.md)
-  + [Creating Blocks](/help/edge/create-block.md)
-  + [Tabular Data and Spreadheets](/help/edge/tabular-data.md)
-  + [Existing Projects and Edge Delivery](/help/edge/existing-projects.md)
-  + Building Edge Delivery Applications {#build}
++ Edge Delivery Services {#edge-delivery}
+  + [Edge Delivery Services Overview](/help/edge/overview.md)
+  + [Using Edge Delivery Services with AEM](/help/edge/using.md)
+  + AEM-Based Authoring {#aem-authoring}
+    + [Authoring Content for Edge Delivery](/help/edge/aem-authoring/authoring.md)
+    + [Publishing Content for Edge Delivery](/help/edge/aem-authoring/publishing.md)
+    + [Developer Getting Started Guide](/help/edge/aem-authoring/edge-dev-getting-started.md)
+    + [Creating Blocks](/help/edge/aem-authoring/create-block.md)
+    + [Content Modeling](/help/edge/aem-authoring/content-modeling.md)
+    + [Tabular Data and Spreadheets](/help/edge/aem-authoring/tabular-data.md)
+    + [Existing Projects and Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
+  + Document-Based Authoring {#document-authoring}
+    + [Authoring](/help/edge/docs/authoring.md)
+    + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
+    + [Placeholders](/help/edge/docs/placeholders.md)
+    + [Sitemap](/help/edge/developer/sitemap.md)
+    + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
+    + [Slack Bot](/help/edge/docs/slack.md)
+  + Building Applications {#build}
     + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
     + [Anatomy of a Project](/help/edge/developer/anatomy-of-a-franklin-project.md)
     + [Block Collection](/help/edge/developer/block-collection.md)
@@ -806,21 +822,14 @@ user-guide-title: AEM as a Cloud Service
     + [Favicon](/help/edge/developer/favicon.md)
     + [Custom Headers](/help/edge/docs/custom-headers.md)
     + [Best Practices for Developers](/help/edge/docs/dev-collab-and-good-practices.md)
-  + Publishing Edge Delivery Applications {#publish}
-    + [Authoring](/help/edge/docs/authoring.md)
-    + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
-    + [Placeholders](/help/edge/docs/placeholders.md)
-    + [Sitemap](/help/edge/developer/sitemap.md)
-    + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
-    + [Slack Bot](/help/edge/docs/slack.md)
-  + Launching Edge Delivery Applications {#launch}
+  + Launching Applications {#launch}
     + [Go Live Checklist](/help/edge/docs/go-live-checklist.md)
     + [Push Invalidation](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
     + [Cloudflare Worker Setup](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
     + [Akamai Setup](/help/edge/docs/byo-cdn-akamai-setup.md)
     + [Fastly Setup](/help/edge/docs/byo-cdn-fastly-setup.md)
     + [Redirects](/help/edge/docs/redirects.md)
-  + Building Edge Delivery Forms {#build-forms}
+  + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
     + Get Started {#getting-started-eds-forms}
       + [Getting Started](/help/edge/docs/forms/tutorial.md)
@@ -828,6 +837,7 @@ user-guide-title: AEM as a Cloud Service
       + [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
       + [Publish your form and start collecting data](/help/edge/docs/forms/publish-forms.md)
       + [Add validations to form fields](/help/edge/docs/forms/validate-forms.md)
+      + [Load options from URL to a form](/help/edge/docs/forms/load-options-from-url.md)
       + [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
       + [Use rules to add dynamic behaviour to a form](/help/edge/docs/forms/rules-forms.md)
       + [Show a custom thank you message after form submission](/help/edge/docs/forms/thank-you-page-form.md)
@@ -837,9 +847,10 @@ user-guide-title: AEM as a Cloud Service
       + [Translation](/help/edge/docs/forms/translate-forms.md)
       + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
       + [Custom Components](/help/edge/docs/forms/custom-components-forms.md)
+      + [Real time user monitoring for forms](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
     + References {#forms-references}
       + [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
-  + Resources for Edge Delivery {#resources}
+  + Edge Delivery Resources {#resources}
     + Sidekick {#sidekick}
       + [Using Sidekick](/help/edge/docs/sidekick.md)
       + [Installing Extension](/help/edge/docs/sidekick-extension.md)
@@ -882,7 +893,8 @@ user-guide-title: AEM as a Cloud Service
     + [Updating your Content Fragments for optimized GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
     + [Sample GraphQL queries](/help/headless/graphql-api/sample-queries.md)
     + [Troubleshoot GraphQL queries](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-  + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
+  + [Content Fragments and Models OpenAPIs](/help/headless/content-fragment-openapis.md)
+  + [Content Fragments support in Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
   + Security {#security}
     + [Permissions](/help/headless/security/permissions.md)
     + [Authentication](/help/headless/security/authentication.md)
@@ -1159,8 +1171,8 @@ user-guide-title: AEM as a Cloud Service
   + [Additional Publish Regions](/help/operations/additional-publish-regions.md)
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
-   + [Backup and Restore](/help/operations/backup.md)
-   + [Self-Service Restore](/help/operations/restore.md)
+  + [Backup and Restore](/help/operations/backup.md)
+  + [Self-Service Restore](/help/operations/restore.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
   + [Query and Indexing Best Practices](/help/operations/query-and-indexing-best-practices.md)  

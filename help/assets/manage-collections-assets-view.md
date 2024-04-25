@@ -42,6 +42,8 @@ You can perform the following tasks to manage and use collections:
 
 * [Delete a collection](#delete-collection)
 
+* [Manage permissions to a private collection](#manage-permissions-to-a-private-collection)
+
 ## Create a collection {#create-collection}
 
 To create a collection:
@@ -179,6 +181,18 @@ To delete a collection:
 1. Select the collection that you need to delete.
 
 1. Click **[!UICONTROL Delete]**.
+
+## Manage permissions for a private collection{#manage-permissions-private-collection}
+
+You can allow administrators to manage [access levels](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) for private collections available in the repository. You can assign permissions such as `Can View` and `Can Edit` to the user groups or users. You can also delegate permission management privileges to user groups. The users who create private collections are the owners of those collections. They can use the [!UICONTROL Manage Permissions] action to grant access to the other users. Moreover, Administrators can view and manage permissions of the private collections in the [!DNL Experience Manager] repository.
+<!--
+>[!NOTE]
+>
+>Adobe does not recommend to assign permissions to users.
+-->
+For information on how to assign the available permissions to user groups, see [Add permissions to user groups](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+
+For more information on the end-to-end workflow, see [manage permissions](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Next Steps {#next-steps}
 

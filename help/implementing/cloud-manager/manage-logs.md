@@ -10,6 +10,8 @@ Learn how to access and manage logs to aid your development process in AEM as a 
 
 You can access a list of available log files for the selected environment using the **Environments** card from the **Overview** page or Environment Details page.
 
+Logs are retained for seven days.
+
 ## Downloading Logs {#download-logs}
 
 To download logs, do the following:
