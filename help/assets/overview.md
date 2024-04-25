@@ -1,6 +1,6 @@
 ---
-title: Adobe's Digital Asset Managament (DAM) using AEM 
-description: Understand how to use and administer Adobe's Digital Asset Managament (DAM) using Experience Manager Assets as a Cloud Service.
+title: Adobe's Digital Asset Management (DAM) using AEM 
+description: Understand how to use and administer Adobe's Digital Asset Management (DAM) using Experience Manager Assets as a Cloud Service.
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
