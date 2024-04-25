@@ -55,7 +55,7 @@ To create a new Adobe IMS Integration using OAuth:
 
 1. Select **Create**.
 
-1. Complete the configuration based on details from the Developer Console:
+1. Complete the configuration based on details from the [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). For example:
 
    ![Create OAuth Configuration](assets/ims-create-oauth-configuration.png)
 
