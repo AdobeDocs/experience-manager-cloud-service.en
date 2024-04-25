@@ -24,7 +24,7 @@ Summarized below are the continuous improvements for maintenance release 15977, 
 
 ### Known Issues {#known-issues-15977}
 
-None.
+* **(For AEM Forms only)** After installing AEM Cloud Foundation maintenance release 15977, Adaptive Form fields are rendering in the incorrect order during form authoring and for published forms. If you use AEM Forms, to avoid any inconvenience, it is recommended to not upgrade to this release until the issue is resolved in the upcoming maintenance release.
 
 ### Deprecated Features and APIs {#deprecated-15977}
 
