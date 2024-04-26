@@ -20,7 +20,7 @@ This section covers the key articles focussed on:
 
 Once auto-provisioning is complete:
 
-* Access Rights Granted – Adobe will create an Organization within Adobe Identity Management System (IMS)
+* Access Rights Granted - Adobe will create an Organization within Adobe Identity Management System (IMS)
 * Designated Administrator will have administrator permissions by default
 * Administrator can add users and roles for additional team members through the Admin Console
 * Review role-based permissions for users to determine permission assignments in Cloud Manager
