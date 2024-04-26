@@ -1,6 +1,7 @@
 ---
 title: Release Notes for 2024.3.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Release Notes for 2024.3.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 ---
 # 2024.3.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
