@@ -111,9 +111,9 @@ Beyond the required entitlements, 99.99% SLA has additional requirements for use
 
    ![Program overview](assets/set-up-prod5.png)
 
-If at any time you need to switch to another program or return to the overview page to create another program, click your program name in the top-left of the screen to reveal the **Navigate to** option.
-
-![Navigate to](assets/create-program-a1.png)
+>[!TIP]
+>
+>Please see the document [Navigating the Cloud Manager UI](/help/implementing/cloud-manager/navigation.md) for details on how to navigate Cloud Manager and understanding the **My Programs** console.
 
 >[!NOTE]
 >
