@@ -41,15 +41,19 @@ The **Pipelines** window shows a complete list of all pipelines for the selected
 
 1. Here you can see a list of all pipelines for the program and start and stop pipeline execution as you would in the **Pipelines Card**.
 
-If a pipeline is executing, hovering over its **Status** column will reveal details about the execution.
+If a pipeline is executing, tapping the information icon in the **Status** column will reveal details about the execution.
 
 ![Pipeline execution details](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
 Tapping or clicking **View details** will take you to the [details of the pipeline execution.](#view-details)
 
+You can also tap or click the ellipsis button of the pipeline to take additional actions appropriate to the pipeline state such as [editing](#editing-pipelines) it or [cancelling execution.](#cancel)
+
+![Pipeline actions](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
+
 ## Activity Window {#activity}
 
-The **Activities** window shows a complete list of all pipelines executions for the selected program.
+The **Activity** window shows a complete list of all pipelines executions for the selected program as well as other important program events.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
@@ -57,11 +61,15 @@ The **Activities** window shows a complete list of all pipelines executions for 
 
 1. Here you can see a list of all pipeline executions for the program including current and historical executions.
 
-If a pipeline is executing, hovering over its **Status** column will reveal details about the execution.
+If a pipeline is executing, tapping the information icon in the **Status** column will reveal details about the execution.
 
 ![Pipeline execution details](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-Tapping or clicking **View details** will take you to the [details of the pipeline execution.](#view-details)
+Tapping or clicking the row representing the pipeline execution will take you to the [details of the pipeline execution.](#view-details)
+
+You can also tap or click the ellipsis button to take further action on the pipeline execution, such as view its details or download the log, which takes you to the [pipeline details page.](#view-details)
+
+![Pipeline execution actions](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 
 ## Running Pipelines {#running-pipelines}
 
