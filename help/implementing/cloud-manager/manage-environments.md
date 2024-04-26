@@ -35,9 +35,9 @@ To add or edit an environment, a user must be a member of the **Business Owner**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, tap or click the program for which you want to add an environment.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click the program for which you want to add an environment.
 
-1. From the **[Program Overview](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview)** page, click **Add Environment** on the **Environments** card to add an environment.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click **Add Environment** on the **Environments** card to add an environment.
 
    ![Environments card](assets/no-environments.png)
 

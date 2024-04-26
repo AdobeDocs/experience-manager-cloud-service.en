@@ -25,7 +25,7 @@ Follow these steps to manually hibernate your sandbox program environments.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, tap or click the program you want to hibernate to show its details.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click the program you want to hibernate to show its details.
 
 1. On the **Environments** card, click the ellipsis button and select **Developer Console**. 
 
@@ -59,7 +59,7 @@ You can manually hibernate your Sandbox Program from the Developer Console.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, tap or click the program you want to de-hibernate to show its details.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click the program you want to de-hibernate to show its details.
 
 1. On the **Environments** card, click the ellipsis button and select **Developer Console**. 
 

@@ -16,7 +16,7 @@ Follow these steps to create a production program. Note that depending on your o
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, tap or click **Add Program** in the top-right corner of the screen.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click **Add Program** in the top-right corner of the screen.
 
    ![Cloud manager landing page](assets/log-in.png) 
 

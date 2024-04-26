@@ -35,7 +35,7 @@ The **Pipelines** window shows a complete list of all pipelines for the selected
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
 1. From the **Program Overview** page, select the **Pipelines** tab to switch to the **Pipelines** window.
 
