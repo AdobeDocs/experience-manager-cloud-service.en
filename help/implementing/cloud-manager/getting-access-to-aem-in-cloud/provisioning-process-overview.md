@@ -25,9 +25,6 @@ Once auto-provisioning is complete:
 * Administrator can add users and roles for additional team members through the Admin Console
 * Review role-based permissions for users to determine permission assignments in Cloud Manager
 
-![processoverview.jpg](assets/processOverview.jpg)
- 
-
 For more information, see [Onboarding to Experience Manager as a Cloud Service on Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html).
 
 ### Resources and Links
@@ -43,8 +40,6 @@ For more information, see [Onboarding to Experience Manager as a Cloud Service o
 
 ### 2. Onboard Organizations to Adobe Admin Console:
 
-![processoverview2.jpg](assets/processOverview2.jpg) 
-
 * System Administrator:  
     * Provision AEM programs and environments.
     * Navigate to Admin Console for administrative tasks.  
@@ -55,8 +50,6 @@ For more information, see [Onboarding to Experience Manager as a Cloud Service o
     * Manage local groups, permissions, and privileges.
 
 ### 3. Onboard Users and Manage Access in Admin Console:
- 
-![processoverview3.jpg](assets/processOverview3.jpg) 
 
 Three methods to onboard users, depending on size and preference:
 * Manually create users in Admin Console
