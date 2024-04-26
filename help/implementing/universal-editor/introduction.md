@@ -74,16 +74,6 @@ A marketing practitioner wants to create content that is tailored to the layout 
 
 * The underlying job to accomplish is to convincingly connect with the readers.
 
-## Limitations {#limitations}
-
-As you explore the Universal Editor and move forward implementing it in your own projects, please keep the following limitations in mind.
-
-* No more than 25 AEM resources (Content Fragments, pages, Experience Fragments, Assets, etc.) should be references as instrumentation on a single page.
-* AEM as a Cloud Service is the only supported AEM backend.
-* AEM as a Cloud Service release `2023.8.13099` or higher is required.
-* Content authors must have their own individual Experience Cloud accounts.
-* Chrome and Edge are the supported browsers
-
 ## Additional Resources {#additional-resources}
 
 To learn more about the Universal Editor, see these documents.
