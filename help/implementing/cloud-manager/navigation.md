@@ -25,7 +25,6 @@ When you log into Cloud Manager at at [my.cloudmanager.adobe.com](https://my.clo
 The My Programs console provides an overview of all programs to which you have access in the selected organization. It is made up of several parts.
 
 1. [Toolbars](#toolbars-my-programs-toolbars) for organization selection, alerts, and account settings
-1. [Chat AEM](#chat-aem) to guide you in your next steps and answer questions
 1. [Statistics and call-to-action](#statistics) for an overview of your recent activity
 1. [Programs and license](#programs-license) to understand your current license status and manage your programs
 1. [Quick links](#quick-links) to easily access related resources
@@ -61,10 +60,6 @@ The program toolbar provides links to switch between Cloud Manager programs and 
 1. The program selector opens up into a dropdown where you can quickly select other programs or take context-appropriate actions such as creating a new program
 1. The getting started link gives you access to the [onboarding documentation journey](/help/journey-onboarding/overview.md) to get you up-and-running with Cloud Manager.
 1. The action button offers context-appropriate actions such as creating a new program.
-
-### Chat AEM {#chat-aem}
-
-Chat AEM is a chatbot you can ask questions about your Cloud Manger experience, including links to frequent discussion topics.
 
 ### Statistics {#statistics}
 
