@@ -26,7 +26,7 @@ The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] cu
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
-<-- ## Release Video {#release-video}
+<!-- ## Release Video {#release-video}
 
 Have a look at the April 2024 Release Overview video for a summary of the features added in the 2024.4.0 release:
 
