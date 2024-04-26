@@ -26,6 +26,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
       + [Release Notes for 2024.1.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
     + 2023 {#2023}
       + [Release Notes for 2023.12.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-12-0.md)
@@ -706,8 +707,8 @@ user-guide-title: AEM as a Cloud Service
     + [List of supported fonts in PDF documents](/help/forms/supported-out-of-the-box-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
   + Transaction Reports {#using-communications}
-    + [Transaction Reports Billable APIs](/help/forms/transaction-reports-billable-apis.md)
-    + [Record a transaction for custom implementations](/help/forms/record-transaction-custom-implementation.md)
+    + [Transaction Reports Billable APIs ](/help/forms/transaction-reports-billable-apis.md)
+    + [Record a transaction for a custom implementation](/help/forms/record-transaction-custom-implementation.md)
   + Developer API Reference {#aem-forms-developer-api-reference}
     + [Adaptive Forms API reference](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
     + [AEM Forms Cloud Service Communications API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1059,6 +1060,7 @@ user-guide-title: AEM as a Cloud Service
     + Universal Editor {#universal-editor}
       + [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md)
       + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
+      + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
       + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
       + [Universal Editor Developer Overview](/help/implementing/universal-editor/developer-overview.md)
       + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
