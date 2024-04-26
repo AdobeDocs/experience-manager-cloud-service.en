@@ -16,7 +16,7 @@ SLA reporting data is available for every production program via the **Reports**
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
-1. Navigate to the **Reports** tab from the **Overview** page.
+1. Using the side navigation panel, navigate to the **Reports** tab from the **Overview** page.
 
 1. Click the year desired to see the SLA data graphed.
 

@@ -32,7 +32,7 @@ Typical use cases for using environment variables include:
 
 1. Log into Adobe Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the one you want to manage.
-1. Select the **Environments** tab for the chosen program then select the environment for which you want to create an environment variable in the left navigation panel.
+1. From the side navigation bar, select the **Environments** window for the chosen program then select the environment for which you want to create an environment variable.
 1. Within the detail of the environment, select the **Configuration** tab then select **Add** to open the **Environment Configuration** dialog. 
    * If you are adding an environment variable for the first time, you can see an **Add Configuration** button in the center of the page. You can use this button or **Add** to open the **Environment Configuration** dialog.
 
@@ -67,11 +67,8 @@ After you have created environment variables, you can update them using the **Ad
 
 1. Log into Adobe Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Cloud Manager lists the various programs available. Select the one you want to manage.
-1. Select the **Environments** tab for the chosen program then select the environment for which you want to create an environment variable in the left navigation panel.
+1. In the navigation panel, select the **Environments** window for the chosen program then select the environment for which you want to modify an environment variable.
 1. Within the detail of the environment, select the **Configuration** tab then select **Add/update** in the top right to open the **Environment Configuration** dialog.
-
-   ![Add/Update button for variables](assets/add-update-variables.png)
-
 1. Using the ellipsis button in the last column of the row of the variable you want to modify, select **Edit** or **Delete**. 
 
    ![Edit or delete variable](assets/edit-delete-variable.png)
