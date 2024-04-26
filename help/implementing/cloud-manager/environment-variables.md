@@ -31,7 +31,7 @@ Typical use cases for using environment variables include:
 >You must be a member of the [**Deployment Manager** role](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) to add or modify environment variables.
 
 1. Log into Adobe Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the one you want to manage.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the one you want to manage.
 1. Select the **Environments** tab for the chosen program then select the environment for which you want to create an environment variable in the left navigation panel.
 1. Within the detail of the environment, select the **Configuration** tab then select **Add** to open the **Environment Configuration** dialog. 
    * If you are adding an environment variable for the first time, you can see an **Add Configuration** button in the center of the page. You can use this button or **Add** to open the **Environment Configuration** dialog.

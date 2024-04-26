@@ -12,6 +12,10 @@ The Cloud manage UI is primarily composed of two graphical interfaces:
 * [The My Programs console](#my-programs) where you can view and manage all of your programs.
 * [The Program Overview window](#program-overview) where you can see the detail of and manage an individual program.
 
+>[!TIP]
+>
+>Also check out the [onboarding documentation journey](/help/journey-onboarding/overview.md) for a complete overview of how to get up-and-running with AEM as a Cloud Service using Cloud Manager.
+
 ## My Programs Console {#my-programs}
 
 When you log into Cloud Manager at at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization, you arrive at the **My Programs** console.

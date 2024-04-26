@@ -13,7 +13,7 @@ Learn more about program types in the document [Understanding Program and Progra
 
 1. Log on to Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
  
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, tap or click **Add Program** near the upper-right corner of the screen.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click **Add Program** near the upper-right corner of the screen.
 
    ![Cloud Manager landing page](assets/cloud-manager-my-programs.png) 
 
