@@ -1059,6 +1059,7 @@ user-guide-title: AEM as a Cloud Service
     + Universal Editor {#universal-editor}
       + [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md)
       + [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md)
+      + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
       + [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md)
       + [Universal Editor Developer Overview](/help/implementing/universal-editor/developer-overview.md)
       + [Attributes and Item Types](/help/implementing/universal-editor/attributes-types.md)
