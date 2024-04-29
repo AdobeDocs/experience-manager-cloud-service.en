@@ -56,8 +56,6 @@ Follow these to delete a repository in Cloud Manager.
 
 1. Select the repository and click the ellipsis button and select **Delete** to delete the repository.
 
-   ![Delete repository](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
-
 ## Git Submodule Support {#git-submodule-support}
 
 Git submodules can be used to merge the content of multiple branches across git repositories at build time.
