@@ -36,11 +36,11 @@ As an example, here are [the instructions](https://experienceleague.adobe.com/en
 
 ## Cloud Manager APIs {#cloud-manager-apis}
 
-**Action**: Wait to migrate until after mid May 2024, when AEM supports it (this article will be updated at that time).
+**Action**: Migrate to Server-to-Server OAuth credentials.
 
 **Relevant AEM versions**: AEM as a Cloud Service
 
-Customers create Adobe Developer Console projects so they can invoke [Cloud Manager APIs](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). The credentials in the Adobe Developer project should be migrated to the OAuth Server-to-Server credential type, once AEM and Cloud Manager support it. 
+Customers create Adobe Developer Console projects so they can invoke [Cloud Manager APIs](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). The credentials in the Adobe Developer project should be migrated to the OAuth Server-to-Server credential type before the deprecated JWT credentials expire in January 2025.
 
 ## Auto-generated projects {#autogen-projects}
 
