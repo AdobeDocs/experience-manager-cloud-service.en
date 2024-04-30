@@ -206,16 +206,14 @@ While debugging code in a [Rapid Development Environment (RDE)](/help/implementi
 Please reach out to **<aemcs-rde-support@adobe.com>** to try it out and provide feedback.
 
 
-## Experience Manager Guides
+## [!DNL Experience Manager] Guides {#guides}
 
 
-### Ability to translate content into multiple languages using preconfigured language groups
+### Ability to Translate Content into Multiple Languages Using Preconfigured Language Groups
 
 Experience Manager Guides now allows you to create language groups and easily translate your content into multiple languages. This feature helps you organize and manage translations according to your organization's needs. 
 
 For example, if you need to translate your content for some countries in Europe, you can create a language group for European languages like English (EN), French (FR), German (DE), Spanish (ES), and Italian (IT).
-
-
 
 ![translation panel](../assets/guides/translation-languages-2404.png)
 
@@ -233,10 +231,9 @@ Overall, creating language groups enhances the efficiency and productivity of tr
 
 Learn how to [translate documents from the Web Editor](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
 
-## Revamped experience to search and filter files in the repository view
+### Revamped Experience to Search and Filter Files in the Repository View
 
 Now, you have an enhanced experience while filtering files. The revamped functionality to filter files provides an improved way to effortlessly search and navigate through files. 
-
 
 ![search files in repository view](../assets/guides/repository-filter-search-2404.png)
 
@@ -250,17 +247,15 @@ Enjoy benefits such as quicker access to relevant files and a more intuitive use
 
 Learn more about the **Filter Search** feature in the [Left Panel](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) section.
 
-
-
-## Enhancements in the data source connectors
+### Enhancements in the Data Source Connectors
 
 The following enhancements have been made to the data source connectors for the 2024.4.0 release:
 
-### Connect to Salsify, Akeneo, and Microsoft Azure DevOps Boards (ADO) data sources
+#### Connect to Salsify, Akeneo, and Microsoft Azure DevOps Boards (ADO) Data Sources
 
 In addition to the existing out-of-the-box connectors, Experience Manager Guides also provides connectors for Salsify, Akeneo, and Microsoft Azure DevOps Boards (ADO) data sources. As an administrator, you can download and install these connectors. Then, configure the installed connectors.
 
-### Copy and paste the sample query to create a content snippet or topic
+#### Copy and Paste the Sample Query to Create a Content Snippet or Topic
 
 You can easily copy and paste a sample data query in the generator to create a content snippet or topic. With this feature, you don't have to remember the syntax or create a  query manually. Instead of manually typing the query, you can copy and paste a sample query, edit it, and use it to fetch the data per your requirements. 
 
@@ -268,25 +263,21 @@ You can easily copy and paste a sample data query in the generator to create a c
 
  *Copy and edit a sample query to create the content snippet.*
 
-### Connect to JSON data files using a file connector 
+#### Connect to JSON Data Files Using a File Connector 
 
 
 Now, as an administrator, you can configure a JSON file connector to use JSON data files as a data source. Use the connector to import the JSON files from your computer or the Adobe Experience Manager Assets. Then, as an author, you can create content snippets or topics using the generators.
 
 This feature helps you use the data stored in your JSON files and reuse it across various snippets. The content is also updated dynamically whenever you update the JSON files.
 
-### Configure multiple resource URLs for a connector to create content snippets or topics
+#### Configure Multiple Resource URLs for a Connector to Create Content Snippets or Topics
 
 As an administrator, you can configure multiple resource  URLs for some connectors like Generic REST Client, Salsify, Akeneo, and Microsoft Azure DevOps Boards (ADO). 
 Then, as an author, connect with the data sources to create content snippets or topics using the generators. This feature is handy as you don't have to create a data source for each URL. It helps you to quickly fetch data from any of the resources for a particular data source in a single content snippet or topic. View more details about the data source connectors and how to [configure a data source connector from the user interface](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). Learn how to [use data from your data source](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
 
-
-
 For more information about the new features and enhancements, view [What's new in the 2024.04.0 release](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
 
 For the list of issues fixed in this release, view [Fixed issues in the 2024.4.0 release](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0).
-
-
 
 ## Cloud Manager {#cloud-manager}
 
