@@ -43,9 +43,7 @@ Before any content can be copied, a content set must be defined. After it is def
 
 1. Log on to Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Environments** screen from the **Overview** page.
-
-1. Navigate to the **Content Sets** page from the **Environments** screen.
+1. Using the side navigation panel, navigate to the **Content Sets** tab from the **Overview** page.
 
 1. At the top-right of the screen, click **Add Content Set**.
 

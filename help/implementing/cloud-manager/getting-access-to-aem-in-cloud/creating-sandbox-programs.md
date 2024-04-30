@@ -13,9 +13,9 @@ Learn more about program types in the document [Understanding Program and Progra
 
 1. Log on to Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
  
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, tap or click **Add Program** near the upper-right corner of the screen.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click **Add Program** near the upper-right corner of the screen.
 
-   ![Cloud Manager landing page](assets/cloud-manager-my-programs.png) 
+   ![Cloud Manager landing page](assets/log-in.png) 
 
 1. From the create program wizard, select **Set up a sandbox**, and provide a program name.
 
@@ -57,12 +57,12 @@ You can view the detail of your sandbox setup and access the environment (once a
 
 1. Once the development environment is created, you can use the **Access AEM** link to sign into AEM.
 
-   ![Access AEM link](assets/create-program-5.png)
+   ![Access AEM link](assets/create-program5.png)
 
-1. Once the Non-production pipeline deploying to development is complete, the wizard guides you to either access the AEM development environment or to deploy code to development environment.
+1. Once the non-production pipeline deploying to development is complete, the wizard in the call-to-action guides you to either access the AEM development environment or to deploy code to development environment.
 
    ![Deploying sandbox](assets/create-program-setup-deploy.png)
 
-If you must switch to another program, or return to the overview page to create another program, click your program name in the top-left of the screen to reveal the **Navigate to** option.
-
-![Navigate to](assets/create-program-a1.png)
+>[!TIP]
+>
+>Please see the document [Navigating the Cloud Manager UI](/help/implementing/cloud-manager/navigation.md) for details on how to navigate Cloud Manager and understanding the **My Programs** console.
