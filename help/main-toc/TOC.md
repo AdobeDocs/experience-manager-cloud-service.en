@@ -645,6 +645,7 @@ user-guide-title: AEM as a Cloud Service
         + [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md)
         + [Create and use custom functions](/help/forms/create-and-use-custom-functions.md)
         +  [Add rules to an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components.md)
+        +  [Design JSON Schema for an Adaptive Form (Core Components)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
         +  [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
         +  [Compare Adaptive Forms](/help/forms/compare-forms.md)  
     + Foundation Components {#authoring-adaptive-forms-foundation-components}
