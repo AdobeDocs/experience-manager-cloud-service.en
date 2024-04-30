@@ -52,7 +52,7 @@ To create a variable:
 
     * Primitive data type - Specify an optional default value for the variable.
     * JSON or XML - Specify an optional JSON or XML schema path. The system validates the schema path while mapping and storing properties available in this schema to another variable.
-    * Form Data Model - Specify a Form Data Model path.
+    * Form Data Model (FDM) - Specify a Form Data Model path.
     * ArrayList - Specify a subtype for the collection.
 
 1. Specify an optional description for the variable and select ![done_icon](assets/Smock_Checkmark_18_N.svg) to save the changes. The variable displays in the list available in the left pane.
@@ -192,7 +192,7 @@ Use the following APIs in the ECMA Script to retrieve values for existing variab
 | Primitive (Long, Double, Boolean, Date, and String) |workItem.getWorkflowData().getMetaDataMap().get(variableName, type) |
 | Document |Packages.com.adobe.aemfd.docmanager.Document doc = workItem.getWorkflowData().getMetaDataMap().get("docVar", Packages.com.adobe.aemfd.docmanager.Document.class); |
 | XML |Packages.org.w3c.dom.Document xmlObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.org.w3c.dom.Document.class); |
-| Form Data Model |Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
+| Form Data Model (FDM) |Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON |Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
 
