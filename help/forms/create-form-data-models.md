@@ -1,7 +1,7 @@
 ---
 title: How to create Form Data Model (FDM)?
 description: Learn to create a form data model (FDM), and send or retrieve data to a datasource using an Adaptive Form or an AEM Workflow.
-feature: Adaptive Forms, Form Data Model (FDM)
+feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86

@@ -1,7 +1,7 @@
 ---
 title: What is the process to work with a Form Data Model (FDM) in AEM Forms?
 description: Add data model objects, services, create data model objects and child properties, configure services, work with navigation properties of OData services.
-feature: Adaptive Forms, Form Data Model (FDM)
+feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f

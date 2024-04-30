@@ -1,7 +1,7 @@
 ---
 title: How to Configure Data Sources?
 description: Learn how to configure RESTful web services, SOAP-based web services, and OData services as data sources for a form data model (FDM).
-feature: Adaptive Forms, Form Data Model (FDM)
+feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
