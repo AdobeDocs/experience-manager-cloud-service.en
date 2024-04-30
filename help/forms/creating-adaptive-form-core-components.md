@@ -101,6 +101,12 @@ You require the following to create an Adaptive Form:
 
 Now, you can drag-and-drop the [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) to Adaptive Forms container to design and create the form. You can also visit [https://aemcomponents.dev/](https://aemcomponents.dev/) to view available core components in action.
 
+**Q: How to rename an AEM Adaptive Form?**
+**A**: To rename an adaptive form, Select an adaptive form in your AEM Forms user interface. Click on the **Properties** located on the upper rail. Change the name of the form in the Title tab, as shown in the image, and click Save and Close.
+
+![Rename an AEM Adaptive Form](/help/forms/assets/change-af-name.png)
+
+
 ## Configure Submit Action for an Adaptive Form {#configure-submit-action-for-form}
 
 A Submit Action lets you choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the Submit button on an Adaptive Form. Adaptive forms include some out of the box submit actions. You can also extend a default submit actions to create your own custom submit action. To configure a Submit Action for your form:
