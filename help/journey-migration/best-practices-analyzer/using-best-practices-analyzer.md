@@ -59,7 +59,7 @@ Follow this section to learn how to view the Best Practices Analyzer report:
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. Provide the BPA upload key to automatically upload the generated BPA report to Cloud Acceleration Manager (CAM). To get the upload key, navigate to the [Best Practices Anaylsis card in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
+1. Provide the BPA upload key to automatically upload the generated BPA report to [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). To get the upload key, navigate to the [Best Practices Anaylsis in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
@@ -83,12 +83,16 @@ Follow this section to learn how to view the Best Practices Analyzer report:
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **Export to CSV**. You also have the option to view the report in CAM by clicking on **Go to CAM**. You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**.
+1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **Export to CSV**. You also have the option to view the report in CAM by clicking on **Go to CAM**. This will take you to the [Best Practices Analysis](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) page in CAM. 
+
+You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)   
 
    
+1. If the cache expires, you have the option of viewing the last generated report in CAM by clicking on **View the last generated report in CAM** or initiate a new report generation by clicking on **Generate New Report**. 
 
+ ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)   
 
 
 #### Using Filters in the Best Practices Analyzer Report {#bpa-filters}
