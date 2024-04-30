@@ -35,9 +35,9 @@ To add or edit an environment, a user must be a member of the **Business Owner**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, tap or click the program for which you want to add an environment.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click the program for which you want to add an environment.
 
-1. From the **[Program Overview](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview)** page, click **Add Environment** on the **Environments** card to add an environment.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click **Add Environment** on the **Environments** card to add an environment.
 
    ![Environments card](assets/no-environments.png)
 
@@ -117,9 +117,9 @@ If you want to provision [advanced networking](/help/security/configuring-advanc
 
 ## Environment Details {#viewing-environment}
 
-You can use the **Environments** card on the overview page to access an environment's detail in two ways.
+From the **Overview** page, you can access an environment's detail in two ways.
 
-1. From the **Overview** page, click the **Environments** tab at the top of the screen.
+1. From the **Overview** page, click the **Environments** tab in the side navigation panel.
 
    ![Environments tab](assets/environments-tab2.png)
 
@@ -129,9 +129,9 @@ You can use the **Environments** card on the overview page to access an environm
 
 1. The **Environments** opens and lists all environments for the program.
 
-   ![The environments tab](assets/environment-view-2.png)
+   ![The environments tab](assets/environments-tab2.png)
 
-1. Click an environment in the list so you can reveal its details.
+1. Tap or click an environment in the list so you can reveal its details.
 
    ![Environment details](assets/environ-preview1.png)
 
@@ -296,24 +296,11 @@ Also, you can log on locally from the **Environments** tab of the **Overview** p
 
 ## Managing Custom Domain Names {#manage-cdn}
 
-Custom domain names are supported in Cloud Manager for Sites programs for both publish and preview services. Each Cloud Manager environment can host up to a maximum of 250 custom domains.
+Custom domain names are supported in Cloud Manager for Sites programs for both publish and preview services.
 
-To configure custom domain names, navigate to the **Environments** tab and click an environment to view environment details.
-
-A user must have the **Business Owner** or **Deployment Manager** role to add a custom domain name in Cloud Manager
-
-![Environment details](assets/domain-names.png)
-
-The following actions can be performed on the publish service for your environment. 
-
-* [Adding a Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-
-* [Managing Custom Domain Names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-
-* [Checking Status of Custom Domain Name](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) or an [SSL Certificate](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
-
-* [Managing IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
-
+>[!TIP]
+>
+>For more information, please see the document [Introduction to Custom Domain Names.](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 ## Managing IP Allow Lists {#manage-ip-allow-lists} 
 
@@ -323,23 +310,8 @@ To manage IP allowlists, navigate to the **Environments** tab of the **Overview*
 
 ### Applying an IP Allow List {#apply-ip-allow-list}
 
-Applying an IP allowlist associates all IP ranges included in the definition of the allowlist with an author or publish service in an environment. A user in the **Business Owner** or **Deployment Manager** role must be logged in to be able to apply an IP allowlist.
+Applying an IP allowlist associates all IP ranges included in the definition of the allowlist with an author or publish service in an environment.
 
-The IP allowlist must exist in Cloud Manager to apply it to an environment. To learn more about IP allowlists in Cloud Manager, see [Introduction to IP Allow Lists in Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
-
-**To apply an IP allowlist:**
-
-   1. Navigate to the specific environment from the **Environments** tab of the program **Overview** screen and navigate to the **IP Allow Lists** table.
-   1. Use the input fields at the top of the IP allowlist table so you can select the IP allowlist and the author or publish service you want to apply it to. 
-   1. Click **Apply** and confirm your submission.
-
-### Unapplying an IP allowlist {#unapply-ip-allow-list}
-
-Unapplying an IP allowlist disassociates all IP ranges included in the definition of the allowlist from an author or publisher service in an environment. A user in the **Business Owner** or **Deployment Manager** role must be logged in to be able to unapply an IP allowlist.
-
-**To unapply an IP allowlist:**
-
-1. Navigate to the specific environment from the **Environments** tab of the program **Overview** screen and navigate to the **IP Allow Lists** table.
-1. Identify the row where the IP allowlist rule that you want to unapply is listed.
-1. Select the ellipsis button from end of the row.
-1. Select **Unapply** and confirm your submission.
+>[!TIP]
+>
+>For more information, please see the document [Introduction to IP Allow Lists.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
