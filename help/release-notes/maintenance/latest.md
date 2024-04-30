@@ -9,13 +9,13 @@ The following section outlines the technical release notes for the current maint
 
 ## Release X {#release-X}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on April 24, 2024. The previous maintenance release was release 15977.
+Summarized below are the continuous improvements for maintenance release X, which was publicly released on May 2, 2024. The previous maintenance release was release 15977.
 
 2024.4.0 Feature Activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 ### Enhancements {#enhancements-X}
 
-* **(For AEM Forms only)** After installing AEM Cloud Foundation maintenance release 15977, Adaptive Form fields are rendering in the incorrect order during form authoring and for published forms. If you use AEM Forms, Adobe recommends that you do not upgrade to the 15977 release until the issue is resolved in the upcoming maintenance release. Doing so can help you avoid any inconvenience.
+None.
 
 ### Fixed Issues {#fixed-issues-X}
 
