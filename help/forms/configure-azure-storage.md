@@ -1,7 +1,7 @@
 ---
 title: How to configure Azure storage?
 description: Learn how to integrate forms with Azure storage server.
-feature: Adaptive Forms, Form Data Model (FDM)
+feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
 ---

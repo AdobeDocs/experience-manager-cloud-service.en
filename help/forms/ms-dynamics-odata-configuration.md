@@ -1,7 +1,7 @@
 ---
 title: How do I configure [!DNL Microsoft Dynamics] OData for AEM Forms?
 description: Learn to create Form Data Model (FDM) based on the entities, attributes, and services defined in [!DNL Microsoft Dynamics] service.
-feature: Adaptive Forms, Form Data Model (FDM)
+feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
