@@ -26,7 +26,7 @@ After defining your [Content Fragment Models](#creating-a-content-model) you can
 >Content fragments can be used:
 >
 >* for [Headless Content Delivery using Content Fragments with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md),
->* when authoring pages; see [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* when authoring pages; see [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -66,6 +66,8 @@ For detailed further information see:
 
 Selecting **Content Fragments** opens the console in a new tab. 
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Content Fragments console - Overview](assets/cf-managing-console-overview.png)
 
 Here you can see that there are three main areas:
@@ -78,6 +80,7 @@ Here you can see that there are three main areas:
   * Here you can hide, or reveal, the folder tree
   * You can select a specific branch of the tree
   * This can be resized to show nested folders
+  * You can select between viewing Content Fragments or [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 * The main/right panel - from here you can:
   * See the list of all Content Fragments in the selected branch of the tree:
     * Content Fragments from the selected folder, and all child folders will be shown:
@@ -126,6 +129,8 @@ Certain actions are available from the console - without selecting a specific Co
 #### Actions for a (selected) Content Fragment {#actions-selected-content-fragment}
 
 Selecting a specific fragment opens a toolbar focused on the actions available for that fragment. You can also select multiple fragments - the selection of actions will be adjusted accordingly.
+
+<!-- CQDOC-21349: screenshot -->
 
 ![Content Fragments console - toolbar for a selected fragment](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -339,7 +344,7 @@ After publication the fragment status will be updated and visible in the editor 
 
 >[!NOTE]
 >
->In addition, when you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment will be listed in the page references.
+>In addition, when you [publish a page that uses the fragment](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing); the fragment will be listed in the page references.
 
 ## Unpublishing a Fragment {#unpublishing-a-fragment}
 
@@ -367,6 +372,8 @@ When the relevant dialog opens you can select the appropriate service:
 
 ## Find and Replace {#find-and-replace}
 
+<!-- CQDOC-21349: screenshot -->
+
 The **Replace** action is available (in the top toolbar) to find, and replace, specified text in your selected Content Fragments. 
 
 ![Find and Replace](assets/cf-managing-find-replace.png)
@@ -379,8 +386,9 @@ Before replacement, validation criteria are checked and you are informed of any 
 >
 >If you select more than 20 Content Fragments, you will see the message **Unable to find and replace**.
 
-![Confirm Replace](assets/cf-managing-confirm-replace.png)
+<!-- CQDOC-21349: screenshot -->
 
+![Confirm Replace](assets/cf-managing-confirm-replace.png)
 
 ## Deleting a Fragment {#deleting-a-fragment}
 
@@ -440,10 +448,13 @@ The Filter panel offers:
 * a selection of predicates; 
   * including content fragment models, localization, tags, status fields, among others
   * one, or more, predicates can be selected and combined to create the filter
+* **Exclude sub-folder items**, giving you the option of excluding content fragments stored in sub-folders
 * the opportunity to **Save** your configuration
 * the option to retrieve a saved search filter for reuse
 
  Once selected, the **Filtering by** options are shown (under the Search box). They can be deselected from there. For example:
+
+<!-- CQDOC-21349: screenshot -->
 
 ![Content Fragments console - Filtering](assets/cf-managing-console-filter.png)
 
@@ -467,9 +478,13 @@ Once selected, this will be shown as a filter predicate, and the list will be fi
 
 The search box supports full-text search. Entering your search terms in the search box:
 
+<!-- CQDOC-21349: screenshot -->
+
 ![Content Fragments console - Searching](assets/cf-managing-console-search-specification.png)
 
 Will provide the selected results:
+
+<!-- CQDOC-21349: screenshot -->
 
 ![Content Fragments console - Search Results](assets/cf-managing-console-search-results.png)
 

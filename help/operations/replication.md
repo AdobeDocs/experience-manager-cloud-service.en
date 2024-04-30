@@ -25,11 +25,11 @@ Adobe Experience Manager as a Cloud Service uses the [Sling Content Distribution
 
 This feature lets you publish the selected pages immediately, without the additional options possible through the Manage Publication approach.
 
-For more information, see [Manage Publication](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
+For more information, see [Manage Publication](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
 ### On and Off Times - Trigger Configuration {#on-and-off-times-trigger-configuration}
 
-The additional possibilities of **On Time** and **Off Time** are available from the [Basic tab of Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
+The additional possibilities of **On Time** and **Off Time** are available from the [Basic tab of Page Properties](/help/sites-cloud/authoring/sites-console/page-properties.md#basic).
 
 To realize the automatic replication for this feature, enable **Auto Replicate** in the [OSGi configuration](/help/implementing/deploying/configuring-osgi.md) **On Off Trigger Configuration**: 
 
@@ -41,7 +41,7 @@ Manage Publication offers more options than Quick Publish, allowing for the incl
 
 Including a folder's children for the "publish later" option invokes the Publish Content Tree workflow, described in this article.
 
-You can find more detailed information on Manage Publication on the [Publishing Fundamentals documentation](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
+You can find more detailed information on Manage Publication on the [Publishing Fundamentals documentation](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
 ### Publish Content Tree Workflow {#publish-content-tree-workflow}
 
@@ -190,14 +190,17 @@ The size of the content transmitted per replication call must not exceed `10 MB`
 
 To troubleshoot replication, navigate to the Replication Queues in the AEM Author Service Web UI:
 
-1. From the AEM Start Menu, navigate to **Tools > Deployment > Distribution**
-2. Select the card **publish**
-![Status](assets/publish-status.png "Status")
-3. Check the queue status which should be green
-4. You can test the connection to the replication service
-5. Select the **Logs** tab which shows the history of content publications
+1. From the AEM Start Menu, navigate to **Tools** > **Deployment** > **Distribution**
+1. Select the card **publish**
+
+   ![Status](assets/publish-status.png "Status")
+
+1. Check the queue status which should be green
+1. You can test the connection to the replication service
+1. Select the **Logs** tab which shows the history of content publications
 
 ![Logs](assets/publish-logs.png "Logs")
 
 If the content couldn't be published, the whole publication is reverted from the AEM Publish Service.
+
 In that case, the main, editable queue shows a red status and should be reviewed to identify which items caused the cancelation of the publication. By clicking that queue, its pending items show up, from which a single item or all items can be cleared if needed.

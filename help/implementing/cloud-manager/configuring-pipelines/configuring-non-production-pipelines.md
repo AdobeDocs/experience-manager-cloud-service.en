@@ -30,7 +30,7 @@ Once you have set up your program and have at least one environment using the Cl
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
 1. Access the **Pipelines** card from the Cloud Manager home screen. Click **+Add** and select **Add Non-Production Pipeline**. 
 
@@ -139,10 +139,16 @@ The steps to complete the creation of your non-production, targeted deployment p
    * **Git Branch** - This option defines from which branch in the selected pipeline should retrieve the code.
      * Enter the first few characters of the branch name and the auto-complete feature of this field. It finds the matching branches that you can select.
    * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
+   * **Pipeline** - For front-end non-production pipelines, you have the option to enable **[Experience Audit.](/help/implementing/cloud-manager/experience-audit-testing.md)**
    
-   ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Click **Save**.
+1. If you enabled Experience Audit, tap or click **Continue** to advance to the **Experience Audit** tab where you can define the paths that should always be included in the Experience Audit.
+
+   * If you enabled **Experience Audit**, please see the document [Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) for details on how to configure.
+   * If you did not, skip this step.
+
+1. Tap or click **Save** to save the pipeline.
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 

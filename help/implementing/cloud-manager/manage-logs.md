@@ -10,13 +10,15 @@ Learn how to access and manage logs to aid your development process in AEM as a 
 
 You can access a list of available log files for the selected environment using the **Environments** card from the **Overview** page or Environment Details page.
 
+Logs are retained for seven days.
+
 ## Downloading Logs {#download-logs}
 
 To download logs, do the following:
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
 1. Navigate to the **Environments** card from the **Overview** page.
 
@@ -37,8 +39,6 @@ To download logs, do the following:
 You can also access your logs from the **Environments** page.
 
 ![Logs from the Environments screen](assets/download-logs.png)
-
-
 
 ## Logs Via API {#logs-through-api}
 
@@ -80,6 +80,10 @@ Environment Id Service    Name
 ```
 
 ### Additional Resources {#resources}
+
+>[!TIP]
+>
+>Check out [this video resource](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) to learn more about debugging AEM as a Cloud Service.
 
 See the following additional resources to learn more about the Cloud Manager API and Adobe I/O CLI:
 

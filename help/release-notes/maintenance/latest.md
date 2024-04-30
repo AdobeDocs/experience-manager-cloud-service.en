@@ -7,43 +7,58 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 14697 {#release-14697}
+## Release 15977 {#release-15977}
 
-Summarized below are the continuous improvements for maintenance release 14697, which was publicly released on December 18, 2023. It replaces release 14538 which had an issue. The previous maintenance release was release 14227.
+Summarized below are the continuous improvements for maintenance release 15977, which was publicly released on April 19, 2024. The previous maintenance release was release 15939.
 
-2023.12.0 Feature Activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) for more information.
+2024.4.0 Feature Activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-14697}
+### Enhancements {#enhancements-15977}
 
-* GRANITE-46723: User Sync - SAML Migration from default-sync to IDP-based sync.
-* OAK-10311: Replication - Optimize blob comparison to reduce replication time of large batch of assets in AEM.
-* OAK-10511: Replication - Reduce network round-trips to reduce replication time of large assets in AEM.
-* GRANITE-48334: Publishers - Collection script is missing for RUM.
+* GRANITE-51335: Optimize AEM health check to increase instance stability.
 
-### Fixed Issues {#fixed-issues-14697}
+### Fixed Issues {#fixed-issues-15977}
 
-* CQ-4354867: ToggleCondition reference refers to non-existent field in InstanceActionServlet.
-* CQ-4349948: Localization of 'Profile Properties' strings in Edit User Settings under Tools → Security → Users.
-* GRANITE-44541: Localization of Error dialogs on adding Private Key File screen of Edit User > Keystore under Tools → Security → Users.
-* GRANITE-45341: Localization of success/failure strings for activate/deactivate user action  under Tools → Security → Users.
-* GRANITE-46650: Localization of error message "UserId/Password mismatch." string under Tools → Security → Users Create Dialog.
-* GRANITE-47764: Update to Sling Models API 1.5.0: Injection to a static variable in a Sling Model will cause compilation errors (SLING-11507).
-* GRANITE-48452: Sending empty clientlibs with status code 200.
-* GRANITE-48410: ResourceResolver is not closed.
-* ASSETS-31297: Prevent delete of copied asset from dynamic media.
-* ASSETS-30811: Reference Updates for Blocktag Service bound.
-* GRANITE-46418: Update Sling events in AEM: GaugeSupport has infinite recursion in registerWithSuffix (SLING-11918).
-* GRANITE-48937: Fix regression from Maintenance Release 14538 where Omnisearch doesn't work on aem/start.html page.
+* CQ-4357226: Fix regression in the IMS Configurations support for OAuth credentials.
+* GRANITE-51335: Ratelimit upgrade to 5.0.4 Fixed Felix Health Check registrations.
 
-### Known Issues {#known-issues-14697}
+### Known Issues {#known-issues-15977}
 
-* GRANITE-49031: Regression resulting in `@JsonIgnore` annotation being ignored on transient fields.
+* **(For AEM Forms only)** After installing AEM Cloud Foundation maintenance release 15977, Adaptive Form fields are rendering in the incorrect order during form authoring and for published forms. If you use AEM Forms, Adobe recommends that you do not upgrade to the 15977 release until the issue is resolved in the upcoming maintenance release. Doing so can help you avoid any inconvenience.
 
-### Embedded Technologies {#embedded-tech-14697}
+### Deprecated Features and APIs {#deprecated-15977}
+
+* [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+
+* Effective May 1, 2024, Adobe Dynamic Media is ending support for the following:
+
+  * SSL (Secure Socket Layer) 2.0
+  * SSL 3.0 
+  * TLS (Transport Layer Security) 1.0 and 1.1
+  * The following weak ciphers in TLS 1.2:
+    * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
+    * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
+    * `TLS_RSA_WITH_AES_256_GCM_SHA384`
+    * `TLS_RSA_WITH_AES_256_CBC_SHA256`
+    * `TLS_RSA_WITH_AES_256_CBC_SHA`
+    * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
+    * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
+    * `TLS_RSA_WITH_AES_128_GCM_SHA256`
+    * `TLS_RSA_WITH_AES_128_CBC_SHA256`
+    * `TLS_RSA_WITH_AES_128_CBC_SHA`
+    * `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
+    * `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
+    * `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
+    * `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+
+
+To know what is deprecated or removed in AEM as a Cloud Service, see [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md).
+
+### Embedded Technologies {#embedded-tech-15977}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM OAK |1.58-T20231123092841-619e1bd|[Oak API 1.58.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.58.0/index.html)| 
-|AEM SLING API |Version 2.27.2 |[Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
-|AEM HTL|Version 1.4.20-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
-|AEM Core Components|Version 2.23.4|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|AEM Oak | 1.62.0|[Oak API 1.62.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.62.0/index.html)| 
+|AEM SLING API | 2.27.2 |[Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
+|AEM HTL| 1.4.20-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
+|AEM Core Components| 2.24.6|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|

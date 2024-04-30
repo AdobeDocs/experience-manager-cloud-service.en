@@ -733,7 +733,6 @@ The solution in GraphQL means you can:
 
 * Pass parameters: add `_assetTransform` to the list header where your filters are defined
 
-<!-- 
 >[!NOTE]
 >
 >A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
@@ -741,7 +740,6 @@ The solution in GraphQL means you can:
 >* `_dmS7Url` : a Dynamic Media asset
 > 
 >If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
---> 
 
 ### Structure of the Transformation Request {#structure-transformation-request}
 
@@ -917,10 +915,13 @@ The following limitations exist:
   * No caching on author
   * Caching on publish - max-age of 10 minutes (cannot be changed by client)
 
-<!--
 ## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
 
 GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
+
+>[!CAUTION]
+>
+>Only *image* assets from Dynamic Media can be referenced.
 
 The solution in GraphQL means you can:
 
@@ -967,7 +968,6 @@ query allTeams {
   }
 } 
 ```
--->
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
@@ -1062,6 +1062,10 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
         * [Sample Query for web-optimized image delivery with a single specified parameter](#web-optimized-image-delivery-single-query-variable)
 
+    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
+
+      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
+
   * `_tags`: to reveal the IDs of Content Fragments or Variations that contain tags; this is an array of `cq:tags` identifiers. 
 
     * See [Sample Query - Names of All Cities Tagged as City Breaks](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
@@ -1094,13 +1098,6 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
   * If a given variation does not exist in a nested fragment, then the **Master** variation would be returned.
 
-<!-- between dynamicURL and tags -->
-<!--
-    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
-
-      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
--->
-
 ## Querying the GraphQL endpoint from an External Website {#query-graphql-endpoint-from-external-website}
 
 To access the GraphQL endpoint from an external website you need to configure the:
@@ -1119,6 +1116,31 @@ To protect against potential problems there are default limitations imposed on y
 * The query cannot contain more than 1M (1024 * 1024) characters
 * The query cannot contain more than 15000 tokens 
 * The query cannot contain more than 200000 whitespace tokens
+
+You also need to aware of:
+
+* A field conflict error will be returned when your GraphQL query contains fields with the same name in two (or more) models, and the following conditions are met:
+
+  * So where:
+
+    * Two (or more models) are used as possible references; when they are defined as an allowed **Model Type** in the Content Fragment reference.
+
+    and:
+
+    * These two models have fields having a common name; that means the same name occurs in both models.
+
+    and
+
+    * Those fields are of different data types.
+
+  * For example:
+
+    * When two (or more) fragments with different models (for example, `M1`, `M2`) are used as possible references (Content Reference or Fragment Reference) from another fragment; for example, `Fragment1` `MultiField/List`
+    * And these two fragments with different models (`M1`, `M2`) have fields with the same name, but different types.
+      To illustrate:
+      * `M1.Title` as `Text` 
+      * `M2.Title` as `Text/MultiField`
+    * Then a field conflict error will occur if the GraphQL query contains the `Title` field.
 
 ## FAQs {#faqs}
 

@@ -8,8 +8,6 @@ exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 
 Learn about the different types of calls made to your app by the Universal Editor to help you when debugging.
 
-{{universal-editor-status}}
-
 ## Overview {#overview}
 
 The Universal Editor communicates with your instrumented app through a series of defined calls. This is transparent to and has no effect on the end user experience.
@@ -20,6 +18,8 @@ For the developer, however, understanding these calls and what they do can be va
 
 * The **Payload** of the call contains details of what is being updated by the editor including identifying what to update and how to update it.
 * The **Response** includes details of what exactly was updated by the editor service. This is to facilitate refreshing the content in the editor. In certain cases, like a `move` call, the entire page must be refreshed.
+
+Once a call is completed successfully, events are triggered that include the request's and response's payload, which can be customized for your own app. Please see the document [Universal Editor Events](/help/implementing/universal-editor/events.md) for more details.
 
 The following is a list of the types of calls that the Universal Editor makes to your app along with sample payloads and responses.
 
@@ -34,7 +34,9 @@ Its payload includes details of what to write back to the JCR.
 * `type`: The JCR value type of the property being updated
 * `value`: The updated data
 
-### Sample Payload {#update-payload}
+>[!BEGINTABS]
+
+>[!TAB Sample Payload]
 
 ```json
 {
@@ -54,7 +56,7 @@ Its payload includes details of what to write back to the JCR.
 }
 ```
 
-### Sample Response {#update-response}
+>[!TAB Sample Response]
 
 ```json
 {
@@ -68,6 +70,8 @@ Its payload includes details of what to write back to the JCR.
 }
 ```
 
+>[!ENDTABS]
+
 ## Details {#details}
 
 A `details` call occurs when loading your app in the Universal Editor to retrieve the app's content.
@@ -77,7 +81,9 @@ Its payload includes the data to be rendered as well as details of what the data
 * For a component, the Universal Editor only retrieves a `data` object, since the schema of the data is defined in the app.
 * For Content Fragments, the Universal Editor also retrieves a `schema` object since the Content Fragment Model is defined in the JCR.
 
-### Sample Payload {#details-payload}
+>[!BEGINTABS]
+
+>[!TAB Sample Payload]
 
 ```json
 {
@@ -96,7 +102,7 @@ Its payload includes the data to be rendered as well as details of what the data
 }
 ```
 
-### Sample Response {#details-response}
+>[!TAB Sample Response]
 
 ```json
 {
@@ -128,6 +134,8 @@ Its payload includes the data to be rendered as well as details of what the data
 }
 ```
 
+>[!ENDTABS]
+
 ## Add {#add}
 
 An `add` call occurs when you place a new component in your app using the Universal Editor.
@@ -136,7 +144,9 @@ Its payload includes a `path` object containing where the content should be adde
 
 It also includes a `content` object with additional objects for endpoint-specific details of the content to be stored [for each plugin.](/help/implementing/universal-editor/architecture.md) For example if your app is based on content from AEM and Magento, the payload would contain a data object for each system.
 
-### Sample Payload {#add-payload}
+>[!BEGINTABS]
+
+>[!TAB Sample Payload]
 
 ```json
 {
@@ -168,7 +178,7 @@ It also includes a `content` object with additional objects for endpoint-specifi
 }
 ```
 
-### Sample Response {#add-response}
+>[!TAB Sample Response]
 
 ```json
 {
@@ -182,13 +192,17 @@ It also includes a `content` object with additional objects for endpoint-specifi
 }
 ```
 
+>[!ENDTABS]
+
 ## Move {#move}
 
 A `move` call occurs when you move a component within your app using the Universal Editor.
 
 Its payload includes a `from` object defining where the component was and a `to` object defining where it was moved.
 
-### Sample Payload {#move-payload}
+>[!BEGINTABS]
+
+>[!TAB Sample Payload]
 
 ```json
 {
@@ -221,7 +235,7 @@ Its payload includes a `from` object defining where the component was and a `to`
 }
 ```
 
-### Sample Response {#move-response}
+>[!TAB Sample Response]
 
 ```json
 {
@@ -234,13 +248,17 @@ Its payload includes a `from` object defining where the component was and a `to`
 }
 ```
 
+>[!ENDTABS]
+
 ## Remove {#remove}
 
 A `remove` call occurs when you delete a component within your app using the Universal Editor.
 
 Its payload includes the path of the object that is removed.
 
-### Sample Payload {#remove-payload}
+>[!BEGINTABS]
+
+>[!TAB Sample Payload]
 
 ```json
 {
@@ -266,7 +284,7 @@ Its payload includes the path of the object that is removed.
 }
 ```
 
-### Sample Response {#remove-response}
+>[!TAB Sample Response]
 
 ```json
 {
@@ -280,13 +298,17 @@ Its payload includes the path of the object that is removed.
 }
 ```
 
+>[!ENDTABS]
+
 ## Publish {#publish}
 
 A `publish` call occurs when you click the **Publish** button in the Universal Editor to publish the content that you have edited.
 
 The Universal Editor iterates over the content and generates a list of references that must also be published.
 
-### Sample Payload {#publish-payload}
+>[!BEGINTABS]
+
+>[!TAB Sample Payload]
 
 ```json
 {
@@ -326,7 +348,7 @@ The Universal Editor iterates over the content and generates a list of reference
 }
 ```
 
-### Sample Response {#publish-response}
+>[!TAB Sample Response]
 
 ```json
 {
@@ -349,3 +371,10 @@ The Universal Editor iterates over the content and generates a list of reference
   ]
 }
 ```
+
+>[!ENDTABS]
+
+## Additional Resources {#additional-resources}
+
+* [Universal Editor Events](/help/implementing/universal-editor/events.md)
+
