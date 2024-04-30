@@ -606,4 +606,4 @@ AEM Packages can be used to create and share content across AEMaaCS environments
 
 [Software Distribution](https://downloads.experiencecloud.adobe.com) provides AEM packages for use on the local development AEM SDK. AEM Packages provided on Software Distribution must not be installed on AEMaaCS cloud environments unless expressly approved by Adobe Support.
 
-For more information, have a look at the [Software Distribution documentation](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+For more information, please see the [Software Distribution documentation.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)

@@ -39,7 +39,7 @@ Using Adobe Experience Manager, content authors and/or website owners can create
  
 * Specific aspects of WCAG 2.1 are highlighted in our [quick guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md).
  
-* [Creating Accessible Content](/help/sites-cloud/authoring/fundamentals/accessible-content.md) details how they relate to AEM. 
+* [Creating Accessible Content](/help/sites-cloud/authoring/page-editor/accessible-content.md) details how they relate to AEM. 
  
 >[!NOTE]
 >

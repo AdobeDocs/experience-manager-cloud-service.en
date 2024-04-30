@@ -1,13 +1,13 @@
 ---
-title: Release Notes for Cloud Manager 2024.1.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2024.1.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2024.4.0 in Adobe Experience Manager as a Cloud Service
+description: These are the release notes for Cloud Manager 2024.4.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 ---
 
-# Release Notes for Cloud Manager 2024.1.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release Notes for Cloud Manager 2024.4.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager release 2024.1.0 in AEM as a Cloud Service.
+This page documents the release notes for Cloud Manager release 2024.4.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -15,12 +15,16 @@ This page documents the release notes for Cloud Manager release 2024.1.0 in AEM 
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager release 2024.1.0 in AEM as a Cloud Service is 18 January 2024. The next release is planned for 16 February 2024.
+The release date for Cloud Manager release 2024.4.0 in AEM as a Cloud Service is 10 April 2024. The next release is planned for 9 May 2024.
 
 ## What's New {#what-is-new}
 
-* Cloud Manager now validates the expiration dates not only for the main [certificate,](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) but for intermediate certificates as well.
-* CDN [logs](/help/implementing/cloud-manager/manage-logs.md) are now returned in a compressed format.
+* The deletion operation has been improved for [Edge Delivery](/help/edge/overview.md) websites by updating the domain mappings from the program which is related to that site.
+  * If no more sites are mapped, the mapping is deleted.
+* Deployment tracking has been enhanced by providing real-time status updates during the critical startup phase of an AEM instance.
+  * This feature ensures that you have complete visibility into your deployment progress, enabling better decision-making and operational efficiency.
+* The [network infrastructure](/help/security/configuring-advanced-networking.md) listing has been enhanced to display all connected environments without region-based filtering to provide a more comprehensive view.
+* Enhanced error messages for code build issues allow easier identification of root causes and next actionable steps.
 
 ## Early Adoption Program {#early-adoption}
 
@@ -63,5 +67,4 @@ Interested in test-driving the new dashboard? To get started, send an email to `
 
 ## Bug Fixes {#bug-fixes}
 
-* An error was corrected where configuration pipelines would fail at the build step with an unclear error message if the location of the configuration files was not set properly. The error message is now clear and indicates that the user should check that the location of the configuration files is correct.
-* When a build step finishes with status `FAILED` due to a `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, it is now properly described as an error due to merge conflicts with the destination branch.
+* A bug where Cloud Manager reused artifacts with the wrong commit hash has been addressed.

@@ -11,7 +11,7 @@ exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
 
 ## Objective {#objective}
 
-The following section describes how to use Screens Content Provider, once you have setup [Screens Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html). 
+The following section describes how to create channels in Screens Content Provider, once you have setup [Screens Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en). 
 
 ## Using Screens Content Provider {#screens-content-provider}
 
@@ -40,7 +40,7 @@ Follow the steps below to log on to Screens Content Provider:
 
    ![Link highlighted from the Environments card that lets you access the Screens Content Provider.](/help/screens-cloud/assets/configure/screens-cp-2.png)
 
-   After you have logged into Screens Content Provider, now you are ready to create your content in content playback. 
+   After you have logged into Screens Content Provider, Navigate to Screens> Content Provider.Now you are ready to create your content for content playback.
 
    Use Screens Content Provider to create and manage the following:
 

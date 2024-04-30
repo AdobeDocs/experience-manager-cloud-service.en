@@ -60,7 +60,7 @@ The staging environment should be a mirror of the production environment - confi
 
 ### Production - Author and Publish {#production-author-and-publish}
 
-The production environment consists of the environments that [author and publish](/help/sites-cloud/authoring/getting-started/concepts.md) your implementation.
+The production environment consists of the environments that [author and publish](/help/sites-cloud/authoring/author-publish.md) your implementation.
 
 A production environment consists of at least one author instance and one publish instance:
 

@@ -150,7 +150,10 @@ Review this list of activities to ensure that you perform a smooth and successfu
     * Development environments do not have the same sizing as stage and production. 
 * Cut over and make sure that the actual go-live is performed without any new deployment or content update.
 * Create Admin Console user Notification Profiles. See [Notification Profiles](/help/journey-onboarding/notification-profiles.md)
-
+* Consider configuring Traffic Filter Rules to control what traffic should not be allowed on your website.
+  * Rate limit traffic filter rules can be an effective tool against DDoS attacks. A special category of traffic filter rules, called WAF rules, require a separate license.
+  * See documentation for some [suggested starter rules](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
+ 
 You can always reference the list in case you need to recalibrate your tasks while performing the migration.
 
 ## What's Next {#what-is-next}

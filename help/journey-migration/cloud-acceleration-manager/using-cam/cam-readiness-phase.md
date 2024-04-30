@@ -54,14 +54,17 @@ Follow the steps below to navigate to the Readiness Phase:
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
+   >[!NOTE]
+   >If multiple reports are uploaded, the report that is displayed in detail is always the one that has the most recent creation date (not upload date).
+
 1. Review and explore the Best Practices Analysis dashboard in CAM. See [Reviewing Best Practices Analysis Report](#analysis-report) for more details.
 
    >[!NOTE]
-   >Uploading a new report resets all the assessments.
+   >Uploading a new report resets all the assessments if it is newer than the previously loaded report.
 
 ### Using Print Preview {#print-preview-cam}
 
-You can select the print preview option in Cloud Acceleration Manager for a printable preview of  the reports or to print the report to a PDF format for easy shareability.
+You can select the print preview option in Cloud Acceleration Manager for a printable preview of the reports or to print the report to a PDF format for easy shareability.
 
 Follow the steps below:
 
@@ -80,12 +83,12 @@ Follow the steps below:
 
 ### Using View Trendline {#trendline-view-cam}
 
-When you upload more than one Best Practices Analyzer (BPA) report in a Project, you can select the **View Trendline** option to view and compare results from the historical BPA reports.
+When you upload more than one distinct Best Practices Analyzer (BPA) report in a Project, you can select the **View Trendline** option to view and compare results from the historical BPA reports.
 
 Follow the steps below to view reports from the trendline option:
 
 >[!NOTE]
->When you upload more than one BPA report in a Project, you see the **...** icon.
+>When you upload more than one distinct BPA report in a Project, you see the **...** icon. Reports are considered the same (not distinct) if their host and creation time are the same.
 
 1. Navigate to your project and click **Review** from the **Best Practices Analysis** card in the **Readiness** phase.
 
@@ -94,9 +97,6 @@ Follow the steps below to view reports from the trendline option:
 1. Click **...**. 
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
-
-   >[!IMPORTANT]
-   >The report displayed is always the report that has the latest report date.
 
 1. From the drop-down list, click **View Trendline**, as shown in the figure below.
 
@@ -112,7 +112,7 @@ Follow the steps below to view reports from the trendline option:
    >
    >You see two graphs displaying the trend of the:
    > 
-   >1. **Report Findings Trend**  
+   >1. **Report Findings Trend**
    >1. **Custom Components and Template Trend**
    >
    >You can add or change the graphical view by way of the drop-down, as shown in the figure below:

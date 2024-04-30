@@ -101,7 +101,8 @@ When a report is generated, you are notified via <!-- through an email (optional
 1. Click **[!UICONTROL Create]** from the toolbar. A message notifies that report generation has been initiated.
 1. On the [!UICONTROL Asset Reports] page, the report generation status is based on the current state of the report job, for example, [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued], or [!UICONTROL Scheduled]. The same status appears in the notifications inbox.To view the report page, click the report link. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
 
-   ![A generated report](assets/report_page.png)
+   <!--![A generated report](assets/report_page.png)-->
+   ![generated report status](assets/report-status.JPG)
 
    Click **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
 

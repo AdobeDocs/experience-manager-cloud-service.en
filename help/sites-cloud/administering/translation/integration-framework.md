@@ -21,11 +21,11 @@ For an overview of the content translation features in AEM, see [Translating Con
 
 ## Connecting to a Translation Service Provider {#connecting-to-a-translation-service-provider}
 
-Create a cloud configuration that connects AEM to your translation service provider. AEM includes the capability to [connect to Microsoft Translator](connect-ms-translator.md) by default.
+Create a cloud configuration that connects AEM to your translation service provider. AEM includes the capability to [connect to Microsoft&reg; Translator](connect-ms-translator.md) by default.
 
 The following translation vendors provide an implementation of the AEM API for translation projects.
 
-* [Microsoft Translator](connect-ms-translator.md)
+* [Microsoft&reg; Translator](connect-ms-translator.md)
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
@@ -33,11 +33,11 @@ The following translation vendors provide an implementation of the AEM API for t
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
-* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
+<!-- THIS URL IS 404 * [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html) -->
 * [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
-After you install a connector package, you can create a cloud configuration for the connector. Typically, you need to provide your credentials for authenticating with the translation service. For information about adding a cloud configuration for the Microsoft Translator connector, see [Integrating with Microsoft Translator](connect-ms-translator.md).
+After you install a connector package, you can create a cloud configuration for the connector. Typically, you must provide your credentials for authenticating with the translation service. For information about adding a cloud configuration for the Microsoft&reg; Translator connector, see [Integrating with Microsoft&reg; Translator](connect-ms-translator.md).
 
 You can create multiple cloud configurations for the same connector if necessary. For example, create one configuration for each of the accounts or projects that you have with the same vendor.
 
@@ -45,7 +45,7 @@ After you configure a connection, you can create the translation integration fra
 
 ## Creating a Translation Integration Configuration {#creating-a-translation-integration-configuration}
 
-Create a translation integration framework configuration to specify how to translate your content. The configuration includes the following information:
+Create a translation integration framework configuration so you can specify how to translate your content. The configuration includes the following information:
 
 * Which translation service provider to use
 * Whether human or machine translation is to be performed
@@ -63,7 +63,7 @@ After you configure a translation integration framework, you can [associate it w
 
 A single configuration of the framework controls how page content and assets are translated. To create a translation configuration:
 
-1. In the [global navigation menu,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) select **Tools &gt; Cloud Services &amp; Translation Cloud Services**.
+1. In the [global navigation menu,](/help/sites-cloud/authoring/basic-handling.md#global-navigation) select **Tools &gt; Cloud Services &amp; Translation Cloud Services**.
 1. Navigate to where you want to create the configuration in your content structure. This is often based on a particular site or can be global.
 1. Provide the following information in the fields and then select **Create**.:
    1. Select **Configuration Type** in the drop-down.
@@ -85,7 +85,7 @@ The **Sites** tab controls how the translation of page content is performed.
 |Translate Tags|This option enables translating tags that are associated with the page.|
 |Translate Page Assets|This property defines how to translate assets that are added to components from the file system or referenced from assets:<br>- Do not translate: Page assets are not translated.<br>- Using sites translation workflow: Assets are handled according to the configuration properties on the **Sites** tab.<br>- Using assets translation workflow: Assets are handled according to the properties configured on the **Assets** tab.|
 |Auto-Execute Translation|Enable this property to execute translation jobs automatically after translation projects are created. You do not have an opportunity to review and scope the translation job when you select this option.|
-|Disable Update-Only Translation|When this option is checked, updating the translation project will submit all translatable fields for translation, not just the ones changed since last translation.|
+|Disable Update-Only Translation|When this option is checked, updating the translation project submits all translatable fields for translation, not just the ones changed since last translation.|
 
 ### Assets Configuration Properties {#assets-configuration-properties}
 
@@ -99,11 +99,11 @@ Assets properties control how to configure assets. For more information about tr
 |Translation Provider|This property defines the translation provider to perform the translation. A provider appears in the list when its corresponding connector is installed.|
 |Content Category|(Machine Translation only) This property describes the content that you are translating. The category can affect the choice of terminology and phrasing when translating content.|
 |Translate Assets|Activate this property to include assets in the translation project.|
-|Translate Metadata|Activate this property to translate asset metadata.|
-|Translate Tags|Activate this property to translate tags that are associated with the asset.|
-|Auto-Execute Translation|Select this property to execute translation jobs automatically after translation projects are created. You do not have an opportunity to review or scope the translation job when you select this option.|
-|Disable Update-Only Translation|When this option is checked, updating the translation project will submit all translatable fields for translation, not just the ones changed since last translation.|
-|Enable Content Model Fields for Translation|Enabling this option will use the **Translatable** field on [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) to determine if the field is translated and automatically creates [translation rules](rules.md) accordingly. This option supersedes any translation rules you may have created.|
+|Translate Metadata|Activate this property so you can translate asset metadata.|
+|Translate Tags|Activate this property so you can translate tags that are associated with the asset.|
+|Auto-Execute Translation|Select this property so you can run translation jobs automatically after translation projects are created. You do not have an opportunity to review or scope the translation job when you select this option.|
+|Disable Update-Only Translation|When this option is checked, updating the translation project submits all translatable fields for translation, not just the ones changed since last translation.|
+|Enable Content Model Fields for Translation|Enabling this option uses the **Translatable** field on [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) to determine if the field is translated and automatically creates [translation rules](rules.md) accordingly. This option supersedes any translation rules that you may have created.|
 
 ## Configuring Pages for Translation {#configuring-pages-for-translation}
 
@@ -114,9 +114,9 @@ To configure the translation of your source pages into other languages, associat
 
 The translation integration framework cloud configuration identifies the cloud configuration to use for connecting to the service provider. When you associate a source page with a framework cloud configuration, the page must be associated with the service provider cloud configuration that the framework cloud configuration uses.
 
-When you associate a page with a cloud configuration, the descendants of the page inherit the association. For example, if you associate the `/content/wknd/language-masters/en/magazine` page with a Translation Integration Framework, the `magazine` page and child pages below it are translated according to the framework.
+When you associate a page with a cloud configuration, the descendants of the page inherit the association. For example, if you associated the `/content/wknd/language-masters/en/magazine` page with a Translation Integration Framework, the `magazine` page and child pages below it are translated according to the framework.
 
-When required, you can override the association on a descendent page. For example, the content of a web site is mostly about travel and lifestyle. However, one branch of pages describes the company. In such a case, the root page of the site might be associated with a Translation Integration Framework that specifies machine translation using the Lifestyle category while the branch that describes the company would use a framework that performs machine translation using the General category.
+When required, you can override the association on a descendent page. For example, the content of a web site is mostly about travel and lifestyle. However, one branch of pages describes the company. In such a case, the root page of the site might be associated with a Translation Integration Framework that specifies machine translation using the Lifestyle category. The branch that describes the company would use a framework that performs machine translation using the General category.
 
 ### Associating a Page with a Translation Provider {#associating-a-page-with-a-translation-provider}
 

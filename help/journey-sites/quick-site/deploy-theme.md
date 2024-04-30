@@ -106,7 +106,9 @@ The following are some additional resources that do a deeper dive on some concep
 * [AEM Site Theme](https://github.com/adobe/aem-site-template-standard-theme-e2e) - This is the GitHub repository of the AEM Site Theme.
 * [npm](https://www.npmjs.com) - AEM themes used to quickly build sites are based on npm.
 * [webpack](https://webpack.js.org) - AEM themes used to quickly build sites rely on webpack.
-* [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - This guide details how to manage pages of your AEM Site if you want to customize it further after creating it from the template.
+* [Organizing Pages](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - This guide details how to organize pages of your AEM site.
+* [Creating Pages](/help/sites-cloud/authoring/sites-console/creating-pages.md) - This guide details how to add new pages to your site.
+* [Managing Pages](/help/sites-cloud/authoring/sites-console/managing-pages.md) - This guide details how to manage the pages of your site including moving, copying, and deleting.
 * [How to Work with Package](/help/implementing/developing/tools/package-manager.md) - Packages enable the importing and exporting of repository content. This document explains how to work with packages in AEM 6.5, which also applies to AEMaaCS.
 * [Onboarding Journey](/help/journey-onboarding/overview.md) - This guide serves as your starting point to ensure that your teams are set up and have access to AEM as a Cloud Service.
 * [Adobe Experience Manager Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - Explore the Cloud Manager documentation for full details of its features.

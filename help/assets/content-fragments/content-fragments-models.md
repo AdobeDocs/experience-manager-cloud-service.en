@@ -377,7 +377,7 @@ To implement content governance, you can configure **Policies** on Assets folder
 
 >[!NOTE]
 >
->The mechanism is similar to [allowing page templates](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) for a page, and its children, in advanced properties of a page. 
+>The mechanism is similar to [allowing page templates](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) for a page, and its children, in advanced properties of a page. 
 
 To configure the **Policies** for **Allowed Content Fragment Models**:
 
@@ -456,7 +456,7 @@ If you try to unpublish a model that is currently used by one or more fragments,
 
 ![Content Fragment Model error message when unpublishing a model that is in use](assets/cfm-model-unpublish-error.png)
 
-The message will suggest that you check the [References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) panel to investigate further:
+The message will suggest that you check the [References](/help/sites-cloud/authoring/basic-handling.md#references) panel to investigate further:
 
 ![Content Fragment Model in References](assets/cfm-model-references.png)
 

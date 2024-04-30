@@ -9,7 +9,7 @@ exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 
 The workflow console provides several tools for administering workflow instances to ensure that they are executing as expected.
 
-A range of consoles are available for administering your workflows. Use the [global navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) to open the **Tools** pane, then select **Workflow**:
+A range of consoles are available for administering your workflows. Use the [global navigation](/help/sites-cloud/authoring/basic-handling.md#global-navigation) to open the **Tools** pane, then select **Workflow**:
 
 * **Models**: Manage workflow definitions
 * **Instances**: View and manage running workflow instances

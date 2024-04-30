@@ -45,7 +45,7 @@ Enabling your site is done from the Sites console using the [Site rail.](site-ra
 
 1. Log into AEM and navigate to your site via **Global Navigation** &gt; **Sites**.
 1. Select your site in the console. Select the root of the site and not any child pages.
-1. With your site selected, open the [rail selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) at the left and choose **Site**.
+1. With your site selected, open the [rail selector](/help/sites-cloud/authoring/basic-handling.md#rail-selector) at the left and choose **Site**.
 1. In the **Site** rail, click the button **Enable Front End Pipeline**.
 
    ![Enable front-end pipeline](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)

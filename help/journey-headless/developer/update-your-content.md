@@ -249,6 +249,8 @@ Usage can differ depending on whether you are using an AEM author or publish env
 >[!NOTE]
 >
 >See the API Reference [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>
+>The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
 ### Read/Delivery {#read-delivery}
 
@@ -327,3 +329,4 @@ You should continue your AEM headless journey by next reviewing the document [Ho
 * [Introduction to AEM as a Headless CMS](/help/headless/introduction.md)
 * [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) 
+* The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.

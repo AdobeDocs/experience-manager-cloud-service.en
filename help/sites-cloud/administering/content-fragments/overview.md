@@ -7,7 +7,7 @@ exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 ---
 # An overview of working with Content Fragments {#overview-working-with-content-fragments}
 
-With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate, and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). They allow you to prepare content ready for use in multiple locations, and over multiple channels, ideal for headless delivery, and page authoring.
+With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate, and [publish page-independent content](/help/sites-cloud/authoring/fragments/content-fragments.md). They allow you to prepare content ready for use in multiple locations, and over multiple channels, ideal for headless delivery, and page authoring.
 
 >[!IMPORTANT]
 >
@@ -21,7 +21,7 @@ With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow 
 >
 >* use of the **Assets** console for [managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
 >* use of the [*original* Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md),
->* using [Content Fragments for page-authoring](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* using [Content Fragments for page-authoring](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 
 Content fragments contain structured content:
@@ -68,7 +68,7 @@ These Content Fragments can then be assembled to provide experiences over a vari
 
 >[!NOTE]
 >
->**Content Fragments** and **[Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** are different features within AEM:
+>**Content Fragments** and **[Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)** are different features within AEM:
 >* **Content Fragments** are editorial content, with definition and structure, but without additional visual design and/or layout. They can be used to access structured data, including texts, numbers, and dates, among others. 
 >* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
@@ -88,7 +88,7 @@ After the fragments have been created, you can:
 * [Use the Content Fragments editor](/help/sites-cloud/administering/content-fragments/authoring.md) - to edit, publish (to preview or production), and reference your fragments
 * [Analyze](/help/sites-cloud/administering/content-fragments/analysis.md)  the structure of your Content Fragment, using the editor
 * [Access your fragments with GraphQL, for headless delivery to your applications](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). 
-* [Or use your fragments for page authoring](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [Or use your fragments for page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
 >
@@ -98,7 +98,9 @@ After the fragments have been created, you can:
 >* [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Content Fragments Support in AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [AEM GraphQL API for use with Content Fragments](/help/headless/graphql-api/content-fragments.md)
->* [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md).
+>* The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
+
 
 ## Main and Variations {#main-and-variations}
 
@@ -166,7 +168,7 @@ Content fragments are:
 
 * Accessible for content delivery using the [AEM GraphQL API](/help/headless/graphql-api/content-fragments.md).
 
-* Available in the [page editor by using the Content Fragment component](/help/sites-cloud/authoring/fundamentals/content-fragments.md) (referencing component):
+* Available in the [page editor by using the Content Fragment component](/help/sites-cloud/authoring/fragments/content-fragments.md) (referencing component):
 
   * The [Content Fragment Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) is available to page authors. It allows them to reference, and deliver, the required Content Fragment in either HTML or JSON format.
 
@@ -251,7 +253,7 @@ To use your Content Fragments for page authoring you also need:
 * A **Content Fragment Component**
 
   * Instrumental to delivering the fragment in HTML and/or JSON format.
-  * Required to [reference the fragment on a page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+  * Required to [reference the fragment on a page](/help/sites-cloud/authoring/fragments/content-fragments.md).
   * Responsible for layout and delivery of a fragment; for example, channels.
   * Fragments need one or more dedicated components to define layout and deliver some or all elements/variations and associated content.
   * Dragging a fragment onto a page in authoring automatically associates the required component.

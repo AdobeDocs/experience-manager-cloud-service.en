@@ -191,7 +191,7 @@ Publishing videos to YouTube requires that you have one or more channels. If you
 
 ### Add tags for publishing {#adding-tags-for-publishing}
 
-To publish to your videos to YouTube, Experience Manager associates tags to one or more YouTube channels. To add tags for publishing, see [Administer Tags](/help/sites-cloud/authoring/features/tags.md).
+To publish to your videos to YouTube, Experience Manager associates tags to one or more YouTube channels. To add tags for publishing, see [Administer Tags](/help/sites-cloud/authoring/sites-console/tags.md).
 
 Or, if you intend to use the default tags in Experience Manager, you can skip this task and go to [Set up YouTube in Experience Manager](#setting-up-youtube-in-aem).
 

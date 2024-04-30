@@ -74,7 +74,7 @@ Many user interface elements that are clickable or actionable with a pointer can
 
 ### Keyboard shortcuts in [!DNL Assets] {#keyboard-shortcuts}
 
-The following actions in [!DNL Assets] work with the listed keyboard shortcuts. Most keyboard shortcuts that apply to [!DNL Experience Manager] Consoles also apply to [!DNL Assets]. See [keyboard shortcuts for Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). See how to [enable or disable the keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+The following actions in [!DNL Assets] work with the listed keyboard shortcuts. Most keyboard shortcuts that apply to [!DNL Experience Manager] Consoles also apply to [!DNL Assets]. See [keyboard shortcuts for Consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md). See how to [enable or disable the keyboard shortcuts](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 | User interface or scenario|Keyboard shortcut|Action|
 |---|---|---|
