@@ -6,9 +6,6 @@ exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 ---
 # Configuring CDN Error Pages {#cdn-error-pages}
 
->[!NOTE]
->This feature is not yet generally available. To join the early-adopter program, email `aemcs-cdn-config-adopter@adobe.com` and describe your use case.
-
 In the unlikely event that the [Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) cannot reach the AEM origin, the CDN by default serves an unbranded, generic error page which indicates that the server cannot be reached. You can override the default error page by hosting static files in self-hosted storage such as Amazon S3 or Azure Blob Storage, and referencing them in a configuration file that is deployed by using the [Cloud Manager Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
 ## Setup {#setup}
@@ -88,4 +85,4 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 The supported codes are: 403, 404, 406, 500 and 503.
 
-In this way, you directly trigger the CDN's error handler in order to test the synthetic response for given error code.
+In this way, you directly trigger the CDN's error handler in order to test the synthetic response for a given error code.
