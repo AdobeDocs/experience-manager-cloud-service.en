@@ -6,21 +6,18 @@ exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 ---
 # Configuring Traffic at the CDN {#cdn-configuring-cloud}
 
->[!NOTE]
->This feature is not yet generally available. To join the early-adopter program, email `aemcs-cdn-config-adopter@adobe.com` and describe your use case.
-
 AEM as a Cloud Service offers a collection of features configurable at the [Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) layer that modify the nature of either incoming requests or outgoing responses. The following rules, described in detail in this page, can be declared to achieve the following behavior:
 
 * [Request transformations](#request-transformations) - modify aspects of incoming requests, including headers, paths and parameters.
 * [Response transformations](#response-transformations) - modify headers that are on the way back to the client (for example, a web browser).
-* [Client-side redirectors](#client-side-redirectors) - trigger a browser redirect.
+* [Client-side redirects](#client-side-redirectors) - trigger a browser redirect. This feature is not yet GA, but available to early adopters.
 * [Origin selectors](#origin-selectors) - proxy to a different origin backend.
 
 Also configurable at the CDN are Traffic Filter Rules (including WAF), which control what traffic is allowed or denied by the CDN. This feature is already released and you can learn more about it in the [Traffic Filter Rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md) page.
 
 Additionally, if the CDN cannot contact its origin, you can write a rule that references a self-hosted custom error page (which is then rendered). Learn more about this by reading the [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md) article.
 
-All these rules, declared in a configuration file in source control, are deployed by using [Cloud Manager's Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Be aware that the cumulative size of the configuration file cannot exceed 100KB.
+All these rules, declared in a configuration file in source control, are deployed by using [Cloud Manager's Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
 
 ## Order of Evaluation {#order-of-evaluation}
 
@@ -32,15 +29,21 @@ Functionally, the various features mentioned previously are evaluated in the fol
 
 Before you can configure traffic at the CDN you need to do the following:
 
-* First, create this folder and file structure in the top-level folder of your Git project:
+* Create this folder and file structure in the top-level folder of your Git project:
 
 ```
-
 config/
      cdn.yaml
 ```
 
-* Secondly, the `cdn.yaml` configuration file should contain both metadata and the rules described in examples below.
+* The `cdn.yaml` configuration file should contain both metadata and the rules described in examples below. The `kind` parameter should be set to `CDN` and the version should be set to the schema version, which is currently `1`.
+
+* Create a targeted deployment config pipeline in Cloud Manager. See [configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). 
+
+**Notes**
+
+* RDEs do not currently support the configuration pipeline.
+* You can use `yq` to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
 
 ## Syntax {#configuration-syntax}
 
@@ -69,7 +72,7 @@ version: "1"
 metadata:
   envTypes: ["dev", "stage", "prod"]
 data:  
-  experimental_requestTransformations:
+  requestTransformations:
     removeMarketingParams: true
     rules:
       - name: set-header-rule
@@ -171,7 +174,7 @@ version: "1"
 metadata:
   envTypes: ["prod", "dev"]
 data:   
-  experimental_requestTransformations:
+  requestTransformations:
     rules:
       - name: set-variable-rule
         when:
@@ -182,7 +185,7 @@ data:
             var: some_var_name
             value: some_value
  
-  experimental_responseTransformations:
+  responseTransformations:
     rules:
       - name: set-response-header-while-variable
         when:
@@ -208,7 +211,7 @@ version: "1"
 metadata:
   envTypes: ["prod", "dev"]
 data:
-  experimental_responseTransformations:
+  responseTransformations:
     rules:
       - name: set-response-header-rule
         when:
@@ -264,7 +267,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_originSelectors:
+  originSelectors:
     rules:
       - name: example-com
         when: { reqProperty: path, like: /proxy-me* }
@@ -306,11 +309,16 @@ Connections to origins are SSL only and use port 443.
 | **forwardAuthorization** (optional, default is false) |If set to true then the "Authorization" header from the client request will be passed to the backend, otherwise the Authorization header is removed.|
 | **timeout** (optional, in seconds, default is 60) |Number of seconds the CDN should wait for a backend server to deliver the first byte of an HTTP response body. This value is also used as a between bytes timeout to the backend server.|
 
-## Client-side Redirectors {#client-side-redirectors}
+## Client-side Redirects {#client-side-redirectors}
+
+>[!NOTE]
+>This feature is not yet generally available. To join the early-adopter program, email `aemcs-cdn-config-adopter@adobe.com` and describe your use case.
 
 You can use client side redirect rules for 301, 302 and similar client side redirects. If a rule matches, the CDN responds with a status line that includes the status code and message (for example, HTTP/1.1 301 Moved Permanently), as well as the location header set.
 
 Both absolute and relative locations with fixed values are allowed.
+
+Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
 
 Configuration example:
 
