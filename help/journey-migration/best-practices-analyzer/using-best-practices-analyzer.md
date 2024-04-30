@@ -59,6 +59,10 @@ Follow this section to learn how to view the Best Practices Analyzer report:
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
+1. Provide the BPA upload key to automatically upload the generated BPA report to Cloud Acceleration Manager (CAM)
+
+
+
 1. While the BPA is generating the report, you can see the progress made by the tool on the screen. It displays the number of items analyzed and also displays the number of findings found. 
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
