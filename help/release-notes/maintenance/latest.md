@@ -30,7 +30,7 @@ Summarized below are the continuous improvements for maintenance release 15977, 
 
 * [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
-* Effective April 30, 2024, Adobe Dynamic Media is ending support for the following:
+* Effective May 1, 2024, Adobe Dynamic Media is ending support for the following:
 
   * SSL (Secure Socket Layer) 2.0
   * SSL 3.0 
