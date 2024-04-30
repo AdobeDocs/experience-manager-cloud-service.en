@@ -64,11 +64,16 @@ Follow this section to learn how to view the Best Practices Analyzer report:
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
 >[!NOTE]
->You have the option to skip the automatic upload to CAM by selecting **Skip auto upload to CAM**. If you choose to skip, you will need to manually download the BPA report as a comma-separated value file and then upload the file in CAM. 
+>You have the option to skip the automatic upload to CAM by selecting **Skip report auto upload to CAM**. If you choose to skip, you will need to manually download the BPA report as a comma-separated value file and then upload the file in CAM. 
+
+1. The **Generate** button becomes active when a valid key is provided. Click on **Generate** to initiate report generation.
+
+   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
+
 
 1. While the BPA is generating the report, you can see the progress made by the tool on the screen. It displays the number of items analyzed and also displays the number of findings found. 
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
+   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
 
 1. After the BPA report is generated, it displays a summary and the number of the findings in a tabular format organized by the type of finding and the importance level. To get more details about a particular finding, you can click the number that corresponds to the type of finding in the table. 
 
