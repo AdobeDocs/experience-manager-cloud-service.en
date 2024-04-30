@@ -64,38 +64,32 @@ Follow this section to learn how to view the Best Practices Analyzer report:
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
 >[!NOTE]
->You have the option to skip the automatic upload to CAM by selecting **Skip report auto upload to CAM**. If you choose to skip, you will need to manually download the BPA report as a comma-separated value file and then upload the file in CAM. 
+>You have the option to skip the automatic upload to CAM by selecting **Skip report auto upload to CAM**. If you choose to skip, you will need to manually download the BPA report as a comma-separated value file and then upload the file in CAM. It is recommended to use the upload key option since it streamlines the operation. 
+
 
 1. The **Generate** button becomes active when a valid key is provided. Click on **Generate** to initiate report generation.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
-
+ 
 
 1. While the BPA is generating the report, you can see the progress made by the tool on the screen. It displays the number of items analyzed and also displays the number of findings found. 
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+   
+>[!NOTE]
+>The BPA upload key expiration timestamp is displayed on the top right corner. You should renew the BPA upload key when it's near its expiration. To renew the key, you can click on **Renew** to navigate to CAM to renew the key.
 
 1. After the BPA report is generated, it displays a summary and the number of the findings in a tabular format organized by the type of finding and the importance level. To get more details about a particular finding, you can click the number that corresponds to the type of finding in the table. 
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
+   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   The above action will automatically scroll to the location of that finding in the report.
+1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **Export to CSV**. You also have the option to view the report in CAM by clicking on **Go to CAM**. You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**.
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
+   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)   
 
-1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **Export to CSV**, as shown in the figure below.
+   
 
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
-   >[!NOTE]
-   >You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**. 
-
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
-
-   >[!NOTE]
-   >While the report is being regenerated, it displays the progress in terms of percentage completed as shown in the image below.
-
-   ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 #### Using Filters in the Best Practices Analyzer Report {#bpa-filters}
 
