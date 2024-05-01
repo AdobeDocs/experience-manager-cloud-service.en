@@ -32,7 +32,7 @@ Summarized below are the continuous improvements for maintenance release 16145, 
 * SITES-19326: Update links in Assets UI to open CF in new CF Editor.
 * SITES-20686: GraphQL - Expose Dynamic Media URL via _dmS7Url (for non-images assets).
 * SKYOPS-68091: Update to Java 11.0.20.
-* 
+
 ### Fixed Issues {#fixed-issues-16145}
 
 * ASSETS-32321:	Post-Processing workflow resolution fails if ancestor folder is missing 'jcr:content' subnode.
