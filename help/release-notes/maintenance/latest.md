@@ -17,48 +17,52 @@ Summarized below are the continuous improvements for maintenance release 16145, 
 
 * ASSETS-23489: Repository insights enhancements.
 * ASSETS-26926: Dynamic Media upload polling improvements.
-* ASSETS-30351: Download dialog should load Dynamic Media rendition sizes asyncronously
-* ASSETS-30379: Improve resolution of DRM licences in download
-* ASSETS-31058: Surface smart crop renditions in AEM assets UI in renditions tab and generate smart cropped images when user clicks on these renditions
-* ASSETS-31218: Add support for named smartcrop in assets delivery api
-* ASSETS-31979: Add visual indicator and disable UI functions during Async Assets operations
-* ASSETS-32735: Improvements to asset metadata updated event
-* ASSETS-34661: API for DM Preview and/or Delivery URLs from AEMaaCS Publish
-* ASSETS-37259: XMP parsing improvements
-* ASSETS-37263: Allow cancellation of failing Assets async jobs
-* CNTBF-114: Content backflow improvements
-* CNTBF-148: Content backflow improvements
+* ASSETS-30351: Download dialog should load Dynamic Media rendition sizes asyncronously.
+* ASSETS-30379: Improve resolution of DRM licences in download.
+* ASSETS-31058: Surface smart crop renditions in AEM assets UI in renditions tab and generate smart cropped images when user clicks on these renditions.
+* ASSETS-31218: Add support for named smartcrop in assets delivery api.
+* ASSETS-31979: Add visual indicator and disable UI functions during Async Assets operations.
+* ASSETS-32735: Improvements to asset metadata updated event.
+* ASSETS-34661: API for DM Preview and/or Delivery URLs from AEMaaCS Publish.
+* ASSETS-37259: XMP parsing improvements.
+* ASSETS-37263: Allow cancellation of failing Assets async jobs.
+* CNTBF-114: Content backflow improvements.
+* CNTBF-148: Content backflow improvements.
 * CQ-4356992: Latest AEM and Granite translations.
-* SITES-19326: Update links in Assets UI to open CF in new CF Editor
-* SITES-20686: GraphQL - Expose Dynamic Media URL via _dmS7Url (for non-images assets)
-* SKYOPS-68091: Update to Java 11.0.20 
+* SITES-19326: Update links in Assets UI to open CF in new CF Editor.
+* SITES-20686: GraphQL - Expose Dynamic Media URL via _dmS7Url (for non-images assets).
+* SKYOPS-68091: Update to Java 11.0.20.
 * 
 ### Fixed Issues {#fixed-issues-16145}
 
-* ASSETS-32321:	Post-Processing workflow resolution fails if ancestor folder is missing 'jcr:content' subnode
-* ASSETS-33856: JPEG Image Preset downloads file as TXT
-* ASSETS-34096: Fix Touch UI view for async download report
-* ASSETS-34493: Failure while loading download dialog box after enabling multi company feature toggle
-* ASSETS-34824:	Copy url shows empty for DM disabled folders
-* ASSETS-35226: Post-Processing workflow not resolved if specified on the DAM root
+* ASSETS-32321:	Post-Processing workflow resolution fails if ancestor folder is missing 'jcr:content' subnode.
+* ASSETS-33856: JPEG Image Preset downloads file as TXT.
+* ASSETS-34096: Fix Touch UI view for async download report.
+* ASSETS-34493: Failure while loading download dialog box after enabling multi company feature toggle.
+* ASSETS-34824:	Copy url shows empty for DM disabled folders.
+* ASSETS-35226: Post-Processing workflow not resolved if specified on the DAM root.
 * ASSETS-35559: Reduce DM Batch Upload failure log to WARN.
-* ASSETS-35860: Incorrect Time Zone Conversion in AEM Assets Column View
-* ASSETS-35935: Incorrect folder navigation after closing payload review
+* ASSETS-35860: Incorrect Time Zone Conversion in AEM Assets Column View.
+* ASSETS-35935: Incorrect folder navigation after closing payload review.
 * ASSETS-35961: Add crop button is not working under image profile.
-* ASSETS-36227: Disable FolderPreviewUpdaterImpl service on publish
-* ASSETS-36943: Miss aligned columns when CF and other non CF items are present in a folder in list view
-* ASSETS-36990: Exported metadata jobs failing / slow with large number of properties
-* ASSETS-37113: Reprocess Assets job terminates immediately if query returns only CF results
-* ASSETS-37260: Metadata Export in AEM can produce invalid CSV
-* ASSETS-37261: PPTx and PDF Annotation Issue on AEM Assets
-* ASSETS-37282: Potential slow request opening large folder
-* ASSETS-37330: Bulk Import from OneDrive creates incorrect AEM Folder Structure
+* ASSETS-36227: Disable FolderPreviewUpdaterImpl service on publish.
+* ASSETS-36943: Miss aligned columns when CF and other non CF items are present in a folder in list view.
+* ASSETS-36990: Exported metadata jobs failing / slow with large number of properties.
+* ASSETS-37113: Reprocess Assets job terminates immediately if query returns only CF results.
+* ASSETS-37260: Metadata Export in AEM can produce invalid CSV.
+* ASSETS-37261: PPTx and PDF Annotation Issue on AEM Assets.
+* ASSETS-37282: Potential slow request opening large folder.
+* ASSETS-37330: Bulk Import from OneDrive creates incorrect AEM Folder Structure.
 * ASSETS-37609: Remove legacy scene7 conf lookup.
-* ASSETS-38016: Some metadata updates are not properly tracked in events
+* ASSETS-38016: Some metadata updates are not properly tracked in events.
 * CQ-4357161: AEM Inbox Payload screen is returning 404.
 * GRANITE-50041: Add Rendition is not working when resolution is more then 1440px width when only "Add Rendition" option is in the dropdown option.
-* GRANITE-50279: Disordered Week Names in Coral Datepicker Component
-* SITES-16055: Fix Live Copy and Live Copy Source links within respective properties page
+* GRANITE-50279: Disordered Week Names in Coral Datepicker Component.
+* SCRNS-3949: Screens channel fetch request time is too long.
+* SCRNS-3981: [Sequence channel] Black screen resulted when the sequence of element load/unload events get distorted.
+* SCRNS-4180: [Sequence channel] Sequence stops with a Blank screen for channels with videos of duration -1 upon recovery from fallback thumbnail.
+* SCRNS-4245: [Sequence channel] Limited duration of Blank screen when a video is loaded & switched from fallback thumbnail.
+* SITES-16055: Fix Live Copy and Live Copy Source links within respective properties page.
 
 ### Known Issues {#known-issues-16145}
 
