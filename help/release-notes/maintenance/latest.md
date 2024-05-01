@@ -9,7 +9,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 16145 {#release-16145}
 
-Summarized below are the continuous improvements for maintenance release 16145, which was publicly released on May 2, 2024. The previous maintenance release was release 15977.
+Summarized below are the continuous improvements for maintenance release 16145, which was publicly released on May 1, 2024. The previous maintenance release was release 15977.
 
 2024.4.0 Feature Activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
