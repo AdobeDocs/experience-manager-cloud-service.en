@@ -12,15 +12,21 @@ In the unlikely event that the [Adobe-managed CDN](/help/implementing/dispatcher
 
 Before you can override the default error page you need to do the following:
 
-* First, create this folder and file structure in the top-level folder of your Git project:
+* Create this folder and file structure in the top-level folder of your Git project:
 
 ```
 config/
      cdn.yaml
-
 ```
 
-* Secondly, the `cdn.yaml` configuration file should contain metadata and the error page references, as described below.
+* The `cdn.yaml` configuration file should contain both metadata and the rules described in examples below. The `kind` parameter should be set to `CDN` and the version should be set to the schema version, which is currently `1`.
+
+* Create a targeted deployment config pipeline in Cloud Manager. See [configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). 
+
+**Notes**
+
+* RDEs do not currently support the configuration pipeline.
+* You can use `yq` to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
 
 ### Configuration {#configuration}
 
