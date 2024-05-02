@@ -64,7 +64,7 @@ For detailed information about the following Submit Actions, see:
 
 You can also submit an Adaptive Form to other storage configurations:
 
-* [Connect Adaptive Form to Salesforce application](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Connect Adaptive Form to Salesforce application](/help/forms/aem-forms-salesforce-integration.md)
 * [Connect an Adaptive Form to Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
 You can [customize the default Submit Actions](custom-submit-action-form.md). Additionally, you can customize the Submit Actions to align with specific organizational requirements.
