@@ -17,7 +17,7 @@ Summarized below are the continuous improvements for maintenance release 16145, 
 
 * ASSETS-23489: Repository insights enhancements.
 * ASSETS-26926: Dynamic Media upload polling improvements.
-* ASSETS-30351: Download dialog should load Dynamic Media rendition sizes asyncronously.
+* ASSETS-30351: Download dialog should load Dynamic Media rendition sizes asynchronously.
 * ASSETS-30379: Improve resolution of DRM licences in download.
 * ASSETS-31058: Surface smart crop renditions in AEM assets UI in renditions tab and generate smart cropped images when user clicks on these renditions.
 * ASSETS-31218: Add support for named smartcrop in assets delivery api.
@@ -35,11 +35,11 @@ Summarized below are the continuous improvements for maintenance release 16145, 
 
 ### Fixed Issues {#fixed-issues-16145}
 
-* ASSETS-32321:	Post-Processing workflow resolution fails if ancestor folder is missing 'jcr:content' subnode.
+* ASSETS-32321: Post-Processing workflow resolution fails if ancestor folder is missing 'jcr:content' subnode.
 * ASSETS-33856: JPEG Image Preset downloads file as TXT.
 * ASSETS-34096: Fix Touch UI view for async download report.
 * ASSETS-34493: Failure while loading download dialog box after enabling multi company feature toggle.
-* ASSETS-34824:	Copy url shows empty for DM disabled folders.
+* ASSETS-34824: Copy url shows empty for DM disabled folders.
 * ASSETS-35226: Post-Processing workflow not resolved if specified on the DAM root.
 * ASSETS-35559: Reduce DM Batch Upload failure log to WARN.
 * ASSETS-35860: Incorrect Time Zone Conversion in AEM Assets Column View.
