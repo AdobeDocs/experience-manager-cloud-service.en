@@ -613,7 +613,7 @@ user-guide-title: AEM as a Cloud Service
       + [Connect AEM Forms to database or data source](/help/forms/data-integration.md)
       + [Configure data sources](/help/forms/configure-data-sources.md)
       + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-      + [Connect Adaptive Form to Salesforce application using OAuth 2.0 client credential flow](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+      + [Connect Adaptive Form to Salesforce application using OAuth 2.0 client credential flow](/help/forms/aem-forms-salesforce-integration.md)
       + [Configure [!DNL Azure] storage](/help/forms/configure-azure-storage.md)
       + [Configure [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
       + [Create Form Data Model](/help/forms/create-form-data-models.md)
