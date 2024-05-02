@@ -63,6 +63,7 @@ Summarized below are the continuous improvements for maintenance release 16145, 
 * SCRNS-4180: [Sequence channel] Sequence stops with a Blank screen for channels with videos of duration -1 upon recovery from fallback thumbnail.
 * SCRNS-4245: [Sequence channel] Limited duration of Blank screen when a video is loaded & switched from fallback thumbnail.
 * SITES-16055: Fix Live Copy and Live Copy Source links within respective properties page.
+* SCRNS-4243: Missing buttons in Content Provider for Non-Admin users.
 
 ### Known Issues {#known-issues-16145}
 
