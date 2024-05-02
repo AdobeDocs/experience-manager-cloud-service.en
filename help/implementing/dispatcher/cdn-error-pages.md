@@ -28,7 +28,7 @@ config/
 * RDEs do not currently support the configuration pipeline.
 * You can use `yq` to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
 
-### Syntax {#syntax}
+### Configuration {#configuration}
 
 The error page is implemented as a single page application (SPA), and references a handful of properties, as shown in the example below.  The static files referenced by the urls should be hosted by you on an internet accessible service such as Amazon S3 or Azure Blob Storage.
 
