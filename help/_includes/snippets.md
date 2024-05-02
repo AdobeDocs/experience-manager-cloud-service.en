@@ -22,7 +22,7 @@
 * [Connect Adaptive Form to Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 * [Connect Adaptive Form to Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
 * [Connect Adaptive Form to Microsoft Azure Blob Storage](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
-* [Connect Adaptive Form to Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Use Adobe Sign in an AEM Adaptive Form](/help/forms/working-with-adobe-sign.md)
 * [Add a new locale for an Adaptive Form](/help/forms/supporting-new-language-localization-core-components.md)
 * [Send Adaptive Form data to a database](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
