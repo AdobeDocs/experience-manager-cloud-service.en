@@ -1,45 +1,38 @@
 ---
-title: How to design JSON Schema for an Adaptive Form?
-description: Learn to create a JSON schema for an Adaptive Form and create an Adaptive Form based on the schema to produce schema complaint data.
-feature: Adaptive Forms, Foundation Components
+title: How to design JSON Schema for an Adaptive Form core components?
+description: Learn to create a JSON schema for an Adaptive Form core components and create an Adaptive Form (core components) based on the schema to produce schema complaint data.
+feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
+
 ---
-# Design JSON Schema for an Adaptive Form {#creating-adaptive-forms-using-json-schema}
+# Design JSON Schema for an Adaptive Form (Core Components){#creating-adaptive-forms-using-json-schema}
 
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| Core Components  |    [Click here](/help/forms/adaptive-form-core-components-json-schema-form-model.md)                  |
-| Foundation    | This article        |
-
-<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
-
-| Version | Article link |
-| -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html)                  |
-| AEM as a Cloud Service     | This article        |
+| Foundation  |    [Click here](/help/forms/adaptive-form-json-schema-form-model.md)                  |
+| Core Components     | This article        |
 
 
 ## Prerequisites {#prerequisites}
 
-Authoring an Adaptive Form using a JSON Schema as its form model requires basic understanding of JSON Schema. It is recommended to read through the following content before this article.
+Authoring an Adaptive Form based on core components using a JSON Schema as its form model requires basic understanding of JSON Schema. It is recommended to read through the following content before this article.
 
-* [Creating an Adaptive Form](creating-adaptive-form.md)
+* [Creating an Adaptive Form based on core components](/help/forms/creating-adaptive-form-core-components.md)
 * [JSON Schema](https://json-schema.org/)
 
 ## Using a JSON Schema as form model  {#using-a-json-schema-as-form-model}
 
-Adobe Experience Manager Formssupports creation of an Adaptive Form by using an existing JSON Schema as the form model. This JSON Schema represents the structure in which data is produced or consumed by the back-end system in your organization. The JSON Schema you use should be compliant with [v4 specifications](https://json-schema.org/draft-04/schema).
+Adobe Experience Manager Forms supports creation of an Adaptive Form based on core components by using an existing JSON Schema as the form model. This JSON Schema represents the structure in which data is produced or consumed by the back-end system in your organization. The JSON Schema you use should be compliant with [v4 specifications](https://json-schema.org/draft-04/schema).
 
 The key features of using a JSON Schema are:
 
-* The structure of the JSON is displayed as a tree in the Content Finder tab in the authoring mode for an Adaptive Form. You can drag and add element from the JSON hierarchy to the Adaptive Form.
+* The structure of the JSON is displayed as a tree in the Content Finder tab in the authoring mode for an Adaptive Form. You can drag and add element from the JSON hierarchy to the Adaptive Form based on core components.
 * You can pre-populate the form using JSON that is compliant with the associated schema.
 * On submission, the data entered by the user is submitted as JSON that aligns with the associated schema.
 
-A JSON Schema consists of simple and complex element types. The elements have attributes that add rules to the element. When these elements and attributes are dragged onto an Adaptive Form, they are automatically mapped to the corresponding Adaptive Form component.
+A JSON Schema consists of simple and complex element types. The elements have attributes that add rules to the element. When these elements and attributes are dragged onto an Adaptive Form, they are automatically mapped to the corresponding Adaptive Form components.
 
 This mapping of JSON elements with Adaptive Form components is as follows:
 
@@ -53,12 +46,6 @@ This mapping of JSON elements with Adaptive Form components is as follows:
                 "Date of Birth"
               ],
               "description": "Date of birth in DD MMMM, YYYY",
-              "aem:afProperties": {
-                "displayPictureClause": "date{DD MMMM, YYYY}",
-                "displayPatternType": "date{DD MMMM, YYYY}",
-                "validationPatternType": "date{DD MMMM, YYYY}",
-                "validatePictureClause": "date{DD MMMM, YYYY}",
-                "validatePictureClauseMessage": "Date must be in DD MMMM, YYYY format."
               }
 ```
 
@@ -240,11 +227,7 @@ Here's an example of a JSON Schema.
      "type": "boolean"
     },
     "phone": {
-     "type": "number",
-     "aem:afProperties": {
-      "sling:resourceType": "/libs/fd/af/components/guidetelephone",
-      "guideNodeClass": "guideTelephone"
-     }
+     "type": "number"
     },
     "address": {
      "type": "string"
@@ -341,6 +324,7 @@ Definition keys are used to identify reusable schemas. The reusable schema defin
 
 The above example defines a customer record, where each customer has both a shipping and a billing address. Structure of both the addresses is same—addresses have a street address, city and state— so it is a good idea to not duplicate the addresses. It also makes addition and deletion of fields easy for any future changes.
 
+<!--
 ## Pre-Configuring fields in JSON Schema Definition {#pre-configuring-fields-in-json-schema-definition}
 
 You can use the **aem:afProperties** property to preconfigure JSON Schema field to map to a custom Adaptive Form component. An example is listed below:
@@ -351,11 +335,7 @@ You can use the **aem:afProperties** property to preconfigure JSON Schema field 
         "sizeInMB": {
             "type": "integer",
             "minimum": 16,
-            "maximum": 512,
-            "aem:afProperties" : {
-                 "sling:resourceType" : "/apps/fd/af/components/guideTextBox",
-                 "guideNodeClass" : "guideTextBox"
-             }
+            "maximum": 512
         }
     },
     "required": [ "sizeInMB" ],
@@ -637,7 +617,7 @@ Here is the sample JSON code for previously mentioned examples.
 
 ## Limit acceptable values for an Adaptive Form component {#limit-acceptable-values-for-an-adaptive-form-component}
 
-You can add the following restrictions to JSON Schema elements to limit the values acceptable to an Adaptive Form component:
+You can add the following restrictions to JSON Schema elements to limit the values acceptable to an Adaptive Form core component:
 
 <table>
  <tbody>
@@ -772,6 +752,10 @@ You have two options:
 **What should be the extension of the JSON schema file?**
 
 The extension of JSON Schema file must be .schema.json. For example, &lt;filename&gt;.schema.json.
+
+**Is `aem:afProperties` supported as part of JSON schema in Adaptive Forms based on core components?**
+
+No, `aem:afProperties` is not supported for core components. This property is only supported for foundation components.
 
 ## See Also {#see-also}
 
