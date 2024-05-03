@@ -1,8 +1,8 @@
 ---
 title: Quick Publish to AEM and Dynamic Media
 description: Quick Publish in Assets view enables you to publish assets to AEM and Dynamic media simultaneously or separately. You can select assets and folders and choose to publish to Dynamic Media or AEM.
+exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 ---
-
 # Publish Assets to AEM and Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
 Experience Manager Assets enables you to quickly publish assets to Experience Manager and Dynamic Media using the Assets view. This ensures that you manage your assets and then publish them using [Assets view without switching to the Admin view](/help/assets/overview.md##persona-based-experiences). 
