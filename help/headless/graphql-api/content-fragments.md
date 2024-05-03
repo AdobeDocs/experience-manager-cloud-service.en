@@ -739,7 +739,7 @@ The solution in GraphQL means you can:
 >* `_dynamicUrl` : a DAM asset
 >* `_dmS7Url` : a Dynamic Media asset
 > 
->If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
+>If the asset referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
 
 ### Structure of the Transformation Request {#structure-transformation-request}
 
@@ -919,10 +919,6 @@ The following limitations exist:
 
 GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
 
->[!CAUTION]
->
->Only *image* assets from Dynamic Media can be referenced.
-
 The solution in GraphQL means you can:
 
 * use `_dmS7Url` on the `ImageRef` reference
@@ -940,7 +936,7 @@ The solution in GraphQL means you can:
 >* `_dmS7Url` : a Dynamic Media asset
 >* `_dynamicUrl` : a DAM asset
 > 
->If the image referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
+>If the asset referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
 
 ### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
 
