@@ -1,6 +1,6 @@
 ---
-title: Real Use monitoring for Edge Delivery Services for AEM Forms as a Cloud Service
-description: Real Use monitoring for Edge Delivery Services for AEM Forms as a Cloud Service involves the ongoing tracking and analysis of user interactions with forms.
+title: Real Use Monitoring (RUM) for Edge Delivery Services for AEM Forms as a Cloud Service
+description: Real Use Monitoring (RUM) for Edge Delivery Services for AEM Forms as a Cloud Service involves the ongoing tracking and analysis of user interactions with forms.
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
@@ -8,7 +8,7 @@ exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 
 ---
 
-# Real Use Monitoring for Edge Delivery Services for AEM Forms as a Cloud Service
+# Real Use Monitoring (RUM) for Edge Delivery Services for AEM Forms as a Cloud Service
 
 Real Use Monitoring (RUM) empowers you to gain real-world insights into how visitors interact with your Adobe Experience Manager (AEM) websites. This built-in tool provides valuable data to understand user behavior, diagnose performance issues, and measure the effectiveness of website experiments. RUM goes beyond synthetic testing by capturing Real Use interactions, offering a more accurate picture of your site's performance.
 
@@ -70,3 +70,7 @@ By analyzing these metrics, you can identify opportunities to:
 * Address technical issues that slow down form loading.
 
 By focusing on these areas, you can create forms that are easier to use and encourage visitors to complete them, ultimately leading to higher conversion rates.
+
+## See also
+
+{{see-more-forms-eds}}
