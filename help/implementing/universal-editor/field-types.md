@@ -284,6 +284,8 @@ A container component type allows the grouping of components. It offers an addit
 
 ![Screenshot of container component type](assets/component-types/container.png)
 
+>[!ENDTABS]
+
 #### Content Fragment {#content-fragment}
 
 The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) and its variations (if required). It offers an additional configuration.
