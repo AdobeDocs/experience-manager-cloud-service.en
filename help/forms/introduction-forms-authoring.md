@@ -21,8 +21,8 @@ exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 
 Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. [!DNL AEM Forms] provides an intuitive user interface and out-of-the-box components for creating and working with Adaptive Forms. You can choose to create an Adaptive Form based on a form model or schema or without a form model. It is important to carefully choose the form model that not only suits your requirements but extends your existing infrastructural investments and assets. You get to choose from the following options to create an Adaptive Form:
 
-* **Using a form data model**
-  [Data integration](data-integration.md) lets you integrate entities and services from disparate data sources in to a Form Data Model that you can use to create Adaptive Forms. Choose Form Data Model if the Adaptive Form you are creating involves fetching and write data from and to multiple data source. 
+* **Using a form data model (FDM)**
+  [Data integration](data-integration.md) lets you integrate entities and services from disparate data sources in to a Form Data Model (FDM) that you can use to create Adaptive Forms. Choose Form Data Model (FDM)if the Adaptive Form you are creating involves fetching and write data from and to multiple data source. 
 
 * **Using an XDP Form Template**
   It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into Adaptive Forms. Any existing XFA rules are retained in the associated Adaptive Forms. The resulting Adaptive Forms support XFA constructs, such as validations, events, properties, and patterns.
