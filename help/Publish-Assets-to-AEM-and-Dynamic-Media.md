@@ -1,6 +1,6 @@
 ---
 title: Quick Publish to AEM and Dynamic Media
-description: Quick Publish is a feature in the new UI or assets view. This feature gives flexibility to users to either qucik publish to AEM and Dynamic media simultaneously or individually . This means that after selecting assets and folders users can choose to publish to Dynamic Media or Publish to AEM. Hence we can say, Quick publish feature equips the new UI to publish assets and folders to Dynamic Media and AEM.
+description: Quick Publish is a feature in the new UI or assets view. This feature gives flexibility to users to either quick publish to AEM and Dynamic media simultaneously or individually . This means that after selecting assets and folders users can choose to publish to Dynamic Media or Publish to AEM. Quick publish feature equips the new UI to publish assets and folders to Dynamic Media and AEM.
 ---
 
 # Publish Assets to AEM and Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
@@ -85,9 +85,9 @@ You cannot publish a folder that has the Dynamic Media Publish Mode set to **Sel
 ![search image](/help/assets/assets/search%20image1.png)
 The option to publish to Dynamic Media on the search results page depends on the Dynamic Media Publish Mode set on the folder where the asset is available in the repository.
 
->[!NOTE]
->
->If you select a folder and click **Publish** from the search results page, Experience Manager Assets displays an option to publish assets to AEM and not Dynamic Media irrespective of the Dynamic Media Publish Mode settings for the folder. 
+    >[!NOTE]
+    >
+    >If you select a folder and click **Publish** from the search results page, Experience Manager Assets displays an option to publish assets to AEM and not Dynamic Media irrespective of the Dynamic Media Publish Mode settings for the folder. 
 
 ## Check Publish status {#check-publish-status}
 
