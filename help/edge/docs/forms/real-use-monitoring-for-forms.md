@@ -2,7 +2,10 @@
 title: Real Use monitoring for Edge Delivery Services for AEM Forms as a Cloud Service
 description: Real Use monitoring for Edge Delivery Services for AEM Forms as a Cloud Service involves the ongoing tracking and analysis of user interactions with forms.
 feature: Edge Delivery Services
+hide: yes
+hidefromtoc: yes
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
+
 ---
 
 # Real Use Monitoring for Edge Delivery Services for AEM Forms as a Cloud Service
@@ -24,15 +27,13 @@ To log in to the monitoring dashboard for Edge Delivery Services for AEM Forms a
 
 * **URL**: The URL is specific to user site or domain. The users have the option to filter the site or domain to view the dashboard as per their requirements.
 
-* **Domain Key**: The user manually generates the domain key. 
-
-For assistance with the Domain keys, refer to the [Authentication](https://www.aem.live/developer/rum#authentication) documentation.
+* **Domain Key**: The user manually generates the domain key. To obtain domain keys for your  forms, contact your Adobe representative. 
 
 ### Monitoring dashboard for Edge Delivery Services for AEM Forms as a Cloud Service
 
 After entering the URL and domain keys into the login screen, you gain access to the monitoring dashboard for Edge Delivery Services for AEM Forms as a Cloud Service.
 
-The below illustration demonstrates the RUM dashboard for Edge Delivery Services for AEM Forms as a Cloud Service:
+The below illustration demonstrates the dashboard for Edge Delivery Services for AEM Forms as a Cloud Service:
 
 ![RUM Forms Dashboard](/help/edge/assets/rum-forms-dashboard.png)
 
