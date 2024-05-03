@@ -98,7 +98,7 @@ To check the publish status for an asset or a folder:
 If an asset or folder is not published, the status for **AEM Publish** and **Dynamic Media Publish** columns is displayed as **N/A.** 
 ![check publish status1](/help/assets/assets/check-publish-status1.png)
   If you cannot view the AEM Publish and Dynamic Media Publish columns in the List view: 
-   1. Click ![settings](/help/assets/assets/settings_icon.svg) and select **AEM Publish** and **Dynamic Media Publish** columns from the **Configurable Columns** dialog. 
+   1. Click ![settings](/help/assets/assets/settings-icon.svg) and select **AEM Publish** and **Dynamic Media Publish** columns from the **Configurable Columns** dialog. 
    2. Click **Confirm.** Experience Manager Assets adds the selected columns to the List view. 
    
       ![check publish status2](/help/assets/assets/check-publish-status2.png)
