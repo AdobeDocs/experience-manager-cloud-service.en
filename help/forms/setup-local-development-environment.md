@@ -259,7 +259,7 @@ You can now use the local development environment to render Document of Record. 
 
 Use this project to create Adaptive Forms, deploy configuration updates, overlays, create custom Adaptive Form components, test, and custom code on local [!DNL Experience Manager Forms] SDK. After testing locally, you can deploy the project to  [!DNL Experience Manager Forms] as a Cloud Service production and non-production environments. When you deploy the project, the following AEM Forms assets are also deployed:
 
-|Themes | Templates | Form Data Models |
+|Themes | Templates | Form Data Model (FDM) |
 ---------|----------|---------
 | Canvas 3.0 | Basic | Microsoft&reg; Dynamics 365 |
 | Tranquil   | Blank | Salesforce |
@@ -269,7 +269,7 @@ Use this project to create Adaptive Forms, deploy configuration updates, overlay
 
 >[!NOTE]
 >
-> Setup AEM Archetype version 30 or later based project to get and use Microsoft&reg; Dynamics 365 and Salesforce Form Data Models with AEM Forms as a Cloud Service.
+> Setup AEM Archetype version 30 or later based project to get and use Microsoft&reg; Dynamics 365 and Salesforce Form Data Model (FDM) with AEM Forms as a Cloud Service.
 > Setup AEM Archetype version 32 or later based project to get and use Tranquil, Urbane, and Ultramarine themes with AEM Forms as a Cloud Service.
 
 To set up the project:
@@ -411,7 +411,7 @@ To back up and move assets from existing SDK to a new SDK environment:
 
 ### Create a backup of your existing content {#create-backup-of-your-existing-content}
 
-Back up your Adaptive Forms, templates, form data model, theme, configurations, and custom code. You can perform the following action to create backup:
+Back up your Adaptive Forms, templates, form data model (FDM), theme, configurations, and custom code. You can perform the following action to create backup:
 
 1. [Download](import-export-forms-templates.md#manage-forms-and-related-assets) Adaptive Forms, themes, and PDF forms.
 1. Export Adaptive Form templates.

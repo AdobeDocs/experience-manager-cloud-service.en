@@ -53,6 +53,10 @@ You can also navigate to Cloud Manager's Programs and Products page from Adobe E
 >
 >A user can be assigned to multiple roles. For example, assigning both **Business Owner** and **Deployment Manager** roles to a user gives the user the sum of these permissions.
 
+>[!TIP]
+>
+>Custom permission profiles with configurable permissions are also available. Please see the document [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md) for more details.
+
 ## Cloud Manager Programs {#cloud-manager-programs}
 
 Cloud Manager programs represent sets of Cloud Manager environments supporting logical groupings of business initiatives. These groupings typically correspond to a purchased Service Level Agreement (SLA). For example, one program may represent the AEM resources to support an organization's public Web site, while another program represents an internal DAM. 
