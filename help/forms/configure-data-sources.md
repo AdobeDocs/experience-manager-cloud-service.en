@@ -1,6 +1,6 @@
 ---
 title: How to Configure Data Sources?
-description: Learn how to configure RESTful web services, SOAP-based web services, and OData services as data sources for a form data model.
+description: Learn how to configure RESTful web services, SOAP-based web services, and OData services as data sources for a form data model (FDM).
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
@@ -70,7 +70,7 @@ You can configure relational databases using [!DNL Experience Manager] Web Conso
     
 1. Select **[!UICONTROL Save]** to save the configuration.
 
-Now, you can use the configured relational database with your Form Data Model. 
+Now, you can use the configured relational database with your Form Data Model (FDM). 
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -78,7 +78,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and select to open the configuration in edit mode.
-1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
+1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model (FDM). Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -89,7 +89,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
    >[!NOTE]
    >
-   >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
+   >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model (FDM) can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
 1. Select **[!UICONTROL Save]** to save the configuration. -->
 
@@ -172,13 +172,13 @@ Some of the operations not supported by RESTful services Open API Specification 
 
 See [OpenAPI 3.0 Specification](https://swagger.io/specification/v3/) for detailed information. 
 
-### Form data model HTTP client configuration to optimize performance {#fdm-http-client-configuration}
+### Form data model (FDM) HTTP client configuration to optimize performance {#fdm-http-client-configuration}
 
 [!DNL Experience Manager Forms] form a data model when integrating with RESTful web services as the data source includes HTTP client configurations for performance optimization. 
 
 Set the following properties of the **[!UICONTROL Form Data Model HTTP Client Configuration for REST data source]** configuration to specify the regular expression:
 
-* Use the `http.connection.max.per.route` property to set the maximum number of permitted connections between form data model and RESTful web services. The default value is 20 connections.
+* Use the `http.connection.max.per.route` property to set the maximum number of permitted connections between form data model (FDM) and RESTful web services. The default value is 20 connections.
 
 * Use the `http.connection.max` property to specify the maximum number of permitted connections for each route. The default value is 40 connections.
 
@@ -206,7 +206,7 @@ The following JSON file displays a sample:
 
 1. In the [!UICONTROL Form Data Model HTTP Client Configuration for REST data source] dialog:
 
-   * Specify the maximum number of permitted connections between form data model and RESTful web services in the **[!UICONTROL Connection limit in total]** field. The default value is 20 connections.
+   * Specify the maximum number of permitted connections between form data model (FDM) and RESTful web services in the **[!UICONTROL Connection limit in total]** field. The default value is 20 connections.
 
    * Specify the maximum number of permitted connections for each route in the **[!UICONTROL Connection limit on per route basis]** field. The default value is two connections.
 
@@ -260,7 +260,7 @@ An OData service is identified by its service root URL. To configure an OData se
 
 >[!NOTE]
 >
-> Form data model supports [OData version 4](https://www.odata.org/documentation/).
+> Form data model (FDM) supports [OData version 4](https://www.odata.org/documentation/).
 >For a step-by-step guide to configure [!DNL Microsoft®&reg; Dynamics 365], online or on-premises, see [[!DNL Microsoft&reg; Dynamics] OData Configuration](ms-dynamics-odata-configuration.md).
 
 1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Select to select the folder where you want to create a cloud configuration.
@@ -309,7 +309,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
-When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
+When you enable mutual authentication for form data model (FDM), both the data source and [!DNL Experience Manager] Server running Form Data Model (FDM) authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model (FDM) on your [!DNL Experience Manager Forms] environment:
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.
@@ -322,7 +322,7 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## Next steps {#next-steps}
 
-You have configured the data sources. Next you can create a Form Data Model or if you have already created a Form Data Model without a data source, you can associate it with the data sources you configured. See [Create form data model](create-form-data-models.md) for details.
+You have configured the data sources. Next you can create a Form Data Model (FDM) or if you have already created a Form Data Model (FDM) without a data source, you can associate it with the data sources you configured. See [Create form data model](create-form-data-models.md) for details.
 
 
 <!--
