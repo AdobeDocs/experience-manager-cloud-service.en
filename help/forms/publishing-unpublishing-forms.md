@@ -33,7 +33,7 @@ When you select a form and publish it, its related assets and resources are also
 Your Adaptive Forms may utilize some configutaions, settings, and customizations that are not automatically published. It is recommended that you publish or activate these resources before you publish an Adaptive Form.
 
 * Editable Adaptive Form templates
-* Cloud Service configurations for Adobe Sign, Typekit, reCAPTCHA, and Form Data Models
+* Cloud Service configurations for Adobe Sign, Typekit, reCAPTCHA, and Form Data Model (FDM)
 * Other Cloud services configations are only activated if the user has admin permissions.
 * Customizations. These include but are not limited to:
 
