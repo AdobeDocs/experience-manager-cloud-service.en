@@ -17,7 +17,7 @@ A Submit Action is triggered when a user clicks the **[!UICONTROL Submit]** butt
 
 * [Submit to REST endpoint](#submit-to-rest-endpoint)
 * [Send email](#send-email)
-* [Submit using Form Data Model](#submit-using-form-data-model)
+* [Submit using Form Data Mode (FDM)l](#submit-using-form-data-model)
 * [Invoke an AEM Workflow](#invoke-an-aem-workflow)
 * [Submit to SharePoint](#submit-to-sharedrive)
 * [Submit to OneDrive](#submit-to-onedrive)
@@ -131,11 +131,11 @@ The **Submit to Forms workflow** submit option sends a data xml and file attachm
 
 For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
 
-## Submit using Form Data Model {#submit-using-form-data-model}
+## Submit using Form Data Model (FDM) {#submit-using-form-data-model}
 
-The **[!UICONTROL Submit using Form Data Model]** Submit Action writes submitted Adaptive Form data for the specified data model object in a Form Data Model to its data source. When configuring the Submit Action, you can choose a data model object whose submitted data you want to write back to its data source.
+The **[!UICONTROL Submit using Form Data Model]** Submit Action writes submitted Adaptive Form data for the specified data model object in a Form Data Model (FDM) to its data source. When configuring the Submit Action, you can choose a data model object whose submitted data you want to write back to its data source.
 
-In addition, you can submit a form attachment using a Form Data Model and a Document of Record (DoR) to the data source. For information about form data model, see [[!DNL AEM Forms] Data Integration](data-integration.md).
+In addition, you can submit a form attachment using a Form Data Model (FDM) and a Document of Record (DoR) to the data source. For information about form data model (FDM), see [[!DNL AEM Forms] Data Integration](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -237,7 +237,7 @@ Folder structure to save data is `/folder_name/form_name/year/month/date/submiss
 To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive Form:
 
 1. [Create a SharePoint List Configuration](#create-sharepoint-list-configuration): It connects AEM Forms to your Microsoft® Sharepoint List Storage.
-1. [Use the Submit using Form Data Model in an Adaptive Form](#use-submit-using-fdm): It connects your Adaptive Form to configured Microsoft® SharePoint.
+1. [Use the Submit using Form Data Model (FDM) in an Adaptive Form](#use-submit-using-fdm): It connects your Adaptive Form to configured Microsoft® SharePoint.
 
 #### Create a SharePoint List Configuration {#create-sharepoint-list-configuration}
 
@@ -261,14 +261,14 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
 
 
-#### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
+#### Use the Submit using Form Data Model (FDM) in an Adaptive Form {#use-submit-using-fdm}
 
 You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
 
-1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/create-form-data-models.md)
-1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Create a Form Data Model (FDM) using Microsoft® SharePoint List configuration](/help/forms/create-form-data-models.md)
+1. [Configure the Form Data Model (FDM) to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
-1. [Configure Submit action using a Form Data Model](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [Configure Submit action using a Form Data Model (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
 When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
 
@@ -457,7 +457,7 @@ Author can configure customJavaScript library per Adaptive Form. In the library,
 
 As a part of AEM security and hardening guidelines, configure custom error pages such as 400.jsp, 404.jsp, and 500.jsp. These handlers are called, when on submitting a form 400, 404, or 500 errors appear. The handlers are also called when these error codes are triggered on the Publish node. You can also create JSP pages for other HTTP error codes.
 
-When you prefill a form data model, or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model. Unbounded fields are Adaptive Form fields without the `bindref` property.
+When you prefill a form data model (FDM), or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model (FDM). Unbounded fields are Adaptive Form fields without the `bindref` property.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 
