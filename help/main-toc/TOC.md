@@ -850,7 +850,7 @@ user-guide-title: AEM as a Cloud Service
       + [Translation](/help/edge/docs/forms/translate-forms.md)
       + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
       + [Custom Components](/help/edge/docs/forms/custom-components-forms.md)
-      + [Real time user monitoring for forms](/help/edge/docs/forms/real-user-monitoring-for-forms.md)
+      + [Real time user monitoring for forms](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
     + References {#forms-references}
       + [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
   + Edge Delivery Resources {#resources}
