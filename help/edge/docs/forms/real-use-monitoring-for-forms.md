@@ -1,13 +1,13 @@
 ---
-title: Real user monitoring for Edge Delivery Services for AEM Forms as a Cloud Service
-description: Real user monitoring for Edge Delivery Services for AEM Forms as a Cloud Service involves the ongoing tracking and analysis of user interactions with forms.
+title: Real Use monitoring for Edge Delivery Services for AEM Forms as a Cloud Service
+description: Real Use monitoring for Edge Delivery Services for AEM Forms as a Cloud Service involves the ongoing tracking and analysis of user interactions with forms.
 feature: Edge Delivery Services
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 ---
 
-# Real user monitoring for Edge Delivery Services for AEM Forms as a Cloud Service
+# Real Use Monitoring for Edge Delivery Services for AEM Forms as a Cloud Service
 
-Real User Monitoring (RUM) empowers you to gain real-world insights into how visitors interact with your Adobe Experience Manager (AEM) websites. This built-in tool provides valuable data to understand user behavior, diagnose performance issues, and measure the effectiveness of website experiments. RUM goes beyond synthetic testing by capturing real user interactions, offering a more accurate picture of your site's performance.
+Real Use Monitoring (RUM) empowers you to gain real-world insights into how visitors interact with your Adobe Experience Manager (AEM) websites. This built-in tool provides valuable data to understand user behavior, diagnose performance issues, and measure the effectiveness of website experiments. RUM goes beyond synthetic testing by capturing Real Use interactions, offering a more accurate picture of your site's performance.
 
 However, RUM prioritizes visitor privacy. It utilizes sampling techniques to collect data from a representative subset of users, ensuring no personally identifiable information (PII) is ever captured. Additionally, RUM is designed with data minimization in mind, collecting only the essential metrics required for performance analysis. This approach allows you to optimize your AEM sites while maintaining user trust.
 
