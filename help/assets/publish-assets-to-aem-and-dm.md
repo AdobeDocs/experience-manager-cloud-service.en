@@ -118,4 +118,5 @@ You can also check an asset publish status by selecting an asset and clicking **
  * An ability to copy or paste Dynamic Media URL at an asset level (if the assets are published to Dynamic Media). 
  * Ability to publish references (assets, tags, and so on) while publishing to AEM. 
  * Ability to overwrite Dynamic Media sync status at folder-level. 
- * Ability to overwrite Dynamic Media Publish mode at folder-level.
+ * Ability to overwrite Dynamic Media Publish mode at folder-level
+ * Manage Publication is not yet supported.
