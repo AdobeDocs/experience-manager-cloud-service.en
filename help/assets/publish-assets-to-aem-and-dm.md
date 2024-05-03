@@ -93,7 +93,7 @@ The option to publish to Dynamic Media on the search results page depends on the
 
 To check the publish status for an asset or a folder:
 
-1. Click **Assets** in the **Assets Management** section available in the left pane. 
+1. Click **[!UICONTROL Assets]** in the **[!UICONTROL Assets Management]** section available in the left pane. 
 2. Switch to List View using the View Switcher. You can view asset properties, such as AEM Publish, Dynamic Media Publish, title, size, dimensions, and so on.  
 If an asset or folder is not published, the status for **AEM Publish** and **Dynamic Media Publish** columns is displayed as **N/A.** 
 ![check publish status1](/help/assets/assets/check-publish-status1.png)
