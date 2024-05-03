@@ -5,7 +5,7 @@ description: Quick Publish is a feature in the new UI or assets view. This featu
 
 # Publish Assets to AEM and Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
-Experience Manager Assets enables you to quickly publish assets to Experience Manager and Dynamic Media using the Assets view. This ensures that you manage your assets and then publish them using [Assets view without switching to the Admin view](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview#persona-based-experiences). 
+Experience Manager Assets enables you to quickly publish assets to Experience Manager and Dynamic Media using the Assets view. This ensures that you manage your assets and then publish them using [Assets view without switching to the Admin view](/help/assets/overview.md##persona-based-experiences). 
 
 Experience Manager Assets view provides the flexibility to publish assets to AEM or Dynamic Media, or both at the same time. You can publish assets while uploading, browsing, and searching assets. All these optons to publish assets are explained within this artcle in detail.
 
@@ -15,8 +15,8 @@ Configure these settings to view the publish optons for AEM and Dynamic Media:
 
 * To view the publish optons for Dynamic Media, configure the following settings using Admin view:
 
-   * [Create a Dynamic Media cloud configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm#configuring-dynamic-media-cloud-services).
-   * Set the Dynamic Media Publish mode at the folder-level. You can configure these settings while creatng the Dynamic Media cloud configuraton as well. To overwrite those settings at the folder-level, see [Configure Selectve Publish at the folder level in Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing). 
+   * [Create a Dynamic Media cloud configuration](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+   * Set the Dynamic Media Publish mode at the folder-level. You can configure these settings while creatng the Dynamic Media cloud configuraton as well. To overwrite those settings at the folder-level, see [Configure Selectve Publish at the folder level in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md). 
 
 * To view the publish optons for AEM, you must configure the AEM publish endpoint for your environment.
 
