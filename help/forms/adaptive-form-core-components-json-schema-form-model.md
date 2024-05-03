@@ -4,7 +4,7 @@ description: Learn to create a JSON schema for an Adaptive Form core components 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-
+exl-id: 185b12bc-cea9-45c8-9b57-dc313bd0cfaa
 ---
 # Design JSON Schema for an Adaptive Form (Core Components){#creating-adaptive-forms-using-json-schema}
 
