@@ -199,7 +199,7 @@ You can also modify the form model properties from the Adaptive Form editor or A
 >
 > You can also save an Adpative Form as a template. For more information, see [Create a template using an Adaptive Form](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).
 
-## How to rename an AEM Adaptive Form {#rename-an-AEM-Adaptive-Form}
+## How to rename an AEM Adaptive Form ? {#rename-an-AEM-Adaptive-Form}
 
 To rename an adaptive form, perform the following steps:
 
