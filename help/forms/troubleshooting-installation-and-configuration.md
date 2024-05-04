@@ -48,3 +48,13 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 Users are unable to run build pipeline. The pipeline fails after running for some time.  
 
 To resolve the issue, open Cloud Manager, select the **[!UICONTROL Update]** option for your environment, and run the pipeline.
+
+
+## Bundles are not in the active state {#bundles-inactive-state}
+
+To resolve the issue, perform the following steps:
+
+1. Start AEM and wait for it to start completely until all the bundles are up.
+1. Stop AEM (Ctrl + C).
+1. Place the Forms `.far` file in the installation folder.
+1. Restart the AEM server.
