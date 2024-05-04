@@ -185,7 +185,7 @@ You can use the Form Data Model Prefill service to prepopulate fields of an Adap
 1. Select **[!UICONTROL Save]** to save the properties.
 
 
-## How to rename an AEM Adaptive Form {#rename-an-AEM-Adaptive-Form}
+## How to rename an AEM Adaptive Form ? {#rename-an-AEM-Adaptive-Form}
 
 To rename an adaptive form, perform the following steps:
 
