@@ -5,7 +5,7 @@ description: Learn about the main use cases of the Universal Editor and how best
 
 # Universal Editor Use Cases and Learning Paths {#use-cases-learning-paths}
 
-Learn about the main use cases of the Universal Editor and how best to learn about its use and how to implement it on your own projects.
+Learn about the main use cases of the Universal Editor and how best to learn more about its use and how to implement it on your own projects.
 
 ## Overview {#overview}
 
@@ -40,7 +40,7 @@ Once you have read those documents, you can return to this page to learn about t
 
 ### Headless Authoring {#headless-authoring}
 
-If you already have a headless app, you can still use the Universal Editor to author content for the app and persist its content as Content Fragments in AEM. The only requirement is that the app is instrumented to allow the use of the Universal Editor.
+If you already have a headless app, you can use the Universal Editor to author content for the app and persist its content as Content Fragments in AEM. The only requirement is that the app is instrumented to allow the use of the Universal Editor.
 
 If this is your use case, as an immediate next step, please see the following document for an example of a headless app instrumented to use the Universal Editor.
 
@@ -54,7 +54,7 @@ The power of the Universal Editor is its ability to author any content in-place,
 
 The Universal Editor works in the following way.
 
-1. A developer must instrument the app or page to use the Universal Editor. This instrumentation tells the editor what content is editable and how to persist it.
+1. A developer instruments the app or page to use the Universal Editor. This instrumentation tells the editor what content is editable and how to persist it.
    * For AEM-based authoring, pages created using the boilerplate template are automatically instrumented.
    * For headless authoring, your app can be easily instrumented.
 1. The content author load the Universal Editor, which in turn loads your page for editing. Because it is instrumented, it knows which content is editable and how it is to be represented and persisted.
@@ -65,7 +65,7 @@ If you would like to learn more about the architecture of the Universal Editor, 
 
 ## Universal Editor Concepts {#concepts}
 
-For a page or app to be editable by the Universal Editor, it must be properly instrumented. This instrumentation is metadata that tells the Universal Editor what is editable and how to edit it.
+For a page or app to be editable by the Universal Editor, it must be properly instrumented. Once instrumented, it can be further adapted to your project needs.
 
 * [Attributes and Types](/help/implementing/universal-editor/attributes-types.md) - In order for an app or page to be editable by the Universal Editor, it must be properly instrumented. This includes including the proper metadata so the editor can edit the content of the app. 
 * [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md) - Once the metadata is present to enable editing of a component, you define what fields and component types they can manipulate in the properties rail of the editor. You do this by creating a model and linking to that from the component.
