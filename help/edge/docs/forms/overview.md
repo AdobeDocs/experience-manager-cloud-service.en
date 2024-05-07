@@ -67,7 +67,7 @@ AEM Authoring provides a WYSIWYG interface (Adaptive Forms Editor) for building 
 * Integration with Adobe Sign for electronic signatures.
 * Integration with Adobe Workfront Fusion to triggering Adobe Workfront Fusion scenarios upon form submission.
 * Integration with various data sources for pre-populating forms and submitting data.
-* Form Data Model for defining data structure and interactions with various data sources.
+* Form Data Model (FDM) for defining data structure and interactions with various data sources.
 * Ability to choose from multiple submit actions for handling form submissions, including submitting data to Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, many more data sources.
 
 In essence, [AEM Authoring](/help/forms/creating-adaptive-form-core-components.md) builds upon the foundation of [Document-based Authoring](/help/edge/docs/forms/create-forms.md), providing a more advanced toolkit for creating and managing complex forms. 
