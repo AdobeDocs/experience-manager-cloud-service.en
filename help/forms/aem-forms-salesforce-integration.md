@@ -1,17 +1,19 @@
 ---
 title: How to integrate Salesforce using OAuth 2.0 client credential flow with AEM Forms?
-description: Learn to integrate Salesforce with AEM Forms using OAuth 2.0 client credential flow.
-Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration
+description: Learn to integrate Salesforce with AEM Forms using OAuth 2.0 client credential flow. It displays steps for AEM Forms Salesforce integration.
+Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration, AEM Forms Salesforce integration
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
 ---
-# Connect Adaptive Form to Salesforce using OAuth 2.0 client credential flow {#configure-salesforce-with-ouath-2.0-client-credential}
+# Integrate Adaptive Form with Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html)                  |
 | AEM as a Cloud Service     | This article         |
+
+Adobe Experience Manager (AEM) Forms integration with Salesforce allows organizations to streamline processes by connecting their form creation and management capabilities with the Salesforce platform. Connecting an Adaptive Form with Salesforce enables seamless data exchange between the two platforms. When users submit forms, the data is synchronized with Salesforce automatically. It ensures that all customer information is up-to-date and centralized within the system.
 
 You can use OAuth 2.0 client credentials to integrate AEM Forms with the Salesforce application. OAuth 2.0 client credentials are a standard and secure method for direct communication without user involvement.  
 
@@ -66,9 +68,9 @@ To connect Adaptive Form to  Salesforce application using OAuth 2.0 client crede
 1. If the connection succeeds, click the **[!UICONTROL Create]** button.
 
 
-After configuring the Salesforce application, you can use the configuration while creating form data models. For more information, see [Create form data model](create-form-data-models.md). [Configure the Form Data Model Submit Action](/help/forms/using-form-data-model.md) for an Adaptive Form to send data to Salesforce applications.
+After configuring the Salesforce application, you can use the configuration while creating form data model (FDM). For more information, see [Create form data model (FDM)](create-form-data-models.md). [Configure the Form Data Model Submit Action](/help/forms/using-form-data-model.md) for an Adaptive Form to send data to Salesforce applications.
 
-For more information about creating and using Form Data Model in business workflows, see [Data Integration](data-integration.md).
+For more information about creating and using Form Data Model (FDM) in business workflows, see [Data Integration](data-integration.md).
 
 ## Related Articles
 
