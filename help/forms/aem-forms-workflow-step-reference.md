@@ -79,12 +79,12 @@ You can also use the component to control the behavior of the task. For example,
 * **[!UICONTROL For completed task, render the Adaptive Form as]**: When a task is marked complete, you can render the Adaptive Form as a read-only Adaptive Form or a PDF document. You require a Document of Record option enabled or form template based Adaptive Forms for rendering the Adaptive Form as Document of Record.
 * **[!UICONTROL Pre-populated]**: The following fields listed below serve as inputs to the task:
 
-    * **[!UICONTROL Select input data file using]**: Path of input data file (.json, .xml, .doc, or form data model). You can retrieve the input data file using a path that is relative to the payload or retrieve the file stored in a variable of Document, XML, or JSON data type. For example, the file contains the data submitted for the form through an AEM Inbox application. An example path is [Payload_Directory]/workflow/data.
+    * **[!UICONTROL Select input data file using]**: Path of input data file (.json, .xml, .doc, or form data model (FDM)). You can retrieve the input data file using a path that is relative to the payload or retrieve the file stored in a variable of Document, XML, or JSON data type. For example, the file contains the data submitted for the form through an AEM Inbox application. An example path is [Payload_Directory]/workflow/data.
     * **[!UICONTROL Select input attachments using]**: Attachments available at the location are attached to the form associated with the task. The path can be relative to the payload or retrieve the attachment stored in a variable of a document. An example path is [Payload_Directory]/attachments/. You can specify attachments placed relative to the payload or use a document type (Array list > Document) variable to specify an input attachment for the Adaptive Form.
     
     <!-- 
     
-    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model (FDM) data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
     * **[!UICONTROL Choose a custom prefill service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.  
     
@@ -102,13 +102,13 @@ You can also use the component to control the behavior of the task. For example,
 
 * **[!UICONTROL Submitted information]**: The following fields listed below serve as output locations to the task:
 
-    * **[!UICONTROL Save output data file using]**: Save the data file (.json, .xml, .doc, or form data model). The data file contains information submitted through the associated form. You can save the output data file using a path that is relative to the payload or store it in a variable of Document, XML, or JSON data type. For example, [Payload_Directory]/Workflow/data, where data is a file.
+    * **[!UICONTROL Save output data file using]**: Save the data file (.json, .xml, .doc, or form data model (FDM)). The data file contains information submitted through the associated form. You can save the output data file using a path that is relative to the payload or store it in a variable of Document, XML, or JSON data type. For example, [Payload_Directory]/Workflow/data, where data is a file.
     * **[!UICONTROL Save attachments using]**: Save the form attachments provide in a task. You can save the attachments using a path that is relative to the payload or store it in a variable of array list of Document data type.
     * **[!UICONTROL Save Document of Record using]**: Path to save a Document of Record file. For example, [Payload_Directory]/DocumentofRecord/credit-card.pdf. You can save the Document of Record using a path that is relative to the payload or store it in a variable of Document data type. If you select the **[!UICONTROL Relative to Payload]** option, The Document of Record is not generated if the path field is left empty. This option is available only if you select Adaptive Form from the Type drop-down list.
     
     <!-- 
     
-    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
+    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model (FDM) data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. 
     
@@ -267,9 +267,9 @@ Invoke DDX step has the following properties:
 * **[!UICONTROL Save Output in Payload]**: Saves output documents under the payload folder, or overwrites the payload, in case, the payload is a file.
 * **[!UICONTROL Output Document's Map]**: Specifies the location to save each document file explicitly, by adding one entry per document. Each entry represents the document and the location, where to save it. If there are multiple output documents, this option is used.   
 
-## Invoke Form Data Model Service step {#invoke-form-data-model-service-step}
+## Invoke Form Data Model (FDM) Service step {#invoke-form-data-model-service-step}
 
-You can use [[!DNL AEM Forms] Data Integration](data-integration.md) to configure and connect to disparate data sources. These data sources can be a web service, REST service, OData service, and CRM solution. [!DNL AEM Forms] Data Integration lets you create a Form Data Model encompassing various services to perform data retrieval, addition, updating operations on the configured database. You can use the **[!UICONTROL Invoke Data Model Service step]** to select a Form Data Model (FDM) and use the services of the FDM to retrieve, update, or add data to disparate data sources.
+You can use [[!DNL AEM Forms] Data Integration](data-integration.md) to configure and connect to disparate data sources. These data sources can be a web service, REST service, OData service, and CRM solution. [!DNL AEM Forms] Data Integration lets you create a Form Data Model (FDM) encompassing various services to perform data retrieval, addition, updating operations on the configured database. You can use the **[!UICONTROL Invoke Data Model Service step]** to select a Form Data Model (FDM) and use the services of the FDM to retrieve, update, or add data to disparate data sources.
 
 To explain inputs for fields of the step, the following database table and JSON file are used as an example :
 
@@ -325,14 +325,14 @@ To explain inputs for fields of the step, the following database table and JSON 
 
 ```
 
-The Invoke Form Data Model Service step has the below listed fields to facilitate Form Data Model operations:
+The Invoke Form Data Model (FDM) Service step has the below listed fields to facilitate Form Data Model (FDM) operations:
 
 * **[!UICONTROL Title]**: Title of the step. It helps identify the steps in the workflow editor.
 * **[!UICONTROL Description]**: Explanation useful for other process developers when you are working in a shared development environment.  
 
-* **[!UICONTROL Form Data Model Path]**: Browse and select a Form Data Model present on the server.  
+* **[!UICONTROL Form Data Model Path]**: Browse and select a Form Data Model (FDM) present on the server.  
 
-* **[!UICONTROL Errors and Validations]**: The option lets you capture error messages and specify validation options for data retrieved and sent to data sources. With these changes, you can ensure data passed to the Invoke Form Data Model Service step adheres to the data constraints defined by the data source. For more details, see [Automated validation of input data](work-with-form-data-model.md#automated-validation-of-input-data)
+* **[!UICONTROL Errors and Validations]**: The option lets you capture error messages and specify validation options for data retrieved and sent to data sources. With these changes, you can ensure data passed to the Invoke Form Data Model (FDM) Service step adheres to the data constraints defined by the data source. For more details, see [Automated validation of input data](work-with-form-data-model.md#automated-validation-of-input-data)
 
 * **[!UICONTROL Validation level]**: There are three categories of validations: Basic, Full, and OFF:
 
@@ -348,7 +348,7 @@ The Invoke Form Data Model Service step has the below listed fields to facilitat
 
 * **[!UICONTROL Store Error Details in Variable]**: You can store an error detail in a [JSON type variable](variable-in-aem-workflows.md).
 
-* **[!UICONTROL Service]**: List of the services that the selected Form Data Model provides.
+* **[!UICONTROL Service]**: List of the services that the selected Form Data Model (FDM) provides.
 * **[!UICONTROL Input for services]** &gt; **[!UICONTROL Provide input data using literal, variable, or workflow metadata, and a JSON file]**: A service can have multiple arguments. Select the option to obtain the value of the service arguments from a workflow metadata property, a JSON object, a variable, or directly enter the value in the provided text box:
 
   * **[!UICONTROL Literal]**: Use the option when you know the exact value to specify. For example, srose@we.info.
@@ -360,16 +360,16 @@ The Invoke Form Data Model Service step has the below listed fields to facilitat
     For example, if the Relative to Payload folder in the CRX repository includes a file attachment at the `attachment\attachment-folder` location, specify `attachment\attachment-folder` in the text box after selecting the **[!UICONTROL Relative to Payload]** option.
 
   * **[!UICONTROL JSON Dot Notation]**: Use the option when the value to use is in a JSON file. For example, insurance.customerDetails.emailAddress. The JSON Dot Notation option is available only if Map input fields from the input JSON option are selected.
-  * **[!UICONTROL Map input fields from input JSON]**: Specify the path of a JSON file to obtain the input value of some service arguments from the JSON file. The path of the JSON file can be relative to the payload, an absolute path, or you can select an input JSON document using a variable of JSON or Form Data Model type.
+  * **[!UICONTROL Map input fields from input JSON]**: Specify the path of a JSON file to obtain the input value of some service arguments from the JSON file. The path of the JSON file can be relative to the payload, an absolute path, or you can select an input JSON document using a variable of JSON or Form Data Model (FDM) type.
 
 * **[!UICONTROL Input for services]** &gt; **[!UICONTROL Provide input data using variable or a JSON file]**: Select the option to obtain values for all the arguments from a JSON file saved at an absolute path, at a path relative to the payload, or in a variable.
-* **[!UICONTROL Select Input JSON document using]**: The JSON file containing values for all the service arguments. The path of the JSON file can be **[!UICONTROL relative to the payload]** or an **[!UICONTROL absolute path]**. You can also retrieve the input JSON document using a variable of JSON or Form Data Model data type.
+* **[!UICONTROL Select Input JSON document using]**: The JSON file containing values for all the service arguments. The path of the JSON file can be **[!UICONTROL relative to the payload]** or an **[!UICONTROL absolute path]**. You can also retrieve the input JSON document using a variable of JSON or Form Data Model (FDM) data type.
 
 * **[!UICONTROL JSON Dot Notation]**: Leave the field blank to use all the objects of the specified JSON file as input for service arguments. To read a specific JSON object from the specified JSON file as input for service arguments, specify dot notation for the JSON object, for example, If you have a JSON similar to the one listed at the start of the section, specify insurance.customerDetails to provide all the details of a customer as input to the service.
 * **[!UICONTROL Output of service]** &gt; **[!UICONTROL Map and write output values to variable or metadata]**: Select the option to save the output values as properties of the workflow instance metadata node in crx-repository. Specify the name of the metadata property and select the corresponding service output attribute to be mapped with the metadata property, for example, map the phone_number returned by output service with the phone_number property of workflow metadata. Similarly, you can store the output in a variable of Long data type. When you select a property for the **[!UICONTROL Service output attribute to be mapped]** option, only variables capable of storing data of the selected property are populated for the **[!UICONTROL Save the output to]** option.
 
 * **[!UICONTROL Output of service]** &gt; **[!UICONTROL Save output to variable or a JSON file]**: Select the option to save the output values in a JSON file at an absolute path, at a path relative to the payload, or in a variable . 
-* **[!UICONTROL Save Output JSON document using below options]**: Save the output JSON file. The path of the output JSON file can be relative to the payload or an absolute path. You can also save the output JSON file using a variable of JSON or Form Data Model data type.
+* **[!UICONTROL Save Output JSON document using below options]**: Save the output JSON file. The path of the output JSON file can be relative to the payload or an absolute path. You can also save the output JSON file using a variable of JSON or Form Data Model (FDM) data type.
 
 
 

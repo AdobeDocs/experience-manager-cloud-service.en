@@ -91,7 +91,7 @@ You can now [assign or remove metadata form to multiple folders](/help/assets/me
 
 --> 
 
-### New features in Prerelease for AEM Forms {#forms-pre-release}
+### New features in AEM Forms {#forms-new-features}
 
 * **Enhanced Visual Rule Editor for Core Component Based Adaptive Forms**: This release brings a significant upgrade to the visual rule editor for adaptive forms based on core components. This release brings a significant upgrade to the visual rule editor for adaptive forms based on core components. This update focuses on streamlining interactions with custom functions, empowering you to build more robust and efficient forms. 
 
