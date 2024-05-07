@@ -391,6 +391,15 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 For more information and demonstration, see the video tutorial [how to use RDE commands (10:01)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html).
 
+## Logs {#tail-logs-from-rde}
+Using the logs command, the user can tail live logs of an RDE directly in his CLI. Ther can be up to four concurrent log configurations be active on an RDE. Once a fifth log configuration is added, an old one has to be replaced. 
+
+Note: A certain amount of logs are kept in memory on the RDE. The memory is recycled if the logs are not tailed, or if the network is too slow. Log messages could be lost in such rare cases.
+
+A simple usecase would be to tail debug logs for some packages, while highlighting anything that mentiones the auth package: `aio aem:rde:logs -d com.adobe -d com.day -H .auth.`
+
+See `aio aem:rde:logs --help` for details.
+
 ## Reset {#reset-rde}
 
 Resetting the RDE removes all custom code, configurations, and content from both the author and publish instances. This reset is useful, for example, if the RDE has been used to test a specific feature and you want to reset it to a default state so you can test a different feature.
