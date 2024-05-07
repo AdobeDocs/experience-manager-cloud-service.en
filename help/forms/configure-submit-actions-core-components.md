@@ -1,7 +1,7 @@
 ---
 title: How to configure a Submit Action for an Adaptive Form?
 description: An Adaptive Form provides multiple Submit Actions. A Submit Action defines how an Adaptive Form is processed after submission. You can use built-in Submit Actions or create your own
-keywords: how to select submit action for an adpative form, connect an adaptive form to sharepoint list, connect an adaptive form to sharepoint document library, connect an adaptive form to form data model 
+keywords: how to select submit action for an adpative form, connect an adaptive form to sharepoint list, connect an adaptive form to sharepoint document library, connect an adaptive form to form data model (FDM) 
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 ---
@@ -21,7 +21,7 @@ A Submit Action lets you choose the destination of data captured via an Adaptive
 * Effortlessly send form data via email.
 * Initiate Microsoft® Power Automate flows or AEM Workflows while transmitting the data.
 * Directly transmit the form data to Microsoft® SharePoint Server, Microsoft® Azure Blob Storage, or Microsoft® OneDrive.
-* Seamlessly send the data to a configured data source using the Form Data Model.
+* Seamlessly send the data to a configured data source using the Form Data Model (FDM).
 * Conveniently submit the data to a REST endpoint.
 
 You can [extend the default Submit Actions](custom-submit-action-form.md). You can also customize the Submit Actions for organizational-specific requirements.
@@ -56,7 +56,7 @@ For detailed information about the following Submit Actions, see:
 * [Invoke a Power Automate flow](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Submit to SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [Invoke a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Submit using Form Data Model](/help/forms/using-form-data-model.md)
+* [Submit using Form Data Model (FDM)](/help/forms/using-form-data-model.md)
 * [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
 * [Submit to OneDrive](/help/forms/configure-submit-action-onedrive.md)
@@ -64,7 +64,7 @@ For detailed information about the following Submit Actions, see:
 
 You can also submit an Adaptive Form to other storage configurations:
 
-* [Connect Adaptive Form to Salesforce application](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Connect Adaptive Form to Salesforce application](/help/forms/aem-forms-salesforce-integration.md)
 * [Connect an Adaptive Form to Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
 You can [customize the default Submit Actions](custom-submit-action-form.md). Additionally, you can customize the Submit Actions to align with specific organizational requirements.
@@ -88,11 +88,11 @@ Refer to [configure the send email submit action for an Adaptive Form](/help/for
 
 >[!CAUTION]
 >
->If you  [prefill](prepopulate-adaptive-form-fields.md) a form template,  a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema , form template, or form data model) that is data does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost. 
+>If you  [prefill](prepopulate-adaptive-form-fields.md) a form template,  a Form Data Model (FDM) or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema , form template, or form data model (FDM)) that is data does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost. 
 
 >[!CAUTION]
 >
->If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
+>If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model (FDM) or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model(FDM)) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
 
 ## Submit to Microsoft® SharePoint {#submit-to-sharedrive}
 
@@ -100,11 +100,11 @@ The **[!UICONTROL Submit to SharePoint]** Submit Action connects an Adaptive For
 
 Integration of AEM Adaptive Form with Microsoft® SharePoint enables the submission, retrieval, or storage of data, files, and other relevant information within the SharePoint storage. To learn how to configure submit to SharePoint submit action for an Adaptive Form, [click here.](/help/forms/configure-submit-action-sharepoint.md) 
 
-## Submit using Form Data Model {#submit-using-form-data-model}
+## Submit using Form Data Model (FDM) {#submit-using-form-data-model}
 
-The **[!UICONTROL Submit using Form Data Model]** Submit Action writes submitted Adaptive Form data for the specified data model object in a Form Data Model to its data source. When configuring the Submit Action, you can choose a data model object whose submitted data you want to write back to its data source.
+The **[!UICONTROL Submit using Form Data Model (FDM)]** Submit Action writes submitted Adaptive Form data for the specified data model object in a Form Data Model (FDM) to its data source. When configuring the Submit Action, you can choose a data model object whose submitted data you want to write back to its data source.
 
-When a user submits a form based on a form data model, you can [configure the form to write the submitted data to the data sources associated with the data model object.](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+When a user submits a form based on a form data model (FDM), you can [configure the form to write the submitted data to the data sources associated with the data model object.](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 
 ## Submit to REST endpoint {#submit-to-rest-endpoint}
 
@@ -206,7 +206,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 As a part of AEM security and hardening guidelines, configure custom error pages such as 400.jsp, 404.jsp, and 500.jsp. These handlers are called, when on submitting a form 400, 404, or 500 errors appear. The handlers are also called when these error codes are triggered on the Publish node. You can also create JSP pages for other HTTP error codes.
 
-When you prefill a form data model, or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model. Unbounded fields are Adaptive Form fields without the `bindref` property.
+When you prefill a form data model (FDM), or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model (FDM). Unbounded fields are Adaptive Form fields without the `bindref` property.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 
