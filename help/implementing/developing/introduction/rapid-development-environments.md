@@ -90,6 +90,7 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    ```
    
 ### The Interactive Setup
+
   The setup command will ask if the provided configuration shall be stored locally or globally.
    
    ```
@@ -98,13 +99,13 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    ```
    
    Choose `no` to 
-   - store the organization, program and environment globally in your aio configuration.
-   - work with a single RDE only.
+   * store the organization, program and environment globally in your aio configuration.
+   * work with a single RDE only.
    
    Choose `yes` to
-   - store the organization, program and environment locally in the current directory, in a `.aio` file.
-   - work with many RDEs, so that switching the to another directory will use that configuration instead.
-   - work with a CLI based environment.
+   * store the organization, program and environment locally in the current directory, in a `.aio` file.
+   * work with many RDEs, so that switching the to another directory will use that configuration instead.
+   * work with a CLI based environment.
 
 
    Once local or global configuration is selected, the setup command will try to read your oriagnization ID from your current login and then read the programs of your organization. In case the organization cannot be found, you can enter it manually along with some guidance.
@@ -392,6 +393,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 For more information and demonstration, see the video tutorial [how to use RDE commands (10:01)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html).
 
 ## Logs {#tail-logs-from-rde}
+
 Using the logs command, the user can tail live logs of an RDE directly in his CLI. Ther can be up to four concurrent log configurations be active on an RDE. Once a fifth log configuration is added, an old one has to be replaced. 
 
 Note: A certain amount of logs are kept in memory on the RDE. The memory is recycled if the logs are not tailed, or if the network is too slow. Log messages could be lost in such rare cases.
@@ -541,8 +543,11 @@ Forms developers can use AEM Forms Cloud Service Rapid Development Environment t
 To learn about RDE in AEM as a Cloud Service, see the video tutorial that demonstrates [how to set it up, how to use it, and the development life cycle (01:25)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html).
 
 # Troubleshooting
+
 ## aio RDE plugin
+
 ### errors regarding insufficient permissions
+
 To use the RDE plugn, it requires you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
 
 Alternatively, you can confirm that you have this developer role if you can log in to the developer console by running this command:
