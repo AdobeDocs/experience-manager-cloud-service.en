@@ -39,9 +39,9 @@ The following diagram provides a detailed view of available quality gates and th
 
 |                               |      Unit Tests       |    Custom<br/> Functional Tests     |        Custom<br/> UI Tests         | Customer<br/> Validations | Manual<br/> Testing |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
-| **Production Pipeline**       | Yes<br/>Blocking<br/> |  Yes<br/>Blocking<br/>60m Timeout   |  Yes<br/>Blocking<br/>60m Timeout   |            No             |         No          |
-| **Non-Production Pipeline**   | Yes<br/>Blocking<br/> | Opt-In<br/>Blocking<br/>60m Timeout | Opt-In<br/>Blocking<br/>60m Timeout |            No             |         No          |
-| **Adobe Internal Validation** | Yes<br/>Blocking<br/> |  Yes<br/>Blocking<br/>60m Timeout   |  Yes<br/>Blocking<br/>60m Timeout   |            No             |         No          |
+| **Production Pipeline**       | Yes<br/>Blocking<br/> |  Yes<br/>Blocking<br/>60m Timeout   |  Yes<br/>Blocking<br/>30m Timeout   |            No             |         No          |
+| **Non-Production Pipeline**   | Yes<br/>Blocking<br/> | Opt-In<br/>Blocking<br/>60m Timeout | Opt-In<br/>Blocking<br/>30m Timeout |            No             |         No          |
+| **Adobe Internal Validation** | Yes<br/>Blocking<br/> |  Yes<br/>Blocking<br/>60m Timeout   |  Yes<br/>Blocking<br/>30m Timeout   |            No             |         No          |
 | **Customer CI/CD**            |          Yes          |                 Yes                 |                 Yes                 |            Yes            |         Yes         |
 | **Customer Local Developer**  |          Yes          |                 Yes                 |                 Yes                 |            Yes            |         Yes         |
 
