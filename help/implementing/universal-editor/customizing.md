@@ -13,11 +13,13 @@ Learn about the different extension points and other features that allow you to 
 The Universal Editor allows for two types of adaptation for your project's needs.
 
 * [Customizing the Universal Editor](#customizing) - The standard functionality of the Universal Editor can be adapted via several customization configurations.
-* [Extending the Universal Editor UI](#extending) - The UI of the Universal Editor can also be extended to meet your projects needs using the App Builder.
+* [Extending the Universal Editor UI](#extending) - The UI of the Universal Editor can also be extended using the App Builder to meet your projects needs.
 
 Both types are detailed in the following sections.
 
 ## Customizing the Universal Editor {#customizing}
+
+The Universal Editor offers several built-in options to customize its functionality.
 
 ### Disabling Publishing {#disable-publish}
 
@@ -110,7 +112,7 @@ Conditions can be defined using [JsonLogic schema.](https://jsonlogic.com/) If t
 
 As an Adobe Experience Cloud service, the Universal Editor's UI can be extended using the App Builder and Experience Manager.
 
-UI extensions are JavaScript applications built with Adobe App Builder that can be embedded in UI applications, such as the Universal Editor, that run under Adobe Experience Cloud unified shell. You can add your own buttons and actions to the header menu and properties rail as well as create your own events for the Universal Editor.
+UI extensions are JavaScript applications built with Adobe App Builder that can be embedded in UI applications that run under Adobe Experience Cloud unified shell, such as the Universal Editor. You can add your own buttons and actions to the header menu and properties rail as well as create your own events for the Universal Editor.
 
 If you would like to explore these possibilities, please see the following resources:
 
@@ -120,6 +122,6 @@ If you would like to explore these possibilities, please see the following resou
 
 >[!TIP]
 >
->If you prefer learning by example, please check out the [AEM UI extensibility tutorial.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) Though it focuses on extending the Content Fragment console, the concepts for implementing a UI extension in the Universal Editor are the same.
+>If you prefer learning by example, please see the [AEM UI extensibility tutorial.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) Though it focuses on extending the Content Fragment console, the concepts for implementing a UI extension in the Universal Editor are the same.
 
-[Using Extension Manager in AEM Sites,](https://developer.adobe.com/uix/docs/extension-manager/) you can enable or disable extensions on a per-instance basis, access Adobe's first-party extensions, and much more.
+[Using Extension Manager in AEM Sites,](https://developer.adobe.com/uix/docs/extension-manager/) you can enable or disable your extensions on a per-instance basis, access Adobe's first-party extensions including those for the Universal Editor, and much more.
