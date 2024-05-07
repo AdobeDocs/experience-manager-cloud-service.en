@@ -36,7 +36,7 @@ The integration of AEM with Adobe Target via the Target Standard API requires th
 
 >[!NOTE]
 >
->[IMS integrations are now configured with S2S OAut](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md). 
+>[IMS integrations are now configured with S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md). 
 >
 >Previous configurations were made with [JWT Credentials that are now subject to deprecation in the Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md). 
 
