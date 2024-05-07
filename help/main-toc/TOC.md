@@ -565,6 +565,7 @@ user-guide-title: AEM as a Cloud Service
     + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
     + [Manage reports](/help/assets/manage-reports-assets-view.md)
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
+    + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
   + Best practices{#best-practices}
     + [Search best practices](/help/assets/search-best-practices.md)
     + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
@@ -614,7 +615,7 @@ user-guide-title: AEM as a Cloud Service
       + [Connect AEM Forms to database or data source](/help/forms/data-integration.md)
       + [Configure data sources](/help/forms/configure-data-sources.md)
       + [Configure [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-      + [Connect Adaptive Form to Salesforce application using OAuth 2.0 client credential flow](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+      + [Connect Adaptive Form to Salesforce application using OAuth 2.0 client credential flow](/help/forms/aem-forms-salesforce-integration.md)
       + [Configure [!DNL Azure] storage](/help/forms/configure-azure-storage.md)
       + [Configure [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] cloud services](/help/forms/configure-msdynamics-salesforce.md)
       + [Create Form Data Model](/help/forms/create-form-data-models.md)
@@ -646,6 +647,7 @@ user-guide-title: AEM as a Cloud Service
         + [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md)
         + [Create and use custom functions](/help/forms/create-and-use-custom-functions.md)
         +  [Add rules to an Adaptive Form based on Core Components](/help/forms/rule-editor-core-components.md)
+        +  [Design JSON Schema for an Adaptive Form (Core Components)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
         +  [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
         +  [Compare Adaptive Forms](/help/forms/compare-forms.md)  
     + Foundation Components {#authoring-adaptive-forms-foundation-components}
@@ -833,7 +835,7 @@ user-guide-title: AEM as a Cloud Service
     + [Redirects](/help/edge/docs/redirects.md)
   + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
-    + Get Started {#getting-started-eds-forms}
+    + Get Started {#getting-started-edge-delivery-services-forms}
       + [Getting Started](/help/edge/docs/forms/tutorial.md)
       + [Create a form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/create-forms.md)
       + [Set up your Google Sheets or Microsoft Excel files to start accepting data​](/help/edge/docs/forms/submit-forms.md)
@@ -843,13 +845,13 @@ user-guide-title: AEM as a Cloud Service
       + [Customize the look of your forms​](/help/edge/docs/forms/style-theme-forms.md)
       + [Use rules to add dynamic behaviour to a form](/help/edge/docs/forms/rules-forms.md)
       + [Show a custom thank you message after form submission](/help/edge/docs/forms/thank-you-page-form.md)
-    + Capabilities {#advanced-features-eds-forms}
-      + [Form fragments](/help/edge/docs/forms/form-fragments.md)
+    + Capabilities {#advanced-features-edge-delivery-services-forms}
+      + [Use Form fragments](/help/edge/docs/forms/form-fragments.md)
       + [Add repeatable sections to a form​](/help/edge/docs/forms/repeatable-forms.md)
-      + [Translation](/help/edge/docs/forms/translate-forms.md)
-      + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+      + [Translate your form](/help/edge/docs/forms/translate-forms.md)
+      + [Use reCAPTCHA to protect your forms](/help/edge/docs/forms/recaptacha-forms.md)
       + [Custom Components](/help/edge/docs/forms/custom-components-forms.md)
-      + [Real time user monitoring for forms](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
+      + [Real Use Monitoring for forms](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
     + References {#forms-references}
       + [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
   + Edge Delivery Resources {#resources}
@@ -1151,8 +1153,6 @@ user-guide-title: AEM as a Cloud Service
   + Author Tier {#author-tier}
     + [Accessing the Author Tier](/help/implementing/author-tier/accessing-the-author-tier.md)
     + [Securing the Author Tier](/help/implementing/author-tier/securing-the-author-tier.md)
-  + Preview Tier {#preview-tier}
-    + [Configuring OSGi Settings for the Preview Tier](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
   + Content Delivery Overview {#content-delivery}
     + [Content Delivery Flow](/help/implementing/dispatcher/overview.md)
     + [Dispatcher in the Cloud](/help/implementing/dispatcher/disp-overview.md)

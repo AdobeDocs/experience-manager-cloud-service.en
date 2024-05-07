@@ -72,7 +72,7 @@ You require the following to create an Adaptive Form:
 
 1. (Optional) In the Data Tab, select a data model:
 
-    * **Form data model**: A [Form Data Model](data-integration.md) lets you integrate entities and services from disparate data sources to an Adaptive Form. Choose Form Data Model if the Adaptive Form that you are creating involves fetching and write data from and to multiple data source.
+    * **Form data model**: A [Form Data Model(FDM)](data-integration.md) lets you integrate entities and services from disparate data sources to an Adaptive Form. Choose Form Data Model (FDM) if the Adaptive Form that you are creating involves fetching and write data from and to multiple data source.
     
     * **JSON Schema**: [JSON schema](adaptive-form-json-schema-form-model.md) Our Core-Components-based Adaptive Form allows for seamless integration with your organization's back-end system by providing the ability to associate a JSON schema, which represents the structure of the data being produced or consumed. This association enables authors to dynamically add content to the Adaptive Form using the elements of the schema. The elements of the schema are easily accessible in the Data Model Objects tab of the Content browser during the authoring process, and all fields are automatically added to any created Adaptive Form.
 
@@ -92,7 +92,7 @@ You require the following to create an Adaptive Form:
     * **[!UICONTROL Name:]** Specifies the name of the form. A node with the specified name is created in the repository. As you start typing a title, value for the name field is automatically generated. You can change the suggested value. The name field can include only alphanumeric characters, hyphens, and underscores. All the invalid inputs are replaced with a hyphen.
     * **[!UICONTROL Path:]** Specifies the location at which the Adaptive Form is to be saved. You can save the Adaptive Form directly at `/content/dam/formsanddocuments` or create a folder such as `/content/dam/formsanddocuments/adaptiveforms` to save an Adaptive Form. Ensure that you create the folder before using it in the path. The **[!UICONTROL Path]** field does not create a folder automatically. 
 
-1. Select **[!UICONTROL Create]**. An Adaptive Form is created and opens in the Adaptive Forms editor. The editor displays the contents available in the template.  Based on the type of Adaptive Form, the form elements present in the associated <!--XFA form template, XML schema or --> JSON schema or Form Data Model are displayed in the **[!UICONTROL Data Model Objects]** tab of the **[!UICONTROL Content Browser]** in the sidebar. 
+1. Select **[!UICONTROL Create]**. An Adaptive Form is created and opens in the Adaptive Forms editor. The editor displays the contents available in the template.  Based on the type of Adaptive Form, the form elements present in the associated <!--XFA form template, XML schema or --> JSON schema or Form Data Model (FDM) are displayed in the **[!UICONTROL Data Model Objects]** tab of the **[!UICONTROL Content Browser]** in the sidebar. 
 
 Now, you can drag-and-drop the [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#components) or schema elements to build your Adaptive Form.  
 
@@ -101,7 +101,7 @@ Now, you can drag-and-drop the [Adaptive Forms Core Components](https://experien
 
 1. Select the Adaptive Form and select ![Page information](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
 
-1. Go to the **[!UICONTROL Form Model]** tab and choose a form model. If the Adaptive Form is without a form model, you have the freedom to choose either a JSON schema or a form data model. On the other hand, if the Adaptive Form is already based on a form model, you have the option to switch to another form model of the same type. For instance, if the form is using a JSON schema, you can easily switch to another JSON schema, and similarly if the form is using a Form Data Model, you can switch to another Form Data Model. 
+1. Go to the **[!UICONTROL Form Model]** tab and choose a form model. If the Adaptive Form is without a form model, you have the freedom to choose either a JSON schema or a form data model (FDM). On the other hand, if the Adaptive Form is already based on a form model, you have the option to switch to another form model of the same type. For instance, if the form is using a JSON schema, you can easily switch to another JSON schema, and similarly if the form is using a Form Data Model (FDM), you can switch to another Form Data Model (FDM). 
 
 1. Select **[!UICONTROL Save]** to save the properties.
 
@@ -146,7 +146,7 @@ You require the following to create an Adaptive Form:
 
 1. (Optional) In the **[!UICONTROL Data]** tab, select a data model:
 
-   * **Form data model**: A [Form Data Model](data-integration.md) lets you integrate entities and services from disparate data sources to an Adaptive Form. Choose Form Data Model if the Adaptive Form that you are creating involves fetching and write data from and to multiple data source.
+   * **Form data model**: A [Form Data Model (FDM)](data-integration.md) lets you integrate entities and services from disparate data sources to an Adaptive Form. Choose Form Data Model (FDM) if the Adaptive Form that you are creating involves fetching and write data from and to multiple data source.
    
    * **JSON Schema**: [JSON schema](adaptive-form-json-schema-form-model.md) represents the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms and all the fields are also added to created Adaptive Form.
 
@@ -174,7 +174,7 @@ You require the following to create an Adaptive Form:
 
 1. Select **[!UICONTROL Create]**. An Adaptive Form is created and opens in the Adaptive Forms editor. The editor displays the contents available in the template. It also displays the sidebar to customize the created form according to the needs.
 
-   Based on the type of Adaptive Form, the form elements present in the associated <!--XFA form template, XML schema or --> JSON schema or Form Data Model are displayed in the **[!UICONTROL Data Model Objects]** tab of the **[!UICONTROL Content Browser]** in the sidebar. You can also drag-drop these elements to build your Adaptive Form.
+   Based on the type of Adaptive Form, the form elements present in the associated <!--XFA form template, XML schema or --> JSON schema or Form Data Model (FDM) are displayed in the **[!UICONTROL Data Model Objects]** tab of the **[!UICONTROL Content Browser]** in the sidebar. You can also drag-drop these elements to build your Adaptive Form.
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -227,13 +227,13 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model-foundation-components}
 
-You can change the form model for an Adaptive Form (JSON-based or Form Data Model). You cannot change from one form model to another.
+You can change the form model for an Adaptive Form (JSON-based or Form Data Model (FDM)). You cannot change from one form model to another.
 
 1. Select the Adaptive Form and select the **Properties** icon.
 1. Open the **[!UICONTROL Form Model]** tab and do one the following.
 
-    * If the Adaptive Form is without a form model, you can choose another form model and accordingly select <!-- a form template, --> XML or JSON schema, or form data model.
-    * If the Adaptive Form is based on a form model, you can choose another <!-- form template, --> XML or JSON schema, or Form Data Model for the same form model.
+    * If the Adaptive Form is without a form model, you can choose another form model and accordingly select <!-- a form template, --> XML or JSON schema, or form data model (FDM).
+    * If the Adaptive Form is based on a form model, you can choose another <!-- form template, --> XML or JSON schema, or Form Data Model (FDM) for the same form model.
 
 1. Select **[!UICONTROL Save]** to save the properties.
 
@@ -243,8 +243,8 @@ You can also modify the form model properties from the Adaptive Form editor or A
 1. Click ![Configure Icon](/help/forms/assets/configure-icon.svg) icon to open the **[!UICONTROL Properties]** of the Adaptive Form container.
 1. Select the **[!UICONTROL Data Model]** tab and do one the following:
 
-    * If the Adaptive Form is without a form model, you can choose a form model and accordingly select <!-- a form template, --> XML or JSON schema, or form data model.
-    * If the Adaptive Form is based on a form model, you cannot change the form model. You can choose another <!-- form template, --> XML or JSON schema, or Form Data Model for the same form model as applicable.
+    * If the Adaptive Form is without a form model, you can choose a form model and accordingly select <!-- a form template, --> XML or JSON schema, or form data model (FDM).
+    * If the Adaptive Form is based on a form model, you cannot change the form model. You can choose another <!-- form template, --> XML or JSON schema, or Form Data Model (FDM) for the same form model as applicable.
 1. Select ![Save](/help/forms/assets/check-button.png) to save the properties.
 
  ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png){width="100%" align="center"}

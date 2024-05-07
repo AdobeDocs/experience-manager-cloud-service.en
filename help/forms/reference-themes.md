@@ -6,7 +6,7 @@ exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
 ---
 # Reference Assets for Forms as a Cloud Service {#reference-themes}
 
-You can get the reference themes, templates, and form data models by installing the [Reference Assets package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). It help quickly start and accelerate your Adaptive Forms development. You can use [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) to deploy this package to your AEM Forms as a Cloud Service environment. 
+You can get the reference themes, templates, and form data model (FDM) by installing the [Reference Assets package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). It help quickly start and accelerate your Adaptive Forms development. You can use [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) to deploy this package to your AEM Forms as a Cloud Service environment. 
 
 The reference assets included in the package are: 
 
@@ -109,7 +109,7 @@ The basic template helps you quickly create an enrollment form.
 
 The basic template provides an empty canvas for you to create initial structure for adaptive forms for your organization. 
 
-## Form Data Models
+## Form Data Model (FDM)
 
 ### Microsoft® Dynamics 365
 
