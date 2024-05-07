@@ -213,7 +213,7 @@ Experience Manager Guides now allows you to create language groups and easily tr
 
 For example, if you need to translate your content for some countries in Europe, you can create a language group for European languages like English (EN), French (FR), German (DE), Spanish (ES), and Italian (IT).
 
-![translation panel](../assets/guides/translation-languages-2404.png)
+![translation panel](/help/release-notes/assets/guides/translation-languages-2404.png)
 
 *Select the language groups or languages you want to translate your documents.* 
 
@@ -233,13 +233,13 @@ Learn how to [translate documents from the Web Editor](https://experienceleague.
 
 Now, you have an enhanced experience while filtering files. The revamped functionality to filter files provides an improved way to effortlessly search and navigate through files. 
 
-![search files in repository view](../assets/guides/repository-filter-search-2404.png)
+![search files in repository view](/help/release-notes/assets/guides/repository-filter-search-2404.png)
 
 *Search for the files containing the text `general purpose.`*
 
 Enjoy benefits such as quicker access to relevant files and a more intuitive user interface, making your search experience smoother and more efficient. 
 
-![quick search filter ](../assets/guides/repository-filter-search-quick.png)
+![quick search filter ](/help/release-notes/assets/guides/repository-filter-search-quick.png)
 
 *Use the quick filters to search for DITA and Non-DITA files.*
 
@@ -257,7 +257,7 @@ In addition to the existing out-of-the-box connectors, Experience Manager Guides
 
 You can easily copy and paste a sample data query in the generator to create a content snippet or topic. With this feature, you don't have to remember the syntax or create a  query manually. Instead of manually typing the query, you can copy and paste a sample query, edit it, and use it to fetch the data per your requirements. 
 
-![insert content snippet dialog box](../assets/guides/insert-content-snippet.png)
+![insert content snippet dialog box](/help/release-notes/assets/guides/insert-content-snippet.png)
 
  *Copy and edit a sample query to create the content snippet.*
 
