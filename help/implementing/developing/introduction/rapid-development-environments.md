@@ -83,31 +83,32 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    aio plugins:update
    ```
 
-1. Configure the cloud manager plugin to use your organization, program and environment. Below setup command will interactively provide the user with a list of programs in their origanization, and show RDE environments in that program to choose from.
-
+1. Configure the RDE plugin to use your organization, program and environment. Below setup command will interactively provide the user with a list of programs in their origanization, and show RDE environments in that program to choose from.
    ```
    aio login
    aio aem:rde:setup
    ```
-  
-  The setup command will ask if
-  
-  ```
+   
+### The Interactive Setup
+  The setup command will ask if the provided configuration shall be stored locally or globally.
+   
+   ```
    Setup the CLI configuration necessary to use the RDE commands.
    ? Do you want to store the information you enter in this setup procedure locally? (y/N)
    ```
- 
- Choose `no` to 
+   
+   Choose `no` to 
    - store the organization, program and environment globally in your aio configuration.
    - work with a single RDE only.
-
+   
    Choose `yes` to
    - store the organization, program and environment locally in the current directory, in a `.aio` file.
    - work with many RDEs, so that switching the to another directory will use that configuration instead.
    - work with a CLI based environment.
 
+
    Once local or global configuration is selected, the setup command will try to read your oriagnization ID from your current login and then read the programs of your organization. In case the organization cannot be found, you can enter it manually along with some guidance.
-  
+   
   ```
    Selected only organization: XYXYXYXYXYXYXYXXYY
    retrieving programs of your organization ...
@@ -115,30 +116,7 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    
    Once the programs are retrieved, the user can select from the list and also type to filter.
    When the program was selected, a list of RDE environments is provided to choose from.
-   In case there is only one program and/or RDEenvironment avialable, it is selected automatically.
-
-1. This step requires you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
-
-   Alternatively, you can confirm that you have this developer role if you can log in to the developer console by running this command:
-
-   `aio cloudmanager:environment:open-developer-console`
-
-   >[!TIP]
-   >
-   >If you see the `Warning: cloudmanager:list-programs is not a aio command.` error, you must install the [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) by running the command below:
-   >
-   >```
-   >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
-   >```
-
-1. Verify that the login was completed successfully by running
-
-   `aio cloudmanager:list-programs`
-
-   This should list all programs under your configured organization.
-
-   
-For more information and demonstration, watch the video tutorial [how to set up an RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
+   In case there is only one program and/or RDEenvironment available, it is selected automatically.
 
 ## Using RDE while Developing a New Feature {#using-rde-while-developing-a-new-feature}
 
@@ -552,3 +530,26 @@ Forms developers can use AEM Forms Cloud Service Rapid Development Environment t
 ## RDE tutorial
 
 To learn about RDE in AEM as a Cloud Service, see the video tutorial that demonstrates [how to set it up, how to use it, and the development life cycle (01:25)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html).
+
+# Troubleshooting
+## aio RDE plugin
+### errors regarding insufficient permissions
+To use the RDE plugn, it requires you to be a member of the Cloud Manager **Developer - Cloud Service** Product Profile. See [this page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) for more details.
+
+Alternatively, you can confirm that you have this developer role if you can log in to the developer console by running this command:
+
+   `aio cloudmanager:environment:open-developer-console`
+
+   >[!TIP]
+   >
+   >If you see the `Warning: cloudmanager:* is not a aio command.` error, you must install the [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) by running the command below:
+   >
+   >```
+   >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+   >```
+
+Verify that the login was completed successfully by running
+
+   `aio cloudmanager:list-programs`
+
+   This should list all programs under your configured organization and confirm that you have the correct role assigned.
