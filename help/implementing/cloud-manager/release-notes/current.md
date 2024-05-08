@@ -19,12 +19,8 @@ The release date for Cloud Manager release 2024.5.0 in AEM as a Cloud Service is
 
 ## What's New {#what-is-new}
 
-* The deletion operation has been improved for [Edge Delivery](/help/edge/overview.md) websites by updating the domain mappings from the program which is related to that site.
-  * If no more sites are mapped, the mapping is deleted.
-* Deployment tracking has been enhanced by providing real-time status updates during the critical startup phase of an AEM instance.
-  * This feature ensures that you have complete visibility into your deployment progress, enabling better decision-making and operational efficiency.
-* The [network infrastructure](/help/security/configuring-advanced-networking.md) listing has been enhanced to display all connected environments without region-based filtering to provide a more comprehensive view.
-* Enhanced error messages for code build issues allow easier identification of root causes and next actionable steps.
+* The [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md) is now accessible via a distinct entry point in the left [navigation.](/help/implementing/cloud-manager/navigation.md)
+* When the provisioning of a development environment fails, the Cloud Manager UI now provides feedback.
 
 ## Early Adoption Program {#early-adoption}
 
