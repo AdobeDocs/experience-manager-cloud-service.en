@@ -45,6 +45,13 @@ The Best Practices Analyzer can be downloaded as a zip file from the Software Di
 >[!NOTE]
 >Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
 
+## Source Environment Connectivity {#source-environment-connectivity}
+
+The source AEM instance may be running behind a firewall where it can only reach certain hosts which have been added to an Allow List. To automatically upload the BPA generated report to Cloud Acceleration Manager successfully, the following endpoints need to be accessible from the instance that is running AEM:
+
+* The Azure blob storage service: `casstorageprod.blob.core.windows.net`
+
+
 ## Viewing the Best Practices Analyzer Report {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 and later {#aem-later-versions}
