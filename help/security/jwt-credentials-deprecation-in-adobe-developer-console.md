@@ -13,9 +13,9 @@ Adobe customers use [Adobe Developer Console](https://developer.adobe.com/consol
 
 This article provides some additional context about how AEM as a Cloud Service should handle the deprecation.
 
-Currently, the main takeaway is that AEM features do not yet support the new OAuth Server-to-Server credentials. Support is coming soon&mdash;by mid-April 2024 through an AEM release for AEM as a Cloud Service. You may have received an email with instructions to migrate your JWT credentials, but rest assured that you can and should hold off on the credentials migration until AEM supports the new OAuth Server-to-Server credential type.
+Currently, the main takeaway is that AEM features do not yet support the new OAuth Server-to-Server credentials. Support is coming soon&mdash;by mid-May 2024 through an AEM release for AEM as a Cloud Service. You may have received an email with instructions to migrate your JWT credentials, but rest assured that you can and should hold off on the credentials migration until AEM supports the new OAuth Server-to-Server credential type.
 
-The sections below list the scenarios where customers must (or sometimes must not) replace their Service Account (JWT) credentials with OAuth Server-to-Server credentials, once AEM supports them in mid-April. [Read how](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) to replace the credentials in the future.
+The sections below list the scenarios where customers must (or sometimes must not) replace their Service Account (JWT) credentials with OAuth Server-to-Server credentials, once AEM supports them in mid-May. [Read how](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) to replace the credentials in the future.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ The sections below list the scenarios where customers must (or sometimes must no
 
 ## Integrating AEM with Other Adobe Solutions {#integrating-aem-with-other-adobe-solutions}
 
-**Action**: Wait to migrate until after late April 2024, when AEM supports it (this article will be updated at that time)
+**Action**: Wait to migrate until after mid-May 2024, when AEM supports it (this article will be updated at that time)
 
 **Relevant AEM versions**: AEM as a Cloud Service
 
@@ -32,15 +32,15 @@ AEM customers use the AEM Author UI to configure integrations with all other Ado
 
 ![Integrating AEM with other solutions](/help/security/assets/jwt-deprecation.png)
 
-As an example, here are [the instructions](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html?lang=en) for configuring the integration with Adobe Target. The API key in the [Completing the IMS Configuration in AEM](https://docs.mktossl.com/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims.html#completing-the-ims-configuration-in-aem) section should be migrated to the OAuth Server-to-Server credential type, once AEM supports those credentials in mid-April. Those instructions are going to be updated in mid-April to help you apply the new OAuth Server-to-Server credentials.
+As an example, here are [the instructions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims) for configuring the integration with Adobe Target. The API key in the [Completing the IMS Configuration in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims#completing-the-ims-configuration-in-aem) section should be migrated to the OAuth Server-to-Server credential type, once AEM supports those credentials in mid-May. Those instructions are going to be updated in mid-May to help you apply the new OAuth Server-to-Server credentials.
 
 ## Cloud Manager APIs {#cloud-manager-apis}
 
-**Action**: Wait to migrate until after late April 2024, when AEM supports it (this article will be updated at that time).
+**Action**: Migrate to Server-to-Server OAuth credentials.
 
 **Relevant AEM versions**: AEM as a Cloud Service
 
-Customers create Adobe Developer Console projects so they can invoke [Cloud Manager APIs](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). The credentials in the Adobe Developer project should be migrated to the OAuth Server-to-Server credential type, once AEM and Cloud Manager support it. 
+Customers create Adobe Developer Console projects so they can invoke [Cloud Manager APIs](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). The credentials in the Adobe Developer project should be migrated to the OAuth Server-to-Server credential type before the deprecated JWT credentials expire in January 2025.
 
 ## Auto-generated projects {#autogen-projects}
 
