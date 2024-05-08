@@ -87,7 +87,7 @@ Folder structure to save data is `/folder_name/form_name/year/month/date/submiss
 To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive Form:
 
 1. [Create a SharePoint List Configuration](#create-sharepoint-list-configuration): It connects AEM Forms to your Microsoft&reg; Sharepoint List Storage.
-1. [Use the Submit using Form Data Model in an Adaptive Form](#use-submit-using-fdm): It connects your Adaptive Form to configured Microsoft&reg; SharePoint.
+1. [Use the Submit using Form Data Model (FDM) in an Adaptive Form](#use-submit-using-fdm): It connects your Adaptive Form to configured Microsoft&reg; SharePoint.
 
 ### Create a SharePoint List Configuration {#create-sharepoint-list-configuration}
 
@@ -111,14 +111,14 @@ To connect AEM Forms to your Microsoft&reg; Sharepoint List:
 1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft&reg; SharePointList.
 
 
-### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
+### Use the Submit using Form Data Model (FDM) in an Adaptive Form {#use-submit-using-fdm}
 
 You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List. Perform the following steps to use a SharePoint List in an Adaptive Form as:
 
-1. [Create a Form Data Model using Microsoft&reg; SharePoint List configuration](/help/forms/create-form-data-models.md)
-1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Create a Form Data Model (FDM) using Microsoft&reg; SharePoint List configuration](/help/forms/create-form-data-models.md)
+1. [Configure the Form Data Model (FDM) to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Create an Adaptive Form](/help/forms/creating-adaptive-form-core-components.md)
-1. [Configure Submit action using a Form Data Model](/help/forms/using-form-data-model.md)
+1. [Configure Submit action using a Form Data Model (FDM)](/help/forms/using-form-data-model.md)
 
 When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
 
