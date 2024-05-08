@@ -104,12 +104,12 @@ In the [!UICONTROL Edit Adaptive Forms Container] dialog, you can specify the fo
   * **Prefill Service**: You can use the prefill service to auto fill fields of an Adaptive Form using existing data. When a user opens a form, the values for those fields are prefilled. For information on prefill service, see [Prefill Adaptive Form fields](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
   * **Client library Category**: Specify the [JavaScript functions](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) that are used in expressions and supported by Adaptive Forms.
 * **Data Model**: A Data Model lets you integrate entities and services from disparate data sources to an Adaptive Form. Choose **[!UICONTROL Form Data Model]** if the Adaptive Form that you are creating involves fetching and writing data from and to multiple data source.
-  * **Form data model**: A Form Data Model lets an Adaptive Form communicate with disparate data sources. For information, on configuring a data source, see [Configure data sources](/help/forms/configure-data-sources.md).
+  * **Form data model**: A Form Data Model (FDM) lets an Adaptive Form communicate with disparate data sources. For information, on configuring a data source, see [Configure data sources](/help/forms/configure-data-sources.md).
   * **Schema**: Schema represents the structure in which data is produced or consumed by the back-end system in your organization. You can [associate the schema to an Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) and use its elements to add dynamic content to an Adaptive Form.
 
     >[!NOTE]
     >
-    > After configuring the Form data model, you cannot change the associated Form Model. However, it is possible to modify the schema associated with the Form data model. 
+    > After configuring the Form data model (FDM), you cannot change the associated Form Model. However, it is possible to modify the schema associated with the Form data model (FDM). 
 
 * **Submission Tab**
    
@@ -119,7 +119,7 @@ In the [!UICONTROL Edit Adaptive Forms Container] dialog, you can specify the fo
     * **Submit Action**: A submit action is triggered when a user clicks the Submit button on an Adaptive Form. You can [configure the submit action on Adaptive Form](/help/forms/configuring-submit-actions.md). Adaptive forms provide the following submit actions out of the box:
       * Submit to REST endpoint
       * Send email
-      * Submit using Form Data Model
+      * Submit using Form Data Model (FDM)
       * Invoke an AEM Workflow
       * Submit to SharePoint
       * Submit to OneDrive
