@@ -305,6 +305,7 @@ The following video illustrates the end-to-end process from accessing the Contex
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428407)
 
+<!--
 ### Disable Contextual Search {#disable-contextual-search}
 
 Administrators also have the option to disable Contextual Search for users in your organization. To do so, execute the following steps:
@@ -312,10 +313,11 @@ Administrators also have the option to disable Contextual Search for users in yo
 1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
 
 1. In the [!UICONTROL Contextual Search] section, turn off the **[!UICONTROL Enable Contextual Search for your organization]** toggle to disable the Contextual Search feature for all users in your organization.  
+-->
 
 ### Contextual Search feedback {#contextual-search-feedback}
 
-If you need to provide feedback on the Contextual Search feature, click ![Contextual Search icon](assets/do-not-localize/contextual-search-icon.png)  and click the Feedback icon. Select the feedback type, specify the subject and description, and click **[!UICONTROL Submit]**.
+If you need to provide feedback on the Contextual Search feature, click ![Contextual Search icon](assets/do-not-localize/Smock_Help_18_N.svg) and click the Feedback icon. Select the feedback type, specify the subject and description, and click **[!UICONTROL Submit]**.
 
 ![Contextual Search feedback](assets/contextual-search-feedback.png)
 
