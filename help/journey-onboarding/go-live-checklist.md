@@ -1,8 +1,8 @@
 ---
 title: Go-Live Checklist
 description: Learn about all the elements that need to be in place in order to have a successful Go-Live with AEM as a Cloud Service
+exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
 ---
-
 # Go-Live Checklist {#Go-Live-Checklist}
 
 Review this list of activities to ensure that you perform a smooth and successful Go-Live.
