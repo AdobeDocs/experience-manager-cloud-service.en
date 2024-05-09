@@ -56,6 +56,11 @@ The source AEM instance may be running behind a firewall where it can only reach
 
 ### Adobe Experience Manager 6.3.0 and later {#aem-later-versions}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_bpa_upload_setup"
+>title="Automatically upload Best Practices Analyzer report to CAM"
+>abstract="Provide the BPA upload key to automatically upload the generated BPA report to Cloud Acceleration Manager (CAM)"
+
 Follow this section to learn how to view the Best Practices Analyzer report:
 
 1. Select Adobe Experience Manager and navigate to tools > **Operations** > **Best Practices Analyzer**.
