@@ -43,10 +43,10 @@ To configure hCaptcha with AEM Forms, you need to obtain [hCaptcha sitekey and s
 
         ![Configure the Cloud Service to connect your AEM Forms environment with hCaptcha](assets/create-hcaptcha-config.png)
 
-    > [!NOTE] 
-    > Users need not to modify [Client-side JavaScript validation URL](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) and [Server-side validation URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) as they are already prefilled for hCaptcha validation.
+  >[!NOTE]
+  > Users need not to modify [Client-side JavaScript validation URL](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) and [Server-side validation URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) as they are already prefilled for hCaptcha validation. For some countries, the endpoints may differ, visit [hCaptcha FAQs](https://docs.hcaptcha.com/faq#does-hcaptcha-support-access-by-users-in-china) for more information.
 
-   Once the hCAPTCHA service is configured, it is available for use in an Adaptive Form.
+Once the hCAPTCHA service is configured, it is available for use in an Adaptive Form.
 
 ## Use hCaptcha in an Adaptive Form{#using-hCaptcha-foundation-components}
 
@@ -73,10 +73,9 @@ To configure hCaptcha with AEM Forms, you need to obtain [hCaptcha sitekey and s
         * On a user action.
     * **[UICONTROL Captcha Service]:** Select your Captcha service, here you select hCaptcha service.
     * **[!UICONTROL Captcha Configuration]:** Select a Cloud Configuration configured for hCaptcha.
-
         >[!NOTE]
         >You can have multiple Cloud Configurations in your environment for a similar purpose. So, choose the service carefully. If no service is listed, see [Connect your AEM Forms environment with hCaptcha](#connect-your-forms-environment-with-hcaptcha-service) to learn how to create a Cloud Service that connects your AEM Forms environment with hCaptcha service.
-        
+
     * **Error Message:** Provide the error message to display to the user when the Captcha submission fails.
     * **Captcha Size:** You select the display size of the hCaptcha challenge dialog. Use the **[!UICONTROL Compact]** option to display a small sized and the **[!UICONTROL Normal]** option to display a relatively large-size hCaptcha challenge dialog or **[!UICONTROL Invisible]** to validate hCaptcha without explicitly rendering the checkbox widget on the user interface.
 
