@@ -34,7 +34,7 @@ You can publish assets to AEM and Dynamic Media while uploading assets to a fold
 To publish assets during upload to a folder with Dynamic Media Publish Mode set to **Upon Activation**: 
 
 1. Click **Add Assets** > **Browse** > **Browse Files** to navigate to the appropriate folder to upload assets. The **Publish Options** secton displays the **DM Publish Mode** as **Upon Activation**. 
-![Upload image upon activation](/help/assets/assets/upload-upon-activation.png)
+![Upload image upon activation](/help/assets/assets/upload-upon-activation1.png)
 2. Select **Publish to AEM and Dynamic Media** and click **Upload**. The assets are published to AEM and Dynamic Media at the same time. To see the updated publish status for these assets, see [Check Publish status](#check-publish-status). 
 
 ### Dynamic Media Publish Mode set to Immediate {#dynamic-media-publish-mode-set-to-immediate}
