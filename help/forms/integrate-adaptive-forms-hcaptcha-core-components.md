@@ -45,7 +45,7 @@ To integrate AEM Forms with hCaptcha service, perform the following steps:
 
         ![Configure the Cloud Service to connect your AEM Forms environment with hCaptcha](assets/create-hcaptcha-config.png)
 
-    >[!Note] 
+    >[!NOTE]
     > Users need not to modify [Client-side JavaScript validation URL](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) and [Server-side validation URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side) as they are already prefilled for hCaptcha validation.
 
    Once the hCAPTCHA service is configured, it is available for use in an [Adaptive Form based on Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
@@ -72,7 +72,7 @@ To integrate AEM Forms with hCaptcha service, perform the following steps:
     * **Captcha Size:** You can select the display size of the hCaptcha challenge dialog. Use the **[!UICONTROL Compact]** option to display a small sized and the **[!UICONTROL Normal]** option to display a relatively large-size hCaptcha challenge dialog or **[!UICONTROL Invisible]** to validate hCaptcha without explicitly rendering the checkbox widget on the user interface.
     * **[!UICONTROL Validation Message]:** Provide a validation message for your Captcha validation on form submission.
     * **[!UICONTROL Script Validation Message]** - This option allows you to enter a message to be displayed if the script validation fails.
-        >[!Note] 
+        >[!NOTE]
         >You can have multiple Cloud Configurations in your environment for a similar purpose. So, choose the service carefully. If no service is listed, see [Connect your AEM Forms environment with hCaptcha](#connect-your-forms-environment-with-hcaptcha-service) to learn how to create a Cloud Service that connects your AEM Forms environment with hCaptcha service.
     * **Error Message:** Provide the error message to display to the user when the Captcha submission fails.
 
@@ -83,8 +83,8 @@ Now, only legitimate forms, in which the form filler successfully clears the cha
 
 ## Frequently Asked Questions
 
-**Q: Can I use more than one Captcha component in an Adaptive Form?**
-**Ans:** Using more than one Captcha component in an Adaptive Form is not supported. Also, it is not recommended to use a Captcha component in a fragment or a panel marked for lazy loading.
+* **Q: Can I use more than one Captcha component in an Adaptive Form?**
+* **Ans:** Using more than one Captcha component in an Adaptive Form is not supported. Also, it is not recommended to use a Captcha component in a fragment or a panel marked for lazy loading.
 
 ## See Also {#see-also}
 
