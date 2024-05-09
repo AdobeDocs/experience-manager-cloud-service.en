@@ -69,9 +69,9 @@ Once the hCAPTCHA service is configured, it is available for use in an Adaptive 
     * **[!UICONTROL Title]:** Specify the title for your Captcha component, you can identify a form component easily with its unique name both in the form and in the rule editor.
     * **[!UICONTROL Validation Message]:** Provide a validation message for your Captcha validation on form submission.
     * **[!UICONTROL Validate Captcha]:** You can select one of the options to validate Captcha: 
-        * At form Submission, or 
+        * At form Submission 
         * On a user action.
-    * **[UICONTROL Captcha Service]:** Select your Captcha service, here you select hCaptcha service.
+    * **[!UICONTROL Captcha Service]:** Select your Captcha service, here you select hCaptcha service.
     * **[!UICONTROL Captcha Configuration]:** Select a Cloud Configuration configured for hCaptcha.
         >[!NOTE]
         >You can have multiple Cloud Configurations in your environment for a similar purpose. So, choose the service carefully. If no service is listed, see [Connect your AEM Forms environment with hCaptcha](#connect-your-forms-environment-with-hcaptcha-service) to learn how to create a Cloud Service that connects your AEM Forms environment with hCaptcha service.
