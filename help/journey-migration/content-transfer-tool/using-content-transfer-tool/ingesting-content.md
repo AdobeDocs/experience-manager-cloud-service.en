@@ -210,6 +210,8 @@ Node property values stored in MongoDB cannot exceed 16 MB. If a node value exce
 
 See the `Node property value in MongoDB` note in [Prerequisites for Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) for more information and a link to an Oak tool that could help find all the large nodes. Once all nodes with large sizes are remedied, run the extraction and ingestion again.
 
+To possibly avoid this restriction, run the [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) on the source AEM instance and review the findings it presents, particularly the ["Unsupported Repository Structure" (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) pattern.
+
 ### Ingestion Rescinded {#ingestion-rescinded}
 
 >[!CONTEXTUALHELP]
