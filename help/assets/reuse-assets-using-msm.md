@@ -380,3 +380,4 @@ Following are limitations of MSM for [!DNL Assets].
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
