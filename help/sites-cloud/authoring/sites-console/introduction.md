@@ -1,8 +1,8 @@
 ---
 title: The Sites Console
 description: Learn how to use the Sites console to manage and organize your AEM pages.
+exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 ---
-
 # The Sites Console {#sites-console}
 
 Learn how to use the **Sites** console to manage and organize your AEM pages.

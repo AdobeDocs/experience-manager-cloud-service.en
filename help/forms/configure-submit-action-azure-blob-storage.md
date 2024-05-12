@@ -3,8 +3,8 @@ Title: How to connect AEM Adaptive Forms with Azure Blob Storage?
 Description: Learn how to create an Azure Blob Storage Configuration in AEM Forms and use it within your Adaptive Forms for efficient data storage.
 keywords: Azure Blob Storage integration with AEM Forms, Submitting data to Azure Storage, Creating Azure Storage Configuration in AEM Forms, Using Azure Blob Storage in Adaptive Forms Submit Action
 feature: Adaptive Forms, Core Components
+exl-id: 0c9f8f85-c4e9-4c79-bd0b-abdcac99a2d4
 ---
-
 # Submit an Adaptive Form to Azure Blob Storage 
 
 The **[!UICONTROL Submit to Azure Blob Storage]**  Submit Action connects an Adaptive Form with a Microsoft&reg; Azure portal. You can submit the form data, files, attachments, or Document of Record to the connected Azure Storage containers. 
@@ -38,7 +38,16 @@ To connect AEM Forms to your Azure Storage containers:
 1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Azure Storage Account]** and **[!UICONTROL Azure Access key]**. 
     
     * You can retrieve `Azure Storage Account` name and `Azure Access key` from the Storage Accounts in the Microsoft&reg; Azure portal.
-    
+<!--
+
+    >[!NOTE]
+    >
+    > The URL for **[!UICONTROL Azure Blob Endpoint]** is automatically appended to the textbox when a value is entered for **[!UICONTROL Azure Storage Account]**. You can update the Azure Blob End Point URL with your custom domain. Steps to update URL for **[!UICONTROL Azure Blob End Point]**:
+    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+    > 1. [Map custom domain to azure blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-portal)
+-->
+
 1. Click **[!UICONTROL Save]**.
 
 Now, you can use this Azure Storage container configuration for the submit action in an Adaptive Form.

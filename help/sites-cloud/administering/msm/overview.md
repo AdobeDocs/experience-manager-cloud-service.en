@@ -138,6 +138,10 @@ MSM is directly accessible in the UI using various options from the appropriate 
 
 >[!NOTE]
 >
+>MSM can be used with both pages and [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md) as these fragments are part of an experience (page).
+
+>[!NOTE]
+>
 >Aspects of MSM functionality are used in several other AEM features such as Launches. In these cases the Live Copy is managed by that feature.
 
 ### Terms Used {#terms-used}

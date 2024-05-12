@@ -7,26 +7,21 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 
 The following section outlines the general Release Notes for [!DNL Workfront for Experience Manager enhanced connector].
 
-## Release Date {#release-date}
-
-The release date for the latest version 1.9.17 of [!DNL Workfront for Experience Manager enhanced connector] is February 7, 2024.
+The release date for the latest version 1.9.19 of [!DNL Workfront for Experience Manager enhanced connector] is April 12, 2024.
 
 ## Release highlights {#release-highlights}
 
-The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fixes:
+The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fix:
 
-* Enable toggle feature to allow AEM Cloud customers to configure and set up a connector.
-
-* Closing the `resourceResolver` without explicitly closing the underlying session causes session leaks in AEM instances. It is crucial to explicitely close the session, as auto-closing the Resource Resolver does not implicitly close the session.
+* Failure to close HTTP clients is causing out-of-memory issues.
 
 >[!NOTE]
 >
 >AEM 6.4 has reached the end of extended support. See our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/?lang=en).
 
-
 >[!IMPORTANT]
 >
->Adobe recommends you [upgrade to the latest 1.9.17 version](/help/assets/workfront-connector-install.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recommends you [upgrade to the latest 1.9.19 version](/help/assets/workfront-connector-install.md) of the [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Known Issues {#known-issues}
 
@@ -36,7 +31,18 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 
 ## Previous releases {#previous-releases}
 
-### January 2024 release {#january-2023-release}
+### March 2024 release {#march-2024-release}
+
+* Processing multi-asset uploads from Workfront encounters issues.
+* Not adding closing quotes when using Workfront to search for folders in Experience Manager results in `SERVER_ERROR`.
+
+### February 2024 release {#february-2024-release}
+
+* Enable toggle feature to allow AEM Cloud customers to configure and set up a connector.
+
+* Closing the `resourceResolver` without explicitly closing the underlying session causes session leaks in AEM instances. It is crucial to explicitely close the session, as auto-closing the Resource Resolver does not implicitly close the session.
+
+### January 2024 release {#january-2024-release}
 
 * The [!DNL Workfront] configuration in [!DNL CRX DE] currently does not store the `project ID`, causing errors when applying read-only permission. Learn more about how to [configure permissions](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
 
@@ -111,7 +117,6 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * Comment deletions in Workfront are now reflected in Experience Manager.
 
 * Capability to manage blocking net-new customers on Experience Manager as a Cloud Service from configuring the connector.
-
 
 ### January 2023 release {#january-2022-release}
 
