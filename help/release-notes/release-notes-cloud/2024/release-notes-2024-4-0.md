@@ -79,6 +79,14 @@ Experience Manager Assets now offers a simplified user experience by providing [
 
 You can now [assign or remove metadata form to multiple folders](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
 
+### New features in Admin view {#admin-view-new-features}
+
+**Link share configuration**
+
+A new improved user experience for [creating link shares](/help/assets/share-assets.md) along with a brand new set of configurations that let administrators customize the default behavior of this capability for your users.
+
+![Link Share Configuration](/help/assets/assets/config-email-service.png)
+
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
