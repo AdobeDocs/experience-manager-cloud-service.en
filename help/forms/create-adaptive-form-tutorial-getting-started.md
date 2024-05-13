@@ -1,5 +1,4 @@
 ---
-
 title: Getting started with Adaptive Forms.
 description: Learn how to create mobile-responsive Adaptive Forms with our step-by-step tutorial. These forms adapt seamlessly across devices, ensuring a smooth experience.
 keywords: Adaptive Forms, Responsive Forms, HTML5 Forms
@@ -8,9 +7,8 @@ role: User, Developer
 level: Beginner
 hide: yes
 hidefromtoc: yes
-
+exl-id: b59cb56c-9629-48e4-b5c9-a861013a1360
 ---
-
 # Create an Adaptive Form (Core Components) - Tutorial 
 
 In this day and age, users expect a mobile-friendly experience across all their interactions, and forms are no exception. Adaptive forms can help you create forms that are not only mobile-friendly but also improve user engagement and reduce the time it takes to complete them.
@@ -177,4 +175,4 @@ Goals:
 * Embed the adaptive form in an AEM Sites Page.
 * Embed the adaptive form in an external webpage (a non-AEM webpage hosted outside AEM).
 
---> 
+-->
