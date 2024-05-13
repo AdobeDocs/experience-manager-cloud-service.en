@@ -35,7 +35,7 @@ By the end of the tutorial, you will be able to:
 
 AEM Forms provides Foundation Components and Core Components to create forms experiences. Core Components is the modern and recommended approach to create any new forms experience. Why use Core Components? These components are lightweight, open-source (available on github), offer great Google Lighthouse and web vitals score, accessibility compliant, and bring all the familiar features of AEM Sites (like versioning and localization). In addition, these components are easier to style, you can easily customize their appearance as per the branding guidelines of your organization. These have no third-party dependencies, any developer with knowledge of JavaScript and CSS can easily customize these components. 
 
-![Why create Core Components based Adaptive Forms? These components are lightweight, easier to style, offer high lighthouse score, support accessiblity standards, easily customizable, open-sources, availble on github, no dependency on thirdparty libraries, and have almost no learning curve for AEM developers and AEM Authors On top tof it AEM Forms Core Components have all the features of AEM WCM Core Components.](/help/forms/assets/cc-core-components-benefits.png)
+![Why create Core Components based Adaptive Forms? These components are lightweight, easier to style, offer high lighthouse score, support accessiblity standards, easily customizable, open-sources, availble on github, no dependency on thirdparty libraries, and have almost no learning curve for AEM developers and AEM Authors On top tof it AEM Forms Core Components have all the features of AEM WCM Core Components.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
 ## Use Case: Streamlined Home Loan Pre-Qualification with Adaptive Forms
 
@@ -51,7 +51,7 @@ On-completion of the tutorial, your form would look and work like the following 
 
 ![Add a working form here](/help/forms/assets/cc-tutorial-final-form.png)
 
-## Setup a development environment
+## Setup development environment
 
 You can build and test the Adaptive Form directly on your local machine, before deploying it to a Cloud Service environment. Adobe provides an AEM SDK to for local development that lets you
 
@@ -75,9 +75,13 @@ Local development with AEM SDK saves you time and simplifies the development pro
 1. [Add the AEM Forms Add-on](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users): Download and install the AEM Forms add-on matching to the version of your AEM SDK from the [Software Distribution](https://experience.adobe.com/#/downloads) Portal. 
     ![install-aem-forms-add-on](/help/forms/assets/install-aem-forms-add-on.png)
 
-    +++Install AEM Forms Add-on
+    +++Install AEM Forms Add-on:
 
-        To install AEM Forms Add-on, stop AEM SDK, add AEM Forms add-on (.far) file to the `AEM SDK/crx-quickstart/install` folder, and restart AEM SDK.
+    To install AEM Forms Add-on:
+    
+    1. Stop AEM SDK. 
+    1. Add AEM Forms add-on (.far) file to the `AEM SDK/crx-quickstart/install` folder, 
+    1. Restart AEM SDK.
 
     +++
 
@@ -86,7 +90,9 @@ Local development with AEM SDK saves you time and simplifies the development pro
 
 1. [Add Adaptive Forms templates](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype): Use AEM Archetypes 48 or later to create a new AEM project and deploy it to your AEM SDK. The project adds Adaptive Forms templates to your AEM SDK. 
 
-    +++Add Adaptive Forms templates
+    ![Adaptive Form Templates](/help/forms/assets/adaptive-forms-templates.png)
+
+    +++Add Adaptive Forms templates to your AEM SDK:
 
     1. Run the below command to create an AEM project.
 
@@ -109,13 +115,12 @@ Local development with AEM SDK saves you time and simplifies the development pro
         
         ```
 
-    +++
-
     After deploying the AEM project, you can see Adaptive Forms templates in your environment. 
 
-    ![Adaptive Form Templates](/help/forms/assets/adaptive-forms-templates.png)
+    +++
 
-For a step-by-step guide on setting up your local AEM Forms development environment, refer [setup local development environment for AEM Forms](/help/forms/setup-local-development-environment.md)
+
+For detailed instructions and step-by-step guide on setting up your local AEM Forms development environment, refer the [setup local development environment for AEM Forms](/help/forms/setup-local-development-environment.md) article.
 
 
 
