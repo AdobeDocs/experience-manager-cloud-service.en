@@ -26,13 +26,11 @@ The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] cu
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
-<!-- ## Release Video {#release-video}
+## Release Video {#release-video}
 
 Have a look at the April 2024 Release Overview video for a summary of the features added in the 2024.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -81,6 +79,13 @@ Experience Manager Assets now offers a simplified user experience by providing [
 
 You can now [assign or remove metadata form to multiple folders](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
 
+### New features in Admin view {#admin-view-new-features}
+
+**Link share configuration**
+
+A new improved user experience for [creating link shares](/help/assets/share-assets.md) along with a brand new set of configurations that let administrators customize the default behavior of this capability for your users.
+
+![Link share configuration](/help/assets/assets/config-email-service.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
