@@ -293,3 +293,4 @@ See [how to configure [!DNL Assets] to use it with [!DNL Adobe Asset Link]](http
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -41,7 +41,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_errorPages:
+  errorPages:
     spa:
       title: the error page
       icoUrl: https://www.example.com/error.ico
