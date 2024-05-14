@@ -90,3 +90,4 @@ Conditions can be defined using [JsonLogic schema.](https://jsonlogic.com/) If t
 #### Condition True {#true}
 
 ![Shown text field](assets/shown.png)
+

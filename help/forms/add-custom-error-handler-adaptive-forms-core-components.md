@@ -174,7 +174,7 @@ Using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs
 
 >[!NOTE]
 >
-> * To use error handlers with the Rule Editor's Invoke service action, configure Adaptive Forms with a form data model. 
+> * To use error handlers with the Rule Editor's Invoke service action, configure Adaptive Forms with a form data model (FDM). 
 > * A default error handler is provided to display error messages on fields if the error response is in the standard schema. You can also call the default error handler from the custom error handler function. 
 
 Using Rule Editor, you can:
@@ -240,16 +240,17 @@ Let's add the following code to the JavaScript file to display the response and 
         * @errorHandler
         */
         function customErrorHandler(response, headers, globals)
-        {
-            console.log("Custom Error Handler processing start...");
-            console.log("response:"+JSON.stringify(response));
-            console.log("headers:"+JSON.stringify(headers));
-            alert("CustomErrorHandler - Enter valid PetId.")
-            globals.invoke('defaultErrorHandler',response, headers) 
-            console.log("Custom Error Handler processing end...");
-        }
+    {
+        console.log("Custom Error Handler processing start...");
+        console.log("response:"+JSON.stringify(response));
+        console.log("headers:"+JSON.stringify(headers));
+        alert("CustomErrorHandler - Enter valid PetId.")
+        console.log("Custom Error Handler processing end...");
+        return true; // true - call default error handler, false - don't call default error handler.
+    }
     ```
-    
+    In the code above, `return true` invokes the default error handler automatically. To prevent the default error handler from being called by default, include `return false`.
+
     >[!NOTE]
     >
     > In the `.content.xml` file, add `categories = [custom-errorhandler-name]`. For example, in this case, [custom-errorhandler-name] is provided as `customfunctionsdemoV2`.

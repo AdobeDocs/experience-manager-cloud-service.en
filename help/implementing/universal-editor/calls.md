@@ -8,8 +8,6 @@ exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 
 Learn about the different types of calls made to your app by the Universal Editor to help you when debugging.
 
-{{universal-editor-status}}
-
 ## Overview {#overview}
 
 The Universal Editor communicates with your instrumented app through a series of defined calls. This is transparent to and has no effect on the end user experience.
@@ -379,3 +377,4 @@ The Universal Editor iterates over the content and generates a list of reference
 ## Additional Resources {#additional-resources}
 
 * [Universal Editor Events](/help/implementing/universal-editor/events.md)
+

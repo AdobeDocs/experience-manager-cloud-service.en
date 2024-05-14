@@ -30,7 +30,7 @@ To get a good understanding of the basic use of AEM, this document is based on t
 
 Whenever a user first accesses a console, a product navigation tutorial is started. Take a minute to select through to get a good overview of the basic handling of AEM.
 
-![Navigation tutorial](assets/tutorial.png)
+![Navigation tutorial](assets/basic-handling-tutorial.png)
 
 Select **Next** to advance to the next page of the overview. Select **Close** or select outside of the overview dialog to close.
 
@@ -42,7 +42,7 @@ You can navigate between the consoles using the global navigation panel. This is
 
 You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
 
-![Navigation panel top bar](assets/basic-handling-navigation-bar.png)
+![Navigation panel top bar](assets/basic-handling-navigation-options.png)
 
 Global navigation has two panels, represented by icons at the left-margin of the screen:
 
@@ -69,10 +69,11 @@ From Navigation the consoles available are:
 |Assets|The Assets console lets you import and manage [digital assets such as images, videos, documents, and audio files](/help/assets/overview.md). These assets can then be used by any site running on the same AEM instance. You can also create and manage [Content Fragments](/help/assets/content-fragments/content-fragments.md) from the Assets console.|
 |Personalization|This console provides a framework of tools for [authoring targeted content and presenting personalized experiences](/help/sites-cloud/authoring/personalization/overview.md).|
 |Content Fragments|[Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md) allow you to design, create, curate and publish page-independent content. They allow you to prepare structured content ready for use in multiple locations/over multiple channels, and ideal for both page authoring and headless delivery.|
+|Generate Variations|[Generate Variations](/help/generative-ai/generate-variations.md) uses generative Artificial Intelligence (AI) to create content variations based on prompts; these prompts are either provided by Adobe or created, and managed, by users.|
 
 ## Tools Panel {#tools-panel}
 
-In the **Tools** panel has a side panel containing a range of categories, that group together similar consoles. The **Tools** consoles provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+The **Tools** panel has a side panel containing a range of categories, that group together similar consoles. The **Tools** consoles provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. 
 
 ![Tools panel](assets/basic-handling-tools.png)
 
@@ -80,31 +81,37 @@ In the **Tools** panel has a side panel containing a range of categories, that g
 
 The header is always present at the top of the screen. While most options in the header remain the same no matter where you are in the system, some are context-specific.
 
-![Navigation header](/help/sites-cloud/authoring/assets/navigation-bar.png)
+![Navigation header](/help/sites-cloud/authoring/assets/basic-handling-navigation-bar.png)
 
 * [Global Navigation](#global-navigation) - Select the **Adobe Experience Manager** link to navigate between consoles.
 
-  ![Global navigation](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![Global navigation](/help/sites-cloud/authoring/assets/basic-handling-global-navigation.png)
 
-* [Search](/help/sites-cloud/authoring/search.md) - You can also use the [shortcut key](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
+* Feedback 
 
-  ![Search icon](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![Feedback button](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
+
+* Your IMS organization - select to change if required.
 
 * [Solutions](https://www.adobe.com/experience-cloud.html) - Select this to access your other Adobe solutions.
 
-  ![Solutions button](/help/sites-cloud/authoring/assets/solutions.png)
+  ![Solutions button](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
+
+* [Search](/help/sites-cloud/authoring/search.md) - You can also use the [shortcut key](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
+
+  ![Search icon](/help/sites-cloud/authoring/assets/basic-handling-search-icon.png)
 
 * [Help](#accessing-help)
 
-  ![Help button](/help/sites-cloud/authoring/assets/help.png)
+  ![Help button](/help/sites-cloud/authoring/assets/basic-handling-help-icon.png)
 
 * [Notifications](/help/sites-cloud/authoring/inbox.md) -   This icon is badged with the number of currently assigned incomplete notifications.
 
-  ![Notifications button](/help/sites-cloud/authoring/assets/notifications.png)
+  ![Notifications button](/help/sites-cloud/authoring/assets/basic-handling-notifications.png)
   
 * [User Properties](/help/sites-cloud/authoring/account-environment.md) - Select this to change your user settings.
 
-  ![User Properties button](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![User Properties button](/help/sites-cloud/authoring/assets/basic-handling-user-properties.png)
 
 ## Accessing Help {#accessing-help}
 
