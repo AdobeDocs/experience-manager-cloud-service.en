@@ -167,6 +167,12 @@ However, with careful coordination, it is possible for more than one developer t
 * For detailed help for a command, type:
 
   `aio aem rde <command> --help`
+  
+* For CI/CD specific way of running a command, type:
+
+  `aio aem rde <command> --cicd`
+  
+  This removes certain user information like spinners, progress bars and tries to avoid user input.
 
 ### Deploying to RDE {#deploying-to-rde}
 
