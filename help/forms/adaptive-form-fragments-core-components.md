@@ -50,9 +50,9 @@ You can create an Adaptive Form fragment from scratch or save a panel in an exis
       > In Adaptive Forms, you can use single form fragment (based on Core Components) multiple times. It supports both none-based and schema-based form fragments.
       
     * **Schema**: Specifies to create the fragment using an XML or JSON schema uploaded to AEM Forms. You can upload or select from the available XML or JSON schemas as the form model for the fragment. When you select an XML schema, you can also create an Adaptive Form fragment by selecting a complexType present in the selected schema from the **[!UICONTROL XML Schema Complex Type]** drop-down box. When you select a JSON schema, you can also create an Adaptive Form fragment by selecting a schema definition present in the selected schema from the **[!UICONTROL JSON Schema Definitions]** drop-down box. 
-    * **Form Data Model**:  Specifies to create the fragment using a form data model. You can create an Adaptive Form fragment based on only one data model object in a form data model. Expand Form Data Model Definitions drop-down. It lists all data model objects in the specified form data model. Select a data model object from the list.
+    * **Form Data Model**:  Specifies to create the fragment using a form data model (FDM). You can create an Adaptive Form fragment based on only one data model object in a form data model (FDM). Expand Form Data Model (FDM) Definitions drop-down. It lists all data model objects in the specified form data model(FDM). Select a data model object from the list.
 
-    ![Form Data Model](assets/create-af-3.png)
+    ![Form Data Model (FDM)](assets/create-af-3.png)
 
       
 
@@ -60,7 +60,7 @@ You can create an Adaptive Form fragment from scratch or save a panel in an exis
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> In addition, if you selected an XML schema or XDP form template as the form model for your fragment, a new tab displaying the form-model hierarchy appears in the content finder. It lets you drag-and-drop form-model elements onto the fragment. The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. 
 
-Once the Adaptive Form fragment based on a schema or form data model is created, form data model or schema elements appear in the Data Sources tab of the Content browser in Adaptive Form editor. You can drag-and-drop form-model elements onto the fragment. The added form-model elements are converted to form components while retaining the original properties from the associated schema. 
+Once the Adaptive Form fragment based on a schema or form data model (FDM) is created, form data model (FDM) or schema elements appear in the Data Sources tab of the Content browser in Adaptive Form editor. You can drag-and-drop form-model elements onto the fragment. The added form-model elements are converted to form components while retaining the original properties from the associated schema. 
 
 
 ## Add a fragment to an Adaptive Form {#insert-a-fragment-in-an-adaptive-form}
@@ -177,7 +177,7 @@ You can perform several operations on Adaptive Form fragments using the AEM Form
 * Ensure that the fragment name is unique. The fragment fails to create if there is an existing fragment with the same name.
 * In an XDP-based Adaptive Form, if you save a panel as fragment that includes another XDP fragment, the resulting fragment will be automatically bound to the child XDP fragment. In case of an XSD-based Adaptive Form, the resulting fragment will be bound to the schema root.
 * When you create an Adaptive Form fragment, a fragment node gets created, which is similar to the guideContainer node for an Adaptive Form, in CRXDE Lite.
-* A fragment in an Adaptive Form that uses a different form data model is not supported. For example, an XDP-based fragment is not supported in an XSD-based Adaptive Form and conversely.
+* A fragment in an Adaptive Form that uses a different form data model (FDM) is not supported. For example, an XDP-based fragment is not supported in an XSD-based Adaptive Form and conversely.
 * Adaptive Form fragments are available for use through the Adaptive Form Fragments tab in AEM content finder.
 * Any expression, script, or style in a stand-alone Adaptive Form fragment is retained when it is inserted by reference or embedded in an Adaptive Form.
 * You cannot edit an Adaptive Form fragment, which is inserted by reference, from within an Adaptive Form. To edit, you either edit the stand-alone Adaptive Form fragment or embed the fragment in the Adaptive Form.
