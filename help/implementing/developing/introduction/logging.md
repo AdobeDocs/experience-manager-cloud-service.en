@@ -498,7 +498,7 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization. The CDN log format cannot be customized and there is no concept of setting it to different modes such as info, warn, or error.
 
-The Splunk forwarding feature does not yet support CDN logs.
+CDN logs will be forwarded to Splunk for new Splunk forwarding support ticket requests; customers who already have Splunk forwarding enabled will be able to add CDN logs in the future.
 
  **Example**
 
@@ -606,7 +606,7 @@ Customers who have Splunk accounts may request via customer support ticket that 
 
 The network bandwidth associated with logs sent to Splunk are considered part of the customer's Network I/O usage.
 
-Splunk forwarding does not yet support CDN logs.
+CDN logs will be forwarded to Splunk for new support ticket requests; customers who already have Splunk forwarding enabled will be able to add CDN logs in the future.
 
 ### Enabling Splunk Forwarding {#enabling-splunk-forwarding}
 

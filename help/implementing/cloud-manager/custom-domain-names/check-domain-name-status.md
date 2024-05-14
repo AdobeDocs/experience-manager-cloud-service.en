@@ -8,7 +8,9 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 
 You can determine status of your custom domain name within Cloud Manager.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
 1. Navigate to the **Environments** screen from the **Overview** page.
 

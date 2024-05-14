@@ -126,7 +126,7 @@ MSM is directly accessible in the UI using various options from the appropriate 
 
 * **References** (**Sites**)
 
-  * The [References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) rail provides information about **Live Copies** together with access to appropriate actions.
+  * The [References](/help/sites-cloud/authoring/basic-handling.md#references) rail provides information about **Live Copies** together with access to appropriate actions.
 
 * **Live Copy Overview** (**Sites**)
 
@@ -135,6 +135,10 @@ MSM is directly accessible in the UI using various options from the appropriate 
 * **Blueprints** (**Tools** - **Sites**)
 
   * This console lets you [create and manage your blueprint configurations.](creating-live-copies.md#creating-a-blueprint-configuration)
+
+>[!NOTE]
+>
+>MSM can be used with both pages and [Experience Fragments](/help/sites-cloud/authoring/fragments/experience-fragments.md) as these fragments are part of an experience (page).
 
 >[!NOTE]
 >

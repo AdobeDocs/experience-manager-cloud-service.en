@@ -2,6 +2,7 @@
 description: The quality of the experience of websites is crucial to achieving the business goals of your website and the satisfaction of your visitors.
 title: Keeping It 100, Web Performance
 feature: Edge Delivery Services
+exl-id: f808ae16-15b7-48ce-a477-76268ba005ec
 ---
 # Keeping It 100, Web Performance
 

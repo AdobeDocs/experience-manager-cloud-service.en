@@ -305,6 +305,56 @@ The analyser found the following errors for publish :
 
 The above code sample illustrates the behavior if a bundle does not resolve. In which case, it is "staged" and is only installed if its requirements (missing imports, in this case) are satisfied through the installation of other code. 
 
+<u>Deploying front-end code bsed on site themes and site templates</u>
+
+>[!NOTE]
+>
+>This feature is not yet GA, but can be used by early adopters. Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
+
+RDEs support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md). With RDEs, this is done using a command line directive to deploy front-end packages, rather than the Cloud Manager [Front-End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) used for other environment types.
+
+As usual, build your front-end package using npm: 
+
+`npm run build`
+
+It should generate a `dist/` folder, so your front-end package folder should contain a `package.json` file and `dist` folder:
+
+```
+ls ./path-to-frontend-pkg-folder/
+...
+dist
+package.json
+```
+Now you are ready to deploy the front-end package to the RDE by pointing to the front-end package folder:
+
+```
+aio aem:rde:install -t frontend ./path-to-frontend-pkg-folder/
+...
+#1: deploy completed for frontend frontend-pipeline.zip on author,publish - done by ... at 2024-01-18T15:33:22.898Z
+Logs:
+> Deployed artifact wknd-1.0.0-1705592008-26e7ec1a
+> with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
+```
+
+Alternatively, you can zip the `package.json` file and `dist` folder and deploy that zip file:
+
+`zip -r frontend-pkg.zip ./path-to-frontend-pkg-folder/dist ./path-to-frontend-pkg-folder/package.json`
+
+```
+aio aem:rde:install -t frontend frontend-pkg.zip
+...
+#1: deploy completed for frontend frontend-pipeline.zip on author,publish - done by ... at 2024-01-18T15:33:22.898Z
+Logs:
+> Deployed artifact wknd-1.0.0-1705592008-26e7ec1a
+> with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
+```
+
+>[!NOTE]
+>
+>The naming of the files in the front-end package must adhere to the following naming conventions:
+> * "dist" folder, for the npm build output package folder
+> * "package.json" file, for the npm dependencies package
+
 ### Checking the Status of the RDE {#checking-rde-status}
 
 You can use the RDE CLI to check if the environment is ready to be deployed to, as what deployments have been made by way of the RDE plug-in.
@@ -466,8 +516,9 @@ For these reasons, it is recommended that after validating code on an RDE enviro
 Also note the following considerations: 
 
 * RDEs do not include a preview tier
-* RDEs do not currently support viewing and debugging front-end code deployed using the Cloud Manager Front-End Pipeline.
 * RDEs do not currently support the prerelease channel.
+* While RDE support for viewing and debugging front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md) deployed is not yet GA-ready, it can be used by early adopters. Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
+
 
 
 ## How many RDEs do I need? {#how-many-rds-do-i-need}

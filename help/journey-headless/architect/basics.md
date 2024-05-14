@@ -147,8 +147,8 @@ Now that you have learned the basics, the next step is to [Learn about Creating 
 
   * [Content Fragment Models - Data Types](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-* [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Authoring Concepts](/help/sites-cloud/authoring/author-publish.md)
 
-* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for authoring **Content Fragments** under the **Assets** console.
+* [Basic Handling](/help/sites-cloud/authoring/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for authoring **Content Fragments** under the **Assets** console.
 
 * [Working with Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md)

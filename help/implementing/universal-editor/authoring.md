@@ -289,11 +289,14 @@ Also, details on your text are available in the properties rail. Changes are aut
 
 You can edit the text in place by double-clicking or double-tapping the component.
 
-Press enter/return or select outside of the text box to save your changes.
-
 ![Editing a rich text component](assets/rich-text-editing.png)
 
-Also, formatting options and details on your text are available in the properties rail. Changes are automatically saved once focus leaves the edited field in the properties rail.
+For your convenience, formatting options and details on your text are available in two places.
+
+* The **context menu** opens above the rich text block and offers basic formatting options in context. Due to space limitations, some options may be hidden behind the ellipsis button.
+* The **properties rail** shows all formatting options available along with the text.
+
+Changes are automatically saved once focus leaves the edited field.
 
 ### Editing Media {#edit-media}
 

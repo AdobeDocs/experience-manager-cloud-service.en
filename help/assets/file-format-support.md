@@ -141,31 +141,31 @@ The document formats supported for asset management features are as follows.
 
 ## Video formats {#video-formats}
 
-| File format | Thumbnail generation | Metadata extraction | Width/Height |
-| ----------- | -------------------- | ------------------- | ------------ |
-| 3G2         | -                    | &#10003;            | -            |
-| 3GP         | -                    | &#10003;            | -            |
-| AVI         | &#10003;             | &#10003;            | &#10003;     |
-| DIVX        | &#10003;             |  -                  | &#10003;     |
-| F4V         | &#10003;             | &#10003;            | &#10003;     |
-| FLV         | &#10003;             | &#10003;            | &#10003;     |
-| M2T         | &#10003;             | -                   | &#10003;     |
-| M2TS        | &#10003;             | -                   | &#10003;     |
-| M2V         | &#10003;             | -                   | &#10003;     |
-| M4V         | &#10003;             | &#10003;            | &#10003;     |
-| MKV         | &#10003;             | -                   | &#10003;     |
-| MOV         | &#10003;             | &#10003;            | &#10003;     |
-| MP4         | &#10003;             | &#10003;            | &#10003;     |
-| MPEG        | &#10003;             | &#10003;            | &#10003;     |
-| MPG         | &#10003;             | &#10003;            | &#10003;     |
-| MTS         | &#10003;             | -                   | &#10003;     |
-| MXF         | &#10003;             | -                   | &#10003;     |
-| OGV         | &#10003;             | -                   | &#10003;     |
-| QT          | &#10003;             | -                   | &#10003;     |
-| R3D         | -                    | &#10003;            | &#10003;     |
-| SWF         | &#10003;             | -                   | &#10003;     |
-| WebM        | &#10003;             | -                   | &#10003;     |
-| WMV         | &#10003;             | &#10003;            | &#10003;     |
+| File format | Thumbnail generation | Metadata extraction | Width/Height | Preview |
+| ----------- | -------------------- | ------------------- | ------------ | ------- |
+| 3G2         | -                    | &#10003;            | -            | -       |
+| 3GP         | -                    | &#10003;            | -            | -       |
+| AVI         | &#10003;             | &#10003;            | &#10003;     | &#10003;|
+| DIVX        | &#10003;             |  -                  | &#10003;     | &#10003;|
+| F4V         | &#10003;             | &#10003;            | &#10003;     | &#10003;|
+| FLV         | &#10003;             | &#10003;            | &#10003;     | &#10003;|
+| M2T         | &#10003;             | -                   | &#10003;     | &#10003;|
+| M2TS        | &#10003;             | -                   | &#10003;     | &#10003;|
+| M2V         | &#10003;             | -                   | &#10003;     | &#10003;|
+| M4V         | &#10003;             | &#10003;            | &#10003;     | &#10003;|
+| MKV         | &#10003;             | -                   | &#10003;     | &#10003;|
+| MOV         | &#10003;             | &#10003;            | &#10003;     | &#10003;|
+| MP4         | &#10003;             | &#10003;            | &#10003;     | &#10003;|
+| MPEG        | &#10003;             | &#10003;            | &#10003;     | &#10003;|
+| MPG         | &#10003;             | &#10003;            | &#10003;     | &#10003;|
+| MTS         | &#10003;             | -                   | &#10003;     | &#10003;|
+| MXF         | &#10003;             | -                   | &#10003;     | &#10003;|
+| OGV         | &#10003;             | -                   | &#10003;     | &#10003;|
+| QT          | &#10003;             | -                   | &#10003;     | &#10003;|
+| R3D         | -                    | &#10003;            | &#10003;     | &#10003;|
+| SWF         | &#10003;             | -                   | &#10003;     | &#10003;|
+| WebM        | &#10003;             | -                   | &#10003;     | &#10003;|
+| WMV         | &#10003;             | &#10003;            | &#10003;     | &#10003;|
 
 ## Audio formats {#audio-formats}
 
@@ -220,16 +220,20 @@ The document formats supported for asset management features are as follows.
 
 ## Dynamic Media - Supported raster image formats {#image-support-dynamic-media}
 
-| Format  | Upload (Input format) | Create image preset (Output format) | Preview dynamic rendition | Deliver dynamic rendition | Download dynamic rendition | Set types that support this format |
-| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
-| BMP     | ✓                     | -                                   | -                         | -                         | -                          | [Image](/help/assets/dynamic-media/image-sets.md), [Mixed Media](/help/assets/dynamic-media/mixed-media-sets.md), and [Spin](/help/assets/dynamic-media/spin-sets.md) |
-| EPS     | ✓                     | ✓                                   | ✓                         | ✓                         | ✓                          | - |
-| GIF     | ✓                     | ✓                                   | ✓                         | ✓                         | ✓                          | - |
-| JPEG    | ✓                     | ✓                                   | ✓                         | ✓                         | ✓                          | [Image](/help/assets/dynamic-media/image-sets.md), [Mixed Media](/help/assets/dynamic-media/mixed-media-sets.md), and [Spin](/help/assets/dynamic-media/spin-sets.md)  |
-| PICT    | ✓                     | -                                   | -                         | -                         | -                          | - |
-| PNG     | ✓                     | ✓                                   | ✓                         | ✓                         | ✓                          | [Image](/help/assets/dynamic-media/image-sets.md), [Mixed Media](/help/assets/dynamic-media/mixed-media-sets.md), and [Spin](/help/assets/dynamic-media/spin-sets.md) |
-| PSD   ‡ | ✓                     | -                                   | -                         | -                         | -                          | - |
-| TIFF    | ✓                     | ✓                                   | ✓                         | ✓                         | ✓                          | [Image](/help/assets/dynamic-media/image-sets.md), [Mixed Media](/help/assets/dynamic-media/mixed-media-sets.md), and [Spin](/help/assets/dynamic-media/spin-sets.md) |
+| Format | Upload (Input format) | Create image preset (Output format) | Preview dynamic rendition | Deliver dynamic rendition | Download dynamic rendition | Set types that support this format |
+|---|:---:|:---:|:---:|:---:|:---:| --- |
+| AVIF | &minus; | &minus; | &minus; | &#10003; | &minus; | &minus; |
+| BMP | &#10003; | &minus;| &minus; | &minus; | &minus; | [Image](/help/assets/dynamic-media/image-sets.md), [Mixed Media](/help/assets/dynamic-media/mixed-media-sets.md), and [Spin](/help/assets/dynamic-media/spin-sets.md) |
+| [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &minus; |
+| GIF | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &minus; |
+| HEIC | &minus; | &minus; | &minus; | &#10003; |&minus; | &minus; |
+| JPEG | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | [Image](/help/assets/dynamic-media/image-sets.md), [Mixed Media](/help/assets/dynamic-media/mixed-media-sets.md), and [Spin](/help/assets/dynamic-media/spin-sets.md) |
+| PICT | &#10003; | &minus; | &minus; | &minus; | &minus; | &minus; |
+| PNG | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | [Image](/help/assets/dynamic-media/image-sets.md), [Mixed Media](/help/assets/dynamic-media/mixed-media-sets.md), and [Spin](/help/assets/dynamic-media/spin-sets.md) |
+| PSD &Dagger; | &#10003;| &minus; | &minus; | &minus; | &minus; | &minus; |
+| TIFF | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | [Image](/help/assets/dynamic-media/image-sets.md), [Mixed Media](/help/assets/dynamic-media/mixed-media-sets.md), and [Spin](/help/assets/dynamic-media/spin-sets.md) |
+| WEBP | &minus; | &minus; | &minus; | &#10003; | &minus; | &minus; | 
+<!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ The merged image is extracted from the PSD file. It is an image that is generated by [!DNL Adobe Photoshop] and is included in the PSD file. Depending on the settings, the merged image may or may not be the actual image.
 
@@ -268,6 +272,7 @@ See also [3D formats supported](/help/assets/file-format-support.md#support-3d-f
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

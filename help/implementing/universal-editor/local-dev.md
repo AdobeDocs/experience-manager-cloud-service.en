@@ -8,11 +8,15 @@ exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 
 Learn how the Universal Editor supports editing on local AEM instances for development purposes.
 
-{{universal-editor-status}}
-
 ## Overview {#overview}
 
-This document explains how to run AEM in HTTPS alongside a local copy of the Universal Editor Service so you can develop locally on AEM using the Universal Editor.
+The Universal Editor Service is what binds the Universal Editor and the backend system. To be able to develop locally for the Universal Editor, you must run a local copy of the Universal Editor Service. This is because:
+
+* Adobe's official Universal Editor Service is hosted globally, and your local AEM instance would need to be exposed to the internet.
+* While developing with a local AEM SDK, Adobe's Universal Editor Service can not be accessed from the internet.
+* If your AEM instance has IP restrictions and Adobe's Universal Editor Service isn't in a defined IP range, you can host it yourself.
+
+This document explains how to run AEM in HTTPS alongside a local copy of the Universal Editor Service so you can develop locally on AEM for use with the Universal Editor.
 
 ## Set Up AEM to Run on HTTPS {#aem-https}
 
@@ -20,17 +24,17 @@ Within an outer frame secured with HTTPS an unsecure HTTP frame cannot be loaded
 
 To do this, you need to set up AEM to run on HTTPS. For development purposes you can use self-signed certificate.
 
-See this document on how to set up AEM running on HTTPS including a self-signed certificate you can use.
+[See this document](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html) on how to set up AEM running on HTTPS including a self-signed certificate you can use.
 
 ## Install the Universal Editor Service {#install-ue-service}
 
-The Universal Editor Service is what binds the Universal Editor and the backend system. Because the official Universal Editor Service is hosted globally, your local AEM instance would need to be exposed to the internet. To avoid this, you can run a local copy of the Universal Editor Service.
+The Universal Editor Service is not an entire copy of the Universal Editor, but only a subset of its features to ensure that calls from your local AEM environment are not routed over the internet, but from a defined endpoint you control.
 
-[NodeJS version 16](https://nodejs.org/en/download/releases) is required to run a local copy of the Universal Editor Service
+[NodeJS version 16](https://nodejs.org/en/download/releases) is required to run a local copy of the Universal Editor Service.
 
-The Universal Editor Service is distributed by AEM Engineering directly. Contact your engineer in the VIP program for a local copy.
+The Universal Editor Service is available via Software Distribution. Please see the [Software Distribution documentation](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) for details on how to access it.
 
-Engineering will provide you with a `universal-editor-service.cjs` file. Save this to your local development environment.
+Save the `universal-editor-service.cjs` file from Software Distribution to your local development environment.
 
 ## Create a Certificate to Run the Universal Editor Service with HTTPS {#ue-https}
 
@@ -92,6 +96,12 @@ For a page to be edited using your local Universal Editor Service, the following
 
 Once set, you should see every content update call go to `https://localhost:8000` instead of the default Universal Editor Service.
 
+>[!NOTE]
+>
+>Attempting to directly access `https://localhost:8000` results in a `404` error. This is expected behavior.
+>
+>To test accessing your local Universal Editor Service, use `https://localhost:8000/corslib/LATEST`. See the [next section](#editing) for details.
+
 >[!TIP]
 >
 >For more details on how pages are instrumented to use the Global Universal Editor Service, see the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md#instrument-page)
@@ -100,6 +110,7 @@ Once set, you should see every content update call go to `https://localhost:8000
 
 With the [Universal Editor Service running locally](#running-ue) and your [content page instrumented to use the local service,](#using-loca-ue) you can now start the editor.
 
-1. Open your browser to `https://localhost:8000/`.
+1. Open your browser to `https://localhost:8000/corslib/LATEST`.
 1. Direct your browser to accept [your self-signed certificate.](#ue-https)
 1. Once the self-signed certificate is trusted, you can edit the page using your local Universal Editor Service.
+

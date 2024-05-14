@@ -109,7 +109,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >When the new Dynamic Media configuration finishes its setup, you receive a status notification within Experience Manager as a Cloud Service's Inbox.
    >
    >This Inbox notification informs you if the configuration was either successful or not.
-   > See [Troubleshoot a new Dynamic Media configuration](#troubleshoot-dm-config) and [Your Inbox](/help/sites-cloud/authoring/getting-started/inbox.md) for more information. 
+   > See [Troubleshoot a new Dynamic Media configuration](#troubleshoot-dm-config) and [Your Inbox](/help/sites-cloud/authoring/inbox.md) for more information. 
 
 1. To securely preview Dynamic Media content before it gets published, Experience Manager as a Cloud Service uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager as a Cloud Service, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
@@ -133,7 +133,7 @@ When a new Dynamic Media configuration finishes its setup, you receive a status 
 
    ![Experience Manager Inbox failure](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
 
-See also [Your Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
+See also [Your Inbox](/help/sites-cloud/authoring/inbox.md).
 
 **To troubleshoot a new Dynamic Media configuration:**
 

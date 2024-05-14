@@ -38,6 +38,12 @@ To use Content Fragment Models you:
 
 1. Use **Create** to save the empty model. A message indicates the success of the action, you can select **Open** to immediately edit the model, or **Done** to return to the console.
 
+>[!CAUTION]
+>
+>If you will be querying against multiple referenced fragments, then it is not recommended that the various fragment models have field names with the same name, but different types.
+>
+>For further details see [AEM GraphQL API for use with Content Fragments - Limitations](/help/headless/graphql-api/content-fragments.md#limitations)
+
 ### Content Fragment Model - Properties {#content-fragment-model-properties}
 
 These properties are defined when you create a model, and can be edited later with the **Properties** option for the Content Fragment Model:
@@ -287,6 +293,12 @@ Content Fragments can form nested content, using either of the following data ty
 >* Fragment References in GraphQL 
 >  If you create a deep query that returns multiple Content Fragments referenced by each other, it returns null on the first occurrence.
 
+>[!CAUTION]
+>
+>If you will be querying against multiple referenced fragments, then it is not recommended that the various fragment models have field names with the same name, but different types.
+>
+>For further details see [AEM GraphQL API for use with Content Fragments - Limitations](/help/headless/graphql-api/content-fragments.md#limitations)
+
 ### Content Reference {#content-reference}
 
 The Content Reference allows you to render content from another source; for example, image, page or Experience Fragment.
@@ -416,7 +428,7 @@ To implement content governance, you can configure **Policies** on Assets folder
 
 >[!NOTE]
 >
->The mechanism is similar to [allowing page templates](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) for a page, and its children, in advanced properties of a page. 
+>The mechanism is similar to [allowing page templates](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) for a page, and its children, in advanced properties of a page. 
 
 To configure the **Policies** for **Allowed Content Fragment Models**:
 
@@ -495,7 +507,7 @@ If you try to unpublish a model that is currently used by one or more fragments,
 
 ![Content Fragment Model error message when unpublishing a model that is in use](assets/cf-cfmodels-unpublish-error.png)
 
-The message suggests that you check the [References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) panel to investigate further:
+The message suggests that you check the [References](/help/sites-cloud/authoring/basic-handling.md#references) panel to investigate further:
 
 ![Content Fragment Model in References](assets/cf-cfmodels-references.png)
 

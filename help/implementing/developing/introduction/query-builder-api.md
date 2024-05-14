@@ -390,7 +390,7 @@ For such principal properties, you can shorten the query and use `similar=/conte
     doc.appendChild( root );
 
     // iterating over the results
-    for (Hit hit : result.getHits()) {
+for (Hit hit : result.getHits()) {
        String path = hit.getPath();
 
       //Create a result element

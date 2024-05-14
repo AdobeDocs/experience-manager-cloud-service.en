@@ -1,88 +1,369 @@
 ---
-title: Field Types
-description: Learn about the different types of fields that the Universal Editor can edit in the components rail with examples of how you can instrument your own app.
+title: Model Definitions, Fields, and Component Types
+description: Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
+exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 ---
 
-# Field Types {#field-types}
+# Model Definitions, Fields, and Component Types {#field-types}
 
-Learn about the different types of fields that the Universal Editor can edit in the components rail with examples of how you can instrument your own app.
-
-{{universal-editor-status}}
+Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 
 ## Overview {#overview}
 
-When adapting your own apps for use with the Universal Editor, you must instrument the components and define what data types they can manipulate in the component rail of the editor.
+When adapting your own apps for use with the Universal Editor, you must instrument the components and define what fields and component types they can manipulate in the properties rail of the editor. You do this by creating a model and linking to that from the component.
 
-This document provides an overview of the field types available to you along with example configurations.
+This document provides an overview of a model definition and of fields and the component types available to you along with example configurations.
 
 >[!TIP]
 >
 >If you are not familiar with how to instrument your app for the Universal Editor, please see the document [Universal Editor Overview for AEM Developers.](/help/implementing/universal-editor/developer-overview.md)
 
-## Boolean {#boolean}
+## Model Definition Structure {#model-structure}
 
-A boolean field stores a simple true/false value rendered as a checkbox.
+In order to configure a component via the properties rail in the Universal Editor, a model definition has to exist and be linked to the component.
 
-### Sample {#sample-boolean}
+The model definition is a JSON structure, starting with an array of models.
+
+```json
+[
+  {
+    "id": "model-id",        // must be unique
+    "fields": []             // array of fields which shall be rendered in the properties rail
+  }
+]
+```
+
+See the **[Fields](#fields)** section of this document for more information about how to define your `fields` array.
+
+To use the model definition with a component, the `data-aue-model` attribute can be used.
+
+```html
+<div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
+```
+
+## Loading a Model Definition {#loading-model}
+
+Once a model is created, it can be referenced as an external file.
+
+```html
+<script type="application/vnd.adobe.aue.model+json" src="<url-of-model-definition>"></script>
+```
+
+Alternatively you can also define the model inline.
+
+```html
+<script type="application/vnd.adobe.aue.model+json">
+  { ... model definition ... }
+</script>
+```
+
+## Fields {#fields}
+
+A field object has the following type definition.
+
+|Configuration|Value Type|Description|Required|
+|---|---|---|---|
+|`component`|`ComponentType`|Renderer of the component|Yes|
+|`name`|`string`|Property where the data shall be persisted|Yes|
+|`label`|`FieldLabel`|Label of the field|Yes|
+|`description`|`FieldDescription`|Description of the field|No|
+|`placeholder`|`string`|Placeholder for the field|No|
+|`value`|`FieldValue`|Default value|No|
+|`valueType`|`ValueType`|Standard validation, can be `string`, `string[]`, `number`, `date`, `boolean`|No|
+|`required`|`boolean`|Is the field required|No|
+|`readOnly`|`boolean`|Is the field read only|No|
+|`hidden`|`boolean`|Is the field hidden by default|No|
+|`condition`|`RulesLogic`|Rule to show or hide the field based on a [condition](/help/implementing/universal-editor/customizing.md#conditionally-hide)|No|
+|`multi`|`boolean`|Is the field a multi field|No|
+|`validation`|`ValidationType`|Validation rule or rules for the field|No|
+|`raw`|`unknown`|Raw data which can be used by the component|No|
+
+### Component Types {#component-types}
+
+The following are the component types that are possible to use for rendering fields.
+
+|Description|Component Type|
+|---|---|
+|[AEM Tag](#aem-tag)|`aem-tag`|
+|[AEM Content](#aem-content)|`aem-content`|
+|[Boolean](#boolean)|`boolean`|
+|[Checkbox Group](#checkbox-group)|`checkbox-group`|
+|[Container](#container)|`container`|
+|[Content Fragment](#content-fragment)|`aem-content-fragment`|
+|[Date Time](#date-time)|`date-time`|
+|[Multiselect](#multiselect)|`multiselect`|
+|[Number](#number)|`number`|
+|[Radio Group](#radio-group)|`radio-group`|
+|[Reference](#reference)|`reference`|
+|[Rich Text](#rich-text)|`rich-text`|
+|[Select](#select)|`select`|
+|[Tab](#tab)|`tab`|
+|[Text](#text)|`text`|
+
+#### AEM Tag {#aem-tag}
+
+An AEM tag component type enables an AEM tag picker, which can be used to attach tags to the component.
+
+>[!BEGINTABS]
+
+>[!TAB Sample]
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "aem-tag-picker",
+  "fields": [
+    {
+      "component": "aem-tag",
+      "label": "AEM Tag Picker",
+      "name": "cq:tags",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB Screenshot]
+
+![Screenshot of AEM tag component type](assets/component-types/aem-tag-picker.png)
+
+>[!ENDTABS]
+
+#### AEM Content {#aem-content}
+
+An AEM content component type type enables an AEM content picker, which can be used to set content references.
+
+>[!BEGINTABS]
+
+>[!TAB Sample]
+
+```json
+{
+  "id": "aem-content-picker",
+  "fields": [
+    {
+      "component": "aem-content",
+      "name": "reference",
+      "value": "",
+      "label": "AEM Content Picker",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB Screenshot]
+
+![Screenshot of AEM content component type](assets/component-types/aem-content-picker.png)
+
+>[!ENDTABS]
+
+#### Boolean {#boolean}
+
+A boolean component type stores a simple true/false value rendered as a toggle. It offers an additional validation type.
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`customErrorMsg`|`string`|Message that will display if the value entered isn't a boolean value|No|
+
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
+
+```json
+{
+  "id": "boolean",
+  "fields": [
+    {
       "component": "boolean",
+      "label": "Boolean",
+      "name": "boolean",
+      "valueType": "boolean"
+    }
+  ]
+}
+```
+
+>[!TAB Sample 2]
+
+```json
+{
+  "id": "another-boolean",
+  "fields": [
+    {
+      "component": "boolean",
+      "label": "Boolean",
+      "name": "boolean",
       "valueType": "boolean",
-      "name": "field1",
-      "label": "Boolean Field",
-      "description": "This is a boolean field.",
-      "required": true,
-      "placeholder": null,
       "validation": {
-        "customErrorMsg": "This is an error."
+        "customErrorMsg": "Think, McFly. Think!"
       }
     }
   ]
 }
 ```
 
-## Checkbox Group {#checkbox-group}
+>[!TAB Screenshot]
 
-Similar to a boolean, a checkbox group allows for the selection of multiple true/false items.
+![Screenshot of boolean component type](assets/component-types/boolean.png)
 
-### Sample {#sample-checkbox-group}
+>[!ENDTABS]
+
+#### Checkbox Group {#checkbox-group}
+
+Similar to a boolean, a checkbox group component type allows for the selection of multiple true/false items, rendered as multiple checkboxes.
+
+>[!BEGINTABS]
+
+>[!TAB Sample]
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "checkbox-group",
+  "fields": [
+    {
       "component": "checkbox-group",
-      "valueType": "string-array",
-      "name": "field1",
       "label": "Checkbox Group",
-      "description": "This is a checkbox group.",
-      "required": true,
-      "placeholder": null,
+      "name": "checkbox",
+      "valueType": "string[]",
       "options": [
-        { "name": "First option", "value": "one" },
-        { "name": "Second option", "value": "two" },
-        { "name": "Third option", "value": "three" }
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
       ]
     }
   ]
 }
 ```
 
-## Date Time {#date-time}
+>[!TAB Screenshot]
 
-A date time field allows the specification of a date or time or combination thereof.
+![Screenshot of checkbox group component type](assets/component-types/checkbox-group.png)
 
-### Sample {#sample-date-time}
+>[!ENDTABS]
+
+#### Container {#container}
+
+A container component type allows the grouping of components. It offers an additional configuration.
+
+|Configuration|Value Type|Description|Required|
+|---|---|---|---|
+|`collapsible`|`boolean`|Is the container collapsible|No|
+
+>[!BEGINTABS]
+
+>[!TAB Sample]
+
+```json
+ {
+  "id": "container",
+  "fields": [
+    {
+      "component": "container",
+      "label": "Container",
+      "name": "container",
+      "valueType": "string",
+      "collapsible": true,
+      "fields": [
+        {
+          "component": "text-input",
+          "label": "Simple Text 1",
+          "name": "text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "label": "Simple Text 2",
+          "name": "text2",
+          "valueType": "string"
+        }
+      ]
+    }
+  ]
+}
+```
+
+>[!TAB Screenshot]
+
+![Screenshot of container component type](assets/component-types/container.png)
+
+>[!ENDTABS]
+
+#### Content Fragment {#content-fragment}
+
+The Content Fragment picker can be used to select a [Content Fragment](/help/sites-cloud/authoring/fragments/content-fragments.md) and its variations (if required). It offers an additional configuration.
+
+|Configuration|Value Type|Description|Required|
+|---|---|---|---|
+|`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
+
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
+
+```json
+[
+  {
+    "id": "aem-content-fragment",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "picker",
+        "label": "Content Fragment Picker",
+        "valueType": "string",
+        "variationName": "contentFragmentVariation"
+      }
+    ]
+  }
+]
+```
+
+>[!TAB Screenshot]
+
+![Screenshot of Content Fragment picker](assets/component-types/aem-content-fragment.png)
+
+>[!ENDTABS]
+
+#### Date Time {#date-time}
+
+A date time component type allows the specification of a date, time, or combination thereof. It offers additional configurations.
+
+|Configuration|Value Type|Description|Required|
+|---|---|---|---|
+|`displayFormat`|`string`|Format with which to display the date string|Yes|
+|`valueFormat`|`string`|Format in which to store the date string|Yes|
+
+It also offers an additional validation type.
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`customErrorMsg`|`string`|Message that will display if `valueFormat` isn't met|No|
+
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
 
 ```json
 {
-  "fields": [   
-      {
+  "id": "date-time",
+  "fields": [
+    {
       "component": "date-time",
-      "valueType": "date-time",
+      "label": "Date & Time",
+      "name": "date",
+      "valueType": "date"
+    }
+  ]
+}
+```
+
+>[!TAB Sample 2]
+
+```json
+{
+  "id": "another-date-time",
+  "fields": [
+    {
+      "component": "date-time",
+       "valueType": "date-time",
       "name": "field1",
       "label": "Date Time",
       "description": "This is a date time field that stores both date and time.",
@@ -126,15 +407,151 @@ A date time field allows the specification of a date or time or combination ther
 }
 ```
 
-## Number {#number}
+>[!TAB Screenshot]
 
-A number field allows for the input of a number.
+![Screenshot of date time component type](assets/component-types/date-time.png)
 
-### Sample {#sample-number}
+>[!ENDTABS]
+
+#### Experience Fragment {#experience-fragment}
+
+The Experience Fragment picker can be used to select an [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) and its variations (if required). It offers an additional configuration.
+
+|Configuration|Value Type|Description|Required|
+|---|---|---|---|
+|`variationName`|`string`|Variable name to store the selected variation. If undefined, no variation picker is displayed|No|
+
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
+
+```json
+[
+  {
+    "id": "aem-experience-fragment",
+    "fields": [
+      {
+        "component": "aem-experience-fragment",
+        "name": "picker",
+        "label": "Experience Fragment Picker",
+        "valueType": "string",
+        "variationName": "experienceFragmentVariation"
+      }
+    ]
+  }
+]
+```
+
+>[!TAB Screenshot]
+
+![Screenshot of Experience Fragment picker](assets/component-types/aem-experience-fragment.png)
+
+>[!ENDTABS]
+
+
+#### Multiselect {#multiselect}
+
+A multiselect component type presents multiple items for selection in a drop-down including the ability to group the selectable elements.
+
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
 
 ```json
 {
-  "fields": [   
+  "id": "multiselect",
+  "fields": [
+    {
+      "component": "multiselect",
+      "name": "multiselect",
+      "label": "Multi Select",
+      "valueType": "string",
+      "options": [
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+    }
+  ]
+}
+```
+
+>[!TAB Sample 2]
+
+```json
+{
+  "id": "multiselect-grouped",
+  "fields": [
+    {
+      "component": "multiselect",
+      "name": "property",
+      "label": "Multiselect field",
+      "valueType": "string",
+      "required": true,
+      "maxSize": 2,
+      "options": [
+        {
+          "name": "Theme",
+          "children": [
+            { "name": "Light", "value": "light" },
+            { "name": "Dark",  "value": "dark" }
+          ]
+        },
+        {
+          "name": "Type",
+          "children": [
+            { "name": "Alpha", "value": "alpha" },
+            { "name": "Beta", "value": "beta" },
+            { "name": "Gamma", "value": "gamma" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+>[!TAB Screenshots]
+
+![Screenshot of multiselect component type](assets/component-types/multiselect.png)
+![Screenshot of multiselect component type with grouping](assets/component-types/multiselect-group.png)
+
+>[!ENDTABS]
+
+#### Number {#number}
+
+A number component type allows for the input of a number. It offers additional validation types.
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`numberMin`|`number`|Minimum number allowed|No|
+|`numberMax`|`number`|Maximum number allowed|No|
+|`customErrorMsg`|`string`|Message that will display if `numberMin` or `numberMax` isn't met|No|
+
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
+
+```json
+{
+  "id": "number",
+  "fields": [
+    {
+      "component": "number",
+      "name": "number",
+      "label": "Number",
+      "valueType": "number",
+      "value": 0
+    }
+  ]
+}
+```
+
+>[!TAB Sample 2]
+
+```json
+{
+  "id": "another-number",
+  "fields": [
    {
       "component": "number",
       "valueType": "number",
@@ -144,189 +561,269 @@ A number field allows for the input of a number.
       "required": true,
       "placeholder": null,
       "validation": {
-        "numberMin": null,
-        "numberMax": null,
-        "customErrorMsg": "Please don't do that."
+        "numberMin": 0,
+        "numberMax": 88,
+        "customErrorMsg": "You also need 1.21 gigawatts."
       }
     }
   ]
 }
 ```
 
-## Radio Group {#radio-group}
+>[!TAB Screenshot]
 
-A radio group allows for a mutually-exclusive selection from multiple options rendered as a group similar to a checkbox group.
+![Screenshot of number component type](assets/component-types/number.png)
 
-### Sample {#sample-radio-group}
+>[!ENDTABS]
+
+#### Radio Group {#radio-group}
+
+A radio group component type allows for a mutually-exclusive selection from multiple options rendered as a group similar to a checkbox group.
+
+>[!BEGINTABS]
+
+>[!TAB Sample]
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "radio-group",
+  "fields": [
+    {
       "component": "radio-group",
-      "valueType": "string",
-      "name": "field1",
       "label": "Radio Group",
-      "description": "This is a radio group.",
-      "required": true,
-      "placeholder": null,
+      "name": "radio",
+      "valueType": "string",
       "options": [
-        { "name": "Option One", "value": "one" },
-        { "name": "Option Two", "value": "two" },
-        { "name": "Option Three", "value": "three" }
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
       ]
     }
   ]
 }
 ```
 
-## Reference {#reference}
+>[!TAB Screenshot]
 
-A reference allows for the specification of another data object as a reference from the current object.
+![Screenshot of radio group component type](assets/component-types/radio.png)
 
-## Select {#select}
+>[!ENDTABS]
 
-A select allows for selection of one or more predefined options in a drop-down menu.
+#### Reference {#reference}
 
-### Sample {#sample-select}
+A reference component type allows for a reference to another data object from the current object.
 
-```json
-{
-  "fields": [   
-   {
-      "component": "select",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Select",
-      "description": "This is a select.",
-      "required": true,
-      "placeholder": null,
-      "options": [
-        { "name": "Option One", "value": "one" },
-        { "name": "Option Two", "value": "two" },
-        { "name": "Option Three", "value": "three" }
-      ],
-      "emptyOption": true
-    }
-  ]
-}
-```
+>[!BEGINTABS]
 
-## Text Area {#text-area}
-
-A text area allows for multi-line text input.
-
-### Sample {#sample-text-area}
+>[!TAB Sample]
 
 ```json
 {
-  "fields": [   
-   {
-      "component": "text-area",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Text Area",
-      "description": "This is a text area.",
-      "required": true,
-      "multi": true,
-      "placeholder": null,
-      "mimeType": "text/x-markdown"
-    }
-  ]
-}
-```
-
-## Text Input {#text-input}
-
-A text input allows for a single line of text input.
-
-### Sample {#sample-text-input}
-
-```json
-{
-  "fields": [   
-   {
-      "component": "text-input",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Text Input",
-      "description": "This is a text input.",
-      "required": true,
-      "multi": true,
-      "placeholder": null
-    },
+  "id": "reference",
+  "fields": [
     {
-      "component": "text-input",
+      "component": "reference",
+      "label": "Reference",
+      "name": "reference",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB Screenshot]
+
+![Screenshot of reference component type](assets/component-types/reference.png)
+
+>[!ENDTABS]
+
+#### Rich Text {#rich-text}
+
+Rich text allows for multi-line, rich text input. It offers additional validation types.
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`maxSize`|`number`|Maximum number characters allowed|No|
+|`customErrorMsg`|`string`|Message that will display if `maxSize` is exceeded|No|
+
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
+
+```json
+{
+  "id": "richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB Sample 2]
+
+```json
+{
+  "id": "another-richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
       "valueType": "string",
-      "name": "field2",
-      "label": "Another Text Input",
-      "description": "This is a text input with validation.",
-      "required": true,
-      "multi": true,
-      "placeholder": null,
       "validation": {
-        "minLength": 5,
-        "maxLength": 10,
-        "regExp": "^foo:.*",
-        "customErrorMsg": "I'm sorry, Dave. I can't do that."
+        "maxSize": 1000,
+        "customErrorMsg": "That's about as funny as a screen door on a battleship."
       }
     }
   ]
 }
 ```
 
-## Tab {#tab}
+>[!TAB Screenshot]
 
-A tab allows you to group other input fields together on multiple tabs to improve layout organization for the authors.
+![Screenshot of text area component type](assets/component-types/richtext.png)
+
+>[!ENDTABS]
+
+#### Select {#select}
+
+A select component type allows for selection of a single option from a list of predefined options in a drop-down menu.
+
+>[!BEGINTABS]
+
+>[!TAB Sample]
+
+```json
+{
+  "id": "select",
+  "fields": [
+    {
+      "component": "select",
+      "label": "Select",
+      "name": "select",
+      "valueType": "string",
+      "options": [
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+    }
+  ]
+}
+```
+
+>[!TAB Screenshot]
+
+![Screenshot of select component type](assets/component-types/select.png)
+
+>[!ENDTABS]
+
+#### Tab {#tab}
+
+A tab component type allows you to group other input fields together on multiple tabs to improve layout organization for the authors.
 
 A `tab` definition can be thought of as a separator in the array of `fields`. Everything that comes after a `tab` will be placed on that tab until a new `tab` is encountered, whereafter the following items will be placed on the new tab.
 
 If you wish to have items that appear above all tabs, they must be defined before any tabs.
 
-### Sample {#sample-tab}
+>[!BEGINTABS]
+
+>[!TAB Sample]
 
 ```json
 {
-  "id": "title",
+  "id": "tab",
   "fields": [
     {
       "component": "tab",
-      "label": "Tab",
+      "label": "Tab 1",
       "name": "tab1"
     },
     {
       "component": "text-input",
-      "name": "tab-response",
-      "value": "",
-      "placeholder": "Tab? I can't give you a tab unless you order something.",
-      "label": "Lou",
+      "label": "Text 1",
+      "name": "text1",
       "valueType": "string"
     },
     {
       "component": "tab",
-      "label": "Pepsi Free",
+      "label": "Tab 2",
       "name": "tab2"
     },
     {
       "component": "text-input",
-      "name": "pepsi-free-response",
-      "value": "",
-      "placeholder": "You want a Pepsi, pal, you're gonna pay for it.",
-      "label": "Mr. Carruthers",
+      "label": "Text 2",
+      "name": "text2",
       "valueType": "string"
-    },
-    {
-      "component": "select",
-      "name": "without-sugar",
-      "value": "coffee",
-      "label": "Something without sugar",
-      "valueType": "string",
-      "options": [
-        { "name": "Coffee", "value": "coffee" },
-        { "name": "Hot Coffee", "value": "hot-coffee" },
-        { "name": "Hotter Coffee", "value": "hotter-coffee" }
-      ]
     }
   ]
 }
 ```
+
+>[!TAB Screenshot]
+
+![Screenshot of tab component type](assets/component-types/tab.png)
+
+>[!ENDTABS]
+
+#### Text {#text}
+
+Text allows for a single line of text input.  It includes additional validation types.
+
+|Validation Type|Value Type|Description|Required|
+|---|---|---|---|
+|`minLength`|`number`|Minimum number of characters allowed|No|
+|`maxLength`|`number`|Maximum number of characters allowed|No|
+|`regExp`|`string`|Regular expression which the input text must match|No|
+|`customErrorMsg`|`string`|Message that will display if `minLength`, `maxLength`, and/or `regExp` is/are violated|No|
+
+>[!BEGINTABS]
+
+>[!TAB Sample 1]
+
+```json
+{
+  "id": "simpletext",
+  "fields": [
+    {
+      "component": "text",
+      "name": "text",
+      "label": "Simple Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB Sample 2]
+
+```json
+{
+  "id": "another simpletext",
+  "fields": [
+    {
+      "component": "text",
+      "name": "text",
+      "label": "Simple Text",
+      "valueType": "string",
+      "description": "This is a text input with validation.",
+      "required": true,
+      "validation": {
+        "minLength": 1955,
+        "maxLength": 1985,
+        "regExp": "^foo:.*",
+        "customErrorMsg": "Why don't you make like a tree and get outta here?"
+      }
+    }
+  ]
+}
+```
+
+>[!TAB Screenshot]
+
+![Screenshot of text component type](assets/component-types/simpletext.png)
+
+>[!ENDTABS]

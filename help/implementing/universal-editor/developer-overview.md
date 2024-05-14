@@ -1,13 +1,12 @@
 ---
 title: Universal Editor Overview for AEM Developers
 description: If you are an AEM developer interested in how the Universal Editor works and how to use it in your project, this document gives you an end-to-end introduction by leading you through instrumenting the WKND project to work with the Universal Editor.
+exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 ---
 
 # Universal Editor Overview for AEM Developers {#developer-overview}
 
 If you are an AEM developer interested in how the Universal Editor works and how to use it in your project, this document gives you an end-to-end introduction by leading you through instrumenting the WKND project to work with the Universal Editor.
-
-{{universal-editor-status}}
 
 ## Purpose {#purpose}
 
@@ -30,6 +29,7 @@ To follow along with this overview, you need the following available.
   * [The WKND demo site must be installed.](https://github.com/adobe/aem-guides-wknd)
 * [Access to the Universal Editor](/help/implementing/universal-editor/getting-started.md#onboarding)
 * [A local Universal Editor service](/help/implementing/universal-editor/local-dev.md) running for development purposes
+  * Make sure to direct your browser to [accept the local services self-signed certificate.](/help/implementing/universal-editor/local-dev.md#editing)
 
 Beyond general familiarity with web development, this document assumes basic familiarity with AEM development. If you are not experienced with AEM development, consider reviewing [the WKND tutorial before continuing.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
@@ -142,7 +142,7 @@ You must add the necessary JavaScript library to the page component of the WKND 
 1. Add the JavaScript library to the end of the file.
 
    ```html
-   <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js"></script>
+   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
    ```
 
 1. Click **Save All** and then reload the Universal Editor.
@@ -158,7 +158,7 @@ The page now loads with the proper JavaScript library to allow the Universal Edi
 
 The WKND page now loads successfully in the Universal Editor and the JavaScript library loads to connect the editor to your app.
 
-However you likely quickly noticed that you can not interact with the page in the Universal Editor. The Universal Editor can not actually edit your page. For the Universal Editor to be able to edit your content, you need to define a connection so it knows where to write the content. For local development, you need to write back to your local AEM development instance at `https://localhost:8443`.
+However you likely noticed that you can not interact with the page in the Universal Editor. The Universal Editor can not actually edit your page. For the Universal Editor to be able to edit your content, you need to define a connection so it knows where to write the content. For local development, you need to write back to your local AEM development instance at `https://localhost:8443`.
 
 1. Open CRXDE Lite.
 
@@ -175,6 +175,8 @@ However you likely quickly noticed that you can not interact with the page in th
    ```html
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
+
+   * The latest version of the library is always recommended. If you need a prior version, please see the document [Getting Started with the Universal Editor in AEM.](/help/implementing/universal-editor/getting-started.md#alternative)
 
 1. Add the necessary metadata for the connection to your local Universal Editor service to the end of the file.
 
@@ -221,10 +223,9 @@ Your components must also be instrumented to be editable with the Universal Edit
 1. At the end of the first `div` at approximately line 26, add the instrumentation details for the component.
 
    ```text
-   itemscope
-   itemid="urn:aem:${resource.path}"
-   itemtype="component"
-   data-editor-itemlabel="Teaser"
+   data-aue-resource="urn:aem:${resource.path}"
+   data-aue-type="component"
+   data-aue-label="Teaser"
    ```
 
 1. Click **Save All** in the toolbar and reload the Universal Editor.
@@ -256,9 +257,9 @@ You can now select the teaser, but still not edit it. This is because the teaser
 1. Insert the following properties at the end of the `h2` tag (near line 17).
 
    ```text
-   itemprop="jcr:title"
-   itemtype="text"
-   data-editor-itemlabel="Title"
+   data-aue-prop="jcr:title"
+   data-aue-type="text"
+   data-aue-label="Title"
    ```
 
 1. Click **Save All** in the toolbar and reload the Universal Editor.
@@ -275,15 +276,14 @@ Now that you can edit the title of the teaser, let's take a moment to review wha
 
 You have identified the teaser component to the Universal Editor by instrumenting it.
 
-* `itemscope` identifies it as an item for the Universal Editor.
-* `itemid` identifies the resource in AEM that is being edited.
-* `itemtype` defines that the items should be treated as a page component (as opposed to say, a container).
-* `data-editor-itemlabel` displays a user-friendly label in the UI for the selected teaser.
+* `data-aue-resource` identifies the resource in AEM that is being edited.
+* `data-aue-type` defines that the items should be treated as a page component (as opposed to say, a container).
+* `data-aue-label` displays a user-friendly label in the UI for the selected teaser.
 
 You have also instrumented the title component within the teaser component.
 
-* `itemprop` is the JCR attribute which is written.
-* `itemtype` is how the attribute should be edited. In this case, with the text editor since it is a title (as opposed to say, the rich text editor).
+* `data-aue-prop` is the JCR attribute which is written.
+* `data-aue-type` is how the attribute should be edited. In this case, with the text editor since it is a title (as opposed to say, the rich text editor).
 
 ## Defining Authentication Headers {#auth-header}
 
@@ -293,13 +293,13 @@ Now you can edit the title of the teaser in-line and changes are persisted in th
 
 However, if you reload the browser, the previous title is reloaded. This is because although the Universal Editor knows how to connect to your AEM instance, it editor can't yet authenticate to your AEM instance to write back changes to the JCR.
 
-If you show the network tab of the browser developer tools and search for `update`, you can see that it is encountering a 500 error when you try to edit the title.
+If you show the network tab of the browser developer tools and search for `update`, you can see that it is encountering a 401 error when you try to edit the title.
 
 ![Error when trying to edit the title](assets/dev-edit-error.png)
 
 When using the Universal Editor to edit your production AEM content, the Universal Editor uses the same IMS token that you used to log on to the editor to authenticate to AEM to facilitate writing back to the JCR.
 
-When you are developing locally, you can't use the AEM identity provider, so you need to manually provide a way to authenticate by explicitly setting an authentication header.
+When you are developing locally, you can't use the AEM identity provider since IMS tokens are only passed to Adobe-owned domains. You need to manually provide a way to authenticate by explicitly setting an authentication header.
 
 1. In the Universal Editor interface, click the **Authentication Headers** icon in the toolbar.
 
@@ -317,22 +317,24 @@ If you investigate the traffic in the browser developer tools and look for the `
 
 ```json
 {
-  "op": "patch",
-  "connections": {
-    "aem": "aem:https://localhost:8443"
-  },
-  "path": {
-    "itemid": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
-    "itemtype": "text",
-    "itemprop": "jcr:title"
+  "connections": [
+    {
+      "name": "aem",
+      "protocol": "aem",
+      "uri": "https://localhost:8443"
+    }
+  ],
+  "target": {
+    "resource": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
+    "type": "text",
+    "prop": "jcr:title"
   },
   "value": "Tiny Toon Adventures"
 }
 ```
 
-* `op` is the operation, which in this case is a patch of the existing content of the edited field.
 * `connections` is the connection to your local AEM instance
-* `path` is the exact node and properties that are updated in the JCR
+* `target` is the exact node and properties that are updated in the JCR
 * `value` is the update that you made.
 
 You can see the change persisted in the JCR.
@@ -351,7 +353,7 @@ You now have an app that is instrumented to be editable using the Universal Edit
 
 Editing is currently limited to in-line editing of the teaser's title. However, there are cases when editing in-place is not sufficient. Text such as the title of the teaser can be edited where it is with keyboard input. However more complicated items need to be able to display and allow editing of structured data separate from how it is rendered in the browser. This is what the properties rail is for.
 
-Now update your app to use the properties rail for editing. To do that you return to the header file of the page component of your app, where you already established the connections to your local AEM development instance and your local Universal Editor service. Here you must define the components that are editable in the app and their data models.
+To update your app to use the properties rail for editing, return to the header file of the page component of your app. This is where you already established the connections to your local AEM development instance and your local Universal Editor service. Here you must define the components that are editable in the app and their data models.
 
 1. Open CRXDE Lite.
 
@@ -363,10 +365,10 @@ Now update your app to use the properties rail for editing. To do that you retur
 
    ![Editing the customheaderlibs.html file](assets/dev-instrument-properties-rail.png)
 
-1. Add the necessary script to map the fields to the end of the file.
+1. To the end of the file add the necessary script to define the components.
 
    ```html
-   <script type="application/vnd.adobe.aem.editor.component-definition+json">
+   <script type="application/vnd.adobe.aue.component+json">
    {
      "groups": [
        {
@@ -382,29 +384,69 @@ Now update your app to use the properties rail for editing. To do that you retur
                    "resourceType": "wknd/components/teaser"
                  }
                }
-             },
-             "model": {
-               "id": "teaser",
-               "fields": [
-                 {
-                   "component": "text-input",
-                   "name": "jcr:title",
-                   "label": "Title",
-                   "valueType": "string"
-                 },
-                 {
-                   "component": "text-area",
-                   "name": "jcr:description",
-                   "label": "Description",
-                   "valueType": "string"
+             }
+           },
+           {
+             "title": "Title",
+             "id": "title",
+             "plugins": {
+               "aem": {
+                 "page": {
+                   "resourceType": "wknd/components/title"
                  }
-               ]
+               }
              }
            }
          ]
        }
      ]
    }
+   </script>
+   ```
+
+1. Below that, to the end of the file add the necessary script to define the model.
+
+   ```html
+   <script type="application/vnd.adobe.aue.model+json">
+   [
+     {
+       "id": "teaser",
+       "fields": [
+         {
+           "component": "text-input",
+           "name": "jcr:title",
+           "label": "Title",
+           "valueType": "string"
+         },
+         {
+           "component": "text-area",
+           "name": "jcr:description",
+           "label": "Description",
+           "valueType": "string"
+         }
+       ]
+     },
+     {
+       "id": "title",
+       "fields": [
+         {
+           "component": "select",
+           "name": "type",
+           "value": "h1",
+           "label": "Type",
+           "valueType": "string",
+           "options": [
+             { "name": "h1", "value": "h1" },
+             { "name": "h2", "value": "h2" },
+             { "name": "h3", "value": "h3" },
+             { "name": "h4", "value": "h4" },
+             { "name": "h5", "value": "h5" },
+             { "name": "h6", "value": "h6" }
+           ]
+         }
+       ]
+     }
+   ]
    </script>
    ```
 
@@ -451,15 +493,17 @@ You also need to define at the component level, which model the component should
 
    ![Editing the teaser.html file](assets/dev-edit-teaser.png)
 
-1. At the end of the first `div` at approximately line 32, after the `itemscope` properties you added previously, add the instrumentation details for the model the teaser component will use.
+1. At the end of the first `div` at approximately line 32, after the properties you added previously, add the instrumentation details for the model the teaser component will use.
 
    ```text
-   data-editor-itemmodel="teaser"
+   data-aue-model="teaser"
    ```
 
 1. Click **Save All** in the toolbar and reload the Universal Editor.
 
-1. Click the title of the teaser to edit it once more.
+Now you are ready to test out the properties rail instrumented for your component.
+
+1. In the Universal Editor, click the title of the teaser to edit it once more.
 
 1. Click the properties rail to show the properties tab and see the fields that you just instrumented.
 
@@ -483,7 +527,7 @@ For example, you can add a field to adjust the styling of the component.
 
    ![Editing the customheaderlibs.html file](assets/dev-instrument-styles.png)
 
-1. Add an additional item to the `fields` array for the style field. Remember to add a comma after the last field before inserting the new one.
+1. In the model definition script, add an additional item to the `fields` array for the style field. Remember to add a comma after the last field before inserting the new one.
 
    ```json
    {
@@ -543,3 +587,4 @@ Have a look at the following documents for more information and details on the U
 * See the document [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md#service) for more details on the structure of the Universal Editor.
 * See the document [Local AEM Development with the Universal Editor](/help/implementing/universal-editor/local-dev.md) for more details on how to connect to a self-hosted version of the Universal Editor.
 * See the document [Using the Sling Resource Merger in Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/sling-resource-merger.md) for more details on overlaying nodes.
+

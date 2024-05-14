@@ -4,8 +4,8 @@ description: Reserved keywords that you cannot use as identifiers in your Adapti
 topic-tags: author
 role: Admin, Developer, User
 feature: Adaptive Forms
+exl-id: 2cd3c322-9c38-42be-9877-a03c9ffc02ae
 ---
-
 # Adaptive Forms keywords {#adaptive-forms-keywords}
 
 Adaptive Forms keywords are predefined, reserved identifiers that have special meaning for Adaptive Forms. You cannot use these keywords as identifiers in your Adaptive Forms. The following table lists all the keywords that are reserved identifiers for Adaptive Forms.

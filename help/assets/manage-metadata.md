@@ -54,7 +54,42 @@ For these reasons, [!DNL Assets] provides you with the right means of creating, 
 
 ## Types of metadata {#types-of-metadata}
 
-The two basic types of metadata are technical metadata and descriptive metadata.
+Metadata is classified as Technical, Informational, and Administrative metadata.
+
+### Technical metadata
+
+Technical metadata focuses on the technical aspects of digital assets, providing crucial information related to:
+
+* File size
+* Format
+* Resolution
+* Dimensions
+* Color mode
+
+This type of metadata helps users understand and efficiently use digital assets.
+
+### Informational metadata
+
+Informational metadata provides descriptive information to enhance content understanding, aiding in content discovery and searchability. It includes keywords, captions, and descriptions. <br>For example, when managing a video in Experience Manager Assets, we can include the following informational metadata:
+
+* **Keywords**: Marketing, Product launch, Promo
+* **Caption**: Introducing our latest product with exciting features
+* **Description**: A detailed overview of the video content.
+
+### Administrative metadata
+
+Administrative metadata deals with the managerial aspects of digital assets. It ensures access control, compliance, and managing the overall lifecycle of assets within the digital asset management system. It includes information related to:
+
+* Asset ownership
+* Usage rights
+* Permissions
+* Other administrative details
+
+This metadata type ensures effective asset management, access control, and compliance.
+
+<!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
+
+<!-- The two basic types of metadata are technical metadata and descriptive metadata.
 
 Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determine technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
 
@@ -65,7 +100,7 @@ Technical metadata is useful for software applications that are dealing with dig
 
 Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
 
-The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management.
+The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management. -->
 
 ## Metadata and Last Modification {#last-modification}
 
@@ -209,7 +244,7 @@ The application-specific metadata includes technical and descriptive metadata. I
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
 * PLUS - [Picture Licensing Universal System](https://www.useplus.com).
-* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
+<!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * PRL - PRISM Rights Language.
 * PUR - PRISM Usage Rights.
 * `xmpPlus` - Integration of PLUS with XMP.
@@ -224,7 +259,7 @@ The application-specific metadata includes technical and descriptive metadata. I
 ### Print-specific metadata {#print-specific-metadata}
 
 * PDF and PDF/X - Adobe PDF and third-party applications.
-* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
+<!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - XMP metadata for paged text.
 
@@ -254,6 +289,7 @@ Creating metadata-driven workflows help you automate some processes, which impro
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

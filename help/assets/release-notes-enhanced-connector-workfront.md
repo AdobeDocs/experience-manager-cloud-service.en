@@ -7,25 +7,21 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 
 The following section outlines the general Release Notes for [!DNL Workfront for Experience Manager enhanced connector].
 
-## Release Date {#release-date}
-
-The release date for the latest version 1.9.15 of [!DNL Workfront for Experience Manager enhanced connector] is November 17, 2023.
+The release date for the latest version 1.9.19 of [!DNL Workfront for Experience Manager enhanced connector] is April 12, 2024.
 
 ## Release highlights {#release-highlights}
 
-The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fixes:
+The latest version of the [!DNL Workfront for Experience Manager enhanced connector] includes the following bug fix:
 
-* While viewing the list of AEM folders, the dialog takes more than a minute to load.
-* Authorized [!DNL Workfront] users are consistently receiving authentication failure error logs.
+* Failure to close HTTP clients is causing out-of-memory issues.
 
 >[!NOTE]
 >
 >AEM 6.4 has reached the end of extended support. See our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/?lang=en).
 
-
 >[!IMPORTANT]
 >
->Adobe recommends you [upgrade to the latest 1.9.15 version](/help/assets/workfront-connector-install.md) of the [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recommends you [upgrade to the latest 1.9.19 version](/help/assets/workfront-connector-install.md) of the [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Known Issues {#known-issues}
 
@@ -34,6 +30,40 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * When you are using the classic Workfront experience, the **[!UICONTROL Send to]** option available in the **[!UICONTROL More]** drop-down list does not allow you to select the target destination within Experience Manager. The **[!UICONTROL Send to]** option works correctly using the **[!UICONTROL Document Actions]** drop-down list. The **[!UICONTROL Send to]** option works correctly for **[!UICONTROL More]** drop-down list and the **[!UICONTROL Document Actions]** drop-down list available in the new Workfront experience.
 
 ## Previous releases {#previous-releases}
+
+### March 2024 release {#march-2024-release}
+
+* Processing multi-asset uploads from Workfront encounters issues.
+* Not adding closing quotes when using Workfront to search for folders in Experience Manager results in `SERVER_ERROR`.
+
+### February 2024 release {#february-2024-release}
+
+* Enable toggle feature to allow AEM Cloud customers to configure and set up a connector.
+
+* Closing the `resourceResolver` without explicitly closing the underlying session causes session leaks in AEM instances. It is crucial to explicitely close the session, as auto-closing the Resource Resolver does not implicitly close the session.
+
+### January 2024 release {#january-2024-release}
+
+* The [!DNL Workfront] configuration in [!DNL CRX DE] currently does not store the `project ID`, causing errors when applying read-only permission. Learn more about how to [configure permissions](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
+
+* No public documentation on how to add custom property to the out of the box index definition. Learn more about [adding custom property](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
+
+* Deleting connection configurations on the enhanced connector significantly affects event subscriptions and other saved configurations, causing them to point to an old URL.
+
+* Installing the forms add-on package does not install the **[!UICONTROL Toggle Router]**, leading to the failure of the [!DNL WFEC AMS environment Toggle] feature.
+
+* Enabling event subscriptions on EWC setup results in repeated API call failures with `HTTP 400` error when setting up [!DNL Workfront] enhanced connector for the 1st time.
+
+* Deleting comments on linked folder assets at Workfront fails to find the linked folder path on AEM.
+
+* Insufficient support for large file assets in AEM results in a 4-byte size issue.
+
+* No request time processing for critical flows in linked folder, document update, and note update.
+
+### November 2023 release {#november-2023-release}
+
+* While viewing the list of AEM folders, the dialog takes more than a minute to load.
+* Authorized [!DNL Workfront] users are consistently receiving authentication failure error logs.
 
 ### October 2023 release {#october-2023-release}
 
@@ -87,7 +117,6 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
 * Comment deletions in Workfront are now reflected in Experience Manager.
 
 * Capability to manage blocking net-new customers on Experience Manager as a Cloud Service from configuring the connector.
-
 
 ### January 2023 release {#january-2022-release}
 

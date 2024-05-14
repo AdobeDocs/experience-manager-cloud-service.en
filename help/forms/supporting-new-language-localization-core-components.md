@@ -11,7 +11,7 @@ exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 | Foundation Components  |    [Click here](supporting-new-language-localization.md)                  |
 | Core Components     | This article         |
 
-<span class="preview"> The Right-to-Left language support feature is available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+<span class="preview"> The Right-to-Left language support feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
 AEM Forms provide out of the box support for English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. You can add support for more locales also, like Hindi(hi_IN). You can also present Adaptive Forms in a Right-to-Left (RTL) language like Arabic, Persian, and Urdu by adding these locales.  
 

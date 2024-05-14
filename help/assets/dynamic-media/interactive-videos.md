@@ -256,7 +256,7 @@ You add timeline segments to a video using the in-place visual editor on the Cre
 
 After you add timeline segments, you add thumbnail images within each segment. For each thumbnail that you add, you apply an action to it. For example, you can apply a Quickview to the thumbnail, or you can assign a hyperlink to it, or an Experience Fragment.
 
-See [Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+See [Experience Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -426,7 +426,7 @@ After you save your interactive video, the video is immediately opened into Prev
       <td>To associate the selected thumbnail image with an Experience Fragment</td> 
       <td><p>Under Action Type, select <strong>Experience Fragment</strong>, then do the following:<p> 
        <ul> 
-       <li>If you are an Experience Manager Sites customer, select the Search icon (magnifying glass) to open the Experience Fragment page. Select the Experience Fragment you want to use, then select <strong>To return to the Actions panel on the previous page, select </strong>in the upper-right corner of the page.<br /> See <a href="/help/sites-cloud/authoring/fundamentals/experience-fragments.md">Experience Fragments</a>.</li> 
+       <li>If you are an Experience Manager Sites customer, select the Search icon (magnifying glass) to open the Experience Fragment page. Select the Experience Fragment you want to use, then select <strong>To return to the Actions panel on the previous page, select </strong>in the upper-right corner of the page.<br /> See <a href="/help/sites-cloud/authoring/fragments/content-fragments.md">Experience Fragments</a>.</li> 
       </ul> 
        <ul> 
        <li>Specify the width and height of the Experience Fragment as it appears on the video.</li>

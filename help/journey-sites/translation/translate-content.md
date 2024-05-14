@@ -279,4 +279,4 @@ Build on this knowledge and continue your AEM Sites translation journey by next 
 While it is recommended that you move on to the next part of the translation journey by reviewing the document [Publish translated content,](publish-content.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Managing Translation Projects](/help/sites-cloud/administering/translation/managing-projects.md) - Learn the details of translation projects and additional features such as human translation workflows and multi-language projects.
-* [Authoring Environment and Tools](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM provides various mechanisms for organizing and editing your content including a robust path browser.
+* [Authoring Environment and Tools](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM provides various mechanisms for organizing and editing your content including a robust path browser.

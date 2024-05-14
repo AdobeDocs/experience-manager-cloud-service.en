@@ -709,7 +709,7 @@ query {
 
 Web-optimized image delivery lets you use a Graphql query to:
 
-* Request a URL to an AEM Asset image
+* Request a URL to a DAM asset image (referenced by a **Content Reference**)
 
 * Pass parameters with the query, so that a specific rendition of the image is automatically generated and returned
   
@@ -729,9 +729,17 @@ This lets you dynamically create image renditions for JSON delivery, which avoid
 
 The solution in GraphQL means you can:
 
-* use `_dynamicUrl` on the `ImageRef` reference
+* Request a URL: use `_dynamicUrl` on the `ImageRef` reference
 
-* add `_assetTransform` to the list header where your filters are defined
+* Pass parameters: add `_assetTransform` to the list header where your filters are defined
+
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>* `_dynamicUrl` : a DAM asset
+>* `_dmS7Url` : a Dynamic Media asset
+> 
+>If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
 
 ### Structure of the Transformation Request {#structure-transformation-request}
 
@@ -896,7 +904,7 @@ For example, to directly execute the previous samples (saved as persisted querie
     >
     >The trailing `;`is mandatory to cleanly terminate the list of parameters.
 
-### Limitations of Image Delivery {#image-delivery-limitations}
+### Limitations of web-optimized image delivery {#web-optimized-image-delivery-limitations}
 
 The following limitations exist:
 
@@ -906,6 +914,60 @@ The following limitations exist:
 
   * No caching on author
   * Caching on publish - max-age of 10 minutes (cannot be changed by client)
+
+## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
+
+GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
+
+>[!CAUTION]
+>
+>Only *image* assets from Dynamic Media can be referenced.
+
+The solution in GraphQL means you can:
+
+* use `_dmS7Url` on the `ImageRef` reference
+
+>[!NOTE]
+>
+>For this you need to have a [Dynamic Media Cloud Configuration](/help/assets/dynamic-media/config-dm.md). 
+>
+>This adds the `dam:scene7File` and `dam:scene7Domain` attributes on the asset's metadata when it is created.
+
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>
+>* `_dmS7Url` : a Dynamic Media asset
+>* `_dynamicUrl` : a DAM asset
+> 
+>If the image referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
+
+### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
+
+The following is a sample query:
+* for multiple Content Fragments of type `team` and `person`
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      _path
+      title
+      teamMembers {
+        fullName
+        profilePicture {
+          __typename
+          ... on ImageRef{
+            _dmS7Url
+            height
+            width
+          }
+        }
+      }
+    }
+  }
+} 
+```
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
@@ -979,19 +1041,32 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
       * See [Sample Query - All Cities with a Named Variation](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
-  * For [image delivery](#image-delivery):
+  * For image delivery:
 
-    * `_dynamicUrl`: on the `ImageRef` reference
+    * `_authorURL`: the full URL to the image asset on AEM Author 
+    * `_publishURL`: the full URL to the image asset on AEM Publish 
+ 
+    * For [web-optimized image delivery](#web-optimized-image-delivery-in-graphql-queries) (of DAM assets):
 
-    * `_assetTransform`: on the list header where your filters are defined
+      * `_dynamicUrl`: the full URL to the web-optimized DAM asset on the `ImageRef` reference
 
-    * See:
-    
-      * [Sample Query for Image Delivery with full parameters](#image-delivery-full-parameters)
+        >[!NOTE]
+        >
+        >`_dynamicUrl` is the preferred URL to use for web-optimized DAM assets and should replace the use of `_path`, `_authorUrl`, and `_publishUrl` whenever possible.
 
-      * [Sample Query for Image Delivery with a single specified parameter](#image-delivery-single-specified-parameter)
+      * `_assetTransform`: to pass parameters on the list header where your filters are defined
 
-  * `_tags` : to reveal the IDs of Content Fragments or Variations that contain tags; this is an array of `cq:tags` identifiers. 
+      * See:
+
+        * [Sample Query for web-optimized image delivery with full parameters](#web-optimized-image-delivery-full-parameters)
+
+        * [Sample Query for web-optimized image delivery with a single specified parameter](#web-optimized-image-delivery-single-query-variable)
+
+    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
+
+      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
+
+  * `_tags`: to reveal the IDs of Content Fragments or Variations that contain tags; this is an array of `cq:tags` identifiers. 
 
     * See [Sample Query - Names of All Cities Tagged as City Breaks](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
     * See [Sample Query for Content Fragment Variations of a given Model that have a specific tag attached](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
@@ -1041,6 +1116,31 @@ To protect against potential problems there are default limitations imposed on y
 * The query cannot contain more than 1M (1024 * 1024) characters
 * The query cannot contain more than 15000 tokens 
 * The query cannot contain more than 200000 whitespace tokens
+
+You also need to aware of:
+
+* A field conflict error will be returned when your GraphQL query contains fields with the same name in two (or more) models, and the following conditions are met:
+
+  * So where:
+
+    * Two (or more models) are used as possible references; when they are defined as an allowed **Model Type** in the Content Fragment reference.
+
+    and:
+
+    * These two models have fields having a common name; that means the same name occurs in both models.
+
+    and
+
+    * Those fields are of different data types.
+
+  * For example:
+
+    * When two (or more) fragments with different models (for example, `M1`, `M2`) are used as possible references (Content Reference or Fragment Reference) from another fragment; for example, `Fragment1` `MultiField/List`
+    * And these two fragments with different models (`M1`, `M2`) have fields with the same name, but different types.
+      To illustrate:
+      * `M1.Title` as `Text` 
+      * `M2.Title` as `Text/MultiField`
+    * Then a field conflict error will occur if the GraphQL query contains the `Title` field.
 
 ## FAQs {#faqs}
 

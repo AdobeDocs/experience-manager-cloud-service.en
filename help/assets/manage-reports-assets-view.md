@@ -1,34 +1,43 @@
 ---
 title: Manage reports in Assets view
 description: Access the data in the reports section of Assets view to assess product and feature usage and derive insights on key success metrics.
-exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
+exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 ---
 # Manage reports {#manage-reports}
 
->[!CONTEXTUALHELP]
->id="assets_reports"
->title="Reports"
->abstract="Asset reporting provides administrators with visibility into activity of the Adobe Experience Manager Assets view environment. This data provides useful information about how users interact with content and the product. All users who are assigned to the Administrators product profile can access the Insights dashboard or create user-defined reports."
-
-Asset reporting provides administrators with visibility into activity of the Adobe Experience Manager Assets view environment. This data provides useful information about how users interact with content and the product. 
+Asset reporting provides administrators with visibility into activity of the Adobe Experience Manager Assets view environment. This data provides useful information about how users interact with content and the product. All users can access the Insights dashboard and the ones who are assigned to the Administrators product profile can create user-defined reports. 
 
 ## Access reports {#access-reports}
 
 All users who are assigned to the Assets view Administrators product profile can access the Insights dashboard or create user-defined reports in Assets view.
 
+To access reports, navigate to **[!UICONTROL Reports]** under **[!UICONTROL Settings]**.
+
+![Reports](assets/reports.png)
+<!--
+In the **[!UICONTROL Reports]** screen, various components are shown in the tabular format which includes the following:
+
+* **Title**: Title of the report
+* **Type**: Determines whether the report is uploaded or downloaded to the repository
+* **Description**: Provide details of the report that was given during uploading/downloading the report
+* **Status**: Determines whether the report is completed, under progress, or deleted.
+* **Author**: Provides email of the author who has uploaded/downloaded the report.
+* **Created**: Gives information of the date when the report was generated.
+-->
+
 ## View Insights {#view-live-statistics}
 
 Assets view enables you to view real-time data for your Assets view environment with the Insights dashboard. You can view real-time event metrics during the last 30 days or for the last 12 months. 
 
-<!--![Toolbar options when you select an asset](assets/assets-essentials-live-statistics.png)-->
+   <!--![Toolbar options when you select an asset](assets/assets-essentials-live-statistics.png)-->
 
 Click **[!UICONTROL Insights]** available in the left navigation pane to view the following automatically generated charts:
 
    ![Insights](assets/insights.png)
 
-* **Downloads**: The number of assets downloaded from the Assets view environment in the last 30 days or 12 months represented using a line chart.
+* **Downloads**: The number of assets downloaded from the Assets view environment in the last 30 days or 12 months represented using a line graph.
 
-* **Uploads**: The number of assets uploaded to the Assets view environment in the last 30 days or 12 months represented using a line chart.
+* **Uploads**: The number of assets uploaded to the Assets view environment in the last 30 days or 12 months represented using a line graph.
 
 <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
@@ -40,12 +49,11 @@ Click **[!UICONTROL Insights]** available in the left navigation pane to view th
 
 * **Top Searches**: View top searched terms along with the number of times those terms are searched within your Assets view environment in the last 30 days or 12 months represented in a tabular format.
 
-<!--
-
-* **Storage usage**: The storage usage, in gigabytes (GB), for the Assets view environment, for the last 30 days or 12 months represented using a bar chart.
-
--->
-
+  <!--
+   ![Insights](assets/insights1.png)
+   ![Insights](assets/insights2.png)
+   -->
+   
 ## Create a Download report {#create-download-report}
 
 To create a Download report:
@@ -59,7 +67,7 @@ To create a Download report:
 1. Select the folder path, which comprises the assets to execute the report on, using the **[!UICONTROL Select Folder Path]** field.
 
 1. Select the date interval for the report.
-
+   
    >[!NOTE]
    >
    > Assets view converts all local time zones to Coordinated Universal Time (UTC).

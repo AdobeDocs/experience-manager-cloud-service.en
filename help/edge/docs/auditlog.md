@@ -2,6 +2,7 @@
 description: Admin and indexing operations are recorded in an audit log that can be queried via an Admin endpoint.
 title: Audit log
 feature: Edge Delivery Services
+exl-id: 18751843-d2c9-44d7-b354-4c551a1a634c
 ---
 # Audit log
 

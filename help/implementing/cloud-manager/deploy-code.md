@@ -25,7 +25,7 @@ Once you have [configured your production Pipeline](/help/implementing/cloud-man
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. Click the program for which you want to deploy code.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, tap or click the program for which you want to deploy code.
 
 1. Click **Deploy** from the call-to-action on the **Overview** screen to start the deployment process.
 

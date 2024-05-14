@@ -1,9 +1,9 @@
 ---
 title: Troubleshoot Persisted GraphQL queries
-description: Learn how to troubleshoot issues with persisted GraphQL queries in Adobe Experience Manager as a Cloud Service. 
+description: Learn how to troubleshoot issues with persisted GraphQL queries in Adobe Experience Manager as a Cloud Service.
 feature: Content Fragments,GraphQL API
+exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
 ---
-
 # Troubleshoot Persisted GraphQL Queries {#troubleshoot-persisted-graphql-queries}
 
 The [Actions Center](/help/operations/actions-center.md) includes the **GraphQL persisted query error** alert. This means that you are informed whenever one of your GraphQL persisted queries throws an error.
@@ -28,13 +28,13 @@ To address this, either:
 
 ## GraphQL endpoint not configured {#graphql-endpoint-not-configured}
 
-When persisted queries return the `400` or `500` error code, together with the information `No suitable endpoint found`, this means that no GraphQL endpoint is configured on the AEM environment. 
+When persisted queries return the `404` error code, together with the information `No suitable endpoint found`, this means that no GraphQL endpoint is configured on the AEM environment. 
 
 To correct this, follow the steps for enabling and publishing your endpoint from [Manage GraphQL endpoints in AEM](/help/headless/graphql-api/graphql-endpoint.md).
 
 ## Missing path in the GraphQL persisted query URL {#missing-path-query-url}
 
-If persisted queries return the `400` or `500` error code with the information `Suffix: '/' does not contain a path`, the GraphQL servlet is being called without a path suffix. 
+If persisted queries return the `400` error code with the information `Suffix: '/' does not contain a path`, the GraphQL servlet is being called without a path suffix. 
 
 The pattern should be `/graphql/execute.json/thePath`.
 

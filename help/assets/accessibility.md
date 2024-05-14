@@ -74,7 +74,7 @@ Many user interface elements that are clickable or actionable with a pointer can
 
 ### Keyboard shortcuts in [!DNL Assets] {#keyboard-shortcuts}
 
-The following actions in [!DNL Assets] work with the listed keyboard shortcuts. Most keyboard shortcuts that apply to [!DNL Experience Manager] Consoles also apply to [!DNL Assets]. See [keyboard shortcuts for Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). See how to [enable or disable the keyboard shortcuts](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+The following actions in [!DNL Assets] work with the listed keyboard shortcuts. Most keyboard shortcuts that apply to [!DNL Experience Manager] Consoles also apply to [!DNL Assets]. See [keyboard shortcuts for Consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md). See how to [enable or disable the keyboard shortcuts](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 | User interface or scenario|Keyboard shortcut|Action|
 |---|---|---|
@@ -225,6 +225,7 @@ When sharing assets, the following functionalities improve the accessibility:
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 ## Provide feedback {#a11y-feedback}
 

@@ -1,8 +1,8 @@
 ---
-title: "[!DNL Assets view] user interface"
+title: '[!DNL Assets view] user interface'
 description: Understand user interface of and navigation in [!DNL Assets view].
 role: User
-exl-id: 534a8084-88f7-410e-b872-719e47e62b10
+exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 ---
 # Navigate to files and folders and view assets {#view-assets-and-details}
 
@@ -18,15 +18,7 @@ When you log into [!DNL Assets view], you see the following interface.
 
 ![[!DNL Assets view] user interface](assets/assets-view-interface.png)
 
-&nbsp;&nbsp;&nbsp; *A: Left sidebar to browse repository and provides access to a few other options*
-&nbsp;&nbsp;&nbsp; *B: Display or collapse the left sidebar to increase asset-viewing area*
-&nbsp;&nbsp;&nbsp; *C: Filter search results*
-&nbsp;&nbsp;&nbsp; *D: Select all contents of the selected folder*
-&nbsp;&nbsp;&nbsp; *E: Options to sort assets*
-&nbsp;&nbsp;&nbsp; *F: Search box*
-&nbsp;&nbsp;&nbsp; *G: Upload or drag and drop files using `Add Assets` button*
-&nbsp;&nbsp;&nbsp; *H: Create a new folder*
-&nbsp;&nbsp;&nbsp; *I: Switch between different views*
+**A**: Left sidebar to browse repository and provides access to a few other options **B**: Display or collapse the left sidebar to increase asset-viewing area **C**: Filter search results **D**: Select all contents of the selected folder **E**: Options to sort assets **F**: Search box **G**: Upload or drag and drop files using `Add Assets` button **H**: Create a new folder **I**: Switch between different views
 
 <!-- TBD: Need an embedded video here with narration. It has to be hosted on MPC to be embeddable. -->
 
@@ -41,7 +33,7 @@ You can browse the folders from the main user interface or from the left sidebar
 * [Collections](/help/assets/manage-collections-assets-view.md): A collection is a set of assets, folders, or other collections within Adobe Experience Manager Assets view. Use collections to share assets between users. Unlike folders, a collection can include assets from different locations. You can share multiple collections with a user. Each collection contains references to assets. The referential integrity of assets is maintained across collections.
 
 * [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics): In [!DNL Assets view], you can view real-time insights on your dashboard. Assets view enables you to view real-time data for your Assets view environment with the Insights dashboard. You can view real-time event metrics during the last 30 days or for the last 12 months. 
-* **Trash**: List the assets deleted from the root **[!UICONTROL Assets]** folder. You can select an asset in the Trash folder to either restore it to the original location or permanently delete it. You can also specify a keyword or apply standard or custom filters to search appropriate assets within the Trash folder. For more information on using standard and custom filters, see [Search assets in Assets view](/help/assets/search-assets-view.md).
+* **Trash**: List the assets deleted from the root **[!UICONTROL Assets]** folder. You can select an asset in the Trash folder to restore it to its original location or permanently delete it. You can specify a keyword or apply filters such as asset status, file type, mime type, image size, asset creation, modification, and expiration dates, as well as filtering by assets discarded by the current user. You can also apply custom filters to search appropriate assets within the Trash folder. For more information on using standard and custom filters, see how to [search assets in Assets view](/help/assets/search-assets-view.md).
 * **Settings**: You can configure various options of Assets view using **Settings**, such as, Metadata forms, Reports, and Taxonomy Management.
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
@@ -76,23 +68,7 @@ To preview an asset, select it and click [!UICONTROL Details] ![details icon](as
 
 ![Preview an asset](assets/preview-asset-2.png)
 
-*A: Return to the current folder or current search result in the repository*
-*B: Name and format for the file you are previewing*
-*C: Assign tasks*
-*D: Download asset*
-*E: Preview asset and see metadata information*
-*D: Advanced metadata*
-*E: Keywords and smart tags*
-*F: Comment and annotate*
-*G: View tasks related to the selected Asset*
-*H: View and manage versions*
-*I: View renditions of the image*
-*J: Edit image*
-*K: Basic metadata*
-*L: Advanced metadata*
-*M: Keywords and smart tags*
-*N: Preview more closely. Zoom, full screen, and other options*
-*O: Proceed to previous or next asset in the current folder without going back to the folder*
+**A**: Return to the current folder or current search result in the repository **B**: Name and format for the file you are previewing **C**: Assign tasks **D**: Advanced metadata **E**: Keywords and smart tags **F**: Comment and annotate **G**: View tasks related to the selected Asset **H**: View and manage versions **I**: View renditions of the image **J**: Edit image **K**: Basic metadata **L**: Advanced metadata **M**: Keywords and smart tags **N**: Preview more closely. Zoom, full screen, and other options **O**: Proceed to previous or next asset in the current folder without going back to the folder
 
 You can also preview videos.
 

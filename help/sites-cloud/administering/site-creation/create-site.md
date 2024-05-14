@@ -69,7 +69,7 @@ Using a template to create a site is simple.
 
    * The site title appears in the browsers title bar.
    * The site name becomes part of the URL.
-   * The site name must comply with [AEM's page naming conventions](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
+   * The site name must comply with [AEM's page naming conventions](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices).
 
 1. Select **Create** and the site is created from the site template.
 

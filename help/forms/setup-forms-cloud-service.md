@@ -3,6 +3,7 @@ title: How do I set up an [!DNL AEM Forms] as a cloud service environment?
 description: Learn to set up and configure an [!DNL AEM Forms] as a Cloud Service environment.
 role: Admin, Developer, User
 feature: Adaptive Forms
+exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 ---
 # Onboard to [!DNL AEM Forms] as a Cloud Service {#overview}
 
@@ -18,7 +19,7 @@ feature: Adaptive Forms
 
 * **User Experience (UX) Designer**: A User Experience (UX) Designer defines style, layout, and branding for [!DNL AEM Forms] assets.
 
-* **Forms practitioner**: A Forms practitioner creates Adaptive Forms, themes, and templates as per the style, layout, and branding provided by the UX Designer. The practitioner also creates and integrates Adaptive Form with a Form Data Model and AEM Workflows. A Forms Practitioner typically undertakes front-end related tasks.
+* **Forms practitioner**: A Forms practitioner creates Adaptive Forms, themes, and templates as per the style, layout, and branding provided by the UX Designer. The practitioner also creates and integrates Adaptive Form with a Form Data Model (FDM) and AEM Workflows. A Forms Practitioner typically undertakes front-end related tasks.
 
 * **Forms developer**: A Forms developer develops a custom forms solution. A Forms developer typically undertakes backend development like developing custom components, AEM Workflows, pre-fill services and more.
 
@@ -40,21 +41,24 @@ feature: Adaptive Forms
 
 * (For Sandboxes only) After onboarding the service, [create](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) and [run](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) both production and non-production pipelines. It enables and brings the latest features of [!DNL AEM Forms] as a Cloud Service to your environment.
 
-You can use Forms as a Cloud Service to create an adaptive form (Digital Enrollment) or generate a customer communication. After completing [Onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) to the [!DNL Adobe Experience Manager] as a Cloud Service, perform one of the following actions to enable Digital Enrollment or Customer Communications features. You can also enable both the features:
+You can use Forms as a Cloud Service to create an adaptive form (Digital Enrollment) or generate a customer communication. After completing [Onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) to the [!DNL Adobe Experience Manager] as a Cloud Service, perform the following actions to enable Forms - Digital Enrollment or Customer Communications features. <!--You can also enable both the features-->:
 
 1. Log in to Cloud Manager and open your AEM Forms as a Cloud Service Instance.
+1. Open the Edit Program option, go to the Solutions & Add-ons tab:
 
-1. Open the Edit Program option, go to the Solutions & Add-ons tab, and select the **[!UICONTROL Forms - Communications]** option.
+    * If you have a production environment, select **[!UICONTROL Forms - Communications]** option to enable Forms - Digital Enrollment and Forms - Communications Add-On.
 
-   ![Communications](assets/communications.png)
+      ![Communications](assets/communications.png)  
 
-    If you have already enabled the **[!UICONTROL Forms - Digital Enrollment]** option, then select the **[!UICONTROL Forms - Communications Add-On]** option.  
+    <!-- If you have already enabled the **[!UICONTROL Forms - Digital Enrollment]** option, then select the **[!UICONTROL Forms - Communications Add-On]** option. ![Addon](assets/add-on.png) -->
 
-   ![Addon](assets/add-on.png)
+    * If you have a sandbox environment, select **[!UICONTROL Forms]** to enable Forms - Digital Enrollment and Forms - Communications Add-On.
+
+        ![Form-Digital Enrollment selection](assets/forms-digital-enrollment1.png)
+
 
 1. Click **[!UICONTROL Update]**.
-
-1. Run the build pipeline. After the build pipeline succeeds, Communications APIs are enabled for your environment.
+1. Run the build pipeline. After the build pipeline succeeds, selected solution is enabled for your environment.
 
 >[!NOTE]
 >

@@ -1,7 +1,7 @@
 ---
 title: My Workspace for Assets view
 description: My Workspace is a page that provides customizable visual modules for convenient access to key areas of the Assets user interface and information that is most relevant to the user.
-exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
+exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
 ---
 # My Workspace for Assets {#my-workspace}
 
@@ -12,7 +12,7 @@ exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
 
 Assets now includes a customizable workspace that provides widgets for convenient access to key areas of the Assets user interface and information that is most relevant to you. This page serves as a one-stop solution to provide an overview of your work items and to give quick access to key workflows. More convenient access to these options increases your efficiency and content velocity.
 
-You can access My Workspace by clicking **[!UICONTROL My Workspace]** from the items available in the left navigation pane. My Workspace includes a variety of widgets that show Quck access, Insights, Tasks, and Content widgets. You can configure how these widgets are displayed in your Workspace based on your preferences.
+You can access My Workspace by clicking **[!UICONTROL My Workspace]** from the items available in the left navigation pane. My Workspace includes a variety of widgets that show Quick access, Insights, Tasks, and Content widgets. You can configure how these widgets are displayed in your Workspace based on your preferences.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ To pin an asset, a folder, or a collection:
 
 1. Select the item and click **[!UICONTROL Pin to Quick Access]**.
 
-1. Select if you need to pin the item just for you, for the entire organization, or for selected groups. If you select **[!UICONTROL For groups]**, define the group names in the **[!UICONTROL Pin for groups]** field.
+1. Select if you need to pin the item just for you, for the entire organization, or for selected groups. If you select **[!UICONTROL For groups]**, choose an existing group names in the **[!UICONTROL Pin for groups]** field.
 
    ![Pin items for groups](assets/pin-items-for-groups.png)
 1. Click **[!UICONTROL Pin]**.
@@ -56,7 +56,7 @@ You can also view top searched terms along with the number of times those terms 
 
 **Tasks**
 
-Displays the list of tasks currently assigned to you in the **[!UICONTROL My Tasks]** tab, created by you in the **[!UICONTROL Assigned tasks]** tab, and the tasks already completed by you in the **[!UICONTROL Completed]** tab. You can select a task and click **[!UICONTROL Complete Task]** to approve or reject a task. You can also select a task and click **[!UICONTROL Open Task Details]** to view the task and approve, reject, edit, or delete it.
+Displays the list of tasks currently assigned to you in the **[!UICONTROL My Tasks]** tab, created by you in the **[!UICONTROL Assigned tasks]** tab, and the tasks already completed by you in the **[!UICONTROL Completed tasks]** tab. You can select a task and click **[!UICONTROL Complete ask]** to approve or reject a task. You can also select a task and click **[!UICONTROL Open Task Details]** to view the task and approve, reject, edit, or delete it.
 
 ![Tasks in Workspace](assets/tasks-workspace.png)
 

@@ -234,7 +234,7 @@ This combines the benefits of:
 
 >[!NOTE]
 >
->For more details, the [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) is a good starting point.
+>For more details, the [Basic Handling](/help/sites-cloud/authoring/basic-handling.md) is a good starting point.
 
 The basic principles of the authoring user interface (UI), for both Sites and Assets, will be very familiar to anyone who has used AEM in the past.
 
