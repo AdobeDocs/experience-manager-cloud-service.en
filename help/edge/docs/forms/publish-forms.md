@@ -83,12 +83,14 @@ To add the form to your webpage:
     Use the preview URL (.page URL) for developmental or testing purposes, or the publish URL (.live) for production. Here's are examples with preview and publish URL: 
 
     **Preview URL**
+
     | Form  |
     |---|
     | [https://main--wefinance--wkndforms.hlx.page/enquiry.json ](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
 
 
-     **Publish URL**
+    **Publish URL**
+
     | Form  |
     |---|
     | [https://main--wefinance--wkndforms.hlx.live/enquiry.json ](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
