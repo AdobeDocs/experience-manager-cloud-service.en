@@ -142,6 +142,7 @@ To add the confidence score OSGI configuration to the project deployed to [!DNL 
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
