@@ -2,11 +2,11 @@
 title: Getting Started with AEM Forms Edge Delivery Service. Create a form.
 description: Craft perfect forms, fast! ⚡ AEM Forms Edge Delivery doc-based authoring = blazing speed & SEO-friendly forms for happier users & search engines.
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 ---
 # Create a form using Adaptive Forms Block
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
 
 AEM Forms Edge Delivery provides a block, known as Adaptive Forms Block, to help you easily create forms to capture and store captured data. You can [create a new AEM project pre-configured with Adaptive Forms Block](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).  
 
@@ -15,15 +15,13 @@ These forms submit data directly to a Microsoft Excel or Google Sheets file, ena
 ![Document-based Authoring  ecosystem](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
 
-
-
 ## Prerequisites
 
 Before you start, ensure that you have completed the following steps:
 
 * Set up an [AEM project using AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [added Adaptive Forms Block to your existing AEM Project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) and clone the corresponding GitHub repository on your local machine. 
 In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  
-* Ensure that you have access to Google Sheets or Microsoft SharePoint. To set up Microsoft SharePoint as your content source, see [How to use SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
+* Ensure that you have access to Google Sheets or Microsoft SharePoint. To set up Microsoft SharePoint as your content source, see [How to use SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
@@ -76,7 +74,7 @@ To proceed with form creation:
 
     ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. Ensure that the sheet is shared with the appropriate AEM user (for example `helix@adobe.com`) [as per the configurations specified for your project](https://www.aem.live/docs/setup-customer-SharePoint). Grant the user editing permission for the sheet. 
+1. Ensure that the sheet is shared with the appropriate AEM user (for example `helix@adobe.com`) [as per the configurations specified for your project](https://www.aem.live/docs/setup-customer-sharepoint). Grant the user editing permission for the sheet. 
 
 1. Open the created spreadsheet and rename the default sheet to "shared-default". 
 

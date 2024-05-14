@@ -1,13 +1,13 @@
 ---
-title: Release Notes for Cloud Manager 2024.2.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2024.2.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2024.4.0 in Adobe Experience Manager as a Cloud Service
+description: These are the release notes for Cloud Manager 2024.4.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 ---
 
-# Release Notes for Cloud Manager 2024.2.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release Notes for Cloud Manager 2024.4.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager release 2024.2.0 in AEM as a Cloud Service.
+This page documents the release notes for Cloud Manager release 2024.4.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -15,16 +15,16 @@ This page documents the release notes for Cloud Manager release 2024.2.0 in AEM 
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager release 2024.2.0 in AEM as a Cloud Service is 15 February 2024. The next release is planned for 16 March 2024.
+The release date for Cloud Manager release 2024.4.0 in AEM as a Cloud Service is 10 April 2024. The next release is planned for 9 May 2024.
 
 ## What's New {#what-is-new}
 
-* Cloud Manager now supports self-service management of [pipeline variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) via the Cloud Manager UI.
-* [The preview service](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice) will now be enabled for environments created before the preview service feature was rolled out.
-* [Cloud Manager custom permissions](/help/implementing/cloud-manager/custom-permissions.md) let you create custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.
-  * This feature began rolling out in a phased manner with the [December 2023 release](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md) and will be complete on 20 February 2024.
-* For all new environments, the [environment product profile](/help/onboarding/aem-cs-team-product-profiles.md) names will be a more user-friendly format based on a combination of profile description, environment type, number, and program number.
-* [The build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) has been updated to Maven version 3.9.4 and JDK versions jdk-11.0.22 and jdk1.8.0_401.
+* The deletion operation has been improved for [Edge Delivery](/help/edge/overview.md) websites by updating the domain mappings from the program which is related to that site.
+  * If no more sites are mapped, the mapping is deleted.
+* Deployment tracking has been enhanced by providing real-time status updates during the critical startup phase of an AEM instance.
+  * This feature ensures that you have complete visibility into your deployment progress, enabling better decision-making and operational efficiency.
+* The [network infrastructure](/help/security/configuring-advanced-networking.md) listing has been enhanced to display all connected environments without region-based filtering to provide a more comprehensive view.
+* Enhanced error messages for code build issues allow easier identification of root causes and next actionable steps.
 
 ## Early Adoption Program {#early-adoption}
 
@@ -67,4 +67,4 @@ Interested in test-driving the new dashboard? To get started, send an email to `
 
 ## Bug Fixes {#bug-fixes}
 
-* The JDK of the build containers has been updated to a version that solves [JDK-8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
+* A bug where Cloud Manager reused artifacts with the wrong commit hash has been addressed.

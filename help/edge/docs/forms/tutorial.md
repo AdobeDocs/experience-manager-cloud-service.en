@@ -1,11 +1,9 @@
 ---
-title: Getting Started with AEM Forms Edge Delivery Services - Developer Tutorial 
+title: Getting Started with AEM Forms Edge Delivery Services - Developer Tutorial
 description: This tutorial helps get you up-and-running with a new Adobe Experience Manager Forms (AEM) project. In ten to twenty minutes, you will have created your own forms.s
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
+exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 ---
-
 # Getting Started - Developer Tutorial 
 
 In today's digital age, creating user-friendly forms is essential for any organization. AEM Forms Edge Delivery Services (EDS) lets you create forms using familiar tools like Google Docs and Microsoft Office. 
@@ -15,8 +13,6 @@ These forms submit data directly to a Microsoft Excel or Google Sheets file, ena
 AEM Forms provide a block, known as Adaptive Forms Block, to help you easily create forms to capture and store captured data. You can [create a new AEM project pre-configured with Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project). 
 
 This AEM Forms tutorial guides you through creating, previewing, and publishing your own custom form with a new Adobe Experience Manager (AEM) Forms project.
-
-
 
 ## Prerequisites
 
@@ -119,7 +115,7 @@ To copy the sample content to your own content folder and point your GitHub repo
 
         ```HTML
 
-        https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+        https://<tenant>.SharePoint.com/sites/<sp-site>/Shared%20Documents/<folder-name>
 
         ```
 
@@ -131,8 +127,7 @@ To copy the sample content to your own content folder and point your GitHub repo
 
         ```
 
-        For more information on managing files with within Microsoft SharePoint, refer to [How to use Adobe SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).  
- 
+        For more information on managing files with Microsoft SharePoint, see [How to use Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).  
 
       
     1. Commit the updated `fsatb.yaml` file, once you've updated the reference and everything looks good. If you encounter any build issues, see [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues). 
@@ -197,7 +192,7 @@ To preview unpublished content:
 
 The sample content includes an "enquiry" sheet that serves as a template for the "enquiry" form. Each row of the sheet represents a [form field](/help/edge/docs/forms/form-components.md#available-components), and the column headers define the [field properties](/help/edge/docs/forms/form-components.md#available-components). This sample form gives you a head start on building your form. 
 
-![Enquiry form](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+![Enquiry form](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
 Let's start with updating a field label. Open the 'enquiry' sheet for editing, change the label of submit button to `Let's Chat` and use AEM Sidekick to preview and publish the file. 
 
@@ -267,6 +262,7 @@ Ready to showcase your creation? Use Git to commit and push your changes. This u
 
 Preview: `https://<branch>--<repo>--<owner>.hlx.page/`
 Production: `https://<branch>--<repo>--<owner>.hlx.live/`
+
 Congratulations! You've successfully set up your local development environment and deployed your changes.
 
 
@@ -278,7 +274,7 @@ Congratulations! You've successfully set up your local development environment a
 
 If you have an existing AEM Project, you can integrate the Adaptive Forms Block into your current project to get started on form creation. 
 
->![NOTE]
+>[!NOTE]
 >
 >
 > This step applies to projects built with the [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). If you created your AEM project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
@@ -309,4 +305,3 @@ Ensure a smooth GitHub build process by addressing potential issues:
 ## See also
 
 {{see-more-forms-eds}}
-

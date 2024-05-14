@@ -8,8 +8,6 @@ exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 
 Learn about fields and the component types that the Universal Editor can edit in the properties rail with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 
-{{universal-editor-status}}
-
 ## Overview {#overview}
 
 When adapting your own apps for use with the Universal Editor, you must instrument the components and define what fields and component types they can manipulate in the properties rail of the editor. You do this by creating a model and linking to that from the component.
@@ -91,6 +89,7 @@ The following are the component types that are possible to use for rendering fie
 |[Boolean](#boolean)|`boolean`|
 |[Checkbox Group](#checkbox-group)|`checkbox-group`|
 |[Container](#container)|`container`|
+|[Content Fragment](#content-fragment)|`aem-content-fragment`|
 |[Date Time](#date-time)|`date-time`|
 |[Multiselect](#multiselect)|`multiselect`|
 |[Number](#number)|`number`|
@@ -285,6 +284,8 @@ A container component type allows the grouping of components. It offers an addit
 >[!TAB Screenshot]
 
 ![Screenshot of container component type](assets/component-types/container.png)
+
+>[!ENDTABS]
 
 #### Content Fragment {#content-fragment}
 

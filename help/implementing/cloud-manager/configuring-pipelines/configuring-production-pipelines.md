@@ -31,7 +31,7 @@ Once you have set up your program and have at least one environment using the [!
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization
 
-1. On the **[My Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** screen, select the program.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
 1. Navigate to the **Pipelines** card from the **Program Overview** page and click **Add** to select **Add Production Pipeline**. 
 
@@ -87,25 +87,13 @@ To finish the configuration of the full-stack code production pipeline, follow t
 
    ![Full stack code](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. Click **Continue** to advance to the **Experience Audit** tab where you can define the paths that should always be included in the Experience Audit.
+1. Tap or click **Continue** to advance to the **Experience Audit** tab where you can define the paths that should always be included in the Experience Audit.
 
    ![Add Experience Audit](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
   
-1. Provide a path to be included in the Experience Audit.
+1. Provide paths to be included in the Experience Audit.
 
-   * Page paths must start with `/`.
-   * For example, if you would like to include `https://wknd.site/us/en/about-us.html` in the Experience Audit, enter the path `/us/en/about-us.html`.
-
-   ![Defining a path for the Experience Audit](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
-
-1. Click **Add Page** and the path is auto-completed with the address of your environment and added to the table of paths.
-
-   ![Saving path to the table](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
-
-1. Continue to add paths as necessary by repeating the previous two steps.
-
-   * You can add a maximum of 25 paths.
-   * If you do not define any paths, the homepage of the site is included in the Experience Audit by default.
+   * See the document [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) for details.
 
 1. Click **Save** to save your pipeline.
 

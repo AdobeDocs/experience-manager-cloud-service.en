@@ -16,14 +16,39 @@ Use [!DNL Assets view] to accomplish the following asset management tasks. When 
 *Figure: Options available in the toolbar for a selected image.*
 
 * ![deselect icon](assets/do-not-localize/close-icon.png) Deselect the selection.
+
+* ![find similar icon](assets/do-not-localize/find-similar.svg) Find similar image asset in the Assets UI based on the metadata and smart tags.
+
 * ![details icon](assets/do-not-localize/edit-in-icon.png) Click to preview an asset and view the detailed metadata. When previewing, you can view the versions and edit an image.
+
 * ![download icon](assets/do-not-localize/download-icon.png) Download the selected asset to your local file system.
+
+* ![add collection icon](assets/do-not-localize/add-collection.svg) Add the selected asset to a collection.  
+
+* ![Pin assets icon](assets/do-not-localize/pin-quick-access.svg) Pin an asset for faster access when you need it later. All pinned items display in the **Quick access** section of My Workspace.
+
+* ![edit in express icon](assets/do-not-localize/edit-e.svg) Edit an image in the integrated Adobe Express within Adobe Experience Manager Assets.
+
+* ![edit asset icon](assets/do-not-localize/edit-e.svg) Edit the image using Adobe Express. 
+
+* ![share asset link icon](assets/do-not-localize/share-link.svg) for an asset with other users so that they can access and download it.
+
 * ![delete icon](assets/do-not-localize/delete-icon.png) Delete the selected asset or folder.
-* ![checkout icon](assets/do-not-localize/checkout-icon.png) Checkout the selected asset.
+
 * ![copy icon](assets/do-not-localize/copy-icon.png) Copy the selected file or folder.
+
 * ![move icon](assets/do-not-localize/move-icon.png) Move the selected asset or folder to a different location in the repository hierarchy.
-* ![rename icon](assets/do-not-localize/rename-icon.png) Rename the selected asset or folder. Use a unique name otherwise renaming fails with a warning. You can try again with a new name.
+
+* ![rename icon](assets/do-not-localize/rename-icon.png) Rename the selected asset or folder. Use a unique name otherwise renaming fails with a warning. You can try again with a new name. 
+Additionally, you can click the title of an asset or a folder to rename it. Mention the new text in the **Rename Asset** textbox and click **Save**. This capability is available in Grid, Gallery, Waterfall and List views.
+
+* ![waterfall view icon](assets/do-not-localize/waterfall-view.png) [!UICONTROL Waterfall View].
+
+* ![copy library icon](assets/do-not-localize/copy-icon.png) Add an asset to Library.
+
 * ![assign task icon](assets/do-not-localize/review-delegate-icon.png) Assign tasks to other users to collaborate on an asset.
+
+* ![assign task icon](assets/do-not-localize/watch-asset.svg) Monitor the operations performed on an asset.
 
 You can view the same options on assets thumbnails.
 
@@ -142,3 +167,4 @@ To add Expiration Date metadata field to the form,  drag **[!UICONTROL Date]** c
 * Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
 
 * Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)
+

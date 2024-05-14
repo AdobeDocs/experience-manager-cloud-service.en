@@ -1,12 +1,10 @@
 ---
-title: Form Components and Properties
+title: Adaptive Form Block components and their properties
 description: This document provides an overview of the form components and their properties available in AEM Forms Edge Delivery Service.
 feature: Edge Delivery Services
-hide: yes
-hidefromtoc: yes
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 ---
-# Form Components and Properties: AEM Forms Edge Delivery Service
+# Adaptive Form Block components and their properties
 
 AEM Forms Edge Delivery Servicesallows you to create user-friendly and interactive forms using various components. These components cater to different types of data collection and can be easily customized to fit your specific needs. 
 
@@ -42,7 +40,6 @@ Each form component comes with various properties that allow you to control its 
 | Property     | Applicable Components        | Details                                                              |
 |--------------|------------------------------|----------------------------------------------------------------------|
 | Type         | All                          | Specifies the type of the component. This property determines the behavior and appearance of the input field. For example, for text inputs, the type may be "text," "email" for email inputs, "password" for password inputs. Adaptive Forms Block supports  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">all valid HTML5 input types</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> as type.|
-| Type         | All                          | Specifies the type of the component. This property determines the behavior and appearance of the input field. For example, for text inputs, the type may be "text," "email" for email inputs, "password" for password inputs. Adaptive Forms Block supports  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">all valid HTML5 input types</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> as type.|
 | Name         | All                          | Identifies the component for form submission. The name attribute is used when the form data is submitted to the server, associating the user input with a specific field. |
 | Label        | All                          | Provides contextual information to users. The label is the text displayed next to the component, giving users guidance on what information to input. |
 | Value        | Text, Password, Email, Number, Range, Date and its variants (datetime-local, month, week, time), Checkbox, Radio, Hidden, Submit, Button               | Specifies the initial value of the component. For text inputs, textarea, and select elements, this is the default text or option displayed. For radio and checkbox components, this is the value/data submitted when they are selected. The value attribute is optional but should be considered mandatory for checkbox and radio inputs. |
@@ -57,6 +54,10 @@ Each form component comes with various properties that allow you to control its 
 | Options      | Dropdown                     | Specifies choices for dropdown menus. The options property is a comma-separated list of choices for dropdown menus, defining the selectable options displayed to the user. |
 | Checked      | Checkbox, Radio              | Determines if the field is selected by default. The checked attribute is a boolean property used with checkbox and radio inputs. When set to true, it indicates that the field is selected by default when the form loads. |
 | Fieldset     | All                          | Groups fields to create visually distinct sections within a form. The fieldset element groups related fields within a form, visually separating them to improve organization and user experience. </br> To organize a set of fields within a fieldset, simply use the `fieldset` property and specify its name attribute. In the example below, we demonstrate how radio buttons are encapsulated within a single fieldset for better organization. ![Fieldset example](/help/edge/assets/fieldset-example.png) |
+| Repeatable  | All                          | A Boolean property for `fieldset` indicating that a particular fieldset can be repeated for specified `Min` and `Max` number of times. The `Min` property should set to 1 or greater, don't set the `Min` property to 0. |
+| Visible Expression  | All                          | A visible expression refers to a spreadsheet formula, denoted by the '=' tag, used for controlling the visibility of a field. In this formula, only the value property of other fields can be employed, allowing straightforward management of field visibility within the system.|
+| Value Expression  | All                          | A value expression refers to a spreadsheet formula, denoted by the '=' tag, used for controlling the value of a field. In this formula, only the value property of other fields can be employed, allowing straightforward management of field value within the system. |
+
 
 ## See also
 
