@@ -156,6 +156,6 @@ You are now ready to translate your own headless content in AEM. However AEM is 
 ## Additional Resources {#additional-resources}
 
 * [Managing Translation Projects](/help/sites-cloud/administering/translation/managing-projects.md) - Learn the details of translation projects and additional features such as human translation workflows and multi-language projects.
-* [Authoring concepts](/help/sites-cloud/authoring/getting-started/concepts.md) - Learn about the author and publish model of AEM in more detail. This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
-* [Publishing Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - Learn about the additional features available when publishing content. This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
-* [Authoring Environment and Tools](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM provides various mechanisms for organizing and editing your content including a robust path browser.
+* [Authoring concepts](/help/sites-cloud/authoring/author-publish.md) - Learn about the author and publish model of AEM in more detail. This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
+* [Publishing Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - Learn about the additional features available when publishing content. This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
+* [Authoring Environment and Tools](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM provides various mechanisms for organizing and editing your content including a robust path browser.

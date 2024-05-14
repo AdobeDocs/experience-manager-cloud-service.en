@@ -1,13 +1,13 @@
 ---
-title: Release Notes for Cloud Manager 2023.12.0 in Adobe Experience Manager as a Cloud Service
-description: These are the release notes for Cloud Manager 2023.12.0 in AEM as a Cloud Service.
+title: Release Notes for Cloud Manager 2024.4.0 in Adobe Experience Manager as a Cloud Service
+description: These are the release notes for Cloud Manager 2024.4.0 in AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 ---
 
-# Release Notes for Cloud Manager 2023.12.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release Notes for Cloud Manager 2024.4.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-This page documents the release notes for Cloud Manager release 2023.12.0 in AEM as a Cloud Service.
+This page documents the release notes for Cloud Manager release 2024.4.0 in AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -15,25 +15,16 @@ This page documents the release notes for Cloud Manager release 2023.12.0 in AEM
 
 ## Release Date {#release-date}
 
-The release date for Cloud Manager release 2023.12.0 in AEM as a Cloud Service is 14 December 2023. The next release is planned for 18 January 2024.
+The release date for Cloud Manager release 2024.4.0 in AEM as a Cloud Service is 10 April 2024. The next release is planned for 9 May 2024.
 
 ## What's New {#what-is-new}
 
-* [Cloud Manager custom permissions](/help/implementing/cloud-manager/custom-permissions.md) let you create custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.
-  * This feature will be rolled out in a phased manner with completion expected with the February 2024 Cloud Manager release.
-  * Please send an email to `Grp-CloudManager-custom-permissions@adobe.com` from the email address associated with your Adobe ID, if you wish to be enabled sooner.
-* Build containers now support Node.js version 18 for [frontend pipelines.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
-* For newly-created Cloud Manager programs, [the associated New Relic sub-account](/help/implementing/cloud-manager/user-access-new-relic.md) is not activated by default.
-  * For existing programs where the New Relic sub-account has not been accessed for more than 90 days, it will be deactivated.
-  * If you wish to use the New Relic sub-account, you will need to opt-in via Cloud Manager.
-* The rollouts of updates to the [build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) that were [announced and begun with the October release of Cloud Manager](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) have been completed.
-  * Support for Node 18 was added for [front end and full stack pipelines.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-  * Java 8 minor version was updated to `jdk1.8.0_371`.
-  * Java 11 minor version was updated to `jdk-11.0.20`.
-  * Maven was updated to version to 3.8.8.
-    * Maven now disables all insecure `http://*` mirrors by default.
-    * [Adobe recommends](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) users update their Maven repositories to use HTTPS instead of HTTP.
-  * The build container base image was updated to Ubuntu 22.04.
+* The deletion operation has been improved for [Edge Delivery](/help/edge/overview.md) websites by updating the domain mappings from the program which is related to that site.
+  * If no more sites are mapped, the mapping is deleted.
+* Deployment tracking has been enhanced by providing real-time status updates during the critical startup phase of an AEM instance.
+  * This feature ensures that you have complete visibility into your deployment progress, enabling better decision-making and operational efficiency.
+* The [network infrastructure](/help/security/configuring-advanced-networking.md) listing has been enhanced to display all connected environments without region-based filtering to provide a more comprehensive view.
+* Enhanced error messages for code build issues allow easier identification of root causes and next actionable steps.
 
 ## Early Adoption Program {#early-adoption}
 
@@ -49,7 +40,7 @@ If you are interested in testing this new feature and sharing your feedback, ple
 
 ### Bring your own GitHub {#byo-github}
 
-If you use GitHub to manage your repositories, [you can now validate code directly within your GitHub repositories through Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) This integration eliminates the need to consistently sync code with the Adobe repository and allows you to verify pull requests before merging them into the main branches.
+If you use GitHub to manage your repositories, [you can now validate code directly within your GitHub repositories through Cloud Manager.](/help/implementing/cloud-manager/managing-code/byo-github.md) This integration eliminates the need to consistently sync code with the Adobe repository and allows you to verify pull requests before merging them into the main branches. This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available.
 
 If you are interested in testing this new feature and sharing your feedback, send an email to `Grp-CloudManager_BYOG@adobe.com` from your email address associated with your Adobe ID.
 
@@ -73,3 +64,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 The dashboard uses Google Lighthouse, an open-source, automated tool for improving the quality of your web apps. You can run it against any web page, public, or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more.
 
 Interested in test-driving the new dashboard? To get started, send an email to `aem-lighthouse-pilot@adobe.com` from your email associated with your Adobe ID.
+
+## Bug Fixes {#bug-fixes}
+
+* A bug where Cloud Manager reused artifacts with the wrong commit hash has been addressed.

@@ -55,6 +55,10 @@ A few use cases for exporting metadata in bulk are:
 * Test or audit the metadata for compliance.
 * Externalize the metadata for separate localization.
 
+>[!NOTE]
+>
+>Metadata Exports are limited at 1,048,575 Assets, corresponding to the maximum worksheet size in Microsoft Excel. If an exported hierarchy contains more than this number of Assets, only the metadata of the first 1,048,575 Assets will be included in the CSV file.
+
 1. Select the asset folder that contains assets for which you want to export metadata. From the toolbar, select **[!UICONTROL Export metadata]**.
 1. In the Metadata Export dialog, specify a name for the CSV file. To export metadata for assets in subfolders, select **[!UICONTROL Include assets in subfolders]**.
 
@@ -84,6 +88,7 @@ A few use cases for exporting metadata in bulk are:
 * [Manage metadata](manage-metadata.md)
 * [Search facets](search-facets.md)
 * [Manage collections](manage-collections.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

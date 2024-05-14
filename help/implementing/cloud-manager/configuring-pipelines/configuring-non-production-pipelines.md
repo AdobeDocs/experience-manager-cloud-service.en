@@ -28,7 +28,9 @@ There are two types of non-production pipelines:
 
 Once you have set up your program and have at least one environment using the Cloud Manager UI, you are ready to add a non-production pipeline by following these steps.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
 1. Access the **Pipelines** card from the Cloud Manager home screen. Click **+Add** and select **Add Non-Production Pipeline**. 
 
@@ -104,18 +106,17 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
 
 A targeted deployment deploys code only for selected parts of your AEM application. In such a deployment you can choose to **Include** one of the following types of code:
 
-* **[Config](#config)** - Configure settings on your AEM environment, maintenance tasks, CDN rules, and more.
+* **Config** - Configure settings for traffic filter rules on your AEM environment.
   * See the document [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage traffic filter rules in your repository so they are deployed properly.
-* **[Front End Code](#front-end-code)** - Configure JavaScript and CSS for the front end of your AEM application.
+  * When running a targeted deployment pipeline, configurations [such as WAF configurations](/help/security/traffic-filter-rules-including-waf.md) will be deployed, provided they are saved to environment, repository, and branch you defined in the pipeline.
+  * At any time, there can only be one config pipeline per environment. 
+* **Front End Code** - Configure JavaScript and CSS for the front end of your AEM application.
   * With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
   * See the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.
-* **[Web Tier Config](#web-tier-config)** - Configure dispatcher properties to store, process, and delivery web pages to the client.
-
->[!NOTE]
->
->* If a web-tier code pipeline exists for the selected environment, this selection is disabled.
->* If you have an existing full-stack pipeline deploying to an environment, creating a web tier config pipeline for the same environment will case the existing web tier configuration in the full-stack pipeline to be ignored.
-> * At any time, there can only be one config pipeline per environment. 
+* **Web Tier Config** - Configure dispatcher properties to store, process, and delivery web pages to the client.
+  * See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) for more details.
+  * If a web-tier code pipeline exists for the selected environment, this selection is disabled.
+  * If you have an existing full-stack pipeline deploying to an environment, creating a web tier config pipeline for the same environment will case the existing web tier configuration in the full-stack pipeline to be ignored.
 
 The steps to complete the creation of your non-production, targeted deployment pipeline are the same once you choose a deployment type.
 
@@ -138,14 +139,18 @@ The steps to complete the creation of your non-production, targeted deployment p
    * **Git Branch** - This option defines from which branch in the selected pipeline should retrieve the code.
      * Enter the first few characters of the branch name and the auto-complete feature of this field. It finds the matching branches that you can select.
    * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
+   * **Pipeline** - For front-end non-production pipelines, you have the option to enable **[Experience Audit.](/help/implementing/cloud-manager/experience-audit-testing.md)**
    
-   ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Click **Save**.
+1. If you enabled Experience Audit, tap or click **Continue** to advance to the **Experience Audit** tab where you can define the paths that should always be included in the Experience Audit.
+
+   * If you enabled **Experience Audit**, please see the document [Experience Audit](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) for details on how to configure.
+   * If you did not, skip this step.
+
+1. Tap or click **Save** to save the pipeline.
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
-
-When running a targeted deployment pipeline, configurations [such as WAF configurations](/help/security/traffic-filter-rules-including-waf.md) will be deployed, provided they are saved to environment, repository, and branch you defined in the pipeline.
 
 ## Skip Dispatcher Packages {#skip-dispatcher-packages}
 

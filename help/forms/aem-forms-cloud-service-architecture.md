@@ -78,7 +78,7 @@ Adobe’s PDF Services API lets create, combine, export, and extract data from P
 
 Forms as a Cloud Service provide options to store content in an external storage system such as Blob Store, Database, or a storage service. You can also store in-process Workflows data (AEM Workflow Variables data) that contains Sensitive Personal Data (SPD) elements in a customer-managed repository for secure processing. Adobe recommends storing sensitive data on customer managed storages only.
 
-You can use the **Unified Storage Connector** to connect to Blob Storage and **Form Data Model** to connect to  databases or backend services (RESTful, SOAP, Azure Blob Storage, and more).  
+You can use the **Unified Storage Connector** to connect to Blob Storage and **Form Data Model (FDM)** to connect to  databases or backend services (RESTful, SOAP, Azure Blob Storage, and more).  
 
 ### Document Services
 
@@ -113,7 +113,7 @@ Every AEM Forms as a Cloud Service program has access to Fastly CDN service. It 
 +++
 
 +++Adaptive Forms
-Adaptive Forms enable customers to author web-friendly reflowable web forms and fragments that are used by the customers for their data capture needs. This feature enables customers to manage their complex data capture needs easily, by using multiple integrations with Adobe Sign, Document Services, Form Data Model, Automated Forms Conversion service, and more.
+Adaptive Forms enable customers to author web-friendly reflowable web forms and fragments that are used by the customers for their data capture needs. This feature enables customers to manage their complex data capture needs easily, by using multiple integrations with Adobe Sign, Document Services, Form Data Model (FDM), Automated Forms Conversion service, and more.
 
 +++
 
@@ -122,7 +122,7 @@ Automated Forms Conversion service helps accelerate digitization and modernizati
 
 +++
 
-+++Form Data Model
++++Form Data Model (FDM)
 The Form Data Model (FDM) feature is the standard way of creating data integrations with external/internal data sources and using them across the different Forms as a Cloud Service features. FDM provides a rich editor for customers to integrate, define, and manage relationships between the different entities and data sources and perform operations on them. Form data is stored in a data store hosted on the customer premises. Organizations can also use blob store hosted by the cloud provider and Adobe Experince Platform to store data.
 
 +++

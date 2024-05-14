@@ -11,7 +11,9 @@ Cloud Manager lets you view, update, replace, and delete custom domain names.
 
 Use the **View and Update** menu to view the details of any of your custom domain names.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
 1. Navigate to the **Environments** screen from the **Overview** page.
 
@@ -37,17 +39,13 @@ A user with the **Business Owner** or **Deployment Manager** role can use Cloud 
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Environments** screen from the **Overview** page.
-
-1. Navigate to the **Domain Settings** page from the **Environments** screen.
+1. Navigate to the **Domain Settings** page from the **Overview** screen.
 
 1. Identify the row of the custom domain name you want to delete.
 
 1. Click the ellipsis button at the far right end of the row.
 
 1. Select **Delete**.
-
-   ![Deleting custom domain names](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. Confirm your submission.
 

@@ -24,7 +24,7 @@ To access your license dashboard, follow these steps.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the products overview page, switch to the **License** tab.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, switch to the **License** tab.
 
 ![License Dashboard](assets/license-dashboard.png)
 

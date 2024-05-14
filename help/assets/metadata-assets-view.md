@@ -3,7 +3,7 @@ title: How to manage metadata in Assets view?
 description: Learn how to manage metadata in Assets view. Better metadata management makes an asset more accessible, easier to manage, and complete.
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
+exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 ---
 # Metadata in Assets View {#metadata}
 
@@ -11,7 +11,7 @@ Metadata means data or description about the data. For example, your images as a
 
 Metadata helps you further categorize assets and is helpful as the amount of digital information grows. It is possible to manage a few hundred files based on just the filenames, thumbnails, and memory. However, this approach is not scalable. It falls short when the number of people involved and the number of managed assets increase.
 
-With the addition of metadata, the value of a digital asset grows, because the asset becomes,
+With the addition of metadata, the value of a digital asset grows, because the asset becomes:
 
 * More accessible - systems and users can find it easily.
 * Easier to manage - you can find assets with the same set of properties easier and apply changes to them.
@@ -23,7 +23,7 @@ For these reasons, Assets provides you with the right means of creating, managin
 
 To view the metadata of an asset, browse to the asset or search the asset, select the asset, and click **[!UICONTROL Details]** in the toolbar.
 
-![View metadata of an asset](assets/metadata-view1.png)
+![View metadata of an asset](assets/metadata-view.png)
 
 *Figure: To view an asset and its metadata, click **[!UICONTROL Details]** from toolbar or double-click the asset.*
 
@@ -65,14 +65,15 @@ Tags can also be nested into a hierarchy to support relationships like category 
 Assets view provides many standard metadata fields by default. Organizations have additional metadata needs and need more metadata fields to add business-specific metadata. Metadata forms let businesses add custom metadata fields to an asset's [!UICONTROL Details] page. The business-specific metadata improves the governance and discovery of its assets. You can create forms from scratch or repurpose an existing form.
 
 You can configure metadata forms for different types of assets (different MIME types). Use the same form name as the file's MIME type. Assets view automatically match uploaded assets MIME type to the name of the form and updates the metadata for the uploaded assets based on the form fields.
-
+<!--
 For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contain metadata fields as defined in the form.
-
+-->
 Assets view uses the following sequence to search for existing metadata form names to apply the metadata fields to the uploaded assets of a particular type:
 
 MIME subtype > MIME type > `default` form > Out-of-the-box form
 
 For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contains metadata fields as defined in the form. If a metadata form by the name `PDF` or `pdf` does not exist, Assets view match if there is a metadata form by the name `application`. If there is a metadata form by the name `application`, the uploaded PDF documents contain metadata fields as defined in the form. If Assets view still does not find a matching metadata form, it searches for the `default` metadata form to apply metadata fields defined in the form to the uploaded PDF documents. If none of these steps work, Assets view applies metadata fields defined in the out-of-the-box form to all the uploaded PDF documents.
+Though if you want to assign a metadata form to a folder [see](#assign-metadata-form-folder).
 
 >[!IMPORTANT] 
 >
@@ -105,9 +106,9 @@ Watch this video to view the sequence of steps:
 
 Once a form is created, it is automatically applied when users upload an asset of the matching MIME type.
 
-To reuse an existing form to create a form, select a metadata form, click **[!UICONTROL Copy]** from the toolbar, provide a name, and click **[!UICONTROL Confirm]**. You can edit a metadata form to change it. When you change a form, it is used for assets uploaded after the change. It does not change the existing assets.
+To reuse an existing form to create a new form, select a metadata form, click **[!UICONTROL Copy]** from the toolbar, provide a name, and click **[!UICONTROL Confirm]**. You can edit a metadata form to change it. When you change a form, it is used for assets uploaded after the change. It does not change the existing assets.
 
-## Property components {#property-components}
+### Property components {#property-components}
 
 You can customize your metadata form using any of the following property components. Simply drag and drop the component type onto the form in the desired location and modify the component settings. 
 Below is an overview of each property type and how they are stored. 
@@ -127,6 +128,38 @@ Below is an overview of each property type and how they are stored.
 | Tags | Add a tag from values stored in Taxonomy Management (mapped to xcm:tags). |
 | Keywords | Add free-form keywords (mapped to dc:subject). |
 | Smart Tags | Add to augment search capabilities by automatically adding metadata tags. |
+
+### Assign metadata form to a folder {#assign-metadata-form-folder}
+
+You can also assign a metadata form to a folder within your Assets view deployment. The metadata form assigned to a folder as per the MIME type is overwritten when you apply a metadata form to a folder manually. All assets in the folder, including assets in the sub-folders, then display properties defined in the metadata form.
+
+To assign a metadata form to a folder:
+
+1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]** and select a metadata form.
+
+2. Click **[!UICONTROL Assign to Folder]**.
+
+3. Select the folder and click **[!UICONTROL Assign]**. You can select the folders by clicking the folder names.
+
+   ![assign metadata form to a folder](assets/assign-to-folder.png)
+
+   You can also navigate to the folder details page and select a metadata form from the folder properties available in the right pane to assign the metadata form to the folder.
+
+   ![Metadata form from folder properties](assets/metadata-from-folder-props.png)
+
+### Remove metadata form from folders {#remove-metadata-form-folder}
+
+After assigning a metadata form to one or multiple folders, Experience Manager Assets also enables you to remove metadata form from the selected folders.
+
+To remove a metadata form from a folder:
+
+1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]** and select a metadata form.
+
+1. Click **[!UICONTROL Remove from Folder(s)]**. The list of assigned folders for the metadata form display.
+
+1. Select the folder and click **[!UICONTROL Remove]**. You can also select multiple folders from the list.
+
+You can also navigate to the folder details page and select **[!UICONTROL System mapped Metadata Form]** from the **[!UICONTROL Metadata Forms]** field to remove the assigned metadata form from a folder.
 
 ## Next Steps {#next-steps}
 

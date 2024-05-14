@@ -120,11 +120,11 @@ When you have a multi-value component, such as radio buttons or list, while crea
 
 For example, a list has four options: Red, Blue, Green, and Yellow. While creating the rule, the options (radio buttons) are automatically retrieved and made available to the rule creator as following:
 
-![Multi value displays options](assets/multivaluefcdisplaysoptions.png)
+![Multi value displays options](assets/multivaluefcdisplaysoptions1.png)
 
 While writing a When rule, you can trigger the Clear Value Of action. Clear Value Of action clears the value of the specified object. Having Clear Value of as an option in the When statement lets you create complex conditions with multiple fields.
 
-![Clear value of](assets/clearvalueof.png)
+![Clear value of](assets/clearvalueof1.png)
 
 **[!UICONTROL Hide]** Hides the specified object.
 
@@ -134,15 +134,15 @@ While writing a When rule, you can trigger the Clear Value Of action. Clear Valu
 
 **[!UICONTROL Disable]** Disables the specified object.
 
-**[!UICONTROL Invoke service]** Invokes a service configured in a form data model. When you choose the Invoke Service operation, a field appears. On tapping the field, it displays all services configured in all form data models on your [!DNL Experience Manager] instance. On choosing a Form Data Model service, more fields appear where you can map form objects with input and output parameters for the specified service. See example rule for invoking Form Data Model services.
+**[!UICONTROL Invoke service]** Invokes a service configured in a form data model (FDM). When you choose the Invoke Service operation, a field appears. On tapping the field, it displays all services configured in all form data model (FDM) on your [!DNL Experience Manager] instance. On choosing a Form Data Model (FDM) service, more fields appear where you can map form objects with input and output parameters for the specified service. See example rule for invoking Form Data Model services.
 
 In addition to Form Data Model service, you can specify a direct WSDL URL to invoke a web service. However, a Form Data Model service has many benefits and the recommended approach to invoke a service.
 
-For more information about configuring services in form data model, see [[!DNL Experience Manager Forms] Data Integration](data-integration.md).
+For more information about configuring services in form data model (FDM), see [[!DNL Experience Manager Forms] Data Integration](data-integration.md).
 
-**[!UICONTROL Set value of]** Computes and sets the value of the specified object. You can set the object value to a string, the value of another object, the computed value using mathematical expression or function, the value of a property of an object, or the output value from a configured Form Data Model service. When you choose the web service option, it displays all services configured in all form data models on your [!DNL Experience Manager] instance. On choosing a Form Data Model service, more fields appear where you can map form objects with input and output parameters for the specified service.
+**[!UICONTROL Set value of]** Computes and sets the value of the specified object. You can set the object value to a string, the value of another object, the computed value using mathematical expression or function, the value of a property of an object, or the output value from a configured Form Data Model service. When you choose the web service option, it displays all services configured in all form data model (FDM) on your [!DNL Experience Manager] instance. On choosing a Form Data Model service, more fields appear where you can map form objects with input and output parameters for the specified service.
 
-For more information about configuring services in form data model, see [[!DNL Experience Manager Forms] Data Integration](data-integration.md).
+For more information about configuring services in form data model (FDM), see [[!DNL Experience Manager Forms] Data Integration](data-integration.md).
 
 The **[!UICONTROL Set Property]** rule type lets you set the value of a property of the specified object based on a condition action. You can set property to one of the following:
 * visible (Boolean)
@@ -160,7 +160,7 @@ The **[!UICONTROL Set Property]** rule type lets you set the value of a property
 
 For example, it enables you to define rules to add check boxes dynamically to the Adaptive Form. You can use custom function, a form object, or an object property to define a rule.
 
-![Set Property](assets/set_property_rule_new.png)
+![Set Property](assets/set_property_rule_new1.png)
 
 To define a rule based on a custom function, select **[!UICONTROL Function Output]** from the drop-down list, and drag-and-drop a custom function from the **[!UICONTROL Functions]** tab. If the condition action is met, the number of checkboxes defined in the custom function are added to the Adaptive Form.
 
@@ -170,7 +170,7 @@ A Set Property rule based on an object property lets you add the number of check
 
 The following figure depicts an example of dynamically adding checkboxes based on the number of drop-down lists in the Adaptive Form:
 
-![Object Property](assets/object_property_set_property_new.png)
+![Object Property](assets/object_property_set_property_new1.png)
 
 **[!UICONTROL Clear Value Of]** Clears the value of the specified object.
 
@@ -210,7 +210,7 @@ When (optional):
 
 The following example takes the value in `dependentid` field as input and sets the value of the `Relation` field to the output of the `Relation` argument of the `getDependent` Form Data Model service.
 
-![Set-value-web-service](assets/set-value-web-service.png)
+![Set-value-web-service](assets/set-value-web-service1.png)
 
 Example of Set Value rule using Form Data Model service
 
@@ -302,7 +302,7 @@ A typical Validate rule is structured as follows:
 
 ### [!UICONTROL Set Options Of] {#setoptionsof}
 
-The **[!UICONTROL Set Options Of]** rule type enables you to define rules to add check boxes dynamically to the Adaptive Form. You can use a Form Data Model or a custom function to define the rule.
+The **[!UICONTROL Set Options Of]** rule type enables you to define rules to add check boxes dynamically to the Adaptive Form. You can use a Form Data Model (FDM) or a custom function to define the rule.
 
 To define a rule based on a custom function, select **[!UICONTROL Function Output]** from the drop-down list, and drag-and-drop a custom function from the **[!UICONTROL Functions]** tab. The number of checkboxes defined in the custom function are added to the Adaptive Form.
 
@@ -310,7 +310,7 @@ To define a rule based on a custom function, select **[!UICONTROL Function Outpu
 
 To create a custom function, see [custom functions in rule editor](#custom-functions).
 
-To define a rule based on a form data model:
+To define a rule based on a form data model (FDM):
 
 1. Select **[!UICONTROL Service Output]** from the drop-down list.
 1. Select the data model object.
@@ -328,13 +328,13 @@ To launch the rule editor user interface:
 1. Open an Adaptive Form in authoring mode.
 1. Select the form object for which you want to write a rule, and in Component Toolbar select ![edit-rules](assets/edit-rules-icon.svg). The rule editor user interface appears.
 
-   ![create-rules](assets/create-rules.png)
+   ![create-rules](assets/create-rules1.png)
 
    Any existing rules on the selected form objects are listed in this view. For information about managing existing rules, see [Manage rules](rule-editor.md#p-manage-rules-p).
 
 1. Select **[!UICONTROL Create]** to write a new rule. The visual editor of the rule editor user interface opens by default when you launch the rule editor the first time.
 
-   ![Rule Editor UI](assets/rule-editor-ui.png)
+   ![Rule Editor UI](assets/rule-editor-ui1.png)
 
 Let's look at each component of the rule editor UI in detail.
 
@@ -352,7 +352,7 @@ The form objects that have one or more valid rules applied are marked with a Gre
 
 The Functions tab includes a set of built-in functions, such as Sum Of, Min Of, Max Of, Average Of, Number Of, and Validate Form. You can use these functions to compute values in repeatable panels and table rows and use them in action and condition statements when writing rules. You can, however, create [custom functions](#custom-functions) too.
 
-![The Functions tab](assets/functions.png)
+![The Functions tab](assets/functions1.png)
 
 >[!NOTE]
 >
@@ -654,7 +654,7 @@ After you have added your client library in the CRX repository, use it in your A
 
    >[!NOTE]
    >
-   > To invoke a form data model from rule editor using custom functions, [see here](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services). 
+   > To invoke a form data model (FDM) from rule editor using custom functions, [see here](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services). 
 
 #### Function declaration supported types {#function-declaration-supported-types}
 
@@ -812,7 +812,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### Invoke Form Data Model service {#invoke}
 
-Consider a web service `GetInterestRates` that takes loan amount, tenure, and applicant's credit score as input and returns a loan plan including EMI amount and rate of interest. You create a Form Data Model using the web service as a data source. You add data model objects and a `get` service to the form model. The service appears in the Services tab of the form data model. Then, create an Adaptive Form that includes fields from data model objects to capture user inputs for loan amount, tenure, and credit score. Add a button that triggers the web service to fetch plan details. The output is populated in appropriate fields.
+Consider a web service `GetInterestRates` that takes loan amount, tenure, and applicant's credit score as input and returns a loan plan including EMI amount and rate of interest. You create a Form Data Model (FDM) using the web service as a data source. You add data model objects and a `get` service to the form model. The service appears in the Services tab of the form data model (FDM). Then, create an Adaptive Form that includes fields from data model objects to capture user inputs for loan amount, tenure, and credit score. Add a button that triggers the web service to fetch plan details. The output is populated in appropriate fields.
 
 The following rule shows how you configure the Invoke service action to accomplish the example scenario.
 

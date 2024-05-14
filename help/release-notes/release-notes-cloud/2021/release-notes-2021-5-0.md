@@ -25,7 +25,7 @@ The following release (2021.6.0) will be on June 28, 2021.
 
 * [Prerelease Channel](/help/release-notes/prerelease.md): Preview upcoming features for a full month before they go live in production!
 
-* [API Deprecation](/help/release-notes/deprecated-apis.md): a list of the latest deprecated APIs for AEM as a Cloud Service is available. 
+* [API Deprecation](/help/release-notes/deprecated-removed-features.md): a list of the latest deprecated APIs for AEM as a Cloud Service is available. 
 
 * [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html):  Update your maven projects to the latest version, which includes a deprecated Java API check and other improvements. 
 
@@ -33,7 +33,7 @@ The following release (2021.6.0) will be on June 28, 2021.
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* You will soon be able to verify content on a new [Preview tier](/help/sites-cloud/authoring/fundamentals/previewing-content.md) to simulate the final experience look and feel as you would on the Publish tier. This is enabled by the AEM Sites Managed Publication wizard which is now allowing you to choose a publish destination between Publish or Preview. Experiences on Preview can then be accessed via a dedicated URL. After validation on Preview, content can be published from Author to Publish as usual. Enabling the Preview Service in AEM as a Cloud Service environments will be gradually rolled out in the next few weeks.
+* You will soon be able to verify content on a new [Preview tier](/help/sites-cloud/authoring/sites-console/previewing-content.md) to simulate the final experience look and feel as you would on the Publish tier. This is enabled by the AEM Sites Managed Publication wizard which is now allowing you to choose a publish destination between Publish or Preview. Experiences on Preview can then be accessed via a dedicated URL. After validation on Preview, content can be published from Author to Publish as usual. Enabling the Preview Service in AEM as a Cloud Service environments will be gradually rolled out in the next few weeks.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

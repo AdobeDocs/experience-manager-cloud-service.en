@@ -175,7 +175,9 @@ Build on this knowledge and continue your AEM Quick Site Creation journey by nex
 While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Set Up Your Pipeline,](pipeline-setup.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [AEM Standard Site Template](https://github.com/adobe/aem-site-template-standard) - This is the GitHub repository of the AEM Standard Site template.
-* [Creating and Organizing Pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - This guide details how to manage pages of your AEM Site if you want to customize it further after creating it from the template.
+* [Organizing Pages](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - This guide details how to organize the pages of your AEM Site.
+* [Creating Pages](/help/sites-cloud/authoring/sites-console/creating-pages.md) - This guide details how to add new pages to your site.
+* [Managing Pages](/help/sites-cloud/authoring/sites-console/managing-pages.md) - This guide details how to manage the pages of your site including moving, copying, and deleting.
 * [How to Work with Package](/help/implementing/developing/tools/package-manager.md) - Packages enable the importing and exporting of repository content. This document explains how to work with packages in AEM 6.5, which also applies to AEMaaCS.
 * [Site Administration Documentation](/help/sites-cloud/administering/site-creation/create-site.md) - Check out the technical docs on site creation for more details on the Quick Site Creation tool's features.
 * [Create or add forms to an AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - Learn step-by-step techniques and best practices for integrating forms into your website, optimizing your digital experiences for maximum impact.

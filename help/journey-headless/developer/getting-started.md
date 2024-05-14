@@ -89,7 +89,7 @@ To ensure your understanding of headless concepts, this AEM Headless Developer J
 
 However you should be aware of the additional hybrid possibilities open to you once you understand AEM's headless features. These cases are laid out below for your awareness. At the end of the journey, you are introduced to these concepts in more detail in case such flexibility is required for your project.
 
-### You already have an external consume of headless content such as a singe page application (SPA). {#already-have-a-spa}
+### You already have an external consume of headless content such as a single page application (SPA). {#already-have-a-spa}
 
 Let us assume that your basic requirement is at a minimum to deliver content from AEM to an existing, external service.
 
@@ -280,8 +280,8 @@ While it is recommended that you move on to the next part of the headless develo
 * [AEM Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use these hands-on tutorials to explore how to use the various options for delivering content to headless endpoints with AEM and chose what's right for you.
 * [Headless Content Management Using GraphQL APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - Follow this course for an overview of the GraphQL API implemented in AEM. Authentication via AdobeID is required.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) -  This GitHub project includes example applications that highlight AEM's GraphQL APIs.
-* [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md) - Technical documentation for the authoring environment of AEM including details on the author-publish setup
-* [Publishing Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - Technical documentation for publishing content on AEM
+* [Authoring Concepts](/help/sites-cloud/authoring/author-publish.md) - Technical documentation for the authoring environment of AEM including details on the author-publish setup
+* [Publishing Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - Technical documentation for publishing content on AEM
 * [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md) - Technical documentation of page naming restrictions in AEM
 * [Multi Site Manager and Translation](/help/sites-cloud/administering/msm-and-translation.md) - Technical documentation on AEM's powerful translation features
 * [AEM workflows](/help/sites-cloud/authoring/workflows/overview.md) - Technical documentation on how to automate workflows in AEM
@@ -292,3 +292,4 @@ While it is recommended that you move on to the next part of the headless develo
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - Technical documentation that explains how to create and modify Content Fragments (and other assets)
 * [Persisted Queries](/help/headless/graphql-api/persisted-queries.md) - Technical documentation on persisted queries in AEM
 * [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) - A complete discussion of the headless integration levels available in AEM
+* The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.

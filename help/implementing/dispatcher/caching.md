@@ -225,6 +225,10 @@ Now, images in blob storage that are marked private cannot be cached at the Disp
       </LocationMatch>
       ```
 
+### Analyzing CDN Cache Hit Ratio {#analyze-chr}
+
+See the [cache hit ratio analysis tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) for information about downloading CDN logs and analyzing your site's cache hite ratio, using a dashboard.
+
 ### HEAD request behavior {#request-behavior}
 
 When a HEAD request is received at the Adobe CDN for a resource that is **not** cached, the request is transformed and received by the Dispatcher and/or AEM instance as a GET request. If the response is cacheable, then subsequent HEAD requests are served from the CDN. If the response is not cacheable, then subsequent HEAD requests are passed to the Dispatcher, or AEM instance, or both, for a time that depends on the `Cache-Control` TTL.
@@ -274,7 +278,7 @@ In general, it is not necessary to invalidate the Dispatcher cache. Instead, you
 Like previous versions of AEM, publishing or unpublishing pages clears the content from the Dispatcher cache. If a caching issue is suspected, you should republish the pages in question and ensure that a virtual host is available that matches the `ServerAlias` localhost, which is required for Dispatcher cache invalidation.
 
 >[!NOTE]
->For proper Dispatcher invalidation, make sure that requests from "127.0.0.1", "localhost", ".local", ".adobeaemcloud.com", and ".adobeaemcloud.net" are all matched and handled by a vhost configuration so the request can be served. You can do this task by global matching "*" in a catch-all vhost configuration following the pattern in the reference [AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). Or, you can ensure that the previously mentioned list is caught by one of the vhosts.
+>For proper Dispatcher invalidation, make sure that requests from "127.0.0.1", "localhost", "\*.local", "\*.adobeaemcloud.com", and "\*.adobeaemcloud.net" are all matched and handled by a vhost configuration so the request can be served. You can do this task by global matching "*" in a catch-all vhost configuration following the pattern in the reference [AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). Or, you can ensure that the previously mentioned list is caught by one of the vhosts.
 
 When the publish instance receives a new version of a page or asset from the author, it uses the flush agent to invalidate appropriate paths on its Dispatcher. The updated path is removed from the Dispatcher cache, together with its parents, up to a level (you can configure this level with the [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 

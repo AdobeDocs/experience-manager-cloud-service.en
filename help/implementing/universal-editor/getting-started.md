@@ -12,8 +12,6 @@ Learn how to get access to the Universal Editor and how to start instrumenting y
 >
 >If you would prefer to dive right into an example, you can review the [Universal Editor Sample App on GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
 
-{{universal-editor-status}}
-
 ## Onboarding Steps {#onboarding}
 
 Although the Universal Editor can edit content from any source, this document will use an AEM app as an example.
@@ -29,7 +27,7 @@ This document will guide you through these steps.
 
 ## Request Access to the Universal Editor {#request-access}
 
-You first need to request access to the Universal Editor. See [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), sign in, and validate if you have access to the Universal Editor.
+You first need to request access to the Universal Editor. Open [`https://experience.adobe.com/#/aem/editor``](https://experience.adobe.com/#/aem/editor), sign in, and validate if you have access to the Universal Editor.
 
 In case you do not have access, it can be requested via a form linked on the same page.
 
@@ -53,11 +51,18 @@ import "@adobe/universal-editor-cors";
 
 ### Alternative for Non-React Apps {#alternative}
 
-If you are not implementing a React app and/or require server-side rendering an alternative method is to include the following to the document body.
+If you are not implementing a React app and/or require server-side rendering, an alternative method is to include the following to the document body.
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
+<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
 ```
+
+The latest version is always recommended, but previous versions of the service can be referenced in case of breaking changes.
+
+* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - The very latest UE CORS lib
+* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - The latest UE CORS lib under version 2.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - The latest UE CORS lib under version 2.1.x
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`- The exact UE CORS lib  version 2.1.1
 
 ## Add the Necessary OSGi Configurations {#osgi-configurations}
 
@@ -99,8 +104,6 @@ This property must be set in the `org.apache.sling.engine.impl.SlingMainServlet`
 
 The Universal Editor service requires a [uniform resource name (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) to identify and utilize the correct backend system for the content in the app being edited. Therefore, a URN schema is required to map content back to content resources.
 
-The instrumentation attributes added to the page consist mostly of [HTML Microdata,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) an industry-standard that can also be used to make HTML more semantic, make HTML documents indexable, and so on.
-
 ### Creating Connections {#connections}
 
 Connections which are used in the app are stored as `<meta>` tags in the page's `<head>`.
@@ -118,10 +121,10 @@ Connections which are used in the app are stored as `<meta>` tags in the page's 
 
 The identifier `urn:adobe:aue:system` represents the connection for the Adobe Universal Editor.
 
-`itemid`s will use the `urn` prefix to shorten the identifier.
+`data-aue-resource`s will use the `urn` prefix to shorten the identifier.
 
 ```html
-itemid="urn:<referenceName>:<resource>"
+data-aue-resource="urn:<referenceName>:<resource>"
 ```
 
 * `<referenceName>` - This is the named reference mentioned in the `<meta>` tag. E.g. `aemconnection`
@@ -143,19 +146,19 @@ itemid="urn:<referenceName>:<resource>"
 </head>
 <body>
         <aside>
-          <ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="container">
-            <li itemscope itemid="urn:aemconnection/content/example/listitem" itemtype="component">
-              <p itemprop="name" itemtype="text">Jane Doe</p>
-              <p itemprop="title" itemtype="text">Journalist</p>
-              <img itemprop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" itemtype="image" alt="avatar"/>
+          <ul data-aue-resource="urn:aemconnection:/content/example/list" data-aue-type="container">
+            <li data-aue-resource="urn:aemconnection/content/example/listitem" data-aue-type="component">
+              <p data-aue-prop="name" data-aue-type="text">Jane Doe</p>
+              <p data-aue-prop="title" data-aue-type="text">Journalist</p>
+              <img data-aue-prop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" data-aue-type="image" alt="avatar"/>
             </li>
 
 ...
 
-            <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="component">
-              <p itemprop="name" itemtype="text">John Smith</p>
-              <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
-              <img itemprop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" itemtype="image" alt="avatar"/>
+            <li data-aue-resource="urn:fcsconnection:/documents/mytext" data-aue-type="component">
+              <p data-aue-prop="name" data-aue-type="text">John Smith</p>
+              <p data-aue-resource="urn:aemconnection/content/example/another-source" data-aue-prop="title" data-aue-type="text">Photographer</p>
+              <img data-aue-prop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" data-aue-type="image" alt="avatar"/>
             </li>
           </ul>
         </aside>
@@ -189,15 +192,16 @@ If you only want to have certain extensions enabled for a page, you can set this
 
 Your app is now instrumented to use the Universal Editor!
 
-See [Authoring Content with the Universal Editor](authoring.md) to learn how easy and intuitive it is for content authors to create content using the Universal Editor.
+See [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) to learn how easy and intuitive it is for content authors to create content using the Universal Editor.
 
 ## Additional Resources {#additional-resources}
 
 To learn more about the Universal Editor, see these documents.
 
 * [Universal Editor Introduction](introduction.md) - Learn how the Universal Editor enables editing any aspect of any content in any implementation so you can deliver exceptional experiences, increase content velocity, and provide a state-of-the-art developer experience.
-* [Authoring Content with the Universal Editor](authoring.md) - Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
-* [Publishing Content with the Universal Editor](publishing.md) - Learn how the Universal Editor publishes content and how your apps can handle the published content.
+* [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
+* [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md) - Learn how the Universal Editor publishes content and how your apps can handle the published content.
 * [Universal Editor Architecture](architecture.md) - Learn about the architecture of the Universal Editor and how data flows between its services and layers.
 * [Attributes and Types](attributes-types.md) - Learn about the data attributes and types that the Universal Editor requires.
 * [Universal Editor Authentication](authentication.md) - Learn how the Universal Editor authenticates.
+
