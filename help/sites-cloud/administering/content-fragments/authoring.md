@@ -18,6 +18,7 @@ This editor provides:
 
 * [Auto-saving](#saving-autosaving), to prevent accidental loss of edits.
 * [In-line uploading of assets as content references](#reference-images), without having to upload them to the Asset DAM first.
+* [Generate Variations](#generate-variations-ai) to use the Generative AI to accelerate content creation based on prompts.
 * [Preview](#preview-content-fragment) of the rendered experience delivered by the Content Fragment.
 * Ability to [Publish](#publish-content-fragment) and [Unpublish](#unpublish-content-fragment) from the editor.
 * Ability to [view, and open, associated language copies](#view-language-copies) in the editor.
@@ -77,7 +78,7 @@ In the left panel you can see:
 
 * the list of **[Variations](#variations)** that have been created for this fragment:
   * **Main** is the Variation that is present when the Content Fragment is first created, you can add others later
-  * you can select and open a Variation for editing
+  * you can use Generate Variations(#generate-variations) to use a prompt based template that Adobe has created for a specific use case.
   * you can also [create a Variation](#create-variation)
 * the **Fields** within the fragment, and its variations:
   * the icon indicates the [Data Type](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -113,6 +114,8 @@ With every update that you make, the Content Fragment is automatically saved. Th
 From the editor you can:
 
 * [Create variations](#create-variation) of the **Main** content
+
+* [Use Generate Variations AI](#generate-variations-ai) to use Generative AI to use a prompt based template that Adobe has created for a specific use case.
 
 * Select the required variation for editing the content
 
@@ -150,6 +153,42 @@ To rename a **Variation**:
 
 1. Either press **Return** or move to another field to auto-save the change. The title is updated in the **Variations** panel on the left.
 
+### Create variations using Generate Variations {#generate-variations-ai}
+
+Use the new Generative Variations to use Generative AI to use a prompt based template that Adobe has created.
+
+To use the Generative Variations in the Content Fragment Editor:
+
+1. Open up Content Fragment Editor. In the header you will find the entry point to Generate Variations:
+
+    ![Generate Variations in Content Fragment Editor](assets/cfm-generate-variations1.png)
+
+1. Generate variations open in new tab. In left rail you can see the AEM Cloud instance and the Content Fragment you are editing. Select the prompt you want to use. 
+
+  >[!NOTE]
+    >
+    >The available Content Fragments available is limited now, but more will be added in future releases.
+
+  ![Export to Generate Variations in Content Fragment](assets/cfm-generate-variations2.png)
+
+3. Generate content by filling in the prompts. The content model from the fragment will be automatically be used to generate content using GenAI.
+
+  >[!NOTE]
+    >
+    >There are some limitations on fields supported. We are currently only supporting text fields.
+
+  ![Export to Generate Variations in Content Fragment](assets/cfm-generate-variations3.png)
+
+4. Select the generate variant you like and select “export variation”. Confirm the name of the content fragment variation and select either:
+ 
+    * **Export**: export variation to Content Fragment and stay in the Generate Variation application.
+    * **Export and open**: export variation to Content Fragment and open a new tab that shows the Content Fragment with the new variation from GenAI.
+
+    ![Export to Generate Variations in Content Fragment](assets/cfm-generate-variations4.png)
+
+5. Variations generated are shown in Main Content Fragment Editor.
+
+    ![View Generate Variations in Content Fragment](assets/cfm-generate-variations5.png)
 
 ### Delete a variation {#delete-variation}
 
