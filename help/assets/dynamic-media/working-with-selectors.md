@@ -2,6 +2,7 @@
 title: Work with Selectors
 description: Learn about methods you can use to select assets for interactive images, interactive videos, and carousel banners in Dynamic Media.
 contentOwner: Rick Brough
+feature: Selectors,Interactive Images,Interactive Videos,Carousel Banners
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
 ---
