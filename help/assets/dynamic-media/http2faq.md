@@ -2,6 +2,7 @@
 title: HTTP2 Delivery of Content FAQ
 description: Learn about HTTP2 content delivery and how it improves communication between browsers and servers for faster information transfer.
 contentOwner: Rick Brough
+feature: Dynamic Media,Configuration,FAQ
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 ---
