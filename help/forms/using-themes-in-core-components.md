@@ -115,11 +115,11 @@ To clone a theme, perform the following instructions:
 
 #### 2. Set name of a theme {#set-name-of-theme}
 
-1. Open the theme folder in a plain text editor. For example, to open the `aem-forms-theme-canvas` folder in Visual Studio Code editor.
+1. Open the theme folder in your IDE. For example, to open the `aem-forms-theme-canvas` folder in Visual Studio Code editor.
    
-1. Navigate to the `aem-forms-theme-canvas` folder.
+2. Navigate to the `aem-forms-theme-canvas` folder.
    
-1. Run the following command:
+3. Run the following command:
 
    ```
       code .
@@ -129,9 +129,9 @@ To clone a theme, perform the following instructions:
 
       The folder opens in the Visual Studio Code. 
 
-1. Open the `package.json` file for editing. 
+4. Open the `package.json` file for editing. 
 
-1. Set the values for the `name` and `version` attributes. 
+5. Set the values for the `name` and `version` attributes. 
 
     ![Canvas Theme name change image](/help/forms/assets/changename_canvastheme.png)
 
@@ -140,16 +140,16 @@ To clone a theme, perform the following instructions:
       > * The name attribute is used to uniquely identify the theme , and the specified name is displayed in the **Style** tab of the **Form Creation Wizard**. 
       > * You have the option to select a name for your theme according to your choice, for example, `mytheme` or `customtheme`. However, for this case, we have specified the name as `aem-forms-wknd-theme`. 
 
-1. Open the `package-lock.json` file for editing.
-1. Set the values for the `name` and `version` attributes. Ensure that the values for the `name` and `version` attributes in the `Package-lock`.json file match those in the `Package.json` file.
+6. Open the `package-lock.json` file for editing.
+7. Set the values for the `name` and `version` attributes. Ensure that the values for the `name` and `version` attributes in the `Package-lock`.json file match those in the `Package.json` file.
    
     ![Canvas Theme name change image](/help/forms/assets/changename_canvastheme-package-lock.png)
 
-1. (Optional) Open the `ReadMe` file for editing and update the name of the theme. 
+8. (Optional) Open the `ReadMe` file for editing and update the name of the theme. 
    
       ![Canvas Theme name change image](/help/forms/assets/changename_canvastheme-readme-file.png)
 
-1. Save and close the files. 
+9. Save and close the files. 
 
 **Considerations while setting name of the theme**
 
@@ -208,8 +208,8 @@ To preview and test the changes in the local environment and customize the theme
 
 ##### 4.1. Configure local environment for testing {#rename-env-file-theme-folder}
 
-1. Open the theme folder in a plain text editor. For example, open the `aem-forms-theme-canvas` folder in Visual Studio Code editor.
-1. Rename the `env_template` file to `.env` file in the theme folder and add the following parameters:
+1. Open the theme folder in your IDE. For example, open the `aem-forms-theme-canvas` folder in Visual Studio Code editor.
+2. Rename the `env_template` file to `.env` file in the theme folder and add the following parameters:
 
       ```
       * **AEM url**
@@ -228,7 +228,7 @@ To preview and test the changes in the local environment and customize the theme
    * AEM_URL = `http://localhost:4502/`
    * AEM_ADAPTIVE_FORM = `contactusform`
 
-1. Save the file.
+3. Save the file.
 
    ![Canvas Theme Structure](/help/forms/assets/env-file-canvas-theme.png)
 
@@ -264,8 +264,8 @@ Having followed the examples provided at both the theme level and component leve
 
 You can also test the theme for the Adaptive Form hosted on your AEM Forms as a Cloud Service instance. To configure and set the local environment for the testing the themes with the Adaptive Forms hosted on the cloud instance, perform the following steps:
 
-1. Open the theme folder in a plain text editor. For example, open the `aem-forms-theme-canvas` folder in Visual Studio Code editor. 
-1. Rename the `env_template` file to `.env` file and add the following parameters:
+1. Open the theme folder in your IDE. For example, open the `aem-forms-theme-canvas` folder in Visual Studio Code editor. 
+2. Rename the `env_template` file to `.env` file and add the following parameters:
    
       ```
       * **AEM url**
@@ -283,8 +283,8 @@ You can also test the theme for the Adaptive Form hosted on your AEM Forms as a 
       
       * AEM_URL = `https://author-XXXX-cmstg.adobeaemcloud.com/`
       * AEM_ADAPTIVE_FORM = `contactusform`
-1. Save the file.
-1. Create a local user. 
+3. Save the file.
+4. Create a local user. 
 
    >[!NOTE]
    >
@@ -293,9 +293,9 @@ You can also test the theme for the Adaptive Form hosted on your AEM Forms as a 
    > * Go to **[!UICONTROL AEM Home]** > **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]** .
    > * Ensure that user is a member of the `forms-users` group.
 
-1. Navigate to the root of the theme folder. In this case, the theme folder name is `aem-forms-theme-canvas`.
-1. Run `npm run live` and you are redirected to a local browser.
-1. Click `SIGN IN LOCALLY (ADMIN TASKS ONLY)` and login using the local user's credentials.
+5. Navigate to the root of the theme folder. In this case, the theme folder name is `aem-forms-theme-canvas`.
+6. Run `npm run live` and you are redirected to a local browser.
+7. Click `SIGN IN LOCALLY (ADMIN TASKS ONLY)` and login using the local user's credentials.
 
 You can preview the Adaptive Form with the latest changes. Once, you are satisfied with the modifications done in a theme folder, deploy the theme to your AEM Cloud Service environment using the front-end pipeline. 
 
