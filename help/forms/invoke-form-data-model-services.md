@@ -1,16 +1,16 @@
 ---
-title: How to invoke Form Data Model service from Adaptive Forms using APIs?
+title: How to invoke Form Data Model (FDM) service from Adaptive Forms using APIs?
 description: Explains the invokeWebServices API that you can use to invoke web services written in WSDL from within an Adaptive Form field.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 ---
 
-# API to invoke Form Data Model service from Adaptive Forms {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# API to invoke Form Data Model (FDM) service from Adaptive Forms {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## Overview {#overview}
 
-[!DNL AEM Forms] enables form authors to further simplify and enhance the form filling experience by invoking services configured in a Form Data Model from within an Adaptive Form field. To invoke a data model service, you can either create a rule in the visual editor or specify a JavaScript using the `guidelib.dataIntegrationUtils.executeOperation` API in the code editor of the [rule editor](rule-editor.md).
+[!DNL AEM Forms] enables form authors to further simplify and enhance the form filling experience by invoking services configured in a Form Data Model (FDM) from within an Adaptive Form field. To invoke a data model service, you can either create a rule in the visual editor or specify a JavaScript using the `guidelib.dataIntegrationUtils.executeOperation` API in the code editor of the [rule editor](rule-editor.md).
 
 This document focuses on writing a JavaScript using the `guidelib.dataIntegrationUtils.executeOperation` API to invoke a service.
 
@@ -55,7 +55,7 @@ The API structure specifies the following details about the service operation.
   </tr>
   <tr>
    <td><code>formDataModelId</code></td>
-   <td>Specifies the repository path to the Form Data Model including its name</td>
+   <td>Specifies the repository path to the Form Data Model (FDM) including its name</td>
   </tr>
   <tr>
    <td><code>operationName</code></td>
@@ -82,7 +82,7 @@ The API structure specifies the following details about the service operation.
 
 ## Sample script to invoke a service {#sample-script-to-invoke-a-service}
 
-The following sample script uses the `guidelib.dataIntegrationUtils.executeOperation` API to invoke the `getAccountById` service operation configured in the `employeeAccount` form data model.
+The following sample script uses the `guidelib.dataIntegrationUtils.executeOperation` API to invoke the `getAccountById` service operation configured in the `employeeAccount` form data model (FDM).
 
 The `getAccountById` operation takes the value in the `employeeID` form field as input for the `empId` argument and returns employee name, account number, and account balance for the corresponding employee. The output values are populated in the specified form fields. For example, the value in `name` argument is populated in the `fullName` form element and value for `accountNumber` argument in `account` form element.
 
@@ -115,7 +115,7 @@ The call back function can have `success` and `failure` callback functions.
 
 ### Sample script with success and failure callback functions {#callback-function-success-failure}
 
-The following sample script uses the `guidelib.dataIntegrationUtils.executeOperation` API to invoke the `GETOrder` service operation configured in the `employeeOrder` form data model.
+The following sample script uses the `guidelib.dataIntegrationUtils.executeOperation` API to invoke the `GETOrder` service operation configured in the `employeeOrder` form data model (FDM).
 
 The `GETOrder` operation takes the value in the `Order ID` form field as input for the `orderId` argument and returns order quantity value in the `success` callback function.  If the `success` callback function does not return the order quantity, the `failure` callback function displays the `Error occured` message.
 

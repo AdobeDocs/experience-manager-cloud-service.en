@@ -178,7 +178,7 @@ To select a Cloud Service and order of signing:
 
    >[!NOTE]
    >
-   > If an Adaptive Form is created using a Form Data Model, the Agreement ID field becomes visible in the dialog box.
+   > If an Adaptive Form is created using a Form Data Model(FDM), the Agreement ID field becomes visible in the dialog box.
 
 1. [Add recipients to an Adaptive Form](working-with-adobe-sign.md#addsignerstoanadaptiveform) and select the Done ![Save](assets/save_icon.svg) icon to save the changes.
 

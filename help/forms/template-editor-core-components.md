@@ -158,7 +158,7 @@ Authors can associate a [!UICONTROL Form Data Model Schema] to an Adaptive Form 
 1. Select **[!UICONTROL Content Browser]** located on the left-hand side.
 1. Go to the form container **[!UICONTROL Setting]**.
 1. Select **[!UICONTROL Data Model]**. 
-1. Choose your form data model through **[!UICONTROL Select Form Data Model]** and save the configuration.
+1. Choose your form data model (FDM) through **[!UICONTROL Select Form Data Model]** and save the configuration.
 
 ![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
 

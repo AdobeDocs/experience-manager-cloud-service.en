@@ -6,24 +6,27 @@ exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 ---
 # Configuring CDN Error Pages {#cdn-error-pages}
 
->[!NOTE]
->This feature is not yet generally available. To join the early-adopter program, email `aemcs-cdn-config-adopter@adobe.com` and describe your use case.
-
 In the unlikely event that the [Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) cannot reach the AEM origin, the CDN by default serves an unbranded, generic error page which indicates that the server cannot be reached. You can override the default error page by hosting static files in self-hosted storage such as Amazon S3 or Azure Blob Storage, and referencing them in a configuration file that is deployed by using the [Cloud Manager Configuration Pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
 ## Setup {#setup}
 
 Before you can override the default error page you need to do the following:
 
-* First, create this folder and file structure in the top-level folder of your Git project:
+* Create this folder and file structure in the top-level folder of your Git project:
 
 ```
 config/
      cdn.yaml
-
 ```
 
-* Secondly, the `cdn.yaml` configuration file should contain metadata and the error page references, as described below.
+* The `cdn.yaml` configuration file should contain both metadata and the rules described in examples below. The `kind` parameter should be set to `CDN` and the version should be set to the schema version, which is currently `1`.
+
+* Create a targeted deployment config pipeline in Cloud Manager. See [configuring production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and [configuring non-production pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). 
+
+**Notes**
+
+* RDEs do not currently support the configuration pipeline.
+* You can use `yq` to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
 
 ### Configuration {#configuration}
 
@@ -38,7 +41,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_errorPages:
+  errorPages:
     spa:
       title: the error page
       icoUrl: https://www.example.com/error.ico
@@ -88,4 +91,4 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 The supported codes are: 403, 404, 406, 500 and 503.
 
-In this way, you directly trigger the CDN's error handler in order to test the synthetic response for given error code.
+In this way, you directly trigger the CDN's error handler in order to test the synthetic response for a given error code.

@@ -2,6 +2,7 @@
 title: Use Smart Imaging with client-side Device Pixel Ratio
 description: Learn how to use client-side Device Pixel Ratio with Smart Imaging in Adobe Experience Manager as a Cloud Service with Dynamic Media.
 contentOwner: Rick Brough
+feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
 ---
@@ -9,7 +10,7 @@ exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
 
 The current Smart Imaging solution uses user agent strings to determine the type of device (desktop, tablet, mobile, and so on) that is being used.
 
-Device detection capabilities &ndash; DPR based on user agent strings &ndash; are inaccurate often, especially for Apple devices. Also, anytime a new device is launched, it must be validated. 
+Device detection capabilities&mdash;DPR based on user agent strings&mdash;are inaccurate often, especially for Apple devices. Also, anytime a new device is launched, it must be validated. 
 
 Client-side DPR gives you 100% accurate values and works for any device, whether it is Apple or any other new device that was launched.
 
