@@ -1,8 +1,8 @@
 ---
 title: Best Practices for Sling Service User Mapping and Service User Definition
 description: Learn about the best practices for sling service user mapping and service user definition
+exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 ---
-
 # Best Practices for Sling Service User Mapping and Service User Definition {#best-practices-for-sling-service-user-mapping-and-service-user-definition}
 
 ## Service User Mapping {#service-user-mapping}
@@ -268,8 +268,3 @@ delete service my-feature-service
 It is crucial to write server side tests for service users and their permission setup. This not only verifies that your setup really works but also helps you spot regressions and unintended mistakes when changing access control content or service users.
 
 The `com.adobe.granite.testing.clients` library provides a lot of utilities that makes writing SSTs for service users easy.
-
-
-
-
-
