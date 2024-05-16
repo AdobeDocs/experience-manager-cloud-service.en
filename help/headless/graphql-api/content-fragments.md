@@ -1119,7 +1119,7 @@ To protect against potential problems there are default limitations imposed on y
 
 You also need to aware of:
 
-* A field conflict error will be returned when your GraphQL query contains fields with the same name in two (or more) models:
+* A field conflict error will be returned when your GraphQL query contains fields with the same name in two (or more) models, and the following conditions are met:
 
   * So where:
 

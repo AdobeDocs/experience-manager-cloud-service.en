@@ -20,7 +20,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.3.0) is April 11, 2024. The next feature release (2024.4.0) is planned for April 25, 2024.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2024.4.0) is April 25, 2024. The next feature release (2024.5.0) is planned for May 30, 2024.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -28,41 +28,11 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Release Video {#release-video}
 
-Have a look at the March 2024 Release Overview video for a summary of the features added in the 2024.3.0 release:
+Have a look at the April 2024 Release Overview video for a summary of the features added in the 2024.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### New features in [!DNL Experience Manager Sites] {#sites-features}
-
-**AEM Authoring for Edge Delivery Services**
-
-AEM Sites can now be used as a content source for Edge Delivery Services. Authors manage their websites in AEM using the new Universal Editor with in-context wysiwyg authoring. This enables companies to build fast high performance webpages with Edge Delivery Services while leveraging AEM's powerful capabilites for content management.
-
-  ![AEM Authoring](/help/edge/assets/universal_editor_edge_delivery_services.png)
-  
-For more information, see the [documentation](/help/edge/overview.md) and watch the [AEM Gems - Getting started with AEM Authoring and Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
-
-**Universal Editor for Headless Implementations**
-
-The Universal Editor enables also decoupled web applications to harness the same intuitive in-context WYSIWYG authoring previously exclusive to traditional sites. Content creators can now visually compose layouts using Content Fragments with the same ease as components within pages.
-
-What sets the Universal Editor apart is its adaptability to diverse web architectures, accommodating both server- and client-side rendering, remaining framework-agnostic, and eliminating the necessity for AEM hosting. Integrating existing web applications with the Universal Editor for content editing is straightforward, primarily requiring developers to incorporate specific data attributes into their markup.
-
-With that, the Universal Editor ensures a consistent editing experience, regardless of content structure or underlying technology stack. For more information, see the [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md).
-
-**Content Management OpenAPIs for Content Fragments and Models**
-
-Developers can now programmatically interact with Content Fragments and Content Fragment models and perform CruD operations on them using Content Management OpenAPIs. For more information, see [API documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-
-**Multisite Management support for Experience Fragments**
-
-Multisite Management support has been extended for folder structures that store experience fragments, allowing users to rollout a complete content structure with experience fragments.
-
-**Compare Content Fragment Versions**
-
-The new Content Fragment Editor now allows content authors to compare and view differences between the current version of a content fragment and a previous version. 
 
 ### Early Adopter Program {#sites-early-adopter}
 
@@ -80,23 +50,42 @@ Interested in trying out the feature and sharing feedback? Send an email to aemc
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in Admin view {#admin-view}
+### New features in Assets view {#assets-view-new-features}
 
-**Native integration with Adobe Express**
 
-AEM Assets integrates natively with Adobe Express, which allows you to directly access the assets stored in AEM Assets from within the Adobe Express user interface. You can place content managed in AEM Assets in the Express canvas and then save new or edited content in an AEM Assets repository.
+**Contextual Search**
 
-![Include assets from Assets add-on](/help/assets/assets/adobe-express-native-integration.png)
+You can now also [search assets available in the repository by defining text prompts](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets automatically transforms those text prompts to search filters and displays the search results. You can view and modify automatic filters using the Filters Pane to further narrow down the search results.
 
-**Preview renditions for all supported video types**
+![Contextual Search](/help/assets/assets/contextual-search-text-prompt1.png)
 
-Experience Manager Assets now generates preview renditions of all supported video types by default without requiring a processing profile configuration.
+**Express video quick actions**
 
-### New features in Assets view {#assets-view}
+Experience Manager Assets now includes [easy and intuitive video editing tools powered by Adobe Express](/help/assets/edit-videos-assets-view.md) to increase content re-use and accelerate content velocity. The editing options include trimming, cropping, resizing a video, and also converting an MP4 to a GIF file.
 
-**Manage permissions for collections** 
+![crop video with Adobe Express](/help/assets/assets/adobe-express-crop-video.png)
 
-Assets Essentials allows the administrators to manage access levels for private collections available in the repository. As an administrator, you can create user groups and assign permissions to those groups to manage access levels. You can also delegate the permission management privileges to user groups.
+**Dynamic renditions**
+
+You can now [view and download dynamic renditions (including smart crops)](/help/assets/renditions.md) in Experience Manager Assets. Dynamic renditions are customized versions of image assets created in real-time to meet specific needs, such as resizing images based on device resolution or cropping to fit different aspect ratios. These renditions enable organizations to deliver personalized and optimized experiences to diverse audience needs.
+
+![Dynamic renditions](/help/assets/assets/preset_smart_crop.png)
+
+**In-place rename for assets and folders**
+
+Experience Manager Assets now offers a simplified user experience by providing [ability to rename an asset or a folder via single click](/help/assets/manage-organize-assets-view.md).
+
+**Assign or remove metadata form to multiple folders**
+
+You can now [assign or remove metadata form to multiple folders](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
+
+### New features in Admin view {#admin-view-new-features}
+
+**Link share configuration**
+
+A new improved user experience for [creating link shares](/help/assets/share-assets.md) along with a brand new set of configurations that let administrators customize the default behavior of this capability for your users.
+
+![Link share configuration](/help/assets/assets/config-email-service.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -107,20 +96,7 @@ Assets Essentials allows the administrators to manage access levels for private 
 
 --> 
 
-### New features for AEM Forms {#forms-new-features}
-
-* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: AEM Forms Edge Delivery Services is a composable set of services that enables a rapid development environment where authors can update, publish, and launch new forms rapidly. These services deliver exceptional and high impact forms experiences that drive engagement and conversions. These forms experiences are easy to author and develop. 
-
-  ![EDS Forms Features](/help/edge/assets/eds-forms-features.png)
-
-These services enable you to:
-
-  * Work with multiple content sources on the same forms site and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or Adaptive Forms Editor.
-  * Deliver Digital Enrollment experiences that load and render quickly and continuously monitor your forms performance through real user monitoring (RUM).
-  * Use plain HTML, modern CSS, and vanilla JavaScript to create exceptional experiences, avoiding the steep learning curve of a specific framework.
-
-
-### New features in Prerelease for AEM Forms {#forms-pre-release}
+### New features in AEM Forms {#forms-new-features}
 
 * **Enhanced Visual Rule Editor for Core Component Based Adaptive Forms**: This release brings a significant upgrade to the visual rule editor for adaptive forms based on core components. This release brings a significant upgrade to the visual rule editor for adaptive forms based on core components. This update focuses on streamlining interactions with custom functions, empowering you to build more robust and efficient forms. 
 
@@ -186,23 +162,31 @@ Real User Monitoring (RUM) Data Service offers a more precise reflection of user
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
+### CDN Configuration {#cdn-config}
+
+Configure traffic at the Adobe CDN in the following ways:
+
+* [Request transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) - modify aspects of incoming requests, including paths, query parameters, and HTTP headers before they are routed to AEM.
+* [Response transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) - change HTTP headers of the outgoing responses before they are served to the browser.
+* [Origin selectors](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - route traffic through the CDN to off-AEM sites and applications.
+
+Once these rules are declared in source control (git), you can deploy them to the CDN using the Cloud Manager Configuration Pipeline. Also see the client-side redirects feature in the early adopter section below.
+
+### Custom CDN error pages {#cdn-error-pages}
+
+In the unlikely event that the CDN cannot route traffic to the AEM origin, a custom error page can be declared, replacing the generic version. [Learn more](/help/implementing/dispatcher/cdn-error-pages.md) about how to serve branded error pages.
+
 ### Early Adopter Programs {#foundation-early-adopter}
+
+#### Client-side redirects (Early Adopter Program) {#client-side-redirects-early-adopter}
+
+Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**.
 
 #### Traffic Filter Rules Alerts (Early Adopter Program) {#traffic-filter-rules-alerts-early-adopter}
 
 The recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which include the optionally licensable Web Application Firewall (WAF) rules, lets you configure what traffic should be allowed or denied. 
 
 Now you can email **<aemcs-cdn-config-adopter@adobe.com>** to join the early adopter program so you can be alerted whenever your traffic filter rules are triggered. Actions Center email notifications will keep you informed when certain traffic conditions occur so you can take appropriate measures. 
-
-#### CDN Configuration (Early Adopter Program) {#cdn-config-early-adopter}
-
-In addition to the recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which include the optionally licensable Web Application Firewall (WAF) rules, there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>** to gain access to:
-
-* 301/302 client-side redirects
-* proxying requests at the edge to arbitrary origins (such as non-AEM applications)
-* URL transformations
-* setting or modifying request or response headers
-* custom error pages when the CDN can't reach AEM
 
 #### Apache/Dispatcher Runtime Ingestion of Rewrite Maps (Early Adopter Program) {#apache-rewritemaps-early-adopter}
 
@@ -226,6 +210,80 @@ While debugging code in a [Rapid Development Environment (RDE)](/help/implementi
 
 Please reach out to **<aemcs-rde-support@adobe.com>** to try it out and provide feedback.
 
+
+## [!DNL Experience Manager] Guides {#guides}
+
+
+### Ability to Translate Content into Multiple Languages Using Preconfigured Language Groups
+
+Experience Manager Guides now allows you to create language groups and easily translate your content into multiple languages. This feature helps you organize and manage translations according to your organization's needs. 
+
+For example, if you need to translate your content for some countries in Europe, you can create a language group for European languages like English (EN), French (FR), German (DE), Spanish (ES), and Italian (IT).
+
+![translation panel](../assets/guides/translation-languages-2404.png)
+
+*Select the language groups or languages you want to translate your documents.* 
+
+>[!NOTE]
+>
+>If a language's target folder is missing or the target language is the same as the source, it's grayed out and shows a warning sign.
+
+As an administrator you can create language groups and configure them to multiple folder profiles. As an author, you can view the language groups that are configured on your folder profile.
+
+
+Overall, creating language groups enhances the efficiency and productivity of translation projects, ultimately improving the localization process across multiple languages.
+
+
+Learn how to [translate documents from the Web Editor](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
+
+### Revamped Experience to Search and Filter Files in the Repository View
+
+Now, you have an enhanced experience while filtering files. The revamped functionality to filter files provides an improved way to effortlessly search and navigate through files. 
+
+![search files in repository view](../assets/guides/repository-filter-search-2404.png)
+
+*Search for the files containing the text `general purpose.`*
+
+Enjoy benefits such as quicker access to relevant files and a more intuitive user interface, making your search experience smoother and more efficient. 
+
+![quick search filter ](../assets/guides/repository-filter-search-quick.png)
+
+*Use the quick filters to search for DITA and Non-DITA files.*
+
+Learn more about the **Filter Search** feature in the [Left Panel](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) section.
+
+### Enhancements in the Data Source Connectors
+
+The following enhancements have been made to the data source connectors for the 2024.4.0 release:
+
+#### Connect to Salsify, Akeneo, and Microsoft Azure DevOps Boards (ADO) Data Sources
+
+In addition to the existing out-of-the-box connectors, Experience Manager Guides also provides connectors for Salsify, Akeneo, and Microsoft Azure DevOps Boards (ADO) data sources. As an administrator, you can download and install these connectors. Then, configure the installed connectors.
+
+#### Copy and Paste the Sample Query to Create a Content Snippet or Topic
+
+You can easily copy and paste a sample data query in the generator to create a content snippet or topic. With this feature, you don't have to remember the syntax or create a  query manually. Instead of manually typing the query, you can copy and paste a sample query, edit it, and use it to fetch the data per your requirements. 
+
+![insert content snippet dialog box](../assets/guides/insert-content-snippet.png)
+
+ *Copy and edit a sample query to create the content snippet.*
+
+#### Connect to JSON Data Files Using a File Connector 
+
+
+Now, as an administrator, you can configure a JSON file connector to use JSON data files as a data source. Use the connector to import the JSON files from your computer or the Adobe Experience Manager Assets. Then, as an author, you can create content snippets or topics using the generators.
+
+This feature helps you use the data stored in your JSON files and reuse it across various snippets. The content is also updated dynamically whenever you update the JSON files.
+
+#### Configure Multiple Resource URLs for a Connector to Create Content Snippets or Topics
+
+As an administrator, you can configure multiple resource  URLs for some connectors like Generic REST Client, Salsify, Akeneo, and Microsoft Azure DevOps Boards (ADO). 
+Then, as an author, connect with the data sources to create content snippets or topics using the generators. This feature is handy as you don't have to create a data source for each URL. It helps you to quickly fetch data from any of the resources for a particular data source in a single content snippet or topic. View more details about the data source connectors and how to [configure a data source connector from the user interface](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). Learn how to [use data from your data source](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
+
+For more information about the new features and enhancements, view [What's new in the 2024.04.0 release](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+
+For the list of issues fixed in this release, view [Fixed issues in the 2024.4.0 release](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0).
+
 ## Cloud Manager {#cloud-manager}
 
 You can find a complete list of Cloud Manager monthly releases [here](/help/implementing/cloud-manager/release-notes/current.md).
@@ -233,4 +291,3 @@ You can find a complete list of Cloud Manager monthly releases [here](/help/impl
 ## Migration Tools {#migration-tools}
 
 You can find a complete list of Migration Tools releases [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
-
