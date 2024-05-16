@@ -1,7 +1,7 @@
 ---
 title: How can we create and use themes in Adaptive Forms?
-description: You can use themes to style and provide a visual identity to an Adaptive Form using core components. You can share a theme across any number of Adaptive Forms.
-keywords: adaptive forms styling core components. using theme in core components, styling adaptive form, customizing themes
+description: You can use themes to style and provide a visual identity to an Adaptive Form using Core Components. You can share a theme across any number of Adaptive Forms.
+keywords: adaptive forms styling Core Components. using theme in Core Components, styling adaptive form, customizing themes
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 ---
@@ -15,7 +15,7 @@ exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 
 You can create and apply themes to style an Adaptive Form. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. A theme is managed independently without a reference to an Adaptive Form and can be reused across multiple Adaptive Forms. 
 
-## Available themes
+## Available themes for styling Core Components
 
 Forms as Cloud Service provides, the below listed themes for Core Components based Adaptive Forms:  
 
@@ -23,7 +23,7 @@ Forms as Cloud Service provides, the below listed themes for Core Components bas
 * [WKND theme](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL theme](https://github.com/adobe/aem-forms-theme-easel)
 
-## Understanding structure of the themes
+## Understanding the structure of the themes
 
 A theme is a package that includes styling components such as CSS file, JavaScript files, and resources (like icons) that define the style of your Adaptive Forms. An Adaptive Form theme follows a specific organization, consisting of the following components:
 
@@ -51,7 +51,7 @@ You can [customize any of these themes to create new theme](#customize-a-theme-c
 
 ## Customize a theme {#customize-a-theme-core-components}
 
-Customizing a theme refers to the process of modifying,styling and personalizing the appearance of a theme. When you customize a theme, you change its design elements, layout, colors, typography, and sometimes the underlying code. It lets you create a unique and tailored look for your website or application while maintaining the basic structure and functionality provided by the theme.
+Customizing a theme refers to the process of modifying, styling and personalizing the appearance of a theme. When you customize a theme, you change its design elements, layout, colors, typography, and sometimes the underlying code. It lets you create a unique and tailored look for your website or application while maintaining the basic structure and functionality provided by the theme.
 
 ### Prerequisites {#prerequisites-to-customize}
 
@@ -63,7 +63,7 @@ Customizing a theme refers to the process of modifying,styling and personalizing
 ### Set up your environment
 
 * [Enable Adaptive Forms Core Components](/help/forms/enable-adaptive-forms-core-components.md)  for your local development and Cloud Service environment. 
-* Configure [front-end deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) for your Cloud Service environment. Alternatively, you can configure the pipeline later, giving you the flexibility to prioritize testing and refining the theme before setting up the deployment pipeline.
+* Configure a [front-end deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) for your Cloud Service environment. Alternatively, you can configure the pipeline later, giving you the flexibility to prioritize testing and refining the theme before setting up the deployment pipeline.
 
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
@@ -104,15 +104,15 @@ To clone a theme, perform the following instructions:
       git clone [Path of Git Repository of the theme]
    ```
 
-   Replace the [Path of Git Repository of the theme] with the  actual URL of the corresponding Git Repository of the theme
+   Replace the [Path of the Git Repository of the theme] with the actual URL of the corresponding Git Repository of the theme
 
-   For example, to clone the Canvas theme, execute the following  command:
+   For example, to clone the Canvas theme, execute the following command:
 
       ```
          git clone https://github.com/adobe/aem-forms-theme-canvas
       ```
 
-   After executing the command successfully, you have a local  copy of the theme available on your machine in the  `aem-forms-theme-canvas` folder.
+   After executing the command successfully, you have a local copy of the theme available on your machine in the  `aem-forms-theme-canvas` folder.
 
 
 #### 2. Set name of a theme {#set-name-of-theme}
@@ -139,7 +139,7 @@ To clone a theme, perform the following instructions:
 
       >[!NOTE]
       >
-      > * The name attribute is used to uniquely identify the theme , and the specified name is displayed in the **Style** tab of the **Form Creation Wizard**. 
+      > * The name attribute is used to uniquely identify the theme, and the specified name is displayed in the **Style** tab of the **Form Creation Wizard**. 
       > * You have the option to select a name for your theme according to your choice, for example, `mytheme` or `customtheme`. However, for this case, we have specified the name as `aem-forms-wknd-theme`. 
 
 1. Open the `package-lock.json` file for editing.
@@ -153,7 +153,7 @@ To clone a theme, perform the following instructions:
 
 1. Save and close the files. 
 
-**Considerations while setting name of the theme**
+**Considerations while setting the name of the theme**
 
    * It is mandatory to remove the `@aemforms` from the theme name in `Package.json` file and `Package-lock.json` file. In case, you fail to remove `@aemforms` from your customized theme name, it results in the failure of the frontend pipeline during the theme deployment.
    * It is recommended to update the theme `version` in `Package.json` file and `Package-lock.json` file to accurately reflect changes and enhancements over time for your theme.
@@ -181,9 +181,9 @@ Similarly, you can use the `variable.scss` file to set font family and type, the
 
 ##### Set component level styles {#component-based-customization}
 
-You can also change font, color, size, and other CSS properties of a specific Adaptive Form core component. For example, button, checkbox, container, footer, and more. You can style button or checkbox by editing the CSS file of the specific component to align it with your organization's style. To customize a style of a component:
+You can also change the font, color, size, and other CSS properties of a specific Adaptive Form core component. For example, button, checkbox, container, footer, and more. You can style a button or checkbox by editing the CSS file of the specific component to align it with your organization's style. To customize a style of a component:
 
-1. Open the file `<your-theme-sources>/src/components/<component>/<component.scss>` for editing. For example, to change the font color of the button component, open the `<your-theme-sources>/src/components/button/button.scss`, file .
+1. Open the file `<your-theme-sources>/src/components/<component>/<component.scss>` for editing. For example, to change the font color of the button component, open the `<your-theme-sources>/src/components/button/button.scss`, file.
 1. Change the value of any as per your requirements. For example, to change the color of the button component on mouse hover to `green`, change the value of the `color: $white` property in the `cmp-adaptiveform-button__widget:hover` class to hex code `#12B453` or any other shade of `green`. The final code looks like the following:
 
    ```
@@ -199,16 +199,16 @@ You can also change font, color, size, and other CSS properties of a specific Ad
    
    >![NOTE]
    >
-   > When a style is defined both at theme and component level, the style defined at the component level takes priority. 
+   > When a style is defined both at the theme and component level, the style defined at the component level takes priority. 
 
 #### 4. Test a customized theme {#test-the-theme}
 
 To preview and test the changes in the local environment and customize the theme according to the requirements for different AEM components, perform the following steps:
 
-* 4.1 [Configure local environment for testing](#rename-env-file-theme-folder)
-* 4.2 [Test the theme using local environment](#start-a-local-proxy-server)
+* 4.1 [Configure a local environment for testing](#rename-env-file-theme-folder)
+* 4.2 [Test the theme using the local environment](#start-a-local-proxy-server)
 
-##### 4.1. Configure local environment for testing {#rename-env-file-theme-folder}
+##### 4.1. Configure a local environment for testing {#rename-env-file-theme-folder}
 
 1. Open the theme folder in your IDE. For example, open the `aem-forms-theme-canvas` folder in Visual Studio Code editor.
 1. Rename the `env_template` file to `.env` file in the theme folder and add the following parameters:
@@ -234,7 +234,7 @@ To preview and test the changes in the local environment and customize the theme
 
    ![Canvas Theme Structure](/help/forms/assets/env-file-canvas-theme.png)
 
-##### 4.2 Test the theme using local environment {#start-a-local-proxy-server}
+##### 4.2 Test the theme using a local environment {#start-a-local-proxy-server}
 
 1. Navigate to the root of the theme folder. In this case, the theme folder name is `aem-forms-theme-canvas`.
 1. Open the command prompt or terminal.
@@ -311,9 +311,9 @@ To deploy the theme to your Cloud Service environment using the front-end pipeli
 
 ##### 5.1 Create a repository for theme{#create-a-new-theme-repo}
 
-You require  a repository to deploy the theme. Log in to your [AEM Cloud Manager repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) and add new repository for your theme.
+You require a repository to deploy the theme. Log in to your [AEM Cloud Manager repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) and add new repository for your theme.
 
-1. Create new repository for theme by clicking the **[!UICONTROL Repositories]** > **[!UICONTROL Add Repository]**. 
+1. Create new repository for a theme by clicking the **[!UICONTROL Repositories]** > **[!UICONTROL Add Repository]**. 
 
    ![create new theme repo](/help/forms/assets/createrepo_canvastheme.png)
 
@@ -365,12 +365,12 @@ Now, push the changes to the theme repository of your AEM Forms Cloud Service.
 
 ##### 5.3 Run the frontend pipeline {#run-a-frontend-pipeline}
 
-The theme is deployed using the [front-end pipeline.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). To deploy theme, perform following steps:
+The theme is deployed using the [front-end pipeline.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). To deploy theme, perform the following steps:
 
 1. Log in to your AEM Cloud Manager repository.
-1. Click **[!UICONTROL Add]** button from the **[!UICONTROL Pipelines]** section.
+1. Click the **[!UICONTROL Add]** button from the **[!UICONTROL Pipelines]** section.
 1. Select **[!UICONTROL Add Non-Production Pipeline]** or **[!UICONTROL Add Production Pipeline]** based on the Cloud Service environment. For example, here the **[!UICONTROL Add Production Pipeline]** option is selected. 
-1. In the **[!UICONTROL Add Production Pipeline]** dialog as part of the **[!UICONTROL Configuration]** steps, specify name for your pipeline. For example, the name of the pipeline is `customcanvastheme`.
+1. In the **[!UICONTROL Add Production Pipeline]** dialog as part of the **[!UICONTROL Configuration]** steps, specify the name for your pipeline. For example, the name of the pipeline is `customcanvastheme`.
 1. Click **[!UICONTROL Continue]**.
 1. Select the **[!UICONTROL Targeted Deployment]** > the **[!UICONTROL Front-end code]** options, in 
  the **[!UICONTROL Source Code]** steps. 
@@ -418,10 +418,10 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 
   Changing container panel layout width is not recommended. When you specify width of a container panel, it becomes static and does not adapt to different displays.
 
-* **Using form editor or theme editor for working with header and footer**
+* **Using a form editor or theme editor for working with header and footer**
 
-  Use theme editor if you want to style header and footer using styling options such as font style, background, and transparency.
-  If you want to provide information such as a logo image, company name in header, and copyright information in the footer, use the form editor options.
+  Use a theme editor if you want to style the header and footer using styling options such as font style, background, and transparency.
+  If you want to provide information such as a logo image, company name in the header, and copyright information in the footer, use the form editor options.
 
 ## Frequently asked questions {#faq} 
 
