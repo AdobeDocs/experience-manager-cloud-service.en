@@ -56,7 +56,6 @@ You can create an Adaptive Form Fragment from scratch or save a panel in an exis
     ![Form Data Model (FDM)](assets/create-af-3.png)
 
       
-
 1. Click **Create** and then click **Open** to open the fragment, with a default template, in edit mode. In edit mode, you can add any Adaptive Form component to the fragment. 
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> In addition, if you selected an XML schema or XDP form template as the form model for your fragment, a new tab displaying the form-model hierarchy appears in the content finder. It lets you drag-and-drop form-model elements onto the fragment. The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. 
@@ -169,7 +168,7 @@ You can perform several operations on Adaptive Form fragments using the AEM Form
 ## Key points to remember when working with fragments {#key-points-to-remember-when-working-with-fragments}
 
 * Ensure that the fragment name is unique. The fragment fails to create if there is an existing fragment with the same name.
-* In an XDP-based Adaptive Form, if you save a panel as fragment that includes another XDP fragment, the resulting fragment will be automatically bound to the child XDP fragment. In case of an XSD-based Adaptive Form, the resulting fragment will be bound to the schema root..
+* In an XDP-based Adaptive Form, if you save a panel as fragment that includes another XDP fragment, the resulting fragment automatically bounds to the child XDP fragment. In case of an XSD-based Adaptive Form, the resulting fragment bounds to the schema root.
 * A fragment in an Adaptive Form that uses a different form data model (FDM) is not supported. For example, an XDP-based fragment is not supported in an XSD-based Adaptive Form and conversely.
 * Adaptive Form fragments are available for use through the Adaptive Form Fragments tab in AEM content finder.
 * Any expression, script, or style in a stand-alone Adaptive Form fragment is retained when it is inserted by reference or embedded in an Adaptive Form.
