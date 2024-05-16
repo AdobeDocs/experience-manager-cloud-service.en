@@ -45,7 +45,7 @@ To publish assets during upload to a folder with Dynamic Media Publish Mode set 
 ![file upload image - immediate mode](/help/assets/assets/resized-image-pdf-svg-new.svg)
 
 
- As the Dynamic Media Publish Mode is **Immediate**, the uploaded assets are automatically published to Dynamic Media when you click **Upload**. 
+    As the Dynamic Media Publish Mode is **Immediate**, the uploaded assets are automatically published to Dynamic Media when you click **Upload**. 
 
  2. Select Publish to **AEM to publish** the uploaded assets to AEM and click Upload. 
  
