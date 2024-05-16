@@ -1,17 +1,19 @@
 ---
 title: How can we create and use themes in Adaptive Forms?
 description: You can use themes to style and provide a visual identity to an Adaptive Form using core components. You can share a theme across any number of Adaptive Forms.
+keywords: adaptive forms styling core components. using theme in core components, styling adaptive form, customizing themes
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 ---
-# Themes in Adaptive Forms {#themes-for-af-using-core-components}
+
+# Themes -  Adaptive Form Styling (Core Components){#themes-for-af-using-core-components}
 
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html)                  |
 | AEM as a Cloud Service     | This article         |
 
-You can create and apply themes to style an Adaptive Form. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. A theme is managed independently without a reference to an Adaptive Form and can be reused across multiple Adaptive Forms.
+You can create and apply themes to style an Adaptive Form. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. A theme is managed independently without a reference to an Adaptive Form and can be reused across multiple Adaptive Forms. 
 
 ## Available themes
 
@@ -23,7 +25,7 @@ Forms as Cloud Service provides, the below listed themes for Core Components bas
 
 ## Understanding structure of the themes
 
-A theme is a package that encompasses the CSS file, JavaScript files, and resources (like icons) that define the style of your Adaptive Forms. An Adaptive Form theme follows a specific organization, consisting of the following components:
+A theme is a package that includes styling components such as CSS file, JavaScript files, and resources (like icons) that define the style of your Adaptive Forms. An Adaptive Form theme follows a specific organization, consisting of the following components:
 
 * `src/theme.scss`: This folder includes the CSS file that has a broad impact on the entire theme. It serves as a centralized location to define and manage the styling and behavior of your theme. By making edits to this file, you can make changes that are applied universally throughout the theme, influencing the appearance and functionality of both your Adaptive Forms and AEM Sites Pages.
 
@@ -37,7 +39,7 @@ A theme is a package that encompasses the CSS file, JavaScript files, and resour
 
 ## Create a theme 
 
-Forms as Cloud Service provides, the below listed themes for Core Components based Adaptive Forms.  
+Forms as Cloud Service provides, the below listed Adaptive Form styling themes for Core Components based Adaptive Forms.  
 
 * [Canvas theme](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND theme](https://github.com/adobe/aem-forms-theme-wknd)
@@ -49,7 +51,7 @@ You can [customize any of these themes to create new theme](#customize-a-theme-c
 
 ## Customize a theme {#customize-a-theme-core-components}
 
-Customizing a theme refers to the process of modifying and personalizing the appearance of a theme. When you customize a theme, you change its design elements, layout, colors, typography, and sometimes the underlying code. It lets you create a unique and tailored look for your website or application while maintaining the basic structure and functionality provided by the theme.
+Customizing a theme refers to the process of modifying,styling and personalizing the appearance of a theme. When you customize a theme, you change its design elements, layout, colors, typography, and sometimes the underlying code. It lets you create a unique and tailored look for your website or application while maintaining the basic structure and functionality provided by the theme.
 
 ### Prerequisites {#prerequisites-to-customize}
 
@@ -70,7 +72,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 -->
 
-After learning the pre-requisites and configuring the development environment, you are well prepared to start customizing your theme according to your specific requirements.
+After learning the pre-requisites and configuring the development environment, you are well prepared to start customizing or styling your theme according to your specific requirements.
 
 ### Customize a theme {#steps-to-customize-a-theme-core-components}
 
@@ -250,7 +252,7 @@ This is a hot deployment. So, whenever you make any changes and save the `_varia
 
    ![Proxy browsersync](/help/forms/assets/browser_sync.png)
 
-Having followed the examples provided at both the theme level and component level for theme customizations, the error messages of an Adaptive Form are changed to the `blue` color, while the label color for the button component changes to `green` upon hovering.
+Having followed the examples for styling an Adaptive Form (core components) at both the theme level and component level for theme customizations, the error messages of an Adaptive Form are changed to the `blue` color, while the label color for the button component changes to `green` upon hovering.
 
 **Previewing theme level style**
 
