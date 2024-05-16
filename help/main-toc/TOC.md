@@ -599,6 +599,9 @@ user-guide-title: AEM as a Cloud Service
     + [Migrate from [!DNL AEM 6.5 Forms] or earlier to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
     + [Groups and permissions](/help/forms/forms-groups-privileges-tasks.md)
     + [Import, export, and organize Adaptive Forms, PDF forms, and other assets](/help/forms/import-export-forms-templates.md)
+  + Getting Started {#getting-started-forms}
+    + [Use Case and setup development environment](/help/forms/create-adaptive-form-tutorial-getting-started.md)
+    + [Create the loan application form](/help/forms/create-adaptive-form-tutorial.md)
   + Integrate {#integrate}
     + Services {#services}
       + [Integrate AEM Forms as a Cloud Service with Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
