@@ -351,6 +351,10 @@ Logs:
 > * "dist" folder, for the npm build output package folder
 > * "package.json" file, for the npm dependencies package
 
+>[!TIP]
+>
+> If you created your RDE a long time ago and experience the error "UNEXPECTED_API_ERROR" when trying the frontend feature for the first time, please try to delete your environment and create it again.
+
 ### Checking the Status of the RDE {#checking-rde-status}
 
 You can use the RDE CLI to check if the environment is ready to be deployed to, as what deployments have been made by way of the RDE plug-in.
