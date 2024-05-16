@@ -22,11 +22,18 @@ org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-my-mappin
 
 Since AEM 6.4, the mapping format is defined as follows:
 
+>[!NOTE]
+>
+>The `userName` is deprecated and should no longer be used.
+
 ```
 bundleId [:subserviceName] = userName | [principalNames]   
 ```
 
-`bundleId` and `subserviceName` identify the service, `userName/principalNames` identify the service user(s) and `principalNames` is a comma separated list.
+`bundleId` and `subserviceName` identify the service, `userName/principalNames` identify the service user and `principalNames` is a comma separated list.
+
+Also, note that `principalNames` is the list of service user principal names which out of the box are the same as the id.
+
 
 **Best Practice**
 
@@ -79,7 +86,7 @@ The new mapping with principal names results in the following simplified reposit
 
 ### Deprecated ServiceUserConfiguration {#deprecated-serviceUserConfiguration}
 
-Please note that specifying a single principal name in the mapping is equivalent to the existing `ServiceUserConfiguration.simpleSubjectPopulation`. With the new format the workaround provided by the `ServiceUserConfiguration` can directly be reflected with the service user mapping. The ServiceUserConfiguration has therefore been deprecated for AEM and all existing usages have be replaced.
+Please note that specifying a single user name in the mapping is equivalent to the existing `ServiceUserConfiguration.simpleSubjectPopulation`. With the new format the workaround provided by the `ServiceUserConfiguration` can directly be reflected with the service user mapping. The `ServiceUserConfiguration` has therefore been deprecated for AEM and all existing usages have be replaced.
 
 ## Service Users {#service-users}
 
@@ -98,10 +105,6 @@ Don't re-use existing service users if:
 * If its name indicates a total different intention that what you require. Picking it because it works can cause problems down the road as the feature team that owns a specific service may change the permissions and break your feature.
 
 ### Creating a Service User {#creating-a-service-user}
-
->[!NOTE]
->
->Creation of service users and the corresponding permission setup falls under mandatory RTC.
 
 After you verified that no existing service user in AEM is applicable for your use-case and the corresponding RTC issues have been approved you can go ahead and add the new user to the default content. Ideally a member of the extended security team is involved in the RTC voting, so please make sure you also involve the appropriate stakeholders.
 
