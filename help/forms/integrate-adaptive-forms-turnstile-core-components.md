@@ -3,6 +3,8 @@ title: How to use Turnstile in an AEM Adaptive Form Core Components?
 description: Enhance form security with Turnstile service effortlessly. Step-by-step guide inside!
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
+hide: yes
+hidefromtoc: yes
 ---
 # Connect your AEM Forms environment with Turnstile {#connect-your-forms-environment-with-turnstile-service}
 

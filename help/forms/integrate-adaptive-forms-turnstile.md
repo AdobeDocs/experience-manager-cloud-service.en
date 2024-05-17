@@ -3,6 +3,8 @@ title: How to use Turnstile in an AEM Adaptive Form?
 description: Enhance form security with Turnstile service effortlessly. Step-by-step guide inside!
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
+hide: yes
+hidefromtoc: yes
 ---
 # Connect your AEM Forms environment with Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
@@ -12,7 +14,7 @@ Cloudflare's Turnstile Captcha is a security measure that aims to protect forms 
 
 ## Prerequisites to integrate AEM Forms environment with Turnstile {#prerequisite}
 
-To configure Turnstile for AEM Forms Core Components, you need to obtain [Turnstile sitekey and secret key](https://developers.cloudflare.com/turnstile/get-started/) from the Turnstile website.
+To configure Turnstile for AEM Forms Core Components, you need to obtain the [Turnstile sitekey and secret key](https://developers.cloudflare.com/turnstile/get-started/) from the Turnstile website.
 
 ## Steps to configure Turnstile for AEM Forms{#steps-to-configure-turnstile}
 
@@ -35,7 +37,7 @@ To configure Turnstile for AEM Forms Core Components, you need to obtain [Turnst
         ![Turnstile in ui](assets/turnstile-in-ui.png)
     1. Select a Configuration Container, created or updated, as described in the previous section. Select **[!UICONTROL Create]**.
         ![Configuration Turnstile](assets/config-hcaptcha.png)
-    1. Specify **[!UICONTROL Widget Type]** as managed, **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, and **[!UICONTROL Secret Key]** for Turnstile service [obtained in prerequisite](#prerequisite). Select **[!UICONTROL Create]**.
+    1. Specify **[!UICONTROL Widget Type]** as managed, widget type can change which depends on the key obtained in the prerequisite, **[!UICONTROL Title]**, **[!UICONTROL Name]**, **[!UICONTROL Site Key]**, and **[!UICONTROL Secret Key]** for Turnstile service [obtained in prerequisite](#prerequisite). Select **[!UICONTROL Create]**.
 
         ![Configure the Cloud Service to connect your AEM Forms environment with Turnstile](assets/config-turntstile.png)
 
@@ -68,12 +70,15 @@ Once the Turnstile Captcha service is configured, it is available for use in an 
         * At form Submission 
         * On a user action.
     * **[!UICONTROL Captcha Service]:** Select your Captcha service, here you select Cloudfare Turnstile Captcha service.
-    * **[!UICONTROL Captcha Configuration]:** Select a Cloud Configuration configured for Turnstile. for example, here you select **managed key**.
+    * **[!UICONTROL Captcha Configuration]:** Select a Cloud Configuration configured for Turnstile. for example, here you select the **managed key**.
         >[!NOTE]
         >You can have multiple Cloud Configurations in your environment for a similar purpose. So, choose the service carefully. If no service is listed, see [Connect your AEM Forms environment with Turnstile](#connect-your-forms-environment-with-turnstile-service) to learn how to create a Cloud Service that connects your AEM Forms environment with Turnstile service.
 
     * **Error Message:** Provide the error message to display to the user when the Captcha submission fails.
     * **Captcha Size:** You select the display size of the Turnstile challenge dialog. Use the **[!UICONTROL Compact]** option to display a small sized and the **[!UICONTROL Normal]** option to display a relatively large-size Turnstile challenge dialog.
+
+        > [!Note]
+        > This is applicable for widget type Managed and Non-interactive. If the widget type is invisible, the size property is not required and it is disabled.
 
 1. Select **[!UICONTROL Done]**.
 
