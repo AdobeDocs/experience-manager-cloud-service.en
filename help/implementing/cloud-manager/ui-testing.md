@@ -39,7 +39,7 @@ This section describes the steps required to set up UI tests for execution in Cl
 
     * For Cypress, use the sample code from the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
 
-    * For JavaScript and WDIO, use the sample code which is automatically generated in the `ui.tests` folder of your Cloud Manager repository.
+    * For JavaScript and WDIO, use the sample code that is automatically generated in the `ui.tests` folder of your Cloud Manager repository.
       
       >[!NOTE]
       >
@@ -140,7 +140,7 @@ This execution instructs the Maven Assembly Plugin to create an archive based on
 </assembly>
 ```
 
-The assembly descriptor instructs the plugin to create an archive of type `.tar.gz` and assigns the `ui-test-docker-context` classifier to it. Moreover, it lists the files that must be included in the archive including the following.
+The assembly descriptor instructs the plugin to create an archive of type `.tar.gz` and assigns the `ui-test-docker-context` classifier to it. Moreover, it lists the files that must be included in the archive, including the following:
 
 * A `Dockerfile`, mandatory for building the Docker image
 * The `wait-for-grid.sh` script, whose purposes are described below
@@ -193,7 +193,7 @@ If you are using the samples provided by Adobe:
   fi
   ```
 
-* The Cypress and Java Selenium test samples provided by Adobe already do have the opt-in flag set.
+* The Cypress and Java Selenium test samples provided by Adobe already have the opt-in flag set.
 
 ## Writing UI Tests {#writing-ui-tests}
 
@@ -212,14 +212,14 @@ The following environment variables are passed to your Docker image at run time,
 | `AEM_AUTHOR_PASSWORD`      | `admin`                          | The password to log in to the AEM author instance                                                 | All                 |
 | `AEM_PUBLISH_URL`          | `http://my-ip:4503/context-path` | The URL of the AEM publish instance                                                               | All                 |
 | `AEM_PUBLISH_USERNAME`     | `admin`                          | The user name to log in to the AEM publish instance                                               | All                 |
-| `AEM_PUBLISH_PASSWORD`     | `admin`                          | The password  to log in to the AEM publish instance                                               | All                 |
+| `AEM_PUBLISH_PASSWORD`     | `admin`                          | The password to log in to the AEM publish instance                                               | All                 |
 | `REPORTS_PATH`             | `/usr/src/app/reports`           | The path where the XML report of the test results must be saved                                   | All                 |
 | `UPLOAD_URL`               | `http://upload-host:9090/upload` | The URL where to which the file must be uploaded to make them accessible to the testing framework | All                 |
-| `PROXY_HOST`               | `proxy-host`                     | The hostname of internal HTTP Proxy to be used by testing framework                               | All except Selenium |
+| `PROXY_HOST`               | `proxy-host`                     | The hostname of the internal HTTP Proxy to be used by the testing framework                               | All except Selenium |
 | `PROXY_HTTPS_PORT`         | `8071`                           | The proxy server listening port for HTTPS connections (can be empty)                              | All except Selenium |
 | `PROXY_HTTP_PORT`          | `8070`                           | The proxy server listening port for HTTP connections (can be empty)                               | All except Selenium |
-| `PROXY_CA_PATH`            | `/path/to/root_ca.pem`           | The path to the CA certificate to be used by testing framework                                    | All except Selenium |
-| `PROXY_OBSERVABILITY_PORT` | `8081`                           | The HTTP healthcheck port of proxy server                                                         | All except Selenium |
+| `PROXY_CA_PATH`            | `/path/to/root_ca.pem`           | The path to the CA certificate to be used by the testing framework                                    | All except Selenium |
+| `PROXY_OBSERVABILITY_PORT` | `8081`                           | The HTTP healthcheck port of the proxy server                                                         | All except Selenium |
 | `PROXY_RETRY_ATTEMPTS`     | `12`                             | Suggested number of retry attempts while waiting for proxy server readiness                       | All except Selenium |
 | `PROXY_RETRY_DELAY`        | `5`                              | Suggested delay between retry attempts while waiting for proxy server readiness                   | All except Selenium |
 
@@ -350,7 +350,7 @@ Example implementation can be found in  [Cypress Sample Test Module`s Entrypoint
 
 Similar to Cypress - tests needs to use HTTP proxy if non-empty `PROXY_HOST` environment variable is provided.
 
-To achieve that some modifications needs to be made:
+To achieve that some modifications need to be made:
 
 #### Dockerfile
 
