@@ -6,7 +6,7 @@ feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 ---
 
-# Themes -  Adaptive Form Styling (Core Components){#themes-for-af-using-core-components}
+# Use themes to style Core Components based Adaptive Forms{#themes-for-af-using-core-components}
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -14,6 +14,8 @@ exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 | AEM as a Cloud Service     | This article         |
 
 You can create and apply themes to style an Adaptive Form. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. A theme is managed independently without a reference to an Adaptive Form and can be reused across multiple Adaptive Forms. 
+
+In this article, we understand how to design custom looks for Core Component based Adaptive Forms using themes.
 
 ## Available themes for styling Core Components
 
@@ -85,6 +87,8 @@ Customizing a theme is a multi-step process. To customize the theme, perform the
 1. [Deploy a theme](#deploy-the-theme)
 
 The examples provided in the document are based on the **Canvas** theme, but it is important to note that you can clone any theme and customize it using the same instructions. These instructions are applicable to any theme, allowing you to modify themes according to your specific needs.
+
+Let us start with a process to create a branded experience for your Core Component based Adaptive Forms using themes?
 
 #### 1. Clone a theme {#download-a-theme-core-components}
 
@@ -262,6 +266,8 @@ Having followed the examples for styling an Adaptive Form (core components) at b
 
    ![Example: Hover color set to green](/help/forms/assets/button-customization.png)
 
+Customizing a theme helps in designing the custom looks for Core Component based Adaptive Forms as per the organizational requirements.
+
 ###### Test the theme for forms hosted on a Cloud Service environment
 
 You can also test the theme for the Adaptive Form hosted on your AEM Forms as a Cloud Service instance. To configure and set the local environment for the testing the themes with the Adaptive Forms hosted on the cloud instance, perform the following steps:
@@ -389,6 +395,8 @@ The theme is deployed using the [front-end pipeline.](https://experienceleague.a
 Once the build is complete, the theme becomes available at the author instance for the use. It appears under the **[!UICONTROL Style]** tab in the Adaptive Form creation wizard, while creating an Adaptive Form. 
 
    ![custom theme available under style tab](/help/forms/assets/custom-theme-style-tab.png)
+
+The customized theme helps in creating a branded experience for Core Component based Adaptive Forms.
 
 ## Apply a theme to an Adaptive Form {#using-theme-in-adaptive-form}
 
