@@ -525,7 +525,7 @@ An [Actions Center](/help/operations/actions-center.md) email notification will 
 
 If this theshold is met, Adobe will block traffic from that IP address, but it is recommended to take additional measures to protect your origin, including configuring rate limit traffic filter rules to block traffic spikes at lower thresholds. See the [Blocking DoS and DDoS attacks using traffic rules tutorial](#tutorial-blocking-DDoS-with-rules) for a guided walk-through.
 
-This alert is enabled by default, but it can be disabled using the *enable_ddos_alerts* property.
+This alert is enabled by default, but it can be disabled using the *enable_ddos_alerts* property, set to false.
 
    ```
    kind: "CDN"
