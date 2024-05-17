@@ -390,7 +390,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### Debugging Considerations {#debugging-considerations}
 
-To validate that traffic is indeed outgoing on the expected dedicated IP address, check logs in the destination service, if available. Otherwise, it may be useful to call out to a debugging service such as [http://ifconfig.me/ip](http://ifconfig.me/ip), which returns the calling IP address.
+To validate that traffic is indeed outgoing on the expected dedicated IP address, check logs in the destination service, if available. Otherwise, it may be useful to call out to a debugging service such as [https://ifconfig.me/ip](https://ifconfig.me/ip), which returns the calling IP address.
 
 ## Virtual Private Network (VPN) {#vpn}
 
