@@ -226,8 +226,8 @@ The following environment variables are passed to your Docker image at run time,
 The Adobe test samples provide helper functions to access the configuration parameters:
 
 * Cypress: use the standard function `Cypress.env('VARIABLE_NAME')`
-* JavaScript: See the [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
-* Java: See the [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
+* JavaScript: See the [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
+* Java: See the [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
 
 ### Generate Test Reports {#generate-test-reports}
 
@@ -241,7 +241,7 @@ If the Docker image is implemented with other programming languages or test runn
 >
 >Use assertions instead of just logging an error to STDERR or returning a non-zero exit code otherwise your deployment pipeline may proceed normally.
 >
->If HTTP proxy sidecar was used during tests execution - results will include request.log file.
+>If the HTTP proxy sidecar was used during tests execution, the results will include a `request.log` file.
 
 ### Prerequisites {#prerequisites}
 
@@ -316,25 +316,24 @@ Tests sometimes must upload files to the application being tested. To keep the d
 >
 >This section only applies when Cypress is the chosen test infrastructure.
 
-### Setup HTTP proxy
+### Set up HTTP proxy
 
-Docker container's entrypoint needs to check value of `PROXY_HOST` environment variable.
+The Docker container's entrypoint needs to check the value of the `PROXY_HOST` environment variable.
 
-If this value is empty - no additional steps are required, tests should be executed without using HTTP proxy.
+If this value is empty, no additional steps are required and the tests should be executed without using HTTP proxy.
 
-If it's not empty - entrypoint script needs to:
+If it's not empty, the entrypoint script needs to:
 
-1. set HTTP proxy to be used for tests execution - this can be achieved by exporting `HTTP_PROXY` environment variable that is build from values of:
-   * proxy host - provided by `PROXY_HOST` variable
-   * proxy port - provided by `PROXY_HTTPS_PORT` or `PROXY_HTTP_PORT` variable (the one with non-empty value should be used)
-2. set proxy CA certificate (its location is provided by `PROXY_CA_PATH` variable) to be used for tests execution
-   * this can be achieved by exporting `NODE_EXTRA_CA_CERTS` environment variable
-3. wait for proxy sidecar container to be ready
-   * for readiness check environment variables `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` and `PROXY_RETRY_DELAY` can be used
-   * it can be achieved by curl request (make sure to install curl in your `Dockerfile`)
+1. Set the HTTP proxy to be used for tests execution. This can be achieved by exporting the `HTTP_PROXY` environment variable that is built using the following values:
+   * Proxy host, which is provided by `PROXY_HOST` variable
+   * Proxy port, which is provided by `PROXY_HTTPS_PORT` or `PROXY_HTTP_PORT` variable (the variable with a non-empty value will be used)
+2. Set the proxy CA certificate to be used for tests execution. Its location is provided by `PROXY_CA_PATH` variable. 
+   * This can be achieved by exporting `NODE_EXTRA_CA_CERTS` environment variable.
+3. Wait for proxy sidecar container to be ready.
+   * To check the readiness, the environment variables `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` and `PROXY_RETRY_DELAY` can be used.
+   * You can check using a cURL request, making sure to install cURL in your `Dockerfile`.
 
-Example implementation can be found in  [Cypress Sample Test Module`s Entrypoint](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
-
+An example implementation can be found in the Cypress Sample Test Module's Entrypoint on [GitHub.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
 
 ## Playwright-specific details
 
@@ -342,19 +341,19 @@ Example implementation can be found in  [Cypress Sample Test Module`s Entrypoint
 >
 > This section only applies when Playwright is the chosen test infrastructure.
 
-### Setup HTTP proxy
+### Set up HTTP proxy
 
 >[!NOTE]
 >
-> In presented examples we assume Chrome is being used as a project browser.
+> In presented examples, we assume Chrome is being used as a project browser.
 
-Similar to Cypress - tests needs to use HTTP proxy if non-empty `PROXY_HOST` environment variable is provided.
+Similar to Cypress, tests needs to use the HTTP proxy if a non-empty `PROXY_HOST` environment variable is provided.
 
-To achieve that some modifications need to be made:
+To do this the follwoing modifications need to be made.
 
 #### Dockerfile
 
-Install **curl** and **libnss3-tools** (provides certutil) 
+Install cURL and `libnss3-tools`, which provides `certutil.` 
 
 ```dockerfile
 RUN apt -y update \
@@ -364,11 +363,11 @@ RUN apt -y update \
 
 #### Entrypoint script
 
-Include a bash script that in case `PROXY_HOST` environment variable is provided - is going to:
+Include a bash script that, in case `PROXY_HOST` environment variable is provided, does the following:
 
-1. export proxy related variables like: ``HTTP_PROXY`` and ``NODE_EXTRA_CA_CERTS``
-2. use ``certutil`` to install proxy CA certificate for chromium
-3. wait for proxy sidecar container to be ready (or exit on failure)
+1. Export proxy-related variables such as `HTTP_PROXY` and `NODE_EXTRA_CA_CERTS`
+2. Use `certutil` to install proxy CA certificate for chromium
+3. Wait for the proxy sidecar container to be ready (or exit on failure)
 
 Example implementation:
 
@@ -401,7 +400,7 @@ fi
 
 #### Playwright configuration
 
-Modify playwright configuration (for example in ``playwright.config.js``) to use proxy in case ``HTTP_PROXY`` environment variable is set.
+Modify the playwright configuration (for example in `playwright.config.js`) to use a proxy in case the `HTTP_PROXY` environment variable is set.
 
 Example implementation:
 
