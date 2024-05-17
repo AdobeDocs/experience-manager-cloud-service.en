@@ -8,6 +8,8 @@ hidefromtoc: yes
 ---
 # Connect your AEM Forms environment with Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
+<span class="preview"> This feature is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
 Cloudflare's Turnstile Captcha is a security measure that aims to protect forms and sites from automated bots, malicious attacks, spams and unwanted automated traffic. It presents a checkbox on form submission to verify that they are human, before allowing them to submit the form. AEM Forms as a Cloud Service supports Turnstile Captcha in Adaptive Forms Core Components.
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
