@@ -164,25 +164,20 @@ Real User Monitoring (RUM) Data Service offers a more precise reflection of user
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### CDN Configuration {#cdn-config}
+### Traffic Spike at Origin Alerts {#traffic-spike-origin}
 
-Configure traffic at the Adobe CDN in the following ways:
+Receive proactive notifications when traffic patterns at the origin are indicative of a DDoS attack, allowing you to investigate and configure [traffic filter rules]((/help/security/traffic-filter-rules-including-waf.md).
 
-* [Request transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) - modify aspects of incoming requests, including paths, query parameters, and HTTP headers before they are routed to AEM.
-* [Response transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) - change HTTP headers of the outgoing responses before they are served to the browser.
-* [Origin selectors](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - route traffic through the CDN to off-AEM sites and applications.
+### RDE Support for Front-End Code using Site Themes and Site Templates (Early Adopter Program) {#rde-frontend}
 
-Once these rules are declared in source control (git), you can deploy them to the CDN using the Cloud Manager Configuration Pipeline. Also see the client-side redirects feature in the early adopter section below.
+[Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
-### Custom CDN error pages {#cdn-error-pages}
-
-In the unlikely event that the CDN cannot route traffic to the AEM origin, a custom error page can be declared, replacing the generic version. [Learn more](/help/implementing/dispatcher/cdn-error-pages.md) about how to serve branded error pages.
 
 ### Early Adopter Programs {#foundation-early-adopter}
 
 #### Client-side redirects (Early Adopter Program) {#client-side-redirects-early-adopter}
 
-Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**.
+Configure 301/302 client-side redirects in source control, and deploy to the CDN. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. Note that there are several other features already available related to [CDN configuration](/help/implementing/dispatcher/cdn-configuring-traffic), including request and response transformations, and routing traffic to off-AEM sites.
 
 #### Traffic Filter Rules Alerts (Early Adopter Program) {#traffic-filter-rules-alerts-early-adopter}
 
@@ -197,10 +192,6 @@ Similar to AEM 6.5, Apache/dispatcher will ingest rewrite maps placed in a speci
 #### Edge Side Includes (ESI) for Loading Dynamic Content (Early Adopter Program) {#esi-early-adopter}
 
 The Adobe Managed CDN now supports Edge Side Includes (ESI), a markup language for edge level dynamic web content assembly. By including ESI snippets, you can cache the overall HTML page at the CDN with higher TTLs, while more frequently fetching from origin those smaller sections that require higher cadence updates (lower TTLs). Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.
-
-#### RDE Support for Front-End Code using Site Themes and Site Templates (Early Adopter Program) {#rde-frontend-early-adopter}
-
-[Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Please reach out to **<aemcs-rde-support@adobe.com>** to try it out and provide feedback.
 
 #### Enhanced logging for RDEs (Early Adopter Program) {#rde-logging-early-adopter}
 
