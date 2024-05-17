@@ -80,9 +80,10 @@ Once the Turnstile Captcha service is configured, it is available for use in an 
     * **Error Message:** Provide the error message to display to the user when the Captcha submission fails.
     * **Captcha Size:** You select the display size of the Turnstile challenge dialog. Use the **[!UICONTROL Compact]** option to display a small sized and the **[!UICONTROL Normal]** option to display a relatively large-size Turnstile challenge dialog.
 
-        > [!Note]
-        > This is applicable for widget type Managed and Non-interactive. If the widget type is invisible, the size property is not required and it is disabled.
 
+        >[!NOTE]
+        >This is applicable for widget type Managed and Non-interactive. If the widget type is invisible, the size property is not required and it is disabled.
+        
 1. Select **[!UICONTROL Done]**.
 
 Now, only legitimate forms, in which the form filler successfully clears the challenge posed by the Turnstile service are allowed for the form submission.
