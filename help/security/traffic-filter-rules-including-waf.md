@@ -287,7 +287,7 @@ The `wafFlags` property, which can be used in the licensable WAF traffic filter 
 
 ## Rules Examples {#examples}
 
-Some rule examples follow. See the [rate limit section](#rules-with-rate-limits) further down for examples of rate limit rules.
+Some rule examples follow. See the [rate limit section](#rate-limit-rules) further down for examples of rate limit rules.
 
 **Example 1**
 
@@ -652,7 +652,7 @@ Below is a list of the field names used in CDN logs, along with a brief descript
 
 Adobe provides a mechanism to download dashboard tooling onto your computer to ingest CDN logs downloaded via Cloud Manager. With this tooling, you can analyze your traffic to help come up with the appropriate traffic filter rules to declare, including WAF rules.
 
-Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) GitHub repository.
+Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub repository.
 
 [Tutorials](#tutorial) are available for concrete instructions on how to use the dashboard tooling.
 
