@@ -218,7 +218,7 @@ The following environment variables are passed to your Docker image at run time,
 | `PROXY_HOST`               | `proxy-host`                     | The hostname of internal HTTP Proxy to be used by testing framework                               | All except Selenium |
 | `PROXY_HTTPS_PORT`         | `8071`                           | The proxy server listening port for HTTPS connections (can be empty)                              | All except Selenium |
 | `PROXY_HTTP_PORT`          | `8070`                           | The proxy server listening port for HTTP connections (can be empty)                               | All except Selenium |
-| `PROXY_CA_PATH`            | `/path/to/root_ca.pem`           | The path to CA certificate to be used by testing framework                                        | All except Selenium |
+| `PROXY_CA_PATH`            | `/path/to/root_ca.pem`           | The path to the CA certificate to be used by testing framework                                    | All except Selenium |
 | `PROXY_OBSERVABILITY_PORT` | `8081`                           | The HTTP healthcheck port of proxy server                                                         | All except Selenium |
 | `PROXY_RETRY_ATTEMPTS`     | `12`                             | Suggested number of retry attempts while waiting for proxy server readiness                       | All except Selenium |
 | `PROXY_RETRY_DELAY`        | `5`                              | Suggested delay between retry attempts while waiting for proxy server readiness                   | All except Selenium |
@@ -318,7 +318,11 @@ Tests sometimes must upload files to the application being tested. To keep the d
 
 ### Setup HTTP proxy
 
-If `PROXY_HOST` environment variable is provided - Docker container needs to:
+Docker container's entrypoint needs to check value of `PROXY_HOST` environment variable.
+
+If this value is empty - no additional steps are required, tests should be executed without using HTTP proxy.
+
+If it's not empty - entrypoint script needs to:
 
 1. set HTTP proxy to be used for tests execution - this can be achieved by exporting `HTTP_PROXY` environment variable that is build from values of:
    * proxy host - provided by `PROXY_HOST` variable
@@ -327,6 +331,7 @@ If `PROXY_HOST` environment variable is provided - Docker container needs to:
    * this can be achieved by exporting `NODE_EXTRA_CA_CERTS` environment variable
 3. wait for proxy sidecar container to be ready
    * for readiness check environment variables `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` and `PROXY_RETRY_DELAY` can be used
+   * it can be achieved by curl request (make sure to install curl in your `Dockerfile`)
 
 Example implementation can be found in  [Cypress Sample Test Module`s Entrypoint](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
 
@@ -341,9 +346,9 @@ Example implementation can be found in  [Cypress Sample Test Module`s Entrypoint
 
 >[!NOTE]
 >
-> In presented examples we assume Chrome is being used as a project browser
+> In presented examples we assume Chrome is being used as a project browser.
 
-Similar to Cypress - tests needs to use HTTP proxy if `PROXY_HOST` environment variable is provided.
+Similar to Cypress - tests needs to use HTTP proxy if non-empty `PROXY_HOST` environment variable is provided.
 
 To achieve that some modifications needs to be made:
 
