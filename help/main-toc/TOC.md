@@ -91,6 +91,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Cloud Manager {#cloud-manager}
     + [Current Release Notes](/help/implementing/cloud-manager/release-notes/current.md)
     + 2024 {#2024}
+      + [Release Notes for 2024.4.0](/help/implementing/cloud-manager/release-notes/2024/2024-4-0.md)
       + [Release Notes for 2024.3.0](/help/implementing/cloud-manager/release-notes/2024/2024-3-0.md)
       + [Release Notes for 2024.2.0](/help/implementing/cloud-manager/release-notes/2024/2024-2-0.md)
       + [Release Notes for 2024.1.0](/help/implementing/cloud-manager/release-notes/2024/2024-1-0.md)
@@ -184,6 +185,7 @@ user-guide-title: AEM as a Cloud Service
   + [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md)
   + [AEM as a Cloud Service Security Considerations](/help/security/security-considerations.md)
   + [JWT Credentials Deprecation in Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+  + [Best Practices for Sling Service User Mapping and Service User Definition](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + Onboarding {#onboarding}
   + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
   + Onboarding Journey {#journey}
@@ -198,6 +200,7 @@ user-guide-title: AEM as a Cloud Service
     + [Assigning AEM Product Profiles](/help/journey-onboarding/assign-profiles-aem.md)
     + [Developer and Deployment Manager Tasks](/help/journey-onboarding/developers.md)
     + [AEM User Tasks](/help/journey-onboarding/aem-users.md)
+    + [Go-Live Checklist](/help/journey-onboarding/go-live-checklist.md)
   + AEM Reference Demos Add-On Journey {#demo-add-on}
     + [Overview](/help/journey-sites/demos-add-on/overview.md)
     + [Installation](/help/journey-sites/demos-add-on/installation.md)
@@ -598,6 +601,9 @@ user-guide-title: AEM as a Cloud Service
     + [Migrate from [!DNL AEM 6.5 Forms] or earlier to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
     + [Groups and permissions](/help/forms/forms-groups-privileges-tasks.md)
     + [Import, export, and organize Adaptive Forms, PDF forms, and other assets](/help/forms/import-export-forms-templates.md)
+  + Getting Started {#getting-started-forms}
+    + [Use Case and setup development environment](/help/forms/create-adaptive-form-tutorial-getting-started.md)
+    + [Create the loan application form](/help/forms/create-adaptive-form-tutorial.md)
   + Integrate {#integrate}
     + Services {#services}
       + [Integrate AEM Forms as a Cloud Service with Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
