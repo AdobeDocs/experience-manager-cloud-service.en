@@ -21,7 +21,7 @@ Traffic filter rules can be deployed via Cloud Manager configuration pipelines t
 [Follow through a tutorial](#tutorial) to quickly build concrete expertise on this feature.
 
 >[!NOTE]
->Interested in other options to configure traffic at the CDN, including editing the request/response, declaring redirects, and proxying to a non-AEM origin? [Learn how and try it out](/help/implementing/dispatcher/cdn-configuring-traffic.md) by joining the early adopter program.
+>For additional options related to configuring traffic at the CDN, including editing the request/response, declaring redirects, and proxying to a non-AEM origin, see the [Configuring Traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) article.
 
 
 ## How This Article is Organized {#how-organized}
@@ -34,6 +34,8 @@ This article is organized into the following sections:
 * **Rules syntax:** Read about how to declare traffic filter rules in the `cdn.yaml` configuration file. This includes both the traffic filter rules available to all Sites and Forms customers, and the subcategory of WAF rules for those who license that capability.
 * **Rules examples:** See examples of declared rules to get you on your way.
 * **Rate limit rules:** Learn how to use rate limiting rules to protect your site from high volume attacks.
+* **Traffic Filter Rules Alerts** Configure alerts to be notified when your rules are triggered.
+* **Default Traffic Spike at Origin Alert** Get notified when there is a surge of traffic at the origin suggestive of a DDoS attack.
 * **CDN logs:** See what declared rules and WAF Flags match your traffic.
 * **Dashboard Tooling:** Analyze your CDN logs to come up with new traffic filter rules.
 * **Recommended Starter Rules:** A set of rules to get started with.
@@ -513,6 +515,28 @@ data:
           experimental_alert: true
 ```
 
+## Default Traffic Spike at Origin Alert {#traffic-spike-at-origin-alert}
+
+>[!NOTE]
+>
+>This feature is being gradually rolled out.
+
+An [Actions Center](/help/operations/actions-center.md) email notification will be sent when there's a significant amount of traffic sent to the origin, where a high threshold of requests are coming from the same IP address, thus suggeasting a DDoS attack. 
+
+If this theshold is met, Adobe will block traffic from that IP address, but it is recommended to take additional measures to protect your origin, including configuring rate limit traffic filter rules to block traffic spikes at lower thresholds. See the [Blocking DoS and DDoS attacks using traffic rules tutorial](#tutorial-blocking-DDoS-with-rules) for a guided walk-through.
+
+This alert is enabled by default, but it can be disabled using the *enable_ddos_alerts* property.
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       enable_ddos_alerts: false
+   ```
+
 ## CDN Logs {#cdn-logs}
 
 AEM as a Cloud Service provides access to CDN logs, which are useful for use cases including cache hit ratio optimization, and configuring traffic filter rules. CDN logs appear in the Cloud Manager **Download Logs** dialog, when selecting the Author or Publish service.
@@ -717,7 +741,7 @@ data:
 
 Two tutorials are available.
 
-### Protecting websites with traffic filter rules (including WAF rules)
+### Protecting websites with traffic filter rules (including WAF rules) {#tutorial-protecting-websites}
 
 [Work through a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) to gain general, practical knowledge and experience around traffic filter rules, including WAF rules.
 
@@ -729,7 +753,7 @@ The tutorial walks you through:
 * Analyzing results with dashboard tooling
 * Best practices
 
-### Blocking DoS and DDoS attacks using traffic filter rules
+### Blocking DoS and DDoS attacks using traffic filter rules {#tutorial-blocking-DDoS-with-rules}
 
 [Deep-dive on how to block](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Denial of Service (DoS) and Distributed Denial of Service (DDoS) attacks using rate limit traffic filter rules and other strategies.
 
