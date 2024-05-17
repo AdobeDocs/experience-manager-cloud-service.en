@@ -54,11 +54,10 @@ You can create an Adaptive Form Fragment from scratch or save a panel in an exis
     * **Form Data Model**:  Specifies to create the fragment using a form data model (FDM). You can create an Adaptive Form fragment based on only one data model object in a form data model (FDM). Expand Form Data Model (FDM) Definitions drop-down. It lists all data model objects in the specified form data model(FDM). Select a data model object from the list.
 
     ![Form Data Model (FDM)](assets/create-af-3.png)
-
-      
+ 
 1. Click **Create** and then click **Open** to open the fragment, with a default template, in edit mode. In edit mode, you can add any Adaptive Form component to the fragment. 
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> In addition, if you selected an XML schema or XDP form template as the form model for your fragment, a new tab displaying the form-model hierarchy appears in the content finder. It lets you drag-and-drop form-model elements onto the fragment. The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. 
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> In addition, if you selected an XML schema as the form model for your fragment, a new tab displaying the form-model hierarchy appears in the content finder. It lets you drag-and-drop form-model elements onto the fragment. <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
 Once the Adaptive Form fragment based on a schema or form data model (FDM) is created, form data model (FDM) or schema elements appear in the Data Sources tab of the Content browser in Adaptive Form editor. You can drag-and-drop form-model elements onto the fragment. The added form-model elements are converted to form components while retaining the original properties from the associated schema. 
 
@@ -76,9 +75,9 @@ To add an Adaptive Form fragment to an Adaptive Form:
 
      ![select the Adaptive Form Fragments option](/help/forms/assets/adaptive-form-fragment-basic.png)
 
-   >[!NOTE]
+  <!-- >[!NOTE]
    >
-   >The Adaptive Form fragment is not enabled for authoring from within the Adaptive Form. Moreover, you cannot use an XSD-based fragment in a JSON-based Adaptive Form and the opposite way.
+   >The Adaptive Form fragment is not enabled for authoring from within the Adaptive Form. Moreover, you cannot use an XSD-based fragment in a JSON-based Adaptive Form and the opposite way. -->
 
 The Adaptive Form fragment is added by reference to the Adaptive Form and remains in synchronized with the standalone Adaptive Form fragment. This implies that any modifications made to the Adaptive Form fragment are mirrored across all instances where the fragment is incorporated within Adaptive Forms.
 
@@ -104,7 +103,7 @@ Perform the following steps to show complete fragments in forms:
 
 ### Using fragments within fragments {#using-fragments-within-fragments}
 
-You can create nested Adaptive Form fragments, which means you can drag-drop a fragment in another fragment, and can have nested fragment structure.
+You can create nested Adaptive Form fragments, which means you can add a fragment in another fragment, and can have nested fragment structure.
 
 ### Using a form fragment multiple times in an Adaptive Form {#using-form-fragment-mutiple-times-in-af}
 
@@ -112,13 +111,15 @@ You can use a none-based and schema-based form fragment multiple times in an Ada
 
 ![using multiple fragment in adaptive form](/help/forms/assets/using-multiple-fragment-af.gif)
 
+<!--
+
 ## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
 
 When you create an Adaptive Form fragment using an XFA form template or XSD complex type and drag-drop the fragment to an Adaptive Form, the XFA fragment or the XSD complex type is automatically replaced by the corresponding Adaptive Form fragment whose fragment model root is mapped to the XFA fragment or XSD complex Type.
 
 You can change the fragment asset and its bindings from the Edit component dialog.
 
-You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragment library in AEM content finder and provide the correct bind reference from the Edit component dialog of the Adaptive Form fragment panel.
+You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragment library in AEM content finder and provide the correct bind reference from the Edit component dialog of the Adaptive Form fragment panel. -->
 
 ## Manage fragments {#manage-fragments}
 
@@ -168,15 +169,11 @@ You can perform several operations on Adaptive Form fragments using the AEM Form
 ## Key points to remember when working with fragments {#key-points-to-remember-when-working-with-fragments}
 
 * Ensure that the fragment name is unique. The fragment fails to create if there is an existing fragment with the same name.
-* In an XDP-based Adaptive Form, if you save a panel as fragment that includes another XDP fragment, the resulting fragment automatically bounds to the child XDP fragment. In case of an XSD-based Adaptive Form, the resulting fragment bounds to the schema root.
-* A fragment in an Adaptive Form that uses a different form data model (FDM) is not supported. For example, an XDP-based fragment is not supported in an XSD-based Adaptive Form and conversely.
-* Adaptive Form fragments are available for use through the Adaptive Form Fragments tab in AEM content finder.
 * Any expression, script, or style in a stand-alone Adaptive Form fragment is retained when it is inserted by reference or embedded in an Adaptive Form.
 * You cannot edit an Adaptive Form fragment, which is inserted by reference, from within an Adaptive Form. To edit, modify the stand-alone Adaptive Form fragment.
 * When you publish an Adaptive Form, you need to publish the standalone Adaptive Form fragments inserted by reference in the Adaptive Form.
 * When you republish an updated Adaptive Form fragment, the changes reflect in the published instances of the Adaptive Form in which the fragment is used.
 * Adaptive Form containing the Verify component does not support anonymous users. Also, it is not reommended to use the Verify component in an Adaptive Form fragment.
-
 
 ## Reference Fragments {#reference-fragments}
 
