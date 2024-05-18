@@ -53,6 +53,8 @@ This section lists features and capabilities that have been removed from [!DNL E
 | [!DNL Foundation]       | Suppport for JST scripting templates (OSGi bundle org.apache.sling.scripting.jst) | N/A | Removed |
 | [!DNL Foundation]       | Support for the Apache Felix Http Whiteboard | OSGi Http Whiteboard | March 2022 |
 | [!DNL Foundation]       | Support for com.adobe.granite.oauth.server | Adobe IMS Integration | March 2023 |
+| [!DNL Foundation]       | Support for org.apache.sling.serviceusermapping feature to [get the service user id](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/A | Removed |
+
 
 ## AEM APIs {#aem-apis}
 
@@ -262,6 +264,17 @@ Below is an extensive list of deprecated AEM APIs and their expected removal dat
     <td>5/15/2023</td>
     <td>6/15/2023</td>
   </tr>
+  <tr>
+    <td>org.slf4j.event	</td>
+    <td>This internal slf4j API is not supported by AEM as a Cloud Service</td>
+    <td>4/11/2022</td>
+    <td>removed</td>
+  </tr>
+    <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
+    <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
+    <td>5/17/2024</td>
+    <td>6/30/2024</td>
+  </tr>  
 </tbody>
 </table>
 </details>
