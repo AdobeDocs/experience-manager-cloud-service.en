@@ -80,7 +80,7 @@ To share assets as a public URL:
 1. The **[!UICONTROL Link Sharing]** dialog appears which contains an auto-generated asset link in the **[!UICONTROL Share Link]** field.
 1. Set the expiration date of the shared link as required.
 1. Under **[!UICONTROL Link Settings]**, check or uncheck `Include Originals` or `Include Renditions` to include or exclude either of the two. Choosing at least option is mandatory. 
-1. The names of selected Assets appears in the right column of the [!DNL Share Link] dialog box.
+1. The names of selected Assets appear in the right column of the [!DNL Share Link] dialog box.
 1. Copy the asset link and share it with the users. 
 
 ### Share asset link through email notification {#share-assets-link-through-email}
@@ -95,7 +95,7 @@ To share assets through email:
    * In the **[!UICONTROL Subject]** box, type a subject to specify the purpose of the assets that are shared.
    * In the **[!UICONTROL Message]** box, type a message if necessary.
    * In the **[!UICONTROL Expiration]** field, use the date picker to specify an expiration date and time for the link.
-   * Enable the **[!UICONTROL Allow download of original file]** check box to allow the recipients to download the original rendition. 
+   * Enable the **[!UICONTROL Allow download of the original file]** check box to allow the recipients to download the original rendition. 
 
 1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users. The users receive an email containing the shared link. 
 
@@ -103,7 +103,7 @@ To share assets through email:
 
 ### Customize email template {#customize-email-template}
 
-A well-designed template conveys professionalism and competence, enhancing the credibility of your message and your organization. The [!DNL Adobe Experience Manager] allows you to customize email template which is sent to the recipients who receive the email containing the shared link. Additionally, customized email templates allows personalizing your email content by addressing your recipients with name and referencing specific details relevant to them. This personal touch can make the recipient feel valued and increase engagement. Not just that, a customized template ensures that your emails are consistent with your brand identity, including logos, colors, and fonts. Consistency reinforces brand recognition and trust among recipients.
+A well-designed template conveys professionalism and competence, enhancing the credibility of your message and your organization. The [!DNL Adobe Experience Manager] allows you to customize the email template, which is sent to the recipients who receive the email containing the shared link. Additionally, customized email templates allow personalizing your email content by addressing your recipients with name and referencing specific details relevant to them. This personal touch can make the recipient feel valued and increase engagement. Not just that, a customized template ensures that your emails are consistent with your brand identity, including logos, colors, and fonts. Consistency reinforces brand recognition and trust among recipients.
 
 #### Format of a customized email template {#format-of-custom-email-template}
 
@@ -111,7 +111,7 @@ The email template can be personalized using tabular format in markup format, fo
 
 ### Download assets using the asset link {#download-assets-using-asset-link}
 
-Any user having access to the shared asset link can download the assets bundled in a zip folder. The download process is same, whether a user is accessing the copied asset link, or using the asset link shared through the email. 
+Any user having access to the shared asset link can download the assets bundled in a zip folder. The download process is the same, whether a user is accessing the copied asset link, or using the asset link shared through the email. 
 
 * Click the asset link or paste the URL in your browser. The [!UICONTROL Link Share] interface opens wherein you can switch to the [!UICONTROL Card View] or [!UICONTROL List View]. 
 
@@ -302,3 +302,4 @@ See [how to configure [!DNL Assets] to use it with [!DNL Adobe Asset Link]](http
 * [Manage collections](manage-collections.md)
 * [Bulk metadata import](metadata-import-export.md)
 * [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
