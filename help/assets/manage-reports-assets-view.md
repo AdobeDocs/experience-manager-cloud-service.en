@@ -53,9 +53,9 @@ Click **[!UICONTROL Insights]** available in the left navigation pane to view th
    ![Insights](assets/insights2.png)
    -->
 
-* **Asset Count by size:** This graph shows the count of assets distributed across various size ranges, such as 0MB-1MB, 1MB-10MB, 10MB-100MB, 100MB-1GB, and 1GB-10GB along with their percentage.
+* **Asset Count by size:** This graph shows the count of assets distributed across various size ranges along with their percentage within your Assets view environment.
 ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
-* **Asset Count by Asset Type:** The graph represents - assets distribution by asset type, presenting the absolute count and proportionate percentage of each asset type.
+* **Asset Count by Asset Type:** The graph represents - assets distribution by asset type, presenting the absolute count and proportionate percentage of each asset type within your Assets view environment.
 ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
 
 ## Create a Download report {#create-download-report}
