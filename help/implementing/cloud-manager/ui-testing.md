@@ -241,7 +241,7 @@ If the Docker image is implemented with other programming languages or test runn
 >
 >Use assertions instead of just logging an error to STDERR or returning a non-zero exit code otherwise your deployment pipeline may proceed normally.
 >
->If the HTTP proxy sidecar was used during tests execution, the results will include a `request.log` file.
+>If an HTTP proxy was used during tests execution, the results will include a `request.log` file.
 
 ### Prerequisites {#prerequisites}
 
@@ -324,12 +324,12 @@ If this value is empty, no additional steps are required and the tests should be
 
 If it's not empty, the entrypoint script needs to:
 
-1. Set the HTTP proxy to be used for tests execution. This can be achieved by exporting the `HTTP_PROXY` environment variable that is built using the following values:
+1. Configure an HTTP proxy connection for running UI tests. This can be achieved by exporting the `HTTP_PROXY` environment variable that is built using the following values:
    * Proxy host, which is provided by `PROXY_HOST` variable
    * Proxy port, which is provided by `PROXY_HTTPS_PORT` or `PROXY_HTTP_PORT` variable (the variable with a non-empty value will be used)
-2. Set the proxy CA certificate to be used for tests execution. Its location is provided by `PROXY_CA_PATH` variable. 
+2. Set the CA certificate that will be used when connecting to the HTTP proxy. Its location is provided by `PROXY_CA_PATH` variable. 
    * This can be achieved by exporting `NODE_EXTRA_CA_CERTS` environment variable.
-3. Wait for proxy sidecar container to be ready.
+3. Wait until the HTTP proxy is ready.
    * To check the readiness, the environment variables `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` and `PROXY_RETRY_DELAY` can be used.
    * You can check using a cURL request, making sure to install cURL in your `Dockerfile`.
 
@@ -367,7 +367,7 @@ Include a bash script that, in case `PROXY_HOST` environment variable is provide
 
 1. Export proxy-related variables such as `HTTP_PROXY` and `NODE_EXTRA_CA_CERTS`
 2. Use `certutil` to install proxy CA certificate for chromium
-3. Wait for the proxy sidecar container to be ready (or exit on failure)
+3. Wait until the HTTP proxy is ready (or exit on failure).
 
 Example implementation:
 
