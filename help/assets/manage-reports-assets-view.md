@@ -33,27 +33,31 @@ Assets view enables you to view real-time data for your Assets view environment 
 
 Click **[!UICONTROL Insights]** available in the left navigation pane to view the following automatically generated charts:
 
-   ![Insights](assets/insights.png)
-
 * **Downloads**: The number of assets downloaded from the Assets view environment in the last 30 days or 12 months represented using a line graph.
+![insights-downloads](/help/assets/assets/insights-uploads1.svg)
 
 * **Uploads**: The number of assets uploaded to the Assets view environment in the last 30 days or 12 months represented using a line graph.
-
+![insights-uploads](/help/assets/assets/insights-uplods2.svg)
 <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
 * **Storage usage**: The storage usage, in bytes, for the Assets view environment represented using a bar chart.
-
+![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
 <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Top Searches**: View top searched terms along with the number of times those terms are searched within your Assets view environment in the last 30 days or 12 months represented in a tabular format.
-
+![insights-uploads](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
-   
+
+* **Asset Count by size:** This graph shows the count of assets distributed across various size ranges, such as 0MB-1MB, 1MB-10MB, 10MB-100MB, 100MB-1GB, and 1GB-10GB along with their percentage.
+![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
+* **Asset Count by Asset Type:** The graph represents - assets distribution by asset type, presenting the absolute count and proportionate percentage of each asset type.
+![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
+
 ## Create a Download report {#create-download-report}
 
 To create a Download report:
