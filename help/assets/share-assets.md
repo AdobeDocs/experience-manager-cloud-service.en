@@ -101,7 +101,15 @@ To share assets through email:
 
    ![Link Sharing email](assets/link-sharing-email-notification.png)
 
-### Download assets using the asset link
+### Customize email template {#customize-email-template}
+
+A well-designed template conveys professionalism and competence, enhancing the credibility of your message and your organization. The [!DNL Adobe Experience Manager] allows you to customize email template which is sent to the recipients who receive the email containing the shared link. Additionally, customized email templates allows personalizing your email content by addressing your recipients with name and referencing specific details relevant to them. This personal touch can make the recipient feel valued and increase engagement. Not just that, a customized template ensures that your emails are consistent with your brand identity, including logos, colors, and fonts. Consistency reinforces brand recognition and trust among recipients.
+
+#### Format of a customized email template {#format-of-custom-email-template}
+
+The email template can be personalized using tabular format in markup format, for example, HTML. The default editable template link can be found at `/libs/settings/dam/adhocassetshare/en.txt`. And the override file is available at `/apps/settings/dam/adhocassetshare/en.txt`. 
+
+### Download assets using the asset link {#download-assets-using-asset-link}
 
 Any user having access to the shared asset link can download the assets bundled in a zip folder. The download process is same, whether a user is accessing the copied asset link, or using the asset link shared through the email. 
 
