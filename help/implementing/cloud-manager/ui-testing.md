@@ -39,7 +39,7 @@ This section describes the steps required to set up UI tests for execution in Cl
 
     * For Cypress, use the sample code from the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
 
-    * For JavaScript and WDIO, use the sample code which is automatically generated in the `ui.tests` folder of your Cloud Manager repository.
+    * For JavaScript and WDIO, use the sample code that is automatically generated in the `ui.tests` folder of your Cloud Manager repository.
       
       >[!NOTE]
       >
@@ -140,7 +140,7 @@ This execution instructs the Maven Assembly Plugin to create an archive based on
 </assembly>
 ```
 
-The assembly descriptor instructs the plugin to create an archive of type `.tar.gz` and assigns the `ui-test-docker-context` classifier to it. Moreover, it lists the files that must be included in the archive including the following.
+The assembly descriptor instructs the plugin to create an archive of type `.tar.gz` and assigns the `ui-test-docker-context` classifier to it. Moreover, it lists the files that must be included in the archive, including the following:
 
 * A `Dockerfile`, mandatory for building the Docker image
 * The `wait-for-grid.sh` script, whose purposes are described below
@@ -193,7 +193,7 @@ If you are using the samples provided by Adobe:
   fi
   ```
 
-* The Cypress and Java Selenium test samples provided by Adobe already do have the opt-in flag set.
+* The Cypress and Java Selenium test samples provided by Adobe already have the opt-in flag set.
 
 ## Writing UI Tests {#writing-ui-tests}
 
@@ -203,24 +203,31 @@ This section describes the conventions that the Docker image containing your UI 
 
 The following environment variables are passed to your Docker image at run time, depending on your framework.
 
-|Variable|Examples|Description|Testing Framework|
-|---|---|---|---|
-|`SELENIUM_BASE_URL`|`http://my-ip:4444`|The URL of the Selenium server|Selenium only|
-|`SELENIUM_BROWSER`|`chrome`|The browser implementation used by the Selenium Server|Selenium only|
-|`AEM_AUTHOR_URL`|`http://my-ip:4502/context-path`|The URL of the AEM author instance|All|
-|`AEM_AUTHOR_USERNAME`|`admin`|The user name to log in to the AEM author instance|All|
-|`AEM_AUTHOR_PASSWORD`|`admin`|The password to log in to the AEM author instance|All|
-|`AEM_PUBLISH_URL`|`http://my-ip:4503/context-path`|The URL of the AEM publish instance|All|
-|`AEM_PUBLISH_USERNAME`|`admin`|The user name to log in to the AEM publish instance|All|
-|`AEM_PUBLISH_PASSWORD`|`admin`|The password  to log in to the AEM publish instance|All|
-|`REPORTS_PATH`|`/usr/src/app/reports`|The path where the XML report of the test results must be saved|All|
-|`UPLOAD_URL`|`http://upload-host:9090/upload`|The URL where to which the file must be uploaded to make them accessible to the testing framework|All|
+| Variable                   | Examples                         | Description                                                                                       | Testing Framework   |
+|----------------------------|----------------------------------|---------------------------------------------------------------------------------------------------|---------------------|
+| `SELENIUM_BASE_URL`        | `http://my-ip:4444`              | The URL of the Selenium server                                                                    | Selenium only       |
+| `SELENIUM_BROWSER`         | `chrome`                         | The browser implementation used by the Selenium Server                                            | Selenium only       |
+| `AEM_AUTHOR_URL`           | `http://my-ip:4502/context-path` | The URL of the AEM author instance                                                                | All                 |
+| `AEM_AUTHOR_USERNAME`      | `admin`                          | The user name to log in to the AEM author instance                                                | All                 |
+| `AEM_AUTHOR_PASSWORD`      | `admin`                          | The password to log in to the AEM author instance                                                 | All                 |
+| `AEM_PUBLISH_URL`          | `http://my-ip:4503/context-path` | The URL of the AEM publish instance                                                               | All                 |
+| `AEM_PUBLISH_USERNAME`     | `admin`                          | The user name to log in to the AEM publish instance                                               | All                 |
+| `AEM_PUBLISH_PASSWORD`     | `admin`                          | The password to log in to the AEM publish instance                                               | All                 |
+| `REPORTS_PATH`             | `/usr/src/app/reports`           | The path where the XML report of the test results must be saved                                   | All                 |
+| `UPLOAD_URL`               | `http://upload-host:9090/upload` | The URL where to which the file must be uploaded to make them accessible to the testing framework | All                 |
+| `PROXY_HOST`               | `proxy-host`                     | The hostname of the internal HTTP Proxy to be used by the testing framework                               | All except Selenium |
+| `PROXY_HTTPS_PORT`         | `8071`                           | The proxy server listening port for HTTPS connections (can be empty)                              | All except Selenium |
+| `PROXY_HTTP_PORT`          | `8070`                           | The proxy server listening port for HTTP connections (can be empty)                               | All except Selenium |
+| `PROXY_CA_PATH`            | `/path/to/root_ca.pem`           | The path to the CA certificate to be used by the testing framework                                    | All except Selenium |
+| `PROXY_OBSERVABILITY_PORT` | `8081`                           | The HTTP healthcheck port of the proxy server                                                         | All except Selenium |
+| `PROXY_RETRY_ATTEMPTS`     | `12`                             | Suggested number of retry attempts while waiting for proxy server readiness                       | All except Selenium |
+| `PROXY_RETRY_DELAY`        | `5`                              | Suggested delay between retry attempts while waiting for proxy server readiness                   | All except Selenium |
 
 The Adobe test samples provide helper functions to access the configuration parameters:
 
 * Cypress: use the standard function `Cypress.env('VARIABLE_NAME')`
-* JavaScript: See the [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) module
-* Java: See the [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
+* JavaScript: See the [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
+* Java: See the [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
 
 ### Generate Test Reports {#generate-test-reports}
 
@@ -233,6 +240,8 @@ If the Docker image is implemented with other programming languages or test runn
 >The result of the UI testing step is evaluated only based on the test reports. Ensure that you generate the report accordingly for your test execution.
 >
 >Use assertions instead of just logging an error to STDERR or returning a non-zero exit code otherwise your deployment pipeline may proceed normally.
+>
+>If an HTTP proxy was used during tests execution, the results will include a `request.log` file.
 
 ### Prerequisites {#prerequisites}
 
@@ -300,6 +309,113 @@ Tests sometimes must upload files to the application being tested. To keep the d
 1. If the upload is successful, the request returns a `200 OK` response of type `text/plain`.
    * The content of the response is an opaque file handle.
    * You can use this handle in place of a file path in an `<input>` element to test file uploads in your application.
+
+## Cypress-specific details
+
+>[!NOTE]
+>
+>This section only applies when Cypress is the chosen test infrastructure.
+
+### Set up HTTP proxy
+
+The Docker container's entrypoint needs to check the value of the `PROXY_HOST` environment variable.
+
+If this value is empty, no additional steps are required and the tests should be executed without using HTTP proxy.
+
+If it's not empty, the entrypoint script needs to:
+
+1. Configure an HTTP proxy connection for running UI tests. This can be achieved by exporting the `HTTP_PROXY` environment variable that is built using the following values:
+   * Proxy host, which is provided by `PROXY_HOST` variable
+   * Proxy port, which is provided by `PROXY_HTTPS_PORT` or `PROXY_HTTP_PORT` variable (the variable with a non-empty value will be used)
+2. Set the CA certificate that will be used when connecting to the HTTP proxy. Its location is provided by `PROXY_CA_PATH` variable. 
+   * This can be achieved by exporting `NODE_EXTRA_CA_CERTS` environment variable.
+3. Wait until the HTTP proxy is ready.
+   * To check the readiness, the environment variables `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` and `PROXY_RETRY_DELAY` can be used.
+   * You can check using a cURL request, making sure to install cURL in your `Dockerfile`.
+
+An example implementation can be found in the Cypress Sample Test Module's Entrypoint on [GitHub.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
+
+## Playwright-specific details
+
+>[!NOTE]
+>
+> This section only applies when Playwright is the chosen test infrastructure.
+
+### Set up HTTP proxy
+
+>[!NOTE]
+>
+> In presented examples, we assume Chrome is being used as a project browser.
+
+Similar to Cypress, tests needs to use the HTTP proxy if a non-empty `PROXY_HOST` environment variable is provided.
+
+To do this the follwoing modifications need to be made.
+
+#### Dockerfile
+
+Install cURL and `libnss3-tools`, which provides `certutil.` 
+
+```dockerfile
+RUN apt -y update \
+    && apt -y --no-install-recommends install curl libnss3-tools \
+    && rm -rf /var/lib/apt/lists/*
+```
+
+#### Entrypoint script
+
+Include a bash script that, in case `PROXY_HOST` environment variable is provided, does the following:
+
+1. Export proxy-related variables such as `HTTP_PROXY` and `NODE_EXTRA_CA_CERTS`
+2. Use `certutil` to install proxy CA certificate for chromium
+3. Wait until the HTTP proxy is ready (or exit on failure).
+
+Example implementation:
+
+```bash
+# setup proxy environment variables and CA certificate
+if [ -n "${PROXY_HOST:-}" ]; then
+  if [ -n "${PROXY_HTTPS_PORT:-}" ]; then
+    export HTTP_PROXY="https://${PROXY_HOST}:${PROXY_HTTPS_PORT}"
+  elif [ -n "${PROXY_HTTP_PORT:-}" ]; then
+    export HTTP_PROXY="http://${PROXY_HOST}:${PROXY_HTTP_PORT}"
+  fi
+  if [ -n "${PROXY_CA_PATH:-}" ]; then
+    echo "installing certificate"
+    mkdir -p $HOME/.pki/nssdb
+    certutil -d sql:$HOME/.pki/nssdb -A -t "CT,c,c" -n "EaaS Client Proxy Root" -i $PROXY_CA_PATH
+    export NODE_EXTRA_CA_CERTS=${PROXY_CA_PATH}
+  fi
+  if [ -n "${PROXY_OBSERVABILITY_PORT:-}" ] && [ -n "${HTTP_PROXY:-}" ]; then
+    echo "waiting for proxy"
+    curl --silent  --retry ${PROXY_RETRY_ATTEMPTS:-3} --retry-connrefused --retry-delay ${PROXY_RETRY_DELAY:-10} \
+      --proxy ${HTTP_PROXY} --proxy-cacert ${PROXY_CA_PATH:-""} \
+      ${PROXY_HOST}:${PROXY_OBSERVABILITY_PORT}
+    if [ $? -ne 0 ]; then
+      echo "proxy is not ready"
+      exit 1
+    fi
+  fi
+fi
+```
+
+#### Playwright configuration
+
+Modify the playwright configuration (for example in `playwright.config.js`) to use a proxy in case the `HTTP_PROXY` environment variable is set.
+
+Example implementation:
+
+```javascript
+const proxyServer = process.env.HTTP_PROXY || ''
+```
+
+```javascript
+// enable proxy if set
+if (proxyServer !== '') {
+ cfg.use.proxy = {
+  server: proxyServer,
+ }
+}
+```
 
 ## Running UI Tests Locally {#run-ui-tests-locally}
 
