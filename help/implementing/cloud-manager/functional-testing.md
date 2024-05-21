@@ -87,6 +87,8 @@ The tests are packaged in a Docker image - designed to be as volatile as possibl
 >[!NOTE]
 >
 >Custom UI tests are executed in the production and non-production (opt-in) pipelines which are used by your AEM application changes deployments and AEM product push updates and are therefore a key contribution to help ensure proper functioning of your application and increase release safety. The customer UI tests are also executed in internal pre-release validation pipelines for each customer, which helps provide early feedback.
+>
+>Non-Selenium containers should execute tests using an HTTP proxy based on the environment variables in the [UI Testing Section.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 In order to keep pipeline executions efficient, we recommend focusing on key features and main user interaction flows. Full UI test suites that do not fit in this quality gate are recommended to be executed as part of general customer validation pipelines during customer's development flow.
 
