@@ -36,9 +36,13 @@ Have a look at the May 2024 Release Overview video for a summary of the features
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+### New features in Sites {#sites-new-features}
+
 **AEM Authoring for Edge Delivery Services**
 
 Enhanced stability and various improvements for a better authoring experience.### Early Adopter Program {#sites-early-adopter}
+
+### Early Adopter Program {#sites-early-adopter}
 
 **Generate Variations**
 
